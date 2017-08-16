@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,4 +69,6 @@ $string['restoreafterimport'] = 'Berreskuratu inportatu ondoren';
 $string['result'] = 'Emaitza';
 $string['rowpreviewnum'] = 'Aurreikusi errenkadak';
 $string['updatemode'] = 'Eguneratu modua';
+$string['updatewithdataonly'] = 'Eguneratu CSV datuekin bakarrik';
+$string['updatewithdataordefaults'] = 'Eguneratu CSV datuekin eta berezkoekin';
 $string['uploadcourses'] = 'Eguneratutako ikastaroak';

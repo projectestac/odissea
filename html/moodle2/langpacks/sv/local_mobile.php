@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['cannotcreatetoken'] = 'Att generera token automatiskt är inte tillgänglig för administratörer (de måste skapa en token manuellt på webbplatsen)';
 $string['local_mobiledescription'] = 'Plugin som utökar funktionen för mobila tjänster';
 $string['local_mobilesettings'] = 'Inställningar';
-$string['local_mobiletypeoflogin'] = 'Välj vilken typ av inloggning';
-$string['local_mobiletypeoflogin_key'] = 'Typ av inloggning';
-$string['loginintheapp'] = 'Via appen';
-$string['logininthebrowser'] = 'Via ett webbläsarfönster (för SSO plugins)';
 $string['pluginname'] = 'Moodle Mobile ytterligare funktioner';
 $string['pluginnotenabledorconfigured'] = 'Moodle Mobile lokala plugin måste aktiveras och konfigureras för att starta appen';

@@ -28,11 +28,11 @@ define(['jquery', 'core/ajax', 'core/log', 'core/notification', 'core/templates'
      * The ajax call has returned with a new list of templates.
      *
      * @method reloadListTemplate
-     * @param String[] templates List of template ids.
+     * @param {String[]} templateList List of template ids.
      */
     var reloadListTemplate = function(templateList) {
-        templates.render('tool_templatelibrary/search_results', { templates: templateList })
-            .done(function (result, js) {
+        templates.render('tool_templatelibrary/search_results', {templates: templateList})
+            .done(function(result, js) {
                 templates.replaceNode($('[data-region="searchresults"]'), result, js);
             }).fail(notification.exception);
     };
@@ -41,17 +41,20 @@ define(['jquery', 'core/ajax', 'core/log', 'core/notification', 'core/templates'
      * Get the current values for the form inputs and refresh the list of matching templates.
      *
      * @method refreshSearch
+     * @param {String} themename The naeme of the theme.
      */
     var refreshSearch = function(themename) {
         var componentStr = $('[data-field="component"]').val();
         var searchStr = $('[data-field="search"]').val();
 
         // Trigger the search.
+        document.location.hash = searchStr;
+
         ajax.call([
-            { methodname: 'tool_templatelibrary_list_templates',
-              args: { component: componentStr, search: searchStr, themename: themename },
+            {methodname: 'tool_templatelibrary_list_templates',
+              args: {component: componentStr, search: searchStr, themename: themename},
               done: reloadListTemplate,
-              fail: notification.exception }
+              fail: notification.exception}
         ], true, false);
     };
 
@@ -62,8 +65,8 @@ define(['jquery', 'core/ajax', 'core/log', 'core/notification', 'core/templates'
      * the function will only be executed once.
      *
      * @method queueRefresh
-     * @param function callback
-     * @param int delay The time in milliseconds to delay.
+     * @param {function} callback
+     * @param {Number} delay The time in milliseconds to delay.
      */
     var queueRefresh = function(callback, delay) {
         if (throttle !== null) {
@@ -83,6 +86,7 @@ define(['jquery', 'core/ajax', 'core/log', 'core/notification', 'core/templates'
     $('[data-region="list-templates"]').on('change', '[data-field="component"]', changeHandler);
     $('[data-region="list-templates"]').on('input', '[data-field="search"]', changeHandler);
 
+    $('[data-field="search"]').val(document.location.hash.replace('#', ''));
     refreshSearch(config.theme);
     return {};
 });

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -125,6 +125,8 @@ $string['type_gradingform'] = 'Kalifikazio-metodo aurreratuak';
 $string['type_gradingform_plural'] = 'Kalifikazio-metodo aurreratuak';
 $string['type_local'] = 'Plugin lokala';
 $string['type_local_plural'] = 'Plugin lokalak';
+$string['type_media'] = 'Erreproduzitzailea';
+$string['type_media_plural'] = 'Erreproduzitzaileak';
 $string['type_message'] = 'Mezu-prozesatzailea';
 $string['type_message_plural'] = 'Mezu-prozesatzaileak';
 $string['type_mnetservice'] = 'MNet zerbitzua';
@@ -174,6 +176,7 @@ $string['validationmsg_missingversionphp'] = 'version.php fitxategia ez da aurki
 $string['validationmsg_pluginversion'] = 'Pluginaren bertsioa';
 $string['validationmsg_requiresmoodle'] = 'Behar den Moodle bertsioa';
 $string['validationmsg_rootdir'] = 'Instalatuko den pluginaren izena';
+$string['validationmsg_rootdirinvalid'] = 'Pluginaren izen baliogabea';
 $string['validationmsg_unknowntype'] = 'Plugin-mota ezezaguna';
 $string['validationmsg_versionphpsyntax'] = 'Onartu gabeko sintaxia antzeman da version.php fitxategian';
 $string['version'] = 'Bertsioa';

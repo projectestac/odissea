@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Hoeveel van de hoogste cijfers moeten getoond wor
 $string['config_show_worst'] = 'Hoeveel van de laagste cijfers moeten getoond worden (0 om uit te schakelen)?';
 $string['configuredtoshownothing'] = 'Door de configuratie van dit blok kan het nu geen resultaten tonen.';
 $string['config_use_groups'] = 'Toon groepen in de plaats van leerlingen (enkel als de activiteit groepen ondersteunt)?';
+$string['defaultdecimalplaces'] = 'Decimale plaatsten';
+$string['defaultdecimalplaces_desc'] = 'Standaard aantal te tonen decimale plaatsen';
+$string['defaultgradedisplay'] = 'Toon cijfers als';
+$string['defaultgradedisplay_desc'] = 'Hoe moeten cijfers standaard getoond worden';
+$string['defaulthighestgrades'] = 'Standaard aantal hoogste cijfers getoond';
+$string['defaulthighestgrades_desc'] = 'Hoeveel hoogste cijfers moeten er standaard getoond worden?';
+$string['defaultlowestgrades'] = 'Standaard aantal laagste cijfers getoond';
+$string['defaultlowestgrades_desc'] = 'Hoeveel laagste cijfers moeten er standaard getoond worden?';
+$string['defaultnameoptions'] = 'Privacy van de resultaten';
+$string['defaultnameoptions_desc'] = 'Hoe moeten leerlingen standaard geïdentificeerd worden?';
+$string['defaultshowgroups'] = 'Standaard toon groepen';
+$string['defaultshowgroups_desc'] = 'Toon standaard groepen in plaats van leerlingen (enkel als de activiteit groepen ondersteunt)';
 $string['error_emptyactivityid'] = 'Configureer dit blok en selecteer van welke activiteit het de resultaten moet tonen.';
 $string['error_emptyactivityrecord'] = 'Fout: de geselecteerde activiteit bestaat niet.';
 $string['error_nogroupsexist'] = 'Fout: het blok is ingesteld om cijfers te tonen in groepsmodus, maar er zijn geen groepen gedefinieerd.';

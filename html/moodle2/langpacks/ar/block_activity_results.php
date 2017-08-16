@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_results:addinstance'] = 'إضافة كتلة نتائج النشاط جديدة';
 $string['bestgrade'] = 'الدرجة القصوى';
-$string['bestgrades'] = 'الـ {$a}الدرجة القصوى:';
+$string['bestgrades'] = 'الـ {$a}الدرجة القصوى';
 $string['bestgroupgrade'] = 'المجموعة ذات أعلى معدل:';
 $string['bestgroupgrades'] = '{$a} المجموعة ذات أعلى معدل:';
 $string['config_decimalplaces'] = 'عدد الأماكن لعرضها بعد الفاصلة';

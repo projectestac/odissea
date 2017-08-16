@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -188,7 +188,6 @@ $string['original'] = 'Originale';
 $string['overwrite'] = 'Sovrascrivi';
 $string['overwriteall'] = 'Sovrascrivi tutti';
 $string['path'] = 'Percorso';
-$string['personalrepositories'] = 'Istanze repository disponibili';
 $string['plugin'] = 'Repository plug-in';
 $string['pluginerror'] = 'Si sono verificati errori nel repository plugin';
 $string['pluginname'] = 'Nome plugin repository';

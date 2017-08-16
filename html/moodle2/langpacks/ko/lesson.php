@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -172,11 +172,6 @@ $string['eolstudentoutoftime'] = '주의: 학습시간이 종료되었습니다.
 $string['eolstudentoutoftimenoanswers'] = '당신은 답변을 전혀 하지 않았습니다.
 이번 학습에서 0점을 얻게 되었습니다.';
 $string['essay'] = '에세이';
-$string['essayemailmessage'] = '<p>에세이 질문:<blockquote>{$a->question}</blockquote></p>
-<p>여러분의 답:<blockquote><em>{$a->response}</em></blockquote></p>
-<p>{$a->teacher} 의 평:<blockquote><em>{$a->comment}</em></blockquote></p>
-<p>이 에세이 질문에서 {$a->outof} 중 {$a->earned} 을 얻었습니다.</p>
-<p>학습에 대한 성적은 {$a->newgrade}% 로 변경되었습니다.</p>';
 $string['essayemailmessage2'] = '<p>에세이 질문:<blockquote>{$a->question}</blockquote></p> <p>여러분의 답:<blockquote><em>{$a->response}</em></blockquote></p> <p>채점자의 평:<blockquote><em>{$a->comment}</em></blockquote></p> <p>이에세이 질문에서 {$a->outof} 중 {$a->earned} 을 얻었습니다.</p> <p>학습에 대한 성적은 {$a->newgrade}% 로 변경되었습니다.</p>';
 $string['essayemailsubject'] = '{$a} 질문에 대한 성적';
 $string['essays'] = '에세이';
@@ -222,7 +217,6 @@ $string['leftduringtimed'] = '당신은 규정된 학습시간에 자리를 비�
 $string['leftduringtimednoretake'] = '당신은 규정된 학습시간에 자리를 비웠기 때문에<br />재학습을 하거나 계속할 수 없습니다.';
 $string['leftduringtimedsession'] = '시간이 정해진 세션에서 나갔습니다.';
 $string['lesson:addinstance'] = '새 완전학습 추가';
-$string['lessonattempted'] = '완전학습 시도됨';
 $string['lessonclosed'] = '이 완전학습은 {$a} 에 종료되었습니다.';
 $string['lessoncloses'] = '완전학습 종료';
 $string['lessoncloseson'] = '완전학습은 {$a} 에 종료됨';
@@ -280,7 +274,7 @@ $string['multichoice'] = '선다형';
 $string['multipleanswer'] = '복수 답';
 $string['nameapproved'] = '이름 승인됨';
 $string['namereject'] = '죄송합니다. 당신의 이름은 필터에 의해 거부되었습니다. <br />다른 이름을 입력하세요.';
-$string['new'] = '새';
+$string['new'] = '신규';
 $string['nextpage'] = '다음 페이지';
 $string['noanswer'] = '답을 하지 않았습니다. 되돌아 가서 답을 입력하세요.';
 $string['noattemptrecordsfound'] = '한 번도 시도한 기록이 없습니다. 성적이 주어지지 않았습니다.';

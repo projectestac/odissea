@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'completion', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,7 +123,7 @@ $string['err_noactivities'] = 'すべての活動で完了情報が有効にさ�
 $string['err_nocourses'] = '他のどのコースでもコース完了が有効にされていないため、何も表示することはできません。あなたはコース設定内でコース完了を有効にすることができます。';
 $string['err_nograde'] = 'このコースにはコース合格点が設定されていません。このクライテリアタイプを設定するにはあなたはコースに合格点を設定する必要があります。';
 $string['err_noroles'] = 'このコースにはケイパビリティ「moodle/course:markcomplete」が割り当てられたロールがありません。';
-$string['err_nousers'] = 'このコースまたはグループには完了情報を表示するユーザはいません (デフォルトでは完了情報は学生のみに表示されます。学生が登録されていない場合、このエラーが表示されます。管理者はこのオプションを管理画面で変更することができます)。';
+$string['err_nousers'] = 'このコースまたはグループには完了情報を表示するユーザはいません (デフォルトでは完了情報は学生にのみ表示されます。学生が登録されていない場合、このエラーが表示されます。管理者はこのオプションを管理画面で変更することができます)。';
 $string['err_settingslocked'] = '1名またはそれ以上の学生がすでにクライテリアを完了しているため、設定がロックされています。完了クライテリア設定ロックを解除するには既存のユーザデータを削除する必要があります。ユーザデータ削除により混乱が生じる恐れがあります。';
 $string['err_system'] = '完了システムで内部エラーが発生しました (詳細情報を表示するため、システム管理者はデバッグ情報の表示を有効にできます)。';
 $string['eventcoursecompleted'] = 'コースが完了しました。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['activaterep'] = 'Ενεργοί χώροι αποθήκευσης';
 $string['activerepository'] = 'Υπομονάδες λογισμικού ενεργών χώρων αποθήκευσης';
 $string['add'] = 'Προσθήκη';
 $string['addfile'] = 'Προσθήκη...';
+$string['addfiletext'] = 'Προσθήκη αρχείου';
 $string['addplugin'] = 'Προσθήκη μιας υπομονάδας λογισμικού χώρου αποθήκευσης';
 $string['allowexternallinks'] = 'Επιτρέπονται εξωτερικοί σύνδεσμοι';
 $string['areacategoryintro'] = 'Εισαγωγή στην κατηγορία';
@@ -40,7 +41,7 @@ $string['areauserpersonal'] = 'Προσωπικά';
 $string['areauserprofile'] = 'Προφίλ';
 $string['attachment'] = 'Συνημμένα';
 $string['author'] = 'Συγγραφέας';
-$string['back'] = '&lt; Επιστροφή';
+$string['back'] = '« Επιστροφή';
 $string['backtodraftfiles'] = '&laquo; Επιστροφή στη διαχείριση προσχέδιων αρχείων';
 $string['cachecleared'] = 'Τα αρχεία στην προσωρινή μνήμη διαγράφονται';
 $string['cacheexpire'] = 'Λήξη προσωρινής μνήμης';
@@ -70,7 +71,7 @@ $string['downloadfolder'] = 'Μεταφόρτωση όλων';
 $string['downloadsucc'] = 'Το αρχείο μεταφορτώθηκε με επιτυχία';
 $string['editrepositoryinstance'] = 'Επεξεργασία στιμιότυπου χώρου αποθήκευσης';
 $string['emptylist'] = 'Κενή λίστα';
-$string['emptytype'] = 'Αποτυχία δημιουργίας τύπου χώρου αποθήκευσης: το όνομα του τύπου είναι κενό';
+$string['emptytype'] = 'Αδυναμία δημιουργίας τύπου χώρου αποθήκευσης: το όνομα του τύπου είναι κενό';
 $string['enablecourseinstances'] = 'Ενεργοποίηση χώρων αποθήκευσης μαθήματος';
 $string['enableuserinstances'] = 'Ενεργοποίηση χώρων αποθήκευσης χρήστη';
 $string['entername'] = 'Παρακαλώ εισάγετε όνομα φακέλου';
@@ -113,7 +114,6 @@ $string['openpicker'] = 'Επιλέξτε ένα αρχείο...';
 $string['operation'] = 'Λειτουργία';
 $string['overwrite'] = 'Αντικατάσταση';
 $string['overwriteall'] = 'Αντικατάσταση όλων';
-$string['personalrepositories'] = 'Προσωπικοί χώροι αποθήκευσης';
 $string['plugin'] = 'Υπομονάδες λογισμικού χώρου αποθήκευσης';
 $string['pluginname'] = 'Όνομα πρόσθετης λειτουργίας χώρου αποθήκευσης';
 $string['pluginnamehelp'] = 'Αν το αφήσετε κενό θα χρησιμοποιηθεί το προεπιλεγμένο όνομα.';

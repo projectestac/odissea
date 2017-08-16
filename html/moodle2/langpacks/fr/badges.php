@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,7 +88,7 @@ $string['backpackconnection_help'] = 'Cette page vous permet de mettre en place 
 
 Actuellement, seul le sac à badges <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a> est supporté. Vous devez vous abonner à un tel service avant de mettre en place une connexion sur cette page.';
 $string['backpackconnectionresendemail'] = 'Envoyer à nouveau le courriel de vérification';
-$string['backpackconnectionunexpectedresult'] = 'Un problème est survenu lors du contact avec le sac à badges. Veuillez ressayer.<br /><br />Si ce problème persiste, contactez l\'administrateur de votre plateforme.';
+$string['backpackconnectionunexpectedresult'] = 'Un problème est survenu lors de la connexion au sac à badges. Veuillez ressayer.<br /><br />Si ce problème persiste, contactez l\'administrateur de votre plateforme.';
 $string['backpackdetails'] = 'Réglages du sac à badges';
 $string['backpackemail'] = 'Adresse de courriel';
 $string['backpackemail_help'] = 'Adresse de courriel associée à votre sac à badges. Lorsque vous êtes connecté, tous les badges reçus sur ce site seront associés à cette adresse de courriel.';
@@ -97,7 +97,7 @@ $string['backpackemailverifyemailbody'] = 'Bonjour,
 
 Une connexion à votre sac à badges OpenBadges a été demandée depuis « {$a->sitename} » au moyen de votre adresse de courriel.
 
-Pour confirmer cette demande et activer la connexion à votre sac à badges, veuillez cliquer sur le lien ci-dessous.
+Pour confirmer cette demande et activer la connexion à votre sac à badges, veuillez aller sur
 
 {$a->link}
 
@@ -234,10 +234,13 @@ $string['error:backpackemailnotfound'] = 'L\'adresse de courriel « {$a} » n\
 $string['error:backpackloginfailed'] = 'Il n\'a pas été possible de vous connecter à un sac à badges externe pour la raison suivante : {$a}';
 $string['error:backpacknotavailable'] = 'Votre site ne peut pas être atteint via l\'internet. Tous les badges décernés sur ce site ne pourront pas être vérifiés par des services de sacs à badges externes.';
 $string['error:backpackproblem'] = 'Un problème est survenu lors de la connexion avec votre fournisseur de sac à badges. Veuillez ré-essayer plus tard.';
+$string['error:badgeawardnotfound'] = 'Impossible de vérifier le badge décerné. Ce badge a peut-être été révoqué.';
+$string['error:badgenotfound'] = 'Badge non trouvé';
 $string['error:badjson'] = 'La tentative de connexion a renvoyé des données non valides.';
 $string['error:cannotact'] = 'Impossible d\'activer le badge.';
 $string['error:cannotawardbadge'] = 'Impossible de décerner le badge à un utilisateur.';
 $string['error:cannotdeletecriterion'] = 'Ce critère ne peut pas être supprimé.';
+$string['error:cannotrevokebadge'] = 'Impossible de révoquer le badge pour un utilisateur';
 $string['error:clone'] = 'Impossible de dupliquer le badge.';
 $string['error:connectionunknownreason'] = 'La connexion a échoué sans qu\'aucune raison ne soit donnée.';
 $string['error:duplicatename'] = 'Un badge de ce nom existe déjà dans le système.';
@@ -265,7 +268,20 @@ $string['error:requesterror'] = 'La requête de connexion a échoué (erreur {$a
 $string['error:requesttimeout'] = 'La requête de connexion est arrivée à échéance avant de pouvoir se terminer.';
 $string['error:save'] = 'Impossible d\'enregistrer le badge';
 $string['error:userdeleted'] = '{$a->user} (ce compte utilisateur n\'existe plus dans {$a->site})';
+$string['eventbadgearchived'] = 'Badge archivé';
 $string['eventbadgeawarded'] = 'Badge décerné';
+$string['eventbadgecreated'] = 'Badge créé';
+$string['eventbadgecriteriacreated'] = 'Critère de badge créé';
+$string['eventbadgecriteriadeleted'] = 'Critère de badge supprimé';
+$string['eventbadgecriteriaupdated'] = 'Critère de badge modifié';
+$string['eventbadgedeleted'] = 'Badge supprimé';
+$string['eventbadgedisabled'] = 'Badge désactivé';
+$string['eventbadgeduplicated'] = 'Badge dupliqué';
+$string['eventbadgeenabled'] = 'Badge activé';
+$string['eventbadgelistingviewed'] = 'Liste des badges consultée';
+$string['eventbadgerevoked'] = 'Badge révoqué';
+$string['eventbadgeupdated'] = 'Badge modifié';
+$string['eventbadgeviewed'] = 'Badge consulté';
 $string['evidence'] = 'Preuve';
 $string['existingrecipients'] = 'Détenteurs de badges';
 $string['expired'] = 'Échu';
@@ -362,6 +378,7 @@ $string['reviewconfirm'] = '<p>Cette action rendra le badge visible pour les uti
 <p>Dès que le badge aura été décerné, il sera <strong>verrouillé</strong>. Certains réglages, y compris les critères d\'obtention et la date d\'échéance ne pourront plus être modifiés.</p>
 
 <p>Voulez-vous vraiment rendre accessible le badge « {$a} » ?</p>';
+$string['revoke'] = 'Révoquer le badge';
 $string['save'] = 'Enregistrer';
 $string['searchname'] = 'Rechercher par nom';
 $string['selectaward'] = 'Veuillez choisir le rôle que vous voulez utiliser pour décerner ce badge :';

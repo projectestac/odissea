@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,10 +37,10 @@ $string['courseexplanation'] = 'こツールでは、多くのセクション、
 **実運用サイトでこの機能を使用しないでください** 開発用サーバでのみ使用してください。(予想外の使用を避けるため、あなたが「DEVELOPER」デバッグレベルを選択しない限り、この機能は無効にされています。';
 $string['coursesize_0'] = 'XS (~10KB; 作成 ~1秒)';
 $string['coursesize_1'] = 'S (~10MB; 作成 ~30秒)';
-$string['coursesize_2'] = 'M (~100MB; 作成  ~5分)';
-$string['coursesize_3'] = 'L (~1GB; 作成 ~1時間)';
-$string['coursesize_4'] = 'XL (~10GB; 作成 ~4時間)';
-$string['coursesize_5'] = 'XXL (~20GB; 作成 ~8時間)';
+$string['coursesize_2'] = 'M (~100MB; 作成  ~2分)';
+$string['coursesize_3'] = 'L (~1GB; 作成 ~30分)';
+$string['coursesize_4'] = 'XL (~10GB; 作成 ~2時間)';
+$string['coursesize_5'] = 'XXL (~20GB; 作成 ~4時間)';
 $string['coursewithoutusers'] = '選択されたコースにはユーザが登録されていません。';
 $string['createcourse'] = 'コースを作成する';
 $string['createtestplan'] = 'テストプランを作成する';

@@ -386,6 +386,9 @@ class cache implements cache_loader {
         $isusingpersist = $this->use_static_acceleration();
         foreach ($keys as $key) {
             $pkey = $this->parse_key($key);
+            if (is_array($pkey)) {
+                $pkey = $pkey['key'];
+            }
             $keysparsed[$key] = $pkey;
             $parsedkeys[$pkey] = $key;
             $keystofind[$pkey] = $key;
@@ -945,15 +948,12 @@ class cache implements cache_loader {
     }
 
     /**
-     * Returns true if this cache is making use of the static acceleration array.
-     *
      * @deprecated since 2.6
      * @see cache::use_static_acceleration()
-     * @return bool
      */
     protected function is_using_persist_cache() {
-        debugging('This function has been deprecated. Please call use_static_acceleration instead', DEBUG_DEVELOPER);
-        return $this->use_static_acceleration();
+        throw new coding_exception('cache::is_using_persist_cache() can not be used anymore.' .
+            ' Please use cache::use_static_acceleration() instead.');
     }
 
     /**
@@ -966,16 +966,12 @@ class cache implements cache_loader {
     }
 
     /**
-     * Returns true if the requested key exists within the static acceleration array.
-     *
      * @see cache::static_acceleration_has
      * @deprecated since 2.6
-     * @param string $key The parsed key
-     * @return bool
      */
-    protected function is_in_persist_cache($key) {
-        debugging('This function has been deprecated. Please call static_acceleration_has instead', DEBUG_DEVELOPER);
-        return $this->static_acceleration_has($key);
+    protected function is_in_persist_cache() {
+        throw new coding_exception('cache::is_in_persist_cache() can not be used anymore.' .
+            ' Please use cache::static_acceleration_has() instead.');
     }
 
     /**
@@ -994,16 +990,12 @@ class cache implements cache_loader {
     }
 
     /**
-     * Returns the item from the static acceleration array if it exists there.
-     *
      * @deprecated since 2.6
      * @see cache::static_acceleration_get
-     * @param string $key The parsed key
-     * @return mixed|false The data from the static acceleration array or false if it wasn't there.
      */
-    protected function get_from_persist_cache($key) {
-        debugging('This function has been deprecated. Please call static_acceleration_get instead', DEBUG_DEVELOPER);
-        return $this->static_acceleration_get($key);
+    protected function get_from_persist_cache() {
+        throw new coding_exception('cache::get_from_persist_cache() can not be used anymore.' .
+            ' Please use cache::static_acceleration_get() instead.');
     }
 
     /**
@@ -1049,17 +1041,12 @@ class cache implements cache_loader {
     }
 
     /**
-     * Sets a key value pair into the static acceleration array.
-     *
      * @deprecated since 2.6
      * @see cache::static_acceleration_set
-     * @param string $key The parsed key
-     * @param mixed $data
-     * @return bool
      */
-    protected function set_in_persist_cache($key, $data) {
-        debugging('This function has been deprecated. Please call static_acceleration_set instead', DEBUG_DEVELOPER);
-        return $this->static_acceleration_set($key, $data);
+    protected function set_in_persist_cache() {
+        throw new coding_exception('cache::set_in_persist_cache() can not be used anymore.' .
+            ' Please use cache::static_acceleration_set() instead.');
     }
 
     /**
@@ -1100,16 +1087,12 @@ class cache implements cache_loader {
     }
 
     /**
-     * Deletes an item from the static acceleration array.
-     *
      * @deprecated since 2.6
      * @see cache::static_acceleration_delete()
-     * @param string|int $key As given to get|set|delete
-     * @return bool True on success, false otherwise.
      */
-    protected function delete_from_persist_cache($key) {
-        debugging('This function has been deprecated. Please call static_acceleration_delete instead', DEBUG_DEVELOPER);
-        return $this->static_acceleration_delete($key);
+    protected function delete_from_persist_cache() {
+        throw new coding_exception('cache::delete_from_persist_cache() can not be used anymore.' .
+            ' Please use cache::static_acceleration_delete() instead.');
     }
 
     /**

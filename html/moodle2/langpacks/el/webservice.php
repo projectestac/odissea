@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,20 +35,20 @@ $string['enabled'] = 'Ενεργοποιημένο';
 $string['errorcodes'] = 'Μήνυμα σφάλματος';
 $string['externalservice'] = 'Εξωτερική υπηρεσία';
 $string['externalservices'] = 'Εξωτερικές υπηρεσίες';
+$string['forbiddenwsuser'] = 'Αδυναμία δημιουργίας αδειοπλαισίου για μη επιβεβαιωμένο, διεγραμμένο, σε αναστολή χρήστη ή επισκέπτη.';
 $string['functions'] = 'Λειτουργίες';
 $string['iprestriction'] = 'Περιορισμοί IP';
 $string['key'] = 'Κλειδί';
 $string['manageprotocols'] = 'Διαχείριση πρωτοκόλλων';
 $string['managetokens'] = 'Διαχείριση οντοτήτων (tokens)';
-$string['mobilewsdisabled'] = 'Απενεργοποιημένο';
-$string['mobilewsenabled'] = 'Ενεργοποιημένο';
 $string['notoken'] = 'Η λίστα οντοτήτων (tokens) είναι άδεια.';
 $string['operation'] = 'Λειτουργία';
 $string['protocol'] = 'Πρωτόκολλο';
 $string['restrictedusers'] = 'Εξουσιοδοτημένοι χρήστες μόνο';
 $string['restrictedusers_help'] = 'Αυτή η ρύθμιση καθορίζει αν όλοι οι χρήστες με άδεια να δημιουργήσουν μια οντότητα (token) διαδικτυακής υπηρεσίας μπορούν να δημιουργήσουν μια οντότητα (token) για αυτή την υπηρεσία μέσω της σελίδας κλειδιών ασφαλείας ή μόνο εξουσιοδοτημένοι χρήστες μπορούν να το κάνουν.';
-$string['securitykeys'] = 'Κλειδιά ασφαλείας';
+$string['securitykeys'] = 'Κλειδία ασφαλείας';
 $string['service'] = 'Υπηρεσία';
 $string['servicehelpexplanation'] = 'Μια υπηρεσία είναι ένα σύνολο λειτουργιών. Μια υπηρεσία μπορεί να προσπελαστεί από όλους τους χρήστες ή μόνο από ορισμένους χρήστες.';
 $string['servicesbuiltin'] = 'Κατασκευασμένο με υπηρεσίες';
 $string['validuntil'] = 'Έγκυρο μέχρι';
+$string['wsaccessusersuspended'] = 'Απαγόρευση πρόσβασης στη διαδικτυακή υπηρεσία για το όνομα χρήστη σε αναστολή: {$a}';

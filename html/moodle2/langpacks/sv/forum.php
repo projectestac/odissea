@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -250,7 +250,7 @@ $string['inforum'] = 'i {$a}';
 $string['introblog'] = 'Inläggen i det här forumet kopierades hit automatiskt från bloggar som tillhör användare i den här kursen. Detta eftersom de blogginläggen inte längre var tillgängliga.';
 $string['intronews'] = 'Allmänna nyheter och meddelanden';
 $string['introsocial'] = 'Ett öppet forum där Du kan diskutera vad Du vill';
-$string['introteacher'] = 'Ett forum endast för lärares anteckningar och diskussionsämnen';
+$string['introteacher'] = 'Ett forum endast för distanslärares anteckningar och diskussionsämnen';
 $string['invalidaccess'] = 'Åtkomsten av den här sidan var ogiltig. ';
 $string['invaliddiscussionid'] = 'ID för diskussionen var felaktigt alternativt existerar inte längre. ';
 $string['invalidforcesubscribe'] = 'Ogiltig läge för obligatorisk prenumeration';
@@ -378,7 +378,7 @@ $string['readtherest'] = 'Läs fortsättningen på detta ämne';
 $string['replies'] = 'Svar:';
 $string['repliesmany'] = '{$a} svar så långt';
 $string['repliesone'] = '{$a} svar så långt';
-$string['reply'] = 'Svara';
+$string['reply'] = 'Svar';
 $string['replyforum'] = 'Svar till forum';
 $string['replytouser'] = 'Använd e-postadressen i svaret';
 $string['resetforums'] = 'Ta bort alla inlägg från';

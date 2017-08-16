@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_textarea', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = '텍스트 영역 항목';
 $string['maxbytes'] = '임베드 파일의 최대 크기 (바이트)';
 $string['maxbytes_desc'] = '0으로 설정하면 기본으로 무제한';
 $string['pluginname'] = '텍스트 영역';

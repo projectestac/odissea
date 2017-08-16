@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['editservice'] = 'Editar el servicio: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Habilitado';
 $string['enabledocumentation'] = 'Habilitar documentación del desarrollador';
 $string['enabledocumentationdescription'] = 'Está disponible para los protocolos habilitados una documentación detallada sobre los servicios de la web.';
-$string['enablemobilewsoverview'] = 'Vaya a la página de administración {$a->manageservicelink}, elija la configuración "{$a->enablemobileservice}" y guárdela. Todo se configurará para usted y todos los usuarios del sitio podrán emplear la app oficial de Moodle. Status actual: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Habilitar los protocolos';
 $string['enableprotocolsdescription'] = 'Al menos un protocolo debe estar habilitado. Por razones de seguridad, los protocolos que se van a utilizar deben estar habilitados.';
 $string['enablews'] = 'Habilitar Servicios Web';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'Falta la contraseña';
 $string['missingrequiredcapability'] = 'El permiso {$a} es requisito.';
 $string['missingusername'] = 'Falta nombre de usuario';
 $string['missingversionfile'] = 'Error de programación: falta el archivo version.php para el componente {$a}';
-$string['mobilewsdisabled'] = 'Deshabilitado';
-$string['mobilewsenabled'] = 'Habilitado';
 $string['nameexists'] = 'Este nombre ya está en uso por otro servicio';
 $string['nocapabilitytouseparameter'] = 'El usuario no tiene la capacidad necesaria para utilizar el parámetro {$a}';
 $string['nofunctions'] = 'Este servicio no tiene funciones.';
@@ -207,6 +204,7 @@ $string['usernameorid_help'] = 'Introduzca el nombre de usuario o la ID de usuar
 $string['usernameoridnousererror'] = 'No se encontraron usuarios con este nombre de usuario / ID de usuario';
 $string['usernameoridoccurenceerror'] = 'Se encontró a más de un usuario con este nombre de usuario. Por favor introduzca la ID del usuario';
 $string['usernotallowed'] = 'El usuario no tiene permitido este servicio. Primeramente debe permitirselo a este usuario en las  {$a}\'s permitidas de la página de administración de usuarios.';
+$string['userservices'] = 'Servicios de usuario: {$a}';
 $string['usersettingssaved'] = 'Configuración de usuario guardada';
 $string['validuntil'] = 'Válido hast';
 $string['validuntil_help'] = 'Si se activa la opción, el servicio se desactivará para este usuario después de esta fecha.';

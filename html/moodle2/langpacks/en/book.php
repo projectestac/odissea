@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['book:addinstance'] = 'Add a new book';
 $string['book:edit'] = 'Edit book chapters';
 $string['book:read'] = 'View book';
 $string['book:viewhiddenchapters'] = 'View hidden book chapters';
+$string['chapterandsubchaptersdeleted'] = 'Chapter "{$a->title}" and its {$a->subchapters} subchapters were deleted';
+$string['chapterdeleted'] = 'Chapter "{$a->title}" was deleted';
 $string['chapters'] = 'Chapters';
 $string['chaptertitle'] = 'Chapter title';
 $string['confchapterdelete'] = 'Do you really want to delete this chapter?';
@@ -63,9 +65,11 @@ $string['movechapterup'] = 'Move chapter up "{$a}"';
 $string['navexit'] = 'Exit book';
 $string['navimages'] = 'Images';
 $string['navnext'] = 'Next';
+$string['navnexttitle'] = 'Next: {$a}';
 $string['navoptions'] = 'Available options for navigational links';
 $string['navoptions_desc'] = 'Options for displaying navigation on the book pages';
 $string['navprev'] = 'Previous';
+$string['navprevtitle'] = 'Previous: {$a}';
 $string['navstyle'] = 'Style of navigation';
 $string['navstyle_help'] = '* Images - Icons are used for navigation
 * Text - Chapter titles are used for navigation';

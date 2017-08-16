@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_filesystem', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['blockedpath'] = 'Ruta raíz bloqueada';
 $string['configplugin'] = 'Configuración do repositorio no sistema de ficheiros';
 $string['donotusesysdir'] = 'Non empregue o directorio do sistema como repositorio, incluíndo';
 $string['enablecourseinstances'] = 'Permitirlle aos usuarios engadir unha instancia do repositorio no curso (só pode ser configurado polos los administradores)';
-$string['enableuserinstances'] = 'Permitirlle aos usuarios engadir unha instancia do repositorio no contexto de usuario (só pode ser configurado polos administradores)';
+$string['enableuserinstances'] = 'Permitirlle aos usuarios engadir unha instancia do repositorio no contexto de usuario (só pode ser configurado polos los administradores)';
 $string['filesystem:view'] = 'Ver o repositorio do sistema de ficheiros';
 $string['information'] = 'Estes cartafoles están dentro do directorio <b>{$a}</b>.';
 $string['invalidpath'] = 'Ruta raíz incorrecta';

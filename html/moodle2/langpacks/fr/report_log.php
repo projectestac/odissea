@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_log', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'Toutes les sources';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Composant';
 $string['eventcontext'] = 'Contexte de l\'événement';
 $string['eventloggedas'] = '{$a->realusername} en tant que {$a->asusername}';
@@ -36,9 +38,14 @@ $string['logsformat'] = 'Format des historiques';
 $string['log:view'] = 'Consulter les historiques du cours';
 $string['log:viewtoday'] = 'Consulter l\'historique du jour';
 $string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
+$string['origin'] = 'Source';
+$string['other'] = 'Autre';
 $string['page'] = 'Page {$a}';
 $string['page-report-log-index'] = 'Rapport d\'historiques de cours';
 $string['page-report-log-user'] = 'Rapport utilisateur d\'historiques de cours';
 $string['page-report-log-x'] = 'Tout rapport d\'historiques';
 $string['pluginname'] = 'Historiques';
+$string['restore'] = 'Restaurer';
 $string['selectlogreader'] = 'Sélectionner un lecteur d\'historiques';
+$string['web'] = 'Web';
+$string['ws'] = 'Service web';

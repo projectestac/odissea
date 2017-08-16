@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['competencyframeworkcreated'] = 'Gaitasun-markoa sortu da.';
 $string['competencyframeworkname'] = 'Izena';
 $string['competencyframeworkroot'] = 'Goragokorik ez (maila goreneko gaitasuna)';
 $string['competencyframeworks'] = 'Gaitasun-markoak';
+$string['competencyframeworksrepository'] = 'Gaitasun-markoen biltegia';
 $string['competencyframeworkupdated'] = 'Gaitasun-markoa eguneratu da.';
 $string['competencyoutcome_complete'] = 'Markatu osatutzat';
 $string['competencyoutcome_evidence'] = 'Erantsi ebidentzia';
@@ -146,6 +147,7 @@ $string['points'] = 'Puntuak';
 $string['pointsgivenfor'] = '\'{$a}\'-(r)i emandako puntuak';
 $string['proficient'] = 'Gai';
 $string['progress'] = 'Aurrerapena';
+$string['rate'] = 'Kalifikatu';
 $string['ratecomment'] = 'Ebidentzien oharrak';
 $string['rating'] = 'Puntuazioa';
 $string['reopenplan'] = 'Zabaldu berriz ikasketa-plan hau';

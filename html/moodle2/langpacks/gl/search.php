@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'search', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,6 @@ $string['documentsinindex'] = 'Documentos no índice';
 $string['duration'] = 'Duración';
 $string['emptydatabaseerror'] = 'Non está presente a táboa da base de datos ou non conten rexistros do índice.';
 $string['enginenotfound'] = 'Non se atopou o motor {$a}.';
-$string['enginenotinstalled'] = '{$a} non está instalado.';
 $string['engineserverstatus'] = 'Non está dispoñíbel o motor de buscas. Póñase en contacto co administrador.';
 $string['enteryoursearchquery'] = 'Escriba a súa consulta de busca';
 $string['errorareanotavailable'] = 'A área de buscas {$a} non está dispoñíbel.';

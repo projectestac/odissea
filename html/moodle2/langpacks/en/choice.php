@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,18 +30,20 @@ $string['allowmultiple'] = 'Allow more than one choice to be selected';
 $string['allowupdate'] = 'Allow choice to be updated';
 $string['answered'] = 'Answered';
 $string['atleastoneoption'] = 'You need to provide at least one possible answer.';
+$string['calendarend'] = 'Choice {$a} closes';
+$string['calendarstart'] = 'Choice {$a} opens';
 $string['cannotsubmit'] = 'Sorry, there was a problem submitting your choice. Please try again.';
 $string['choice'] = 'Choice';
 $string['choiceactivityname'] = 'Choice: {$a}';
 $string['choice:addinstance'] = 'Add a new choice';
 $string['choice:choose'] = 'Record a choice';
-$string['choiceclose'] = 'Until';
+$string['choiceclose'] = 'Allow responses until';
 $string['choicecloseson'] = 'Choice closes on {$a}';
-$string['choice:deleteresponses'] = 'Delete responses';
+$string['choice:deleteresponses'] = 'Modify and delete responses';
 $string['choice:downloadresponses'] = 'Download responses';
 $string['choicefull'] = 'This choice is full and there are no available places.';
 $string['choicename'] = 'Choice name';
-$string['choiceopen'] = 'Open';
+$string['choiceopen'] = 'Allow responses from';
 $string['choiceoptions'] = 'Choice options';
 $string['choiceoptions_help'] = 'Here is where you specify the options that participants have to choose from.
 
@@ -49,15 +51,18 @@ You can fill in any number of these. If you leave some of the options blank, the
 $string['choice:readresponses'] = 'View responses';
 $string['choicesaved'] = 'Your choice has been saved';
 $string['choicetext'] = 'Choice text';
+$string['choice:view'] = 'View choice activity';
 $string['chooseaction'] = 'Choose an action ...';
+$string['chooseoption'] = 'Choose: {$a}';
 $string['closebeforeopen'] = 'You have specified a close date before the open date.';
 $string['completionsubmit'] = 'Show as complete when user makes a choice';
 $string['description'] = 'Description';
 $string['displayhorizontal'] = 'Display horizontally';
 $string['displaymode'] = 'Display mode for the options';
 $string['displayvertical'] = 'Display vertically';
-$string['eventanswercreated'] = 'Choice made';
+$string['eventanswercreated'] = 'Choice answer added';
 $string['eventanswerdeleted'] = 'Choice answer deleted';
+$string['eventanswersubmitted'] = 'Choice made';
 $string['eventanswerupdated'] = 'Choice updated';
 $string['eventreportdownloaded'] = 'Choice report downloaded';
 $string['eventreportviewed'] = 'Choice report viewed';
@@ -123,7 +128,6 @@ $string['skipresultgraph'] = 'Skip result graph';
 $string['spaceleft'] = 'space available';
 $string['spacesleft'] = 'spaces available';
 $string['taken'] = 'Taken';
-$string['timerestrict'] = 'Restrict answering to this time period';
 $string['userchoosethisoption'] = 'Users who chose this option';
 $string['viewallresponses'] = 'View {$a} responses';
 $string['withselected'] = 'With selected';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,13 +67,13 @@ Per estendre la inscripció, aneu a  {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificació de venciment d\'autoinscripció.';
 $string['groupkey'] = 'Utilitza les claus d\'inscripció del grup';
 $string['groupkey_desc'] = 'Utilitza les claus d\'inscripció de grup per defecte.';
-$string['groupkey_help'] = 'A més a més de restringir l\'accés  al curs a únicament qui coneix la clau, l\'ús d\'una clau d\'inscripció de grup possibilita que els usuaris s\'afegixin a grups concrets de forma automàtica quan s\'inscriuen al curs.
+$string['groupkey_help'] = 'A més a més de restringir l\'accés  al curs a únicament a qui coneix la clau, l\'ús d\'una clau d\'inscripció de grup possibilita que els usuaris s\'afegixin a grups concrets de forma automàtica quan s\'inscriuen al curs.
 
-Nota: Cal especificar una clau d\'inscripció als paràmetres de l\'autoinscripció així com la clau d\'inscripció de grup als paràmetres del grup.';
+Nota: Cal especificar una clau d\'inscripció als paràmetres de l\'autoinscripció, així com la clau d\'inscripció de grup als paràmetres del grup.';
 $string['keyholder'] = 'Hauríeu d\'haver rebut aquesta clau d\'inscripció de:';
 $string['longtimenosee'] = 'Cancel·la la inscripció si roman inactiu des de';
 $string['longtimenosee_help'] = 'Si els usuaris no han accedit a un curs després d\'un llarg període de temps, se\'ls cancel·larà la inscripció de forma automàtica.
-Aquest paràmetre especifica aquest temps límit.';
+Aquest paràmetre especifica aquest termini.';
 $string['maxenrolled'] = 'Nombre màxim d\'usuaris inscrits';
 $string['maxenrolled_help'] = 'Especifica el nombre màxim d\'usuaris que es poden inscriure. 0 significa que no hi ha límit';
 $string['maxenrolledreached'] = 'Ja s\'ha assolit el nombre màxim d\'usuaris que heu permès autoinscriure\'s.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_ldap', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['autocreate'] = '<p>As disciplinas podem ser criadas automaticamente cas
 $string['autocreate_key'] = 'Criação automática';
 $string['autocreation_settings'] = 'Configurações para criação automática de disciplinas';
 $string['autoupdate_settings'] = 'Atualização das definições automáticas da disciplina';
-$string['autoupdate_settings_desc'] = 'Selecione os ficheiros a atualizar quando o script de sincronização estiver a ser executado (enrol/ldap/cli/sync.php).</p><p> Uma atualização irá decorrer quando pelo menos um campo estiver selecionado.</p>';
+$string['autoupdate_settings_desc'] = '<p>Selecione os ficheiros a atualizar quando o script de sincronização estiver a ser executado (enrol/ldap/cli/sync.php).</p><p> Uma atualização irá decorrer quando pelo menos um campo estiver selecionado.</p>';
 $string['bind_dn'] = 'Se desejar indique neste campo um nome de utilizador de <em>bind</em> para pesquisar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
 $string['bind_dn_key'] = 'DN do utilizador de <em>bind</em>';
 $string['bind_pw'] = 'Senha do utilizador de <em>bind</em>';
@@ -64,8 +64,8 @@ $string['course_summary_updateonsync'] = 'Atualizar o sumário durante o script 
 $string['course_summary_updateonsync_key'] = 'Atualizar sumário';
 $string['courseupdated'] = 'A disciplina com o número de ID \'{$a->idnumber}\' foi atualizada com sucesso.';
 $string['courseupdateskipped'] = 'A disciplina com o número de ID \'{$a->idnumber}\' não requer atualização. A ignorar...';
-$string['createcourseextid'] = 'CRIAR Utilizador inscrito numa disciplina que não existe: "{$a->courseextid}"';
-$string['createnotcourseextid'] = 'Utilizador inscrito numa disciplina que não existe: "{$a->courseextid}"';
+$string['createcourseextid'] = 'CRIAR Utilizador inscrito numa disciplina que não existe: \'{$a->courseextid}\'';
+$string['createnotcourseextid'] = 'Utilizador inscrito numa disciplina que não existe: \'{$a->courseextid}\'';
 $string['creatingcourse'] = 'A criar a disciplina "{$a}" ...';
 $string['duplicateshortname'] = 'A criação da disciplina falhou. Duplique o nome curto. A disciplina com o número ID \'{$a->idnumber}\' será ignorada.';
 $string['editlock'] = 'Bloquear valor';

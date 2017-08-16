@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,8 +55,9 @@ $string['check_values'] = 'Possible responses';
 $string['choosefile'] = 'Choose a file';
 $string['chosen_feedback_response'] = 'chosen feedback response';
 $string['closebeforeopen'] = 'You have specified an end date before the start date.';
-$string['completed'] = 'completed';
+$string['completed'] = 'Completed';
 $string['completed_feedbacks'] = 'Submitted answers';
+$string['completedon'] = 'Completed on {$a}';
 $string['complete_the_form'] = 'Answer the questions...';
 $string['completionsubmit'] = 'View as completed if the feedback is submitted';
 $string['configallowfullanonymous'] = 'If set to \'yes\', users can complete a feedback activity on the front page without being required to log in.';
@@ -206,7 +207,7 @@ $string['notavailable'] = 'this feedback is not available';
 $string['not_completed_yet'] = 'Not completed yet';
 $string['no_templates_available_yet'] = 'No templates available yet';
 $string['not_selected'] = 'Not selected';
-$string['not_started'] = 'not started';
+$string['not_started'] = 'Not started';
 $string['numberoutofrange'] = 'Number out of range';
 $string['numeric'] = 'Numeric answer';
 $string['numeric_range_from'] = 'Range from';
@@ -271,7 +272,8 @@ $string['show_nonrespondents'] = 'Show non-respondents';
 $string['site_after_submit'] = 'Site after submit';
 $string['sort_by_course'] = 'Sort by course';
 $string['start'] = 'Start';
-$string['started'] = 'started';
+$string['started'] = 'Started';
+$string['startedon'] = 'Started on {$a}';
 $string['stop'] = 'End';
 $string['subject'] = 'Subject';
 $string['switch_group'] = 'Switch group';

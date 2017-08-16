@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_calculated', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,7 @@ $string['calcmin'] = 'Mínimo';
 $string['choosedatasetproperties'] = 'Escolla as propiedades do conxunto de datos dos comodíns';
 $string['choosedatasetproperties_help'] = 'Un conxunto de datos é un conxunto de valores que substitúen un comodín. Pode crear un conxunto de datos privado para unha pregunta determinada ou un conxunto de datos compartido que pode ser utilizado noutras preguntas calculadas dentro da categoría.';
 $string['correctanswerformula'] = 'Fórmula correcta para calcular a resposta';
-$string['correctanswershows'] = 'A resposta correcta amosa';
+$string['correctanswershows'] = 'Móstrase a resposta correcta';
 $string['correctanswershowsformat'] = 'Formato';
 $string['correctfeedback'] = 'Para calquera resposta correcta';
 $string['dataitemdefined'] = 'con {$a} valores numéricos xa definidos como dispoñíbeis';
@@ -56,7 +56,7 @@ $string['distributionoption'] = 'Seleccione a opción de distribución';
 $string['editdatasets'] = 'Editar o conxunto de datos dos comodíns';
 $string['editdatasets_help'] = 'Os valores comodín poden crearse mediante a introdución dun número en cada campo «comodín» e premendo no botón engadir. Para xerar automaticamente 10 ou máis valores, seleccione o número de valores necesarios antes de premer no botón engadir. Unha «distribución uniforme» significa que calquera valor entre os límites estabelecidos teñen a mesma probabilidade de que se xere;  unha «distribución log-uniforme» significa que os valores situados cara o límite inferior teñen máis probabilidade.';
 $string['editdatasets_link'] = 'question/type/calculated';
-$string['existingcategory1'] = 'usará un conxunto de datos compartidos xa existente';
+$string['existingcategory1'] = 'Usará un conxunto de datos compartidos xa existente';
 $string['existingcategory2'] = 'un ficheiro dun conxunto existente de ficheiros que tamén son usados por outras preguntas desta categoría';
 $string['existingcategory3'] = 'unha ligazón dun conxunto existente de ligazóns que tamén son usadas por outras preguntas desta categoría';
 $string['forceregeneration'] = 'forzar a rexeneración';
@@ -100,7 +100,7 @@ $string['newlocal1'] = 'usará un novo conxunto de datos privado';
 $string['newlocal2'] = 'un ficheiro dun novo conxunto de ficheiros que unicamente será usado nesta pregunta';
 $string['newlocal3'] = 'unha ligazón dun novo conxunto de ligazóns que unicamente será usada nesta pregunta';
 $string['newsetwildcardvalues'] = 'novo(s) conxunto(s) de valores para o(s) comodín(s)';
-$string['nextitemtoadd'] = 'Seguinte «Elemento para engadir»';
+$string['nextitemtoadd'] = 'Seguinte \'Elemento para engadir\'';
 $string['nextpage'] = 'Páxina seguinte';
 $string['nocoherencequestionsdatyasetcategory'] = 'Para a pregunta co ID  {$a->qid}, o ID da categoría {$a->qcat} non é idéntico ao ID da categoría {$a->sharedcat} do comodín compartido {$a->name}. Edite a pregunta.';
 $string['nocommaallowed'] = 'Non pode usarse a «,»; use o «.» como en 0.013 ou 1.3e-2';
@@ -116,7 +116,7 @@ $string['pluginnameediting'] = 'Editando unha pregunta calculada';
 $string['pluginname_help'] = 'As preguntas calculadas permiten crear preguntas numéricas utilizando comodíns dentro de chaves «{}» que se substitúen por valores concretos cando se realiza a proba. Por exemplo, a pregunta «Cal é a área dun rectángulo de lonxitude {I} e longo {w}?» tería como resposta correcta a fórmula «{l} * {w}» (onde «*» é o signo de multiplicación).';
 $string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnamesummary'] = 'As preguntas calculadas son similares a preguntas numéricas pero con números seleccionados ao chou dun conxunto cando se intenta facer a proba.';
-$string['possiblehdr'] = 'Posíbeis comodíns presentes só no texto da pregunta';
+$string['possiblehdr'] = 'Posibles comodíns presentes só no texto da pregunta';
 $string['questiondatasets'] = 'Conxunto de datos da pregunta';
 $string['questiondatasets_help'] = 'Conxunto de datos de comodíns que se usarán en cada pregunta individual';
 $string['questionstoredname'] = 'Nome gardado da pregunta';

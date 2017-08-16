@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = '{$a->name}-(e)k - {$a->date}';
 $string['contentheader'] = 'Edukia';
 $string['display'] = 'Erakutsi karpetaren edukiak';
 $string['display_help'] = 'Karpetako edukiak ikastaroaren orrian erakustea aukeratzen baduzu ez da agertuko aparteko orri baterako esteka eta izenburua ere ez da erakutsiko.
@@ -50,6 +51,7 @@ Karpeta bat erabil daiteke
 * Gai batekin lotutako fitxategi-multzoak erakusteko, iraganeko azterketa-multzoak edo ikasleek proiektuetan erabilitako irudi-multzoak adibidez.
 * Irakasleen ikastaroko elkartrukerako gune bezala (karpeta ezkutaturik utzita irakasleek bakarrik ikus dezaten)';
 $string['modulenameplural'] = 'Karpetak';
+$string['newfoldercontent'] = 'Karpeta berriaren edukia';
 $string['noautocompletioninline'] = 'Jarduera ikustearen osaketa automatikoa ezin da aukeratu "Erakutsi ikastaroaren orrian" aukerarekin batera.';
 $string['page-mod-folder-view'] = 'Karpetaren orri nagusia';
 $string['page-mod-folder-x'] = 'Karpetaren edozein orri';

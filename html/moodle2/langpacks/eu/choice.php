@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,17 +30,20 @@ $string['allowmultiple'] = 'Gaitu aukera bat baino gehiago erantzun ahal izatea'
 $string['allowupdate'] = 'Utzi kontsulta eguneratzen';
 $string['answered'] = 'Erantzunda';
 $string['atleastoneoption'] = 'Gutxienez erantzun posible bat eman behar duzu.';
+$string['calendarend'] = '{$a} kontsultaren itxiera:';
+$string['calendarstart'] = '{$a} kontsultaren irekiera:';
 $string['cannotsubmit'] = 'Barkatu, arazoa gertatu da zure aukera bidaltzean. Mesedez, saiatu berriz.';
 $string['choice'] = 'Aukera';
 $string['choiceactivityname'] = 'Aukera: {$a}';
 $string['choice:addinstance'] = 'Gehitu beste kontsulta bat';
 $string['choice:choose'] = 'Erantzun kontsultari';
 $string['choiceclose'] = 'Noiz arte';
-$string['choice:deleteresponses'] = 'Ezabatu erantzunak';
+$string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
+$string['choice:deleteresponses'] = 'Aldatu eta ezabatu erantzunak';
 $string['choice:downloadresponses'] = 'Jaitsi erantzunak';
 $string['choicefull'] = 'Kontsulta hau beteta dago eta ez dago erantzun posible gehiagorik';
 $string['choicename'] = 'Kontsultaren izena';
-$string['choiceopen'] = 'Zabaldu';
+$string['choiceopen'] = 'Baimendu erantzunak data honetatik aurrera:';
 $string['choiceoptions'] = 'Kontsultaren aukerak';
 $string['choiceoptions_help'] = '<p>Hemen partaideek hauta ditzaketen aukerak jarri behar dituzu.</p>
 
@@ -49,19 +52,25 @@ badituzu. Bete gabeko aukerak ez dira agertuko.</p>';
 $string['choice:readresponses'] = 'Ikusi erantzunak';
 $string['choicesaved'] = 'Zure aukera ondo gorde da';
 $string['choicetext'] = 'Kontsultaren testua';
+$string['choice:view'] = 'Ikusi kontsulta jarduera';
 $string['chooseaction'] = 'Aukera ezazu ekintza bat...';
+$string['chooseoption'] = 'Aukeratu: {$a}';
+$string['closebeforeopen'] = 'Ezarri duzun itxiera-data hasiera-data baino lehenagokoa da.';
 $string['completionsubmit'] = 'Erabiltzaileak aukera bat hautatzen duenean, osatutzat erakutsi';
 $string['description'] = 'Deskribapena';
 $string['displayhorizontal'] = 'Erakutsi horizontalean';
 $string['displaymode'] = 'Aukerak erakusteko modua';
 $string['displayvertical'] = 'Erakutsi bertikalean';
-$string['eventanswercreated'] = 'Kontsulta egin da';
+$string['eventanswercreated'] = 'Kontsultaren erantzuna gehitu da';
+$string['eventanswerdeleted'] = 'Kontsultaren erantzuna ezabatu da';
+$string['eventanswersubmitted'] = 'Kontsulta egin da';
 $string['eventanswerupdated'] = 'Kontsulta eguneratu da';
 $string['eventreportdownloaded'] = 'Kontsultaren txostena jaitsi da';
 $string['eventreportviewed'] = 'Kontsultaren txostena ikusi da';
 $string['expired'] = 'Barkatu, jarduera hau {$a}(e)an itxi zen eta dagoeneko ez dago eskuragarri.';
 $string['full'] = '(Beteta)';
 $string['havetologin'] = 'Saioa hasi behar duzu erantzuna bidali ahal izateko.';
+$string['includeinactive'] = 'Kontuan hartu kontua etenda duten edo aktibo ez dauden erabiltzaileen erantzunak';
 $string['limit'] = 'Muga';
 $string['limitanswers'] = 'Onar daitezkeen erantzunen kopurua mugatu';
 $string['limitanswers_help'] = 'Kontsultaren aukera posible bakoitza zenbat partaidek aukeratu ahal duen mugatzen du ezarpen honek.
@@ -97,6 +106,7 @@ $string['options'] = 'Aukerak';
 $string['page-mod-choice-x'] = 'Kontsulta moduluaren edozein orri';
 $string['pluginadministration'] = 'Kontsultaren kudeaketa';
 $string['pluginname'] = 'Kontsulta';
+$string['previewonly'] = 'Hau jarduera honetan eskuragarri dauden aukeren aurrebista besterik ez da. Ezingo duzu zure erantzuna bidali {$a}-(e)ra arte.';
 $string['privacy'] = 'Emaitzen pribatutasuna';
 $string['publish'] = 'Emaitzak argitaratu';
 $string['publishafteranswer'] = 'Erakutsi emaitzak ikasleari erantzun ondoren';
@@ -114,12 +124,12 @@ $string['results'] = 'Emaitzak';
 $string['savemychoice'] = 'Gorde nire aukera';
 $string['search:activity'] = 'Kontsulta - jardueraren informazioa';
 $string['showpreview'] = 'Erakutsi aurrebista';
+$string['showpreview_help'] = 'Baimendu ikasleek aukeren aurrebista ikustea bidalketak egiteko epea zabalik egon aurretik.';
 $string['showunanswered'] = 'Erantzun gabekoen zutabea erakutsi';
 $string['skipresultgraph'] = 'Ez egin kasu emaitzen grafikoari';
 $string['spaceleft'] = 'espazio erabilgarria';
 $string['spacesleft'] = 'espazio erabilgarriak';
 $string['taken'] = 'Hartuta';
-$string['timerestrict'] = 'Mugatu erantzuteko denbora';
 $string['userchoosethisoption'] = 'Aukera hau hautatu duten erabiltzaileak';
 $string['viewallresponses'] = 'Ikusi {$a} erantzun';
 $string['withselected'] = 'Aukeratutakoekin';

@@ -331,8 +331,7 @@ function clickedu_get_new_users() {
         if (empty($user['id']) or
             empty($user['username']) or
             empty($user['name']) or
-            empty($user['surname']) or
-            !isset($user['email'])) {
+            empty($user['surname'])) {
             continue;
         }
 
@@ -349,7 +348,7 @@ function clickedu_get_new_users() {
             'firstname' => $user['name'],
             'lastname' => $user['surname'],
             'idnumber' => $user['id'],
-            'email' => clean_param($user['email'], PARAM_EMAIL),
+            'email' => isset($user['email']) ? clean_param($user['email'], PARAM_EMAIL) : '',
             'sortorder' => $user['surname'] . ' ' . $user['name'],
         );
     }

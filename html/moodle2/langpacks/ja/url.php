@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'url', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = '変数を選択する ...';
-$string['clicktoopen'] = 'リソース開くには {$a}  リンクをクリックしてください:';
+$string['clicktoopen'] = 'リソースを開くには {$a}  リンクをクリックしてください:';
 $string['configdisplayoptions'] = '利用可にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
 $string['configframesize'] = 'フレーム内にウェブページやアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
 $string['configrolesinparams'] = 'ローカライズされたロール名を利用可能なパラメータ変数リストに含みたい場合、有効にしてください。';

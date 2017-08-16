@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Afegeix una pregunta';
+$string['add_item'] = 'Afegeix una pregunta a l\'activitat';
 $string['add_pagebreak'] = 'Afegeix un salt de pàgina';
 $string['adjustment'] = 'Paràmetre';
 $string['after_submit'] = 'Després de la tramesa';
@@ -33,7 +33,7 @@ $string['allowfullanonymous'] = 'Habilita l\'anonimat complet';
 $string['analysis'] = 'Anàlisi';
 $string['anonymous'] = 'Anonimat';
 $string['anonymous_edit'] = 'Enregistra els noms d\'usuari';
-$string['anonymous_entries'] = 'Entrades anònimes ({$a})';
+$string['anonymous_entries'] = 'Entrades anònimes';
 $string['anonymous_user'] = 'Usuari anònim';
 $string['append_new_items'] = 'Afegeix elements nous';
 $string['autonumbering'] = 'Numeració automàtica de les preguntes';
@@ -197,14 +197,14 @@ $string['no_itemlabel'] = 'Sense etiqueta';
 $string['no_itemname'] = 'Element sense nom';
 $string['no_items_available_yet'] = 'Encara no s\'han definit preguntes';
 $string['non_anonymous'] = 'El nom de l\'usuari es registrarà i es mostrarà amb les respostes';
-$string['non_anonymous_entries'] = 'Entrades no anònimes ({$a})';
-$string['non_respondents_students'] = 'Estudiants que no han respost ({$a})';
+$string['non_anonymous_entries'] = 'entrades no anònimes';
+$string['non_respondents_students'] = 'estudiants que no han respost';
 $string['notavailable'] = 'aquesta retroacció no està disponible';
 $string['not_completed_yet'] = 'Encara no s\'ha completat';
 $string['no_templates_available_yet'] = 'Encara no hi ha plantilles';
 $string['not_selected'] = 'No s\'ha seleccionat';
 $string['not_started'] = 'No s\'ha iniciat';
-$string['numberoutofrange'] = 'Número fora de límits';
+$string['numberoutofrange'] = 'Número fora de l\'interval';
 $string['numeric'] = 'Resposta numèrica';
 $string['numeric_range_from'] = 'Interval des de';
 $string['numeric_range_to'] = 'Interval fins';
@@ -251,7 +251,7 @@ $string['save_entries'] = 'Envia les respostes';
 $string['save_item'] = 'Desa la pregunta';
 $string['saving_failed'] = 'No s\'ha pogut desar';
 $string['saving_failed_because_missing_or_false_values'] = 'No s\'ha pogut desar perquè s\'han perdut valors o se n\'han trobat de falsos.';
-$string['search:activity'] = 'Retroalimentació - informació d\'activitat';
+$string['search:activity'] = 'Retroacció - informació de l\'activitat';
 $string['search_course'] = 'Cerca curs';
 $string['searchcourses'] = 'Cerca cursos';
 $string['searchcourses_help'] = 'Cerqueu el codi o el nom del/s curs/os que voleu associar amb aquesta retroacció.';
@@ -272,8 +272,8 @@ $string['started'] = 's\'ha iniciat';
 $string['stop'] = 'Acaba';
 $string['subject'] = 'Tema';
 $string['switch_group'] = 'Tria grup';
-$string['switch_item_to_not_required'] = 'Establerta com a no obligatòria';
-$string['switch_item_to_required'] = 'Establerta com a obligatòria';
+$string['switch_item_to_not_required'] = 'Elecció: resposta no obligatoria';
+$string['switch_item_to_required'] = 'Elecció: resposta obligatoria';
 $string['template'] = 'Plantilla';
 $string['template_deleted'] = 'S\'ha suprimit la plantilla';
 $string['templates'] = 'Plantilles';
@@ -290,7 +290,7 @@ $string['typemissing'] = 'valor perdut "tipus"';
 $string['update_item'] = 'Desa els canvis de la pregunta';
 $string['url_for_continue'] = 'Enllaç de l\'activitat següent';
 $string['url_for_continue_help'] = 'Després de trametre la retroacció, es mostra un botó per a continuar amb un enllaç a la pàgina del curs. Alternativament, l\'enllaç pot conduir a l\'activitat següent si s\'introdueix aquí l\'URL d\'aquesta activitat.';
-$string['use_one_line_for_each_value'] = 'Utilitzeu una línia per cada resposta!';
+$string['use_one_line_for_each_value'] = '<br />Usa una línia per cada resposta!';
 $string['use_this_template'] = 'Utilitza aquesta plantilla';
 $string['using_templates'] = 'Utilitza una plantilla';
 $string['vertical'] = 'vertical';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_calculated', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,7 +128,7 @@ $string['sharedwildcards'] = 'Gedeelde jokers';
 $string['showitems'] = 'Toon';
 $string['significantfigures'] = 'met {$a}';
 $string['significantfiguresformat'] = 'beduidende cijfers';
-$string['synchronize'] = 'Synchroniseer de gegevens van gedeelde datasets met andere vragen in de test';
+$string['synchronize'] = 'Synchroniseer de gegevens van gedeelde datasets met andere vragen in een test';
 $string['synchronizeno'] = 'Niet synchroniseren';
 $string['synchronizeyes'] = 'Synchroniseer';
 $string['synchronizeyesdisplay'] = 'Synchroniseer en toon de gedeelde datasetsnaam als voorvoegsel van de vraagnaam';

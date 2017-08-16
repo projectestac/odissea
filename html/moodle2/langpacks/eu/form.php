@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,13 +48,18 @@ $string['minute'] = 'Minutua';
 $string['miscellaneoussettings'] = 'Beste hainbat ezarpen';
 $string['modstandardels'] = 'Moduluaren ezarpen bateratuak';
 $string['month'] = 'Hilabetea';
-$string['mustbeoverriden'] = '{$a} klaseko Abstract form_definition() metodoak baliogatuan egon behar du; mesedez, konpondu kodea.';
+$string['mustbeoverriden'] = '{$a} klaseko Abstract form_definition() metodoak baimenduta egon behar du; mesedez, konpondu kodea.';
 $string['nomethodforaddinghelpbutton'] = '{$a->name} (class {$a->classname}) formularioaren elementuari laguntza botoia gehitzeko metodorik ez dago';
 $string['nonexistentformelements'] = '{$a} formularioaren elementua ez dago eta ezin zaio laguntza-botoirik gehitu';
 $string['noselection'] = 'Aukeratu gabe';
 $string['nosuggestions'] = 'Iradokizunik ez';
+$string['novalue'] = 'Ez duzu ezer sartu';
+$string['novalueclicktoset'] = 'Klik egin testua idazteko';
 $string['optional'] = 'Aukerakoa';
 $string['othersettings'] = 'Beste ezarpen batzuk';
+$string['passwordunmaskedithint'] = 'Aldatu pasahitza';
+$string['passwordunmaskinstructions'] = 'Sakatu Enter aldaketak gordetzeko';
+$string['passwordunmaskrevealhint'] = 'Azaldu';
 $string['requiredelement'] = 'Beharrezko eremua';
 $string['revealpassword'] = 'Azaldu';
 $string['security'] = 'Segurtasuna';

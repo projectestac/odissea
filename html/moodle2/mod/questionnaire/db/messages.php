@@ -17,15 +17,17 @@
 /**
  * Defines message providers (types of messages being sent)
  *
- * @package mod-questionnaire
+ * @package mod_questionnaire
  * @copyright  2010 onwards  Aparup Banerjee  http://moodle.com
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @author     Mike Churchward
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$messageproviders = array (
+defined('MOODLE_INTERNAL') || die();
 
-// Message to nonrespondents.
-    'message' => array (
-    )
-
-);
+$messageproviders = [
+    // Message to nonrespondents.
+    'message' => [],
+    // Response submissions.
+    'notification' => []
+];

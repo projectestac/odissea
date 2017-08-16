@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_multimenu', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_multimenu', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_multimenu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = 'Veld voor Meerkeuzemenu';
 $string['pluginname'] = 'Multimenu';

@@ -704,7 +704,7 @@ $string['readytosend'] = 'You are about to send your whole quiz to be graded.  A
 $string['reattemptquiz'] = 'Re-attempt quiz';
 $string['recentlyaddedquestion'] = 'Recently added question!';
 $string['recurse'] = 'Include questions from subcategories too';
-$string['redoquestion'] = 'Redo question';
+$string['redoquestion'] = 'Try another question like this one';
 $string['redoesofthisquestion'] = 'Other questions attempted here: {$a}';
 $string['regrade'] = 'Regrade all attempts';
 $string['regradecomplete'] = 'All attempts have been regraded';
@@ -938,8 +938,3 @@ $string['wronguse'] = 'You can not use this page like that';
 $string['xhtml'] = 'XHTML';
 $string['youneedtoenrol'] = 'You need to enrol in this course before you can attempt this quiz';
 $string['yourfinalgradeis'] = 'Your final grade for this quiz is {$a}.';
-
-// Deprecated since Moodle 2.9.
-
-$string['timelimitmin'] = 'Time limit (minutes)';
-$string['timelimitsec'] = 'Time limit (seconds)';

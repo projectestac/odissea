@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_ldap', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,8 @@ $string['auth_ldap_create_context_key'] = 'Erabiltzaile berrientzako testuinguru
 $string['auth_ldap_create_error'] = 'Errorea erabiltzailea LDAPn sortzean.';
 $string['auth_ldap_creators'] = 'Ikastaro berriak sortzeko baimena duten partaideen taldeak. Taldeak \';\' zeinuaren bidez bana daiteke. Normalki era honetan egingo genuke: \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_creators_key'] = 'Sortzaileak';
-$string['auth_ldapdescription'] = 'Metodo honek kanpo LDAP zerbitzari baten bidezko autentifikazioa eskaintzen du. Emandako erabiltzaile izen eta pasahitza baliozkoak badira, Moodle-k erabiltzaile-sarrera berri bat sortuko du bere datu-basean. Modulu honek erabiltzaile atributuak LDAP zerbitzaritik irakur ditzake eta eremuak Moodle-n bete. Hurrengo saio-hasieretan soilik izen eta pasahitza egiaztatuko dira.';
+$string['auth_ldapdescription'] = 'Metodo honek kanpo LDAP zerbitzari baten aurkako autentifikazioa eskaintzen du.
+Emandako erabiltzaile izen eta pasahitza baliozkoak badira, Moodle-k erabiltzaile-sarrera berri bat sortuko du bere datu-basean. Modulu honek erabiltzaile atributuak LDAP zerbitzaritik irakurri ditzake eta eremuak Moodle-n bete.  Hurrengo saio-hasieretan soilik izen eta pasahitza egiaztatuko dira.';
 $string['auth_ldap_expiration_desc'] = 'Pasahitza iraungi ote den indargabetzeko Ez aukeratu, edo LDAP pasahitzaren kaduzitate denbora zuzenean LDAPetik irakurtzeko.';
 $string['auth_ldap_expiration_key'] = 'Epe-muga';
 $string['auth_ldap_expiration_warning_desc'] = 'Pasahitzaren kaduzitate-oharra agertu aurretiko egun-kopurua.';
@@ -56,7 +57,7 @@ $string['auth_ldap_gracelogins_desc'] = 'Gaitu LDAP graziazko sarreren euskarria
 $string['auth_ldap_gracelogins_key'] = 'Graziazko sarrerak';
 $string['auth_ldap_groupecreators'] = 'Taldeak sortzeko baimena duten kideak dauden talde edo testuinguru-zerrenda. Taldeak \',\'-z banatu. Adibidez, honelako zerbait: \'cn=irakasleak,ou=administrazioa,o=nireerakundea\'';
 $string['auth_ldap_groupecreators_key'] = 'Talde sortzaileak';
-$string['auth_ldap_host_url'] = 'LDAP ostatua URL bidez zehaztu, adibidez \'ldap://ldap.zerbitzaria.com/\' edo \'ldaps://ldap.zerbitzaria.com/\'. Banatu zerbitzariak \';\' erabiliz hutsegiteen aurkako babesa gehitzeko.';
+$string['auth_ldap_host_url'] = 'LDAP ostatua URL bidez zehaztu, adibidez \'ldap://ldap.zerbitzaria.com/\' edo \'ldaps://ldap.zerbitzaria.com/\'. Banandu zerbitzariak \';\' erabiliz hutsegiteen aurkako babaesa gehitzeko.';
 $string['auth_ldap_host_url_key'] = 'Ostalariaren URLa';
 $string['auth_ldap_ldap_encoding'] = 'Zehaztu LDAP zerbitzariak erabilitako kodifikazioa. Ziurrenik utf-8, MS AD v2-k berez erabiltzen du plataformako kodifikazioa. Adibidez: cp1252, cp1250, e.a.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP kodifikazioa';
@@ -67,16 +68,16 @@ $string['auth_ldap_memberattribute_isdn_key'] = 'Partaide-atributuek dn darabilt
 $string['auth_ldap_memberattribute_key'] = 'Partaide-atributua';
 $string['auth_ldap_noconnect'] = 'LDAP modulua ezin da ondoko zerbitzariarekin konektatu: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAP modulua ezin da zerbitzarietako batekin ere konektatu: {$a}';
-$string['auth_ldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago. Mesedez, ziurtatu instalatuta eta gaituta dagoela autentifikazio-plugin hau erabili nahi izanez gero.</em>';
+$string['auth_ldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago. Mesedez ziurtatu instalatuta eta gaituta dagoela autentifikazio plugin hau erabili nahi izanez gero.</em>';
 $string['auth_ldap_no_mbstring'] = 'mbstring luzapena behar duzu Active Directory-n erabiltzaileak sortzeko.';
 $string['auth_ldapnotinstalled'] = 'Ezin da LDAP autentifikazioa erabili. PHP LDAP modulua ez dago instalatuta.';
-$string['auth_ldap_objectclass'] = 'Aukerakoa: ldap_user_type-n  erabiltzaileak izendatzeko/bilatzeko objectClass ekiditen du. Normalean ez duzu hau aldatu beharko.';
+$string['auth_ldap_objectclass'] = 'Aukerakoa: ldap_user_type-n erabiltzaileak izendatzeko/bilatzeko objectClass ekiditen du. Normalean ez duzu hau aldatu beharko.';
 $string['auth_ldap_objectclass_key'] = 'Objektu-mota';
 $string['auth_ldap_opt_deref'] = 'Bilaketan zehar aliasak nola maneiatu zehazten du. Balorea hauetako bat aukeratu: "Ez" (LDAP_DEREF_NEVER) edo "Bai" (LDAP_DEREF_ALWAYS)';
 $string['auth_ldap_opt_deref_key'] = 'Erreferentziazko ezizena';
 $string['auth_ldap_passtype'] = 'Zehaz ezazu pasahitz berrien formatua edo LDAP zerbitzarian aldatutakoena.';
 $string['auth_ldap_passtype_key'] = 'Pasahitzaren formatua';
-$string['auth_ldap_passwdexpire_settings'] = 'LDAP pasahitzaren kaduzitate-ezarpenak.';
+$string['auth_ldap_passwdexpire_settings'] = 'LDAP pasahitzaren kaduzitate-ezarpenak';
 $string['auth_ldap_preventpassindb'] = '\'Bai\' aukeratu pasahitzak Moodle-ren datu-basean ez gordetzeko.';
 $string['auth_ldap_preventpassindb_key'] = 'Ez cacheatu pasahitzak';
 $string['auth_ldap_search_sub'] = 'Bilatu erabiltzaileak azpitestuinguruetan.';

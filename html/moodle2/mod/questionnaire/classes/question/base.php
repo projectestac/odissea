@@ -68,7 +68,7 @@ abstract class base {
     public $type        = '';
 
     /** @var array $choices Array holding any choices for this question. */
-    public $choices     = array();
+    public $choices     = [];
 
     /** @var string $response_table The table name for responses. */
     public $responsetable = '';
@@ -95,7 +95,7 @@ abstract class base {
     public $deleted     = 'n';
 
     /** @var array $qtypenames List of all question names. */
-    private static $qtypenames = array(
+    private static $qtypenames = [
         QUESYESNO => 'yesno',
         QUESTEXT => 'text',
         QUESESSAY => 'essay',
@@ -107,7 +107,10 @@ abstract class base {
         QUESNUMERIC => 'numeric',
         QUESPAGEBREAK => 'pagebreak',
         QUESSECTIONTEXT => 'sectiontext'
-    );
+    ];
+
+    /** @var array $notifications Array of extra messages for display purposes. */
+    private $notifications = [];
 
     // Class Methods.
 
@@ -120,12 +123,12 @@ abstract class base {
         static $qtypes = null;
 
         if ($qtypes === null) {
-            $qtypes = $DB->get_records('questionnaire_question_type', array(), 'typeid',
+            $qtypes = $DB->get_records('questionnaire_question_type', [], 'typeid',
                                        'typeid, type, has_choices, response_table');
         }
 
         if ($id) {
-            $question = $DB->get_record('questionnaire_question', array('id' => $id));
+            $question = $DB->get_record('questionnaire_question', ['id' => $id]);
         }
 
         if (is_object($question)) {
@@ -173,7 +176,7 @@ abstract class base {
         if (!empty($params) && is_array($params)) {
             $params = (object)$params;
         }
-        return new $qclassname(0, $params, null, array('type_id' => $qtype));
+        return new $qclassname(0, $params, null, ['type_id' => $qtype]);
     }
 
     /**
@@ -198,14 +201,14 @@ abstract class base {
     private function get_choices() {
         global $DB;
 
-        if ($choices = $DB->get_records('questionnaire_quest_choice', array('question_id' => $this->id), 'id ASC')) {
+        if ($choices = $DB->get_records('questionnaire_quest_choice', ['question_id' => $this->id], 'id ASC')) {
             foreach ($choices as $choice) {
                 $this->choices[$choice->id] = new \stdClass();
                 $this->choices[$choice->id]->content = $choice->content;
                 $this->choices[$choice->id]->value = $choice->value;
             }
         } else {
-            $this->choices = array();
+            $this->choices = [];
         }
     }
 
@@ -236,12 +239,32 @@ abstract class base {
     /**
      * Display results method.
      */
-    public function display_results($rids=false, $sort='') {
+    public function display_results($rids=false, $sort='', $anonymous=false) {
         if (isset ($this->response) && is_object($this->response) &&
             is_subclass_of($this->response, '\\mod_questionnaire\\response\\base')) {
-            return $this->response->display_results($rids, $sort);
+            return $this->response->display_results($rids, $sort, $anonymous);
         } else {
             return false;
+        }
+    }
+
+    /**
+     * Add a notification.
+     * @param string $message
+     */
+    public function add_notification($message) {
+        $this->notifications[] = $message;
+    }
+
+    /**
+     * Get any notifications.
+     * @return array | boolean The notifications array or false.
+     */
+    public function get_notifications() {
+        if (empty($this->notifications)) {
+            return false;
+        } else {
+            return $this->notifications;
         }
     }
 
@@ -252,26 +275,6 @@ abstract class base {
      *
      */
     abstract protected function responseclass();
-
-    /**
-     * Question specific display method.
-     *
-     * @param object $formdata
-     * @param string $descendantdata
-     * @param integer $qnum
-     * @param boolean $blankquestionnaire
-     *
-     */
-    abstract protected function question_survey_display($formdata, $descendantsdata, $blankquestionnaire);
-
-    /**
-     * Question specific response display method.
-     *
-     * @param object $data
-     * @param integer $qnum
-     *
-     */
-    abstract protected function response_survey_display($data);
 
     /**
      * Check question's form data for complete response.
@@ -285,7 +288,7 @@ abstract class base {
     }
 
     /**
-     * Check question's form data for valid response. Override this is type has specific format requirements.
+     * Check question's form data for valid response. Override this if type has specific format requirements.
      *
      * @param object $responsedata The data entered into the response.
      * @return boolean
@@ -353,7 +356,7 @@ abstract class base {
             $sql = 'SELECT MAX(position) as maxpos '.
                    'FROM {questionnaire_question} '.
                    'WHERE survey_id = ? AND deleted = ?';
-            $params = array('survey_id' => $questionrecord->survey_id, 'deleted' => 'n');
+            $params = ['survey_id' => $questionrecord->survey_id, 'deleted' => 'n'];
             if ($record = $DB->get_record_sql($sql, $params)) {
                 $questionrecord->position = $record->maxpos + 1;
             } else {
@@ -430,7 +433,7 @@ abstract class base {
         } else {
             $cid = $choice->id;
         }
-        if ($DB->delete_records('questionnaire_quest_choice', array('id' => $cid))) {
+        if ($DB->delete_records('questionnaire_quest_choice', ['id' => $cid])) {
             unset($this->choices[$cid]);
         } else {
             $retvalue = false;
@@ -453,35 +456,79 @@ abstract class base {
             $qid = $this->id;
         }
         $this->required = $rval;
-        return $DB->set_field('questionnaire_question', 'required', $rval, array('id' => $qid));
+        return $DB->set_field('questionnaire_question', 'required', $rval, ['id' => $qid]);
     }
+
     /**
-     * Main function for displaying a question.
+     * Question specific display method.
      *
+     * @param object $formdata
+     * @param string $descendantdata
+     * @param boolean $blankquestionnaire
+     *
+     */
+    abstract protected function question_survey_display($formdata, $descendantsdata, $blankquestionnaire);
+
+    /**
+     * Question specific response display method.
+     *
+     * @param object $data
+     * @param integer $qnum
+     *
+     */
+    abstract protected function response_survey_display($data);
+
+    /**
+     * Override and return a form template if provided. Output of question_survey_display is iterpreted based on this.
+     * @return boolean | string
+     */
+    public function question_template() {
+        return false;
+    }
+
+    /**
+     * Override and return a form template if provided. Output of response_survey_display is iterpreted based on this.
+     * @return boolean | string
+     */
+    public function response_template() {
+        return false;
+    }
+
+    /**
+     * Get the output for question renderers / templates.
      * @param object $formdata
      * @param string $descendantdata
      * @param integer $qnum
      * @param boolean $blankquestionnaire
-     *
      */
-    private function question_display($formdata, $descendantsdata, $qnum='', $blankquestionnaire) {
-        $this->questionstart_survey_display($qnum, $formdata, $descendantsdata);
-        $this->question_survey_display($formdata, $descendantsdata, $blankquestionnaire);
-        $this->questionend_survey_display($qnum);
+    public function question_output($formdata, $descendantsdata, $qnum='', $blankquestionnaire) {
+        $pagetags = $this->questionstart_survey_display($qnum, $formdata);
+        $pagetags->qformelement = $this->question_survey_display($formdata, $descendantsdata, $blankquestionnaire);
+        return $pagetags;
     }
 
-    public function survey_display($formdata, $descendantsdata, $qnum='', $blankquestionnaire=false) {
-        $this->question_display($formdata, $descendantsdata, $qnum, $blankquestionnaire);
+    /**
+     * Get the output for question renderers / templates.
+     * @param object $formdata
+     * @param string $descendantdata
+     * @param integer $qnum
+     * @param boolean $blankquestionnaire
+     */
+    public function response_output($data, $qnum='') {
+        $pagetags = $this->questionstart_survey_display($qnum, $data);
+        $pagetags->qformelement = $this->response_survey_display($data);
+        return $pagetags;
     }
 
-    public function response_display($data, $qnum='') {
-        $this->questionstart_survey_display($qnum, $data);
-        $this->response_survey_display($data);
-        $this->questionend_survey_display($qnum);
-    }
-
+    /**
+     * Get the output for the start of the questions in a survey.
+     * @param integer $qnum
+     * @param object $formdata
+     */
     public function questionstart_survey_display($qnum, $formdata='') {
         global $OUTPUT, $SESSION, $questionnaire, $PAGE;
+
+        $pagetags = new \stdClass();
         $currenttab = $SESSION->questionnaire->current_tab;
         $pagetype = $PAGE->pagetype;
         $skippedquestion = false;
@@ -540,60 +587,41 @@ abstract class base {
             }
         }
 
-        echo html_writer::start_tag('fieldset', array('class' => $displayclass, 'id' => 'qn-'.$this->id));
-        echo html_writer::start_tag('legend', array('class' => 'qn-legend'));
+        $pagetags->fieldset = (object)['id' => $this->id, 'class' => $displayclass];
 
         // Do not display the info box for the label question type.
         if ($this->type_id != QUESSECTIONTEXT) {
             if (!$nonumbering) {
-                echo html_writer::start_tag('div', array('class' => 'qn-info'));
-                echo html_writer::start_tag('div', array('class' => 'accesshide'));
-                echo get_string('questionnum', 'questionnaire');
-                echo html_writer::end_tag('div');
-                echo html_writer::tag('h2', $qnum, array('class' => 'qn-number'));
-                echo html_writer::end_tag('div');
+                $pagetags->qnum = $qnum;
             }
             $required = '';
             if ($this->required == 'y') {
-                $required = html_writer::start_tag('div', array('class' => 'accesshide'));
+                $required = html_writer::start_tag('div', ['class' => 'accesshide']);
                 $required .= get_string('required', 'questionnaire');
                 $required .= html_writer::end_tag('div');
-                $required .= html_writer::empty_tag('img',
-                        array('class' => 'req',
-                                'title' => get_string('required', 'questionnaire'),
-                                'alt' => get_string('required', 'questionnaire'),
-                                'src' => $OUTPUT->pix_url('req')));
+                $required .= html_writer::empty_tag('img', ['class' => 'req', 'title' => get_string('required', 'questionnaire'),
+                    'alt' => get_string('required', 'questionnaire'), 'src' => $OUTPUT->pix_url('req')]);
             }
-            echo $required;
+            $pagetags->required = $required; // Need to replace this with better renderer / template?
         }
         // If question text is "empty", i.e. 2 non-breaking spaces were inserted, empty it.
         if ($this->content == '<p>  </p>') {
             $this->content = '';
         }
-        echo html_writer::end_tag('legend');
-        echo html_writer::start_tag('div', array('class' => 'qn-content'));
-        echo html_writer::start_tag('div', array('class' => 'qn-question '.$skippedclass));
+        $pagetags->skippedclass = $skippedclass;
         if ($this->type_id == QUESNUMERIC || $this->type_id == QUESTEXT ||
             $this->type_id == QUESDROP) {
-            echo html_writer::start_tag('label', array('for' => $this->type . $this->id));
+            $pagetags->label = (object)['for' => $this->type . $this->id];
         }
         if ($this->type_id == QUESESSAY) {
-            echo html_writer::start_tag('label', array('for' => 'edit-q' . $this->id));
+            $pagetags->label = (object)['for' => 'edit-q' . $this->id];
         }
-        $options = array('noclean' => true, 'para' => false, 'filter' => true, 'context' => $this->context, 'overflowdiv' => true);
-        echo format_text(file_rewrite_pluginfile_urls($this->content, 'pluginfile.php',
+        $options = ['noclean' => true, 'para' => false, 'filter' => true, 'context' => $this->context, 'overflowdiv' => true];
+        $content = format_text(file_rewrite_pluginfile_urls($this->content, 'pluginfile.php',
             $this->context->id, 'mod_questionnaire', 'question', $this->id), FORMAT_HTML, $options);
-        if ($this->type_id == QUESNUMERIC || $this->type_id == QUESTEXT ||
-            $this->type_id == QUESESSAY || $this->type_id == QUESDROP) {
-            echo html_writer::end_tag('label');
-        }
-        echo html_writer::end_tag('div');
-        echo html_writer::start_tag('div', array('class' => 'qn-answer'));
-    }
+        $pagetags->qcontent = $content;
 
-    public function questionend_survey_display() {
-        echo html_writer::end_tag('div');
-        echo html_writer::end_tag('fieldset');
+        return $pagetags;
     }
 
     private function response_check_required ($data) {
@@ -653,7 +681,7 @@ abstract class base {
             $buttonarray[] = &$mform->createElement('submit', 'makecopy', get_string('saveasnew', 'questionnaire'));
         }
         $buttonarray[] = &$mform->createElement('cancel');
-        $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
+        $mform->addGroup($buttonarray, 'buttonar', '', [' '], false);
 
         return true;
     }
@@ -675,14 +703,14 @@ abstract class base {
 
     protected function form_name(\MoodleQuickForm $mform) {
         $mform->addElement('text', 'name', get_string('optionalname', 'questionnaire'),
-                        array('size' => '30', 'maxlength' => '30'));
+                        ['size' => '30', 'maxlength' => '30']);
         $mform->setType('name', PARAM_TEXT);
         $mform->addHelpButton('name', 'optionalname', 'questionnaire');
         return $mform;
     }
 
     protected function form_required(\MoodleQuickForm $mform) {
-        $reqgroup = array();
+        $reqgroup = [];
         $reqgroup[] =& $mform->createElement('radio', 'required', '', get_string('yes'), 'y');
         $reqgroup[] =& $mform->createElement('radio', 'required', '', get_string('no'), 'n');
         $mform->addGroup($reqgroup, 'reqgroup', get_string('required', 'questionnaire'), ' ', false);
@@ -717,7 +745,7 @@ abstract class base {
                 if ($canchangeparent) {
                     $this->dependquestion = isset($this->dependquestion) ? $this->dependquestion.','.
                                     $this->dependchoice : '0,0';
-                    $group = array($mform->createElement('selectgroups', 'dependquestion', '', $dependencies) );
+                    $group = [$mform->createElement('selectgroups', 'dependquestion', '', $dependencies)];
                     $mform->addGroup($group, 'selectdependency', get_string('dependquestion', 'questionnaire'), '', false);
                     $mform->addHelpButton('selectdependency', 'dependquestion', 'questionnaire');
                 } else {
@@ -730,7 +758,7 @@ abstract class base {
     }
 
     protected function form_question_text(\MoodleQuickForm $mform, $context) {
-        $editoroptions = array('maxfiles' => EDITOR_UNLIMITED_FILES, 'trusttext' => true, 'context' => $context);
+        $editoroptions = ['maxfiles' => EDITOR_UNLIMITED_FILES, 'trusttext' => true, 'context' => $context];
         $mform->addElement('editor', 'content', get_string('text', 'questionnaire'), null, $editoroptions);
         $mform->setType('content', PARAM_RAW);
         $mform->addRule('content', null, 'required', null, 'client');
@@ -771,7 +799,7 @@ abstract class base {
     }
 
     static public function form_length_text(\MoodleQuickForm $mform, $helpname = '', $value = 0) {
-        $mform->addElement('text', 'length', get_string($helpname, 'questionnaire'), array('size' => '1'), $value);
+        $mform->addElement('text', 'length', get_string($helpname, 'questionnaire'), ['size' => '1'], $value);
         $mform->setType('length', PARAM_INT);
         if (!empty($helpname)) {
             $mform->addHelpButton('length', $helpname, 'questionnaire');
@@ -786,7 +814,7 @@ abstract class base {
     }
 
     static public function form_precise_text(\MoodleQuickForm $mform, $helpname = '', $value = 0) {
-        $mform->addElement('text', 'precise', get_string($helpname, 'questionnaire'), array('size' => '1'));
+        $mform->addElement('text', 'precise', get_string($helpname, 'questionnaire'), ['size' => '1']);
         $mform->setType('precise', PARAM_INT);
         if (!empty($helpname)) {
             $mform->addHelpButton('precise', $helpname, 'questionnaire');
@@ -810,9 +838,9 @@ abstract class base {
             $formdata->format  = $formdata->content['format'];
             $formdata->content = $formdata->content['text'];
             $formdata->content = file_save_draft_area_files($formdata->itemid, $questionnaire->context->id, 'mod_questionnaire',
-                'question', $formdata->qid, array('subdirs' => true), $formdata->content);
+                'question', $formdata->qid, ['subdirs' => true], $formdata->content);
 
-            $fields = array('name', 'type_id', 'length', 'precise', 'required', 'content', 'dependquestion', 'dependchoice');
+            $fields = ['name', 'type_id', 'length', 'precise', 'required', 'content', 'dependquestion', 'dependchoice'];
             $questionrecord = new \stdClass();
             $questionrecord->id = $formdata->qid;
             foreach ($fields as $f) {
@@ -829,8 +857,8 @@ abstract class base {
             // Create new question:
             // Need to update any image content after the question is created, so create then update the content.
             $formdata->survey_id = $formdata->sid;
-            $fields = array('survey_id', 'name', 'type_id', 'length', 'precise', 'required', 'position',
-                            'dependquestion', 'dependchoice');
+            $fields = ['survey_id', 'name', 'type_id', 'length', 'precise', 'required', 'position', 'dependquestion',
+                'dependchoice'];
             $questionrecord = new \stdClass();
             foreach ($fields as $f) {
                 if (isset($formdata->$f)) {
@@ -846,8 +874,8 @@ abstract class base {
             $formdata->format  = $formdata->content['format'];
             $formdata->content = $formdata->content['text'];
             $content           = file_save_draft_area_files($formdata->itemid, $questionnaire->context->id, 'mod_questionnaire',
-                'question', $this->qid, array('subdirs' => true), $formdata->content);
-            $result = $DB->set_field('questionnaire_question', 'content', $content, array('id' => $this->qid));
+                'question', $this->qid, ['subdirs' => true], $formdata->content);
+            $result = $DB->set_field('questionnaire_question', 'content', $content, ['id' => $this->qid]);
         }
 
         if ($this->has_choices()) {
@@ -921,7 +949,7 @@ abstract class base {
             $formdata->allchoices = trim($formdata->allchoices);
             $this->form_preprocess_choicedata($formdata);
         }
-        $dependency = array();
+        $dependency = [];
         if (isset($formdata->dependquestion) && $formdata->dependquestion != 0) {
             $dependency = explode(",", $formdata->dependquestion);
             $formdata->dependquestion = $dependency[0];

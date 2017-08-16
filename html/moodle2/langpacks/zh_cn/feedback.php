@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -267,7 +267,7 @@ $string['there_are_no_settings_for_recaptcha'] = '没有captcha的设置';
 $string['this_feedback_is_already_submitted'] = '您已经完成此活动。';
 $string['typemissing'] = '缺少"type"值';
 $string['update_item'] = '保存对问题的修改';
-$string['url_for_continue'] = '链接到下一活动';
+$string['url_for_continue'] = '链接到下一个活动';
 $string['url_for_continue_help'] = '提交反馈后，继续按钮的目标缺省是课程页面。您可以在这里定义另一个目标URL。';
 $string['use_one_line_for_each_value'] = '<br />每个选项只占一行！';
 $string['use_this_template'] = '使用此模板';

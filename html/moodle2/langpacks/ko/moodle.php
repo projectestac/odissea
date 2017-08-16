@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'moodle', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['addresource'] = '학습자원 추가';
 $string['addresourceoractivity'] = '활동 혹은 자료 추가';
 $string['addresourcetosection'] = '섹션 \'{$a}\'에 자원 추가';
 $string['address'] = '주소';
-$string['addressedto'] = '까지';
 $string['addstudent'] = '학생 추가';
 $string['addsubcategory'] = '하위 범주 추가';
 $string['addteacher'] = '선생님 추가';
@@ -355,9 +354,9 @@ $string['coursehelpshowgrades'] = '성적부 표시 활성화. 개별 활동 영
 $string['coursehidden'] = '아직 학생들이 강좌를 이용할 수 없음';
 $string['courseinfo'] = '강좌 정보';
 $string['courselegacyfiles'] = '예전 강좌 파일들';
-$string['courselegacyfiles_help'] = '강좌 파일 영역은 Moodle 1.9 이전 버전에 대해 호환성을 제공합니다. 이 영역에 있는 모든 파일은 강좌의 모든 참여자가 접근 가능(링크 여부에 상관 없이)하고, 이 파일들은 무들내 어디에서든 사용될 수 있습니다.
+$string['courselegacyfiles_help'] = '강좌 파일 영역은 Moodle 1.9 이전 버전에 대해 호환성을 제공합니다. 이 영역에 있는 모든 파일은 강좌의 모든 참여자가 접근 가능(링크의 여부에 상관 없이)하고, 무들은 이 파일들이 어디에서 사용되는지 알 수 없습니다.
 
-강좌 파일을 저장하기 위해 이 영역을 사용하면 개인정보와 보안 문제들이 발생할 수 있으며 백업, 강좌를 가져올 때나 강좌가 공유되고 재사용 될 때, 파일이 누락될 수도 있습니다. 따라서 당신이 무엇을 하고 있는지 잘 모른다면, 이 영역을 사용하지 말 것을 권장합니다.';
+강좌 파일을 저장하기 위해 이 영역을 사용하면 개인정보와 보안 문제들이 발생할 수 있으며 백업, 강좌 가져오기, 강좌가 공유되고 재사용 될 때, 파일이 빠질 수도 있습니다. 따라서 당신이 무엇을 하고 있는지 잘 모른다면, 이 영역을 사용하지 않는 것을 권장합니다.';
 $string['courselegacyfilesofcourse'] = '이전 강좌 파일들: {$a}';
 $string['coursemessage'] = '강좌 사용자에게 메세지 보내기';
 $string['coursenotaccessible'] = '공개적 접속을 허용하지 않음';
@@ -367,6 +366,7 @@ $string['courseoverviewfilesext'] = '강좌 요약 파일 확장자들';
 $string['courseoverviewfiles_help'] = '이미지 등의 강좌 요약 파일이 강좌 요약과 함께 강좌 목록에 표시됩니다.';
 $string['courseoverviewfileslimit'] = '강좌 요약 파일 한계';
 $string['courseoverviewgraph'] = '강좌 개요표';
+$string['coursepreferences'] = '강좌 환경설정';
 $string['courseprofiles'] = '강좌 소개';
 $string['coursereasonforrejecting'] = '요청이 기각된 이유';
 $string['coursereasonforrejectingemail'] = '요청자에게 이메일로 발송될 것임';
@@ -501,6 +501,7 @@ $string['deletingcourse'] = '강좌 {$a} 를 지우기';
 $string['deletingexistingcoursedata'] = '강좌에 있는 데이터 지우기';
 $string['deletingolddata'] = '오래된 데이터 지우기';
 $string['department'] = '부서';
+$string['deprecatedeventname'] = '{$a} (더 이상 사용되지 않음)';
 $string['desc'] = '내림차순';
 $string['description'] = '설명';
 $string['deselectall'] = '모두 선택해제';
@@ -897,6 +898,7 @@ $string['hiddensections_help'] = '이 설정은 감춰진 섹션(주차별 형�
 $string['hiddensectionsinvisible'] = '비공개 영역은 완전히 볼수 없음';
 $string['hide'] = '감추기';
 $string['hideadvancedsettings'] = '고급 설정 숨기기';
+$string['hidechartdata'] = '도표 숨기기';
 $string['hidepicture'] = '그림 감추기';
 $string['hidesection'] = '섹션 {$a} 숨기기';
 $string['hidesettings'] = '설정 숨기기';

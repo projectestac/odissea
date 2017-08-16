@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Ezarri berezkoa jarduerak segurtasun-kopia
 $string['configgeneralanonymize'] = 'Gaituta erabiltzaileei buruzko informazio guztia anonimo bihurtuko da berez.';
 $string['configgeneralbadges'] = 'Ezarri berezkoa dominak segurtasun-kopietan sartzeko.';
 $string['configgeneralblocks'] = 'Ezarri berezkoa blokeak segurtasun-kopia batean sartzeko';
+$string['configgeneralcalendarevents'] = 'Ezarri berezkoa egutegiko ekitaldiak segurtasun-kopietan sartzeko.';
 $string['configgeneralcomments'] = 'Ezarri berezkoa iruzkinak segurtasun-kopia batean sartzeko';
+$string['configgeneralcompetencies'] = 'Ezarri berezkoa gaitasunak segurtasun-kopietan sartzeko.';
 $string['configgeneralfilters'] = 'Ezarri berezkoa iragazkiak segurtasun-kopia batean sartzeko';
 $string['configgeneralgroups'] = 'Ezarri berezkoa taldeak eta taldekatzeak segurtasun-kopietan sartzeko.';
 $string['configgeneralhistories'] = 'Ezarri berezkoa erabiltzaileen historia jarduerak segurtasun-kopian sartzeko';
@@ -134,13 +136,15 @@ $string['filealiasesrestorefailuresinfo'] = 'Segurtasun-kopian sartutako ezizen/
 $string['filename'] = 'Fitxategiaren izena';
 $string['filereferencesincluded'] = 'Segurtasun kopian kanpo-edukietako fitxategi-erreferentziak daude. Hauek ez dute funtzionatuko segurtasun-kopia beste gune batean berreskuratuz gero.';
 $string['filereferencesnotsamesite'] = 'Segurtasun-kopia beste gune batena da, fitxategi-erreferentziak ezin dira berreskuratu.';
-$string['filereferencessamesite'] = 'Segurtasun-kopia gune honetakoa da,beraz  fitxategi-erreferentziak berreskura daitezke.';
+$string['filereferencessamesite'] = 'Segurtasun-kopia gune honetakoa da, beraz fitxategi-erreferentziak berreskura daitezke.';
 $string['generalactivities'] = 'Jarduerak eta baliabideak barne ditu';
 $string['generalanonymize'] = 'Informazioa anonimo bihurtu';
 $string['generalbackdefaults'] = 'Segurtasun-kopien berezko ezarpen orokorrak';
 $string['generalbadges'] = 'Dominak barne ditu';
 $string['generalblocks'] = 'Blokeak barne ditu';
+$string['generalcalendarevents'] = 'Sartu egutegiko ekitaldiak';
 $string['generalcomments'] = 'Iruzkinak barne ditu';
+$string['generalcompetencies'] = 'Sartu gaitasunak';
 $string['generalfilters'] = 'Iragazkiak barne ditu';
 $string['generalgradehistories'] = 'Historiak barne ditu';
 $string['generalgroups'] = 'Taldeak eta taldekatzeak barne ditu';
@@ -169,6 +173,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Guneak \'admin\' erabiltza
 $string['importgeneralmaxresults'] = 'Zrrendatutako ikastaroen gehieneko kopurua inportatzeko';
 $string['importgeneralmaxresults_desc'] = 'Honek inportatze-prozesuaren lehen urratsean zerrendaturiko ikastaro-kopurua zehazten du.';
 $string['importgeneralsettings'] = 'Inportaziorako berezko ezarpenak';
+$string['importsettings'] = 'Inportatze-ezarpen orokorrak';
 $string['importsuccess'] = 'Inportazioa osatu da. Sakatu jarraituri ikastarora itzultzeko.';
 $string['includeactivities'] = 'Barne du: ';
 $string['includeditems'] = 'Barne dituen elementuak:';

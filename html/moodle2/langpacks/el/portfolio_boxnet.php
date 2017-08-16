@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,9 @@ $string['folderclash'] = 'Ο κατάλογος που ζητήσατε να δ�
 $string['foldercreatefailed'] = 'Αποτυχία δημιουργίας του καταλόγου προορισμού στο box.net';
 $string['folderlistfailed'] = 'Αποτυχία λήψης λίστας καταλόγων από το box.net';
 $string['newfolder'] = 'Νέος φάκελος στον οποίο θα τοποθετηθούν τα αρχεία';
-$string['noauthtoken'] = 'Αποτυχία λήψης τεκμηρίου πιστοποίησης για χρήση σε αυτή τη σύνοδο';
+$string['noauthtoken'] = 'Αδυναμία λήψης αδειοπλαισίου αυθεντικοποίησης (token) για χρήση σε αυτή τη συνεδρία';
 $string['notarget'] = 'Πρέπει να ορίσετε είτε έναν υπάρχον κατάλογο είτε έναν νέο κατάλογο για να μεταφορτωθούν τα αρχεία';
-$string['noticket'] = 'Αποτυχία λήψης ενός δελτίου από το box.net για την εκκίνηση της συνόδου πιστοποίησης';
+$string['noticket'] = 'Αδυναμία λήψης ενός δελτίου από το box.net για την εκκίνηση της συνόδου πιστοποίησης';
 $string['password'] = 'Το συνθηματικό σας στο box.net (δεν θα αποθηκευθεί)';
 $string['pluginname'] = 'Διαδικτυακή αποθήκευση Box.net';
 $string['sendfailed'] = 'Αποτυχία αποστολής περιεχομένου στο box.net: {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'error', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -193,8 +193,8 @@ $string['csvinvalidcols'] = '<b>Fitxer CSV no vàlid:</b> La primera línia ha d
 $string['csvinvalidcolsnum'] = 'Fitxer CSV no vàlid. Cada línia ha d\'incloure 49 o 70 camps';
 $string['csvloaderror'] = 'S\'ha produït un error durant la càrrega del fitxer CSV: {$a}';
 $string['csvweirdcolumns'] = 'El format del fitxer CSV no és vàlid. El nombre de columnes no és constant.';
-$string['dbconnectionfailed'] = '<p>Error: ha fallat la connexió amb la Base de dades</p> <p>És possible que la Base de dades estigui sobrecarregada o que no funcioni correctament.</p> <p>
-L\'administrador del lloc també hauria de comprovar que els detalls de la Base de dades estan correctament especificats a config.php</p>';
+$string['dbconnectionfailed'] = '<p>Error: ha fallat la connexió amb la base de dades</p> <p>És possible que la base de dades estigui sobrecarregada o que no funcioni correctament.</p> <p>
+L\'administrador del lloc també hauria de comprovar que els detalls de la base de dades estan correctament especificats a config.php</p>';
 $string['dbdriverproblem'] = '<p>Error: s\'ha detectat un problema en el motor de la Base de dades</p> <p>L\'administrador del lloc hauria de verificar la configuració del servidor</p><p>{$a}</p>';
 $string['dbsessionbroken'] = 'S\'ha detectat un problema seriós en la sessió de la Base de dades.<br /><br />Notifiqueu-ho a l\'administrador del servidor.';
 $string['dbsessionhandlerproblem'] = 'S\'ha produït un error en configurar la sessió de la Base de dades. Notifiqueu-ho a l\'administrador del servidor.';
@@ -537,7 +537,7 @@ $string['unknoworder'] = 'Ordenació desconeguda';
 $string['unknowparamtype'] = 'Tipus de paràmetre desconegut: {$a}';
 $string['unknowquestiontype'] = 'Tipus de pregunta sense suport {$a}';
 $string['unknowuploadaction'] = 'S\'ha produït un error: acció de càrrega ({$a}) desconeguda';
-$string['unspecifycourseid'] = 'Heu d\'especificar un ID de curs, un nom curt o un idnumber';
+$string['unspecifycourseid'] = 'Heu d\'especificar un ID de curs, un nom curt o un número ID';
 $string['unsupportedevent'] = 'Tipus d\'esdeveniment sense suport.';
 $string['unsupportedstate'] = 'Estat de compleció sense suport';
 $string['unsupportedwebserver'] = 'El programari del servidor web ({$a}) no és compatible.';

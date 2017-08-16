@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,6 +81,8 @@ $string['emailupdate'] = 'メールアドレス更新';
 $string['emailupdatemessage'] = '{$a->fullname} さん
 
 あなたは {$a->site} のアカウントに関するメールアドレス変更をリクエストしました。この変更を確認するにはあなたのブラウザで以下のURLにアクセスしてください。
+
+あなたが分からない点に関してサポートにご連絡ください: {$a->supportemail}
 
 {$a->url}';
 $string['emailupdatesuccess'] = 'ユーザ {$a->fullname} のメールアドレスは正常に {$a->email} に変更されました。';

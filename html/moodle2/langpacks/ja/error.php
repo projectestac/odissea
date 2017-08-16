@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'error', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = '活動削除中 ...';
 $string['alreadyloggedin'] = 'あなたはすでに {$a} としてログインしています。異なるユーザとしてログインする前にログアウトする必要があります。';
 $string['authnotexisting'] = '認証プラグインがありません。';
 $string['backupcontainexternal'] = 'このバックアップファイルには、ローカルに設定されていない外部Moodleネットワークホストが含まれています。';
@@ -176,6 +177,7 @@ $string['categorynamerequired'] = 'カテゴリ名は必須入力です。';
 $string['categorytoolong'] = 'カテゴリ名が長すぎます。';
 $string['commentmisconf'] = 'コメントIDの設定が正しくありません。';
 $string['componentisuptodate'] = 'コンポーネントは最新です。';
+$string['confirmationnotenabled'] = 'このサイトではユーザ確認は有効にされていません。';
 $string['confirmsesskeybad'] = '申し訳ございません、このアクションの実行に関して、あなたのセッションキーでは確認できませんでした。このセキュリティ機能は、あなたのユーザ名により重要な機能が不測または悪意により実行されることを防いでいます。本当にこの機能を実行したいか確認してください。';
 $string['couldnotassignrole'] = 'あなたへのロール割り当て中に、深刻ですが不明なエラーが発生しました。';
 $string['couldnotupdatenoexistinguser'] = 'ユーザを更新できません - ユーザが存在しません。';
@@ -227,6 +229,7 @@ $string['duplicaterolename'] = 'この名称のロールはすでに登録され
 $string['duplicateroleshortname'] = 'この省略名のロールはすでに登録されています!';
 $string['duplicateusername'] = '重複ユーザ名 - レコードをスキップ';
 $string['emailfail'] = 'メール送信に失敗しました。';
+$string['enddatebeforestartdate'] = 'コース終了日はコース開始日の後にする必要があります。';
 $string['error'] = 'エラーが発生しました。';
 $string['errorcleaningdirectory'] = 'ディレクトリ「 {$a} 」のクリーニング中にエラーが発生しました。';
 $string['errorcopyingfiles'] = 'ファイルのコピー中にエラーが発生しました。';
@@ -442,6 +445,7 @@ $string['nopermissiontoviewletergrade'] = '評定文字を閲覧するパーミ�
 $string['nopermissiontoviewpage'] = 'あなたはこのページを閲覧できません。';
 $string['nosite'] = 'トップレベルのコースが見つかりませんでした!';
 $string['nositeid'] = 'サイトIDがありません。';
+$string['nostartdatenoenddate'] = 'コース開始日も設定されている場合のみ、コース終了日を設定することができます。';
 $string['nostatstodisplay'] = '申し訳ございません、表示するデータがありません。';
 $string['notallowedtoupdateprefremotely'] = 'あなたはこのユーザのプリファレンスをリモートで更新することを許可されていません。';
 $string['notavailable'] = '現在利用できません';
@@ -468,6 +472,7 @@ $string['querystringcannotbeempty'] = 'クエリストリングは空白にで�
 $string['redirecterrordetected'] = 'サポートされないリダイレクトが検出されました。スクリプトの実行が停止されました。';
 $string['refoundto'] = '払戻し可能額: {$a}';
 $string['refoundtoorigi'] = '注文金額の払戻し: {$a}';
+$string['registrationdisabled'] = 'このサイトでは登録が無効にされています。';
 $string['remotedownloaderror'] = '<p>あなたのサーバへのコンポーネントのダウンロードに失敗しました。プロキシ設定を確認してください。PHP cURL拡張モジュールの使用を強くお勧めします。</p>
 <p><a href="{$a->url}">{$a->url}</a>ファイルを手動でダウンロードした後、あなたのサーバの「{$a->dest}」にコピーおよび展開してください。</p>';
 $string['remotedownloadnotallowed'] = 'あなたのサーバにコンポーネントをダウンロードすることができません (allow_url_fopenが無効です)。<br /><br /><a href="{$a->url}">{$a->url}</a>ファイルを手動でダウンロードして、サーバの「 {$a->dest} 」にコピーした後、展開してください。';
@@ -497,6 +502,7 @@ $string['sessionipnomatch2'] = '<p>申し訳ございません、あなたのIP�
 <p>続ける場合、このページをリフレッシュするため、F5キーを押してください。</p>';
 $string['sessionwaiterr'] = 'セッションロックを待っている間にタイムアウトしました。<br />あなたの現在のリクエスト終了を待って、後ほど再度お試しください。';
 $string['shortnametaken'] = '省略名がすでに別のコース ({$a}) で使用されています。';
+$string['sitepolicynotagreed'] = 'サイトポリシーに同意されていません: <a href="{$a}">サイトポリシーを開くにはここをクリックしてください。</a>';
 $string['socksnotsupported'] = 'PHP4ではSOCKS5プロキシはサポートされていません。';
 $string['spellcheckernotconf'] = 'スペルチェッカが設定されていません。';
 $string['sslonlyaccess'] = '申し訳ございません、セキュリティ上の理由から、httpsアクセスのみ許可されています。';
@@ -563,6 +569,7 @@ $string['usernotdeletedadmin'] = 'ユーザは削除されませんでした - �
 $string['usernotdeletederror'] = 'ユーザは削除されませんでした - エラー。';
 $string['usernotdeletedmissing'] = 'ユーザは削除されませんでした - ユーザ名が見つかりませんでした。';
 $string['usernotdeletedoff'] = 'ユーザは削除されませんでした - 削除が許可されていません。';
+$string['usernotfullysetup'] = 'ユーザは完全には設定されていません。';
 $string['usernotincourse'] = 'このユーザはこのコースに登録されていません!';
 $string['usernotrenamedadmin'] = '管理者アカウントはリネームできません。';
 $string['usernotrenamedexists'] = 'ユーザはリネームされませんでした - 新しいユーザ名がすでに使用されています。';

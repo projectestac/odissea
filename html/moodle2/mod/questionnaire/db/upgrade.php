@@ -14,6 +14,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * @package mod_questionnaire
+ * @copyright  2016 Mike Churchward (mike.churchward@poetgroup.org)
+ * @author     Mike Churchward
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
 function xmldb_questionnaire_upgrade($oldversion=0) {
     global $CFG, $DB;
 
@@ -549,6 +558,20 @@ function xmldb_questionnaire_upgrade($oldversion=0) {
 
         // Questionnaire savepoint reached.
          upgrade_mod_savepoint(true, 2016020204, 'questionnaire');
+    }
+
+    // Ensuring database matches XML state for some known anomalies.
+    if ($oldversion < 2016111105) {
+        $table = new xmldb_table('questionnaire');
+        $field = new xmldb_field('notifications', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0', 'resp_view');
+
+        // Conditionally launch add field.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Questionnaire savepoint reached.
+         upgrade_mod_savepoint(true, 2016111105, 'questionnaire');
     }
 
     return $result;

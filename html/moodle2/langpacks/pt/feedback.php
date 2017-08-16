@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Adicionar questão';
+$string['add_item'] = 'Adicionar uma pergunta';
 $string['add_pagebreak'] = 'Adicionar quebra de página';
 $string['adjustment'] = 'Ajustamento';
 $string['after_submit'] = 'Após submissão';
@@ -55,8 +55,9 @@ $string['check_values'] = 'Respostas possíveis';
 $string['choosefile'] = 'Selecionar ficheiro';
 $string['chosen_feedback_response'] = 'resposta do inquérito escolhida';
 $string['closebeforeopen'] = 'Especificou uma data de fim anterior à data de início.';
-$string['completed'] = 'concluído';
+$string['completed'] = 'Concluído';
 $string['completed_feedbacks'] = 'Respostas submetidas';
+$string['completedon'] = 'Concluído a {$a}';
 $string['complete_the_form'] = 'Responder às questões...';
 $string['completionsubmit'] = 'Ver como concluído se o inquérito tiver sido submetido';
 $string['configallowfullanonymous'] = 'Se selecionar \'Sim\', o inquérito pode ser concluído por utilizadores não autenticados. Apenas é aplicável a inquéritos na página de autenticação.';
@@ -194,7 +195,7 @@ $string['notavailable'] = 'este inquérito não se encontra disponível';
 $string['not_completed_yet'] = 'Incompletos';
 $string['no_templates_available_yet'] = 'Ainda não existem modelos disponíveis';
 $string['not_selected'] = 'Não respondido';
-$string['not_started'] = 'por iniciar';
+$string['not_started'] = 'Por iniciar';
 $string['numberoutofrange'] = 'Valor fora do intervalo';
 $string['numeric'] = 'Resposta numérica';
 $string['numeric_range_from'] = 'Valor mínimo';
@@ -259,7 +260,8 @@ $string['show_nonrespondents'] = 'Utilizadores que não responderam';
 $string['site_after_submit'] = 'Site após submissão';
 $string['sort_by_course'] = 'Ordenar por disciplina';
 $string['start'] = 'Iniciar';
-$string['started'] = 'iniciado';
+$string['started'] = 'Iniciado';
+$string['startedon'] = 'Iniciado em {$a}';
 $string['stop'] = 'Fim';
 $string['subject'] = 'Assunto';
 $string['switch_group'] = 'Mudar grupo';

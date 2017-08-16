@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,10 +38,10 @@ Cursussen die met deze functie gecreëerd worden, kunnen een grote hoeveelheid d
 (Om toevallig gebruik te voorkomen, is deze functie uitgeschakeld, tenzij u ook ontwikkelaar debug-niveau hebt geselecteerd.)';
 $string['coursesize_0'] = 'XS (~10KB; gemaakt in ~1 seconde)';
 $string['coursesize_1'] = 'S (~10MB; gemaakt in ~30 seconden)';
-$string['coursesize_2'] = 'M (~100MB; gemaakt in ~5 minuten)';
-$string['coursesize_3'] = 'L (~1GB; gemaakt in ~1 uur)';
-$string['coursesize_4'] = 'XL (~10GB; gemaakt in ~4 uur)';
-$string['coursesize_5'] = 'XXL (~20GB; gemaakt in ~8 uur)';
+$string['coursesize_2'] = 'M (~100MB; gemaakt in ~2 minuten)';
+$string['coursesize_3'] = 'L (~1GB; gemaakt in ~30 minuten)';
+$string['coursesize_4'] = 'XL (~10GB; gemaakt in ~2 uur)';
+$string['coursesize_5'] = 'XXL (~20GB; gemaakt in ~4 uur)';
 $string['coursewithoutusers'] = 'De geselecteerde cursus heeft geen gebruikers';
 $string['createcourse'] = 'Maak cursus';
 $string['createtestplan'] = 'Maak testplan';

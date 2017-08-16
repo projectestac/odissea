@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cachestore_file', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   cachestore_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

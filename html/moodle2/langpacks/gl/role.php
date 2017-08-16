@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,10 +209,10 @@ $string['defaultx'] = 'Predeterminado/a: {$a}';
 $string['defineroles'] = 'Definir roles';
 $string['deletecourseoverrides'] = 'Eliminar todas as anulacións do curso';
 $string['deletelocalroles'] = 'Eliminar todas as asignacións de rol locais';
-$string['deleterolesure'] = '<p>Confirma que quere eliminar o rol «{$a->name} ({$a->shortname})»?</p><p>Actualmente este rol está asignado a {$a->count} usuarios.</p>';
+$string['deleterolesure'] = 'Conforma que quere eliminar o rol «{$a->name} ({$a->shortname})»?</p><p>Actualmente este rol está asignado a {$a->count} usuarios.';
 $string['deletexrole'] = 'Eliminar o rol {$a}';
 $string['duplicaterole'] = 'Duplicar este rol';
-$string['duplicaterolesure'] = '<p>Confirma que quere duplicar o rol «{$a->name} ({$a->shortname})»?</p>';
+$string['duplicaterolesure'] = 'Confirma que quere duplicar o rol «{$a->name} ({$a->shortname})»?</p>';
 $string['editingrolex'] = 'Editando o rol «{$a}»';
 $string['editrole'] = 'Editar rol';
 $string['editxrole'] = 'Editar o rol {$a}';
@@ -280,7 +280,7 @@ $string['managerdescription'] = 'Os xestores poden acceder aos cursos e modifica
 $string['manageroles'] = 'Xestionar roles';
 $string['maybeassignedin'] = 'Tipos de contexto no pode asignarse este rol';
 $string['morethan'] = 'Máis de {$a}';
-$string['multipleroles'] = 'Roles múltiplos';
+$string['multipleroles'] = 'Múltiples roles';
 $string['my:configsyspages'] = 'Configurar os modelos do sistema para as páxinas do taboleiro';
 $string['my:manageblocks'] = 'Xestionar bloques de páxina o meuMoodle';
 $string['neededroles'] = 'Roles con permiso';
@@ -335,8 +335,8 @@ $string['question:useall'] = 'Usar todas as preguntas';
 $string['question:usemine'] = 'Usar as súas propias preguntas';
 $string['question:viewall'] = 'Ver todas as preguntas';
 $string['question:viewmine'] = 'Ver as súas propias preguntas';
-$string['rating:rate'] = 'Engadir as puntuacións aos elementos';
-$string['rating:view'] = 'Ver a puntuación total que vostede reciba';
+$string['rating:rate'] = 'Engadir as cualificacións aos elementos';
+$string['rating:view'] = 'Ver a ponderación total que vostede reciba';
 $string['rating:viewall'] = 'Ver todas as puntuacións en bruto dadas por individuos';
 $string['rating:viewany'] = 'Ver as puntuacións totais que reciba calquera';
 $string['resetrole'] = 'Restabelecer ao predeterminado';
@@ -364,7 +364,7 @@ $string['role:manage'] = 'Crear e xestionar roles';
 $string['role:override'] = 'Substituír permisos para outros';
 $string['roleprohibitheader'] = 'Prohibir rol';
 $string['roleprohibitinfo'] = 'Seleccione un rol que engadir á lista de roles prohibidos no contexto {$a->context}, permiso {$a-> cap}:';
-$string['rolerepreset'] = 'Usar a preconfiguración do rol';
+$string['rolerepreset'] = 'Usar a preconfiguración do ro';
 $string['roleresetdefaults'] = 'Predeterminados';
 $string['roleresetrole'] = 'Usar rol ou arquetipo';
 $string['role:review'] = 'Revisión de permisos para outros';

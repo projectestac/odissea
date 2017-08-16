@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_database', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,7 @@ $string['debugdb_desc'] = 'Depura la connexió ADOdb a la base de dades externa 
 $string['defaultcategory'] = 'Categoria a nou curs per defecte';
 $string['defaultcategory_desc'] = 'La categoria per defecte per cursos auto creats, s\'utilitza quan no s\'especifiqui la identificació de la categoria nova o no es trobi.';
 $string['defaultrole'] = 'Rol per defecte';
-$string['defaultrole_desc'] = 'El rol que s\'assignarà per defecte si n\'especifica cap rol en la taula externa.';
+$string['defaultrole_desc'] = 'El rol que s\'assignarà per defecte si no se n\'especifica cap altre a la taula externa.';
 $string['ignorehiddencourses'] = 'Ignora cursos ocults';
 $string['ignorehiddencourses_desc'] = 'Si està habilitat els usuaris sols es podran inscriure en cursos que estiguin disponibles per als estudiants.';
 $string['localcategoryfield'] = 'Camp local de la categoria';
@@ -57,13 +57,13 @@ $string['newcoursefullname'] = 'Camp del nom complet del curs nou';
 $string['newcourseidnumber'] = 'Camp del nombre d\'identificació del curs nou';
 $string['newcourseshortname'] = 'Camp del nom curt del curs nou';
 $string['newcoursetable'] = 'Taula remota de cursos nous';
-$string['newcoursetable_desc'] = 'Especifica el nom de la taula que conté una llista de cursos que poder crear-se de forma automàtica. Si està buida no s\'ha creat cap curs.';
+$string['newcoursetable_desc'] = 'Especifica el nom de la taula que conté una llista de cursos que s\'han de crear de forma automàtica. Si és buida, no s\'ha creat cap curs.';
 $string['pluginname'] = 'Base de dades externa';
 $string['pluginname_desc'] = 'Podeu utilitzar una base de dades externa (o alguna cosa semblant) per controlar les vostres inscripcions. S\'assumeix que la vostra base de dades externa conté com a mínim un camp que conté una identificació del curs, i un camp que conté la identificació dels usuaris. Aquests es comparen amb els camps que escolliu al curs local i a la taula d\'usuaris.';
 $string['remotecoursefield'] = 'Camp remot del curs';
 $string['remotecoursefield_desc'] = 'El nom del camp en la taula remota que s\'està utilitzant per concordar entrades a la taula del curs.';
 $string['remoteenroltable'] = 'Taula remota d\'inscripció d\'usuaris';
-$string['remoteenroltable_desc'] = 'Especifica el nom de la taula que conté la llista d\'usuaris inscrits. Si és buida no s\'ha sincronitzat cap inscripció d\'usuaris.';
+$string['remoteenroltable_desc'] = 'Especifica el nom de la taula que conté la llista d\'usuaris inscrits. Si és buida, no s\'ha sincronitzat cap inscripció d\'usuaris.';
 $string['remoteotheruserfield'] = 'Camp remot de l\'altre usuari';
 $string['remoteotheruserfield_desc'] = 'El nom del camp en la taula remota que està usant el senyalador «Altre usuari» a les assignacions de rol.';
 $string['remoterolefield'] = 'Camp remot de rol';

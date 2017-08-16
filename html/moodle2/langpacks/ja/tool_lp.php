@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lp', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['competencyframeworkcreated'] = 'コンピテンシーフレームワー
 $string['competencyframeworkname'] = '名称';
 $string['competencyframeworkroot'] = '親なし (トップレベルコンピテンシー)';
 $string['competencyframeworks'] = 'コンピテンシーフレームワーク';
+$string['competencyframeworksrepository'] = 'コンピテンシーフレームワークリポジトリ';
 $string['competencyframeworkupdated'] = 'コンピテンシーフレームワークが更新されました。';
 $string['competencyoutcome_complete'] = '完了マークする';
 $string['competencyoutcome_evidence'] = 'エビデンスを添付する';
@@ -77,7 +78,7 @@ $string['configurescale'] = '尺度を設定する';
 $string['coursecompetencies'] = 'コースコンピテンシー';
 $string['coursecompetencyratingsarenotpushedtouserplans'] = 'このコース内でのコンピテンシー評定は学習プランに影響しません。';
 $string['coursecompetencyratingsarepushedtouserplans'] = 'このコース内でのコンピテンシー評定は学習プラン内ですぐに更新されます。';
-$string['coursecompetencyratingsquestion'] = 'コースコンピテンシーが評定された場合、評定は学習プラン内のコンピテンシーを更新しますか、それともコースのみに適用しますか?';
+$string['coursecompetencyratingsquestion'] = 'コースコンピテンシーが評定された場合、評定は学習プラン内のコンピテンシーを更新しますか、それともコースにのみ適用しますか?';
 $string['coursesusingthiscompetency'] = 'このコンピテンシーにリンクされたコース';
 $string['coveragesummary'] = '{$a->competenciescoveredcount} / {$a->competenciescount} のコンピテンシーがカバーされています ( {$a->coveragepercentage} % )。';
 $string['createlearningplans'] = '学習プランを作成する';

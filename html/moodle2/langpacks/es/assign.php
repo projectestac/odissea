@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assign', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,8 @@ $string['addnewattempt'] = 'Añadir una nueva entrega';
 $string['addnewattemptfromprevious'] = 'Añadir un nuevo intento basado en el envío anterior';
 $string['addnewattemptfromprevious_help'] = 'Se copiará el contenido de la entrega anterior a una nueva para poder trabajar a partir de ella.';
 $string['addnewattempt_help'] = 'Se creará una nueva entrega en blanco para poder trabajar.';
+$string['addnewgroupoverride'] = 'Añadir excepción de grupo';
+$string['addnewuseroverride'] = 'Añadir excepción de usuario';
 $string['addsubmission'] = 'Agregar entrega';
 $string['allocatedmarker'] = 'Marcador asignado';
 $string['allocatedmarker_help'] = 'Marcador asignado a esta entrega';
@@ -52,6 +54,7 @@ $string['assign:grade'] = 'Calificar tarea';
 $string['assign:grantextension'] = 'Ampliar plazo';
 $string['assign:manageallocations'] = 'Gestionar marcadores asignados a entregas';
 $string['assign:managegrades'] = 'Revisión y publicación de calificaciones';
+$string['assign:manageoverrides'] = 'Administrar las excepciones en tareas';
 $string['assignmentisdue'] = 'La tarea ha vencido';
 $string['assignmentmail'] = '{$a->grader} ha hecho un comentario de  retroalimentación en su entrega de la tarea {$a->assignment}.
 
@@ -138,6 +141,7 @@ $string['defaultsettings_help'] = 'Estos parámetros definen los valores por def
 $string['defaultteam'] = 'Grupo predeterminado';
 $string['deleteallsubmissions'] = 'Borrar todas las entregas';
 $string['description'] = 'Descripción';
+$string['disabled'] = 'Desactivado';
 $string['downloadall'] = 'Descargar todas las entregas';
 $string['downloadasfolders'] = 'Descargar envíos en carpetas';
 $string['downloadselectedsubmissions'] = 'Descargar los envíos seleccionados';
@@ -147,6 +151,7 @@ $string['duedate_help'] = 'Esto es cuando la Tarea ya se ha entregado. Todavía 
 $string['duedateno'] = 'No hay fecha de entrega';
 $string['duedatereached'] = 'La fecha de vencimiento de esta tarea ya ha pasado';
 $string['duedatevalidation'] = 'La fecha de vencimiento debe ser posterior a la fecha de inicio de las entregas.';
+$string['duplicateoverride'] = 'Anular el duplicado';
 $string['editaction'] = 'Acciones...';
 $string['editattemptfeedback'] = 'Edite la calificación y la retroalimentación para el intento número {$a}.';
 $string['editingpreviousfeedbackwarning'] = 'Está editando la realimentación para un intento anterior. Este es el intento {$a->attemptnumber} de {$a->totalattempts}.';
@@ -237,9 +242,11 @@ $string['gradingstudent'] = 'Calificando estudiante';
 $string['gradingsummary'] = 'Sumario de calificaciones';
 $string['grantextension'] = 'Ampliar plazo';
 $string['grantextensionforusers'] = 'Ampliar plazo para {$a} estudiantes';
+$string['groupsnone'] = 'No hay grupos en este curso';
 $string['groupsubmissionsettings'] = 'Configuración de entrega por grupo';
 $string['hiddenuser'] = 'Participante';
 $string['hideshow'] = 'Ocultar/Mostrar';
+$string['inactiveoverridehelp'] = '* El estudiante no tiene el grupo o rol correcto para realizar la tarea';
 $string['instructionfiles'] = 'Archivos de instrucciones';
 $string['introattachments'] = 'Archivos adicionales';
 $string['introattachments_help'] = 'Pueden añadirse archivos adicionales para ser utilizados en la tarea, por ejemplo, como plantilla de respuesta. Los enlaces para descargar estos archivos se muestran debajo de la descripción de la tarea.';
@@ -291,12 +298,15 @@ $string['multipleteamsgrader'] = 'Miembro de más de un grupo, por lo que no pue
 $string['mysubmission'] = 'Mi entrega:';
 $string['newsubmissions'] = 'Tareas enviadas';
 $string['noattempt'] = 'No entregado';
+$string['noclose'] = 'Sin fecha de cierre';
 $string['nofiles'] = 'Sin archivos';
 $string['nofilters'] = 'Sin filtros';
 $string['nograde'] = 'Sin calificación';
 $string['nolatesubmissions'] = 'No se aceptan entregas fuera de plazo.';
 $string['nomoresubmissionsaccepted'] = 'No se aceptan más entregas';
+$string['none'] = 'Ninguna';
 $string['noonlinesubmissions'] = 'Esta tarea no requiere que usted envíe nada de forma online';
+$string['noopen'] = 'Sin fecha de apertura';
 $string['nosavebutnext'] = 'Siguiente';
 $string['nosubmission'] = 'No se ha enviado nada en esta tarea';
 $string['nosubmissionsacceptedafter'] = 'No se aceptan entregas después de';
@@ -318,6 +328,7 @@ $string['open'] = 'Abrir';
 $string['outlinegrade'] = 'Calificar: {$a}';
 $string['outof'] = '{$a->current} de {$a->total}';
 $string['overdue'] = '<font color="red">La Tarea está retrasada por: {$a}</font>';
+$string['overridegroupeventname'] = '{$a->assign} - {$a->group}';
 $string['page-mod-assign-view'] = 'Página principal del módulo tareas y entregas';
 $string['page-mod-assign-x'] = 'Cualquier página del módulo tarea';
 $string['paramtimeremaining'] = '{$a} restante';
@@ -340,10 +351,12 @@ $string['requiresubmissionstatement'] = 'Es necesario que los estudiantes acepte
 $string['requiresubmissionstatement_help'] = 'Es necesario que los estudiantes acepten las condiciones de entrega para todas las entregas de tarea de este sitio Moodle.';
 $string['revealidentities'] = 'Mostrar la identidad de los estudiantes';
 $string['revealidentitiesconfirm'] = '¿Está seguro que quiere revelar las identidades de los estudiantes en esta tarea. Esta operación no se puede deshacer. Una vez que las identidades de los estudiantes han sido reveladas, las puntuaciones se publicarán en el libro de calificaciones.';
+$string['reverttodefaults'] = 'Volver a los valores predeterminados de la tarea';
 $string['reverttodraft'] = 'Revertir la entrega al estatus de borrador.';
 $string['reverttodraftforstudent'] = 'Revertir la entrega a borrador para el estudiante: (id={$a->id}, nombre={$a->fullname}).';
 $string['reverttodraftshort'] = 'Revertir la entrega a borrador';
 $string['reviewed'] = 'Revisado';
+$string['save'] = 'Guardar';
 $string['saveallquickgradingchanges'] = 'Guardar los cambios realizados en la calificación rápida';
 $string['saveandcontinue'] = 'Guardar y continuar';
 $string['savechanges'] = 'Guardar cambios';
@@ -468,6 +481,7 @@ $string['upgradenotimplemented'] = 'Actualización no implementada en la extensi
 $string['userextensiondate'] = 'Plazo ampliado hasta: {$a}';
 $string['usergrade'] = 'Calificación de usuario';
 $string['useridlistnotcached'] = 'Los cambios de nota NO fueron guardados, pues no fue posible determinar a qué tarea pertenecían.';
+$string['usersnone'] = 'Ningún estudiante tiene acceso a esta tarea.';
 $string['userswhoneedtosubmit'] = 'Componentes del equipo pendientes de entrega: {$a}';
 $string['validmarkingworkflowstates'] = 'Estados válidos del proceso de evaluación';
 $string['viewadifferentattempt'] = 'Ver un intento diferente';

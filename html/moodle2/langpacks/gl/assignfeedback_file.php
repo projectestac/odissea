@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assignfeedback_file', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   assignfeedback_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'Enviar un ou máis ficheiros de comentarios para todos os usuarios seleccionados?';
-$string['batchuploadfiles'] = 'Enviar os ficheiros de comentarios para múltiplos usuarios';
+$string['batchuploadfiles'] = 'Enviar os ficheiros de comentarios para múltiples usuarios';
 $string['batchuploadfilesforusers'] = 'Enviar os ficheiros de comentarios a {$a} usuario(s) seleccionado(s).';
 $string['configmaxbytes'] = 'Tamaño máximo do ficheiro';
 $string['confirmuploadzip'] = 'Confirmar a descarga do zip';
@@ -51,6 +51,6 @@ $string['nochanges'] = 'Sen cambios';
 $string['pluginname'] = 'Ficheiro de comentarios';
 $string['selectedusers'] = 'Usuarios seleccionados';
 $string['uploadfiles'] = 'Enviar os ficheiros de comentarios';
-$string['uploadzip'] = 'Enviar múltiplos ficheiros de comentarios nun zip';
+$string['uploadzip'] = 'Enviar múltiples ficheiros de comentarios nun zip';
 $string['uploadzipsummary'] = 'Ficheiros de comentarios importados desde un zip';
 $string['userswithnewfeedback'] = 'Usuarios con comentarios actualizados: {$a}';

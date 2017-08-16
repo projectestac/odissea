@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['additionaldelimiters'] = 'Extra vergelijking scheidingstekens';
 $string['additionaldelimiters_help'] = 'MathJax filter ontleedt tekst voor vergelijkingen opgenomen tussen scheidingstekens. De lijst van erkende scheidingstekens kan hier worden toegevoegd (bijv. AsciiMath gebruikt `). Er kunnen meerdere tekens gebruikt worden, ze kunnen met komma\'s worden gescheiden.';
 $string['filtername'] = 'MathJax';
-$string['httpsurl'] = 'HTTPS MathJax URL';
-$string['httpsurl_help'] = 'Volledige URL naar MathJax-bibliotheek. Te gebruiken wanneer de pagina geladen wordt via https (beveiligd).';
-$string['httpurl'] = 'HTTP MathJax URL';
-$string['httpurl_help'] = 'Volledige URL naar de MathJax-bibliotheek. Te gebruiken wanneer de pagina geladen wordt via http.';
+$string['httpsurl'] = 'MathJax URL';
+$string['httpsurl_help'] = 'Volledige URL naar MathJax-bibliotheek.';
 $string['localinstall'] = 'Lokale MathJax-installatie';
 $string['localinstall_help'] = 'De standaard MathJax configuratie gebruikt de CDN versie van MathJax, maar MathJax kan lokaal worden geïnstalleerd indien nodig.
 

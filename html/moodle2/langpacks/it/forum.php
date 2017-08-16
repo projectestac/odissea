@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Questo intervento non può essere eliminato!';
 $string['cannoteditposts'] = 'Interventi di altri non possono essere modificati!';
 $string['cannotfinddiscussion'] = 'Non è stato possibile trovare la discussione in questo forum';
 $string['cannotfindfirstpost'] = 'Non è stato possibile trovare il primo intervento di questo forum';
-$string['cannotfindorcreateforum'] = 'Non è stato possibile trovare o creare un forum news per il sito';
+$string['cannotfindorcreateforum'] = 'Non è stato possibile trovare o creare un forum annunci per il sito';
 $string['cannotfindparentpost'] = 'Non è stato possibile trovare l\'intervento iniziale associato all\'intervento {$a}';
 $string['cannotmovefromsingleforum'] = 'Una discussione non può essere spostata da un forum a singola discussione semplice';
 $string['cannotmovenotvisible'] = 'Forum non visibile';
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'Sottoscrizioni non consentita (tranne che
 $string['disallowsubscription'] = 'Sottoscrizione';
 $string['disallowsubscription_help'] = 'La configurazione di questo forum non consente la sottoscrizione delle discussioni.';
 $string['discussion'] = 'Discussione';
+$string['discussionlocked'] = 'Questa discussione è stata bloccata e non è più possibile intervenire.';
+$string['discussionlockingdisabled'] = 'Non bloccare discussioni';
+$string['discussionlockingheader'] = 'Blocco discussioni';
 $string['discussionmoved'] = 'La discussione è stata spostata in \'{$a}\'';
 $string['discussionmovedpost'] = 'La discussione è stata spostata in <a href="{$a->discusshref}">here</a> nel forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Nome della discussione';
@@ -219,12 +222,13 @@ $string['forcesubscribed'] = 'Questo forum è a sottoscrizione obbligatoria';
 $string['forcesubscribed_help'] = 'La configurazione di questo forum non consente la revoca  delle sottoscrizioni delle discussioni.';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Aggiungere forum';
-$string['forum:addnews'] = 'Aggiungere news';
+$string['forum:addnews'] = 'Aggiungere annunci';
 $string['forum:addquestion'] = 'Aggiungere domanda';
 $string['forum:allowforcesubscribe'] = 'Consentire sottoscrizione obbligatoria';
 $string['forumauthorhidden'] = 'Autore (nascosto)';
 $string['forumblockingalmosttoomanyposts'] = 'Stai per raggiungere il limite degli interventi permessi. Hai inviato {$a->numposts} interventi negli ultimi {$a->blockperiod} giorni. Il limite è di {$a->blockafter} interventi.';
 $string['forumbodyhidden'] = 'Non puoi visualizzare questo intervento, probabilmente perché non hai ancora effettuato interventi nella discussione, non è ancora trascorso il tempo massimo per l\'editing dei messaggi,  la discussione non è ancora cominciata oppure è terminata.';
+$string['forum:canoverridediscussionlock'] = 'Intervenire in discussioni bloccate';
 $string['forum:canposttomygroups'] = 'Inserire interventi in tutti i gruppi dove si ha accesso';
 $string['forum:createattachment'] = 'Creare allegati';
 $string['forum:deleteanypost'] = 'Eliminare tutti gli interventi (sempre)';
@@ -241,7 +245,7 @@ $string['forum:pindiscussions'] = 'Mettere in evidenza discussioni';
 $string['forumposts'] = 'Interventi nei Forum';
 $string['forum:postwithoutthrottling'] = 'Intervenire nei forum senza soglia interventi';
 $string['forum:rate'] = 'Valutare gli interventi';
-$string['forum:replynews'] = 'Rispondere alle news';
+$string['forum:replynews'] = 'Rispondere agli annunci';
 $string['forum:replypost'] = 'Rispondere agli interventi';
 $string['forums'] = 'Forum';
 $string['forum:splitdiscussions'] = 'Dividere discussioni';
@@ -281,11 +285,19 @@ $string['invalidparentpostid'] = 'L\'ID dell\'intervento superiore è errato';
 $string['invalidpostid'] = 'ID dell\'intervento non valida - {$a}';
 $string['lastpost'] = 'Ultimo intervento';
 $string['learningforums'] = 'Forum per apprendimento';
+$string['lockdiscussionafter'] = 'Blocca discussioni dopo un periodo di inattività';
+$string['lockdiscussionafter_help'] = 'Le discussioni possono essere bloccate automaticamente allo scadere di un determinato tempo dopo l\'ultimo intervento.
+
+Gli utenti con il privilegio di intervenire in discussioni bloccate potranno sbloccare la discussione semplicemente inviando una risposta.';
 $string['longpost'] = 'Intervento lungo';
 $string['mailnow'] = 'Invia l\'intervento immediatamente senza attendere il tempo per la modifica.';
 $string['manydiscussions'] = 'Discussioni per pagina';
 $string['markalldread'] = 'Segna come letti tutti gli interventi in questa discussione.';
 $string['markallread'] = 'Segna come letti tutti gli interventi in questo forum.';
+$string['markasreadonnotification'] = 'All\'invio delle notifiche di interventi nel forum';
+$string['markasreadonnotification_help'] = 'E\' possibile scegliere se le notifiche degli interventi nel forum possono contrassegnare o non contrassegnare gli interventi come letti.';
+$string['markasreadonnotificationno'] = 'Non contrassegnare l\'intervento come letto';
+$string['markasreadonnotificationyes'] = 'Contrassegna l\'intervento come letto';
 $string['markread'] = 'Segna come letto';
 $string['markreadbutton'] = 'Segna come <br/> letto';
 $string['markunread'] = 'Segna come non letto';
@@ -350,7 +362,7 @@ $string['noguestpost'] = 'Spiacente, gli ospiti non possono effettuare intervent
 $string['noguestsubscribe'] = 'Spiacente, gli ospiti non possono effettuare sottoscrizioni';
 $string['noguesttracking'] = 'Spiacente, agli ospiti non è consentito di impostare le opzioni di evidenziamento dei messaggi non letti.';
 $string['nomorepostscontaining'] = 'Non sono stati trovati altri interventi contenenti \'{$a}\'';
-$string['nonews'] = 'Nessuna news è stata ancora spedita';
+$string['nonews'] = 'Non ci sono annunci.';
 $string['noonecansubscribenow'] = 'Le sottoscrizioni non sono più consentite';
 $string['nopermissiontosubscribe'] = 'Non hai il privilegio per visualizzare i sottoscrittori';
 $string['nopermissiontoview'] = 'Non hai il privilegio per visualizzare questo intervento';
@@ -514,6 +526,7 @@ $string['trackingtype_help'] = 'L\'impostazione consente di scegliere se abilita
 * A scelta: i partecipanti possono attivare l\'evidenziamento tramite il link nel blocco amministrazione. L\'evidenziamento deve essere attivo anche nel profilo dell\'utente
 * Forzato: l\'evidenziamento è sempre attivo, indipendentemente dalle preferenze dell\'utente
 * Disabilitato: l\'evidenziamento non è attivo';
+$string['trackreadposts_header'] = 'Evidenziamento messaggi forum';
 $string['unread'] = 'Non letto';
 $string['unreadposts'] = 'Interventi non letti';
 $string['unreadpostsnumber'] = '{$a} interventi non letti';
@@ -532,6 +545,7 @@ $string['unsubscribelink'] = 'Revoca la sottoscrizione del forum: {$a}';
 $string['unsubscribeshort'] = 'Revoca sottoscrizione';
 $string['usermarksread'] = 'Spunta manualmente gli interventi non letti';
 $string['viewalldiscussions'] = 'Visualizza tutti gli argomenti';
+$string['viewthediscussion'] = 'Visualizza discussione';
 $string['warnafter'] = 'Soglia per l\'avviso';
 $string['warnafter_help'] = 'I partecipanti possono essere informati se si stanno avvicinando alla soglia massima degli interventi. L\'impostazione stabilisce dopo quanti post informare i partecipanti. Coloro che hanno il privilegio mod/forum:postwithoutthrottling non sono influenzati da questa impostazione.';
 $string['warnformorepost'] = 'Attenzione! Questo forum ha più discussioni, verrà utilizzata la più recente';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choicegroup', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Προσθήκη';
+$string['add_group'] = 'Προσθήκη Ομάδας';
+$string['add_grouping'] = 'Προσθήκη Ομαδοποίησης';
+$string['add_groupings'] = 'Προσθήκη Ομαδοποιήσεων';
+$string['add_groups'] = 'Προσθήκη Ομάδων';
 $string['addmorechoices'] = 'Προσθήκη περισσότερων επιλογών';
 $string['afterresultsviewable'] = 'Τα αποτελέσματα θα είναι ορατά αφού κάνετε την επιλογή σας.';
 $string['allowupdate'] = 'Να επιτρέπεται ανανέωση της επιλογής';

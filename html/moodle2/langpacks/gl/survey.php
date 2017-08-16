@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'survey', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['allscales'] = 'Todas as escalas, todos os alumnos';
 $string['alreadysubmitted'] = 'Xa enviou esta enquisa';
 $string['analysisof'] = 'Análise de {$a}';
 $string['answers'] = 'Respostas';
-$string['attls1'] = 'Ao avaliar o que di alguén, céntrome na calidade do seu argumento, non na persoa que o presenta.';
+$string['attls1'] = 'Ao avaliar o que di alguén, céntrome na calidade do seu argumento, non na persoa no o presenta.';
 $string['attls10'] = 'Para min é importante manterme o máis obxectivo posíbel cando analizo algo.';
 $string['attls10short'] = 'sexa obxectivo';
 $string['attls11'] = 'Tento pensar coas persoas no canto de contra elas.';
@@ -47,7 +47,7 @@ $string['attls14'] = 'Tento sinalar as debilidades na maneira de pensar dos dema
 $string['attls14short'] = 'sinale os puntos débiles';
 $string['attls15'] = 'Tento poñerme no lugar das outras persoas cando se fala de temas controvertidos, a ver que pensan e de que maneira o fan.';
 $string['attls15short'] = 'póñase no lugar dos outros';
-$string['attls16'] = 'Alguén podería chamarlle á miña maneira de analizar as cousas «poñelas a proba» xa que teño en conta coidadosamente todas as evidencias.';
+$string['attls16'] = 'Alguén podería chamarlle á miña maneira de analizar as cosas «poñelas a proba» xa que teño en conta coidadosamente todas as evidencias.';
 $string['attls16short'] = 'poñer a proba';
 $string['attls17'] = 'Cando se trata de resolver problemas, valoro o uso da lóxica e da razón por enriba dos meus propios intereses.';
 $string['attls17short'] = 'valoro sobre todo a lóxica';
@@ -66,7 +66,7 @@ $string['attls4'] = 'A parte máis importante da miña educación foi ter aprend
 $string['attls4short'] = 'entender as persoas diferentes';
 $string['attls5'] = 'Sinto que a mellor maneira de conseguir a miña propia identidade é interactuar con persoas diferentes.';
 $string['attls5short'] = 'interactuar coa diversidade';
-$string['attls6'] = 'Gozo ao escoitar as opinións das persoas que veñen de contornos diferentes ao meu; axúdame a entender como cousas iguais poden ser vistas de maneiras diferentes.';
+$string['attls6'] = 'Gozo ao escoitar as opinións das persoas que veñen de contornos diferentes ao meu; axúdame a entender como cosas iguais poden ser vistas de maneiras diferentes.';
 $string['attls6short'] = 'gozar escoitando opinións';
 $string['attls7'] = 'Vexo que podo fortalecer a miña propia posición debatendo con persoas que discrepa comigo.';
 $string['attls7short'] = 'fortalecer a través do debate';
@@ -106,13 +106,13 @@ $string['colles11'] = 'outros alumnos pídenme que lles que explique as miñas i
 $string['colles11short'] = 'Pídeseme que me explique';
 $string['colles12'] = 'outros alumnos responden á miñas ideas.';
 $string['colles12short'] = 'Os alumnos respóndenme';
-$string['colles13'] = 'o titor estimulame a reflexionar.';
-$string['colles13short'] = 'o titor estimula a reflexión';
-$string['colles14'] = 'o titor anímame a participar.';
-$string['colles14short'] = 'o titor anímame';
-$string['colles15'] = 'o titor exemplifica as boas disertacións.';
-$string['colles15short'] = 'o titor exemplifica as disertacións';
-$string['colles16'] = 'o titor exemplifica a auto reflexión crítica.';
+$string['colles13'] = 'o tutor estimulame a reflexionar.';
+$string['colles13short'] = 'o tutor estimula a reflexión';
+$string['colles14'] = 'o tutor anímame a participar.';
+$string['colles14short'] = 'o tutor anímame';
+$string['colles15'] = 'o tutor exemplifica as boas disertacións.';
+$string['colles15short'] = 'o tutor exemplifica as disertacións';
+$string['colles16'] = 'o tutor exemplifica a auto reflexión crítica.';
 $string['colles16short'] = 'o tutor exemplifica a auto reflexión';
 $string['colles17'] = 'outros alumnos anímanme a participar.';
 $string['colles17short'] = 'os alumnos anímanme';
@@ -128,10 +128,10 @@ $string['colles21'] = 'entendo ben as mensaxes doutros alumnos.';
 $string['colles21short'] = 'Entendo aos outros alumnos';
 $string['colles22'] = 'os outros alumnos entenden ben as miñas mensaxes.';
 $string['colles22short'] = 'os alumnos entendenme';
-$string['colles23'] = 'entendo ben as mensaxes do o titor.';
-$string['colles23short'] = 'Entendo ao titor';
-$string['colles24'] = 'o titor entende ben as miñas mensaxes.';
-$string['colles24short'] = 'o titor enténdeme';
+$string['colles23'] = 'entendo ben as mensaxes do o tutor.';
+$string['colles23short'] = 'Entendo ao tutor';
+$string['colles24'] = 'o tutor entende ben as miñas mensaxes.';
+$string['colles24short'] = 'o tutor enténdeme';
 $string['colles2short'] = 'importante para a miña práctica';
 $string['colles3'] = 'aprendo como mellorar a miña práctica profesional.';
 $string['colles3short'] = 'melloro a miña práctica';
@@ -173,8 +173,8 @@ $string['collesm2'] = 'Pensamento reflexivo';
 $string['collesm2short'] = 'Pensamento reflexivo';
 $string['collesm3'] = 'Interactividade';
 $string['collesm3short'] = 'Interactividade';
-$string['collesm4'] = 'Apoio do titor';
-$string['collesm4short'] = 'Apoio do titor';
+$string['collesm4'] = 'Apoio do tutor';
+$string['collesm4short'] = 'Apoio do tutor';
 $string['collesm5'] = 'Apoio de compañeiros';
 $string['collesm5short'] = 'Apoio de compañeiros';
 $string['collesm6'] = 'Interpretación';
@@ -234,7 +234,7 @@ $string['preferredclass'] = 'Clase preferida';
 $string['preferredstudent'] = '{$a} preferida';
 $string['question'] = 'Pregunta';
 $string['questions'] = 'Preguntas';
-$string['questionsnotanswered'] = 'Algunhas das preguntas con opción múltiple non foron respondidas.';
+$string['questionsnotanswered'] = 'Algunhas das preguntas con opción múltiple non foi respondida.';
 $string['report'] = 'Informe da enquisa';
 $string['responsereports'] = 'Informes de respostas';
 $string['responses'] = 'Respostas';

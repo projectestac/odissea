@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_url', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_url', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = 'Veld voor URL';
 $string['openlinkinnewwindow'] = 'Open link in nieuw venster';
 $string['pluginname'] = 'URL';

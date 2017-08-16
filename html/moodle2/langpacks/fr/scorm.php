@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,6 +84,8 @@ $string['compatibilitysettings'] = 'Réglages de compatibilité';
 $string['completed'] = 'Terminé';
 $string['completionscorerequired'] = 'Requiert un score minimal';
 $string['completionscorerequired_help'] = 'Si ce réglage est activé, le participant devra obtenir au moins le score indiqué pour que cette activité SCORM soit marquée comme terminée, en plus des autres conditions de complétion.';
+$string['completionstatusallscos'] = 'Imposer que tous les SCOs retournent le statut d\'achèvement.';
+$string['completionstatusallscos_help'] = 'Certains paquets SCORM contiennent plusieurs composants ou « SCOs ». Si ce réglage est activé, tous les SCOs doivent retourner l\'état lesson_status approprié pour que l\'activité soit marquée comme achevée.';
 $string['completionstatus_completed'] = 'Terminé';
 $string['completionstatus_passed'] = 'Réussi';
 $string['completionstatusrequired'] = 'Requiert un statut';
@@ -418,3 +420,4 @@ Traitement des tentatives multiples
 * Les réglages « Imposer de terminer », « Imposer une nouvelle tentative » et « Verrouiller après la tentative finale » permettent en outre de mieux gérer les tentatives multiples.';
 $string['width'] = 'Largeur';
 $string['window'] = 'Fenêtre';
+$string['youmustselectastatus'] = 'Vous devez choisir un statut à requérir';

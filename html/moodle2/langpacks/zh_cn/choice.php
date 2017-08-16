@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -122,7 +122,6 @@ $string['skipresultgraph'] = '跳过结果统计图';
 $string['spaceleft'] = '个可用空间';
 $string['spacesleft'] = '个可用空间';
 $string['taken'] = '已选';
-$string['timerestrict'] = '必须在此时间之间回答';
 $string['userchoosethisoption'] = '选择此选项的用户';
 $string['viewallresponses'] = '查看 {$a} 个回复';
 $string['withselected'] = '对已选的';

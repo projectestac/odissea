@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'availability_profile', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['op_contains'] = 'περιέχει';
 $string['op_doesnotcontain'] = 'δεν περιέχει';
 $string['op_endswith'] = 'τελειώνει με';
-$string['op_isempty'] = 'είναι άδειο';
+$string['op_isempty'] = 'είναι κενό';
 $string['op_isequalto'] = 'είναι ίσο με';
 $string['op_isnotempty'] = 'δεν είναι κενό';
 $string['op_startswith'] = 'ξεκινάει με';

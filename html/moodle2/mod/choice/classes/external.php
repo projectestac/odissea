@@ -204,20 +204,19 @@ class mod_choice_external extends external_api {
         $choiceopen = true;
         $showpreview = false;
 
-        if ($choice->timeclose != 0) {
-            if ($choice->timeopen > $timenow) {
-                $choiceopen = false;
-                $warnings[1] = get_string("notopenyet", "choice", userdate($choice->timeopen));
-                if ($choice->showpreview) {
-                    $warnings[2] = get_string('previewonly', 'choice', userdate($choice->timeopen));
-                    $showpreview = true;
-                }
-            }
-            if ($timenow > $choice->timeclose) {
-                $choiceopen = false;
-                $warnings[3] = get_string("expired", "choice", userdate($choice->timeclose));
+        if (!empty($choice->timeopen) && ($choice->timeopen > $timenow)) {
+            $choiceopen = false;
+            $warnings[1] = get_string("notopenyet", "choice", userdate($choice->timeopen));
+            if ($choice->showpreview) {
+                $warnings[2] = get_string('previewonly', 'choice', userdate($choice->timeopen));
+                $showpreview = true;
             }
         }
+        if (!empty($choice->timeclose) && ($timenow > $choice->timeclose)) {
+            $choiceopen = false;
+            $warnings[3] = get_string("expired", "choice", userdate($choice->timeclose));
+        }
+
         $optionsarray = array();
 
         if ($choiceopen or $showpreview) {
@@ -333,13 +332,12 @@ class mod_choice_external extends external_api {
         require_capability('mod/choice:choose', $context);
 
         $timenow = time();
-        if ($choice->timeclose != 0) {
-            if ($choice->timeopen > $timenow) {
-                throw new moodle_exception("notopenyet", "choice", '', userdate($choice->timeopen));
-            } else if ($timenow > $choice->timeclose) {
-                throw new moodle_exception("expired", "choice", '', userdate($choice->timeclose));
-            }
+        if (!empty($choice->timeopen) && ($choice->timeopen > $timenow)) {
+            throw new moodle_exception("notopenyet", "choice", '', userdate($choice->timeopen));
+        } else if (!empty($choice->timeclose) && ($timenow > $choice->timeclose)) {
+            throw new moodle_exception("expired", "choice", '', userdate($choice->timeclose));
         }
+
         if (!choice_get_my_response($choice) or $choice->allowupdate) {
             // When a single response is given, we convert the array to a simple variable
             // in order to avoid choice_user_submit_response to check with allowmultiple even
@@ -507,6 +505,8 @@ class mod_choice_external extends external_api {
                 list($choicedetails['intro'], $choicedetails['introformat']) =
                     external_format_text($choice->intro, $choice->introformat,
                                             $context->id, 'mod_choice', 'intro', null);
+                    $choicedetails['introfiles'] = external_util::get_area_files($context->id, 'mod_choice', 'intro', false,
+                                                                                    false);
 
                 if (has_capability('mod/choice:choose', $context)) {
                     $choicedetails['publish']  = $choice->publish;
@@ -557,6 +557,7 @@ class mod_choice_external extends external_api {
                             'name' => new external_value(PARAM_RAW, 'Choice name'),
                             'intro' => new external_value(PARAM_RAW, 'The choice intro'),
                             'introformat' => new external_format_value('intro'),
+                            'introfiles' => new external_files('Files in the introduction text', VALUE_OPTIONAL),
                             'publish' => new external_value(PARAM_BOOL, 'If choice is published', VALUE_OPTIONAL),
                             'showresults' => new external_value(PARAM_INT, '0 never, 1 after answer, 2 after close, 3 always',
                                                                 VALUE_OPTIONAL),
@@ -642,10 +643,8 @@ class mod_choice_external extends external_api {
         } else if ($choice->allowupdate) {
             // Check if we can delate our own responses.
             $timenow = time();
-            if ($choice->timeclose != 0) {
-                if ($timenow > $choice->timeclose) {
-                    throw new moodle_exception("expired", "choice", '', userdate($choice->timeclose));
-                }
+            if (!empty($choice->timeclose) && ($timenow > $choice->timeclose)) {
+                throw new moodle_exception("expired", "choice", '', userdate($choice->timeclose));
             }
             // Delete only our responses.
             $myresponses = array_keys(choice_get_my_response($choice));

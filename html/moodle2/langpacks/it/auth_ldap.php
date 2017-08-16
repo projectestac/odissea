@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -138,7 +138,7 @@ $string['ntlmsso_isdisabled'] = 'Il SSO via NTLM non è abilitato';
 $string['ntlmsso_unknowntype'] = 'Tipo di ntlmsso sconosciuto!';
 $string['pagedresultsnotsupp'] = 'I paged result LDAP non sono supportati (manca il supporto PHP oppure hai configurato Moodle per usare il protocollo LDAP versione 2 oppure Moodle non può contatare il server LDAP per verificare il supporto ai paged result)';
 $string['pagesize'] = 'Accertati che il valore impostato sia minore della dimensione del result set (il numero massimo di record forniti con una singola query) del tuo serevr LDAP';
-$string['pagesize_key'] = 'Page size';
+$string['pagesize_key'] = 'Dimensione pagina';
 $string['pluginname'] = 'Server LDAP';
 $string['pluginnotenabled'] = 'Plugin non abilitato!';
 $string['renamingnotallowed'] = 'In LDAP non è consentito di rinominare gli utenti';

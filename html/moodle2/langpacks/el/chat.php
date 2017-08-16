@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajax'] = 'Χρήση AJAX';
-$string['autoscroll'] = 'Αυτόματη κύλιση';
+$string['autoscroll'] = 'Αυτόματη Κύλιση';
 $string['beep'] = 'Ηχητικό σήμα';
 $string['cantlogin'] = 'Σφάλμα κατά την είσοδο στη συζήτηση!';
 $string['chat:addinstance'] = 'Προσθέστε ένα νέο τσάτ';
@@ -98,9 +98,9 @@ $string['refreshuserlist'] = 'Ανανέωση χρηστών';
 $string['removemessages'] = 'Διαγραφή όλων των μηνυμάτων';
 $string['repeatdaily'] = 'Την ίδια ώρα κάθε μέρα';
 $string['repeatnone'] = 'Χωρίς επαναλήψεις';
-$string['repeattimes'] = 'Επαναλαμβανόμενη συζήτηση';
+$string['repeattimes'] = 'Επανάληψη/δημοσίευση συζήτησης';
 $string['repeatweekly'] = 'Την ίδια ώρα κάθε εβδομάδα';
-$string['saidto'] = '<b>είπε στον/στην</b>';
+$string['saidto'] = 'είπε στον/στην';
 $string['savemessages'] = 'Αποθήκευση προηγούμενων συζητήσεων';
 $string['seesession'] = 'Προβολή συζήτησης';
 $string['send'] = 'Αποστολή';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['guidestatus'] = 'Ebaluazio-gidaren oraingo egoera';
 $string['hidemarkerdesc'] = 'Ezkutatu kalifikatzailearen  irizpideen deskribapenak';
 $string['hidestudentdesc'] = 'Ezkutatu ikaslearen  irizpideen deskribapenak';
 $string['insertcomment'] = 'Txertatu gehien erabilitako iruzkina';
-$string['maxscore'] = 'Gehieneko puntuazioa';
+$string['maxscore'] = 'Gehieneko kalifikazioa';
 $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Ebaluazio-gidaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi kalifikazio-gida, zuk gida egiaztatu eta kalifikazioa eguneratu arte.';
 $string['pluginname'] = 'Ebaluazio-gida';

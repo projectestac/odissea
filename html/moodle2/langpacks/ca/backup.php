@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Estableix el valor per defecte per inclour
 $string['configgeneralanonymize'] = 'Si està habilitat, tota la informació pertanyent als usuaris serà anonimitzada per omissió.';
 $string['configgeneralbadges'] = 'Estableix el valor per defecte per incloure insígnies en una còpia de seguretat.';
 $string['configgeneralblocks'] = 'Estableix el valor per defecte per incloure blocs en una còpia de seguretat.';
+$string['configgeneralcalendarevents'] = 'Estableix el valor per defecte per a incloure esdeveniments d\'agenda en una còpia de seguretat.';
 $string['configgeneralcomments'] = 'Estableix el valor per defecte per incloure comentaris en una còpia de seguretat.';
+$string['configgeneralcompetencies'] = 'Estableix el valor per defecte per a incloure competències en una còpia de seguretat.';
 $string['configgeneralfilters'] = 'Estableix el valor per defecte per incloure filtres en una còpia de seguretat.';
 $string['configgeneralgroups'] = 'Estableix el valor per defecte per a la inclusió de grups i agrupacions en una còpia de seguretat.';
 $string['configgeneralhistories'] = 'Estableix el valor per defecte per incloure l\'historial de l\'usuari en una còpia de seguretat.';
@@ -142,7 +144,9 @@ $string['generalanonymize'] = 'Anonimitza la informació';
 $string['generalbackdefaults'] = 'Opcions per defecte genèriques de les còpies de seguretat';
 $string['generalbadges'] = 'Inclou insígnies';
 $string['generalblocks'] = 'Inclou els blocs';
+$string['generalcalendarevents'] = 'Inclou esdeveniments d\'agenda';
 $string['generalcomments'] = 'Inclou els comentaris';
+$string['generalcompetencies'] = 'Inclou competències';
 $string['generalfilters'] = 'Inclou els filtres';
 $string['generalgradehistories'] = 'Inclou historial';
 $string['generalgroups'] = 'Inclou grups i agrupaments';
@@ -171,6 +175,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Si el lloc té un compte a
 $string['importgeneralmaxresults'] = 'Nombre màxim de cursos llistats per a importar';
 $string['importgeneralmaxresults_desc'] = 'Això controla el nombre de cursos que es llisten durant el primer pas del procés d\'importació';
 $string['importgeneralsettings'] = 'Paràmetres genèrics per defecte de la importació';
+$string['importsettings'] = 'Configuració d\'importació general';
 $string['importsuccess'] = 'S\'ha completat la importació. Cliqueu a continua per retornar al curs.';
 $string['includeactivities'] = 'Inclou:';
 $string['includeditems'] = 'Ítems inclosos:';

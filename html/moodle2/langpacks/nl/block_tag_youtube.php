@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_tag_youtube', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

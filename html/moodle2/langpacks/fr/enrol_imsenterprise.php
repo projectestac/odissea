@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,10 @@ $string['aftersaving...'] = 'Une fois ces réglages enregistrés, vous voudrez p
 $string['allowunenrol'] = 'Permettre aux données IMS de <strong>désinscrire</strong> les participants';
 $string['allowunenrol_desc'] = 'Si ce réglage est activé, les inscriptions aux cours seront retirées lorsque spécifié dans les données IMS Enterprise.';
 $string['basicsettings'] = 'Réglages de base';
+$string['categoryidnumber'] = 'Permettre les identifiants de catégorie';
+$string['categoryidnumber_desc'] = 'Si ce réglage est activé, lMS Enterprise créera les catégories avec les identifiants de catégorie';
+$string['categoryseparator'] = 'Caractère séparateur de catégorie';
+$string['categoryseparator_desc'] = 'Requis si les identifiants de catégorie sont activés. C\'est le caractère de séparation entre le nom de la catégorie et l\'identifiant.';
 $string['coursesettings'] = 'Options cours';
 $string['createnewcategories'] = 'Créer de nouvelles catégories de cours (cachées) si inexistantes dans Moodle';
 $string['createnewcategories_desc'] = 'Si l\'élément <org><orgunit> est présent dans les données arrivant pour un cours, son contenu sera utilisé pour indiquer une catégorie, si le cours doit être créé à partir de rien. Le plugin ne modifiera pas la catégorie des cours déjà existants.
@@ -60,6 +64,8 @@ $string['mailadmins'] = 'Informer l\'administrateur par courriel';
 $string['mailusers'] = 'Informer les utilisateurs par courriel';
 $string['messageprovider:imsenterprise_enrolment'] = 'Messages de l\'inscription IMS Enterprise';
 $string['miscsettings'] = 'Divers';
+$string['nestedcategories'] = 'Permettre les catégories imbriquées';
+$string['nestedcategories_desc'] = 'Si ce réglage est activé, IMS Enterprise créera des catégories imbriquées';
 $string['pluginname'] = 'Fichier IMS Enterprise';
 $string['pluginname_desc'] = 'Ce plugin d\'inscription vérifie l\'existence d\'un fichier texte spécialement formaté dans un endroit que vous spécifiez et le traite. Le fichier doit suivre les spécifications IMS Enterprise et contenir les éléments XML person, group et membership.';
 $string['processphoto'] = 'Ajouter la photo de l\'utilisateur à son profil';
@@ -81,6 +87,10 @@ $string['sourcedidfallback_desc'] = 'Dans les données IMS, le champ <sourcedid>
 Certains systèmes d\'information scolaire ne peuvent pas exporter correctement le champ <userid>. Dans un tel cas, veuillez activer ce réglage pour permettre l\'utilisation de <sourcedid> comme identifiant de l\'utilisateur dans Moodle. Dans le cas contraire, veuillez laisser ce réglage désactivé.';
 $string['truncatecoursecodes'] = 'Tronquer les codes de cours à cette longueur';
 $string['truncatecoursecodes_desc'] = 'Dans certaines situations, il peut y avoir des codes de cours que vous désirez tronquer à une longueur fixe avant le traitement des données. Dans ce cas, tapez le nombre de caractères désirés dans ce champ. Sinon, laissez le champ vide et aucune troncature ne sera effectuée.';
+$string['updatecourses'] = 'Modifier le cours';
+$string['updatecourses_desc'] = 'Si ce réglage est activé, le plugin d\'inscription IMS Enterprise peut modifier le nom complet et le nom abrégé des cours (si le champ « recstatus » est fixé à 2, ce qui représente une modification).';
+$string['updateusers'] = 'Modifier les comptes utilisateurs lorsqu\'indiqué dans les données IMS';
+$string['updateusers_desc'] = 'Si ce réglage est activé, le plugin d\'inscription IMS Enterprise peut effectuer des modifications dans les comptes utilisateur (si le champ « recstatus » est fixé à 2, ce qui représente une modification).';
 $string['usecapitafix'] = 'Cocher cette case lors de l\'utilisation de « Capita » (leur format XML n\'est pas tout à fait correct)';
 $string['usecapitafix_desc'] = 'Le système de données produit par Capita comporte un légère erreur dans son format de sortie XML. Si vous utilisez Capita, veuillez activer cette option. Dans le cas contraire, laissez-la décochée.';
 $string['usersettings'] = 'Options utilisateurs';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['dnduploadlabel'] = 'Προσθήκη εικόνας στη σελίδα
 $string['dnduploadlabeltext'] = 'Προσθήκη ετικέτας στη σελίδα μαθήματος';
 $string['label:addinstance'] = 'Προσθήκη νέας ετικέτας';
 $string['labeltext'] = 'Κείμενο ετικέτας';
+$string['label:view'] = 'Προβολή ετικέτας';
 $string['modulename'] = 'Ετικέτα';
 $string['modulename_help'] = 'Το άρθρωμα ετικέτα επιτρέπει την εισαγωγή κειμένου και πολυμέσων στην σελίδα του μαθήματος μεταξύ συνδέσμων προς άλλους πόρους και δραστηριότητες. Οι ετικέτες είναι πολύ ευπροσάρμοστες και μπορεί να βοηθήσουν στη βελτίωση της εμφάνισης ενός μαθήματος αν χρησιμοποιηθούν προσεκτικά.
 

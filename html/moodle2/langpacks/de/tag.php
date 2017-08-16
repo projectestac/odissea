@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tag', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -125,7 +125,7 @@ $string['seeallblogs'] = 'Alle Blogeinträge mit dem Schlagwort \'{$a}\' anzeige
 $string['select'] = 'Auswählen';
 $string['selectcoll'] = 'Schlagwortgruppe auswählen';
 $string['selectmaintag'] = 'Schlagwort auswählen, das nach dem Verbinden verwendet wird';
-$string['selectmultipletags'] = 'Mehr als ein Schlagwort auswählen';
+$string['selectmultipletags'] = 'Wählen Sie mehr als ein Schlagwort';
 $string['selecttag'] = 'Schlagwort {$a} auswählen';
 $string['settypedefault'] = 'Schlagwort entfernen';
 $string['settypeofficial'] = 'Zum offiziellen Schlagwort machen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['eventallfilesdownloaded'] = 'أرشيف مضغوط من المجلدا�
 $string['eventfolderupdated'] = 'تم تحديث المجلد';
 $string['folder:addinstance'] = 'أضف مجلد جديد';
 $string['foldercontent'] = 'ملفات ومجلدات فرعية';
-$string['folder:managefiles'] = 'أدر الملفات في وحدة المجلد';
+$string['folder:managefiles'] = 'أدر الملفات في وحدت المجلد';
 $string['folder:view'] = 'عايين محتوى المجلد';
 $string['maxsizetodownload'] = 'الحد الأقصى لحجم مجلد التحميل (MB)';
 $string['maxsizetodownload_help'] = 'الحد الأقصى لحجم المجلد الذي يمكن تحميله كملف مضغوط. إذا تم اختيار صفر،  سيكون حجم المجلد غير محدود.';

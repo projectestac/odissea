@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,7 +80,9 @@ $string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil e
 $string['emailupdate'] = 'Änderung der E-Mail-Adresse';
 $string['emailupdatemessage'] = 'Hallo {$a->fullname},
 
-Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto bei {$a->site} ändern. Bitte öffnen Sie die folgende URL in Ihrem Browser, um die Änderung zu bestätigen.
+Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto auf {$a->site} ändern. Bitte öffnen Sie die folgende URL in Ihrem Browser, um die Änderung zu bestätigen.
+
+Wenn Sie Fragen haben, kontaktieren Sie den Support: {$a->supportemail}
 
 {$a->url}';
 $string['emailupdatesuccess'] = 'Die E-Mail-Adresse von <em>{$a->fullname}</em> wurde erfolgreich aktualisiert: <em>{$a->email}</em>.';

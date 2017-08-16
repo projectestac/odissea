@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Je kunt dit bericht niet verwijderen!';
 $string['cannoteditposts'] = 'Je kunt een bericht van andere gebruikers niet wijzigen!';
 $string['cannotfinddiscussion'] = 'Kon die discussie in dit forum niet vinden';
 $string['cannotfindfirstpost'] = 'Kon het eerste bericht van dit forum niet vinden';
-$string['cannotfindorcreateforum'] = 'Kon geen nieuwforum maken of vinden voor deze site';
+$string['cannotfindorcreateforum'] = 'Kon geen mededelingenforum vinden of maken voor deze site';
 $string['cannotfindparentpost'] = 'Kon top ouder van bericht {$a} niet vinden';
 $string['cannotmovefromsingleforum'] = 'Kan de discussie van een eenvoudig enkele discussieforum niet verplaatsen';
 $string['cannotmovenotvisible'] = 'Forum niet zichtbaar';
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'Inschrijven niet toegelaten (behalve voor
 $string['disallowsubscription'] = 'Inschrijving';
 $string['disallowsubscription_help'] = 'Dit forum is geconfigureerd zodat je niet kan inschrijven op discussies.';
 $string['discussion'] = 'Discussie';
+$string['discussionlocked'] = 'Deze discussie is geblokkeerd, zodat u niet meer kan beantwoorden.';
+$string['discussionlockingdisabled'] = 'Discussies niet blokkeren';
+$string['discussionlockingheader'] = 'Discussies blokkeren';
 $string['discussionmoved'] = 'Deze discussie is verplaatst naar \'{$a}\'.';
 $string['discussionmovedpost'] = 'Deze discussie is verplaatst naar <a href="{$a->discusshref}">deze plaats</a> in het forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Discussienaam';
@@ -227,12 +230,13 @@ $string['forcesubscribed'] = 'Iedereen krijgt verplicht e-mail van dit forum';
 $string['forcesubscribed_help'] = 'Dit forum is ingesteld zodat je niet kan uitschrijven van discussies';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Voeg een nieuw forum toe';
-$string['forum:addnews'] = 'Voeg nieuws toe';
+$string['forum:addnews'] = 'Voeg mededelingen toe';
 $string['forum:addquestion'] = 'Voeg vraag toe';
 $string['forum:allowforcesubscribe'] = 'Inschrijven op forum verplichten toestaan';
 $string['forumauthorhidden'] = 'Auteur (verborgen)';
 $string['forumblockingalmosttoomanyposts'] = 'Je nadert de berichtenlimiet. Je hebt {$a->numposts} berichten in de afgelopen {$a->blockperiod} gepost en de limiet is {$a->blockafter} berichten.';
 $string['forumbodyhidden'] = 'Je kunt dit bericht niet bekijken. Mogelijke oorzaken: je hebt zelf nog niets gepost in deze discussie, de maximale tijd tussen twee bewerkingen is nog niet verstreken, de discussie is nog niet gestart of de discussie is afgelopen.';
+$string['forum:canoverridediscussionlock'] = 'Antwoorden op gesloten discussies';
 $string['forum:canposttomygroups'] = 'Kan aan alle groepen een bericht sturen waar je toegang toe hebt.';
 $string['forum:createattachment'] = 'Bijlage toevoegen';
 $string['forum:deleteanypost'] = 'Gelijk welk bericht verwijderen (altijd)';
@@ -249,7 +253,7 @@ $string['forum:pindiscussions'] = 'Discussies vastpinnen';
 $string['forumposts'] = 'Forumberichten';
 $string['forum:postwithoutthrottling'] = 'Vrijgesteld van beperkingen om te posten';
 $string['forum:rate'] = 'Berichten beoordelen';
-$string['forum:replynews'] = 'Beantwoord nieuws';
+$string['forum:replynews'] = 'Antwoord op mededelingen';
 $string['forum:replypost'] = 'Berichten beantwoorden';
 $string['forums'] = 'Forums';
 $string['forum:splitdiscussions'] = 'Discussies splitsen';
@@ -289,11 +293,18 @@ $string['invalidparentpostid'] = 'Ouder bericht ID was fout';
 $string['invalidpostid'] = 'Post ID {$a} was fout';
 $string['lastpost'] = 'Laatste bericht';
 $string['learningforums'] = 'Leerforums';
+$string['lockdiscussionafter'] = 'Blokkeer discussies na een periode zonder activiteit';
+$string['lockdiscussionafter_help'] = 'Discussies kunnen automatisch worden geblokkeerd nadat een bepaalde tijd is verstreken sinds het laatste antwoord.
+Gebruikers met de mogelijkheid om te antwoorden op gesloten discussies kunnen een discussie ontgrendelen door een antwoord te plaatsen.';
 $string['longpost'] = 'Lang bericht';
 $string['mailnow'] = 'Stuur meldingen van forumberichten zonder vertraging voor bewerken';
 $string['manydiscussions'] = 'Discussies per pagina';
 $string['markalldread'] = 'Markeer alle berichten in deze discussie als gelezen';
 $string['markallread'] = 'Markeer alle berichten in dit forum als gelezen';
+$string['markasreadonnotification'] = 'Wanneer forumberichten verstuurd worden';
+$string['markasreadonnotification_help'] = 'Wanneer je een melding krijgt van een forumbericht kun je er voor kiezen om dit bericht als gelezen te markeren.';
+$string['markasreadonnotificationno'] = 'Het bericht niet als gelezen markeren';
+$string['markasreadonnotificationyes'] = 'Het bericht als gelezen markeren';
 $string['markread'] = 'Markeer als gelezen';
 $string['markreadbutton'] = 'Markeer als<br />gelezen';
 $string['markunread'] = 'Markeer als ongelezen';
@@ -531,6 +542,7 @@ $string['trackingtype_help'] = 'Als \'Volgen forum\' is ingeschakeld, dan zien g
 Indien ingesteld op optioneel, dan kunnen gebruikers kiezen of ze al dan niet forum volgen inschakelen via een link in het beheer-blok. (Gebruikers moeten forum volgen ook inschakelen in hun forum voorkeuren.)
 
 Indien \'verplicht forum volgen\' is ingeschakeld in het site-beheer, dan is er een extra optie mogelijk - verplicht. Dit betekent dat het volgen altijd ingeschakeld is, wat de gebruikersinstellingen ook zijn.';
+$string['trackreadposts_header'] = 'Forum opvolgen';
 $string['unread'] = 'Niet gelezen';
 $string['unreadposts'] = 'Niet gelezen berichten';
 $string['unreadpostsnumber'] = '{$a} ongelezen berichten';
@@ -549,6 +561,7 @@ $string['unsubscribelink'] = 'Schrijf je uit van volgend forum: {$a}';
 $string['unsubscribeshort'] = 'Ik wil geen mail meer';
 $string['usermarksread'] = 'Manueel bericht als gelezen aanduiden';
 $string['viewalldiscussions'] = 'Bekijk alle discussies';
+$string['viewthediscussion'] = 'Bekijk discussie';
 $string['warnafter'] = 'Waarschuw bij maximale aantal berichten bereikt';
 $string['warnafter_help'] = 'Leerlingen kunnen gewaarschuwd worden wanneer ze het maximale aantal toegestane berichten bereiken in een bepaalde periode. Deze instelling specificeert na hoeveel berichten ze gewaarschuwd worden. Gebruikers met de mogelijkheid mod/forum:postwithoutthrottling hebben deze limiet niet.';
 $string['warnformorepost'] = 'Waarschuwing: er is meer dan één discussie in dit forum. De meest recente discussie wordt gebruikt';

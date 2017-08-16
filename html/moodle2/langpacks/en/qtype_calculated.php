@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_calculated', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -130,10 +130,10 @@ $string['sharedwildcards'] = 'Shared wild cards';
 $string['showitems'] = 'Display';
 $string['significantfigures'] = 'with {$a}';
 $string['significantfiguresformat'] = 'significant figures';
-$string['synchronize'] = 'Synchronize the data from shared datasets with other questions in a quiz';
-$string['synchronizeno'] = 'Do not synchronize';
-$string['synchronizeyes'] = 'Synchronize';
-$string['synchronizeyesdisplay'] = 'Synchronize and display the shared datasets name as prefix of the question name';
+$string['synchronize'] = 'Synchronise the data from shared datasets with other questions in a quiz';
+$string['synchronizeno'] = 'Do not synchronise';
+$string['synchronizeyes'] = 'Synchronise';
+$string['synchronizeyesdisplay'] = 'Synchronise and display the shared datasets name as prefix of the question name';
 $string['tolerance'] = 'Tolerance &plusmn;';
 $string['tolerancetype'] = 'Type';
 $string['trueanswerinsidelimits'] = 'Correct answer : {$a->correct} inside limits of true value {$a->true}';

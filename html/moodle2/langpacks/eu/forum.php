@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'Ezin da harpidetzarik egin (irakasleentza
 $string['disallowsubscription'] = 'Harpidetza';
 $string['disallowsubscription_help'] = 'Foro hau bertako eztabaidetara harpidetzea ez baimentzeko konfiguratuta dago.';
 $string['discussion'] = 'Eztabaida';
+$string['discussionlocked'] = 'Eztabaida hau blokeatu da eta beraz aurrerantzean ezingo duzu bertan erantzun.';
+$string['discussionlockingdisabled'] = 'Ez blokeatu eztabaidak';
+$string['discussionlockingheader'] = 'Eztabaiden blokeoa';
 $string['discussionmoved'] = 'Gai hau hona mugitu da:  {$a}';
 $string['discussionmovedpost'] = 'Eztabaida hau <a href="{$a->discusshref}">hona</a> eraman da <a href="{$a->forumhref}">{$a->forumname}</a> forora.';
 $string['discussionname'] = 'Eztabaidaren izena';
@@ -229,6 +232,7 @@ $string['forum:allowforcesubscribe'] = 'Baimendu behartutako harpidetza';
 $string['forumauthorhidden'] = 'Egilea (ezkutuan)';
 $string['forumblockingalmosttoomanyposts'] = 'Gehienezko mezu-kopurutik hurbil zaude. {$a->numposts} bidali dituzu azken {$a->blockperiod} eta gehienez {$a->blockafter} bidal daitezke.';
 $string['forumbodyhidden'] = 'Zuk ezin duzu mezu hau ikusi, ziurrenik ez duzulako eztabaida honetara mezurik bidali, editatzeko gehienezko epea agortu delako, eztabaida hasi ez delako edo eztabaida bukatu delako.';
+$string['forum:canoverridediscussionlock'] = 'Erantzun blokeatutako eztabaidetan';
 $string['forum:canposttomygroups'] = 'Sarbidea duzun talde guztietan idatzi dezakezu';
 $string['forum:createattachment'] = 'Erantsitako fitxategiak sortu';
 $string['forum:deleteanypost'] = 'Edozein mezu ezabatu (edonoiz)';
@@ -245,7 +249,7 @@ $string['forum:pindiscussions'] = 'Finkatu eztabaidak';
 $string['forumposts'] = 'Foroetako mezuak';
 $string['forum:postwithoutthrottling'] = 'Blokeoa eragiteko mezu-kopururik gabe';
 $string['forum:rate'] = 'Mezuak kalifikatu';
-$string['forum:replynews'] = 'Albisteei erantzun';
+$string['forum:replynews'] = 'Berrien foroari erantzun';
 $string['forum:replypost'] = 'Mezuei erantzun';
 $string['forums'] = 'Foroak';
 $string['forum:splitdiscussions'] = 'Bereizi eztabaidak';
@@ -285,11 +289,19 @@ $string['invalidparentpostid'] = 'Goragoko mezuaren IDa ez da zuzena';
 $string['invalidpostid'] = 'Mezuaren ID baliogabea - {$a}';
 $string['lastpost'] = 'Azken mezua';
 $string['learningforums'] = 'Ikasteko foroak';
+$string['lockdiscussionafter'] = 'Blokeatu eztabaidak jardunik gabeko epe baten ondoren';
+$string['lockdiscussionafter_help'] = 'Eztabaidak automatikoki blokeatu daitezke azken erantzunetik denbora-tarte bat igaro ondoren.
+
+Blokeatutako eztabaidetan erantzuteko baimena duten erabiltzaileek eztabaidak desblokeatu ditzakete bertan erantzunez.';
 $string['longpost'] = 'Mezu luzea';
 $string['mailnow'] = 'Bidali foroko mezuen jakinarazpenak editatzeko atzerapen tarterik gabe';
 $string['manydiscussions'] = 'Eztabaidak orriko';
 $string['markalldread'] = 'Hartu eztabaida honetako mezu guztiak irakurritzat';
 $string['markallread'] = 'Hartu foro honetako mezu guztiak irakurritzat';
+$string['markasreadonnotification'] = 'Foroko mezuen jakinarazpenak bidaltzean';
+$string['markasreadonnotification_help'] = 'Foroko mezu batez jakinarazten zaizunean, foroko jarraipenerako mezu hori irakurritzat eman nahi duzun aukera dezakezu.';
+$string['markasreadonnotificationno'] = 'Ez eman mezua irakurritzat';
+$string['markasreadonnotificationyes'] = 'Eman mezua irakurritzat';
 $string['markread'] = 'Irakurritzat eman';
 $string['markreadbutton'] = 'Irakurritzat<br/>eman';
 $string['markunread'] = 'Irakurri gabetzat eman';
@@ -340,8 +352,8 @@ $string['mustprovidediscussionorpost'] = 'Eztabaidaren id-a edo mezuaren id-a em
 $string['myprofileotherdis'] = 'Foro-eztabaidak';
 $string['myprofileowndis'] = 'Nire foro-eztabaidak';
 $string['myprofileownpost'] = 'Nire foroetako mezuak';
-$string['namenews'] = 'Berriak';
-$string['namenews_help'] = 'Ikastaroko "Berriak" foroa berezia da eta berez sortzen da ikastaro bat sortzean. Berri orokorretarako gunea da. Ikastaroek "Berriak" foro bakarra izan dezakete. Soilik irakasleek eta administratzaileek idatzi dezakete bertan. "Azken berriak" blokeak foro berezi honetako eztabaidak erakusten ditu.';
+$string['namenews'] = 'Berrien foroa';
+$string['namenews_help'] = 'Berrien foroa jakinarazpenetarako foro berezia da eta berez sortzen da ikastaro bat sortzen denean. Ikastaro batek berrien foro bakarra izan ahal du. Soilik irakasleek eta kudeatzaileek idatzi ditzakete berriak.  "Azken berriak" blokeak foro berezi honetako azken eztabaidak erakusten ditu.';
 $string['namesocial'] = 'Foro irekia';
 $string['nameteacher'] = 'Irakasleen foroa';
 $string['newforumposts'] = 'Mezu berriak';
@@ -354,7 +366,7 @@ $string['noguestpost'] = 'Barkatu, bisitariek ezin dute mezurik bidali.';
 $string['noguestsubscribe'] = 'Barkatu, bisitariek ez dute harpidetzeko baimenik.';
 $string['noguesttracking'] = 'Barkatu, bisitariek ezin dituzte mezuen jarraipenerako aukerak aldatu.';
 $string['nomorepostscontaining'] = 'Ez dago \'{$a}\' duen mezu gehiago';
-$string['nonews'] = 'Ez dago mezu berririk';
+$string['nonews'] = 'Oraindik ez da mezurik bidali.';
 $string['noonecansubscribenow'] = 'Harpisdetzak ez daude baimenduta orain';
 $string['nopermissiontosubscribe'] = 'Ez duzu foroko harpidedunak ikusteko baimenik.';
 $string['nopermissiontoview'] = 'Ez duzu mezu hau ikusteko baimenik.';
@@ -522,6 +534,7 @@ $string['trackingtype_help'] = 'Irakurketaren jarraipenaren bitartez partaideek 
 Aukeran utziz gero partaideek kudeaketa blokean nabarmentzea ala ez aukeratu dezakete. (Foroen jarraipena erabiltzailearen profilean ere gaituta egon behar du.)
 
 Gunearen kudeaketan "Baimendu Irakurri gabekoak nabarmentzea behartzea" gaituta badago, beste aukera bat agertuko da - behartuta. Aukera honek jarraipena beti gaituta egotea ahalbidetzen du, erabiltzailearen hobespenak edozein izanda ere.';
+$string['trackreadposts_header'] = 'Foroko jarraipena';
 $string['unread'] = 'Irakurri gabe';
 $string['unreadposts'] = 'Irakurri gabeko mezuak';
 $string['unreadpostsnumber'] = 'Irakurri gabeko {$a} mezu';
@@ -540,6 +553,7 @@ $string['unsubscribelink'] = 'Kendu harpidetza foro honetatik: {$a}';
 $string['unsubscribeshort'] = 'Harpidetza kendu';
 $string['usermarksread'] = 'Mezua eskuz markatu irakurritzat';
 $string['viewalldiscussions'] = 'Ikusi eztabaida guztiak';
+$string['viewthediscussion'] = 'Ikusi eztabaida';
 $string['warnafter'] = 'Abisua jasotzeko gutxieneko mezu-kopurua';
 $string['warnafter_help'] = 'Ikasleek abisua jaso dezakete denbora-tarte baterako ezarritako gehienezko mezu-kopurura hurbiltzen direnean. Ezarpen honek zehazten du zenbat mezuren ondoren jasoko duten abisua. mod/forum:postwithoutthrottling gaitasuna duten erabiltzaileek ez dute mezu-mugarik izango.';
 $string['warnformorepost'] = 'Kontuz! Eztabaida bat baino gehiago dago foro honetan - erabili berriena';

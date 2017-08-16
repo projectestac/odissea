@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -333,6 +333,8 @@ $string['gradereport'] = 'Grade report';
 $string['graderreport'] = 'Grader report';
 $string['grades'] = 'Grades';
 $string['gradesforuser'] = 'Grades for {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Warning: Activity deletion in progress! Some grades are about to be removed.';
+$string['gradesmoduledeletionprefix'] = '[Deletion in progress]';
 $string['gradesonly'] = 'Change to grades only';
 $string['gradessettings'] = 'Grade settings';
 $string['gradetype'] = 'Grade type';
@@ -440,7 +442,7 @@ $string['letterreal'] = 'Letter (real)';
 $string['letters'] = 'Letters';
 $string['linkedactivity'] = 'Linked activity';
 $string['linkedactivity_help'] = 'This setting specifies an activity to which this outcome item is linked. This may be used to measure student performance on criteria not assessed by the activity grade.';
-$string['linktoactivity'] = 'Link to {$a->name} activity';
+$string['linktoactivity'] = 'Link to {$a->name} activity {$a->title}';
 $string['lock'] = 'Lock';
 $string['locked'] = 'Locked';
 $string['locked_help'] = 'If ticked, grades can no longer be automatically updated by the related activity.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lti', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,7 +78,7 @@ $string['configpreferwidth'] = 'Largura predeterminada preferida';
 $string['configresourceurl'] = 'Recurso URL predeterminado';
 $string['configtoolurl'] = 'URL da ferramenta remota personalizada';
 $string['configtypes'] = 'Activar os aplicativos LTI';
-$string['configured'] = 'Configurado';
+$string['configured'] = 'Configirado';
 $string['confirmtoolactivation'] = 'Confirma que quere activar esta ferramenta?';
 $string['courseactivitiesorresources'] = 'Actividades ou recursos do curso';
 $string['courseid'] = 'Número id do curso';
@@ -90,7 +90,7 @@ $string['createdon'] = 'Creado o';
 $string['curllibrarymissing'] = 'Para usar LTI debe estar instalada a biblioteca Curl de PHP';
 $string['custom'] = 'Parámetros personalizados';
 $string['custom_config'] = 'Usando unha configuración de ferramenta personalizada';
-$string['custom_help'] = 'Os parámetros personalizados son a configuración utilizada polo fornecedor da ferramenta. Por exemplo, un parámetro personalizado pódese usar para presentar un recurso específico do fornecedor. Cada parámetro deberá escribirse nunha líña separada usando un formato de «nome=valor»; por exemplo, «chapter=3».
+$string['custom_help'] = 'Os parámetros personalizados son a configuración utilizada polo fornecedor da ferramenta. Por exemplo, un parámetro personalizado pódese usar para presentar un recurso específico do fornecedor.
 
 É seguro deixar estes campo sen cambios a non ser que diga outra cousa o fornecedor da ferramenta.';
 $string['custominstr'] = 'Parámetros personalizados';

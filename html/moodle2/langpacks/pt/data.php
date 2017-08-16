@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,8 @@ $string['availabletodatevalidation'] = '"Disponível até" não pode ser anterio
 $string['blank'] = 'Vazio';
 $string['buttons'] = 'Botões';
 $string['bynameondate'] = 'por  {$a->name} - {$a->date}';
+$string['calendarend'] = 'Base de dados fecha a {$a}';
+$string['calendarstart'] = 'Base de dados abre a {$a}';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'Não tem permissão para aceder a protótipos de outros utilizadores';
 $string['cannotadd'] = 'Não foi possível adicionar registos!';
@@ -97,6 +99,7 @@ $string['data:managetemplates'] = 'Gerir modelos';
 $string['data:manageuserpresets'] = 'Gerir todos os protótipos';
 $string['data:rate'] = 'Avaliar registos';
 $string['data:readentry'] = 'Ler registos';
+$string['data:view'] = 'Ver atividade Base de dados';
 $string['data:viewallratings'] = 'Ver todas as avaliações atribuídas pelos utilizadores';
 $string['data:viewalluserpresets'] = 'Ver protótipos de todos os utilizadores';
 $string['data:viewanyrating'] = 'Ver as avaliações totais que todos obtiveram';
@@ -127,6 +130,7 @@ $string['editordisable'] = 'Desativar editor';
 $string['editorenable'] = 'Ativar editor';
 $string['emptyadd'] = 'O modelo <b>Adicionar</b> está vazio, a gerar o formulário predefinido';
 $string['emptyaddform'] = 'Não preencheu nenhum campo!';
+$string['enabletemplateeditorcheck'] = 'Tem a certeza que quer ativar o editor? Isto pode resultar numa alteração de conteúdo quando o modelo for gravado.';
 $string['entries'] = 'Registos';
 $string['entrieslefttoadd'] = 'Tem que adicionar mais {$a->entriesleft} registo(s) para completar esta atividade';
 $string['entrieslefttoaddtoview'] = 'Tem que adicionar mais {$a->entrieslefttoview} registos para conseguir visualizar as entradas dos outros participantes.';
@@ -334,6 +338,7 @@ $string['savesuccess'] = 'Gravado com sucesso. Este protótipo será disponibili
 $string['savetemplate'] = 'Gravar modelo';
 $string['search'] = 'Pesquisar';
 $string['search:activity'] = 'Base de dados - informações da atividade';
+$string['search:entry'] = 'Base de dados - registos';
 $string['selectedrequired'] = 'Todos os selecionados são obrigatórios';
 $string['showall'] = 'Mostrar todos os registos';
 $string['single'] = 'Ver registo';

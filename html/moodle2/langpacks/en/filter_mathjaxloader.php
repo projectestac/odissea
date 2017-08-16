@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,10 +30,8 @@ $string['additionaldelimiters_help'] = 'MathJax filter parses text for equations
 
 The list of recognised delimiter characters can be added to here (e.g. AsciiMath uses `). Delimiters can contain multiple characters and multiple delimiters can be separated with commas.';
 $string['filtername'] = 'MathJax';
-$string['httpsurl'] = 'HTTPS MathJax URL';
-$string['httpsurl_help'] = 'Full URL to MathJax library. Used when the page is loaded via https (secure).';
-$string['httpurl'] = 'HTTP MathJax URL';
-$string['httpurl_help'] = 'Full URL to MathJax library. Used when the page is loaded via http.';
+$string['httpsurl'] = 'MathJax URL';
+$string['httpsurl_help'] = 'Full URL to MathJax library.';
 $string['localinstall'] = 'Local MathJax installation';
 $string['localinstall_help'] = 'The default MathJax configuration uses the CDN version of MathJax, but MathJax can be installed locally if required.
 

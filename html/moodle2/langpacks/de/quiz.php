@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -587,7 +587,7 @@ $string['overduehandling'] = 'Wenn die Zeit abgelaufen ist';
 $string['overduehandlingautoabandon'] = 'Der Testversuch muss abgegeben werden, bevor die Zeit abgelaufen ist, damit er gewertet werden kann.';
 $string['overduehandlingautosubmit'] = 'Der Testversuch wird automatisch abgegeben.';
 $string['overduehandling_desc'] = 'Grundeinstellung für den Test wenn Teilnehmer/innen einen Testversuch nicht abschließen bevor der Zeitraum abgelaufen ist.';
-$string['overduehandlinggraceperiod'] = 'Nachfrist: offene Versuche können abgeschlossen werden, Fragen nicht mehr beantwortet werden.';
+$string['overduehandlinggraceperiod'] = 'Nachfrist: offene Versuche können abgeschlossen, aber Fragen nicht mehr beantwortet werden.';
 $string['overduehandling_help'] = 'Die Einstellung legt fest, was passiert wenn Teilnehmende versäumen, vor Zeitablauf den Test abzuschließen. Sind die Teilnehmenden zu diesem Zeitpunkt beim Testversuch aktiv, wird ihr aktueller Bearbeitungsstand automatisch gespeichert. Sind sie jedoch ausgeloggt, so entscheidet diese Einstellung.';
 $string['overduemustbesubmittedby'] = 'Der Versuch ist überfällig und sollte bestätigt werden. Wenn Sie möchten dass Ihr Testversuch bewertet wird, müssen Sie ihn bestätigen {$a}. Falls sie dies nicht tun, wird keine Bewertung für diesen Versuch gezählt.';
 $string['override'] = 'Überschreiben';
@@ -715,7 +715,7 @@ $string['reattemptquiz'] = 'Test wiederholen';
 $string['recentlyaddedquestion'] = 'Kürzlich hinzugefügte Frage!';
 $string['recurse'] = 'Fragen aus Unterkategorien einbeziehen';
 $string['redoesofthisquestion'] = 'Andere Fragen wurden versucht: {$a}';
-$string['redoquestion'] = 'Frage erneut bearbeiten';
+$string['redoquestion'] = 'Versuchen Sie eine weitere Frage außer dieser hier.';
 $string['regrade'] = 'Alle Versuche neu bewerten';
 $string['regradecomplete'] = 'Alle Versuche wurden neu bewertet.';
 $string['regradecount'] = '{$a->changed} von {$a->attempt} Noten wurden geändert.';
@@ -916,8 +916,6 @@ $string['timeleft'] = 'Verbleibende Zeit';
 $string['timelimit'] = 'Zeitbegrenzung';
 $string['timelimitexeeded'] = 'Die Zeit für den Test ist abgelaufen!';
 $string['timelimit_help'] = 'In der Grundeinstellung haben Tests kein Zeitlimit. Mit der Aktivierung des Zeitlimits läuft für den Teilnehmer sichtbar eine Uhr rückwärts mit.';
-$string['timelimitmin'] = 'Zeitbegrenzung (in Minuten)';
-$string['timelimitsec'] = 'Zeitbegrenzung (Sekunden)';
 $string['timestr'] = '%H:%M:%S am %d/%m/%y';
 $string['timesup'] = 'Zeit ist abgelaufen.';
 $string['timetaken'] = 'Verbrauchte Zeit';

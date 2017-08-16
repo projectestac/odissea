@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -80,6 +80,7 @@ Teilnehmer werden den Fragebogen nach diesem Zeitpunkt nicht mehr ausfüllen kö
 $string['closeson'] = 'Befragung schließt am {$a}';
 $string['completionsubmit'] = 'Teilnehmer müssen den Frageboten einreichen um ihn zu beenden';
 $string['confalts'] = '---oder--- <br />Bestätigungsseite';
+$string['configmaxsections'] = 'Maximale Feedback-Stufen';
 $string['configusergraph'] = 'Zeigen Sie die Grafiken für das "Personality Test"-Feedback';
 $string['configusergraphlong'] = 'Nutzen Sie die <a href="http://www.rgraph.net/">Rgraph</a> library um die "Personality Test"-Feedback Grafiken zu zeigen.';
 $string['confirmdelallresp'] = 'Möchten Sie wirklich alle Antworten in dieser Befragung löschen?';
@@ -217,7 +218,9 @@ $string['maxdigitsallowed'] = 'Max. erlaubte Ziffern';
 $string['maxdigitsallowed_help'] = 'Durch die Verwendung von Max. erlaubte Ziffern und Anzahl der Nachkomastellen können Sie die Länge und Anzahl der geforderten Nachkommastellen bestimmen.';
 $string['maxforcedresponses'] = 'Max. geforderte Antworten';
 $string['maxtextlength'] = 'Max. Textlänge';
+$string['maxtextlength_help'] = 'Für die Textbox-Frage geben Sie die Länge des Feldes und die maximal eingebbaren Zeichen an. Voreingestellt sind eingebbare 25 Zeichen bei einer Anzeigelänge von 20.';
 $string['messageprovider:message'] = 'Fragebogen Reminder';
+$string['messageprovider:notification'] = 'Befragungsabgabe';
 $string['minforcedresponses'] = 'Min. geforderte Antworten';
 $string['minforcedresponses_help'] = 'Diese Optionen erlauben es, vom Teilnehmer ein Minimum von **Min.** bzw. Maximum von **Max.** an angekreuzten Kästchen zu fordern.
 Um eine genaue Anzahl einzufordern, sind **Min.** und **Max.** auf den selben Wert zu setzen.
@@ -261,6 +264,8 @@ $string['notavail'] = 'Die Befragung steht nicht länger zur Verfügung. Die Bef
 $string['noteligible'] = 'Sie können an dieser Befragung nicht teilnehmen.';
 $string['notemplatesurveys'] = 'Keine Befragungs-Templates';
 $string['notenoughscaleitems'] = 'Sie müssen mindestens zwei Werte für die Skala angeben!';
+$string['notifications'] = 'Benachrichtigung verschicken';
+$string['notifications_help'] = 'Rollen, die bei einer Abgabe benachrichtigt werden.';
 $string['notopen'] = 'Diese Befragung steht ab {$a} zur Verfügung.';
 $string['notrequired'] = 'Antwort ist nicht erforderlich';
 $string['not_started'] = 'nicht gestartet';
@@ -343,6 +348,7 @@ $string['questionnaire:readallresponseanytime'] = 'Alle Antworten jederzeit sehe
 $string['questionnaire:readallresponses'] = 'Zusammenfassung der Antworten sehen';
 $string['questionnaire:readownresponses'] = 'Eigene Antworten sehen';
 $string['questionnairereport'] = 'Bericht zur Befragung';
+$string['questionnaire:submissionnotification'] = 'Für jede Abgabe Benachrichtigung senden';
 $string['questionnaire:submit'] = 'Befragung abschliessen und abgeben';
 $string['questionnaire:view'] = 'Befragung sehen';
 $string['questionnaire:viewsingleresponse'] = 'Alle persönlichen Antworten sehen';
@@ -364,7 +370,6 @@ $string['realm_help'] = '**Es gibt 3 Typen von Befragungen**
 $string['redirecturl'] = 'URL, zu welcher ein Nutzer nach Abschluss der Befragung weiter geleitet wird.';
 $string['remove'] = 'Löschen';
 $string['removeallquestionnaireattempts'] = 'Alle Abgaben der Befragung löschen';
-$string['removenotinuse'] = 'Diese Befragung beruhte auf einer Öffentlichen Befragung, die gelöscht wurde. Sie kann nicht länger eingesetzt werden und sollte gelöscht werden.';
 $string['required'] = 'Anwort ist erforderlich';
 $string['required_help'] = 'Wenn Sie **Ja** wählen, ist eine Antwort auf diese Frage obligatorisch, d.h. der Nutzer wird die Befragung nicht abgeben können, bis diese Frage beantwortet ist.';
 $string['requiredparameter'] = 'Ein notwendiger Parameter fehlt.';
@@ -422,6 +427,11 @@ $string['started'] = 'gestartet';
 $string['strfdate'] = '%d.%m.%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['subject'] = 'Thema';
+$string['submissionnotificationhtmlanon'] = 'Jemand hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
+$string['submissionnotificationhtmluser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
+$string['submissionnotificationsubject'] = 'Neue Befragungsantwort';
+$string['submissionnotificationtextanon'] = 'Es gibt eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
+$string['submissionnotificationtextuser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
 $string['submitoptions'] = 'Abgabeoptionen';
 $string['submitpreview'] = 'Vorschau der Abgabe';
 $string['submitpreviewcorrect'] = 'Die Einreichung wurde als korrekt ausgefüllt akzeptiert.';

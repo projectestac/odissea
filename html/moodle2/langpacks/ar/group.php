@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'group', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['createautomaticgrouping'] = 'أنشئ مجموعات آلياً';
 $string['creategroup'] = 'أنشاء مجموعة';
 $string['creategrouping'] = 'إنشاء تجمّع';
 $string['creategroupinselectedgrouping'] = 'إنشاء مجموعة داخل التجمّع';
-$string['createingrouping'] = 'التجميع في المجموعات المُنشأة آلياً';
+$string['createingrouping'] = 'إنشاء في التجمّع';
 $string['createorphangroup'] = 'إنشاء مجموعة يتيمة';
 $string['databaseupgradegroups'] = 'إصدار المجموعات الآن هو {$a}';
 $string['defaultgrouping'] = 'التجمّع الافتراضي';
@@ -54,7 +54,7 @@ $string['deleteallgroups'] = 'حذف كل المجموعات';
 $string['deletegroupconfirm'] = 'هل أنت متأكد من رغبتك بحذف مجموعة \'{$a}\'؟';
 $string['deletegrouping'] = 'حذف التجمّع';
 $string['deletegroupingconfirm'] = 'هل أنت متأكد من رغبتك في حذف التجمّع \'{$a}\'؟ (لن يتم حذف المجموعات داخل التجمّع)';
-$string['deletegroupsconfirm'] = 'هل أنت متأكد من رغبتك في حذف المجموعات التالية؟';
+$string['deletegroupsconfirm'] = 'هل أنت متأكد من رغبتك في حذف المجوعات التالية؟';
 $string['deleteselectedgroup'] = 'حذف المجموعة المختارة';
 $string['editgroupingsettings'] = 'تحرير إعدادات التجمّعات';
 $string['editgroupsettings'] = 'تحرير إعدادات المجموعات';
@@ -82,11 +82,11 @@ $string['eventgroupmemberadded'] = 'تم إضافة عضو للمجموعة';
 $string['eventgroupmemberremoved'] = 'تم إزالة عضو من المجموعة';
 $string['eventgroupupdated'] = 'تم تحديث المجموعة';
 $string['existingmembers'] = 'الأعضاء الموجودين: {$a}';
-$string['filtergroups'] = 'ترشيح المجموعات باستخدام:';
+$string['filtergroups'] = 'ترشيح المحموعات باستخدام';
 $string['group'] = 'مجموعة';
 $string['groupaddedsuccesfully'] = 'تم إضافة المجموعة {$a} بنجاح';
 $string['groupaddedtogroupingsuccesfully'] = 'تم إضافة المجموعة {$a->groupname} إلى التجمُّع {$a->groupingname}  بنجاح';
-$string['groupby'] = 'إنشاء تلقائي بالاعتماد على';
+$string['groupby'] = 'حدد';
 $string['groupdescription'] = 'وصف المجموعة';
 $string['groupinfo'] = 'معلومات عن المجموعة المُختارة';
 $string['groupinfomembers'] = 'معلومات عن الأعضاء المختارين';
@@ -103,7 +103,7 @@ $string['groupingsection_help'] = 'التجميع أو التجمُّع عبار
 $string['groupingsonly'] = 'تجميعات فقط';
 $string['groupmember'] = 'عضو المجموعة';
 $string['groupmembers'] = 'أعضاء المجموعة';
-$string['groupmemberssee'] = 'عاين أعضاء المجموعة';
+$string['groupmemberssee'] = 'عاين اعضاء المجموعة';
 $string['groupmembersselected'] = 'أعضاء مجموعة مختارة';
 $string['groupmode'] = 'وضع مجموعة';
 $string['groupmodeforce'] = 'فرض نمط المجموعات';
@@ -179,10 +179,10 @@ $string['removegroupsmembers'] = 'أستبعد كل الأعضاء من المج
 $string['removeselectedusers'] = 'استبعد المستخدمين المختارين من المجموعة';
 $string['selectfromgroup'] = 'حدِّد أعضاء من المجموعة';
 $string['selectfromgrouping'] = 'حدِّد أعضاء من التجميع';
-$string['selectfromrole'] = 'اختر أعضاء لهم دور';
+$string['selectfromrole'] = 'اختر أعضاء من الدور';
 $string['showgroupsingrouping'] = 'أظهر المجموعات في التجميع';
-$string['showmembersforgroup'] = 'أظهر أعضاء المجموعة';
+$string['showmembersforgroup'] = 'أظهر أعضاء لمجموعة';
 $string['toomanygroups'] = 'عدد المستخدمين غير كافي لملء هذا العدد من المجموعات - هناك فقط {$a} مستخدم في الدور المُختار';
 $string['usercount'] = 'عدد المستخدمين';
-$string['usercounttotal'] = 'عدد المستخدمين: ({$a})';
-$string['usergroupmembership'] = 'انتماءات المستخدمين المُحدَّدين:';
+$string['usercounttotal'] = 'عدد المستخدمين: {$a}';
+$string['usergroupmembership'] = 'انتماءات المستخدمين المحددين:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lpmigrate', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lpmigrate
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['coursemodulesfound'] = 'Ikastaro-jarduerak edo baliabideak aurkitu dira
 $string['coursesfound'] = 'Ikastaroak aurkitu dira';
 $string['coursestartdate'] = 'Ikastaroen hasiera-data';
 $string['coursestartdate_help'] = 'Gaituz gero, zehaztutako data baino lehenagoko hasiera duten ikastaroak ez dira migratuko.';
+$string['disallowedcourses'] = 'Baimendu gabeko ikastaroak';
 $string['disallowedcourses_help'] = 'Aukeratu marko berrira migratuko ez diren ikastaroak.';
 $string['errors'] = 'Erroreak';
 $string['excludethese'] = 'Utzi kanpoan ondokoak';

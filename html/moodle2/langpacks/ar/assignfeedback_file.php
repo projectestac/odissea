@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assignfeedback_file', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   assignfeedback_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['moreusers'] = '{$a} أكثر ...';
 $string['nochanges'] = 'لا تغييرات';
 $string['pluginname'] = 'ملف التغذية الراجعة (الملاحظات)';
 $string['selectedusers'] = 'المُستخدمون المُحدَّدون';
-$string['uploadfiles'] = 'أرسل ملفات التغذية الراجعة';
+$string['uploadfiles'] = 'إرسل ملفات التغذية الراجعة';
 $string['uploadzip'] = 'رفع ملفات التغذية الرجعية (الملاحظات)  المتعددة في ملف مضغوط';
 $string['uploadzipsummary'] = 'ملفات التغذية الراجعة المُستعادة من ملف مضغوط';
 $string['userswithnewfeedback'] = 'المستخدمون الذين تم تحديث التغذية الراجعة لهم : {$a}';

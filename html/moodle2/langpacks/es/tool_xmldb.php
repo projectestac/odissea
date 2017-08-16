@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_xmldb', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,10 +72,10 @@ $string['documentationintro'] = 'Esta documentación es generada automáticament
 $string['down'] = 'Abajo';
 $string['duplicate'] = 'Duplicar';
 $string['duplicatefieldname'] = 'Ya existe otro campo con ese nombre';
-$string['duplicatefieldsused'] = 'Duplicar campos usados';
+$string['duplicatefieldsused'] = 'Campos duplicados usados';
 $string['duplicateindexname'] = 'Duplicar nombre del índice';
 $string['duplicatekeyname'] = 'Ya existe otra clave con ese nombre';
-$string['duplicatetablename'] = 'Existe otra tabla con ese nombre';
+$string['duplicatetablename'] = 'Ya existe otra tabla con ese nombre';
 $string['edit'] = 'Edición';
 $string['edit_field'] = 'Editar campo';
 $string['edit_field_save'] = 'Guardar campo';
@@ -93,7 +93,7 @@ $string['field'] = 'Campo';
 $string['fieldnameempty'] = 'Nombre del campo vacío';
 $string['fields'] = 'Campos';
 $string['fieldsnotintable'] = 'El campo no existe en la tabla';
-$string['fieldsusedinindex'] = 'Este campo es usado como índice';
+$string['fieldsusedinindex'] = 'Este campo se usa como índice.';
 $string['fieldsusedinkey'] = 'Este campo se usa como clave.';
 $string['filemodifiedoutfromeditor'] = 'Atención: El archivo se ha modificado localmente usando el editor de XMLDB. Guardar sobrescribirá los cambios locales.';
 $string['filenotwriteable'] = 'Archivo no escribible';
@@ -105,15 +105,15 @@ $string['generate_all_documentation'] = 'Toda la documentación';
 $string['generate_documentation'] = 'Documentación';
 $string['gotolastused'] = 'Ir al último archivo usado';
 $string['incorrectfieldname'] = 'Nombre incorrecto';
-$string['incorrectindexname'] = 'Nombre de índice incorrecto';
-$string['incorrectkeyname'] = 'Nombre incorrecto de clave';
-$string['incorrecttablename'] = 'Nombre incorrecto de tabla';
+$string['incorrectindexname'] = 'Nombre del índice incorrecto';
+$string['incorrectkeyname'] = 'Nombre de la clave incorrecto';
+$string['incorrecttablename'] = 'Nombre de la tabla incorrecto';
 $string['index'] = 'Índice';
 $string['indexes'] = 'Índices';
-$string['indexnameempty'] = 'El nombre del índice está vacío';
+$string['indexnameempty'] = 'Nombre del índice vacío.';
 $string['integerincorrectlength'] = 'Longitud incorrecta del campo integer';
 $string['key'] = 'Clave';
-$string['keynameempty'] = 'El nombre de la clave no puede estar vacío';
+$string['keynameempty'] = 'El nombre clave no puede estar vacío.';
 $string['keys'] = 'Claves';
 $string['listreservedwords'] = 'Lista de palabras reservadas<br/>(se utiliza para mantener <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> actualizado)';
 $string['load'] = 'Cargar';

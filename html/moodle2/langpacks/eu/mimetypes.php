@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mimetypes', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,17 +30,50 @@ $string['application/msword'] = 'Word dokumentua';
 $string['application/pdf'] = 'PDF dokumentua';
 $string['application/vnd.moodle.backup'] = 'Moodle-ren segurtasun-kopia';
 $string['application/vnd.ms-excel'] = 'Excel kalkulu-orria';
+$string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'Excel 2007 lan-liburua makroak gaituta';
 $string['application/vnd.ms-powerpoint'] = 'Powerpoint aurkezpena';
-$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Powerpoint aukezpena';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Powerpoint diapositiba-aurkezpena';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Excel kalkulu-orria';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Excel txantiloia';
-$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Word dokumentua';
+$string['application/vnd.oasis.opendocument.spreadsheet'] = 'OpenDocument kalkulu-orria';
+$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'OpenDocument kalkulu-orri txantiloia';
+$string['application/vnd.oasis.opendocument.text'] = 'OpenDocument testu dokumentua';
+$string['application/vnd.oasis.opendocument.text-template'] = 'OpenDocument testu txantiloia';
+$string['application/vnd.oasis.opendocument.text-web'] = 'OpenDocument web orri txantiloia';
+$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Powerpoint 2007 aukezpena';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Powerpoint 2007 diapositiba-aurkezpena';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Excel 2007 kalkulu-orria';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Excel 2007 txantiloia';
+$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Word 2007 dokumentua';
+$string['application/xhtml_xml'] = 'XHTML dokumentua';
+$string['application/x-iwork-keynote-sffkey'] = 'iWork Keynote aurkezpena';
+$string['application/x-iwork-numbers-sffnumbers'] = 'iWork Numbers kalkulu-orria';
+$string['application/x-iwork-pages-sffpages'] = 'iWork Pages dokumentua';
+$string['application/x-javascript'] = 'JavaScript iturriburua';
+$string['application/x-mspublisher'] = 'Publisher dokumentua';
+$string['application/x-shockwave-flash'] = 'Flash animazioa';
 $string['archive'] = 'Gorde ({$a->EXT})';
 $string['audio'] = 'Audio-fitxategia ({$a->EXT})';
 $string['default'] = '{$a->mimetype}';
 $string['document/unknown'] = 'Fitxategia';
+$string['group:archive'] = 'Artxibo fitxategiak';
+$string['group:audio'] = 'Audioo-fitxategiak';
+$string['group:document'] = 'Dokumentu fitxategiak';
+$string['group:html_audio'] = 'Nabigatzaileek berez onartzen dituzten audio fitxategiak';
+$string['group:html_track'] = 'HTML pista fitxategia';
+$string['group:html_video'] = 'Nabigatzaileek berez onartzen dituzten bideo-fitxategiak';
+$string['group:image'] = 'Irudi-fitxategiak';
+$string['group:presentation'] = 'Aurkezpen-fitxategiak';
+$string['group:sourcecode'] = 'Iturburu kodea';
+$string['group:spreadsheet'] = 'Kalkulu-orri fitxategiak';
+$string['group:video'] = 'Bideo-fitxategeiak';
+$string['group:web_audio'] = 'Webean erabilitako audio fitxategiak';
+$string['group:web_file'] = 'Web fitxategiak';
+$string['group:web_image'] = 'Webean erabilitako irudi fitxategiak';
+$string['group:web_video'] = 'Webean erabilitako bideo-fitxategiak';
 $string['image'] = 'Irudia ({$a->MIMETYPE2})';
+$string['image/vnd.microsoft.icon'] = 'Windows-eko ikonoa';
+$string['text/css'] = 'Kaskadako estilo-orriak (CSS)';
+$string['text/csv'] = 'Komek banatutako baloreak';
 $string['text/html'] = 'HTML dokumentua';
 $string['text/plain'] = 'Testu-fitxategia';
 $string['text/rtf'] = 'RTF dokumentua';
+$string['text/vtt'] = 'Web Video Text Track';
+$string['video'] = 'Bideo fitxategia ({$a->EXT})';

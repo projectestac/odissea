@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,10 +31,11 @@ $string['configdndresizewidth'] = 'Quando um separador é criado a partir de uma
 $string['dndmedia'] = 'Arrastar e largar ficheiros multimédia';
 $string['dndresizeheight'] = 'Redimensionar altura da imagem';
 $string['dndresizewidth'] = 'Redimensionar largura da imagem';
-$string['dnduploadlabel'] = 'Adicionar uma imagem à página da disciplina';
+$string['dnduploadlabel'] = 'Adicionar conteúdo multimédia à página da disciplina';
 $string['dnduploadlabeltext'] = 'Adicionar um separador à página da disciplina';
 $string['label:addinstance'] = 'Adicionar novo separador';
 $string['labeltext'] = 'Texto do separador';
+$string['label:view'] = 'Ver separador';
 $string['modulename'] = 'Separador';
 $string['modulename_help'] = 'O recurso Separador permite inserir texto e conteúdos multimédia entre as hiperligações para os recursos e atividades que se encontram dentro das secções (tópicos ou semanas) da disciplina. Os separadores são muito versáteis e, quando utilizados de forma correta, podem ajudar a melhorar a aparência de uma disciplina.
 

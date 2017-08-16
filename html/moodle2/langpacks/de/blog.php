@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'Dies ist kein eigener Beitrag';
 $string['entrysaved'] = 'Beitrag wurde gespeichert';
 $string['entrytitle'] = 'Titel';
 $string['eventblogassociationadded'] = 'Blogverknüpfung angelegt';
+$string['eventblogassociationdeleted'] = 'Blogverbindung gelöscht';
 $string['eventblogentriesviewed'] = 'Blogeinträge angezeigt';
+$string['eventblogexternaladded'] = 'Externer Blog verbunden';
+$string['eventblogexternalremoved'] = 'Externer Blog unverbunden';
+$string['eventblogexternalupdated'] = 'Externer Blog aktualisiert';
 $string['evententryadded'] = 'Blogeintrag hinzugefügt';
 $string['evententrydeleted'] = 'Blogeintrag gelöscht';
 $string['evententryupdated'] = 'Beitrag aktualisiert';
+$string['eventexternalblogsviewed'] = 'Extern verbundene Blogs angezeigt';
 $string['externalblogcrontime'] = 'Cronjob für externe Blogs';
 $string['externalblogdeleteconfirm'] = 'Diesen externen Blog abmelden?';
 $string['externalblogdeleted'] = 'Externer Blog ist nicht registriert';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = 'Wiederhergestellt von';
 $string['rssfeed'] = 'RSS Feed für diesen Blog';
 $string['searchterm'] = 'Suche: {$a}';
 $string['settingsupdatederror'] = 'Fehler: Die Blogeinstellungen konnten nicht aktualisiert werden.';
-$string['siteblog'] = 'Website-Blog: {$a}';
 $string['siteblogdisable'] = 'Website-Blogs wurden nicht aktiviert';
 $string['siteblogheading'] = 'Website-Blog';
 $string['siteblogs'] = 'Nach Anmeldung auf der Website sichtbar';

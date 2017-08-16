@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['editservice'] = 'Edit the service: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Enabled';
 $string['enabledocumentation'] = 'Enable developer documentation';
 $string['enabledocumentationdescription'] = 'Detailed web services documentation is available for enabled protocols.';
-$string['enablemobilewsoverview'] = 'Go to {$a->manageservicelink} administration page, check the "{$a->enablemobileservice}" setting and Save. Everything will be setup for you and all site\'s users will be able to use the offical Moodle app. Current status: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Enable protocols';
 $string['enableprotocolsdescription'] = 'At least one protocol should be enabled. For security reasons, only protocols that are to be used should be enabled.';
 $string['enablews'] = 'Enable web services';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'Missing password';
 $string['missingrequiredcapability'] = 'The capability {$a} is required.';
 $string['missingusername'] = 'Missing username';
 $string['missingversionfile'] = 'Coding error: version.php file is missing for the component {$a}';
-$string['mobilewsdisabled'] = 'Disabled';
-$string['mobilewsenabled'] = 'Enabled';
 $string['nameexists'] = 'This name is already in use by another service';
 $string['nocapabilitytouseparameter'] = 'The user does not have the required capability to use the parameter {$a}';
 $string['nofunctions'] = 'This service has no functions.';
@@ -207,6 +204,7 @@ $string['usernameorid_help'] = 'Enter a username or a user id.';
 $string['usernameoridnousererror'] = 'No users were found with this username/user id.';
 $string['usernameoridoccurenceerror'] = 'More than one user was found with this username. Please enter the user id.';
 $string['usernotallowed'] = 'The user is not allowed for this service. First you need to allow this user on the {$a}\'s allowed users administration page.';
+$string['userservices'] = 'User services: {$a}';
 $string['usersettingssaved'] = 'User settings saved';
 $string['validuntil'] = 'Valid until';
 $string['validuntil_help'] = 'If set, the service will be inactivated after this date for this user.';

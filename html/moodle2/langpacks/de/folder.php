@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'Von {$a->name} - {$a->date}';
 $string['contentheader'] = 'Inhalt';
 $string['display'] = 'Verzeichnisinhalt anzeigen';
 $string['display_help'] = 'Wenn der Verzeichnisinhalt auf der Kursseite dargestellt werden soll, erscheint kein Link zu einer neuen Seite. Die Beschreibung wird nur gezeigt, wenn "Bescheibung auf der Kursseite anzeigen" ausgewählt wurde.
@@ -47,6 +48,7 @@ $string['modulename_help'] = 'Wenn Sie eine größere Anzahl von Dateien in Ihre
 
 Laden Sie mehrere Dateien als gepacktes ZIP-Archiv hoch und entpacken Sie sie im Verzeichnis. Auch eine Struktur mit Unterverzeichnissen bleibt beim Übertragen in ein Verzeichnis erhalten.';
 $string['modulenameplural'] = 'Verzeichnisse';
+$string['newfoldercontent'] = 'Neuer Ordnerinhalt';
 $string['noautocompletioninline'] = 'Der automatische Abschluss kann nicht gleichzeitig mit der Anzeige "Auf der Kursseite" gewählt werden';
 $string['page-mod-folder-view'] = 'Verzeichnishauptseite';
 $string['page-mod-folder-x'] = 'Jede Verzeichnisseite';

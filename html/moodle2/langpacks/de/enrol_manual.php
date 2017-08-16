@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['deleteselectedusers'] = 'Ausgewählte Nutzereinschreibungen löschen';
 $string['editselectedusers'] = 'Ausgewählte Nutzereinschreibungen bearbeiten';
 $string['enrolledincourserole'] = 'In \'{$a->course}\' als \'{$a->role}\' eingeschrieben';
 $string['enrolusers'] = 'Nutzer/innen einschreiben';
-$string['expiredaction'] = 'Festlegungen zum Einschreibungszeitraum';
+$string['expiredaction'] = 'Aktion bei Einschreibungsablauf';
 $string['expiredaction_help'] = 'Legen Sie fest was nach dem Ablauf der Einschreibung in einem Kurs erfolgt. Denken Sie daran, dass bei der Austragung des Nutzers aus dem Kurs einige Daten nicht mehr verfügbar sind.';
 $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 

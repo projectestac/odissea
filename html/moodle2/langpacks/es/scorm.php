@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,6 +89,7 @@ $string['compatibilitysettings'] = 'Configuración de compatibilidad';
 $string['completed'] = 'Finalizado';
 $string['completionscorerequired'] = 'Requiere puntuación mínima';
 $string['completionscorerequired_help'] = 'Al habilitar este parámetro se requerirá que el usuario tenga al menos la puntuación mínima registrada para que se marque la actividad SCORM como finalizada, así como cualquier otro requerimiento de Finalización de Actividad.';
+$string['completionstatusallscos'] = 'Requiere que todos los scos devuelvan el estado de finalización';
 $string['completionstatus_completed'] = 'Finalizado';
 $string['completionstatus_passed'] = 'Pasado';
 $string['completionstatusrequired'] = 'Se requiere estado';

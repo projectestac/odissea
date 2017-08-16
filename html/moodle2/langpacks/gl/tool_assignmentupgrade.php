@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['assignmentsperpage'] = 'Tarefas por páxina';
 $string['assignmenttype'] = 'Tipo de tarefa';
 $string['backtoindex'] = 'Volver ao índice';
 $string['batchoperations'] = 'Operacións en lote';
-$string['batchupgrade'] = 'Anovar múltiplas tarefas';
+$string['batchupgrade'] = 'Anovar múltiples tarefas';
 $string['confirmbatchupgrade'] = 'Confirmar anovación en lote de tarefas';
 $string['conversioncomplete'] = 'Tarefa convertida';
 $string['conversionfailed'] = 'A conversión de tarefas non acabou correctamente. O rexistro da anovación foi: <br />{$a}';

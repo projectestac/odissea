@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_meta', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = 'Προσθήκη σε ομάδα';
 $string['meta:config'] = 'Παραμετροποίηση meta enroll περιπτώσεων';
 $string['meta:selectaslinked'] = 'Επιλογή μαθήματος ως meta linked';
+$string['meta:unenrol'] = 'Ακύρωση εγγραφής χρηστών σε αναστολή';
 $string['nosyncroleids'] = 'Ρόλοι που δεν είναι συγχρονισμένοι';
 $string['nosyncroleids_desc'] = 'Από προεπιλογή όλες οι αναθέσεις ρόλων επιπέδου μαθήματος συγχρονίζονται από τα μαθήματα γονείς στα μαθήματα παιδιά. Οι ρόλοι που έχουν επιλεγεί εδώ δεν θα συμπεριληφθούν στη διαδικασία συγχρονισμού. Οι ρόλοι που είναι διαθέσιμοι για συγχρονισμό θα ενημερωθούν στην επόμενη εκτέλεση cron.';
 $string['pluginname'] = 'Σύνδεση με επόμενο μάθημα (meta course)';

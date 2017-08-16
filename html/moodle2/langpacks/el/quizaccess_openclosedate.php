@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quizaccess_openclosedate', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   quizaccess_openclosedate
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'Συγγνώμη, αυτό το κουίζ δεν είναι διαθέσιμο';
+$string['notavailable'] = 'Συγνώμη, αυτό το κουίζ δεν είναι διαθέσιμο';
 $string['quiznotavailable'] = 'Το κουίζ δε θα είναι διαθέσιμο μέχρι: {$a}';

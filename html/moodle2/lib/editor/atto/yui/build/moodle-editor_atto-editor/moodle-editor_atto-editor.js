@@ -69,7 +69,7 @@ Y.extend(Editor, Y.Base, {
      * @property BLOCK_TAGS
      * @type {Array}
      */
-    BLOCK_TAGS : [
+    BLOCK_TAGS: [
         'address',
         'article',
         'aside',
@@ -170,6 +170,8 @@ Y.extend(Editor, Y.Base, {
             return;
         }
 
+        var extraclasses = this.textarea.getAttribute('class');
+
         this._eventHandles = [];
 
         this._wrapper = Y.Node.create('<div class="' + CSS.WRAPPER + '" />');
@@ -178,7 +180,7 @@ Y.extend(Editor, Y.Base, {
                 'role="textbox" ' +
                 'spellcheck="true" ' +
                 'aria-live="off" ' +
-                'class="{{CSS.CONTENT}}" ' +
+                'class="{{CSS.CONTENT}} ' + extraclasses + '" ' +
                 '/>');
         this.editor = Y.Node.create(template({
             elementid: this.get('elementid'),
@@ -500,7 +502,7 @@ var LOGNAME_NOTIFY = 'moodle-editor_atto-editor-notify',
 
 function EditorNotify() {}
 
-EditorNotify.ATTRS= {
+EditorNotify.ATTRS = {
 };
 
 EditorNotify.prototype = {
@@ -638,7 +640,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorNotify]);
 
 function EditorTextArea() {}
 
-EditorTextArea.ATTRS= {
+EditorTextArea.ATTRS = {
 };
 
 EditorTextArea.prototype = {
@@ -690,7 +692,7 @@ EditorTextArea.prototype = {
      * @method updateOriginal
      * @chainable
      */
-    updateOriginal : function() {
+    updateOriginal: function() {
         // Get the previous and current value to compare them.
         var oldValue = this.textarea.get('value'),
             newValue = this.getCleanHTML();
@@ -750,7 +752,7 @@ var SUCCESS_MESSAGE_TIMEOUT = 5000,
 
 function EditorAutosave() {}
 
-EditorAutosave.ATTRS= {
+EditorAutosave.ATTRS = {
     /**
      * Enable/Disable auto save for this instance.
      *
@@ -1265,7 +1267,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorAutosaveIo]);
 
 function EditorClean() {}
 
-EditorClean.ATTRS= {
+EditorClean.ATTRS = {
 };
 
 EditorClean.prototype = {
@@ -1530,9 +1532,9 @@ EditorClean.prototype = {
             // Get all class attributes so we can work on them.
             {regex: /(<[^>]*?class\s*?=\s*?")([^>"]*)(")/gi, replace: function(match, group1, group2, group3) {
                     // Remove MSO classes.
-                    group2 = group2.replace(/(?:^|[\s])[\s]*MSO[_a-zA-Z0-9\-]*/gi,"");
+                    group2 = group2.replace(/(?:^|[\s])[\s]*MSO[_a-zA-Z0-9\-]*/gi, "");
                     // Remove Apple- classes.
-                    group2 = group2.replace(/(?:^|[\s])[\s]*Apple-[_a-zA-Z0-9\-]*/gi,"");
+                    group2 = group2.replace(/(?:^|[\s])[\s]*Apple-[_a-zA-Z0-9\-]*/gi, "");
                     return group1 + group2 + group3;
                 }},
             // Remove OLE_LINK# anchors that may litter the code.
@@ -1667,7 +1669,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorClean]);
 
 function EditorCommand() {}
 
-EditorCommand.ATTRS= {
+EditorCommand.ATTRS = {
 };
 
 EditorCommand.prototype = {
@@ -1749,7 +1751,8 @@ EditorCommand.prototype = {
                 clone.setAttribute('class', node.getAttribute('class'));
             }
             // We use childNodes here because we are interested in both type 1 and 3 child nodes.
-            var children = node.getDOMNode().childNodes, child;
+            var children = node.getDOMNode().childNodes;
+            var child;
             child = children[0];
             while (typeof child !== "undefined") {
                 clone.append(child);
@@ -1843,7 +1846,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorCommand]);
 
 function EditorToolbar() {}
 
-EditorToolbar.ATTRS= {
+EditorToolbar.ATTRS = {
 };
 
 EditorToolbar.prototype = {
@@ -1918,7 +1921,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorToolbar]);
 
 function EditorToolbarNav() {}
 
-EditorToolbarNav.ATTRS= {
+EditorToolbarNav.ATTRS = {
 };
 
 EditorToolbarNav.prototype = {
@@ -2125,7 +2128,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorToolbarNav]);
 
 function EditorSelection() {}
 
-EditorSelection.ATTRS= {
+EditorSelection.ATTRS = {
 };
 
 EditorSelection.prototype = {
@@ -2348,7 +2351,7 @@ EditorSelection.prototype = {
             return false;
         }
 
-        selectednodes.each(function(node){
+        selectednodes.each(function(node) {
             // Check each node, if it doesn't match the tags AND is not within the specified tags then fail this thing.
             if (requireall) {
                 // Check for at least one failure.
@@ -2546,7 +2549,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorSelection]);
 
 function EditorStyling() {}
 
-EditorStyling.ATTRS= {
+EditorStyling.ATTRS = {
 };
 
 EditorStyling.prototype = {
@@ -2623,7 +2626,7 @@ EditorStyling.prototype = {
 
         cssApplier.applyToSelection();
 
-        this.editor.all('.' + classname).each(function (node) {
+        this.editor.all('.' + classname).each(function(node) {
             node.removeClass(classname).setStyles(styles);
         }, this);
 
@@ -2662,7 +2665,7 @@ EditorStyling.prototype = {
         // move the boundary to the table cell.
         // This is because we might have a table in a div, and we select some text in a cell,
         // want to limit the change in style to the table cell, not the entire table (via the outer div).
-        cell = selectionparentnode.ancestor(function (node) {
+        cell = selectionparentnode.ancestor(function(node) {
             var tagname = node.get('tagName');
             if (tagname) {
                 tagname = tagname.toLowerCase();
@@ -2680,7 +2683,7 @@ EditorStyling.prototype = {
         nearestblock = selectionparentnode.ancestor(this.BLOCK_TAGS.join(', '), true);
         if (nearestblock) {
             // Check that the block is contained by the boundary.
-            match = nearestblock.ancestor(function (node) {
+            match = nearestblock.ancestor(function(node) {
                 return node === boundary;
             }, false);
 
@@ -2693,7 +2696,7 @@ EditorStyling.prototype = {
         if (!nearestblock) {
             // There is no block node in the content, wrap the content in a p and use that.
             newcontent = Y.Node.create('<p></p>');
-            boundary.get('childNodes').each(function (child) {
+            boundary.get('childNodes').each(function(child) {
                 newcontent.append(child.remove());
             });
             boundary.append(newcontent);
@@ -2708,7 +2711,7 @@ EditorStyling.prototype = {
             // Copy all attributes.
             replacement.setAttrs(nearestblock.getAttrs());
             // Copy all children.
-            nearestblock.get('childNodes').each(function (child) {
+            nearestblock.get('childNodes').each(function(child) {
                 child.remove();
                 replacement.append(child);
             });
@@ -2764,7 +2767,7 @@ Y.Base.mix(Y.M.editor_atto.Editor, [EditorStyling]);
 
 function EditorFilepicker() {}
 
-EditorFilepicker.ATTRS= {
+EditorFilepicker.ATTRS = {
     /**
      * The options for the filepicker.
      *
@@ -2801,7 +2804,7 @@ EditorFilepicker.prototype = {
      */
     showFilepicker: function(type, callback, context) {
         var self = this;
-        Y.use('core_filepicker', function (Y) {
+        Y.use('core_filepicker', function(Y) {
             var options = Y.clone(self.get('filepickeroptions')[type], true);
             options.formcallback = callback;
             if (context) {

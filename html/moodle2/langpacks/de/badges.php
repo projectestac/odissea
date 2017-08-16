@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -231,10 +231,13 @@ $string['error:backpackemailnotfound'] = 'Die E-Mail \'{$a}\' ist nicht mit eine
 $string['error:backpackloginfailed'] = 'Sie konnten nicht mit einem externen Backpack verbunden werden: {$a}';
 $string['error:backpacknotavailable'] = 'Ihre Website ist nicht über das Internet erreichbar. Die Auszeichnungen, die auf Ihrer Website verliehen werden, können nicht von externen Backpack-Diensten überprüft werden.';
 $string['error:backpackproblem'] = 'Die Verbindung zu Ihrem Backpack-Provider ist fehlgeschlagen. Versuchen Sie es später noch einmal.';
+$string['error:badgeawardnotfound'] = 'Die Auszeichnungn kann nicht bestätigt werden. Sie wurde evtl. zurückgezogen.';
+$string['error:badgenotfound'] = 'Auszeichnung nicht gefunden';
 $string['error:badjson'] = 'Der Verbindungsversuch hat ungültige Daten geliefert';
 $string['error:cannotact'] = 'Die Auszeichnung kann nicht aktiviert werden.';
 $string['error:cannotawardbadge'] = 'Die Auszeichnung kann nicht an Nutzer/innen verliehen werden.';
 $string['error:cannotdeletecriterion'] = 'Das Kriterium kann nicht gelöscht werden.';
+$string['error:cannotrevokebadge'] = 'Das Badge kann dem Nutzer nicht entzogen werden.';
 $string['error:clone'] = 'Die Auszeichnung kann nicht dupliziert werden.';
 $string['error:connectionunknownreason'] = 'Die Verbindung ist fehlgeschlagen, aber es wurde kein Grund angegeben.';
 $string['error:duplicatename'] = 'Eine Auszeichnung mit diesem Namen existiert bereits.';
@@ -262,7 +265,20 @@ $string['error:requesterror'] = 'Die Verbindung ist fehlgeschlagen. (Fehlercode 
 $string['error:requesttimeout'] = 'Die Verbindung ist fehlgeschlagen (Timeout)';
 $string['error:save'] = 'Die Auszeichnung kann nicht gesichert werden.';
 $string['error:userdeleted'] = '{$a->user} (Dieses Nutzerkonto wurde in {$a->site} gelöscht)';
+$string['eventbadgearchived'] = 'Auszeichnung archiviert';
 $string['eventbadgeawarded'] = 'Auszeichnung verliehen';
+$string['eventbadgecreated'] = 'Auszeichnung angelegt';
+$string['eventbadgecriteriacreated'] = 'Kriterien für Auszeichnung angelegt';
+$string['eventbadgecriteriadeleted'] = 'Kriterien für Auszeichnung gelöscht';
+$string['eventbadgecriteriaupdated'] = 'Kriterien für Auszeichnung aktualisiert';
+$string['eventbadgedeleted'] = 'Auszeichnung gelöscht';
+$string['eventbadgedisabled'] = 'Auszeichnung deaktiviert';
+$string['eventbadgeduplicated'] = 'Auszeichnung dupliziert';
+$string['eventbadgeenabled'] = 'Auszeichnung aktiviert';
+$string['eventbadgelistingviewed'] = 'Auszeichnungsliste angezeigt';
+$string['eventbadgerevoked'] = 'Auszeichnung zurückgezogen';
+$string['eventbadgeupdated'] = 'Auszeichnung aktualisiert';
+$string['eventbadgeviewed'] = 'Auszeichnung angezeigt';
 $string['evidence'] = 'Evidenz';
 $string['existingrecipients'] = 'Vorhandene Empfänger/innen';
 $string['expired'] = 'Abgelaufen';
@@ -364,6 +380,7 @@ $string['reviewconfirm'] = '<p> Hiermit machen Sie Ihre Auszeichnung für Nutzer
 <p>Nachdem die Auszeichnung vergeben wurde, werden einige Einstellungen wie z.B. die Kriterien für Veränderungen oder die Gültigkeitsdauer <strong>gesperrt </strong>.</p>
 
 <p>Wollen Sie die Auszeichnung \'{$a}\' nun aktivieren?</p>';
+$string['revoke'] = 'Auszeichnung zurückziehen';
 $string['save'] = 'Speichern';
 $string['searchname'] = 'Nach Name suchen';
 $string['selectaward'] = 'Wählen Sie die Rolle, die diese Auszeichnung verleihen darf:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['bigfile'] = 'Fichero grande {$a}';
 $string['coursesize_0'] = 'XS (~10KB; creado en ~1 segundo)';
 $string['coursesize_1'] = 'S (~10MB; creado en ~30 segundos)';
+$string['coursesize_2'] = 'M (~100MB; creado en ~2 minutos)';
+$string['coursesize_3'] = 'L (~1GB; creado en ~30 minutos)';
+$string['coursesize_4'] = 'XL (~10GB; creado en ~2 horas)';
+$string['coursesize_5'] = 'XXL (~20GB; creado en ~4 horas)';
 $string['coursewithoutusers'] = 'El curso seleccionado no tiene usuarios';
 $string['createcourse'] = 'Crear curso';
 $string['creating'] = 'Creando curso';

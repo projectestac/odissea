@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,18 +30,20 @@ $string['allowmultiple'] = '2つ以上の選択を許可する';
 $string['allowupdate'] = '投票内容の更新を許可する';
 $string['answered'] = '投票済み';
 $string['atleastoneoption'] = 'あなたは少なくとも1つの考えられる答えを提供する必要があります。';
+$string['calendarend'] = '投票 {$a} 終了';
+$string['calendarstart'] = '投票 {$a} 開始';
 $string['cannotsubmit'] = '申し訳ございません、あなたの投票送信時に問題が発生しました。再度お試しください。';
 $string['choice'] = '選択肢';
 $string['choiceactivityname'] = '投票: {$a}';
 $string['choice:addinstance'] = '新しい投票を追加する';
 $string['choice:choose'] = '投票を記録する';
-$string['choiceclose'] = '終了日時';
+$string['choiceclose'] = '回答終了日時';
 $string['choicecloseson'] = '投票は {$a} に終了します。';
-$string['choice:deleteresponses'] = '投票結果を削除する';
+$string['choice:deleteresponses'] = '投票結果を修正および削除する';
 $string['choice:downloadresponses'] = '投票結果をダウンロードする';
 $string['choicefull'] = 'この投票は投票可能回数の上限に達しているため投票できません。';
 $string['choicename'] = '投票名';
-$string['choiceopen'] = '開始日時';
+$string['choiceopen'] = '回答開始日時';
 $string['choiceoptions'] = '投票オプション';
 $string['choiceoptions_help'] = 'ここであなたは参加者が選択しなければならないオプションを指定します。
 
@@ -49,15 +51,18 @@ $string['choiceoptions_help'] = 'ここであなたは参加者が選択しな�
 $string['choice:readresponses'] = '投票結果を表示する';
 $string['choicesaved'] = 'あなたの投票が保存されました。';
 $string['choicetext'] = '説明文';
+$string['choice:view'] = '投票活動を表示する';
 $string['chooseaction'] = '操作を選択する ...';
+$string['chooseoption'] = '選択: {$a}';
 $string['closebeforeopen'] = 'あなたは開始日時の前に終了日時を指定しました。';
 $string['completionsubmit'] = 'ユーザが選択した場合、完了として表示する';
 $string['description'] = '説明';
 $string['displayhorizontal'] = '水平に表示する';
 $string['displaymode'] = 'オプション表示モード';
 $string['displayvertical'] = '垂直に表示する';
-$string['eventanswercreated'] = '投票が作成されました。';
+$string['eventanswercreated'] = '投票回答が追加されました。';
 $string['eventanswerdeleted'] = '投票の回答が削除されました。';
+$string['eventanswersubmitted'] = '投票が作成されました。';
 $string['eventanswerupdated'] = '投票が更新されました。';
 $string['eventreportdownloaded'] = '投票レポートがダウンロードされました。';
 $string['eventreportviewed'] = '投票レポートが閲覧されました。';
@@ -122,7 +127,6 @@ $string['skipresultgraph'] = '結果グラフをスキップする';
 $string['spaceleft'] = '件 (投票可能数)';
 $string['spacesleft'] = '件 (投票可能数)';
 $string['taken'] = '投票済み';
-$string['timerestrict'] = '投票期間を制限する';
 $string['userchoosethisoption'] = 'このオプションを選択したユーザ';
 $string['viewallresponses'] = '{$a} 件の投票結果を表示する';
 $string['withselected'] = '選択したものを';

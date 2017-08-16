@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,9 +45,9 @@ $string['deleteblockcheck'] = 'Är du säker att du vill radera denna block med 
 $string['deleteblockwarning'] = '<p> Du håller på att radera ett block som finns någon annanstans. </p><p> Original blocket plats: {$a->location} <br /> Visning på sidtyper: {$a->pagetype} </p><p> Är du säker på att du vill fortsätta? </p>';
 $string['deletecheck'] = 'Ta bort {$a} block?';
 $string['dockblock'] = 'Docka {$a} blocket';
-$string['hideblock'] = 'Dölj {$a} block';
-$string['hidedockpanel'] = 'Dölj dockpanelen';
-$string['hidepanel'] = 'Dölj panel';
+$string['hideblock'] = 'Göm {$a} block';
+$string['hidedockpanel'] = 'Göm dockpanelen';
+$string['hidepanel'] = 'Göm panel';
 $string['moveblock'] = 'Flytta {$a} block';
 $string['moveblockafter'] = 'Flytta blocket efter {$a} blocket';
 $string['moveblockbefore'] = 'Flytta blocket framför {$a} blocket';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'editor_tinymce', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,7 +113,7 @@ $string['advanced:hr_desc'] = 'Infoga horisontell skiljelinje';
 $string['advanced:image_delta_height'] = '';
 $string['advanced:image_delta_width'] = '';
 $string['advanced:image_desc'] = 'Infoga/redigera bild';
-$string['advanced:image_props_desc'] = 'Bildegenskaper';
+$string['advanced:image_props_desc'] = 'Bildinställningar';
 $string['advanced:indent_desc'] = 'Indrag';
 $string['advanced:italic_desc'] = 'Kursiv (Ctrl+I)';
 $string['advanced:justifycenter_desc'] = 'Centrera';

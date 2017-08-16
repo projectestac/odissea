@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,18 +30,20 @@ $string['allowmultiple'] = 'Permettre le choix de plusieurs réponses';
 $string['allowupdate'] = 'Permettre la modification du choix';
 $string['answered'] = 'Répondu';
 $string['atleastoneoption'] = 'Vous devez fournir au moins une proposition de réponse.';
+$string['calendarend'] = 'Le sondage {$a} se termine';
+$string['calendarstart'] = 'Le sondage {$a} s\'ouvre';
 $string['cannotsubmit'] = 'Un problème est survenu lors de l\'envoi de votre choix.';
 $string['choice'] = 'Proposition';
 $string['choiceactivityname'] = 'Sondage : {$a}';
 $string['choice:addinstance'] = 'Ajouter un sondage';
 $string['choice:choose'] = 'Répondre aux sondages';
-$string['choiceclose'] = 'Jusqu\'au';
+$string['choiceclose'] = 'Permettre les réponses jusqu\'au';
 $string['choicecloseson'] = 'Le sondage se termine le {$a}';
-$string['choice:deleteresponses'] = 'Supprimer les réponses';
+$string['choice:deleteresponses'] = 'Modifier et supprimer les réponses';
 $string['choice:downloadresponses'] = 'Télécharger les réponses';
 $string['choicefull'] = 'Ce sondage est complet et n\'a plus de place disponible.';
 $string['choicename'] = 'Nom du sondage';
-$string['choiceopen'] = 'Ouvert le';
+$string['choiceopen'] = 'Permettre les réponses dès le';
 $string['choiceoptions'] = 'Options du sondage';
 $string['choiceoptions_help'] = 'Vous indiquez ici les réponses possibles parmi lesquelles les participants auront à choisir.
 
@@ -49,15 +51,18 @@ Les champs non remplis ne seront pas affichés. Si vous désirez plus d\'options
 $string['choice:readresponses'] = 'Consulter les réponses';
 $string['choicesaved'] = 'Votre choix a été enregistré';
 $string['choicetext'] = 'Texte de la question';
+$string['choice:view'] = 'Consulter l\'activité sondage';
 $string['chooseaction'] = 'Choisir une action...';
+$string['chooseoption'] = 'Choisir : {$a}';
 $string['closebeforeopen'] = 'La date de fermeture indiquée est antérieure à la date d\'ouverture.';
 $string['completionsubmit'] = 'Afficher comme terminé quand l\'utilisateur a rempli le sondage';
 $string['description'] = 'Description';
 $string['displayhorizontal'] = 'Afficher horizontalement';
 $string['displaymode'] = 'Mode d\'affichage des options';
 $string['displayvertical'] = 'Afficher verticalement';
-$string['eventanswercreated'] = 'Choix effectué';
+$string['eventanswercreated'] = 'Réponse possible ajoutée';
 $string['eventanswerdeleted'] = 'Réponse à un sondage supprimée';
+$string['eventanswersubmitted'] = 'Choix effectué';
 $string['eventanswerupdated'] = 'Choix modifié';
 $string['eventreportdownloaded'] = 'Rapport de sondage téléchargé';
 $string['eventreportviewed'] = 'Rapport de sondage consulté';
@@ -122,7 +127,6 @@ $string['skipresultgraph'] = 'Ne pas montrer le graphique des résultats';
 $string['spaceleft'] = 'place disponible';
 $string['spacesleft'] = 'places disponibles';
 $string['taken'] = 'Effectué';
-$string['timerestrict'] = 'Sondage limité dans le temps';
 $string['userchoosethisoption'] = 'Les utilisateurs ont choisi cette option';
 $string['viewallresponses'] = 'Voir les {$a} réponses';
 $string['withselected'] = 'Avec la sélection';

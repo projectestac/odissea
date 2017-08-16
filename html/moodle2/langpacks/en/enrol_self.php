@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['enrolperiod_desc'] = 'Default length of time that the enrolment is vali
 $string['enrolperiod_help'] = 'Length of time that the enrolment is valid, starting with the moment the user enrols themselves. If disabled, the enrolment duration will be unlimited.';
 $string['enrolstartdate'] = 'Start date';
 $string['enrolstartdate_help'] = 'If enabled, users can enrol themselves from this date onward only.';
-$string['expiredaction'] = 'Enrolment expiration action';
+$string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['expirymessageenrolledbody'] = 'Dear {$a->user},
 
@@ -101,7 +101,7 @@ $string['self:manage'] = 'Manage enrolled users';
 $string['self:unenrol'] = 'Unenrol users from course';
 $string['self:unenrolself'] = 'Unenrol self from the course';
 $string['sendcoursewelcomemessage'] = 'Send course welcome message';
-$string['sendcoursewelcomemessage_help'] = 'If enabled, users receive a welcome message via email when they self-enrol in a course.';
+$string['sendcoursewelcomemessage_help'] = 'When a user self enrols in the course, they may be sent a welcome message email. If sent from the course contact (by default the teacher), and more than one user has this role, the email is sent from the first user to be assigned the role.';
 $string['showhint'] = 'Show hint';
 $string['showhint_desc'] = 'Show first letter of the guest access key.';
 $string['status'] = 'Allow existing enrolments';

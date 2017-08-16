@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'Bekijk chat logs';
 $string['chatreport'] = 'Chat-sessies';
 $string['chat:talk'] = 'Praat in een chat';
 $string['chattime'] = 'Volgende chattijd';
+$string['chat:view'] = 'Bekijk chat-activiteit';
 $string['compact'] = 'Compact';
 $string['composemessage'] = 'Maak een bericht';
 $string['configmethod'] = 'De ajax chatmethode geeft een ajaxgebaseerde chatinterface die regelmatig de server contacteert voor updates. De gewone chatmethode laat de clients regelmatig contact opnemen met de server voor updates. Deze methode vraagt geen configuratie en werkt op alle servers, maar kan een zware belasting op de server veroorzaken wanneer er veel chatters tegelijk online zijn. Om een serverdaemon te kunnen gebruiken heb je  shell-toegang tot Unix nodig, maar je krijgt er een snelle, schaalbare chatomgeving mee.';
@@ -133,7 +134,7 @@ $string['serverip'] = 'Server IP';
 $string['servermax'] = 'Maximale aantal gebruikers';
 $string['serverport'] = 'Serverpoort';
 $string['sessions'] = 'Chatsessies';
-$string['sessionstart'] = 'Chatsessie zal starten binnen: {$a}';
+$string['sessionstart'] = 'De volgende chatsessie zal beginnen op {$a->date}, ({$a->fromnow} vanaf nu)';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Iedereen kan voorbije chatsessies bekijken';
 $string['studentseereports_help'] = 'Indien ingesteld op nee, dan kunnen enkel de gebruikers met de mogelijkheid mod/chat:readlog de chat-logs zien';

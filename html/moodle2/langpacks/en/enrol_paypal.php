@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_paypal', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['enrolperiod_desc'] = 'Default length of time that the enrolment is vali
 $string['enrolperiod_help'] = 'Length of time that the enrolment is valid, starting with the moment the user is enrolled. If disabled, the enrolment duration will be unlimited.';
 $string['enrolstartdate'] = 'Start date';
 $string['enrolstartdate_help'] = 'If enabled, users can be enrolled from this date onward only.';
-$string['expiredaction'] = 'Enrolment expiration action';
+$string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['mailadmins'] = 'Notify admin';
 $string['mailstudents'] = 'Notify students';

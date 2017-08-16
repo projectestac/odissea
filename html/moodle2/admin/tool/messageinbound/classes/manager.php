@@ -918,7 +918,7 @@ class manager {
         $addressmanager->set_handler('\tool_messageinbound\message\inbound\invalid_recipient_handler');
         $addressmanager->set_data($record->id);
 
-        $eventdata = new \stdClass();
+        $eventdata = new \core\message\message();
         $eventdata->component           = 'tool_messageinbound';
         $eventdata->name                = 'invalidrecipienthandler';
 
@@ -928,7 +928,8 @@ class manager {
         $userfrom->customheaders[] = 'In-Reply-To: ' . $messageid;
 
         // The message will be sent from the intended user.
-        $eventdata->userfrom            = \core_user::get_support_user();
+        $eventdata->courseid            = SITEID;
+        $eventdata->userfrom            = \core_user::get_noreply_user();
         $eventdata->userto              = $USER;
         $eventdata->subject             = $this->get_reply_subject($this->currentmessagedata->envelope->subject);
         $eventdata->fullmessage         = get_string('invalidrecipientdescription', 'tool_messageinbound', $this->currentmessagedata);
@@ -968,7 +969,8 @@ class manager {
         $messagedata->subject = $this->currentmessagedata->envelope->subject;
         $messagedata->error = $error;
 
-        $eventdata = new \stdClass();
+        $eventdata = new \core\message\message();
+        $eventdata->courseid            = SITEID;
         $eventdata->component           = 'tool_messageinbound';
         $eventdata->name                = 'messageprocessingerror';
         $eventdata->userfrom            = $userfrom;
@@ -1010,7 +1012,7 @@ class manager {
         $messageparams = new \stdClass();
         $messageparams->html    = $message->html;
         $messageparams->plain   = $message->plain;
-        $messagepreferencesurl = new \moodle_url("/message/edit.php", array('id' => $USER->id));
+        $messagepreferencesurl = new \moodle_url("/message/notificationpreferences.php", array('id' => $USER->id));
         $messageparams->messagepreferencesurl = $messagepreferencesurl->out();
         $htmlmessage = get_string('messageprocessingsuccesshtml', 'tool_messageinbound', $messageparams);
         $plainmessage = get_string('messageprocessingsuccess', 'tool_messageinbound', $messageparams);
@@ -1027,7 +1029,8 @@ class manager {
         $messagedata = new \stdClass();
         $messagedata->subject = $this->currentmessagedata->envelope->subject;
 
-        $eventdata = new \stdClass();
+        $eventdata = new \core\message\message();
+        $eventdata->courseid            = SITEID;
         $eventdata->component           = 'tool_messageinbound';
         $eventdata->name                = 'messageprocessingsuccess';
         $eventdata->userfrom            = $userfrom;

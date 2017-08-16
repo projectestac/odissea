@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['dnduploadlabel'] = 'Add media to course page';
 $string['dnduploadlabeltext'] = 'Add a label to the course page';
 $string['label:addinstance'] = 'Add a new label';
 $string['labeltext'] = 'Label text';
+$string['label:view'] = 'View label';
 $string['modulename'] = 'Label';
 $string['modulename_help'] = 'The label module enables text and multimedia to be inserted into the course page in between links to other resources and activities. Labels are very versatile and can help to improve the appearance of a course if used thoughtfully.
 

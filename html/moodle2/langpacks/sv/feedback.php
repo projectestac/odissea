@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,8 +107,8 @@ Du kan se den här:
 $string['emailteachermailhtml'] = '{$a->username} har fullgjort en Egen enkät enligt: <i>\'{$a->feedback}\'</i><br /><br />
 Du kan se den: <a href="{$a->url}">här</a>.';
 $string['entries_saved'] = 'Inläggen har sparats';
-$string['eventresponsedeleted'] = 'Svar borttaget';
-$string['eventresponsesubmitted'] = 'Svar inlämnat';
+$string['eventresponsedeleted'] = 'Svar borttagen';
+$string['eventresponsesubmitted'] = 'Svar inlämnad';
 $string['export_questions'] = 'Exportera frågor';
 $string['export_to_excel'] = 'Exportera till Excel';
 $string['feedback:addinstance'] = 'Lägg till ny enkät';

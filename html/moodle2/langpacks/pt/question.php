@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'question', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['attemptoptions'] = 'Opções das tentativas';
 $string['availableq'] = 'Disponibilidade';
 $string['badbase'] = 'Má base antes de  **: {$a}**';
 $string['behaviour'] = 'Comportamento';
-$string['behaviourbeingused'] = 'comportamento em uso:  {$a}';
+$string['behaviourbeingused'] = 'Comportamento em uso: {$a}';
 $string['broken'] = 'É uma "hiperligação quebrada", aponta para um ficheiro que não existe.';
 $string['byandon'] = 'por <em>{$a->user}</em> em <em>{$a->time}</em>';
 $string['cannotcopybackup'] = 'Não foi possível copiar a cópia de segurança';

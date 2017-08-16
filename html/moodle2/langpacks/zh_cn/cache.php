@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,9 +107,6 @@ $string['localstorenotification'] = '这个缓存可以安全地映射一个存�
 $string['lockdefault'] = '默认';
 $string['locking'] = '锁定中';
 $string['locking_help'] = '锁定是一种限制进程在同一时间访问缓存数据，以保证数据不会被覆盖的机制。这种锁定方法决定了锁如何被获取及检查。';
-$string['lockingmeans'] = '锁定机制';
-$string['lockmethod'] = '锁定方法';
-$string['lockmethod_help'] = '当为锁定所要求存储时，所用的方法。';
 $string['lockname'] = '名称';
 $string['locknamedesc'] = '名称必须是唯一的，且只能包含 a-zA-Z_。';
 $string['locknamenotunique'] = '你选择的名称不是唯一的，请选择一个唯一的名称。';

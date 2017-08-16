@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,10 +31,11 @@ $string['configdndresizewidth'] = 'Wanneer een label gemaakt wordt van een naar 
 $string['dndmedia'] = 'Media slepen en neerzetten';
 $string['dndresizeheight'] = 'Herschalen hoogte bij slepen en neerzetten';
 $string['dndresizewidth'] = 'Herschalen breedte bij slepen en neerzetten';
-$string['dnduploadlabel'] = 'Afbeelding toevoegen aan de cursuspagina';
+$string['dnduploadlabel'] = 'Media toevoegen aan de cursuspagina';
 $string['dnduploadlabeltext'] = 'Voeg tekst toe aan de cursuspagina';
 $string['label:addinstance'] = 'Voeg een nieuw label toe';
 $string['labeltext'] = 'Label tekst';
+$string['label:view'] = 'Bekijk label';
 $string['modulename'] = 'Label';
 $string['modulename_help'] = 'Een label maakt het mogelijk om tekst en afbeeldingen in te voegen tussen de activiteitenlinks op de cursuspagina. Labels zijn heel flexibel en kunnen helpen een cursus er aantrekkelijk te laten uitzien als je ze goed gebruikt.
 

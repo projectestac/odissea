@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mediaplugin', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mediaplugin', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mediaplugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = 'Audioaren esteka';
 $string['fallbackvideo'] = 'Bideoaren esteka';
 $string['filtername'] = 'Multimedia-pluginak';
+$string['linktomedia'] = 'Multimedia gehigarrien iragazkiak testuak multimedia batera doazen estekak bilatu eta baliabidea erreproduzi dezakeen multimedia erreproduzitzailearen ordezkatzen ditu. <video> eta <audio> etiketak ere bideo eta audio erreproduzitzaileekin ordezkatzen ditu.
+
+<a href="{$a}">Kudeatu erreproduzitzaileak</a>';

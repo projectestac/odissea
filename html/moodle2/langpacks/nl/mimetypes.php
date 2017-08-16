@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mimetypes', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,17 +30,50 @@ $string['application/msword'] = 'Word-document';
 $string['application/pdf'] = 'PDF-document';
 $string['application/vnd.moodle.backup'] = 'Moodle-back-up';
 $string['application/vnd.ms-excel'] = 'Excell rekenblad';
+$string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'Excel 2007 werkboek met macro\'s ingeschakeld';
 $string['application/vnd.ms-powerpoint'] = 'Powerpoint presentatie';
-$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Powerpoint presentatie';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Powerpoint slideshow';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Excel rekenblad';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Excel sjabloon';
-$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Word document';
+$string['application/vnd.oasis.opendocument.spreadsheet'] = 'OpenDocument rekenblad';
+$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'OpenDocument rekenbladsjabloon';
+$string['application/vnd.oasis.opendocument.text'] = 'OpenDocument tekstdocument';
+$string['application/vnd.oasis.opendocument.text-template'] = 'OpenDocument tekstsjabloon';
+$string['application/vnd.oasis.opendocument.text-web'] = 'OpenDocument webpaginasjabloon';
+$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Powerpoint 2007 presentatie';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Powerpoint 2007 slideshow';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Excel 2007 rekenblad';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Excel 2007 sjabloon';
+$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Word 2007 document';
+$string['application/xhtml_xml'] = 'XHTML-document';
+$string['application/x-iwork-keynote-sffkey'] = 'Iwork Keynote-presentatie';
+$string['application/x-iwork-numbers-sffnumbers'] = 'iWork Numbers-rekenblad';
+$string['application/x-iwork-pages-sffpages'] = 'iWorks Pages-document';
+$string['application/x-javascript'] = 'JavaScript-bron';
+$string['application/x-mspublisher'] = 'Publisher-document';
+$string['application/x-shockwave-flash'] = 'Flash-animatie';
 $string['archive'] = 'Archief ({$a->EXT})';
 $string['audio'] = 'Audiobestand ({$a->EXT})';
 $string['default'] = '{$a->mimetype}';
 $string['document/unknown'] = 'Bestand';
+$string['group:archive'] = 'Archiefbestanden';
+$string['group:audio'] = 'Audiobestanden';
+$string['group:document'] = 'Documentbestanden';
+$string['group:html_audio'] = 'Door browsers ondersteunde audiobestanden';
+$string['group:html_track'] = 'HTML track-bestanden';
+$string['group:html_video'] = 'Door browsers ondersteunde videobestanden';
+$string['group:image'] = 'Afbeeldingsbestanden';
+$string['group:presentation'] = 'Presentatiebestanden';
+$string['group:sourcecode'] = 'Broncode';
+$string['group:spreadsheet'] = 'Rekenbladbestanden';
+$string['group:video'] = 'Videobestanden';
+$string['group:web_audio'] = 'Audiobestanden gebruikt op het web';
+$string['group:web_file'] = 'Webbestanden';
+$string['group:web_image'] = 'Afbeeldingsbestanden gebruikt op het web';
+$string['group:web_video'] = 'Videobestanden gebruikt op het web';
 $string['image'] = 'Afbeelding ({$a->MIMETYPE2})';
+$string['image/vnd.microsoft.icon'] = 'Windowsicoon';
+$string['text/css'] = 'Cascading Style-Sheet';
+$string['text/csv'] = 'Kommagescheiden waarden';
 $string['text/html'] = 'HTML-document';
 $string['text/plain'] = 'Tekstbestand';
 $string['text/rtf'] = 'RTF-document';
+$string['text/vtt'] = 'Web video tekstspoor';
+$string['video'] = 'Videobestand ({$a->EXT})';

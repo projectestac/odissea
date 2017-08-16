@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'format_social', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   format_social
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

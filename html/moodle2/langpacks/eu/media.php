@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'media', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,27 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['flashanimation'] = 'Flash animazioa';
-$string['flashanimation_desc'] = '*.swf luzapena duten fitxategiak. Segurtasun-arazoak direla-eta, iragazki hau konfidantzazko testuetan baino ez da erabiltzen.';
-$string['flashvideo'] = 'Flash bideoa';
-$string['flashvideo_desc'] = '*.flv eta *.f4v luzapena duten fitxategiak. Bideoak ikusteko Flowplayer erabili behar da eta Flash plugina eta javascript behar dituzte.';
-$string['html5audio'] = 'HTML 5 audioa';
-$string['html5audio_desc'] = '*.ogg, *.aac eta *.mp3 luzapenak dituzten audio-fitxategiak. Batez ere gailu mugikorretan erabiltzen dira. (Formatua nabigatzailearen arabera onartzen da.)';
-$string['html5video'] = 'HTML 5 bideoa';
-$string['html5video_desc'] = '*.webm, *.m4v, *.ogv, *.mp4 eta beste luzapen batzuk dituzten bideo-fitxategiak. Batez ere gailu mugikorretan erabiltzen dira. (Formatua nabigatzailearen arabera onartzen da.)';
+$string['audioextensions'] = 'Audioa: {$a}';
+$string['defaultheight'] = 'Berezko altuera';
+$string['defaultwidth'] = 'Berezko zabalera';
+$string['extensions'] = 'Luzapenak: {$a}';
 $string['legacyheading'] = 'Heredatutako erreproduzitzaileak';
 $string['legacyheading_desc'] = 'Erreproduzitzaile hauek ez dira sarritan erabiltzen internet-en eta oro, har nabigatzailean instalatuta egoten ez diren pluginak behar dituzte.';
-$string['legacyquicktime'] = 'QuickTime erreproduzitzailea';
-$string['legacyquicktime_desc'] = '*.mov, *.mp4, *.m4a eta *.mpg. luzapenak dituzten fitxategiak. QuickTime erreproduzitzailea edo kodekak behar dituzte.';
-$string['legacyreal'] = 'Media player erreproduzitzailea';
-$string['legacyreal_desc'] = '*.rm, *.ra, *.ram, *.rp eta *.rv luzapenak dituzten fitxategiak. RealPlayer behar dute.';
-$string['legacywmp'] = 'Windows media erreproduzitzailea';
-$string['legacywmp_desc'] = '*.avi eta *.wmv luzapena duten fitxategiak. Internet Explorer-ekin guztiz bateragarriak dira Windows-en ; beharbada beste nabigatzaile edo sistema eragiletan ez dira ondo ibiliko.';
+$string['managemediaplayers'] = 'Kudeatu erreproduzitzaileak';
 $string['mediaformats'] = 'Eskura dauden erreproduzitzaileak';
 $string['mediasettings'] = 'Enbotatu media';
-$string['mp3audio'] = 'MP3 audioa';
-$string['mp3audio_desc'] = '*.mp3 luzapena duten fitxategiak. Flowplayer erabili behar da eta Flash plugina behar du.';
-$string['sitevimeo'] = 'Vimeo';
-$string['sitevimeo_desc'] = 'Vimeo, bideoak partekatzeko gunea.';
-$string['siteyoutube'] = 'YouTube';
-$string['siteyoutube_desc'] = 'YouTube bideoak partekatzeko gunea, bideoa eta erreprodukzio-zerrenden estekak onartzen dira.';
+$string['supports'] = 'Euskarriak';
+$string['videoextensions'] = 'Bideoa: {$a}';

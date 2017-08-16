@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -187,7 +187,6 @@ $string['original'] = 'Оригинал';
 $string['overwrite'] = 'Перезаписать';
 $string['overwriteall'] = 'Заменить все';
 $string['path'] = 'Путь:';
-$string['personalrepositories'] = 'Доступные экземпляры хранилищ файлов';
 $string['plugin'] = 'Плагины хранилищ файлов';
 $string['pluginerror'] = 'Ошибка плагина хранилища файлов';
 $string['pluginname'] = 'Имя плагина хранилища';

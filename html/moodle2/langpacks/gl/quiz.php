@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,17 +29,16 @@ $string['accessnoticesheader'] = 'Pode facer unha vista previa desta proba mais 
 $string['action'] = 'Acción';
 $string['activityoverview'] = 'Ten probas pendentes';
 $string['adaptive'] = 'Modo adaptativo';
-$string['adaptive_help'] = 'No caso e estar activo, permítense respostas múltiplas como tentativa de resposta a unha cuestión da proba. Así, por exemplo, se se marca unha resposta como incorrecta, permíteselle ao alumno probar outra vez inmediatamente. No entanto, dependendo da configuración de «Penalizacións aplicadas», sufrirá a penalización de falta por cada tentativa errada.';
+$string['adaptive_help'] = 'No caso e estar activo, permítense respostas múltiples como tentativa de resposta a unha cuestión da proba. Así, por exemplo, se se marca unha resposta como incorrecta, permíteselle ao alumno probar outra vez inmediatamente. No entanto, dependendo da configuración de «Penalizacións aplicadas», sufrirá a penalización de falta por cada tentativa errada.';
 $string['add'] = 'Engadir';
 $string['addaquestion'] = 'Engadir unha pregunta ...';
 $string['addarandomquestion'] = 'Engadir unha pregunta aleatoria ...';
-$string['addarandomquestion_help'] = 'Ao engadir unha pregunta aleatoria, prodúcese unha pregunta aleatoriamente escollida da categoría introducida na proba. Isto significa que cada alumno obterá unha selección diferente de preguntas e cando unha proba permite múltiplos intentos, cadanseu intento probablemente conterá unha nova selección de preguntas.';
+$string['addarandomquestion_help'] = 'Ao engadir unha pregunta aleatoria, prodúcese unha pregunta aleatoriamente escollida da categoría introducida na proba. Isto significa que cada alumno obterá unha selección diferente de preguntas e cando unha proba permite múltiples intentos, cadanseu intento probablemente conterá unha nova selección de preguntas.';
 $string['addarandomselectedquestion'] = 'Engadir unha pregunta seleccionada ao chou ...';
 $string['addasection'] = 'unha nova cabeceira de sección';
 $string['adddescriptionlabel'] = 'Engadir unha descrición/etiqueta';
 $string['addingquestion'] = 'Engadir pregunta';
-$string['addingquestions'] = '<p>Este lado da páxina é onde se xestiona a  súa base de datos de preguntas. As preguntas recóllense en categorías para axudarlle a mantelas organizadas e poden utilizarse en calquera proba no seu curso ou mesmo noutros cursos cando vostede se decante por as \'publicar\'. </p>
-<p>Despois de seleccionar ou crear unha categoría de preguntas poderá crear ou editar preguntas. Pode seleccionar calquera destas preguntas para engadilas á súa proba sobre a outra parte desta páxina.</p>';
+$string['addingquestions'] = 'Este lado da páxina é onde se xestiona a  súa base de datos de preguntas. As preguntas recóllense en categorías para axudarlle a mantelas organizadas e poden utilizarse en calquera proba no seu curso ou mesmo noutros cursos cando vostede se decante por as \'publicar\'. <br /><br />Despois de seleccionar ou crear unha categoría de preguntas poderá crear ou editar preguntas. Pode seleccionar calquera destas preguntas para engadilas á súa proba sobre a outra parte desta páxina.';
 $string['addmoreoverallfeedbacks'] = 'Engdir {no} campos máis de retroalimentación';
 $string['addnewgroupoverride'] = 'Engadir grupo de supervisión';
 $string['addnewpagesafterselected'] = 'Engadir novas páxinas tras as preguntas seleccionadas';
@@ -77,9 +76,9 @@ $string['analysisoptions'] = 'Opcións de análise';
 $string['analysistitle'] = 'Táboa de análise do ítem';
 $string['answer'] = 'Resposta';
 $string['answered'] = 'Respondida';
-$string['answerhowmany'] = 'Unha ou respostas múltiplas?';
+$string['answerhowmany'] = 'Unha ou múltiples respostas?';
 $string['answers'] = 'Respostas';
-$string['answersingleno'] = 'Permítense respostas múltiplas';
+$string['answersingleno'] = 'Permítense respostas múltiples';
 $string['answersingleyes'] = 'Unha única resposta';
 $string['answertoolong'] = 'A resposta é demasiado longa a partir da liña {$a} (255 carác. máx)';
 $string['aon'] = 'Formato AON';
@@ -109,7 +108,7 @@ $string['attemptstate'] = 'Estado';
 $string['attemptstillinprogress'] = 'Intento aínda en proceso';
 $string['attemptsunlimited'] = 'Intentos ilimitados';
 $string['autosaveperiod'] = 'Período de autogardado';
-$string['autosaveperiod_desc'] = 'As respostas dos alumnos pódense gardar automaticamente cada poucos minutos durante os intentos de proba. As respostas gárdanse cando algunha cambia, e despois deste atraso. Isto involucra una concertación/cesión: ao gardar as respostas aumentase a carga do servidor, mais redúcese o risco de que los alumnos perdan o seu traballo. Se vai facer máis curto este atraso, debería cambiar gradualmente o valor e supervisar a carga do servidor. Se a carga se volve moi alta, faga o atraso máis longo. Axustar o atraso a 0 desactiva o gardado automático.';
+$string['autosaveperiod_desc'] = 'As respostas dos alumnos pódense gardar automaticamente cada poucos minutos durante os intentos de exame. Isto implica unha alternativa: o gardado das respostas incrementa a carga do servidor pero reduce a posibilidade de que os alumnos perdan o seu traballo.';
 $string['back'] = 'Volver á pregunta previa';
 $string['backtocourse'] = 'Volver ao curso';
 $string['backtoquestionlist'] = 'Volver á lista de preguntas';
@@ -146,10 +145,10 @@ $string['cannotstartmissingquestion'] = 'Non se pode comezar un intento nesta pr
 $string['cannotstartnoquestions'] = 'Non se pode comezar un intento nesta proba. A proba aínda non foi configurada. Non se lle engadiron preguntas.';
 $string['cannotwrite'] = 'Non se pode escribir no ficheiro de exportación ({$a})';
 $string['canredoquestions'] = 'Permitir refacer dentro dun intento';
-$string['canredoquestions_desc'] = 'Se está activado, cando os alumnos teñan terminado unha pregunta en particular, eles verán un botón para «Refacer a pregunta». Isto permítelles tentar outra versión da mesma pregunta, sen ter que enviar o intento da proba completa e iniciar outra. Esta opción é principalmente útil para probas de práctica.
+$string['canredoquestions_desc'] = 'Se está activado, cando os alumnos teñan terminado unha pregunta en particular, eles verán un botón para «Refacer a pregunta». Isto permítelles tentar outra versión da mesma pregunta, sen ter que enviar o intento da proba completa e iniciar outra. Esta opción é principalmente útil para exames de práctica.
 
 Esta configuración soamente afecta ás preguntas (por exemplo, preguntas que non sexan do tipo de ensaio) e aos comportamentos (por exemplo, realimentación inmediata, ou interactiva con intentos múltiples), onde é posíbel que o alumno termine a pregunta antes de que o intento sexa entregado.';
-$string['canredoquestions_help'] = 'Se está activado, cando os alumnos teñan terminado unha pregunta en particular, eles verán un botón para «Refacer a pregunta». Isto permítelles tentar outra versión da mesma pregunta, sen ter que enviar o intento da proba completa e iniciar outra. Esta opción é principalmente útil para probas de práctica.
+$string['canredoquestions_help'] = 'Se está activado, cando os alumnos teñan terminado unha pregunta en particular, eles verán un botón para «Refacer a pregunta». Isto permítelles tentar outra versión da mesma pregunta, sen ter que enviar o intento da proba completa e iniciar outra. Esta opción é principalmente útil para exames de práctica.
 
 Esta configuración soamente afecta ás preguntas (por exemplo, preguntas que non sexan do tipo de ensaio) e aos comportamentos (por exemplo, realimentación inmediata, ou interactiva con intentos múltiples), onde é posíbel que o alumno termine a pregunta antes de que o intento sexa entregado.';
 $string['canredoquestionsyes'] = 'Os alumnos poden refacer outra versión de calquera pregunta terminada';
@@ -168,12 +167,12 @@ $string['closereview'] = 'Pechar a revisión';
 $string['comment'] = 'Comentario';
 $string['commentorgrade'] = 'Facer un comentario ou sobrescribir a cualificación';
 $string['comments'] = 'Comentarios';
-$string['completedon'] = 'Completada en';
+$string['completedon'] = 'Completado o';
 $string['completionattemptsexhausted'] = 'Ou todos os intentos dispoñíbeis completados';
 $string['completionattemptsexhausted_help'] = 'Marcar a proba como completa cando o alumno teña esgotado o número máximo de intentos.';
 $string['completionpass'] = 'Requirir cualificación aprobatoria';
 $string['completionpass_help'] = 'Se está activado, esta actividade considerarase completa cando o alumno recibe unha cualificación aprobatoria, que estea posta no libro de cualificacións.';
-$string['configadaptive'] = 'Se escolle Si nesta opción, entón permitirá que o alumno teña respostas múltiplas a unha pregunta, mesmo dentro do mesmo intento na proba.';
+$string['configadaptive'] = 'Se escolle Si nesta opción, entón permitirá que o alumno teña respostas múltiples a unha pregunta, mesmo dentro do mesmo intento na proba.';
 $string['configattemptsallowed'] = 'Restrición no número de intentos por alumno que son permitidos na proba.';
 $string['configdecimaldigits'] = 'Número de díxitos que se deberían amosar despois do punto decimal ao amosar as cualificacións.';
 $string['configdecimalplaces'] = 'Número de díxitos que se deberían amosar despois do punto decimal ao amosar as cualificacións da proba.';
@@ -182,13 +181,13 @@ $string['configdelay1'] = 'De estabelecer un tempo de espera, o alumno terá que
 $string['configdelay1st2nd'] = 'De estabelecer un tempo de espera aquí, o alumno non poderá comezar o seu segundo intento ata que todo ese tempo pase desde o remate do seu primeiro intento.';
 $string['configdelay2'] = 'De estabelecer un tempo de espera aquí, o alumno terá que agardar ese tempo antes de poder facer o seu terceiro ou posteriores intentos.';
 $string['configdelaylater'] = 'De estabelecer un tempo de espera aquí, o alumno non pode comezar o seu terceiro, cuarto, ... intento ata que todo ese tempo pase desde o remate do seu intento previo.';
-$string['configeachattemptbuildsonthelast'] = 'De se permitir os intentos múltiplos, cadanseu novo intento contén o resultado do intento previo.';
-$string['configgrademethod'] = 'Ao se permitir os intentos múltiplos, que método se debería usar para calcular a cualificación final do alumno na proba.';
+$string['configeachattemptbuildsonthelast'] = 'De se permitir os intentos múltiples, cadanseu novo intento contén o resultado do intento previo.';
+$string['configgrademethod'] = 'Ao se permitir os intentos múltiples, que método se debería usar para calcular a cualificación final do alumno na proba.';
 $string['configintro'] = 'Os valores que estabeleza aquí definen os valores predeterminados que se usan no formulario de configuración cando crea unha nova proba. Tamén pode configurar os valores que considere avanzados.';
 $string['configmaximumgrade'] = 'A cualificación predeterminada que táboa de cualificacións considere fóra de escala.';
 $string['confignavmethod'] = 'Na navegación libre, as preguntas poden responderse en calquera orde usando a navegación. Na secuencial, as preguntas deben responderse en secuencia estrita.';
 $string['confignewpageevery'] = 'Ao engadir preguntas ás quebras da páxina da proba, inseriranse automaticamente segundo a configuración que escolla aquí.';
-$string['configoutcomesadvanced'] = 'Se esta opción está apagada, entón os resultados na edición do formulario da proba son unha configuración avanzada.';
+$string['configoutcomesadvanced'] = 'Se esta opción está apagada, entón os resultados na edición do formulario do exame son unha configuración avanzada.';
 $string['configpenaltyscheme'] = 'A penalización contraída por cadansúa resposta en modo adaptativo.';
 $string['configpopup'] = 'Forzar o intento de abrir nunha xanela emerxente, e suar trucos de JavaScript para conseguir restrinxir o copia e pega, etc durante os intentos da proba.';
 $string['configrequirepassword'] = 'Os alumnos deben de introducir estre contrasinal antes de poderen intentar a proba.';
@@ -196,7 +195,7 @@ $string['configrequiresubnet'] = 'Os alumnos soamente poden intentar a proba des
 $string['configreviewoptions'] = 'Estas opcións controlan que información poden ver os usuarios cando revisan un intento da proba ou ver os informes da proba.';
 $string['configshowblocks'] = 'Amosar os bloques durante os intentos da proba.';
 $string['configshowuserpicture'] = 'Amosar a imaxe do usuario na pantalla durante os intentos.';
-$string['configshufflewithin'] = 'De activar esta opción, as partes que preparan as preguntas para o individuo barallaranse aleatoriamente cada vez que un alumnos arranque un intento nesta proba, do mesmo xeito con esta opción tamén se activa na configuración das preguntas.';
+$string['configshufflewithin'] = 'De activar esta opción, as partes que forman parte das preguntas barallaranse aleatoriamente cada vez que un alumno intente a proba, e sempre que esta opción tamén se active na configuración das preguntas.';
 $string['configtimelimit'] = 'Límite de tempo predeterminado para probas en minutos. 0 significa sen límite de tempo.';
 $string['configtimelimitsec'] = 'O límite de tempo predeterminado para as probas en segundos. 0 significa sen límite de tempo.';
 $string['configurerandomquestion'] = 'Configurar a pregunta';
@@ -265,7 +264,7 @@ $string['dragtoafter'] = 'Após {$a}';
 $string['dragtostart'] = 'No inicio';
 $string['duplicateresponse'] = 'Esta entrega ignorouse porque xa deu unha resposta equivalente anteriormente.';
 $string['eachattemptbuildsonthelast'] = 'Cada intento constrúese sobre o último';
-$string['eachattemptbuildsonthelast_help'] = 'De estaren os intentos múltiplos permitido e esta configuración activa, cadanseu novo intento conterá os resultados do intento previo. Isto permite completar unha proba en varios intentos.';
+$string['eachattemptbuildsonthelast_help'] = 'De estaren os intentos múltiples permitido e esta configuración activa, cadanseu novo intento conterá os resultados do intento previo. Isto permite completar unha proba en varios intentos.';
 $string['editcategories'] = 'Editar categorías';
 $string['editcategory'] = 'Editar categoría';
 $string['editcatquestions'] = 'Editar preguntas da categoría';
@@ -390,7 +389,7 @@ $string['gradeboundary'] = 'Cualificación extrema';
 $string['gradeessays'] = 'Probas de cualificación';
 $string['gradehighest'] = 'Cualificación máis alta';
 $string['grademethod'] = 'Método de cualificación';
-$string['grademethod_help'] = 'Cando se permiten as tentativas múltiplas, os seguintes métodos están dispoñíbeis para calcular a cualificación final da proba:
+$string['grademethod_help'] = 'Cando se permiten as tentativas múltiples, os seguintes métodos están dispoñíbeis para calcular a cualificación final da proba:
 
 * A máis alta cualificación de todos os intentos
 * Cualificación mediana de todos os intentos
@@ -476,9 +475,9 @@ $string['missingcorrectanswer'] = 'Debe de especificarse a resposta correcta';
 $string['missingitemtypename'] = 'Falta o nome';
 $string['missingquestion'] = 'Esta pregunta parece que xa non existe';
 $string['modulename'] = 'Proba';
-$string['modulename_help'] = 'A actividade da proba permítelle a un profesor crear as probas que comprenden preguntas de varios tipos como escolla múltipla, coincidencia, resposta curta e numérica.
+$string['modulename_help'] = 'A actividade da proba permítelle a un profesor crear as probas que comprenden preguntas de varios tipos como escolla múltiple, coincidencia, resposta curta e numérica.
 
-O profesor pode permitir que a proba se intente múltiplas veces, coas preguntas baralladas ou aleatoriamente seleccionadas do banco de preguntas. Pode estabelecerse un límite de tempo.
+O profesor pode permitir que a proba se intente múltiples veces, coas preguntas baralladas ou aleatoriamente seleccionadas do banco de preguntas. Pode estabelecerse un límite de tempo.
 
 Cada intento márcase automaticamente, agás as preguntas de ensaio e a cualificación gárdase no libro de cualificacións.
 
@@ -494,7 +493,7 @@ As probas poden usarse
 $string['modulename_link'] = 'mod/quiz/vista';
 $string['modulenameplural'] = 'Probas';
 $string['moveselectedonpage'] = 'Mover as preguntas seleccionadas á páxina: {$a}';
-$string['multichoice'] = 'Escolla múltipla';
+$string['multichoice'] = 'Escolla múltiple';
 $string['multipleanswers'] = 'Escolla cando menos unha resposta.';
 $string['mustbesubmittedby'] = 'Este intento debe de ser entregado por {$a}.';
 $string['name'] = 'Nome';
@@ -570,7 +569,7 @@ $string['orderingquiz'] = 'Ordenación de paxinación';
 $string['orderingquizx'] = 'Ordenar e paxinar: {$a}';
 $string['outcomesadvanced'] = 'Os resultados son configuracións avanzadas';
 $string['outof'] = '{$a->grade} alén dun máximo de {$a->maxgrade}';
-$string['outofpercent'] = '{$a->grade} alén dun máximo de {$a->maxgrade} ({$a->percent}%)';
+$string['outofpercent'] = '{$a->grade} sobre {$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = 'Retroalimentación xeral';
 $string['overallfeedback_help'] = 'Retroalimentación xeral é un texto que se amosa despois de feito un intento. Ao especificar extremos de cualificación adicionais (como unha porcentaxe ou un número), o texto amosado pode depender da cualificación obtida.';
@@ -612,7 +611,7 @@ $string['pleaseclose'] = 'Procesouse a súa resposta. Agora pode pechar esta xan
 $string['pluginadministration'] = 'Administración da proba';
 $string['pluginname'] = 'Proba';
 $string['popup'] = 'Amosar a proba nunha xanela &quot;segura&quot;';
-$string['popupblockerwarning'] = 'Esta sección da proba está en modo seguro, isto significa que necesita manexar a proba nunha xanela segura. Apague o seu bloqueador de xanelas emerxentes. Grazas.';
+$string['popupblockerwarning'] = 'Esta sección do exame está en modo seguro, isto significa que necesita manexar a proba nunha xanela segura. Apague o seu bloqueador de xanelas emerxentes. Grazas.';
 $string['popupnotice'] = 'Os alumnos verán esta proba nunha xanela segura';
 $string['preprocesserror'] = 'Produciuse un erro durante o pre-procesamento!';
 $string['preview'] = 'Vista previa';
@@ -779,7 +778,7 @@ $string['reviewoptions'] = 'Os alumnos poden revisar';
 $string['reviewoptionsheading'] = 'Opcións de revisión';
 $string['reviewoptionsheading_help'] = 'Estas opcións controlan que información poden ver os alumnos cando revisan un intento da proba ou observan os informes da proba.
 
-*Durante o intento** a configuración soamente é relevante para algúns comportamentos como \'interactivo con múltiplos intentos\', os cales poden presentar retroalimentación durante o intento.
+*Durante o intento** a configuración soamente é relevante para algúns comportamentos como \'interactivo con múltiples intentos\', os cales poden presentar retroalimentación durante o intento.
 
 *Inmediatamente despois do intentos** a configuración aplícanse nos primeiros dous minutos despois de facer clic sobre \'Entregar todo e finalizar\'.
 
@@ -852,8 +851,8 @@ $string['shufflequestions'] = 'Barallar preguntas';
 $string['shufflequestions_help'] = 'Se Vostede activa isto, cada vez que se intente contestar a proba, barallarase a orden das preguntas nesta sección a unha nova orden ao chou.
 
 Isto pode dificultar que os alumnos compartan entre si as respostas, mais tamén fai máis difícil que os alumnos discutan con Vostede algunha pregunta en particular.';
-$string['shufflewithin'] = 'Barallar entre as preguntas';
-$string['shufflewithin_help'] = 'De estar activado, as partes que crean cada pregunta barallaranse aleatoriamente a cada vez que un alumno intente a proba, fornecendo a opción tamén está activada na configuración de preguntas. Esta configuración aplícase a cuestións que teñen múltiplas partes, tales como escolla múltipla ou preguntas coincidentes.';
+$string['shufflewithin'] = 'Barallar dentro das preguntas';
+$string['shufflewithin_help'] = 'De estar activado, as escollas de cada pregunta barallaranse aleatoriamente cada vez que un alumno intente a proba, fornecendo unha opción para poder activala dentro da configuración de preguntas. Esta configuración só se aplica a preguntas que teñen múltiples partes, tales como escolla múltiple ou preguntas coincidentes.';
 $string['singleanswer'] = 'Escolla unha resposta.';
 $string['sortage'] = 'Ordenar por idade';
 $string['sortalpha'] = 'Ordenar por nome';
@@ -896,8 +895,6 @@ $string['timelimit'] = 'Tempo límite';
 $string['timelimitexeeded'] = 'Mágoa! Excedeu o tempo límite da proba!';
 $string['timelimit_help'] = 'De activarse, o tempo límite está colocado na páxina inicial da proba e preséntase un temporizador no bloque de navegación da proba.';
 $string['timelimit_link'] = 'mod/quiz/timing';
-$string['timelimitmin'] = 'Tempo límite (minutos)';
-$string['timelimitsec'] = 'Tempo límite (segundos)';
 $string['timestr'] = '%H:%M:%S o %d/%m/%y';
 $string['timesup'] = 'Esgotouse o tempo!';
 $string['timetaken'] = 'Tempo levado';

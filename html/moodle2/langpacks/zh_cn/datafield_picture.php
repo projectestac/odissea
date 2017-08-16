@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_picture', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_picture
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = '图片字段';
 $string['pluginname'] = '图片';

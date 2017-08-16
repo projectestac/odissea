@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'completion', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,9 +37,9 @@ $string['aggregationmethod'] = 'Metod för aggregation';
 $string['all'] = 'Allt';
 $string['any'] = 'Vilken/a som helst';
 $string['approval'] = 'Godkännande';
-$string['badautocompletion'] = 'När du väljer automatisk markering av fullföljning, måste även ställa in minst ett kriterie (nedan).';
+$string['badautocompletion'] = 'När du väljer automatisk markering av fullföljande, måste du även ställa in minst ett kriterium (nedan).';
 $string['completed'] = 'Slutfört';
-$string['completedunlocked'] = 'Alternativen för fullföljning är upplåsta';
+$string['completedunlocked'] = 'Alternativen för fullföljande är upplåsta';
 $string['completedunlockedtext'] = 'När du sparar ändringarna nollställs markeringarna av fullföljande för alla kursdeltagare. Om du inte är säker på att detta ska göras, välj att avbryta.';
 $string['completedwarning'] = 'Alternativen för fullföljande är låsta';
 $string['completedwarningtext'] = 'En eller flera kursdeltagare ({$a}) har redan markerat denna aktivitet som fullföljd. Ändringar av inställningarna tar bort dessa markeringar. Därför har inställningarna låsts, och ska inte låsas upp om det inte är absolut nödvändigt.';
@@ -54,27 +54,27 @@ $string['completion-alt-manual-enabled'] = 'Kursdeltagare kan själv markera den
 $string['completion-alt-manual-n'] = 'Ej fullföljd; välj för att markera som fullföljd';
 $string['completion-alt-manual-y'] = 'Fullföljd; välj för att markera som ej fullföljd';
 $string['completion_automatic'] = 'Visa aktivitet som fullföljd när kriterier är uppnådda.';
-$string['completiondefault'] = 'Grundinställning för spårning av fullföljning';
+$string['completiondefault'] = 'Grundinställning för spårning av fullföljande';
 $string['completiondisabled'] = 'Avaktiverad, visas inte i aktiviteternas inställningar';
 $string['completionduration'] = 'Registrering';
 $string['completionenabled'] = 'Aktiverad, hanteras via inställningar för aktiviteter och fullföljande';
-$string['completionexpected'] = 'Fullföljning förväntad vid';
-$string['completionexpected_help'] = 'Denna inställning specificerar det datum då aktiviteten förväntas vara fullföljd. Datumet visas inte för kursdeltagare, utan visas bara i aktivitets-fullföljningsrapporten.';
+$string['completionexpected'] = 'Förväntad tid för fullföljande';
+$string['completionexpected_help'] = 'Denna inställning specificerar det datum då aktiviteten förväntas vara fullföljd. Datumet visas inte för kursdeltagare, utan visas bara i aktivitets-fullföljanderapporten.';
 $string['completion-fail'] = 'Slutfört (inte uppnått godkänt betyg)';
 $string['completion_help'] = 'Om aktiverad blir fullföljande av aktivitet markerad, manuellt eller automatiskt, beroende på angivna kriterier. Flera kriterier kan anges, och om så görs blir aktiviteten betraktad som genomför då <strong>samtliga</strong> dessa uppfylls. En bock vid sidan av aktivitetens namn på kurssidan indikerar när aktiviteten är fullföljd.';
-$string['completionicons'] = 'Kryssrutor för att markera fullföljning';
+$string['completionicons'] = 'Kryssrutor för att markera fullföljande';
 $string['completionicons_help'] = 'En kryssruta bredvid en aktivitet kan användas för att indikera när aktiviteten är fullföljd. Om en svagt markerad bock visas, kan du själv kryssa för att du har fullföljt aktiviteten (om du klickar en gång till tas markeringen bort igen). Markeringen är ett sätt att följa din progression i kursen. Om en helt tom kryssruta visas, kommer den att markeras automatiskt då du har fullföljt aktiviteten enligt kriterier uppsatta av läraren.';
 $string['completion_manual'] = 'Kursdeltagare kan själva markera aktiviteten som fullföljd.';
-$string['completionmenuitem'] = 'Fullföljning';
+$string['completionmenuitem'] = 'Fullföljande';
 $string['completion-n'] = 'Inte slutfört';
 $string['completion_none'] = 'Indikera inte fullföljande av aktivitet.';
-$string['completionnotenabled'] = 'Fullföljning är inte aktiverad';
-$string['completionnotenabledforcourse'] = 'Fullföljning är inte aktiverad för den här kursen';
-$string['completionnotenabledforsite'] = 'Fullföljning är inte aktiverad för den här webbplatsen';
+$string['completionnotenabled'] = 'Fullföljande är inte aktiverad';
+$string['completionnotenabledforcourse'] = 'Fullföljande är inte aktiverad för den här kursen';
+$string['completionnotenabledforsite'] = 'Fullföljande är inte aktiverad för den här webbplatsen';
 $string['completionondate'] = 'Datum';
 $string['completionondatevalue'] = 'Användare måste vara registrerad tills';
 $string['completion-pass'] = 'Slutfört (uppnått godkänt betyg)';
-$string['completionsettingslocked'] = 'Alternativen för fullföljning är låsta';
+$string['completionsettingslocked'] = 'Alternativen för fullföljande är låsta';
 $string['completion-title-manual-n'] = 'Markera som fullföjd';
 $string['completion-title-manual-y'] = 'Markera som inte fullföjd';
 $string['completionusegrade'] = 'Begär ett resultat';
@@ -84,7 +84,7 @@ $string['completionview'] = 'Begär visning';
 $string['completionview_desc'] = 'Då kursdeltagaren öppnar aktiviteten anses den fullföljd';
 $string['completion-y'] = 'Slutfört';
 $string['configcompletiondefault'] = 'Grundinställning för spårning av fullföljande när nya aktiviteter skapas';
-$string['configenablecompletion'] = 'När denna aktiverats kan du aktivera spårning av fullföljning (progression) på kursnivå.';
+$string['configenablecompletion'] = 'När denna aktiverats kan du aktivera spårning av fullföljande (progression) på kursnivå.';
 $string['confirmselfcompletion'] = 'Bekräfta eget fullföljande';
 $string['courseaggregation'] = 'Villkor kräver';
 $string['courseaggregation_all'] = 'ALLA valda kurser fullföljs';
@@ -105,9 +105,9 @@ $string['csvdownload'] = 'Ladda ned som datafil (UTF-8 .csv)';
 $string['datepassed'] = 'Datum för godkännande';
 $string['days'] = 'Dagar';
 $string['daysoftotal'] = '{$a->days} av {$a->total}';
-$string['deletecompletiondata'] = 'Ta bort data om fullföljning';
+$string['deletecompletiondata'] = 'Ta bort data om fullföljande';
 $string['dependencies'] = 'Beroenden';
-$string['dependenciescompleted'] = 'Fullföljning av andra kurser';
+$string['dependenciescompleted'] = 'Fullföljande av andra kurser';
 $string['editcoursecompletionsettings'] = 'Redigera inställningar för fullföljande av kurs';
 $string['enablecompletion'] = 'Aktivera spårning av fullföljande';
 $string['enablecompletion_help'] = 'Om aktiverad, villkor för genomförande av aktivitet måste anges i aktiviteten och/eller måste villkor för kursgenomförande anges.';

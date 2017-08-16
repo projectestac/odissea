@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,21 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actauthhdr'] = 'Active authentication plugins';
+$string['actauthhdr'] = 'Διαθέσιμα πρόσθετα αυθεντικοποίησης';
 $string['allowaccountssameemail'] = 'Επιτρέπονται λογαριασμοί με την ίδια ηλεκτρονική διεύθυνση.';
 $string['allowaccountssameemail_desc'] = 'Αν ενεργοποιηθεί, τότε πολλοί χρήστες θα έχουν την ίδια ηλεκτρονική διεύθυνση. Αυτό μπορεί να οδηγήσει σε προβλήματα ασφάλεια ή ιδιωτικότητας, όπως για παράδειγμα, σε περίπτωση αλλαγής του κωδικού πρόσβασης.';
 $string['alternatelogin'] = 'Όποια διεύθυνση πληκτρολογήσετε θα χρησιμοποιηθεί σαν σελίδα σύνδεσης. Η σελίδα αυτή, θα πρέπει να έχει μία φόρμα με την ιδιότητα <strong>\'{$a}\'</strong> και τα πεδία <strong>username</strong>, <strong>password</strong>.';
 $string['alternateloginurl'] = 'Εναλλακτική σελίδα σύνδεσης';
 $string['auth_changepasswordhelp'] = 'Βοήθεια αλλαγήςκωδικού';
-$string['auth_changepasswordhelp_expl'] = 'Εμφάνιση της βοήθειας απολεσθέντος κωδικού στους χρήστες που έχασαν τον {$a} κωδικό τους. Αυτό θα εμφανιστεί μαζί με ή αντί του <strong>URL αλλαγής κωδικού</strong> ή άλλαγή κωδικού εσωτερικά του ΠΗΛΕΑΣ';
+$string['auth_changepasswordhelp_expl'] = 'Εμφάνιση της βοήθειας απολεσθέντος κωδικού στους χρήστες που έχασαν τον {$a} κωδικό πρόσβασης τους. Αυτό θα εμφανιστεί μαζί με ή αντί του <strong>URL αλλαγής κωδικού</strong> ή άλλαγή κωδικού εσωτερικά του Moodle';
 $string['auth_changepasswordurl'] = 'URL αλλαγής κωδικού';
 $string['auth_changepasswordurl_expl'] = 'Προσδιορίστε το URL που θα αποστέλλεται στους χρήστες που έχει χάσει τον {$a} κωδικό τους. Ορίστε την <strong>Χρήση της κανονικής σελίδας αλλαγής κωδικού</strong> σε <strong>Όχι</strong>.';
 $string['auth_changingemailaddress'] = 'Έχετε ζητήσει μια αλλαγή της διεύθυνσης ηλεκτρονικού ταχυδρομείου, από {$a->oldemail} στο {$a->newemail}. Για λόγους ασφαλείας, σας στέλνουμε ένα μήνυμα ηλεκτρονικού ταχυδρομείου στη νέα διεύθυνση για να επιβεβαιώσετε ότι ανήκει σε εσάς. Η διεύθυνση του ηλεκτρονικού ταχυδρομείου σας θα ενημερωθεί αμέσως μόλις ανοίξετε το σύνδεσμο που σας έχει αποσταλεί σε αυτό το μήνυμα.';
 $string['auth_common_settings'] = 'Κοινές ρυθμίσεις';
 $string['auth_data_mapping'] = 'Χαρτογράφηση δεδομένων';
-$string['authenticationoptions'] = 'Επιλογές πιστοποίησης';
+$string['authenticationoptions'] = 'Επιλογές αυθεντικοποίησης';
 $string['auth_fieldlock'] = 'Κλείδωμα τιμής';
-$string['auth_fieldlock_expl'] = '<p><b>Κλείδωμα τιμής:</b> Εάν ενεργοποιηθεί, αποτρέπει χρήστες του ΠΗΛΕΑΣ και διαχειριστές να επεξεργαστούν το πεδίο άμεσα. Χρησιμοποιήστε την επιλογή αυτή εάν διατηρείτε τα δεδομένα σε εξωτερικό σύστημα πιστοποίησης.  </p>';
+$string['auth_fieldlock_expl'] = '<p><b>Κλείδωμα τιμής:</b> Αν είναι ενεργοποιημένο, οι χρήστες και οι διαχειριστές Moodle δεν θα μπορούν να επεξεργαστούν το πεδίο. Χρησιμοποιήστε αυτή την επιλογή αν διατηρείτε τα δεδομένα σε εξωτερικό σύστημα πιστοποίησης.</p>';
 $string['auth_fieldlocks'] = 'Κλειδωμα πεδίων χρήστη';
 $string['auth_fieldlocks_help'] = '<p>Έχετε τη δυνατότητα να κλειδώσετε κάποια από τα πεδία που χρησιμοποιούνται στην φόρμα εγγραφής των χρηστών. Μ\' αυτόν τον τρόπο, γίνεται πιο εύκολη η συντήρηση του site στην περίπτωση που ο διαχειριστής επεξεργάζεται χειροκίνητα τα στοιχεία των χρηστών.';
 $string['authinstructions'] = 'Εδώ μπορείτε να παρέχετε τις οδηγίες για τους χρήστες σας, έτσι ώστε να ξέρουν ποιο όνομα χρήστη και κωδικό πρόσβασης πρέπει να χρησιμοποιούν.  Το κείμενο που εισάγετε εδώ θα εμφανιστεί στη σελίδα σύνδεσης.  Εάν το αφήσετε  κενό, τότε καμία οδηγία δεν θα τυπωθεί.';
@@ -53,9 +53,10 @@ $string['auth_passwordwillexpire'] = 'Το συνθηματικό σας θα λ
 $string['auth_remove_delete'] = 'Full delete internal';
 $string['auth_remove_keep'] = 'Keep internal';
 $string['auth_remove_suspend'] = 'Suspend internal';
-$string['auth_remove_user'] = 'Specify what to do with internal user account during mass synchronization when user was removed from external source. Only suspended users are automatically revived if they reappear in ext source.';
+$string['auth_remove_user'] = 'Καθορίστε τι πρέπει να γίνει με τον εσωτερικό λογαριασμό χρήστη κατά τη διάρκεια μαζικού συγχρονισμού, όταν ο χρήστης αφαιρεθεί από την εξωτερική πηγή. Μόνο οι χρήστες σε αναστολή γίνονται επαναφορα αυτόματα αν επανεμφανιστούν στην εξωτερική πηγή.';
 $string['auth_remove_user_key'] = 'Removed ext user';
-$string['auth_sync_script'] = 'Συγχρονισμός λογαριασμού χρήστη';
+$string['auth_sync_script'] = 'Cron synchronization script';
+$string['auth_sync_suspended'] = 'Όταν είναι ενεργοποιημένη, το χαρακτηριστικό αναστολής θα χρησιμοποιηθεί για την ενημέρωση της κατάστασης αναστολής λογαριασμού τοπικού χρήστη.';
 $string['auth_updatelocal'] = 'Τοπική ενημέρωση';
 $string['auth_updatelocal_expl'] = '<p><b>Τοπική ενημέρωση:</b> Εάν ενεργοποιηθεί, το πεδίο θα ενημερώνεται (από εξωτερική πιστοποίηση) κάθε φορά που ο χρήστης εισέρχεται ή γίνεται συγχρονισμός χρηστών. Τα πεδία που ορίστηκαν να ενημερώνονται αυτόματα πρέπει να είναι κλειδωμένα.</p>';
 $string['auth_updateremote'] = 'Ενημέρωσε εξωτερικά';
@@ -67,7 +68,7 @@ $string['auth_usernameexists'] = 'Αυτό το όνομα χρήστη υπάρ
 $string['auto_add_remote_users'] = 'Auto add remote users';
 $string['changepassword'] = 'Αλλαγή κωδικού πρόσβασης URL';
 $string['changepasswordhelp'] = 'Εδώ μπορείτε να διευκρινίσετε μια θέση στην οποία οι χρήστες σας μπορούν να ανακτήσουν ή να αλλάξουν το όνομα χρήστη/τον κωδικό πρόσβασής τους εάν τα έχουν ξεχάσει.  Αυτό θα παρέχεται στους χρήστες ως σύνδεσμος στη σελίδα σύνδεσης και τη σελίδα χρηστών τους.  Εάν το αφήσετε κενό, ο σύνδεσμος δεν θα τυπωθεί.';
-$string['chooseauthmethod'] = 'Επιλέξτε μέθοδο πιστοποίησης';
+$string['chooseauthmethod'] = 'Επιλέξτε μέθοδο αυθεντικοποίησης';
 $string['chooseauthmethod_help'] = '<p align="center"><b>Αλλαγή μεθόδου πιστοποίησης </b></p>
 
 <p>Με αυτό το μενού είναι εφικτή η αλλαγή της μεθόδου πιστοποίησης του χρήστη.</p>
@@ -75,8 +76,8 @@ $string['chooseauthmethod_help'] = '<p align="center"><b>Αλλαγή μεθόδ
 <p>Οι αλλαγές να γίνονται με προσοχή.</p>';
 $string['createpassword'] = 'Δημιουργήστε κωδικό πρόσβασης και ενημερώστε τον χρήστη';
 $string['createpasswordifneeded'] = 'Δημιουργία κωδικού πρόσβασης αν χρειαστεί';
-$string['emailchangecancel'] = 'Ακύρωσε την αλλαγή του email';
-$string['emailchangepending'] = 'Η αλλαγή δεν έχει γίνει ακόμη. Άνοιξε τον σύνδεσμο που έχει σταλεί στο email {$a->preference_newemail}.';
+$string['emailchangecancel'] = 'Ακύρωση αλλαγής email';
+$string['emailchangepending'] = 'Change pending. Open the link sent to you at {$a->preference_newemail}.';
 $string['emailnowexists'] = 'The email address you tried to assign to your profile has been assigned to someone else since your original request. Your request for change of email address is hereby cancelled, but you may try again with a different address.';
 $string['emailupdate'] = 'Ανανέωση διεύθυνσης ηλεκτρονικού ταχυδρομείου';
 $string['emailupdatemessage'] = 'Αγαπητέ χρήστη {$a->fullname},
@@ -86,7 +87,7 @@ $string['emailupdatemessage'] = 'Αγαπητέ χρήστη {$a->fullname},
 
 {$a->url}';
 $string['emailupdatesuccess'] = 'Email address of user <em>{$a->fullname}</em> was successfully updated to <em>{$a->email}</em>.';
-$string['emailupdatetitle'] = 'Επιβεβαίωση αλλαγής της email διεύθυνσης στο  {$a->site}';
+$string['emailupdatetitle'] = 'Confirmation of email update at {$a->site}';
 $string['enterthenumbersyouhear'] = 'Enter the numbers you hear';
 $string['enterthewordsabove'] = 'Εισάγετε τις παραπάνω λέξεις';
 $string['errormaxconsecutiveidentchars'] = 'Passwords must have at most {$a} consecutive identical characters.';
@@ -101,8 +102,8 @@ $string['eventuserloggedin'] = 'Ο χρήστης έχει συνδεθεί';
 $string['eventuserloggedinas'] = 'Ο χρήστης έχει συνδεθεί ως άλλος χρήστης';
 $string['eventuserloginfailed'] = 'Η είσοδος χρήστη απέτυχε';
 $string['forcechangepassword'] = 'Υποχρεωτική αλλαγή κωδικού πρόσβασης';
-$string['forcechangepasswordfirst_help'] = 'Επιβεβλημένη αλλαγή του κωδικού πρόσβασης των χρηστών την πρώτη φορά που θα εισέλθουν στο ΠΗΚΕΑΣ';
-$string['forcechangepassword_help'] = 'Επιβεβλημένη αλλαγή του κωδικού πρόσβασης των χρηστών την επόμενη φορά που θα εισέλθουν στο ΠΗΚΕΑΣ';
+$string['forcechangepasswordfirst_help'] = 'Επιβολή αλλαγής κωδικού πρόσβασης των χρηστών την πρώτη φορά που θα εισέλθουν στο Moodle';
+$string['forcechangepassword_help'] = 'Επιβολή αλλαγής κωδικού πρόσβασης των χρηστών την επόμενη φορά που θα εισέλθουν στο Moodle';
 $string['forgottenpassword'] = 'If you enter a URL here, it will be used as the lost password recovery page for this site. This is intended for sites where passwords are handled entirely outside of Moodle. Leave this blank to use the default password recovery.';
 $string['forgottenpasswordurl'] = 'Forgotten password URL';
 $string['getanaudiocaptcha'] = 'Ακούστε το ηχητικό CAPTCHA';
@@ -130,8 +131,8 @@ $string['ntlmsso_failed'] = 'Auto-login failed, try the normal login page...';
 $string['ntlmsso_isdisabled'] = 'NTLM SSO is disabled.';
 $string['passwordhandling'] = 'Χειρισμός του πεδίου κωδικού';
 $string['plaintext'] = 'Απλό κείμενο';
-$string['pluginnotenabled'] = 'Authentication plugin \'{$a}\' is not enabled.';
-$string['pluginnotinstalled'] = 'Authentication plugin \'{$a}\' is not installed.';
+$string['pluginnotenabled'] = 'Το πρόσθετο αυθεντικοποίησης \'{$a}\' δεν έχει ενεργοποιηθεί.';
+$string['pluginnotinstalled'] = 'Το πρόσθετο αυθεντικοποίησης \'{$a}\' δεν έχει εγκατασταθεί.';
 $string['potentialidps'] = 'Συνδεθείτε χρησιμοποιώντας το λογαριασμό σας στο:';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = '<h2>Περιγραφή</h2>
@@ -145,16 +146,17 @@ $string['recaptcha_help'] = '<h2>Περιγραφή</h2>
 <p>Άτομα με προβλήματα όρασης μπορούν να ακολουθήσουν το σύνδεσμο "Φέρε ένα ηχητικό CAPTCHA" ώστε να ακούσουν ένα σετ από ψηφία που μπορούν να εισαχθούν αντί της οπτικής πρόκλησης.</p>';
 $string['security_question'] = 'Ερώτηση ασφαλείας';
 $string['selfregistration'] = 'Self registration';
-$string['selfregistration_help'] = 'If an authentication plugin, such as email-based self-registration, is selected, then it enables potential users to register themselves and create accounts. This results in the possibility of spammers creating accounts in order to use forum posts, blog entries etc. for spam. To avoid this risk, self-registration should be disabled or limited by <em>Allowed email domains</em> setting.';
+$string['selfregistration_help'] = 'Αν είναι επιλεγμένο ένα πρόσθετο αυθεντικοποίησης, όπως εγγραφή με χρήση ηλεκτρονικού ταχυδρομείου, τότε επιτρέπει σε πιθανούς χρήστες να εγγραφούν και να δημιουργήσουν λογαριασμούς. Αυτό έχει ως αποτέλεσμα τη δυνατότητα δημιουργίας λογαριασμών από αποστολείς ανεπιθύμητης αλληλογραφίας για τη χρήση μηνυμάτων σε ομάδες συζητήσεων, καταχωρήσεων ιστολογίου κ.λπ. για ανεπιθύμητα μηνύματα. Για να αποφύγετε αυτόν τον κίνδυνο, η εγγραφή από τους χρήστες θα πρέπει να απενεργοποιηθεί ή να περιοριοριστεί από τη ρύθμιση <em>Επιτρεπόμενοι τομείς ηλεκτρονικού ταχυδρομείου</ em>.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Μπορείτε να αποκρύψετε ή να εμφανίσετε το σύνδεσμο στη σελίδα σύνδεσης';
 $string['stdchangepassword'] = 'Χρήση standard σελίδας αλλαγής κωδικού';
-$string['stdchangepassword_expl'] = 'Εάν το εξωτερικό σύστημα πιστοποίησης επιτρέπει αλλαγές στο κωδικό πρόσβασης μεσα στο ΠΗΛΕΑΣ, ρυθμίστε το σε Ναι. Αυτή η ρύθμιση υπερβαίνει το \'URL αλλαγής κωδικού\'.';
+$string['stdchangepassword_expl'] = 'Αν το εξωτερικό σύστημα αυθεντικοποίησης επιτρέπει αλλαγές στον κωδικό πρόσβασης στο Moodle, επιλέξτε Ναι. Αυτή η ρύθμιση παρακάμπτει το \'URL Αλλαγής Κωδικού Πρόσβασης\'.';
 $string['stdchangepassword_explldap'] = 'Σημείωση: Δεν προτείνεται να χρησιμοποιήσετε LDAP πάνω από ένα SSL κρυπτογραφημένο τούνελ (ldaps://) εάν ο LDAP server είναι απομακρυσμένος.';
-$string['suspended'] = 'Ανεσταλμένος λογαριασμός';
+$string['suspended'] = 'Λογαριασμός σε αναστολή';
+$string['suspended_help'] = 'Οι λογαριασμοί χρηστών σε αναστολή δεν μπορούν να συνδεθούν ή να χρησιμοποιήσουν διαδικτυακές υπηρεσίες και όλα τα εξερχόμενα μηνύματα απορρίπτονται.';
 $string['testsettings'] = 'Δοκιμαστικές ρυθμίσεις';
 $string['unlocked'] = 'Ξεκλειδωμένο';
-$string['unlockedifempty'] = 'Ξεκλειδωμένο άν είναι άδειο';
+$string['unlockedifempty'] = 'Ξεκλειδωμένο αν είναι κενό';
 $string['update_never'] = 'Ποτέ';
 $string['update_oncreate'] = 'Στην δημιουργία';
 $string['update_onlogin'] = 'Σε κάθε είσοδο';

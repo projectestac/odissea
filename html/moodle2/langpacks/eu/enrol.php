@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -106,7 +106,7 @@ $string['migratetomanual'] = 'Migratu eskuzko matrikulaziora';
 $string['nochange'] = 'Aldaketarik ez';
 $string['noexistingparticipants'] = 'Ez dago partaiderik';
 $string['nogroup'] = 'Talderik ez';
-$string['noguestaccess'] = 'Bisitariak ezin dira ikastaro honetan sartu. Mesedez, saiatu identifikatzen.';
+$string['noguestaccess'] = 'Bisitariak ezin dira ikastaro honetan sartu. Mesedez, hasi saioa.';
 $string['none'] = 'Bat ere ez';
 $string['notenrollable'] = 'Ezin duzu zeure burua matrikulatu ikastaro honetan.';
 $string['notenrolledusers'] = 'Beste erabiltzaile batzuk';
@@ -124,6 +124,9 @@ $string['rolefromcategory'] = '{$a->role} (Ikastaro-kategoriatik heredatutakoa)'
 $string['rolefrommetacourse'] = '{$a->role} (Goragoko ikastarotik heredatutakoa)';
 $string['rolefromsystem'] = '{$a->role} (Gune mailan esleitutakoa)';
 $string['rolefromthiscourse'] = '{$a->role} (Ikastaro honetan esleitutakoa)';
+$string['sendfromcoursecontact'] = 'Ikastaro kudeatzaileak bidalita';
+$string['sendfromkeyholder'] = 'Giltzainak bidalita';
+$string['sendfromnoreply'] = 'Ez-erantzun helbidetik bidalita';
 $string['startdatetoday'] = 'Gaur';
 $string['synced'] = 'Sinkronizatua';
 $string['testsettings'] = 'Testaren ezarpenak';

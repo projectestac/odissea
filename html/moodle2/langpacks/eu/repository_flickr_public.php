@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_flickr_public', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['by-nc-sa'] = 'Attribution-NonCommercial-ShareAlike eskubidea';
 $string['by-nd'] = 'Attribution-NoDerivs eskubidea';
 $string['by-sa'] = 'CC ShareAlike eskubidea';
 $string['callbackurl'] = 'Atzera deiaren URLa';
-$string['commercialuse'] = '-Irudiak komertzialki erabiltzeko modua izan nahi dut';
+$string['commercialuse'] = 'Irudiak komertzialki erabiltzeko modua izan nahi dut';
 $string['configplugin'] = 'Flickr Publikoaren ezarpenak';
 $string['creativecommonscommercial'] = 'creative commons commercial baino ez';
 $string['emailaddress'] = 'E-posta helbiea';

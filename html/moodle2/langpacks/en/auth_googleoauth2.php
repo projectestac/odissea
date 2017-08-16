@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_googleoauth2', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_googleoauth2', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_googleoauth2
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

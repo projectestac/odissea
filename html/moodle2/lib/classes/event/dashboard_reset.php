@@ -38,7 +38,7 @@ defined('MOODLE_INTERNAL') || die();
  * }
  *
  * @package    core
- * @since      Moodle 3.1.3
+ * @since      Moodle 3.2
  * @copyright  2016 Stephen Bourget
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -139,7 +139,9 @@ $string['generalanonymize'] = 'Información anónima';
 $string['generalbackdefaults'] = 'Configuración por defecto de la copia de seguridad';
 $string['generalbadges'] = 'Incluir insignias';
 $string['generalblocks'] = 'Incluir bloques';
+$string['generalcalendarevents'] = 'Incluir eventos de calendario';
 $string['generalcomments'] = 'Incluir comentarios';
+$string['generalcompetencies'] = 'Incluir competencias';
 $string['generalfilters'] = 'Incluir filtros';
 $string['generalgradehistories'] = 'Incluir historiales';
 $string['generalgroups'] = 'Incluir grupos y agrupamientos';
@@ -168,6 +170,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Si la página cuenta con u
 $string['importgeneralmaxresults'] = 'Número máximo de cursos listados para importación';
 $string['importgeneralmaxresults_desc'] = 'Controla el número de cursos que son listados durante el primer paso del proceso de importación';
 $string['importgeneralsettings'] = 'Ajustes por defecto de importación';
+$string['importsettings'] = 'Configuraciones generales de importación';
 $string['importsuccess'] = 'Importación completada. Pulse para volver al curso.';
 $string['includeactivities'] = 'Incluido:';
 $string['includeditems'] = 'Elementos incluidos:';

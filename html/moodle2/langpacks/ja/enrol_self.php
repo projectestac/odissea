@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['canntenrolearly'] = 'あなたはまだ登録することはできま�
 $string['canntenrollate'] = '{$a} に登録が終了したため、あなたはこれ以上登録することはできません。';
 $string['cohortnonmemberinfo'] = 'コーホート「 {$a} 」のメンバーのみ自己登録することができます。';
 $string['cohortonly'] = 'コーホートメンバーのみ';
-$string['cohortonly_help'] = '指定されたコーホートのメンバーのみに自己登録を制限することができます。この設定の変更により、既存の登録は影響を受けないことに留意してください。';
+$string['cohortonly_help'] = '指定されたコーホートのメンバーにのみ自己登録を制限することができます。この設定の変更により、既存の登録は影響を受けないことに留意してください。';
 $string['customwelcomemessage'] = 'カスタムウェルカムメッセージ';
 $string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタグおよびmulti-langタグを含むMoodleオートフォーマットとしてカスタムウェルカムメッセージを追加することができます。
 
@@ -100,7 +100,7 @@ $string['self:manage'] = '登録済みユーザを管理する';
 $string['self:unenrol'] = 'コースからユーザを登録解除する';
 $string['self:unenrolself'] = 'コースから自分自身を登録解除する';
 $string['sendcoursewelcomemessage'] = 'コースウェルカムメッセージを送信する';
-$string['sendcoursewelcomemessage_help'] = 'この設定を有効にした場合、コースへの自己登録後、ユーザ宛にウェルカムメッセージがメール送信されます。';
+$string['sendcoursewelcomemessage_help'] = 'ユーザがコースに自己登録した場合、ウェルカムメッセージのメールが送信されます。コース連絡先 (デフォルトは教師) から送信される場合、そしてこのロールに2名以上のユーザが割り当てられている場合、最初にロールが割り当てられたユーザから送信されます。';
 $string['showhint'] = 'ヒントを表示する';
 $string['showhint_desc'] = 'ゲストアクセスキーの最初の文字を表示します。';
 $string['status'] = '既存の登録を許可する';

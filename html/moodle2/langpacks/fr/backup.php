@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Détermine le réglage par défaut pour l\
 $string['configgeneralanonymize'] = 'Détermine le réglage par défaut pour l\'anonymisation dans les sauvegardes de toutes les données relatives aux utilisateurs';
 $string['configgeneralbadges'] = 'Si ce réglage est activé, les badges seront inclus dans les sauvegardes.';
 $string['configgeneralblocks'] = 'Détermine le réglage par défaut pour l\'inclusion des blocs dans les sauvegardes.';
+$string['configgeneralcalendarevents'] = 'Détermine les réglages par défaut pour l\'inclusion des événements de calendrier dans les sauvegardes.';
 $string['configgeneralcomments'] = 'Détermine le réglage par défaut pour l\'inclusion des commentaires dans les sauvegardes.';
+$string['configgeneralcompetencies'] = 'Détermine les réglages par défaut pour l\'inclusion des compétences dans les sauvegardes.';
 $string['configgeneralfilters'] = 'Détermine le réglage par défaut pour l\'inclusion des filtres dans les sauvegardes.';
 $string['configgeneralgroups'] = 'Détermine le réglage par défaut pour l’inclusion des groupes et groupements dans les sauvegardes.';
 $string['configgeneralhistories'] = 'Détermine le réglage par défaut pour l\'inclusion de l\'historique des activités des utilisateurs dans les sauvegardes.';
@@ -142,7 +144,9 @@ $string['generalanonymize'] = 'Anonymiser les informations';
 $string['generalbackdefaults'] = 'Réglages généraux par défaut des sauvegardes';
 $string['generalbadges'] = 'Inclure les badges';
 $string['generalblocks'] = 'Inclure les blocs';
+$string['generalcalendarevents'] = 'Inclure les événements de calendrier';
 $string['generalcomments'] = 'Inclure les commentaires';
+$string['generalcompetencies'] = 'Inclure les compétences';
 $string['generalfilters'] = 'Inclure les filtres';
 $string['generalgradehistories'] = 'Inclure les historiques';
 $string['generalgroups'] = 'Inclure les groupes et groupements';
@@ -171,6 +175,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Lorsqu\'il existe sur la p
 $string['importgeneralmaxresults'] = 'Nombre maximal de cours listés pour importation';
 $string['importgeneralmaxresults_desc'] = 'Ce réglage détermine le nombre de cours qui sont listés lors de la première étape du processus d\'importation';
 $string['importgeneralsettings'] = 'Réglages généraux d\'importation par défaut';
+$string['importsettings'] = 'Réglages généraux d\'importation';
 $string['importsuccess'] = 'Importation terminée. Cliquer sur continuer pour revenir au cours.';
 $string['includeactivities'] = 'Inclure :';
 $string['includeditems'] = 'Éléments inclus :';

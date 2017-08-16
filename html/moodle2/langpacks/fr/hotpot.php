@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'hotpot', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   hotpot
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'Abandonné';
 $string['abandonhotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici, mais vous ne pourrez pas reprendre ou redémarrer cette activité plus tard.';
+$string['activitycloses'] = 'L\'activité se ferme';
 $string['activitygrade'] = 'Note de l\'activité';
+$string['activityopens'] = 'L\'activité ouvre';
 $string['added'] = 'Ajouté';
 $string['addquizchain'] = 'Ajouter un enchaînement d\'activités';
 $string['addquizchain_help'] = 'Est-ce que tous les tests de la suite de tests doivent être ajoutés ?
@@ -41,9 +43,12 @@ $string['addquizchain_help'] = 'Est-ce que tous les tests de la suite de tests d
 Si le fichier source est un **dossier**, tous les tests reconnus dans le dossier seront ajoutés au cours pour former une suite et avec les mêmes paramètres.
 
 Enfin, si le fichier source est un **fichier unitaire**, comme un fichier masher de Hot Potatoes ou un fichier index.html, tous les tests listés dans ce fichier seront ajoutés au cours pour former une suite et avec les mêmes paramètres.';
+$string['allowpaste'] = 'Autoriser le collage';
+$string['allowpaste_help'] = 'Si ce paramètre est activé, les étudiants seront autorisés à copier, coller et faire glisser du texte dans la boîte à texte.';
 $string['allowreview'] = 'Permettre la relecture';
 $string['allowreview_help'] = 'Si activé, les étudiants pourront relire leurs tentatives après la fermeture du test.';
 $string['analysisreport'] = 'Analyse de l\'élément';
+$string['attempted'] = 'Essayé';
 $string['attemptlimit'] = 'Limite de tentatives';
 $string['attemptlimit_help'] = 'Nombre maximum de tentatives auquel à droit un étudiant dans cette activité HotPotatoes';
 $string['attemptnumber'] = 'Tentative numéro';
@@ -52,8 +57,14 @@ $string['attemptscore'] = 'Score de la tentative';
 $string['attemptsunlimited'] = 'Tentatives illimités';
 $string['average'] = 'Moyenne';
 $string['averagescore'] = 'Score moyen';
+$string['bodystyles'] = 'Styles du corps';
+$string['bodystylesbackground'] = 'Couleur et image de fond';
 $string['bodystylescolor'] = 'Couleur du texte';
+$string['bodystylesfont'] = 'Famille et taille de la police';
+$string['bodystylesmargin'] = 'Marge droite et gauche';
 $string['cacherecords'] = 'Enregistrements en cache de HotPotatoes';
+$string['canrestarthotpot'] = 'Vos résultats jusqu\'ici seront sauvegardés et vous pourrez refaire « {$a » plus tard';
+$string['canresumehotpot'] = 'Vos résultats seront sauvegardés jusqu\'ici et vous pourrez reprendre « {$a} » plus tard.';
 $string['checks'] = 'Vérifications';
 $string['checksomeboxes'] = 'Veuillez vérifier les champs';
 $string['clearcache'] = 'Nettoyer le cache HotPotatoes';
@@ -66,6 +77,11 @@ $string['clicktrailreport'] = 'Cheminement des clics';
 $string['closed'] = 'Cette activité est fermée';
 $string['clues'] = 'Indices';
 $string['completed'] = 'Terminé';
+$string['completioncompleted'] = 'Requiert le statut de complété';
+$string['completionmingrade'] = 'Requiert la note minimum';
+$string['completionpass'] = 'Requiert la note de passage';
+$string['completionwarning'] = 'Ces champs sont désactivés si la note limite pour cette activité est « Pas de note » ou si la pondération de la note est « Pas de pondération »';
+$string['configbodystyles'] = 'Par défaut, les styles du thème Moodle passe outre les styles de HotPot. Cependant, pour tout style sélectionné ici, le style de l\'activité HotPot sera prioritaire au style de Moodle.';
 $string['configenablecache'] = 'Le cache HotPotatoes peut considérablement accélérer l\'affichage des tests aux participants.';
 $string['configenablecron'] = 'Indiquez les heures dans votre fuseau horaire dans lesquelles le cron HotPotatoes peut fonctionner';
 $string['configenablemymoodle'] = 'Ce paramètre détermine si les activités HotPotatoes sont affichées sur la page Mon Moodle';
@@ -162,6 +178,21 @@ $string['entrypage_help'] = 'Est-ce que les participants doivent voir la page in
 : La page initiale ne s\'affichera pas et les participants commenceront le test immédiatement.';
 $string['entrytext'] = 'Texte de la page initiale';
 $string['entry_title'] = 'Nom de l\'unité en tant que titre';
+$string['event_attempt_reviewed'] = 'Tentative HotPot révisée';
+$string['event_attempt_reviewed_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a révisé une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_attempt_reviewed_explanation'] = 'Un utilisateur a révisé une tentative dans une activité HotPot';
+$string['event_attempt_started'] = 'Activité HotPot commencée';
+$string['event_attempt_started_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a commencé une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_attempt_started_explanation'] = 'Un utilisateur vient juste de commencer une tentative dans une activité HotPot';
+$string['event_attempt_submitted'] = 'Tentative HotPot soumise';
+$string['event_attempt_submitted_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a soumis une tentative dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_attempt_submitted_explanation'] = 'Un utilisateur vient juste de soumettre une tentative dans une activité HotPot';
+$string['event_base'] = 'Evénement HotPot détecté';
+$string['event_base_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a initié un événement dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_base_explanation'] = 'Un événement a été détecté par le module HotPot';
+$string['event_report_viewed'] = 'Rapport HotPot consulté';
+$string['event_report_viewed_description'] = 'L\'utilisateur ayant l\'identifiant « {$a->userid} » a consulté un rapport de tentatives dans l\'activité « hotpot » avec le module de cours d\'identifiant « {$a->cmid} »';
+$string['event_report_viewed_explanation'] = 'Un utilisateur vient juste de consulter un rapport à propos de tentatives dans une activité HotPot';
 $string['exit_areyouok'] = 'Coucou, vous êtes encore là ?';
 $string['exit_attemptscore'] = 'Votre score pour cette tentative est {$a}';
 $string['exitcm'] = 'Activité suivante';
@@ -202,6 +233,7 @@ $string['exit_feedback_help'] = 'Cette option active ou désactive l\'affichage 
 
 De plus, si la note de la tentative est plus grande que lors des tentatives précédentes, un message s\'affichera pour le signaler.';
 $string['exit_goodtry'] = 'Bien essayé !';
+$string['exitgrade'] = 'Niveau d\'activité suivant';
 $string['exit_grades'] = 'Notes';
 $string['exit_grades_text'] = 'Voir vos notes actuelles pour ce cours';
 $string['exithotpotcourse'] = 'Activité HotPotatoes suivante de ce cours';
@@ -300,6 +332,7 @@ $string['maxeventlength'] = 'Nombre maximum de jours pour un événement de cale
 $string['mediafilter_hotpot'] = 'Filtre multimédia de HotPotatoes';
 $string['mediafilter_moodle'] = 'Filtre multimédia standard de Moodle';
 $string['migratingfiles'] = 'Migration des fichiers du test HotPotatoes';
+$string['migratinglogs'] = 'Migration des logs Hot Potatoes';
 $string['missingsourcetype'] = 'Fichier source manquant pour l\'enregistrement HotPotatoes';
 $string['modulename'] = 'Hot Potatoes';
 $string['modulename_help'] = 'Le module HotPot permet aux enseignants de distribuer du matériel d\'apprentissage interactif à leurs étudiants via Moodle et afficher des rapports sur les réponses et les résultats des élèves.
@@ -365,6 +398,7 @@ $string['noreview'] = 'Désolé, vous n\'êtes pas autorisé à voir les détail
 $string['noreviewafterclose'] = 'Désolé, ce test est fermé. vous ne pouvez plus voir les détails de cette tentative.';
 $string['noreviewbeforeclose'] = 'Désolé, vous n\'êtes pas autorisé à voir les détails de cette tentative avant {$a}';
 $string['nosourcefilesettings'] = 'Information du fichier source manquant pour l\'enregistrement HotPotatoes';
+$string['notattemptedyet'] = 'Pas encore tenté';
 $string['notavailable'] = 'Désolé, cette activité n\'est pas disponible pour vous pour l\'instant.';
 $string['outputformat'] = 'Format d\'affichage';
 $string['outputformat_best'] = 'Meilleur';
@@ -414,7 +448,12 @@ $string['pressoktocontinue'] = 'Cliquer sur OK pour continuer, ou Annuler pour r
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texte d\'aide pour le nom du test';
 $string['quizzes'] = 'Tests';
+$string['responses'] = 'Réponses';
 $string['responsesreport'] = 'Réponses';
+$string['reviewafterattempt'] = 'Autoriser la révision après la tentative';
+$string['reviewafterclose'] = 'Autoriser la révision après la fermeture de l\'activité HotPot';
+$string['reviewduringattempt'] = 'Autoriser la révision pendant la tentative';
+$string['reviewoptions'] = 'Options de révision';
 $string['score'] = 'Score';
 $string['scoresreport'] = 'Scores';
 $string['selectattempts'] = 'Sélectionnez les tentatives';
@@ -504,9 +543,11 @@ $string['title_help'] = 'Ce paramètre spécifie le titre à afficher sur la pag
 
 ** Utiliser le chemin du fichier source **
 : Le chemin du fichier source, y compris tous les noms de dossiers, sera utilisé comme titre de la page Web.';
+$string['toolsindex'] = 'Index des outils HotPot';
 $string['unitname_help'] = 'texte d\'aide pour le nom de l\'unité';
 $string['unrecognizedsourcefile'] = 'Désolé, le module HotPot n\'a pas pu détecter le type du fichier source : {$a}';
 $string['updated'] = 'Mis à jour';
+$string['updatinggrades'] = 'Mise à jour des notes HotPot';
 $string['usefilters'] = 'Utiliser des filtres';
 $string['usefilters_help'] = 'Si ce paramètre est activé, le contenu passera par les filtres Moodle avant d\'être affiché par le navigateur.';
 $string['useglossary'] = 'Utiliser un glossaire';

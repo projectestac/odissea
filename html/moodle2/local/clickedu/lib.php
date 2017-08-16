@@ -25,7 +25,7 @@ function local_clickedu_extend_settings_navigation($settingsnav, $context) {
         return;
     }
 
-    if (!has_capability('local/clickedu:synccontents', $PAGE->context->get_course_context())) {
+    if (!has_capability('local/clickedu:synccontents', context_course::instance($PAGE->course->id))) {
         return;
     }
 

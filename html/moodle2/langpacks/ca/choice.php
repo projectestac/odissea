@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,7 +82,7 @@ L\'activitat de consulta es pot utilitzar:
 
 * Per tal de verificar ràpidament la comprensió dels estudiants
 
-* Per facilitar la presa de decisions dels estudiants, per exemple, permetent que els estudiants votin sobre algun aspecte del curs.';
+* Per facilitar la presa de decisions dels estudiants; per exemple, permetent que els estudiants votin sobre algun aspecte del curs.';
 $string['modulenameplural'] = 'Consultes';
 $string['moveselectedusersto'] = 'Mou els usuaris seleccionats a...';
 $string['multiplenotallowederror'] = 'No estan permeses respostes múltiples en aquesta consulta';
@@ -124,7 +124,6 @@ $string['skipresultgraph'] = 'Omet el gràfic de resultats';
 $string['spaceleft'] = 'Espai disponible';
 $string['spacesleft'] = 'Espais disponibles';
 $string['taken'] = 'Ocupat';
-$string['timerestrict'] = 'Limita les respostes a aquest període de temps';
 $string['userchoosethisoption'] = 'Usuaris que han escollit aquesta opció';
 $string['viewallresponses'] = 'Visualitza respostes ({$a})';
 $string['withselected'] = 'Amb la selecció';

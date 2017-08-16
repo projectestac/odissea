@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,18 +30,20 @@ $string['allowmultiple'] = 'Mehr als eine Auswahl erlauben';
 $string['allowupdate'] = 'Änderung der Auswahl erlauben';
 $string['answered'] = 'Beantwortet';
 $string['atleastoneoption'] = 'Sie müssen mindestens eine mögliche Abstimmoption angeben.';
+$string['calendarend'] = 'Abstimmung {$a} endet';
+$string['calendarstart'] = 'Abstimmung {$a} beginnt';
 $string['cannotsubmit'] = 'Ihre Auswahl konnte nicht gespeichert werden. Versuchen Sie es bitte noch einmal.';
 $string['choice'] = 'Abstimmung';
 $string['choiceactivityname'] = 'Abstimmung: {$a}';
 $string['choice:addinstance'] = 'Abstimmung hinzufügen';
 $string['choice:choose'] = 'Abstimmung vornehmen';
-$string['choiceclose'] = 'bis';
+$string['choiceclose'] = 'Antworten zulassen bis';
 $string['choicecloseson'] = 'Ende der Abstimmung: {$a}';
-$string['choice:deleteresponses'] = 'Antworten löschen';
+$string['choice:deleteresponses'] = 'Antworten ändern und löschen';
 $string['choice:downloadresponses'] = 'Antworten herunterladen';
 $string['choicefull'] = 'Diese Option ist voll und es sind keine Plätze mehr verfügbar.';
 $string['choicename'] = 'Abstimmungsname';
-$string['choiceopen'] = 'von';
+$string['choiceopen'] = 'Antworten zulassen ab';
 $string['choiceoptions'] = 'Abstimmoptionen';
 $string['choiceoptions_help'] = 'Tragen Sie die Abstimmoptionen ein, zwischen denen sich die Teilnehmer/innen entscheiden sollen.
 
@@ -49,7 +51,9 @@ Sie können jedes der vorhandenen Felder ausfüllen, Sie dürfen aber auch nicht
 $string['choice:readresponses'] = 'Antworten anzeigen';
 $string['choicesaved'] = 'Ihre Auswahl wurde gespeichert';
 $string['choicetext'] = 'Abstimmungstext';
+$string['choice:view'] = 'Abstimmungsaktivität anzeigen';
 $string['chooseaction'] = 'Aktion auswählen...';
+$string['chooseoption'] = 'Auswahl: {$a}';
 $string['closebeforeopen'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['completionsubmit'] = 'Als abgeschlossen anzeigen, wenn die Abstimmung durchgeführt wurde
  ';
@@ -57,8 +61,9 @@ $string['description'] = 'Beschreibung';
 $string['displayhorizontal'] = 'Horizontal anzeigen';
 $string['displaymode'] = 'Anzeigemodus';
 $string['displayvertical'] = 'Vertikal anzeigen';
-$string['eventanswercreated'] = 'Abstimmung durchgeführt';
+$string['eventanswercreated'] = 'Abstimmungsantwort hinzugefügt';
 $string['eventanswerdeleted'] = 'Abstimmungsantwort gelöscht';
+$string['eventanswersubmitted'] = 'Abstimmung durchgeführt';
 $string['eventanswerupdated'] = 'Abstimmung aktualisiert';
 $string['eventreportdownloaded'] = 'Abstimmungsübersicht heruntergeladen';
 $string['eventreportviewed'] = 'Abstimmungsübersicht angezeigt';
@@ -117,7 +122,6 @@ $string['skipresultgraph'] = 'Ergebnisanzeige überspringen';
 $string['spaceleft'] = 'Platz verfügbar';
 $string['spacesleft'] = 'Plätze verfügbar';
 $string['taken'] = 'Eingetragen';
-$string['timerestrict'] = 'Abstimmung nur im Zeitraum';
 $string['userchoosethisoption'] = 'Teilnehmer/innen mit dieser Auswahl';
 $string['viewallresponses'] = '{$a} Antworten zeigen';
 $string['withselected'] = 'Mit Auswahl';

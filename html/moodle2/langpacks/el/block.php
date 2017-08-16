@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['moveblockafter'] = 'Μετακίνηση μπλοκ μετά το μπ�
 $string['moveblockbefore'] = 'Μετακίνηση μπλοκ πριν από το μπλοκ {$a}';
 $string['moveblockinregion'] = 'Μετακίνηση μπλοκ στην περιοχή {$a}';
 $string['movingthisblockcancel'] = 'Μετακίνηση του μπλοκ ({$a})';
+$string['myblocks'] = 'Τα μπλοκ μου';
 $string['onthispage'] = 'Σε αυτή τη σελίδα';
 $string['pagetypes'] = 'Τύποι σελίδας';
 $string['region'] = 'Περιοχή';
@@ -54,5 +55,5 @@ $string['showonfrontpageandsubs'] = 'Εμφάνιση στην πρώτη σελ
 $string['showonfrontpageonly'] = 'Εμφάνιση στην πρώτη σελίδα μόνο';
 $string['subpages'] = 'Επιλέξτε σελίδες';
 $string['visible'] = 'Ορατός';
-$string['weight'] = 'Βάρος';
+$string['weight'] = 'Βαρύτητα';
 $string['wherethisblockappears'] = 'Που εμφανίζεται αυτό το μπλοκ';

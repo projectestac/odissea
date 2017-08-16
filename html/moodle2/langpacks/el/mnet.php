@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mnet', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,13 +28,13 @@ defined('MOODLE_INTERNAL') || die();
 $string['aboutyourhost'] = 'Σχετικά με τον εξυπηρετητή σας';
 $string['accesslevel'] = 'Επίπεδο Πρόσβασης';
 $string['addhost'] = 'Προσθήκη κεντρικού υπολογιστή';
-$string['addnewhost'] = 'Προσθήκη ενός νέου κεντρικού υπολογιστή';
+$string['addnewhost'] = 'Προσθήκη νέου κεντρικού υπολογιστή';
 $string['addtoacl'] = 'Προσθήκη στον Έλεγχο Πρόσβασης';
 $string['allow'] = 'Επιτρέπεται';
 $string['authfail_nosessionexists'] = 'Η εξουσιοδότηση απέτυχε: η σύνοδος mnet δεν υπάρχει.';
 $string['authfail_sessiontimedout'] = 'Η εξουσιοδότηση απέτυχε: η σύνοδος mnet έληξε.';
 $string['authfail_usermismatch'] = 'Η εξουσιοδότηση απέτυχε: ο χρήστης δεν αντιστοιχεί κάπου.';
-$string['authmnetdisabled'] = 'Η <em>υπομονάδα λογισμικού Πιστοποίησης</em> της Δικτύωσης Moodle είναι <strong>απενεργοποιημένη</strong>.';
+$string['authmnetdisabled'] = 'Το πρόσθετο αυθεντικοποίησης MNet  είναι <strong>απενεργοποιημένο</strong>.';
 $string['badcert'] = 'Αυτό δεν είναι ένα έγκυρο πιστοποιητικό.';
 $string['certdetails'] = 'Λεπτομέρειες Πιστοποιητικού';
 $string['configmnet'] = 'Η Δικτύωση Moodle επιτρέπει την επικοινωνία αυτού του εξυπηρετητή μέ άλλους εξυπηρετητές ή υπηρεσίες.';
@@ -94,7 +94,7 @@ $string['invalidhost'] = 'Πρέπει να παρέχετε ένα έγκυρο
 $string['invalidpubkey'] = 'Το κλειδί δεν είναι ένα έγκυρο κλειδί SSL. ({$a})';
 $string['invalidurl'] = 'Μη έγκυρες παράμετροι URL.';
 $string['ipaddress'] = 'Διεύθυνση IP';
-$string['is_in_range'] = 'Η διεύθυνση IP &nbsp;<code>{$a}</code>&nbsp; αναπαριστά έναν έγκυρο έμπιστο κεντρικό υπολογιστή.';
+$string['is_in_range'] = 'Η διεύθυνση IP <code>{$a}</code> αναπαριστά έναν έγκυρο έμπιστο κεντρικό υπολογιστή.';
 $string['ispublished'] = 'Το Moodle {$a} έχει ενεργοποιήσει αυτή την υπηρεσία για εσάς.';
 $string['issubscribed'] = 'Το Moodle {$a} εγγράφεται σε αυτή την υπηρεσία στον κεντρικό υπολογιστή σας.';
 $string['keydeleted'] = 'Το κλειδί σας έχει διαγραφεί και αντικατασταθεί με επιτυχία.';
@@ -131,7 +131,7 @@ $string['nosuchpublickey'] = 'Αδυναμία απόκτησης του δημ�
 $string['nosuchservice'] = 'Η υπηρεσία RPC δεν τρέχει σε αυτόν τον κεντρικό υπολογιστή.';
 $string['nosuchtransport'] = 'Δεν υπάρχει μεταφορά με αυτο το αναγνωριστικό.';
 $string['notBASE64'] = 'Το αλφαριθμητικό δεν είναι στην μορφή κωδικοποίησης Base64. Δεν μπορεί να είναι ένα έγκυρο κλειδί.';
-$string['not_in_range'] = 'Η διεύθυνση IP &nbsp;<code>{$a}</code>&nbsp; δεν αναπαριστά έναν έγκυρο έμπιστο κεντρικό υπολογιστή.';
+$string['not_in_range'] = 'Η διεύθυνση IP <code>{$a}</code> δεν αναπαριστά έναν έγκυρο έμπιστο κεντρικό υπολογιστή.';
 $string['notPEM'] = 'Αυτό το κλειδί δεν είναι σε μορφή PEM. Δεν θα δουλέψει.';
 $string['notpermittedtojump'] = 'Δεν έχετε δικαίωμα να εκκινήσετε μια απομακρυσμένη σύνοδο από αυτό το κομβικό σημείο Moodle.';
 $string['notpermittedtoland'] = 'Δεν έχετε δικαίωμα να εκκινήσετε μια απομακρυσμένη σύνοδο.';

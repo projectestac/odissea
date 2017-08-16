@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,9 +118,9 @@ $string['configmediaclose'] = 'Presenta un botón de peche como parte da xanela 
 $string['configmediaheight'] = 'Estabelece a altura da xanela presentada para un ficheiro multimedia ligado';
 $string['configmediawidth'] = 'Estabelece a largura da xanela presentada para un ficheiro multimedia ligado';
 $string['configpassword_desc'] = 'Se se require o contrasinal para acceder á lección.';
-$string['configslideshowbgcolor'] = 'Cor de fondo para o diaporama se está activado';
-$string['configslideshowheight'] = 'Estabelece a altura do diaporama se está activado';
-$string['configslideshowwidth'] = 'Estabelece a largura do diaporama se está activado';
+$string['configslideshowbgcolor'] = 'Cor de fondo para a presentación se está activado';
+$string['configslideshowheight'] = 'Estabelece a altura da presentación se está activada';
+$string['configslideshowwidth'] = 'Estabelece a largura da presentación se está activada';
 $string['configtimelimit_desc'] = 'Se se estabelece un límite de tempo, amosase un aviso no principio da lección e cando houber un cronómetro descendente. Se se configura a cero, entón non hai límite de tempo.';
 $string['confirmdelete'] = 'Eliminar páxina';
 $string['confirmdeletionofthispage'] = 'Confirmar a eliminación desta páxina';
@@ -185,7 +185,6 @@ $string['enterpassword'] = 'Introduza o contrasinal:';
 $string['eolstudentoutoftime'] = 'Atención: Rematou o tempo. Talvez non se conte a súa última resposta se é que a completou despois de rematar o tempo.';
 $string['eolstudentoutoftimenoanswers'] = 'Non respondeu ningunha pregunta. Ten un 0 nesta lección.';
 $string['essay'] = 'Ensaio';
-$string['essayemailmessage'] = '<p>Pregunta de ensaio:<blockquote>{$a->question}</blockquote></p><p>A súa resposta:<blockquote><em>{$a->response}</em></blockquote></p><p> Comentarios de {$a->teacher}:<blockquote><em>{$a->comment}</em></blockquote></p><p>Recibiu un {$a->earned} sobre {$a->outof} nesta pregunta do ensaio.</p><p>A súa cualificación nesta lección pasou a ser {$a->newgrade}&#37;.</p>';
 $string['essayemailmessage2'] = '<p>Pregunta de ensaio:<blockquote>{$a->question}</blockquote></p><p>A súa resposta:<blockquote><em>{$a->response}</em></blockquote></p><p> Comentario de cualificador:<blockquote><em>{$a->comment}</em></blockquote></p><p>Recibiu un {$a->earned} sobre {$a->outof} nesta pregunta do ensaio.</p><p>A súa cualificación nesta lección pasou a ser {$a->newgrade}&#37;.</p>';
 $string['essayemailsubject'] = 'A súa cualificación para a pregunta {$a}';
 $string['essayresponses'] = 'Respostas de ensaio';
@@ -254,7 +253,6 @@ $string['leftduringtimed'] = 'Abandonou unha lección cronometrada.<br />Prema e
 $string['leftduringtimednoretake'] = 'Abandonou unha lección cronometrada e <br />non ten permiso para retomala ou continuala.';
 $string['leftduringtimedsession'] = 'Abandonou durante a lección cronometrada.';
 $string['lesson:addinstance'] = 'Engadir unha nova lección';
-$string['lessonattempted'] = 'Lección intentada';
 $string['lessonclosed'] = 'Esta lección terminou o {$a}.';
 $string['lessoncloses'] = 'Termina a lección';
 $string['lessoncloseson'] = 'Esta lección terminou o {$a}';
@@ -304,7 +302,7 @@ $string['modattempts'] = 'Permitirlle a revisión aos alumnos';
 $string['modattempts_help'] = 'De estar activado, os alumnos poden navegar a través da lección desde o principio.';
 $string['modattemptsnoteacher'] = 'A revisión de alumno só funciona para alumnos.';
 $string['modulename'] = 'Lección';
-$string['modulename_help'] = 'O módulo de actividade de lección permítelle a un profesor entregar contido e/ou actividades de práctica de xeitos interesante e flexíbeis. Un profesor pode utilizar a lección para crear un conxunto linear de páxinas de contido ou actividades instrutivas que ofrecen unha variedade de camiños ou opción para o discente. En calquera caso, os profesores poden escoller para incrementar o compromiso e asegurar a comprensión incluír unha variedade de preguntas, como as escolla múltipla, coincidencia e resposta curta. En función da escolla de resposta do alumno e de como o profesor desenvolva a lección, os alumnos poden avanzar á seguinte páxina, retomar a páxina previa ou redirixirse a un roteiro enteiramente diferente.
+$string['modulename_help'] = 'O módulo de actividade de lección permítelle a un profesor entregar contido e/ou actividades de práctica de xeitos interesante e flexíbeis. Un profesor pode utilizar a lección para crear un conxunto linear de páxinas de contido ou actividades instrutivas que ofrecen unha variedade de camiños ou opción para o discente. En calquera caso, os profesores poden escoller para incrementar o compromiso e asegurar a comprensión incluír unha variedade de preguntas, como as escolla múltiple, coincidencia e resposta curta. En función da escolla de resposta do alumno e de como o profesor desenvolva a lección, os alumnos poden avanzar á seguinte páxina, retomar a páxina previa ou redirixirse a un roteiro enteiramente diferente.
 
 Unha lección pode se cualificada, coa cualificación rexistrada no libro de cualificacións.
 
@@ -320,10 +318,10 @@ $string['movedpage'] = 'Páxina movida';
 $string['movepagehere'] = 'Mover páxina a aquí';
 $string['movepagenamed'] = 'Mover a páxina: {$a}';
 $string['moving'] = 'Movendo páxina: {$a}';
-$string['multianswer'] = 'Resposta múltipla';
+$string['multianswer'] = 'Resposta múltiple';
 $string['multianswer_help'] = 'Activar a caixa de selección cando máis dunha resposta sexan correctas.';
 $string['multichoice'] = 'Multiescolla';
-$string['multipleanswer'] = 'Resposta múltipla';
+$string['multipleanswer'] = 'Resposta múltiple';
 $string['nameapproved'] = 'Nome aprobado';
 $string['namereject'] = 'Desculpe, o filtro rexeitou o seu nome.<br />Tente con outro nome.';
 $string['new'] = 'nova';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assignment', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['assignment:addinstance'] = 'Προσθήκη νέας εργασίας';
+$string['assignmentdisabled'] = 'Η δραστηριότητα παλαιότερης έκδοσης "Εργασία 2.2" έχει απενεργοποιηθεί.';
 $string['assignment:exportownsubmission'] = 'Εξαγωγή ιδίας υποβολής';
 $string['assignment:exportsubmission'] = 'Εξαγωγή υποβολής';
 $string['assignment:grade'] = 'Βαθμός εργασίας';
+$string['assignmentneedsupgrade'] = 'Η δραστηριοτήτα παλαιότερης έκδοσης "Εργασία 2.2" έχει απενεργοποιηθεί. Παρακαλώ ζητήστε από τον διαχειριστή του ιστοχώρου να εκτελέσει το εργαλείο αναβάθμισης της εργασίας για όλες τις αναθέσεις παλαιότερης έκδοσης σε αυτόν τον ιστοχώρο.';
 $string['assignment:submit'] = 'Υποβολή εργασίας';
 $string['assignment:view'] = 'Προβολή εργασίας';
 $string['modulename'] = 'Εργασία (2.2)';
-$string['modulename_help'] = '<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod/assignment/icon.gif" />&nbsp;<b>Εργασίες</b></p>
-<div class="indent">Οι εργασίες δίνουν τη δυνατότητα στον καθηγητή να ζητήσει από τους μαθητές ένα παραδοτέο βάσει του οποίου θα βαθμολογηθούν. Το παραδοτέο μπορεί να είναι οποιασδήποτε μορφής (κείμενο, εικόνα, άλλο αρχείο) και αποθηκεύεται στο διακομιστή του Moodle.</div>';
+$string['modulename_help'] = 'Το άρθρωμα δραστηριότητας παλαιότερης έκδοσης έχει αφαιρεθεί από το Moodle.';
 $string['modulenameplural'] = 'Εργασίες';
 $string['pluginname'] = 'Εργασία (2.2)';

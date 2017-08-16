@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Nombre de notes les plus élevées à afficher (0
 $string['config_show_worst'] = 'Nombre de notes les plus basses à afficher (0 pour désactiver)';
 $string['configuredtoshownothing'] = 'La configuration actuelle de ce bloc ne permet pas d\'afficher de résultat.';
 $string['config_use_groups'] = 'Afficher les groupes au lieu des étudiants (ne fonctionne que si l\'activité supporte les groupes)';
+$string['defaultdecimalplaces'] = 'Décimales';
+$string['defaultdecimalplaces_desc'] = 'Nombre de décimales à afficher par défaut';
+$string['defaultgradedisplay'] = 'Afficher les notes comme';
+$string['defaultgradedisplay_desc'] = 'Affichage par défaut des notes';
+$string['defaulthighestgrades'] = 'Notes les plus hautes affichées par défaut';
+$string['defaulthighestgrades_desc'] = 'Nombre de notes les plus hautes à afficher par défaut';
+$string['defaultlowestgrades'] = 'Notes les plus basses affichées par défaut';
+$string['defaultlowestgrades_desc'] = 'Nombre de notes les plus basses à afficher par défaut';
+$string['defaultnameoptions'] = 'Confidentialité des résultats';
+$string['defaultnameoptions_desc'] = 'Mode d\'identification des étudiants par défaut';
+$string['defaultshowgroups'] = 'Afficher les groupes par défaut';
+$string['defaultshowgroups_desc'] = 'Afficher par défaut les groupes au lieu des étudiants (seulement si l\'activité permet les groupes)';
 $string['error_emptyactivityid'] = 'Veuillez configurer ce bloc et choisir l\'activité dont les résultats doivent être affichés.';
 $string['error_emptyactivityrecord'] = 'Erreur : l\'activité choisie n\'existe pas dans la base de données.';
 $string['error_nogroupsexist'] = 'Erreur : le bloc est configuré pour afficher les résultats de groupes, mais le cours ne comporte pas de groupe.';

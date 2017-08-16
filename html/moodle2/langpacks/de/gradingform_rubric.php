@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Kriterium hinzufügen';
-$string['alwaysshowdefinition'] = 'Nutzer/innen erlauben, eine Vorschau auf die im Modul benutzte Rubrik zu bekommen (andernfalls wird die Rubrik erst nach der Bewertung sichtbar)';
+$string['alwaysshowdefinition'] = 'Nutzer/innen eine Vorschau auf die Rubrik erlauben (andernfalls wird die Rubrik erst nach der Bewertung sichtbar)';
 $string['backtoediting'] = 'Zurück zum Bearbeiten';
 $string['confirmdeletecriterion'] = 'Wollen Sie dieses Kriterium wirklich löchen?';
 $string['confirmdeletelevel'] = 'Möchten Sie dieses Level wirklich löschen?';
@@ -37,46 +37,53 @@ $string['criterionduplicate'] = 'Doppeltes Kriterium';
 $string['criterionempty'] = 'Zum Bearbeiten des Kriteriums anklicken';
 $string['criterionmovedown'] = 'Nach unten verschieben';
 $string['criterionmoveup'] = 'Nach oben verschieben';
-$string['definerubric'] = 'Rubric definieren';
+$string['definerubric'] = 'Rubrik definieren';
 $string['description'] = 'Beschreibung';
 $string['enableremarks'] = 'Erläuterungen zu jedem Kriterium für Bewerter/in zulassen';
 $string['err_mintwolevels'] = 'Ein Kriterium benötigt zumindest zwei Werte';
-$string['err_nocriteria'] = 'Rubrics benötigen mindestens ein Kriterium';
+$string['err_nocriteria'] = 'Rubriken benötigen mindestens ein Kriterium';
 $string['err_nodefinition'] = 'Die Leveldefinition darf nicht leer bleiben';
 $string['err_nodescription'] = 'Die Kriterienbeschreibung darf nicht leer bleiben';
-$string['err_scoreformat'] = 'Die Punkte für jedes Level müssen eine positive Zahl sein.';
-$string['err_totalscore'] = 'Höchstzahl an erreichbaren Punkten muss größer als Null sein';
+$string['err_scoreformat'] = 'Die Punktzahl für jedes Level muss ein zulässige Zahl sein.';
+$string['err_totalscore'] = 'Höchstzahl an erreichbaren Punkten muss größer als 0 sein';
 $string['gradingof'] = '{$a} werden bewertet';
 $string['level'] = 'Level {$a->definition}, {$a->score} Punkte.';
 $string['leveldefinition'] = 'Definition Level {$a}';
 $string['leveldelete'] = 'Level {$a} löschen';
 $string['levelempty'] = 'Klicken um Level zu bearbeiten';
+$string['lockzeropoints'] = 'Bewertung abhängig davon berechnen, ob die Rubrik eine Mindestpunktzahl von 0 hat';
+$string['lockzeropoints_help'] = 'Diese Einstellung greift nur, wenn die minimal erreichbare Punktzahl über alle Kriterien größer als 0 ist. Wenn die Einstellung aktiviert wird, sind nur Bewertungen für die Rubrik möglich, die größer als 0 sind. Wird sie deaktiviert, wird die kleinstmögliche Punktzahl auf die schlechteste Bewertung abgebildet (0 wenn keine Skala verwendet wird).';
 $string['name'] = 'Name';
-$string['needregrademessage'] = 'Die Rubric-Definition wurde geändert nachdem ein Teilnehmer bewertet wurde. Teilnehmer sehen diese Bewertung solange nicht bis Sie die Rubric geprüft und die Bewertung aktualisiert haben.';
-$string['pluginname'] = 'Rubric';
+$string['needregrademessage'] = 'Die Rubrik wurde geändert nachdem ein/e Teilnehmer/in bewertet wurde. Teilnehmer/innen sehen diese Bewertung solange nicht bis Sie die Rubrik geprüft und die Bewertung aktualisiert haben.';
+$string['pluginname'] = 'Rubrik';
 $string['previewrubric'] = 'Rubrik-Vorschau';
-$string['regrademessage1'] = 'Sie ändern eine Rubric, die bereits zur Bewertung verwendet wurde. Existierende Bewertungen müssen nun noch einmal durchgesehen werden. Bis dahin werden diese Bewertungen für Teilnehmende verborgen.';
-$string['regrademessage5'] = 'Sie nehmen wesentliche Änderungen an der Rubric vor. Die Rubric wurde bereits für Bewertugen genutzt. Der Wert im Bewertungsbereich bleibt unverändert. Die Rubric wird für Teilnehmende jedoch verborgen, bis Sie die Bewertungen geprüft haben.';
+$string['regrademessage1'] = 'Sie ändern eine Rubrik, die bereits zur Bewertung verwendet wurde. Existierende Bewertungen müssen nun noch einmal kontrolliert werden. Bis dahin werden diese Bewertungen vor den Teilnehmer/innen verborgen.';
+$string['regrademessage5'] = 'Sie nehmen wesentliche Änderungen an der Rubrik vor. Diese wurde bereits für Bewertungen verwendet. Der Wert im Bewertungssystem bleibt unverändert, aber die Rubrik wird vor den Teilnehmer/innen verborgen, bis Sie deren Abgaben neu bewertet haben.';
 $string['regradeoption0'] = 'Nicht für Neubewertung markieren';
 $string['regradeoption1'] = 'Für Neubewertung markieren';
 $string['restoredfromdraft'] = 'Anmerkung: Der letzte Versuch zur Bewertung dieses Nutzers wurde nicht richtig gespeichert und nur als Entwurf hinterlegt. Mit dem Abbrechen Button unten können Sie diese Änderungen berabeiten.';
-$string['rubric'] = 'Rubric';
+$string['rubric'] = 'Rubrik';
 $string['rubricmapping'] = 'Regeln der Zuordnung von Punkten zu Bewertungen';
-$string['rubricmappingexplained'] = 'Der geringst mögliche Punktwert für diese Rubric ist. <b>{$a->minscore} Punkte </b> und wird der niedrgsten Bewertung (Null falls keine eigene Skala verwendet wird) zugewiesen.
-Der Höchstwert <b>{$a->maxscore} Punkte</b> wird der Höchstbewertung zugeordnet. <br />Dazwischen liegende Werte werden der jeweils am nächsten liegenden Bewerung zugeordnet.<br />
-Wenn eine Skala statt Punktwerten genutzt wird erfolgt die Zuordnung entsprechend.';
+$string['rubricmappingexplained'] = 'Die geringste Punktzahl für diese Rubrik ist <b>{$a->minscore} Punkte </b> und wird auf die schlechteste Bewertung (0 wenn keine Skala verwendet wird) abgebildet.
+Die höchste Punktzahl, <b>{$a->maxscore} Punkte</b>, wird auf die beste Bewertung abgebildet. <br />Dazwischen liegende Werte werden entsprechend angepasst.<br />
+
+Wenn eine Skala genutzt wird, wird die Punktzahl auf die Skalenelemente abgebildet, die dabei als eine aufeinanderfolgende Zahlenreihe interpretiert werden.
+
+Die Berechnung der Bewertung kann geändert werden, indem bei der Bearbeitung des Formulars das Feld "Bewertung abhängig davon berechnen, ob die Rubrik eine Mindestpunktzahl von 0 hat" markiert wird.';
 $string['rubricnotcompleted'] = 'Bitte tragen sie bei jedem Kriterium einen Wert ein';
-$string['rubricoptions'] = 'Rubric-Optionen';
-$string['rubricstatus'] = 'Derzeitiger Rubric-Status';
+$string['rubricoptions'] = 'Optionen';
+$string['rubricstatus'] = 'Aktueller Rubrikstatus';
 $string['save'] = 'Speichern';
-$string['saverubric'] = 'Rubrics speichern und fertig machen';
+$string['saverubric'] = 'Rubrik speichern und fertigstellen';
 $string['saverubricdraft'] = 'Als Entwurf speichern';
 $string['scorepostfix'] = '{$a} Punkte';
-$string['showdescriptionstudent'] = 'Rubric-Beschreibung zu Bewertungen anzeigen';
-$string['showdescriptionteacher'] = 'Rubric-Beschreibung zur Evaluation anzeigen';
+$string['showdescriptionstudent'] = 'Beschreibung den Teilnehmer/innen anzeigen';
+$string['showdescriptionteacher'] = 'Beschreibung während der Bewertung anzeigen';
 $string['showremarksstudent'] = 'Bemerkungen zu Bewertungen anzeigen';
 $string['showscorestudent'] = 'Punkte für jedes Level bei Bewertung anzeigen';
 $string['showscoreteacher'] = 'Punkte für jedes Level zur Evaluation anzeigen';
 $string['sortlevelsasc'] = 'Sortierfolge für Level:';
 $string['sortlevelsasc0'] = 'Absteigend (Punkte)';
 $string['sortlevelsasc1'] = 'Aufsteigend (Punkte)';
+$string['zerolevelsabsent'] = 'Warnung: Die minimale Punktzahl für diese Rubrik ist nicht 0! Dies kann zu unerwarteten Bewertungen für die Aktivität führen. Um dies zu vermeiden sollte jedes Kriterium ein Level mit 0 Punkten haben.<br>
+Diese Warnung kann ignoriert werden, wenn eine Skala verwendet wird und die minimalen Punktzahlen der Rubrik dem Minimalwert der Skala entsprechen.';

@@ -50,7 +50,7 @@ define(['jquery', 'core/ajax'], function($, ajax) {
 
         var promises = ajax.call([{
             methodname: 'core_get_fragment',
-            args:{
+            args: {
                 component: component,
                 callback: callback,
                 contextid: contextid,
@@ -109,7 +109,7 @@ define(['jquery', 'core/ajax'], function($, ajax) {
                             allScript += ' ' + scriptNode.text();
                         }
                     }
-                }.bind(this));
+                });
                 promise.resolve(data.html, allScript);
             }).fail(function(ex) {
                 promise.reject(ex);

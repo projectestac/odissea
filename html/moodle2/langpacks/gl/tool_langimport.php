@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_langimport', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['install'] = 'Instalar o/s paquete/s de idioma seleccionado';
+$string['install'] = 'Instalar o paquete de idioma seleccionado';
 $string['installedlangs'] = 'Paquetes de idioma instalados';
 $string['langimport'] = 'Utilidade para a importación de idiomas';
-$string['langimportdisabled'] = 'Foi desactivada a opción de importación de idioma. Deberá actualizar os seus paquetes de idioma manualmente no nivel de sistema de ficheiros. Non esqueza purgar as cachés de cadeas despois de facelo.';
+$string['langimportdisabled'] = 'Foi desactivada a opción de importación de idioma. Deberá actualizar os seus paquetes de idioma manualmente no nivel de sistema de ficheiros. Non esqueza purgar a cachés de cadeas despois de facelo.';
 $string['langpackinstalled'] = 'O paquete de idioma «{$a}» foi instalado satisfactoriamente';
 $string['langpackinstalledevent'] = 'O paquete de idioma foi instalado';
 $string['langpacknotremoved'] = 'Produciuse un erro; o paquete del idioma «{$a}» non está completamente desinstalado, revise os permisos de ficheiros.';
-$string['langpackremoved'] = 'O paquete de idioma «{$a}» foi desinstalado';
+$string['langpackremoved'] = 'O paquete de idioma foi desinstalado';
 $string['langpackremovedevent'] = 'O paquete de idioma foi desinstalado';
 $string['langpackupdated'] = 'O paquete de idioma «{$a}» foi actualizado satisfactoriamente';
 $string['langpackupdatedevent'] = 'O paquete de idioma foi actualizado';
@@ -45,8 +45,8 @@ $string['noenglishuninstall'] = 'Non é posíbel desinstalar o paquete de idioma
 $string['nolangupdateneeded'] = 'Ningún dos seus paquetes de idioma precisa de ser actualizado.';
 $string['pluginname'] = 'Paquetes de idioma';
 $string['purgestringcaches'] = 'Purgar as cachés de cadeas';
-$string['remotelangnotavailable'] = 'Por mor de que Moodle non pode conectarse a download.moodle.org, non é posíbel instalar os paquetes de idioma automáticamente. Descargue os ficheiros ZIP apropiados de <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>, cópieos ao seu directorio {$a} e descomprímaos manualmente.';
+$string['remotelangnotavailable'] = 'Non podemos facer a instalación do paquete de idioma debido a que o Moodle non consegue conectarse con download.moodle.org. Por favor, descargue os ficheiros comprimidos da lista de abaixo, cópieos no directorio {$a} e descomprímaos manualmente.';
 $string['selectlangs'] = 'Seleccione os idiomas a desinstalar';
 $string['uninstall'] = 'Desinstale o paquete de idiomas seleccionado';
-$string['uninstallconfirm'] = 'Está a punto de desinstalar completamente o paquete de idiomas <strong>{$a}</strong>, está certo?';
+$string['uninstallconfirm'] = 'Está a punto de desinstalar completamente o paquete de idiomas {$a}, está certo?';
 $string['updatelangs'] = 'Actualizar todos os paquetes de idiomas locais';

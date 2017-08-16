@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'これはあなたのエントリではあり�
 $string['entrysaved'] = 'あなたのエントリが保存されました。';
 $string['entrytitle'] = 'エントリタイトル';
 $string['eventblogassociationadded'] = 'ブログ関連付けが作成されました。';
+$string['eventblogassociationdeleted'] = 'ブログ関連付けが削除されました。';
 $string['eventblogentriesviewed'] = 'ブログエントリが閲覧されました。';
+$string['eventblogexternaladded'] = '外部ブログが登録されました。';
+$string['eventblogexternalremoved'] = '外部ブログが登録解除されました。';
+$string['eventblogexternalupdated'] = '外部ブログが更新されました。';
 $string['evententryadded'] = 'ブログエントリが追加されました。';
 $string['evententrydeleted'] = 'ブログエントリが削除されました。';
 $string['evententryupdated'] = 'ブログエントリが更新されました。';
+$string['eventexternalblogsviewed'] = '登録済み外部ブログが閲覧されました。';
 $string['externalblogcrontime'] = '外部ブログのcronスケジュール';
 $string['externalblogdeleteconfirm'] = 'この外部ブログの登録を解除しますか?';
 $string['externalblogdeleted'] = '外部ブログの登録が解除されました。';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = '取得先: ';
 $string['rssfeed'] = 'ブログRSSフィード';
 $string['searchterm'] = '検索: {$a}';
 $string['settingsupdatederror'] = 'エラーが発生したため、ブログプリファレンス設定は更新されませんでした。';
-$string['siteblog'] = 'サイトブログ: {$a}';
 $string['siteblogdisable'] = 'サイトブログは有効にされていません。';
 $string['siteblogheading'] = 'サイトブログ';
 $string['siteblogs'] = 'すべてのサイトユーザはすべてのブログを読むことができる';

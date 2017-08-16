@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,6 +84,8 @@ $string['compatibilitysettings'] = 'Impostazioni di compatibilità';
 $string['completed'] = 'Completato';
 $string['completionscorerequired'] = 'Punteggio minimo richiesto';
 $string['completionscorerequired_help'] = 'Un utente, oltre a soddisfare eventuali altri criteri di completamento, dovrà raggiungere il punteggio impostato per completare l\'attività SCORM.';
+$string['completionstatusallscos'] = 'Tutti gli SCO devono riportare lo stato';
+$string['completionstatusallscos_help'] = 'Alcuni pacchetti SCORM sono composti da più SCO. Abilitando questa impostazione tutti gli SCO dovranno riportare lo stato prescelto affinché l\'attiivtà possa risultare completata.';
 $string['completionstatus_completed'] = 'Completed';
 $string['completionstatus_passed'] = 'Passed';
 $string['completionstatusrequired'] = 'Stato richiesto';
@@ -109,7 +111,7 @@ $string['displayactivityname'] = 'Visualizza nome dell\'attività';
 $string['displayactivityname_help'] = 'Consente di visualizzare il nome dell\'attività sopra lo SCORM player.';
 $string['displayattemptstatus'] = 'Visualizza  lo stato dei tentativi';
 $string['displayattemptstatusdesc'] = 'Imposta la visualizzazione del riepilogo dei tentativi dell\'utente nella Dashboard all\'interno del blocco Panoramica corsi e/o nella pagina di ingresso dell\'attività SCORM.';
-$string['displayattemptstatus_help'] = 'Consente di visualizzare un riepilogo dello stato dei nel blocco Panoramica corsi nella Dashboard e/o nella pagina con la struttura del pacchetto del modulo SCORM.';
+$string['displayattemptstatus_help'] = 'Consente di visualizzare un riepilogo dello stato dei tentativi nel blocco Panoramica corsi nella Dashboard e/o nella pagina con la struttura del pacchetto del modulo SCORM.';
 $string['displaycoursestructure'] = 'Visualizza la struttura del corso nella pagina di ingresso';
 $string['displaycoursestructuredesc'] = 'Imposta la visualizzazione della struttura del corso nella pagina di ingresso';
 $string['displaycoursestructure_help'] = 'Visualizza la struttura del corso nella pagina di riepilogo SCORM.';
@@ -416,3 +418,4 @@ Gestione di tentativi multipli
 * Le impostazioni "Forza completamento", "Forza un nuovo tentativo" e "Blocca dopo l\'ultimo tentativo" permettono di gestire al meglio i tentativi multipli.';
 $string['width'] = 'Larghezza';
 $string['window'] = 'Finestra';
+$string['youmustselectastatus'] = 'Devi selezionare uno stato';

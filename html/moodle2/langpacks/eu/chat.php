@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'Ikusi txataren agerraldiak';
 $string['chatreport'] = 'Txat-saioetako txostenak';
 $string['chat:talk'] = 'Txatean hitz egin';
 $string['chattime'] = 'Hurrengo txat-saioaren ordua';
+$string['chat:view'] = 'Ikusi txateko aktibitatea';
 $string['compact'] = 'Trinkoa';
 $string['composemessage'] = 'Idatzi mezua';
 $string['configmethod'] = 'AJAX bidezko txat-metodoak AJAX bidezko txat-interfazea ematen du, aldiro konektatzen da zerbitzariarekin eguneraketak egiteko. Txataren ohiko metodoan erabiltzaileek aldiro konektatzen dute zerbitzariarekin eguneraketak egiteko. Ez du konfiguraziorik behar eta edonon funtzionatzen du baina zerbitzaria gainkarga dezake gelan erabiltzaile asko aldi berean ari badira. Zerbitzariko \'daemon\'a erabiltzeak Unixerako shell sarbidea eskatzen du, baina txat-giro arinago eta lorgarriagoa ematen du.';

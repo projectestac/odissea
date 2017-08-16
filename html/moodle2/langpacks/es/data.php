@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,8 @@ $string['availabletodatevalidation'] = 'La fecha de disponibilidad de fin no pue
 $string['blank'] = 'En blanco';
 $string['buttons'] = 'Acciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
+$string['calendarend'] = 'Base de datos {$a} cerrada';
+$string['calendarstart'] = 'Base de datos {$a} abierta';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'No se le permite acceder a los ajustes previos de otros usuarios';
 $string['cannotadd'] = 'No se pueden añadir entradas';
@@ -116,6 +118,7 @@ $string['data:managetemplates'] = 'Gestionar plantillas';
 $string['data:manageuserpresets'] = 'Gestionar ajustes previos de plantillas';
 $string['data:rate'] = 'Calificar entradas';
 $string['data:readentry'] = 'Leer entradas';
+$string['data:view'] = 'Ver actividad de la base de datos';
 $string['data:viewallratings'] = 'Ver todas las calificaciones emitidas por los usuarios';
 $string['data:viewalluserpresets'] = 'Ver ajustes previos de todos los usuarios';
 $string['data:viewanyrating'] = 'Ver el total de calificaciones que alguien recibió

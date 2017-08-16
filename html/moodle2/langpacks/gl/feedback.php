@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['allowfullanonymous'] = 'Permitir anonimato completo';
 $string['analysis'] = 'Análise';
 $string['anonymous'] = 'Anónimo';
 $string['anonymous_edit'] = 'Rexistrar nomes de usuario';
-$string['anonymous_entries'] = 'Entradas anónimas ({$a})';
+$string['anonymous_entries'] = 'Entradas anónimas';
 $string['anonymous_user'] = 'Usuario anónimo';
 $string['append_new_items'] = 'Anexar elementos novos';
 $string['autonumbering'] = 'Numeración automática de preguntas';
@@ -49,8 +49,8 @@ $string['cannotsavetempl'] = 'non se permite gardar modelos';
 $string['cannotunmap'] = 'Problema coa base de datos, non se pode desasignar';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Non se estabeleceu o captcha.';
-$string['check'] = 'Elección múltipla - respostas múltiplas';
-$string['checkbox'] = 'Elección múltipla - permítense respostas múltiplas (caixas de selección)';
+$string['check'] = 'Elección múltiple - respostas múltiples';
+$string['checkbox'] = 'Elección múltiple - permítense respostas múltiples (caixas de selección)';
 $string['check_values'] = 'Posíbeis respostas';
 $string['choosefile'] = 'Escolla un ficheiro';
 $string['chosen_feedback_response'] = 'escolleuse o comentario de resposta';
@@ -97,8 +97,8 @@ $string['dependvalue'] = 'Valor de dependencia';
 $string['description'] = 'Descrición';
 $string['do_not_analyse_empty_submits'] = 'Non analizar as entregas baleiras';
 $string['downloadresponseas'] = 'Descargar todas las respostas como:';
-$string['dropdown'] = 'Elección múltipla - permítese a resposta única (lista despregábel)';
-$string['dropdownlist'] = 'Elección múltipla - resposta única (despregábel)';
+$string['dropdown'] = 'Elección múltiple - permítese a resposta única (lista despregábel)';
+$string['dropdownlist'] = 'Elección múltiple - resposta única (despregábel)';
 $string['dropdownrated'] = 'Lista despregábel (puntuada)';
 $string['dropdown_values'] = 'Respostas';
 $string['drop_feedback'] = 'Retirar deste curso';
@@ -162,7 +162,7 @@ $string['mapcourseinfo'] = 'Este é un comentario xeral que está dispoñíbel e
 $string['mapcoursenone'] = 'Non hai cursos asignados. Os comentarios están dispoñíbeis en todos os cursos';
 $string['mapcourses'] = 'Asignar comentarios a cursos';
 $string['mapcourses_help'] = 'Unha vez que seleccione os curso(s) relevantes tras a súa busca,
-pode asocialos con este comentario utilizando a asignación do curso(s). Pódense seleccionar múltiplos cursos mantendo premida a tecla Apple ou Ctrl mentres preme sobre os nomes dos cursos. Un curso pode ser desasociado dun comentario en calquera momento.';
+pode asocialos con este comentario utilizando a asignación do curso(s). Pódense seleccionar múltiples cursos mantendo premida a tecla Apple ou Ctrl mentres preme sobre os nomes dos cursos. Un curso pode ser desasociado dun comentario en calquera momento.';
 $string['mappedcourses'] = 'Cursos asignados';
 $string['mappingchanged'] = 'A asignación do curso cambiou';
 $string['max_args_exceeded'] = 'Soamente se poden manexar 6 argumentos, demasiados argumento para';
@@ -172,7 +172,7 @@ $string['messageprovider:submission'] = 'Notificacións de comentarios';
 $string['minimal'] = 'mínimo';
 $string['mode'] = 'Modo';
 $string['modulename'] = 'Comentarios';
-$string['modulename_help'] = 'O módulo de actividade de comentario permítelle a un profesor crear unha busca personalizada para a recollida de comentarios dos participantes, utilizando unha variedade de tipos de preguntas, que inclúen a as de opción múltipla, si/non ou escritura de texto.
+$string['modulename_help'] = 'O módulo de actividade de comentario permítelle a un profesor crear unha busca personalizada para a recollida de comentarios dos participantes, utilizando unha variedade de tipos de preguntas, que inclúen a as de opción múltiple, si/non, ou escritura de texto.
 
 As suxestións poden ser anónimas, se o desexa, e os resultados poden ser amosados a todos os participantes ou restrinxidos a só os profesores. Calquera das actividades de comentario na páxina de inicio do sitio web tamén poden ser completadas por usuarios que non inician sesión.
 
@@ -188,11 +188,11 @@ $string['movedown_item'] = 'Mover esta pregunta cara abaixo';
 $string['move_here'] = 'Movela para aquí';
 $string['move_item'] = 'Mover esta pregunta';
 $string['moveup_item'] = 'Mover esta pregunta ata';
-$string['multichoice'] = 'Escolla múltipla';
-$string['multichoicerated'] = 'Escolla múltipla (puntuada)';
-$string['multichoicetype'] = 'Tipo de escolla múltipla';
-$string['multichoice_values'] = 'Valores de escolla múltipla';
-$string['multiplesubmit'] = 'Permitir entregas múltiplas';
+$string['multichoice'] = 'Escolla múltiple';
+$string['multichoicerated'] = 'Escolla múltiple (puntuada)';
+$string['multichoicetype'] = 'Tipo de escolla múltiple';
+$string['multichoice_values'] = 'Valores de escolla múltiple';
+$string['multiplesubmit'] = 'Permitir entregas múltiples';
 $string['multiplesubmit_help'] = 'De esta activada para enquisas anónimas, os usuarios poden enviar comentarios sen límite de número.';
 $string['name'] = 'Nome';
 $string['name_required'] = 'Nome requirido';
@@ -224,7 +224,7 @@ $string['pagebreak'] = 'Quebra de páxina';
 $string['page-mod-feedback-x'] = 'Calquera páxina do módulo de comentarios';
 $string['parameters_missing'] = 'Faltan os parámetros de';
 $string['picture'] = 'Imaxe';
-$string['picture_file_list'] = 'Lista de imaxes';
+$string['picture_file_list'] = 'Lisa de imaxes';
 $string['picture_values'] = 'Escolla un ou máis <br />ficheiros de imaxe da lista:';
 $string['pluginadministration'] = 'Administración dos comentarios';
 $string['pluginname'] = 'Comentarios';
@@ -236,8 +236,8 @@ $string['public'] = 'Público';
 $string['question'] = 'Pregunta';
 $string['questionandsubmission'] = 'Configuración da pregunta e da entrega';
 $string['questions'] = 'Preguntas';
-$string['radio'] = 'Elección múltipla - resposta única';
-$string['radiobutton'] = 'Elección múltipla - permítese a resposta única (botón de opción)';
+$string['radio'] = 'Elección múltiple - resposta única';
+$string['radiobutton'] = 'Elección múltiple - permítese a resposta única (botón de opción)';
 $string['radiobutton_rated'] = 'Botón de opción (puntuado)';
 $string['radiorated'] = 'Botón de opción (puntuado)';
 $string['radio_values'] = 'Respostas';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'portfolio', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,7 @@ $string['format_image'] = 'صورة';
 $string['format_leap2a'] = 'تصميم المحفظة هو  Leap2A';
 $string['format_mbkp'] = 'تنسيق النسخ الاحتياطي لمودل';
 $string['format_pdf'] = 'PDF';
-$string['format_plainhtml'] = 'أتش تي إم إل HTML';
+$string['format_plainhtml'] = 'أتش تي إم إل';
 $string['format_presentation'] = 'عرض';
 $string['format_richhtml'] = 'HTML مع المرفقات';
 $string['format_spreadsheet'] = 'جداول';

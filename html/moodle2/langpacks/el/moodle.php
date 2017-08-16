@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'moodle', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,20 +34,21 @@ $string['activeusers'] = 'Ενεργοί χρήστες';
 $string['activities'] = 'Δραστηριότητες';
 $string['activities_help'] = 'Δραστηριότητες όπως ομάδες συζητήσεων, quiz και wikis επιτρέπουν την προσθήκη διαδραστικού περιεχομένου στο μάθημα.';
 $string['activity'] = 'Δραστηριότητα';
-$string['activityclipboard'] = 'Μετακίνηση αυτής της δραστηριότητας: <b>{$a}</b>';
-$string['activityiscurrentlyhidden'] = 'Συγγνώμη, αυτή η δραστηριότητα είναι προς το παρόν κρυμμένη';
-$string['activitymodule'] = 'Τμήμα δραστηριότητας';
+$string['activityclipboard'] = 'Μετακίνηση αυτής της δραστηριότητας: {$a}';
+$string['activityiscurrentlyhidden'] = 'Λυπούμαστε, αυτή η δραστηριότητα είναι προς το παρόν κρυμμένη';
+$string['activitymodule'] = 'Άρθρωμα δραστηριότητας';
 $string['activitymodules'] = 'Αρθρώματα δραστηριοτήτων';
-$string['activityreport'] = 'Αναφορά δραστηριότητας';
+$string['activityreport'] = 'Αναφορά δραστηριοτήτων';
 $string['activityreports'] = 'Αναφορές δραστηριοτήτων';
 $string['activityselect'] = 'Επιλέξτε αυτή τη δραστηριότητα για να τη μετακινήσετε';
 $string['activitysince'] = 'Δραστηριότητα από {$a}';
+$string['activitytypetitle'] = '{$a->activity} - {$a->type}';
 $string['activityweighted'] = 'Δραστηριότητα ανά χρήστη';
 $string['add'] = 'Προσθήκη';
 $string['addactivity'] = 'Προσθήκη δραστηριότητας...';
-$string['addactivitytosection'] = 'Πρόσθεσε μία δραστηριότητα στην ενότητα \'{$a}\'';
+$string['addactivitytosection'] = 'Προσθήκη δραστηριότητας στην ενότητα \'{$a}\'';
 $string['addadmin'] = 'Προσθήκη διαχειριστή';
-$string['addblock'] = 'Προσθέστε ένα μπλοκ';
+$string['addblock'] = 'Προσθήκη μπλοκ';
 $string['addcomment'] = 'Προσθήκη σχολίου...';
 $string['addcountertousername'] = 'Δημιουργία χρήστη με την προσθήκη ενός αριθμού στο όνομα χρήστη';
 $string['addcreator'] = 'Προσθήκη δημιουργού μαθήματος';
@@ -55,8 +56,8 @@ $string['adddots'] = 'Προσθήκη...';
 $string['added'] = 'Προστέθηκε {$a}';
 $string['addedrecip'] = 'Προστέθηκε {$a} νέος παραλήπτης';
 $string['addedrecips'] = 'Προστέθηκαν {$a} νέοι παραλήπτες';
-$string['addedtogroup'] = 'Προστέθηκε στην ομάδα {$a}';
-$string['addedtogroupnot'] = 'Δεν προστέθηκε στην ομάδα {$a}';
+$string['addedtogroup'] = 'Προστέθηκε στην ομάδα "{$a}"';
+$string['addedtogroupnot'] = 'Δεν προστέθηκε στην ομάδα "{$a}"';
 $string['addedtogroupnotenrolled'] = 'Δεν προστέθηκε στην ομάδα {$a}, γιατί δεν είναι εγγεγραμμένος/η στο μάθημα';
 $string['addfilehere'] = 'Πρόσθεσε αρχείο/α εδώ';
 $string['addinganew'] = 'Προσθήκη νέας/νέου {$a}';
@@ -64,7 +65,7 @@ $string['addinganewto'] = 'Προσθήκη {$a->what} σε {$a->to}';
 $string['addingdatatoexisting'] = 'Προσθήκη δεδομένων στα υπάρχοντα';
 $string['additionalnames'] = 'Επιπρόσθετο όνομα';
 $string['addlinkhere'] = 'Πρόσθεσε έναν σύνδεσμο εδώ';
-$string['addnewcategory'] = 'Προσθήκη κατηγορίας';
+$string['addnewcategory'] = 'Προσθήκη νέας κατηγορίας';
 $string['addnewcourse'] = 'Προσθήκη νέου μαθήματος';
 $string['addnewuser'] = 'Προσθήκη νέου χρήστη';
 $string['addnousersrecip'] = 'Προσθήκη στη λίστα παραληπτών όλων των χρηστών που δεν έχουν προσπελάσει το {$a}';
@@ -73,16 +74,15 @@ $string['addresource'] = 'Προσθήκη πηγής πληροφοριών...'
 $string['addresourceoractivity'] = 'Προσθέστε μια δραστηριότητα ή πόρο';
 $string['addresourcetosection'] = 'Πρόσθεσε έναν πόρο στην ενότητα \'{$a}\'';
 $string['address'] = 'Διεύθυνση';
-$string['addressedto'] = 'Έως';
 $string['addstudent'] = 'Προσθήκη φοιτητή';
 $string['addsubcategory'] = 'Προσθήκη υποκατηγορίας';
 $string['addteacher'] = 'Προσθήκη διδάσκοντα';
 $string['admin'] = 'Διαχειριστής';
 $string['adminhelpaddnewuser'] = 'Δημιουργία λογαριασμού ενός νέου χρήστη χειροκίνητα';
 $string['adminhelpassignadmins'] = 'Οι διαχειριστές μπορούν να κάνουν οτιδήποτε και να πάνε οπουδήποτε σε ολόκληρο τον ιστοχώρο';
-$string['adminhelpassigncreators'] = 'Οι δημιουργοί μπορούν να δημιουργήσουν νέα μαθήματα και να διδάξουν σε αυτά';
+$string['adminhelpassigncreators'] = 'Οι δημιουργοί μπορούν να δημιουργήσουν νέα μαθήματα';
 $string['adminhelpassignsiteroles'] = 'Εφαρμογή ρόλων σε χρήστες του ιστοχώρου';
-$string['adminhelpassignstudents'] = 'Μπείτε σε ένα μάθημα και προσθέστε φοιτητές από το μενού του διαχειριστή';
+$string['adminhelpassignstudents'] = 'Μπείτε σε ένα μάθημα και προσθέστε μαθητές από το μενού του διαχειριστή';
 $string['adminhelpauthentication'] = 'Μπορείτε να χρησιμοποιήσετε εσωτερικούς λογαριασμούς χρηστών ή εξωτερικές βάσεις δεδομένων';
 $string['adminhelpbackup'] = 'Ρυθμίσεις λήψης αυτόματων αντιγράφων ασφαλείας';
 $string['adminhelpconfiguration'] = 'Διαμόρφωση της εμφάνισης και της λειτουργίας του ιστοχώρου';
@@ -102,11 +102,11 @@ $string['adminhelpmanageroles'] = 'Δημιουργία και καθορισμ�
 $string['adminhelpmymoodle'] = 'Ρυθμίσεις των μπλοκ των χρηστών';
 $string['adminhelpreports'] = 'Αναφορές σε επίπεδο ιστοχώρου';
 $string['adminhelpsitefiles'] = 'Για τη δημοσίευση γενικών αρχείων ή το ανέβασμα εξωτερικών αντιγράφων ασφαλείας';
-$string['adminhelpsitesettings'] = 'Ρυθμίσεις που αφορούν την αρχική σελίδα του ιστοχώρου';
+$string['adminhelpsitesettings'] = 'Καθορισμός εμφάνισης πρώτης σελίδας ιστοχώρου';
 $string['adminhelpstickyblocks'] = 'Ρύθμιση μπλοκ για όλο το Moodle';
 $string['adminhelpthemes'] = 'Ρυθμίσεις εμφάνισης του ιστοχώρου (χρώματα, φόντο κλπ)';
 $string['adminhelpuploadusers'] = 'Εισαγωγή χρηστών από αρχείο κειμένου';
-$string['adminhelpusers'] = 'Ορισμός χρηστών και μέθοδος πιστοποίησης τους';
+$string['adminhelpusers'] = 'Ορισμός χρηστών και ρύθμιση αυθεντικοποίησης';
 $string['adminhelpxmldbeditor'] = 'Διεπαφή για την επεξεργασία αρχείων XMLDB. Μόνο για προγραμματιστές.';
 $string['administration'] = 'Διαχείριση';
 $string['administrationsite'] = 'Διαχειριστής του ιστοχώρου';
@@ -140,7 +140,7 @@ $string['allownone'] = 'Να μην επιτρέπεται τίποτα';
 $string['allownot'] = 'Δεν επιτρέπεται';
 $string['allparticipants'] = 'Όλοι οι συμμετέχοντες';
 $string['allteachers'] = 'Όλοι οι διδάσκοντες';
-$string['alphanumerical'] = 'Μπορεί μόνο να περιέχει γράμματα της αλφαβήτου ή αριθμούς';
+$string['alphanumerical'] = 'Μπορεί μόνο να περιέχει αλφαριθμητικούς χαρακτήρες, παύλα (-) ή τελεία (.)';
 $string['alreadyconfirmed'] = 'Η δημιουργία του λογαριασμού έχει ήδη επιβεβαιωθεί';
 $string['alternatename'] = 'Εναλλακτικό όνομα';
 $string['always'] = 'Πάντα';
@@ -156,21 +156,22 @@ $string['asc'] = 'Αύξουσα';
 $string['assessment'] = 'Αξιολόγηση';
 $string['assignadmins'] = 'Προσδιορισμός διαχειριστών';
 $string['assigncreators'] = 'Προσδιορισμός δημιουργών';
+$string['assignedrolecount'] = '{$a->role}: {$a->count}';
 $string['assignsiteroles'] = 'Προσδιορισμός ρόλων στον δικτυακό τόπο';
 $string['authenticateduser'] = 'Πιστοποιημένος χρήστης';
 $string['authenticateduserdescription'] = 'Όλοι οι χρήστες που βρίσκονται μέσα στο σύστημα.';
-$string['authentication'] = 'Πιστοποίηση ταυτότητας';
-$string['authenticationplugins'] = 'Υπομονάδες πιστοποίησης';
+$string['authentication'] = 'Αυθεντικοποίηση';
+$string['authenticationplugins'] = 'Πρόσθετα αυθεντικοποίησης';
 $string['autosubscribe'] = 'Αυτόματη εγγραφή στις ομάδες συζητήσεων';
 $string['autosubscribeno'] = 'Όχι: να μην εγγράφομαι αυτόματα σε ομάδες συζητήσεων';
 $string['autosubscribeyes'] = 'Ναι: όταν αναρτώ ανακοινώσεις σε μια ομάδα συζητήσεων να εγγράφομαι αυτόματα σε αυτή';
 $string['availability'] = 'Διαθεσιμότητα';
-$string['availablecourses'] = 'Διαθέσιμα Μαθήματα';
-$string['back'] = 'Πίσω';
-$string['backto'] = 'Πίσω σε {$a}';
-$string['backtocourselisting'] = 'Πίσω στη λίστα μαθημάτων';
+$string['availablecourses'] = 'Διαθέσιμα μαθήματα';
+$string['back'] = 'Επιστροφή';
+$string['backto'] = 'Επιστροφή σε {$a}';
+$string['backtocourselisting'] = 'Επιστροφή στη λίστα μαθημάτων';
 $string['backtopageyouwereon'] = 'Επιστροφή στην προηγούμενη σελίδα';
-$string['backtoparticipants'] = 'Πίσω στη λίστα συμμετεχόντων';
+$string['backtoparticipants'] = 'Επιστροφή στη λίστα συμμετεχόντων';
 $string['backup'] = 'Αντίγραφο ασφαλείας';
 $string['backupactivehelp'] = 'Λήψη ή όχι αυτόματων αντιγράφων ασφαλείας';
 $string['backupcancelled'] = 'Η λήψη του αντιγράφου ασφαλείας ακυρώθηκε';
@@ -204,7 +205,7 @@ $string['backupuserfileshelp'] = 'Να συμπεριλαμβάνονται τα
 $string['backupversion'] = 'Έκδοση αντίγραφου ασφαλείας';
 $string['badges'] = 'Κονκάρδες';
 $string['block'] = 'Μπλοκ';
-$string['blockconfiga'] = 'Ρύθμιση ενός {$a} μπλοκ';
+$string['blockconfiga'] = 'Ρύθμιση ενός μπλοκ {$a}';
 $string['blockconfigbad'] = 'Αυτό το μπλοκ δεν έχει ρυθμιστεί σωστά και δεν παρέχει διεπαφή ρυθμίσεων.';
 $string['blocks'] = 'Blocks';
 $string['blocksaddedit'] = 'Προσθήκη/Επεξεργασία μπλοκ';
@@ -212,24 +213,24 @@ $string['blockseditoff'] = 'Απενεργοποίηση επεξεργασία�
 $string['blocksediton'] = 'Eνεργοποίηση επεξεργασίας μπλοκ';
 $string['blocksetup'] = 'Ρύθμιση πινάκων μπλοκ';
 $string['blocksuccess'] = '{$a} πίνακες έχουν ρυθμιστεί σωστά';
-$string['brief'] = 'Καταγραφή';
-$string['bulkactions'] = 'Χοντρικές ενέργειες';
-$string['bulkactionselect'] = '{$a} επιλογή πολλαπλών ενεργειών';
+$string['brief'] = 'Συντόμο';
+$string['bulkactions'] = 'Μαζικές ενέργειες';
+$string['bulkactionselect'] = '{$a} επιλογή μαζικών ενεργειών';
 $string['bulkmovecoursessuccess'] = 'Επιτυχή μεταφορά {$a->courses} μαθημάτων στη κατηγορία {$a->category}';
 $string['bycourseorder'] = 'Ταξινόμηση κατά μάθημα';
 $string['byname'] = 'κατά {$a}';
 $string['bypassed'] = 'Προσπεράστηκαν';
 $string['cachecontrols'] = 'Χειριστήρια cache';
-$string['cancel'] = 'Άκυρο';
+$string['cancel'] = 'Ακύρωση';
 $string['cancelled'] = 'Ακυρώθηκε';
 $string['categories'] = 'Κατηγορίες μαθημάτων';
 $string['categoriesandcoures'] = 'Κατηγορίες μαθημάτων και μαθημάτα';
-$string['category'] = 'Τμήμα';
+$string['category'] = 'Κατηγορία';
 $string['categoryadded'] = 'Η κατηγορία \'{$a}\' προστέθηκε';
-$string['categorybulkaction'] = 'Χονδρικές ενέργειες για τις επιλεγμένες κατηγορίες';
+$string['categorybulkaction'] = 'Μαζικές ενέργειες για τις επιλεγμένες κατηγορίες';
 $string['categorycontents'] = 'Υποκατηγορίες και μαθήματα';
 $string['categorycurrentcontents'] = 'Περιεχόμενα του {$a}';
-$string['categorydeleted'] = 'Η κατηγορία  \'{$a}\' διαγράφηκε';
+$string['categorydeleted'] = 'Η κατηγορία \'{$a}\' διαγράφηκε';
 $string['categoryduplicate'] = 'Υπάρχει ήδη κατηγορία με το όνομα \'{$a}\'!';
 $string['categorymodifiedcancel'] = 'Η κατηγορία έχει τροποποιηθεί! Παρακαλώ ακυρώστε και ξαναπροσπαθήστε.';
 $string['categoryname'] = 'Όνομα κατηγορίας';
@@ -245,7 +246,7 @@ $string['checkingbackup'] = 'Έλεγχος αντιγράφου ασφαλεί�
 $string['checkingcourse'] = 'Έλεγχος μαθήματος';
 $string['checkingforbbexport'] = 'Έλεγχος για εξαγωγή σε Blackboard';
 $string['checkinginstances'] = 'Έλεγχος περιπτώσεων';
-$string['checkingsections'] = 'Έλεγχος τμημάτων';
+$string['checkingsections'] = 'Έλεγχος ενοτήτων';
 $string['checklanguage'] = 'Έλεγχος γλώσσας';
 $string['checknone'] = 'Αποεπιλογή όλων';
 $string['childcoursenotfound'] = 'Δεν βρέθηκε θυγατρικό μάθημα!';
@@ -313,7 +314,7 @@ $string['courseapprovedsubject'] = 'Η αίτηση για δημιουργία 
 $string['courseavailable'] = 'Αυτό το μάθημα είναι διαθέσιμο στους φοιτητές';
 $string['courseavailablenot'] = 'Αυτό το μάθημα δεν είναι διαθέσιμο στους φοιτητές';
 $string['coursebackup'] = 'Αντίγραφο ασφαλείας μαθήματος';
-$string['coursebulkaction'] = 'Χονδρικές ενέργειες για τα επιλεγμένα μαθήματα';
+$string['coursebulkaction'] = 'Μαζικές ενέργειες για τα επιλεγμένα μαθήματα';
 $string['coursecategories'] = 'Κατηγορίες μαθημάτων';
 $string['coursecategory'] = 'Κατηγορία μαθήματος';
 $string['coursecategorydeleted'] = 'Διεγραμμένη κατηγορία μαθημάτων {$a}';
@@ -330,15 +331,18 @@ $string['coursecategory_help'] = '<p align="center"><b>Κατηγορίες μα
 $string['coursecatmanagement'] = 'Διαχείριση κατηγορίας και μαθήματος';
 $string['coursecompletion'] = 'Ολοκλήρωση μαθήματος';
 $string['coursecompletions'] = 'Ολοκληρώσεις μαθήματος';
-$string['coursecreators'] = 'Δημιουργοί μαθήματος';
-$string['coursecreatorsdescription'] = 'Οι δημιουργοί μαθημάτων μπορούν να δημιουργούν και να διδάσκουν στα μαθήματα.';
+$string['coursecreators'] = 'Δημιουργός μαθήματος';
+$string['coursecreatorsdescription'] = 'Οι δημιουργοί μαθημάτων μπορούν να δημιουργούν νέα μαθήματα.';
 $string['coursedeleted'] = 'Διεγραμμένο μάθημα {$a}';
 $string['coursedetails'] = 'Λεπτομέρειες μαθήματος';
 $string['coursedisplay'] = 'Εμφάνιση μαθήματος';
 $string['coursedisplay_help'] = 'Αυτή η ρύθμιση καθορίζει αν όλο το μάθημα θα εμφανίζεται σε μια σελίδα ή θα είναι χωρισμένο σε πολλές σελίδες.';
 $string['coursedisplay_multi'] = 'Παρουσίαση ενός θέματος ανά σελίδα';
 $string['coursedisplay_single'] = 'Εμφάνιση όλων των τμημάτων σε μία σελίδα';
-$string['coursefiles'] = 'Αρχεία μαθήματος';
+$string['courseduration'] = 'Διάρκεια μαθήματος';
+$string['courseduration_desc'] = 'Η διάρκεια του μαθήματος χρησιμοποιείται για να υπολογιστεί η καταληκτική ημερομηνία του μαθήματος. Η καταληκτική ημερομηνία μαθήματος χρησιμοποιείται μόνο στις αναφορές. Οι χρήστες εξακολουθούν να έχουν πρόσβαση στο μάθημα και μετά τη καταληκτική ημερομηνία.';
+$string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
+$string['coursefiles'] = 'Παλαιά αρχεία μαθήματος';
 $string['coursefilesedit'] = 'Επεξεργασία κληρονομημένων αρχείων μαθήματος';
 $string['coursefileswarning'] = 'Τα αρχεία του μαθήματος είναι παλιά.';
 $string['coursefileswarning_help'] = 'Τα αρχεία του μαθήματος είναι παλαιότερα από το Moodle 2.0, παρακαλούμε όπως χρησιμοποιήσετε εξωτερικές πηγές όπου είναι δυνατόν.';
@@ -358,15 +362,19 @@ $string['coursehelpshowgrades'] = 'Ενεργοποίηση της εμφάνι�
 $string['coursehidden'] = 'Αυτό το μάθημα είναι προσωρινά μη διαθέσιμο στους φοιτητές';
 $string['courseinfo'] = 'Πληροφορίες μαθήματος';
 $string['courselegacyfiles'] = 'Aρχεία μαθήματος παλαιότερων εκδόσεων';
+$string['courselegacyfiles_help'] = 'Η περιοχή αρχείων μαθήματος παρέχει συμβατότητα προς τα πίσω με την έκδοση Moodle 1.9 και προγενέστερα. Όλα τα αρχεία σε αυτή την περιοχή είναι πάντα προσβάσιμα σε όλους τους συμμετέχοντες στο μάθημα (είτε συνδέεστε με αυτά είτε όχι) και δεν υπάρχει τρόπος να γνωρίζετε που χρησιμοποιούνται αυτά τα αρχεία στο Moodle.
+<br/><br/>
+Αν χρησιμοποιείτε αυτήν την περιοχή για να αποθηκεύσετε αρχεία μαθήματος, μπορεί να εκτεθείτε σε μια σειρά προβλημάτων ιδιωτικότητας και ασφάλειας, καθώς και να αντιμετωπίζετε ελλείποντα αρχεία σε αντίγραφα ασφαλείας, εισαγωγές μαθημάτων και οποιοδήποτε περιεχόμενο χρόνου που μοιράζεται ή επαναχρησιμοποιείται. Συνεπώς, συνιστάται να μην χρησιμοποιείτε αυτήν την περιοχή εκτός αν είστε απολύτως σίγουροι.';
 $string['courselegacyfilesofcourse'] = 'Παλιά αρχεία μαθήματος: {$a}';
 $string['coursemessage'] = 'Αποστολή μηνύματος στους φοιτητές του μαθήματος';
 $string['coursenotaccessible'] = 'Σε αυτό το μάθημα δεν επιτρέπονται επισκέπτες';
-$string['courseoverview'] = 'Σύνοψη του μαθήματος';
-$string['courseoverviewfiles'] = 'Περίληψη αρχείων μαθήματος';
+$string['courseoverview'] = 'Επισκόπηση μαθημάτων';
+$string['courseoverviewfiles'] = 'Αρχεία σύνοψης μαθήματος';
 $string['courseoverviewfilesext'] = 'Επεκτάσεις αρχείων σύνοψης μαθήματος';
 $string['courseoverviewfiles_help'] = 'Τα αρχεία σύνοψης μαθήματος, όπως εικόνες, εμφανίζονται στη λίστα των μαθημάτων μαζί με την σύνοψη.';
 $string['courseoverviewfileslimit'] = 'Όριο αρχείων σύνοψης μαθήματος';
-$string['courseoverviewgraph'] = 'Γράφημα επισκόπησης του μαθήματος';
+$string['courseoverviewgraph'] = 'Γράφημα επισκόπησης μαθημάτων';
+$string['coursepreferences'] = 'Προτιμήσεις μαθήματος';
 $string['courseprofiles'] = 'Προφίλ μαθήματος';
 $string['coursereasonforrejecting'] = 'Οι λόγοι για τους οποίους απορρίπτετε αυτό το αίτημα';
 $string['coursereasonforrejectingemail'] = 'Αυτό το μήνυμα θα σταλεί ως email στον αιτούντα';
@@ -393,8 +401,8 @@ $string['coursesettings'] = 'Προεπιλογές μαθήματος';
 $string['coursesmovedout'] = 'Τα μαθήματα μεταφέρθηκαν από το {$a}';
 $string['coursespending'] = 'Μαθήματα που αναμένουν έγκριση';
 $string['coursestart'] = 'Αρχή μαθήματος';
-$string['coursesummary'] = 'Περιγραφή μαθήματος';
-$string['coursesummary_help'] = 'Η περιγραφή μαθήματος εμφανίζεται στον κατάλογο μαθημάτων. Η αναζήτηση μαθήματος ψάχνει το κείμενο περιγραφής του μαθήματος επιπλέον του ονόματος του μαθήματος.';
+$string['coursesummary'] = 'Σύνοψη μαθήματος';
+$string['coursesummary_help'] = 'Η σύνοψη μαθήματος εμφανίζεται στον κατάλογο μαθημάτων. Η αναζήτηση μαθήματος ψάχνει το κείμενο σύνοψης του μαθήματος επιπλέον του ονόματος του μαθήματος.';
 $string['coursetitle'] = 'Μάθημα: {$a->course}';
 $string['courseupdates'] = 'Ενημερώσεις στο μάθημα';
 $string['create'] = 'Δημιουργία';
@@ -432,7 +440,7 @@ $string['creatinguserroles'] = 'Δημιουργία αναθέσεων ρόλω
 $string['creatingusers'] = 'Δημιουργία χρηστών';
 $string['creatingxmlfile'] = 'Δημιουργία αρχείου XML';
 $string['currency'] = 'Νόμισμα';
-$string['currentcourse'] = 'Τρέχον μάθημα';
+$string['currentcourse'] = 'Τρέχων μάθημα';
 $string['currentcourseadding'] = 'Τρέχον μάθημα, προσθήκη δεδομένων σε αυτό';
 $string['currentcoursedeleting'] = 'Τρέχον μάθημα, διαγραφή του πρώτα';
 $string['currentlanguage'] = 'Επιλεγμένη γλώσσα';
@@ -503,6 +511,7 @@ $string['deletingcourse'] = '{$a} - διαγραφή σε εξέλιξη';
 $string['deletingexistingcoursedata'] = 'Διαγραφή υπαρχόντων δεδομένων μαθήματος';
 $string['deletingolddata'] = 'Διαγραφή παλαιών δεδομένων';
 $string['department'] = 'Τμήμα';
+$string['deprecatedeventname'] = '{$a} (δεν χρησιμοποιείται πλέον)';
 $string['desc'] = 'Φθίνουσα';
 $string['description'] = 'Περιγραφή';
 $string['deselectall'] = 'Απεπιλογή όλων';
@@ -550,8 +559,8 @@ $string['edhelpfontlist'] = 'Διαθέσιμες γραμματοσειρές.'
 $string['edhelpfontsize'] = 'Προεπιλεγμένο μέγεθος γραμματοσειράς (αποδεκτές τιμές 10pt, 10px).';
 $string['edit'] = 'Επεξεργασία ';
 $string['edita'] = 'Επεξεργασία {$a}';
-$string['editcategorysettings'] = 'Επεξεργασίς ρυθμίσεων κατηγορία';
-$string['editcategorythis'] = 'Επεξεργασία αυτής της κατηγορίας';
+$string['editcategorysettings'] = 'Επεξεργασία ρυθμίσεων κατηγορία';
+$string['editcategorythis'] = 'Επεξεργασία κατηγορίας';
 $string['editcoursesettings'] = 'Επεξεργασία των ρυθμίσεων του μαθήματος';
 $string['editfiles'] = 'Επεξεργασία αρχείων';
 $string['editgroupprofile'] = 'Επεξεργασία του προφίλ της ομάδας';
@@ -573,9 +582,9 @@ $string['editorshortcutkeys'] = 'Επεξεργαστής πλήκτρων συ�
 $string['editsection'] = 'Επεξεργασία ενότητας';
 $string['editsectionname'] = 'Επεξεργασία τίτλου τομέα';
 $string['editsettings'] = 'Επεξεργασία ρυθμίσεων';
-$string['editsummary'] = 'Επεξεργασία της σύνοψης';
+$string['editsummary'] = 'Επεξεργασία σύνοψης';
 $string['editthisactivity'] = 'Επεξεργασία της δραστηριότητας';
-$string['editthiscategory'] = 'Επεξεργασία του τμήματος';
+$string['editthiscategory'] = 'Επεξεργασία κατηγορίας';
 $string['edittitle'] = 'Επεξεργασία τίτλου';
 $string['edittitleinstructions'] = 'Escape για να ακυρώσετε, Enter όταν τελειώσετε';
 $string['edituser'] = 'Επεξεργασία των λογαριασμών των χρηστών';
@@ -587,16 +596,22 @@ $string['edulevelother'] = 'Άλλο';
 $string['edulevelparticipating'] = 'Συμμετοχή';
 $string['edulevelteacher'] = 'Διδασκαλία';
 $string['email'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';
-$string['emailactive'] = 'Το email ενεργοποιήθηκε';
-$string['emailagain'] = 'Email (ξανά)';
+$string['emailactive'] = 'Η αποστολή ηλεκτρονικού ταχυδρομείου ενεργοποιήθηκε';
+$string['emailagain'] = 'Αποστολή ηλεκτρονικού ταχυδρομείου (ξανά)';
 $string['emailalreadysent'] = 'Ένα μήνυμα ηλεκτρονικού ταχυδρομείου για την επαναφορά του κωδικού πρόσβασης έχει ήδη σταλεί. Παρακαλώ ελέγξτε το email σας.';
-$string['emailcharset'] = 'Email κωδικοποίηση';
+$string['emailcharset'] = 'Κωδικοποίηση ηλεκτρονικού ταχυδρομείου';
 $string['emailconfirm'] = 'Επιβεβαιώστε το λογαριασμό σας';
 $string['emailconfirmation'] = 'Γεια σας,
 
-Έχετε κάνει μία αίτηση για τη δημιουργία ενός νέου λογαριασμού στο \'{$a->sitename}\'.
+Έχει γίνει αίτηση δημιουργίας νέου λογαριασμού στο \'{$a->sitename}\' με χρήση της διεύθυνσης ηλεκτρονικού ταχυδρομείου σας.
 
-Πριν δημιουργηθεί ο λογαριασμός χρειάζεται μία επιβεβαίωση από μέρους σας, η οποία μπορεί να γίνει απλά πατώντας στον επόμενο σύνδεσμο {$a->link}.
+Για να επιβεβαιώσετε το νέο λογαριασμό σας, παρακαλούμε μεταβείτε στην παρακάτω ηλεκτρονική διεύθυνση:
+
+{$a->link}
+
+Στα περισσότερα προγράμματα αλληλογραφίας, η ηελκτρονική διεύθυνση εμφανίζεται ως μπλε σύνδεσμος τον οποίο μπορείτε να πατήσετε. Αν αυτό δεν λειτουργήσει, τότε αποκόψτε και επικολλήστε τη διεύθυνση στη γραμμή διευθύνσεων στο επάνω μέρος του παραθύρου του προγράμματος περιήγησης σας.
+
+Αν χρειάζεστε βοήθεια, παρακαλώ επικοινωνήστε με τον διαχειριστή του ιστοχώρου.
 
 Φιλικά,
 ο διαχειριστής του \'{$a->sitename}\',
@@ -614,23 +629,23 @@ $string['emaildigest_help'] = 'Αυτή είναι η ρύθμιση καθημ�
 * Σύνοψη - θέματα μόνο - θα λαμβάνετε μια σύνοψη μέσω ηλεκτρονικού ταχυδρομείου την ημέρα που περιέχει μόνο το θέμα της κάθε ανάρτησης στην ομάδα συζητήσεων.
 <br/><br/>
 Μπορείτε επίσης να επιλέξετε μια διαφορετική ρύθμιση για κάθε ομάδα συζητήσεων, αν το επιθυμείτε.';
-$string['emaildigestoff'] = 'Χωρίς σύνοψη (μαναδικό email ανά post σε forum)';
-$string['emaildigestsubjects'] = 'Θέματα (καθημερινό email με θέματα μόνο)';
-$string['emaildisable'] = 'Η διεύθυνση email είναι απενεργοποιημένη';
-$string['emaildisableclick'] = 'Πατήστε εδώ για να απενεργοποιήσετε την αποστολή όλων των email σε αυτήν τη διεύθυνση';
-$string['emaildisplay'] = 'Εμφάνιση της διεύθυνσης email';
-$string['emaildisplaycourse'] = 'Το email να είναι ορατό μόνο στα άλλα μέλη του μαθήματος';
-$string['emaildisplayhidden'] = 'E-mail κρυμμένο';
-$string['emaildisplayno'] = 'Απόκρυψη της διεύθυνσης email από όλους';
-$string['emaildisplayyes'] = 'Η διεύθυνση email αν είναι ορατή σε όλους τους χρήστες';
-$string['emailenable'] = 'Αυτή η διεύθυνση email είναι ενεργοποιημένη';
-$string['emailenableclick'] = 'Πατήστε εδώ για να ενεργοποιήσετε ξανά την αποστολή όλων των email σε αυτήν τη διεύθυνση';
-$string['emailexists'] = 'Υπάρχει ήδη κάποιος άλλος εγγεγραμμένος χρήστης με την ίδια διεύθυνση email.';
-$string['emailformat'] = 'Μορφή μηνύματος email';
-$string['emailmustbereal'] = 'Σημείωση: η διεύθυνση email πρέπει να είναι πραγματική';
-$string['emailnotallowed'] = 'Δεν επιτρέπονται οι διευθύνσεις email από αυτά τα domain ({$a})';
-$string['emailnotfound'] = 'Η διεύθυνση email δε βρέθηκε στη βάση δεδομένων';
-$string['emailonlyallowed'] = 'Το email αυτό είναι μη επιτρεπόμενο ({$a})';
+$string['emaildigestoff'] = 'Χωρίς σύνοψη (μοναδικό μήνυμα ηλεκτρονικού ταχυδρομείου ανά ανάρτηση στην ομάδα συζητήσεων)';
+$string['emaildigestsubjects'] = 'Θέματα (καθημερινό μήνυμα ηλεκτρονικού ταχυδρομείου με θέματα μόνο)';
+$string['emaildisable'] = 'Η διεύθυνση ηλεκτρονικού ταχυδρομείου είναι απενεργοποιημένη';
+$string['emaildisableclick'] = 'Πατήστε εδώ για να απενεργοποιήσετε την αποστολή όλων των μηνυμάτων ηλεκτρονικού ταχυδρομείου σε αυτήν τη διεύθυνση';
+$string['emaildisplay'] = 'Εμφάνιση διεύθυνσης ηλεκτρονικού ταχυδρομείου';
+$string['emaildisplaycourse'] = 'Η διεύθυνση ηλεκτρονικού ταχυδρομείου να είναι ορατή μόνο στα άλλα μέλη του μαθήματος';
+$string['emaildisplayhidden'] = 'Απόκρυψη διεύθυνσης ηλεκτρονικού ταχυδρομείου';
+$string['emaildisplayno'] = 'Απόκρυψη της διεύθυνσης ηλεκτρονικού ταχυδρομείου από όλους';
+$string['emaildisplayyes'] = 'Η διεύθυνση ηλεκτρονικού ταχυδρομείου να είναι ορατή σε όλους τους χρήστες';
+$string['emailenable'] = 'Αυτή η διεύθυνση ηλεκτρονικού ταχυδρομείου είναι ενεργοποιημένη';
+$string['emailenableclick'] = 'Πατήστε εδώ για να ενεργοποιήσετε ξανά την αποστολή όλων των μηνυμάτων ηλεκτρονικού ταχυδρομείου σε αυτήν τη διεύθυνση';
+$string['emailexists'] = 'Υπάρχει ήδη κάποιος άλλος εγγεγραμμένος χρήστης με την ίδια διεύθυνση ηλεκτρονικού ταχυδρομείου.';
+$string['emailformat'] = 'Μορφή μηνύματος ηλεκτρονικού ταχυδρομείου';
+$string['emailmustbereal'] = 'Σημείωση: η διεύθυνση ηλεκτρονικού ταχυδρομείου πρέπει να είναι πραγματική';
+$string['emailnotallowed'] = 'Δεν επιτρέπονται οι διευθύνσεις ηλεκτρονικού ταχυδρομείου από αυτούς τους τομείς ({$a})';
+$string['emailnotfound'] = 'Η διεύθυνση ηλεκτρονικού ταχυδρομείου δε βρέθηκε στη βάση δεδομένων';
+$string['emailonlyallowed'] = 'Αυτή η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν ανήκει στις επιτρεπόμενες ({$a})';
 $string['emailpasswordchangeinfo'] = 'Γεια σας {$a->firstname},
 
 Κάποιος (μάλλον εσείς ο ίδιος) έχει ζητήσει νέο συνθηματικό για το
@@ -649,36 +664,34 @@ $string['emailpasswordchangeinfo'] = 'Γεια σας {$a->firstname},
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Γεια σας {$a->firstname},
 
-Κάποιος (μάλλον εσείς ο ίδιος) έχει ζητήσει νέο συνθηματικό για το
-λογαριασμό σας στο \'{$a->sitename}\'.
+Κάποιος (μάλλον εσείς ο ίδιος) έχει ζητήσει νέο κωδικό πρόσβασης για το λογαριασμό σας στο \'{$a->sitename}\'.
 
-Δυστυχώς, ο λογαριασμός σας σε αυτόν τον ιστοχώρο είναι απενεργοποιημένος και δε μπορεί να επαναφερθεί.
-Παρακαλώ επικοινωνήστε με το διαχειριστή του ιστοχώρου,
+Δυστυχώς, ο λογαριασμός σας σε αυτόν τον ιστοχώρο είναι απενεργοποιημένος οπότε δεν είναι δυνατή η επαναφορά του κωδικού προσβάσης. Παρακαλώ επικοινωνήστε με το διαχειριστή του ιστοχώρου,
 {$a->admin}';
 $string['emailpasswordchangeinfofail'] = 'Γεια σας {$a->firstname},
 
-Κάποιος (μάλλον εσείς ο ίδιος) έχει ζητήσει νέο συνθηματικό για το
-λογαριασμό σας στο \'{$a->sitename}\'.
+Κάποιος (μάλλον εσείς ο ίδιος) έχει ζητήσει νέο κωδικό πρόσβασης για το λογαριασμό σας στο \'{$a->sitename}\'.
 
-Δυστυχώς, δεν είναι δυνατή η επαναφορά συνθηματικών σε αυτόν τον ιστοχώρο,
-παρακαλώ επικοινωνήστε με το διαχειριστή του ιστοχώρου,
+Δυστυχώς, δεν είναι δυνατή η επαναφορά κωσικών πρόσβασης σε αυτόν τον ιστοχώρο. Παρακαλώ επικοινωνήστε με το διαχειριστή του ιστοχώρου,
 {$a->admin}';
-$string['emailpasswordchangeinfosubject'] = '{$a}: Αλλαγή πληροφοριών συνθηματικού';
+$string['emailpasswordchangeinfosubject'] = '{$a}: Πληροφορίες αλλαγής κωδικού πρόσβασης';
 $string['emailpasswordconfirmation'] = 'Γεια σας {$a->firstname},
 
-Έχετε ζητήσει ένα νέο κωδικό πρόσβασης
-για το λογαριασμό σας στο \'{$a->sitename}\'.
+Έχετε ζητήσει ένα νέο κωδικό πρόσβασης για το λογαριασμό σας στο \'{$a->sitename}\'.
 
-Για να το επιβεβαιώσετε αυτό και για να παραλάβετε ένα νέο κωδικό πρόσβασης μέσω
-email, ακολουθήστε την παρακάτω διεύθυνση:
+Για να το επιβεβαιώσετε αυτό και για να παραλάβετε ένα νέο κωδικό πρόσβασης μέσω ηλεκτρονικού ταχυδρομείου, ακολουθήστε την παρακάτω διεύθυνση:
 
   {$a->link}
 
 Αν χρειάζεστε βοήθεια, παρακαλώ επικοινωνήστε με το διαχειριστή του ιστοχώρου,
 {$a->admin}';
-$string['emailpasswordconfirmationsubject'] = '{$a}: αλλαγή κωδικού πρόσβασης';
+$string['emailpasswordconfirmationsubject'] = '{$a}: Επιβεβαίωση αλλαγής κωδικού πρόσβασης';
 $string['emailpasswordconfirmmaybesent'] = '<p>Αν έχετε δώσει σωστό όνομα χρήστη ή διεύθυνση, ένα email θα έχει σταλεί σε εσάς.</p>
 <p>Περιέχει εύκολες πληροφορίες για την επιβεβαίωση και την ολοκλήρωση της αλλαγής του συνθηματικού. Αν συνεχίσετε να έχετε προβλήματα, παρακαλώ επικοινωνήστε με το διαχειριστή.</p>';
+$string['emailpasswordconfirmnoemail'] = '<p>Ο λογαριασμός χρήστη που έχετε ορίσει δεν έχει μια καταγεγραμμένη διεύθυνση ηλεκτρονικού ταχυδρομείου. </p>
+<p>Παρακαλω επικοινωνήστε τον διαχειριστή του ιστοχώρου.</p>';
+$string['emailpasswordconfirmnotsent'] = '<p>Οι λεπτομέρειες χρήστη που δώσατε δεν προσδιορίζουν έναν υπάρχοντα λογαριασμό χρήστη.</p>
+<p>Παρακαλώ ελέγξτε τις πληροφορίες που καταχωρίσατε και δοκιμάστε ξανά. Αν συνεχίζετε να αντιμετωπίζετε δυσκολίες, επικοινωνήστε με τον διαχειριστή του ιστοχώρου. </p>';
 $string['emailpasswordconfirmsent'] = 'Ένα email έχει σταλεί στην ηλεκτρονική σας διεύθυνση στο <b>{$a}</b>.
 <p>Περιέχει εύκολες οδηγίες για επιβεβαίωση και ολοκλήρωση της αλλαγής του κωδικού πρόσβασης.
 Αν συνεχίσετε να αντιμετωπίζετε δυσκολία, επικοινωνήστε με το διαχειριστή.';
@@ -700,42 +713,68 @@ $string['emailresetconfirmation'] = 'Γεια σου {$a->firstname},
 $string['emailresetconfirmationsubject'] = '{$a}: αίτημα επαναφοράς κωδικού πρόσβασης';
 $string['emailresetconfirmsent'] = 'Ένα μήνυμα ηλεκτρονικού ταχυδρομείου έχει σταλεί στη διεύθυνση σας στο <b>{$a}.</b> <br /> Περιέχει απλές οδηγίες για να επιβεβαιώσετε και να ολοκληρωθεί αυτή η αλλαγή του κωδικού πρόσβασης.
 Εάν συνεχίσετε να αντιμετωπίζετε δυσκολίες, επικοινωνήστε με το διαχειριστή του ιστοτόπου.';
+$string['emailtoprivatefiles'] = 'Μπορείτε επίσης να στείλετε αρχεία ως συνημμένα μέσω ηλεκτρονικού ταχυδρομείου απευθείας στο χώρο των ιδιωτικών αρχείων σας. Απλά επισυνάψτε τα αρχεία σας σε ένα μήνυμα ηλεκτρονικού ταχυδρομείου και στείλτε το στο {$a}';
 $string['emailtoprivatefilesdenied'] = 'Ο διαχειριστής σας έχει απενεργοποιήσει τη δυνατότητα να ανεβάσετε τα δικά προσωπικά αρχεία σας.';
+$string['emailvia'] = '{$a->name} (μέσω {$a->siteshortname})';
 $string['emptydragdropregion'] = 'κενή περιοχή';
 $string['enable'] = 'Ενεργοποίηση';
 $string['encryptedcode'] = 'Κρυπτογραφημένος κωδικός';
-$string['english'] = 'English';
+$string['enddate'] = 'Καταληκτική ημερομηνία μαθήματος.';
+$string['enddate_help'] = 'Η ημερομηνία λήξης του μαθήματος χρησιμοποιείται μόνο για αναφορές. Οι χρήστες έχουν πρόσβαση στο μάθημα και μετά την ημερομηνία λήξης.';
+$string['english'] = 'Αγγλικά';
 $string['enrolmentmethods'] = 'Μέθοδοι εγγραφής';
 $string['entercourse'] = 'Πατήστε για να εισέλθετε σε αυτό το μάθημα';
-$string['enteremail'] = 'Εισάγετε το email σας';
-$string['enteremailaddress'] = 'Εισάγετε τη διεύθυνση email ώστε να αλλάξει ο κωδικός πρόσβασής σας - ο νέος κωδικός πρόσβασης θα σας αποσταλεί μέσω email';
+$string['enteremail'] = 'Εισάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας';
+$string['enteremailaddress'] = 'Εισάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου για επαναφορά του κωδικού πρόσβασής σας και ο νέος κωδικός πρόσβασης θα σας αποσταλεί μέσω ηλεκτρονικού ταχυδρομείου';
 $string['enterusername'] = 'Εισάγετε το όνομα χρήστη σας';
 $string['entries'] = 'Καταχωρήσεις';
 $string['error'] = 'Σφάλμα';
+$string['errorcreatingactivity'] = 'Αδυναμία δημιουργίας ενός στιγμιότυπου της δραστηριότητας \'{$a}\'';
 $string['errorfiletoobig'] = 'Το αρχείο ήταν μεγαλύτερο από το καθορισμένο όριο';
+$string['errornouploadrepo'] = 'Δεν έχει ενεργοποιηθεί αποθετήριο μεταφόρτωση για αυτό τον ιστοχώρο';
 $string['errorwhenconfirming'] = 'Δεν έχει γίνει η επιβεβαίωση ακόμα γιατί προκλήθηκε σφάλμα. Αν βρεθήκατε εδώ πατώντας ένα σύνδεσμο σε email, βεβαιωθείτε ότι η γραμμή του συνδέσμου δεν ήταν σπασμένη ή διακεκομμένη. Πιθανώς να χρειαστεί να κολλήσετε μόνοι σας το σύνδεσμο.';
-$string['eventcommentcreated'] = 'Το σχόλιο δημιουργήθηκε';
-$string['eventcommentdeleted'] = 'Το σχόλιο διαγράφηκε';
+$string['eventcommentcreated'] = 'Δημιουργία σχολίου';
+$string['eventcommentdeleted'] = 'Διαγραφή σχολίου';
 $string['eventcommentsviewed'] = 'Προβολή σχολίων';
 $string['eventcontentviewed'] = 'Προβολή περιεχομένου';
-$string['eventcoursecategorycreated'] = 'Η κατηγορία δημιουργήθηκε';
-$string['eventcoursecategorydeleted'] = 'Η κατηγορία διαγράφηκε';
-$string['eventcoursecategoryupdated'] = 'Η κατηγορία ενημερώθηκε';
-$string['eventcoursecontentdeleted'] = 'Το περιεχόμενο του μαθήματος έχει διαγραφεί';
-$string['eventcoursecreated'] = 'Το μάθημα δημιουργήθηκε';
-$string['eventcoursedeleted'] = 'Το μάθημα διαγράφηκε';
+$string['eventcoursecategorycreated'] = 'Δημιουργία κατηγορίας';
+$string['eventcoursecategorydeleted'] = 'Διαγραφή κατηγορίας';
+$string['eventcoursecategoryupdated'] = 'Ενημέρωση κατηγορίας';
+$string['eventcoursecategoryviewed'] = 'Προβολή κατηγορίας';
+$string['eventcoursecontentdeleted'] = 'Διαγραφή περιεχομάνου μαθήματος';
+$string['eventcoursecreated'] = 'Δημιουργία μαθήματος';
+$string['eventcoursedeleted'] = 'Διαγραφή μαθήματος';
+$string['eventcourseinformationviewed'] = 'Προβολή σύνοψης μαθήματος';
+$string['eventcoursemodulecreated'] = 'Δημιουργία αρθρώματος μαθήματος';
+$string['eventcoursemoduledeleted'] = 'Διαγραφή αρθρώματος μαθήματος';
+$string['eventcoursemoduleinstancelistviewed'] = 'Προβολή λίστας στιγμιότυπων αρθρώματος μαθήματος';
+$string['eventcoursemoduleupdated'] = 'Ενημέρωση αρθρώματος μαθήματος';
 $string['eventcoursemoduleviewed'] = 'Προβολή αρθρώματος μαθήματος';
-$string['eventcourserestored'] = 'Το μάθημα ανακτήθηκε';
-$string['eventcourseupdated'] = 'Το μάθημα ενημερώθηκε';
+$string['eventcourseresetended'] = 'Ολοκλήρωση επαναφοράς μαθήματος';
+$string['eventcourseresetstarted'] = 'Έναρξη επαναφοράς μαθήματος';
+$string['eventcourserestored'] = 'Ανάκτηση μαθήματος';
+$string['eventcoursesectiondeleted'] = 'Διαγραφή ενότητας μαθήματος';
+$string['eventcoursesectionupdated'] = 'Ενημέρωση ενότητας μαθήματος';
+$string['eventcoursessearched'] = 'Αναζήτηση μαθημάτων';
+$string['eventcourseupdated'] = 'Ενημέρωση μαθήματος';
+$string['eventcourseuserreportviewed'] = 'Προβολή αναφοράς χρηστών μαθήματος';
 $string['eventcourseviewed'] = 'Προβολή μαθήματος';
-$string['eventemailfailed'] = 'Η αποστολή email απέτυχε';
+$string['eventdashboardreset'] = 'Επαναφορά αρχικής σελίδας';
+$string['eventdashboardsreset'] = 'Επαναφορά αρχικών σελίδων';
+$string['eventdashboardviewed'] = 'Προβολή αρχικής σελίδας';
+$string['eventemailfailed'] = 'Αποτυχία αποστολής ηλεκτρονικού ταχυδρομείου';
 $string['eventname'] = 'Όνομα γεγονότος';
+$string['eventrecentactivityviewed'] = 'Προβολή πρόσφατης δραστηριότητας';
+$string['eventsearchindexed'] = 'Ευρετηρίαση δεδομένων αναζήτησης';
+$string['eventsearchresultsviewed'] = 'Προβολή αποτελεσμάτων αναζήτησης';
 $string['eventunknownlogged'] = 'Άγνωστο γεγονός';
-$string['eventusercreated'] = 'Ο χρήστης δημιουργήθηκε';
-$string['eventuserdeleted'] = 'Ο χρήστης διαγράφηκε';
-$string['eventuserloggedout'] = 'Ο χρήστης αποσυνδέθηκε';
-$string['eventuserpasswordupdated'] = 'Ο κωδικός πρόσβασης του χρήστη ενημερώθηκε';
-$string['eventuserupdated'] = 'Το προφίλ χρήστη ενημερώθηκε';
+$string['eventusercreated'] = 'Δημιουργία χρήστη';
+$string['eventuserdeleted'] = 'Διαγραφή χρήστη';
+$string['eventuserlistviewed'] = 'Προβολή λίστας χρηστών';
+$string['eventuserloggedout'] = 'Αποσύνδεση χρήστη';
+$string['eventuserpasswordupdated'] = 'Ενημέρωση κωδικού πρόσβασης χρήστη';
+$string['eventuserprofileviewed'] = 'Προβολή προφίλ χρήστη';
+$string['eventuserupdated'] = 'Ενημέρωση προφίλ χρήστη';
 $string['everybody'] = 'Όλοι';
 $string['executeat'] = 'Εκτέλεση στις';
 $string['existing'] = 'Υπάρχει';
@@ -761,9 +800,11 @@ $string['files'] = 'Αρχεία';
 $string['filesanduploads'] = 'Αρχεία και μεταφορτώσεις';
 $string['filesfolders'] = 'Αρχεία/φάκελοι';
 $string['filetoolarge'] = 'είναι πολύ μεγάλο για να μεταφορτωθεί';
+$string['fileuploadwithcontent'] = 'Οι μεταφορτώσεις αρχείων δεν πρέπει να περιλαμβάνουν την παράμετρο περιεχομένου';
 $string['filloutallfields'] = 'Παρακαλώ συμπληρώστε όλα τα πεδία';
 $string['filter'] = 'Φίλτρο';
 $string['findmorecourses'] = 'Εύρεση περισσότερων μαθημάτων...';
+$string['first'] = 'Πρώτο';
 $string['firstaccess'] = 'Πρώτη πρόσβαση';
 $string['firstname'] = 'Όνομα';
 $string['firstnamephonetic'] = 'Όνομα (φωνητικό)';
@@ -779,12 +820,14 @@ $string['force'] = 'Επιβολή';
 $string['forcelanguage'] = 'Επιβολή γλώσσας';
 $string['forceno'] = 'Μην επιβάλεις';
 $string['forcepasswordchange'] = 'Υποχρεωτική αλλαγή του κωδικού πρόσβασης';
-$string['forcepasswordchange_help'] = 'Παρότρυνση του χρήστη για αλλαγή του κωδικού του με την επόμενη είσοδό του στο σύστημα';
+$string['forcepasswordchangecheckfull'] = 'Είστε βέβαιοι ότι θέλετε να επιβάλετε αλλα΄γη κωδικού πρόσβασης στον/στην {$a};';
+$string['forcepasswordchange_help'] = 'Αν είναι επιλεγμένο το πλαίσιο ελέγχου, θα ζητηθεί από το χρήστη να αλλάξει τον κωδικό πρόσβασής του κατά την επόμενη σύνδεσή του';
+$string['forcepasswordchangenot'] = 'Αδυναμία επιβολής αλλαγής κωδικού πρόσβασης στον/στην {$a}';
 $string['forcepasswordchangenotice'] = 'Πρέπει να αλλάξετε τον κωδικό πρόσβασης για να συνεχίσετε.';
 $string['forcetheme'] = 'Επιβολή θέματος';
 $string['forgotaccount'] = 'Ξεχάσατε τον κωδικό σας;';
 $string['forgotten'] = 'Ξεχάσατε το όνομα χρήστη ή τον κωδικό πρόσβασης;';
-$string['forgottenduplicate'] = 'Αυτή η διεύθυνση email είναι κοινή για πολλούς λογαριασμού, παρακαλώ εισαγάγετε το όνομα χρήστη αντ\' αυτού';
+$string['forgottenduplicate'] = 'Αυτή η διεύθυνση ηλεκτρονικού ταχυδρομείου είναι κοινή για πολλούς λογαριασμούς, παρακαλώ εισάγετε το όνομα χρήστη αντ\' αυτού';
 $string['forgotteninvalidurl'] = 'Μη αποδεκτός σύνδεσμος αλλαγής του κωδικού πρόσβασης';
 $string['format'] = 'Μορφή';
 $string['format_help'] = '<p align="center"><b>Οι μορφές μαθημάτων του Moodle</b></p>
@@ -813,18 +856,19 @@ $string['formatmarkdown'] = 'Μορφή Markdown';
 $string['formatplain'] = 'Μορφή απλού κειμένου';
 $string['formattext'] = 'Αυτόματη μορφή από το Moodle';
 $string['formattexttype'] = 'Μορφοποίηση';
-$string['forumpreferences'] = 'Ρυθμίσεις του φόρουμ';
+$string['forumpreferences'] = 'Προτιμήσεις του φόρουμ';
 $string['framesetinfo'] = 'Αυτό το frameset περιέχει:';
 $string['from'] = 'Από';
 $string['frontpagecategorycombo'] = 'Λίστα συνδυασμού';
 $string['frontpagecategorynames'] = 'Εμφάνιση μιας λίστας κατηγοριών';
 $string['frontpagecourselist'] = 'Εμφάνιση μιας λίστας μαθημάτων';
 $string['frontpagecoursesearch'] = 'Πλαίσιο αναζήτησης μαθήματος';
-$string['frontpagedescription'] = 'Περιγραφή της αρχικής σελίδας';
-$string['frontpagedescriptionhelp'] = 'Αυτή η περιγραφή θα προβάλλεται στην πρώτη σελίδα.';
-$string['frontpageformat'] = 'Μορφή της αρχικής σελίδας';
-$string['frontpageformatloggedin'] = 'Η μορφή της πρώτης σελίδας μετά την σύνδεση';
-$string['frontpagenews'] = 'Εμφάνιση ειδήσεων';
+$string['frontpagedescription'] = 'Σύνοψη πρώτης σελίδας';
+$string['frontpagedescriptionhelp'] = 'Αυτή η περιγραφή θα εμφανίζεται στην πρώτη σελίδα με τη χρήση του μπλοκ σύνοψη μαθήματος/ιστοχώρου.';
+$string['frontpageenrolledcourselist'] = 'Μαθήματα που έχει γίνει εγγραφή';
+$string['frontpageformat'] = 'Μορφή πρώτης σελίδας';
+$string['frontpageformatloggedin'] = 'Μορφή πρώτης σελίδας όταν είναι συνδεδεμένοι';
+$string['frontpagenews'] = 'Νέα';
 $string['frontpagesettings'] = 'Ρυθμίσεις πρώτης σελίδας';
 $string['fulllistofcourses'] = 'Όλα τα μαθήματα';
 $string['fullname'] = 'Πλήρες όνομα';
@@ -840,20 +884,27 @@ $string['geolocation'] = 'γεωγραφικό πλάτος - μήκος';
 $string['gettheselogs'] = 'Προβολή των αναφορών';
 $string['go'] = 'Μεταβείτε';
 $string['gpl'] = 'Copyright (C) 2001-2002  Martin Dougiamas  (http://dougiamas.com)
-
-Αυτό το πρόγραμμα είναι δωρεάν λογισμικό; μπορείτε να το ανακατανείμετε και/ή να το τροποποιήσετε υπό τους όρους του GNU General Public Licence όπως δημοσιεύεται στο Free Software Foundation, είτε την έκδοση 2 ή (κατά δική σας επιλογή) μια επόμενη έκδοση.
-
-Αυτό το πρόγραμμα κατανέμεται ελπίζοντας ότι θα φανεί χρήσιμο,όμως ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμα και την υπονούμενη εγγύηση
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες:
-
-http://www.gnu.org/copyleft/gpl.html';
+<br/><br/>
+Αυτό το πρόγραμμα είναι δωρεάν λογισμικό; μπορείτε να το αναδιανείμετε και/ή να το τροποποιήσετε υπό τους όρους της άδειας GNU General Public Licence όπως δημοσιεύεται στο Free Software Foundation, είτε στην έκδοση 2 της Άδειας ή (κατά δική σας επιλογή) μιας επόμενης έκδοσης.
+<br/><br/>
+Αυτό το πρόγραμμα διανέμεται ελπίζοντας ότι θα φανεί χρήσιμο, όμως ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμα και την υπονούμενη εγγύηση
+ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.
+<br/><br/>
+Δείτε τη σελίδα πληροφοριών Άδειας Moodle για περισσότερες λεπτομέρειες: http://docs.moodle.org/dev/License';
+$string['gpl3'] = 'Copyright (C) 1999 Martin Dougiamas (http://dougiamas.com)
+<br/><br/>
+ Αυτό το πρόγραμμα είναι δωρεάν λογισμικό; μπορείτε να το αναδιανείμετε και/ή να το τροποποιήσετε υπό τους όρους της άδειας GNU General Public License όπως δημοσιεύεται στο Free Software Foundation, είτε στην έκδοση 3 της Άδειας ή (κατά δική σας επιλογή) μιας επόμενης έκδοσης.
+<br/><br/>
+Αυτό το πρόγραμμα διανέμεται ελπίζοντας ότι θα φανεί χρήσιμο,όμως ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμα και την υπονούμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.
+<br/><br/>
+Δείτε τη σελίδα πληροφοριών Άδειας Moodle για περισσότερες λεπτομέρειες: http://docs.moodle.org/dev/License';
 $string['gpllicense'] = 'GPL άδεια χρήσης';
 $string['grade'] = 'Βαθμός';
 $string['grades'] = 'Βαθμοί';
 $string['gravatarenabled'] = 'Το <a href="http://www.gravatar.com/">Gravatar</a> έχει ενεργοποιηθεί για αυτό τον ιστοχώρο. Αν ανεβάσετε μια φωτογραφία προφίλ το Moodle θα προσπαθήσει να φορτώσει μια εικόνα προφίλ για εσάς από το Gravatar.';
 $string['group'] = 'Ομάδα';
-$string['groupadd'] = 'Προσθέστε νέα ομάδα';
-$string['groupaddusers'] = 'Προσθήκη των επιλεγμένων στην ομάδα';
+$string['groupadd'] = 'Προσθήκη νέας ομάδας';
+$string['groupaddusers'] = 'Προσθήκη επιλεγμένων στην ομάδα';
 $string['groupextendenrol'] = 'Επέκταση εγγραφής (κοινό)';
 $string['groupfor'] = 'για την ομάδα';
 $string['groupinfo'] = 'Πληροφορίες για επιλεγμένη ομάδα';
@@ -867,7 +918,7 @@ $string['groupmode'] = 'Μορφή ομάδων';
 $string['groupmodeforce'] = 'Επιβολή ομάδων';
 $string['groupmy'] = 'Η ομάδα μου';
 $string['groupnonmembers'] = 'Χρήστες που δεν ανήκουν σε ομάδα';
-$string['groupnotamember'] = 'Συγγνώμη, αλλά δεν είστε μέλος αυτής της ομάδας';
+$string['groupnotamember'] = 'Συγνώμη, αλλά δεν είστε μέλος αυτής της ομάδας';
 $string['grouprandomassign'] = 'Τυχαία κατανομή σε ομάδες';
 $string['groupremove'] = 'Διαγραφή της επιλεγμένης ομάδας';
 $string['groupremovemembers'] = 'Αφαίρεση των επιλεγμένων μελών';
@@ -905,14 +956,18 @@ $string['hiddensections_help'] = '<p align="center"><strong>Κρυμμένα τ�
 $string['hiddensectionsinvisible'] = 'Οι περιοχές που έχετε αποκρύψει δεν θα προβάλλονται καθόλου';
 $string['hide'] = 'Απόκρυψη';
 $string['hideadvancedsettings'] = 'Απόκρυψη των προχωρημένων ρυθμίσεων';
-$string['hidepicture'] = 'Απόκρυψη της εικόνας';
-$string['hidesection'] = 'Απόκρυψη τμήματος {$a}';
-$string['hidesettings'] = 'Απόκρυψη των ρυθμίσεων';
-$string['hideshowblocks'] = 'Απόκρυψη ή εμφάνιση πλαισίων';
+$string['hidechartdata'] = 'Απόκρυψη δεδομένων γραφήματος';
+$string['hidepicture'] = 'Απόκρυψη εικόνας';
+$string['hidepopoverwindow'] = 'Απόκρυψη αναδυόμενου παραθύρου';
+$string['hidesection'] = 'Απόκρυψη ενότητας {$a}';
+$string['hidesettings'] = 'Απόκρυψη ρυθμίσεων';
+$string['hideshowblocks'] = 'Απόκρυψη ή εμφάνιση μπλοκ';
+$string['highlight'] = 'Επισήμανση';
+$string['highlightoff'] = 'Αφαίρεση επισήμανσης';
 $string['hits'] = 'Επισκέψεις';
 $string['hitsoncourse'] = 'Επισκέψεις στο {$a->coursename} από την/τον {$a->username}';
 $string['hitsoncoursetoday'] = 'Σημερινές επισκέψεις στο {$a->coursename} από το χρήστη {$a->username}';
-$string['home'] = 'Αρχή';
+$string['home'] = 'Αρχική σελίδα';
 $string['hour'] = 'ώρα';
 $string['hours'] = 'ώρες';
 $string['howtomakethemes'] = 'Πως να δημιουργήσετε νέα θέματα';
@@ -928,6 +983,7 @@ $string['icqnumber'] = 'Αριθμός ICQ';
 $string['idnumber'] = 'Αριθμός ταυτότητας';
 $string['idnumbercourse'] = 'Κωδικός μαθήματος';
 $string['idnumbercoursecategory'] = 'Αριθμός αναγνωριστικού κατηγορίας';
+$string['idnumbercoursecategory_help'] = 'Ο αριθμός αναγνωριστικού μιας κατηγορίας μαθημάτων χρησιμοποιείται μόνο κατά την αντιστοίχιση της κατηγορίας με εξωτερικά συστήματα και δεν εμφανίζεται πουθενά στον ιστοχώρο. Αν η κατηγορία έχει κάποιο επίσημο κωδικό όνομα, μπορεί να εισαχθεί αυτό, διαφορετικά το πεδίο μπορεί να παραμείνει κενό.';
 $string['idnumbercourse_help'] = '<p align="center"><strong>Αριθμός Ταυτότητας (I.D.)  Μαθήματος</strong></p>
 
 <p align="left">Ο αριθμός ταυτότητας ενός μαθήματος χρησιμοποιείται μόνο κατά
@@ -935,12 +991,15 @@ $string['idnumbercourse_help'] = '<p align="center"><strong>Αριθμός Τα�
   εμφανίζεται ποτέ μέσα στο Moodle (σε <b>ένα</b> δικτυακό τόπο). Εάν έχετε ένα επίσημο
   κωδικό όνομα για το μάθημά σας τότε γράψε το στο πεδίο... αλλιώς μπορείτε να το
   αφήσετε κενό.</p>';
-$string['idnumbermod'] = 'ID αριθμός';
-$string['idnumbermod_help'] = '<p>Ο ορισμός ενός αριθμού ID παρέχει έναν τρόπο προσδιορισμού της δραστηριότητας για λόγους υπολογισμού βαθμολογίας.
-Εάν η δραστηριότητα δε συμπεριλαμβάνεται σε οποιοδήποτε υπολογισμό βαθμού τότε το πεδίο αριθμού ID μπορεί να μείνει κενό.</p>
-<p> Ο αριθμός ID μπορεί επίσης να οριστεί στη σελίδα επεξεργασίας υπολογισμού βαθμολογιών στο βαθμολόγιο, αν και μπορεί
-να αλλαχθεί μόνον στ σελίδα ανανέωσης της δραστηριότητας.</p>';
-$string['idnumbertaken'] = 'Αυτός ο ID αριθμός είναι ήδη πιασμένος';
+$string['idnumbergroup'] = 'Αριθμός αναγνωριστικού ομάδας';
+$string['idnumbergroup_help'] = 'Ο αριθμός αναγνωριστικού μιας ομάδας χρησιμοποιείται μόνο όταν γίνεται αντιστοίχιση της ομάδας με εξωτερικά συστήματα και δεν εμφανίζεται πουθένα στον ιστοχώρο. Αν η ομάδα έχει ένα επίσημο κωδικό όνομα, μπορεί να εισαχθεί, αλλιώς το πεδίο μπορεί να παραμείνει κενό.';
+$string['idnumbergrouping'] = 'Αριθμός αναγνωριστικού ομαδοποίησης';
+$string['idnumbergrouping_help'] = 'Ο αριθμός αναγνωριστικού μιας ομαδοποίησης χρησιμοποιείται μόνο όταν γίνεται αντιστοίχιση της ομαδοποίησης με εξωτερικά συστήματα και δεν εμφανίζεται πουθένα στον ιστοχώρο. Αν η ομαδοποίηση έχει ένα επίσημο κωδικό όνομα, μπορεί να εισαχθεί, αλλιώς το πεδίο μπορεί να παραμείνει κενό.';
+$string['idnumbermod'] = 'Αριθμός αναγνωριστικού';
+$string['idnumbermod_help'] = '<p>Ο ορισμός ενός αριθμού αναγνωριστικού παρέχει έναν τρόπο προσδιορισμού της δραστηριότητας για λόγους υπολογισμού βαθμολογίας.
+Αν η δραστηριότητα δε συμπεριλαμβάνεται σε κάποιο υπολογισμό βαθμολογίας τότε το πεδίο αριθμός αναγνωριστικού μπορεί να μείνει κενό.</p>
+<p>Ο αριθμός αναγνωριστικού μπορεί επίσης να οριστεί στο βαθμολόγιο, αν και μπορεί να αλλαχθεί μόνο στη σελίδα ρυθμίσεων δραστηριότητας.</p>';
+$string['idnumbertaken'] = 'Αυτός ο αριθμός αναγνωριστικού χρησιμοποιείται ήδη';
 $string['imagealt'] = 'Περιγραφή εικόνας';
 $string['import'] = 'Εισαγωγή';
 $string['importdata'] = 'Εισαγωγή δεδομένων μαθήματος';
@@ -950,11 +1009,11 @@ $string['importdatafrom'] = 'Εύρεση ενός μαθήματος για ε�
 $string['inactive'] = 'Μη ενεργό';
 $string['include'] = 'Συμπερίληψη';
 $string['includeallusers'] = 'Συμπερίληψη Όλων των Χρηστών';
-$string['includecoursefiles'] = 'Συμπερίληψη Αρχείων Μαθήματος';
+$string['includecoursefiles'] = 'Συμπερίληψη αρχείων μαθήματος';
 $string['includecourseusers'] = 'Συμπερίληψη των Χρηστών του Μαθήματος';
 $string['included'] = 'Συμπεριλήφθηκε';
 $string['includelogentries'] = 'Συμπερίληψη Εγγραφών Καταγραφής';
-$string['includemodules'] = 'Συμπερίληψη των αρθρωμάτων';
+$string['includemodules'] = 'Συμπερίληψη αρθρωμάτων';
 $string['includemoduleuserdata'] = 'Συμπερίληψη των δεδομένων των αρθρωμάτων';
 $string['includeneededusers'] = 'Συμπερίληψη Απαραίτητων Χρηστών';
 $string['includenoneusers'] = 'Να μη συμπεριλαμβάνονται οι χρήστες';
@@ -970,6 +1029,7 @@ $string['interestslist'] = 'Λίστα με ενδιαφέροντα';
 $string['interestslist_help'] = 'Καταχωρήστε τα ενδιαφέροντά σας χωρισμένα με κόμματα';
 $string['invalidemail'] = 'Εσφαλμένη διεύθυνση ηλεκτρονικού ταχυδρομείου';
 $string['invalidlogin'] = 'Εσφαλμένη είσοδος, παρακαλώ δοκιμάστε ξανά';
+$string['invalidusername'] = 'Το όνομα χρήστη μπορεί να περιέχει μόνο αλφαριθμητικούς πεζούς χαρακτήρες (γράμματα και αριθμούς), κάτω παύλα (_), παύλα (-), τελεία(.) ή το σύμβολο (@).';
 $string['invalidusernameupload'] = 'Μη έγκυρο όνομα χρήστη';
 $string['ip_address'] = 'IP Διεύθυνση';
 $string['jump'] = 'Μεταφορά';
@@ -980,6 +1040,7 @@ $string['langltr'] = 'Το κείμενο γράφεται από αριστερ
 $string['langrtl'] = 'Το κείμενο γράφεται από δεξιά προς τα αριστερά';
 $string['language'] = 'Γλώσσα';
 $string['languagegood'] = 'Αυτό το γλωσσικό πακέτο είναι ενημερωμένο! :D';
+$string['last'] = 'Τελευταίο';
 $string['lastaccess'] = 'Τελευταία πρόσβαση';
 $string['lastcourseaccess'] = 'Τελευταία πρόσβαση στο μάθημα';
 $string['lastedited'] = 'Τελευταία επεξεργασία';
@@ -993,13 +1054,14 @@ $string['lastyear'] = 'Προηγούμενος χρόνος';
 $string['latestlanguagepack'] = 'Έλεγχος για το πιο ενημερωμένο πακέτο γλωσσών στο moodle.org';
 $string['layouttable'] = 'Πίνακας διάταξης';
 $string['leavetokeep'] = 'Αφήστε κενό για να διατηρήσετε τον υπάρχοντα κωδικό πρόσβασης';
-$string['license'] = 'Άδεια GPL';
+$string['license'] = 'Άδεια';
 $string['licenses'] = 'Άδειες';
 $string['liketologin'] = 'Θέλετε να συνδεθείτε τώρα με έναν πλήρη λογαριασμό χρήστη;';
 $string['list'] = 'Κατάλογος';
 $string['listfiles'] = 'Κατάλογος αρχείων στο {$a}';
 $string['listofallpeople'] = 'Κατάλογος όλων των ατόμων';
 $string['listofcourses'] = 'Λίστα των μαθημάτων';
+$string['loading'] = 'Φορτώνει';
 $string['loadinghelp'] = 'Φορτώνει...';
 $string['local'] = 'Τοπικό';
 $string['localplugins'] = 'Τοπικά πρόσθετα';
@@ -1056,6 +1118,7 @@ $string['managedataformats'] = 'Διαχείριση μορφών δεδομέν
 $string['managefilters'] = 'Φίλτρα';
 $string['managemodules'] = 'Διαχείριση των αρθρωμάτων';
 $string['manageroles'] = 'Ρόλοι και δικαιώματα';
+$string['markallread'] = 'Σημείωση όλων ως αναγνωσμένων';
 $string['markedthistopic'] = 'Αυτό το θέμα προβάλλεται ως τρέχον θέμα';
 $string['markthistopic'] = 'Σημείωση αυτού του θέματος σαν τρέχον θέμα';
 $string['matchingsearchandrole'] = 'Αντιστοιχτισμένα \'{$a->search}\' και {$a->role}';
@@ -1136,12 +1199,14 @@ $string['more'] = 'περισσότερα';
 $string['morehelp'] = 'Περισσότερη βοήθεια';
 $string['moreinfo'] = 'Περισσότερες πληροφορίες';
 $string['moreinformation'] = 'Περισσότερες πληροφορίες για αυτό το λάθος';
+$string['morenavigationlinks'] = 'Περισσότερα...';
 $string['moreprofileinfoneeded'] = 'Παρακαλώ γράψτε κάτι για τον εαυτό σας';
 $string['mostrecently'] = 'πιο πρόσφατα';
 $string['move'] = 'Μετακίνηση';
 $string['movecategorycontentto'] = 'Μετακίνηση σε';
-$string['movecategoryto'] = 'Μετακίνηση του τμήματος στο:';
-$string['movecontentstoanothercategory'] = 'Μετακίνηση περιεχομένωνμ σε άλλη κατηγορία';
+$string['movecategoryto'] = 'Μετακίνηση κατηγορίας στο:';
+$string['movecontent'] = 'Μετακίνηση {$a}';
+$string['movecontentstoanothercategory'] = 'Μετακίνηση περιεχομένων σε άλλη κατηγορία';
 $string['movecoursemodule'] = 'Μετακίνησε πόρο';
 $string['movecoursesection'] = 'Μετακίνηση ενότητας';
 $string['movecourseto'] = 'Μετακίνηση μαθήματος σε:';
@@ -1161,7 +1226,7 @@ $string['mustchangepassword'] = 'Ο καινούριος κωδικός πρόσ
 $string['mustconfirm'] = 'Πρέπει να επιβεβαιώσετε τη σύνδεσή σας';
 $string['mycourses'] = 'Τα μαθήματά μου';
 $string['myfiles'] = 'Προσωπικά αρχεία';
-$string['myfilesmanage'] = 'Διαχείριση αρχείων';
+$string['myfilesmanage'] = 'Διαχείρηση αρχείων';
 $string['myhome'] = 'Η αρχική μου';
 $string['myprofile'] = 'Το προφίλ μου';
 $string['name'] = 'Όνομα';
@@ -1205,9 +1270,10 @@ $string['newpicture_help'] = '<p align="center"><b>Φορτώνοντας μια
 <p>Σημείωση: Βεβαιωθείτε πως το αρχείο εικόνας δεν είναι μεγαλύτερο από το όριο που ορίζεται εδώ αλλιώς δε θα φορτωθεί το αρχείο.</p>
 <p>Μετά πατήστε "Ενημέρωση του προφίλ μου" στο κάτω μέρος - το αρχείο εικόνας θα κοπεί σε τετράγωνη μορφή στα 100x100 pixels.</p>
 <p>Όταν επιστρέψετε στη σελίδα του προφίλ σας, η εικόνα ίσως να μη φαίνεται να έχει αλλάξει. Αν συμβαίνει αυτό απλά πατήστε το κουμπί "Ανανέωση" (ή "Reload" ή "Refresh", ανάλογα με τον υπολογιστή σας) στον περιηγητή σας.</p>';
+$string['newsectionname'] = 'Νέο όνομα για την ενότητα {$a}';
 $string['newsitem'] = 'αντικείμενο νέων';
-$string['newsitems'] = 'αντικείμενα νέων';
-$string['newsitemsnumber'] = 'Αντικείμενα νέων προς προβολή';
+$string['newsitems'] = 'νέα';
+$string['newsitemsnumber'] = 'Αριθμός νέων';
 $string['newsitemsnumber_help'] = '<p align="center"><b>Νέα σχετικά με τα μαθήματα"</b></p>
 
 <p>Μια ειδική ομάδα συζητήσεων που ονομάζεται "Πίνακας Ανακοινώσεων" εμφανίζεται στην
@@ -1235,14 +1301,14 @@ $string['newusernewpasswordtext'] = 'Γεια σας {$a->firstname},
 
 Για να συνδεθείτε, πατήστε τον επόμενο σύνδεσμο {$a->link}';
 $string['newusers'] = 'Νέοι χρήστες';
-$string['newwindow'] = 'νέο παράθυρο';
+$string['newwindow'] = 'Νέο παράθυρο';
 $string['next'] = 'Επόμενο';
 $string['nextsection'] = 'Επόμενο τμήμα';
 $string['no'] = 'Όχι';
 $string['noblockstoaddhere'] = 'Δεν υπάρχουν blocks που μπορείτε να προσθέσετε σε αυτή τη σελίδα.';
 $string['nobody'] = 'Κανένας';
 $string['nochange'] = 'Καμία αλλαγή';
-$string['nocomments'] = 'Χωρίς Σχόλια';
+$string['nocomments'] = 'Χωρίς σχόλια';
 $string['nocourses'] = 'Κανένα μάθημα';
 $string['nocoursesfound'] = 'Δε βρέθηκαν μαθήματα με τις λέξεις \'{$a}\'';
 $string['nocoursesyet'] = 'Δεν υπάρχουν μαθήματα σε αυτήν την κατηγορία';
@@ -1256,7 +1322,7 @@ $string['nomatchingusers'] = 'Δεν ταιριάζει κανένας χρήσ�
 $string['nomorecourses'] = 'Δεν βρέθηκαν μαθήματα που να ταιριάζουν με τα κριτήριά σας';
 $string['nomoreidnumber'] = 'Δεν χρησιμοποιείται idnumber για την αποφυγή συγκρούσεων';
 $string['none'] = 'Κανένας';
-$string['noneditingteacher'] = 'Διδάσκων περιορισμένης πρόσβασης';
+$string['noneditingteacher'] = 'Διδάσκων περιορισμένων δυνατοτήτων';
 $string['noneditingteacherdescription'] = 'Ο διδάσκοντας περιορισμένων δυνατοτήτων μπορεί να διδάξει μαθήματα και να βαθμολογήσει τους φοιτητές αλλά δεν μπορεί να αλλάξει τις δραστηριότητες τους';
 $string['nonstandard'] = 'Μη-καθιερωμένος';
 $string['nopendingcourses'] = 'Δεν υπάρχουν μαθήματα που αναμένουν έγκριση';
@@ -1279,6 +1345,7 @@ $string['nostudentsingroup'] = 'Δεν υπάρχουν σπουδαστές σ�
 $string['nostudentsyet'] = 'Δεν έχουν εγγραφεί φοιτητές σε αυτό το μάθημα ακόμη';
 $string['nosuchemail'] = 'Δεν υπάρχει τέτοια διεύθυνση email';
 $string['notavailable'] = 'Δεν είναι διαθέσιμο';
+$string['notavailablecourse'] = '{$a} δεν είναι διαθέσιμο';
 $string['noteachersyet'] = 'Δεν υπάρχουν διδάσκοντες σε αυτό το μάθημα ακόμη';
 $string['notenrolled'] = '{$a} - δεν είναι εγγεγραμμένος σε αυτό το μάθημα.';
 $string['notenrolledprofile'] = 'Αυτό το προφίλ δεν είναι διαθέσιμο γιατί ο χρήστης δεν έχει γραφτεί σε αυτό το μάθημα.';
@@ -1293,7 +1360,7 @@ $string['notifyloginfailuresmessageend'] = 'Μπορείτε να δείτε α�
 $string['notifyloginfailuresmessagestart'] = 'Λίστα με αποτυχημένες προσπάθειες σύνδεσης {$a} από την τελευταία φορά που ειδοποιηθήκατε';
 $string['notifyloginfailuressubject'] = '{$a} :: Ειδοποίηση αποτυχημένων συνδέσεων';
 $string['notincluded'] = 'Δεν έχει συμπεριληφθεί';
-$string['notingroup'] = 'Συγγνώμη, αλλά θα πρέπει να είστε μέλος μιας ομάδας για να δείτε αυτήν τη δραστηριότητα';
+$string['notingroup'] = 'Συγνώμη, αλλά θα πρέπει να είστε μέλος μιας ομάδας για να δείτε αυτήν τη δραστηριότητα';
 $string['notpublic'] = 'Όχι δημόσια!';
 $string['nousersfound'] = 'Δε βρέθηκαν χρήστες';
 $string['nousersmatching'] = 'Δε βρέθηκε χρήστης που να ταιριάζει με \'{$a}\'';
@@ -1318,7 +1385,7 @@ $string['numwords'] = '{$a} λέξεις';
 $string['numyear'] = '{$a} έτος';
 $string['numyears'] = '{$a} έτη';
 $string['ok'] = 'OK';
-$string['oldpassword'] = 'Τρέχων κωδικός';
+$string['oldpassword'] = 'Τρέχων κωδικός πρόσβασης';
 $string['olduserdirectory'] = 'Αυτός είναι ο φάκελος ΠΑΛΑΙΩΝ χρηστών και δε χρειάζεται πλέον. Μπορείτε να το σβήσετε με ασφάλεια. Τα αρχεία που περιέχει έχουν αντιγραφεί στο φάκελο ΝΕΩΝ χρηστών.';
 $string['optional'] = 'προαιρετικό';
 $string['options'] = 'επιλογές';
@@ -1329,9 +1396,9 @@ $string['outline'] = 'Σύνοψη';
 $string['outlinereport'] = 'Αναφορά σύνοψης';
 $string['page'] = 'Σελίδα';
 $string['pagea'] = 'Σελίδα {$a}';
-$string['pageheaderconfigablock'] = 'Ρυθμίσεις ενός μπλοκ στο %fullname%';
+$string['pageheaderconfigablock'] = 'Ρυθμίσεις ενός μπλοκ στο {$a->fullname}';
 $string['pagepath'] = 'Διαδρομή σελίδας';
-$string['parentcategory'] = 'Κατηγορία-γονέας';
+$string['parentcategory'] = 'Γονική κατηγορία';
 $string['parentcoursenotfound'] = 'Δεν βρέθηκε μάθημα-γονέας!';
 $string['parentfolder'] = 'Φάκελος-γονέας';
 $string['participants'] = 'Συμμετέχοντες';
@@ -1395,7 +1462,7 @@ $string['potentialadmins'] = 'Πιθανοί διαχειριστές';
 $string['potentialcreators'] = 'Πιθανοί δημιουργοί μαθημάτων';
 $string['potentialstudents'] = 'Πιθανοί σπουδαστές';
 $string['potentialteachers'] = 'Πιθανοί εκπαιδευτές';
-$string['preferences'] = 'Επιλογές';
+$string['preferences'] = 'Προτιμήσεις';
 $string['preferredlanguage'] = 'Προτεινόμενη γλώσσα';
 $string['preferredtheme'] = 'Προτεινόμενo θέμα';
 $string['preprocessingbackupfile'] = 'Προ-εξεπεργασία αντιγράφου ασφαλείας';
@@ -1424,7 +1491,7 @@ $string['recipientslist'] = 'Λίστα παραληπτών';
 $string['recreatedcategory'] = 'Επαναδημιουργημένη κατηγορία {$a}';
 $string['redirect'] = 'Ανακατεύθυνση';
 $string['refresh'] = 'Ανανέωση';
-$string['refreshingevents'] = 'Ανανέωση των γεγονότων';
+$string['refreshingevents'] = 'Ανανέωση γεγονότων';
 $string['registration'] = 'Καταχώρηση του Moodle';
 $string['registrationcontact'] = 'Επικοινωνία από το κοινό';
 $string['registrationcontactno'] = 'Όχι, δε θέλω φόρμα επικοινωνίας στην καταχώρηση του ιστοχώρου';
@@ -1436,9 +1503,9 @@ $string['registrationinfo'] = '<p>Αυτή η σελίδα σας επιτρέπ
 <p>Εξ ορισμού, οι πληροφορίες σας θα είναι εμπιστευτικές και δε θα πωληθούν ή θα προωθηθούν σε κανέναν άλλο. Ο μόνος λόγος για τη συλλογή αυτής της πληροφορίας είναι για λόγους υποστήριξης και για να δημιουργηθεί μια στατιστική εικόνα της κοινότητας του Moodle.
 <p>Αν θέλετε, μπορείτε να επιλέξετε το όνομα του δικτυακού σας τόπου, της χώρας και το URL να προστεθούν στο δημόσιο κατάλογο δικτυακών τόπως Moodle.
 <p>Όλες οι νέες καταχωρήσεις ελέγχονται πριν προστεθούν στη λίστα, αλλά μπορείτε να ενημερώνετε την καταχώρηση (και στο δημόσιο κατάλογο) οποιαδήποτε στιγμή απλά συμπληρώνοντας αυτή τη φόρμα.';
-$string['registrationinfotitle'] = 'Πληροφορίες εγγραφής';
+$string['registrationinfotitle'] = 'Πληροφορίες καταχώρησης';
 $string['registrationno'] = 'Όχι, δε θέλω να λαμβάνω μηνύματα email';
-$string['registrationsend'] = 'Αποστολή πληροφοριών εγγραφής στο moodle.org';
+$string['registrationsend'] = 'Αποστολή πληροφοριών καταχώρησης στο moodle.org';
 $string['registrationyes'] = 'Ναι, παρακαλώ ειδοποίηστέ με σχετικά με σημαντικά θέματα';
 $string['reject'] = 'Απόρριψη';
 $string['rejectdots'] = 'Απόρριψη...';
@@ -1508,7 +1575,7 @@ $string['roles'] = 'Ρόλοι';
 $string['rss'] = 'RSS';
 $string['rssarticles'] = 'Πλήθος νέων άρθρων RSS';
 $string['rsserror'] = 'Σφάλμα κατά την ανάγνωση των δεδομένων RSS';
-$string['rsskeyshelp'] = 'Για τη διασφάλιση της ασφάλειας και της ιδιωτικότητας, τα RSS feed URLs περιέχουν ένα ειδικό διακριτικό που αναγνωρίζει τον χρήστη από τον οποίο προήλθαν. Αυτό αποτρέπει άλλους χρήστες, από την πρόσβασή τους σε περιοχές του Moodle που δεν έχουν πρόσβαση μέσω RSS feeds.</p><p>Αυτό το διακριτικό δημιουργείται αυτόματα την πρώτη φορά που εισέρχεστε σε μία περιοχή του Moodle που παράγει RSS feed. Αν αισθάνεστε ότι το διακριτικό σας RSS feed έχει παραβιαστεί με κάποιο τρόπο μπορείτε να υποβάλετε αίτημα για ένα καινούργιο επιλέγοντας τον σύνδεσμο Επαναφορά συνδέσμου εδώ (Reset link here). Παρακαλώ σημειώστε ότι τα τρέχοντα RSS feed URLs θα καταστούν άκυρα.';
+$string['rsskeyshelp'] = 'Για τη διασφάλιση της ασφάλειας και της ιδιωτικότητας, τα RSS feed URLs περιέχουν ένα ειδικό διακριτικό που αναγνωρίζει τον χρήστη από τον οποίο προήλθαν. Αυτό αποτρέπει άλλους χρήστες, από την πρόσβασή τους σε περιοχές του Moodle που δεν έχουν πρόσβαση μέσω RSS feeds.</p><p>Αυτό το διακριτικό δημιουργείται αυτόματα την πρώτη φορά που εισέρχεστε σε μία περιοχή του Moodle που παράγει RSS feed. Αν αισθάνεστε ότι το διακριτικό σας RSS feed έχει παραβιαστεί με κάποιο τρόπο μπορείτε να υποβάλεται αίτημα για ένα καινούργιο επιλέγοντας τον σύνδεσμο Επαναφορά συνδέσμου εδώ (Reset link here). Παρακαλώ σημειώστε ότι τα τρέχοντα RSS feed URLs θα καταστούν άκυρα.';
 $string['rsstype'] = 'Προσθήκη άρθρων RSS για αυτήν τη δραστηριότητα';
 $string['saveandnext'] = 'Αποθήκευση και προβολή του επόμενου';
 $string['savechanges'] = 'Αποθήκευση αλλαγών';
@@ -1517,7 +1584,7 @@ $string['savechangesandreturn'] = 'Αποθήκευση και επιστροφ�
 $string['savechangesandreturntocourse'] = 'Αποθήκευση κι επιστροφή στο μάθημα';
 $string['savecomment'] = 'Αποθήκευση σχολίου';
 $string['savedat'] = 'Η αποθήκευση έγινε στις:';
-$string['savepreferences'] = 'Αποθήκευση επιλογών';
+$string['savepreferences'] = 'Αποθήκευση προτιμήσεων';
 $string['saveto'] = 'Αποθήκευση σε';
 $string['scale'] = 'Κλίμακα';
 $string['scale_help'] = '<p align="center"><b>Κλίμακες</b></p>
@@ -1537,7 +1604,7 @@ $string['scale_help'] = '<p align="center"><b>Κλίμακες</b></p>
 <p>Τέλος, μπορεί να υπάρχουν μία ή παραπάνω "Τυπικές" κλίμακες ορισμένες στον ιστοχώρο σας από τον διαχειριστή του συστήματος. Αυτές θα είναι διαθέσιμες σε όλα τα μαθήματα.</p>';
 $string['scales'] = 'Κλίμακες';
 $string['scalescustom'] = 'Ατομικές κλίμακες';
-$string['scalescustomcreate'] = 'Προσθήκη μιας κλίμακας';
+$string['scalescustomcreate'] = 'Προσθήκη νέας κλίμακας';
 $string['scalescustomno'] = 'Δεν έχουν δημιουργηθεί ατομικές  κλίμακες ακόμα';
 $string['scalesstandard'] = 'Τυποποιημένες κλίμακες';
 $string['scalestandard'] = 'Καθιερωμένη κλίμακα';
@@ -1623,6 +1690,7 @@ $string['showallcourses'] = 'Προβολή όλων των μαθημάτων';
 $string['showallusers'] = 'Προβολή όλων των χρηστών';
 $string['showblockcourse'] = 'Εμφάνιση λίστας μαθημάτων που περιέχουν μπλοκ';
 $string['showcategory'] = 'Εμφάνιση {$a}';
+$string['showchartdata'] = 'Εμφάνιση δεδομένων γραφήματος';
 $string['showcomments'] = 'Εμφάνιση/απόκρυψη σχολίων';
 $string['showcommentsnonjs'] = 'Εμφάνιση σχολίων';
 $string['showdescription'] = 'Προβολή περιγραφής στην σελίδα του μαθήματος';
@@ -1633,8 +1701,9 @@ $string['showlistofcourses'] = 'Προβολή λίστας μαθημάτων';
 $string['showmodulecourse'] = 'Προβολή λίστας μαθημάτων που περιέχουν δραστηριότητα';
 $string['showonly'] = 'Προβολή μόνο';
 $string['showperpage'] = 'Προβολή {$a} ανά σελίδα';
+$string['showpopoverwindow'] = 'Προβολή αναδυόμενου παράθυρου';
 $string['showrecent'] = 'Προβολή πρόσφατης δραστηριότητας';
-$string['showreports'] = 'Προβολή αναφορών δραστηριότητας';
+$string['showreports'] = 'Προβολή αναφορών δραστηριοτήτων';
 $string['showreports_help'] = '<p align="center"><strong>Αναφορές Δραστηριότητας</strong></p>
 
 <p align="justify">Οι αναφορές δραστηριότητας είναι διαθέσιμες για κάθε συμμετέχοντα και
@@ -1665,6 +1734,7 @@ $string['sitefiles'] = 'Αρχεία του ιστοχώρου';
 $string['sitefilesused'] = 'Αρχεία του ιστοχώρου που χρησιμοποιούνται σε αυτό το μάθημα';
 $string['sitehome'] = 'Αρχική σελίδα ιστοτόπου';
 $string['sitelogs'] = 'Αρχεία καταγραφής του ιστοχώρου';
+$string['sitemessage'] = 'Αποστολή μηνύματος στους χρήστες';
 $string['sitenews'] = 'Νέα του ιστοχώρου';
 $string['sitepages'] = 'Σελίδες ιστοτόπου';
 $string['sitepartlist'] = 'Δεν έχετε τα απαραίτητα δικαιώματα για να δείτε τη λίστα των συμμετεχόντων';
@@ -1693,7 +1763,7 @@ $string['sourcerole'] = 'Πηγή ρόλου';
 $string['specifyname'] = 'Πρέπει να πληκτρολογήσετε ένα όνομα';
 $string['standard'] = 'Καθιερωμένος';
 $string['starpending'] = '([*] = μάθημα που εκκρεμεί η αποδοχή)';
-$string['startdate'] = 'Ημερομηνία έναρξης';
+$string['startdate'] = 'Ημερομηνία έναρξης μαθήματος';
 $string['startdate_help'] = '<p align="center"><b>Ημερομηνία έναρξης μαθημάτων</b></p>
 
 <p>Εδώ είναι που καθορίζεται η ημερομηνία έναρξης των
@@ -1768,21 +1838,21 @@ $string['subcategory'] = 'Υποκατηγορία';
 $string['subcategoryof'] = 'Υποκατηγορία του {$a}';
 $string['submit'] = 'Υποβολή';
 $string['success'] = 'Επιτυχία';
-$string['summary'] = 'Περίληψη';
-$string['summary_help'] = '<p align="center"><b>Περίληψη θέματος</b></p>
+$string['summary'] = 'Σύνοψη';
+$string['summary_help'] = '<p align="center"><b>Σύνοψη θέματος</b></p>
 
 
-<p> η ιδέα μιας περίληψης ενός θέματος είναι ένα πολύ μικρό κείμενο που χρησιμοποιείται για την προετοιμασία των μαθητών στις δραστηριότητες του θέματος αυτού.</p>
+<p> η ιδέα μιας σύνοψης ενός θέματος είναι ένα πολύ μικρό κείμενο που χρησιμοποιείται για την προετοιμασία των μαθητών στις δραστηριότητες του θέματος αυτού.</p>
 
 
-<p>Κάθε περίληψη πρέπει να είναι πολύ μικρή, ώστε το μέγεθος τις σελίδας του μαθήματος να μην γίνεται πολύ μεγάλο.</p>
+<p>Κάθε σύνοψη πρέπει να είναι πολύ μικρή, ώστε το μέγεθος τις σελίδας του μαθήματος να μην γίνεται πολύ μεγάλο.</p>
 
 
-<p> Εάν είναι επιθυμητή η προσθήκη παραπάνω από μιας πρότασης, τότε προσθέτσε ένα πόρο σε αυτό το θέμα (π.χ. η πρώτη δραστηριότητα μπορεί να λέγεται <b> Για αυτό το Θέμα</b>).</p>';
-$string['summaryof'] = '{$a} - περίληψη';
+<p> Εάν είναι επιθυμητή η προσθήκη παραπάνω από μιας πρότασης, τότε προσθέστε ένα πόρο σε αυτό το θέμα (π.χ. η πρώτη δραστηριότητα μπορεί να λέγεται <b> Για αυτό το Θέμα</b>).</p>';
+$string['summaryof'] = 'Σύνοψη {$a}';
 $string['supplyinfo'] = 'Παρακαλώ, δώστε κάποιες πληροφορίες σχετικές με τον εαυτό σας';
 $string['suspended'] = 'Ανεστάλη';
-$string['suspendedusers'] = 'Ανεσταλμένοι χρήστες';
+$string['suspendedusers'] = 'Χρήστες σε αναστολή';
 $string['switchdevicedefault'] = 'Μεταβείτε στο στάνταρντ θέμα';
 $string['switchdevicerecommended'] = 'Μετάβαση στο συνιστώμενο θέμα για τη συσκευή σας';
 $string['switchrolereturn'] = 'Επιστροφή στον κανονικό ρόλο μου';
@@ -1847,7 +1917,7 @@ $string['unzippingbackup'] = 'Αποσυμπίεση αντιγράφου ασφ
 $string['up'] = 'Πάνω';
 $string['update'] = 'Επεξεργασία';
 $string['updated'] = '{$a} - τροποποιήθηκε';
-$string['updatemymoodleoff'] = 'Διακοπή επεξεργασίας αυτής της σελίδας';
+$string['updatemymoodleoff'] = 'Κανονικά';
 $string['updatemymoodleon'] = 'Επεξεργασία αυτής της σελίδας';
 $string['updatemyprofile'] = 'Επεξεργασία του προφίλ';
 $string['updatesevery'] = 'Ενημέρωση κάθε {$a} δευτερόλεπτα';
@@ -1940,8 +2010,7 @@ $string['weekshow'] = 'Προβολή της εβδομάδας στον/στη�
 $string['welcometocourse'] = 'Καλωσήλθατε στο {$a}';
 $string['welcometocoursetext'] = 'Καλώς ήρθατε στο {$a->coursename}!
 
-Ένα από τα πρώτα πράγματα που θα πρέπει να κάνετε είναι να επεξεργαστείτε τη σελίδα
-με το προφίλ σας μέσα σε αυτό το μάθημα ώστε να μάθουμε περισσότερα για εσάς:
+Ένα από τα πρώτα πράγματα που θα πρέπει να κάνετε είναι να επεξεργαστείτε τη σελίδα του προφίλ σας ώστε να μάθουμε περισσότερα για εσάς:
 
   {$a->profileurl}';
 $string['whatforlink'] = 'Τι θέλετε να κάνετε με τον σύνδεσμο ;';
@@ -1950,6 +2019,7 @@ $string['whattocallzip'] = 'Όνομα συμπιεσμένου αρχείου';
 $string['whattodo'] = 'Ενέργειες';
 $string['windowclosing'] = 'Αυτό το παράθυρο θα πρέπει να κλέισει αυτόματα. Σε αντίθετη περίπτωση, παρακαλώ κλείστε το τώρα.';
 $string['withchosenfiles'] = 'Με τα επιλεγμένα αρχεία';
+$string['withdisablednote'] = '{$a} (ανενεργό)';
 $string['withoutuserdata'] = 'χωρίς τα δεδομένα του χρήστη';
 $string['withselectedusers'] = 'Με τους επιλεγμένους χρήστες...';
 $string['withuserdata'] = 'με τα δεδομένα του χρήστη';

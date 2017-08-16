@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,9 +73,6 @@ $string['editservice'] = 'Service bearbeiten: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Aktiviert';
 $string['enabledocumentation'] = 'Entwicklerdokumentation aktivieren';
 $string['enabledocumentationdescription'] = 'Eine ausführliche Webservicedokumentation ist für die aktivierten Protokolle verfügbar.';
-$string['enablemobilewsoverview'] = 'Öffnen Sie die Seite {$a->manageservicelink} und aktivieren Sie die Einstellung \'{$a->enablemobileservice}\'. Alle weiteren Einstellungen werden automatisch gesetzt, um die Moodle Mobile App verwenden zu können.
-
-Status: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Protokolle aktivieren';
 $string['enableprotocolsdescription'] = 'Mindestens ein Protokoll muss aktiviert sein. Aus Sicherheitsgründen sollten nur tatsächlich benutzte Protokolle aktiviert werden.';
 $string['enablews'] = 'Webservices aktivieren';
@@ -131,8 +128,6 @@ $string['missingpassword'] = 'Fehlendes Passwort';
 $string['missingrequiredcapability'] = 'Das Recht \'{$a}\' ist notwendig.';
 $string['missingusername'] = 'Anmeldename fehlt';
 $string['missingversionfile'] = 'Codierungsfehler: Für die Komponente "{$a}" fehlt die Datei version.php';
-$string['mobilewsdisabled'] = 'Deaktiviert';
-$string['mobilewsenabled'] = 'Aktiviert';
 $string['nameexists'] = 'Der Name wird bereits für einen anderen Webservice verwendet.';
 $string['nocapabilitytouseparameter'] = 'Die Person besitzt nicht die notwendigen Rechte, um die Parameter verwenden \'{$a}\'';
 $string['nofunctions'] = 'Dieser Service hat keine Funktion.
@@ -214,6 +209,7 @@ $string['usernameorid_help'] = 'Anmeldename oder Nutzer-ID eingeben';
 $string['usernameoridnousererror'] = 'Es wurde kein Nutzerkonto mit diesem Anmeldenamen oder dieser Nutzer-ID gefunden.';
 $string['usernameoridoccurenceerror'] = 'Es wurde mehrere Nutzerkonten mit diesem Anmeldenamen gefunden. Geben Sie die Nutzer-ID ein.';
 $string['usernotallowed'] = 'Das Nutzerkonto ist nicht für diesen Service zugelassen. Zuerst müssen Sie das Nutzerkonto in die Nutzeradministration für {$a} eintragen.';
+$string['userservices'] = 'Nutzerservices: {$a}';
 $string['usersettingssaved'] = 'Nutzereinstellungen gespeichert';
 $string['validuntil'] = 'Gültig bis';
 $string['validuntil_help'] = 'Der Service wird für Nutzer deaktiviert nach dem eingegeben Datum ';

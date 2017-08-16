@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,8 @@ $string['availabletodatevalidation'] = 'De \'beschikbaar tot\'-datum kan niet vo
 $string['blank'] = 'Leeg';
 $string['buttons'] = 'Acties';
 $string['bynameondate'] = 'door {$a->name} - {$a->date}';
+$string['calendarend'] = 'Databank {$a} sluit';
+$string['calendarstart'] = 'Databank {$a} opent';
 $string['cancel'] = 'Annuleer';
 $string['cannotaccesspresentsother'] = 'Je mag de sjablonen van andere gebruikers niet gebruiken';
 $string['cannotadd'] = 'Kan geen items toevoegen!';
@@ -117,6 +119,7 @@ $string['data:managetemplates'] = 'Beheer sjablonen';
 $string['data:manageuserpresets'] = 'Alle sjabloonsets beheren';
 $string['data:rate'] = 'Items beoordelen';
 $string['data:readentry'] = 'Lees items';
+$string['data:view'] = 'Bekijk databankactiviteit';
 $string['data:viewallratings'] = 'Bekijk alle gegeven beoordelingen';
 $string['data:viewalluserpresets'] = 'Bekijk sjabloonsets';
 $string['data:viewanyrating'] = 'Bekijk de gekregen totalen van beoordelingen ';
@@ -148,6 +151,7 @@ $string['editordisable'] = 'Editor uitschakelen';
 $string['editorenable'] = 'Editor inschakelen';
 $string['emptyadd'] = 'Het sjabloon voor toevoegen is leeg. Standaard formulier aan het genereren...';
 $string['emptyaddform'] = 'Je hebt geen velden ingevuld!';
+$string['enabletemplateeditorcheck'] = 'Weet je zeker dat je de editor wil inschakelen? Dit kan als gevolg hebben dat de inhoud gewijzigd wordt wanneer het sjabloon bewaard wordt.';
 $string['entries'] = 'Items';
 $string['entrieslefttoadd'] = 'Je moet {$a->entriesleft} meer item(s) ingeven voor je de items van anderen kunt zien.';
 $string['entrieslefttoaddtoview'] = 'je moet {$a->entrieslefttoview} items meer toevoegen voor je de items van anderen kan zien.';
@@ -365,6 +369,7 @@ $string['savesuccess'] = 'Bewaren gelukt. Je sjabloonset zal nu voor de hele sit
 $string['savetemplate'] = 'Bewaar sjabloon';
 $string['search'] = 'Zoek';
 $string['search:activity'] = 'Informatie databank-activiteit';
+$string['search:entry'] = 'Databank - inhoud';
 $string['selectedrequired'] = 'Alle geselecteerde vereist';
 $string['showall'] = 'Toon alles';
 $string['single'] = 'Itemweergave';

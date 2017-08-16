@@ -87,13 +87,13 @@ define(['jquery',
             self._selectedValue = $("input[type='radio']:checked").val();
             self._find('[data-action="action-selector-confirm"]').removeAttr('disabled');
             self._refresh.bind(self);
-        }.bind(self));
+        });
 
         // Add listener for cancel.
         self._find('[data-action="action-selector-cancel"]').click(function(e) {
             e.preventDefault();
             self.close();
-        }.bind(self));
+        });
 
         // Add listener for confirm.
         self._find('[data-action="action-selector-confirm"]').click(function(e) {
@@ -101,9 +101,9 @@ define(['jquery',
             if (!self._selectedValue.length) {
                 return;
             }
-            self._trigger('save', { action: self._selectedValue });
+            self._trigger('save', {action: self._selectedValue});
             self.close();
-        }.bind(self));
+        });
     };
 
     /**
@@ -131,13 +131,14 @@ define(['jquery',
                 html,
                 self._afterRender.bind(self)
             );
-        }.bind(self)).fail(Notification.exception);
+        }).fail(Notification.exception);
     };
 
     /**
      * Find a node in the dialogue.
      *
      * @param {String} selector
+     * @return {JQuery} The node
      * @method _find
      */
     ActionSelector.prototype._find = function(selector) {
@@ -155,7 +156,7 @@ define(['jquery',
         return self._render().then(function(html) {
             self._find('[data-region="action-selector"]').replaceWith(html);
             self._afterRender();
-        }.bind(self));
+        });
     };
 
     /**
@@ -170,8 +171,8 @@ define(['jquery',
         for (var i in self._actions) {
             choices.push(self._actions[i]);
         }
-        var content = {'message': self._message, 'choices' : choices,
-            'confirm' : self._confirm, 'cancel' : self._cancel};
+        var content = {'message': self._message, 'choices': choices,
+            'confirm': self._confirm, 'cancel': self._cancel};
 
         return Templates.render('tool_lp/action_selector', content);
     };

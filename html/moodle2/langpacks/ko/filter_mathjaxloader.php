@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'HTTPS MathJax URL';
-$string['httpurl'] = 'HTTP MathJax URL';
 $string['localinstall'] = '로컬 MathJax 설치';
 $string['mathjaxsettings'] = 'MathJax 설정';
 $string['texfiltercompatibility'] = 'Tex 필터 호환성';

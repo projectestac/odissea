@@ -16,5 +16,5 @@ Feature: Atto charmap button
     And I follow "Editor preferences"
     And I set the field "Text editor" to "Plain text area"
     And I press "Save changes"
-    And I follow "Edit profile"
+    And I click on "Edit profile" "link" in the "region-main" "region"
     Then I should see "ā"

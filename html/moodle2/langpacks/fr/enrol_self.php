@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -100,7 +100,7 @@ $string['self:manage'] = 'Gérer les utilisateurs inscrits';
 $string['self:unenrol'] = 'Désinscrire du cours les utilisateurs';
 $string['self:unenrolself'] = 'Se désinscrire du cours';
 $string['sendcoursewelcomemessage'] = 'Envoyer un message de bienvenue';
-$string['sendcoursewelcomemessage_help'] = 'Si ce réglage est activé, les utilisateurs recevront un message de bienvenue par courriel après qu\'ils se sont inscrits dans un cours.';
+$string['sendcoursewelcomemessage_help'] = 'Après qu\'ils se sont inscrits dans un cours, les utilisateurs recevront un message de bienvenue par courriel. Si ce message est envoyé avec comme expéditeur le contact du cours (par défaut l\'enseignant) et que plus d\'un utilisateur possède ce rôle, l\'expéditeur est le premier utilisateur à qui ce rôle a été attribué.';
 $string['showhint'] = 'Afficher l\'indice';
 $string['showhint_desc'] = 'Afficher la première lettre de la clef d\'inscription.';
 $string['status'] = 'Autoriser les méthodes d\'auto-inscription existantes';

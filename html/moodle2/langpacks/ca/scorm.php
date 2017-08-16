@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,7 +83,7 @@ $string['cannotfindsco'] = 'No s\'ha trobat SCO';
 $string['chooseapacket'] = 'Tria un paquet SCORM';
 $string['closebeforeopen'] = 'Heu especificat una data de tancament anterior a la data d\'obertura.';
 $string['collapsetocwinsize'] = 'Contrau l\'índex quan la mida de la finestra sigui menor de';
-$string['collapsetocwinsizedesc'] = 'Aquest paràmetre us permet especificar la mida de la finestra per sota la qual l\'índex es contraurà de forma automàtica.';
+$string['collapsetocwinsizedesc'] = 'Aquest paràmetre us permet especificar la mida de la finestra per sota de la qual l\'índex es contraurà de forma automàtica.';
 $string['compatibilitysettings'] = 'Configuració de compatibilitat';
 $string['completed'] = 'Completat';
 $string['completionscorerequired'] = 'Requereix una puntuació mínima';
@@ -190,7 +190,7 @@ $string['hideexit'] = 'Oculta l\'enllaç de sortida';
 $string['hidereview'] = 'Oculta el botó Revisa';
 $string['hidetoc'] = 'Mostra l\'estructura del curs en el reproductor';
 $string['hidetocdesc'] = 'Aquesta preferència especifica com es mostra l\'índex del curs al reproductor SCORM.';
-$string['hidetoc_help'] = 'Aquest paràmetre especifica com s\'ensenya la taula de continguts al reproductor SCORM.';
+$string['hidetoc_help'] = 'Aquest paràmetre especifica com es mostra la taula de continguts al reproductor SCORM.';
 $string['highestattempt'] = 'Intent més alt';
 $string['identifier'] = 'Identificador de pregunta';
 $string['incomplete'] = 'Incomplet';
@@ -272,11 +272,11 @@ $string['organizations'] = 'Organitzacions';
 $string['othersettings'] = 'Paràmetres addicionals';
 $string['package'] = 'Fitxer del paquet';
 $string['packagedir'] = 'S\'ha produït un error del sistema de fitxers: no es pot crear el directori del paquet';
-$string['packagefile'] = 'No s\'ha especificat el fitxer del paquet';
+$string['packagefile'] = 'No s\'ha especificat cap fitxer del paquet';
 $string['packagehdr'] = 'Paquet';
 $string['package_help'] = 'El fitxer de paquet és un fitxer zip (o pif) que conté fitxers de definició de curs SCORM/AICC.';
 $string['packageurl'] = 'URL';
-$string['packageurl_help'] = 'Aquest paràmetre habilita una URL per especificar un paquet SCORM en comptes de seleccionar un fitxer mitjançant el selector de fitxers.';
+$string['packageurl_help'] = 'Aquest paràmetre habilita un URL per especificar un paquet SCORM en comptes de seleccionar un fitxer mitjançant el selector de fitxers.';
 $string['page-mod-scorm-x'] = 'Qualsevol plana del mòdul SCORM';
 $string['pagesize'] = 'Mida de la plana';
 $string['passed'] = 'S\'ha passat';
@@ -340,7 +340,7 @@ $string['show'] = 'Mostrar';
 $string['sided'] = 'A un costat';
 $string['skipview'] = 'L\'estudiant omet la pàgina d\'estructura';
 $string['skipviewdesc'] = 'Aquesta preferència estableix el valor per defecte sobre quan passar de la estructura del contingut d\'una plana';
-$string['skipview_help'] = 'Aquest paràmetre especifica si la pàgina d\'estructura dels continguts ha de ser omesa (no es mostra). Si el paquet conté només un objecte d\'aprenentatge, la pàgina de l\'estructura del contingut sempre es pot saltar.';
+$string['skipview_help'] = 'Aquest paràmetre especifica si la pàgina d\'estructura dels continguts ha de ser omesa (no es mostra). Si el paquet conté només un objecte d\'aprenentatge, la pàgina de l\'estructura del contingut sempre es pot ometre.';
 $string['slashargs'] = 'AVÍS: els arguments en barra estan inhabilitats en aquest lloc, i és possible que els objectes no tinguin el funcionament esperat.';
 $string['stagesize'] = 'Mida del marc o finestra';
 $string['stagesize_help'] = 'Aquests dos paràmetres defineixen l\'amplada i l\'alçada del marc o finestra del objectes d\'aprenentatge.';
@@ -363,7 +363,7 @@ $string['totaltime'] = 'Temps';
 $string['trackcorrectcount'] = 'Recompte correcte';
 $string['trackcorrectcount_help'] = 'Nombre de resultats correcte per a la pregunta';
 $string['trackid'] = 'ID';
-$string['trackid_help'] = 'Aquest és l\'identificador establert pel seu paquet SCORM per a aquesta pregunta, l\'especificació SCORM no permet que es subministri el text de la pregunta completa.';
+$string['trackid_help'] = 'Aquest és l\'identificador establert pel vostre paquet SCORM per a aquesta pregunta; l\'especificació SCORM no permet que se subministri el text de la pregunta completa.';
 $string['trackingloose'] = 'ATENCIÓ: les dades de seguiment d\'aquest paquet es perdran.';
 $string['tracklatency'] = 'Latència';
 $string['tracklatency_help'] = 'Temps transcorregut entre el moment que l\'alumne te disponible la interacció i el moment de la primera resposta';

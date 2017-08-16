@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nntp', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_nntp', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_nntp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_nntpchangepasswordurl_key'] = 'Password-change URL';
 $string['auth_nntpdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν NNTP server για να ελέγξει εάν ένα δοσμένο όνομα χρήστη ή κωδικός πρόσβασης είναι έγκυρα';
 $string['auth_nntphost'] = 'Η διεύθυνση του NNTP server. Χρησιμοποιείστε το IP νούμερο και όχι το DNS όνομα.';
-$string['auth_nntphost_key'] = 'Host';
-$string['auth_nntpnotinstalled'] = 'Cannot use NNTP authentication. The PHP IMAP module is not installed.';
+$string['auth_nntphost_key'] = 'Διακομιστής φιλοξενίας';
+$string['auth_nntpnotinstalled'] = 'Αδυναμία χρήσης αυθεντικοποίησης NNTP. Το άρθρωμα PHP IMAP δεν έχει εγκατασταθεί.';
 $string['auth_nntpport'] = 'Η θύρα του server. (η 119 χρησιμοποιείται πιο συχνά)';
 $string['auth_nntpport_key'] = 'Port';
 $string['pluginname'] = 'Χρήση NNTP server.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'completion', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['completionenabled'] = 'Activado, control por medio da configuración de
 $string['completionexpected'] = 'Agardase completala en';
 $string['completionexpected_help'] = 'Este axuste especifica a data na que agarda que a actividade estea completada. A data non se lle amosa aos alumnos e presentase unicamente no informe de progreso.';
 $string['completion-fail'] = 'Completado (non acadou a cualificación de aprobado)';
-$string['completion_help'] = 'Se está activada esta opción, faise un seguimento do grado de completado de calquera actividade, ben manual, ben automaticamente, baseándose en determinadas condicións. Pódense fixar múltiplas condicións. De ser así, a actividade unicamente se considerará completada cando se cumpran TODAS as condicións.
+$string['completion_help'] = 'Se está activada esta opción, faise un seguimento do grado de completado de calquera actividade, ben manual, ben automaticamente, baseándose en determinadas condicións. Pódense fixar múltiples condicións. De ser así, a actividade unicamente se considerará completada cando se cumpran TODAS as condicións.
 
 Una marca a carón do nome da actividade na páxina do curso indica cando está completada a actividade.';
 $string['completionicons'] = 'Caixiñas para marcar o grado de completado';

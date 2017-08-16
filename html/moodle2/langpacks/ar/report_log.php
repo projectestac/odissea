@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_log', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,10 +33,10 @@ $string['eventrelatedfullnameuser'] = 'المستخدم المتأثر';
 $string['eventreportviewed'] = 'تم استعراض تقرير السجل';
 $string['eventuserreportviewed'] = 'تم استعراض تقرير سجل المستخدم';
 $string['logsformat'] = 'تنسيق السجلات';
-$string['log:view'] = 'معاينة سجلات المقرر الدراسي';
+$string['log:view'] = 'معاينة السجلات مقرر دراسي';
 $string['log:viewtoday'] = 'السجلات النشطة لهذا اليوم';
 $string['page'] = 'صفحة {$a}';
 $string['page-report-log-index'] = 'تقرير سجل المقرر الدراسي';
 $string['page-report-log-user'] = 'تقرير سجل المستخدم للمقرر الدراسي';
 $string['page-report-log-x'] = 'تقرير أي من السجلات';
-$string['pluginname'] = 'سجلات';
+$string['pluginname'] = 'سجلات نشطة';

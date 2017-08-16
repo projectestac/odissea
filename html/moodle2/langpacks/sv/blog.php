@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -143,7 +143,6 @@ $string['retrievedfrom'] = 'Hämtad från';
 $string['rssfeed'] = 'RSS-flöde för Blogg';
 $string['searchterm'] = 'Sök: {$a}';
 $string['settingsupdatederror'] = 'Ett fel har hänt, blogginställningar kunde inte uppdateras';
-$string['siteblog'] = 'Sajtblogg: {$a}';
 $string['siteblogdisable'] = 'Blogg på webbplatsnivå är inte aktiverad';
 $string['siteblogs'] = 'Användare på sajten kan se alla inlägg';
 $string['tagdatelastused'] = 'Datum för senaste användning av etikett';

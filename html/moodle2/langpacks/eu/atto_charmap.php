@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'atto_charmap', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['adiaeresis_caps'] = 'A - dieresiduna';
 $string['agrave'] = 'a - grabea';
 $string['agrave_caps'] = 'A - grabea';
 $string['alefsymbol'] = 'alef simboloa';
-$string['almostequalto'] = '';
+$string['almostequalto'] = 'Ondokoaren berdina ia:';
 $string['alpha'] = 'alpha';
 $string['alpha_caps'] = 'Alpha';
 $string['amacron'] = 'a - goi-marra';

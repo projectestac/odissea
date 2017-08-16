@@ -39,8 +39,8 @@ define(['jquery',
     /**
      * Competency picker in plan class.
      *
+     * @param {Number} userId
      * @param {Number|false} singlePlan The ID of the plan when limited to one.
-     * @param {String} pageContextIncludes One of 'children', 'parents', 'self'.
      * @param {Boolean} multiSelect Support multi-select in the tree.
      */
     var Picker = function(userId, singlePlan, multiSelect) {
@@ -78,7 +78,7 @@ define(['jquery',
             self._find('[data-action="chooseplan"]').change(function(e) {
                 self._planId = $(e.target).val();
                 self._loadCompetencies().then(self._refresh.bind(self));
-            }.bind(self));
+            });
         }
     };
 
@@ -88,19 +88,20 @@ define(['jquery',
      * @param {Number} planId The planId.
      * @param {String} searchText Limit the competencies to those matching the text.
      * @method _fetchCompetencies
-     * @return {Promise}
+     * @return {Promise} The promise object.
      */
     Picker.prototype._fetchCompetencies = function(planId, searchText) {
         var self = this;
 
         return Ajax.call([
-            { methodname: 'core_competency_list_plan_competencies', args: {
+            {methodname: 'core_competency_list_plan_competencies', args: {
                 id: planId
             }}
         ])[0].done(function(competencies) {
 
             // Expand the list of competencies into a fake tree.
-            var i, tree = [], comp;
+            var i, comp;
+            var tree = [];
             for (i = 0; i < competencies.length; i++) {
                 comp = competencies[i].competency;
                 if (comp.shortname.toLowerCase().indexOf(searchText.toLowerCase()) < 0) {
@@ -128,7 +129,7 @@ define(['jquery',
         $.each(this._plans, function(i, f) {
             if (f.id == id) {
                 plan = f;
-                return false;
+                return;
             }
         });
         return plan;
@@ -161,7 +162,7 @@ define(['jquery',
 
         if (self._singlePlan) {
             promise = Ajax.call([
-                { methodname: 'core_competency_read_plan', args: {
+                {methodname: 'core_competency_read_plan', args: {
                     id: this._planId
                 }}
             ])[0].then(function(plan) {
@@ -169,7 +170,7 @@ define(['jquery',
             });
         } else {
             promise = Ajax.call([
-                { methodname: 'core_competency_list_user_plans', args: {
+                {methodname: 'core_competency_list_user_plans', args: {
                     userid: self._userId
                 }}
             ])[0];
@@ -200,7 +201,7 @@ define(['jquery',
             }
 
             return self._loadCompetencies();
-        }.bind(self));
+        });
     };
 
     /**
@@ -232,7 +233,7 @@ define(['jquery',
             };
 
             return Templates.render('tool_lp/competency_picker_user_plans', context);
-        }.bind(self));
+        });
     };
 
     return /** @alias module:tool_lp/competencypicker_user_plans */ Picker;

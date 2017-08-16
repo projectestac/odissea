@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 /**
  * The core drag and drop module for Moodle which extends the YUI drag and
  * drop functionality with additional features.
@@ -69,7 +70,7 @@ Y.extend(DRAGDROP, Y.Base, {
      * @type Object
      * @default null
      */
-    samenodelabel : null,
+    samenodelabel: null,
 
     /**
      * The label to use with keyboard drag/drop to describe items of the parent Node.
@@ -78,7 +79,7 @@ Y.extend(DRAGDROP, Y.Base, {
      * @type Object
      * @default null
      */
-    parentnodelabel : null,
+    parentnodelabel: null,
 
     /**
      * The groups for this instance.
@@ -140,7 +141,7 @@ Y.extend(DRAGDROP, Y.Base, {
 
         // Make the accessible drag/drop respond to a single click.
         this.listeners.push(Y.one(Y.config.doc.body).delegate('click', this.global_keydown,
-                '.' + MOVEICON.cssclass , this));
+                '.' + MOVEICON.cssclass, this));
     },
 
     /**
@@ -193,17 +194,17 @@ Y.extend(DRAGDROP, Y.Base, {
     },
 
     lock_drag_handle: function(drag, classname) {
-        drag.removeHandle('.'+classname);
+        drag.removeHandle('.' + classname);
     },
 
     unlock_drag_handle: function(drag, classname) {
-        drag.addHandle('.'+classname);
+        drag.addHandle('.' + classname);
         drag.get('activeHandle').focus();
     },
 
     ajax_failure: function(response) {
         var e = {
-            name: response.status+' '+response.statusText,
+            name: response.status + ' ' + response.statusText,
             message: response.responseText
         };
         return new M.core.exception(e);
@@ -247,7 +248,7 @@ Y.extend(DRAGDROP, Y.Base, {
         if (!this.in_group(drag)) {
             return;
         }
-        //Put our general styles back
+        // Put our general styles back
         drag.get('node').setAttribute('style', this.originalstyle);
         this.drag_end(e);
     },
@@ -357,11 +358,27 @@ Y.extend(DRAGDROP, Y.Base, {
      * @return {string} The text of the first text-like child node of n.
      */
     find_element_text: function(n) {
-        // The valid node types to get text from.
-        var nodes = n.all('h2, h3, h4, h5, span:not(.actions):not(.menu-action-text), p, div.no-overflow, div.dimmed_text');
         var text = '';
 
-        nodes.each(function () {
+        // Try to resolve using aria-label first.
+        text = n.get('aria-label') || '';
+        if (text.length > 0) {
+            return text;
+        }
+
+        // Now try to resolve using aria-labelledby.
+        var labelledByNode = n.get('aria-labelledby');
+        if (labelledByNode) {
+            var labelNode = Y.one('#' + labelledByNode);
+            if (labelNode && labelNode.get('text').length > 0) {
+                return labelNode.get('text');
+            }
+        }
+
+        // The valid node types to get text from.
+        var nodes = n.all('h2, h3, h4, h5, span:not(.actions):not(.menu-action-text), p, div.no-overflow, div.dimmed_text');
+
+        nodes.each(function() {
             if (text === '') {
                 if (Y.Lang.trim(this.get('text')) !== '') {
                     text = this.get('text');
@@ -395,15 +412,14 @@ Y.extend(DRAGDROP, Y.Base, {
         // Build the list of drop targets.
         var droplist = Y.Node.create('<ul></ul>');
         droplist.addClass('dragdrop-keyboard-drag');
-        var listitem,
-            listlink,
-            listitemtext;
+        var listitem, listlink, listitemtext;
 
         // Search for possible drop targets.
         var droptargets = Y.all('.' + this.samenodeclass + ', .' + this.parentnodeclass);
 
         droptargets.each(function(node) {
-            var validdrop = false, labelroot = node;
+            var validdrop = false;
+            var labelroot = node;
             var className = node.getAttribute("class").split(' ').join(', .');
 
             if (node.drop && node.drop.inGroup(this.groups) && node.drop.get('node') !== dragcontainer &&
@@ -605,7 +621,7 @@ Y.extend(DRAGDROP, Y.Base, {
             return;
         }
 
-        if (e.keyCode === 27 ) {
+        if (e.keyCode === 27) {
             // Escape to cancel from anywhere.
             this.global_cancel_keyboard_drag();
             e.preventDefault();
@@ -624,7 +640,8 @@ Y.extend(DRAGDROP, Y.Base, {
 
         // Check the drag groups to see if we are the handler for this node.
         draggroups = draghandle.getAttribute('data-draggroups').split(' ');
-        var i, j, validgroup = false;
+        var i, j;
+        var validgroup = false;
 
         for (i = 0; i < draggroups.length; i++) {
             for (j = 0; j < this.groups.length; j++) {

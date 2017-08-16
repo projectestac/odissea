@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['contentheader'] = 'Conteúdo';
 $string['display'] = 'Exibir conteúdo da pasta';
 $string['display_help'] = 'Se optar por exibir os conteúdos da pasta na página da disciplina, não haverá uma ligação para uma página independente.
@@ -53,6 +54,7 @@ A pasta pode ser utilizada para:
 * partilhar ficheiros entre os professores da disciplina (numa pasta oculta à qual os alunos não têm acesso)';
 $string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Pastas';
+$string['newfoldercontent'] = 'Novo conteúdo da pasta';
 $string['noautocompletioninline'] = 'A conclusão automática com base na visualização da atividade não pode ser selecionada em conjunto com a opção "Exibir na página da disciplina"';
 $string['page-mod-folder-view'] = 'Página principal do recurso pasta';
 $string['page-mod-folder-x'] = 'Qualquer pasta';

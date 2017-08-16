@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Ajouter critère';
-$string['alwaysshowdefinition'] = 'Permet aux utilisateurs de prévisualiser la grille d\'évaluation dans le module (sinon, la grille ne sera visible qu\'après l\'évaluation)';
+$string['alwaysshowdefinition'] = 'Permet aux utilisateurs de prévisualiser la grille d\'évaluation (sinon, la grille ne sera visible qu\'après l\'évaluation)';
 $string['backtoediting'] = 'Retour à l\'édition';
 $string['confirmdeletecriterion'] = 'Voulez-vous vraiment supprimer ce critère ?';
 $string['confirmdeletelevel'] = 'Voulez-vous vraiment supprimer ce niveau ?';
@@ -46,7 +46,7 @@ $string['err_nocriteria'] = 'Une grille d\'évaluation doit comporter au moins u
 $string['err_nodefinition'] = 'La définition du niveau doit être renseignée';
 $string['err_nodescription'] = 'La description du critère doit être renseignée';
 $string['err_novariations'] = 'Les niveaux du critère ne doivent pas attribuer le même nombre de points';
-$string['err_scoreformat'] = 'Le nombre de points pour chaque niveau doit être un nombre non-négatif';
+$string['err_scoreformat'] = 'Le nombre de points pour chaque niveau doit être un nombre valide';
 $string['err_totalscore'] = 'Le nombre maximal de points possible lors de l\'évaluation au moyen de la grille d\'évaluation doit être plus grand que zéro';
 $string['gradingof'] = 'Évaluation de {$a}';
 $string['level'] = 'Niveau {$a->definition}, {$a->score} points.';
@@ -54,6 +54,8 @@ $string['leveldefinition'] = 'Définition du niveau {$a}';
 $string['leveldelete'] = 'Supprimer le niveau {$a}';
 $string['levelempty'] = 'Cliquer pour modifier le niveau';
 $string['levelsgroup'] = 'Groupe de niveaux';
+$string['lockzeropoints'] = 'Calculer la note sur la base de la grille d\'évaluation avec un score minimal de 0';
+$string['lockzeropoints_help'] = 'Ce réglage ne s\'applique que si la somme du nombre minimal de points de chaque critère est plus grand que 0. S\'il est activé, la note minimale possible pour la grille d\'évaluation sera supérieure à 0. S\'il n\'est pas activé, le score minimal de la grille d\'évaluation sera converti en la note minimale disponible dans l\'activité (qui est 0, à moins qu\'un barème soit utilisé).';
 $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La définition de la grille d\'évaluation a été modifiée après que ce participant a été évalué. Le participant ne pourra voir cette grille d\'évaluation avant que vous mettiez à jour la note.';
 $string['pluginname'] = 'Grille d\'évaluation';
@@ -65,10 +67,11 @@ $string['regradeoption1'] = 'Marquer pour réévaluation';
 $string['restoredfromdraft'] = 'Remarque ! La dernière tentative d\'évaluation de ce participant n\'a pas été enregistrée correctement. Les notes brouillons ont donc été restaurées. Si vous désirez effacer ces modifications, utilisez le bouton « Annuler » ci-dessous.';
 $string['rubric'] = 'Grille d\'évaluation';
 $string['rubricmapping'] = 'Règles de correspondances entre score et note';
-$string['rubricmappingexplained'] = 'Le score minimal possible pour cette grille d\'évaluation est de <b>{$a->minscore} points</b>. Ce score sera converti en la note minimale disponible pour cette activité (c\'est-à-dire zéro, à moins qu\'un barème ne soit utilisé).
-Le score maximal possible <b>{$a->maxscore} points</b> sera converti en la note maximale disponible pour cette activité.<br />
-Les scores intermédiaires seront convertis de la même façon et arrondis à la note disponible la plus proche.<br />
-Si un barème est utilisé plutôt qu\'une note, le score sera converti dans les éléments du barème comme s\'il s\'agissait d\'entiers successifs.';
+$string['rubricmappingexplained'] = 'Le score minimal possible pour cette grille d\'évaluation est de <b>{$a->minscore} points</b>. Ce score sera converti en la note minimale disponible pour cette activité (c\'est-à-dire 0, à moins qu\'un barème ne soit utilisé). Le score maximal possible de <b>{$a->maxscore} points</b> sera converti en la note maximale disponible pour cette activité. Les scores intermédiaires seront convertis de la même façon.
+
+Si un barème est utilisé pour l\'évaluation, le score sera arrondi et converti en les éléments du barème comme s\'il s\'agissait d\'entiers consécutifs.
+
+Il est possible de changer la méthode de calcul de la note en modifiant le formulaire et en cochant la case « Calculer la note sur la base de la grille d\'évaluation avec un score minimal de 0 ».';
 $string['rubricnotcompleted'] = 'Veuillez choisir quelque chose pour chaque critère';
 $string['rubricoptions'] = 'Options de grille d\'évaluation';
 $string['rubricstatus'] = 'Statut actuel de la grille d\'évaluation';

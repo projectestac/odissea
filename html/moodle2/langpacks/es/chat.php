@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'Ver registros de chat';
 $string['chatreport'] = 'Sesiones';
 $string['chat:talk'] = 'Hablar en un chat';
 $string['chattime'] = 'Próxima cita';
+$string['chat:view'] = 'Ver actividad del chat';
 $string['compact'] = 'Compacto';
 $string['composemessage'] = 'Escriba un mensaje';
 $string['configmethod'] = 'El método ajax del chat trabaja de forma interna contactando de forma regular con el servidor para llevar a cabo las actualizaciones.

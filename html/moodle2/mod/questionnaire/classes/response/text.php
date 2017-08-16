@@ -57,7 +57,7 @@ class text extends base {
         }
     }
 
-    protected function get_results($rids=false) {
+    protected function get_results($rids=false, $anonymous=false) {
         global $DB;
 
         $rsql = '';
@@ -66,26 +66,37 @@ class text extends base {
             $rsql = ' AND response_id ' . $rsql;
         }
 
-        $sql = 'SELECT t.id, t.response, r.submitted AS submitted, r.username, u.username AS username, ' .
-                'u.id as userid, ' .
-                'r.survey_id, r.id AS rid ' .
-                'FROM {'.$this->response_table().'} t, ' .
-                '{questionnaire_response} r, ' .
-                '{user} u ' .
-                'WHERE question_id=' . $this->question->id . $rsql .
-                ' AND t.response_id = r.id' .
-                ' AND u.id = ' . $DB->sql_cast_char2int('r.username') .
-                'ORDER BY u.lastname, u.firstname, r.submitted';
+        if ($anonymous) {
+            $sql = 'SELECT t.id, t.response, r.submitted AS submitted, ' .
+                    'r.survey_id, r.id AS rid ' .
+                    'FROM {'.$this->response_table().'} t, ' .
+                    '{questionnaire_response} r ' .
+                    'WHERE question_id=' . $this->question->id . $rsql .
+                    ' AND t.response_id = r.id ' .
+                    'ORDER BY r.submitted DESC';
+        } else {
+            $sql = 'SELECT t.id, t.response, r.submitted AS submitted, r.username, u.username AS username, ' .
+                    'u.id as userid, ' .
+                    'r.survey_id, r.id AS rid ' .
+                    'FROM {'.$this->response_table().'} t, ' .
+                    '{questionnaire_response} r, ' .
+                    '{user} u ' .
+                    'WHERE question_id=' . $this->question->id . $rsql .
+                    ' AND t.response_id = r.id' .
+                    ' AND u.id = ' . $DB->sql_cast_char2int('r.username') .
+                    'ORDER BY u.lastname, u.firstname, r.submitted';
+        }
         return $DB->get_records_sql($sql, $params);
     }
 
-    public function display_results($rids=false, $sort='') {
+    public function display_results($rids=false, $sort='', $anonymous=false) {
+        $output = '';
         if (is_array($rids)) {
             $prtotal = 1;
         } else if (is_int($rids)) {
             $prtotal = 0;
         }
-        if ($rows = $this->get_results($rids)) {
+        if ($rows = $this->get_results($rids, $anonymous)) {
             // Count identical answers (numeric questions only).
             foreach ($rows as $row) {
                 if (!empty($row->response) || $row->response === "0") {
@@ -97,13 +108,15 @@ class text extends base {
             }
             $isnumeric = $this->question->type_id == QUESNUMERIC;
             if ($isnumeric) {
-                \mod_questionnaire\response\display_support::mkreslistnumeric($this->counts, count($rids), $this->question->precise);
+                $output .= \mod_questionnaire\response\display_support::mkreslistnumeric($this->counts, count($rids),
+                    $this->question->precise);
             } else {
-                \mod_questionnaire\response\display_support::mkreslisttext($rows);
+                $output .= \mod_questionnaire\response\display_support::mkreslisttext($rows);
             }
         } else {
-            echo '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
+            $output .= '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
         }
+        return $output;
     }
 
     /**

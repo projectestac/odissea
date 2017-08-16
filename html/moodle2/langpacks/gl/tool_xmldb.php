@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_xmldb', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,12 +62,8 @@ $string['confirmcheckforeignkeys'] = 'Esta funcionalidade buscará posíbeis vul
 Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos valores predeterminados inconsistentes.
 
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
-$string['confirmcheckindexes'] = 'Esta funcionalidade buscará potenciais índices ausentes no seu servidor Moodle, xerando (non executando) automaticamente as ordes SQL precisas para manter todo actualizado.
-
-Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita (non esqueza facer copias de seguridade dos seus datos antes de facer iso).
-
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos índices ausentes.
-
+$string['confirmcheckindexes'] = 'Esta funcionalidade buscará potenciais índices ausentes no seu servidor Moodle, xerando (non executando) automaticamente os comandos SQL precisos para manter todo actualizado. Unha vez xerados, pode copiar os comandos e executalos con seguridade na súa interface SQL favorita.<br /><br />
+Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos índices ausentes.<br /><br />
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
 $string['confirmcheckoraclesemantics'] = 'Esta funcionalidade buscará <a href="http://tracker.moodle.org/browse/MDL-29322">Oracle varchar2 columnas usando semánticas BYTE </a> no seu servidor Moodle, xerando, (pero non executando!) automaticamente as instrucións SQL necesarias para que todas as columnas se convertan a semánticas CHAR no seu lugar (o que é mellor para a compatibilidade entre bases de datos e maiores contidos  max. length)
 
@@ -76,12 +72,12 @@ Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa inter
 Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca de semánticas BYTE.
 
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
-$string['confirmdeletefield'] = 'Confirma que quere eliminar o campo:';
-$string['confirmdeleteindex'] = 'Confirma que quere eliminar o índice:';
-$string['confirmdeletekey'] = 'Confirma que quere eliminar a chave:';
-$string['confirmdeletetable'] = 'Confirma que quere eliminar a táboa:';
-$string['confirmdeletexmlfile'] = 'Confirma que quere eliminar o ficheiro:';
-$string['confirmrevertchanges'] = 'Confirma que quere desfacer as modificacións:';
+$string['confirmdeletefield'] = 'Está realmente certo de que desexa eliminar o campo:';
+$string['confirmdeleteindex'] = 'Está realmente certo de que desexa eliminar o índice:';
+$string['confirmdeletekey'] = 'Está realmente certo de que desexa eliminar a chave:';
+$string['confirmdeletetable'] = 'Está realmente certo de que desexa eliminar a táboa:';
+$string['confirmdeletexmlfile'] = 'Está realmente certo de que desexa eliminar o ficheiro:';
+$string['confirmrevertchanges'] = 'Está realmente certo de que desexa desfacer as modificacións:';
 $string['create'] = 'Crear';
 $string['createtable'] = 'Crear táboa:';
 $string['defaultincorrect'] = 'Omisión incorrecta';
@@ -213,8 +209,7 @@ $string['wronglengthforenum'] = 'Lonxitude incorrecta para un campo enum';
 $string['wrongnumberofreffields'] = 'Número errado de campos de referencia';
 $string['wrongoraclesemantics'] = 'Atopouse semántica de Oracle BYTE errada';
 $string['wrongreservedwords'] = 'Palabras reservadas actualmente utilizadas<br />(Os nomes das táboas non son importantes cando se emprega un $CFG->prefix)';
-$string['yesmissingindexesfound'] = '<p>Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>
-<p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.</p>';
+$string['yesmissingindexesfound'] = 'Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos.<br /><br />Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.';
 $string['yeswrongdefaultsfound'] = '<p>Na súa BD atopáronse algúns valores predeterminados inconsistentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para arranxalos. Lémbrese de facer antes unha copia de seguridade</p>
 <p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis valores predeterminados inconsistentes.</p>';
 $string['yeswrongintsfound'] = '<p>Na súa BD atopáronse algúns enteiros errados. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>

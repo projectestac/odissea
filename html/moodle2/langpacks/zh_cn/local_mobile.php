@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,9 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['cannotcreatetoken'] = '网站管理员没有提供自动令牌生成服务（他们必须手动创建令牌）';
 $string['local_mobiledescription'] = '扩展移动服务功能插件';
 $string['local_mobilesettings'] = '设置';
-$string['local_mobiletypeoflogin'] = '选择登录类型';
-$string['local_mobiletypeoflogin_key'] = '登录类型';
-$string['loginintheapp'] = '通过应用程序';
-$string['logininthebrowser'] = '通过一个浏览器窗口（SSO插件）';
 $string['pluginname'] = 'Moodle Mobile 服务附加特色';
 $string['pluginnotenabledorconfigured'] = '为使用APP，Moodle Mobile 本地插件必须启用和配置';

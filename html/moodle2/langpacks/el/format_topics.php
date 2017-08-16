@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'format_topics', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   format_topics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,5 +32,5 @@ $string['editsectionname'] = 'Τροποποίηση ονομασίας θέμα
 $string['hidefromothers'] = 'Απόκρυψη θέματος από τους υπολοίπους';
 $string['pluginname'] = 'Μορφή θεμάτων';
 $string['section0name'] = 'Γενικά';
-$string['sectionname'] = 'Θέμα';
+$string['sectionname'] = 'θέμα';
 $string['showfromothers'] = 'Εμφάνιση θεμάτων από άλλους';

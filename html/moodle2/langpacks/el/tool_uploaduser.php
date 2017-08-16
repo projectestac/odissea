@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowdeletes'] = 'Να επιτρέπονται διαγραφές (deletes)';
-$string['allowrenames'] = 'Να επιτρέπονται οι μετονομασίες';
+$string['allowdeletes'] = 'Να επιτρέπονται διαγραφές';
+$string['allowrenames'] = 'Να επιτρέπονται μετονομασίες';
 $string['csvdelimiter'] = 'Διαχωριστικό CSV';
 $string['defaultvalues'] = 'Προεπιλεγμένες τιμές';
 $string['deleteerrors'] = 'Προεπιλεγμένα σφάλματα';
@@ -149,7 +149,7 @@ $string['usersrenamed'] = 'Μετονομάστηκαν οι χρήστες';
 $string['usersskipped'] = 'Χρήστες που παραλείφθηκαν';
 $string['usersupdated'] = 'Οι χρήστες ανανεώθηκαν';
 $string['usersweakpassword'] = 'Οι χρήστες έχουν αδύναμο κωδικό ασφαλείας';
-$string['uubulk'] = 'Επιλογή για χοντρικές λειτουργίες';
+$string['uubulk'] = 'Επιλογή για μαζικές ενέργειες χρήστη';
 $string['uubulkall'] = 'Όλοι οι χρητες';
 $string['uubulknew'] = 'Νέοι χρήστες';
 $string['uubulkupdated'] = 'Ανανεωμένοι χρήστες';

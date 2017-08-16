@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'langconfig', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,5 +54,5 @@ $string['strftimetime'] = '%H:%M';
 $string['thisdirection'] = 'ltr';
 $string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = 'Español - Internacional';
-$string['thislanguageint'] = 'Spanish (international)';
+$string['thislanguageint'] = 'Spanish (International)';
 $string['thousandssep'] = '.';

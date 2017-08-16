@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'install', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['availablelangs'] = 'Pacotes linguísticos disponíveis';
 $string['caution'] = 'Atenção';
 $string['chooselanguage'] = 'Selecione um idioma';
 $string['chooselanguagehead'] = 'Selecione um idioma';
-$string['chooselanguagesub'] = 'Selecione o idioma a utilizar durante a instalação. Poderá depois selecionar um outro idioma para o site e para os utilizadores.';
+$string['chooselanguagesub'] = 'Selecione o idioma a utilizar durante a instalação. Poderá depois selecionar outro(s) idioma(s) para o site e para os utilizadores.';
 $string['cliadminemail'] = 'Novo endereço de e-mail do utilizador administrador';
 $string['cliadminpassword'] = 'Nova senha do administrador';
 $string['cliadminusername'] = 'Nome de utilizador do administrador';
@@ -107,6 +107,7 @@ $string['mysqliextensionisnotpresentinphp'] = 'O PHP não foi corretamente confi
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>A base de dados é onde a maioria das configurações e dados do Moodle são armazenados e deverá ser configurada aqui.</p>
 <p>O nome da base de dados, nome de utilizador e senha são campos obrigatórios; o prefixo da tabela é opcional.</p>
+<p>O nome da base de dados apenas pode conter caracteres alfanuméricos, o símbolo do dólar ($) e underscore (_).</p>
 <p>Se a base de dados não existir atualmente, e se o utilizador que especificar tiver permissões para tal, o Moodle tentará criar uma nova base de dados com as permissões e configurações corretas.</p>
 <p>Esta driver não é compatível com o legacy MyISAM engine.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
@@ -115,6 +116,7 @@ $string['nativemysqli'] = '
 Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p> A base de dados é onde a maioria das configurações e dados do Moodle são armazenados e devem ser configurados aqui.</p>
 <p> O nome da base de dados, nome de utilizador e senha são campos obrigatórios; o prefixo da tabela é opcional.</p>
+<p>O nome da base de dados apenas pode conter caracteres alfanuméricos, o símbolo do dólar ($) e underscore (_).</p>
 <p>Se a base de dados atualmente não existir, e o utilizador que especificar tiver permissão, o Moodle tentará criar uma nova base de dados com as permissões e configurações corretas. </p>';
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = 'Deverá agora configurar a base de dados onde será guardada a maior parte da informação do Moodle. Esta base de dados deverá ter sido criada previamente, assim como uma conta de acesso à mesma. A definição de um prefixo para os nomes das tabelas é obrigatório.';
@@ -139,13 +141,15 @@ $string['pathssubdataroot'] = '<p>Uma diretoria em que o Moodle irá armazenar t
 <p>Não deve ser diretamente acessível através da web.</p>
 <p> Se a diretoria não existir atualmente, o processo de instalação tentará criá-la.</p>';
 $string['pathssubdirroot'] = 'Caminho completo para a diretoria que contém o código Moodle.';
-$string['pathssubwwwroot'] = 'Endereço web completo de acesso ao Moodle. Não é possível aceder ao Moodle usando mais do que um endereço. Se o site tiver mais do que um endereço público, devem ser configurados redirecionamentos permanentes em todos eles, à exceção deste. Se o site pode ser acedido a partir da Internet e de Intranet, então use o endereço público aqui. Se o endereço atual não está correto, então altere o endereço indicado na barra de endereço do seu navegador e reinicie a instalação.';
+$string['pathssubwwwroot'] = 'Endereço web completo de acesso ao Moodle. Não é possível aceder ao Moodle usando mais do que um endereço. Se o site tiver mais do que um endereço público, devem ser configurados redirecionamentos permanentes em todos eles, à exceção deste. Se o site pode ser acedido a partir da Internet e de Intranet, então use o endereço público aqui. Se o endereço atual não está correto, altere o endereço indicado na barra de endereço do seu navegador e reinicie a instalação.';
 $string['pathsunsecuredataroot'] = 'A localização da pasta de dados não é segura';
 $string['pathswrongadmindir'] = 'A pasta <b>admin</b> não existe';
 $string['pgsqlextensionisnotpresentinphp'] = 'O PHP não foi corretamente configurado com a extensão PGSQL (de forma a permitir a comunicação com servidor PostgreSQL). Verifique o ficheiro de configuração ou recompile o PHP.';
 $string['phpextension'] = 'Extensão <b>{$a}</b> do PHP';
 $string['phpversion'] = 'Versão do PHP';
-$string['phpversionhelp'] = '<p>A instalação do Moodle só é possível se o servidor tiver instalada a versão 4.3.0 ou 5.1.0 ( a versão 5.0.x apresenta vários problemas) ou superiores.</p><p>A versão atualmente instalada é  <b>{$a}</b></p><p>É necessário atualizar esta versão do PHP ou mudar para um novo servidor que possua as referidas versões!<br />(Se a versão instalada for a 5.0.x é possível regredir para a versão 4.4.x)</p>';
+$string['phpversionhelp'] = '<p>A instalação do Moodle só é possível se no servidor estiver instalada, pelo menos, a versão 5.6.5 do PHP (a versão 7.0.x tem algumas limitações).</p>
+<p>A versão atualmente instalada é {$a}.</p>
+<p>É necessário atualizar a versão do PHP ou migrar para um servidor com a referida versão.</p>';
 $string['releasenoteslink'] = 'Para obter mais informações sobre esta versão do Moodle consulte as notas de lançamento na página {$a}';
 $string['safemode'] = '<i>Safe mode</i>';
 $string['safemodeerror'] = 'O Moodle poderá ter problemas de funcionamento se a configuração do PHP estiver em <i>Safe mode</i>';

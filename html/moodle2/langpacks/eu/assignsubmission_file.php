@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assignsubmission_file', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Onartutako fitxategi-motak';
+$string['acceptedfiletypes_help'] = 'Onartutako fitxategi-motak murriz daitezke puntu eta komaz banatutako mimetype zerrenda sartuta, esaterako \'video/mp4; audio/mp3; image/png; image/jpeg\'. Fitxategien luzapenak ere murriz daitezke puntuak ere gehituta, esaterako \'.png; .jpg\'. Eremua hutsik utziz gero fitxategi-mota guztiak onartuko dira.';
 $string['configmaxbytes'] = 'Fitxategiaren gehienezko tamaina';
 $string['countfiles'] = '{$a} fitxategi';
 $string['default'] = 'Berez gaituta';
@@ -33,6 +35,7 @@ $string['enabled'] = 'Fitxategi-bidalketak';
 $string['enabled_help'] = 'Gaituz gero, ikasleek fitxategi bat edo gehiago igo dezakete euren bidalketan';
 $string['eventassessableuploaded'] = 'Fitxategia ondo igo da.';
 $string['file'] = 'Fitxategi-bidalketak';
+$string['filesofthesetypes'] = 'Mota hauetako fitxategiak gehitu daitezke bidalketa honetara:';
 $string['maxbytes'] = 'Fitxategiaren gehienezko tamaina';
 $string['maxfiles'] = 'Bidalketa bakoitzeko gehienezko fitxategi kopurua';
 $string['maxfiles_help'] = 'Fitxategien bidalketa gaituta egonez gero, zeregin bakoitzak jasoko ahal duen gehienezko fitxategi kopurua ezarri daiteke.';
@@ -40,6 +43,7 @@ $string['maxfilessubmission'] = 'Igotako fitxategien gehienezko kopurua';
 $string['maxfilessubmission_help'] = 'Fitxategien bidalketa gaituta badago, ikasle bakoitzak fitxategi-kopuru hau bidali ahal izango du gehienez.';
 $string['maximumsubmissionsize'] = 'Bidalketaren gehienezko tamaina';
 $string['maximumsubmissionsize_help'] = 'Ikasleek igotako fitxategiek tamaina hau izan dezakete gehienez.';
+$string['nonexistentfiletypes'] = 'Hurrengo fitxategi-motak ez dira onartu: {$a}';
 $string['numfilesforlog'] = 'Fitxategi-kopurua: {$a} fitxategi.';
 $string['pluginname'] = 'Fitxategi-bidalketak';
 $string['siteuploadlimit'] = 'Gunearen igoera-muga';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'theme_more', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,8 +61,8 @@ $string['invertdesc'] = 'Schakelt de tekst en achtergrond voor de navigatiebalk 
 $string['linkcolor'] = 'Linkkleur';
 $string['linkcolor_desc'] = 'De kleur van de hyperlinks.';
 $string['logo'] = 'Logo';
-$string['logodesc'] = 'Het logo wordt enkel getoond in de kop van de startpagina en de login-pagina.<br />Als de hoogte van je logo meer dan 75px is, voeg dan volgende regel toe in het veld voor Aangepaste CSS <br />
-div.logo {height: 100px;} -> pas dit aan volgens de hoogte van je logo.';
+$string['logodesc'] = 'Upload hier het logo dat je wil toevoegen aan de header. <br>Als de hoogte van je logo meer dan 75px is, voeg dan volgende regel toe in het veld voor Aangepaste CSS <br />
+div.logo {height: 100px;} -> pas dit aan aan de hoogte van je logo. Als hier geen logo wordt toegevoegd, dan wordt het logo van Uiterlijk > Logo gebruikt.';
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
@@ -72,6 +72,6 @@ $string['sitelogo'] = 'Site logo';
 $string['sitename'] = 'Toon site-naam samen met klein logo';
 $string['sitenamedesc'] = 'Als er is geen klein logo is, dan wordt de site-naam altijd getoond in de navigatiebalk. Als er een klein logo ingesteld is, dan kan dat getoond worden met of zonder de site-naam.';
 $string['smalllogo'] = 'Klein logo';
-$string['smalllogodesc'] = 'Het kleine logo wordt getoond in de navigatiebalk. Als er een hoofdingslogo is voor de startpagina en de loginpagina, dan wordt het kleine logo niet getoond op die pagina\'s.';
+$string['smalllogodesc'] = 'Het kleine logo wordt getoond in de navigatiebalk. Als er een logo in de kopregel van de startpagina en de loginpagina staat, dan wordt het kleine logo niet getoond op die pagina\'s. Als hier geen logo wordt toegevoegd, dan wordt het logo van Uiterlijk > Logo gebruikt.';
 $string['textcolor'] = 'Tekstkleur';
 $string['textcolor_desc'] = 'De kleur van tekst.';

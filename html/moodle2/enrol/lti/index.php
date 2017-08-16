@@ -22,7 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(dirname(__FILE__) . '/../../config.php');
+require_once(__DIR__ . '/../../config.php');
 require_once($CFG->dirroot.'/enrol/lti/lib.php');
 
 $courseid = required_param('courseid', PARAM_INT);
@@ -99,6 +99,9 @@ if ($action) {
 
 echo $OUTPUT->header();
 echo $OUTPUT->heading(get_string('toolsprovided', 'enrol_lti'));
+echo "<p>" .get_string('toolsprovided_help', 'enrol_lti') . "</p>";
+echo "<p class=helplink>" . $OUTPUT->doc_link('enrol/lti/index',
+    get_string('morehelp')) ."</p>";
 
 if (\enrol_lti\helper::count_lti_tools(array('courseid' => $courseid)) > 0) {
     $table = new \enrol_lti\manage_table($courseid);

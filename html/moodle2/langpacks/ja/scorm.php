@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,6 +84,8 @@ $string['compatibilitysettings'] = '互換性設定';
 $string['completed'] = '完了';
 $string['completionscorerequired'] = '必要最小点数';
 $string['completionscorerequired_help'] = 'この設定を有効にすることにより、ユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも設定された最小点数に到達する必要があります。';
+$string['completionstatusallscos'] = 'すべてのscosに完了ステータスの返信を要求する';
+$string['completionstatusallscos_help'] = 'SCORMパッケージには複数のコンポーネントまたは「scos」を含むものがあります。この設定が有効にされた場合、この活動の完了をフラグするためにパッケージ内のすべてのscosは関連するlesson_statusを返す必要があります。';
 $string['completionstatus_completed'] = '完了';
 $string['completionstatus_passed'] = '合格';
 $string['completionstatusrequired'] = '必要ステータス';
@@ -145,7 +147,7 @@ $string['firstattempt'] = '最初の受験';
 $string['floating'] = 'フローティング';
 $string['forcecompleted'] = '完了を強制する';
 $string['forcecompleteddesc'] = 'このプリファレンスでは完了の強制に関するデフォルト値を設定します。';
-$string['forcecompleted_help'] = 'この設定を有効にした場合、現在の受験ステータスが強制的に「完了」とされます (SCORM 1.2パッケージのみに適用されます)。';
+$string['forcecompleted_help'] = 'この設定を有効にした場合、現在の受験ステータスが強制的に「完了」とされます (SCORM 1.2パッケージにのみ適用されます)。';
 $string['forcejavascript'] = 'ユーザにJavaScriptの有効化を強制する';
 $string['forcejavascript_desc'] = 'この設定を有効にした場合 (推奨)、ユーザのブラウザでJavaScriptをサポートしていない場合にSCORMオブジェクトへのアクセスを防ぎます。無効にした場合、ユーザはSCORMを閲覧することはできますが、API通信が失敗するため、評定情報が保存されることはありません。';
 $string['forcejavascriptmessage'] = 'このオブジェクトを閲覧するにはJavaScriptが必要です。あなたのブラウザのJavaScriptを有効にして再度お試しください。';
@@ -414,3 +416,4 @@ $string['whatgrade_help'] = '複数回の受験を許可した場合、ここで
 * 「完了を強制する」「新しい受験を強制する」「最終受験後、ロックする」設定もさらに複数の受験の管理を提供します。';
 $string['width'] = '幅';
 $string['window'] = 'ウィンドウ';
+$string['youmustselectastatus'] = 'あなたは要求するステータスを選択する必要があります。';

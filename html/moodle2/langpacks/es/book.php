@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['book:addinstance'] = 'Añadir un nuevo libro';
 $string['book:edit'] = 'Editar capítulos de libro';
 $string['book:read'] = 'Ver libro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos de libro oculto';
+$string['chapterandsubchaptersdeleted'] = 'El capítulo "{$a->title}" y sus {$a->subchapters} subcapítulos han sido borrados';
+$string['chapterdeleted'] = 'El capítulo "{$a->title}" ha sido borrado';
 $string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título del Capítulo';
 $string['confchapterdelete'] = '¿Realmente quiere eliminar este Capítulo?';
@@ -62,6 +64,7 @@ $string['movechapterup'] = 'Mover capítulo "{$a}" para arriba';
 $string['navexit'] = 'Salir del libro';
 $string['navimages'] = 'Imágenes';
 $string['navnext'] = 'Siguiente';
+$string['navnexttitle'] = 'Siguiente: {$a}';
 $string['navoptions'] = 'Opciones disponibles para links de navegación';
 $string['navoptions_desc'] = '';
 $string['navprev'] = 'Anterior';

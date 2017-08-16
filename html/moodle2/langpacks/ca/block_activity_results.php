@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Quantes qualificacions de les més altes s\'hauri
 $string['config_show_worst'] = 'Quantes qualificacions de les més baixes s\'haurien de mostrar (0 per inhabilitar)?';
 $string['configuredtoshownothing'] = 'Actualment, la configuració d\'aquest bloc no permet mostrar cap resultat.';
 $string['config_use_groups'] = 'Mostra els grups en lloc dels estudiants (només si l\'activitat admet grups)?';
+$string['defaultdecimalplaces'] = 'Xifres decimals';
+$string['defaultdecimalplaces_desc'] = 'Número de xifres decimals a mostrar per defecte';
+$string['defaultgradedisplay'] = 'Mostra les notes com a';
+$string['defaultgradedisplay_desc'] = 'Per defecte, com es mostraran les notes?';
+$string['defaulthighestgrades'] = 'Per defecte, es mostraran les notes més altes';
+$string['defaulthighestgrades_desc'] = 'Per defecte, quantes de les notes més altes voleu mostrar?';
+$string['defaultlowestgrades'] = 'Per defecte, es mostraran les notes més baixes';
+$string['defaultlowestgrades_desc'] = 'Per defecte, quantes de les notes més baixes voleu mostrar?';
+$string['defaultnameoptions'] = 'Confidencialitat dels resultats';
+$string['defaultnameoptions_desc'] = 'Per defecte, com voleu que els alumnes s\'identifiquin?';
+$string['defaultshowgroups'] = 'Per defecte, mostra els grups';
+$string['defaultshowgroups_desc'] = 'Per defecte, mostra els grups en lloc dels estudiants (només quan l\'activitat admet grups)';
 $string['error_emptyactivityid'] = 'Configureu aquest bloc; us cal seleccionar de quina activitat s\'haurien de mostrar els resultats.';
 $string['error_emptyactivityrecord'] = 'Error: l\'activitat seleccionada no existeix a la base de dades.';
 $string['error_nogroupsexist'] = 'Error: el bloc està configurat per mostrar qualificacions en mode de grup, però no hi ha grups definits.';

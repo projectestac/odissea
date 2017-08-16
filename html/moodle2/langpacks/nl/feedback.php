@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,8 +55,9 @@ $string['check_values'] = 'Checkbox-waarden';
 $string['choosefile'] = 'Kies een bestand';
 $string['chosen_feedback_response'] = 'Gekozen feedback-antwoord';
 $string['closebeforeopen'] = 'Je hebt een einddatum opgegeven voor de startdatum.';
-$string['completed'] = 'voltooid';
+$string['completed'] = 'Voltooid';
 $string['completed_feedbacks'] = 'Ingevulde antwoorden';
+$string['completedon'] = 'Voltooid op {$a}';
 $string['complete_the_form'] = 'Beantwoord de vragen...';
 $string['completionsubmit'] = 'Bekijk als voltooid als de feedback verstuurd is';
 $string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback op de startpagina ingevuld worden zonder aangemeld te zijn.';
@@ -200,7 +201,7 @@ $string['notavailable'] = 'deze feedback is niet beschikbaar';
 $string['not_completed_yet'] = 'Nog niet ingevuld';
 $string['no_templates_available_yet'] = 'Nog geen sjablonen beschikbaar';
 $string['not_selected'] = 'Niet geselecteerd';
-$string['not_started'] = 'niet begonnen';
+$string['not_started'] = 'Niet begonnen';
 $string['numberoutofrange'] = 'Aantal buiten bereik';
 $string['numeric'] = 'Numeriek antwoord';
 $string['numeric_range_from'] = 'Bereik van';
@@ -265,7 +266,8 @@ $string['show_nonrespondents'] = 'Niet geantwoord';
 $string['site_after_submit'] = 'Site na insturen';
 $string['sort_by_course'] = 'Sorteer op cursus';
 $string['start'] = 'Start';
-$string['started'] = 'gestart';
+$string['started'] = 'Gestart';
+$string['startedon'] = 'Gestart op {$a}';
 $string['stop'] = 'Einde';
 $string['subject'] = 'Onderwerp';
 $string['switch_group'] = 'Verander groep';

@@ -82,7 +82,7 @@ $string['pathsunsecuredataroot'] = 'Umístění datového adresáře není bezpe
 $string['pathswrongadmindir'] = 'Adresář pro správu serveru (admin) neexistuje';
 $string['phpextension'] = '{$a} PHP rozšíření';
 $string['phpversion'] = 'Verze PHP';
-$string['phpversionhelp'] = '<p>Moodle vyžaduje PHP alespoň verzi 5.4.4  (7.x má určitá omezení jádra).</p>
+$string['phpversionhelp'] = '<p>Moodle vyžaduje PHP alespoň verze 5.6.5 PHP (7.x má určitá omezení jádra).</p>
 <p>Nyní používáte PHP verze {$a}.</p>
 <p>Musíte PHP upgradovat, nebo přejít k hostiteli s vyšší verzí!</p>';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';

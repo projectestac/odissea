@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['contentheader'] = 'Content';
 $string['display'] = 'Display folder contents';
 $string['display_help'] = 'If you choose to display the folder contents on a course page, there  will be no link to a separate page.
@@ -51,6 +52,7 @@ A folder may be used
 * To provide a shared uploading space for teachers on the course page (keeping the folder hidden so that only teachers can see it)';
 $string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Folders';
+$string['newfoldercontent'] = 'New folder content';
 $string['noautocompletioninline'] = 'Automatic completion on viewing of activity can not be selected together with "Display inline" option';
 $string['page-mod-folder-view'] = 'Folder module main page';
 $string['page-mod-folder-x'] = 'Any folder module page';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_questioninstances', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   report_questioninstances
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

@@ -24,7 +24,8 @@ Feature: Test the display of the choice module on my home
     And I set the following fields to these values:
       | Choice name | Test choice name |
       | Description | Test choice description |
-      | id_timerestrict| 1 |
+      | timeopen[enabled] | 1 |
+      | timeclose[enabled] | 1 |
       | timeclose[day] | 1 |
       | timeclose[month] | January |
       | timeclose[year] | 2030 |
@@ -38,7 +39,6 @@ Feature: Test the display of the choice module on my home
 
   Scenario: View my home as a student before answering the choice
     Given I log in as "student1"
-    When I click on "Dashboard" "link" in the "Navigation" "block"
     Then I should see "You have Choices that need attention"
     And I should see "Not answered yet"
     And I log out
@@ -50,7 +50,7 @@ Feature: Test the display of the choice module on my home
     And I should see "Your selection: Option 1"
     And I should see "Your choice has been saved"
     And "Save my choice" "button" should not exist
-    When I click on "Dashboard" "link" in the "Navigation" "block"
+    When I follow "Dashboard"
     Then I should not see "You have Choices that need attention"
     And I log out
 
@@ -63,7 +63,6 @@ Feature: Test the display of the choice module on my home
     And "Save my choice" "button" should not exist
     And I log out
     When I log in as "teacher1"
-    And I click on "Dashboard" "link" in the "Navigation" "block"
     Then I should see "You have Choices that need attention"
     And I should see "View 1 responses"
     And I log out

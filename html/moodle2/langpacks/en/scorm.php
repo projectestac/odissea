@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,6 +84,8 @@ $string['compatibilitysettings'] = 'Compatibility settings';
 $string['completed'] = 'Completed';
 $string['completionscorerequired'] = 'Require minimum score';
 $string['completionscorerequired_help'] = 'Enabling this setting will require a user to have at least the minimum score entered to be marked complete in this SCORM activity, as well as any other Activity Completion requirements.';
+$string['completionstatusallscos'] = 'Require all scos to return completion status';
+$string['completionstatusallscos_help'] = 'Some SCORM packages contain multiple components or "scos" - when this is enabled all scos within the package must return the relevant lesson_status for this activity to be flagged complete.';
 $string['completionstatus_completed'] = 'Completed';
 $string['completionstatus_passed'] = 'Passed';
 $string['completionstatusrequired'] = 'Require status';
@@ -417,3 +419,4 @@ Notes on handling of multiple attempts:
 * The settings "Force completed", "Force new attempt" and "Lock after final attempt" also provide further management of multiple attempts.';
 $string['width'] = 'Width';
 $string['window'] = 'Window';
+$string['youmustselectastatus'] = 'You must select a status to require';

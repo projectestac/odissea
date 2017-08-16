@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz_overview', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allattempts'] = 'إظهار جميع المحاولات';
-$string['allstudents'] = 'إظهار الكل {$a}';
-$string['attemptsonly'] = 'إظهار {$a} مع المحاولات فقط';
+$string['allattempts'] = 'اظهار جميع المحاولات';
+$string['allstudents'] = 'اظهار الكل {$a}';
+$string['attemptsonly'] = 'أظهار {$a} مع المحاولات فقط';
 $string['attemptsprepage'] = 'المحاولات المعروضة في كل صفحة';
 $string['deleteselected'] = 'حذف المحاولات المحددة';
 $string['done'] = 'تم';
@@ -36,14 +36,14 @@ $string['err_failedtorecalculateattemptgrades'] = 'فشل إعادة حساب د
 $string['needed'] = 'لازم';
 $string['noattemptsonly'] = 'أظهار {$a} بدون المحاولات فقط';
 $string['noattemptstoregrade'] = 'لا محاولات تحتاج إعادة تصحيح';
-$string['onlyoneattemptallowed'] = 'يسمح لكل مستخدم بمحاولة واحدة في هذا الاختبار';
+$string['onlyoneattemptallowed'] = 'يسمح لكل مستخدم بمحاولة واحدة في هذه المسابقة';
 $string['optallattempts'] = 'كل المحاولات';
 $string['optattemptsonly'] = '{$a} الذين قاموا بالإجابة على الاختبار';
 $string['optnoattemptsonly'] = '{$a} الذين لم يجيبوا على الاختبار';
-$string['overview'] = 'الدرجات';
+$string['overview'] = 'العلامات';
 $string['overviewdownload'] = 'تنزيل معاينة عامة';
 $string['overviewfilename'] = 'الدرجات';
-$string['overviewreport'] = 'تقرير الدرجات';
+$string['overviewreport'] = 'تقرير العلامات';
 $string['pagesize'] = 'حجم الصفحة';
 $string['pluginname'] = 'درجات';
 $string['preferencespage'] = 'الإعدادات الخاصة بهذه الصفحة فقط';

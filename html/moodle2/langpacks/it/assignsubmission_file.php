@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assignsubmission_file', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Tipi di file accettati';
+$string['acceptedfiletypes_help'] = 'E\' possibile limitare i tipi di file accettati inserendo un elenco di tipi mime separati dal punto e virgola, ad esempio: \'video/mp4; audio/mp3; image/png; image/jpeg\'. E\' anche possibile limitare le estensioni, ad esempio \'.png; .jpg\'. Lasciano il campo vuoto saranno accettati  tutti i tipi di file.';
 $string['configmaxbytes'] = 'Dimensione massima file';
 $string['countfiles'] = '{$a} file';
 $string['default'] = 'Abilitato per default';
@@ -33,6 +35,8 @@ $string['enabled'] = 'Consegna file';
 $string['enabled_help'] = 'Consente agli studenti di consegnare file.';
 $string['eventassessableuploaded'] = 'Caricato file';
 $string['file'] = 'Consegna file';
+$string['filesofthesetypes'] = 'Tipi di file accettati per la consegna:';
+$string['filetypewithexts'] = '{$a->name} &mdash; {$a->extlist}';
 $string['maxbytes'] = 'Dimensione massima file';
 $string['maxfiles'] = 'Numero massimo di file per ogni consegna';
 $string['maxfiles_help'] = 'Se è abilitata la consegna di file, l\'impostazione consente di stabilire il numero massimo di file che è possibile accettare per ciascuna consegna.';
@@ -40,6 +44,7 @@ $string['maxfilessubmission'] = 'Numero massimo di file caricabili';
 $string['maxfilessubmission_help'] = 'Se la consegna di file è abilitata, gli studenti  non potranno consegnare un numero di file superiore al numero massimo impostato.';
 $string['maximumsubmissionsize'] = 'Dimensione massima file';
 $string['maximumsubmissionsize_help'] = 'La dimensione massima dei file caricabili dagli studenti';
+$string['nonexistentfiletypes'] = 'I seguenti tipi di file non sono stati riconosciuti: {$a}';
 $string['numfilesforlog'] = 'Numero di file: {$a} file';
 $string['pluginname'] = 'Consegna file';
 $string['siteuploadlimit'] = 'Limite del sito';

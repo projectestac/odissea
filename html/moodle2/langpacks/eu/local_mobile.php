@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,3 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['local_mobilesettings'] = 'Ezarpenak';
-$string['local_mobiletypeoflogin_key'] = 'Sarbide-mota';
-$string['loginintheapp'] = 'App bidez';

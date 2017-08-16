@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,7 +68,7 @@ $string['output'] = 'Irteera:';
 $string['oval'] = 'Obaloa';
 $string['pagenumber'] = '{$a} orria';
 $string['pagexofy'] = '{$a->page} orri {$a->total}-(e)tik';
-$string['pathtogspathdesc'] = 'Mesedez kontuan izan PDF oharrak erabiltzeko beharrezkoa dela ghostscript-erako bide-izena {$a}-n zehazturik egotea.';
+$string['pathtogspathdesc'] = 'Mesedez kontuan izan PDF oharrek ghostscript-erako bide-izena {$a}-n zehazturik egon behar dutela.';
 $string['pathtounoconvpathdesc'] = 'Mesedez kontuan izan PDF oharrak erabiltzeko beharrezkoa dela unoconv-erako bide-izena {$a}-n zehazturik egotea.';
 $string['pen'] = 'Arkatza';
 $string['pluginname'] = 'PDF oharra';

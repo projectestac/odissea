@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,10 @@ $string['aftersaving...'] = 'あなたの設定を保存した後、';
 $string['allowunenrol'] = 'IMSデータに学生/教師の<strong>登録解除</strong>を許可する';
 $string['allowunenrol_desc'] = 'この設定を有効にした場合、エンタープライズデータ内で指定することによりコース登録が解除されます。';
 $string['basicsettings'] = '基本設定';
+$string['categoryidnumber'] = 'カテゴリIDナンバーを許可する';
+$string['categoryidnumber_desc'] = 'この設定を有効にした場合、IMS EnterpriseはIDナンバーのカテゴリを作成します。';
+$string['categoryseparator'] = 'カテゴリセパレータ文字';
+$string['categoryseparator_desc'] = '「カテゴリIDナンバー」が有効にされた場合、必須となります。カテゴリ名およびIDナンバーを分けるための文字です。';
 $string['coursesettings'] = 'コースデータオプション';
 $string['createnewcategories'] = 'Moodleに登録されていない場合、新しい (非表示) コースカテゴリを作成する';
 $string['createnewcategories_desc'] = 'コースの入力データ内に<org><orgunit>要素が存在する場合、そのコンテンツは最初から作成されるコースのカテゴリを指定するために使用されます。このプラグインは既存のコースを再度カテゴリ分類することはありません。
@@ -60,6 +64,8 @@ $string['mailadmins'] = '管理者にメール通知する';
 $string['mailusers'] = 'ユーザにメール通知する';
 $string['messageprovider:imsenterprise_enrolment'] = 'IMSエンタープライズ登録メッセージ';
 $string['miscsettings'] = 'その他';
+$string['nestedcategories'] = 'ネストカテゴリを許可する';
+$string['nestedcategories_desc'] = 'この設定を有効にした場合、IMS Enterpriseはネストカテゴリを作成します。';
 $string['pluginname'] = 'IMSエンタープライズファイル';
 $string['pluginname_desc'] = 'このメソッドではあなたが指定した場所にある特別にフォーマットされたテキストファイルを繰り返しチェックおよび処理します。IMSエンタープライズ仕様に基づき、ファイルにはperson、groupおよびmembershipをXML要素に含む必要があります。';
 $string['processphoto'] = 'ユーザ写真データをプロファイルに追加する';
@@ -81,6 +87,10 @@ $string['sourcedidfallback_desc'] = 'IMSデータでは<sourcedid>フィール�
 いくつかの学生情報が<userid>フィールドに出力されない場合、この設定を有効にして<sourcedid>をMoodleのユーザIDに使用してください。そうでない場合、この設定を無効のままにしてください。';
 $string['truncatecoursecodes'] = 'この長さにコースコードを切り詰める';
 $string['truncatecoursecodes_desc'] = 'ここでは処理する前に、コースコードを指定した長さに切り詰めることができます。コースコードを切り詰めたい場合、このボックスに文字長を入力してください。そうでない場合、このボックスを<strong>空白</strong>のままにすることによりコースコードは切り詰められません。';
+$string['updatecourses'] = 'コースを更新する';
+$string['updatecourses_desc'] = 'この設定を有効にした場合、IMS Enterprise登録プラグインは長いコース名およびコース省略名を更新することができます (「recstatus」フラグに「2」が設定された場合、更新を意味します)。';
+$string['updateusers'] = 'IMSデータで指定された場合、ユーザアカウントを更新する';
+$string['updateusers_desc'] = 'この設定を有効にした場合、IMS Enterprise登録データはユーザアカウントの変更を指定することができます (「recstatus」フラグに「2」が設定された場合、更新を意味します)。';
 $string['usecapitafix'] = '「Capita」を使用している場合、チェックしてください (XMLフォーマットが少しだけ正しくありません)';
 $string['usecapitafix_desc'] = 'Capitaによって作成された学生データにはXML出力において若干のエラーがあることが見つかっています。あなたがCapitaを使用している場合、このオプションを有効にしてください - そうでなければ、チェックしないままにしてください。';
 $string['usersettings'] = 'ユーザデータオプション';

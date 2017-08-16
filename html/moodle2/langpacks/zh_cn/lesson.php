@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,7 +170,6 @@ $string['enterpassword'] = '请输入密码';
 $string['eolstudentoutoftime'] = '注意：您已经超过了本程序教学规定的时间。您最后回答的题目如果是在时限之后作答，那么可能不会被算分。';
 $string['eolstudentoutoftimenoanswers'] = '您没有回答任何题目。您在本程序教学中得到了 0 分。';
 $string['essay'] = '问答题';
-$string['essayemailmessage'] = '<p>问答题题面：<blockquote>{$a->question}</blockquote></p><p>您的回答：<blockquote><em>{$a->response}</em></blockquote></p><p>{$a->teacher}的评论：<blockquote><em>{$a->comment}</em></blockquote></p><p>此问答题您已经得到{$a->outof}分中的{$a->earned}分。</p><p>您此程序教学的得分已经变为{$a->newgrade}%。</p>';
 $string['essayemailmessage2'] = '<p>问答题：<blockquote>{$a->question}</blockquote></p><p>您的回答：<blockquote><em>{$a->response}</em></blockquote></p><p>评分人评论：<blockquote><em>{$a->comment}</em></blockquote></p><p>此问答题您得到了{$a->earned}分（满分{$a->outof}）。</p><p>您此程序教学的成绩已经变为{$a->newgrade}%。</p>';
 $string['essayemailsubject'] = '题目{$a}的成绩';
 $string['essays'] = '问答题';
@@ -221,7 +220,6 @@ $string['jumpsto'] = '跳转到<em>{$a}</em>';
 $string['leftduringtimed'] = '您在计时程序教学的中间离开了。<br/>请点击“继续”来重新开始。';
 $string['leftduringtimednoretake'] = '您在计时程序教学的中间离开了。<br/>此教程不允许重学或继续。';
 $string['lesson:addinstance'] = '添加一个新练习';
-$string['lessonattempted'] = '已尝试过的练习';
 $string['lessonclosed'] = '此程序教学在 {$a} 关闭。';
 $string['lessoncloses'] = '关闭程序教学';
 $string['lessoncloseson'] = '程序教学在{$a}关闭';

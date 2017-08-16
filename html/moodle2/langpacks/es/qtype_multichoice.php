@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multichoice', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['choiceno'] = 'Elección {$a}';
 $string['choices'] = 'Opciones disponibles';
 $string['clozeaid'] = 'Escribir palabra perdida';
 $string['correctansweris'] = 'La respuesta correcta es: {$a}';
+$string['correctanswersare'] = 'Las respuestas correctas son: {$a}';
 $string['correctfeedback'] = 'Para cualquier respuesta correcta';
 $string['errfractionsaddwrong'] = 'Las calificaciones positivas elegidas no alcanzan el 100%<br />Sólo alcanzan el {$a}%';
 $string['errfractionsnomax'] = 'Una de las respuestas debería tener el 100% de forma que sea <br />posible alcanzar la calificación máxima en esta pregunta.';

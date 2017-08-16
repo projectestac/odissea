@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['anyfile'] = 'Tout fichier';
 $string['areaattachment'] = 'Annexes';
 $string['areapost'] = 'Messages';
 $string['attachment'] = 'Annexe';
-$string['attachment_help'] = 'Il vous est possible de joindre un ou plusieurs fichiers (le nombre dépend des réglages du forum) à chaque message que vous postez dans un forum. Si vous joignez une image, elle sera affichée en fin de message.';
+$string['attachment_help'] = 'Il vous est possible de joindre un ou plusieurs fichiers à chaque message que vous postez dans un forum. Si vous joignez une image, elle sera affichée en fin de message.';
 $string['attachmentnopost'] = 'Vous ne pouvez pas exporter les annexes sans identifiant de message';
 $string['attachments'] = 'Annexes';
 $string['attachmentswordcount'] = 'Annexes et nombre de mots';
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'L\'abonnement n\'est pas autorisé (sauf 
 $string['disallowsubscription'] = 'Abonnement';
 $string['disallowsubscription_help'] = 'Ce forum ne permet pas de s\'abonner aux discussions.';
 $string['discussion'] = 'Discussion';
+$string['discussionlocked'] = 'Cette discussion a été verrouillée. Vous ne pouvez plus y répondre.';
+$string['discussionlockingdisabled'] = 'Ne pas verrouiller les discussions';
+$string['discussionlockingheader'] = 'Verrouillage des discussions';
 $string['discussionmoved'] = 'Cette discussion a été déplacée vers « {$a} ».';
 $string['discussionmovedpost'] = 'Cette discussion a été déplacée <a href="{$a->discusshref}">ici</a>, dans le forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Nom de la discussion';
@@ -225,6 +228,7 @@ $string['forum:allowforcesubscribe'] = 'Permettre d\'imposer l\'abonnement';
 $string['forumauthorhidden'] = 'Auteur (masqué)';
 $string['forumblockingalmosttoomanyposts'] = 'Vous approchez du nombre maximal de messages autorisés. Vous avez écrit {$a->numposts} durant les derniers {$a->blockperiod}. La limite est de {$a->blockafter} messages.';
 $string['forumbodyhidden'] = 'Vous ne pouvez pas voir ce message, probablement parce que vous n\'avez pas encore participé à cette discussion, la durée maximale de modification n\'est pas encore passée, la discussion n\'a pas encore commencée ou elle est déjà terminée.';
+$string['forum:canoverridediscussionlock'] = 'Répondre aux discussions verrouillées';
 $string['forum:canposttomygroups'] = 'Poster des messages dans tous les groupes avec accès';
 $string['forum:createattachment'] = 'Créer des annexes';
 $string['forum:deleteanypost'] = 'Supprimer des messages (en tout temps)';
@@ -281,11 +285,19 @@ $string['invalidparentpostid'] = 'Identifiant du message parent incorrect';
 $string['invalidpostid'] = 'Identifiant de message incorrect : {$a}';
 $string['lastpost'] = 'Dernier message';
 $string['learningforums'] = 'Forums d\'apprentissage';
+$string['lockdiscussionafter'] = 'Verrouiller les discussions après une période d\'inactivité';
+$string['lockdiscussionafter_help'] = 'Les discussions peuvent être verrouillées automatiquement après une durée spécifiée écoulée depuis la dernière réponse.
+
+Les utilisateurs disposant de la capacité de répondre aux discussions verrouillées peuvent déverrouiller une discussion en y répondant.';
 $string['longpost'] = 'Message long';
 $string['mailnow'] = 'Envoyer les notifications de messages des forums sans délai de modification.';
 $string['manydiscussions'] = 'Discussions par page';
 $string['markalldread'] = 'Marquer tous les messages de cette discussion comme lus.';
 $string['markallread'] = 'Marquer tous les messages de ce forum comme lus.';
+$string['markasreadonnotification'] = 'Lors de l\'envoi des notifications de messages de forums';
+$string['markasreadonnotification_help'] = 'Il est possible de choisir si un message de forum doit être marqué comme lu ou non lorsque l\'on reçoit la notification de ce message de forum.';
+$string['markasreadonnotificationno'] = 'Ne pas marquer le message comme lu';
+$string['markasreadonnotificationyes'] = 'Marquer le message comme lu';
 $string['markread'] = 'Marquer comme lu';
 $string['markreadbutton'] = 'Marquer<br />comme lu';
 $string['markunread'] = 'Marquer comme non lu';
@@ -350,7 +362,7 @@ $string['noguestpost'] = 'Les visiteurs anonymes ne sont pas autorisés à écri
 $string['noguestsubscribe'] = 'Les utilisateurs anonymes ne peuvent pas s\'abonner.';
 $string['noguesttracking'] = 'Les visiteurs anonymes ne sont pas autorisés à modifier les options de suivi des forums.';
 $string['nomorepostscontaining'] = 'Plus aucun message contenant « {$a} » n\'a été trouvé';
-$string['nonews'] = 'Aucune brève n\'a encore été publiée';
+$string['nonews'] = 'Aucune annonce n\'a encore été publiée';
 $string['noonecansubscribenow'] = 'L\'abonnement n\'est maintenant plus autorisé  ';
 $string['nopermissiontosubscribe'] = 'Vous n\'êtes pas autorisé à voir les abonnés au forum';
 $string['nopermissiontoview'] = 'Vous n\'êtes pas autorisé à voir ce message';
@@ -446,15 +458,7 @@ $string['rsssubscriberssdiscussions'] = 'Flux RSS des discussions';
 $string['rsssubscriberssposts'] = 'Flux RSS des messages';
 $string['rsstype'] = 'Flux RSS de cette activité';
 $string['rsstypedefault'] = 'Type de flux RSS';
-$string['rsstype_help'] = '<p>Cette option vous permet d\'activer le flux RSS de ce forum.</p>
-
-<p>Vous pouvez choisir entre deux types de flux RSS :
-
-<ul>
-<li><strong>Discussions :</strong> le flux généré comprendra les nouvelles discussions du forum avec leur message initial.</li>
-
-<li><strong>Messages :</strong> le flux généré comprendra tous les nouveaux messages postés dans le forum.</li>
-</ul>';
+$string['rsstype_help'] = 'Pour activer le flux RSS de cette activité, choisissez soit les discussions, soit les messages à inclure dans le flux.';
 $string['search'] = 'Rechercher';
 $string['search:activity'] = 'Forum – information sur l\'activité';
 $string['searchdatefrom'] = 'Dans les messages postérieurs à';
@@ -524,6 +528,7 @@ $string['trackingtype_help'] = 'Le suivi des messages permet aux participants de
 Si le réglage est mis sur « Facultatif », les participants peuvent activer ou désactiver à discrétion le suivi des messages dans le bloc d\'administration (le suivi des messages doit d\'abord être activé dans leurs préférences de forum).
 
 Si le réglage « Permettre d\'imposer le suivi des messages » est activé dans l\'administration de la plateforme, une option supplémentaire est affichée : « Imposé ». Le suivi est alors toujours activé, indépendamment des préférences de forum de l\'utilisateur.';
+$string['trackreadposts_header'] = 'Suivi des messages de forum';
 $string['unread'] = 'Non lu';
 $string['unreadposts'] = 'Messages non lus';
 $string['unreadpostsnumber'] = '{$a} messages non lus';
@@ -542,6 +547,7 @@ $string['unsubscribelink'] = 'Me désabonner de ce forum : {$a}';
 $string['unsubscribeshort'] = 'Désabonner';
 $string['usermarksread'] = 'Marquage manuel des messages lus';
 $string['viewalldiscussions'] = 'Afficher toutes les discussions';
+$string['viewthediscussion'] = 'Consulter la discussion';
 $string['warnafter'] = 'Nombre de messages avant notification';
 $string['warnafter_help'] = 'Les participants peuvent être avertis lorsque le nombre de messages écrits s\'approche du nombre maximal autorisé dans une période donnée. Ce réglage détermine après combien de messages écrits ils recevront cette notification. Les utilisateurs ayant la capacité mod/forum:postwithoutthrottling ne sont pas touchés par les limites de message.';
 $string['warnformorepost'] = 'Attention ! Il y a plus d\'une discussion dans ce forum. La plus récente sera utilisée';

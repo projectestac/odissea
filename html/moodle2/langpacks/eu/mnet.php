@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mnet', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,7 +82,7 @@ $string['hostname'] = 'Ostalariaren izena';
 $string['hostnamehelp'] = 'Urrutiko ostalariaren domeinuaren izen osoa, adibidez, www.adibidea.com';
 $string['hostnotconfiguredforsso'] = 'Zerbitzari hau ez dago konfiguratuta saioa urrutitik hasteko.';
 $string['hostsettings'] = 'Ostalariaren ezarpenak';
-$string['http_self_signed_help'] = 'Konexioak baimendu DIY SSL ziurtagiri auto-sinatua erabiliz urrutiko ostalarian.';
+$string['http_self_signed_help'] = 'Konexioak baimendu urrutiko ostalarian DIY SSL ziurtagiri auto-sinatua erabiliz.';
 $string['https_verified_help'] = 'Konexioak baimendu SSL ziurtagiri egiaztatua erabiliz urrutiko ostalarian.';
 $string['http_verified_help'] = 'Konexioak baimendu PHPn SSL ziurtagiri egiaztatua erabiliz urrutiko ostalarian, http-ren gainean izan ezik (ez https).';
 $string['id'] = 'ID';
@@ -124,7 +124,7 @@ $string['never'] = 'Inoiz ez';
 $string['noaclentries'] = 'Ez dago sarrerarik SSO sarbidearen kontrol-zerrendan';
 $string['noaddressforhost'] = 'Barkatu, baina ({$a}) ostalariaren izena ezin izan da ebatzi.';
 $string['nocurl'] = 'PHP cURL liburutegia ez dago instalatuta';
-$string['nolocaluser'] = 'Ez da erregistro lokalik existitzen urrutiko erabiltzailearentzat, eta ezin izan da sortu, ostalari honek erabiltzaileen sorrera automatikoki egiten ez duelako. Mesedez, jarri harremanetan zure administratzailearekin';
+$string['nolocaluser'] = 'Ez da erregistro lokalik existitzen urrutiko erabiltzailearentzat, eta ezin izan da sortu ostalari honek ez duelako erabiltzaileen sorrera automatikoa baimentzen. Mesedez jarri harremanetan zure kudeatzailearekin!';
 $string['nomodifyacl'] = 'Ez duzu MNet sarbiderako kontrol-zerrenda aldatzeko baimenik.';
 $string['nosite'] = 'Ezin izan da ikastarorik aurkitu gunearen mailan';
 $string['nosuchfile'] = '{$a} fitxategia/funtzioa ez da existitzen.';

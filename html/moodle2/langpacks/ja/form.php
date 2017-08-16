@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,13 @@ $string['nomethodforaddinghelpbutton'] = 'フォームエレメント {$a->name}
 $string['nonexistentformelements'] = '存在しないフォームエレメント {$a} にヘルプボタンを追加しようとしています。';
 $string['noselection'] = '選択なし';
 $string['nosuggestions'] = '候補なし';
+$string['novalue'] = '未入力';
+$string['novalueclicktoset'] = 'テキストを入力するにはクリックしてください。';
 $string['optional'] = '任意';
 $string['othersettings'] = 'その他の設定';
+$string['passwordunmaskedithint'] = 'パスワードを編集する';
+$string['passwordunmaskinstructions'] = '変更を保存するにはEnterキーを押してください。';
+$string['passwordunmaskrevealhint'] = '表示';
 $string['requiredelement'] = '必須入力フィールド';
 $string['revealpassword'] = '公開';
 $string['security'] = 'セキュリティ';

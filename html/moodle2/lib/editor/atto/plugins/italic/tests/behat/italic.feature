@@ -14,7 +14,7 @@ Feature: Atto italic button
     And I follow "Editor preferences"
     And I set the field "Text editor" to "Plain text area"
     And I press "Save changes"
-    And I follow "Edit profile"
+    And I click on "Edit profile" "link" in the "region-main" "region"
     Then I should see "<i>Tower of Pisa</i>"
 
   @javascript
@@ -30,6 +30,6 @@ Feature: Atto italic button
     And I follow "Editor preferences"
     And I set the field "Text editor" to "Plain text area"
     And I press "Save changes"
-    And I follow "Edit profile"
+    And I click on "Edit profile" "link" in the "region-main" "region"
     Then I should not see "<i>GHD - for hair</i>"
     And I should see "GHD - for hair"

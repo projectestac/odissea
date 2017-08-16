@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -187,7 +187,6 @@ $string['enterpassword'] = 'Escriviu la contrasenya:';
 $string['eolstudentoutoftime'] = 'Heu esgotat el vostre temps per completar aquesta lliçó. És possible que la darrera resposta no s\'hagi comptat si l\'heu donada després que s\'hagi acabat el temps.';
 $string['eolstudentoutoftimenoanswers'] = 'No heu respost cap pregunta. La vostra puntuació d\'auqesta lliçó és de 0.';
 $string['essay'] = 'Pregunta de resposta oberta';
-$string['essayemailmessage'] = '<p>Enunciat de la pregunta:<blockquote>{$a->question}</blockquote></p><p>La vostra resposta:<blockquote><em>{$a->response}</em></blockquote></p><p>Comentaris de {$a->teacher}:<blockquote><em>{$a->comment}</em></blockquote></p><p>Heu obtingut un {$a->earned} sobre {$a->outof} en aquesta pregunta.</p><p>La vostra qualificació en aquesta lliçó ha canviat a {$a->newgrade}%.</p>';
 $string['essayemailmessage2'] = '<p>Informació de la pregunta de resposta oberta:{$a->question}</p>
 <p>La vostra resposta:<em>{$a->response}/em></p><p>Comentaris del professorat:<em>{$a->comment}</em></p>
 <p>Heu aconseguit {$a->earned} d\'un màxim de {$a->outof} per aquesta pregunta de resposta oberta.</p><p>La vostra qualificació de la lliçó és ara de {$a->newgrade}%.</p>';
@@ -260,7 +259,6 @@ $string['leftduringtimed'] = 'Heu abandonat una lliçó cronometrada.<br />Feu c
 $string['leftduringtimednoretake'] = 'Heu abandonat una lliçó cronometrada i no està permès continuar-la o torna-la a fer.';
 $string['leftduringtimedsession'] = 'Heu sortit durant una lliçó programada.';
 $string['lesson:addinstance'] = 'Afegeix una lliçó nova';
-$string['lessonattempted'] = 'Lliçó intentada';
 $string['lessonclosed'] = 'La lliçó es va tancar el {$a}.';
 $string['lessoncloses'] = 'Es tanca la lliçó';
 $string['lessoncloseson'] = 'La lliçó es tanca el {$a}';
@@ -290,9 +288,9 @@ $string['maxgrade'] = 'Màxima qualificació';
 $string['maxgrade_help'] = '<p>Aquest valor determina la qualificació màxima que es pot obtenir en la lliçó. L\'escala és de 0 a 100%. Aquest valor es pot modificar en qualsevol moment. Qualsevol canvi té un efecte immediat en la pàgina de qualificacions i en les qualificacions que es mostrin a l\'estudiantat en les diverses llistes. Si la qualificació s\'estableix a 0, la lliçó no apareixerà en cap de les pàgines de qualificació. </p>';
 $string['maxhighscores'] = 'Nombre de puntuacions màximes mostrades';
 $string['maximumnumberofanswersbranches'] = 'Nombre màxim de respostes';
-$string['maximumnumberofanswersbranches_help'] = 'Aquest paràmetre especifica el nombre màxim de respostes que es poden utilitzar en la lliçó. Si només hi ha preguntes de tipus Vertader / Fals, es pot ajustar a 2. La configuració es pot canviar en qualsevol moment, ja que només afecta a allò que veu el professorat, no a les dades.';
+$string['maximumnumberofanswersbranches_help'] = 'Aquest paràmetre especifica el nombre màxim de respostes que es poden utilitzar en la lliçó. Si només hi ha preguntes de tipus vertader/fals, es pot ajustar a 2. La configuració es pot canviar en qualsevol moment, ja que només afecta allò que veu el professor, no les dades.';
 $string['maximumnumberofattempts'] = 'Nombre màxim d\'intents';
-$string['maximumnumberofattempts_help'] = 'Aquest paràmetre especifica el nombre màxim d\'intents permesos per a cada pregunta. Si es respon incorrectament en diverses ocasions i s\'assoleix el valor màxim, es mostrarà la pàgina  següent de la lliçó .';
+$string['maximumnumberofattempts_help'] = 'Aquest paràmetre especifica el nombre màxim d\'intents permesos per a cada pregunta. Si es respon incorrectament en diverses ocasions i s\'assoleix el valor màxim, es mostrarà la pàgina  següent de la lliçó.';
 $string['maximumnumberofattemptsreached'] = 'Heu arribat al nombre màxim d\'intents. Ara passareu a la pàgina següent.';
 $string['mediaclose'] = 'Mostra el botó de tancar';
 $string['mediafile'] = 'Multimèdia enllaçat';
@@ -366,7 +364,7 @@ $string['numberofcorrectanswers'] = 'Nombre de respostes correctes: {$a}';
 $string['numberofcorrectanswersheader'] = 'Nombre de respostes correctes';
 $string['numberofcorrectmatches'] = 'Nombre d\'aparellaments correctes';
 $string['numberofpagestoshow'] = 'Nombre de pàgines per mostrar';
-$string['numberofpagestoshow_help'] = 'Aquest paràmetre especifica el nombre de pàgines que es mostren en una lliçó. Només és aplicable per a les lliçons on les pàgines es mostren en ordre aleatori (quan "Acció després de la resposta correcta" té seleccionada l\'opció  "Mostra una pàgina no vista" o "Mostra una pàgina no contestada"). Si es posa a zero, llavors es mostren totes les pàgines.';
+$string['numberofpagestoshow_help'] = 'Aquest paràmetre especifica el nombre de pàgines que es mostren en una lliçó. Només és aplicable per a les lliçons on les pàgines es mostren en ordre aleatori (quan «Acció després d\'una resposta correcta» té seleccionada l\'opció «Mostra una pàgina no vista» o «Mostra una pàgina no contestada»). Si es posa a zero, llavors es mostren totes les pàgines.';
 $string['numberofpagesviewed'] = 'Nombre de preguntes contestades: {$a}';
 $string['numberofpagesviewedheader'] = 'Nombre de preguntes contestades';
 $string['numberofpagesviewednotice'] = 'Nombre de preguntes contestades: {$a->nquestions}; (n\'hauríeu de contestar com a mínim {$a->minquestions})';
@@ -390,7 +388,7 @@ $string['overrides'] = 'Excepcions';
 $string['overrideuser'] = 'Usuari de l\'excepció';
 $string['overrideusereventname'] = '{$a->lesson} - Excepció';
 $string['overview'] = 'Revisió';
-$string['overview_help'] = 'Una lliçó es composa d\'un cert nombre de pàgines i, opcionalment, de pàgines amb contingut. Una pàgina inclou alguns continguts i en general acaba amb una pregunta. Hi ha un salt associat a cada resposta a la pregunta. El salt pot ser relatiu, com a aquesta pàgina o a la pàgina següent, o absolut, especificant una de les pàgines de la lliçó. Una taula de ramificació és una pàgina que conté un conjunt d\'enllaços a altres pàgines de la lliçó, per exemple, una Taula de contingut.';
+$string['overview_help'] = 'Una lliçó es compon d\'un cert nombre de pàgines i, opcionalment, de pàgines amb contingut. Una pàgina inclou alguns continguts i, en general, acaba amb una pregunta. Hi ha un salt associat a cada resposta a la pregunta. El salt pot ser relatiu, com a aquesta pàgina o a la pàgina següent, o absolut, especificant una de les pàgines de la lliçó. Una pàgina de continguts és una pàgina que conté un conjunt d\'enllaços a altres pàgines de la lliçó, per exemple, una taula de contingut.';
 $string['page'] = 'Pàgina: {$a}';
 $string['pageanswers'] = 'Preguntes de la pàgina';
 $string['pagecontents'] = 'Continguts de la pàgina';

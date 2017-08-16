@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_flickr_public', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['apikey'] = 'Κλειδί API';
 $string['backtosearch'] = 'Επιστροφή στην οθόνη αναζήτησης';
 $string['callbackurl'] = 'Τοποθεσία Callback';
 $string['configplugin'] = 'Ρυθμιση Flickr για το κοινό';
-$string['emailaddress'] = 'Δι/νση Ηλεκτρονικού Ταχυδρομείου';
+$string['emailaddress'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';
 $string['flickr_public:view'] = 'Χρήση του repository Flickr public στο σύστημα επιλογής αρχείων (file picker)';
 $string['fulltext'] = 'Πλήρες κέιμενο';
 $string['information'] = '<div>Λάβετε ένα <a href="http://www.flickr.com/services/api/keys/">Κλειδί API για το Flickr</a> για τον ιστοχώρο Moodle. </div>';

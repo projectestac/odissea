@@ -35,6 +35,10 @@ defined('MOODLE_INTERNAL') || die();
 // Like other files in the db directory this file uses an array.
 // The old class name is the key, the new class name is the value.
 // The array must be called $renamedclasses.
+// TODO MDL-57244 These renamed classes will be removed in 3.6
 $renamedclasses = array(
     'core\progress\null' => 'core\progress\none',
+    'core_search\area\base' => 'core_search\base',
+    'core_search\area\base_mod' => 'core_search\base_mod',
+    'core_search\area\base_activity' => 'core_search\base_activity'
 );

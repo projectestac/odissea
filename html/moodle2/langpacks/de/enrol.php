@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -122,6 +122,9 @@ $string['rolefromcategory'] = '{$a->role} (vererbt vom Kursbereich)';
 $string['rolefrommetacourse'] = '{$a->role} (vererbt aus Kurszuordnung)';
 $string['rolefromsystem'] = '{$a->role} (zugewiesen für die Website)';
 $string['rolefromthiscourse'] = '{$a->role} (zugewiesen in diesem Kurs)';
+$string['sendfromcoursecontact'] = 'Vom Kurskontakt';
+$string['sendfromkeyholder'] = 'Vom Einschreibeschlüssel-Halter';
+$string['sendfromnoreply'] = 'Von der Nicht-Antworten-Adresse';
 $string['startdatetoday'] = 'Heute';
 $string['synced'] = 'synchronisiert';
 $string['testsettings'] = 'Einstellungen prüfen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,8 +55,9 @@ $string['check_values'] = 'Réponses possibles';
 $string['choosefile'] = 'Sélectionner un fichier';
 $string['chosen_feedback_response'] = 'Réponse choisie pour le feedback';
 $string['closebeforeopen'] = 'La date de fin indiquée est antérieure à la date de début.';
-$string['completed'] = 'terminé';
+$string['completed'] = 'Terminé';
 $string['completed_feedbacks'] = 'Réponses envoyées';
+$string['completedon'] = 'Terminé le {$a}';
 $string['complete_the_form'] = 'Répondre aux questions...';
 $string['completionsubmit'] = 'Afficher comme terminé quand l\'utilisateur a envoyé le feedback';
 $string['configallowfullanonymous'] = 'Si ce réglage est activé, les activités feedback sur la page d\'accueil pourront être effectuées par les utilisateurs sans nécessiter d\'authentification.';
@@ -267,6 +268,7 @@ $string['site_after_submit'] = 'Site après remise';
 $string['sort_by_course'] = 'Trier par cours';
 $string['start'] = 'Début';
 $string['started'] = 'Commencé';
+$string['startedon'] = 'Commencé le {$a}';
 $string['stop'] = 'Fin';
 $string['subject'] = 'Sujet';
 $string['switch_group'] = 'Changer de groupe';

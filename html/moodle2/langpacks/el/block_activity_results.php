@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity_results:addinstance'] = 'Προσθήκη νέου μπλοκ αποτελεσμάτων δραστηριότητας';
 $string['bestgrade'] = 'Ο μεγαλύτερος βαθμός:';
 $string['bestgrades'] = 'Οι {$a} μεγαλύτεροι βαθμοί:';
 $string['config_format_percentage'] = 'Ποσοστά';
 $string['config_name_format'] = 'Ιδιωτικότητα αποτελεσμάτων';
+$string['defaultnameoptions'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['worstgrade'] = 'Ο χαμηλότερος βαθμός:';
 $string['worstgrades'] = 'Οι {$a} χαμηλότεροι βαθμοί:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Sie dürfen diesen Beitrag nicht löschen!';
 $string['cannoteditposts'] = 'Sie dürfen keine Beiträge anderer Nutzer/innen ändern!';
 $string['cannotfinddiscussion'] = 'Das Thema konnte im Forum nicht gefunden werden';
 $string['cannotfindfirstpost'] = 'Der erste Beitrag konnte im Forum nicht gefunden werden';
-$string['cannotfindorcreateforum'] = 'Das Ankündigungsforum wurde nicht gefunden oder konnte nicht angelegt werden';
+$string['cannotfindorcreateforum'] = 'Das Forum \'Ankündigungen\' wurde nicht gefunden oder konnte nicht angelegt werden.';
 $string['cannotfindparentpost'] = 'Der erste Beitrag in diesem Thema {$a} konnte nicht gefunden werden';
 $string['cannotmovefromsingleforum'] = 'Das Thema kann nicht aus einem Einzeldiskussionsforum verschoben werden';
 $string['cannotmovenotvisible'] = 'Forum unsichtbar';
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'Das Forum kann nicht abonniert werden (nu
 $string['disallowsubscription'] = 'Abonnenent';
 $string['disallowsubscription_help'] = 'Das Forum ist so eingestellt, dass Sie keine Themen abonnieren können.';
 $string['discussion'] = 'Thema';
+$string['discussionlocked'] = 'Dieses Thema wurde gesperrt, so dass Sie hier nicht weiter antworten können.';
+$string['discussionlockingdisabled'] = 'Themen nicht sperren';
+$string['discussionlockingheader'] = 'Themensperrung';
 $string['discussionmoved'] = 'Dieses Thema wurde verschoben nach \'{$a}\'.';
 $string['discussionmovedpost'] = 'Dieses Thema wurde verschoben nach <a href="{$a->discusshref}">hier</a> ins Forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Thema';
@@ -225,6 +228,7 @@ $string['forum:allowforcesubscribe'] = 'Einschreibung erzwingen zulassen';
 $string['forumauthorhidden'] = 'Autor/in (verborgen)';
 $string['forumblockingalmosttoomanyposts'] = 'Sie erreichen bald die Höchstzahl der zulässigen Beiträge. Sie haben {$a->numposts} Beiträge im Zeitraum {$a->blockperiod} veröffentlicht. Die Grenze ist bei {$a->blockafter} Beiträgen erreicht.';
 $string['forumbodyhidden'] = 'Sie können diesen Beitrag nicht ansehen. Entweder haben Sie selbst in dieser Diskussion noch nichts geschrieben oder die Bearbeitungszeit für den Beitrag läuft noch. Eventuell ist die Diskussion auch noch nicht begonnen oder bereits vorbei.';
+$string['forum:canoverridediscussionlock'] = 'In gesperrten Themen antworten';
 $string['forum:canposttomygroups'] = 'Beiträge an alle Gruppen senden, zu denen eine Person Zugriff hat';
 $string['forum:createattachment'] = 'Anhänge hinzufügen';
 $string['forum:deleteanypost'] = 'Alle Beiträge löschen (jederzeit)';
@@ -269,7 +273,7 @@ $string['generalforums'] = 'Allgemeines Forum';
 $string['hiddenforumpost'] = 'Verborgener Forumsbeitrag';
 $string['inforum'] = 'in {$a}';
 $string['introblog'] = 'Die Beiträge in diesem Forum wurden automatisch aus Teilnehmerblogs des Kurses erstellt, weil die Blogeinträge nicht mehr verfügbar sind';
-$string['intronews'] = 'Ankündigungen und Nachrichten';
+$string['intronews'] = 'Nachrichten und Ankündigungen';
 $string['introsocial'] = 'Offenes Forum ohne Themeneinschränkung';
 $string['introteacher'] = 'Forum für Traineranmerkungen und -diskussionen';
 $string['invalidaccess'] = 'Seitenzugriff war nicht korrekt';
@@ -281,11 +285,19 @@ $string['invalidparentpostid'] = 'Vorgänger Beitrags-ID war ungültig.';
 $string['invalidpostid'] = 'Ungültige Beitrags-ID {$a}';
 $string['lastpost'] = 'Letzter Beitrag';
 $string['learningforums'] = 'Lernforen';
+$string['lockdiscussionafter'] = 'Themen bei längerer Inaktivität sperren';
+$string['lockdiscussionafter_help'] = 'Themen können automatisch gesperrt werden, wenn eine angegebene Zeit seit der letzten Antwort überschritten ist.
+
+Nutzer/innen mit dem Recht, in gesperrten Themen zu antworten, können ein Thema erneut öffnen und dort antworten.';
 $string['longpost'] = 'Langer Beitrag';
 $string['mailnow'] = 'Mitteilung ohne Verzögerung senden';
 $string['manydiscussions'] = 'Themen pro Seite';
 $string['markalldread'] = 'Alle Beiträge dieser Diskussion als gelesen markieren';
 $string['markallread'] = 'Alle Beiträge in diesem Forum als gelesen markieren';
+$string['markasreadonnotification'] = 'Beim Senden von Mitteilungen zum Forum';
+$string['markasreadonnotification_help'] = 'Wenn Sie über einem Forumseintrag benachrichtigt werden, können Sie wählen, ob dies den Beitrag im Forumstracking als gelesen markieren soll.';
+$string['markasreadonnotificationno'] = 'Markiere den Post nicht als gelesen';
+$string['markasreadonnotificationyes'] = 'Markiere den Post als gelesen';
 $string['markread'] = 'Als gelesen markieren';
 $string['markreadbutton'] = 'Als gelesen<br />markieren';
 $string['markunread'] = 'Als ungelesen markieren';
@@ -511,6 +523,7 @@ $string['trackingtype_help'] = 'Wenn diese Option aktiviert ist, sehen Teilnehme
 * Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür einen Eintrag in der Forumsadministration, wenn sie vorher das Forumstracking in ihren persönlichen Einstellungen aktiviert haben.
 * Verpflichtend - Die Markierung ist immer an, egal ob Teilnehmer/innen das Forumstracking in ihren persönlichen Einstellungen aktiviert haben oder nicht.
 * Aus - Die Markierung ist immer aus. Gelesene und ungelesene Beiträge werden gleich behandelt.';
+$string['trackreadposts_header'] = 'Forumstracking';
 $string['unread'] = 'Ungelesen';
 $string['unreadposts'] = 'Ungelesene Beiträge';
 $string['unreadpostsnumber'] = '{$a} ungelesene Beiträge';
@@ -529,6 +542,7 @@ $string['unsubscribelink'] = 'Aus diesem Forum abmelden: {$a}';
 $string['unsubscribeshort'] = 'Abmelden';
 $string['usermarksread'] = '\'Gelesen\' manuell markieren';
 $string['viewalldiscussions'] = 'Alle Themen anzeigen';
+$string['viewthediscussion'] = 'Thema anzeigen';
 $string['warnafter'] = 'Warnung';
 $string['warnafter_help'] = 'Vor dem Erreichen der Beitragshöchstzahl innerhalb des Zeitfensters können die Nutzer/innen gewarnt werden. Die Einstellung legt fest, nach wie vielen Beiträgen die Warnung gezeigt wird. Nutzer/innen mit der Berechtigung mod/forum:postwithoutthrottling sind von einer Sperre ausgenommen.';
 $string['warnformorepost'] = 'Warnung! Es gibt mehr als eine Diskussion in diesem Forum. Es wird die Aktuellste genutzt.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'theme_more', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,7 +62,7 @@ $string['invertdesc'] = 'ページトップのナビゲーションバーのテ�
 $string['linkcolor'] = 'リンク色';
 $string['linkcolor_desc'] = 'リンクの色です。';
 $string['logo'] = 'ロゴ';
-$string['logodesc'] = 'ロゴはフロントページおよびログインページのヘッダ内に表示されます。<br />あなたのロゴの高さが75px以上の場合、以下のカスタムCSSボックスに「div.logo {height: 100px;}」を追加してください。高さが100px以外の場合、それに応じて修正されます。';
+$string['logodesc'] = 'ロゴはフロントページおよびログインページのヘッダ内に表示されます。<br />あなたのロゴの高さが75px以上の場合、以下のカスタムCSSボックスに「div.logo {height: 100px;}」を追加してください。高さが100px以外の場合、それに応じて修正されます。ここでロゴが追加されない場合、「アピアランス > ブランディング」のロゴが使用されます。';
 $string['pluginname'] = 'More';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';
@@ -72,6 +72,6 @@ $string['sitelogo'] = 'サイトロゴ';
 $string['sitename'] = 'スモールロゴと共にサイト名を表示する';
 $string['sitenamedesc'] = 'スモールロゴがない場合、サイト名は常にナビゲーションバーに表示されます。スモールロゴが設定された場合、サイト名と一緒またはサイト名なしに表示することができます。';
 $string['smalllogo'] = 'スモールロゴ';
-$string['smalllogodesc'] = 'ナビゲーションバーにスモールロゴが表示されます。フロントページおよびログインページのヘッダロゴがある場合、それらのページではスモールロゴは表示されません。';
+$string['smalllogodesc'] = 'ナビゲーションバーにスモールロゴが表示されます。フロントページおよびログインページのヘッダロゴがある場合、それらのページではスモールロゴは表示されません。ここでロゴが追加されない場合、「アピアランス > ブランディング」のロゴが使用されます。';
 $string['textcolor'] = 'テキスト色';
 $string['textcolor_desc'] = 'テキスト色です。';

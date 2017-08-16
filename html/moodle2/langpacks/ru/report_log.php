@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_log', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'Все источники';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Компонент';
 $string['eventcontext'] = 'Контекст события';
 $string['eventloggedas'] = '{$a->realusername} под именем {$a->asusername}';
@@ -36,9 +38,14 @@ $string['logsformat'] = 'Формат';
 $string['log:view'] = 'Просматривать журнал событий курса';
 $string['log:viewtoday'] = 'Просматривать записи журнала событий за сегодня';
 $string['nologreaderenabled'] = 'Нет доступных журналов событий';
+$string['origin'] = 'Источник';
+$string['other'] = 'Другое';
 $string['page'] = 'Страница {$a}';
 $string['page-report-log-index'] = 'Отчет о событиях курса';
 $string['page-report-log-user'] = 'Отчет о событиях участника курса';
 $string['page-report-log-x'] = 'Отчет о любых событиях';
 $string['pluginname'] = 'Журнал событий';
+$string['restore'] = 'Восстановить';
 $string['selectlogreader'] = 'Выберите журнал событий';
+$string['web'] = 'Веб';
+$string['ws'] = 'Веб-служба';

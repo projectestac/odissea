@@ -62,7 +62,7 @@ function message_notifier_get_badge(){
     $output .= '<span class="num_overlay" id="message_count" '.$extracss.'>'.$num_messages.'</span>';
     $output .= '</div>';
     $output .= '<ul id="message_contents" class="dropdown-menu">';
-    $output .= '<li class="viewall"><a href="'.$CFG->wwwroot.'/message/index.php">'.get_string('messagehistoryfull','message').'</a></li>';
+    $output .= '<li class="viewall"><a href="'.$CFG->wwwroot.'/message/index.php">'.get_string('messagehistoryfull','local_agora').'</a></li>';
     $output .= '</ul>';
     $output .= '</div>';
 

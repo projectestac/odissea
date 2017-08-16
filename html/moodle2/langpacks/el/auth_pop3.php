@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pop3', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_pop3', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_pop3
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_pop3changepasswordurl_key'] = 'Password-change URL';
 $string['auth_pop3description'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν POP3 server για να ελέγξει εάν ένα δοσμένο όνομα χρήστη και κωδικός πρόσβασης είναι έγκυρα.';
 $string['auth_pop3host'] = 'Η διεύθυνση του POP3 εξυπηρετητή. Χρησιμοποιήστε το IP νούμερο και όχι το DNS όνομα.';
-$string['auth_pop3host_key'] = 'Host';
+$string['auth_pop3host_key'] = 'Διακομιστής φιλοξενίας';
 $string['auth_pop3mailbox'] = 'Όνομα του mailbox στο οποίο θα δοκιμαστεί σύνδεση (συνήθως INBOX)';
 $string['auth_pop3mailbox_key'] = 'Mailbox';
-$string['auth_pop3notinstalled'] = 'Cannot use POP3 authentication. The PHP IMAP module is not installed.';
+$string['auth_pop3notinstalled'] = 'Αδυναμία χρήσης αυθεντικοποίησης POP3. Το άρθρωμα PHP IMAP δεν έχει εγκατασταθεί.';
 $string['auth_pop3port'] = 'Θύρα server (η 119 χρησιμοποιείται πιο συχνά)';
 $string['auth_pop3port_key'] = 'Port';
 $string['auth_pop3type'] = 'Ο τύπος του server. Εάν ο server σας χρησιμοποιεί ασφάλεια μέσω πιστοποιητικών,επιλέξτε  pop3cert.';

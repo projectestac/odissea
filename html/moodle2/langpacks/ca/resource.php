@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'resource', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,7 +88,7 @@ $string['page-mod-resource-x'] = 'Qualsevol pàgina del mòdul de fitxers';
 $string['pluginadministration'] = 'Administració del mòdul del fitxer';
 $string['pluginname'] = 'Fitxer';
 $string['popupheight'] = 'Alçada de la finestra emergent (en píxels)';
-$string['popupheightexplain'] = 'Especifica l\'alçada per defecte de les finestres emergents.';
+$string['popupheightexplain'] = 'Especifica l\'alçària per defecte de les finestres emergents.';
 $string['popupresource'] = 'Aquest recurs ha d\'aparèixer en una finestra emergent.';
 $string['popupresourcelink'] = 'Si no, feu clic aquí: {$a}';
 $string['popupwidth'] = 'Amplària de la finestra emergent (en píxels)';

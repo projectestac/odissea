@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['authinstructions'] = 'Deixe isto en branco para que as instrucións de 
 $string['auth_invalidnewemailkey'] = 'Erro: Si está tentando confirmar un cambio de enderezo de correo. debe ter cometido un error ao copiar o URL que lle enviamos por correo. Copie a ligazón e tenteo de novo.';
 $string['authloginviaemail'] = 'Permitir acceso por correo electrónico';
 $string['authloginviaemail_desc'] = 'Permitir aos usuarios usar tanto o nome de usuario coma o enderezo de correo (se é único) para acceder.';
-$string['auth_multiplehosts'] = 'Pode especificar múltiplos servidores (p.ex. servidor1.com;servidor2.com;servidor3.com) ou (p.ex. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
+$string['auth_multiplehosts'] = 'Pode especificar múltiples servidores (p.ex. servidor1.com;servidor2.com;servidor3.com) ou (p.ex. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'O método de de autenticación {$a} non está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Fixo máis intentos dos permitidos para actualizar e seu enderezo de correo. A súa solicitude de actualización foi cancelada.';
 $string['auth_passwordisexpired'] = 'O seu contrasinal caducou. Quere cambiar agora o seu contrasinal?';
@@ -119,7 +119,7 @@ $string['informpasswordpolicy'] = 'O contrasinal debería ter {$a}';
 $string['instructions'] = 'Instrucións';
 $string['internal'] = 'Interno';
 $string['limitconcurrentlogins'] = 'Limitar os accesos concurrentes';
-$string['limitconcurrentlogins_desc'] = 'Se se activa, limitarase o número de accesos concorrentes desde o navegador de cada usuario. A sesión máis vella elimínase ao chegar ao límite, así que teña en conta que os usuarios poden perder o traballo que non teñan gardado. Esta opción non é compatible cos engadidos de acceso único (SSO).';
+$string['limitconcurrentlogins_desc'] = 'Se se activa, limitarase o número de accesos concurrentes desde o navegador de cada usuario. A sesión máis vella elimínase ao chegar ao límite, así que teña en conta que os usuarios poden perder traballo que non teñan gardado. Esta opción non é compatible cos engadidos de acceso único (SSO).';
 $string['locked'] = 'Bloqueado';
 $string['md5'] = 'Cifrado (hash) MD5';
 $string['nopasswordchange'] = 'Non é posíbel cambiar o contrasinal';
@@ -132,7 +132,7 @@ $string['passwordhandling'] = 'Xestión do campo do contrasinal';
 $string['plaintext'] = 'Texto simple';
 $string['pluginnotenabled'] = 'o engadido de autenticación «{$a}» non está activado.';
 $string['pluginnotinstalled'] = 'o engadido de autenticación «{$a}» non está instalado.';
-$string['potentialidps'] = 'Acceda empregando a súa conta en:';
+$string['potentialidps'] = 'Acceda empregando a súa conte en:';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'O CAPTCHA empregase para impedir abusos de programas automáticos. Simplemente escriba as palabras na caixa, en orde e separadas por un espazo.
 

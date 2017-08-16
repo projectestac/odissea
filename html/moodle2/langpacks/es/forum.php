@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -136,6 +136,9 @@ $string['disallowsubscribeteacher'] = 'No se permiten suscripciones (excepto par
 $string['disallowsubscription'] = 'Suscripción';
 $string['disallowsubscription_help'] = 'Este foro ha sido configurado de tal forma que usted no puede suscribirse a los debates.';
 $string['discussion'] = 'Tema';
+$string['discussionlocked'] = 'Este tema ha sido bloqueado así que no podrás responder en el.';
+$string['discussionlockingdisabled'] = 'No bloquear discusiones';
+$string['discussionlockingheader'] = 'Bloqueando discusión';
 $string['discussionmoved'] = 'Este tema se ha movido a \'{$a}\'.';
 $string['discussionmovedpost'] = 'Esta discusión ha sido trasladada a <a href="{$a->discusshref}">aquí</a> en el foro <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Denominación';
@@ -226,6 +229,7 @@ $string['forum:allowforcesubscribe'] = 'Permitir la suscripción forzosa.';
 $string['forumauthorhidden'] = 'Autor (oculto)';
 $string['forumblockingalmosttoomanyposts'] = 'Usted se está aproximando al límite permitido de mensajes. Ha enviado {$a->numposts} mensajes en el último {$a->blockperiod} y el límite está en {$a->blockafter} mensajes.';
 $string['forumbodyhidden'] = 'Usted no puede ver este mensaje, probablemente debido a que aún no ha enviado mensajes a esta discusión, a que el margen de tiempo de edición no ha pasado todavía, a que el debate todavía no ha comentado o a que el debate ya ha expirado.';
+$string['forum:canoverridediscussionlock'] = 'Contestar a discusiones bloqueadas';
 $string['forum:canposttomygroups'] = 'Puede publicar en todos los grupos en los que tiene acceso';
 $string['forum:createattachment'] = 'Crear archivos adjuntos';
 $string['forum:deleteanypost'] = 'Eliminar cualquier mensaje (en cualquier momento)';
@@ -286,11 +290,14 @@ $string['invalidparentpostid'] = 'La ID del mensaje padre es incorrecta';
 $string['invalidpostid'] = 'ID de mensaje no válido - {$a}';
 $string['lastpost'] = 'Último mensaje';
 $string['learningforums'] = 'Foros de aprendizaje';
+$string['lockdiscussionafter'] = 'Bloquear discusiones después de un tiempo de inactividad';
 $string['longpost'] = 'Mensaje largo';
 $string['mailnow'] = 'Enviar notificaciones del tema sin tiempo de espera para edición';
 $string['manydiscussions'] = 'Debates por página';
 $string['markalldread'] = 'Marcar como leídos todos los mensajes de este debate.';
 $string['markallread'] = 'Marcar como leídos todos los mensajes de este foro.';
+$string['markasreadonnotificationno'] = 'No marcar el hilo como leído';
+$string['markasreadonnotificationyes'] = 'Marcar el hilo como leído';
 $string['markread'] = 'Marcar como leído';
 $string['markreadbutton'] = 'Marcar<br />leídos';
 $string['markunread'] = 'Marcar como no leído';
@@ -529,6 +536,7 @@ $string['trackingtype_help'] = 'El seguimiento de lectura permite a los particip
 Si está configurado como opcional, los participantes pueden elegir si habilitar o no el seguimiento a través de un enlace en el bloque de administración. (Los usuarios también deben habilitar el seguimiento en sus preferencias del foro).
 
 Si \'Permitir forzar seguimiento de lectura\' está habilitado en la administración del sitio, entonces una opción más está disponible: forzado. Esto significa que, más allá de las preferencias del foro del usuario, el seguimiento está siempre habilitado.';
+$string['trackreadposts_header'] = 'Seguimiento del foro';
 $string['unread'] = 'No leído';
 $string['unreadposts'] = 'Mensajes no leídos';
 $string['unreadpostsnumber'] = '{$a} mensajes no leídos';
@@ -547,6 +555,7 @@ $string['unsubscribelink'] = 'Darse de baja del foro: {$a}';
 $string['unsubscribeshort'] = 'Dar de baja';
 $string['usermarksread'] = 'Marcar lectura de mensaje manual';
 $string['viewalldiscussions'] = 'Ver todos los debates';
+$string['viewthediscussion'] = 'Ver la discusión';
 $string['warnafter'] = 'Umbral de mensajes para advertencia';
 $string['warnafter_help'] = 'Se puede avisar a los estudiante de que se acercan al máximo número de aportaciones permitidas en el periodo de tiempo determinado. Este parámetro especifica después de cuántas aportaciones se les debe advertir. Los usuarios con el permiso \'moodle/forum:postwitho están exentos de esta limitación.';
 $string['warnformorepost'] = '¡Atención!. Hay más de una discusión en este foro - se usará la más reciente';

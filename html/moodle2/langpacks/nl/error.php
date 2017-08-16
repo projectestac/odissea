@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'error', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = 'Activiteit verwijderen bezig ...';
 $string['alreadyloggedin'] = 'Je bent al aangemeld als {$a}, je moet afmelden voor je kunt aanmelden als een andere gebruiker.';
 $string['authnotexisting'] = 'De authorisatieplugin bestaat niet';
 $string['backupcontainexternal'] = 'Het back-upbestand bevat externe Moodle Hosts die lokaal niet geconfigureerd zijn.';
@@ -176,6 +177,7 @@ $string['categorynamerequired'] = 'Categorienaam is vereist';
 $string['categorytoolong'] = 'Categorienaam te lang';
 $string['commentmisconf'] = 'Commentaar ID is slecht geconfigureerd';
 $string['componentisuptodate'] = 'Component is up-to-date';
+$string['confirmationnotenabled'] = 'Gebruiker bevestigen is niet ingeschakeld op deze site';
 $string['confirmsesskeybad'] = 'Je sessiesleutel om deze actie uit te voeren kon niet bevestigd worden. Deze beveiligingsfunctie verhindert dat er per ongeluk of met verkeerde bedoelingen belangrijke functies in jouw naam uitgevoerd kunnen worden. Bedenk goed of je deze opdracht wel echt wou uitvoeren.';
 $string['couldnotassignrole'] = 'Er gebeurde een ernstige maar niet gespecifieerde fout tijdens het proberen toewijzen van een rol aan jou.';
 $string['couldnotupdatenoexistinguser'] = 'Kan deze gebruiker niet updaten - gebruiker bestaat niet';
@@ -227,6 +229,7 @@ $string['duplicaterolename'] = 'Er is al een rol met die naam!';
 $string['duplicateroleshortname'] = 'Er is al een rol met deze korte naam!';
 $string['duplicateusername'] = 'Gebruikersnaam bestaat al - record genegeerd';
 $string['emailfail'] = 'E-mailen mislukt';
+$string['enddatebeforestartdate'] = 'De cursuseinddatum moet later zijn de startdatum.';
 $string['error'] = 'Er is een fout opgetreden';
 $string['errorcleaningdirectory'] = 'Fout bij het opkuisen van map "{$a}"';
 $string['errorcopyingfiles'] = 'Fout bij het kopiëren van bestanden';
@@ -442,6 +445,7 @@ $string['nopermissiontoviewletergrade'] = 'Geen rechten om letterbeoordelingen t
 $string['nopermissiontoviewpage'] = 'Je hebt niet het recht om deze pagina te bekijken';
 $string['nosite'] = 'Kon geen topniveau cursus vinden';
 $string['nositeid'] = 'Geen site ID';
+$string['nostartdatenoenddate'] = 'Een cursuseinddatum kan alleen worden ingesteld als een begindatum ook is ingesteld.';
 $string['nostatstodisplay'] = 'Er zijn geen gegevens om te tonen.';
 $string['notallowedtoupdateprefremotely'] = 'Je mag deze gebruikersvoorkeuren niet van op afstand updaten';
 $string['notavailable'] = 'Dat is nu niet beschikbaar';
@@ -468,6 +472,7 @@ $string['querystringcannotbeempty'] = 'De query string kan niet leeg zijn.';
 $string['redirecterrordetected'] = 'Niet-ondersteunde verwijzing gevonden. De uitvoering van het script is gestopt.';
 $string['refoundto'] = 'Kan teruggegeven worden aan {$a}';
 $string['refoundtoorigi'] = 'Teruggegeven op oorspronkelijke hoeveelheid: {$a}';
+$string['registrationdisabled'] = 'Registratie is uitgeschakeld op deze site';
 $string['remotedownloaderror'] = '<p>De download van de component naar jouw server is mislukt, controleer je proxy-instellingen, de PHP cURL-extentie wordt ten zeerste aanbevolen te installeren.</p><p>Je moet je <a href="{$a->url}">{$a->url}</a> bestand manueel downloaden , kopiëren naar de map "{$a->dest}" op je server en het daar unzippen.</p>';
 $string['remotedownloadnotallowed'] = 'Het downloaden van componenten naar je server is niet toegelaten (allow_url_fopen is uitgeschakeld)<br /><br />Je moet het <a href="{$a->url}">{$a->url}</a>bestand manueel downloaden en het kopiëren naar "{$a->dest}" op je server en het daar unzippen.';
 $string['reportnotavailable'] = 'Dit type rapport is alleen maar beschikbaar voor de site-cursus';
@@ -495,6 +500,7 @@ $string['sessionipnomatch'] = 'Sorry, maar je IP-adres is gewijzigd sinds je aan
 $string['sessionipnomatch2'] = '<p>Je IP-nummer is blijkbaar gewijzigd sinds je login. Deze beveiligingsfunctie verhindert dat crackers je identiteit stelen terwijl je aangemeld bent bij deze site. Je kunt deze melding zien als je draadloze netwerken gebruikt of als je schakelt tussen verschillende netwerken. Vraag de sitebeheerder om hulp.</p><p>Als je wil verder gaan, klik dan op F5 om deze pagina te verversen.</p>';
 $string['sessionwaiterr'] = 'Time out tijdens het wachten op sessie slot.<br />. Wacht tot je huidige aanvragen afgelopen zijn en probeer later opnieuw.';
 $string['shortnametaken'] = 'Deze korte naam wordt al gebruikt voor een andere cursus ({$a})';
+$string['sitepolicynotagreed'] = 'Niet eens met het website-beleid: <a href="{$a}" Klik hier om het website beleid te openen </a>.';
 $string['socksnotsupported'] = 'SOCKS5-proxy wordt niet ondersteund in PHP4';
 $string['spellcheckernotconf'] = 'Spellingscontrole niet geconfigureerd';
 $string['sslonlyaccess'] = 'Voor veiligheidsredenen zijn enkel https-connecties toegelaten.';
@@ -562,6 +568,7 @@ $string['usernotdeletedadmin'] = 'Gebruiker niet verwijderd - kan geen beheerder
 $string['usernotdeletederror'] = 'Gebruiker niet verwijderd - onbekende fout';
 $string['usernotdeletedmissing'] = 'Gebruiker niet verwijderd - kon gebruikersnaam niet vinden.';
 $string['usernotdeletedoff'] = 'Gebruiker niet verwijderd - verwijderen niet toegestaan.';
+$string['usernotfullysetup'] = 'Gebruiker niet volledig ingesteld';
 $string['usernotincourse'] = 'Deze gebruiker zit niet in deze cursus!';
 $string['usernotrenamedadmin'] = 'Kan beheerdersaccounts niet hernoemen';
 $string['usernotrenamedexists'] = 'Gebruiker niet hernoemd -- de nieuwe gebruikersnaam bestaat al.';

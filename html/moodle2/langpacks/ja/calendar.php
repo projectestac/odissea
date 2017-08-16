@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'calendar', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,8 +105,14 @@ $string['eventsdeleted'] = '削除済みイベント';
 $string['eventsfor'] = '{$a} イベント';
 $string['eventsimported'] = 'インポート済みイベント: {$a}';
 $string['eventskey'] = 'イベントキー';
+$string['eventspersonal'] = 'マイパーソナルイベント';
 $string['eventsrelatedtocourses'] = 'コースに関連したイベント';
+$string['eventsrelatedtogroups'] = 'グループ関連イベント';
 $string['eventstarttime'] = '開始日時';
+$string['eventstoexport'] = 'エクスポートするイベント';
+$string['eventsubscriptioncreated'] = 'カレンダー購読が作成されました。';
+$string['eventsubscriptiondeleted'] = 'カレンダー購読が削除されました。';
+$string['eventsubscriptionupdated'] = 'カレンダー購読が更新されました。';
 $string['eventsupdated'] = '更新済みイベント: {$a}';
 $string['eventtime'] = '時間';
 $string['eventview'] = 'イベント詳細';
@@ -176,7 +182,7 @@ $string['quickdownloadcalendar'] = 'クイックダウンロード / カレン�
 $string['recentupcoming'] = '最近および次の60日';
 $string['repeatedevents'] = '繰り返しイベント';
 $string['repeateditall'] = '変更内容を他の {$a} 件の繰り返しイベントに適用する';
-$string['repeateditthis'] = '変更内容をこのイベントのみに適用する。';
+$string['repeateditthis'] = '変更内容をこのイベントにのみ適用する。';
 $string['repeatevent'] = 'このイベントを繰り返す';
 $string['repeatnone'] = '繰り返しなし';
 $string['repeatweeksl'] = '毎週、作成イベント数';
@@ -201,6 +207,7 @@ $string['thu'] = '木';
 $string['thursday'] = '木曜日';
 $string['timeformat_12'] = '12時間 (午前/午後)';
 $string['timeformat_24'] = '24時間';
+$string['timeperiod'] = '期間';
 $string['today'] = '今日';
 $string['tomorrow'] = '明日';
 $string['tt_deleteevent'] = 'イベントを削除する';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_log', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'All sources';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Component';
 $string['eventcontext'] = 'Event context';
 $string['eventloggedas'] = '{$a->realusername} as {$a->asusername}';
@@ -36,9 +38,14 @@ $string['logsformat'] = 'Logs format';
 $string['log:view'] = 'View course logs';
 $string['log:viewtoday'] = 'View today\'s logs';
 $string['nologreaderenabled'] = 'No log reader enabled';
+$string['origin'] = 'Source';
+$string['other'] = 'Other';
 $string['page'] = 'Page {$a}';
 $string['page-report-log-index'] = 'Course log report';
 $string['page-report-log-user'] = 'User course log report';
 $string['page-report-log-x'] = 'Any log report';
 $string['pluginname'] = 'Logs';
+$string['restore'] = 'Restore';
 $string['selectlogreader'] = 'Select log reader';
+$string['web'] = 'Web';
+$string['ws'] = 'Web service';

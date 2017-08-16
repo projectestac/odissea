@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addtodock'] = 'Verplaats dit naar het paneel';
 $string['anypagematchingtheabove'] = 'Elke pagina die met bovenstaande overeenkomt';
 $string['appearsinsubcontexts'] = 'Verschijnt in subcontexten';
 $string['assignrolesinblock'] = 'Wijs rollen toe in blok {$a}';
+$string['blocksdrawertoggle'] = 'Toon/verberg blokkenlijst';
 $string['blocksettings'] = 'Blokinstellingen';
 $string['bracketfirst'] = '{$a} (eerst)';
 $string['bracketlast'] = '{$a} (laatst)';
@@ -54,6 +55,7 @@ $string['moveblockafter'] = 'Zet het blok na blok {$a}';
 $string['moveblockbefore'] = 'Zet het blok voor blok {$a}';
 $string['moveblockinregion'] = 'Verplaats blok naar regio {$a}';
 $string['movingthisblockcancel'] = 'Dit blok aan het verplaatsen ({$a})';
+$string['myblocks'] = 'Mijn blokken';
 $string['onthispage'] = 'Op deze pagina';
 $string['pagetypes'] = 'Paginatypes';
 $string['pagetypewarning'] = 'Het vorige paginatype kan niet meer geselecteerd worden. Kies het meest geschikte type hieronder.';

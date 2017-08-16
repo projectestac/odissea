@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,12 @@ $string['auth_fieldlock'] = 'Balorea blokeatu';
 $string['auth_fieldlock_expl'] = '<p><b>Balorea blokeatu:</b> Ezarriz gero, Moodle-ko erabiltzaile eta kudeatzaileek ezingo dute eremua zuzenean editatu. Aukeratu hau hautatu datu horiek kanpoko autentifikazio-sisteman badituzu. </p>';
 $string['auth_fieldlocks'] = 'Erabiltzaile-eremuak blokeatu';
 $string['auth_fieldlocks_help'] = '<p>Erabiltzaileen datu-eremuak blokea ditzakezu, kudeatzaileek datuok eskuz mantentzen dituzten guneetan bereziki erabilgarria gertatzen dena, erabiltzaileen erregistroak editatuz edo \'Erabiltzaileak igo\' aplikazioaren bidez. Moodle-k behar dituen eremuak blokeatzen badituzu, erabiltzaile-kontuak sortzean datu horiek ematen dituzula ziurtatu; bestela, kontuak ezingo dira erabili.</p><p>Pentsa ezazu ea \'Hutsik egotekotan desblokeatu\' aukera aktibatu behar duzun arazo hori ebitatzeko.</p>';
-$string['authinstructions'] = 'Utzi eremu hau hutsik saio-hasiera pantailan berezko erabiltzaileentzako argibideak erakusteko. Zure erabiltzaileentzako saio-hasiera argibideak egokitu nahi badituzu, idatz itzazu hemen.';
+$string['authinstructions'] = 'Utzi eremu hau hutsik saio-hasiera pantailan berezko erabiltzaileentzako argibideak erakusteko. Zure erabiltzaileentzako saio-hasiera argibideak egokitu nahi badituzu, idatzi itzazu hemen.';
 $string['auth_invalidnewemailkey'] = 'Errorea: e-posta helbidea aldatzea baieztatu nahian ari bazara, nahastu egingo zinen zure e-postara bidali dugun URL-a kopiatzean. Mesedez, kopiatu helbidea eta saiatu berriz.';
 $string['auth_multiplehosts'] = 'Ostalari anitzak zehaz daitezke (ad. ostalari1.com;ostalari2.com;ostalari3.com) edo (edo a. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
+$string['auth_notconfigured'] = '{$a} autentifikazio-metodoa ez dago konfiguratuta.';
 $string['auth_outofnewemailupdateattempts'] = 'Zure e-posta helbidea eguneratzeko baimenduta dauden saiakerak agortuko dituzu. Bertan behera utzi da zure eguneratzeko eskaria.';
-$string['auth_passwordisexpired'] = 'Zure pasahitza iraungita dago. Pasahitza orain aldatu nahi al duzu?';
+$string['auth_passwordisexpired'] = 'Zure pasahitza iraungita dago. Mesedez aldatu ezazu orain.';
 $string['auth_passwordwillexpire'] = 'Zure pasahitza {$a} egun barru iraungiko da. Pasahitza orain aldatu nahi duzu?';
 $string['auth_remove_delete'] = 'Osorik ezabatu';
 $string['auth_remove_keep'] = 'Barruan gorde';
@@ -53,7 +54,7 @@ $string['auth_remove_suspend'] = 'Barruan eten';
 $string['auth_remove_user_key'] = 'Kanpoko erabiltzailea ezabatuta';
 $string['auth_sync_script'] = 'Erabiltzaile-kontuaren sinkronizazioa';
 $string['auth_updatelocal'] = 'Datu lokalak eguneratu';
-$string['auth_updatelocal_expl'] = '<p><b>Datu lokalak eguneratu:</b> Aktibatuta badago, eremua eguneratu behar da (kanpoko autentikazioz) erabiltzailea sartu edo erabiltzaileen sinkronizazioa gertatzen den bakoitzean. Modu lokalean eguneratu beharreko eremuak blokeatu beharko lirateke.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Datu lokalak eguneratu:</b> Aktibatuta badago, eremua eguneratuko da (kanpoko autentikazioz) erabiltzailea sartu edo erabiltzaileen sinkronizazioa gertatzen den bakoitzean. Modu lokalean eguneratu beharreko eremuak blokeatu beharko lirateke.</p>';
 $string['auth_updateremote'] = 'Kanpoko datuak eguneratu';
 $string['auth_updateremote_expl'] = '<p><b>Kanpoko datuak eguneratu:</b> Aktibatuta badago, kanpoko eguneratu egingo da erabiltzailearen erregistroa eguneratzen denean. eremuak editatu ahal izateko besblokeatuta egon behar dira.</p>';
 $string['auth_updateremote_ldap'] = '<p><b>Oharra:</b> LDAP kanpoko datuen eguneratzeak \'binddn\' eta \'bindpw\' baloreak ezartzeko eskatzen du erabiltzaile-erregistro guztien edizio-baimena duen erabiltzaile batentzat. Oraingoz, honek ez ditu balio anitzeko atributuak babesten, eta soberako baloreak ezabatuko ditu eguneratzean zehar. </p>';
@@ -74,6 +75,8 @@ $string['emailupdate'] = 'Eguneratu e-posta helbidea';
 $string['emailupdatemessage'] = '{$a->fullname} agurgarria,
 
 Zure erabiltzaile kontuko e-posta helbidea aldatzeko eskaria egin duzu {$a->site}-n. Mesedez, ireki ondorengo URL-a zure nabigatzailean aldaketa baieztatzeko.
+
+Edozein zalantza izanez gero mesedez laguntza eskatu hemen: : {$a->supportemail}
 
 {$a->url}';
 $string['emailupdatesuccess'] = '<em>{$a->fullname}</em> erabiltzailearean e-posta helbidea ondo eguneratu da honetara: <em>{$a->email}</em>';
@@ -135,6 +138,8 @@ $string['stdchangepassword'] = 'Pasahitza aldatzeko orri estandarra erabili.';
 $string['stdchangepassword_expl'] = 'Kanpoko autentifikazio-sistemak Moodle-n pasahitz aldaketa ahalbidetzen badu,  aukera ezazu BAI. Ezarpen honek \'Pasahitza aldatzeko URLa\' gainditzen du.';
 $string['stdchangepassword_explldap'] = 'OHARRA: LDAP SSL zifratze-tunel baten gainean erabiltzea aholkatzen da (ldaps://) LDAP zerbitzaria urrutikoa bada.';
 $string['suspended'] = 'Etendako kontua';
+$string['testsettings'] = 'Probatu ezarpenak';
+$string['testsettingsheading'] = 'Probatu autentifikazio-ezarpenak - {$a}';
 $string['unlocked'] = 'Desblokeatuta';
 $string['unlockedifempty'] = 'Desblokeatua hutsik badago';
 $string['update_never'] = 'Inoiz ez';

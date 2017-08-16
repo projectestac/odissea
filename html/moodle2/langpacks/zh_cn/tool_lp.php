@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lp', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['competenciesmostoftennotproficientincourse'] = '在这门课程中你�
 $string['competencyframework'] = '能力框架';
 $string['competencyframeworkcreated'] = '能力框架已创建。';
 $string['competencyframeworks'] = '能力框架';
+$string['competencyframeworksrepository'] = '能力框架库';
 $string['competencyframeworkupdated'] = '能力框架已更新。';
 $string['competencyoutcome_complete'] = '标记为完成';
 $string['configurecoursecompetencysettings'] = '设置课程能力';

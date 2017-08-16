@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['activate'] = 'Activar o acceso';
 $string['activatesuccess'] = 'O acceso ás distincións activouse correctamente.';
 $string['addbadgecriteria'] = 'Engadir criterios para distinción';
 $string['addcourse'] = 'Engadir cursos';
-$string['addcourse_help'] = 'Seleccionar todos os curso que deberían engadirse a este requirimento de distinción. Manteña premida a tecla CTRL para seleccionar múltiplos elementos.';
+$string['addcourse_help'] = 'Seleccionar todos os curso que deberían engadirse a este requirimento de distinción. Manteña premida a tecla CTRL para seleccionar múltiples elementos.';
 $string['addcriteria'] = 'Engadir criterios';
 $string['addcriteriatext'] = 'Para comezar a engadir criterios, seleccione unha das opcións do menú despregábel.';
 $string['addtobackpack'] = 'Engadir á mochila';

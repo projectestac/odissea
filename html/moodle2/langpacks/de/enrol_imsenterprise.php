@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,10 @@ $string['aftersaving...'] = 'Nachdem Sie die Einstellungen gespeichert haben, k�
 $string['allowunenrol'] = 'IMS-Datei das <strong>Löschen</string> von Teilnehmer/innen bzw. Trainer/innen erlauben';
 $string['allowunenrol_desc'] = 'Wenn diese Option aktiviert ist, werden Kurseineinschreibungen aufgehoben, wenn dies in der IMS-Enterprise-Datei eingetragen ist. ';
 $string['basicsettings'] = 'Grundeinstellungen';
+$string['categoryidnumber'] = 'Kategorie-ID-Nummer zulassen';
+$string['categoryidnumber_desc'] = 'Bei Aktivierung wird IMS Enterprise Kategorie mit ID-Nummer erzeugen';
+$string['categoryseparator'] = 'Trennzeichen für Kategorien';
+$string['categoryseparator_desc'] = 'Erforderlich, falls "Kategorie-ID-Nummer" aktiviert ist. Zeichen zum Trennen des Kategorienamens und der ID-Nummer.';
 $string['coursesettings'] = 'Kurseinstellungen';
 $string['createnewcategories'] = 'Neue (verborgene) Kurskategorien anlegen, wenn nicht in Moodle gefunden';
 $string['createnewcategories_desc'] = 'Wenn das <org><orgunit> Element in der importierten Datei enthalten ist, wird es benutzt um einen Kurs einer Kurskategorie zuzuordnen, sofern der Kurs neu angelegt wird. Bereits bestehende Kurse werden dadurch NICHT verschoben.
@@ -58,6 +62,8 @@ $string['mailadmins'] = 'Administrator/innen per E-Mail benachrichtigen';
 $string['mailusers'] = 'Nutzer/innen per E-Mail benachrichtigen';
 $string['messageprovider:imsenterprise_enrolment'] = 'Mitteilung bei Einschreibung über IMS Enterprise';
 $string['miscsettings'] = 'Verschiedenes';
+$string['nestedcategories'] = 'Verschachtelte Kategorien erlauben';
+$string['nestedcategories_desc'] = 'Bei Aktivierung wird IMS Enterprise geschachtelte Kategorien erzeugen';
 $string['pluginname'] = 'IMS Enterprise Datei';
 $string['pluginname_desc'] = 'IMS Enterprise-Datei';
 $string['processphoto'] = 'Nutzerfoto zu Profil hinzufügen';
@@ -78,6 +84,10 @@ $string['sourcedidfallback_desc'] = 'Im IMS Datensatz wird im <sourceid>-Feld di
 Einige Nutzerverwaltungssysteme haben Probleme beim Export des <userid>-Feldes. In solch einem Fall aktivieren Sie diese Einstellung, damit Moodle den Inhalt des Feldes <sourceid> als Moodle-Nutzer-ID verwendet. Ist das nicht der Fall, lassen Sie die Funktion deaktiviert.';
 $string['truncatecoursecodes'] = 'Kurscode nach dieser Zeichenzahl abschneiden';
 $string['truncatecoursecodes_desc'] = 'Manchmal ist es gewünscht, die Länge des Kurscodes zu verkürzen. Geben Sie dazu hier einen Wert ein, der die maximale Länge des Kurscodes bestimmt. Andernfalls lassen Sie das Feld leer.';
+$string['updatecourses'] = 'Kurs aktualisieren';
+$string['updatecourses_desc'] = 'Bei Aktivierung kann das IMS Enterprise Einschreibungs-Plugin die vollständigen und kurzen Namen aktualisieren (wenn die "recstatus"-Markierung durch \'2\' ein Update signalisiert).';
+$string['updateusers'] = 'Nutzeraccounts aktualisieren, falls dies in IMS Daten festgelegt ist';
+$string['updateusers_desc'] = 'Bei Aktivierung können IMS Enterprise Enschreibungs-Daten Veränderungen in Nutzeraccounts festlegen (wenn die "recstatus"-Markierung auf 2 steht, was ein Update signalisiert).';
 $string['usecapitafix'] = 'Box anklicken, wenn "Großbuchstaben" verwendet werden (XML-Format ist fehlerhaft)';
 $string['usecapitafix_desc'] = 'Nur für Nutzer des Teilnehmerverwaltungssystem CAPITA: Der XML Output von Capita enthält einen Fehler. Bei Verwendung von Capita sollte diese Einstellung deaktiviert sein.';
 $string['usersettings'] = 'Nutzerdateneinstellungen';

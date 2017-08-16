@@ -66,7 +66,7 @@ define(['jquery',
         var parent = $('[data-region="competencyactions"]').data('competency');
 
         var params = {
-            competencyframeworkid : treeModel.getCompetencyFrameworkId(),
+            competencyframeworkid: treeModel.getCompetencyFrameworkId(),
             pagecontextid: pageContextId
         };
 
@@ -82,11 +82,11 @@ define(['jquery',
 
         if (parent !== null && treeModel.hasRule(parent.id)) {
             str.get_strings([
-                { key: 'confirm', component: 'moodle' },
-                { key: 'addingcompetencywillresetparentrule', component: 'tool_lp', param: parent.shortname },
-                { key: 'yes', component: 'core' },
-                { key: 'no', component: 'core' }
-            ]).done(function (strings) {
+                {key: 'confirm', component: 'moodle'},
+                {key: 'addingcompetencywillresetparentrule', component: 'tool_lp', param: parent.shortname},
+                {key: 'yes', component: 'core'},
+                {key: 'no', component: 'core'}
+            ]).done(function(strings) {
                 notification.confirm(
                     strings[0],
                     strings[1],
@@ -108,11 +108,11 @@ define(['jquery',
         var frameworkid = $('[data-region="filtercompetencies"]').data('frameworkid');
         var requests = ajax.call([{
             methodname: 'core_competency_set_parent_competency',
-            args: { competencyid: moveSource, parentid: moveTarget }
+            args: {competencyid: moveSource, parentid: moveTarget}
         }, {
             methodname: 'tool_lp_data_for_competencies_manage_page',
-            args: { competencyframeworkid: frameworkid,
-                    search: $('[data-region="filtercompetencies"] input').val() }
+            args: {competencyframeworkid: frameworkid,
+                    search: $('[data-region="filtercompetencies"] input').val()}
         }]);
         requests[1].done(reloadPage).fail(notification.exception);
     };
@@ -153,11 +153,11 @@ define(['jquery',
         // Show confirm, and/or do the things.
         if (showConfirm) {
             str.get_strings([
-                { key: 'confirm', component: 'moodle' },
-                { key: confirmMessage, component: 'tool_lp' },
-                { key: 'yes', component: 'moodle' },
-                { key: 'no', component: 'moodle' }
-            ]).done(function (strings) {
+                {key: 'confirm', component: 'moodle'},
+                {key: confirmMessage, component: 'tool_lp'},
+                {key: 'yes', component: 'moodle'},
+                {key: 'no', component: 'moodle'}
+            ]).done(function(strings) {
                 notification.confirm(
                     strings[0], // Confirm.
                     strings[1], // Delete competency X?
@@ -187,8 +187,13 @@ define(['jquery',
         });
         treeRoot.show();
 
-        body.on('click', '[data-action="move"]', function() { popup.close(); confirmMove(); });
-        body.on('click', '[data-action="cancel"]', function() { popup.close(); });
+        body.on('click', '[data-action="move"]', function() {
+          popup.close();
+          confirmMove();
+        });
+        body.on('click', '[data-action="cancel"]', function() {
+          popup.close();
+        });
     };
 
     /**
@@ -213,6 +218,7 @@ define(['jquery',
 
     /**
      * A node was chosen and "Move" was selected from the menu. Open a popup to select the target.
+     * @param {Event} e
      * @method moveHandler
      */
     var moveHandler = function(e) {
@@ -230,7 +236,7 @@ define(['jquery',
                     competencyframeworkid: competency.competencyframeworkid,
                     searchtext: ''
                 }
-            },{
+            }, {
                 methodname: 'core_competency_read_competency_framework',
                 args: {
                     id: competency.competencyframeworkid
@@ -242,7 +248,8 @@ define(['jquery',
         $.when.apply(null, requests).done(function(competencies, framework) {
 
             // Expand the list of competencies into a tree.
-            var i, competenciestree = [];
+            var i;
+            var competenciestree = [];
             for (i = 0; i < competencies.length; i++) {
                 var onecompetency = competencies[i];
                 if (onecompetency.parentid == "0") {
@@ -254,10 +261,10 @@ define(['jquery',
             }
 
             str.get_strings([
-                { key: 'movecompetency', component: 'tool_lp', param: competency.shortname },
-                { key: 'move', component: 'tool_lp' },
-                { key: 'cancel', component: 'moodle' }
-            ]).done(function (strings) {
+                {key: 'movecompetency', component: 'tool_lp', param: competency.shortname},
+                {key: 'move', component: 'tool_lp'},
+                {key: 'cancel', component: 'moodle'}
+            ]).done(function(strings) {
 
                 var context = {
                     framework: framework,
@@ -288,8 +295,8 @@ define(['jquery',
         var competency = $('[data-region="competencyactions"]').data('competency');
 
         var params = {
-            competencyframeworkid : treeModel.getCompetencyFrameworkId(),
-            id : competency.id,
+            competencyframeworkid: treeModel.getCompetencyFrameworkId(),
+            id: competency.id,
             parentid: competency.parentid,
             pagecontextid: pageContextId
         };
@@ -300,6 +307,7 @@ define(['jquery',
 
     /**
      * Re-render the page with the latest data.
+     * @param {Object} context
      * @method reloadPage
      */
     var reloadPage = function(context) {
@@ -313,6 +321,7 @@ define(['jquery',
 
     /**
      * Perform a search and render the page with the new search results.
+     * @param {Event} e
      * @method updateSearchHandler
      */
     var updateSearchHandler = function(e) {
@@ -322,8 +331,8 @@ define(['jquery',
 
         var requests = ajax.call([{
             methodname: 'tool_lp_data_for_competencies_manage_page',
-            args: { competencyframeworkid: frameworkid,
-                    search: $('[data-region="filtercompetencies"] input').val() }
+            args: {competencyframeworkid: frameworkid,
+                    search: $('[data-region="filtercompetencies"] input').val()}
         }]);
         requests[0].done(reloadPage).fail(notification.exception);
     };
@@ -337,11 +346,11 @@ define(['jquery',
         var competency = $('[data-region="competencyactions"]').data('competency');
         var requests = ajax.call([{
             methodname: 'core_competency_move_up_competency',
-            args: { id: competency.id }
+            args: {id: competency.id}
         }, {
             methodname: 'tool_lp_data_for_competencies_manage_page',
-            args: { competencyframeworkid: competency.competencyframeworkid,
-                    search: $('[data-region="filtercompetencies"] input').val() }
+            args: {competencyframeworkid: competency.competencyframeworkid,
+                    search: $('[data-region="filtercompetencies"] input').val()}
         }]);
         requests[1].done(reloadPage).fail(notification.exception);
     };
@@ -355,11 +364,11 @@ define(['jquery',
         var competency = $('[data-region="competencyactions"]').data('competency');
         var requests = ajax.call([{
             methodname: 'core_competency_move_down_competency',
-            args: { id: competency.id }
+            args: {id: competency.id}
         }, {
             methodname: 'tool_lp_data_for_competencies_manage_page',
-            args: { competencyframeworkid: competency.competencyframeworkid,
-                    search: $('[data-region="filtercompetencies"] input').val() }
+            args: {competencyframeworkid: competency.competencyframeworkid,
+                    search: $('[data-region="filtercompetencies"] input').val()}
         }]);
         requests[1].done(reloadPage).fail(notification.exception);
     };
@@ -373,7 +382,7 @@ define(['jquery',
 
         var requests = ajax.call([{
             methodname: 'tool_lp_list_courses_using_competency',
-            args: { id: competency.id }
+            args: {id: competency.id}
         }]);
 
         requests[0].done(function(courses) {
@@ -381,7 +390,7 @@ define(['jquery',
                 courses: courses
             };
             templates.render('tool_lp/linked_courses_summary', context).done(function(html) {
-                str.get_string('linkedcourses', 'tool_lp').done(function (linkedcourses) {
+                str.get_string('linkedcourses', 'tool_lp').done(function(linkedcourses) {
                     new Dialogue(
                         linkedcourses, // Title.
                         html, // The linked courses.
@@ -409,13 +418,13 @@ define(['jquery',
                 $.each(compIds, function(index, value) {
                     calls.push({
                         methodname: 'core_competency_add_related_competency',
-                        args: { competencyid: value, relatedcompetencyid: relatedTarget.id }
+                        args: {competencyid: value, relatedcompetencyid: relatedTarget.id}
                     });
                 });
 
-                calls.push( {
+                calls.push({
                     methodname: 'tool_lp_data_for_related_competencies_section',
-                    args: { competencyid: relatedTarget.id }
+                    args: {competencyid: relatedTarget.id}
                 });
 
                 var promises = ajax.call(calls);
@@ -454,7 +463,7 @@ define(['jquery',
         };
         var promise = ajax.call([{
             methodname: 'core_competency_update_competency',
-            args: { competency: update }
+            args: {competency: update}
         }]);
         promise[0].then(function(result) {
             if (result) {
@@ -475,18 +484,18 @@ define(['jquery',
         var competency = $('[data-region="competencyactions"]').data('competency');
         var requests = ajax.call([{
             methodname: 'core_competency_delete_competency',
-            args: { id: competency.id }
+            args: {id: competency.id}
         }, {
             methodname: 'tool_lp_data_for_competencies_manage_page',
-            args: { competencyframeworkid: competency.competencyframeworkid,
-                    search: $('[data-region="filtercompetencies"] input').val() }
+            args: {competencyframeworkid: competency.competencyframeworkid,
+                    search: $('[data-region="filtercompetencies"] input').val()}
         }]);
         requests[0].done(function(success) {
             if (success === false) {
                 str.get_strings([
-                { key: 'competencycannotbedeleted', component: 'tool_lp', param: competency.shortname },
-                { key: 'cancel', component: 'moodle' }
-                ]).done(function (strings) {
+                {key: 'competencycannotbedeleted', component: 'tool_lp', param: competency.shortname},
+                {key: 'cancel', component: 'moodle'}
+                ]).done(function(strings) {
                     notification.alert(
                         null,
                         strings[0]
@@ -510,11 +519,11 @@ define(['jquery',
         }
 
         str.get_strings([
-            { key: 'confirm', component: 'moodle' },
-            { key: confirmMessage, component: 'tool_lp', param: competency.shortname },
-            { key: 'delete', component: 'moodle' },
-            { key: 'cancel', component: 'moodle' }
-        ]).done(function (strings) {
+            {key: 'confirm', component: 'moodle'},
+            {key: confirmMessage, component: 'tool_lp', param: competency.shortname},
+            {key: 'delete', component: 'moodle'},
+            {key: 'cancel', component: 'moodle'}
+        ]).done(function(strings) {
             notification.confirm(
                 strings[0], // Confirm.
                 strings[1], // Delete competency X?
@@ -528,6 +537,7 @@ define(['jquery',
     /**
      * HTML5 implementation of drag/drop (there is an accesible alternative in the menus).
      * @method dragStart
+     * @param {Event} e
      */
     var dragStart = function(e) {
         e.originalEvent.dataTransfer.setData('text', $(e.target).parent().data('id'));
@@ -536,6 +546,7 @@ define(['jquery',
     /**
      * HTML5 implementation of drag/drop (there is an accesible alternative in the menus).
      * @method allowDrop
+     * @param {Event} e
      */
     var allowDrop = function(e) {
         e.originalEvent.dataTransfer.dropEffect = 'move';
@@ -545,6 +556,7 @@ define(['jquery',
     /**
      * HTML5 implementation of drag/drop (there is an accesible alternative in the menus).
      * @method dragEnter
+     * @param {Event} e
      */
     var dragEnter = function(e) {
         e.preventDefault();
@@ -554,6 +566,7 @@ define(['jquery',
     /**
      * HTML5 implementation of drag/drop (there is an accesible alternative in the menus).
      * @method dragLeave
+     * @param {Event} e
      */
     var dragLeave = function(e) {
         e.preventDefault();
@@ -563,6 +576,7 @@ define(['jquery',
     /**
      * HTML5 implementation of drag/drop (there is an accesible alternative in the menus).
      * @method dropOver
+     * @param {Event} e
      */
     var dropOver = function(e) {
         e.preventDefault();
@@ -585,18 +599,18 @@ define(['jquery',
         var relatedid = this.id.substr(11);
         var competency = $('[data-region="competencyactions"]').data('competency');
         var removeRelated = ajax.call([
-            { methodname: 'core_competency_remove_related_competency',
-              args: { relatedcompetencyid: relatedid, competencyid: competency.id } },
-            { methodname: 'tool_lp_data_for_related_competencies_section',
-              args: { competencyid: competency.id } }
+            {methodname: 'core_competency_remove_related_competency',
+              args: {relatedcompetencyid: relatedid, competencyid: competency.id}},
+            {methodname: 'tool_lp_data_for_related_competencies_section',
+              args: {competencyid: competency.id}}
         ]);
 
         removeRelated[1].done(function(context) {
             templates.render('tool_lp/related_competencies', context).done(function(html) {
                 $('[data-region="relatedcompetencies"]').replaceWith(html);
                 updatedRelatedCompetencies();
-            }.bind(this)).fail(notification.exception);
-        }.bind(this)).fail(notification.exception);
+            }).fail(notification.exception);
+        }).fail(notification.exception);
     };
 
     /**
@@ -614,7 +628,7 @@ define(['jquery',
     /**
      * Log the competency viewed event.
      *
-     * @param  {Object} The competency.
+     * @param  {Object} competency The competency.
      * @method triggerCompetencyViewedEvent
      */
     var triggerCompetencyViewedEvent = function(competency) {
@@ -623,7 +637,7 @@ define(['jquery',
             selectedCompetencyId = competency.id;
             ajax.call([{
                     methodname: 'core_competency_competency_viewed',
-                    args: { id: competency.id }
+                    args: {id: competency.id}
             }]);
         }
     };
@@ -690,7 +704,7 @@ define(['jquery',
         }).done(function() {
             ajax.call([{
                 methodname: 'tool_lp_data_for_related_competencies_section',
-                args: { competencyid: competency.id },
+                args: {competencyid: competency.id},
                 done: function(context) {
                     return templates.render('tool_lp/related_competencies', context).done(function(html, js) {
                         $('[data-region="relatedcompetencies"]').replaceWith(html);
@@ -729,6 +743,7 @@ define(['jquery',
      * @method selectionChanged
      * @param {Event} evt The event that triggered the selection change.
      * @param {Object} params The parameters for the event. Contains a list of selected nodes.
+     * @return {Boolean}
      */
     var selectionChanged = function(evt, params) {
         var node = params.selected,
@@ -781,7 +796,7 @@ define(['jquery',
      * Return the string "Selected <taxonomy>".
      *
      * @function parseTaxonomies
-     * @param  {String} Comma separated list of taxonomies.
+     * @param  {String} taxonomiesstr Comma separated list of taxonomies.
      * @return {Array} of level => taxonomystr
      */
     var parseTaxonomies = function(taxonomiesstr) {

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'editor', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,14 +29,14 @@ $string['about'] = 'حول هذا المحرر';
 $string['absbottom'] = 'أسفل النص';
 $string['acteditorshhdr'] = 'محررات النصوص المتوافرة';
 $string['address'] = 'عنوان';
-$string['alertnoselectedtext'] = '!يجب أن تختار النص أولاً';
+$string['alertnoselectedtext'] = 'يجب أن تختار النص أولاً';
 $string['alignment'] = 'محاذاة';
 $string['alternatetext'] = 'النص البديل';
-$string['anchorhelp'] = 'قوم هذا بإنشاء مثبت فقط، يستلزم عليك إنشاء الرابط يدوياً';
+$string['anchorhelp'] = 'يقوم هذا بأنشاء مثبت فقط، يستلزم عليك انشاء الرابط';
 $string['anchorname'] = 'اسم المثبت';
 $string['anchors'] = 'مثبتات';
-$string['baseline'] = 'أساس';
-$string['bold'] = 'غامق';
+$string['baseline'] = 'اساس';
+$string['bold'] = 'داكن';
 $string['borderthickness'] = 'ُسمك الاطار';
 $string['bottom'] = 'سفلي';
 $string['browse'] = 'استعرض';
@@ -44,9 +44,9 @@ $string['cancel'] = 'إلغاء';
 $string['cellpadding'] = 'نطاق الخلية';
 $string['cellspacing'] = 'المسافة بين الخلايا';
 $string['choosechar'] = 'أختر حرف';
-$string['chooseicon'] = 'أختر أيقونه للإدراج';
+$string['chooseicon'] = 'أختر أيقونه للأدراج';
 $string['close'] = 'مغلق';
-$string['closeafterreplace'] = 'أغلق بعد الاستبدال';
+$string['closeafterreplace'] = 'أغلق بعد الأستبدال';
 $string['cols'] = 'أعمدة';
 $string['configeditorplugins'] = 'الرجاء اختيار إضافات المحررات التي ترغب باستخدامها ورتبهم حسب ما تراه مناسباً.';
 $string['copy'] = 'أنسخ المختار';
@@ -108,9 +108,9 @@ $string['nolink'] = 'لا تسمح بالربط الآلي';
 $string['normal'] = 'عادي';
 $string['notimage'] = 'الملف المختار ليس صورة. الرجاء إختيار صورة';
 $string['notset'] = 'لم يعيين';
-$string['ok'] = 'موافقة';
+$string['ok'] = 'OK';
 $string['options'] = 'خيارات';
-$string['orderedlist'] = 'قائمة منظمة';
+$string['orderedlist'] = 'قائمة منطمة';
 $string['outdent'] = 'إنقاص المسافة البادئة';
 $string['paste'] = 'انسخ من الحافظة';
 $string['path'] = 'مسار';
@@ -125,20 +125,20 @@ $string['redo'] = 'إعادة اخر عمل';
 $string['regularexpressions'] = 'أستخدم تعابير عادية';
 $string['removelink'] = 'استبعاد الرابط';
 $string['rename'] = 'إعادة تسمية';
-$string['replaceall'] = 'استبدال الكل';
-$string['replacewith'] = 'استبدال';
+$string['replaceall'] = 'أستبدال الكل';
+$string['replacewith'] = 'أستبدال';
 $string['right'] = 'يمين';
 $string['righttoleft'] = 'اتجاه النص من اليمين إلى اليسار';
 $string['rows'] = 'صفوف';
-$string['searchandreplace'] = 'بحث واستبدال';
-$string['searchnotfound'] = '!لم يتم العثور على أي جمل';
+$string['searchandreplace'] = 'بحث وأستبدال';
+$string['searchnotfound'] = 'لم يتم العثور على أي جمل';
 $string['selectcolor'] = 'اختر اللون';
 $string['selection'] = 'اختيار';
-$string['showhelp'] = 'المساعدة لاستخدام المحرر';
+$string['showhelp'] = 'المساعدة لستخدام المحرر';
 $string['size'] = 'حجم';
 $string['spacing'] = 'المسافة بين الاسطر';
 $string['strikethrough'] = 'يتوسَّطه خط';
-$string['subscript'] = 'أحرف سفلية';
+$string['subscript'] = 'احرف سفليه';
 $string['superscript'] = 'احرف علوية';
 $string['textindicator'] = 'الاسلوب الحالي';
 $string['textmode'] = 'انت في وضع النص.  استخدم أزرار[<>] لتتنقل إلى وضع ستحصل على ماتشاهد.';

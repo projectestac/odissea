@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'You can\'t delete this post!';
 $string['cannoteditposts'] = 'You can\'t edit other people\'s posts!';
 $string['cannotfinddiscussion'] = 'Could not find the discussion in this forum';
 $string['cannotfindfirstpost'] = 'Could not find the first post in this forum';
-$string['cannotfindorcreateforum'] = 'Could not find or create a main news forum for the site';
+$string['cannotfindorcreateforum'] = 'Could not find or create a main announcements forum for the site';
 $string['cannotfindparentpost'] = 'Could not find top parent of post {$a}';
 $string['cannotmovefromsingleforum'] = 'Cannot move discussion from a simple single discussion forum';
 $string['cannotmovenotvisible'] = 'Forum not visible';
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'Subscriptions not allowed (except for tea
 $string['disallowsubscription'] = 'Subscription';
 $string['disallowsubscription_help'] = 'This forum has been configured so that you cannot subscribe to discussions.';
 $string['discussion'] = 'Discussion';
+$string['discussionlocked'] = 'This discussion has been locked so you can no longer reply to it.';
+$string['discussionlockingdisabled'] = 'Do not lock discussions';
+$string['discussionlockingheader'] = 'Discussion locking';
 $string['discussionmoved'] = 'This discussion has been moved to \'{$a}\'.';
 $string['discussionmovedpost'] = 'This discussion has been moved to <a href="{$a->discusshref}">here</a> in the forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Discussion name';
@@ -219,12 +222,13 @@ $string['forcesubscribed'] = 'This forum forces everyone to be subscribed';
 $string['forcesubscribed_help'] = 'This forum has been configured so that you cannot unsubscribe from discussions.';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Add a new forum';
-$string['forum:addnews'] = 'Add news';
+$string['forum:addnews'] = 'Add announcements';
 $string['forum:addquestion'] = 'Add question';
 $string['forum:allowforcesubscribe'] = 'Allow force subscribe';
 $string['forumauthorhidden'] = 'Author (hidden)';
 $string['forumblockingalmosttoomanyposts'] = 'You are approaching the posting threshold. You have posted {$a->numposts} times in the last {$a->blockperiod} and the limit is {$a->blockafter} posts.';
 $string['forumbodyhidden'] = 'This post cannot be viewed by you, probably because you have not posted in the discussion, the maximum editing time hasn\'t passed yet, the discussion has not started or the discussion has expired.';
+$string['forum:canoverridediscussionlock'] = 'Reply to locked discussions';
 $string['forum:canposttomygroups'] = 'Can post to all groups you have access to';
 $string['forum:createattachment'] = 'Create attachments';
 $string['forum:deleteanypost'] = 'Delete any posts (anytime)';
@@ -241,7 +245,7 @@ $string['forum:pindiscussions'] = 'Pin discussions';
 $string['forumposts'] = 'Forum posts';
 $string['forum:postwithoutthrottling'] = 'Exempt from post threshold';
 $string['forum:rate'] = 'Rate posts';
-$string['forum:replynews'] = 'Reply to news';
+$string['forum:replynews'] = 'Reply to announcements';
 $string['forum:replypost'] = 'Reply to posts';
 $string['forums'] = 'Forums';
 $string['forum:splitdiscussions'] = 'Split discussions';
@@ -281,11 +285,19 @@ $string['invalidparentpostid'] = 'Parent post ID was incorrect';
 $string['invalidpostid'] = 'Invalid post ID - {$a}';
 $string['lastpost'] = 'Last post';
 $string['learningforums'] = 'Learning forums';
+$string['lockdiscussionafter'] = 'Lock discussions after period of inactivity';
+$string['lockdiscussionafter_help'] = 'Discussions may be automatically locked after a specified time has elapsed since the last reply.
+
+Users with the capability to reply to locked discussions can unlock a discussion by replying to it.';
 $string['longpost'] = 'Long post';
 $string['mailnow'] = 'Send forum post notifications with no editing-time delay';
 $string['manydiscussions'] = 'Discussions per page';
 $string['markalldread'] = 'Mark all posts in this discussion read.';
 $string['markallread'] = 'Mark all posts in this forum read.';
+$string['markasreadonnotification'] = 'When sending forum post notifications';
+$string['markasreadonnotification_help'] = 'When you are notified of a forum post, you can choose whether this should mark the post as read for the purpose of forum tracking.';
+$string['markasreadonnotificationno'] = 'Do not mark the post as read';
+$string['markasreadonnotificationyes'] = 'Mark the post as read';
 $string['markread'] = 'Mark read';
 $string['markreadbutton'] = 'Mark<br />read';
 $string['markunread'] = 'Mark unread';
@@ -351,7 +363,7 @@ $string['noguestpost'] = 'Sorry, guests are not allowed to post.';
 $string['noguestsubscribe'] = 'Sorry, guests are not allowed to subscribe.';
 $string['noguesttracking'] = 'Sorry, guests are not allowed to set tracking options.';
 $string['nomorepostscontaining'] = 'No more posts containing \'{$a}\' were found';
-$string['nonews'] = 'No news has been posted yet';
+$string['nonews'] = 'No announcements have been posted yet.';
 $string['noonecansubscribenow'] = 'Subscriptions are now disallowed';
 $string['nopermissiontosubscribe'] = 'You do not have the permission to view forum subscribers';
 $string['nopermissiontoview'] = 'You do not have permissions to view this post';
@@ -515,6 +527,7 @@ $string['trackingtype_help'] = 'Read tracking enables participants to easily che
 If set to optional, participants can choose whether to turn tracking on or off via a link in the administration block. (Users must also enable forum tracking in their forum preferences.)
 
 If \'Allow forced read tracking\' is enabled in the site administration, then a further option is available - forced. This means that tracking is always on, regardless of users\' forum preferences.';
+$string['trackreadposts_header'] = 'Forum tracking';
 $string['unread'] = 'Unread';
 $string['unreadposts'] = 'Unread posts';
 $string['unreadpostsnumber'] = '{$a} unread posts';
@@ -533,6 +546,7 @@ $string['unsubscribelink'] = 'Unsubscribe from this forum: {$a}';
 $string['unsubscribeshort'] = 'Unsubscribe';
 $string['usermarksread'] = 'Manual message read marking';
 $string['viewalldiscussions'] = 'View all discussions';
+$string['viewthediscussion'] = 'View the discussion';
 $string['warnafter'] = 'Post threshold for warning';
 $string['warnafter_help'] = 'Students can be warned as they approach the maximum number of posts allowed in a given period. This setting specifies after how many posts they are warned. Users with the capability mod/forum:postwithoutthrottling are exempt from post limits.';
 $string['warnformorepost'] = 'Warning! There is more than one discussion in this forum - using the most recent';

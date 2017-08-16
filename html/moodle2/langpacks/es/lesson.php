@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -186,6 +186,7 @@ Sus {$a->essayquestions} preguntas de tipo ensayo se calificarán posteriormente
 
 Su calificación actual sin contar esas preguntas es de is {$a->score} sobre {$a->grade}';
 $string['displayscorewithoutessays'] = 'Su puntuación es {$a->score} (sobre {$a->grade}).';
+$string['duplicatepagenamed'] = 'Duplicar página: {$a}';
 $string['edit'] = 'Edición';
 $string['editingquestionpage'] = 'Editando página de preguntas {$a}';
 $string['editlessonsettings'] = 'Editar los ajustes de Esta lección';
@@ -208,7 +209,6 @@ $string['enterpassword'] = 'Por favor, escriba la contraseña:';
 $string['eolstudentoutoftime'] = 'Atención: Usted ha sobrepasado el tiempo fijado para esta lección. Su última respuesta puede no haber sido contabilizada si ha sido dada con el tiempo finalizado.';
 $string['eolstudentoutoftimenoanswers'] = 'No ha contestado a ninguna pregunta. En esta lección ha obtenido 0 puntos.';
 $string['essay'] = 'Ensayo';
-$string['essayemailmessage'] = '<p>Ensayo:<blockquote>{$a->question}</blockquote></p><p>Su respuesta:<blockquote><em>{$a->response}</em></blockquote></p><p>{$a->comment} del profesor:<blockquote><em>{$a->comment}</em></blockquote></p><p>Usted ha recibido {$a->earned} sobre un total de {$a->outof} en esta pregunta de ensayo.</p><p>Su calificación en la lección ha cambiado a {$a->newgrade}%.</p>';
 $string['essayemailmessage2'] = '<p>Indicador de ensayo:<blockquote>{$a->question}</blockquote></p><p>Su respueta:<blockquote><em>{$a->response}</em></blockquote></p><p>Comentario del calificador:<blockquote><em>{$a->comment}</em></blockquote></p><p>Ha obtenido {$a->earned} sobre {$a->outof} en esta pregunta de ensayo.</p><p>Su calificación en esta lección ha cambiado a {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Calificación disponible para las preguntas de la lección';
 $string['essayresponses'] = 'Respuestas de los ensayos';
@@ -277,7 +277,6 @@ $string['leftduringtimed'] = 'Se ha interrumpido una lección con tiempo fijo.<b
 $string['leftduringtimednoretake'] = 'Se ha interrumpido una lección con tiempo fijo y<br>no se permite volver a empezar o continuar la lección.';
 $string['leftduringtimedsession'] = 'Ha salido de una lección con tiempo programado';
 $string['lesson:addinstance'] = 'Añadir una nueva lección';
-$string['lessonattempted'] = 'Lección intentada';
 $string['lessonclosed'] = 'Esta lección se cerró el {$a}.';
 $string['lessoncloses'] = 'La lección se cierra';
 $string['lessoncloseson'] = 'La lección se cierra el {$a}';
@@ -294,6 +293,7 @@ $string['lessonopen'] = 'Esta lección se abrirá el {$a}.';
 $string['lessonopens'] = 'La lección se abre';
 $string['lessonpagelinkingbroken'] = 'No se encuentra la primera página. El enlace a la página de la lección debe estar roto. Por favor, contacte con el administrador.';
 $string['lessonstats'] = 'Estadísticas de la lección';
+$string['lesson:view'] = 'Ver actividad en la lección';
 $string['lesson:viewreports'] = 'Ver informes de lecciones';
 $string['linkedmedia'] = 'Medios enlazados';
 $string['loginfail'] = 'Acceso fallido, por favor pruebe de nuevo...';

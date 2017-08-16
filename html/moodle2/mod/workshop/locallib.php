@@ -29,7 +29,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once(dirname(__FILE__).'/lib.php');     // we extend this library here
+require_once(__DIR__.'/lib.php');     // we extend this library here
 require_once($CFG->libdir . '/gradelib.php');   // we use some rounding and comparing routines here
 require_once($CFG->libdir . '/filelib.php');
 
@@ -1430,7 +1430,7 @@ class workshop {
         global $CFG;    // because we require other libs here
 
         if (is_null($this->strategyinstance)) {
-            $strategylib = dirname(__FILE__) . '/form/' . $this->strategy . '/lib.php';
+            $strategylib = __DIR__ . '/form/' . $this->strategy . '/lib.php';
             if (is_readable($strategylib)) {
                 require_once($strategylib);
             } else {
@@ -1455,7 +1455,7 @@ class workshop {
     public function set_grading_evaluation_method($method) {
         global $DB;
 
-        $evaluationlib = dirname(__FILE__) . '/eval/' . $method . '/lib.php';
+        $evaluationlib = __DIR__ . '/eval/' . $method . '/lib.php';
 
         if (is_readable($evaluationlib)) {
             $this->evaluationinstance = null;
@@ -1479,13 +1479,13 @@ class workshop {
             if (empty($this->evaluation)) {
                 $this->evaluation = 'best';
             }
-            $evaluationlib = dirname(__FILE__) . '/eval/' . $this->evaluation . '/lib.php';
+            $evaluationlib = __DIR__ . '/eval/' . $this->evaluation . '/lib.php';
             if (is_readable($evaluationlib)) {
                 require_once($evaluationlib);
             } else {
                 // Fall back in case the subplugin is not available.
                 $this->evaluation = 'best';
-                $evaluationlib = dirname(__FILE__) . '/eval/' . $this->evaluation . '/lib.php';
+                $evaluationlib = __DIR__ . '/eval/' . $this->evaluation . '/lib.php';
                 if (is_readable($evaluationlib)) {
                     require_once($evaluationlib);
                 } else {
@@ -1511,7 +1511,7 @@ class workshop {
     public function allocator_instance($method) {
         global $CFG;    // because we require other libs here
 
-        $allocationlib = dirname(__FILE__) . '/allocation/' . $method . '/lib.php';
+        $allocationlib = __DIR__ . '/allocation/' . $method . '/lib.php';
         if (is_readable($allocationlib)) {
             require_once($allocationlib);
         } else {
@@ -2365,7 +2365,7 @@ class workshop {
      */
     public function get_feedbackreviewer_form(moodle_url $actionurl, stdclass $assessment, $options=array()) {
         global $CFG;
-        require_once(dirname(__FILE__) . '/feedbackreviewer_form.php');
+        require_once(__DIR__ . '/feedbackreviewer_form.php');
 
         $current = new stdclass();
         $current->asid                      = $assessment->id;
@@ -2401,7 +2401,7 @@ class workshop {
      */
     public function get_feedbackauthor_form(moodle_url $actionurl, stdclass $submission, $options=array()) {
         global $CFG;
-        require_once(dirname(__FILE__) . '/feedbackauthor_form.php');
+        require_once(__DIR__ . '/feedbackauthor_form.php');
 
         $current = new stdclass();
         $current->submissionid          = $submission->id;
@@ -2626,6 +2626,50 @@ class workshop {
         return $status;
     }
 
+    /**
+     * Check if the current user can access the other user's group.
+     *
+     * This is typically used for teacher roles that have permissions like
+     * 'view all submissions'. Even with such a permission granted, we have to
+     * check the workshop activity group mode.
+     *
+     * If the workshop is not in a group mode, or if it is in the visible group
+     * mode, this method returns true. This is consistent with how the
+     * {@link groups_get_activity_allowed_groups()} behaves.
+     *
+     * If the workshop is in a separate group mode, the current user has to
+     * have the 'access all groups' permission, or share at least one
+     * accessible group with the other user.
+     *
+     * @param int $otheruserid The ID of the other user, e.g. the author of a submission.
+     * @return bool False if the current user cannot access the other user's group.
+     */
+    public function check_group_membership($otheruserid) {
+        global $USER;
+
+        if (groups_get_activity_groupmode($this->cm) != SEPARATEGROUPS) {
+            // The workshop is not in a group mode, or it is in a visible group mode.
+            return true;
+
+        } else if (has_capability('moodle/site:accessallgroups', $this->context)) {
+            // The current user can access all groups.
+            return true;
+
+        } else {
+            $thisusersgroups = groups_get_all_groups($this->course->id, $USER->id, $this->cm->groupingid, 'g.id');
+            $otherusersgroups = groups_get_all_groups($this->course->id, $otheruserid, $this->cm->groupingid, 'g.id');
+            $commongroups = array_intersect_key($thisusersgroups, $otherusersgroups);
+
+            if (empty($commongroups)) {
+                // The current user has no group common with the other user.
+                return false;
+
+            } else {
+                // The current user has a group common with the other user.
+                return true;
+            }
+        }
+    }
 
     ////////////////////////////////////////////////////////////////////////////////
     // Internal methods (implementation details)                                  //
@@ -3361,10 +3405,26 @@ class workshop_user_plan implements renderable {
             }
         }
 
-        // Add phase switching actions
+        // Add phase switching actions.
         if (has_capability('mod/workshop:switchphase', $workshop->context, $userid)) {
+            $nextphases = array(
+                workshop::PHASE_SETUP => workshop::PHASE_SUBMISSION,
+                workshop::PHASE_SUBMISSION => workshop::PHASE_ASSESSMENT,
+                workshop::PHASE_ASSESSMENT => workshop::PHASE_EVALUATION,
+                workshop::PHASE_EVALUATION => workshop::PHASE_CLOSED,
+            );
             foreach ($this->phases as $phasecode => $phase) {
-                if (! $phase->active) {
+                if ($phase->active) {
+                    if (isset($nextphases[$workshop->phase])) {
+                        $task = new stdClass();
+                        $task->title = get_string('switchphasenext', 'mod_workshop');
+                        $task->link = $workshop->switchphase_url($nextphases[$workshop->phase]);
+                        $task->details = '';
+                        $task->completed = null;
+                        $phase->tasks['switchtonextphase'] = $task;
+                    }
+
+                } else {
                     $action = new stdclass();
                     $action->type = 'switchphase';
                     $action->url  = $workshop->switchphase_url($phasecode);

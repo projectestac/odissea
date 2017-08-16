@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'wiki', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,8 +41,10 @@ $string['deletecomment'] = 'Διαγραφή σχολίου';
 $string['deletecommentcheck'] = 'Διαγραφή σχολίου';
 $string['deletecommentcheckfull'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε το σχόλιο;';
 $string['diff'] = 'Διαφ';
+$string['edit'] = 'Επεξεργασία';
 $string['editcomment'] = 'Επεξεργασία σχολίου';
 $string['editingcomment'] = 'Επεξεργασία σχολίου';
+$string['editsection'] = 'επεξεργασία';
 $string['files'] = 'Αρχεία';
 $string['filtername'] = 'Αυτόματη σύνδεση σελίδων wiki';
 $string['firstpagetitle'] = 'Όνομα πρώτης σελίδας';

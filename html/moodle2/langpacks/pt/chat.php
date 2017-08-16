@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'Ver gravações do chat';
 $string['chatreport'] = 'Sessões de chat';
 $string['chat:talk'] = 'Submeter mensagens no chat';
 $string['chattime'] = 'Próxima sessão de chat';
+$string['chat:view'] = 'Ver atividade Chat';
 $string['compact'] = 'Compacto';
 $string['composemessage'] = 'Compor mensagem';
 $string['configmethod'] = 'O método de chat com ajax proporciona um inteface de chat baseado em ajax e contacta o servidor regularmente para atualização. O método normal do chat precisa que os clientes contactem regularmente o servidor para obter atualizações. Não precisa de nenhuma configuração e funciona em qualquer parte, mas poderá sobrecarregar um servidor quando há muitas pessoas no chat. A utilização dum servidor daemon requer acesso via shell ao Unix, mas o resultado é um ambiente de chat mais rápido e que escala melhor.';

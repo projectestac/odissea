@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -362,6 +362,8 @@ $string['gradereport'] = 'Bewertungsbericht';
 $string['graderreport'] = 'Bewerterübersicht';
 $string['grades'] = 'Bewertungen';
 $string['gradesforuser'] = 'Bewertung für {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Warnung: Aktivitätslöschung in Bearbeitung! Einige Bewertungen werden dabei entfernt.';
+$string['gradesmoduledeletionprefix'] = '[Löschung in Bearbeitung]';
 $string['gradesonly'] = 'Zu den Bewertungen wechseln';
 $string['gradessettings'] = 'Bewertungseinstellungen';
 $string['gradetype'] = 'Bewertungstyp';
@@ -464,7 +466,7 @@ $string['linkedactivity'] = 'Verknüpfte Aktivität';
 $string['linkedactivity_help'] = '<h2>Verlinkte Aktivität</h2>
 <p>Festlegung der Zuordnung einer Aktivität zu einem Lernziel. Dies ist sinnvoll, um Leistungen der Teilnehmer/innen zu messen, die nicht über Notendimensionen erfasst werden sollen.
 </p>';
-$string['linktoactivity'] = 'Link zur Aktivität {$a->name}';
+$string['linktoactivity'] = 'Link zur Aktivität {$a->name} {$a->title}';
 $string['lock'] = 'Sperren';
 $string['locked'] = 'Gesperrt';
 $string['locked_help'] = 'Mit der Aktivierung werden die Bewertungen nicht mehr automatisch durch die Lernaktivität aktualisiert. ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,7 +91,7 @@ $string['canretake'] = 'Wiederholungen';
 $string['casesensitive'] = 'Reguläre Ausdrücke verwenden';
 $string['casesensitive_help'] = 'Wenn diese Option aktiviert ist, werden reguläre Ausdrücke für die Auswertung der Antworten verwendet';
 $string['checkbranchtable'] = 'Inhaltsseite testen';
-$string['checkedthisone'] = 'Diese wurde geprüft.';
+$string['checkedthisone'] = 'Wurde geprüft.';
 $string['checknavigation'] = 'Navigation testen';
 $string['checkquestion'] = 'Frage testen';
 $string['classstats'] = 'Statistik';
@@ -167,6 +167,7 @@ $string['displayreview'] = 'Wiederholung bei falscher Antwort';
 $string['displayreview_help'] = 'Diese Option zeigt nach einer falsch beantworteten Frage eine Taste, mit der die Teilnehmer/innen zur Frage zurückgehen und diese noch einmal antworten können.';
 $string['displayscorewithessays'] = '<p>Sie haben bisher {$a->score} von {$a->tempmaxgrade} Punkten für die automatisch bewerteten Fragen erzielt.</p><p> Die Freitext-Aufgaben ({$a->essayquestions}) werden später bewertet und zur Gesamtpunktzahl hinzugefügt .</p><p>Ihre derzeitige Bewertung:  {$a->score} von {$a->grade} Punkten.</p>';
 $string['displayscorewithoutessays'] = 'Ihre Bewertung:  {$a->score} von {$a->grade} Punkten';
+$string['duplicatepagenamed'] = 'Seite duplizieren: {$a}';
 $string['edit'] = 'Bearbeiten';
 $string['editingquestionpage'] = 'Frageseite {$a} bearbeiten';
 $string['editlessonsettings'] = 'Einstellungen für Lektion bearbeiten';
@@ -189,11 +190,6 @@ $string['enterpassword'] = 'Bitte geben Sie das Kennwort ein:';
 $string['eolstudentoutoftime'] = 'Achtung: Die verfügbare Zeit ist abgelaufen. Die letzte Frage wird nicht bewertet, wenn die Antwort nach Zeitablauf abgegeben wurde.';
 $string['eolstudentoutoftimenoanswers'] = 'Sie haben keine Fragen beantwortet. Sie erhalten daher 0 Punkte für die Lektion.';
 $string['essay'] = 'Freitext';
-$string['essayemailmessage'] = '<p>Freitextfrage: <blockquote>{$a->question}</blockquote></p>
-<p>Ihre Freitext-Antwort: <blockquote><em>{$a->response}</em></blockquote></p>
-<p>Feedback von {$a->teacher}: <blockquote><em>{$a->comment}</em></blockquote></p>
-<p>Sie haben {$a->earned} Punkte von {$a->outof} Punkten für Ihre Freitext-Antwort erhalten.</p>
-<p>Ihre aktuelle Bewertung für diese Lektion ist nun {$a->newgrade}.</p>';
 $string['essayemailmessage2'] = '<p>Freitextfrage: {$a->question}</p><p>Ihre Antwort: <em>{$a->response}</em></p><p>Trainerfeedback: <em>{$a->comment}</em></p><p>Sie haben {$a->earned} von {$a->outof} Punkten bei dieser Frage erhalten.</p><p>Ihre aktuelle Bewertung für die Lektion \'{$a->lesson}\' ist nun {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Bewertung für eine Lektionantwort verfügbar';
 $string['essayresponses'] = 'Freitextantworten';
@@ -270,7 +266,6 @@ $string['leftduringtimed'] = 'Sie haben die Lektion abgebrochen. Die Bearbeitung
 $string['leftduringtimednoretake'] = 'Sie haben die Lektion abgebrochen. Die Bearbeitung der Lektion ist zeitlich begrenzt. <br />Sie können diese Lektion nicht mehr bearbeiten.';
 $string['leftduringtimedsession'] = 'Sie haben eine zeitbegrenzte Lektion abgebrochen..';
 $string['lesson:addinstance'] = 'Lektion hinzufügen';
-$string['lessonattempted'] = 'Lektion wurde versucht';
 $string['lessonclosed'] = 'Die Lektion war verfügbar bis {$a}';
 $string['lessoncloses'] = 'Verfügbarkeit der Lektion endet';
 $string['lessoncloseson'] = 'Verfügbarkeit der Lektion endet: {$a}';
@@ -287,6 +282,7 @@ $string['lessonopen'] = 'Diese Lektion ist ab {$a} verfügbar.';
 $string['lessonopens'] = 'Lektion verfügbar';
 $string['lessonpagelinkingbroken'] = 'Die erste Seite wurde nicht gefunden. Die Verlinkung der Seite weist einen Fehler auf. Sprechen Sie den Administrator an.';
 $string['lessonstats'] = 'Statistik';
+$string['lesson:view'] = 'Lektionsaktivität anzeigen';
 $string['lesson:viewreports'] = 'Lektionsbericht anzeigen';
 $string['linkedmedia'] = 'Verlinkte Medien';
 $string['loginfail'] = 'Der Login ist gescheitert. Bitte versuchen Sie es noch einmal.';
@@ -414,7 +410,7 @@ $string['pages'] = 'Seiten';
 $string['pagetitle'] = 'Seitentitel';
 $string['password'] = 'Kennwort';
 $string['passwordprotectedlesson'] = 'Lektion {$a} erfordert ein Kennwort.';
-$string['pleasecheckoneanswer'] = 'Antwort auswählen und absenden';
+$string['pleasecheckoneanswer'] = 'Wählen Sie eine Antwort';
 $string['pleasecheckoneormoreanswers'] = 'Wählen Sie eine oder mehrere Antworten.';
 $string['pleaseenteryouranswerinthebox'] = 'Bitte schreiben Sie Ihre Antwort ins Eingabefeld';
 $string['pleasematchtheabovepairs'] = 'Ordnen Sie die obigen Paare einander zu';
@@ -500,7 +496,7 @@ $string['thefollowingpagesjumptothispage'] = 'Die folgenden Seiten springen auf 
 $string['thispage'] = 'Diese Seite';
 $string['timeisup'] = 'Die Zeit ist abgelaufen';
 $string['timelimit'] = 'Zeitbegrenzung';
-$string['timelimit_help'] = 'Wenn diese Option aktiviert ist, wird zu Beginn der Lektion ein Hinweis angezeigt. Während der Bearbeitung wird die Restzeit heruntergezählt. Antworten nach Ablauf der Zeitbegrenzung werden nicht gewertet.';
+$string['timelimit_help'] = 'Wenn diese Option aktiviert ist, wird zu Beginn der Lektion ein Hinweis zur Zeitbegrenzung angezeigt. Während der Bearbeitung wird die Restzeit heruntergezählt. Antworten nach Ablauf der Zeitbegrenzung werden nicht gewertet.';
 $string['timelimitwarning'] = 'Noch {$a} bis zum Ende der Lektion';
 $string['timeremaining'] = 'Verbleibende Zeit';
 $string['timespenterror'] = 'Bearbeiten Sie diese Lektion mindestens {$a} Minuten lang.';

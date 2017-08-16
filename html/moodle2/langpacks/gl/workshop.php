@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,7 @@ $string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index
 $string['allowedfiletypesforsubmission'] = 'Tipos de ficheiros permitidos como anexos a entregas';
 $string['allowedfiletypesforsubmission_help'] = 'Os tipos de ficheiro permitidos como anexo de entrega poden restrinxirse escribindo unha lista separada por comas das extensións de ficheiros, por exemplo «mp4, mp3, png, jpg». Se deixa o campo baleiro, entón permítense todos os tipos de ficheiro.';
 $string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
-$string['allsubmissions'] = 'Todas as entregas';
+$string['allsubmissions'] = 'Todos os envíos';
 $string['alreadygraded'] = 'Xa cualificado';
 $string['areaconclusion'] = 'Texto de conclusión';
 $string['areainstructauthors'] = 'Instrucións para a entrega';
@@ -107,7 +107,7 @@ $string['editassessmentform'] = 'Editar o formato de avaliación';
 $string['editassessmentformstrategy'] = 'Editar o formato de avaliación ({$a})';
 $string['editingassessmentform'] = 'Editando o formato de avaliación';
 $string['editingsubmission'] = 'Editando a entrega';
-$string['editsubmission'] = 'Editar a entrega';
+$string['editsubmission'] = 'Editar envío';
 $string['err_multiplesubmissions'] = 'Mentres se estaba a editar este formulario, gardouse outra versión da entrega. Non se permiten entregas múltiples por usuario.';
 $string['err_removegrademappings'] = 'Non é posíbel retirar as asignacións de cualificacións non usadas';
 $string['err_unknownfileextension'] = 'Extensión de ficheiro descoñecida: {$a}';
@@ -141,11 +141,11 @@ $string['exampledeleteconfirm'] = 'Confirma que quere eliminar a seguinte entreg
 $string['exampleedit'] = 'Editar o exemplo';
 $string['exampleediting'] = 'Editando o exemplo';
 $string['exampleneedassessed'] = 'O primeiro que ten que facer é avaliar os exemplos';
-$string['exampleneedsubmission'] = 'Debe entregar o seu traballo e avaliar todas as entregas de exemplo primeiro';
+$string['exampleneedsubmission'] = 'Debe enviar o seu traballo e avaliar todos os envíos de exemplo primeiro';
 $string['examplesbeforeassessment'] = 'Os exemplos estarán dispoñíbeis após enviar a súa propia entrega, e teñen que seren avaliados antes da avaliación por pares';
 $string['examplesbeforesubmission'] = 'Debe avaliar os exemplos antes da entrega propia';
 $string['examplesmode'] = 'Modo de avaliación de exemplos';
-$string['examplesubmissions'] = 'Entregas de exemplo';
+$string['examplesubmissions'] = 'Envíos de exemplo';
 $string['examplesvoluntary'] = 'A avaliación de entregas de exemplo é voluntaria';
 $string['feedbackauthor'] = 'Comentario para o autor';
 $string['feedbackauthorattachment'] = 'Anexo';
@@ -200,7 +200,7 @@ $string['modulenameplural'] = 'Talleres';
 $string['mysubmission'] = 'A miña entrega';
 $string['nattachments'] = 'Número máximo de anexos por entrega';
 $string['noexamples'] = 'Aínda non hai exemplos neste obradoiro';
-$string['noexamplesformready'] = 'Debe definir a forma de avaliación antes de proporcionar entregas de exemplo';
+$string['noexamplesformready'] = 'Debe definir a forma de avaliación antes de proporcionar envíos de exemplo';
 $string['nogradeyet'] = 'Aínda non hai cualificación';
 $string['nosubmissionfound'] = 'Non se atoparon entregas deste usuario';
 $string['nosubmissions'] = 'Aínda non hai entregas neste obradoiro';
@@ -265,16 +265,16 @@ $string['strategy_help'] = 'A estratexia de cualificación determina a forma de 
  * Comentarios - Fanse comentarios sobre aspectos específicos, mais non se outorga cualificación.
  * Número de erros - Realízanse comentarios e unha cualificación tipo si/non sobre as afirmacións realizadas.
  * Rúbrica - Realizase unha avaliación de nivel respecto aos criterios especificados';
-$string['submission'] = 'Entrega';
+$string['submission'] = 'Envío';
 $string['submissionattachment'] = 'Anexo';
 $string['submissionby'] = 'Entregado por {$a}';
 $string['submissioncontent'] = 'Contido da entrega';
 $string['submissiondeleteconfirm'] = 'Confirma que quere eliminar as seguintes entregas?';
 $string['submissiondeleteconfirmassess'] = 'Confirma que quere eliminar as seguintes entregas? Observe que isto tamén eliminará {$a->count} avaliacións asociadas con esta entrega, o que pode afectar as cualificacións dos revisores.';
-$string['submissionend'] = 'Fin das entregas';
+$string['submissionend'] = 'Fin dos envíos';
 $string['submissionendbeforestart'] = 'A data límite para as entregas non pode especificarse como anterior a data na se abre o prazo de entrega';
 $string['submissionenddatetime'] = 'Data límite da entrega: {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (fin das entregas)';
+$string['submissionendevent'] = '{$a} (fin dos envíos)';
 $string['submissionendswitch'] = 'Cambiar para a seguinte fase após a data límite para entregas';
 $string['submissionendswitch_help'] = 'Se especifica a data límite para as entregas e esta caixa está marcada, o obradoiro cambiará automaticamente a fase de avaliación após a data límite de entregas.
 
@@ -285,9 +285,9 @@ $string['submissiongradeof'] = 'Cualificación para a entrega (de {$a})';
 $string['submissionlastmodified'] = 'Última modificación';
 $string['submissionsettings'] = 'Configuración de entregas';
 $string['submissionsreport'] = 'Informe de entregas do obradoiro:';
-$string['submissionstart'] = 'Comezo das entregas';
+$string['submissionstart'] = 'Comezo dos envíos';
 $string['submissionstartdatetime'] = 'Aberto para entregas desde {$a->daydatetime} ({$a->distanceday})';
-$string['submissionstartevent'] = '{$a} (apertura das entregas)';
+$string['submissionstartevent'] = '{$a} (comezo dos envíos)';
 $string['submissiontitle'] = 'Título';
 $string['submittednotsubmitted'] = 'Entregado ({$a->submitted}) / en entregar ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Método de asignación de entregas';
@@ -299,7 +299,7 @@ $string['subplugintype_workshopform_plural'] = 'Estratexias das cualificacións'
 $string['switchingphase'] = 'Cambiando a fase';
 $string['switchphase'] = 'Cambiar a fase';
 $string['switchphase10info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de instalación</strong>. Nesta fase, os usuarios non poden modificar a súa entrega ou as súas avaliacións. Os profesores poden usar esta fase para cambiar a configuración do obradoiro e modificar a estratexia de cualificación ou a forma de avaliación.';
-$string['switchphase20info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de entrega</strong>. Nesta fase, os alumnos poden entregar os seus traballos (dentro dos prazos de control de acceso existentes, se foron estabelecidos). Os profesores poden asignar entregas para seren revisadas por pares.';
+$string['switchphase20info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de entrega</strong>. Nesta fase, os alumnos poden enviar os seus traballos (dentro dos prazos de control de acceso existentes, se foron estabelecidos). Os profesores poden asignar entregas para seren revisadas por pares.';
 $string['switchphase30auto'] = 'O obradoiro cambiará automaticamente a fase de avaliación após {$a->daydatetime} ({$a->distanceday})';
 $string['switchphase30info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de avaliación</strong>. Nesta fase, os revisores poden avaliar os traballos que lles foron asignados (dentro dos prazos de control de acceso existentes, se foron estabelecidos).';
 $string['switchphase40info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de cualificación das avaliacións</strong> do obradoiro. Nesta fase, os usuarios non poden modificar as súas entregas ou as avaliacións. Os profesores poden empregar as ferramentas de cualificación de avaliacións para calcular as cualificacións finais e fornecer comentarios para os revisores.';

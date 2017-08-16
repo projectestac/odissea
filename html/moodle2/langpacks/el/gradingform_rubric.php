@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backtoediting'] = 'Επιστροφή στην επεξεργασία';
+$string['criterionaddlevel'] = 'Προσθήκη επιπέδου';
 $string['regradeoption1'] = 'Σημείωση για αναβαθμολόγηση';

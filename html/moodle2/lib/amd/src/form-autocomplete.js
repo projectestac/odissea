@@ -90,10 +90,10 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         }
         originalSelect.children('option').each(function(index, ele) {
             if ($(ele).prop('selected')) {
-                items.push( { label: $(ele).html(), value: $(ele).attr('value') } );
+                items.push({label: $(ele).html(), value: $(ele).attr('value')});
             }
         });
-        var context = $.extend({ items: items }, options, state);
+        var context = $.extend({items: items}, options, state);
 
         // Render the template.
         templates.render('core/form_autocomplete_selection', context).done(function(newHTML) {
@@ -115,7 +115,6 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
      * Notify of a change in the selection.
      *
      * @param {jQuery} originalSelect The jQuery object matching the hidden select list.
-     * @return {Void}
      */
     var notifyChange = function(originalSelect) {
         if (typeof M.core_formchangechecker !== 'undefined') {
@@ -131,7 +130,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
      * @private
      * @param {Object} options Original options for this autocomplete element.
      * @param {Object} state State variables for this autocomplete element.
-     * @param {Element} The item to be deselected.
+     * @param {Element} item The item to be deselected.
      * @param {Element} originalSelect The original select list.
      */
     var deselectItem = function(options, state, item, originalSelect) {
@@ -215,7 +214,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         // Find it's index.
         var current = suggestionsElement.children('[aria-hidden=false]').index(element);
         // Activate the next one.
-        activateItem(current+1, state);
+        activateItem(current + 1, state);
     };
 
     /**
@@ -237,7 +236,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         // Find it's index.
         var current = selectionsElement.children('[aria-selected=true]').index(element);
         // Activate the next one.
-        activateSelection(current-1, state);
+        activateSelection(current - 1, state);
     };
     /**
      * Find the index of the current active selection, and activate the next one.
@@ -258,7 +257,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         // Find it's index.
         var current = selectionsElement.children('[aria-selected=true]').index(element);
         // Activate the next one.
-        activateSelection(current+1, state);
+        activateSelection(current + 1, state);
     };
 
     /**
@@ -276,7 +275,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         // Find it's index.
         var current = suggestionsElement.children('[aria-hidden=false]').index(element);
         // Activate the next one.
-        activateItem(current-1, state);
+        activateItem(current - 1, state);
     };
 
     /**
@@ -318,13 +317,13 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         var suggestions = [];
         originalSelect.children('option').each(function(index, option) {
             if ($(option).prop('selected') !== true) {
-                suggestions[suggestions.length] = { label: option.innerHTML, value: $(option).attr('value') };
+                suggestions[suggestions.length] = {label: option.innerHTML, value: $(option).attr('value')};
             }
         });
 
         // Re-render the list of suggestions.
         var searchquery = state.caseSensitive ? query : query.toLocaleLowerCase();
-        var context = $.extend({ options: suggestions}, options, state);
+        var context = $.extend({options: suggestions}, options, state);
         templates.render(
             'core/form_autocomplete_suggestions',
             context
@@ -695,13 +694,14 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
          * Turn a boring select box into an auto-complete beast.
          *
          * @method enhance
-         * @param {string} select The selector that identifies the select box.
+         * @param {string} selector The selector that identifies the select box.
          * @param {boolean} tags Whether to allow support for tags (can define new entries).
          * @param {string} ajax Name of an AMD module to handle ajax requests. If specified, the AMD
          *                      module must expose 2 functions "transport" and "processResults".
          *                      These are modeled on Select2 see: https://select2.github.io/options.html#ajax
          * @param {String} placeholder - The text to display before a selection is made.
          * @param {Boolean} caseSensitive - If search has to be made case sensitive.
+         * @param {Boolean} showSuggestions - If suggestions should be shown
          * @param {String} noSelectionString - Text to display when there is no selection
          */
         enhance: function(selector, tags, ajax, placeholder, caseSensitive, showSuggestions, noSelectionString) {
@@ -728,7 +728,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 options.showSuggestions = showSuggestions;
             }
             if (typeof noSelectionString === "undefined") {
-                str.get_string('noselection', 'form').done(function (result) {
+                str.get_string('noselection', 'form').done(function(result) {
                     options.noSelectionString = result;
                 }).fail(notification.exception);
             }
@@ -737,7 +737,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             var originalSelect = $(selector);
             if (!originalSelect) {
                 log.debug('Selector not found: ' + selector);
-                return false;
+                return;
             }
 
             // Hide the original select.
@@ -757,7 +757,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             // Create the new markup and insert it after the select.
             var suggestions = [];
             originalSelect.children('option').each(function(index, option) {
-                suggestions[index] = { label: option.innerHTML, value: $(option).attr('value') };
+                suggestions[index] = {label: option.innerHTML, value: $(option).attr('value')};
             });
 
             // Render all the parts of our UI.

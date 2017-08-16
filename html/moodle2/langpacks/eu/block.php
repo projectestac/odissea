@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addtodock'] = 'Mugitu hau ertzera';
 $string['anypagematchingtheabove'] = 'Gainetik dagoen edozein orri';
 $string['appearsinsubcontexts'] = 'Azpi-testuingurutan agertzen da';
 $string['assignrolesinblock'] = 'Esleitu rolak {$a} blokean';
+$string['blocksdrawertoggle'] = 'Erakutsi/ezkutatu blokeen tiradera';
 $string['blocksettings'] = 'Blokearen ezarpenak';
 $string['bracketfirst'] = '{$a} (lehenengoa)';
 $string['bracketlast'] = '{$a} (azkena)';
@@ -54,6 +55,7 @@ $string['moveblockafter'] = 'Mugitu blokea {$a} blokearen atzera';
 $string['moveblockbefore'] = 'Mugitu blokea {$a} blokearen aurrera';
 $string['moveblockinregion'] = 'Mugitu blokea {$a} bloke-eremura';
 $string['movingthisblockcancel'] = 'Mugitu bloke hau ({$a})';
+$string['myblocks'] = 'Nire blokeak';
 $string['onthispage'] = 'Orri honetan';
 $string['pagetypes'] = 'Orri-motak';
 $string['pagetypewarning'] = 'Lehenago aukeratutako orri mota ezin da jada aukeratu. Mesedez aukeratu azpian orri mota egokiena.';

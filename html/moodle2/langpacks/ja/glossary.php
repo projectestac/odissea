@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'glossary', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['addentry'] = '新しいエントリを追加する';
 $string['addingcomment'] = 'コメントを追加する';
 $string['alias'] = 'キーワード';
 $string['aliases'] = 'キーワード';
-$string['aliases_help'] = '用語集の各エントリに関連付けられたキーワードリスト (エイリアス) を付加することができます。
+$string['aliases_help'] = '関連付けられたキーワードリスト (またはエイリアス) をそれぞれの用語集エントリに付加することができます。
 
 新しい行にカンマで区切らずにそれぞれのキーワードを入力してください。';
 $string['allcategories'] = 'すべてのカテゴリ';
@@ -38,19 +38,19 @@ $string['allentries'] = 'すべて';
 $string['allowcomments'] = 'エントリへのコメントを許可する';
 $string['allowcomments_help'] = 'この設定を有効にした場合、コメントを作成するパーミッションが与えられたすべてのユーザは用語集エントリにコメントを追加することができます。';
 $string['allowduplicatedentries'] = '重複エントリを許可する';
-$string['allowduplicatedentries_help'] = 'この設定を有効にした場合、同一用語に対して複数のエントリを作成することができます。';
-$string['allowprintview'] = '印刷モードを許可する';
+$string['allowduplicatedentries_help'] = 'この設定を有効にした場合、同一用語に複数のエントリを作成することができます。';
+$string['allowprintview'] = '印刷ビューを許可する';
 $string['allowprintview_help'] = 'この設定を有効にした場合、学生には用語集のプリンタフレンドリバージョンのリンクが提供されます。教師は常にこのリンクを使用することができます。';
 $string['andmorenewentries'] = 'および {$a} 件の新しいエントリ';
 $string['answer'] = '答え';
 $string['approvaldisplayformat'] = '表示フォーマットの承認';
 $string['approvaldisplayformat_help'] = 'あなたが用語集フォーマットを承認した場合、異なる表示フォーマットを使用することができます。';
 $string['approve'] = '承認';
-$string['areaattachment'] = '添付ファイル';
+$string['areaattachment'] = '添付';
 $string['areaentry'] = '定義';
 $string['areyousuredelete'] = '本当にこのエントリを削除してもよろしいですか?';
 $string['areyousuredeletecomment'] = '本当にこのコメントを削除してもよろしいですか?';
-$string['areyousureexport'] = '本当にこのエントリを下記の用語集にエクスポートしてもよろしいですか?';
+$string['areyousureexport'] = '本当にこのエントリを以下の用語集にエクスポートしてもよろしいですか?';
 $string['ascending'] = '昇順';
 $string['attachment'] = '添付';
 $string['attachment_help'] = 'あなたは1つまたはそれ以上のファイルを任意で用語集エントリに添付することができます。';
@@ -69,15 +69,15 @@ $string['category'] = 'カテゴリ';
 $string['categorydeleted'] = 'カテゴリが削除されました。';
 $string['categoryview'] = 'カテゴリ順';
 $string['changeto'] = '{$a} に変更する';
-$string['cnfallowcomments'] = 'エントリへのコメント許可します。';
+$string['cnfallowcomments'] = 'エントリへのコメントをデフォルトで許可します。';
 $string['cnfallowdupentries'] = '重複エントリをデフォルトで許可します。';
-$string['cnfapprovalstatus'] = '学生による投稿をデフォルトで承認します。';
+$string['cnfapprovalstatus'] = '学生による投稿の承認ステータスのデフォルトを設定します。';
 $string['cnfcasesensitive'] = 'エントリがリンクされる場合、大文字小文字を区別します。';
 $string['cnfdefaulthook'] = '用語集が表示される時のデフォルトセクションを選択してください。';
 $string['cnfdefaultmode'] = '用語集が最初に表示される時のデフォルトフレームを選択してください。';
 $string['cnffullmatch'] = 'エントリがリンクされる場合、ターゲットテキストと文字の大小 (大文字小文字) を合致させます。';
-$string['cnflinkentry'] = 'エントリをデフォルトで自動リンクさせます。';
-$string['cnflinkglossaries'] = '用語集をデフォルトで自動リンクさせます。';
+$string['cnflinkentry'] = 'エントリをデフォルトで自動的にリンクさせます。';
+$string['cnflinkglossaries'] = '用語集をデフォルトで自動的にリンクさせます。';
 $string['cnfrelatedview'] = 'オートリンクおよびエントリ表示に使用する表示フォーマットを選択してください。';
 $string['cnfshowgroup'] = 'グループ区切りを表示するかどうか指定してください。';
 $string['cnfsortkey'] = 'デフォルトの並べ替えキーを選択してください。';
@@ -93,7 +93,7 @@ $string['completionentries'] = '学生はエントリを作成する必要があ
 $string['completionentriesgroup'] = '必須エントリ';
 $string['concept'] = '用語';
 $string['concepts'] = '用語';
-$string['configenablerssfeeds'] = 'すべての用語集に関するRSSフィードを有効にします。あなたはそれぞれの用語集設定において、手動でRSSフィードを有効にする必要があります。';
+$string['configenablerssfeeds'] = 'すべての用語集に関するRSSフィードを有効にします。あなたはそれぞれの用語集設定において手動でRSSフィードを有効にする必要があります。';
 $string['current'] = '現在の並べ替え順: {$a}';
 $string['currentglossary'] = '現在の用語集';
 $string['date'] = '日付';
@@ -125,16 +125,16 @@ $string['displayformatfullwithauthor'] = 'フル - 著者あり';
 $string['displayformatfullwithoutauthor'] = 'フル - 著者なし';
 $string['displayformat_help'] = '用語集には以下7つの表示フォーマットがあります:
 
-*シンプル、辞書スタイル - 著者は表示されず、添付ファイルはリンクとして表示されます。
+*シンプル、辞書スタイル - 著者は表示されず、添付はリンクとして表示されます。
 *連続 - エントリが編集アイコンと共に分離されずに連続表示されます。
-*フル - 著者あり - 著者情報と共にフォーラムのように表示されます。添付ファイルはリンクとして表示されます。
-*フル - 著者なし - 著者情報なしでフォーラムのように表示されます。添付ファイルはリンクとして表示されます。
+*フル - 著者あり - 著者情報と共にフォーラムのように表示されます。添付はリンクとして表示されます。
+*フル - 著者なし - 著者情報なしでフォーラムのように表示されます。添付はリンクとして表示されます。
 *百科辞書 - 「フル、著者有り」のように表示されます。イメージは用語集の内部に表示されます。
 *エントリリスト - 用語をリンクとして一覧表示します。
 *FAQ - それぞれの「用語」および「定義」に対して、自動的に「質問」および「答え」の文字が追加されます。';
 $string['displayformats'] = '表示フォーマット';
 $string['displayformatssetup'] = '表示フォーマット設定';
-$string['duplicatecategory'] = 'カテゴリを複製する';
+$string['duplicatecategory'] = '重複カテゴリ';
 $string['duplicateentry'] = '重複エントリ';
 $string['editalways'] = '常に編集を許可する';
 $string['editalways_help'] = 'ここでは学生が常にエントリを編集できるか、または設定された時間内 (通常30分) 編集することができるか指定することができます。';
@@ -154,9 +154,9 @@ $string['entryleveldefaultsettings'] = 'エントリレベルのデフォルト�
 $string['entrysaved'] = 'このエントリが保存されました。';
 $string['entryupdated'] = 'このエントリが更新されました。';
 $string['entryusedynalink'] = 'このエントリを自動的にリンクさせる';
-$string['entryusedynalink_help'] = '管理者によって用語集自動リンクが有効にされた上でこの設定が有効にされた場合、エントリはコース全体で出現した用語またはフレーズに自動リンクされます。';
+$string['entryusedynalink_help'] = '管理者によって用語集オートリンクが有効にされた上でこの設定が有効にされた場合、エントリはコース全体で出現した用語またはフレーズに自動的にリンクされます。';
 $string['errcannoteditothers'] = 'あなたは他の人のエントリを編集できません。';
-$string['errconceptalreadyexists'] = 'この用語はすでに登録されています。この用語集では重複エントリは許可されていません。';
+$string['errconceptalreadyexists'] = 'この用語はすでに登録されています。この用語集では重複は許可されていません。';
 $string['errdeltimeexpired'] = 'あなたはこのエントリを削除できません。編集期限は終了しました!';
 $string['erredittimeexpired'] = 'このエントリの編集期限は終了しました。';
 $string['errorparsingxml'] = 'ファイルの構文解析中にエラーが発生しました。有効なXML構文かどうか確認してください。';
@@ -171,8 +171,8 @@ $string['evententryupdated'] = 'エントリが更新されました。';
 $string['evententryviewed'] = 'エントリが閲覧されました。';
 $string['explainaddentry'] = '現在の用語集に新しいエントリを追加します。<br />用語および定義は必須入力フィールドです。';
 $string['explainall'] = 'すべてのエントリを1ページに表示する';
-$string['explainalphabet'] = 'このインデックスを利用して用語集を表示する';
-$string['explainexport'] = '用語集をエクスポートするには下記のボタンをクリックしてください。<br />いつでも必要なときに用語集をこのコースまたは他のコースにインポートすることができます。<p>添付ファイル (例 イメージ) および著者はエクスポートされない点に留意してください。</p>';
+$string['explainalphabet'] = 'このインデックスを使用して用語集を表示する';
+$string['explainexport'] = '用語集をエクスポートするには下記のボタンをクリックしてください。<br />いつでも必要なときに用語集をこのコースまたは他のコースにインポートすることができます。<p>添付(例 イメージ) および著者はエクスポートされない点に留意してください。</p>';
 $string['explainimport'] = 'インポートするファイルおよび処理のクライテリアを指定してください。<p>実行後、結果を検証してください。</p>';
 $string['explainspecial'] = '１文字で始まらないエントリを表示します。';
 $string['exportedentry'] = 'エクスポートされたエントリ';
@@ -182,7 +182,7 @@ $string['exportfile'] = 'エントリをファイルにエクスポートする'
 $string['exportglossary'] = '用語集をエクスポートする';
 $string['exporttomainglossary'] = 'メイン用語集へエクスポートする';
 $string['filetoimport'] = 'インポートするファイル';
-$string['filetoimport_help'] = 'あなたのコンピュータのインポートするエントリを含んだXMLファイルを選択してください。';
+$string['filetoimport_help'] = 'あなたのコンピュータのインポートするエントリを含むXMLファイルを選択してください。';
 $string['fillfields'] = '用語および定義は必須入力フィールドです。';
 $string['filtername'] = '用語集オートリンク';
 $string['fullmatch'] = '完全一致のみ';
@@ -200,7 +200,7 @@ $string['glossary:managecomments'] = 'コメントを管理する';
 $string['glossary:manageentries'] = 'エントリを管理する';
 $string['glossary:rate'] = 'エントリを評価する';
 $string['glossarytype'] = '用語集タイプ';
-$string['glossarytype_help'] = 'メイン用語集はサブ用語集からエントリをインポートできる用語集です。コース内には1つメイン用語集のみ存在することができます。用語集エントリのインポートが必須ではない場合、コース内の用語集すべてをサブ用語集にすることができます。';
+$string['glossarytype_help'] = 'メイン用語集はサブ用語集からエントリをインポートできる用語集です。コース内でのメイン用語集は1つのみ存在することができます。用語集エントリのインポートが必須ではない場合、コース内の用語集すべてをサブ用語集にすることができます。';
 $string['glossary:view'] = '用語集を表示する';
 $string['glossary:viewallratings'] = '個々のユーザから与えられた実評価すべてを表示する';
 $string['glossary:viewanyrating'] = 'すべてのユーザが受けた評価合計を表示する';
@@ -214,10 +214,10 @@ $string['importentries'] = 'エントリをインポートする';
 $string['importentriesfromxml'] = 'エントリをXMLファイルからインポートする';
 $string['includegroupbreaks'] = 'グループ区切りを含む';
 $string['isglobal'] = 'これはグローバル用語集ですか?';
-$string['isglobal_help'] = '用語集エントリがコース内でのみリンクされるのに対して、グローバル用語集はサイト全体からリンクされるエントリを持つことができます。管理者のみが用語集をグローバルに設定することができます。';
+$string['isglobal_help'] = '用語集エントリがコース内でのみリンクされるのに対してグローバル用語集はサイト全体からリンクされるエントリを持つことができます。管理者のみ用語集をグローバルに設定することができます。';
 $string['letter'] = 'アルファベット';
 $string['linkcategory'] = 'このカテゴリを自動的にリンクする';
-$string['linkcategory_help'] = '用語集自動リンクが有効にされた上でこの設定が有効にされた場合、コース内で出現したカテゴリ名は自動的にリンクされます。参加者がカテゴリ名リンクをクリックした場合、用語集の「カテゴリ順」ページに移動します。';
+$string['linkcategory_help'] = '用語集オートリンクが有効にされた上でこの設定が有効にされた場合、コース内で出現したカテゴリ名は自動的にリンクされます。参加者がカテゴリ名リンクをクリックした場合、用語集の「カテゴリ順」ページに移動します。';
 $string['linking'] = 'オートリンク';
 $string['mainglossary'] = 'メイン用語集';
 $string['maxtimehaspassed'] = '申し訳ございません、このコメントの最大編集回数 ({$a}) を超えました!';
@@ -226,7 +226,7 @@ $string['modulename_help'] = '用語集活動モジュールにおいて、参�
 
 教師は用語集エントリへのファイルの添付を許可することができます。添付されたイメージはエントリ内に表示されます。エントリは検索、またはアルファベット順、カテゴリ順、日付順、著者順に閲覧することができます。エントリはデフォルトで承認すること、またはユーザによって閲覧できるようになる前に教師の承認を必要とすることができます。
 
-用語集自動リンクフィルタが有効にされた場合、用語またはフレーズがコース内に表示された時点でエントリが自動的リンクされます。
+用語集オートリンクフィルタが有効にされた場合、用語またはフレーズがコース内に表示された時点でエントリが自動的にリンクされます。
 
 教師はエントリへのコメントを許可することができます。エントリは教師または学生 (ピア評価) により評価できるようにすることもできます。評価は合計した後に最終評価として評定表に記録させることができます。
 
@@ -235,7 +235,7 @@ $string['modulename_help'] = '用語集活動モジュールにおいて、参�
 * 重要語の共同収集バンクとして
 * 新しい学生が氏名および個人詳細を掲載する「あなたの知り合いになる」スペースとして
 * 実習科目に関するベストプラクティスの「役立つヒント」リソースとして
-* 有用なビデオ、イメージまたはファイルの共有エリアとして
+* 有用なビデオ、イメージまたは音声ファイルの共有エリアとして
 * 記憶しておくべき事実の試験対策リソースとして';
 $string['modulenameplural'] = '用語集';
 $string['newentries'] = '新しい用語集エントリ';
@@ -247,7 +247,7 @@ $string['nocomments'] = '( このエントリにはコメントはありませ�
 $string['noconceptfound'] = '用語または定義が見つかりませんでした。';
 $string['noentries'] = 'このセクションにはエントリがありません。';
 $string['noentry'] = 'エントリが見つかりませんでした。';
-$string['nopermissiontodelcomment'] = 'あなたは他のユーザのコメントを削除できません!';
+$string['nopermissiontodelcomment'] = 'あなたは他の人のコメントを削除できません!';
 $string['nopermissiontodelinglossary'] = 'あなたはこの用語集にコメントを追加できません!';
 $string['nopermissiontoviewresult'] = 'あなたは自分のエントリの結果のみ閲覧できます。';
 $string['notapproved'] = '用語集エントリはまだ承認されていません。';
@@ -268,7 +268,7 @@ $string['rejectedentries'] = '拒否されたエントリ';
 $string['rejectionrpt'] = '拒否レポート';
 $string['resetglossaries'] = 'エントリ削除対象';
 $string['resetglossariesall'] = 'すべての用語集からエントリを削除する';
-$string['rssarticles'] = '最近の活動のRSS数';
+$string['rssarticles'] = '最近の記事のRSS数';
 $string['rssarticles_help'] = 'ここではRSSフィードに含まれる記事数を設定します。一般的に5から20の間が適切です。';
 $string['rsssubscriberss'] = '{$a} の用語のRSSフィードを表示する';
 $string['rsstype'] = 'この活動のRSSフィード';
@@ -292,7 +292,7 @@ $string['standardview'] = 'アルファベット順';
 $string['studentcanpost'] = '学生のエントリ追加を許可する';
 $string['totalentries'] = 'エントリ合計';
 $string['usedynalink'] = 'エントリを自動的にリンクする';
-$string['usedynalink_help'] = '管理者によって用語集自動リンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはエントリをコース全体で出現した用語またはフレーズに自動リンクするためのオプションを含みます。';
+$string['usedynalink_help'] = '管理者によって用語集オートリンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはコース全体で出現した用語またはフレーズにエントリを自動的にリンクするためのオプションを含みます。';
 $string['visibletabs'] = '表示タブ';
 $string['waitingapproval'] = '承認待ち';
 $string['warningstudentcapost'] = '(用語集がメイン用語集ではない場合に適用)';

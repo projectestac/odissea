@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,7 @@ $string['assignedassessments'] = 'Envíos asignados para evaluar';
 $string['assignedassessmentsnone'] = 'No tiene envíos asignados para evaluar';
 $string['backtoeditform'] = 'Volver al formato de edición';
 $string['byfullname'] = 'por <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'por {$a}';
 $string['calculategradinggrades'] = 'Calcular calificaciones de evaluación';
 $string['calculategradinggradesdetails'] = 'esperadas: {$a->expected}<br />calculadas: {$a->calculated}';
 $string['calculatesubmissiongrades'] = 'Calcular calificaciones de envíos';
@@ -145,6 +146,7 @@ $string['examplesbeforesubmission'] = 'Los ejemplos deben ser evaluados antes de
 $string['examplesmode'] = 'Modo de evaluación de ejemplos';
 $string['examplesubmissions'] = 'Envíos de ejemplo';
 $string['examplesvoluntary'] = 'La evaluación de envíos de ejemplo es voluntaria';
+$string['exportsubmission'] = 'Exportar esta página';
 $string['feedbackauthor'] = 'Retroalimentación para el autor';
 $string['feedbackauthorattachment'] = 'Adjunto';
 $string['feedbackby'] = 'Retroalimentación por {$a}';
@@ -304,14 +306,19 @@ $string['switchphase30auto'] = 'El taller cambiará automáticamente a la fase d
 $string['switchphase30info'] = 'Está a punto de cambiar a la <strong>Fase de Evaluación</strong> del taller. En esta fase, los evaluadores  pueden evaluar los trabajos que les fueron asignados (dentro de los plazos de control de acceso existentes, si se establecieron).';
 $string['switchphase40info'] = 'Está a punto de cambiar a la <strong>Fase de Calificación de Evaluaciones </strong> del taller. En esta fase, los usuario no pueden modificar sus trabajos ni sus evaluaciones. Los profesores pueden emplear las herramientas de calificación de evaluaciones para calcular las calificaciones finales y proporcionar  retroalimentación a los evaluadores.';
 $string['switchphase50info'] = 'Está a punto de cerrar el taller. Esto dará como resultado que las calificaciones calculadas aparecerán en el libro de calificaciones. Los estudiantes pueden ver sus envíos y las evaluaciones de estos.';
+$string['switchphasenext'] = 'Cambiar a la siguiente fase';
 $string['taskassesspeers'] = 'Evaluar a compañeros';
 $string['taskassesspeersdetails'] = 'Total: {$a->total} <br /> pendiente: {$a->todo}';
 $string['taskassessself'] = 'Autoevaluarse';
 $string['taskconclusion'] = 'Proporcionar una conclusión de la actividad';
+$string['taskdone'] = 'Tarea realizada';
+$string['taskfail'] = 'Fallo de Tarea';
+$string['taskinfo'] = 'Información de Tarea';
 $string['taskinstructauthors'] = 'Proporcione instrucciones para el envío';
 $string['taskinstructreviewers'] = 'Proporcione instrucciones para la evaluación';
 $string['taskintro'] = 'Defina la descripción del taller';
 $string['tasksubmit'] = 'Enviar su trabajo';
+$string['tasktodo'] = 'Tareas por hacer';
 $string['toolbox'] = 'Caja de herramientas del Taller';
 $string['undersetup'] = 'El taller está siendo configurado. Por favor, espere hasta que cambie a la siguiente fase';
 $string['useexamples'] = 'Usar ejemplos';
@@ -323,6 +330,7 @@ $string['usepeerassessment_help'] = 'Si está activado, un usuario puede recibir
 $string['userdatecreated'] = 'enviado en <span>{$a}</span>';
 $string['userdatemodified'] = 'modificado en <span>{$a}</span>';
 $string['userplan'] = 'Planificador de taller';
+$string['userplanaccessibilityskip'] = 'Saltar a las Tareas actuales';
 $string['userplanaccessibilitytitle'] = 'Cronograma de Taller con {$a} fases';
 $string['userplancurrentphase'] = 'Fase actual';
 $string['userplan_help'] = 'El planificador del taller muestra todas las fases de la actividad y la lista de las tareas de cada fase. La fase actual se ve resaltada y se indican las tareas finalizadas con una marca de verificación';
@@ -335,6 +343,7 @@ $string['workshop:addinstance'] = 'Añadir un nuevo taller';
 $string['workshop:allocate'] = 'Asignar envíos para evaluar';
 $string['workshop:deletesubmissions'] = 'Borrar envíos';
 $string['workshop:editdimensions'] = 'Editar formulario de evaluación';
+$string['workshop:exportsubmissions'] = 'Exportar envíos';
 $string['workshop:ignoredeadlines'] = 'Ignorar restricciones de tiempo';
 $string['workshop:manageexamples'] = 'Administrar los envíos de ejemplo';
 $string['workshopname'] = 'Nombre del taller';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assign', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,12 +43,12 @@ $string['allowsubmissionsshort'] = 'السماح بتغييرالتسليم';
 $string['alwaysshowdescription'] = 'اعرض الوصف دائماً';
 $string['alwaysshowdescription_help'] = 'إذا تم  تعطيل هذا الخيار، فإن وصف التكليف (المهمة) أعلاه سوف يكون مرئياً للطلبة ابتداءً من التاريخ  المُحدَّد في الإعداد "اسمح بالتسليم ابتداءّ من"';
 $string['applytoteam'] = 'تطبيق الدرجات والتغذية الراجعة (الملاحظات) على المجموعة بأكملها';
-$string['assign:addinstance'] = 'إضافة تكليف (مهمة) جديدة';
+$string['assign:addinstance'] = 'إضافة وظيفة جديدة';
 $string['assign:editothersubmission'] = 'تعديل تسليم طالب آخر';
-$string['assign:exportownsubmission'] = 'صدِّر تسليمك الخاص بك';
+$string['assign:exportownsubmission'] = 'صدر تسليمك الخاص بك';
 $string['assignfeedback'] = '(البرمجية المُلحقة للتغذية الراجعة (الملاحظات';
 $string['assignfeedbackpluginname'] = '(البرمجية المُلحقة للتغذية الراجعة (الملاحظات';
-$string['assign:grade'] = '(وضع درجة على التكليف (المهمة';
+$string['assign:grade'] = 'وضع درجة على المهمة';
 $string['assign:grantextension'] = 'تمديد منحة';
 $string['assign:manageallocations'] = 'إدارة المُصححين المخصصين للتسليمات';
 $string['assign:managegrades'] = 'مراجعة ونشر الدرجات';
@@ -61,7 +61,7 @@ $string['assignmentmail'] = '{$a->grader}وقد نشرت بعض الملاحظا
 $string['assignmentmailhtml'] = '<p>{$a->grader} نشر بعض الملاحظات (التغذية الراجعة) على تسليمك للتكليف \'<i>{$a->assignment}</i>\'.</p>
 <p>يمكن أن ترى تلك الملاحظات مُضافة على <a href="{$a->url}">تسليم التكليف الخاص بك </a>.</p>';
 $string['assignmentmailsmall'] = '{$a->grader}نشر بعض الملاحظات (التغذية الراجعة) على تسليمك للتكليف التالي\'{$a->assignment}\' يمكنك أن ترى تلك الملاحظات مُضافة على تسليمك';
-$string['assignmentname'] = '(اسم التكليف (المهمة';
+$string['assignmentname'] = 'اسم المهمة';
 $string['assignmentplugins'] = '(البرمجية المُلحقة للتكليف (المهمة';
 $string['assignmentsperpage'] = 'عدد التكاليف في الصفحة الواحدة';
 $string['assign:receivegradernotifications'] = 'تلقي إخطارات عند تصحيح التسليمات';
@@ -70,8 +70,8 @@ $string['assign:revealidentities'] = 'الكشف عن هوية الطالب';
 $string['assign:reviewgrades'] = 'مراجعة الدرجات';
 $string['assignsubmission'] = 'البرمجية المُلحقة للتسليمات';
 $string['assignsubmissionpluginname'] = 'البرمجية المُلحقة للتسليمات';
-$string['assign:submit'] = 'تقديم التكليف (المهمة(';
-$string['assign:view'] = 'معاينة التكليف (المهمة)';
+$string['assign:submit'] = 'تقديم مهمة';
+$string['assign:view'] = 'معاينة مهمة';
 $string['assign:viewblinddetails'] = 'عرض هويات الطلبة عند تفعيل خيار التصحيح الأعمى (التصحيح بدون عرض هويات الطلبة(';
 $string['assign:viewgrades'] = 'عرض الدرجات';
 $string['attemptheading'] = 'المحاولة {$a->attemptnumber}: {$a->submissionsummary}';
@@ -84,7 +84,7 @@ $string['attemptreopenmethod_none'] = 'أبداً';
 $string['attemptreopenmethod_untilpass'] = 'تلقائياً حتى النجاح';
 $string['attemptsettings'] = 'إعدادات المحاولة';
 $string['availability'] = '(الإتاحة (التوفر';
-$string['backtoassignment'] = '(العودة للتكليف (المهمة';
+$string['backtoassignment'] = 'العودة للوظيفة';
 $string['batchoperationconfirmaddattempt'] = 'السماح بمحاولة أخرى للتسليمات المُحدَّدة؟';
 $string['batchoperationconfirmdownloadselected'] = 'تحميل التسليمات المختارة؟';
 $string['batchoperationconfirmgrantextension'] = 'تمديد المنحة لجميع التسليمات المُختارة';
@@ -106,7 +106,7 @@ $string['chooseoperation'] = 'اختر العملية';
 $string['clickexpandreviewpanel'] = 'انقر لتوسيع لوحة المراجعة';
 $string['collapsegradepanel'] = 'طي لوحة الدرجات';
 $string['collapsereviewpanel'] = 'طي لوحة المراجعة';
-$string['comment'] = 'تعليق';
+$string['comment'] = 'تعليق (علق)';
 $string['completionsubmit'] = 'يجب على الطالب أن يقوم بتسليم إجابة هذا النشاط لاستكماله';
 $string['configshowrecentsubmissions'] = 'يمكن لأي شخص أن يرى إخطارات التسليمات في تقارير الأنشطة الأخيرة.';
 $string['confirmbatchgradingoperation'] = 'هل أنت متأكد أنك تريد {$a->operation} ل{$a->count} طلاب؟';
@@ -119,7 +119,7 @@ $string['couldnotcreatenewassignmentinstance'] = 'لا يمكن إنشاء وح�
 $string['couldnotfindassignmenttoupgrade'] = 'لا يمكن العثور على وحدة تكليف (مهمة) بنسخة قديمة للترقية.';
 $string['currentattempt'] = 'هذه المحاولة {$a}.';
 $string['currentattemptof'] = 'هذه المحاولة رقم{$a->attemptnumber} ( {$a->maxattempts} محاولات مسموحة ).';
-$string['currentgrade'] = 'الدرجة الحالية في سجل الدرجات';
+$string['currentgrade'] = 'الدرجة الحالية في';
 $string['cutoffdate_help'] = 'إذا تم تفعيله، فإن التكليف (المهمة) لن تقبل التسليمات بعد هذا التاريخ دون تمديد.';
 $string['description'] = 'الوصف';
 $string['duedate'] = 'تاريخ تقديم مهمة';

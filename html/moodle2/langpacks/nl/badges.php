@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -236,10 +236,13 @@ $string['error:backpackemailnotfound'] = 'Het e-mailadres \'{$a} is niet verbond
 $string['error:backpackloginfailed'] = 'Je kon niet verbonden worden met een externe backpack om volgende reden: {$a}';
 $string['error:backpacknotavailable'] = 'Je site is niet toegankelijk vanaf het internet. Badges die door deze site uitgegeven worden kunnen niet gecontroleerd worden door een externe backpackservice.';
 $string['error:backpackproblem'] = 'Er was een probleem met het verbinden met je backpack service. Probeer later nog eens.';
+$string['error:badgeawardnotfound'] = 'Kan deze badge niet controleren. Deze badge kan ingetrokken zijn.';
+$string['error:badgenotfound'] = 'Badge niet gevonden';
 $string['error:badjson'] = 'De connectiepoging gaf ongeldige gegevens terug.';
 $string['error:cannotact'] = 'Kan de badge niet activeren.';
 $string['error:cannotawardbadge'] = 'Kan de badge niet uitreiken aan de gebruiker.';
 $string['error:cannotdeletecriterion'] = 'Dit criterium kan niet verwijderd worden.';
+$string['error:cannotrevokebadge'] = 'Kan badge van gebruiker niet intrekken.';
 $string['error:clone'] = 'Kan de badge niet klonen.';
 $string['error:connectionunknownreason'] = 'De connectie is mislukt, maar er is geen reden opgegeven.';
 $string['error:duplicatename'] = 'Er bestaat al een badge met die naam in het systeem.';
@@ -268,7 +271,20 @@ $string['error:requesterror'] = 'De verbindingsaanvraag is mislukt (foutcode {$a
 $string['error:requesttimeout'] = 'De tijd voor de verbindingsaanvraag is verlopen.';
 $string['error:save'] = 'Kan de badge niet bewaren.';
 $string['error:userdeleted'] = '{$a->user} (Deze gebruiker bestaat niet meer in {$a->site})';
+$string['eventbadgearchived'] = 'Badge gearchiveerd';
 $string['eventbadgeawarded'] = 'Badge toegekend';
+$string['eventbadgecreated'] = 'Badge gemaakt';
+$string['eventbadgecriteriacreated'] = 'Badge-criteria gemaakt';
+$string['eventbadgecriteriadeleted'] = 'Badge-criteria verwijderd';
+$string['eventbadgecriteriaupdated'] = 'Badge-criteria aangepast';
+$string['eventbadgedeleted'] = 'Badge verwijderd';
+$string['eventbadgedisabled'] = 'Badge uitgeschakeld';
+$string['eventbadgeduplicated'] = 'Badge gekopiëerd';
+$string['eventbadgeenabled'] = 'Badge ingeschakeld';
+$string['eventbadgelistingviewed'] = 'Badge-lijst bekeken';
+$string['eventbadgerevoked'] = 'Badge ingetrokken';
+$string['eventbadgeupdated'] = 'Badge aangepast';
+$string['eventbadgeviewed'] = 'Badge bekeken';
 $string['evidence'] = 'Bewijs';
 $string['existingrecipients'] = 'Bestaande badge ontvangers';
 $string['expired'] = 'Verlopen';
@@ -370,6 +386,7 @@ $string['reviewconfirm'] = '<p>Dit maakt jouw badges zichtbaar voor gebruikers e
 <p>Als er een badge uitgereikt is, dan wordt die geblokkeerd - sommige instellingen zoals de criteria en de verloopdatum kan dan niet meer gewijzigd worden.</p>
 
 <p>Weet je zeker dat je toegang tot badge \'{$a}\' wil inschakelen?</p>';
+$string['revoke'] = 'Badge intrekken';
 $string['save'] = 'Bewaar';
 $string['searchname'] = 'Zoek op naam';
 $string['selectaward'] = 'Kies de rol die je wil gebruiken om de badge uit te reiken:';

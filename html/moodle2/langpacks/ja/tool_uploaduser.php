@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['deleteerrors'] = '削除エラー';
 $string['encoding'] = 'エンコーディング';
 $string['errormnetadd'] = 'リモートユーザを追加できません。';
 $string['errors'] = 'エラー';
-$string['invalidupdatetype'] = 'あなたは選択した「アップロードタイプ」でこのオプションを選択することはできません。';
+$string['invalidupdatetype'] = '選択したアップロードタイプでこのオプションを選択することはできません。';
 $string['invaliduserdata'] = 'ユーザ {$a} のデータに無効なデータが検出されたため、自動的に削除されました。';
 $string['nochanges'] = '変更なし';
 $string['pluginname'] = 'ユーザアップロード';

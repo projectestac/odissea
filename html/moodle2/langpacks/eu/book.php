@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['book:addinstance'] = 'Gehitu beste liburu bat';
 $string['book:edit'] = 'Editatu liburuaren atalak';
 $string['book:read'] = 'Ikusi liburua';
 $string['book:viewhiddenchapters'] = 'Ikusi liburuaren ezkutuko atalak';
+$string['chapterandsubchaptersdeleted'] = '"{$a->title}" atala eta bere {$a->subchapters} azpiatal ezabatu dira';
+$string['chapterdeleted'] = '"{$a->title}" atala ezabatu da';
 $string['chapters'] = 'Atalak';
 $string['chaptertitle'] = 'Atalaren izenburua';
 $string['confchapterdelete'] = 'Ziur al zaude atal hau ezabatu nahi duzula?';
@@ -62,9 +64,11 @@ $string['movechapterup'] = 'Mugitu "{$a}" atala gora';
 $string['navexit'] = 'Irten liburutik';
 $string['navimages'] = 'Irudiak';
 $string['navnext'] = 'Hurrengoa';
+$string['navnexttitle'] = 'Hurrengoa: {$a}';
 $string['navoptions'] = 'Nabigazio esteken aukerak';
 $string['navoptions_desc'] = 'Nabigazioa liburu-orrietan erakusteko aukerak';
 $string['navprev'] = 'Aurrekoa';
+$string['navprevtitle'] = 'Aurrekoa: {$a}';
 $string['navstyle'] = 'Nabigazio-estiloa';
 $string['navstyle_help'] = '* Irudiak - Ikonoak erabiliko dira nabigatzeko
 * Testua - Atalen izenburuak erabiliko dira nabigatzeko';

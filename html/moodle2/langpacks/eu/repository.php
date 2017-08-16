@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['attachment'] = 'Eranskina';
 $string['author'] = 'Egilea';
 $string['automatedbackup'] = 'Segurtasun-kopia automatikoak';
 $string['back'] = '« Atzera';
-$string['backtodraftfiles'] = '« Bueltatu zirriborro-fitxategien kudeatzailera';
+$string['backtodraftfiles'] = '« Itzuli zirriborro-fitxategien kudeatzailera';
 $string['cacheexpire'] = 'Cache-a iraungi';
 $string['cannotdelete'] = 'Ezin da fitxategi hau ezabatu.';
 $string['cannotdownload'] = 'Ezin da fitxategi hau jaitsi';
@@ -60,11 +60,11 @@ $string['cleancache'] = 'Garbitu nire cache-ko fitxategiak';
 $string['close'] = 'Itxi';
 $string['commonrepositorysettings'] = 'Biltegiaren ezarpen komunak';
 $string['configsaved'] = 'Ezarpenak gordeta!';
-$string['confirmdelete'] = 'Ziur al zaude biltegi hau ezabatu nahi duzula - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira. Hori egiteko denbora luzea eraman dezake.';
+$string['confirmdelete'] = 'Ziur al zaude biltegi hau ezabatu nahi duzula - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
 $string['confirmdeletefile'] = 'Ziur al zaude fitxategi hau ezabatu nahi duzula?';
 $string['confirmdeletefilewithhref'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula? {$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak. Jarraituz gero esteka horiek benetako kopiak bihurtuko dira.';
 $string['confirmdeletefolder'] = 'Ziur al zaude karpeta hau ezabatu nahi duzula? Fitxategi eta azpikarpeta guztiak ere ezabatuko dira.';
-$string['confirmremove'] = 'Ziur al zaude biltegi-plugin hau ezabatu nahi duzula, aukerak eta <strong>instantzia guztiak</strong> barne - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira. Hori egiteko denbora luzea eraman dezake.';
+$string['confirmremove'] = 'Ziur al zaude biltegi-plugin hau ezabatu nahi duzula, aukerak eta <strong>instantzia guztiak</strong> barne - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
 $string['confirmrenamefile'] = 'Ziur zaude fitxategi hau berrizendatu/mugitu nahi duzula? {$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak. Jarraituz gero esteka horiek benetako kopiak bihurtuko dira.';
 $string['confirmrenamefolder'] = 'Ziur zaude karpeta hau ezabatu nahi duzula? Karpeta horretan dagoen edozein ezizen/esteka benetako kopia bihurtuko da.';
 $string['continueuninstall'] = 'Jarraitu';
@@ -166,7 +166,6 @@ $string['original'] = 'Jatorrizkoa';
 $string['overwrite'] = 'Berridatzi';
 $string['overwriteall'] = 'Berridatzi dena';
 $string['path'] = 'Bidea';
-$string['personalrepositories'] = 'Eskura dauden biltegi-instantziak';
 $string['plugin'] = 'Biltegi-pluginak';
 $string['pluginerror'] = 'Erroreak biltegi-pluginean';
 $string['pluginname'] = 'Biltegi-pluginaren izena';

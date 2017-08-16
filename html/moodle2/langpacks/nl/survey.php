@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'survey', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -188,6 +188,7 @@ Er zijn geen \'goede\' en geen \'foute\' antwoorden; we zijn alleen maar geïnte
 
 Hartelijk bedankt.';
 $string['collespname'] = 'COLLES (Voorkeur)';
+$string['completionsubmit'] = 'De leerling moet deze activiteit insturen om ze te voltooien';
 $string['customintro'] = 'Beschrijving';
 $string['deleteallanswers'] = 'Verwijder alle onderzoek antwoorden';
 $string['deleteanalysis'] = 'Verwijder alle antwoordanalyses';

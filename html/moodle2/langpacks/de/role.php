@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,7 @@ $string['badges:deletebadge'] = 'Auszeichnungen löschen';
 $string['badges:earnbadge'] = 'Auszeichnung erhalten';
 $string['badges:manageglobalsettings'] = 'Einstellungen zu Auszeichnungen verwalten';
 $string['badges:manageownbadges'] = 'Eigene Auszeichnungen anzeigen und verwalten';
+$string['badges:revokebadge'] = 'Auszeichnung von Nutzer/in zurückziehen';
 $string['badges:viewawarded'] = 'Nutzer/innen mit  Auszeichnung anzeigen, die die Auszeichnung nicht empfangen können';
 $string['badges:viewbadges'] = 'Verfügbare Auszeichnungen sehen, ohne sie empfangen zu haben';
 $string['badges:viewotherbadges'] = 'Öffentliche Auszeichnungen in anderen Nutzerprofilen sehen';
@@ -391,12 +392,15 @@ $string['siteadministrators'] = 'Administrator/innen';
 $string['site:approvecourse'] = 'Kurserstellung genehmigen';
 $string['site:backup'] = 'Kurse sichern';
 $string['site:config'] = 'Moodle-Konfiguration anpassen';
+$string['site:configview'] = 'Administrationsbaum sehen, aber nicht die enthaltenen Seiten';
 $string['site:deleteanymessage'] = 'Alle Mitteilungen In der Website löschen';
 $string['site:deleteownmessage'] = 'Mitteilungen dieses Nutzers und an diesen Nutzer löschen.';
 $string['site:doanything'] = 'Darf alles machen';
 $string['site:doclinks'] = 'Links zu den MoodleDocs anzeigen';
 $string['site:forcelanguage'] = 'Kurssprache überschreiben';
 $string['site:import'] = 'Andere Kurse in eigenen Kurs importieren';
+$string['site:maintenanceaccess'] = 'Beim Wartungsmodus auf Seite zugreifen';
+$string['site:manageallmessaging'] = 'Kontakte für alle Nutzer/innen hinzufügen, entfernen, blocken und freigeben';
 $string['site:manageblocks'] = 'Blöcke auf einer Seite verwalten';
 $string['site:mnetloginfromremote'] = 'Aus anderem Moodle über MNet einloggen';
 $string['site:mnetlogintoremote'] = 'Zu anderem Moodle über MNet verbinden';

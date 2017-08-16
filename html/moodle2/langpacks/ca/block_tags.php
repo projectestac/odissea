@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_tags', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['notagsyet'] = 'Cap etiqueta encara';
 $string['please'] = 'Si us plau';
 $string['pluginname'] = 'Etiquetes';
 $string['recursivecontext'] = 'Inclou els contexts inferiors';
-$string['recursivecontext_help'] = 'Si està desmarcada, es mostraran les etiquetes dels elements en el context especificat anteriorment, però no les etiquetes dels elements en contexts inferiors. Per exemple, les etiquetes dels cursos es podran mostrar, però no les etiquetes d\'activitats del curs.';
+$string['recursivecontext_help'] = 'Si està desmarcada, es mostraran les etiquetes dels elements en el context especificat anteriorment, però no les etiquetes dels elements en contextos inferiors. Per exemple, les etiquetes dels cursos es podran mostrar, però no les etiquetes d\'activitats del curs.';
 $string['select'] = 'Selecciona...';
 $string['showcoursetags'] = 'Mostra les etiquetes del curs';
 $string['showcoursetagsdef'] = 'Mostra les característiques del curs al bloc d\'etiquetes, permetent als estudiants etiquetar cursos.';

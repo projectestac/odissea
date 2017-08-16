@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -354,6 +354,7 @@ $string['gradereport'] = 'Informe de calificaciones';
 $string['graderreport'] = 'Informe del calificador';
 $string['grades'] = 'Calificaciones';
 $string['gradesforuser'] = 'Calificaciones de {$a->user}';
+$string['gradesmoduledeletionprefix'] = '[Borrado en progreso]';
 $string['gradesonly'] = 'Cambiar a sólo calificaciones';
 $string['gradessettings'] = 'Ajustes';
 $string['gradetype'] = 'Tipo de calificación';

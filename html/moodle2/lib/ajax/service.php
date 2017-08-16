@@ -29,7 +29,7 @@
 
 define('AJAX_SCRIPT', true);
 
-require_once(dirname(__FILE__) . '/../../config.php');
+require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/externallib.php');
 
 define('PREFERRED_RENDERER_TARGET', RENDERER_TARGET_GENERAL);
@@ -38,12 +38,7 @@ $rawjson = file_get_contents('php://input');
 
 $requests = json_decode($rawjson, true);
 if ($requests === null) {
-    if (function_exists('json_last_error_msg')) {
-        $lasterror = json_last_error_msg();
-    } else {
-        // Fall back to numeric error for older PHP version.
-        $lasterror = json_last_error();
-    }
+    $lasterror = json_last_error_msg();
     throw new coding_exception('Invalid json in request: ' . $lasterror);
 }
 $responses = array();

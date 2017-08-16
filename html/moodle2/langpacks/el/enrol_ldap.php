@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_ldap', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['autocreate'] = 'Μαθήματα μπορούν να δημιουργούνται αυτόματα εάν υπάρχουν εγγραφές σε ένα μάθημα το οποίο δεν υπάρχει ακόμα στο ΠΗΛΕΑΣ.';
+$string['autocreate'] = '<p>Είναι εφικτό να γίνει αυτόματη δημιουργία μαθημάτων αν υπάρχουν εγγραφές σε ένα μάθημα που δεν υπάρχει ακόμα στο Moodle</p><p>Αν χρησιμοποιείτε την αυτόματη δημιουργία μαθημάτων, συνιστάται η αφαίρεση των ακόλουθων δυνατοτήτων:
+<br/>moodle/course:changeidnumber,
+<br/>moodle/course:changeshortname,
+<br/>moodle/course:changefullname και
+<br/>moodle/course:changesummary,
+<br/>από τους αντίστοιχους ρόλους για την αποφυγή τροποποιήσεων των τεσσάρων πεδίων μαθήματος που αναφέρονται παραπάνω (αναγνωριστικό, σύντομο όνομα, πλήρες όνομα και σύνοψη).</p>';
 $string['autocreation_settings'] = 'Ρυθμίσεις αυτόματης δημιουργίας μαθημάτων';
 $string['bind_dn'] = 'Εάν θέλετε να χρησιμοποιήσετε το bind-user για αναζήτηση χρηστών, ορίστε το εδώ. Κάτι σαν \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_pw'] = 'Κωδικός για το bind-user.';
@@ -39,6 +44,7 @@ $string['course_settings'] = 'Ρυθμίσεις εγγραφής σε μάθη�
 $string['course_shortname'] = 'Προαιρετικό: Το πεδίο LDAP για τη λήψη του σύντομου ονόματος.';
 $string['course_summary'] = 'Προαιρετικό: Το πεδίο LDAP για τη λήψη της περίληψης.';
 $string['course_summary_key'] = 'Σύνοψη';
+$string['course_summary_updateonsync_key'] = 'Ενημέρωση σύνοψης';
 $string['editlock'] = 'Κλείδωμα τιμής';
 $string['enrolname'] = 'LDAP';
 $string['enroluserenable'] = 'Ενεργοποιημένη εγγραφή για το χρήστη \'{$a->user_username}\'';

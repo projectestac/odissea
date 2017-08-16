@@ -35,7 +35,6 @@ define(['jquery',
      *
      * @param {String} triggerSelector The node on which the click will happen.
      * @param {String} containerSelector The parent node that will be removed and contains the evidence ID.
-     * @return {Void}
      */
     var register = function(triggerSelector, containerSelector) {
         if (typeof selectors[triggerSelector] !== 'undefined') {
@@ -58,11 +57,11 @@ define(['jquery',
             e.stopPropagation();
 
             Str.get_strings([
-                { key: 'confirm', component: 'moodle' },
-                { key: 'areyousure', component: 'moodle' },
-                { key: 'delete', component: 'moodle' },
-                { key: 'cancel', component: 'moodle' }
-            ]).done(function (strings) {
+                {key: 'confirm', component: 'moodle'},
+                {key: 'areyousure', component: 'moodle'},
+                {key: 'delete', component: 'moodle'},
+                {key: 'cancel', component: 'moodle'}
+            ]).done(function(strings) {
                 Notification.confirm(
                     strings[0], // Confirm.
                     strings[1], // Are you sure?

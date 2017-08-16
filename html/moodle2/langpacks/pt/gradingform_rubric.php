@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Adicionar critério';
-$string['alwaysshowdefinition'] = 'Permitir que os alunos vejam a grelha  (caso contrário apenas fica visível após a avaliação)';
+$string['alwaysshowdefinition'] = 'Permitir que os alunos vejam a grelha (caso contrário apenas fica visível após a avaliação)';
 $string['backtoediting'] = 'Voltar para editar';
 $string['confirmdeletecriterion'] = 'Tem a certeza que pretende apagar este critério?';
 $string['confirmdeletelevel'] = 'Tem a certeza que pretende apagar este nível?';
@@ -46,7 +46,7 @@ $string['err_nocriteria'] = 'A grelha tem de conter pelo menos um critério';
 $string['err_nodefinition'] = 'A definição do nível não pode ficar em branco';
 $string['err_nodescription'] = 'A descrição do critério não pode ficar em branco';
 $string['err_novariations'] = 'Os níveis de critério não podem ter o mesmo número de pontos';
-$string['err_scoreformat'] = 'O número de pontos para cada nível deve ser um número não negativo válido';
+$string['err_scoreformat'] = 'O número de pontos para cada nível deve ser um número válido';
 $string['err_totalscore'] = 'O número de pontos máximo possível de avaliar pela grelha deve ser mais do que zero';
 $string['gradingof'] = '{$a} avaliado';
 $string['level'] = 'Nível {$a->definition}, {$a->score} pontos.';
@@ -54,6 +54,8 @@ $string['leveldefinition'] = 'Definição do nível {$a}';
 $string['leveldelete'] = 'Apagar nível {$a}';
 $string['levelempty'] = 'Clique para editar nível';
 $string['levelsgroup'] = 'Grupo de níveis';
+$string['lockzeropoints'] = 'Calcular a nota com base na grelha com uma pontuação mínima de 0';
+$string['lockzeropoints_help'] = 'Esta configuração só se aplica se a soma do número mínimo de pontos para cada critério for maior que 0. Se marcar esta opção, a nota mínima possível para a grelha será maior que 0. Se desmarcar esta opção, a pontuação mínima possível para a grelha será mapeada para a nota mínima disponível para a atividade (que é 0, a menos que seja usada uma escala).';
 $string['name'] = 'Nome';
 $string['needregrademessage'] = 'A definição da grelha alterou depois deste aluno ter sido avaliado. O aluno não pode ver a avaliação até ser conferida e atualizada a nota.';
 $string['pluginname'] = 'Grelha qualitativa';
@@ -65,10 +67,11 @@ $string['regradeoption1'] = 'Marcar para reavaliação';
 $string['restoredfromdraft'] = 'NOTA: A última tentativa de avaliar esta pessoa não foi guardada de forma adequada pelo que os rascunhos das notas foram restaurados. Se desejar cancelar estas alterações prima o botão \'Cancelar\' abaixo.';
 $string['rubric'] = 'Grelha qualitativa';
 $string['rubricmapping'] = 'Regras de coversão dos pontos';
-$string['rubricmappingexplained'] = 'A nota miníma para esta grelha é de <b>{$a->minscore} pontos</b> e será convertida para a nota mínima disponível neste trabalho (que é zero, a menos que seja usada uma escala).
-    A nota máxima <b>{$a->maxscore} pontos</b> será convertida para a nota máxima.<br />
-    Notas intermediárias serão convertidas, respetivamente, e arredondadas para a nota disponível.<br />
-    Se uma escala é usada em vez de uma numeração, a pontuação será convertida para a escala como se fossem números inteiros consecutivos.';
+$string['rubricmappingexplained'] = 'A nota miníma para esta grelha é de <b>{$a->minscore} pontos</b> e será convertida para a nota mínima disponível neste trabalho (que é zero, a menos que seja usada uma escala). A nota máxima <b>{$a->maxscore} pontos</b> será convertida para a nota máxima. Notas intermediárias serão convertidas, respetivamente, e arredondadas para a nota disponível.
+
+Se uma escala for usada para avaliação, a pontuação será arredondada e convertida para os elementos da escala como se fossem inteiros consecutivos.
+
+Este cálculo de nota pode ser alterado editando o formulário e marcando a caixa \'Calcular nota com base na grelha com uma pontuação mínima de 0\'.';
 $string['rubricnotcompleted'] = 'Por favor, insira algo em cada critério';
 $string['rubricoptions'] = 'Opções da grelha';
 $string['rubricstatus'] = 'Estado atual da grelha';

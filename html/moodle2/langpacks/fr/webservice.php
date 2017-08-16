@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['editservice'] = 'Modifier le service : {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Activé';
 $string['enabledocumentation'] = 'Activer la documentation développeur';
 $string['enabledocumentationdescription'] = 'Une documentation détaillée des services web est disponible pour les protocoles activés.';
-$string['enablemobilewsoverview'] = 'Aller sur la page d\'administration {$a->manageservicelink}, cocher le réglage « {$a->enablemobileservice} » et enregistrer. Tout sera configuré et les utilisateurs de votre site pourront utiliser l\'app officielle Moodle. Statut actuel : {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Activer des protocoles';
 $string['enableprotocolsdescription'] = 'Au moins un protocole doit être activé. Pour des raisons de sécurité, seuls les protocoles réellement utilisés devraient être activés.';
 $string['enablews'] = 'Activer les services web';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'Mot de passe manquant';
 $string['missingrequiredcapability'] = 'La capacité {$a} est requise.';
 $string['missingusername'] = 'Nom d\'utilisateur manquant';
 $string['missingversionfile'] = 'Erreur de codage : le fichier version.php est manquant pour le composant {$a}';
-$string['mobilewsdisabled'] = 'Désactivé';
-$string['mobilewsenabled'] = 'Activé';
 $string['nameexists'] = 'Ce nom est déjà utilisé par un autre service';
 $string['nocapabilitytouseparameter'] = 'L\'utilisateur n\'a pas la capacité requise pour utiliser le paramètre {$a}';
 $string['nofunctions'] = 'Ce service n\'a pas de fonction.';
@@ -210,6 +207,7 @@ $string['usernameorid_help'] = 'Veuillez saisir un nom d\'utilisateur ou un ID u
 $string['usernameoridnousererror'] = 'Aucun utilisateur trouvé avec ce nom d\'utilisateur ou cet ID.';
 $string['usernameoridoccurenceerror'] = 'Il y a plus d\'un utilisateur avec ce nom d\'utilisateur. Veuillez saisir l\'ID utilisateur.';
 $string['usernotallowed'] = 'L\'utilisateur n\'est pas autorisé à utiliser ce service. Vous devez d\'abord autoriser cet utilisateur sur la page page d\'administration des utilisateurs autorisés pour {$a}.';
+$string['userservices'] = 'Services de l\'utilisateur : {$a}';
 $string['usersettingssaved'] = 'Réglages utilisateur enregistrés';
 $string['validuntil'] = 'Valide jusqu\'au';
 $string['validuntil_help'] = 'Si cette option est activée, le service sera désactivé pour cet utilisateur après cette date.';

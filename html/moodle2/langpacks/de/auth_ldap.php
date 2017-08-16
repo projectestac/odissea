@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,7 +81,7 @@ $string['auth_ldap_opt_deref'] = 'Legt fest wie Aliasbezeichnungen bei der Suche
 $string['auth_ldap_opt_deref_key'] = 'Aliase berücksichtigen';
 $string['auth_ldap_passtype'] = 'Geben Sie das Format für neue Kennwörter auf dem LDAP-Server an.';
 $string['auth_ldap_passtype_key'] = 'Kennwortformat';
-$string['auth_ldap_passwdexpire_settings'] = 'Gültigkeitsablauf von Kennwörtern';
+$string['auth_ldap_passwdexpire_settings'] = 'Gültigkeitsablauf von LDAP-Kennwörtern';
 $string['auth_ldap_preventpassindb'] = 'Wählen Sie \'ja\', um Kennwörter <b>nicht</b> in die Moodle-Datenbank zu übernehmen';
 $string['auth_ldap_preventpassindb_key'] = 'Kennwörter nicht cachen';
 $string['auth_ldap_search_sub'] = 'Nutzersuche auch in Subkontexten durchführen';
@@ -138,7 +138,7 @@ $string['ntlmsso_isdisabled'] = 'NTLM-SSO ist deaktiviert.';
 $string['ntlmsso_unknowntype'] = 'Unbekannter NTLM-SSO-Typ!';
 $string['pagedresultsnotsupp'] = 'LDAP paged results werden nicht unterstützt. Entweder unterstützt Ihre PHP Version dies nicht oder Sie haben Moodle so konfiguriert, dass die LDAP Protokoll Version 2 verwandt wird.';
 $string['pagesize'] = 'Stellen Sie sicher, dass dieser Wert kleiner ist als die Obergrenze Ihres LDAP-Servers für eine einzelne Datenbankabfrage.';
-$string['pagesize_key'] = 'Einträge pro Seite';
+$string['pagesize_key'] = 'Seitengröße';
 $string['pluginname'] = 'LDAP-Server';
 $string['pluginnotenabled'] = 'Plugin nicht aktiviert!';
 $string['renamingnotallowed'] = 'Namensänderungen sind in LDAP nicht erlaubt';

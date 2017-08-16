@@ -31,6 +31,15 @@
  *
  */
 
+/**
+ * @package mod_questionnaire
+ * @copyright  2016 Mike Churchward (mike.churchward@poetgroup.org)
+ * @author     Mike Churchward
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
 require_once($CFG->libdir.'/eventslib.php');
 require_once($CFG->dirroot.'/calendar/lib.php');
 // Constants.
@@ -70,7 +79,8 @@ global $questionnaireresponseviewers;
 $questionnaireresponseviewers = array (
             QUESTIONNAIRE_STUDENTVIEWRESPONSES_WHENANSWERED => get_string('responseviewstudentswhenanswered', 'questionnaire'),
             QUESTIONNAIRE_STUDENTVIEWRESPONSES_WHENCLOSED => get_string('responseviewstudentswhenclosed', 'questionnaire'),
-            QUESTIONNAIRE_STUDENTVIEWRESPONSES_ALWAYS => get_string('responseviewstudentsalways', 'questionnaire'));
+            QUESTIONNAIRE_STUDENTVIEWRESPONSES_ALWAYS => get_string('responseviewstudentsalways', 'questionnaire'),
+            QUESTIONNAIRE_STUDENTVIEWRESPONSES_NEVER => get_string('responseviewstudentsnever', 'questionnaire'));
 
 global $autonumbering;
 $autonumbering = array (0 => get_string('autonumberno', 'questionnaire'),
@@ -187,16 +197,6 @@ function questionnaire_check_date ($thisdate, $insert=false) {
     }
 }
 
-
-// A variant of Moodle's notify function, with a different formatting.
-function questionnaire_notify($message) {
-    $message = clean_text($message);
-    $errorstart = '<div class="notifyproblem">';
-    $errorend = '</div>';
-    $output = $errorstart.$message.$errorend;
-    echo $output;
-}
-
 function questionnaire_choice_values($content) {
 
     // If we run the content through format_text first, any filters we want to use (e.g. multilanguage) should work.
@@ -301,6 +301,7 @@ function questionnaire_load_capabilities($cmid) {
     $cb->view                   = has_capability('mod/questionnaire:view', $context);
     $cb->submit                 = has_capability('mod/questionnaire:submit', $context);
     $cb->viewsingleresponse     = has_capability('mod/questionnaire:viewsingleresponse', $context);
+    $cb->submissionnotification = has_capability('mod/questionnaire:submissionnotification', $context);
     $cb->downloadresponses      = has_capability('mod/questionnaire:downloadresponses', $context);
     $cb->deleteresponses        = has_capability('mod/questionnaire:deleteresponses', $context);
     $cb->manage                 = has_capability('mod/questionnaire:manage', $context);

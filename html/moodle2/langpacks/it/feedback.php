@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,8 +55,9 @@ $string['check_values'] = 'Risposte possibili';
 $string['choosefile'] = 'Scegli un file';
 $string['chosen_feedback_response'] = 'risposte selezionate';
 $string['closebeforeopen'] = 'Hai impostato una dati di chiusura antecedente alla dati di apertura.';
-$string['completed'] = 'completato';
+$string['completed'] = 'Completato';
 $string['completed_feedbacks'] = 'Risposte inviate';
+$string['completedon'] = 'Completato il {$a}';
 $string['complete_the_form'] = 'Compila il questionario';
 $string['completionsubmit'] = 'Completato all\'atto della consegna del feedback';
 $string['configallowfullanonymous'] = 'L\'impostazione consente di completare un feedback senza  autenticarsi. E\' valida solo per feedback nella home page.';
@@ -196,7 +197,7 @@ $string['notavailable'] = 'questo feedback non è disponibile';
 $string['not_completed_yet'] = 'Non ancora completato';
 $string['no_templates_available_yet'] = 'Nessun modello disponibile';
 $string['not_selected'] = 'Nessuna scelta';
-$string['not_started'] = 'non iniziato';
+$string['not_started'] = 'Non iniziato';
 $string['numberoutofrange'] = 'Il numero è fuori scala';
 $string['numeric'] = 'Numerica';
 $string['numeric_range_from'] = 'Valori ammessi da';
@@ -261,7 +262,8 @@ $string['show_nonrespondents'] = 'Risposte mancanti';
 $string['site_after_submit'] = 'Sito da collegare a compilazione terminata';
 $string['sort_by_course'] = 'Ordina per corso';
 $string['start'] = 'Apertura';
-$string['started'] = 'aperto';
+$string['started'] = 'Aperto';
+$string['startedon'] = 'Aperto il {$a}';
 $string['stop'] = 'Chiusura';
 $string['subject'] = 'Argomento';
 $string['switch_group'] = 'Cambia gruppo';

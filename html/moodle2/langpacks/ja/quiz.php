@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,10 +148,10 @@ $string['cannotwrite'] = 'エクスポートファイル ({$a}) を書き込め�
 $string['canredoquestions'] = '受験内でのやり直しを許可する';
 $string['canredoquestions_desc'] = 'この設定を有効にした場合、学生が特定の問題の受験を終了した時点で「問題をやり直す」ボタンが表示されます。これにより、小テストの受験すべてを送信せずに、また別の小テストを開始せずに別バージョンの同一問題を受験することができるようなります。このオプションは主に練習問題に有用です。
 
-この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) のみに影響します。学生は受験が送信される前に問題を終了することができます。';
+この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) にのみ影響します。学生は受験が送信される前に問題を終了することができます。';
 $string['canredoquestions_help'] = 'この設定を有効にした場合、学生が特定の問題の受験を終了した時点で「問題をやり直す」ボタンが表示されます。これにより、小テストの受験すべてを送信せずに、また別の小テストを開始せずに別バージョンの同一問題を受験することができるようになります。このオプションは主に練習問題に有用です。
 
-この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) のみに影響します。学生は受験が送信される前に問題を終了することができます。';
+この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) にのみ影響します。学生は受験が送信される前に問題を終了することができます。';
 $string['canredoquestionsyes'] = '学生は終了した問題の別バージョンをやり直すことができる';
 $string['caseno'] = 'いいえ、文字の大小は重要ではありません。';
 $string['casesensitive'] = '大文字小文字の区別';
@@ -239,7 +239,7 @@ $string['datasetnumber'] = 'No.';
 $string['daysavailable'] = '日利用可能';
 $string['decimaldigits'] = '評点の小数点以下桁数';
 $string['decimalplaces'] = '評点の小数位';
-$string['decimalplaces_help'] = 'この設定では評点を表示するときに小数点以下を何桁表示するか指定します。この設定は評点の表示のみに影響します。データベースに保存された評点および常に完全精度のため実行される内部計算には影響しません。';
+$string['decimalplaces_help'] = 'この設定では評点を表示するときに小数点以下を何桁表示するか指定します。この設定は評点の表示にのみ影響します。データベースに保存された評点および常に完全精度のため実行される内部計算には影響しません。';
 $string['decimalplacesquestion'] = '問題評点の小数位';
 $string['decimalplacesquestion_help'] = 'この設定では個々の問題の評点を表示するときに小数点以下を何桁表示するか指定します。';
 $string['decimalpoints'] = '小数点';
@@ -696,7 +696,7 @@ $string['reattemptquiz'] = 'もう一度受験する';
 $string['recentlyaddedquestion'] = '最近追加された問題!';
 $string['recurse'] = 'サブカテゴリの問題も含む';
 $string['redoesofthisquestion'] = 'ここで受験された他の問題: {$a}';
-$string['redoquestion'] = '問題をやり直す';
+$string['redoquestion'] = 'この問題のような別の問題を受験する';
 $string['regrade'] = 'すべての受験を再評定する';
 $string['regradecomplete'] = 'すべての受験が再評定されました。';
 $string['regradecount'] = '{$a->attempt} 中 {$a->changed} の評点が変更されました。';
@@ -770,7 +770,7 @@ $string['reviewoptions'] = '学生はレビューできる';
 $string['reviewoptionsheading'] = 'レビューオプション';
 $string['reviewoptionsheading_help'] = 'このオプションでは小テスト受験結果をレビューまたは小テストレポートを表示する場合、どの情報をユーザが閲覧することができるかコントロールします。
 
-**受験中** は「複数受験インタラクティブ」のような特定の挙動のみに関連します。
+**受験中** は「複数受験インタラクティブ」のような特定の挙動にのみ関連します。
 
 **受験後すぐに** はユーザが「すべてを送信して終了する」ボタンクリックして受験を終了した後、2分以内を意味します。
 
@@ -886,8 +886,6 @@ $string['timeleft'] = '残り時間';
 $string['timelimit'] = '制限時間';
 $string['timelimitexeeded'] = '申し訳ございません! 小テストの制限時間を経過しました!';
 $string['timelimit_help'] = 'この設定を有効にした場合、小テストの初期ページで時間制限が開始されます。同時に小テストナビゲーションブロックにカウントダウンタイマーが表示されます。';
-$string['timelimitmin'] = '制限時間 (分)';
-$string['timelimitsec'] = '制限時間 (秒)';
 $string['timestr'] = '%y/%m/%d  %H:%M:%S';
 $string['timesup'] = '時間終了!';
 $string['timetaken'] = '所要時間';

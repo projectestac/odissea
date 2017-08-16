@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Aggiungi criterio';
-$string['alwaysshowdefinition'] = 'Gli utenti potranno visualizzare un\'anteprima del rubric in uso  (altrimenti il rubric sarà visibile solo dopo la valutazione)';
+$string['alwaysshowdefinition'] = 'Gli utenti potranno visualizzare un\'anteprima del rubric (altrimenti il rubric sarà visibile solo dopo la valutazione)';
 $string['backtoediting'] = 'Torna alla modifica';
 $string['confirmdeletecriterion'] = 'Sei sicuro di eliminare questo criterio?';
 $string['confirmdeletelevel'] = 'Sei sicuro di eliminare questo livello?';
@@ -46,7 +46,7 @@ $string['err_nocriteria'] = 'Il rubric deve contenere almeno un criterio';
 $string['err_nodefinition'] = 'La definizione del livello non può essere lasciata in bianco';
 $string['err_nodescription'] = 'La descrizione del criterio non può essere lasciata in bianco';
 $string['err_novariations'] = 'I livelli del criterio non possono valere tutti lo stesso punteggio.';
-$string['err_scoreformat'] = 'I punteggi per ciascun livello devono essere numeri non negativi';
+$string['err_scoreformat'] = 'I punteggi per ciascun livello devono essere numeri validi';
 $string['err_totalscore'] = 'Il punteggio massimo possibile del rubric deve essere maggiore di zero.';
 $string['gradingof'] = 'Valutazione di {$a}';
 $string['level'] = 'Livello {$a->definition}, punti {$a->score}.';

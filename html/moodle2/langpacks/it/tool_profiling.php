@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_profiling', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_profiling
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

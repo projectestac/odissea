@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cohort', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcohort'] = 'Προσθήκη νέας ομάδας χρηστών';
 $string['allcohorts'] = 'Όλες οι ομάδες χρηστών';
+$string['anycohort'] = 'Οποιαδήποτε';
+$string['assign'] = 'Ανάθεση';
 $string['assigncohorts'] = 'Ανάθεση μέλων ομάδας χρηστών';
 $string['assignto'] = 'Μέλη ομάδας χρηστών \'{$a}\'';
 $string['backtocohorts'] = 'Επιστροφή στις ομάδες χρηστών';
@@ -38,9 +40,16 @@ $string['cohorts'] = 'Ομάδες χρηστών';
 $string['cohortsin'] = '{$a}: διαθέσιμες ομάδες χρηστών';
 $string['component'] = 'Πηγή';
 $string['contextnotfound'] = 'Το πλαίσιο <b>{$a}</b> δεν βρέθηκε ή δεν έχετε δικαίωμα δημιουργίας ομάδας χρηστών. Θα χρησιμοποιηθεί το προεπιλεγμένο πλαίσιο.';
+$string['csvcontainserrors'] = 'Βρέθηκαν σφάλματα στα δεδομένα του CSV. Δείτε λεπτομέρειες παρακάτω.';
+$string['csvcontainswarnings'] = 'Βρέθηκαν προειδοποιήσεις στα δεδομένα του CSV. Δείτε λεπτομέρειες παρακάτω.';
+$string['csvextracolumns'] = 'Οι στήλες <b>{$a}</b> θα αγνοηθούν.';
+$string['currentusers'] = 'Τρέχοντες χρήστες';
+$string['currentusersmatching'] = 'Τρέχοντες χρήστες που ταιριάζουν';
+$string['defaultcontext'] = 'Προεπιλεγμένο πλαίσιο';
 $string['delcohort'] = 'Διαγραφή ομάδας χρηστών';
 $string['delconfirm'] = 'Είστε βέβαιοι οτι θέλετε να διαγράψετε την ομάδα χρηστών \'{$a}\';';
 $string['description'] = 'Περιγραφή';
+$string['displayedrows'] = 'Εμφάνιση {$a->displayed} γραμμών από {$a->total}.';
 $string['duplicateidnumber'] = 'Υπάρχει ήδη ομάδα χρηστών με τον ίδιο αριθμό αναγνωριστικού';
 $string['editcohort'] = 'Επεξεργασία ομάδας χρηστών';
 $string['editcohortidnumber'] = 'Επεξεργασία αναγνωριστικού ομάδας χρηστών';
@@ -51,11 +60,16 @@ $string['eventcohortmemberadded'] = 'Ο χρήστης προστέθηκε σε
 $string['eventcohortmemberremoved'] = 'Ο χρήστης αφαιρέθηκε από μια ομάδα χρηστών';
 $string['eventcohortupdated'] = 'Η ομάδα χρηστών ενημερώθηκε';
 $string['external'] = 'Εξωτερική ομάδα χρηστών';
-$string['idnumber'] = 'ID ομάδας χρηστών';
+$string['idnumber'] = 'Αναγνωριστικό ομάδας χρηστών';
 $string['memberscount'] = 'Μέγεθος ομάδων χρηστών';
 $string['name'] = 'Όνομα';
+$string['namecolumnmissing'] = 'Υπάρχει κάποιο πρόβλημα με τη μορφή του αρχείου CSV. Παρακαλώ ελέγξτε ότι περιλαμβάνονται τα ονόματα των στηλών.';
+$string['namefieldempty'] = 'Το όνομα πεδίου δεν μπορεί να είναι κενό';
 $string['newidnumberfor'] = 'Νέος αριθμός αναγνωριστικού για την ομάδα χρηστών {$a}';
 $string['newnamefor'] = 'Νέο όνομα για την ομάδα χρηστών {$a}';
+$string['nocomponent'] = 'Δημιουργήθηκε χειροκίνητα';
+$string['potusers'] = 'Πιθανοί χρήστες';
+$string['potusersmatching'] = 'Πιθανοί χρήστες που ταιριάζουν';
 $string['preview'] = 'Προεπισκόπηση';
 $string['removeuserwarning'] = 'Η αφαίρεση χρηστών από μια ομάδα χρηστών μπορεί να έχει ως αποτέλεσμα την ακύρωση εγγραφής των χρηστών από πολλαπλά μαθήματα που περιλαμβάνει διαγραφή ρυθμίσεων χρήστη, βαθμών, συμμετοχής στην ομάδα και άλλες πληροφορίες χρήστη από τα επηρρεαζόμενα μαθήματα.';
 $string['search'] = 'Αναζήτηση';

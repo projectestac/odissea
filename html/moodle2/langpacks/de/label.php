@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,10 +31,11 @@ $string['configdndresizewidth'] = 'Wenn ein Titel für eine Bilddatei angelegt w
 $string['dndmedia'] = 'Drag-and-drop für Medien';
 $string['dndresizeheight'] = 'Drag-and-drop Höhe anpassen';
 $string['dndresizewidth'] = 'Drag-and-drop Beite anpassen';
-$string['dnduploadlabel'] = 'Bild zur Kursseite hinzufügen';
+$string['dnduploadlabel'] = 'Element zur Kursseite hinzufügen';
 $string['dnduploadlabeltext'] = 'Textfeld zur Kursseite hinzufügen';
 $string['label:addinstance'] = 'Textfeld hinzufügen';
 $string['labeltext'] = 'Textfeld';
+$string['label:view'] = 'Textfeld anzeigen';
 $string['modulename'] = 'Textfeld';
 $string['modulename_help'] = 'Ein Textfeld wird auf der Kursseite angezeigt, z.B. als Überschrift, als Hinweis, als kurzer Lerninhalt oder zur Orientierung. Ein Textfeld kann auch multimediale Elemente beinhalten, z.B. Video oder Audio.';
 $string['modulenameplural'] = 'Textfelder';

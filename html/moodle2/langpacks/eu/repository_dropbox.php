@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_dropbox', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,11 +31,10 @@ $string['cachelimit_info'] = 'Sartu hemen zerbitzariaren cachean gordetako Dropb
 $string['configplugin'] = 'Dropbox-en ezarpenak';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Ikusi Dropbox karpeta';
-$string['instruction'] = 'API giltza eta sekretua lortu ahal dituzu <a href="http://www.dropbox.com/developers/apps">Dropbox-en developers</a>-etik. Bertan zure giltza zehazterakoan "Full Dropbox" aukeratu "Access Level" gisa.';
+$string['instruction'] = 'API giltza eta sekretua lortu hal dituzu <a href="http://www.dropbox.com/developers/apps">Dropbox-en garatzaileetatik</a>. Zure giltza konfiguratzean mesedez "Access level" atalean aukeratu "Full Dropbox".';
 $string['logoutdesc'] = '(Amaitu saioa Dropbox erabiltzen amaitzen duzunean)';
 $string['notitle'] = 'Izenbururik gabe';
 $string['oauth2redirecturi'] = 'OAuth 2 Redirect URI';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = 'Gogoratu';
 $string['secret'] = 'Dropbox-en sekretua';
-$string['uselegacyapi'] = 'Erabili baztertutako v1 API-a';

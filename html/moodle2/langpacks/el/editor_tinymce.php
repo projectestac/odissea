@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'editor_tinymce', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -250,7 +250,7 @@ $string['advlink:link_desc'] = 'Εισαγωγή/επεξεργασία συνδ
 $string['autosave:unload_msg'] = 'Οι αλλαγές που κάνατε θα χαθούν αν φύγετε σε άλλη σελίδα.';
 $string['common:apply'] = 'Εφαρμογή';
 $string['common:browse'] = 'Εύρεση';
-$string['common:cancel'] = 'Άκυρο';
+$string['common:cancel'] = 'Ακύρωση';
 $string['common:class_name'] = 'Κλάση';
 $string['common:clipboard_msg'] = 'Οι λειτουργίες Αντιγραφή/Αποκοπή/Επικόλληση δεν είναι διαθέσιμες σε Mozilla και Firefox.nΘέλετε περισσότερες πληροφορίες ;';
 $string['common:clipboard_no_support'] = 'Δεν υποστηρίζεται από τον φυλλομετρητή σας, χρησιμοποιήστε τις συντομεύσεις πληκτρολογίου.';
@@ -425,7 +425,7 @@ $string['media_dlg:correction'] = 'Χωρίς διόρθωση';
 $string['media_dlg:currentmarker'] = 'Τρέχον σημάδι';
 $string['media_dlg:currentposition'] = 'Τρέχουσα θέση';
 $string['media_dlg:defaultframe'] = 'Προεπιλεγμένο καρέ';
-$string['media_dlg:enabled'] = 'Ενεργοποίηση';
+$string['media_dlg:enabled'] = 'Ενεργοποιημένο';
 $string['media_dlg:enablejavascript'] = 'Ενεργοποίηση JavaScript';
 $string['media_dlg:endtime'] = 'Χρόνος λήξης';
 $string['media_dlg:file'] = 'Αρχείο/URL';
@@ -592,7 +592,7 @@ $string['style_dlg:text_style'] = 'Στυλ';
 $string['style_dlg:text_tab'] = 'Κείμενο';
 $string['style_dlg:text_underline'] = 'Υπογράμμιση';
 $string['style_dlg:text_variant'] = 'Παραλλαγή';
-$string['style_dlg:text_weight'] = 'Βάρος';
+$string['style_dlg:text_weight'] = 'Βαρύτητα';
 $string['style_dlg:title'] = 'Επεξεργασία Στυλ CSS';
 $string['style_dlg:top'] = 'Πάνω';
 $string['style_dlg:visibility'] = 'Ορατότητα';
@@ -674,7 +674,7 @@ $string['table_dlg:rules_void'] = 'κενό';
 $string['table_dlg:rules_vsides'] = 'κάθετες πλευρές';
 $string['table_dlg:scope'] = 'Εμβέλεια';
 $string['table_dlg:style'] = 'Στυλ';
-$string['table_dlg:summary'] = 'Περίληψη';
+$string['table_dlg:summary'] = 'Σύνοψη';
 $string['table_dlg:tbody'] = 'Σώμα πίνακα';
 $string['table_dlg:td'] = 'Δεδομένα';
 $string['table_dlg:tfoot'] = 'Βάση πίνακα';

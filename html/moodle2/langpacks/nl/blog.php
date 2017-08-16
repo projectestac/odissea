@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'Deze tekst is niet van jouw';
 $string['entrysaved'] = 'Je tekst is bewaard';
 $string['entrytitle'] = 'Titel van deze tekst';
 $string['eventblogassociationadded'] = 'Blogassociatie gemaakt';
+$string['eventblogassociationdeleted'] = 'Blog associatie verwijderd';
 $string['eventblogentriesviewed'] = 'Blogitems bekekn';
+$string['eventblogexternaladded'] = 'Externe blog geregistreerd';
+$string['eventblogexternalremoved'] = 'Registratie externe blog verwijderd';
+$string['eventblogexternalupdated'] = 'Externe blog aangepast';
 $string['evententryadded'] = 'Blog-item toegevoegd';
 $string['evententrydeleted'] = 'Blog-item verwijderd';
 $string['evententryupdated'] = 'Blog aangepast';
+$string['eventexternalblogsviewed'] = 'Externe geregistreerde blogs bekeken';
 $string['externalblogcrontime'] = 'Externe blog cron planning';
 $string['externalblogdeleteconfirm'] = 'Registratie van externe blog verwijderen?';
 $string['externalblogdeleted'] = 'Registratie van externe blog verwijderd';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = 'Verkregen van';
 $string['rssfeed'] = 'Blog RSS-feed';
 $string['searchterm'] = 'Zoek: {$a}';
 $string['settingsupdatederror'] = 'Er is een fout gebeurt: de voorkeursinstellingen voor deze blog konden niet aangepast worden';
-$string['siteblog'] = 'Siteblog: {$a}';
 $string['siteblogdisable'] = 'Site blog is niet ingeschakeld';
 $string['siteblogheading'] = 'Site blog';
 $string['siteblogs'] = 'Alle site-gebruikers kunnen alle blogs zien';

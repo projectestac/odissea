@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_number', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_number', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_number
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = 'Fält för tal';
 $string['pluginname'] = 'Tal';

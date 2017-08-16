@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,7 +107,7 @@ $string['migratetomanual'] = 'Переход к ручному зачислен�
 $string['nochange'] = 'Без изменений';
 $string['noexistingparticipants'] = 'Нет участников';
 $string['nogroup'] = 'Нет групп';
-$string['noguestaccess'] = 'Гости не имеют доступа к этому курсу. Пожалуйста, войдите в систему.';
+$string['noguestaccess'] = 'Гости не имеют доступа к этому курсу; пожалуйста, войдите в систему.';
 $string['none'] = 'Никто';
 $string['notenrollable'] = 'Вы не можете записаться на этот курс';
 $string['notenrolledusers'] = 'Другие пользователи';
@@ -125,6 +125,9 @@ $string['rolefromcategory'] = '{$a->role} (Унаследовано от кат�
 $string['rolefrommetacourse'] = '{$a->role} (Унаследовано от родительского курса)';
 $string['rolefromsystem'] = '{$a->role} (Назначено на уровне сайта)';
 $string['rolefromthiscourse'] = '{$a->role} (Назначено в этом курсе)';
+$string['sendfromcoursecontact'] = 'От имени контакта курса';
+$string['sendfromkeyholder'] = 'От имени владельца кодового слова';
+$string['sendfromnoreply'] = 'С адреса для писем, не требующих ответа';
 $string['startdatetoday'] = 'Сегодня';
 $string['synced'] = 'Синхронизировано';
 $string['testsettings'] = 'Проверка настроек';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xls', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradeexport_xls', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   gradeexport_xls
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'XLS評定がエクスポートされました。';
 $string['pluginname'] = 'Excelスプレッドシート';
 $string['timeexported'] = 'このコースからの最新ダウンロード';
 $string['xls:publish'] = 'XLS評定エクスポートを公開する';

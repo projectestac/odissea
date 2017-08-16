@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -344,6 +344,8 @@ $string['gradereport'] = 'Beoordelingsrapport';
 $string['graderreport'] = 'Rapportage';
 $string['grades'] = 'Cijfers';
 $string['gradesforuser'] = 'Cijfers voor {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Waarschuwing: activiteit verwijderen  bezig! Sommige cijfers staan op het punt te worden verwijderd.';
+$string['gradesmoduledeletionprefix'] = '[Verwijderen bezig]';
 $string['gradesonly'] = 'Wijzig naar enkel beoordelingen';
 $string['gradessettings'] = 'Beoordelingsinstellingen';
 $string['gradetype'] = 'Beoordelingstype';
@@ -450,7 +452,7 @@ $string['letterreal'] = 'Letter (reëel)';
 $string['letters'] = 'Letters';
 $string['linkedactivity'] = 'Gelinkte activiteit';
 $string['linkedactivity_help'] = '<p>Specifiëert een optionele activiteit waaraan deze competentie is gelinkt. Dit wordt gebruikt om de performantie van de leerling te testen voor criteria die niet beoordeeld worden door het cijfer van de activiteit.</p>';
-$string['linktoactivity'] = 'Link naar {$a->name} activiteit';
+$string['linktoactivity'] = 'Link naar {$a->name} activiteit  {$a->title}';
 $string['lock'] = 'Blokkeer';
 $string['locked'] = 'Geblokkeerd';
 $string['locked_help'] = 'Indien geselecteerd kunnen beoordelingen niet meer automatisch aangepast worden vanuit de activiteitsmodule.';

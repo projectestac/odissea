@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'question', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Oraingo kategoria';
 $string['categorycurrentuse'] = 'Erabili kategoria hau';
 $string['categorydoesnotexist'] = 'Ez da kategoria hau existitzen';
 $string['categoryinfo'] = 'Kategoriaren informazioa';
-$string['categorymove'] = '\'{$a->name}\' kategoriak {$a->count} galdera ditu (horietako batzuk ezkutuan dauden edo ausazko galdera moduan gehituta dauden galdetegietan erabiliak egon daitezke).  Mesedez, hauek mugitzeko beste kategoria bat aukeratu.';
+$string['categorymove'] = '\'{$a->name}\' kategoriak {$a->count} galdera ditu (horietako batzuk ezkutuan dauden edo ausazko galdera moduan gehituta dauden galdetegietan erabiliak egon daitezke). Mesedez, hauek mugitzeko beste kategoria bat aukeratu.';
 $string['categorymoveto'] = 'Gorde kategorian';
 $string['categorynamecantbeblank'] = 'Kategiaren izena ezin da hutsik egon';
 $string['changeoptions'] = 'Aldatu aukerak';

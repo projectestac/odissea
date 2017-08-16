@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,9 +31,9 @@ $string['allowunenrol_desc'] = 'Si s\'habilita, la inscripció dels cursos s\'es
 $string['basicsettings'] = 'Paràmetres bàsics';
 $string['coursesettings'] = 'Opcions de les dades de cursos';
 $string['createnewcategories'] = 'Crea noves categories de cursos (ocultes) si no existeixen a Moodle';
-$string['createnewcategories_desc'] = 'Si l\'<org><orgunit>element és present a les dades inicials del curs, els seus continguts s\'utilitzaran per especificar una categoria si el curs s\'ha creat des de cero. El connector NO canviarà de categoria els cursos que ja existeixen.
+$string['createnewcategories_desc'] = 'Si l\'<org><orgunit>element és present a les dades inicials del curs, els seus continguts s\'utilitzaran per especificar una categoria si el curs s\'ha creat des de zero. El connector NO canviarà de categoria els cursos que ja existeixen.
 
-Si no existeix cap categoria amb el nom desitjat es crearà una categoria oculta.';
+Si no existeix cap categoria amb el nom desitjat, es crearà una categoria oculta.';
 $string['createnewcourses'] = 'Crea nous cursos (ocults) si no existeixen a Moodle';
 $string['createnewcourses_desc'] = 'Si s\'habilita, el connector d\'inscripció IMS Enterprise podrà crear cursos nous per a qualsevol que trobi a les dades IMS, però no en la base de dades de Moodle. Qualsevol curs nou creat estarà inicialment ocult.';
 $string['createnewusers'] = 'Crea comptes d\'usuari per a usuaris no registrats a Moodle';

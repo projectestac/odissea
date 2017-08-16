@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activatesuccess'] = 'Ενεργοποιηθήκε επιτυχώς η πρόσβαση στις κονκάρδες';
 $string['addbadgecriteria'] = 'Προσθήκη κριτηρίων βραβείου';
+$string['addcourse'] = 'Προσθήκη μαθημάτων';
 $string['addcourse_help'] = 'Επιλέξτε όλα τα μαθήματα που πρέπει να προστεθούν σε αυτή την απαίτηση βραβείου. Κρατήστε πατημένο το πλήκτρο CTRL για να επιλέξετε πολλά στοιχεία.';
+$string['addcriteria'] = 'Προσθήκη κριτηρίων';
+$string['aggregationmethod'] = 'Μέθοδος συνάθροισης';
 $string['allmethodmanual'] = 'Όλοι οι επιλεγμένοι ρόλοι απονείμουν το βραβείο';
 $string['allowcoursebadges'] = 'Ενεργοποίηση βραβείων μαθήματος';
 $string['allowcoursebadges_desc'] = 'Να επιτρέπεται η δημιουργία και απονομή βραβείων στο πλαίσιο μαθήματος.';
@@ -38,5 +41,6 @@ $string['boverview'] = 'Επισκόπηση';
 $string['criteria_1'] = 'Ολοκλήρωση δραστηριότητας';
 $string['criteriasummary'] = 'Σύνοψη κριτηρίων';
 $string['message'] = 'Σώμα μηνύματος';
+$string['newbadge'] = 'Προσθήκη νέου βραβείου';
 $string['save'] = 'Αποθήκευση';
 $string['subject'] = 'Θέμα μηνύματος';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'countries', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   countries
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['AD'] = 'アンドラ公国';
 $string['AE'] = 'アラブ首長国連邦';
-$string['AF'] = 'アフガニスタン・イスラム国';
+$string['AF'] = 'アフガニスタン・イスラム共和国';
 $string['AG'] = 'アンティグア・バーブーダ';
 $string['AI'] = 'アンギラ';
 $string['AL'] = 'アルバニア共和国';

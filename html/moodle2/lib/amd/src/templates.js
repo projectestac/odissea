@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      2.9
  */
-define([ 'core/mustache',
+define(['core/mustache',
          'jquery',
          'core/ajax',
          'core/str',
@@ -103,7 +103,7 @@ define([ 'core/mustache',
         // Oh well - load via ajax.
         var promises = ajax.call([{
             methodname: 'core_output_load_template',
-            args:{
+            args: {
                 component: component,
                 template: name,
                 themename: this.currentThemeName
@@ -169,10 +169,10 @@ define([ 'core/mustache',
 
         var templatecontext = {
             attributes: [
-                { name: 'src', value: url},
-                { name: 'alt', value: helper(text)},
-                { name: 'title', value: helper(text)},
-                { name: 'class', value: 'smallicon'}
+                {name: 'src', value: url},
+                {name: 'alt', value: helper(text)},
+                {name: 'title', value: helper(text)},
+                {name: 'class', value: 'smallicon'}
             ]
         };
         // We forced loading of this early, so it will be in the cache.
@@ -423,7 +423,7 @@ define([ 'core/mustache',
      */
     var runTemplateJS = function(source) {
         if (source.trim() !== '') {
-            var newscript = $('<script>').attr('type','text/javascript').html(source);
+            var newscript = $('<script>').attr('type', 'text/javascript').html(source);
             $('head').append(newscript);
         }
     };
@@ -554,6 +554,47 @@ define([ 'core/mustache',
         }.bind(this));
     };
 
+    /**
+     * Prepend some HTML to a node and trigger events and fire javascript.
+     *
+     * @method domPrepend
+     * @private
+     * @param {jQuery|String} element - Element or selector to prepend HTML to
+     * @param {String} html - HTML to prepend
+     * @param {String} js - Javascript to run after we prepend the html
+     */
+    var domPrepend = function(element, html, js) {
+        var node = $(element);
+        if (node.length) {
+            // Prepend the html.
+            node.prepend(html);
+            // Run any javascript associated with the new HTML.
+            runTemplateJS(js);
+            // Notify all filters about the new content.
+            event.notifyFilterContentUpdated(node);
+        }
+    };
+
+    /**
+     * Append some HTML to a node and trigger events and fire javascript.
+     *
+     * @method domAppend
+     * @private
+     * @param {jQuery|String} element - Element or selector to append HTML to
+     * @param {String} html - HTML to append
+     * @param {String} js - Javascript to run after we append the html
+     */
+    var domAppend = function(element, html, js) {
+        var node = $(element);
+        if (node.length) {
+            // Append the html.
+            node.append(html);
+            // Run any javascript associated with the new HTML.
+            runTemplateJS(js);
+            // Notify all filters about the new content.
+            event.notifyFilterContentUpdated(node);
+        }
+    };
 
     return /** @alias module:core/templates */ {
         // Public variables and functions.
@@ -588,20 +629,48 @@ define([ 'core/mustache',
          * Replace a node in the page with some new HTML and run the JS.
          *
          * @method replaceNodeContents
-         * @param {string} source - A block of javascript.
+         * @param {JQuery} element - Element or selector to replace.
+         * @param {String} newHTML - HTML to insert / replace.
+         * @param {String} newJS - Javascript to run after the insertion.
          */
         replaceNodeContents: function(element, newHTML, newJS) {
-            return domReplace(element, newHTML, newJS, true);
+            domReplace(element, newHTML, newJS, true);
         },
 
         /**
          * Insert a node in the page with some new HTML and run the JS.
          *
          * @method replaceNode
-         * @param {string} source - A block of javascript.
+         * @param {JQuery} element - Element or selector to replace.
+         * @param {String} newHTML - HTML to insert / replace.
+         * @param {String} newJS - Javascript to run after the insertion.
          */
         replaceNode: function(element, newHTML, newJS) {
-            return domReplace(element, newHTML, newJS, false);
+            domReplace(element, newHTML, newJS, false);
+        },
+
+        /**
+         * Prepend some HTML to a node and trigger events and fire javascript.
+         *
+         * @method prependNodeContents
+         * @param {jQuery|String} element - Element or selector to prepend HTML to
+         * @param {String} html - HTML to prepend
+         * @param {String} js - Javascript to run after we prepend the html
+         */
+        prependNodeContents: function(element, html, js) {
+            domPrepend(element, html, js);
+        },
+
+        /**
+         * Append some HTML to a node and trigger events and fire javascript.
+         *
+         * @method appendNodeContents
+         * @param {jQuery|String} element - Element or selector to append HTML to
+         * @param {String} html - HTML to append
+         * @param {String} js - Javascript to run after we append the html
+         */
+        appendNodeContents: function(element, html, js) {
+            domAppend(element, html, js);
         }
     };
 });

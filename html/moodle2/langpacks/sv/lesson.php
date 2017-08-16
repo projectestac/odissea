@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -210,9 +210,6 @@ $string['enterpassword'] = 'Var snäll och skriv in lösenordet:';
 $string['eolstudentoutoftime'] = 'OBS! Tiden har gått ut för den här lektionen. Ditt sista svar kanske inte kommer att räknas om Du lämnade det efter det att tiden hade gått ut.';
 $string['eolstudentoutoftimenoanswers'] = 'Du svarade inte på några frågor. Ditt resultat för den här lektionen är 0.';
 $string['essay'] = 'Essä';
-$string['essayemailmessage'] = '<p>Essä notering; <blockquote>{$a->question}</blockquote></p><p>
-Din respons:<blockquote><em>{$a->response}</em></blockquote></p><p>{$a->teacher} s kommentarer:<blockquote><em>{$a->comment}</em></blockquote></p><p>
-Du har fått {$a->earned} av {$a->outof} för den här essäfrågan.</p><p>Ditt betyg/omdöme för the lektionen har ändrats till {$a->newgrade}&#37;.</p>';
 $string['essayemailmessage2'] = '<p>Essä:<blockquote>{$a->question}</blockquote></p><p>Ditt svar:<blockquote><em>{$a->response}</em></blockquote></p><p>Betygssättarens kommentarer:<blockquote><em>{$a->comment}</em></blockquote></p><p>Du har uppnått {$a->earned} av {$a->outof} för den här essäfrågan.</p><p>Ditt betyg för lektionen har ändrats till {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Ditt betyg/omdöme för {$a} fråga';
 $string['essays'] = 'Essäer';
@@ -379,7 +376,6 @@ sido<b>titlar</b> visar däremot alltid samma sida även efter det att sidor har
 $string['jumpsto'] = 'Hopp till <em>{$a}</em>';
 $string['leftduringtimed'] = 'Du har avbrutit under en tidsstyrd lektion.<br>Var snäll och välj "Fortsätt" för att starta om lektionen.';
 $string['leftduringtimednoretake'] = 'Du har avbrutit under en tidsstyrd lektion<br> och Du får inte göra om, eller gå vidare med, lektionen.';
-$string['lessonattempted'] = 'Det har gjorts försök att genomföra lektionen';
 $string['lessonclosed'] = 'Den här lektionen stängdes  {$a}';
 $string['lessoncloses'] = 'Lektionen avslutas';
 $string['lessoncloseson'] = 'Lektionen stängs på {$a}';

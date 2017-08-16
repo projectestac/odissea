@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,8 @@ $string['availabletodatevalidation'] = 'La data di disponibilità \'Fino al\' no
 $string['blank'] = 'Vuoto';
 $string['buttons'] = 'Azioni';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
+$string['calendarend'] = 'L\'attività database {$a} chiude';
+$string['calendarstart'] = 'Il database {$a} apre';
 $string['cancel'] = 'Annulla';
 $string['cannotaccesspresentsother'] = 'Non sei autorizzato ad accedere alle preimpostazioni di altri utenti';
 $string['cannotadd'] = 'Impossibile aggiungere record!';
@@ -97,6 +99,7 @@ $string['data:managetemplates'] = 'Gestire i Modelli';
 $string['data:manageuserpresets'] = 'Gestire tutte le preimpostazioni dei Modelli';
 $string['data:rate'] = 'Valutare i record inseriti';
 $string['data:readentry'] = 'Accedere ai record inseriti';
+$string['data:view'] = 'Visualizzare attività database';
 $string['data:viewallratings'] = 'Visualizzare i voti grezzi dati da ciascuno';
 $string['data:viewalluserpresets'] = 'Visualizzare le preimpostazioni salvate da tutti gli utenti';
 $string['data:viewanyrating'] = 'Visualizzare totale delle valutazioni di chiunque';
@@ -127,6 +130,7 @@ $string['editordisable'] = 'Disabilita editor';
 $string['editorenable'] = 'Abilita editor';
 $string['emptyadd'] = 'Il Modello di visualizzazione "Inserisci" non è stato impostato. Ne sto generando uno di default...';
 $string['emptyaddform'] = 'Non hai riempito nessun campo!';
+$string['enabletemplateeditorcheck'] = 'Sei sicuro di abilitare l\'editor? Al salvataggio del modello il contenuto potrà essere alterato.';
 $string['entries'] = 'Record';
 $string['entrieslefttoadd'] = 'Per poter visualizzare i record inseriti dagli altri partecipanti è necessario inserire altri {$a->entriesleft} record.';
 $string['entrieslefttoaddtoview'] = 'Devi aggiungere {$a->entrieslefttoview} altri record prima di poter vedere i record degli altri partecipanti.';
@@ -335,6 +339,7 @@ $string['savesuccess'] = 'Le preimpostazioni sono state salvate. Queste preimpos
 $string['savetemplate'] = 'Salva il modello';
 $string['search'] = 'Cerca';
 $string['search:activity'] = 'Database - Informazioni sull\'attività';
+$string['search:entry'] = 'Database - record';
 $string['selectedrequired'] = 'Necessari tutti i selezionati';
 $string['showall'] = 'Visualizza tutti i record';
 $string['single'] = 'Dettagli';

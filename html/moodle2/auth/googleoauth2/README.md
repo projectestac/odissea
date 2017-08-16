@@ -1,5 +1,8 @@
+**No new versions are planned starting from Moodle 3.3:** starting from Moodle 3.3, Oauth2 should be implemented in Moodle core. It will require you to upgrade to Moodle 3.3 and switch to the Oauth2 core authentication (and probably do some migration), but it is a great news as authentication is a really sensible matter and having Oauth2 plugins in core will guarantee their maintenance. So starting from Moodle 3.3 I recommend to use the new Oauth2 core plugins ((https://docs.moodle.org/dev/Better_Office_Integrations_3.3#Core_API_for_managing_Authorized_OAuth_Applications) ). Missing core providers will likely be implemented by someone and publish in Moodle.org plugin repository. There will probably be a new Oauth2 categories in the Moodle plugin repository. wait and see...
 
-This plugin adds the "Sign-in with Google / Facebook / Github / Linkedin / Windows Live" buttons on the login page. The first time the user login with a social account, a new Moodle account is created.
+-
+
+This plugin adds the "Sign-in with Google / Github / Linkedin / Windows Live" buttons on the login page. The first time the user login with a social account, a new Moodle account is created.
 
 ### Requirements
 PHP 5.5
@@ -33,13 +36,9 @@ You can retrieve the access token from it too.
 The plugin does not include the 'vendor' folder as explained by [composer best practice](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
 If you need to know more about composer, you can read [Composer Namespaces in 5 Minutes](https://jtreminio.com/2012/10/composer-namespaces-in-5-minutes/)
 
-### Continueous integration, tracker...
-[![Build Status](https://travis-ci.org/mouneyrac/moodle-auth_googleoauth2.svg?branch=master)](https://travis-ci.org/mouneyrac/moodle-auth_googleoauth2)
-[![Stories in Ready](https://badge.waffle.io/mouneyrac/moodle-auth_googleoauth2.png?label=ready&title=Ready)](https://waffle.io/mouneyrac/moodle-auth_googleoauth2)
+### Continuous integration
+[![Build Status](https://travis-ci.org/rabser/moodle-auth_googleoauth2.svg?branch=master)](https://travis-ci.org/rabser/moodle-auth_googleoauth2)
 [![Codacy Badge](https://www.codacy.com/project/badge/84928dc4c553414786735ba745e57c93)](https://www.codacy.com/app/jerome/moodle-auth_googleoauth2)
-[![bountysource](https://api.bountysource.com/badge/team?team_id=49212&style=raised)](https://www.bountysource.com/teams/oauth2-authentication-plugin-for-moodle/backers)
-
-[![Throughput Graph](https://graphs.waffle.io/mouneyrac/moodle-auth_googleoauth2/throughput.svg)](https://waffle.io/mouneyrac/moodle-auth_googleoauth2/metrics)
 
 ### Credits
 * [Contributors](https://github.com/mouneyrac/auth_googleoauth2/graphs/contributors)
@@ -50,6 +49,4 @@ If you need to know more about composer, you can read [Composer Namespaces in 5 
 * [illuminate contracts](https://github.com/illuminate/contracts)
 * [Symfony EventDispatcher](http://symfony.com/)
 
-### +1 the plugin
-To like the plugin, go to the [Moodle.org repository plugin page](https://moodle.org/plugins/view/auth_googleoauth2), login and click on 'Add to my Favorites'. Find other ways to contribute on the [github plugin page](http://mouneyrac.github.io/moodle-auth_googleoauth2/).
 

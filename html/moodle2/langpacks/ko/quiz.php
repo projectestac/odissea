@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -822,8 +822,6 @@ $string['timelimit_help'] = '<p>기본적으로는 퀴즈를 푸는데 시간 �
   <li>시간이 다 경과되면 자동으로 퀴즈가 닫히며 그간 답해 놓은 것들을 갈무리하게 한다.</li>
   <li>만일 학생들이 제한 시간을 다 쓰고도 60초 이내에 정리하지 않으면 퀴즈를 종료하고 자동으로 0점 처리하게 한다.</li>
 </ul>';
-$string['timelimitmin'] = '제한시간(분)';
-$string['timelimitsec'] = '제한시간(초)';
 $string['timestr'] = '%y/%m/%d %H:%M:%S';
 $string['timesup'] = '시간이 다 되었습니다!';
 $string['timetaken'] = '걸린 시간';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -178,7 +178,7 @@ $string['uninstallconfirm'] = 'Está a piques de desinstalar o engadido <em>{$a-
 $string['uninstalldelete'] = 'Todos os datos asociados co engadido <em>{$a->name}</em> foron eliminados da base de datos. Para impedir que o engadido se reinstale a si mesmo, debe retirar manualmente o seu cartafol <em>{$a->rootdir}</em> do servidor agora. O propio Moodle non pode retirar o cartafol por mor dos permisos de escritura.';
 $string['uninstalldeleteconfirm'] = 'Todos os datos asociados co engadido <em>{$a->name}</em> foron eliminados da base de datos. Para impedir que o engadido se reinstale a si mesmo, debe retirar o seu cartafol <em>{$a->rootdir}</em> do servidor. Quere retirar o cartafol do engadido agora?';
 $string['uninstalldeleteconfirmexternal'] = 'Semella que a versión actual do engadido foi obtida mediante o sistema de xestión de código fonte ({$a}) de pago. Se vostede retira o cartafol do engadido, pode perder modificacións locais importantes do código. Asegúrese de que quere, definitivamente, retirar o cartafol do engadido antes de continuar.';
-$string['uninstallextraconfirmblock'] = 'Hai {$a->instances} instancias deste bloque.';
+$string['uninstallextraconfirmblock'] = 'Haiy {$a->instances} instancias deste bloque.';
 $string['uninstallextraconfirmenrol'] = 'Hai {$a->enrolments} matriculacións de usuarios.';
 $string['uninstallextraconfirmmod'] = 'Hai {$a->instances} instancias deste módulo en {$a->courses} cursos.';
 $string['uninstalling'] = 'Desinstalando {$a->name}';

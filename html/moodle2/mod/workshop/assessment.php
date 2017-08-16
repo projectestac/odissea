@@ -34,8 +34,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
-require_once(dirname(__FILE__).'/locallib.php');
+require(__DIR__.'/../../config.php');
+require_once(__DIR__.'/locallib.php');
 
 $asid       = required_param('asid', PARAM_INT);  // assessment id
 $assessment = $DB->get_record('workshop_assessments', array('id' => $asid), '*', MUST_EXIST);
@@ -62,20 +62,7 @@ $canoverridegrades      = has_capability('mod/workshop:overridegrades', $worksho
 $isreviewer             = ($USER->id == $assessment->reviewerid);
 $isauthor               = ($USER->id == $submission->authorid);
 
-if ($canviewallsubmissions) {
-    // check this flag against the group membership yet
-    if (groups_get_activity_groupmode($workshop->cm) == SEPARATEGROUPS) {
-        // user must have accessallgroups or share at least one group with the submission author
-        if (!has_capability('moodle/site:accessallgroups', $workshop->context)) {
-            $usersgroups = groups_get_activity_allowed_groups($workshop->cm);
-            $authorsgroups = groups_get_all_groups($workshop->course->id, $submission->authorid, $workshop->cm->groupingid, 'g.id');
-            $sharedgroups = array_intersect_key($usersgroups, $authorsgroups);
-            if (empty($sharedgroups)) {
-                $canviewallsubmissions = false;
-            }
-        }
-    }
-}
+$canviewallsubmissions = $canviewallsubmissions && $workshop->check_group_membership($submission->authorid);
 
 if ($isreviewer or $isauthor or ($canviewallassessments and $canviewallsubmissions)) {
     // such a user can continue

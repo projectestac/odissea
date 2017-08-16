@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'url', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Kies een variable';
-$string['clicktoopen'] = 'Klik op {$a} om een bron te openen';
+$string['clicktoopen'] = 'Klik op {$a} om de bron te openen';
 $string['configdisplayoptions'] = 'Selecteer alle opties die beschikbaar zouden kunnen zijn, bestaande instellingen worden niet aangepast. Hou de CTRL-toets ingedrukt om meerdere velden te kunnen selecteren.';
 $string['configframesize'] = 'Wanneer een webpagina of een geupload bestand getoond wordt in een frame, dan is deze waarde de hoogte (in pixels) van het top frame (waar de navigatie inzit).';
 $string['configrolesinparams'] = 'Inschakelen als je gelocaliseerde rolnamen in de lijst met beschikbare parametervariablen wil.';

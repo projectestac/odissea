@@ -56,8 +56,8 @@ class core_requirejs_testcase extends advanced_testcase {
         $this->assertEquals($expected, $result);
 
         // Find a plugin module.
-        $result = core_requirejs::find_one_amd_module('tool_templatelibrary', 'search', true);
-        $expected = ['tool_templatelibrary/search' => $CFG->dirroot . '/admin/tool/templatelibrary/amd/src/search.js'];
+        $result = core_requirejs::find_one_amd_module('mod_assign', 'grading_panel', true);
+        $expected = ['mod_assign/grading_panel' => $CFG->dirroot . '/mod/assign/amd/src/grading_panel.js'];
         $this->assertEquals($expected, $result);
 
         // Find all modules - no debugging.

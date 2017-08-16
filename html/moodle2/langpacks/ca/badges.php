@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -307,8 +307,8 @@ $string['notconnected'] = 'No connectat';
 $string['nothingtoadd'] = 'No hi ha cap criteri disponible per afegir.';
 $string['notification'] = 'Notifica qui ha creat la insígnia';
 $string['notification_help'] = 'Aquest paràmetre gestiona les notificacions enviades a qui va crear la insígnia per fer-los saber que s\'ha emès.
-Estan disponibles les següents opcions:
-* ** MAI ** – No s\'envien notificacions.
+Estan disponibles les opcions següents:
+* ** MAI ** - No s\'envien notificacions.
 * ** CADA VEGADA ** – S\'envia una notificació cada vegada que es concedeix aquesta insígnia.
 * **DIARI ** – S\'envien notificacions una vegada al dia.
 * ** SETMANAL ** – S\'envien notificacions una vegada a la setmana.

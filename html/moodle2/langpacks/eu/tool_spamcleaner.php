@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_spamcleaner', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_spamcleaner
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['spamauto'] = 'Spam-aren patroi komunak automatikoki atzeman.';
 $string['spamcannotdelete'] = 'Ezin da erabiltzaile hau ezabatu';
 $string['spamcannotfinduser'] = 'Zure bilaketak ez du erabiltzailerik aurkitu';
 $string['spamcleanerintro'] = '<p>Script honek aukera ematen dizu hainbat kate dituzten erabiltzaile-profilak bilatu eta horien kontuak ezabatzeko, agerikoa denean spam sortzaileek sortutakoak direla. Hainbat hitz gakorekin bila dezakezu komak erabilita (ad. casino, porn)</p>
-<p>Informazio gehiago izateko ikusi dokumentazioko <a href="http://docs.moodle.org/eu/Spama_murriztu_Moodle-n">Moodle-n spam-a murrizteko</a> atala.</p>';
+<p>Moodle Doc-ek informazio gehiago dute <a href="http://docs.moodle.org/eu/Spama_murriztu_Moodle-n">Moodle-n spam-a murrizteko</a> erari buruz.</p>';
 $string['spamdeleteall'] = 'Ezabatu erabiltzaile-kontu hauek guztiak';
 $string['spamdeleteallconfirm'] = 'Ziur al zaude erabiltzaile-kontu hauek guztiak ezabatu egin nahi dituzula? Ezin izango duzu atzera egin.';
 $string['spamdeleteconfirm'] = 'Ziur al zaude sarrera hau ezabatu egin nahi duzula? Ezin izango duzu atzera egin.';

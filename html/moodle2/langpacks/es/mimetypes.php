@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mimetypes', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,3 +44,4 @@ $string['image'] = 'Imagen ({$a->MIMETYPE2})';
 $string['text/html'] = 'Documento HTML';
 $string['text/plain'] = 'Archivo de texto';
 $string['text/rtf'] = 'documento RTF';
+$string['video'] = 'Fichero de video ({$a->EXT})';

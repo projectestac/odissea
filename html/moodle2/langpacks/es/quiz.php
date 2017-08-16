@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -927,8 +927,6 @@ $string['timeleft'] = 'Tiempo restante';
 $string['timelimit'] = 'Límite de tiempo';
 $string['timelimitexeeded'] = 'Lo sentimos. Se ha sobrepasado el límite de tiempo.';
 $string['timelimit_help'] = 'Si está habilitado, el tiempo límite se indica en la página inicial del cuestionario y un temporizador con el tiempo restante se muestra en el bloque de navegación del cuestionario.';
-$string['timelimitmin'] = 'Límite de tiempo (en minutos)';
-$string['timelimitsec'] = 'Límite de tiempo (en segundos)';
 $string['timestr'] = '%H:%M:%S on %d/%m/%y';
 $string['timesup'] = '¡Se ha pasado el tiempo!';
 $string['timetaken'] = 'Tiempo empleado';

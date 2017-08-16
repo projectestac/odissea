@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ur', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'ur', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,6 @@ $string['publishtonoone'] = 'آپ خود(ڈرافٹ)';
 $string['publishtosite'] = 'اس سائٹ پر کوئی بھی';
 $string['publishtoworld'] = 'اس دنیا میں کوئی بھی';
 $string['settingsupdatederror'] = 'ایک خرابی واقع ہوئی ہے، بلاگ کع من پسندیدگیوں میں تبدیلی نہیں لا جاسکی';
-$string['siteblog'] = 'بلاگ سائٹ: {$a}';
 $string['siteblogs'] = 'تمام سائیٹ کے استعمال کنندگان بلاگ کے تمام اندراج دیکھ سکتے ہیں';
 $string['tagdatelastused'] = 'تاریخ کا ٹیگ پہلے سے استعمال ہوا تھا';
 $string['tags'] = 'ٹیگز';

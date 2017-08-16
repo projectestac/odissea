@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['hash_fnv1_32'] = 'FNV1_32';
 $string['hash_fnv1_64'] = 'FNV1_64';
 $string['hash_fnv1a_32'] = 'FNV1A_32';
 $string['hash_fnv1a_64'] = 'FNV1A_64';
-$string['hash_help'] = 'Especifica l\'algoritme resum per l\'element de la clau. Cada algoritme resum té avantatges i desavantatges. Utilitzeu el valor per defecte si no esteu segurs o no us importa.';
+$string['hash_help'] = 'Especifica l\'algoritme resum utilitzat per l\'element de la clau. Cada algoritme resum té avantatges i desavantatges. Utilitzeu el valor per defecte si no esteu segurs o no us importa.';
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
@@ -88,5 +88,5 @@ La versió de l\'extensió «memcached» de PHP que eteu utilitzant actualment n
 $string['usecompression'] = 'Utilitza compressió';
 $string['usecompression_help'] = 'Habilita o inhabilita la compressió de la càrrega útil. Quan està habilitat, els elements de valor de més d\'un cert llindar (actualment 100 bytes) es comprimeixen durant l\'emmagatzematge i es descomprimeixen durant la recuperació de manera transparent.';
 $string['useserialiser'] = 'Usa serialitzador';
-$string['useserialiser_help'] = 'Especifica el serialitzador a usar per serialitzar valors no escalars.
-Els serializadores vàlids són Memcached :: SERIALIZER_PHP o Memcached :: SERIALIZER_IGBINARY. Aquest últim només s\'admet quan memcached està configurat amb l\'opció --enable-memcached-igbinary i l\'extensió igbinary està carregada.';
+$string['useserialiser_help'] = 'Especifica el serialitzador que s\'ha d\'usar per serialitzar valors no escalars.
+Els serialitzadors vàlids són Memcached :: SERIALIZER_PHP o Memcached :: SERIALIZER_IGBINARY. Aquest últim només s\'admet quan memcached està configurat amb l\'opció --enable-memcached-igbinary i l\'extensió igbinary està carregada.';

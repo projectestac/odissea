@@ -4,7 +4,9 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 language: php
 php:
-  - "5.5"
+  - "7.1"
+addons:
+  postgresql: "9.3"
 env:
   global:
    - DB=pgsql MOODLE_VERSION=master
@@ -29,5 +31,5 @@ before_script:
  - cd ../..
  - php admin/tool/behat/cli/init.php
 script:
- - vendor/bin/behat --config /home/travis/bht_moodledata/behat/behat.yml --tags @auth_googleoauth2
+ - vendor/bin/behat --config /home/travis/bht_moodledata/behatrun/behat/behat.yml --tags @auth_googleoauth2
 

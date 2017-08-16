@@ -74,7 +74,7 @@ class mod_assign_extension_form extends moodleform {
                                                                     $assign->get_uniqueid_for_user($user->id),
                                                                     $extrauserfields,
                                                                     !$assign->is_active_user($userid)));
-            $usercount += 1;
+                $usercount += 1;
         }
 
         $userscount = count($userlist);

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_course_overview', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Υπάρχουν {$a} που χρήζουν προσοχής';
+$string['activityoverview'] = 'Υπάρχουν {$a} που χρήζουν παρακολούθησης';
 $string['alwaysshowall'] = 'Εμφάνιση όλων πάντα';
 $string['collapseall'] = 'Σύμπτυξη όλων των λιστών μαθήματος';
 $string['configotherexpanded'] = 'Αν ενεργοποιηθεί, τα μαθήματα θα είναι ανεπτυγμένα από προεπιλογή, εκτός αν παρακαμφθεί από τις προτιμήσεις του χρήστη.';
 $string['configpreservestates'] = 'Αν ενεργοποιηθεί, οι καταστάσεις συμπτυγμένο / ανεπτυγμένο που καθορίζεται από το χρήστη αποθηκεύονται και χρησιμοποιούνται σε κάθε φόρτωση.';
-$string['course_overview:addinstance'] = 'Προσθήκη νέου μπλοκ επισκόπηση μαθήματος';
+$string['course_overview:addinstance'] = 'Προσθήκη νέου μπλοκ επισκόπηση μαθημάτων';
 $string['course_overview:myaddinstance'] = 'Προσθήκη νέου μπλοκ επισκόπηση μαθημάτων στη σελίδα Η αρχική μου';
 $string['defaultmaxcourses'] = 'Προεπιλεγμένος μέγιστος αριθμός μαθημάτων';
 $string['defaultmaxcoursesdesc'] = 'Μέγιστος αριθμός μαθημάτων που θα εμφανίζονται στο μπλοκ επισκόπηση μαθημάτων, 0 θα εμφανίζονται όλα τα μαθήματα';
@@ -53,7 +53,7 @@ $string['none'] = 'Κανένα';
 $string['numtodisplay'] = 'Αριθμός μαθημάτων προς εμφάνιση:';
 $string['onlyparentname'] = 'Μόνο γονική κατηγορία';
 $string['otherexpanded'] = 'Ανάπτυξη άλλων μαθημάτων';
-$string['pluginname'] = 'Επισκόπηση Μαθημάτων';
+$string['pluginname'] = 'Επισκόπηση μαθημάτων';
 $string['preservestates'] = 'Διατήρηση καταστάσεων ανεπτυγμένων';
 $string['shortnameprefix'] = 'Περιλαμβάνει {$a}';
 $string['shortnamesufixprural'] = '(και {$a} άλλα)';

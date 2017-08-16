@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['cachedef_groupdata'] = 'Informazioni sui gruppi dei corsi';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier . contenuto ripulito';
 $string['cachedef_langmenu'] = 'Elenco delle lingue disponibili';
 $string['cachedef_locking'] = 'Locking';
+$string['cachedef_message_processors_enabled'] = 'Stato abilitazione gestori messaggi';
+$string['cachedef_message_time_last_message_between_users'] = 'Data di creazione dei messaggi recenti tra utenti';
 $string['cachedef_navigation_expandcourse'] = 'Navigazione espandibile dei corsi';
 $string['cachedef_observers'] = 'Event observer';
 $string['cachedef_plugin_functions'] = 'Callback offerti dai plugin';
@@ -107,9 +109,6 @@ $string['localstorenotification'] = 'Questa cache può essere mappata su uno sto
 $string['lockdefault'] = 'Default';
 $string['locking'] = 'Locking';
 $string['locking_help'] = 'Il locking evita che gli stessi dati presenti in cache siano acceduti da più processi contemporaneamente, evitando sovrascritture. Il meccanismo di locking definisce come viene acquisito e controllato il lock.';
-$string['lockingmeans'] = 'Meccanismo di locking';
-$string['lockmethod'] = 'Metodo di lock';
-$string['lockmethod_help'] = 'Il metodo utilizzato per il locking quando questo store lo richiede.';
 $string['lockname'] = 'Nome';
 $string['locknamedesc'] = 'Il nome deve essere univoco e contenere solamente i caratteri a-zA-Z_';
 $string['locknamenotunique'] = 'Il nome inserito non è univoco. E\' necessario cambiare nome.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz_responses', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz_responses
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['responsesdownload'] = 'تحميل الإجابات';
 $string['responsesfilename'] = 'الإجابات';
 $string['responsesoptions'] = 'خيارات الاجابات';
 $string['responsesreport'] = 'تقرير الإجابات';
-$string['responsestitle'] = 'الإجابات';
+$string['responsestitle'] = 'اجابات مفصلة';
 $string['responsex'] = 'الإجابة {$a}';
 $string['rightanswer'] = 'الإجابة الصحيحة';
 $string['rightanswerx'] = 'الإجابة الصحيحة  {$a}';

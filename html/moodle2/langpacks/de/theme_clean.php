@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'theme_clean', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,7 +57,8 @@ $string['invert'] = 'Navigationsleiste invertieren';
 $string['invertdesc'] = 'Diese Option invertiert die Farben in der Navigationsleiste. Die Hintergrundfarbe wird schwarz, die Textfarbe wird grau.';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Dieses Logo wird lediglich im Kopfbereich der Startseite und der Loginseite angezeigt.<br>Falls die Höhe des Logos größer als 75 Pixel ist, fügen Sie folgende Anweisung mit der richtigen Höhe im Feld \'CSS-Anpassungen\' ein:
-<pre>div.logo {height: 100px;}</pre>';
+<pre>div.logo {height: 100px;}</pre>
+Wenn die Höhe einen anderen Wert als 100 Pixel hat, passen Sie dies entsprechend an. Wenn hier kein Logo hinzugefügt wird, wird das Logo unter Erscheinung > Logos genutzt.';
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
@@ -65,4 +66,4 @@ $string['sitelogo'] = 'Site-Logo';
 $string['sitename'] = 'Site-Bezeichnung und kleines Logo anzeigen';
 $string['sitenamedesc'] = 'Wenn ein kleines Logo vorhanden ist, wird das Logo auf jeder Seite in der Navigationsleite angezeigt. Ohne kleines Logo wird der Name der Website angezeigt.';
 $string['smalllogo'] = 'Kleines Logo';
-$string['smalllogodesc'] = 'Das kleine Logo wird in der Navigationsleiste angezeigt. Wenn ein Logo für den Kopfbereich der Startseite und der Anmeldeseite verfügbar ist, wird das kleine Logo auf diesen Seiten nicht angezeigt.';
+$string['smalllogodesc'] = 'Das kleine Logo wird in der Navigationsleiste angezeigt. Wenn ein Logo für den Kopfbereich der Startseite und der Anmeldeseite verfügbar ist, wird das kleine Logo auf diesen Seiten nicht angezeigt. Wenn hier kein Logo hinzugefügt wird, wird das kompakte Logo unter Erscheinung > Logos genutzt.';

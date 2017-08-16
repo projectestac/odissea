@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -387,8 +387,6 @@ $string['realm_help'] = 'Sono previsti tre tipi di questionario:
 $string['redirecturl'] = 'L\'URL alla quale viene re-indirizzato l\'utente dopo aver partecipato al questionario';
 $string['remove'] = 'Elimina';
 $string['removeallquestionnaireattempts'] = 'Elimina tutte le risposte al questionario';
-$string['removenotinuse'] = 'Il questionario dipendeva da un questionario Pubblico che è stato eliminato.
-                Non è più possibile utilizzarlo e deve essere eliminato.';
 $string['required'] = 'Risposta obbligatoria';
 $string['required_help'] = 'Se si seleziona **Sì**, la domanda sarà obbligatoria, ovvero l\'utente non potrà inviare il questionario senza aver prima risposto a questa domanda. Se, prima di rispondere alle domande obbligatorie, si cercherà di inviare un questionario (o, nel caso di questionari su più pagine, di passare ad un\'altra pagina dello stesso) verrà mostrato un messaggio di errore con l\'elenco di tutte le domande obbligatorie alle quali non si è fornita risposta nel questionario (o nella pagina).';
 $string['requiredparameter'] = 'E\' stato omesso un parametro obbligatorio.';

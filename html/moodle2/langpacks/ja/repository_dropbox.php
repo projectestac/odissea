@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_dropbox', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,13 +32,9 @@ $string['configplugin'] = 'Dropbox設定 ';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropboxフォルダを表示する';
 $string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Permission type」を「Full Dropbox」にしてください。';
-$string['legacyapihelpsupported'] = 'Dropboxは2015年6月にOAuth 2 APIを発表しました。あなたは新しいアプリケーションを<a href="https://www.dropbox.com/developers/apps/" target="_blank">https://www.dropbox.com/developers/apps/</a>で設定して以下で表示されているOAuth 2リダイレクトURLを指定することができます。';
 $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
 $string['notitle'] = 'タイトルなし';
 $string['oauth2redirecturi'] = 'OAuth 2リダイレクトURI';
-$string['oauth2title'] = 'OAuth 2 API';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = '次回から入力を省略する';
 $string['secret'] = 'Dropbox秘密鍵';
-$string['uselegacyapi'] = '廃止予定のv1 APIを使用する';
-$string['usev2api'] = 'OAuth 2 APIを使用する (推奨)';

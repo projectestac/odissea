@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_langimport', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['install'] = 'Instalatu aukeratutako hizkuntza-paketea(k)';
 $string['installedlangs'] = 'Instalatutako hizkuntza-paketeak';
 $string['langimport'] = 'Hizkuntza inportatzeko baliabidea';
-$string['langimportdisabled'] = 'Hizkuntza inportatzeko funtzioa ez dago gaituta. Eskuz eguneratu behar dituzu hizkuntza-paketeak fitxategi-sisteman. Ez ahaztu ondoren kateen cache-a ezabatzeaz.';
+$string['langimportdisabled'] = 'Hizkuntza inportatzeko funtzioa ez dago gaituta. Eskuz eguneratu behar dituzu hizkuntza-paketeak fitxategi-sisteman. Hori egin ondoren ez ahaztu kateen cachea ezabatzeaz.';
 $string['langpackinstalled'] = '\'{$a}\' hizkuntza-paketea ondo instalatu da';
 $string['langpackinstalledevent'] = 'Hizkuntza-paketea instalatu da';
 $string['langpackremoved'] = '\'{$a}\' hizkuntzaren desinstalazioa burutu da';

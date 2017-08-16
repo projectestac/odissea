@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -471,7 +471,7 @@ $string['messageprovider:confirmation'] = 'Confirmació de les vostres trameses 
 $string['messageprovider:submission'] = 'Notificació de trameses de qüestionari';
 $string['min'] = 'Mín.';
 $string['minutes'] = 'minuts';
-$string['missingcorrectanswer'] = 'S\'ha d\'especificar la resposta correcta';
+$string['missingcorrectanswer'] = 'Cal especificar la resposta correcta';
 $string['missingitemtypename'] = 'Falta el nom';
 $string['missingquestion'] = 'Aquesta pregunta sembla no existir ja';
 $string['modulename'] = 'Qüestionari';
@@ -909,8 +909,6 @@ $string['timeleft'] = 'Temps restant';
 $string['timelimit'] = 'Temps màxim';
 $string['timelimitexeeded'] = 'Heu esgotat el temps';
 $string['timelimit_help'] = 'Si està activat, el límit de temps s\'indica a la pàgina inicial del qüestionari i en el bloc de navegació del qüestionari es mostra un temporitzador de compte enrere.';
-$string['timelimitmin'] = 'Temps màxim (minuts)';
-$string['timelimitsec'] = 'Límit de temps (segons)';
 $string['timestr'] = '%d/%m/%y - %H:%M:%S';
 $string['timesup'] = 'Temps esgotat';
 $string['timetaken'] = 'Temps emprat';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'error', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = 'Löschung der Aktivität in Bearbeitung...';
 $string['alreadyloggedin'] = 'Sie sind bereits als {$a} angemeldet. Bitte melden Sie sich ab, bevor Sie sich mit einem anderen Anmeldenamen wieder anmelden.';
 $string['authnotexisting'] = 'Das Authorisierungsplugin existiert nicht';
 $string['backupcontainexternal'] = 'Diese Backup-Datei enthält externe Moodle Netzwerkverbindungen (MNET), die nicht lokal konfiguriert wurden.';
@@ -174,6 +175,7 @@ $string['categorynamerequired'] = 'Die Kategoriebezeichnung wird benötigt';
 $string['categorytoolong'] = 'Kursbereichsname ist zu lang';
 $string['commentmisconf'] = 'Kommentar-ID ist falsch konfiguriert';
 $string['componentisuptodate'] = 'Die Komponente ist aktuell.';
+$string['confirmationnotenabled'] = 'Nutzer-Bestätigung ist auf dieser Seite nicht aktiviert';
 $string['confirmsesskeybad'] = 'Der \'session key\' für diese Aktion konnte nicht bestätigt werden. Dieses Sicherheitsfeature schützt Sie vor der nicht beabsichtigten Ausführung wichtiger Funktionen oder der Ausführung von Aktionen durch Dritte in Ihrem Namen. Bitte loggen Sie sich nun ggfs. neu ein.';
 $string['couldnotassignrole'] = 'Ein schwerer, nicht näher bezeichneter Fehler ist aufgetreten, während Sie sich eine Rolle zuweisen wollten.';
 $string['couldnotupdatenoexistinguser'] = 'Nutzer konnte nicht aktualisiert werden - Nutzer existiert nicht';
@@ -226,6 +228,7 @@ $string['duplicaterolename'] = 'Eine Rolle mit diesem Namen gibt es bereits!';
 $string['duplicateroleshortname'] = 'Eine Rolle mit diesem Kurznamen gibt es bereits!';
 $string['duplicateusername'] = 'Doppelter Anmeldename - Datensatz überspringen';
 $string['emailfail'] = 'E-Mail-Versand fehlgeschlagen';
+$string['enddatebeforestartdate'] = 'Das Enddatum des Kurses muss nach dem Startdatum sein.';
 $string['error'] = 'Fehler aufgetreten';
 $string['errorcleaningdirectory'] = 'Fehler beim Bereinigen des Verzeichnisses "{$a}"';
 $string['errorcopyingfiles'] = 'Fehler beim Kopieren der Dateien';
@@ -441,6 +444,7 @@ $string['nopermissiontoviewletergrade'] = 'Kein Recht zur Anzeige von Notenstufe
 $string['nopermissiontoviewpage'] = 'Sie haben keinen Zugriff auf diese Seite';
 $string['nosite'] = 'Die Kursübersicht wurde nicht gefunden!';
 $string['nositeid'] = 'Keine Site-ID';
+$string['nostartdatenoenddate'] = 'Ein Enddatum des Kurses kann nur festgelegt werden, wenn auch ein Startdatum festgelegt wird.';
 $string['nostatstodisplay'] = 'Es sind keine Daten zur Anzeige vorhanden.';
 $string['notallowedtoupdateprefremotely'] = 'Sie sind nicht berechtigt, die Nutzereinstellungen aus der Ferne zu aktualisieren.';
 $string['notavailable'] = 'Dies ist zur Zeit nicht verfügbar.';
@@ -467,6 +471,7 @@ $string['querystringcannotbeempty'] = 'Der Abfragetext darf nicht leer sein.';
 $string['redirecterrordetected'] = 'Nichtunterstützte Weiterleitung gefunden, Scriptausführung abgebrochen';
 $string['refoundto'] = 'Kann ersetzt werden durch {$a}';
 $string['refoundtoorigi'] = 'Ersetzt durch den Originalbetrag: {$a}';
+$string['registrationdisabled'] = 'Registrierung ist auf dieser Seite deaktiviert';
 $string['remotedownloaderror'] = '<p>Der Download auf Ihren Server konnte nicht ausgeführt werden. Prüfen Sie bitte die Proxy-Einstellungen, die PHP CURL Erweiterung wird dringend empfohlen.</p><p>Die Datei <a href="{$a->url}">{$a->url}</a> muss nun manuell herunter geladen, entpackt und auf den Server nach "{$a->dest}" kopiert werden. there.</p>';
 $string['remotedownloadnotallowed'] = 'Der Download von Komponenten auf Ihren Server ist nicht erlaubt (allow_url_fopen ist deaktiviert). <br /><br /> Die Datei <a href="{$a->url}">{$a->url}</a> muss manuell heruntergeladen werden. Kopieren Sie die Datei nach "{$a->dest}" auf Ihren Server und entpacken Sie sie dort.';
 $string['reportnotavailable'] = 'Dieser Berichtstyp ist nur für die Startseite verfügbar';
@@ -494,6 +499,7 @@ $string['sessionipnomatch'] = 'Die IP-Adresse scheint sich seit Ihrem letzten Lo
 $string['sessionipnomatch2'] = '<p>Ihre IP-Adresse hat sich geändert, seit Sie sich eingeloggt haben. Diese Sicherheitsoption schützt davor, dass Ihre Identität gestohlen werden kann, während Sie eingeloggt sind. Sie könnten diese Fehlermeldung auch erhalten, wenn Sie ein Funknetzwerk benutzen oder zwischen unterschiedlichen Netzwerken pendeln (roaming). Bitte fragen Sie für weitere Hilfe den Administrator Ihrer Website. </p><p>Falls Sie weitermachen möchten, aktualisieren Sie bitte die Seite (F5-Taste).</p>';
 $string['sessionwaiterr'] = 'Zeitüberschreitung beim Warten auf Sessionschließung.<br />Warten Sie bis die laufenden Anfragen abgeschlossen sind und versuchen Sie es noch einmal.';
 $string['shortnametaken'] = 'Kurzbezeichnung wird für anderen Kurs genutzt  ({$a})';
+$string['sitepolicynotagreed'] = 'Zustimmungserklärung nicht bestätigt. <a href="{$a}">Klicken Sie hier, um die Zustimmungserklärung zu öffnen</a>.';
 $string['socksnotsupported'] = 'SOCKS5 Proxy wird in PHP4 nicht unterstützt';
 $string['spellcheckernotconf'] = 'Rechtschreibhilfe ist nicht eingerichtet';
 $string['sslonlyaccess'] = 'Aus Sicherheitsgründen sind ausschließlich Verbindungen über HTTPS erlaubt.';
@@ -560,6 +566,7 @@ $string['usernotdeletedadmin'] = 'Nutzerkonto nicht gelöscht - Administratorkon
 $string['usernotdeletederror'] = 'Nutzer/in wurde nicht gelöscht - unbekannter Fehler';
 $string['usernotdeletedmissing'] = 'Nutzer/in wurde nicht gelöscht - Anmeldename wurde nicht gefunden';
 $string['usernotdeletedoff'] = 'Nutzer/in nicht gelöscht - Löschen ist nicht erlaubt';
+$string['usernotfullysetup'] = 'Nutzerkonto unvollständig';
 $string['usernotincourse'] = 'Der Nutzer ist nicht in diesem Kurs!';
 $string['usernotrenamedadmin'] = 'Administrator/in-Accounts können nicht umbenannt werden.';
 $string['usernotrenamedexists'] = 'Nutzer/in wurde nicht umbenannt - der eingegebene Nutzername wird bereits verwendet';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,9 @@ $string['config_show_best'] = '¿Cuántas de las calificaciones más altas deber
 $string['config_show_worst'] = '¿Cuántas de las calificaciones más bajas deberían mostrarse (0 para desactivar)?';
 $string['configuredtoshownothing'] = 'La configuración actual de bloques no permite mostrar resultados.';
 $string['config_use_groups'] = '¿Mostrar grupos en lugar de estudiantes (solo si la actividad permite grupos)?';
+$string['defaultdecimalplaces'] = 'Lugares decimales';
+$string['defaultgradedisplay'] = 'Mostrar calificaciones como';
+$string['defaultnameoptions'] = 'Privacidad de los resultados';
 $string['error_emptyactivityid'] = 'Por favor configure este bloque y seleccione de qué actividad debe mostrar resultados.';
 $string['error_emptyactivityrecord'] = 'Error: la actividad seleccionada no existe en la base de datos.';
 $string['error_nogroupsexist'] = 'Error: el bloque está configurado para mostrar calificaciones en modo de grupos, pero no hay grupos creados.';

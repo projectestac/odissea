@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradereport_singleview', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

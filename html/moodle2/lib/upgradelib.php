@@ -371,6 +371,12 @@ function upgrade_stale_php_files_present() {
     global $CFG;
 
     $someexamplesofremovedfiles = array(
+        // Removed in 3.2.
+        '/calendar/preferences.php',
+        '/lib/alfresco/',
+        '/lib/jquery/jquery-1.12.1.min.js',
+        '/lib/password_compat/tests/',
+        '/lib/phpunit/classes/unittestcase.php',
         // Removed in 3.1.
         '/lib/classes/log/sql_internal_reader.php',
         '/lib/zend/',
@@ -2434,6 +2440,36 @@ function check_unoconv_version(environment_results $result) {
             return $result;
         }
     }
+    return null;
+}
+
+/**
+ * Checks for up-to-date TLS libraries. NOTE: this is not currently used, see MDL-57262.
+ *
+ * @param environment_results $result object to update, if relevant.
+ * @return environment_results|null updated results or null if unoconv path is not executable.
+ */
+function check_tls_libraries(environment_results $result) {
+    global $CFG;
+
+    if (!function_exists('curl_version')) {
+        $result->setInfo('cURL PHP extension is not installed');
+        $result->setStatus(false);
+        return $result;
+    }
+
+    if (!\core\upgrade\util::validate_php_curl_tls(curl_version(), PHP_ZTS)) {
+        $result->setInfo('invalid ssl/tls configuration');
+        $result->setStatus(false);
+        return $result;
+    }
+
+    if (!\core\upgrade\util::can_use_tls12(curl_version(), php_uname('r'))) {
+        $result->setInfo('ssl/tls configuration not supported');
+        $result->setStatus(false);
+        return $result;
+    }
+
     return null;
 }
 

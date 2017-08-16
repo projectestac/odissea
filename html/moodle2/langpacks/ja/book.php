@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['book:addinstance'] = '新しいブックを追加する';
 $string['book:edit'] = 'ブックの章を編集する';
 $string['book:read'] = 'ブックを表示する';
 $string['book:viewhiddenchapters'] = 'ブックの非表示の章を表示する';
+$string['chapterandsubchaptersdeleted'] = '章「 {$a->title} 」および節「 {$a->subchapters} 」が削除されました。';
+$string['chapterdeleted'] = '章「 {$a->title} 」が削除されました。';
 $string['chapters'] = '章';
 $string['chaptertitle'] = '章題';
 $string['confchapterdelete'] = '本当にこの章を削除してもよろしいですか?';
@@ -62,9 +64,11 @@ $string['movechapterup'] = '章「 {$a} 」を上に移動する';
 $string['navexit'] = 'ブックを終了する';
 $string['navimages'] = 'イメージ';
 $string['navnext'] = '次';
+$string['navnexttitle'] = '次へ: {$a}';
 $string['navoptions'] = 'ナビゲーションリンクに利用可能なオプション';
 $string['navoptions_desc'] = 'ブックページにおけるナビゲーション表示のオプションです。';
 $string['navprev'] = '前';
+$string['navprevtitle'] = '前へ: {$a}';
 $string['navstyle'] = 'ナビゲーションスタイル';
 $string['navstyle_help'] = '* イメージ - ナビゲーションにアイコンが使用されます。
 * テキスト - ナビゲーションに章題が使用されます。';

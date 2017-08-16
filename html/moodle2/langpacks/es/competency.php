@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'competency', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['eventplanreviewrequestcancelled'] = 'Solicitud de revisión del plan de
 $string['eventplanreviewrequested'] = 'Revisión del plan de aprendizaje solicitada.';
 $string['evidence_coursecompleted'] = 'El curso \'{$a}\' ha sido completado.';
 $string['evidence_coursemodulecompleted'] = 'La actividad \'{$a}\' ha sido completada.';
+$string['invalidpersistenterror'] = 'Error: {$a}';
 $string['invalidtaxonomy'] = 'Taxonomía inválida: {$a}';
 $string['planstatusactive'] = 'Activo';
 $string['planstatuscomplete'] = 'Completado';

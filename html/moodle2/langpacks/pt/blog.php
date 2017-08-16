@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'Esta mensagem não é da sua autoria';
 $string['entrysaved'] = 'A sua mensagem foi gravada';
 $string['entrytitle'] = 'Título da mensagem';
 $string['eventblogassociationadded'] = 'Associação de blogue criada';
+$string['eventblogassociationdeleted'] = 'Associação de blogues eliminada';
 $string['eventblogentriesviewed'] = 'Entradas de blogue visualizadas';
+$string['eventblogexternaladded'] = 'Blogue externo registado';
+$string['eventblogexternalremoved'] = 'Removido o registo do blogue externo';
+$string['eventblogexternalupdated'] = 'Blogue externo atualizado';
 $string['evententryadded'] = 'Entrada de blogue adicionada';
 $string['evententrydeleted'] = 'Entrada de blogue eliminada';
 $string['evententryupdated'] = 'A mensagem do blogue foi atualizada';
+$string['eventexternalblogsviewed'] = 'Visualizados os blogues externos registados';
 $string['externalblogcrontime'] = 'Agendar cron do blogue externo';
 $string['externalblogdeleteconfirm'] = 'Cancelar o registo deste blogue externo?';
 $string['externalblogdeleted'] = 'O blogue externo foi cancelado';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = 'Obtido em';
 $string['rssfeed'] = 'Blogue Listas RSS';
 $string['searchterm'] = 'Pesquisar: {$a}';
 $string['settingsupdatederror'] = 'Ocorreu um erro e as preferências não foram atualizadas';
-$string['siteblog'] = 'Blogue do site: {$a}';
 $string['siteblogdisable'] = 'O blogue do site não está ativo';
 $string['siteblogheading'] = 'Blogue do site';
 $string['siteblogs'] = 'Todos os utilizadores do site podem ver todas as entradas dos blogues';
@@ -187,4 +191,5 @@ $string['viewmyentriesaboutmodule'] = 'Ver as minhas mensagens sobre {$a}';
 $string['viewsiteentries'] = 'Ver todas as mensagens';
 $string['viewuserentries'] = 'Ver todas as mensagens por {$a}';
 $string['worldblogs'] = 'Todos podem ler as mensagens configuradas para estarem acessíveis a todos';
+$string['wrongexternalid'] = 'ID de blog externo errado';
 $string['wrongpostid'] = 'ID da mensagem incorreto';

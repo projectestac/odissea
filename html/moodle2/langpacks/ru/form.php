@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,12 @@ $string['nomethodforaddinghelpbutton'] = 'Отсутствует метод до
 $string['nonexistentformelements'] = 'Попытка добавить кнопку вызова справки для отсутствующего элемента формы: {$a}';
 $string['noselection'] = 'Ничего не выбрано';
 $string['nosuggestions'] = 'Нет предложений';
+$string['novalueclicktoset'] = 'Нажмите, чтобы ввести текст';
 $string['optional'] = 'Необязательное';
 $string['othersettings'] = 'Другие настройки';
+$string['passwordunmaskedithint'] = 'Изменить пароль';
+$string['passwordunmaskinstructions'] = 'Нажмите Enter, чтобы сохранить изменения';
+$string['passwordunmaskrevealhint'] = 'Показать';
 $string['requiredelement'] = 'Обязательное поле';
 $string['revealpassword'] = 'Показать';
 $string['security'] = 'Защита';

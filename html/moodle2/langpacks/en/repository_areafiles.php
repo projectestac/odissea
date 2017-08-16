@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_areafiles', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_areafiles', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_areafiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

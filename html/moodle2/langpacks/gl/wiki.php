@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'wiki', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -215,8 +215,8 @@ $string['print'] = 'Imprimir';
 $string['rated'] = 'Vostede puntuou esta páxina como {$a}';
 $string['rating'] = 'Puntuación';
 $string['ratingmode'] = 'Modo de puntuación';
-$string['removeallwikitags'] = 'Retirar todas as etiquetas wiki';
-$string['removepages'] = 'Retirar páxinas';
+$string['removeallwikitags'] = 'Eliminar todas as etiquetas wiki';
+$string['removepages'] = 'Eliminar páxinas';
 $string['reparsetimeout'] = 'Analizando de novo o tempo límite predeterminado';
 $string['repeatedsection'] = 'Erro no wiki: Non pode repetir o nome da sección «{$a}»';
 $string['restore'] = 'Restaurar';

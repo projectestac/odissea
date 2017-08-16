@@ -121,9 +121,9 @@ class webservice {
             }
         }
 
-        //Non admin can not authenticate if maintenance mode
-        $hassiteconfig = has_capability('moodle/site:config', context_system::instance(), $user);
-        if (!empty($CFG->maintenance_enabled) and !$hassiteconfig) {
+        // Cannot authenticate unless maintenance access is granted.
+        $hasmaintenanceaccess = has_capability('moodle/site:maintenanceaccess', context_system::instance(), $user);
+        if (!empty($CFG->maintenance_enabled) and !$hasmaintenanceaccess) {
             //this is usually temporary, client want to implement code logic  => moodle_exception
             throw new moodle_exception('sitemaintenance', 'admin');
         }
@@ -341,6 +341,7 @@ class webservice {
                     $newtoken->contextid = context_system::instance()->id;
                     $newtoken->creatorid = $userid;
                     $newtoken->timecreated = time();
+                    $newtoken->privatetoken = null;
 
                     $DB->insert_record('external_tokens', $newtoken);
                 }
@@ -471,7 +472,8 @@ class webservice {
                       FROM {external_functions} f
                      WHERE f.name IN (SELECT sf.functionname
                                         FROM {external_services_functions} sf
-                                       WHERE sf.externalserviceid $serviceids)";
+                                       WHERE sf.externalserviceid $serviceids)
+                     ORDER BY f.name ASC";
             $functions = $DB->get_records_sql($sql, $params);
         } else {
             $functions = array();
@@ -736,7 +738,22 @@ class webservice {
 
     }
 
+    /**
+     * Return a list with all the valid user tokens for the given user, it only excludes expired tokens.
+     *
+     * @param  string $userid user id to retrieve tokens from
+     * @return array array of token entries
+     * @since Moodle 3.2
+     */
+    public static function get_active_tokens($userid) {
+        global $DB;
 
+        $sql = 'SELECT t.*, s.name as servicename FROM {external_tokens} t JOIN
+                {external_services} s ON t.externalserviceid = s.id WHERE
+                t.userid = :userid AND (t.validuntil IS NULL OR t.validuntil > :now)';
+        $params = array('userid' => $userid, 'now' => time());
+        return $DB->get_records_sql($sql, $params);
+    }
 }
 
 /**
@@ -924,9 +941,9 @@ abstract class webservice_server implements webservice_server_interface {
             $user = $this->authenticate_by_token(EXTERNAL_TOKEN_EMBEDDED);
         }
 
-        //Non admin can not authenticate if maintenance mode
-        $hassiteconfig = has_capability('moodle/site:config', context_system::instance(), $user);
-        if (!empty($CFG->maintenance_enabled) and !$hassiteconfig) {
+        // Cannot authenticate unless maintenance access is granted.
+        $hasmaintenanceaccess = has_capability('moodle/site:maintenanceaccess', context_system::instance(), $user);
+        if (!empty($CFG->maintenance_enabled) and !$hasmaintenanceaccess) {
             throw new moodle_exception('sitemaintenance', 'admin');
         }
 

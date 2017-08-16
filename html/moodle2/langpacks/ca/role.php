@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addinganewrole'] = 'S\'està afegint un nou rol';
-$string['addrole'] = 'Afegeix un rol nou';
+$string['addrole'] = 'Afegeix un nou rol';
 $string['advancedoverride'] = 'Redefinició avançada de rols';
 $string['allow'] = 'Permet';
 $string['allowassign'] = 'Permís per assignar rols';
@@ -115,8 +115,8 @@ $string['comment:view'] = 'Llegir comentaris';
 $string['community:add'] = 'Usar el bloc de comunitat per cercar hubs i trobar cursos';
 $string['community:download'] = 'Descarregar-se un curs des del bloc de comunitat';
 $string['competency:competencygrade'] = 'Fixa la puntuació de la competència';
-$string['competency:competencymanage'] = 'Gestiona els marcs de la competència';
-$string['competency:competencyview'] = 'Visualitza els marcs de la competència';
+$string['competency:competencymanage'] = 'Gestiona els marcs de competències';
+$string['competency:competencyview'] = 'Visualitza els marcs de competències';
 $string['competency:coursecompetencyconfigure'] = 'Configura les opcions de les competències del curs';
 $string['competency:coursecompetencygradable'] = 'Rep puntuacions de les competències';
 $string['competency:coursecompetencymanage'] = 'Gestiona les competències del curs';

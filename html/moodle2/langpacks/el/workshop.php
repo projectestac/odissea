@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aggregation'] = 'Συνάθροιση βαθμών';
 $string['allocation'] = 'Κατανομή υποβολής';
 $string['areainstructauthors'] = 'Οδηγίες για την υποβολή';
 $string['areainstructreviewers'] = 'Οδηγίες για την αξιολόγηση';

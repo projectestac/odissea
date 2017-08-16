@@ -26,12 +26,12 @@ define(['jquery', 'core/notification', 'core/ajax', 'core/templates'], function(
     /**
      * Info
      *
-     * @param {JQuery} Selector to replace when the information needs updating.
-     * @param {Number} The id of the competency.
-     * @param {Number} The id of the user.
-     * @param {Number} The id of the plan.
-     * @param {Number} The id of the course.
-     * @param {Boolean} If we should display the user info.
+     * @param {JQuery} rootElement Selector to replace when the information needs updating.
+     * @param {Number} competencyId The id of the competency.
+     * @param {Number} userId The id of the user.
+     * @param {Number} planId The id of the plan.
+     * @param {Number} courseId The id of the course.
+     * @param {Boolean} displayuser If we should display the user info.
      */
     var Info = function(rootElement, competencyId, userId, planId, courseId, displayuser) {
         this._rootElement = rootElement;
@@ -44,15 +44,15 @@ define(['jquery', 'core/notification', 'core/ajax', 'core/templates'], function(
 
         if (this._planId) {
             this._methodName = 'tool_lp_data_for_user_competency_summary_in_plan';
-            this._args = { competencyid: this._competencyId, planid: this._planId };
+            this._args = {competencyid: this._competencyId, planid: this._planId};
             this._templateName = 'tool_lp/user_competency_summary_in_plan';
         } else if (this._courseId) {
             this._methodName = 'tool_lp_data_for_user_competency_summary_in_course';
-            this._args = { userid: this._userId, competencyid: this._competencyId, courseid: this._courseId };
+            this._args = {userid: this._userId, competencyid: this._competencyId, courseid: this._courseId};
             this._templateName = 'tool_lp/user_competency_summary_in_course';
         } else {
             this._methodName = 'tool_lp_data_for_user_competency_summary';
-            this._args = { userid: this._userId, competencyid: this._competencyId };
+            this._args = {userid: this._userId, competencyid: this._competencyId};
             this._templateName = 'tool_lp/user_competency_summary';
         }
     };

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_tex', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = '<i>convert</i>-ez gain <i>latex</i> eta <i>dvips</i> gaituta badaude, aukeratu irudiak zehaztutako formatua (<i>convert</i>-ek GIF eta PNG-ak sortzen ditu; <i>dvisvgm</i>-ek SVG-ak sortzen ditu). Bestela, mimeTeX erabiliko da GIF irudiak sortzeko.';
+$string['configconvertformat'] = 'If <i>latex</i>, <i>dvips</i> eta <i>convert</i> edo <i>dvisvgm</i> gaituta badaude, aukeratu hobetsitako irudi mota (<i>convert</i>-ek GIF edo PNGak sortzen ditu; <i>dvisvgm</i>-ek SVGak sortzen ditu). Bestela, mimeTeX erabiliko da eta GIF irudiak sortuko dira.';
 $string['convertformat'] = 'Bihurtu irudi-formatua';
 $string['filtername'] = 'TeX idazketa';
 $string['latexpreamble'] = 'LaTeX aitzinsolasa';

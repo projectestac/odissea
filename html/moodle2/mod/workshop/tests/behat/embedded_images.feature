@@ -27,39 +27,39 @@ Feature: Teachers can embed images into instructions and conclusion fields
       | Workshop name | Workshop with embedded images  |
     And I follow "Workshop with embedded images"
     # Embed the image into Instructions for submission.
-    And I navigate to "Edit settings" node in "Workshop administration"
+    And I navigate to "Edit settings" in current page administration
     And I expand all fieldsets
     And I set the field "Instructions for submission" to "<p>Image test</p>"
     And I select the text in the "Instructions for submission" Atto editor
-    And I click on "Image" "button" in the "#fitem_id_instructauthorseditor" "css_element"
+    And I click on "Image" "button" in the "//*[@data-fieldtype='editor']/*[descendant::*[@id='id_instructauthorseditor']]" "xpath_element"
     And I click on "Browse repositories..." "button"
-    And I click on "Private files" "link"
+    And I click on "Private files" "link" in the ".fp-repo-area" "css_element"
     And I click on "moodlelogo.png" "link"
     And I click on "Select this file" "button"
     And I set the field "Describe this image for someone who cannot see it" to "How to submit"
     And I click on "Save image" "button"
     And I press "Save and display"
     # Embed the image into Instructions for assessment.
-    And I navigate to "Edit settings" node in "Workshop administration"
+    And I navigate to "Edit settings" in current page administration
     And I expand all fieldsets
     And I set the field "Instructions for assessment" to "<p>Image test</p>"
     And I select the text in the "Instructions for assessment" Atto editor
-    And I click on "Image" "button" in the "#fitem_id_instructreviewerseditor" "css_element"
+    And I click on "Image" "button" in the "//*[@data-fieldtype='editor']/*[descendant::*[@id='id_instructreviewerseditor']]" "xpath_element"
     And I click on "Browse repositories..." "button"
-    And I click on "Private files" "link"
+    And I click on "Private files" "link" in the ".fp-repo-area" "css_element"
     And I click on "moodlelogo.png" "link"
     And I click on "Select this file" "button"
     And I set the field "Describe this image for someone who cannot see it" to "How to assess"
     And I click on "Save image" "button"
     And I press "Save and display"
     # Embed the image into Conclusion.
-    And I navigate to "Edit settings" node in "Workshop administration"
+    And I navigate to "Edit settings" in current page administration
     And I expand all fieldsets
     And I set the field "Conclusion" to "<p>Image test</p>"
     And I select the text in the "Conclusion" Atto editor
-    And I click on "Image" "button" in the "#fitem_id_conclusioneditor" "css_element"
+    And I click on "Image" "button" in the "//*[@data-fieldtype='editor']/*[descendant::*[@id='id_conclusioneditor']]" "xpath_element"
     And I click on "Browse repositories..." "button"
-    And I click on "Private files" "link"
+    And I click on "Private files" "link" in the ".fp-repo-area" "css_element"
     And I click on "moodlelogo.png" "link"
     And I click on "Select this file" "button"
     And I set the field "Describe this image for someone who cannot see it" to "Well done"

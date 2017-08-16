@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lpmigrate', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lpmigrate
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowedcourses'] = 'Cursos permesos';
-$string['allowedcourses_help'] = 'Seleccioneu els cursos a migrar al nou marc competencial. Si no s\'especifica cap curs, es migraran tots.';
+$string['allowedcourses_help'] = 'Seleccioneu els cursos a migrar al nou marc de competències. Si no s\'especifica cap curs, es migraran tots.';
 $string['continuetoframeworks'] = 'Continua cap als marcs';
 $string['coursecompetencymigrations'] = 'Migracions de competències de curs';
 $string['coursemodulecompetencymigrations'] = 'Migracions de competències d\'activitat o de recurs';
@@ -42,11 +42,11 @@ $string['errors'] = 'Errors';
 $string['errorwhilemigratingcoursecompetencywithexception'] = 'Error al migrar la competència de curs: {$a}';
 $string['errorwhilemigratingmodulecompetencywithexception'] = 'Error al migrar la competència d\'activitat o de recurs: {$a}';
 $string['excludethese'] = 'Exclou aquests';
-$string['explanation'] = 'Aquesta eina pot emprar-se per actualitzar un marc competencial a una versió nova. L\'eina cerca competències dins de cursos i activitats que fan servir marcs antics i actualitza els enllaços per a que apuntin cap al marc nou.
+$string['explanation'] = 'Aquesta eina pot emprar-se per actualitzar un marc de competències a una versió nova. L\'eina cerca competències dins de cursos i activitats que fan servir marcs antics i actualitza els enllaços perquè apuntin cap al marc nou.
 
-No és recomanable editar directament el conjunt antic de competències directament, ja que això canviaria totes les competències que ja s\'han atorgat als plans d\'aprenentatge dels usuaris.
+No és recomanable editar directament el conjunt antic de competències, ja que això canviaria totes les competències que ja s\'han atorgat als plans d\'aprenentatge dels usuaris.
 
-A trets generals, heu d\'importar la versió nova d\'un marc, amagar el marc antic, i a continuació fer servir aquesta eina per migrar cursos nous al marc nou.';
+A trets generals, heu d\'importar la versió nova d\'un marc, amagar el marc antic, i, a continuació, fer servir aquesta eina per migrar cursos nous al marc nou.';
 $string['findingcoursecompetencies'] = 'S\'estan buscant competències de curs';
 $string['findingmodulecompetencies'] = 'S\'estan buscant competències d\'activitats i recursos';
 $string['frameworks'] = 'Marcs';

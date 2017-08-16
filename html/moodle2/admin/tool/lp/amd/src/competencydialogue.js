@@ -43,18 +43,19 @@ define(['jquery',
      *
      */
     var Competencydialogue = function() {
+      // Intentionally left empty.
     };
 
     /**
      * Log the competency viewed event.
      *
-     * @param  {Number} The competency ID.
+     * @param  {Number} competencyId The competency ID.
      * @method triggerCompetencyViewedEvent
      */
     Competencydialogue.prototype.triggerCompetencyViewedEvent = function(competencyId) {
         ajax.call([{
                 methodname: 'core_competency_competency_viewed',
-                args: { id: competencyId }
+                args: {id: competencyId}
         }]);
     };
 
@@ -112,7 +113,7 @@ define(['jquery',
     /**
      * The action on the click event.
      *
-     * @param {Event} event click
+     * @param {Event} e event click
      * @method clickEventHandler
      */
     Competencydialogue.prototype.clickEventHandler = function(e) {
@@ -135,14 +136,15 @@ define(['jquery',
      * Get a promise on data competency.
      *
      * @param {Number} competencyid
+     * @param {Object} options
      * @return {Promise} return promise on data request
      * @method getCompetencyDataPromise
      */
     Competencydialogue.prototype.getCompetencyDataPromise = function(competencyid, options) {
 
         var requests = ajax.call([
-            { methodname: 'tool_lp_data_for_competency_summary',
-              args: { competencyid: competencyid,
+            {methodname: 'tool_lp_data_for_competency_summary',
+              args: {competencyid: competencyid,
                       includerelated: options.includerelated || false,
                       includecourses: options.includecourses || false
                     }
@@ -160,8 +162,6 @@ define(['jquery',
          * Initialise the competency dialogue module.
          *
          * Only the first call matters.
-         *
-         * @return {Void}
          */
         init: function() {
             if (typeof instance !== 'undefined') {
@@ -170,7 +170,7 @@ define(['jquery',
 
             // Instantiate the one instance and delegate event on the body.
             instance = new Competencydialogue();
-            $('body').delegate('[data-action="competency-dialogue"]', 'click', { compdialogue: instance },
+            $('body').delegate('[data-action="competency-dialogue"]', 'click', {compdialogue: instance},
                 instance.clickEventHandler.bind(instance));
         }
     };

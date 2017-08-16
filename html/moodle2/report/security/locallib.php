@@ -184,11 +184,13 @@ function report_security_check_mediafilterswf($detailed=false) {
     $result->info    = null;
     $result->details = null;
     $result->status  = null;
-    $result->link    = "<a href=\"$CFG->wwwroot/$CFG->admin/settings.php?section=filtersettingfiltermediaplugin\">".get_string('filtersettings', 'admin').'</a>';
+    $result->link    = "<a href=\"$CFG->wwwroot/$CFG->admin/settings.php?section=managemediaplayers\">" .
+        get_string('managemediaplayers', 'media') . '</a>';
 
     $activefilters = filter_get_globally_enabled();
 
-    if (array_search('mediaplugin', $activefilters) !== false and !empty($CFG->filter_mediaplugin_enable_swf)) {
+    $enabledmediaplayers = \core\plugininfo\media::get_enabled_plugins();
+    if (array_search('mediaplugin', $activefilters) !== false and array_key_exists('swf', $enabledmediaplayers)) {
         $result->status = REPORT_SECURITY_CRITICAL;
         $result->info   = get_string('check_mediafilterswf_error', 'report_security');
     } else {

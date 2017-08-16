@@ -54,7 +54,6 @@ define(['jquery', 'mod_assign/grading_events'], function($, GradingEvents) {
      * @private
      * @param {Event} event
      * @param {Integer} userid
-     * @return {Deferred} promise resolved when the animations are complete.
      */
     GradingActions.prototype._showActionsForm = function(event, userid) {
         var form = this._region.find('[data-region=grading-actions-form]');

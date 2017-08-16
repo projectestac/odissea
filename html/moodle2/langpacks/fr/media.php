@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'media', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,30 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['flashanimation'] = 'Animation Flash';
-$string['flashanimation_desc'] = 'Fichiers avec l\'extension .swf. Pour des raisons de sécurité, ce filtre n\'est utilisé que dans des textes fiables.';
-$string['flashvideo'] = 'Vidéo Flash';
-$string['flashvideo_desc'] = 'Fichiers avec l\'extension .flv ou .f4v. Permet la lecture de séquences vidéos au moyen du lecteur Flowplayer, qui requiert le plugin Flash et l\'activation de Javascript. Si plusieurs sources sont spécifiées, utilise la vidéo en HTML5.';
-$string['html5audio'] = 'Audio HTML 5';
-$string['html5audio_desc'] = 'Fichiers audio avec l\'extension *.ogg, *.aac et *.mp3. Utilisés essentiellement sur certains appareils mobiles (leur prise en charge dépend du navigateur).';
-$string['html5video'] = 'Vidéo HTML 5';
-$string['html5video_desc'] = 'Fichiers vidéos avec l\'extension *.webm, *.m4v, *.ogv, *.mp4 et autres. Utilisés essentiellement sur les appareils mobiles (leur prise en charge dépend du navigateur).';
+$string['audioextensions'] = 'Audio : {$a}';
+$string['defaultheight'] = 'Hauteur par défaut';
+$string['defaultheightdesc'] = 'La hauteur du lecteur vidéo si aucune hauteur n\'est spécifiée et que le lecteur n\'est pas capable de détecter la hauteur réelle de la vidéo.';
+$string['defaultwidth'] = 'Largeur par défaut';
+$string['defaultwidthdesc'] = 'La largeur du lecteur vidéo si aucune hauteur n\'est spécifiée et que le lecteur n\'est pas capable de détecter la hauteur réelle de la vidéo.';
+$string['extensions'] = 'Extensions : {$a}';
 $string['legacyheading'] = 'Lecteurs média obsolètes';
 $string['legacyheading_desc'] = 'Ces lecteurs sont rarement utilisés sur le web. Ils requièrent pour les navigateurs des plugins qui ne sont pas très répandus.';
-$string['legacyquicktime'] = 'Lecteur QuickTime';
-$string['legacyquicktime_desc'] = 'Fichiers avec l\'extension *.mov, *.mp4, *.m4a et *.mpg. Requiert l\'installation du lecteur QuickTime ou de codecs.';
-$string['legacyreal'] = 'Lecteur Real media';
-$string['legacyreal_desc'] = 'Fichiers avec l\'extension *.rm, *.ra, *.ram, *.rp, *.rv. Requiert le lecteur RealPlayer.';
-$string['legacywmp'] = 'Lecteur Windows media';
-$string['legacywmp_desc'] = 'Fichiers avec l\'extension *.avi ou *.wmv. Compatible avec Internet Explorer sous Windows. Peut être problématique dans d\'autres navigateurs et systèmes d\'exploitation.';
+$string['managemediaplayers'] = 'Gérer les lecteurs de média';
 $string['mediaformats'] = 'Lecteurs disponibles';
-$string['mediaformats_desc'] = 'Lorsque des lecteurs sont activés ici, des fichiers peuvent être intégrés à l\'aide du filtre multimédia (s\'il est activé) ou à l\'aide de ressources de type fichier ou URL avec l\'option d\'intégration. Si les lecteurs ne sont pas activés, ces formats ne sont pas intégrés. Les utilisateurs peuvent alors télécharger manuellement ou suivre les liens vers ces ressources.
+$string['mediaformats_desc'] = 'Lorsque des lecteurs sont activés, des fichiers peuvent être intégrés à l\'aide du filtre des plugins multimédia (s\'il est activé) ou à l\'aide de ressources de type fichier ou URL. Sinon, ces formats ne sont pas intégrés et les utilisateurs peuvent télécharger ou suivre les liens vers ces ressources.
 
-Si deux lecteurs supportent le même format, leur activation permet d\'augmenter la compatibilité avec des appareils différents, comme les téléphones portables ou les tablettes. Il est possible d\'augmenter encore cette compatibilité en fournissant un même son ou une même vidéo en plusieurs formats.';
+Si deux lecteurs supportent le même format, leur activation commune permet d\'augmenter la compatibilité avec des appareils différents, comme les téléphones portables ou les tablettes. Il est possible d\'augmenter encore cette compatibilité en fournissant un même son ou une même vidéo en plusieurs formats.';
 $string['mediasettings'] = 'Intégration de média';
-$string['mp3audio'] = 'Son MP3';
-$string['mp3audio_desc'] = 'Fichiers avec l\'extension *.mp3. Permet la lecture de sons au moyen du lecteur Flowplayer. Requier l\'installation du plugin Flash.';
-$string['sitevimeo'] = 'Vimeo';
-$string['sitevimeo_desc'] = 'Site de partage de vidéos Vimeo';
-$string['siteyoutube'] = 'YouTube';
-$string['siteyoutube_desc'] = 'Site de partage de vidéos YouTube. Les listes de vidéos (playlists) sont supportées.';
+$string['supports'] = 'Supports';
+$string['videoextensions'] = 'Vidéo : {$a}';

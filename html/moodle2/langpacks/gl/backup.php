@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['automatedmaxkept'] = 'Número máximo de copias de seguranza que consev
 $string['automatedmaxkepthelp'] = 'Isto especifica o número máximo de copias de seguranza automatizadas recentes que conservar para cada curso. As copias de seguranza que sexan máis antigas eliminaranse automaticamente.';
 $string['automatedminkept'] = 'Número mínimo de copias de seguranza a conservar';
 $string['automatedminkepthelp'] = 'Se se eliminan as copias de seguranza máis antigas que o número de días especificado, pode suceder que un curso inactivo termine sen copias de seguranza. Para evitar isto, debe especificarse un número mínimo de copias de seguranza a conservar.';
-$string['automatedsettings'] = 'Configuracións da copia de seguranza automatizada';
+$string['automatedsettings'] = 'Configuración da copia de seguranza automatizada';
 $string['automatedsetup'] = 'Configuración da copia de seguranza automatizada';
 $string['automatedstorage'] = 'Almacenamento da copia de seguranza automatizada';
 $string['automatedstoragehelp'] = 'Escolla a localización onde quere almacenar as copias de seguranza creadas automaticamente.';

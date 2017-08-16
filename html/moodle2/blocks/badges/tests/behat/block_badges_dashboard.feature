@@ -17,7 +17,7 @@ Feature: Enable Block Badges on the dashboard and view awarded badges
     And I log in as "teacher1"
     And I follow "Course 1"
     # Issue badge 1 of 2
-    And I navigate to "Add a new badge" node in "Badges"
+    And I navigate to "Add a new badge" node in "Course administration > Badges"
     And I set the following fields to these values:
       | id_name | Badge 1 |
       | id_description | Badge 1 |
@@ -35,5 +35,4 @@ Feature: Enable Block Badges on the dashboard and view awarded badges
     And I press "Award badge"
     And I log out
     When I log in as "teacher1"
-    And I click on "Dashboard" "link" in the "Navigation" "block"
     Then I should see "Badge 1" in the "Latest badges" "block"

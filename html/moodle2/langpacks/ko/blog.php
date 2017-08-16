@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -149,7 +149,6 @@ $string['retrievedfrom'] = '가져온 곳';
 $string['rssfeed'] = '블로그 RSS 송출';
 $string['searchterm'] = '검색: {$a}';
 $string['settingsupdatederror'] = '오류발생. 블로그 사용자 설정을 업데이트할 수 없습니다.';
-$string['siteblog'] = '사이트 블로그: {$a}';
 $string['siteblogdisable'] = '사이트 블로그가 활성화되어 있지 않음';
 $string['siteblogs'] = '모든 사이트 사용자가 블로그 게시물을 볼수 있습니다.';
 $string['tagdatelastused'] = '태그가 사용된 마지막 날';

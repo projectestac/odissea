@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,7 +148,7 @@ $string['invalidjson'] = 'String JSON inválida';
 $string['invalidparams'] = 'Parâmetros inválidos';
 $string['invalidplugin'] = 'Repositório de módulo {$a} inválido';
 $string['invalidrepositoryid'] = 'Identificador de repositório inválido';
-$string['isactive'] = 'Ativo(a)?';
+$string['isactive'] = 'Ativo?';
 $string['keyword'] = 'Senha';
 $string['lastmodified'] = 'Modificado pela última vez:';
 $string['license'] = 'Licença';
@@ -187,7 +187,6 @@ $string['original'] = 'Original';
 $string['overwrite'] = 'Substituir';
 $string['overwriteall'] = 'Substituir todos';
 $string['path'] = 'Caminho';
-$string['personalrepositories'] = 'Instâncias de repositório disponíveis';
 $string['plugin'] = 'Módulos de repositório';
 $string['pluginerror'] = 'Erros no módulo de repositório.';
 $string['pluginname'] = 'Nome do módulo de repositório';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,7 +78,6 @@ $string['editservice'] = 'Bewerk de service: {$a->name} (id: {$a->id}) ';
 $string['enabled'] = 'Ingeschakeld';
 $string['enabledocumentation'] = 'Ontwikkelaarsdocumentatie inschakelen';
 $string['enabledocumentationdescription'] = 'Er is gedetailleerde web service documentatie beschikbaar voor de ingeschakelde protocols';
-$string['enablemobilewsoverview'] = 'Ga naar {$a->manageservicelink} beheer pagina, controleer de "{$a->enablemobileservice}" instelling en bewaar. Alles zal voor jou ingesteld worden en alle site gebruikers zullen de officiële Moodle app kunnen gebruiken. Huidige status: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Protocols inschakelen';
 $string['enableprotocolsdescription'] = 'Er moet minstens één protocol ingeschakeld zijn. Om veiligheidsredenen schakel je best enkel die protocols in die je gebruikt.';
 $string['enablews'] = 'Webservices inschakelen';
@@ -133,8 +132,6 @@ $string['missingpassword'] = 'Wachtwoord ontbreekt';
 $string['missingrequiredcapability'] = 'De mogelijkheid {$a} is vereist.';
 $string['missingusername'] = 'Gebruikersnaam ontbreekt';
 $string['missingversionfile'] = 'Codefout: version.php ontbreekt voor component {$a}';
-$string['mobilewsdisabled'] = 'Uitgeschakeld';
-$string['mobilewsenabled'] = 'Ingeschakeld';
 $string['nameexists'] = 'Deze naam is al in gebruik voor een andere service';
 $string['nocapabilitytouseparameter'] = 'De gebruiker heeft de vereiste mogelijkheid niet om parameter {$a} te gebruiken.';
 $string['nofunctions'] = 'Deze service heeft geen functies.';
@@ -192,7 +189,7 @@ $string['step'] = 'Stap';
 $string['supplyinfo'] = 'Meer details';
 $string['testauserwithtestclientdescription'] = 'Simuleer externe toegang tot de service door de webservice test client te gebruiken. Voor je dat kunt doen, moet je aanmelden met de gebruiker die de "moodle/webservice:createtoken"-mogelijkheid heeft en moet je zijn veiligheidssleutel (token) via de voorkeuren-pagina van de gebruiker halen. Je zult dit token gebruiken in de testclient. In de testclient kies je ook een ingeschakeld protocol met tokenauthenticatie. <strong>Waarschuwing: de functies die je test WORDEN UITGEVOERD voor deze gebruiker. Wees voorzichtig wat je kiest om te testen!!!</strong>';
 $string['testclient'] = 'Webservice testclient';
-$string['testclientdescription'] = '* De webservice testclient <strong>voert de functies ECHT uit</strong>. Test geen functies die je niet ken.<br />* Alle bestaande webservice functies zijn nog niet geïmplementeerd in de testclient<br />* Om te controleren of een gebruiker geen toegang heeft tot sommige functies, kun je sommige functies testen die je niet toestaat. <br />* Om duidelijlke foutmeldingen te krijgen kun debugging inschakelen naar {$a->mode} in {$a->atag}.';
+$string['testclientdescription'] = '* De webservice testcliënt <strong>voert de functies ECHT uit</strong>. Test geen functies die je niet ken.<br />* Alle bestaande webservice functies zijn nog niet geïmplementeerd in de testcliënt<br />* Om te controleren of een gebruiker geen toegang heeft tot sommige functies, kun je sommige functies testen die je niet toestaat. <br />* Om duidelijke foutmeldingen te krijgen kun debugging inschakelen naar {$a->mode} in {$a->atag}.';
 $string['testwithtestclient'] = 'Test de service';
 $string['testwithtestclientdescription'] = 'Simuleer externe toegang tot de service met de webservice testclient. Gebruik een ingeschakeld protocol met tokenauthenticatie.<strong>Waarschuwing: de functies die je test ZULLEN UITGEVOERD WORDEN. Wees voorzichtig met wat je kiest om te testen</strong>';
 $string['token'] = 'Token';
@@ -212,6 +209,7 @@ $string['usernameorid_help'] = 'Geef een gebruikersnaam of gebruikersID';
 $string['usernameoridnousererror'] = 'Er werden geen gebruikers gevonden met deze gebruikersnaam / gebruikersID';
 $string['usernameoridoccurenceerror'] = 'Meer dan één gebruiker is gevonden met deze gebruikersnaam. Geef de gebruikersID';
 $string['usernotallowed'] = 'De gebruiker heeft geen rechten voor deze service. Eerst moet je deze gebruiker recht geven op de {$a} toegelaten gebruikers beheer pagina';
+$string['userservices'] = 'Gebruikersservices: {$a}';
 $string['usersettingssaved'] = 'Gebruikersingstellingen bewaard';
 $string['validuntil'] = 'Geldig tot';
 $string['validuntil_help'] = 'Indien ingesteld zal de service voor deze gebruiker uitgeschakeld worden na deze datum';

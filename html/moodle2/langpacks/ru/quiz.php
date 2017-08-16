@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -108,7 +108,7 @@ $string['attemptsonly'] = 'Показывать только студентов 
 $string['attemptstate'] = 'Состояние';
 $string['attemptstillinprogress'] = 'Выполняющиеся попытки';
 $string['attemptsunlimited'] = 'Не ограничено';
-$string['autosaveperiod'] = 'Интервал автосохранения';
+$string['autosaveperiod'] = 'Период автосохранения';
 $string['autosaveperiod_desc'] = 'Ответы студентов могут автоматически сохраняться во время попыток прохождения теста. Ответы сохраняются каждый раз при изменении ответа, а также по истечении этого периода. Данное значение — компромисс: малое значение задержки увеличивает нагрузку на сервер, но снижает вероятность потери работ студентов. Если Вы собираетесь существенно уменьшить период задержки, то нужно постепенно снижать это значение  и следить за нагрузкой сервера. Если нагрузка становится слишком высокой, снова увеличьте задержку. Для отключения автосохранения задайте период, равный 0.';
 $string['back'] = 'Вернуться к просмотру вопроса';
 $string['backtocourse'] = 'Вернуться к курсу';
@@ -885,8 +885,6 @@ $string['timeleft'] = 'Оставшееся время';
 $string['timelimit'] = 'Ограничение времени';
 $string['timelimitexeeded'] = 'Извините, время закончилось!';
 $string['timelimit_help'] = 'Если включено, то ограничение по времени устанавливается на начальной странице теста и отсчет таймера отображается в блоке навигации теста.';
-$string['timelimitmin'] = 'Ограничение времени (в минутах)';
-$string['timelimitsec'] = 'Ограничение времени (в секундах)';
 $string['timestr'] = '%d/%m/%y в %H:%M:%S';
 $string['timesup'] = 'Время закончилось!';
 $string['timetaken'] = 'Прошло времени';

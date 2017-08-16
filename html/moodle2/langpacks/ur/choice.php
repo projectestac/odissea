@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ur', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'ur', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,5 @@ $string['showunanswered'] = 'بغیر جواب والوں کیلیے کالم ظ
 $string['spaceleft'] = 'جگہ میسر ہے';
 $string['spacesleft'] = 'جگہیں میسر ہیں';
 $string['taken'] = 'لیے جا چکے ہیں';
-$string['timerestrict'] = 'اس مدت میں جواب کی پابندی کرو';
 $string['viewallresponses'] = '{$a} جوابی اقدامات دیکھیں';
 $string['yourselection'] = 'آپ کے انتخاب';

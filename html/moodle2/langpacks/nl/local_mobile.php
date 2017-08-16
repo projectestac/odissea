@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,12 +34,5 @@ $string['enableadditionalservice'] = 'Activeer de service Moodle Mobile addition
 $string['enableadditionalservicedescription'] = 'Deze service moet geactiveerd zijn.';
 $string['local_mobiledescription'] = 'Plugin voor uitbreiding van de Mobile service functies';
 $string['local_mobilesettings'] = 'Instellingen';
-$string['local_mobiletypeoflogin'] = 'Kies type login';
-$string['local_mobiletypeoflogin_key'] = 'Type login';
-$string['local_mobileurlscheme'] = 'Gebruik deze instelling om het URL schema af te dwingen voor inloggen via een browservenster. In de meeste gevallen wordt dit leeg gelaten.';
-$string['local_mobileurlscheme_key'] = 'URL schema';
-$string['loginintheapp'] = 'Via de app';
-$string['logininthebrowser'] = 'Via een browservenster (voor SSO plugins)';
-$string['loginintheinappbrowser'] = 'Via een ingebedde browser (voor SSO plugins)';
 $string['pluginname'] = 'Moodle Mobile bijkomende functies';
 $string['pluginnotenabledorconfigured'] = 'De Moodle Mobile lokale plugin moet ingeschakeld en geconfigureerd zijn om de app te starten';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'error', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = 'A atividade está a ser apagada...';
 $string['alreadyloggedin'] = 'Está autenticado como {$a}, precisa de sair antes de se autenticar como um utilizador diferente.';
 $string['authnotexisting'] = 'O módulo de autorização não existe';
 $string['backupcontainexternal'] = 'Esta cópia de segurança contém servidores de rede externos Moodle que não estão configurados localmente';
@@ -174,7 +175,8 @@ $string['categorynamerequired'] = 'O nome da categoria é obrigatório';
 $string['categorytoolong'] = 'O nome da categoria é muito longo';
 $string['commentmisconf'] = 'O comentário com o ID não está configurado';
 $string['componentisuptodate'] = 'O componente está atualizado.';
-$string['confirmsesskeybad'] = 'A sua chave de sessão não pôde ser confirmada para poder realizar esta ação. Este dispositivo de segurança previne a execução, acidental ou maliciosa, de funções importantes em seu nome. Certifique-se de que pretende realmente executar esta função.';
+$string['confirmationnotenabled'] = 'A confirmação do utilizador não está ativada neste site';
+$string['confirmsesskeybad'] = 'A sua chave de sessão não pôde ser confirmada de modo a poder realizar esta ação. Este método de segurança previne a execução, acidental ou maliciosa, de funções importantes em seu nome. Certifique-se de que pretende realmente executar esta função.';
 $string['couldnotassignrole'] = 'Ocorreu um erro sério, mas indeterminado, durante a operação de atribuição de um papel a si próprio.';
 $string['couldnotupdatenoexistinguser'] = 'Não é possível atualizar este utilizador - não existe';
 $string['countriesphpempty'] = 'Erro: O ficheiro countries.php no pacote linguístico {$a} está vazio ou não existe.';
@@ -225,6 +227,7 @@ $string['duplicaterolename'] = 'Já existe um papel com este nome!';
 $string['duplicateroleshortname'] = 'Já existe um papel com este nome curto!';
 $string['duplicateusername'] = 'Nome de utilizador duplicado - registo ignorado';
 $string['emailfail'] = 'Falhou o envio de e-mail';
+$string['enddatebeforestartdate'] = 'A data de conclusão da disciplina deve ser posterior à data de início.';
 $string['error'] = 'Ocorreu um erro';
 $string['errorcleaningdirectory'] = 'Erro ao limpar a pasta "{$a}"';
 $string['errorcopyingfiles'] = 'Erro ao copiar ficheiros';
@@ -440,6 +443,7 @@ $string['nopermissiontoviewletergrade'] = 'Falta permissão para ver as notas al
 $string['nopermissiontoviewpage'] = 'Não tem permissão para ver esta página';
 $string['nosite'] = 'Não foi encontrada disciplina de primeiro nível!';
 $string['nositeid'] = 'Sem ID do site';
+$string['nostartdatenoenddate'] = 'A data de conclusão da disciplina só pode ser definida se uma data de início também estiver definida.';
 $string['nostatstodisplay'] = 'Não existem dados disponíveis para exibição';
 $string['notallowedtoupdateprefremotely'] = 'Não tem permissão para atualizar esta preferência do utilizador remotamente';
 $string['notavailable'] = 'Atualmente indisponível';
@@ -466,6 +470,7 @@ $string['querystringcannotbeempty'] = 'A query string não pode ficar vazia.';
 $string['redirecterrordetected'] = 'Não há suporte para redirecionar, a execução do script terminou';
 $string['refoundto'] = 'Pode ser reembolsado para {$a}';
 $string['refoundtoorigi'] = 'Reembolsado para o valor original: {$a}';
+$string['registrationdisabled'] = 'O registo está desativado neste site';
 $string['remotedownloaderror'] = 'Não foi possível descarregar o componente para o servidor. Verifique as configurações do proxy. A instalação da extensão cURL do PHP é muito recomendada.<br /><br />Terá de descarregar manualmente o ficheiro <a href="{$a->url}">{$a->url}</a>, copiá-lo para a pasta "{$a->dest}" no seu servidor e descompactá-lo';
 $string['remotedownloadnotallowed'] = 'Não é permitido descarregar para este servidor  (o parâmetro allow_url_fopen está desativado).<br /><br />Terá que fazer descarregar o ficheiro <a href="{$a->url}">{$a->url}</a> manualmente, copiá-lo para a pasta "{$a->dest}" no servidor e descompactá-lo.';
 $string['reportnotavailable'] = 'Este tipo de relatório está disponível somente para a disciplina do site';
@@ -493,6 +498,7 @@ $string['sessionipnomatch'] = 'O seu número de IP parece ter mudado desde a sua
 $string['sessionipnomatch2'] = 'O seu número de IP parece ter mudado desde a sua autenticação. Esta funcionalidade de segurança previne que crackers roubem a sua identidade durante a sessão neste site. Pode ver este erro se estiver a utilizar redes sem fios ou se estiver em roaming entre redes diferentes. Peça ajuda ao administrador do site. <br /><br />Se quiser continuar, por favor pressione a tecla F5 para atualizar esta página.';
 $string['sessionwaiterr'] = 'Esgotou o tempo limite enquanto aguardava pelo bloqueio da sessão.<br />Aguarde pelos seus pedidos atuais para terminar e tente novamente mais tarde.';
 $string['shortnametaken'] = 'O nome curto já está a ser utilizado por outra disciplina ({$a})';
+$string['sitepolicynotagreed'] = 'A política do site não aceita: <a href="{$a}">Clique aqui para abrir a política do site.</a>';
 $string['socksnotsupported'] = 'SOCKS5 proxy não é suportado em PHP4';
 $string['spellcheckernotconf'] = 'O verificador ortográfico não se encontra configurado';
 $string['sslonlyaccess'] = 'Por questões de segurança apenas são permitidas ligações https.';
@@ -559,6 +565,7 @@ $string['usernotdeletedadmin'] = 'O utilizador não foi eliminado - não pode ap
 $string['usernotdeletederror'] = 'Utilizador não eliminado - erro.';
 $string['usernotdeletedmissing'] = 'Utilizador não eliminado - não foi possível encontrar o nome de utilizador.';
 $string['usernotdeletedoff'] = 'Utilizador não eliminado - a operação não é permitida.';
+$string['usernotfullysetup'] = 'O utilizador não está totalmente configurado';
 $string['usernotincourse'] = 'Este utilizador não está nesta disciplina!';
 $string['usernotrenamedadmin'] = 'Não é possível renomear as contas de administradores.';
 $string['usernotrenamedexists'] = 'Utilizador não renomeado - a novo nome de utilizador já existe.';

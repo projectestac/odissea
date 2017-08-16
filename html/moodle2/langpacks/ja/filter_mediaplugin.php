@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mediaplugin', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mediaplugin', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mediaplugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = 'オートリンク';
 $string['fallbackvideo'] = 'ビデオリンク';
 $string['filtername'] = 'マルチメディアプラグイン';
+$string['linktomedia'] = 'マルチメディアプラグインフィルタはマルチメディアリソースのリンクをテキスト内で探して、リソースを再生できる適切なマルチメディアプレイヤコードに置換します。選択されたビデオおよびオーディオプレイヤの「&lt;video&gt; 」および「&lt;audio&gt;」タグを拡張することもできます。
+
+<a href="{$a}">メディアプレイヤを管理する</a>';

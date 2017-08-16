@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,8 +53,13 @@ $string['nomethodforaddinghelpbutton'] = 'Er is geen methode om een helpknop aan
 $string['nonexistentformelements'] = 'Je probeert een helpknop toe te voegen aan een onbestaand formulierelement: {$a}';
 $string['noselection'] = 'Geen selectie';
 $string['nosuggestions'] = 'Geen suggesties';
+$string['novalue'] = 'Niets ingevoerd';
+$string['novalueclicktoset'] = 'Klik hier om tekst in te voeren';
 $string['optional'] = 'Optioneel';
 $string['othersettings'] = 'Meer instellingen';
+$string['passwordunmaskedithint'] = 'Wachtwoord bewerken';
+$string['passwordunmaskinstructions'] = 'Druk op enter om wijzigingen op te slaan';
+$string['passwordunmaskrevealhint'] = 'Toon';
 $string['requiredelement'] = 'Vereist veld';
 $string['revealpassword'] = 'Toon';
 $string['security'] = 'Beveiliging';

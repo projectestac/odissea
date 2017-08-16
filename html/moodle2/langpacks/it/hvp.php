@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'hvp', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -116,6 +116,7 @@ $string['librarylisttitle'] = 'Titolo';
 $string['license'] = 'Licenza';
 $string['loadingdata'] = 'Dati in caricamento.';
 $string['lookforupdates'] = 'Cerca aggiornamenti di H5P';
+$string['maximumgrade'] = 'Voto massimo';
 $string['maxscore'] = 'Punteggio massimo';
 $string['missingcontentfolder'] = 'Manca una cartella valida di contenuto';
 $string['missingcontentuserdata'] = 'Errore: impossibile trovare dati dell\'utente';

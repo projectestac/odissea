@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'survey', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -190,6 +190,7 @@ As suas respostas cuidadosas ajudar-nos-ão a melhorar a execução online desta
 
 Muito obrigado pela sua colaboração.';
 $string['collespname'] = 'COLLES (Ideal)';
+$string['completionsubmit'] = 'O aluno tem de submeter esta atividade para concluí-la';
 $string['customintro'] = 'Descrição';
 $string['deleteallanswers'] = 'Apagar todas as respostas ao inquérito';
 $string['deleteanalysis'] = 'Apagar análise de respostas';

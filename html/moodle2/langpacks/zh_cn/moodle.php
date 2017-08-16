@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'moodle', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,6 @@ $string['addresource'] = '添加资源...';
 $string['addresourceoractivity'] = '添加一个活动或资源';
 $string['addresourcetosection'] = '新增一个资源到小节 {$a}';
 $string['address'] = '地址';
-$string['addressedto'] = '截止时间';
 $string['addstudent'] = '添加学生';
 $string['addsubcategory'] = '添加子类';
 $string['addteacher'] = '添加教师';
@@ -342,6 +341,8 @@ $string['coursedisplay'] = '课程布局';
 $string['coursedisplay_help'] = '此设置决定整个课程是在一页显示或是分几页显示。';
 $string['coursedisplay_multi'] = '在每页显示一个小节';
 $string['coursedisplay_single'] = '在一页显示所有小节';
+$string['courseduration'] = '课程持续时间';
+$string['courseduration_desc'] = '课程持续时间用于计算默认课程结束日期。 课程结束日期仅用于报告。 用户仍然可以在结束日期后加入课程。';
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
 $string['coursefiles'] = '从旧版继承的课程文件';
 $string['coursefilesedit'] = '编辑课程文件';
@@ -375,6 +376,7 @@ $string['courseoverviewfilesext'] = '课程说明文件类型';
 $string['courseoverviewfiles_help'] = '课程说明文件（通常为图片）将与说明一起显示在课程列表里';
 $string['courseoverviewfileslimit'] = '课程说明文件限制';
 $string['courseoverviewgraph'] = '课程记录预览';
+$string['coursepreferences'] = '课程设置';
 $string['courseprofiles'] = '课程档案';
 $string['coursereasonforrejecting'] = '拒绝此申请的理由';
 $string['coursereasonforrejectingemail'] = '会通过email发给请求人';
@@ -512,6 +514,7 @@ $string['deletingcourse'] = '正在删除{$a}';
 $string['deletingexistingcoursedata'] = '删除已存在的课程数据';
 $string['deletingolddata'] = '删除旧数据';
 $string['department'] = '系别';
+$string['deprecatedeventname'] = '{$a} （不再使用）';
 $string['desc'] = '降序';
 $string['description'] = '描述';
 $string['deselectall'] = '全不选';
@@ -655,12 +658,12 @@ $string['emailpasswordchangeinfo'] = '{$a->firstname}，您好:
 如果您需要帮助，请联系网站管理员，{$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = '{$a->firstname}您好：
 
-有人（您）从\'{$a->sitename}\'请求获得密码。
+有人（可能是您本人）从\'{$a->sitename}\'请求获得密码。
 
-但是很抱歉您的帐号无法使用并且无法重置。请与管理员{$a->admin}联系。';
+但是很抱歉您的帐号已被禁用并且无法重置。请与管理员{$a->admin}联系。';
 $string['emailpasswordchangeinfofail'] = '{$a->firstname}，您好，
 
-有人（可能是您自己）为您在“{$a->sitename}”的账号请求换个新密码。
+有人（可能是您本人）为您在“{$a->sitename}”的账号请求换个新密码。
 
 但很遗憾，此网站上的密码不能重置。如果您需要其他帮助，请联系网站管理员，
 {$a->admin}';
@@ -707,9 +710,12 @@ $string['emailresetconfirmsent'] = '一封电子邮件已经发送到您的邮�
 若您仍然有困难，请与站点管理员联系。';
 $string['emailtoprivatefiles'] = '你也能把文件作为附件直接用电子邮件发送到你的私人文件空间。只需在电子邮件内附上文件并发送到 {$a}';
 $string['emailtoprivatefilesdenied'] = '用电子邮件上传你的私人文件这一选项已被管理员禁止。';
+$string['emailvia'] = '{$a->name} 通过 {$a->url}';
 $string['emptydragdropregion'] = '空白区域';
 $string['enable'] = '使用';
 $string['encryptedcode'] = '加密代码';
+$string['enddate'] = '课程结束日期';
+$string['enddate_help'] = '课程结束日期仅用于报告。 用户仍然可以在结束日期后加入课程。';
 $string['english'] = '英语';
 $string['enrolmentmethods'] = '选修方法';
 $string['entercourse'] = '点击进入该课程';
@@ -729,9 +735,11 @@ $string['eventcontentviewed'] = '已浏览的内容';
 $string['eventcoursecategorycreated'] = '创建了分类';
 $string['eventcoursecategorydeleted'] = '类目已被删除';
 $string['eventcoursecategoryupdated'] = '更新了分类';
+$string['eventcoursecategoryviewed'] = '类别查看';
 $string['eventcoursecontentdeleted'] = '课程内容已被删除';
 $string['eventcoursecreated'] = '课程已建立';
 $string['eventcoursedeleted'] = '课程已被删除';
+$string['eventcourseinformationviewed'] = '课程简介查看';
 $string['eventcoursemodulecreated'] = '课程模块已建立';
 $string['eventcoursemoduledeleted'] = '课程模块已删除';
 $string['eventcoursemoduleinstancelistviewed'] = '查看了课程模块实例列表';
@@ -742,6 +750,7 @@ $string['eventcourseresetstarted'] = '课程重置开始';
 $string['eventcourserestored'] = '课程已恢复';
 $string['eventcoursesectiondeleted'] = '课程章节删除';
 $string['eventcoursesectionupdated'] = '课程内容已更新';
+$string['eventcoursessearched'] = '课程搜索';
 $string['eventcourseupdated'] = '课程已更新';
 $string['eventcourseuserreportviewed'] = '查看了课程用户报告';
 $string['eventcourseviewed'] = '查看了课程';
@@ -752,6 +761,7 @@ $string['eventemailfailed'] = '无法发送邮件';
 $string['eventname'] = '事件名称';
 $string['eventrecentactivityviewed'] = '查看了最近活动';
 $string['eventsearchindexed'] = '搜索数据已索引';
+$string['eventsearchresultsviewed'] = '搜索结果查看';
 $string['eventunknownlogged'] = '未知事件';
 $string['eventusercreated'] = '已建立的用户';
 $string['eventuserdeleted'] = '已删除的用户';
@@ -916,7 +926,9 @@ $string['hiddensections_help'] = '此设置决定隐藏的小节是向学生折�
 $string['hiddensectionsinvisible'] = '完全不显示隐藏的小节';
 $string['hide'] = '隐藏';
 $string['hideadvancedsettings'] = '隐藏高级设置';
+$string['hidechartdata'] = '隐藏图表数据';
 $string['hidepicture'] = '隐藏图片';
+$string['hidepopoverwindow'] = '隐藏弹窗';
 $string['hidesection'] = '隐藏小节{$a}';
 $string['hidesettings'] = '隐藏设置';
 $string['hideshowblocks'] = '隐藏或显示版块';
@@ -1016,6 +1028,7 @@ $string['list'] = '列表';
 $string['listfiles'] = '{$a} 中的文件列表';
 $string['listofallpeople'] = '成员列表';
 $string['listofcourses'] = '课程列表';
+$string['loading'] = '载入中';
 $string['loadinghelp'] = '载入中……';
 $string['local'] = '本地';
 $string['localplugins'] = '本地插件';
@@ -1062,6 +1075,7 @@ $string['manageeditorfiles'] = '管理已被编辑使用的文件';
 $string['managefilters'] = '过滤器';
 $string['managemodules'] = '模块管理';
 $string['manageroles'] = '角色和权限';
+$string['markallread'] = '全部标为已读';
 $string['markedthistopic'] = '该主题作为当前主题突出显示';
 $string['markthistopic'] = '标记该主题为当前主题';
 $string['matchingsearchandrole'] = '与“{$a->search}”匹配的{$a->role}';
@@ -1157,6 +1171,7 @@ $string['more'] = '更多';
 $string['morehelp'] = '更多帮助';
 $string['moreinfo'] = '更多信息';
 $string['moreinformation'] = '关于这个错误的更多信息';
+$string['morenavigationlinks'] = '更多……';
 $string['moreprofileinfoneeded'] = '请告诉我们关于您的更多信息';
 $string['mostrecently'] = '最近';
 $string['move'] = '移动';
@@ -1225,6 +1240,7 @@ $string['newpasswordtext'] = '{$a->firstname}，您好：
 {$a->signoff}';
 $string['newpicture'] = '新照片';
 $string['newpicture_help'] = '要添加新头像，先浏览和选择一个JPG或PNG格式的图片，然后点击“更新个人档案”。图片会被剪裁为正方形，尺寸修改为100x100像素。';
+$string['newpictureusernotsetup'] = '只有在保存了所有必需的个人信息后，才能添加个人图片。';
 $string['newsectionname'] = '章节{$a}的新名字';
 $string['newsitem'] = '新闻条目';
 $string['newsitems'] = '新闻条目';
@@ -1653,7 +1669,7 @@ $string['servererror'] = '和服务器通讯时发生了一个错误';
 $string['serverlocaltime'] = '服务器的当地时间';
 $string['setcategorytheme'] = '设置类别主题风格';
 $string['setpassword'] = '设定密码';
-$string['setpasswordinstructions'] = '请在下面输入您的新密码，并重复一次，然后点击“设定密码”。<br />您的新密码将会得到保存，同时您将成功登录。';
+$string['setpasswordinstructions'] = '请在下面输入您的新密码，然后保存设置。';
 $string['settings'] = '设置';
 $string['shortname'] = '简称';
 $string['shortnamecollisionwarning'] = '[*]=这个简称已经被某个课程所使用，需要改变它以获得批准。';
@@ -1670,6 +1686,7 @@ $string['showallcourses'] = '显示所有课程';
 $string['showallusers'] = '显示所有用户';
 $string['showblockcourse'] = '显示包含版块的课程列表';
 $string['showcategory'] = '显示{$a}';
+$string['showchartdata'] = '显示图表数据';
 $string['showcomments'] = '显示/隐藏评论';
 $string['showcommentsnonjs'] = '显示评论';
 $string['showdescription'] = '在课程页面显示简介';
@@ -1688,6 +1705,7 @@ $string['showlistofcourses'] = '显示课程列表';
 $string['showmodulecourse'] = '显示包含活动的课程列表';
 $string['showonly'] = '只显示';
 $string['showperpage'] = '每页显示{$a}';
+$string['showpopoverwindow'] = '显示弹窗';
 $string['showrecent'] = '显示最近动态';
 $string['showreports'] = '是否显示活动报表';
 $string['showreports_help'] = '<p align="center"><b>活动报表</b></p>
@@ -1702,6 +1720,8 @@ $string['showreports_help'] = '<p align="center"><b>活动报表</b></p>
 $string['showsettings'] = '显示设置';
 $string['showtheselogs'] = '显示这些日志';
 $string['showthishelpinlanguage'] = '显示本帮助的{$a}版本';
+$string['signoutofotherservices'] = '全部退出';
+$string['signoutofotherservices_help'] = '如果勾选，该帐户将会退出使用网络服务的所有设备和系统，例如移动应用。';
 $string['since'] = '开始时间';
 $string['sincelast'] = '最后登录';
 $string['site'] = '网站';
@@ -1812,6 +1832,9 @@ $string['switchdevicedefault'] = '切换到标准主题';
 $string['switchdevicerecommended'] = '切换到建议您的设备使用的主题';
 $string['switchrolereturn'] = '切换回我正常的角色';
 $string['switchroleto'] = '切换角色到...';
+$string['switchroleto_help'] = '选择一个角色，了解具有该角色的人将如何看到此课程。
+
+请注意此种查看效果可能不完美(<a href="https://docs.moodle.org/en/Switch_roles">查看详细信息和替代方法</a>)。';
 $string['tag'] = '标签';
 $string['tagalready'] = '该标签已经存在';
 $string['tagmanagement'] = '添加/删除标签';

@@ -172,11 +172,13 @@ $string['mysqliextensionisnotpresentinphp'] = 'PHP has not been properly configu
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
 <p>The database name, username, and password are required fields; table prefix is optional.</p>
+<p>The database name may contain only alphanumeric characters, dollar ($) and underscore (_).</p>
 <p>If the database currently does not exist, and the user you specify has permission, Moodle will attempt to create a new database with the correct permissions and settings.</p>
 <p>This driver is not compatible with legacy MyISAM engine.</p>';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
 <p>The database name, username, and password are required fields; table prefix is optional.</p>
+<p>The database name may contain only alphanumeric characters, dollar ($) and underscore (_).</p>
 <p>If the database currently does not exist, and the user you specify has permission, Moodle will attempt to create a new database with the correct permissions and settings.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
 $string['nativemssqlhelp'] = 'Now you need to configure the database where most Moodle data will be stored.
@@ -217,7 +219,7 @@ $string['pathswrongadmindir'] = 'Admin directory does not exist';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP has not been properly configured with the PGSQL extension so that it can communicate with PostgreSQL.  Please check your php.ini file or recompile PHP.';
 $string['phpextension'] = '{$a} PHP extension';
 $string['phpversion'] = 'PHP version';
-$string['phpversionhelp'] = '<p>Moodle requires a PHP version of at least 5.4.4 (7.0.x has some engine limitations).</p>
+$string['phpversionhelp'] = '<p>Moodle requires a PHP version of at least 5.6.5 or 7.1 (7.0.x has some engine limitations).</p>
 <p>You are currently running version {$a}.</p>
 <p>You must upgrade PHP or move to a host with a newer version of PHP.</p>';
 $string['releasenoteslink'] = 'For information about this version of Moodle, please see the release notes at {$a}';

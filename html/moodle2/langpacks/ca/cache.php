@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,9 +107,6 @@ $string['localstorenotification'] = 'Aquest cau es pot mapar tranquil·lament a 
 $string['lockdefault'] = 'Per defecte';
 $string['locking'] = 'Blocatge';
 $string['locking_help'] = 'El bloqueig és un mecanisme que restringeix l\'accés a les dades emmagatzemades en memòria cau per un procés per evitar que les dades siguin sobreescrites. El mètode de bloqueig determina com s\'adquireix el bloqueig i es comprova.';
-$string['lockingmeans'] = 'Mecanisme de bloqueig';
-$string['lockmethod'] = 'Mètode de blocatge';
-$string['lockmethod_help'] = 'Aquest és el mètode de blocatge utilitzat quan es requereix des d\'aquest magatzem.';
 $string['lockname'] = 'Nom';
 $string['locknamedesc'] = 'El nom ha de ser únic i sols pot tindre els caràcters: a-zA-Z_';
 $string['locknamenotunique'] = 'El nom que heu seleccionat no és únic. Si us plau seleccioneu un nom únic.';

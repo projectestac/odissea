@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_blog_recent', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_recent:addinstance'] = 'Afegeix un bloc nou d\'entrades recents del blog';
+$string['blog_recent:addinstance'] = 'Afegeix un nou bloc d\'entrades recents del blog';
 $string['norecentblogentries'] = 'No hi ha entrades recents';
 $string['numentriestodisplay'] = 'Nombre d\'entrades recents a mostrar';
 $string['pluginname'] = 'Entrades recents al blog';

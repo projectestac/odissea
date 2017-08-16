@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -360,7 +360,6 @@ $string['realm_help'] = 'Сейчас есть три типа анкетных 
 $string['redirecturl'] = 'URL-адрес, к которому пользователь переадресовывается после завершения этого анкетного опроса.';
 $string['remove'] = 'Удалить';
 $string['removeallquestionnaireattempts'] = 'Удалить все ответы на вопросы';
-$string['removenotinuse'] = 'В этом опросе используются вопросы из общего опроса, который был удален. Этот опрос не может больше использоваться и должен быть удален.';
 $string['required'] = 'Ответ обязателен';
 $string['required_help'] = 'Если Вы выберете «Да», то ответ на этот вопрос будет обязательным, то есть респондент не сможет сдать ответы на анкетный опрос, пока не ответит на этот вопрос.';
 $string['requiredparameter'] = 'Отсутствует обязательный параметр.';

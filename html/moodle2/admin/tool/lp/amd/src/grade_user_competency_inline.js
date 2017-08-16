@@ -34,12 +34,12 @@ define(['jquery',
      * InlineEditor
      *
      * @param {String} selector The selector to trigger the grading.
-     * @param {Number} The id of the scale for this competency.
-     * @param {Number} The id of the competency.
-     * @param {Number} The id of the user.
-     * @param {Number} The id of the plan.
-     * @param {Number} The id of the course.
-     * @param {String} Language string for choose a rating.
+     * @param {Number} scaleId The id of the scale for this competency.
+     * @param {Number} competencyId The id of the competency.
+     * @param {Number} userId The id of the user.
+     * @param {Number} planId The id of the plan.
+     * @param {Number} courseId The id of the course.
+     * @param {String} chooseStr Language string for choose a rating.
      */
     var InlineEditor = function(selector, scaleId, competencyId, userId, planId, courseId, chooseStr) {
         EventBase.prototype.constructor.apply(this, []);
@@ -118,11 +118,11 @@ define(['jquery',
                     methodname: self._methodName,
                     args: args,
                     done: function(evidence) {
-                        self._trigger('competencyupdated', { args: args, evidence: evidence });
-                    }.bind(self),
+                        self._trigger('competencyupdated', {args: args, evidence: evidence});
+                    },
                     fail: notification.exception
                 }]);
-            }.bind(self));
+            });
         }).fail(notification.exception);
     };
 

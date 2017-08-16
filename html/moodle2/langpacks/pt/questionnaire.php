@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -197,7 +197,7 @@ $string['fieldlength'] = 'Tamanho da caixa de texto';
 $string['fieldlength_help'] = 'Para o tipo de questão **Caixa de Texto**, insira o valor do **Comprimento da caixa de texto** e o **Comprimento máximo do texto** permitido.
 Os valores predefinidos são de 20 carateres para o comprimento da caixa de texto e 25 carateres para o comprimento máximo do texto.';
 $string['finished'] = 'Respondeu a todas as perguntas deste questionário';
-$string['firstrespondent'] = 'Primeiro a responder';
+$string['firstrespondent'] = 'Primeira resposta';
 $string['formateditor'] = 'Editor HTML';
 $string['formatplain'] = 'Texto simples';
 $string['grade'] = 'Nota de submissão';
@@ -205,8 +205,8 @@ $string['gradesdeleted'] = 'Apagadas as avaliações das questões';
 $string['headingtext'] = 'Titulo';
 $string['horizontal'] = 'Horizontal';
 $string['id'] = 'ID';
-$string['includechoicecodes'] = 'Incluir opções de escolha';
-$string['includechoicetext'] = 'Incluir escolha de texto';
+$string['includechoicecodes'] = 'Incluir código das opções de escolha';
+$string['includechoicetext'] = 'Incluir designação das opções de escolha';
 $string['incorrectcourseid'] = 'O ID da disciplina está incorreto';
 $string['incorrectmodule'] = 'O ID do módulo da disciplina está incorreto';
 $string['incorrectquestionnaire'] = 'O questionário está incorreto';
@@ -216,7 +216,7 @@ $string['invalidsurveyid'] = 'ID do questionário inválido';
 $string['kindofratescale'] = 'Tipo de escala';
 $string['kindofratescale_help'] = 'Clique com o botão direito do rato na hiperligação abaixo *Mais ajuda*.';
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
-$string['lastrespondent'] = 'Último a responder';
+$string['lastrespondent'] = 'Última resposta';
 $string['length'] = 'Comprimento';
 $string['managequestions'] = 'Gerir questões';
 $string['managequestions_help'] = 'Na secção *Gerir questões* da página **Questões**, pode realizar uma série de operações nas questões do questionário (editar, mover, apagar).';
@@ -228,6 +228,7 @@ $string['maxtextlength'] = 'Tamanho máximo do texto';
 $string['maxtextlength_help'] = 'Para o tipo de pergunta caixa de texto, indique o comprimento da caixa de entrada e o comprimento máximo de texto de texto permitido na resposta.
 Os valores predefinidos são 20 caracteres para a largura da caixa de entrada e 25 caracteres para o comprimento máximo do texto inserido.';
 $string['messageprovider:message'] = 'Lembrete do questionário';
+$string['messageprovider:notification'] = 'Submissão do questionário';
 $string['minforcedresponses'] = 'Número mínimo de respostas';
 $string['minforcedresponses_help'] = 'Use estas opções para forçar os alunos a selecionarem um número **Mínimo** e **Máximo** de caixas de seleção. Para especificar um número exato de caixas a serem selecionadas, configure **Mínimo** e **Máximo** com o mesmo valor. Se pretender apenas fixar o valor máximo ou o mínimo, deixe o outro campo preenchido com o valor **0**. Se definir os valores máximo e mínimo para um valor superior a **0** será exibida uma mensagem de alerta para que os alunos cumpram estes limites, sendo que tais instruções também devem ser apresentadas nas instruções gerais do questionário ou not texto das questões em que são aplicados.';
 $string['misconfigured'] = 'Disciplina mal configurada';
@@ -267,6 +268,8 @@ $string['notavail'] = 'O questionário já não está disponível.';
 $string['noteligible'] = 'Não é elegível para responder a este questionário.';
 $string['notemplatesurveys'] = 'Não existem questionários modelo.';
 $string['notenoughscaleitems'] = 'Deve inserir pelo menos 2 itens para a escala!';
+$string['notifications'] = 'Enviar notificações de submissão';
+$string['notifications_help'] = 'Notificar os utilizadores com a permissão "mod/questionnaire:submissionnotification" quando for feita uma submissão.';
 $string['notopen'] = 'Este questionário só estará disponível a partir de {$a}.';
 $string['notrequired'] = 'Resposta facultativa';
 $string['not_started'] = 'não iniciado';
@@ -278,7 +281,7 @@ $string['numberofdecimaldigits'] = 'Número de casas decimais';
 $string['numberofdecimaldigits_help'] = 'Use **Nº de dígitos decimais** para especificar o formato do valor da Média que é mostrado na página do relatório do Questionário.';
 $string['numberscaleitems'] = 'Número de itens';
 $string['numberscaleitems_help'] = 'Número de itens é o *número de itens de classificação* que são utilizados na escala. Normalmente são usados 3 a 5 itens.<br />Valor predefinido: **5**.';
-$string['numeric'] = 'Numérico';
+$string['numeric'] = 'Numérica';
 $string['numeric_help'] = 'Use esta questão se pretende uma resposta na forma de um número formatado corretamente.';
 $string['of'] = 'de';
 $string['opendate'] = 'Usar Data de Abertura';
@@ -356,9 +359,10 @@ $string['questionnaireopens'] = 'Data de abertura';
 $string['questionnaire:preview'] = 'Pré-visualizar questionários';
 $string['questionnaire:printblank'] = 'Imprimir questionário em branco';
 $string['questionnaire:readallresponseanytime'] = 'Ver sempre todas as respostas';
-$string['questionnaire:readallresponses'] = 'Ver todas as respostas enquanto o questionário estiver aberto';
+$string['questionnaire:readallresponses'] = 'Ver estatísticas de resposta, no período definido';
 $string['questionnaire:readownresponses'] = 'Ver as suas respostas';
 $string['questionnairereport'] = 'Relatório';
+$string['questionnaire:submissionnotification'] = 'Receber notificação de cada submissão';
 $string['questionnaire:submit'] = 'Completar e submeter questionário';
 $string['questionnaire:view'] = 'Ver o questionário';
 $string['questionnaire:viewsingleresponse'] = 'Ver respostas individuais completas';
@@ -384,7 +388,8 @@ $string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'URL para o qual o utilizador é redirecionado depois de completar este questionário.';
 $string['remove'] = 'Apagar';
 $string['removeallquestionnaireattempts'] = 'Apagar todas as respostas ao questionário';
-$string['removenotinuse'] = 'Este questionário depende de um questionário público que foi eliminado. Por isso não pode ser utilizado e deve ser eliminado.';
+$string['removenotinuse'] = 'Este questionário dependia de um questionário público que foi eliminado.
+O questionário já não pode ser usado e deve ser eliminado.';
 $string['required'] = 'Resposta obrigatória';
 $string['required_help'] = 'Se selecionar a opção **Sim**, a resposta a esta questão é obrigatória, ou seja o aluno não pode submeter o questionário enquanto não responder à questão.';
 $string['required_link'] = 'mod/questionnaire/questions#Response_Required';
@@ -426,11 +431,13 @@ $string['savedbutnotsubmitted'] = 'Este questionário foi guardado mas ainda nã
 $string['savedprogress'] = 'O seu progresso de respostas foi guardado. Pode retomar a qualquer momento para completar este questionário.';
 $string['saveeditedquestion'] = 'Guardar questão {$a}';
 $string['savesettings'] = 'Guardar configurações';
+$string['search:activity'] = 'Questionário - informações da atividade';
+$string['search:question'] = 'Questionário - questões';
 $string['section'] = 'Descrição';
 $string['sectionbreak'] = '----- Quebra de Secção -----';
 $string['sectionbreak_help'] = '----- Quebra de Secção -----';
 $string['sectionsnotset'] = 'Tem de selecionar pelo menos <strong>UMA</strong> questão por secção!<br />Secção(ões) não selecionada(s): <strong>{$a}</strong>';
-$string['sectiontext'] = 'Título de secção';
+$string['sectiontext'] = 'Separador';
 $string['sectiontext_help'] = 'Não é propriamente uma questão mas sim um (curto) texto exibido com informações sobre as questões.<br />Pode ser utilizado como separador de questões ou secções.';
 $string['selecttheme'] = 'Selecione um tema (CSS) para usar com este questionário.';
 $string['send'] = 'Enviar';
@@ -445,6 +452,11 @@ $string['started'] = 'iniciado';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['subject'] = 'Assunto';
+$string['submissionnotificationhtmlanon'] = 'Existe uma nova <a href="{$a->submissionurl}">submissão</a> do questionário "{$a->name}".';
+$string['submissionnotificationhtmluser'] = 'Existe uma nova <a href="{$a->submissionurl}">submissão</a> do questionário "{$a->name}" efetuada por "<a href="{$a->profileurl}">{$a->username}</a>".';
+$string['submissionnotificationsubject'] = 'Nova submissão do questionário';
+$string['submissionnotificationtextanon'] = 'Existe uma nova submissão ({$a->submissionurl}) do questionário "{$a->name}".';
+$string['submissionnotificationtextuser'] = 'Existe uma nova submissão ({$a->submissionurl}) do questionário "{$a->name}" efetuada por "{$a->username}" ({$a->profileurl}).';
 $string['submitoptions'] = 'Opções de submissão';
 $string['submitpreview'] = 'Pré-visualização da submissão';
 $string['submitpreviewcorrect'] = 'Esta submissão será aceite como preenchida corretamente.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'langconfig', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['alphabet'] = 'أ،ب،ت،ث،ج،ح،خ،د،ذ،ر،ز،س،ش،ص،ض،ط،ظ،ع،غ،ف،ق،ك،ل،م،ن،هـ،و،ي،';
 $string['backupnameformat'] = 'نوع تنسيق ملف النسخة الإحتياطية';
 $string['decsep'] = '.';
-$string['firstdayofweek'] = '1';
+$string['firstdayofweek'] = '0';
 $string['iso6391'] = 'ar';
 $string['iso6392'] = 'ara';
 $string['labelsep'] = ':';

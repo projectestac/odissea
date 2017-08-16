@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'atto_media', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,60 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Hinzufügen';
+$string['addcaptionstrack'] = 'Track mit Bildtiteln hinzufügen';
+$string['addchapterstrack'] = 'Track mit Kapiteln hinzufügen';
+$string['adddescriptionstrack'] = 'Track mit Beschreibung hinzufügen';
+$string['addmetadatatrack'] = 'Track mit Metadaten hinzufügen';
+$string['addsource'] = 'Alternative Mediendatei hinzufügen';
+$string['addsource_help'] = 'Es wird empfohlen, dass eine alternative Mediendatei bereitgestellt wird, da Desktop- und mobile Browser sich in den unterstützten Formaten unterscheiden.';
+$string['addsubtitlestrack'] = 'Track mit Untertiteln hinzufügen';
+$string['addtrack'] = 'Track hinzufügen';
+$string['advancedsettings'] = 'Erweiterte Einstellungen';
+$string['audio'] = 'Audio';
+$string['audiosourcelabel'] = 'Audio-URL';
+$string['autoplay'] = 'Automatisch abspielen';
 $string['browserepositories'] = 'Datei auswählen';
+$string['captions'] = 'Bildunterschriften';
+$string['captions_help'] = 'Bildunterschriften können verwendet werden, um den gesamten Handlungsverlauf zu beschreiben, inclusive der non-verbalen Ereignisse, z.B. ein Telefonklingeln.';
+$string['captionssourcelabel'] = 'Bildunterschriften-Track-URL';
+$string['chapters'] = 'Kapitel';
+$string['chapters_help'] = 'Kapitelüberschriften können zur Navigation in der Medienressource bereitgestellt werden.';
+$string['chapterssourcelabel'] = 'Kapitel-Track-URL';
+$string['controls'] = 'Steuerung anzeigen';
 $string['createmedia'] = 'Medien einfügen';
+$string['default'] = 'Standard';
+$string['descriptions'] = 'Beschreibungen';
+$string['descriptions_help'] = 'Audiobeschreibungen können bereitgestellt werden, um die visuelle Details zu erklären, die durch das Hören alleine nicht offenkundig werden.';
+$string['descriptionssourcelabel'] = 'Beschreibung-Track-URL';
+$string['displayoptions'] = 'Darstellung';
 $string['entername'] = 'Name eingeben';
+$string['entersource'] = 'URL';
 $string['enterurl'] = 'URL eingeben';
 $string['height'] = 'Höhe';
+$string['kind'] = 'Typ';
+$string['label'] = 'Label';
+$string['languagesavailable'] = 'Verfügbare Sprachen';
+$string['languagesinstalled'] = 'Installierte Sprachen';
+$string['link'] = 'Link';
+$string['loop'] = 'Schleife';
+$string['metadata'] = 'Metadaten';
+$string['metadata_help'] = 'Metadata-Tracks können nur verwendet werden, wenn der Player ein Script für Metadata unterstützt.';
+$string['metadatasourcelabel'] = 'Metadata-Track-URL';
+$string['mute'] = 'Stummgeschaltet';
 $string['pluginname'] = 'Medien';
+$string['poster'] = 'Vorschau-URL';
+$string['remove'] = 'Entfernen';
+$string['size'] = 'Größe';
+$string['srclang'] = 'Sprache';
+$string['subtitles'] = 'Untertitel';
+$string['subtitles_help'] = 'Untertitel können eine Umschreibung oder Übersetzung des Dialogs bereitstellen.';
+$string['subtitlessourcelabel'] = 'Untertitel-Track-URL';
+$string['track'] = 'Track-URL';
+$string['tracks'] = 'Untertitel und Bildunterschriften';
+$string['tracks_help'] = 'Untertitel, Beschriftungen, Kapitel und Beschreibungen können über eine WebVTT (Web Video Text Tracks) Formatdatei eingefügt werden. Track-Labels werden im Auswahlmenü angezeigt. Für jede Art von Spur wird jede Spur, die als Standard eingestellt ist, zu Beginn des Videos vorgewählt.';
+$string['video'] = 'Video';
+$string['videoheight'] = 'Video-Höhe';
+$string['videosourcelabel'] = 'Video-URL';
+$string['videowidth'] = 'Video-Breite';
 $string['width'] = 'Breite';

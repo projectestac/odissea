@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -165,6 +165,7 @@ $string['displayscorewithessays'] = '<p>Вы получили {$a->score} бал
 <p> Оценки за {$a->essayquestions} эссе будут поставлены и учтены позднее при выставлении итоговой оценки.</p>
 <p>Ваша текущая оценка (без учета эссе): {$a->score} из {$a->grade}</p>.';
 $string['displayscorewithoutessays'] = 'Оценка за ответы на вопросы: {$a->score} из {$a->grade}';
+$string['duplicatepagenamed'] = 'Дублировать страницу: {$a}';
 $string['edit'] = 'Редактировать';
 $string['editingquestionpage'] = 'Редактирование страницы с вопросом {$a}';
 $string['editlessonsettings'] = 'Редактировать настройки лекции';
@@ -187,7 +188,6 @@ $string['enterpassword'] = 'Пожалуйста, введите пароль:';
 $string['eolstudentoutoftime'] = 'Внимание! Время прохождения лекции закончилось, поэтому Ваш последний ответ мог быть не учтен, если Вы ответили на вопрос за пределами отпущенного времени.';
 $string['eolstudentoutoftimenoanswers'] = 'Вы не ответили ни на один вопрос. Вы получили 0 за эту лекцию.';
 $string['essay'] = 'Эссе';
-$string['essayemailmessage'] = '<p>Задание на эссе: <blockquote>{$a->question}</blockquote></p><p>Ваш ответ:<blockquote><em>{$a->response}</em></blockquote></p><p>{$a->teacher}:<blockquote><em>{$a->comment}</em></blockquote></p><p>Вы получили {$a->earned} из {$a->outof} за это эссе.</p><p>Ваша оценка за лекцию была изменена на {$a->newgrade}%.</p>';
 $string['essayemailmessage2'] = '<p> Задание на эссе: <{$a->question}</p><p> Ваш ответ: <em>{$a->response}</em></p><p> Комментарии оценщика: <em>{$a->comment}</em></p><p> Вы получили {$a->earned} из {$a->outof} за это эссе.</p><p> Ваша оценка за лекцию «{$a->lesson}» была изменена на {$a->newgrade}%. </p>';
 $string['essayemailsubject'] = 'Есть оценка за ответ на вопрос лекции';
 $string['essayresponses'] = 'Ответы эссе';
@@ -256,7 +256,6 @@ $string['leftduringtimed'] = 'Вы просрочили время, отведе
 $string['leftduringtimednoretake'] = 'Вы просрочили время, отведенное на прохождение лекции и не можете продолжить её или пройти заново.';
 $string['leftduringtimedsession'] = 'Вы просрочили время, отведенное на прохождение лекции';
 $string['lesson:addinstance'] = 'Добавить новую лекцию';
-$string['lessonattempted'] = 'Лекция начата';
 $string['lessonclosed'] = 'Эта лекция закрылась {$a}.';
 $string['lessoncloses'] = 'Лекция закрывается';
 $string['lessoncloseson'] = 'Лекция закрывается {$a}';
@@ -268,11 +267,12 @@ $string['lesson:manageoverrides'] = 'Управлять переопределе
 $string['lessonmenu'] = 'Меню лекции';
 $string['lessonname'] = 'Лекция: {$a}';
 $string['lessonnotready'] = 'Лекция не готова. Пожалуйста, свяжитесь с {$a}';
-$string['lessonnotready2'] = 'Эта лекция ещё не готова к просмотру.';
+$string['lessonnotready2'] = 'Эту лекция ещё не готова к просмотру.';
 $string['lessonopen'] = 'Эта лекция откроется {$a}';
 $string['lessonopens'] = 'Лекция открывается';
 $string['lessonpagelinkingbroken'] = 'Первая страница не найдена. Вероятно, связи страниц лекции нарушены. Пожалуйста, свяжитесь с администратором.';
 $string['lessonstats'] = 'Статистика лекции';
+$string['lesson:view'] = 'Видеть лекцию';
 $string['lesson:viewreports'] = 'Просматривать отчеты лекции';
 $string['linkedmedia'] = 'Связанное медиа';
 $string['loginfail'] = 'Логин неверный, пожалуйста, попробуйте еще раз...';
@@ -454,7 +454,7 @@ $string['savepage'] = 'Сохранить страницу';
 $string['score'] = 'Баллы за ответ';
 $string['score_help'] = 'Баллы используются только при включенном пользовательском оценивании. На каждый ответ может быть дан балл в числовом значении (положительном или отрицательном).';
 $string['scores'] = 'Баллы';
-$string['search:activity'] = 'Лекция — информация об элементе курса';
+$string['search:activity'] = 'Лекция — информация об элементе';
 $string['secondpluswrong'] = 'Не совсем правильно. Вы хотите попробовать еще раз?';
 $string['selectaqtype'] = 'Выберите тип вопроса';
 $string['shortanswer'] = 'Краткий ответ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['allowmultiple'] = 'Consenti la selezione di più scelte';
 $string['allowupdate'] = 'Consenti la modifica delle scelte';
 $string['answered'] = 'Risposta';
 $string['atleastoneoption'] = 'Devi fornire almeno una possibile risposta.';
+$string['calendarend'] = 'La scelta {$a} chiude';
+$string['calendarstart'] = 'La scelta {$a} apre';
 $string['cannotsubmit'] = 'Si è verificato un errore durante l\'invio della scelta. Per favore riprova.';
 $string['choice'] = 'Scelta';
 $string['choiceactivityname'] = 'Scelta: {$a}';
@@ -37,7 +39,7 @@ $string['choice:addinstance'] = 'Aggiungere scelta';
 $string['choice:choose'] = 'Salvare una scelta';
 $string['choiceclose'] = 'Chiusura';
 $string['choicecloseson'] = 'La scelta si chiude il {$a}';
-$string['choice:deleteresponses'] = 'Rimuovere le scelte';
+$string['choice:deleteresponses'] = 'Modificare e rimuovere le scelte';
 $string['choice:downloadresponses'] = 'Scaricare le scelte';
 $string['choicefull'] = 'Questa opzione è completa.';
 $string['choicename'] = 'Titolo della scelta';
@@ -49,15 +51,18 @@ Puoi aggiungere un qualsiasi numero di scelte. Per non visualizzare una proposta
 $string['choice:readresponses'] = 'Visualizzare le scelte';
 $string['choicesaved'] = 'la tua scelta è stata salvata';
 $string['choicetext'] = 'Testo della domanda';
+$string['choice:view'] = 'Visualizzare attività scelta';
 $string['chooseaction'] = 'Scegli un\'azione...';
+$string['chooseoption'] = 'Scegli: {$a}';
 $string['closebeforeopen'] = 'Hai specificato una data di chiusura successiva alla data di apertura.';
 $string['completionsubmit'] = 'Completata all\'atto della scelta';
 $string['description'] = 'Descrizione';
 $string['displayhorizontal'] = 'Visualizza orizzontalmente';
 $string['displaymode'] = 'Modalità  di visualizzazione';
 $string['displayvertical'] = 'Visualizza verticalmente';
-$string['eventanswercreated'] = 'Eseguita scelta';
+$string['eventanswercreated'] = 'Aggiunta scelta';
 $string['eventanswerdeleted'] = 'Eliminata scelta';
+$string['eventanswersubmitted'] = 'Eseguita scelta';
 $string['eventanswerupdated'] = 'Aggiornata scelta';
 $string['eventreportdownloaded'] = 'Scaricato report delle scelte';
 $string['eventreportviewed'] = 'Visualizzato report scelta';
@@ -122,7 +127,6 @@ $string['skipresultgraph'] = 'Salta il grafico dei risultati';
 $string['spaceleft'] = 'spazio disponibile';
 $string['spacesleft'] = 'spazi disponibili';
 $string['taken'] = 'Preso';
-$string['timerestrict'] = 'Accetta scelta in un periodo di tempo';
 $string['userchoosethisoption'] = 'Gli utenti che hanno scelto questa opzione';
 $string['viewallresponses'] = 'Vedi {$a} scelte';
 $string['withselected'] = 'Con i selezionati';

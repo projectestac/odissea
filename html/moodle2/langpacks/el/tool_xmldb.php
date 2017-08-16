@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_xmldb', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actual'] = 'Πραγματικά';
 $string['aftertable'] = 'Μετά τον πίνακα:';
-$string['back'] = 'Πίσω';
+$string['back'] = 'Επιστροφή';
 $string['backtomainview'] = 'Επιστροφή στην Κεντρική';
-$string['cannotuseidfield'] = 'Το πεδίο "id" δεν μπορεί να εισαχθεί. Συμπληρώνεται αυτόματα';
+$string['cannotuseidfield'] = 'Αδυναμία εισαγωγής στο πεδίο "id". Συμπληρώνεται αυτόματα';
 $string['change'] = 'Αλλαγή';
 $string['charincorrectlength'] = 'Λάθος μήκος πεδίου χαρακτήρων';
 $string['checkbigints'] = 'Έλεγχος μεγάλων αριθμών';
@@ -86,7 +86,7 @@ $string['enumvaluesincorrect'] = 'Λάθος τιμή πεδίου απαρίθ�
 $string['expected'] = 'Αναμενόμενο';
 $string['extensionrequired'] = 'Δε μπορείτε να εκτελέσετε αυτή την ενέργεια γιατί αυτό απαιτεί να είναι εγκατεστημένη η επέκταση "{$a}" της PHP. Εγκαταστήστε την αν θέλετε να προχωρήσετε.';
 $string['field'] = 'Πεδίο';
-$string['fieldnameempty'] = 'Άδειο πεδίο ονόματος';
+$string['fieldnameempty'] = 'Κενό πεδίο ονόματος';
 $string['fields'] = 'Πεδία';
 $string['fieldsusedinkey'] = 'Το πεδίο αυτό χρησιμοποιείται σαν κλειδί.';
 $string['filenotwriteable'] = 'Μη εγγράψιμο αρχείο';
@@ -127,7 +127,7 @@ $string['reservedwords'] = 'Κλειδωμένες Λέξεις';
 $string['revert'] = 'Επαναφορά';
 $string['revert_changes'] = 'Επαναφορά Αλλαγών';
 $string['save'] = 'Αποθήκευση';
-$string['searchresults'] = 'Αποτελέσματα Εύρεσης';
+$string['searchresults'] = 'Αποτελέσματα αναζήτησης';
 $string['selectaction'] = 'Επιλογή Ενέργειας:';
 $string['selectdb'] = 'Επιλογή Βάσης Δεδομένων:';
 $string['selectfieldkeyindex'] = 'Επιλογή Πεδίου/Κλειδιού/Ευρετηρίου';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -265,6 +265,8 @@ $string['notavail'] = 'Deze enquête is nog niet beschikbaar. Probeer later nog 
 $string['noteligible'] = 'Je mag deze enquête niet invullen';
 $string['notemplatesurveys'] = 'Geen sjabloonenquêtes';
 $string['notenoughscaleitems'] = 'Je moet een minimumwaarde van 2 items op de schaal invoeren!';
+$string['notifications'] = 'Stuur een melding bij inzending';
+$string['notifications_help'] = 'Stuur een melding van inzending naar de rollen met het recht "mod/questionnair:submissionnotification"';
 $string['notopen'] = 'Deze enquête start pas op {$a}.';
 $string['notrequired'] = 'Antwoord is niet vereist';
 $string['not_started'] = 'niet begonnen';
@@ -362,6 +364,7 @@ $string['realm_help'] = '** Er zijn drie soorten enquêtes: **
 $string['redirecturl'] = 'De URL waarnaar een gebruiker wordt doorgeleid na het voltooien van deze enquête.';
 $string['remove'] = 'Verwijder';
 $string['removeallquestionnaireattempts'] = 'Verwijder alle antwoorden van deze enquête';
+$string['removenotinuse'] = 'Deze enquête was afhankelijk van een Publieke enquête die verwijderd is. Daarom kan deze niet langer worden gebruikt en zou deze verwijderd moeten worden.';
 $string['required'] = 'Antwoord is vereist';
 $string['required_help'] = 'Als je ***Ja*** selecteert, wordt het antwoord op deze vraag vereist. Dat wil zeggen dat de respondent de enquête niet kan insturen wanneer deze vraag niet beantwoord is.';
 $string['requiredparameter'] = 'Er ontbreekt een vereiste parameter.';
@@ -397,6 +400,8 @@ $string['savedbutnotsubmitted'] = 'Deze enquête is opgeslagen maar nog niet ing
 $string['savedprogress'] = 'Je voortgang is opgeslagen. Je kunt op ieder moment terugkeren om deze enquête te voltooien.';
 $string['saveeditedquestion'] = 'Vraag {$a} opslaan';
 $string['savesettings'] = 'Instellingen opslaan';
+$string['search:activity'] = 'Enquête - informatie over activiteit';
+$string['search:question'] = 'Enquête - vragen';
 $string['section'] = 'Beschrijving';
 $string['sectionbreak'] = '----- Pagina-einde -----';
 $string['sectionbreak_help'] = '----- Pagina-einde -----';
@@ -417,6 +422,10 @@ $string['started'] = 'Begonnen';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['subject'] = 'Onderwerp';
+$string['submissionnotificationhtmlanon'] = 'Er is een nieuwe  <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête.';
+$string['submissionnotificationhtmluser'] = 'Er is een nieuwe <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête van "<a href="{$a->profileurl}">{$a->username}</a>".';
+$string['submissionnotificationtextanon'] = 'Er is een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête.';
+$string['submissionnotificationtextuser'] = 'Er is een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête van "{$a->username}" ({$a->profileurl}).';
 $string['submitoptions'] = 'Instuuropties';
 $string['submitpreview'] = 'Voorvertoning insturen';
 $string['submitpreviewcorrect'] = 'Deze inzending zou geaccepteerd worden als correct ingevuld.';

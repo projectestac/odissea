@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_ldap', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,7 +92,7 @@ $string['auth_ldap_user_attribute'] = 'Opcional: substitueix l\'atribut utilitza
 $string['auth_ldap_user_attribute_key'] = 'Atribut d\'usuari';
 $string['auth_ldap_user_exists'] = 'Aquest nom d\'usuari LDAP ja existeix.';
 $string['auth_ldap_user_settings'] = 'Paràmetres de consulta d\'usuaris';
-$string['auth_ldap_user_type'] = 'Seleccioneu com s\'emmagatzemen els usuaris en LDAP. Aquest paràmetre també especifica com funcionarà el venciment de les contrasenyes, el nombre d\'inicis de sessió de gràcia i la creació d\'usuaris.';
+$string['auth_ldap_user_type'] = 'Seleccioneu com s\'emmagatzemen els usuaris en LDAP. Aquest paràmetre també especifica com funcionaran el venciment de les contrasenyes, el nombre d\'inicis de sessió de gràcia i la creació d\'usuaris.';
 $string['auth_ldap_user_type_key'] = 'Tipus d\'usuari';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type no està definit, o la funció ldap_expirationtime2unix no és compatible amb el tipus seleccionat!';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type no està definit, o la funció ldap_unixi2expirationtime no és compatible amb el tipus seleccionat!';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendartype_gregorian', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'calendartype_gregorian', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   calendartype_gregorian
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

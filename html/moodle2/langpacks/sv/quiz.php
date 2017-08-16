@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -915,8 +915,6 @@ testet ska fullf&ouml;ljas inom den tiden:</p>
   <li>Om en student/elev/deltagare/l&auml;rande lyckas fuska och anv&auml;nder mer &auml;n 60 sekunder ut&ouml;ver den till&aring;tna tiden
   s&aring; ges testet automatiskt betyget/omd&ouml;met 0.</li>
 </ul>';
-$string['timelimitmin'] = 'Tidsbegränsning (minuter)';
-$string['timelimitsec'] = 'Tidsbegränsning (sekunder)';
 $string['timestr'] = '%H:%M:%S on %d/%m/%y';
 $string['timesup'] = 'Tiden är slut!';
 $string['timetaken'] = 'Tid för genomförande';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'par {$a->name} – {$a->date}';
 $string['contentheader'] = 'Contenu';
 $string['display'] = 'Afficher le contenu du dossier';
 $string['display_help'] = 'Si vous choisissez d\'afficher le contenu du dossier sur la page de cours, il n\'y aura pas de lien vers une page séparée.
@@ -49,6 +50,7 @@ Un dossier peut être utilisé par exemple pour :
 * rassembler plusieurs fichiers sur un même sujet
 * fournir sur la page de cours un espace de dépôt de fichiers commun à plusieurs enseignants, en cachant le dossier de sorte que seuls les enseignants puissent le voir';
 $string['modulenameplural'] = 'Dossiers';
+$string['newfoldercontent'] = 'Nouveau contenu de dossier';
 $string['noautocompletioninline'] = 'L\'achèvement automatique lors de la consultation d\'une activité ne peut pas être sélectionné en même temps que l\'option « Afficher sur la page du cours »';
 $string['page-mod-folder-view'] = 'Page principale du module dossier';
 $string['page-mod-folder-x'] = 'Toute page du module dossier';

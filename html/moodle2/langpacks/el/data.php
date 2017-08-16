@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,9 +56,9 @@ $string['buttons'] = 'Ενέργειας';
 $string['bynameondate'] = 'από {$a->name} - {$a->date}';
 $string['cancel'] = 'Ακύρωση';
 $string['cannotaccesspresentsother'] = 'Δε σας επιτρέπεται η πρόσβαση σε προκαθορισμένες τιμές άλλων χρηστών';
-$string['cannotadd'] = 'Δεν είναι δυνατή η προσθήκη καταχωρήσεων!';
+$string['cannotadd'] = 'Αδυναμία προσθήκης καταχωρήσεων!';
 $string['cannotdeletepreset'] = 'Σφάλμα κατά τη διαγραφή του προτύπου!';
-$string['cannotunziptopreset'] = 'Δεν είναι δυνατή η αποσυμπίεση στον προκαθορισμένο κατάλογο';
+$string['cannotunziptopreset'] = 'Αδυναμία αποσυμπίεσης στον προκαθορισμένο κατάλογο';
 $string['checkbox'] = 'Κουμπί επιλογής';
 $string['chooseexportfields'] = 'Επιλέξτε τα πεδία που επιθυμείτε να εξαγάγετε:';
 $string['chooseexportformat'] = 'Επιλέξτε το φορμάτ στο οποίο θέλετε να εξαγάγετε:';
@@ -110,7 +110,7 @@ $string['data:comment'] = 'Καταγραφή σχολίων';
 $string['data:exportallentries'] = 'Εξαγωγή όλων των καταχωρήσεων στη βάση';
 $string['data:exportentry'] = 'Εξαγωγή μιας καταχώρησης στη βάση';
 $string['data:exportownentry'] = 'Εξαγωγή ιδίας καταχώρησης στης βάση';
-$string['data:managecomments'] = 'Διαχείριση σχολίων';
+$string['data:managecomments'] = 'Διαχείρηση σχολίων';
 $string['data:manageentries'] = 'Διαχείριση καταχωρήσεων';
 $string['data:managetemplates'] = 'Διαχείριση προτύπων';
 $string['data:manageuserpresets'] = 'Διαχείριση των ρυθμίσεων όλων των προτύπων';
@@ -239,7 +239,7 @@ $string['modulename'] = 'Βάση δεδομένων';
 $string['modulenameplural'] = 'Βάσεις δεδομένων';
 $string['more'] = 'Περισσότερα';
 $string['moreurl'] = 'Περισσότερα URL';
-$string['movezipfailed'] = 'Δεν είναι δυνατή η μετακίνηση του συμπιεσμένου αρχείου';
+$string['movezipfailed'] = 'Αδυναμία μετακίνησης συμπιεσμένου αρχείου';
 $string['multientry'] = 'Επαναλαμβανόμενη καταχώρηση';
 $string['multimenu'] = 'Μενού (Πολλαπλή επιλογή)';
 $string['multipletags'] = 'Βρέθηκαν πολλαπλές ετικέτες! Το πρότυπο δεν αποθηκεύτηκε';
@@ -279,8 +279,8 @@ $string['optionaldescription'] = 'Μικρή περιγραφή (προαιρε�
 $string['optionalfilename'] = 'Όνομα αρχείου (προαιρετικό)';
 $string['other'] = 'Άλλο';
 $string['overrwritedesc'] = 'Αντικατάσταση προκαθορισμένου αν υπάρχει ήδη';
-$string['overwrite'] = 'Επικάλυψη';
-$string['overwritesettings'] = 'Επικάλυψη τρέχουσας ρύθμισης';
+$string['overwrite'] = 'Αντικατάσταση';
+$string['overwritesettings'] = 'Αντικατάσταση τρέχουσας ρύθμισης';
 $string['pagesize'] = 'Καταχωρήσεις ανά σελίδα';
 $string['participants'] = 'Συμμετέχοντες';
 $string['picture'] = 'Εικόνα';

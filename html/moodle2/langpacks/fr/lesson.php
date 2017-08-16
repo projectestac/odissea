@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -165,6 +165,7 @@ $string['displayscorewithessays'] = '<p>Vous avez obtenu un score de {$a->score}
 <p>Les notes de votre(vos) {$a->essayquestions} composition(s) sera(ont) évaluée(s) et ajoutée(s) au score final ultérieurement.</p>
 <p>Votre note actuelle, sans la(les) composition(s), est de {$a->score} sur {$a->grade}.</p>';
 $string['displayscorewithoutessays'] = 'Votre score est de {$a->score} (sur {$a->grade}).';
+$string['duplicatepagenamed'] = 'Page doublon : {$a}';
 $string['edit'] = 'Modifier';
 $string['editingquestionpage'] = 'Modification de la page de question {$a}';
 $string['editlessonsettings'] = 'Modifier les réglages de la leçon';
@@ -187,7 +188,6 @@ $string['enterpassword'] = 'Veuillez saisir le mot de passe :';
 $string['eolstudentoutoftime'] = 'Attention&nbsp;: le temps à votre disposition pour cette leçon est échu. Votre dernière réponse ne sera pas prise en compte si elle est survenue après l\'échéance.';
 $string['eolstudentoutoftimenoanswers'] = 'vous n\'avez répondu à aucune question. Votre note pour cette leçon est de 0.';
 $string['essay'] = 'Composition';
-$string['essayemailmessage'] = '<p>Question ouverte :<blockquote>{$a->question}</blockquote></p><p>Votre réponse :<blockquote><em>{$a->response}</em></blockquote></p><p>Commentaire de l\'enseignant :<blockquote><em>{$a->comment}</em></blockquote></p><p>Vous avez obtenu {$a->earned} points sur un total de {$a->outof} à cette question ouverte.</p><p>Votre note pour cette leçon est maintenant {$a->newgrade} &#37;.</p>';
 $string['essayemailmessage2'] = '<p>Question ouverte : {$a->question}</p><p>Votre réponse : <em>{$a->response}</em></p><p>Commentaire de l\'évaluateur : <em>{$a->comment}</em></p><p>Vous avez obtenu {$a->earned} points sur un total de {$a->outof} à cette question ouverte.</p><p>Votre note pour cette leçon est maintenant {$a->newgrade} %.</p>';
 $string['essayemailsubject'] = 'Note pour la question de leçon';
 $string['essayresponses'] = 'Compositions';
@@ -256,7 +256,6 @@ $string['leftduringtimed'] = 'Vous avez quitté une leçon à durée limitée.<b
 $string['leftduringtimednoretake'] = 'Vous avez quitté une leçon à durée limitée et vous n\'êtes<br />pas autorisé à la recommencer ou la continuer.';
 $string['leftduringtimedsession'] = 'Vous avez interrompu une leçon chronométrée.';
 $string['lesson:addinstance'] = 'Ajouter une leçon';
-$string['lessonattempted'] = 'Leçon effectuée';
 $string['lessonclosed'] = 'Cette leçon n\'est plus disponible depuis {$a}.';
 $string['lessoncloses'] = 'La leçon se termine';
 $string['lessoncloseson'] = 'La leçon se termine le {$a}';
@@ -273,6 +272,7 @@ $string['lessonopen'] = 'Cette leçon sera ouverte le {$a}.';
 $string['lessonopens'] = 'La leçon s\'ouvre';
 $string['lessonpagelinkingbroken'] = 'La première page n\'a pas été trouvée. Les liens de la leçon sont vraisemblablement cassés. Veuillez contacter un administrateur.';
 $string['lessonstats'] = 'Statistiques de la leçon';
+$string['lesson:view'] = 'Consulter les activités leçon';
 $string['lesson:viewreports'] = 'Consulter les rapports des leçons';
 $string['linkedmedia'] = 'Médias liés';
 $string['loginfail'] = 'Connexion échouée, veuillez réessayer...';

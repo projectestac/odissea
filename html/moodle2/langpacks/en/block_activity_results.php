@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'How many of the highest grades should be shown (0
 $string['config_show_worst'] = 'How many of the lowest grades should be shown (0 to disable)?';
 $string['configuredtoshownothing'] = 'This block\'s configuration currently does not allow it to show any results.';
 $string['config_use_groups'] = 'Show groups instead of students (only if the activity supports groups)?';
+$string['defaultdecimalplaces'] = 'Decimal places';
+$string['defaultdecimalplaces_desc'] = 'Number of decimal places to display by default';
+$string['defaultgradedisplay'] = 'Display grades as';
+$string['defaultgradedisplay_desc'] = 'How should the grades be displayed by default?';
+$string['defaulthighestgrades'] = 'Default highest grades shown';
+$string['defaulthighestgrades_desc'] = 'How many of the highest grades should be shown by default?';
+$string['defaultlowestgrades'] = 'Default lowest grades shown';
+$string['defaultlowestgrades_desc'] = 'How many of the lowest grades should be shown by default?';
+$string['defaultnameoptions'] = 'Privacy of results';
+$string['defaultnameoptions_desc'] = 'How should the students be identified by default?';
+$string['defaultshowgroups'] = 'Default show groups';
+$string['defaultshowgroups_desc'] = 'Show groups instead of students by default (only if the activity supports groups)';
 $string['error_emptyactivityid'] = 'Please configure this block and select which activity it should display results from.';
 $string['error_emptyactivityrecord'] = 'Error: the selected activity does not exist in the database.';
 $string['error_nogroupsexist'] = 'Error: the block is set to display grades in group mode, but there are no groups defined.';

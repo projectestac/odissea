@@ -139,8 +139,23 @@ class behat_util extends testing_util {
         }
 
         self::reset_dataroot();
-        self::drop_dataroot();
         self::drop_database(true);
+        self::drop_dataroot();
+    }
+
+    /**
+     * Delete files and directories under dataroot.
+     */
+    public static function drop_dataroot() {
+        global $CFG;
+
+        // As behat directory is now created under default $CFG->behat_dataroot_parent, so remove the whole dir.
+        if ($CFG->behat_dataroot !== $CFG->behat_dataroot_parent) {
+            remove_dir($CFG->behat_dataroot, false);
+        } else {
+            // It should never come here.
+            throw new moodle_exception("Behat dataroot should not be same as parent behat data root.");
+        }
     }
 
     /**
@@ -221,10 +236,14 @@ class behat_util extends testing_util {
      *
      * Stores a file in dataroot/behat to allow Moodle to switch
      * to the test environment when using cli-server.
+     * @param bool $themesuitewithallfeatures List themes to include core features.
+     * @param string $tags comma separated tag, which will be given preference while distributing features in parallel run.
+     * @param int $parallelruns number of parallel runs.
+     * @param int $run current run.
      * @throws coding_exception
      * @return void
      */
-    public static function start_test_mode() {
+    public static function start_test_mode($themesuitewithallfeatures = false, $tags = '', $parallelruns = 0, $run = 0) {
         global $CFG;
 
         if (!defined('BEHAT_UTIL')) {
@@ -240,7 +259,7 @@ class behat_util extends testing_util {
         self::test_environment_problem();
 
         // Updates all the Moodle features and steps definitions.
-        behat_config_manager::update_config_file();
+        behat_config_manager::update_config_file('', true, $tags, $themesuitewithallfeatures, $parallelruns, $run);
 
         if (self::is_test_mode_enabled()) {
             return;
@@ -286,6 +305,7 @@ class behat_util extends testing_util {
         }
 
         $testenvfile = self::get_test_file_path();
+        behat_config_manager::set_behat_run_config_value('behatsiteenabled', 0);
 
         if (!self::is_test_mode_enabled()) {
             echo "Test environment was already disabled\n";
@@ -318,8 +338,8 @@ class behat_util extends testing_util {
      * Returns the path to the file which specifies if test environment is enabled
      * @return string
      */
-    protected final static function get_test_file_path() {
-        return behat_command::get_behat_dir() . '/test_environment_enabled.txt';
+    public final static function get_test_file_path() {
+        return behat_command::get_parent_behat_dir() . '/test_environment_enabled.txt';
     }
 
     /**

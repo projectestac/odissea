@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'atto_media', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'editor', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   editor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['bold'] = 'Έντονα';
 $string['borderthickness'] = 'Πλάτος περιγράμματος';
 $string['bottom'] = 'Κάτω';
 $string['browse'] = 'Αναζήτηση';
-$string['cancel'] = 'Άκυρο';
+$string['cancel'] = 'Ακύρωση';
 $string['cellpadding'] = 'Γέμισμα κελιού';
 $string['cellspacing'] = 'Κενό κελιού';
 $string['choosechar'] = 'Επιλέξτε χαρακτήρα';
@@ -57,7 +57,7 @@ $string['cut'] = 'Αποκοπή επιλογής';
 $string['cutpastemozilla'] = 'Δυστυχώς, δεν μπορείτε αυτήν τη στιγμή να χρησιμοποιήσετε κανονικές συντομεύσεις πληκτρολογίου (ακόμα και το κουμπί της επικόλλησης) για την εισαγωγή κειμένου στον online συντάκτη. Αυτό οφείλεται σε χαρακτηριστικό ασφαλείας κάποιων εκδόσεων των πλοηγητών Mozilla και Firefox. Μπορείτε να δοκιμάσετε τρεις λύσεις: 1) Αντί για CTRL-v, χρησιμοποιήστε SHIFT-Insert, 2) Χρησιμοποιήστε το μενού Επεξεργασία->Επικόλληση του πλοηγητή, 3)Αλλάξτε τις ρυθμίσεις του πλοηγητή μέσα από την επεξεργασία του αρχείου: user.js .Πατήστε OK για περισσότερη βοήθεια, ή Άκυρο για επιστροφή στο συντάκτη.';
 $string['delete'] = 'Διαγραφή';
 $string['editors'] = 'Επεξεργαστές κειμένου';
-$string['editorsettings'] = 'Διαχείριση επεξεργαστών';
+$string['editorsettings'] = 'Διαχείρηση επεξεργαστών';
 $string['enterurlfirst'] = 'Πρέπει να εισάγετε ένα URL πρώτα';
 $string['filebrowser'] = 'Αναζήτηση αρχείων';
 $string['findwhat'] = 'Αναζήτηση';
@@ -115,11 +115,11 @@ $string['outdent'] = 'Μείωση εσοχής';
 $string['paste'] = 'Επικόλληση από clipboard';
 $string['path'] = 'Μονοπάτι';
 $string['percent'] = 'Ποσοστό';
-$string['pixels'] = 'Pixels';
+$string['pixels'] = 'Εικονοστοιχεία';
 $string['pleaseenteralt'] = 'Παρακαλώ εισάγετε το εναλλακτικό κείμενο';
 $string['popupeditor'] = 'Μεγέθυνση συντάκτη';
 $string['preformatted'] = 'Προ-μορφορποιήμενο';
-$string['preview'] = 'Προεπισκόπιση';
+$string['preview'] = 'Προεπισκόπηση';
 $string['properties'] = 'Ιδιότητες';
 $string['redo'] = 'Επανάληψη της τελευταίας ενέργειας';
 $string['regularexpressions'] = 'Χρήση κανονικών εκφράσεων';

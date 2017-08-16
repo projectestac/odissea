@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -166,6 +166,7 @@ $string['displayreview'] = 'Geef de optie om een vraag opnieuw te proberen';
 $string['displayreview_help'] = 'Indien ingeschakeld, zal bij een fout antwoord de student de optie krijgen om ofwel de vraag vrijblijvend opnieuw te proberen (zonder cijfer), ofwel verder te gaan met de les.';
 $string['displayscorewithessays'] = '<p>Je hebt {$a->score} punten op {$a->tempmaxgrade} behaald voor de automatisch beoordeelde vragen.</p><p>Je {$a->essayquestions} open vragen zullen beoordeeld worden op een later moment  toegevoegd worden bij je totaalcijfer.</p><p>Je resultaat op dit ogenblik, zonder de open vragen is {$a->score} op {$a->grade}.</p>';
 $string['displayscorewithoutessays'] = 'Je cijfer is {$a->score} (op {$a->grade}).';
+$string['duplicatepagenamed'] = 'Kopiëer pagina: {$a}';
 $string['edit'] = 'Bewerk';
 $string['editingquestionpage'] = 'Bewerken {$a} vragenpagina';
 $string['editlessonsettings'] = 'Bewerk de instellingen van deze les';
@@ -188,7 +189,6 @@ $string['enterpassword'] = 'Geef het wachtwoord:';
 $string['eolstudentoutoftime'] = 'Opgelet: je tijd voor deze les is helemaal op. Wanneer je laatste antwoord verstuurd is nadat de tijd op was, dan telt dat niet meer mee.';
 $string['eolstudentoutoftimenoanswers'] = 'Je hebt geen enkele vraag beantwoord. Je hebt een 0 voor deze les';
 $string['essay'] = 'Open vraag';
-$string['essayemailmessage'] = '<p>Open vraag: <blockquote>{$a->question}</blockquote></p><p>Je antwoord: <blockquote><em>{$a->response}</em></blockquote></p><p>{$a->teacher}\'s comments:<blockquote><em>{$a->comment}</em></blockquote></p><p>Je hebt {$a->earned} punten gekregen op {$a->outof} voor deze open vraag.</p><p>Je cijfer voor deze les is gewijzigd naar {$a->newgrade}%.</p>';
 $string['essayemailmessage2'] = '<p>Open vraag prompt: {$a->question}</p><p>Jouw antwoord:<em>{$a->response}</em></p><p>Commentaar van de beoordeler:<em>{$a->comment}</em></p><p>Je hebt {$a->earned} op {$a->outof} gekregen voor deze open vraag.</p><p>Je cijfer voor deze les is gewijzigd naar {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Cijfer beschikbaar voor vraag uit les';
 $string['essayresponses'] = 'Antwoord op open vraag';
@@ -389,7 +389,6 @@ $string['leftduringtimed'] = 'Je bent weggegaan tijdens een getimede les. <br />
 $string['leftduringtimednoretake'] = 'Je bent weggegaan tijdens een getimede les.  <br />Je mag niet verder werken.';
 $string['leftduringtimedsession'] = 'Je bent weggegaan tijdens een getimede les';
 $string['lesson:addinstance'] = 'Voeg een nieuwe les toe';
-$string['lessonattempted'] = 'Poging';
 $string['lessonclosed'] = 'Deze les sluit op {$a}.';
 $string['lessoncloses'] = 'Les sluit';
 $string['lessoncloseson'] = 'Les sluit op {$a}';
@@ -406,6 +405,7 @@ $string['lessonopen'] = 'Deze les zal openen op {$a}.';
 $string['lessonopens'] = 'Les opent';
 $string['lessonpagelinkingbroken'] = 'Eerste pagina niet gevonden. Waarschijnlijk is de link naar de lespagina gebroken. Contacteer een beheerder';
 $string['lessonstats'] = 'Statistieken van de les';
+$string['lesson:view'] = 'Bekijk lesactiviteit';
 $string['lesson:viewreports'] = 'Toon lesrapporten';
 $string['linkedmedia'] = 'Gelinkte media';
 $string['loginfail'] = 'Login mislukt. Probeer nog eens...';

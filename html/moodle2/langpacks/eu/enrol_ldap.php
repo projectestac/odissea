@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik er
 $string['autocreate_key'] = 'Sortu automatikoki';
 $string['autocreation_settings'] = 'Ikastaroak era automatikoan sortzeko zehaztasunak';
 $string['autoupdate_settings'] = 'Ikastaroak era automatikoan eguneratzeko zehaztasunak';
+$string['autoupdate_settings_desc'] = '<p>Aukeratu sinkronizazio script-a exekutatzean (enrol/ldap/cli/sync.php) eguneratuko diren eremuak.</p><p>Gutxienez eremu bat aukeratzen bada eguneratzea egingo da.</p>';
 $string['bind_dn'] = 'Erabiltzaileak bilatzeko \'bind-user\' bat erabili nahi baduzu, zehaztu hemen. Horrelako zerbait \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_dn_key'] = '\'Bind-user\'aren izen gorena (distinguished name)';
 $string['bind_pw'] = '\'Bind-user\'aren pasahitza';
@@ -45,6 +46,7 @@ $string['contexts'] = 'LDAP kontestuak';
 $string['couldnotfinduser'] = 'Ezin izan da \'{$a}\' erabiltzailea aurkitu, alde batera utzi da';
 $string['course_fullname'] = 'Aukerakoa: LDAP eremua zeinetatik lortuko den izen osoa.';
 $string['course_fullname_key'] = 'Izen osoa';
+$string['course_fullname_updateonsync'] = 'Eguneratu izen osoa sinkronizazio script-ean';
 $string['course_fullname_updateonsync_key'] = 'Egunearatu izen osoa';
 $string['course_idnumber'] = 'Identikatzaile bakarraren mapa LADPn, ohikoena <em>cn</em> edo <em>uid</em>. Balorea blokeatzea gomendatzen da ikastaroa sortzeko era automatikoa erabiltzen ari bada.';
 $string['course_idnumber_key'] = 'ID zenbakia';
@@ -54,9 +56,11 @@ $string['course_search_sub_key'] = 'Bilatu azpitestuinguruak';
 $string['course_settings'] = 'Ikastaroan matrikulatzeko ezarpenak';
 $string['course_shortname'] = 'Aukerakoa:  LDAP eremua zeinetatik lortuko den izen laburra.';
 $string['course_shortname_key'] = 'Izen laburra';
+$string['course_shortname_updateonsync'] = 'Eguneratu izen laburra sinkronizazio script-ean';
 $string['course_shortname_updateonsync_key'] = 'Eguneratu izen laburra';
 $string['course_summary'] = 'Aukerakoa:  LDAP eremua zeinetatik lortuko den laburpena.';
 $string['course_summary_key'] = 'Laburpena';
+$string['course_summary_updateonsync'] = 'Eguneratu laburpena sinkronizazio script-ean';
 $string['course_summary_updateonsync_key'] = 'Eguneratu laburpena';
 $string['courseupdated'] = '\'{$a->idnumber}\' ID zenbakia duen ikastaroa ondo eguneratu da.';
 $string['courseupdateskipped'] = '\'{$a->idnumber}\' ID zenbakia duen ikastaroak ez du eguneratzerik behar. Alde batera utzi da...';

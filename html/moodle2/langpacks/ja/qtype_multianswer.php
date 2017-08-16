@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,8 @@ $string['correctanswerandfeedback'] = '正解およびフィードバック';
 $string['decodeverifyquestiontext'] = '問題テキストをデコードおよび確認する';
 $string['layout'] = 'レイアウト';
 $string['layouthorizontal'] = 'ラジオボタンの水平行';
+$string['layoutmultiple_horizontal'] = 'チェックボックスの横の行';
+$string['layoutmultiple_vertical'] = 'チェックボックスの縦のカラム';
 $string['layoutselectinline'] = 'テキスト内のインラインのドロップダウンメニュー';
 $string['layoutundefined'] = 'レイアウト未定義';
 $string['layoutvertical'] = 'ラジオボタンの垂直カラム';

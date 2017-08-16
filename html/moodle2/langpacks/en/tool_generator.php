@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,10 +45,10 @@ filesystem space (tens of gigabytes). You will need to delete the courses
 DEVELOPER debugging level.)';
 $string['coursesize_0'] = 'XS (~10KB; create in ~1 second)';
 $string['coursesize_1'] = 'S (~10MB; create in ~30 seconds)';
-$string['coursesize_2'] = 'M (~100MB; create in ~5 minutes)';
-$string['coursesize_3'] = 'L (~1GB; create in ~1 hour)';
-$string['coursesize_4'] = 'XL (~10GB; create in ~4 hours)';
-$string['coursesize_5'] = 'XXL (~20GB; create in ~8 hours)';
+$string['coursesize_2'] = 'M (~100MB; create in ~2 minutes)';
+$string['coursesize_3'] = 'L (~1GB; create in ~30 minutes)';
+$string['coursesize_4'] = 'XL (~10GB; create in ~2 hours)';
+$string['coursesize_5'] = 'XXL (~20GB; create in ~4 hours)';
 $string['coursewithoutusers'] = 'The selected course has no users';
 $string['createcourse'] = 'Create course';
 $string['createtestplan'] = 'Create test plan';

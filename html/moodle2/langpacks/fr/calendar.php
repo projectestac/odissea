@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'calendar', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,7 +67,7 @@ $string['errorcannotimport'] = 'Vous ne pouvez pas configurer d\'abonnement au c
 $string['errorhasuntilandcount'] = 'Soit UNTIL, soit COUNT doit être mentionné dans une règle de récurrence, mais pas les deux termes à la fois dans une même règle.';
 $string['errorinvalidbydayprefix'] = 'Des valeurs entières précédant une règle BYDAY ne peuvent être présentes que pour les règles MONTHLY ou YEARLY.';
 $string['errorinvalidbydaysuffix'] = 'Les valeurs valides pour le jour de la semaine dans une règle BYDAY sont MO, TU, WE, TH, FR, SA et SU.';
-$string['errorinvalidbyhour'] = 'Les valeurs valides pour la règle BYHOUR sont 0 à 59.';
+$string['errorinvalidbyhour'] = 'Les valeurs valides pour la règle BYHOUR sont 0 à 23.';
 $string['errorinvalidbyminute'] = 'Les valeurs valides pour la règle BYMINUTE sont 0 à 59.';
 $string['errorinvalidbymonth'] = 'Les valeurs valides pour la règle BYMONTH sont 1 à 12.';
 $string['errorinvalidbymonthday'] = 'Les valeurs valides pour la règle BYMONTHDAY sont 1 à 31 ou -31 à -1.';
@@ -105,8 +105,14 @@ $string['eventsdeleted'] = 'Événements supprimés';
 $string['eventsfor'] = 'Événements du {$a}';
 $string['eventsimported'] = 'Événements importés : {$a}';
 $string['eventskey'] = 'Légende';
+$string['eventspersonal'] = 'Mes événements personnels';
 $string['eventsrelatedtocourses'] = 'Événement en liens avec les cours';
+$string['eventsrelatedtogroups'] = 'Événements relatifs à des groupes';
 $string['eventstarttime'] = 'Début';
+$string['eventstoexport'] = 'Événements à exporter';
+$string['eventsubscriptioncreated'] = 'Abonnement à un calendrier créé';
+$string['eventsubscriptiondeleted'] = 'Abonnement à un calendrier supprimé';
+$string['eventsubscriptionupdated'] = 'Abonnement à un calendrier modifié';
 $string['eventsupdated'] = 'Événements mis à jour : {$a}';
 $string['eventtime'] = 'à';
 $string['eventview'] = 'Détails de l\'événement';
@@ -201,6 +207,7 @@ $string['thu'] = 'Je';
 $string['thursday'] = 'Jeudi';
 $string['timeformat_12'] = '12 h (am/pm)';
 $string['timeformat_24'] = '24 h';
+$string['timeperiod'] = 'Durée';
 $string['today'] = 'Aujourd\'hui';
 $string['tomorrow'] = 'Demain';
 $string['tt_deleteevent'] = 'Supprimer l\'événement';

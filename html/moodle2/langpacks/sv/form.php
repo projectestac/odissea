@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['nomethodforaddinghelpbutton'] = 'Det finns ingen metod för att lägga 
 $string['nonexistentformelements'] = 'Försöker att lägga till en hjälpknapp till en komponent till ett formulär som inte finns : {$a}';
 $string['optional'] = 'Valfri';
 $string['othersettings'] = 'Andra inställningar';
+$string['passwordunmaskrevealhint'] = 'Avslöja';
 $string['requiredelement'] = 'Obligatoriskt fält';
 $string['revealpassword'] = 'Avslöja';
 $string['security'] = 'Säkerhet';
@@ -59,7 +60,7 @@ $string['selectallornone'] = 'Välj alla/ingen';
 $string['selected'] = 'Vald';
 $string['showadvanced'] = 'Visa avancerad';
 $string['showless'] = 'Visa färre...';
-$string['somefieldsrequired'] = 'Det finns obligatoriska fält i det här formuläret markerat {$a}.';
+$string['somefieldsrequired'] = 'Det finns obligatoriska fält i det här formuläret marked{$a}.';
 $string['time'] = 'Tid ';
 $string['timeunit'] = 'Tid enhet';
 $string['timing'] = 'Tidsanpassning';

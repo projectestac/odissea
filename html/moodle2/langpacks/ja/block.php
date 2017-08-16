@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addtodock'] = 'これをドックに移動する';
 $string['anypagematchingtheabove'] = '上記に合致するページすべて';
 $string['appearsinsubcontexts'] = 'サブコンテクストに表示する';
 $string['assignrolesinblock'] = '{$a} ブロックにロールを割り当てる';
+$string['blocksdrawertoggle'] = 'ブロックドロワを表示/非表示にする';
 $string['blocksettings'] = 'ブロック設定';
 $string['bracketfirst'] = '{$a} (最初)';
 $string['bracketlast'] = '{$a} (最後)';
@@ -54,6 +55,7 @@ $string['moveblockafter'] = '{$a} ブロックの後にブロックを移動す�
 $string['moveblockbefore'] = '{$a} ブロックの前にブロックを移動する';
 $string['moveblockinregion'] = '{$a} の場所にブロックを移動する';
 $string['movingthisblockcancel'] = 'このブロック ({$a}) を移動する';
+$string['myblocks'] = 'マイブロック';
 $string['onthispage'] = 'このページ';
 $string['pagetypes'] = 'ページタイプ';
 $string['pagetypewarning'] = '前回選択したページタイプを選択できないようになりました。下記より最も適切なページタイプを選択してください。';
@@ -61,10 +63,10 @@ $string['region'] = '場所';
 $string['restrictpagetypes'] = 'ページタイプに表示する';
 $string['showblock'] = '{$a} ブロックを表示する';
 $string['showoncontextandsubs'] = '「 {$a} 」およびその中のページすべてを表示する';
-$string['showoncontextonly'] = '「 {$a} 」のみに表示する';
+$string['showoncontextonly'] = '「 {$a} 」にのみ表示する';
 $string['showonentiresite'] = 'サイト全体に表示する';
 $string['showonfrontpageandsubs'] = 'フロントページおよびフロントページに追加されたページすべてに表示する';
-$string['showonfrontpageonly'] = 'フロントページのみに表示する';
+$string['showonfrontpageonly'] = 'フロントページにのみ表示する';
 $string['subpages'] = 'ページを選択する';
 $string['thisspecificpage'] = 'このページ';
 $string['undockall'] = 'すべてをアンドックする';

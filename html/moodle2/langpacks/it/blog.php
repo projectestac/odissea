@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'Questo intervento non ti appartiene';
 $string['entrysaved'] = 'Il tuo intervento è stato salvato';
 $string['entrytitle'] = 'Titolo intervento';
 $string['eventblogassociationadded'] = 'Creata associazione blog';
+$string['eventblogassociationdeleted'] = 'Eliminata associazione blog';
 $string['eventblogentriesviewed'] = 'Visualizzato intervento blog';
+$string['eventblogexternaladded'] = 'Registrato blog esterno';
+$string['eventblogexternalremoved'] = 'Rimossa registrazione blog esterno';
+$string['eventblogexternalupdated'] = 'Aggiornato blog esterno';
 $string['evententryadded'] = 'Inserito intervento blog';
 $string['evententrydeleted'] = 'Eliminato intervento blog';
 $string['evententryupdated'] = 'Aggiornato intervento blog';
+$string['eventexternalblogsviewed'] = 'Visualizzato blog esterno registrato';
 $string['externalblogcrontime'] = 'Frequenza controllo blog esterni tramite cron';
 $string['externalblogdeleteconfirm'] = 'Eliminare la registrazione al blog esterno?';
 $string['externalblogdeleted'] = 'La registrazione al blog esterno è stata eliminata';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = 'Ripresi da';
 $string['rssfeed'] = 'Feed RSS blog';
 $string['searchterm'] = 'Cerca: {$a}';
 $string['settingsupdatederror'] = 'Si è verificato un errore, non è stato possibile aggiornare le preferenze del blog.';
-$string['siteblog'] = 'Blog del sito: {$a}';
 $string['siteblogdisable'] = 'I blog di sito non sono abilitati';
 $string['siteblogheading'] = 'Blog del sito';
 $string['siteblogs'] = 'Gli utenti del sito possono vedere qualsiasi intervento nei blog';
@@ -187,4 +191,5 @@ $string['viewmyentriesaboutmodule'] = 'Visualizza i miei interventi su {$a}';
 $string['viewsiteentries'] = 'Visualizza tutti gli interventi';
 $string['viewuserentries'] = 'Visualizza tutti gli interventi di {$a}';
 $string['worldblogs'] = 'Chiunque può leggere gli interventi impostati come pubblici';
+$string['wrongexternalid'] = 'L\'ID del blog esterno non è corretta';
 $string['wrongpostid'] = 'Id errata dell\'intervento blog';

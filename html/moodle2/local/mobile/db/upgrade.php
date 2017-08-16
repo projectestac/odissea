@@ -74,5 +74,21 @@ function xmldb_local_mobile_upgrade($oldversion) {
 
         upgrade_plugin_savepoint(true, 2014060300, 'local', 'mobile');
     }
+
+    if ($oldversion < 2016102600) {
+        // Update configs moved to core.
+        $typeoflogin = get_config('local_mobile', 'typeoflogin');
+        $forcedurlscheme = get_config('local_mobile', 'urlscheme');
+
+        if (!empty($typeoflogin)) {
+            set_config('typeoflogin', $typeoflogin, 'tool_mobile');
+        }
+
+        if (!empty($forcedurlscheme)) {
+            set_config('forcedurlscheme', $forcedurlscheme, 'tool_mobile');
+        }
+
+        upgrade_plugin_savepoint(true, 2016102600, 'local', 'mobile');
+    }
     return true;
 }

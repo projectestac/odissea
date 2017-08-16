@@ -313,35 +313,43 @@ function feedback_delete_instance($id) {
 }
 
 /**
- * this is called after deleting all instances if the course will be deleted.
- * only templates have to be deleted
- *
- * @global object
- * @param object $course
- * @return boolean
- */
-function feedback_delete_course($course) {
-    global $DB;
-
-    //delete all templates of given course
-    return $DB->delete_records('feedback_template', array('course'=>$course->id));
-}
-
-/**
  * Return a small object with summary information about what a
  * user has done with a given particular instance of this module
  * Used for user activity reports.
  * $return->time = the time they did it
  * $return->info = a short text description
  *
- * @param object $course
- * @param object $user
- * @param object $mod
- * @param object $feedback
- * @return object
+ * @param stdClass $course
+ * @param stdClass $user
+ * @param cm_info|stdClass $mod
+ * @param stdClass $feedback
+ * @return stdClass
  */
 function feedback_user_outline($course, $user, $mod, $feedback) {
-    return null;
+    global $DB;
+    $outline = (object)['info' => '', 'time' => 0];
+    if ($feedback->anonymous != FEEDBACK_ANONYMOUS_NO) {
+        // Do not disclose any user info if feedback is anonymous.
+        return $outline;
+    }
+    $params = array('userid' => $user->id, 'feedback' => $feedback->id,
+        'anonymous_response' => FEEDBACK_ANONYMOUS_NO);
+    $status = null;
+    $context = context_module::instance($mod->id);
+    if ($completed = $DB->get_record('feedback_completed', $params)) {
+        // User has completed feedback.
+        $outline->info = get_string('completed', 'feedback');
+        $outline->time = $completed->timemodified;
+    } else if ($completedtmp = $DB->get_record('feedback_completedtmp', $params)) {
+        // User has started but not completed feedback.
+        $outline->info = get_string('started', 'feedback');
+        $outline->time = $completedtmp->timemodified;
+    } else if (has_capability('mod/feedback:complete', $context, $user)) {
+        // User has not started feedback but has capability to do so.
+        $outline->info = get_string('not_started', 'feedback');
+    }
+
+    return $outline;
 }
 
 /**
@@ -529,19 +537,46 @@ function feedback_get_completion_state($course, $cm, $userid, $type) {
     }
 }
 
-
 /**
  * Print a detailed representation of what a  user has done with
  * a given particular instance of this module, for user activity reports.
  *
- * @param object $course
- * @param object $user
- * @param object $mod
- * @param object $feedback
- * @return bool
+ * @param stdClass $course
+ * @param stdClass $user
+ * @param cm_info|stdClass $mod
+ * @param stdClass $feedback
  */
 function feedback_user_complete($course, $user, $mod, $feedback) {
-    return true;
+    global $DB;
+    if ($feedback->anonymous != FEEDBACK_ANONYMOUS_NO) {
+        // Do not disclose any user info if feedback is anonymous.
+        return;
+    }
+    $params = array('userid' => $user->id, 'feedback' => $feedback->id,
+        'anonymous_response' => FEEDBACK_ANONYMOUS_NO);
+    $url = $status = null;
+    $context = context_module::instance($mod->id);
+    if ($completed = $DB->get_record('feedback_completed', $params)) {
+        // User has completed feedback.
+        if (has_capability('mod/feedback:viewreports', $context)) {
+            $url = new moodle_url('/mod/feedback/show_entries.php',
+                ['id' => $mod->id, 'userid' => $user->id,
+                    'showcompleted' => $completed->id]);
+        }
+        $status = get_string('completedon', 'feedback', userdate($completed->timemodified));
+    } else if ($completedtmp = $DB->get_record('feedback_completedtmp', $params)) {
+        // User has started but not completed feedback.
+        $status = get_string('startedon', 'feedback', userdate($completedtmp->timemodified));
+    } else if (has_capability('mod/feedback:complete', $context, $user)) {
+        // User has not started feedback but has capability to do so.
+        $status = get_string('not_started', 'feedback');
+    }
+
+    if ($url && $status) {
+        echo html_writer::link($url, $status);
+    } else if ($status) {
+        echo html_writer::div($status);
+    }
 }
 
 /**
@@ -2997,7 +3032,8 @@ function feedback_send_email($cm, $feedback, $course, $user, $completed = null) 
             }
 
             if ($feedback->anonymous == FEEDBACK_ANONYMOUS_NO) {
-                $eventdata = new stdClass();
+                $eventdata = new \core\message\message();
+                $eventdata->courseid         = $course->id;
                 $eventdata->name             = 'submission';
                 $eventdata->component        = 'mod_feedback';
                 $eventdata->userfrom         = $user;
@@ -3007,9 +3043,13 @@ function feedback_send_email($cm, $feedback, $course, $user, $completed = null) 
                 $eventdata->fullmessageformat = FORMAT_PLAIN;
                 $eventdata->fullmessagehtml  = $posthtml;
                 $eventdata->smallmessage     = '';
+                $eventdata->courseid         = $course->id;
+                $eventdata->contexturl       = $info->url;
+                $eventdata->contexturlname   = $info->feedback;
                 message_send($eventdata);
             } else {
-                $eventdata = new stdClass();
+                $eventdata = new \core\message\message();
+                $eventdata->courseid         = $course->id;
                 $eventdata->name             = 'submission';
                 $eventdata->component        = 'mod_feedback';
                 $eventdata->userfrom         = $teacher;
@@ -3019,6 +3059,9 @@ function feedback_send_email($cm, $feedback, $course, $user, $completed = null) 
                 $eventdata->fullmessageformat = FORMAT_PLAIN;
                 $eventdata->fullmessagehtml  = $posthtml;
                 $eventdata->smallmessage     = '';
+                $eventdata->courseid         = $course->id;
+                $eventdata->contexturl       = $info->url;
+                $eventdata->contexturlname   = $info->feedback;
                 message_send($eventdata);
             }
         }
@@ -3067,7 +3110,8 @@ function feedback_send_email_anonym($cm, $feedback, $course) {
                 $posthtml = '';
             }
 
-            $eventdata = new stdClass();
+            $eventdata = new \core\message\message();
+            $eventdata->courseid         = $course->id;
             $eventdata->name             = 'submission';
             $eventdata->component        = 'mod_feedback';
             $eventdata->userfrom         = $teacher;
@@ -3077,6 +3121,9 @@ function feedback_send_email_anonym($cm, $feedback, $course) {
             $eventdata->fullmessageformat = FORMAT_PLAIN;
             $eventdata->fullmessagehtml  = $posthtml;
             $eventdata->smallmessage     = '';
+            $eventdata->courseid         = $course->id;
+            $eventdata->contexturl       = $info->url;
+            $eventdata->contexturlname   = $info->feedback;
             message_send($eventdata);
         }
     }

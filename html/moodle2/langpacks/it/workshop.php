@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,7 @@ $string['assignedassessments'] = 'Consegne da valutare';
 $string['assignedassessmentsnone'] = 'Non hai consegne assegnate da valutare';
 $string['backtoeditform'] = 'Torna alla scheda di valutazione';
 $string['byfullname'] = 'da <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'da {$a}';
 $string['calculategradinggrades'] = 'Calcola la votazione delle valutazioni';
 $string['calculategradinggradesdetails'] = 'attesi: {$a->expected}<br />calcolati: {$a->calculated}';
 $string['calculatesubmissiongrades'] = 'Calcola la votazione delle consegne';
@@ -147,6 +148,7 @@ $string['examplesmode'] = 'Modalità di valutazione degli esempi';
 $string['examplesubmissions'] = 'Consegne di esempio
 ';
 $string['examplesvoluntary'] = 'La valutazione delle consegne di esempio è su base volontaria';
+$string['exportsubmission'] = 'Esporta pagina';
 $string['feedbackauthor'] = 'Feedback per l\'autore';
 $string['feedbackauthorattachment'] = 'Allegato';
 $string['feedbackby'] = 'Feedback di {$a}';
@@ -196,7 +198,7 @@ Le consegne vengono valutate in accordo ai diversi criteri definiti dal docente.
 Gli studenti possono valutare una o più consegne di altri studenti, volendo anche in forma anonima.
 
 La valutazione ricevuta degli studenti si compone di due parti, una valutazione per la propria consegna e una valutazione per aver valutato le consegne  degli altri studenti. Entrambe le valutazioni vengono memorizzate nel registro del valutatore.';
-$string['modulenameplural'] = 'Workshops';
+$string['modulenameplural'] = 'Workshop';
 $string['mysubmission'] = 'le mie consegne';
 $string['nattachments'] = 'Numero massimo di allegati alla consegna';
 $string['noexamples'] = 'Questo workshop non ha esempi';
@@ -304,14 +306,19 @@ $string['switchphase30auto'] = 'Il workshop passerà automaticamente alla fase d
 $string['switchphase30info'] = 'Il workshop sta per entrare nella <strong>Fase di valutazione</strong>. Durante questa fase i revisori potranno valutare le consegne a loro distribuite (all\'interno delle date stabilite, se impostate).';
 $string['switchphase40info'] = 'Il workshop sta per entrare nella <strong>Fase di calcolo dei voti</strong>. Durante questa fase i partecipanti non potranno modificare le proprie consegne e le valutazioni date. I docenti potranno usare gli strumenti di valutazione per calcolare il voto finale e dare il proprio feedback ai revisori.';
 $string['switchphase50info'] = 'Il workshop sta per essere chiuso. I voti verranno calcolati ed appariranno nel registro delle valutazioni. Gli studenti potranno visualizzare le proprie consegne e le valutazioni ricevute.';
+$string['switchphasenext'] = 'Passa alla fase successiva';
 $string['taskassesspeers'] = 'Valuta pari';
 $string['taskassesspeersdetails'] = 'totale: {$a->total}<br />in attesa: {$a->todo}';
 $string['taskassessself'] = 'Valuta te stesso';
 $string['taskconclusion'] = 'Fornisce una conclusione dell\'attività';
+$string['taskdone'] = 'Attività svolta';
+$string['taskfail'] = 'Attività non andata a buon fine';
+$string['taskinfo'] = 'Informazioni attività';
 $string['taskinstructauthors'] = 'Imposta istruzioni di consegna';
 $string['taskinstructreviewers'] = 'Imposta istruzioni per la valutazione';
 $string['taskintro'] = 'Imposta la descrizione del workshop';
 $string['tasksubmit'] = 'Consegna il tuo lavoro';
+$string['tasktodo'] = 'Attività da svolgere';
 $string['toolbox'] = 'Workshop toolbox';
 $string['undersetup'] = 'Il workshop è in fase di allestimento. Per favore attendi fino a quando non entrerà nella prossima fase.';
 $string['useexamples'] = 'Usa esempi';
@@ -323,6 +330,7 @@ $string['usepeerassessment_help'] = 'I partecipanti potranno ricevere delle cons
 $string['userdatecreated'] = 'consegnato <span>{$a}</span>';
 $string['userdatemodified'] = 'modificato <span>{$a}</span>';
 $string['userplan'] = 'Workshop planner';
+$string['userplanaccessibilityskip'] = 'Vai all\'attività attiva';
 $string['userplanaccessibilitytitle'] = 'Cronologia del  Workshop con {$a} fasi';
 $string['userplancurrentphase'] = 'Fase attuale';
 $string['userplan_help'] = 'Il planner visualizza tutte le fasi del workshop elencando le attività da svolgere in ciascuna fase. La fase attiva è evidenziata e le attività completate sono spuntate.';
@@ -335,6 +343,7 @@ $string['workshop:addinstance'] = 'Aggiungere workshop';
 $string['workshop:allocate'] = 'Assegnare consegne per revisione';
 $string['workshop:deletesubmissions'] = 'Eliminare consegne';
 $string['workshop:editdimensions'] = 'Modificare scheda di valutazione';
+$string['workshop:exportsubmissions'] = 'Esportare consegne';
 $string['workshop:ignoredeadlines'] = 'Ignorare limitazioni temporali';
 $string['workshop:manageexamples'] = 'Gestire consegne di esempio';
 $string['workshopname'] = 'Nome del workshop';

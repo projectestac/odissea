@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,7 +170,6 @@ $string['original'] = '원본';
 $string['overwrite'] = '덮어쓰기';
 $string['overwriteall'] = '모두 덮어쓰기';
 $string['path'] = '경로';
-$string['personalrepositories'] = '가능한 저장소 인스턴스';
 $string['plugin'] = '저장소 플러그인';
 $string['pluginerror'] = '저장소 플러그인에 오류';
 $string['pluginname'] = '저장소 플러그인 명칭';

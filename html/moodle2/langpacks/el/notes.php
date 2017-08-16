@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'notes', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,22 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addnewnote'] = 'Προσθήκη μιας νέας σημείωσης';
+$string['addnewnote'] = 'Προσθήκη νέας σημείωσης';
 $string['addnewnoteselect'] = 'Επιλέξτε τους χρήστες για τους οποίους θα γράψετε σημειώσεις';
-$string['bynameondate'] = 'βάσει {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Ένα σφάλμα συνέβη κατά την διαγραφή της δημοσίευσης';
+$string['bynameondate'] = 'ανά {$a->name} - {$a->date}';
+$string['cannotdeletepost'] = 'Προέκυψε σφάλμα κατά την διαγραφή της δημοσίευσης';
 $string['configenablenotes'] = 'Ενεργοποίηση της αποθήκευσης των σημειώσεων σχετικά με ατομικούς χρήστες.';
 $string['content'] = 'Περιεχόμενο';
 $string['course'] = 'μάθημα';
 $string['coursenotes'] = 'Σημειώσεις μαθήματος';
 $string['created'] = 'δημιουργήθηκε';
-$string['deleteconfirm'] = 'Διαγραφή αυτής της σημείωσης?';
+$string['deleteconfirm'] = 'Διαγραφή αυτής της σημείωσης;';
 $string['deletenotes'] = 'Διαγραφή όλων των σημειώσεων';
 $string['editnote'] = 'Επεξεργασία σημείωσης';
 $string['enablenotes'] = 'Ενεργοποίηση σημειώσεων';
-$string['groupaddnewnote'] = 'Προσθήκη μιας συνηθισμένης σημείωσης';
+$string['eventnotecreated'] = 'Δημιουργία σημείωσης';
+$string['eventnotedeleted'] = 'Διαγραφή σημείωσης';
+$string['eventnotesviewed'] = 'Προβολή σημείωσης';
+$string['eventnoteupdated'] = 'Ενημέρωση σημείωσης';
+$string['groupaddnewnote'] = 'Προσθήκη μιας κοινής σημείωσης';
 $string['invalidid'] = 'Ορίστηκε ένα μη έγκυρο αναγνωριστικό σημείωσης';
-$string['nocontent'] = 'Το περιεχόμενο της σημείωσης δεν μπορεί να είναι άδειο';
+$string['invaliduserid'] = 'Μη έγκυρο αναγνωριστικό χρήστη: {$a}';
+$string['myprofileownnotes'] = 'Οι σημειώσεις μου';
+$string['nocontent'] = 'Το περιεχόμενο της σημείωσης δεν μπορεί να είναι κενό';
 $string['nonotes'] = 'Δεν υπάρχουν σημειώσεις αυτού του τύπου ακόμα';
 $string['nopermissiontodelete'] = 'Δεν μπορείτε να διαγράψετε αυτή τη σημείωση';
 $string['note'] = 'Σημείωση';
@@ -48,9 +54,18 @@ $string['notes'] = 'Σημειώσεις';
 $string['notesdisabled'] = 'Οι σημειώσεις είναι απενεργοποιημένες, λυπόμαστε.';
 $string['notesnotvisible'] = 'Δεν σας επιτρέπεται να δείτε τις σημειώσεις.';
 $string['nouser'] = 'Πρέπει να επιλέξετε ένα χρήστη';
+$string['page-notes-index'] = 'Κύρια σελίδα σημειώσεων';
+$string['page-notes-x'] = 'Οποιεσδήποτε σημειώσεις σελίδας';
 $string['personal'] = 'προσωπική';
 $string['personalnotes'] = 'Προσωπικές σημειώσεις';
-$string['publishstate'] = 'Κατάσταση';
+$string['publishstate'] = 'Πλαίσιο';
+$string['publishstate_help'] = 'Το πλαίσιο μιας σημείωσης καθορίζει ποιος μπορεί να δει τη σημείωση.
+<ul>
+<li>Προσωπική - Η σημείωση θα είναι ορατή μόνο σ\' εσάς</li>
+<li>Μάθημα  - Η σημείωση θα είναι ορατή στους διδάσκοντες αυτού του μαθήματος</li>
+<li>Ιστοχώρος - Η σημείωση θα είναι ορατή στους διδάσκοντες σε όλα τα μαθήματα</li>
+</ul>';
+$string['selectnotestate'] = 'Επιλέξτε κατάσταση σημείωσης';
 $string['site'] = 'ιστοχώρος';
 $string['sitenotes'] = 'Σημειώσεις ιστοχώρου';
 $string['unknown'] = 'άγνωστη';

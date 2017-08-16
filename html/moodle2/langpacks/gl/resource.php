@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'resource', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,7 +105,7 @@ $string['showdate'] = 'Amosar a data de modificación/envío';
 $string['showdate_desc'] = 'Amosar a data de modificación/envío na páxina do curso?';
 $string['showdate_help'] = 'Amosar a data de modificación/envío a carón de ligazóns ao ficheiro..
 
-Se houber múltiplos ficheiros neste recurso, amosase a data inicial de modificación/envío.';
+Se houber múltiples ficheiros neste recurso, amosase a data inicial de modificación/envío.';
 $string['showsize'] = 'Amosar o tamaño';
 $string['showsize_desc'] = 'Presentar o tamaño do ficheiro na páxina do curso?';
 $string['showsize_help'] = 'Presenta o tamaño do ficheiro no formato «3.1 MB», a carón da ligazón ao ficheiro.

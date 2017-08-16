@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'countries', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   countries
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,7 +59,7 @@ $string['BS'] = 'Μπαχάμες';
 $string['BT'] = 'Μπουτάν';
 $string['BV'] = 'Bouvet Island';
 $string['BW'] = 'Μποτσουάνα';
-$string['BY'] = 'Belarus';
+$string['BY'] = 'Λευκορωσία';
 $string['BZ'] = 'Belize';
 $string['CA'] = 'Καναδάς';
 $string['CC'] = 'Cocos (Keeling) Islands';
@@ -76,7 +76,7 @@ $string['CO'] = 'Κολομβία';
 $string['CR'] = 'Κόστα Ρίκα';
 $string['CU'] = 'Κούβα';
 $string['CV'] = 'Cape Verde';
-$string['CX'] = 'Christmas Island';
+$string['CX'] = 'Νήσος των Χριστουγέννων';
 $string['CY'] = 'Κύπρος';
 $string['CZ'] = 'Τσεχία';
 $string['DE'] = 'Γερμανία';
@@ -157,7 +157,7 @@ $string['LR'] = 'Liberia';
 $string['LS'] = 'Lesotho';
 $string['LT'] = 'Λιθουανία';
 $string['LU'] = 'Λουξεμβούργο';
-$string['LV'] = 'Latvia';
+$string['LV'] = 'Λετονία';
 $string['LY'] = 'Libyan Arab Jamahiriya';
 $string['MA'] = 'Μαρόκο';
 $string['MC'] = 'Μονακό';
@@ -165,7 +165,7 @@ $string['MD'] = 'Moldova; Republic of';
 $string['ME'] = 'Μαυροβούνιο';
 $string['MF'] = 'Saint Martin';
 $string['MG'] = 'Μαδαγασκάρη';
-$string['MH'] = 'Marshall Islands';
+$string['MH'] = 'Νήσοι Μάρσαλ';
 $string['MK'] = 'ΠΓΔΜ';
 $string['ML'] = 'Mali';
 $string['MM'] = 'Myanmar';
@@ -197,9 +197,9 @@ $string['NZ'] = 'Νέα Ζηλανδία';
 $string['OM'] = 'Ομάν';
 $string['PA'] = 'Παναμάς';
 $string['PE'] = 'Περού';
-$string['PF'] = 'French Polynesia';
+$string['PF'] = 'Γαλλική Πολυνησία';
 $string['PG'] = 'Papua New Guinea';
-$string['PH'] = 'Philippines';
+$string['PH'] = 'Φιλιππίνες';
 $string['PK'] = 'Πακιστάν';
 $string['PL'] = 'Πολωνία';
 $string['PM'] = 'St. Pierre and Miquelon';
@@ -216,7 +216,7 @@ $string['RS'] = 'Σερβία';
 $string['RU'] = 'Ρωσία';
 $string['RW'] = 'Ρουάντα';
 $string['SA'] = 'Σαουδική Αραβία';
-$string['SB'] = 'Solomon Islands';
+$string['SB'] = 'Νήσοι του Σολομώντα';
 $string['SC'] = 'Σεϋχέλλες';
 $string['SD'] = 'Σουδάν';
 $string['SE'] = 'Σουηδία';

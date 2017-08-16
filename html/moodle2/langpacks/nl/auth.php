@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['auth_sync_script'] = 'Synchronisatie gebruikersaccounts';
 $string['auth_sync_suspended'] = 'Indien ingeschakeld zal het attribuut voor geschorste gebruikersaccounts gebruikt worden om de status van de lokale gebruikersaccount aan te passen.';
 $string['auth_sync_suspended_key'] = 'Synchroniseer schorsingsstatus van lokale gebruikersaccounts';
 $string['auth_updatelocal'] = 'Update lokale gegevens';
-$string['auth_updatelocal_expl'] = '<p><b>Update lokale gegevens:</b>Als je dit inschakelt, dan zal het veld (van de externe authenticatie) automatisch geüpdatet worden telkens de gebruiker zich aanmeldt of wanneer er een gebruikerssynchronisatie gebeurt. Velden die lokaal worden geüpdatet moeten geblokkeerd worden.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Update lokale gegevens:</b>Als je dit inschakelt, dan zal het veld (van de externe authenticatie) automatisch geüpdatet worden telkens de gebruiker zich aanmeldt of wanneer er een gebruikerssynchronisatie gebeurt. Velden die ingesteld zijn om lokaal aangepast te worden, moeten geblokkeerd worden.</p>';
 $string['auth_updateremote'] = 'Update externe gegevens';
 $string['auth_updateremote_expl'] = '<p><b>Update de externe gegevens:</b>Als dit ingeschakeld is dan zal de externe authenticatie geüpdatet worden als een gebruikersrecord geüpdatet wordt. De velden mogen niet geblokkeerd zijn om bewerken mogelijk te maken.</p>';
 $string['auth_updateremote_ldap'] = '<p><b>Merk op:</b>Voor het updaten van externe LDAP-gegevens is het nodig dat je binddn en bindpw instelt bij een bind-gebruiker met bewerkrechten op alle gebruikersrecords. Op dit ogenblik behoud het geen attributen met meerdere waarden en dus zullen extra waarden bij update verwijderd worden.</p>';
@@ -82,6 +82,8 @@ $string['emailupdate'] = 'E-mailadres aanpassen';
 $string['emailupdatemessage'] = 'Beste {$a->fullname},
 
 Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}. Open volgende URL in je browser om deze wijziging te bevestigen.
+
+Als je hierover vragen hebt, contacteer dan de helpdesk via {$a->supportemail}
 
 {$a->url}';
 $string['emailupdatesuccess'] = 'Het e-mail adres van gebruiker <em>{$a->fullname}</em> is gewijzigd naar <em>{$a->email}</em>.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,8 @@ $string['availabletodatevalidation'] = 'The available to date cannot be before t
 $string['blank'] = 'Blank';
 $string['buttons'] = 'Actions';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
+$string['calendarend'] = 'Database {$a} closes';
+$string['calendarstart'] = 'Database {$a} opens';
 $string['cancel'] = 'Cancel';
 $string['cannotaccesspresentsother'] = 'You are not allowed to access presets from other users';
 $string['cannotadd'] = 'Can not add entries!';
@@ -97,6 +99,7 @@ $string['data:managetemplates'] = 'Manage templates';
 $string['data:manageuserpresets'] = 'Manage all template presets';
 $string['data:rate'] = 'Rate entries';
 $string['data:readentry'] = 'Read entries';
+$string['data:view'] = 'View database activity';
 $string['data:viewallratings'] = 'View all raw ratings given by individuals';
 $string['data:viewalluserpresets'] = 'View presets from all users';
 $string['data:viewanyrating'] = 'View total ratings that anyone received';
@@ -127,6 +130,7 @@ $string['editordisable'] = 'Disable editor';
 $string['editorenable'] = 'Enable editor';
 $string['emptyadd'] = 'The Add template is empty, generating a default form...';
 $string['emptyaddform'] = 'You did not fill out any fields!';
+$string['enabletemplateeditorcheck'] = 'Are you sure you want to enable the editor? This may result in content being altered when the template is saved.';
 $string['entries'] = 'Entries';
 $string['entrieslefttoadd'] = 'You must add {$a->entriesleft} more entry/entries in order to complete this activity';
 $string['entrieslefttoaddtoview'] = 'You must add {$a->entrieslefttoview} more entry/entries before you can view other participants\' entries.';
@@ -335,6 +339,7 @@ $string['savesuccess'] = 'Saved successfully. Your preset will now be available 
 $string['savetemplate'] = 'Save template';
 $string['search'] = 'Search';
 $string['search:activity'] = 'Database - activity information';
+$string['search:entry'] = 'Database - entries';
 $string['selectedrequired'] = 'All selected required';
 $string['showall'] = 'Show all entries';
 $string['single'] = 'View single';

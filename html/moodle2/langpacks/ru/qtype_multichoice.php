@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['choiceno'] = 'Вариант ответа {$a}';
 $string['choices'] = 'Имеющиеся варианты';
 $string['clozeaid'] = 'Введите пропущенное слово';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
+$string['correctanswersare'] = 'Правильные ответы: {$a}';
 $string['correctfeedback'] = 'Для любого правильного ответа';
 $string['deletedchoice'] = 'Этот вариант ответа был удален после того, как попытка была начата.';
 $string['errfractionsaddwrong'] = 'Выбранные варианты ответа не составляют 100%. Они составляют {$a}%';

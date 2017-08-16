@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'portfolio', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -99,6 +99,7 @@ $string['moderatedbsizethreshold'] = 'Transferentzia moderatuko dbsize-a';
 $string['noavailableplugins'] = 'Barkatu, baina ez dago esportatzeko portfolio eskuragarririk';
 $string['noinstanceyet'] = 'Aukeratu gabe';
 $string['nologs'] = 'Ez dago erakusteko erregistrorik!';
+$string['notexportable'] = 'Barkatu, baina esportatu nahi duzun eduki-mota ez da esportatzeko modukoa';
 $string['notyetselected'] = 'Aukeratu gabe';
 $string['off'] = 'Gaituta baina ezkutuan';
 $string['on'] = 'Gaituta eta ikusgai';

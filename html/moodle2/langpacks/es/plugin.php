@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -140,6 +140,8 @@ $string['type_gradingform'] = 'Método de calificación avanzado';
 $string['type_gradingform_plural'] = 'Métodos de calificación avanzados';
 $string['type_local'] = 'Extensión (plugin) local';
 $string['type_local_plural'] = 'Extensiones (plugins) locales';
+$string['type_media'] = 'Reproductor multimedia';
+$string['type_media_plural'] = 'Reproductores multimedia';
 $string['type_message'] = 'Salida de mensajes';
 $string['type_message_plural'] = 'Salidas de mensajería';
 $string['type_mnetservice'] = 'Servicio MNet';
@@ -162,8 +164,8 @@ $string['type_report'] = 'Informe del sitio';
 $string['type_report_plural'] = 'Informes';
 $string['type_repository'] = 'Repositorio';
 $string['type_repository_plural'] = 'Repositorios';
-$string['type_search'] = 'Motor de búsqueda';
-$string['type_search_plural'] = 'Motores de búsqueda';
+$string['type_search'] = 'Buscador';
+$string['type_search_plural'] = 'Buscadores';
 $string['type_theme'] = 'Tema';
 $string['type_theme_plural'] = 'Temas';
 $string['type_tool'] = 'Herramienta de Administración';

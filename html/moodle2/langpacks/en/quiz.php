@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -707,7 +707,7 @@ $string['reattemptquiz'] = 'Re-attempt quiz';
 $string['recentlyaddedquestion'] = 'Recently added question!';
 $string['recurse'] = 'Include questions from subcategories too';
 $string['redoesofthisquestion'] = 'Other questions attempted here: {$a}';
-$string['redoquestion'] = 'Redo question';
+$string['redoquestion'] = 'Try another question like this one';
 $string['regrade'] = 'Regrade all attempts';
 $string['regradecomplete'] = 'All attempts have been regraded';
 $string['regradecount'] = '{$a->changed} out of {$a->attempt} grades were changed';
@@ -898,8 +898,6 @@ $string['timelimit'] = 'Time limit';
 $string['timelimitexeeded'] = 'Sorry! Quiz time limit exceeded!';
 $string['timelimit_help'] = 'If enabled, the time limit is stated on the initial quiz page and a countdown timer is displayed in the quiz navigation block.';
 $string['timelimit_link'] = 'mod/quiz/timing';
-$string['timelimitmin'] = 'Time limit (minutes)';
-$string['timelimitsec'] = 'Time limit (seconds)';
 $string['timestr'] = '%H:%M:%S on %d/%m/%y';
 $string['timesup'] = 'Time is up!';
 $string['timetaken'] = 'Time taken';

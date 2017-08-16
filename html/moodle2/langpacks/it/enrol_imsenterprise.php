@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,10 @@ $string['aftersaving...'] = 'Dopo aver salvato le impostazioni, è possibile';
 $string['allowunenrol'] = 'I dati IMS possono <strong>disiscrivere</strong> gli studenti/docenti';
 $string['allowunenrol_desc'] = 'Consente di rimuovere le iscrizione dai corsi se specificato nel file IMS Enterprise';
 $string['basicsettings'] = 'Impostazioni di base';
+$string['categoryidnumber'] = 'Consenti codice identificativo della categoria';
+$string['categoryidnumber_desc'] = 'IMS Enterprise creerà categorie con il codice identificativo';
+$string['categoryseparator'] = 'Carattere di separazione delle categorie';
+$string['categoryseparator_desc'] = 'Il carattere di separazione delle categorie è obbligatorio se è abilitato anche il Codice identificativo della categoria.';
 $string['coursesettings'] = 'Opzioni del corso';
 $string['createnewcategories'] = 'Crea nuove categorie (nascoste) di corsi se non presenti in Moodle';
 $string['createnewcategories_desc'] = 'Se l\'elemento <org><orgunit> è presente nel file, il contenuto dell\'elemento sarà utilizzato per categorizzare i corsi da creare. La categorizzazione vale solo per i corsi nuovi, quelli già esistenti non saranno categorizzati nuovamente.
@@ -60,6 +64,8 @@ $string['mailadmins'] = 'Avvisa l\'amministratore per email';
 $string['mailusers'] = 'Avvisa gli utenti per email';
 $string['messageprovider:imsenterprise_enrolment'] = 'Messaggi di iscrizione IMS Enterprise';
 $string['miscsettings'] = 'Miscellanea';
+$string['nestedcategories'] = 'Consenti categorie nidificate';
+$string['nestedcategories_desc'] = 'IMS Enterprise creerà categorie nidificate';
 $string['pluginname'] = 'File IMS Enterprise';
 $string['pluginname_desc'] = 'Il plugin di iscrizione IMS Enterprise controlla ripetutamente la presenza di un file di testo in un dato percorso. Il file deve seguire le specifiche IMS Enterprise e contenere gli elementi XML relativi a persone, gruppi e appartenenza. ';
 $string['processphoto'] = 'Aggiungi una foto al profilo';
@@ -82,6 +88,10 @@ Il campo <userid> è un campo separato che contiene il codice ID usato dagli ute
 Alcuni student information system non forniscono il campo <userid>, nel qual caso è opportuno abilitare questa impostazione per usare <sourcedid> come userid di Moodle. Altrimenti lasciare l\'impostazione disabilitata.';
 $string['truncatecoursecodes'] = 'Tronca i codici dei corsi a questa lunghezza';
 $string['truncatecoursecodes_desc'] = 'In alcuni casi si potrebbe desiderare di troncare ad una certa lunghezza i codici corso prima di elaborarli. E\' possibile specificare il numero di caratteri da utilizzare prima del troncamento. Lasciando il campo in bianco i codici corso non saranno troncati.';
+$string['updatecourses'] = 'Aggiorna corso';
+$string['updatecourses_desc'] = 'Il plugin di iscrizione IMS Enterprise può aggiornare il titolo ed il titolo abbreviato del corso ("recstatus" deve essere impostato a 2, cosa che indica un aggiornamento).';
+$string['updateusers'] = 'Aggiorna gli account degli utenti se indicato nei dati IMS';
+$string['updateusers_desc'] = 'I dati di iscrizione IMS Enterprise possono aggiornare gli account degli utenti ("recstatus" deve essere impostato a 2, cosa che indica un aggiornamento).';
 $string['usecapitafix'] = 'Compatibilità "Capita" (il formato XML generato da questo sistema è impreciso)';
 $string['usecapitafix_desc'] = 'Lo student data system di Capita produce un XML con delle imprecisioni. Se usi Capita, è bene abilitare questa impostazione.';
 $string['usersettings'] = 'Opzioni utente';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'search', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,8 @@ $string['documentsinindex'] = 'インデックスのドキュメント';
 $string['duration'] = '継続時間';
 $string['emptydatabaseerror'] = 'データベーステーブルが存在していないか、インデックスレコードを含んでいません。';
 $string['enginenotfound'] = 'エンジン {$a} が見つかりませんでした。';
-$string['enginenotinstalled'] = '{$a} がインストールされていません。';
+$string['enginenotinstalled'] = 'エンジン {$a} がインストールされていません。';
+$string['enginenotselected'] = 'あなたはサーチエンジンを選択していません。';
 $string['engineserverstatus'] = '検索エンジンを利用できません。あなたの管理者にご連絡ください。';
 $string['enteryoursearchquery'] = 'あなたの検索キーワードを入力してください。';
 $string['errorareanotavailable'] = '{$a} 検索エリアは利用できません。';
@@ -85,9 +86,12 @@ $string['score'] = 'スコア';
 $string['search'] = '検索';
 $string['searcharea'] = '検索エリア';
 $string['searching'] = '検索 ...';
+$string['search:message_received'] = 'メッセージ - 受信';
+$string['search:message_sent'] = 'メッセージ - 送信';
 $string['search:mycourse'] = 'マイコース';
 $string['searchnotpermitted'] = 'あなたは検索を許可されていません。';
 $string['searchsetupdescription'] = '次のステップではあなたのMoodleグローバル検索の設定を支援します。';
+$string['search:user'] = 'ユーザ';
 $string['seconds'] = '秒';
 $string['solutions'] = 'ソリューション';
 $string['statistics'] = '統計';

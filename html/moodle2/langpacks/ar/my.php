@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'my', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,10 +32,10 @@ $string['defaultpage'] = 'صفحة مودل الافتراضية الخاصة ب
 $string['defaultprofilepage'] = 'صفحة اللمحة الشخصية الافتراضية';
 $string['delpage'] = 'حذف الصفحة';
 $string['managepages'] = 'إدارة الصفحات';
-$string['mymoodle'] = 'صفحتي الشخصية';
+$string['mymoodle'] = 'مودل الخاص بي';
 $string['nocourses'] = 'لا يوجد معلومات لمقرر دراسي ليتم اظهرها';
-$string['noguest'] = 'الصفحة الشخصية للمستخدمين غير متاحة للزوار';
-$string['pinblocks'] = 'إعدادات الكتل الخاصة بمودل الخاص بي';
+$string['noguest'] = 'صفحة مودل الخاص بي غير متاحة للزوار';
+$string['pinblocks'] = 'إعاداد الكتل الخاصة بمودل الخاص بي';
 $string['pinblocksexplan'] = 'أى إعدادات خاصة بالكتل تقوم بتعريفها هنا ستكون ظاهره (وغير مسموح بتحريرها) لكل المستخدمين لمودل في مودل الخاص بهم.';
 $string['reseterror'] = 'كان هناك خطأ في إعادة تعيين صفحتك';
 $string['reseteveryonesdashboard'] = 'إعادة تعيين الصفحة الشخصية لجميع المستخدمين';

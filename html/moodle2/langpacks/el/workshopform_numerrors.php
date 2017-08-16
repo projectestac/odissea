@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['dimensioncomment'] = 'Σχόλιο';
 $string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
 $string['dimensiongrade'] = 'Βαθμός';
-$string['dimensionweight'] = 'Βάρος';
+$string['dimensionweight'] = 'Βαρύτητα';
 $string['grade0'] = 'Λέξη για το λάθος';
 $string['grade0default'] = 'Όχι';
 $string['grade1'] = 'Λέξη για την επιτυχία';

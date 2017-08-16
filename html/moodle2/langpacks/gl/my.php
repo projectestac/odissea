@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'my', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,13 +31,13 @@ $string['allprofileswerereset'] = 'Todas as páxinas de perfiles foron reiniciad
 $string['defaultpage'] = 'Páxina predeterminada «O meu Moodle»';
 $string['defaultprofilepage'] = 'Páxina predeterminada de perfil';
 $string['delpage'] = 'Eliminar a páxina';
-$string['managepages'] = 'Administrar as páxinas';
-$string['mymoodle'] = 'Panel';
-$string['nocourses'] = 'Non hai información que mostrar sobre o curso.';
-$string['noguest'] = 'A páxina do «panel» non está dispoñíbel para convidados';
-$string['pinblocks'] = 'Configurar bloques actualizados do meu Moodle';
-$string['pinblocksexplan'] = 'Calquera configuración dos bloques que estabeleza aquí será visíbel (e non editábel) para calquera usuario do Moodle na súa páxina de vista xeral «O meu Moodle».';
+$string['managepages'] = 'Xestionar as páxinas';
+$string['mymoodle'] = 'Vista xeral dos meus cursos';
+$string['nocourses'] = 'Non hai información sobre o curso para mostrar.';
+$string['noguest'] = 'A páxina \'Vista xeral do curso\' non está dispoñible para convidados';
+$string['pinblocks'] = 'Configurar bloques de agarre do meu Moodle';
+$string['pinblocksexplan'] = 'Calquera configuración dos bloques que estableza aquí será visible (e non editable) para calquera usuario do Moodle na súa páxina de vista xeral \'O meu Moodle\'.';
 $string['reseterror'] = 'Produciuse un erro ao restaurar a súa páxina';
 $string['reseteveryonesdashboard'] = 'Restablecer o «panel» para todos os usuarios';
 $string['reseteveryonesprofile'] = 'Restablecer o perfil para todos os usuarios';
-$string['resetpage'] = 'Restaurar a páxina á configuración predeterminada';
+$string['resetpage'] = 'Restaurar á páxina a configuración predeterminada';

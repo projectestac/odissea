@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,7 @@ $string['badges:deletebadge'] = 'Eliminar Medalhas';
 $string['badges:earnbadge'] = 'Receber Medalha';
 $string['badges:manageglobalsettings'] = 'Gerir configurações globais das Medalhas';
 $string['badges:manageownbadges'] = 'Ver e gerir as Medalhas recebidas';
+$string['badges:revokebadge'] = 'Remover uma medalha de um utilizador';
 $string['badges:viewawarded'] = 'Ver utilizadores que ganharam uma Medalha específica mas cujo papel não lhes permite atribuir uma Medalha';
 $string['badges:viewbadges'] = 'Ver Medalhas disponíveis sem as ter';
 $string['badges:viewotherbadges'] = 'Ver Medalhas públicas no perfil de outros utilizadores';
@@ -392,12 +393,15 @@ $string['siteadministrators'] = 'Administradores do site';
 $string['site:approvecourse'] = 'Aprovar criação de disciplinas';
 $string['site:backup'] = 'Fazer cópias de segurança de disciplinas';
 $string['site:config'] = 'Alterar configurações do site';
+$string['site:configview'] = 'Mostrar a hierarquia de administração do site (mas não todas as páginas)';
 $string['site:deleteanymessage'] = 'Apagar todas as mensagens do site';
 $string['site:deleteownmessage'] = 'Apagar as mensagens enviadas pelo e para o utilizador';
 $string['site:doanything'] = 'Autorizado(a) a fazer tudo';
 $string['site:doclinks'] = 'Mostrar hiperligações para documentos localizados fora do site';
 $string['site:forcelanguage'] = 'Sobrepor idioma da disciplina';
 $string['site:import'] = 'Importar outras disciplinas para uma disciplina';
+$string['site:maintenanceaccess'] = 'Aceder ao site enquanto estiver em modo de manutenção';
+$string['site:manageallmessaging'] = 'Adicionar, eliminar, bloquear e desbloquear contactos para qualquer utilizador';
 $string['site:manageblocks'] = 'Gerir blocos a nível do site';
 $string['site:mnetloginfromremote'] = 'Autenticação de um Moodle remoto';
 $string['site:mnetlogintoremote'] = 'Navegar para um Moodle remoto';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -327,6 +327,8 @@ $string['gradereport'] = 'Rapport d\'évaluation';
 $string['graderreport'] = 'Rapport de l\'évaluateur';
 $string['grades'] = 'Notes';
 $string['gradesforuser'] = 'Notes de {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Attention ! La suppression d\'une activité est en cours ! Certaines notes vont être supprimées.';
+$string['gradesmoduledeletionprefix'] = '[Suppression en cours]';
 $string['gradesonly'] = 'Passer aux notes seulement';
 $string['gradessettings'] = 'Réglages des notes';
 $string['gradetype'] = 'Type de note';
@@ -432,7 +434,7 @@ $string['letterreal'] = 'Lettre (brute)';
 $string['letters'] = 'Lettres';
 $string['linkedactivity'] = 'Activité liée';
 $string['linkedactivity_help'] = 'Ce réglage spécifie une activité optionnelle à laquelle cet élément d\'objectif est lié. On utilise ceci pour mesurer la performance d\'un participant par rapport à un critère non évalué par la note de l\'activité.';
-$string['linktoactivity'] = 'Lien vers l\'activité {$a->name}';
+$string['linktoactivity'] = 'Lien vers l\'activité {$a->name} {$a->title}';
 $string['lock'] = 'Verrouiller';
 $string['locked'] = 'Verrouillé';
 $string['locked_help'] = 'Si cette case est cochée, les notes ne sont plus mises à jour automatiquement par l\'activité d\'où elles proviennent.';

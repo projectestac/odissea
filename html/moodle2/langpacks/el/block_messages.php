@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_messages', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_messages', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   block_messages
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['messages:addinstance'] = 'Προσθέστε ένα νέο μπλοκ μηνυμάτων';
-$string['messages:myaddinstance'] = 'Προσθήκη νέου μπλοκ μηνυμάτων στην σελίδα Η αρχική μου';
+$string['messages:addinstance'] = 'Προσθήκη νέου μπλοκ μηνύματα';
+$string['messages:myaddinstance'] = 'Προσθήκη νέου μπλοκ μηνύματα στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Μηνύματα';

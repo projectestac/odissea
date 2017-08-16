@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'competency', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,7 @@ $string['errorinvalidcourse'] = 'Ikastaro baliogabea.';
 $string['errornocompetency'] = '{$a} gaitasuna ezin izan da aurkitu';
 $string['errorplanstatus'] = '\'{$a}\' ikasketa-planaren egoera ezezaguna da';
 $string['errorscalealreadyused'] = 'Eskala ezin izan da aldatu erabiltzen ari baita.';
+$string['errorscaleconfiguration'] = 'Eskala konfiguratu behar da berezko balioak eta gaitasun-elementuak aukeratuta.';
 $string['errorusercomptencystatus'] = '\'{$a}\' erabiltzailearen gaitasunaren egoera ezezaguna da';
 $string['eventcompetencycreated'] = 'Gaitasuna sortu da.';
 $string['eventcompetencydeleted'] = 'Gaitasuna ezabatu da.';
@@ -66,6 +67,7 @@ $string['eventplancompleted'] = 'Ikasketa-plana osatu da.';
 $string['eventplancreated'] = 'Ikasketa-plana sortu da.';
 $string['eventplandeleted'] = 'Ikasketa-plana ezabatu da.';
 $string['eventplanreopened'] = 'Ikasketa-plana berriz zabaldu da.';
+$string['eventplanreviewrequestcancelled'] = 'Ikasketa-planaren berrikusketa-eskaera ezeztatu da.';
 $string['eventplanreviewrequested'] = 'Ikasketa-planaren berrikusketa eskatu da.';
 $string['eventplanreviewstarted'] = 'Ikasketa-planaren berrikusketa hasi da.';
 $string['eventplanreviewstopped'] = 'Ikasketa-planaren berrikusketa gelditu da.';
@@ -88,13 +90,22 @@ $string['eventusercompetencyreviewstopped'] = 'Erabiltzailearen gaitasunaren ber
 $string['eventusercompetencyviewed'] = 'Erabiltzailearen gaitasuna ikusi da.';
 $string['eventusercompetencyviewedincourse'] = 'Erabiltzailearen gaitasuna ikusi da ikastaroan.';
 $string['eventusercompetencyviewedinplan'] = 'Erabiltzailearen gaitasuna ikusi da ikastaroan ikasketa-planean.';
+$string['eventuserevidencecreated'] = 'Aurretik ikasitakoaren ebidentzia sortu da.';
+$string['eventuserevidencedeleted'] = 'Aurretik ikasitakoaren ebidentzia ezabatu da.';
+$string['eventuserevidenceupdated'] = 'Aurretik ikasitakoaren ebidentzia eguneratu da.';
+$string['evidence_competencyrule'] = 'Gaitasun-araua bete da.';
 $string['evidence_coursecompleted'] = '\'{$a}\' ikastaroa osatu da.';
 $string['evidence_coursemodulecompleted'] = '\'{$a}\' jarduera osatu da.';
+$string['evidence_courserestored'] = 'Puntuazioak \'{$a}\' ikastaroarekin batera berreskuratu ziren.';
+$string['evidence_evidenceofpriorlearninglinked'] = 'Aurretik ikasitakoaren \'{$a}\' ebidentzia estekatu da.';
+$string['evidence_evidenceofpriorlearningunlinked'] = 'Aurretik ikasitakoaren \'{$a}\' ebidentziaren esteka kendu da.';
 $string['evidence_manualoverride'] = 'Gaitasunen puntuazioa eskuz ezarri da.';
 $string['evidence_manualoverrideincourse'] = 'Gaitasunen puntuazioa eskuz ezarri da \'{$a}\' ikastaroan.';
 $string['evidence_manualoverrideinplan'] = 'Gaitasunen puntuazioa eskuz ezarri da \'{$a}\' ikasketa-planean.';
 $string['invalidevidencedesc'] = 'Ebidentziaren deskribapen baliogabea';
 $string['invalidgrade'] = 'Puntuazio baliogabea';
+$string['invalidpersistent'] = 'Iraunkortasun baliogabea';
+$string['invalidpersistenterror'] = 'Errorea: {$a}';
 $string['invalidplan'] = 'Ikasketa-plana baliogabea';
 $string['invalidtaxonomy'] = 'Taxonomia baliogabea: {$a}';
 $string['invalidurl'] = 'URLa ez da baliagarria. Ziurta ezazu honela hasten dela: \'http://\' edo \'https://\'.';
@@ -103,6 +114,10 @@ $string['planstatuscomplete'] = 'Osatu';
 $string['planstatusdraft'] = 'Zirriborroa';
 $string['planstatusinreview'] = 'Berrikusten';
 $string['planstatuswaitingforreview'] = 'Berrikusketaren zain';
+$string['pointsrequiredaremet'] = 'Beharreko puntuazioa lortu da';
+$string['pushcourseratingstouserplans'] = 'Eraman ikastaroko puntuazioak ikasketa-plan bakoitzera';
+$string['pushcourseratingstouserplans_desc'] = 'Berezko balioa ikastaro ezarpenetarako ikasketa-plan bakoitza eguneratzeko ikastaro-gaitasunak kalifikatzen direnean.';
+$string['syncplanscohorts'] = 'Sinkronizatu planak ikasketa-plan txantiloietako kohorteetatik';
 $string['taxonomy_behaviour'] = 'Jokaera';
 $string['taxonomy_competency'] = 'Gaitasuna';
 $string['taxonomy_concept'] = 'Kontzeptua';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,7 @@ $string['badges:deletebadge'] = 'バッジを削除する';
 $string['badges:earnbadge'] = 'バッジを取得する';
 $string['badges:manageglobalsettings'] = 'バッジグローバル設定を管理する';
 $string['badges:manageownbadges'] = '取得済みバッジを表示および管理する';
+$string['badges:revokebadge'] = 'ユーザからバッジを取り消す';
 $string['badges:viewawarded'] = 'バッジを授与されずに特定のバッジを取得したユーザを表示する';
 $string['badges:viewbadges'] = '利用可能なバッジを取得せずに表示する';
 $string['badges:viewotherbadges'] = '他のユーザのプロファイル内のパブリックバッジを表示する';
@@ -389,12 +390,15 @@ $string['siteadministrators'] = 'サイト管理者';
 $string['site:approvecourse'] = 'コース作成を承認する';
 $string['site:backup'] = 'コースをバックアップする';
 $string['site:config'] = 'サイト設定を変更する';
+$string['site:configview'] = 'サイト管理ツリーを表示する (すべてのページではなく)';
 $string['site:deleteanymessage'] = 'サイトのメッセージすべてを削除する';
 $string['site:deleteownmessage'] = 'ユーザに送受信されたメッセージを削除する';
 $string['site:doanything'] = 'すべての動作を許可する';
 $string['site:doclinks'] = 'サイト外ドキュメントへのリンクを表示する';
 $string['site:forcelanguage'] = 'コース言語をオーバーライドする';
 $string['site:import'] = '別のコースをコースにインポートする';
+$string['site:maintenanceaccess'] = 'メンテナンスモード時にサイトにアクセスする';
+$string['site:manageallmessaging'] = 'すべてのユーザの連絡先を追加、削除、ブロックおよびブロック解除する';
 $string['site:manageblocks'] = 'ページのブロックを管理する';
 $string['site:mnetloginfromremote'] = 'MNet経由でリモートアプリケーションからログインする';
 $string['site:mnetlogintoremote'] = 'MNet経由でリモートアプリケーションを散策する';

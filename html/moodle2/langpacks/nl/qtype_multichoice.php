@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multichoice', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['choiceno'] = 'Kies {$a}';
 $string['choices'] = 'Beschikbare keuzes';
 $string['clozeaid'] = 'Geef ontbrekend woord';
 $string['correctansweris'] = 'Het juiste antwoord is: {$a}';
+$string['correctanswersare'] = 'De juiste antwoorden zijn: {$a}';
 $string['correctfeedback'] = 'Voor elk juist antwoord';
 $string['deletedchoice'] = 'Deze keuze is verwijderd nadat de poging was gestart.';
 $string['errfractionsaddwrong'] = 'De positieve cijfers die je voor deze antwoorden gekozen hebt, zijn samen geen 100%<br /> Het is {$a}%';

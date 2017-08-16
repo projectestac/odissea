@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lp', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,12 +56,13 @@ $string['competenciesmostoftennotproficientincourse'] = 'Competències que més 
 $string['competencycannotbedeleted'] = 'La competència «{$a}» no es pot esborrar';
 $string['competencycreated'] = 'S\'ha creat la competència';
 $string['competencycrossreferencedcompetencies'] = '{$a} competències amb referències creuades';
-$string['competencyframework'] = 'Marc competencial';
-$string['competencyframeworkcreated'] = 'S\'ha creat el marc competencial.';
+$string['competencyframework'] = 'Marc de competències';
+$string['competencyframeworkcreated'] = 'S\'ha creat el marc de competències.';
 $string['competencyframeworkname'] = 'Nom';
 $string['competencyframeworkroot'] = 'Sense mare (competència de nivell superior)';
-$string['competencyframeworks'] = 'Marcs competencials';
-$string['competencyframeworkupdated'] = 'S\'ha actualitzat el marc competencial.';
+$string['competencyframeworks'] = 'Marcs de competències';
+$string['competencyframeworksrepository'] = 'Repositori de marcs de competències';
+$string['competencyframeworkupdated'] = 'S\'ha actualitzat el marc de competències.';
 $string['competencyoutcome_complete'] = 'Marca com a completada';
 $string['competencyoutcome_evidence'] = 'Adjunta una evidència';
 $string['competencyoutcome_none'] = 'Cap';
@@ -80,7 +81,7 @@ $string['createplans'] = 'Crea plans d\'aprenentatge';
 $string['crossreferencedcompetencies'] = 'Competències referenciades';
 $string['default'] = 'Per defecte';
 $string['deletecompetency'] = 'Voleu esborrar la competència «{$a}»?';
-$string['deletecompetencyframework'] = 'Voleu esborrar el marc competencial «{$a}»?';
+$string['deletecompetencyframework'] = 'Voleu esborrar el marc de competències «{$a}»?';
 $string['deleteplan'] = 'Voleu esborrar el pla d\'aprenentatge «{$a}»?';
 $string['deleteplans'] = 'Esborra els plans d\'aprenentatge';
 $string['deletetemplate'] = 'Voleu esborrar la plantilla de pla d\'aprenentatge «{$a}»?';
@@ -92,7 +93,7 @@ $string['description'] = 'Descripció';
 $string['duedate'] = 'Data límit';
 $string['duedate_help'] = 'La data en què un pla d\'aprenentatge s\'ha d\'haver completat.';
 $string['editcompetency'] = 'Edita la competència';
-$string['editcompetencyframework'] = 'Edita el marc competencial';
+$string['editcompetencyframework'] = 'Edita el marc de competències';
 $string['editplan'] = 'Edita el pla d\'aprenentatge';
 $string['editrating'] = 'Edita la qualificació';
 $string['edittemplate'] = 'Edita la plantilla del pla d\'aprenentatge';
@@ -101,11 +102,11 @@ $string['editthisuserevidence'] = 'Edita aquesta evidència';
 $string['edituserevidence'] = 'Edita l\'evidència';
 $string['evidence'] = 'Evidència';
 $string['findcourses'] = 'Troba cursos';
-$string['frameworkcannotbedeleted'] = 'No es pot esborrar el marc competencial «{$a}»';
+$string['frameworkcannotbedeleted'] = 'No es pot esborrar el marc de competències «{$a}»';
 $string['hidden'] = 'Amagat';
 $string['hiddenhint'] = '(amagat)';
 $string['idnumber'] = 'Número ID';
-$string['inheritfromframework'] = 'Heretat del marc competencial (per defecte)';
+$string['inheritfromframework'] = 'Hereta del marc de competències (per defecte)';
 $string['itemstoadd'] = 'Elements a afegir';
 $string['jumptocompetency'] = 'Salta a la competència';
 $string['jumptouser'] = 'Salta a l\'usuari';
@@ -117,7 +118,7 @@ $string['linkcompetency'] = 'Enllaça competència';
 $string['linkedcompetencies'] = 'Competències enllaçades';
 $string['linkedcourses'] = 'Cursos enllaçats';
 $string['linkedcourseslist'] = 'Cursos enllaçats:';
-$string['listcompetencyframeworkscaption'] = 'Llista de marcs competencials';
+$string['listcompetencyframeworkscaption'] = 'Llista de marcs de competències';
 $string['listofevidence'] = 'Llista d\'evidències';
 $string['listplanscaption'] = 'Llista de plans d\'aprenentatge';
 $string['listtemplatescaption'] = 'Llista de plantilles de plans d\'aprenentatge';
@@ -131,7 +132,7 @@ $string['movecompetency'] = 'Mou la competència';
 $string['movecompetencyafter'] = 'Mou la competència després de «{$a}»';
 $string['movecompetencyframework'] = 'Mou el marc de competències';
 $string['movecompetencywillresetrules'] = 'Moure la competència esborrarà les regles establertes per la seva mare i destinació. Voleu continuar?';
-$string['moveframeworkafter'] = 'Mou el marc de competència després de «{$a}»';
+$string['moveframeworkafter'] = 'Mou el marc de competències després de «{$a}»';
 $string['movetonewparent'] = 'Trasllada';
 $string['myplans'] = 'Els meus plans d\'aprenentatge';
 $string['nfiles'] = '{$a} fitxer(s)';
@@ -141,7 +142,7 @@ $string['nocompetenciesincourse'] = 'No s\'han enllaçat competències a aquest 
 $string['nocompetenciesinevidence'] = 'No s\'han enllaçat competències a aquesta evidència.';
 $string['nocompetenciesinlearningplan'] = 'No s\'han enllaçat competències a aquest pla d\'aprenentatge.';
 $string['nocompetenciesintemplate'] = 'No s\'han enllaçat competències a aquesta plantilla de pla d\'aprenentatge.';
-$string['nocompetencyframeworks'] = 'Encara no s\'ha creat cap marc de competència.';
+$string['nocompetencyframeworks'] = 'Encara no s\'ha creat cap marc de competències.';
 $string['nocompetencyselected'] = 'No s\'ha seleccionat cap competència';
 $string['nocrossreferencedcompetencies'] = 'No hi ha competències amb referències a aquesta.';
 $string['noevidence'] = 'Cap evidència';
@@ -157,7 +158,7 @@ $string['oneplanwascreated'] = 'S\'ha creat un pla d\'aprenentatge';
 $string['outcome'] = 'Resultat';
 $string['parentcompetency'] = 'Mare';
 $string['parentcompetency_edit'] = 'Edita la competència mare';
-$string['parentcompetency_help'] = 'Defineix la competència mare sota la qual s\'afegirà la competència. Pot ser inclús una altra competència amb el mateix marc, o l\'arrel del marc competencial per a una competència de nivell superior.';
+$string['parentcompetency_help'] = 'Defineix la competència mare sota la qual s\'afegirà la competència. Pot ser fins i tot una altra competència amb el mateix marc, o l\'arrel del marc de competències per a una competència de nivell superior.';
 $string['path'] = 'Ruta:';
 $string['planapprove'] = 'Activa';
 $string['plancompleted'] = 'S\'ha completat el pla d\'aprenentatge';
@@ -187,8 +188,8 @@ $string['savechanges'] = 'Desa els canvis';
 $string['scale'] = 'Escala';
 $string['scale_help'] = 'Una escala determina com es mesura l\'assoliment d\'una competència. Després de seleccionar una escala, l\'heu de configurar.
 
-* L\'element seleccionat com \'Per defecte\' és la valoració donada quan una competència es completa automàticament.
-* El valor o valors seleccionats com \'Superada\' indiquen quins valors marcaran les competències com a assolides quan siguin valorades.';
+* L\'element seleccionat com a «Per defecte» és la valoració donada quan una competència es completa automàticament.
+* El valor o valors seleccionats com a «Superada» indiquen quins valors marcaran les competències com a assolides quan siguin valorades.';
 $string['scalevalue'] = 'Valor d\'escala';
 $string['search'] = 'Cerca...';
 $string['selectcohortstosync'] = 'Seleccioneu cohorts a sincronitzar';
@@ -278,7 +279,7 @@ $string['userevidenceurl'] = 'URL';
 $string['userevidenceurl_help'] = 'L\'URL ha de començar amb «http://» o «https://».';
 $string['viewdetails'] = 'Visualitza els detalls';
 $string['visible'] = 'Visible';
-$string['visible_help'] = 'Un marc de competències pot ocultar-se mentre s\'està establint o actualitzant a una nova versió.';
+$string['visible_help'] = 'Un marc de competències pot ocultar-se mentre s\'està establint o s\'està actualitzant a una nova versió.';
 $string['when'] = 'Quan';
 $string['xcompetenciesproficientoutofy'] = '{$a->x} de {$a->y} competències superades';
 $string['xcompetenciesproficientoutofyincourse'] = 'Heu superat {$a->x} de {$a->y} competències en aquest curs.';

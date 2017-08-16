@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'install', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -137,7 +137,7 @@ $string['pathserrcreatedataroot'] = 'Datakatalogen ({$a->dataroot}) går inte at
 $string['pathshead'] = 'Bekräfta vägar';
 $string['pathsrodataroot'] = 'Det går inte att skriva till katalogen för dataroot';
 $string['pathsroparentdataroot'] = 'Det går inte att skriva till föräldrakatalogen ({$a->parent}). Det går inte att installera datakatalogen ({$a->dataroot}) med hjälp av installeraren. ';
-$string['pathssubdirroot'] = 'Full sökväg till installationen av Moodle.';
+$string['pathssubdirroot'] = 'Full sökväg till installationen av moodle.';
 $string['pathsunsecuredataroot'] = 'Placeringen av dataroot är inte säker';
 $string['pathswrongadmindir'] = 'Katalogen för admin saknas';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP har inte konfigurerats på rätt sätt med tillägget PGSQL. Därför kan det inte kommunicera med PostgreSQL. Var snäll och kontrollera Din php.ini-fil eller kompilera om PHP.';

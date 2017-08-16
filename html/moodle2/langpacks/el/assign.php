@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assign', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,14 +56,14 @@ $string['attemptreopenmethod_manual'] = 'Χειροκίνητα';
 $string['attemptreopenmethod_none'] = 'Ποτέ';
 $string['attemptsettings'] = 'Ρυθμίσεις προσπάθειας';
 $string['availability'] = 'Διαθεσιμότητα';
-$string['backtoassignment'] = 'Πίσω στην εργασία';
+$string['backtoassignment'] = 'Επιστροφή στην εργασία';
 $string['batchoperationconfirmaddattempt'] = 'Να επιτραπεί νέα προσπάθεια για τις επιλεγμένες υποβολές;';
 $string['batchoperationconfirmdownloadselected'] = 'Λήψη επιλεγμένων υποβολών;';
 $string['batchoperationconfirmlock'] = 'Κλείδωμα όλων των επιλεγμένων καταχωρίσεων;';
 $string['batchoperationconfirmunlock'] = 'Ξεκλείδωμα όλων των επιλεγμένων καταχωρίσεων;';
 $string['batchoperationlock'] = 'κλείδωμα καταχωρίσεων';
 $string['batchoperationsdescription'] = 'Με τα επιλεγμένα...';
-$string['batchoperationunlock'] = 'ξεκλείδωμα καταχωρίσεων';
+$string['batchoperationunlock'] = 'ξεκλείδωμα υποβολών';
 $string['changeuser'] = 'Αλλαγή χρήστη';
 $string['choosegradingaction'] = 'Βαθμολόγηση';
 $string['choosemarker'] = 'Επέλεξε....';
@@ -78,6 +78,7 @@ $string['defaultsettings'] = 'Προεπιλεγμένες ρυθμίσεις ε
 $string['defaultteam'] = 'Προεπιλεγμένη ομάδα';
 $string['deleteallsubmissions'] = 'Διαγραφή όλων των καταχωρίσεων';
 $string['description'] = 'Περιγραφή';
+$string['disabled'] = 'Ανενεργό';
 $string['downloadall'] = 'Κατέβασμα όλων των καταχωρίσεων';
 $string['downloadasfolders'] = 'Λήψη υποβολών σε φακέλους';
 $string['downloadasfolders_help'] = 'Αν η υποβολή της εργασίας αποτελείται από παραπάνω από ένα αρχείο, τότε η λήψη των υποβολών μπορεί να γίνει σε φακέλους. Κάθε υποβολή τοποθετείται σε ξεχωριστό φάκελο, ενώ διατηρείται η δομή των υποφακέλων (αν υπάρχουν) και η ονομασία των αρχείων (δεν μετονομάζονται).';
@@ -87,10 +88,10 @@ $string['duedatecolon'] = 'Καταληκτική ημερομηνία: {$a}';
 $string['duedateno'] = 'Χωρίς καταληκτική ημερομηνία';
 $string['editaction'] = 'Ενέργειες...';
 $string['editingstatus'] = 'Επεξεργασία κατάστασης';
-$string['editsubmission'] = 'Τροποποίηση της υποβολής μου';
+$string['editsubmission'] = 'Επεξεργασία υποβολής';
 $string['editsubmission_help'] = 'Τροποποίηση της καταχώρισης σας';
-$string['editsubmissionother'] = 'Επεξεργασία καταχώρισης για {$a}';
-$string['enabled'] = 'Ενεργοποίηση';
+$string['editsubmissionother'] = 'Επεξεργασία υποβολής για {$a}';
+$string['enabled'] = 'Ενεργοποιημένο';
 $string['errornosubmissions'] = 'Δεν υπάρχουν καταχωρίσεις για κατέβασμα';
 $string['eventallsubmissionsdownloaded'] = 'Όλες οι καταχωρίσεις κατεβαίνουν.';
 $string['eventassessablesubmitted'] = 'Έχει γίνει υποβολή εργασίας.';
@@ -99,7 +100,7 @@ $string['eventidentitiesrevealed'] = 'Οι ταυτότητες έχουν απ�
 $string['eventsubmissiongraded'] = 'Η υποβολή έχει βαθμολογηθεί.';
 $string['eventsubmissionstatusupdated'] = 'Η κατάσταση της υποβολής έχει ενημερωθεί.';
 $string['eventsubmissionupdated'] = 'Η υποβολή ενημερώθηκε.';
-$string['feedback'] = 'Επανατροφοδότηση';
+$string['feedback'] = 'Ανατροφοδότηση';
 $string['feedbacktypes'] = 'Τύποι ανατροφοδότησης';
 $string['filesubmissions'] = 'Υποβολές αρχείων';
 $string['filter'] = 'Φίλτρο';
@@ -145,6 +146,7 @@ $string['noattempt'] = 'Καμία προσπάθεια';
 $string['nograde'] = 'Κανένα βαθμό.';
 $string['nolatesubmissions'] = 'Δεν γίνονται δεκτές εκπρόθεσμες υποβολές.';
 $string['nomoresubmissionsaccepted'] = 'Επιτρέπονται μόνο στους συμμετέχοντες που τους έχει χορηγηθεί παράταση';
+$string['none'] = 'Κανένα';
 $string['nosavebutnext'] = 'Επόμενο';
 $string['nosubmission'] = 'Δεν έχει υποβληθεί τίποτα για την εργασία αυτή';
 $string['nosubmissionsacceptedafter'] = 'Οι υποβολές δεν είναι δεκτές μετά από';
@@ -166,6 +168,7 @@ $string['previous'] = 'Προηγούμενο';
 $string['quickgrading'] = 'Γρήγορη βαθμολόγηση';
 $string['quickgradingchangessaved'] = 'Οι αλλαγές στην βαθμολογία αποθηκεύτηκαν';
 $string['reviewed'] = 'Ελεγμένα';
+$string['save'] = 'Αποθήκευση';
 $string['saveandcontinue'] = 'Αποθήκευση και συνέχεια';
 $string['savechanges'] = 'Αποθήκευση αλλαγών';
 $string['savingchanges'] = 'Αποθήκευση αλλαγών...';

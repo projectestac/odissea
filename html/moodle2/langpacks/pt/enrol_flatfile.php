@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['encoding'] = 'Codificação do ficheiro';
-$string['expiredaction'] = 'Ação de expiração de inscrição';
+$string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a ser executada quando a inscrição do utilizador expira. Por favor, note que alguns dados e configurações do utilizador são removidos da disciplina durante o processo de desinscrição.';
 $string['filelockedmail'] = 'O script cron não conseguiu apagar do servidor o ficheiro de texto ({$a}) que está a ser utilizado na gestão de inscrições. O problema deverá estar relacionado com as permissões desse ficheiro. Enquanto esta questão não for resolvida, o ficheiro será processado consecutivamente por não ter sido removido durante o processamento.';
 $string['filelockedmailsubject'] = 'Erro importante: Ficheiro de inscrições';

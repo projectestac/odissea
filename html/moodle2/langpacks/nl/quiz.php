@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -719,7 +719,7 @@ $string['reattemptquiz'] = 'Herkans de test';
 $string['recentlyaddedquestion'] = 'Recent toegevoegde vraag!';
 $string['recurse'] = 'Toon ook vragen in subcategorieën';
 $string['redoesofthisquestion'] = 'Andere vragen hier geprobeerd: {$a}';
-$string['redoquestion'] = 'Vraag opnieuw beantwoorden';
+$string['redoquestion'] = 'Probeer een andere vraag zoals de deze';
 $string['regrade'] = 'Herbereken alle pogingen';
 $string['regradecomplete'] = 'Alle pogingen zijn herberekend';
 $string['regradecount'] = '{$a->changed} van de {$a->attempt} cijfers zijn gewijzigd';
@@ -936,8 +936,6 @@ $string['timeleft'] = 'Resterende tijd';
 $string['timelimit'] = 'Tijdsduurlimiet';
 $string['timelimitexeeded'] = 'Sorry, de tijdsduur voor deze test is overschreden!';
 $string['timelimit_help'] = 'Indien ingeschakeld, wordt de beschikbare tijd getoond op de initiële testpagina en wordt er een aftellende timer getoond in het navigatieblok van de test.';
-$string['timelimitmin'] = 'Tijdslimiet (minuten)';
-$string['timelimitsec'] = 'Tijdslimiet (seconden)';
 $string['timestr'] = '%H:%M:%S op %d/%m/%y';
 $string['timesup'] = 'Tijd is op!';
 $string['timetaken'] = 'Gebruikte tijd';

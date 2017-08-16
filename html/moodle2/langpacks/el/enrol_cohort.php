@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_cohort', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cohort:config'] = 'Παραμετροποίηση περιπτώσεων ομάδων χρηστών';
+$string['addgroup'] = 'Προσθήκη σε ομάδα';
+$string['cohort:config'] = 'Διαμόρφωση στιγμιότυπων ομάδων χρηστών';
+$string['cohort:unenrol'] = 'Ακύρωση εγγραφής χρηστών σε αναστολή';
 $string['defaultgroupnametext'] = '{$a->name} ομάδα χρηστών {$a->increment}';
 $string['instanceexists'] = 'Η ομάδα χρηστών είναι ήδη συγχρονισμένη με τον επιλεγμένο ρόλο';
 $string['pluginname'] = 'Συγχρονισμός ομάδας χρηστών';
-$string['pluginname_desc'] = 'Το πρόσθετο εγγραφής σε ομάδα χρηστών συγχρονίζει τα μέλη της ομάδας χρηστών με τους συμμετέχοντες του μαθήματος.';
+$string['pluginname_desc'] = 'Το πρόσθετο εγγραφής ομάδας χρηστών συγχρονίζει τα μέλη της ομάδας χρηστών με τους συμμετέχοντες μαθήματος.';

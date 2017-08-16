@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Das notas mais elevadas, quantas devem ser exibid
 $string['config_show_worst'] = 'Das notas mais baixas, quantas devem ser exibidas (0 para desativar)?';
 $string['configuredtoshownothing'] = 'A configuração atual deste bloco não permite a exibição de resultados.';
 $string['config_use_groups'] = 'Exibe grupos em vez de alunos (apenas caso a atividade suporte grupos)?';
+$string['defaultdecimalplaces'] = 'Casas decimais';
+$string['defaultdecimalplaces_desc'] = 'Número de casas decimais para exibir por predefinição';
+$string['defaultgradedisplay'] = 'Exibir notas como';
+$string['defaultgradedisplay_desc'] = 'Como devem ser exibidas as notas por predefinição?';
+$string['defaulthighestgrades'] = 'Notas mais altas exibidas por predefinição';
+$string['defaulthighestgrades_desc'] = 'Quantas das notas mais altas devem ser exibidas por predefinição?';
+$string['defaultlowestgrades'] = 'Notas mais baixas exibidas por predefinição';
+$string['defaultlowestgrades_desc'] = 'Quantas das notas mais baixas devem ser exibidas por predefinição?';
+$string['defaultnameoptions'] = 'Privacidade dos resultados';
+$string['defaultnameoptions_desc'] = 'Como devem os alunos ser identificados por predefinição?';
+$string['defaultshowgroups'] = 'Mostrar grupos por predefinição';
+$string['defaultshowgroups_desc'] = 'Mostrar grupos em vez de alunos por predefinição (apenas se a atividade suportar grupos)';
 $string['error_emptyactivityid'] = 'Por favor configure este bloco e selecione de que atividade ele deve exibir os resultados.';
 $string['error_emptyactivityrecord'] = 'Erro: a atividade selecionada não existe na base de dados.';
 $string['error_nogroupsexist'] = 'Erro: o bloco está configurado para exibir notas em modo de grupos, no entanto não existem grupos definidos.';

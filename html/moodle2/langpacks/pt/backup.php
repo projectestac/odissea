@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Se ativar esta opção as atividades serã
 $string['configgeneralanonymize'] = 'Se ativar esta opção toda a informação dos utilizadores será tornada anónima.';
 $string['configgeneralbadges'] = 'Se ativar esta opção, as medalhas serão  incluídas na cópia de segurança.';
 $string['configgeneralblocks'] = 'Se ativar esta opção os blocos serão incluídos nas cópias de segurança.';
+$string['configgeneralcalendarevents'] = 'Define como predefinição a inclusão dos eventos de calendário na cópia de segurança.';
 $string['configgeneralcomments'] = 'Se ativar esta opção os comentários serão incluídos nas cópias de segurança.';
+$string['configgeneralcompetencies'] = 'Define como predefinição a inclusão das competências na cópia de segurança.';
 $string['configgeneralfilters'] = 'Se ativar esta opção os filtros serão incluídos nas cópias de segurança';
 $string['configgeneralgroups'] = 'Se ativar esta opção, os grupos e agrupamentos serão incluídos nas cópia de segurança.';
 $string['configgeneralhistories'] = 'Se ativar esta opção o histórico dos utilizadores será incluído nas cópias de segurança.';
@@ -140,7 +142,9 @@ $string['generalanonymize'] = 'Tornar a informação anónima';
 $string['generalbackdefaults'] = 'Configuração das cópias de segurança';
 $string['generalbadges'] = 'Incluir Medalhas';
 $string['generalblocks'] = 'Incluir blocos';
+$string['generalcalendarevents'] = 'Incluir eventos de calendário';
 $string['generalcomments'] = 'Incluir comentários';
+$string['generalcompetencies'] = 'Incluir competências';
 $string['generalfilters'] = 'Incluir filtros';
 $string['generalgradehistories'] = 'Incluir históricos';
 $string['generalgroups'] = 'Incluir grupos e agrupamentos';
@@ -169,6 +173,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Se o site tem uma conta co
 $string['importgeneralmaxresults'] = 'Número máximo de disciplinas listadas para importação';
 $string['importgeneralmaxresults_desc'] = 'Isto controla o número de disciplinas que são listadas durante o primeiro passo do processo de importação';
 $string['importgeneralsettings'] = 'Configurações predefinidas de importação';
+$string['importsettings'] = 'Configurações gerais de importação';
 $string['importsuccess'] = 'A importação foi concluída. Clique para prosseguir para a disciplina.';
 $string['includeactivities'] = 'Incluir:';
 $string['includeditems'] = 'Itens incluídos:';

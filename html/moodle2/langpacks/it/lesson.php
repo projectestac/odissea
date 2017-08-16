@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -166,6 +166,7 @@ $string['displayscorewithessays'] = '<p>Hai ottenuto {$a->score} su {$a->tempmax
 <p>Le tue {$a->essayquestions} domande a testo libero saranno valutate successivamente e il voto sarà aggiunto<br />al tuo punteggio finale.</p>
 <p>La tua valutazione senza le domande a testo libero è {$a->score} su {$a->grade}.</p>';
 $string['displayscorewithoutessays'] = 'Il tuo punteggio è {$a->score} (su {$a->grade}).';
+$string['duplicatepagenamed'] = 'Duplica pagina: {$a}';
 $string['edit'] = 'Modifica';
 $string['editingquestionpage'] = 'Modifica pagina con domanda {$a}';
 $string['editlessonsettings'] = 'Modifica impostazioni lezione';
@@ -188,7 +189,6 @@ $string['enterpassword'] = 'Inserisci la password:';
 $string['eolstudentoutoftime'] = 'Attenzione: Il tempo disponibile per svolgere questa lezione è terminato. L\'ultima risposta può non essere stata considerata se data dopo lo scadere del tempo.';
 $string['eolstudentoutoftimenoanswers'] = 'Non hai risposto a nessuna domanda. Per questa lezione hai ottenuto 0 punti.';
 $string['essay'] = 'Testo libero';
-$string['essayemailmessage'] = '<p>Domanda a testo libero:<blockquote>{$a->question}</blockquote></p><p>La tua replica:<blockquote><em>{$a->response}</em></blockquote></p><p>Commenti {$a->teacher}:<blockquote><em>{$a->comment}</em></blockquote></p><p>Hai ottenuto {$a->earned} su {$a->outof} per questa domanda a testo libero.</p><p>La tua valutazione per la lezione è stata modificata in {$a->newgrade}%#37.</p>';
 $string['essayemailmessage2'] = '<p>Domanda a testo libero:{$a->question}</p><p>La tua replica:<em>{$a->response}</em></p><p>Commenti valutatore:<em>{$a->comment}</em></p><p>Hai ottenuto {$a->earned} su {$a->outof} per questa domanda a testo libero.</p><p>La tua valutazione per la lezione è stata modificata in {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Valutazione disponibile per la domanda della lezione';
 $string['essayresponses'] = 'Risposte a testo libero';
@@ -257,10 +257,9 @@ $string['leftduringtimed'] = 'Hai abbandonato il tentativo durante una lezione a
 $string['leftduringtimednoretake'] = 'Hai abbandonato il tentativo durante una lezione a tempo e <br />non puoi riprovare o continuare la lezione.';
 $string['leftduringtimedsession'] = 'Hai abbandonato una lezione a tempo.';
 $string['lesson:addinstance'] = 'Aggiungere lezioni';
-$string['lessonattempted'] = 'Lezione tentata';
 $string['lessonclosed'] = 'Questa lezione è stata chiusa il {$a}.';
-$string['lessoncloses'] = 'La lezione viene chiusa';
-$string['lessoncloseson'] = 'La lezione viene chiusa il';
+$string['lessoncloses'] = 'La lezione chiude';
+$string['lessoncloseson'] = 'La lezione si chiude il {$a}';
 $string['lesson:edit'] = 'Modificare lezioni';
 $string['lessonformating'] = 'Formato della lezione';
 $string['lesson:grade'] = 'Valutare domande a testo libero';
@@ -274,6 +273,7 @@ $string['lessonopen'] = 'Questa lezione sarà disponibile dal {$a}.';
 $string['lessonopens'] = 'La lezione è disponibile';
 $string['lessonpagelinkingbroken'] = 'La prima pagina non è stata trovata. Probabilmente i collegamenti tra le pagine sono rotti. Contatta un amministratore del sistema.';
 $string['lessonstats'] = 'Statistiche della lezione';
+$string['lesson:view'] = 'Visualizzare attività lezione';
 $string['lesson:viewreports'] = 'Visualizzati report lezione';
 $string['linkedmedia'] = 'Media linkati';
 $string['loginfail'] = 'Login fallito, prova ancora...';

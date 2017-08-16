@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_coursefiles', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_coursefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,6 @@ $string['configplugin'] = 'Configurar repositório "Ficheiros da disciplina (ret
 $string['coursefiles:view'] = 'Usar o repositório de ficheiros da disciplina';
 $string['emptyfilelist'] = 'Este repositório está vazio';
 $string['notitle'] = 'Sem título';
-$string['pluginname'] = 'Ficheiros da disciplina (retrocompatibilidade com versões anteriores do Moodle)';
+$string['pluginname'] = 'Ficheiros da disciplina (compatibilidade com versões anteriores do Moodle)';
 $string['pluginname_help'] = 'Este módulo utiliza o repositório de ficheiros da disciplina existente em versão anteriores do Moodle (anteriores à versão 2.0).';
 $string['remember'] = 'Manter sessão';

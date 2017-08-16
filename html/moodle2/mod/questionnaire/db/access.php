@@ -17,11 +17,13 @@
 /**
  * Capability definitions for the quiz module.
  *
- * @package    mod
- * @subpackage questionnaire
+ * @package mod_questionnaire
+ * @copyright  2016 Mike Churchward (mike.churchward@poetgroup.org)
+ * @author     Mike Churchward
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('MOODLE_INTERNAL') || die();
 
 $capabilities = array(
 
@@ -65,6 +67,18 @@ $capabilities = array(
 
     // Ability to view individual responses to the questionnaire.
     'mod/questionnaire:viewsingleresponse' => array(
+
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_MODULE,
+        'legacy' => array(
+            'teacher' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW
+         )
+    ),
+
+    // Receive a notificaton for every submission.
+    'mod/questionnaire:submissionnotification' => array(
 
         'captype' => 'read',
         'contextlevel' => CONTEXT_MODULE,

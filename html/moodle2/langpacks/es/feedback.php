@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,8 +52,9 @@ $string['checkbox'] = 'Elección múltiple (se permiten varias respuestas - casi
 $string['check_values'] = 'Respuestas posibles';
 $string['choosefile'] = 'Seleccione un archivo';
 $string['chosen_feedback_response'] = 'respuesta elegida';
-$string['completed'] = 'completada';
+$string['completed'] = 'Completada';
 $string['completed_feedbacks'] = 'Respuestas enviadas';
+$string['completedon'] = 'Completada en {$a}';
 $string['complete_the_form'] = 'Responda a las preguntas...';
 $string['completionsubmit'] = 'Ver como "completado" si se envía la encuesta';
 $string['configallowfullanonymous'] = 'Si se establece esta opción la encuesta puede ser respondida por usuarios que previamente no hayan iniciado la sesión. Esto sólo afecta a las encuestas de la página principal.';
@@ -263,13 +264,14 @@ $string['site_after_submit'] = 'Sitio tras el envío';
 $string['sort_by_course'] = 'Ordenar por curso';
 $string['start'] = 'Inicio';
 $string['started'] = 'comenzado';
+$string['startedon'] = 'Empezado el {$a}';
 $string['stop'] = 'Fin';
 $string['subject'] = 'Materia';
 $string['switch_group'] = 'Cambiar grupo';
 $string['switch_item_to_not_required'] = 'cambiar a: respuesta no obligatoria';
 $string['switch_item_to_required'] = 'cambiar a: respuesta obligatoria';
 $string['template'] = 'Plantilla';
-$string['template_deleted'] = 'Plantilla borrada';
+$string['template_deleted'] = 'Plantilla eliminada';
 $string['templates'] = 'Plantillas';
 $string['template_saved'] = 'Plantilla guardada';
 $string['textarea'] = 'Respuesta de texto larga';

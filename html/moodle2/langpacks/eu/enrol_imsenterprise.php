@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,7 @@ $string['settingshortname'] = 'IMS deskribapen-etiketa ikastaroaren izen laburre
 $string['settingsummary'] = 'IMS deskribapen-etiketa ikastaroaren laburpenerako';
 $string['sourcedidfallback'] = 'Userdid-erako "Sourcedid"a erabili, pertsona baten "userid" kanpoa aurkitzen ez bada.';
 $string['truncatecoursecodes'] = 'Ikataroaren kodeak luzera honetara moztu';
+$string['updatecourses'] = 'Eguneratu ikastaroa';
 $string['usecapitafix'] = 'Kutxa hau markatu "Capita" erabiltzen bada (XML formatua neurri batean okerra da)';
 $string['usersettings'] = 'Erabiltzailearen datuen aukerak';
 $string['zeroisnotruncation'] = '0-ak kodeak ez direla mozten adierazten du';

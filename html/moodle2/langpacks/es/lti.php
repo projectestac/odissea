@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lti', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,7 @@ $string['basiclti_base_string'] = 'Cadena base LTI OAuth';
 $string['basiclti_endpoint'] = 'Extremo Iniciar LTI';
 $string['basicltifieldset'] = 'Personalizar conjunto de campos del ejemplo';
 $string['basiclti_in_new_window'] = 'Su actividad se ha abierto en una nueva ventana';
+$string['basiclti_in_new_window_open'] = 'Abrir en una ventana nueva';
 $string['basicltiintro'] = 'Descripción de la actividad';
 $string['basicltiname'] = 'Nombre de la actividad';
 $string['basiclti_parameters'] = 'Parámetros de inicio LTI';
@@ -296,9 +297,10 @@ $string['resource'] = 'Recurso';
 $string['resourcekey'] = 'Clave de cliente';
 $string['resourcekey_admin'] = 'Clave de cliente';
 $string['resourceurl'] = 'URL del recurso';
-$string['return_to_course'] = 'Clic <a href="{$a->link}" target="_top">aquí</a> para volver al curso.';
+$string['return_to_course'] = 'Haz clic <a href="{$a->link}" target="_top">aquí</a> para volver al curso.';
 $string['saveallfeedback'] = 'Guardar toda mi retroalimentación';
 $string['search:activity'] = 'Herramienta externa - información de actividad';
+$string['selectcontent'] = 'Seleccionar contenido';
 $string['send'] = 'Enviar';
 $string['services'] = 'Servicios';
 $string['setupoptions'] = 'Opciones de configuración';
@@ -332,19 +334,20 @@ $string['toolproxyregistration'] = 'Registro de herramienta externa';
 $string['toolregistration'] = 'Registro de herramienta externa';
 $string['tool_settings'] = 'Ajustes de la herramienta';
 $string['toolsetup'] = 'Registro de herramienta externa';
-$string['tooltypeadded'] = 'Se ha añadido la herramienta preconfigurada';
-$string['tooltypedeleted'] = 'Se ha borrado la herramienta preconfigurada';
-$string['tooltypenotdeleted'] = 'No se ha podido borrar la herramienta preconfigurada';
+$string['tooltypeadded'] = 'Añadida herramienta preconfigurada';
+$string['tooltypedeleted'] = 'Herramienta preconfigurada borrada';
+$string['tooltypenotdeleted'] = 'No se puede borrar la herramienta preconfigurada';
 $string['tooltypes'] = 'Herramientas';
-$string['tooltypeupdated'] = 'Se ha actualizado la herramienta preoconfigurada';
+$string['tooltypeupdated'] = 'Herramienta preconfigurada actualizada';
+$string['toolurl'] = 'URL de la herramienta';
 $string['toolurlplaceholder'] = 'URL de la herramienta...';
 $string['typename'] = 'Nombre de la herramienta';
 $string['types'] = 'Tipos';
-$string['unabletocreatetooltype'] = 'No se ha podido crear la herramienta';
-$string['unabletofindtooltype'] = 'No se ha podido encontrar la herramienta {$a->id}';
+$string['unabletocreatetooltype'] = 'No se puede crear la herramienta';
+$string['unabletofindtooltype'] = 'No se puede encontrar la herramienta {$a->id}';
 $string['unknownstate'] = 'Estado desconocido';
 $string['update'] = 'Actualización';
-$string['useraccountinformation'] = 'Información de la cuenta del usuario';
+$string['useraccountinformation'] = 'Información de la cuenta de usuario';
 $string['userpersonalinformation'] = 'Información personal del usuario';
 $string['using_tool_cartridge'] = 'Usando herramienta cartridge';
 $string['using_tool_configuration'] = 'Usar configuración de herramienta:';

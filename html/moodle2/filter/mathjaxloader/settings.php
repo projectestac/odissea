@@ -38,17 +38,10 @@ if ($ADMIN->fulltree) {
                                       new lang_string('localinstall_help', 'filter_mathjaxloader'));
     $settings->add($item);
 
-    $item = new admin_setting_configtext('filter_mathjaxloader/httpurl',
-                                         new lang_string('httpurl', 'filter_mathjaxloader'),
-                                         new lang_string('httpurl_help', 'filter_mathjaxloader'),
-                                         'http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js',
-                                         PARAM_RAW);
-    $settings->add($item);
-
     $item = new admin_setting_configtext('filter_mathjaxloader/httpsurl',
                                          new lang_string('httpsurl', 'filter_mathjaxloader'),
                                          new lang_string('httpsurl_help', 'filter_mathjaxloader'),
-                                         'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js',
+                                         'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js',
                                          PARAM_RAW);
     $settings->add($item);
 

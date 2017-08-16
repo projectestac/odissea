@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mediaplugin', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mediaplugin', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mediaplugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = 'Ligação Audio';
 $string['fallbackvideo'] = 'Ligação Video';
 $string['filtername'] = 'Módulos multimédia';
+$string['linktomedia'] = 'O filtro de módulos multimédia pesquisa uma hiperligação no texto que aponta para um recurso multimédia e substitui a hiperligação por um código apropriado de um leitor de multimédia que consiga reproduzir o recurso. Também substitui <video> e <audio>; palavras-chave com leitores de vídeo e áudio selecionados.
+
+<a href="{$a}">Gerir leitores de media</a>';

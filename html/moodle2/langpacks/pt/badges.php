@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'badges', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,13 +77,34 @@ Deve resolver este problema em qualquer site de produção onde pretende emitir 
 
 O único URL que requer verificação é [url-do-seu-site]/badges/assertion.php, logo, se lhe for possível alterar a sua firewall para permitir o acesso externo a esse ficheiro, a verificação da Medalha continuará a funcionar.';
 $string['backpackbadges'] = 'Tem {$a->totalbadges} Medalha(s) exibidas a partir de {$a->totalcollections} coleções(s). <a href="mybackpack.php">Altere as configurações da Backpack</a>.';
+$string['backpackcannotsendverification'] = 'Não é possível enviar email de verificação';
 $string['backpackconnection'] = 'Ligação à Backpack';
+$string['backpackconnectioncancelattempt'] = 'Autentique-se usando um endereço de email diferente';
+$string['backpackconnectionconnect'] = 'Ligar à backpack';
 $string['backpackconnection_help'] = 'Esta página permite-lhe configurar a ligação com um fornecedor externo de Backpack. Ligar-se a uma Backpack permite-lhe exibir as Medalhas externas neste site e encaminhar para a sua Backpack as Medalhas que recebeu aqui.
 
 Para já, apenas é suportado o <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Tem de se registar num serviço de Backpack antes de tentar configurar a ligação à Backpack nesta página.';
+$string['backpackconnectionresendemail'] = 'Reenviar email de verificação';
+$string['backpackconnectionunexpectedresult'] = 'Surgiu um problema ao ligar à sua backpack. Por favor tente novamente.<br/><br/>Se este problema persistir, contacte o seu administrador.';
 $string['backpackdetails'] = 'Configurações da Backpack';
 $string['backpackemail'] = 'Endereço de email';
 $string['backpackemail_help'] = 'Endereço de email associado à sua Backpack. Enquanto estiver ligado, qualquer Medalha recebida neste site será associada a este endereço de email.';
+$string['backpackemailverificationpending'] = 'Verificação pendente';
+$string['backpackemailverifyemailbody'] = 'Viva,
+
+Foi solicitada uma nova ligação à sua OpenBadges backpack desde \'{$a->sitename}\' usando seu endereço de e-mail.
+
+Para confirmar e ativar a ligação com a sua backpack, visite a página
+{$a->link}
+
+Na maioria dos casos, deverá aparecer como uma hiperligação azul que apenas tem de clicar. Se tal não funcionar, copie e cole a hiperligação na linha de endereço, na parte superior, do seu navegador da Web.
+
+Se precisar de ajuda, entre em contacto com o administrador do site,
+{$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: e-mail de verificação OpenBadges Backpack';
+$string['backpackemailverifypending'] = 'Um e-mail de verificação foi enviado para <strong>{$a}</strong>. Clique na hiperligação de verificação no e-mail para ativar a ligação à sua Backpack.';
+$string['backpackemailverifysuccess'] = 'Obrigado por verificar o seu endereço de e-mail. Agora está ligado à sua backpack.';
+$string['backpackemailverifytokenmismatch'] = 'O token n a hiperligação que clicou não corresponde ao token guardado. Certifique-se de clicar na hiperligação do e-mail mais recente que recebeu.';
 $string['backpackimport'] = 'Configurações de importação de Medalhas';
 $string['backpackimport_help'] = 'Depois da ligação à Backpack ser estabelecida com sucesso, as Medalhas da sua Backpack podem ser exibidas na sua página "Minhas Medalhas" e no seu perfil.
 
@@ -207,10 +228,13 @@ $string['error:backpackemailnotfound'] = 'O email \'{$a}\' não está associado 
 $string['error:backpackloginfailed'] = 'Não é possível ligar-se a uma Backpack externa pelo seguinte motivo: {$a}';
 $string['error:backpacknotavailable'] = 'O seu site não está disponível a partir da internet e, por isso, nenhuma Medalha atribuída neste site poderá ser verificada por um serviço externo de Backpacks.';
 $string['error:backpackproblem'] = 'Ocorreu um problema ao ligar ao seu fornecedor de serviços de Backpack. Por favor, tente mais tarde.';
+$string['error:badgeawardnotfound'] = 'Não é possível verificar esta medalha atribuída. Esta medalha pode ter sido revogada.';
+$string['error:badgenotfound'] = 'Medalha não encontrada';
 $string['error:badjson'] = 'A tentativa de ligação devolveu informação inválida.';
 $string['error:cannotact'] = 'Não é possível ativar a Medalha.';
 $string['error:cannotawardbadge'] = 'Não é possível atribuir a Medalha a um utilizador.';
 $string['error:cannotdeletecriterion'] = 'Este critério não pode ser eliminado.';
+$string['error:cannotrevokebadge'] = 'Não é possível revogar a medalha de um utilizador.';
 $string['error:clone'] = 'Não é possível duplicar a Medalha.';
 $string['error:connectionunknownreason'] = 'A ligação não foi bem sucedida sem que nenhum motivo fosse indicado para o justificar.';
 $string['error:duplicatename'] = 'Já existe uma Medalha com o mesmo nome no sistema.';
@@ -238,7 +262,20 @@ $string['error:requesterror'] = 'O pedido de ligação falhou (código de erro {
 $string['error:requesttimeout'] = 'O pedido de ligação expirou antes de ser concluído.';
 $string['error:save'] = 'Não é possível guardar a Medalha.';
 $string['error:userdeleted'] = '{$a->user} (Este utilizador já não existe em {$a->site})';
+$string['eventbadgearchived'] = 'Medalha arquivada';
 $string['eventbadgeawarded'] = 'Medalha atribuída';
+$string['eventbadgecreated'] = 'Medalha criada';
+$string['eventbadgecriteriacreated'] = 'Critério da medalha criado';
+$string['eventbadgecriteriadeleted'] = 'Critério da medalha apagado';
+$string['eventbadgecriteriaupdated'] = 'Critério da medalha atualizado';
+$string['eventbadgedeleted'] = 'Medalha apagada';
+$string['eventbadgedisabled'] = 'Medalha desativada';
+$string['eventbadgeduplicated'] = 'Medalha duplicada';
+$string['eventbadgeenabled'] = 'Medalha ativada';
+$string['eventbadgelistingviewed'] = 'Listagem de medalhas visualizada';
+$string['eventbadgerevoked'] = 'Medalha revogada';
+$string['eventbadgeupdated'] = 'Medalha atualizada';
+$string['eventbadgeviewed'] = 'Medalha visualizada';
 $string['evidence'] = 'Evidência';
 $string['existingrecipients'] = 'Atuais destinatários da Medalha';
 $string['expired'] = 'Expirada';
@@ -339,6 +376,7 @@ $string['reviewconfirm'] = '<p> Isto fará com que esta Medalha fique visível p
 <p> Assim que uma Medalha for emitida, esta será <strong>bloqueada</strong> - algumas configurações, incluindo os critérios e as configurações da data de validade, não poderão ser alteradas.</p>
 
 <p> Tem a certeza de que pretende ativar o acesso à Medalha {$a}? </p>';
+$string['revoke'] = 'Revogar medalha';
 $string['save'] = 'Guardar';
 $string['searchname'] = 'Pesquisar por nome';
 $string['selectaward'] = 'Por favor, selecione o papel que gostaria de usar para atribuir esta Medalha:&nbsp;';

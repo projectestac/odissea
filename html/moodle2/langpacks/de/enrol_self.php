@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['enrolperiod_desc'] = 'Die standardmäßige Teilnahmedauer ist die Zeitd
 $string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibebeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
-$string['expiredaction'] = 'Festlegungen zum Einschreibungszeitraum';
+$string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
 $string['expiredaction_help'] = 'Legen Sie fest was nach dem Ablauf der Einschreibung in einem Kurs erfolgt. Denken Sie daran, dass bei der Austragung des Nutzers aus dem Kurs einige Daten nicht mehr verfügbar sind.';
 $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 
@@ -102,7 +102,7 @@ $string['self:manage'] = 'Eingeschriebene Nutzer/innen verwalten';
 $string['self:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';
 $string['self:unenrolself'] = 'Selbst aus dem Kurs abmelden';
 $string['sendcoursewelcomemessage'] = 'Begrüßungstext versenden';
-$string['sendcoursewelcomemessage_help'] = 'Wenn diese Option aktiviert ist, erhalten alle Nutzer/innen einen Begrüßungstext per E-Mail, sobald sie sich selbst in einen Kurs einschreiben.';
+$string['sendcoursewelcomemessage_help'] = 'Wenn ein Nutzer sich in den Kurs einschreibt, kann ihm eine Begrüßungsnachricht gesendet werden. Wenn diese vom Kurskontakt geschickt wird (voreingetstellt vom Lehrer) und mehrere Nutzer diese Rolle haben, wird die E-Mail von dem Nutzer versendet, dem diese Rolle zuerst zugewiesen wurde.';
 $string['showhint'] = 'Hinweis zeigen';
 $string['showhint_desc'] = 'Erstes Zeichen des Zugangsschlüssels zeigen';
 $string['status'] = 'Existierende Einschreibungen erlauben';

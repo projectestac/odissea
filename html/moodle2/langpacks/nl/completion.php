@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'completion', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['achievinggrade'] = 'Cijfer bekomen';
+$string['achievinggrade'] = 'Cijfer behalen';
 $string['activities'] = 'Activiteiten';
 $string['activitiescompleted'] = 'Voltooide activiteiten';
 $string['activitiescompletednote'] = 'Opmerking: Voltooide activiteiten moet voor een activiteit ingeschakeld zijn om in bovenstaande lijst te kunnen verschijnen.';
@@ -55,7 +55,7 @@ $string['completion-alt-manual-enabled'] = 'Gebruikers kunnen deze activiteit ma
 $string['completion-alt-manual-n'] = 'Niet voltooid: {$a}. Selecteer om te markeren als voltooid';
 $string['completion-alt-manual-y'] = 'voltooid: {$a}. Selecteer om als niet voltooid te markeren.';
 $string['completion_automatic'] = 'Toon activiteit als voltooid als aan de voorwaarden voldaan is';
-$string['completiondefault'] = 'Standaard voltooien opvolgen';
+$string['completiondefault'] = 'Standaard voltooien bijhouden';
 $string['completiondisabled'] = 'Uitgeschakeld, wordt niet getoond in de activiteitsinstellingen';
 $string['completionduration'] = 'Aanmelding';
 $string['completionenabled'] = 'Ingeschakeld, controle via de activiteitsinstellingen';
@@ -90,7 +90,7 @@ $string['completionusegrade_help'] = 'Indien ingeschakeld, wordt de activiteit a
 $string['completionview'] = 'Bekijken vereist';
 $string['completionview_desc'] = 'De leerling moet deze activiteit bekeken hebben om als voltooid beschouwd te worden.';
 $string['completion-y'] = 'Voltooid';
-$string['configcompletiondefault'] = 'De standaardinstelling voor het opvolgen van voltooien wanneer nieuwe activiteiten gemaakt worden.';
+$string['configcompletiondefault'] = 'De standaardinstelling voor het bijhouden van voltooien wanneer nieuwe activiteiten gemaakt worden.';
 $string['configenablecompletion'] = 'Wanneer ingeschakeld, kun je het bijhouden van het voltooien van activiteiten inschakelen op cursusniveau.';
 $string['confirmselfcompletion'] = 'Bevestig zelf als voltooid';
 $string['courseaggregation'] = 'Voorwaarde vereist';
@@ -182,4 +182,4 @@ $string['viewcoursereport'] = 'Bekijk cursusrapport';
 $string['viewingactivity'] = '{$a} aan het bekijken';
 $string['writingcompletiondata'] = 'Wegschrijven gegevens voltooien activiteit';
 $string['xdays'] = '{$a} dagen';
-$string['yourprogress'] = 'Jouw vordering';
+$string['yourprogress'] = 'Jouw voortgang';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'theme_clean', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,7 @@ $string['footnotedesc'] = 'Todo o conteúdo que inserir nesta área de texto ser
 $string['invert'] = 'Inverter barra de navegação';
 $string['invertdesc'] = 'Alterna a cor do texto e do fundo da barra de navegação no topo da página, entre o preto e o branco.';
 $string['logo'] = 'Logótipo';
-$string['logodesc'] = 'O logótipo apenas é exibido no cabeçalho da página principal e na página de autenticação. <br /> Se a altura do logótipo for maior do que 75px, adicione a seguinte regra de CSS na caixa \'Personalizar CSS\' abaixo "div.logo {height: 100px;}" (ou qualquer outro valor em pixeis para a altura do logotipo).';
+$string['logodesc'] = 'O logótipo apenas é exibido no cabeçalho da página principal e na página de autenticação. <br /> Se a altura do logótipo for maior do que 75px, adicione a seguinte regra de CSS "div.logo {height: 100px;}" na caixa abaixo \'Personalizar CSS\' (alterar de acordo com a altura do logótipo diferente de 100px). Se um logótipo não for adicionado aqui, será usado o logótipo reduzido que foi definido em Aparência > Logótipos.';
 $string['pluginname'] = 'Tema Clean';
 $string['region-side-post'] = 'Direita';
 $string['region-side-pre'] = 'Esquerda';
@@ -61,4 +61,4 @@ $string['sitelogo'] = 'Logótipo do site';
 $string['sitename'] = 'Mostrar nome do site juntamente com logótipo pequeno';
 $string['sitenamedesc'] = 'Se não existir um logótipo pequeno, o nome do site é sempre mostrado na barra de navegação. Se for definido um logótipo pequeno, este poderá ser exibido com ou sem o nome do site.';
 $string['smalllogo'] = 'Logótipo pequeno';
-$string['smalllogodesc'] = 'O logótipo pequeno é exibido na barra de navegação. Se existir um logótipo de cabeçalho para a primeira página e página de autenticação, o logótipo pequeno não é apresentado nestas páginas.';
+$string['smalllogodesc'] = 'O logótipo pequeno é exibido na barra de navegação. Se existir um logótipo de cabeçalho para a primeira página e página de autenticação, o logótipo pequeno não é apresentado nestas páginas. Se um logótipo não for adicionado aqui, será usado o logótipo reduzido que foi definido em Aparência > Logótipos.';

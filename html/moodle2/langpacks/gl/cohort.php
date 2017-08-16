@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cohort', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['allcohorts'] = 'Todos os circulos';
 $string['anycohort'] = 'Calquera';
 $string['assign'] = 'Asignar';
 $string['assigncohorts'] = 'Asignar membros ao círculo';
-$string['assignto'] = 'Círculo «{$a}» membros';
+$string['assignto'] = 'Membros do círculo «{$a}»';
 $string['backtocohorts'] = 'Volver aos círculos';
 $string['bulkadd'] = 'Engadir ao círculo';
 $string['bulknocohort'] = 'Non se atoparon círculos dispoñíbeis';
@@ -71,7 +71,7 @@ $string['nocomponent'] = 'Creada manualmente';
 $string['potusers'] = 'Usuarios potenciais';
 $string['potusersmatching'] = 'Usuarios potenciais coincidentes';
 $string['preview'] = 'Vista previa';
-$string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de múltiplos cursos, o que inclúe a eliminación da configuración do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
+$string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de múltiples cursos, o que inclúe a eliminación da configuración do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
 $string['search'] = 'Buscar';
 $string['searchcohort'] = 'Buscar un círculo';
 $string['selectfromcohort'] = 'Seleccionar os membros do círculo';

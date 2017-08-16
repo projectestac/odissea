@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'data', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,8 @@ $string['availabletodatevalidation'] = 'Eskuragarri egoteko azken eguna ezin da 
 $string['blank'] = 'Hutsik';
 $string['buttons'] = 'Ekintzak';
 $string['bynameondate'] = 'Egilea eta data: {$a->name} - {$a->date}';
+$string['calendarend'] = '{$a} datu-basea itxiko da';
+$string['calendarstart'] = '{$a} datu-basea irekiko da';
 $string['cancel'] = 'Utzi';
 $string['cannotaccesspresentsother'] = 'Ez duzu beste erabiltzaile batzuen aurretiko ezarpenetara sartzeko baimenik';
 $string['cannotadd'] = 'Ezin da sarrerarik gehitu';
@@ -107,6 +109,7 @@ $string['data:managetemplates'] = 'Txantiloiak kudeatu';
 $string['data:manageuserpresets'] = 'Txantiloien aurretiko ezarpenak kudeatu';
 $string['data:rate'] = 'Sarrerak kalifikatu';
 $string['data:readentry'] = 'Sarrerak irakurri';
+$string['data:view'] = 'Ikusi datu-basearen aktibitatea';
 $string['data:viewallratings'] = 'Erabiltzaileek emandako kalifikazio guztiak ikusi';
 $string['data:viewalluserpresets'] = 'Erabiltzaile guztien aurretiko ezarpenak ikusi';
 $string['data:viewanyrating'] = 'Besteren batek denera jasotako kalifikazioak ikusi';
@@ -137,6 +140,7 @@ $string['editordisable'] = 'Editorea desgaitu';
 $string['editorenable'] = 'Editorea gaitu';
 $string['emptyadd'] = 'Txantiloia eranstekoa hutsik dago, lehenetsitako formularioa sortzen...';
 $string['emptyaddform'] = 'Ez duzu eremuren bat bete!';
+$string['enabletemplateeditorcheck'] = 'Ziur zaude editorea gaitu nahi duzula? Honek edukia aldatzea eragin dezake txantiloia gordetzean.';
 $string['entries'] = 'Sarrerak';
 $string['entrieslefttoadd'] = '{$a->entriesleft} sarrera gehiago gehitu behar dituzu jarduera hau osatzeko.';
 $string['entrieslefttoaddtoview'] = '{$a->entrieslefttoview} sarrera gehiago gehitu behar dituzu beste partaideen sarrerak ikusi ahal izateko.';
@@ -354,6 +358,7 @@ $string['savesuccess'] = 'Egoki gordeta. Zure aurretiko ezarpena eskuragarri dag
 $string['savetemplate'] = 'Txantiloia gorde';
 $string['search'] = 'Bilatu';
 $string['search:activity'] = 'Datu-basea - jardueraren informazioa';
+$string['search:entry'] = 'Datu-basea - sarrerak';
 $string['selectedrequired'] = 'Aukeratutako guztia beharrezkoa';
 $string['showall'] = 'Erakutsi sarrera guztiak';
 $string['single'] = 'Sarrera bakarra';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_paypal', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['enrolperiod_desc'] = 'Duração predefinida da inscrição.  Se for def
 $string['enrolperiod_help'] = 'Período de tempo em que a inscrição é válida, a partir do momento em que o utilizador é inscrito. Se desativado, a duração da inscrição será ilimitada.';
 $string['enrolstartdate'] = 'Data de início';
 $string['enrolstartdate_help'] = 'Se ativo, os utilizadores apenas podem ser inscritos a partir desta data.';
-$string['expiredaction'] = 'Ação de expiração de inscrição';
+$string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a ser executada quando a inscrição do utilizador expira. Por favor, note que alguns dados e configurações do utilizador são removidos da disciplina quando a inscrição é cancelada.';
 $string['mailadmins'] = 'Notificar administradores por e-mail';
 $string['mailstudents'] = 'Notificar alunos por e-mail';

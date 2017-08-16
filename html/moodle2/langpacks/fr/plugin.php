@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -140,6 +140,8 @@ $string['type_gradingform'] = 'Méthode d\'évaluation avancée';
 $string['type_gradingform_plural'] = 'Méthodes d\'évaluation avancées';
 $string['type_local'] = 'Plugin local';
 $string['type_local_plural'] = 'Plugins locaux';
+$string['type_media'] = 'Lecteur de média';
+$string['type_media_plural'] = 'Lecteurs de média';
 $string['type_message'] = 'Notification de messagerie';
 $string['type_message_plural'] = 'Notifications de messagerie';
 $string['type_mnetservice'] = 'Service MNet';

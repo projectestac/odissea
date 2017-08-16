@@ -76,7 +76,7 @@ class rank extends base {
         }
     }
 
-    protected function get_results($rids=false) {
+    protected function get_results($rids=false, $anonymous=false) {
         global $DB;
 
         $rsql = '';
@@ -171,14 +171,16 @@ class rank extends base {
         }
     }
 
-    public function display_results($rids=false, $sort='') {
+    public function display_results($rids=false, $sort='', $anonymous=false) {
+        $output = '';
+
         if (is_array($rids)) {
             $prtotal = 1;
         } else if (is_int($rids)) {
             $prtotal = 0;
         }
 
-        if ($rows = $this->get_results($rids, $sort)) {
+        if ($rows = $this->get_results($rids, $sort, $anonymous)) {
             $stravgvalue = ''; // For printing table heading.
             foreach ($this->counts as $key => $value) {
                 $ccontent = $key;
@@ -204,14 +206,15 @@ class rank extends base {
                 $this->counts[$ccontent]->avg = $avg;
                 $this->counts[$ccontent]->avgvalue = $avgvalue;
             }
-            \mod_questionnaire\response\display_support::mkresavg($this->counts, count($rids), $this->question->choices,
+            $output .= \mod_questionnaire\response\display_support::mkresavg($this->counts, count($rids), $this->question->choices,
                 $this->question->precise, $prtotal, $this->question->length, $sort, $stravgvalue);
 
-            \mod_questionnaire\response\display_support::mkrescount($this->counts, $rids, $rows, $this->question,
+            $output .= \mod_questionnaire\response\display_support::mkrescount($this->counts, $rids, $rows, $this->question,
                 $this->question->precise, $this->question->length, $sort);
         } else {
-            echo '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
+            $output .= '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
         }
+        return $output;
     }
 
     /**

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,6 +77,7 @@ $string['badges:deletebadge'] = 'Dominak ezabatu';
 $string['badges:earnbadge'] = 'Domina irabazi';
 $string['badges:manageglobalsettings'] = 'Dominen ezarpen orokorrak kudeatu';
 $string['badges:manageownbadges'] = 'Norberak irabazitako dominak ikusi eta kudeatu';
+$string['badges:revokebadge'] = 'Erabiltzaile bati domina kendu';
 $string['badges:viewbadges'] = 'Irabazi gabeko dominak ikusi';
 $string['badges:viewotherbadges'] = 'Domina publikoak ikusi beste erabiltzaileen profiletan';
 $string['block:edit'] = 'Blokearen ezarpenak editatu';
@@ -357,7 +358,7 @@ $string['roleincontext'] = '{$a->role} hemen: {$a->context}';
 $string['role:manage'] = 'Rolak sortu eta kudeatu';
 $string['role:override'] = 'Besteentzako baimenak baliogabetu';
 $string['roleprohibitheader'] = 'Rola debekatu';
-$string['roleprohibitinfo'] = 'Aukera ezazu rol bat debekatutako rol-zerrendara gehitzeko {$a->context} testuinguruan,  {$a->cap} gaitasunean:';
+$string['roleprohibitinfo'] = 'Aukera ezazu rol bat debekatutako rol-zerrendara gehitzeko {$a->context} testuinguruan, {$a->cap} gaitasunean:';
 $string['rolerepreset'] = 'Erabili rolen aurretiko ezarpena';
 $string['roleresetdefaults'] = 'Berezkoak';
 $string['role:review'] = 'Besteentzako baimenak berrikusi';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'moodle', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['addresource'] = 'Lägg till en resurs...';
 $string['addresourceoractivity'] = 'Lägg till en aktivitet eller resurs';
 $string['addresourcetosection'] = 'Lägg till en resurs i avsnitt \'{$a}\'';
 $string['address'] = 'Adress';
-$string['addressedto'] = 'Till';
 $string['addstudent'] = 'Lägg till en ny student/elev/deltagare/lärande';
 $string['addsubcategory'] = 'Lägg till en underkategori';
 $string['addteacher'] = 'Lägg till distanslärare/handledare/coach';

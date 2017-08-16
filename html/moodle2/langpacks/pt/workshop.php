@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,7 @@ $string['assignedassessments'] = 'Trabalhos que lhe foram atribuídos para avali
 $string['assignedassessmentsnone'] = 'Não tem trabalhos atribuídos para avaliar';
 $string['backtoeditform'] = 'Voltar ao formulário de edição';
 $string['byfullname'] = 'por <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'por {$a}';
 $string['calculategradinggrades'] = 'Calcular notas das avaliações';
 $string['calculategradinggradesdetails'] = 'esperados: {$a->expected}<br />calculados: {$a->calculated}';
 $string['calculatesubmissiongrades'] = 'Calcular notas dos trabalhos';
@@ -145,6 +146,7 @@ $string['examplesbeforesubmission'] = 'Devem ser avaliados antes de o aluno envi
 $string['examplesmode'] = 'Avaliação dos trabalhos exemplo';
 $string['examplesubmissions'] = 'Trabalhos exemplo';
 $string['examplesvoluntary'] = 'Avaliação dos trabalhos exemplo é opcional';
+$string['exportsubmission'] = 'Exportar esta página';
 $string['feedbackauthor'] = 'Comentário para o autor do trabalho';
 $string['feedbackauthorattachment'] = 'Anexo';
 $string['feedbackby'] = 'Feedback por {$a}';
@@ -302,14 +304,19 @@ $string['switchphase30auto'] = 'O Workshop passará automaticamente para a fase 
 $string['switchphase30info'] = 'Está prestes a alterar o workshop para a fase de <strong>Avaliação</strong>. Nesta fase, os avaliadores podem fazer a sua apreciação dos trabalhos cuja avaliação que lhes foi atribuída (dentro das datas permitidas, se definidas).';
 $string['switchphase40info'] = 'Está prestes a alterar o workshop para a fase de <strong> Cálculo da Avaliação</strong>. Nesta fase, os alunos não podem editar os seus trabalhos nem as suas avaliações dos outros trabalhos. Os professores podem usar as ferramentas de avaliação para calcular as notas finais e inserir comentários ao trabalho dos avaliadores.';
 $string['switchphase50info'] = 'Está prestes a encerrar o workshop. As notas calculadas serão exibidas no relatório de avaliação. Os alunos podem ver os seus trabalhos e respectivas avaliações.';
+$string['switchphasenext'] = 'Seguir para a próxima fase';
 $string['taskassesspeers'] = 'Avaliar trabalhos dos colegas';
 $string['taskassesspeersdetails'] = 'total: {$a->total}<br />pendente: {$a->todo}';
 $string['taskassessself'] = 'Autoavaliação';
 $string['taskconclusion'] = 'Permitir que a atividade seja assinalada como concluída';
+$string['taskdone'] = 'Tarefa executada';
+$string['taskfail'] = 'Falha na tarefa';
+$string['taskinfo'] = 'Informações da tarefa';
 $string['taskinstructauthors'] = 'Inserir instruções para os trabalhos';
 $string['taskinstructreviewers'] = 'Inserir instruções para a avaliação';
 $string['taskintro'] = 'Definir a descrição do workshop';
 $string['tasksubmit'] = 'Submeter trabalho';
+$string['tasktodo'] = 'Tarefas a fazer';
 $string['toolbox'] = 'Caixa de ferramentas do Workshop';
 $string['undersetup'] = 'O workshop está neste momento a ser configurado. Aguarde até que passe para a fase seguinte';
 $string['useexamples'] = 'Requer avaliação de exemplos';
@@ -321,6 +328,7 @@ $string['usepeerassessment_help'] = 'Se ativar esta opção, são atribuídos a 
 $string['userdatecreated'] = 'Enviado em <span>{$a}</span>';
 $string['userdatemodified'] = 'Modificado em <span>{$a}</span>';
 $string['userplan'] = 'Planificação do workshop';
+$string['userplanaccessibilityskip'] = 'Saltar para tarefas atuais';
 $string['userplanaccessibilitytitle'] = 'Cronograma de workshop com {$a} fases';
 $string['userplancurrentphase'] = 'Fase atual';
 $string['userplan_help'] = 'A planificação do workshop mostra todas as fases da atividade e a lista de tarefas para cada fase. A fase atual é assinalada e a conclusão de cada tarefa é indicada com um visto.';
@@ -333,6 +341,7 @@ $string['workshop:addinstance'] = 'Adicionar novo Workshop';
 $string['workshop:allocate'] = 'Atribuir trabalhos para avaliação';
 $string['workshop:deletesubmissions'] = 'Apagar submissões';
 $string['workshop:editdimensions'] = 'Editar grelhas de avaliação';
+$string['workshop:exportsubmissions'] = 'Exportar submissões';
 $string['workshop:ignoredeadlines'] = 'Ignorar restrições de prazo';
 $string['workshop:manageexamples'] = 'Gerir trabalhos exemplo';
 $string['workshopname'] = 'Designação';

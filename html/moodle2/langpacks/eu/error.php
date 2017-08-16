@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'error', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = 'Jarduera-ezabaketa martxan da...';
 $string['alreadyloggedin'] = 'Dagoeneko {$a} gisa identifikatuta zaude, beste erabiltzaile bat bezala identifikatzeko lehenik irten egin behar duzu.';
 $string['authnotexisting'] = 'Autorizazio-plugina ez da existitzen';
 $string['backupcontainexternal'] = 'Segurtasun-fitxategi honek lokalean konfiguratuta ez dauden kanpoko Moodle sarerako ostalariak ditu.';
@@ -212,6 +213,7 @@ $string['duplicaterolename'] = 'Dagoeneko bada izen hori duen rola!';
 $string['duplicateroleshortname'] = 'Dagoeneko bada izen labur hori duen rola!';
 $string['duplicateusername'] = 'Bikoiztutako erabiltzaile-izena - erregistroa alde batera utzi da';
 $string['emailfail'] = 'E-posta ez da egoki bidali';
+$string['enddatebeforestartdate'] = 'Ikastaroaren amaiera-datak hasiera-data baino beranduago izan behar du.';
 $string['error'] = 'Errorea gertatu da';
 $string['errorcleaningdirectory'] = 'Errorea gertatu da "{$a}" karpeta garbitzean';
 $string['errorcopyingfiles'] = 'Errorea fitxategiak kopiatzean';
@@ -348,7 +350,7 @@ $string['missingrequiredfield'] = 'Beharrezko eremuren bat falta da.';
 $string['missinguseranditemid'] = 'userid eta itemid falta dira';
 $string['missingvarname'] = 'Behar den aldagai baten izena falta da!';
 $string['mnetdisable'] = 'MNET desgaituta dago';
-$string['mnetlocal'] = 'Urrutiko MNET erabiltzaileek ezin dute saioa modu lokalean hasi';
+$string['mnetlocal'] = 'Urrutiko MNET erabiltzaileek ezin dute saioa lokalean hasi';
 $string['moduledisable'] = 'Modulu hau ({$a}) desgaituta dago ikastaro jakin honetarako';
 $string['moduledoesnotexist'] = 'Modulu hau ez da existitzen';
 $string['moduleinstancedoesnotexist'] = 'Modulu honen erregistroa ez da existitzen';
@@ -408,8 +410,8 @@ $string['prefixcannotbeempty'] = '<p>Errorea: datu-basearen taularen aurrizkia e
 $string['processingstops'] = 'Prozesamendua hemen bukatu da. Gainontzeko erregistroak ez dira kontuan hartu.';
 $string['querystringcannotbeempty'] = 'Kontsultaren katea ezin da hutsik egon.';
 $string['redirecterrordetected'] = 'Onartzen ez den berbideraketa atzeman da, script-aren egikaritzea amaitu da';
-$string['remotedownloaderror'] = '<p>Errorea osagaia zure zerbitzarira jaistean. Mesedez egiaztatu proxy-ezarpenak; PHP cURL luzapea erabat gomendatzen da.</p>
-<p><a href="*{$a->url}*">*{$a->url}*</a> fitxategia eskuz jaitsi beharko zenuke, zure zerbitzariko "*{$a->dest}*" -ra kopiatu eta bertan deskonprimatu.</p>';
+$string['remotedownloaderror'] = '<p>Errorea osagaia zure zerbitzarian jaistean, mesedez egiaztatu proxy-ezarpenak, PHP cURL luzapena erabat gomendatzen da.</p>
+<p> <a href="{$a->url}">{$a->url}</a> fitxategia eskuz jaitsi beharko zenuke, zure zerbitzariko "{$a->dest}"-ra kopiatu eta bertan deskonprimatu.</p>';
 $string['remotedownloadnotallowed'] = 'Osagaiak ezin dira zure zerbitzarira jaitsi (allow_url_fopen ez dago aktibatuta).<br /><br /><a href="{$a->url}">{$a->url}</a> fitxategia eskuz jaitsi eta "{$a->dest}" kokapenean kopiatu behar duzu.';
 $string['requirecorrectaccess'] = 'URLa edo ataka ez dira baliagarriak.';
 $string['requireloginerror'] = 'Ez dago ikastaro edo jarduerarako sarbiderik';
@@ -419,8 +421,8 @@ $string['sectionnotexist'] = 'Atal hau ez da existitzen';
 $string['sendmessage'] = 'Mezua bidali';
 $string['serverconnection'] = 'Errorea zerbitzariarekin konektatzean';
 $string['servicedonotexist'] = 'Zerbitzua ez da existitzen';
-$string['sessionerroruser'] = 'Saioaren denbora tartea amaitu da. Sar zaitez berriro, mesedez.';
-$string['sessionerroruser2'] = 'Zure saioari eragiten dion zerbitzari-errorea antzeman da. Berriz sartu edo nabigatzailea berrabiarazi, mesedez.';
+$string['sessionerroruser'] = 'Saioa amaitu da. Sar zaitez berriro, mesedez.';
+$string['sessionerroruser2'] = 'Zure saioari eragiten dion zerbitzari-errorea antzeman da. Berriz sartu edo nabigatzailea berriro abiatu, mesedez.';
 $string['sessionipnomatch'] = 'Sentitzen dugu, baina lehenengo sarreratik zure IPa aldatu dela dirudi. Ziurtasun neurri honen arrazoia crackerrek gune honetan zauden bitartean zure nortasuna ez lapurtzean datza. Erabiltzaile arruntek ez lukete mezu hau ikusi beharko. Beraz, gunearen kudeatzaileari laguntza eskatu.';
 $string['shortnametaken'] = 'Izan laburra dagoeneko beste ikastaro batean erabili da ({$a})';
 $string['socksnotsupported'] = 'SOCKS5 proxya ez da onartzen PHP4-n';
@@ -429,7 +431,7 @@ $string['sslonlyaccess'] = 'Segurtasun-arrazoiak direla-eta, https konexioak bak
 $string['statscatchupmode'] = 'Estatistika une honetan \'catchup\' moduan dago. Orain arte {$a->daysdone} egun prozesatu dira eta {$a->dayspending} prozesatzeko daude. Mesedez, beranduago aztertu berriz.';
 $string['statsdisable'] = 'Estatistikak ez daude gaituta.';
 $string['statsnodata'] = 'Ez dago daturik ikastaro eta denbora-tarte konbinazio horretarako';
-$string['storedfilecannotread'] = 'Ezin da fitxategia irakurri. Fitxategia ez da existitzen edo baimen arazoak daude.';
+$string['storedfilecannotread'] = 'Ezin da fitxategia irakurri. Fitxategia ez dago edo baimen arazoak daude.';
 $string['storedfilenotcreated'] = 'Ezin da fitxategia sortu: "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
 $string['tagdisabled'] = 'Etiketak desgaituta daude!';
 $string['tagnotfound'] = 'Ez da aurkitu zehaztutako etiketa datu-basean';

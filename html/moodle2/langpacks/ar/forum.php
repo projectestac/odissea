@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['blogforum'] = 'منتدى قياسي يظهر بشكل مدونة';
 $string['bynameondate'] = 'بواسطة {$a->date} -  {$a->name}';
 $string['cannotadddiscussion'] = 'إضافة نقشات لهذا المنتدى يتطلب عضوية مجموعات';
 $string['cannotadddiscussionall'] = 'ليس لديك الصلاحيات لإضافة نقاش لكل المشتركين.';
-$string['cannotviewpostyet'] = 'لأنك لم تقم بالمشاركة في هذا المنتدى لذا لا تستطيع قراءة أسئلة الطلاب الأخرين';
+$string['cannotviewpostyet'] = 'لانك لم تقم بالمشاركة في هذا المنتدى لذا لا تستطيع قراءة اسئلة الطلاب الأخرين';
 $string['cannotviewusersposts'] = 'لا توجد مواضيع نشرها هذا المستخدم ويمكنك مشاهدتها.';
 $string['completionreplies'] = 'الطلاب يجب عليهم الرد';
 $string['completionrepliesgroup'] = 'يتطلب الرد';
@@ -59,7 +59,7 @@ $string['configdigestmailtime'] = 'الناس الذين يَختارونَ أَ
 $string['configdisplaymode'] = 'العرض الفتراضى للنقشات لو لم يتم القيام بإختبار اخر';
 $string['configenablerssfeeds'] = 'هذا سيمكن خدمة تغذية المعلومات لكل المنتديات. ستحتاج القيام بتفعيل خدمة تغذية المعلومات يدوياً من خلال إعدادات مل منتدى.';
 $string['configlongpost'] = 'أي مقالة تزيد عن هذا الحد (بدون إضافة  HTML) تعتبر طويله';
-$string['configmanydiscussions'] = 'الحد الأقصى لعدد للمناقشات المعروضة في الصفحة الواحد للمنتدى';
+$string['configmanydiscussions'] = 'الحد الاقصى لعدد للمناقشات المعروضه في الصفحة الواحد للمنتدى';
 $string['configmaxbytes'] = 'الحجم الافتراضي الاقصى لجميع مرفقات المنتدى في هذا الموقع (عرضة لمحددات المنهج الدراسي وبعض الاعدادات الاخرى)';
 $string['configoldpostdays'] = 'بعد كم يوم يكمن اعتبار المشاركات القديم على أنها مقرؤة';
 $string['configreplytouser'] = 'هل يجب تضميين عنوان البريد الإلكتروني الخاص بالمشارك في المنتدى عند إرسال المشاركة بالبريد الإلكتروني؟ يتستطع المستخدمون من خلال الخيارات المتوفرة في صفحة السير الذاتية جعل عناوين بريدهم سرية حتى لو تم أعداد هذه الخدمة بـ (نعم)';
@@ -193,7 +193,7 @@ $string['modulenameplural'] = 'المنتديات';
 $string['more'] = 'المزيد';
 $string['movedmarker'] = '(تم النقل)';
 $string['movethisdiscussionto'] = 'أنقل الهذا النقاش إلى';
-$string['namenews'] = 'إعلانات';
+$string['namenews'] = 'منتدى الأخبار';
 $string['namenews_help'] = 'منتدى الأخبار هو نوع خاص من المنتديات يستخدم للتعميمات، ويتم إنشاؤه آلياً عند إنشاء المقرر. يحوي كل مقرر منتدى وحيد من هذا النوع. فقط المدرسين والمدراء يمكنهم النشر في هذا المنتدى. الكتلة "آخر الأخبار" تعرض آخر النقاشات من هذا المنتدى.';
 $string['namesocial'] = 'منتدى اجتماعي';
 $string['nameteacher'] = 'منتدى المعلم';

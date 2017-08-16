@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,9 +45,9 @@ $string['chattime'] = 'Proper dia i hora de xat';
 $string['compact'] = 'Compacte';
 $string['composemessage'] = 'Redacta un missatge';
 $string['configmethod'] = 'El mètode normal de xat implica que els clients contactin regularment el servidor en cerca d\'actualitzacions. No necessita cap configuració i funciona enlloc, però pot crear una càrrega gran al servidor si s\'apleguen molts usuaris. Utilitzar un dimoni servidor requereix accés a l\'intèrpret d\'ordres d\'Unix, però comporta un entorn de xat ràpid i escalable.';
-$string['confignormalupdatemode'] = 'El refresc de la sala de xat se sol realitzar d\'una manera prou eficient per mitjà de la característica <em>Keep-Alive</em> de l\'HTTP 1.1, però això és bastant pesat per al servidor. Un mètode més avançat consisteix a utilitzar l\'estratègia <em>Corrent de dades</em> per enviar les actualitzacions als usuaris. L\'estratègia <em>Corrent de dades</em> és més escalable (similar al mètode chatd) però no funciona en tots els servidors.';
-$string['configoldping'] = 'Després de quant temps d\'estar en silenci cal considerar que un usuari ha marxat?';
-$string['configrefreshroom'] = 'Freqüència de refresc de la sala de xat (en segons). Posar aquest valor massa baix farà que la sala sembli més ràpida, però pot carregar excessivament el servidor quan hi ha molt gent xerrant.';
+$string['confignormalupdatemode'] = 'El refrescament de la sala de xat se sol realitzar d\'una manera prou eficient per mitjà de la característica <em>Keep-Alive</em> de l\'HTTP 1.1, però això és bastant pesat per al servidor. Un mètode més avançat consisteix a utilitzar l\'estratègia <em>Corrent de dades</em> per enviar les actualitzacions als usuaris. L\'estratègia <em>Corrent de dades</em> és més escalable (similar al mètode chatd) però no funciona en tots els servidors.';
+$string['configoldping'] = 'Després de quant de temps d\'estar en silenci cal considerar que un usuari ha marxat? Això és només un límit superior, ja que normalment les desconnexions es detecten de manera molt ràpida. Els valors més baixos seran més exigents en el vostre servidor. Si utilitzeu el mètode normal, no l\'establiu <strong>mai</strong> a un número inferior a 2 * chat_refresh_room.';
+$string['configrefreshroom'] = 'Freqüència de refrescament de la sala de xat (en segons). Posar aquest valor massa baix farà que la sala sembli més ràpida, però pot carregar excessivament el servidor quan hi ha molt gent parlant. Si utilitzeu actualitzacions de <em>Corrent de dades</em>, podeu seleccionar freqüències de refrescament més altes; proveu-ho amb 2.';
 $string['configrefreshuserlist'] = 'Freqüència de refresc de la llista d\'usuaris (en segons)';
 $string['configserverhost'] = 'El nom de l\'ordinador on hi ha el dimoni servidor';
 $string['configserverip'] = 'L\'adreça IP numèrica corresponent al mateix ordinador';
@@ -114,11 +114,11 @@ $string['page-mod-chat-x'] = 'Qualsevol pàgina del mòdul de xat';
 $string['pastchats'] = 'Sessions de xat anteriors';
 $string['pluginadministration'] = 'Administració del xat';
 $string['pluginname'] = 'Xat';
-$string['refreshroom'] = 'Refresca la cambra';
+$string['refreshroom'] = 'Refresca la sala';
 $string['refreshuserlist'] = 'Refresca la llista d\'usuaris';
 $string['removemessages'] = 'Suprimeix tots els missatges';
 $string['repeatdaily'] = 'A la mateixa hora cada dia';
-$string['repeatnone'] = 'No es repeteix - publica només la data i hora especificades';
+$string['repeatnone'] = 'No es repeteix; publica només la data i hora especificades';
 $string['repeattimes'] = 'Repeteix/publica els horaris de les sessions';
 $string['repeatweekly'] = 'El mateix dia a la mateixa hora cada setmana';
 $string['saidto'] = 'dit a';

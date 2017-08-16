@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'calendar', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,12 +64,26 @@ $string['erroraddingevent'] = 'Errorea izan da ekitaldia gehitzean';
 $string['errorbadsubscription'] = 'Ez da egutegi-harpidetzarik aurkitu.';
 $string['errorbeforecoursestart'] = 'Ezin da ikusi ekitaldia ikastaroaren hasiera-data baino lehen.';
 $string['errorcannotimport'] = 'Une honetan ezin duzu egutegi-harpidetzarik sortu.';
+$string['errorhasuntilandcount'] = 'NOIZ ARTE edo ZENBATU agertu behar dira arau errepikakor batean, baina NOIZ ARTE eta ZENBATU EZIN DIRA arau errepikakor berean agertu.';
+$string['errorinvalidbydayprefix'] = 'NOIZKOEGUNA arauen aurretiko balio osoak soilik erabili daiteke HILABETERO edo URTERO arauetan.';
+$string['errorinvalidbydaysuffix'] = 'NOIZKOEGUNA arauetako asteko eguna atalean balio onargarriak MO, TU, WE, TH, FR, SA eta SU dira.';
+$string['errorinvalidbyhour'] = 'NOIZKOORDUA arauetan onartzen diren balioak 0 eta 23 artekoak dira.';
+$string['errorinvalidbyminute'] = 'NOIZKOMINUTUA arauetan onartzen diren balioak 0 eta 59 artekoak dira.';
+$string['errorinvalidbymonth'] = 'NOIZKOHILABETEA arauetan onartzen diren balioak 1 eta 12 artekoak dira.';
+$string['errorinvalidbymonthday'] = 'NOIZKOHILABETEEGUNA arauetan onartzen diren balioak 1 eta 31 zein -31 eta -1 artekoak dira.';
+$string['errorinvalidbysecond'] = 'NOIZKOSEGUNDUA arauetan onartzen diren balioak 0 eta 59 artekoak dira.';
+$string['errorinvalidbysetpos'] = 'NOIZKOPOSIZIOA arauetan onartzen diren balioak 1 eta 366 zein -366 eta -1 artekoak dira.';
+$string['errorinvalidbyweekno'] = 'URTEKOASTEA arauetan onartzen diren balioak 1 eta 53 zein -53 eta -1 artekoak dira.';
+$string['errorinvalidbyyearday'] = 'URTEKOEGUNA arauetan onartzen diren balioak 1 eta 366 zein -366 eta -1 artekoak dira.';
 $string['errorinvaliddate'] = 'Data ezegokia';
 $string['errorinvalidicalurl'] = 'Emandako iCal URL-a baliogabea da.';
+$string['errorinvalidinterval'] = 'TARTEA arauetako balioa zenbaki oso positiboa izan behar da.';
 $string['errorinvalidminutes'] = 'Iraupena minututan eman, horretarako 1-999 tarteko zenbaki bat aukeratu.';
 $string['errorinvalidrepeats'] = 'Ekitaldi kopurua eman, horretarako 1-99 tarteko zenbaki bat aukeratu.';
+$string['errormustbeusedwithotherbyrule'] = 'NOIZKOPOSIZIOA araua soilik NOIZKOxxx arau batekin batera erabili daiteke.';
 $string['errornodescription'] = 'Deskribapena beharrezkoa da';
 $string['errornoeventname'] = 'Izena beharrezkoa da';
+$string['errornonyearlyfreqwithbyweekno'] = 'URTEKOASTEA araua soilik URTERO arauetarako balio du.';
 $string['errorrequiredurlorfile'] = 'URL edo fitxategi bat behar da egutegia inportatzeko.';
 $string['errorrrule'] = 'Sartutako arauak ez dirudi zuzena';
 $string['errorrruleday'] = 'Arauak baliagarria ez den parametroa du (eguna)';
@@ -91,8 +105,14 @@ $string['eventsdeleted'] = 'Ekitaldiak ezabatu dira';
 $string['eventsfor'] = '{$a}-(e)ko ekitaldiak';
 $string['eventsimported'] = 'Ekitaldiak inportatu dira: {$a}';
 $string['eventskey'] = 'Ekitaldi-motak';
+$string['eventspersonal'] = 'Nire ekitaldi pertsonalak';
 $string['eventsrelatedtocourses'] = 'Ikastaroei dagozkien ekitaldiak';
+$string['eventsrelatedtogroups'] = 'Taldeei dagozkien ekitaldiak';
 $string['eventstarttime'] = 'Hasiera-ordua';
+$string['eventstoexport'] = 'Esportatzeko ekitaldiak';
+$string['eventsubscriptioncreated'] = 'Egutegi-harpidetza sortu da';
+$string['eventsubscriptiondeleted'] = 'Egutegi-harpidetza ezabatu da';
+$string['eventsubscriptionupdated'] = 'Egutegi-harpidetza eguneratu da';
 $string['eventsupdated'] = 'Ekitaldiak eguneratu dira: {$a}';
 $string['eventtime'] = 'Ordua';
 $string['eventview'] = 'Ekitaldiaren xehetasunak';
@@ -187,6 +207,7 @@ $string['thu'] = 'Og';
 $string['thursday'] = 'Osteguna';
 $string['timeformat_12'] = '12 ordu (am/pm)';
 $string['timeformat_24'] = '24 ordu';
+$string['timeperiod'] = 'Denbora-tartea';
 $string['today'] = 'Gaur';
 $string['tomorrow'] = 'Bihar';
 $string['tt_deleteevent'] = 'Ekitaldia ezabatu ';

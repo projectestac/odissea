@@ -72,6 +72,6 @@ class search_indexed extends base {
      * @return \moodle_url
      */
     public function get_url() {
-        return new \moodle_url('/report/search/index.php');
+        return new \moodle_url('/admin/searchareas.php');
     }
 }

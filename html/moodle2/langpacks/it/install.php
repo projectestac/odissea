@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'install', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -137,13 +137,15 @@ $string['mysqliextensionisnotpresentinphp'] = 'Il PHP non è stato configurato c
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
 <p>Il nome del database, il nome utente e la password sono campi obbligatori, il prefisso delle tabelle è facoltativo.</p>
+<p>Il nome del database può contenere solamente caratteri alfanumerici, il simbolo del dollaro ($) e il trattino basso (_).</p>
 <p>Se il database non esiste e se l\'utente fornito ha i permessi necessari, Moodle tenterà di creare il proprio database con le necessarie impostazioni.</p>
-<p>Questo driver non è compatibile con l\'engine MyISAM.</p>';
+<p>Questo driver non è compatibile con il vecchio motore MyISAM.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
 $string['nativemssqlhelp'] = 'Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati. Il database con l\'utente e la password d\'accesso devono già essere stati creati. Il prefisso delle tabelle è obbligatorio.';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
 <p>Il nome del database, il nome utente e la password sono campi obbligatori, il prefisso delle tabelle è facoltativo.</p>
+<p>Il nome del database può contenere solamente caratteri alfanumerici, il simbolo del dollaro ($) e il trattino basso (_).</p>
 <p>Se il database non esiste e se l\'utente fornito ha i permessi necessari, Moodle tenterà di creare il proprio database con le necessarie impostazioni.</p>';
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = 'Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati. Il database con l\'utente e la password d\'accesso devono già essere stati creati. Il prefisso delle tabelle è obbligatorio.';
@@ -178,10 +180,9 @@ $string['pathswrongadmindir'] = 'La cartella Admin non esiste';
 $string['pgsqlextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione PGSQL e non può comunicare con PostgreSQL. Controlla il file php.ini o ricompila il PHP.';
 $string['phpextension'] = '{$a} estensioni PHP';
 $string['phpversion'] = 'Versione PHP';
-$string['phpversionhelp'] = '<p>Moodle necessita come minimo della versione 4.3.0 o 5.1.0 del PHP. (La versione 5.0.x soffre di problemi noti)</p>
+$string['phpversionhelp'] = '<p>Moodle necessita come minimo della versione 5.6.5 del PHP. (La versione 7.0.x ha alcuni limiti nell\'engine)</p>
 <p>La versione installata nel sistema è la {$a}</p>
-<p>E\' necessario aggiornare la versione del PHP oppure spostarsi su un host che abbia una versione più aggiornata del PHP!<br>
-(Dalla 5.0.x, è possibile eseguire il downgrade alla versione 4.4.x)</p>';
+<p>E\' necessario aggiornare la versione del PHP oppure spostarsi su un host che abbia una versione più aggiornata del PHP.<br>';
 $string['releasenoteslink'] = 'Per informazioni su questa versione di Moodle, fai riferimento alle Note di Rilascio su {$a}';
 $string['safemode'] = 'Safe mode';
 $string['safemodeerror'] = 'Moodle può avere problemi con il safe mode impostato a on';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,8 +88,6 @@ $string['missingcaps'] = 'Gaitasunak falta dira.';
 $string['missingpassword'] = 'Pasahitza falta da';
 $string['missingrequiredcapability'] = '{$a} gaitasuna beharrezkoa da.';
 $string['missingusername'] = 'Erabiltzaile-izena falta da';
-$string['mobilewsdisabled'] = 'Desgaituta';
-$string['mobilewsenabled'] = 'Gaituta';
 $string['nameexists'] = 'Izen hau dagoeneko beste zerbitzu batean erabiltzen ari da';
 $string['nofunctions'] = 'Zerbitzu honek ez du funtziorik.';
 $string['norequiredcapability'] = 'Ez da gaitasunik behar';

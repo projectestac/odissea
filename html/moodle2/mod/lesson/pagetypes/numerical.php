@@ -204,7 +204,8 @@ class lesson_page_type_numerical extends lesson_page {
                     $total = $stats["total"];
                     unset($stats["total"]);
                     foreach ($stats as $valentered => $ntimes) {
-                        $data = '<input type="text" size="50" disabled="disabled" readonly="readonly" value="'.s($valentered).'" />';
+                        $data = '<input class="form-control" type="text" size="50" ' .
+                                'disabled="disabled" readonly="readonly" value="'.s($valentered).'" />';
                         $percent = $ntimes / $total * 100;
                         $percent = round($percent, 2);
                         $percent .= "% ".get_string("enteredthis", "lesson");
@@ -217,7 +218,8 @@ class lesson_page_type_numerical extends lesson_page {
             } else if ($useranswer != null && ($answer->id == $useranswer->answerid || ($answer == end($answers) &&
                     empty($answerdata->answers)))) {
                 // Get in here when the user answered or for the last answer.
-                $data = '<input type="text" size="50" disabled="disabled" readonly="readonly" value="'.s($useranswer->useranswer).'">';
+                $data = '<input class="form-control" type="text" size="50" ' .
+                        'disabled="disabled" readonly="readonly" value="'.s($useranswer->useranswer).'">';
                 if (isset($pagestats[$this->properties->id][$useranswer->useranswer])) {
                     $percent = $pagestats[$this->properties->id][$useranswer->useranswer] / $pagestats[$this->properties->id]["total"] * 100;
                     $percent = round($percent, 2);

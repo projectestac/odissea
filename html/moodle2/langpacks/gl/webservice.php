@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['addfunctionsdescription'] = 'Seleccione as funcións requiridas para o 
 $string['addrequiredcapability'] = 'Asignar/Desasignar os permisos requiridos';
 $string['addservice'] = 'Engadir un novo servizo: {$a->name} (ID: {$a->id})';
 $string['addservicefunction'] = 'Engadir funcións ao servizo «{$a}»';
-$string['allusers'] = 'Todos os usuarios';
+$string['allusers'] = 'Tódolos usuarios';
 $string['apiexplorer'] = 'Explorador API';
 $string['apiexplorernotavalaible'] = 'O explorador API aínda non está dispoñíbel';
 $string['arguments'] = 'Argumentos';
@@ -73,7 +73,6 @@ $string['editservice'] = 'Editar o servizo: {$a->name} (ID: {$a->id})';
 $string['enabled'] = 'Activado';
 $string['enabledocumentation'] = 'Activar a documentación do desenvolvedor';
 $string['enabledocumentationdescription'] = 'Está dispoñíbel, para os protocolos activados, unha documentación detallada sobre os servizos web.';
-$string['enablemobilewsoverview'] = 'Vaia á páxina de administración {$a->manageservicelink}, escolla a configuración «{$a->enablemobileservice}» e gárdea. Configurarase todo para vostede e todos os usuarios do sitio poderán empregar a App oficial de Moodle. Estado actual: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Activar os protocolos';
 $string['enableprotocolsdescription'] = 'Ten que estar activado, cando menos, un protocolo. Por razóns de seguridade, os protocolos que se van a utilizar deben estar activados.';
 $string['enablews'] = 'Activar os servizos web';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'Falta o contrasinal';
 $string['missingrequiredcapability'] = 'É requisito ter o permiso {$a}.';
 $string['missingusername'] = 'Falta o nome de usuario';
 $string['missingversionfile'] = 'Hai un erro de programación: falta o ficheiro «version.php» para o compoñente {$a}';
-$string['mobilewsdisabled'] = 'Desactivado';
-$string['mobilewsenabled'] = 'Activado';
 $string['nameexists'] = 'Este nome xa está a ser usado por outro servizo';
 $string['nocapabilitytouseparameter'] = 'O usuario non ten os permisos necesarios para utilizar o parámetro {$a}';
 $string['nofunctions'] = 'Este servizo non ten funcións.';

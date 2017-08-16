@@ -131,6 +131,7 @@ class core_user_external extends external_api {
         global $CFG, $DB;
         require_once($CFG->dirroot."/lib/weblib.php");
         require_once($CFG->dirroot."/user/lib.php");
+        require_once($CFG->dirroot."/user/editlib.php");
         require_once($CFG->dirroot."/user/profile/lib.php"); // Required for customfields related function.
 
         // Ensure the current user is allowed to run this function.
@@ -217,8 +218,8 @@ class core_user_external extends external_api {
                 profile_save_data((object) $user);
             }
 
-            $userobject = (object)$user;
             if ($createpassword) {
+                $userobject = (object)$user;
                 setnew_password_and_mail($userobject);
                 unset_user_preference('create_password', $userobject);
                 set_user_preference('auth_forcepasswordchange', 1, $userobject);
@@ -229,9 +230,11 @@ class core_user_external extends external_api {
 
             // Preferences.
             if (!empty($user['preferences'])) {
+                $userpref = (object)$user;
                 foreach ($user['preferences'] as $preference) {
-                    self::set_user_preference($preference['type'], $preference['value'], $userobject);
+                    $userpref->{'preference_'.$preference['type']} = $preference['value'];
                 }
+                useredit_update_user_preference($userpref);
             }
 
             $userids[] = array('id' => $user['id'], 'username' => $user['username']);
@@ -322,6 +325,97 @@ class core_user_external extends external_api {
         return null;
     }
 
+    /**
+     * Returns description of method parameters.
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function update_user_preferences_parameters() {
+        return new external_function_parameters(
+            array(
+                'userid' => new external_value(PARAM_INT, 'id of the user, default to current user', VALUE_DEFAULT, 0),
+                'emailstop' => new external_value(core_user::get_property_type('emailstop'),
+                    'Enable or disable notifications for this user', VALUE_DEFAULT, null),
+                'preferences' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'type'  => new external_value(PARAM_ALPHANUMEXT, 'The name of the preference'),
+                            'value' => new external_value(PARAM_RAW, 'The value of the preference')
+                        )
+                    ), 'User preferences', VALUE_DEFAULT, array()
+                )
+            )
+        );
+    }
+
+    /**
+     * Update the user's preferences.
+     *
+     * @param int $userid
+     * @param bool|null $emailstop
+     * @param array $preferences
+     * @return null
+     * @since Moodle 3.2
+     */
+    public static function update_user_preferences($userid, $emailstop = null, $preferences = array()) {
+        global $USER, $CFG;
+
+        require_once($CFG->dirroot . '/user/lib.php');
+        require_once($CFG->dirroot . '/user/editlib.php');
+        require_once($CFG->dirroot . '/message/lib.php');
+
+        if (empty($userid)) {
+            $userid = $USER->id;
+        }
+
+        $systemcontext = context_system::instance();
+        self::validate_context($systemcontext);
+        $params = array(
+            'userid' => $userid,
+            'emailstop' => $emailstop,
+            'preferences' => $preferences
+        );
+        self::validate_parameters(self::update_user_preferences_parameters(), $params);
+
+        // Preferences.
+        if (!empty($preferences)) {
+            $userpref = ['id' => $userid];
+            foreach ($preferences as $preference) {
+                $userpref['preference_' . $preference['type']] = $preference['value'];
+            }
+            useredit_update_user_preference($userpref);
+        }
+
+        // Check if they want to update the email.
+        if ($emailstop !== null) {
+            $otheruser = ($userid == $USER->id) ? $USER : core_user::get_user($userid, '*', MUST_EXIST);
+            core_user::require_active_user($otheruser);
+            if (core_message_can_edit_message_profile($otheruser) && $otheruser->emailstop != $emailstop) {
+                $user = new stdClass();
+                $user->id = $userid;
+                $user->emailstop = $emailstop;
+                user_update_user($user);
+
+                // Update the $USER if we should.
+                if ($userid == $USER->id) {
+                    $USER->emailstop = $emailstop;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return null
+     * @since Moodle 3.2
+     */
+    public static function update_user_preferences_returns() {
+        return null;
+    }
 
     /**
      * Returns description of method parameters
@@ -354,6 +448,8 @@ class core_user_external extends external_api {
                             'auth' =>
                                 new external_value(core_user::get_property_type('auth'), 'Auth plugins include manual, ldap, imap, etc', VALUE_OPTIONAL, '',
                                     NULL_NOT_ALLOWED),
+                            'suspended' =>
+                                new external_value(core_user::get_property_type('suspended'), 'Suspend user account, either false to enable user login or true to disable it', VALUE_OPTIONAL),
                             'idnumber' =>
                                 new external_value(core_user::get_property_type('idnumber'), 'An arbitrary ID code number perhaps from the institution',
                                     VALUE_OPTIONAL),
@@ -386,6 +482,9 @@ class core_user_external extends external_api {
                                 new external_value(core_user::get_property_type('middlename'), 'The middle name of the user', VALUE_OPTIONAL),
                             'alternatename' =>
                                 new external_value(core_user::get_property_type('alternatename'), 'The alternate name of the user', VALUE_OPTIONAL),
+                            'userpicture' =>
+                                new external_value(PARAM_INT, 'The itemid where the new user picture '.
+                                    'has been uploaded to, 0 to delete', VALUE_OPTIONAL),
                             'customfields' => new external_multiple_structure(
                                 new external_single_structure(
                                     array(
@@ -418,6 +517,7 @@ class core_user_external extends external_api {
         global $CFG, $DB, $USER;
         require_once($CFG->dirroot."/user/lib.php");
         require_once($CFG->dirroot."/user/profile/lib.php"); // Required for customfields related function.
+        require_once($CFG->dirroot.'/user/editlib.php');
 
         // Ensure the current user is allowed to run this function.
         $context = context_system::instance();
@@ -425,6 +525,11 @@ class core_user_external extends external_api {
         self::validate_context($context);
 
         $params = self::validate_parameters(self::update_users_parameters(), array('users' => $users));
+
+        $filemanageroptions = array('maxbytes' => $CFG->maxbytes,
+                'subdirs'        => 0,
+                'maxfiles'       => 1,
+                'accepted_types' => 'web_image');
 
         $transaction = $DB->start_delegated_transaction();
 
@@ -442,6 +547,22 @@ class core_user_external extends external_api {
                 continue;
             }
             user_update_user($user, true, false);
+
+            // Update user picture if it was specified for this user.
+            if (empty($CFG->disableuserimages) && isset($user['userpicture'])) {
+                $userobject = (object)$user;
+
+                $userobject->deletepicture = null;
+
+                if ($user['userpicture'] == 0) {
+                    $userobject->deletepicture = true;
+                } else {
+                    $userobject->imagefile = $user['userpicture'];
+                }
+
+                core_user::update_picture($userobject, $filemanageroptions);
+            }
+
             // Update user custom fields.
             if (!empty($user['customfields'])) {
 
@@ -458,9 +579,14 @@ class core_user_external extends external_api {
 
             // Preferences.
             if (!empty($user['preferences'])) {
+                $userpref = clone($existinguser);
                 foreach ($user['preferences'] as $preference) {
-                    self::set_user_preference($preference['type'], $preference['value'], $existinguser);
+                    $userpref->{'preference_'.$preference['type']} = $preference['value'];
                 }
+                useredit_update_user_preference($userpref);
+            }
+            if (isset($user['suspended']) and $user['suspended']) {
+                \core\session\manager::kill_user_sessions($user['id']);
             }
         }
 
@@ -906,6 +1032,7 @@ class core_user_external extends external_api {
             'firstaccess' => new external_value(core_user::get_property_type('firstaccess'), 'first access to the site (0 if never)', VALUE_OPTIONAL),
             'lastaccess'  => new external_value(core_user::get_property_type('lastaccess'), 'last access to the site (0 if never)', VALUE_OPTIONAL),
             'auth'        => new external_value(core_user::get_property_type('auth'), 'Auth plugins include manual, ldap, imap, etc', VALUE_OPTIONAL),
+            'suspended'   => new external_value(core_user::get_property_type('suspended'), 'Suspend user account, either false to enable user login or true to disable it', VALUE_OPTIONAL),
             'confirmed'   => new external_value(core_user::get_property_type('confirmed'), 'Active user: 1 if confirmed, 0 otherwise', VALUE_OPTIONAL),
             'lang'        => new external_value(core_user::get_property_type('lang'), 'Language code such as "en", must exist on server', VALUE_OPTIONAL),
             'calendartype' => new external_value(core_user::get_property_type('calendartype'), 'Calendar type such as "gregorian", must exist on server', VALUE_OPTIONAL),
@@ -1352,32 +1479,386 @@ class core_user_external extends external_api {
     }
 
     /**
-     * Validates preference value and updates the user preference
+     * Returns description of method parameters
      *
-     * @param string $name
-     * @param string $value
-     * @param stdClass $user
+     * @return external_function_parameters
+     * @since Moodle 3.2
      */
-    protected static function set_user_preference($name, $value, $user) {
-        $preferences = array(
-            'auth_forcepasswordchange' => PARAM_BOOL,
-            'htmleditor' => PARAM_COMPONENT,
-            'usemodchooser' => PARAM_BOOL,
-            'badgeprivacysetting' => PARAM_BOOL,
-            'blogpagesize' => PARAM_INT,
-            'forum_markasreadonnotification' => PARAM_INT,
-            'calendar_timeformat' => PARAM_NOTAGS,
-            'calendar_startwday' => PARAM_INT,
-            'calendar_maxevents' => PARAM_INT,
-            'calendar_lookahead' => PARAM_INT,
-            'calendar_persistflt' => PARAM_INT
+    public static function get_user_preferences_parameters() {
+        return new external_function_parameters(
+            array(
+                'name' => new external_value(PARAM_RAW, 'preference name, empty for all', VALUE_DEFAULT, ''),
+                'userid' => new external_value(PARAM_INT, 'id of the user, default to current user', VALUE_DEFAULT, 0)
+            )
         );
-        if (isset($preferences[$name])) {
-            $value = clean_param($value, $preferences[$name]);
-            if ($preferences[$name] == PARAM_BOOL) {
-                $value = (int)$value;
-            }
-            set_user_preference($name, $value, $user);
+    }
+
+    /**
+     * Return user preferences.
+     *
+     * @param string $name preference name, empty for all
+     * @param int $userid id of the user, 0 for current user
+     * @return array of warnings and preferences
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function get_user_preferences($name = '', $userid = 0) {
+        global $USER;
+
+        $params = self::validate_parameters(self::get_user_preferences_parameters(),
+                                            array(
+                                                'name' => $name,
+                                                'userid' => $userid
+                                            ));
+        $preferences = array();
+        $warnings = array();
+
+        $context = context_system::instance();
+        self::validate_context($context);
+
+        if (empty($params['name'])) {
+            $name = null;
         }
+        if (empty($params['userid'])) {
+            $user = null;
+        } else {
+            $user = core_user::get_user($params['userid'], '*', MUST_EXIST);
+            core_user::require_active_user($user);
+            if ($user->id != $USER->id) {
+                // Only admins can retrieve other users preferences.
+                require_capability('moodle/site:config', $context);
+            }
+        }
+
+        $userpreferences = get_user_preferences($name, null, $user);
+        // Check if we received just one preference.
+        if (!is_array($userpreferences)) {
+            $userpreferences = array($name => $userpreferences);
+        }
+
+        foreach ($userpreferences as $name => $value) {
+            $preferences[] = array(
+                'name' => $name,
+                'value' => $value,
+            );
+        }
+
+        $result = array();
+        $result['preferences'] = $preferences;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function get_user_preferences_returns() {
+        return new external_single_structure(
+            array(
+                'preferences' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'name' => new external_value(PARAM_RAW, 'The name of the preference'),
+                            'value' => new external_value(PARAM_RAW, 'The value of the preference'),
+                        )
+                    ),
+                    'User custom fields (also known as user profile fields)'
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function update_picture_parameters() {
+        return new external_function_parameters(
+            array(
+                'draftitemid' => new external_value(PARAM_INT, 'Id of the user draft file to use as image'),
+                'delete' => new external_value(PARAM_BOOL, 'If we should delete the user picture', VALUE_DEFAULT, false),
+                'userid' => new external_value(PARAM_INT, 'Id of the user, 0 for current user', VALUE_DEFAULT, 0)
+            )
+        );
+    }
+
+    /**
+     * Update or delete the user picture in the site
+     *
+     * @param  int  $draftitemid id of the user draft file to use as image
+     * @param  bool $delete      if we should delete the user picture
+     * @param  int $userid       id of the user, 0 for current user
+     * @return array warnings and success status
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function update_picture($draftitemid, $delete = false, $userid = 0) {
+        global $CFG, $USER, $PAGE;
+
+        $params = self::validate_parameters(
+            self::update_picture_parameters(),
+            array(
+                'draftitemid' => $draftitemid,
+                'delete' => $delete,
+                'userid' => $userid
+            )
+        );
+
+        $context = context_system::instance();
+        self::validate_context($context);
+
+        if (!empty($CFG->disableuserimages)) {
+            throw new moodle_exception('userimagesdisabled', 'admin');
+        }
+
+        if (empty($params['userid']) or $params['userid'] == $USER->id) {
+            $user = $USER;
+            require_capability('moodle/user:editownprofile', $context);
+        } else {
+            $user = core_user::get_user($params['userid'], '*', MUST_EXIST);
+            core_user::require_active_user($user);
+            $personalcontext = context_user::instance($user->id);
+
+            require_capability('moodle/user:editprofile', $personalcontext);
+            if (is_siteadmin($user) and !is_siteadmin($USER)) {  // Only admins may edit other admins.
+                throw new moodle_exception('useradmineditadmin');
+            }
+        }
+
+        // Load the appropriate auth plugin.
+        $userauth = get_auth_plugin($user->auth);
+        if (is_mnet_remote_user($user) or !$userauth->can_edit_profile() or $userauth->edit_profile_url()) {
+            throw new moodle_exception('noprofileedit', 'auth');
+        }
+
+        $filemanageroptions = array('maxbytes' => $CFG->maxbytes, 'subdirs' => 0, 'maxfiles' => 1, 'accepted_types' => 'web_image');
+        $user->deletepicture = $params['delete'];
+        $user->imagefile = $params['draftitemid'];
+        $success = core_user::update_picture($user, $filemanageroptions);
+
+        $result = array(
+            'success' => $success,
+            'warnings' => array(),
+        );
+        if ($success) {
+            $userpicture = new user_picture(core_user::get_user($user->id));
+            $userpicture->size = 1; // Size f1.
+            $result['profileimageurl'] = $userpicture->get_url($PAGE)->out(false);
+        }
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function update_picture_returns() {
+        return new external_single_structure(
+            array(
+                'success' => new external_value(PARAM_BOOL, 'True if the image was updated, false otherwise.'),
+                'profileimageurl' => new external_value(PARAM_URL, 'New profile user image url', VALUE_OPTIONAL),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function set_user_preferences_parameters() {
+        return new external_function_parameters(
+            array(
+                'preferences' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'name' => new external_value(PARAM_RAW, 'The name of the preference'),
+                            'value' => new external_value(PARAM_RAW, 'The value of the preference'),
+                            'userid' => new external_value(PARAM_INT, 'Id of the user to set the preference'),
+                        )
+                    )
+                )
+            )
+        );
+    }
+
+    /**
+     * Set user preferences.
+     *
+     * @param array $preferences list of preferences including name, value and userid
+     * @return array of warnings and preferences saved
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function set_user_preferences($preferences) {
+        global $USER;
+
+        $params = self::validate_parameters(self::set_user_preferences_parameters(), array('preferences' => $preferences));
+        $warnings = array();
+        $saved = array();
+
+        $context = context_system::instance();
+        self::validate_context($context);
+
+        $userscache = array();
+        foreach ($params['preferences'] as $pref) {
+            // Check to which user set the preference.
+            if (!empty($userscache[$pref['userid']])) {
+                $user = $userscache[$pref['userid']];
+            } else {
+                try {
+                    $user = core_user::get_user($pref['userid'], '*', MUST_EXIST);
+                    core_user::require_active_user($user);
+                    $userscache[$pref['userid']] = $user;
+                } catch (Exception $e) {
+                    $warnings[] = array(
+                        'item' => 'user',
+                        'itemid' => $pref['userid'],
+                        'warningcode' => 'invaliduser',
+                        'message' => $e->getMessage()
+                    );
+                    continue;
+                }
+            }
+
+            try {
+                if (core_user::can_edit_preference($pref['name'], $user)) {
+                    $value = core_user::clean_preference($pref['value'], $pref['name']);
+                    set_user_preference($pref['name'], $value, $user->id);
+                    $saved[] = array(
+                        'name' => $pref['name'],
+                        'userid' => $user->id,
+                    );
+                } else {
+                    $warnings[] = array(
+                        'item' => 'user',
+                        'itemid' => $user->id,
+                        'warningcode' => 'nopermission',
+                        'message' => 'You are not allowed to change the preference '.s($pref['name']).' for user '.$user->id
+                    );
+                }
+            } catch (Exception $e) {
+                $warnings[] = array(
+                    'item' => 'user',
+                    'itemid' => $user->id,
+                    'warningcode' => 'errorsavingpreference',
+                    'message' => $e->getMessage()
+                );
+            }
+        }
+
+        $result = array();
+        $result['saved'] = $saved;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function set_user_preferences_returns() {
+        return new external_single_structure(
+            array(
+                'saved' => new external_multiple_structure(
+                    new external_single_structure(
+                        array(
+                            'name' => new external_value(PARAM_RAW, 'The name of the preference'),
+                            'userid' => new external_value(PARAM_INT, 'The user the preference was set for'),
+                        )
+                    ), 'Preferences saved'
+                ),
+                'warnings' => new external_warnings()
+            )
+        );
+    }
+
+    /**
+     * Returns description of method parameters.
+     *
+     * @return external_function_parameters
+     * @since Moodle 3.2
+     */
+    public static function agree_site_policy_parameters() {
+        return new external_function_parameters(array());
+    }
+
+    /**
+     * Agree the site policy for the current user.
+     *
+     * @return array of warnings and status result
+     * @since Moodle 3.2
+     * @throws moodle_exception
+     */
+    public static function agree_site_policy() {
+        global $CFG, $DB, $USER;
+
+        $warnings = array();
+
+        $context = context_system::instance();
+        try {
+            // We expect an exception here since the user didn't agree the site policy yet.
+            self::validate_context($context);
+        } catch (Exception $e) {
+            // We are expecting only a sitepolicynotagreed exception.
+            if (!($e instanceof moodle_exception) or $e->errorcode != 'sitepolicynotagreed') {
+                // In case we receive a different exception, throw it.
+                throw $e;
+            }
+        }
+
+        if (empty($CFG->sitepolicy)) {
+            $status = false;
+            $warnings[] = array(
+                'item' => 'user',
+                'itemid' => $USER->id,
+                'warningcode' => 'nositepolicy',
+                'message' => 'The site does not have a site policy configured.'
+            );
+        } else if (!empty($USER->policyagreed)) {
+            $status = false;
+            $warnings[] = array(
+                'item' => 'user',
+                'itemid' => $USER->id,
+                'warningcode' => 'alreadyagreed',
+                'message' => 'The user already agreed the site policy.'
+            );
+        } else {
+            $DB->set_field('user', 'policyagreed', 1, array('id' => $USER->id));
+            $USER->policyagreed = 1;
+            $status = true;
+        }
+
+        $result = array();
+        $result['status'] = $status;
+        $result['warnings'] = $warnings;
+        return $result;
+    }
+
+    /**
+     * Returns description of method result value.
+     *
+     * @return external_description
+     * @since Moodle 3.2
+     */
+    public static function agree_site_policy_returns() {
+        return new external_single_structure(
+            array(
+                'status' => new external_value(PARAM_BOOL, 'Status: true only if we set the policyagreed to 1 for the user'),
+                'warnings' => new external_warnings()
+            )
+        );
     }
 }

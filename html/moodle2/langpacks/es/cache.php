@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,9 +107,6 @@ $string['lockdefault'] = 'Por defecto';
 $string['locking'] = 'Bloqueando';
 $string['locking_help'] = 'El bloqueo es un mecanismo que restringe el acceso a datos en caché a un proceso a la vez, previene que los datos se
 sobrescriban. El método de bloqueo determina cómo el bloqueo es adquirido y comprobado.';
-$string['lockingmeans'] = 'Mecanismo de bloqueo';
-$string['lockmethod'] = 'Método de bloqueo';
-$string['lockmethod_help'] = 'Este es el método usado para bloquear cuando se requiera para este almacén.';
 $string['lockname'] = 'Nombre';
 $string['locknamedesc'] = 'El nombre debe ser único y sólo puede contener caracteres: a-z_A-Z';
 $string['locknamenotunique'] = 'El nombre elegido no es único. Elija un nombre diferente, por favor.';

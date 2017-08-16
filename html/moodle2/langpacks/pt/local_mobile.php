@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,13 +54,6 @@ $string['forcelogout'] = 'Forçar término da sessão';
 $string['forcelogout_desc'] = 'Se ativar esta escolha, a opção da aplicação \'Alterar site\' é substituída por \'Terminar sessão\'. Isto resulta que o utilizador fique completamente desligado. É necessário voltar a inserir a sua senha na próxima vez que pretenderem aceder ao site.';
 $string['local_mobiledescription'] = 'Módulo que prolonga as funcionalidades do serviço Mobile';
 $string['local_mobilesettings'] = 'Configurações';
-$string['local_mobiletypeoflogin'] = 'Selecione o tipo de autenticação';
-$string['local_mobiletypeoflogin_key'] = 'Tipo de autenticação';
-$string['local_mobileurlscheme'] = 'Utilize esta configuração para forçar o esquema de endereço URL para autenticação através de uma janela do navegador. Na maioria dos casos deve deixar esta configuração vazia.';
-$string['local_mobileurlscheme_key'] = 'Esquema de endereço URL';
-$string['loginintheapp'] = 'Através da aplicação móvel';
-$string['logininthebrowser'] = 'Através de uma janela do navegador (para módulos SSO)';
-$string['loginintheinappbrowser'] = 'Através de um navegador incorporado (para módulos SSO)';
 $string['mainmenu'] = 'Menu principal';
 $string['mobilefeatures'] = 'Funcionalidades Mobile';
 $string['pluginname'] = 'Funcionalidades adicionais do Moodle Mobile';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Numero di valutazioni più alte (0 per disabilita
 $string['config_show_worst'] = 'Numero di valutazioni più basse (0 per disabilitare)';
 $string['configuredtoshownothing'] = 'La configurazione impostata non consente la visualizzazione di nessun risultato.';
 $string['config_use_groups'] = 'Visualizza i gruppi al posto degli studenti (solo se l\'attività supporta i gruppi)';
+$string['defaultdecimalplaces'] = 'Cifre decimali';
+$string['defaultdecimalplaces_desc'] = 'Numero di cifre decimale visualizzati per default';
+$string['defaultgradedisplay'] = 'Visualizza valutazioni come';
+$string['defaultgradedisplay_desc'] = 'Visualizzazione di default delle valutazioni';
+$string['defaulthighestgrades'] = 'Numero di valutazioni più alte visualizzate per default';
+$string['defaulthighestgrades_desc'] = 'Imposta il numero di valutazioni più alte visualizzate per default';
+$string['defaultlowestgrades'] = 'Numero di valutazioni più basse visualizzate per default';
+$string['defaultlowestgrades_desc'] = 'Imposta il numero di valutazioni più basse visualizzate per default';
+$string['defaultnameoptions'] = 'Privacy dei risultati';
+$string['defaultnameoptions_desc'] = 'La modalità tramite la quale gli studenti saranno identificati.';
+$string['defaultshowgroups'] = 'Visualizza gruppi per default';
+$string['defaultshowgroups_desc'] = 'Per default saranno visualizzati gruppi al posto degli studenti (solo se l\'attività supporta i gruppi)';
 $string['error_emptyactivityid'] = 'Per favore configura il blocco selezionando l\'attività dalla quale saranno tratti i risultati da visualizzare.';
 $string['error_emptyactivityrecord'] = 'Errore: l\'attività selezionata non esiste nel databse';
 $string['error_nogroupsexist'] = 'Errore: il blocco è configurato per visualizzare i gruppi ma non ci sono gruppi.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['dnduploadlabel'] = 'Gehitu media ikastaroaren orrira';
 $string['dnduploadlabeltext'] = 'Gehitu etiketa ikastaroaren orrira';
 $string['label:addinstance'] = 'Gehitu beste etiketa bat';
 $string['labeltext'] = 'Etiketaren testua';
+$string['label:view'] = 'Ikusi etiketa';
 $string['modulename'] = 'Etiketa';
 $string['modulename_help'] = 'Etiketa baten bidez testu eta irudiak txerta daitezke ikastaroaren hasiera-orriko jarduera eta baliabideen esteken artean. Etiketek erabilera anitzak dituzte, eta era egokian erabiliz gero ikastaroaren itxura hobetzen lagun dezakete.
 

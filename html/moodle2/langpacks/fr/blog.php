@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'Cet article n\'est pas vôtre';
 $string['entrysaved'] = 'L\'article a été enregistré';
 $string['entrytitle'] = 'Titre de l\'article';
 $string['eventblogassociationadded'] = 'Association de blog créée';
+$string['eventblogassociationdeleted'] = 'Association de blog supprimée';
 $string['eventblogentriesviewed'] = 'Articles de blog consultés';
+$string['eventblogexternaladded'] = 'Blog externe enregistré';
+$string['eventblogexternalremoved'] = 'Blog externe désenregistré';
+$string['eventblogexternalupdated'] = 'Blog externe mis à jour';
 $string['evententryadded'] = 'Article de blog ajouté';
 $string['evententrydeleted'] = 'Article de blog supprimé';
 $string['evententryupdated'] = 'Article de blog modifié';
+$string['eventexternalblogsviewed'] = 'Blog externe enregistré consulté';
 $string['externalblogcrontime'] = 'Planification du cron de blog externe';
 $string['externalblogdeleteconfirm'] = 'Désinscrire ce blog externe ?';
 $string['externalblogdeleted'] = 'Blog externe désinscrit';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = 'Importé depuis';
 $string['rssfeed'] = 'Flux RSS de blog';
 $string['searchterm'] = 'Recherche : {$a}';
 $string['settingsupdatederror'] = 'Une erreur est survenue. Les préférences de blog n\'ont pas été enregistrées';
-$string['siteblog'] = 'Blog de site : {$a}';
 $string['siteblogdisable'] = 'Le blog du site n\'est pas activé';
 $string['siteblogheading'] = 'Blog du site';
 $string['siteblogs'] = 'Tous les utilisateurs du site peuvent voir les articles de tous les blogs';
@@ -187,4 +191,5 @@ $string['viewmyentriesaboutmodule'] = 'Voir mes articles sur {$a}';
 $string['viewsiteentries'] = 'Afficher tous les articles';
 $string['viewuserentries'] = 'Afficher tous les articles de {$a}';
 $string['worldblogs'] = 'Le grand public peut lire les articles de blog marqués comme accessibles à tout le monde';
+$string['wrongexternalid'] = 'Id de blog externe erroné';
 $string['wrongpostid'] = 'Identifiant de l\'article de blog incorrect';

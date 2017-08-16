@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_spamcleaner', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_spamcleaner
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Καθαριστής μαζικών ενοχλητικών μηνυμάτων';
 $string['spamauto'] = 'Αυτόματος εντοπισμός των συνηθισμένων πρότυπων μαζικών ενοχλητικών μηνυμάτων';
-$string['spamcannotdelete'] = 'Δεν είναι δυνατόν να διαγραφεί αυτός ο χρήστης';
+$string['spamcannotdelete'] = 'Αδυναμία διαγραφής χρήστη';
 $string['spamcannotfinduser'] = 'Δεν υπάρχουν χρήστες που ταιριάζουν με την αναζήτηση που κάνατε';
 $string['spamcleanerintro'] = 'Αυτό το σενάριο σας επιτρέπει να αναζητήσετε όλα τα προφίλ των χρηστών για συγκεκριμένα αλφαριθμητικά και έπειτα να σβήσετε τους λογαριασμούς που έχουν προφανώς δημιουργηθεί από κακόβουλους χρήστες. Μπορείτε να κάνετε αναζήτηση με πολλαπλές λέξεις κλειδιά χρησιμοποιώντας κόμμα (π.χ καζίνο, πορνό)<br /><br />Η τεκμηρίωση του Moodle έχει περισσότερες πληροφορίες σχετικά με την <a href="http://docs.moodle.org/en/Reducing_spam_in_Moodle">Μείωση των μαζικών ενοχλητικών μηνυμάτων στο Moodle</a>.';
 $string['spamdeleteall'] = 'Διαγραφή όλων αυτών των λογαριασμών χρηστών';

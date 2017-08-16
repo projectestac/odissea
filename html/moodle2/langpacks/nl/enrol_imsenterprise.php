@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,10 @@ $string['allowunenrol_desc'] = '<p>Met de Enterprise data kun je zowel aanmeldin
 
 <ul><li>Een &lt;member&gt; element dat een &lt;timeframe&gt; specifieëert voor de aanmelding kan begin- en/of einddata krijgen voor de aanmelding van deze leerling Deze data worden geladen in de enrolment data tabel van Moodle als die geïnstalleerd is, en zo zal een leerling na de einddatum niet langer een bepaalde cursus kunnen gebruiken.</li></ul>';
 $string['basicsettings'] = 'Basisinstellingen';
+$string['categoryidnumber'] = 'Categorie ID-nummer toestaan';
+$string['categoryidnumber_desc'] = 'Indien ingeschakeld zal IMS Enterprice een categorie maken met een ID-nummer';
+$string['categoryseparator'] = 'Teken voor categoriescheiding';
+$string['categoryseparator_desc'] = 'Vereist wanneer "categorienummer" ingeschakeld is. een teken om de categorienaam en het ID-nummer van elkaar te scheiden';
 $string['coursesettings'] = 'Data opties van de cursus';
 $string['createnewcategories'] = 'Maak nieuwe (verborgen) cursuscategorieën indien niet gevonden in Moodle';
 $string['createnewcategories_desc'] = '<p>Als het &lt;org&gt;&lt;orgunit&gt; element in de binnenkomende gegevens van een cursus zit, dan zal de inhoud daarvan gebruikt worden om een categorie te kiezen (als een cursus volledig van scratch opgebouwd wordt).</p>
@@ -80,6 +84,8 @@ $string['mailadmins'] = 'Waarschuw beheerder via e-mail';
 $string['mailusers'] = 'Waarschuw gebruikers via e-mail';
 $string['messageprovider:imsenterprise_enrolment'] = 'Aanmeldingsberichten IMS-Enterprise';
 $string['miscsettings'] = 'Diverse';
+$string['nestedcategories'] = 'Geneste categorieën toestaan';
+$string['nestedcategories_desc'] = 'Indien ingeschakeld zal IMS Enterprice geneste categorieën maken';
 $string['pluginname'] = 'IMS Enterprise bestand';
 $string['pluginname_desc'] = 'Via deze aanmeldingswijze zal er herhaaldelijk gezocht worden naar een speciaal opgemaakt tekstbestand op de plaats die je hier opgeeft. Het bestand moet voldoen aan de IMS Enterprise specificaties en moet personen, groep en lidmaadschap XML-elementen bevatten.';
 $string['processphoto'] = 'Voeg een gebruikersfoto toe aan het profiel';
@@ -103,6 +109,10 @@ $string['sourcedidfallback_desc'] = 'IN IMS-gegevens stelt het veld  <sourcedid>
 Sommige leerlinginformatiesystemen kunnen geen veld <userid> leveren. Als dit het geval is, dan moet je deze instelling inschakelen om het veld <sourcedid> te gebruiken als Moodle gebruikersnaam. Als dit niet nodig is, schakel deze instelling dan niet in.';
 $string['truncatecoursecodes'] = 'Verkort cursuscodes tot deze lengte';
 $string['truncatecoursecodes_desc'] = '<p>In sommige situaties wil je misschien de cursuscodes afkorten tot een bepaalde lengte voor je ze verwerkt. Indien je dat wil, geeft je hier het aantal karakters op. Anders laat je dit tekstvak leeg en zal er niet afgekort worden.</p>';
+$string['updatecourses'] = 'Cursussen aanpassen';
+$string['updatecourses_desc'] = 'Indien ingeschakeld kan de IMS Enterprise aanmeldingsplugin de korte naam en de volledige naam van een cursus aanpassen (als de "recstatus"-vlag op 2 gezet is, wat staat voor een update).';
+$string['updateusers'] = 'Gebruikersaccounts met specifieke IMS-gegevens aanpassen';
+$string['updateusers_desc'] = 'Indien ingeschakeld kan IMS aanmeldgegevens wijzigingen uitvoeren aan gebruikersaccounts (als de "recstatus"-vlag op 2 gezet is, wat staat voor een update).';
 $string['usecapitafix'] = 'Zet hier een vinkje als je using "Capita" gebruikt (hun XML-formaat wijkt een klein beetje af)';
 $string['usecapitafix_desc'] = '<p>Het leerlinggegevenssysteem door Capita gemaakt, heeft een kleine fout in zijn XML output. Als je Capita gebruikt, zou je deze optie moeten activeren - anders plaats je geen vinkje.</p>';
 $string['usersettings'] = 'Opties voor gebruikersgegevens';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -140,6 +140,8 @@ $string['type_gradingform'] = 'Método de avaliação avançada';
 $string['type_gradingform_plural'] = 'Métodos de avaliação avançada';
 $string['type_local'] = 'Módulo local';
 $string['type_local_plural'] = 'Módulos locais';
+$string['type_media'] = 'Leitor de Media';
+$string['type_media_plural'] = 'Leitores de Media';
 $string['type_message'] = 'Destino de mensagens';
 $string['type_message_plural'] = 'Destinos de mensagens';
 $string['type_mnetservice'] = 'MNet service';
@@ -202,7 +204,7 @@ $string['validationmsglevel_error'] = 'Erro';
 $string['validationmsglevel_info'] = 'OK';
 $string['validationmsglevel_warning'] = 'Aviso';
 $string['validationmsg_maturity'] = 'Nível de maturidade declarado';
-$string['validationmsg_maturity_help'] = 'O módulo pode declarar o seu nível de maturidade. Se o responsável pela manutenção considerar o módulo estável, o nível de maturidade declarado irá ler MATURIDADE_ESTÁVEL. Todos os outros níveis de maturidade (tais como alfa ou beta) devem ser considerados instáveis e é gerado um aviso.';
+$string['validationmsg_maturity_help'] = 'O módulo pode declarar o seu nível de maturidade. Se o responsável pela manutenção do módulo o considerar estável, o nível de maturidade declarado será MATURIDADE_ESTÁVEL. Todos os outros níveis de maturidade (tais como alfa ou beta) devem ser considerados instáveis e é gerado um aviso.';
 $string['validationmsg_missingcomponent'] = 'O módulo não indica o seu nome de componente';
 $string['validationmsg_missingcomponent_help'] = 'Todos os módulos devem indicar o seu nome de componente completo através da string `$plugin->component`no ficheiro version.php.';
 $string['validationmsg_missingexpectedlangenfile'] = 'Incompatibilidade de nome do ficheiro de idioma em inglês';

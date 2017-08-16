@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'question', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,10 +85,10 @@ $string['changepublishstatuscat'] = '<a href="{$a->caturl}">A categoría "{$a->n
 $string['check'] = 'Comprobar';
 $string['chooseqtypetoadd'] = 'Escolla o tipo de pregunta que engadir';
 $string['clearwrongparts'] = 'Despexar respostas incorrectas';
-$string['clickflag'] = 'Indicar a pregunta';
-$string['clicktoflag'] = 'Indicar esta pregunta para referencia futura';
-$string['clicktounflag'] = 'Retirar o indicador';
-$string['clickunflag'] = 'Retirar o indicador';
+$string['clickflag'] = 'Marcar a pregunta';
+$string['clicktoflag'] = 'Marcar esta pregunta para referencia futura';
+$string['clicktounflag'] = 'Retirar o marcador';
+$string['clickunflag'] = 'Retirar o marcador';
 $string['closepreview'] = 'Pechar a previsualización';
 $string['combinedfeedback'] = 'Comentario combinado';
 $string['comment'] = 'Comentario';
@@ -99,7 +99,7 @@ $string['commentx'] = 'Comentar: {$a}';
 $string['complete'] = 'Completa';
 $string['contexterror'] = 'Non debería ter chegado aquí se non estivese movendo unha categoría a outro contexto.';
 $string['copy'] = 'Copia de {$a} e cambiar ligazóns.';
-$string['correct'] = 'Corrixir';
+$string['correct'] = 'Correcta';
 $string['correctfeedback'] = 'Cada resposta correcta';
 $string['correctfeedbackdefault'] = 'A súa resposta é correcta.';
 $string['created'] = 'Creada';
@@ -123,7 +123,7 @@ $string['cwrqpfsnoprob'] = 'Non hai categorías de preguntas afectadas no seu si
 $string['decimalplacesingrades'] = 'Posicións decimais nas táboas';
 $string['defaultfor'] = 'Predeterminado/a para: {$a}';
 $string['defaultinfofor'] = 'A categoría predeterminada para preguntas compartidas no contexto \'{$a}\'.';
-$string['defaultmark'] = 'Marca predeterminada';
+$string['defaultmark'] = 'Puntuación predeterminada';
 $string['defaultmarkmustbepositive'] = 'A puntuación predeterminada debe ser positiva.';
 $string['deletecoursecategorywithquestions'] = 'Hai preguntas no banco de preguntas asociadas con esta categoría de curso. De proseguir, eliminaranse. Pode querer movelas primeiro, usando a interface do banco de preguntas.';
 $string['deletequestioncheck'] = 'Confirma definitivamente que quere eliminar \'{$a}\'?';
@@ -150,7 +150,7 @@ $string['editcategories_link'] = 'pregunta/categoría';
 $string['editcategory'] = 'Editar categoría';
 $string['editingcategory'] = 'Edición dunha categoría';
 $string['editingquestion'] = 'Edición dunha pregunta';
-$string['editquestion'] = 'Edición dunha pregunta';
+$string['editquestion'] = 'Editar a pregunta';
 $string['editquestions'] = 'Edición de preguntas';
 $string['editthiscategory'] = 'Editar esta categoría';
 $string['emptyxml'] = 'Erro descoñecido - imsmanifest.xml está baleiro';
@@ -172,7 +172,7 @@ $string['errorpreprocess'] = 'Produciuse un erro durante o pre-procesamento!';
 $string['errorprocess'] = 'Produciuse un erro durante o procesamento!';
 $string['errorprocessingresponses'] = 'Produciuse un erro ao procesar as súas respostas ({$a}). Prema en continuar para volver á páxina onde estivo e intentalo outra vez.';
 $string['errorsavingcomment'] = 'Produciuse un erro ao gardar o comentario da pregunta {$a->name} na base de datos.';
-$string['errorsavingflags'] = 'Produciuse un erro ao gardar o indicador de estado';
+$string['errorsavingflags'] = 'Produciuse un erro ao gardar o marcador de estado';
 $string['errorupdatingattempt'] = 'Produciuse un erro ao actualizar o intento {$a->id} na base de datos.';
 $string['eventquestioncategorycreated'] = 'Creouse a categoría de pregunta';
 $string['export'] = 'Exportar';
@@ -195,8 +195,8 @@ $string['filesareasite'] = 'a área de ficheiros do sitio';
 $string['filestomove'] = 'Mover / copiar ficheiros a {$a}?';
 $string['fillincorrect'] = 'Cubrir nas respostas correctas';
 $string['firsttry'] = 'primeiro intento';
-$string['flagged'] = 'Indicado';
-$string['flagthisquestion'] = 'Indicar esta pregunta';
+$string['flagged'] = 'Marcado';
+$string['flagthisquestion'] = 'Marcar esta pregunta';
 $string['formquestionnotinids'] = 'Formulario contido en pregunta que non está nos id de preguntas';
 $string['fractionsnomax'] = 'Unha das respostas debería de ter unha puntuación de 100% de modo que sexa posíbel obter puntuacións completas nesta pregunta.';
 $string['generalfeedback'] = 'Comentarios xerais';
@@ -211,7 +211,7 @@ $string['hinttext'] = 'Aviso de texto';
 $string['howquestionsbehave'] = 'Como se comportan as preguntas';
 $string['howquestionsbehave_help'] = 'Os alumnos poden interactuar coas preguntas na proba de varias maneira diferentes. Por exemplo, pode querer que os alumnos introduzan unha resposta para cadansúa pregunta e logo entregar a proba enteira, antes de que cualificar nada ou de que eles teñan comentarios. Iso poderiamos chamalo modo de «Comentario diferido».
 
-Alternativamente, pode querer que os alumnos entreguen cada pregunta así como vaian avanzando para obter comentarios inmediatos e se non o conseguen facer correctamente, que teñan outro intento cunha puntuación menor. Iso poderiamos chamalo modo «Interactivo con múltiplos intentos».
+Alternativamente, pode querer que os alumnos entreguen cada pregunta así como vaian avanzando para obter comentarios inmediatos e se non o conseguen facer correctamente, que teñan outro intento cunha puntuación menor. Iso poderiamos chamalo modo «Interactivo con múltiples intentos».
 
 Eses son probabelmente os dous modos máis comúns de comportamento usados.';
 $string['howquestionsbehave_link'] = 'Comportamento das preguntas';
@@ -258,7 +258,7 @@ $string['manuallygraded'] = 'Cualificado manualmente {$a->mark} co comentario: {
 $string['mark'] = 'Puntuación';
 $string['markedoutof'] = 'Puntuado fóra de';
 $string['markedoutofmax'] = 'Puntuado fóra de {$a}';
-$string['markoutofmax'] = 'Puntuar {$a->mark} fóra de {$a->max}';
+$string['markoutofmax'] = 'Puntuación: {$a->mark} sobre {$a->max}';
 $string['marks'] = 'Puntuacións';
 $string['matchgrades'] = 'Coincidir cualificacións';
 $string['matchgradeserror'] = 'Prodúcese un erro se a cualificación non está listada';
@@ -298,7 +298,7 @@ $string['notchanged'] = 'Sen cambios desde o último intento';
 $string['notenoughanswers'] = 'Este tipo de pregunta require cando menos {$a} respostas';
 $string['notenoughdatatoeditaquestion'] = 'Non se especificou nin un id de pregunta, nin un id de categoría nin tipo de pregunta.';
 $string['notenoughdatatomovequestions'] = 'É necesario que forneza os id da pregunta ou preguntas que queira mover.';
-$string['notflagged'] = 'Sen indicador';
+$string['notflagged'] = 'Sen marcador';
 $string['notgraded'] = 'Sen cualificar';
 $string['notshown'] = 'Non amosado';
 $string['notyetanswered'] = 'Aínda non respondido';
@@ -328,7 +328,7 @@ $string['penaltyfactor_help'] = 'Este axuste determina que fracción da puntuaci
 
 O factor de penalización debería ser un número entre 0 e 1. Un factor de penalización 1 significa que o alumno ten que conseguir dar a resposta correcta na súa primeira contestación para obter o rendemento completo por ela. Un factor de penalización de 0 significa que o alumno/a pode volver intentalo tantas veces como queira que aínda así poderá obter as puntuacións completas.';
 $string['penaltyforeachincorrecttry'] = 'Penalización por cadanseu intento incorrecto';
-$string['penaltyforeachincorrecttry_help'] = 'Cando executa preguntas que usan os comportamentos «Interactivo con múltiplos intentos» ou «Modo adaptativo», de modo que o alumno/a ten varios intentos para acertar, esta opción controla canto son penalizados por cadanseu intento incorrecto.
+$string['penaltyforeachincorrecttry_help'] = 'Cando executa preguntas que usan os comportamentos «Interactivo con múltiples intentos» ou «Modo adaptativo», de modo que o alumno/a ten varios intentos para acertar, esta opción controla canto son penalizados por cadanseu intento incorrecto.
 
 A penalización é unha proporción da cualificación total da pregunta, de modo que se a pregunta tivese cando menos tres puntos, e a penalización é 0.3333333, entón os alumno/as puntuarán 3 se conseguen acertar a primeira vez, 2 se conseguen acertar no segundo intento e 1 se acertan no terceiro intento.';
 $string['permissionedit'] = 'Editar esta pregunta';
@@ -375,7 +375,7 @@ $string['rightanswer_help'] = 'un resumo coa contestación correcta xerado autom
 $string['save'] = 'Gardar';
 $string['savechangesandcontinueediting'] = 'Garda os cambios e continuar editando';
 $string['saved'] = 'Gardado: {$a}';
-$string['saveflags'] = 'Gardar o estado dos indicadores';
+$string['saveflags'] = 'Gardar o estado dos marcadores';
 $string['selectacategory'] = 'Seleccionar unha categoría:';
 $string['selectaqtypefordescription'] = 'Seleccionar un tipo de pregunta para ver a súa descrición.';
 $string['selectcategoryabove'] = 'Seleccionar unha categoria superior';

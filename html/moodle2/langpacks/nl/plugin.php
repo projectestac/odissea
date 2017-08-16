@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -140,6 +140,8 @@ $string['type_gradingform'] = 'Geavanceerde beoordelingsmethode';
 $string['type_gradingform_plural'] = 'Geavanceerde beoordelingsmethodes';
 $string['type_local'] = 'Lokale plugin';
 $string['type_local_plural'] = 'lokale plugins';
+$string['type_media'] = 'Media-speler';
+$string['type_media_plural'] = 'Media-spelers';
 $string['type_message'] = 'Berichten-output';
 $string['type_message_plural'] = 'Berichten-outputs';
 $string['type_mnetservice'] = 'MNet service';
@@ -151,7 +153,7 @@ $string['type_plagiarism_plural'] = 'Plagiaatspreventieplugins';
 $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolio\'s';
 $string['type_profilefield'] = 'Profielveldtype';
-$string['type_profilefield_plural'] = 'Profielbveldtypes';
+$string['type_profilefield_plural'] = 'Profielveldtypes';
 $string['type_qbehaviour'] = 'Vragengedrag';
 $string['type_qbehaviour_plural'] = 'Vragengedrag';
 $string['type_qformat'] = 'Vraag import/export opmaak';

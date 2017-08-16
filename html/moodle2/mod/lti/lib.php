@@ -306,7 +306,7 @@ function lti_get_coursemodule_info($coursemodule) {
     $launchcontainer = lti_get_launch_container($lti, $toolconfig);
     if ($launchcontainer == LTI_LAUNCH_CONTAINER_WINDOW) {
         $launchurl = new moodle_url('/mod/lti/launch.php', array('id' => $coursemodule->id));
-        $info->onclick = "window.open('" . $launchurl->out(false) . "', 'lti'); return false;";
+        $info->onclick = "window.open('" . $launchurl->out(false) . "', 'lti-".$coursemodule->id."'); return false;";
     }
 
     $info->name = $lti->name;
@@ -578,4 +578,31 @@ function lti_view($lti, $course, $cm, $context) {
     // Completion.
     $completion = new completion_info($course);
     $completion->set_module_viewed($cm);
+}
+
+/**
+ * Check if the module has any update that affects the current user since a given time.
+ *
+ * @param  cm_info $cm course module data
+ * @param  int $from the time to check updates from
+ * @param  array $filter  if we need to check only specific updates
+ * @return stdClass an object with the different type of areas indicating if they were updated or not
+ * @since Moodle 3.2
+ */
+function lti_check_updates_since(cm_info $cm, $from, $filter = array()) {
+    global $DB, $USER;
+
+    $updates = course_check_module_updates_since($cm, $from, array(), $filter);
+
+    // Check if there is a new submission.
+    $updates->submissions = (object) array('updated' => false);
+    $select = 'ltiid = :id AND userid = :userid AND (datesubmitted > :since1 OR dateupdated > :since2)';
+    $params = array('id' => $cm->instance, 'userid' => $USER->id, 'since1' => $from, 'since2' => $from);
+    $submissions = $DB->get_records_select('lti_submission', $select, $params, '', 'id');
+    if (!empty($submissions)) {
+        $updates->submissions->updated = true;
+        $updates->submissions->itemids = array_keys($submissions);
+    }
+
+    return $updates;
 }

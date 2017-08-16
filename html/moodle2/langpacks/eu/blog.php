@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,10 +89,15 @@ $string['entryerrornotyours'] = 'Sarrera hau ez da zurea';
 $string['entrysaved'] = 'Zure sarrera gorde da';
 $string['entrytitle'] = 'Izenburua idatzi';
 $string['eventblogassociationadded'] = 'Blog-lotura sortu da';
+$string['eventblogassociationdeleted'] = 'Blog-lotura ezabatu da';
 $string['eventblogentriesviewed'] = 'Blog-sarrerak ikusi dira';
+$string['eventblogexternaladded'] = 'Kanpok bloga erregistratu da';
+$string['eventblogexternalremoved'] = 'Kanpok blogaren erregistroa ezabatu da';
+$string['eventblogexternalupdated'] = 'Kanpok bloga eguneratu da';
 $string['evententryadded'] = 'Blog-sarrera gehituta';
 $string['evententrydeleted'] = 'Blog-sarrera ezabatuta';
 $string['evententryupdated'] = 'Blog-sarrera eguneratuta';
+$string['eventexternalblogsviewed'] = 'Erregistratutako kanpoko blogak ikusi dira';
 $string['externalblogcrontime'] = 'Blog-sarrera eguneratuta';
 $string['externalblogdeleteconfirm'] = 'Kanpoko blog honi erregistroa kendu?';
 $string['externalblogdeleted'] = 'Kanpoko blog-ari erregistroa kenduta';
@@ -151,7 +156,6 @@ $string['retrievedfrom'] = 'Ondokotik ekarria:';
 $string['rssfeed'] = 'Blogaren RSS jarioa';
 $string['searchterm'] = 'Bilatu: {$a}';
 $string['settingsupdatederror'] = 'Errorea gertatu da: blog aukera berriak ezin izan dira eguneratu';
-$string['siteblog'] = 'Gunearen bloga: {$a}';
 $string['siteblogdisable'] = 'Gunearen bloga ez dago gaituta';
 $string['siteblogheading'] = 'Guneko bloga';
 $string['siteblogs'] = 'Erabiltzaile guztiek blog-sarrera guztiak ikusi ahal dituzte';

@@ -18,17 +18,12 @@
  * Version information for the quizaccess_offlineattempts plugin.
  *
  * @package    quizaccess_offlineattempts
- * @copyright  Juan Leyva
+ * @copyright  2016 Juan Leyva
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016050900;
-$plugin->requires  = 2013111800;
+$plugin->version   = 2016120500;
+$plugin->requires  = 2016112900;
 $plugin->component = 'quizaccess_offlineattempts';
-$plugin->dependencies = array(
-    'local_mobile' => 2014060325
-);
-$plugin->release   = 'v2.6-3.1-1';
-$plugin->maturity  = MATURITY_STABLE;

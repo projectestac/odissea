@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'hub', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['contactable_help'] = 'この設定を有効にした場合、あなた�
 $string['contactemail'] = '連絡先メール';
 $string['contactname'] = '連絡先名';
 $string['contactphone'] = '電話';
-$string['contactphone_help'] = '電話番号はハブ管理者のみに表示され、パブリックに公開されることはありません。';
+$string['contactphone_help'] = '電話番号はハブ管理者にのみ表示されパブリックに公開されることはありません。';
 $string['continue'] = '続ける';
 $string['contributornames'] = '他の寄稿者';
 $string['contributornames_help'] = 'このフィールドを使用することで、あなたはこのコースに寄稿した人の氏名を一覧表示することができます。';

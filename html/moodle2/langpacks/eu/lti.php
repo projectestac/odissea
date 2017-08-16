@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lti', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,12 +41,13 @@ $string['allow'] = 'Baimendu';
 $string['allowinstructorcustom'] = 'Baimendu irakasleari pertsonalizatutako parametroak gehitzeko';
 $string['always'] = 'Beti';
 $string['autoaddtype'] = 'Gehitu tresna';
-$string['automatic'] = 'Automatikoa, hasierako URLean oinarritua';
+$string['automatic'] = 'Automatikoa, erremintaren URLan oinarritua';
 $string['baseurl'] = 'URL oinarria/tresnaren erregistro-izena';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'LTI jarduerak';
 $string['basiclti_base_string'] = 'LTI OAuth-en oinarrizko katea';
 $string['basiclti_in_new_window'] = 'Zure jarduera leiho berrian zabaldu da';
+$string['basiclti_in_new_window_open'] = 'Zabaldu leiho berrian';
 $string['basicltiintro'] = 'Jardueraren deskribapena';
 $string['basicltiname'] = 'Jardueraren izena';
 $string['basiclti_parameters'] = 'LTIko hasierako parametroak';
@@ -97,9 +98,13 @@ $string['embed'] = 'Enbotatu';
 $string['embed_no_blocks'] = 'Enbotatu, blokerik gabe';
 $string['enableemailnotification'] = 'Bidali jakinarazteko e-postak';
 $string['enableemailnotification_help'] = 'Gaituz gero, ikasleek e-posta bidezko jakinarazpena jasoko dute bidalketak kalifikatzen direnean.';
+$string['errorincorrectconsumerkey'] = 'Kontsumitzaile-gakoa ez da zuzena.';
+$string['errorinvaliddata'] = 'Datu baliogabea: {$a}';
+$string['errorinvalidmediatype'] = 'Media-mota baliogabea: {$a}';
 $string['errormisconfig'] = 'Tresna gaizki konfiguratu da. Mesedez, jarri harremanetan zure Moodle instalazioko kudeatzailearekin tresna ondo konfiguratzeko.';
+$string['errortooltypenotfound'] = 'LTI tresna-mota ez da aurkitu';
 $string['existing_window'] = 'Existitzen den leihoa';
-$string['extensions'] = 'LTI luzapen zerbitzuak';
+$string['extensions'] = 'LTI luzapenaren zerbitzuak';
 $string['external_tool_type'] = 'Aurretik konfiguratutako tresna';
 $string['external_tool_types'] = 'Aurretik konfiguratutako tresnak';
 $string['failedtoconnect'] = 'Moodle-k ezin izan du "{$a}" sistemarekin komunikatu';
@@ -110,7 +115,7 @@ $string['filtername'] = 'LTI';
 $string['fixexistingconf'] = 'Erabili dagoeneko existitzen den ezarpena gaizki konfiguratutako instantziarako';
 $string['fixnew'] = 'Ezarpen berria';
 $string['fixnewconf'] = 'Ezarri ezerpen berria gaizki konfiguratutako instantziarako';
-$string['fixold'] = 'Erabili existitzen dena';
+$string['fixold'] = '.Erabili existitzen dena';
 $string['forced_help'] = 'Ezarpen hau ikastaro edo  gunearen mailan konfiguratu da. Litekeena da interfaz honetatik ezin aldatzea.';
 $string['force_ssl'] = 'Behartu SSL';
 $string['generaltool'] = 'Tresna orokorra';
@@ -123,7 +128,7 @@ $string['launch_in_moodle'] = 'Hasi tresna Moodle-n';
 $string['launchinpopup'] = 'Abiarazi edukiontzia';
 $string['launch_in_popup'] = 'Abiarazi tresna pop-up-ean';
 $string['launchoptions'] = 'Hasiera-aukerak';
-$string['launch_url'] = 'Hasierarako URLa';
+$string['launch_url'] = 'Tresnaren URLa';
 $string['leaveblank'] = 'Utzi zuri behar ez badituzu';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Gehitu ikastaroaren araberako tresna ezarpenak';
@@ -135,7 +140,7 @@ $string['lti_launch_error'] = 'Errorea gertatu da kanpoko tresna hastean:';
 $string['lti_launch_error_tool_request'] = '<p>
 Kudeatzaileari tresnaren ezarpena osa dezala eskatzeko sakatu <a href="{$a->admin_request_url}" target="_top">honi</a>.
 </p>';
-$string['lti:manage'] = 'Irakaslea izan tresna abiarazten denean';
+$string['lti:manage'] = 'Irakaslea izan erreminta abiarazten denean';
 $string['ltisettings'] = 'LTIren ezarpenak';
 $string['lti:view'] = 'Abiarazi kanpoko tresnaren jarduerak';
 $string['main_admin'] = 'Laguntza orokorra';
@@ -164,7 +169,7 @@ $string['new_window'] = 'Leiho berria';
 $string['noattempts'] = 'Ez da saiakerarik izan tresna honen instantzian';
 $string['no_lti_pending'] = 'Ez dago zain dagoen kanpoko tresnarik.';
 $string['no_lti_rejected'] = 'Ez dago onartu gabeko kanpoko tresnarik.';
-$string['noltis'] = 'Ez dago kanpoko tresnen instantziarik';
+$string['noltis'] = 'Ez dago kanpoko tresnaren instantziarik';
 $string['no_lti_tools'] = 'Ez dago konfiguratutako kanpoko tresnarik.';
 $string['noservers'] = 'Ez da zerbitzaririk aurkitu';
 $string['noviewusers'] = 'Ez da baimendutako erabiltzailerik aurkitu tresna hau erabiltzeko';
@@ -179,7 +184,7 @@ $string['password'] = 'Partekatutako sekretua';
 $string['password_admin'] = 'Partekatutako sekretua';
 $string['pending'] = 'Zain';
 $string['pluginadministration'] = 'Kanpoko tresnaren kudeaketa';
-$string['pluginname'] = 'Kanpo tresna';
+$string['pluginname'] = 'Kanpoko tresna';
 $string['preferheight'] = 'Hobetsitako altuera';
 $string['preferwidth'] = 'Hobetsitako zabalera';
 $string['press_to_submit'] = 'Sakatu jarduera hau abiarazteko';
@@ -198,7 +203,9 @@ $string['resourceurl'] = 'Baliabidearen URLa';
 $string['return_to_course'] = 'Sakatu <a href="{$a->link}" target="_top">here</a>  ikastarora itzultzeko.';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['search:activity'] = 'Kanpoko tresna - jardueraren informazioa';
-$string['secure_launch_url'] = 'Hasierako URL segurua';
+$string['secure_icon_url'] = 'Ikono seguruaren URLa';
+$string['secure_launch_url'] = 'Tresna seguruaren URLa';
+$string['selectcontent'] = 'Aukeratu edukia';
 $string['send'] = 'Bidali';
 $string['services'] = 'Zerbitzuak';
 $string['setupoptions'] = 'Ezarpen-aukerak';
@@ -230,6 +237,7 @@ $string['toolsetup'] = 'Kanpoko tresnaren ezarpenak';
 $string['tooltypeadded'] = 'Aurretik konfiguratutako tresna gehitu da';
 $string['tooltypedeleted'] = 'Aurretik konfiguratutako tresna ezabatu da';
 $string['tooltypes'] = 'Tresnak';
+$string['toolurl'] = 'Tresnaren URLa';
 $string['toolurlplaceholder'] = 'Tresnaren URLa...';
 $string['typename'] = 'Tresnaren izena';
 $string['types'] = 'Motak';

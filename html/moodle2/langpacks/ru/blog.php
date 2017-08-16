@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,7 +151,6 @@ $string['retrievedfrom'] = 'Получено из';
 $string['rssfeed'] = 'RSS блога';
 $string['searchterm'] = 'Поиск: {$a}';
 $string['settingsupdatederror'] = 'Произошла ошибка, не удалось обновить настройки блога';
-$string['siteblog'] = 'блог сайта {$a}';
 $string['siteblogdisable'] = 'Блоги сайта отключены';
 $string['siteblogheading'] = 'Блог сайта';
 $string['siteblogs'] = 'Все пользователи сайта могут просматривать записи во всех блогах';

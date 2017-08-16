@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,13 +56,6 @@ $string['forcelogout'] = 'Abmelden erzwingen';
 $string['forcelogout_desc'] = 'Diese Einstellung legt fest, ob die Option \'Website wechseln\' durch \'Abmelden\' ersetzt wird. Auf diese Weise werden Nutzer/innen vollständig abgemeldet und müssen für den nächsten Zugriff ihr Kennwort neu eingeben.';
 $string['local_mobiledescription'] = 'Das Plugin erweitert den mobilen Webservice.';
 $string['local_mobilesettings'] = 'Einstellungen';
-$string['local_mobiletypeoflogin'] = 'Wählen Sie die Art der Anmeldung.';
-$string['local_mobiletypeoflogin_key'] = 'Anmeldung';
-$string['local_mobileurlscheme'] = 'Diese Einstellung wird benutzt, um ein URL Schema zum Login über den Webbrowser vorzugeben. Meistens kann das Feld leer bleiben.';
-$string['local_mobileurlscheme_key'] = 'URL Schema';
-$string['loginintheapp'] = 'In der App';
-$string['logininthebrowser'] = 'In einem Browserfenster (für SSO)';
-$string['loginintheinappbrowser'] = 'In einem eingebetteten Browser (für SSO)';
 $string['mainmenu'] = 'Hauptmenü';
 $string['mobilefeatures'] = 'Mobile Features';
 $string['pluginname'] = 'Moodle Mobile - Zusatzfeatures';

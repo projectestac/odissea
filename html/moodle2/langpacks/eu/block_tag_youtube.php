@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_tag_youtube', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   block_tag_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Edozein kategoria';
-$string['apierror'] = 'Youtube-ren API gakoa ez da zehaztu. Jarri harremanetan zure kudeatzailearekin.';
+$string['apierror'] = 'Youtube-ren API giltza ez da zehaztu. Jarri harremanetan zure kudeatzailearekin.';
 $string['apikey'] = 'API gakoa';
 $string['apikeyinfo'] = 'Lortu  <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API gakoa</a>zure Moodle gunerako.';
 $string['autosvehicles'] = 'Autoak &amp; Ibilgailuak';

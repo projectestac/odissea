@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -187,7 +187,6 @@ $string['original'] = '原始的';
 $string['overwrite'] = '覆盖';
 $string['overwriteall'] = '全部覆盖';
 $string['path'] = '路径';
-$string['personalrepositories'] = '可用的容器实例';
 $string['plugin'] = '容器插件';
 $string['pluginerror'] = '容器插件有错误。';
 $string['pluginname'] = '容器插件名';

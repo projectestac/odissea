@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'question', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -217,7 +217,7 @@ $string['importfromcoursefiles'] = '... o escolliu un fitxer de curs per importa
 $string['importfromupload'] = 'Seleccioneu un fitxer per penjar ...';
 $string['importingquestions'] = 'S\'importaran {$a} preguntes del fitxer';
 $string['importparseerror'] = 'S\'han trobat error(s) en analitzar el fitxer d\'importació. No s\'ha importat cap pregunta. Si voleu aprofitar les preguntes ben formatades del fitxer, torneu-ho a intentar amb el paràmetre \'S\'atura si hi ha errors\' desactivat.';
-$string['importquestions'] = 'Importació de preguntes des d\'un fitxer.';
+$string['importquestions'] = 'Importació de preguntes des d\'un fitxer';
 $string['importquestions_help'] = 'Aquesta funció activa la importació de preguntes de formats diversos via un fitxer de text. El fitxer ha d\'estar codificat amb l\'UTF-8.';
 $string['importwrongfiletype'] = 'El tipus de fitxer que heu triat ({$a->actualtype}) no s\'acorda al tipus esperat per aquest format d\'importació ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Un caràcter inviable {$a} detectat com a caràcter de parèntesis.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,11 +57,11 @@ Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no se
 É altamente recomendado que esteja a executar a atualização mais recente disponível para a sua versão do Moodle antes de executar a pesquisa de valores predefinidos errados.
 
 Esta funcionalidade não realiza nenhuma ação na BD (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
-$string['confirmcheckforeignkeys'] = 'Esta funcionalidade vai procurar potenciais violações das chaves estrangeiras definidas nos fichneiros install.xml. (O Moodle atualmente não gera restrições de chaves estrangeiras na BD, pelo que é possível existir informação inválida.)
+$string['confirmcheckforeignkeys'] = 'Esta funcionalidade vai pesquisar por potenciais violações das chaves estrangeiras definidas nos ficheiros install.xml. (O Moodle atualmente não gera restrições de chaves estrangeiras na base de dados, pelo que é possível existir informação inválida.)
 
 É altamente recomendado que esteja a executar a atualização mais recente disponível para a sua versão do Moodle antes de executar a pesquisa de potenciais violações de chaves estrangeiras.
 
-Esta funcionalidade não realiza nenhuma ação na BD (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
+Esta funcionalidade não realiza nenhuma ação na base dados (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
 $string['confirmcheckindexes'] = 'Esta funcionalidade vai procurar índices em falta no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para ter tudo atualizado.
 
 Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no seu interface SQL preferido (não se esqueça de fazer uma cópia de segurança dos seus dados antes de executar o comando).

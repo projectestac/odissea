@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,6 @@ Aquí podeu modificar la llista de caràcters delimitadors reconeguts (per exemp
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'URL HTTPS de MathJax';
 $string['httpsurl_help'] = 'URL complet de la llibreria MathJax. S\'utilitza quan la pàgina es carrega mitjançant https (connexió segura).';
-$string['httpurl'] = 'URL HTTP de MathJax';
-$string['httpurl_help'] = 'URL complet de la llibreria MathJax. S\'utilitza quan la pàgina es carrega mitjançant http.';
 $string['localinstall'] = 'Instal·lació local de MathJax';
 $string['localinstall_help'] = 'La configuració per defecte de MathJax utilitza la versió CDN de MathJax, però MathJax es pot instal·lar localment si cal.
 

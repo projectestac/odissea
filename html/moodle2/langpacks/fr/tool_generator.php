@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,10 +38,10 @@ Les cours créés au moyen de cet outil peuvent occuper une place importante en 
 Pour éviter une utilisation accidentelle, cette fonctionnalité est désactivée, à moins que le niveau de débogage ne soit réglé sur DEVELOPER).';
 $string['coursesize_0'] = 'XS (~10 Ko ; créé en ~1 seconde)';
 $string['coursesize_1'] = 'S (~10 Mo ; créé en ~30 secondes)';
-$string['coursesize_2'] = 'M (~100 Mo ; créé en ~5 minutes)';
-$string['coursesize_3'] = 'L (~1 Go ; créé en ~1 heure)';
-$string['coursesize_4'] = 'XL (~10 Go ; créé en ~4 heures)';
-$string['coursesize_5'] = 'XXL (~20 Go ; créé en ~8 heures)';
+$string['coursesize_2'] = 'M (~100 Mo ; créé en ~2 minutes)';
+$string['coursesize_3'] = 'L (~1 Go ; créé en ~30 minutes)';
+$string['coursesize_4'] = 'XL (~10 Go ; créé en ~2 heures)';
+$string['coursesize_5'] = 'XXL (~20 Go ; créé en ~4 heures)';
 $string['coursewithoutusers'] = 'Le cours sélectionné n\'a pas d\'utilisateur';
 $string['createcourse'] = 'Créer un cours';
 $string['createtestplan'] = 'Créer un plan de test';

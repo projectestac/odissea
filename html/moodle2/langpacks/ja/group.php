@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'group', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,7 @@ $string['editgroupingsettings'] = 'グルーピング設定を編集する';
 $string['editgroupsettings'] = 'グループ設定を編集する';
 $string['enrolmentkey'] = '登録キー';
 $string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
-$string['enrolmentkey_help'] = '登録キーにより、キーを知っているユーザのみに限定してコースへのアクセスを許可することができます。グループ登録キーが指定された場合、そのキーによりユーザがコースに入ることができるようになるだけではなく、自動的にこのグループのメンバーとして登録されます。
+$string['enrolmentkey_help'] = '登録キーによりキーを知っているユーザにのみ限定してコースへのアクセスを許可することができます。グループ登録キーが指定された場合、そのキーによりユーザがコースに入ることができるようになるだけではなく、自動的にこのグループのメンバーとして登録されます。
 
 注意: 自己登録設定において、グループ登録キーを有効にする必要があります。同時にコース登録キーも指定する必要があります。';
 $string['erroraddremoveuser'] = 'ユーザ {$a} のグループ登録/削除中にエラーが発生しました。';

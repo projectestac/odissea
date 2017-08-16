@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'url', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'اختر المتغير...';
-$string['clicktoopen'] = 'اضغط الوصلة {$a} لفتح المصدر.';
+$string['clicktoopen'] = 'اضغط الوصلة {$a} لفتح المورد.';
 $string['configdisplayoptions'] = 'قم بتحديد كافة الخيارات التي يجب أن تكون متاحة، لن  يتم تعديل الإعدادات الموجودة. قم بالضغط على CTRL  لتحديد حقول متعددة.';
 $string['configframesize'] = 'عندما يتم عرض صفحة ويب أو ملف داخل الإطار، تُمثِّل هذه القيمة الارتفاع (بالبكسل) من الإطار العلوي (الذي يحتوي على التنقل).';
 $string['configrolesinparams'] = 'فعِّل هذا الخيار  إذا كنت ترغب في تضمين أسماء الأدوارالداخلية في قائمة المتغيرات المتاحة.';

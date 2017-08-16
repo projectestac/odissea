@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'question', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,10 @@ $string['addanotherhint'] = 'Lägg till ett tips';
 $string['addcategory'] = 'Lägg till kategori';
 $string['addmorechoiceblanks'] = 'Tomma utrymmen för {no} fler val';
 $string['adminreport'] = 'Rapport över  möjliga problem i Din frågedatabas.';
+$string['advancedsearchoptions'] = 'Sökalternativ';
+$string['alltries'] = 'Alla försök';
 $string['answer'] = 'Svar';
+$string['answers'] = 'Svar';
 $string['answersaved'] = 'Svar sparade';
 $string['attemptfinished'] = 'Avslutat försök';
 $string['attemptfinishedsubmitting'] = 'Försöket avslutades med inskicket:';
@@ -110,6 +113,7 @@ $string['decimalplacesingrades'] = 'Decimaler i betyg';
 $string['defaultfor'] = 'Förinställt standardvärde för {$a}';
 $string['defaultinfofor'] = 'Det förinställda standardvärdet för frågor som är gemensamma i sammanhanget \'{$a}\'.';
 $string['defaultmark'] = 'Förvalt betyg';
+$string['defaultmarkmustbepositive'] = 'Det förvalda betyget måste vara positivt';
 $string['deletecoursecategorywithquestions'] = 'Det finns frågor i frågebanken i associerade med denna kurs kategori. Om du fortsätter kommer de att raderas. Du kanske vill flytta dem först, med hjälp av gränssnittet i frågebanken.';
 $string['deletequestioncheck'] = 'Är du helt säker på att du vill ta bort \'{$a}\'?';
 $string['deletequestionscheck'] = 'Är du helt säker på att du vill ta bort följande frågor? <br /><br /> {$a}';
@@ -157,6 +161,7 @@ $string['errorprocessingresponses'] = 'Ett fel uppstod när dina svar bearbetade
 $string['errorsavingcomment'] = 'Fel när kommentar till frågan {$a->name} skulle sparas i databasen.';
 $string['errorsavingflags'] = 'Fel vid sparande av status.';
 $string['errorupdatingattempt'] = 'Fel vid uppdatering av försök {$a->id} i databasen.';
+$string['eventquestioncategorycreated'] = 'Frågekategori skapad';
 $string['export'] = 'Exportera';
 $string['exportcategory'] = 'Kategori för export';
 $string['exportcategory_help'] = '<p align="center"><b>Exportera kategori</b></p>
@@ -234,6 +239,7 @@ $string['filesareacourse'] = 'arkiv för kursfiler';
 $string['filesareasite'] = 'arkiv för filer på webbplatsnivå';
 $string['filestomove'] = 'Flytta/kopiera filer till {$a}?';
 $string['fillincorrect'] = 'Fyll i rätt svar';
+$string['firsttry'] = 'Första försöket';
 $string['flagged'] = 'Flaggad';
 $string['flagthisquestion'] = 'Flagga denna fråga';
 $string['formquestionnotinids'] = 'Formuläret innehåll en fråga som saknar frågeID';
@@ -284,10 +290,12 @@ $string['invalidgrade'] = 'Betyg ({$a}) matchar inte betygsalternativen - fråga
 $string['invalidpenalty'] = 'Ogiltig straff';
 $string['invalidwizardpage'] = 'Felaktig eller ingen guidesida angiven!';
 $string['lastmodifiedby'] = 'Senast ändrad av';
+$string['lasttry'] = 'Sista försöket';
 $string['linkedfiledoesntexist'] = 'Den länkade filen {$a} finns inte.';
 $string['makechildof'] = 'Gör om \'{$a}\'  till ett barn';
 $string['makecopy'] = 'Skapa kopia';
 $string['maketoplevelitem'] = 'Flytta till översta positionen';
+$string['manualgradeinvalidformat'] = 'Det är inte ett giltigt nummer.';
 $string['manualgradeoutofrange'] = 'Detta betyg är utanför det giltiga området.';
 $string['manuallygraded'] = 'Manuellt betygsatta {$a->mark} med kommentar: {$a->comment}';
 $string['mark'] = 'Rätta';
@@ -382,7 +390,10 @@ $string['questioncatsfor'] = 'Frågekategorier för \'{$a}\'';
 $string['questiondoesnotexist'] = 'Den här frågan finns inte.';
 $string['questionidmismatch'] = 'Identiteten för frågan stämmer inte överrens';
 $string['questionname'] = 'Frågenamn';
+$string['questionnamecopy'] = '{$a} (kopia)';
 $string['questionno'] = 'Fråga {$a}';
+$string['questionpreviewdefaults'] = 'Förvalda värden för förhandsgranskning av frågan';
+$string['questionpreviewdefaults_desc'] = 'Dessa förvalda värden används när en användare för första gången förhandsgranskar en fråga i frågebanken. När en användare har förhandsgranskat en fråga lagras deras personliga preferenser som användarinställningar.';
 $string['questions'] = 'Frågor';
 $string['questionsaveerror'] = 'Ett fel uppstod när frågan - ({$a}) sparades';
 $string['questionsinuse'] = '(* Frågor markerade med en asterisk används redan i några tester. Dessa frågor kommer inte att tas bort från dessa tester utan bara i kategorilistan.)';
@@ -430,12 +441,15 @@ $string['submissionoutofsequencefriendlymessage'] = 'Du har skickat uppgifter ut
 $string['submit'] = 'Skicka';
 $string['submitandfinish'] = 'Skicka och avsluta';
 $string['submitted'] = 'Skicka:{$a}';
+$string['tagarea_question'] = 'Frågor';
 $string['technicalinfo'] = 'Teknisk information';
 $string['technicalinfo_help'] = 'Denna tekniska information är troligen endast användbar för utvecklare av nya frågetyper. Det kan även vara till hjälp vid försök att hitta felaktigheter med frågor.';
+$string['technicalinfomaxfraction'] = 'Maximal fraktion: {$a}';
 $string['technicalinfominfraction'] = 'Minsta fraktion: {$a}';
 $string['technicalinfoquestionsummary'] = 'Fråge sammanfattning {$a}';
 $string['technicalinforightsummary'] = 'Rätt svar sammanfattning: {$a}';
 $string['technicalinfostate'] = 'Tillstånd för fråga: {$a}';
+$string['technicalinfovariant'] = 'Variant av fråga: {$a}';
 $string['tofilecategory'] = 'Skriv kategori till fil';
 $string['tofilecontext'] = 'Skriv sammanhang till fil';
 $string['uninstallbehaviour'] = 'Avinstallera det här frågebeteendet.';
@@ -455,6 +469,7 @@ $string['upgradeproblemcouldnotupdatecategory'] = 'Det gick inte att uppdatera {
 $string['upgradeproblemunknowncategory'] = 'Problem upptäcktes vid uppgradering av frågekategorier. Kategori {$a->id} avser överkategorin {$a->parent}, som inte existerar. Överkatekorin ändrats att åtgärda problemet.';
 $string['whethercorrect'] = 'Huruvida korrekt';
 $string['whethercorrect_help'] = 'Detta täcker både textbeskrivningen \'Korrekt\', \'Delvis korrekt\' eller \'Felaktig\' och alla färgade markeringar som förmedlar samma information.';
+$string['whichtries'] = 'Vilket försök';
 $string['withselected'] = 'Med vald';
 $string['wrongprefix'] = 'Felaktigt formaterad namnprefix {$a}';
 $string['xoutofmax'] = '{$a->mark} av {$a->max}';

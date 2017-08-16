@@ -44,3 +44,4 @@ $string['environment_url_desc'] = 'If set, this WSDL Mailsender will be used, if
 
 $string['clean_adware'] = 'Clean Adware';
 $string['detect_adware'] = 'Detect Adware';
+$string['messagehistoryfull'] = 'All messages';

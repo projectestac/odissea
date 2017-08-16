@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_bootstrapbase', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'theme_bootstrapbase', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   theme_bootstrapbase
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>Base Bootstrap </h2> <img class=img-polaroid src="bootstrap/pix/screenshot.jpg" /> <h3>Crèdits del tema</h3> <p> <h3>Tema twitter Bootstrap de Moodle</h3> <p>Aquest tema està basat en el marc Bootstrap CSS, versió 2.3 </p> <p> <a href="http://getbootstrap.com">http://getbootstrap.com</a> </p> <p> Aquest és un tema GPL disponible a GitHub: </p> <p> <a href=https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a> </p> <p> Sou lliure de modificar-lo / millorar-lo / compartir-lo </p> <p>Aquest tema ha estat creat amb l\'ajuda de: Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans </p> <p> Autors: Bas Brands, David Scotson<br> Contacte: bas@sonsbeekmedia.nl<br> Lloc web: <a href="http://www.basbrands.nl">www.basbrands.nl</a><br> </p> <h3>Informe d\'errades</h3> <p>Podeu informar d\'errades a la <a href="https://github.com/bmbrands/theme_bootstrap/issues">pàgina del github</a> per a aquest tema o a la pàgina de seguiment de Moodle</p> <h3>Més informació</h3> <ul> <li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Pàgina wiki per a aquest tema</a> <li><a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap a Moodle docs</a></li> <li><a href="http://theming.sonsbeekmedia.nl/">Tema de la secció de proves</a></li> </ul>';
 $string['pluginname'] = 'Base Bootstrap';
 $string['region-side-post'] = 'Dret';
-$string['region-side-pre'] = 'Esquerre';
+$string['region-side-pre'] = 'Esquerra';

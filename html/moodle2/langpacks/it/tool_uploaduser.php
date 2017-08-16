@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_uploaduser', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['deleteerrors'] = 'Elimina errori';
 $string['encoding'] = 'Codifica';
 $string['errormnetadd'] = 'Non è possibile aggiungere utenti remoti';
 $string['errors'] = 'Errori';
-$string['invalidupdatetype'] = 'Non è possibile utilizzare questa opzione assieme al \'Tipo di caricamento\' selezionato.';
+$string['invalidupdatetype'] = 'Non è possibile utilizzare questa opzione con il \'Tipo di caricamento\' selezionato.';
 $string['invaliduserdata'] = 'Sono stati individuati dati non validi per l\'utente {$a} e sono stati puliti automaticamente.';
 $string['nochanges'] = 'Nessuna modifica';
 $string['pluginname'] = 'Caricamento utenti';

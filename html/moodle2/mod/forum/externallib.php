@@ -92,6 +92,7 @@ class mod_forum_external extends external_api {
                 // Format the intro before being returning using the format setting.
                 list($forum->intro, $forum->introformat) = external_format_text($forum->intro, $forum->introformat,
                                                                                 $context->id, 'mod_forum', 'intro', null);
+                $forum->introfiles = external_util::get_area_files($context->id, 'mod_forum', 'intro', false, false);
                 // Discussions count. This function does static request cache.
                 $forum->numdiscussions = forum_count_discussions($forum, $cm, $course);
                 $forum->cmid = $forum->coursemodule;
@@ -111,7 +112,7 @@ class mod_forum_external extends external_api {
      * @return external_single_structure
      * @since Moodle 2.5
      */
-     public static function get_forums_by_courses_returns() {
+    public static function get_forums_by_courses_returns() {
         return new external_multiple_structure(
             new external_single_structure(
                 array(
@@ -121,6 +122,7 @@ class mod_forum_external extends external_api {
                     'name' => new external_value(PARAM_RAW, 'Forum name'),
                     'intro' => new external_value(PARAM_RAW, 'The forum intro'),
                     'introformat' => new external_format_value('intro'),
+                    'introfiles' => new external_files('Files in the introduction text', VALUE_OPTIONAL),
                     'assessed' => new external_value(PARAM_INT, 'Aggregate type'),
                     'assesstimestart' => new external_value(PARAM_INT, 'Assess start time'),
                     'assesstimefinish' => new external_value(PARAM_INT, 'Assess finish time'),
@@ -141,6 +143,7 @@ class mod_forum_external extends external_api {
                     'cmid' => new external_value(PARAM_INT, 'Course module id'),
                     'numdiscussions' => new external_value(PARAM_INT, 'Number of discussions in the forum', VALUE_OPTIONAL),
                     'cancreatediscussions' => new external_value(PARAM_BOOL, 'If the user can create discussions', VALUE_OPTIONAL),
+                    'lockdiscussionafter' => new external_value(PARAM_INT, 'After what period a discussion is locked', VALUE_OPTIONAL),
                 ), 'forum'
             )
         );
@@ -265,14 +268,20 @@ class mod_forum_external extends external_api {
                 $post->children = array();
             }
 
-            $user = new stdclass();
-            $user->id = $post->userid;
-            $user = username_load_fields_from_object($user, $post, null, array('picture', 'imagealt', 'email'));
-            $post->userfullname = fullname($user, $canviewfullname);
+            if (forum_is_author_hidden($post, $forum)) {
+                $post->userid = null;
+                $post->userfullname = null;
+                $post->userpictureurl = null;
+            } else {
+                $user = new stdclass();
+                $user->id = $post->userid;
+                $user = username_load_fields_from_object($user, $post, null, array('picture', 'imagealt', 'email'));
+                $post->userfullname = fullname($user, $canviewfullname);
 
-            $userpicture = new user_picture($user);
-            $userpicture->size = 1; // Size f1.
-            $post->userpictureurl = $userpicture->get_url($PAGE)->out(false);
+                $userpicture = new user_picture($user);
+                $userpicture->size = 1; // Size f1.
+                $post->userpictureurl = $userpicture->get_url($PAGE)->out(false);
+            }
 
             $post->subject = external_format_string($post->subject, $modcontext->id);
             // Rewrite embedded images URLs.
@@ -281,22 +290,11 @@ class mod_forum_external extends external_api {
 
             // List attachments.
             if (!empty($post->attachment)) {
-                $post->attachments = array();
-
-                $fs = get_file_storage();
-                if ($files = $fs->get_area_files($modcontext->id, 'mod_forum', 'attachment', $post->id, "filename", false)) {
-                    foreach ($files as $file) {
-                        $filename = $file->get_filename();
-                        $fileurl = moodle_url::make_webservice_pluginfile_url(
-                                        $modcontext->id, 'mod_forum', 'attachment', $post->id, '/', $filename);
-
-                        $post->attachments[] = array(
-                            'filename' => $filename,
-                            'mimetype' => $file->get_mimetype(),
-                            'fileurl'  => $fileurl->out(false)
-                        );
-                    }
-                }
+                $post->attachments = external_util::get_area_files($modcontext->id, 'mod_forum', 'attachment', $post->id);
+            }
+            $messageinlinefiles = external_util::get_area_files($modcontext->id, 'mod_forum', 'post', $post->id);
+            if (!empty($messageinlinefiles)) {
+                $post->messageinlinefiles = $messageinlinefiles;
             }
 
             $posts[] = $post;
@@ -331,16 +329,9 @@ class mod_forum_external extends external_api {
                                 'message' => new external_value(PARAM_RAW, 'The post message'),
                                 'messageformat' => new external_format_value('message'),
                                 'messagetrust' => new external_value(PARAM_INT, 'Can we trust?'),
+                                'messageinlinefiles' => new external_files('post message inline files', VALUE_OPTIONAL),
                                 'attachment' => new external_value(PARAM_RAW, 'Has attachments?'),
-                                'attachments' => new external_multiple_structure(
-                                    new external_single_structure(
-                                        array (
-                                            'filename' => new external_value(PARAM_FILE, 'file name'),
-                                            'mimetype' => new external_value(PARAM_RAW, 'mime type'),
-                                            'fileurl'  => new external_value(PARAM_URL, 'file download url')
-                                        )
-                                    ), 'attachments', VALUE_OPTIONAL
-                                ),
+                                'attachments' => new external_files('attachments', VALUE_OPTIONAL),
                                 'totalscore' => new external_value(PARAM_INT, 'The post message total score'),
                                 'mailnow' => new external_value(PARAM_INT, 'Mail now?'),
                                 'children' => new external_multiple_structure(new external_value(PARAM_INT, 'children post id')),
@@ -482,31 +473,6 @@ class mod_forum_external extends external_api {
                     $discussion->numreplies = (int) $replies[$discussion->discussion]->replies;
                 }
 
-                $picturefields = explode(',', user_picture::fields());
-
-                // Load user objects from the results of the query.
-                $user = new stdclass();
-                $user->id = $discussion->userid;
-                $user = username_load_fields_from_object($user, $discussion, null, $picturefields);
-                // Preserve the id, it can be modified by username_load_fields_from_object.
-                $user->id = $discussion->userid;
-                $discussion->userfullname = fullname($user, $canviewfullname);
-
-                $userpicture = new user_picture($user);
-                $userpicture->size = 1; // Size f1.
-                $discussion->userpictureurl = $userpicture->get_url($PAGE)->out(false);
-
-                $usermodified = new stdclass();
-                $usermodified->id = $discussion->usermodified;
-                $usermodified = username_load_fields_from_object($usermodified, $discussion, 'um', $picturefields);
-                // Preserve the id (it can be overwritten due to the prefixed $picturefields).
-                $usermodified->id = $discussion->usermodified;
-                $discussion->usermodifiedfullname = fullname($usermodified, $canviewfullname);
-
-                $userpicture = new user_picture($usermodified);
-                $userpicture->size = 1; // Size f1.
-                $discussion->usermodifiedpictureurl = $userpicture->get_url($PAGE)->out(false);
-
                 $discussion->name = external_format_string($discussion->name, $modcontext->id);
                 $discussion->subject = external_format_string($discussion->subject, $modcontext->id);
                 // Rewrite embedded images URLs.
@@ -516,22 +482,50 @@ class mod_forum_external extends external_api {
 
                 // List attachments.
                 if (!empty($discussion->attachment)) {
-                    $discussion->attachments = array();
+                    $discussion->attachments = external_util::get_area_files($modcontext->id, 'mod_forum', 'attachment',
+                                                                                $discussion->id);
+                }
+                $messageinlinefiles = external_util::get_area_files($modcontext->id, 'mod_forum', 'post', $discussion->id);
+                if (!empty($messageinlinefiles)) {
+                    $discussion->messageinlinefiles = $messageinlinefiles;
+                }
 
-                    $fs = get_file_storage();
-                    if ($files = $fs->get_area_files($modcontext->id, 'mod_forum', 'attachment',
-                                                        $discussion->id, "filename", false)) {
-                        foreach ($files as $file) {
-                            $filename = $file->get_filename();
+                $discussion->locked = forum_discussion_is_locked($forum, $discussion);
+                $discussion->canreply = forum_user_can_post($forum, $discussion, $USER, $cm, $course, $modcontext);
 
-                            $discussion->attachments[] = array(
-                                'filename' => $filename,
-                                'mimetype' => $file->get_mimetype(),
-                                'fileurl'  => file_encode_url($CFG->wwwroot.'/webservice/pluginfile.php',
-                                                '/'.$modcontext->id.'/mod_forum/attachment/'.$discussion->id.'/'.$filename)
-                            );
-                        }
-                    }
+                if (forum_is_author_hidden($discussion, $forum)) {
+                    $discussion->userid = null;
+                    $discussion->userfullname = null;
+                    $discussion->userpictureurl = null;
+
+                    $discussion->usermodified = null;
+                    $discussion->usermodifiedfullname = null;
+                    $discussion->usermodifiedpictureurl = null;
+                } else {
+                    $picturefields = explode(',', user_picture::fields());
+
+                    // Load user objects from the results of the query.
+                    $user = new stdclass();
+                    $user->id = $discussion->userid;
+                    $user = username_load_fields_from_object($user, $discussion, null, $picturefields);
+                    // Preserve the id, it can be modified by username_load_fields_from_object.
+                    $user->id = $discussion->userid;
+                    $discussion->userfullname = fullname($user, $canviewfullname);
+
+                    $userpicture = new user_picture($user);
+                    $userpicture->size = 1; // Size f1.
+                    $discussion->userpictureurl = $userpicture->get_url($PAGE)->out(false);
+
+                    $usermodified = new stdclass();
+                    $usermodified->id = $discussion->usermodified;
+                    $usermodified = username_load_fields_from_object($usermodified, $discussion, 'um', $picturefields);
+                    // Preserve the id (it can be overwritten due to the prefixed $picturefields).
+                    $usermodified->id = $discussion->usermodified;
+                    $discussion->usermodifiedfullname = fullname($usermodified, $canviewfullname);
+
+                    $userpicture = new user_picture($usermodified);
+                    $userpicture->size = 1; // Size f1.
+                    $discussion->usermodifiedpictureurl = $userpicture->get_url($PAGE)->out(false);
                 }
 
                 $discussions[] = $discussion;
@@ -574,16 +568,9 @@ class mod_forum_external extends external_api {
                                 'message' => new external_value(PARAM_RAW, 'The post message'),
                                 'messageformat' => new external_format_value('message'),
                                 'messagetrust' => new external_value(PARAM_INT, 'Can we trust?'),
+                                'messageinlinefiles' => new external_files('post message inline files', VALUE_OPTIONAL),
                                 'attachment' => new external_value(PARAM_RAW, 'Has attachments?'),
-                                'attachments' => new external_multiple_structure(
-                                    new external_single_structure(
-                                        array (
-                                            'filename' => new external_value(PARAM_FILE, 'file name'),
-                                            'mimetype' => new external_value(PARAM_RAW, 'mime type'),
-                                            'fileurl'  => new external_value(PARAM_URL, 'file download url')
-                                        )
-                                    ), 'attachments', VALUE_OPTIONAL
-                                ),
+                                'attachments' => new external_files('attachments', VALUE_OPTIONAL),
                                 'totalscore' => new external_value(PARAM_INT, 'The post message total score'),
                                 'mailnow' => new external_value(PARAM_INT, 'Mail now?'),
                                 'userfullname' => new external_value(PARAM_TEXT, 'Post author full name'),
@@ -592,7 +579,9 @@ class mod_forum_external extends external_api {
                                 'usermodifiedpictureurl' => new external_value(PARAM_URL, 'Post modifier picture.'),
                                 'numreplies' => new external_value(PARAM_TEXT, 'The number of replies in the discussion'),
                                 'numunread' => new external_value(PARAM_INT, 'The number of unread discussions.'),
-                                'pinned' => new external_value(PARAM_BOOL, 'Is the discussion pinned')
+                                'pinned' => new external_value(PARAM_BOOL, 'Is the discussion pinned'),
+                                'locked' => new external_value(PARAM_BOOL, 'Is the discussion locked'),
+                                'canreply' => new external_value(PARAM_BOOL, 'Can the user reply to the discussion'),
                             ), 'post'
                         )
                     ),

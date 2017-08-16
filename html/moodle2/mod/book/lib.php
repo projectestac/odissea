@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die;
 function book_get_numbering_types() {
     global $CFG; // required for the include
 
-    require_once(dirname(__FILE__).'/locallib.php');
+    require_once(__DIR__.'/locallib.php');
 
     return array (
         BOOK_NUM_NONE       => get_string('numbering0', 'mod_book'),
@@ -46,7 +46,7 @@ function book_get_numbering_types() {
  * @return array
  */
 function book_get_nav_types() {
-    require_once(dirname(__FILE__).'/locallib.php');
+    require_once(__DIR__.'/locallib.php');
 
     return array (
         BOOK_LINK_TOCONLY   => get_string('navtoc', 'mod_book'),
@@ -361,7 +361,7 @@ function book_get_file_info($browser, $areas, $course, $cm, $context, $filearea,
         return null;
     }
 
-    require_once(dirname(__FILE__).'/locallib.php');
+    require_once(__DIR__.'/locallib.php');
 
     if (is_null($itemid)) {
         return new book_file_info($browser, $course, $cm, $context, $areas, $filearea);
@@ -450,7 +450,7 @@ function book_pluginfile($course, $cm, $context, $filearea, $args, $forcedownloa
         $titles = "";
         // Format the chapter titles.
         if (!$book->customtitles) {
-            require_once(dirname(__FILE__).'/locallib.php');
+            require_once(__DIR__.'/locallib.php');
             $chapters = book_preload_chapters($book);
 
             if (!$chapter->subchapter) {
@@ -635,4 +635,38 @@ function book_view($book, $chapter, $islastchapter, $course, $cm, $context) {
             $completion->set_module_viewed($cm);
         }
     }
+}
+
+/**
+ * Check if the module has any update that affects the current user since a given time.
+ *
+ * @param  cm_info $cm course module data
+ * @param  int $from the time to check updates from
+ * @param  array $filter  if we need to check only specific updates
+ * @return stdClass an object with the different type of areas indicating if they were updated or not
+ * @since Moodle 3.2
+ */
+function book_check_updates_since(cm_info $cm, $from, $filter = array()) {
+    global $DB;
+
+    $context = $cm->context;
+    $updates = new stdClass();
+    if (!has_capability('mod/book:read', $context)) {
+        return $updates;
+    }
+    $updates = course_check_module_updates_since($cm, $from, array('content'), $filter);
+
+    $select = 'bookid = :id AND (timecreated > :since1 OR timemodified > :since2)';
+    $params = array('id' => $cm->instance, 'since1' => $from, 'since2' => $from);
+    if (!has_capability('mod/book:viewhiddenchapters', $context)) {
+        $select .= ' AND hidden = 0';
+    }
+    $updates->entries = (object) array('updated' => false);
+    $entries = $DB->get_records_select('book_chapters', $select, $params, '', 'id');
+    if (!empty($entries)) {
+        $updates->entries->updated = true;
+        $updates->entries->itemids = array_keys($entries);
+    }
+
+    return $updates;
 }

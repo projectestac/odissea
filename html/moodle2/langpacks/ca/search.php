@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'search', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,8 +73,11 @@ $string['score'] = 'Puntuació';
 $string['search'] = 'Cerca';
 $string['searcharea'] = 'Àrea de cerca';
 $string['searching'] = 'S\'està cercant en...';
+$string['search:message_received'] = 'Missatges - rebuts';
+$string['search:message_sent'] = 'Missatges - enviats';
 $string['search:mycourse'] = 'Els meus cursos';
 $string['searchnotpermitted'] = 'No teniu permís per fer una cerca';
+$string['search:user'] = 'Usuaris';
 $string['seconds'] = 'segons';
 $string['solutions'] = 'Solucions';
 $string['statistics'] = 'Estadístiques';

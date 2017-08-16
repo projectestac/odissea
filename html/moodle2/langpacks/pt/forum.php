@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Não pode apagar esta mensagem';
 $string['cannoteditposts'] = 'Não pode editar mensagens de outros utilizadores';
 $string['cannotfinddiscussion'] = 'Não foi possível localizar o tópico neste fórum';
 $string['cannotfindfirstpost'] = 'Não foi possível localizar o primeiro tópico deste fórum';
-$string['cannotfindorcreateforum'] = 'Não foi possível localizar ou criar um fórum noticias';
+$string['cannotfindorcreateforum'] = 'Não foi possível localizar ou criar um fórum de anúncios para o site';
 $string['cannotfindparentpost'] = 'Não foi possível localizar o tópico da mensagem  {$a}';
 $string['cannotmovefromsingleforum'] = 'Não é possível mover tópicos de um fórum de um único tópico de discussão';
 $string['cannotmovenotvisible'] = 'O fórum não está visível';
@@ -135,6 +135,9 @@ $string['disallowsubscribeteacher'] = 'Não é possível subscrever (excepto pro
 $string['disallowsubscription'] = 'Subscrição';
 $string['disallowsubscription_help'] = 'Este fórum foi configurado para que não seja possível subscrever os respetivos tópicos de discussão.';
 $string['discussion'] = 'Tópico';
+$string['discussionlocked'] = 'Este tópico de discussão foi bloqueado, logo já não pode responder ao mesmo';
+$string['discussionlockingdisabled'] = 'Não bloquear tópicos de discussão';
+$string['discussionlockingheader'] = 'Bloqueio de tópico de discussão';
 $string['discussionmoved'] = 'Este tópico foi transferido para \'{$a}\'.';
 $string['discussionmovedpost'] = 'Este tópico foi transferido para <a href="{$a->discusshref}">aqui</a> no fórum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Designação da discussão';
@@ -222,12 +225,13 @@ $string['forcesubscribed'] = 'Este fórum é de subscrição obrigatória';
 $string['forcesubscribed_help'] = 'Este fórum foi configurado para que não seja possível cancelar a subscrição dos tópicos de discussão.';
 $string['forum'] = 'Fórum';
 $string['forum:addinstance'] = 'Adicionar novo fórum';
-$string['forum:addnews'] = 'Adicionar notícia';
+$string['forum:addnews'] = 'Adicionar anúncios';
 $string['forum:addquestion'] = 'Adicionar pergunta';
 $string['forum:allowforcesubscribe'] = 'Permitir forçar a subscrição';
 $string['forumauthorhidden'] = 'Autor (oculto)';
 $string['forumblockingalmosttoomanyposts'] = 'Esta a aproximar-se do número limite de mensagens submetidas. Enviou {$a->numposts} mensagens no período de {$a->blockperiod} e o limite é de {$a->blockafter} mensagens.';
 $string['forumbodyhidden'] = 'Não pode visualizar esta mensagem, provavelmente porque ainda não submeteu uma mensagem no tópico de discussão, o tempo máximo de edição ainda não terminou, a discussão ainda não iniciou ou já terminou.';
+$string['forum:canoverridediscussionlock'] = 'Responder a tópicos de discussão bloqueados';
 $string['forum:canposttomygroups'] = 'Pode publicar para todos os grupos a que tem acesso';
 $string['forum:createattachment'] = 'Criar anexos';
 $string['forum:deleteanypost'] = 'Apagar qualquer mensagem (em qualquer altura)';
@@ -244,7 +248,7 @@ $string['forum:pindiscussions'] = 'Destacar tópicos de discussão';
 $string['forumposts'] = 'Mensagens no fórum';
 $string['forum:postwithoutthrottling'] = 'Isento do bloqueio por ultrapassar limite de mensagens submetidas';
 $string['forum:rate'] = 'Avaliar mensagens';
-$string['forum:replynews'] = 'Responder a notícias';
+$string['forum:replynews'] = 'Responder a anúncios';
 $string['forum:replypost'] = 'Responder a mensagens';
 $string['forums'] = 'Fóruns';
 $string['forum:splitdiscussions'] = 'Separar tópicos';
@@ -284,11 +288,19 @@ $string['invalidparentpostid'] = 'ID da mensagem ascendente é inválido';
 $string['invalidpostid'] = 'ID da mensagem inválido - {$a}';
 $string['lastpost'] = 'Última mensagem';
 $string['learningforums'] = 'Fóruns de aprendizagem';
+$string['lockdiscussionafter'] = 'Bloquear tópicos de discussão após período de inatividade';
+$string['lockdiscussionafter_help'] = 'Os tópicos de discussão podem ser bloqueados automaticamente após um tempo especificado decorrido desde a última resposta.
+
+Os utilizadores com permissões para responder a tópicos de discussão bloqueados podem desbloquear um tópico inserindo uma resposta a ele.';
 $string['longpost'] = 'Mensagem longa';
 $string['mailnow'] = 'Enviar já notificação por e-mail';
 $string['manydiscussions'] = 'Tópicos por página';
 $string['markalldread'] = 'Marcar como lidas todas as mensagens deste tópico.';
 $string['markallread'] = 'Marcar como lidas todas as mensagens deste fórum.';
+$string['markasreadonnotification'] = 'Ao enviar notificações de mensagens do fórum';
+$string['markasreadonnotification_help'] = 'Ao receber uma notificação de uma mensagem de um fórum, pode escolher se isso deve marcar a mensagem como lida para fins de sinalização de mensagens do fórum.';
+$string['markasreadonnotificationno'] = 'Não marcar a mensagem como lida';
+$string['markasreadonnotificationyes'] = 'Marcar a mensagem como lida';
 $string['markread'] = 'Marcar como lido';
 $string['markreadbutton'] = 'Marcar<br />lido';
 $string['markunread'] = 'Marcar como não lida';
@@ -354,7 +366,7 @@ $string['noguestpost'] = 'Lamentamos mas como visitante não pode submeter mensa
 $string['noguestsubscribe'] = 'Os convidados não têm permissão para subscrever um fórum.';
 $string['noguesttracking'] = 'Lamentamos mas como visitante não pode assinalar mensagens não lidas.';
 $string['nomorepostscontaining'] = 'Não foram encontradas mais mensagens contendo \'{$a}';
-$string['nonews'] = 'Ainda não foram publicadas notícias';
+$string['nonews'] = 'Ainda não foram publicados anúncios.';
 $string['noonecansubscribenow'] = 'A partir de agora, não há subscrições ativas';
 $string['nopermissiontosubscribe'] = 'Não tem permissão para ver os subscritores do fórum';
 $string['nopermissiontoview'] = 'Não tem permissões para ver esta mensagem';
@@ -518,6 +530,7 @@ $string['trackingtype_help'] = 'A sinalização de mensagens permite que os part
 Se selecionar a opção "Opcional" os participantes podem optar por ligar ou desligar a sinalização de mensagens através do bloco de administração. Os utilizadores deverão ativar a opção "Assinalar mensagens não lidas nos fóruns"  nas suas preferências do Fórum.
 
 A opção "Obrigatória" só estará disponível se o administrador a ativar. Ao selecionar esta opção a configuração "Assinalar mensagens não lidas" estará sempre ativada, independentemente das preferências do fórum escolhidas pelos utilizadores.';
+$string['trackreadposts_header'] = 'Assinalar mensagens não lidas nos fóruns';
 $string['unread'] = 'Não lidas';
 $string['unreadposts'] = 'Mensagens não lidas';
 $string['unreadpostsnumber'] = '{$a} mensagens não lidas';
@@ -536,6 +549,7 @@ $string['unsubscribelink'] = 'Remover subscrição deste fórum: {$a}';
 $string['unsubscribeshort'] = 'Cancelar subscrição';
 $string['usermarksread'] = 'Marcar manualmente as mensagens lidas';
 $string['viewalldiscussions'] = 'Ver todos os tópicos';
+$string['viewthediscussion'] = 'Ver o tópico de discussão';
 $string['warnafter'] = 'Número de mensagens que gera aviso';
 $string['warnafter_help'] = 'Os alunos podem ser avisados que se aproximam do limite máximo de mensagens permitidas num determinado período de tempo. Especifique aqui depois de quantos tópicos submetidos será o aluno avisado. Utilizadores com a capacidade mod/forum:postwithoutthrottling encontram-se isentos destes limites.';
 $string['warnformorepost'] = 'Atenção! Há mais do que uma discussão neste fórum - está em uso a mais recente';

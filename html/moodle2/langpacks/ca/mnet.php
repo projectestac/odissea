@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mnet', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['aboutyourhost'] = 'El vostre servidor';
 $string['accesslevel'] = 'Nivell d\'accés';
 $string['addhost'] = 'Afegeix un servidor';
-$string['addnewhost'] = 'Afegeix un servidor nou';
+$string['addnewhost'] = 'Afegeix un nou servidor';
 $string['addtoacl'] = 'Afegeix al control d\'accés';
 $string['allhosts'] = 'Tots els servidors';
 $string['allhosts_no_options'] = 'No hi ha opcions disponibles quan es veuen múltiples servidors';
@@ -61,7 +61,7 @@ $string['description'] = 'Descripció';
 $string['duplicate_usernames'] = 'Ha fallat la creació d\'un índex en les columnes "mnethostid" i "username" en la taula d\'usuaris.<br />Això pot passar quan hi ha <a href="{$a}" target="_blank">noms d\'usuari duplicats en la taula d\'usuaris</a>.<br />L\'actualització hauria de reeixir igualment. Feu clic en l\'enllaç de dalt si voleu obtenir instruccions per a solucionar aquest problema en una nova finestra. Podeu seguir-les al final de l\'actualització. <br />';
 $string['enabled_for_all'] = '(Aquest servei s\'ha habilitat per a tots els servidors)';
 $string['enterausername'] = 'Introduïu el nom d\'usuari, o una llista de noms d\'usuari separats per comes.';
-$string['error7020'] = 'Aquest error normalment es produeix si el lloc remot ha creat un registre per a vós amb la wwwroot incorrecta, per exemple, http://yoursite.com  en lloc de http://www.yoursite.com. Cal que us poseu en contacte amb l\'administrador del lloc remot amb el vostre wwwroot (com s\'especifica en config.php) demanant-li que actualitze el registre per al vostre servidor.';
+$string['error7020'] = 'Aquest error normalment es produeix si el lloc remot ha creat un registre per a vós amb la wwwroot incorrecta; per exemple, http://yoursite.com, en lloc de http://www.yoursite.com. Cal que us poseu en contacte amb l\'administrador del lloc remot amb el vostre wwwroot (com s\'especifica a config.php) per demanar-li que actualitzi el registre per al vostre servidor.';
 $string['error7022'] = 'El missatge que heu enviat al lloc remot s\'ha xifrat però no signat.  Això és inesperat; hauríeu d\'enviar un fitxer sobre aquest error si torna a ocórrer (si doneu més informació sobre la versió de l\'aplicació en qüestió, ... , es millorarà el suport )';
 $string['error7023'] = 'El lloc remot ha intentat desxifrar el missatge amb totes les claus que té en la base de dades per al vostre lloc. Cap d\'elles ha funcionat. Hauríeu de poder resoldre açò connectant amb el lloc remot i identificant-vos manualment. Això és poc probable que passi a menys que no hàgiu comunicat amb el lloc remot durant diversos mesos.';
 $string['error7024'] = 'Heu enviat un missatge no xifrat al lloc remot, però el lloc remot no ha acceptat la comunicació no xifrada del vostre lloc. Això és molt inesperat, probablement hauríeu de presentar un informe d\'error si això passa (donant tanta informació com sigui possible sobre les versions de l\'aplicació en qüestió, etc.)';
@@ -154,7 +154,7 @@ $string['nopubkey'] = 'Hi ha un problema en recuperar la clau pública.
 $string['nosite'] = 'No s\'ha trobat el lloc a nivell de curs';
 $string['nosuchfile'] = 'El fitxer/funció {$a} no existeix.';
 $string['nosuchfunction'] = 'No es pot trobar la funció, o funció prohibida per RPC.';
-$string['nosuchmodule'] = 'La funció s\'ha especificat incorrectament i no pot ser localitzada. Utilitzi el format mod/modulename/lib/functionname';
+$string['nosuchmodule'] = 'La funció s\'ha especificat incorrectament i no pot ser localitzada. Utilitzeu el format mod/modulename/lib/functionname';
 $string['nosuchpublickey'] = 'No es pot obtenir la clau pública per verificar la signatura.';
 $string['nosuchservice'] = 'El servei RPC no funciona en aquesta màquina.';
 $string['nosuchtransport'] = 'No existeix cap transport amb aquesta ID.';

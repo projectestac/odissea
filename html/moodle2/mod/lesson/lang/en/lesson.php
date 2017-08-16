@@ -155,6 +155,7 @@ $string['displayscorewithessays'] = '<p>You earned {$a->score} out of {$a->tempm
 <p>Your {$a->essayquestions} essay question(s) will be graded and added into your final score at a later date.</p>
 <p>Your current grade without the essay question(s) is {$a->score} out of {$a->grade}.</p>';
 $string['displayscorewithoutessays'] = 'Your score is {$a->score} (out of {$a->grade}).';
+$string['duplicatepagenamed'] = 'Duplicate page: {$a}';
 $string['edit'] = 'Edit';
 $string['editingquestionpage'] = 'Editing {$a} question page';
 $string['editlessonsettings'] = 'Edit lesson settings';
@@ -253,6 +254,7 @@ $string['lesson:edit'] = 'Edit a lesson activity';
 $string['lessonformating'] = 'Lesson formatting';
 $string['lesson:manage'] = 'Manage a lesson activity';
 $string['lesson:manageoverrides'] = 'Manage lesson overrides';
+$string['lesson:view'] = 'View lesson activity';
 $string['lesson:viewreports'] = 'View lesson reports';
 $string['lessonname'] = 'Lesson: {$a}';
 $string['lessonmenu'] = 'Lesson menu';
@@ -508,11 +510,6 @@ $string['youranswer'] = 'Your answer';
 $string['yourcurrentgradeis'] = 'Your current grade is {$a}';
 $string['yourcurrentgradeisoutof'] = 'Your current grade is {$a->grade} out of {$a->total}';
 $string['youshouldview'] = 'You should answer at least: {$a}';
-
-// Deprecated since Moodle 2.9.
-
-$string['essayemailmessage'] = '<p>Essay prompt:<blockquote>{$a->question}</blockquote></p><p>Your response:<blockquote><em>{$a->response}</em></blockquote></p><p>{$a->teacher}\'s comments:<blockquote><em>{$a->comment}</em></blockquote></p><p>You have received {$a->earned} out of {$a->outof} for this essay question.</p><p>Your grade for the lesson has been changed to {$a->newgrade}&#37;.</p>';
-$string['lessonattempted'] = 'Lesson attempted';
 
 // Deprecated since Moodle 3.0.
 $string['clicktopost'] = 'Click here to post your grade on the High Scores list.';

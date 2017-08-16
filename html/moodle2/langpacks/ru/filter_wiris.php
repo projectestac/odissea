@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'filter_wiris', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   filter_wiris
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

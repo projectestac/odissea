@@ -225,12 +225,20 @@ class behat_navigation extends behat_base {
      *
      * @Given /^I navigate to "(?P<nodetext_string>(?:[^"]|\\")*)" node in "(?P<parentnodes_string>(?:[^"]|\\")*)"$/
      *
+     * @todo MDL-57281 deprecate in Moodle 3.1
+     *
      * @throws ExpectationException
      * @param string $nodetext navigation node to click.
      * @param string $parentnodes comma seperated list of parent nodes.
      * @return void
      */
     public function i_navigate_to_node_in($nodetext, $parentnodes) {
+        // This step needs to be deprecated and replaced with one of:
+        // - I navigate to "PATH" in current page administration
+        // - I navigate to "PATH" in site administration
+        // - I navigate to course participants
+        // - I navigate to "PATH" in the course gradebook
+        // - I click on "LINK" "link" in the "Navigation" "block" .
         $parentnodes = array_map('trim', explode('>', $parentnodes));
         $this->select_node_in_navigation($nodetext, $parentnodes);
     }
@@ -248,6 +256,7 @@ class behat_navigation extends behat_base {
         // Site admin is different and needs special treatment.
         $siteadminstr = get_string('administrationsite');
 
+        // Create array of all parentnodes.
         $countparentnode = count($parentnodes);
 
         // If JS is disabled and Site administration is not expanded we
@@ -281,21 +290,7 @@ class behat_navigation extends behat_base {
             if ($pnode && $this->running_javascript() && $pnode->hasAttribute('aria-expanded') &&
                 ($pnode->getAttribute('aria-expanded') == "false")) {
 
-                $this->ensure_node_is_visible($pnode);
-
-                // If node is a link then some driver click in the middle of the node, which click on link and
-                // page gets redirected. To ensure expansion works in all cases, check if the node to expand is a
-                // link and if yes then click on link and wait for it to navigate to next page with node expanded.
-                $nodetoexpandliteral = behat_context_helper::escape($parentnodes[$i]);
-                $nodetoexpandxpathlink = $pnodexpath . "/a[normalize-space(.)=" . $nodetoexpandliteral . "]";
-
-                if ($nodetoexpandlink = $node->find('xpath', $nodetoexpandxpathlink)) {
-                    $behatgeneralcontext = behat_context_helper::get('behat_general');
-                    $nodetoexpandlink->click();
-                    $behatgeneralcontext->wait_until_the_page_is_ready();
-                } else {
-                    $pnode->click();
-                }
+                $this->js_trigger_click($pnode);
 
                 // Wait for node to load, if not loaded before.
                 if ($pnode->hasAttribute('data-loaded') && $pnode->getAttribute('data-loaded') == "false") {
@@ -352,7 +347,7 @@ class behat_navigation extends behat_base {
             "/li[contains(concat(' ', normalize-space(@class), ' '), ' contains_branch ')]" .
             "/ul/li[contains(concat(' ', normalize-space(@class), ' '), ' contains_branch ')]" .
             "[p[contains(concat(' ', normalize-space(@class), ' '), ' branch ')]" .
-            "/span[normalize-space(.)=" . $nodetextliteral ."]]" .
+            "[span[normalize-space(.)=" . $nodetextliteral ."] or a[normalize-space(.)=" . $nodetextliteral ."]]]" .
             "|" .
             "//div[contains(concat(' ', normalize-space(@class), ' '), ' content ')]/div" .
             "/ul[contains(concat(' ', normalize-space(@class), ' '), ' block_tree ')]" .
@@ -534,10 +529,13 @@ class behat_navigation extends behat_base {
      */
     public function i_open_my_profile_in_edit_mode() {
         global $USER;
+
         $user = $this->get_session_user();
         $globuser = $USER;
         $USER = $user; // We need this set to the behat session user so we can call isloggedin.
+
         $systemcontext = context_system::instance();
+
         $bodynode = $this->find('xpath', 'body');
         $bodyclass = $bodynode->getAttribute('class');
         $matches = [];
@@ -546,10 +544,11 @@ class behat_navigation extends behat_base {
         } else {
             $courseid = SITEID;
         }
+
         if (isloggedin() && !isguestuser($user) && !is_mnet_remote_user($user)) {
             if (is_siteadmin($user) ||  has_capability('moodle/user:update', $systemcontext)) {
                 $url = new moodle_url('/user/editadvanced.php', array('id' => $user->id, 'course' => SITEID,
-                                                                      'returnto' => 'profile'));
+                    'returnto' => 'profile'));
             } else if (has_capability('moodle/user:editownprofile', $systemcontext)) {
                 $userauthplugin = false;
                 if (!empty($user->auth)) {
@@ -562,13 +561,15 @@ class behat_navigation extends behat_base {
                             $url = new moodle_url('/user/edit.php', array('id' => $user->id, 'returnto' => 'profile'));
                         } else {
                             $url = new moodle_url('/user/edit.php', array('id' => $user->id, 'course' => $courseid,
-                                                                          'returnto' => 'profile'));
+                                'returnto' => 'profile'));
                         }
                     }
+
                 }
             }
             $this->getSession()->visit($this->locate_path($url->out_as_local_url()));
         }
+
         // Restore global user variable.
         $USER = $globuser;
     }
@@ -601,6 +602,10 @@ class behat_navigation extends behat_base {
         $course = $DB->get_record("course", array("fullname" => $coursefullname), 'id', MUST_EXIST);
         $url = new moodle_url('/course/view.php', ['id' => $course->id]);
         $this->getSession()->visit($this->locate_path($url->out_as_local_url(false)));
-        $this->execute("behat_forms::press_button", get_string('turneditingon'));
+        try {
+            $this->execute("behat_forms::press_button", get_string('turneditingon'));
+        } catch (Exception $e) {
+            $this->execute("behat_navigation::i_navigate_to_in_current_page_administration", [get_string('turneditingon')]);
+        }
     }
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'theme_clean', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,4 +39,4 @@ Si l\'altura del del vostre logo és major que 75 píxels afegiu la següent reg
 a.logo {height: 100px;} o el que tingui d\'altura el logo.';
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Dret';
-$string['region-side-pre'] = 'Esquerre';
+$string['region-side-pre'] = 'Esquerra';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,7 +113,6 @@ $string['skipresultgraph'] = 'Hoppa över diagrammet över resultat';
 $string['spaceleft'] = 'Tillgängligt utrymme';
 $string['spacesleft'] = 'Tillgängliga utrymmen';
 $string['taken'] = 'Upptagen';
-$string['timerestrict'] = 'Begränsa möjligheten att svara till denna tidsperiod';
 $string['userchoosethisoption'] = 'Användaren väljer detta alternativ';
 $string['viewallresponses'] = 'Visa {$a} svar';
 $string['withselected'] = 'Med valda';

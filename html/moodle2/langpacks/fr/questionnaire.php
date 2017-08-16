@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -396,7 +396,6 @@ $string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'L\'URL vers laquelle l\'utilisateur sera redirigé après avoir répondu au questionnaire.';
 $string['remove'] = 'Supprimer';
 $string['removeallquestionnaireattempts'] = 'Supprimer toutes les réponses à ce questionnaire';
-$string['removenotinuse'] = 'Ce questionnaire était basé sur un questionnaire « public » qui a été supprimé. Il ne peut donc plus être utilisé et doit être supprimé (contactez votre administrateur).';
 $string['required'] = 'Réponse obligatoire';
 $string['required_help'] = 'Si vous sélectionnez **Oui**, la question sera obligatoire,
 c\'est-à-dire que le répondant ne pourra pas soumettre le questionnaire sans y avoir répondu.';

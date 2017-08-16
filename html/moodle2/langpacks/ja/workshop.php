@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,7 @@ $string['assignedassessments'] = '評価が必要な割り当て済み提出';
 $string['assignedassessmentsnone'] = 'あなたには評価する提出が割り当てられていません。';
 $string['backtoeditform'] = '編集フォームに戻る';
 $string['byfullname'] = 'by <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'by {$a}';
 $string['calculategradinggrades'] = '評価に対する評点を計算する';
 $string['calculategradinggradesdetails'] = '期待数: {$a->expected}<br />計算数: {$a->calculated}';
 $string['calculatesubmissiongrades'] = '提出に対する評点を計算する';
@@ -145,6 +146,7 @@ $string['examplesbeforesubmission'] = '自身の提出前に提出例を評価�
 $string['examplesmode'] = '評価例のモード';
 $string['examplesubmissions'] = '提出例';
 $string['examplesvoluntary'] = '提出例の評価は任意です';
+$string['exportsubmission'] = 'このページをエクスポートする';
 $string['feedbackauthor'] = '作成者へのフィードバック';
 $string['feedbackauthorattachment'] = '添付';
 $string['feedbackby'] = '{$a} によるフィードバック';
@@ -303,14 +305,19 @@ $string['switchphase30auto'] = '{$a->daydatetime} ({$a->distanceday}) 以後、�
 $string['switchphase30info'] = 'あなたはワークショップを<strong>評価</strong>フェーズに切り替えようとしています。このフェーズでは (設定されている場合、アクセスコントロールで設定された日時の範囲内に) 評価者は自分に割り当てられた提出を評価することができます。';
 $string['switchphase40info'] = 'あなたはワークショップを<strong>成績評価</strong>フェーズに切り替えようとしています。このフェーズではユーザは自分の提出または評価を修正することはできません。教師は成績評価ツールを最終評点の計算および評価者に対するフィードバックの提供に使用することができます。';
 $string['switchphase50info'] = 'あなたはワークショップを終了しようとしています。これにより計算済み評点が評定表に表示されます。学生は自分の提出および提出評価を閲覧することができます。';
+$string['switchphasenext'] = '次のフェーズにスキップする';
 $string['taskassesspeers'] = '相互評価';
 $string['taskassesspeersdetails'] = '合計: {$a->total}<br />保留: {$a->todo}';
 $string['taskassessself'] = 'あなた自身を評価する';
 $string['taskconclusion'] = '活動の結論を提供する';
+$string['taskdone'] = 'タスク完了';
+$string['taskfail'] = 'タスク失敗';
+$string['taskinfo'] = 'タスク情報';
 $string['taskinstructauthors'] = '提出のインストラクションを記述する';
 $string['taskinstructreviewers'] = '評価のインストラクションを記述する';
 $string['taskintro'] = 'ワークショップ説明を設定する';
 $string['tasksubmit'] = 'あなたのワークを提出する';
+$string['tasktodo'] = 'やるべきタスク';
 $string['toolbox'] = 'ワークショップツールボックス';
 $string['undersetup'] = '現在、ワークショップは設定中です。次のフェーズに切り替わるまでお待ちください。';
 $string['useexamples'] = '提出例を使用する';
@@ -322,6 +329,7 @@ $string['usepeerassessment_help'] = 'この設定を有効にした場合、ユ�
 $string['userdatecreated'] = '提出日時: <span>{$a}</span>';
 $string['userdatemodified'] = '修正日時: <span>{$a}</span>';
 $string['userplan'] = 'ワークショッププランナー';
+$string['userplanaccessibilityskip'] = '現在のタスクをスキップする';
 $string['userplanaccessibilitytitle'] = '{$a} フェーズのワークショップタイムライン';
 $string['userplancurrentphase'] = '現在のフェーズ';
 $string['userplan_help'] = 'ワークショッププランナーでは活動のすべてのフェーズおよびタスクごとのフェーズ一覧を表示します。現在のフェーズはハイライトされ完了したタスクにはチェックが表示されます。';
@@ -334,6 +342,7 @@ $string['workshop:addinstance'] = '新しいワークショップを追加する
 $string['workshop:allocate'] = '提出をレビューのために割り当てる';
 $string['workshop:deletesubmissions'] = '提出を削除する';
 $string['workshop:editdimensions'] = '評価フォームを編集する';
+$string['workshop:exportsubmissions'] = '提出をエクスポートする';
 $string['workshop:ignoredeadlines'] = '時間制限を無視する';
 $string['workshop:manageexamples'] = '提出例を管理する';
 $string['workshopname'] = 'ワークショップ名';

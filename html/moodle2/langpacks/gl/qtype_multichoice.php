@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multichoice', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['answernumberingABCD'] = 'A., B., C., ...';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'Sen numeración';
-$string['answersingleno'] = 'Múltiplas respostas permitidas';
+$string['answersingleno'] = 'Múltiples respostas permitidas';
 $string['answersingleyes'] = 'Só unha resposta';
 $string['choiceno'] = 'Escolla {$a}';
 $string['choices'] = 'Escollas dispoñibles';
@@ -57,15 +57,15 @@ $string['overallpartiallycorrectfeedback'] = 'Avaliación de calquera resposta p
 $string['partiallycorrectfeedback'] = 'Para calquera resposta parcialmente correcta';
 $string['pleaseselectananswer'] = 'Seleccione unha resposta.';
 $string['pleaseselectatleastoneanswer'] = 'Seleccione polo menos unha resposta.';
-$string['pluginname'] = 'Escolla múltipla';
-$string['pluginnameadding'] = 'Engadindo unha pregunta de escolla múltipla';
-$string['pluginnameediting'] = 'Editando unha pregunta de escolla múltipla';
-$string['pluginname_help'] = 'En resposta a unha pregunta (que pode incluír unha imaxe) o alumno escolle a resposta entre varias respostas posíbeis. Hai dous tipos de preguntas con resposta múltipla: con unha e con máis dunha resposta correcta.';
+$string['pluginname'] = 'Escolla múltiple';
+$string['pluginnameadding'] = 'Engadindo unha pregunta de escolla múltiple';
+$string['pluginnameediting'] = 'Editando unha pregunta de escolla múltiple';
+$string['pluginname_help'] = 'En resposta a unha pregunta (que pode incluír unha imaxe) o alumno escolle a resposta entre varias respostas posíbeis. Hai dous tipos de preguntas con resposta múltiple: con unha e con máis dunha resposta correcta.';
 $string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnamesummary'] = 'Permite seleccionar unha ou varias respostas dunha lista predefinida.';
 $string['selectmulti'] = 'Seleccione unha ou máis:';
 $string['selectone'] = 'Seleccione unha:';
 $string['shuffleanswers'] = 'Barallar respostas';
-$string['shuffleanswers_help'] = 'De estar activado, a orde das preguntas varía ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade.';
+$string['shuffleanswers_help'] = 'De estar activado, a orde das escollas varía ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade.';
 $string['singleanswer'] = 'Escoller unha resposta.';
 $string['toomanyselected'] = 'Seleccionou respostas de máis.';

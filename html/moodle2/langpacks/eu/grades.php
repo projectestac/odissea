@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -183,7 +183,7 @@ $string['editverbose'] = 'Editatu: {$a->category} {$a->itemmodule} {$a->itemname
 $string['enableajax'] = 'Gaitu AJAX';
 $string['enableajax_help'] = 'Kalifikatzailearen txostenari AJAX funtzionalitate geruza bat gehitzen dio, ohiko eragiketak arinduz. Erabiltzailearen nabigatzaileak Javascript-a aktibatuta izan behar du.';
 $string['enableoutcomes'] = 'Ikas-emaitzak gaitu';
-$string['enableoutcomes_help'] = 'Gaituz gero, helburuekin lotutako elementuak eskala bat edo gehiago erabilita kalifikatu ahal izango dira.';
+$string['enableoutcomes_help'] = 'Gaituz gero, kalifikazio-elementuak helburuekin lotutako eskala bat edo gehiago erabilita kalifikatu ahal izango dira.';
 $string['encoding'] = 'Kodifikazioa';
 $string['encoding_help'] = 'Aukeratu datuetarako karaktere-kodifikazioa. (Kodifikazio estandarra UTF-8 da.) Nahastu eta kodifikazio okerra aukeratzen bada, datuen inportazioa aurreikustean ohartuko zara.';
 $string['errorcalculationbroken'] = 'Ziur aski erreferentzia zirkularra edo kalkulu-formula okerra';
@@ -317,7 +317,7 @@ $string['gradepass'] = 'Gainditzeko kalifikazioa';
 $string['gradepassgreaterthangrade'] = 'Gainditzeko kalifikazioa ezin da izan gehieneko kalifikazio posiblea baino handiagoa {$a}';
 $string['gradepass_help'] = 'Ezarpen honek zehazten du gainditzeko gutxienezko kalifikazioa. balorea jarduera eta ikastaro-osaketan erabiltzen da, eta baita kalifikazio-liburuan, zeinetan gainditzeko kalifikazioak berdez markatzen diren eta gainditzen ez dutenak gorriz.';
 $string['gradepointdefault'] = 'Berezko kalifikazioa';
-$string['gradepointdefault_help'] = 'Ezarpen honek kalifikazio elementu baten gehieneko puntuazio eskuragarrirako berezko balorea zehazten du.';
+$string['gradepointdefault_help'] = 'Ezarpen honek jarduera baterako gehieneko puntuazio eskuragarrirako berezko balorea zehazten du.';
 $string['gradepointdefault_validateerror'] = 'Balore honek 1 eta gehieneko puntuazioaren arteko zenbaki osoa izan behar du.';
 $string['gradepointmax'] = 'Kalifikazioaren gehieneko puntuazioa';
 $string['gradepointmax_help'] = 'Ezarpen honek  jarduera baterako gehieneko puntuazio eskuragarria zehazten du.';
@@ -331,6 +331,8 @@ $string['gradereport'] = 'Kalifikazio-txostena';
 $string['graderreport'] = 'Kalifikatzailearen txostena';
 $string['grades'] = 'Kalifikazioak';
 $string['gradesforuser'] = '{$a->user} erabiltzailearen kalifikazioak';
+$string['gradesmoduledeletionpendingwarning'] = 'Oharra: Jarduerak ezabatzen ari dira! Kalifikazio batzuk ezabatuak izango dira.';
+$string['gradesmoduledeletionprefix'] = '[Ezabaketa martxan da]';
 $string['gradesonly'] = 'Aldatu bakarrik kalifikazioetara';
 $string['gradessettings'] = 'kalifikazioen ezarpenak';
 $string['gradetype'] = 'Kalifikazio-mota';
@@ -434,7 +436,7 @@ $string['letterreal'] = 'Letra (erreala)';
 $string['letters'] = 'Letrak';
 $string['linkedactivity'] = 'Estekatutako jarduera';
 $string['linkedactivity_help'] = 'Ezarpen honek ikas-emaitzari estekatutako jarduera bat zehazten du. Ikasleen errendimendua neurtzeko erabil daiteke, jardueraren ebaluazioa kontuan hartu gabeko irizpideak erabilita.';
-$string['linktoactivity'] = 'Esteka {$a->name} jarduerara';
+$string['linktoactivity'] = 'Esteka {$a->title} izeneko {$a->name} jarduerara';
 $string['lock'] = 'Blokeatu';
 $string['locked'] = 'Blokeatuta';
 $string['locked_help'] = 'Markatuz gero, kalifikazioak ezingo dira automatikoki eguneratu lotutako jardueratik.';
@@ -487,7 +489,7 @@ $string['modgradedonotmodify'] = 'Ez aldatu ezarrita dauden kalifikazioak';
 $string['modgradeerrorbadpoint'] = 'Kalifikazio balio baliogabea. 1 eta {$a} arteko zenbaki oso bat izan behar da.';
 $string['modgradeerrorbadscale'] = 'Eskala baliogabea aukeratu da. Mesedez ziurtatu beheko aukeretatik hautatzen duzula.';
 $string['modgrade_help'] = 'Aukeratu jarduera honetan erabiliko den kalifikazio-mota. "Eskala" aukeratuz gero, ondoren zabaltzen den "eskala" menuan bat aukeratu beharko duzu.';
-$string['modgrademaxgrade'] = 'Gehieneko kalifikazioa';
+$string['modgrademaxgrade'] = 'Gehieneko puntuazioa';
 $string['modgraderescalegrades'] = 'Berriz eskalatu existitzen diren kalifikazioak';
 $string['modgraderescalegrades_help'] = 'Kalifikazio-elementu baten gehienezko kalifikazioa aldatzen duzunean zehaztu behar duzu existitzen diren kalifikazioen ehunekoak ere aldatuko diren edo ez.
 
@@ -674,7 +676,7 @@ $string['showaverage_help'] = 'Batez bestearen zutabea erakustea edo ez. Kontuan
 $string['showaverages'] = 'Batez bestekoak erakutsi';
 $string['showaverages_help'] = 'Gaituta, kalifikatzailearen txostenean kategoria eta elementu bakoitzerako  batez bestekoa erakusten dituen beste lerro bat erakusten du.';
 $string['showcalculations'] = 'Kalkuluak erakutsi';
-$string['showcalculations_help'] = 'Gaituz gero, editatzean kalkulagailu baten ikonoa agertzen da kalifikazio-elementu edo kategoria bakoitzaren ondoan elementua kalkulatua delako adierazlea erakutsiz.';
+$string['showcalculations_help'] = 'Gaituz gero, editatzean kalkulagailuaren ikonoa erakusten da kalkulatutako elementuen gainean kalkulatua dela adierazteko.';
 $string['showcontributiontocoursetotal'] = 'Erakutsi ikastaroaren denerako ekarpena';
 $string['showcontributiontocoursetotal_help'] = 'Kalifikazio-elementu bakoitzak ikastaroaren denera egiten dion ekarpenaren ehunekoa (ponderazioak aplikatu ondoren) duen zutabea erakustea edo ez.';
 $string['showeyecons'] = 'Erakutsi ikonoak erakutsi/ezkutatu';
@@ -715,7 +717,7 @@ $string['showrange_help'] = 'Ibilarteen zutabea erakutsi?';
 $string['showranges'] = 'Ibiltarteak erakutsi';
 $string['showranges_help'] = 'Gaituz gero, kalifikatzailearen txostenean kategoria eta elementu bakoitzerako kalifikazio-mailak erakusten dituen beste lerro bat erakusten du.';
 $string['showrank'] = 'Erakutsi sailkapena';
-$string['showrank_help'] = 'Erakutsi ikaslearen kokalekua klaseko gainontzekoekiko kalifikazio-elementu bakoitzean?';
+$string['showrank_help'] = 'Erakutsi ikaslearen kokalekua klaseko gainontzekoen aldean kalifikazio-elementu bakoitzean?';
 $string['showuserimage'] = 'Erabiltzaile-profilaren irudiak erakutsi';
 $string['showuserimage_help'] = 'Kalfikatzailearen txostenean izenaren ondoren erabiltzailearen profilaren irudia erakutsi ala ez';
 $string['showverbose'] = 'Erakutsi {$a->category} {$a->itemmodule} {$a->itemname}';

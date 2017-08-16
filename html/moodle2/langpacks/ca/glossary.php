@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'glossary', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,12 +132,7 @@ $string['deletingcomment'] = 'S\'està suprimint un comentari';
 $string['deletingnoneemptycategory'] = 'Suprimir aquesta categoria no suprimirà les entrades que conté: simplement aquestes es marcaran com a no categoritzades.';
 $string['descending'] = 'descendent';
 $string['destination'] = 'Destinació de les entrades importades';
-$string['destination_help'] = '<p>Podeu especificar on voleu importar les entrades:</p>
-
-<ul>
-	<li><b>Glossari actual:</b> les entrades importades s\'afegiran al glossari obert actualment.</li>
-	<li><b>Nou glossari:</b> es crearà un glossari nou basat en la informació que es trobi en el fitxer i les noves entrades s\'hi inseriran.</li>
-</ul';
+$string['destination_help'] = 'Les entrades es poden importar i afegir o al glossari actual o a un de nou; en aquest darrer cas, es crearà un glossari nou basat en la informació que hi ha al fitxer XML.';
 $string['disapprove'] = 'Desfés l\'aprovació';
 $string['displayformat'] = 'Format de visualització';
 $string['displayformatcontinuous'] = 'Continu sense autor';
@@ -256,11 +251,7 @@ $string['glossary:managecomments'] = 'Gestionar comentaris';
 $string['glossary:manageentries'] = 'Gestionar entrades';
 $string['glossary:rate'] = 'Valorar entrades';
 $string['glossarytype'] = 'Tipus de glossari';
-$string['glossarytype_help'] = '<p>El sistema de glossaris permet exportar entrades dels glossaris secundaris al glossari principal del curs.</p>
-
-<p>Per a fer això, heu d\'especificar quin és el glossari principal. </p>
-
-<p>Avís: només pot haver-hi un glossari principal per curs i només el professorat pot actualitzar-lo.</p>';
+$string['glossarytype_help'] = 'Un glossari principal és aquell en què es poden importar dades des dels glossaris secundaris. Només pot haver-hi un glossari principal per curs. Si la importació d\'entrades de glossari no és necessària, tots els glossaris del curs poden ser secundaris.';
 $string['glossary:view'] = 'Veure glossari';
 $string['glossary:viewallratings'] = 'Visualitzar totes les valoracions fetes individualment';
 $string['glossary:viewanyrating'] = 'Visualitzar les valoracions totals que tothom ha rebut';
@@ -277,9 +268,7 @@ $string['isglobal'] = 'Aquest glossari és global?';
 $string['isglobal_help'] = 'Les entrades d\'un glossari global s\'enllacen des de tot el lloc, no sols des del curs al qual pertany el glossari. Només els administradors poden fer que un glossari sigui global.';
 $string['letter'] = 'lletra';
 $string['linkcategory'] = 'Enllaça automàticament aquesta categoria';
-$string['linkcategory_help'] = '<p>Podeu especificar si voleu que les categories s\'enllacin automàticament o no.</p>
-
-<p>Avís: les categories s\'enllacen diferenciant majúscules i minúscules i només si coincideix la paraula completa.</p>';
+$string['linkcategory_help'] = 'Si els enllaços automàtics del glossari s\'han habilitat i aquest paràmetre està habilitat, el nom de la categoria s\'enllaçarà de manera automàtica onsevulla que aparegui tot al llarg de la resta del curs. Quan un participant segueix l\'enllaç del nom d\'una categoria, anirà a la pàgina del glossari «Navega per categories».';
 $string['linking'] = 'Enllaços automàtics';
 $string['mainglossary'] = 'Glossari principal';
 $string['maxtimehaspassed'] = 'El temps màxim per editar aquest comentari ({$a}) ja ha passat!';

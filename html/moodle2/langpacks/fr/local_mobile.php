@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,12 +55,6 @@ $string['forcelogout'] = 'Imposer la déconnexion';
 $string['forcelogout_desc'] = 'Si ce réglage est activé, l\'option « Changer de site » est remplacée par « Déconnexion », avec pour conséquence que les utilisateurs sont complètement déconnectés et devront re-saisir leur mot de passe lors de leur prochaine visite.';
 $string['local_mobiledescription'] = 'Plugin qui étend les fonctionnalités du service mobile';
 $string['local_mobilesettings'] = 'Réglages';
-$string['local_mobiletypeoflogin'] = 'Sélectionner un type de connexion';
-$string['local_mobiletypeoflogin_key'] = 'Type de connexion';
-$string['local_mobileurlscheme'] = 'Schéma d\'URL pour la connexion via une fenêtre de navigateur.';
-$string['local_mobileurlscheme_key'] = 'Schéma d\'URL';
-$string['loginintheapp'] = 'Via l\'app';
-$string['logininthebrowser'] = 'Via un navigateur (pour les plugins SSO)';
 $string['mainmenu'] = 'Menu principal';
 $string['mobilefeatures'] = 'Fonctionnalités mobiles';
 $string['pluginname'] = 'Fonctionnalités supplémentaires Moodle Mobile';

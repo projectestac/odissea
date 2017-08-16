@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['contentheader'] = 'コンテンツ';
 $string['display'] = 'フォルダコンテンツを表示する';
 $string['display_help'] = 'あなたがコースページでのフォルダコンテンツ表示を選択した場合、別ページへのリンクは表示されません。「コースページに説明を表示する」がチェックされた場合のみ説明が表示されます。<br /> この場合、参加者の閲覧動作が記録されないことに留意してください。';
@@ -48,6 +49,7 @@ $string['modulename_help'] = 'フォルダモジュールにおいてコース�
 * 例えば過去のPDF版の試験問題または学生プロジェクトで使用するイメージコレクションのように1つのテーマに関する一連のファイル用として
 * コースページ内の教師に共有アップロードスペースを提供するため (教師のみ閲覧できるようフォルダを非表示にする)';
 $string['modulenameplural'] = 'フォルダ';
+$string['newfoldercontent'] = '新しいフォルダコンテンツ';
 $string['noautocompletioninline'] = '活動閲覧による自動完了は「コースページにインライン表示する」オプションと同時に選択することはできません。';
 $string['page-mod-folder-view'] = 'フォルダモジュールメインページ';
 $string['page-mod-folder-x'] = 'すべてのフォルダモジュールページ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_textarea', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = 'Campo área de texto';
 $string['maxbytes'] = 'Tamanho máximo do ficheiro (bytes)';
 $string['maxbytes_desc'] = 'Se definir como zero será ilimitado';
 $string['pluginname'] = 'Área de texto';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_community', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,7 +84,7 @@ $string['licence_help'] = 'Μπορείτε να αναζητήσετε μαθή
 $string['moredetails'] = 'Περισσότερες λεπτομέρειες';
 $string['mycommunities'] = 'Οι κοινότητες μου:';
 $string['next'] = 'Επόμενο >>>';
-$string['nocomments'] = 'Χωρίς Σχόλια';
+$string['nocomments'] = 'Χωρίς σχόλια';
 $string['nocourse'] = 'Δεν βρέθηκαν μαθήματα';
 $string['noratings'] = 'Χωρίς βαθμολόγηση';
 $string['operation'] = 'Λειτουργία';

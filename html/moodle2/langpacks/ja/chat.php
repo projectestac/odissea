@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'チャットログを表示する';
 $string['chatreport'] = 'チャットセッション';
 $string['chat:talk'] = 'チャットで会話する';
 $string['chattime'] = '次回のチャット時間';
+$string['chat:view'] = 'チャット活動を表示する';
 $string['compact'] = 'コンパクト';
 $string['composemessage'] = 'メッセージを作成する';
 $string['configmethod'] = 'Ajaxチャットメソッドではサーバが定期的に更新するAjaxベースのチャットインターフェースを提供します。ノーマルチャットメソッドではクライアントが定期的にサーバにアクセスして内容を更新します。このメソッドは設定を必要とせず、どこでも動作します。しかし、チャット参加者が多くなった場合、サーバに大きな負荷がかかります。Chatサーバデーモンを使用する場合、Unixのシェルアクセスが必要です。また、Chatサーバデーモンにより軽快なチャット環境を提供することができます。';
@@ -87,7 +88,7 @@ $string['methodnormal'] = 'ノーマルメソッド';
 $string['modulename'] = 'チャット';
 $string['modulename_help'] = 'チャット活動において参加者はテキストベースのリアルタイム同時ディスカッションを実施することができます。
 
-チャットは1回のみの活動、または毎日または毎週同じ時間に開催される活動とすることができます。チャットセッションは保存され、すべてのユーザが閲覧できるようにすること、またチャットセッションログを閲覧できるケイパビリティが割り当てられたユーザのみに閲覧を制限することができます。
+チャットは1回のみの活動、または毎日または毎週同じ時間に開催される活動とすることができます。チャットセッションは保存され、すべてのユーザが閲覧できるようにすること、またチャットセッションログを閲覧できるケイパビリティが割り当てられたユーザにのみ閲覧を制限することができます。
 
 チャットは特に直接集まることのできない場合の下記のようなグループチャットに有用です:
 

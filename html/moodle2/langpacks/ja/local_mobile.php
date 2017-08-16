@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,9 +34,5 @@ $string['enableadditionalservice'] = 'Moodleモバイルに追加機能サービ
 $string['enableadditionalservicedescription'] = 'このサービスはイネーブルにしなければなりません。';
 $string['local_mobiledescription'] = 'モバイルサービス機能を拡張するプラグイン';
 $string['local_mobilesettings'] = '設定';
-$string['local_mobiletypeoflogin'] = 'ログイン方式の選択';
-$string['local_mobiletypeoflogin_key'] = 'ログイン方式';
-$string['loginintheapp'] = 'アプリ経由';
-$string['logininthebrowser'] = 'ブラウザ経由（SSOプラグイン用）';
 $string['pluginname'] = 'Moodle Mobile追加機能';
 $string['pluginnotenabledorconfigured'] = 'アプリを起動するには、Moodle Mobileローカルプラグインを有効にして設定を行う必要があります';

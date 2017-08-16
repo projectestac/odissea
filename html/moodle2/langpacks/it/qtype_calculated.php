@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_calculated', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,7 +132,7 @@ $string['significantfiguresformat'] = 'cifre significative';
 $string['synchronize'] = 'Sincronizza i dati dei dataset condivisi con altre domande dei quiz';
 $string['synchronizeno'] = 'Non sincronizzare';
 $string['synchronizeyes'] = 'Sincronizza';
-$string['synchronizeyesdisplay'] = 'Sincronizza e visualizza il nome del dataset condiviso come prefisso al nome della domanda';
+$string['synchronizeyesdisplay'] = 'Sincronizza e visualizza il nome del dataset condiviso come prefisso del nome della domanda';
 $string['tolerance'] = 'Tolleranza &plusmn;';
 $string['tolerancetype'] = 'Tipo';
 $string['trueanswerinsidelimits'] = 'Risposta corretta: {$a->correct} dentro i limiti del valore vero {$a->true}';

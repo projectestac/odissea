@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = '何件の最高評点を表示しますか (0 = �
 $string['config_show_worst'] = '何件の最低評点を表示しますか (0 = 無効) ?';
 $string['configuredtoshownothing'] = '現在、このブロックの設定では結果の表示は許可されていません。';
 $string['config_use_groups'] = '学生の代わりにグループを表示しますか (活動がグループをサポートしている場合のみ)?';
+$string['defaultdecimalplaces'] = '小数位';
+$string['defaultdecimalplaces_desc'] = 'デフォルトで表示する小数位桁数です。';
+$string['defaultgradedisplay'] = '評点表示方法';
+$string['defaultgradedisplay_desc'] = 'デフォルトで評点をどのように表示しますか?';
+$string['defaulthighestgrades'] = 'デフォルトの最高評点表示数';
+$string['defaulthighestgrades_desc'] = 'デフォルトで何件の最高評点を表示しますか?';
+$string['defaultlowestgrades'] = 'デフォルトの最低評点表示数';
+$string['defaultlowestgrades_desc'] = 'デフォルトで何件の最低評点を表示しますか?';
+$string['defaultnameoptions'] = '結果のプライバシー';
+$string['defaultnameoptions_desc'] = 'デフォルトで学生をどのように認識しますか?';
+$string['defaultshowgroups'] = 'デフォルトでグループを表示する';
+$string['defaultshowgroups_desc'] = 'デフォルトで学生の代わりにグループを表示します (活動がグループをサポートしている場合)。';
 $string['error_emptyactivityid'] = 'このブロックを設定して、どの活動の結果を表示するか選択してください。';
 $string['error_emptyactivityrecord'] = 'エラー: 選択された活動はデータベースに存在しません。';
 $string['error_nogroupsexist'] = 'エラー: ブロックはグループモードの評点を表示するよう設定されていますが、このコースでは定義されたグループがありません。';

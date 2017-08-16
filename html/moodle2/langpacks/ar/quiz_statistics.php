@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz_statistics', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['actualresponse'] = 'الإجابة الفعلية';
 $string['allattempts'] = 'كل المحاولات';
 $string['allattemptsavg'] = 'العلامة المتوسطة لكل المحاولات';
-$string['allattemptscount'] = 'العدد الكلي للمحاولات الكاملة والمُصحَّحة';
+$string['allattemptscount'] = 'العدد الكلي للمحاولات';
 $string['analysisnameonly'] = '"{$a->name}"';
 $string['analysisno'] = '({$a->number}) "{$a->name}"';
 $string['analysisnovariant'] = '({$a->number}) "{$a->name}" تباين  {$a->variant}';
 $string['analysisofresponses'] = 'تحليل الأجوبة';
-$string['analysisofresponsesfor'] = 'تحليل الأجوبة لـ {$a}';
+$string['analysisofresponsesfor'] = 'تحليل الأجوبة من أجل {$a}.';
 $string['analysisvariant'] = '"{$a->name}" تباين {$a->variant}';
 $string['attempts'] = 'المحاولات';
 $string['attemptsall'] = 'كل المحاولات';
@@ -41,7 +41,7 @@ $string['attemptsfirst'] = 'المحاولة الأولى';
 $string['backtoquizreport'] = 'العودة إلى صفحة تقرير الإحصاءات الرئيسية';
 $string['calculatefrom'] = 'حساب الإحصاءات من';
 $string['count'] = 'عدد';
-$string['coursename'] = 'اسم المقرر الدراسي';
+$string['coursename'] = 'اسم المقرر';
 $string['detailedanalysis'] = 'تحليل أكثر تفصيلاً للأجوبة على هذا السؤال';
 $string['downloadeverything'] = 'تحميل التقرير بالكامل بصيغة';
 $string['duration'] = 'مفتوحة لـ';

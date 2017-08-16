@@ -74,10 +74,8 @@ class mod_folder_renderer extends plugin_renderer_base {
                 get_string('downloadfolder', 'folder')
             );
 
-            $buttons .= $this->output->container(
-                $downloadbutton,
-                'mdl-align folder-download-button');
-            }
+            $buttons .= $downloadbutton;
+        }
 
         // Display the "Edit" button if current user can edit folder contents.
         // Do not display it on the course page for the teachers because there
@@ -89,14 +87,13 @@ class mod_folder_renderer extends plugin_renderer_base {
                 get_string('edit')
             );
 
-            $buttons .= $this->output->container(
-                $editbutton,
-                'mdl-align folder-edit-button');
+            $buttons .= $editbutton;
         }
 
         if ($buttons) {
             $output .= $this->output->box($buttons, 'generalbox folderbuttons');
         }
+
         return $output;
     }
 

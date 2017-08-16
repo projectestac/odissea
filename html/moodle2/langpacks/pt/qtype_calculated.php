@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_calculated', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -130,10 +130,10 @@ $string['sharedwildcards'] = 'Séries partilhadas';
 $string['showitems'] = 'Mostrar';
 $string['significantfigures'] = 'com {$a}';
 $string['significantfiguresformat'] = 'algarismos significativos';
-$string['synchronize'] = 'Sincronizar os dados das séries numéricas partilhadas com outras perguntas do teste';
+$string['synchronize'] = 'Sincronizar os dados dos conjuntos de dados partilhados com outras perguntas de um teste';
 $string['synchronizeno'] = 'Não sincronizar';
 $string['synchronizeyes'] = 'Sincronizar';
-$string['synchronizeyesdisplay'] = 'Sincronizar e mostrar o nome das séries numéricas partilhadas como prefixo do nome da pergunta';
+$string['synchronizeyesdisplay'] = 'Sincronizar e mostrar o nome dos conjuntos de dados partilhados tal como prefixo do nome da pergunta';
 $string['tolerance'] = 'Tolerância &plusmn;';
 $string['tolerancetype'] = 'Tipo';
 $string['trueanswerinsidelimits'] = 'Resposta correta : {$a->correct} dentro dos limites do valor aceite de {$a->true}';

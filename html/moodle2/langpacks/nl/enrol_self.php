@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['enrolperiod_desc'] = 'Standaard tijdsduur van de geldigheid van de aanm
 $string['enrolperiod_help'] = 'Tijdsduur hoelang de aanmelding geldig is, beginnend van wanneer de gebruiker zich aanmeld. Indien uitgeschakeld zal de aanmelding onbeperkt zijn.';
 $string['enrolstartdate'] = 'Startdatum';
 $string['enrolstartdate_help'] = 'Indien ingeschakeld kunnen gebruikers zich slechts vanaf deze datum aanmelden.';
-$string['expiredaction'] = 'Actie bij vervallen cursus';
+$string['expiredaction'] = 'Actie bij verlopen van de aanmelding';
 $string['expiredaction_help'] = 'Selecteer een uit te voeren actie wanneer de aanmelding van een gebruiker vervalt. Merk op dat sommige gebruikersgegevens en instellingen gewist zullen worden tijdens het afmelden van de cursus.';
 $string['expirymessageenrolledbody'] = 'Beste {$a->user},
 
@@ -101,7 +101,7 @@ $string['self:manage'] = 'Beheer aangemelde gebruikers';
 $string['self:unenrol'] = 'Gebruikers afmelden van de cursus';
 $string['self:unenrolself'] = 'Jezelf afmelden van de cursus';
 $string['sendcoursewelcomemessage'] = 'Stuur welkomstboodschap voor cursus';
-$string['sendcoursewelcomemessage_help'] = 'Indien ingeschakeld zullen gebruikers een welkomstboodschap via e-mail krijgen wanneer zij zichzelf aanmelden bij een cursus.';
+$string['sendcoursewelcomemessage_help'] = 'Wanneer een gebruiker zichzelf aanmeldt in de cursus, kan er een welkomstbericht gestuurd worden via e-mail. Als de afzender de cursus contactpersoon is (standaard de leraar) en er zijn meerdere gebruikers met die rol, dan wordt deze e-mail verstuurd van de eerste gebruiker die deze rol gekregen heeft.';
 $string['showhint'] = 'Toon hint';
 $string['showhint_desc'] = 'Toon de eerste letter van de gast toegangssleutel';
 $string['status'] = 'Bestaande aanmeldingen toestaan';

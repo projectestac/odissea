@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,8 @@ $string['correctanswerandfeedback'] = 'Réponse correcte et feedback';
 $string['decodeverifyquestiontext'] = 'Décoder et vérifier le texte de la question';
 $string['layout'] = 'Disposition';
 $string['layouthorizontal'] = 'Rangée horizontale de boutons radio';
+$string['layoutmultiple_horizontal'] = 'Rangée horizontale de cases à cocher';
+$string['layoutmultiple_vertical'] = 'Colonne verticale de cases à cocher';
 $string['layoutselectinline'] = 'Menu déroulant intégré au texte';
 $string['layoutundefined'] = 'Disposition non définie';
 $string['layoutvertical'] = 'Colonne verticale de boutons radio';

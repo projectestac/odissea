@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['chosen_feedback_response'] = '選択されたフィードバックの�
 $string['closebeforeopen'] = 'あなたは開始日時の前に終了日時を指定しました。';
 $string['completed'] = '完了';
 $string['completed_feedbacks'] = '送信済み回答';
+$string['completedon'] = '終了日時: {$a}';
 $string['complete_the_form'] = '質問に回答する ...';
 $string['completionsubmit'] = 'フィードバックが送信された場合、完了として表示する';
 $string['configallowfullanonymous'] = 'この設定を有効にした場合、ログインを要求されせずにフィードバックを完了することができます。';
@@ -175,7 +176,7 @@ $string['mode'] = 'モード';
 $string['modulename'] = 'フィードバック';
 $string['modulename_help'] = 'フィードバック活動モジュールにおいて教師は多肢選択、○/×またはテキスト入力を含む様々な質問タイプを使用して参加者からフィードバックを収集することのできる独自調査を作成することができます。
 
-必要であればフィードバック回答を匿名にすることができます。そして、結果を学生すべてに表示または教師のみに閲覧制限することができます。サイトフロントページのフィードバックは非ログインユーザにより入力させることもできます。
+必要であればフィードバック回答を匿名にすることができます。そして、結果を学生すべてに表示または教師にのみ閲覧制限することができます。サイトフロントページのフィードバックは非ログインユーザにより入力させることもできます。
 
 フィードバック活動は下記のように使用することができます:
 
@@ -274,6 +275,7 @@ $string['site_after_submit'] = '回答送信後のサイト';
 $string['sort_by_course'] = 'コース名で並べ替える';
 $string['start'] = '開始';
 $string['started'] = '開始済み';
+$string['startedon'] = '開始日時: {$a}';
 $string['stop'] = '終了';
 $string['subject'] = '件名';
 $string['switch_group'] = 'グループを切り替える';

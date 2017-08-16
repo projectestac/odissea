@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'atto_media', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = 'Afegeix';
+$string['audio'] = 'Àudio';
 $string['browserepositories'] = 'Navega pels repositoris...';
 $string['createmedia'] = 'Insereix un fitxer multimèdia';
+$string['default'] = 'Per defecte';
+$string['descriptions'] = 'Descripcions';
 $string['entername'] = 'Introdueix el nom';
 $string['enterurl'] = 'Introdueix URL';
 $string['height'] = 'Alçada';
+$string['kind'] = 'Tipus';
+$string['label'] = 'Etiqueta';
+$string['languagesavailable'] = 'Idiomes disponibles';
+$string['languagesinstalled'] = 'Idiomes instal·lats';
+$string['link'] = 'Enllaç';
+$string['loop'] = 'Bucle';
 $string['pluginname'] = 'Fitxers multimèdia';
+$string['remove'] = 'Elimina';
+$string['size'] = 'Mida';
+$string['srclang'] = 'Idioma';
+$string['subtitles'] = 'Subtítols';
+$string['video'] = 'Vídeo';
+$string['videoheight'] = 'Alçària del vídeo';
+$string['videosourcelabel'] = 'URL del vídeo';
+$string['videowidth'] = 'Amplària del vídeo';
 $string['width'] = 'Amplada';

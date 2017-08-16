@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_txt', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradeexport_txt', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   gradeexport_txt
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'TXT評定がエクスポートされました。';
 $string['pluginname'] = 'プレインテキストファイル';
 $string['timeexported'] = 'このコースからの最新ダウンロード';
 $string['txt:publish'] = 'TXT評定エクスポートを公開する';

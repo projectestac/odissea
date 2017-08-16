@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'chat', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'Chat-Logdaten anzeigen';
 $string['chatreport'] = 'Chat-Protokolle';
 $string['chat:talk'] = 'Im Chat sprechen';
 $string['chattime'] = 'Nächster Chat';
+$string['chat:view'] = 'Chataktivität anzeigen';
 $string['compact'] = 'Kompakt';
 $string['composemessage'] = 'Mitteilung schreiben';
 $string['configmethod'] = 'Die Methode \'Ajax-Chat\'  bietet eine ajaxbasierte Oberfläche, die sich regelmäßig mit dem Server zur Aktualisierung verbindet. Diese Methode funktioniert nur mit modernen Browsern und aktiviertem Ajax/JavaScript.
@@ -128,7 +129,7 @@ $string['serverip'] = 'Server-IP';
 $string['servermax'] = 'Maximale Nutzerzahl';
 $string['serverport'] = 'Server-Port';
 $string['sessions'] = 'Chat-Sitzungen';
-$string['sessionstart'] = 'Nächster Chat läuft in: {$a}';
+$string['sessionstart'] = 'Nächster Chat beginnt am {$a->date}. ({$a->fromnow} von jetzt)';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Chat-Protokolle sichtbar für alle';
 $string['studentseereports_help'] = 'Mit der Einstellung \'Nein\' dürfen ausschließlich Nutzer/innen mit dem Recht \'mod/chat:readlog\' die Chat-Protokolle sehen.';

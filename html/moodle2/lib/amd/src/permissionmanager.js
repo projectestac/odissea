@@ -23,7 +23,7 @@
  /**
   * @module admin/permissionmanager
   */
-define(['jquery', 'core/config','core/notification', 'core/templates'], function($, config, notification, templates) {
+define(['jquery', 'core/config', 'core/notification', 'core/templates'], function($, config, notification, templates) {
 
      /**
       * Used CSS selectors
@@ -55,7 +55,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
         };
 
         // Need to tell jQuery to expect JSON as the content type may not be correct (MDL-55041).
-        $.post(adminurl + 'roles/ajax.php', params, function() {}, 'json')
+        $.post(adminurl + 'roles/ajax.php', params, null, 'json')
             .done(function(data) {
               try {
                   overideableroles = data;
@@ -63,8 +63,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
                       $('body').trigger(rolesloadedevent);
                   };
                   loadOverideableRoles();
-              }
-              catch(err) {
+              } catch (err) {
                   notification.exception(err);
               }
             })
@@ -78,7 +77,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
      *
      * @access private
      * @method changePermissions
-     * @param {jquery node} row
+     * @param {JQuery} row
      * @param {int} roleid
      * @param {string} action
      */
@@ -90,7 +89,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
             action: action,
             capability: row.data('name')
         };
-        $.post(adminurl + 'roles/ajax.php', params, function() {}, 'json')
+        $.post(adminurl + 'roles/ajax.php', params, null, 'json')
         .done(function(data) {
             var action = data;
             try {
@@ -119,11 +118,11 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
                     default:
                         return;
                 }
-                templates.render('core/permissionmanager_role',templatedata)
-                .done(function (content) {
-                    if (action == 'allow'){
+                templates.render('core/permissionmanager_role', templatedata)
+                .done(function(content) {
+                    if (action == 'allow') {
                         $(content).insertBefore(row.find('.allowmore:first'));
-                    }else if (action == 'prohibit'){
+                    } else if (action == 'prohibit') {
                         $(content).insertBefore(row.find('.prohibitmore:first'));
                         // Remove allowed link
                         var allowedLink = row.find('.allowedroles').first().find('a[data-role-id="' + roleid + '"]');
@@ -134,8 +133,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
                     panel.hide();
                 })
                 .fail(notification.exception);
-            }
-            catch(err) {
+            } catch (err) {
                 notification.exception(err);
             }
         })
@@ -151,7 +149,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
      * @method handleAddRole
      * @param {event} e
      */
-    var handleAddRole = function(e){
+    var handleAddRole = function(e) {
         e.preventDefault();
 
         $('body').one('rolesloaded', function() {
@@ -163,8 +161,8 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
                 context: contextname
             };
             var message = M.util.get_string('role' + action + 'info', 'core_role', confirmationDetails);
-            if (panel === null){
-                panel = new M.core.dialogue ({
+            if (panel === null) {
+                panel = new M.core.dialogue({
                     draggable: true,
                     modal: true,
                     closeButton: true,
@@ -176,7 +174,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
             var i, existingrolelinks;
 
             var roles = [];
-            switch (action){
+            switch (action) {
                 case 'allow':
                     existingrolelinks = row.find(SELECTORS.REMOVEROLE);
                     break;
@@ -187,18 +185,18 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
             for (i in overideableroles) {
                 var disabled = '';
                 var disable = existingrolelinks.filter("[data-role-id='" + i + "']").length;
-                if (disable){
+                if (disable) {
                     disabled = 'disabled';
                 }
-                var roledetails = {roleid:i, rolename: overideableroles[i], disabled:disabled};
+                var roledetails = {roleid: i, rolename: overideableroles[i], disabled: disabled};
                 roles.push(roledetails);
             }
 
-            templates.render('core/permissionmanager_panelcontent',{message:message, roles:roles})
-            .done(function (content) {
+            templates.render('core/permissionmanager_panelcontent', {message: message, roles: roles})
+            .done(function(content) {
                 panel.set('bodyContent', content);
                 panel.show();
-                $('div.role_buttons').delegate('input', 'click',function(e){
+                $('div.role_buttons').delegate('input', 'click', function(e) {
                     var roleid = $(e.currentTarget).data('role-id');
                     changePermissions(row, roleid, action);
                 });
@@ -216,7 +214,7 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
      * @method handleRemoveRole
      * @param {event} e
      */
-    var handleRemoveRole = function(e){
+    var handleRemoveRole = function(e) {
         e.preventDefault();
         $('body').one('rolesloaded', function() {
             var link = $(e.currentTarget);
@@ -230,10 +228,10 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
             };
 
             notification.confirm(M.util.get_string('confirmunassigntitle', 'core_role'),
-                M.util.get_string('confirmrole' + action, 'core_role',questionDetails),
+                M.util.get_string('confirmrole' + action, 'core_role', questionDetails),
                 M.util.get_string('confirmunassignyes', 'core_role'),
                 M.util.get_string('confirmunassignno', 'core_role'),
-                function(){
+                function() {
                    changePermissions(row, roleid, action);
                 }
             );
@@ -245,11 +243,9 @@ define(['jquery', 'core/config','core/notification', 'core/templates'], function
         /**
          * Initialize permissionmanager
          * @access public
-         * @param {int} contextid
-         * @param {string} contextname
-         * @param {string} adminurl
+         * @param {Object} args
          */
-        initialize : function(args) {
+        initialize: function(args) {
             contextid = args.contextid;
             contextname = args.contextname;
             adminurl = args.adminurl;

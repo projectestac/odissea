@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,7 +89,11 @@ $string['entryerrornotyours'] = 'Esta entrada no es suya';
 $string['entrysaved'] = 'Su entrada se ha guardado';
 $string['entrytitle'] = 'Título de la entrada';
 $string['eventblogassociationadded'] = 'Asociación a blog creada';
+$string['eventblogassociationdeleted'] = 'Asociación de blog eliminada';
 $string['eventblogentriesviewed'] = 'Entradas de blog vistas';
+$string['eventblogexternaladded'] = 'Blog externo registrado';
+$string['eventblogexternalremoved'] = 'Blog externo no registrado';
+$string['eventblogexternalupdated'] = 'Blog externo actualizado';
 $string['evententryadded'] = 'Añadido entrada de blog';
 $string['evententrydeleted'] = 'Eliminada entrada de blog';
 $string['evententryupdated'] = 'Entrada del blog actualizada';
@@ -153,7 +157,6 @@ $string['retrievedfrom'] = 'Recuperado de';
 $string['rssfeed'] = 'Fuente RSS del Blog';
 $string['searchterm'] = 'Buscar: {$a}';
 $string['settingsupdatederror'] = 'Se ha producido un error: el ajuste de preferencias del blog no ha podido actualizarse';
-$string['siteblog'] = 'Blog del sitio: {$a}';
 $string['siteblogdisable'] = 'No está habilitado el blog del sitio';
 $string['siteblogheading'] = 'Blog del sitio';
 $string['siteblogs'] = 'Todos los usuarios pueden ver todas las entradas del blog';

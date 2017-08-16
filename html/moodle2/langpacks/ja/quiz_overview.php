@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz_overview', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,7 +53,7 @@ $string['overviewreportgraph'] = '評点範囲に到達した学生の全体数'
 $string['overviewreportgraphgroup'] = '到達した評点の範囲に関するグループ「 {$a} 」の学生数の棒グラフ';
 $string['pagesize'] = 'ページサイズ';
 $string['pluginname'] = '評定';
-$string['preferencespage'] = 'このページのみに関するプリファレンス';
+$string['preferencespage'] = 'このページのプリファレンス';
 $string['preferencessave'] = 'レポートを表示する';
 $string['preferencesuser'] = 'このレポートに関するあなたのプリファレンス';
 $string['regrade'] = '再評定';

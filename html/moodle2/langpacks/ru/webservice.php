@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['editservice'] = 'Редактировать службу: {$a->name} (i
 $string['enabled'] = 'Включена';
 $string['enabledocumentation'] = 'Включить информацию для разработчиков';
 $string['enabledocumentationdescription'] = 'Для включенных протоколов доступна подробная документация по использованию веб-службах.';
-$string['enablemobilewsoverview'] = 'Перейдите на страницу управления «{$a->manageservicelink}», отметьте параметр «{$a->enablemobileservice}» и Сохраните. В этом случае все пользователи сайта смогут использовать официальное приложения Moodle. Текущий состояние: {$a->wsmobilestatus}.';
 $string['enableprotocols'] = 'Включить протоколы';
 $string['enableprotocolsdescription'] = 'Необходимо включить хотя бы один протокол. По соображениям безопасности следует включать только те протоколы, которые будут использоваться.';
 $string['enablews'] = 'Включить веб-службы';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'Отсутствует пароль';
 $string['missingrequiredcapability'] = 'Требуется возможность {$a}.';
 $string['missingusername'] = 'Отсутствует логин';
 $string['missingversionfile'] = 'Ошибка в исходном коде: отсутствует файл version.php для компонента «{$a}»';
-$string['mobilewsdisabled'] = 'Отключено';
-$string['mobilewsenabled'] = 'Включено';
 $string['nameexists'] = 'Это имя уже используется другой службой';
 $string['nocapabilitytouseparameter'] = 'Пользователь не имеет права использовать параметр {$a}';
 $string['nofunctions'] = 'Эта служба не имеет функций.';

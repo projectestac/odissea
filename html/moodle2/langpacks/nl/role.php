@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,7 @@ $string['badges:deletebadge'] = 'Badges verwijderen';
 $string['badges:earnbadge'] = 'Badges verdienen';
 $string['badges:manageglobalsettings'] = 'Globale instellingen van badges beheren';
 $string['badges:manageownbadges'] = 'Bekijken en beheren van eigen verdiende badges';
+$string['badges:revokebadge'] = 'Badge van gebruiker intrekken';
 $string['badges:viewawarded'] = 'Bekijk gebruikers die een specifieke badge verdienden zonder zelf badges te kunnen uitreiken';
 $string['badges:viewbadges'] = 'Beschikbare badges bekijken zonder ze te verdienen';
 $string['badges:viewotherbadges'] = 'Openbare badges in gebruikersprofielen kunnen zien';
@@ -412,12 +413,15 @@ $string['siteadministrators'] = 'Sitebeheerders';
 $string['site:approvecourse'] = 'Cursus aanmaken goedkeuren';
 $string['site:backup'] = 'Cursussen back-uppen';
 $string['site:config'] = 'Site configuratie wijzigen';
+$string['site:configview'] = 'Bekijk site-beheer (maar niet alle pagina\'s)';
 $string['site:deleteanymessage'] = 'Verwijder berichten van de site';
 $string['site:deleteownmessage'] = 'Verwijder berichten verzonden door en aan de gebruiker';
 $string['site:doanything'] = 'Toelaten alles te doen';
 $string['site:doclinks'] = 'Links naar documentatie buiten deze site tonen';
 $string['site:forcelanguage'] = 'Cursustaal overschrijven';
 $string['site:import'] = 'Importeren van andere cursussen in een cursus';
+$string['site:maintenanceaccess'] = 'Toegang tot de site terwijl die in onderhoudsmodus is.';
+$string['site:manageallmessaging'] = 'Toevoegen, verwijderen, blokkeren en deblokkeren contacten voor elke gebruiker';
 $string['site:manageblocks'] = 'Beheer blokken op een pagina';
 $string['site:mnetloginfromremote'] = 'Aanmelden vanaf een externe Moodle met MNet';
 $string['site:mnetlogintoremote'] = 'Ga naar een externe Moodle met MNet';

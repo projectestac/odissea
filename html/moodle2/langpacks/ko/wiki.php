@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'wiki', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -132,7 +132,7 @@ $string['navigationfrom'] = '이 페이지가 온 곳';
 $string['navigationfrom_help'] = '이 페이지에 링크된 위키 페이지들';
 $string['navigationto'] = '이페이지가 가는 곳';
 $string['navigationto_help'] = '페이지에 포함된 링크들';
-$string['newpage'] = '새';
+$string['newpage'] = '신규';
 $string['newpagehdr'] = '세 페이지';
 $string['newpagetitle'] = '새 페이지 제목';
 $string['noattachments'] = '<strong>아무 파일도 첨부되지 않았습니다</strong>';

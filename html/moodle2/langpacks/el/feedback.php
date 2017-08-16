@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'feedback', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Προσθήκη ερώτησης στην δραστηριότητα';
+$string['add_item'] = 'Προσθήκη ερώτησης';
 $string['add_pagebreak'] = 'Προσθήκη ενός διαχωριστή σελίδας';
 $string['adjustment'] = 'Διευθέτηση';
 $string['after_submit'] = 'Μετά την υποβολή';
@@ -54,7 +54,7 @@ $string['chosen_feedback_response'] = 'επιλεγμένη απάντηση σ�
 $string['completed'] = 'ολοκληρώθηκε';
 $string['completed_feedbacks'] = 'Απαντήσεις που έχουν υποβληθεί';
 $string['complete_the_form'] = 'Απαντήστε τις ερωτήσεις...';
-$string['configallowfullanonymous'] = 'Αν αυτή η επιλογή έχει ορισθεί ναι, τότε η ανατροφοδότηση μπορεί να ολοκληρωθεί χωρίς καμία προηγούμενη σύνδεση του χρήστη στο σύστημα. Επηρεάζει μόνο τις ανατροφοδοτήσεις στην αρχική σελίδα.';
+$string['configallowfullanonymous'] = 'Αν αυτή η επιλογή έχει ορισθεί ως ναι, οι χρήστες μπορούν να συμπληρώσουν μια ανατροφοδότηση στην πρώτη σελίδα χωρίς να χρειάζεται να συνδεθούν.';
 $string['confirmdeleteentry'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτή την καταχώρηση?';
 $string['confirmdeleteitem'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτό το στοιχείο?';
 $string['confirmdeletetemplate'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτό το πρότυπο?';

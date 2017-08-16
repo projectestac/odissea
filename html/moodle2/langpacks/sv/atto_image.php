@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'atto_image', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,14 +34,14 @@ $string['alignment_top'] = 'Topp';
 $string['browserepositories'] = 'Bläddra genom arkiv...';
 $string['createimage'] = 'Infoga bild';
 $string['enteralt'] = 'Beskriv bilden för någon som inte kan se den.';
-$string['enterurl'] = 'Infoga URL';
+$string['enterurl'] = 'Ange URL';
 $string['height'] = 'Höjd';
 $string['imageproperties'] = 'Bildegenskaper';
 $string['pluginname'] = 'Bild';
-$string['presentation'] = 'Beskrivning inte obligatorisk';
+$string['presentation'] = 'Beskrivning behövs ej';
 $string['presentationoraltrequired'] = 'Bilder måste ha en beskrivning förutom när det är markerat att den inte behövs.';
 $string['preview'] = 'Förhandsgranska';
-$string['saveimage'] = 'Spara bild';
+$string['saveimage'] = 'Spara bilden';
 $string['size'] = 'Storlek';
 $string['uploading'] = 'Uppladdning pågår, v.g. vänta.';
 $string['width'] = 'Bredd';

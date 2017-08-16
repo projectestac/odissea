@@ -24,7 +24,7 @@
  */
 
 
-require_once(dirname(__FILE__) . '/../config.php');
+require_once(__DIR__ . '/../config.php');
 require_once($CFG->dirroot . '/question/editlib.php');
 require_once($CFG->dirroot . '/question/import_form.php');
 require_once($CFG->dirroot . '/question/format.php');
@@ -72,6 +72,10 @@ if ($import_form->is_cancelled()){
 $PAGE->set_title($txt->importquestions);
 $PAGE->set_heading($COURSE->fullname);
 echo $OUTPUT->header();
+
+// Print horizontal nav if needed.
+$renderer = $PAGE->get_renderer('core_question', 'bank');
+echo $renderer->extra_horizontal_navigation();
 
 // file upload form sumitted
 if ($form = $import_form->get_data()) {

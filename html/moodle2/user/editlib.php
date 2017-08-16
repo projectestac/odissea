@@ -147,16 +147,38 @@ function useredit_load_preferences(&$user, $reload=true) {
 }
 
 /**
- * Updates the user preferences for teh given user.
+ * Updates the user preferences for the given user
  *
- * @param stdClass|array $usernew
+ * Only preference that can be updated directly will be updated here. This method is called from various WS
+ * updating users and should be used when updating user details. Plugins may whitelist preferences that can
+ * be updated by defining 'user_preferences' callback, {@see core_user::fill_preferences_cache()}
+ *
+ * Some parts of code may use user preference table to store internal data, in these cases it is acceptable
+ * to call set_user_preference()
+ *
+ * @param stdClass|array $usernew object or array that has user preferences as attributes with keys starting with preference_
  */
 function useredit_update_user_preference($usernew) {
+    global $USER;
     $ua = (array)$usernew;
+    if (is_object($usernew) && isset($usernew->id) && isset($usernew->deleted) && isset($usernew->confirmed)) {
+        // This is already a full user object, maybe not completely full but these fields are enough.
+        $user = $usernew;
+    } else if (empty($ua['id']) || $ua['id'] == $USER->id) {
+        // We are updating current user.
+        $user = $USER;
+    } else {
+        // Retrieve user object.
+        $user = core_user::get_user($ua['id'], '*', MUST_EXIST);
+    }
+
     foreach ($ua as $key => $value) {
         if (strpos($key, 'preference_') === 0) {
             $name = substr($key, strlen('preference_'));
-            set_user_preference($name, $value, $usernew->id);
+            if (core_user::can_edit_preference($name, $user)) {
+                $value = core_user::clean_preference($value, $name);
+                set_user_preference($name, $value, $user->id);
+            }
         }
     }
 }
@@ -164,62 +186,19 @@ function useredit_update_user_preference($usernew) {
 /**
  * Updates the provided users profile picture based upon the expected fields returned from the edit or edit_advanced forms.
  *
+ * @deprecated since Moodle 3.2 MDL-51789 - please use core_user::update_picture() instead.
+ * @todo MDL-54858 This will be deleted in Moodle 3.6.
+ * @see core_user::update_picture()
+ *
  * @global moodle_database $DB
  * @param stdClass $usernew An object that contains some information about the user being updated
- * @param moodleform $userform The form that was submitted to edit the form
+ * @param moodleform $userform The form that was submitted to edit the form (unused)
  * @param array $filemanageroptions
  * @return bool True if the user was updated, false if it stayed the same.
  */
 function useredit_update_picture(stdClass $usernew, moodleform $userform, $filemanageroptions = array()) {
-    global $CFG, $DB;
-    require_once("$CFG->libdir/gdlib.php");
-
-    $context = context_user::instance($usernew->id, MUST_EXIST);
-    $user = $DB->get_record('user', array('id' => $usernew->id), 'id, picture', MUST_EXIST);
-
-    $newpicture = $user->picture;
-    // Get file_storage to process files.
-    $fs = get_file_storage();
-    if (!empty($usernew->deletepicture)) {
-        // The user has chosen to delete the selected users picture.
-        $fs->delete_area_files($context->id, 'user', 'icon'); // Drop all images in area.
-        $newpicture = 0;
-
-    } else {
-        // Save newly uploaded file, this will avoid context mismatch for newly created users.
-        file_save_draft_area_files($usernew->imagefile, $context->id, 'user', 'newicon', 0, $filemanageroptions);
-        if (($iconfiles = $fs->get_area_files($context->id, 'user', 'newicon')) && count($iconfiles) == 2) {
-            // Get file which was uploaded in draft area.
-            foreach ($iconfiles as $file) {
-                if (!$file->is_directory()) {
-                    break;
-                }
-            }
-            // Copy file to temporary location and the send it for processing icon.
-            if ($iconfile = $file->copy_content_to_temp()) {
-                // There is a new image that has been uploaded.
-                // Process the new image and set the user to make use of it.
-                // NOTE: Uploaded images always take over Gravatar.
-                $newpicture = (int)process_new_icon($context, 'user', 'icon', 0, $iconfile);
-                // Delete temporary file.
-                @unlink($iconfile);
-                // Remove uploaded file.
-                $fs->delete_area_files($context->id, 'user', 'newicon');
-            } else {
-                // Something went wrong while creating temp file.
-                // Remove uploaded file.
-                $fs->delete_area_files($context->id, 'user', 'newicon');
-                return false;
-            }
-        }
-    }
-
-    if ($newpicture != $user->picture) {
-        $DB->set_field('user', 'picture', $newpicture, array('id' => $user->id));
-        return true;
-    } else {
-        return false;
-    }
+    debugging('useredit_update_picture() is deprecated. Please use core_user::update_picture() instead.', DEBUG_DEVELOPER);
+    return core_user::update_picture($usernew, $filemanageroptions);
 }
 
 /**
@@ -347,14 +326,6 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
         $mform->addElement('select', 'timezone', get_string('timezone'), $choices);
     }
 
-    // Multi-Calendar Support - see MDL-18375.
-    $calendartypes = \core_calendar\type_factory::get_list_of_calendar_types();
-    // We do not want to show this option unless there is more than one calendar type to display.
-    if (count($calendartypes) > 1) {
-        $mform->addElement('select', 'calendartype', get_string('preferredcalendar', 'calendar'), $calendartypes);
-        $mform->setDefault('calendartype', $CFG->calendartype);
-    }
-
     if (!empty($CFG->allowuserthemes)) {
         $choices = array();
         $choices[''] = get_string('default');
@@ -417,18 +388,23 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
 
     $mform->addElement('text', 'icq', get_string('icqnumber'), 'maxlength="15" size="25"');
     $mform->setType('icq', core_user::get_property_type('icq'));
+    $mform->setForceLtr('icq');
 
     $mform->addElement('text', 'skype', get_string('skypeid'), 'maxlength="50" size="25"');
     $mform->setType('skype', core_user::get_property_type('skype'));
+    $mform->setForceLtr('skype');
 
     $mform->addElement('text', 'aim', get_string('aimid'), 'maxlength="50" size="25"');
     $mform->setType('aim', core_user::get_property_type('aim'));
+    $mform->setForceLtr('aim');
 
     $mform->addElement('text', 'yahoo', get_string('yahooid'), 'maxlength="50" size="25"');
     $mform->setType('yahoo', core_user::get_property_type('yahoo'));
+    $mform->setForceLtr('yahoo');
 
     $mform->addElement('text', 'msn', get_string('msnid'), 'maxlength="50" size="25"');
     $mform->setType('msn', core_user::get_property_type('msn'));
+    $mform->setForceLtr('msn');
 
     $mform->addElement('text', 'idnumber', get_string('idnumber'), 'maxlength="255" size="25"');
     $mform->setType('idnumber', core_user::get_property_type('idnumber'));
@@ -441,9 +417,11 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
 
     $mform->addElement('text', 'phone1', get_string('phone1'), 'maxlength="20" size="25"');
     $mform->setType('phone1', core_user::get_property_type('phone1'));
+    $mform->setForceLtr('phone1');
 
     $mform->addElement('text', 'phone2', get_string('phone2'), 'maxlength="20" size="25"');
     $mform->setType('phone2', core_user::get_property_type('phone2'));
+    $mform->setForceLtr('phone2');
 
     $mform->addElement('text', 'address', get_string('address'), 'maxlength="255" size="25"');
     $mform->setType('address', core_user::get_property_type('address'));

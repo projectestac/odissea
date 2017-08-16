@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'hub', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,7 +105,7 @@ $string['existingscreenshots'] = 'Captures de pantalla existents';
 $string['forceunregister'] = 'Sí, suprimeix les dades del registre';
 $string['forceunregisterconfirmation'] = 'El vostre lloc no pot arribar a {$a}. El concentrador deu haver caigut temporalment. A menys que estigueu segurs de voler continuar amb la supressió del registre a nivell local, si us plau cancel·leu-ho  i torneu a intentar-ho més tard.';
 $string['geolocation'] = 'Geolocalització';
-$string['geolocation_help'] = 'En un futur poden proporcionar-vos cerques basades en la  geolocalització. Si voleu especificar la localització del vostre curs, utilitzeu un valor de latitud/longitud aquí (p. ex.: -31.947884,115.871285). Una forma de trobar això és utilitzar Google Maps.';
+$string['geolocation_help'] = 'En un futur podem proporcionar-vos cerques basades en la  geolocalització. Si voleu especificar la localització del vostre curs, utilitzeu un valor de latitud/longitud aquí (p. ex.: -31.947884,115.871285). Una forma de trobar-la és utilitzar Google Maps.';
 $string['hub'] = 'Concentrador';
 $string['imageurl'] = 'URL de la imatge';
 $string['imageurl_help'] = 'Aquesta imatge es mostrarà al concentrador. Aquesta imatge ha d\'estar disponible al concentrador en qualsevol moment. La imatge hauria de tindre una mida màxima de {$a->width} X {$a->height}';

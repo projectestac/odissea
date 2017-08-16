@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'datafield_textarea', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   datafield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fieldtypelabel'] = '文本域字段';
 $string['maxbytes'] = '最大可嵌入文件大小（字节）';
 $string['maxbytes_desc'] = '如果设置为0则默认无限制';
 $string['pluginname'] = '文本域';

@@ -18,7 +18,7 @@
  * Unit tests for the quizaccess_offlineattempts plugin.
  *
  * @package    quizaccess_offlineattempts
- * @copyright  Juan Leyva
+ * @copyright  2016 Juan Leyva
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -32,7 +32,7 @@ require_once($CFG->dirroot . '/mod/quiz/accessrule/offlineattempts/rule.php');
 /**
  * Unit tests for the quizaccess_offlineattempts plugin.
  *
- * @copyright  Juan Leyva
+ * @copyright  2016 Juan Leyva
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class quizaccess_offlineattempts_testcase extends basic_testcase {

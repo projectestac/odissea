@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lti', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['allowinstructorcustom'] = 'Trainer/innen erlauben,  Parameter anzupasse
 $string['allowsetting'] = 'Dem Tool erlauben, Einstellungen (8 KB) in Moodle zu speichern';
 $string['always'] = 'Immer';
 $string['autoaddtype'] = 'Tool hinzufügen';
-$string['automatic'] = 'Automatisch, entsprechend der Start-URL';
+$string['automatic'] = 'Automatisch, basierend auf der Tool-URL';
 $string['baseurl'] = 'Basis URL / Tool Registrierungsname';
 $string['basiclti'] = 'Externes Tool';
 $string['basicltiactivities'] = 'LTI Aktivitäten';
@@ -54,6 +54,7 @@ $string['basiclti_base_string'] = 'LTI OAuth base string';
 $string['basiclti_endpoint'] = 'LTI launch endpoint';
 $string['basicltifieldset'] = 'Angepasste Beispielwerte';
 $string['basiclti_in_new_window'] = 'Ihre Aktivität wurde in einem neuen Fenster geöffnet';
+$string['basiclti_in_new_window_open'] = 'In einem neuen Fenster öffnen';
 $string['basicltiintro'] = 'Beschreibung der Aktivität';
 $string['basicltiname'] = 'Name der Aktivität';
 $string['basiclti_parameters'] = 'LTI Startparameter';
@@ -76,6 +77,7 @@ $string['configtoolurl'] = 'Standardmäßige Remote Tool URL';
 $string['configtypes'] = 'LTI Anwendungen aktivieren';
 $string['configured'] = 'Konfiguriert';
 $string['confirmtoolactivation'] = 'Möchten Sie dieses Tool wirklich aktivieren?';
+$string['contentitem_help'] = 'Bei Aktivierung wird die Option \'Select content\' verfügbar sein, wenn ein externes Tool hinzugefügt wird';
 $string['courseactivitiesorresources'] = 'Kursaktivitäten oder -materialien';
 $string['courseid'] = 'Kurs ID-Nummer';
 $string['courseinformation'] = 'Kursinformation';
@@ -110,7 +112,7 @@ $string['display_description'] = 'Beschreibung bei Start anzeigen';
 $string['display_description_help'] = 'Die oben eingegebene Beschreibung wird bei Aktivierung über dem Inhalt des Tools angezeigt. Die Beschreibung kann genutzt werden, um Teilnehmern zusätzliche Hinweise zugeben. Sie ist nicht unbedingt erforderlich. Wenn die Darstellung im neuen Fenster erfolgt, kann die Beschreibung nie angezeigt werden.';
 $string['display_name'] = 'Aktivitätenname bei Start anzeigen';
 $string['display_name_help'] = 'Der Aktivitätenname kann über dem Inhalt des Toolanbieters angezeigt werden. Es ist auch möglich, dass der Toolanbieter den Namen direkt anzeigt. Die Option kann damit eine doppelte Anzeige verhindern. Die Titelanzeige ist nicht verfügbar wenn das Tool in einem neuen Fenster geöffnet wird.';
-$string['domain_mismatch'] = 'Start URL Domain passt nicht zum Eintrag in Tool-Konfiguration';
+$string['domain_mismatch'] = 'Die Domain der Tool-URL passt nicht zum Eintrag in Tool-Konfiguration';
 $string['donot'] = 'Nicht senden';
 $string['donotaccept'] = 'Nicht akzeptieren';
 $string['donotallow'] = 'Nicht erlauben';
@@ -122,8 +124,13 @@ $string['embed_no_blocks'] = 'Eingebettet ohne Blöcke';
 $string['enableemailnotification'] = 'E-Mail-Mitteilungen senden';
 $string['enableemailnotification_help'] = 'Nach der Aktivierung erhalten Teilnehmende E-Mail-Benachrichtungen wenn ihre Leistungen bewertet wurden.';
 $string['enterkeyandsecret'] = 'Geben Sie Ihre Zugangskennung und den Schlüssel (secret) ein.';
+$string['enterkeyandsecret_help'] = 'Fall Sie einen Consumer-Key und/oder ein Shared Secret erhalten haben, geben sie diese bitte hier ein.';
 $string['errorbadurl'] = 'Die URL ist keine gültige URL für ein Tool oder ein Cartridge.';
+$string['errorincorrectconsumerkey'] = 'Der Consumer Key ist falsch.';
+$string['errorinvaliddata'] = 'Ungültige Daten: {$a}';
+$string['errorinvalidmediatype'] = 'Ungültiger Medientyp: {$a}';
 $string['errormisconfig'] = 'Das Tool wurde falsch konfiguriert. Ihr Administrator/in kann Ihnen weiter helfen.';
+$string['errortooltypenotfound'] = 'LTI Tool-Typ nicht gefunden';
 $string['existing_window'] = 'Vorhandenes Fenster';
 $string['extensions'] = 'LTI Extension Service';
 $string['external_tool_type'] = 'Vorkonfiguriertes Tool';
@@ -174,14 +181,17 @@ $string['launchinpopup_help'] = 'Der Startcontainer beeinflusst die Anzeige des 
 * **Eingebettet, ohne Blöcke** - Das Tool wird in einem bestehenden Moodle-Fenster ohne Blöcke, nur mit der Navigation im Kopf angezeigt.
 * **Neues Fenster** - Das Tool öffnet in einem neuen Fenster und nutzt den gesamten Raum im Fenster aus. Abhängig vom Browser  wird ein neuer Tab angelegt oder ein neues Fenster geöffnet.';
 $string['launchoptions'] = 'Startoptionen';
-$string['launch_url'] = 'URL für Tool oder Cartridge';
-$string['launch_url_help'] = 'Die Start-URL bezeichnet die Webadresse des externen Tools. Sie kann zusätzliche Informationen entalten, welche Ressource geanu aufgerufen werden soll. Genauere Informationen gibt der Tool-Anbieter.
-Falls ein spezieller Tool-Typ gewählt wurde, kann u.U. auf die Start URL verzichtet werden.';
+$string['launch_url'] = 'Tool-URL';
+$string['launch_url_help'] = 'Die Tool-URL ist die Webadresse des externen Tools. Sie kann zusätzliche Informationen enthalten, z.B. welche Ressource aufgerufen werden soll. Weitere Informationen gibt der Tool-Anbieter.
+
+Sie können eine Cartridge-URL eingeben, falls Sie darüber verfügen. Anschließend werden die übrigen Formularfelder automatisch ausgefüllt.
+
+Wenn Sie ein vorkonfigurierten Tool ausgewählt haben, brauchen sie keine Tool-URL einzugeben. Wenn das Tool verwendet wird, um auf das Anbietersystem zuzugreifen, aber nicht eine spezielle Ressource aufrufen soll, dann wird das funktionieren.';
 $string['leaveblank'] = 'Lassen Sie dies leer, wenn Sie die Angaben nicht brauchen.';
 $string['lti'] = 'Externes Tool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
 $string['lti:addinstance'] = 'Aktivität \'Externes Tool\' hinzufügen';
-$string['lti_administration'] = 'LTI Administration';
+$string['lti_administration'] = 'Vorkonfiguriertes Tool bearbeiten';
 $string['lti_errormsg'] = 'Das Tool gab folgende Fehlermeldung zurück: \'{$a}\'';
 $string['lti:grade'] = 'Bewertungen vom ext. Tool anzeigen';
 $string['lti_launch_error'] = 'Beim Start des externen Tools trat ein Fehler auf:';
@@ -271,7 +281,7 @@ $string['quickgrade_help'] = 'Nach der Aktivierung können mehrere Tools auf ein
 $string['redirect'] = 'Sie werden in ein paar Sekunden weitergeleitet. andernfalls den Button anklicken.';
 $string['register'] = 'Registrieren';
 $string['registertype'] = 'Konfiguration eines neu registrierten externen Tools';
-$string['register_warning'] = 'Die Registrierungsseite benötigt einige Zeit zum Öffnen. Sollte dies nicht erfolgreich sein, prüfen Sie die eingegebene URL in den Konfigurationseinstellungen. Wenn Moodle https benutzt, stellen Sie sicher, dass das Tool, das sie konfigurieren, https unterstützt und Sie https in der URL nutzen,';
+$string['register_warning'] = 'Die Registrierungsseite benötigt einige Zeit zum Öffnen. Sollte sie nicht erscheinen, prüfen Sie die eingegebene URL in den Konfigurationseinstellungen. Wenn Moodle https nutzt, stellen Sie sicher, dass das konfigurierte Tool https unterstützt und dass Sie in der URL https nutzen.';
 $string['registrationname'] = 'Name des Toolanbieters';
 $string['registrationname_help'] = 'Geben Sie den Namen des Toolproviders an, dessen Angebot Sie registrieren.';
 $string['registration_options'] = 'Registierungsoptionen';
@@ -302,10 +312,11 @@ $string['saveallfeedback'] = 'Alle Feedbacks speichern';
 $string['search:activity'] = 'Externes Tool - Aktivitätsinformation';
 $string['secure_icon_url'] = 'Sichere Icon-URL';
 $string['secure_icon_url_help'] = 'Ähnlich wie Icon URL. Die Funktion wird bei verschlüsselter Datenübertragung genutzt, um einen Warnhinweis zu verhindern, falls ein Icon unverschlüsselt aufgerufen wird.';
-$string['secure_launch_url'] = 'Sichere Start-URL';
-$string['secure_launch_url_help'] = 'Ähnlich wie Start URL. Wird verwendet, um höhere Sicherheitsanforderungen umzusetzen. Moodle verwendet die sichere Start URL anstelle der Standard URL, wenn das Moodle-System selber über SSL abgerufen wird oder wenn die Tool-Konfiguration auf \'immer über SSL starten\' gestellt ist.
+$string['secure_launch_url'] = 'Sichere Tool-URL';
+$string['secure_launch_url_help'] = 'Ähnlich wie Tool URL. Wird verwendet um höhere Sicherheistanforderungen umzusetzen. Moodle verwendet die sichere Start URL anstelle der Standard URL, falls die Moodleseite über SSL abegrufen wird oder wenn die Tool Konfiguration auf immer über SSL starten gestellt ist.
 
-Es kann auch die Standard Start URL mit einem https:// versehen werden um den Start per SSL zu erzwingen. Dann kann dieses Feld leer bleiben.';
+Es kann auch die Standard Start URL mit einem https:// versehen werden um über SSL zu starten. Dann kann dieses Feld leer bleiben';
+$string['selectcontent'] = 'Inhalt auswählen';
 $string['send'] = 'Senden';
 $string['services'] = 'Services';
 $string['services_help'] = 'Wählen Sie die Services, die an den Tool-Anbieter übertragen werden sollen. Es können mehrere ausgewählt werden.';
@@ -328,6 +339,9 @@ $string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der T
 $string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
+$string['show_in_course_activity_chooser'] = 'In Aktivitätsauswahl als vorkonfiguriertes Tool anzeigen.';
+$string['show_in_course_lti1_help'] = 'Dieses Tool kann für Trainer in der Aktivitätsauswahl angezeigt werden, um es einem Kurs hinzuzufügen. Es kann ebenfalls im vorkonfigurierten Tool-Menü angezeigt werden, wenn ein externes Tool einem Kurs hinzugefügt wird. Außerdem kann die Tool-Konfiguration so eingestellt werden, dass sie beim Hinzufügen eines externen Tools zu einem Kurs nur dann verwendet wird, wenn die exakte Tool-URL angegeben wird.';
+$string['show_in_course_lti2_help'] = 'Dieses Tool kann in der Aktivitätsauswahl für einen Lehrer angezeigt werden, um es einem Kurs hinzuzufügen, oder im vorkonfigurierten Auswahlmenü, wenn ein externes Tool zu einem Kurs hinzugefügt wird.';
 $string['show_in_course_no'] = 'Nicht anzeigen; nur benutzen, wenn eine passende Start URL eingetragen ist';
 $string['show_in_course_preconfigured'] = 'Als vorkonfiguriertes Tool anzeigen, wenn ein externes Tool hinzugefügt wird';
 $string['size'] = 'Größenparameter';
@@ -341,6 +355,7 @@ $string['subplugintype_ltiservice_plural'] = 'LTI Services';
 $string['subplugintype_ltisource'] = 'LTI Quelle';
 $string['subplugintype_ltisource_plural'] = 'LTI Quellen';
 $string['successfullycreatedtooltype'] = 'Neues Tool erfolgreich angelegt!';
+$string['successfullyfetchedtoolconfigurationfromcontent'] = 'Tool-Konfiguration aus dem gewählten Inhalt erfolgreich übernommen.';
 $string['toggle_debug_data'] = 'Debug-Modus umschalten';
 $string['tool_config_not_found'] = 'Tool-Konfiguration für diese URL nicht gefunden';
 $string['tooldescription'] = 'Tool-Beschreibung';
@@ -367,12 +382,12 @@ $string['tooltypedeleted'] = 'Vorkonfiguriertes Tool gelöscht';
 $string['tooltypenotdeleted'] = 'Das vorkonfigurierte Tool kann nicht gelöscht werden.';
 $string['tooltypes'] = 'Tools';
 $string['tooltypeupdated'] = 'Vorkonfiguriertes Tool aktualisiert';
-$string['toolurl'] = 'Basis-URL des Tools';
+$string['toolurl'] = 'Tool URL';
 $string['toolurl_help'] = 'Die Basis-URL des Tools wird verwendet um die Start URLs mit der korrekten Konfiguration zu verknüpfen. Die Verwendung von http(s) am Beginn ist optional.
 
-Die Basis-URL wird auch verwandt wenn das Tool keine separate Start-URL zur Verfügung stellt.
+Die Basis-URL wird auch verwendet wenn das Tool keine separate Start-URL zur Verfügung stellt.
 
-Die Basis-URL von *tool.com* passt für folgendes:
+Die Basis-URL von *tool.com* passt beispielsweise für folgendes:
 
 * tool.com
 * tool.com/quizzes
@@ -391,7 +406,9 @@ Die Basis-URL von *quiz.tool.com* hingegen passt für folgendes:
 * quiz.tool.com/
 * quiz.tool.com/take.php?id=20
 
-Wenn es zwei unterschiedliche Tool-Konfigurationen für die gleiche Domain gibt, wird diespezifischere verwandt..';
+Wenn es zwei unterschiedliche Tool-Konfigurationen für die gleiche Domain gibt, wird die spezifischere benutzt.
+
+Sie können, falls vorhanden, auch eine cartridge URL eintragen. Die Details für das Tool werden dann automatisch eingefügt.';
 $string['toolurlplaceholder'] = 'Tool-URL...';
 $string['typename'] = 'Name des Tools';
 $string['typename_help'] = 'Die Toolbezeichnung wird genutzt, um den Toolanbieter in Moodle zu identifizieren. Die Bezeichnung wird Trainer/innen gezeigt, wenn sie das Tool in ihren Kursen einbinden.';

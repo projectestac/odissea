@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -163,6 +163,7 @@ $string['displayreview'] = 'Mostrar botão de \'Voltar a responder\'';
 $string['displayreview_help'] = 'Se ativar esta opção, quando uma pergunta é respondida de forma incorreta, é dado a escolher ao aluno se quer responder de novo sem obter a pontuação ou continuar a lição';
 $string['displayscorewithessays'] = 'Obteve {$a->score} num máximo de {$a->tempmaxgrade}.<br />As suas respostas à(s) pergunta(s) de desenvolvimento {$a->essayquestions resposta(s)} serão avaliadas posteriormente,<br />sendo a pontuação correspondente adicionada à pontuação final.<br /><br />A sua classificação atual, sem as perguntas que faltam avaliar, é de  {$a->score} num máximo de {$a->grade}.';
 $string['displayscorewithoutessays'] = 'Obteve uma pontuação de {$a->score} (em {$a->grade}). Clique em Ver notas para ver a sua nota final na pauta';
+$string['duplicatepagenamed'] = 'Duplicar página: {$a}';
 $string['edit'] = 'Editar';
 $string['editingquestionpage'] = 'A editar página de pergunta {$a}';
 $string['editlessonsettings'] = 'Editar configurações da lição';
@@ -185,11 +186,6 @@ $string['enterpassword'] = 'Introduza a senha:';
 $string['eolstudentoutoftime'] = 'Atenção: Terminou o tempo disponível para realizar esta lição. A sua última resposta poderá não ter sido considerada caso tenha sido dada depois do fim do tempo.';
 $string['eolstudentoutoftimenoanswers'] = 'Não respondeu a nenhuma pergunta. Obteve uma classificação de 0 para esta lição.';
 $string['essay'] = 'Desenvolvimento';
-$string['essayemailmessage'] = '<p>Pergunta de desenvolvimento:<blockquote>{$a->question}</blockquote></p>
-<p>A sua resposta:<blockquote><em>{$a->response}</em></blockquote></p>
-<p>{$a->teacher}->Comentário do professor:<blockquote><em>{$a->comment}</em></blockquote></p>
-<p>Obteve {$a->earned} (num máximo de{$a->outof}) nesta pergunta de desenvolvimento.</p><p>
-A sua nota da lição foi atualizada para {$a->newgrade}&#37;.</p>';
 $string['essayemailmessage2'] = '<p>Pergunta de desenvolvimento: {$a->question}</p><p>A sua resposta: <em>{$a->response}</em></p><p>Comentários da avaliação: <em>{$a->comment}</em></p><p>Obteve {$a->earned} num máximo de {$a->outof} nesta pergunta de desenvolvimento.</p><p>A sua nota da lição {$a->lesson} foi atualizada para {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'A sua nota da pergunta';
 $string['essayresponses'] = 'Respostas à pergunta de desenvolvimento';
@@ -258,7 +254,6 @@ $string['leftduringtimed'] = 'Interrompeu uma lição com tempo limite.<br />Cli
 $string['leftduringtimednoretake'] = 'Interrompeu uma lição com tempo limite<br />e não é permitido repetir ou continuar a lição.';
 $string['leftduringtimedsession'] = 'Saiu durante uma lição com tempo limite';
 $string['lesson:addinstance'] = 'Adicionar nova lição';
-$string['lessonattempted'] = 'Lição frequentada';
 $string['lessonclosed'] = 'Esta lição fechou {$a}';
 $string['lessoncloses'] = 'A lição fecha';
 $string['lessoncloseson'] = 'A lição fecha em {$a}';
@@ -275,6 +270,7 @@ $string['lessonopen'] = 'Esta lição ficará disponível {$a}.';
 $string['lessonopens'] = 'A lição abre';
 $string['lessonpagelinkingbroken'] = 'Não foi encontrada a primeira página. As ligações entre páginas da lição poderão estar erradas. Contacte um administrador.';
 $string['lessonstats'] = 'Estatísticas da lição';
+$string['lesson:view'] = 'Ver atividade lição';
 $string['lesson:viewreports'] = 'Ver os relatórios da lição';
 $string['linkedmedia'] = 'Conteúdo de suporte';
 $string['loginfail'] = 'A autenticação falhou. Tente de novo...';

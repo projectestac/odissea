@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mathslib', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'mathslib', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   mathslib
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,4 @@ $string['anunexpectederroroccured'] = 'espero ez zen errorea gertatu da';
 $string['illegalcharactergeneral'] = 'Legez kanpoko karakterea \'{$a}\'';
 $string['illegalcharacterunderscore'] = 'Legez kanpoko karakterea \'_\'';
 $string['internalerror'] = 'barne errorea';
-$string['undefinedvariable'] = 'definitu gabeko \'{$a}\' aldagaia';
+$string['undefinedvariable'] = 'definitu \'{$a}\' bariablea';

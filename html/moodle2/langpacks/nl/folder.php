@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'op {$a->name} - {$a->date}';
 $string['contentheader'] = 'Inhoud';
 $string['display'] = 'Toon mapinhoud';
 $string['display_help'] = 'Als je de mapinhoud op een cursuspagina wil tonen, dan zal er geen link naar een aparte pagina zijn.';
@@ -48,6 +49,7 @@ En map kan gebruikt worden
 * voor een reeks bestanden over één onderwerp, bijvoorbeeld een ingevulde cursus of een verzameling afbeeldingen die een leerling kan gebruiken in een project
 * om een gedeelde uploadruimte te voorzien voor leraren in dezelfde cursus, waarbij de map verborgen gehouden wordt voor leerlingen, zodat enkel de leraren die kunnen zien.';
 $string['modulenameplural'] = 'Mappen';
+$string['newfoldercontent'] = 'Nieuwe mapinhoud';
 $string['noautocompletioninline'] = 'Automatisch voltooien kan niet gekozen worden met de optie "inline op de cursuspagina".';
 $string['page-mod-folder-view'] = 'Hoofdpagina mappenmodule';
 $string['page-mod-folder-x'] = 'Elke mappenmodule pagina';

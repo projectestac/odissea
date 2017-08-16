@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,15 +33,17 @@ $string['currency'] = 'Νόμισμα';
 $string['defaultrole'] = 'Προεπιλεγμένη ανάθεση ρόλου';
 $string['defaultrole_desc'] = 'Επιλέξτε τον ρόλο, ο οποίος θα ανατεθεί στους χρήστες κατά τη διάρκεια των PayPal εγγραφών';
 $string['enrolperiod'] = 'Διάρκεια εγγραφής';
+$string['expiredaction_help'] = 'Επιλέξτε την ενέργεια που θα εκτελεστεί όταν λήξει η εγγραφή του χρήστη. Παρακαλώ σημειώστε ότι ορισμένα δεδομένα χρήστη και ρυθμίσεις εκκαθαρίζονται από το μάθημα κατά την ακύρωση εγγραφής στο μάθημα.';
 $string['mailadmins'] = 'Ενημέρωση διαχειριστή';
 $string['mailstudents'] = 'Ενημέρωση μαθητών';
 $string['mailteachers'] = 'Ενημέρωση καθηγητών';
 $string['paypalaccepted'] = 'Αποδεκτές οι πληρωμές μέσω PayPal';
 $string['paypal:config'] = 'Παραμετροποίηση περιπτώσεων εγγραφής μέσω PayPal';
-$string['paypal:manage'] = 'Διαχείριση εγγεγραμένων χρηστών';
-$string['paypal:unenrol'] = 'Απεγγραφή χρηστών από το μάθημα';
-$string['paypal:unenrolself'] = 'Απεγγραφή του ιδίου από το μάθημα';
+$string['paypal:manage'] = 'Διαχείρηση εγγεγραμένων χρηστών';
+$string['paypal:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
+$string['paypal:unenrolself'] = 'Ακύρωση εγγραφής στο μάθημα';
 $string['pluginname_desc'] = 'Η ενότητα PayPal σας επιτρέπει να δημιουργήσετε μαθήματα επί πληρωμή. Αν το κόστος για κάθε μάθημα είναι μηδενικό, τότε οι μαθητές δεν καλούνται να πληρώσουν για να εισαχθούν. Υπάρχει ένα κόστος για όλο τον ιστότοπο το οποίο το ορίζετε εδώ ως προεπιλογή για όλο τον ιστότοπο και έπειτα μια ρύθμιση μαθήματος που μπορείτε να ορίσετε για κάθε μάθημα μεμονωμένα. Το κόστος μαθήματος παρακάμπτει το κόστος ιστοτόπου.';
 $string['sendpaymentbutton'] = 'Αποστολή πληρωμής με Paypal';
 $string['status'] = 'Επιτρέπονται εγγραφές PayPal';
 $string['status_desc'] = 'Επιτρέπεται στους χρήστες να χρησιμοποιούν PayPal για να εγγραφούν στο μάθημα από προεπιλογή.';
+$string['unenrolselfconfirm'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα "{$a}";';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -878,8 +878,6 @@ $string['timeleft'] = '剩余时间';
 $string['timelimit'] = '时间限制';
 $string['timelimitexeeded'] = '很抱歉！时间已用完！';
 $string['timelimit_help'] = '如果启用，会有一个浮动窗口（必须激活JavaScript）显示倒计时的计时器。当时间耗尽，会自动提交测验，包括所有已经回答过的题目。';
-$string['timelimitmin'] = '时间限制（分钟）';
-$string['timelimitsec'] = '时间限制（秒）';
 $string['timestr'] = '%y 年 %m 月 %d 日的 %H:%M:%S';
 $string['timesup'] = '时间到！';
 $string['timetaken'] = '耗时';

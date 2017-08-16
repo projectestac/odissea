@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['addtodock'] = 'Sposta nel dock';
 $string['anypagematchingtheabove'] = 'Qualsiasi pagina corrispondente a quanto sopra';
 $string['appearsinsubcontexts'] = 'Visibile nei sotto contesti';
 $string['assignrolesinblock'] = 'Assegna ruoli nel blocco {$a}';
+$string['blocksdrawertoggle'] = 'Visualizza/nascondi cassetto blocchi';
 $string['blocksettings'] = 'Impostazioni del blocco';
 $string['bracketfirst'] = '{$a} (prima)';
 $string['bracketlast'] = '{$a} (fine)';
@@ -54,6 +55,7 @@ $string['moveblockafter'] = 'Sposta il blocco dopo il blocco {$a}';
 $string['moveblockbefore'] = 'Sposta il blocco prima del blocco {$a}';
 $string['moveblockinregion'] = 'Sposta il blocco nella regione {$a}';
 $string['movingthisblockcancel'] = 'Stai spostando il blocco ({$a})';
+$string['myblocks'] = 'I miei blocchi';
 $string['onthispage'] = 'In questa pagina';
 $string['pagetypes'] = 'Tipi di pagine';
 $string['pagetypewarning'] = 'Il tipo di pagina specificata in precedenza non è più selezionabile. Per favore scegli sotto il tipo di pagina più adatto.';

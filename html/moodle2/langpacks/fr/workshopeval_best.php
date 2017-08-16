@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_best', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshopeval_best', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   workshopeval_best
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

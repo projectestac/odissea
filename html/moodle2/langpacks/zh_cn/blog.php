@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,7 +151,6 @@ $string['retrievedfrom'] = '取自';
 $string['rssfeed'] = '博客RSS种子';
 $string['searchterm'] = '搜索：{$a}';
 $string['settingsupdatederror'] = '错误，无法更新博客的使用偏好设定。';
-$string['siteblog'] = '全站博客：{$a}';
 $string['siteblogdisable'] = '未启用网站博客';
 $string['siteblogheading'] = '站点博客';
 $string['siteblogs'] = '注册用户可以浏览所有博客';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,10 +37,10 @@ $string['courseexplanation'] = 'Этот инструмент предназна
 **Не используйте этот инструмент в системе, введенной в эксплуатацию**. Используйте только на сервере для разработки. (Чтобы избежать случайного использования, этот инструмент будет отключен до тех пор, пока не будет включен уровень отладки «РАЗРАБОТЧИК»).';
 $string['coursesize_0'] = 'XS (примерно 10 Кбайт; ориентировочное время создания — 1 секунда)';
 $string['coursesize_1'] = 'S (примерно 10 Мбайт; ориентировочное время создания — 30 секунд)';
-$string['coursesize_2'] = 'М (~ 100 МБ; создать ~ за 5 минут)';
-$string['coursesize_3'] = 'L (~ 1 Гб; создать ~ за 1 час)';
-$string['coursesize_4'] = 'XL (~ 10 Гб; создать ~ за 4 часа)';
-$string['coursesize_5'] = 'XXL (~ 20GB; создать ~ за 8 часов)';
+$string['coursesize_2'] = 'М (примерно 100 Мбайт; ориентировочное время создания — 2 минуты)';
+$string['coursesize_3'] = 'L (примерно 1 Гбайт; ориентировочное время создания — 30 минут)';
+$string['coursesize_4'] = 'XL (примерно 10 Гбайт; ориентировочное время создания — 2 часа)';
+$string['coursesize_5'] = 'XXL (примерно 20 Гбайт; ориентировочное время создания — 4 часа)';
 $string['coursewithoutusers'] = 'В выбранном курсе нет пользователей';
 $string['createcourse'] = 'Создать курс';
 $string['createtestplan'] = 'Создать план тестирования';

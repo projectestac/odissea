@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['choiceno'] = '選択肢 {$a}';
 $string['choices'] = '利用可能な選択肢';
 $string['clozeaid'] = 'テキストを入力してください。';
 $string['correctansweris'] = '正答: {$a}';
+$string['correctanswersare'] = '正解は次のとおりです: {$a}';
 $string['correctfeedback'] = '正解すべてに対するフィードバック';
 $string['deletedchoice'] = '受験開始後、この選択肢は削除されました。';
 $string['errfractionsaddwrong'] = 'あなたが選択したプラス評点の合計が、100%になっていません。<br />現在の評点合計は {$a}% です。';

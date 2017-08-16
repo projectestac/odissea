@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,7 +151,6 @@ $string['retrievedfrom'] = 'Recuperado de';
 $string['rssfeed'] = 'Fonte de novas RSS do blog';
 $string['searchterm'] = 'Buscar: {$a}';
 $string['settingsupdatederror'] = 'Produciuse un erro: non foi posíbel actualizar o axuste de preferencias do blog';
-$string['siteblog'] = 'Blog do sitio: {$a}';
 $string['siteblogdisable'] = 'O blog do sitio non está activado';
 $string['siteblogheading'] = 'Blog do sitio';
 $string['siteblogs'] = 'Todos os usuarios do sitio poden ver todos os artigos do blog';

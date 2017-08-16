@@ -63,8 +63,7 @@ if (!$DB->record_exists('external_services', array('shortname' => $serviceshortn
     // There is at least one mobile service enabled.
     if ($DB->record_exists('external_services', array('shortname' => MOODLE_OFFICIAL_MOBILE_SERVICE , 'enabled' => 1))) {
         $response->code  = 3;
-    }
-    else {
+    } else {
         $response->code  = 4;
     }
     echo json_encode($response);
@@ -73,8 +72,10 @@ if (!$DB->record_exists('external_services', array('shortname' => $serviceshortn
 
 // Normal login using the app.
 $response->code  = 1;
+// Indicate that core supports the launch.
+$response->coresupported = 1;
 
-$typeoflogin = get_config('local_mobile', 'typeoflogin');
+$typeoflogin = get_config('tool_mobile', 'typeoflogin');
 if (!empty($typeoflogin)) {
     $response->code = $typeoflogin;
 }

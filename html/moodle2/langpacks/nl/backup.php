@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Stelt de standaardinstelling  in voor het 
 $string['configgeneralanonymize'] = 'Indien ingeschakeld zal als standaardinstelling alle informatie die verwijst naar gebruikers anoniem gemaakt worden.';
 $string['configgeneralbadges'] = 'Stelt de standaard in om badges op te nemen in een backup.';
 $string['configgeneralblocks'] = 'Stelt de standaardinstelling  in voor het opnemen van blokken in een back-up';
+$string['configgeneralcalendarevents'] = 'Standaardinstelling voor het opnemen van kalendergebeurtenissen in een back-up.';
 $string['configgeneralcomments'] = 'Stelt de standaardinstelling  in voor het opnemen van commentaren in een back-up';
+$string['configgeneralcompetencies'] = 'Standaardinstelling voor het opnemen van competenties in een back-up.';
 $string['configgeneralfilters'] = 'Stelt de standaardinstelling  in voor het opnemen van filters in een back-up';
 $string['configgeneralgroups'] = 'Stelt de standaard in om groepen en groeperingen mee op te nemen in een back-up.';
 $string['configgeneralhistories'] = 'Stelt de standaardinstelling  in voor het opnemen van de gebruikersgeschiedenis in een back-up';
@@ -141,7 +143,9 @@ $string['generalanonymize'] = 'Informatie anoniem maken';
 $string['generalbackdefaults'] = 'Algemene standaardinstellingen voor back-up';
 $string['generalbadges'] = 'Badges mee opnemen';
 $string['generalblocks'] = 'Blokken mee opnemen';
+$string['generalcalendarevents'] = 'Kalendergebeurtenissen mee opnemen';
 $string['generalcomments'] = 'Commentaren mee opnemen';
+$string['generalcompetencies'] = 'Competenties mee opnemen';
 $string['generalfilters'] = 'Filters mee opnemen';
 $string['generalgradehistories'] = 'Geschiedenis toevoegen';
 $string['generalgroups'] = 'Groepen en groeperingen mee opnemen';
@@ -170,6 +174,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Als de site een gebruiker 
 $string['importgeneralmaxresults'] = 'Maximaal aantal cursussen in de lijst om te importeren';
 $string['importgeneralmaxresults_desc'] = 'Dit controleert het aantal cursussen in de lijst tijdens de eerste stap van het importproces.';
 $string['importgeneralsettings'] = 'Algemene standaardwaarden bij importeren';
+$string['importsettings'] = 'Algemene importinstellingen';
 $string['importsuccess'] = 'Importeren klaar. Klik op ga verder om terug te keren naar de cursus';
 $string['includeactivities'] = 'Mee back-uppen:';
 $string['includeditems'] = 'Ingesloten items:';

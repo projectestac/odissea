@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['auth_passwordwillexpire'] = 'Votre mot de passe arrivera à échéance 
 $string['auth_remove_delete'] = 'Supprimer complètement l\'utilisateur interne';
 $string['auth_remove_keep'] = 'Conserver comme utilisateur interne';
 $string['auth_remove_suspend'] = 'Désactiver l\'utilisateur interne';
-$string['auth_remove_user'] = 'Indiquer la procédure à effectuer durant une synchronisation avec un compte utilisateur interne lorsque le compte a été retiré de la source d\'authentification externe. Seuls les utilisateurs désactivés sont automatiquement réactivés quand ils réapparaissent dans la source externe.';
+$string['auth_remove_user'] = 'Indiquer la procédure à effectuer durant une synchronisation avec un compte utilisateur interne lorsque le compte a été retiré de la source d\'authentification externe. Seuls les utilisateurs désactivés sont automatiquement restaurés quand ils réapparaissent dans la source externe.';
 $string['auth_remove_user_key'] = 'Utilisateur externe supprimé';
 $string['auth_sync_script'] = 'Synchronisation des comptes utilisateur';
 $string['auth_sync_suspended'] = 'Si ce réglage est activé, l\'attribut de suspension sera utilisé pour modifier l\'état de suspension local du compte utilisateur.';
@@ -80,7 +80,9 @@ $string['emailnowexists'] = 'L\'adresse de courriel que vous tentez d\'utiliser 
 $string['emailupdate'] = 'Modification d\'adresse de courriel';
 $string['emailupdatemessage'] = 'Bonjour,
 
-Vous avez demandé la modification de votre adresse de courriel pour votre compte utilisateur sur {$a->site}. Veuillez cliquer sur l\'URL ci-dessous afin de confirmer la modification.
+Vous avez demandé la modification de votre adresse de courriel pour votre compte utilisateur sur {$a->site}. Veuillez visiter l\'URL ci-dessous afin de confirmer la modification.
+
+Pour toute question, veuillez vous adresser à {$a->supportemail}.
 
 {$a->url}';
 $string['emailupdatesuccess'] = 'L\'adresse de courriel de votre compte <em>{$a->fullname}</em> a été modifiée. L\'adresse est maintenant <em>{$a->email}</em>.';

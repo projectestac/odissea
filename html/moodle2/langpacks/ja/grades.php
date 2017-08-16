@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -327,6 +327,8 @@ $string['gradereport'] = '評定レポート';
 $string['graderreport'] = '評定者レポート';
 $string['grades'] = '評定';
 $string['gradesforuser'] = '{$a->user} の評点';
+$string['gradesmoduledeletionpendingwarning'] = '注意 活動の削除中です! いくつかの評定が削除されます。';
+$string['gradesmoduledeletionprefix'] = '[削除中]';
 $string['gradesonly'] = '評点のみに変更する';
 $string['gradessettings'] = '評定設定';
 $string['gradetype'] = '評定タイプ';
@@ -432,7 +434,7 @@ $string['letterreal'] = '文字 (実データ)';
 $string['letters'] = '文字';
 $string['linkedactivity'] = 'リンクされる活動';
 $string['linkedactivity_help'] = 'この設定ではこのアウトカム項目がリンクされる活動を指定します。これは活動評定により評定されないクライテリアにおける学生のパフォーマンスを測定するため使用することができます。';
-$string['linktoactivity'] = '{$a->name} 活動にリンクする';
+$string['linktoactivity'] = '{$a->name} 活動 ( {$a->title} ) にリンクする';
 $string['lock'] = 'ロック';
 $string['locked'] = 'ロック';
 $string['locked_help'] = 'この設定を有効にした場合、関連する活動の評定が自動更新されないようになります。';

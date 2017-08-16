@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_tags', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['anytype'] = 'Все';
 $string['arrowtitle'] = 'Щелкните здесь, чтобы ввести предполагаемый текст (серые буквы)';
 $string['configtitle'] = 'Название блока';
 $string['coursetags'] = 'Теги курса:';
-$string['defaultdisplay'] = 'Показать теги';
+$string['defaultdisplay'] = 'Тип тегов для отображения';
 $string['disabledtags'] = 'Теги отключены';
 $string['edit'] = 'редактировать...';
 $string['editdeletemytag'] = 'Удалить тег из этого курса:';

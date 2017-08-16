@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'moodle', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,7 +74,6 @@ $string['addresource'] = 'Aggiungi una risorsa...';
 $string['addresourceoractivity'] = 'Aggiungi una attività o una risorsa';
 $string['addresourcetosection'] = 'Aggiungi una risorsa alla sezione \'{$a}\'';
 $string['address'] = 'Indirizzo';
-$string['addressedto'] = 'A';
 $string['addstudent'] = 'Aggiungi studente';
 $string['addsubcategory'] = 'Aggiungi una sotto categoria';
 $string['addteacher'] = 'Aggiungi docente';
@@ -339,6 +338,8 @@ $string['coursedisplay'] = 'Visualizzazione corso';
 $string['coursedisplay_help'] = 'Consente di impostare il modo con cui saranno visualizzate le sezioni del corso, tutte sulla stessa pagina oppure distribuite su più pagine. L\'impostazione non ha effetto su alcuni tipi di formato, come il formato SCORM.';
 $string['coursedisplay_multi'] = 'Visualizza una sezione per pagina';
 $string['coursedisplay_single'] = 'Visualizza le sezioni nella stessa pagina';
+$string['courseduration'] = 'Durata del corso';
+$string['courseduration_desc'] = 'La durata del corso viene utilizzata per calcolare il default della data di fine del corso. La data di fine del corso viene utilizzata unicamente nei report, gli utenti potranno accedere al corso anche dopo la data di fine.';
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
 $string['coursefiles'] = 'File legacy del corso';
 $string['coursefilesedit'] = 'Gestisci file legacy del corso';
@@ -354,7 +355,7 @@ $string['coursehelpforce'] = 'Forza la modalità gruppo prescelta in qualsiasi a
 $string['coursehelpformat'] = 'Il formato con il quale sarà visualizzata la pagina principale del corso.';
 $string['coursehelphiddensections'] = 'Imposta se ed in quale modo gli studenti visualizzeranno le sezioni nascoste nella pagina principale del corso.';
 $string['coursehelpmaximumupload'] = 'Definisce la dimensione massima dei file che sarà possibile caricare nel corso. Questa dimensione  non può eccedere il limite impostato a livello di sito.';
-$string['coursehelpnewsitemsnumber'] = 'Il numero di post del forum news  da visualizzare nel blocco Notizie recenti.  Impostando il valore a 0, il blocco notizie recenti non verrà visualizzato.';
+$string['coursehelpnewsitemsnumber'] = 'Il numero di annunci  da visualizzare nel blocco Annunci recenti.  Impostando il valore a 0, il blocco annunci recenti non verrà visualizzato.';
 $string['coursehelpnumberweeks'] = 'Il numero di sezioni del corso (solo per alcuni formati di corso).';
 $string['coursehelpshowgrades'] = 'Gli studenti possono essere autorizzati a vedere il proprio registro valutazioni. Indipendentemente da questa impostazione, gli studenti potranno comunque visualizzare le valutazioni ricevute nelle singole attività.';
 $string['coursehidden'] = 'Questo corso al momento non è disponibile agli studenti';
@@ -366,12 +367,13 @@ Utilizzando i File del corso ti esponi ad una serie di problemi di privacy, di s
 $string['courselegacyfilesofcourse'] = 'File legacy del corso: {$a}';
 $string['coursemessage'] = 'Messaggio ai partecipanti';
 $string['coursenotaccessible'] = 'Questo corso non è abilitato all\'accesso pubblico';
-$string['courseoverview'] = 'Sommario del corso';
+$string['courseoverview'] = 'Panoramica corsi';
 $string['courseoverviewfiles'] = 'File dell\'introduzione al corso';
 $string['courseoverviewfilesext'] = 'Estensioni dei file dell\'introduzione al corso';
 $string['courseoverviewfiles_help'] = 'I file dell\'introduzione al corso sono visualizzati nell\'elenco dei corsi assieme all\'introduzione.';
 $string['courseoverviewfileslimit'] = 'Limite file dell\'introduzione al corso';
 $string['courseoverviewgraph'] = 'Grafico riassuntivo del corso';
+$string['coursepreferences'] = 'Preferenze corso';
 $string['courseprofiles'] = 'Profili corso';
 $string['coursereasonforrejecting'] = 'Motivazione del rifiuto';
 $string['coursereasonforrejectingemail'] = 'La motivazione sarà inviata per email al richiedente';
@@ -510,6 +512,7 @@ $string['deletingcourse'] = 'Eliminazione di {$a}';
 $string['deletingexistingcoursedata'] = 'Eliminazione dei dati del corso';
 $string['deletingolddata'] = 'Eliminazione vecchi dati';
 $string['department'] = 'Dipartimento';
+$string['deprecatedeventname'] = '{$a} (non è più utilizato)';
 $string['desc'] = 'Decrescente';
 $string['description'] = 'Descrizione';
 $string['deselectall'] = 'Deseleziona tutto';
@@ -706,9 +709,12 @@ $string['emailresetconfirmsent'] = 'E\' stata inviata un\'email al tuo indirizzo
 Se continui ad avere difficoltà, contatta l\'amministratore del sito.';
 $string['emailtoprivatefiles'] = 'E\'\' anche possibile inviare nei propri File personali gli allegati delle email. E\' sufficiente allegare file ad un aemail da inviare a {$a}';
 $string['emailtoprivatefilesdenied'] = 'L\'amministratore ha disabilitato la funzionalità per caricare file personali';
+$string['emailvia'] = '{$a->name} (da {$a->siteshortname})';
 $string['emptydragdropregion'] = 'regione vuota';
 $string['enable'] = 'Abilita';
 $string['encryptedcode'] = 'Codice criptato';
+$string['enddate'] = 'Dati di fine corso';
+$string['enddate_help'] = 'La data di fine del corso viene utilizzata unicamente nei report, gli utenti potranno accedere al corso anche dopo la data di fine.';
 $string['english'] = 'Inglese';
 $string['enrolmentmethods'] = 'Metodi di iscrizione';
 $string['entercourse'] = 'Clicca per accedere a questo corso';
@@ -728,9 +734,11 @@ $string['eventcontentviewed'] = 'Visualizzato contenuto';
 $string['eventcoursecategorycreated'] = 'Creata categoria';
 $string['eventcoursecategorydeleted'] = 'Eliminata categoria';
 $string['eventcoursecategoryupdated'] = 'Aggiornata categoria';
+$string['eventcoursecategoryviewed'] = 'Visualizzata categoria';
 $string['eventcoursecontentdeleted'] = 'Eliminato contenuto corso';
 $string['eventcoursecreated'] = 'Creato corso';
 $string['eventcoursedeleted'] = 'Eliminato corso';
+$string['eventcourseinformationviewed'] = 'Visualizzata introduzione al corso';
 $string['eventcoursemodulecreated'] = 'Creato modulo corso';
 $string['eventcoursemoduledeleted'] = 'Eliminato modulo corso';
 $string['eventcoursemoduleinstancelistviewed'] = 'Visualizzato elenco istanze moduli corso';
@@ -741,6 +749,7 @@ $string['eventcourseresetstarted'] = 'Iniziato reset corso';
 $string['eventcourserestored'] = 'Ripristinato corso';
 $string['eventcoursesectiondeleted'] = 'Eliminata sezione corso';
 $string['eventcoursesectionupdated'] = 'Aggiornata sezione corso';
+$string['eventcoursessearched'] = 'Cercati corsi';
 $string['eventcourseupdated'] = 'Aggiornato corso';
 $string['eventcourseuserreportviewed'] = 'Visualizzato report utente del corso';
 $string['eventcourseviewed'] = 'Visualizzato corso';
@@ -751,6 +760,7 @@ $string['eventemailfailed'] = 'Fallito invio email';
 $string['eventname'] = 'Evento';
 $string['eventrecentactivityviewed'] = 'Visualizzata attività recente';
 $string['eventsearchindexed'] = 'Indicizzati dati per la ricerca';
+$string['eventsearchresultsviewed'] = 'Visualizzati risultati della ricerca';
 $string['eventunknownlogged'] = 'Evento sconosciuto';
 $string['eventusercreated'] = 'Creato utente';
 $string['eventuserdeleted'] = 'Eliminato utente';
@@ -837,7 +847,7 @@ $string['frontpagedescriptionhelp'] = 'La descrizione del sito può essere visua
 $string['frontpageenrolledcourselist'] = 'Elenco dei corsi dove l\'utente è iscritto';
 $string['frontpageformat'] = 'Formato pagina home';
 $string['frontpageformatloggedin'] = 'Formato pagina home dopo il login';
-$string['frontpagenews'] = 'News del sito';
+$string['frontpagenews'] = 'Annunci';
 $string['frontpagesettings'] = 'Impostazioni Pagina home';
 $string['fulllistofcourses'] = 'Tutti i corsi';
 $string['fullname'] = 'Nome';
@@ -1016,6 +1026,7 @@ $string['list'] = 'Elenco';
 $string['listfiles'] = 'Elenco dei file in {$a}';
 $string['listofallpeople'] = 'Elenco di tutte le persone';
 $string['listofcourses'] = 'Elenco dei corsi';
+$string['loading'] = 'Caricamento in corso';
 $string['loadinghelp'] = 'Caricamento in corso...';
 $string['local'] = 'Locale';
 $string['localplugins'] = 'Plugin locali';
@@ -1061,6 +1072,7 @@ $string['manageeditorfiles'] = 'Gestione file usati dall\'editor';
 $string['managefilters'] = 'Filtri';
 $string['managemodules'] = 'Moduli';
 $string['manageroles'] = 'Ruoli e privilegi';
+$string['markallread'] = 'Segna tutti come letti';
 $string['markedthistopic'] = 'Questo argomento è evidenziato come argomento attuale';
 $string['markthistopic'] = 'Contrassegna questo argomento come argomento corrente';
 $string['matchingsearchandrole'] = 'Corrispondenze per \'{$a->search}\' e {$a->role}';
@@ -1154,6 +1166,7 @@ $string['more'] = 'ancora';
 $string['morehelp'] = 'Aiuto ulteriore';
 $string['moreinfo'] = 'Ulteriori informazioni';
 $string['moreinformation'] = 'Maggiori informazioni su questo errore';
+$string['morenavigationlinks'] = 'Altro...';
 $string['moreprofileinfoneeded'] = 'Per cortesia, dicci di più su te stesso';
 $string['mostrecently'] = 'più recentemente';
 $string['move'] = 'Sposta';
@@ -1225,15 +1238,16 @@ Saluti dall\'amministratore del sito \'{$a->sitename}\',
 {$a->signoff}';
 $string['newpicture'] = 'Nuova immagine';
 $string['newpicture_help'] = 'Per caricare una nuova immagine, scegline una (in formato JPG o PNG) e poi clicca il pulsante "Aggiornamento profilo". L\'immagine sarà prima ritagliata in forma quadrata e poi ridimensionata a 100 x 100 pixel.';
+$string['newpictureusernotsetup'] = 'L\'immagine del profilo può essere caricata solo dopo aver compilato e salvato i campi obbligatori.';
 $string['newsectionname'] = 'Nuovo nome per la sezione {$a}';
 $string['newsitem'] = 'news';
-$string['newsitems'] = 'news';
-$string['newsitemsnumber'] = 'Numero di news da visualizzare';
-$string['newsitemsnumber_help'] = '<p>Nei corsi che usano il "formato settimanale" ed il "formato per argomenti", è presente un Forum di default chiamato "Forum News". Questo forum è utile per comunicare agli studenti informazioni e novità riguardanti il corso. (Per impostazione predefinita tutti gli studenti sono automaticamente iscritti a questo Forum e riceveranno nella propria casella di email qualsiasi intervento inserito nel Forum stesso).</p>
+$string['newsitems'] = 'annunci';
+$string['newsitemsnumber'] = 'Numero di annunci da visualizzare';
+$string['newsitemsnumber_help'] = '<p>Nei corsi che usano il "formato settimanale" ed il "formato per argomenti", è presente un Forum di default chiamato "Annunci". Questo forum è utile per comunicare agli studenti informazioni e novità riguardanti il corso. (Per impostazione predefinita tutti gli studenti sono automaticamente iscritti a questo Forum e riceveranno nella propria casella di email qualsiasi intervento inserito nel Forum stesso).</p>
 
-<p>Il Numero di news da visualizzare determina il numero di ultime notizie da presentare nella pagina principale del corso, nel blocco appunto chiamato "Ultime notizie".</p>
+<p>Il Numero di annunci da visualizzare determina il numero di ultime notizie da presentare nella pagina principale del corso, nel blocco appunto chiamato "Ultime notizie".</p>
 
-<p>Se "News da visualizzare" è impostato a "0", nella pagina principale del corso il blocco "Ultime notizie" non sarà visibile.</p>';
+<p>Se "Annunci da visualizzare" è impostato a "0", nella pagina principale del corso il blocco "Ultime notizie" non sarà visibile.</p>';
 $string['newuser'] = 'Nuovo utente';
 $string['newusernewpasswordsubj'] = 'Registrazione nuovo utente';
 $string['newusernewpasswordtext'] = 'Gentile {$a->firstname},
@@ -1651,7 +1665,7 @@ $string['servererror'] = 'Si è verificato un errore durante la comunicazione co
 $string['serverlocaltime'] = 'Ora locale del server';
 $string['setcategorytheme'] = 'Imposta tema di categoria';
 $string['setpassword'] = 'Imposta password';
-$string['setpasswordinstructions'] = 'Per favore inserisci due volte la nuova password e poi fai click su \'Salva  modifiche\'.<br />La nuova password verrà salvata e sarai autenticato.';
+$string['setpasswordinstructions'] = 'Per favore inserisci sotto la nuova password e poi salva.';
 $string['settings'] = 'Impostazioni';
 $string['shortname'] = 'Nome abbreviato';
 $string['shortnamecollisionwarning'] = '[*] = Questo Titolo abbreviato è già utilizzato da un corso e sarà necessario modificarlo all\'approvazione';
@@ -1691,6 +1705,8 @@ $string['showreports_help'] = 'Per ciascun partecipante sono disponibili i repor
 $string['showsettings'] = 'Visualizza impostazioni';
 $string['showtheselogs'] = 'Visualizza i log';
 $string['showthishelpinlanguage'] = 'Visualizza l\'help nella lingua: {$a}';
+$string['signoutofotherservices'] = 'Logout generale';
+$string['signoutofotherservices_help'] = 'L\'account sarà disconnesso da tutti i dispositivi e sistemi che usano i web service, ad esempio l\'app mobile.';
 $string['since'] = 'Dal';
 $string['sincelast'] = 'dal login più recente';
 $string['site'] = 'Sito';
@@ -1702,7 +1718,7 @@ $string['sitehome'] = 'Home del sito';
 $string['sitelegacyfiles'] = 'File legacy del sito ';
 $string['sitelogs'] = 'Log del sito';
 $string['sitemessage'] = 'Invia messaggio agli utenti';
-$string['sitenews'] = 'News del sito';
+$string['sitenews'] = 'Annunci del sito';
 $string['sitepages'] = 'Pagine del sito';
 $string['sitepartlist'] = 'Non hai il privilegio per vedere l\'elenco dei partecipanti';
 $string['sitepartlist0'] = 'Bisogna essere il docente del sito per poter vedere l\'elenco dei partecipanti al corso di sito';

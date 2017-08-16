@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['cachedef_groupdata'] = 'コースグループ情報';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - クリーニング済みコンテンツ';
 $string['cachedef_langmenu'] = '利用可能な言語一覧';
 $string['cachedef_locking'] = 'ロッキング';
+$string['cachedef_message_processors_enabled'] = 'メッセージプロセッサ有効ステータス';
+$string['cachedef_message_time_last_message_between_users'] = 'ユーザ間の最新メッセージの作成日時';
 $string['cachedef_navigation_expandcourse'] = 'ナビゲーション拡張可能コース';
 $string['cachedef_observers'] = 'イベントオブザーバ';
 $string['cachedef_plugin_functions'] = 'プラグイン利用可能コールバック';
@@ -106,10 +108,7 @@ $string['invalidstore'] = '無効なキャッシュストアが提供されま�
 $string['localstorenotification'] = 'このキャッシュはそれぞれのウェブサーバのストアに安全にマップすることができます。';
 $string['lockdefault'] = 'デフォルト';
 $string['locking'] = 'ロッキング';
-$string['locking_help'] = 'ロッキングはデータがオーバライドされるのを防ぐためにキャッシュデータへのアクセスを1度に1プロセスのみに制限するメカニズムです。ロッキングメソッドではどのようにロックが獲得され、チェックされるか決定します。';
-$string['lockingmeans'] = 'ロッキングメカニズム';
-$string['lockmethod'] = 'ロックメソッド';
-$string['lockmethod_help'] = 'このストアが要求された場合、このメソッドはロッキングのために使用されます。';
+$string['locking_help'] = 'ロッキングはデータがオーバライドされるのを防ぐためにキャッシュデータへのアクセスを1度に1プロセスに制限するメカニズムです。ロッキングメソッドではどのようにロックが獲得され、チェックされるか決定します。';
 $string['lockname'] = '名称';
 $string['locknamedesc'] = '名称はユニークにする必要があります。また、次の文字のみ使用することができます: a-zA-Z_';
 $string['locknamenotunique'] = 'あなたが選択した名称はユニークではありません。ユニークな名称を選択してください。';

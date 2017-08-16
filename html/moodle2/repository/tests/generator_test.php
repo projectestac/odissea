@@ -45,7 +45,7 @@ class core_repository_generator_testcase extends advanced_testcase {
         $this->resetAfterTest(true);
 
         // All the repository types.
-        $all = array('alfresco', 'boxnet', 'coursefiles', 'dropbox', 'equella', 'filesystem', 'flickr',
+        $all = array('boxnet', 'coursefiles', 'dropbox', 'equella', 'filesystem', 'flickr',
             'flickr_public', 'googledocs', 'local', 'merlot', 'picasa', 'recent', 's3', 'upload', 'url',
             'user', 'webdav', 'wikimedia', 'youtube');
 
@@ -105,7 +105,6 @@ class core_repository_generator_testcase extends advanced_testcase {
         $record->dropbox_key = '12345';
         $record->dropbox_secret = '67890';
         $record->dropbox_cachelimit = '123';
-        $record->legacyapi = '0';
         $dropbox = $this->getDataGenerator()->create_repository_type('dropbox', $record);
 
         $config = get_config('dropbox');
@@ -113,7 +112,7 @@ class core_repository_generator_testcase extends advanced_testcase {
         $record->enablecourseinstances = '0';
         $this->assertEquals($record, $config);
         $this->assertEquals('Custom Dropbox',
-        $DB->get_field('repository_instances', 'name', array('typeid' => $dropbox->id), MUST_EXIST));
+            $DB->get_field('repository_instances', 'name', array('typeid' => $dropbox->id), MUST_EXIST));
 
         // Multiple instances.
         $record = new stdClass();
@@ -186,7 +185,7 @@ class core_repository_generator_testcase extends advanced_testcase {
         $this->assertEquals($record->contextid, $instance->contextid);
 
         // Invalid context.
-        $this->setExpectedException('coding_exception');
+        $this->expectException('coding_exception');
         $record->contextid = context_block::instance($block->id)->id;
         $instance = $this->getDataGenerator()->create_repository('webdav', $record);
     }

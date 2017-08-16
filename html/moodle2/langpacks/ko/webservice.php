@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,8 +115,6 @@ $string['missingpassword'] = '암호가 없습니다';
 $string['missingrequiredcapability'] = '능력 {$a}이 필요합니다.';
 $string['missingusername'] = '사용자 이름이 없습니다';
 $string['missingversionfile'] = '코딩 오류: 구성요소 {$a}의 version.php 이 없습니다.';
-$string['mobilewsdisabled'] = '비활성화됨';
-$string['mobilewsenabled'] = '활성화됨';
 $string['nocapabilitytouseparameter'] = '사용자는 매개 변수{$a}를 사용하는 데 필요한 능력이 없습니다';
 $string['nofunctions'] = '이 서비스는 함수가 없습니다.';
 $string['norequiredcapability'] = '필요한 능력이 없습니다.';

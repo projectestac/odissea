@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaileen matrikulak
 $string['editselectedusers'] = 'Editatu aukeratutako erabiltzaileen matrikulak';
 $string['enrolledincourserole'] = '"{$a->course}" ikastaroan "{$a->role}" rola ezarrita';
 $string['enrolusers'] = 'Matrikulatu erabiltzaileak ';
+$string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['expirymessageenrolledbody'] = 'Kaixo {$a->user},
 

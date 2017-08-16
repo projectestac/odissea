@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -323,6 +323,8 @@ $string['gradereport'] = 'Report valutazioni';
 $string['graderreport'] = 'Registro valutatore';
 $string['grades'] = 'Valutazioni';
 $string['gradesforuser'] = 'Voti di {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Attenzione: l\'eliminazione dell\'attività è in corso, le valutazioni stanno per essere eliminate.';
+$string['gradesmoduledeletionprefix'] = '[Eliminazione in corso]';
 $string['gradesonly'] = 'Solo le valutazioni';
 $string['gradessettings'] = 'Impostazioni generali';
 $string['gradetype'] = 'Tipo valutazione';
@@ -421,7 +423,7 @@ $string['letterreal'] = 'Letterale (vera)';
 $string['letters'] = 'Graduatoria letterale';
 $string['linkedactivity'] = 'Attività collegata';
 $string['linkedactivity_help'] = '<p>Indica l\'attività (o le attività) alla quale è collegato l\'obiettivo. Gli obiettivi sono utili per misurare le performance di uno studente in base a criteri diversi dal voto.</p>';
-$string['linktoactivity'] = 'Collegamento all\'attività {$a->name}';
+$string['linktoactivity'] = 'Collegamento all\'attività {$a->name} {$a->title}';
 $string['lock'] = 'Blocca';
 $string['locked'] = 'Bloccato';
 $string['locked_help'] = 'Impedisce l\'aggiornamento automatico del voto da parte dell\'attività correlata.';

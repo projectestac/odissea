@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_generator', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['bigfile'] = 'Fitxategi handia: {$a}';
 $string['coursesize_0'] = 'XS (~10KB; ~1 segundutan sortua)';
 $string['coursesize_1'] = 'S (~10MB; ~30 segundutan sortua)';
-$string['coursesize_2'] = 'M (~100MB; ~5 minututan sortua)';
-$string['coursesize_3'] = 'L (~1GB; ~ordu betean sortua)';
-$string['coursesize_4'] = 'XL (~10GB; ~4 ordutan sortua)';
-$string['coursesize_5'] = 'XXL (~20GB; ~8 ordutan sortua)';
+$string['coursesize_2'] = 'M (~100MB; ~2 minututan sortua)';
+$string['coursesize_3'] = 'L (~1GB; ~30 minututan sortua)';
+$string['coursesize_4'] = 'XL (~10GB; ~2 ordutan sortua)';
+$string['coursesize_5'] = 'XXL (~20GB; ~4 ordutan sortua)';
 $string['coursewithoutusers'] = 'Aukeratutako ikastaroak ez du erabiltzailerik';
 $string['createcourse'] = 'Sortu ikastaroa';
 $string['creating'] = 'Ikastaroa sotzen';

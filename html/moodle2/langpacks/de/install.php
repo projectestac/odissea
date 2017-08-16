@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'install', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -131,15 +131,18 @@ $string['memorylimithelp'] = '<p>Die PHP-Einstellung memory_limit Ihres Servers 
 $string['mssqlextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension MSSQL mit dem SQL*Server zu kommunizieren. Bitte prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension MySQLi mit der MySQL-Datenbank zu kommunizieren. Prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
-$string['nativemariadbhelp'] = '<p>Die Datenbank, in der Moodle seine Daten speichert, muss konfiguriert werden.</p>
-<p>Die Datenbank kann automatisch angelegt werden, wenn das angegebene Nutzerkonto bereits existiert und die nötigen Rechte besitzt. Die Feldeinträge Name, Nutzername und Passwort sind Pflichtfelder. Der Tabellenpräfix ist optional.</p>
-<p>Wenn die Datenbank noch nicht existert und de eingetragenen Nutzer über die Rechte zum Anlegen der Datenbank verfügt, versucht Moodle die Datenbank selber anzulegen</p>
+$string['nativemariadbhelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
+<p>Datenbankname, Nutzername und Kennwort sind Pflichtfelder. Tabellenpräfix ist optional.</p>
+<p>Der Datenbankname darf nur alfanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
+<p>Wenn die Datenbank noch nicht existert und der angegebene Nutzer über die entsprechenden Rechte verfügt, wird Moodle versuchen, die Datenbank mit den richtigen Rechten und Einstellungen selber anzulegen</p>
 <p> Dieser Treiber ist nicht kompatibel mit der älteren MyISAM-Engine.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
 $string['nativemssqlhelp'] = 'Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.';
 $string['nativemysqli'] = 'Verbessertes MySQL (native/mysqli)';
-$string['nativemysqlihelp'] = '<p>Sie müssen die Datenbankeinstellungen für die Speicherung der Moodle-Daten konfigurieren. </p><p>Die Datenbank kann automatisch angelegt werden, wenn das angegebene Nutzerkonto bereits existiert und die nötigen Rechte besitzt. Die Feldeinträge Name, Nutzername und Passwort sind Pflichtfelder. Der Tabellenpräfix ist optional.</p>
-<p>Wenn die Datenbank noch nicht existert und de eingetragenen Nutzer über die Rechte zum Anlegen der Datenbank verfügt, versucht Moodle die Datenbank selber anzulegen</p>';
+$string['nativemysqlihelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
+<p>Datenbankname, Nutzername und Kennwort sind Pflichtfelder. Tabellenpräfix ist optional.</p>
+<p>Der Datenbankname darf nur alfanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
+<p>Wenn die Datenbank noch nicht existert und der angegebene Nutzer über die entsprechenden Rechte verfügt, wird Moodle versuchen, die Datenbank mit den richtigen Rechten und Einstellungen selber anzulegen</p>';
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = 'Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.';
 $string['nativepgsql'] = 'PostgreSQL (native/pgsql)';
@@ -166,10 +169,9 @@ $string['pathswrongadmindir'] = 'Das Admin-Verzeichnis existiert nicht';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension PGSQL mit der PostgreSQL-Datenbank zu kommunizieren. Bitte prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
 $string['phpextension'] = 'PHP-Extension {$a}';
 $string['phpversion'] = 'PHP-Version';
-$string['phpversionhelp'] = '<p>Moodle erwartet als PHP-Version mindestens 4.3.0/4.4.0 oder 5.1.0 (5.0.x weist eine Reihe bekannter Fehler auf).</p>
-<p>Sie nutzen momentan die Version {$a}.</p>
-<p>Sie müssen Ihre PHP-Version aktualisieren oder auf einen Rechner wechseln, der eine neuere Version von PHP nutzt.<br />
-(Im Falle von 5.0.x könnten Sie auch zu einer Version 4.3.x/4.4.x downgraden)</p>';
+$string['phpversionhelp'] = '<p>Moodle benötigt mindestens die PHP-Version 5.6.5. oder 7.1 (7.0.x weist einige EInschränkungen auf).</p>
+<p>Sie nutzen im Moment die Version {$a}.</p>
+<p>Sie müssen die PHP-Version aktualisieren oder auf einen Server wechseln, der eine aktuellere Version von PHP nutzt.</p>';
 $string['releasenoteslink'] = 'Um Informationen über diese Moodle-Version zu erhalten, lesen Sie bitte in die Versionshinweise auf {$a}';
 $string['safemode'] = 'Safe Mode';
 $string['safemodeerror'] = 'Die Nutzung von Moodle im Safe Mode kann zu Schwierigkeiten führen.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_ldap', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,7 +65,7 @@ $string['course_summary_updateonsync'] = 'Mise à jour du résumé lors de la sy
 $string['course_summary_updateonsync_key'] = 'Mise à jour du résumé';
 $string['courseupdated'] = 'Le cours d\'identifiant {$a->idnumber} a été correctement mis à jour.';
 $string['courseupdateskipped'] = 'Le cours d\'identifiant {$a->idnumber} ne nécessite pas de mise à jour. Il a été sauté.';
-$string['createcourseextid'] = 'Utilisateur inscrit dans un cours inexistant « {$a->courseextid} »';
+$string['createcourseextid'] = 'CREATE Utilisateur inscrit dans un cours inexistant « {$a->courseextid} »';
 $string['createnotcourseextid'] = 'Utilisateur inscrit dans un cours inexistant « {$a->courseextid} »';
 $string['creatingcourse'] = 'Création du cours « {$a} »';
 $string['duplicateshortname'] = 'La création du cours a échoué, car le nom abrégé du cours existe déjà. Le cours d\'identifiant « {$a->idnumber} » a été ignoré...';

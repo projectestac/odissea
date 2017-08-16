@@ -52,7 +52,9 @@ $string['cachedef_suspended_userids'] = 'List of suspended users per course';
 $string['cachedef_groupdata'] = 'Course group information';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - cleaned content';
 $string['cachedef_langmenu'] = 'List of available languages';
+$string['cachedef_message_time_last_message_between_users'] = 'Time created for most recent message between users';
 $string['cachedef_locking'] = 'Locking';
+$string['cachedef_message_processors_enabled'] = "Message processors enabled status";
 $string['cachedef_navigation_expandcourse'] = 'Navigation expandable courses';
 $string['cachedef_observers'] = 'Event observers';
 $string['cachedef_plugin_functions'] = 'Plugins available callbacks';
@@ -177,8 +179,3 @@ $string['unsupportedmode'] = 'Unsupported mode';
 $string['untestable'] = 'Untestable';
 $string['userinputsharingkey'] = 'Custom key for sharing';
 $string['userinputsharingkey_help'] = 'Enter your own private key here. When you set up other stores on other sites you wish to share data with make sure you set the exact same key there.';
-
-// Deprecated since 2.9.
-$string['lockingmeans'] = 'Locking mechanism';
-$string['lockmethod'] = 'Lock method';
-$string['lockmethod_help'] = 'This is the method used for locking when required of this store.';

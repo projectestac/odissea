@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,6 +88,8 @@ $string['compatibilitysettings'] = 'Compatibiliteitsinstellingen';
 $string['completed'] = 'Volledig';
 $string['completionscorerequired'] = 'Vereiste minimumscore';
 $string['completionscorerequired_help'] = 'Het inschakelen van deze instelling zal er voor zorgen dat een gebruiker minstens de minimumscore moet behalen om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
+$string['completionstatusallscos'] = 'Vereis alle scos om hun voltooiingsstatus te melden';
+$string['completionstatusallscos_help'] = 'Somige SCORM-pakketten bevatten meerdere onderdelen of "scos" - wanneer dit is ingeschakeld moeten alle scos in het pakket hun relevante lesson_status voor deze activiteit als voltooid markeren.';
 $string['completionstatus_completed'] = 'Voltooid';
 $string['completionstatus_passed'] = 'Geslaagd';
 $string['completionstatusrequired'] = 'Vereist status';
@@ -446,3 +448,4 @@ Behandeling van meerdere pogingen
 * De instellingen "Forceer voltooiing", "Forceer nieuwe poging" en "Vergrendel na laatste poging" bieden verdere mogelijkheden tot management van meerdere pogingen.';
 $string['width'] = 'Breedte';
 $string['window'] = 'Frame/venster';
+$string['youmustselectastatus'] = 'Je moet een vereiste status selecteren';

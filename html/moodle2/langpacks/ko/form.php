@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['nomethodforaddinghelpbutton'] = '양식 요소  {$a->name} (학급 {$a-
 $string['nonexistentformelements'] = '없는 서식 양식 요소 {$a} 에 도움말 버튼을 추가하려 함';
 $string['optional'] = '선택사항';
 $string['othersettings'] = '기타 설정';
+$string['passwordunmaskrevealhint'] = '암호노출';
 $string['requiredelement'] = '필수 항목';
 $string['revealpassword'] = '암호노출';
 $string['security'] = '보안';

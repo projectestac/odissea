@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'page', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['modulename_help'] = 'المقرروحدة الصفحة تمكن الم�
 * لعرض بنود وشروط المقرر الدراسي أو لعرض وصف المقرر
 * لتضمين العديد من أشرطة الفيديو أو ملفات الصوت مع بعض النصوص التوضيحية';
 $string['modulenameplural'] = 'صفحات';
-$string['optionsheader'] = 'خيارات العرض';
+$string['optionsheader'] = 'خيارات';
 $string['page:addinstance'] = 'إضافة مصدر صفحة جديد';
 $string['page-mod-page-x'] = 'أي صفحة لوحدة الصفحة';
 $string['page:view'] = 'عاين محتوى الصفحة';
@@ -58,6 +58,6 @@ $string['popupwidth'] = 'عرض النوافذ المنبثقة (بالبكسل)
 $string['popupwidthexplain'] = 'يحدد العرض الافتراضي للنوافذ المنبثقة.';
 $string['printheading'] = 'عرض اسم الصفحة';
 $string['printheadingexplain'] = 'عرض اسم الصفحة فوق المحتوى؟';
-$string['printintro'] = 'اعرض وصف الصفحة';
+$string['printintro'] = 'اعرص وصف الصفحة';
 $string['printintroexplain'] = 'اعرض وصف الصفحة فوق المحتوى';
 $string['search:activity'] = 'صفحة';

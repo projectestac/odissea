@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'search', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,6 @@ $string['documentsinindex'] = '索引中的文档';
 $string['duration'] = '周期';
 $string['emptydatabaseerror'] = '数据表不存在，或不包含索引记录。';
 $string['enginenotfound'] = '没有找到{$a}引擎';
-$string['enginenotinstalled'] = '没有安装{$a}。';
 $string['engineserverstatus'] = '搜索引擎无法使用，请联系你的管理员';
 $string['enteryoursearchquery'] = '输入搜索条件';
 $string['errorareanotavailable'] = '{$a} 搜索范围无法使用';

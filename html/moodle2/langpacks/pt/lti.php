@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lti', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,7 +50,7 @@ $string['allowinstructorcustom'] = 'Permitir aos professores adicionar parâmetr
 $string['allowsetting'] = 'Permitir que a ferramenta guarde 8K de configurações no Moodle.';
 $string['always'] = 'Sempre';
 $string['autoaddtype'] = 'Adicionar ferramenta';
-$string['automatic'] = 'Automático, com base no URL de arranque';
+$string['automatic'] = 'Automático, com base no URL da ferramenta';
 $string['baseurl'] = 'URL base/ferramenta de registo de nome';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'Atividades LTI';
@@ -58,6 +58,7 @@ $string['basiclti_base_string'] = 'Base String do LTI OAuth';
 $string['basiclti_endpoint'] = 'Endpoint do arranque de LTI';
 $string['basicltifieldset'] = 'Exemplo de fieldset personalisado';
 $string['basiclti_in_new_window'] = 'A sua atividade abriu numa nova janela';
+$string['basiclti_in_new_window_open'] = 'Abrir numa nova janela';
 $string['basicltiintro'] = 'Descrição da atividade';
 $string['basicltiname'] = 'Nome da atividade';
 $string['basiclti_parameters'] = 'Parâmetros de arranque do LTI';
@@ -80,6 +81,8 @@ $string['configtoolurl'] = 'URL predefinido da ferramenta remota';
 $string['configtypes'] = 'Ativar aplicações LTI';
 $string['configured'] = 'Configurado';
 $string['confirmtoolactivation'] = 'Tem a certeza de que pretende ativar esta ferramenta?';
+$string['contentitem'] = 'Content-Item Message';
+$string['contentitem_help'] = 'Se marcada, a opção \'Selecionar conteúdo\' estará disponível ao adicionar uma ferramenta externa.';
 $string['courseactivitiesorresources'] = 'Atividades ou recursos da disciplina';
 $string['courseid'] = 'Número ID da disciplina';
 $string['courseinformation'] = 'Informação da disciplina';
@@ -126,7 +129,7 @@ $string['display_name_help'] = 'Se selecionado, o nome da atividade (especificad
 seja exibido em duplicado.
 
 O título nunca é exibido quando o modo de visualização é uma nova janela.';
-$string['domain_mismatch'] = 'O domínio do URL de arranque não corresponde ao da configuração da ferramenta.';
+$string['domain_mismatch'] = 'O domínio do URL da ferramenta não corresponde à configuração da ferramenta.';
 $string['donot'] = 'Não enviar';
 $string['donotaccept'] = 'Não aceitar';
 $string['donotallow'] = 'Não permitir';
@@ -138,25 +141,24 @@ $string['embed_no_blocks'] = 'Incorporar, sem blocos';
 $string['enableemailnotification'] = 'Enviar e-mails de notificação';
 $string['enableemailnotification_help'] = 'Se ativar esta opção, os alunos recebem um e-mail de aviso quando as suas notas são atribuídas.';
 $string['enterkeyandsecret'] = 'Insira a sua chave do consumidor e a senha partilhada';
+$string['enterkeyandsecret_help'] = 'Se recebeu uma chave do consumidor e/ou um senha partilhada, insira-as aqui';
 $string['errorbadurl'] = 'O URL não é um URL de ferramenta válido ou não é um cartridge.';
+$string['errorincorrectconsumerkey'] = 'A chave do consumidor está incorreta.';
+$string['errorinvaliddata'] = 'Data inválida: {$a}';
+$string['errorinvalidmediatype'] = 'Tipo de media inválido: {$a}';
+$string['errorinvalidresponseformat'] = 'Formato de resposta do Content-Item inválido.';
 $string['errormisconfig'] = 'Ferramenta mal configurada. Peça ao administrador do Moodle para corrigir a configuração da ferramenta.';
+$string['errortooltypenotfound'] = 'Tipo de ferramenta LTI não encontrado.';
 $string['existing_window'] = 'Janela existente';
 $string['extensions'] = 'Extensão de serviços da LTI';
 $string['external_tool_type'] = 'Ferramenta pré-configurada';
-$string['external_tool_type_help'] = 'O principal objetivo da configuração de uma ferramenta é criar um canal de comunicação seguro entre o Moodle e o fornecedor da ferramenta.
-Também permite adicionar configurações predefinidas e serviços adicionais da ferramenta.
-
-* **Automático, com base no URL de arranque** - Esta opção deve ser usada na maioria dos casos. O Moodle irá selecionar a configuração da ferramenta mais adequada
-        com base no URL de arranque. As ferramentas configuradas tanto por um administrador ou dentro desta disciplina serão usadas.
-        Quando o URL de arranque é especificado, o Moodle irá indicar se o reconhece ou não. Se não reconhecer o URL de arranque,
-        pode necessitar da introdução manual dos detalhes da configuração da ferramenta.
-* **Uma ferramenta pré-configurada específica** - Ao selecionar uma ferramenta pré-configurada específica, pode forçar o Moodle a usar essa configuração de ferramenta ao comunicar com o fornecedor da ferramenta externa. Se o URL de arranque não parecer pertencer ao fornecedor da ferramenta, irá surgir um aviso. Em alguns casos, não é necessário inserir um URL de arranque ao indicar uma ferramenta pré-configurada específica (se não direcionar para um recurso específico do fornecedor da ferramenta).
-* **Configuração personalizada** - Para configurar a ferramenta de configuração personalizada, clique em Mostrar as opções avançadas e insira a chave do consumidor e a senha partilhada. Se não tiver uma chave do consumidor e uma senha partilhada, tem de a solicitar ao fornecedor da ferramenta.
-        Nem todas as ferramentas necessitam de chave do consumidor e de senha partilhada, nesse caso o campo pode ser deixado em branco.
+$string['external_tool_type_help'] = '* **Automático, com base no URL da ferramenta** - A melhor configuração da ferramenta é selecionada automaticamente. Se o URL da ferramenta não for reconhecido, os detalhes da configuração da ferramenta talvez necessitem de ser introduzidos manualmente.
+* **Uma ferramenta pré-configurada específica** - A configuração da ferramenta para a ferramenta especificada será utilizada na comunicação com o fornecedor de ferramentas externo. Se o URL da ferramenta não parecer pertencer ao fornecedor da ferramenta, irá surgir um aviso. Em alguns casos, não é necessário inserir um URL da ferramenta.
+* **Configuração personalizada** - A chave do consumidor e a senha partilhada talvez necessitem de ser introduzidas manualmente. A chave do consumidor e a senha partilhada podem ser obtidas a partir do fornecedor da ferramenta. No entanto, nem todas as ferramentas necessitam de uma chave do consumidor e de uma senha partilhada, nesse caso os campos podem ser deixados em branco.
 
 ### Edição da ferramenta pré-configurada
 
-Após a inserção da ferramenta ficam disponíveis três ações:
+Depois da pré-configuração da ferramenta ficam disponíveis três ações na lista pendente:
 
 * **Adicionar** -  Crie uma configuração para este nível na disciplina. Todas as ferramentas externas nesta disciplina podem usar esta configuração.
 * **Editar** -  Escolha um nível a partir da lista pendente e clique neste ícone. Os pormenores da configuração da ferramenta podem ser editados.
@@ -201,13 +203,13 @@ Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop
 
 É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['launchoptions'] = 'Opções de arranque';
-$string['launch_url'] = 'URL de arranque/cartridge';
-$string['launch_url_help'] = 'O URL de arranque indica o endereço web da Ferramenta Externa, e pode conter informações adicionais, tais como o recurso a mostrar.
-Se não sabe o que inserir no URL de arranque, por favor contacte o fornecedor de ferramenta para obter mais informações.
+$string['launch_url'] = 'URL da ferramenta';
+$string['launch_url_help'] = 'O URL da ferramenta indica o endereço web da Ferramenta Externa, e pode conter informações adicionais, tais como o recurso a mostrar.
+Se não sabe o que inserir no URL da ferramenta, por favor contacte o fornecedor de ferramenta para obter mais informações.
 
 Também pode inserir um URL de cartridge, caso tenha um, e os restantes detalhes do formulário serão automaticamente preenchidos.
 
-Se tiver selecionado uma ferramenta pré-configurada, pode não precisar de inserir um URL de arranque. Se a hiperligação para a ferramenta for usada apenas para iniciar o fornecedor da ferramenta do sistema, e não for para nenhum recurso específico, provavelmente será o caso.';
+Se tiver selecionado uma ferramenta pré-configurada, pode não precisar de inserir um URL da ferramenta. Se a hiperligação para a ferramenta for usada apenas para iniciar o fornecedor da ferramenta do sistema, e não for para nenhum recurso específico, provavelmente será o caso.';
 $string['leaveblank'] = 'Deixe em branco se não necessitar';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Adicionar configurações específicas da Ferramenta LTI';
@@ -362,9 +364,10 @@ $string['secure_icon_url'] = 'URL do Ícone seguro';
 $string['secure_icon_url_help'] = 'Similar ao URL do ícone, mas usado se o utilizador aceder ao Moodle de forma segura através de SSL. O principal objetivo para este campo é para evitar
 o navegador avisando o utilizador que a página subjacente foi acessada através de SSL, mas pedindo para mostrar uma imagem insegura.';
 $string['secure_launch_url'] = 'URL de arranque seguro';
-$string['secure_launch_url_help'] = 'Similar ao URL de arranque, mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro invés do URL de arranque se o Moodle for acedido partir de  SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre usando SSL.
+$string['secure_launch_url_help'] = 'Similar ao URL de arranque, mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro invés do URL de arranque se o Moodle for acedido partir de SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre com SSL.
 
 O URL de arranque também pode ser definido para um endereço https que force a entrada através de SSL, e este campo pode ser deixado em branco.';
+$string['selectcontent'] = 'Selecionar conteúdo';
 $string['send'] = 'Enviar';
 $string['services'] = 'Serviços';
 $string['services_help'] = 'Selecione os serviços que pretende disponibilizar ao fornecedor de ferramenta. Podem ser selecionados mais do que um serviço.';
@@ -396,10 +399,10 @@ $string['share_roster_help'] = 'Define se a ferramenta pode aceder à lista de u
 Note que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['show_in_course_activity_chooser'] = 'Mostrar no seletor de atividade e também como ferramenta pré-configurada';
 $string['show_in_course_lti1'] = 'O uso da configuração de ferramentas';
-$string['show_in_course_lti1_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade a adicionar a uma disciplina. Também pode ser mostrada no menu pendente de ferramenta pré-configurada quando adicionar uma ferramenta externa a uma disciplina. Em alternativa, a configuração da ferramenta é apenas usada se o URL de arranque correto é inserido quando adicionar uma ferramenta externa a uma disciplina.';
+$string['show_in_course_lti1_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade a adicionar a uma disciplina. Também pode ser mostrada no menu pendente de ferramenta pré-configurada quando adicionar uma ferramenta externa a uma disciplina. Em alternativa, a configuração da ferramenta é usada apenas se o URL correto da ferramenta é inserido quando adicionar uma ferramenta externa a uma disciplina.';
 $string['show_in_course_lti2'] = 'O uso da configuração de ferramentas';
 $string['show_in_course_lti2_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade ou recurso a adicionar a uma disciplina ou no menu pendente de ferramenta pré-configurada ao adicionar uma ferramenta externa a uma disciplina.';
-$string['show_in_course_no'] = 'Não mostrar, usar apenas quando um URL de arranque correspondente é inserido';
+$string['show_in_course_no'] = 'Não mostrar, usar apenas quando um URL de ferramenta correspondente é inserido';
 $string['show_in_course_preconfigured'] = 'Mostrar como ferramenta pré-configurada quando adicionar uma ferramenta externa';
 $string['size'] = 'Parâmetros de tamanho';
 $string['submission'] = 'Submissão';
@@ -412,6 +415,7 @@ $string['subplugintype_ltiservice_plural'] = 'Serviços LTI';
 $string['subplugintype_ltisource'] = 'Fonte LTI';
 $string['subplugintype_ltisource_plural'] = 'Fontes LTI';
 $string['successfullycreatedtooltype'] = 'Nova ferramenta criada com sucesso!';
+$string['successfullyfetchedtoolconfigurationfromcontent'] = 'Obteve com sucesso a configuração da ferramenta a partir do conteúdo selecionado.';
 $string['toggle_debug_data'] = 'Alternar dados de depuração';
 $string['tool_config_not_found'] = 'A configuração não foi encontrada neste URL.';
 $string['tooldescription'] = 'Descrição da ferramenta';
@@ -438,10 +442,10 @@ $string['tooltypedeleted'] = 'Ferramenta pré-configurada apagada';
 $string['tooltypenotdeleted'] = 'Não foi possível apagar a ferramenta pré-configurada';
 $string['tooltypes'] = 'Ferramentas';
 $string['tooltypeupdated'] = 'Ferramenta pré-configurada atualizada';
-$string['toolurl'] = 'URL de base da ferramenta/URL de cartridge';
-$string['toolurl_help'] = 'O URL base da Ferramenta LTI é usado para combinar os URLs de arranque da Ferramenta LTI com a sua configuração correta. O prefixo http(s) no URL é opcional.
+$string['toolurl'] = 'URL da ferramenta';
+$string['toolurl_help'] = 'O URL da Ferramenta é usado para combinar os URLs da Ferramenta LTI com a sua configuração correta. O prefixo http(s) no URL é opcional.
 
-Além disso, o URL de base é usado como o URL de arranque se um URL de arranque não for especificado na ferramenta externa.
+Além disso, o URL de base é usado como o URL da ferramenta se um URL de arranque não for especificado na ferramenta externa.
 
 Por exemplo, um URL base de *tool.com* iria corresponder ao seguinte:
 

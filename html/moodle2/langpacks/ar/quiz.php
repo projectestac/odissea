@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessnoticesheader'] = 'يمكنك معاينة هذا الاختبار ، ولكن إذا كانت هذه محاولة حقيقية ، سوف يتم حظرك للأسباب التالية:';
 $string['action'] = 'إجراء';
 $string['activityoverview'] = 'لديك اختبارات تم حلول موعدها';
-$string['adaptive'] = 'الوضع التكيفي';
+$string['adaptive'] = 'الوضع التتابعي';
 $string['adaptive_help'] = 'في حالة التمكين، سيسمح للإجابات المتعددة على السؤال ضمن نفس المحاولة في هذا الاختبار. فعلى سبيل المثال إذا تم وضع علامة على سؤال أنه غير صحيح،  فسُيسمح للطالب المحاولة مرة أخرى على الفور. ومع ذلك، سيُعتمد على إعدادات "تطبيق العقوبات" في حساب عقوبة كل محاولة خاطئة.';
 $string['add'] = 'أضف';
 $string['addaquestion'] = 'أضف سؤال';
@@ -44,24 +44,24 @@ $string['addpagebreak'] = 'إضافة فاصل للصفحة';
 $string['addpagehere'] = 'أضف صفحة هنا';
 $string['addquestion'] = 'أضف سؤال';
 $string['addquestionfrombankatend'] = 'أضف من بنك الأسئلة في النهاية';
-$string['addquestions'] = 'أضف أسئلة';
-$string['addquestionstoquiz'] = 'أضف أسئلة للإختبار الحالي';
-$string['addrandom'] = 'أضف {$a} أسئلة عشوائية';
-$string['addrandom1'] = 'أضف';
-$string['addrandom2'] = 'أسئلة عشوائية';
+$string['addquestions'] = 'أضف اسئله';
+$string['addquestionstoquiz'] = 'أضف أسئله للإمتحان الحالي';
+$string['addrandom'] = 'اضف {$a} اسئلة عشوائية';
+$string['addrandom1'] = 'اضف';
+$string['addrandom2'] = 'اسئلة عشوائية';
 $string['addrandomfromcategory'] = ':إضافة أسئلة عشوائية من تصنيف';
 $string['addrandomquestion'] = 'أضف سؤال عشوائي';
 $string['addrandomquestionatend'] = 'أضف سؤال عشوائي في النهاية';
 $string['addrandomquestiontopage'] = 'أضف سؤال عشوائي إلى الصفحة {$a}';
 $string['addrandomquestiontoquiz'] = 'أضف سؤال عشوائي إلى الإختبار {$a}';
 $string['addselectedquestionstoquiz'] = 'أضف الأسئلة المختارة إلى الإختبار';
-$string['addselectedtoquiz'] = 'أضف ما تم اختياره إلى الإختبار';
-$string['addtoquiz'] = 'أضف إلى الاختبار';
+$string['addselectedtoquiz'] = 'أضف البنود المختارة إلى الإمتحان';
+$string['addtoquiz'] = 'أضف إلى اختبار';
 $string['affectedstudents'] = 'متأثر {$a}';
 $string['aftereachquestion'] = 'بعد إضافة كل سؤال';
 $string['age'] = 'عمر';
 $string['allattempts'] = 'كل المحاولات';
-$string['allinone'] = 'غير محدد';
+$string['allinone'] = 'غير مححد';
 $string['allowreview'] = 'السماح بالمراجعة';
 $string['alreadysubmitted'] = 'يبدو أنك قد قدمت هذه الإجابة بالفعل';
 $string['alternativeunits'] = 'وحدات بديلة';
@@ -131,16 +131,16 @@ $string['closereview'] = 'أغلاق  المراجعة';
 $string['comment'] = 'تعليق';
 $string['comments'] = 'تعليقات';
 $string['completedon'] = 'اكتمل في';
-$string['confirmclose'] = 'أنت على وشك إغلاق هذه المحاولة. بمجرد إغلاقك لهذه المحاولة لن تستطيع تعديل إجاباتك.';
+$string['confirmclose'] = 'أنت غ=على وشك إغلاق هذه المحاولة. بمجرد إغلاقك لهذه المحاول لن تستطيع تعديل إجاباتك.';
 $string['confirmserverdelete'] = 'هل أنت متأكد من إبعاد الخادم <b>{$a}</b> من القائمة؟';
 $string['continueattemptquiz'] = 'إستمر في آخر محاولة';
 $string['continuepreview'] = 'استمر اخر معاينة';
 $string['copyingfrom'] = 'إنشاء نسخة من السؤال  \'{$a}\'';
 $string['copyingquestion'] = 'نسخ سؤال';
-$string['correct'] = 'صحيح';
+$string['correct'] = 'صح';
 $string['correctanswer'] = 'إجابة صحيحة';
 $string['correctanswerformula'] = 'صيغة الاجابة الصحيحة';
-$string['correctansweris'] = 'الإجابة الصحيحة {$a}';
+$string['correctansweris'] = 'الأجابات الصحيحة {$a}';
 $string['correctanswerlength'] = 'الأرقام المعنوية';
 $string['correctanswers'] = 'إجابات صحيحة';
 $string['correctanswershows'] = 'الأجابة الصحيحة تظهر';
@@ -213,7 +213,7 @@ $string['guestsno'] = 'معذرة! يتعذر على الضيوف أداء ال�
 $string['imagedisplay'] = 'الصورة المراد عرضها';
 $string['importcategory'] = 'استيراد تصنيف';
 $string['importquestions'] = 'استيراد الاسئلة من ملف';
-$string['incorrect'] = 'خطأ';
+$string['incorrect'] = 'خطاء';
 $string['indivresp'] = 'إجابات الافراد لكل بند';
 $string['info'] = 'معلومات';
 $string['inprogress'] = 'قيد التنفيذ';
@@ -424,8 +424,6 @@ $string['timeleft'] = 'الوقت المتبقي';
 $string['timelimit'] = 'الوقت المحدد';
 $string['timelimitexeeded'] = '!عذرا، انتهي الوقت المحدد للاختبار';
 $string['timelimit_help'] = 'فى حالة تفعيله، سيتم توضيح المدة المحددة على الصفحة  الأساسية للإختبار ويتم عرض مؤقت للعد التنازلي في كتلة تنقل الإختبار';
-$string['timelimitmin'] = '(المهلة الزمنية (بالدقائق';
-$string['timelimitsec'] = '(المهلة الزمنية (بالثواني';
 $string['timesup'] = 'انتهى الوقت!';
 $string['timetaken'] = 'الوقت المستغرق';
 $string['timing'] = 'توقيت';

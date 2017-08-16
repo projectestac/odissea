@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choicegroup', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,9 +50,13 @@ $string['choicegroupfull'] = 'Aquest grup és ple i no hi ha places lliures.';
 $string['choicegroupname'] = 'Nom';
 $string['choicegroupopen'] = 'Obre';
 $string['choicegroupoptions'] = 'Opcions';
-$string['choicegroupoptions_help'] = 'Aquí podeu especificar les opcions que poden triar els participants.
+$string['choicegroupoptions_help'] = 'Aquí podeu especificar entre quins grups els participants poden triar.
 
-Podeu omplir tantes com sigui necessari. Si deixeu alguna opció en blanc, no es mostrarà. Si necessiteu més opcions, feu clic al botó "Afegiu 3 camps nous".';
+La llista de l\'esquerra mostra tots els grups i els agrupaments disponibles. Per afegir un o diversos grups, seleccioneu-los a la llista i feu clic a «Afegeix». Per afegir tots els grups d\'un agrupament, seleccioneu l\'agrupament i feu clic a «Afegeix».
+
+Els grups seleccionats apareixeran a la llista de la dreta.
+
+Per suprimir qualsevol grup de la selecció, seleccioneu-lo a la llista de la dreta i feu clic a «Suprimeix».';
 $string['choicegroup:readresponses'] = 'Llegeix les respostes';
 $string['choicegroupsaved'] = 'La vostra elecció s\'ha desat';
 $string['choicetext'] = 'Text de l\'opció';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['choice:addinstance'] = 'Añadir una nueva opción';
 $string['choice:choose'] = 'Registrar una elección';
 $string['choiceclose'] = 'Hasta';
 $string['choicecloseson'] = 'La consulta se cierra el {$a}';
-$string['choice:deleteresponses'] = 'Eliminar respuestas';
+$string['choice:deleteresponses'] = 'Modificar y eliminar respuestas';
 $string['choice:downloadresponses'] = 'Descargar respuestas';
 $string['choicefull'] = 'Esta opción está completa y no hay espacios disponibles.';
 $string['choicename'] = 'Título de la consulta';
@@ -50,6 +50,7 @@ $string['choice:readresponses'] = 'Ver respuestas';
 $string['choicesaved'] = 'Su elección ha sido guardada';
 $string['choicetext'] = 'Pregunta a responder';
 $string['chooseaction'] = 'Elija una acción ...';
+$string['chooseoption'] = 'Elige: {$a}';
 $string['closebeforeopen'] = 'Has especificado una fecha de cierre previa a la de la fecha de apertura.';
 $string['completionsubmit'] = 'Mostrar como completada cuando el usuario selecciona una opción';
 $string['description'] = 'Descripción';
@@ -58,6 +59,7 @@ $string['displaymode'] = 'Modo de visualización de las opciones';
 $string['displayvertical'] = 'Mostrar verticalmente';
 $string['eventanswercreated'] = 'Consulta respondida';
 $string['eventanswerdeleted'] = 'Consulta borrada';
+$string['eventanswersubmitted'] = 'Consulta hecha';
 $string['eventanswerupdated'] = 'Consulta actualizada';
 $string['eventreportdownloaded'] = 'Informe de selección descargado';
 $string['eventreportviewed'] = 'Informe de Consulta visto';
@@ -129,7 +131,6 @@ $string['skipresultgraph'] = 'Pasar por alto gráfico de resultados';
 $string['spaceleft'] = 'espacio disponible';
 $string['spacesleft'] = 'espacios disponibles';
 $string['taken'] = 'Tomadas';
-$string['timerestrict'] = 'Restringir la respuesta a este período';
 $string['userchoosethisoption'] = 'Usuarios que eligieron esta opción';
 $string['viewallresponses'] = 'Ver {$a} respuestas';
 $string['withselected'] = 'Con seleccionados';

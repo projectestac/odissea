@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_monitor', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,5 +101,5 @@ $string['subhelp'] = 'Infos détaillées de l\'abonnement';
 $string['subhelp_help'] = 'Cet abonnement surveille si l\'événement « {$a->eventname} »  dans « {$a->moduleinstance} » est déclenché {$a->frequency} fois durant un intervalle de {$a->minutes} minute(s).';
 $string['subscribeto'] = 'S\'inscrire à la règle « {$a} »';
 $string['taskchecksubscriptions'] = 'Activer/désactiver l\'abonnement aux règles non valides';
-$string['taskcleanevents'] = 'Suppression des événements surveillés superflus';
+$string['taskcleanevents'] = 'Nettoyage des événements de la surveillance d\'événements';
 $string['unsubscribe'] = 'Se désabonner';

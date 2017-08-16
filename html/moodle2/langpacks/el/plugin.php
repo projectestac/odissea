@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'plugin', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['status_missing'] = 'Λείπει από το δίσκο';
 $string['status_nodb'] = 'Δεν υπάρχει βάση δεδομένων';
 $string['systemname'] = 'Αναγνωριστικό';
 $string['type_auth'] = 'Μέθοδος αυθεντικοποίησης';
-$string['type_auth_plural'] = 'Υπομονάδες πιστοποίησης';
+$string['type_auth_plural'] = 'Μέθοδοι αυθεντικοποίησης';
 $string['type_block'] = 'Μπλοκ';
 $string['type_block_plural'] = 'Blocks';
 $string['type_coursereport_plural'] = 'Αναφορές μαθήματος';

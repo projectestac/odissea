@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'calendar', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,12 +64,26 @@ $string['erroraddingevent'] = 'Falha ao adicionar evento';
 $string['errorbadsubscription'] = 'Subscrição de Calendário não encontrada.';
 $string['errorbeforecoursestart'] = 'Não é possível definir eventos antes da data de início da disciplina';
 $string['errorcannotimport'] = 'Não pode definir uma subscrição do calendário neste momento.';
+$string['errorhasuntilandcount'] = 'Quer UNTIL ou COUNT podem aparecer numa regra de recorrência, mas UNTIL e COUNT não devem ocorrer na mesma regra de recorrência.';
+$string['errorinvalidbydayprefix'] = 'Valores inteiros a preceder as regras BYDAY apenas pode acontecer em MONTHLY ou YEARLY RRULE.';
+$string['errorinvalidbydaysuffix'] = 'Os valores válidos para a parte do dia da semana na regra BYDAY são SE, TE, QA, QI, SE, SA e DO';
+$string['errorinvalidbyhour'] = 'Os valores válidos para a regra BYHOUR são 0 a 23.';
+$string['errorinvalidbyminute'] = 'Os valores válidos para a regra BYMINUTE são 0 a 59.';
+$string['errorinvalidbymonth'] = 'Os valores válidos para a regra BYMONTH são 1 a 12.';
+$string['errorinvalidbymonthday'] = 'Os valores válidos para a regra BYMONTHDAY são 1 a 31 ou -31 a -1.';
+$string['errorinvalidbysecond'] = 'Os valores válidos para a regra BYSECOND são 1 a 59.';
+$string['errorinvalidbysetpos'] = 'Os valores válidos para a regra BYSETPOS são 1 a 366 ou -366 a -1.';
+$string['errorinvalidbyweekno'] = 'Os valores válidos para a regra BYWEEKNO são 1 a 53 ou -53 a -1.';
+$string['errorinvalidbyyearday'] = 'Os valores válidos para a regra BYYEARDAY são 1 a 366 ou -366 a -1.';
 $string['errorinvaliddate'] = 'Data não válida';
 $string['errorinvalidicalurl'] = 'O URL do iCal fornecido é inválido.';
+$string['errorinvalidinterval'] = 'O valor da regra INTERVAL deve ser um número inteiro positivo.';
 $string['errorinvalidminutes'] = 'Indique a duração, em minutos, por meio de um número entre 1 e 999.';
 $string['errorinvalidrepeats'] = 'Indique o número de eventos por meio de um número entre 1 e 99.';
+$string['errormustbeusedwithotherbyrule'] = 'A regra BYSETPOS deve ser usada apenas em conjunto com outra parte da regra BYxxx.';
 $string['errornodescription'] = 'É precisa uma descrição';
 $string['errornoeventname'] = 'É preciso um nome';
+$string['errornonyearlyfreqwithbyweekno'] = 'A regra BYWEEKNO só é válida para regras YEARLY.';
 $string['errorrequiredurlorfile'] = 'É necessário um URL ou um ficheiro para importar um calendário.';
 $string['errorrrule'] = 'Rrule parece estar incorreta';
 $string['errorrruleday'] = 'Rrule tem um parâmetro dia inválido';
@@ -91,8 +105,14 @@ $string['eventsdeleted'] = 'Eventos eliminados';
 $string['eventsfor'] = '{$a} eventos';
 $string['eventsimported'] = 'Eventos importados: {$a}';
 $string['eventskey'] = 'Tipo de eventos';
+$string['eventspersonal'] = 'Os meus eventos pessoais';
 $string['eventsrelatedtocourses'] = 'Eventos relativos a esta disciplina';
+$string['eventsrelatedtogroups'] = 'Eventos relacionados com grupos';
 $string['eventstarttime'] = 'Hora de início';
+$string['eventstoexport'] = 'Eventos para exportar';
+$string['eventsubscriptioncreated'] = 'Subscrição de calendário criada';
+$string['eventsubscriptiondeleted'] = 'Subscrição de calendário apagada';
+$string['eventsubscriptionupdated'] = 'Subscrição de calendário atualizada';
 $string['eventsupdated'] = 'Eventos atualizados: {$a}';
 $string['eventtime'] = 'Tempo';
 $string['eventview'] = 'Detalhes do evento';
@@ -187,6 +207,7 @@ $string['thu'] = 'Qui';
 $string['thursday'] = 'Quinta';
 $string['timeformat_12'] = '12 horas (AM/PM)';
 $string['timeformat_24'] = '24 horas';
+$string['timeperiod'] = 'Período de tempo';
 $string['today'] = 'Hoje';
 $string['tomorrow'] = 'Amanhã';
 $string['tt_deleteevent'] = 'Apagar evento';

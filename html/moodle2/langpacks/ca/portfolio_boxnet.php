@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,7 +37,7 @@ $string['missingoauthkeys'] = 'S\'ha perdut la ID del client i la contrasenya se
 $string['missingoauthkeys_help'] = 'No estan configurats al connector la ID del client ni la contrasenya secreta. Podeu obtenir-ne una des la pàgina de desenvolupament de Box.';
 $string['newfolder'] = 'Nova carpeta on posar el/s fitxer/s';
 $string['noauthtoken'] = 'No s\'ha pogut recuperar un testimoni d\'autenticació per utilitzar-lo en aquesta sessió';
-$string['notarget'] = 'Heu d\'especificar una carpeta de destinació existent o una de nova';
+$string['notarget'] = 'Heu d\'especificar o una carpeta de destinació existent o una de nova';
 $string['noticket'] = 'No s\'ha pogut recuperar un tiquet de Box per a iniciar la sessió d\'autenticació';
 $string['password'] = 'La vostra contrasenya de Box (no és guardarà)';
 $string['pluginname'] = 'Box';

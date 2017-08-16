@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cachedef_completion'] = 'Κατάσταση ολοκλήρωσης δραστηριότητας';
+$string['cachedef_suspended_userids'] = 'Λίστα χρηστών σε αναστολή ανά μάθημα';
 $string['none'] = 'Κανένα';

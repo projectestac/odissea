@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_log', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'Alle bronnen';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Component';
 $string['eventcontext'] = 'Gebeurteniscontext';
 $string['eventloggedas'] = '{$a->realusername} als {$a->asusername}';
@@ -36,9 +38,14 @@ $string['logsformat'] = 'Log-opmaak';
 $string['log:view'] = 'Bekijk cursus logs';
 $string['log:viewtoday'] = 'Bekijk logs van vandaag';
 $string['nologreaderenabled'] = 'Geen loglezer ingeschakeld';
+$string['origin'] = 'Bron';
+$string['other'] = 'Andere';
 $string['page'] = 'Pagina {$a}';
 $string['page-report-log-index'] = 'Cursus log rapport';
 $string['page-report-log-user'] = 'Cursus log rapport gebruiker';
 $string['page-report-log-x'] = 'Elk log rapport';
 $string['pluginname'] = 'Logs';
+$string['restore'] = 'Terug zetten';
 $string['selectlogreader'] = 'Selecteer loglezer';
+$string['web'] = 'Web';
+$string['ws'] = 'Web service';

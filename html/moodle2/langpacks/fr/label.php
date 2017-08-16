@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'label', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['dnduploadlabel'] = 'Ajouter un média à la page de cours';
 $string['dnduploadlabeltext'] = 'Ajouter une étiquette sur la page du cours';
 $string['label:addinstance'] = 'Ajouter une étiquette';
 $string['labeltext'] = 'Contenu de l\'étiquette';
+$string['label:view'] = 'Consulter une étiquette';
 $string['modulename'] = 'Étiquette';
 $string['modulename_help'] = 'Le module étiquette permet d\'insérer du texte ou des contenus multimédias dans la page du cours, entre les liens vers d\'autres ressources ou activités. Les étiquettes sont très polyvalentes et permettent d\'améliorer considérablement l\'aspect d\'un cours, lorsqu\'elles sont utilisées de façon adéquate.
 

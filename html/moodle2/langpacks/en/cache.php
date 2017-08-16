@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['cachedef_groupdata'] = 'Course group information';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - cleaned content';
 $string['cachedef_langmenu'] = 'List of available languages';
 $string['cachedef_locking'] = 'Locking';
+$string['cachedef_message_processors_enabled'] = 'Message processors enabled status';
+$string['cachedef_message_time_last_message_between_users'] = 'Time created for most recent message between users';
 $string['cachedef_navigation_expandcourse'] = 'Navigation expandable courses';
 $string['cachedef_observers'] = 'Event observers';
 $string['cachedef_plugin_functions'] = 'Plugins available callbacks';
@@ -107,9 +109,6 @@ $string['localstorenotification'] = 'This cache can be safely mapped to a store 
 $string['lockdefault'] = 'Default';
 $string['locking'] = 'Locking';
 $string['locking_help'] = 'Locking is a mechanism that restricts access to cached data to one process at a time to prevent the data from being overwritten. The locking method determines how the lock is acquired and checked.';
-$string['lockingmeans'] = 'Locking mechanism';
-$string['lockmethod'] = 'Lock method';
-$string['lockmethod_help'] = 'This is the method used for locking when required of this store.';
 $string['lockname'] = 'Name';
 $string['locknamedesc'] = 'The name must be unique and can only consist of the characters: a-zA-Z_';
 $string['locknamenotunique'] = 'The name you have selected is not unique. Please select a unique name.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_paypal', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['enrolperiod_desc'] = 'Matrikulazioaren berezko iraupena. Zero ezarriz g
 $string['enrolperiod_help'] = 'Matrikulazioaren iraupena, erabiltzaileak bere burua matrikulatzen duen unetik hasita. Desgaituz gero, matrikulazioa mugarik gabekoa izango da.';
 $string['enrolstartdate'] = 'Hasiera-data';
 $string['enrolstartdate_help'] = 'Gaituz gero, erabiltzaileek data honetatik aurrera soilik matrikulatu ahalko dute.';
-$string['expiredaction'] = 'Matrikulazio-amaieraren ekintza';
+$string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['mailadmins'] = 'Jakinarazi kudeatzaileari';
 $string['mailstudents'] = 'Jakinarazi ikasleei';

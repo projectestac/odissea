@@ -31,13 +31,13 @@ Feature: Mapping courses in a feedback
       | user    | course               | role    |
       | manager | Acceptance test site | manager |
     And the following "activities" exist:
-      | activity   | name             | course               | idnumber  | anonymous | publish_stats |
-      | feedback   | Course feedback  | Acceptance test site | feedback0 | 1         | 1             |
-      | feedback   | Another feedback | C1                   | feedback1 | 1         | 1             |
+      | activity   | name             | course               | idnumber  | anonymous | publish_stats | section |
+      | feedback   | Course feedback  | Acceptance test site | feedback0 | 1         | 1             | 1       |
+      | feedback   | Another feedback | C1                   | feedback1 | 1         | 1             | 0       |
     When I log in as "manager"
     And I am on site homepage
     And I follow "Course feedback"
-    And I follow "Edit questions"
+    And I click on "Edit questions" "link" in the "[role=main]" "css_element"
     And I add a "Information" question to the feedback with:
       | Question         | this is an information question |
       | Label            | info                            |
@@ -114,19 +114,21 @@ Feature: Mapping courses in a feedback
     And I am on site homepage
     And I follow "Course feedback"
 
-    And I follow "Analysis"
-    And I should see "All courses" in the "#feedback_course_filter .fautocomplete .label" "css_element"
+    And I navigate to "Analysis" in current page administration
+    And I should see "All courses" in the "#feedback_course_filter [data-fieldtype=autocomplete] .form-autocomplete-selection [role=listitem]" "css_element"
+    And I show chart data for the "multichoicerated" feedback
     And I should see "1 (33.33 %)" in the "option a" "table_row"
     And I should see "1 (33.33 %)" in the "option b" "table_row"
     And I should see "1 (33.33 %)" in the "option c" "table_row"
-    And I should see "Average: 2.00" in the "(multichoicerated)" "table"
-    And I click on "Sort by course" "link" in the "(multichoicerated)" "table"
+    And I should see "Average: 2.00"
+    And I follow "Sort by course"
     And I should see "2.50" in the "C1" "table_row"
     And I should see "1.00" in the "Acceptance test site" "table_row"
-    And I follow "Back"
+    And I click on "Back" "link" in the "region-main" "region"
     And I set the field "Filter by course" to "Course 1"
     And I press "Filter"
-    And I should see "Course 1" in the "#feedback_course_filter .fautocomplete .label" "css_element"
+    And I should see "Course 1" in the "#feedback_course_filter [data-fieldtype=autocomplete] .form-autocomplete-selection [role=listitem]" "css_element"
+    And I show chart data for the "multichoicerated" feedback
     And I should see "0" in the "option a" "table_row"
     And I should see "1 (50.00 %)" in the "option b" "table_row"
     And I should see "1 (50.00 %)" in the "option c" "table_row"
@@ -195,29 +197,35 @@ Feature: Mapping courses in a feedback
     And I log in as "manager"
     And I am on site homepage
     And I follow "Course feedback"
-    And I follow "Analysis"
-    And I should see "All courses" in the "#feedback_course_filter .fautocomplete .label" "css_element"
+    And I navigate to "Analysis" in current page administration
+    And I should see "All courses" in the "#feedback_course_filter [data-fieldtype=autocomplete] .form-autocomplete-selection [role=listitem]" "css_element"
+    And I show chart data for the "multichoicerated" feedback
     And I should see "0" in the "option a" "table_row"
     And I should see "1 (33.33 %)" in the "option b" "table_row"
     And I should see "2 (66.67 %)" in the "option c" "table_row"
-    And I should see "Average: 3.67" in the "(multichoicerated)" "table"
-    And I click on "Sort by course" "link" in the "(multichoicerated)" "table"
+    And I should see "Average: 3.67"
+    And I click on "Sort by course" "link"
     And I should see "3.00" in the "C3" "table_row"
     And I should see "2.50" in the "C2" "table_row"
-    And I follow "Back"
+    And I click on "Back" "link" in the "region-main" "region"
     And I set the field "Filter by course" to "Course 2"
     And I press "Filter"
+    And I show chart data for the "multichoicerated" feedback
     And I should see "0" in the "option a" "table_row"
     And I should see "1 (50.00 %)" in the "option b" "table_row"
     And I should see "1 (50.00 %)" in the "option c" "table_row"
+    And I show chart data for the "multichoicesimple" feedback
     And I should see "2 (100.00 %)" in the "option e" "table_row"
     And I set the field "Filter by course" to "Course 3"
     And I press "Filter"
+    And I show chart data for the "multichoicerated" feedback
     And I should see "0" in the "option a" "table_row"
     And I should see "0" in the "option b" "table_row"
     And I should see "1 (100.00 %)" in the "option c" "table_row"
+    And I show chart data for the "multichoicesimple" feedback
     And I should see "1 (100.00 %)" in the "option d" "table_row"
     And I follow "Show all"
+    And I show chart data for the "multichoicesimple" feedback
     And I should see "1 (33.33 %)" in the "option d" "table_row"
     And I should see "2 (66.67 %)" in the "option e" "table_row"
     And I should see "0" in the "option f" "table_row"
@@ -226,9 +234,10 @@ Feature: Mapping courses in a feedback
   Scenario: Site feedback deletion hides feedback block completely
     When I log in as "manager"
     And I am on site homepage
-    And I follow "Turn editing on"
+    And I turn editing mode on
     And I add the "Feedback" block
-    And I click on "Delete" "link" in the "//div[contains(@class,'block_site_main_menu')]//li[contains(.,'Course feedback')]" "xpath_element"
+    And I add the "Main menu" block
+    And I click on "Delete" "link" in the "Course feedback" activity
     And I press "Yes"
     And I follow "Turn editing off"
     And I am on site homepage

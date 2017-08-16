@@ -898,16 +898,11 @@ function calendar_top_controls($type, $data) {
                 $calendarlink->param('course', $data['id']);
             }
 
-            if (right_to_left()) {
-                $left = $nextlink;
-                $right = $prevlink;
-            } else {
-                $left = $prevlink;
-                $right = $nextlink;
-            }
+            $prevlink = $prevlink;
+            $right = $nextlink;
 
             $content .= html_writer::start_tag('div', array('class'=>'calendar-controls'));
-            $content .= $left.'<span class="hide"> | </span>';
+            $content .= $prevlink.'<span class="hide"> | </span>';
             $content .= html_writer::tag('span', html_writer::link($calendarlink, userdate($time, get_string('strftimemonthyear')), array('title'=>get_string('monththis','calendar'))), array('class'=>'current'));
             $content .= '<span class="hide"> | </span>'. $right;
             $content .= "<span class=\"clearer\"><!-- --></span>\n";
@@ -923,18 +918,10 @@ function calendar_top_controls($type, $data) {
                 $calendarlink->param('course', $data['id']);
             }
 
-            if (right_to_left()) {
-                $left = $nextlink;
-                $right = $prevlink;
-            } else {
-                $left = $prevlink;
-                $right = $nextlink;
-            }
-
             $content .= html_writer::start_tag('div', array('class'=>'calendar-controls'));
-            $content .= $left.'<span class="hide"> | </span>';
+            $content .= $prevlink.'<span class="hide"> | </span>';
             $content .= html_writer::tag('span', html_writer::link($calendarlink, userdate($time, get_string('strftimemonthyear')), array('title'=>get_string('monththis','calendar'))), array('class'=>'current'));
-            $content .= '<span class="hide"> | </span>'. $right;
+            $content .= '<span class="hide"> | </span>'. $nextlink;
             $content .= "<span class=\"clearer\"><!-- --></span>";
             $content .= html_writer::end_tag('div');
             break;
@@ -958,18 +945,10 @@ function calendar_top_controls($type, $data) {
             $prevlink = calendar_get_link_previous(userdate($prevmonthtime, get_string('strftimemonthyear')), 'view.php?view=month'.$courseid.'&amp;', false, false, false, false, $prevmonthtime);
             $nextlink = calendar_get_link_next(userdate($nextmonthtime, get_string('strftimemonthyear')), 'view.php?view=month'.$courseid.'&amp;', false, false, false, false, $nextmonthtime);
 
-            if (right_to_left()) {
-                $left = $nextlink;
-                $right = $prevlink;
-            } else {
-                $left = $prevlink;
-                $right = $nextlink;
-            }
-
             $content .= html_writer::start_tag('div', array('class'=>'calendar-controls'));
-            $content .= $left . '<span class="hide"> | </span>';
+            $content .= $prevlink . '<span class="hide"> | </span>';
             $content .= $OUTPUT->heading(userdate($time, get_string('strftimemonthyear')), 2, 'current');
-            $content .= '<span class="hide"> | </span>' . $right;
+            $content .= '<span class="hide"> | </span>' . $nextlink;
             $content .= '<span class="clearer"><!-- --></span>';
             $content .= html_writer::end_tag('div')."\n";
             break;
@@ -987,18 +966,10 @@ function calendar_top_controls($type, $data) {
             $prevlink = calendar_get_link_previous($prevname, 'view.php?view=day'.$courseid.'&amp;', false, false, false, false, $prevtimestamp);
             $nextlink = calendar_get_link_next($nextname, 'view.php?view=day'.$courseid.'&amp;', false, false, false, false, $nexttimestamp);
 
-            if (right_to_left()) {
-                $left = $nextlink;
-                $right = $prevlink;
-            } else {
-                $left = $prevlink;
-                $right = $nextlink;
-            }
-
             $content .= html_writer::start_tag('div', array('class'=>'calendar-controls'));
-            $content .= $left;
+            $content .= $prevlink;
             $content .= '<span class="hide"> | </span><span class="current">'.userdate($time, get_string('strftimedaydate')).'</span>';
-            $content .= '<span class="hide"> | </span>'. $right;
+            $content .= '<span class="hide"> | </span>'. $nextlink;
             $content .= "<span class=\"clearer\"><!-- --></span>";
             $content .= html_writer::end_tag('div')."\n";
 
@@ -1665,6 +1636,8 @@ function calendar_get_default_courses() {
  * Display calendar preference button
  *
  * @param stdClass $course course object
+ * @deprecated since Moodle 3.2
+ * @todo MDL-55875 This will be deleted in Moodle 3.6.
  * @return string return preference button in html
  */
 function calendar_preferences_button(stdClass $course) {
@@ -1674,8 +1647,9 @@ function calendar_preferences_button(stdClass $course) {
     if (!isloggedin() || isguestuser()) {
         return '';
     }
+    debugging('This should no longer be used, the calendar preferences are now linked to the user preferences page');
 
-    return $OUTPUT->single_button(new moodle_url('/calendar/preferences.php', array('course' => $course->id)), get_string("preferences", "calendar"));
+    return $OUTPUT->single_button(new moodle_url('/user/calendar.php'), get_string("preferences", "calendar"));
 }
 
 /**
@@ -2730,7 +2704,7 @@ class calendar_event {
             if ($this->properties->eventtype != 'user' && $this->properties->eventtype != 'course'
                     && $this->properties->eventtype != 'site' && $this->properties->eventtype != 'group') {
                 // We don't have a context here, do a normal format_text.
-                return array(format_text($this->properties->description, $this->properties->format), $this->properties->format);
+                return external_format_text($this->properties->description, $this->properties->format, $this->editorcontext->id);
             }
         }
 
@@ -2964,6 +2938,14 @@ function calendar_add_subscription($sub) {
         if (empty($sub->id)) {
             $id = $DB->insert_record('event_subscriptions', $sub);
             // we cannot cache the data here because $sub is not complete.
+            $sub->id = $id;
+            // Trigger event, calendar subscription added.
+            $eventparams = array('objectid' => $sub->id,
+                'context' => calendar_get_calendar_context($sub),
+                'other' => array('eventtype' => $sub->eventtype, 'courseid' => $sub->courseid)
+            );
+            $event = \core\event\calendar_subscription_created::create($eventparams);
+            $event->trigger();
             return $id;
         } else {
             // Why are we doing an update here?
@@ -3120,13 +3102,21 @@ function calendar_process_subscription_row($subscriptionid, $pollinterval, $acti
 function calendar_delete_subscription($subscription) {
     global $DB;
 
-    if (is_object($subscription)) {
-        $subscription = $subscription->id;
+    if (!is_object($subscription)) {
+        $subscription = $DB->get_record('event_subscriptions', array('id' => $subscription), '*', MUST_EXIST);
     }
     // Delete subscription and related events.
-    $DB->delete_records('event', array('subscriptionid' => $subscription));
-    $DB->delete_records('event_subscriptions', array('id' => $subscription));
-    cache_helper::invalidate_by_definition('core', 'calendar_subscriptions', array(), array($subscription));
+    $DB->delete_records('event', array('subscriptionid' => $subscription->id));
+    $DB->delete_records('event_subscriptions', array('id' => $subscription->id));
+    cache_helper::invalidate_by_definition('core', 'calendar_subscriptions', array(), array($subscription->id));
+
+    // Trigger event, calendar subscription deleted.
+    $eventparams = array('objectid' => $subscription->id,
+        'context' => calendar_get_calendar_context($subscription),
+        'other' => array('courseid' => $subscription->courseid)
+    );
+    $event = \core\event\calendar_subscription_deleted::create($eventparams);
+    $event->trigger();
 }
 /**
  * From a URL, fetch the calendar and return an iCalendar object.
@@ -3254,6 +3244,14 @@ function calendar_update_subscription($subscription) {
     // Update cache.
     $cache = cache::make('core', 'calendar_subscriptions');
     $cache->set($subscription->id, $subscription);
+    // Trigger event, calendar subscription updated.
+    $eventparams = array('userid' => $subscription->userid,
+        'objectid' => $subscription->id,
+        'context' => calendar_get_calendar_context($subscription),
+        'other' => array('eventtype' => $subscription->eventtype, 'courseid' => $subscription->courseid)
+        );
+    $event = \core\event\calendar_subscription_updated::create($eventparams);
+    $event->trigger();
 }
 
 /**
@@ -3327,4 +3325,46 @@ function calendar_cron() {
     mtrace('Finished updating calendar subscriptions.');
 
     return true;
+}
+
+/**
+ * Helper function to determine the context of a calendar subscription.
+ * Subscriptions can be created in two contexts COURSE, or USER.
+ *
+ * @param stdClass $subscription
+ * @return context instance
+ */
+function calendar_get_calendar_context($subscription) {
+
+    // Determine context based on calendar type.
+    if ($subscription->eventtype === 'site') {
+        $context = context_course::instance(SITEID);
+    } else if ($subscription->eventtype === 'group' || $subscription->eventtype === 'course') {
+        $context = context_course::instance($subscription->courseid);
+    } else {
+        $context = context_user::instance($subscription->userid);
+    }
+    return $context;
+}
+
+/**
+ * Implements callback user_preferences, whitelists preferences that users are allowed to update directly
+ *
+ * Used in {@see core_user::fill_preferences_cache()}, see also {@see useredit_update_user_preference()}
+ *
+ * @return array
+ */
+function core_calendar_user_preferences() {
+    $preferences = [];
+    $preferences['calendar_timeformat'] = array('type' => PARAM_NOTAGS, 'null' => NULL_NOT_ALLOWED, 'default' => '0',
+        'choices' => array('0', CALENDAR_TF_12, CALENDAR_TF_24)
+    );
+    $preferences['calendar_startwday'] = array('type' => PARAM_INT, 'null' => NULL_NOT_ALLOWED, 'default' => 0,
+        'choices' => array(0, 1, 2, 3, 4, 5, 6));
+    $preferences['calendar_maxevents'] = array('type' => PARAM_INT, 'choices' => range(1, 20));
+    $preferences['calendar_lookahead'] = array('type' => PARAM_INT, 'null' => NULL_NOT_ALLOWED, 'default' => 365,
+        'choices' => array(365, 270, 180, 150, 120, 90, 60, 30, 21, 14, 7, 6, 5, 4, 3, 2, 1));
+    $preferences['calendar_persistflt'] = array('type' => PARAM_INT, 'null' => NULL_NOT_ALLOWED, 'default' => 0,
+        'choices' => array(0, 1));
+    return $preferences;
 }

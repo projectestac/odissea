@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,16 +70,16 @@ $string['aggregationcoefextraweight'] = 'Peso do Crédito extra';
 $string['aggregationcoefextraweight_help'] = 'Se o crédito extra está configurado para um valor superior a 0, a nota comporta-se como crédito extra no cálculo. O número é o fator pelo qual a nota é multiplicada antes de adicioná-la ao total após o cálculo da média.';
 $string['aggregationcoefextraweight_link'] = 'nota/cálculo';
 $string['aggregationcoefweight'] = 'Peso do item';
-$string['aggregationcoefweight_help'] = 'O Peso do item é usado no cálculo da nota da categoria para ajustar a importância do item comparativamente com os outros itens de avaliação na mesma categoria.';
+$string['aggregationcoefweight_help'] = 'O peso do item é usado no cálculo da nota da categoria para ajustar a importância do item comparativamente aos outros itens de avaliação na mesma categoria.';
 $string['aggregationcoefweight_link'] = 'nota/cálculo';
 $string['aggregation_help'] = 'A forma de cálculo determina como é calculada a nota total da categoria, podendo ser:
 
-* Média - A soma de todas as notas, dividido pelo número total
-* Mediana - A nota que surgiria no meio se as notas fossem ordenadas
+* Média - A soma de todas as notas, dividida pelo número total de notas
+* Mediana - A nota do meio se as notas estiverem ordenadas
 * Nota mais baixa
 * Nota mais alta
-* Moda - A nota que surge mais frequentemente
-* Natural - A soma de todos os valores das notas distribuídos por peso';
+* Moda - A nota que ocorre mais mais vezes
+* Natural - A soma de todos as notas ponderadas pela respetiva nota máxima ou através de ponderação personalizada';
 $string['aggregationhintdropped'] = '(Excluídas)';
 $string['aggregationhintexcluded'] = '(Excluídas)';
 $string['aggregationhintextra'] = '(Crédito extra)';
@@ -107,10 +107,10 @@ $string['baduser'] = 'O utilizador fornecido não é válido';
 $string['bonuspoints'] = 'Pontos de bónus';
 $string['bulkcheckboxes'] = 'Caixas de seleção em massa';
 $string['calculatedgrade'] = 'Nota calculada';
-$string['calculation'] = 'Cálculo';
+$string['calculation'] = 'Cálculo da nota';
 $string['calculationadd'] = 'Adicionar cálculo';
 $string['calculationedit'] = 'Editar cálculo';
-$string['calculation_help'] = 'O cálculo da nota é a fórmula usada para determinar as notas. A fórmula deve começar com um sinal de igualdade (=) e usar operadores comuns matemáticos como max, min e sum. Pode ainda se desejar incluir outros itens de avaliação inserindo os seus ID\'s entre parêntesis retos.';
+$string['calculation_help'] = 'O cálculo da nota é a fórmula usada para determinar as notas. A fórmula deve começar com um sinal de igualdade (=) e usar operadores comuns matemáticos como max, min e sum. Pode ainda, se desejar, incluir outros itens de avaliação inserindo os respectivos ID\'s entre parêntesis retos.';
 $string['calculation_link'] = 'nota/cálculo';
 $string['calculationsaved'] = 'Cálculo gravado';
 $string['calculationview'] = 'Ver cálculo';
@@ -333,6 +333,8 @@ $string['gradereport'] = 'Pauta';
 $string['graderreport'] = 'Pauta do avaliador';
 $string['grades'] = 'Notas';
 $string['gradesforuser'] = 'Notas de {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Aviso: A atividade está a ser apagada! Algumas notas estão prestes a ser removidas.';
+$string['gradesmoduledeletionprefix'] = '[Remoção em progresso]';
 $string['gradesonly'] = 'Mudar para só notas';
 $string['gradessettings'] = 'Definições de notas';
 $string['gradetype'] = 'Tipo de nota';
@@ -439,7 +441,7 @@ $string['letterreal'] = 'Nota alfabética (real)';
 $string['letters'] = 'Notas alfabéticas';
 $string['linkedactivity'] = 'Atividade associada';
 $string['linkedactivity_help'] = 'Esta opção especifica uma atividade ao qual este item está hiperligado. Isto pode ser usado para medir o desempenho dos alunos baseado em critérios que não foram contemplados na avaliação da atividade.';
-$string['linktoactivity'] = 'Hiperligação para a atividade {$a->name}';
+$string['linktoactivity'] = 'Hiperligação para a atividade {$a->name} {$a->title}';
 $string['lock'] = 'Bloquear';
 $string['locked'] = 'Bloquear';
 $string['locked_help'] = 'Se selecionar esta opção, as notas já não podem ser atualizadas automaticamente através da atividade.';
@@ -710,7 +712,7 @@ $string['shownooutcomes'] = 'Ocultar resultados da aprendizagem';
 $string['shownumberofgrades'] = 'Mostrar número de notas usado nas médias';
 $string['shownumberofgrades_help'] = 'Se ativar esta opção, o número de notas utilizadas no cálculo da média é exibido entre parênteses após cada média.';
 $string['showonlyactiveenrol'] = 'Mostrar apenas as inscrições ativas';
-$string['showonlyactiveenrol_help'] = 'Esta definição determina se apenas os utilizadores inscritos e ativos serão visíveis no relatório da Pauta. Se ativar esta opção, os utilizadores suspensos não serão mostrados na Pauta.';
+$string['showonlyactiveenrol_help'] = 'Esta definição determina se apenas os utilizadores inscritos e ativos serão visíveis no relatório da pauta. Se ativar esta opção, os utilizadores suspensos não serão mostrados na pauta.';
 $string['showpercentage'] = 'Mostrar percentagem';
 $string['showpercentage_help'] = 'Mostrar o valor da percentagem de cada item de avaliação.';
 $string['showquickfeedback'] = 'Mostrar feedback rápido';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_multianswer', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,8 @@ $string['correctanswerandfeedback'] = 'Resposta correta e feedback';
 $string['decodeverifyquestiontext'] = 'Descodificar e verificar o texto da pergunta';
 $string['layout'] = 'Estrutura';
 $string['layouthorizontal'] = 'Botões de rádio dispostos horizontalmente';
+$string['layoutmultiple_horizontal'] = 'Linha horizontal das caixas de verificação';
+$string['layoutmultiple_vertical'] = 'Coluna vertical das caixas de verificação';
 $string['layoutselectinline'] = 'Lista pendentes incorporadas no texto';
 $string['layoutundefined'] = 'Aparência indefinida';
 $string['layoutvertical'] = 'Botões de rádio dispostos verticalmente';
@@ -59,7 +61,7 @@ $string['questionsmissing'] = 'Não existem perguntas válidas, crie pelo menos 
 $string['questionsmore'] = 'Mais {$a} pergunta(s) do que a pergunta de escolha múltipla guardada na base de dados';
 $string['questiontypechanged'] = 'Tipo de pergunta alterado';
 $string['questiontypechangedcomment'] = 'Pelo menos um tipo de pergunta foi alterado.<br />Adicionou, moveu ou apagou uma pergunta?<br />Veja em seguida.';
-$string['questionusedinquiz'] = 'Esta pergunta é usada em {$a->nb_of_quiz} teste(s), total de tentativa(s) : {$a->nb_of_attempts}';
+$string['questionusedinquiz'] = 'Pergunta usada em {$a->nb_of_quiz} teste(s), total de tentativas: {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Tipo de pergunta {$a} restaurada';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipo de pergunta desconhecido: {$a->type} da parte da pergunta # {$a->sub}';

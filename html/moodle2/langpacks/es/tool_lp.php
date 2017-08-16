@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lp', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -126,7 +126,7 @@ $string['linkedcourseslist'] = 'Cursos vinculados:';
 $string['listcompetencyframeworkscaption'] = 'Lista de marcos de competencia';
 $string['listofevidence'] = 'Lista de evidencia';
 $string['listplanscaption'] = 'Lista de Planes de aprendizaje';
-$string['listtemplatescaption'] = 'Lista de plantillas de plan de aprendizaje';
+$string['listtemplatescaption'] = 'Lista de plantillas de planes de aprendizaje';
 $string['loading'] = 'Cargando...';
 $string['locatecompetency'] = 'Localizar competencia';
 $string['managecompetenciesandframeworks'] = 'Administrar competencias y marcos';
@@ -151,7 +151,7 @@ $string['nocompetencyselected'] = 'No se han seleccionado competencias';
 $string['nocrossreferencedcompetencies'] = 'No se han referenciado otras competencias a esta competencia.';
 $string['noevidence'] = 'Sin evidencias';
 $string['nofiles'] = 'Sin archivos';
-$string['notemplates'] = 'Todavía no se han creado plantillas de plan de aprendizaje.';
+$string['notemplates'] = 'No se han creado plantillas de planes de aprendizaje aún.';
 $string['nourl'] = 'Sin URL';
 $string['nouserevidence'] = 'No se ha agregado evidencia de aprendizajes previos aún.';
 $string['outcome'] = 'Resultado';
@@ -216,7 +216,7 @@ $string['taxonomy_selected_skill'] = 'Habilidad seleccionada';
 $string['templatebased'] = '¿Basado en plantilla?';
 $string['templatecompetencies'] = 'Plantilla de competencias del plan de aprendizaje';
 $string['templatename'] = 'Nombre';
-$string['templates'] = 'Plantillas de plan de aprendizaje';
+$string['templates'] = 'Plantillas de planes de aprendizaje';
 $string['uponcoursecompletion'] = 'Al terminar el curso:';
 $string['userevidence'] = 'Evidencia de aprendizajes previos';
 $string['userevidencecreated'] = 'Se creó la evidencia de aprendizajes previos';

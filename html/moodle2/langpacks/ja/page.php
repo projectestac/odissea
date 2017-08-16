@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'page', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,7 @@ $string['modulename_help'] = 'ページモジュールにおいて、教師は�
 ページモジュールは下記のように使用することができます:
 
 * コースの利用規約を表示またはコースシラバス概要を表示するため
-* 説明文と共にいくつかのビデオまたはサウンドファイルを埋め込むため';
+* 説明文と共にいくつかのビデオまたは音声ファイルを埋め込むため';
 $string['modulenameplural'] = 'ページ';
 $string['optionsheader'] = '表示オプション';
 $string['page:addinstance'] = '新しいページリソースを追加する';

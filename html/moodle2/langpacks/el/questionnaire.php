@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['answerquestions'] = 'Απάντησε τις ερωτήσεις...';
 $string['attempted'] = 'Αυτό το ερωτηματολόγιο έχει υποβληθεί.';
 $string['autonumbering'] = 'Αυτόματη αρίθμηση';
 $string['dependquestion'] = 'Γονική Ερώτηση';
+$string['edit'] = 'Επεξεργασία';
 $string['feedbacksectionlabel'] = 'Ετικέτα';
 $string['modulename'] = 'Ερωτηματολόγιο';
 $string['modulename_help'] = 'Η δραστηριότητα ερωτηματολόγιο σας επιτρέπει να δημιουργείτε και να διεξάγετε έρευνες χρησιμοποιώντας μία ποικιλία τύπων ερωτήσεων προκειμένου να συγκεντρώσετε δεδομένα από τους χρήστες.';

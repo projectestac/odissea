@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package moodlecore
- * @subpackage backup-moodle2
- * @copyright 2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package mod_questionnaire
+ * @copyright  2016 Mike Churchward (mike.churchward@poetgroup.org)
+ * @author     Mike Churchward
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,7 +56,7 @@ class restore_questionnaire_activity_task extends restore_activity_task {
 
         $contents[] = new restore_decode_content('questionnaire', array('intro'), 'questionnaire');
         $contents[] = new restore_decode_content('questionnaire_survey',
-                        array('info', 'thank_head', 'thank_body'), 'questionnaire_survey');
+                        array('info', 'thank_head', 'thank_body', 'thanks_page'), 'questionnaire_survey');
         $contents[] = new restore_decode_content('questionnaire_question', array('content'), 'questionnaire_question');
 
         return $contents;

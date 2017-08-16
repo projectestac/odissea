@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'glossary', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['allentries'] = 'TODAS';
 $string['allowcomments'] = 'Permitir comentarios nas entradas';
 $string['allowcomments_help'] = 'De estar activado, todos os participantes con permiso para crear comentarios poderán engadir comentarios ás entradas do glosario.';
 $string['allowduplicatedentries'] = 'Permitidas as entradas duplicadas';
-$string['allowduplicatedentries_help'] = 'De estar activado, múltiplas entradas poden ter o mesmo nome de concepto.';
+$string['allowduplicatedentries_help'] = 'De estar activado, múltiples entradas poden ter o mesmo nome de concepto.';
 $string['allowprintview'] = 'Permitir vista de impresión';
 $string['allowprintview_help'] = 'De estar activado, os alumnos teñen unha ligazón a unha versión apta para impresión do glosario. A ligazón está sempre dispoñíbel para os profesores.';
 $string['andmorenewentries'] = 'e {$a} máis novas entradas.';

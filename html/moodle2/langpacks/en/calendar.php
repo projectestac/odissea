@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'calendar', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -105,8 +105,14 @@ $string['eventsdeleted'] = 'Events deleted';
 $string['eventsfor'] = '{$a} events';
 $string['eventsimported'] = 'Events imported: {$a}';
 $string['eventskey'] = 'Events key';
+$string['eventspersonal'] = 'My personal events';
 $string['eventsrelatedtocourses'] = 'Events related to courses';
+$string['eventsrelatedtogroups'] = 'Events related to groups';
 $string['eventstarttime'] = 'Start time';
+$string['eventstoexport'] = 'Events to export';
+$string['eventsubscriptioncreated'] = 'Calendar subscription created';
+$string['eventsubscriptiondeleted'] = 'Calendar subscription deleted';
+$string['eventsubscriptionupdated'] = 'Calendar subscription updated';
 $string['eventsupdated'] = 'Events updated: {$a}';
 $string['eventtime'] = 'Time';
 $string['eventview'] = 'Event details';
@@ -201,6 +207,7 @@ $string['thu'] = 'Thu';
 $string['thursday'] = 'Thursday';
 $string['timeformat_12'] = '12-hour (am/pm)';
 $string['timeformat_24'] = '24-hour';
+$string['timeperiod'] = 'Time period';
 $string['today'] = 'Today';
 $string['tomorrow'] = 'Tomorrow';
 $string['tt_deleteevent'] = 'Delete event';

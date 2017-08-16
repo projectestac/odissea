@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'media', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,30 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['flashanimation'] = 'Animação Flash';
-$string['flashanimation_desc'] = 'Ficheiros com a extensão *.swf. Por motivos de segurança este formato só é incorporado em texto confiável.';
-$string['flashvideo'] = 'Vídeo Flash';
-$string['flashvideo_desc'] = 'Ficheiros com a extensão *.flv and *.f4v. Passa video clips usando Flowplayer, é necessário o módulo Flash e javascript.';
-$string['html5audio'] = 'Áudio HTML 5';
-$string['html5audio_desc'] = 'Ficheiros de audio com a extensão *.ogg, *.aac e *.mp3. Usado principalmente para dispositivos móveis. (O formato depende do navegador.)';
-$string['html5video'] = 'Vídeo HTML 5';
-$string['html5video_desc'] = 'Ficheiros de video com a extensão *.webm, *.m4v, *.ogv, *.mp4 e outras. Usado principalmente para dispositivos móveis. (O formato depende do navegador.)';
+$string['audioextensions'] = 'Áudio: {$a}';
+$string['defaultheight'] = 'Altura predefinida';
+$string['defaultheightdesc'] = 'Altura do Leitor de Multimédia se a altura não for especificada e a altura atual do ficheiro de media não puder ser determinada pelo leitor.';
+$string['defaultwidth'] = 'Largura predefinida';
+$string['defaultwidthdesc'] = 'Largura do Leitor de Multimédia se a largura não for especificada e a largura atual do ficheiro de media não puder ser determinada pelo leitor.';
+$string['extensions'] = 'Extensões: {$a}';
 $string['legacyheading'] = 'Legacy media players';
 $string['legacyheading_desc'] = 'Estes players não são usados com frequência na Web e requerem módulos que estão menos amplamente instalados.';
-$string['legacyquicktime'] = 'QuickTime player';
-$string['legacyquicktime_desc'] = 'Ficheiros com a extensão *.mov, *.mp4, *.m4a e *.mpg, necessitam do player QuickTime ou codecs.';
-$string['legacyreal'] = 'Real media player';
-$string['legacyreal_desc'] = 'Ficheiros com a extensão *.rm, *.ra, *.ram, *.rp e *.rv. Necessita do RealPlayer.';
-$string['legacywmp'] = 'Windows media player';
-$string['legacywmp_desc'] = 'Ficheiros com a extensão *.avi e *.wmv. Totalmente compatível com o Internet Explorer no Windows, pode não funcionar em outros navegadores ou sistemas operacionais.';
+$string['managemediaplayers'] = 'Gerir leitores de média';
 $string['mediaformats'] = 'Players disponíveis';
-$string['mediaformats_desc'] = 'Quando ativa os players nestas configurações, os ficheiros dos respetivos formatos podem ser incorporados usando o filtro multimédia (se ativo) ou usando os recursos Ficheiro ou URL com a opção Incorporar. Quando um player não está ativo, os respetivos formatos não serão incorporados e os utilizadores podem descarregá-los manualmente ou seguir as hiperligações para estes recursos.
+$string['mediaformats_desc'] = 'Quando ativa os leitores nestas configurações, os ficheiros dos respetivos formatos podem ser incorporados usando o filtro multimédia (se ativo) ou usando os recursos Ficheiro ou URL com a opção Incorporar. Quando um leitor não está ativo, os respetivos formatos não serão incorporados e os utilizadores podem descarregá-los manualmente ou seguir as hiperligações para estes recursos.
 
-Quando dois players suportam o mesmo formato, ao ativar os dois, aumenta a compatibilidade entre os diferentes dispositivos, tais como telemóveis. É possível aumentar ainda mais a compatibilidade, fornecendo vários ficheiros em diferentes formatos quando disponibiliza um áudio ou clip de vídeo.';
+Quando dois leitores suportam o mesmo formato, ao ativar os dois, aumenta a compatibilidade entre os diferentes dispositivos, tais como telemóveis. É possível aumentar ainda mais a compatibilidade, fornecendo vários ficheiros em diferentes formatos quando disponibiliza um áudio ou clip de vídeo.';
 $string['mediasettings'] = 'Incorporação de multimédia';
-$string['mp3audio'] = 'Áudio MP3';
-$string['mp3audio_desc'] = 'Ficheiros com a extensão *.mp3. Reproduz o áudio usando o Flowplayer, necessita do módulo Flash.';
-$string['sitevimeo'] = 'Vimeo';
-$string['sitevimeo_desc'] = 'Site de partilha do Vimeo video.';
-$string['siteyoutube'] = 'YouTube';
-$string['siteyoutube_desc'] = 'O site YouTube é um local de partilha de video e playlist de ligações.';
+$string['supports'] = 'Suportes';
+$string['videoextensions'] = 'Vídeo: {$a}';

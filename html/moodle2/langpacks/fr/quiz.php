@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -696,7 +696,7 @@ $string['reattemptquiz'] = 'Effectuer de nouveau le test';
 $string['recentlyaddedquestion'] = 'Question ajoutée récemment !';
 $string['recurse'] = 'Afficher aussi les questions des sous-catégories';
 $string['redoesofthisquestion'] = 'Autres questions déjà répondues ici : {$a}';
-$string['redoquestion'] = 'Répondre à nouveau à la question';
+$string['redoquestion'] = 'Tenter une autre question semblable';
 $string['regrade'] = 'Recalculer les notes de toutes les tentatives';
 $string['regradecomplete'] = 'Toutes les notes ont été recalculées';
 $string['regradecount'] = '{$a->changed} sur {$a->attempt} notes ont été changées';
@@ -886,8 +886,6 @@ $string['timeleft'] = 'Temps restant';
 $string['timelimit'] = 'Temps disponible';
 $string['timelimitexeeded'] = 'Désolé ! La limite de temps est échue !';
 $string['timelimit_help'] = 'Si ce réglage est activité, le temps imparti est indiqué sur la page initiale du test et un compte à rebours est affiché dans le bloc de navigation du test.';
-$string['timelimitmin'] = 'Temps disponible (minutes)';
-$string['timelimitsec'] = 'Temps disponible (secondes)';
 $string['timestr'] = '%H:%M:%S, le %d.%m.%y';
 $string['timesup'] = 'Le chrono est enclenché !';
 $string['timetaken'] = 'Temps mis';

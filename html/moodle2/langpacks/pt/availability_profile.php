@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'availability_profile', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

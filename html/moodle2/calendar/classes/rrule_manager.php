@@ -141,8 +141,8 @@ class rrule_manager {
     /** const int For forever repeating events, repeat for this many years */
     const TIME_UNLIMITED_YEARS = 10;
 
-    /** @var array Array of days in a week. */
-    protected $daysofweek = [
+    /** const array Array of days in a week. */
+    const DAYS_OF_WEEK = [
         'MO' => self::DAY_MONDAY,
         'TU' => self::DAY_TUESDAY,
         'WE' => self::DAY_WEDNESDAY,
@@ -515,7 +515,7 @@ class rrule_manager {
      * @throws moodle_exception
      */
     protected function set_byday($byday) {
-        $weekdays = array_keys($this->daysofweek);
+        $weekdays = array_keys(self::DAYS_OF_WEEK);
         $days = explode(',', $byday);
         $bydayrules = [];
         foreach ($days as $day) {
@@ -1069,7 +1069,7 @@ class rrule_manager {
             $tmpdatetime = new DateTime(date('Y-m-d', $time));
 
             foreach ($this->byday as $day) {
-                $dayname = $this->daysofweek[$day->day];
+                $dayname = self::DAYS_OF_WEEK[$day->day];
 
                 // Skip if they day name of the event time does not match the day part of the BYDAY rule.
                 if ($tmpdatetime->format('l') !== $dayname) {

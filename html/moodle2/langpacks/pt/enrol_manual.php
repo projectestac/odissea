@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['deleteselectedusers'] = 'Apagar inscrições selecionadas';
 $string['editselectedusers'] = 'Editar papéis dos utilizadores selecionados';
 $string['enrolledincourserole'] = 'Inscrito na disciplina "{$a->course}" como "{$a->role}"';
 $string['enrolusers'] = 'Inscrever utilizadores';
-$string['expiredaction'] = 'Ação para expiração da inscrição';
+$string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a implementar quando a inscrição do utilizador expira. Por favor, note que alguns dados e definições do utilizador são removidos da disciplina durante o cancelamento da inscrição.';
 $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
 

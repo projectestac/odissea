@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grading', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['changeactivemethod'] = 'Αλλαγή ενεργής μεθόδου βαθμολόγησης σε';
 $string['gradingmethod'] = 'Μέθοδος βαθμολόγησης';
 $string['gradingmethods'] = 'Μέθοδοι βαθμολόγησης';
+$string['templateedit'] = 'Επεξεργασία';
 $string['templatesource'] = 'Τοποθεσία: {$a->component} ({$a->area})';

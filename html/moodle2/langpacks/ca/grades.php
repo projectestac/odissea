@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'grades', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -198,7 +198,7 @@ $string['editverbose'] = 'Edita {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['enableajax'] = 'Habilita AJAX';
 $string['enableajax_help'] = 'Afegeix una capa de funcions AJAX en l\'informe de qualificacions, cosa que simplifica i agilita les operacions més habituals. Requereix que el JavaScript estigui activat en el navegador de l\'usuari.';
 $string['enableoutcomes'] = 'Habilita competències';
-$string['enableoutcomes_help'] = 'Si s\'habilita, els ítems avaluables es podran puntuar utilitzant una o més escales vinculades a declaracions de competències.';
+$string['enableoutcomes_help'] = 'El suport per a competències (objectius, estàndards, criteris...) significa que es pot avaluar coses mitjançant una o més escales vinculades a declaracions de competències. Habilitar les competències fa possible utilitzar aquest tipus de qualificació a tot el lloc.';
 $string['encoding'] = 'Codificació';
 $string['encoding_help'] = 'Selecciona la codificació de caràcters utilitzada per a les dades. (La codificació estàndard és UTF-8.) Si se selecciona la codificació incorrecta per error, això serà evident quan es previsualitzin les dades per a la importació.';
 $string['errorcalculationbroken'] = 'Probablement una referència circular o formula de càlcul errònia.';
@@ -495,9 +495,9 @@ $string['modgradecategoryrescalegrades_help'] = 'En canviar la qualificació mà
 
 Si ho establiu a «Sí», es convertiran les qualificacions rectificades existents de tal manera que es conservi la qualificació en percentatge.
 
-Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qualificació màxima d\'una activitat provocarà que una nota de 6/10 (60%) es converteixi a 12/20 (60%). Si aquesta opció s\'estableix a «No», la qualificació es mantindrà sense canvis, la qual cosa que requerirà l\'ajust manual de les qualificacions de l\'activitat per tal d\'assegurar que les puntuacions siguin correctes.';
+Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qualificació màxima d\'una activitat provocarà que una nota de 6/10 (60%) es converteixi a 12/20 (60%). Si aquesta opció s\'estableix a «No», la qualificació es mantindrà sense canvis, la qual cosa requerirà l\'ajust manual de les qualificacions de l\'activitat per tal d\'assegurar que les puntuacions siguin correctes.';
 $string['modgradedonotmodify'] = 'No modifiquis les qualificacions existents';
-$string['modgradeerrorbadpoint'] = 'El valor de qualificació no és vàlid. Hauria de ser un enter entre 1 i {$a}';
+$string['modgradeerrorbadpoint'] = 'El valor de qualificació no és vàlid. Hauria de ser un enter entre 0 i {$a}';
 $string['modgradeerrorbadscale'] = 'L\'escala seleccionada no és vàlida. Assegureu-vos de seleccionar una escala de les que es mostren més avall.';
 $string['modgrade_help'] = 'Seleccioneu el tipus de qualificació que s\'utilitzarà en aquesta activitat. Si trieu «escala», podreu triar una escala en el menú desplegable. Si utilitzeu la qualificació per «puntuació», podreu introduir el valor màxim de la qualificació per a aquesta activitat.';
 $string['modgrademaxgrade'] = 'Puntuació màxima';
@@ -506,7 +506,7 @@ $string['modgraderescalegrades_help'] = 'En canviar la qualificació màxima en 
 
 Si ho establiu a «Sí», es convertiran les qualificacions existents de tal manera que es conservi la qualificació en percentatge.
 
-Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qualificació màxima d\'una activitat provocarà que una nota de 6/10 (60%) es converteixi a 12/20 (60%). Si aquesta opció s\'estableix a «No», la qualificació es mantindrà sense canvis, la qual cosa que requerirà l\'ajust manual de les qualificacions de l\'activitat per tal d\'assegurar que les puntuacions siguin correctes.';
+Per exemple, si aquesta opció s\'estableix a «Sí», canviar de 10 a 20 la qualificació màxima d\'una activitat provocarà que una nota de 6/10 (60%) es converteixi a 12/20 (60%). Si aquesta opció s\'estableix a «No», la qualificació es mantindrà sense canvis, la qual cosa requerirà l\'ajust manual de les qualificacions de l\'activitat per tal d\'assegurar que les puntuacions siguin correctes.';
 $string['modgradetype'] = 'Tipus';
 $string['modgradetypenone'] = 'Cap';
 $string['modgradetypepoint'] = 'Puntuació';
@@ -566,7 +566,7 @@ $string['outcomeconfirmdelete'] = 'Segur que voleu suprimir la competència "{$a
 $string['outcomecreate'] = 'Afegeix una nova competència';
 $string['outcomedelete'] = 'Suprimeix la competència';
 $string['outcomefullname'] = 'Nom complet';
-$string['outcome_help'] = 'Especifica quina competència representarà al butlletí aquest element de qualificació. Únicament estan disponibles les competències associades al curs i les competències globals de tot el lloc.';
+$string['outcome_help'] = 'Especifica quina competència representarà al butlletí aquest element de qualificació.';
 $string['outcomeitem'] = 'Element de competència';
 $string['outcomeitemsedit'] = 'Edita element de competència';
 $string['outcomereport'] = 'Informe de competència';
@@ -624,9 +624,9 @@ $string['range'] = 'Gamma';
 $string['rangedecimals'] = 'Xifres decimals del rang';
 $string['rangedecimals_help'] = 'Nombre de xifres decimals que es mostraran al rang.';
 $string['rangesdecimalpoints'] = 'Decimals en les gammes';
-$string['rangesdecimalpoints_help'] = '<p>Especifica el nombre de decimals que es mostren en cada element de la gamma. Aquest nombre es pot canviar després per a cada element de qualificació.</p>';
+$string['rangesdecimalpoints_help'] = '<p>Especifica el nombre de decimals que es mostren en cada element de la gamma, o si s\'empra el paràmetre de nombre de decimals global per a la categoria o l\'element de qualificació (s\'hereta).</p>';
 $string['rangesdisplaytype'] = 'Tipus de visualització de les gammes';
-$string['rangesdisplaytype_help'] = '<p>Especifica com es visualitzen les gammes. Si seleccioneu Hereta, s\'utilitzarà el tipus de visualització de cada columna.</p>';
+$string['rangesdisplaytype_help'] = '<p>Especifica si les gammes es visualitzen com a qualificacions reals, percentatges o lletres, o si s\'empra el tipus de visualització per a la categoria o l\'element de qualificació (s\'hereta).</p>';
 $string['rank'] = 'Posició';
 $string['rawpct'] = '% brut';
 $string['real'] = 'Real';
@@ -701,7 +701,7 @@ $string['showhiddenitems'] = 'Mostra els elements ocults';
 $string['showhiddenitems_help'] = 'Especifica si els elements de qualificació ocults s\'oculten completament o si els noms dels elements de qualificació ocults són visibles per als estudiants.
 
 * Mostra tots els elements ocults. Els noms dels elements de qualificació ocults es mostren, però les qualificacions resten ocultes.
-* Mostra només els elements «oculta fins». Els elements de qualificació amb una data «oculta fins» s\'oculten completament fins aquesta data. Després d\'aquesta data es mostrarà l\'element complet.
+* Mostra només els elements «oculta fins a». Els elements de qualificació amb una data «oculta fins a» s\'oculten completament fins aquesta data. Després d\'aquesta data es mostrarà l\'element complet.
 * No mostris cap element ocult. Els elements de qualificació ocults s\'oculten completament.';
 $string['showhiddenuntilonly'] = 'Mostra només els elements «oculta fins»';
 $string['showingaggregatesonly'] = 'S\'estan mostrant només els agregats';

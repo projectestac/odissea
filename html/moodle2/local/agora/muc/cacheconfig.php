@@ -500,6 +500,36 @@ defined('MOODLE_INTERNAL') || die();
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),
+    'tool_usertours/tourdata' =>
+      array(
+      'mode' => 1,
+      'component'=>'tool_usertours',
+      'area' =>"tourdata",
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 1,
+    ),
+    'tool_usertours/stepdata' =>
+        array(
+        'mode' => 1,
+        'component'=>'tool_usertours',
+        'area'=>'stepdata',
+        'simplekeys' => true,
+        'simpledata' => true,
+        'staticacceleration' => true,
+        'staticaccelerationsize' => 1,
+    ),
+    'core/message_processors_enabled' => 
+      array(
+        'mode' => 1,
+        'component' => 'core',
+        'area' => 'message_processors_enabled',
+        'simplekeys' => true,
+        'simpledata' => true,
+        'staticacceleration' => true,
+        'staticaccelerationsize' => 3
+    ),
   ),
   'definitionmappings' => 
   array (

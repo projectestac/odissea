@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,7 @@ $string['createall'] = 'Crea\'ls tots, incrementa el nom curt si és necessari';
 $string['createnew'] = 'Crea només els cursos nous, omet els ja existents';
 $string['createorupdate'] = 'Crea els cursos nous, o actualitza els ja existents';
 $string['csvdelimiter'] = 'Delimitador CSV';
-$string['csvdelimiter_help'] = 'Delimiador CSV del fitxer CSV.';
+$string['csvdelimiter_help'] = 'Delimitador CSV del fitxer CSV.';
 $string['csvfileerror'] = 'Hi ha algun error amb el format del fitxer CSV. Comproveu que el nombre de capçaleres i columnes coincideixen, i que el delimitador i la codificació del fitxer siguin correctes: {$a}';
 $string['csvline'] = 'Línia';
 $string['defaultvalues'] = 'Valors per defecte del curs';

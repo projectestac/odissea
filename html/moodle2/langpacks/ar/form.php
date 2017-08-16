@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,14 +30,14 @@ $string['advancedelement'] = 'عناصر متقدمة';
 $string['close'] = 'مغلق';
 $string['day'] = 'يوم';
 $string['display'] = 'عرض';
-$string['err_alphanumeric'] = 'يجب عليك إدخال أحرف أو أرقام هنا';
-$string['err_email'] = 'يجب عليك إدخال بريد الإلكتروني صحيح هنا';
-$string['err_lettersonly'] = 'يجب عليك إدخال أحرف فقط هنا';
+$string['err_alphanumeric'] = 'يجب عليك إدخال أحرف أو أرقام هناء';
+$string['err_email'] = 'يجب عليك إدخال بريد الإلكتروني صحيح هناء';
+$string['err_lettersonly'] = 'يجب عليك إدخال أحرف فقط هناء';
 $string['err_maxfiles'] = 'يجب أن لا تُرفق أكثر من {$a} ملفات هنا.';
-$string['err_maxlength'] = 'يجب عليك إدخال فقط {$a->format} رموز هنا';
-$string['err_minlength'] = 'يجب عليك إدخال على الأقل {$a->format} رموز هنا';
+$string['err_maxlength'] = 'يجب عليك إدخال لا أكثر من {$a->format} أحرف هناء';
+$string['err_minlength'] = 'يجب عليك إدخال على الأقل {$a->format} أحرف هناء';
 $string['err_nonzero'] = 'يجب عليك إدخال رقم لا يبدا بصفر (0)';
-$string['err_nopunctuation'] = 'لا يجب ادخال رموز ترقيم هنا';
+$string['err_nopunctuation'] = 'يجب ادخال حروف تريم هنا';
 $string['err_numeric'] = 'يجب ادخال الرقم هنا';
 $string['err_rangelength'] = 'يجب الأدخل بين {$a->format[0]} و{$a->format[1]}الحروف هنا';
 $string['err_required'] = 'يجب تزويد القيمة هنا';
@@ -54,8 +54,9 @@ $string['noselection'] = 'لا اختيار';
 $string['nosuggestions'] = 'لا اقتراحات';
 $string['optional'] = 'إختياري';
 $string['othersettings'] = 'إعدادات أخرى';
+$string['passwordunmaskrevealhint'] = 'أضهر';
 $string['requiredelement'] = 'حقل مطلوب';
-$string['revealpassword'] = 'أظهر';
+$string['revealpassword'] = 'أضهر';
 $string['security'] = 'أمان';
 $string['selectallornone'] = 'اختر الكل / لا شئ';
 $string['selected'] = 'تم الاختيار';
@@ -63,7 +64,7 @@ $string['selecteditems'] = 'العناصرالمُختارة:';
 $string['showadvanced'] = 'إظهار المستوى المتقدم';
 $string['showless'] = 'اظهر أقل...';
 $string['showmore'] = 'أظهر المزيد...';
-$string['somefieldsrequired'] = 'الحقول المشار إليها في هذا النموذج مطلوبة {$a}';
+$string['somefieldsrequired'] = 'الحقول المشار إليها في هذا النوذج مطلوبة {$a}';
 $string['time'] = 'الوقت';
 $string['timeunit'] = 'وحدة الوقت';
 $string['timing'] = 'توقيت';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -731,7 +731,7 @@ $string['reattemptquiz'] = 'Saiatu berriro galdetegia egiten';
 $string['recentlyaddedquestion'] = 'Duela gutxi gehitutako galderak';
 $string['recurse'] = 'Gehitu galderak azpikategorietatik ere';
 $string['redoesofthisquestion'] = 'Saiatutako beste galderak hemen: {$a}';
-$string['redoquestion'] = 'Berriz saiatu';
+$string['redoquestion'] = 'Berriz saiatu honen moduko galdera batekin.';
 $string['regrade'] = 'Saiakera guztiei nota berriz kalkulatu';
 $string['regradecomplete'] = 'Saiakera guztiei nota berriz kalkulatu zaie';
 $string['regradecount'] = '{$a->attempt} saiakeratik {$a->changed} aldatu dira';
@@ -946,8 +946,6 @@ $string['timeleft'] = 'Geratzen den denbora';
 $string['timelimit'] = 'Denbora-muga';
 $string['timelimitexeeded'] = 'Barkatu, baina denbora-muga gainditu duzu!';
 $string['timelimit_help'] = 'Gaituz gero, denbora-muga galdetegiaren hasiera orrian ezartzen da eta atzerako kontaketa kronometroa erakusten da galdetegiaren nabigazio-blokean.';
-$string['timelimitmin'] = 'Denbora-muga (minututan)';
-$string['timelimitsec'] = 'Denbora-muga (segundutan)';
 $string['timestr'] = '%H:%M:%S on %d/%m/%y';
 $string['timesup'] = 'Denbora amaitu egin da!';
 $string['timetaken'] = 'Hartutako denbora';

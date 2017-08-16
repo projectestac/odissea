@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,7 +60,7 @@ $string['course_shortname_updateonsync'] = 'Update korte naam met synchronisatie
 $string['course_shortname_updateonsync_key'] = 'Update korte naam';
 $string['course_summary'] = 'Optioneel: LDAP-veld om de beschrijving uit te halen';
 $string['course_summary_key'] = 'Samenvatting';
-$string['course_summary_updateonsync'] = 'Update samenvatting met synchronisatiescript';
+$string['course_summary_updateonsync'] = 'Update-samenvatting tijdens synchronisatie-script';
 $string['course_summary_updateonsync_key'] = 'Update samenvatting';
 $string['courseupdated'] = 'Aanpassen cursus met IDnummer \'{$a->idnumber}\'  is gelukt.';
 $string['courseupdateskipped'] = 'Cursus met IDnummer \'{$a->idnumber}\' moet niet aangepast worden. Sla over...';

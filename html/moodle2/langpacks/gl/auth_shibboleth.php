@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_shibboleth', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['auth_shib_convert_data'] = 'API de modificación de datos';
 $string['auth_shib_convert_data_description'] = 'Pode usar esta API para modificar máis adiante os datos fornecidos por Shibboleth. Lea o ficheiro <a href="../auth/shibboleth/README.txt" target="_blank">README</a> para ver instrucións adicionais.';
 $string['auth_shib_convert_data_warning'] = 'Non existe o ficheiro ou non é lexíbel polo proceso do servidor.';
 $string['auth_shib_idp_list'] = 'Provedores de identidade';
-$string['auth_shib_idp_list_description'] = 'Fornecer unha lista de entityIDs de provedores de identidade para permitir que o usuario escolla na páxina de acceso. <br/>Cada liña debe ser unha tupla separada por comas para as entityID dos IdP  (véxase o ficheiro de metadatos Shibboleth) e o Name dos IdP como deberá figurar na lista despregábel.<br/>Como un terceiro parámetro opcional pode engadir a localización dun iniciador de sesión de Shibboleth que empregarase no caso de que a súa instalación de Moodle sexa parte duna configuración de federación múltipla.';
+$string['auth_shib_idp_list_description'] = 'Fornecer unha lista de entityIDs de provedores de identidade para permitir que o usuario escolla na páxina de acceso. <br/>Cada liña debe ser unha tupla separada por comas para as entityID dos IdP  (véxase o ficheiro de metadatos Shibboleth) e o Name dos IdP como deberá figurar na lista despregábel.<br/>Como un terceiro parámetro opcional pode engadir a localización dun iniciador de sesión de Shibboleth que empregarase no caso de que a súa instalación de Moodle sexa parte duna configuración de federación múltiple.';
 $string['auth_shib_instructions'] = 'Empregue o <a href="{$a}">acceso Shibboleth</a> para acceder mediante Shibboleth se a súa institución o admite.<br />En caso contrario, empregue o formulario de entrada normal que se amosa aquí.';
 $string['auth_shib_instructions_help'] = 'Aquí debería fornecerlle aos usuarios instrucións personalizadas para explicar Shibboleth. Amosarase na sección de instrucións da páxina de acceso. As instrucións deben incluír unha ligazón a «<b>{$a}</b>» para que só teñan que premer nel cando queiran acceder.';
 $string['auth_shib_integrated_wayf'] = 'Servizo Moodle WAYF';

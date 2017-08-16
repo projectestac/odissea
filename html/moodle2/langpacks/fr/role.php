@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'role', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,7 @@ $string['badges:deletebadge'] = 'Supprimer des badges';
 $string['badges:earnbadge'] = 'Recevoir des badges';
 $string['badges:manageglobalsettings'] = 'Gérer les réglages globaux des badges';
 $string['badges:manageownbadges'] = 'Voir et gérer ses propres badges reçus';
+$string['badges:revokebadge'] = 'Révoquer un badge pour un utilisateur';
 $string['badges:viewawarded'] = 'Voir les utilisateurs ayant reçus un badge sans pouvoir recevoir un badge';
 $string['badges:viewbadges'] = 'Voir les badges disponibles sans les avoir obtenus';
 $string['badges:viewotherbadges'] = 'Voir les badges publics d\'autres profils utilisateur';
@@ -389,12 +390,15 @@ $string['siteadministrators'] = 'Administrateurs du site';
 $string['site:approvecourse'] = 'Approuver la création de cours';
 $string['site:backup'] = 'Sauvegarder les cours';
 $string['site:config'] = 'Modifier la configuration du site';
+$string['site:configview'] = 'Consulter l\'arbre de l\'administration du site (mais non toutes ses pages)';
 $string['site:deleteanymessage'] = 'Supprimer des messages de la plateforme';
 $string['site:deleteownmessage'] = 'Supprimer ses propres messages envoyés ou reçus';
 $string['site:doanything'] = 'Permettre de tout faire';
 $string['site:doclinks'] = 'Afficher les liens vers la documentation de Moodle';
 $string['site:forcelanguage'] = 'Passer outre la langue du cours';
 $string['site:import'] = 'Importer d\'autres cours dans un cours';
+$string['site:maintenanceaccess'] = 'Accéder à la plateforme en mode de maintenance';
+$string['site:manageallmessaging'] = 'Ajouter, supprimer, bloquer et débloquer des contacts pour n\'importe quel utilisateur';
 $string['site:manageblocks'] = 'Gérer les blocs sur une page';
 $string['site:mnetloginfromremote'] = 'Se connecter depuis une application distante via MNet';
 $string['site:mnetlogintoremote'] = 'Accéder à une application distante via MNet';

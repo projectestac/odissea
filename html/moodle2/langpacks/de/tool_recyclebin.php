@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_recyclebin', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['datedeleted'] = 'Datum gelöscht';
 $string['deleteall'] = 'Alle löschen';
 $string['deleteallconfirm'] = 'Möchten Sie wirklich alle Objekte aus dem Papierkorb löschen?';
 $string['deleteconfirm'] = 'Möchten Sie wirklich das markierte Objekt aus dem Papierkorb löschen?';
-$string['deleteexpirywarning'] = 'Die Inhalte bleiben für {$a} erhalten, bevor sie endgültig gelöscht werden.';
+$string['deleteexpirywarning'] = 'Die Inhalte bleiben für {$a} erhalten bevor sie endgültig gelöscht werden.';
 $string['eventitemcreated'] = 'Eintrag erstellt';
 $string['eventitemcreated_desc'] = 'Eintrag mit ID {$a->objectid} erstellt.';
 $string['eventitemdeleted'] = 'Eintrag gelöscht';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['editservice'] = '编辑服务：{$a->name}（id：{$a->id}）';
 $string['enabled'] = '启用';
 $string['enabledocumentation'] = '启用开发者参考文档';
 $string['enabledocumentationdescription'] = '为启用的网络服务协议提供细致的文档。';
-$string['enablemobilewsoverview'] = '访问{$a->manageservicelink}管理页面，勾选“{$a->enablemobileservice}”设置并保存。一切都会为您准备好，所有网站用户都将可以使用官方 Moodle 应用。当前状态：{$a->wsmobilestatus}';
 $string['enableprotocols'] = '启用协议';
 $string['enableprotocolsdescription'] = '至少应启用一个协议。为保障安全，应该只激活要使用的协议。';
 $string['enablews'] = '启用网络服务';
@@ -128,8 +127,6 @@ $string['missingpassword'] = '缺少密码';
 $string['missingrequiredcapability'] = '必须有 {$a} 权限。';
 $string['missingusername'] = '缺少用户名';
 $string['missingversionfile'] = '源代码错误：组件 {$a} 缺少 version.php 文件';
-$string['mobilewsdisabled'] = '禁用';
-$string['mobilewsenabled'] = '启用';
 $string['nameexists'] = '这个名称已经被另一个服务使用';
 $string['nocapabilitytouseparameter'] = '用户不能使用这个参数{$a}';
 $string['nofunctions'] = '此服务没有函数。';

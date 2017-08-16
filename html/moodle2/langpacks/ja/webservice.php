@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,7 +73,6 @@ $string['editservice'] = 'サービスを編集する: {$a->name} (id: {$a->id})
 $string['enabled'] = '有効';
 $string['enabledocumentation'] = '開発者ドキュメントを有効にする';
 $string['enabledocumentationdescription'] = '有効にされたプロトコルに関する詳細ウェブサービスドキュメンテーションを閲覧することができます。';
-$string['enablemobilewsoverview'] = '{$a->manageservicelink} 管理ページに移動して「 {$a->enablemobileservice} 」設定をチェックした後、保存してください。あなたのためにすべてが設定され、すべてのサイトユーザがオフィシャルMoodle appを利用できるようになります。現在のステータス: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'プロトコルを有効にする';
 $string['enableprotocolsdescription'] = '少なくとも1つのプロトコルを有効にする必要があります。セキュリティ上の理由から、使用されるプロトコルのみ有効にしてください。';
 $string['enablews'] = 'ウェブサービスを有効にする';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'パスワードがありません。';
 $string['missingrequiredcapability'] = 'ケイパビリティ {$a} は必須です。';
 $string['missingusername'] = 'ユーザ名がありません。';
 $string['missingversionfile'] = 'コーディングエラー: コンポーネント {$a} のversion.phpファイルがありません。';
-$string['mobilewsdisabled'] = '無効';
-$string['mobilewsenabled'] = '有効';
 $string['nameexists'] = 'この名称はすでに別のサービスで使用されています。';
 $string['nocapabilitytouseparameter'] = 'ユーザにはパラメータ「 {$a} 」を使用するための必須ケイパビリティがありません。';
 $string['nofunctions'] = 'このサービスに関数はありません。';
@@ -210,6 +207,7 @@ $string['usernameorid_help'] = 'ユーザ名またはユーザIDを入力して�
 $string['usernameoridnousererror'] = 'このユーザ名/ユーザIDでユーザは見つかりませんでした。';
 $string['usernameoridoccurenceerror'] = 'このユーザ名で2名以上のユーザが見つかりました。ユーザIDを入力してください。';
 $string['usernotallowed'] = 'ユーザはこのサービスを許可されていません。あなたはまず最初に {$a} の許可されたユーザ管理ページでこのユーザを許可する必要があります。';
+$string['userservices'] = 'ユーザサービス: {$a}';
 $string['usersettingssaved'] = 'ユーザ設定が保存されました。';
 $string['validuntil'] = '有効期限';
 $string['validuntil_help'] = '設定した場合、この日付以後、このユーザに対するサービスが無効となります。';

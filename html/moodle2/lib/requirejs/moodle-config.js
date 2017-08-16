@@ -6,8 +6,8 @@ var require = {
     waitSeconds : 0,
 
     paths: {
-        jquery: '[JSURL]lib/jquery/jquery-1.12.1.min[JSEXT]',
-        jqueryui: '[JSURL]lib/jquery/ui-1.11.4/jquery-ui.min[JSEXT]',
+        jquery: '[JSURL]lib/jquery/jquery-3.1.0.min[JSEXT]',
+        jqueryui: '[JSURL]lib/jquery/ui-1.12.1/jquery-ui.min[JSEXT]',
         jqueryprivate: '[JSURL]lib/requirejs/jquery-private[JSEXT]'
     },
 

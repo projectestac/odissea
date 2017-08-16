@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Sets the default for including activities 
 $string['configgeneralanonymize'] = 'If enabled all information pertaining to users will be anonymised by default.';
 $string['configgeneralbadges'] = 'Sets the default for including badges in a backup.';
 $string['configgeneralblocks'] = 'Sets the default for including blocks in a backup.';
+$string['configgeneralcalendarevents'] = 'Sets the default for including calendar events in a backup.';
 $string['configgeneralcomments'] = 'Sets the default for including comments in a backup.';
+$string['configgeneralcompetencies'] = 'Sets the default for including competencies in a backup.';
 $string['configgeneralfilters'] = 'Sets the default for including filters in a backup.';
 $string['configgeneralgroups'] = 'Sets the default for including groups and groupings in a backup.';
 $string['configgeneralhistories'] = 'Sets the default for including user history within a backup.';
@@ -142,7 +144,9 @@ $string['generalanonymize'] = 'Anonymise information';
 $string['generalbackdefaults'] = 'General backup defaults';
 $string['generalbadges'] = 'Include badges';
 $string['generalblocks'] = 'Include blocks';
+$string['generalcalendarevents'] = 'Include calendar events';
 $string['generalcomments'] = 'Include comments';
+$string['generalcompetencies'] = 'Include competencies';
 $string['generalfilters'] = 'Include filters';
 $string['generalgradehistories'] = 'Include histories';
 $string['generalgroups'] = 'Include groups and groupings';
@@ -171,6 +175,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'If the site has an account
 $string['importgeneralmaxresults'] = 'Maximum number of courses listed for import';
 $string['importgeneralmaxresults_desc'] = 'This controls the number of courses that are listed during the first step of the import process';
 $string['importgeneralsettings'] = 'General import defaults';
+$string['importsettings'] = 'General import settings';
 $string['importsuccess'] = 'Import complete. Click continue to return to the course.';
 $string['includeactivities'] = 'Include:';
 $string['includeditems'] = 'Included items:';

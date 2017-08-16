@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['leveldefinition'] = 'Definició del nivell {$a}';
 $string['leveldelete'] = 'Suprimeix el nivell {$a}';
 $string['levelempty'] = 'Prem per editar el nivell';
 $string['levelsgroup'] = 'Nivells del grup';
+$string['lockzeropoints_help'] = 'Aquest paràmetre només té efecte si la suma del nombre mínim de punts de cada criteri és superior a zero. Si es marca, la mínima puntuació possible de la rúbrica serà superior a zero. Si es desmarca, la mínima puntuació possible de la rúbrica es farà correspondre amb la puntuació mínima disponible de l\'activitat (la qual és zero si no s\'utilitza cap escala).';
 $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La definició de la rúbrica ha canviat després que aquest estudiant hagi estat qualificat. L\'estudiant no pot veure aquesta rúbrica malgrat que comproveu la rúbrica i actualitzeu la qualificació.';
 $string['pluginname'] = 'Rúbrica';
@@ -65,8 +66,8 @@ $string['regradeoption1'] = 'Marqueu per requalificar';
 $string['restoredfromdraft'] = 'NOTA: El darrer intent per qualificar aquesta persona no ha sigut desat correctament per això les qualificacions en brut han sigut restaurades. Si voleu cancel·lar aquests canvis utilitzeu el botó \'Cancel·la\' de sota.';
 $string['rubric'] = 'Rúbrica';
 $string['rubricmapping'] = 'Puntuació per qualificar el mapatge de les regles.';
-$string['rubricmappingexplained'] = 'La puntuació mínima per aquesta rúbrica és de <b>{$a->minscore} punts</b> i es
-convertirà en la qualificació mínima disponible per aquest mòdul (la qual és zero llevat que s\'utilitzi l\'escala). <br/>
+$string['rubricmappingexplained'] = 'La puntuació mínima per a aquesta rúbrica és de <b>{$a->minscore} punts</b> i es
+convertirà en la qualificació mínima disponible per a aquest mòdul (la qual és zero, llevat que s\'utilitzi l\'escala). <br/>
 La puntuació màxima de <b>{$a->maxscore} punts</b> es convertirà en la qualificació màxima. <br/>
 Les puntuacions intermèdies es convertiran i s\'arrodoniran a la qualificació més pròxima. <br/>
 Si una escala s\'usa com a qualificació, la puntuació es convertirà en elements de l\'escala com si fossin nombres enters consecutius.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz_statistics', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['discrimination_index'] = 'Δείκτης διάκρισης';
 $string['discriminative_efficiency'] = 'Αποδοτικότητα διάκρισης';
 $string['downloadeverything'] = 'Μεταφόρτωση της πλήρους αναφοράς σαν';
 $string['duration'] = 'Άνοιγμα για';
-$string['effective_weight'] = 'Ισχύον βάρος';
+$string['effective_weight'] = 'Ισχύουσα βαρύτητα';
 $string['errordeleting'] = 'Σφάλμα διαγραφής παλαιών {$a} εγγραφών.';
 $string['errormedian'] = 'Σφάλμα λήψεως διάμεσου';
 $string['errorpowerquestions'] = 'Σφάλμα κατά τη λήψη των δεδομένων για τον υπολογισμό της διακύμανσης των βαθμών της ερώτησης';
@@ -56,7 +56,7 @@ $string['firstattempts'] = 'πρώτες προσπάθειες';
 $string['firstattemptsavg'] = 'Μέσος όρος βαθμολογιών των πρώτων προσπαθειών';
 $string['firstattemptscount'] = 'Αριθμός πρώτων προσπαθειών';
 $string['frequency'] = 'Συχνότητα';
-$string['intended_weight'] = 'Προτιθέμενο βάρος';
+$string['intended_weight'] = 'Προτιθέμενη βαρύτητα';
 $string['kurtosis'] = 'Κύρτωση διανομής του σκορ (για {$a})';
 $string['lastcalculated'] = 'Τελευταία υπολογισμένη {$a->lastcalculated} και από τότε υπήρξαν {$a->count} προσπάθειες.';
 $string['median'] = 'Διάμεσος βαθμός (για {$a})';

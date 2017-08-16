@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'survey', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -190,6 +190,7 @@ $string['collespintro'] = 'この調査の目的は、あなたがオンライ�
 
 ありがとうございます。';
 $string['collespname'] = 'COLLES (要望)';
+$string['completionsubmit'] = '完了するには学生はこの活動に送信する必要があります。';
 $string['customintro'] = '説明';
 $string['deleteallanswers'] = 'すべての調査回答を削除する';
 $string['deleteanalysis'] = '回答分析を削除する';

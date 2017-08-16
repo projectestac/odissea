@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'editor_tinymce', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -400,7 +400,7 @@ $string['fullpage_dlg:bgimage'] = 'Imatge de fons';
 $string['fullpage_dlg:bottom_margin'] = 'Marge inferior';
 $string['fullpage_dlg:charset'] = 'Joc de caràcters';
 $string['fullpage_dlg:comment_element'] = 'Comentari';
-$string['fullpage_dlg:content'] = 'Content';
+$string['fullpage_dlg:content'] = 'Contingut';
 $string['fullpage_dlg:copyright'] = 'Copyright';
 $string['fullpage_dlg:defer'] = 'Defer';
 $string['fullpage_dlg:doctypes'] = 'Doctype';
@@ -769,7 +769,7 @@ $string['table_dlg:langdir'] = 'Direcció de l\'Idioma';
 $string['table_dlg:ltr'] = 'D\'esquerra a dreta';
 $string['table_dlg:merge_cells_title'] = 'Refon les cel·les de la taula';
 $string['table_dlg:mime'] = 'Tipus MIME de l\'objectiu';
-$string['table_dlg:missing_scope'] = 'Segur que vols continuar sense especificar un abast per a les cel·les de capçalera d\'aquesta taula? Sense això, alguns usuaris/es amb discapacitats tindran dificultats per entendre el contingut o les dades mostrades a la taula.';
+$string['table_dlg:missing_scope'] = 'Confirmeu que voleu continuar sense especificar un abast per a les cel·les de capçalera d\'aquesta taula? Sense això, alguns usuaris amb discapacitats tindran dificultats per entendre el contingut o les dades que es mostren a la taula.';
 $string['table_dlg:row_all'] = 'Actualitza les files de la taula';
 $string['table_dlg:row_even'] = 'Actualitza les files parelles de la taula';
 $string['table_dlg:rowgroup'] = 'Grup de Files';

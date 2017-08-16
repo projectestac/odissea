@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradingform_rubric', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Voeg criterium toe';
-$string['alwaysshowdefinition'] = 'Sta toe dat de gebruikers een voorbeeld kunnen zien van de rubric die wordt gebruikt in de module (zoniet is de rubric enkel zichtbaar na de beoordeling)';
+$string['alwaysshowdefinition'] = 'Sta toe dat de gebruikers een voorbeeld kunnen zien van de rubric  (zoniet is de rubric enkel zichtbaar na de beoordeling)';
 $string['backtoediting'] = 'Terug naar bewerken';
 $string['confirmdeletecriterion'] = 'Weet je zeker dat je dit criterium wil wissen?';
 $string['confirmdeletelevel'] = 'Weet je zeker dat je dit niveau wil wissen?';
@@ -46,7 +46,7 @@ $string['err_nocriteria'] = 'Een rubric moet minstens één criterium hebben';
 $string['err_nodefinition'] = 'De niveaudefinitie kan niet leeg zijn';
 $string['err_nodescription'] = 'De criteriumbeschrijving kan niet leeg zijn';
 $string['err_novariations'] = 'Criteriumniveau\'s kunnen niet allemaal hetzelfde cijfer waard zijn.';
-$string['err_scoreformat'] = 'Het aantal punten voor elk niveau moet een geldig positief getal zijn.';
+$string['err_scoreformat'] = 'Het aantal punten voor elk niveau moet een geldig getal zijn.';
 $string['err_totalscore'] = 'Het maximale aantal mogelijke punten wanneer beoordeeld door de rubric moet meer dan nul zijn.';
 $string['gradingof'] = '{$a} beoordeling';
 $string['level'] = 'Niveau {$a->definition}, {$a->score} punten.';
@@ -54,6 +54,8 @@ $string['leveldefinition'] = 'Niveau {$a} definitie';
 $string['leveldelete'] = 'Verwijder niveau {$a}';
 $string['levelempty'] = 'Klik om het niveau te bewerken';
 $string['levelsgroup'] = 'Groepniveaus';
+$string['lockzeropoints'] = 'Bereken cijfer gebaseerd op  een rubric met een minimumscore van 0';
+$string['lockzeropoints_help'] = 'Deze instelling is enkel van toepassing wanneer de som van het minimale cijfer voor alle criteria groter is dan 0. Indien ingeschakeld zal het minimaal haalbare cijfer voor de rubric groter dan 0 zijn. Indien niet ingeschakeld zal het minimaal haalbare cijfer voor de rubric gemapt worden naar het minimaal haalbare cijfer voor de activiteit (dat 0 is tenzij er een schaal wordt gebruikt).';
 $string['name'] = 'Naam';
 $string['needregrademessage'] = 'De rubricdefinitie is gewijzigd nadat de leerling beoordeeld werd. De leerling kan zijn rubric niet zien tot je deze controleert en het cijfer aanpast.';
 $string['pluginname'] = 'Rubric';
@@ -65,10 +67,11 @@ $string['regradeoption1'] = 'Markeren voor opnieuw beoordelen';
 $string['restoredfromdraft'] = 'OPMERKING: de laatste beoordelingspoging voor deze persoon is niet behoorlijk bewaard en daarom zijn de voorlopige cijfers teruggezet. Als je deze wijzigingen wil annuleren, klik dan op de \'Annuleer\'-knop onderaan.';
 $string['rubric'] = 'Rubric';
 $string['rubricmapping'] = 'Score naar cijfer mappingregels';
-$string['rubricmappingexplained'] = 'De kleinst mogelijke score voor deze rubric is <b>{$a->minscore}</b> en zal omgezet worden naar het minimumcijfer beschikbaar in deze module (welke nul is, tenzij de schaal wordt gebruikt).
- De maximumscore <b>{$a->maxscore} punten</b> zal omgezet worden naar het maximumcijfer.<br />
- Tussenliggende scores worden omgezet en afgerond naar het dichtstbijzijnde beschikbare cijfer.<br />
- Als er een schaal gebruikt wordt in plaats van een cijfer, dan zal de score omgezet worden naar de schaalelementen alsof ze opeenvolgende gehele getallen waren.';
+$string['rubricmappingexplained'] = 'De kleinst mogelijke score voor deze rubric is <b>{$a->minscore}</b> en zal omgezet worden naar het minimumcijfer voor deze activiteit (dat 0 is, tenzij er een schaal wordt gebruikt). De maximumscore <b>{$a->maxscore} punten</b> zal omgezet worden naar het maximumcijfer en de tussenliggende cijfers zullen evenredig verdeeld worden.
+
+Als er een schaal gebruikt wordt in plaats van een cijfer, dan zal de score afgerond worden en omgezet naar de schaalelementen alsof ze opeenvolgende gehele getallen waren.
+
+Deze manier van berekenen kan gewijzigd worden door het formulier te bewerken en de instelling \'Bereken cijfer gebaseerd op  een rubric met een minimumscore van 0\' in te schakelen';
 $string['rubricnotcompleted'] = 'Kies iets voor elk criterium';
 $string['rubricoptions'] = 'Rubric opties';
 $string['rubricstatus'] = 'Huidige rubric status';

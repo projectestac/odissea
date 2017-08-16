@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actenrolshhdr'] = 'Dispoñíbeis os engadidos de matriculación';
+$string['actenrolshhdr'] = 'Dispoñíbeis os complementos de matriculación';
 $string['addinstance'] = 'Engadir método';
 $string['addinstanceanother'] = 'Engadir método e crear outro';
 $string['ajaxnext25'] = 'Seguintes 25...';
@@ -33,10 +33,10 @@ $string['ajaxoneuserfound'] = 'Atopouse 1 usuario';
 $string['ajaxxusersfound'] = 'Atopáronse {$a} usuarios';
 $string['assignnotpermitted'] = 'Non tes permiso ou non podes asignar roles neste curso.';
 $string['bulkuseroperation'] = 'Operación masiva de usuario';
-$string['configenrolplugins'] = 'Seleccione todos os engadidos requiridos e arránxeos na orde apropiada.';
+$string['configenrolplugins'] = 'Seleccione todos os complementos requiridos e arránxeos na orde apropiada.';
 $string['custominstancename'] = 'Nome personalizado da instancia';
 $string['defaultenrol'] = 'Engadir instancia aos novos cursos';
-$string['defaultenrol_desc'] = 'É posíbel engadir este engadido a todos os novos cursos de modo predeterminado.';
+$string['defaultenrol_desc'] = 'É posíbel engadir este complemento a todos os novos cursos de modo predeterminado.';
 $string['deleteinstanceconfirm'] = 'Está a piques de eliminar o método de matriculación «{$a->name}». Todos os {$a->users} usuarios matriculados actualmente usando este método serán desmatriculados (dados de baixa) e eliminaranse todos os datos relacionados co curso, como as cualificacións, pertenza de grupos ou subscripcións ao foro dos usuarios.
 
 Confirma que quere continuar?';
@@ -100,7 +100,7 @@ $string['instanceeditselfwarning'] = 'Aviso:';
 $string['instanceeditselfwarningtext'] = 'Vostede está matriculado neste curso mediante este método de matriculación, os cambios poden afectar ao seu acceso a este curso.';
 $string['invalidenrolinstance'] = 'Instancia de matriculación incorrecta';
 $string['invalidrole'] = 'Rol incorrecto';
-$string['manageenrols'] = 'Xestionar os engadidos de matriculación';
+$string['manageenrols'] = 'Xestionar os complementos de matriculación';
 $string['manageinstance'] = 'Xestionar';
 $string['migratetomanual'] = 'Migrar cara a matriculación manual';
 $string['nochange'] = 'Sen cambios';

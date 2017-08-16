@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_admin_bookmarks', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   block_admin_bookmarks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_bookmarks:addinstance'] = 'Afegeix un bloc nou d\'adreces d\'interès d\'administració';
-$string['admin_bookmarks:myaddinstance'] = 'Afegeix un bloc nou d\'adreces d\'interès d\'administració a la pàgina del Tauler';
+$string['admin_bookmarks:addinstance'] = 'Afegeix un nou bloc d\'adreces d\'interès d\'administració';
+$string['admin_bookmarks:myaddinstance'] = 'Afegeix un nou bloc d\'adreces d\'interès d\'administració a la pàgina del Tauler';
 $string['pluginname'] = 'Dreceres d\'administració';

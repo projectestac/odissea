@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_xmldb', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,9 +57,9 @@ Una volta completata l\'individuazione, è possibile copiare il codice SQL gener
 Si raccomanda di utilizzare la versione di Moodle più recente (versione +) disponibile per la release in uso prima di cercare valori di default inconsistenti.
 
 La ricerca non effettua modifiche sul database, legge solamente i dati e pertanto può essere eseguita con sicurezza in qualsiasi momento.';
-$string['confirmcheckforeignkeys'] = 'La funzione individua la presenza di potenziali violazioni delle foreign key definite nel file install.xml. (Al momento Moodle non genera vincoli per le foreign key, ed è questo il motivo per cui potrebbero essere presenti.)
+$string['confirmcheckforeignkeys'] = 'La funzione individua la presenza di possibili violazioni delle foreign key definite nel file install.xml. (Al momento Moodle non impone vincoli per le foreign key ed è questo il motivo per cui potrebbero essere presenti.)
 
-Si raccomanda di utilizzare la versione di Moodle più recente (versione +) disponibile per la release in uso prima di cercare indici mancanti.
+Prima di cercare violazioni delle foreign key, si raccomanda di utilizzare la versione di Moodle più recente (versione +) disponibile per la release in uso.
 
 La ricerca non effettua modifiche sul database, legge solamente i dati e pertanto può essere eseguita con sicurezza in qualsiasi momento.';
 $string['confirmcheckindexes'] = 'La funzione individua indici mancanti nel server Moodle, generando automaticamente il codice SQL necessario per sistemare tutti i valori dei default inconsistenti eventualmente presenti. Il codice SQL viene generato ma non eseguito.

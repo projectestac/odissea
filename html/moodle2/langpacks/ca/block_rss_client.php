@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_rss_client', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfeed'] = 'Afegeix un URL d\'un canal d\'informació:';
 $string['addheadlineblock'] = 'Afegeix un bloc de titulars RSS';
 $string['addnew'] = 'Afegeix';
-$string['addnewfeed'] = 'Afegeix un canal nou';
+$string['addnewfeed'] = 'Afegeix un nou canal';
 $string['cannotmakemodification'] = 'No podeu modificar aquest canal RSS en aquest moment.';
 $string['choosefeedlabel'] = 'Trieu els canals que voleu incloure en aquest bloc:';
 $string['clientchannellink'] = 'Lloc origen...';

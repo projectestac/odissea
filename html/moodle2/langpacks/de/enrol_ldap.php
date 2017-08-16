@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_ldap', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['contexts'] = 'LDAP Kontexte';
 $string['couldnotfinduser'] = 'Nutzer \'{$a}\' konnte nicht gefunden werden, überspringen';
 $string['course_fullname'] = 'Optional: LDAP-Feld für vollständigen Kursnamen';
 $string['course_fullname_key'] = 'Vollständiger Name';
-$string['course_fullname_updateonsync'] = 'Vollständigen Kursnamen bei der Synchronisierung aktualisieren';
+$string['course_fullname_updateonsync'] = 'Vollständigen Namen bei der Synchronisierung aktualisieren';
 $string['course_fullname_updateonsync_key'] = 'Vollständigen Kursnamen aktualisieren';
 $string['course_idnumber'] = 'Bezeichner zur eindeutigen Identifizierung in LDAP, normalerweise <em>cn</em> oder <em>uid</em>. Es wird empfohlen, den Wert zu sperren, wenn Sie Kurse automatisiert anlegen wollen.';
 $string['course_idnumber_key'] = 'ID-Nummer';
@@ -56,11 +56,11 @@ $string['course_search_sub_key'] = 'Subkontexte';
 $string['course_settings'] = 'Einstellungen für Kurse';
 $string['course_shortname'] = 'Optional: LDAP-Feld für die Kurzbezeichnung des Kurses';
 $string['course_shortname_key'] = 'Kurzname';
-$string['course_shortname_updateonsync'] = 'Kurzen Kursnamen bei der Synchronisierung aktualisieren';
+$string['course_shortname_updateonsync'] = 'Kurzen Namen bei der Synchronisierung aktualisieren';
 $string['course_shortname_updateonsync_key'] = 'Kurzen Kursnamen aktualisieren';
 $string['course_summary'] = 'Optional: LDAP-Feld für die Beschreibung des Kurses';
 $string['course_summary_key'] = 'Zusammenfassung';
-$string['course_summary_updateonsync'] = 'Beschreibung bei der Synchronisierung aktualisieren';
+$string['course_summary_updateonsync'] = 'Zusammenfassung bei der Synchronisierung aktualisieren';
 $string['course_summary_updateonsync_key'] = 'Beschreibung aktualisieren';
 $string['courseupdated'] = 'Kurs mit der Kurs-ID \'{$a->idnumber}\' wurde erfolgreich aktualisiert.';
 $string['courseupdateskipped'] = 'Kurs mit der Kurs-ID \'{$a->idnumber}\' braucht keine Aktualisierung und wird übersprungen...';

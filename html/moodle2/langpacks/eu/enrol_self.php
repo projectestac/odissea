@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['enrolperiod_desc'] = 'Matrikulazioaren berezko iraupena. Zero ezarriz g
 $string['enrolperiod_help'] = 'Matrikulazioaren iraupena, erabiltzaileak bere burua matrikulatzen duen unetik hasita. Desgaituz gero, matrikulazioa mugarik gabekoa izango da.';
 $string['enrolstartdate'] = 'Hasiera-data';
 $string['enrolstartdate_help'] = 'Gaituz gero, erabiltzaileek data honetatik aurrera soilik izango dute matrikulatzeko aukera.';
-$string['expiredaction'] = 'Matrikulazio-amaieraren ekintza';
+$string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez, kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['expirymessageenrolledbody'] = 'Kaixo {$a->user},
 
@@ -101,7 +101,7 @@ $string['self:manage'] = 'Matrikulatutako erabiltzaileak kudeatu';
 $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['self:unenrolself'] = 'Norbera ikastararotik desmatrikulatu';
 $string['sendcoursewelcomemessage'] = 'Bidali ikastarorako harrera-mezua';
-$string['sendcoursewelcomemessage_help'] = 'Gaituta, erabiltzaileek ongi etorri mezua jasoko dute e-postaz beren burua ikastaro batean matrikulatzen dutenean.';
+$string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri mezua jasoko dute e-postaz. Ikastaroko kontaktuak bidaltzen badu (berez irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-posta rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
 $string['showhint'] = 'Erakutsi argibidea';
 $string['showhint_desc'] = 'Bisitarien sarbide-giltzaren lehenbiziko letra erakutsi';
 $string['status'] = 'Gaitu existitzen diren matrikulazioak';

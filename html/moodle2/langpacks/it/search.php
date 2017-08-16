@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'search', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,8 @@ $string['documentsinindex'] = 'Documenti nell\'indice';
 $string['duration'] = 'Durata';
 $string['emptydatabaseerror'] = 'La tabella database non è presente o non contiene alcun record indice.';
 $string['enginenotfound'] = 'Il motore {$a} non è stato trovato.';
-$string['enginenotinstalled'] = '{$a} non è installato.';
+$string['enginenotinstalled'] = 'Il motore {$a} non è installato.';
+$string['enginenotselected'] = 'Non hai selezionato nessun motore di ricerca.';
 $string['engineserverstatus'] = 'Il motore di ricerca non è disponibile. Per favore contatta l\'amministratore del sito.';
 $string['enteryoursearchquery'] = 'Parole da cercare';
 $string['errorareanotavailable'] = 'L\'area di ricerca {$a} non è disponibile.';
@@ -85,9 +86,12 @@ $string['score'] = 'Punteggio';
 $string['search'] = 'Ricerca';
 $string['searcharea'] = 'Area di ricerca';
 $string['searching'] = 'Ricerca in ...';
+$string['search:message_received'] = 'Messaggi - ricevuti';
+$string['search:message_sent'] = 'Messaggi - inviati';
 $string['search:mycourse'] = 'I miei corsi';
 $string['searchnotpermitted'] = 'Non sei autorizzato ad eseguire ricerche';
 $string['searchsetupdescription'] = 'I passi seguenti faciliteranno l\'impostazione della ricerca globale di Moodle:';
+$string['search:user'] = 'Utenti';
 $string['seconds'] = 'secondi';
 $string['solutions'] = 'Soluzioni';
 $string['statistics'] = 'Statistiche';

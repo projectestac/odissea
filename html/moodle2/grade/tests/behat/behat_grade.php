@@ -247,6 +247,38 @@ class behat_grade extends behat_base {
     }
 
     /**
+     * Select the tab in the gradebook. We must be on one of the gradebook pages already.
+     *
+     * @param string $gradepath examples: "View > User report", "Letters > View", "Scales"
+     */
+    protected function select_in_gradebook_tabs($gradepath) {
+        $gradepath = preg_split('/\s*>\s*/', trim($gradepath));
+        if (count($gradepath) > 2) {
+            throw new coding_exception('Grade path is too long (must have no more than two items separated with ">")');
+        }
+
+        $xpath = '//div[contains(@class,\'grade-navigation\')]';
+
+        // If the first row of the grade-navigation tabs does not have $gradepath[0] as active tab, click on it.
+        $link = '\'' . $this->escape($gradepath[0]) . '\'';
+        $xpathrow1 = $xpath . '//ul[1]//*[contains(@class,\'active\') and contains(normalize-space(.), ' . $link . ')]';
+        if (!$this->getSession()->getPage()->findAll('xpath', $xpathrow1)) {
+            $this->find('xpath', $xpath . '//ul[1]/li/a[text()=' . $link . ']')->click();
+            $this->wait_for_pending_js();
+        }
+
+        if (isset($gradepath[1])) {
+            // If the second row of the grade-navigation tabs does not have $gradepath[1] as active tab, click on it.
+            $link = '\'' . $this->escape($gradepath[1]) . '\'';
+            $xpathrow2 = $xpath . '//ul[2]//*[contains(@class,\'active\') and contains(normalize-space(.), ' . $link . ')]';
+            if (!$this->getSession()->getPage()->findAll('xpath', $xpathrow2)) {
+                $this->find('xpath', $xpath . '//ul[2]/li/a[text()=' . $link . ']')->click();
+                $this->wait_for_pending_js();
+            }
+        }
+    }
+
+    /**
      * Navigates to the course gradebook and selects a specified item from the grade navigation tabs.
      *
      * Examples:
@@ -260,35 +292,25 @@ class behat_grade extends behat_base {
      * @param string $gradepath
      */
     public function i_navigate_to_in_the_course_gradebook($gradepath) {
-        $gradeadmin = get_string('gradeadministration', 'grades');
-
-        // If we are not on one of the gradebook pages already, follow "Grades" link in the administration block.
-        $xpath = '//div[contains(@class,\'block_settings\')]//div[@id=\'settingsnav\']/ul/li[1]/p[1]/span[string(.)=' .
-            behat_context_helper::escape($gradeadmin) . ']';
+        // If we are not on one of the gradebook pages already, follow "Grades" link in the navigation block.
+        $xpath = '//div[contains(@class,\'grade-navigation\')]';
         if (!$this->getSession()->getPage()->findAll('xpath', $xpath)) {
             $this->execute("behat_general::i_click_on_in_the", array(get_string('grades'), 'link',
-                get_string('pluginname', 'block_settings'), 'block'));
+                get_string('pluginname', 'block_navigation'), 'block'));
         }
 
-        $parentnodes = preg_split('/\s*>\s*/', trim($gradepath));
-        if ($parentnodes[0] === 'Letters' && count($parentnodes) > 1) {
-            // Make Letters navigation steps compatible with tabs in Moodle 3.2.
-            if ($parentnodes[1] === 'Edit') {
-                $this->execute("behat_navigation::i_navigate_to_node_in", [$parentnodes[0], $gradeadmin]);
-                $this->execute("behat_general::click_link", "Edit grade letters");
-                return;
-            } else {
-                array_pop($parentnodes);
-            }
-        }
+        $this->select_in_gradebook_tabs($gradepath);
+    }
 
-        $lastitem = array_pop($parentnodes);
-        if ($parentnodes && $parentnodes[0] === 'View') {
-            // When viewing reports (grader, user, single view), ignore the "View" in the path,
-            // it is only needed in Moodle 3.2 gradebook navigation.
-            array_shift($parentnodes);
-        }
-        array_unshift($parentnodes, $gradeadmin);
-        $this->execute("behat_navigation::i_navigate_to_node_in", [$lastitem, join('>', $parentnodes)]);
+    /**
+     * Navigates to the course gradebook and selects a specified item from the grade navigation tabs.
+     *
+     * @todo MDL-57282 deprecate in Moodle 3.3
+     *
+     * @Given /^I go to "(?P<gradepath_string>(?:[^"]|\\")*)" in the course gradebook$/
+     * @param string $gradepath
+     */
+    public function i_go_to_in_the_course_gradebook($gradepath) {
+        $this->execute('behat_grade::i_navigate_to_in_the_course_gradebook', $gradepath);
     }
 }

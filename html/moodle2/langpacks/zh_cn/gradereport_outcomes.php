@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'gradereport_outcomes', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   gradereport_outcomes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

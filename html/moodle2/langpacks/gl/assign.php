@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'assign', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -271,14 +271,7 @@ $string['markingallocation_help'] = 'De activarse ao mesmo tempo que o fluxo de 
 $string['markingworkflow'] = 'Usar o fluxo de traballo de corrección';
 $string['markingworkflow_help'] = 'Se está activado, as correccións seguirán una serie de etapas do fluxo de traballo antes de que sexan publicadas para os alumnos. Isto permite que haxa varias rondas de corrección e permite que todas as corrección se publiquen para todos os alumnos a un mesmo tempo.';
 $string['markingworkflowstate'] = 'Estado do fluxo de traballo de corrección';
-$string['markingworkflowstate_help'] = 'Os estados posíbeis do fluxograma poden incluír (dependendo dos seus permisos):
-
-* Non cualificado - o cualificador aínda non comezou
-* Sendo cualificado - o cualificador comezou, mais aínda non rematou
-* Cualificación completada - o cualificador rematou, mais aínda podería necesitar volver a revisar/corrixir.
-* En revisión - a cualificación está agora co profesor a cargo do control de calidade
-* Lista para publicarse - o profesor a cargo está satisfeito coas cualificacións, mais está agardando antes de darlles acceso aos alumnos
-* Publicado - os alumnos poden acceder ás cualificacións/comentarios';
+$string['markingworkflowstate_help'] = 'A lista de estados do fluxo que podedes escoller están controlados polos seus permisos nesta tarefa. A lista completa de estados válidos é: <br><ul><li>Na puntuación - As entregas están a ser puntuadas actualmente.</li></ul>...';
 $string['markingworkflowstateinmarking'] = 'En corrección';
 $string['markingworkflowstateinreview'] = 'En revisión';
 $string['markingworkflowstatenotmarked'] = 'Sen corrixir';
@@ -346,7 +339,7 @@ $string['preventsubmissionsshort'] = 'Impedir a actualización de entregas';
 $string['previous'] = 'Anterior';
 $string['quickgrading'] = 'Cualificación rápida';
 $string['quickgradingchangessaved'] = 'Gardáronse os cambios das cualificacións';
-$string['quickgrading_help'] = 'A cualificación rápida permite asignar cualificacións (e resultados) directamente na táboa de entregas. A cualificación rápida non é compatíbel coa cualificación avanzada e non está recomendada cando hai múltiplos marcadores.';
+$string['quickgrading_help'] = 'A cualificación rápida permite asignar cualificacións (e resultados) directamente na táboa de entregas. A cualificación rápida non é compatíbel coa cualificación avanzada e non está recomendada cando hai múltiples marcadores.';
 $string['quickgradingresult'] = 'Cualificación rápida';
 $string['recordid'] = 'Identificador';
 $string['reopenuntilpassincompatiblewithblindmarking'] = 'Reabrir ata que a opción para pasar sexa incompatíbel coa puntuación cega, porque as cualificacións non son publicadas no libro de cualificacións ata que as identidades dos alumnos sexan reveladas.';
@@ -384,14 +377,13 @@ $string['sendsubmissionreceipts_help'] = 'Esta opción activa os recibos de entr
 $string['setmarkerallocationforlog'] = 'Configurar a signación de corrector : (id={$a->id}, fullname={$a->fullname}, marker={$a->marker}).';
 $string['setmarkingallocation'] = 'Estabelecer o corrector asignado';
 $string['setmarkingworkflowstate'] = 'Estabelecer o estado do fluxo de traballo de corrección';
-$string['setmarkingworkflowstateforlog'] = 'Configurar o estado do fluxo de traballo de cualificación : (id={$a->id}, nome={$a->fullname}, estado={$a->state}).';
+$string['setmarkingworkflowstateforlog'] = 'Configurar o estado do fluxo de traballo de cualificación : (id={$a->id}, fullname={$a->fullname}, state={$a->state}).).';
 $string['settings'] = 'Configuración da tarefa';
 $string['showrecentsubmissions'] = 'Amosar as entregas recentes';
 $string['status'] = 'Estado';
 $string['studentnotificationworkflowstateerror'] = 'O estado do fluxo de traballo de cualificación debe ser «Publicado» para notificárllelo aos alumnos.';
 $string['submission'] = 'Entrega';
-$string['submissioncopiedhtml'] = '<p>Fixo unha copia das entregas de tarefas previas \'<i>{$a->assignment}</i>\'.</p>
-<p>Pode ver o estado da súa <a href="{$a->url}">entrega de tarefa</a>.</p>';
+$string['submissioncopiedhtml'] = 'Fixo unha copia das entregas de tarefas previas \'<i>{$a->assignment}</i>\'<br /><br /> Pode ver o estado da súa <a href="{$a->url}">entrega de tarefa</a>.';
 $string['submissioncopiedsmall'] = 'Copiou a súa entrega previa de tarefa en {$a->assignment}';
 $string['submissioncopiedtext'] = 'Fixo unha copia da súa entrega de tarefa previa en «{$a->assignment}»
 
@@ -401,7 +393,7 @@ Pode ver o estado da entrega da súa tarefa:
 $string['submissiondrafts'] = 'Requirir que os alumnos preman no botón de entrega';
 $string['submissiondrafts_help'] = 'Se está activado, os alumnos terán que premer nun botón «Enviar» para declarar a súa entrega como final. Isto permite que os alumnos manteñan unha versión preliminar da entrega no seu sistema. Se se cambia este axuste «Non» a «Si» despois de que os alumnos xa teñan feito entregas, estas consideraranse como definitivas.';
 $string['submissioneditable'] = 'Os alumnos poden editar esta entrega';
-$string['submissionempty'] = 'Non foi entregado nada';
+$string['submissionempty'] = 'Nada non foi entregado';
 $string['submissionlog'] = 'Alumno: {$a->fullname}, estado: {$a->status}';
 $string['submissionmodified'] = 'Vostede ten datos de entregas existentes. Abandone esta páxina e ténteo de novo,';
 $string['submissionmodifiedgroup'] = 'A entrega foi modificada por alguén máis. Abandone esta páxina e ténteo de novo.';
@@ -409,8 +401,9 @@ $string['submissionnotcopiedinvalidstatus'] = 'A entrega non foi copiada por mor
 $string['submissionnoteditable'] = 'Os alumnos non poden editar esta entrega';
 $string['submissionnotready'] = 'Esta tarefa non está lista para a súa entrega:';
 $string['submissionplugins'] = 'Engadidos de entregas';
-$string['submissionreceipthtml'] = '<p>Vostede fixo unha entrega para a tarefa «<i>{$a->assignment}</i>».</p>
-<p>Pode ver o estado da súa <a href="{$a->url}">entrega de tarefa</a>.</p>';
+$string['submissionreceipthtml'] = 'Vostede fixo unha
+entrega para a tarefa «{$a->assignment}»<br /><br />
+Pode ver o estado da súa <a href="{$a->url}">entrega de tarefa</a>.';
 $string['submissionreceiptotherhtml'] = 'A súa entrega de tarefa para
 «<i>{$a->assignment}</i>» foi entregada.<br /><br />
 Pode ver o estado da súa <a href="{$a->url}">tarefa entregada</a>.';

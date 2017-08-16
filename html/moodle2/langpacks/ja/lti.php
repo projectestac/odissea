@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lti', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['accept_grades_admin'] = 'ツールからの評定を受け付ける';
 $string['accept_grades_admin_help'] = 'このツールのインスタンスに関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
 
 いくつかのツールプロバイダではツール内で実施された操作をベースにMoodleに対して評定報告をサポートすることにより、さらなる統合環境を提供します。';
-$string['accept_grades_help'] = 'この外部ツールのインスタンスのみに関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
+$string['accept_grades_help'] = 'この外部ツールのインスタンスにのみ関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
 
 いくつかのツールプロバイダではツール内で実施された操作をベースにMoodleに対して評定報告をサポートすることにより、さらなる統合環境を提供します。
 
@@ -50,7 +50,7 @@ $string['allowinstructorcustom'] = '教師にカスタムパラメータの追�
 $string['allowsetting'] = 'ツールにMoodle内での8Kの設定保存を許可する';
 $string['always'] = '常に';
 $string['autoaddtype'] = 'ツールを追加する';
-$string['automatic'] = '自動、起動URLに基づく';
+$string['automatic'] = '自動、ツールURLに基づく';
 $string['baseurl'] = 'ベースURL/ツール登録名';
 $string['basiclti'] = 'LTI';
 $string['basicltiactivities'] = 'LTI活動';
@@ -58,6 +58,7 @@ $string['basiclti_base_string'] = 'LTI OAuth基本ストリング';
 $string['basiclti_endpoint'] = 'LTI起動エンドポイント';
 $string['basicltifieldset'] = 'カスタムテンプレートフィールド';
 $string['basiclti_in_new_window'] = 'あなたの活動は新しいウィンドウに表示されます。';
+$string['basiclti_in_new_window_open'] = '新しいウィンドウを開く';
 $string['basicltiintro'] = '活動説明';
 $string['basicltiname'] = '活動名';
 $string['basiclti_parameters'] = 'LTI起動パラメータ';
@@ -80,6 +81,8 @@ $string['configtoolurl'] = 'デフォルトリモートツールURL';
 $string['configtypes'] = 'LTIアプリケーションを有効にする';
 $string['configured'] = '設定';
 $string['confirmtoolactivation'] = '本当にこのツールを有効にしてもよろしいですか?';
+$string['contentitem'] = 'Content-Itemメッセージ';
+$string['contentitem_help'] = 'この設定を有効にした場合、外部ツール追加時にオプション「コンテンツを選択する」が利用可能となります。';
 $string['courseactivitiesorresources'] = 'コース活動またはリソース';
 $string['courseid'] = 'コースIDナンバー';
 $string['courseinformation'] = 'コース情報';
@@ -124,7 +127,7 @@ $string['display_name_help'] = 'このオプションを有効にした場合、
 ツールプロバイダはタイトルを表示することもできます。このオプションにより活動タイトルが2回表示されることを防ぐことができます。
 
 ツール起動コンテナが新しいウィンドウの場合、説明が表示されることがありません。';
-$string['domain_mismatch'] = '起動URLのドメインがツール設定と合致しません。';
+$string['domain_mismatch'] = 'ツールURLのドメインがツール設定と合致しません。';
 $string['donot'] = '送信しない';
 $string['donotaccept'] = '承認しない';
 $string['donotallow'] = '許可しない';
@@ -136,8 +139,14 @@ $string['embed_no_blocks'] = '埋め込み (ブロックなし)';
 $string['enableemailnotification'] = '通知メールを送信する';
 $string['enableemailnotification_help'] = 'この設定を有効にした場合、ツール送信が評定された時点で学生に通知メールが送信されます。';
 $string['enterkeyandsecret'] = 'あなたのコンシューマ鍵および共有秘密鍵を入力してください。';
+$string['enterkeyandsecret_help'] = 'あなたにコンシューマ鍵および共有秘密鍵がある場合、ここに入力してください。';
 $string['errorbadurl'] = 'URLは有効なツールURLまたはカートリッジではありません。';
+$string['errorincorrectconsumerkey'] = 'コンシューマキーが正しくありません。';
+$string['errorinvaliddata'] = '無効なデータ: {$a}';
+$string['errorinvalidmediatype'] = '無効なメディアタイプ: {$a}';
+$string['errorinvalidresponseformat'] = '無効なContent-Itemレスポンスフォーマットです。';
 $string['errormisconfig'] = 'ツールが正しく設定されていません。ツール設定を修正するにはあなたのMoodle管理者にご連絡ください。';
+$string['errortooltypenotfound'] = 'LTIツールタイプが見つかりませんでした。';
 $string['existing_window'] = '既存のウィンドウ';
 $string['extensions'] = 'LTI拡張サービス';
 $string['external_tool_type'] = '事前設定ツール';
@@ -145,9 +154,9 @@ $string['external_tool_type_help'] = 'ツール設定の主目的はMoodleおよ
 
 デフォルト設定およびツールにより提供されるサービスの追加的な設定を提供することもできます。
 
-* **自動、起動URLをベースにする** - この設定は、ほとんどすべてのケースで使用されます。起動URLに基づきMoodleは最も適切なツール設定を選択します。管理者によるツール設定およびコース内でのツール設定の両者が使用されます。起動URLが指定された場合、Moodleは起動URLを認識できるか否かフィードバックを提供します。Moodleが起動URLを認識できない場合、あなたは手動でツール設定に入力する必要があります。
+* **自動、ツールURLをベースにする** - この設定は、ほとんどすべてのケースで使用されます。ツールURLに基づきMoodleは最も適切なツール設定を選択します。管理者によるツール設定およびコース内でのツール設定の両者が使用されます。ツールURLが指定された場合、MoodleはツールURLを認識できるか否かフィードバックを提供します。MoodleがツールURLを認識できない場合、あなたは手動でツール設定に入力する必要があります。
 
-* **特定の事前設定ツール** - 特定の事前設定ツールを選択することであなたは外部ツールプロバイダとの通信に関してMoodleにツール設定内容の使用を強制することができます。起動URLがツールプロバイダに属していない場合、警告が表示されます。一部のケースでは特定ツールの提供時に起動URLを入力する必要はありません (ツールプロバイダ内で特定のリソースを起動しな場合)。
+* **特定の事前設定ツール** - 特定の事前設定ツールを選択することであなたは外部ツールプロバイダとの通信に関してMoodleにツール設定内容の使用を強制することができます。ツールURLがツールプロバイダに属していない場合、警告が表示されます。一部のケースでは特定ツールの提供時にツールURLを入力する必要はありません (ツールプロバイダ内で特定のリソースを起動しな場合)。
 
 * **カスタム設定** - このインスタンス内でカスタムツール設定を割り当てる場合、拡張要素を表示した後、コンシューマ鍵および共通秘密鍵を入力してください。コンシューマ鍵および共通秘密鍵がない場合、あなたはツールプロバイダにリクエストすることができます。すべてのツールがコンシューマ鍵および共通秘密鍵を必要とすることではないため、その場合はフィールドを空白のままにすることができます。
 
@@ -199,12 +208,12 @@ $string['launchinpopup_help'] = '起動コンテナはコースからツール�
 
 * **新しいウィンドウ** - ツールは利用可能なスペースすべてを占有して新しいウィンドウに表示されます。ブラウザにより、新しいタブまたはポップアップウィンドウが使用されます。ブラウザでは新しいウィンドウのオープンを抑制することができます。';
 $string['launchoptions'] = '起動オプション';
-$string['launch_url'] = '起動/カートリッジURL';
-$string['launch_url_help'] = '起動URLでは外部ツールのウェブアドレスを指定します。また、表示するリソース等の追加的な情報を含むことができます。起動URLに何を入力するのか分からない場合、ツールプロバイダを確認してください。
+$string['launch_url'] = 'ツールURL';
+$string['launch_url_help'] = 'ツールURLでは外部ツールのウェブアドレスを指定します。また、表示するリソース等の追加的な情報を含むことができます。ツールURLに何を入力するのか分からない場合、ツールプロバイダを確認してください。
 
 あなたはカートリッジURLを入力することもできます。フォーム詳細の残りは自動的に入力されます。
 
-事前設定ツールを選択した場合、あなたは起動URLを入力する必要はありません。ツールリンクがツールプロバイダのシステムを起動するためのみ、または特定のリソースに移動しない場合がこのケースにあたります。';
+事前設定ツールを選択した場合、あなたはツールURLを入力する必要はありません。ツールリンクがツールプロバイダのシステムを起動するためのみ、または特定のリソースに移動しない場合がこのケースにあたります。';
 $string['leaveblank'] = '必要でない場合、空白にしてください。';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'コース個別ツール設定を追加する';
@@ -342,10 +351,11 @@ $string['saveallfeedback'] = '私のフィードバックすべてを保存す�
 $string['search:activity'] = 'LTI - 活動情報';
 $string['secure_icon_url'] = 'セキュアアイコンURL';
 $string['secure_icon_url_help'] = 'アイコンURLに似ていますが、ユーザがSSLを通してMoodleに安全にアクセスする場合に使用されます。このフィールドの主目的はユーザによるページアクセス時の警告表示を防ぐことにあります。しかし、安全ではないイメージの表示をリクエストすることになります。';
-$string['secure_launch_url'] = 'セキュア起動URL';
-$string['secure_launch_url_help'] = '起動URLに似ていますが、起動URLの代わりに高度なセキュリティが要求されます。MoodleサイトがSSL経由でアクセスされた場合、またはツール設定で常にSSLから起動するよう指定されている場合、起動URLの代わりにセキュア起動URLが使用されます。
+$string['secure_launch_url'] = 'セキュアツールURL';
+$string['secure_launch_url_help'] = 'ツールURLに似ていますが、ツールURLの代わりに高度なセキュリティが要求されます。MoodleサイトがSSL経由でアクセスされた場合、またはツール設定で常にSSLから起動するよう指定されている場合、ツールURLの代わりにセキュアツールURLが使用されます。
 
-SSL経由での起動を強制するため、起動URLにhttpsアドレスを設定することもできます。また、このフィールドは空白のままにすることもできます。';
+SSL経由での起動を強制するため、ツールURLにhttpsアドレスを設定することもできます。また、このフィールドは空白のままにすることもできます。';
+$string['selectcontent'] = 'コンテンツを選択する';
 $string['send'] = '送信';
 $string['services'] = 'サービス';
 $string['services_help'] = 'あなたがツールプロバイダに提供したいサービスを選択してください。2つ以上のサービスを選択することができます。';
@@ -374,10 +384,10 @@ $string['share_roster_help'] = 'コース内の登録済みユーザ一覧にツ
 この設定はツール設定内でオーバーライドできることに留意してください。';
 $string['show_in_course_activity_chooser'] = '活動チューザまたは事前設定ツールに表示する';
 $string['show_in_course_lti1'] = 'ツール設定使用';
-$string['show_in_course_lti1_help'] = 'コースへの追加時の選択のため、このツールを教師に活動チューザ内で表示することができます。コースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内にも表示することができます。さらなるツール設定のオプションはコースへの外部ツール追加時に正確な起動URLが入力された場合のみ使用されます。';
+$string['show_in_course_lti1_help'] = 'コースへの追加時の選択のため、このツールを教師に活動チューザ内で表示することができます。コースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内にも表示することができます。さらなるツール設定のオプションはコースへの外部ツール追加時に正確なツールURLが入力された場合のみ使用されます。';
 $string['show_in_course_lti2'] = 'ツール設定使用';
 $string['show_in_course_lti2_help'] = 'コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内に表示することができます。';
-$string['show_in_course_no'] = '表示しない、合致する起動URLが入力された場合のみ使用する';
+$string['show_in_course_no'] = '表示しない、合致するツールURLが入力された場合のみ使用する';
 $string['show_in_course_preconfigured'] = '外部ツール追加時に事前設定ツールとして表示する';
 $string['size'] = 'サイズパラメータ';
 $string['submission'] = '送信';
@@ -390,6 +400,7 @@ $string['subplugintype_ltiservice_plural'] = 'LTIサービス';
 $string['subplugintype_ltisource'] = 'LTIソース';
 $string['subplugintype_ltisource_plural'] = 'LTIソース';
 $string['successfullycreatedtooltype'] = '正常に新しいツールが作成されました!';
+$string['successfullyfetchedtoolconfigurationfromcontent'] = '選択されたコンテンツから正常にツール設定を取得しました。';
 $string['toggle_debug_data'] = 'デバッグデータに切り替える';
 $string['tool_config_not_found'] = 'このURLではツール設定が見つかりませんでした。';
 $string['tooldescription'] = 'ツール説明';
@@ -416,12 +427,12 @@ $string['tooltypedeleted'] = '事前設定ツールが削除されました。';
 $string['tooltypenotdeleted'] = '事前設定ツールを削除できませんでした。';
 $string['tooltypes'] = 'ツール';
 $string['tooltypeupdated'] = '事前設定ツールが更新されました。';
-$string['toolurl'] = 'ツールベース/カートリッジURL';
-$string['toolurl_help'] = 'ツールベースURLは正しいツール設定をツール起動URLと合致させるために使用されます。URLの接頭辞「http(s)」は任意です。
+$string['toolurl'] = 'ツールURL';
+$string['toolurl_help'] = 'ツールベースURLは正しいツール設定をツールツールURLと合致させるために使用されます。URLの接頭辞「http(s)」は任意です。
 
-加えて、外部ツールインスタンスの起動URLが指定されていない場合、ベースURLが使用されます。
+加えて、外部ツールインスタンスのツールURLが指定されていない場合、ベースURLが使用されます。
 
-例えば、ベースURL *tool.com* は以下と合致します:
+例えばベースURL *tool.com* は以下と合致します:
 
 * tool.com
 * tool.com/quizzes

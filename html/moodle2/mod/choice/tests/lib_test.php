@@ -102,7 +102,14 @@ class mod_choice_lib_testcase extends externallib_advanced_testcase {
         $canview = choice_can_view_results($choice);
         $this->assertTrue($canview);
 
+        // Add a time restriction (choice not open yet).
+        $choice->timeopen = time() + YEARSECS;
+        $DB->update_record('choice', $choice);
+        $canview = choice_can_view_results($choice);
+        $this->assertFalse($canview);
+
         // Show results after closing.
+        $choice->timeopen = 0;
         $choice->showresults = CHOICE_SHOWRESULTS_AFTER_CLOSE;
         $DB->update_record('choice', $choice);
         $canview = choice_can_view_results($choice);
@@ -131,6 +138,9 @@ class mod_choice_lib_testcase extends externallib_advanced_testcase {
 
     }
 
+    /**
+     * @expectedException moodle_exception
+     */
     public function test_choice_user_submit_response_validation() {
         global $USER;
 
@@ -149,7 +159,6 @@ class mod_choice_lib_testcase extends externallib_advanced_testcase {
         $optionids2 = array_keys($choicewithoptions2->option);
 
         // Make sure we cannot submit options from a different choice instance.
-        $this->setExpectedException('moodle_exception');
         choice_user_submit_response($optionids2[0], $choice1, $USER->id, $course, $cm);
     }
 

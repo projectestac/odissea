@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,13 +55,13 @@ $string['auth_passwordwillexpire'] = 'La password scadrà tra {$a} giorni. Vuoi 
 $string['auth_remove_delete'] = 'Cancella interna';
 $string['auth_remove_keep'] = 'Mantieni interna';
 $string['auth_remove_suspend'] = 'Sospendi interna';
-$string['auth_remove_user'] = 'Specifica cosa fare con gli account di utenti interni durante la sincronizzazione in massa quando gli utenti sono stati rimossi dalla fonte esterna. Solo gli utenti sospesi sono automaticamente riattivati se riappaiono nella fonte esterna.';
+$string['auth_remove_user'] = 'Imposta cosa fare con gli account di utenti interni durante la sincronizzazione in massa quando gli utenti non sono più presenti nella fonte esterna. Solo gli utenti sospesi saranno riattivati automaticamente  qualora fosser novuoamente presenti nella fonte esterna.';
 $string['auth_remove_user_key'] = 'Utente esterno rimosso';
 $string['auth_sync_script'] = 'Sincronizzazione account utenti';
 $string['auth_sync_suspended'] = 'Consente di sincronizzare lo stato di sospensione degli utenti locali tramite l\'attributo di sospensione.';
-$string['auth_sync_suspended_key'] = 'Sincronizza sospensione degli account locali';
+$string['auth_sync_suspended_key'] = 'Sincronizza localmente la sospensione dell\'utente';
 $string['auth_updatelocal'] = 'Aggiorna dati interni';
-$string['auth_updatelocal_expl'] = '<p><b>Aggiorna dati interni:</b> Se abilitato, il campo sarà  aggiornato (dall\'autenticazione esterna) tutte le volte che l\'utente accede o c\'è una sincronizzazione utente. I campi impostati per l\'aggiornamento locale devono essere bloccati.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Aggiorna dati interni:</b> Se abilitato, il campo sarà aggiornato (dall\'autenticazione esterna) tutte le volte che l\'utente si autenticherà o verrà effettuata una sincronizzazione degli utenti. I campi locali impostati per l\'aggiornamento dovrebbero essere bloccati.</p>';
 $string['auth_updateremote'] = 'Aggiorna dati esterni';
 $string['auth_updateremote_expl'] = '<p><b>Aggiorna dati esterni:</b> Se abilitato, l\'autenticazione esterna sarà  aggiornata quando i dati dell\'utente sono aggiornati. I campi devono essere sboccati per consentirne la modifica.</p>';
 $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> Aggiornando i dati esterni LDAP è richiesta l\'impostazione di binddn e di bindpw a un utente di bind con privilegi di modifica per tutti i dati degli utenti. Questo attualmente non preserva gli attributi multivalore, e rimuoverà  i valori aggiuntivi durante l\'aggiornamento.</p>';
@@ -83,7 +83,9 @@ $string['emailupdatemessage'] = 'Gentile {$a->fullname},
 
 hai richiesto la modifica dell\'indirizzo email del tuo account sul sito {$a->site}. Per confermare la richiesta, apri il link seguente con il browser:
 
-{$a->url}';
+{$a->url}
+
+Per chiarimenti, contatta il supporto: {$a->supportemail}';
 $string['emailupdatesuccess'] = 'L\'indirizzo email dell\'utente <em>{$a->fullname}</em> è stato modificato in <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Conferma del cambio di email su {$a->site}';
 $string['enterthenumbersyouhear'] = 'Inserisci i numeri che senti';

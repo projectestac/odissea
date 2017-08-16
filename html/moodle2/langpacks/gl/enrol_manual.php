@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_manual', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alterstatus'] = 'Cambiar o estado';
-$string['altertimeend'] = 'Cambiar o tempo de remate';
-$string['altertimestart'] = 'Cambiar o tempo de principio';
+$string['alterstatus'] = 'Mudar o estado';
+$string['altertimeend'] = 'Mudar o tempo de remate';
+$string['altertimestart'] = 'Mudar o tempo de principio';
 $string['assignrole'] = 'Asignar rol';
 $string['browsecohorts'] = 'Examinar círculos';
 $string['browseusers'] = 'Examinar usuarios';

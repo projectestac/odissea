@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'media', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,32 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['flashanimation'] = 'Flash-Animation';
-$string['flashanimation_desc'] = 'Dateien mit der Endung *.swf. Aus Sicherheitsgründen wird dieser Filter ausschließlich in vertrauensvollen Texten benutzt.';
-$string['flashvideo'] = 'Flash-Video';
-$string['flashvideo_desc'] = 'Dateien mit den Endungen *.flv und *.f4v. Dieser Filter spielt Videoclips mit dem FlowPlayer ab und benötigt Flash und JavaScript.';
-$string['html5audio'] = 'HTML5-Audio';
-$string['html5audio_desc'] = 'Audiodateien mit den Endungen *.ogg, *.aac, *.m4a und *.mp3. Der Filter arbeitet nur mit aktuellen Browsern zusammen, wobei es kein von allen Browsern unterstütztes Format gibt.';
-$string['html5video'] = 'HTML5-Video';
-$string['html5video_desc'] = 'Videodateien mit den Endungen *.webm, *.m4v, *.ogv , *.mp4 und weiteren. Der Filter arbeitet nur mit aktuellen Browsern zusammen, wobei es kein von allen Browsern unterstütztes Format gibt.';
+$string['audioextensions'] = 'Audio: {$a}';
+$string['defaultheight'] = 'Standardhöhe';
+$string['defaultheightdesc'] = 'Höhe des MediaPlayers, falls eine Höhe nicht angegeben ist und die tatsächliche Höhe in der abgespielten Mediendatei vom Player nicht erkannt wird.';
+$string['defaultwidth'] = 'Standardbreite';
+$string['defaultwidthdesc'] = 'Breite des MediaPlayers, falls eine Breite nicht angegeben ist und die tatsächliche Breite in der abgespielten Mediendatei vom Player nicht erkannt wird.';
+$string['extensions'] = 'Dateiendungen: {$a}';
 $string['legacyheading'] = 'Ältere MediaPlayer';
 $string['legacyheading_desc'] = 'Diese MediaPlayer erfordern die Installation spezieller Browser-Plugins.';
-$string['legacyquicktime'] = 'QuickTime Player';
-$string['legacyquicktime_desc'] = 'Dateien mit den Endungen *.mov, *.mp4, *.m4a und *.mpg. Dieser Filter benötigt QuickTime oder QuickTime Codecs.';
-$string['legacyreal'] = 'RealPlayer';
-$string['legacyreal_desc'] = 'Dateien mit der Endung *.rm, *.ra, *.ram, *.rp, *.rv. Der Filter benötigt den RealPlayer.';
-$string['legacywmp'] = 'Windows Media Player';
-$string['legacywmp_desc'] = 'Dateien mit den Endungen *.avi, *.asf und *.wmv. Diese Formate sind kompatibel mit dem Windows Internet Explorer, bereiten aber mit anderen Browsern eventuell Probleme.';
+$string['managemediaplayers'] = 'MediaPlayer verwalten';
 $string['mediaformats'] = 'Verfügbare MediaPlayer';
-$string['mediaformats_desc'] = 'Die Aktivierung dieser Einstellungen ermöglicht das Einbetten von Mediadateien über den Mediafilter (wenn aktiviert) oder mit der Option \'Einbetten\' beim Arbeitsmaterial \'Datei\' bzw. \'Link/URL\'.
+$string['mediaformats_desc'] = 'Wenn die MediaPlayer aktiviert sind, können Mediendateien einfach eingebettet werden, u.z. durch Nutzung des Filters \'Multimedia-Plugins\' (falls aktiviert), außerdem durch Hochladen als \'Datei\' bzw. Verlinken einer externen Ressource als \'Link/URL\'.
 
-Wenn ein Mediaplayer nicht aktiviert sind, werden dessen Mediadateien nicht eingebettet. Stattdessen müssen sie manuell heruntergeladen oder über eine extern verlinkte Seite abgespielt werden.
+Wenn die MediaPlayer nicht aktiviert sind, werden die Mediendateien nicht eingebettet. Nutzer/innen können die Dateien herunterladen oder den URLs zu den externen Ressourcen folgen.
 
-Wenn zwei Mediaplayer das gleiche Format unterstützen, können beide aktiviert werden, um das Abspielen auf unterschiedlichen digitalen Endgeräten zu ermöglichen oder verschiedene Dateiformate alternativ anzubieten.';
+Wenn zwei MediaPlayer das gleiche Format unterstützen, können beide aktiviert werden, um das Abspielen auf unterschiedlichen digitalen Endgeräten zu ermöglichen oder verschiedene Dateiformate alternativ anzubieten.';
 $string['mediasettings'] = 'Mediaeinbettung';
-$string['mp3audio'] = 'MP3-Audio';
-$string['mp3audio_desc'] = 'Dateien mit der Endung *.mp3. Der Filter spielt Audiodateien mit dem Flowplayer ab und benötigt Flash.';
-$string['sitevimeo'] = 'Vimeo';
-$string['sitevimeo_desc'] = 'Vimeo ist eine Video-Sharing-Website.';
-$string['siteyoutube'] = 'YouTube';
-$string['siteyoutube_desc'] = 'YouTube ist eine Video-Sharing-Website und stellt Videos und Playlists bereit.';
+$string['supports'] = 'Unterstützung';
+$string['videoextensions'] = 'Video: {$a}';

@@ -1683,12 +1683,15 @@ class core_plugin_manager {
         // Moodle 2.3 supports upgrades from 2.2.x only.
         $plugins = array(
             'qformat' => array('blackboard', 'learnwise'),
+            'auth' => array('radius'),
             'enrol' => array('authorize'),
+            'report' => array('search'),
+            'repository' => array('alfresco'),
             'tinymce' => array('dragmath'),
             'tool' => array('bloglevelupgrade', 'qeupgradehelper', 'timezoneimport'),
-            'theme' => array('mymobile', 'afterburner', 'anomaly', 'arialist', 'binarius', 'boxxie', 'brick', 'formal_white',
-                'formfactor', 'fusion', 'leatherbound', 'magazine', 'nimble', 'nonzero', 'overlay', 'serenity', 'sky_high',
-                'splash', 'standard', 'standardold'),
+            'theme' => array('afterburner', 'anomaly', 'arialist', 'base', 'binarius', 'boxxie', 'brick', 'canvas',
+                'formal_white', 'formfactor', 'fusion', 'leatherbound', 'magazine', 'mymobile', 'nimble', 'nonzero',
+                'overlay', 'serenity', 'sky_high', 'splash', 'standard', 'standardold'),
             'webservice' => array('amf'),
         );
 
@@ -1735,8 +1738,7 @@ class core_plugin_manager {
 
             'auth' => array(
                 'cas', 'db', 'email', 'fc', 'imap', 'ldap', 'lti', 'manual', 'mnet',
-                'nntp', 'nologin', 'none', 'pam', 'pop3', 'radius',
-                'shibboleth', 'webservice'
+                'nntp', 'nologin', 'none', 'pam', 'pop3', 'shibboleth', 'webservice'
             ),
 
             'availability' => array(
@@ -1766,7 +1768,7 @@ class core_plugin_manager {
             ),
 
             'cachestore' => array(
-                'file', 'memcache', 'memcached', 'mongodb', 'session', 'static'
+                'file', 'memcache', 'memcached', 'mongodb', 'session', 'static', 'apcu', 'redis'
             ),
 
             'calendartype' => array(
@@ -1837,6 +1839,10 @@ class core_plugin_manager {
                 'memberships', 'profile', 'toolproxy', 'toolsettings'
             ),
 
+            'media' => array(
+                'html5audio', 'html5video', 'swf', 'videojs', 'vimeo', 'youtube'
+            ),
+
             'message' => array(
                 'airnotifier', 'email', 'jabber', 'popup'
             ),
@@ -1888,18 +1894,18 @@ class core_plugin_manager {
             ),
 
             'quizaccess' => array(
-                'delaybetweenattempts', 'ipaddress', 'numattempts', 'openclosedate',
+                'delaybetweenattempts', 'ipaddress', 'numattempts', 'offlineattempts', 'openclosedate',
                 'password', 'safebrowser', 'securewindow', 'timelimit'
             ),
 
             'report' => array(
                 'backups', 'competency', 'completion', 'configlog', 'courseoverview', 'eventlist',
-                'log', 'loglive', 'outline', 'participation', 'progress', 'questioninstances', 'search',
+                'log', 'loglive', 'outline', 'participation', 'progress', 'questioninstances',
                 'security', 'stats', 'performance', 'usersessions'
             ),
 
             'repository' => array(
-                'alfresco', 'areafiles', 'boxnet', 'coursefiles', 'dropbox', 'equella', 'filesystem',
+                'areafiles', 'boxnet', 'coursefiles', 'dropbox', 'equella', 'filesystem',
                 'flickr', 'flickr_public', 'googledocs', 'local', 'merlot',
                 'picasa', 'recent', 'skydrive', 's3', 'upload', 'url', 'user', 'webdav',
                 'wikimedia', 'youtube'
@@ -1922,15 +1928,15 @@ class core_plugin_manager {
             ),
 
             'theme' => array(
-                'base', 'bootstrapbase', 'canvas', 'clean', 'more'
+                'boost', 'bootstrapbase', 'clean', 'more'
             ),
 
             'tool' => array(
                 'assignmentupgrade', 'availabilityconditions', 'behat', 'capability', 'cohortroles', 'customlang',
                 'dbtransfer', 'filetypes', 'generator', 'health', 'innodb', 'installaddon',
-                'langimport', 'log', 'lp', 'lpmigrate', 'messageinbound', 'mobile', 'multilangupgrade', 'monitor',
+                'langimport', 'log', 'lp', 'lpimportcsv', 'lpmigrate', 'messageinbound', 'mobile', 'multilangupgrade', 'monitor',
                 'phpunit', 'profiling', 'recyclebin', 'replace', 'spamcleaner', 'task', 'templatelibrary',
-                'unittest', 'uploadcourse', 'uploaduser', 'unsuproles', 'xmldb'
+                'unittest', 'uploadcourse', 'uploaduser', 'unsuproles', 'usertours', 'xmldb'
             ),
 
             'webservice' => array(

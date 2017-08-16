@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Kalifikazio altuenetatik zenbat erakutsi behar di
 $string['config_show_worst'] = 'Kalifikazio baxuenetatik zenbat erakutsi behar dira (0 desgaitzeko)?';
 $string['configuredtoshownothing'] = 'Bloke honen ezarpenek ez dute une honetan emaitzak erakustea baimentzen.';
 $string['config_use_groups'] = 'Erakutsi taldeak ikasleen ordez (soilik jarduerak taldeak baimentzen baditu)?';
+$string['defaultdecimalplaces'] = 'Hamartar kopurua';
+$string['defaultdecimalplaces_desc'] = 'Berez erakutsiko den hamartar kopurua';
+$string['defaultgradedisplay'] = 'Erakutsi kalifikazioak honela';
+$string['defaultgradedisplay_desc'] = 'Nola erakutsi behar dira kalifikazioak berez?';
+$string['defaulthighestgrades'] = 'Berez erakutsitako kalifikazio altuenen kopurua';
+$string['defaulthighestgrades_desc'] = 'Kalifikazio altuenetatik zenbat erakutsi behar dira?';
+$string['defaultlowestgrades'] = 'Berez erakutsitako kalifikazio baxuenen kopurua';
+$string['defaultlowestgrades_desc'] = 'Kalifikazio baxuenetatik zenbat erakutsi behar dira?';
+$string['defaultnameoptions'] = 'Emaitzen pribatutasuna';
+$string['defaultnameoptions_desc'] = 'Nola identifikatu beharko lirateke ikasleak berez?';
+$string['defaultshowgroups'] = 'Berez taldeak erakutsi';
+$string['defaultshowgroups_desc'] = 'Erakutsi taldeak ikasleen ordez berez (soilik jarduerak taldeak onartzen baditu)';
 $string['error_emptyactivityid'] = 'Mesedez konfiguratu bloke hau eta aukeratu zein jarduerako emaitzak erakutsi behar dituen.';
 $string['error_emptyactivityrecord'] = 'Errorea: aukeratutako jarduera ez dago datu-basean.';
 $string['error_nogroupsexist'] = 'Errorea: blokea kalifikazioak talde-moduan erakusteko konfiguratu da, baina ez dago talderik sortuta.';

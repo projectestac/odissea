@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = 'Imposta il default per l\'inclusione delle
 $string['configgeneralanonymize'] = 'Imposta il default per rendere anonime le informazioni degli utenti nei backup.';
 $string['configgeneralbadges'] = 'Imposta il default per l\'inclusione dei badge nei backup.';
 $string['configgeneralblocks'] = 'Imposta il default per l\'inclusione dei blocchi nei backup.';
+$string['configgeneralcalendarevents'] = 'Imposta il default per l\'inclusione degli eventi di calendario nei backup.';
 $string['configgeneralcomments'] = 'Imposta il default per l\'inclusione dei commenti nei backup.';
+$string['configgeneralcompetencies'] = 'Imposta il default per l\'inclusione delle competenze nei backup.';
 $string['configgeneralfilters'] = 'Imposta il default per l\'inclusione dei filtri nei backup.';
 $string['configgeneralgroups'] = 'Il default per l\'inclusione nei backup di gruppi e raggruppamenti.';
 $string['configgeneralhistories'] = 'Imposta il default per l\'inclusione della storia degli utenti nei backup.';
@@ -140,7 +142,9 @@ $string['generalanonymize'] = 'Rendi anonime le informazioni';
 $string['generalbackdefaults'] = 'Impostazioni di default';
 $string['generalbadges'] = 'Includi badge';
 $string['generalblocks'] = 'Includi blocchi';
+$string['generalcalendarevents'] = 'Includi eventi di calendario';
 $string['generalcomments'] = 'Includi commenti';
+$string['generalcompetencies'] = 'Includi competenze';
 $string['generalfilters'] = 'Includi filtri';
 $string['generalgradehistories'] = 'Includi storie';
 $string['generalgroups'] = 'Includi gruppi e raggruppamenti';
@@ -169,6 +173,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'Se il sito ha già un acco
 $string['importgeneralmaxresults'] = 'Numero massimo di corsi elencati durante l\'importazione';
 $string['importgeneralmaxresults_desc'] = 'Imposta il numero massimo di corsi elencati durante il primo passo del processo di importazione';
 $string['importgeneralsettings'] = 'Default generali per l\'importazione';
+$string['importsettings'] = 'Impostazioni generali d\'importazione';
 $string['importsuccess'] = 'Importazione completata. Fai click sul pulsante Continua per ritornare al corso.';
 $string['includeactivities'] = 'Includi:';
 $string['includeditems'] = 'Elementi inclusi:';

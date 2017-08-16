@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,17 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['areyousure'] = 'هل أنت مُتأكد؟';
 $string['areyousuremessage'] = 'هل أنت متأكد أنك تريد ترقية المهمة/التكليف"{$a->name}"?';
-$string['assignmentid'] = 'معرف المهمة /التكليف';
+$string['assignmentid'] = 'معرف المهمة';
 $string['assignmentnotfound'] = 'تعذر العثورعلى التكليف/ المهمة (المُعرِّف={$a})';
-$string['assignmentsperpage'] = 'عدد المهمات/التكاليف لكل صفحة';
-$string['assignmenttype'] = 'نوع المهمة / التكليف';
+$string['assignmentsperpage'] = 'عدد المهمات لكل صفحة';
+$string['assignmenttype'] = 'نوع المهمة';
 $string['backtoindex'] = 'العودة للفهرس';
 $string['batchoperations'] = 'دفعة العمليات';
 $string['batchupgrade'] = 'ترقية تكاليف متعددة';
 $string['confirmbatchupgrade'] = 'تأكيد دفعة ترقية التكاليف/المهمات';
 $string['conversioncomplete'] = 'تم تحويل التكاليف';
 $string['conversionfailed'] = 'لم يكن  تحويل التكليف/المهمة  ناجحاً. سجل الترقية  هو :<br />{$a}';
-$string['listnotupgraded'] = 'قائمة بالمهمات/ التكاليف التي لم يتم ترقيتها';
+$string['listnotupgraded'] = 'قائمة بالمهمات التي لم يتم ترقيتها';
 $string['listnotupgraded_desc'] = 'يمكنك ترقية التكاليف/المهام الفردية من هنا';
 $string['noassignmentsselected'] = 'لا تكاليف /مهام مُختارة';
 $string['noassignmentstoupgrade'] = 'لا توجد المهام/ تكاليف التي تتطلب ترقية';

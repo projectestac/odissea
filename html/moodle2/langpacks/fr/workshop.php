@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,7 +65,7 @@ $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Évaluation</
 $string['assessmentreference'] = 'Évaluation de référence';
 $string['assessmentreferenceconflict'] = 'Il n\'est pas possible d\'évaluer un travail exemple pour lequel vous avez fourni une évaluation de référence.';
 $string['assessmentreferenceneeded'] = 'Vous devez évaluer ce travail exemplaire pour fournir une référence d\'évaluation. Cliquer « Continuer » pour évaluer le travail exemplaire.';
-$string['assessmentsettings'] = 'Réglages d\'évaluation';
+$string['assessmentsettings'] = 'Modalités d\'évaluation';
 $string['assessmentstart'] = 'Début des évaluations';
 $string['assessmentstartdatetime'] = 'Ouvert pour évaluation dès le {$a->daydatetime} ({$a->distanceday})';
 $string['assessmentstartevent'] = '{$a} (ouverture de l\'évaluation)';
@@ -74,6 +74,7 @@ $string['assignedassessments'] = 'Travaux à évaluer';
 $string['assignedassessmentsnone'] = 'Vous n\'avez pas de travail à évaluer';
 $string['backtoeditform'] = 'Revenir au formulaire';
 $string['byfullname'] = 'par <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'par {$a}';
 $string['calculategradinggrades'] = 'Calculer les notes des évaluations';
 $string['calculategradinggradesdetails'] = 'attendues : {$a->expected}<br />calculées : {$a->calculated}';
 $string['calculatesubmissiongrades'] = 'Calculer les notes des travaux remis';
@@ -145,6 +146,7 @@ $string['examplesbeforesubmission'] = 'Les travaux exemplaires doivent être év
 $string['examplesmode'] = 'Mode d\'évaluation des travaux exemplaires';
 $string['examplesubmissions'] = 'Travaux exemplaires';
 $string['examplesvoluntary'] = 'L\'évaluation des travaux exemplaires est facultative';
+$string['exportsubmission'] = 'Exporter cette page';
 $string['feedbackauthor'] = 'Feedback pour l\'auteur';
 $string['feedbackauthorattachment'] = 'Annexe';
 $string['feedbackby'] = 'Feedback de {$a}';
@@ -222,7 +224,7 @@ $string['participantrevierof'] = 'Le participant est évaluateur de';
 $string['participantreviewedby'] = 'Le participant est évalué par';
 $string['phaseassessment'] = 'Phase d\'évaluation';
 $string['phaseclosed'] = 'Fermé';
-$string['phaseevaluation'] = 'Phase de notation de l\'évaluation';
+$string['phaseevaluation'] = 'Phase de notation des évaluations';
 $string['phasesetup'] = 'Phase de mise en place';
 $string['phasesoverlap'] = 'La phase de remise des travaux et celle de l\'évaluation ne peuvent pas se chevaucher';
 $string['phasesubmission'] = 'Phase de remise';
@@ -290,7 +292,7 @@ $string['submittednotsubmitted'] = 'Remis ({$a->submitted}) / non remis ({$a->no
 $string['subplugintype_workshopallocation'] = 'Méthode d\'attribution des travaux';
 $string['subplugintype_workshopallocation_plural'] = 'Méthodes d\'attribution des travaux';
 $string['subplugintype_workshopeval'] = 'Méthode de notation des évaluations';
-$string['subplugintype_workshopeval_plural'] = 'Méthodes d\'évaluation de la notation';
+$string['subplugintype_workshopeval_plural'] = 'Méthodes de notation des évaluations';
 $string['subplugintype_workshopform'] = 'Stratégie d\'évaluation';
 $string['subplugintype_workshopform_plural'] = 'Stratégies d\'évaluation';
 $string['switchingphase'] = 'Changement de phase';
@@ -301,14 +303,19 @@ $string['switchphase30auto'] = 'L\'atelier passera automatiquement dans la phase
 $string['switchphase30info'] = 'Vous allez passer cet atelier à la <strong>phase d\'évaluation</strong>. Durant cette phase, les évaluateurs peuvent évaluer les travaux qui leur ont été attribués (dans l\'intervalle de temps défini pour l\'évaluation des travaux, le cas échéant).';
 $string['switchphase40info'] = 'Vous allez passer cet atelier à la <strong>phase de notation</strong>. Durant cette phase, les participants ne peuvent pas modifier leur travail remis, ni leurs évaluations. Les enseignants peuvent utiliser les outils de notation pour calculer les notes finales et fournir un feedback aux évaluateurs.';
 $string['switchphase50info'] = 'Vous allez fermer cet atelier. Ceci permettra aux notes calculées d\'apparaître dans le carnet de notes. Les étudiants pourront voir leur travail et les évaluations qu\'ils ont reçues.';
+$string['switchphasenext'] = 'Passer à la phase suivante';
 $string['taskassesspeers'] = 'Évaluer vos pairs';
 $string['taskassesspeersdetails'] = 'total : {$a->total}<br />restant : {$a->todo}';
 $string['taskassessself'] = 'Vous évaluer vous-même';
 $string['taskconclusion'] = 'Fournir une conclusion à l\'activité';
+$string['taskdone'] = 'Tâche effectuée';
+$string['taskfail'] = 'Tâche échouée';
+$string['taskinfo'] = 'Info de tâche';
 $string['taskinstructauthors'] = 'Fournir des instructions pour la remise des travaux';
 $string['taskinstructreviewers'] = 'Fournir des instructions pour l\'évaluation';
 $string['taskintro'] = 'Saisir l\'introduction de l\'atelier';
 $string['tasksubmit'] = 'Remettre votre travail';
+$string['tasktodo'] = 'Tâche à effectuer';
 $string['toolbox'] = 'Boîte à outil atelier';
 $string['undersetup'] = 'L\'atelier est en cours de mise en place. Veuillez attendre qu\'il passe à la phase suivante.';
 $string['useexamples'] = 'Utiliser des travaux exemplaires';
@@ -320,6 +327,7 @@ $string['usepeerassessment_help'] = 'Si ce réglage est activé, des travaux de 
 $string['userdatecreated'] = 'remis le <span>{$a}</span>';
 $string['userdatemodified'] = 'modifié le <span>{$a}</span>';
 $string['userplan'] = 'Planning de l\'atelier';
+$string['userplanaccessibilityskip'] = 'Aller directement aux tâches actuelles';
 $string['userplanaccessibilitytitle'] = 'Ligne du temps de l\'atelier avec {$a} phases';
 $string['userplancurrentphase'] = 'Phase actuelle';
 $string['userplan_help'] = 'Le planning de l\'atelier affiche les différentes phases de l\'activité et la liste des tâches de chaque phase. La phase en cours est mise en évidence et les tâches accomplies sont assorties d\'une coche.';
@@ -332,6 +340,7 @@ $string['workshop:addinstance'] = 'Ajouter un atelier';
 $string['workshop:allocate'] = 'Attribuer les travaux remis pour évaluation';
 $string['workshop:deletesubmissions'] = 'Supprimer des travaux remis';
 $string['workshop:editdimensions'] = 'Modifier les formulaires d\'évaluation';
+$string['workshop:exportsubmissions'] = 'Exporter les travaux remis';
 $string['workshop:ignoredeadlines'] = 'Ignorer les restrictions de temps';
 $string['workshop:manageexamples'] = 'Gérer les travaux exemplaires';
 $string['workshopname'] = 'Nom de l\'atelier';

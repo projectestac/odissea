@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['book:addinstance'] = 'Aggiungere libri';
 $string['book:edit'] = 'Modificare capitoli';
 $string['book:read'] = 'Visualizzare libri';
 $string['book:viewhiddenchapters'] = 'Visualizzare capitoli nascosti';
+$string['chapterandsubchaptersdeleted'] = 'Il capitolo "{$a->title}" e suoi {$a->subchapters} sottocapitoli sono stati eliminati';
+$string['chapterdeleted'] = 'Il capitolo "{$a->title}" è stato eliminato';
 $string['chapters'] = 'Capitoli';
 $string['chaptertitle'] = 'Titolo del capitolo';
 $string['confchapterdelete'] = 'Sei sicuro di eliminare questo capitolo?';
@@ -63,9 +65,11 @@ $string['movechapterup'] = 'Sposta in alto il capitolo "{$a}"';
 $string['navexit'] = 'Esci dal libro';
 $string['navimages'] = 'Immagini';
 $string['navnext'] = 'Pagina successiva';
+$string['navnexttitle'] = 'Successivo: {$a}';
 $string['navoptions'] = 'Opzioni disponibili per i link di navigaazione';
 $string['navoptions_desc'] = 'Opzioni per la visualizzazione della navigazione nelle pagine del libro';
 $string['navprev'] = 'Pagina precedente';
+$string['navprevtitle'] = 'Precedente: {$a}';
 $string['navstyle'] = 'Stile della navigazione';
 $string['navstyle_help'] = '* Immagini - Per la navigazione saranno usare icone
 * Testo - Per la navigazione saranno usati i titolo dei capitoli';

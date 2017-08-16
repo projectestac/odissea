@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'message_jabber', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   message_jabber
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,4 +37,4 @@ $string['jabberport'] = 'Porta do Jabber';
 $string['jabberserver'] = 'Servidor Jabber';
 $string['jabberusername'] = 'Nome de utilizador Jabber';
 $string['notconfigured'] = 'O servidor Jabber não foi configurado,logo as mensagens Jabber não podem ser enviadas';
-$string['pluginname'] = 'Mensagens Jabber';
+$string['pluginname'] = 'Jabber';

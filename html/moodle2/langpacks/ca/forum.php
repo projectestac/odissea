@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'forum', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -96,8 +96,8 @@ $string['configcleanreadtime'] = 'L\'hora del dia per a netejar missatges vells 
 $string['configdigestmailtime'] = 'Les persones que triïn rebre el correu electrònic en format resum, el rebran una vegada al dia. Aquest paràmetre controla a quina hora s\'envia el resum diari (l\'enviarà el següent cron que s\'executi després d\'aquesta hora).';
 $string['configdisplaymode'] = 'El mode de visualització per defecte dels debats si no se n\'especifica un.';
 $string['configenablerssfeeds'] = 'Aquest commutador habilitarà la possibilitat de tenir agregats RSS en tots els fòrums. Tot i això, haureu d\'activar els agregats en els paràmetres de cada fòrum.';
-$string['configenabletimedposts'] = 'Establiu-ho a «Si» per tal de permetre definir períodes de visualització en crear un nou debat en un fòrum.';
-$string['configlongpost'] = 'Qualsevol missatge per damunt d\'aquesta mida (exclòs l\'HTML) es considera massa llarg. Els missatges que es mostren a la pàgina principal del lloc, a les pàgines d\'un curs amb format social o als perfils d\'usuari s\'escurcen fins a un tall natural en algun punt entre els valors forum_shortpost i forum_longpost.';
+$string['configenabletimedposts'] = 'Aquesta opció permet definir un període de visualització quan es crea un nou debat en un fòrum (característica experimental)';
+$string['configlongpost'] = 'Qualsevol missatge per damunt d\'aquesta mida (exclòs l\'HTML) es considera massa llarg.';
 $string['configmanydiscussions'] = 'Nombre màxim de debats per pàgina';
 $string['configmaxattachments'] = 'El nombre màxim per defecte de fitxers adjunts admesos per cada missatge.';
 $string['configmaxbytes'] = 'Mida màxima per defecte per a tots els fitxers adjuntats als fòrums d\'aquest lloc (subjecta als límits de cada curs i a altres paràmetres locals)';
@@ -135,6 +135,8 @@ $string['disallowsubscribeteacher'] = 'No es permeten subscripcions (excepte al 
 $string['disallowsubscription'] = 'Subscripció';
 $string['disallowsubscription_help'] = 'Aquest fòrum s\'ha configurat de manera que no us podeu subscriure als debats.';
 $string['discussion'] = 'Debat';
+$string['discussionlockingdisabled'] = 'No bloquegis els debats';
+$string['discussionlockingheader'] = 'Bloqueig del debat';
 $string['discussionmoved'] = 'Aquest debat s\'ha traslladat a «{$a}».';
 $string['discussionmovedpost'] = 'Aquest debat s\'ha traslladat <a href="{$a->discusshref}">aquí</a> dins del fòrum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Títol del debat';
@@ -281,11 +283,19 @@ $string['invalidparentpostid'] = 'L\'ID del missatge original és incorrecte';
 $string['invalidpostid'] = 'ID de missatge no vàlid: {$a}';
 $string['lastpost'] = 'Darrer missatge';
 $string['learningforums'] = 'Fòrums d\'aprenentatge';
+$string['lockdiscussionafter'] = 'Bloqueja els debats després d\'un període d\'inactivitat';
+$string['lockdiscussionafter_help'] = 'Els debats es poden bloquejar de manera automàtica després que hagi transcorregut un temps indicat des de la darrera resposta.
+
+Els usuaris amb la capacitat de respondre als debats bloquejats poden desbloquejar-los responent-hi.';
 $string['longpost'] = 'Missatge llarg';
-$string['mailnow'] = 'Envia immediatament les notificacions d\'entrades al fòrum, sense deixar temps per modificar-les.';
+$string['mailnow'] = 'Envia-ho per correu immediatament';
 $string['manydiscussions'] = 'Debats per pàgina';
 $string['markalldread'] = 'Marca com a llegits tots els missatges d\'aquest debat.';
 $string['markallread'] = 'Marca com a llegits tots els missatges d\'aquest fòrum.';
+$string['markasreadonnotification'] = 'Quan s\'envia la notificació d\'un missatge del fòrum';
+$string['markasreadonnotification_help'] = 'Quan rebeu la notificació d\'un missatge del fòrum, podeu triar si s\'hauria de marcar com a llegit amb el propòsit de fer el seguiment del fòrum.';
+$string['markasreadonnotificationno'] = 'No marquis el missatge com a llegit';
+$string['markasreadonnotificationyes'] = 'Marca el missatge com a llegit';
 $string['markread'] = 'Marca com a llegit';
 $string['markreadbutton'] = 'Marca com a<br />llegit';
 $string['markunread'] = 'Marca com a no llegit';
@@ -310,11 +320,11 @@ $string['modeflatoldestfirst'] = 'Visualitza les respostes, començant per la m�
 $string['modenested'] = 'Visualitza les respostes escalonades';
 $string['modethreaded'] = 'Visualitza les respostes abreujades, seguint el fil de la discussió';
 $string['modulename'] = 'Fòrum';
-$string['modulename_help'] = 'El mòdul d\'activitat de fòrum permet que els participants mantinguin discussions asíncrones, és a dir, discussions que s\'estenen durant un període de temps llarg.
+$string['modulename_help'] = 'El mòdul d\'activitat de fòrum permet que els participants mantinguin debats asíncrons, és a dir, debats que s\'estenen durant un període de temps llarg.
 
-Hi ha diversos tipus de fòrum per escollir, com ara un fòrum estàndard on tothom pot iniciar una nova discussió en qualsevol moment; un fòrum en què cada estudiant pot iniciar únicament una sola discussió; o bé un fòrum de preguntes i respostes en què els estudiants han d\'enviar obligatòriament un missatge abans no puguin veure els missatges dels altres estudiants. Un professor pot permetre l\'enviament de fitxers adjunts als missatges del fòrum. Les imatges adjuntes es mostren dins del missatge.
+Hi ha diversos tipus de fòrum per escollir, com ara un fòrum estàndard on tothom pot iniciar un debat nou en qualsevol moment; un fòrum en què cada estudiant pot iniciar únicament un sol debat; o bé un fòrum de preguntes i respostes en què els estudiants han d\'enviar obligatòriament un missatge abans no puguin veure els missatges dels altres estudiants. Un professor pot permetre l\'enviament de fitxers adjunts als missatges del fòrum. Les imatges adjuntes es mostren dins del missatge.
 
-Els participants poden subscriure\'s a un fòrum per rebre notificacions quan hi hagi nous missatges. El professor pot establir el mode de subscripció a voluntari, obligatori o automàtic, o bé impedir la subscripció completament. Si cal, es pot impedir que els estudiants envïin més d\'un cert nombre de missatges en un determinat període de temps; això evita que algú monopolitzi les discussions.
+Els participants poden subscriure\'s a un fòrum per rebre notificacions quan hi hagi missatges nous. El professor pot establir el mode de subscripció a voluntari, obligatori o automàtic, o bé impedir la subscripció completament. Si cal, es pot impedir que els estudiants enviïn més d\'un cert nombre de missatges en un determinat període de temps; això evita que algú monopolitzi els debats.
 
 Els missatges del fòrum poden ser puntuats, ja sigui per professors o bé pels estudiants mateixos (avaluació entre iguals). Aquestes puntuacions es poden agregar per formar una qualificació final que apareixerà al llibre de qualificacions.
 
@@ -324,7 +334,7 @@ Els fòrums tenen diverses utilitats, com ara:
 * Per a anuncis del curs (usant un fòrum de notícies amb subscripció obligatòria)
 * Per discutir els continguts del curs o materials de lectura
 * Per prosseguir en línia alguna qüestió que hagi sorgit prèviament en una sessió presencial
-* Per a discussions entre professors (usant un fòrum ocult)
+* Per a debats entre professors (usant un fòrum ocult)
 * Com a centre d\'ajuda on tutors i estudiants poden oferir consells
 * Com a àrea de suport personalitzada per establir una comunicació privada entre el professor i un estudiant (utilitzant un fòrum amb grups separats i un sol estudiant per grup)
 * Per a activitats d\'extensió; per exemple, proposar reptes als estudiants per tal que hi reflexionin i hi proposin solucions';
@@ -332,7 +342,7 @@ $string['modulenameplural'] = 'Fòrums';
 $string['more'] = 'més';
 $string['movedmarker'] = '(traslladat)';
 $string['movethisdiscussionto'] = 'Trasllada aquest debat a...';
-$string['mustprovidediscussionorpost'] = 'Per a l\'exportació, heu de especificar o bé l\'ID del debat o l\'ID del missatge';
+$string['mustprovidediscussionorpost'] = 'Per a l\'exportació, heu de especificar o l\'ID del debat o l\'ID del missatge';
 $string['myprofileotherdis'] = 'Debats del fòrum';
 $string['myprofileowndis'] = 'Els meus debats del fòrum';
 $string['myprofileownpost'] = 'Els meus missatges del fòrum';
@@ -501,12 +511,12 @@ $string['subscriptionmode_help'] = 'La subscripció a un fòrum significa que la
 
 Hi ha 4 modalitats de subscripció:
 
-* Subscripció voluntària. Els participants poden triar si es subscriuen o no
+* Subscripció voluntària. Els participants poden triar si s\'hi subscriuen o no
 * Subscripció obligatòria. Tothom hi està subscrit i no pot esborrar-se\'n
 * Subscripció inicial. D\'entrada, tothom hi està subscrit, però hi ha la possibilitat d\'esborrar-se\'n quan es vulgui
 * Subscripció inhabilitada. No s\'hi permeten les subscripcions.
 
-Nota: Qualssevol canvis en la modalitat de subscripcio afecten només els usuaris que s\'inscriguin al curs en el futur i els usuaris no existents.';
+Nota: Qualssevol canvis en la modalitat de subscripció afecten només els usuaris que s\'inscriguin al curs en el futur i els usuaris no existents.';
 $string['subscriptionoptional'] = 'Subscripció voluntària';
 $string['subscriptions'] = 'Subscripcions';
 $string['thisforumisthrottled'] = 'Aquest fòrum té limitat el nombre de missatges que podeu enviar-hi en un període de temps determinat. Actualment el límit són {$a->blockafter} missatges en {$a->blockperiod}';
@@ -525,6 +535,7 @@ $string['trackingtype_help'] = 'Si s\'habilita, els participants poden realitzar
 * Opcional: els participants poden triar si activen o desactiven el seguiment mitjançant un enllaç en el bloc d\'administració. El seguiment dels fòrums també ha d\'estar habilitat en els paràmetres del perfil d\'usuari.
 * Imposa: el seguiment està sempre actiu, independentment dels paràmetres de l\'usuari. Aquesta opció pot estar disponible o no segons els paràmetres d\'administració.
 * Inactiu: no es farà el seguiment de missatges llegits i no llegits.';
+$string['trackreadposts_header'] = 'Seguiment dels fòrums';
 $string['unread'] = 'No llegit';
 $string['unreadposts'] = 'Missatges no llegits';
 $string['unreadpostsnumber'] = '{$a} missatges no llegits';

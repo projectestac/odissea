@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_rss_client', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,7 +58,7 @@ $string['managefeeds'] = 'ادر كل التغذيات الخاصة بي.';
 $string['nofeeds'] = 'لا توجد تغذيات إخبارية معرفة لهذا الموقع.';
 $string['numentries'] = 'مدخلات لكل تغذية';
 $string['pickfeed'] = 'انتقي مغذى اخبار.';
-$string['pluginname'] = 'خدمة تغذية الاخبار عن بعد';
+$string['pluginname'] = 'مستحدم خدمة تغذية الاخبار';
 $string['remotenewsfeed'] = 'مغذي أخبار البعيد.';
 $string['rss_client:createprivatefeeds'] = 'أنشاء خدمة تغذية الأخبارية  خاصة';
 $string['rss_client:createsharedfeeds'] = 'أنشاء خدمة تغذية الأخبارية مشتركة';

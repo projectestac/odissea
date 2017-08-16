@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['book:addinstance'] = 'Voeg een nieuw boek toe';
 $string['book:edit'] = 'Bewerk hoofdstukken';
 $string['book:read'] = 'Bekijk boek';
 $string['book:viewhiddenchapters'] = 'Bekijk verborgen hoofdstukken';
+$string['chapterandsubchaptersdeleted'] = 'Hoofdstuk "{$a->title}" en de {$a->subchapters} subhoofdstukken zijn verwijderd';
+$string['chapterdeleted'] = 'Hoofdstuk "{$a->title}" is verwijderd';
 $string['chapters'] = 'Hoofdstukken';
 $string['chaptertitle'] = 'Hoofdstuk titel';
 $string['confchapterdelete'] = 'Wil je dit hoofdstuk echt verwijderen?';
@@ -62,9 +64,11 @@ $string['movechapterup'] = 'Verplaats hoofdstuk  "{$a}" omhoog';
 $string['navexit'] = 'Verlaat boek.';
 $string['navimages'] = 'Afbeeldingen';
 $string['navnext'] = 'Volgende';
+$string['navnexttitle'] = 'Volgende: {$a}';
 $string['navoptions'] = 'Beschikbare opties voor navigatielinks';
 $string['navoptions_desc'] = 'Opties voor het tonen van navigatielinks op boekpagina\'s';
 $string['navprev'] = 'Vorige';
+$string['navprevtitle'] = 'Vorige: {$a}';
 $string['navstyle'] = 'Navigatiestijl';
 $string['navstyle_help'] = '* Afbeeldingen - Er worden icoontjes gebruikt voor de navigatie
 * Tekst - De hoofdstuktitels worden gebruikt voor de navigatie';

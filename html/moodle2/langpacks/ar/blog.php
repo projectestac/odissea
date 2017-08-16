@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'blog', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -150,7 +150,6 @@ $string['retrievedfrom'] = 'جلب من';
 $string['rssfeed'] = 'مغذي المدونة  باستخدام تكنولوجي  RSS';
 $string['searchterm'] = 'البحث: {$a}';
 $string['settingsupdatederror'] = 'لقد حدث خطاء ما، لا يمكن تحديث إعدادات تفضيلات بلوق';
-$string['siteblog'] = 'بلوق الموقع: {$a}';
 $string['siteblogdisable'] = 'مدونات الموقع غير مفعلة';
 $string['siteblogs'] = 'يستطيع جمية المستخدمون مشاهدة كل مدخلات البولوق';
 $string['tagdatelastused'] = 'أرخ العلامة المستخدة مؤخرا';

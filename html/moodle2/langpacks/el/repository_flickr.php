@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_flickr', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,7 @@ $string['callbackwarning'] = '<ol>
 <li>Εισάγετε αυτές τι πληροφορίες εδώ, και μετά κάντε κλικ στο Αποθήκευση και μετά στο Ρυθμίσεις για να επιστρέψετε σε αυτή τη σελίδα.  Θα δείτε οτι το Moodle θα έχει δημιουργήσει για εσάς μια τοποθεσία callback.</li>
 <li>Επεξεργαστείτε τις λεπτομέρειες του κλειδιού σας για το <a href="http://www.flickr.com/services/api/keys/"></a> ξανά και ρυθμίστε την τοποθεσία callback.</li></ol>';
 $string['configplugin'] = 'Ρύθμιση Flickr';
-$string['emailaddress'] = 'Δι/νση Ηλεκτρονικού Ταχυδρομείου';
+$string['emailaddress'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';
 $string['flickr:view'] = 'Εμφάνιση του repository Flickr';
 $string['invalidemail'] = 'Μη έγκυρη δι/νση ηλεκτρονικού ταχυδρομείου για το flickr';
 $string['notitle'] = 'Χωρίς Τίτλο';

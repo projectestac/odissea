@@ -72,10 +72,9 @@ if (isguestuser($user)) {
 // User interests separated by commas.
 $user->interests = core_tag_tag::get_item_tags_array('core', 'user', $user->id);
 
-// Remote users cannot be edited. We have to perform the strict
-// user_not_fully_set_up() check, otherwise the remote user could end up in
-// endless loop between user/view.php and herein. Note that required custom
-// fields are not supported in MNet environment anyway.
+// Remote users cannot be edited. Note we have to perform the strict user_not_fully_set_up() check.
+// Otherwise the remote user could end up in endless loop between user/view.php and here.
+// Required custom fields are not supported in MNet environment anyway.
 if (is_mnet_remote_user($user)) {
     if (user_not_fully_set_up($user, true)) {
         $hostwwwroot = $DB->get_field('mnet_host', 'wwwroot', array('id' => $user->mnethostid));
@@ -200,14 +199,16 @@ if ($usernew = $userform->get_data()) {
         // Other users require a confirmation email.
         if (isset($usernew->email) and $user->email != $usernew->email && !has_capability('moodle/user:update', $systemcontext)) {
             $a = new stdClass();
-            $a->newemail = $usernew->preference_newemail = $usernew->email;
-            $usernew->preference_newemailkey = random_string(20);
-            $usernew->preference_newemailattemptsleft = 3;
+            $emailchangedkey = random_string(20);
+            set_user_preference('newemail', $usernew->email, $user->id);
+            set_user_preference('newemailkey', $emailchangedkey, $user->id);
+            set_user_preference('newemailattemptsleft', 3, $user->id);
+
+            $a->newemail = $emailchanged = $usernew->email;
             $a->oldemail = $usernew->email = $user->email;
 
             $emailchangedhtml = $OUTPUT->box(get_string('auth_changingemailaddress', 'auth', $a), 'generalbox', 'notice');
             $emailchangedhtml .= $OUTPUT->continue_button($returnurl);
-            $emailchanged = true;
         }
     }
 
@@ -239,7 +240,7 @@ if ($usernew = $userform->get_data()) {
 
     // Update user picture.
     if (empty($CFG->disableuserimages)) {
-        useredit_update_picture($usernew, $userform, $filemanageroptions);
+        core_user::update_picture($usernew, $filemanageroptions);
     }
 
     // Update mail bounces.
@@ -255,21 +256,24 @@ if ($usernew = $userform->get_data()) {
     \core\event\user_updated::create_from_userid($user->id)->trigger();
 
     // If email was changed and confirmation is required, send confirmation email now to the new address.
-    if ($emailchanged && $CFG->emailchangeconfirmation) {
+    if ($emailchanged !== false && $CFG->emailchangeconfirmation) {
         $tempuser = $DB->get_record('user', array('id' => $user->id), '*', MUST_EXIST);
-        $tempuser->email = $usernew->preference_newemail;
+        $tempuser->email = $emailchanged;
+
+        $supportuser = core_user::get_support_user();
 
         $a = new stdClass();
-        $a->url = $CFG->wwwroot . '/user/emailupdate.php?key=' . $usernew->preference_newemailkey . '&id=' . $user->id;
+        $a->url = $CFG->wwwroot . '/user/emailupdate.php?key=' . $emailchangedkey . '&id=' . $user->id;
         $a->site = format_string($SITE->fullname, true, array('context' => context_course::instance(SITEID)));
         $a->fullname = fullname($tempuser, true);
+        $a->supportemail = $supportuser->email;
 
         $emailupdatemessage = get_string('emailupdatemessage', 'auth', $a);
         $emailupdatetitle = get_string('emailupdatetitle', 'auth', $a);
 
         // Email confirmation directly rather than using messaging so they will definitely get an email.
-        $supportuser = core_user::get_support_user();
-        if (!$mailresults = email_to_user($tempuser, $supportuser, $emailupdatetitle, $emailupdatemessage)) {
+        $noreplyuser = core_user::get_noreply_user();
+        if (!$mailresults = email_to_user($tempuser, $noreplyuser, $emailupdatetitle, $emailupdatemessage)) {
             die("could not send email!");
         }
     }

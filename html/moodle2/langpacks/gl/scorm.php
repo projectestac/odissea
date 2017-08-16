@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'scorm', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['aicchacpkeepsessiondata_desc'] = 'Período de tempo en días no que se 
 $string['aicchacptimeout'] = 'Tempo de espera AICC HACP';
 $string['aicchacptimeout_desc'] = 'Período de tempo en minutos no se manterá aberta que unha sesión externa AICC HACP';
 $string['aiccuserid'] = 'AICC pasar ID numérico do usuario';
-$string['aiccuserid_desc'] = 'O estándar AICC para nomes de usuario é moi restritivo comparado co Moodle, e soamente permite caracteres alfanuméricos, guión medio (-) e subliña (_). Os puntos, os espazos e o símbolo de @ non están permitidos. Se activa isto, os números ID do usuario son pasados ao paquete AICC no canto dos nomes de usuario.';
+$string['aiccuserid_desc'] = 'O estándar AICC para nomes de usuario é moi restritivo comparado co Moodle, e soamente permite caracteres alfanuméricos, guión medio (-) e subliña (_). Os puntos, os espazos e o símbolo de @ non están permitidos. Se activa isto, os números ID do usuario son pasados ao paquete AICC no canto dos nomes de usuario .';
 $string['aliasonly'] = 'Cando selecciona un ficheiro imsmanifest.xml dun repositorio, debe usar un alias/atallo para este ficheiro.';
 $string['allowapidebug'] = 'Activar a depuración e o seguimento do API (axustar a máscara de captura con apidebugmask)';
 $string['allowtypeaicchacp'] = 'Activar AICC HACP externo';
@@ -52,7 +52,7 @@ $string['asset'] = 'Recurso';
 $string['assetlaunched'] = 'Recurso - Visto';
 $string['attempt'] = 'Intentar';
 $string['attempt1'] = '1 intento';
-$string['attempts'] = 'Intentos';
+$string['attempts'] = 'Intento';
 $string['attemptsmanagement'] = 'Xestión de intentos';
 $string['attemptstatusall'] = 'Cartafol persoal e páxina de entrada';
 $string['attemptstatusentry'] = 'Páxina de entrada unicamente';
@@ -76,7 +76,7 @@ $string['browserepository'] = 'Examinar o repositorio';
 $string['calculatedweight'] = 'Ponderación calculada';
 $string['cannotaccess'] = 'Non pode chamar a este «script» desta forma';
 $string['cannotfindsco'] = 'Non foi posíbel atopar SCO';
-$string['chooseapacket'] = 'Escoller ou actualizar un paquete';
+$string['chooseapacket'] = 'Escoller ou o actualizar un paquete';
 $string['closebeforeopen'] = 'Especificou unha data de peche anterior á da apertura.';
 $string['collapsetocwinsize'] = 'Contraer a TdC cun tamaño de xanela menor de';
 $string['collapsetocwinsizedesc'] = 'Este axuste permítelle especificar o tamaño da xanela na que debería contraerse a TdC automaticamente.';
@@ -128,7 +128,7 @@ $string['eventreportviewed'] = 'Informe visto';
 $string['eventscolaunched'] = 'Sco iniciado';
 $string['eventscorerawsubmitted'] = 'Puntuación en bruto do SCORM enviado';
 $string['eventstatussubmitted'] = 'Estados do SCORM enviado';
-$string['eventtracksviewed'] = 'Pistas vistas';
+$string['eventtracksviewed'] = 'Pisats vistas';
 $string['eventuserreportviewed'] = 'Informe de usuario visto';
 $string['everyday'] = 'Todos os días';
 $string['everytime'] = 'Cada vez que se use';
@@ -299,7 +299,7 @@ $string['report'] = 'Informe';
 $string['reportcountallattempts'] = '{$a->nbattempts} intentos de {$a->nbusers} usuarios, dun total de {$a->nbresults} resultados';
 $string['reportcountattempts'] = '{$a->nbresults} resultados ({$a->nbusers} users)';
 $string['reports'] = 'Informes';
-$string['repositorynotsupported'] = 'Sé se admiten repositorios de sistemas de ficheiro ao ligalos directamente a un ficheiro  imsmanifest.xml.';
+$string['repositorynotsupported'] = 'Sé se admiten repositorios de sistemas de ficheiro ao ligalos directamente a un ficheiro  imsmanifest.xml .';
 $string['response'] = 'Resposta';
 $string['result'] = 'Resultado';
 $string['results'] = 'Resultados';
@@ -407,7 +407,7 @@ $string['viewallreports'] = 'Ver informes para {$a} intentos';
 $string['viewalluserreports'] = 'Ver os informes de {$a} usuarios';
 $string['whatgrade'] = 'Intentos de cualificación';
 $string['whatgradedesc'] = 'Esta preferencia estabelece o valor predeterminado sobre a cualificación de intentos';
-$string['whatgrade_help'] = 'De se permitir intentos múltiplos, esta configuración especifica se o máis alto, o medio (media), o primeiro ou o último intento rematada son o  rexistrado no libro de cualificacións. A opción do último intento completado non inclúe intentos cun estado «fallou».
+$string['whatgrade_help'] = 'De se permitir intentos múltiples, esta configuración especifica se o máis alto, o medio (media), o primeiro ou o último intento rematada son o  rexistrado no libro de cualificacións. A opción do último intento completado non inclúe intentos cun estado «fallou».
 
 
 Notas sobre a manipulación de varios intentos:

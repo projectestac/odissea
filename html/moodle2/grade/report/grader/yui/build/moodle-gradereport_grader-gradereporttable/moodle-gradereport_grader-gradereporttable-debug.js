@@ -182,7 +182,7 @@ CSS.FLOATING = 'floating';
 
 function FloatingHeaders() {}
 
-FloatingHeaders.ATTRS= {
+FloatingHeaders.ATTRS = {
 };
 
 FloatingHeaders.prototype = {
@@ -386,6 +386,15 @@ FloatingHeaders.prototype = {
      * @protected
      */
     _eventHandles: [],
+
+    /**
+     * The last value of the bodyMargin style. We need to recompute positions if it is changed.
+     *
+     * @property lastBodyMargin
+     * @type Number
+     * @protected
+     */
+    lastBodyMargin: 0,
 
     /**
      * Setup the grader report table.
@@ -629,14 +638,14 @@ FloatingHeaders.prototype = {
         userColumn.each(function(node) {
             var height = node.getComputedStyle(HEIGHT);
             // Nasty hack to account for Internet Explorer
-            if(Y.UA.ie !== 0) {
+            if (Y.UA.ie !== 0) {
                 var allHeight = node.get('offsetHeight');
-                var marginHeight = parseInt(node.getComputedStyle('marginTop'),10) +
-                    parseInt(node.getComputedStyle('marginBottom'),10);
-                var paddingHeight = parseInt(node.getComputedStyle('paddingTop'),10) +
-                    parseInt(node.getComputedStyle('paddingBottom'),10);
-                var borderHeight = parseInt(node.getComputedStyle('borderTopWidth'),10) +
-                    parseInt(node.getComputedStyle('borderBottomWidth'),10);
+                var marginHeight = parseInt(node.getComputedStyle('marginTop'), 10) +
+                    parseInt(node.getComputedStyle('marginBottom'), 10);
+                var paddingHeight = parseInt(node.getComputedStyle('paddingTop'), 10) +
+                    parseInt(node.getComputedStyle('paddingBottom'), 10);
+                var borderHeight = parseInt(node.getComputedStyle('borderTopWidth'), 10) +
+                    parseInt(node.getComputedStyle('borderBottomWidth'), 10);
                 height = allHeight - marginHeight - paddingHeight - borderHeight;
             }
             // Create and configure the new container.
@@ -919,7 +928,19 @@ FloatingHeaders.prototype = {
             leftTitleFloats = false,
             floatingHeaderStyles = {},
             floatingFooterTitleStyles = {},
-            floatingFooterTitleRow = false;
+            floatingFooterTitleRow = false,
+            bodyMargin = 0;
+
+        if (window.right_to_left()) {
+            bodyMargin = parseInt(Y.one(Y.config.doc.body).getComputedStyle('marginRight'), 10);
+        } else {
+            bodyMargin = parseInt(Y.one(Y.config.doc.body).getComputedStyle('marginLeft'), 10);
+        }
+
+        if (bodyMargin != this.lastBodyMargin) {
+            // Recalculate the position of the edge cells for scroll positioning.
+            this._calculateCellPositions();
+        }
 
         // Header position.
         gradeItemHeadingContainerStyles.left = this._getRelativeXFromX(this.headerRow.getX());
@@ -942,16 +963,17 @@ FloatingHeaders.prototype = {
         }
 
         // User column position.
+
         if (window.right_to_left()) {
             floatingUserTriggerPoint = Y.config.win.innerWidth + Y.config.win.pageXOffset - this.dockWidth;
-            floatingUserRelativePoint = floatingUserTriggerPoint - this.firstUserCellWidth;
-            userFloats = floatingUserTriggerPoint < (this.firstUserCellLeft + this.firstUserCellWidth);
+            floatingUserRelativePoint = floatingUserTriggerPoint - this.firstUserCellWidth - bodyMargin;
+            userFloats = floatingUserTriggerPoint < (this.firstUserCellLeft + this.firstUserCellWidth + bodyMargin);
             leftTitleFloats = (floatingUserTriggerPoint - this.firstNonUserCellWidth) <
                               (this.firstNonUserCellLeft + this.firstUserCellWidth);
         } else {
-            floatingUserRelativePoint = Y.config.win.pageXOffset;
-            floatingUserTriggerPoint = floatingUserRelativePoint + this.dockWidth;
-            userFloats = floatingUserTriggerPoint > this.firstUserCellLeft;
+            floatingUserRelativePoint = Y.config.win.pageXOffset + bodyMargin;
+            floatingUserTriggerPoint = floatingUserRelativePoint + this.dockWidth + bodyMargin;
+            userFloats = floatingUserTriggerPoint > this.firstUserCellLeft + bodyMargin;
             leftTitleFloats = floatingUserTriggerPoint > (this.firstNonUserCellLeft - this.firstUserCellWidth);
         }
 
@@ -1084,17 +1106,17 @@ FloatingHeaders.prototype = {
         this.userColumn.all('.cell').each(function(cell, idx) {
             var height = userCells.item(idx).getComputedStyle(HEIGHT);
             // Nasty hack to account for Internet Explorer
-            if(Y.UA.ie !== 0) {
+            if (Y.UA.ie !== 0) {
                 var node = userCells.item(idx);
                 var allHeight = node.getDOMNode ?
                     node.getDOMNode().getBoundingClientRect().height :
                     node.get('offsetHeight');
-                var marginHeight = parseInt(node.getComputedStyle('marginTop'),10) +
-                    parseInt(node.getComputedStyle('marginBottom'),10);
-                var paddingHeight = parseInt(node.getComputedStyle('paddingTop'),10) +
-                    parseInt(node.getComputedStyle('paddingBottom'),10);
-                var borderHeight = parseInt(node.getComputedStyle('borderTopWidth'),10) +
-                    parseInt(node.getComputedStyle('borderBottomWidth'),10);
+                var marginHeight = parseInt(node.getComputedStyle('marginTop'), 10) +
+                    parseInt(node.getComputedStyle('marginBottom'), 10);
+                var paddingHeight = parseInt(node.getComputedStyle('paddingTop'), 10) +
+                    parseInt(node.getComputedStyle('paddingBottom'), 10);
+                var borderHeight = parseInt(node.getComputedStyle('borderTopWidth'), 10) +
+                    parseInt(node.getComputedStyle('borderBottomWidth'), 10);
                 height = allHeight - marginHeight - paddingHeight - borderHeight;
             }
             cell.setStyles({

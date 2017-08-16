@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'ko', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,9 +87,6 @@ $string['invalidplugin'] = '잘못된 플러그인';
 $string['invalidstore'] = '잘못된 캐시 스토어가 제공되었습니다.';
 $string['lockdefault'] = '기본';
 $string['locking'] = '잠금';
-$string['lockingmeans'] = '잠금 메카니즘';
-$string['lockmethod'] = '잠금 방법';
-$string['lockmethod_help'] = '이것은 이 스토어를 잠글 필요가 있을때 잠금에 사용되는 방법입니다.';
 $string['lockname'] = '이름';
 $string['locknamedesc'] = '이름은 고유해야 하며 문자로만 구성 될 수 있습니다 :  a-zA-Z_';
 $string['locknamenotunique'] = '선택한 이름은 유일하지 않습니다. 유일한 이름을 선택하세요.';

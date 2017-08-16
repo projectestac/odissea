@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'backup', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,9 @@ $string['configgeneralactivities'] = '活動をバックアップに含むかど
 $string['configgeneralanonymize'] = 'この設定を有効にした場合、ユーザに関する情報がデフォルトで匿名化されます。';
 $string['configgeneralbadges'] = 'バックアップにバッジを含むようデフォルトに設定します。';
 $string['configgeneralblocks'] = 'ブロックをバックアップに含むかどうか、デフォルトを設定します。';
+$string['configgeneralcalendarevents'] = 'バックアップにカレンダーイベントを含むようデフォルトに設定します。';
 $string['configgeneralcomments'] = 'コメントをバックアップに含むかどうか、デフォルトを設定します。';
+$string['configgeneralcompetencies'] = 'バックアップにコンピテンシーを含むようデフォルトに設定します。';
 $string['configgeneralfilters'] = 'フィルタをバックアップに含むかどうか、デフォルトを設定します。';
 $string['configgeneralgroups'] = 'グループおよびグルーピングをバックアップに含むことに関するデフォルトを設定します。';
 $string['configgeneralhistories'] = 'ユーザ履歴をバックアップに含むかどうか、デフォルトを設定します。';
@@ -140,7 +142,9 @@ $string['generalanonymize'] = '情報を匿名化する';
 $string['generalbackdefaults'] = '一般バックアップデフォルト';
 $string['generalbadges'] = 'バッジを含む';
 $string['generalblocks'] = 'ブロックを含む';
+$string['generalcalendarevents'] = 'カレンダーイベントを含む';
 $string['generalcomments'] = 'コメントを含む';
+$string['generalcompetencies'] = 'コンピテンシーを含む';
 $string['generalfilters'] = 'フィルタを含む';
 $string['generalgradehistories'] = '履歴を含む';
 $string['generalgroups'] = 'グループおよびグルーピングを含む';
@@ -169,6 +173,7 @@ $string['importgeneralduplicateadminallowed_desc'] = 'サイトにユーザ名�
 $string['importgeneralmaxresults'] = 'インポートの最大コース一覧表示数';
 $string['importgeneralmaxresults_desc'] = 'ここではインポート処理の最初のステップに一覧表示されるコース数を設定します。';
 $string['importgeneralsettings'] = '一般インポートデフォルト';
+$string['importsettings'] = '一般インポート設定';
 $string['importsuccess'] = 'インポートが完了しました。コースへ戻るには「続ける」をクリックしてください。';
 $string['includeactivities'] = '次を含む:';
 $string['includeditems'] = '含まれるアイテム:';
@@ -264,7 +269,7 @@ $string['setting_keep_groups_and_groupings'] = '現在のグループおよび�
 $string['setting_keep_roles_and_enrolments'] = '現在のロールおよび登録を保持する';
 $string['setting_overwriteconf'] = 'コース設定を上書きする';
 $string['showtypes'] = 'タイプオプションを表示する';
-$string['sitecourseformatwarning'] = 'これはフロントページバックアップです。フロントページのみにリストアできることに留意してください。';
+$string['sitecourseformatwarning'] = 'これはフロントページバックアップです。フロントページにのみリストアできることに留意してください。';
 $string['skiphidden'] = '非表示コースをスキップする';
 $string['skiphiddenhelp'] = '非表示コースをスキップするかどうか選択します。';
 $string['skipmodifdays'] = '次の期間更新されていないコースをスキップする';

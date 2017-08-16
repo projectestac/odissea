@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'book', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['book:read'] = 'Ler libro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos agochados do libro';
 $string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título do capítulo';
-$string['confchapterdelete'] = 'Confirma que quere eliminar este capítulo?';
+$string['confchapterdelete'] = 'Confirma que quere eliminar este capítulo «{$a}»?';
 $string['confchapterdeleteall'] = 'Confirma que quere eliminar este capítulo e todos os seus subcapítulos?';
 $string['content'] = 'Contido';
 $string['customtitles'] = 'Títulos personalizados';

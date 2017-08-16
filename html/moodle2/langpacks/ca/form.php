@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'form', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['noselection'] = 'Cap selecció';
 $string['nosuggestions'] = 'Sense suggeriments';
 $string['optional'] = 'Opcional';
 $string['othersettings'] = 'Altres paràmetres';
+$string['passwordunmaskrevealhint'] = 'Revela';
 $string['requiredelement'] = 'Camp requerit';
 $string['revealpassword'] = 'Revela';
 $string['security'] = 'Seguretat';
@@ -64,7 +65,7 @@ $string['selecteditems'] = 'Elements seleccionats:';
 $string['showadvanced'] = 'Mostra característiques avançades';
 $string['showless'] = 'Mostra\'n menys...';
 $string['showmore'] = 'Mostra\'n més...';
-$string['somefieldsrequired'] = 'Aquest formulari conté els camps obligatoris {$a}.';
+$string['somefieldsrequired'] = 'Aquest formulari conté camps obligatoris marcats amb {$a}.';
 $string['time'] = 'Temps';
 $string['timeunit'] = 'Unitat de temps';
 $string['timing'] = 'Temporització';

@@ -31,7 +31,7 @@ Feature: Both first name and surname are always available for every user
     # This should be one of the very few places where we directly call these 2 steps to open the current users profile
     # in edit mode, the rest of the time you should use "I open my profile in edit mode" as it is faster.
     And I follow "Profile" in the user menu
-    And I follow "Edit profile"
+    And I click on "Edit profile" "link" in the "region-main" "region"
     # End UI test covering "I open my profile in edit mode"
     When I set the field "First name" to " "
     And I set the field "Surname" to " "
@@ -46,7 +46,7 @@ Feature: Both first name and surname are always available for every user
     And I log in as "admin"
     And I navigate to "Browse list of users" node in "Site administration > Users > Accounts"
     And I follow "Foo Bar"
-    And I follow "Edit profile"
+    And I click on "Edit profile" "link" in the "region-main" "region"
     When I set the field "First name" to " "
     And I set the field "Surname" to " "
     And I click on "Update profile" "button"

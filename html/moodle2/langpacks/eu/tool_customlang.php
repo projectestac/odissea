@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_customlang', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,13 +45,13 @@ $string['headinglocal'] = 'Lokalaren pertsonalizazioa';
 $string['headingstandard'] = 'Testu estandarra';
 $string['headingstringid'] = 'Katea';
 $string['markinguptodate'] = 'Markatu pertsonalizazioa eguneratu gisa';
-$string['markinguptodate_help'] = '-Pertsonalizatutako itzulpena zaharkitua gera daiteke katea zure gunean pertsonalizatu zenetik jatorrizko Ingeles edo itzulpen ofiziala aldatu bada. Berrikusi pertsonalizatutako itzulpena. Eguneratuta irizten badiozu, markatu laukitxoa. Bestela, editatu.';
+$string['markinguptodate_help'] = 'Pertsonalizatutako itzulpena zaharkitua gera daiteke katea zure gunean pertsonalizatu zenetik jatorrizko Ingeles edo itzulpen ofiziala aldatu bada. Berrikusi pertsonalizatutako itzulpena. Eguneratuta irizten badiozu, markatu laukitxoa. Bestela, editatu.';
 $string['markuptodate'] = 'markatu eguneratu gisa';
 $string['modifiedno'] = 'Ez dago aldatutako katerik gordetzeko.';
-$string['modifiednum'] = '{$a} aldatutako kate daude. Aldaketa hauek zure hizkuntza pakete lokalean behin betiko gorde nahi dituzu?';
+$string['modifiednum'] = '{$a} aldatutako kate daude. Aldaketa horiek zure hizkuntza-paketean gorde nahi dituzu?';
 $string['nostringsfound'] = 'Ez da katerik aurkitu. Mesedez, aldatu iragazkiaren ezarpenak.';
 $string['placeholder'] = 'Leku-markak';
 $string['placeholderwarning'] = 'Kateak leku-marka du';
-$string['pluginname'] = 'Hizkuntzen pertsonalizazioa';
+$string['pluginname'] = 'Hizkuntzaren pertsonalizazioa';
 $string['savecheckin'] = 'Gorde aldaketak hizkuntza-paketean';
 $string['savecontinue'] = 'Aplikatu aldaketak eta jarraitu editatzen';

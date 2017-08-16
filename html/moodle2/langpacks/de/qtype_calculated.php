@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_calculated', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -128,7 +128,7 @@ $string['sharedwildcards'] = 'Gemeinsame Ersatzzeichen';
 $string['showitems'] = 'Anzeigen';
 $string['significantfigures'] = 'mit {$a}';
 $string['significantfiguresformat'] = 'signifikante Zeichen';
-$string['synchronize'] = 'Daten von gemeinsam genutzten Datensätzen im Test synchronisieren';
+$string['synchronize'] = 'Daten von gemeinsam genutzten Datensätzen mit anderen Fragen in einem Test synchronisieren';
 $string['synchronizeno'] = 'Nicht synchronisieren';
 $string['synchronizeyes'] = 'Synchronisieren';
 $string['synchronizeyesdisplay'] = 'Gemeinsam genutzte Datensatztitel als Prefix vor Fragetitel anzeigen und synchronisieren';

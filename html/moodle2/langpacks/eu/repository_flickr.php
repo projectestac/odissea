@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_flickr', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['callbackurltext'] = '<ol>
 <li>Ziurta ezazu  atzera deiaren URL-aren ezarpena Flickr-en giltza bezala<strong>{$a}</strong></li></ol>';
 $string['callbackwarning'] = '<ol>
 <li>Lortu <a href="http://www.flickr.com/services/api/keys/">Flickr API Key and Secret</a> zure Moodle gunerako.</li>
-<li>Sartu datu horiek hemen, ondoren Gorde botoia sakatu eta ondoren hona bueltatzeko Ezarpenak  botoia sakatu. Moodle-k zuretzako atzera deiaren URL bat sortu duela ikusiko duzu.</li>
+<li>Sartu datu horiek hemen, ondoren Gorde botoia sakatu eta ondoren hona bueltatzeko Ezarpenak botoia sakatu. Moodle-k zuretzako atzera deiaren URL bat sortu duela ikusiko duzu.</li>
 <li>Editatu zure <a href="http://www.flickr.com/services/api/keys/">Flickr</a> giltzaren zehaztasunak bertan atzera deiaren URL-a zehazteko</li>
 </ol>
 <div>1. <br/>2. Zure atzera deiaren URL-a goragoko informazioa gorde <strong>aurretik</strong> sortu <strong>behar da</strong>. Mesedez, sakatu Gorde botoiari, eta ondoren <strong>Ezarpenei</strong> sortutako atzera deiaren URL-a konprobatzeko';

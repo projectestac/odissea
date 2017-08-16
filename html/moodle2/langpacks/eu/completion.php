@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'completion', language 'eu', branch 'MOODLE_32_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['activities'] = 'Jarduerak';
 $string['activitiescompleted'] = 'Jarduera-osaketa';
 $string['activitiescompletednote'] = 'Oharra: Jarduera-osaketak ezarrita egon behar du jarduera batean beheko zerrenda ager dadin.';
 $string['activityaggregation'] = 'Bete beharreko baldintzak';
-$string['activityaggregation_all'] = 'Aukeratutako jarduera guztiak osatu behar dira';
-$string['activityaggregation_any'] = 'Aukeratutako edozein jarduera osatu behar da';
+$string['activityaggregation_all'] = 'Aukeratutako jarduera GUZTIAK osatu behar dira';
+$string['activityaggregation_any'] = 'Aukeratutako EDOZEIN jarduera osatu behar da';
 $string['activitycompletion'] = 'Jarduera-osaketa';
 $string['aggregationmethod'] = 'Osatu beharreko elementu-kopurua';
 $string['all'] = 'Guztiak';

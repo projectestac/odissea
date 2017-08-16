@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -390,6 +390,7 @@ $string['questionnaire:readallresponseanytime'] = 'Read all responses any time';
 $string['questionnaire:readallresponses'] = 'Read response summaries, subject to open times';
 $string['questionnaire:readownresponses'] = 'Read own responses';
 $string['questionnairereport'] = 'Questionnaire Report';
+$string['questionnaire:submissionnotification'] = 'Receive notification for each submission';
 $string['questionnaire:submit'] = 'Complete and submit a questionnaire';
 $string['questionnaire:view'] = 'View a questionnaire';
 $string['questionnaire:viewsingleresponse'] = 'View complete individual responses';
@@ -416,7 +417,7 @@ $string['redirecturl'] = 'The URL to which a user is redirected after completing
 $string['remove'] = 'Delete';
 $string['removeallquestionnaireattempts'] = 'Delete all questionnaire responses';
 $string['removenotinuse'] = 'This questionnaire used to depend on a Public questionnaire which has been deleted.
-                It can no longer be used and should be deleted.';
+It can no longer be used and should be deleted.';
 $string['required'] = 'Response is required';
 $string['required_help'] = 'If you select ***Yes***, response to this question will be required, i.e.
 the respondent will not be able to submit the questionnaire
@@ -461,6 +462,8 @@ $string['savedbutnotsubmitted'] = 'This questionnaire has been saved but not yet
 $string['savedprogress'] = 'Your progress has been saved.  You may return at any time to complete this questionnaire.';
 $string['saveeditedquestion'] = 'Save question {$a}';
 $string['savesettings'] = 'Save settings';
+$string['search:activity'] = 'Questionnaire - activity information';
+$string['search:question'] = 'Questionnaire - questions';
 $string['section'] = 'Description';
 $string['sectionbreak'] = '----- Page Break -----';
 $string['sectionbreak_help'] = '----- Page Break -----';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,29 +33,31 @@ $string['atleastoneoption'] = 'Θα πρέπει να δώσετε τουλάχ�
 $string['choice'] = 'Επιλογή {$a}';
 $string['choiceactivityname'] = 'Επιλογή: {$a}';
 $string['choice:choose'] = 'Καταγραφή επιλογής';
-$string['choiceclose'] = 'Μέχρι';
-$string['choice:deleteresponses'] = 'Διαγραφή απαντήσεων';
+$string['choiceclose'] = 'Επέτρεψε απαντήσεις μέχρι';
+$string['choice:deleteresponses'] = 'Τροποποίηση και διαγραφή απαντήσεων';
 $string['choice:downloadresponses'] = 'Κατέβασμα απαντήσεων';
 $string['choicefull'] = 'Δεν υπάρχουν διαθέσιμες επιλογές για σας.';
 $string['choicename'] = 'Επιλογή όνομα';
-$string['choiceopen'] = 'Ανοιχτό';
+$string['choiceopen'] = 'Επέτρεψε απαντήσεις από';
 $string['choiceoptions_help'] = '<p align="center"><b>Διαθέσιμες επιλογές</b></p>
 
 <p>Εδώ καθορίζετε τις επιλογές ανάμεσα από τις οποίες πρέπει να επιλέξουν οι μαθητές.</p>
 
 <p>Μπορείτε να συμπληρώσετε οποιοδήποτε αριθμό από αυτές. δεν υπάρχει πρόβλημα να αφήσετε
 μερικές επιλογές κενές εάν δεν τις χρειάζεστε όλες.</p>';
-$string['choice:readresponses'] = 'Ανάγνωση απαντήσεων';
+$string['choice:readresponses'] = 'Προβολή απαντήσεων';
 $string['choicesaved'] = 'Η επιλογή σας καταγράφηκε';
 $string['choicetext'] = 'Επιλογή κείμενο';
 $string['chooseaction'] = 'Επέλεξε μία ενέργεια ...';
+$string['chooseoption'] = 'Επιλογή: {$a}';
 $string['description'] = 'Κείμενο εισαγωγής';
 $string['displayhorizontal'] = 'Οριζόντια προβολή';
-$string['displaymode'] = 'Τρόπος εμφάνισης';
+$string['displaymode'] = 'Τρόπος εμφάνισης για τις επιλογές';
 $string['displayvertical'] = 'Κάθετη προβολή';
 $string['expired'] = 'Η δραστηριότητα αυτή έκλεισε στις {$a} και δεν είναι πλέον διαθέσιμη';
 $string['full'] = '(Πλήρες)';
 $string['havetologin'] = 'Πρέπει να εισέλθετε στο σύστημα για να μπορείτε να υποβάλετε την επιλογή σας';
+$string['includeinactive'] = 'Συμπιρίληψη απαντήσεων από ανενεργούς/σε αναστολή χρήστες';
 $string['limit'] = 'Όριο';
 $string['limitanswers'] = 'Περιόρισε το πλήθος των επιτρεπόμενων απαντήσεων';
 $string['limitanswers_help'] = '<p align="center"><strong>Όριο επιλογής</strong></p>
@@ -68,17 +70,17 @@ $string['modulename'] = 'Επιλογή';
 $string['modulenameplural'] = 'Επιλογές';
 $string['moveselectedusersto'] = 'Μετακίνησε τους επιλεγμένους χρήστες στο...';
 $string['mustchooseone'] = 'Πρέπει να επιλέξετε μία απάντηση. Τίποτα δεν αποθηκεύτηκε.';
-$string['noguestchoose'] = 'Συγγνώμη, οι επισκέπτες δεν μπορούν να κάνουν επιλογές';
+$string['noguestchoose'] = 'Συγνώμη, οι επισκέπτες δεν μπορούν να κάνουν επιλογές';
 $string['noresultsviewable'] = 'Τα αποτελέσματα δεν είναι ορατά προς το παρόν.';
 $string['notanswered'] = 'Δεν απαντήθηκε ακόμα';
-$string['notopenyet'] = 'Συγγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
+$string['notopenyet'] = 'Συγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
 $string['numberofuser'] = 'Αριθμός απαντήσεων';
 $string['numberofuserinpercentage'] = 'Ποσοστό απαντήσεων';
 $string['option'] = 'Επιλογή';
 $string['optionno'] = 'Επιλογή {no}';
 $string['options'] = 'Επιλογές';
 $string['pluginname'] = 'Επιλογή';
-$string['privacy'] = 'Μυστικότητα αποτελεσμάτων';
+$string['privacy'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['publish'] = 'Δημοσιοποίηση αποτελεσμάτων';
 $string['publishafteranswer'] = 'Εμφάνιση αποτελεσμάτων στο μαθητή αφού απαντήσει';
 $string['publishafterclose'] = 'Εμφάνιση αποτελεσμάτων στους μαθητές όταν κλείσει η επιλογή';
@@ -99,7 +101,6 @@ $string['showunanswered'] = 'Εμφάνιση στήλης για αναπάντ
 $string['spaceleft'] = 'διαθέσιμος χώρος';
 $string['spacesleft'] = 'διαθέσιμοι χώροι';
 $string['taken'] = 'Ληφθέντα';
-$string['timerestrict'] = 'Περιορισμός των απαντήσεων σε αυτή τη χρονική περίοδο';
 $string['viewallresponses'] = 'Δες {$a} απαντήσεις';
 $string['withselected'] = 'Με τα επιλεγμένα';
 $string['yourselection'] = 'Η επιλογή σας';

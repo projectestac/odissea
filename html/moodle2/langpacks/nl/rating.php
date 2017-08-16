@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'rating', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

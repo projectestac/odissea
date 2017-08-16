@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'quiz', language 'it', branch 'MOODLE_32_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -695,7 +695,7 @@ $string['reattemptquiz'] = 'Ritenta il quiz';
 $string['recentlyaddedquestion'] = 'Domanda aggiunta recentemente';
 $string['recurse'] = 'Includi anche le domande presenti nelle sotto categorie';
 $string['redoesofthisquestion'] = 'Altre domande dove lo studente ha riprovato: {$a}';
-$string['redoquestion'] = 'Riprova';
+$string['redoquestion'] = 'Riprova con una domanda simile a questa';
 $string['regrade'] = 'Rivaluta tutti i tentativi';
 $string['regradecomplete'] = 'Tutti i tentativi sono stati rivalutati';
 $string['regradecount'] = '{$a->changed} su {$a->attempt} valutazioni sono state cambiate';
@@ -885,8 +885,6 @@ $string['timeleft'] = 'Tempo rimasto';
 $string['timelimit'] = 'Tempo massimo';
 $string['timelimitexeeded'] = 'Spiacente! Il tempo per il quiz è scaduto!';
 $string['timelimit_help'] = 'L\'impostazione consente la visualizzazione de limite di tempo nella pagina iniziale del quiz e un timer nel blocco navigazione quiz che presenta il conto alla rovescia del tempo rimasto.';
-$string['timelimitmin'] = 'Tempo massimo (minuti)';
-$string['timelimitsec'] = 'Tempo massimo (secondi)';
 $string['timestr'] = '%H:%M:%S del %d/%m/%y';
 $string['timesup'] = 'Tempo scaduto!';
 $string['timetaken'] = 'Tempo impiegato';

@@ -53,7 +53,7 @@ class boolean extends base {
         }
     }
 
-    protected function get_results($rids=false) {
+    protected function get_results($rids=false, $anonymous=false) {
         global $DB;
 
         $rsql = '';
@@ -72,7 +72,9 @@ class boolean extends base {
         return $DB->get_records_sql($sql, $params);
     }
 
-    public function display_results($rids=false, $sort='') {
+    public function display_results($rids=false, $sort='', $anonymous=false) {
+        $output = '';
+
         if (empty($this->stryes)) {
             $this->stryes = get_string('yes');
             $this->strno = get_string('no');
@@ -85,7 +87,7 @@ class boolean extends base {
         }
 
          $this->counts = array($this->stryes => 0, $this->strno => 0);
-        if ($rows = $this->get_results($rids)) {
+        if ($rows = $this->get_results($rids, $anonymous)) {
             foreach ($rows as $row) {
                 $this->choice = $row->choice_id;
                 $count = $row->num;
@@ -96,11 +98,12 @@ class boolean extends base {
                 }
                 $this->counts[$this->choice] = intval($count);
             }
-            \mod_questionnaire\response\display_support::mkrespercent($this->counts, count($rids),
+            $output .= \mod_questionnaire\response\display_support::mkrespercent($this->counts, count($rids),
                 $this->question->precise, $prtotal, $sort = '');
         } else {
-            echo '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
+            $output .= '<p class="generaltable">&nbsp;'.get_string('noresponsedata', 'questionnaire').'</p>';
         }
+        return $output;
     }
 
     /**
@@ -125,7 +128,7 @@ class boolean extends base {
         // while all others are an integer. So put the boolean response in "response" field instead (CONTRIB-6436).
         // NOTE - the actual use of "boolean" should probably change to not use "choice_id" at all, or use it as
         // numeric zero and one instead.
-        $extraselect = '0 AS choice_id, qrb.choice_id AS response, 0 AS rank';
+        $extraselect = '0 AS choice_id, ' . $DB->sql_order_by_text('qrb.choice_id', 1000) . ' AS response, 0 AS rank';
         $alias = 'qrb';
 
         return "

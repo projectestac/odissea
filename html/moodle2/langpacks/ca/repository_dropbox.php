@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'repository_dropbox', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,13 +32,9 @@ $string['configplugin'] = 'Configuració de Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Mostra una carpeta de Dropbox';
 $string['instruction'] = 'Podeu obtenir la vostra clau API secreta a la pàgina de <a href="http://www.dropbox.com/developers/apps">desenvolupadors del Dropbox</a>. Quan configureu la vostra clau, seleccioneu "Dropbox complet" com a "Nivell d\'accés".';
-$string['legacyapihelpsupported'] = 'Dropbox ha introduït l\'API d\'OAuth 2 el juny de 2015. Podeu configurar una nova aplicació a <a href="https://www.dropbox.com/developers/apps/" target="_blank">https://www.dropbox.com/developers/apps/</a> i especificar l\'URI per redirigir a OAuth 2 que es mostra avall.';
 $string['logoutdesc'] = '(Tanqueu la sessió quan acabeu d\'utilitzar Dropbox)';
 $string['notitle'] = 'Sense títol';
 $string['oauth2redirecturi'] = 'URI per redirigir a OAuth 2';
-$string['oauth2title'] = 'API d\'OAuth 2';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = 'Recorda\'m';
 $string['secret'] = 'Secret Dropbox';
-$string['uselegacyapi'] = 'Useu la desaconsellada API v1';
-$string['usev2api'] = 'Useu l\'API d\'OAuth 2 (recomanada)';

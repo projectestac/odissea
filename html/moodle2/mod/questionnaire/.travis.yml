@@ -7,12 +7,12 @@ cache:
     - $HOME/.composer/cache
 
 php:
-# For 3.1 forward, only test PHP7.
+# - 5.6 Disaabling for release because of weired Behat error.
  - 7.0
 
 env:
  global:
-  - MOODLE_BRANCH=MOODLE_31_STABLE
+  - MOODLE_BRANCH=MOODLE_32_STABLE
 # Temporarily turn off checking for this file. It will be replaced.
   - IGNORE_PATHS=module.js,tests
  matrix:

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'folder', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['contentheader'] = 'Contenido';
 $string['display'] = 'Mostrar contenido de la carpeta';
 $string['display_help'] = 'Si elige mostrar los contenidos de la carpeta en la página del curso no aparecerá el enlace a una página separada y tampoco se mostrará el título.
@@ -50,6 +51,7 @@ Una carpeta se puede usar para:
 * Agrupar una serie de documentos sobre un tema, por ejemplo, un conjunto de exámenes de otros años en formato pdf, o una colección de archivos para crear un proyecto concreto por parte de los estudiantes.
 * Crear un espacio de subida de archivos compartido entre los profesores del curso (se debería ocultar la carpeta a los alumnos para que lo vean solo los profesores)';
 $string['modulenameplural'] = 'Carpetas';
+$string['newfoldercontent'] = 'Nuevo directorio de contenido';
 $string['noautocompletioninline'] = 'La finalización automática de la visualización de la actividad no se puede seleccionar junto con la opción "Mostrar en la página del curso"';
 $string['page-mod-folder-view'] = 'Página principal de la carpeta';
 $string['page-mod-folder-x'] = 'Cualquier página de la carpeta';

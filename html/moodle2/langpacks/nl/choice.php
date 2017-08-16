@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choice', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,18 +30,20 @@ $string['allowmultiple'] = 'Meer dan één keuze toestaan';
 $string['allowupdate'] = 'Laat toe de keuze aan te passen';
 $string['answered'] = 'Beantwoord';
 $string['atleastoneoption'] = 'Je moet minstens één mogelijk antwoord geven';
+$string['calendarend'] = 'Keuze {$a} zal sluiten';
+$string['calendarstart'] = 'Keuze {$a} zal openen';
 $string['cannotsubmit'] = 'Er was een probleem bij het insturen van je keuze. Probeer opnieuw';
 $string['choice'] = 'Keuze {$a}';
 $string['choiceactivityname'] = 'Keuze: {$a}';
 $string['choice:addinstance'] = 'Voeg een nieuwe keuze toe';
 $string['choice:choose'] = 'Bewaar een keuze';
-$string['choiceclose'] = 'Tot';
+$string['choiceclose'] = 'Sta reacties toe tot';
 $string['choicecloseson'] = 'Keuze sluit op {$a}';
-$string['choice:deleteresponses'] = 'Verwijder antwoorden';
+$string['choice:deleteresponses'] = 'Wijzig en verwijder antwoorden';
 $string['choice:downloadresponses'] = 'Download antwoorden';
 $string['choicefull'] = 'Deze keuze is vol - er zijn geen beschikbare plaatsen meer.';
 $string['choicename'] = 'Naam keuze';
-$string['choiceopen'] = 'Open';
+$string['choiceopen'] = 'Sta reacties toe vanaf';
 $string['choiceoptions'] = 'Keuze-opties';
 $string['choiceoptions_help'] = '<p>Hier kun je ingeven welke keuzemogelijkheden de leerlingen aangeboden krijgen.</p>
 
@@ -49,15 +51,18 @@ $string['choiceoptions_help'] = '<p>Hier kun je ingeven welke keuzemogelijkheden
 $string['choice:readresponses'] = 'Bekijk antwoorden';
 $string['choicesaved'] = 'Je keuze is bewaard';
 $string['choicetext'] = 'Keuzetekst';
+$string['choice:view'] = 'Bekijk keuze-activiteit';
 $string['chooseaction'] = 'Kies een actie...';
+$string['chooseoption'] = 'Kies: {$a}';
 $string['closebeforeopen'] = 'Je hebt een afsluitdatum opgegeven die vroeger ligt dan de openingsdatum.';
 $string['completionsubmit'] = 'Toon als voltooid wanneer de gebruiker een keuze maakt';
 $string['description'] = 'Inleidende tekst';
 $string['displayhorizontal'] = 'Toon horizontaal';
 $string['displaymode'] = 'Toonmodus voor de opties';
 $string['displayvertical'] = 'Toon verticaal';
-$string['eventanswercreated'] = 'Keuze gemaakt';
+$string['eventanswercreated'] = 'Keuze-antwoord toegevoegd';
 $string['eventanswerdeleted'] = 'Keuze-antwoord verwijderd';
+$string['eventanswersubmitted'] = 'Keuze gemaakt';
 $string['eventanswerupdated'] = 'Keuze aangepast';
 $string['eventreportdownloaded'] = 'Keuzerapport gedownload';
 $string['eventreportviewed'] = 'Keuzerapport bekeken';
@@ -124,7 +129,6 @@ $string['skipresultgraph'] = 'Resultatengrafiek overslaan';
 $string['spaceleft'] = 'plaats beschikbaar';
 $string['spacesleft'] = 'plaatsen beschikbaar';
 $string['taken'] = 'Ingenomen';
-$string['timerestrict'] = 'Beperk het beantwoorden tot deze periode';
 $string['userchoosethisoption'] = 'Gebruikers due deze optie kozen';
 $string['viewallresponses'] = 'Bekijk {$a} antwoorden';
 $string['withselected'] = 'Met geselecteerde';

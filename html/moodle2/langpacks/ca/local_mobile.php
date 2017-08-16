@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'local_mobile', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,11 +33,5 @@ $string['enableadditionalservice'] = 'Activa el servei Característiques addicio
 $string['enableadditionalservicedescription'] = 'Cal activar aquest servei.';
 $string['local_mobiledescription'] = 'Connector que amplia les característiques dels serveis de Moodle Mobile';
 $string['local_mobilesettings'] = 'Configuració';
-$string['local_mobiletypeoflogin'] = 'Tria tipus d\'accés';
-$string['local_mobiletypeoflogin_key'] = 'Tipus d\'accés';
-$string['local_mobileurlscheme_key'] = 'Esquema d\'URL';
-$string['loginintheapp'] = 'Mitjançant l\'aplicació';
-$string['logininthebrowser'] = 'Mitjançant una finestra del navegador (per a connectors SSO)';
-$string['loginintheinappbrowser'] = 'Mitjançant un navegador incrustat';
 $string['pluginname'] = 'Característiques addicionals de Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'El connector local de Moodle Mobile ha d\'estar habilitat i configurat per a poder llançar l\'aplicació';

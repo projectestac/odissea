@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'choicegroup', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ No caso de que se desactiven os límites, calquera número de participantes pode
 $string['members/'] = 'Encher';
 $string['members/max'] = 'Encher / Capacidade';
 $string['modulename'] = 'Grupo de escolla';
-$string['modulename_help'] = 'O módulo de escolla permítelle ao profesor facer unha pregunta e especificar unha escolla de entre múltiplas opcións.';
+$string['modulename_help'] = 'O módulo de escolla permítelle ao profesor facer unha pregunta e especificar unha escolla de entre múltiples opcións.';
 $string['modulenameplural'] = 'Grupo de escollas';
 $string['moveselectedusersto'] = 'Mover os usuarios seleccionados a...';
 $string['multipleenrollmentspossible'] = 'Permitir a matriculación a múltiples grupos';

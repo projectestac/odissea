@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['createserviceforusersdescription'] = 'Un servei és un conjunt de funci
 $string['createtoken'] = 'Crea token';
 $string['createtokenforuser'] = 'Crea un token per un usuari';
 $string['createtokenforuserdescription'] = 'Crea un token per un usuari servei web.';
-$string['createuser'] = 'Crea un usuari especific';
+$string['createuser'] = 'Crea un usuari específic';
 $string['createuserdescription'] = 'Cal un usuari de serveis web per representar el sistema de control de Moodle.';
 $string['criteriaerror'] = 'No hi ha permisos per a cercar per un criteri';
 $string['default'] = 'Per defecte per "{$a}"';
@@ -73,7 +73,6 @@ $string['editservice'] = 'Edita el servei: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Habilita';
 $string['enabledocumentation'] = 'Habilita la documentació del desenvolupador';
 $string['enabledocumentationdescription'] = 'La documentació dels serveis web està disponible per als protocols habilitats.';
-$string['enablemobilewsoverview'] = 'Aneu a la pàgina d\'administració {$a->manageservicelink}, comproveu el paràmetre «{$a->enablemobileservice}» i deseu els canvis. Tot es pot configurar perquè vós i els altres usuaris del lloc pugueu utilitzar l\'aplicació Moodle oficial. Estat actual: {$a->wsmobilestatus}';
 $string['enableprotocols'] = 'Habilita protocols';
 $string['enableprotocolsdescription'] = 'Almenys un protocol ha d\'estar habilitada. Per raons de seguretat, sols els protocols que s\'utilitzaran haurien d\'estar habilitats.';
 $string['enablews'] = 'Habilita serveis web';
@@ -128,8 +127,6 @@ $string['missingpassword'] = 'Contrasenya perduda';
 $string['missingrequiredcapability'] = 'Cal la capacitat {$a}.';
 $string['missingusername'] = 'Nom d\'usuari perdut';
 $string['missingversionfile'] = 'Error de codificació: el fitxer version.php s\'ha perdut per al component {$a}';
-$string['mobilewsdisabled'] = 'Inhabilitat';
-$string['mobilewsenabled'] = 'Habilitat';
 $string['nameexists'] = 'Aquest nom l\'està usant un altre servei.';
 $string['nocapabilitytouseparameter'] = 'Aquest usuari no té la capacitat per a utilitzar el paràmetre {$a}';
 $string['nofunctions'] = 'Aquest servei no té funcions';
@@ -169,10 +166,10 @@ $string['selectauthorisedusers'] = 'Selecciona usuaris autoritzats';
 $string['selectedcapability'] = 'Seleccionat';
 $string['selectedcapabilitydoesntexit'] = 'El conjunt actual de capacitats requerides ({$a})  no existeix més. Si us plau canvieu-lo i deseu els canvis.';
 $string['selectservice'] = 'Selecciona un servei';
-$string['selectspecificuser'] = 'Selecciona un usuari especific';
+$string['selectspecificuser'] = 'Selecciona un usuari específic';
 $string['selectspecificuserdescription'] = 'Afegeix l\'usuari de serveis web com un usuari autoritzat';
 $string['service'] = 'Servei';
-$string['servicehelpexplanation'] = 'Un servei és un conjunt de funcions. Un servei pot ser accessible per a tots els usuaris o sols els usuaris especificats.';
+$string['servicehelpexplanation'] = 'Un servei és un conjunt de funcions. Un servei pot ser accessible per a tots els usuaris o sols per a uns usuaris especificats.';
 $string['servicename'] = 'Nom del servei';
 $string['servicenotavailable'] = 'El servei web no està disponible (no existeix o pot estar desactivat)';
 $string['servicesbuiltin'] = 'Integra serveis';
@@ -187,7 +184,7 @@ $string['step'] = 'Pas';
 $string['supplyinfo'] = 'Més detalls';
 $string['testauserwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Abans de fer-ho, inicieu sessió com un usuari amb la capacitat moodle/webservice:createtoken i obtingueu la clau de seguretat (testimoni) a través de la Configuració del meu perfil. Podeu utilitzar aquest testimoni en el client de prova. En el client de prova, també trieu un protocol activat amb la autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['testclient'] = 'Servei web client de prova';
-$string['testclientdescription'] = '* El servei web client de prova <strong>executa</strong> funcions de forma <strong>REAL</strong>. No executeu funcions que no conegueu.<br/>* No totes les funcions de servei web estan implementades encara al client de prova. <br/>* Per provar que un usuari no pot accedir a algunes funcions, podeu provar algunes funcions a les quals no concediu permís.<br/>* Per veure missatges d\'error més clars establiu la depuració a <strong>{$a->mode}</strong> dins {$a->atag}<br/>';
+$string['testclientdescription'] = 'El servei web client de prova <strong>executa</strong> funcions de forma <strong>REAL</strong>. No executeu funcions que no coneixeu. <br/>* Totes les funcions servei web no estan implementades encara al client de prova. <br/>* Per provar que un usuari no pot accedir a algunes funcions, podeu provar algunes funcions de les quals no teniu permís.<br/>* Per veure millor els missatges d\'error  configureu la depuració a  <strong>{$a->mode}</strong> dins {$a->atag}<br/>* Accediu a {$a->amfatag}.';
 $string['testwithtestclient'] = 'Proveu el servei';
 $string['testwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Utilitza un protocol habilitat amb autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['token'] = 'Testimoni';

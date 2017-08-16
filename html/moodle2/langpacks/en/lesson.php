@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -165,6 +165,7 @@ $string['displayscorewithessays'] = '<p>You earned {$a->score} out of {$a->tempm
 <p>Your {$a->essayquestions} essay question(s) will be graded and added into your final score at a later date.</p>
 <p>Your current grade without the essay question(s) is {$a->score} out of {$a->grade}.</p>';
 $string['displayscorewithoutessays'] = 'Your score is {$a->score} (out of {$a->grade}).';
+$string['duplicatepagenamed'] = 'Duplicate page: {$a}';
 $string['edit'] = 'Edit';
 $string['editingquestionpage'] = 'Editing {$a} question page';
 $string['editlessonsettings'] = 'Edit lesson settings';
@@ -187,7 +188,6 @@ $string['enterpassword'] = 'Please enter the password:';
 $string['eolstudentoutoftime'] = 'Attention:  You ran out of time for this lesson.  Your last answer may not have counted if it was answered after the time was up.';
 $string['eolstudentoutoftimenoanswers'] = 'You did not answer any questions.  You have received a 0 for this lesson.';
 $string['essay'] = 'Essay';
-$string['essayemailmessage'] = '<p>Essay prompt:<blockquote>{$a->question}</blockquote></p><p>Your response:<blockquote><em>{$a->response}</em></blockquote></p><p>{$a->teacher}\'s comments:<blockquote><em>{$a->comment}</em></blockquote></p><p>You have received {$a->earned} out of {$a->outof} for this essay question.</p><p>Your grade for the lesson has been changed to {$a->newgrade}&#37;.</p>';
 $string['essayemailmessage2'] = '<p>Essay prompt: {$a->question}</p><p>Your response: <em>{$a->response}</em></p><p>Grader\'s comments: <em>{$a->comment}</em></p><p>You have received {$a->earned} out of {$a->outof} for this essay question.</p><p>Your grade for the {$a->lesson} lesson has been changed to {$a->newgrade}&#37;.</p>';
 $string['essayemailsubject'] = 'Grade available for lesson question';
 $string['essayresponses'] = 'Essay responses';
@@ -256,7 +256,6 @@ $string['leftduringtimed'] = 'You have left during a timed lesson.<br />Please c
 $string['leftduringtimednoretake'] = 'You have left during a timed lesson and you are<br />not allowed to retake or continue the lesson.';
 $string['leftduringtimedsession'] = 'You have left during a timed lesson.';
 $string['lesson:addinstance'] = 'Add a new lesson';
-$string['lessonattempted'] = 'Lesson attempted';
 $string['lessonclosed'] = 'This lesson closed on {$a}.';
 $string['lessoncloses'] = 'Lesson closes';
 $string['lessoncloseson'] = 'Lesson closes on {$a}';
@@ -273,6 +272,7 @@ $string['lessonopen'] = 'This lesson will be open on {$a}.';
 $string['lessonopens'] = 'Lesson opens';
 $string['lessonpagelinkingbroken'] = 'First page not found.  Lesson page linking must be broken.  Please contact an admin.';
 $string['lessonstats'] = 'Lesson statistics';
+$string['lesson:view'] = 'View lesson activity';
 $string['lesson:viewreports'] = 'View lesson reports';
 $string['linkedmedia'] = 'Linked media';
 $string['loginfail'] = 'Login failed, please try again...';

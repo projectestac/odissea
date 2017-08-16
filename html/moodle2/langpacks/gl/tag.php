@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tag', language 'gl', branch 'MOODLE_32_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Engadida(s) etiqueta(s) estándar';
 $string['addedotag'] = 'Engadiuse «{$a}» como unha etiqueta oficial.';
-$string['addotags'] = 'Engadir etiquetas estándar';
+$string['addotags'] = 'Engadir etiquetas oficiais';
 $string['addtagcoll'] = 'Engadir colección de etiquetas';
 $string['addtagtomyinterests'] = 'Engadir «{$a}» como do meu interese';
 $string['alltagpages'] = 'Todas as páxinas etiquetadas';
@@ -47,7 +47,7 @@ $string['count'] = 'Cantidade';
 $string['coursetags'] = 'Etiquetas do curso';
 $string['defautltagcoll'] = 'Colección predeterminada';
 $string['delete'] = 'Eliminar';
-$string['deleted'] = 'Etiqueta(s) eliminada(s)';
+$string['deleted'] = 'Eliminada';
 $string['deletedcoursetags'] = 'Eliminadas - etiquetas do curso';
 $string['deleteselected'] = 'Eliminar o seleccionado';
 $string['description'] = 'Descrición';
@@ -58,7 +58,7 @@ $string['editsearchable'] = 'Cambiar buscábel';
 $string['edittag'] = 'Editar esta etiqueta';
 $string['edittagcoll'] = 'Editar a colección de etiquetas {$a}';
 $string['edittagcollection'] = 'Cambiar a colección de etiquetas';
-$string['entertags'] = 'Introduza etiquetas ...';
+$string['entertags'] = 'Escriba as etiquetas separadas por comas';
 $string['errortagfrontpage'] = 'Non está permitido etiquetar a páxina principal do sitio.';
 $string['errorupdatingrecord'] = 'Produciuse un erro ao actualizar o rexistro da etiqueta';
 $string['eventtagadded'] = 'Etiqueta engadida a un elemento';
@@ -96,12 +96,12 @@ $string['nextpage'] = 'Máis';
 $string['noresultsfor'] = 'Ningún resultado para «{$a}»';
 $string['notagsfound'] = 'Non se atoparon etiquetas que coincidan con «{$a}»';
 $string['nothingtoupdate'] = 'Nada para actualizar';
-$string['officialtag'] = 'Oficial';
+$string['officialtag'] = 'Etiqueta oficial';
 $string['otags'] = 'Etiquetas oficiais';
-$string['othertags'] = 'Outras etiquetas';
+$string['othertags'] = 'Outras etiquetas (escriba as etiquetas separadas por comas)';
 $string['owner'] = 'Propietario';
 $string['page-tag-index'] = 'Páxina de sinalador único';
-$string['page-tag-manage'] = 'Páxina para Xestionar sinaladores';
+$string['page-tag-manage'] = 'Páxina para administrar sinaladores';
 $string['page-tag-search'] = 'Páxina de busca de sinaladores';
 $string['page-tag-x'] = 'Todas as páxinas etiquetadas';
 $string['prevpage'] = 'Atrás';
@@ -111,7 +111,7 @@ $string['relatedtags'] = 'Etiquetas relacionadas';
 $string['removetagfrommyinterests'] = 'Retirar «{$a}» como do meu interese';
 $string['reset'] = 'Restabelecer';
 $string['resetfilter'] = 'Reiniciar o filtro';
-$string['resetflag'] = 'Restabelecer o indicador';
+$string['resetflag'] = 'Restabelecer indicador';
 $string['responsiblewillbenotified'] = 'A persoa responsábel será notificada';
 $string['rssdesc'] = 'Esta fonte RSS foi xerada automaticamente por Moodle e contén etiquetas xeradas polo usuario para os cursos.';
 $string['rsstitle'] = 'Fonte RSS de etiquetas de curso para usuario: {$a}';
@@ -157,7 +157,7 @@ $string['tagtype'] = 'Tipo de etiqueta';
 $string['tagtype_default'] = 'Predeterminado';
 $string['tagtype_official'] = 'Oficial';
 $string['thingstaggedwith'] = '«{$a->name}» empregouse {$a->count} veces';
-$string['thingtaggedwith'] = '«{$a->name}» empregouse unha vez';
+$string['thingtaggedwith'] = '«{$a->name}« empregouse unha vez';
 $string['thistaghasnodesc'] = 'Esta etiqueta actualmente non ten descrición.';
 $string['timemodified'] = 'Modificado';
 $string['typechanged'] = 'Cambiouse o tipo da etiqueta';

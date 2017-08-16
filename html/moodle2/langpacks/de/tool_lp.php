@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'tool_lp', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['competencyframeworkcreated'] = 'Kompetenzrahmen angelegt';
 $string['competencyframeworkname'] = 'Name';
 $string['competencyframeworkroot'] = 'Top-Level-Kompetenz (keine übergeordnete)';
 $string['competencyframeworks'] = 'Kompetenzrahmen';
+$string['competencyframeworksrepository'] = 'Repository für Kompetenzrahmen';
 $string['competencyframeworkupdated'] = 'Kompetenzrahmen aktualisiert';
 $string['competencyoutcome_complete'] = 'Als vollständig markieren';
 $string['competencyoutcome_evidence'] = 'Beleg anhängen';

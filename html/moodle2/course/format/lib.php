@@ -485,7 +485,7 @@ abstract class format_base {
         }
         $blocknames = array(
             BLOCK_POS_LEFT => array(),
-            BLOCK_POS_RIGHT => array('search_forums', 'news_items', 'calendar_upcoming', 'recent_activity')
+            BLOCK_POS_RIGHT => array()
         );
         return $blocknames;
     }
@@ -684,6 +684,13 @@ abstract class format_base {
                 $mform->setDefault($optionname, $option['default']);
             }
         }
+
+        if (!$forsection && empty($this->courseid)) {
+            // At this stage (this is called from definition_after_data) course data is already set as default.
+            // We can not overwrite what is in the database.
+            $mform->setDefault('enddate', $this->get_default_course_enddate($mform));
+        }
+
         return $elements;
     }
 
@@ -1104,6 +1111,66 @@ abstract class format_base {
             }
             return $this->inplace_editable_render_section_name($section, ($itemtype === 'sectionname'), true);
         }
+    }
+
+
+    /**
+     * Returns the default end date value based on the start date.
+     *
+     * This is the default implementation for course formats, it is based on
+     * moodlecourse/courseduration setting. Course formats like format_weeks for
+     * example can overwrite this method and return a value based on their internal options.
+     *
+     * @param moodleform $mform
+     * @param array $fieldnames The form - field names mapping.
+     * @return int
+     */
+    public function get_default_course_enddate($mform, $fieldnames = array()) {
+
+        if (empty($fieldnames)) {
+            $fieldnames = array('startdate' => 'startdate');
+        }
+
+        $startdate = $this->get_form_start_date($mform, $fieldnames);
+        $courseduration = intval(get_config('moodlecourse', 'courseduration'));
+        if (!$courseduration) {
+            // Default, it should be already set during upgrade though.
+            $courseduration = YEARSECS;
+        }
+
+        return $startdate + $courseduration;
+    }
+
+    /**
+     * Indicates whether the course format supports the creation of the Announcements forum.
+     *
+     * For course format plugin developers, please override this to return true if you want the Announcements forum
+     * to be created upon course creation.
+     *
+     * @return bool
+     */
+    public function supports_news() {
+        // For backwards compatibility, check if default blocks include the news_items block.
+        $defaultblocks = $this->get_default_blocks();
+        foreach ($defaultblocks as $blocks) {
+            if (in_array('news_items', $blocks)) {
+                return true;
+            }
+        }
+        // Return false by default.
+        return false;
+    }
+
+    /**
+     * Get the start date value from the course settings page form.
+     *
+     * @param moodleform $mform
+     * @param array $fieldnames The form - field names mapping.
+     * @return int
+     */
+    protected function get_form_start_date($mform, $fieldnames) {
+        $startdate = $mform->getElementValue($fieldnames['startdate']);
+        return $mform->getElement($fieldnames['startdate'])->exportValue($startdate);
     }
 }
 

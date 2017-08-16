@@ -11,7 +11,7 @@ var DIALOGUE_NAME = 'Moodle dialogue',
     DIALOGUE,
     DIALOGUE_FULLSCREEN_CLASS = DIALOGUE_PREFIX + '-fullscreen',
     DIALOGUE_HIDDEN_CLASS = DIALOGUE_PREFIX + '-hidden',
-    DIALOGUE_SELECTOR =' [role=dialog]',
+    DIALOGUE_SELECTOR = ' [role=dialog]',
     MENUBAR_SELECTOR = '[role=menubar]',
     DOT = '.',
     HAS_ZINDEX = 'moodle-has-zindex',
@@ -34,12 +34,12 @@ DIALOGUE = function(config) {
     // Note: additional classes can be added to this content node by setting the 'additionalBaseClass' config property (a string).
     var id = 'moodle-dialogue-' + Y.stamp(this); // Can't use this.get('id') as it's not set at this stage.
     config.notificationBase =
-        Y.Node.create('<div class="'+CSS.BASE+'">')
+        Y.Node.create('<div class="' + CSS.BASE + '">')
               .append(Y.Node.create('<div id="' + id + '" role="dialog" ' +
                                     'aria-labelledby="' + id + '-header-text" class="' + CSS.WRAP + '"></div>')
-              .append(Y.Node.create('<div id="' + id + '-header-text" class="'+CSS.HEADER+' yui3-widget-hd"></div>'))
-              .append(Y.Node.create('<div class="'+CSS.BODY+' yui3-widget-bd"></div>'))
-              .append(Y.Node.create('<div class="'+CSS.FOOTER+' yui3-widget-ft"></div>')));
+              .append(Y.Node.create('<div id="' + id + '-header-text" class="' + CSS.HEADER + ' yui3-widget-hd"></div>'))
+              .append(Y.Node.create('<div class="' + CSS.BODY + ' yui3-widget-bd"></div>'))
+              .append(Y.Node.create('<div class="' + CSS.FOOTER + ' yui3-widget-ft"></div>')));
     Y.one(document.body).append(config.notificationBase);
     config.srcNode = '#' + id;
     delete config.buttons; // Don't let anyone pass in buttons as we want to control these during init. addButton can be used later.
@@ -47,10 +47,10 @@ DIALOGUE = function(config) {
 };
 Y.extend(DIALOGUE, Y.Panel, {
     // Window resize event listener.
-    _resizeevent : null,
+    _resizeevent: null,
     // Orientation change event listener.
-    _orientationevent : null,
-    _calculatedzindex : false,
+    _orientationevent: null,
+    _calculatedzindex: false,
 
     /**
      * The original position of the dialogue before it was reposition to
@@ -77,7 +77,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      *
      * @method initializer
      */
-    initializer : function() {
+    initializer: function() {
         var bb;
 
         if (this.get('closeButton') !== false) {
@@ -144,7 +144,7 @@ Y.extend(DIALOGUE, Y.Panel, {
         }
 
         // Remove the dialogue from the DOM when it is destroyed.
-        this.after('destroyedChange', function(){
+        this.after('destroyedChange', function() {
             this.get(BASE).remove(true);
         }, this);
     },
@@ -155,7 +155,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      *
      * @method applyZIndex
      */
-    applyZIndex : function() {
+    applyZIndex: function() {
         var highestzindex = 1,
             zindexvalue = 1,
             bb = this.get('boundingBox'),
@@ -166,7 +166,7 @@ Y.extend(DIALOGUE, Y.Panel, {
             bb.setStyle('zIndex', zindex);
         } else {
             // Determine the correct zindex by looking at all existing dialogs and menubars in the page.
-            Y.all(DIALOGUE_SELECTOR + ', ' + MENUBAR_SELECTOR + ', ' + DOT + HAS_ZINDEX).each(function (node) {
+            Y.all(DIALOGUE_SELECTOR + ', ' + MENUBAR_SELECTOR + ', ' + DOT + HAS_ZINDEX).each(function(node) {
                 var zindex = this.findZIndex(node);
                 if (zindex > highestzindex) {
                     highestzindex = zindex;
@@ -202,7 +202,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      * @param {Node} node The Node to apply the zIndex to.
      * @return {Number} Either the zIndex, or 0 if one was not found.
      */
-    findZIndex : function(node) {
+    findZIndex: function(node) {
         // In most cases the zindex is set on the parent of the dialog.
         var zindex = node.getStyle('zIndex') || node.ancestor().getStyle('zIndex');
         if (zindex) {
@@ -217,7 +217,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      * @method visibilityChanged
      * @param {EventFacade} e
      */
-    visibilityChanged : function(e) {
+    visibilityChanged: function(e) {
         var titlebar, bb;
         if (e.attrName === 'visible') {
             this.get('maskNode').addClass(CSS.LIGHTBOX);
@@ -248,7 +248,7 @@ Y.extend(DIALOGUE, Y.Panel, {
                 if (!this.shouldResizeFullscreen()) {
                     if (this.get('draggable')) {
                         titlebar = '#' + this.get('id') + ' .' + CSS.HEADER;
-                        this.plug(Y.Plugin.Drag, {handles : [titlebar]});
+                        this.plug(Y.Plugin.Drag, {handles: [titlebar]});
                         Y.one(titlebar).setStyle('cursor', 'move');
                     }
                 }
@@ -272,7 +272,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      *
      * @method makeResponsive
      */
-    makeResponsive : function() {
+    makeResponsive: function() {
         var bb = this.get('boundingBox');
 
         if (this.shouldResizeFullscreen()) {
@@ -282,18 +282,18 @@ Y.extend(DIALOGUE, Y.Panel, {
             // Size and position the fullscreen dialog.
 
             bb.addClass(DIALOGUE_FULLSCREEN_CLASS);
-            bb.setStyles({'left' : null,
-                          'top' : null,
-                          'width' : null,
-                          'height' : null,
-                          'right' : null,
-                          'bottom' : null});
+            bb.setStyles({'left': null,
+                          'top': null,
+                          'width': null,
+                          'height': null,
+                          'right': null,
+                          'bottom': null});
         } else {
             if (this.get('responsive')) {
                 // We must reset any of the fullscreen changes.
                 bb.removeClass(DIALOGUE_FULLSCREEN_CLASS)
-                    .setStyles({'width' : this.get('width'),
-                                'height' : this.get('height')});
+                    .setStyles({'width': this.get('width'),
+                                'height': this.get('height')});
             }
         }
 
@@ -307,7 +307,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      *
      * @method centerDialogue
      */
-    centerDialogue : function() {
+    centerDialogue: function() {
         var bb = this.get('boundingBox'),
             hidden = bb.hasClass(DIALOGUE_HIDDEN_CLASS),
             x,
@@ -320,9 +320,9 @@ Y.extend(DIALOGUE, Y.Panel, {
         if (hidden) {
             bb.setStyle('top', '-1000px').removeClass(DIALOGUE_HIDDEN_CLASS);
         }
-        x = Math.max(Math.round((bb.get('winWidth') - bb.get('offsetWidth'))/2), 15);
-        y = Math.max(Math.round((bb.get('winHeight') - bb.get('offsetHeight'))/2), 15) + Y.one(window).get('scrollTop');
-        bb.setStyles({ 'left' : x, 'top' : y});
+        x = Math.max(Math.round((bb.get('winWidth') - bb.get('offsetWidth')) / 2), 15);
+        y = Math.max(Math.round((bb.get('winHeight') - bb.get('offsetHeight')) / 2), 15) + Y.one(window).get('scrollTop');
+        bb.setStyles({'left': x, 'top': y});
 
         if (hidden) {
             bb.addClass(DIALOGUE_HIDDEN_CLASS);
@@ -338,7 +338,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      * @method shouldResizeFullscreen
      * @return {Boolean}
      */
-    shouldResizeFullscreen : function() {
+    shouldResizeFullscreen: function() {
         return (window === window.parent) && this.get('responsive') &&
                Math.floor(Y.one(document.body).get('winWidth')) < this.get('responsiveWidth');
     },
@@ -396,9 +396,9 @@ Y.extend(DIALOGUE, Y.Panel, {
      *
      * @method keyDelegation
      */
-    keyDelegation : function() {
+    keyDelegation: function() {
         var bb = this.get('boundingBox');
-        bb.delegate('key', function(e){
+        bb.delegate('key', function(e) {
             var target = e.target;
             var direction = 'forward';
             if (e.shiftKey) {
@@ -418,7 +418,7 @@ Y.extend(DIALOGUE, Y.Panel, {
      * @param {string} direction tab key for forward and tab+shift for backward
      * @return {Boolean} The result of the focus action.
      */
-    trapFocus : function(target, direction) {
+    trapFocus: function(target, direction) {
         var bb = this.get('boundingBox'),
             firstitem = bb.one(CAN_RECEIVE_FOCUS_SELECTOR),
             lastitem = bb.all(CAN_RECEIVE_FOCUS_SELECTOR).pop();
@@ -548,9 +548,9 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @type Boolean
          * @default true
          */
-        closeButton : {
-            validator : Y.Lang.isBoolean,
-            value : true
+        closeButton: {
+            validator: Y.Lang.isBoolean,
+            value: true
         },
 
         /**
@@ -560,8 +560,8 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @type String
          * @default 'Close'
          */
-        closeButtonTitle : {
-            validator : Y.Lang.isString,
+        closeButtonTitle: {
+            validator: Y.Lang.isString,
             value: M.util.get_string('closebuttontitle', 'moodle')
         },
 
@@ -572,9 +572,9 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @type Boolean
          * @default true
          */
-        center : {
-            validator : Y.Lang.isBoolean,
-            value : true
+        center: {
+            validator: Y.Lang.isBoolean,
+            value: true
         },
 
         /**
@@ -584,9 +584,9 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @type Boolean
          * @default false
          */
-        draggable : {
-            validator : Y.Lang.isBoolean,
-            value : false
+        draggable: {
+            validator: Y.Lang.isBoolean,
+            value: false
         },
 
         /**
@@ -611,9 +611,9 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @type Boolean
          * @default true
          */
-        responsive : {
-            validator : Y.Lang.isBoolean,
-            value : true
+        responsive: {
+            validator: Y.Lang.isBoolean,
+            value: true
         },
 
         /**
@@ -623,8 +623,8 @@ Y.extend(DIALOGUE, Y.Panel, {
          * @type Number
          * @default 768
          */
-        responsiveWidth : {
-            value : 768
+        responsiveWidth: {
+            value: 768
         },
 
         /**
@@ -709,9 +709,9 @@ Y.Base.modifyAttrs(DIALOGUE, {
      * @type Boolean
      * @default true
      */
-    render : {
-        value : true,
-        writeOnce : true
+    render: {
+        value: true,
+        writeOnce: true
     },
 
     /**

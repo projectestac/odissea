@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'es', branch 'MOODLE_31_STABLE'
+ * Strings for component 'report_eventlist', language 'es', branch 'MOODLE_32_STABLE'
  *
  * @package   report_eventlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['abstractclass'] = 'Clase abstracta';
 $string['action'] = 'Acción';
 $string['affectedtable'] = 'Tabla afectada';
-$string['all'] = 'Todo';
-$string['clear'] = 'Limpio';
+$string['all'] = 'Todos';
+$string['clear'] = 'Limpiar';
 $string['component'] = 'Componente';
 $string['create'] = 'crear';
 $string['crud'] = 'Tipo de consulta a la base de datos';

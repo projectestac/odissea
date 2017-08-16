@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_32_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ $string['auth_ldap_opt_deref'] = '检查在搜索时如何处理别名。选择�
 $string['auth_ldap_opt_deref_key'] = '启用别名';
 $string['auth_ldap_passtype'] = '指定在 LDAP 服务器中的新密码或者更改密码的格式。';
 $string['auth_ldap_passtype_key'] = '密码格式';
-$string['auth_ldap_passwdexpire_settings'] = 'LDAP 密码过期设置。';
+$string['auth_ldap_passwdexpire_settings'] = 'LDAP 密码过期设置';
 $string['auth_ldap_preventpassindb'] = '如果设定为是，则在Moodle的数据库中不会存储密码。';
 $string['auth_ldap_preventpassindb_key'] = '不要缓存密码';
 $string['auth_ldap_search_sub'] = '在子场景中搜索用户。';

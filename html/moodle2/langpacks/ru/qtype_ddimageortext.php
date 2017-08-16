@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ru', branch 'MOODLE_31_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ru', branch 'MOODLE_32_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredropzones'] = 'Добавить зоны - {no}';
 $string['addmoreimages'] = 'Добавить перетаскиваемые элементы -  {no}';
 $string['answer'] = 'Ответ';
-$string['bgimage'] = 'Фоновое изображение';
+$string['bgimage'] = 'Фоновое изображения';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
 $string['draggableimage'] = 'Перетаскиваемое изображение';
 $string['draggableitem'] = 'Перетаскиваемый элемент';

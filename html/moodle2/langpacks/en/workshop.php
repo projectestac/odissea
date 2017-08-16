@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,6 +76,7 @@ $string['assignedassessments'] = 'Assigned submissions to assess';
 $string['assignedassessmentsnone'] = 'You have no assigned submission to assess';
 $string['backtoeditform'] = 'Back to editing form';
 $string['byfullname'] = 'by <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'by {$a}';
 $string['calculategradinggrades'] = 'Calculate assessment grades';
 $string['calculategradinggradesdetails'] = 'expected: {$a->expected}<br />calculated: {$a->calculated}';
 $string['calculatesubmissiongrades'] = 'Calculate submission grades';
@@ -147,6 +148,7 @@ $string['examplesbeforesubmission'] = 'Examples must be assessed before own subm
 $string['examplesmode'] = 'Mode of examples assessment';
 $string['examplesubmissions'] = 'Example submissions';
 $string['examplesvoluntary'] = 'Assessment of example submission is voluntary';
+$string['exportsubmission'] = 'Export this page';
 $string['feedbackauthor'] = 'Feedback for the author';
 $string['feedbackauthorattachment'] = 'Attachment';
 $string['feedbackby'] = 'Feedback by {$a}';
@@ -304,14 +306,19 @@ $string['switchphase30auto'] = 'Workshop will automatically switch into the asse
 $string['switchphase30info'] = 'You are about to switch the workshop into the <strong>Assessment phase</strong>. In this phase, reviewers may assess the submissions they have been allocated (within the assessment access control dates, if set).';
 $string['switchphase40info'] = 'You are about to switch the workshop into the <strong>Grading evaluation phase</strong>. In this phase, users cannot modify their submissions or their assessments. Teachers may use the grading evaluation tools to calculate final grades and provide feedback for reviewers.';
 $string['switchphase50info'] = 'You are about to close the workshop. This will result in the calculated grades appearing in the gradebook. Students may view their submissions and their submission assessments.';
+$string['switchphasenext'] = 'Switch to the next phase';
 $string['taskassesspeers'] = 'Assess peers';
 $string['taskassesspeersdetails'] = 'total: {$a->total}<br />pending: {$a->todo}';
 $string['taskassessself'] = 'Assess yourself';
 $string['taskconclusion'] = 'Provide a conclusion of the activity';
+$string['taskdone'] = 'Task done';
+$string['taskfail'] = 'Task fail';
+$string['taskinfo'] = 'Task info';
 $string['taskinstructauthors'] = 'Provide instructions for submission';
 $string['taskinstructreviewers'] = 'Provide instructions for assessment';
 $string['taskintro'] = 'Set the workshop description';
 $string['tasksubmit'] = 'Submit your work';
+$string['tasktodo'] = 'Task to do';
 $string['toolbox'] = 'Workshop toolbox';
 $string['undersetup'] = 'The workshop is currently being set up. Please wait until it is switched to the next phase.';
 $string['useexamples'] = 'Use examples';
@@ -323,6 +330,7 @@ $string['usepeerassessment_help'] = 'If enabled, a user may be allocated submiss
 $string['userdatecreated'] = 'submitted on <span>{$a}</span>';
 $string['userdatemodified'] = 'modified on <span>{$a}</span>';
 $string['userplan'] = 'Workshop planner';
+$string['userplanaccessibilityskip'] = 'Skip to current tasks';
 $string['userplanaccessibilitytitle'] = 'Workshop timeline with {$a} phases';
 $string['userplancurrentphase'] = 'Current phase';
 $string['userplan_help'] = 'The workshop planner displays all phases of the activity and lists the tasks for each phase. The current phase is highlighted and task completion is indicated with a tick.';
@@ -335,6 +343,7 @@ $string['workshop:addinstance'] = 'Add a new workshop';
 $string['workshop:allocate'] = 'Allocate submissions for review';
 $string['workshop:deletesubmissions'] = 'Delete submissions';
 $string['workshop:editdimensions'] = 'Edit assessment forms';
+$string['workshop:exportsubmissions'] = 'Export submissions';
 $string['workshop:ignoredeadlines'] = 'Ignore time restrictions';
 $string['workshop:manageexamples'] = 'Manage example submissions';
 $string['workshopname'] = 'Workshop name';

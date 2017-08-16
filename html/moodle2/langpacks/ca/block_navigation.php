@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_navigation', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['enabledockdesc'] = 'Permet que l\'usuari minimitzi aquest bloc';
 $string['everything'] = 'Tot';
 $string['expansionlimit'] = 'Genera navegació per al següent.';
 $string['linkcategoriesdesc'] = 'Visualitza les categories com a enllaços';
-$string['navigation:addinstance'] = 'Afegeix un bloc nou de navegació';
+$string['navigation:addinstance'] = 'Afegeix un nou bloc de navegació';
 $string['navigation:myaddinstance'] = 'Afegeix un bloc nou de navegació a la pàgina del Tauler';
 $string['pluginname'] = 'Navegació';
 $string['trimlength'] = 'Quants caràcters cal deixar';

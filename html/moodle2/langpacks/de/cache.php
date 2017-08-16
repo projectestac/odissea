@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['cachedef_groupdata'] = 'Information für Kursgruppe';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - Inhalt entfernt';
 $string['cachedef_langmenu'] = 'Liste verfügbarer Sprachen';
 $string['cachedef_locking'] = 'Sperrung';
+$string['cachedef_message_processors_enabled'] = 'Aktivierungsstatus der Mitteilungsabläufe';
+$string['cachedef_message_time_last_message_between_users'] = 'Zeit für die neueste Nachricht zwischen den Nutzer/innen erstellt';
 $string['cachedef_navigation_expandcourse'] = 'Navigation erweiterbare Kurse';
 $string['cachedef_observers'] = 'Event-Beobachtung';
 $string['cachedef_plugin_functions'] = 'Callbacks für verfügbare Plugins';
@@ -107,9 +109,6 @@ $string['localstorenotification'] = 'Dieser Cache kann sicher einem Speicher zug
 $string['lockdefault'] = 'Standard';
 $string['locking'] = 'Sperrung';
 $string['locking_help'] = 'Locking ist ein Vorgang, der das Überschreiben von zwischengespeicherten Daten für eine Zeit verhindert. Die Locking-Methode legt fest, wie die Sperre gestartet und überprüft wird.';
-$string['lockingmeans'] = 'Sperrmechanismus';
-$string['lockmethod'] = 'Sperrmethode';
-$string['lockmethod_help'] = 'Sperrmethode falls für diesen Speicher erforderlich';
 $string['lockname'] = 'Name';
 $string['locknamedesc'] = 'Der Name muss eindeutig sein und darf nur die Zeichen a-zA-Z_ enthalten.';
 $string['locknamenotunique'] = 'Der gewählte Name wird bereits verwendet. Bitte wählen Sie einen eindeutigen Namen.';

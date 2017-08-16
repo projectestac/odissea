@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'enrol_self', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ $string['enrolperiod_desc'] = 'Duração predefinida da inscrição.  Se for def
 $string['enrolperiod_help'] = 'Período de tempo que a inscrição é válida, a partir do momento em que o utilizador se inscreve. Se desativado a duração da inscrição será ilimitada.';
 $string['enrolstartdate'] = 'Data de início';
 $string['enrolstartdate_help'] = 'Se ativo, os utilizadores apenas se podem auto-inscrever a partir desta data.';
-$string['expiredaction'] = 'Ação para expiração da inscrição';
+$string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a implementar quando a inscrição do utilizador expira. Por favor, note que alguns dados e definições do utilizador são removidos da disciplina durante o cancelamento da inscrição.';
 $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
 
@@ -100,7 +100,7 @@ $string['self:manage'] = 'Gerir utilizadores inscritos';
 $string['self:unenrol'] = 'Remover inscrições de alunos desta disciplina';
 $string['self:unenrolself'] = 'Remover a sua inscrição desta disciplina';
 $string['sendcoursewelcomemessage'] = 'Enviar mensagem de boas-vindas';
-$string['sendcoursewelcomemessage_help'] = 'Se esta configuração estiver ativa os utilizadores que se inscreverem na disciplina receberão um e-mail com uma mensagem de boas-vindas.';
+$string['sendcoursewelcomemessage_help'] = 'Se esta configuração estiver ativa os utilizadores que se inscreverem na disciplina receberão um e-mail com uma mensagem de boas-vindas. Se for enviado do contato da disciplina (por predefinição o professor) e mais do que um utilizador tiver este papel, o e-mail será enviado pelo primeiro utilizador a que foi atribuído o papel.';
 $string['showhint'] = 'Mostrar sugestão';
 $string['showhint_desc'] = 'Se esta configuração estiver ativa será mostrada aos utilizadores a primeira letra da senha de inscrição.';
 $string['status'] = 'Permitir inscrições existentes';

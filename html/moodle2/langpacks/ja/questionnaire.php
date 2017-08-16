@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ja', branch 'MOODLE_31_STABLE'
+ * Strings for component 'questionnaire', language 'ja', branch 'MOODLE_32_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -362,7 +362,6 @@ $string['realm_help'] = '* **アンケートには、次の3種類がありま�
 $string['redirecturl'] = 'この調査完了後、ユーザがリダイレクトされるURLです。';
 $string['remove'] = '削除';
 $string['removeallquestionnaireattempts'] = 'アンケートの回答をすべて削除します。';
-$string['removenotinuse'] = 'このアンケートは，すでに削除されたパブリックアンケートに依存しています。それはもはや使用することができませんので，削除する必要があります。';
 $string['required'] = '必須回答';
 $string['required_help'] = '***Yes***を選択した場合は，この質問への回答が必須となります。つまり，この質問に回答するまで，アンケートを提出し終えることができません。';
 $string['requiredparameter'] = '必要なパラメータが欠如してます。';

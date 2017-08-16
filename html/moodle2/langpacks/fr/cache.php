@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'cache', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['cachedef_groupdata'] = 'Information du groupe de cours';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - contenu nettoyé';
 $string['cachedef_langmenu'] = 'Liste des langues disponibles';
 $string['cachedef_locking'] = 'Verrouillage';
+$string['cachedef_message_processors_enabled'] = 'État d\'activation des processeurs de message';
+$string['cachedef_message_time_last_message_between_users'] = 'Durée entre messages les plus récents entre utilisateurs';
 $string['cachedef_navigation_expandcourse'] = 'Navigation des cours dépliables';
 $string['cachedef_observers'] = 'Observateurs d\'événements';
 $string['cachedef_plugin_functions'] = 'Fonctions de rappel des plugins disponibles';
@@ -107,9 +109,6 @@ $string['localstorenotification'] = 'Ce cache peut être stocké sans risque sur
 $string['lockdefault'] = 'Défaut';
 $string['locking'] = 'Verrouillage';
 $string['locking_help'] = 'Le verrouillage est un mécanisme restreignant l\'accès à des données en cache à un seul processus à la fois, afin d\'empêcher l\'écrasement de données. La méthode de verrouillage détermine comment le verrou est mis en place et vérifié.';
-$string['lockingmeans'] = 'Mécanisme de verrouillage';
-$string['lockmethod'] = 'Méthode de verrouillage';
-$string['lockmethod_help'] = 'Cette méthode est utilisée pour le verrouillage si requis par cet entrepôt.';
 $string['lockname'] = 'Nom';
 $string['locknamedesc'] = 'Le nom doit être unique et seuls les caractères suivants sont autorisés : a-zA-Z_';
 $string['locknamenotunique'] = 'Le nom que vous avez sélectionné n\'est pas unique. Veuillez choisir un nom unique.';

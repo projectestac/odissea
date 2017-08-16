@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_login', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_login', language 'el', branch 'MOODLE_32_STABLE'
  *
  * @package   block_login
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Προσθέστε ένα νέο μπλοκ σύνδεσης';
+$string['login:addinstance'] = 'Προσθήκη νέου μπλοκ σύνδεση';
 $string['pluginname'] = 'Είσοδος';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'sv', branch 'MOODLE_31_STABLE'
+ * Strings for component 'webservice', language 'sv', branch 'MOODLE_32_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,8 +84,6 @@ $string['key'] = 'Nyckel/Kod';
 $string['manageprotocols'] = 'Hantera protokoll';
 $string['managetokens'] = 'Hantera token';
 $string['missingrequiredcapability'] = 'Förmågan {$a} krävs.';
-$string['mobilewsdisabled'] = 'Avaktiverat';
-$string['mobilewsenabled'] = 'Aktiverat';
 $string['nocapabilitytouseparameter'] = 'Användaren har inte den förmåga som krävs för att använda parametern {$a}';
 $string['norequiredcapability'] = 'Ingen förmåga krävs';
 $string['notoken'] = 'Tokenlistan är tom';

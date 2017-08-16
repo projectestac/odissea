@@ -1598,6 +1598,30 @@ class mysqli_native_moodle_database extends moodle_database {
         return ' CAST(' . $fieldname . ' AS DECIMAL(65,7)) ';
     }
 
+    public function sql_equal($fieldname, $param, $casesensitive = true, $accentsensitive = true, $notequal = false) {
+        $equalop = $notequal ? '<>' : '=';
+
+        $collationinfo = explode('_', $this->get_dbcollation());
+        $bincollate = reset($collationinfo) . '_bin';
+
+        if ($casesensitive) {
+            // Current MySQL versions do not support case sensitive and accent insensitive.
+            return "$fieldname COLLATE $bincollate $equalop $param";
+        } else if ($accentsensitive) {
+            // Case insensitive and accent sensitive, we can force a binary comparison once all texts are using the same case.
+            return "LOWER($fieldname) COLLATE $bincollate $equalop LOWER($param)";
+        } else {
+            // Case insensitive and accent insensitive. All collations are that way, but utf8_bin.
+            $collation = '';
+            if ($this->get_dbcollation() == 'utf8_bin') {
+                $collation = 'COLLATE utf8_unicode_ci';
+            } else if ($this->get_dbcollation() == 'utf8mb4_bin') {
+                $collation = 'COLLATE utf8mb4_unicode_ci';
+            }
+            return "$fieldname $collation $equalop $param";
+        }
+    }
+
     /**
      * Returns 'LIKE' part of a query.
      *

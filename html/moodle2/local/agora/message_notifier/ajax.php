@@ -33,7 +33,7 @@ switch($action){
 			echo '<div class="message_content">'.$message->smallmessage.'</div>';
 			echo '</li>';
 		}
-		echo '<li class="viewall"><a href="'.$CFG->wwwroot.'/message/index.php">'.get_string('messagehistoryfull','message').'</a></li>';
+		echo '<li class="viewall"><a href="'.$CFG->wwwroot.'/message/index.php">'.get_string('messagehistoryfull','local_agora').'</a></li>';
 	break;
 	case 'show_message':
 		$id = required_param('id',PARAM_INT);

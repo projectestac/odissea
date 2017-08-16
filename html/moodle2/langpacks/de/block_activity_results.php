@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_activity_results', language 'de', branch 'MOODLE_32_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,18 @@ $string['config_show_best'] = 'Wie viele der höchste Bewertungen sollen angezei
 $string['config_show_worst'] = 'Wie viele der niedrigsten Bewertungen sollen angezeigt werden? (0=deaktivieren)';
 $string['configuredtoshownothing'] = 'Die Blockeinstellungen erlauben nicht, irgendwelche Ergebnisse anzuzeigen.';
 $string['config_use_groups'] = 'Gruppen statt Teilnehmer/innen anzeigen? (nur möglich, wenn Gruppen von der Aktivität unterstützt werden)';
+$string['defaultdecimalplaces'] = 'Nachkommastellen';
+$string['defaultdecimalplaces_desc'] = 'Anzahl der Nachkommastellen, die standardmäßig angezeigt werden soll';
+$string['defaultgradedisplay'] = 'Bewertungen anzeigen als';
+$string['defaultgradedisplay_desc'] = 'Wie sollen die Bewertungen standardmäßig angezeigt werden?';
+$string['defaulthighestgrades'] = 'Standardmäßig die höchsten Noten angezeigt';
+$string['defaulthighestgrades_desc'] = 'Wie viele der höchsten Noten sollen standardmäßig angezeigt werden?';
+$string['defaultlowestgrades'] = 'Standardmäßig die niedrigsten Noten angezeigt';
+$string['defaultlowestgrades_desc'] = 'Wie viele der niedrigsten Noten sollen standardmäßig angezeigt werden?';
+$string['defaultnameoptions'] = 'Privatheit der Ergebnisse';
+$string['defaultnameoptions_desc'] = 'Wie sollen die Schüler standardmäßig identifiziert werden?';
+$string['defaultshowgroups'] = 'Standardmäßig Gruppen anzeigen';
+$string['defaultshowgroups_desc'] = 'Standardmäßig Gruppen statt Schüler anzeigen (nur wenn die Aktivität Gruppen unterstützut';
 $string['error_emptyactivityid'] = 'Wählen Sie eine Aktivität aus, deren Ergebnisse im Block angezeigt werden sollen.';
 $string['error_emptyactivityrecord'] = 'Fehler: Die ausgewählte Aktivität ist nicht in der Datenbank eingetragen.';
 $string['error_nogroupsexist'] = 'Fehler: Der Block soll Gruppenergebnisse anzeigen, aber im Kurs sind keine Gruppen angelegt.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'workshop', language 'ca', branch 'MOODLE_32_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,8 @@ $string['allocation'] = 'Assignació de les trameses';
 $string['allocationconfigured'] = 'S\'ha configurat l\'assignació';
 $string['allocationdone'] = 'S\'ha efectuat l\'assignació';
 $string['allocationerror'] = 'Error en l\'assignació';
+$string['allowedfiletypesforoverallfeedback'] = 'Tipus de fitxer permesos a les adjuncions de la retroacció';
+$string['allowedfiletypesforoverallfeedback_help'] = 'Es poden restringir els tipus de fitxer permesos a les adjuncions de la retroacció introduint una llista d\'extensions de fitxer separada per comes; per exemple, «mp4, mp3, png, jpg». Si es deixa el camp en blanc, aleshores s\'hi permetran tots els tipus de fitxer.';
 $string['allsubmissions'] = 'Totes les trameses ({$a})';
 $string['alreadygraded'] = 'Ja qualificat';
 $string['areaconclusion'] = 'Text d\'acabament';

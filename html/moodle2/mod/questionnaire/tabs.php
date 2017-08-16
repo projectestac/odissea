@@ -17,10 +17,14 @@
 /**
  * prints the tabbed bar
  *
- * @author Mike Churchward
- * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @package questionnaire
+ * @package mod_questionnaire
+ * @copyright  2016 Mike Churchward (mike.churchward@poetgroup.org)
+ * @author     Mike Churchward
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+defined('MOODLE_INTERNAL') || die();
+
 global $DB, $SESSION;
 $tabs = array();
 $row  = array();
@@ -174,6 +178,7 @@ if (($canviewallgroups || ($canviewgroups && $questionnaire->capabilities->reada
 
     }
 } else if ($canviewgroups && $questionnaire->capabilities->readallresponses && ($numresp > 0) && $canviewgroups &&
+           // If resp_view is set to QUESTIONNAIRE_STUDENTVIEWRESPONSES_NEVER, then this will always be false.
            ($questionnaire->resp_view == QUESTIONNAIRE_STUDENTVIEWRESPONSES_ALWAYS ||
             ($questionnaire->resp_view == QUESTIONNAIRE_STUDENTVIEWRESPONSES_WHENCLOSED
                 && $questionnaire->is_closed()) ||
@@ -237,6 +242,5 @@ if ((count($row) > 1) || (!empty($row2) && (count($row2) > 1))) {
         $tabs[] = $row3;
     }
 
-    print_tabs($tabs, $currenttab, $inactive, $activated);
-
+    $questionnaire->page->add_to_page('tabsarea', print_tabs($tabs, $currenttab, $inactive, $activated, true));
 }

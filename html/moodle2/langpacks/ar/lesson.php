@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ar', branch 'MOODLE_31_STABLE'
+ * Strings for component 'lesson', language 'ar', branch 'MOODLE_32_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,7 @@ $string['anchortitle'] = 'ابداء المحتوى الاساسي';
 $string['and'] = 'و';
 $string['answer'] = 'أجب';
 $string['answeredcorrectly'] = 'الأجابة صحيحة';
-$string['attempt'] = 'محاولة: {$a}';
+$string['attempt'] = 'محاولة:  {$a}';
 $string['attempts'] = 'محاولات';
 $string['attemptsdeleted'] = 'حذف المحاولات';
 $string['available'] = 'متاح من';
@@ -86,12 +86,12 @@ $string['detailedstats'] = 'إحصائيات تفصيلية';
 $string['didnotanswerquestion'] = 'لم تتم أجابة هذا السؤال';
 $string['disabled'] = 'مُعطِّل';
 $string['displayhighscores'] = 'أعرض أعلى درجة';
-$string['displayinleftmenu'] = 'أعرض في القائمة';
-$string['displayleftmenu'] = 'أعرض القائمة';
+$string['displayinleftmenu'] = 'أعرض في القائمة اليسرى';
+$string['displayleftmenu'] = 'أعرض القائمة اليسرى';
 $string['displayofgrade'] = 'أعرض الدرجة (للطلاب فقط)';
 $string['displayreview'] = 'أعرض زر المراجعة';
 $string['edit'] = 'تحرير';
-$string['editlessonsettings'] = 'حرر إعدادات الدرس';
+$string['editlessonsettings'] = 'حرر إدادات الدرس';
 $string['editpage'] = 'حرر محتوى الصفحة';
 $string['editpagecontent'] = 'حرر محتوى الصفحة';
 $string['email'] = 'بريد الإلكتروني';
@@ -118,13 +118,13 @@ $string['eventquestionviewed'] = 'تم استعراض السؤال';
 $string['false'] = 'خاطىء';
 $string['fileformat'] = 'صيغة ملف';
 $string['finish'] = 'نهاية';
-$string['fractionsaddwrong'] = 'الدرجات الموجبة التي اخترتها لا تبلغ 100%
+$string['fractionsaddwrong'] = 'الدرجات الموجبة التي حصلت عليها لا تبلغ 100%
 <br />بل إنها تبلغ {$a} %
 <br />هل تريد الرجوع لتصويب هذا السؤال؟';
 $string['fractionsnomax'] = 'لا بد أن يكون أحد الأسئلة 100%, حتى يكون
 <br />الحصول على الدرجة النهائية لهذا السؤال ممكنا.
 <br />هل تريد الرجوع لتصويب هذا السؤال؟';
-$string['full'] = 'وسِّع';
+$string['full'] = 'وسع';
 $string['general'] = 'عام';
 $string['grade'] = 'درجة';
 $string['gradebetterthan'] = 'درجة أفضل من (&#37;)';
@@ -134,12 +134,12 @@ $string['gradeoptions'] = 'نقاط الدرجة';
 $string['groupsnone'] = 'لا توجد مجموعات في هذا المقرر الدراسي';
 $string['handlingofretakes'] = 'التعامل مع إعاد الأخذ';
 $string['havenotgradedyet'] = 'لم تصحح بعد';
-$string['here'] = 'هنا';
+$string['here'] = 'هناء';
 $string['highscore'] = 'الدرجة القصوى';
-$string['highscores'] = 'الدرجات القصوى';
-$string['hightime'] = 'الوقت الأقصى';
+$string['highscores'] = 'الدرجة القصوى';
+$string['hightime'] = 'الوقت الاقصى';
 $string['importcount'] = 'يتم استيراد {$a} الأسئله';
-$string['importquestions'] = 'استيراد أسئلة';
+$string['importquestions'] = 'استيراد اسئلة';
 $string['insertedpage'] = 'إدراج صفحة';
 $string['jump'] = 'قفز';
 $string['jumps'] = 'قفزات';
