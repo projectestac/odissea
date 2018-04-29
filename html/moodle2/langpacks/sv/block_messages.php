@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['messages:addinstance'] = 'Lägg till blocket Meddelanden';
+$string['messages:myaddinstance'] = 'Lägg till blocket Meddelanden på Mitt Moodle';
 $string['pluginname'] = 'Meddelanden';

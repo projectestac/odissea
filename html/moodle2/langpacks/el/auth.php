@@ -45,6 +45,7 @@ $string['auth_fieldlocks_help'] = '<p>Έχετε τη δυνατότητα να 
 $string['authinstructions'] = 'Εδώ μπορείτε να παρέχετε τις οδηγίες για τους χρήστες σας, έτσι ώστε να ξέρουν ποιο όνομα χρήστη και κωδικό πρόσβασης πρέπει να χρησιμοποιούν.  Το κείμενο που εισάγετε εδώ θα εμφανιστεί στη σελίδα σύνδεσης.  Εάν το αφήσετε  κενό, τότε καμία οδηγία δεν θα τυπωθεί.';
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
 $string['authloginviaemail'] = 'Επέτρεψε σύνδεση μέσω ηλεκτρονικού ταχυδρομείου';
+$string['authloginviaemail_desc'] = 'Επιτρέψτε στους χρήστες να χρησιμοποιούν εκτός από το Όνομα Χρήστη και την διεύθυνση ηλ.ταχυδρομείου (αν είναι μοναδική) για είσοδο στον ιστότοπο.';
 $string['auth_multiplehosts'] = 'Πολλαπλοί hosts ή διευθύνσεις μπορούν να προσδιοριστούν (πχ host1.com;host2.com;host3.com) ή (πχ xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Η μέθοδος αυθεντικοποίησης {$a} δεν έχει διαμορφωθεί.';
 $string['auth_outofnewemailupdateattempts'] = 'You have run out of allowed attempts to update your email address. Your update request has been cancelled.';

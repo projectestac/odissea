@@ -1,6 +1,12 @@
 Changes in progress
 -------------------------------------------
 
+Versió 2017101000 - ITTERIA (@svallde2)
+-------------------------------------------
+ - Fix the use of global variables without global keyword in the scope. Fix typo in valid_activity.
+ - Added fullscreen button for scorm actities
+ - Removed log legacy logging and added standard logging
+
 Versió 2015061500 0.2.7
 -------------------------------------------
  - Requirements of Moodle 2.7 or greater

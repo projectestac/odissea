@@ -152,11 +152,13 @@ $string['entrysaved'] = 'Η καταχώρησή σας αποθηκεύτηκε
 $string['errormustbeteacher'] = 'Πρέπει να είστε καθηγητής για να χρησιμοποιήσετε αυτή την σελίδα!';
 $string['example'] = 'Παράδειγμα αρθρώματος βάσης δεδομένων';
 $string['excel'] = 'Excel';
+$string['expired'] = 'Η δραστηριότητα αυτή έκλεισε στις {$a} και δεν είναι πλέον διαθέσιμη';
 $string['export'] = 'Εξαγωγή';
 $string['exportaszip'] = 'Εξαγωγή ως συμπιεσμένο αρχείο';
 $string['exportaszip_help'] = '<p align="center"><strong>Εξαγωγή σε αρχείο zip</strong></p>
 <p>Με τη λειτουργία αυτή μπορείτε να εξάγετε τη αυτή τη βάσης δεδομένων σε ένα αρχείο, το οποίο στη συνέχεια μπορεί να μεταφερθεί και να εισαχθεί σε άλλη βάση δεδομένων με τη λειτουργία "Εισαγωγή από αρχείο zip".</p>';
 $string['exportedtozip'] = 'Εξήχθη σε προσωρινό συμπιεσμένο αρχείο...';
+$string['exportentries'] = 'Εξαγωγή καταχωρίσεων';
 $string['failedpresetdelete'] = 'Σφάλμα κατά τη διαγραφή προτύπου!';
 $string['fieldadded'] = 'Προστέθηκε πεδίο';
 $string['fieldallowautolink'] = 'Να επιτρέπεται η αυτόματη σύνδεση';
@@ -269,7 +271,9 @@ $string['nomatch'] = 'Δεν βρέθηκαν καταχωρήσεις που ν
 $string['nomaximum'] = 'Χωρίς μέγιστο';
 $string['norecords'] = 'Δεν υπάρχουν καταχωρήσεις στη βάση δεδομένων';
 $string['nosingletemplate'] = 'Το ατομικό πρότυπο δεν έχει οριστεί ακόμα';
+$string['notapproved'] = 'Δεν έχει ακόμη εγκριθεί.';
 $string['notinjectivemap'] = 'Δεν είναι injective map';
+$string['notopenyet'] = 'Συγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
 $string['number'] = 'Αριθμός';
 $string['numberrssarticles'] = 'RSS Άρθρα';
 $string['numnotapproved'] = 'Εκκρεμεί';

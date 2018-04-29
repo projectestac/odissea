@@ -41,4 +41,4 @@ $string['pluginname_help'] = 'Boxのリポジトリ';
 $string['saved'] = 'Boxデータが保存されました。';
 $string['shareurl'] = '共有URL';
 $string['username'] = 'Boxユーザ名';
-$string['warninghttps'] = 'Boxのリポジトリを動作させるには、あなたのウェブサイトがHTTPSを使用している必要があります。';
+$string['warninghttps'] = 'Boxのリポジトリを動作させるにはあなたのウェブサイトがHTTPSを使用している必要があります。';

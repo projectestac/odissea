@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Participante {$a}';
+$string['blindmarkingviewfullname'] = 'Participante {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Ativo por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método de trabalho estará ativo por predefinição para todos os novos trabalhos.';
 $string['enabled'] = 'Comentários';

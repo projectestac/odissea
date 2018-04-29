@@ -31,9 +31,9 @@ $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'MathJax URL';
 $string['httpsurl_help'] = 'Volledige URL naar MathJax-bibliotheek.';
 $string['localinstall'] = 'Lokale MathJax-installatie';
-$string['localinstall_help'] = 'De standaard MathJax configuratie gebruikt de CDN versie van MathJax, maar MathJax kan lokaal worden geïnstalleerd indien nodig.
+$string['localinstall_help'] = 'De standaard MathJax-configuratie gebruikt de CDN versie van MathJax, maar MathJax kan lokaal worden geïnstalleerd indien nodig.
 
-Dit kan nuttig zijn om bandbreedte te besparenof vanwege lokale proxy beperkingen.
+Dit kan nuttig zijn om bandbreedte te besparen of vanwege lokale proxy- beperkingen.
 
 Om een lokale installatie van MathJax te gebruiken, download je eerst de volledige MathJax bibliotheek http://www.mathjax.org/. Vervolgens installeer je ze op een webserver. Pas dan de MathJax filterinstellingen httpurl en / of httpsurl aan om te verwijzen naar de lokale MathJax.js-URL.';
 $string['mathjaxsettings'] = 'MathJax-configuratie';

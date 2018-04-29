@@ -72,7 +72,7 @@ $string['check_riskadmin_detailsok'] = '<p>Mesedez, egiazta ezazu sistemako kude
 $string['check_riskadmin_detailswarning'] = '<p>Mesedez, egiazta ezazu sistemako kudeatzaileen zerrenda hau:</p>{$a->admins}
 <p>Gomendagarria da kudeatzaile-rola sistemaren testuinguruan baino ez esleitzea. Ondoko erabiltzaileek izan dute kudeatzaile-rola esleituta:</p>{$a->unsupporte}';
 $string['check_riskadmin_name'] = 'Kudeatzaileak';
-$string['check_riskadmin_ok'] = 'Zerbitzariko {$a} kudeatzaile aurkituta.';
+$string['check_riskadmin_ok'] = 'Zerbitzariko {$a} kudeatzaile aurkitu dira.';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) berrikusi rol-esleipena</a>';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
@@ -84,6 +84,9 @@ $string['check_unsecuredataroot_error'] = 'Zure dataroot direktorioa <code>{$a}<
 $string['check_unsecuredataroot_name'] = 'dataroot ez da segurua';
 $string['check_unsecuredataroot_ok'] = 'Dataroot direktorioak ez du egon behar web-etik eskuratzeko moduan.';
 $string['check_unsecuredataroot_warning'] = 'Zure dataroot direktorioa <code>{$a}</code> okerreko kokagunean dago eta agerian dago web-ean!.';
+$string['check_webcron_name'] = 'Web cron-a';
+$string['check_webcron_ok'] = 'Erabiltzaile anonimoek ez dute sarbiderik cron-era.';
+$string['check_webcron_warning'] = 'Erabiltzaile anonimoak cron-era sar daitezke.';
 $string['configuration'] = 'Ezarpenak';
 $string['description'] = 'Deskribapena';
 $string['details'] = 'Xehetasunak';

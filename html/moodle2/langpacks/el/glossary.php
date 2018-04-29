@@ -186,6 +186,7 @@ $string['displayformat_help'] = '<p align="center"><strong>Διάταξη Εμφ
   ακολουθώντας τις οδηγίες που θα βρουν στο αρχείο <strong>mod/</strong><strong>glossary/</strong><strong>formats/</strong><strong>README.</strong><strong>txt</strong>.</p>';
 $string['displayformats'] = 'Μορφές προβολής';
 $string['displayformatssetup'] = 'Ρύθμιση Μορφών προβολής';
+$string['duplicatecategory'] = 'Διπλότυπη κατηγορία';
 $string['duplicateentry'] = 'Διπλή εγγραφή';
 $string['editalways'] = 'Πάντα επεξεργασία';
 $string['editalways_help'] = '<p align="center"><strong>Τροποποίηση πάντα</strong></p>
@@ -219,6 +220,9 @@ $string['errconceptalreadyexists'] = 'Αυτή η έννοια υπάρχει ή
 $string['errdeltimeexpired'] = 'Δεν μπορείτε να το διαγράψετε αυτό. Ο χρόνος έληξε!';
 $string['erredittimeexpired'] = 'Ο χρόνος επεξεργασίας αυτής της καταχώρησης έληξε.';
 $string['errorparsingxml'] = 'Συνέβησαν σφάλματα κατά την ανάλυση αυτού του αρχείου. Σιγουρευτείτε οτι η σύνταξη του είναι έγκυρη XML.';
+$string['eventcategorycreated'] = 'Η κατηγορία δημιουργήθηκε';
+$string['eventcategorydeleted'] = 'Η κατηγορία διαγράφηκε';
+$string['eventcategoryupdated'] = 'Η κατηγορία ενημερώθηκε';
 $string['explainaddentry'] = 'Προσθέστε μια νέα εγγραφή στο τρέχον λεξικό.<br /> Η έννοια και ο ορισμός είναι υποχρεωτικά πεδία.';
 $string['explainall'] = 'Εμφανίζει όλες τις εγγραφές σε μια σελίδα';
 $string['explainalphabet'] = 'Προβολή του λεξικού χρησιμοποιώντας αυτό το ευρετήριο';

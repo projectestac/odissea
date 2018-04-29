@@ -37,6 +37,7 @@ $string['eventuserreportviewed'] = 'Logbericht von Nutzer/innen angezeigt';
 $string['logsformat'] = 'Logdaten-Format';
 $string['log:view'] = 'Logdaten von Kursen anzeigen';
 $string['log:viewtoday'] = 'Heutige Logdaten anzeigen';
+$string['nocapability'] = 'Zugriff auf den Benutzerprotokollbericht nicht möglich';
 $string['nologreaderenabled'] = 'Anzeige für Logdaten deaktiviert';
 $string['origin'] = 'Quelle';
 $string['other'] = 'Mehr';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aggregategrades'] = 'Kalifikazoak birkalkulatu';
+$string['aggregategrades'] = 'Kalkulatu kalifikazioak';
 $string['aggregation'] = 'Kalifikazioen agregazioa';
 $string['allocate'] = 'Esleitu bidalketak';
 $string['allocatedetails'] = 'hainbeste espero dira: {$a->expected}<br />bidalitakoak: {$a->submitted}<br />esleitzekoak: {$a->allocate}';
@@ -282,6 +282,8 @@ $string['submissiongrade'] = 'Bidalketaren kalifikazioa';
 $string['submissiongrade_help'] = 'Ezarpen honek bidalitako lanetan lor daitekeen gehienezko kalifikazioa zehazten du.';
 $string['submissiongradeof'] = 'Bidalketaren kalifikazioa ({$a}(e)tik)';
 $string['submissionlastmodified'] = 'Azken aldaketa';
+$string['submissionrequiredcontent'] = 'Testuren bat idatzi edo fitxategiren bat gehitu behar duzu.';
+$string['submissionrequiredfile'] = 'Fitxategiren bat gehitu edo testuren bat idatzi behar duzu.';
 $string['submissionsettings'] = 'Bidalketaren ezarpenak';
 $string['submissionsreport'] = 'Tailerraren bidalketa-txostena';
 $string['submissionstart'] = 'Bidalketetarako lehen eguna';

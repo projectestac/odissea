@@ -37,4 +37,5 @@ $string['levelgroup'] = 'Gewichtung und Beschreibung';
 $string['levels'] = 'Bereiche';
 $string['mustbeunique'] = 'Bewertungsstufen müssen innerhalb eines Kriteriums eindeutig sein.';
 $string['mustchooseone'] = 'Sie müssen eins dieser Elemente auswählen';
+$string['mustdefinelevel'] = 'Es ist mindestens ein Level erforderlich';
 $string['pluginname'] = 'Bewertungskriterien';

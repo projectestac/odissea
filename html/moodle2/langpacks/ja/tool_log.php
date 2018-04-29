@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = '利用可能なログストア';
-$string['configlogplugins'] = 'すべての必要なプラグインを有効にして、適切な順番に配置してください。';
+$string['configlogplugins'] = 'すべての必要なプラグインを有効にして適切な順序に配置してください。';
 $string['logging'] = 'ロギング';
 $string['managelogging'] = 'ログストアを管理する';
 $string['pluginname'] = 'ログストアマネージャ';

@@ -69,7 +69,7 @@ $string['completionicons_help'] = 'Une coche à côté du nom de l\'activité pe
 
 Si la bordure de la case à cocher est traitillée, une coche apparaîtra automatiquement lorsque l\'activité sera terminée d\'après les conditions fixées par l\'enseignant.
 
-Si la bordure de la case à cocher est continue, vous pouvez la cocher lorsque vous pensez avoir terminé l\'activité. Vous pouvez cliquer une nouvelle fois si vous changez d\'avis. La coche est optionnelle et vous permet simplement de savoir où vous en êtes dans le cours.';
+Si la bordure de la case à cocher est continue, vous pouvez la cocher lorsque vous pensez avoir terminé l\'activité. Vous pouvez cliquer une nouvelle fois si vous changez d\'avis.';
 $string['completion_manual'] = 'Les participants peuvent marquer manuellement cette activité comme terminée';
 $string['completionmenuitem'] = 'Achèvement';
 $string['completion-n'] = 'Pas terminé';

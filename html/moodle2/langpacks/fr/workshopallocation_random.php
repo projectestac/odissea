@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addselfassessment'] = 'Ajouter les auto-évaluations';
 $string['allocationaddeddetail'] = 'Nouvelle évaluation à effectuer : <strong>{$a->reviewername}</strong> est évaluateur de <strong>{$a->authorname}</strong>';
 $string['allocationdeallocategraded'] = 'Impossible de supprimer l\'attribution de l\'évaluation déjà notée. Évaluateur : <strong>{$a->reviewername}</strong>, auteur du travail : <strong>{$a->authorname}</strong>';
-$string['allocationreuseddetail'] = 'Évaluation réutilisée : <strong>{$a->reviewername}</strong> conservé comme relecteur de <strong>{$a->authorname}</strong>';
+$string['allocationreuseddetail'] = 'Évaluation réutilisée : <strong>{$a->reviewername}</strong> demeure l\'évaluateur de <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Réglages des attributions aléatoires';
 $string['assessmentdeleteddetail'] = 'Attribution d\'évaluation supprimée : <strong>{$a->reviewername}</strong> n\'est plus évaluateur de <strong>{$a->authorname}</strong>';
 $string['assesswosubmission'] = 'Les participants peuvent évaluer sans avoir remis de travail';

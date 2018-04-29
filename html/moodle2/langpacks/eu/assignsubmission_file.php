@@ -36,6 +36,7 @@ $string['enabled_help'] = 'Gaituz gero, ikasleek fitxategi bat edo gehiago igo d
 $string['eventassessableuploaded'] = 'Fitxategia ondo igo da.';
 $string['file'] = 'Fitxategi-bidalketak';
 $string['filesofthesetypes'] = 'Mota hauetako fitxategiak gehitu daitezke bidalketa honetara:';
+$string['filetypewithexts'] = '{$a->name} &mdash; {$a->extlist}';
 $string['maxbytes'] = 'Fitxategiaren gehienezko tamaina';
 $string['maxfiles'] = 'Bidalketa bakoitzeko gehienezko fitxategi kopurua';
 $string['maxfiles_help'] = 'Fitxategien bidalketa gaituta egonez gero, zeregin bakoitzak jasoko ahal duen gehienezko fitxategi kopurua ezarri daiteke.';

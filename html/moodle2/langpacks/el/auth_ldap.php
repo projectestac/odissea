@@ -108,3 +108,5 @@ $string['ntlmsso_attempting'] = 'Attempting Single Sign On via NTLM...';
 $string['ntlmsso_failed'] = 'Auto-login failed, try the normal login page...';
 $string['ntlmsso_isdisabled'] = 'NTLM SSO is disabled.';
 $string['pluginname'] = 'Χρήση LDAP server.';
+$string['pluginnotenabled'] = 'Το πρόσθετο δεν είναι ενεργοποιημένο!';
+$string['usernotfound'] = 'Αδυναμία εύρεσης χρήστη στο LDAP';

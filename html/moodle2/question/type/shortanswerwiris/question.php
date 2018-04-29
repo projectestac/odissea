@@ -133,7 +133,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         }
         // Used to simulate a grade failure when doing tests!
         if ($error) {
-            throw new moodle_exception('Failed to grade (testing-' . ($this->step->get_attempts() + 1) . ')!', 'qtype_wq');
+            throw new moodle_exception(get_string('failedtogradetest', 'qtype_shortanswerwiris', ($this->step->get_attempts() + 1)), 'qtype_wq');
         }
         // END TEST.
     }
@@ -141,7 +141,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
     public function get_matching_answer(array $response) {
         try {
             // Quick return if no answer given.
-            if (!isset($response['answer'])) {
+            if (!isset($response['answer']) || $response['answer'] == null) {
                 return null;
             }
             // Optimization in order to avoid a service call.

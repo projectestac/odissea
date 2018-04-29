@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['gradesoverview'] = '成绩概览';
 $string['overview:view'] = '查看总体报表';
 $string['pluginname'] = '总体报表';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Συμμετέχοντας {$a}';
+$string['blindmarkingviewfullname'] = 'Συμμετέχοντας {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['enabled'] = 'Υποβολή σχολίων';
 $string['pluginname'] = 'Υποβολή σχολίων';

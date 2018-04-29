@@ -152,6 +152,9 @@ class com_wiris_quizzes_wrap_QuestionWrap implements com_wiris_quizzes_api_Quest
 		}
 	}
 	public function addAssertion($name, $correctAnswer, $studentAnswer, $parameters) {
+		if($parameters !== null && !Std::is($parameters, _hx_qtype("Array"))) {
+			$parameters = new _hx_array($parameters);
+		}
 		try {
 			$this->wrapper->start();
 			$this->question->addAssertion($name, $correctAnswer, $studentAnswer, $parameters);

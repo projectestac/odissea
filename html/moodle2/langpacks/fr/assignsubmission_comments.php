@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Participant {$a}';
+$string['blindmarkingviewfullname'] = 'Participant {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Activé par défaut';
 $string['default_help'] = 'Si ce réglage est activé, cette méthode de remise de travaux sera activée par défaut pour tous les nouveaux devoirs.';
 $string['enabled'] = 'Commentaires de remise du travail';

@@ -505,9 +505,7 @@ $string['subscriptionmode_help'] = 'La sottoscrizione di un forum consente di ri
 * Facoltativa - I partecipanti possono scegliere se sottoscrivere il forum o meno
 * Obbligatoria - La sottoscrizione è attiva per tutti i partecipanti sottoscrivono il forum e non è possibile revocarla.
 * Automatica - La sottoscrizione è attiva per tutti i partecipanti ma ciascuno può revocare la propria sottoscrizione se lo desidera
-* Disabilitata - Non è possibile sottoscrivere il forum
-
-Nota: eventuali modifiche alla modalità di sottoscrizione influenzerà gli utenti che verranno iscritti al corso dopo la modifica e non gli utenti iscritti in precedenza.';
+* Disabilitata - Non è possibile sottoscrivere il forum';
 $string['subscriptionoptional'] = 'Facoltativa';
 $string['subscriptions'] = 'Sottoscrizioni';
 $string['thisforumisthrottled'] = 'Questo forum ha una soglia massima di interventi che è possibile effettuare in un dato intervallo di tempo - la soglia al momento è impostata a {$a->blockafter} interventi in {$a->blockperiod}';
@@ -521,11 +519,11 @@ $string['trackingoff'] = 'Disabilitato';
 $string['trackingon'] = 'Forzato';
 $string['trackingoptional'] = 'A scelta';
 $string['trackingtype'] = 'Tipo di evidenziamento messaggi';
-$string['trackingtype_help'] = 'L\'impostazione consente di scegliere se abilitare l\'evidenziamento dei messaggi non letti. Sono disponibili tre opzioni:
+$string['trackingtype_help'] = 'L\'evidenziamento dei messaggi non letti facilita l\'individuazione degli interventi e delel discussioni non lette.
 
-* A scelta: i partecipanti possono attivare l\'evidenziamento tramite il link nel blocco amministrazione. L\'evidenziamento deve essere attivo anche nel profilo dell\'utente
-* Forzato: l\'evidenziamento è sempre attivo, indipendentemente dalle preferenze dell\'utente
-* Disabilitato: l\'evidenziamento non è attivo';
+Impostando l\'evidenziamento opzionale, i partecipanti potranno attivarlo tramite il link nel blocco amministrazione. (L\'evidenziamento deve essere attivo anche nelle preferenze forum dell\'utente).
+
+Nel caso in cu l\'amministratore del sito abbiamo Impostato l\'evidenziamento obbligatorio, sarà disponibile una terza opzione, \'Forzato\'. In questo caso l\'evidenziamento sarà sempre attivo indipendentemente dalle preferenze dell\'utente.';
 $string['trackreadposts_header'] = 'Evidenziamento messaggi forum';
 $string['unread'] = 'Non letto';
 $string['unreadposts'] = 'Interventi non letti';

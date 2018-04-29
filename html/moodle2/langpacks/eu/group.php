@@ -119,7 +119,7 @@ Ikastaro mailan definitutako taldea modua izango da berezko modua ikastaroko jar
 $string['groupmy'] = 'Neure taldea';
 $string['groupname'] = 'Taldearen izena';
 $string['groupnameexists'] = 'Dagoeneko bada ikastaro honetan \'{$a}\' izeneko taldea; mesedez, aukeratu beste bat.';
-$string['groupnotamember'] = 'Barkatu, ez zara talde honetako kide';
+$string['groupnotamember'] = 'Sentitzen dugu, ez zara talde honetako kide';
 $string['groups'] = 'Taldeak';
 $string['groupscount'] = '({$a}) taldeak';
 $string['groupsettingsheader'] = 'Taldeak';

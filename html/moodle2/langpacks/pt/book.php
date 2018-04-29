@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Adicionar novo capítulo';
-$string['book:addinstance'] = 'Adicionar novo livro';
+$string['book:addinstance'] = 'Adicionar novo Livro';
 $string['book:edit'] = 'Editar capítulos do livro';
 $string['book:read'] = 'Ver livro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos ocultos';
@@ -88,14 +88,14 @@ $string['numbering_help'] = '* Sem numeração - Os títulos dos capítulos e su
 * Avançado - Os subcapítulos são exibidos com avanço no índice';
 $string['numberingoptions'] = 'Opções de formatação disponíveis';
 $string['numberingoptions_desc'] = 'Opções de formatação usadas para exibir os capítulos e subcapítulos no índice';
-$string['page-mod-book-x'] = 'Qualquer página do Livro';
+$string['page-mod-book-x'] = 'Qualquer página do recurso Livro';
 $string['pluginadministration'] = 'Administração do Livro';
 $string['pluginname'] = 'Livro';
 $string['search:activity'] = 'Livro - informações sobre o recurso';
 $string['search:chapter'] = 'Livro - capítulos';
 $string['showchapter'] = 'Mostrar capítulo "{$a}"';
 $string['subchapter'] = 'Subcapítulo';
-$string['subchapternotice'] = '(Apenas disponível quando o primeiro capitulo está criado)';
+$string['subchapternotice'] = '(Apenas disponível quando o primeiro capítulo está criado)';
 $string['subplugintype_booktool'] = 'Ferramenta Livro';
 $string['subplugintype_booktool_plural'] = 'Configurações do livro';
 $string['toc'] = 'Índice';

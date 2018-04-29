@@ -27,5 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = '维基媒体容器类型配置';
 $string['keyword'] = '搜索';
+$string['maxheight'] = '最大图像高度(像素PX)';
+$string['maxwidth'] = '最大图像宽度（像素PX）';
 $string['pluginname'] = '维基媒体';
 $string['wikimedia:view'] = '查看维基媒体容器';

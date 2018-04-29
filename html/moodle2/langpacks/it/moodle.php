@@ -163,8 +163,8 @@ $string['authenticateduserdescription'] = 'Tutti gli utenti autenticati.';
 $string['authentication'] = 'Autenticazione';
 $string['authenticationplugins'] = 'Plugin di autenticazione';
 $string['autosubscribe'] = 'Sottoscrizione automatica forum';
-$string['autosubscribeno'] = 'No: non sottoscrivo i forum automaticamente';
-$string['autosubscribeyes'] = 'Si: quando invio messaggi, sottoscrivo il forum automaticamente';
+$string['autosubscribeno'] = 'No: non sottoscrivo le discussioni automaticamente';
+$string['autosubscribeyes'] = 'Si: quando invio messaggi, sottoscrivo la discussione automaticamente';
 $string['availability'] = 'Disponibilità';
 $string['availablecourses'] = 'Corsi disponibili';
 $string['back'] = 'Indietro';
@@ -339,7 +339,7 @@ $string['coursedisplay_help'] = 'Consente di impostare il modo con cui saranno v
 $string['coursedisplay_multi'] = 'Visualizza una sezione per pagina';
 $string['coursedisplay_single'] = 'Visualizza le sezioni nella stessa pagina';
 $string['courseduration'] = 'Durata del corso';
-$string['courseduration_desc'] = 'La durata del corso viene utilizzata per calcolare il default della data di fine del corso. La data di fine del corso viene utilizzata unicamente nei report, gli utenti potranno accedere al corso anche dopo la data di fine.';
+$string['courseduration_desc'] = 'La durata del corso viene utilizzata per calcolare per default della data di fine del corso. La data di fine del corso viene utilizzata per stabilire se il corso deve apparire o meno nell\'elenco dei corsi di ciascun utente.  Gli utenti potranno comunque accedere al corso anche dopo la data di fine.';
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
 $string['coursefiles'] = 'File legacy del corso';
 $string['coursefilesedit'] = 'Gestisci file legacy del corso';
@@ -639,6 +639,8 @@ $string['emaildisplayyes'] = 'Visualizza il mio indirizzo email agli altri';
 $string['emailenable'] = 'Questo indirizzo email è abilitato.';
 $string['emailenableclick'] = 'Clicca qui per riabilitare tutte le email che sono spedite a questo indirizzo';
 $string['emailexists'] = 'Questo indirizzo email è già esistente.';
+$string['emailexistshintlink'] = 'Recupera username o password';
+$string['emailexistssignuphint'] = 'Forse hai già creato un account in precedenza? {$a}';
 $string['emailformat'] = 'Formato email';
 $string['emailmustbereal'] = 'Nota: il tuo indirizzo email deve essere esistente';
 $string['emailnotallowed'] = 'Gli indirizzi email di questi domini non sono ammessi ({$a})';
@@ -927,6 +929,7 @@ $string['hiddensections_help'] = 'L\'impostazione determina come visualizzare le
 $string['hiddensectionsinvisible'] = 'Le sezioni nascoste non sono visibili';
 $string['hide'] = 'Nascondi';
 $string['hideadvancedsettings'] = 'Nascondi le impostazioni avanzate';
+$string['hidechartdata'] = 'Nascondi i dati del grafico';
 $string['hidepicture'] = 'Nascondi immagine';
 $string['hidesection'] = 'Nascondi sezione {$a}';
 $string['hidesettings'] = 'Nascondi impostazioni';
@@ -1243,11 +1246,11 @@ $string['newsectionname'] = 'Nuovo nome per la sezione {$a}';
 $string['newsitem'] = 'news';
 $string['newsitems'] = 'annunci';
 $string['newsitemsnumber'] = 'Numero di annunci da visualizzare';
-$string['newsitemsnumber_help'] = '<p>Nei corsi che usano il "formato settimanale" ed il "formato per argomenti", è presente un Forum di default chiamato "Annunci". Questo forum è utile per comunicare agli studenti informazioni e novità riguardanti il corso. (Per impostazione predefinita tutti gli studenti sono automaticamente iscritti a questo Forum e riceveranno nella propria casella di email qualsiasi intervento inserito nel Forum stesso).</p>
+$string['newsitemsnumber_help'] = 'Il forum annunci è un forum particolare creato automaticamente con sottoscrizione obbligatoria per default e dove possono intervenire solo utenti con appositi privilegi (per default i docenti)
 
-<p>Il Numero di annunci da visualizzare determina il numero di ultime notizie da presentare nella pagina principale del corso, nel blocco appunto chiamato "Ultime notizie".</p>
+L\'impostazione stabilisce il numero di annunci più recente che appariranno nel blocco \'Annunci recenti\'.
 
-<p>Se "Annunci da visualizzare" è impostato a "0", nella pagina principale del corso il blocco "Ultime notizie" non sarà visibile.</p>';
+Se nel corso non si desidera il forum annunci, impostare il valore pari a zero.';
 $string['newuser'] = 'Nuovo utente';
 $string['newusernewpasswordsubj'] = 'Registrazione nuovo utente';
 $string['newusernewpasswordtext'] = 'Gentile {$a->firstname},
@@ -1543,7 +1546,7 @@ $string['restoreuserconflict'] = 'Tentare di ripristinare l\'utente \'{$a}\' cau
 $string['restoreuserinfofailed'] = 'Il ripristino è stato interrotto poiché non hai il permesso di ripristinare dati utente.';
 $string['restoreusersprecheck'] = 'Controllo dati utente';
 $string['restoreusersprecheckerror'] = 'Si sono verificati alcuni problemi durante il controllo dei dati utente';
-$string['restricted'] = 'Ridotto';
+$string['restricted'] = 'Accesso vincolato';
 $string['returningtosite'] = 'Ciao, sei ritornato?';
 $string['returntooriginaluser'] = 'Ritorna a {$a}';
 $string['revert'] = 'Ripristina';
@@ -1683,6 +1686,7 @@ $string['showallcourses'] = 'Visualizza tutti i corsi';
 $string['showallusers'] = 'Visualizza tutti gli utenti';
 $string['showblockcourse'] = 'Visualizza l\'elenco dei corsi che contengono blocchi';
 $string['showcategory'] = 'Visualizza {$a}';
+$string['showchartdata'] = 'Visualizza i dati del grafico';
 $string['showcomments'] = 'Visualizza/nascondi i commenti';
 $string['showcommentsnonjs'] = 'Visualizza commenti';
 $string['showdescription'] = 'Visualizza descrizione nella home del corso';
@@ -1705,6 +1709,7 @@ $string['showreports_help'] = 'Per ciascun partecipante sono disponibili i repor
 $string['showsettings'] = 'Visualizza impostazioni';
 $string['showtheselogs'] = 'Visualizza i log';
 $string['showthishelpinlanguage'] = 'Visualizza l\'help nella lingua: {$a}';
+$string['sidepanel'] = 'Pannello laterale';
 $string['signoutofotherservices'] = 'Logout generale';
 $string['signoutofotherservices_help'] = 'L\'account sarà disconnesso da tutti i dispositivi e sistemi che usano i web service, ad esempio l\'app mobile.';
 $string['since'] = 'Dal';
@@ -1806,7 +1811,7 @@ $string['subcategories'] = 'Sotto categorie';
 $string['subcategory'] = 'Sotto categoria';
 $string['subcategoryof'] = 'Sotto categoria di {$a}';
 $string['submit'] = 'Invia';
-$string['success'] = 'Operazione eseguita con successo';
+$string['success'] = 'Operazione eseguita correttamente';
 $string['summary'] = 'Introduzione';
 $string['summary_help'] = '<p>Il sommario dell\'argomento o della settimana è un breve testo utile per preparare gli studenti alle attività che intraprenderanno nell\'argomento o nella settimana.</p>
 
@@ -1822,6 +1827,9 @@ $string['switchdevicedefault'] = 'Passa al tema standard';
 $string['switchdevicerecommended'] = 'Passa al tema consigliato per il tuo dispositivo';
 $string['switchrolereturn'] = 'Ritorna al mio ruolo normale';
 $string['switchroleto'] = 'Cambia ruolo in ...';
+$string['switchroleto_help'] = 'Seleziona un ruolo per avere un\'idea di come visualizzeranno il corso gli utenti che hanno quel ruolo.
+
+Da notare che la visualizzazione non sarà del tutto fedele.  (<a href="https://docs.moodle.org/en/Switch_roles">Maggiori dettagli e alternative</a>).';
 $string['tag'] = 'Tag';
 $string['tagalready'] = 'Questa tag già esiste';
 $string['tagmanagement'] = 'Gestione tag';
@@ -1831,7 +1839,7 @@ $string['teacheronly'] = 'solo per {$a}';
 $string['teacherroles'] = '{$a} ruoli';
 $string['teachers'] = 'Docenti';
 $string['textediting'] = 'Editor di testo';
-$string['textediting_help'] = 'Selezionando un editor HTML come Atto o TinyMCE, le aree di testo presenteranno una toolbar con pulsanti che facilitano l\'inserimento di contenuti.
+$string['textediting_help'] = 'Selezionando un editor HTML come Atto o TinyMCE, le aree di testo presenteranno una barra degli strumenti con pulsanti che facilitano l\'inserimento di contenuti.
 
 Selezionando \'testo semplice\'. sarà possibile scegliere la formattazione del testo inserito, ad esempio HTML o Markdown.
 
@@ -1995,7 +2003,7 @@ $string['withchosenfiles'] = 'Con i files scelti';
 $string['withdisablednote'] = '{$a} (disabilitato)';
 $string['withoutuserdata'] = 'senza dati utente';
 $string['withselectedusers'] = 'Con gli utenti selezionati...';
-$string['withselectedusers_help'] = '* Invia messaggio - Per inviare un mesaggio a uno o più partecipanti
+$string['withselectedusers_help'] = '* Invia messaggio - Per inviare un messaggio a uno o più partecipanti
 * Aggiungi un\'annotazione - per aggiungere un\'annotazione ad un determinato partecipante
 * Aggiungi un\'annotazione generale - Per aggiungere la stessa annotazione a più partecipanti';
 $string['withuserdata'] = 'con i dati utente';

@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backupofcourselogs'] = '{$a}-(r)en segurtasun-kopien agerraldiak';
+$string['logsofbackupexecutedon'] = '{$a}-n egikaritutako segurtasun-kopien agerraldiak';
 $string['nobackupsfound'] = 'Ez da segurtasun-kopiarik aurkitu.';
+$string['nologsfound'] = 'Ez da segurtasun-kopia honen agerraldirik aurkitu.';
 $string['pluginname'] = 'Segurtasun-kopien txostena';
+$string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Ikusi agerraldiak';

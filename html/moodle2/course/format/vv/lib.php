@@ -37,19 +37,78 @@ class format_vv extends format_topics {
     /**
      * Definitions of the additional options that this course format uses for course
      *
-     * Topics format uses the following options:
-     * - coursedisplay
-     * - numsections
-     * - hiddensections
-     *
      * @param bool $foreditform
      * @return array of options
      */
     public function course_format_options($foreditform = false) {
-        $options = parent::course_format_options($foreditform);
-        unset($options['coursedisplay']); // This format is only single-page
-        unset($options['hiddensections']);  // Hidden sections are always invisible
-        return $options;
+        static $courseformatoptions = false;
+        if ($courseformatoptions === false) {
+            if ($this->courseid) {
+                $modinfo = get_fast_modinfo($this->courseid);
+                $sections = $modinfo->get_section_info_all();
+                $default = $sections ? (int) max(array_keys($sections)) : 0;
+            } else {
+                $courseconfig = get_config('moodlecourse');
+                $default = $courseconfig->numsections;
+            }
+            $courseformatoptions = array(
+                'numsections' => array(
+                    'default' => $default,
+                    'type' => PARAM_INT,
+                ),
+            );
+        }
+        if ($foreditform && !isset($courseformatoptions['numsections']['label'])) {
+            $courseconfig = get_config('moodlecourse');
+            $max = $courseconfig->maxsections;
+            if (!isset($max) || !is_numeric($max)) {
+                $max = 52;
+            }
+            $sectionmenu = array();
+            for ($i = 0; $i <= $max; $i++) {
+                $sectionmenu[$i] = "$i";
+            }
+            $courseformatoptionsedit = array(
+                'numsections' => array(
+                    'label' => new lang_string('numberweeks'),
+                    'element_type' => 'select',
+                    'element_attributes' => array($sectionmenu),
+                ),
+            );
+            $courseformatoptions = array_merge_recursive($courseformatoptions, $courseformatoptionsedit);
+        }
+        return $courseformatoptions;
+    }
+
+    /**
+     * Adds format options elements to the course/section edit form.
+     *
+     * This function is called from {@link course_edit_form::definition_after_data()}.
+     *
+     * @param MoodleQuickForm $mform form the elements are added to.
+     * @param bool $forsection 'true' if this is a section edit form, 'false' if this is course edit form.
+     * @return array array of references to the added form elements.
+     */
+    public function create_edit_form_elements(&$mform, $forsection = false) {
+        $elements = parent::create_edit_form_elements($mform, $forsection);
+
+        // Increase the number of sections combo box values if the user has increased the number of sections
+        // using the icon on the course page beyond course 'maxsections' or course 'maxsections' has been
+        // reduced below the number of sections already set for the course on the site administration course
+        // defaults page.  This is so that the number of sections is not reduced leaving unintended orphaned
+        // activities / resources.
+        if (!$forsection) {
+            $maxsections = get_config('moodlecourse', 'maxsections');
+            $numsections = $mform->getElementValue('numsections');
+            $numsections = $numsections[0];
+            if ($numsections > $maxsections) {
+                $element = $mform->getElement('numsections');
+                for ($i = $maxsections+1; $i <= $numsections; $i++) {
+                    $element->addOption("$i", $i);
+                }
+            }
+        }
+        return $elements;
     }
 
     /**

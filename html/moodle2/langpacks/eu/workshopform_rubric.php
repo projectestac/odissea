@@ -37,4 +37,5 @@ $string['levelgroup'] = 'Mailarako kalifikazioa eta definizioa';
 $string['levels'] = 'Mailak';
 $string['mustbeunique'] = 'Mailarako kalifikazioek bakarrak izan behar dute irizpide baten barruan';
 $string['mustchooseone'] = 'Elementu hauetako bat aukeratu behar duzu';
+$string['mustdefinelevel'] = 'Gutxienez maila bat beharrezkoa da';
 $string['pluginname'] = 'Errubrika';

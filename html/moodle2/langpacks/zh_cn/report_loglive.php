@@ -32,3 +32,4 @@ $string['eventreportviewed'] = '查看了实时日志报表';
 $string['livelogs'] = '一小时内的实时日志';
 $string['loglive:view'] = '查看实时日志';
 $string['pluginname'] = '实时日志';
+$string['selectlogreader'] = '选择日志阅读器';

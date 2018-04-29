@@ -74,7 +74,7 @@ $string['cannotpurgecachedrss'] = 'Ezin izan da jatorrizko edota helburuko foroa
 $string['cannotremovesubscriber'] = 'Ezin da {$a} id-a duen harpideduna kendu foro honetatik!';
 $string['cannotreply'] = 'Ezin diozu mezu honi erantzun';
 $string['cannotsplit'] = 'Foro honetako eztabaidak ezin dira bereizi';
-$string['cannotsubscribe'] = 'Barkatu, baina taldekidea izan behar duzu harpidetzeko';
+$string['cannotsubscribe'] = 'Sentitzen dugu, baina taldekidea izan behar duzu harpidetzeko';
 $string['cannottrack'] = 'Ezin zaio foro honi jarraitzeari utzi';
 $string['cannotunsubscribe'] = 'Ezin duzu foro honetatik harpidetza kendu';
 $string['cannotupdatepost'] = 'Ezin duzu mezu hau eguneratu';
@@ -114,7 +114,7 @@ $string['confirmsubscribediscussion'] = 'Ziur al zaude \'{$a->forum}\' foroko \'
 $string['confirmunsubscribe'] = 'Ziur al zaude \'{$a}\' forotik  harpidetza kendu nahi duzula?';
 $string['confirmunsubscribediscussion'] = 'Ziur al zaude \'{$a->forum}\' foroko \'{$a->discussion}\' eztabaidatik harpidetza kendu nahi duzula?';
 $string['couldnotadd'] = 'Ezin izan da zure mezua gehitu; errore bat gertatu da nonbait.';
-$string['couldnotdeletereplies'] = 'Barkatu, hori ezin da ezabatu norbaitek dagoeneko erantzun diolako';
+$string['couldnotdeletereplies'] = 'Sentitzen dugu, hori ezin da ezabatu norbaitek dagoeneko erantzun diolako';
 $string['couldnotupdate'] = 'Ezin izan da zure mezua eguneratu; errore bat gertatu da nonbait.';
 $string['crontask'] = 'Foroko mailing eta mantenu lanak';
 $string['delete'] = 'Ezabatu';
@@ -310,7 +310,7 @@ $string['maxattachments'] = 'Gehienezko eranskin-kopurua';
 $string['maxattachments_help'] = 'Ezarpen honek foroko mezu bati gehienez zenbat eranskin gehitu ahal zaizkion zehazten du.';
 $string['maxattachmentsize'] = 'Eranskinaren gehienezko tamaina';
 $string['maxattachmentsize_help'] = 'Ezarpen honek zehazten du foro batera eranskin gisa bidal daitekeen fitxatategiaren gehienezko tamaina zein den.';
-$string['maxtimehaspassed'] = 'Barkatu, mezu hau({$a}) editatzeko gehienezko denbora amaitu da!';
+$string['maxtimehaspassed'] = 'Sentitzen dugu, mezu hau({$a}) editatzeko gehienezko denbora amaitu da!';
 $string['message'] = 'Mezua';
 $string['messageinboundattachmentdisallowed'] = 'Ezin izan da zure erantzuna bidali, erantzunak eranskinen bat zuelako eta foroak ez duelako eranskinak baimentzen.';
 $string['messageinboundfilecountexceeded'] = 'Ezin izan da zure erantzuna bidali, foroan baimendutako gehienezko eranskin kopurua ({$a->forum->maxattachments}) baino gehiago zituelako.';
@@ -328,9 +328,9 @@ $string['modethreaded'] = 'Erantzunak gaika erakutsi';
 $string['modulename'] = 'Foroa';
 $string['modulename_help'] = 'Foroari esker erabiltzaileek eztabaida asinkronoak izan ahal dituzte, hots, denbora epe luzeetan sakabanaturiko eztabaidak izan ditzakete.
 
-Badira zenbait foro-mota aukeran, hala nola foro estandarra (non edonork edozein unetan eztabaida berri bat has dezakeen), ikasle bakoitzak eztabaida bakar bat argitara eman dezakeen foro bat, edo galdera-erantzuna foroa (non ikasleek gai bat argitaratu behar duten beste ikasleen mezuak ikusi ahal izateko). Irakasleek foroetako mezuetan fitxategiak atxikitzea ahalbidetu dezakete. Atxikitutako irudiak foroko mezuan erakusten dira.
+Badira zenbait foro-mota aukeran, hala nola foro estandarra (non edonork edozein unetan eztabaida berri bat has dezakeen), ikasle bakoitzak eztabaida bakar bat argitara eman dezakeen foro bat, edo galdera-erantzuna foroa (non ikasleek gai bat argitaratu behar duten beste ikasleen mezuak ikusi ahal izateko). Irakasleek foroetako mezuetan fitxategiak eranstea ahalbidetu dezakete. Erantsitako irudiak foroko mezuan erakusten dira.
 
-Ikasle eta irakasleak foroetako mezuen jakinarazpenak jasotzeko harpidetu daitezke. Irakasleek harpidetza aukeran, behartua edo automatikoa ezar dezakete, baita harpidetza guztiz desgaitu ere. Nahi izanez gero, ikasleek denbora epe zehatzetan idatz dezaketen mezu kopurua blokea daiteke; modu honetan gizabanakoak eztabaidetan nagusitzea saihes daiteke.
+Ikasle eta irakasleak foroetako mezuen jakinarazpenak jasotzeko harpidetu daitezke. Irakasleek harpidetza aukeran, behartua edo automatikoa ezar dezakete, baita harpidetza guztiz desgaitu ere. Nahi izanez gero, ikasleek denbora epe zehatzetan idatz dezaketen mezu kopurua blokea daiteke; modu honetan gizabanakoak eztabaidetan nagusitzea saihestu daiteke.
 
 Irakasleek foroetako mezuak kalifika ditzakete, baita ikasleek ere (berdinen ebaluazioa). Ebaluazioak pila daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikatzailean gordeko dena.
 
@@ -339,7 +339,7 @@ Foroak erabilera anitzak izan ditzake, hala nola
 * Ikasleentzako gune sozial gisa, elkar ezagut dezaten.
 * Ikastaroko jakinarazpenak egiteko (behartutako harpidetza duen berrien foro bat erabilita)
 * Ikastaroko edukiak edo irakurgaiak eztabaidatzeko.
-* Aurrez aurreko saioan plateatutako arazo bati online jarraipena emateko
+* Aurrez aurreko saioan planteatutako arazo bati on-line jarraipena emateko
 * Irakasleen arteko eztabaidak egiteko (ezkutaturiko foro bat erabiliz)
 * Laguntza-zentro gisa, tutore eta ikasleek elkarri aholkuak emateko
 * Banaka irakasle-ikasle artean modu pribatuan komunikatzeko (banaturiko taldekako foro bat erabiliz, ikasle bakoitza talde batean sartuta)
@@ -362,15 +362,15 @@ $string['noattachments'] = 'Mezu honek ez du eranskinik';
 $string['nodiscussions'] = 'Oraindik ez dago mezurik foro honetan';
 $string['nodiscussionsstartedby'] = '{$a} erabiltzaileak ez du eztabaidarik hasi';
 $string['nodiscussionsstartedbyyou'] = 'Zeuk oraindik ez duzu eztabaidarik hasi';
-$string['noguestpost'] = 'Barkatu, bisitariek ezin dute mezurik bidali.';
-$string['noguestsubscribe'] = 'Barkatu, bisitariek ez dute harpidetzeko baimenik.';
-$string['noguesttracking'] = 'Barkatu, bisitariek ezin dituzte mezuen jarraipenerako aukerak aldatu.';
+$string['noguestpost'] = 'Sentitzen dugu, bisitariek ezin dute mezurik bidali.';
+$string['noguestsubscribe'] = 'Sentitzen dugu, bisitariek ez dute harpidetzeko baimenik.';
+$string['noguesttracking'] = 'Sentitzen dugu, bisitariek ezin dituzte mezuen jarraipenerako aukerak aldatu.';
 $string['nomorepostscontaining'] = 'Ez dago \'{$a}\' duen mezu gehiago';
 $string['nonews'] = 'Oraindik ez da mezurik bidali.';
 $string['noonecansubscribenow'] = 'Harpisdetzak ez daude baimenduta orain';
 $string['nopermissiontosubscribe'] = 'Ez duzu foroko harpidedunak ikusteko baimenik.';
 $string['nopermissiontoview'] = 'Ez duzu mezu hau ikusteko baimenik.';
-$string['nopostforum'] = 'Barkatu, ezin duzu mezurik bidali foro honetara';
+$string['nopostforum'] = 'Sentitzen dugu, ezin duzu mezurik bidali foro honetara';
 $string['noposts'] = 'Mezurik ez';
 $string['nopostsmadebyuser'] = '{$a}(e)k ez du ezer bidali';
 $string['nopostsmadebyyou'] = 'Ez duzu mezurik idatzi';
@@ -378,7 +378,7 @@ $string['noquestions'] = 'Oraindik ez dago galderarik foro honetan';
 $string['nosubscribers'] = 'Oraindik ez da inor foro honetara harpidetu';
 $string['notexists'] = 'Eztabaida dagoeneko ez da existitzen';
 $string['nothingnew'] = '{$a}-(r)entzat ez da ezer berri';
-$string['notingroup'] = 'Barkatu, baina talde honetako partaidea izan behar duzu foro hau ikusteko.';
+$string['notingroup'] = 'Sentitzen dugu, baina talde honetako partaidea izan behar duzu foro hau ikusteko.';
 $string['notinstalled'] = 'Foroa modulua ez dago instalatuta';
 $string['notpartofdiscussion'] = 'Mezu hau ez da inongo eztabaidatakoa';
 $string['notrackforum'] = 'Ez nabarmendu irakurri gabeko mezuak';
@@ -492,7 +492,7 @@ $string['subscribe'] = 'Foro honetara harpidetu';
 $string['subscribeall'] = 'Harpidetu denak foro honetara';
 $string['subscribed'] = 'Harpidetuta';
 $string['subscribediscussion'] = 'Harpidetu eztabaida honetara';
-$string['subscribeenrolledonly'] = 'Barkatu, matrikulatutako erabiltzaileek bakarrik egin dezakete harpidetza foroko mezuak e-postaz jasotzeko.';
+$string['subscribeenrolledonly'] = 'Sentitzen dugu, matrikulatutako erabiltzaileek bakarrik egin dezakete harpidetza foroko mezuak e-postaz jasotzeko.';
 $string['subscribenone'] = 'Denen harpidetza ezabatu foro honetan';
 $string['subscribers'] = 'Harpidedunak';
 $string['subscribersto'] = '\'{$a->name}\'(e)ko harpidedunak';
@@ -503,7 +503,7 @@ $string['subscription'] = 'Harpidetza';
 $string['subscriptionandtracking'] = 'Harpidetza eta jarraipena';
 $string['subscriptionauto'] = 'Harpidetza automatikoa';
 $string['subscriptiondisabled'] = 'Harpidetza desgaituta';
-$string['subscriptionforced'] = 'Behartu harpidetzera';
+$string['subscriptionforced'] = 'Harpidetza behartua';
 $string['subscription_help'] = 'Foro batera harpidetzen bazara, foro horretara bidaltzen diren mezuen jakinarazpena jasoko duzu. Oro har, aukera dezakezu foro batera harpidetu ala ez. Hala ere, irakasle batek foro jakin batera harpidetzera behartzeko modua du, eta orduan partaide guztiek mezuen jakinarazpenak jasoko dituzte.';
 $string['subscriptionmode'] = 'Harpidetza-mota';
 $string['subscriptionmode_help'] = 'Foroan harpidetzen direnek bidalitako mezuen kopia bana jasoko dute e-postaz.

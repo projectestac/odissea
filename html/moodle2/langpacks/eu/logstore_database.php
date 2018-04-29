@@ -25,16 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['buffersize'] = 'Buffer-aren tamaina';
+$string['buffersize_help'] = 'Batch eragiketa batean sartutako erregistro-sarrera kopurua, errendimendua hobetzen dutenak.';
 $string['conectexception'] = 'Ezin da datu-basera konektatu.';
 $string['create'] = 'Sortu';
+$string['databasecollation'] = 'Datu-basearen ordenatze-irizpidea (collation)';
+$string['databasehandlesoptions'] = 'Datu-baseak aukerak kudeatzen ditu';
+$string['databasehandlesoptions_help'] = 'Urrutiko datu-baseak bere aukerak kudeatzen ote dituen.';
+$string['databasepersist'] = 'Datu-base konexio iraunkorrak';
 $string['databaseschema'] = 'Datu-basearen eskema';
 $string['databasesettings'] = 'Datu-basearen ezarpenak';
+$string['databasesettings_help'] = 'Kanpo-erregistroko datu-baserako konexioaren xehetasunak: {$a}';
 $string['databasetable'] = 'Datu-basearen taula';
+$string['databasetable_help'] = 'Erregistroak gordeko diren taularen izena. Taula honek logstore_standard-ek erabiltzen duen taularen (mdl_logstore_standard_log) egitura identikoa izan behar du.';
 $string['filters'] = 'Iragazi agerraldiak';
+$string['filters_help'] = 'Iragazkiak gaitu ekintza batzuk erregistratu gabe uzteko.';
+$string['includeactions'] = 'Gehitu mota honetako ekintzak';
+$string['includelevels'] = 'Gehitu hezkuntza-maila hauetako ekintzak';
 $string['logguests'] = 'Erregistratu bisitarien ekintzak';
 $string['other'] = 'Bestelako bat';
 $string['participating'] = 'Partaidetza';
 $string['pluginname'] = 'Kanpoko datu-basearen log-a';
+$string['pluginname_desc'] = 'Ekitaldiak kanpoko datu-base baten taulan gordetzen dituen agerraldi-erregistro gehigarri bat.';
 $string['read'] = 'Irakurri';
 $string['tablenotfound'] = 'Zehaztutako taula ez da aurkitu';
 $string['teaching'] = 'Irakaskuntza';

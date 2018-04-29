@@ -8,7 +8,7 @@ color asignado según la materia del curso.
 Los ficheros de Javscript (format.js) y CSS (styles.css) son iguales en todas
 las versiones de Moodle.
 
-Versiones de Moodle: 2.8, 2.9, 3.0, 3.1
+Versiones de Moodle: 2.8, 2.9, 3.0, 3.1, 3.2, 3.3
 
 Estructura
 ----------

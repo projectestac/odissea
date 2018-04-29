@@ -80,10 +80,12 @@ $string['backpackavailability_help'] = '为了能让勋章容器能验证从你�
 
 验证仅仅需要一个网址，那就是[your-site-url]/badges/assertion.php，因此你只需要修改防火墙规则允许外部可访问这个文件，验证就可以进行了。';
 $string['backpackbadges'] = '你从 {$a->totalcollections} 搜集的勋章有 {$a->totalbadges} 个已显示。 <a href="mybackpack.php">修改背包设置</a>。';
+$string['backpackcannotsendverification'] = '无法发送验证邮件';
 $string['backpackconnection'] = '背包连接';
 $string['backpackconnection_help'] = '本页允许你设置一个访问外部背包服务的链接。背包链接让你显示外部勋章到自己的站点，也可以推送本地获得的勋章到你的外部背包。
 
 当前，仅<a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>被支持。在你尝试在这个页面建立一个背包链接前，你需要注册一个背包服务。';
+$string['backpackconnectionresendemail'] = '重发验证邮件';
 $string['backpackdetails'] = '背包设置';
 $string['backpackemail'] = 'Email';
 $string['backpackemail_help'] = '你的背包关联的电子邮件地址。当你连接，任何徽章赢得了在本网站将与此有关的电子邮件地址。';

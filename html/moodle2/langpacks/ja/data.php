@@ -46,7 +46,7 @@ $string['autogenallforms'] = 'すべてのデフォルトテンプレートを�
 $string['autolinkurl'] = 'URLにオートリンクする';
 $string['availablefromdate'] = '開始日時';
 $string['availabletags'] = '利用可能なタグ';
-$string['availabletags_help'] = 'タグはエントリが編集または閲覧されるときにフィールドや他のアイテムと置換されるテンプレート内の入れ物です。
+$string['availabletags_help'] = 'タグはエントリが編集または閲覧される時にフィールドや他のアイテムと置換されるテンプレート内の入れ物です。
 
 フィールドは次のようなフォーマットとなります: [fieldname]]。他のタグすべては次のようなフォーマットとなります:  ##sometag##
 

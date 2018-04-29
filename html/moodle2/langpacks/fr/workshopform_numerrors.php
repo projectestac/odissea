@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Emplacements pour {$a} assertions supplémentaires';
-$string['configgrade0'] = 'Le terme par défaut décrivant l\'évaluation négative d\'une assertion';
-$string['configgrade1'] = 'Le terme par défaut décrivant l\'évaluation positive d\'une assertion';
+$string['configgrade0'] = 'Le terme par défaut décrivant l\'évaluation négative d\'une assertion.';
+$string['configgrade1'] = 'Le terme par défaut décrivant l\'évaluation positive d\'une assertion.';
 $string['dimensioncomment'] = 'Commentaire';
 $string['dimensioncommentfor'] = 'Commentaire pour {$a}';
 $string['dimensiondescription'] = 'Description';

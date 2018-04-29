@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Je hebt zelf al aangeduid dat je deze cursus voltooid hebt';
 $string['completecourse'] = 'Voltooi cursus';
 $string['pluginname'] = 'Zelf voltooien';
-$string['selfcompletion:addinstance'] = 'Voeg een nieuw zelf voltooienblok toe';
+$string['selfcompletion:addinstance'] = 'Voeg een nieuw zelf-voltooienblok toe';
 $string['selfcompletionnotenabled'] = 'De criteria voor het zelf voltooien van een cursus zijn voor deze cursus nog niet ingeschakeld';

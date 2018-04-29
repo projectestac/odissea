@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = 'Διαγραφή δραστηριότητας σε εξέλιξη...';
 $string['authnotexisting'] = 'Η υπομονάδα πιστοποίησης δεν υπάρχει';
 $string['backupcontainexternal'] = 'Αυτό το αντίγραφο ασφαλείας περιέχει εξωτερικούς Moodle Network Hosts που δεν είναι ρυθμισμένοι τοπικά';
 $string['backuptablefail'] = 'Οι πίνακες αντιγράφων ασφαλείας ΔΕΝ έχουν στηθεί σωστά!';
@@ -96,6 +97,8 @@ $string['cannotmapfield'] = 'Ανιχνεύτηκε σύγκρουση στη χ
 $string['cannotmarktopic'] = 'Δεν ήταν δυνατή η βαθμολόγηση αυτού του θέματος γι\'αυτό το μάθημα';
 $string['cannotmodulename'] = 'Αδυναμία ανάκτησης ονόματος αρθρώματος στο build navigation';
 $string['cannotmoduletype'] = 'Αδυναμία ανάκτησης τύπου αρθρώματος στο build navigation';
+$string['cannotmovecategory'] = 'Δεν μπορεί να μεταφερθεί η κατηγορία';
+$string['cannotmovecourses'] = 'Δεν μπορεί να μεταφερθεί μάθημα από την κατηγορία του σε άλλη.';
 $string['cannotmoverolewithid'] = 'Αδυναμία μετακίνησης ρόλου με ID {$a}';
 $string['cannotopencsv'] = 'Αδυναμία ανοίγματος αρχείου CSV';
 $string['cannotopenfile'] = 'Αδυναμία ανοίγματος αρχείου ({$a})';
@@ -147,12 +150,17 @@ $string['cannotusepage'] = 'Μόνο διδάσκοντες και διαχει�
 $string['cannotusepage2'] = 'Λυπούμαστε, δεν μπορείτε να χρησιμοιήσετε αυτήν τη σελίδα';
 $string['cannotviewprofile'] = 'Δεν μπορείτε να δείτε το προφίλ αυτού του χρήστη';
 $string['cannotwritefile'] = 'Αδυναμία εγγραφής στο αρχείο ({$a})';
+$string['categoryerror'] = 'Σφάλμα κατηγορίας';
+$string['categoryidnumbertaken'] = 'Αυτός ο κωδικός αριθμός  χρησιμοποιείται ήδη για άλλη κατηγορία';
+$string['categorynamerequired'] = 'Το όνομα κατηγορίας απαιτείται';
+$string['categorytoolong'] = 'Πολύ μεγάλο όνομα κατηγορίας';
 $string['commentmisconf'] = 'Το ID του σχολίου δεν είναι σωστά σχηματισμένο';
 $string['componentisuptodate'] = 'Το συστατικό είναι ενημερωμένο.';
 $string['confirmsesskeybad'] = 'Συγνώμη, αλλά το κλειδί της συνεδρίας σας δεν επιβεβαιώθηκε για να την ολοκλήρωση αυτής της ενέργειας. Αυτό το χαρακτηριστικό ασφαλείας αποτρέπει την εκτέλεση σημαντικών λειτουργιών κατά λάθος ή επίτηδες στο όνομά σας. Παρακαλώ βεβαιωθείτε ότι πράγματι θέλετε να εκτελεστεί αυτή η λειτουργία.';
 $string['couldnotassignrole'] = 'Ένα σοβαρό αλλά μη-ορισμένο σφάλμα συνέβη ενώ δοκιμάστηκε η απόδοση ρόλου σε σας.';
 $string['couldnotupdatenoexistinguser'] = 'Αδυναμία ενημέρωσης του χρήστη - ο χρήστης δεν υπάρχει';
 $string['countriesphpempty'] = 'Σφάλμα: Το αρχείο countries.php στο γλωσσικό πακέτο {$a} είναι κενό ή δεν υπάρχει.';
+$string['coursedoesnotbelongtocategory'] = 'Το μάθημα δεν ανήκει σε αυτή την κατηγορία';
 $string['coursegroupunknown'] = 'Το μάθημα που αντιστοιχεί στην ομάδα {$a} δεν έχει οριστεί';
 $string['courseidnotfound'] = 'Το id του μαθήματος δεν υπάρχει';
 $string['coursemisconf'] = 'Το μάθημα δεν είναι σωστά σχηματισμένο';
@@ -347,6 +355,7 @@ $string['nopermissiontomanagegroup'] = 'Δεν έχετε τα απαιτούμ�
 $string['nopermissiontorate'] = 'Δεν επιτρέπεται η αξιολόγηση στοιχείων!';
 $string['nopermissiontoshow'] = 'Δεν έχετε το δικαίωμα να το προβάλετε αυτό!';
 $string['nopermissiontounlock'] = 'Δεν έχετε το δικαίωμα να ξεκλειδώσετε το συγκεκριμένο στοιχείο!';
+$string['nopermissiontoviewgrades'] = 'Δεν έχετε δικαίωμα να δείτε τους βαθμούς.';
 $string['nopermissiontoviewletergrade'] = 'Λείπει το δικαίωμα επισκόπησης των βαθμών';
 $string['nopermissiontoviewpage'] = 'Δεν επιτρέπετε να δείτε αυτήν τη σελίδα';
 $string['nosite'] = 'Δεν ήταν δυνατή η εύρεση μαθήματος αρχικού επιπέδου!';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Оценки экспортированы в OpenDocument';
 $string['ods:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате ODS';
 $string['ods:view'] = 'Использовать экспорт оценок в формате OpenDocument';
 $string['pluginname'] = 'Таблица OpenDocument';

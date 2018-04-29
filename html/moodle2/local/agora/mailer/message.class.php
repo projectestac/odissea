@@ -52,7 +52,7 @@ class message {
      * @param bool   $logdebug ->
      * @param string $logpath  ->
      */
-    function message ($bodytype = TEXTPLAIN, $log = false, $logdebug = false, $logpath = '') {
+    function __construct ($bodytype = TEXTPLAIN, $log = false, $logdebug = false, $logpath = '') {
         $this->logger = ($log)? $this->get_logger($logdebug, $logpath) : false;
 
         $this->set_bodyType($bodytype);

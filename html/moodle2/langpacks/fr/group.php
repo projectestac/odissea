@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addedby'] = 'Ajouté par {$a}';
-$string['addgroup'] = 'Ajouter un utilisateur au groupe';
+$string['addgroup'] = 'Ajouter l\'utilisateur à un groupe';
 $string['addgroupstogrouping'] = 'Ajouter le groupe au groupement';
 $string['addgroupstogroupings'] = 'Ajouter/retirer des groupes';
 $string['adduserstogroup'] = 'Ajouter/retirer des utilisateurs';

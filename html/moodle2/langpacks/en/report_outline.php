@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = 'Activity report viewed';
 $string['eventoutlinereportviewed'] = 'Outline report viewed';
 $string['neverseen'] = 'Never seen';
+$string['nocapability'] = 'Can not access user outline report';
 $string['nologreaderenabled'] = 'No log reader enabled';
 $string['numviews'] = '{$a->numviews} by {$a->distinctusers} users';
 $string['outline:view'] = 'View activity report';

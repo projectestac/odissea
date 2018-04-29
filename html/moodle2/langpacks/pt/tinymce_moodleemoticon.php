@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['moodleemoticon:desc'] = 'Inserir emoticon';
 $string['pluginname'] = 'Inserir emoticon';
 $string['requireemoticon'] = 'Requer filtro emoticon';
-$string['requireemoticon_desc'] = 'Se ativar esta opção, o botão Inserir emoticon é exibido apenas quando o filtro emoticon está disponível no contexto do editor.';
+$string['requireemoticon_desc'] = 'Se ativar esta opção, o botão Inserir emoticon é mostrado apenas quando o filtro emoticon está disponível no contexto do editor.';

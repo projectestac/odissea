@@ -55,8 +55,7 @@ $string['choice:view'] = 'Abstimmungsaktivität anzeigen';
 $string['chooseaction'] = 'Aktion auswählen...';
 $string['chooseoption'] = 'Auswahl: {$a}';
 $string['closebeforeopen'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
-$string['completionsubmit'] = 'Als abgeschlossen anzeigen, wenn die Abstimmung durchgeführt wurde
- ';
+$string['completionsubmit'] = 'Als abgeschlossen anzeigen, wenn die Person eine Option gewählt hat.';
 $string['description'] = 'Beschreibung';
 $string['displayhorizontal'] = 'Horizontal anzeigen';
 $string['displaymode'] = 'Anzeigemodus';

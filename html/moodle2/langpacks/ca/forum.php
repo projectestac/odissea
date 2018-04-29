@@ -96,7 +96,7 @@ $string['configcleanreadtime'] = 'L\'hora del dia per a netejar missatges vells 
 $string['configdigestmailtime'] = 'Les persones que triïn rebre el correu electrònic en format resum, el rebran una vegada al dia. Aquest paràmetre controla a quina hora s\'envia el resum diari (l\'enviarà el següent cron que s\'executi després d\'aquesta hora).';
 $string['configdisplaymode'] = 'El mode de visualització per defecte dels debats si no se n\'especifica un.';
 $string['configenablerssfeeds'] = 'Aquest commutador habilitarà la possibilitat de tenir agregats RSS en tots els fòrums. Tot i això, haureu d\'activar els agregats en els paràmetres de cada fòrum.';
-$string['configenabletimedposts'] = 'Aquesta opció permet definir un període de visualització quan es crea un nou debat en un fòrum (característica experimental)';
+$string['configenabletimedposts'] = 'Aquesta opció permet definir un període de visualització quan es crea un debat nou en un fòrum.';
 $string['configlongpost'] = 'Qualsevol missatge per damunt d\'aquesta mida (exclòs l\'HTML) es considera massa llarg.';
 $string['configmanydiscussions'] = 'Nombre màxim de debats per pàgina';
 $string['configmaxattachments'] = 'El nombre màxim per defecte de fitxers adjunts admesos per cada missatge.';
@@ -123,7 +123,7 @@ $string['deletedpost'] = 'El missatge s\'ha suprimit';
 $string['deletedposts'] = 'Aquests missatges s\'han suprimit';
 $string['deletesure'] = 'Segur que voleu suprimir aquest missatge?';
 $string['deletesureplural'] = 'Segur que voleu suprimir aquest missatges i totes les seves respostes? ({$a} missatges)';
-$string['digestmailheader'] = 'Aquest és el vostre resum diari de missatges enviats als fòrums de {$a->sitename}. Si voleu canviar les vostres preferències de correu dels fòrums, aneu a {$a->userprefs}.';
+$string['digestmailheader'] = 'Aquest és el vostre resum diari de missatges enviats als fòrums de {$a->sitename}. Si voleu canviar les vostres preferències de correu per defecte dels fòrums, aneu a {$a->userprefs}.';
 $string['digestmailpost'] = 'Canvia les vostres preferències de resum per al fòrum';
 $string['digestmailpostlink'] = 'Canvieu les preferències al resum del fòrum: {$a}';
 $string['digestmailprefs'] = 'el vostre perfil d\'usuari';
@@ -135,6 +135,7 @@ $string['disallowsubscribeteacher'] = 'No es permeten subscripcions (excepte al 
 $string['disallowsubscription'] = 'Subscripció';
 $string['disallowsubscription_help'] = 'Aquest fòrum s\'ha configurat de manera que no us podeu subscriure als debats.';
 $string['discussion'] = 'Debat';
+$string['discussionlocked'] = 'Aquest fil de debat ha finalitzat, així que no admet respostes.';
 $string['discussionlockingdisabled'] = 'No bloquegis els debats';
 $string['discussionlockingheader'] = 'Bloqueig del debat';
 $string['discussionmoved'] = 'Aquest debat s\'ha traslladat a «{$a}».';
@@ -227,6 +228,7 @@ $string['forum:allowforcesubscribe'] = 'Permet imposar la subscripció';
 $string['forumauthorhidden'] = 'Autor (ocult)';
 $string['forumblockingalmosttoomanyposts'] = 'Us esteu apropant al llindar de missatges. Heu enviat {$a->numposts} missatges en {$a->blockperiod} i el límit són {$a->blockafter} missatges.';
 $string['forumbodyhidden'] = 'No podeu veure aquest missatge, probablement perquè: encara no heu enviat un missatge en aquest debat, encara no ha conclòs el temps màxim d\'edició, el debat encara no ha començat o el debat ja ha acabat.';
+$string['forum:canoverridediscussionlock'] = 'Respon a debats tancats';
 $string['forum:canposttomygroups'] = 'Podeu enviar missatges a tots els grups als quals teniu accés';
 $string['forum:createattachment'] = 'Crea adjuncions';
 $string['forum:deleteanypost'] = 'Suprimeix qualsevol missatge (sempre)';
@@ -288,7 +290,7 @@ $string['lockdiscussionafter_help'] = 'Els debats es poden bloquejar de manera a
 
 Els usuaris amb la capacitat de respondre als debats bloquejats poden desbloquejar-los responent-hi.';
 $string['longpost'] = 'Missatge llarg';
-$string['mailnow'] = 'Envia-ho per correu immediatament';
+$string['mailnow'] = 'Envia notificacions dels missatges al fòrum sense període de retard per editar';
 $string['manydiscussions'] = 'Debats per pàgina';
 $string['markalldread'] = 'Marca com a llegits tots els missatges d\'aquest debat.';
 $string['markallread'] = 'Marca com a llegits tots els missatges d\'aquest fòrum.';
@@ -498,14 +500,14 @@ $string['subscribenone'] = 'Cancel·la totes les subscripcions a aquest fòrum';
 $string['subscribers'] = 'Subscriptors';
 $string['subscribersto'] = 'Subscriptors de «{$a->name}»';
 $string['subscriberstowithcount'] = 'Subscriptors de «{$a->name}» ({$a->count})';
-$string['subscribestart'] = 'Envia\'m còpia dels missatges d\'aquest fòrum per correu electrònic';
-$string['subscribestop'] = 'No vull rebre còpies per correu dels missatges d\'aquest fòrum';
+$string['subscribestart'] = 'Envia\'m notificacions dels missatges nous d\'aquest fòrum';
+$string['subscribestop'] = 'No vull rebre notificacions dels nous missatges d\'aquest fòrum';
 $string['subscription'] = 'Subscripció';
 $string['subscriptionandtracking'] = 'Subscripció i seguiment';
 $string['subscriptionauto'] = 'Subscripció automàtica (l\'usuari la podrà canceŀlar)';
 $string['subscriptiondisabled'] = 'No es permet la subscripció';
 $string['subscriptionforced'] = 'Subscripció obligatòria';
-$string['subscription_help'] = 'La subscripció a un fòrum significa que la persona rebrà còpies per correu electrònic dels missatges del fòrum. Normalment la gent pot triar si vol subscriure\'s a un fòrum o no. A vegades, la subscripció a un fòrum pot ser obligatòria, i tots els membres del curs rebran còpies dels missatges al seu correu electrònic.';
+$string['subscription_help'] = 'La subscripció a un fòrum significa que la persona rebrà notificacions dels missatges nous del fòrum. Normalment, la gent pot triar si vol subscriure\'s a un fòrum o no. A vegades, la subscripció a un fòrum pot ser obligatòria, de manera que tots els membres del curs rebran notificacions.';
 $string['subscriptionmode'] = 'Mode de subscripció';
 $string['subscriptionmode_help'] = 'La subscripció a un fòrum significa que la persona rebrà còpies per correu electrònic dels missatges del fòrum.
 
@@ -530,11 +532,11 @@ $string['trackingoff'] = 'Inactiu';
 $string['trackingon'] = 'Obligat';
 $string['trackingoptional'] = 'Opcional';
 $string['trackingtype'] = 'Seguiment de missatges llegits';
-$string['trackingtype_help'] = 'Si s\'habilita, els participants poden realitzar el seguiment dels missatges llegits i no llegits en el fòrum i en els debats. Hi ha tres opcions:
+$string['trackingtype_help'] = 'El seguiment de missatges llegits habilita els participants per comprovar fàcilment quins missatges no han vist realçant qualsevol missatge nou.
 
-* Opcional: els participants poden triar si activen o desactiven el seguiment mitjançant un enllaç en el bloc d\'administració. El seguiment dels fòrums també ha d\'estar habilitat en els paràmetres del perfil d\'usuari.
-* Imposa: el seguiment està sempre actiu, independentment dels paràmetres de l\'usuari. Aquesta opció pot estar disponible o no segons els paràmetres d\'administració.
-* Inactiu: no es farà el seguiment de missatges llegits i no llegits.';
+Si es defineix com a opcional, els participants poden triar si activen o desactiven el seguiment mitjançant un enllaç al bloc d\'administració. (Els usuaris han d\'habilitar també el seguiment dels fòrums en les seves preferències del fòrum.)
+
+Si s\'habilita «Habilita el seguiment de lectura forçat» a l\'administració del lloc, apareixerà una nova opció —forçat. Això vol dir que el seguiment estarà sempre actiu, malgrat les preferències del fòrum dels usuaris.';
 $string['trackreadposts_header'] = 'Seguiment dels fòrums';
 $string['unread'] = 'No llegit';
 $string['unreadposts'] = 'Missatges no llegits';
@@ -555,6 +557,7 @@ $string['unsubscribelink'] = 'Cancel·la la subscripció a aquest fòrum: {$a}';
 $string['unsubscribeshort'] = 'Cancel·la subscripció';
 $string['usermarksread'] = 'Marcatge manual de missatges llegits';
 $string['viewalldiscussions'] = 'Mostra tots els debats';
+$string['viewthediscussion'] = 'Mostra el debat';
 $string['warnafter'] = 'Llindar de missatges per a l\'avís';
 $string['warnafter_help'] = 'L\'estudiant pot rebre un avís quan s\'acosti al nombre màxim de missatges enviats a un fòrum en un temps determinat. Aquest paràmetre especifica quants missatges pot enviar-hi abans de rebre l\'avís. Aquest límit no afecta els usuaris amb privilegis mod/forum:postwithoutthrottling (usualment, els administradors o professors).';
 $string['warnformorepost'] = 'Hi ha més d\'un debat obert en aquest fòrum. S\'utilitzarà el més recent';

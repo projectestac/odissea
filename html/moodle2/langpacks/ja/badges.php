@@ -60,7 +60,7 @@ $string['archiveconfirm'] = '削除および既存の発行済みバッジを保
 $string['archivehelp'] = '<p>このオプションはバッジが「引退」してバッジ一覧に表示されなくなることを意味します。ユーザはこのバッジを取得できないようになりますが、既存のバッジ取得者はプロファイルページにこのバッジを表示および外部バックパックに送信することができます。</p>
 <p>あなたのユーザが取得済みバッジへのアクセスを保持できるようにしたい場合、バッジを完全に削除する代わりに、このオプションを選択することが重要です。</p>';
 $string['attachment'] = 'メッセージにバッジを添付する';
-$string['attachment_help'] = 'この設定を有効にした場合、ダウンロードできるよう発行済みバッジが取得者のメールに添付されます (サイト管理 > プラグイン > メッセージ出力 > メール」で添付を有効にする必要があります。';
+$string['attachment_help'] = 'この設定を有効にした場合、ダウンロードできるよう発行済みバッジが取得者のメールに添付されます (サイト管理 > プラグイン > メッセージアウトプット > メール」で添付を有効にする必要があります。';
 $string['award'] = 'バッジを授与する';
 $string['awardedtoyou'] = '私に発行';
 $string['awardoncron'] = 'バッジへのアクセスが正常に有効にされました。多くのユーザがこのバッジを取得できます。サイトパフォーマンス確認のため、この操作には時間を要します。';
@@ -158,7 +158,7 @@ $string['coursebadgesdisabled'] = 'このサイトのコースバッジは有効
 $string['coursecompletion'] = 'ユーザはこのコースを完了する必要があります。';
 $string['create'] = '新しいバッジ';
 $string['createbutton'] = 'バッジを作成する';
-$string['creatorbody'] = '<p>{$a->user} 名のユーザがバッジ必要条件すべてを満たしたため、バッジが授与されました。発行済みバッジは {$a->link} でご覧ください。</p>';
+$string['creatorbody'] = '<p>{$a->user} がバッジ必要条件すべてを満たしたため、バッジが授与されました。発行済みバッジは {$a->link} でご覧ください。</p>';
 $string['creatorsubject'] = '「 {$a} 」が授与されました!';
 $string['criteria_0'] = 'このバッジは以下の場合に授与されます ...';
 $string['criteria_1'] = '活動完了';
@@ -329,14 +329,14 @@ $string['never'] = 'なし';
 $string['newbadge'] = '新しいバッジを追加する';
 $string['newimage'] = '新しいイメージ';
 $string['noawards'] = 'このバッジはまだ取得されていません。';
-$string['nobackpack'] = 'このアカウントに接続しているバックパックサービスはありません。<br/>';
+$string['nobackpack'] = 'このアカウントに接続しているバックパックサービスはありません。<b r/>';
 $string['nobackpackbadges'] = 'あなたが選択したコレクション内にバッジはありません。<a href="mybackpack.php">さらにコレクションを追加してください</a>。';
 $string['nobackpackcollections'] = 'バッジコレクションは選択されていません。<a href="mybackpack.php">コレクションを追加してください</a>。';
 $string['nobadges'] = '利用できるバッジはありません。';
 $string['nocriteria'] = 'このバッジのクライテリアはまだ設定されていません。';
 $string['noexpiry'] = 'このバッジには有効期限がありません。';
 $string['noparamstoadd'] = 'このバッジ必要条件に追加できる追加パラメータはありません。';
-$string['notacceptedrole'] = 'あなたの現在のロール割り当てはこのバッジを手動で授与することのできるロールではありません。<br/> すでにこのバッジを取得しているユーザを閲覧するには {$a} ページにアクセスしてください。';
+$string['notacceptedrole'] = 'あなたの現在のロール割り当てはこのバッジを手動で授与することのできるロールではありません。<br /> すでにこのバッジを取得しているユーザを閲覧するには {$a} ページにアクセスしてください。';
 $string['notconnected'] = '未接続';
 $string['nothingtoadd'] = '追加できるクライテリアはありません。';
 $string['notification'] = 'バッジ作成者に通知する';
@@ -363,7 +363,7 @@ $string['overallcrit'] = 'の選択されたクライテリアが完了した場
 $string['personaconnection'] = 'あなたのメールアドレスでログインする';
 $string['personaconnection_help'] = 'ペルソナはあなたのメールアドレスを使用して、あなた自身をウェブにおいて特定するためのシステムです。オープンバッジバックパックはペルソナログインシステムを使用します。そのため、バックパックに接続するにはあなたはペルソナアカウントが必要です。
 
-ペルソナに関するさらなる情報は、<a href="https://login.persona.org/about">https://login.persona.org/about</a>にアクセスしてください。';
+ペルソナに関するさらなる情報は<a href="https://login.persona.org/about">https://login.persona.org/about</a>にアクセスしてください。';
 $string['potentialrecipients'] = '潜在的なバッジ取得者';
 $string['preferences'] = 'バッジプリファレンス';
 $string['recipientdetails'] = '取得者詳細';
@@ -373,9 +373,9 @@ $string['recipientvalidationproblem'] = 'このバッジの取得者として、
 $string['relative'] = '相対期限';
 $string['requiredcourse'] = '少なくとも1コースをコースセットクライテリアに追加する必要があります。';
 $string['reviewbadge'] = 'バッジアクセスの変更';
-$string['reviewconfirm'] = '<p>あなたのバッジをユーザに表示して、取得できるようにします。</p>
+$string['reviewconfirm'] = '<p>あなたのバッジをユーザに表示して取得できるようにします。</p>
 
-<p>あなたがバッジを有効にした直後、このバッジのクライテリアをすでに満たしているユーザに対して、このバッジを発行することができます。</p>
+<p>あなたがバッジを有効にした直後、このバッジのクライテリアをすでに満たしているユーザにこのバッジを発行することができます。</p>
 
 <p>バッジが発行された場合、<strong>ロックされます</strong> - クライテリアおよび有効期限設定を含む特定の設定は変更できないようになります。</p>
 

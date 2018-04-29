@@ -106,7 +106,7 @@ Isto faz parte do \'tool_generator\' e por isso funciona corretamente com as dis
 Deve considerar a capacidade dos seus servidores durante a execução de grandes planos de teste, pois a quantidade de carga gerada pelo JMeter pode ser especialmente grande. O período de ramp-up foi ajustado de acordo com o número de segmentos (utilizadores) para reduzir este tipo de problemas, mas a carga é ainda é muito grande.
 
 ** Não execute o plano de teste num servidor de produção**. Esta funcionalidade apenas cria ficheiros para o JMeter, o que por si só não causa nenhum perigo, mas **NUNCA** deverá executar este plano de teste num servidor de desenvolvimento.';
-$string['testplansize_0'] = 'XS ({$a->users} utilizadores, {$a->loops}';
+$string['testplansize_0'] = 'XS ({$a->users} utilizadores, {$a->loops})';
 $string['testplansize_1'] = 'S ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';
 $string['testplansize_2'] = 'M ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';
 $string['testplansize_3'] = 'L ({$a->users} utilizadores, {$a->loops} loops e {$a->rampup} período de ramp-up)';

@@ -43,13 +43,13 @@ $string['check_indexes'] = '不明なDBインデックスを探す';
 $string['checkoraclesemantics'] = 'セマンティクスをチェックする';
 $string['check_oracle_semantics'] = '正しくない長さのセマンティクスを探す';
 $string['completelogbelow'] = '(検索結果に関する下記の完全なログをご覧ください。)';
-$string['confirmcheckbigints'] = 'この機能は、あなたのMoodleサーバで<a href="http://tracker.moodle.org/browse/MDL-11038">潜在的に不正なインテジャフィールド</a>を調査し、DB内のインテジャを適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
+$string['confirmcheckbigints'] = 'この機能はあなたのMoodleサーバで<a href="http://tracker.moodle.org/browse/MDL-11038">潜在的に不正なインテジャフィールド</a>を調査しDB内のインテジャを適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
 
-SQL文の生成後、あなたはSQL文をコピーして、自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
+SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
 
-不正なインテジャの調査を実行する前に、あなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
+不正なインテジャの調査を実行する前にあなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
 
-この機能は、DBに対していかなる処理も実行しません (読むだけです)。ですから、いつでも安全に実行することが可能です。';
+この機能はDBに対していかなる処理も実行しません (読むだけです)。ですからいつでも安全に実行することが可能です。';
 $string['confirmcheckdefaults'] = 'この機能はあなたのMoodleサーバで矛盾したデフォルト値を調査し、DB内のすべてのデフォルト値を適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
 
 SQL文の生成後、あなたはSQL文をコピーして、自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
@@ -62,20 +62,20 @@ $string['confirmcheckforeignkeys'] = 'この機能はinstall.xml定義で定義�
 外部キーの潜在的な違反調査を実行する前にあなたのMoodleリリースを最新 (+バージョン)  にすることを強くお勧めします。
 
 この機能はDBに対していかなる処理も実行しません (読むだけです)。そのため、いつでも安全に実行することが可能です。';
-$string['confirmcheckindexes'] = 'この機能は、あなたのMoodleサーバで潜在的に不明なインデックスを調査し、すべてを最新の状態にするためのSQL文を自動的に生成します (実行ではありません!)。
+$string['confirmcheckindexes'] = 'この機能はあなたのMoodleサーバで潜在的に不明なインデックスを調査しすべてを最新の状態にするためのSQL文を自動的に生成します (実行ではありません!)。
 
-SQL文の生成後、あなたはSQL文をコピーして、自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
+SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
 
-不明なインデックス調査を実行する前に、あなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
+不明なインデックス調査を実行する前にあなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
 
-この機能は、DBに対していかなる処理も実行しません (読むだけです)。ですから、いつでも安全に実行することが可能です。';
-$string['confirmcheckoraclesemantics'] = 'この機能は、あなたのMoodleサーバで<a href="http://tracker.moodle.org/browse/MDL-29322">BYTEセマンティクスを使用しているOracle varchar2カラム</a>を調査し、代わりにCHARセマンティクスを使用するよう (cross-db互換性およびコンテンツ最大長に有利)、カラムすべてを変換するためのSQL文を自動的に生成します (実行ではありません!)。
+この機能はDBに対していかなる処理も実行しません (読むだけです)。ですからいつでも安全に実行することが可能です。';
+$string['confirmcheckoraclesemantics'] = 'この機能はあなたのMoodleサーバで<a href="http://tracker.moodle.org/browse/MDL-29322">BYTEセマンティクスを使用しているOracle varchar2カラム</a>を調査し代わりにCHARセマンティクスを使用するよう (cross-db互換性およびコンテンツ最大長に有利) カラムすべてを変換するためのSQL文を自動的に生成します (実行ではありません!)。
 
-SQL文の生成後、あなたはSQL文をコピーして、自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
+SQL文の生成後、あなたはSQL文をコピーして自分の好きなSQLインターフェースで安全に実行することができます (実行前にあなたのデータを忘れずにバックアップしてください)。
 
-BYTEセマンティクス検索を実行する前に、あなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
+BYTEセマンティクス検索を実行する前にあなたのMoodleリリースを最新のもの (+バージョン)  にバージョンアップすることを強くお勧めします。
 
-この機能は、DBに対していかなる処理も実行しません (読むだけです)。ですから、いつでも安全に実行することが可能です。';
+この機能はDBに対していかなる処理も実行しません (読むだけです)。ですからいつでも安全に実行することが可能です。';
 $string['confirmdeletefield'] = '本当に次のフィールドを完全に削除してもよろしいですか:';
 $string['confirmdeleteindex'] = '本当に次のインデックスを完全に削除してもよろしいですか:';
 $string['confirmdeletekey'] = '本当に次のキーを完全に削除してもよろしいですか:';
@@ -125,7 +125,7 @@ $string['filenotwriteable'] = 'ファイルに書き込み権がありません�
 $string['fkunknownfield'] = 'テーブル「 {$a->tablename} 」の外部キー「 {$a->keyname} 」は参照テーブル「 {$a->reftable} 」の存在しないフィールド「 {$a->reffield} 」を指しています。';
 $string['fkunknowntable'] = 'テーブル「 {$a->tablename} 」の外部キー「 {$a->keyname} 」は存在しないテーブル「 {$a->reftable} 」を指しています。';
 $string['fkviolationdetails'] = 'テーブル {$a->tablename} の外部キー {$a->keyname} に関して、{$a->numrows} 行中 {$a->numviolations} 行が違反しています。';
-$string['float2numbernote'] = '注意: XMLDBにおいて、「浮動小数」フィールドは、100%サポートされますが、代わりに「数値」フィールドへの移行をお勧めします。';
+$string['float2numbernote'] = '注意: XMLDBにおいて「浮動小数」フィールドは100%サポートされますが代わりに「数値」フィールドへの移行をお勧めします。';
 $string['floatincorrectdecimals'] = '浮動小数フィールドの小数点以下桁数が正しくありません。';
 $string['floatincorrectlength'] = '浮動小数フィールドの長さが正しくありません。';
 $string['generate_all_documentation'] = 'ドキュメンテーションすべて';
@@ -145,12 +145,12 @@ $string['keys'] = 'キー';
 $string['listreservedwords'] = '予約語一覧<br />(<a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> を更新するため使用されます。)';
 $string['load'] = 'ロード';
 $string['main_view'] = 'メインビュー';
-$string['masterprimaryuniqueordernomatch'] = 'あなたの外部キーのフィールドは、参照テーブルのユニークキーと同じ順番で記述する必要があります。';
+$string['masterprimaryuniqueordernomatch'] = 'あなたの外部キーのフィールドは参照テーブルのユニークキーと同じ順番で記述する必要があります。';
 $string['missing'] = '不明';
 $string['missingindexes'] = 'インデックスが見つかりません。';
-$string['mustselectonefield'] = 'フィールドに関連した処理を見るには、フィールドを選択してください!';
-$string['mustselectoneindex'] = 'インデックスに関連した処理を見るには、インデックスを選択してください!';
-$string['mustselectonekey'] = 'キーに関連した処理を見るには、キーを選択してください!';
+$string['mustselectonefield'] = 'フィールドに関連した処理を見るにはフィールドを選択してください!';
+$string['mustselectoneindex'] = 'インデックスに関連した処理を見るにはインデックスを選択してください!';
+$string['mustselectonekey'] = 'キーに関連した処理を見るにはキーを選択してください!';
 $string['newfield'] = '新しいフィールド';
 $string['newindex'] = '新しいインデックス';
 $string['newkey'] = '新しいキー';
@@ -158,7 +158,7 @@ $string['newtable'] = '新しいテーブル';
 $string['newtablefrommysql'] = 'MySQLから新しいテーブル';
 $string['new_table_from_mysql'] = 'MySQLから新しいテーブル';
 $string['nofieldsspecified'] = 'フィールドが指定されていません。';
-$string['nomasterprimaryuniquefound'] = 'あなたの外部キーが参照するカラムは、参照テーブルのプライマリーまたはユニークキーに含まれている必要があります。ユニークインデックスに含まれているカラムでは、十分ではありませんので留意してください。';
+$string['nomasterprimaryuniquefound'] = 'あなたの外部キーが参照するカラムは参照テーブルのプライマリまたはユニークキーに含まれている必要があります。ユニークインデックスに含まれているカラムでは十分ではありませんので留意してください。';
 $string['nomissingindexesfound'] = '不明なインデックスは見つかりませんでした。あなたのDBに関して、さらなる処置は不要です。';
 $string['noreffieldsspecified'] = '参照フィールドが指定されていません。';
 $string['noreftablespecified'] = '指定された参照テーブルが見つかりませんでした。';
@@ -214,10 +214,10 @@ $string['wrongnumberofreffields'] = '参照フィールド番号が正しくあ�
 $string['wrongoraclesemantics'] = '不正なOracle BYTEセマンティクスが見つかりました。';
 $string['wrongreservedwords'] = '現在使用されている予約語<br />($CFG->prefixを使用する場合、テーブル名は重要ではありません。)';
 $string['yesmissingindexesfound'] = '<p>あなたのDBに不明なインデックスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインデックス作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上不明なインデックスが見つかるかどうか、このユーティリティの再実行を強くお勧めします。</p>';
+<p>SQL文の実行後、これ以上不明なインデックスが見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
 $string['yeswrongdefaultsfound'] = '<p>あなたのDBに矛盾したデフォルト値が見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインデックス作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上矛盾したデフォルト値が見つかるかどうか、このユーティリティの再実行を強くお勧めします。</p>';
+<p>SQL文の実行後、これ以上矛盾したデフォルト値が見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
 $string['yeswrongintsfound'] = '<p>あなたのDBに不正なインテジャが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインテジャ作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上不正なインテジャが見つかるかどうか、このユーティリティの再実行を強くお勧めします。<p>';
+<p>SQL文の実行後、これ以上不正なインテジャが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
 $string['yeswrongoraclesemanticsfound'] = '<p>あなたのOracleカラムに不正なBYTEセマンティクスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでOracleカラムの作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上不正なOracleカラムが見つかるかどうか、このユーティリティの再実行を強くお勧めします。<p>';
+<p>SQL文の実行後、これ以上不正なOracleカラムが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';

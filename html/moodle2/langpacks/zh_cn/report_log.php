@@ -38,3 +38,4 @@ $string['page-report-log-index'] = '课程日志报告';
 $string['page-report-log-user'] = '用户课程日志报告';
 $string['page-report-log-x'] = '任何日志报告';
 $string['pluginname'] = '日志';
+$string['selectlogreader'] = '选择日志阅读器';

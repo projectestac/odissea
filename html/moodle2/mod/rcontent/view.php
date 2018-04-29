@@ -97,6 +97,9 @@ if ($rcontent->popup == 1 ) {
     echo $OUTPUT->header();
     echo $OUTPUT->heading(format_string($rcontent->name));
 
+    // add button fullscreen
+    echo '<div align="right"><button id="rcontent-fullscreen">'.get_string('fullscreen','rcontent').'</button></div>';
+
     $framesize = get_config('rcontent', 'framesize');
     echo '<iframe height="'.$framesize.'px" width="100%" src="'.$url.'" id="rcontent_iframe"> <a href="'.$url.'" target="_blank">Resource</a></iframe>';
 
@@ -146,3 +149,29 @@ $event->add_record_snapshot('rcontent', $rcontent);
 $event->trigger();
 
 echo $OUTPUT->footer();
+
+//Add for fullscreen
+echo '<script  type="text/javascript">
+(function () {
+       
+    var rcontentIframe = document.getElementById("rcontent_iframe")
+        rcontentFullscreen = document.getElementById("rcontent-fullscreen");
+
+    if (rcontentIframe && rcontentFullscreen) {
+        rcontentFullscreen.addEventListener("click", function (evt) {
+            if (rcontentIframe.requestFullscreen) {
+                rcontentIframe.requestFullscreen();
+            }
+            else if (rcontentIframe.msRequestFullscreen) {
+                rcontentIframe.msRequestFullscreen();
+            }
+            else if (rcontentIframe.mozRequestFullScreen) {
+                rcontentIframe.mozRequestFullScreen();
+            }
+            else if (rcontentIframe.webkitRequestFullScreen) {
+                rcontentIframe.webkitRequestFullScreen();
+            }
+        }, false);
+    }
+})();
+</script>';

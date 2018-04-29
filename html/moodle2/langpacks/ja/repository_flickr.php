@@ -33,7 +33,7 @@ $string['callbackurltext'] = '<ol>
 </ol>';
 $string['callbackwarning'] = '<ol>
 <li>あなたのMoodleサイトに<a href="http://www.flickr.com/services/api/keys/">Flickr APIキーおよびSecret</a>を取得してください。</li>
-<li>これら詳細を入力した後、「保存」ボタンをクリックしてください。そして、「設定」をクリックすることで、このページに戻ることができます。あなたには、Moodleが生成したコールバックURLが表示されます。</li>
+<li>これら詳細を入力した後、「保存」ボタンをクリックしてください。そして、「設定」をクリックすることで、このページに戻ることができます。あなたにはMoodleが生成したコールバックURLが表示されます。</li>
 <li>あなたの<a href="http://www.flickr.com/services/api/keys/">Flickrキー</a>詳細を編集した後、コールバックURLを設定してください。</li>
 </ol>';
 $string['configplugin'] = 'Flickr設定';

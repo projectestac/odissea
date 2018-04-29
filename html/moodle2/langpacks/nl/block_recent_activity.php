@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Recente wijzigingen';
-$string['recent_activity:addinstance'] = 'Voeg een nieuw recente activiteitenblok toe';
+$string['recent_activity:addinstance'] = 'Voeg een nieuw recent activiteitenblok toe';
 $string['recent_activity:viewaddupdatemodule'] = 'Bekijk toegevoegde en aangepaste modules in het recente activiteitenblok';
 $string['recent_activity:viewdeletemodule'] = 'Bekijk verwijderde modules in het recente activiteitenblok';

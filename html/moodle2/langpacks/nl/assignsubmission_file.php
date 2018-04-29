@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Aanvaarde bestandstypes';
-$string['acceptedfiletypes_help'] = 'De aanvaarde bestandstypes kunnen beperkt worden door een puntkomma gescheiden lijst van mimeypes, bijvoorbeeld \'video/mp4;image/png;image/jpeg\'. Je kunt ook beperken op extensies door het punt te gebruiken, bijvoorbeeld \'.png;.jpg\'. Als het veld leeg is, dan worden alle bestandstypes toegestaan.';
+$string['acceptedfiletypes_help'] = 'De aanvaarde bestandstypes kunnen beperkt worden door een puntkomma gescheiden lijst van mimeypes, bijvoorbeeld \'video/mp4;image/png;image/jpeg\' of door een lijst met extensies, inclusief het punt te gebruiken, bijvoorbeeld \'.png;.jpg\'. Als het veld leeg is, dan worden alle bestandstypes toegestaan.';
 $string['configmaxbytes'] = 'Maximale bestandsgrootte';
 $string['countfiles'] = '{$a} bestanden';
 $string['default'] = 'Standaard ingeschakeld';

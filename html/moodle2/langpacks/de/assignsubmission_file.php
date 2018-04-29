@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Akzeptierte Dateitypen';
-$string['acceptedfiletypes_help'] = 'Die akzeptierten Dateitypen können als semikolongetrennte Liste von MIME-Typen eingeschränkt werden, z.B. \'video/mp4; audio/mp3; image/png; image/jpeg\'. Alternativ können Sie Dateiendungen inclusive Punkt angeben, z.B. \'.png; .jpg\'. Falls das Feld leer ist, sind alle Dateitypen erlaubt.';
+$string['acceptedfiletypes_help'] = 'Die akzeptierten Dateitypen können als kommagetrennte Liste von MIME-Typen angegeben werden, z.B. \'video/mp4, audio/mp3, image/png, image/jpeg\'. Alternativ können Sie auch Dateiendungen inclusive Punkt angeben, z.B. \'.png, .jpg\'. Falls das Feld leer ist, sind alle Dateitypen erlaubt.';
 $string['configmaxbytes'] = 'Maximale Dateigröße';
 $string['countfiles'] = '{$a} Dateien';
 $string['default'] = 'Standardmäßig aktiviert';

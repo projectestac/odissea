@@ -29,3 +29,5 @@ $string['check_defaultuserrole_details'] = '<p>Alla inloggade användare ges fö
 <p>Den enda äldre typen för rollen standardanvändare som stöds är <em>Autentiserad användare</em>. Förmågan att se kurser ska inte vara aktiverad.</p>';
 $string['check_mediafilterswf_error'] = 'Mediafilter för Flash är aktiverat - detta är mycket farligt för de flesta servrar.';
 $string['check_mediafilterswf_ok'] = 'Mediafilter för Flash är inte aktiverat.';
+$string['check_noauth_name'] = 'Ingen autentisering';
+$string['check_noauth_ok'] = 'Inget plugin-program för autentisering är avaktiverat';

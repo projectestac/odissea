@@ -37,6 +37,7 @@ $string['eventuserreportviewed'] = 'Relatório de registos de atividade do utili
 $string['logsformat'] = 'Formato dos registos de atividade';
 $string['log:view'] = 'Ver registos de atividade da disciplina';
 $string['log:viewtoday'] = 'Ver registos de atividade de hoje';
+$string['nocapability'] = 'Não é possível aceder ao relatório de registo de atividades do utilizador';
 $string['nologreaderenabled'] = 'Nenhum leitor de registos ativado';
 $string['origin'] = 'Origem';
 $string['other'] = 'Outro';

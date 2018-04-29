@@ -191,5 +191,5 @@ $string['viewmyentriesaboutmodule'] = 'Voir mes articles sur {$a}';
 $string['viewsiteentries'] = 'Afficher tous les articles';
 $string['viewuserentries'] = 'Afficher tous les articles de {$a}';
 $string['worldblogs'] = 'Le grand public peut lire les articles de blog marqués comme accessibles à tout le monde';
-$string['wrongexternalid'] = 'Id de blog externe erroné';
+$string['wrongexternalid'] = 'ID de blog externe erroné';
 $string['wrongpostid'] = 'Identifiant de l\'article de blog incorrect';

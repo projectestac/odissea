@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_connection'] = 'Ocorreu um erro ao carregar o módulo WIRIS';
 $string['pluginname'] = 'Módulo WIRIS para Atto';
 $string['wiris_cas_title'] = 'Calculadora';
 $string['wiris_chem_editor_title'] = 'Editor de Química';

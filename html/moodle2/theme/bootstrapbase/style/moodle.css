@@ -457,23 +457,13 @@ a.skip:active {
   margin-bottom: 5px;
   margin-top: 15px;
 }
-.loginbox .signuppanel .subcontent {
-  text-align: left;
-}
 .loginbox .loginsub {
   margin-left: 0;
   margin-right: 0;
 }
 .loginbox .guestsub,
-.loginbox .forgotsub,
-.loginbox .potentialidps {
+.loginbox .forgotsub {
   margin: 5px 12%;
-}
-.loginbox .potentialidps .potentialidplist {
-  margin-left: 40%;
-}
-.loginbox .potentialidps .potentialidplist div {
-  text-align: left;
 }
 .loginbox .loginform {
   margin-top: 1em;
@@ -511,6 +501,9 @@ a.skip:active {
   min-height: 30px;
   margin-bottom: -2000px;
   padding-bottom: 2000px;
+}
+.loginbox .potentialidp {
+  margin-bottom: 0.3em;
 }
 .loginbox .potentialidp .smallicon {
   vertical-align: text-bottom;
@@ -6870,6 +6863,9 @@ a.ygtvspacer:hover {
 #categoryquestions label {
   margin: 0;
 }
+#categoryquestions .header {
+  text-align: left;
+}
 #page-mod-quiz-edit div.questionbankwindow div.header {
   margin: 0;
 }
@@ -6965,6 +6961,12 @@ body.path-question-type .fitem_fgroup .accesshide {
 .formulation select {
   width: auto;
   vertical-align: baseline;
+}
+.que.multianswer .formulation .yui3-widget-positioned .feedbackspan {
+  box-sizing: content-box;
+  padding-bottom: 0;
+  max-width: inherit;
+  width: inherit;
 }
 .path-mod-quiz input[size] {
   width: auto;
@@ -7467,9 +7469,12 @@ body.path-question-type .mform fieldset.hidden {
 .userlist table#participants {
   text-align: center;
 }
-.userlist table#participants td,
-.userlist table#participants th {
+.userlist table#participants td {
+  text-align: left;
+  padding: 4px;
   vertical-align: middle;
+}
+.userlist table#participants th {
   text-align: left;
   padding: 4px;
 }
@@ -13847,6 +13852,12 @@ form {
 .singleselect label {
   margin-right: .3em;
 }
+.custom-select {
+  max-width: 100%;
+}
+.custom-select + input[type="submit"] {
+  margin: 0 0 0 5px;
+}
 #portfolio-add-button {
   display: inline;
 }
@@ -14300,6 +14311,9 @@ body.modal-open {
   border-radius: 10px;
   border: none;
 }
+.modal-container .modal.modal-lg {
+  max-width: 900px;
+}
 .modal-container .modal .modal-header {
   min-height: 13px;
   padding: 5px;
@@ -14351,6 +14365,19 @@ body.modal-open {
 .modal-container .modal .modal-body {
   max-height: none;
 }
+.modal-container .modal .modal-body > .loading-icon {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.modal-container .modal .modal-body > .loading-icon .icon {
+  position: absolute;
+  top: 50%;
+  /*rtl:ignore*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .modal-container .modal .modal-footer {
   border-top: 1px solid #bbb;
   text-align: center;
@@ -14359,11 +14386,7 @@ body.modal-open {
   box-shadow: none;
   border-radius: 0 0 10px 10px;
 }
-.modal-container.large .modal {
-  max-width: 900px;
-}
 .modal-backdrop {
-  z-index: 4049;
   background-color: #aaa;
   opacity: 0.4;
 }
@@ -14492,11 +14515,14 @@ body.path-mod-feedback #region-main .mform.feedback_form .feedback-item-pagebrea
 .path-mod-forum .forumheaderlist .discussion .topic,
 .path-mod-forum .forumheaderlist .discussion .discussionsubscription,
 .path-mod-forum .forumheaderlist .discussion .topic.starter,
-.path-mod-forum .forumheaderlist .discussion .picture,
 .path-mod-forum .forumheaderlist .discussion .author,
 .path-mod-forum .forumheaderlist .discussion .replies,
 .path-mod-forum .forumheaderlist .discussion .lastpost {
   vertical-align: top;
+}
+.path-mod-forum .forumheaderlist .discussion .picture {
+  margin: 0 20px;
+  float: left;
 }
 .path-mod-forum .forumheaderlist .discussion .unread img {
   margin: 0;
@@ -14620,6 +14646,9 @@ div#dock {
 .path-mod-choice .media-left {
   float: left;
   padding-right: 1em;
+}
+.path-mod-choice .horizontal .choices .option {
+  display: inline-block;
 }
 .path-mod-lesson .firstpageoptions {
   margin: auto;
@@ -16615,7 +16644,6 @@ div[data-flexitour="backdrop"] {
   background-color: #000;
   opacity: 0.8;
   filter: alpha(opacity=80);
-  z-index: 4049;
   background-color: #aaa;
   opacity: 0.4;
   z-index: 4030;
@@ -16638,6 +16666,7 @@ div[data-flexitour="step-background-fader"],
 }
 span[data-flexitour="container"] div[data-role="flexitour-step"] {
   background-color: #fff;
+  color: #333;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);

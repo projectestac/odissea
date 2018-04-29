@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actions'] = 'Ενέργειες';
 $string['availability'] = 'Διαθεσιμότητα';
 $string['checkforupdates'] = 'Έλεγχος για διαθέσιμες ενημερώσεις';
 $string['checkforupdateslast'] = 'Τελευταίος έλεγχος έγινε στις {$a}';
@@ -78,4 +79,6 @@ $string['type_webservice_plural'] = 'Πρωτόκολλα webservice';
 $string['uninstall'] = 'Απεγκατάσταση';
 $string['updateavailable_moreinfo'] = 'Περισσότερες πληροφορίες...';
 $string['validationmsg_componentmatch'] = 'Πλήρες όνομα συστατικού';
+$string['validationmsg_filenotexists'] = 'Αδυναμία εύρεσης εξαγόμενου αρχείου';
+$string['validationmsg_missingversionphp'] = 'Αδυναμία εύρεσης αρχείου version.php';
 $string['version'] = 'Έκδοση';

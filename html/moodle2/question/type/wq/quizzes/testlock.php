@@ -8,6 +8,6 @@ if (@is_readable($bootfile)) require_once($bootfile);
 
 require_once dirname(__FILE__) . '/lib/php/Boot.class.php';
 
-com_wiris_quizzes_test_LockTester::main();
+com_wiris_quizzes_test_LockTester::main(null);
 
 ?>

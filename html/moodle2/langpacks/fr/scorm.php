@@ -324,7 +324,7 @@ $string['scormloggingon'] = 'L\'historique API est activée';
 $string['scormopen'] = 'Disponible depuis le';
 $string['scormresponsedeleted'] = 'Tentative supprimées de l\'utilisateur';
 $string['scorm:savetrack'] = 'Enregistrer les traces';
-$string['scorm:skipview'] = 'Sauter la vue d\'ensemble';
+$string['scorm:skipview'] = 'Passer la vue d\'ensemble';
 $string['scormtype'] = 'Type';
 $string['scormtype_help'] = 'Ce réglage détermine comment le paquetage est inclus dans le cours. Il y a au maximum 4 options.
 

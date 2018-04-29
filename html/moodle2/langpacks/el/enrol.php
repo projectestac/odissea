@@ -100,6 +100,7 @@ $string['periodstart'] = 'από {$a}';
 $string['periodstartend'] = 'από {$a->start} μέχρι {$a->end}';
 $string['proceedtocourse'] = 'Μετάβαση στο περιεχόμενο του μαθήματος';
 $string['recovergrades'] = 'Ανάκτηση παλαιών βαθμών του χρήστη αν είναι δυνατόν';
+$string['rolefromcategory'] = '{$a->ρόλος} (Που κληρονομείται από την κατηγορία μαθήματος)';
 $string['sendfromnoreply'] = 'Από τη διεύθυνση μη-απάντησης';
 $string['startdatetoday'] = 'Σήμερα';
 $string['synced'] = 'Συγχρονίστηκε';

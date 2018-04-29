@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['component'] = 'Συστατικό';
+$string['taskschedulemonth'] = 'Μήνας';

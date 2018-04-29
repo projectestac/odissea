@@ -1,10 +1,17 @@
 This files describes API changes in core libraries and APIs,
 information provided here is intended especially for developers.
 
+=== 3.2.4 ===
+
+* The caching option 'immutable' has been added to send_stored_file() and send_file().
+* user_can_view_profile() now also checks the moodle/user:viewalldetails capability.
+
 === 3.2.3 ===
 
 * Behat compatibility changes are now being documented at
   https://docs.moodle.org/dev/Acceptance_testing/Compatibility_changes
+* ldap_get_entries_moodle() now always returns lower-cased attribute names in the returned entries.
+  It was suppposed to do so before, but it actually didn't.
 
 === 3.2.2 ===
 

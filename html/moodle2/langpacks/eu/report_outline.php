@@ -26,6 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventactivityreportviewed'] = 'Jardueraren txostena ikusi da';
+$string['eventoutlinereportviewed'] = 'Laburpen-txostena ikusi da';
 $string['neverseen'] = 'Ikusi gabea';
-$string['outline:view'] = 'Ikastaroaren jarduera-txostena ikusi';
+$string['nocapability'] = 'Ez dago sarbiderik laburpen-txostenera';
+$string['nologreaderenabled'] = 'Ez dago irakurlerik gaituta';
+$string['outline:view'] = 'Ikusi ikastaroaren jarduera-txostena';
+$string['page-report-outline-index'] = 'Ikastaroko laburpen-txostena';
+$string['page-report-outline-user'] = 'Erabiltzailearen ikastaroko laburpen-txostena';
+$string['page-report-outline-x'] = 'Edozein laburpen-txosten';
 $string['pluginname'] = 'Ikastaroaren jarduera';

@@ -36,7 +36,7 @@ class moodle1_qtype_truefalsewiris_handler extends moodle1_qtype_truefalse_handl
         $data['actualtruefalsewiris']['id'] = $this->converter->get_nextid();
 
         $wirisprogram = '<question><wirisCasSession>';
-        $wirisprogram .= htmlspecialchars(wrsqz_mathmlDecode($data['truefalsewiris'][0]['wirisprogram']), ENT_COMPAT, "utf-8");
+        $wirisprogram .= htmlspecialchars(wrsqz_mathml_decode($data['truefalsewiris'][0]['wirisprogram']), ENT_COMPAT, "utf-8");
         $wirisprogram .= '</wirisCasSession>';
 
         if (isset($data['truefalsewiris'][0]['wirisoptions']) && count($data['truefalsewiris'][0]['wirisoptions']) > 0) {
@@ -96,7 +96,7 @@ class moodle1_qtype_truefalsewiris_handler extends moodle1_qtype_truefalse_handl
             $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION . '">';
             $wrap->stop();
             $initialcasvalue = $data['truefalsewiris'][0]['wirisoptions'][0]['hiddeninitialcasvalue'];
-            $wirisquestion .= htmlspecialchars(wrsqz_mathmlDecode(trim($initialcasvalue)), ENT_COMPAT, "utf-8");
+            $wirisquestion .= htmlspecialchars(wrsqz_mathml_decode(trim($initialcasvalue)), ENT_COMPAT, "utf-8");
             $wirisquestion .= '</data>';
         }
 

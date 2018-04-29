@@ -52,6 +52,7 @@ $string['moveblock'] = 'Flytta {$a} block';
 $string['moveblockafter'] = 'Flytta blocket efter {$a} blocket';
 $string['moveblockbefore'] = 'Flytta blocket framför {$a} blocket';
 $string['movingthisblockcancel'] = 'Flyttar det här blocket ({$a})';
+$string['myblocks'] = 'Mina block';
 $string['onthispage'] = 'På den här sidan';
 $string['pagetypes'] = 'Typer av sidor';
 $string['pagetypewarning'] = 'Den tidigare angivna sidtypen är inte längre valbar. Välj den lämpligaste sidtypen nedan.';

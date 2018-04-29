@@ -45,7 +45,7 @@ $string['dropzones_help'] = 'As áreas para largar são definidas através da in
 
 * Círculo: centro_X, centro_Y; raio<br>por exemplo: <code>80, 100; 50</code>
 * Polígono: x1, y1; x2, y2; ...; xn, yn<br>por exemplo: <code>20, 60; 100, 60; 20, 100</code>
-* Rectângulo: esquerda, topo, largura, altura<br>por exemplo: <code>20, 60; 80, 40</code>';
+* Rectângulo: topo_esquerda_x, topo_esquerda_y; largura, altura<br>por exemplo: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Os seguintes marcadores foram arrastados para uma área errada: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foram arrastados incorretamente: {$a}.<br />Os marcadores destacados foram colocados nas áreas de destino corretas.<br /> Clique no marcador para visualizar a área correta em destaque.';
 $string['formerror_nobgimage'] = 'É necessário selecionar uma imagem para utilizar como fundo, para a área de arrastar e largar.';
@@ -79,7 +79,7 @@ $string['shape_circle'] = 'Círculo';
 $string['shape_circle_coords'] = 'X,Y;R (em que X,Y são as coordenadas do centro do círculo e R é o seu raio)';
 $string['shape_circle_lowercase'] = 'círculo';
 $string['shape_polygon'] = 'Polígono';
-$string['shape_polygon_coords'] = 'X1,Y1;X2,Y2;X3,Y3;X4,Y4... (em que X1, Y1 são as coordenadas do primeiro vértice, X2, Y2 são as coordenadas do segundo, e assim sucessivamente. (Não é necessário repetir as coordenadas do primeiro vértice para fechar o polígono.)';
+$string['shape_polygon_coords'] = 'X1,Y1;X2,Y2;X3,Y3;X4,Y4... (em que X1, Y1 são as coordenadas do primeiro vértice, X2, Y2 são as coordenadas do segundo, e assim sucessivamente. Não é necessário repetir as coordenadas do primeiro vértice para fechar o polígono.)';
 $string['shape_polygon_lowercase'] = 'polígono';
 $string['shape_rectangle'] = 'Rectângulo';
 $string['shape_rectangle_coords'] = 'X,Y;W,H (em que X,Y são as coordenadas do canto superior esquerdo do retângulo, e o W e o H são a largura e altura do retângulo)';

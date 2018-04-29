@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Оценки экспортированы в формат XLS';
 $string['pluginname'] = 'Таблица Excel';
 $string['timeexported'] = 'Последние загруженные из этого курса';
 $string['xls:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате XLS';

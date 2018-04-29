@@ -415,6 +415,6 @@ $string['whichtries'] = 'Welke pogingen';
 $string['withselected'] = 'Met geselecteerd';
 $string['wrongprefix'] = 'Fout geformateerde naamprefix {$a}';
 $string['xoutofmax'] = '{$a->mark} op {$a->max}';
-$string['yougotnright'] = 'Je hebt juist geselecteerd {$a->num}.';
+$string['yougotnright'] = 'Aantal juiste antwoorden: {$a->num}.';
 $string['youmustselectaqtype'] = 'Je moet een vraagtype kiezen';
 $string['yourfileshoulddownload'] = 'De download van je exportbestand begint zodadelijk. Indien niet, <a href="{$a}">klik hier</a>.';

@@ -73,9 +73,9 @@ $string['capabilitiesrequired'] = 'Cet outil nécessite l\'accès aux données s
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Cliquer pour continuer</a>';
 $string['comment'] = 'Commentaire';
 $string['configpassword'] = 'Mot de passe par défaut de l\'outil distant';
-$string['configpreferheight'] = 'Hauteur favorite par défaut';
+$string['configpreferheight'] = 'Hauteur préférée par défaut';
 $string['configpreferwidget'] = 'Définir comme lanceur par défaut';
-$string['configpreferwidth'] = 'Largeur favorite par défaut';
+$string['configpreferwidth'] = 'Largeur préférée par défaut';
 $string['configresourceurl'] = 'URL de la ressource par défaut';
 $string['configtoolurl'] = 'URL de l\'outil distant par défaut';
 $string['configtypes'] = 'Autoriser les applications LTI';

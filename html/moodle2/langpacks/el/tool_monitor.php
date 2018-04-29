@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addrule'] = 'Προσθήκη νέου κανόνα';
+$string['eventnotfound'] = 'Αδυναμία εύρεσης γεγονότος';
 $string['messagetemplate'] = 'Μήνυμα ειδοποίησης';
 $string['selectacourse'] = 'Επιλογή ενός μαθήματος';

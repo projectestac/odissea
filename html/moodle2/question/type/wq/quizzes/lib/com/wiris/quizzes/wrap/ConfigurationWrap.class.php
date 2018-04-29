@@ -6,6 +6,20 @@ class com_wiris_quizzes_wrap_ConfigurationWrap implements com_wiris_quizzes_api_
 		$this->config = $config;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function set($key, $value) {
+		try {
+			$this->wrapper->start();
+			$this->config->set($key, $value);
+			$this->wrapper->stop();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function get($key) {
 		try {
 			$this->wrapper->start();

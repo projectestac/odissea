@@ -34,7 +34,7 @@ $string['deletea'] = 'Eliminar {$a}';
 $string['delete_confirmation'] = 'Tem a certeza absoluta que pretende eliminar \'<strong>{$a}</strong>\'?';
 $string['deletefiletypes'] = 'Eliminar um tipo de ficheiro';
 $string['description'] = 'Descrição personalizada';
-$string['description_help'] = 'Descrição de um tipo de ficheiro simples, por exemplo ‘Kindle ebook’. Se o seu site suporta vários idiomas e utiliza um filtro de multi-idioma, pode introduzir tags de multi-idioma neste campo para fornecer uma descrição em várias línguas.';
+$string['description_help'] = 'Descrição de um tipo de ficheiro simples, por exemplo \'Kindle ebook\'. Se o seu site suporta vários idiomas e utiliza um filtro de multi-idioma, pode introduzir tags de multi-idioma neste campo para fornecer uma descrição em vários idiomas.';
 $string['descriptiontype'] = 'Tipo de descrição';
 $string['descriptiontype_custom'] = 'Descrição personalizada especificada neste formulário';
 $string['descriptiontype_default'] = 'Predefinido (<i>MIME type</i> ou idioma correspondente da string, caso esteja disponível)';
@@ -52,15 +52,15 @@ $string['error_defaulticon'] = 'Outra extensão do ficheiro com o mesmo <i>MIME 
 $string['error_extension'] = 'O tipo de extensão do ficheiro <strong>{$a}</strong> já existe ou é inválido. As extensões de ficheiros devem ser únicas e não podem conter caracteres especiais.';
 $string['error_notfound'] = 'O tipo de ficheiro com a extensão {$a} não pode ser encontrado.';
 $string['extension'] = 'Extensão';
-$string['extension_help'] = 'Extensão de nome do ficheiro sem o ponto, por exemplo, ‘mobi’';
+$string['extension_help'] = 'Extensão de nome do ficheiro sem o ponto, por exemplo, \'mobi\'';
 $string['groups'] = 'Grupos de tipos de ficheiro';
-$string['groups_help'] = 'Lista opcional de grupos de tipos de ficheiro a que este tipo de ficheiro pertence. Estas são categorias genéricas tais como &lsquo;documento&rsquo; and &lsquo;imagem&rsquo;.';
+$string['groups_help'] = 'Lista opcional de grupos de tipos de ficheiro a que este tipo de ficheiro pertence. Estas são categorias genéricas tais como \'documento\' e \'imagem\'.';
 $string['icon'] = 'Ficheiro de ícone';
 $string['icon_help'] = 'Nome do ficheiro de ícone.
 
 A lista de ícones é retirada do diretório /pix/f da sua instalação Moodle. Pode adicionar ícones personalizados a esta pasta caso seja necessário.';
 $string['mimetype'] = '<i>MIME type</i>';
-$string['mimetype_help'] = '<i>MIME type</i> associado a este tipo de ficheiro, por exemplo, ‘application/x-mobipocket-ebook’';
+$string['mimetype_help'] = 'Tipo de MIME associado a este tipo de ficheiro, por exemplo, ‘application/x-mobipocket-ebook’';
 $string['pluginname'] = 'Tipos de ficheiro';
 $string['revert'] = 'Restaurar {$a} para as predefinições Moodle';
 $string['revert_confirmation'] = 'Tem a certeza que pretende restaurar <strong>.{$a}</strong> para as predefinições Moodle, descartando todas as alterações?';

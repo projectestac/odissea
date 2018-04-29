@@ -66,6 +66,15 @@ $string['legacyfiles'] = '移植的旧课程文件';
 $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';
 $string['modulename'] = '文件';
+$string['modulename_help'] = '文件模块允许教师提供一个文件作为课程资源。在可能的情况下，该文件将在课程界面中显示;否则学生将被提示下载。该文件可能包括支持文件，例如一个HTML页面可能有嵌入的图像或Flash对象。
+
+请注意，学生需要在他们的计算机上安装适当的软件才能打开文件。
+
+一个文件可以用来
+
+* 分享课堂上的演示
+* 包括一个迷你网站作为课程资源
+* 提供某些软件程序的草稿文件(如Photoshop .psd)，这样学生就可以编辑并提交他们进行评估';
 $string['modulenameplural'] = '文件';
 $string['notmigrated'] = '抱歉，传统的资源类型（{$a}）还不能移植。';
 $string['optionsheader'] = '选项';
@@ -86,6 +95,7 @@ $string['resource:exportresource'] = '导出资源';
 $string['resource:view'] = '查看资源';
 $string['search:activity'] = '文件';
 $string['selectmainfile'] = '请点击文件名旁的图标选择主文件。';
+$string['showdate'] = '显示上传/修改日期';
 $string['showsize'] = '显示大小';
 $string['showsize_desc'] = '在课程页面中显示文件大小？';
 $string['showsize_help'] = '在文件链接的旁边，显示文件大小，如“3.1 MB”。如果在资源中有多个文件，则显示所有文件的总大小。';

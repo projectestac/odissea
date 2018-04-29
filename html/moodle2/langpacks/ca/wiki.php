@@ -104,7 +104,7 @@ $string['formatcreole_help'] = 'Creole és un llenguatge d\'etiquetes amb una ba
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
 $string['format_help'] = '* HTML - L\'editor HTML està disponible.
 * Creole - Un llenguatge d\'etiquetes wiki per al qual hi ha disponible una barra editora.
-* Nwiki - Mediawiki- semblant a una llenguatge d\'etiquetes utilitzat al mòdul Nwiki';
+* Nwiki - Mediawiki- semblant a un llenguatge d\'etiquetes utilitzat al mòdul Nwiki';
 $string['formathtml'] = 'Format HTML';
 $string['formathtml_help'] = 'L\'editor HTML pot utilitzar-se per donar format al contingut.
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
@@ -229,6 +229,7 @@ $string['searchterms'] = 'Cerca els termes';
 $string['searchwikis'] = 'Cerca wikis';
 $string['special'] = 'Especial';
 $string['tableofcontents'] = 'Taula de continguts';
+$string['tagarea_wiki_pages'] = 'Pàgines wiki';
 $string['tagsdeleted'] = 'Les etiquetes wiki han estat suprimides';
 $string['tagtitle'] = 'Mostra l\'etiqueta «{$a}»';
 $string['teacherrating'] = 'Valoració del professor';

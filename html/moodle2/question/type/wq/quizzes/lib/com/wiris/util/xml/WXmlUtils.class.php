@@ -2,6 +2,7 @@
 
 class com_wiris_util_xml_WXmlUtils {
 	public function __construct(){}
+	static $WHITESPACE_COLLAPSE_REGEX;
 	static function getElementContent($element) {
 		$sb = new StringBuf();
 		if($element->nodeType == Xml::$Document || $element->nodeType == Xml::$Element) {
@@ -112,6 +113,14 @@ class com_wiris_util_xml_WXmlUtils {
 		}
 		return Xml::createPCData($text);
 	}
+	static function escapeXmlEntities($s) {
+		$s = str_replace("&", "&amp;", $s);
+		$s = str_replace("<", "&lt;", $s);
+		$s = str_replace(">", "&gt;", $s);
+		$s = str_replace("\"", "&quot;", $s);
+		$s = str_replace("'", "&apos;", $s);
+		return $s;
+	}
 	static function htmlEscape($input) {
 		$output = str_replace("&", "&amp;", $input);
 		$output = str_replace("<", "&lt;", $output);
@@ -162,6 +171,17 @@ class com_wiris_util_xml_WXmlUtils {
 		$xml = com_wiris_util_xml_WXmlUtils::filterMathMLEntities($xml);
 		$x = Xml::parse($xml);
 		return $x;
+	}
+	static function safeParseXML($xml) {
+		try {
+			return com_wiris_util_xml_WXmlUtils::parseXML($xml);
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				return Xml::createDocument();
+			}
+		}
 	}
 	static function serializeXML($xml) {
 		$s = $xml->toString();
@@ -402,6 +422,17 @@ class com_wiris_util_xml_WXmlUtils {
 		}
 		return $r;
 	}
+	static function getInnerText($xml) {
+		if($xml->nodeType == Xml::$PCData || $xml->nodeType == Xml::$CData) {
+			return com_wiris_util_xml_WXmlUtils::getNodeValue($xml);
+		}
+		$r = "";
+		$iter = $xml->iterator();
+		while($iter->hasNext()) {
+			$r .= com_wiris_util_xml_WXmlUtils::getInnerText($iter->next());
+		}
+		return $r;
+	}
 	static function setText($xml, $text) {
 		if($xml->nodeType != Xml::$Element) {
 			return;
@@ -417,6 +448,12 @@ class com_wiris_util_xml_WXmlUtils {
 	}
 	static function copyXml($elem) {
 		return com_wiris_util_xml_WXmlUtils::importXml($elem, $elem);
+	}
+	static function copyChildren($from, $to) {
+		$children = $from->iterator();
+		while($children->hasNext()) {
+			$to->addChild(com_wiris_util_xml_WXmlUtils::importXml($children->next(), $to));
+		}
 	}
 	static function importXml($elem, $model) {
 		$n = null;
@@ -444,6 +481,29 @@ class com_wiris_util_xml_WXmlUtils {
 					} else {
 						throw new HException("Unsupported node type: " . Std::string($elem->nodeType));
 					}
+				}
+			}
+		}
+		return $n;
+	}
+	static function importXmlWithoutChildren($elem, $model) {
+		$n = null;
+		if($elem->nodeType == Xml::$Element) {
+			$n = Xml::createElement($elem->getNodeName());
+			$keys = $elem->attributes();
+			while($keys->hasNext()) {
+				$key = $keys->next();
+				$n->set($key, $elem->get($key));
+				unset($key);
+			}
+		} else {
+			if($elem->nodeType == Xml::$CData) {
+				$n = Xml::createCData($elem->getNodeValue());
+			} else {
+				if($elem->nodeType == Xml::$PCData) {
+					$n = Xml::createPCData($elem->getNodeValue());
+				} else {
+					throw new HException("Unsupported node type: " . Std::string($elem->nodeType));
 				}
 			}
 		}
@@ -556,7 +616,7 @@ class com_wiris_util_xml_WXmlUtils {
 						if($cdata->match($aux)) {
 							$res->add($aux);
 						} else {
-							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 662, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 729, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
 							$res->add($aux);
 						}
 					}
@@ -579,8 +639,12 @@ class com_wiris_util_xml_WXmlUtils {
 			return $ent === "amp" || $ent === "lt" || $ent === "gt" || $ent === "quot" || $ent === "apos";
 		}
 	}
+	static function normalizeWhitespace($s) {
+		return (($s !== null) ? com_wiris_util_xml_WXmlUtils::$WHITESPACE_COLLAPSE_REGEX->replace(trim($s), " ") : null);
+	}
 	function __toString() { return 'com.wiris.util.xml.WXmlUtils'; }
 }
+com_wiris_util_xml_WXmlUtils::$WHITESPACE_COLLAPSE_REGEX = new EReg("[ \\t\\n\\r]{2,}", "g");
 function com_wiris_util_xml_WXmlUtils_0(&$charCode, &$endPosition, &$input, &$number, &$output, &$position, &$start, &$startPosition) {
 	{
 		$s = new haxe_Utf8(null);

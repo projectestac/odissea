@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = 'Visualizzato report attività del corso';
 $string['eventoutlinereportviewed'] = 'Visualizzato report riassuntivo';
 $string['neverseen'] = 'Mai acceduto';
+$string['nocapability'] = 'Non è possibile accedere al report riassuntivo';
 $string['nologreaderenabled'] = 'Nessun log reader abilitato';
 $string['numviews'] = '{$a->numviews} di {$a->distinctusers} utenti';
 $string['outline:view'] = 'Visualizzare il report delle attività del corso';

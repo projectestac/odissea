@@ -45,4 +45,4 @@ $string['username_help'] = 'Nome de utilizador a usar quando se estabelecer uma 
 $string['usesafe'] = 'Utilização segura';
 $string['usesafe_help'] = 'Se ativada, a opção de utilização segura será usada para inserir, obter e remover operações. Se tiver especificado um conjunto de replicas, isto será forçado de qualquer forma.';
 $string['usesafevalue'] = 'Utilização de valores seguros';
-$string['usesafevalue_help'] = 'Pode optar por fornecer um valor específico para utilização segura. Isto vai determinar o número de servidores que as operçãoes devem completar antes serem consideradas completas.';
+$string['usesafevalue_help'] = 'Pode optar por fornecer um valor específico para utilização segura. Isto vai determinar o número de servidores que as operçãoes devem concluir antes serem consideradas concluídas.';

@@ -71,6 +71,7 @@ $string['searchtags'] = 'Αναζήτηση ετικετών';
 $string['seeallblogs'] = 'Δείτε όλες τις καταχωρήσεις ιστολογίων σχετικές με "{$a}"...';
 $string['select'] = 'Επιλέξτε';
 $string['showingfirsttags'] = 'Προβάλλονται οι {$a} περισσότερο δημοφιλείς ετικέτες';
+$string['standardforce'] = 'Επιβολή';
 $string['tag'] = 'Ετικέτα';
 $string['tagarea_course_modules'] = 'Δραστηριότητες και πόροι';
 $string['tagareaenabled'] = 'Ενεργοποιημένο';

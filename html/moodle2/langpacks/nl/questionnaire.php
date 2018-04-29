@@ -225,6 +225,7 @@ $string['maxtextlength'] = 'Max. lengte van tekst';
 $string['maxtextlength_help'] = 'Voer voor het vraagtype Tekstvak waarden in voor de lengte van het invoervak en de maximale tekstlengte die respondenten kunnen invoeren.
 Standaardwaarden zijn 20 tekens voor de breedte van het invoervak en 25 tekens voor de maximale lengte van in te voeren tekst.';
 $string['messageprovider:message'] = 'Enquête herinnering';
+$string['messageprovider:notification'] = 'Inzending enquête';
 $string['minforcedresponses'] = 'Min. geforceerde antwoorden';
 $string['minforcedresponses_help'] = 'Gebruik deze parameters om respondenten te dwingen een minimum van **Min.** en een maximum van **Max.** vakjes aan te vinken.
 Stel **Min.** en **Max.** op dezelfde waarde in om een exact aantal vakjes aan te laten vinken. Als er alleen een min of max waarde gewenst is, laat dan de andere waarde op standaard **0**. Als je de **Min.** of **Max.** op een andere waarde instelt dan de standaard **0**, wordt er een waarschuwing getoond als de respondent niet voldoet aan de vereisten. Het is vanzelfsprekend dat je de vereisten duidelijk maakt aan de respondenten, ofwel in de algemene instructies van je Enquête ofwel in de tekst van relevante vragen.';
@@ -275,11 +276,15 @@ $string['num'] = '#';
 $string['numattemptsmade'] = '{$a} pogingen voor deze enquête';
 $string['numberfloat'] = 'Het getal dat je hebt ingevoerd <strong>{$a->number}</strong> is opnieuw opgemaakt/afgerond met <strong>{$a->precision}</strong> decimalen.';
 $string['numberofdecimaldigits'] = 'Aantal decimalen';
+$string['numberofdecimaldigits_help'] = 'Gebruik **aantal decimalen** om het format te specificeren voor de berekende en getoonde gemiddelde waarde op de rapportage-pagina van de enquête.';
 $string['numberscaleitems'] = 'Aantal schaalitems';
+$string['numberscaleitems_help'] = 'Aantal items in schaal is het te gebruiken *aantal items* voor je beoordelingsschaal. Je zou normaal gesproken een waarde van 3 tot 5 gebruiken. Standaardwaarde is **5**.';
 $string['numeric'] = 'Nummeriek';
 $string['numeric_help'] = 'Gebruik dit vraagtype wanneer je verwacht dat het antwoord een correct geformatteerd getal is.';
 $string['of'] = 'van';
 $string['opendate'] = 'Gebruik startdatum';
+$string['opendate_help'] = 'Je kunt hier een datum specificeren om de enquête te openen. Vink dit aan en selecteer de datum en tijd die je wilt.
+Gebruikers zullen niet in staat zijn de enquête voor die datum in te vullen. Als dit niet geselecteerd is, zal de enquête direct open zijn.';
 $string['option'] = 'optie  {$a}';
 $string['optionalname'] = 'Vraagnaam';
 $string['optionalname_help'] = 'De vraagnaam wordt alleen gebruikt wanneer je antwoorden exporteert naar CSV/Excel format. Als je nooit naar CSV exporteert, hoef je je geen zorgen te maken om vraagnamen. Als je regelmatig gegevens van enquêtes wilt exporteren naar CSV, kun je de vragen op twee manieren namen geven.';
@@ -288,6 +293,15 @@ $string['order_ascending'] = 'Oplopende volgorde';
 $string['order_default'] = 'Bekijk standaardvolgorde';
 $string['order_descending'] = 'Aflopende volgorde';
 $string['orderresponses'] = 'Rangschik antwoorden';
+$string['orderresponses_help'] = 'Wanneer Alle Antwoorden worden getoond, kun je de keuzes rangschikken op het aantal antwoorden (de kolom Gemiddelde) voor de volgende 4 vraagtypes:
+
+* Radio button één antwoord
+* Rolmenu één antwoord
+* Keuzevakje meerdere antwoorden
+* Beoordeel (inclusief Likert-schalen)
+
+Wanneer je op de pagina Alle Antwoorden komt, zijn alle antwoorden standaard gerangschikt in de volgorde die de maker van de enquête heeft ingesteld voor de vraagkeuzes.
+Je kunt deze op- of aflopend rangschikken.';
 $string['osgood'] = 'Osgood';
 $string['other'] = 'Overige:';
 $string['otherempty'] = 'Als je deze keuze aanvinkt, moet je wat tekst in het tekstvak invoeren!';
@@ -343,6 +357,7 @@ $string['questionnaire:readallresponseanytime'] = 'Alle antwoorden altijd bekijk
 $string['questionnaire:readallresponses'] = 'Antwoordsamenvattingen lezen, afhankelijk van openstellingstijden';
 $string['questionnaire:readownresponses'] = 'Eigen antwoorden lezen';
 $string['questionnairereport'] = 'Enquête rapportage';
+$string['questionnaire:submissionnotification'] = 'Ontvang een melding voor iedere inzending';
 $string['questionnaire:submit'] = 'Een enquête voltooien en insturen';
 $string['questionnaire:view'] = 'Een enquête bekijken';
 $string['questionnaire:viewsingleresponse'] = 'Volledige individuele antwoorden bekijken';
@@ -392,6 +407,8 @@ $string['responseviewstudentswhenanswered'] = 'Na het beantwoorden van de enquê
 $string['responseviewstudentswhenclosed'] = 'Nadat de enquête gesloten is';
 $string['restrictedtoteacher'] = 'Deze functies zijn alleen toegankelijk voor leraren met bewerkrechten!';
 $string['resume'] = 'Bewaar antwoorden en ga verder';
+$string['resume_help'] = 'Door deze optie in te schakelen kunnen gebruikers hun antwoorden bewaren voordat zij de enquête insturen.
+Gebruikers kunnen de enquête onvoltooid laten en hervatten vanaf het bewaarde punt op een later moment.';
 $string['resumesurvey'] = 'Ga verder';
 $string['return'] = 'Terug';
 $string['save'] = 'Bewaar';
@@ -424,6 +441,7 @@ $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['subject'] = 'Onderwerp';
 $string['submissionnotificationhtmlanon'] = 'Er is een nieuwe  <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête.';
 $string['submissionnotificationhtmluser'] = 'Er is een nieuwe <a href="{$a->submissionurl}">inzending</a> in de "{$a->name}" enquête van "<a href="{$a->profileurl}">{$a->username}</a>".';
+$string['submissionnotificationsubject'] = 'Nieuwe inzending enquête';
 $string['submissionnotificationtextanon'] = 'Er is een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête.';
 $string['submissionnotificationtextuser'] = 'Er is een nieuwe inzending ({$a->submissionurl}) in de "{$a->name}" enquête van "{$a->username}" ({$a->profileurl}).';
 $string['submitoptions'] = 'Instuuropties';
@@ -441,8 +459,13 @@ $string['template'] = 'Sjabloon';
 $string['templatenotviewable'] = 'Sjabloon-enquêtes niet zichtbaar';
 $string['text'] = 'Vraagtekst';
 $string['textareacolumns'] = 'Kolommen tekstvak';
+$string['textareacolumns_help'] = 'Deze vraag zal een blanco tekstvak tonen met **x** *tekstvak kolommen* (of *breedte* van het vak) en **y** *tekstvak rijen* (aantal *regels* tekst).
+
+Als je de standaardwaarde **0** behoudt voor zowel x als y (of als je deze instelt op **0**), dan zal de HTML editor worden getoond met de standaard hoogte en breedte (indien beschikbaar in de context van de cursus/gebruiker &amp; gebruikersprofiel).';
 $string['textarearows'] = 'Rijen tekstvak';
 $string['textbox'] = 'Tekstvak';
+$string['textbox_help'] = 'Voor het vraagtype Tekstvak, voer de lengte van het invoervak en de maximale lengte van de tekst in die respondent kan invoeren.
+Standaardwaarden zijn 20 tekens voor de breedte van het invoervak en 25 tekens voor de maximale lengte van de ingevoerde tekst.';
 $string['textdownloadoptions'] = 'Opties voor tekst downloaden (CSV)';
 $string['thank_head'] = 'Dank je wel voor het invullen van deze enquête.';
 $string['theme'] = 'Thema';

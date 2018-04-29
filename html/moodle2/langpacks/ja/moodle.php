@@ -187,8 +187,8 @@ $string['backupfailed'] = 'あなたのいくつかのコースが保存され�
 $string['backupfilename'] = 'backup';
 $string['backupfinished'] = 'バックアップが正常に完了しました。';
 $string['backupfromthissite'] = 'バックアップはこのサイトで作成されましたか?';
-$string['backupgradebookhistoryhelp'] = 'この設定を有効にした場合、自動バックアップに評定履歴が含まれます。この機能を動作させるには、サーバ設定において評定履歴を無効 (disablegradehistory) にしてはならないことに留意してください。';
-$string['backupincludemoduleshelp'] = '自動バックアップにおいて、コースモジュールにユーザデータを含むかどうか、選択してください。';
+$string['backupgradebookhistoryhelp'] = 'この設定を有効にした場合、自動バックアップに評定履歴が含まれます。この機能を動作させるにはサーバ設定において評定履歴を無効 (disablegradehistory) にしてはならないことに留意してください。';
+$string['backupincludemoduleshelp'] = '自動バックアップにおいて、コースモジュールにユーザデータを含むかどうか選択してください。';
 $string['backupincludemoduleuserdatahelp'] = 'モジュールのユーザデータを自動バックアップに含めるかどうか選択してください。';
 $string['backuplogdetailed'] = '詳細実行ログ';
 $string['backuploglaststatus'] = '最新実行ログ';
@@ -201,7 +201,7 @@ $string['backuproleassignments'] = 'これらのロールに対するロール�
 $string['backupsavetohelp'] = 'あなたがバックアップファイルを保存したいディレクトリのフルパスです。';
 $string['backupsitefileshelp'] = 'この設定を有効にした場合、コースで使用されたサイトファイルが自動バックアップに含まれます。';
 $string['backuptakealook'] = '次のバックアップログをご覧ください: {$a}';
-$string['backupuserfileshelp'] = '自動バックアップにユーザファイル (例 プロファイルイメージ) を含むかどうか、選択してください。';
+$string['backupuserfileshelp'] = '自動バックアップにユーザファイル (例 プロファイルイメージ) を含むかどうか選択してください。';
 $string['backupversion'] = 'バックアップバージョン';
 $string['badges'] = 'バッジ';
 $string['block'] = 'ブロック';
@@ -214,8 +214,8 @@ $string['blocksediton'] = 'ブロック編集の開始';
 $string['blocksetup'] = 'ブロックテーブル設定中';
 $string['blocksuccess'] = '{$a} テーブルが正常に設定されました。';
 $string['brief'] = '概要';
-$string['bulkactions'] = 'バルク操作';
-$string['bulkactionselect'] = '$a} バルク操作選択';
+$string['bulkactions'] = 'バルク処理';
+$string['bulkactionselect'] = '{$a} バルク操作選択';
 $string['bulkmovecoursessuccess'] = '{$a->courses} 件のコースを正常に「 {$a->category} 」に移動しました。';
 $string['bycourseorder'] = 'コース順';
 $string['byname'] = 'by {$a}';
@@ -288,15 +288,15 @@ $string['confirmed'] = 'あなたの登録が完了しました。';
 $string['confirmednot'] = 'あなたの登録はまだ完了していません！';
 $string['content'] = 'コンテンツ';
 $string['continue'] = '続ける';
-$string['continuetocourse'] = 'あなたのコースに入るには、ここをクリックしてください';
+$string['continuetocourse'] = 'あなたのコースに入るにはここをクリックしてください';
 $string['convertingwikitomarkdown'] = 'WikiをMarkdownに変換';
 $string['cookiesenabled'] = 'ブラウザのクッキー設定を有効にしてください。';
 $string['cookiesenabled_help'] = 'このサイトでは2種類のクッキーが使用されます:
 
 重要なクッキーはセッションクッキーで、通常MoodleSessionと呼ばれます。継続的にログインして各ページに移動するため、ブラウザをクッキー利用可にしてください。 ログアウトまたはブラウザを閉じた場合、(ブラウザとサーバの) クッキーは破棄されます。
 
-もう1つのクッキーは純粋に便宜的な理由で使用され、通常 <b>MOODLEID と呼ばれます。このクッキーは、あなたのユーザ名をブラウザに憶えさせるために使用されます。これはあなたがサイトへ戻ったときに、ログインページにユーザ名が初めから入力されていることを意味します。このクッキーを拒否しても大丈夫です - しかし、ログイン時にあなたのユーザ名を毎回入力する必要があります。';
-$string['cookiesnotenabled'] = '残念ですが、あなたのブラウザでは、クッキーの設定が有効にされていません。';
+もう1つのクッキーは純粋に便宜的な理由で使用され、通常 <b>MOODLEID と呼ばれます。このクッキーはあなたのユーザ名をブラウザに憶えさせるために使用されます。これはあなたがサイトへ戻ったときに、ログインページにユーザ名が初めから入力されていることを意味します。このクッキーを拒否しても大丈夫です - しかし、ログイン時にあなたのユーザ名を毎回入力する必要があります。';
+$string['cookiesnotenabled'] = '残念ですが、あなたのブラウザではクッキーの設定が有効にされていません。';
 $string['copy'] = 'コピー';
 $string['copyasnoun'] = 'コピー';
 $string['copyingcoursefiles'] = 'コースファイルのコピー';
@@ -335,7 +335,7 @@ $string['coursedisplay_help'] = 'この設定では1ページにコース全体�
 $string['coursedisplay_multi'] = '1ページあたり1セクションを表示する';
 $string['coursedisplay_single'] = '1ページにすべてのセクションを表示する';
 $string['courseduration'] = 'コース継続期間';
-$string['courseduration_desc'] = 'コース継続期間はデフォルトのコース終了日を計算するために使用されます。コース終了日はレポートにのみ使用されます。ユーザは終了日の後でもコースに入ることができます。';
+$string['courseduration_desc'] = 'コース継続期間はデフォルトのコース終了日を計算するため使用されます。コース終了日はユーザのコース一覧に含むコースを決定するため使用されます。コース終了日はカスタムレポートにも使用することができます。ユーザは終了日の後でもコースに入ることができます。';
 $string['courseextendednamedisplay'] = '{$a->shortname} {$a->fullname}';
 $string['coursefiles'] = 'レガシーコースファイル';
 $string['coursefilesedit'] = 'レガシーコースファイルを編集する';
@@ -353,7 +353,7 @@ $string['coursehelphiddensections'] = '学生に対して、コース内の非�
 $string['coursehelpmaximumupload'] = 'このコースで学生がアップロードできる最大サイズを定義します。サイト全体の設定に制限されます。';
 $string['coursehelpnewsitemsnumber'] = 'コースページの最新アナウンスメントブロック内に表示される最近のアナウンスメント数です。ゼロに設定した場合、アナウンスメントフォーラムは作成されません。';
 $string['coursehelpnumberweeks'] = 'コース内のセクション数です (特定のコースフォーマットにのみ適用されます)。';
-$string['coursehelpshowgrades'] = '評定表の表示を有効にします。個々の活動に関して、評定表の表示を抑制するものではありません。';
+$string['coursehelpshowgrades'] = '評定表の表示を有効にします。個別の活動に関して評定表の表示を抑制するものではありません。';
 $string['coursehidden'] = '現在、学生はこのコースを利用できません。';
 $string['courseinfo'] = 'コース情報';
 $string['courselegacyfiles'] = 'レガシーコースファイル';
@@ -572,7 +572,7 @@ $string['editordefaultfont'] = 'デフォルトフォント';
 $string['editorenablespelling'] = 'スペルチェックを有効にする';
 $string['editorfontlist'] = 'フォントリスト';
 $string['editorfontsize'] = 'デフォルトフォントサイズ';
-$string['editorpreferences'] = 'プリファレンスを編集する';
+$string['editorpreferences'] = 'エディタプリファレンス';
 $string['editorresettodefaults'] = 'デフォルト値にリセットする';
 $string['editorsettings'] = 'エディタ設定';
 $string['editorshortcutkeys'] = 'エディタショートカットキー';
@@ -634,6 +634,8 @@ $string['emaildisplayyes'] = 'すべてのユーザに私のメールアドレ�
 $string['emailenable'] = 'このメールアドレスは有効です';
 $string['emailenableclick'] = 'このメールアドレスにメールすべてが再度送信されるようにする';
 $string['emailexists'] = 'このメールアドレスはすでに使用されています。';
+$string['emailexistshintlink'] = '忘れたユーザ名またはパスワードを回復する';
+$string['emailexistssignuphint'] = '恐らく過去にアカウントを作成しませんでしたか? {$a}';
 $string['emailformat'] = 'メールフォーマット';
 $string['emailmustbereal'] = '注意：メールアドレスは実際に使えるアドレスを入力してください。';
 $string['emailnotallowed'] = 'これらのドメインのメールアドレスは許可されていません ({$a})';
@@ -674,11 +676,11 @@ $string['emailpasswordconfirmation'] = '{$a->firstname} さん
 分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['emailpasswordconfirmationsubject'] = '{$a}: パスワード変更確認';
 $string['emailpasswordconfirmmaybesent'] = '<p>正しいユーザ名またはメールアドレスを入力した場合、あなたにメールが送信されています。</p>
-<p>送信されたメールには、パスワードの変更を確認および完了するため、簡単な説明が記載されています。パスワード変更作業が難しい場合、サイト管理者にご連絡ください。</p>';
+<p>送信されたメールにはパスワードの変更を確認および完了するため、簡単な説明が記載されています。パスワード変更作業が難しい場合、サイト管理者にご連絡ください。</p>';
 $string['emailpasswordconfirmnoemail'] = '<p>あなたが選択したユーザアカウントには記録されたメールアドレスがありません。</p>
 <p>サイト管理者にご連絡ください。</p>';
-$string['emailpasswordconfirmnotsent'] = '<p>あなたが提供したユーザ詳細では、既存のユーザアカウントを特定できません。</p>
-<p>あなたが入力した情報を確認して、再度お試しください。問題が持続する場合、サイト管理者にご連絡ください。</p>';
+$string['emailpasswordconfirmnotsent'] = '<p>あなたが提供したユーザ詳細では既存のユーザアカウントを特定できません。</p>
+<p>あなたが入力した情報を確認して再度お試しください。問題が持続する場合、サイト管理者にご連絡ください。</p>';
 $string['emailpasswordconfirmsent'] = 'あなたの <b>{$a}</b> のメールアドレス宛にメールが送信されました。
 <br />このパスワード変更に関して、確認および完了のための簡単な説明が記載されています。分からない場合、サイト管理者にご連絡ください。';
 $string['emailpasswordsent'] = 'パスワードの変更確認ありがとうございます。
@@ -705,7 +707,7 @@ $string['emptydragdropregion'] = '空白リージョン';
 $string['enable'] = 'Yes';
 $string['encryptedcode'] = '暗号化コード';
 $string['enddate'] = 'コース終了日';
-$string['enddate_help'] = 'コース終了日はレポートにのみ使用されます。ユーザは終了日の後でもコースに入ることができます。';
+$string['enddate_help'] = 'コース終了日はユーザのコース一覧に含むコースを決定するため使用されます。終了日を過ぎた場合、コースはナビゲーションに表示されず過去のコースとしてコース概要に記載されます。コース終了日はカスタムレポートにも使用することができます。ユーザは終了日の後でもコースに入ることができます。言い換えれば日付はコースアクセスを制限することはありません。';
 $string['english'] = '英語';
 $string['enrolmentmethods'] = '登録方法';
 $string['entercourse'] = 'このコースに入るにはクリックしてください。';
@@ -857,15 +859,15 @@ $string['gpl'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com
 
 このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で再頒布または改変することができます。
 
-このプログラムは有用であることを願って頒布されますが、*全くの無保証*です。商業可能性の保証や特定の目的への適合性は、言外に示されたものも含め全く存在しません。
+このプログラムは有用であることを願って頒布されますが、*全くの無保証*です。商業可能性の保証や特定の目的への適合性は言外に示されたものも含め全く存在しません。
 
 詳しくはMoodleライセンス情報をご覧ください：
 http://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
 $string['gpl3'] = 'Copyright (C) 1999 onwards Martin Dougiamas (http://moodle.com)
 
-このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で再頒布または改変することができます。
+このプログラムはフリーソフトウェアです。あなたはこれをフリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で再頒布または改変することができます。
 
-このプログラムは有用であることを願って頒布されますが、*全くの無保証*です。商業可能性の保証や特定の目的への適合性は、言外に示されたものも含め全く存在しません。
+このプログラムは有用であることを願って頒布されますが*全くの無保証*です。商業可能性の保証や特定の目的への適合性は言外に示されたものも含め全く存在しません。
 
 詳しくはMoodleライセンス情報をご覧ください：
 http://docs.moodle.org/ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9';
@@ -912,7 +914,7 @@ $string['hiddenassign'] = '割り当て非表示';
 $string['hiddenfromstudents'] = '学生から非表示';
 $string['hiddensections'] = 'コースセクションの非表示';
 $string['hiddensectionscollapsed'] = '非表示コースセクションを折りたたんで表示する';
-$string['hiddensections_help'] = 'ここでは学生に非表示セクションを折りたたんだ形で (恐らくウィークリーフォーマットのコースで休日を示すため)　表示するか、完全に隠すか指定します。';
+$string['hiddensections_help'] = 'ここでは学生に非表示セクションを折りたたんだ形で (恐らくウィークリーフォーマットのコースで休日を示すため) 表示するか完全に隠すか指定します。';
 $string['hiddensectionsinvisible'] = '非表示のコースセクションを完全に見えなくする';
 $string['hide'] = '非表示';
 $string['hideadvancedsettings'] = '高度な設定を隠す';
@@ -1215,7 +1217,7 @@ $string['newpasswordtext'] = '{$a->firstname} さん
 ユーザ名: username: {$a->username}
 パスワード: password: {$a->newpassword}
 
-パスワードを変更する場合は、次のページにアクセスしてください:
+パスワードを変更する場合は次のページにアクセスしてください:
 
 {$a->link}
 
@@ -1290,7 +1292,7 @@ $string['noreplybouncemessage'] = 'あなたはno-replyメールアドレスに�
 $string['noreplybouncesubject'] = '{$a} -宛先不明メール';
 $string['noreplyname'] = 'このメールアドレス宛に返信しないでください';
 $string['noresetrecord'] = 'リセットリクエストのレコードがありません。新しいパスワードリセットリクエストを実行してください。';
-$string['noresults'] = '該当データがありません。';
+$string['noresults'] = '該当データはありません。';
 $string['normal'] = 'ノーマル';
 $string['normalfilter'] = '通常検索';
 $string['nosite'] = 'サイトレベルのコースは見つかりませんでした。';
@@ -1315,7 +1317,7 @@ $string['notifyloginfailuresmessageend'] = 'あなたはこれらのログを {$
 $string['notifyloginfailuresmessagestart'] = '前回、あなたに報告して以降の {$a} におけるログイン失敗の一覧です。';
 $string['notifyloginfailuressubject'] = '{$a} :: ログイン失敗通知';
 $string['notincluded'] = 'バックアップ対象外';
-$string['notingroup'] = '申し訳ございません、この活動を閲覧するためには、あなたはグループに属している必要があります。';
+$string['notingroup'] = '申し訳ございません、この活動を閲覧するためにはあなたはグループに属している必要があります。';
 $string['notpublic'] = '非公開!';
 $string['nousersfound'] = 'ユーザは見つかりませんでした。';
 $string['nousersmatching'] = '「 {$a} 」に合致するユーザは見つかりませんでした。';
@@ -1489,7 +1491,7 @@ $string['requirespayment'] = 'このコースにアクセスするには支払�
 $string['reset'] = 'リセット';
 $string['resetcomponent'] = 'コンポーネント';
 $string['resetcourse'] = 'コースをリセットする';
-$string['resetinfo'] = 'このページでは活動および他の設定を保持しながら、コースのユーザデータを空にすることができます。下記アイテムを選択して、このページを実行することにより、このコースから選択されたユーザデータが完全に削除されますので注意してください!';
+$string['resetinfo'] = 'このページでは活動および他の設定を保持しながらコースのユーザデータを空にすることができます。以下のアイテムを選択してこのページを実行することにより選択されたユーザデータがこのコースから完全に削除されますので注意してください!';
 $string['resetnotimplemented'] = 'リセット未実装';
 $string['resetrecordexpired'] = 'あなたが使用したパスワードリセットリンクは {$a} 分以上経過したため、有効期限が切れています。新しいパスワードリセットリクエストを実行してください。';
 $string['resetstartdate'] = '開講日をリセットする';
@@ -1643,7 +1645,7 @@ $string['setpassword'] = 'パスワードを設定する';
 $string['setpasswordinstructions'] = 'あなたの新しいパスワードを以下に入力した後、保存してください。';
 $string['settings'] = '設定';
 $string['shortname'] = '省略名';
-$string['shortnamecollisionwarning'] = '[*] = この省略名はすでに他のコースで使用されています。承認されるためには、省略名を変更する必要があります。';
+$string['shortnamecollisionwarning'] = '[*] = この省略名はすでに他のコースで使用されています。承認されるためには省略名を変更する必要があります。';
 $string['shortnamecourse'] = 'コース省略名';
 $string['shortnamecourse_help'] = 'コース省略名はナビゲーションおよびコースメールメッセージの件名に使用されます。';
 $string['shortnametaken'] = '省略名は別のコース ({$a}) で使用されています。';
@@ -1677,6 +1679,7 @@ $string['showreports_help'] = '活動レポートでは現在のコースに関�
 $string['showsettings'] = '設定を表示する';
 $string['showtheselogs'] = '選択したログを表示する';
 $string['showthishelpinlanguage'] = 'このヘルプを次の言語で表示する: {$a}';
+$string['sidepanel'] = 'サイドパネル';
 $string['signoutofotherservices'] = 'すべてをサインアウトする';
 $string['signoutofotherservices_help'] = 'この設定を有効にした場合、モバイルアプリ等、ウェブサービスを使用しているすべてのデバイスおよびシステムはサインアウトされます。';
 $string['since'] = '対象範囲';
@@ -1894,7 +1897,7 @@ $string['uploadthisfile'] = 'このファイルをアップロードする';
 $string['url'] = 'URL';
 $string['used'] = '使用';
 $string['usedinnplaces'] = '{$a} 箇所で使用';
-$string['usemessageform'] = 'または、下記フォームを使用して、選択した学生にメッセージを送信してください。';
+$string['usemessageform'] = 'または下記フォームを使用して、選択した学生にメッセージを送信してください。';
 $string['user'] = 'ユーザ';
 $string['useraccount'] = 'ユーザアカウント';
 $string['useractivity'] = '活動';
@@ -1902,7 +1905,7 @@ $string['userconfirmed'] = '{$a} を承認しました';
 $string['userdata'] = 'ユーザデータ';
 $string['userdeleted'] = 'このユーザのアカウントは削除されました。';
 $string['userdescription'] = '自己紹介';
-$string['userdescription_help'] = 'このテキストボックスには、あなた自身に関するテキストを入力することができます。入力した内容は他のユーザが閲覧できるようあなたのプロファイルページに表示されます。';
+$string['userdescription_help'] = 'このテキストボックスにはあなた自身に関するテキストを入力することができます。入力した内容は他のユーザが閲覧できるようあなたのプロファイルページに表示されます。';
 $string['userdetails'] = 'ユーザ詳細';
 $string['userfiles'] = 'ユーザファイル';
 $string['userlist'] = 'ユーザリスト';
@@ -1953,7 +1956,7 @@ $string['weekshow'] = '{$a} にこの週を表示する';
 $string['welcometocourse'] = '{$a} へようこそ';
 $string['welcometocoursetext'] = '{$a->coursename} へようこそ!
 
-あなたがまだプロファイルの編集が終えていない場合、私たちが受講している皆さんのことを知ることができるようあなたのプロファイルページを編集してください:
+あなたがまだプロファイルページの編集を完了していない場合、私たちがあなたのことを知ることができるよう編集してください:
 
  {$a->profileurl}';
 $string['whatforlink'] = 'このリンクで何をしますか?';

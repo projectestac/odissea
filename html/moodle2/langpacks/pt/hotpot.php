@@ -44,7 +44,7 @@ Se o ficheiro de origem é uma **pasta**, todos os testes na pasta são adiciona
 
 Se o ficheiro de origem é um **ficheiro de unidade**, como um ficheiro Hot Potatoes ou index.html, os testes do ficheiro serão adicionados à disciplina como uma cadeia de cadeia de testes com configurações idênticas.';
 $string['allowpaste'] = 'Permitir colar';
-$string['allowpaste_help'] = 'Se essa configuração estiver ativa, os alunos terão permissão para copiar, colar e arrastar texto para caixas de texto.';
+$string['allowpaste_help'] = 'Se esta configuração estiver ativa, os alunos terão permissão para copiar, colar e arrastar texto para caixas de texto.';
 $string['allowreview'] = 'Permitir revisão';
 $string['allowreview_help'] = 'Se ativar esta opção, os alunos podem rever as suas tentativas de resposta após o teste fechar';
 $string['analysisreport'] = 'Análise de item';
@@ -120,7 +120,7 @@ $string['delay3_help'] = 'Esta configuração especifica o intervalo de tempo en
 **Não continuar automaticamente**
 : o controlo não voltará ao Moodle após terminar o teste. O aluno poderá navegar para fora da página do teste.
 
-As notas obtidas no teste são reportadas sempre ao Moodle após o aluno sair ou completar o teste, independentemente desta configuração.';
+As notas obtidas no teste são reportadas sempre ao Moodle após o aluno sair ou concluir o teste, independentemente desta configuração.';
 $string['delay3specific'] = 'Usar tempo específico (em segundos)';
 $string['delay3summary'] = 'Tempo de intervalo no final do teste';
 $string['delay3template'] = 'Usar configurações do ficheiro de origem/modelo';
@@ -228,7 +228,7 @@ $string['exit_feedback_help'] = 'Estas opções ativam ou desativam a exibição
 : **= 0%**: Está tudo bem?
 
 **Exibir nota da tentativa**
-: se ativo, a nota da tentativa completa será exibida na página de saída.
+: se ativo, a nota da tentativa que acabou de ser concluída será exibida na página de saída.
 
 **Unit grade**
 : if checked the HotPot grade will be displayed on the exit page.
@@ -508,7 +508,7 @@ $string['timelimit_help'] = 'Esta configuração especifica a duração máxima 
 : o tempo limite será extraído do ficheiro de origem ou dos ficheiros modelos para este formato de saída
 
 **Usar tempo definido**
-: O limite de tempo especificado na página de configurações HotPot será utilizado como o limite de tempo para uma tentativa de responder ao teste. Essa configuração substitui os definidos no ficheiro de origem, de configuração ou ficheiros modelo para esse formato de saída.
+: O limite de tempo especificado na página de configurações HotPot será utilizado como o limite de tempo para uma tentativa de responder ao teste. Esta configuração substitui os definidos no ficheiro de origem, de configuração ou ficheiros modelo para esse formato de saída.
 
 **Desativar**
 : Não é configurado limite de tempo para as tentativas neste teste.

@@ -67,12 +67,17 @@ class mod_rcontent_grade_form extends moodleform {
         $mform->setType('comment_editor', PARAM_RAW);
 
         // Hidden parameters
+        $itemid = required_param('itemid', PARAM_INT); // id of item
+
+        $mform->addElement('hidden', 'itemid', $itemid);
+        $mform->setType('itemid', PARAM_INT);
+
         $mform->addElement('hidden', 'id', $data->id);
         $mform->setType('id', PARAM_INT);
-        $mform->addElement('hidden', 'gradeid', $data->id);
+        $mform->addElement('hidden', 'gradeid', $data->gradeid);
         $mform->setType('gradeid', PARAM_INT);
-        $mform->addElement('hidden', 'user', $data->user);
-        $mform->setType('user', PARAM_INT);
+        $mform->addElement('hidden', 'userid', $data->userid);
+        $mform->setType('userid', PARAM_INT);
         $mform->addElement('hidden', 'action', 'submitgrade');
         $mform->setType('action', PARAM_ALPHA);
 

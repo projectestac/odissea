@@ -33,7 +33,7 @@ $form = new local_rcommon_add_credentials_form();
 if ($form->is_cancelled()) {
     $referer = $CFG->wwwroot.'/local/rcommon/users.php?action=manage&username='.$username;
     redirect($referer);
-    break;
+    return;
 } else if ($fromform = $form->get_data() and confirm_sesskey()) {
 
     $id = credentials::add($fromform->isbn, $fromform->credentials, $username);
@@ -54,5 +54,3 @@ if ($form->is_cancelled()) {
     $form->display();
     echo $OUTPUT->footer();
 }
-
-

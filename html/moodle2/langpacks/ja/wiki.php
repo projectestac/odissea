@@ -30,10 +30,10 @@ $string['addedbegins'] = '追加開始';
 $string['addedends'] = '追加終了';
 $string['admin'] = '管理';
 $string['adminmenu'] = '管理メニュー';
-$string['attachmentattach'] = '添付ファイルとして追加する';
+$string['attachmentattach'] = '添付として追加する';
 $string['attachmentimage'] = 'イメージとして追加する';
 $string['attachmentlink'] = 'リンクとして追加する';
-$string['attachments'] = '添付ファイル';
+$string['attachments'] = '添付';
 $string['backcomments'] = 'コメントに戻る';
 $string['backhistory'] = '履歴に戻る';
 $string['backoldversion'] = '古いバージョンに戻る';
@@ -48,10 +48,10 @@ $string['changerate'] = '変更してもよろしいですか?';
 $string['comments'] = 'コメント';
 $string['commentscount'] = 'コメント ({$a})';
 $string['comparesel'] = '選択したものを比較する';
-$string['comparewith'] = 'バージョン {$a->old} をバージョン {$a->new} と比較中';
+$string['comparewith'] = 'バージョン {$a->old} をバージョン {$a->new} と比較する';
 $string['contributions'] = '寄稿';
 $string['contributions_help'] = 'あなたが編集したページの一覧です。';
-$string['createcomment'] = 'コメントの作成';
+$string['createcomment'] = 'コメントを作成する';
 $string['createddate'] = '作成日時: {$a->date} by {$a->username}';
 $string['createpage'] = 'ページを作成する';
 $string['creating'] = 'Wikiページを作成する';
@@ -61,9 +61,9 @@ $string['defaultformat_help'] = 'この設定ではWikiページの編集時に�
 
 * HTML - HTMLエディタを使用できます。
 * クレオール - 小さな編集ツールバーの一般的なWikiマークアップ言語を使用できます。
-* Nwiki - Nwikiモジュールで使用される、Mediawikiのようなマークアップ言語です。';
+* Nwiki - Nwikiモジュールで使用されるMediawikiのようなマークアップ言語です。';
 $string['deleteallpages'] = 'すべてのWikiページを削除する';
-$string['deletecomment'] = 'コメントの削除';
+$string['deletecomment'] = 'コメントを削除する';
 $string['deletecommentcheck'] = 'コメントを削除する';
 $string['deletecommentcheckfull'] = '本当にコメントを削除してもよろしいですか?';
 $string['deletedbegins'] = '削除開始';
@@ -71,14 +71,14 @@ $string['deletedends'] = '削除終了';
 $string['deleteupload'] = '削除';
 $string['deleteversions'] = 'ページバージョンを削除する';
 $string['diff'] = 'Diff';
-$string['diff_help'] = '差異を確認するために選択したバージョンのページを比較することができます。';
+$string['diff_help'] = '差異を確認するため選択したバージョンのページを比較することができます。';
 $string['edit'] = '編集';
 $string['editblocks'] = 'ブロック編集モードの開始';
 $string['editcomment'] = 'コメントを編集する';
 $string['editfiles'] = 'Wikiファイルを編集する';
-$string['editing'] = 'Wikiページの編集';
-$string['editingcomment'] = 'コメントの編集';
-$string['editingpage'] = 'このページ「 {$a} 」の編集';
+$string['editing'] = 'Wikiページを編集する';
+$string['editingcomment'] = 'コメントを編集する';
+$string['editingpage'] = 'このページ「 {$a} 」を編集する';
 $string['editsection'] = '編集';
 $string['eventdiffviewed'] = 'Wiki diffが閲覧されました。';
 $string['eventhistoryviewed'] = 'Wiki履歴が閲覧されました。';
@@ -93,11 +93,11 @@ $string['eventversionrestored'] = 'Wikiバージョンがリストアされま�
 $string['eventversionviewed'] = 'Wikiページバージョンが閲覧されました。';
 $string['filenotuploadederror'] = 'ファイル「 {$a} 」を正常にアップロードできませんでした。';
 $string['files'] = 'ファイル';
-$string['filtername'] = 'Wikiページオートリンク';
+$string['filtername'] = 'Wikiオートリンク';
 $string['firstpagetitle'] = '先頭ページ名';
-$string['firstpagetitle_help'] = 'Wikiの先頭ページのタイトルです。';
+$string['firstpagetitle_help'] = 'Wikiの先頭ページのタイトルです。Wikiを作成した場合、タイトルを変更できないようになります。';
 $string['forceformat'] = 'フォーマットを強制する';
-$string['forceformat_help'] = 'フォーマットが強制 (チェックボックスをチェック) された場合、Wikiページの編集時にフォーマットを選択するオプションが表示されません。';
+$string['forceformat_help'] = 'フォーマットが強制 (チェックボックスをチェック) された場合、Wikiページの編集時にフォーマットを選択するオプションは表示されません。';
 $string['format'] = 'フォーマット';
 $string['formatcreole'] = 'クレオールフォーマット';
 $string['formatcreole_help'] = 'クレオールフォーマットは適切なマークアップを挿入するための編集ツールバーを持った一般的なWIkiマークアップ言語です。
@@ -105,7 +105,7 @@ $string['formatcreole_help'] = 'クレオールフォーマットは適切なマ
 新しいページを作成するには例えば [[ページ2 ]] のように2重角括弧で閉じたページ名を入力してください。';
 $string['format_help'] = '* HTML - HTMLエディタを使用できます。
 * クレオール - 小さな編集ツールバーを持った一般的なWikiマークアップ言語を使用できます。
-* Nwiki - Nwikiモジュールで使用される、Mediawikiのようなマークアップ言語です。';
+* Nwiki - Nwikiモジュールで使用されるMediawikiのようなマークアップ言語です。';
 $string['formathtml'] = 'HTMLフォーマット';
 $string['formathtml_help'] = 'HTMLエディタはコンテンツのフォーマットに使用することができます。
 
@@ -124,12 +124,12 @@ $string['incorrectwikiid'] = 'Wiki IDが正しくありません。';
 $string['individualpagedoesnotexist'] = '個人Wikiページは存在していません。';
 $string['insertcomment'] = 'コメントを追加する';
 $string['insertimage'] = 'イメージを挿入する ...';
-$string['insertimage_help'] = 'ドロップダウンリストにより、イメージをWikiエディタに追加することができます。あなたがさらにイメージを追加したい場合、「ファイル」タブを使用してください。';
+$string['insertimage_help'] = 'ドロップダウンリストによりイメージをWikiエディタに追加することができます。あなたがさらにイメージを追加したい場合、「ファイル」タブを使用してください。';
 $string['invalidlock'] = 'このページは別のユーザにすでにロックされています。';
 $string['invalidparameters'] = '無効なパラメータが渡されました。';
 $string['invalidsection'] = 'セクションが正しくありません。';
 $string['invalidsesskey'] = '送信されたセッションキーが有効ではありません。データを再度送信してください。';
-$string['javascriptdisabledlocks'] = 'あなたのブラウザのJavaScriptが無効にされているため、ロックが動作していません。あなたの変更は正常に保存されない可能性があります。';
+$string['javascriptdisabledlocks'] = 'あなたのブラウザのJavaScriptが無効にされているためロックが動作していません。あなたの変更は正常に保存されない可能性があります。';
 $string['links'] = 'リンク';
 $string['listall'] = 'すべてを一覧表示する';
 $string['listorphan'] = '迷子ページを一覧表示する';
@@ -138,19 +138,19 @@ $string['lockingtimeout'] = 'ロックタイムアウト';
 $string['map'] = 'マップ';
 $string['mapmenu'] = 'マップメニュー';
 $string['migrationfinished'] = '移行が正常に完了しました。';
-$string['migrationfinishednowikis'] = '移行が完了しました。Wikiは移行されませんでした。';
+$string['migrationfinishednowikis'] = '移行が完了しました。移行されたWikiはありません。';
 $string['missingpages'] = 'コンテンツなしページ';
 $string['modified'] = '修正日時';
 $string['modulename'] = 'Wiki';
-$string['modulename_help'] = 'Wiki活動モジュールでは参加者が一群のウェブページを追加および編集することができます。Wikiでは個人または誰でも編集することのできる協力的な場であること、また誰でも自分たちだけが編集できる自分のWikiを持つことができます。
+$string['modulename_help'] = 'Wiki活動モジュールでは参加者が一群のウェブページを追加および編集することができます。Wikiは個人または誰でも編集することのできる協力的な場です。誰でも自分たちだけが編集できる自分のWikiを持つことができます。
 
-それぞれのページの編集履歴は保持され、それぞれの参加者によって編集された内容が一覧表示されます。
+それぞれのページの編集履歴は保持されます。それぞれの参加者によって編集された内容が一覧表示されます。
 
 Wikiは次のように使用することができます:
 
 * グループ講義ノートまたは学習ガイドとして
 * 学科メンバーのために作業スキームの計画または会議の議題用として
-* 学生が共同でオンラインブックの著者となり、教師から設定された主題に関するコンテンツを作成するため
+* 学生が共同でオンラインブックの著者となり教師から設定された主題に関するコンテンツを作成するため
 * それぞれの参加者が行または節を執筆しながら共同で物語または詩を作成するため
 * 試験ノートのための個人日誌または試験対策として (個人Wikiを使用)';
 $string['modulenameplural'] = 'Wiki';
@@ -162,7 +162,7 @@ $string['navigationto_help'] = '他のページへのリンク';
 $string['newpage'] = '新しいページ';
 $string['newpagehdr'] = '新しいページ';
 $string['newpagetitle'] = '新しいページタイトル';
-$string['noattachments'] = '<strong>添付ファイルなし</strong>';
+$string['noattachments'] = '<strong>ファイル添付なし</strong>';
 $string['nocomments'] = 'コメントはありません。';
 $string['nocontent'] = 'このページにはコンテンツがありません。';
 $string['nocontribs'] = 'あなたはこのWikiに寄稿していません。';
@@ -194,7 +194,7 @@ $string['overridinglocks'] = 'ロックのオーバーライド ...';
 $string['pageexists'] = 'このページはすでに存在します。';
 $string['pageindex'] = 'ページインデックス';
 $string['pageindex_help'] = 'このWikiのページツリー';
-$string['pageislocked'] = '現在、他のユーザがこのページを編集しています。数分後に編集をお試しください。';
+$string['pageislocked'] = '現在、誰かがこのページを編集しています。数分後に編集をお試しください。';
 $string['pagelist'] = 'ページ一覧';
 $string['pagelist_help'] = 'アルファベット順のページ一覧';
 $string['page-mod-wiki-comments'] = 'Wikiモジュールコメントページ';
@@ -244,11 +244,11 @@ $string['updatedpages_help'] = '最近更新されたWikiページ';
 $string['updatedwikipages'] = '更新されたWikiページ';
 $string['upload'] = 'アップロード & 削除';
 $string['uploadactions'] = '操作';
-$string['uploadfiletitle'] = '添付ファイル';
+$string['uploadfiletitle'] = '添付';
 $string['uploadname'] = 'ファイル名';
 $string['uploadtitle'] = '添付ファイル';
 $string['version'] = 'バージョン';
-$string['versionerror'] = 'バージョンIDが存在しません。';
+$string['versionerror'] = 'バージョンIDは存在しません。';
 $string['versionnum'] = 'バージョン #{$a}';
 $string['view'] = '表示';
 $string['viewallhistory'] = 'すべての履歴を表示する';
@@ -257,10 +257,10 @@ $string['viewperpage'] = '1ページあたり {$a} バージョンを表示す�
 $string['viewversion'] = 'バージョン #{$a} のページを表示中';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = '新しいWikiを追加する';
-$string['wikiattachments'] = 'Wiki添付ファイル';
+$string['wikiattachments'] = 'Wiki添付';
 $string['wikiboldtext'] = '太字テキスト';
 $string['wiki:createpage'] = '新しいWIkiページを作成する';
-$string['wiki:editcomment'] = 'ページにコメントを追加する';
+$string['wiki:editcomment'] = 'コメントをページに追加する';
 $string['wiki:editpage'] = 'Wikiページを保存する';
 $string['wikiexternalurl'] = '外部URL';
 $string['wikifiles'] = 'Wikiファイル';
@@ -289,4 +289,4 @@ $string['wikiunorderedlist'] = '番号なしリスト';
 $string['wiki:viewcomment'] = 'ページコメントを表示する';
 $string['wiki:viewpage'] = 'Wikiページを表示する';
 $string['wrongversionlock'] = 'あなたが編集している間、別のユーザがこのページを編集しました。そのため、あなたのコンテンツは古くなりました。';
-$string['wrongversionsave'] = 'あなたが編集している間、別のユーザが新しいバージョンを作成しました。そのため、あなたはそのユーザのバージョンを上書きしたことになります。詳細はページ履歴をご覧ください。';
+$string['wrongversionsave'] = 'あなたが編集している間、別のユーザが新しいバージョンを作成しました。そのため、あなたはそのユーザのバージョンを上書きしたことになります。ページ履歴をご確認ください。';

@@ -35,6 +35,7 @@ $string['deleteerrors'] = 'Ошибки удаления';
 $string['encoding'] = 'Кодировка';
 $string['errormnetadd'] = 'Невозможно добавить отдаленных пользователей';
 $string['errors'] = 'Ошибки';
+$string['invalidupdatetype'] = 'Этот параметр не может быть выбран с заданным типом загрузки.';
 $string['invaliduserdata'] = 'Обнаружены некорректные данные для пользователя {$a}, они были автоматически очищены.';
 $string['nochanges'] = 'Не изменять';
 $string['pluginname'] = 'Загрузка пользователей';

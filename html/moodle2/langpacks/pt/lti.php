@@ -189,7 +189,7 @@ $string['icon_url'] = 'URL do Ícone';
 $string['icon_url_help'] = 'O URL do ícone  permite que o ícone que aparece na lista de disciplinas para essa atividade seja alterado. Em vez de usar o ícone LTI predefinido, o ícone que representa este tipo de atividade pode ser especificado.';
 $string['id'] = 'ID';
 $string['invalidid'] = 'O ID do LTI está incorreto';
-$string['launch_in_moodle'] = 'Arrancar ferramenta no moodle';
+$string['launch_in_moodle'] = 'Arrancar ferramenta no Moodle';
 $string['launchinpopup'] = 'Recipiente de arranque';
 $string['launch_in_popup'] = 'Arrancar ferramenta em pop-up';
 $string['launchinpopup_help'] = 'O modo de visualização afeta forma como é exibida a ferramenta quando iniciada a partir da disciplina. Alguns modos permitem maior espaço de ecrã disponível para a ferramenta enquanto outros aparentam maior integração com o ambiente Moodle.
@@ -363,7 +363,7 @@ $string['search:activity'] = 'Ferramenta externa - informações da atividade';
 $string['secure_icon_url'] = 'URL do Ícone seguro';
 $string['secure_icon_url_help'] = 'Similar ao URL do ícone, mas usado se o utilizador aceder ao Moodle de forma segura através de SSL. O principal objetivo para este campo é para evitar
 o navegador avisando o utilizador que a página subjacente foi acessada através de SSL, mas pedindo para mostrar uma imagem insegura.';
-$string['secure_launch_url'] = 'URL de arranque seguro';
+$string['secure_launch_url'] = 'URL da ferramenta segura';
 $string['secure_launch_url_help'] = 'Similar ao URL de arranque, mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro invés do URL de arranque se o Moodle for acedido partir de SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre com SSL.
 
 O URL de arranque também pode ser definido para um endereço https que force a entrada através de SSL, e este campo pode ser deixado em branco.';
@@ -374,9 +374,8 @@ $string['services_help'] = 'Selecione os serviços que pretende disponibilizar a
 $string['setupoptions'] = 'Opções de configuração';
 $string['share_email'] = 'Partilhar e-mail do utilizador com a ferramenta';
 $string['share_email_admin'] = 'Partilhar e-mail do utilizador com a ferramenta';
-$string['share_email_admin_help'] = 'Especifique se o endereço de e-mail do utilizador que inicia a ferramenta será partilhado com o fornecedor da ferramenta.
-O fornecedor de ferramenta pode precisar do e-mail para distinguir os utilizadores com o mesmo nome na UI, ou enviar e-mails
-para utilizadores com base nas suas ações dentro da ferramenta.';
+$string['share_email_admin_help'] = 'Especifique se o endereço de e-mail do utilizador, que inicia a ferramenta, será partilhado com o fornecedor da ferramenta.
+O fornecedor da ferramenta pode utilizar o e-mail para distinguir os utilizadores com o mesmo nome na UI, ou enviar e-mails para utilizadores com base nas suas ações dentro da ferramenta.';
 $string['share_email_help'] = 'Especifique se o endereço de e-mail do utilizador que inicia a ferramenta será partilhado junto com o fornecedor da ferramenta.
 
 O fornecedor de ferramenta pode precisar do e-mail para distinguir os utilizadores com o mesmo nome, ou enviar e-mails para utilizadores com base nas suas ações dentro da ferramenta.
@@ -397,7 +396,7 @@ $string['share_roster_admin_help'] = 'Define se a ferramenta pode aceder à list
 $string['share_roster_help'] = 'Define se a ferramenta pode aceder à lista de utilizadores inscritos nesta disciplina.
 
 Note que esta configuração pode ser alterada na configuração da ferramenta.';
-$string['show_in_course_activity_chooser'] = 'Mostrar no seletor de atividade e também como ferramenta pré-configurada';
+$string['show_in_course_activity_chooser'] = 'Mostrar no seletor de atividade e também como uma ferramenta pré-configurada';
 $string['show_in_course_lti1'] = 'O uso da configuração de ferramentas';
 $string['show_in_course_lti1_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade a adicionar a uma disciplina. Também pode ser mostrada no menu pendente de ferramenta pré-configurada quando adicionar uma ferramenta externa a uma disciplina. Em alternativa, a configuração da ferramenta é usada apenas se o URL correto da ferramenta é inserido quando adicionar uma ferramenta externa a uma disciplina.';
 $string['show_in_course_lti2'] = 'O uso da configuração de ferramentas';

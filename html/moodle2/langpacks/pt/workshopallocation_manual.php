@@ -30,6 +30,6 @@ $string['addreviewer'] = 'Adicionar avaliador';
 $string['allocationadded'] = 'O trabalho foi atribuído com sucesso';
 $string['allocationexists'] = 'Este trabalho já se encontra atribuído';
 $string['areyousuretodeallocate'] = 'Tem a certeza que pretende que o trabalho selecionado deixe de estar sujeito a avaliação?';
-$string['areyousuretodeallocategraded'] = 'Está prestes a remover um trabalho que já se encontra avaliado. Tem a certeza que pretende faze-lo?';
+$string['areyousuretodeallocategraded'] = 'Está prestes a remover um trabalho que já se encontra avaliado. Tem a certeza que pretende fazê-lo?';
 $string['pluginname'] = 'Atribuição manual';
 $string['showallparticipants'] = 'Mostrar todos os participantes';

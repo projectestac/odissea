@@ -34,7 +34,7 @@ $string['deletea'] = 'Verwijder {$a}';
 $string['delete_confirmation'] = 'Weet je zeker dat je  <strong>.{$a}</strong> wil verwijderen?';
 $string['deletefiletypes'] = 'Verwijder een bestandstype';
 $string['description'] = 'Aangepaste beschrijving';
-$string['description_help'] = 'Eenvoudige beschrijving van het bestandstype, vb &lsquo;Kindle ebook&rsquo;. Als je site meerdere talen ondersteund en de multi-languagefilter gebruikt, dan kun je multi-lang-tags in dit veld gebruiken om een beschrijving in verschillende talen te voorzien.';
+$string['description_help'] = 'Eenvoudige beschrijving van het bestandstype, vb \'Kindle ebook\'. Als je site meerdere talen ondersteund en de multi-languagefilter gebruikt, dan kun je multi-language-tags in dit veld gebruiken om een beschrijving in verschillende talen te voorzien.';
 $string['descriptiontype'] = 'Beschrijvingstype';
 $string['descriptiontype_custom'] = 'Aangepaste beschrijving, gespecificeerd in dit formulier';
 $string['descriptiontype_default'] = 'Standaard (MIME-type of overeenkomstige taalstring indien beschikbaar)';
@@ -52,15 +52,15 @@ $string['error_defaulticon'] = 'Een andere bestandsextentie met hetzelfde MIME-t
 $string['error_extension'] = 'De bestandstype-extentie &lsquo;Kindle ebook&rsquo;. bestaat al of is niet geldig. Bestandsextenties moeten uniek zijn en mogen geen speciale tekens bevatten.';
 $string['error_notfound'] = 'Het bestandstype met extentie  {$a} kan niet gevonden worden.';
 $string['extension'] = 'Extentie';
-$string['extension_help'] = 'Bestandsnaamextentie zonder punt, vb &lsquo;mobi&rsquo;';
+$string['extension_help'] = 'Bestandsnaamextentie zonder punt, vb \'mobi\'';
 $string['groups'] = 'Type groepen';
-$string['groups_help'] = 'Optionele lijst met bestandstypegroepen waartoe dit type behoort. Deze zijn algemene categorieën zoals&lsquo;document&rsquo; en &lsquo;afbeelding&rsquo;.';
+$string['groups_help'] = 'Optionele lijst met bestandstypegroepen waartoe dit type behoort. Dit zijn algemene categorieën zoals \'document\' en \'afbeelding\'.';
 $string['icon'] = 'Bestandsicoon';
 $string['icon_help'] = 'Icoon bestandsnaam.
 
 De lijst met icoontjes is genomen uit de map /pix/f van je Moodle-installatie. Je kunt aangepaste icoontjes toevoegen in die map indien nodig.';
 $string['mimetype'] = 'MIME-type';
-$string['mimetype_help'] = 'Het MEME-type geassocieerd met dit bestandstype, vb. &lsquo;application/x-mobipocket-ebook&rsquo;';
+$string['mimetype_help'] = 'Het MIME-type geassocieerd met dit bestandstype, vb. \'application/x-mobipocket-ebook\'';
 $string['pluginname'] = 'Bestandstypes';
 $string['revert'] = 'Zet {$a} terug op Moodle-standaarden';
 $string['revert_confirmation'] = 'Weet je zeker dat je <strong>.{$a}</strong> terug naar Moodle-standaarden wil terugzetten en je eigen wijzigingen verwerpen?';

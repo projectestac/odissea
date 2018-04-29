@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all_grades'] = 'Kalifikazio guztiak';
 $string['assessmentname'] = 'Kalifikazio-elementua';
-$string['blanks'] = 'Kalifikazio hutsak';
+$string['blanks'] = 'Hutsik dauden kalifikazioak';
 $string['bulkappliesto'] = 'Hauentzat:';
 $string['bulkfor'] = '{$a}-(r)rentzako kalifikazioak';
 $string['bulkinsertvalue'] = 'Txertatu balorea';

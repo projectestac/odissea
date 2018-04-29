@@ -36,7 +36,7 @@ $string['navigation:addinstance'] = 'Voeg een nieuw navigatieblok toe';
 $string['navigation:myaddinstance'] = 'Voeg een nieuw navigatieblok toe aan Mijn start
 pagina.';
 $string['pluginname'] = 'Navigatie';
-$string['trimlength'] = 'Aantal tekens totwaar afgekort moet worden';
+$string['trimlength'] = 'Aantal tekens tot waar afgekort moet worden';
 $string['trimmode'] = 'Afkortmodus';
 $string['trimmodecenter'] = 'Haal tekens weg vanaf het midden';
 $string['trimmodeleft'] = 'Haal tekens weg van links';

@@ -40,12 +40,7 @@ class format_vv_renderer extends format_topics_renderer {
      * @return string HTML to output.
      */
     public function section_title($section, $course) {
-        $title = get_section_name($course, $section);
-        $url = course_get_url($course, $section->section, array('navigation' => true));
-        if ($url) {
-            $title = html_writer::link($url, $title);
-        }
-        return $title;
+        return get_section_name($course, $section);
     }
 
     /**
@@ -306,15 +301,13 @@ class format_vv_renderer extends format_topics_renderer {
                 $strhidefromothers = get_string('hidefromothers', 'format_'.$course->format);
                 $url->param('hide', $section->section);
                 $controls[] = html_writer::link($url,
-                    html_writer::empty_tag('img', array('src' => $this->output->pix_url('i/hide'),
-                    'class' => 'icon hide', 'alt' => $strhidefromothers)),
+                    $this->output->pix_icon('i/hide', $strhidefromothers, 'moodle', array('class' => 'icon hide')),
                     array('title' => $strhidefromothers, 'class' => 'editing_showhide'));
             } else {
                 $strshowfromothers = get_string('showfromothers', 'format_'.$course->format);
                 $url->param('show',  $section->section);
                 $controls[] = html_writer::link($url,
-                    html_writer::empty_tag('img', array('src' => $this->output->pix_url('i/show'),
-                    'class' => 'icon hide', 'alt' => $strshowfromothers)),
+                    $this->output->pix_icon('i/show', $strshowfromothers, 'moodle', array('class' => 'icon hide')),
                     array('title' => $strshowfromothers, 'class' => 'editing_showhide'));
             }
         }

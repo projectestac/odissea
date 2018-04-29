@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'Το συνθηματικό που εισήχθηκε είναι λανθασμένο';
+$string['quizpassword'] = 'Κωδικός πρόσβασης κουίζ';
 $string['requirepasswordmessage'] = 'Για να συμπληρώσετε αυτό το κουίζ πρέπει να γνωρίζετε το κωδικό του';

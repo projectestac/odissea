@@ -222,11 +222,11 @@ $string['linkcategory'] = 'Automatikoki estekatu nahi duzu kategoria hau?';
 $string['linkcategory_help'] = 'Glosategiaren estekatze automatikoa gaitu bada eta ezarpen hau gaituta badago, kategoriaren izena automatikoki estekatuko da, ikastaroan azaltzen denean. Partaide batek kategoriaren izenarekin estekatzen duenean, glosategiko "Kategoriaren arabera bilatu" orrira bideratuko da.';
 $string['linking'] = 'Autoesteka';
 $string['mainglossary'] = 'Glosategi nagusia';
-$string['maxtimehaspassed'] = 'Barkatu, baina iruzkin hau ({$a}) editatzeko gehienezko denbora agortu egin duzu!';
+$string['maxtimehaspassed'] = 'Sentitzen dugu, baina iruzkin hau ({$a}) editatzeko gehienezko denbora agortu egin duzu!';
 $string['modulename'] = 'Glosategia';
 $string['modulename_help'] = 'Glosategiari esker erabiltzaileek definizioen biltegiak osa ditzakete, hiztegi baten antzera, bai eta edukiak zein informazioa batu eta antolatu ere.
 
-Irakasleak glosategi-sarreretan fitxategiak atxikitzea ahalbidetu dezake. Atxikitutako irudiak sarreran erakusten dira. Sarreretan bilaketak egin daitezke, eta alfabetikoki edo kategoria, data, egilearen arabera aztertu daitezke. Sarrerak automatikoki onar daitezke edo edonork ikusi ahal izateko irakasle baten onespena izatera behartu daitezke.
+Irakasleak glosategi-sarreretan fitxategiak eranstea ahalbidetu dezake. Erantsitako irudiak sarreran erakusten dira. Sarreretan bilaketak egin daitezke, eta alfabetikoki edo kategoria, data, egilearen arabera aztertu daitezke. Sarrerak automatikoki onar daitezke edo edonork ikusi ahal izateko irakasle baten onespena izatera behartu daitezke.
 
 Glosategiko esteka automatikoak egiteko iragazkia piztuta badago, glosategian dagoen edozein sarrera automatikoki estekatuko da ikastaroan hitz edo esaldi horiek agertzen direnean.
 

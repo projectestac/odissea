@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_pamdescription'] = 'Este método utiliza PAM para aceder aos nomes de utilizador neste servidor. Terá que instalar a extensão <a href="http://www.math.ohio-state.edu/~ccunning/pam_auth/" target="_blank">PHP4 PAM </a> para poder utilizar este método de autenticação.';
-$string['auth_passwordisexpired'] = 'A sua senha já expirou. Pretende alterá-la agora?';
+$string['auth_passwordisexpired'] = 'A sua senha expirou. Pretende alterá-la agora?';
 $string['auth_passwordwillexpire'] = 'A sua senha expirará dentro de {$a} dias. Pretende alterá-la agora?';
 $string['pluginname'] = 'PAM (Pluggable Authentication Modules)';

@@ -175,6 +175,7 @@ $string['public'] = 'Δημόσιο';
 $string['question'] = 'Ερώτηση';
 $string['questionandsubmission'] = 'Ρυθμίσεις ερώτησης και υποβολής';
 $string['questions'] = 'Ερωτήσεις';
+$string['questionslimited'] = 'Προβολή μόνο των {$a} πρώτων ερωτήσεων, δείτε ξεχωριστά τις απαντήσεις ή κατεβάστε τα δεδομένα του πίνακα για πλήρη προβολή.';
 $string['radio'] = 'Πολλαπλών επιλογών - μια απάντηση';
 $string['radiobutton'] = 'Πολλαπλών επιλογών - Επιτρέπεται μια απάντηση (κουμπιά radio)';
 $string['radiobutton_rated'] = 'Κουμπί Radio (με βαθμολόγηση)';

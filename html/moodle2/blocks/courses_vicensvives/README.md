@@ -5,7 +5,7 @@ Bloque para listar, crear y actualizar cursos a partir de lubros importados del
 web service de Vicens Vives. También permite configurar automáticamente el web
 service de Moodle.
 
-Versiones de Moodle: 2.8, 2.9, 3.0, 3.1
+Versiones de Moodle: 3.2, 3.3
 
 Parámetros de configuración
 ---------------------------

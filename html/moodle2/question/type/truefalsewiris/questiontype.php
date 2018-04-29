@@ -89,14 +89,14 @@ class qtype_truefalsewiris extends qtype_wq {
             $qo = $format->import_truefalse($data);
             $qo->qtype = 'truefalsewiris';
             $wirisquestion = '<question><wirisCasSession>';
-            $wirisquestionmathmldecode = $this->wrsqz_mathmlDecode(trim($data['#']['wirisquestion'][0]['#']));
+            $wirisquestionmathmldecode = $this->wrsqz_mathml_decode(trim($data['#']['wirisquestion'][0]['#']));
             $wirisquestion .= htmlspecialchars($wirisquestionmathmldecode, ENT_COMPAT, "UTF-8");
             $wirisquestion .= '</wirisCasSession>';
 
             if (count($data['#']['wirisoptions'][0]['#']) > 0) {
                 $wirisquestion .= '<localData>';
-                $wirisquestion .= $this->wrsqz_getCASForComputations($data);
-                $wirisquestion .= $this->wrsqz_hiddenInitialCASValue($data);
+                $wirisquestion .= $this->wrsqz_get_cas_for_computations($data);
+                $wirisquestion .= $this->wrsqz_hidden_initial_cas_value($data);
                 $wirisquestion .= '</localData>';
             }
 

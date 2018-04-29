@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = 'Enllaç d\'àudio';
 $string['fallbackvideo'] = 'Enllaç de vídeo';
 $string['filtername'] = 'Connectors multimèdia';
+$string['linktomedia'] = 'El filtre dels connectors multimèdia troba un enllaç al text que apunta cap al recurs multimèdia i reemplaça l\'enllaç amb el codi d\'un reproductor multimèdia adequat que pugui reproduir el recurs. També reemplaça les etiquetes <vídeo> i <àudio> amb els reproductors de vídeo i àudio triats.
+
+<a href="{$a}">Gestiona els reproductors multimèdia</a>';

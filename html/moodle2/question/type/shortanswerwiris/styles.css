@@ -1,10 +1,14 @@
-.wirisincorrect  {
-    background: url([[pix:core|i/grade_incorrect]]) no-repeat right !important;
-}
-.wiriscorrect {
-    background: url([[pix:core|i/grade_correct]]) no-repeat right !important;
+div.wirisanswerfielddecoration.wirisembeddeddecoration.wirisincorrect,
+div.wirisanswerfielddecoration.wiriseditordecoration.wirisincorrect div.wiriseditorwrapper {
+    background-image: url([[pix:core|i/grade_incorrect]]) !important;
 }
 
-.wirispartiallycorrect {
-    background: url([[pix:core|i/grade_partiallycorrect]]) no-repeat right !important;
+div.wirisanswerfielddecoration.wirisembeddeddecoration.wiriscorrect,
+div.wirisanswerfielddecoration.wiriseditordecoration.wiriscorrect div.wiriseditorwrapper {
+    background-image: url([[pix:core|i/grade_correct]]) !important;
+}
+
+div.wirisanswerfielddecoration.wirisembeddeddecoration.wirispartiallycorrect,
+div.wirisanswerfielddecoration.wiriseditordecoration.wirispartiallycorrect div.wiriseditorwrapper {
+    background-image: url([[pix:core|i/grade_partiallycorrect]]) !important!
 }

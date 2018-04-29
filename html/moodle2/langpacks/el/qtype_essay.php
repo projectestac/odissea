@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowattachments'] = 'Επιτρέπονται συνημμένα';
+$string['attachmentsoptional'] = 'Τα συνημμένα είναι προαιρετικά';
+$string['attachmentsrequired'] = 'Απαιτούνται συνημμένα';
+$string['attachmentsrequired_help'] = 'Αυτή η επιλογή καθορίζει τον ελάχιστο αριθμό συνημμένων που απαιτείται για να θεωρηθεί μια απάντηση ως βαθμολογήσιμη.';
 $string['formateditor'] = 'Επεξεργαστής κειμένου HTML';
 $string['formateditorfilepicker'] = 'Επεξεργαστής κειμένου HTML με επιλογέα αρχείου';
 $string['formatmonospaced'] = 'Απλό κείμενο, σταθερού πλάτους γραμματοσειρά';
 $string['formatplain'] = 'Απλό κείμενο';
 $string['graderinfo'] = 'Πληροφορίες για βαθμολογητές';
+$string['mustrequirefewer'] = 'Δεν μπορείτε να απαιτήσετε περισσότερα συνημμένα από αυτά που επιτρέπετε.';
 $string['nlines'] = '{$a} γραμμές';
 $string['pluginname'] = 'Έκθεση';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Έκθεσης';

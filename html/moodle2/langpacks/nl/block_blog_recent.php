@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_recent:addinstance'] = 'Voeg een nieuw recente blogitems blok toe';
+$string['blog_recent:addinstance'] = 'Voeg een nieuw recente blogitems-blok toe';
 $string['norecentblogentries'] = 'Geen recente items';
 $string['numentriestodisplay'] = 'Aantal te tonen recente items';
 $string['pluginname'] = 'Recente blogitems';

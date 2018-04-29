@@ -764,7 +764,13 @@ abstract class lesson_add_page_form_base extends moodleform {
         $mform = $this->_form;
         $editoroptions = $this->_customdata['editoroptions'];
 
-        $mform->addElement('header', 'qtypeheading', get_string('createaquestionpage', 'lesson', get_string($this->qtypestring, 'lesson')));
+        if ($this->qtypestring != 'selectaqtype') {
+            if ($this->_customdata['edit']) {
+                $mform->addElement('header', 'qtypeheading', get_string('edit'. $this->qtypestring, 'lesson'));
+            } else {
+                $mform->addElement('header', 'qtypeheading', get_string('add'. $this->qtypestring, 'lesson'));
+            }
+        }
 
         if (!empty($this->_customdata['returnto'])) {
             $mform->addElement('hidden', 'returnto', $this->_customdata['returnto']);
@@ -1057,7 +1063,9 @@ class lesson extends lesson_base {
         $DB->delete_records("lesson_timer", array("lessonid"=>$this->properties->id));
         $DB->delete_records("lesson_branch", array("lessonid"=>$this->properties->id));
         if ($events = $DB->get_records('event', array("modulename"=>'lesson', "instance"=>$this->properties->id))) {
+            $coursecontext = context_course::instance($cm->course);
             foreach($events as $event) {
+                $event->context = $coursecontext;
                 $event = calendar_event::load($event);
                 $event->delete();
             }
@@ -2380,6 +2388,15 @@ abstract class lesson_page extends lesson_base {
         $DB->delete_records("lesson_attempts", array("pageid" => $this->properties->id));
 
         $DB->delete_records("lesson_branch", array("pageid" => $this->properties->id));
+
+        // Delete files related to answers and responses.
+        if ($answers = $DB->get_records("lesson_answers", array("pageid" => $this->properties->id))) {
+            foreach ($answers as $answer) {
+                $fs->delete_area_files($context->id, 'mod_lesson', 'page_answers', $answer->id);
+                $fs->delete_area_files($context->id, 'mod_lesson', 'page_responses', $answer->id);
+            }
+        }
+
         // ...now delete the answers...
         $DB->delete_records("lesson_answers", array("pageid" => $this->properties->id));
         // ..and the page itself
@@ -2399,8 +2416,6 @@ abstract class lesson_page extends lesson_base {
 
         // Delete files associated with this page.
         $fs->delete_area_files($context->id, 'mod_lesson', 'page_contents', $this->properties->id);
-        $fs->delete_area_files($context->id, 'mod_lesson', 'page_answers', $this->properties->id);
-        $fs->delete_area_files($context->id, 'mod_lesson', 'page_responses', $this->properties->id);
 
         // repair the hole in the linkage
         if (!$this->properties->prevpageid && !$this->properties->nextpageid) {
@@ -2615,7 +2630,11 @@ abstract class lesson_page extends lesson_base {
                     if ($qattempts == 1) {
                         $result->feedback = $OUTPUT->box(get_string("firstwrong", "lesson"), 'feedback');
                     } else {
-                        $result->feedback = $OUTPUT->box(get_string("secondpluswrong", "lesson"), 'feedback');
+                        if (!$result->maxattemptsreached) {
+                            $result->feedback = $OUTPUT->box(get_string("secondpluswrong", "lesson"), 'feedback');
+                        } else {
+                            $result->feedback = $OUTPUT->box(get_string("finalwrong", "lesson"), 'feedback');
+                        }
                     }
                 } else {
                     $result->feedback = '';
@@ -2634,13 +2653,8 @@ abstract class lesson_page extends lesson_base {
 
                 $result->feedback .= $OUTPUT->box(format_text($this->get_contents(), $this->properties->contentsformat, $options),
                         'generalbox boxaligncenter');
-                if (isset($result->studentanswerformat)) {
-                    // This is the student's answer so it should be cleaned.
-                    $studentanswer = format_text($result->studentanswer, $result->studentanswerformat,
-                            array('context' => $context, 'para' => true));
-                } else {
-                    $studentanswer = format_string($result->studentanswer);
-                }
+                $studentanswer = format_text($result->studentanswer, $result->studentanswerformat,
+                        array('context' => $context, 'para' => true));
                 $result->feedback .= '<div class="correctanswer generalbox"><em>'
                         . get_string("youranswer", "lesson").'</em> : ' . $studentanswer;
                 if (isset($result->responseformat)) {
@@ -3018,6 +3032,7 @@ abstract class lesson_page extends lesson_base {
         $result->response        = '';
         $result->newpageid       = 0;       // stay on the page
         $result->studentanswer   = '';      // use this to store student's answer(s) in order to display it on feedback page
+        $result->studentanswerformat = FORMAT_MOODLE;
         $result->userresponse    = null;
         $result->feedback        = '';
         $result->nodefaultresponse  = false; // Flag for redirecting when default feedback is turned off

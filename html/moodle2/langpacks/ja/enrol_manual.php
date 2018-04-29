@@ -44,9 +44,9 @@ $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除時、コースからユーザデータおよび設定が削除されることに留意してください。';
 $string['expirymessageenrolledbody'] = '{$a->user} さん
 
-これはコース「 {$a->course} 」に関して、あなたの登録が {$a->timeend} に期限切れとなる通知です。
+これはコース「 {$a->course} 」のあなたの登録が {$a->timeend} に有効期限切れとなる通知です。
 
-詳細は {$a->enroller} にご連絡ください。';
+詳細は {$a->enroller} をご連絡ください。';
 $string['expirymessageenrolledsubject'] = '登録期限切れ通知';
 $string['expirymessageenrollerbody'] = '下記ユーザに関して、次の {$a->threshold} でコース「 {$a->course} 」の登録が期限切れとなります:
 

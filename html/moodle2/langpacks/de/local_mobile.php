@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowpermissions'] = 'Rolle \'Authentifizierte/r Nutzer/in\' erweitern';
-$string['allowpermissionsdescription'] = 'Bearbeiten Sie die Rolle \'Authentifizierte/r Nutzer/in\' und erlauben Sie zusätzlich das Recht moodle/webservice:createtoken. Alternativ können Sie auch eine neue Rolle anlegen, die dieses Recht beinhaltet und dann einzelnen Personen zugewiesen wird.';
+$string['allowpermissionsdescription'] = 'Bearbeiten Sie die Rolle \'Authentifizierte/r Nutzer/in\' und erlauben Sie zusätzlich das Recht moodle/webservice:createtoken.';
 $string['cannotcreatetoken'] = 'Die Token für Administratoren werden nicht automatisch generiert, sondern müssen manuell auf der Website angelegt werden.';
 $string['checkpluginconfiguration'] = 'Einstellungen für \'Moodle Mobile - Zusatzfeatures\' prüfen';
 $string['clickheretolaunchtheapp'] = 'Klicken Sie hier, wenn die App sich nicht automatisch öffnet.';

@@ -5,7 +5,7 @@ class com_wiris_quizzes_impl_ProcessStoreQuestion extends com_wiris_quizzes_impl
 		parent::__construct();
 	}}
 	public function newInstance() {
-		return new com_wiris_quizzes_impl_ProcessGetCheckAssertions();
+		return new com_wiris_quizzes_impl_ProcessStoreQuestion();
 	}
 	public function onSerialize($s) {
 		$s->beginTag(com_wiris_quizzes_impl_ProcessStoreQuestion::$TAGNAME);

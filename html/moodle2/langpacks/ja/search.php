@@ -73,7 +73,7 @@ $string['matchingfile'] = 'ファイル<span class="filename">{$a}</span>に合�
 $string['matchingfiles'] = 'ファイルに合致する:';
 $string['next'] = '次へ';
 $string['noindexmessage'] = '管理: 検索インデックスが作成されていないようです。';
-$string['noresults'] = '該当データがありません。';
+$string['noresults'] = '該当データはありません。';
 $string['normalsearch'] = '標準検索';
 $string['notitle'] = 'タイトルなし';
 $string['openedon'] = '開始日時';

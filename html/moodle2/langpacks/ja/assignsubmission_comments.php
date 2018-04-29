@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = '参加者 {$a}';
+$string['blindmarkingviewfullname'] = '参加者 {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'デフォルトで有効にする';
 $string['default_help'] = 'この設定を有効にした場合、すべての新しい課題において、この提出方法がデフォルトで有効にされます。';
 $string['enabled'] = '提出コメント';

@@ -46,6 +46,7 @@ $string['addedanendofbranch'] = 'Προστέθηκε τέλος διακλάδ�
 $string['addedaquestionpage'] = 'Προστέθηκε σελίδα ερωτήσεων';
 $string['addedcluster'] = 'Προστέθηκε συστοιχία';
 $string['addedendofcluster'] = 'Προστέθηκε τέλος συστοιχίας';
+$string['addendofbranch'] = 'Προσθήκη τέλους διακλάδωσης';
 $string['addendofcluster'] = 'Προσθήκη τέλους συστοιχίας';
 $string['addpage'] = 'Προσθήκη μίας σελίδας';
 $string['anchortitle'] = 'Αρχή κύριου περιεχόμενου';
@@ -187,6 +188,7 @@ $string['displayreview_help'] = '<p align="center"><b>Προβολή Κουμπ�
 $string['displayscorewithessays'] = 'Πήρατε {$a->score} στα {$a->tempmaxgrade} για τις αυτόματα βαθμολογούμενες ερωτήσεις.<br>Οι {$a->essayquestions} ερωτήσεις έκθεσης θα βαθμολογηθούν και θα προστεθούν<br />στον τελικό σας βαθμό αργότερα.<br /><br />Ο τρέχον βαθμός σας χωρίς τις ερωτήσεις έκθεσης είναι {$a->score} στα {$a->grade}';
 $string['displayscorewithoutessays'] = 'Ο βαθμός σας είναι {$a->score} (στα {$a->grade}).';
 $string['edit'] = 'Επεξεργασία';
+$string['editendofbranch'] = 'Επεξεργασία σελίδας τέλους διακλάδωσης';
 $string['editlessonsettings'] = 'Επεξεργασία ρυθμίσεων ενότητας';
 $string['editpagecontent'] = 'Επεξεργασία περιεχομένων σελίδας';
 $string['email'] = 'Ηλεκτρονικό Ταχυδρομείο';

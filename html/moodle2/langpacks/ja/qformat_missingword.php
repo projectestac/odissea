@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['beginanswernotfound'] = 'インポートされたファイルコンテンツ内に必須の「{」が見つかりませんでした。';
-$string['endanswernotfound'] = 'インポートされたファイルコンテンツ内に必須の「}」が見つかりませんでした。';
-$string['noanswerfound'] = '問題内に答えがありません。';
+$string['beginanswernotfound'] = 'インポートされたファイルコンテンツ内に必須の「{」文字が見つかりませんでした。';
+$string['endanswernotfound'] = 'インポートされたファイルコンテンツ内に必須の「}」文字が見つかりませんでした。';
+$string['noanswerfound'] = '問題に答えがありません。';
 $string['pluginname'] = 'Missing wordフォーマット';
 $string['pluginname_help'] = 'Missing wordフォーマットではテキストファイルを使用して問題をインポートすることができます。';

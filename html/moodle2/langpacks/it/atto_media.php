@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Aggiungi';
+$string['addcaptionstrack'] = 'Aggiungi traccia sottotitoli';
 $string['addchapterstrack'] = 'Aggiungi traccia capitoli';
 $string['adddescriptionstrack'] = 'Aggiungi traccia descrizione';
 $string['addmetadatatrack'] = 'Aggiungi traccia metadati';
@@ -42,11 +43,13 @@ $string['captions'] = 'Didascalie';
 $string['captions_help'] = 'Le didascalie possono essere utilizzate per descrivere ciò che accade nella traccia, inclusi suoni non verbali come lo squillo di un telefono.';
 $string['captionssourcelabel'] = 'URL traccia didascalie';
 $string['chapters'] = 'Capitoli';
+$string['chapters_help'] = 'I titoli dei capitoli sono utili per navigare all\'interno del file multimediale.';
 $string['chapterssourcelabel'] = 'URL traccia capitoli';
 $string['controls'] = 'Visualizza controlli';
 $string['createmedia'] = 'Inserisci media';
 $string['default'] = 'Default';
 $string['descriptions'] = 'Descrizioni';
+$string['descriptions_help'] = 'Le descrizioni audio possono essere utilizzate per fornire spiegazioni su dettagli visivi non rilevabili al solo testo audio.';
 $string['descriptionssourcelabel'] = 'URL traccia descrzioni';
 $string['displayoptions'] = 'Opzioni di visulizzazione';
 $string['entername'] = 'Inserisci nome';
@@ -73,6 +76,7 @@ $string['subtitles_help'] = 'I sottotitoli sono utili per fornire il testo o la 
 $string['subtitlessourcelabel'] = 'URL della traccia sottotitoli';
 $string['track'] = 'URL della traccia';
 $string['tracks'] = 'Sottotitoli e didascalie';
+$string['tracks_help'] = 'I sottotitoli, le didascalie, i capitoli e le descrizioni possono essere inserito tramite il formato file WebVTT (Web Video Text Tracks). Le etichette delle tracce saranno visualizzate nel menu di selezione a discesa. Per ciascun tipo di traccia, all\'avvio del video sarà selezionata la traccia impostata come default.';
 $string['video'] = 'Video';
 $string['videoheight'] = 'Altezza video';
 $string['videosourcelabel'] = 'URL sorgente video';

@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enabledock'] = 'Να επιτρέπεται ο χρήστης να προσθέσει αυτό το μπλοκ';
 $string['pluginname'] = 'Διαχείριση';
 $string['settings:addinstance'] = 'Προσθέστε νέο μπλοκ διαχείρισης';

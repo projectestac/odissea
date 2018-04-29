@@ -82,7 +82,7 @@ $string['settingshortnamedescription'] = 'コースフィールドに省略名�
 $string['settingsummary'] = 'コース概要のIMS説明タグ';
 $string['settingsummarydescription'] = '任意フィールドです。あなたがコース概要を指定したくない場合、「空白のままにする」を選択してください。';
 $string['sourcedidfallback'] = '「userid」が見つからない場合、ユーザIDに「sourcedid」を使用する';
-$string['sourcedidfallback_desc'] = 'IMSデータでは<sourcedid>フィールドはソースシステムで使用される不変のユーザIDコードをあらわします。<userid>フィールドはユーザがログインするときに使用されるIDコードを含む別のフィールドです。多くの場合、これら2つのコードは同じです - しかし、必ずとは限りません。
+$string['sourcedidfallback_desc'] = 'IMSデータでは<sourcedid>フィールドはソースシステムで使用される不変のユーザIDコードをあらわします。<userid>フィールドはユーザがログインする時に使用されるIDコードを含む別のフィールドです。多くの場合、これら2つのコードは同じです - しかし、必ずとは限りません。
 
 いくつかの学生情報が<userid>フィールドに出力されない場合、この設定を有効にして<sourcedid>をMoodleのユーザIDに使用してください。そうでない場合、この設定を無効のままにしてください。';
 $string['truncatecoursecodes'] = 'この長さにコースコードを切り詰める';

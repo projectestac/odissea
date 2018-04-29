@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Participant {$a}';
+$string['blindmarkingviewfullname'] = 'Participant {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Enabled by default';
 $string['default_help'] = 'If set, this submission method will be enabled by default for all new assignments.';
 $string['enabled'] = 'Submission comments';

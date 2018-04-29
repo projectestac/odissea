@@ -42,6 +42,7 @@ $string['chat:readlog'] = 'Läs loggar för direktsamtal';
 $string['chatreport'] = 'Sessioner för direktsamtal';
 $string['chat:talk'] = 'Tala i ett direktsamtal';
 $string['chattime'] = 'Tid för nästa direktsamtal';
+$string['chat:view'] = 'Visa direktsamtal';
 $string['compact'] = 'Kompakt';
 $string['composemessage'] = 'Skriv ett meddelande';
 $string['configmethod'] = 'Den metod för direktsamtal som erbjuder ett ajax-baserat gränssnitt  kontaktar regelbundet servern för uppdateringar.

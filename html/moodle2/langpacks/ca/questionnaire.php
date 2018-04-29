@@ -223,6 +223,7 @@ $string['maxtextlength'] = 'Longitud màxima del text';
 $string['maxtextlength_help'] = 'Per al tipus de pregunta Quadre d\'edició, introduïu la Longitud del quadre d\'edició i la Longitud màxima del text que hagi d\'introduir l\'enquestat.
 Els valors per defecte són 20 caràcters per a l\'amplària del quadre d\'edició i 25 caràcters per a la longitud màxima del text introduït.';
 $string['messageprovider:message'] = 'Recordatori del qüestionari';
+$string['messageprovider:notification'] = 'Tramesa de l\'enquesta';
 $string['minforcedresponses'] = 'Nombre mínim obligatori de respostes';
 $string['minforcedresponses_help'] = 'Utilitzeu aquests paràmetres per forçar els alumnes a marcar un mínim i un màxim de quadres de selecció. Per forçar un nombre exacte de seleccions, establiu el mínim i el màxim en el mateix valor. Si només voleu un mínim o un màxim, establiu-ne el valor i deixeu l\'altre a **0**.
 Si establiu el mínim i/o el màxim de quadres marcats i la resposta no s\'ajusta a aquests marges, s\'emet un missatge d\'avís. Òbviament, és millor que les persones que respondran l\'enquesta coneguin per endavant les condicions de resposta.';

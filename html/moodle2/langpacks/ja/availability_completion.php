@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = '学生は別の活動を完了する (または完了しない) 必要があります。';
 $string['error_selectcmid'] = 'あなたは完了条件に活動を選択する必要があります。';
+$string['error_selectcmidpassfail'] = 'あなたは「評定を必要とする」完了コンディションが設定された活動を選択する必要があります。';
 $string['label_cm'] = '活動またはリソース';
 $string['label_completion'] = '必須完了ステータス';
 $string['missing'] = '(不明な活動)';

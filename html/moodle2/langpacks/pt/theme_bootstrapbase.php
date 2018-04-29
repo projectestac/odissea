@@ -25,13 +25,34 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2> Base de Bootstrap </h2><img class=img-polaroid src="bootstrap/pix/screenshot.jpg" /><h3> Créditos do tema </h3><p><h3> Tem Moodle Twitter Bootstrap </h3><p> Este tema é baseado no framework CSS Bootstrap, versão 2.3 </p><p> <a href="http://getbootstrap.com">http://getbootstrap.com</a> </p><p> Este é um tema GPL que está disponível no GitHub: </p><p> <a href=https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a> </p><p> Sinta-se livre para modificar / melhorar / partilhar </p><p> Este tema foi criado com a ajuda de: Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans </p><p> Autores: Bas Marcas, David Scotson <br> Contacto: bas@sonsbeekmedia.nl <br> Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a> <br></p>
+$string['choosereadme'] = '<div class="clearfix">
+    <div class="theme_screenshot">
+        <h2> Base de Bootstrap </h2>
+        <img class=img-polaroid src="bootstrap/pix/screenshot.jpg"/>
+        <h3> Créditos do tema </h3>
+        <h3> Tem Moodle Twitter Bootstrap </h3>
+        <p> Este tema é baseado no framework CSS Bootstrap, versão 2.3 </p>
+        <p><a href="http://getbootstrap.com">http://getbootstrap.com</a></p>
+        <p> Este é um tema GPL que está disponível no GitHub: </p>
+        <p><a href=https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a></p>
+        <p> Sinta-se livre para modificar / melhorar / partilhar </p>
+        <p> Este tema foi criado com a ajuda de: Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans </p>
+        <p> Autores: Bas Marcas, David Scotson <br> Contacto: bas@sonsbeekmedia.nl <br> Website: <a
+                    href="http://www.basbrands.nl">www.basbrands.nl</a> <br></p>
 
-<h3> Reportar erros </h3>
+        <h3> Reportar erros </h3>
 
-<p> Pode reportar erros em <a href="https://github.com/bmbrands/theme_bootstrap/issues">página github</a> para este tema ou no Moodle Tracker </p>
+        <p> Pode reportar erros em <a href="https://github.com/bmbrands/theme_bootstrap/issues">página github</a> para
+            este tema ou no Moodle Tracker </p>
 
-<h3> Mais informações </h3><ul><li> <a href="https://github.com/bmbrands/theme_bootstrap/wiki">Página Wiki para este tema</a> <li> <a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap em Moodle docs</a> </li><li> <a href="http://theming.sonsbeekmedia.nl/">Área para testar tema</a> </li></ul>';
+        <h3> Mais informações </h3>
+        <ul>
+            <li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Página Wiki para este tema</a>
+            <li><a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap em Moodle docs</a></li>
+            <li><a href="http://theming.sonsbeekmedia.nl/">Área para testar tema</a></li>
+        </ul>
+    </div>
+</div>';
 $string['pluginname'] = 'Base Bootstrap';
 $string['region-side-post'] = 'Direita';
 $string['region-side-pre'] = 'Esquerda';

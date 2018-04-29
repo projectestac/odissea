@@ -78,6 +78,7 @@ $string['whatgrade'] = 'Attempts grading';
 $string['whatgrade_help'] = 'This preference sets the default attempts grading';
 $string['withselected'] = 'With selected';
 
+
 //wsSeguimiento
 $string['usrnotexists'] = 'The user does not belong to the course.';
 $string['mandatoryvalues'] = 'Missing mandatory values.';
@@ -104,3 +105,5 @@ $string['rcontent:updatescore'] = 'Update score';
 $string['rcontent:viewreport'] = 'View report';
 $string['rcontent:viewresult'] = 'View response';
 $string['rcontent:viewscores'] = 'View score';
+$string['fullscreen'] = 'Full screen view';
+$string['eventgrades_updated'] = 'Update score';

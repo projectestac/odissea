@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'クライアントID';
-$string['noauthtoken'] = 'Googleから認証トークンが受信されませんでした。あなたのGoogleアカウントにMoodleのアクセスが許可されているかどうか確認してください。';
+$string['noauthtoken'] = 'Googleから認証トークンが受信されませんでした。あなたのGoogleアカウントにMoodleのアクセスを許可しているかどうか確認してください。';
 $string['nooauthcredentials'] = 'OAuth認証情報が必要です。';
 $string['nooauthcredentials_help'] = 'Google Driveポートフォリオプラグインを使用するにはあなたはポートフォリオ設定でOAuth認証情報を設定する必要があります。';
 $string['nosessiontoken'] = 'セッショントークンが存在しません。Googleへのエクスポートを中止します。';
-$string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環として、あなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインに使用することのできるクライアントIDおよび秘密鍵が提供されます。</p>';
+$string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環としてあなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインで使用することのできるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Google Drive';
 $string['secret'] = '秘密鍵';
 $string['sendfailed'] = 'Googleへのファイル {$a} の転送に失敗しました。';

@@ -98,7 +98,9 @@ Folgende Portfolio Plugin Instanzen wurden deaktiviert:<br />
 {$a->textlist}
 
 Prüfen und korrigieren Sie die Einstellungen alsbald. Zugriff unter
-{$a->fixurl}.';
+{$a->fixurl}.
+
+Ihr E-Learning-Team';
 $string['insanebodyhtml'] = '<p>Guten Tag,</p>
 <p>Sie erhalten diese Nachricht als Administrator von {$a->sitename}.</p>
 <p>Einige Portfolio Plugin Instanzen wurden wegen fehlerhafter Konfiguration deaktiviert. Zur Zeit ist ein Export in diese Systeme durch Nutzer nicht möglich. </p>
@@ -106,14 +108,18 @@ $string['insanebodyhtml'] = '<p>Guten Tag,</p>
 {$a->htmllist}
 </p>
 <p>Prüfen und korrigieren Sie die Einstellungen möglichst bald über die
-<a href="{$a->fixurl}">Portfoliokonfiguration</a></p>.';
+<a href="{$a->fixurl}">Portfoliokonfiguration</a></p>.
+
+Ihr E-Learning-Team';
 $string['insanebodysmall'] = 'Guten Tag,
 
 Sie erhalten diese Nachricht als Administrator von {$a->sitename}.<br />
 Einige Portfolioplugin Instanzen wurden wegen fehlerhafter Konfiguration deaktiviert. Zur Zeit ist ein Export in diese Systeme durch Nutzer nicht möglich. <br />
 
 Prüfen und korrigieren Sie die Einstellungen möglichst bald über den Zugriff auf
-{$a->fixurl}.';
+{$a->fixurl}.
+
+Ihr E-Learning-Team';
 $string['insanesubject'] = 'Einige Portfolio-Instanzen wurden automatisch deaktiviert';
 $string['instancedeleted'] = 'Portfolio erfolgreich gelöscht';
 $string['instanceismisconfigured'] = 'Fehler in der Konfiguration der Portfolio-Instanz: {$a}';

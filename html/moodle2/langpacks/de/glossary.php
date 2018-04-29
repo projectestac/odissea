@@ -212,13 +212,13 @@ $string['glossary:managecomments'] = 'Kommentare verwalten';
 $string['glossary:manageentries'] = 'Einträge verwalten';
 $string['glossary:rate'] = 'Einträge bewerten';
 $string['glossarytype'] = 'Glossartyp';
-$string['glossarytype_help'] = 'Das Glossarsystem ermöglicht innerhalb eines Kurses das Importieren von Einträgen aus jedem (Standard-)Glossar in das Hauptglossar. Es darf im Kurs nur ein Hauptglossar vorhanden sein. Wenn der Import nicht genutzt wird, sollten alle Glossare als Standardglossare angelegt sein.';
+$string['glossarytype_help'] = 'Ein Hauptglossar ist ein Glossar, in das Einträge aus Sekundärglossaren importiert werden können. In einem Kurs kann nur ein Hauptglossar vorhanden sein. Wenn der Import nicht genutzt wird, können alle Glossare als Sekundärglossare angelegt sein.';
 $string['glossary:view'] = 'Glossar ansehen';
 $string['glossary:viewallratings'] = 'Alle Teilwertungen sehen';
 $string['glossary:viewanyrating'] = 'Alle Gesamtwertungen sehen';
 $string['glossary:viewrating'] = 'Eigene Gesamtwertung sehen';
 $string['glossary:write'] = 'Neue Einträge erstellen';
-$string['guestnoedit'] = 'Gäste dürfen kein Glossar bearbeiten';
+$string['guestnoedit'] = 'Gäste dürfen das Glossar nicht bearbeiten.';
 $string['importcategories'] = 'Kategorien importieren';
 $string['importedcategories'] = 'Importierte Kategorien';
 $string['importedentries'] = 'Importierte Einträge';
@@ -235,7 +235,7 @@ $string['linking'] = 'Autoverlinkung';
 $string['mainglossary'] = 'Hauptglossar';
 $string['maxtimehaspassed'] = 'Die maximale Bearbeitungszeit für den Kommentar wurde überschritten! ({$a})';
 $string['modulename'] = 'Glossar';
-$string['modulename_help'] = 'Mit Glossaren erstellen Sie Wörterbücher oder FAQ-Listen. Erst das Formular ausfüllen. Tragen Sie dann die Begriffe und die Erläuterungen ein.
+$string['modulename_help'] = 'Mit Glossaren erstellen Sie Wörterbücher oder FAQ-Listen. Zuerst legen Sie das Glossar an, danach tragen Sie die Begriffe und die Erläuterungen ein.
 
 Glossare können von Trainer/innen eingestellt oder als Lernaktivität von Teilnehmer/innen erarbeitet werden.
 
@@ -281,7 +281,7 @@ $string['rsstype_help'] = 'Diese Option ermöglicht es, RSS Feeds für dieses Gl
 $string['search:activity'] = 'Glossar - Aktivitätsinformation';
 $string['search:entry'] = 'Glossar - Einträge';
 $string['searchindefinition'] = 'Volltext-Suche';
-$string['secondaryglossary'] = 'Glossar';
+$string['secondaryglossary'] = 'Sekundärglossar';
 $string['showall'] = 'Link \'Alle\' anzeigen';
 $string['showall_help'] = 'Wenn die Option aktiviert ist, enthält der Index einen Link \'Alle\', über den alle Einträge des Glossars angezeigt werden.';
 $string['showalphabet'] = 'Alphabet anzeigen';

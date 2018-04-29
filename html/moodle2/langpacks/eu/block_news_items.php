@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['news_items:addinstance'] = 'Gehitu beste azken berriak bloke bat';
+$string['news_items:addinstance'] = 'Gehitu azken berriak bloke berria';
 $string['news_items:myaddinstance'] = 'Gehitu azken berriak bloke berria aginte-panelean';
 $string['pluginname'] = 'Azken berriak';

@@ -1056,7 +1056,10 @@ if(!com.wiris.quizzes.api.ui) com.wiris.quizzes.api.ui = {}
 com.wiris.quizzes.api.ui.MathViewer = $hxClasses["com.wiris.quizzes.api.ui.MathViewer"] = function() { }
 com.wiris.quizzes.api.ui.MathViewer.__name__ = ["com","wiris","quizzes","api","ui","MathViewer"];
 com.wiris.quizzes.api.ui.MathViewer.prototype = {
-	plot: null
+	filterConstructions: null
+	,filterMathML: null
+	,filter: null
+	,plot: null
 	,render: null
 	,__class__: com.wiris.quizzes.api.ui.MathViewer
 }
@@ -1083,21 +1086,18 @@ com.wiris.quizzes.HxMathViewer.prototype = {
 	}
 	,plotJS: function(construction,container) {
 		var _g = this;
-		if(this.graphJSLoaded()) {
+		if(this.graphJSLoaded() && container.parentNode != null) {
 			if(this.graphViewer == null) this.graphViewer = window.com.wiris.js.JsGraphViewer.newInstance(null);
-			var d = js.Lib.document;
-			var div = d.createElement("div");
-			container.parentNode.replaceChild(div,container);
-			this.graphViewer.geometryFile2Canvas(construction,div);
+			this.graphViewer.geometryFile2Canvas(construction,container);
 		} else haxe.Timer.delay(function() {
 			_g.plotJS(construction,container);
 		},100);
 	}
-	,plot: function(construction,container) {
-		if(this.isOffline()) {
-			if(!this.graphJSLoaded()) this.loadGraphJS();
-			this.plotJS(construction,container);
-		}
+	,plot: function(construction) {
+		if(!this.graphJSLoaded()) this.loadGraphJS();
+		var div = js.Lib.document.createElement("div");
+		this.plotJS(construction,div);
+		return div;
 	}
 	,loadViewer: function() {
 		if(this.isOffline()) {
@@ -1112,7 +1112,7 @@ com.wiris.quizzes.HxMathViewer.prototype = {
 	}
 	,loadGraphJS: function() {
 		var win = js.Lib.window;
-		if(win.com_wiris_quizzes_isGraphScript == null && this.isOffline()) {
+		if(win.com_wiris_quizzes_isGraphScript == null) {
 			win.com_wiris_quizzes_isGraphScript = true;
 			var d = js.Lib.document;
 			var script = d.createElement("script");
@@ -1163,17 +1163,31 @@ com.wiris.quizzes.HxMathViewer.prototype = {
 			_g.renderJS(mathml,container);
 		},100);
 	}
-	,filter: function(root) {
+	,filterConstructions: function(root) {
+		var plotters = com.wiris.quizzes.JsDomUtils.getElementsByClassName("wirisconstruction",null,root);
+		var n = plotters.length - 1;
+		while(n >= 0) {
+			var imgTag = plotters[n];
+			var construction = imgTag.getAttribute("data-wirisconstruction");
+			var canvas = this.plot(construction);
+			imgTag.parentNode.replaceChild(canvas,imgTag);
+			n--;
+		}
+	}
+	,filterMathML: function(root) {
 		var maths = root.getElementsByTagName("math");
-		var n = maths.length;
-		var _g = 0;
-		while(_g < n) {
-			var i = _g++;
-			var elem = maths[i];
+		var n = maths.length - 1;
+		while(n >= 0) {
+			var elem = maths[n];
 			var mathml = elem.outerHTML;
 			var render = this.render(mathml);
 			elem.parentNode.replaceChild(render,elem);
+			n--;
 		}
+	}
+	,filter: function(root) {
+		this.filterMathML(root);
+		this.filterConstructions(root);
 	}
 	,render: function(mathml) {
 		var container;
@@ -1315,7 +1329,7 @@ com.wiris.quizzes.JsInput.__super__ = com.wiris.quizzes.JsComponent;
 com.wiris.quizzes.JsInput.prototype = $extend(com.wiris.quizzes.JsComponent.prototype,{
 	addQuizzesFieldListener: function(listener) {
 		var _g = this;
-		if($bind(listener,listener.contentChanged)) this.addOnChangeHandler(function(value) {
+		if(listener.contentChanged) this.addOnChangeHandler(function(value) {
 			listener.contentChanged(_g);
 		});
 	}
@@ -1469,7 +1483,7 @@ com.wiris.quizzes.JsInitialCasInput.prototype = $extend(com.wiris.quizzes.JsPopu
 		var container = new com.wiris.quizzes.JsContainer(this.popup.document);
 		container.addClass("wirismaincontainer");
 		this.addPopupChild(container);
-		var cas = new com.wiris.quizzes.JsCasInput(this.popup.document,this.getValue(),false,true,"calculatorlanguage");
+		var cas = new com.wiris.quizzes.JsAlgorithmInput(this.popup.document,this.getValue(),false,true,"calculatorlanguage");
 		cas.addClass("wirispopupsimplecontent");
 		container.addChild(cas);
 		var submit = new com.wiris.quizzes.JsSubmitButtons(this.popup.document);
@@ -1483,10 +1497,11 @@ com.wiris.quizzes.JsInitialCasInput.prototype = $extend(com.wiris.quizzes.JsPopu
 	,button: null
 	,__class__: com.wiris.quizzes.JsInitialCasInput
 });
-com.wiris.quizzes.JsImageMathInput = $hxClasses["com.wiris.quizzes.JsImageMathInput"] = function(d,v,grammar,handConstraints) {
+com.wiris.quizzes.JsImageMathInput = $hxClasses["com.wiris.quizzes.JsImageMathInput"] = function(d,v,grammar,handConstraints,editorParams) {
 	com.wiris.quizzes.JsPopupInput.call(this,d,v);
 	this.grammar = grammar;
 	this.handConstraints = handConstraints;
+	this.setEditorInitialParams(editorParams);
 	this.popupWidth = 470;
 	this.popupHeight = 300;
 	this.popupName = "wiriseditorpopup";
@@ -1516,10 +1531,10 @@ com.wiris.quizzes.JsImageMathInput.prototype = $extend(com.wiris.quizzes.JsPopup
 		com.wiris.quizzes.JsPopupInput.prototype.buildPopup.call(this);
 		var container = new com.wiris.quizzes.JsContainer(this.popup.document);
 		container.addClass("wirismaincontainer");
-		var params = { };
-		params.toolbar = "quizzes";
-		var editor = new com.wiris.quizzes.JsEditorInput(this.popup.document,this.getValue(),params);
-		editor.setGrammarUrl(this.grammar);
+		var editor = new com.wiris.quizzes.JsEditorInput(this.popup.document,this.getValue(),this.editorParams);
+		var check = true;
+		if(this.editorParams != null && this.editorParams.checkSyntax != null) check = this.editorParams.checkSyntax == "true";
+		editor.setGrammarUrl(this.grammar,check);
 		editor.setHandConstraints(haxe.Json.parse(this.handConstraints));
 		editor.addClass("wirispopupsimplecontent");
 		container.addChild(editor);
@@ -1527,6 +1542,12 @@ com.wiris.quizzes.JsImageMathInput.prototype = $extend(com.wiris.quizzes.JsPopup
 		submit.setAcceptHandler(function(e) {
 			_g.setValue(editor.getValue());
 			if(_g.changeHandler != null) _g.changeHandler(_g.value);
+		});
+		editor.addOnChangeStartHandler(function() {
+			submit.setAcceptEnabled(false);
+		});
+		editor.addOnChangeHandler(function(s) {
+			submit.setAcceptEnabled(true);
 		});
 		container.addChild(submit);
 		this.addPopupChild(container);
@@ -1636,6 +1657,12 @@ com.wiris.quizzes.JsImageMathInput.prototype = $extend(com.wiris.quizzes.JsPopup
 		}
 		this.configureElement();
 	}
+	,setEditorInitialParams: function(editorParams) {
+		this.editorParams = editorParams;
+		if(this.editorParams == null) this.editorParams = { };
+		if(this.editorParams.toolbar == null) this.editorParams.toolbar = "quizzes";
+	}
+	,editorParams: null
 	,fieldMinWidth: null
 	,tools: null
 	,button: null
@@ -1647,9 +1674,10 @@ com.wiris.quizzes.JsImageMathInput.prototype = $extend(com.wiris.quizzes.JsPopup
 	,grammar: null
 	,__class__: com.wiris.quizzes.JsImageMathInput
 });
-com.wiris.quizzes.JsCompoundMathInput = $hxClasses["com.wiris.quizzes.JsCompoundMathInput"] = function(d,v,image,grammar,handConstraints) {
+com.wiris.quizzes.JsCompoundMathInput = $hxClasses["com.wiris.quizzes.JsCompoundMathInput"] = function(d,v,image,grammar,handConstraints,editorParams) {
 	com.wiris.quizzes.JsInput.call(this,d,v);
 	if(com.wiris.quizzes.JsCompoundMathInput.htmltools == null) com.wiris.quizzes.JsCompoundMathInput.htmltools = new com.wiris.quizzes.impl.HTMLTools();
+	this.editorParams = editorParams;
 	this.image = image;
 	this.grammar = grammar;
 	this.handConstraints = handConstraints;
@@ -1672,6 +1700,17 @@ com.wiris.quizzes.JsCompoundMathInput.prototype = $extend(com.wiris.quizzes.JsIn
 			this.inputs[i].addOnChangeHandler(function(value) {
 				_g2.changeHandler(_g2.getValue());
 			});
+		}
+	}
+	,setEditorInitialParams: function(editorParams) {
+		this.editorParams = editorParams;
+		if(this.image) {
+			var _g1 = 0, _g = this.inputs.length;
+			while(_g1 < _g) {
+				var i = _g1++;
+				var mathinput = this.inputs[i];
+				mathinput.setEditorInitialParams(this.editorParams);
+			}
 		}
 	}
 	,setHandConstraints: function(handConstraints) {
@@ -1723,7 +1762,7 @@ com.wiris.quizzes.JsCompoundMathInput.prototype = $extend(com.wiris.quizzes.JsIn
 	}
 	,getMathInput: function(d,v) {
 		var input;
-		if(this.image) input = new com.wiris.quizzes.JsImageMathInput(d,v,this.grammar,this.handConstraints); else {
+		if(this.image) input = new com.wiris.quizzes.JsImageMathInput(d,v,this.grammar,this.handConstraints,this.editorParams); else {
 			if(com.wiris.quizzes.impl.MathContent.getMathType(v) == com.wiris.quizzes.impl.MathContent.TYPE_MATHML) v = com.wiris.quizzes.JsCompoundMathInput.htmltools.mathMLToText(v);
 			input = new com.wiris.quizzes.JsTextInput(d,v);
 			input.addClass("wirisembeddedtextinput");
@@ -1751,6 +1790,7 @@ com.wiris.quizzes.JsCompoundMathInput.prototype = $extend(com.wiris.quizzes.JsIn
 		var old = this.element.firstChild;
 		if(old == null) this.element.appendChild(elem.element); else this.element.replaceChild(elem.element,old);
 	}
+	,editorParams: null
 	,handConstraints: null
 	,grammar: null
 	,answers: null
@@ -1821,7 +1861,10 @@ com.wiris.quizzes.JsSubmitButtons = $hxClasses["com.wiris.quizzes.JsSubmitButton
 com.wiris.quizzes.JsSubmitButtons.__name__ = ["com","wiris","quizzes","JsSubmitButtons"];
 com.wiris.quizzes.JsSubmitButtons.__super__ = com.wiris.quizzes.JsComponent;
 com.wiris.quizzes.JsSubmitButtons.prototype = $extend(com.wiris.quizzes.JsComponent.prototype,{
-	setCorporateLogo: function(src,title,url) {
+	setAcceptEnabled: function(enabled) {
+		if(this.accept != null) this.accept.setEnabled(enabled);
+	}
+	,setCorporateLogo: function(src,title,url) {
 		var doc = this.getOwnerDocument();
 		var img = doc.createElement("img");
 		img.src = src;
@@ -1907,14 +1950,18 @@ com.wiris.quizzes.JsImageButton.prototype = $extend(com.wiris.quizzes.JsButton.p
 	,enabled: null
 	,__class__: com.wiris.quizzes.JsImageButton
 });
-com.wiris.quizzes.JsCasInput = $hxClasses["com.wiris.quizzes.JsCasInput"] = function(d,v,library,delayload,languageLabel,buttonText,helpText) {
+com.wiris.quizzes.JsAlgorithmInput = $hxClasses["com.wiris.quizzes.JsAlgorithmInput"] = function(d,v,library,delayload,languageLabel,buttonText,helpText,useCalc) {
 	var _g = this;
 	com.wiris.quizzes.JsInput.call(this,d,v);
+	this.isCas = true;
 	if(library == null) library = false;
 	if(delayload == null) delayload = false;
+	if(useCalc == null) useCalc = false;
 	if(languageLabel == null) languageLabel = this.t("calculatorlanguage");
 	this.buttonText = buttonText;
 	this.helpText = helpText;
+	this.useCalc = useCalc;
+	if(this.useCalc && this.isSessionCalc()) this.isCas = false;
 	this.library = library;
 	this.listenChanges = false;
 	this.caslang = this.getSessionLang();
@@ -1938,16 +1985,23 @@ com.wiris.quizzes.JsCasInput = $hxClasses["com.wiris.quizzes.JsCasInput"] = func
 	langChooserWrapper.addChild(this.langChooser);
 	this.element.appendChild(langChooserWrapper.element);
 	this.setValue(v);
-	if(!delayload) this.buildCasApplet(d);
+	if(!delayload) {
+		this.buildCasApplet(d);
+		if(!this.isCas) this.disableCas();
+	}
 	com.wiris.quizzes.JsDomUtils.addEvent(this.getOwnerWindow(),"unload",function(e) {
 		if(_g.casJnlpLauncher != null) _g.casJnlpLauncher.stop();
 		_g.listenChanges = false;
 	});
 };
-com.wiris.quizzes.JsCasInput.__name__ = ["com","wiris","quizzes","JsCasInput"];
-com.wiris.quizzes.JsCasInput.__super__ = com.wiris.quizzes.JsInput;
-com.wiris.quizzes.JsCasInput.prototype = $extend(com.wiris.quizzes.JsInput.prototype,{
-	pollChanges: function() {
+com.wiris.quizzes.JsAlgorithmInput.__name__ = ["com","wiris","quizzes","JsAlgorithmInput"];
+com.wiris.quizzes.JsAlgorithmInput.__super__ = com.wiris.quizzes.JsInput;
+com.wiris.quizzes.JsAlgorithmInput.prototype = $extend(com.wiris.quizzes.JsInput.prototype,{
+	isSessionCalc: function() {
+		if(this.value == null) return false;
+		return com.wiris.quizzes.impl.HTMLTools.isCalc(this.value);
+	}
+	,pollChanges: function() {
 		var newValue = this.input.value;
 		if(newValue != this.value) {
 			this.value = newValue;
@@ -1967,6 +2021,23 @@ com.wiris.quizzes.JsCasInput.prototype = $extend(com.wiris.quizzes.JsInput.proto
 		com.wiris.quizzes.JsInput.prototype.setValue.call(this,v);
 		if(this.isEmpty()) this.value = this.getEmptyWirisCasSession();
 		this.input.value = this.value;
+		if(this.isCas && !this.isEmpty() && this.isSessionCalc()) {
+			this.isCas = false;
+			this.disableCas();
+			this.calcLauncher.showInterface();
+		}
+		if(!this.isCas && (this.isEmpty() || !this.isSessionCalc())) {
+			this.isCas = true;
+			if(this.casJnlpLauncher == null) this.buildCasApplet(this.getOwnerDocument()); else {
+				var casLauncherElem = this.casJnlpLauncher.getElement();
+				com.wiris.quizzes.JsDomUtils.removeClass(casLauncherElem,"wirishidden");
+				this.casJnlpLauncher.setValue(this.getValue());
+				this.casJnlpLauncher.setSessionImageVisible(false);
+				this.casJnlpLauncher.setNote("");
+			}
+			this.calcLauncher.hideInterface();
+			com.wiris.quizzes.JsDomUtils.removeClass(this.langChooser.getElement().parentNode,"wirishidden");
+		}
 	}
 	,getValue: function() {
 		this.value = this.input.value;
@@ -1977,7 +2048,9 @@ com.wiris.quizzes.JsCasInput.prototype = $extend(com.wiris.quizzes.JsInput.proto
 	}
 	,getSessionLang: function() {
 		var caslang = null;
-		if(this.value != null) caslang = com.wiris.quizzes.impl.HTMLTools.casSessionLang(this.value);
+		if(this.value != null) {
+			if(this.useCalc && this.isSessionCalc()) caslang = com.wiris.quizzes.impl.HTMLTools.calcSessionLang(this.value); else caslang = com.wiris.quizzes.impl.HTMLTools.casSessionLang(this.value);
+		}
 		if(caslang == null) {
 			var caslangs = this.getCasLangs();
 			var i;
@@ -2009,33 +2082,69 @@ com.wiris.quizzes.JsCasInput.prototype = $extend(com.wiris.quizzes.JsInput.proto
 		var newlang = this.langChooser.getValue();
 		if(newlang != this.caslang) {
 			this.caslang = newlang;
-			this.getValue();
-			if(!this.isEmpty()) {
-				var builder = com.wiris.quizzes.api.QuizzesBuilder.getInstance();
-				var question = builder.newQuestion();
-				question.wirisCasSession = this.getValue();
-				var req = builder.newTranslationRequest(question,this.caslang);
-				try {
-					var service = builder.getQuizzesService();
-					question.update(service.execute(req));
-					this.setValue(question.wirisCasSession);
-				} catch( e1 ) {
-					js.Lib.alert(e1);
-				}
-			} else this.setValue("");
-			this.applet = null;
+			if(this.isCas) {
+				this.getValue();
+				if(!this.isEmpty()) {
+					var builder = com.wiris.quizzes.api.QuizzesBuilder.getInstance();
+					var question = builder.newQuestion();
+					question.wirisCasSession = this.getValue();
+					var req = builder.newTranslationRequest(question,this.caslang);
+					try {
+						var service = builder.getQuizzesService();
+						question.update(service.execute(req));
+						this.setValue(question.wirisCasSession);
+					} catch( e1 ) {
+						js.Lib.alert(e1);
+					}
+				} else this.setValue("");
+				this.applet = null;
+				if(this.casJnlpLauncher != null) {
+					this.casJnlpLauncher.setLanguage(this.caslang);
+					this.casJnlpLauncher.setValue(this.getValue());
+					this.casJnlpLauncher.updateSessionImage();
+				} else this.buildCasApplet(this.getOwnerDocument());
+			}
+			if(this.useCalc && this.calcLauncher != null) this.calcLauncher.setLanguage(this.caslang);
+		}
+	}
+	,disableCas: function() {
+		if(this.useCalc && this.isSessionCalc()) {
 			if(this.casJnlpLauncher != null) {
-				this.casJnlpLauncher.setLanguage(this.caslang);
-				this.casJnlpLauncher.setValue(this.getValue());
-				this.casJnlpLauncher.updateSessionImage();
-			} else this.buildCasApplet(this.getOwnerDocument());
+				this.casJnlpLauncher.stop();
+				var casLauncherElem = this.casJnlpLauncher.getElement();
+				com.wiris.quizzes.JsDomUtils.addClass(casLauncherElem,"wirishidden");
+				this.casJnlpLauncher.setSessionImageVisible(false);
+				this.casJnlpLauncher.setNote("");
+			}
+			this.listenChanges = false;
+			if(!this.isEmpty() && this.calcLauncher != null) this.calcLauncher.hideRevealAndWarning();
+			com.wiris.quizzes.JsDomUtils.addClass(this.langChooser.getElement().parentNode,"wirishidden");
 		}
 	}
 	,init: function() {
-		if(this.applet == null && this.casJnlpLauncher == null) this.buildCasApplet(this.getOwnerDocument());
+		var _g = this;
+		if(this.applet == null && this.casJnlpLauncher == null) {
+			this.buildCasApplet(this.getOwnerDocument());
+			if(!this.isCas) this.disableCas();
+		}
+		if(this.useCalc && this.calcLauncher == null) {
+			var warningMessage = null;
+			if(this.isCas) warningMessage = this.t("wiriscalcwarningmessage");
+			this.calcLauncher = new com.wiris.quizzes.JsCalcLauncher(this.getOwnerDocument(),this.value,null,null,warningMessage,this.isCas,this.caslang);
+			this.appletWrapper.appendChild(this.calcLauncher.element);
+			this.calcLauncher.setOnLaunch(function() {
+				_g.calcLauncher.setValue(_g.getValue());
+			});
+			this.calcLauncher.addOnCloseHandler(function() {
+				_g.setValue(_g.calcLauncher.getValue());
+			});
+		}
 	}
 	,helpText: null
 	,buttonText: null
+	,isCas: null
+	,useCalc: null
+	,calcLauncher: null
 	,casJnlpLauncher: null
 	,listenChanges: null
 	,library: null
@@ -2044,7 +2153,7 @@ com.wiris.quizzes.JsCasInput.prototype = $extend(com.wiris.quizzes.JsInput.proto
 	,appletWrapper: null
 	,applet: null
 	,caslang: null
-	,__class__: com.wiris.quizzes.JsCasInput
+	,__class__: com.wiris.quizzes.JsAlgorithmInput
 });
 com.wiris.quizzes.JsCasJnlpLauncher = $hxClasses["com.wiris.quizzes.JsCasJnlpLauncher"] = function(d,v,lang,text,buttonText) {
 	this.pollingService = false;
@@ -2129,7 +2238,7 @@ com.wiris.quizzes.JsCasJnlpLauncher.prototype = $extend(com.wiris.quizzes.JsInpu
 	}
 	,updateSession: function(session) {
 		var sessionRevision = Std.parseInt(session.get("revision"));
-		var update = this.revision < sessionRevision;
+		var update = this.revision < sessionRevision && session.exists("value");
 		if(update) {
 			this.revision = sessionRevision;
 			this.setValue(session.get("value"));
@@ -2161,7 +2270,7 @@ com.wiris.quizzes.JsCasJnlpLauncher.prototype = $extend(com.wiris.quizzes.JsInpu
 		} else {
 			this.setButtonEnabled(true);
 			this.setNote(this.t("error"));
-			haxe.Log.trace(session.get("error"),{ fileName : "JsComponent.hx", lineNumber : 1535, className : "com.wiris.quizzes.JsCasJnlpLauncher", methodName : "sessionReceived"});
+			haxe.Log.trace(session.get("error"),{ fileName : "JsComponent.hx", lineNumber : 1564, className : "com.wiris.quizzes.JsCasJnlpLauncher", methodName : "sessionReceived"});
 		}
 	}
 	,pollServiceImpl: function() {
@@ -2296,6 +2405,178 @@ com.wiris.quizzes.JsCasJnlpLauncher.prototype = $extend(com.wiris.quizzes.JsInpu
 	,serviceURL: null
 	,__class__: com.wiris.quizzes.JsCasJnlpLauncher
 });
+com.wiris.quizzes.JsCalcLauncher = $hxClasses["com.wiris.quizzes.JsCalcLauncher"] = function(d,v,text,buttonText,warningText,hide,lang) {
+	var _g = this;
+	com.wiris.quizzes.JsInput.call(this,d,v);
+	if(text == null) text = this.t("usewiriscalc");
+	if(buttonText == null) buttonText = this.t("editalgorithmwithcalc");
+	if(hide == null) hide = false;
+	this.lang = lang;
+	this.displayWarning = hide;
+	this.beta = true;
+	this.element = d.createElement("div");
+	com.wiris.quizzes.JsDomUtils.addClass(this.element,"wiriscalclauncher");
+	this.launchDiv = d.createElement("div");
+	var textDiv = d.createElement("div");
+	var p1 = d.createElement("p");
+	p1.innerHTML = text;
+	textDiv.appendChild(p1);
+	com.wiris.quizzes.JsDomUtils.addClass(p1,"wiriscalclaunchertext");
+	if(warningText != null && warningText.length > 0) {
+		this.warningContainer = d.createElement("p");
+		this.warningContainer.innerHTML = warningText;
+		com.wiris.quizzes.JsDomUtils.addClass(this.warningContainer,"wiriscalclaunchertext");
+		textDiv.appendChild(this.warningContainer);
+	}
+	this.launchDiv.appendChild(textDiv);
+	var buttonLaunch = new com.wiris.quizzes.JsButton(d,buttonText);
+	buttonLaunch.setOnClick($bind(this,this.manageLaunch));
+	this.launchDiv.appendChild(buttonLaunch.element);
+	if(this.beta) {
+		var betaP = d.createElement("p");
+		com.wiris.quizzes.JsDomUtils.addClass(betaP,"wiriscalcquizzesbeta");
+		betaP.innerHTML = "Beta";
+		this.launchDiv.appendChild(betaP);
+	}
+	if(hide) this.hideInterface();
+	this.element.appendChild(this.launchDiv);
+	this.addOnCloseHandler(function() {
+		_g.calc.setNeedsSave(false);
+		_g.setValue(_g.calc.getContent());
+		_g.showTip();
+	});
+	this.showTip();
+};
+com.wiris.quizzes.JsCalcLauncher.__name__ = ["com","wiris","quizzes","JsCalcLauncher"];
+com.wiris.quizzes.JsCalcLauncher.__super__ = com.wiris.quizzes.JsInput;
+com.wiris.quizzes.JsCalcLauncher.prototype = $extend(com.wiris.quizzes.JsInput.prototype,{
+	showTip: function() {
+		if(this.value != null && com.wiris.quizzes.impl.HTMLTools.isCalc(this.value) && !com.wiris.quizzes.impl.HTMLTools.emptyCasSession(this.value)) {
+			if(this.tipElement == null) {
+				var d = this.getOwnerDocument();
+				this.tipElement = d.createElement("p");
+				com.wiris.quizzes.JsDomUtils.addClass(this.tipElement,"wiriscalclaunchertext");
+				this.tipElement.innerHTML = "<span style=\"font-weight:bold\">" + this.t("wiriscalctip") + ":</span> " + this.t("wiriscalctipmessage");
+				this.element.appendChild(this.tipElement);
+			} else com.wiris.quizzes.JsDomUtils.removeClass(this.tipElement,"wirishidden");
+		} else if(this.tipElement != null && (this.value == null || com.wiris.quizzes.impl.HTMLTools.emptyCasSession(this.value) || !com.wiris.quizzes.impl.HTMLTools.isCalc(this.value))) com.wiris.quizzes.JsDomUtils.addClass(this.tipElement,"wirishidden");
+	}
+	,addOnCloseHandler: function(handler) {
+		var _g = this;
+		if(this.onClose == null) this.onClose = handler; else this.onClose = (function() {
+			var originOnClose = _g.onClose;
+			if(originOnClose == null) return handler;
+			return function() {
+				originOnClose();
+				handler();
+			};
+		})();
+	}
+	,setOnLaunch: function(handler) {
+		this.onLaunch = handler;
+	}
+	,getSessionLang: function() {
+		if(this.value == null) return "en";
+		if(com.wiris.quizzes.impl.HTMLTools.isCalc(this.value)) return com.wiris.quizzes.impl.HTMLTools.calcSessionLang(this.value); else return com.wiris.quizzes.impl.HTMLTools.casSessionLang(this.value);
+	}
+	,setLanguage: function(lang) {
+		this.lang = lang;
+	}
+	,closeCalc: function(e) {
+		var doc = this.getOwnerDocument();
+		com.wiris.quizzes.JsDomUtils.addClass(this.calcContainer.element,"wirishidden");
+		var container = com.wiris.quizzes.JsDomUtils.getElementsByClassName("wiriscontainer",null,doc)[0];
+		com.wiris.quizzes.JsDomUtils.removeClass(container,"wirishidden");
+		this.onClose();
+	}
+	,launch: function(e) {
+		var _g = this;
+		this.createContainer();
+		var win = this.getOwnerWindow();
+		if(this.calcDiv != null && this.isCalcScriptLoaded()) {
+			if(this.calc == null) {
+				this.calc = new win.com.wiris.js.JsCalc();
+			}
+			this.calc.insertInto(this.calcDiv);
+			this.calc.onIsReady(function() {
+				_g.calc.setContent(_g.value);
+				_g.calc.action("commandIfNeeded");
+				com.wiris.quizzes.JsDomUtils.removeCSS(_g.getOwnerDocument(),"calc","template.css");
+			});
+		}
+	}
+	,manageLaunch: function(e) {
+		if(this.onLaunch != null) this.onLaunch();
+		if(this.displayWarning && !com.wiris.quizzes.impl.HTMLTools.emptyCasSession(this.value)) {
+			var win = this.getOwnerWindow();
+			if(win.confirm(this.t("confirmimportalgorithm"))) this.launch(e);
+		} else this.launch(e);
+	}
+	,isCalcScriptLoaded: function() {
+		var win = this.getOwnerWindow();
+		return win.com != null && win.com.wiris != null && win.com.wiris.js != null && win.com.wiris.js.JsCalc != null;
+	}
+	,hideRevealAndWarning: function() {
+		if(this.revealElement != null) com.wiris.quizzes.JsDomUtils.addClass(this.revealElement,"wirishidden");
+		if(this.warningContainer != null) com.wiris.quizzes.JsDomUtils.addClass(this.warningContainer,"wirishidden");
+		this.displayWarning = false;
+	}
+	,createContainer: function() {
+		var doc = this.getOwnerDocument();
+		if(this.calcContainer == null) {
+			this.calcContainer = new com.wiris.quizzes.JsContainer(doc);
+			this.calcDiv = doc.createElement("div");
+			var title = doc.createElement("div");
+			com.wiris.quizzes.JsDomUtils.addClass(title,"wiriscalcquizzestitle");
+			com.wiris.quizzes.JsDomUtils.addClass(this.calcDiv,"wiriscalcquizzescontainer");
+			var back = new com.wiris.quizzes.JsImageButton(doc,this.t("gobacktostudio"),com.wiris.quizzes.api.QuizzesBuilder.getInstance().getResourceUrl("goback.png"));
+			back.setOnClick($bind(this,this.closeCalc));
+			com.wiris.quizzes.JsDomUtils.addClass(back.element,"wirisbacktostudiobutton");
+			title.appendChild(back.element);
+			title.appendChild(doc.createTextNode(this.t("definevariablesandfunctions")));
+			this.calcContainer.element.appendChild(title);
+			this.calcContainer.element.appendChild(this.calcDiv);
+		} else com.wiris.quizzes.JsDomUtils.removeClass(this.calcContainer.element,"wirishidden");
+		var container = com.wiris.quizzes.JsDomUtils.getElementsByClassName("wiriscontainer",null,doc)[0];
+		var myContainer = new com.wiris.quizzes.JsContainer(doc);
+		com.wiris.quizzes.JsDomUtils.addClass(container,"wirishidden");
+		doc.body.appendChild(this.calcContainer.element);
+	}
+	,showInterface: function() {
+		com.wiris.quizzes.JsDomUtils.removeClass(this.launchDiv,"wirishidden");
+		this.showTip();
+	}
+	,hideInterface: function() {
+		var _g = this;
+		com.wiris.quizzes.JsDomUtils.addClass(this.launchDiv,"wirishidden");
+		if(this.revealElement == null) {
+			this.revealElement = this.getOwnerDocument().createElement("a");
+			com.wiris.quizzes.JsDomUtils.addClass(this.revealElement,"wirisrevealcalclauncher");
+			this.revealElement.innerHTML = this.t("trycalc");
+			this.element.appendChild(this.revealElement);
+			com.wiris.quizzes.JsDomUtils.addEvent(this.revealElement,"click",function(e) {
+				if(com.wiris.quizzes.JsDomUtils.hasClass(_g.launchDiv,"wirishidden")) com.wiris.quizzes.JsDomUtils.removeClass(_g.launchDiv,"wirishidden"); else _g.hideInterface();
+			});
+		} else {
+			com.wiris.quizzes.JsDomUtils.removeClass(this.revealElement,"wirishidden");
+			com.wiris.quizzes.JsDomUtils.removeClass(this.warningContainer,"wirishidden");
+		}
+		this.displayWarning = true;
+	}
+	,launchDiv: null
+	,tipElement: null
+	,calc: null
+	,beta: null
+	,displayWarning: null
+	,onLaunch: null
+	,onClose: null
+	,lang: null
+	,revealElement: null
+	,warningContainer: null
+	,calcContainer: null
+	,calcDiv: null
+	,__class__: com.wiris.quizzes.JsCalcLauncher
+});
 com.wiris.quizzes.JsLabel = $hxClasses["com.wiris.quizzes.JsLabel"] = function(d,text,input,className) {
 	com.wiris.quizzes.JsComponent.call(this,d);
 	if(className == null) className = "wirisleftlabel";
@@ -2316,6 +2597,7 @@ com.wiris.quizzes.JsEditorInput = $hxClasses["com.wiris.quizzes.JsEditorInput"] 
 	if(this.params.language == null) this.params.language = this.getLang();
 	if(this.params.forceReservedWords == null) this.params.forceReservedWords = "true";
 	if(this.params.autoformat == null) this.params.autoformat = "true";
+	if(this.params.notifyContainer == null) this.params.notifyContainer = "true";
 	if(this.params.hand == null) {
 		var hand = com.wiris.quizzes.api.QuizzesBuilder.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.HAND_ENABLED);
 		this.params.hand = hand.toLowerCase() == "true"?"true":"false";
@@ -2359,12 +2641,18 @@ com.wiris.quizzes.JsEditorInput.prototype = $extend(com.wiris.quizzes.JsInput.pr
 		return this.editor;
 	}
 	,setHandListener: function() {
-		if(this.editor != null && this.editor.isReady()) {
-			if(this.editor.getHand && this.editor.getHand() != null) this.editor.getHand().addHandListener(new com.wiris.quizzes.QuizzesHandListener(null,this.startHandler));
-		} else this.delay($bind(this,this.setHandListener),200);
+		var win = this.getOwnerWindow();
+		if(win != null && !win.closed) {
+			if(this.editor != null && this.editor.isReady()) {
+				if(this.editor.getHand && this.editor.getHand() != null) this.editor.getHand().addHandListener(new com.wiris.quizzes.QuizzesHandListener(null,this.startHandler));
+			} else this.delay($bind(this,this.setHandListener),200);
+		}
 	}
 	,setEditorListener: function() {
-		if(this.editor != null) this.editor.getEditorModel().addEditorListener(new com.wiris.quizzes.QuizzesEditorListener(this.changeHandler,this.editor)); else this.delay($bind(this,this.setEditorListener),200);
+		var win = this.getOwnerWindow();
+		if(win != null && !win.closed) {
+			if(this.editor != null) this.editor.getEditorModel().addEditorListener(new com.wiris.quizzes.QuizzesEditorListener(this.changeHandler,this.editor)); else this.delay($bind(this,this.setEditorListener),200);
+		}
 	}
 	,addOnChangeHandler: function(handler) {
 		var _g = this;
@@ -2452,19 +2740,13 @@ com.wiris.quizzes.JsEditorInput.prototype = $extend(com.wiris.quizzes.JsInput.pr
 	}
 	,addEditorScript: function(d) {
 		var win = this.getOwnerWindow();
-		if(win.com_wiris_quizzes_isEditorScript == null) {
-			win.com_wiris_quizzes_isEditorScript = true;
-			var script = d.createElement("script");
-			script.setAttribute("type","text/javascript");
-			var url = com.wiris.quizzes.api.QuizzesBuilder.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL);
-			if(!this.isOffline()) url += "/editor"; else {
-				url += "/editor_offline.js";
-				var viewer = new com.wiris.quizzes.HxMathViewer();
-				viewer.exposeViewer();
-			}
-			script.setAttribute("src",url);
-			d.getElementsByTagName("head")[0].appendChild(script);
+		var url = com.wiris.quizzes.api.QuizzesBuilder.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL);
+		if(!this.isOffline()) url += "/editor"; else {
+			url += "/editor_offline.js";
+			var viewer = new com.wiris.quizzes.HxMathViewer();
+			viewer.exposeViewer();
 		}
+		com.wiris.quizzes.JsDomUtils.addScript(d,win,url);
 	}
 	,setStyle: function(key,value) {
 		if(key == "width") value = Math.max(com.wiris.util.css.CSSUtils.pixelsToInt(value),450) + "px";
@@ -2521,13 +2803,22 @@ com.wiris.quizzes.JsStudentAnswerInput.prototype = $extend(com.wiris.quizzes.JsI
 		return null;
 	}
 	,setEditorInitialParams: function(editorParams) {
-		if(this.type == com.wiris.quizzes.JsStudentAnswerInput.TYPE_EDITOR && this.input != null) throw "WIRIS editor already initialized.";
 		this.editorParams = editorParams;
+		if(this.editorParams.checkSyntax != null) this.checkSyntax = this.editorParams.checkSyntax == "true";
+		if(this.input != null) {
+			if(this.type == com.wiris.quizzes.JsStudentAnswerInput.TYPE_IMAGEMATH) {
+				var popupEditor = this.input;
+				popupEditor.setEditorInitialParams(editorParams);
+			} else if(this.type == com.wiris.quizzes.JsStudentAnswerInput.TYPE_COMPOUND_IMAGEMATH) {
+				var popupEditor = this.input;
+				popupEditor.setEditorInitialParams(editorParams);
+			} else if(this.type == com.wiris.quizzes.JsStudentAnswerInput.TYPE_EDITOR) throw "WIRIS editor already initialized.";
+		}
 	}
 	,addQuizzesFieldListener: function(listener) {
 		var _g = this;
 		com.wiris.quizzes.JsInput.prototype.addQuizzesFieldListener.call(this,listener);
-		if($bind(listener,listener.contentChangeStarted)) this.addOnChangeStartHandler(function() {
+		if(listener.contentChangeStarted) this.addOnChangeStartHandler(function() {
 			listener.contentChangeStarted(_g);
 		});
 	}
@@ -2589,16 +2880,16 @@ com.wiris.quizzes.JsStudentAnswerInput.prototype = $extend(com.wiris.quizzes.JsI
 			this.input.addClass("wirisembeddedtextinput");
 			break;
 		case com.wiris.quizzes.JsStudentAnswerInput.TYPE_IMAGEMATH:
-			this.input = new com.wiris.quizzes.JsImageMathInput(d,this.value,this.grammar,this.handConstraints);
+			this.input = new com.wiris.quizzes.JsImageMathInput(d,this.value,this.grammar,this.handConstraints,this.editorParams);
 			break;
 		case com.wiris.quizzes.JsStudentAnswerInput.TYPE_EDITOR:
 			this.getEditor();
 			break;
 		case com.wiris.quizzes.JsStudentAnswerInput.TYPE_COMPOUND_TEXTFIELD:
-			this.input = new com.wiris.quizzes.JsCompoundMathInput(d,this.value,false,this.grammar,this.handConstraints);
+			this.input = new com.wiris.quizzes.JsCompoundMathInput(d,this.value,false,this.grammar,this.handConstraints,this.editorParams);
 			break;
 		case com.wiris.quizzes.JsStudentAnswerInput.TYPE_COMPOUND_IMAGEMATH:
-			this.input = new com.wiris.quizzes.JsCompoundMathInput(d,this.value,true,this.grammar,this.handConstraints);
+			this.input = new com.wiris.quizzes.JsCompoundMathInput(d,this.value,true,this.grammar,this.handConstraints,this.editorParams);
 			break;
 		default:
 			throw "Illegal student answer input type " + this.type + ".";
@@ -2685,7 +2976,7 @@ com.wiris.quizzes.JsStudioInput = $hxClasses["com.wiris.quizzes.JsStudioInput"] 
 	this.userAnswer = userAnswer;
 	this.question = q;
 	this.instance = qi;
-	com.wiris.quizzes.JsImageMathInput.call(this,d,v,null,null);
+	com.wiris.quizzes.JsImageMathInput.call(this,d,v,null,null,null);
 	this.htmlgui = new com.wiris.quizzes.impl.HTMLGui(this.getLang());
 	this.popupWidth = 800;
 	this.popupHeight = 600;
@@ -3203,7 +3494,7 @@ com.wiris.quizzes.JsAuxiliarCasInput = $hxClasses["com.wiris.quizzes.JsAuxiliarC
 	var ii = qi;
 	if(qq.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_SHOW_CAS) != com.wiris.quizzes.impl.LocalData.VALUE_SHOW_CAS_FALSE) {
 		if(ii.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_CAS_SESSION) == null) ii.setLocalData(com.wiris.quizzes.impl.LocalData.KEY_CAS_SESSION,qq.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_CAS_INITIAL_SESSION));
-		this.cas = new com.wiris.quizzes.JsCasInput(d,ii.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_CAS_SESSION),false,false);
+		this.cas = new com.wiris.quizzes.JsAlgorithmInput(d,ii.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_CAS_SESSION),false,false);
 		var container = new com.wiris.quizzes.JsFieldset(d,null,true);
 		container.addClass("wirisauxiliarcas");
 		container.addChild(this.cas);
@@ -3865,6 +4156,33 @@ com.wiris.quizzes.JsDomUtils.getImageNaturalSize = function(image,f) {
 com.wiris.quizzes.JsDomUtils.getEventTarget = function(e) {
 	return e.target?e.target:e.srcElement;
 }
+com.wiris.quizzes.JsDomUtils.addScript = function(d,win,url) {
+	if(win[url] == null) {
+		win[url] = true;
+		var script = d.createElement("script");
+		script.setAttribute("type","text/javascript");
+		script.setAttribute("src",url);
+		d.getElementsByTagName("head")[0].appendChild(script);
+	}
+}
+com.wiris.quizzes.JsDomUtils.removeCSS = function(d,source,name) {
+	var head = d.getElementsByTagName("head")[0];
+	var links = head.getElementsByTagName("link");
+	var i = 0;
+	var n = links.length;
+	while(i < n) {
+		var link = links[i];
+		var type = link.getAttribute("type");
+		if(type == "text/css") {
+			var href = link.getAttribute("href");
+			var k = href.indexOf(source);
+			if(k >= 0) {
+				if(href.indexOf(name,k + 1) >= 0) head.removeChild(link);
+			}
+		}
+		i++;
+	}
+}
 com.wiris.quizzes.JsInputController = $hxClasses["com.wiris.quizzes.JsInputController"] = function(element,question,questionElement,instance,instanceElement) {
 	this.element = element;
 	this.question = question;
@@ -3997,23 +4315,18 @@ com.wiris.quizzes.JsInputController.prototype = {
 		}
 	}
 	,updateInputValue: function() {
-		this.mode = com.wiris.quizzes.JsInputController.GET;
-		var value = this.inputValue(null);
+		var value = this.getInputValue();
 		this.setQuestionValue(value);
 		this.updateInterface(value);
-		if(com.wiris.quizzes.JsInputController.DEBUG) {
-			if(this.question != null && this.questionElement != null) this.questionElement.value = this.question.serialize();
-			if(this.instance != null && this.instanceElement != null) this.instanceElement.value = this.instance.serialize();
-		}
 	}
 	,saveInputValue: function() {
+		var value = this.getInputValue();
+		this.setQuestionValue(value);
+	}
+	,getInputValue: function() {
 		this.mode = com.wiris.quizzes.JsInputController.GET;
 		var value = this.inputValue(null);
-		this.setQuestionValue(value);
-		if(com.wiris.quizzes.JsInputController.DEBUG) {
-			if(this.question != null && this.questionElement != null) this.questionElement.value = this.question.serialize();
-			if(this.instance != null && this.instanceElement != null) this.instanceElement.value = this.instance.serialize();
-		}
+		return value;
 	}
 	,updateInterface: function(value) {
 	}
@@ -4124,7 +4437,16 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.getInstance = function() {
 }
 com.wiris.quizzes.impl.QuizzesBuilderImpl.__super__ = com.wiris.quizzes.api.QuizzesBuilder;
 com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.api.QuizzesBuilder.prototype,{
-	getLockProvider: function() {
+	getAccessProvider: function() {
+		if(this.accessProvider == null) {
+			var classpath = this.getConfiguration().get(com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASSPATH);
+			if(!(classpath == "")) com.wiris.quizzes.impl.ClasspathLoader.load(classpath);
+			var className = this.getConfiguration().get(com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASS);
+			if(!(className == "")) this.accessProvider = js.Boot.__cast(Type.createInstance(Type.resolveClass(className),new Array()) , com.wiris.util.sys.AccessProvider);
+		}
+		return this.accessProvider;
+	}
+	,getLockProvider: function() {
 		if(this.locker == null) {
 			var className = this.getConfiguration().get(com.wiris.quizzes.impl.ConfigurationImpl.LOCKPROVIDER_CLASS);
 			if(!(className == "")) this.locker = js.Boot.__cast(Type.createInstance(Type.resolveClass(className),new Array()) , com.wiris.util.sys.LockProvider); else this.locker = new com.wiris.quizzes.impl.FileLockProvider(this.getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.CACHE_DIR));
@@ -4150,7 +4472,8 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.
 	}
 	,getResourceUrl: function(name) {
 		var c = this.getConfiguration();
-		if("true" == c.get(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_STATIC)) return c.get(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL) + "/" + name; else return c.get(com.wiris.quizzes.api.ConfigurationKeys.PROXY_URL) + "?service=resource&name=" + name;
+		var version = c.get(com.wiris.quizzes.api.ConfigurationKeys.VERSION);
+		if("true" == c.get(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_STATIC)) return c.get(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL) + "/" + name + "?v=" + version; else return c.get(com.wiris.quizzes.api.ConfigurationKeys.PROXY_URL) + "?service=resource&name=" + name + "&v=" + version;
 	}
 	,getPairings: function(c,u) {
 		var p = new Array();
@@ -4162,8 +4485,8 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.
 			reverse = true;
 		}
 		if(u == 0) return p;
-		var n = Math.floor(c / u);
-		var d = Math.floor(c % u);
+		var n = c / u | 0;
+		var d = c % u | 0;
 		var i;
 		var cc = 0;
 		var cu = 0;
@@ -4216,6 +4539,7 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.
 		s.register(new com.wiris.quizzes.impl.TranslationNameChange());
 		s.register(new com.wiris.quizzes.impl.UserData());
 		s.register(new com.wiris.quizzes.impl.Variable());
+		s.register(new com.wiris.quizzes.impl.Parameter());
 		return s;
 	}
 	,removeHandAnnotations: function(mathml) {
@@ -4441,9 +4765,10 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.
 			while(_g1 < _g) {
 				var j1 = _g1++;
 				var ass = qq.assertions[j1];
+				var corr = this.getIndex(ass.getCorrectAnswer());
 				var ans = this.getIndex(ass.getAnswer());
 				if(ass.isEquivalence()) {
-					usedcorrectanswers[this.getIndex(ass.getCorrectAnswer())] = true;
+					if(corr < usedcorrectanswers.length) usedcorrectanswers[corr] = true;
 					if(ans < usedanswers.length) usedanswers[ans] = true;
 				} else if(ass.isCheck()) {
 					if(ans < usedanswers.length) usedanswers[ans] = true;
@@ -4605,6 +4930,13 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.
 					if(after.length == 0 || com.wiris.util.type.IntegerTools.isInt(after) && Std.parseInt(after) <= qi.getStudentAnswersLength()) {
 						variables[i1] = null;
 						n++;
+					} else if(qq.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_OPENANSWER_COMPOUND_ANSWER) == com.wiris.quizzes.impl.LocalData.VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE) {
+						var qqi = js.Boot.__cast(qi , com.wiris.quizzes.impl.QuestionInstanceImpl);
+						var parts = com.wiris.quizzes.impl.HTMLTools.parseCompoundAnswer(qqi.userData.answers[0]);
+						if(com.wiris.util.type.IntegerTools.isInt(after) && Std.parseInt(after) <= parts.length) {
+							variables[i1] = null;
+							n++;
+						}
 					}
 				}
 			}
@@ -4702,6 +5034,7 @@ com.wiris.quizzes.impl.QuizzesBuilderImpl.prototype = $extend(com.wiris.quizzes.
 		if(this.uibuilder == null) this.uibuilder = new com.wiris.quizzes.impl.QuizzesUIBuilderImpl();
 		return this.uibuilder;
 	}
+	,accessProvider: null
 	,locker: null
 	,imagesCache: null
 	,variablesCache: null
@@ -4852,14 +5185,17 @@ com.wiris.quizzes.JsQuizzesFilter.prototype = {
 	,createAnswerFeedback: function(index,question,instance,options) {
 		var component = null;
 		var ii = instance;
-		if(ii.hasEvaluation()) {
+		var incorrectClass = com.wiris.quizzes.JsDomUtils.hasClassString(options,"wirisincorrect");
+		var correctClass = com.wiris.quizzes.JsDomUtils.hasClassString(options,"wiriscorrect");
+		var partiallyCorrectClass = com.wiris.quizzes.JsDomUtils.hasClassString(options,"wirispartiallycorrect");
+		if(ii.hasEvaluation() || incorrectClass || correctClass || partiallyCorrectClass) {
 			var cfg = new com.wiris.quizzes.impl.HTMLGuiConfig(options);
 			var correctAnswer = ii.getMatchingCorrectAnswer(index,question);
 			component = this.uibuilder.newAnswerFeedback(question,instance,correctAnswer,index);
 			component.showCorrectAnswerFeedback(cfg.showCorrectAnswerFeedback);
 			component.showAssertionsFeedback(cfg.showAssertionsFeedback);
 			component.showFieldDecorationFeedback(cfg.showFieldDecorationFeedback);
-			if(com.wiris.quizzes.JsDomUtils.hasClassString(options,"wirisincorrect")) component.setAnswerWeight(0.0); else if(com.wiris.quizzes.JsDomUtils.hasClassString(options,"wirispartiallycorrect")) component.setAnswerWeight(0.5);
+			if(incorrectClass) component.setAnswerWeight(0.0); else if(partiallyCorrectClass) component.setAnswerWeight(0.5);
 		}
 		return component;
 	}
@@ -5039,6 +5375,7 @@ com.wiris.quizzes.JsQuizzesFilter.prototype = {
 	,run: function() {
 		this.loadCSS();
 		this.replaceFields(this.defaultQuestion,this.defaultInstance,null);
+		this.uibuilder.getMathViewer().filterConstructions(js.Lib.document);
 	}
 	,uibuilder: null
 	,builder: null
@@ -5217,11 +5554,10 @@ com.wiris.quizzes.JsStudio.getFloatExample = function(number,q) {
 	var decimalSeparator = q.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_DECIMAL_SEPARATOR);
 	var digitGroupSeparator = q.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR);
 	var times = q.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_TIMES_OPERATOR);
-	var removeZeros = false;
+	var removeZeros = !StringTools.endsWith(format,"f");
 	var s = null;
 	if(StringTools.endsWith(format,"g")) {
 		if(number < Math.pow(10.0,-4) || number > Math.pow(10.0,precision)) format = HxOverrides.substr(format,0,format.length - 1) + "e"; else format = HxOverrides.substr(format,0,format.length - 1) + "r";
-		removeZeros = true;
 	}
 	if(StringTools.endsWith(format,"r")) {
 		format = HxOverrides.substr(format,0,format.length - 1) + "f";
@@ -5232,22 +5568,18 @@ com.wiris.quizzes.JsStudio.getFloatExample = function(number,q) {
 			digits++;
 		}
 		if(precision >= digits) precision -= digits; else precision = 0;
-		removeZeros = true;
 	}
 	if(StringTools.endsWith(format,"f")) s = number.toFixed(precision); else if(StringTools.endsWith(format,"e")) {
 		s = number.toExponential(precision - 1);
 		s = StringTools.replace(s,"e",times + "10<sup>") + "</sup>";
 		s = StringTools.replace(s,"+","");
 	}
-	if(removeZeros) {
-		var end;
-		if(StringTools.endsWith(format,"e")) end = s.indexOf(times) - 1; else end = s.length - 1;
-		while(end > 0 && s.charAt(end) == "0") {
-			s = HxOverrides.substr(s,0,end) + (end < s.length - 1?HxOverrides.substr(s,end + 1,null):"");
-			end--;
-		}
+	var end = StringTools.endsWith(format,"e")?s.indexOf(times) - 1:s.length - 1;
+	if(removeZeros) while(end > 0 && s.charAt(end) == "0") {
+		s = HxOverrides.substr(s,0,end) + (end < s.length - 1?HxOverrides.substr(s,end + 1,null):"");
+		end--;
 	}
-	if(StringTools.endsWith(s,".")) s = HxOverrides.substr(s,0,s.length - 1);
+	if(s.charAt(end) == ".") s = HxOverrides.substr(s,0,end) + (end < s.length - 1?HxOverrides.substr(s,end + 1,null):"");
 	s = StringTools.replace(s,".",decimalSeparator);
 	if(StringTools.startsWith(format,",")) {
 		var stop = s.indexOf(decimalSeparator);
@@ -5266,7 +5598,97 @@ com.wiris.quizzes.JsStudio.getFloatExample = function(number,q) {
 }
 com.wiris.quizzes.JsStudio.__super__ = com.wiris.quizzes.JsInput;
 com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototype,{
-	setElementLoading: function(elem,loading) {
+	getAssertionParam: function(paramName,question,assertions,correctAnswer,userAnswer) {
+		var _g = 0;
+		while(_g < assertions.length) {
+			var assertionName = assertions[_g];
+			++_g;
+			var index = question.getAssertionIndex(assertionName,"" + correctAnswer,"" + userAnswer);
+			if(index != -1) return question.assertions[index].getParam(paramName);
+		}
+		return com.wiris.quizzes.impl.Assertion.getParameterDefaultValue(assertions[0],paramName);
+	}
+	,setAssertionParam: function(paramName,value,question,assertions,correctAnswer,userAnswer) {
+		var _g = 0;
+		while(_g < assertions.length) {
+			var assertionName = assertions[_g];
+			++_g;
+			var index = question.getAssertionIndex(assertionName,"" + correctAnswer,"" + userAnswer);
+			if(index != -1) question.assertions[index].setParam(paramName,value);
+		}
+	}
+	,getOptionDefaultAssertionParam: function(paramName,question,assertions,correctAnswer,userAnswer) {
+		var value = this.getAssertionParam(paramName,question,assertions,correctAnswer,userAnswer);
+		var defValue = com.wiris.quizzes.impl.Assertion.getParameterDefaultValue(assertions[0],paramName);
+		if(value == defValue) value = question.getOption(paramName);
+		return value;
+	}
+	,setOptionDefaultAssertionParam: function(paramName,value,question,assertions,correctAnswer,userAnswer) {
+		var defValue = com.wiris.quizzes.impl.Assertion.getParameterDefaultValue(assertions[0],paramName);
+		if(question.getOption(paramName) == value) {
+			question.setOption(paramName,value);
+			value = defValue;
+		} else {
+			var otherToleranceAssertions = false;
+			var _g1 = 0, _g = question.assertions.length;
+			while(_g1 < _g) {
+				var index = _g1++;
+				if(com.wiris.util.type.Arrays.contains(assertions,question.assertions[index].name) && question.assertions[index].getParam(paramName) == defValue && (question.assertions[index].getAnswer() != "" + userAnswer || question.assertions[index].getCorrectAnswer() != "" + correctAnswer)) {
+					otherToleranceAssertions = true;
+					break;
+				}
+			}
+			if(!otherToleranceAssertions) {
+				question.setOption(paramName,value);
+				var _g1 = 0, _g = question.assertions.length;
+				while(_g1 < _g) {
+					var index = _g1++;
+					if(com.wiris.util.type.Arrays.contains(assertions,question.assertions[index].name) && question.assertions[index].getParam(paramName) == value) question.assertions[index].setParam(paramName,defValue);
+				}
+				value = defValue;
+			}
+		}
+		this.setAssertionParam(paramName,value,question,assertions,correctAnswer,userAnswer);
+	}
+	,isAssertionToleranceDigits: function(question,assertions,correctAnswer,userAnswer) {
+		var toleranceDigits = this.getOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,question,assertions,correctAnswer,userAnswer);
+		return toleranceDigits != "false";
+	}
+	,getAssertionToleranceValue: function(question,assertions,correctAnswer,userAnswer,raw) {
+		var toleranceType = this.getAssertionToleranceType(question,assertions,correctAnswer,userAnswer);
+		var paramName = null;
+		if(toleranceType == "significant_figures" || toleranceType == "decimal_places") paramName = com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS; else paramName = com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE;
+		var value = this.getOptionDefaultAssertionParam(paramName,question,assertions,correctAnswer,userAnswer);
+		if(toleranceType == "relative_tolerance" && raw != true) value = Std.parseFloat(value) * 100.0 + "";
+		return value;
+	}
+	,getAssertionToleranceType: function(question,assertions,correctAnswer,userAnswer) {
+		var relative = this.getOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,question,assertions,correctAnswer,userAnswer);
+		if(this.isAssertionToleranceDigits(question,assertions,correctAnswer,userAnswer)) return relative == "true"?"significant_figures":"decimal_places"; else return relative == "true"?"relative_tolerance":"absolute_tolerance";
+	}
+	,setAssertionToleranceValue: function(value,question,assertions,correctAnswer,userAnswer) {
+		var toleranceType = this.getAssertionToleranceType(question,assertions,correctAnswer,userAnswer);
+		var paramName = null;
+		if(toleranceType == "significant_figures" || toleranceType == "decimal_places") paramName = com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS; else {
+			paramName = com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE;
+			if(toleranceType == "relative_tolerance") value = Std.parseFloat(value) / 100.0 + "";
+		}
+		this.setOptionDefaultAssertionParam(paramName,value,question,assertions,correctAnswer,userAnswer);
+	}
+	,setAssertionToleranceType: function(value,question,assertions,correctAnswer,userAnswer) {
+		var tolVal = this.getAssertionToleranceValue(question,assertions,correctAnswer,userAnswer,false);
+		if(value == "relative_tolerance") tolVal = Std.parseFloat(tolVal) / 100.0 + "";
+		var relative = value == "relative_tolerance" || value == "significant_figures"?"true":"false";
+		this.setOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,relative,question,assertions,correctAnswer,userAnswer);
+		if(value == "significant_figures" || value == "decimal_places") {
+			this.setOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"false",question,assertions,correctAnswer,userAnswer);
+			this.setOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,tolVal,question,assertions,correctAnswer,userAnswer);
+		} else {
+			this.setOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,"false",question,assertions,correctAnswer,userAnswer);
+			this.setOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,tolVal,question,assertions,correctAnswer,userAnswer);
+		}
+	}
+	,setElementLoading: function(elem,loading) {
 		var parent = elem.parentNode;
 		if(loading) {
 			var doc = elem.ownerDocument;
@@ -5411,6 +5833,24 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 			} else this.buildPreviewCorrectAnswer();
 		} else this.buildPreviewCorrectAnswer();
 	}
+	,joinFloatFormat: function(s) {
+		return s[0] + s[1] + (s[1] == "f"?"":s[2]);
+	}
+	,splitFloatFormat: function(format) {
+		var s = new Array();
+		if(StringTools.startsWith(format,",")) {
+			s[0] = ",";
+			format = HxOverrides.substr(format,1,null);
+		} else s[0] = "";
+		if(format == "f") {
+			s[1] = "f";
+			s[2] = "r";
+		} else {
+			s[1] = "m";
+			s[2] = HxOverrides.substr(format,1,null);
+		}
+		return s;
+	}
 	,addCollapsibleFieldsets: function() {
 		var fieldsets = com.wiris.quizzes.JsDomUtils.getElementsByClassName("wiriscollapsible","fieldset",this.element);
 		var i;
@@ -5491,13 +5931,24 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 		this.updateOutputFloatingExample(question,unique);
 	}
 	,updateTolerancePrecisionWarnings: function(name,question) {
-		if(name == "wiriscassession" || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION) {
+		if(name == "tolerance_type" || name == "tolerance_value") {
+			var assertions = [com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL,com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC,com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS,com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION];
+			var tolType = this.getAssertionToleranceType(question,assertions,this.index,this.userAnswer);
+			var tolValue = this.getAssertionToleranceValue(question,assertions,this.index,this.userAnswer);
+			if(tolType == "significant_figures" || tolType == "decimal_places") {
+				this.setWarning("warningtoleranceformatfloat",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,false);
+				var warn = !com.wiris.system.TypeTools.isInteger(tolValue);
+				this.setWarning("warningtoleranceformatinteger",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,warn);
+			} else {
+				this.setWarning("warningtoleranceformatinteger",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,false);
+				var warn = !com.wiris.system.TypeTools.isFloating(tolValue) || Std.parseFloat(tolValue) <= 0;
+				this.setWarning("warningtoleranceformatfloat",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,warn);
+			}
+		}
+		if(name == "wiriscassession" || name == "tolerance_type" || name == "tolerance_value" || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION) {
 			if(this.htmlguiconf.tabVariables && this.htmlguiconf.tabCorrectAnswer && this.htmlguiconf.optOpenAnswer) {
-				var precision = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION);
-				var tolerance = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE);
-				tolerance = HxOverrides.substr(tolerance,5,tolerance.length - 6);
-				var pint = Std.parseInt(precision);
-				var tint = Std.parseInt(tolerance);
+				var pint = Std.parseInt(question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION));
+				var tint = this.getCurrentToleranceDigits();
 				var show = question.wirisCasSession != null;
 				var warn = pint == null || tint == null || pint <= tint;
 				this.setWarning("warningtoleranceprecision",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,warn && show);
@@ -5510,16 +5961,60 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 				this.setWarning("warningprecision15",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,warn);
 			}
 		}
-		if(name == "wiriscassession" || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT) {
+		if(name == "wiriscassession" || name == "tolerance_type" || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT) {
 			if(this.htmlguiconf.tabVariables && this.htmlguiconf.tabCorrectAnswer && this.htmlguiconf.optOpenAnswer) {
 				var format = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT);
 				format = format.substring(format.length - 1);
-				var relative = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE) == "true";
+				var relative = this.getCurrentRelativeTolerance();
 				var show = question.wirisCasSession != null;
 				this.setWarning("warningreltolfixedprec",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,relative && format == "f" && show);
 				this.setWarning("warningabstolfloatprec",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,!relative && format != "f" && show);
 			}
 		}
+		if(name == "wiriscassession" || name == com.wiris.quizzes.impl.Assertion.CHECK_PRECISION || name == "tolerance_type" || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT || name == com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION) {
+			if(this.htmlguiconf.tabCorrectAnswer && this.htmlguiconf.optOpenAnswer) {
+				var aindex = question.getAssertionIndex(com.wiris.quizzes.impl.Assertion.CHECK_PRECISION,"" + this.index,"" + this.userAnswer);
+				if(aindex != -1) {
+					var a = question.getAssertion(aindex);
+					var arel = a.getParam("relative") == "true";
+					var amin = a.getParam("min");
+					var amini = Std.parseInt(amin);
+					var amax = a.getParam("max");
+					var amaxi = Std.parseInt(amax);
+					var warn = amin != "" && amini == null || amax != "" && amaxi == null || amax == "" && amin == "" || amini != null && amaxi != null && amini > amaxi;
+					this.setWarning("warningcheckprecisionformat",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,warn);
+					var trel = this.getCurrentRelativeTolerance();
+					this.setWarning("warningcheckprecisionvsrelativetolerance",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,trel && !arel);
+					this.setWarning("warningcheckprecisionvsabsolutetolerance",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,!trel && arel);
+					if(this.htmlguiconf.tabVariables) {
+						var prel = !StringTools.endsWith(question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT),"f");
+						var prec = Std.parseInt(question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION));
+						var show = question.wirisCasSession != null;
+						this.setWarning("warningcheckprecisionvsfloatformat",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,prel != arel && show);
+						this.setWarning("warningcheckprecisionvsprecision",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,prec < amini && show);
+					}
+				} else if(name == com.wiris.quizzes.impl.Assertion.CHECK_PRECISION) {
+					this.setWarning("warningcheckprecisionformat",com.wiris.quizzes.JsMessageBox.MESSAGE_ERROR,false);
+					this.setWarning("warningcheckprecisionvsrelativetolerance",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,false);
+					this.setWarning("warningcheckprecisionvsabsolutetolerance",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,false);
+					this.setWarning("warningcheckprecisionvsfloatformat",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,false);
+					this.setWarning("warningcheckprecisionvsprecision",com.wiris.quizzes.JsMessageBox.MESSAGE_WARNING,false);
+				}
+			}
+		}
+	}
+	,getCurrentRelativeTolerance: function() {
+		var q = (js.Boot.__cast(this.question , com.wiris.quizzes.impl.QuestionInternal)).getImpl();
+		var assertions = [com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL,com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC,com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS,com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION];
+		var rel = this.getOptionDefaultAssertionParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,q,assertions,this.index,this.userAnswer);
+		return rel.toLowerCase() == "true";
+	}
+	,getCurrentToleranceDigits: function() {
+		var q = (js.Boot.__cast(this.question , com.wiris.quizzes.impl.QuestionInternal)).getImpl();
+		var assertions = [com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL,com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC,com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS,com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION];
+		var toleranceType = this.getAssertionToleranceType(q,assertions,this.index,this.userAnswer);
+		var toleranceValue = this.getAssertionToleranceValue(q,assertions,this.index,this.userAnswer,true);
+		if(toleranceType == "significant_figures" || toleranceType == "decimal_places") return Std.parseInt(toleranceValue); else return Math.floor(Math.log(Std.parseFloat(toleranceValue)) / 2.30258509299) + 1;
 	}
 	,addBehaviors: function(element,question,instance) {
 		var _g1 = this;
@@ -5548,7 +6043,7 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 				controller[0].setQuestionValue = (function(controller) {
 					return function(value) {
 						_g1.question.setAlgorithm(value);
-						var input = js.Boot.__cast(controller[0].jsInput , com.wiris.quizzes.JsCasInput);
+						var input = js.Boot.__cast(controller[0].jsInput , com.wiris.quizzes.JsAlgorithmInput);
 						_g1.question.setOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_STUDENT_ANSWER_PARAMETER,input.isEmpty()?"false":"true");
 					};
 				})(controller);
@@ -5560,7 +6055,8 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 				controller[0].updateInterface = (function(controller,elem) {
 					return function(value) {
 						if(com.wiris.quizzes.JsDomUtils.hasClass(elem[0],"wirisjscomponent")) {
-							var input = new com.wiris.quizzes.JsCasInput(elem[0].ownerDocument,value,true,true,_g1.t("algorithmlanguage"),_g1.t("launchwiriscas"),_g1.t("clicktoeditalgorithm"));
+							var useCalc = com.wiris.quizzes.api.QuizzesBuilder.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.CALC_ENABLED).toLowerCase() == "true";
+							var input = new com.wiris.quizzes.JsAlgorithmInput(elem[0].ownerDocument,value,true,true,_g1.t("algorithmlanguage"),_g1.t("launchwiriscas"),_g1.t("clicktoeditalgorithm"),useCalc);
 							elem[0].parentNode.replaceChild(input.element,elem[0]);
 							controller[0].jsInput = input;
 							n = elements.length;
@@ -5756,55 +6252,35 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 				var userAnswer = [isSyntactic?0:Std.parseInt(this.getIndex(elem[0].id,4))];
 				controller[0].setQuestionValue = (function(userAnswer,correctAnswer,paramName,names,elem) {
 					return function(value) {
-						var _g11 = 0;
-						while(_g11 < names[0].length) {
-							var assertionName = names[0][_g11];
-							++_g11;
-							var _g3 = 0, _g2 = question.assertions.length;
-							while(_g3 < _g2) {
-								var index = _g3++;
-								if(question.assertions[index].name == assertionName && question.assertions[index].getAnswer() == "" + userAnswer[0] && question.assertions[index].getCorrectAnswer() == "" + correctAnswer[0]) {
-									var actualName = paramName[0];
-									if(assertionName == "equivalent_function" && paramName[0] == "name") {
-										if(StringTools.startsWith(value,"#")) {
-											value = HxOverrides.substr(value,1,null);
-											elem[0].value = value;
-										}
-									} else if(paramName[0] == "list") {
-										if(assertionName == "syntax_quantity" || value != "true") question.assertions[index].setParam("nobracketslist",value);
-										value = value == "true"?"(,[":"(,[,{";
-										actualName = "groupoperators";
-									} else if(paramName[0] == "forcebrackets") {
-										value = value == "true"?"false":"true";
-										actualName = "nobracketslist";
-									} else if(paramName[0] == "comparesets") {
-										value = value == "true"?"false":"true";
-										question.assertions[index].setParam("ordermatters",value);
-										actualName = "repetitionmatters";
-									}
-									question.assertions[index].setParam(actualName,value);
+						if(paramName[0] == "tolerance_type") _g1.setAssertionToleranceType(value,question,names[0],correctAnswer[0],userAnswer[0]); else if(paramName[0] == "tolerance_value") _g1.setAssertionToleranceValue(value,question,names[0],correctAnswer[0],userAnswer[0]); else {
+							var name = paramName[0];
+							if(paramName[0] == "name" && com.wiris.util.type.Arrays.contains(names[0],"equivalent_function")) {
+								if(StringTools.startsWith(value,"#")) {
+									value = HxOverrides.substr(value,1,null);
+									elem[0].value = value;
 								}
+							} else if(name == "forcebrackets") {
+								value = value == "true"?"false":"true";
+								name = "nobracketslist";
+							} else if(name == "comparesets") {
+								value = value == "true"?"false":"true";
+								_g1.setAssertionParam("ordermatters",value,question,names[0],correctAnswer[0],userAnswer[0]);
+								name = "repetitionmatters";
 							}
+							if(name == "list") {
+								if(value != "true" && com.wiris.util.type.Arrays.contains(names[0],"syntax_quantity")) _g1.setAssertionParam("nobracketslist",value,question,["syntax_quantity"],correctAnswer[0],userAnswer[0]);
+								value = value == "true"?"(,[":"(,[,{";
+								name = "groupoperators";
+							}
+							_g1.setAssertionParam(name,value,question,names[0],correctAnswer[0],userAnswer[0]);
 						}
 					};
 				})(userAnswer,correctAnswer,paramName,names,elem);
 				controller[0].getQuestionValue = (function(userAnswer,correctAnswer,paramName,names) {
 					return function() {
 						var value;
-						var _g11 = 0;
-						while(_g11 < names[0].length) {
-							var assertionName = names[0][_g11];
-							++_g11;
-							var index = question.getAssertionIndex(assertionName,"" + correctAnswer[0],"" + userAnswer[0]);
-							if(index != -1) {
-								if(paramName[0] == "list") {
-									value = "" + Std.string(!_g1.inList("{",question.assertions[index].getParam("groupoperators")));
-									if(assertionName == "syntax_quantity" && value == "true") value = question.assertions[index].getParam("nobracketslist");
-								} else if(paramName[0] == "forcebrackets") value = question.assertions[index].getParam("nobracketslist") == "true"?"false":"true"; else if(paramName[0] == "comparesets") value = question.assertions[index].getParam("ordermatters") == "true"?"false":"true"; else value = question.assertions[index].getParam(paramName[0]);
-								return value;
-							}
-						}
-						return "";
+						if(paramName[0] == "list") value = "" + Std.string(!_g1.inList("{",_g1.getAssertionParam("groupoperators",question,names[0],correctAnswer[0],userAnswer[0]))); else if(paramName[0] == "forcebrackets") value = _g1.getAssertionParam("nobracketslist",question,names[0],correctAnswer[0],userAnswer[0]) == "true"?"false":"true"; else if(paramName[0] == "comparesets") value = _g1.getAssertionParam("ordermatters",question,names[0],correctAnswer[0],userAnswer[0]) == "true"?"false":"true"; else if(paramName[0] == "tolerance_type") value = _g1.getAssertionToleranceType(question,names[0],correctAnswer[0],userAnswer[0]); else if(paramName[0] == "tolerance_value") value = _g1.getAssertionToleranceValue(question,names[0],correctAnswer[0],userAnswer[0]); else value = _g1.getAssertionParam(paramName[0],question,names[0],correctAnswer[0],userAnswer[0]);
+						return value;
 					};
 				})(userAnswer,correctAnswer,paramName,names);
 				controller[0].updateInterface = (function(userAnswer,paramName,names,elem) {
@@ -5837,6 +6313,8 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 								}
 							}
 						}
+						if(names[0].length == 1 && names[0][0] == com.wiris.quizzes.impl.Assertion.CHECK_PRECISION) _g1.updateTolerancePrecisionWarnings(com.wiris.quizzes.impl.Assertion.CHECK_PRECISION,question);
+						if(paramName[0] == "tolerance_type" || paramName[0] == "tolerance_value") _g1.updateTolerancePrecisionWarnings(paramName[0],question);
 						if(_g1.ready) {
 							var _g2 = 0;
 							while(_g2 < names[0].length) {
@@ -6075,16 +6553,18 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 							if(_g1.correctAnswer != null) _g1.correctAnswer.setType(correctAnswerType);
 							if(_g1.ready) _g1.updateGrammar(userAnswer[0]);
 						} else if(StringTools.startsWith(assertionName[0],"check_")) {
-							var inputs = elem[0].parentNode.getElementsByTagName("input");
+							var inputs = elem[0].parentNode.getElementsByTagName("*");
 							var j;
 							var _g2 = 0, _g11 = inputs.length;
 							while(_g2 < _g11) {
 								var j1 = _g2++;
-								if(inputs[j1] != elem[0]) {
+								var nodeName = inputs[j1].nodeName.toLowerCase();
+								if((nodeName == "input" || nodeName == "select") && inputs[j1] != elem[0]) {
 									var finput = inputs[j1];
 									finput.disabled = !boolValue;
 								}
 							}
+							if(assertionName[0] == com.wiris.quizzes.impl.Assertion.CHECK_PRECISION) _g1.updateTolerancePrecisionWarnings(assertionName[0],question);
 						} else if(boolValue && StringTools.startsWith(assertionName[0],"equivalent_")) {
 							var equivFunction = assertionName[0] == "equivalent_function";
 							var paramid = "wirisassertionparam" + unique[0] + "[equivalent_function][name][" + correctAnswer[0] + "][" + userAnswer[0] + "]";
@@ -6144,12 +6624,15 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 				})(name,elem);
 			} else if(id == "wirisoption" && question != null) {
 				var name = [this.getIndex(elem[0].id,1)];
+				var unique = [this.getUniqueNumber(elem[0].id)];
 				var formelem = elem[0];
-				controller[0].setQuestionValue = (function(name) {
+				controller[0].setQuestionValue = (function(name,elem) {
 					return function(value) {
-						if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE) value = "10^(-" + value + ")"; else if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT) {
-							var prev = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT);
-							if(StringTools.startsWith(prev,",")) value = "," + value;
+						if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT) {
+							var prev = _g1.splitFloatFormat(question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT));
+							var index = _g1.getIndex(elem[0].id,2);
+							if(index == "0") prev[1] = value; else if(index == "1") prev[2] = value;
+							value = _g1.joinFloatFormat(prev);
 						} else if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR) {
 							var format = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT);
 							if(StringTools.startsWith(format,",") && value == "") question.setOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT,format.substring(1)); else if(!StringTools.startsWith(format,",") && value != "") question.setOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT,"," + format);
@@ -6157,27 +6640,48 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 						}
 						question.setOption(name[0],value);
 					};
-				})(name);
-				controller[0].getQuestionValue = (function(name) {
+				})(name,elem);
+				controller[0].getQuestionValue = (function(name,elem) {
 					return function() {
 						var value = question.getOption(name[0]);
-						if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE) value = HxOverrides.substr(value,5,value.length - 6); else if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR) {
+						if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR) {
 							var format = question.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT);
-							if(!StringTools.startsWith(format,",")) value = "";
+							var s = _g1.splitFloatFormat(format);
+							value = s[0];
 						} else if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT) {
-							if(StringTools.startsWith(value,",")) value = HxOverrides.substr(value,1,null);
+							var s = _g1.splitFloatFormat(value);
+							var index = _g1.getIndex(elem[0].id,2);
+							value = index == "0"?s[1]:s[2];
 						}
 						return value;
 					};
-				})(name);
-				controller[0].updateInterface = (function(name,elem) {
+				})(name,elem);
+				controller[0].updateInterface = (function(unique,name,elem) {
 					return function(value) {
 						_g1.updateTolerancePrecisionWarnings(name[0],question);
 						if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION || name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT || name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_DECIMAL_SEPARATOR || name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR) {
 							if(_g1.htmlguiconf.tabVariables) _g1.updateOutputFloatingExample(question,_g1.getUniqueNumber(elem[0].id));
 						}
+						if(name[0] == com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT) {
+							var index = _g1.getIndex(elem[0].id,2);
+							if(index == "0") {
+								var doc = elem[0].ownerDocument;
+								var id1 = "wirisoption" + unique[0] + "[" + com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT + "][1]";
+								var input = doc.getElementById(id1);
+								if(value == "f") {
+									input.options[0].disabled = true;
+									input.options[1].selected = true;
+									input.options[2].disabled = true;
+								} else {
+									input.options[0].disabled = false;
+									input.options[0].selected = true;
+									input.options[2].disabled = false;
+									_g1.getController(id1).updateInputValue();
+								}
+							}
+						}
 					};
-				})(name,elem);
+				})(unique,name,elem);
 			} else if(id == "wirisanswer") {
 				controller[0].updateInterface = (function(elem) {
 					return function(value) {
@@ -6556,10 +7060,13 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 		this.controllers = new Array();
 		this.controllersMap = new Hash();
 		var qimpl = (js.Boot.__cast(q , com.wiris.quizzes.impl.QuestionInternal)).getImpl();
-		if(qimpl.isDeprecated()) {
-			var confirm = this.getOwnerWindow().confirm(this.t("confirmimportdeprecated"));
+		var win = this.getOwnerWindow();
+		var dep = qimpl.isDeprecated();
+		if(dep != com.wiris.quizzes.impl.QuestionImpl.NO_DEPRECATED) {
+			var confirm = false;
+			if(dep == com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_COMPATIBLE) confirm = true; else if(dep == com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_NEEDS_CHECK) confirm = win.confirm(this.t("confirmimportdeprecated"));
 			if(confirm) qimpl.importDeprecated(); else {
-				this.getOwnerWindow().close();
+				win.close();
 				return;
 			}
 		}
@@ -6583,6 +7090,11 @@ com.wiris.quizzes.JsStudio.prototype = $extend(com.wiris.quizzes.JsInput.prototy
 			var content = new com.wiris.quizzes.JsContainer(d);
 			content.element.innerHTML = this.htmlgui.getTabPreview(qimpl,qi,this.index,this.userAnswer,0,this.htmlguiconf);
 			this.tabs.addTab(this.t("preview"),content,this.t("testtabhelp"));
+		}
+		var useCalc = com.wiris.quizzes.api.QuizzesBuilder.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.CALC_ENABLED).toLowerCase();
+		if(this.htmlguiconf.tabVariables && useCalc == "true") {
+			var calcUrl = com.wiris.quizzes.api.QuizzesBuilder.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.CALC_URL) + "/wiriscalc";
+			com.wiris.quizzes.JsDomUtils.addScript(d,win,calcUrl);
 		}
 	}
 	,ctrlshiftx: null
@@ -6657,7 +7169,8 @@ com.wiris.quizzes.api.AssertionCheck.prototype = {
 com.wiris.quizzes.api.Configuration = $hxClasses["com.wiris.quizzes.api.Configuration"] = function() { }
 com.wiris.quizzes.api.Configuration.__name__ = ["com","wiris","quizzes","api","Configuration"];
 com.wiris.quizzes.api.Configuration.prototype = {
-	get: null
+	set: null
+	,get: null
 	,__class__: com.wiris.quizzes.api.Configuration
 }
 com.wiris.quizzes.api.ConfigurationKeys = $hxClasses["com.wiris.quizzes.api.ConfigurationKeys"] = function() { }
@@ -6709,6 +7222,8 @@ com.wiris.quizzes.api.QuestionInstance.__name__ = ["com","wiris","quizzes","api"
 com.wiris.quizzes.api.QuestionInstance.__interfaces__ = [com.wiris.quizzes.api.Serializable];
 com.wiris.quizzes.api.QuestionInstance.prototype = {
 	setParameter: null
+	,getProperty: null
+	,setProperty: null
 	,areVariablesReady: null
 	,getAssertionChecks: null
 	,getStudentAnswersLength: null
@@ -6981,19 +7496,19 @@ com.wiris.quizzes.impl.Assertion.paramdefault = null;
 com.wiris.quizzes.impl.Assertion.paramnames = null;
 com.wiris.quizzes.impl.Assertion.initParams = function() {
 	com.wiris.quizzes.impl.Assertion.paramnames = new Hash();
-	com.wiris.quizzes.impl.Assertion.paramnames.set("syntax_expression",["constants","functions","listoperators","groupoperators","itemseparators","decimalseparators","digitgroupseparators","nobracketslist","intervals","textlogicoperators"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("syntax_list",["constants","functions"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("syntax_quantity",["constants","units","unitprefixes","groupoperators","mixedfractions","itemseparators","decimalseparators","digitgroupseparators","nobracketslist"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("check_divisible",["value"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("check_unit",["unit"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("check_unit_literal",["unit"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("check_no_more_decimals",["digits"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("check_no_more_digits",["digits"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("equivalent_function",["name"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("equivalent_symbolic",["ordermatters"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("equivalent_symbolic",["repetitionmatters"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("equivalent_literal",["ordermatters"]);
-	com.wiris.quizzes.impl.Assertion.paramnames.set("equivalent_literal",["repetitionmatters"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.SYNTAX_EXPRESSION,["constants","functions","listoperators","groupoperators","itemseparators","decimalseparators","digitgroupseparators","nobracketslist","intervals","textlogicoperators"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.SYNTAX_LIST,["constants","functions"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.SYNTAX_QUANTITY,["constants","units","unitprefixes","groupoperators","mixedfractions","itemseparators","decimalseparators","digitgroupseparators","nobracketslist"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.CHECK_DIVISIBLE,["value"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.CHECK_UNIT,["unit"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.CHECK_UNIT_LITERAL,["unit"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS,["digits"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS,["digits"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.CHECK_PRECISION,["min","max","relative"]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION,["name",com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC,["ordermatters","repetitionmatters",com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL,["ordermatters","repetitionmatters",com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE]);
+	com.wiris.quizzes.impl.Assertion.paramnames.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS,[com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE]);
 	var paramvalues;
 	com.wiris.quizzes.impl.Assertion.paramdefault = new Hash();
 	var constantsExpression = com.wiris.system.Utf8.uchr(960) + ", e, i, j";
@@ -7010,11 +7525,11 @@ com.wiris.quizzes.impl.Assertion.initParams = function() {
 	paramvalues.set("digitgroupseparators","");
 	paramvalues.set("nobracketslist","false");
 	paramvalues.set("intervals","false");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("syntax_expression",paramvalues);
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.SYNTAX_EXPRESSION,paramvalues);
 	paramvalues = new Hash();
 	paramvalues.set("constants",constantsExpression);
 	paramvalues.set("functions",functions);
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("syntax_list",paramvalues);
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.SYNTAX_LIST,paramvalues);
 	var constantsQuantity = com.wiris.system.Utf8.uchr(960) + ", i, j";
 	paramvalues = new Hash();
 	paramvalues.set("constants",constantsQuantity);
@@ -7027,33 +7542,52 @@ com.wiris.quizzes.impl.Assertion.initParams = function() {
 	paramvalues.set("decimalseparators","', " + com.wiris.system.Utf8.uchr(180) + ", ., \\,");
 	paramvalues.set("digitgroupseparators","");
 	paramvalues.set("nobracketslist","false");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("syntax_quantity",paramvalues);
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.SYNTAX_QUANTITY,paramvalues);
 	paramvalues = new Hash();
 	paramvalues.set("ordermatters","true");
 	paramvalues.set("repetitionmatters","true");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("equivalent_symbolic",paramvalues);
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,"");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC,paramvalues);
 	paramvalues = new Hash();
 	paramvalues.set("ordermatters","true");
 	paramvalues.set("repetitionmatters","true");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("equivalent_literal",paramvalues);
-	paramvalues = new Hash();
-	paramvalues.set("value","");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("check_divisible",paramvalues);
-	paramvalues = new Hash();
-	paramvalues.set("unit","");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("check_unit",paramvalues);
-	paramvalues = new Hash();
-	paramvalues.set("unit","");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("check_unit_literal",paramvalues);
-	paramvalues = new Hash();
-	paramvalues.set("digits","");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("check_no_more_decimals",paramvalues);
-	paramvalues = new Hash();
-	paramvalues.set("digits","");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("check_no_more_digits",paramvalues);
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,"");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL,paramvalues);
 	paramvalues = new Hash();
 	paramvalues.set("name","");
-	com.wiris.quizzes.impl.Assertion.paramdefault.set("equivalent_function",paramvalues);
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,"");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,"");
+	paramvalues.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,"");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set("value","");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.CHECK_DIVISIBLE,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set("unit","");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.CHECK_UNIT,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set("unit","");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.CHECK_UNIT_LITERAL,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set("digits","");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set("digits","");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS,paramvalues);
+	paramvalues = new Hash();
+	paramvalues.set("min","");
+	paramvalues.set("max","");
+	paramvalues.set("relative","true");
+	com.wiris.quizzes.impl.Assertion.paramdefault.set(com.wiris.quizzes.impl.Assertion.CHECK_PRECISION,paramvalues);
 }
 com.wiris.quizzes.impl.Assertion.getParameterNames = function(name) {
 	if(com.wiris.quizzes.impl.Assertion.paramnames == null) com.wiris.quizzes.impl.Assertion.initParams();
@@ -7065,31 +7599,12 @@ com.wiris.quizzes.impl.Assertion.getParameterDefaultValue = function(assertion,p
 	if(com.wiris.quizzes.impl.Assertion.paramdefault.exists(assertion) && com.wiris.quizzes.impl.Assertion.paramdefault.get(assertion).exists(parameter)) value = com.wiris.quizzes.impl.Assertion.paramdefault.get(assertion).get(parameter); else value = "";
 	return value;
 }
-com.wiris.quizzes.impl.Assertion.inArray = function(e,a) {
-	var i;
-	var _g1 = 0, _g = a.length;
-	while(_g1 < _g) {
-		var i1 = _g1++;
-		if(e == a[i1]) return true;
-	}
-	return false;
-}
 com.wiris.quizzes.impl.Assertion.isSyntacticName = function(name) {
-	return com.wiris.quizzes.impl.Assertion.inArray(name,com.wiris.quizzes.impl.Assertion.syntactic);
+	return com.wiris.util.type.Arrays.containsArray(com.wiris.quizzes.impl.Assertion.syntactic,name);
 }
 com.wiris.quizzes.impl.Assertion.__super__ = com.wiris.util.xml.SerializableImpl;
 com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.SerializableImpl.prototype,{
-	copyArrayInt: function(a) {
-		var b = new Array();
-		var i;
-		var _g1 = 0, _g = a.length;
-		while(_g1 < _g) {
-			var i1 = _g1++;
-			b[i1] = a[i1];
-		}
-		return b;
-	}
-	,copyArrayString: function(a) {
+	copyArrayString: function(a) {
 		var b = new Array();
 		var i;
 		var _g1 = 0, _g = a.length;
@@ -7121,31 +7636,13 @@ com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.Serializ
 		return a;
 	}
 	,isCheck: function() {
-		return com.wiris.quizzes.impl.Assertion.inArray(this.name,com.wiris.quizzes.impl.Assertion.checks);
+		return com.wiris.util.type.Arrays.containsArray(com.wiris.quizzes.impl.Assertion.checks,this.name) || com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS == this.name || com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS == this.name;
 	}
 	,isEquivalence: function() {
-		return com.wiris.quizzes.impl.Assertion.inArray(this.name,com.wiris.quizzes.impl.Assertion.equivalent) || com.wiris.quizzes.impl.Assertion.EQUIVALENT_SET == this.name;
+		return com.wiris.util.type.Arrays.containsArray(com.wiris.quizzes.impl.Assertion.equivalent,this.name) || com.wiris.quizzes.impl.Assertion.EQUIVALENT_SET == this.name;
 	}
 	,isSyntactic: function() {
 		return com.wiris.quizzes.impl.Assertion.isSyntacticName(this.name);
-	}
-	,inIntArray: function(e,a) {
-		var i;
-		var _g1 = 0, _g = a.length;
-		while(_g1 < _g) {
-			var i1 = _g1++;
-			if(e == a[i1]) return true;
-		}
-		return false;
-	}
-	,inStringArray: function(e,a) {
-		var i;
-		var _g1 = 0, _g = a.length;
-		while(_g1 < _g) {
-			var i1 = _g1++;
-			if(e == a[i1]) return true;
-		}
-		return false;
 	}
 	,equalLists: function(a,b) {
 		var aa = a.split(",");
@@ -7155,7 +7652,7 @@ com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.Serializ
 		var _g1 = 0, _g = aa.length;
 		while(_g1 < _g) {
 			var i1 = _g1++;
-			if(!com.wiris.quizzes.impl.Assertion.inArray(aa[i1],bb)) return false;
+			if(!com.wiris.util.type.Arrays.containsArray(bb,aa[i1])) return false;
 		}
 		return true;
 	}
@@ -7181,13 +7678,7 @@ com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.Serializ
 	}
 	,setParam: function(name,value) {
 		if(this.parameters == null) this.parameters = new Array();
-		if(this.isDefaultParameterValue(name,value)) {
-			var j = this.parameters.length - 1;
-			while(j >= 0) {
-				if(this.parameters[j].name == name) HxOverrides.remove(this.parameters,this.parameters[j]);
-				j--;
-			}
-		} else {
+		if(this.isDefaultParameterValue(name,value)) this.removeParam(name); else {
 			var found = false;
 			var i;
 			var _g1 = 0, _g = this.parameters.length;
@@ -7208,6 +7699,13 @@ com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.Serializ
 			}
 		}
 	}
+	,removeParam: function(name) {
+		var j = this.parameters.length - 1;
+		while(j >= 0) {
+			if(this.parameters[j].name == name) HxOverrides.remove(this.parameters,this.parameters[j]);
+			j--;
+		}
+	}
 	,getAnswers: function() {
 		if(this.answer != null) return this.answer; else return new Array();
 	}
@@ -7216,7 +7714,7 @@ com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.Serializ
 	}
 	,addAnswer: function(a) {
 		var current = this.getAnswers();
-		if(!this.inStringArray(a,current)) {
+		if(!com.wiris.util.type.Arrays.containsArray(current,a)) {
 			var newa = new Array();
 			var i;
 			var _g1 = 0, _g = current.length;
@@ -7258,14 +7756,14 @@ com.wiris.quizzes.impl.Assertion.prototype = $extend(com.wiris.util.xml.Serializ
 		}
 	}
 	,hasAnswer: function(a) {
-		return this.inStringArray(a,this.getAnswers());
+		return com.wiris.util.type.Arrays.containsArray(this.getAnswers(),a);
 	}
 	,hasCorrectAnswer: function(ca) {
-		return this.inStringArray(ca,this.getCorrectAnswers());
+		return com.wiris.util.type.Arrays.containsArray(this.getCorrectAnswers(),ca);
 	}
 	,addCorrectAnswer: function(ca) {
 		var current = this.getCorrectAnswers();
-		if(!this.inStringArray(ca,current)) {
+		if(!com.wiris.util.type.Arrays.containsArray(current,ca)) {
 			var newca = new Array();
 			var i;
 			var _g1 = 0, _g = current.length;
@@ -7486,6 +7984,7 @@ com.wiris.quizzes.impl.ClasspathLoader.registerClass = function(path,file) {
 com.wiris.quizzes.impl.ConfigurationImpl = $hxClasses["com.wiris.quizzes.impl.ConfigurationImpl"] = function() {
 	this.properties = new Hash();
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.WIRIS_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_WIRIS_URL);
+	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.CALC_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_CALC_URL);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_EDITOR_URL);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HAND_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HAND_URL);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.SERVICE_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_SERVICE_URL);
@@ -7498,12 +7997,15 @@ com.wiris.quizzes.impl.ConfigurationImpl = $hxClasses["com.wiris.quizzes.impl.Co
 	this.properties.set(com.wiris.quizzes.impl.ConfigurationImpl.IMAGESCACHE_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.DEF_IMAGESCACHE_CLASS);
 	this.properties.set(com.wiris.quizzes.impl.ConfigurationImpl.VARIABLESCACHE_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.DEF_VARIABLESCACHE_CLASS);
 	this.properties.set(com.wiris.quizzes.impl.ConfigurationImpl.LOCKPROVIDER_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.DEF_LOCKPROVIDER_CLASS);
+	this.properties.set(com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.DEF_ACCESSPROVIDER_CLASS);
+	this.properties.set(com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASSPATH,com.wiris.quizzes.impl.ConfigurationImpl.DEF_ACCESSPROVIDER_CLASSPATH);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_HOST,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HTTPPROXY_HOST);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PORT,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HTTPPROXY_PORT);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_USER,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HTTPPROXY_USER);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PASS,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HTTPPROXY_PASS);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.REFERER_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_REFERER_URL);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HAND_ENABLED,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HAND_ENABLED);
+	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.CALC_ENABLED,com.wiris.quizzes.impl.ConfigurationImpl.DEF_CALC_ENABLED);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.SERVICE_OFFLINE,com.wiris.quizzes.impl.ConfigurationImpl.DEF_SERVICE_OFFLINE);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.HAND_LOGTRACES,com.wiris.quizzes.impl.ConfigurationImpl.DEF_HAND_LOGTRACES);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.WIRISLAUNCHER_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_WIRISLAUNCHER_URL);
@@ -7511,6 +8013,7 @@ com.wiris.quizzes.impl.ConfigurationImpl = $hxClasses["com.wiris.quizzes.impl.Co
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_STATIC,com.wiris.quizzes.impl.ConfigurationImpl.DEF_RESOURCES_STATIC);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_RESOURCES_URL);
 	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.GRAPH_URL,com.wiris.quizzes.impl.ConfigurationImpl.DEF_GRAPH_URL);
+	this.properties.set(com.wiris.quizzes.api.ConfigurationKeys.VERSION,com.wiris.quizzes.impl.ConfigurationImpl.DEF_VERSION);
 	if(!com.wiris.settings.PlatformSettings.IS_JAVASCRIPT) {
 		try {
 			var s = com.wiris.system.Storage.newStorage(com.wiris.quizzes.impl.ConfigurationImpl.DEF_DIST_CONFIG_FILE);
@@ -7526,7 +8029,7 @@ com.wiris.quizzes.impl.ConfigurationImpl = $hxClasses["com.wiris.quizzes.impl.Co
 		var className = this.get(com.wiris.quizzes.impl.ConfigurationImpl.CONFIG_CLASS);
 		if(!(className == "")) try {
 			var config = js.Boot.__cast(Type.createInstance(Type.resolveClass(className),new Array()) , com.wiris.quizzes.api.Configuration);
-			var keys = [com.wiris.quizzes.api.ConfigurationKeys.WIRIS_URL,com.wiris.quizzes.api.ConfigurationKeys.WIRISLAUNCHER_URL,com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL,com.wiris.quizzes.api.ConfigurationKeys.HAND_URL,com.wiris.quizzes.api.ConfigurationKeys.SERVICE_URL,com.wiris.quizzes.api.ConfigurationKeys.PROXY_URL,com.wiris.quizzes.api.ConfigurationKeys.CACHE_DIR,com.wiris.quizzes.api.ConfigurationKeys.MAXCONNECTIONS,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_HOST,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PORT,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_USER,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PASS,com.wiris.quizzes.api.ConfigurationKeys.REFERER_URL,com.wiris.quizzes.api.ConfigurationKeys.HAND_ENABLED,com.wiris.quizzes.api.ConfigurationKeys.HAND_LOGTRACES,com.wiris.quizzes.api.ConfigurationKeys.SERVICE_OFFLINE,com.wiris.quizzes.api.ConfigurationKeys.CROSSORIGINCALLS_ENABLED,com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_STATIC,com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL,com.wiris.quizzes.api.ConfigurationKeys.GRAPH_URL,com.wiris.quizzes.impl.ConfigurationImpl.IMAGESCACHE_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.VARIABLESCACHE_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.LOCKPROVIDER_CLASS];
+			var keys = [com.wiris.quizzes.api.ConfigurationKeys.WIRIS_URL,com.wiris.quizzes.api.ConfigurationKeys.WIRISLAUNCHER_URL,com.wiris.quizzes.api.ConfigurationKeys.CALC_URL,com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL,com.wiris.quizzes.api.ConfigurationKeys.HAND_URL,com.wiris.quizzes.api.ConfigurationKeys.SERVICE_URL,com.wiris.quizzes.api.ConfigurationKeys.PROXY_URL,com.wiris.quizzes.api.ConfigurationKeys.CACHE_DIR,com.wiris.quizzes.api.ConfigurationKeys.MAXCONNECTIONS,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_HOST,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PORT,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_USER,com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PASS,com.wiris.quizzes.api.ConfigurationKeys.REFERER_URL,com.wiris.quizzes.api.ConfigurationKeys.HAND_ENABLED,com.wiris.quizzes.api.ConfigurationKeys.CALC_ENABLED,com.wiris.quizzes.api.ConfigurationKeys.HAND_LOGTRACES,com.wiris.quizzes.api.ConfigurationKeys.SERVICE_OFFLINE,com.wiris.quizzes.api.ConfigurationKeys.CROSSORIGINCALLS_ENABLED,com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_STATIC,com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL,com.wiris.quizzes.api.ConfigurationKeys.GRAPH_URL,com.wiris.quizzes.impl.ConfigurationImpl.IMAGESCACHE_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.VARIABLESCACHE_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.LOCKPROVIDER_CLASS,com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASS];
 			var i;
 			var _g1 = 0, _g = keys.length;
 			while(_g1 < _g) {
@@ -7543,6 +8046,11 @@ com.wiris.quizzes.impl.ConfigurationImpl = $hxClasses["com.wiris.quizzes.impl.Co
 			this.setAll(ini.getProperties());
 		} catch( e ) {
 			throw "Could not read configuration file \"" + file + "\".";
+		}
+		var vs = com.wiris.system.Storage.newResourceStorage(com.wiris.quizzes.impl.ConfigurationImpl.DEF_VERSION_FILE);
+		if(vs.exists()) {
+			var version = vs.read();
+			this.set(com.wiris.quizzes.api.ConfigurationKeys.VERSION,version);
 		}
 	}
 };
@@ -7565,6 +8073,7 @@ com.wiris.quizzes.impl.ConfigurationImpl.prototype = {
 		var sb = new StringBuf();
 		var prefix = "com.wiris.quizzes.impl.ConfigurationImpl.";
 		sb.b += Std.string(prefix + "DEF_WIRIS_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.WIRIS_URL)) + "\";\n");
+		sb.b += Std.string(prefix + "DEF_CALC_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.CALC_URL)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_EDITOR_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_HAND_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.HAND_URL)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_SERVICE_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.SERVICE_URL)) + "\";\n");
@@ -7572,6 +8081,7 @@ com.wiris.quizzes.impl.ConfigurationImpl.prototype = {
 		sb.b += Std.string(prefix + "DEF_CACHE_DIR" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.CACHE_DIR)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_MAXCONNECTIONS" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.MAXCONNECTIONS)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_HAND_ENABLED" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.HAND_ENABLED)) + "\";\n");
+		sb.b += Std.string(prefix + "DEF_CALC_ENABLED" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.CALC_ENABLED)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_SERVICE_OFFLINE" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.SERVICE_OFFLINE)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_WIRISLAUNCHER_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.WIRISLAUNCHER_URL)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_CROSSORIGINCALLS_ENABLED" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.CROSSORIGINCALLS_ENABLED)) + "\";\n");
@@ -7579,6 +8089,7 @@ com.wiris.quizzes.impl.ConfigurationImpl.prototype = {
 		sb.b += Std.string(prefix + "DEF_RESOURCES_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_HAND_LOGTRACES" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.HAND_LOGTRACES)) + "\";\n");
 		sb.b += Std.string(prefix + "DEF_GRAPH_URL" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.GRAPH_URL)) + "\";\n");
+		sb.b += Std.string(prefix + "DEF_VERSION" + " = \"" + this.jsEscape(this.get(com.wiris.quizzes.api.ConfigurationKeys.VERSION)) + "\";\n");
 		return sb.b;
 	}
 	,set: function(key,value) {
@@ -8072,22 +8583,34 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 		start = session.indexOf("\"",start) + 1;
 		return HxOverrides.substr(session,start,2);
 	}
+	,getPrecisionFeedback: function(a) {
+		var feedback = null;
+		var min = a.getParam("min");
+		var max = a.getParam("max");
+		if("" == min && "" == max) feedback = ""; else if("" == min && !("" == max)) feedback = this.t.t("check_precision_correct_feedback_max"); else if(!("" == min) && "" == max) feedback = this.t.t("check_precision_correct_feedback_min"); else if(min == max) feedback = this.t.t("check_precision_correct_feedback_equal"); else feedback = this.t.t("check_precision_correct_feedback");
+		feedback = StringTools.replace(feedback,"${min}",min);
+		feedback = StringTools.replace(feedback,"${max}",max);
+		feedback = StringTools.replace(feedback,"${relative}",a.getParam("relative") == "true"?this.t.t("significantfigures"):this.t.t("decimalplaces"));
+		return feedback;
+	}
 	,printAssertionFeedback: function(h,c,q) {
 		var gradeClass = this.getGradeClass(c.value);
 		var typeClass = HxOverrides.substr(c.assertion,0,c.assertion.indexOf("_"));
 		h.openSpan(null,gradeClass + " " + typeClass);
-		var feedback = this.t.t(c.assertion + "_correct_feedback");
 		var index = q.getAssertionIndex(c.assertion,c.getCorrectAnswer(),c.getAnswer());
+		var feedback = this.t.t(c.assertion + "_correct_feedback");
 		if(index != -1) {
 			var a = q.assertions[index];
 			if(a.parameters != null) {
-				var i;
-				var _g1 = 0, _g = a.parameters.length;
-				while(_g1 < _g) {
-					var i1 = _g1++;
-					var name = a.parameters[i1].name;
-					var value = a.parameters[i1].content;
-					feedback = StringTools.replace(feedback,"${" + name + "}",value);
+				if(a.name == com.wiris.quizzes.impl.Assertion.CHECK_PRECISION) feedback = this.getPrecisionFeedback(a); else {
+					var i;
+					var _g1 = 0, _g = a.parameters.length;
+					while(_g1 < _g) {
+						var i1 = _g1++;
+						var name = a.parameters[i1].name;
+						var value = a.parameters[i1].content;
+						feedback = StringTools.replace(feedback,"${" + name + "}",value);
+					}
 				}
 			}
 		}
@@ -8148,7 +8671,6 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 	}
 	,getWirisTestDynamic: function(q,qi,correctAnswer,userAnswer,unique) {
 		var h = new com.wiris.quizzes.impl.HTML();
-		var hasCorrectAnswer = q.correctAnswers != null && correctAnswer < q.correctAnswers.length;
 		h.openDivClass("wiristestresult" + unique,"wiristestresult");
 		h.openDivClass("wiristestassertions" + unique,"wiristestassertions");
 		h.openDivClass("wiristestassertionslistwrapper","wiristestassertionslistwrapper");
@@ -8158,12 +8680,10 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 		h.openDivClass("wiristestcorrectanswer" + unique + "[" + correctAnswer + "]","wiristestcorrectanswer");
 		h.openDivClass(null,"wirisfieldsetwrapper");
 		h.openFieldset("wiristestcorrectanswerfieldset" + unique,this.t.t("correctanswer"),"wirismainfieldset wiristestcorrectanswerfieldset");
-		if(hasCorrectAnswer) {
-			h.open("span",[["id","wiriscorrectanswerlabel"],["class","mathml wiriscorrectanswerlabel"]]);
-			h.close();
-			h.input("button","wirisfillwithcorrectbutton",null,null,this.t.t("fillwithcorrect"),"wirisfillwithcorrectbutton");
-			h.input("button","wirisrefreshbutton",null,null,this.t.t("refresh"),"wirisrefreshbutton");
-		}
+		h.open("span",[["id","wiriscorrectanswerlabel"],["class","mathml wiriscorrectanswerlabel"]]);
+		h.close();
+		h.input("button","wirisfillwithcorrectbutton",null,null,this.t.t("fillwithcorrect"),"wirisfillwithcorrectbutton");
+		h.input("button","wirisrefreshbutton",null,null,this.t.t("refresh"),"wirisrefreshbutton");
 		h.close();
 		h.close();
 		h.close();
@@ -8195,13 +8715,15 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 		h.openFieldset("wiriscomparisonfieldset" + unique + answers,this.t.t("comparisonwithstudentanswer"),"wirismainfieldset wiriscomparisonfieldset");
 		h.help("wiriscomparisonhelp" + unique,"http://www.wiris.com/quizzes/docs/moodle/manual/validation#comparison",this.t.t("manual"));
 		h.openDivClass("wiristolerance" + unique,"wiristolerance");
-		var idtol = "wirisoption" + unique + "[" + com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE + "]";
-		h.label(this.t.t("tolerancedigits") + ":",idtol,"wirisleftlabel2");
+		var idtolPrefix = "wirisassertionparam" + unique + "[" + com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL + "," + com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC + "," + com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS + "," + com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION + "]";
+		var idTolValue = idtolPrefix + "[tolerance_value]" + answers;
+		h.label(this.t.t("tolerance") + ":",idTolValue,"wirisleftlabel2");
 		h.text(" ");
-		h.input("text",idtol,"",null,null,null);
-		var idRelTol = "wirisoption" + unique + "[" + com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE + "]";
-		h.input("checkbox",idRelTol,"",null,null,null);
-		h.label(this.t.t("relative"),idRelTol,null);
+		h.input("text",idTolValue,"",null,null,"wirissmalltextfield");
+		h.text(" ");
+		var idTolType = idtolPrefix + "[tolerance_type]" + answers;
+		var toleranceTypes = [["relative_tolerance",this.t.t("percenterror")],["absolute_tolerance",this.t.t("absoluteerror")],["significant_figures",this.t.t("significantfigures")],["decimal_places",this.t.t("decimalplaces")]];
+		h.select(idTolType,"",toleranceTypes);
 		h.close();
 		h.openUl("wiriscomparison" + unique + answers,"wirisul");
 		var i;
@@ -8270,18 +8792,35 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 		var _g1 = 0, _g = com.wiris.quizzes.impl.Assertion.checks.length;
 		while(_g1 < _g) {
 			var i1 = _g1++;
+			var aname = com.wiris.quizzes.impl.Assertion.checks[i1];
 			h.openLi();
-			idassertion = "wirisassertion" + unique + "[" + com.wiris.quizzes.impl.Assertion.checks[i1] + "]" + answers;
+			idassertion = "wirisassertion" + unique + "[" + aname + "]" + answers;
 			h.input("checkbox",idassertion,null,null,null,null);
-			h.label(this.t.t(com.wiris.quizzes.impl.Assertion.checks[i1]),idassertion,null);
-			var parameters = com.wiris.quizzes.impl.Assertion.getParameterNames(com.wiris.quizzes.impl.Assertion.checks[i1]);
+			h.label(this.t.t(aname),idassertion,null);
+			var parameters = com.wiris.quizzes.impl.Assertion.getParameterNames(aname);
 			if(parameters != null) {
-				var j;
-				var _g3 = 0, _g2 = parameters.length;
-				while(_g3 < _g2) {
-					var j1 = _g3++;
+				if(aname == com.wiris.quizzes.impl.Assertion.CHECK_PRECISION) {
+					var idparam = "wirisassertionparam" + unique + "[" + aname + "][" + parameters[0] + "]" + answers;
 					h.text(" ");
-					h.input("text","wirisassertionparam" + unique + "[" + com.wiris.quizzes.impl.Assertion.checks[i1] + "][" + parameters[j1] + "]" + answers,null,null,null,null);
+					h.label(this.t.t("fromprecision"),idparam,null);
+					h.text(" ");
+					h.input("text",idparam,null,null,null,"wirisintinputbox");
+					idparam = "wirisassertionparam" + unique + "[" + aname + "][" + parameters[1] + "]" + answers;
+					h.text(" ");
+					h.label(this.t.t("toprecision"),idparam,null);
+					h.text(" ");
+					h.input("text",idparam,null,null,null,"wirisintinputbox");
+					idparam = "wirisassertionparam" + unique + "[" + aname + "][" + parameters[2] + "]" + answers;
+					h.text(" ");
+					h.select(idparam,null,[["true",this.t.t("significantfigures")],["false",this.t.t("decimalplaces")]]);
+				} else {
+					var j;
+					var _g3 = 0, _g2 = parameters.length;
+					while(_g3 < _g2) {
+						var j1 = _g3++;
+						h.text(" ");
+						h.input("text","wirisassertionparam" + unique + "[" + aname + "][" + parameters[j1] + "]" + answers,null,null,null,"wirissmalltextfield");
+					}
 				}
 			}
 			h.close();
@@ -8429,7 +8968,7 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 				} else if(ap.content == com.wiris.quizzes.impl.Assertion.getParameterDefaultValue(a.name,ap.name)) {
 				} else {
 					if(count > 0) sb.b += Std.string("; ");
-					sb.b += Std.string(this.shortenText(ap.content,Math.floor(Math.round(chars / 3.0))));
+					sb.b += Std.string(this.shortenText(ap.content,Math.round(chars / 3.0) | 0));
 					count++;
 				}
 			}
@@ -8470,7 +9009,10 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 		h.label(this.t.t(com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION),id,"wirisleftlabel");
 		h.close();
 		h.openTd(null);
-		h.input("text",id,null,null,null,"wirissmalltextfield");
+		h.input("text",id,null,null,null,"wirisintinputbox");
+		h.text(" ");
+		id = "wirisoption" + unique + "[" + com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT + "]";
+		h.select(id + "[0]",null,[["m",this.t.t("significantfigures")],["f",this.t.t("decimalplaces")]]);
 		h.openSpan("wirisfloatingexample" + unique,"wirisfloatingexample");
 		h.text(this.t.t("example") + ":");
 		h.openSpan("wirisfloatingexamplewrapper" + unique,null);
@@ -8480,11 +9022,10 @@ com.wiris.quizzes.impl.HTMLGui.prototype = {
 		h.close();
 		h.openTr(null);
 		h.openTd("wirisleftlabellist");
-		id = "wirisoption" + unique + "[" + com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT + "]";
-		h.label(this.t.t("notation"),id,"wirisleftlabel");
+		h.label(this.t.t("notation"),id + "[1]","wirisleftlabel");
 		h.close();
 		h.openTd(null);
-		h.select(id,null,[["mg",this.t.t("auto")],["mr",this.t.t("floatingDecimal")],["f",this.t.t("fixedDecimal")],["me",this.t.t("scientific")]]);
+		h.select(id + "[1]",null,[["g",this.t.t("auto")],["r",this.t.t("floatingDecimal")],["e",this.t.t("scientific")]]);
 		id = "wirisoption" + unique + "[" + com.wiris.quizzes.api.QuizzesConstants.OPTION_DECIMAL_SEPARATOR + "]";
 		h.label(this.t.t("decimalSeparator"),null,"wirisleftlabel wirissecondlabel");
 		h.select(id,null,[[".",this.t.t("point")],[",",this.t.t("comma")]]);
@@ -9831,29 +10372,91 @@ com.wiris.quizzes.impl.HTMLTools.casSessionLang = function(value) {
 	start = value.indexOf("\"",start) + 1;
 	return HxOverrides.substr(value,start,2);
 }
+com.wiris.quizzes.impl.HTMLTools.isCalc = function(session) {
+	if(session == null) return false;
+	var i = session.indexOf("<wiriscalc");
+	if(i > -1) return true;
+	var start = session.indexOf("<session");
+	var end = session.indexOf(">",start);
+	start = session.indexOf("version",start);
+	if(start > end) return false;
+	start = session.indexOf("\"",start);
+	end = session.indexOf("\"",start + 1);
+	var version = HxOverrides.substr(session,start + 1,end - start - 1);
+	version = HxOverrides.substr(version,0,version.indexOf("."));
+	var num = Std.parseInt(version);
+	return num >= 3;
+}
+com.wiris.quizzes.impl.HTMLTools.calcSessionLang = function(value) {
+	var lang = com.wiris.quizzes.impl.HTMLTools.casSessionLang(value);
+	if(lang == null) {
+		var start = value.indexOf("<properties");
+		var end = value.indexOf("</properties>",start);
+		start = value.indexOf("<property name=\"lang\"",start);
+		if(end >= start) return null;
+		start = value.indexOf(">",start) + 1;
+		end = value.indexOf("</property>",start);
+		lang = HxOverrides.substr(value,start,end - start);
+	}
+	return lang;
+}
+com.wiris.quizzes.impl.HTMLTools.stripConstructionsFromCalcSession = function(calcSession) {
+	if(com.wiris.quizzes.impl.HTMLTools.isCalc(calcSession)) {
+		var start = calcSession.indexOf("<wiriscalc");
+		var end = calcSession.indexOf("</wiriscalc>",start);
+		start = calcSession.indexOf("<constructions",start);
+		if(start > -1 && start < end) {
+			end = calcSession.indexOf("</constructions>",start);
+			var sb = new StringBuf();
+			sb.b += Std.string(HxOverrides.substr(calcSession,0,start));
+			sb.b += Std.string(HxOverrides.substr(calcSession,end + "</constructions>".length,null));
+			calcSession = sb.b;
+		}
+	}
+	return calcSession;
+}
 com.wiris.quizzes.impl.HTMLTools.prototype = {
-	getAnswerVariables: function(answers,keyword) {
+	isMathMLString: function(math) {
+		math = StringTools.trim(math);
+		return StringTools.startsWith(math,"<math") && StringTools.endsWith(math,"</math>");
+	}
+	,getAnswerVariables: function(answers,keyword,compound) {
 		var h = new Hash();
 		var i;
-		var _g1 = 0, _g = answers.length;
-		while(_g1 < _g) {
-			var i1 = _g1++;
-			var a = answers[i1];
-			if(!h.exists(a.type)) h.set(a.type,new Hash());
-			h.get(a.type).set(keyword + (i1 + 1),a.content);
+		if(!compound) {
+			var _g1 = 0, _g = answers.length;
+			while(_g1 < _g) {
+				var i1 = _g1++;
+				var a = answers[i1];
+				if(!h.exists(a.type)) h.set(a.type,new Hash());
+				h.get(a.type).set(keyword + (i1 + 1),a.content);
+			}
+			if(answers.length == 1) h.get(answers[0].type).set(keyword,answers[0].content);
+		} else {
+			var answer = answers[0];
+			var a = com.wiris.quizzes.impl.HTMLTools.parseCompoundAnswer(answer);
+			var _g1 = 0, _g = a.length;
+			while(_g1 < _g) {
+				var i1 = _g1++;
+				var s = a[i1][1];
+				var type = this.isMathMLString(s)?com.wiris.quizzes.impl.MathContent.TYPE_MATHML:com.wiris.quizzes.impl.MathContent.TYPE_TEXT;
+				if(!h.exists(type)) h.set(type,new Hash());
+				h.get(type).set(keyword + (i1 + 1),s);
+			}
+			if(!h.exists(answer.type)) h.set(answer.type,new Hash());
+			h.get(answer.type).set(keyword,answer.content);
 		}
-		if(answers.length == 1) h.get(answers[0].type).set(keyword,answers[0].content);
 		return h;
 	}
-	,expandAnswersText: function(text,answers,keyword) {
+	,expandAnswersText: function(text,answers,keyword,compound) {
 		if(answers == null || answers.length == 0 || text.indexOf("#" + keyword) == -1) return text;
-		var h = this.getAnswerVariables(answers,keyword);
+		var h = this.getAnswerVariables(answers,keyword,compound);
 		var textvariables = h.get(com.wiris.quizzes.impl.MathContent.TYPE_TEXT);
 		return this.expandVariablesText(text,textvariables);
 	}
-	,expandAnswers: function(text,answers,keyword) {
+	,expandAnswers: function(text,answers,keyword,compound) {
 		if(answers == null || answers.length == 0 || text.indexOf("#" + keyword) == -1) return text;
-		var h = this.getAnswerVariables(answers,keyword);
+		var h = this.getAnswerVariables(answers,keyword,compound);
 		return this.expandVariables(text,h);
 	}
 	,setItemSeparator: function(sep) {
@@ -10310,7 +10913,7 @@ com.wiris.quizzes.impl.HTMLTools.prototype = {
 	}
 	,addConstructionImageTag: function(value) {
 		var h = new com.wiris.quizzes.impl.HTML();
-		var src = com.wiris.quizzes.impl.QuizzesBuilderImpl.getInstance().getConfiguration().get(com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL) + "/plotter_loading.png";
+		var src = com.wiris.quizzes.impl.QuizzesBuilderImpl.getInstance().getResourceUrl("plotter_loading.png");
 		h.openclose("img",[["src",src],["alt","Plotter"],["title","Plotter"],["class","wirisconstruction"],["data-wirisconstruction",value]]);
 		return h.getString();
 	}
@@ -10840,8 +11443,8 @@ com.wiris.quizzes.impl.HandwritingConstraints.symbol_default_excluded = null;
 com.wiris.quizzes.impl.HandwritingConstraints.readHandwritingConstraints = function(json) {
 	var hc = new com.wiris.quizzes.impl.HandwritingConstraints();
 	var obj = js.Boot.__cast(com.wiris.util.json.JSon.decode(json) , Hash);
-	hc.symbols = obj.exists("symbols")?js.Boot.__cast(obj.get("symbols") , Array):new Array();
-	hc.structure = obj.exists("structure")?js.Boot.__cast(obj.get("structure") , Array):new Array();
+	hc.symbols = obj.exists("symbols")?obj.get("symbols"):new Array();
+	hc.structure = obj.exists("structure")?obj.get("structure"):new Array();
 	return hc;
 }
 com.wiris.quizzes.impl.HandwritingConstraints.newHandwritingConstraints = function() {
@@ -11333,7 +11936,7 @@ com.wiris.quizzes.impl.MaxConnectionsHttpImpl.prototype = $extend(com.wiris.quiz
 		var data = p.getVariable(com.wiris.quizzes.impl.MaxConnectionsHttpImpl.DATA_KEY_MAX_CONNECTIONS);
 		var connections = null;
 		if(data != null) try {
-			connections = js.Boot.__cast(haxe.Unserializer.run(data) , Array);
+			connections = haxe.Unserializer.run(data);
 		} catch( t ) {
 			connections = null;
 		}
@@ -11368,7 +11971,7 @@ com.wiris.quizzes.impl.MaxConnectionsHttpImpl.prototype = $extend(com.wiris.quiz
 		var p = new com.wiris.quizzes.impl.SharedVariables();
 		p.lockVariable(com.wiris.quizzes.impl.MaxConnectionsHttpImpl.DATA_KEY_MAX_CONNECTIONS);
 		var data = p.getVariable(com.wiris.quizzes.impl.MaxConnectionsHttpImpl.DATA_KEY_MAX_CONNECTIONS);
-		var connections = js.Boot.__cast(haxe.Unserializer.run(data) , Array);
+		var connections = haxe.Unserializer.run(data);
 		if(connections[this.slot] == this.current) {
 			var n = 0;
 			connections[this.slot] = n;
@@ -11464,9 +12067,12 @@ com.wiris.quizzes.impl.QuizzesServiceImpl.prototype = {
 			http.setHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
 		} else {
 			var url = this.getServiceUrl();
-			if(clientSide) http = new com.wiris.quizzes.impl.HttpImpl(url,httpl); else http = new com.wiris.quizzes.impl.MaxConnectionsHttpImpl(url,httpl);
+			if(clientSide) http = new com.wiris.quizzes.impl.HttpImpl(url,httpl); else {
+				http = new com.wiris.quizzes.impl.MaxConnectionsHttpImpl(url,httpl);
+				var referrer = config.get(com.wiris.quizzes.api.ConfigurationKeys.REFERER_URL);
+				if(referrer == null || StringTools.trim(referrer) == "") com.wiris.system.Logger.log(900,"'quizzes.referer.url' configuration item is not set so requests to the " + "service can not be identified. Unidentified requests may be blocked by the server " + "and will certainly be blocked in future releases." + "\n" + "Setup the referrer editing your configuration.ini file or setting it programatically " + "through the Configuration interface." + "\n"); else http.setHeader("Referer",referrer);
+			}
 			http.setHeader("Content-Type","text/xml; charset=UTF-8");
-			http.setHeader("Referer",config.get(com.wiris.quizzes.api.ConfigurationKeys.REFERER_URL));
 			http.setPostData(postData);
 		}
 		http.setAsync(async);
@@ -11661,7 +12267,7 @@ com.wiris.quizzes.impl.ProcessStoreQuestion.__name__ = ["com","wiris","quizzes",
 com.wiris.quizzes.impl.ProcessStoreQuestion.__super__ = com.wiris.quizzes.impl.Process;
 com.wiris.quizzes.impl.ProcessStoreQuestion.prototype = $extend(com.wiris.quizzes.impl.Process.prototype,{
 	newInstance: function() {
-		return new com.wiris.quizzes.impl.ProcessGetCheckAssertions();
+		return new com.wiris.quizzes.impl.ProcessStoreQuestion();
 	}
 	,onSerialize: function(s) {
 		s.beginTag(com.wiris.quizzes.impl.ProcessStoreQuestion.TAGNAME);
@@ -11692,10 +12298,28 @@ com.wiris.quizzes.impl.QuestionInternal = $hxClasses["com.wiris.quizzes.impl.Que
 	com.wiris.util.xml.SerializableImpl.call(this);
 };
 com.wiris.quizzes.impl.QuestionInternal.__name__ = ["com","wiris","quizzes","impl","QuestionInternal"];
-com.wiris.quizzes.impl.QuestionInternal.__interfaces__ = [com.wiris.quizzes.api.Question];
+com.wiris.quizzes.impl.QuestionInternal.__interfaces__ = [com.wiris.quizzes.api.MultipleQuestion];
 com.wiris.quizzes.impl.QuestionInternal.__super__ = com.wiris.util.xml.SerializableImpl;
 com.wiris.quizzes.impl.QuestionInternal.prototype = $extend(com.wiris.util.xml.SerializableImpl.prototype,{
-	getProperty: function(name) {
+	addAssertionOfSubquestion: function(sub,name,correctAnswer,studentAnswer,parameters) {
+	}
+	,setPropertyOfSubquestion: function(sub,name,value) {
+	}
+	,getPropertyOfSubquestion: function(sub,name) {
+		return null;
+	}
+	,setCorrectAnswerOfSubquestion: function(sub,index,correctAnswer) {
+	}
+	,getCorrectAnswerOfSubquestion: function(sub,index) {
+		return null;
+	}
+	,getCorrectAnswersLengthOfSubquestion: function(sub) {
+		return 0;
+	}
+	,getNumberOfSubquestions: function() {
+		return 0;
+	}
+	,getProperty: function(name) {
 		return null;
 	}
 	,setProperty: function(name,value) {
@@ -11737,7 +12361,7 @@ com.wiris.quizzes.impl.QuestionImpl = $hxClasses["com.wiris.quizzes.impl.Questio
 	if(com.wiris.quizzes.impl.QuestionImpl.defaultOptions == null) com.wiris.quizzes.impl.QuestionImpl.defaultOptions = com.wiris.quizzes.impl.QuestionImpl.getDefaultOptions();
 };
 com.wiris.quizzes.impl.QuestionImpl.__name__ = ["com","wiris","quizzes","impl","QuestionImpl"];
-com.wiris.quizzes.impl.QuestionImpl.__interfaces__ = [com.wiris.quizzes.api.MultipleQuestion,com.wiris.quizzes.api.Question];
+com.wiris.quizzes.impl.QuestionImpl.__interfaces__ = [com.wiris.quizzes.api.MultipleQuestion];
 com.wiris.quizzes.impl.QuestionImpl.getDefaultOptions = function() {
 	var dopt = new Hash();
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_EXPONENTIAL_E,"e");
@@ -11747,7 +12371,8 @@ com.wiris.quizzes.impl.QuestionImpl.getDefaultOptions = function() {
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION,"4");
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,"true");
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TIMES_OPERATOR,com.wiris.system.Utf8.uchr(183));
-	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"10^(-3)");
+	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,"0.001");
+	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS,"false");
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT,"mg");
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_DECIMAL_SEPARATOR,".");
 	dopt.set(com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR,",");
@@ -11775,7 +12400,13 @@ com.wiris.quizzes.impl.QuestionImpl.syntacticAssertionToURL = function(a) {
 }
 com.wiris.quizzes.impl.QuestionImpl.__super__ = com.wiris.quizzes.impl.QuestionInternal;
 com.wiris.quizzes.impl.QuestionImpl.prototype = $extend(com.wiris.quizzes.impl.QuestionInternal.prototype,{
-	addAssertionOfSubquestion: function(sub,name,correctAnswer,studentAnswer,parameters) {
+	getAssertion: function(i) {
+		return this.assertions[i];
+	}
+	,getAssertionsLength: function() {
+		return this.assertions == null?0:this.assertions.length;
+	}
+	,addAssertionOfSubquestion: function(sub,name,correctAnswer,studentAnswer,parameters) {
 		if(this.subquestions != null && sub < this.subquestions.length) this.subquestions[sub].addAssertion(name,correctAnswer,studentAnswer,parameters);
 	}
 	,setPropertyOfSubquestion: function(sub,name,value) {
@@ -11908,6 +12539,39 @@ com.wiris.quizzes.impl.QuestionImpl.prototype = $extend(com.wiris.quizzes.impl.Q
 	,setAnswerFieldType: function(type) {
 		if(com.wiris.quizzes.impl.LocalData.VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR == type || com.wiris.quizzes.impl.LocalData.VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT == type || com.wiris.quizzes.impl.LocalData.VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR == type || com.wiris.quizzes.impl.LocalData.VALUE_OPENANSWER_INPUT_FIELD_INLINE_HAND == type) this.setLocalData(com.wiris.quizzes.impl.LocalData.KEY_OPENANSWER_INPUT_FIELD,type); else throw "Invalid type parameter.";
 	}
+	,changeAssertionParamName: function(a,oldname,newname) {
+		if(a.parameters != null) {
+			var j;
+			var _g1 = 0, _g = a.parameters.length;
+			while(_g1 < _g) {
+				var j1 = _g1++;
+				if(a.parameters[j1].name == oldname) a.parameters[j1].name = newname;
+			}
+		}
+	}
+	,importTolerance: function(tolerance) {
+		if(this.isDeprecatedTolerance(tolerance)) {
+			var pattern10 = new EReg("^10\\^\\(-(.*)\\)$","");
+			if(pattern10.match(tolerance)) {
+				var exponent = StringTools.trim(pattern10.matched(1));
+				if(StringTools.startsWith(exponent,"(") && StringTools.endsWith(exponent,")")) exponent = StringTools.trim(HxOverrides.substr(exponent,1,exponent.length - 2));
+				if(com.wiris.system.TypeTools.isFloating(exponent)) {
+					var expd = -Std.parseFloat(exponent);
+					tolerance = Math.pow(10.0,expd) + "";
+				} else {
+					var patternlog = new EReg("-?log\\((.*)\\)","");
+					if(patternlog.match(exponent)) {
+						var arg = patternlog.matched(1);
+						if(StringTools.startsWith(exponent,"-")) tolerance = arg; else if(com.wiris.system.TypeTools.isFloating(arg)) tolerance = 1.0 / Std.parseFloat(arg) + "";
+					}
+				}
+			}
+		}
+		return tolerance;
+	}
+	,isDeprecatedTolerance: function(tol) {
+		return tol.indexOf("10^") != -1;
+	}
 	,importDeprecated: function() {
 		if(this.assertions != null) {
 			var i;
@@ -11924,8 +12588,24 @@ com.wiris.quizzes.impl.QuestionImpl.prototype = $extend(com.wiris.quizzes.impl.Q
 					a.name = com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC;
 					a.setParam(com.wiris.quizzes.impl.Assertion.PARAM_NO_BRACKETS_LIST,"true");
 				}
+				if(a.name == com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS) {
+					a.name = com.wiris.quizzes.impl.Assertion.CHECK_PRECISION;
+					this.changeAssertionParamName(a,"digits","max");
+					a.setParam("relative","false");
+				}
+				if(a.name == com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS) {
+					a.name = com.wiris.quizzes.impl.Assertion.CHECK_PRECISION;
+					this.changeAssertionParamName(a,"digits","max");
+					a.setParam("relative","true");
+				}
+				if(a.isEquivalence()) {
+					var tol = a.getParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE);
+					if(tol != null && this.isDeprecatedTolerance(tol)) a.setParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,this.importTolerance(tol));
+				}
 			}
 		}
+		var tolerance = this.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE);
+		if(this.isDeprecatedTolerance(tolerance)) this.setOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,this.importTolerance(tolerance));
 	}
 	,isDeprecated: function() {
 		if(this.assertions != null) {
@@ -11934,10 +12614,15 @@ com.wiris.quizzes.impl.QuestionImpl.prototype = $extend(com.wiris.quizzes.impl.Q
 			while(_g1 < _g) {
 				var i1 = _g1++;
 				var a = this.assertions[i1];
-				if(a.name == com.wiris.quizzes.impl.Assertion.EQUIVALENT_SET || a.name == com.wiris.quizzes.impl.Assertion.SYNTAX_LIST) return true;
+				if(a.name == com.wiris.quizzes.impl.Assertion.EQUIVALENT_SET || a.name == com.wiris.quizzes.impl.Assertion.SYNTAX_LIST) return com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_NEEDS_CHECK; else if(a.name == com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS || a.name == com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS) return com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_COMPATIBLE;
+				if(a.isEquivalence()) {
+					var tol = a.getParam(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE);
+					if(tol != null && this.isDeprecatedTolerance(tol)) return com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_COMPATIBLE;
+				}
 			}
 		}
-		return false;
+		if(this.isDeprecatedTolerance(this.getOption(com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE))) return com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_COMPATIBLE;
+		return com.wiris.quizzes.impl.QuestionImpl.NO_DEPRECATED;
 	}
 	,getImpl: function() {
 		return this;
@@ -12283,6 +12968,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl = $hxClasses["com.wiris.quizzes.impl
 	this.variables = null;
 	this.checks = null;
 	this.subinstances = null;
+	this.compoundChecks = null;
 };
 com.wiris.quizzes.impl.QuestionInstanceImpl.__name__ = ["com","wiris","quizzes","impl","QuestionInstanceImpl"];
 com.wiris.quizzes.impl.QuestionInstanceImpl.__interfaces__ = [com.wiris.quizzes.api.MultipleQuestionInstance];
@@ -12919,7 +13605,10 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 		w.name = v.name;
 		return w;
 	}
-	,isCompoundAnswer: function(checks) {
+	,isCompoundAnswer: function() {
+		return this.compoundChecks != null;
+	}
+	,isCompoundAnswerChecks: function(checks) {
 		if(checks != null && checks.length > 0) {
 			var id = checks[0].getCorrectAnswer();
 			if(id.indexOf("c") > -1) return true;
@@ -13022,7 +13711,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 					while(_g3 < _g2) {
 						var j1 = _g3++;
 						var resultChecks = subchecks[j1];
-						if(this.isCompoundAnswer(resultChecks)) {
+						if(this.isCompoundAnswerChecks(resultChecks)) {
 							if(j1 == 0) this.collapseCompoundAnswerChecks(resultChecks); else this.subinstances[j1 - 1].collapseCompoundAnswerChecks(resultChecks);
 						}
 						if(j1 == 0) this.checks = this.checksToHash(resultChecks,this.checks); else this.subinstances[j1 - 1].checks = this.checksToHash(resultChecks,this.subinstances[j1 - 1].checks);
@@ -13088,7 +13777,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 			var textvars = this.variables.get(com.wiris.quizzes.impl.MathContent.TYPE_TEXT);
 			text = h.expandVariablesText(text,textvars);
 		}
-		if(this.userData.answers != null) text = h.expandAnswersText(text,this.userData.answers,this.getAnswerParameterName());
+		if(this.userData.answers != null) text = h.expandAnswersText(text,this.userData.answers,this.getAnswerParameterName(),this.isCompoundAnswer());
 		return text;
 	}
 	,addAllHashElements: function(src,dest) {
@@ -13125,7 +13814,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 		var h = new com.wiris.quizzes.impl.HTMLTools();
 		if(com.wiris.quizzes.impl.MathContent.getMathType(equation) == com.wiris.quizzes.impl.MathContent.TYPE_TEXT) equation = h.textToMathML(equation);
 		equation = h.expandVariables(equation,this.variables);
-		equation = h.expandAnswers(equation,this.userData.answers,this.getAnswerParameterName());
+		equation = h.expandAnswers(equation,this.userData.answers,this.getAnswerParameterName(),this.isCompoundAnswer());
 		return equation;
 	}
 	,expandVariables: function(text) {
@@ -13133,7 +13822,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 		var h = new com.wiris.quizzes.impl.HTMLTools();
 		h.setItemSeparator(this.getLocalData(com.wiris.quizzes.impl.LocalData.KEY_ITEM_SEPARATOR));
 		text = h.expandVariables(text,this.variables);
-		text = h.expandAnswers(text,this.userData.answers,this.getAnswerParameterName());
+		text = h.expandAnswers(text,this.userData.answers,this.getAnswerParameterName(),this.isCompoundAnswer());
 		return text;
 	}
 	,defaultLocalData: function(name) {
@@ -13149,6 +13838,12 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 			}
 		}
 		return this.defaultLocalData(name);
+	}
+	,getProperty: function(name) {
+		return this.getLocalData(name);
+	}
+	,setProperty: function(name,value) {
+		this.setLocalData(name,value);
 	}
 	,getLocalData: function(name) {
 		if(name == com.wiris.quizzes.impl.LocalData.KEY_OPENANSWER_HANDWRITING_CONSTRAINTS) {
@@ -13172,6 +13867,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 			}
 		}
 		if(!found) this.localData.push(data);
+		if(name == com.wiris.quizzes.impl.LocalData.KEY_OPENANSWER_HANDWRITING_CONSTRAINTS) this.handConstraints = com.wiris.quizzes.impl.HandwritingConstraints.readHandwritingConstraints(value);
 	}
 	,newInstance: function() {
 		return new com.wiris.quizzes.impl.QuestionInstanceImpl();
@@ -13181,7 +13877,7 @@ com.wiris.quizzes.impl.QuestionInstanceImpl.prototype = $extend(com.wiris.util.x
 		this.userData = s.serializeChildName(this.userData,com.wiris.quizzes.impl.UserData.TAGNAME);
 		this.setChecksCompoundAnswers();
 		var a = s.serializeArrayName(this.hashToChecks(this.checks),"checks");
-		if(this.isCompoundAnswer(a)) this.collapseCompoundAnswerChecks(a);
+		if(this.isCompoundAnswerChecks(a)) this.collapseCompoundAnswerChecks(a);
 		this.checks = this.checksToHash(a,null);
 		this.variables = this.variablesToHash(s.serializeArrayName(this.hashToVariables(this.variables,null),"variables"),null);
 		this.serializeHandConstraints();
@@ -13217,10 +13913,31 @@ com.wiris.quizzes.impl.QuestionLazy = $hxClasses["com.wiris.quizzes.impl.Questio
 	}
 };
 com.wiris.quizzes.impl.QuestionLazy.__name__ = ["com","wiris","quizzes","impl","QuestionLazy"];
-com.wiris.quizzes.impl.QuestionLazy.__interfaces__ = [com.wiris.quizzes.api.Question];
+com.wiris.quizzes.impl.QuestionLazy.__interfaces__ = [com.wiris.quizzes.api.MultipleQuestion];
 com.wiris.quizzes.impl.QuestionLazy.__super__ = com.wiris.quizzes.impl.QuestionInternal;
 com.wiris.quizzes.impl.QuestionLazy.prototype = $extend(com.wiris.quizzes.impl.QuestionInternal.prototype,{
-	getImpl: function() {
+	addAssertionOfSubquestion: function(sub,name,correctAnswer,studentAnswer,parameters) {
+		this.getImpl().addAssertionOfSubquestion(sub,name,correctAnswer,studentAnswer,parameters);
+	}
+	,setPropertyOfSubquestion: function(sub,name,value) {
+		this.getImpl().setPropertyOfSubquestion(sub,name,value);
+	}
+	,getPropertyOfSubquestion: function(sub,name) {
+		return this.getImpl().getPropertyOfSubquestion(sub,name);
+	}
+	,setCorrectAnswerOfSubquestion: function(sub,index,correctAnswer) {
+		this.getImpl().setCorrectAnswerOfSubquestion(sub,index,correctAnswer);
+	}
+	,getCorrectAnswerOfSubquestion: function(sub,index) {
+		return this.getImpl().getCorrectAnswerOfSubquestion(sub,index);
+	}
+	,getCorrectAnswersLengthOfSubquestion: function(sub) {
+		return this.getImpl().getCorrectAnswersLengthOfSubquestion(sub);
+	}
+	,getNumberOfSubquestions: function() {
+		return this.getImpl().getNumberOfSubquestions();
+	}
+	,getImpl: function() {
 		if(this.question == null) {
 			var s = com.wiris.quizzes.impl.QuizzesBuilderImpl.getInstance().getSerializer();
 			var elem = s.read("<question>" + this.xml + "</question>");
@@ -13629,7 +14346,7 @@ com.wiris.quizzes.impl.SubQuestionInstance.prototype = $extend(com.wiris.quizzes
 		this.userData = s.serializeChildName(this.userData,com.wiris.quizzes.impl.UserData.TAGNAME);
 		this.setChecksCompoundAnswers();
 		var a = s.serializeArrayName(this.hashToChecks(this.checks),"checks");
-		if(this.isCompoundAnswer(a)) this.collapseCompoundAnswerChecks(a);
+		if(this.isCompoundAnswerChecks(a)) this.collapseCompoundAnswerChecks(a);
 		this.checks = this.checksToHash(a,null);
 		this.serializeHandConstraints();
 		this.localData = s.serializeArrayName(this.localData,"localData");
@@ -14155,6 +14872,14 @@ com.wiris.system.LocalStorageCache.prototype = {
 	,available: null
 	,__class__: com.wiris.system.LocalStorageCache
 }
+com.wiris.system.Logger = $hxClasses["com.wiris.system.Logger"] = function() { }
+com.wiris.system.Logger.__name__ = ["com","wiris","system","Logger"];
+com.wiris.system.Logger.log = function(level,message) {
+	var prefix;
+	if(level >= 1000) prefix = "SEVERE"; else if(level >= 900) prefix = "WARNING"; else prefix = "INFO";
+	message = "[" + prefix + "] " + message;
+	haxe.Log.trace(message,{ fileName : "Logger.hx", lineNumber : 25, className : "com.wiris.system.Logger", methodName : "log"});
+}
 com.wiris.system.Storage = $hxClasses["com.wiris.system.Storage"] = function(location) {
 	location = StringTools.replace(location,"/",com.wiris.system.Storage.getDirectorySeparator());
 	location = StringTools.replace(location,"\\",com.wiris.system.Storage.getDirectorySeparator());
@@ -14284,11 +15009,11 @@ com.wiris.system.TypeTools.floatToString = function(value) {
 	return "" + value;
 }
 com.wiris.system.TypeTools.isFloating = function(str) {
-	var pattern = new EReg("^(\\d|\\d\\.|\\.\\d)","");
+	var pattern = new EReg("^[+-]?\\d*\\.?\\d+([eE][+-]?\\d+)?$","");
 	return pattern.match(str);
 }
 com.wiris.system.TypeTools.isInteger = function(str) {
-	var pattern = new EReg("^(\\d)","");
+	var pattern = new EReg("^[+-]?\\d+$","");
 	return pattern.match(str);
 }
 com.wiris.system.TypeTools.isIdentifierPart = function(c) {
@@ -14517,7 +15242,7 @@ com.wiris.util.css.CSSUtils.pixelsToInt = function(pixels) {
 	if(pixels == null) return 0;
 	pixels = StringTools.trim(pixels);
 	if(StringTools.endsWith(pixels,"px")) return Std.parseInt(HxOverrides.substr(pixels,0,pixels.length - 2));
-	if(StringTools.endsWith(pixels,"pt")) return Math.floor(com.wiris.util.css.CSSUtils.PT_TO_PX * Std.parseInt(HxOverrides.substr(pixels,0,pixels.length - 2)));
+	if(StringTools.endsWith(pixels,"pt")) return com.wiris.util.css.CSSUtils.PT_TO_PX * Std.parseInt(HxOverrides.substr(pixels,0,pixels.length - 2)) | 0;
 	var parsedPixels = Std.parseInt(pixels);
 	if(pixels == "" + parsedPixels) return parsedPixels;
 	return 0;
@@ -14701,7 +15426,7 @@ com.wiris.util.json.JSon.getDepth = function(o) {
 		}
 		return m + 2;
 	} else if(com.wiris.system.TypeTools.isArray(o)) {
-		var a = js.Boot.__cast(o , Array);
+		var a = o;
 		var i;
 		var m = 0;
 		var _g1 = 0, _g = a.length;
@@ -14725,7 +15450,7 @@ com.wiris.util.json.JSon.getBoolean = function(b) {
 	return js.Boot.__cast(b , Bool);
 }
 com.wiris.util.json.JSon.getArray = function(a) {
-	return js.Boot.__cast(a , Array);
+	return a;
 }
 com.wiris.util.json.JSon.getHash = function(a) {
 	return js.Boot.__cast(a , Hash);
@@ -14749,8 +15474,8 @@ com.wiris.util.json.JSon.compare = function(a,b,eps) {
 	} else if(com.wiris.system.TypeTools.isArray(a)) {
 		var isBArray = com.wiris.system.TypeTools.isArray(b);
 		if(!isBArray) return false;
-		var aa = js.Boot.__cast(a , Array);
-		var ab = js.Boot.__cast(b , Array);
+		var aa = a;
+		var ab = b;
 		if(aa.length != ab.length) return false;
 		var i;
 		var _g1 = 0, _g = aa.length;
@@ -14928,6 +15653,15 @@ com.wiris.util.json.JSon.prototype = $extend(com.wiris.util.json.StringParser.pr
 		sb.b += Std.string(s);
 		sb.b += Std.string("\"");
 	}
+	,encodeArrayInt: function(sb,v) {
+		var v2 = new Array();
+		var i = 0;
+		while(i < v.length) {
+			v2.push(v[i]);
+			++i;
+		}
+		this.encodeArray(sb,v2);
+	}
 	,encodeArray: function(sb,v) {
 		var newLines = this.addNewLines && com.wiris.util.json.JSon.getDepth(v) > 2;
 		this.depth++;
@@ -14972,7 +15706,7 @@ com.wiris.util.json.JSon.prototype = $extend(com.wiris.util.json.StringParser.pr
 		this.depth--;
 	}
 	,encodeImpl: function(sb,o) {
-		if(com.wiris.system.TypeTools.isHash(o)) this.encodeHash(sb,js.Boot.__cast(o , Hash)); else if(com.wiris.system.TypeTools.isArray(o)) this.encodeArray(sb,js.Boot.__cast(o , Array)); else if(js.Boot.__instanceof(o,String)) this.encodeString(sb,js.Boot.__cast(o , String)); else if(js.Boot.__instanceof(o,Int)) this.encodeInteger(sb,js.Boot.__cast(o , Int)); else if(js.Boot.__instanceof(o,haxe.Int64)) this.encodeLong(sb,js.Boot.__cast(o , haxe.Int64)); else if(js.Boot.__instanceof(o,com.wiris.util.json.JSonIntegerFormat)) this.encodeIntegerFormat(sb,js.Boot.__cast(o , com.wiris.util.json.JSonIntegerFormat)); else if(js.Boot.__instanceof(o,Bool)) this.encodeBoolean(sb,js.Boot.__cast(o , Bool)); else if(js.Boot.__instanceof(o,Float)) this.encodeFloat(sb,js.Boot.__cast(o , Float)); else throw "Impossible to convert to json object of type " + Std.string(Type.getClass(o));
+		if(com.wiris.system.TypeTools.isHash(o)) this.encodeHash(sb,js.Boot.__cast(o , Hash)); else if(com.wiris.system.TypeTools.isArray(o)) this.encodeArray(sb,o); else if(js.Boot.__instanceof(o,Array)) this.encodeArrayInt(sb,o); else if(js.Boot.__instanceof(o,String)) this.encodeString(sb,js.Boot.__cast(o , String)); else if(js.Boot.__instanceof(o,Int)) this.encodeInteger(sb,js.Boot.__cast(o , Int)); else if(js.Boot.__instanceof(o,haxe.Int64)) this.encodeLong(sb,js.Boot.__cast(o , haxe.Int64)); else if(js.Boot.__instanceof(o,com.wiris.util.json.JSonIntegerFormat)) this.encodeIntegerFormat(sb,js.Boot.__cast(o , com.wiris.util.json.JSonIntegerFormat)); else if(js.Boot.__instanceof(o,Bool)) this.encodeBoolean(sb,js.Boot.__cast(o , Bool)); else if(js.Boot.__instanceof(o,Float)) this.encodeFloat(sb,js.Boot.__cast(o , Float)); else throw "Impossible to convert to json object of type " + Std.string(Type.getClass(o));
 	}
 	,encodeObject: function(o) {
 		var sb = new StringBuf();
@@ -14998,6 +15732,13 @@ com.wiris.util.json.JSonIntegerFormat.prototype = {
 	,format: null
 	,n: null
 	,__class__: com.wiris.util.json.JSonIntegerFormat
+}
+com.wiris.util.sys.AccessProvider = $hxClasses["com.wiris.util.sys.AccessProvider"] = function() { }
+com.wiris.util.sys.AccessProvider.__name__ = ["com","wiris","util","sys","AccessProvider"];
+com.wiris.util.sys.AccessProvider.prototype = {
+	isEnabled: null
+	,requireAccess: null
+	,__class__: com.wiris.util.sys.AccessProvider
 }
 com.wiris.util.sys.Cache = $hxClasses["com.wiris.util.sys.Cache"] = function() { }
 com.wiris.util.sys.Cache.__name__ = ["com","wiris","util","sys","Cache"];
@@ -15202,6 +15943,11 @@ com.wiris.util.type.Arrays.indexOfElement = function(array,element) {
 	}
 	return -1;
 }
+com.wiris.util.type.Arrays.fromIterator = function(iterator) {
+	var array = new Array();
+	while(iterator.hasNext()) array.push(iterator.next());
+	return array;
+}
 com.wiris.util.type.Arrays.fromCSV = function(s) {
 	var words = s.split(",");
 	var i = 0;
@@ -15248,6 +15994,9 @@ com.wiris.util.type.Arrays.clear = function(a) {
 		i--;
 	}
 }
+com.wiris.util.type.Arrays.sort = function(elements,comparator) {
+	com.wiris.util.type.Arrays.quicksort(elements,0,elements.length - 1,comparator);
+}
 com.wiris.util.type.Arrays.insertSorted = function(a,e) {
 	com.wiris.util.type.Arrays.insertSortedImpl(a,e,false);
 }
@@ -15258,7 +16007,7 @@ com.wiris.util.type.Arrays.insertSortedImpl = function(a,e,set) {
 	var imin = 0;
 	var imax = a.length;
 	while(imin < imax) {
-		var imid = Math.floor((imax + imin) / 2);
+		var imid = (imax + imin) / 2 | 0;
 		var cmp = Reflect.compare(a[imid],e);
 		if(cmp == 0) {
 			if(set) return; else {
@@ -15268,6 +16017,16 @@ com.wiris.util.type.Arrays.insertSortedImpl = function(a,e,set) {
 		} else if(cmp < 0) imin = imid + 1; else imax = imid;
 	}
 	a.splice(imin,0,e);
+}
+com.wiris.util.type.Arrays.binarySearch = function(array,key) {
+	var imin = 0;
+	var imax = array.length;
+	while(imin < imax) {
+		var imid = (imin + imax) / 2 | 0;
+		var cmp = Reflect.compare(array[imid],key);
+		if(cmp == 0) return imid; else if(cmp < 0) imin = imid + 1; else imax = imid;
+	}
+	return -1;
 }
 com.wiris.util.type.Arrays.copyArray = function(a) {
 	var b = new Array();
@@ -15279,8 +16038,49 @@ com.wiris.util.type.Arrays.addAll = function(baseArray,additionArray) {
 	var i = HxOverrides.iter(additionArray);
 	while(i.hasNext()) baseArray.push(i.next());
 }
+com.wiris.util.type.Arrays.quicksort = function(elements,lower,higher,comparator) {
+	if(lower < higher) {
+		var p = com.wiris.util.type.Arrays.partition(elements,lower,higher,comparator);
+		com.wiris.util.type.Arrays.quicksort(elements,lower,p - 1,comparator);
+		com.wiris.util.type.Arrays.quicksort(elements,p + 1,higher,comparator);
+	}
+}
+com.wiris.util.type.Arrays.partition = function(elements,lower,higher,comparator) {
+	var pivot = elements[higher];
+	var i = lower - 1;
+	var j = lower;
+	while(j < higher) {
+		if(comparator.compare(pivot,elements[j]) > 0) {
+			i++;
+			if(i != j) {
+				var swapper = elements[i];
+				elements[i] = elements[j];
+				elements[j] = swapper;
+			}
+		}
+		j++;
+	}
+	if(comparator.compare(elements[i + 1],elements[higher]) > 0) {
+		var finalSwap = elements[i + 1];
+		elements[i + 1] = elements[higher];
+		elements[higher] = finalSwap;
+	}
+	return i + 1;
+}
+com.wiris.util.type.Arrays.firstElement = function(elements) {
+	return elements[0];
+}
+com.wiris.util.type.Arrays.lastElement = function(elements) {
+	return elements[elements.length - 1];
+}
 com.wiris.util.type.Arrays.prototype = {
 	__class__: com.wiris.util.type.Arrays
+}
+com.wiris.util.type.Comparator = $hxClasses["com.wiris.util.type.Comparator"] = function() { }
+com.wiris.util.type.Comparator.__name__ = ["com","wiris","util","type","Comparator"];
+com.wiris.util.type.Comparator.prototype = {
+	compare: null
+	,__class__: com.wiris.util.type.Comparator
 }
 com.wiris.util.type.IntegerTools = $hxClasses["com.wiris.util.type.IntegerTools"] = function() { }
 com.wiris.util.type.IntegerTools.__name__ = ["com","wiris","util","type","IntegerTools"];
@@ -15384,11 +16184,102 @@ com.wiris.util.xml.WCharacterBase.binarySearch = function(v,c) {
 	var min = 0;
 	var max = v.length - 1;
 	do {
-		var mid = Math.floor((min + max) / 2);
+		var mid = (min + max) / 2 | 0;
 		var cc = v[mid];
 		if(c == cc) return true; else if(c < cc) max = mid - 1; else min = mid + 1;
 	} while(min <= max);
 	return false;
+}
+com.wiris.util.xml.WCharacterBase.initAccentsDictionary = function() {
+	if(com.wiris.util.xml.WCharacterBase.accentsDictionary != null) return;
+	var h = new Hash();
+	h.set("A",[192,193,194,195,196,197,256,258,260,461,478,480,506,512,514,550,570,7680,7840,7842,7844,7846,7848,7850,7852,7854,7856,7858,7860,7862,9398,11375,65313]);
+	h.set("AA",[42802]);
+	h.set("AE",[198,482,508]);
+	h.set("AO",[42804]);
+	h.set("AU",[42806]);
+	h.set("AV",[42808,42810]);
+	h.set("AY",[42812]);
+	h.set("B",[385,386,579,7682,7684,7686,9399,65314]);
+	h.set("C",[199,262,264,266,268,391,571,7688,9400,42814,65315]);
+	h.set("D",[208,270,272,393,394,395,7690,7692,7694,7696,7698,9401,42873,65316]);
+	h.set("DZ",[452,497]);
+	h.set("Dz",[453,498]);
+	h.set("E",[200,201,202,203,274,276,278,280,282,398,400,516,518,552,7700,7702,7704,7706,7708,7864,7866,7868,7870,7872,7874,7876,7878,9402,65317]);
+	h.set("F",[401,7710,9403,42875,65318]);
+	h.set("G",[284,286,288,290,403,484,486,500,7712,9404,42877,42878,42912,65319]);
+	h.set("H",[292,294,542,7714,7716,7718,7720,7722,9405,11367,11381,42893,65320]);
+	h.set("I",[204,205,206,207,296,298,300,302,304,407,463,520,522,7724,7726,7880,7882,9406,65321]);
+	h.set("J",[308,584,9407,65322]);
+	h.set("K",[310,408,488,7728,7730,7732,9408,11369,42816,42818,42820,42914,65323]);
+	h.set("L",[313,315,317,319,321,573,7734,7736,7738,7740,9409,11360,11362,42822,42824,42880,65324]);
+	h.set("LJ",[455]);
+	h.set("Lj",[456]);
+	h.set("M",[412,7742,7744,7746,9410,11374,65325]);
+	h.set("N",[209,323,325,327,413,504,544,7748,7750,7752,7754,9411,42896,42916,65326]);
+	h.set("NJ",[458]);
+	h.set("Nj",[459]);
+	h.set("O",[210,211,212,213,214,216,332,334,336,390,415,416,465,490,492,510,524,526,554,556,558,560,7756,7758,7760,7762,7884,7886,7888,7890,7892,7894,7896,7898,7900,7902,7904,7906,9412,42826,42828,65327]);
+	h.set("OI",[418]);
+	h.set("OO",[42830]);
+	h.set("OU",[546]);
+	h.set("OE",[140,338]);
+	h.set("oe",[156,339]);
+	h.set("P",[420,7764,7766,9413,11363,42832,42834,42836,65328]);
+	h.set("Q",[586,9414,42838,42840,65329]);
+	h.set("R",[340,342,344,528,530,588,7768,7770,7772,7774,9415,11364,42842,42882,42918,65330]);
+	h.set("S",[346,348,350,352,536,7776,7778,7780,7782,7784,7838,9416,11390,42884,42920,65331]);
+	h.set("T",[354,356,358,428,430,538,574,7786,7788,7790,7792,9417,42886,65332]);
+	h.set("TZ",[42792]);
+	h.set("U",[217,218,219,220,360,362,364,366,368,370,431,467,469,471,473,475,532,534,580,7794,7796,7798,7800,7802,7908,7910,7912,7914,7916,7918,7920,9418,65333]);
+	h.set("V",[434,581,7804,7806,9419,42846,65334]);
+	h.set("VY",[42848]);
+	h.set("W",[372,7808,7810,7812,7814,7816,9420,11378,65335]);
+	h.set("X",[7818,7820,9421,65336]);
+	h.set("Y",[221,374,376,435,562,590,7822,7922,7924,7926,7928,7934,9422,65337]);
+	h.set("Z",[377,379,381,437,548,7824,7826,7828,9423,11371,11391,42850,65338]);
+	h.set("a",[224,225,226,227,228,229,257,259,261,462,479,481,507,513,515,551,592,7681,7834,7841,7843,7845,7847,7849,7851,7853,7855,7857,7859,7861,7863,9424,11365,65345]);
+	h.set("aa",[42803]);
+	h.set("ae",[230,483,509]);
+	h.set("ao",[42805]);
+	h.set("au",[42807]);
+	h.set("av",[42809,42811]);
+	h.set("ay",[42813]);
+	h.set("b",[384,387,595,7683,7685,7687,9425,65346]);
+	h.set("c",[231,263,265,267,269,392,572,7689,8580,9426,42815,65347]);
+	h.set("d",[271,273,396,598,599,7691,7693,7695,7697,7699,9427,42874,65348]);
+	h.set("dz",[454,499]);
+	h.set("e",[232,233,234,235,275,277,279,281,283,477,517,519,553,583,603,7701,7703,7705,7707,7709,7865,7867,7869,7871,7873,7875,7877,7879,9428,65349]);
+	h.set("f",[402,7711,9429,42876,65350]);
+	h.set("g",[285,287,289,291,485,487,501,608,7545,7713,9430,42879,42913,65351]);
+	h.set("h",[293,295,543,613,7715,7717,7719,7721,7723,7830,9431,11368,11382,65352]);
+	h.set("hv",[405]);
+	h.set("i",[236,237,238,239,297,299,301,303,305,464,521,523,616,7725,7727,7881,7883,9432,65353]);
+	h.set("j",[309,496,585,9433,65354]);
+	h.set("k",[311,409,489,7729,7731,7733,9434,11370,42817,42819,42821,42915,65355]);
+	h.set("l",[314,316,318,320,322,383,410,619,7735,7737,7739,7741,9435,11361,42823,42825,42881,65356]);
+	h.set("lj",[457]);
+	h.set("m",[623,625,7743,7745,7747,9436,65357]);
+	h.set("n",[241,324,326,328,329,414,505,626,7749,7751,7753,7755,9437,42897,42917,65358]);
+	h.set("nj",[460]);
+	h.set("o",[242,243,244,245,246,248,333,335,337,417,466,491,493,511,525,527,555,557,559,561,596,629,7757,7759,7761,7763,7885,7887,7889,7891,7893,7895,7897,7899,7901,7903,7905,7907,9438,42827,42829,65359]);
+	h.set("oi",[419]);
+	h.set("ou",[547]);
+	h.set("oo",[42831]);
+	h.set("p",[421,7549,7765,7767,9439,42833,42835,42837,65360]);
+	h.set("q",[587,9440,42839,42841,65361]);
+	h.set("r",[341,343,345,529,531,589,637,7769,7771,7773,7775,9441,42843,42883,42919,65362]);
+	h.set("s",[223,347,349,351,353,537,575,7777,7779,7781,7783,7785,7835,9442,42885,42921,65363]);
+	h.set("t",[355,357,359,429,539,648,7787,7789,7791,7793,7831,9443,11366,42887,65364]);
+	h.set("tz",[42793]);
+	h.set("u",[249,250,251,252,361,363,365,367,369,371,432,468,470,472,474,476,533,535,649,7795,7797,7799,7801,7803,7909,7911,7913,7915,7917,7919,7921,9444,65365]);
+	h.set("v",[651,652,7805,7807,9445,42847,65366]);
+	h.set("vy",[42849]);
+	h.set("w",[373,7809,7811,7813,7815,7817,7832,9446,11379,65367]);
+	h.set("x",[7819,7821,9447,65368]);
+	h.set("y",[253,255,375,436,563,591,7823,7833,7923,7925,7927,7929,7935,9448,65369]);
+	h.set("z",[378,380,382,438,549,576,7825,7827,7829,9449,11372,42851,65370]);
+	com.wiris.util.xml.WCharacterBase.accentsDictionary = h;
 }
 com.wiris.util.xml.WCharacterBase.getCategoriesUnicode = function() {
 	var categoriesUnicode = new Hash();
@@ -15679,6 +16570,18 @@ com.wiris.util.xml.WCharacterBase.latinToScript = function(codepoint) {
 com.wiris.util.xml.WCharacterBase.latinToFraktur = function(codepoint) {
 	if(codepoint == 67) return 8493; else if(codepoint == 72) return 8460; else if(codepoint == 73) return 8465; else if(codepoint == 82) return 8476; else if(codepoint == 90) return 8488; else if(codepoint >= com.wiris.util.xml.WCharacterBase.LATIN_CAPITAL_LETTER_A && codepoint <= com.wiris.util.xml.WCharacterBase.LATIN_CAPITAL_LETTER_Z) return codepoint + (com.wiris.util.xml.WCharacterBase.MATHEMATICAL_FRAKTUR_CAPITAL_A - com.wiris.util.xml.WCharacterBase.LATIN_CAPITAL_LETTER_A); else if(codepoint >= com.wiris.util.xml.WCharacterBase.LATIN_SMALL_LETTER_A && codepoint <= com.wiris.util.xml.WCharacterBase.LATIN_SMALL_LETTER_Z) return codepoint + (com.wiris.util.xml.WCharacterBase.MATHEMATICAL_FRAKTUR_SMALL_A - com.wiris.util.xml.WCharacterBase.LATIN_SMALL_LETTER_A); else return codepoint;
 }
+com.wiris.util.xml.WCharacterBase.stripAccent = function(c) {
+	com.wiris.util.xml.WCharacterBase.initAccentsDictionary();
+	if(c >= 128) {
+		var i = com.wiris.util.xml.WCharacterBase.accentsDictionary.keys();
+		while(i.hasNext()) {
+			var s = i.next();
+			var chars = com.wiris.util.xml.WCharacterBase.accentsDictionary.get(s);
+			if(com.wiris.util.xml.WCharacterBase.binarySearch(chars,c)) return s;
+		}
+		return com.wiris.system.Utf8.uchr(c);
+	} else return com.wiris.system.Utf8.uchr(c);
+}
 com.wiris.util.xml.WEntities = $hxClasses["com.wiris.util.xml.WEntities"] = function() { }
 com.wiris.util.xml.WEntities.__name__ = ["com","wiris","util","xml","WEntities"];
 com.wiris.util.xml.WXmlUtils = $hxClasses["com.wiris.util.xml.WXmlUtils"] = function() { }
@@ -15756,6 +16659,14 @@ com.wiris.util.xml.WXmlUtils.createPCData = function(node,text) {
 	if(com.wiris.settings.PlatformSettings.PARSE_XML_ENTITIES) text = com.wiris.util.xml.WXmlUtils.htmlEscape(text);
 	return Xml.createPCData(text);
 }
+com.wiris.util.xml.WXmlUtils.escapeXmlEntities = function(s) {
+	s = StringTools.replace(s,"&","&amp;");
+	s = StringTools.replace(s,"<","&lt;");
+	s = StringTools.replace(s,">","&gt;");
+	s = StringTools.replace(s,"\"","&quot;");
+	s = StringTools.replace(s,"'","&apos;");
+	return s;
+}
 com.wiris.util.xml.WXmlUtils.htmlEscape = function(input) {
 	var output = StringTools.replace(input,"&","&amp;");
 	output = StringTools.replace(output,"<","&lt;");
@@ -15801,6 +16712,13 @@ com.wiris.util.xml.WXmlUtils.parseXML = function(xml) {
 	xml = com.wiris.util.xml.WXmlUtils.filterMathMLEntities(xml);
 	var x = Xml.parse(xml);
 	return x;
+}
+com.wiris.util.xml.WXmlUtils.safeParseXML = function(xml) {
+	try {
+		return com.wiris.util.xml.WXmlUtils.parseXML(xml);
+	} catch( e ) {
+		return Xml.createDocument();
+	}
 }
 com.wiris.util.xml.WXmlUtils.serializeXML = function(xml) {
 	var s = xml.toString();
@@ -15994,6 +16912,13 @@ com.wiris.util.xml.WXmlUtils.getText = function(xml) {
 	while(iter.hasNext()) r += com.wiris.util.xml.WXmlUtils.getText(iter.next());
 	return r;
 }
+com.wiris.util.xml.WXmlUtils.getInnerText = function(xml) {
+	if(xml.nodeType == Xml.PCData || xml.nodeType == Xml.CData) return com.wiris.util.xml.WXmlUtils.getNodeValue(xml);
+	var r = "";
+	var iter = xml.iterator();
+	while(iter.hasNext()) r += com.wiris.util.xml.WXmlUtils.getInnerText(iter.next());
+	return r;
+}
 com.wiris.util.xml.WXmlUtils.setText = function(xml,text) {
 	if(xml.nodeType != Xml.Element) return;
 	var it = xml.iterator();
@@ -16005,6 +16930,10 @@ com.wiris.util.xml.WXmlUtils.setText = function(xml,text) {
 }
 com.wiris.util.xml.WXmlUtils.copyXml = function(elem) {
 	return com.wiris.util.xml.WXmlUtils.importXml(elem,elem);
+}
+com.wiris.util.xml.WXmlUtils.copyChildren = function(from,to) {
+	var children = from.iterator();
+	while(children.hasNext()) to.addChild(com.wiris.util.xml.WXmlUtils.importXml(children.next(),to));
 }
 com.wiris.util.xml.WXmlUtils.importXml = function(elem,model) {
 	var n = null;
@@ -16018,6 +16947,18 @@ com.wiris.util.xml.WXmlUtils.importXml = function(elem,model) {
 		var children = elem.iterator();
 		while(children.hasNext()) n.addChild(com.wiris.util.xml.WXmlUtils.importXml(children.next(),model));
 	} else if(elem.nodeType == Xml.Document) n = com.wiris.util.xml.WXmlUtils.importXml(elem.firstElement(),model); else if(elem.nodeType == Xml.CData) n = Xml.createCData(elem.getNodeValue()); else if(elem.nodeType == Xml.PCData) n = Xml.createPCData(elem.getNodeValue()); else throw "Unsupported node type: " + Std.string(elem.nodeType);
+	return n;
+}
+com.wiris.util.xml.WXmlUtils.importXmlWithoutChildren = function(elem,model) {
+	var n = null;
+	if(elem.nodeType == Xml.Element) {
+		n = Xml.createElement(elem.getNodeName());
+		var keys = elem.attributes();
+		while(keys.hasNext()) {
+			var key = keys.next();
+			n.set(key,elem.get(key));
+		}
+	} else if(elem.nodeType == Xml.CData) n = Xml.createCData(elem.getNodeValue()); else if(elem.nodeType == Xml.PCData) n = Xml.createPCData(elem.getNodeValue()); else throw "Unsupported node type: " + Std.string(elem.nodeType);
 	return n;
 }
 com.wiris.util.xml.WXmlUtils.copyXmlNamespace = function(elem,customNamespace,prefixAttributes) {
@@ -16086,7 +17027,7 @@ com.wiris.util.xml.WXmlUtils.indentXml = function(xml,space) {
 			}
 			res.b += Std.string(aux);
 		} else if(cdata.match(aux)) res.b += Std.string(aux); else {
-			haxe.Log.trace("WARNING! malformed XML at character " + end + ":" + xml,{ fileName : "WXmlUtils.hx", lineNumber : 662, className : "com.wiris.util.xml.WXmlUtils", methodName : "indentXml"});
+			haxe.Log.trace("WARNING! malformed XML at character " + end + ":" + xml,{ fileName : "WXmlUtils.hx", lineNumber : 729, className : "com.wiris.util.xml.WXmlUtils", methodName : "indentXml"});
 			res.b += Std.string(aux);
 		}
 	}
@@ -16098,6 +17039,9 @@ com.wiris.util.xml.WXmlUtils.isXmlEntity = function(ent) {
 		if(HxOverrides.cca(ent,1) == 120) c = Std.parseInt("0x" + HxOverrides.substr(ent,2,null)); else c = Std.parseInt(HxOverrides.substr(ent,1,null));
 		return c == 34 || c == 38 || c == 39 || c == 60 || c == 62;
 	} else return ent == "amp" || ent == "lt" || ent == "gt" || ent == "quot" || ent == "apos";
+}
+com.wiris.util.xml.WXmlUtils.normalizeWhitespace = function(s) {
+	return s != null?com.wiris.util.xml.WXmlUtils.WHITESPACE_COLLAPSE_REGEX.replace(StringTools.trim(s)," "):null;
 }
 com.wiris.util.xml.XmlSerializer = $hxClasses["com.wiris.util.xml.XmlSerializer"] = function() {
 	this.tags = new Hash();
@@ -16314,8 +17258,23 @@ com.wiris.util.xml.XmlSerializer.prototype = {
 	,textContent: function(content) {
 		if(this.mode == com.wiris.util.xml.XmlSerializer.MODE_READ) content = com.wiris.util.xml.XmlSerializer.getXmlTextContent(this.element); else if(this.mode == com.wiris.util.xml.XmlSerializer.MODE_WRITE && content != null && this.ignoreTagStackCount == 0) {
 			var textNode;
-			if(content.length > 100 || StringTools.startsWith(content,"<") && StringTools.endsWith(content,">")) textNode = Xml.createCData(content); else textNode = com.wiris.util.xml.WXmlUtils.createPCData(this.element,content);
-			this.element.addChild(textNode);
+			if(content.length > 100 || StringTools.startsWith(content,"<") && StringTools.endsWith(content,">")) {
+				var k = content.indexOf("]]>");
+				var i = 0;
+				while(k > -1) {
+					var subcontent = HxOverrides.substr(content,i,k - i + 2);
+					textNode = Xml.createCData(subcontent);
+					this.element.addChild(textNode);
+					i = k + 2;
+					k = content.indexOf("]]>",i);
+				}
+				var str = HxOverrides.substr(content,i,null);
+				textNode = Xml.createCData(str);
+				this.element.addChild(textNode);
+			} else {
+				textNode = com.wiris.util.xml.WXmlUtils.createPCData(this.element,content);
+				this.element.addChild(textNode);
+			}
 		}
 		return content;
 	}
@@ -16453,6 +17412,11 @@ com.wiris.util.xml.XmlSerializer.prototype = {
 			}
 		}
 		return res;
+	}
+	,readXml: function(xml) {
+		this.setCurrentElement(xml);
+		this.mode = com.wiris.util.xml.XmlSerializer.MODE_READ;
+		return this.readNode();
 	}
 	,read: function(xml) {
 		var document = Xml.parse(xml);
@@ -18798,6 +19762,7 @@ com.wiris.quizzes.JsQuizzesFilter.CLASS_ANSWER_FEEDBACK = "wirisanswerfeedback";
 com.wiris.quizzes.JsQuizzesFilter.CLASS_LANG = "wirislang";
 com.wiris.quizzes.JsQuizzesFilter.CLASS_SUBMIT = "wirissubmit";
 com.wiris.quizzes.api.ConfigurationKeys.WIRIS_URL = "quizzes.wiris.url";
+com.wiris.quizzes.api.ConfigurationKeys.CALC_URL = "quizzes.calc.url";
 com.wiris.quizzes.api.ConfigurationKeys.EDITOR_URL = "quizzes.editor.url";
 com.wiris.quizzes.api.ConfigurationKeys.SERVICE_OFFLINE = "quizzes.service.offline";
 com.wiris.quizzes.api.ConfigurationKeys.HAND_URL = "quizzes.hand.url";
@@ -18812,14 +19777,17 @@ com.wiris.quizzes.api.ConfigurationKeys.HTTPPROXY_PASS = "quizzes.httpproxy.pass
 com.wiris.quizzes.api.ConfigurationKeys.CONFIGURATION_FILE = "quizzes.configuration.file";
 com.wiris.quizzes.api.ConfigurationKeys.REFERER_URL = "quizzes.referer.url";
 com.wiris.quizzes.api.ConfigurationKeys.HAND_ENABLED = "quizzes.hand.enabled";
+com.wiris.quizzes.api.ConfigurationKeys.CALC_ENABLED = "quizzes.calc.enabled";
 com.wiris.quizzes.api.ConfigurationKeys.HAND_LOGTRACES = "quizzes.hand.logtraces";
 com.wiris.quizzes.api.ConfigurationKeys.WIRISLAUNCHER_URL = "quizzes.wirislauncher.url";
 com.wiris.quizzes.api.ConfigurationKeys.CROSSORIGINCALLS_ENABLED = "quizzes.crossorigincalls.enabled";
 com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_STATIC = "quizzes.resources.static";
 com.wiris.quizzes.api.ConfigurationKeys.RESOURCES_URL = "quizzes.resources.url";
 com.wiris.quizzes.api.ConfigurationKeys.GRAPH_URL = "quizzes.graph.url";
+com.wiris.quizzes.api.ConfigurationKeys.VERSION = "quizzes.version";
 com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE = "relative_tolerance";
 com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE = "tolerance";
+com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS = "tolerance_digits";
 com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION = "precision";
 com.wiris.quizzes.api.QuizzesConstants.OPTION_TIMES_OPERATOR = "times_operator";
 com.wiris.quizzes.api.QuizzesConstants.OPTION_IMAGINARY_UNIT = "imaginary_unit";
@@ -18837,6 +19805,7 @@ com.wiris.quizzes.api.QuizzesConstants.ANSWER_FIELD_TYPE_TEXT = "textField";
 com.wiris.quizzes.api.QuizzesConstants.META_PROPERTY_REFERER = "referer";
 com.wiris.quizzes.api.QuizzesConstants.META_PROPERTY_QUESTION = "question";
 com.wiris.quizzes.api.QuizzesConstants.META_PROPERTY_USER = "userref";
+com.wiris.quizzes.api.QuizzesConstants.PARAMETER_USER_ID = "user_id";
 com.wiris.quizzes.api.ui.QuizzesUIConstants.TEXT_FIELD = com.wiris.quizzes.api.QuizzesConstants.ANSWER_FIELD_TYPE_TEXT;
 com.wiris.quizzes.api.ui.QuizzesUIConstants.INLINE_EDITOR = com.wiris.quizzes.api.QuizzesConstants.ANSWER_FIELD_TYPE_INLINE_EDITOR;
 com.wiris.quizzes.api.ui.QuizzesUIConstants.POPUP_EDITOR = com.wiris.quizzes.api.QuizzesConstants.ANSWER_FIELD_TYPE_POPUP_EDITOR;
@@ -18886,11 +19855,12 @@ com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS = "check_no_more_decimal
 com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS = "check_no_more_digits";
 com.wiris.quizzes.impl.Assertion.CHECK_RATIONALIZED = "check_rationalized";
 com.wiris.quizzes.impl.Assertion.CHECK_MINIMAL_RADICANDS = "check_minimal_radicands";
+com.wiris.quizzes.impl.Assertion.CHECK_PRECISION = "check_precision";
 com.wiris.quizzes.impl.Assertion.EQUIVALENT_SET = "equivalent_set";
 com.wiris.quizzes.impl.Assertion.syntactic = [com.wiris.quizzes.impl.Assertion.SYNTAX_EXPRESSION,com.wiris.quizzes.impl.Assertion.SYNTAX_QUANTITY,com.wiris.quizzes.impl.Assertion.SYNTAX_STRING];
 com.wiris.quizzes.impl.Assertion.equivalent = [com.wiris.quizzes.impl.Assertion.EQUIVALENT_LITERAL,com.wiris.quizzes.impl.Assertion.EQUIVALENT_SYMBOLIC,com.wiris.quizzes.impl.Assertion.EQUIVALENT_EQUATIONS,com.wiris.quizzes.impl.Assertion.EQUIVALENT_ALL,com.wiris.quizzes.impl.Assertion.EQUIVALENT_FUNCTION];
 com.wiris.quizzes.impl.Assertion.structure = [com.wiris.quizzes.impl.Assertion.CHECK_INTEGER_FORM,com.wiris.quizzes.impl.Assertion.CHECK_FRACTION_FORM,com.wiris.quizzes.impl.Assertion.CHECK_POLYNOMIAL_FORM,com.wiris.quizzes.impl.Assertion.CHECK_RATIONAL_FUNCTION_FORM,com.wiris.quizzes.impl.Assertion.CHECK_ELEMENTAL_FUNCTION_FORM,com.wiris.quizzes.impl.Assertion.CHECK_SCIENTIFIC_NOTATION];
-com.wiris.quizzes.impl.Assertion.checks = [com.wiris.quizzes.impl.Assertion.CHECK_SIMPLIFIED,com.wiris.quizzes.impl.Assertion.CHECK_EXPANDED,com.wiris.quizzes.impl.Assertion.CHECK_FACTORIZED,com.wiris.quizzes.impl.Assertion.CHECK_RATIONALIZED,com.wiris.quizzes.impl.Assertion.CHECK_NO_COMMON_FACTOR,com.wiris.quizzes.impl.Assertion.CHECK_MINIMAL_RADICANDS,com.wiris.quizzes.impl.Assertion.CHECK_DIVISIBLE,com.wiris.quizzes.impl.Assertion.CHECK_COMMON_DENOMINATOR,com.wiris.quizzes.impl.Assertion.CHECK_UNIT,com.wiris.quizzes.impl.Assertion.CHECK_UNIT_LITERAL,com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DECIMALS,com.wiris.quizzes.impl.Assertion.CHECK_NO_MORE_DIGITS];
+com.wiris.quizzes.impl.Assertion.checks = [com.wiris.quizzes.impl.Assertion.CHECK_SIMPLIFIED,com.wiris.quizzes.impl.Assertion.CHECK_EXPANDED,com.wiris.quizzes.impl.Assertion.CHECK_FACTORIZED,com.wiris.quizzes.impl.Assertion.CHECK_RATIONALIZED,com.wiris.quizzes.impl.Assertion.CHECK_NO_COMMON_FACTOR,com.wiris.quizzes.impl.Assertion.CHECK_MINIMAL_RADICANDS,com.wiris.quizzes.impl.Assertion.CHECK_DIVISIBLE,com.wiris.quizzes.impl.Assertion.CHECK_COMMON_DENOMINATOR,com.wiris.quizzes.impl.Assertion.CHECK_UNIT,com.wiris.quizzes.impl.Assertion.CHECK_UNIT_LITERAL,com.wiris.quizzes.impl.Assertion.CHECK_PRECISION];
 com.wiris.quizzes.impl.Assertion.BASIC_UNITS_LIST = "m, s, g, A, K, mol, cd, rad, sr, h, min, l, N, Pa, Hz, W, J, C, V, " + com.wiris.system.Utf8.uchr(937) + ", F, S, Wb, b, H, T, lx, lm, Gy, Bq, Sv, kat";
 com.wiris.quizzes.impl.Assertion.CURRENCY_UNITS_LIST = "$, " + com.wiris.system.Utf8.uchr(165) + ", " + com.wiris.system.Utf8.uchr(8364) + ", " + com.wiris.system.Utf8.uchr(163) + ", kr, Fr, " + com.wiris.system.Utf8.uchr(8361) + ", " + com.wiris.system.Utf8.uchr(8377) + ", руб, BTC";
 com.wiris.quizzes.impl.Assertion.ANGLE_UNITS_LIST = com.wiris.system.Utf8.uchr(176) + ", ', \"";
@@ -18901,6 +19871,7 @@ com.wiris.quizzes.impl.AssertionParam.tagName = "param";
 com.wiris.quizzes.impl.ConfigurationImpl.CONFIG_FILE = "quizzes.configuration.file";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_CONFIG_FILE = "configuration.ini";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_DIST_CONFIG_FILE = "integration.ini";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_VERSION_FILE = "version.txt";
 com.wiris.quizzes.impl.ConfigurationImpl.CONFIG_CLASS = "quizzes.configuration.class";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_CONFIG_CLASS = "";
 com.wiris.quizzes.impl.ConfigurationImpl.CONFIG_CLASSPATH = "quizzes.configuration.classpath";
@@ -18911,8 +19882,14 @@ com.wiris.quizzes.impl.ConfigurationImpl.VARIABLESCACHE_CLASS = "quizzes.variabl
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_VARIABLESCACHE_CLASS = "";
 com.wiris.quizzes.impl.ConfigurationImpl.LOCKPROVIDER_CLASS = "quizzes.lockprovider.class";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_LOCKPROVIDER_CLASS = "";
+com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASS = "quizzes.accessprovider.class";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_ACCESSPROVIDER_CLASS = "";
+com.wiris.quizzes.impl.ConfigurationImpl.ACCESSPROVIDER_CLASSPATH = "quizzes.accessprovider.classpath";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_ACCESSPROVIDER_CLASSPATH = "";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_WIRIS_URL = "http://www.wiris.net/demo/wiris";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_WIRISLAUNCHER_URL = "http://stateful.wiris.net/demo/wiris";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_CALC_URL = "https://calcme.com";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_CALC_ENABLED = "false";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_EDITOR_URL = "http://www.wiris.net/demo/editor";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_HAND_URL = "http://www.wiris.net/demo/hand";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_SERVICE_URL = "http://www.wiris.net/demo/quizzes";
@@ -18930,8 +19907,10 @@ com.wiris.quizzes.impl.ConfigurationImpl.DEF_SERVICE_OFFLINE = "false";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_CROSSORIGINCALLS_ENABLED = "false";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_RESOURCES_STATIC = "false";
 com.wiris.quizzes.impl.ConfigurationImpl.DEF_RESOURCES_URL = "quizzes/resources";
-com.wiris.quizzes.impl.ConfigurationImpl.DEF_GRAPH_URL = "";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_GRAPH_URL = "http://www.wiris.net/demo/graph";
+com.wiris.quizzes.impl.ConfigurationImpl.DEF_VERSION = "";
 com.wiris.quizzes.impl.ConfigurationImpl.config = null;
+com.wiris.quizzes.impl.ConfigurationImpl.thisLock = { };
 com.wiris.quizzes.impl.CorrectAnswer.tagName = "correctAnswer";
 com.wiris.quizzes.impl.FileLockProvider.TIMEOUT = 5000;
 com.wiris.quizzes.impl.FileLockProvider.WAIT = 100;
@@ -18996,7 +19975,7 @@ com.wiris.quizzes.impl.MultipleQuestionRequest.tagName = "processQuestions";
 com.wiris.quizzes.impl.MultipleQuestionResponse.tagName = "processQuestionsResult";
 com.wiris.quizzes.impl.QuizzesServiceImpl.USE_CACHE = true;
 com.wiris.quizzes.impl.QuizzesServiceImpl.PROTOCOL_REST = 0;
-com.wiris.quizzes.impl.Option.options = [com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION,com.wiris.quizzes.api.QuizzesConstants.OPTION_TIMES_OPERATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_IMAGINARY_UNIT,com.wiris.quizzes.api.QuizzesConstants.OPTION_EXPONENTIAL_E,com.wiris.quizzes.api.QuizzesConstants.OPTION_NUMBER_PI,com.wiris.quizzes.api.QuizzesConstants.OPTION_IMPLICIT_TIMES_OPERATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT,com.wiris.quizzes.api.QuizzesConstants.OPTION_DECIMAL_SEPARATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_STUDENT_ANSWER_PARAMETER,com.wiris.quizzes.api.QuizzesConstants.OPTION_STUDENT_ANSWER_PARAMETER_NAME];
+com.wiris.quizzes.impl.Option.options = [com.wiris.quizzes.api.QuizzesConstants.OPTION_RELATIVE_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE,com.wiris.quizzes.api.QuizzesConstants.OPTION_PRECISION,com.wiris.quizzes.api.QuizzesConstants.OPTION_TIMES_OPERATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_IMAGINARY_UNIT,com.wiris.quizzes.api.QuizzesConstants.OPTION_EXPONENTIAL_E,com.wiris.quizzes.api.QuizzesConstants.OPTION_NUMBER_PI,com.wiris.quizzes.api.QuizzesConstants.OPTION_IMPLICIT_TIMES_OPERATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_FLOAT_FORMAT,com.wiris.quizzes.api.QuizzesConstants.OPTION_DECIMAL_SEPARATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_DIGIT_GROUP_SEPARATOR,com.wiris.quizzes.api.QuizzesConstants.OPTION_STUDENT_ANSWER_PARAMETER,com.wiris.quizzes.api.QuizzesConstants.OPTION_STUDENT_ANSWER_PARAMETER_NAME,com.wiris.quizzes.api.QuizzesConstants.OPTION_TOLERANCE_DIGITS];
 com.wiris.quizzes.impl.Parameter.tagName = "parameter";
 com.wiris.quizzes.impl.ProcessGetCheckAssertions.tagName = "getCheckAssertions";
 com.wiris.quizzes.impl.ProcessGetTranslation.tagName = "getTranslation";
@@ -19005,6 +19984,9 @@ com.wiris.quizzes.impl.ProcessStoreQuestion.TAGNAME = "storeQuestion";
 com.wiris.quizzes.impl.Property.tagName = "property";
 com.wiris.quizzes.impl.QuestionImpl.defaultOptions = null;
 com.wiris.quizzes.impl.QuestionImpl.TAGNAME = "question";
+com.wiris.quizzes.impl.QuestionImpl.NO_DEPRECATED = 0;
+com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_COMPATIBLE = 1;
+com.wiris.quizzes.impl.QuestionImpl.DEPRECATED_NEEDS_CHECK = 2;
 com.wiris.quizzes.impl.QuestionInstanceImpl.tagName = "questionInstance";
 com.wiris.quizzes.impl.QuestionInstanceImpl.DEF_ALGORITHM_LANGUAGE = "en";
 com.wiris.quizzes.impl.QuestionInstanceImpl.KEY_ALGORITHM_LANGUAGE = "sessionLang";
@@ -19019,7 +20001,7 @@ com.wiris.quizzes.impl.ResultGetTranslation.tagName = "getTranslationResult";
 com.wiris.quizzes.impl.ResultGetVariables.tagName = "getVariablesResult";
 com.wiris.quizzes.impl.ResultStoreQuestion.tagName = "storeQuestionResult";
 com.wiris.quizzes.impl.SharedVariables.h = null;
-com.wiris.quizzes.impl.Strings.lang = [["lang","en"],["comparisonwithstudentanswer","Comparison with student answer"],["otheracceptedanswers","Other accepted answers"],["equivalent_literal","Literally equal"],["equivalent_literal_correct_feedback","The answer is literally equal to the correct one."],["equivalent_symbolic","Mathematically equal"],["equivalent_symbolic_correct_feedback","The answer is mathematically equal to the correct one."],["equivalent_set","Equal as sets"],["equivalent_set_correct_feedback","The answer set is equal to the correct one."],["equivalent_equations","Equivalent equations"],["equivalent_equations_correct_feedback","The answer has the same solutions as the correct one."],["equivalent_function","Grading function"],["equivalent_function_correct_feedback","The answer is correct."],["equivalent_all","Any answer"],["any","any"],["gradingfunction","Grading function"],["additionalproperties","Additional properties"],["structure","Structure"],["none","none"],["None","None"],["check_integer_form","has integer form"],["check_integer_form_correct_feedback","The answer is an integer."],["check_fraction_form","has fraction form"],["check_fraction_form_correct_feedback","The answer is a fraction."],["check_polynomial_form","has polynomial form"],["check_polynomial_form_correct_feedback","The answer is a polynomial."],["check_rational_function_form","has rational function form"],["check_rational_function_form_correct_feedback","The answer is a rational function."],["check_elemental_function_form","is a combination of elementary functions"],["check_elemental_function_form_correct_feedback","The answer is an elementary expression."],["check_scientific_notation","is expressed in scientific notation"],["check_scientific_notation_correct_feedback","The answer is expressed in scientific notation."],["more","More"],["check_simplified","is simplified"],["check_simplified_correct_feedback","The answer is simplified."],["check_expanded","is expanded"],["check_expanded_correct_feedback","The answer is expanded."],["check_factorized","is factorized"],["check_factorized_correct_feedback","The answer is factorized."],["check_rationalized","is rationalized"],["check_rationalized_correct_feedback","The answer is rationalized."],["check_no_common_factor","doesn't have common factors"],["check_no_common_factor_correct_feedback","The answer doesn't have common factors."],["check_minimal_radicands","has minimal radicands"],["check_minimal_radicands_correct_feedback","The answer has minimal radicands."],["check_divisible","is divisible by"],["check_divisible_correct_feedback","The answer is divisible by ${value}."],["check_common_denominator","has a single common denominator"],["check_common_denominator_correct_feedback","The answer has a single common denominator."],["check_unit","has unit equivalent to"],["check_unit_correct_feedback","The unit of the answer is ${unit}."],["check_unit_literal","has unit literally equal to"],["check_unit_literal_correct_feedback","The unit of the answer is ${unit}."],["check_no_more_decimals","has less or equal decimals than"],["check_no_more_decimals_correct_feedback","The answer has ${digits} or less decimals."],["check_no_more_digits","has less or equal digits than"],["check_no_more_digits_correct_feedback","The answer has ${digits} or less digits."],["syntax_expression","General"],["syntax_expression_description","(formulas, expressions, equations, matrices...)"],["syntax_expression_correct_feedback","The answer syntax is correct."],["syntax_quantity","Quantity"],["syntax_quantity_description","(numbers, measure units, fractions, mixed fractions, ratios...)"],["syntax_quantity_correct_feedback","The answer syntax is correct."],["syntax_list","List"],["syntax_list_description","(lists without comma separator or brackets)"],["syntax_list_correct_feedback","The answer syntax is correct."],["syntax_string","Text"],["syntax_string_description","(words, sentences, character strings)"],["syntax_string_correct_feedback","The answer syntax is correct."],["none","none"],["edit","Edit"],["accept","OK"],["cancel","Cancel"],["explog","exp/log"],["trigonometric","trigonometric"],["hyperbolic","hyperbolic"],["arithmetic","arithmetic"],["all","all"],["tolerance","Tolerance"],["relative","relative"],["relativetolerance","Relative tolerance"],["precision","Precision"],["implicit_times_operator","Invisible times operator"],["times_operator","Times operator"],["imaginary_unit","Imaginary unit"],["mixedfractions","Mixed fractions"],["constants","Constants"],["functions","Functions"],["userfunctions","User functions"],["units","Units"],["unitprefixes","Unit prefixes"],["syntaxparams","Syntax options"],["syntaxparams_expression","Options for general"],["syntaxparams_quantity","Options for quantity"],["syntaxparams_list","Options for list"],["allowedinput","Allowed input"],["manual","Manual"],["correctanswer","Correct answer"],["variables","Variables"],["validation","Validation"],["preview","Preview"],["correctanswertabhelp","Insert the correct answer using WIRIS editor. Select also the behaviour for the formula editor when used by the student.\n"],["assertionstabhelp","Select which properties the student answer has to verify. For example, if it has to be simplified, factorized, expressed using physical units or have a specific numerical precision."],["variablestabhelp","Write an algorithm with WIRIS cas to create random variables: numbers, expressions, plots or a grading function.\nYou can also specify the output format of the variables shown to the student.\n"],["testtabhelp","Insert a possible student answer to simulate the behaviour of the question. You are using the same tool that the student will use.\nNote that you can also test the evaluation criteria, success and automatic feedback.\n"],["start","Start"],["test","Test"],["clicktesttoevaluate","Click Test button to validate the current answer."],["correct","Correct!"],["incorrect","Incorrect!"],["partiallycorrect","Partially correct!"],["inputmethod","Input method"],["compoundanswer","Compound answer"],["answerinputinlineeditor","WIRIS editor embedded"],["answerinputpopupeditor","WIRIS editor in popup"],["answerinputplaintext","Plain text input field"],["showauxiliarcas","Include WIRIS cas"],["initialcascontent","Initial content"],["tolerancedigits","Tolerance digits"],["validationandvariables","Validation and variables"],["algorithmlanguage","Algorithm language"],["calculatorlanguage","Calculator language"],["hasalgorithm","Has algorithm"],["comparison","Comparison"],["properties","Properties"],["studentanswer","Student answer"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Your changes will be lost if you leave the window."],["outputoptions","Output options"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","All answers must be correct"],["distributegrade","Distribute grade"],["no","No"],["add","Add"],["replaceeditor","Replace editor"],["list","List"],["questionxml","Question XML"],["grammarurl","Grammar URL"],["reservedwords","Reserved words"],["forcebrackets","Lists always need curly brackets \"{}\"."],["commaasitemseparator","Use comma \",\" as list item separator."],["confirmimportdeprecated","Import the question? \nThe question you are about to open contains deprecated features. The import process may change slightly the behavior of the question. It is highly recommended that you carefully test de question after import."],["comparesets","Compare as sets"],["nobracketslist","Lists without brackets"],["warningtoleranceprecision","Less precision digits than tolerance digits."],["actionimport","Import"],["actionexport","Export"],["usecase","Match case"],["usespaces","Match spaces"],["notevaluate","Keep arguments unevaluated"],["separators","Separators"],["comma","Comma"],["commarole","Role of the comma ',' character"],["point","Point"],["pointrole","Role of the point '.' character"],["space","Space"],["spacerole","Role of the space character"],["decimalmark","Decimal digits"],["digitsgroup","Digit groups"],["listitems","List items"],["nothing","Nothing"],["intervals","Intervals"],["warningprecision15","Precision must be between 1 and 15."],["decimalSeparator","Decimal"],["thousandsSeparator","Thousands"],["notation","Notation"],["invisible","Invisible"],["auto","Auto"],["fixedDecimal","Fixed"],["floatingDecimal","Decimal"],["scientific","Scientific"],["example","Example"],["warningreltolfixedprec","Relative tolerance with fixed decimal notation."],["warningabstolfloatprec","Absolute tolerance with floating decimal notation."],["answerinputinlinehand","WIRIS hand embedded"],["absolutetolerance","Absolute tolerance"],["clicktoeditalgorithm","Click the button to download and run WIRIS cas application to edit the question algorithm. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["launchwiriscas","Edit algorithm"],["sendinginitialsession","Sending initial session..."],["waitingforupdates","Waiting for updates..."],["sessionclosed","All changes saved"],["gotsession","Changes saved (revision ${n})."],["thecorrectansweris","The correct answer is"],["poweredby","Powered by"],["refresh","Renew correct answer"],["fillwithcorrect","Fill with correct answer"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["lang","es"],["comparisonwithstudentanswer","Comparación con la respuesta del estudiante"],["otheracceptedanswers","Otras respuestas aceptadas"],["equivalent_literal","Literalmente igual"],["equivalent_literal_correct_feedback","La respuesta es literalmente igual a la correcta."],["equivalent_symbolic","Matemáticamente igual"],["equivalent_symbolic_correct_feedback","La respuesta es matemáticamente igual a la correcta."],["equivalent_set","Igual como conjuntos"],["equivalent_set_correct_feedback","El conjunto de respuestas es igual al correcto."],["equivalent_equations","Ecuaciones equivalentes"],["equivalent_equations_correct_feedback","La respuesta tiene las soluciones requeridas."],["equivalent_function","Función de calificación"],["equivalent_function_correct_feedback","La respuesta es correcta."],["equivalent_all","Cualquier respuesta"],["any","cualquier"],["gradingfunction","Función de calificación"],["additionalproperties","Propiedades adicionales"],["structure","Estructura"],["none","ninguno"],["None","Ninguno"],["check_integer_form","tiene forma de número entero"],["check_integer_form_correct_feedback","La respuesta es un número entero."],["check_fraction_form","tiene forma de fracción"],["check_fraction_form_correct_feedback","La respuesta es una fracción."],["check_polynomial_form","tiene forma de polinomio"],["check_polynomial_form_correct_feedback","La respuesta es un polinomio."],["check_rational_function_form","tiene forma de función racional"],["check_rational_function_form_correct_feedback","La respuesta es una función racional."],["check_elemental_function_form","es una combinación de funciones elementales"],["check_elemental_function_form_correct_feedback","La respuesta es una expresión elemental."],["check_scientific_notation","está expresada en notación científica"],["check_scientific_notation_correct_feedback","La respuesta está expresada en notación científica."],["more","Más"],["check_simplified","está simplificada"],["check_simplified_correct_feedback","La respuesta está simplificada."],["check_expanded","está expandida"],["check_expanded_correct_feedback","La respuesta está expandida."],["check_factorized","está factorizada"],["check_factorized_correct_feedback","La respuesta está factorizada."],["check_rationalized","está racionalizada"],["check_rationalized_correct_feedback","La respuseta está racionalizada."],["check_no_common_factor","no tiene factores comunes"],["check_no_common_factor_correct_feedback","La respuesta no tiene factores comunes."],["check_minimal_radicands","tiene radicandos minimales"],["check_minimal_radicands_correct_feedback","La respuesta tiene los radicandos minimales."],["check_divisible","es divisible por"],["check_divisible_correct_feedback","La respuesta es divisible por ${value}."],["check_common_denominator","tiene denominador común"],["check_common_denominator_correct_feedback","La respuesta tiene denominador común."],["check_unit","tiene unidad equivalente a"],["check_unit_correct_feedback","La unidad de respuesta es ${unit}."],["check_unit_literal","tiene unidad literalmente igual a"],["check_unit_literal_correct_feedback","La unidad de respuesta es ${unit}."],["check_no_more_decimals","tiene menos decimales o exactamente"],["check_no_more_decimals_correct_feedback","La respuesta tiene ${digits} o menos decimales."],["check_no_more_digits","tiene menos dígitos o exactamente"],["check_no_more_digits_correct_feedback","La respuesta tiene ${digits} o menos dígitos."],["syntax_expression","General"],["syntax_expression_description","(fórmulas, expresiones, ecuaciones, matrices ...)"],["syntax_expression_correct_feedback","La sintaxis de la respuesta es correcta."],["syntax_quantity","Cantidad"],["syntax_quantity_description","(números, unidades de medida, fracciones, fracciones mixtas, razones...)"],["syntax_quantity_correct_feedback","La sintaxis de la respuesta es correcta."],["syntax_list","Lista"],["syntax_list_description","(listas sin coma separadora o paréntesis)"],["syntax_list_correct_feedback","La sintaxis de la respuesta es correcta."],["syntax_string","Texto"],["syntax_string_description","(palabras, frases, cadenas de caracteres)"],["syntax_string_correct_feedback","La sintaxis de la respuesta es correcta."],["none","ninguno"],["edit","Editar"],["accept","Aceptar"],["cancel","Cancelar"],["explog","exp/log"],["trigonometric","trigonométricas"],["hyperbolic","hiperbólicas"],["arithmetic","aritmética"],["all","todo"],["tolerance","Tolerancia"],["relative","relativa"],["relativetolerance","Tolerancia relativa"],["precision","Precisión"],["implicit_times_operator","Omitir producto"],["times_operator","Operador producto"],["imaginary_unit","Unidad imaginaria"],["mixedfractions","Fracciones mixtas"],["constants","Constantes"],["functions","Funciones"],["userfunctions","Funciones de usuario"],["units","Unidades"],["unitprefixes","Prefijos de unidades"],["syntaxparams","Opciones de sintaxis"],["syntaxparams_expression","Opciones para general"],["syntaxparams_quantity","Opciones para cantidad"],["syntaxparams_list","Opciones para lista"],["allowedinput","Entrada permitida"],["manual","Manual"],["correctanswer","Respuesta correcta"],["variables","Variables"],["validation","Validación"],["preview","Vista previa"],["correctanswertabhelp","Introduzca la respuesta correcta utilizando WIRIS editor. Seleccione también el comportamiento del editor de fórmulas cuando sea utilizado por el estudiante.\n"],["assertionstabhelp","Seleccione las propiedades que deben cumplir las respuestas de estudiante. Por ejemplo, si tiene que estar simplificado, factorizado, expresado utilizando unidades físicas o tener una precisión numérica específica."],["variablestabhelp","Escriba un algoritmo con WIRIS CAS para crear variables aleatorias: números, expresiones, gráficas o funciones de calificación.\nTambién puede especificar el formato de salida de las variables que se muestran a los estudiantes.\n"],["testtabhelp","Insertar una posible respuesta de estudiante para simular el comportamiento de la pregunta. Está usted utilizando la misma herramienta que el estudiante utilizará.\nObserve que también se pueden probar los criterios de evaluación, el éxito y la retroalimentación automática.\n"],["start","Inicio"],["test","Prueba"],["clicktesttoevaluate","Haga clic en botón de prueba para validar la respuesta actual."],["correct","¡correcto!"],["incorrect","¡incorrecto!"],["partiallycorrect","¡parcialmente correcto!"],["inputmethod","Método de entrada"],["compoundanswer","Respuesta compuesta"],["answerinputinlineeditor","WIRIS editor incrustado"],["answerinputpopupeditor","WIRIS editor en una ventana emergente"],["answerinputplaintext","Campo de entrada de texto llano"],["showauxiliarcas","Incluir WIRIS CAS"],["initialcascontent","Contenido inicial"],["tolerancedigits","Dígitos de tolerancia"],["validationandvariables","Validación y variables"],["algorithmlanguage","Idioma del algoritmo"],["calculatorlanguage","Idioma de la calculadora"],["hasalgorithm","Tiene algoritmo"],["comparison","Comparación"],["properties","Propiedades"],["studentanswer","Respuesta del estudiante"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Sus cambios se perderán si abandona la ventana."],["outputoptions","Opciones de salida"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Aviso! Este componente requiere <a href=\"http://www.java.com/es/\">instalar el plugin de Java</a> o quizás es suficiente <a href=\"http://www.java.com/es/download/help/enable_browser.xml\">activar el plugin de Java</a>."],["allanswerscorrect","Todas las respuestas deben ser correctas"],["distributegrade","Distribuir la nota"],["no","No"],["add","Añadir"],["replaceeditor","Sustituir editor"],["list","Lista"],["questionxml","Question XML"],["grammarurl","Grammar URL"],["reservedwords","Palabras reservadas"],["forcebrackets","Las listas siempre necesitan llaves \"{}\"."],["commaasitemseparator","Utiliza la coma \",\" como separador de elementos de listas."],["confirmimportdeprecated","Importar la pregunta?\nEsta pregunta tiene características obsoletas. El proceso de importación puede modificar el comportamiento de la pregunta. Revise cuidadosamente la pregunta antes de utilizarla."],["comparesets","Compara como conjuntos"],["nobracketslist","Listas sin llaves"],["warningtoleranceprecision","Precisión menor que la tolerancia."],["actionimport","Importar"],["actionexport","Exportar"],["usecase","Coincidir mayúsculas y minúsculas"],["usespaces","Coincidir espacios"],["notevaluate","Mantener los argumentos sin evaluar"],["separators","Separadores"],["comma","Coma"],["commarole","Rol del caracter coma ','"],["point","Punto"],["pointrole","Rol del caracter punto '.'"],["space","Espacio"],["spacerole","Rol del caracter espacio"],["decimalmark","Decimales"],["digitsgroup","Miles"],["listitems","Elementos de lista"],["nothing","Ninguno"],["intervals","Intervalos"],["warningprecision15","La precisión debe estar entre 1 y 15."],["decimalSeparator","Decimales"],["thousandsSeparator","Miles"],["notation","Notación"],["invisible","Invisible"],["auto","Auto"],["fixedDecimal","Fija"],["floatingDecimal","Decimal"],["scientific","Científica"],["example","Ejemplo"],["warningreltolfixedprec","Tolerancia relativa con notación de coma fija."],["warningabstolfloatprec","Tolerancia absoluta con notación de coma flotante."],["answerinputinlinehand","WIRIS hand incrustado"],["absolutetolerance","Tolerancia absoluta"],["clicktoeditalgorithm","Clica el botón para descargar y ejecutar la aplicación WIRIS cas para editar el algoritmo de la pregunta. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprende más</a>."],["launchwiriscas","Editar algoritmo"],["sendinginitialsession","Enviando algoritmo inicial."],["waitingforupdates","Esperando actualizaciones."],["sessionclosed","Todos los cambios guardados."],["gotsession","Cambios guardados (revisión ${n})."],["thecorrectansweris","La respuesta correcta es"],["poweredby","Creado por"],["refresh","Renovar la respuesta correcta"],["fillwithcorrect","Rellenar con la respuesta correcta"],["runcalculator","Ejecutar calculadora"],["clicktoruncalculator","Clica el botón para descargar y ejecutar la aplicación WIRIS cas para hacer los cálculos que necesite. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprende más</a>."],["answer","respuesta"],["lang","ca"],["comparisonwithstudentanswer","Comparació amb la resposta de l'estudiant"],["otheracceptedanswers","Altres respostes acceptades"],["equivalent_literal","Literalment igual"],["equivalent_literal_correct_feedback","La resposta és literalment igual a la correcta."],["equivalent_symbolic","Matemàticament igual"],["equivalent_symbolic_correct_feedback","La resposta és matemàticament igual a la correcta."],["equivalent_set","Igual com a conjunts"],["equivalent_set_correct_feedback","El conjunt de respostes és igual al correcte."],["equivalent_equations","Equacions equivalents"],["equivalent_equations_correct_feedback","La resposta té les solucions requerides."],["equivalent_function","Funció de qualificació"],["equivalent_function_correct_feedback","La resposta és correcta."],["equivalent_all","Qualsevol resposta"],["any","qualsevol"],["gradingfunction","Funció de qualificació"],["additionalproperties","Propietats addicionals"],["structure","Estructura"],["none","cap"],["None","Cap"],["check_integer_form","té forma de nombre enter"],["check_integer_form_correct_feedback","La resposta és un nombre enter."],["check_fraction_form","té forma de fracció"],["check_fraction_form_correct_feedback","La resposta és una fracció."],["check_polynomial_form","té forma de polinomi"],["check_polynomial_form_correct_feedback","La resposta és un polinomi."],["check_rational_function_form","té forma de funció racional"],["check_rational_function_form_correct_feedback","La resposta és una funció racional."],["check_elemental_function_form","és una combinació de funcions elementals"],["check_elemental_function_form_correct_feedback","La resposta és una expressió elemental."],["check_scientific_notation","està expressada en notació científica"],["check_scientific_notation_correct_feedback","La resposta està expressada en notació científica."],["more","Més"],["check_simplified","està simplificada"],["check_simplified_correct_feedback","La resposta està simplificada."],["check_expanded","està expandida"],["check_expanded_correct_feedback","La resposta està expandida."],["check_factorized","està factoritzada"],["check_factorized_correct_feedback","La resposta està factoritzada."],["check_rationalized","està racionalitzada"],["check_rationalized_correct_feedback","La resposta está racionalitzada."],["check_no_common_factor","no té factors comuns"],["check_no_common_factor_correct_feedback","La resposta no té factors comuns."],["check_minimal_radicands","té radicands minimals"],["check_minimal_radicands_correct_feedback","La resposta té els radicands minimals."],["check_divisible","és divisible per"],["check_divisible_correct_feedback","La resposta és divisible per ${value}."],["check_common_denominator","té denominador comú"],["check_common_denominator_correct_feedback","La resposta té denominador comú."],["check_unit","té unitat equivalent a"],["check_unit_correct_feedback","La unitat de resposta és ${unit}."],["check_unit_literal","té unitat literalment igual a"],["check_unit_literal_correct_feedback","La unitat de resposta és ${unit}."],["check_no_more_decimals","té menys decimals o exactament"],["check_no_more_decimals_correct_feedback","La resposta té ${digits} o menys decimals."],["check_no_more_digits","té menys dígits o exactament"],["check_no_more_digits_correct_feedback","La resposta té ${digits} o menys dígits."],["syntax_expression","General"],["syntax_expression_description","(fórmules, expressions, equacions, matrius ...)"],["syntax_expression_correct_feedback","La sintaxi de la resposta és correcta."],["syntax_quantity","Quantitat"],["syntax_quantity_description","(nombres, unitats de mesura, fraccions, fraccions mixtes, raons...)"],["syntax_quantity_correct_feedback","La sintaxi de la resposta és correcta."],["syntax_list","Llista"],["syntax_list_description","(llistes sense coma separadora o parèntesis)"],["syntax_list_correct_feedback","La sintaxi de la resposta és correcta."],["syntax_string","Text"],["syntax_string_description","(paraules, frases, cadenas de caràcters)"],["syntax_string_correct_feedback","La sintaxi de la resposta és correcta."],["none","cap"],["edit","Editar"],["accept","Acceptar"],["cancel","Cancel·lar"],["explog","exp/log"],["trigonometric","trigonomètriques"],["hyperbolic","hiperbòliques"],["arithmetic","aritmètica"],["all","tot"],["tolerance","Tolerància"],["relative","relativa"],["relativetolerance","Tolerància relativa"],["precision","Precisió"],["implicit_times_operator","Ometre producte"],["times_operator","Operador producte"],["imaginary_unit","Unitat imaginària"],["mixedfractions","Fraccions mixtes"],["constants","Constants"],["functions","Funcions"],["userfunctions","Funcions d'usuari"],["units","Unitats"],["unitprefixes","Prefixos d'unitats"],["syntaxparams","Opcions de sintaxi"],["syntaxparams_expression","Opcions per a general"],["syntaxparams_quantity","Opcions per a quantitat"],["syntaxparams_list","Opcions per a llista"],["allowedinput","Entrada permesa"],["manual","Manual"],["correctanswer","Resposta correcta"],["variables","Variables"],["validation","Validació"],["preview","Vista prèvia"],["correctanswertabhelp","Introduïu la resposta correcta utilitzant WIRIS editor. Seleccioneu també el comportament de l'editor de fórmules quan sigui utilitzat per l'estudiant.\n"],["assertionstabhelp","Seleccioneu les propietats que han de complir les respostes d'estudiant. Per exemple, si ha d'estar simplificat, factoritzat, expressat utilitzant unitats físiques o tenir una precisió numèrica específica."],["variablestabhelp","Escriviu un algorisme amb WIRIS CAS per crear variables aleatòries: números, expressions, gràfiques o funcions de qualificació.\nTambé podeu especificar el format de sortida de les variables que es mostren als estudiants.\n"],["testtabhelp","Inserir una possible resposta d'estudiant per simular el comportament de la pregunta. Està utilitzant la mateixa eina que l'estudiant utilitzarà per entrar la resposta.\nObserve que también se pueden probar los criterios de evaluación, el éxito y la retroalimentación automática.\n"],["start","Inici"],["test","Prova"],["clicktesttoevaluate","Feu clic a botó de prova per validar la resposta actual."],["correct","Correcte!"],["incorrect","Incorrecte!"],["partiallycorrect","Parcialment correcte!"],["inputmethod","Mètode d'entrada"],["compoundanswer","Resposta composta"],["answerinputinlineeditor","WIRIS editor incrustat"],["answerinputpopupeditor","WIRIS editor en una finestra emergent"],["answerinputplaintext","Camp d'entrada de text pla"],["showauxiliarcas","Incloure WIRIS CAS"],["initialcascontent","Contingut inicial"],["tolerancedigits","Dígits de tolerància"],["validationandvariables","Validació i variables"],["algorithmlanguage","Idioma de l'algorisme"],["calculatorlanguage","Idioma de la calculadora"],["hasalgorithm","Té algorisme"],["comparison","Comparació"],["properties","Propietats"],["studentanswer","Resposta de l'estudiant"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Els seus canvis es perdran si abandona la finestra."],["outputoptions","Opcions de sortida"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Totes les respostes han de ser correctes"],["distributegrade","Distribueix la nota"],["no","No"],["add","Afegir"],["replaceeditor","Substitueix l'editor"],["list","Llista"],["questionxml","Question XML"],["grammarurl","Grammar URL"],["reservedwords","Paraules reservades"],["forcebrackets","Les llistes sempre necessiten claus \"{}\"."],["commaasitemseparator","Utilitza la coma \",\" com a separador d'elements de llistes."],["confirmimportdeprecated","Importar la pregunta?\nAquesta pregunta conté característiques obsoletes. El procés d'importació pot canviar lleugerament el comportament de la pregunta. És altament recomanat comprovar cuidadosament la pregunta després de la importació."],["comparesets","Compara com a conjunts"],["nobracketslist","Llistes sense claus"],["warningtoleranceprecision","Hi ha menys dígits de precisió que dígits de tolerància."],["actionimport","Importar"],["actionexport","Exportar"],["usecase","Coincideix majúscules i minúscules"],["usespaces","Coincideix espais"],["notevaluate","Mantén els arguments sense avaluar"],["separators","Separadors"],["comma","Coma"],["commarole","Rol del caràcter coma ','"],["point","Punt"],["pointrole","Rol del caràcter punt '.'"],["space","Espai"],["spacerole","Rol del caràcter espai"],["decimalmark","Decimals"],["digitsgroup","Milers"],["listitems","Elements de llista"],["nothing","Cap"],["intervals","Intervals"],["warningprecision15","La precisió ha de ser entre 1 i 15."],["decimalSeparator","Decimals"],["thousandsSeparator","Milers"],["notation","Notació"],["invisible","Invisible"],["auto","Auto"],["fixedDecimal","Fixa"],["floatingDecimal","Decimal"],["scientific","Científica"],["example","Exemple"],["warningreltolfixedprec","Tolerància relativa amb notació de coma fixa."],["warningabstolfloatprec","Tolerància absoluta amb notació de coma flotant."],["answerinputinlinehand","WIRIS hand incrustat"],["absolutetolerance","Tolerància absoluta"],["clicktoeditalgorithm","Clica el botó per a descarregar i executar l'aplicació WIRIS cas per a editar l'algorisme de la pregunta. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprèn-ne més</a>."],["launchwiriscas","Editar algorisme"],["sendinginitialsession","Enviant algorisme inicial."],["waitingforupdates","Esperant actualitzacions."],["sessionclosed","S'han desat tots els canvis."],["gotsession","Canvis desats (revisió ${n})."],["thecorrectansweris","La resposta correcta és"],["poweredby","Creat per"],["refresh","Renova la resposta correcta"],["fillwithcorrect","Omple amb la resposta correcta"],["runcalculator","Executar calculadora"],["clicktoruncalculator","Clica el botó per a descarregar i executar l'aplicació WIRIS cas per a fer els càlculs que necessiti. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprèn-ne més</a>."],["answer","resposta"],["lang","it"],["comparisonwithstudentanswer","Confronto con la risposta dello studente"],["otheracceptedanswers","Altre risposte accettate"],["equivalent_literal","Letteralmente uguale"],["equivalent_literal_correct_feedback","La risposta è letteralmente uguale a quella corretta."],["equivalent_symbolic","Matematicamente uguale"],["equivalent_symbolic_correct_feedback","La risposta è matematicamente uguale a quella corretta."],["equivalent_set","Uguale come serie"],["equivalent_set_correct_feedback","La risposta è una serie uguale a quella corretta."],["equivalent_equations","Equazioni equivalenti"],["equivalent_equations_correct_feedback","La risposta ha le stesse soluzioni di quella corretta."],["equivalent_function","Funzione di classificazione"],["equivalent_function_correct_feedback","La risposta è corretta."],["equivalent_all","Qualsiasi risposta"],["any","qualsiasi"],["gradingfunction","Funzione di classificazione"],["additionalproperties","Proprietà aggiuntive"],["structure","Struttura"],["none","nessuno"],["None","Nessuno"],["check_integer_form","corrisponde a un numero intero"],["check_integer_form_correct_feedback","La risposta è un numero intero."],["check_fraction_form","corrisponde a una frazione"],["check_fraction_form_correct_feedback","La risposta è una frazione."],["check_polynomial_form","corrisponde a un polinomio"],["check_polynomial_form_correct_feedback","La risposta è un polinomio."],["check_rational_function_form","corrisponde a una funzione razionale"],["check_rational_function_form_correct_feedback","La risposta è una funzione razionale."],["check_elemental_function_form","è una combinazione di funzioni elementari"],["check_elemental_function_form_correct_feedback","La risposta è un'espressione elementare."],["check_scientific_notation","è espressa in notazione scientifica"],["check_scientific_notation_correct_feedback","La risposta è espressa in notazione scientifica."],["more","Altro"],["check_simplified","è semplificata"],["check_simplified_correct_feedback","La risposta è semplificata."],["check_expanded","è espansa"],["check_expanded_correct_feedback","La risposta è espansa."],["check_factorized","è scomposta in fattori"],["check_factorized_correct_feedback","La risposta è scomposta in fattori."],["check_rationalized","è razionalizzata"],["check_rationalized_correct_feedback","La risposta è razionalizzata."],["check_no_common_factor","non ha fattori comuni"],["check_no_common_factor_correct_feedback","La risposta non ha fattori comuni."],["check_minimal_radicands","ha radicandi minimi"],["check_minimal_radicands_correct_feedback","La risposta contiene radicandi minimi."],["check_divisible","è divisibile per"],["check_divisible_correct_feedback","La risposta è divisibile per ${value}."],["check_common_denominator","ha un solo denominatore comune"],["check_common_denominator_correct_feedback","La risposta ha un solo denominatore comune."],["check_unit","ha un'unità equivalente a"],["check_unit_correct_feedback","La risposta è l'unità ${unit}."],["check_unit_literal","ha un'unità letteralmente uguale a"],["check_unit_literal_correct_feedback","La risposta è l'unità ${unit}."],["check_no_more_decimals","ha un numero inferiore o uguale di decimali rispetto a"],["check_no_more_decimals_correct_feedback","La risposta ha ${digits} o meno decimali."],["check_no_more_digits","ha un numero inferiore o uguale di cifre rispetto a"],["check_no_more_digits_correct_feedback","La risposta ha ${digits} o meno cifre."],["syntax_expression","Generale"],["syntax_expression_description","(formule, espressioni, equazioni, matrici etc.)"],["syntax_expression_correct_feedback","La sintassi della risposta è corretta."],["syntax_quantity","Quantità"],["syntax_quantity_description","(numeri, unità di misura, frazioni, frazioni miste, proporzioni etc.)"],["syntax_quantity_correct_feedback","La sintassi della risposta è corretta."],["syntax_list","Elenco"],["syntax_list_description","(elenchi senza virgola di separazione o parentesi)"],["syntax_list_correct_feedback","La sintassi della risposta è corretta."],["syntax_string","Testo"],["syntax_string_description","(parole, frasi, stringhe di caratteri)"],["syntax_string_correct_feedback","La sintassi della risposta è corretta."],["none","nessuno"],["edit","Modifica"],["accept","Accetta"],["cancel","Annulla"],["explog","esponenziale/logaritmica"],["trigonometric","trigonometrica"],["hyperbolic","iperbolica"],["arithmetic","aritmetica"],["all","tutto"],["tolerance","Tolleranza"],["relative","relativa"],["relativetolerance","Tolleranza relativa"],["precision","Precisione"],["implicit_times_operator","Operatore prodotto non visibile"],["times_operator","Operatore prodotto"],["imaginary_unit","Unità immaginaria"],["mixedfractions","Frazioni miste"],["constants","Costanti"],["functions","Funzioni"],["userfunctions","Funzioni utente"],["units","Unità"],["unitprefixes","Prefissi unità"],["syntaxparams","Opzioni di sintassi"],["syntaxparams_expression","Opzioni per elementi generali"],["syntaxparams_quantity","Opzioni per la quantità"],["syntaxparams_list","Opzioni per elenchi"],["allowedinput","Input consentito"],["manual","Manuale"],["correctanswer","Risposta corretta"],["variables","Variabili"],["validation","Verifica"],["preview","Anteprima"],["correctanswertabhelp","Inserisci la risposta corretta utilizzando l'editor WIRIS. Seleziona anche un comportamento per l'editor di formule se utilizzato dallo studente.\nNon potrai archiviare la risposta se non si tratta di un'espressione valida.\n"],["assertionstabhelp","Seleziona quali proprietà deve verificare la risposta dello studente. Ad esempio, se la risposta deve essere semplificata, scomposta in fattori o espressa in unità fisiche o se ha una precisione numerica specifica."],["variablestabhelp","Scrivi un algoritmo con WIRIS cas per creare variabili casuali: numeri, espressioni, diagrammi o funzioni di classificazione.\nPuoi anche specificare il formato delle variabili mostrate allo studente.\n"],["testtabhelp","Inserisci la risposta di un possibile studente per simulare il comportamento della domanda. Per questa operazione, utilizzi lo stesso strumento che utilizzerà lo studente.\nNota: puoi anche testare i criteri di valutazione, di risposta corretta e il feedback automatico.\n"],["start","Inizio"],["test","Test"],["clicktesttoevaluate","Fai clic sul pulsante Test per verificare la risposta attuale."],["correct","Risposta corretta."],["incorrect","Risposta sbagliata."],["partiallycorrect","Risposta corretta in parte."],["inputmethod","Metodo di input"],["compoundanswer","Risposta composta"],["answerinputinlineeditor","WIRIS editor integrato"],["answerinputpopupeditor","WIRIS editor nella finestra a comparsa"],["answerinputplaintext","Campo di input testo semplice"],["showauxiliarcas","Includi WIRIS cas"],["initialcascontent","Contenuto iniziale"],["tolerancedigits","Cifre di tolleranza"],["validationandvariables","Verifica e variabili"],["algorithmlanguage","Lingua algoritmo"],["calculatorlanguage","Lingua calcolatrice"],["hasalgorithm","Ha l'algoritmo"],["comparison","Confronto"],["properties","Proprietà"],["studentanswer","Risposta dello studente"],["poweredbywiris","Realizzato con WIRIS"],["yourchangeswillbelost","Se chiudi la finestra, le modifiche andranno perse."],["outputoptions","Opzioni risultato"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Tutte le risposte devono essere corrette"],["distributegrade","Fornisci voto"],["no","No"],["add","Aggiungi"],["replaceeditor","Sostituisci editor"],["list","Elenco"],["questionxml","XML domanda"],["grammarurl","URL grammatica"],["reservedwords","Parole riservate"],["forcebrackets","Gli elenchi devono sempre contenere le parentesi graffe \"{}\"."],["commaasitemseparator","Utilizza la virgola \",\" per separare gli elementi di un elenco."],["confirmimportdeprecated","Vuoi importare la domanda?\n    La domanda che vuoi aprire contiene funzionalità obsolete. Il processo di importazione potrebbe modificare leggermente il comportamento della domanda. Ti consigliamo di controllare attentamente la domanda dopo l'importazione."],["comparesets","Confronta come serie"],["nobracketslist","Elenchi senza parentesi"],["warningtoleranceprecision","Le cifre di precisione sono inferiori a quelle di tolleranza."],["actionimport","Importazione"],["actionexport","Esportazione"],["usecase","Rispetta maiuscole/minuscole"],["usespaces","Rispetta spazi"],["notevaluate","Mantieni argomenti non valutati"],["separators","Separatori"],["comma","Virgola"],["commarole","Ruolo della virgola “,”"],["point","Punto"],["pointrole","Ruolo del punto “.”"],["space","Spazio"],["spacerole","Ruolo dello spazio"],["decimalmark","Cifre decimali"],["digitsgroup","Gruppi di cifre"],["listitems","Elenca elementi"],["nothing","Niente"],["intervals","Intervalli"],["warningprecision15","La precisione deve essere compresa tra 1 e 15."],["decimalSeparator","Decimale"],["thousandsSeparator","Migliaia"],["notation","Notazione"],["invisible","Invisibile"],["auto","Automatico"],["fixedDecimal","Fisso"],["floatingDecimal","Decimale"],["scientific","Scientifica"],["example","Esempio"],["warningreltolfixedprec","Tolleranza relativa con notazione decimale fissa."],["warningabstolfloatprec","Tolleranza assoluta con notazione decimale fluttuante."],["answerinputinlinehand","Applicazione WIRIS hand incorporata"],["absolutetolerance","Tolleranza assoluta"],["clicktoeditalgorithm","Il tuo browser non <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">supporta Java</a>. Fai clic sul pulsante per scaricare ed eseguire l’applicazione WIRIS cas che consente di modificare l’algoritmo della domanda."],["launchwiriscas","Avvia WIRIS cas"],["sendinginitialsession","Invio della sessione iniziale..."],["waitingforupdates","In attesa degli aggiornamenti..."],["sessionclosed","Comunicazione chiusa."],["gotsession","Ricevuta revisione ${n}."],["thecorrectansweris","La risposta corretta è"],["poweredby","Offerto da"],["refresh","Rinnova la risposta corretta"],["fillwithcorrect","Inserisci la risposta corretta"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["lang","fr"],["comparisonwithstudentanswer","Comparaison avec la réponse de l'étudiant"],["otheracceptedanswers","Autres réponses acceptées"],["equivalent_literal","Strictement égal"],["equivalent_literal_correct_feedback","La réponse est strictement égale à la bonne réponse."],["equivalent_symbolic","Mathématiquement égal"],["equivalent_symbolic_correct_feedback","La réponse est mathématiquement égale à la bonne réponse."],["equivalent_set","Égal en tant qu'ensembles"],["equivalent_set_correct_feedback","L'ensemble de réponses est égal à la bonne réponse."],["equivalent_equations","Équations équivalentes"],["equivalent_equations_correct_feedback","La réponse partage les mêmes solutions que la bonne réponse."],["equivalent_function","Fonction de gradation"],["equivalent_function_correct_feedback","C'est la bonne réponse."],["equivalent_all","N'importe quelle réponse"],["any","quelconque"],["gradingfunction","Fonction de gradation"],["additionalproperties","Propriétés supplémentaires"],["structure","Structure"],["none","aucune"],["None","Aucune"],["check_integer_form","a la forme d'un entier."],["check_integer_form_correct_feedback","La réponse est un nombre entier."],["check_fraction_form","a la forme d'une fraction"],["check_fraction_form_correct_feedback","La réponse est une fraction."],["check_polynomial_form","a la forme d'un polynôme"],["check_polynomial_form_correct_feedback","La réponse est un polynôme."],["check_rational_function_form","a la forme d'une fonction rationnelle"],["check_rational_function_form_correct_feedback","La réponse est une fonction rationnelle."],["check_elemental_function_form","est une combinaison de fonctions élémentaires"],["check_elemental_function_form_correct_feedback","La réponse est une expression élémentaire."],["check_scientific_notation","est exprimé en notation scientifique"],["check_scientific_notation_correct_feedback","La réponse est exprimée en notation scientifique."],["more","Plus"],["check_simplified","est simplifié"],["check_simplified_correct_feedback","La réponse est simplifiée."],["check_expanded","est développé"],["check_expanded_correct_feedback","La réponse est développée."],["check_factorized","est factorisé"],["check_factorized_correct_feedback","La réponse est factorisée."],["check_rationalized"," : rationalisé"],["check_rationalized_correct_feedback","La réponse est rationalisée."],["check_no_common_factor","n'a pas de facteurs communs"],["check_no_common_factor_correct_feedback","La réponse n'a pas de facteurs communs."],["check_minimal_radicands","a des radicandes minimaux"],["check_minimal_radicands_correct_feedback","La réponse a des radicandes minimaux."],["check_divisible","est divisible par"],["check_divisible_correct_feedback","La réponse est divisible par ${value}."],["check_common_denominator","a un seul dénominateur commun"],["check_common_denominator_correct_feedback","La réponse inclut un seul dénominateur commun."],["check_unit","inclut une unité équivalente à"],["check_unit_correct_feedback","La bonne unité est ${unit}."],["check_unit_literal","a une unité strictement égale à"],["check_unit_literal_correct_feedback","La bonne unité est ${unit}."],["check_no_more_decimals","a le même nombre ou moins de décimales que"],["check_no_more_decimals_correct_feedback","La réponse inclut au plus ${digits} décimales."],["check_no_more_digits","a le même nombre ou moins de chiffres que"],["check_no_more_digits_correct_feedback","La réponse inclut au plus ${digits} chiffres."],["syntax_expression","Général"],["syntax_expression_description","(formules, expressions, équations, matrices…)"],["syntax_expression_correct_feedback","La syntaxe de la réponse est correcte."],["syntax_quantity","Quantité"],["syntax_quantity_description","(nombres, unités de mesure, fractions, fractions mixtes, proportions…)"],["syntax_quantity_correct_feedback","La syntaxe de la réponse est correcte."],["syntax_list","Liste"],["syntax_list_description","(listes sans virgule ou crochets de séparation)"],["syntax_list_correct_feedback","La syntaxe de la réponse est correcte."],["syntax_string","Texte"],["syntax_string_description","(mots, phrases, suites de caractères)"],["syntax_string_correct_feedback","La syntaxe de la réponse est correcte."],["none","aucune"],["edit","Modifier"],["accept","Accepter"],["cancel","Annuler"],["explog","exp/log"],["trigonometric","trigonométrique"],["hyperbolic","hyperbolique"],["arithmetic","arithmétique"],["all","toutes"],["tolerance","Tolérance"],["relative","relative"],["relativetolerance","Tolérance relative"],["precision","Précision"],["implicit_times_operator","Opérateur de multiplication invisible"],["times_operator","Opérateur de multiplication"],["imaginary_unit","Unité imaginaire"],["mixedfractions","Fractions mixtes"],["constants","Constantes"],["functions","Fonctions"],["userfunctions","Fonctions personnalisées"],["units","Unités"],["unitprefixes","Préfixes d'unité"],["syntaxparams","Options de syntaxe"],["syntaxparams_expression","Options générales"],["syntaxparams_quantity","Options de quantité"],["syntaxparams_list","Options de liste"],["allowedinput","Entrée autorisée"],["manual","Manuel"],["correctanswer","Bonne réponse"],["variables","Variables"],["validation","Validation"],["preview","Aperçu"],["correctanswertabhelp","Insérer la bonne réponse à l'aide du WIRIS Editor. Sélectionner aussi le comportement de l'éditeur de formule lorsque l'étudiant y fait appel.\n"],["assertionstabhelp","Sélectionner les propriétés que la réponse de l'étudiant doit satisfaire. Par exemple, si elle doit être simplifiée, factorisée, exprimée dans une unité physique ou présenter une précision chiffrée spécifique."],["variablestabhelp","Écrire un algorithme à l'aide de WIRIS CAS pour créer des variables aléatoires : des nombres, des expressions, des courbes ou une fonction de gradation. \nVous pouvez aussi spécifier un format des variables pour l'affichage à l'étudiant.\n"],["testtabhelp","Insérer une réponse possible de l'étudiant afin de simuler le comportement de la question. Vous utilisez le même outil que l'étudiant. \nNotez que vous pouvez aussi tester le critère d'évaluation, de réussite et les commentaires automatiques.\n"],["start","Démarrer"],["test","Tester"],["clicktesttoevaluate","Cliquer sur le bouton Test pour valider la réponse actuelle."],["correct","Correct !"],["incorrect","Incorrect !"],["partiallycorrect","Partiellement correct !"],["inputmethod","Méthode de saisie"],["compoundanswer","Réponse composée"],["answerinputinlineeditor","WIRIS Editor intégré"],["answerinputpopupeditor","WIRIS Editor dans une fenêtre"],["answerinputplaintext","Champ de saisie de texte brut"],["showauxiliarcas","Inclure WIRIS CAS"],["initialcascontent","Contenu initial"],["tolerancedigits","Tolérance en chiffres"],["validationandvariables","Validation et variables"],["algorithmlanguage","Langage d'algorithme"],["calculatorlanguage","Langage de calcul"],["hasalgorithm","Possède un algorithme"],["comparison","Comparaison"],["properties","Propriétés"],["studentanswer","Réponse de l'étudiant"],["poweredbywiris","Développé par WIRIS"],["yourchangeswillbelost","Vous perdrez vos modifications si vous fermez la fenêtre."],["outputoptions","Options de sortie"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Toutes les réponses doivent être correctes"],["distributegrade","Degré de distribution"],["no","Non"],["add","Ajouter"],["replaceeditor","Remplacer l'éditeur"],["list","Liste"],["questionxml","Question XML"],["grammarurl","URL de la grammaire"],["reservedwords","Mots réservés"],["forcebrackets","Les listes requièrent l'utilisation d'accolades « {} »."],["commaasitemseparator","Utiliser une virgule « , » comme séparateur d'éléments de liste."],["confirmimportdeprecated","Importer la question ? \nLa question que vous êtes sur le point d'ouvrir contient des fonctionnalités obsolètes. Il se peut que la procédure d'importation modifie légèrement le comportement de la question. Il est fortement recommandé de tester attentivement la question après l'importation."],["comparesets","Comparer en tant qu'ensembles"],["nobracketslist","Listes sans crochets"],["warningtoleranceprecision","Moins de chiffres pour la précision que pour la tolérance."],["actionimport","Importer"],["actionexport","Exporter"],["usecase","Respecter la casse"],["usespaces","Respecter les espaces"],["notevaluate","Conserver les arguments non évalués"],["separators","Séparateurs"],["comma","Virgule"],["commarole","Rôle du signe virgule « , »"],["point","Point"],["pointrole","Rôle du signe point « . »"],["space","Espace"],["spacerole","Rôle du signe espace"],["decimalmark","Chiffres après la virgule"],["digitsgroup","Groupes de chiffres"],["listitems","Éléments de liste"],["nothing","Rien"],["intervals","Intervalles"],["warningprecision15","La précision doit être entre 1 et 15."],["decimalSeparator","Virgule"],["thousandsSeparator","Milliers"],["notation","Notation"],["invisible","Invisible"],["auto","Auto."],["fixedDecimal","Fixe"],["floatingDecimal","Décimale"],["scientific","Scientifique"],["example","Exemple"],["warningreltolfixedprec","Tolérance relative avec la notation en mode virgule fixe."],["warningabstolfloatprec","Tolérance absolue avec la notation en mode virgule flottante."],["answerinputinlinehand","WIRIS écriture manuscrite intégrée"],["absolutetolerance","Tolérance absolue"],["clicktoeditalgorithm","Votre navigateur ne prend <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">pas en charge Java</a>. Cliquez sur le bouton pour télécharger et exécuter l’application WIRIS CAS et modifier l’algorithme de votre question."],["launchwiriscas","Lancer WIRIS CAS"],["sendinginitialsession","Envoi de la session de départ…"],["waitingforupdates","Attente des actualisations…"],["sessionclosed","Transmission fermée."],["gotsession","Révision reçue ${n}."],["thecorrectansweris","La bonne réponse est"],["poweredby","Basé sur"],["refresh","Confirmer la réponse correcte"],["fillwithcorrect","Remplir avec la réponse correcte"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["lang","de"],["comparisonwithstudentanswer","Vergleich mit Schülerantwort"],["otheracceptedanswers","Weitere akzeptierte Antworten"],["equivalent_literal","Im Wortsinn äquivalent"],["equivalent_literal_correct_feedback","Die Antwort ist im Wortsinn äquivalent zur richtigen."],["equivalent_symbolic","Mathematisch äquivalent"],["equivalent_symbolic_correct_feedback","Die Antwort ist mathematisch äquivalent zur richtigen Antwort."],["equivalent_set","Äquivalent als Sätze"],["equivalent_set_correct_feedback","Der Fragensatz ist äquivalent zum richtigen."],["equivalent_equations","Äquivalente Gleichungen"],["equivalent_equations_correct_feedback","Die Antwort hat die gleichen Lösungen wie die richtige."],["equivalent_function","Benotungsfunktion"],["equivalent_function_correct_feedback","Die Antwort ist richtig."],["equivalent_all","Jede Antwort"],["any","Irgendeine"],["gradingfunction","Benotungsfunktion"],["additionalproperties","Zusätzliche Eigenschaften"],["structure","Struktur"],["none","Keine"],["None","Keine"],["check_integer_form","hat Form einer ganzen Zahl"],["check_integer_form_correct_feedback","Die Antwort ist eine ganze Zahl."],["check_fraction_form","hat Form einer Bruchzahl"],["check_fraction_form_correct_feedback","Die Antwort ist eine Bruchzahl."],["check_polynomial_form","hat Form eines Polynoms"],["check_polynomial_form_correct_feedback","Die Antwort ist ein Polynom."],["check_rational_function_form","hat Form einer rationalen Funktion"],["check_rational_function_form_correct_feedback","Die Antwort ist eine rationale Funktion."],["check_elemental_function_form","ist eine Kombination aus elementaren Funktionen"],["check_elemental_function_form_correct_feedback","Die Antwort ist ein elementarer Ausdruck."],["check_scientific_notation","ist in wissenschaftlicher Schreibweise ausgedrückt"],["check_scientific_notation_correct_feedback","Die Antwort ist in wissenschaftlicher Schreibweise ausgedrückt."],["more","Mehr"],["check_simplified","ist vereinfacht"],["check_simplified_correct_feedback","Die Antwort ist vereinfacht."],["check_expanded","ist erweitert"],["check_expanded_correct_feedback","Die Antwort ist erweitert."],["check_factorized","ist faktorisiert"],["check_factorized_correct_feedback","Die Antwort ist faktorisiert."],["check_rationalized","ist rationalisiert"],["check_rationalized_correct_feedback","Die Antwort ist rationalisiert."],["check_no_common_factor","hat keine gemeinsamen Faktoren"],["check_no_common_factor_correct_feedback","Die Antwort hat keine gemeinsamen Faktoren."],["check_minimal_radicands","weist minimale Radikanden auf"],["check_minimal_radicands_correct_feedback","Die Antwort weist minimale Radikanden auf."],["check_divisible","ist teilbar durch"],["check_divisible_correct_feedback","Die Antwort ist teilbar durch ${value}."],["check_common_denominator","hat einen einzigen gemeinsamen Nenner"],["check_common_denominator_correct_feedback","Die Antwort hat einen einzigen gemeinsamen Nenner."],["check_unit","hat äquivalente Einheit zu"],["check_unit_correct_feedback","Die Einheit der Antwort ist ${unit}."],["check_unit_literal","hat Einheit im Wortsinn äquivalent zu"],["check_unit_literal_correct_feedback","Die Einheit der Antwort ist ${unit}."],["check_no_more_decimals","hat weniger als oder gleich viele Dezimalstellen wie"],["check_no_more_decimals_correct_feedback","Die Antwort hat ${digits} oder weniger Dezimalstellen."],["check_no_more_digits","hat weniger oder gleich viele Stellen wie"],["check_no_more_digits_correct_feedback","Die Antwort hat ${digits} oder weniger Stellen."],["syntax_expression","Allgemein"],["syntax_expression_description","(Formeln, Ausdrücke, Gleichungen, Matrizen ...)"],["syntax_expression_correct_feedback","Die Syntax der Antwort ist richtig."],["syntax_quantity","Menge"],["syntax_quantity_description","(Zahlen, Maßeinheiten, Brüche, gemischte Brüche, Verhältnisse ...)"],["syntax_quantity_correct_feedback","Die Syntax der Antwort ist richtig."],["syntax_list","Liste"],["syntax_list_description","(Listen ohne Komma als Trennzeichen oder Klammern)"],["syntax_list_correct_feedback","Die Syntax der Antwort ist richtig."],["syntax_string","Text"],["syntax_string_description","(Wörter, Sätze, Zeichenketten)"],["syntax_string_correct_feedback","Die Syntax der Antwort ist richtig."],["none","Keine"],["edit","Bearbeiten"],["accept","Akzeptieren"],["cancel","Abbrechen"],["explog","exp/log"],["trigonometric","Trigonometrische"],["hyperbolic","Hyperbolische"],["arithmetic","Arithmetische"],["all","Alle"],["tolerance","Toleranz"],["relative","Relative"],["relativetolerance","Relative Toleranz"],["precision","Genauigkeit"],["implicit_times_operator","Unsichtbares Multiplikationszeichen"],["times_operator","Multiplikationszeichen"],["imaginary_unit","Imaginäre Einheit"],["mixedfractions","Gemischte Brüche"],["constants","Konstanten"],["functions","Funktionen"],["userfunctions","Nutzerfunktionen"],["units","Einheiten"],["unitprefixes","Einheitenpräfixe"],["syntaxparams","Syntaxoptionen"],["syntaxparams_expression","Optionen für Allgemein"],["syntaxparams_quantity","Optionen für Menge"],["syntaxparams_list","Optionen für Liste"],["allowedinput","Zulässige Eingabe"],["manual","Anleitung"],["correctanswer","Richtige Antwort"],["variables","Variablen"],["validation","Validierung"],["preview","Vorschau"],["correctanswertabhelp","Geben Sie die richtige Antwort unter Verwendung des WIRIS editors ein. Wählen Sie auch die Verhaltensweise des Formel-Editors, wenn er vom Schüler verwendet wird.\n"],["assertionstabhelp","Wählen Sie die Eigenschaften, welche die Schülerantwort erfüllen muss: Ob Sie zum Beispiel vereinfacht, faktorisiert, durch physikalische Einheiten ausgedrückt werden oder eine bestimmte numerische Genauigkeit aufweisen soll."],["variablestabhelp","Schreiben Sie einen Algorithmus mit WIRIS cas, um zufällige Variablen zu erstellen:  Zahlen, Ausdrücke, grafische Darstellungen oder eine Benotungsfunktion. Sie können auch das Ausgabeformat bestimmen, in welchem die Variablen dem Schüler angezeigt werden.\n"],["testtabhelp","Geben Sie eine mögliche Schülerantwort ein, um die Verhaltensweise der Frage zu simulieren. Sie verwenden das gleiche Tool, das der Schüler verwenden wird. Beachten Sie bitte, dass Sie auch die Bewertungskriterien, den Erfolg und das automatische Feedback testen können.\n"],["start","Start"],["test","Testen"],["clicktesttoevaluate","Klicken Sie auf die Schaltfläche „Testen“, um die aktuelle Antwort zu validieren."],["correct","Richtig!"],["incorrect","Falsch!"],["partiallycorrect","Teilweise richtig!"],["inputmethod","Eingabemethode"],["compoundanswer","Zusammengesetzte Antwort"],["answerinputinlineeditor","WIRIS editor eingebettet"],["answerinputpopupeditor","WIRIS editor in Popup"],["answerinputplaintext","Eingabefeld mit reinem Text"],["showauxiliarcas","WIRIS cas einbeziehen"],["initialcascontent","Anfangsinhalt"],["tolerancedigits","Toleranzstellen"],["validationandvariables","Validierung und Variablen"],["algorithmlanguage","Algorithmussprache"],["calculatorlanguage","Sprache des Rechners"],["hasalgorithm","Hat Algorithmus"],["comparison","Vergleich"],["properties","Eigenschaften"],["studentanswer","Schülerantwort"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Bei Verlassen des Fensters gehen Ihre Änderungen verloren."],["outputoptions","Ausgabeoptionen"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Alle Antworten müssen richtig sein."],["distributegrade","Note zuweisen"],["no","Nein"],["add","Hinzufügen"],["replaceeditor","Editor ersetzen"],["list","Liste"],["questionxml","Frage-XML"],["grammarurl","Grammatik-URL"],["reservedwords","Reservierte Wörter"],["forcebrackets","Listen benötigen immer geschweifte Klammern „{}“."],["commaasitemseparator","Verwenden Sie ein Komma „,“ zur Trennung von Listenelementen."],["confirmimportdeprecated","Frage importieren? Die Frage, die Sie öffnen möchten, beinhaltet veraltete Merkmale. Durch den Importvorgang kann die Verhaltensweise der Frage leicht verändert werden. Es wird dringend empfohlen, die Frage nach dem Importieren gründlich zu überprüfen."],["comparesets","Als Mengen vergleichen"],["nobracketslist","Listen ohne Klammern"],["warningtoleranceprecision","Weniger Genauigkeitstellen als Toleranzstellen."],["actionimport","Importieren"],["actionexport","Exportieren"],["usecase","Schreibung anpassen"],["usespaces","Abstände anpassen"],["notevaluate","Argumente unausgewertet lassen"],["separators","Trennzeichen"],["comma","Komma"],["commarole","Funktion des Kommazeichens „,“"],["point","Punkt"],["pointrole","Funktion des Punktzeichens „.“"],["space","Leerzeichen"],["spacerole","Funktion des Leerzeichens"],["decimalmark","Dezimalstellen"],["digitsgroup","Zahlengruppen"],["listitems","Listenelemente"],["nothing","Nichts"],["intervals","Intervalle"],["warningprecision15","Die Präzision muss zwischen 1 und 15 liegen."],["decimalSeparator","Dezimalstelle"],["thousandsSeparator","Tausender"],["notation","Notation"],["invisible","Unsichtbar"],["auto","Automatisch"],["fixedDecimal","Feste"],["floatingDecimal","Dezimalstelle"],["scientific","Wissenschaftlich"],["example","Beispiel"],["warningreltolfixedprec","Relative Toleranz mit fester Dezimalnotation."],["warningabstolfloatprec","Absolute Toleranz mit fließender Dezimalnotation."],["answerinputinlinehand","WIRIS hand eingebettet"],["absolutetolerance","Absolute Toleranz"],["clicktoeditalgorithm","Ihr Browser <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">unterstützt kein Java</a>. Klicken Sie auf die Schaltfläche, um die Anwendung WIRIS cas herunterzuladen und auszuführen. Mit dieser können Sie den Fragen-Algorithmus bearbeiten."],["launchwiriscas","WIRIS cas starten"],["sendinginitialsession","Ursprüngliche Sitzung senden ..."],["waitingforupdates","Auf Updates warten ..."],["sessionclosed","Kommunikation geschlossen."],["gotsession","Empfangene Überarbeitung ${n}."],["thecorrectansweris","Die richtige Antwort ist"],["poweredby","Angetrieben durch "],["refresh","Korrekte Antwort erneuern"],["fillwithcorrect","Mit korrekter Antwort ausfüllen"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["lang","el"],["comparisonwithstudentanswer","Σύγκριση με απάντηση μαθητή"],["otheracceptedanswers","Άλλες αποδεκτές απαντήσεις"],["equivalent_literal","Κυριολεκτικά ίση"],["equivalent_literal_correct_feedback","Η απάντηση είναι κυριολεκτικά ίση με τη σωστή."],["equivalent_symbolic","Μαθηματικά ίση"],["equivalent_symbolic_correct_feedback","Η απάντηση είναι μαθηματικά ίση με τη σωστή."],["equivalent_set","Ίσα σύνολα"],["equivalent_set_correct_feedback","Το σύνολο της απάντησης είναι ίσο με το σωστό."],["equivalent_equations","Ισοδύναμες εξισώσεις"],["equivalent_equations_correct_feedback","Η απάντηση έχει τις ίδιες λύσεις με τη σωστή."],["equivalent_function","Συνάρτηση βαθμολόγησης"],["equivalent_function_correct_feedback","Η απάντηση είναι σωστή."],["equivalent_all","Οποιαδήποτε απάντηση"],["any","οποιαδήποτε"],["gradingfunction","Συνάρτηση βαθμολόγησης"],["additionalproperties","Πρόσθετες ιδιότητες"],["structure","Δομή"],["none","καμία"],["None","Καμία"],["check_integer_form","έχει μορφή ακέραιου"],["check_integer_form_correct_feedback","Η απάντηση είναι ένας ακέραιος."],["check_fraction_form","έχει μορφή κλάσματος"],["check_fraction_form_correct_feedback","Η απάντηση είναι ένα κλάσμα."],["check_polynomial_form","έχει πολυωνυμική μορφή"],["check_polynomial_form_correct_feedback","Η απάντηση είναι ένα πολυώνυμο."],["check_rational_function_form","έχει μορφή λογικής συνάρτησης"],["check_rational_function_form_correct_feedback","Η απάντηση είναι μια λογική συνάρτηση."],["check_elemental_function_form","είναι συνδυασμός στοιχειωδών συναρτήσεων"],["check_elemental_function_form_correct_feedback","Η απάντηση είναι μια στοιχειώδης έκφραση."],["check_scientific_notation","εκφράζεται με επιστημονική σημειογραφία"],["check_scientific_notation_correct_feedback","Η απάντηση εκφράζεται με επιστημονική σημειογραφία."],["more","Περισσότερες"],["check_simplified","είναι απλοποιημένη"],["check_simplified_correct_feedback","Η απάντηση είναι απλοποιημένη."],["check_expanded","είναι ανεπτυγμένη"],["check_expanded_correct_feedback","Η απάντηση είναι ανεπτυγμένη."],["check_factorized","είναι παραγοντοποιημένη"],["check_factorized_correct_feedback","Η απάντηση είναι παραγοντοποιημένη."],["check_rationalized","είναι αιτιολογημένη"],["check_rationalized_correct_feedback","Η απάντηση είναι αιτιολογημένη."],["check_no_common_factor","δεν έχει κοινούς συντελεστές"],["check_no_common_factor_correct_feedback","Η απάντηση δεν έχει κοινούς συντελεστές."],["check_minimal_radicands","έχει ελάχιστα υπόρριζα"],["check_minimal_radicands_correct_feedback","Η απάντηση έχει ελάχιστα υπόρριζα."],["check_divisible","διαιρείται με το"],["check_divisible_correct_feedback","Η απάντηση διαιρείται με το ${value}."],["check_common_denominator","έχει έναν κοινό παρονομαστή"],["check_common_denominator_correct_feedback","Η απάντηση έχει έναν κοινό παρονομαστή."],["check_unit","έχει μονάδα ισοδύναμη με"],["check_unit_correct_feedback","Η μονάδα της απάντηση είναι ${unit}."],["check_unit_literal","έχει μονάδα κυριολεκτικά ίση με"],["check_unit_literal_correct_feedback","Η μονάδα της απάντηση είναι ${unit}."],["check_no_more_decimals","έχει λιγότερα ή ίσα δεκαδικά του"],["check_no_more_decimals_correct_feedback","Η απάντηση έχει ${digits} ή λιγότερα δεκαδικά."],["check_no_more_digits","έχει λιγότερα ή ίσα ψηφία του"],["check_no_more_digits_correct_feedback","Η απάντηση έχει ${digits} ή λιγότερα ψηφία."],["syntax_expression","Γενικά"],["syntax_expression_description","(τύποι, εκφράσεις, εξισώσεις, μήτρες...)"],["syntax_expression_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["syntax_quantity","Ποσότητα"],["syntax_quantity_description","(αριθμοί, μονάδες μέτρησης, κλάσματα, μικτά κλάσματα, αναλογίες,...)"],["syntax_quantity_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["syntax_list","Λίστα"],["syntax_list_description","(λίστες χωρίς διαχωριστικό κόμμα ή παρενθέσεις)"],["syntax_list_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["syntax_string","Κείμενο"],["syntax_string_description","(λέξεις, προτάσεις, συμβολοσειρές χαρακτήρων)"],["syntax_string_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["none","καμία"],["edit","Επεξεργασία"],["accept","ΟΚ"],["cancel","Άκυρο"],["explog","exp/log"],["trigonometric","τριγωνομετρική"],["hyperbolic","υπερβολική"],["arithmetic","αριθμητική"],["all","όλες"],["tolerance","Ανοχή"],["relative","σχετική"],["relativetolerance","Σχετική ανοχή"],["precision","Ακρίβεια"],["implicit_times_operator","Μη ορατός τελεστής επί"],["times_operator","Τελεστής επί"],["imaginary_unit","Φανταστική μονάδα"],["mixedfractions","Μικτά κλάσματα"],["constants","Σταθερές"],["functions","Συναρτήσεις"],["userfunctions","Συναρτήσεις χρήστη"],["units","Μονάδες"],["unitprefixes","Προθέματα μονάδων"],["syntaxparams","Επιλογές σύνταξης"],["syntaxparams_expression","Επιλογές για γενικά"],["syntaxparams_quantity","Επιλογές για ποσότητα"],["syntaxparams_list","Επιλογές για λίστα"],["allowedinput","Επιτρεπόμενο στοιχείο εισόδου"],["manual","Εγχειρίδιο"],["correctanswer","Σωστή απάντηση"],["variables","Μεταβλητές"],["validation","Επικύρωση"],["preview","Προεπισκόπηση"],["correctanswertabhelp","Εισαγάγετε τη σωστή απάντηση χρησιμοποιώντας τον επεξεργαστή WIRIS. Επιλέξτε επίσης τη συμπεριφορά για τον επεξεργαστή τύπων, όταν χρησιμοποιείται από τον μαθητή."],["assertionstabhelp","Επιλέξτε τις ιδιότητες που πρέπει να ικανοποιεί η απάντηση του μαθητή. Για παράδειγμα, εάν πρέπει να είναι απλοποιημένη, παραγοντοποιημένη, εκφρασμένη σε φυσικές μονάδες ή να έχει συγκεκριμένη αριθμητική ακρίβεια."],["variablestabhelp","Γράψτε έναν αλγόριθμο με το WIRIS cas για να δημιουργήσετε τυχαίες μεταβλητές: αριθμούς, εκφράσεις, σχεδιαγράμματα ή μια συνάρτηση βαθμολόγησης. Μπορείτε επίσης να καθορίσετε τη μορφή εξόδου των μεταβλητών που θα εμφανίζονται στον μαθητή."],["testtabhelp","Εισαγάγετε μια πιθανή απάντηση του μαθητή για να προσομοιώσετε τη συμπεριφορά της ερώτησης. Χρησιμοποιείτε το ίδιο εργαλείο με αυτό που θα χρησιμοποιήσει ο μαθητής. Σημειώνεται ότι μπορείτε επίσης να ελέγξετε τα κριτήρια αξιολόγησης, την επιτυχία και τα αυτόματα σχόλια."],["start","Έναρξη"],["test","Δοκιμή"],["clicktesttoevaluate","Κάντε κλικ στο κουμπί «Δοκιμή» για να επικυρώσετε τη σωστή απάντηση."],["correct","Σωστό!"],["incorrect","Λάθος!"],["partiallycorrect","Εν μέρει σωστό!"],["inputmethod","Μέθοδος εισόδου"],["compoundanswer","Σύνθετη απάντηση"],["answerinputinlineeditor","Επεξεργαστής WIRIS ενσωματωμένος"],["answerinputpopupeditor","Επεξεργαστής WIRIS σε αναδυόμενο πλαίσιο"],["answerinputplaintext","Πεδίο εισόδου απλού κειμένου"],["showauxiliarcas","Συμπερίληψη WIRIS cas"],["initialcascontent","Αρχικό περιεχόμενο"],["tolerancedigits","Ψηφία ανοχής"],["validationandvariables","Επικύρωση και μεταβλητές"],["algorithmlanguage","Γλώσσα αλγόριθμου"],["calculatorlanguage","Γλώσσα υπολογιστή"],["hasalgorithm","Έχει αλγόριθμο"],["comparison","Σύγκριση"],["properties","Ιδιότητες"],["studentanswer","Απάντηση μαθητή"],["poweredbywiris","Παρέχεται από τη WIRIS"],["yourchangeswillbelost","Οι αλλαγές σας θα χαθούν εάν αποχωρήσετε από το παράθυρο."],["outputoptions","Επιλογές εξόδου"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Όλες οι απαντήσεις πρέπει να είναι σωστές"],["distributegrade","Κατανομή βαθμών"],["no","Όχι"],["add","Προσθήκη"],["replaceeditor","Αντικατάσταση επεξεργαστή"],["list","Λίστα"],["questionxml","XML ερώτησης"],["grammarurl","URL γραμματικής"],["reservedwords","Ανεστραμμένες λέξεις"],["forcebrackets","Για τις λίστες χρειάζονται πάντα άγκιστρα «{}»."],["commaasitemseparator","Χρησιμοποιήστε το κόμμα «,» ως διαχωριστικό στοιχείων λίστας."],["confirmimportdeprecated","Εισαγωγή της ερώτησης; Η ερώτηση που πρόκειται να ανοίξετε περιέχει δυνατότητες που έχουν καταργηθεί. Η διαδικασία εισαγωγής μπορεί να αλλάξει λίγο τη συμπεριφορά της ερώτησης. Θα πρέπει να εξετάσετε προσεκτικά την ερώτηση μετά από την εισαγωγή της."],["comparesets","Σύγκριση ως συνόλων"],["nobracketslist","Λίστες χωρίς άγκιστρα"],["warningtoleranceprecision","Λιγότερα ψηφία ακρίβειας από τα ψηφία ανοχής."],["actionimport","Εισαγωγή"],["actionexport","Εξαγωγή"],["usecase","Συμφωνία πεζών-κεφαλαίων"],["usespaces","Συμφωνία διαστημάτων"],["notevaluate","Διατήρηση των ορισμάτων χωρίς αξιολόγηση"],["separators","Διαχωριστικά"],["comma","Κόμμα"],["commarole","Ρόλος του χαρακτήρα «,» (κόμμα)"],["point","Τελεία"],["pointrole","Ρόλος του χαρακτήρα «.» (τελεία)"],["space","Διάστημα"],["spacerole","Ρόλος του χαρακτήρα διαστήματος"],["decimalmark","Δεκαδικά ψηφία"],["digitsgroup","Ομάδες ψηφίων"],["listitems","Στοιχεία λίστας"],["nothing","Τίποτα"],["intervals","Διαστήματα"],["warningprecision15","Η ακρίβεια πρέπει να είναι μεταξύ 1 και 15."],["decimalSeparator","Δεκαδικό"],["thousandsSeparator","Χιλιάδες"],["notation","Σημειογραφία"],["invisible","Μη ορατό"],["auto","Αυτόματα"],["fixedDecimal","Σταθερό"],["floatingDecimal","Δεκαδικό"],["scientific","Επιστημονικό"],["example","Παράδειγμα"],["warningreltolfixedprec","Σχετική ανοχή με σημειογραφία σταθερής υποδιαστολής."],["warningabstolfloatprec","Απόλυτη ανοχή με σημειογραφία κινητής υποδιαστολής."],["answerinputinlinehand","WIRIS ενσωματωμένο"],["absolutetolerance","Απόλυτη ανοχή"],["clicktoeditalgorithm","Το πρόγραμμα περιήγησης που χρησιμοποιείτε δεν <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">υποστηρίζει Java</a>. Κάντε κλικ στο κουμπί για τη λήψη και την εκτέλεση της εφαρμογής WIRIS cas για επεξεργασία του αλγόριθμου ερώτησης."],["launchwiriscas","Εκκίνηση του WIRIS cas"],["sendinginitialsession","Αποστολή αρχικής περιόδου σύνδεσης..."],["waitingforupdates","Αναμονή για ενημερώσεις..."],["sessionclosed","Η επικοινωνία έκλεισε."],["gotsession","Λήφθηκε αναθεώρηση ${n}."],["thecorrectansweris","Η σωστή απάντηση είναι"],["poweredby","Με την υποστήριξη της"],["refresh","Ανανέωση της σωστής απάντησης"],["fillwithcorrect","Συμπλήρωση με τη σωστή απάντηση"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["lang","pt_br"],["comparisonwithstudentanswer","Comparação com a resposta do aluno"],["otheracceptedanswers","Outras respostas aceitas"],["equivalent_literal","Literalmente igual"],["equivalent_literal_correct_feedback","A resposta é literalmente igual à correta."],["equivalent_symbolic","Matematicamente igual"],["equivalent_symbolic_correct_feedback","A resposta é matematicamente igual à correta."],["equivalent_set","Iguais aos conjuntos"],["equivalent_set_correct_feedback","O conjunto de respostas é igual ao correto."],["equivalent_equations","Equações equivalentes"],["equivalent_equations_correct_feedback","A resposta tem as mesmas soluções da correta."],["equivalent_function","Cálculo da nota"],["equivalent_function_correct_feedback","A resposta está correta."],["equivalent_all","Qualquer reposta"],["any","qualquer"],["gradingfunction","Cálculo da nota"],["additionalproperties","Propriedades adicionais"],["structure","Estrutura"],["none","nenhuma"],["None","Nenhuma"],["check_integer_form","tem forma de número inteiro"],["check_integer_form_correct_feedback","A resposta é um número inteiro."],["check_fraction_form","tem forma de fração"],["check_fraction_form_correct_feedback","A resposta é uma fração."],["check_polynomial_form","tem forma polinomial"],["check_polynomial_form_correct_feedback","A resposta é um polinomial."],["check_rational_function_form","tem forma de função racional"],["check_rational_function_form_correct_feedback","A resposta é uma função racional."],["check_elemental_function_form","é uma combinação de funções elementárias"],["check_elemental_function_form_correct_feedback","A resposta é uma expressão elementar."],["check_scientific_notation","é expressa em notação científica"],["check_scientific_notation_correct_feedback","A resposta é expressa em notação científica."],["more","Mais"],["check_simplified","é simplificada"],["check_simplified_correct_feedback","A resposta é simplificada."],["check_expanded","é expandida"],["check_expanded_correct_feedback","A resposta é expandida."],["check_factorized","é fatorizada"],["check_factorized_correct_feedback","A resposta é fatorizada."],["check_rationalized","é racionalizada"],["check_rationalized_correct_feedback","A resposta é racionalizada."],["check_no_common_factor","não tem fatores comuns"],["check_no_common_factor_correct_feedback","A resposta não tem fatores comuns."],["check_minimal_radicands","tem radiciação mínima"],["check_minimal_radicands_correct_feedback","A resposta tem radiciação mínima."],["check_divisible","é divisível por"],["check_divisible_correct_feedback","A resposta é divisível por ${value}."],["check_common_denominator","tem um único denominador comum"],["check_common_denominator_correct_feedback","A resposta tem um único denominador comum."],["check_unit","tem unidade equivalente a"],["check_unit_correct_feedback","A unidade da resposta é ${unit}."],["check_unit_literal","tem unidade literalmente igual a"],["check_unit_literal_correct_feedback","A unidade da resposta é ${unit}."],["check_no_more_decimals","tem menos ou os mesmos decimais que"],["check_no_more_decimals_correct_feedback","A resposta tem ${digits} decimais ou menos."],["check_no_more_digits","tem menos ou os mesmos dígitos que"],["check_no_more_digits_correct_feedback","A resposta tem ${digits} dígitos ou menos."],["syntax_expression","Geral"],["syntax_expression_description","(fórmulas, expressões, equações, matrizes...)"],["syntax_expression_correct_feedback","A sintaxe da resposta está correta."],["syntax_quantity","Quantidade"],["syntax_quantity_description","(números, unidades de medida, frações, frações mistas, proporções...)"],["syntax_quantity_correct_feedback","A sintaxe da resposta está correta."],["syntax_list","Lista"],["syntax_list_description","(listas sem separação por vírgula ou chaves)"],["syntax_list_correct_feedback","A sintaxe da resposta está correta."],["syntax_string","Texto"],["syntax_string_description","(palavras, frases, sequências de caracteres)"],["syntax_string_correct_feedback","A sintaxe da resposta está correta."],["none","nenhuma"],["edit","Editar"],["accept","OK"],["cancel","Cancelar"],["explog","exp/log"],["trigonometric","trigonométrica"],["hyperbolic","hiperbólica"],["arithmetic","aritmética"],["all","tudo"],["tolerance","Tolerância"],["relative","relativa"],["relativetolerance","Tolerância relativa"],["precision","Precisão"],["implicit_times_operator","Sinal de multiplicação invisível"],["times_operator","Sinal de multiplicação"],["imaginary_unit","Unidade imaginária"],["mixedfractions","Frações mistas"],["constants","Constantes"],["functions","Funções"],["userfunctions","Funções do usuário"],["units","Unidades"],["unitprefixes","Prefixos das unidades"],["syntaxparams","Opções de sintaxe"],["syntaxparams_expression","Opções gerais"],["syntaxparams_quantity","Opções de quantidade"],["syntaxparams_list","Opções de lista"],["allowedinput","Entrada permitida"],["manual","Manual"],["correctanswer","Resposta correta"],["variables","Variáveis"],["validation","Validação"],["preview","Prévia"],["correctanswertabhelp","Insira a resposta correta usando o WIRIS editor. Selecione também o comportamento do editor de fórmulas quando usado pelo aluno."],["assertionstabhelp","Selecione quais propriedades a resposta do aluno deve verificar. Por exemplo, se ela deve ser simplificada, fatorizada, expressa em unidades físicas ou ter uma precisão numérica específica."],["variablestabhelp","Escreva um algoritmo com o WIRIS cas para criar variáveis aleatórias: números, expressões, gráficos ou cálculo de nota. Você também pode especificar o formato de saída das variáveis exibidas para o aluno."],["testtabhelp","Insira um estudante em potencial para simular o comportamento da questão. Você está usando a mesma ferramenta que o aluno usará. Note que também é possível testar o critério de avaliação, sucesso e comentário automático."],["start","Iniciar"],["test","Testar"],["clicktesttoevaluate","Clique no botão Testar para validar a resposta atual."],["correct","Correta!"],["incorrect","Incorreta!"],["partiallycorrect","Parcialmente correta!"],["inputmethod","Método de entrada"],["compoundanswer","Resposta composta"],["answerinputinlineeditor","WIRIS editor integrado"],["answerinputpopupeditor","WIRIS editor em pop up"],["answerinputplaintext","Campo de entrada de texto simples"],["showauxiliarcas","Incluir WIRIS cas"],["initialcascontent","Conteúdo inicial"],["tolerancedigits","Dígitos de tolerância"],["validationandvariables","Validação e variáveis"],["algorithmlanguage","Linguagem do algoritmo"],["calculatorlanguage","Linguagem da calculadora"],["hasalgorithm","Tem algoritmo"],["comparison","Comparação"],["properties","Propriedades"],["studentanswer","Resposta do aluno"],["poweredbywiris","Fornecido por WIRIS"],["yourchangeswillbelost","As alterações serão perdidas se você sair da janela."],["outputoptions","Opções de saída"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Todas as respostas devem estar corretas"],["distributegrade","Distribuir notas"],["no","Não"],["add","Adicionar"],["replaceeditor","Substituir editor"],["list","Lista"],["questionxml","XML da pergunta"],["grammarurl","URL da gramática"],["reservedwords","Palavras reservadas"],["forcebrackets","As listas sempre precisam de chaves “{}”."],["commaasitemseparator","Use vírgula “,” para separar itens na lista."],["confirmimportdeprecated","Importar questão? A questão prestes a ser aberta contém recursos ultrapassados. O processo de importação pode alterar um pouco o comportamento da questão. É recomendável que você teste a questão atentamente após importá-la."],["comparesets","Comparar como conjuntos"],["nobracketslist","Listas sem chaves"],["warningtoleranceprecision","Menos dígitos de precisão do que dígitos de tolerância."],["actionimport","Importar"],["actionexport","Exportar"],["usecase","Coincidir maiúsculas/minúsculas"],["usespaces","Coincidir espaços"],["notevaluate","Manter argumentos não avaliados"],["separators","Separadores"],["comma","Vírgula"],["commarole","Função do caractere vírgula “,”"],["point","Ponto"],["pointrole","Função do caractere ponto “.”"],["space","Espaço"],["spacerole","Função do caractere espaço"],["decimalmark","Dígitos decimais"],["digitsgroup","Grupos de dígitos"],["listitems","Itens da lista"],["nothing","Nada"],["intervals","Intervalos"],["warningprecision15","A precisão deve estar entre 1 e 15."],["decimalSeparator","Decimal"],["thousandsSeparator","Milhares"],["notation","Notação"],["invisible","Invisível"],["auto","Automática"],["fixedDecimal","Fixa"],["floatingDecimal","Decimal"],["scientific","Científica"],["example","Exemplo"],["warningreltolfixedprec","Tolerância relativa com notação decimal fixa."],["warningabstolfloatprec","Tolerância absoluta com notação decimal flutuante."],["answerinputinlinehand","WIRIS hand integrado"],["absolutetolerance","Tolerância absoluta"],["clicktoeditalgorithm","O navegador não é <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">compatível com Java</a>. Clique no botão para baixar e executar o aplicativo WIRIS cas e editar o algoritmo da questão."],["launchwiriscas","Abrir WIRIS cas"],["sendinginitialsession","Enviando sessão inicial..."],["waitingforupdates","Aguardando atualizações..."],["sessionclosed","Comunicação fechada."],["gotsession","Revisão ${n} recebida."],["thecorrectansweris","A resposta correta é"],["poweredby","Fornecido por"],["refresh","Renovar resposta correta"],["fillwithcorrect","Preencher resposta correta"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"]];
+com.wiris.quizzes.impl.Strings.lang = [["lang","en"],["comparisonwithstudentanswer","Comparison with student answer"],["otheracceptedanswers","Other accepted answers"],["equivalent_literal","Literally equal"],["equivalent_literal_correct_feedback","The answer is literally equal to the correct one."],["equivalent_symbolic","Mathematically equal"],["equivalent_symbolic_correct_feedback","The answer is mathematically equal to the correct one."],["equivalent_set","Equal as sets"],["equivalent_set_correct_feedback","The answer set is equal to the correct one."],["equivalent_equations","Equivalent equations"],["equivalent_equations_correct_feedback","The answer has the same solutions as the correct one."],["equivalent_function","Grading function"],["equivalent_function_correct_feedback","The answer is correct."],["equivalent_all","Any answer"],["any","any"],["gradingfunction","Grading function"],["additionalproperties","Additional properties"],["structure","Structure"],["none","none"],["None","None"],["check_integer_form","has integer form"],["check_integer_form_correct_feedback","The answer is an integer."],["check_fraction_form","has fraction form"],["check_fraction_form_correct_feedback","The answer is a fraction."],["check_polynomial_form","has polynomial form"],["check_polynomial_form_correct_feedback","The answer is a polynomial."],["check_rational_function_form","has rational function form"],["check_rational_function_form_correct_feedback","The answer is a rational function."],["check_elemental_function_form","is a combination of elementary functions"],["check_elemental_function_form_correct_feedback","The answer is an elementary expression."],["check_scientific_notation","is expressed in scientific notation"],["check_scientific_notation_correct_feedback","The answer is expressed in scientific notation."],["more","More"],["check_simplified","is simplified"],["check_simplified_correct_feedback","The answer is simplified."],["check_expanded","is expanded"],["check_expanded_correct_feedback","The answer is expanded."],["check_factorized","is factorized"],["check_factorized_correct_feedback","The answer is factorized."],["check_rationalized","is rationalized"],["check_rationalized_correct_feedback","The answer is rationalized."],["check_no_common_factor","doesn't have common factors"],["check_no_common_factor_correct_feedback","The answer doesn't have common factors."],["check_minimal_radicands","has minimal radicands"],["check_minimal_radicands_correct_feedback","The answer has minimal radicands."],["check_divisible","is divisible by"],["check_divisible_correct_feedback","The answer is divisible by ${value}."],["check_common_denominator","has a single common denominator"],["check_common_denominator_correct_feedback","The answer has a single common denominator."],["check_unit","has unit equivalent to"],["check_unit_correct_feedback","The unit of the answer is ${unit}."],["check_unit_literal","has unit literally equal to"],["check_unit_literal_correct_feedback","The unit of the answer is ${unit}."],["check_no_more_decimals","has less or equal decimals than"],["check_no_more_decimals_correct_feedback","The answer has ${digits} or less decimals."],["check_no_more_digits","has less or equal digits than"],["check_no_more_digits_correct_feedback","The answer has ${digits} or less digits."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","General"],["syntax_expression_description","(formulas, expressions, equations, matrices...)"],["syntax_expression_correct_feedback","The answer syntax is correct."],["syntax_quantity","Quantity"],["syntax_quantity_description","(numbers, measure units, fractions, mixed fractions, ratios...)"],["syntax_quantity_correct_feedback","The answer syntax is correct."],["syntax_list","List"],["syntax_list_description","(lists without comma separator or brackets)"],["syntax_list_correct_feedback","The answer syntax is correct."],["syntax_string","Text"],["syntax_string_description","(words, sentences, character strings)"],["syntax_string_correct_feedback","The answer syntax is correct."],["none","none"],["edit","Edit"],["accept","OK"],["cancel","Cancel"],["explog","exp/log"],["trigonometric","trigonometric"],["hyperbolic","hyperbolic"],["arithmetic","arithmetic"],["all","all"],["tolerance","Tolerance"],["relative","relative"],["relativetolerance","Relative tolerance"],["precision","Precision"],["implicit_times_operator","Invisible times operator"],["times_operator","Times operator"],["imaginary_unit","Imaginary unit"],["mixedfractions","Mixed fractions"],["constants","Constants"],["functions","Functions"],["userfunctions","User functions"],["units","Units"],["unitprefixes","Unit prefixes"],["syntaxparams","Syntax options"],["syntaxparams_expression","Options for general"],["syntaxparams_quantity","Options for quantity"],["syntaxparams_list","Options for list"],["allowedinput","Allowed input"],["manual","Manual"],["correctanswer","Correct answer"],["variables","Variables"],["validation","Validation"],["preview","Preview"],["correctanswertabhelp","Insert the correct answer using WIRIS editor. Select also the behaviour for the formula editor when used by the student.\n"],["assertionstabhelp","Select which properties the student answer has to verify. For example, if it has to be simplified, factorized, expressed using physical units or have a specific numerical precision."],["variablestabhelp","Write an algorithm with WIRIS cas to create random variables: numbers, expressions, plots or a grading function.\nYou can also specify the output format of the variables shown to the student.\n"],["testtabhelp","Insert a possible student answer to simulate the behaviour of the question. You are using the same tool that the student will use.\nNote that you can also test the evaluation criteria, success and automatic feedback.\n"],["start","Start"],["test","Test"],["clicktesttoevaluate","Click Test button to validate the current answer."],["correct","Correct!"],["incorrect","Incorrect!"],["partiallycorrect","Partially correct!"],["inputmethod","Input method"],["compoundanswer","Compound answer"],["answerinputinlineeditor","WIRIS editor embedded"],["answerinputpopupeditor","WIRIS editor in popup"],["answerinputplaintext","Plain text input field"],["showauxiliarcas","Include WIRIS cas"],["initialcascontent","Initial content"],["tolerancedigits","Tolerance digits"],["validationandvariables","Validation and variables"],["algorithmlanguage","Algorithm language"],["calculatorlanguage","Calculator language"],["hasalgorithm","Has algorithm"],["comparison","Comparison"],["properties","Properties"],["studentanswer","Student answer"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Your changes will be lost if you leave the window."],["outputoptions","Output options"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","All answers must be correct"],["distributegrade","Distribute grade"],["no","No"],["add","Add"],["replaceeditor","Replace editor"],["list","List"],["questionxml","Question XML"],["grammarurl","Grammar URL"],["reservedwords","Reserved words"],["forcebrackets","Lists always need curly brackets \"{}\"."],["commaasitemseparator","Use comma \",\" as list item separator."],["confirmimportdeprecated","Import the question? \nThe question you are about to open contains deprecated features. The import process may change slightly the behavior of the question. It is highly recommended that you carefully test de question after import."],["comparesets","Compare as sets"],["nobracketslist","Lists without brackets"],["warningtoleranceprecision","Less output precision digits than tolerance digits."],["actionimport","Import"],["actionexport","Export"],["usecase","Match case"],["usespaces","Match spaces"],["notevaluate","Keep arguments unevaluated"],["separators","Separators"],["comma","Comma"],["commarole","Role of the comma ',' character"],["point","Point"],["pointrole","Role of the point '.' character"],["space","Space"],["spacerole","Role of the space character"],["decimalmark","Decimal digits"],["digitsgroup","Digit groups"],["listitems","List items"],["nothing","Nothing"],["intervals","Intervals"],["warningprecision15","Output precision must be between 1 and 15."],["decimalSeparator","Decimal"],["thousandsSeparator","Thousands"],["notation","Notation"],["invisible","Invisible"],["auto","Auto"],["fixedDecimal","Fixed"],["floatingDecimal","Decimal"],["scientific","Scientific"],["example","Example"],["warningreltolfixedprec","Relative tolerance with decimal places output notation."],["warningabstolfloatprec","Absolute tolerance with significant figures output notation."],["answerinputinlinehand","WIRIS hand embedded"],["absolutetolerance","Absolute tolerance"],["clicktoeditalgorithm","Click the button to download and run WIRIS cas application to edit the question algorithm. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["launchwiriscas","Edit algorithm"],["sendinginitialsession","Sending initial session..."],["waitingforupdates","Waiting for updates..."],["sessionclosed","All changes saved"],["gotsession","Changes saved (revision ${n})."],["thecorrectansweris","The correct answer is"],["poweredby","Powered by"],["refresh","Renew correct answer"],["fillwithcorrect","Fill with correct answer"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","es"],["comparisonwithstudentanswer","Comparación con la respuesta del estudiante"],["otheracceptedanswers","Otras respuestas aceptadas"],["equivalent_literal","Literalmente igual"],["equivalent_literal_correct_feedback","La respuesta es literalmente igual a la correcta."],["equivalent_symbolic","Matemáticamente igual"],["equivalent_symbolic_correct_feedback","La respuesta es matemáticamente igual a la correcta."],["equivalent_set","Igual como conjuntos"],["equivalent_set_correct_feedback","El conjunto de respuestas es igual al correcto."],["equivalent_equations","Ecuaciones equivalentes"],["equivalent_equations_correct_feedback","La respuesta tiene las soluciones requeridas."],["equivalent_function","Función de calificación"],["equivalent_function_correct_feedback","La respuesta es correcta."],["equivalent_all","Cualquier respuesta"],["any","cualquier"],["gradingfunction","Función de calificación"],["additionalproperties","Propiedades adicionales"],["structure","Estructura"],["none","ninguno"],["None","Ninguno"],["check_integer_form","tiene forma de número entero"],["check_integer_form_correct_feedback","La respuesta es un número entero."],["check_fraction_form","tiene forma de fracción"],["check_fraction_form_correct_feedback","La respuesta es una fracción."],["check_polynomial_form","tiene forma de polinomio"],["check_polynomial_form_correct_feedback","La respuesta es un polinomio."],["check_rational_function_form","tiene forma de función racional"],["check_rational_function_form_correct_feedback","La respuesta es una función racional."],["check_elemental_function_form","es una combinación de funciones elementales"],["check_elemental_function_form_correct_feedback","La respuesta es una expresión elemental."],["check_scientific_notation","está expresada en notación científica"],["check_scientific_notation_correct_feedback","La respuesta está expresada en notación científica."],["more","Más"],["check_simplified","está simplificada"],["check_simplified_correct_feedback","La respuesta está simplificada."],["check_expanded","está expandida"],["check_expanded_correct_feedback","La respuesta está expandida."],["check_factorized","está factorizada"],["check_factorized_correct_feedback","La respuesta está factorizada."],["check_rationalized","está racionalizada"],["check_rationalized_correct_feedback","La respuseta está racionalizada."],["check_no_common_factor","no tiene factores comunes"],["check_no_common_factor_correct_feedback","La respuesta no tiene factores comunes."],["check_minimal_radicands","tiene radicandos minimales"],["check_minimal_radicands_correct_feedback","La respuesta tiene los radicandos minimales."],["check_divisible","es divisible por"],["check_divisible_correct_feedback","La respuesta es divisible por ${value}."],["check_common_denominator","tiene denominador común"],["check_common_denominator_correct_feedback","La respuesta tiene denominador común."],["check_unit","tiene unidad equivalente a"],["check_unit_correct_feedback","La unidad de respuesta es ${unit}."],["check_unit_literal","tiene unidad literalmente igual a"],["check_unit_literal_correct_feedback","La unidad de respuesta es ${unit}."],["check_no_more_decimals","tiene menos decimales o exactamente"],["check_no_more_decimals_correct_feedback","La respuesta tiene ${digits} o menos decimales."],["check_no_more_digits","tiene menos dígitos o exactamente"],["check_no_more_digits_correct_feedback","La respuesta tiene ${digits} o menos dígitos."],["check_precision","tiene"],["check_precision_correct_feedback","La respuesta tiene entre ${min} y ${max} ${relative}."],["check_precision_correct_feedback_max","La respuesta tiene ${max} ${relative} como máximo."],["check_precision_correct_feedback_min","La respuesta tiene ${min} ${relative} como mínimo."],["check_precision_correct_feedback_equal","La respuesta tiene ${max} ${relative}."],["syntax_expression","General"],["syntax_expression_description","(fórmulas, expresiones, ecuaciones, matrices ...)"],["syntax_expression_correct_feedback","La sintaxis de la respuesta es correcta."],["syntax_quantity","Cantidad"],["syntax_quantity_description","(números, unidades de medida, fracciones, fracciones mixtas, razones...)"],["syntax_quantity_correct_feedback","La sintaxis de la respuesta es correcta."],["syntax_list","Lista"],["syntax_list_description","(listas sin coma separadora o paréntesis)"],["syntax_list_correct_feedback","La sintaxis de la respuesta es correcta."],["syntax_string","Texto"],["syntax_string_description","(palabras, frases, cadenas de caracteres)"],["syntax_string_correct_feedback","La sintaxis de la respuesta es correcta."],["none","ninguno"],["edit","Editar"],["accept","Aceptar"],["cancel","Cancelar"],["explog","exp/log"],["trigonometric","trigonométricas"],["hyperbolic","hiperbólicas"],["arithmetic","aritmética"],["all","todo"],["tolerance","Tolerancia"],["relative","relativa"],["relativetolerance","Tolerancia relativa"],["precision","Precisión"],["implicit_times_operator","Omitir producto"],["times_operator","Operador producto"],["imaginary_unit","Unidad imaginaria"],["mixedfractions","Fracciones mixtas"],["constants","Constantes"],["functions","Funciones"],["userfunctions","Funciones de usuario"],["units","Unidades"],["unitprefixes","Prefijos de unidades"],["syntaxparams","Opciones de sintaxis"],["syntaxparams_expression","Opciones para general"],["syntaxparams_quantity","Opciones para cantidad"],["syntaxparams_list","Opciones para lista"],["allowedinput","Entrada permitida"],["manual","Manual"],["correctanswer","Respuesta correcta"],["variables","Variables"],["validation","Validación"],["preview","Vista previa"],["correctanswertabhelp","Introduzca la respuesta correcta utilizando WIRIS editor. Seleccione también el comportamiento del editor de fórmulas cuando sea utilizado por el estudiante.\n"],["assertionstabhelp","Seleccione las propiedades que deben cumplir las respuestas de estudiante. Por ejemplo, si tiene que estar simplificado, factorizado, expresado utilizando unidades físicas o tener una precisión numérica específica."],["variablestabhelp","Escriba un algoritmo con WIRIS CAS para crear variables aleatorias: números, expresiones, gráficas o funciones de calificación.\nTambién puede especificar el formato de salida de las variables que se muestran a los estudiantes.\n"],["testtabhelp","Insertar una posible respuesta de estudiante para simular el comportamiento de la pregunta. Está usted utilizando la misma herramienta que el estudiante utilizará.\nObserve que también se pueden probar los criterios de evaluación, el éxito y la retroalimentación automática.\n"],["start","Inicio"],["test","Prueba"],["clicktesttoevaluate","Haga clic en botón de prueba para validar la respuesta actual."],["correct","¡correcto!"],["incorrect","¡incorrecto!"],["partiallycorrect","¡parcialmente correcto!"],["inputmethod","Método de entrada"],["compoundanswer","Respuesta compuesta"],["answerinputinlineeditor","WIRIS editor incrustado"],["answerinputpopupeditor","WIRIS editor en una ventana emergente"],["answerinputplaintext","Campo de entrada de texto llano"],["showauxiliarcas","Incluir WIRIS CAS"],["initialcascontent","Contenido inicial"],["tolerancedigits","Dígitos de tolerancia"],["validationandvariables","Validación y variables"],["algorithmlanguage","Idioma del algoritmo"],["calculatorlanguage","Idioma de la calculadora"],["hasalgorithm","Tiene algoritmo"],["comparison","Comparación"],["properties","Propiedades"],["studentanswer","Respuesta del estudiante"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Sus cambios se perderán si abandona la ventana."],["outputoptions","Opciones de salida"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Aviso! Este componente requiere <a href=\"http://www.java.com/es/\">instalar el plugin de Java</a> o quizás es suficiente <a href=\"http://www.java.com/es/download/help/enable_browser.xml\">activar el plugin de Java</a>."],["allanswerscorrect","Todas las respuestas deben ser correctas"],["distributegrade","Distribuir la nota"],["no","No"],["add","Añadir"],["replaceeditor","Sustituir editor"],["list","Lista"],["questionxml","Question XML"],["grammarurl","Grammar URL"],["reservedwords","Palabras reservadas"],["forcebrackets","Las listas siempre necesitan llaves \"{}\"."],["commaasitemseparator","Utiliza la coma \",\" como separador de elementos de listas."],["confirmimportdeprecated","Importar la pregunta?\nEsta pregunta tiene características obsoletas. El proceso de importación puede modificar el comportamiento de la pregunta. Revise cuidadosamente la pregunta antes de utilizarla."],["comparesets","Compara como conjuntos"],["nobracketslist","Listas sin llaves"],["warningtoleranceprecision","Precisión de salida menor que la tolerancia."],["actionimport","Importar"],["actionexport","Exportar"],["usecase","Coincidir mayúsculas y minúsculas"],["usespaces","Coincidir espacios"],["notevaluate","Mantener los argumentos sin evaluar"],["separators","Separadores"],["comma","Coma"],["commarole","Rol del caracter coma ','"],["point","Punto"],["pointrole","Rol del caracter punto '.'"],["space","Espacio"],["spacerole","Rol del caracter espacio"],["decimalmark","Decimales"],["digitsgroup","Miles"],["listitems","Elementos de lista"],["nothing","Ninguno"],["intervals","Intervalos"],["warningprecision15","La precisión de salida debe estar entre 1 y 15."],["decimalSeparator","Decimales"],["thousandsSeparator","Miles"],["notation","Notación"],["invisible","Invisible"],["auto","Auto"],["fixedDecimal","Fija"],["floatingDecimal","Decimal"],["scientific","Científica"],["example","Ejemplo"],["warningreltolfixedprec","Tolerancia relativa con notación de salida en cifras decimales."],["warningabstolfloatprec","Tolerancia absoluta con notación de salida en cifras significativas."],["answerinputinlinehand","WIRIS hand incrustado"],["absolutetolerance","Tolerancia absoluta"],["clicktoeditalgorithm","Clica el botón para descargar y ejecutar la aplicación WIRIS cas para editar el algoritmo de la pregunta. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprende más</a>."],["launchwiriscas","Editar algoritmo"],["sendinginitialsession","Enviando algoritmo inicial."],["waitingforupdates","Esperando actualizaciones."],["sessionclosed","Todos los cambios guardados."],["gotsession","Cambios guardados (revisión ${n})."],["thecorrectansweris","La respuesta correcta es"],["poweredby","Creado por"],["refresh","Renovar la respuesta correcta"],["fillwithcorrect","Rellenar con la respuesta correcta"],["runcalculator","Ejecutar calculadora"],["clicktoruncalculator","Clica el botón para descargar y ejecutar la aplicación WIRIS cas para hacer los cálculos que necesite. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprende más</a>."],["answer","respuesta"],["trycalc","Probar CalcMe"],["definevariablesandfunctions","Defina variables aleatorias y funciones"],["wiriscalcwarningmessage","Cuando haya editado el algoritmo con CalcMe, ya no podrá abrirlo con el clásico WIRIS CAS en Java."],["usewiriscalc","Use CalcMe para editar el algoritmo de la pregunta. CalcMe es compatible con todos los navegadores, por lo que no necesita bajar ninguna aplicación."],["editalgorithmwithcalc","Editar algoritmo con CalcMe"],["gobacktostudio","Volver al Studio"],["confirmimportalgorithm","Aviso!\nSi acepta, el algoritmo será automáticamente importado a CalcMe. El algoritmo resultante debe ser revisado y probado a mano.\n\nLos algoritmos importados a CalcMe no pueden volver a ser abiertos con el clásico WIRIS CAS. Si desea cancelar la importación tras haber aceptado, no guarde la pregunta: pulse Cancelar en la ventana del WIRIS Quizzes Studio y ábrala otra vez."],["wiriscalctip","Consejo"],["wiriscalctipmessage","Si quiere volver al clásico WIRIS CAS, elimine completamente el algoritmo."],["fromprecision","desde"],["toprecision","hasta"],["decimalplaces","cifras decimales"],["significantfigures","cifras significativas"],["warningcheckprecisionformat","Valores inválidos para la validación de las cifras significativas o decimales."],["warningcheckprecisionvsrelativetolerance","Tolerancia relativa con validación de cifras decimales."],["warningcheckprecisionvsabsolutetolerance","Tolerancia absoluta con validación de cifras significativas."],["warningcheckprecisionvsfloatformat","La precisión de salida no concuerda con la validación de cifras significativas o decimales."],["warningcheckprecisionvsprecision","El número de cifras de la precisión de salida es menor que el mínimo exigido en la validación."],["percenterror","% error porcentual"],["absoluteerror","error absoluto"],["warningtoleranceformatinteger","El campo de cifras de tolerancia debe ser un número entero."],["warningtoleranceformatfloat","El campo de error debe ser un número decimal positivo."],["lang","ca"],["comparisonwithstudentanswer","Comparació amb la resposta de l'estudiant"],["otheracceptedanswers","Altres respostes acceptades"],["equivalent_literal","Literalment igual"],["equivalent_literal_correct_feedback","La resposta és literalment igual a la correcta."],["equivalent_symbolic","Matemàticament igual"],["equivalent_symbolic_correct_feedback","La resposta és matemàticament igual a la correcta."],["equivalent_set","Igual com a conjunts"],["equivalent_set_correct_feedback","El conjunt de respostes és igual al correcte."],["equivalent_equations","Equacions equivalents"],["equivalent_equations_correct_feedback","La resposta té les solucions requerides."],["equivalent_function","Funció de qualificació"],["equivalent_function_correct_feedback","La resposta és correcta."],["equivalent_all","Qualsevol resposta"],["any","qualsevol"],["gradingfunction","Funció de qualificació"],["additionalproperties","Propietats addicionals"],["structure","Estructura"],["none","cap"],["None","Cap"],["check_integer_form","té forma de nombre enter"],["check_integer_form_correct_feedback","La resposta és un nombre enter."],["check_fraction_form","té forma de fracció"],["check_fraction_form_correct_feedback","La resposta és una fracció."],["check_polynomial_form","té forma de polinomi"],["check_polynomial_form_correct_feedback","La resposta és un polinomi."],["check_rational_function_form","té forma de funció racional"],["check_rational_function_form_correct_feedback","La resposta és una funció racional."],["check_elemental_function_form","és una combinació de funcions elementals"],["check_elemental_function_form_correct_feedback","La resposta és una expressió elemental."],["check_scientific_notation","està expressada en notació científica"],["check_scientific_notation_correct_feedback","La resposta està expressada en notació científica."],["more","Més"],["check_simplified","està simplificada"],["check_simplified_correct_feedback","La resposta està simplificada."],["check_expanded","està expandida"],["check_expanded_correct_feedback","La resposta està expandida."],["check_factorized","està factoritzada"],["check_factorized_correct_feedback","La resposta està factoritzada."],["check_rationalized","està racionalitzada"],["check_rationalized_correct_feedback","La resposta está racionalitzada."],["check_no_common_factor","no té factors comuns"],["check_no_common_factor_correct_feedback","La resposta no té factors comuns."],["check_minimal_radicands","té radicands minimals"],["check_minimal_radicands_correct_feedback","La resposta té els radicands minimals."],["check_divisible","és divisible per"],["check_divisible_correct_feedback","La resposta és divisible per ${value}."],["check_common_denominator","té denominador comú"],["check_common_denominator_correct_feedback","La resposta té denominador comú."],["check_unit","té unitat equivalent a"],["check_unit_correct_feedback","La unitat de resposta és ${unit}."],["check_unit_literal","té unitat literalment igual a"],["check_unit_literal_correct_feedback","La unitat de resposta és ${unit}."],["check_no_more_decimals","té menys decimals o exactament"],["check_no_more_decimals_correct_feedback","La resposta té ${digits} o menys decimals."],["check_no_more_digits","té menys dígits o exactament"],["check_no_more_digits_correct_feedback","La resposta té ${digits} o menys dígits."],["check_precision","té"],["check_precision_correct_feedback","La resposta té entre ${min} i ${max} ${relative}."],["check_precision_correct_feedback_max","La resposta té ${max} ${relative} com a màxim."],["check_precision_correct_feedback_min","La resposta té ${min} ${relative} com a mínim."],["check_precision_correct_feedback_equal","La resposta té ${max} ${relative}."],["syntax_expression","General"],["syntax_expression_description","(fórmules, expressions, equacions, matrius ...)"],["syntax_expression_correct_feedback","La sintaxi de la resposta és correcta."],["syntax_quantity","Quantitat"],["syntax_quantity_description","(nombres, unitats de mesura, fraccions, fraccions mixtes, raons...)"],["syntax_quantity_correct_feedback","La sintaxi de la resposta és correcta."],["syntax_list","Llista"],["syntax_list_description","(llistes sense coma separadora o parèntesis)"],["syntax_list_correct_feedback","La sintaxi de la resposta és correcta."],["syntax_string","Text"],["syntax_string_description","(paraules, frases, cadenas de caràcters)"],["syntax_string_correct_feedback","La sintaxi de la resposta és correcta."],["none","cap"],["edit","Editar"],["accept","Acceptar"],["cancel","Cancel·lar"],["explog","exp/log"],["trigonometric","trigonomètriques"],["hyperbolic","hiperbòliques"],["arithmetic","aritmètica"],["all","tot"],["tolerance","Tolerància"],["relative","relativa"],["relativetolerance","Tolerància relativa"],["precision","Precisió"],["implicit_times_operator","Ometre producte"],["times_operator","Operador producte"],["imaginary_unit","Unitat imaginària"],["mixedfractions","Fraccions mixtes"],["constants","Constants"],["functions","Funcions"],["userfunctions","Funcions d'usuari"],["units","Unitats"],["unitprefixes","Prefixos d'unitats"],["syntaxparams","Opcions de sintaxi"],["syntaxparams_expression","Opcions per a general"],["syntaxparams_quantity","Opcions per a quantitat"],["syntaxparams_list","Opcions per a llista"],["allowedinput","Entrada permesa"],["manual","Manual"],["correctanswer","Resposta correcta"],["variables","Variables"],["validation","Validació"],["preview","Vista prèvia"],["correctanswertabhelp","Introduïu la resposta correcta utilitzant WIRIS editor. Seleccioneu també el comportament de l'editor de fórmules quan sigui utilitzat per l'estudiant.\n"],["assertionstabhelp","Seleccioneu les propietats que han de complir les respostes d'estudiant. Per exemple, si ha d'estar simplificat, factoritzat, expressat utilitzant unitats físiques o tenir una precisió numèrica específica."],["variablestabhelp","Escriviu un algorisme amb WIRIS CAS per crear variables aleatòries: números, expressions, gràfiques o funcions de qualificació.\nTambé podeu especificar el format de sortida de les variables que es mostren als estudiants.\n"],["testtabhelp","Inserir una possible resposta d'estudiant per simular el comportament de la pregunta. Està utilitzant la mateixa eina que l'estudiant utilitzarà per entrar la resposta.\nObservi que també es poden provar els criteris d'evaluació, l'èxit i la retroalimentació automàtica.\n"],["start","Inici"],["test","Prova"],["clicktesttoevaluate","Feu clic a botó de prova per validar la resposta actual."],["correct","Correcte!"],["incorrect","Incorrecte!"],["partiallycorrect","Parcialment correcte!"],["inputmethod","Mètode d'entrada"],["compoundanswer","Resposta composta"],["answerinputinlineeditor","WIRIS editor incrustat"],["answerinputpopupeditor","WIRIS editor en una finestra emergent"],["answerinputplaintext","Camp d'entrada de text pla"],["showauxiliarcas","Incloure WIRIS CAS"],["initialcascontent","Contingut inicial"],["tolerancedigits","Dígits de tolerància"],["validationandvariables","Validació i variables"],["algorithmlanguage","Idioma de l'algorisme"],["calculatorlanguage","Idioma de la calculadora"],["hasalgorithm","Té algorisme"],["comparison","Comparació"],["properties","Propietats"],["studentanswer","Resposta de l'estudiant"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Els seus canvis es perdran si abandona la finestra."],["outputoptions","Opcions de sortida"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Totes les respostes han de ser correctes"],["distributegrade","Distribueix la nota"],["no","No"],["add","Afegir"],["replaceeditor","Substitueix l'editor"],["list","Llista"],["questionxml","Question XML"],["grammarurl","Grammar URL"],["reservedwords","Paraules reservades"],["forcebrackets","Les llistes sempre necessiten claus \"{}\"."],["commaasitemseparator","Utilitza la coma \",\" com a separador d'elements de llistes."],["confirmimportdeprecated","Importar la pregunta?\nAquesta pregunta conté característiques obsoletes. El procés d'importació pot canviar lleugerament el comportament de la pregunta. És altament recomanat comprovar cuidadosament la pregunta després de la importació."],["comparesets","Compara com a conjunts"],["nobracketslist","Llistes sense claus"],["warningtoleranceprecision","Hi ha menys dígits de precisió de sortida que dígits de tolerància."],["actionimport","Importar"],["actionexport","Exportar"],["usecase","Coincideix majúscules i minúscules"],["usespaces","Coincideix espais"],["notevaluate","Mantén els arguments sense avaluar"],["separators","Separadors"],["comma","Coma"],["commarole","Rol del caràcter coma ','"],["point","Punt"],["pointrole","Rol del caràcter punt '.'"],["space","Espai"],["spacerole","Rol del caràcter espai"],["decimalmark","Decimals"],["digitsgroup","Milers"],["listitems","Elements de llista"],["nothing","Cap"],["intervals","Intervals"],["warningprecision15","La precisió de sortida ha de ser entre 1 i 15."],["decimalSeparator","Decimals"],["thousandsSeparator","Milers"],["notation","Notació"],["invisible","Invisible"],["auto","Auto"],["fixedDecimal","Fixa"],["floatingDecimal","Decimal"],["scientific","Científica"],["example","Exemple"],["warningreltolfixedprec","Tolerància relativa amb notació de xifres decimals."],["warningabstolfloatprec","Tolerància absoluta amb notació de xifres significatives."],["answerinputinlinehand","WIRIS hand incrustat"],["absolutetolerance","Tolerància absoluta"],["clicktoeditalgorithm","Clica el botó per a descarregar i executar l'aplicació WIRIS cas per a editar l'algorisme de la pregunta. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprèn-ne més</a>."],["launchwiriscas","Editar algorisme"],["sendinginitialsession","Enviant algorisme inicial."],["waitingforupdates","Esperant actualitzacions."],["sessionclosed","S'han desat tots els canvis."],["gotsession","Canvis desats (revisió ${n})."],["thecorrectansweris","La resposta correcta és"],["poweredby","Creat per"],["refresh","Renova la resposta correcta"],["fillwithcorrect","Omple amb la resposta correcta"],["runcalculator","Executar calculadora"],["clicktoruncalculator","Clica el botó per a descarregar i executar l'aplicació WIRIS cas per a fer els càlculs que necessiti. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Aprèn-ne més</a>."],["answer","resposta"],["trycalc","Provar CalcMe"],["definevariablesandfunctions","Definiu variables aleatòries i functions"],["wiriscalcwarningmessage","Quan hagueu editat l'algorisme amb CalcMe, ja no podreu obrir-lo amb el WIRIS CAS clàssic en Java."],["usewiriscalc","Utilitzeu CalcMe per editar l'algorisme de la pregunta. CalcMe és compatible amb tots els navegadors, pel que no li cal baixar cap aplicació."],["editalgorithmwithcalc","Editar algorisme amb CalcMe"],["gobacktostudio","Tornar a l'Studio"],["confirmimportalgorithm","Avís!\nSi accepteu, l'algorisme serà importat automàticament a CalcMe. L'algorisme resultant s'ha de revisar i provar manualment.\n\nEls algorismes importats a CalcMe no es poden tornar a obrir amb WIRIS CAS. Si voleu cancel·lar l'importació després d'haver acceptat, no guardeu la pregunta: premeu Cancel·lar a la finestra del WIRIS Quizzes Studio i obriu-la un altre cop."],["wiriscalctip","Consell"],["wiriscalctipmessage","Si voleu tornar al WIRIS CAS clàssic, elimineu completament l'algorisme."],["fromprecision","des de"],["toprecision","fins a"],["decimalplaces","xifres decimals"],["significantfigures","xifres significatives"],["warningcheckprecisionformat","Valors invàlids per a la validació de xifres significatives o decimals."],["warningcheckprecisionvsrelativetolerance","Tolerància relativa amb validació de xifres decimals."],["warningcheckprecisionvsabsolutetolerance","Tolerància absoluta amb validació de xifres significatives."],["warningcheckprecisionvsfloatformat","La precisió de sortida no concorda amb la validació de xifres significatives o decimals."],["warningcheckprecisionvsprecision","El nombre de xifres de la precisió de sortida és menor que el mínim exigit en la validació."],["percenterror","% error percentual"],["absoluteerror","error absolut"],["warningtoleranceformatinteger","El camp de xifres de tolerància ha de ser un nombre enter."],["warningtoleranceformatfloat","El camp d'error ha de ser un nombre decimal positiu."],["lang","it"],["comparisonwithstudentanswer","Confronto con la risposta dello studente"],["otheracceptedanswers","Altre risposte accettate"],["equivalent_literal","Letteralmente uguale"],["equivalent_literal_correct_feedback","La risposta è letteralmente uguale a quella corretta."],["equivalent_symbolic","Matematicamente uguale"],["equivalent_symbolic_correct_feedback","La risposta è matematicamente uguale a quella corretta."],["equivalent_set","Uguale come serie"],["equivalent_set_correct_feedback","La risposta è una serie uguale a quella corretta."],["equivalent_equations","Equazioni equivalenti"],["equivalent_equations_correct_feedback","La risposta ha le stesse soluzioni di quella corretta."],["equivalent_function","Funzione di classificazione"],["equivalent_function_correct_feedback","La risposta è corretta."],["equivalent_all","Qualsiasi risposta"],["any","qualsiasi"],["gradingfunction","Funzione di classificazione"],["additionalproperties","Proprietà aggiuntive"],["structure","Struttura"],["none","nessuno"],["None","Nessuno"],["check_integer_form","corrisponde a un numero intero"],["check_integer_form_correct_feedback","La risposta è un numero intero."],["check_fraction_form","corrisponde a una frazione"],["check_fraction_form_correct_feedback","La risposta è una frazione."],["check_polynomial_form","corrisponde a un polinomio"],["check_polynomial_form_correct_feedback","La risposta è un polinomio."],["check_rational_function_form","corrisponde a una funzione razionale"],["check_rational_function_form_correct_feedback","La risposta è una funzione razionale."],["check_elemental_function_form","è una combinazione di funzioni elementari"],["check_elemental_function_form_correct_feedback","La risposta è un'espressione elementare."],["check_scientific_notation","è espressa in notazione scientifica"],["check_scientific_notation_correct_feedback","La risposta è espressa in notazione scientifica."],["more","Altro"],["check_simplified","è semplificata"],["check_simplified_correct_feedback","La risposta è semplificata."],["check_expanded","è espansa"],["check_expanded_correct_feedback","La risposta è espansa."],["check_factorized","è scomposta in fattori"],["check_factorized_correct_feedback","La risposta è scomposta in fattori."],["check_rationalized","è razionalizzata"],["check_rationalized_correct_feedback","La risposta è razionalizzata."],["check_no_common_factor","non ha fattori comuni"],["check_no_common_factor_correct_feedback","La risposta non ha fattori comuni."],["check_minimal_radicands","ha radicandi minimi"],["check_minimal_radicands_correct_feedback","La risposta contiene radicandi minimi."],["check_divisible","è divisibile per"],["check_divisible_correct_feedback","La risposta è divisibile per ${value}."],["check_common_denominator","ha un solo denominatore comune"],["check_common_denominator_correct_feedback","La risposta ha un solo denominatore comune."],["check_unit","ha un'unità equivalente a"],["check_unit_correct_feedback","La risposta è l'unità ${unit}."],["check_unit_literal","ha un'unità letteralmente uguale a"],["check_unit_literal_correct_feedback","La risposta è l'unità ${unit}."],["check_no_more_decimals","ha un numero inferiore o uguale di decimali rispetto a"],["check_no_more_decimals_correct_feedback","La risposta ha ${digits} o meno decimali."],["check_no_more_digits","ha un numero inferiore o uguale di cifre rispetto a"],["check_no_more_digits_correct_feedback","La risposta ha ${digits} o meno cifre."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Generale"],["syntax_expression_description","(formule, espressioni, equazioni, matrici etc.)"],["syntax_expression_correct_feedback","La sintassi della risposta è corretta."],["syntax_quantity","Quantità"],["syntax_quantity_description","(numeri, unità di misura, frazioni, frazioni miste, proporzioni etc.)"],["syntax_quantity_correct_feedback","La sintassi della risposta è corretta."],["syntax_list","Elenco"],["syntax_list_description","(elenchi senza virgola di separazione o parentesi)"],["syntax_list_correct_feedback","La sintassi della risposta è corretta."],["syntax_string","Testo"],["syntax_string_description","(parole, frasi, stringhe di caratteri)"],["syntax_string_correct_feedback","La sintassi della risposta è corretta."],["none","nessuno"],["edit","Modifica"],["accept","Accetta"],["cancel","Annulla"],["explog","esponenziale/logaritmica"],["trigonometric","trigonometrica"],["hyperbolic","iperbolica"],["arithmetic","aritmetica"],["all","tutto"],["tolerance","Tolleranza"],["relative","relativa"],["relativetolerance","Tolleranza relativa"],["precision","Precisione"],["implicit_times_operator","Operatore prodotto non visibile"],["times_operator","Operatore prodotto"],["imaginary_unit","Unità immaginaria"],["mixedfractions","Frazioni miste"],["constants","Costanti"],["functions","Funzioni"],["userfunctions","Funzioni utente"],["units","Unità"],["unitprefixes","Prefissi unità"],["syntaxparams","Opzioni di sintassi"],["syntaxparams_expression","Opzioni per elementi generali"],["syntaxparams_quantity","Opzioni per la quantità"],["syntaxparams_list","Opzioni per elenchi"],["allowedinput","Input consentito"],["manual","Manuale"],["correctanswer","Risposta corretta"],["variables","Variabili"],["validation","Verifica"],["preview","Anteprima"],["correctanswertabhelp","Inserisci la risposta corretta utilizzando l'editor WIRIS. Seleziona anche un comportamento per l'editor di formule se utilizzato dallo studente.\nNon potrai archiviare la risposta se non si tratta di un'espressione valida.\n"],["assertionstabhelp","Seleziona quali proprietà deve verificare la risposta dello studente. Ad esempio, se la risposta deve essere semplificata, scomposta in fattori o espressa in unità fisiche o se ha una precisione numerica specifica."],["variablestabhelp","Scrivi un algoritmo con WIRIS cas per creare variabili casuali: numeri, espressioni, diagrammi o funzioni di classificazione.\nPuoi anche specificare il formato delle variabili mostrate allo studente.\n"],["testtabhelp","Inserisci la risposta di un possibile studente per simulare il comportamento della domanda. Per questa operazione, utilizzi lo stesso strumento che utilizzerà lo studente.\nNota: puoi anche testare i criteri di valutazione, di risposta corretta e il feedback automatico.\n"],["start","Inizio"],["test","Test"],["clicktesttoevaluate","Fai clic sul pulsante Test per verificare la risposta attuale."],["correct","Risposta corretta."],["incorrect","Risposta sbagliata."],["partiallycorrect","Risposta corretta in parte."],["inputmethod","Metodo di input"],["compoundanswer","Risposta composta"],["answerinputinlineeditor","WIRIS editor integrato"],["answerinputpopupeditor","WIRIS editor nella finestra a comparsa"],["answerinputplaintext","Campo di input testo semplice"],["showauxiliarcas","Includi WIRIS cas"],["initialcascontent","Contenuto iniziale"],["tolerancedigits","Cifre di tolleranza"],["validationandvariables","Verifica e variabili"],["algorithmlanguage","Lingua algoritmo"],["calculatorlanguage","Lingua calcolatrice"],["hasalgorithm","Ha l'algoritmo"],["comparison","Confronto"],["properties","Proprietà"],["studentanswer","Risposta dello studente"],["poweredbywiris","Realizzato con WIRIS"],["yourchangeswillbelost","Se chiudi la finestra, le modifiche andranno perse."],["outputoptions","Opzioni risultato"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Tutte le risposte devono essere corrette"],["distributegrade","Fornisci voto"],["no","No"],["add","Aggiungi"],["replaceeditor","Sostituisci editor"],["list","Elenco"],["questionxml","XML domanda"],["grammarurl","URL grammatica"],["reservedwords","Parole riservate"],["forcebrackets","Gli elenchi devono sempre contenere le parentesi graffe \"{}\"."],["commaasitemseparator","Utilizza la virgola \",\" per separare gli elementi di un elenco."],["confirmimportdeprecated","Vuoi importare la domanda?\n    La domanda che vuoi aprire contiene funzionalità obsolete. Il processo di importazione potrebbe modificare leggermente il comportamento della domanda. Ti consigliamo di controllare attentamente la domanda dopo l'importazione."],["comparesets","Confronta come serie"],["nobracketslist","Elenchi senza parentesi"],["warningtoleranceprecision","Le cifre di precisione sono inferiori a quelle di tolleranza."],["actionimport","Importazione"],["actionexport","Esportazione"],["usecase","Rispetta maiuscole/minuscole"],["usespaces","Rispetta spazi"],["notevaluate","Mantieni argomenti non valutati"],["separators","Separatori"],["comma","Virgola"],["commarole","Ruolo della virgola “,”"],["point","Punto"],["pointrole","Ruolo del punto “.”"],["space","Spazio"],["spacerole","Ruolo dello spazio"],["decimalmark","Cifre decimali"],["digitsgroup","Gruppi di cifre"],["listitems","Elenca elementi"],["nothing","Niente"],["intervals","Intervalli"],["warningprecision15","La precisione deve essere compresa tra 1 e 15."],["decimalSeparator","Decimale"],["thousandsSeparator","Migliaia"],["notation","Notazione"],["invisible","Invisibile"],["auto","Automatico"],["fixedDecimal","Fisso"],["floatingDecimal","Decimale"],["scientific","Scientifica"],["example","Esempio"],["warningreltolfixedprec","Tolleranza relativa con notazione decimale fissa."],["warningabstolfloatprec","Tolleranza assoluta con notazione decimale fluttuante."],["answerinputinlinehand","Applicazione WIRIS hand incorporata"],["absolutetolerance","Tolleranza assoluta"],["clicktoeditalgorithm","Il tuo browser non <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">supporta Java</a>. Fai clic sul pulsante per scaricare ed eseguire l’applicazione WIRIS cas che consente di modificare l’algoritmo della domanda."],["launchwiriscas","Avvia WIRIS cas"],["sendinginitialsession","Invio della sessione iniziale..."],["waitingforupdates","In attesa degli aggiornamenti..."],["sessionclosed","Comunicazione chiusa."],["gotsession","Ricevuta revisione ${n}."],["thecorrectansweris","La risposta corretta è"],["poweredby","Offerto da"],["refresh","Rinnova la risposta corretta"],["fillwithcorrect","Inserisci la risposta corretta"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","fr"],["comparisonwithstudentanswer","Comparaison avec la réponse de l'étudiant"],["otheracceptedanswers","Autres réponses acceptées"],["equivalent_literal","Strictement égal"],["equivalent_literal_correct_feedback","La réponse est strictement égale à la bonne réponse."],["equivalent_symbolic","Mathématiquement égal"],["equivalent_symbolic_correct_feedback","La réponse est mathématiquement égale à la bonne réponse."],["equivalent_set","Égal en tant qu'ensembles"],["equivalent_set_correct_feedback","L'ensemble de réponses est égal à la bonne réponse."],["equivalent_equations","Équations équivalentes"],["equivalent_equations_correct_feedback","La réponse partage les mêmes solutions que la bonne réponse."],["equivalent_function","Fonction de gradation"],["equivalent_function_correct_feedback","C'est la bonne réponse."],["equivalent_all","N'importe quelle réponse"],["any","quelconque"],["gradingfunction","Fonction de gradation"],["additionalproperties","Propriétés supplémentaires"],["structure","Structure"],["none","aucune"],["None","Aucune"],["check_integer_form","a la forme d'un entier."],["check_integer_form_correct_feedback","La réponse est un nombre entier."],["check_fraction_form","a la forme d'une fraction"],["check_fraction_form_correct_feedback","La réponse est une fraction."],["check_polynomial_form","a la forme d'un polynôme"],["check_polynomial_form_correct_feedback","La réponse est un polynôme."],["check_rational_function_form","a la forme d'une fonction rationnelle"],["check_rational_function_form_correct_feedback","La réponse est une fonction rationnelle."],["check_elemental_function_form","est une combinaison de fonctions élémentaires"],["check_elemental_function_form_correct_feedback","La réponse est une expression élémentaire."],["check_scientific_notation","est exprimé en notation scientifique"],["check_scientific_notation_correct_feedback","La réponse est exprimée en notation scientifique."],["more","Plus"],["check_simplified","est simplifié"],["check_simplified_correct_feedback","La réponse est simplifiée."],["check_expanded","est développé"],["check_expanded_correct_feedback","La réponse est développée."],["check_factorized","est factorisé"],["check_factorized_correct_feedback","La réponse est factorisée."],["check_rationalized"," : rationalisé"],["check_rationalized_correct_feedback","La réponse est rationalisée."],["check_no_common_factor","n'a pas de facteurs communs"],["check_no_common_factor_correct_feedback","La réponse n'a pas de facteurs communs."],["check_minimal_radicands","a des radicandes minimaux"],["check_minimal_radicands_correct_feedback","La réponse a des radicandes minimaux."],["check_divisible","est divisible par"],["check_divisible_correct_feedback","La réponse est divisible par ${value}."],["check_common_denominator","a un seul dénominateur commun"],["check_common_denominator_correct_feedback","La réponse inclut un seul dénominateur commun."],["check_unit","inclut une unité équivalente à"],["check_unit_correct_feedback","La bonne unité est ${unit}."],["check_unit_literal","a une unité strictement égale à"],["check_unit_literal_correct_feedback","La bonne unité est ${unit}."],["check_no_more_decimals","a le même nombre ou moins de décimales que"],["check_no_more_decimals_correct_feedback","La réponse inclut au plus ${digits} décimales."],["check_no_more_digits","a le même nombre ou moins de chiffres que"],["check_no_more_digits_correct_feedback","La réponse inclut au plus ${digits} chiffres."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Général"],["syntax_expression_description","(formules, expressions, équations, matrices…)"],["syntax_expression_correct_feedback","La syntaxe de la réponse est correcte."],["syntax_quantity","Quantité"],["syntax_quantity_description","(nombres, unités de mesure, fractions, fractions mixtes, proportions…)"],["syntax_quantity_correct_feedback","La syntaxe de la réponse est correcte."],["syntax_list","Liste"],["syntax_list_description","(listes sans virgule ou crochets de séparation)"],["syntax_list_correct_feedback","La syntaxe de la réponse est correcte."],["syntax_string","Texte"],["syntax_string_description","(mots, phrases, suites de caractères)"],["syntax_string_correct_feedback","La syntaxe de la réponse est correcte."],["none","aucune"],["edit","Modifier"],["accept","Accepter"],["cancel","Annuler"],["explog","exp/log"],["trigonometric","trigonométrique"],["hyperbolic","hyperbolique"],["arithmetic","arithmétique"],["all","toutes"],["tolerance","Tolérance"],["relative","relative"],["relativetolerance","Tolérance relative"],["precision","Précision"],["implicit_times_operator","Opérateur de multiplication invisible"],["times_operator","Opérateur de multiplication"],["imaginary_unit","Unité imaginaire"],["mixedfractions","Fractions mixtes"],["constants","Constantes"],["functions","Fonctions"],["userfunctions","Fonctions personnalisées"],["units","Unités"],["unitprefixes","Préfixes d'unité"],["syntaxparams","Options de syntaxe"],["syntaxparams_expression","Options générales"],["syntaxparams_quantity","Options de quantité"],["syntaxparams_list","Options de liste"],["allowedinput","Entrée autorisée"],["manual","Manuel"],["correctanswer","Bonne réponse"],["variables","Variables"],["validation","Validation"],["preview","Aperçu"],["correctanswertabhelp","Insérer la bonne réponse à l'aide du WIRIS Editor. Sélectionner aussi le comportement de l'éditeur de formule lorsque l'étudiant y fait appel.\n"],["assertionstabhelp","Sélectionner les propriétés que la réponse de l'étudiant doit satisfaire. Par exemple, si elle doit être simplifiée, factorisée, exprimée dans une unité physique ou présenter une précision chiffrée spécifique."],["variablestabhelp","Écrire un algorithme à l'aide de WIRIS CAS pour créer des variables aléatoires : des nombres, des expressions, des courbes ou une fonction de gradation. \nVous pouvez aussi spécifier un format des variables pour l'affichage à l'étudiant.\n"],["testtabhelp","Insérer une réponse possible de l'étudiant afin de simuler le comportement de la question. Vous utilisez le même outil que l'étudiant. \nNotez que vous pouvez aussi tester le critère d'évaluation, de réussite et les commentaires automatiques.\n"],["start","Démarrer"],["test","Tester"],["clicktesttoevaluate","Cliquer sur le bouton Test pour valider la réponse actuelle."],["correct","Correct !"],["incorrect","Incorrect !"],["partiallycorrect","Partiellement correct !"],["inputmethod","Méthode de saisie"],["compoundanswer","Réponse composée"],["answerinputinlineeditor","WIRIS Editor intégré"],["answerinputpopupeditor","WIRIS Editor dans une fenêtre"],["answerinputplaintext","Champ de saisie de texte brut"],["showauxiliarcas","Inclure WIRIS CAS"],["initialcascontent","Contenu initial"],["tolerancedigits","Tolérance en chiffres"],["validationandvariables","Validation et variables"],["algorithmlanguage","Langage d'algorithme"],["calculatorlanguage","Langage de calcul"],["hasalgorithm","Possède un algorithme"],["comparison","Comparaison"],["properties","Propriétés"],["studentanswer","Réponse de l'étudiant"],["poweredbywiris","Développé par WIRIS"],["yourchangeswillbelost","Vous perdrez vos modifications si vous fermez la fenêtre."],["outputoptions","Options de sortie"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Toutes les réponses doivent être correctes"],["distributegrade","Degré de distribution"],["no","Non"],["add","Ajouter"],["replaceeditor","Remplacer l'éditeur"],["list","Liste"],["questionxml","Question XML"],["grammarurl","URL de la grammaire"],["reservedwords","Mots réservés"],["forcebrackets","Les listes requièrent l'utilisation d'accolades « {} »."],["commaasitemseparator","Utiliser une virgule « , » comme séparateur d'éléments de liste."],["confirmimportdeprecated","Importer la question ? \nLa question que vous êtes sur le point d'ouvrir contient des fonctionnalités obsolètes. Il se peut que la procédure d'importation modifie légèrement le comportement de la question. Il est fortement recommandé de tester attentivement la question après l'importation."],["comparesets","Comparer en tant qu'ensembles"],["nobracketslist","Listes sans crochets"],["warningtoleranceprecision","Moins de chiffres pour la précision que pour la tolérance."],["actionimport","Importer"],["actionexport","Exporter"],["usecase","Respecter la casse"],["usespaces","Respecter les espaces"],["notevaluate","Conserver les arguments non évalués"],["separators","Séparateurs"],["comma","Virgule"],["commarole","Rôle du signe virgule « , »"],["point","Point"],["pointrole","Rôle du signe point « . »"],["space","Espace"],["spacerole","Rôle du signe espace"],["decimalmark","Chiffres après la virgule"],["digitsgroup","Groupes de chiffres"],["listitems","Éléments de liste"],["nothing","Rien"],["intervals","Intervalles"],["warningprecision15","La précision doit être entre 1 et 15."],["decimalSeparator","Virgule"],["thousandsSeparator","Milliers"],["notation","Notation"],["invisible","Invisible"],["auto","Auto."],["fixedDecimal","Fixe"],["floatingDecimal","Décimale"],["scientific","Scientifique"],["example","Exemple"],["warningreltolfixedprec","Tolérance relative avec la notation en mode virgule fixe."],["warningabstolfloatprec","Tolérance absolue avec la notation en mode virgule flottante."],["answerinputinlinehand","WIRIS écriture manuscrite intégrée"],["absolutetolerance","Tolérance absolue"],["clicktoeditalgorithm","Votre navigateur ne prend <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">pas en charge Java</a>. Cliquez sur le bouton pour télécharger et exécuter l’application WIRIS CAS et modifier l’algorithme de votre question."],["launchwiriscas","Lancer WIRIS CAS"],["sendinginitialsession","Envoi de la session de départ…"],["waitingforupdates","Attente des actualisations…"],["sessionclosed","Transmission fermée."],["gotsession","Révision reçue ${n}."],["thecorrectansweris","La bonne réponse est"],["poweredby","Basé sur"],["refresh","Confirmer la réponse correcte"],["fillwithcorrect","Remplir avec la réponse correcte"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","de"],["comparisonwithstudentanswer","Vergleich mit Schülerantwort"],["otheracceptedanswers","Weitere akzeptierte Antworten"],["equivalent_literal","Im Wortsinn äquivalent"],["equivalent_literal_correct_feedback","Die Antwort ist im Wortsinn äquivalent zur richtigen."],["equivalent_symbolic","Mathematisch äquivalent"],["equivalent_symbolic_correct_feedback","Die Antwort ist mathematisch äquivalent zur richtigen Antwort."],["equivalent_set","Äquivalent als Sätze"],["equivalent_set_correct_feedback","Der Fragensatz ist äquivalent zum richtigen."],["equivalent_equations","Äquivalente Gleichungen"],["equivalent_equations_correct_feedback","Die Antwort hat die gleichen Lösungen wie die richtige."],["equivalent_function","Benotungsfunktion"],["equivalent_function_correct_feedback","Die Antwort ist richtig."],["equivalent_all","Jede Antwort"],["any","Irgendeine"],["gradingfunction","Benotungsfunktion"],["additionalproperties","Zusätzliche Eigenschaften"],["structure","Struktur"],["none","Keine"],["None","Keine"],["check_integer_form","hat Form einer ganzen Zahl"],["check_integer_form_correct_feedback","Die Antwort ist eine ganze Zahl."],["check_fraction_form","hat Form einer Bruchzahl"],["check_fraction_form_correct_feedback","Die Antwort ist eine Bruchzahl."],["check_polynomial_form","hat Form eines Polynoms"],["check_polynomial_form_correct_feedback","Die Antwort ist ein Polynom."],["check_rational_function_form","hat Form einer rationalen Funktion"],["check_rational_function_form_correct_feedback","Die Antwort ist eine rationale Funktion."],["check_elemental_function_form","ist eine Kombination aus elementaren Funktionen"],["check_elemental_function_form_correct_feedback","Die Antwort ist ein elementarer Ausdruck."],["check_scientific_notation","ist in wissenschaftlicher Schreibweise ausgedrückt"],["check_scientific_notation_correct_feedback","Die Antwort ist in wissenschaftlicher Schreibweise ausgedrückt."],["more","Mehr"],["check_simplified","ist vereinfacht"],["check_simplified_correct_feedback","Die Antwort ist vereinfacht."],["check_expanded","ist erweitert"],["check_expanded_correct_feedback","Die Antwort ist erweitert."],["check_factorized","ist faktorisiert"],["check_factorized_correct_feedback","Die Antwort ist faktorisiert."],["check_rationalized","ist rationalisiert"],["check_rationalized_correct_feedback","Die Antwort ist rationalisiert."],["check_no_common_factor","hat keine gemeinsamen Faktoren"],["check_no_common_factor_correct_feedback","Die Antwort hat keine gemeinsamen Faktoren."],["check_minimal_radicands","weist minimale Radikanden auf"],["check_minimal_radicands_correct_feedback","Die Antwort weist minimale Radikanden auf."],["check_divisible","ist teilbar durch"],["check_divisible_correct_feedback","Die Antwort ist teilbar durch ${value}."],["check_common_denominator","hat einen einzigen gemeinsamen Nenner"],["check_common_denominator_correct_feedback","Die Antwort hat einen einzigen gemeinsamen Nenner."],["check_unit","hat äquivalente Einheit zu"],["check_unit_correct_feedback","Die Einheit der Antwort ist ${unit}."],["check_unit_literal","hat Einheit im Wortsinn äquivalent zu"],["check_unit_literal_correct_feedback","Die Einheit der Antwort ist ${unit}."],["check_no_more_decimals","hat weniger als oder gleich viele Dezimalstellen wie"],["check_no_more_decimals_correct_feedback","Die Antwort hat ${digits} oder weniger Dezimalstellen."],["check_no_more_digits","hat weniger oder gleich viele Stellen wie"],["check_no_more_digits_correct_feedback","Die Antwort hat ${digits} oder weniger Stellen."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Allgemein"],["syntax_expression_description","(Formeln, Ausdrücke, Gleichungen, Matrizen ...)"],["syntax_expression_correct_feedback","Die Syntax der Antwort ist richtig."],["syntax_quantity","Menge"],["syntax_quantity_description","(Zahlen, Maßeinheiten, Brüche, gemischte Brüche, Verhältnisse ...)"],["syntax_quantity_correct_feedback","Die Syntax der Antwort ist richtig."],["syntax_list","Liste"],["syntax_list_description","(Listen ohne Komma als Trennzeichen oder Klammern)"],["syntax_list_correct_feedback","Die Syntax der Antwort ist richtig."],["syntax_string","Text"],["syntax_string_description","(Wörter, Sätze, Zeichenketten)"],["syntax_string_correct_feedback","Die Syntax der Antwort ist richtig."],["none","Keine"],["edit","Bearbeiten"],["accept","Akzeptieren"],["cancel","Abbrechen"],["explog","exp/log"],["trigonometric","Trigonometrische"],["hyperbolic","Hyperbolische"],["arithmetic","Arithmetische"],["all","Alle"],["tolerance","Toleranz"],["relative","Relative"],["relativetolerance","Relative Toleranz"],["precision","Genauigkeit"],["implicit_times_operator","Unsichtbares Multiplikationszeichen"],["times_operator","Multiplikationszeichen"],["imaginary_unit","Imaginäre Einheit"],["mixedfractions","Gemischte Brüche"],["constants","Konstanten"],["functions","Funktionen"],["userfunctions","Nutzerfunktionen"],["units","Einheiten"],["unitprefixes","Einheitenpräfixe"],["syntaxparams","Syntaxoptionen"],["syntaxparams_expression","Optionen für Allgemein"],["syntaxparams_quantity","Optionen für Menge"],["syntaxparams_list","Optionen für Liste"],["allowedinput","Zulässige Eingabe"],["manual","Anleitung"],["correctanswer","Richtige Antwort"],["variables","Variablen"],["validation","Validierung"],["preview","Vorschau"],["correctanswertabhelp","Geben Sie die richtige Antwort unter Verwendung des WIRIS editors ein. Wählen Sie auch die Verhaltensweise des Formel-Editors, wenn er vom Schüler verwendet wird.\n"],["assertionstabhelp","Wählen Sie die Eigenschaften, welche die Schülerantwort erfüllen muss: Ob Sie zum Beispiel vereinfacht, faktorisiert, durch physikalische Einheiten ausgedrückt werden oder eine bestimmte numerische Genauigkeit aufweisen soll."],["variablestabhelp","Schreiben Sie einen Algorithmus mit WIRIS cas, um zufällige Variablen zu erstellen:  Zahlen, Ausdrücke, grafische Darstellungen oder eine Benotungsfunktion. Sie können auch das Ausgabeformat bestimmen, in welchem die Variablen dem Schüler angezeigt werden.\n"],["testtabhelp","Geben Sie eine mögliche Schülerantwort ein, um die Verhaltensweise der Frage zu simulieren. Sie verwenden das gleiche Tool, das der Schüler verwenden wird. Beachten Sie bitte, dass Sie auch die Bewertungskriterien, den Erfolg und das automatische Feedback testen können.\n"],["start","Start"],["test","Testen"],["clicktesttoevaluate","Klicken Sie auf die Schaltfläche „Testen“, um die aktuelle Antwort zu validieren."],["correct","Richtig!"],["incorrect","Falsch!"],["partiallycorrect","Teilweise richtig!"],["inputmethod","Eingabemethode"],["compoundanswer","Zusammengesetzte Antwort"],["answerinputinlineeditor","WIRIS editor eingebettet"],["answerinputpopupeditor","WIRIS editor in Popup"],["answerinputplaintext","Eingabefeld mit reinem Text"],["showauxiliarcas","WIRIS cas einbeziehen"],["initialcascontent","Anfangsinhalt"],["tolerancedigits","Toleranzstellen"],["validationandvariables","Validierung und Variablen"],["algorithmlanguage","Algorithmussprache"],["calculatorlanguage","Sprache des Rechners"],["hasalgorithm","Hat Algorithmus"],["comparison","Vergleich"],["properties","Eigenschaften"],["studentanswer","Schülerantwort"],["poweredbywiris","Powered by WIRIS"],["yourchangeswillbelost","Bei Verlassen des Fensters gehen Ihre Änderungen verloren."],["outputoptions","Ausgabeoptionen"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Alle Antworten müssen richtig sein."],["distributegrade","Note zuweisen"],["no","Nein"],["add","Hinzufügen"],["replaceeditor","Editor ersetzen"],["list","Liste"],["questionxml","Frage-XML"],["grammarurl","Grammatik-URL"],["reservedwords","Reservierte Wörter"],["forcebrackets","Listen benötigen immer geschweifte Klammern „{}“."],["commaasitemseparator","Verwenden Sie ein Komma „,“ zur Trennung von Listenelementen."],["confirmimportdeprecated","Frage importieren? Die Frage, die Sie öffnen möchten, beinhaltet veraltete Merkmale. Durch den Importvorgang kann die Verhaltensweise der Frage leicht verändert werden. Es wird dringend empfohlen, die Frage nach dem Importieren gründlich zu überprüfen."],["comparesets","Als Mengen vergleichen"],["nobracketslist","Listen ohne Klammern"],["warningtoleranceprecision","Weniger Genauigkeitstellen als Toleranzstellen."],["actionimport","Importieren"],["actionexport","Exportieren"],["usecase","Schreibung anpassen"],["usespaces","Abstände anpassen"],["notevaluate","Argumente unausgewertet lassen"],["separators","Trennzeichen"],["comma","Komma"],["commarole","Funktion des Kommazeichens „,“"],["point","Punkt"],["pointrole","Funktion des Punktzeichens „.“"],["space","Leerzeichen"],["spacerole","Funktion des Leerzeichens"],["decimalmark","Dezimalstellen"],["digitsgroup","Zahlengruppen"],["listitems","Listenelemente"],["nothing","Nichts"],["intervals","Intervalle"],["warningprecision15","Die Präzision muss zwischen 1 und 15 liegen."],["decimalSeparator","Dezimalstelle"],["thousandsSeparator","Tausender"],["notation","Notation"],["invisible","Unsichtbar"],["auto","Automatisch"],["fixedDecimal","Feste"],["floatingDecimal","Dezimalstelle"],["scientific","Wissenschaftlich"],["example","Beispiel"],["warningreltolfixedprec","Relative Toleranz mit fester Dezimalnotation."],["warningabstolfloatprec","Absolute Toleranz mit fließender Dezimalnotation."],["answerinputinlinehand","WIRIS hand eingebettet"],["absolutetolerance","Absolute Toleranz"],["clicktoeditalgorithm","Ihr Browser <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">unterstützt kein Java</a>. Klicken Sie auf die Schaltfläche, um die Anwendung WIRIS cas herunterzuladen und auszuführen. Mit dieser können Sie den Fragen-Algorithmus bearbeiten."],["launchwiriscas","WIRIS cas starten"],["sendinginitialsession","Ursprüngliche Sitzung senden ..."],["waitingforupdates","Auf Updates warten ..."],["sessionclosed","Kommunikation geschlossen."],["gotsession","Empfangene Überarbeitung ${n}."],["thecorrectansweris","Die richtige Antwort ist"],["poweredby","Angetrieben durch "],["refresh","Korrekte Antwort erneuern"],["fillwithcorrect","Mit korrekter Antwort ausfüllen"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","el"],["comparisonwithstudentanswer","Σύγκριση με απάντηση μαθητή"],["otheracceptedanswers","Άλλες αποδεκτές απαντήσεις"],["equivalent_literal","Κυριολεκτικά ίση"],["equivalent_literal_correct_feedback","Η απάντηση είναι κυριολεκτικά ίση με τη σωστή."],["equivalent_symbolic","Μαθηματικά ίση"],["equivalent_symbolic_correct_feedback","Η απάντηση είναι μαθηματικά ίση με τη σωστή."],["equivalent_set","Ίσα σύνολα"],["equivalent_set_correct_feedback","Το σύνολο της απάντησης είναι ίσο με το σωστό."],["equivalent_equations","Ισοδύναμες εξισώσεις"],["equivalent_equations_correct_feedback","Η απάντηση έχει τις ίδιες λύσεις με τη σωστή."],["equivalent_function","Συνάρτηση βαθμολόγησης"],["equivalent_function_correct_feedback","Η απάντηση είναι σωστή."],["equivalent_all","Οποιαδήποτε απάντηση"],["any","οποιαδήποτε"],["gradingfunction","Συνάρτηση βαθμολόγησης"],["additionalproperties","Πρόσθετες ιδιότητες"],["structure","Δομή"],["none","καμία"],["None","Καμία"],["check_integer_form","έχει μορφή ακέραιου"],["check_integer_form_correct_feedback","Η απάντηση είναι ένας ακέραιος."],["check_fraction_form","έχει μορφή κλάσματος"],["check_fraction_form_correct_feedback","Η απάντηση είναι ένα κλάσμα."],["check_polynomial_form","έχει πολυωνυμική μορφή"],["check_polynomial_form_correct_feedback","Η απάντηση είναι ένα πολυώνυμο."],["check_rational_function_form","έχει μορφή λογικής συνάρτησης"],["check_rational_function_form_correct_feedback","Η απάντηση είναι μια λογική συνάρτηση."],["check_elemental_function_form","είναι συνδυασμός στοιχειωδών συναρτήσεων"],["check_elemental_function_form_correct_feedback","Η απάντηση είναι μια στοιχειώδης έκφραση."],["check_scientific_notation","εκφράζεται με επιστημονική σημειογραφία"],["check_scientific_notation_correct_feedback","Η απάντηση εκφράζεται με επιστημονική σημειογραφία."],["more","Περισσότερες"],["check_simplified","είναι απλοποιημένη"],["check_simplified_correct_feedback","Η απάντηση είναι απλοποιημένη."],["check_expanded","είναι ανεπτυγμένη"],["check_expanded_correct_feedback","Η απάντηση είναι ανεπτυγμένη."],["check_factorized","είναι παραγοντοποιημένη"],["check_factorized_correct_feedback","Η απάντηση είναι παραγοντοποιημένη."],["check_rationalized","είναι αιτιολογημένη"],["check_rationalized_correct_feedback","Η απάντηση είναι αιτιολογημένη."],["check_no_common_factor","δεν έχει κοινούς συντελεστές"],["check_no_common_factor_correct_feedback","Η απάντηση δεν έχει κοινούς συντελεστές."],["check_minimal_radicands","έχει ελάχιστα υπόρριζα"],["check_minimal_radicands_correct_feedback","Η απάντηση έχει ελάχιστα υπόρριζα."],["check_divisible","διαιρείται με το"],["check_divisible_correct_feedback","Η απάντηση διαιρείται με το ${value}."],["check_common_denominator","έχει έναν κοινό παρονομαστή"],["check_common_denominator_correct_feedback","Η απάντηση έχει έναν κοινό παρονομαστή."],["check_unit","έχει μονάδα ισοδύναμη με"],["check_unit_correct_feedback","Η μονάδα της απάντηση είναι ${unit}."],["check_unit_literal","έχει μονάδα κυριολεκτικά ίση με"],["check_unit_literal_correct_feedback","Η μονάδα της απάντηση είναι ${unit}."],["check_no_more_decimals","έχει λιγότερα ή ίσα δεκαδικά του"],["check_no_more_decimals_correct_feedback","Η απάντηση έχει ${digits} ή λιγότερα δεκαδικά."],["check_no_more_digits","έχει λιγότερα ή ίσα ψηφία του"],["check_no_more_digits_correct_feedback","Η απάντηση έχει ${digits} ή λιγότερα ψηφία."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Γενικά"],["syntax_expression_description","(τύποι, εκφράσεις, εξισώσεις, μήτρες...)"],["syntax_expression_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["syntax_quantity","Ποσότητα"],["syntax_quantity_description","(αριθμοί, μονάδες μέτρησης, κλάσματα, μικτά κλάσματα, αναλογίες,...)"],["syntax_quantity_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["syntax_list","Λίστα"],["syntax_list_description","(λίστες χωρίς διαχωριστικό κόμμα ή παρενθέσεις)"],["syntax_list_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["syntax_string","Κείμενο"],["syntax_string_description","(λέξεις, προτάσεις, συμβολοσειρές χαρακτήρων)"],["syntax_string_correct_feedback","Η σύνταξη της απάντησης είναι σωστή."],["none","καμία"],["edit","Επεξεργασία"],["accept","ΟΚ"],["cancel","Άκυρο"],["explog","exp/log"],["trigonometric","τριγωνομετρική"],["hyperbolic","υπερβολική"],["arithmetic","αριθμητική"],["all","όλες"],["tolerance","Ανοχή"],["relative","σχετική"],["relativetolerance","Σχετική ανοχή"],["precision","Ακρίβεια"],["implicit_times_operator","Μη ορατός τελεστής επί"],["times_operator","Τελεστής επί"],["imaginary_unit","Φανταστική μονάδα"],["mixedfractions","Μικτά κλάσματα"],["constants","Σταθερές"],["functions","Συναρτήσεις"],["userfunctions","Συναρτήσεις χρήστη"],["units","Μονάδες"],["unitprefixes","Προθέματα μονάδων"],["syntaxparams","Επιλογές σύνταξης"],["syntaxparams_expression","Επιλογές για γενικά"],["syntaxparams_quantity","Επιλογές για ποσότητα"],["syntaxparams_list","Επιλογές για λίστα"],["allowedinput","Επιτρεπόμενο στοιχείο εισόδου"],["manual","Εγχειρίδιο"],["correctanswer","Σωστή απάντηση"],["variables","Μεταβλητές"],["validation","Επικύρωση"],["preview","Προεπισκόπηση"],["correctanswertabhelp","Εισαγάγετε τη σωστή απάντηση χρησιμοποιώντας τον επεξεργαστή WIRIS. Επιλέξτε επίσης τη συμπεριφορά για τον επεξεργαστή τύπων, όταν χρησιμοποιείται από τον μαθητή."],["assertionstabhelp","Επιλέξτε τις ιδιότητες που πρέπει να ικανοποιεί η απάντηση του μαθητή. Για παράδειγμα, εάν πρέπει να είναι απλοποιημένη, παραγοντοποιημένη, εκφρασμένη σε φυσικές μονάδες ή να έχει συγκεκριμένη αριθμητική ακρίβεια."],["variablestabhelp","Γράψτε έναν αλγόριθμο με το WIRIS cas για να δημιουργήσετε τυχαίες μεταβλητές: αριθμούς, εκφράσεις, σχεδιαγράμματα ή μια συνάρτηση βαθμολόγησης. Μπορείτε επίσης να καθορίσετε τη μορφή εξόδου των μεταβλητών που θα εμφανίζονται στον μαθητή."],["testtabhelp","Εισαγάγετε μια πιθανή απάντηση του μαθητή για να προσομοιώσετε τη συμπεριφορά της ερώτησης. Χρησιμοποιείτε το ίδιο εργαλείο με αυτό που θα χρησιμοποιήσει ο μαθητής. Σημειώνεται ότι μπορείτε επίσης να ελέγξετε τα κριτήρια αξιολόγησης, την επιτυχία και τα αυτόματα σχόλια."],["start","Έναρξη"],["test","Δοκιμή"],["clicktesttoevaluate","Κάντε κλικ στο κουμπί «Δοκιμή» για να επικυρώσετε τη σωστή απάντηση."],["correct","Σωστό!"],["incorrect","Λάθος!"],["partiallycorrect","Εν μέρει σωστό!"],["inputmethod","Μέθοδος εισόδου"],["compoundanswer","Σύνθετη απάντηση"],["answerinputinlineeditor","Επεξεργαστής WIRIS ενσωματωμένος"],["answerinputpopupeditor","Επεξεργαστής WIRIS σε αναδυόμενο πλαίσιο"],["answerinputplaintext","Πεδίο εισόδου απλού κειμένου"],["showauxiliarcas","Συμπερίληψη WIRIS cas"],["initialcascontent","Αρχικό περιεχόμενο"],["tolerancedigits","Ψηφία ανοχής"],["validationandvariables","Επικύρωση και μεταβλητές"],["algorithmlanguage","Γλώσσα αλγόριθμου"],["calculatorlanguage","Γλώσσα υπολογιστή"],["hasalgorithm","Έχει αλγόριθμο"],["comparison","Σύγκριση"],["properties","Ιδιότητες"],["studentanswer","Απάντηση μαθητή"],["poweredbywiris","Παρέχεται από τη WIRIS"],["yourchangeswillbelost","Οι αλλαγές σας θα χαθούν εάν αποχωρήσετε από το παράθυρο."],["outputoptions","Επιλογές εξόδου"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Όλες οι απαντήσεις πρέπει να είναι σωστές"],["distributegrade","Κατανομή βαθμών"],["no","Όχι"],["add","Προσθήκη"],["replaceeditor","Αντικατάσταση επεξεργαστή"],["list","Λίστα"],["questionxml","XML ερώτησης"],["grammarurl","URL γραμματικής"],["reservedwords","Ανεστραμμένες λέξεις"],["forcebrackets","Για τις λίστες χρειάζονται πάντα άγκιστρα «{}»."],["commaasitemseparator","Χρησιμοποιήστε το κόμμα «,» ως διαχωριστικό στοιχείων λίστας."],["confirmimportdeprecated","Εισαγωγή της ερώτησης; Η ερώτηση που πρόκειται να ανοίξετε περιέχει δυνατότητες που έχουν καταργηθεί. Η διαδικασία εισαγωγής μπορεί να αλλάξει λίγο τη συμπεριφορά της ερώτησης. Θα πρέπει να εξετάσετε προσεκτικά την ερώτηση μετά από την εισαγωγή της."],["comparesets","Σύγκριση ως συνόλων"],["nobracketslist","Λίστες χωρίς άγκιστρα"],["warningtoleranceprecision","Λιγότερα ψηφία ακρίβειας από τα ψηφία ανοχής."],["actionimport","Εισαγωγή"],["actionexport","Εξαγωγή"],["usecase","Συμφωνία πεζών-κεφαλαίων"],["usespaces","Συμφωνία διαστημάτων"],["notevaluate","Διατήρηση των ορισμάτων χωρίς αξιολόγηση"],["separators","Διαχωριστικά"],["comma","Κόμμα"],["commarole","Ρόλος του χαρακτήρα «,» (κόμμα)"],["point","Τελεία"],["pointrole","Ρόλος του χαρακτήρα «.» (τελεία)"],["space","Διάστημα"],["spacerole","Ρόλος του χαρακτήρα διαστήματος"],["decimalmark","Δεκαδικά ψηφία"],["digitsgroup","Ομάδες ψηφίων"],["listitems","Στοιχεία λίστας"],["nothing","Τίποτα"],["intervals","Διαστήματα"],["warningprecision15","Η ακρίβεια πρέπει να είναι μεταξύ 1 και 15."],["decimalSeparator","Δεκαδικό"],["thousandsSeparator","Χιλιάδες"],["notation","Σημειογραφία"],["invisible","Μη ορατό"],["auto","Αυτόματα"],["fixedDecimal","Σταθερό"],["floatingDecimal","Δεκαδικό"],["scientific","Επιστημονικό"],["example","Παράδειγμα"],["warningreltolfixedprec","Σχετική ανοχή με σημειογραφία σταθερής υποδιαστολής."],["warningabstolfloatprec","Απόλυτη ανοχή με σημειογραφία κινητής υποδιαστολής."],["answerinputinlinehand","WIRIS ενσωματωμένο"],["absolutetolerance","Απόλυτη ανοχή"],["clicktoeditalgorithm","Το πρόγραμμα περιήγησης που χρησιμοποιείτε δεν <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">υποστηρίζει Java</a>. Κάντε κλικ στο κουμπί για τη λήψη και την εκτέλεση της εφαρμογής WIRIS cas για επεξεργασία του αλγόριθμου ερώτησης."],["launchwiriscas","Εκκίνηση του WIRIS cas"],["sendinginitialsession","Αποστολή αρχικής περιόδου σύνδεσης..."],["waitingforupdates","Αναμονή για ενημερώσεις..."],["sessionclosed","Η επικοινωνία έκλεισε."],["gotsession","Λήφθηκε αναθεώρηση ${n}."],["thecorrectansweris","Η σωστή απάντηση είναι"],["poweredby","Με την υποστήριξη της"],["refresh","Ανανέωση της σωστής απάντησης"],["fillwithcorrect","Συμπλήρωση με τη σωστή απάντηση"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","pt_br"],["comparisonwithstudentanswer","Comparação com a resposta do aluno"],["otheracceptedanswers","Outras respostas aceitas"],["equivalent_literal","Literalmente igual"],["equivalent_literal_correct_feedback","A resposta é literalmente igual à correta."],["equivalent_symbolic","Matematicamente igual"],["equivalent_symbolic_correct_feedback","A resposta é matematicamente igual à correta."],["equivalent_set","Iguais aos conjuntos"],["equivalent_set_correct_feedback","O conjunto de respostas é igual ao correto."],["equivalent_equations","Equações equivalentes"],["equivalent_equations_correct_feedback","A resposta tem as mesmas soluções da correta."],["equivalent_function","Cálculo da nota"],["equivalent_function_correct_feedback","A resposta está correta."],["equivalent_all","Qualquer reposta"],["any","qualquer"],["gradingfunction","Cálculo da nota"],["additionalproperties","Propriedades adicionais"],["structure","Estrutura"],["none","nenhuma"],["None","Nenhuma"],["check_integer_form","tem forma de número inteiro"],["check_integer_form_correct_feedback","A resposta é um número inteiro."],["check_fraction_form","tem forma de fração"],["check_fraction_form_correct_feedback","A resposta é uma fração."],["check_polynomial_form","tem forma polinomial"],["check_polynomial_form_correct_feedback","A resposta é um polinomial."],["check_rational_function_form","tem forma de função racional"],["check_rational_function_form_correct_feedback","A resposta é uma função racional."],["check_elemental_function_form","é uma combinação de funções elementárias"],["check_elemental_function_form_correct_feedback","A resposta é uma expressão elementar."],["check_scientific_notation","é expressa em notação científica"],["check_scientific_notation_correct_feedback","A resposta é expressa em notação científica."],["more","Mais"],["check_simplified","é simplificada"],["check_simplified_correct_feedback","A resposta é simplificada."],["check_expanded","é expandida"],["check_expanded_correct_feedback","A resposta é expandida."],["check_factorized","é fatorizada"],["check_factorized_correct_feedback","A resposta é fatorizada."],["check_rationalized","é racionalizada"],["check_rationalized_correct_feedback","A resposta é racionalizada."],["check_no_common_factor","não tem fatores comuns"],["check_no_common_factor_correct_feedback","A resposta não tem fatores comuns."],["check_minimal_radicands","tem radiciação mínima"],["check_minimal_radicands_correct_feedback","A resposta tem radiciação mínima."],["check_divisible","é divisível por"],["check_divisible_correct_feedback","A resposta é divisível por ${value}."],["check_common_denominator","tem um único denominador comum"],["check_common_denominator_correct_feedback","A resposta tem um único denominador comum."],["check_unit","tem unidade equivalente a"],["check_unit_correct_feedback","A unidade da resposta é ${unit}."],["check_unit_literal","tem unidade literalmente igual a"],["check_unit_literal_correct_feedback","A unidade da resposta é ${unit}."],["check_no_more_decimals","tem menos ou os mesmos decimais que"],["check_no_more_decimals_correct_feedback","A resposta tem ${digits} decimais ou menos."],["check_no_more_digits","tem menos ou os mesmos dígitos que"],["check_no_more_digits_correct_feedback","A resposta tem ${digits} dígitos ou menos."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Geral"],["syntax_expression_description","(fórmulas, expressões, equações, matrizes...)"],["syntax_expression_correct_feedback","A sintaxe da resposta está correta."],["syntax_quantity","Quantidade"],["syntax_quantity_description","(números, unidades de medida, frações, frações mistas, proporções...)"],["syntax_quantity_correct_feedback","A sintaxe da resposta está correta."],["syntax_list","Lista"],["syntax_list_description","(listas sem separação por vírgula ou chaves)"],["syntax_list_correct_feedback","A sintaxe da resposta está correta."],["syntax_string","Texto"],["syntax_string_description","(palavras, frases, sequências de caracteres)"],["syntax_string_correct_feedback","A sintaxe da resposta está correta."],["none","nenhuma"],["edit","Editar"],["accept","OK"],["cancel","Cancelar"],["explog","exp/log"],["trigonometric","trigonométrica"],["hyperbolic","hiperbólica"],["arithmetic","aritmética"],["all","tudo"],["tolerance","Tolerância"],["relative","relativa"],["relativetolerance","Tolerância relativa"],["precision","Precisão"],["implicit_times_operator","Sinal de multiplicação invisível"],["times_operator","Sinal de multiplicação"],["imaginary_unit","Unidade imaginária"],["mixedfractions","Frações mistas"],["constants","Constantes"],["functions","Funções"],["userfunctions","Funções do usuário"],["units","Unidades"],["unitprefixes","Prefixos das unidades"],["syntaxparams","Opções de sintaxe"],["syntaxparams_expression","Opções gerais"],["syntaxparams_quantity","Opções de quantidade"],["syntaxparams_list","Opções de lista"],["allowedinput","Entrada permitida"],["manual","Manual"],["correctanswer","Resposta correta"],["variables","Variáveis"],["validation","Validação"],["preview","Prévia"],["correctanswertabhelp","Insira a resposta correta usando o WIRIS editor. Selecione também o comportamento do editor de fórmulas quando usado pelo aluno."],["assertionstabhelp","Selecione quais propriedades a resposta do aluno deve verificar. Por exemplo, se ela deve ser simplificada, fatorizada, expressa em unidades físicas ou ter uma precisão numérica específica."],["variablestabhelp","Escreva um algoritmo com o WIRIS cas para criar variáveis aleatórias: números, expressões, gráficos ou cálculo de nota. Você também pode especificar o formato de saída das variáveis exibidas para o aluno."],["testtabhelp","Insira um estudante em potencial para simular o comportamento da questão. Você está usando a mesma ferramenta que o aluno usará. Note que também é possível testar o critério de avaliação, sucesso e comentário automático."],["start","Iniciar"],["test","Testar"],["clicktesttoevaluate","Clique no botão Testar para validar a resposta atual."],["correct","Correta!"],["incorrect","Incorreta!"],["partiallycorrect","Parcialmente correta!"],["inputmethod","Método de entrada"],["compoundanswer","Resposta composta"],["answerinputinlineeditor","WIRIS editor integrado"],["answerinputpopupeditor","WIRIS editor em pop up"],["answerinputplaintext","Campo de entrada de texto simples"],["showauxiliarcas","Incluir WIRIS cas"],["initialcascontent","Conteúdo inicial"],["tolerancedigits","Dígitos de tolerância"],["validationandvariables","Validação e variáveis"],["algorithmlanguage","Linguagem do algoritmo"],["calculatorlanguage","Linguagem da calculadora"],["hasalgorithm","Tem algoritmo"],["comparison","Comparação"],["properties","Propriedades"],["studentanswer","Resposta do aluno"],["poweredbywiris","Fornecido por WIRIS"],["yourchangeswillbelost","As alterações serão perdidas se você sair da janela."],["outputoptions","Opções de saída"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Todas as respostas devem estar corretas"],["distributegrade","Distribuir notas"],["no","Não"],["add","Adicionar"],["replaceeditor","Substituir editor"],["list","Lista"],["questionxml","XML da pergunta"],["grammarurl","URL da gramática"],["reservedwords","Palavras reservadas"],["forcebrackets","As listas sempre precisam de chaves “{}”."],["commaasitemseparator","Use vírgula “,” para separar itens na lista."],["confirmimportdeprecated","Importar questão? A questão prestes a ser aberta contém recursos ultrapassados. O processo de importação pode alterar um pouco o comportamento da questão. É recomendável que você teste a questão atentamente após importá-la."],["comparesets","Comparar como conjuntos"],["nobracketslist","Listas sem chaves"],["warningtoleranceprecision","Menos dígitos de precisão do que dígitos de tolerância."],["actionimport","Importar"],["actionexport","Exportar"],["usecase","Coincidir maiúsculas/minúsculas"],["usespaces","Coincidir espaços"],["notevaluate","Manter argumentos não avaliados"],["separators","Separadores"],["comma","Vírgula"],["commarole","Função do caractere vírgula “,”"],["point","Ponto"],["pointrole","Função do caractere ponto “.”"],["space","Espaço"],["spacerole","Função do caractere espaço"],["decimalmark","Dígitos decimais"],["digitsgroup","Grupos de dígitos"],["listitems","Itens da lista"],["nothing","Nada"],["intervals","Intervalos"],["warningprecision15","A precisão deve estar entre 1 e 15."],["decimalSeparator","Decimal"],["thousandsSeparator","Milhares"],["notation","Notação"],["invisible","Invisível"],["auto","Automática"],["fixedDecimal","Fixa"],["floatingDecimal","Decimal"],["scientific","Científica"],["example","Exemplo"],["warningreltolfixedprec","Tolerância relativa com notação decimal fixa."],["warningabstolfloatprec","Tolerância absoluta com notação decimal flutuante."],["answerinputinlinehand","WIRIS hand integrado"],["absolutetolerance","Tolerância absoluta"],["clicktoeditalgorithm","O navegador não é <a href=\"http://www.wiris.com/blog/docs/java-applets-support\" target=\"_blank\">compatível com Java</a>. Clique no botão para baixar e executar o aplicativo WIRIS cas e editar o algoritmo da questão."],["launchwiriscas","Abrir WIRIS cas"],["sendinginitialsession","Enviando sessão inicial..."],["waitingforupdates","Aguardando atualizações..."],["sessionclosed","Comunicação fechada."],["gotsession","Revisão ${n} recebida."],["thecorrectansweris","A resposta correta é"],["poweredby","Fornecido por"],["refresh","Renovar resposta correta"],["fillwithcorrect","Preencher resposta correta"],["runcalculator","Run calculator"],["clicktoruncalculator","Click the button to download and run WIRIS cas application to make the calculations you need. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Learn more</a>."],["answer","answer"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","no"],["comparisonwithstudentanswer","Sammenligning med studentens svar"],["otheracceptedanswers","Andre godtatte svar"],["equivalent_literal","Nøyaktig lik"],["equivalent_literal_correct_feedback","Svaret er nøyaktig lik det riktige."],["equivalent_symbolic","Matematisk likt"],["equivalent_symbolic_correct_feedback","Svaret er matematisk likt det riktige."],["equivalent_set","Like som sett"],["equivalent_set_correct_feedback","Svarsettet er likt det riktige."],["equivalent_equations","Ekvivalente ligninger"],["equivalent_equations_correct_feedback","Svaret har de samme løsningene som det riktige."],["equivalent_function","Graderingsfunksjon"],["equivalent_function_correct_feedback","Svaret er riktig."],["equivalent_all","Vilkårlig svar"],["any","hvilket som helst"],["gradingfunction","Graderingsfunksjon"],["additionalproperties","Ekstra egenskaper"],["structure","Struktur"],["none","ingen"],["None","Ingen"],["check_integer_form","har heltallsform"],["check_integer_form_correct_feedback","Svaret er et heltall."],["check_fraction_form","har brøkform"],["check_fraction_form_correct_feedback","Svaret er en brøk."],["check_polynomial_form","har polynomisk form"],["check_polynomial_form_correct_feedback","Svaret er et polynom."],["check_rational_function_form","er en rasjonell funksjon"],["check_rational_function_form_correct_feedback","Svaret er en rasjonell funksjon."],["check_elemental_function_form","er en kombinasjon av elementære funksjoner"],["check_elemental_function_form_correct_feedback","Svaret er et elementært uttrykk."],["check_scientific_notation","er uttrykt med vitenskapelig notasjon"],["check_scientific_notation_correct_feedback","Svaret er uttrykt med vitenskapelig notasjon."],["more","Mer"],["check_simplified","er forenklet"],["check_simplified_correct_feedback","Svaret er forenklet."],["check_expanded","er utvidet"],["check_expanded_correct_feedback","Svaret er utvidet."],["check_factorized","er faktorisert"],["check_factorized_correct_feedback","Svaret er faktorisert."],["check_rationalized","er rasjonalt"],["check_rationalized_correct_feedback","Svaret er rasjonalt."],["check_no_common_factor","har ingen felles faktorer"],["check_no_common_factor_correct_feedback","Svaret har ingen felles faktorer."],["check_minimal_radicands","har minimumsradikanter"],["check_minimal_radicands_correct_feedback","Svaret har minimumsradikanter."],["check_divisible","er delelig på"],["check_divisible_correct_feedback","Svaret er delelig på ${value}."],["check_common_denominator","har en enkel fellesnevner"],["check_common_denominator_correct_feedback","Svaret har en enkel fellesnevner."],["check_unit","har enhet ekvivalent med"],["check_unit_correct_feedback","Svaret har enheten ${unit}."],["check_unit_literal","har en enhet som er nøyaktig lik"],["check_unit_literal_correct_feedback","Svaret har enheten ${unit}."],["check_no_more_decimals","har opptil like mange desimaler som"],["check_no_more_decimals_correct_feedback","Svaret har ${digits} eller færre desimaler."],["check_no_more_digits","har opptil like mange sifre som"],["check_no_more_digits_correct_feedback","Svaret har ${digits} eller færre sifre."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Generelt"],["syntax_expression_description","(formler, uttrykk, ligninger, matriser …)"],["syntax_expression_correct_feedback","Svaret har riktig syntaks."],["syntax_quantity","Mengde"],["syntax_quantity_description","(tall, måleenheter, brøker, blandede brøker, forhold …)"],["syntax_quantity_correct_feedback","Svaret har riktig syntaks."],["syntax_list","Liste"],["syntax_list_description","(lister uten kommaskilletegn eller parentes)"],["syntax_list_correct_feedback","Svaret har riktig syntaks."],["syntax_string","Tekst"],["syntax_string_description","(ord, setninger, tegnstrenger)"],["syntax_string_correct_feedback","Svaret har riktig syntaks."],["none","ingen"],["edit","Rediger"],["accept","OK"],["cancel","Avbryt"],["explog","exp/log"],["trigonometric","trigonometri"],["hyperbolic","hyperbolsk"],["arithmetic","aritmetikk"],["all","alle"],["tolerance","Toleranse"],["relative","relativ"],["relativetolerance","Relativ toleranse"],["precision","Presisjon"],["implicit_times_operator","Usynlig gangeoperatør"],["times_operator","Gangeoperatør"],["imaginary_unit","Imaginær enhet"],["mixedfractions","Blandede brøker"],["constants","Konstanter"],["functions","Funksjoner"],["userfunctions","Brukerfunksjoner"],["units","Enheter"],["unitprefixes","Enhetsprefikser"],["syntaxparams","Syntaksvalg"],["syntaxparams_expression","Valg for generelt"],["syntaxparams_quantity","Valg for mengde"],["syntaxparams_list","Valg for liste"],["allowedinput","Tillatte inndata"],["manual","Manuell"],["correctanswer","Riktig svar"],["variables","Variabler"],["validation","Kontroll"],["preview","Forhåndsvis"],["correctanswertabhelp","Skriv inn riktig svar med WIRIS-redigeringsprogrammet. Velg også hvordan formelredigerings-programmet skal oppføre seg når det brukes av studenten.\n"],["assertionstabhelp","Velg hvilke egenskaper studentens svar må verifisere. For eksempel om det må forenkles, faktoriseres, uttrykkes med fysiske enheter eller har en bestemt numerisk nøyaktighet."],["variablestabhelp","Skriv en algoritme med WIRIS cas for å lage tilfeldige variabler: tall, uttrykk, plott eller en graderingsfunksjon.\nDu kan også spesifisere utdataformatet for variablene som vises for studenten.\n"],["testtabhelp","Sett inn et eventuelt studentsvar for å simulere hvordan spørsmålet vil fungere. Du bruker det samme verktøyet som studenten vil bruke.\nDu kan også teste vurderingskriteriene, utfallet og den automatiske tilbakemeldingen.\n"],["start","Start"],["test","Test"],["clicktesttoevaluate","Klikk på Test-knappen for å kontrollere det gjeldende svaret."],["correct","Riktig svar!"],["incorrect","Feil svar!"],["partiallycorrect","Delvis riktig!"],["inputmethod","Inndatametode"],["compoundanswer","Sammensatt svar"],["answerinputinlineeditor","WIRIS-redigerer innebygd"],["answerinputpopupeditor","WIRIS-redigerer i popup"],["answerinputplaintext","Felt for vanlig tekst"],["showauxiliarcas","Inkluder WIRIS cas"],["initialcascontent","Innledende innhold"],["tolerancedigits","Toleransesifre"],["validationandvariables","Kontroll og variabler"],["algorithmlanguage","Algoritmespråk"],["calculatorlanguage","Kalkulatorens språk"],["hasalgorithm","Har algoritme"],["comparison","Sammenligning"],["properties","Egenskaper"],["studentanswer","Studentens svar"],["poweredbywiris","Drevet av WIRIS"],["yourchangeswillbelost","Endringene dine går tapt hvis du forlater vinduet."],["outputoptions","Utdatavalg"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Alle svarene må være riktige"],["distributegrade","Distribuer resultat"],["no","Nei"],["add","Legg til"],["replaceeditor","Erstatt redigeringsprogram"],["list","Liste"],["questionxml","Spørsmåls-XML"],["grammarurl","Grammatikk-URL"],["reservedwords","Reserverte ord"],["forcebrackets","Lister må alltid ha krøllparentes «{}»."],["commaasitemseparator","Bruk komma «,» som skilletegn i listen."],["confirmimportdeprecated","Importere spørsmålet? \nSpørsmålet du holder på å åpne, inneholder utdaterte funksjoner. Importprosessen kan endre litt på hvordan spørsmålet vil fungere. Det anbefales på det sterkeste at du nøye tester spørsmålet etter import."],["comparesets","Sammenlign i sett"],["nobracketslist","Lister uten krøllparenteser"],["warningtoleranceprecision","Færre presisjonssifre enn toleransesifre."],["actionimport","Importer"],["actionexport","Eksporter"],["usecase","Store/små bokstaver"],["usespaces","Match mellomrom"],["notevaluate","La være å vurdere argumentene"],["separators","Skilletegn"],["comma","Komma"],["commarole","Funksjonen til kommaet «,»"],["point","Punktum"],["pointrole","Funksjonen til punktumet «.»"],["space","Mellomrom"],["spacerole","Funksjonen til mellomromstegnet"],["decimalmark","Desimaltall"],["digitsgroup","Siffergrupper"],["listitems","Listeeelementer"],["nothing","Ingenting"],["intervals","Intervaller"],["warningprecision15","Nøyaktigheten må være mellom 1 og 15."],["decimalSeparator","Desimal"],["thousandsSeparator","Tusener"],["notation","Notasjon"],["invisible","Usynlig"],["auto","Automatisk"],["fixedDecimal","Fast"],["floatingDecimal","Desimal"],["scientific","Vitenskapelig"],["example","Eksempel"],["warningreltolfixedprec","Relativ toleranse med fast desimalnotasjon."],["warningabstolfloatprec","Absolutt toleranse med flytende desimalnotasjon."],["answerinputinlinehand","WIRIS hånd innebygd"],["absolutetolerance","Absolutt toleranse"],["clicktoeditalgorithm","Klikk på knappen for å laste ned og kjøre WIRIS cas-appen for å redigere spørrealgoritmen. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Les mer</a>."],["launchwiriscas","Rediger algoritme"],["sendinginitialsession","Sender innledende økt …"],["waitingforupdates","Venter på oppdateringer …"],["sessionclosed","Alle endringer lagret"],["gotsession","Endringer lagret (revisjon ${n})."],["thecorrectansweris","Det riktige svaret er"],["poweredby","Drevet av"],["refresh","Forny riktig svar"],["fillwithcorrect","Fyll inn riktig svar"],["runcalculator","Kjør kalkulator"],["clicktoruncalculator","Klikk på knappen for å laste ned og kjøre WIRIS cas-appen for å foreta beregningene du trenger. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Les mer</a>."],["answer","svar"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","nn"],["comparisonwithstudentanswer","Samanlikning med studentens svar"],["otheracceptedanswers","Andre godtekne svar"],["equivalent_literal","Nøyaktig lik"],["equivalent_literal_correct_feedback","Svaret er nøyaktig lik det rette."],["equivalent_symbolic","Matematisk likt"],["equivalent_symbolic_correct_feedback","Svaret er matematisk likt det rette."],["equivalent_set","Like som sett"],["equivalent_set_correct_feedback","Svarsettet er likt det rette."],["equivalent_equations","Ekvivalente likningar"],["equivalent_equations_correct_feedback","Svaret har dei samme løysingane som det rette."],["equivalent_function","Graderingsfunksjon"],["equivalent_function_correct_feedback","Svaret er rett."],["equivalent_all","Vilkårleg svar"],["any","kva som helst"],["gradingfunction","Graderingsfunksjon"],["additionalproperties","Ekstra eigenskapar"],["structure","Struktur"],["none","ingen"],["None","Ingen"],["check_integer_form","har heiltalsform"],["check_integer_form_correct_feedback","Svaret er eit heiltal."],["check_fraction_form","har brøkform"],["check_fraction_form_correct_feedback","Svaret er ein brøk."],["check_polynomial_form","har polynomisk form"],["check_polynomial_form_correct_feedback","Svaret er eit polynom."],["check_rational_function_form","er ein rasjonell funksjon"],["check_rational_function_form_correct_feedback","Svaret er ein rasjonell funksjon."],["check_elemental_function_form","er ein kombinasjon av elementære funksjonar"],["check_elemental_function_form_correct_feedback","Svaret er eit elementært uttrykk."],["check_scientific_notation","er uttrykt med vitskapleg notasjon"],["check_scientific_notation_correct_feedback","Svaret er uttrykt med vitskapleg notasjon."],["more","Meir"],["check_simplified","er forenkla"],["check_simplified_correct_feedback","Svaret er forenkla."],["check_expanded","er utvida"],["check_expanded_correct_feedback","Svaret er utvida."],["check_factorized","er faktorisert"],["check_factorized_correct_feedback","Svaret er faktorisert."],["check_rationalized","er rasjonalt"],["check_rationalized_correct_feedback","Svaret er rasjonalt."],["check_no_common_factor","har ingen felles faktorar"],["check_no_common_factor_correct_feedback","Svaret har ingen felles faktorar."],["check_minimal_radicands","har minimumsradikantar"],["check_minimal_radicands_correct_feedback","Svaret har minimumsradikantar."],["check_divisible","er deleleg på"],["check_divisible_correct_feedback","Svaret er deleleg på ${value}."],["check_common_denominator","har ein enkel fellesnemnar"],["check_common_denominator_correct_feedback","Svaret har ein enkel fellesnemnar."],["check_unit","har eining ekvivalent med"],["check_unit_correct_feedback","Svaret har eininga ${unit}."],["check_unit_literal","har ei eining som er nøyaktig lik"],["check_unit_literal_correct_feedback","Svaret har eininga ${unit}."],["check_no_more_decimals","har opptil like mange desimalar som"],["check_no_more_decimals_correct_feedback","Svaret har ${digits} eller færre desimalar."],["check_no_more_digits","har opptil like mange siffer som"],["check_no_more_digits_correct_feedback","Svaret har ${digits} eller færre siffer."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Generelt"],["syntax_expression_description","(formlar, uttrykk, likningar, matriser …)"],["syntax_expression_correct_feedback","Svaret har rett syntaks."],["syntax_quantity","Mengde"],["syntax_quantity_description","(tal, måleeiningar, brøkar, blanda brøkar, forhold …)"],["syntax_quantity_correct_feedback","Svaret har rett syntaks."],["syntax_list","Liste"],["syntax_list_description","(lister uten kommaskiljeteikn eller parentes)"],["syntax_list_correct_feedback","Svaret har rett syntaks."],["syntax_string","Tekst"],["syntax_string_description","(ord, setningar, teiknstrengar)"],["syntax_string_correct_feedback","Svaret har rett syntaks."],["none","ingen"],["edit","Rediger"],["accept","OK"],["cancel","Avbryt"],["explog","exp/log"],["trigonometric","trigonometri"],["hyperbolic","hyperbolsk"],["arithmetic","aritmetikk"],["all","alle"],["tolerance","Toleranse"],["relative","relativ"],["relativetolerance","Relativ toleranse"],["precision","Presisjon"],["implicit_times_operator","Usynleg gangeoperatør"],["times_operator","Gangeoperatør"],["imaginary_unit","Imaginær eining"],["mixedfractions","Blanda brøkar"],["constants","Konstantar"],["functions","Funksjonar"],["userfunctions","Brukarfunksjonar"],["units","Eininger"],["unitprefixes","Einingsprefiks"],["syntaxparams","Syntaksval"],["syntaxparams_expression","Val for generelt"],["syntaxparams_quantity","Val for mengde"],["syntaxparams_list","Val for liste"],["allowedinput","Tillatne inndata"],["manual","Manuell"],["correctanswer","Rett svar"],["variables","Variablar"],["validation","Kontroll"],["preview","Førehandsvis"],["correctanswertabhelp","Skriv inn rett svar med WIRIS-redigeringsprogrammet. Velg òg korleis formelredigerings-programmet skal te seg når det vert brukt av studenten.\n"],["assertionstabhelp","Velg kva for eigenskapar svaret til studenten må verifisera. Til dømes om det må forenklast, faktoriserast, uttrykkast med fysiske eininger eller har ei bestemt numerisk nøyaktigheit."],["variablestabhelp","Skriv ein algoritme med WIRIS cas for å lage tilfeldige variablar: tal, uttrykk, plott eller ein graderingsfunksjon.\nDu kan òg spesifisera utdataformatet for variablane som vert viste for studenten.\n"],["testtabhelp","Sett inn eit eventuelt studentsvar for å simulera korleis spørsmålet vil fungera. Du bruker det same verktyet som studenten vil bruka.\nDu kan òg testa vurderingskriteria, utfallet og den automatiske tilbakemeldinga.\n"],["start","Start"],["test","Test"],["clicktesttoevaluate","Klikk på Test-knappen for å kontrollera det gjeldande svaret."],["correct","Rett svar!"],["incorrect","Feil svar!"],["partiallycorrect","Delvis rett!"],["inputmethod","Inndatametode"],["compoundanswer","Samansett svar"],["answerinputinlineeditor","WIRIS-redigerar innebygd"],["answerinputpopupeditor","WIRIS-redigerar i popup"],["answerinputplaintext","Felt for vanleg tekst"],["showauxiliarcas","Inkluder WIRIS cas"],["initialcascontent","Innleiande innhald"],["tolerancedigits","Toleransesiffer"],["validationandvariables","Kontroll og variablar"],["algorithmlanguage","Algoritmespråk"],["calculatorlanguage","Kalkulatorspråk"],["hasalgorithm","Har algoritme"],["comparison","Samanlikning"],["properties","Eigenskapar"],["studentanswer","Studentens svar"],["poweredbywiris","Drive av WIRIS"],["yourchangeswillbelost","Endringane dine går tapt dersom du forlèt vindauget."],["outputoptions","Utdataval"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Alle svara må vera rette"],["distributegrade","Distribuer resultat"],["no","Nei"],["add","Legg til"],["replaceeditor","Erstatt redigeringsprogram"],["list","Liste"],["questionxml","Spørsmåls-XML"],["grammarurl","Grammatikk-URL"],["reservedwords","Reserverte ord"],["forcebrackets","Lister må alltid ha krøllparentes «{}»."],["commaasitemseparator","Bruk komma «,» som skiljeteikn i lista."],["confirmimportdeprecated","Importere spørsmålet? \nSpørsmålet du held på å opne, inneheld utdaterte funksjonar. Importprosessen kan endra noko på korleis spørsmålet vil fungera. Det anbefalast på det sterkaste at du testar spørsmålet nøye etter import."],["comparesets","Samanlikn i sett"],["nobracketslist","Lister uten krøllparentesar"],["warningtoleranceprecision","Færre presisjonssiffer enn toleransesiffer."],["actionimport","Importer"],["actionexport","Eksporter"],["usecase","Store/små bokstavar"],["usespaces","Match mellomrom"],["notevaluate","Lat vera å vurdera argumenta"],["separators","Skilleteikn"],["comma","Komma"],["commarole","Funksjonen til kommaet «,»"],["point","Punktum"],["pointrole","Funksjonen til punktumet «.»"],["space","Mellomrom"],["spacerole","Funksjonen til mellomromsteiknet"],["decimalmark","Desimaltal"],["digitsgroup","Siffergrupper"],["listitems","Listeeelement"],["nothing","Ingenting"],["intervals","Intervall"],["warningprecision15","Nøyaktigheita må vera mellom 1 og 15."],["decimalSeparator","Desimal"],["thousandsSeparator","Tusen"],["notation","Notasjon"],["invisible","Usynleg"],["auto","Automatisk"],["fixedDecimal","Fast"],["floatingDecimal","Desimal"],["scientific","Vitskapleg"],["example","Eksempel"],["warningreltolfixedprec","Relativ toleranse med fast desimalnotasjon."],["warningabstolfloatprec","Absolutt toleranse med flytande desimalnotasjon."],["answerinputinlinehand","WIRIS hand innebygd"],["absolutetolerance","Absolutt toleranse"],["clicktoeditalgorithm","Klikk på knappen for å lasta ned og bruka WIRIS cas-appen til å redigera spørrealgoritmen. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Les meir</a>."],["launchwiriscas","Rediger algoritme"],["sendinginitialsession","Sender innleiande økt …"],["waitingforupdates","Venter på oppdateringar …"],["sessionclosed","Alle endringar lagra"],["gotsession","Endringar lagra (revisjon ${n})."],["thecorrectansweris","Det rette svaret er"],["poweredby","Drive av"],["refresh","Forny rett svar"],["fillwithcorrect","Fyll inn rett svar"],["runcalculator","Bruk kalkulator"],["clicktoruncalculator","Klikk på knappen for å laste ned og bruka WIRIS cas-appen til å gjera utrekningane du treng. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Les meir</a>."],["answer","svar"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."],["lang","da"],["comparisonwithstudentanswer","Sammenligning med svar fra studerende"],["otheracceptedanswers","Andre accepterede svar"],["equivalent_literal","Konstant lig med"],["equivalent_literal_correct_feedback","Svaret er konstant lig med det korrekte svar."],["equivalent_symbolic","Matematisk lig med"],["equivalent_symbolic_correct_feedback","Svaret er matematisk lig med det korrekte svar."],["equivalent_set","Lig med som sæt"],["equivalent_set_correct_feedback","Svarsættet er lig med det korrekte svar."],["equivalent_equations","Tilsvarende ligninger"],["equivalent_equations_correct_feedback","Svaret har de samme løsninger som det korrekte svar."],["equivalent_function","Bedømmelsesfunktion"],["equivalent_function_correct_feedback","Svaret er korrekt."],["equivalent_all","Ethvert svar"],["any","ethvert"],["gradingfunction","Bedømmelsesfunktion"],["additionalproperties","Yderligere egenskaber"],["structure","Struktur"],["none","ingen"],["None","Ingen"],["check_integer_form","har form som heltal"],["check_integer_form_correct_feedback","Svaret er et heltal."],["check_fraction_form","har form som brøk"],["check_fraction_form_correct_feedback","Svaret er en brøk."],["check_polynomial_form","har form som polynomium"],["check_polynomial_form_correct_feedback","Svaret er et polynomium."],["check_rational_function_form","har form som rationel funktion"],["check_rational_function_form_correct_feedback","Svaret er en rationel funktion."],["check_elemental_function_form","er en kombination af elementære funktioner"],["check_elemental_function_form_correct_feedback","Svaret er et elementært udtryk."],["check_scientific_notation","er udtrykt i videnskabelig notation"],["check_scientific_notation_correct_feedback","Svaret er udtrykt i videnskabelig notation."],["more","Flere"],["check_simplified","er forenklet"],["check_simplified_correct_feedback","Svaret er forenklet."],["check_expanded","er udvidet"],["check_expanded_correct_feedback","Svaret er udvidet."],["check_factorized","er opløst i faktorer"],["check_factorized_correct_feedback","Svaret er opløst i faktorer."],["check_rationalized","er rationaliseret"],["check_rationalized_correct_feedback","Svaret er rationaliseret."],["check_no_common_factor","har ingen fælles faktorer"],["check_no_common_factor_correct_feedback","Svaret har ingen fælles faktorer."],["check_minimal_radicands","har minimale radikander"],["check_minimal_radicands_correct_feedback","Svaret har minimale radikander."],["check_divisible","er deleligt med"],["check_divisible_correct_feedback","Svaret er deleligt med ${value}."],["check_common_denominator","har en enkelt fællesnævner"],["check_common_denominator_correct_feedback","Svaret har en enkelt fællesnævner."],["check_unit","har enhed svarende til"],["check_unit_correct_feedback","Enheden i svaret er ${unit}."],["check_unit_literal","har enhed, der konstant er lig med"],["check_unit_literal_correct_feedback","Enheden i svaret er ${unit}."],["check_no_more_decimals","har decimaler, der er færre end eller lig med"],["check_no_more_decimals_correct_feedback","Svaret har ${digits} eller færre decimaler."],["check_no_more_digits","har cifre, der er færre end eller lig med"],["check_no_more_digits_correct_feedback","Svaret har ${digits} eller færre cifre."],["check_precision","has"],["check_precision_correct_feedback","The answer has between ${min} and ${max} ${relative}."],["check_precision_correct_feedback_max","The answer has a maximum of ${max} ${relative}."],["check_precision_correct_feedback_min","The answer has a minimum of ${min} ${relative}."],["check_precision_correct_feedback_equal","The answer has ${max} ${relative}."],["syntax_expression","Generelt"],["syntax_expression_description","(formler, udtryk, ligninger, matricer...)"],["syntax_expression_correct_feedback","Svarsyntaksen er korrekt."],["syntax_quantity","Mængde"],["syntax_quantity_description","(tal, måleenheder, brøker, blandede brøker, kvotienter...)"],["syntax_quantity_correct_feedback","Svarsyntaksen er korrekt."],["syntax_list","Liste"],["syntax_list_description","(lister uden kommaseparatorer eller parenteser)"],["syntax_list_correct_feedback","Svarsyntaksen er korrekt."],["syntax_string","Tekst"],["syntax_string_description","(ord, sætninger, tegnstrenge)"],["syntax_string_correct_feedback","Svarsyntaksen er korrekt."],["none","ingen"],["edit","Rediger"],["accept","OK"],["cancel","Annuller"],["explog","exp/log"],["trigonometric","trigonometrisk"],["hyperbolic","hyperbolsk"],["arithmetic","aritmetisk"],["all","alle"],["tolerance","Tolerance"],["relative","relativ"],["relativetolerance","Relativ tolerance"],["precision","Præcision"],["implicit_times_operator","Usynlig gangetegn-operator"],["times_operator","Gangetegn-operator"],["imaginary_unit","Imaginær enhed"],["mixedfractions","Blandede brøker"],["constants","Konstanter"],["functions","Funktioner"],["userfunctions","Brugerfunktioner"],["units","Enheder"],["unitprefixes","Enhedspræfikser"],["syntaxparams","Syntaksmuligheder"],["syntaxparams_expression","Muligheder for generel"],["syntaxparams_quantity","Muligheder for mængde"],["syntaxparams_list","Muligheder for liste"],["allowedinput","Tilladt input"],["manual","Manuelt"],["correctanswer","Korrekt svar"],["variables","Variabler"],["validation","Validering"],["preview","Eksempelvisning"],["correctanswertabhelp","Indsæt det korrekte svar med WIRIS editor. Vælg også adfærd for formeleditoren, når den bruges af den studerende."],["assertionstabhelp","Vælg, hvilke egenskaber den studerendes svar skal bekræfte. Om det f.eks. skal være forenklet, opløst i faktorer, udtrykt med fysiske enheder eller have en specifik numerisk præcision."],["variablestabhelp","Skriv en algoritme med WIRIS CAS for at oprette tilfældige variabler: tal, udtryk, punkter plot eller en bedømmelsesfunktion. Du kan også angive outputformatet for de variabler, der vises til de studerende."],["testtabhelp","Indsæt et muligt svar fra den studerende for at simulere spørgsmålets adfærd. Du bruger det samme værktøj, som den studerende vil bruge. Bemærk, at du også kan teste evalueringskriterierne, succes og automatisk feedback."],["start","Start"],["test","Test"],["clicktesttoevaluate","Klik på knappen Test for at validere det aktuelle svar."],["correct","Korrekt!"],["incorrect","Forkert!"],["partiallycorrect","Delvist korrekt!"],["inputmethod","Inputmetode"],["compoundanswer","Sammensat svar"],["answerinputinlineeditor","WIRIS editor integreret"],["answerinputpopupeditor","WIRIS editor i popup"],["answerinputplaintext","Inputfelt til almindelig tekst"],["showauxiliarcas","Inkluder WIRIS cas"],["initialcascontent","Indledende indhold"],["tolerancedigits","Tolerancecifre"],["validationandvariables","Validering og variabler"],["algorithmlanguage","Algoritmesprog"],["calculatorlanguage","Beregningssprog"],["hasalgorithm","Har algoritme"],["comparison","Sammenligning"],["properties","Egenskaber"],["studentanswer","Studerendes svar"],["poweredbywiris","Drevet af WIRIS"],["yourchangeswillbelost","Du mister dine ændringer, hvis du forlader vinduet."],["outputoptions","Outputmuligheder"],["catalan","Català"],["english","English"],["spanish","Español"],["estonian","Eesti"],["basque","Euskara"],["french","Français"],["german","Deutsch"],["italian","Italiano"],["dutch","Nederlands"],["portuguese","Português (Portugal)"],["javaAppletMissing","Warning! This component cannot be displayed properly because you need to <a href=\"http://www.java.com/en/\">install the Java plugin</a> or <a href=\"http://www.java.com/en/download/help/enable_browser.xml\">enable the Java plugin</a>."],["allanswerscorrect","Alle svar skal være korrekte"],["distributegrade","Fordel karakter"],["no","Nej"],["add","Tilføj"],["replaceeditor","Erstat editor"],["list","Liste"],["questionxml","Spørgsmåls-XML"],["grammarurl","URL til grammatik"],["reservedwords","Reserverede ord"],["forcebrackets","Lister kræver altid krøllede parenteser \"{}\"."],["commaasitemseparator","Brug komma \",\" som separator til listepunkter."],["confirmimportdeprecated","Importér spørgsmålet? Det spørgsmål, du er ved at åbne, indeholder udfasede funktioner. Importprocessen kan ændre spørgsmålets adfærd en smule. Det anbefales kraftigt, at du tester spørgsmålet omhyggeligt efter import."],["comparesets","Sammenlign som sæt"],["nobracketslist","Lister uden parenteser"],["warningtoleranceprecision","Færre præcisionscifre end tolerancecifre."],["actionimport","Importér"],["actionexport","Eksportér"],["usecase","Forskel på store og små bogstaver"],["usespaces","Overensstemmelse i mellemrum"],["notevaluate","Lad argumenter være ikke-evaluerede"],["separators","Separatorer"],["comma","Komma"],["commarole","Rolle for tegnet komma ','"],["point","Punktum"],["pointrole","Rolle for tegnet punktum '.'"],["space","Mellemrum"],["spacerole","Rolle for tegnet mellemrum"],["decimalmark","Decimalcifre"],["digitsgroup","Ciffergrupper"],["listitems","Listepunkter"],["nothing","Ingenting"],["intervals","Intervaller"],["warningprecision15","Præcisionen skal være mellem 1 og 15."],["decimalSeparator","Decimal"],["thousandsSeparator","Tusinder"],["notation","Notation"],["invisible","Usynlig"],["auto","Automatisk"],["fixedDecimal","Fast"],["floatingDecimal","Decimal"],["scientific","Videnskabelig"],["example","Eksempel"],["warningreltolfixedprec","Relativ tolerance med fast decimalnotation."],["warningabstolfloatprec","Absolut tolerance med flydende decimalnotation."],["answerinputinlinehand","WIRIS manuelt integreret"],["absolutetolerance","Absolut tolerance"],["clicktoeditalgorithm","Klik på knappen for at downloade og køre WIRIS cas-programmet og redigere spørgsmålsalgoritmen. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Få mere at vide</a>."],["launchwiriscas","Rediger algoritme"],["sendinginitialsession","Sender indledende session..."],["waitingforupdates","Venter på opdateringer..."],["sessionclosed","Alle ændringer er gemt"],["gotsession","Ændringer gemt (revision ${n})."],["thecorrectansweris","Det korrekte svar er"],["poweredby","Drevet af"],["refresh","Forny korrekt svar"],["fillwithcorrect","Udfyld med korrekt svar"],["runcalculator","Kør kalkulator"],["clicktoruncalculator","Klik på knappen for at downloade og køre WIRIS cas-programmet og foretage de beregninger, du har brug for. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Få mere at vide</a>."],["answer","svar"],["trycalc","Try CalcMe"],["definevariablesandfunctions","Define random variables and functions"],["wiriscalcwarningmessage","Once the algorithm has been edited with CalcMe, it can't go back to the classic Java WIRIS CAS."],["usewiriscalc","Use CalcMe to edit the question algorithm. CalcMe is compatible with all browsers, so you don't need to download any application."],["editalgorithmwithcalc","Edit algorithm with CalcMe"],["gobacktostudio","Go back to Studio"],["confirmimportalgorithm","Warning!\nIf you accept, the algorithm will be automatically imported to CalcMe. The resulting algorithm must be manually revised and tested.\n\nAlgorithms imported to CalcMe cannot be opened with classic WIRIS CAS anymore. If you want to undo the import after accepting, do not save the question: click cancel in the WIRIS Quizzes Studio window and open it again."],["wiriscalctip","Tip"],["wiriscalctipmessage","If you want to return to the classic WIRIS CAS, delete completely the algorithm."],["fromprecision","from"],["toprecision","to"],["decimalplaces","decimal places"],["significantfigures","significant figures"],["warningcheckprecisionformat","Invalid values for decimal places or significant figures validation."],["warningcheckprecisionvsrelativetolerance","Relative tolerance with decimal places validation."],["warningcheckprecisionvsabsolutetolerance","Absolute tolerance with significant figures validation."],["warningcheckprecisionvsfloatformat","Output precision do not match with decimal places or significant figures validation."],["warningcheckprecisionvsprecision","Validating a minimum of decimal places or significant figures greater than the output precision."],["percenterror","% percent error"],["absoluteerror","absolute error"],["warningtoleranceformatinteger","The tolerance digits field must be an integer number."],["warningtoleranceformatfloat","The error value field must be a positive decimal number."]];
 com.wiris.quizzes.impl.SubQuestion.TAGNAME = "subquestion";
 com.wiris.quizzes.impl.SubQuestionInstance.TAGNAME = "subinstance";
 com.wiris.quizzes.impl.TranslationNameChange.tagName = "nameChange";
@@ -19032,6 +20014,9 @@ com.wiris.settings.PlatformSettings.UTF8_CONVERSION = false;
 com.wiris.settings.PlatformSettings.IS_JAVASCRIPT = true;
 com.wiris.settings.PlatformSettings.IS_FLASH = false;
 com.wiris.system.LocalStorageCache.ITEMS_KEY = "_items";
+com.wiris.system.Logger.SEVERE = 1000;
+com.wiris.system.Logger.WARNING = 900;
+com.wiris.system.Logger.INFO = 800;
 com.wiris.util.css.CSSUtils.PT_TO_PX = 1.34;
 com.wiris.util.json.JSonIntegerFormat.HEXADECIMAL = 0;
 com.wiris.util.xml.MathMLUtils.contentTagsString = "ci@cn@apply@integers@reals@rationals@naturalnumbers@complexes@primes@exponentiale@imaginaryi@notanumber@true@false@emptyset@pi@eulergamma@infinity";
@@ -19043,6 +20028,7 @@ com.wiris.util.xml.WCharacterBase.ROOT_NO_TAIL = 61728;
 com.wiris.util.xml.WCharacterBase.ROOT_NO_TAIL_VERTICAL = 61759;
 com.wiris.util.xml.WCharacterBase.ROOT_LEFT_TAIL = 61760;
 com.wiris.util.xml.WCharacterBase.ROOT_VERTICAL_LINE = 61761;
+com.wiris.util.xml.WCharacterBase.LINE_FEED = 10;
 com.wiris.util.xml.WCharacterBase.ROUND_BRACKET_LEFT = 40;
 com.wiris.util.xml.WCharacterBase.ROUND_BRACKET_RIGHT = 41;
 com.wiris.util.xml.WCharacterBase.COMMA = 44;
@@ -19147,6 +20133,7 @@ com.wiris.util.xml.WCharacterBase.longLetters = [103,106,112,113,121,946,947,950
 com.wiris.util.xml.WCharacterBase.negations = [61,8800,8801,8802,8764,8769,8712,8713,8715,8716,8834,8836,8835,8837,8838,8840,8839,8841,62,8815,60,8814,8805,8817,8804,8816,10878,8817,10877,8816,8776,8777,8771,8772,8773,8775,8849,8930,8850,8931,8707,8708,8741,8742];
 com.wiris.util.xml.WCharacterBase.mirrorDictionary = [40,41,41,40,60,62,62,60,91,93,93,91,123,125,125,123,171,187,187,171,3898,3899,3899,3898,3900,3901,3901,3900,5787,5788,5788,5787,8249,8250,8250,8249,8261,8262,8262,8261,8317,8318,8318,8317,8333,8334,8334,8333,8712,8715,8713,8716,8714,8717,8715,8712,8716,8713,8717,8714,8725,10741,8764,8765,8765,8764,8771,8909,8786,8787,8787,8786,8788,8789,8789,8788,8804,8805,8805,8804,8806,8807,8807,8806,8808,8809,8809,8808,8810,8811,8811,8810,8814,8815,8815,8814,8816,8817,8817,8816,8818,8819,8819,8818,8820,8821,8821,8820,8822,8823,8823,8822,8824,8825,8825,8824,8826,8827,8827,8826,8828,8829,8829,8828,8830,8831,8831,8830,8832,8833,8833,8832,8834,8835,8835,8834,8836,8837,8837,8836,8838,8839,8839,8838,8840,8841,8841,8840,8842,8843,8843,8842,8847,8848,8848,8847,8849,8850,8850,8849,8856,10680,8866,8867,8867,8866,8870,10974,8872,10980,8873,10979,8875,10981,8880,8881,8881,8880,8882,8883,8883,8882,8884,8885,8885,8884,8886,8887,8887,8886,8905,8906,8906,8905,8907,8908,8908,8907,8909,8771,8912,8913,8913,8912,8918,8919,8919,8918,8920,8921,8921,8920,8922,8923,8923,8922,8924,8925,8925,8924,8926,8927,8927,8926,8928,8929,8929,8928,8930,8931,8931,8930,8932,8933,8933,8932,8934,8935,8935,8934,8936,8937,8937,8936,8938,8939,8939,8938,8940,8941,8941,8940,8944,8945,8945,8944,8946,8954,8947,8955,8948,8956,8950,8957,8951,8958,8954,8946,8955,8947,8956,8948,8957,8950,8958,8951,8968,8969,8969,8968,8970,8971,8971,8970,9001,9002,9002,9001,10088,10089,10089,10088,10090,10091,10091,10090,10092,10093,10093,10092,10094,10095,10095,10094,10096,10097,10097,10096,10098,10099,10099,10098,10100,10101,10101,10100,10179,10180,10180,10179,10181,10182,10182,10181,10184,10185,10185,10184,10187,10189,10189,10187,10197,10198,10198,10197,10205,10206,10206,10205,10210,10211,10211,10210,10212,10213,10213,10212,10214,10215,10215,10214,10216,10217,10217,10216,10218,10219,10219,10218,10220,10221,10221,10220,10222,10223,10223,10222,10627,10628,10628,10627,10629,10630,10630,10629,10631,10632,10632,10631,10633,10634,10634,10633,10635,10636,10636,10635,10637,10640,10638,10639,10639,10638,10640,10637,10641,10642,10642,10641,10643,10644,10644,10643,10645,10646,10646,10645,10647,10648,10648,10647,10680,8856,10688,10689,10689,10688,10692,10693,10693,10692,10703,10704,10704,10703,10705,10706,10706,10705,10708,10709,10709,10708,10712,10713,10713,10712,10714,10715,10715,10714,10741,8725,10744,10745,10745,10744,10748,10749,10749,10748,10795,10796,10796,10795,10797,10798,10798,10797,10804,10805,10805,10804,10812,10813,10813,10812,10852,10853,10853,10852,10873,10874,10874,10873,10877,10878,10878,10877,10879,10880,10880,10879,10881,10882,10882,10881,10883,10884,10884,10883,10891,10892,10892,10891,10897,10898,10898,10897,10899,10900,10900,10899,10901,10902,10902,10901,10903,10904,10904,10903,10905,10906,10906,10905,10907,10908,10908,10907,10913,10914,10914,10913,10918,10919,10919,10918,10920,10921,10921,10920,10922,10923,10923,10922,10924,10925,10925,10924,10927,10928,10928,10927,10931,10932,10932,10931,10939,10940,10940,10939,10941,10942,10942,10941,10943,10944,10944,10943,10945,10946,10946,10945,10947,10948,10948,10947,10949,10950,10950,10949,10957,10958,10958,10957,10959,10960,10960,10959,10961,10962,10962,10961,10963,10964,10964,10963,10965,10966,10966,10965,10974,8870,10979,8873,10980,8872,10981,8875,10988,10989,10989,10988,10999,11000,11000,10999,11001,11002,11002,11001,11778,11779,11779,11778,11780,11781,11781,11780,11785,11786,11786,11785,11788,11789,11789,11788,11804,11805,11805,11804,11808,11809,11809,11808,11810,11811,11811,11810,11812,11813,11813,11812,11814,11815,11815,11814,11816,11817,11817,11816,12296,12297,12297,12296,12298,12299,12299,12298,12300,12301,12301,12300,12302,12303,12303,12302,12304,12305,12305,12304,12308,12309,12309,12308,12310,12311,12311,12310,12312,12313,12313,12312,12314,12315,12315,12314,65113,65114,65114,65113,65115,65116,65116,65115,65117,65118,65118,65117,65124,65125,65125,65124,65288,65289,65289,65288,65308,65310,65310,65308,65339,65341,65341,65339,65371,65373,65373,65371,65375,65376,65376,65375,65378,65379,65379,65378,9115,9118,9116,9119,9117,9120,9118,9115,9119,9116,9120,9117,9121,9124,9122,9125,9123,9126,9124,9121,9125,9122,9126,9123,9127,9131,9130,9134,9129,9133,9131,9127,9134,9130,9133,9129,9128,9132,9132,9128];
 com.wiris.util.xml.WCharacterBase.subSuperScriptDictionary = [178,50,179,51,185,49,8304,48,8305,105,8308,52,8309,53,8310,54,8311,55,8312,56,8313,57,8314,43,8315,45,8316,61,8317,40,8318,41,8319,110,8320,48,8321,49,8322,50,8323,51,8324,52,8325,53,8326,54,8327,55,8328,56,8329,57,8330,43,8331,45,8332,61,8333,40,8334,41,8336,97,8337,101,8338,111,8339,120,8340,601,8341,104,8342,107,8343,108,8344,109,8345,110,8346,112,8347,115,8348,116];
+com.wiris.util.xml.WCharacterBase.accentsDictionary = null;
 com.wiris.util.xml.WCharacterBase.horizontalLTRStretchyChars = [com.wiris.util.xml.WCharacterBase.LEFTWARDS_ARROW,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_ARROW,com.wiris.util.xml.WCharacterBase.LEFTRIGHT_ARROW,com.wiris.util.xml.WCharacterBase.LEFTWARDS_ARROW_FROM_BAR,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_ARROW_FROM_BAR,com.wiris.util.xml.WCharacterBase.LEFTWARDS_ARROW_WITH_HOOK,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_ARROW_WITH_HOOK,com.wiris.util.xml.WCharacterBase.LEFTWARDS_HARPOON_WITH_BARB_UPWARDS,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_HARPOON_WITH_BARB_UPWARDS,com.wiris.util.xml.WCharacterBase.LEFTWARDS_DOUBLE_ARROW,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_DOUBLE_ARROW,com.wiris.util.xml.WCharacterBase.TOP_CURLY_BRACKET,com.wiris.util.xml.WCharacterBase.BOTTOM_CURLY_BRACKET,com.wiris.util.xml.WCharacterBase.TOP_PARENTHESIS,com.wiris.util.xml.WCharacterBase.BOTTOM_PARENTHESIS,com.wiris.util.xml.WCharacterBase.TOP_SQUARE_BRACKET,com.wiris.util.xml.WCharacterBase.BOTTOM_SQUARE_BRACKET,com.wiris.util.xml.WCharacterBase.LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW,com.wiris.util.xml.WCharacterBase.LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON];
 com.wiris.util.xml.WCharacterBase.tallAccents = [com.wiris.util.xml.WCharacterBase.LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW,com.wiris.util.xml.WCharacterBase.LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON,com.wiris.util.xml.WCharacterBase.RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON];
 com.wiris.util.xml.WCharacterBase.PUNCTUATION_CATEGORY = "P";
@@ -19163,8 +20150,10 @@ com.wiris.util.xml.WCharacterBase.latinLetters = "@0065@0066@0067@0068@0069@0070
 com.wiris.util.xml.WCharacterBase.greekLetters = "@0913@0914@0935@0916@0917@0934@0915@0919@0921@0977@0922@0923@0924@0925@0927@0928@0920@0929@0931@0932@0933@0962@0937@0926@0936@0918" + "@0945@0946@0967@0948@0949@0966@0947@0951@0953@0966@0954@0955@0956@0957@0959@0960@0952@0961@0963@0964@0965@0982@0969@0958@0968@0950@";
 com.wiris.util.xml.WEntities.s1 = "boxDL@02557@boxDl@02556@boxdL@02555@boxdl@02510@boxDR@02554@boxDr@02553@boxdR@02552@boxdr@0250C@boxH@02550@boxh@02500@boxHD@02566@boxHd@02564@boxhD@02565@boxhd@0252C@boxHU@02569@boxHu@02567@boxhU@02568@boxhu@02534@boxUL@0255D@boxUl@0255C@boxuL@0255B@boxul@02518@boxUR@0255A@boxUr@02559@boxuR@02558@boxur@02514@boxV@02551@boxv@02502@boxVH@0256C@boxVh@0256B@boxvH@0256A@boxvh@0253C@boxVL@02563@boxVl@02562@boxvL@02561@boxvl@02524@boxVR@02560@boxVr@0255F@boxvR@0255E@boxvr@0251C@Acy@00410@acy@00430@Bcy@00411@bcy@00431@CHcy@00427@chcy@00447@Dcy@00414@dcy@00434@Ecy@0042D@ecy@0044D@Fcy@00424@fcy@00444@Gcy@00413@gcy@00433@HARDcy@0042A@hardcy@0044A@Icy@00418@icy@00438@IEcy@00415@iecy@00435@IOcy@00401@iocy@00451@Jcy@00419@jcy@00439@Kcy@0041A@kcy@0043A@KHcy@00425@khcy@00445@Lcy@0041B@lcy@0043B@Mcy@0041C@mcy@0043C@Ncy@0041D@ncy@0043D@numero@02116@Ocy@0041E@ocy@0043E@Pcy@0041F@pcy@0043F@Rcy@00420@rcy@00440@Scy@00421@scy@00441@SHCHcy@00429@shchcy@00449@SHcy@00428@shcy@00448@SOFTcy@0042C@softcy@0044C@Tcy@00422@tcy@00442@TScy@00426@tscy@00446@Ucy@00423@ucy@00443@Vcy@00412@vcy@00432@YAcy@0042F@yacy@0044F@Ycy@0042B@ycy@0044B@YUcy@0042E@yucy@0044E@Zcy@00417@zcy@00437@ZHcy@00416@zhcy@00436@DJcy@00402@djcy@00452@DScy@00405@dscy@00455@DZcy@0040F@dzcy@0045F@GJcy@00403@gjcy@00453@Iukcy@00406@iukcy@00456@Jsercy@00408@jsercy@00458@Jukcy@00404@jukcy@00454@KJcy@0040C@kjcy@0045C@LJcy@00409@ljcy@00459@NJcy@0040A@njcy@0045A@TSHcy@0040B@tshcy@0045B@Ubrcy@0040E@ubrcy@0045E@YIcy@00407@yicy@00457@acute@000B4@breve@002D8@caron@002C7@cedil@000B8@circ@002C6@dblac@002DD@die@000A8@dot@002D9@grave@00060@macr@000AF@ogon@002DB@ring@002DA@tilde@002DC@uml@000A8@Aacute@000C1@aacute@000E1@Acirc@000C2@acirc@000E2@AElig@000C6@aelig@000E6@Agrave@000C0@agrave@000E0@Aring@000C5@aring@000E5@Atilde@000C3@atilde@000E3@Auml@000C4@auml@000E4@Ccedil@000C7@ccedil@000E7@Eacute@000C9@eacute@000E9@Ecirc@000CA@ecirc@000EA@Egrave@000C8@egrave@000E8@ETH@000D0@eth@000F0@Euml@000CB@euml@000EB@Iacute@000CD@iacute@000ED@Icirc@000CE@icirc@000EE@Igrave@000CC@igrave@000EC@Iuml@000CF@iuml@000EF@Ntilde@000D1@ntilde@000F1@Oacute@000D3@oacute@000F3@Ocirc@000D4@ocirc@000F4@Ograve@000D2@ograve@000F2@Oslash@000D8@oslash@000F8@Otilde@000D5@otilde@000F5@Ouml@000D6@ouml@000F6@szlig@000DF@THORN@000DE@thorn@000FE@Uacute@000DA@uacute@000FA@Ucirc@000DB@ucirc@000FB@Ugrave@000D9@ugrave@000F9@Uuml@000DC@uuml@000FC@Yacute@000DD@yacute@000FD@yuml@000FF@Abreve@00102@abreve@00103@Amacr@00100@amacr@00101@Aogon@00104@aogon@00105@Cacute@00106@cacute@00107@Ccaron@0010C@ccaron@0010D@Ccirc@00108@ccirc@00109@Cdot@0010A@cdot@0010B@Dcaron@0010E@dcaron@0010F@Dstrok@00110@dstrok@00111@Ecaron@0011A@ecaron@0011B@Edot@00116@edot@00117@Emacr@00112@emacr@00113@ENG@0014A@eng@0014B@Eogon@00118@eogon@00119@gacute@001F5@Gbreve@0011E@gbreve@0011F@Gcedil@00122@Gcirc@0011C@gcirc@0011D@Gdot@00120@gdot@00121@Hcirc@00124@hcirc@00125@Hstrok@00126@hstrok@00127@Idot@00130@IJlig@00132@ijlig@00133@Imacr@0012A@imacr@0012B@inodot@00131@Iogon@0012E@iogon@0012F@Itilde@00128@itilde@00129@Jcirc@00134@jcirc@00135@Kcedil@00136@kcedil@00137@kgreen@00138@Lacute@00139@lacute@0013A@Lcaron@0013D@lcaron@0013E@Lcedil@0013B@lcedil@0013C@Lmidot@0013F@lmidot@00140@Lstrok@00141@lstrok@00142@Nacute@00143@nacute@00144@napos@00149@Ncaron@00147@ncaron@00148@Ncedil@00145@ncedil@00146@Odblac@00150@odblac@00151@OElig@00152@oelig@00153@Omacr@0014C@omacr@0014D@Racute@00154@racute@00155@Rcaron@00158@rcaron@00159@Rcedil@00156@rcedil@00157@Sacute@0015A@sacute@0015B@Scaron@00160@scaron@00161@Scedil@0015E@scedil@0015F@Scirc@0015C@scirc@0015D@Tcaron@00164@tcaron@00165@Tcedil@00162@tcedil@00163@Tstrok@00166@tstrok@00167@Ubreve@0016C@ubreve@0016D@Udblac@00170@udblac@00171@Umacr@0016A@umacr@0016B@Uogon@00172@uogon@00173@Uring@0016E@uring@0016F@Utilde@00168@utilde@00169@Wcirc@00174@wcirc@00175@Ycirc@00176@ycirc@00177@Yuml@00178@Zacute@00179@zacute@0017A@Zcaron@0017D@zcaron@0017E@Zdot@0017B@zdot@0017C@apos@00027@ast@0002A@brvbar@000A6@bsol@0005C@cent@000A2@colon@0003A@comma@0002C@commat@00040@copy@000A9@curren@000A4@darr@02193@deg@000B0@divide@000F7@dollar@00024@equals@0003D@excl@00021@frac12@000BD@frac14@000BC@frac18@0215B@frac34@000BE@frac38@0215C@frac58@0215D@frac78@0215E@gt@0003E@half@000BD@horbar@02015@hyphen@02010@iexcl@000A1@iquest@000BF@laquo@000AB@larr@02190@lcub@0007B@ldquo@0201C@lowbar@0005F@lpar@00028@lsqb@0005B@lsquo@02018@micro@000B5@middot@000B7@nbsp@000A0@not@000AC@num@00023@ohm@02126@ordf@000AA@ordm@000BA@para@000B6@percnt@00025@period@0002E@plus@0002B@plusmn@000B1@pound@000A3@quest@0003F@quot@00022@raquo@000BB@rarr@02192@rcub@0007D@rdquo@0201D@reg@000AE@rpar@00029@rsqb@0005D@rsquo@02019@sect@000A7@semi@0003B@shy@000AD@sol@0002F@sung@0266A@sup1@000B9@sup2@000B2@sup3@000B3@times@000D7@trade@02122@uarr@02191@verbar@0007C@yen@000A5@blank@02423@blk12@02592@blk14@02591@blk34@02593@block@02588@bull@02022@caret@02041@check@02713@cir@025CB@clubs@02663@copysr@02117@cross@02717@Dagger@02021@dagger@02020@dash@02010@diams@02666@dlcrop@0230D@drcrop@0230C@dtri@025BF@dtrif@025BE@emsp@02003@emsp13@02004@emsp14@02005@ensp@02002@female@02640@ffilig@0FB03@fflig@0FB00@ffllig@0FB04@filig@0FB01@flat@0266D@fllig@0FB02@frac13@02153@frac15@02155@frac16@02159@frac23@02154@frac25@02156@frac35@02157@frac45@02158@frac56@0215A@hairsp@0200A@hearts@02665@hellip@02026@hybull@02043@incare@02105@ldquor@0201E@lhblk@02584@loz@025CA@lozf@029EB@lsquor@0201A@ltri@025C3@ltrif@025C2@male@02642@malt@02720@marker@025AE@mdash@02014@mldr@02026@natur@0266E@ndash@02013@nldr@02025@numsp@02007@phone@0260E@puncsp@02008@rdquor@0201D@rect@025AD@rsquor@02019@rtri@025B9@rtrif@025B8@rx@0211E@sext@02736@sharp@0266F@spades@02660@squ@025A1@squf@025AA@star@02606@starf@02605@target@02316@telrec@02315@thinsp@02009@uhblk@02580@ulcrop@0230F@urcrop@0230E@utri@025B5@utrif@025B4@vellip@022EE@angzarr@0237C@cirmid@02AEF@cudarrl@02938@cudarrr@02935@cularr@021B6@cularrp@0293D@curarr@021B7@curarrm@0293C@Darr@021A1@dArr@021D3@ddarr@021CA@DDotrahd@02911@dfisht@0297F@dHar@02965@dharl@021C3@dharr@021C2@duarr@021F5@duhar@0296F@dzigrarr@027FF@erarr@02971@hArr@021D4@harr@02194@harrcir@02948@harrw@021AD@hoarr@021FF@imof@022B7@lAarr@021DA@Larr@0219E@larrbfs@0291F@larrfs@0291D@larrhk@021A9@larrlp@021AB@larrpl@02939@larrsim@02973@larrtl@021A2@lAtail@0291B@latail@02919@lBarr@0290E@lbarr@0290C@ldca@02936@ldrdhar@02967@ldrushar@0294B@ldsh@021B2@lfisht@0297C@lHar@02962@lhard@021BD@lharu@021BC@lharul@0296A@llarr@021C7@llhard@0296B@loarr@021FD@lrarr@021C6@lrhar@021CB@lrhard@0296D@lsh@021B0@lurdshar@0294A@luruhar@02966@Map@02905@map@021A6@midcir@02AF0@mumap@022B8@nearhk@02924@neArr@021D7@nearr@02197@nesear@02928@nhArr@021CE@nharr@021AE@nlArr@021CD@nlarr@0219A@nrArr@021CF@nrarr@0219B@nvHarr@02904@nvlArr@02902@nvrArr@02903@nwarhk@02923@nwArr@021D6@nwarr@02196@nwnear@02927@olarr@021BA@orarr@021BB@origof@022B6@rAarr@021DB@Rarr@021A0@rarrap@02975@rarrbfs@02920@rarrc@02933@rarrfs@0291E@rarrhk@021AA@rarrlp@021AC@rarrpl@02945@rarrsim@02974@Rarrtl@02916@rarrtl@021A3@rarrw@0219D@rAtail@0291C@ratail@0291A@RBarr@02910@rBarr@0290F@rbarr@0290D@rdca@02937@rdldhar@02969@rdsh@021B3@rfisht@0297D@rHar@02964@rhard@021C1@rharu@021C0@rharul@0296C@rlarr@021C4@rlhar@021CC@roarr@021FE@rrarr@021C9@rsh@021B1@ruluhar@02968@searhk@02925@seArr@021D8@searr@02198@seswar@02929@simrarr@02972@slarr@02190@srarr@02192@swarhk@02926@swArr@021D9@swarr@02199@swnwar@0292A@Uarr@0219F@uArr@021D1@Uarrocir@02949@udarr@021C5@udhar@0296E@ufisht@0297E@uHar@02963@uharl@021BF@uharr@021BE@uuarr@021C8@vArr@021D5@varr@02195@xhArr@027FA@xharr@027F7@xlArr@027F8@xlarr@027F5@xmap@027FC@xrArr@027F9@xrarr@027F6@zigrarr@021DD@ac@0223E@amalg@02A3F@barvee@022BD@Barwed@02306@barwed@02305@bsolb@029C5@Cap@022D2@capand@02A44@capbrcup@02A49@capcap@02A4B@capcup@02A47@capdot@02A40@ccaps@02A4D@ccups@02A4C@ccupssm@02A50@coprod@02210@Cup@022D3@cupbrcap@02A48@cupcap@02A46@cupcup@02A4A@cupdot@0228D@cupor@02A45@cuvee@022CE@cuwed@022CF@Dagger@02021@dagger@02020@diam@022C4@divonx@022C7@eplus@02A71@hercon@022B9@intcal@022BA@iprod@02A3C@loplus@02A2D@lotimes@02A34@lthree@022CB@ltimes@022C9@midast@0002A@minusb@0229F@minusd@02238@minusdu@02A2A@ncap@02A43@ncup@02A42@oast@0229B@ocir@0229A@odash@0229D@odiv@02A38@odot@02299@odsold@029BC@ofcir@029BF@ogt@029C1@ohbar@029B5@olcir@029BE@olt@029C0@omid@029B6@ominus@02296@opar@029B7@operp@029B9@oplus@02295@osol@02298@Otimes@02A37@otimes@02297@otimesas@02A36@ovbar@0233D@plusacir@02A23@plusb@0229E@pluscir@02A22@plusdo@02214@plusdu@02A25@pluse@02A72@plussim@02A26@plustwo@02A27@prod@0220F@race@029DA@roplus@02A2E@rotimes@02A35@rthree@022CC@rtimes@022CA@sdot@022C5@sdotb@022A1@setmn@02216@simplus@02A24@smashp@02A33@solb@029C4@sqcap@02293@sqcup@02294@ssetmn@02216@sstarf@022C6@subdot@02ABD@sum@02211@supdot@02ABE@timesb@022A0@timesbar@02A31@timesd@02A30@tridot@025EC@triminus@02A3A@triplus@02A39@trisb@029CD@tritime@02A3B@uplus@0228E@veebar@022BB@wedbar@02A5F@wreath@02240@xcap@022C2@xcirc@025EF@xcup@022C3@xdtri@025BD@xodot@02A00@xoplus@02A01@xotime@02A02@xsqcup@02A06@xuplus@02A04@xutri@025B3@xvee@022C1@xwedge@022C0@dlcorn@0231E@drcorn@0231F@gtlPar@02995@langd@02991@lbrke@0298B@lbrksld@0298F@lbrkslu@0298D@lceil@02308@lfloor@0230A@lmoust@023B0@lparlt@02993@ltrPar@02996@rangd@02992@rbrke@0298C@rbrksld@0298E@rbrkslu@02990@rceil@02309@rfloor@0230B@rmoust@023B1@rpargt@02994@ulcorn@0231C@urcorn@0231D@gnap@02A8A@gnE@02269@gne@02A88@gnsim@022E7@lnap@02A89@lnE@02268@lne@02A87@lnsim@022E6@nap@02249@ncong@02247@nequiv@02262@nge@02271@ngsim@02275@ngt@0226F@nle@02270@nlsim@02274@nlt@0226E@nltri@022EA@nltrie@022EC@nmid@02224@npar@02226@npr@02280@nprcue@022E0@nrtri@022EB@nrtrie@022ED@nsc@02281@nsccue@022E1@nsim@02241@nsime@02244@nsmid@02224@nspar@02226@nsqsube@022E2@nsqsupe@022E3@nsub@02284@nsube@02288@nsup@02285@nsupe@02289@ntgl@02279@ntlg@02278@nVDash@022AF@nVdash@022AE@nvDash@022AD@nvdash@022AC@parsim@02AF3@prnap@02AB9@prnE@02AB5@prnsim@022E8@rnmid@02AEE@scnap@02ABA@scnE@02AB6@scnsim@022E9@simne@02246@solbar@0233F@subnE@02ACB@subne@0228A@supnE@02ACC@supne@0228B@ang@02220@ange@029A4@angmsd@02221@angmsdaa@029A8@angmsdab@029A9@angmsdac@029AA@angmsdad@029AB@angmsdae@029AC@angmsdaf@029AD@angmsdag@029AE@angmsdah@029AF@angrtvb@022BE@angrtvbd@0299D@bbrk@023B5@bbrktbrk@023B6@bemptyv@029B0@beth@02136@boxbox@029C9@";
 com.wiris.util.xml.WEntities.s2 = "bprime@02035@bsemi@0204F@cemptyv@029B2@cirE@029C3@cirscir@029C2@comp@02201@daleth@02138@demptyv@029B1@ell@02113@empty@02205@emptyv@02205@gimel@02137@iiota@02129@image@02111@imath@00131@jmath@0006A@laemptyv@029B4@lltri@025FA@lrtri@022BF@mho@02127@nexist@02204@oS@024C8@planck@0210F@plankv@0210F@raemptyv@029B3@range@029A5@real@0211C@tbrk@023B4@trpezium@0FFFD@ultri@025F8@urtri@025F9@vzigzag@0299A@weierp@02118@apE@02A70@ape@0224A@apid@0224B@asymp@02248@Barv@02AE7@bcong@0224C@bepsi@003F6@bowtie@022C8@bsim@0223D@bsime@022CD@bump@0224E@bumpE@02AAE@bumpe@0224F@cire@02257@Colon@02237@Colone@02A74@colone@02254@congdot@02A6D@csub@02ACF@csube@02AD1@csup@02AD0@csupe@02AD2@cuepr@022DE@cuesc@022DF@Dashv@02AE4@dashv@022A3@easter@02A6E@ecir@02256@ecolon@02255@eDDot@02A77@eDot@02251@efDot@02252@eg@02A9A@egs@02A96@egsdot@02A98@el@02A99@els@02A95@elsdot@02A97@equest@0225F@equivDD@02A78@erDot@02253@esdot@02250@Esim@02A73@esim@02242@fork@022D4@forkv@02AD9@frown@02322@gap@02A86@gE@02267@gEl@02A8C@gel@022DB@ges@02A7E@gescc@02AA9@gesdot@02A80@gesdoto@02A82@gesdotol@02A84@gesles@02A94@Gg@022D9@gl@02277@gla@02AA5@glE@02A92@glj@02AA4@gsim@02273@gsime@02A8E@gsiml@02A90@Gt@0226B@gtcc@02AA7@gtcir@02A7A@gtdot@022D7@gtquest@02A7C@gtrarr@02978@homtht@0223B@lap@02A85@lat@02AAB@late@02AAD@lE@02266@lEg@02A8B@leg@022DA@les@02A7D@lescc@02AA8@lesdot@02A7F@lesdoto@02A81@lesdotor@02A83@lesges@02A93@lg@02276@lgE@02A91@Ll@022D8@lsim@02272@lsime@02A8D@lsimg@02A8F@Lt@0226A@ltcc@02AA6@ltcir@02A79@ltdot@022D6@ltlarr@02976@ltquest@02A7B@ltrie@022B4@mcomma@02A29@mDDot@0223A@mid@02223@mlcp@02ADB@models@022A7@mstpos@0223E@Pr@02ABB@pr@0227A@prap@02AB7@prcue@0227C@prE@02AB3@pre@02AAF@prsim@0227E@prurel@022B0@ratio@02236@rtrie@022B5@rtriltri@029CE@Sc@02ABC@sc@0227B@scap@02AB8@sccue@0227D@scE@02AB4@sce@02AB0@scsim@0227F@sdote@02A66@sfrown@02322@simg@02A9E@simgE@02AA0@siml@02A9D@simlE@02A9F@smid@02223@smile@02323@smt@02AAA@smte@02AAC@spar@02225@sqsub@0228F@sqsube@02291@sqsup@02290@sqsupe@02292@ssmile@02323@Sub@022D0@subE@02AC5@subedot@02AC3@submult@02AC1@subplus@02ABF@subrarr@02979@subsim@02AC7@subsub@02AD5@subsup@02AD3@Sup@022D1@supdsub@02AD8@supE@02AC6@supedot@02AC4@suphsub@02AD7@suplarr@0297B@supmult@02AC2@supplus@02AC0@supsim@02AC8@supsub@02AD4@supsup@02AD6@thkap@02248@thksim@0223C@topfork@02ADA@trie@0225C@twixt@0226C@Vbar@02AEB@vBar@02AE8@vBarv@02AE9@VDash@022AB@Vdash@022A9@vDash@022A8@vdash@022A2@Vdashl@02AE6@vltri@022B2@vprop@0221D@vrtri@022B3@Vvdash@022AA@alpha@003B1@beta@003B2@chi@003C7@Delta@00394@delta@003B4@epsi@003B5@epsiv@003F5@eta@003B7@Gamma@00393@gamma@003B3@Gammad@003DC@gammad@003DD@iota@003B9@kappa@003BA@kappav@003F0@Lambda@0039B@lambda@003BB@mu@003BC@nu@003BD@Omega@003A9@omega@003C9@Phi@003A6@phi@003C6@phiv@003D5@Pi@003A0@pi@003C0@piv@003D6@Psi@003A8@psi@003C8@rho@003C1@rhov@003F1@Sigma@003A3@sigma@003C3@sigmav@003C2@tau@003C4@Theta@00398@theta@003B8@thetav@003D1@Upsi@003D2@upsi@003C5@Xi@0039E@xi@003BE@zeta@003B6@Cfr@0212D@Hfr@0210C@Ifr@02111@Rfr@0211C@Zfr@02128@Copf@02102@Hopf@0210D@Nopf@02115@Popf@02119@Qopf@0211A@Ropf@0211D@Zopf@02124@acd@0223F@aleph@02135@And@02A53@and@02227@andand@02A55@andd@02A5C@andslope@02A58@andv@02A5A@angrt@0221F@angsph@02222@angst@0212B@ap@02248@apacir@02A6F@awconint@02233@awint@02A11@becaus@02235@bernou@0212C@bNot@02AED@bnot@02310@bottom@022A5@cap@02229@Cconint@02230@cirfnint@02A10@compfn@02218@cong@02245@Conint@0222F@conint@0222E@ctdot@022EF@cup@0222A@cwconint@02232@cwint@02231@cylcty@0232D@disin@022F2@Dot@000A8@DotDot@020DC@dsol@029F6@dtdot@022F1@dwangle@029A6@elinters@0FFFD@epar@022D5@eparsl@029E3@equiv@02261@eqvparsl@029E5@exist@02203@fltns@025B1@fnof@00192@forall@02200@fpartint@02A0D@ge@02265@hamilt@0210B@iff@021D4@iinfin@029DC@imped@001B5@infin@0221E@infintie@029DD@Int@0222C@int@0222B@intlarhk@02A17@isin@02208@isindot@022F5@isinE@022F9@isins@022F4@isinsv@022F3@isinv@02208@lagran@02112@Lang@0300A@lang@027e8@lArr@021D0@lbbrk@03014@le@02264@loang@03018@lobrk@0301A@lopar@02985@lowast@02217@minus@02212@mnplus@02213@nabla@02207@ne@02260@nhpar@02AF2@ni@0220B@nis@022FC@nisd@022FA@niv@0220B@Not@02AEC@notin@02209@notinva@02209@notinvb@022F7@notinvc@022F6@notni@0220C@notniva@0220C@notnivb@022FE@notnivc@022FD@npolint@02A14@nvinfin@029DE@olcross@029BB@Or@02A54@or@02228@ord@02A5D@order@02134@oror@02A56@orslope@02A57@orv@02A5B@par@02225@parsl@02AFD@part@02202@permil@02030@perp@022A5@pertenk@02031@phmmat@02133@pointint@02A15@Prime@02033@prime@02032@profalar@0232E@profline@02312@profsurf@02313@prop@0221D@qint@02A0C@qprime@02057@quatint@02A16@radic@0221A@Rang@0300B@rang@027e9@rArr@021D2@rbbrk@03015@roang@03019@robrk@0301B@ropar@02986@rppolint@02A12@scpolint@02A13@sim@0223C@simdot@02A6A@sime@02243@smeparsl@029E4@square@025A1@squarf@025AA@strns@000AF@sub@02282@sube@02286@sup@02283@supe@02287@tdot@020DB@there4@02234@tint@0222D@top@022A4@topbot@02336@topcir@02AF1@tprime@02034@utdot@022F0@uwangle@029A7@vangrt@0299C@veeeq@0225A@Verbar@02016@wedgeq@02259@xnis@022FB@angle@02220@ApplyFunction@02061@approx@02248@approxeq@0224A@Assign@02254@backcong@0224C@backepsilon@003F6@backprime@02035@backsim@0223D@backsimeq@022CD@Backslash@02216@barwedge@02305@Because@02235@because@02235@Bernoullis@0212C@between@0226C@bigcap@022C2@bigcirc@025EF@bigcup@022C3@bigodot@02A00@bigoplus@02A01@bigotimes@02A02@bigsqcup@02A06@bigstar@02605@bigtriangledown@025BD@bigtriangleup@025B3@biguplus@02A04@bigvee@022C1@bigwedge@022C0@bkarow@0290D@blacklozenge@029EB@blacksquare@025AA@blacktriangle@025B4@blacktriangledown@025BE@blacktriangleleft@025C2@blacktriangleright@025B8@bot@022A5@boxminus@0229F@boxplus@0229E@boxtimes@022A0@Breve@002D8@bullet@02022@Bumpeq@0224E@bumpeq@0224F@CapitalDifferentialD@02145@Cayleys@0212D@Cedilla@000B8@CenterDot@000B7@centerdot@000B7@checkmark@02713@circeq@02257@circlearrowleft@021BA@circlearrowright@021BB@circledast@0229B@circledcirc@0229A@circleddash@0229D@CircleDot@02299@circledR@000AE@circledS@024C8@CircleMinus@02296@CirclePlus@02295@CircleTimes@02297@ClockwiseContourIntegral@02232@CloseCurlyDoubleQuote@0201D@CloseCurlyQuote@02019@clubsuit@02663@coloneq@02254@complement@02201@complexes@02102@Congruent@02261@ContourIntegral@0222E@Coproduct@02210@CounterClockwiseContourIntegral@02233@CupCap@0224D@curlyeqprec@022DE@curlyeqsucc@022DF@curlyvee@022CE@curlywedge@022CF@curvearrowleft@021B6@curvearrowright@021B7@dbkarow@0290F@ddagger@02021@ddotseq@02A77@Del@02207@DiacriticalAcute@000B4@DiacriticalDot@002D9@DiacriticalDoubleAcute@002DD@DiacriticalGrave@00060@DiacriticalTilde@002DC@Diamond@022C4@diamond@022C4@diamondsuit@02666@DifferentialD@02146@digamma@003DD@div@000F7@divideontimes@022C7@doteq@02250@doteqdot@02251@DotEqual@02250@dotminus@02238@dotplus@02214@dotsquare@022A1@doublebarwedge@02306@DoubleContourIntegral@0222F@DoubleDot@000A8@DoubleDownArrow@021D3@DoubleLeftArrow@021D0@DoubleLeftRightArrow@021D4@DoubleLeftTee@02AE4@DoubleLongLeftArrow@027F8@DoubleLongLeftRightArrow@027FA@DoubleLongRightArrow@027F9@DoubleRightArrow@021D2@DoubleRightTee@022A8@DoubleUpArrow@021D1@DoubleUpDownArrow@021D5@DoubleVerticalBar@02225@DownArrow@02193@Downarrow@021D3@downarrow@02193@DownArrowUpArrow@021F5@downdownarrows@021CA@downharpoonleft@021C3@downharpoonright@021C2@DownLeftVector@021BD@DownRightVector@021C1@DownTee@022A4@DownTeeArrow@021A7@drbkarow@02910@Element@02208@emptyset@02205@eqcirc@02256@eqcolon@02255@eqsim@02242@eqslantgtr@02A96@eqslantless@02A95@EqualTilde@02242@Equilibrium@021CC@Exists@02203@expectation@02130@ExponentialE@02147@exponentiale@02147@fallingdotseq@02252@ForAll@02200@Fouriertrf@02131@geq@02265@geqq@02267@geqslant@02A7E@gg@0226B@ggg@022D9@gnapprox@02A8A@gneq@02A88@gneqq@02269@GreaterEqual@02265@GreaterEqualLess@022DB@GreaterFullEqual@02267@GreaterLess@02277@GreaterSlantEqual@02A7E@GreaterTilde@02273@gtrapprox@02A86@gtrdot@022D7@gtreqless@022DB@gtreqqless@02A8C@gtrless@02277@gtrsim@02273@Hacek@002C7@hbar@0210F@heartsuit@02665@HilbertSpace@0210B@hksearow@02925@hkswarow@02926@hookleftarrow@021A9@hookrightarrow@021AA@hslash@0210F@HumpDownHump@0224E@HumpEqual@0224F@iiiint@02A0C@iiint@0222D@Im@02111@ImaginaryI@02148@imagline@02110@imagpart@02111@Implies@021D2@in@02208@integers@02124@Integral@0222B@intercal@022BA@Intersection@022C2@intprod@02A3C@InvisibleComma@02063@InvisibleTimes@02062@langle@027e8@Laplacetrf@02112@lbrace@0007B@lbrack@0005B@LeftAngleBracket@027e8@LeftArrow@02190@Leftarrow@021D0@leftarrow@02190@LeftArrowBar@021E4@LeftArrowRightArrow@021C6@leftarrowtail@021A2@LeftCeiling@02308@LeftDoubleBracket@0301A@LeftDownVector@021C3@LeftFloor@0230A@leftharpoondown@021BD@leftharpoonup@021BC@leftleftarrows@021C7@LeftRightArrow@02194@Leftrightarrow@021D4@leftrightarrow@02194@leftrightarrows@021C6@leftrightharpoons@021CB@leftrightsquigarrow@021AD@LeftTee@022A3@LeftTeeArrow@021A4@leftthreetimes@022CB@LeftTriangle@022B2@LeftTriangleEqual@022B4@LeftUpVector@021BF@LeftVector@021BC@leq@02264@leqq@02266@leqslant@02A7D@lessapprox@02A85@lessdot@022D6@lesseqgtr@022DA@lesseqqgtr@02A8B@LessEqualGreater@022DA@LessFullEqual@02266@LessGreater@02276@lessgtr@02276@lesssim@02272@LessSlantEqual@02A7D@LessTilde@02272@ll@0226A@llcorner@0231E@Lleftarrow@021DA@lmoustache@023B0@lnapprox@02A89@lneq@02A87@lneqq@02268@LongLeftArrow@027F5@Longleftarrow@027F8@longleftarrow@027F5@LongLeftRightArrow@027F7@Longleftrightarrow@027FA@longleftrightarrow@027F7@longmapsto@027FC@LongRightArrow@027F6@Longrightarrow@027F9@longrightarrow@027F6@looparrowleft@021AB@looparrowright@021AC@LowerLeftArrow@02199@LowerRightArrow@02198@lozenge@025CA@lrcorner@0231F@Lsh@021B0@maltese@02720@mapsto@021A6@measuredangle@02221@Mellintrf@02133@MinusPlus@02213@mp@02213@multimap@022B8@napprox@02249@natural@0266E@naturals@02115@nearrow@02197@NegativeMediumSpace@0200B@NegativeThickSpace@0200B@NegativeThinSpace@0200B@NegativeVeryThinSpace@0200B@NestedGreaterGreater@0226B@NestedLessLess@0226A@nexists@02204@ngeq@02271@ngtr@0226F@nLeftarrow@021CD@nleftarrow@0219A@nLeftrightarrow@021CE@nleftrightarrow@021AE@nleq@02270@nless@0226E@NonBreakingSpace@000A0@NotCongruent@02262@NotDoubleVerticalBar@02226@NotElement@02209@NotEqual@02260@NotExists@02204@NotGreater@0226F@NotGreaterEqual@02271@NotGreaterLess@02279@NotGreaterTilde@02275@NotLeftTriangle@022EA@NotLeftTriangleEqual@022EC@NotLess@0226E@NotLessEqual@02270@NotLessGreater@02278@NotLessTilde@02274@NotPrecedes@02280@NotPrecedesSlantEqual@022E0@NotReverseElement@0220C@NotRightTriangle@022EB@NotRightTriangleEqual@022ED@NotSquareSubsetEqual@022E2@NotSquareSupersetEqual@022E3@NotSubsetEqual@02288@NotSucceeds@02281@NotSucceedsSlantEqual@022E1@NotSupersetEqual@02289@NotTilde@02241@NotTildeEqual@02244@NotTildeFullEqual@02247@NotTildeTilde@02249@NotVerticalBar@02224@nparallel@02226@nprec@02280@nRightarrow@021CF@nrightarrow@0219B@nshortmid@02224@nshortparallel@02226@nsimeq@02244@nsubseteq@02288@nsucc@02281@nsupseteq@02289@ntriangleleft@022EA@ntrianglelefteq@022EC@ntriangleright@022EB@ntrianglerighteq@022ED@nwarrow@02196@oint@0222E@OpenCurlyDoubleQuote@0201C@OpenCurlyQuote@02018@orderof@02134@parallel@02225@PartialD@02202@pitchfork@022D4@PlusMinus@000B1@pm@000B1@Poincareplane@0210C@prec@0227A@precapprox@02AB7@preccurlyeq@0227C@Precedes@0227A@PrecedesEqual@02AAF@PrecedesSlantEqual@0227C@PrecedesTilde@0227E@preceq@02AAF@precnapprox@02AB9@precneqq@02AB5@precnsim@022E8@precsim@0227E@primes@02119@Proportion@02237@Proportional@0221D@propto@0221D@quaternions@0210D@questeq@0225F@rangle@027e9@rationals@0211A@rbrace@0007D@rbrack@0005D@Re@0211C@realine@0211B@realpart@0211C@reals@0211D@ReverseElement@0220B@ReverseEquilibrium@021CB@ReverseUpEquilibrium@0296F@RightAngleBracket@027e9@RightArrow@02192@Rightarrow@021D2@rightarrow@02192@RightArrowBar@021E5@RightArrowLeftArrow@021C4@rightarrowtail@021A3@RightCeiling@02309@RightDoubleBracket@0301B@RightDownVector@021C2@RightFloor@0230B@rightharpoondown@021C1@rightharpoonup@021C0@rightleftarrows@021C4@rightleftharpoons@021CC@rightrightarrows@021C9@rightsquigarrow@0219D@RightTee@022A2@RightTeeArrow@021A6@rightthreetimes@022CC@RightTriangle@022B3@RightTriangleEqual@022B5@RightUpVector@021BE@RightVector@021C0@risingdotseq@02253@rmoustache@023B1@Rrightarrow@021DB@Rsh@021B1@searrow@02198@setminus@02216@ShortDownArrow@02193@ShortLeftArrow@02190@shortmid@02223@shortparallel@02225@ShortRightArrow@02192@ShortUpArrow@02191@simeq@02243@SmallCircle@02218@smallsetminus@02216@spadesuit@02660@Sqrt@0221A@sqsubset@0228F@sqsubseteq@02291@sqsupset@02290@sqsupseteq@02292@Square@025A1@SquareIntersection@02293@SquareSubset@0228F@SquareSubsetEqual@02291@SquareSuperset@02290@SquareSupersetEqual@02292@SquareUnion@02294@Star@022C6@straightepsilon@003F5@straightphi@003D5@Subset@022D0@subset@02282@subseteq@02286@subseteqq@02AC5@SubsetEqual@02286@subsetneq@0228A@subsetneqq@02ACB@succ@0227B@succapprox@02AB8@succcurlyeq@0227D@Succeeds@0227B@SucceedsEqual@02AB0@SucceedsSlantEqual@0227D@SucceedsTilde@0227F@succeq@02AB0@succnapprox@02ABA@succneqq@02AB6@succnsim@022E9@succsim@0227F@SuchThat@0220B@Sum@02211@Superset@02283@SupersetEqual@02287@Supset@022D1@supset@02283@supseteq@02287@supseteqq@02AC6@supsetneq@0228B@supsetneqq@02ACC@swarrow@02199@Therefore@02234@therefore@02234@thickapprox@02248@thicksim@0223C@ThinSpace@02009@Tilde@0223C@TildeEqual@02243@TildeFullEqual@02245@TildeTilde@02248@toea@02928@tosa@02929@triangle@025B5@triangledown@025BF@triangleleft@025C3@trianglelefteq@022B4@triangleq@0225C@triangleright@025B9@trianglerighteq@022B5@TripleDot@020DB@twoheadleftarrow@0219E@twoheadrightarrow@021A0@ulcorner@0231C@Union@022C3@UnionPlus@0228E@UpArrow@02191@Uparrow@021D1@uparrow@02191@UpArrowDownArrow@021C5@UpDownArrow@02195@Updownarrow@021D5@updownarrow@02195@UpEquilibrium@0296E@upharpoonleft@021BF@upharpoonright@021BE@UpperLeftArrow@02196@UpperRightArrow@02197@upsilon@003C5@UpTee@022A5@UpTeeArrow@021A5@upuparrows@021C8@urcorner@0231D@varepsilon@003F5@varkappa@003F0@varnothing@02205@varphi@003C6@varpi@003D6@varpropto@0221D@varrho@003F1@varsigma@003C2@vartheta@003D1@vartriangleleft@022B2@vartriangleright@022B3@Vee@022C1@vee@02228@Vert@02016@vert@0007C@VerticalBar@02223@VerticalTilde@02240@VeryThinSpace@0200A@Wedge@022C0@wedge@02227@wp@02118@wr@02240@zeetrf@02128@af@02061@asympeq@0224D@Cross@02A2F@DD@02145@dd@02146@DownArrowBar@02913@DownBreve@00311@DownLeftRightVector@02950@DownLeftTeeVector@0295E@DownLeftVectorBar@02956@DownRightTeeVector@0295F@DownRightVectorBar@02957@ee@02147@EmptySmallSquare@025FB@EmptyVerySmallSquare@025AB@Equal@02A75@FilledSmallSquare@025FC@FilledVerySmallSquare@025AA@GreaterGreater@02AA2@Hat@0005E@HorizontalLine@02500@ic@02063@ii@02148@it@02062@larrb@021E4@LeftDownTeeVector@02961@LeftDownVectorBar@02959@LeftRightVector@0294E@LeftTeeVector@0295A@LeftTriangleBar@029CF@LeftUpDownVector@02951@LeftUpTeeVector@02960@LeftUpVectorBar@02958@LeftVectorBar@02952@LessLess@02AA1@mapstodown@021A7@mapstoleft@021A4@mapstoup@021A5@MediumSpace@0205F@NewLine@0000A@NoBreak@02060@NotCupCap@0226D@OverBar@000AF@OverBrace@023DE@OverBracket@023B4@OverParenthesis@023DC@planckh@0210E@Product@0220F@rarrb@021E5@RightDownTeeVector@0295D@RightDownVectorBar@02955@RightTeeVector@0295B@RightTriangleBar@029D0@RightUpDownVector@0294F@RightUpTeeVector@0295C@RightUpVectorBar@02954@RightVectorBar@02953@RoundImplies@02970@RuleDelayed@029F4@Tab@00009@UnderBar@00332@UnderBrace@023DF@UnderBracket@023B5@UnderParenthesis@023DD@UpArrowBar@02912@Upsilon@003A5@VerticalLine@0007C@VerticalSeparator@02758@ZeroWidthSpace@0200B@omicron@003BF@amalg@02210@NegativeThinSpace@0E000@Iopf@1d540@";
+com.wiris.util.xml.WEntities.s3 = "Alpha@00391@Beta@00392@Epsilon@00395@Zeta@00396@Eta@00397@Iota@00399@Kappa@0039A@Mu@0039C@Nu@0039D@Omicron@0039F@Rho@003A1@Tau@003A4@Chi@003A7@gamma@003B3@epsilon@003B5@eta@003B7@sigmaf@003C2@thetasym@003D1@upsih@003D2@zwnj@0200C@zwj@0200D@lrm@0200E@rlm@0200F@sbquo@0201A@bdquo@0201E@lsaquo@02039@rsaquo@0203A@oline@0203E@euro@020AC@crarr@021B5@";
 com.wiris.util.xml.WEntities.oldWebeq = "infty@221e@partial@2202@iint@222c@neq@2260@nsubset@2284@nsupset@2285@exists@2203@ldots@2026@vdots@22ee@cdots@22ef@ddots@22f1@bar@00af@hat@005e@vec@21c0@ddot@00A8@";
-com.wiris.util.xml.WEntities.MATHML_ENTITIES = com.wiris.util.xml.WEntities.s1 + com.wiris.util.xml.WEntities.s2 + com.wiris.util.xml.WEntities.oldWebeq;
+com.wiris.util.xml.WEntities.MATHML_ENTITIES = com.wiris.util.xml.WEntities.s1 + com.wiris.util.xml.WEntities.s2 + com.wiris.util.xml.WEntities.s3 + com.wiris.util.xml.WEntities.oldWebeq;
+com.wiris.util.xml.WXmlUtils.WHITESPACE_COLLAPSE_REGEX = new EReg("[ \\t\\n\\r]{2,}","g");
 com.wiris.util.xml.WXmlUtils.entities = null;
 com.wiris.util.xml.XmlSerializer.MODE_READ = 0;
 com.wiris.util.xml.XmlSerializer.MODE_WRITE = 1;

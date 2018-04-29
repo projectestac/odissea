@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="question/type/ordering/db" VERSION="2007021402" COMMENT="XMLDB file for Moodle question/type/ordering">
+  <TABLES>
+    <TABLE NAME="qtype_ordering_options" COMMENT="Options for ordering questions">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="questionid"/>
+        <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="layouttype"/>
+        <FIELD NAME="layouttype" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="questionid" NEXT="selecttype"/>
+        <FIELD NAME="selecttype" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="layouttype" NEXT="selectcount"/>
+        <FIELD NAME="selectcount" TYPE="int" LENGTH="4" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="selecttype" NEXT="gradingtype"/>
+        <FIELD NAME="gradingtype" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="selectcount" NEXT="showgrading"/>
+        <FIELD NAME="showgrading" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="gradingtype" NEXT="correctfeedback"/>
+        <FIELD NAME="correctfeedback" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="showgrading" NEXT="correctfeedbackformat"/>
+        <FIELD NAME="correctfeedbackformat" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="correctfeedback" NEXT="incorrectfeedback"/>
+        <FIELD NAME="incorrectfeedback" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="correctfeedbackformat" NEXT="incorrectfeedbackformat"/>
+        <FIELD NAME="incorrectfeedbackformat" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="incorrectfeedback" NEXT="partiallycorrectfeedback"/>
+        <FIELD NAME="partiallycorrectfeedback" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="incorrectfeedbackformat" NEXT="partiallycorrectfeedbackformat"/>
+        <FIELD NAME="partiallycorrectfeedbackformat" TYPE="int" LENGTH="2" NOTNULL="true" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="partiallycorrectfeedback"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="Primary key for question_ordering" NEXT="question"/>
+        <KEY NAME="question" TYPE="foreign-unique" FIELDS="questionid" REFTABLE="question" REFFIELDS="id" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -9,6 +9,7 @@ function message_notifier_count_unread_messages(){
                      JOIN {message_working} mw ON m.id = mw.unreadmessageid
                      JOIN {message_processors} p ON mw.processorid = p.id
                     WHERE m.useridto = :userid
+                      AND m.useridfrom > 0
                       AND p.name='popup'";
     return $DB->count_records_sql($messagesql, array('userid' => $USER->id));
 }
@@ -23,6 +24,7 @@ function message_notifier_get_messages($limit = 10){
                      JOIN {message_working} mw ON m.id = mw.unreadmessageid
                      JOIN {message_processors} p ON mw.processorid = p.id
                     WHERE m.useridto = :userid
+                      AND m.useridfrom > 0
                       AND p.name='popup'";
     return $DB->get_records_sql($messagesql, array('userid' => $USER->id), 0, $limit);
 }

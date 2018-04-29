@@ -37,4 +37,5 @@ $string['levelgroup'] = 'Niveau de note et définition';
 $string['levels'] = 'Niveaux';
 $string['mustbeunique'] = 'Les niveaux de note doivent être uniques au sein d\'un critère';
 $string['mustchooseone'] = 'Vous devez sélectionner un de ces éléments';
+$string['mustdefinelevel'] = 'Au moins un niveau est requis';
 $string['pluginname'] = 'Critères';

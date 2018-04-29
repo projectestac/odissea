@@ -214,10 +214,7 @@ $string['glossary:managecomments'] = 'Commentaren beheren';
 $string['glossary:manageentries'] = 'Items beheren';
 $string['glossary:rate'] = 'Items beoordelen';
 $string['glossarytype'] = 'Type woordenlijst';
-$string['glossarytype_help'] = '<p>Het woordenlijstsysteem maakt het mogelijk om definities van de secundaire woordenlijsten naar
-de hoofdwoordenlijst van deze cursus over te hevelen. Om dit te doen moet je de hoofdwoordenlijst specifiëren. </p>
-<p>Merk op dat je slechts één hoofdwoordenlijst per cursus kan hebben.</p>
-<p>Voor Moodle 1.7 konden enkel leraren de hoofdwoordenlijst bewerken. In Moodle 1.7 en later kun je dit aanpassen door wijzigingen te maken in de interface voor het overschrijven van rollen voor je woordenlijst.</p>';
+$string['glossarytype_help'] = 'Een hoofdwoordenlijst is een woordenlijst waarin items van secundaire woordenlijsten kunnen geïmporteerd worden. Als het importeren van woordenlijstitems niet nodig is, dan mogen alle woordenlijsten in de cursus secundaire woordenlijsten zijn.';
 $string['glossary:view'] = 'Woordenlijsten bekijken';
 $string['glossary:viewallratings'] = 'Bekijk alle ruwe beoordelingsresultaten';
 $string['glossary:viewanyrating'] = 'Bekijk de totalen van de beoordelingsresultaten';

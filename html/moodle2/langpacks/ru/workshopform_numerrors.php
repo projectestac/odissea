@@ -29,6 +29,7 @@ $string['addmoredimensions'] = 'Добавить еще утверждений -
 $string['configgrade0'] = 'Текст по умолчанию, описывающий негативную оценку за утверждение.';
 $string['configgrade1'] = 'Текст по умолчанию, описывающий позитивную оценку за утверждение.';
 $string['dimensioncomment'] = 'Комментарий';
+$string['dimensioncommentfor'] = 'Комментарий к {$a}';
 $string['dimensiondescription'] = 'Описание';
 $string['dimensiongrade'] = 'Оценка';
 $string['dimensionnumber'] = 'Утверждение {$a}';

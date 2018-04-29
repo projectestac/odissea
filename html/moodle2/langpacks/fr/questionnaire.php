@@ -235,6 +235,7 @@ $string['maxtextlength_help'] = 'Pour la question de type Texte court, définiss
 
 Valeurs par défaut : 20 caractères pour la longueur de la boîte [Longueur de la boîte de texte] et 25 caractères pour le texte effectivement saisi par le répondant [Longueur texte max.].';
 $string['messageprovider:message'] = 'Rappel de réponse au questionnaire';
+$string['messageprovider:notification'] = 'Envoi du questionnaire';
 $string['minforcedresponses'] = 'Min. cases à cocher';
 $string['minforcedresponses_help'] = 'Utilisez ces paramètres si vous voulez forcer les étudiants à cocher un minimum de **Min. cases à cocher** ou un maximum de **Max. cases à cocher**.
 Pour les forcer à cocher un nombre exact de cases, tapez la même valeur pour **Min.** et **Max**. Si vous voulez uniquement forcer un minimum ou un maximum de cases cochées, laissez l\'autre valeur à zéro. Ex. pour avoir un minimum de 2 cases cochées sur un total de 5, tapez **Min.** = 2 et laissez **Max.** à 0.
@@ -277,6 +278,8 @@ $string['notavail'] = 'Ce questionnaire n\'est pas encore disponible. Réessayez
 $string['noteligible'] = 'Vous n\'êtes pas autorisé à répondre à ce questionnaire.';
 $string['notemplatesurveys'] = 'Pas de modèle de questionnaire.';
 $string['notenoughscaleitems'] = 'Vous devez entrer au minimum 2 items sur cette échelle.';
+$string['notifications'] = 'Envoyer les notifications de remises';
+$string['notifications_help'] = 'Notifier les rôles ayant la capacité « mod/questionnaire:submissionnotification » lorsqu\'un envoi est faite.';
 $string['notopen'] = 'Ce questionnaire ne sera pas disponible avant le {$a}.';
 $string['notrequired'] = 'Réponse facultative';
 $string['not_started'] = 'pas commencé';
@@ -371,6 +374,7 @@ $string['questionnaire:readallresponseanytime'] = 'Voir toutes les réponses tou
 $string['questionnaire:readallresponses'] = 'Voir les Résumés de réponses en fonction des dates d\'ouverture du questionnaire';
 $string['questionnaire:readownresponses'] = 'Voir ses propres réponses';
 $string['questionnairereport'] = 'Rapport de questionnaire';
+$string['questionnaire:submissionnotification'] = 'Recevoir une notification pour chaque envoi';
 $string['questionnaire:submit'] = 'Répondre à un questionnaire et l\'envoyer';
 $string['questionnaire:view'] = 'Voir un questionnaire';
 $string['questionnaire:viewsingleresponse'] = 'Voir les réponses individuelles';
@@ -396,6 +400,8 @@ $string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'L\'URL vers laquelle l\'utilisateur sera redirigé après avoir répondu au questionnaire.';
 $string['remove'] = 'Supprimer';
 $string['removeallquestionnaireattempts'] = 'Supprimer toutes les réponses à ce questionnaire';
+$string['removenotinuse'] = 'Ce questionnaire dépend d\'un questionnaire Public qui a été effacé.
+Il ne sera plus utilisé et peut donc être supprimé.';
 $string['required'] = 'Réponse obligatoire';
 $string['required_help'] = 'Si vous sélectionnez **Oui**, la question sera obligatoire,
 c\'est-à-dire que le répondant ne pourra pas soumettre le questionnaire sans y avoir répondu.';
@@ -437,6 +443,8 @@ $string['savedbutnotsubmitted'] = 'Les réponses à ce questionnaire ont été s
 $string['savedprogress'] = 'Vos réponses ont été sauvegardées. Vous pouvez reprendre ce questionnaire pour le compléter à tout moment.';
 $string['saveeditedquestion'] = 'Enregistrer la question {$a}';
 $string['savesettings'] = 'Enregistrer les paramètres';
+$string['search:activity'] = 'Questionnaire - information sur l\'activité';
+$string['search:question'] = 'Questionnaire - questions';
 $string['section'] = 'Description';
 $string['sectionbreak'] = '----- Saut de page -----';
 $string['sectionbreak_help'] = '----- Saut de page -----';
@@ -458,6 +466,11 @@ $string['started'] = 'commencé';
 $string['strfdate'] = '%d-%m-%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['subject'] = 'Sujet';
+$string['submissionnotificationhtmlanon'] = 'Il y a un <a href="{$a->submissionurl}">nouvel envoi</a> du questionnaire « {$a->name} ».';
+$string['submissionnotificationhtmluser'] = 'Il y a un <a href="{$a->submissionurl}">nouvel envoi</a> du questionnaire « {$a->name} » par « <a href="{$a->profileurl}">{$a->username}</a> ».';
+$string['submissionnotificationsubject'] = 'Nouvel envoi de questionnaire';
+$string['submissionnotificationtextanon'] = 'Il y a un nouvel envoi ({$a->submissionurl}) du questionnaire « {$a->name} ».';
+$string['submissionnotificationtextuser'] = 'Il y a un nouvel envoi ({$a->submissionurl}) du questionnaire « {$a->name} » par « {$a->username} » ({$a->profileurl}).';
 $string['submitoptions'] = 'Options d\'envoi du questionnaire';
 $string['submitpreview'] = 'Soumettre cette prévisualisation';
 $string['submitpreviewcorrect'] = 'Cette soumission serait acceptée comme correctement remplie.';

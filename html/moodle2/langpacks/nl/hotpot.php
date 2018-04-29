@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'verlaten';
+$string['abandonhotpot'] = 'Jouw resultaten tot nu toe worden bewaard, maar je kunt deze activiteit later niet vervolgen of opnieuw beginnen.';
 $string['activitycloses'] = 'Activiteit sluit';
 $string['activitygrade'] = 'Activiteitscijfer';
 $string['activityopens'] = 'Activiteit opent';
@@ -42,9 +43,12 @@ $string['addquizchain_help'] = 'Moeten alle activiteiten in een testenketting to
 Als het bronbestand een **map** is, dan zullen alle herkenbare testen in de map toegevoegd worden aan de cursus om een testenketting te vormen met identieke instellingen.
 
 Als het bronbestand een **unit file** is, zoals een Hot Potatoes masher bestand of index.html, dan zullen te testen die opgelijst zijn in het unit-bestand toegevoegd worden aan de cursus als een testenketting met identieke instellingen.';
+$string['allowpaste'] = 'Sta plakken toe';
+$string['allowpaste_help'] = 'Als deze instelling is geactiveerd, kunnen studenten tekst kopiëren, plakken en slepen naar tekst-input-boxen.';
 $string['allowreview'] = 'Herbekijken toestaan';
 $string['allowreview_help'] = 'Indien ingeschakeld kunnen leerlingen hun testen herbekijken nadat ze gesloten zijn.';
 $string['analysisreport'] = 'Itemanalyse';
+$string['attempted'] = 'Gepoogd';
 $string['attemptlimit'] = 'Limiet aantal pogingen';
 $string['attemptlimit_help'] = 'Het maximale aantal pogingen die een leerling mag proberen met deze HotPot-activiteit.';
 $string['attemptnumber'] = 'Pogingnummer';
@@ -59,6 +63,8 @@ $string['bodystylescolor'] = 'Tekstkleur';
 $string['bodystylesfont'] = 'Lettertypegrootte en -familie';
 $string['bodystylesmargin'] = 'Linker- en rechtermarge';
 $string['cacherecords'] = 'HotPot cache records';
+$string['canrestarthotpot'] = 'Jouw resultaten tot nu toe worden bewaard en je kunt "{$a}" later opnieuw beginnen';
+$string['canresumehotpot'] = 'Jouw resultaten tot nu toe worden bewaard en je kunt "{$a}" later verder gaan';
 $string['checks'] = 'controles';
 $string['checksomeboxes'] = 'Zet vinkjes';
 $string['clearcache'] = 'HotPot cache leegmaken';
@@ -71,6 +77,10 @@ $string['clicktrailreport'] = 'kliksporen';
 $string['closed'] = 'Deze activiteit is gesloten.';
 $string['clues'] = 'Ideeën';
 $string['completed'] = 'Afgewerkt';
+$string['completioncompleted'] = 'Voltooide status is vereist';
+$string['completionmingrade'] = 'Minimaal cijfer is vereist';
+$string['completionpass'] = 'Vereist cijfer om te slagen';
+$string['completionwarning'] = 'Deze velden zijn uitgeschakeld als het hoogste cijfer voor deze activiteit is "Geen cijfer" of de cijferweging is "Geen weging"';
 $string['configbodystyles'] = 'Standaard zullen de Moodle themastijlen de HotPot activiteitsstijlen overschrijven. Je kunt hier opgeven welke HotPot-stijlen voorrang moeten krijgen op de Moodle themastijlen.';
 $string['configenablecache'] = 'Een cache van HotPot-testen bijhouden kan de snelheid van het tonen van testen aan leerlingen gevoelig verhogen.';
 $string['configenablecron'] = 'Geef de uren in jouw tijdszone wanneer het HotPot cron-script mag lopen.';

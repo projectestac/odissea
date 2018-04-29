@@ -62,7 +62,7 @@ $string['duplicate_usernames'] = 'Não foi possível criar um índice nas coluna
 $string['enabled_for_all'] = '(Este serviço foi ativado para todos os servidores).';
 $string['enterausername'] = 'Introduza um nome de utilizador, ou uma lista de nomes do utilizador, separados por vírgulas.';
 $string['error7020'] = 'Este erro ocorre normalmente quando o site externo criou um registo para o seu site com o wwwroot errado; por exemplo, http://oseusite.com em vez de http://www.oseusite.com. Contacte o administrador do site externo, com o wwwroot correto (está definido em config.php) e peça-lhe para atualizar o registo do seu site.';
-$string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada, mas não está assinada, o que é muito surpreendente. É recomendável que submeta uma informação de bug se tal voltar a acontecer (com o máximo de informação possível sobre as versões Moodle em questão, etc.)';
+$string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada, mas não está assinada, o que é muito surpreendente; é recomendável que submeta um ficheiro com informação de bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
 $string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorrendo a todas as chaves que tem registadas para o seu site. Todas elas falharam. Pode tentar resolver este problema, redefinindo as chaves com o site remoto, manualmente. Este problema não deve acontecer excepto se esteve sem comunicar com o site externo durante alguns meses.';
 $string['error7024'] = 'Enviou uma mensagem não encriptada para o site remoto, mas este não aceita mensagens não encriptadas do seu site, o que é surpreendente. É recomendável que submeta uma informação de bug se tal voltar a acontecer (com o máximo de informação possível sobre as versões Moodle em questão, etc.)';
 $string['error7026'] = 'A chave utilizada para assinar a sua mensagem é diferente da chave que o servidor remoto tem registada para o seu site. Além disso, o servidor remoto tentou obter a sua chave atual e não conseguiu. Redefina as chaves com o servidor remoto, manualmente, e tente de novo.';
@@ -136,7 +136,7 @@ $string['mnetidprovidermsg'] = 'Deverá poder autenticar-se no seu fornecedor {$
 $string['mnetidprovidernotfound'] = 'Não foi possível encontrar mais informação.';
 $string['mnetpeers'] = 'Pares';
 $string['mnetservices'] = 'Serviços';
-$string['mnet_session_prohibited'] = 'Utilizadores do seu servidor doméstico não têm permissão para navegar para $a.';
+$string['mnet_session_prohibited'] = 'Utilizadores do seu servidor doméstico não têm permissão para navegar para {$a}.';
 $string['mnetsettings'] = 'Definições da rede Moodle';
 $string['moodle_home_help'] = 'O caminho para a página principal do Moodle no servidor externo. Exemplo: /moodle/';
 $string['name'] = 'Nome';
@@ -160,7 +160,7 @@ $string['nosuchservice'] = 'O serviço RPC não está a correr neste servidor.';
 $string['nosuchtransport'] = 'Não existe nenhum transporte com esse ID.';
 $string['notBASE64'] = 'Esta string não está com formato de codificação Base64. Não pode ser uma chave válida.';
 $string['notenoughidpinfo'] = 'O seu fornecedor de identidade não está a fornecer informação suficiente para que seja possível criar a sua conta localmente.';
-$string['not_in_range'] = 'O endereço de IP &nbsp;<code>$a</code>&nbsp; não representa um servidor válido de confiança.';
+$string['not_in_range'] = 'O endereço de IP &nbsp;<code>{$a}</code>&nbsp; não representa um servidor válido de confiança.';
 $string['notinxmlrpcserver'] = 'Tentar aceder ao cliente externo da Rede Moodle, mas não durante a execução XMLRPC do servidor';
 $string['notmoodleapplication'] = 'AVISO: Esta não é uma aplicação Moodle, pelo que alguns métodos de inspeção podem não funcionar corretamente.';
 $string['notPEM'] = 'Esta chave não pode ser utilizada porque não está em formato PEM.';
@@ -244,7 +244,7 @@ $string['trustedhostsexplain'] = '<p> O mecanismo de servidores de confiança pe
 Esta opção está disponível para que scripts controlem o comportamento de Moodle e pode ser muito perigoso ativá-la. Se tem dúvidas, mantenha-a desativada.</p>
 Esta opção<strong> não</strong> é necessária para o funcionamento da rede Moodle.</p>
 <p>Para a ativar, introduza uma lista de endereços ou redes IP, uma em cada linha.
-Alguns exemplos: :</p>localhost: :<br />127.0.0.1<br /> localhost (com um bloco de rede)):<br />127.0.0.1/32<br />
+Alguns exemplos: :</p>localhost: :<br />127.0.0.1<br /> localhost (com um bloco de rede):<br />127.0.0.1/32<br />
 Só o servidor com endereço IP 192.168.0.7:<br />192.168.0.7/32<br />
 Qualquer servidor com um endereço de IP entre 192.168.0.1 e 192.168.0.255:<br />192.168.0.0/24<br />
 Qualquer servidor: <br />192.168.0.0/0<br />

@@ -7,17 +7,9 @@ class com_wiris_quizzes_service_PhpServiceProxy {
 		$proxy->doPost();
 	}
 	
-	private function getReferer() {
-		$referer = ((!empty($_SERVER['HTTPS']))?'https://':'http://') . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
-		if(isset($_SERVER['QUERY_STRING'])) {
-			$referer .= '?' . $_SERVER['QUERY_STRING'];
-		}
-		return $referer;
-	}
-	
 	private function doPost() {
 		$conf = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
-		$conf->set(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL, $this->getReferer());
+		// In PHP, the referrer is automatically set to the config when the QuizzesBuilder is created.
 		
 		$request = new com_wiris_system_service_HttpRequest();
 		$res = new com_wiris_system_service_HttpResponse();

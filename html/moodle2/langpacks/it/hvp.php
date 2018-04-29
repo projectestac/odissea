@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Azione';
-$string['addedandupdatelibraries'] = '{$a->%new} nuove librerie H5P e {$a->%old} librerie aggiornate.';
 $string['addednewlibraries'] = '{$a->%new} nuove librerie H5P aggiunte.';
 $string['addlibraries'] = 'Aggiungi librerie';
 $string['ajaxfailed'] = 'Caricamento di dati fallito.';
@@ -81,7 +80,6 @@ $string['h5ptitle'] = 'Vai su H5P.org per dare un\'occhiata a ulteriori contenut
 $string['hideadvanced'] = 'Nascondi avanzate';
 $string['hvp:addinstance'] = 'Aggiungere una nuova attività H5P';
 $string['hvp:getcachedassets'] = 'Ottieni le risorse dei contenuti h5p memorizzate in cache';
-$string['hvp:getcontent'] = 'Ottieni/visualizza il contenuto del file H5P nel corso';
 $string['hvp:restrictlibraries'] = 'Limita l\'uso di una libreria H5P';
 $string['hvp:savecontentuserdata'] = 'Salva i dati dell\'utente del contenuto H5P';
 $string['hvp:saveresults'] = 'Salva il risultato del contenuto H5P';

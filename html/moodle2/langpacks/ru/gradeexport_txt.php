@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Оценки экспортированы в формат TXT';
 $string['pluginname'] = 'Текстовый файл';
 $string['timeexported'] = 'Последние загруженные из этого курса';
 $string['txt:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате TXT';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventbookexported'] = 'Boken har exporterats';
 $string['exportimscp:export'] = 'Exportera bok som IMS paket';
 $string['generateimscp'] = 'Skapa IMS CP';
 $string['nochapters'] = 'Inga bokkapitel funna, kan därför inte exportera till IMS CP.';

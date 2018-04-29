@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['component'] = 'Συστατικό';
 $string['edit'] = 'Επεξεργασία';
 $string['enabled'] = 'Ενεργοποιημένο';
+$string['messageinboundhostpass'] = 'Κωδικός πρόσβασης';

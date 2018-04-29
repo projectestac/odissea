@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['completionprogressdetails'] = 'Vorderingsdetails voltooing';
 $string['completionstatus:addinstance'] = 'Voeg een nieuw status blok voor cursusvoltooien toe';
-$string['criteriagroup'] = 'Criteria groep';
+$string['criteriagroup'] = 'Criteriagroep';
 $string['firstofsecond'] = '{$a->first} van {$a->second}';
 $string['pluginname'] = 'Status voltooien cursus';
 $string['requirement'] = 'Vereiste';

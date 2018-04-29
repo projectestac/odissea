@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventbookprinted'] = 'Boken har skrivits ut';
+$string['eventchapterprinted'] = 'Kapitlet har skrivits ut';
 $string['pluginname'] = 'Bok';
 $string['printbook'] = 'Skriv ut hela boken';
 $string['printchapter'] = 'Skriv ut det här kapitlet';

@@ -1,5 +1,8 @@
 # WIRIS Quizzes Commons question type
+### Master Build Status
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_wq.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_wq)
+### Development Build Status
+[![Build Status](https://travis-ci.org/wiris/moodle-qtype_wq.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_wq)
 
 ## Information
 The WIRIS Quizzes question type belongs to the WIRIS Quizzes set of questions which enhances the usual Moodle question types with mathematical functionality.

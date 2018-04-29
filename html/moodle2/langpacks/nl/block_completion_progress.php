@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'nl', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_completion_progress', language 'nl', branch 'MOODLE_32_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,3 +55,26 @@ $string['coursenametoshow'] = 'Cursusnaam die op het dashboard getoond wordt';
 $string['defaultlongbars'] = 'Standaard uiterlijk voor lange kleurenbalken';
 $string['fullname'] = 'Volledige cursusnaam';
 $string['futureNotCompleted_colour'] = '#025187';
+$string['futureNotCompleted_colour_descr'] = 'HTML kleurcode voor toekomstige elementen die nog niet zijn voltooid';
+$string['futureNotCompleted_colour_title'] = 'Kleur toekomstig niet voltooid';
+$string['how_activitiesincluded_works'] = 'Hoe toevoegen van activiteiten werkt';
+$string['how_activitiesincluded_works_help'] = '<p>Standaard worden alle activiteiten met ingestelde activiteitsvoltooiing opgenomen in de balk.</p><p>Je kunt ook handmatig activiteiten selecteren om op te nemen.</p>';
+$string['how_group_works'] = 'Hoe zichtbare groep werkt';
+$string['how_group_works_help'] = '<p>Selecteer een groep om de zichtbaarheid van dit blok tot die groep te beperken.</p>';
+$string['how_longbars_works'] = 'Hoe lange balken worden getoond';
+$string['how_ordering_works'] = 'Hoe sorteren werkt';
+$string['how_selectactivities_works'] = 'Hoe activiteiten opnemen werkt';
+$string['lastonline'] = 'Laatste in cursus';
+$string['mouse_over_prompt'] = 'Ga met muis over de balk of raak deze aan voor informatie.';
+$string['no_activities_message'] = 'Er worden geen activiteiten of bronnen gevolgd. Gebruik configuratie om volgen in te stellen.';
+$string['notCompleted_colour'] = '#C71C22';
+$string['now_indicator'] = 'NU';
+$string['overview'] = 'Overzicht van leerlingen';
+$string['pluginname'] = 'Voortgang voltooiing';
+$string['progress'] = 'Voortgang';
+$string['progressbar'] = 'Voortgang voltooiing';
+$string['shortname'] = 'Korte naam cursus';
+$string['showallinfo'] = 'Toon alle informatie';
+$string['showinactive'] = 'Toon inactieve leerlingen in Overzicht';
+$string['submittednotcomplete_colour'] = '#FFCC00';
+$string['time_expected'] = 'Verwacht';

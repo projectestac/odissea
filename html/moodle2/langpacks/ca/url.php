@@ -41,9 +41,9 @@ $string['displayselect_help'] = 'Aquest paràmetre, juntament amb el tipus de fi
 * Automàtica: se selecciona automàticament la millor opció de visualització.
 * Incrustació: l\'URL es visualitza dins de la pàgina, sota la barra de navegació, junt amb la descripció de l\'URL i els blocs que calgui.
 * Obre: la finestra de navegació només visualitza l\'URL.
-* Finestra emergent: l\'URL es visualitza en una nova finestra del navegador sense menú ni barra d\'adreces.
+* Finestra emergent: l\'URL es visualitza en una finestra nova del navegador sense menú ni barra d\'adreces.
 * Marc: l\'URL es visualitza dins d\'un marc, sota la barra de navegació i la descripció de l\'URL.
-* Finestra nova: l\'URL es visualitza en una nova finestra del navegador amb menú i barra d\'adreces.';
+* Finestra nova: l\'URL es visualitza en una finestra nova del navegador amb menú i barra d\'adreces.';
 $string['externalurl'] = 'URL extern';
 $string['framesize'] = 'Alçada del marc';
 $string['invalidstoredurl'] = 'No es pot visualitzar aquest recurs: l\'URL és invàlid.';

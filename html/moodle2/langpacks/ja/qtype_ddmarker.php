@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreitems'] = 'さらに {no} 件の空白のマーカーを追加する';
+$string['addmoreitems'] = 'さらに {no} 個の空白のマーカーを追加する';
 $string['alttext'] = '代替テキスト';
 $string['answer'] = '答え';
 $string['bgimage'] = '背景イメージ';
-$string['clearwrongparts'] = '間違って置かれたマーカーをイメージのデフォルトスタートポジションに戻す';
+$string['clearwrongparts'] = '間違って置かれたマーカーをイメージの下のデフォルトスタートポジションに戻す';
 $string['coords'] = '座標';
 $string['correctansweris'] = '正解: {$a}';
 $string['draggableimage'] = 'ドラッグ可能イメージ';
@@ -41,15 +41,15 @@ $string['dropbackground'] = 'マーカーをドラッグするための背景イ
 $string['dropzone'] = 'ドロップゾーン {$a}';
 $string['dropzoneheader'] = 'ドロップゾーン';
 $string['dropzones'] = 'ドロップゾーン';
-$string['dropzones_help'] = '座標を入力することによりドラッグゾーンを定義することができます。あなたが入力した場合、上のプレビューがすぐに更新されるため、試行錯誤しながら配置することができます。
+$string['dropzones_help'] = '座標を入力することによりドラッグゾーンを定義することができます。あなたが入力した場合、上のプレビューがすぐに更新されるため試行錯誤しながら配置することができます。
 
 * 円: 中心_x, 中心_y; 半径<br>例えば次のようになります: <code>80, 100; 50</code>
 * 多角形: x1, y1; x2, y2; ...; xn, yn<br>例えば次のようになります: <code>20, 60; 100, 60; 20, 100</code>
 * 長方形: 左, トップ, 幅, 高さ<br>例えば次のようになります: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = '以下のマーカーは正しくないエリアに置かれました: {$a}';
-$string['followingarewrongandhighlighted'] = '次のマーカーは正しくない場所に置かれています : {$a}。ハイライトされたマーカーは正しい場所と一緒に表示されています。<br />許可された場所をハイライトするにはマーカーをクリックしてください。';
+$string['followingarewrongandhighlighted'] = '次のマーカーは正しくない場所に置かれています : {$a}。ハイライトされたマーカーは正しい場所で表示されています。<br />許可された場所をハイライトするにはマーカーをクリックしてください。';
 $string['formerror_nobgimage'] = 'あなたはドラッグ＆ドロップエリアの背景として使用するイメージを選択する必要があります。';
-$string['formerror_noitemselected'] = 'あなたはドロップゾーンを指定しましたが、ゾーンにドラッグする必要のあるマーカーを選択していません。';
+$string['formerror_noitemselected'] = 'あなたはドロップゾーンを指定しましたがゾーンにドラッグする必要のあるマーカーを選択していません。';
 $string['formerror_nosemicolons'] = 'あなたの座標ストリングにはセミコロンがありません。あなたの {$a->shape} の座標は次のように記述される必要があります - {$a->coordsstring}。';
 $string['formerror_onlysometagsallowed'] = 'マーカーのラベルとして「 {$a} 」タグのみ許可されます。';
 $string['formerror_onlyusewholepositivenumbers'] = '形状のxy座標および幅および高さを指定する場合、正の整数のみを使用してください。あなたの {$a->shape} の座標は次のようになります - {$a->coordsstring}。';
@@ -86,7 +86,7 @@ $string['shape_rectangle_coords'] = 'x,y;w,h (x,yは多角形の左上隅の座�
 $string['shape_rectangle_lowercase'] = '長方形';
 $string['showmisplaced'] = '正しいマーカーがドロップされていないドロップゾーンをハイライトする';
 $string['shuffleimages'] = '問題の受験ごとにドラッグアイテムをシャッフルする';
-$string['stateincorrectlyplaced'] = 'どのマーカーが間違って置かれたか示す';
+$string['stateincorrectlyplaced'] = 'どのマーカーが間違って置かれたかを示す';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
 $string['summariseplaceno'] = 'ドロップゾーン {$a}';
 $string['ytop'] = 'トップ';

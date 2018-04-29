@@ -28,17 +28,8 @@ class qtype_multianswerwiris extends qtype_wq {
     public function save_question_options($question) {
         global $DB;
 
-        // Delete old subquestions. The Moodle implementation is somewhat more
-        // efficient because it reuses the questions, but we do that way so we
-        // can call base method.
-
-        $oldidsseq = $DB->get_field('question_multianswer', 'sequence', array('question' => $question->id));
-        if (!empty($oldidsseq)) {
-            $oldids = explode(',', $oldidsseq);
-            foreach ($oldids as $id) {
-                question_delete_question($id);
-            }
-        }
+        // We don't delete old subquestions because it cause
+        // a new ids on BD that throw error on regrade.
         parent::save_question_options($question);
     }
 

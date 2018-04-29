@@ -6,6 +6,35 @@ class com_wiris_quizzes_wrap_QuestionInstanceWrap implements com_wiris_quizzes_a
 		$this->instance = $instance;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function setProperty($name, $value) {
+		try {
+			$this->wrapper->start();
+			$this->instance->setProperty($name, $value);
+			$this->wrapper->stop();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function getProperty($name) {
+		try {
+			$this->wrapper->start();
+			$r = $this->instance->getProperty($name);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function setParameter($name, $value) {
 		try {
 			$this->wrapper->start();

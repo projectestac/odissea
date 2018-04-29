@@ -53,6 +53,7 @@ $string['nomethodforaddinghelpbutton'] = 'Отсутствует метод до
 $string['nonexistentformelements'] = 'Попытка добавить кнопку вызова справки для отсутствующего элемента формы: {$a}';
 $string['noselection'] = 'Ничего не выбрано';
 $string['nosuggestions'] = 'Нет предложений';
+$string['novalue'] = 'Ничего не введено';
 $string['novalueclicktoset'] = 'Нажмите, чтобы ввести текст';
 $string['optional'] = 'Необязательное';
 $string['othersettings'] = 'Другие настройки';

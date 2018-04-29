@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['conditiontitle'] = 'Fält för användarprofil';
 $string['description'] = 'Styr åtkomst baserad på fält i studentenprofilen';
+$string['error_selectfield'] = 'Du måste välja ett profilfält';
+$string['error_setvalue'] = 'Du måste skriva in ett värde';
 $string['op_contains'] = 'innehåller';
 $string['op_doesnotcontain'] = 'innehåller inte';
 $string['op_endswith'] = 'slutar med';

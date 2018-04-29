@@ -71,7 +71,7 @@ $string['completionicons_help'] = 'Das Kästchen an der Seite neben der Aktivit�
 
 Falls ein Kästchen mit gepunktetem Rand zu sehen ist, wird darin automatisch ein Häkchen erscheinen, sobald Sie die Aktivität entsprechend den Trainervorgaben abgeschlossen haben.
 
-Falls ein Kästchen mit durchgezogenem Rand zu sehen ist, können Sie darauf klicken, wenn diese Aktivität Ihrer Meinung nach abgeschlossen ist. (Ein erneuter Klick entfernt das Häkchen wieder, falls Sie Ihre Meinung nachträglich ändern sollten.) Das Häkchen ist optional und bietet eine einfache Möglichkeit, Ihre Fortschritte im Kurs festzuhalten.';
+Falls ein Kästchen mit durchgezogenem Rand zu sehen ist, können Sie es anklicken, wenn diese Aktivität Ihrer Meinung nach abgeschlossen ist. (Ein erneuter Klick entfernt das Häkchen wieder, falls Sie Ihre Meinung nachträglich ändern sollten.)';
 $string['completion_manual'] = 'Abschluss wird manuell markiert';
 $string['completionmenuitem'] = 'Abschluss';
 $string['completion-n'] = 'Nicht abgeschlossen';
@@ -143,11 +143,11 @@ $string['manualselfcompletionnote'] = 'Hinweis: Der Kursabschluss-Block sollte i
 $string['markcomplete'] = 'Abgeschlossen markieren';
 $string['markedcompleteby'] = 'Abgeschlossen markiert von {$a}';
 $string['markingyourselfcomplete'] = 'Selbst abgeschlossen markiert';
-$string['moredetails'] = 'Mehr Details';
+$string['moredetails'] = 'Weitere Details';
 $string['nocriteriaset'] = 'Kein Abschlusskriterium für diesen Kurs vorhanden';
 $string['notcompleted'] = 'Nicht abgeschlossen';
 $string['notenroled'] = 'Sie sind nicht in diesen Kurs eingeschrieben';
-$string['nottracked'] = 'Für Sie läuft aktuell in diesen Kurs keine Abschlussverfolgung';
+$string['nottracked'] = 'Für Sie läuft aktuell in diesem Kurs keine Abschlussverfolgung';
 $string['notyetstarted'] = 'Noch nicht begonnen';
 $string['overallaggregation'] = 'Abschlussbedingungen';
 $string['overallaggregation_all'] = 'Kurs ist beendet, wenn alle Bedingungen zutreffen';

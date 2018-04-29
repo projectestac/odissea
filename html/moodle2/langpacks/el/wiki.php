@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcomment'] = 'Προσθήκη σχολίου';
+$string['attachmentattach'] = 'Προσθήκη ως συνημμένο';
 $string['attachments'] = 'Αυτή η σελίδα περιέχει συνημμένα αρχεία';
 $string['backcomments'] = 'Επιστροφή στα σχόλια';
 $string['backhistory'] = 'Επιστροφή στο ιστορικό';
@@ -65,10 +66,13 @@ $string['save'] = 'Αποθήκευση';
 $string['searchresult'] = 'Αποτελέσματα αναζήτησης:';
 $string['updatedpages'] = 'Ανανεωμένες σελίδες';
 $string['updatedwikipages'] = 'Ανανεωμένες σελίδες Wiki';
+$string['uploadactions'] = 'Ενέργειες';
+$string['uploadfiletitle'] = 'Συνημμένα';
 $string['uploadname'] = 'Όνομα αρχείου';
 $string['version'] = 'Έκδοση';
 $string['view'] = 'Προβολή';
 $string['wiki:addinstance'] = 'Προσθήκη νέου wiki';
+$string['wikiattachments'] = 'Συνημμένα Wiki';
 $string['wiki:createpage'] = 'Δημιουργία νέων σελίδων wiki';
 $string['wiki:editcomment'] = 'Προσθήκη σχολίων στις σελίδες';
 $string['wiki:editpage'] = 'Αποθήκευση σελίδων wiki';

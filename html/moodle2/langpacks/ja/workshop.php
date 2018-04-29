@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aggregategrades'] = '評定を再計算する';
-$string['aggregation'] = '評点合計';
+$string['aggregation'] = '評点総計';
 $string['allocate'] = '提出を割り当てる';
 $string['allocatedetails'] = '期待数: {$a->expected}<br />提出数: {$a->submitted}<br />割り当て数: {$a->allocate}';
 $string['allocation'] = '提出の割り当て';
@@ -35,7 +35,7 @@ $string['allocationdone'] = '割り当て完了';
 $string['allocationerror'] = '割り当てエラー';
 $string['allowedfiletypesforoverallfeedback'] = 'フィードバック添付で許可されたファイルタイプ';
 $string['allowedfiletypesforoverallfeedback_help'] = 'フィードバック添付で許可されたファイルタイプはカンマ区切りのファイル拡張子のリストを入力することにより制限することができます。例えば「mp4, mp3, png, jpg」のようになります。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
-$string['allowedfiletypesforsubmission'] = '送信添付で許可されたファイルタイプ';
+$string['allowedfiletypesforsubmission'] = '提出添付で許可されたファイルタイプ';
 $string['allowedfiletypesforsubmission_help'] = '送信添付で許可されたファイルタイプはカンマ区切りのファイル拡張子のリストを入力することにより制限することができます。例えば「mp4, mp3, png, jpg」のようになります。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
 $string['allsubmissions'] = 'すべての提出 ({$a})';
 $string['alreadygraded'] = '評定済み';
@@ -44,7 +44,7 @@ $string['areainstructauthors'] = '提出のインストラクション';
 $string['areainstructreviewers'] = '評価のインストラクション';
 $string['areaoverallfeedbackattachment'] = '全体フィードバック添付';
 $string['areaoverallfeedbackcontent'] = '全体フィードバックテキスト';
-$string['areasubmissionattachment'] = '提出の添付';
+$string['areasubmissionattachment'] = '提出添付';
 $string['areasubmissioncontent'] = '提出テキスト';
 $string['assess'] = '評価';
 $string['assessedexample'] = '評価済み提出例';
@@ -56,15 +56,15 @@ $string['assessmentby'] = 'by <a href="{$a->url}">{$a->name}</a>';
 $string['assessmentbyfullname'] = '{$a} による評価';
 $string['assessmentbyyourself'] = 'あなたの評価';
 $string['assessmentdeleted'] = '評価の割り当てが解除されました。';
-$string['assessmentend'] = '評価終了日時';
+$string['assessmentend'] = '評価期限';
 $string['assessmentendbeforestart'] = '評価開始日時の前に評価終了日時を指定できません。';
 $string['assessmentenddatetime'] = '評価期限: {$a->daydatetime} ({$a->distanceday})';
 $string['assessmentendevent'] = '{$a} (評価期限)';
 $string['assessmentform'] = '評価フォーム';
-$string['assessmentofsubmission'] = '<a href="{$a->submissionurl}">{$a->submissiontitle}</a>　の <a href="{$a->assessmenturl}">評価</a> ';
+$string['assessmentofsubmission'] = '<a href="{$a->submissionurl}">{$a->submissiontitle}</a> の <a href="{$a->assessmenturl}">評価</a>';
 $string['assessmentreference'] = '参考評価';
 $string['assessmentreferenceconflict'] = 'あなたが参考評価のために提出した提出例を評価することはできません。';
-$string['assessmentreferenceneeded'] = '参考評価を提供するため、あなたはこの提出例を評価する必要があります。提出を評価するには「続ける」ボタンをクリックしてください。';
+$string['assessmentreferenceneeded'] = '参考評価を提供する場合、あなたはこの提出例を評価する必要があります。提出を評価するには「続ける」ボタンをクリックしてください。';
 $string['assessmentsettings'] = '評価設定';
 $string['assessmentstart'] = '評価開始日時';
 $string['assessmentstartdatetime'] = '評価開始日時 {$a->daydatetime} ({$a->distanceday})';
@@ -76,28 +76,28 @@ $string['backtoeditform'] = '編集フォームに戻る';
 $string['byfullname'] = 'by <a href="{$a->url}">{$a->name}</a>';
 $string['byfullnamewithoutlink'] = 'by {$a}';
 $string['calculategradinggrades'] = '評価に対する評点を計算する';
-$string['calculategradinggradesdetails'] = '期待数: {$a->expected}<br />計算数: {$a->calculated}';
+$string['calculategradinggradesdetails'] = '期待数: {$a->expected}<br />算出数: {$a->calculated}';
 $string['calculatesubmissiongrades'] = '提出に対する評点を計算する';
-$string['calculatesubmissiongradesdetails'] = '期待数: {$a->expected}<br />計算数: {$a->calculated}';
+$string['calculatesubmissiongradesdetails'] = '期待数: {$a->expected}<br />算出数: {$a->calculated}';
 $string['chooseuser'] = 'ユーザを選択する ...';
 $string['clearaggregatedgrades'] = 'すべての評点総計をクリアする';
 $string['clearaggregatedgradesconfirm'] = '本当に計算済みの提出に対する評点および評価に対する評点をクリアしてもよろしいですか?';
 $string['clearaggregatedgrades_help'] = '提出に対する評点および評価に対する評点の総計がリセットされます。あなたは成績評価フェースでこれらの評点を最初から再計算することができます。';
 $string['clearassessments'] = '評価をクリアする';
 $string['clearassessmentsconfirm'] = '本当にすべての評価に対する評点をクリアしてもよろしいですか? あなたは自力で情報を元に戻すことができなくなります。また、評価者は割り当てられた提出を再度評価することになります。';
-$string['clearassessments_help'] = '提出に対する計算済み評点および評価に対する計算済み評点がリセットされます。評価フォームに入力された内容は保持されますが、評点を再計算するため、評価者は評価フォームを再度開いて保存する必要があります。';
+$string['clearassessments_help'] = '提出に対する計算済み評点および評価に対する計算済み評点がリセットされます。評価フォームに入力された内容は保持されますが評点を再計算するため評価者は評価フォームを再度開いて保存する必要があります。';
 $string['conclusion'] = '結論';
-$string['conclusion_help'] = '結論は活動の最後に参加者に対して表示されます。';
+$string['conclusion_help'] = '結論は活動の最後に参加者に表示されます。';
 $string['configexamplesmode'] = 'ワークショップ評価例のデフォルトモード';
 $string['configgrade'] = 'ワークショップ提出のデフォルト最大評点';
-$string['configgradedecimals'] = '評点を表示する場合、小数点以後に表示するデフォルトの桁数です。';
+$string['configgradedecimals'] = '評点を表示する場合の小数点以後に表示するデフォルトの桁数です。';
 $string['configgradinggrade'] = 'ワークショップ評価のデフォルト最大評点';
 $string['configmaxbytes'] = 'サイト内ワークショップすべてのデフォルトの最大送信ファイルサイズです (コース制限および他のローカル設定に従います)。';
 $string['configstrategy'] = 'ワークショップのデフォルト評価方法';
 $string['createsubmission'] = 'あなたの送信準備を開始する';
 $string['daysago'] = '{$a} 日前';
 $string['daysleft'] = '残り {$a} 日';
-$string['daystoday'] = '今日';
+$string['daystoday'] = '本日';
 $string['daystomorrow'] = '明日';
 $string['daysyesterday'] = '昨日';
 $string['deadlinesignored'] = 'あなたには時間制限は適用されません。';
@@ -134,14 +134,14 @@ $string['exampleassess'] = '提出例を評価する';
 $string['exampleassessments'] = '評価する提出例';
 $string['exampleassesstask'] = '提出例を評価する';
 $string['exampleassesstaskdetails'] = '期待数: {$a->expected}<br />評価数: {$a->assessed}';
-$string['examplecomparing'] = '提出例評価との比較';
+$string['examplecomparing'] = '提出例の評価との比較';
 $string['exampledelete'] = '提出例を削除する';
 $string['exampledeleteconfirm'] = '本当に次の提出例を削除してもよろしいですか? 提出を削除するには「続ける」ボタンをクリックしてください。';
 $string['exampleedit'] = '提出例を編集する';
 $string['exampleediting'] = '提出例の編集';
 $string['exampleneedassessed'] = 'あなたは最初にすべての提出例を評価する必要があります。';
 $string['exampleneedsubmission'] = '最初にあなたのワークの提出および提出例すべての評価が必要です。';
-$string['examplesbeforeassessment'] = '提出例は自身の提出後に利用することができ、相互評価前に評価する必要があります';
+$string['examplesbeforeassessment'] = '提出例は自身の提出後に利用することができます。また、相互評価前に評価する必要があります';
 $string['examplesbeforesubmission'] = '自身の提出前に提出例を評価する必要があります';
 $string['examplesmode'] = '評価例のモード';
 $string['examplesubmissions'] = '提出例';
@@ -150,7 +150,7 @@ $string['exportsubmission'] = 'このページをエクスポートする';
 $string['feedbackauthor'] = '作成者へのフィードバック';
 $string['feedbackauthorattachment'] = '添付';
 $string['feedbackby'] = '{$a} によるフィードバック';
-$string['feedbackreviewer'] = '評価者に対するフィードバック';
+$string['feedbackreviewer'] = '評価者へのフィードバック';
 $string['feedbacksettings'] = 'フィードバック';
 $string['formataggregatedgrade'] = '{$a->grade}';
 $string['formataggregatedgradeover'] = '<del>{$a->grade}</del><br /><ins>{$a->over}</ins>';
@@ -194,14 +194,14 @@ $string['modulename_help'] = 'ワークショップ活動モジュールでは�
 
 学生はワードプロセッサで処理したドキュメント、スプレッドシートのようなデジタルコンテンツ (ファイル) を提出することができます。また、テキストエディタを使用してフィールドに直接テキストを入力することができます。
 
-提出物は教師によって定義された複数クライテリアの評価フォームを使用して評価されます。相互評価手順および評価フォームの理解は教師から提供される練習提出物および評価例によって練習することができます。学生には1つまたはそれ以上のクラスメートの提出物を評価する機会が与えられます。必要であれば、提出およびレビューを匿名にすることもできます。
+提出物は教師によって定義された複数クライテリアの評価フォームを使用して評価されます。相互評価手順および評価フォームの理解は教師から提供される練習提出物および評価例によって練習することができます。学生には1つまたはそれ以上のクラスメートの提出物を評価する機会が与えられます。必要であれば提出およびレビューを匿名にすることもできます。
 
 ワークショップ活動において学生は2つの評点を取得することになります - 「自分の提出物」に対する評点および「クラスメートの提出物の評価」に対する評点です。両評点は評定表に記録されます。';
 $string['modulenameplural'] = 'ワークショップ';
 $string['mysubmission'] = '私の提出';
 $string['nattachments'] = '提出の最大添付数';
 $string['noexamples'] = 'このワークショップにはまだ提出例がありません。';
-$string['noexamplesformready'] = '提出例を提供する前、あなたは評価フォームを定義する必要があります。';
+$string['noexamplesformready'] = 'あなたは提出例を提供する前に評価フォームを定義する必要があります。';
 $string['nogradeyet'] = '未評価';
 $string['nosubmissionfound'] = 'このユーザの提出はありません。';
 $string['nosubmissions'] = 'このワークショップの提出はまだありません。';
@@ -219,7 +219,7 @@ $string['overallfeedbackmode'] = '全体フィードバックモード';
 $string['overallfeedbackmode_0'] = '無効';
 $string['overallfeedbackmode_1'] = '有効および任意';
 $string['overallfeedbackmode_2'] = '有効および必須';
-$string['overallfeedbackmode_help'] = 'この設定を有効にした場合、評価フォーム下部にテキストフィールドが表示されます。評価者はそこに提出の全体評価を入力、または評価に関する追加的な説明を入力することができます。';
+$string['overallfeedbackmode_help'] = 'この設定を有効にした場合、評価フォーム下部にテキストフィールドが表示されます。評価者はそこに提出の全体評価を入力または評価に関する追加的な説明を入力することができます。';
 $string['page-mod-workshop-x'] = 'すべてのワークショップモジュールページ';
 $string['participant'] = '参加者';
 $string['participantrevierof'] = '参加者がレビューする';
@@ -228,7 +228,7 @@ $string['phaseassessment'] = '評価フェーズ';
 $string['phaseclosed'] = '終了';
 $string['phaseevaluation'] = '成績評価フェーズ';
 $string['phasesetup'] = 'セットアップフェーズ';
-$string['phasesoverlap'] = '提出フェーズと評価フェーズを重ねることはできません。';
+$string['phasesoverlap'] = '提出フェーズおよび評価フェーズを重ねることはできません。';
 $string['phasesubmission'] = '提出フェーズ';
 $string['pluginadministration'] = 'ワークショップ管理';
 $string['pluginname'] = 'ワークショップ';
@@ -262,8 +262,8 @@ $string['strategy'] = '評定方法';
 $string['strategyhaschanged'] = '編集のためにフォームが開かれて以降、ワークショップ評定方法が変更されました。';
 $string['strategy_help'] = '評定方法では使用される評価フォームおよび提出の評定方法を決定します。以下4つのオプションがあります:
 
-* 累積評価 - 指定されたアスペクトに関してコメントおよび評点が与えられます。
-* コメント - 指定されたアスペクトにコメントが与えられますが評点は与えられません。
+* 累積評価 - 指定された状況に関してコメントおよび評点が与えられます。
+* コメント - 指定された状況ににコメントが与えられますが評点は与えられません。
 * エラー数 - 指定された条件に関してコメントおよびyes/no評価が与えられます。
 * ルーブリック - 指定されたクライテリアに関してレベル評価が与えられます。';
 $string['submission'] = '提出';
@@ -284,6 +284,8 @@ $string['submissiongrade'] = '提出に対する評点';
 $string['submissiongrade_help'] = 'この設定では提出されたワークが取得することのできる最大評点を指定します。';
 $string['submissiongradeof'] = '提出に対する評点 (最大 {$a})';
 $string['submissionlastmodified'] = '最終更新日時';
+$string['submissionrequiredcontent'] = 'あなたはテキストを入力するかファイルを追加する必要があります。';
+$string['submissionrequiredfile'] = 'あなたはファイルを追加するかテキストを入力する必要があります。';
 $string['submissionsettings'] = '提出設定';
 $string['submissionsreport'] = 'ワークショップ提出レポート';
 $string['submissionstart'] = '提出開始日時';
@@ -328,11 +330,11 @@ $string['usepeerassessment_desc'] = '学生は他のユーザのワークを評�
 $string['usepeerassessment_help'] = 'この設定を有効にした場合、ユーザには評価するために他のユーザの提出が割り当てられます。また、自分自身の提出に対する評定に加えて評価に対する評定を受け取ります。';
 $string['userdatecreated'] = '提出日時: <span>{$a}</span>';
 $string['userdatemodified'] = '修正日時: <span>{$a}</span>';
-$string['userplan'] = 'ワークショッププランナー';
+$string['userplan'] = 'ワークショッププランナ';
 $string['userplanaccessibilityskip'] = '現在のタスクをスキップする';
 $string['userplanaccessibilitytitle'] = '{$a} フェーズのワークショップタイムライン';
 $string['userplancurrentphase'] = '現在のフェーズ';
-$string['userplan_help'] = 'ワークショッププランナーでは活動のすべてのフェーズおよびタスクごとのフェーズ一覧を表示します。現在のフェーズはハイライトされ完了したタスクにはチェックが表示されます。';
+$string['userplan_help'] = 'ワークショッププランナでは活動のすべてのフェーズおよびタスクごとのフェーズ一覧を表示します。現在のフェーズはハイライトされ完了したタスクにはチェックが表示されます。';
 $string['useselfassessment'] = '自己評価を使用する';
 $string['useselfassessment_desc'] = '学生は自分自身のワークを評価することができます。';
 $string['useselfassessment_help'] = 'この設定を有効にした場合、ユーザには評価するために自分の提出が割り当てられます。また、自分自身の提出に対する評定に加えて評価に対する評定を受け取ります。';

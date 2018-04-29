@@ -29,6 +29,7 @@ $string['allowpermissions'] = 'Atorga permisos al rol d\'usuari autenticat';
 $string['allowpermissionsdescription'] = 'Edita el rol d\'usuari autenticat i permet la capacitat moodle/webservice:createtoken';
 $string['cannotcreatetoken'] = 'La generació automàtica de testimonis no està disponible per a administradors del lloc (han de crear un testimoni manualment)';
 $string['checkpluginconfiguration'] = 'Comprova la configuració del connector';
+$string['clickheretolaunchtheapp'] = 'Feu clic aquí si l\'app no s\'obre automàticament';
 $string['enableadditionalservice'] = 'Activa el servei Característiques addicionals de Moodle Mobile';
 $string['enableadditionalservicedescription'] = 'Cal activar aquest servei.';
 $string['local_mobiledescription'] = 'Connector que amplia les característiques dels serveis de Moodle Mobile';

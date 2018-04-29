@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerno'] = '答え {$a}';
-$string['cannotchangeamissingqtype'] = 'あなたは穴埋め問題に関して、変更することはできません。';
+$string['cannotchangeamissingqtype'] = 'あなたは穴埋めタイプの問題を変更することはできません。';
 $string['deletedquestion'] = '穴埋め問題';
-$string['deletedquestiontext'] = '問題が見つからないため、表示することはできません。';
+$string['deletedquestiontext'] = '問題が見つからないため表示することはできません。';
 $string['missing'] = 'このシステムにインストールされていない問題タイプ';
 $string['missingqtypewarning'] = '現在、この問題タイプはシステムにインストールされていません。あなたはこの問題に関して何もすることはできません。';
 $string['pluginname'] = 'タイプ不明';
 $string['pluginnameadding'] = 'このシステムにインストールされていない問題タイプの追加';
 $string['pluginnameediting'] = 'このシステムにインストールされていない問題タイプの編集';
-$string['warningmissingtype'] = '<b>この問題タイプは、あなたのMoodleにインストールされていません。<br />Moodle管理者にご連絡ください。</b>';
+$string['warningmissingtype'] = '<b>この問題タイプはあなたのMoodleにまだインストールされていません。<br />Moodle管理者にご連絡ください。</b>';

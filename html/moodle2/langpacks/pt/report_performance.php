@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['check_backup'] = 'Cópia de segurança automática';
 $string['check_backup_comment_disable'] = 'O desempenho pode ser afetado durante a execução das cópias de segurança. Se ativar esta opção, note que as cópias de segurança devem ser agendadas para os períodos de menor atividade do servidor.';
 $string['check_backup_comment_enable'] = 'O desempenho pode ser afetado durante a execução das cópias de segurança. As cópias de segurança devem ser agendadas para os períodos de menor atividade do servidor.';
-$string['check_backup_details'] = 'Ativar a realização de cópias de segurança automáticas irá criar automaticamente no servidor, e à hora que especificou, arquivos de todas as disciplinas. <p<Durante este processo, serão consumidos mais recursos e isto poderá afetar o desempenho.<p/>';
+$string['check_backup_details'] = '<p>Ativar a realização de cópias de segurança automáticas irá criar automaticamente no servidor, e à hora que especificou, arquivos de todas as disciplinas. <p<Durante este processo, serão consumidos mais recursos e isto poderá afetar o desempenho.<p/>';
 $string['check_cachejs_comment_disable'] = 'Se ativar esta opção, o desempenho do carregamento das páginas será melhorado.';
 $string['check_cachejs_comment_enable'] = 'Se desativar esta opção, o carregamento das páginas poderá ser mais lento.';
 $string['check_cachejs_details'] = 'A caching e compressão de Javascript melhora muito o desempenho do carregamento da página. É altamente recomendável para sites de produção.';

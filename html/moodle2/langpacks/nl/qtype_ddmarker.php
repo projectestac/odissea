@@ -43,9 +43,9 @@ $string['dropzoneheader'] = 'Neerzetzones';
 $string['dropzones'] = 'Neerzetzones';
 $string['dropzones_help'] = 'De neerzetzones worden gedefinieerd door coördinaten te typen. Terwijl je typt wordt bovenstaand voorbeeld onmiddellijk aangepast, zodat je dingen kunt positioneren door te proberen en aan te passen.
 
-* Cirkel: centre_x, centre_y; radius<br>bijvoorbeeld: <code>80, 100; 50</code>
+* Cirkel: middelpunt_x, middelpunt_y; straal<br>bijvoorbeeld: <code>80, 100; 50</code>
 * Polygoon: x1, y1; x2, y2; ...; xn, yn<br>bijvoorbeeld: <code>20, 60; 100, 60; 20, 100</code>
-* Rechthoek: links, boven, breedte, hoogte<br>bijvoorbeeld: <code>20, 60; 80, 40</code>';
+* Rechthoek: x linkerbovenhoek, y linkerbovenhoek ; breedte, hoogte<br>bijvoorbeeld: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Volgende woorden staan in de foute zone: {$a}';
 $string['followingarewrongandhighlighted'] = 'Volgende woorden zijn fout geplaatst:  {$a}. De oplichtende woorden worden nu getoond met de juiste parameters.<br /> Klik op het woord om de toegestane zone aan te geven.';
 $string['formerror_nobgimage'] = 'Je moet een afbeelding selecteren om als achtergrond te gebruiken in de zone voor slepen en neerzetten.';

@@ -25,20 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über den Abschlussstatus einer anderen Aktivität steuern';
+$string['description'] = 'Zugriff über den Abschluss einer Aktivität steuern';
 $string['error_selectcmid'] = 'Sie müssen eine Aktivität für die Zugriffssteuerung auswählen.';
+$string['error_selectcmidpassfail'] = 'Sie müssen eine Aktivität auswählen, für die die Abschlussvoraussetzung "Bewertung notwendig" gesetzt ist.';
 $string['label_cm'] = 'Aktivität oder Material';
 $string['label_completion'] = 'Erforderlicher Abschlussstatus';
 $string['missing'] = '(Fehlende Aktivität)';
-$string['option_complete'] = 'muss als abgeschlossen markiert sein';
-$string['option_fail'] = 'darf nicht bestanden sein';
-$string['option_incomplete'] = 'darf nicht als abgeschlossen markiert sein';
-$string['option_pass'] = 'muss bestanden sein';
+$string['option_complete'] = 'muss abgeschlossen sein';
+$string['option_fail'] = 'muss abgeschlossen und gescheitert sein';
+$string['option_incomplete'] = 'darf nicht abgeschlossen sein';
+$string['option_pass'] = 'muss abgeschlossen und bestanden sein';
 $string['pluginname'] = 'Voraussetzung: Aktivitätsabschluss';
-$string['requires_complete'] = 'Die Aktivität <strong>{$a}</strong> ist als vollständig markiert';
-$string['requires_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist vollständig und gescheitert';
-$string['requires_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist vollständig und bestanden';
-$string['requires_incomplete'] = 'Die Aktivität <strong>{$a}</strong> ist unvollständig';
-$string['requires_not_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist nicht vollständig und gescheitert';
-$string['requires_not_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist nicht vollständig und bestanden';
+$string['requires_complete'] = 'Die Aktivität <strong>{$a}</strong> ist als abgeschlossen markiert';
+$string['requires_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist abgeschlossen und gescheitert';
+$string['requires_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist abgeschlossen und bestanden';
+$string['requires_incomplete'] = 'Die Aktivität <strong>{$a}</strong> ist nicht abgeschlossen';
+$string['requires_not_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist nicht abgeschlossen und gescheitert';
+$string['requires_not_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist nicht abgeschlossen und bestanden';
 $string['title'] = 'Aktivitätsabschluss';

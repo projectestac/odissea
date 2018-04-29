@@ -37,6 +37,7 @@ $string['eventuserreportviewed'] = 'Gebruikerslograpport bekeken';
 $string['logsformat'] = 'Log-opmaak';
 $string['log:view'] = 'Bekijk cursus logs';
 $string['log:viewtoday'] = 'Bekijk logs van vandaag';
+$string['nocapability'] = 'Geen toegang tot log-rapport van gebruiker';
 $string['nologreaderenabled'] = 'Geen loglezer ingeschakeld';
 $string['origin'] = 'Bron';
 $string['other'] = 'Andere';

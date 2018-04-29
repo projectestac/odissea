@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = '操作';
-$string['addedandupdatelibraries'] = '新しい {$a->%new} 個のH5Pライブラリが追加され古い {$a->%old} 個は更新されました。';
 $string['addednewlibraries'] = '新しい {$a->%new} 個のH5Pライブラリが追加されました。';
 $string['addlibraries'] = 'ライブラリを追加';
 $string['ajaxfailed'] = 'データの読み込みに失敗しました。';
@@ -108,7 +107,6 @@ $string['hubisdisableduploadlibraries'] = 'この問題が解決されるまで�
 $string['hubsettingsheader'] = 'コンテンツタイプ';
 $string['hvp:addinstance'] = '新しいH5P活動を追加';
 $string['hvp:getcachedassets'] = 'キャシュされたH5Pコンテンツアセットを取得';
-$string['hvp:getcontent'] = 'コース内のH5Pファイルのコンテンツを取得/表示';
 $string['hvp:getexport'] = 'コース内のH5Pから出力ファイルを取得';
 $string['hvp:installrecommendedh5plibraries'] = '推奨されるH5Pライブラリをインストール';
 $string['hvp:restrictlibraries'] = 'H5Pライブラリを制限';

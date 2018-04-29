@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'journal', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['editingends'] = 'Período de edição termina';
 $string['entries'] = 'Entradas';
 $string['entry'] = 'Entrada';
 $string['evententriesviewed'] = 'Entradas de diário visualizadas';
+$string['evententrycreated'] = 'Entrada de diário criada';
 $string['evententryupdated'] = 'Entrada de diário atualizada';
 $string['eventfeedbackupdated'] = 'Comentários do diário atualizados';
 $string['eventjournalcreated'] = 'Diário criado';
@@ -58,19 +59,23 @@ $string['mailsubject'] = 'Feedback do diário';
 $string['modulename'] = 'Diário';
 $string['modulename_help'] = 'A atividade de diário permite aos professores obter feedback dos alunos sobre um tópico específico';
 $string['modulenameplural'] = 'Diários';
+$string['needsregrade'] = 'A entrada foi modificada desde que o último comentário foi guardado.';
 $string['newjournalentries'] = 'Novas entradas de diário';
 $string['nodeadline'] = 'Sempre aberto';
 $string['noentriesmanagers'] = 'Não existem professores';
 $string['noentry'] = 'Sem entrada';
 $string['noratinggiven'] = 'Não foi dada classificação';
-$string['notopenuntil'] = 'Este diário não será aberto até';
+$string['notopenuntil'] = 'Este diário apenas será aberto em';
 $string['notstarted'] = 'Ainda não iniciou este diário';
 $string['overallrating'] = 'Classificação geral';
-$string['pluginadministration'] = 'Administração do módulo diário';
+$string['pluginadministration'] = 'Administração do módulo Diário';
 $string['pluginname'] = 'Diário';
 $string['rate'] = 'Classificação';
 $string['removeentries'] = 'Remover todas as entradas';
+$string['removemessages'] = 'Apagar todas as entradas';
 $string['saveallfeedback'] = 'Guardar todo o meu feedback';
+$string['search:activity'] = 'Diário - informação da atividade';
+$string['search:entry'] = 'Diário - entradas';
 $string['showoverview'] = 'Mostrar visão geral do diário no meu moodle';
 $string['showrecentactivity'] = 'Mostrar atividade recente';
 $string['startoredit'] = 'Iniciar ou editar a minha entrada de diário';

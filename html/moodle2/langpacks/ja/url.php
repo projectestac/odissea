@@ -27,16 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = '変数を選択する ...';
 $string['clicktoopen'] = 'リソースを開くには {$a}  リンクをクリックしてください:';
-$string['configdisplayoptions'] = '利用可にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
-$string['configframesize'] = 'フレーム内にウェブページやアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
+$string['configdisplayoptions'] = '利用可能にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
+$string['configframesize'] = 'フレーム内にウェブページまたはアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
 $string['configrolesinparams'] = 'ローカライズされたロール名を利用可能なパラメータ変数リストに含みたい場合、有効にしてください。';
-$string['configsecretphrase'] = 'このシークレットフレーズはサーバにパラメータとして送信するための暗号コード値の生成に使用されます。暗号コードはcurrent_users IPアドレスとシークレットワードを結びつけてmd5により生成されます。例) code = md5(IP.secretphrase)。IPアドレスを変更できるため、またしばしば異なるコンピュータで共有できるため、これは信頼できることではない点に留意してください。';
+$string['configsecretphrase'] = 'このシークレットフレーズはサーバにパラメータとして送信するための暗号コード値の生成に使用されます。暗号コードはcurrent_users IPアドレスとシークレットワードを結びつけてmd5により生成されます。例) code = md5(IP.secretphrase)。IPアドレスを変更できたり異なるコンピュータで共有できるため、これは信頼できることではない点に留意してください。';
 $string['contentheader'] = 'コンテンツ';
 $string['createurl'] = 'URLを作成する';
 $string['displayoptions'] = '利用可能な表示オプション';
 $string['displayselect'] = '表示';
-$string['displayselectexplain'] = '表示タイプを選択してください。残念ですが、すべてのタイプがすべてのURLに適しているということではありません。';
-$string['displayselect_help'] = 'URLファイルタイプおよびブラウザが埋め込みを許可するかどうかも含めて、この設定ではURLがどのように表示されるか決定します。以下のオプションを含みます:
+$string['displayselectexplain'] = '表示タイプを選択してください。残念ですがすべてのタイプがすべてのURLに適しているということではありません。';
+$string['displayselect_help'] = 'URLファイルタイプおよびブラウザが埋め込みを許可するかどうかも含めてこの設定ではURLがどのように表示されるか決定します。以下のオプションを含みます:
 
 * 自動- 選択されたURLタイプを自動的に検出する最良の表示オプションです。
 * 埋め込み - URLはナビゲーションバーの下にURL説明およびブロックと共に表示されます。
@@ -46,7 +46,7 @@ $string['displayselect_help'] = 'URLファイルタイプおよびブラウザ�
 * 新しいウィンドウ - URLは新しいウィンドウ内にメニューおよびアドレスバーと共に表示されます。';
 $string['externalurl'] = '外部URL';
 $string['framesize'] = 'フレーム高';
-$string['invalidstoredurl'] = 'URLが無効のため、このリソースを表示できません。';
+$string['invalidstoredurl'] = 'URLが無効のためこのリソースを表示できません。';
 $string['invalidurl'] = '入力されたURLが無効です。';
 $string['modulename'] = 'URL';
 $string['modulename_help'] = 'URLモジュールにおいて教師はコースリソースとしてウェブリンクを提供することができます。ドキュメントまたはイメージのようにオンライン上にある無料のコンテンツをリンクすることができます。URLはウェブサイトのホームページ (トップページ) である必要はありません。特定のウェブページのURLはコピー＆ペーストすることができます。また、教師はファイルピッカを使用してFlickr、YouTubeまたはWikimedia (サイト内でどのリポジトリが有効にされているかに依存します) からリンクを選択することができます。
@@ -56,7 +56,7 @@ $string['modulename_help'] = 'URLモジュールにおいて教師はコース�
 テキストエディタをとおしてURLでは他のリソースまたは活動タイプを追加できることに留意してください。';
 $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'すべてのURLモジュールページ';
-$string['parameterinfo'] = '&parameter=変数';
+$string['parameterinfo'] = '&amp;parameter=変数';
 $string['parametersheader'] = 'URL変数';
 $string['parametersheader_help'] = 'いくつかの内部Moodle変数が自動的にURLに付加されます。あなたの変数名をテキストボックスに入力した後、必要なマッチング変数を選択してください。';
 $string['pluginadministration'] = 'URLモジュール管理';
@@ -66,7 +66,7 @@ $string['popupheightexplain'] = 'ポップアップウィンドウのデフォ�
 $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
 $string['printintro'] = 'URL説明を表示する';
-$string['printintroexplain'] = 'コンテンツの下にURL説明を表示しますか? この設定を有効にした場合でも、いくつかの表示タイプでは説明を表示することができません。';
+$string['printintroexplain'] = 'コンテンツの下にURL説明を表示しますか? この設定を有効にした場合でもいくつかの表示タイプでは説明を表示することができません。';
 $string['rolesinparams'] = 'パラメータにロール名を含む';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'サーバURL';

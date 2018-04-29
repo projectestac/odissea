@@ -25,26 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmquestionsaveasedited'] = '問題を編集済みとして保存することを承認します。';
+$string['confirmquestionsaveasedited'] = '私は問題を編集済みとして保存することを承認します。';
 $string['confirmsave'] = '{$a} を確認して保存する';
 $string['correctanswer'] = '正解';
 $string['correctanswerandfeedback'] = '正解およびフィードバック';
 $string['decodeverifyquestiontext'] = '問題テキストをデコードおよび確認する';
 $string['layout'] = 'レイアウト';
-$string['layouthorizontal'] = 'ラジオボタンの水平行';
-$string['layoutmultiple_horizontal'] = 'チェックボックスの横の行';
+$string['layouthorizontal'] = 'ラジオボタンの横の列';
+$string['layoutmultiple_horizontal'] = 'チェックボックスの横の列';
 $string['layoutmultiple_vertical'] = 'チェックボックスの縦のカラム';
 $string['layoutselectinline'] = 'テキスト内のインラインのドロップダウンメニュー';
 $string['layoutundefined'] = 'レイアウト未定義';
-$string['layoutvertical'] = 'ラジオボタンの垂直カラム';
+$string['layoutvertical'] = 'ラジオボタンの縦のカラム';
 $string['nooptionsforsubquestion'] = '問題部分 # {$a->sub} のオプションを取得できません (question->id={$a->id})。';
-$string['noquestions'] = 'Cloze (穴埋め問題) 「<strong>{$a}</strong>」に問題が含まれていません。';
+$string['noquestions'] = 'Cloze (穴埋め問題) 「 <strong>{$a}</strong> 」に問題が含まれていません。';
 $string['pleaseananswerallparts'] = '問題のすべての部分に答えてください。';
-$string['pluginname'] = 'Cloze (穴埋め問題)';
+$string['pluginname'] = '穴埋め問題 (Cloze)';
 $string['pluginnameadding'] = '穴埋め問題 (Cloze) の追加';
 $string['pluginnameediting'] = 'Cloze (穴埋め問題) の編集';
 $string['pluginname_help'] = '穴埋め問題 (Cloze) では多肢選択問題および記述問題のような問題を一連のテキストの中に埋め込むことができます。';
-$string['pluginnamesummary'] = 'このタイプの問題は非常に柔軟性がありますが、埋め込み式の多肢選択問題、記述問題および数値時問題を作成することのできる、特別なコードを含んだテキストを入力する必要があります。';
+$string['pluginnamesummary'] = 'このタイプの問題は非常に柔軟性がありますが埋め込み式の多肢選択問題、記述問題および数値時問題を作成することのできる特別なコードを含んだテキストを入力する必要があります。';
 $string['qtypenotrecognized'] = '不明な問題タイプ {$a} です。';
 $string['questiondefinition'] = '問題定義';
 $string['questiondeleted'] = '問題削除';
@@ -54,7 +54,7 @@ $string['questioninquiz'] = '<ul>
 <li>問題タイプを変更する (数値問題、記述問題、多肢選択問題)</li>
 </ul>';
 $string['questionnotfound'] = '問題部分 #{$a} の問題が見つかりません。';
-$string['questionsadded'] = '「問題追加」';
+$string['questionsadded'] = '問題追加';
 $string['questionsaveasedited'] = '問題を編集済みとして保存する';
 $string['questionsless'] = 'データベースに保存されている穴埋め問題より {$a} 問少ない ';
 $string['questionsmissing'] = '問題テキストには少なくとも1つの埋め込まれた答えが必要です。';

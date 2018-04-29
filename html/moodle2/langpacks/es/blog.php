@@ -97,6 +97,7 @@ $string['eventblogexternalupdated'] = 'Blog externo actualizado';
 $string['evententryadded'] = 'Añadido entrada de blog';
 $string['evententrydeleted'] = 'Eliminada entrada de blog';
 $string['evententryupdated'] = 'Entrada del blog actualizada';
+$string['eventexternalblogsviewed'] = 'Blogs externos registrados visualizados';
 $string['externalblogcrontime'] = 'Programa de cron del blog externo';
 $string['externalblogdeleteconfirm'] = '¿Dar de baja este blog externo?';
 $string['externalblogdeleted'] = 'Blog externo no registrado';

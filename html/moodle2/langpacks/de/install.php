@@ -41,7 +41,7 @@ $string['cliadminusername'] = 'Admin-Nutzername ';
 $string['clialreadyconfigured'] = 'Die Datei config.php existiert bereits. Bitte benutzen Sie admin/cli/install_database.php, wenn Sie diese Site installieren möchten.';
 $string['clialreadyinstalled'] = 'Die Datei config.php existiert bereits. Bitte benutzen Sie admin/cli/install_database.php, wenn Sie diese Site aktualisieren möchten.';
 $string['cliinstallfinished'] = 'Die Installation wurde erfolgreich abgeschlossen';
-$string['cliinstallheader'] = 'Installation von Moodle {$a} über die Kommandozeile';
+$string['cliinstallheader'] = 'Installation von Moodle {$a} über die Befehlszeile';
 $string['climustagreelicense'] = 'Im nicht-interaktiven Modus müssen Sie der Lizenz über die Option --agree-license zustimmen';
 $string['cliskipdatabase'] = 'Datenbankinstallation überspringen.';
 $string['clitablesexist'] = 'Die Datenbank-Tabellen existieren bereits. Die cli Installation kann nicht fortgesetzt werden.';
@@ -169,9 +169,9 @@ $string['pathswrongadmindir'] = 'Das Admin-Verzeichnis existiert nicht';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension PGSQL mit der PostgreSQL-Datenbank zu kommunizieren. Bitte prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
 $string['phpextension'] = 'PHP-Extension {$a}';
 $string['phpversion'] = 'PHP-Version';
-$string['phpversionhelp'] = '<p>Moodle benötigt mindestens die PHP-Version 5.6.5. oder 7.1 (7.0.x weist einige EInschränkungen auf).</p>
+$string['phpversionhelp'] = '<p>Moodle benötigt mindestens die PHP-Version 5.6.5. oder 7.1 (7.0.x weist einige Einschränkungen auf).</p>
 <p>Sie nutzen im Moment die Version {$a}.</p>
-<p>Sie müssen die PHP-Version aktualisieren oder auf einen Server wechseln, der eine aktuellere Version von PHP nutzt.</p>';
+<p>Sie müssen Ihre PHP-Version aktualisieren oder auf einen Server mit einer neueren PHP-Version wechseln.<br />';
 $string['releasenoteslink'] = 'Um Informationen über diese Moodle-Version zu erhalten, lesen Sie bitte in die Versionshinweise auf {$a}';
 $string['safemode'] = 'Safe Mode';
 $string['safemodeerror'] = 'Die Nutzung von Moodle im Safe Mode kann zu Schwierigkeiten führen.';

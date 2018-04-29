@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Requereix que els alumnes completin (o no completin) una altra activitat.';
 $string['error_selectcmid'] = 'Heu de seleccionar una activitat per a la condició de compleció.';
+$string['error_selectcmidpassfail'] = 'Heu de seleccionar una activitat amb «Qualificació requerida» com a condició de compleció establerta.';
 $string['label_cm'] = 'Activitat o recurs';
 $string['label_completion'] = 'Estat de compleció requerit';
 $string['missing'] = '(Activitat perduda)';

@@ -200,11 +200,14 @@ $string['donotaward'] = 'För nuvarande är det här märket inte aktivt så det
 $string['editsettings'] = 'Redigera inställningar';
 $string['enablebadges'] = 'Aktivera märken';
 $string['error:backpacknotavailable'] = 'Din webbplats är inte tillgänlig via Internet så märken som utfärdats från den här webbplatsen kan inte verifieras av externa ryggsäcks-tjänster.';
+$string['error:badgeawardnotfound'] = 'Detta märke kan inte verifieras. Möjligtvis har det återkallats.';
 $string['error:cannotact'] = 'Kan inte aktivera märket.';
 $string['error:cannotawardbadge'] = 'Kan inte tilldela märke till en användare.';
+$string['error:cannotrevokebadge'] = 'Kan inte återkalla märket från användaren.';
 $string['error:clone'] = 'Kan inte klona märket.';
 $string['error:duplicatename'] = 'Ett märke med det namnet finns redan i systemet.';
 $string['error:externalbadgedoesntexist'] = 'Märke ej hittat';
+$string['error:guestuseraccess'] = 'Du är inloggad som gäst. För att kunna se märken behöver du logga in med ditt användarkonto.';
 $string['error:invalidbadgeurl'] = 'Ogiltigt URL-format för utfärdare av märke';
 $string['error:invalidcriteriatype'] = 'Ogiltig kriterietyp.';
 $string['error:invalidexpiredate'] = 'Förfallodatum måste vara i framtiden.';
@@ -285,19 +288,19 @@ Om du skulle vilja se vilka användare som redan tagit det här märket så kan 
 $string['notconnected'] = 'Inte ansluten';
 $string['nothingtoadd'] = 'Det finns inga tillgängliga kriterier att lägga till.';
 $string['notification'] = 'Notifiera skaparen av märket';
-$string['notification_help'] = 'Den här inställningen administrerar notifieringarna som skickas till skaparen av ett märke för att låta dem veta att märket tilldelats.
+$string['notification_help'] = 'Den här inställningen administrerar notiser som skickas till skaparen av ett märke för att låta dem veta att märket tilldelats.
 
 Följande alternativ är tillgängliga:
 
-* **ALDRIG** – Skicka inte notifieringar.
+* **ALDRIG** – Skicka inte notiser.
 
-* **VARJE GÅNG** – Skicka en notifiering varje gång det här märket tilldelats.
+* **VARJE GÅNG** – Skicka en notiser varje gång det här märket tilldelats.
 
-* **DAGLIGEN** – Skicka notifieringar en gång per dag.
+* **DAGLIGEN** – Skicka notiser en gång per dag.
 
-* **VECKOVIS** – Skicka notifieringar en gång per vecka.
+* **VECKOVIS** – Skicka notiser en gång per vecka.
 
-* **MÅNADSVIS** – Skicka notifieringar en gång per månad.';
+* **MÅNADSVIS** – Skicka notiser en gång per månad.';
 $string['notifydaily'] = 'Dagligen';
 $string['notifyevery'] = 'Varje gång';
 $string['notifymonthly'] = 'Månadsvis';
@@ -306,12 +309,16 @@ $string['numawards'] = 'Det här märket har tilldelats <a href="{$a->link}">{$a
 $string['numawardstat'] = 'Det här märket har tilldelats {$a} användare.';
 $string['overallcrit'] = 'av de valda kriterierna är slutförda.';
 $string['potentialrecipients'] = 'Potentiella mottagare av märket';
+$string['preferences'] = 'Välj inställningar för märken (badges)';
+$string['recipientidentificationproblem'] = 'Kan inte hitta någon mottagare av detta märke bland befintliga användare.';
 $string['recipients'] = 'Mottagare av märket';
+$string['recipientvalidationproblem'] = 'Denna användare kan inte verifieras som mottagare av märket.';
 $string['relative'] = 'Relativt datum';
 $string['requiredcourse'] = 'Åtminstone en kurs måste läggas till kriteriet för uppsättningen kurser.';
 $string['reviewbadge'] = 'Granska kriterier för märke';
 $string['reviewconfirm'] = '<p>Den här åtgärden kommer utföra en kontroll för att se om några användare redan har slutfört alla krav för märket \'{$a}\'.</p>
 <p>Vill du fortsätta?</p>';
+$string['revoke'] = 'Återkalla märke';
 $string['save'] = 'Spara';
 $string['searchname'] = 'Sök via namn';
 $string['selectaward'] = 'Var vänlig välj rollen som du skulle vilja använda för att tilldela det här märket:';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityisscheduledfordeletion'] = 'Borttagning av aktivitet pågår';
 $string['alreadyloggedin'] = 'Du är redan inloggad som {$a} så Du måste logga ut innan Du kan logga in som en annan användare.';
 $string['blockcannotconfig'] = 'Det här blocket stöder inte global konfiguration';
 $string['blockcannotinistantiate'] = 'Svårigheter med att instantiera objekt av typ block';
@@ -240,6 +241,7 @@ $string['groupnotaddederror'] = 'Grupp "{$a}" har inte lagts till';
 $string['groupnotaddedtogroupingerror'] = 'Grupp "{$a->groupname}" inte tillagd till gruppering "{$a->groupingname}"';
 $string['groupunknown'] = 'Grupp {$a} är inte kopplad till den angivna kursen';
 $string['groupusernotmember'] = 'Användaren är inte meddlem av denna grupp.';
+$string['guestcantaccessprofiles'] = 'Gäster kan inte se användarprofiler. Logga in med ditt användarkonto.';
 $string['guestnocomment'] = 'Gäster kan inte skriva inlägg!';
 $string['guestnoeditprofile'] = 'Gästanvändare kan inte redigera sin profil';
 $string['guestnoeditprofileother'] = 'Gästanvändarens profil går inte att redigera';

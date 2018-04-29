@@ -502,6 +502,7 @@ $string['newattemptfail'] = 'Errore: Non è stato possibile avviare un nuovo ten
 $string['newpage'] = 'Salto pagina';
 $string['newpageevery'] = 'Inizia automaticamente una nuova pagina';
 $string['newpage_help'] = 'Per i quiz molto lunghi è utile distribuire le domande su più pagine, limitando il numero delle stesse per ogni pagina. Aggiungendo domande a un quiz, verranno automaticamente aggiunti dei salti-pagina secondo l\'impostazione scelta. In ogni caso i salti-pagina potranno essere liberamente spostati a mano in seguito nella pagina di modifica del quiz.';
+$string['newsectionheading'] = 'Nuova intestazione';
 $string['noanswers'] = 'Non è stata selezionata nessuna risposta!';
 $string['noattempts'] = 'Non è presente nessun tentativo di questo quiz';
 $string['noattemptsfound'] = 'Non sono stati trovati tentativi';
@@ -773,7 +774,7 @@ $string['reviewoptionsheading_help'] = 'Queste impostazioni controllano le infor
 
 **Subito dopo il tentativo**  ha valenza entro i due minuti successivi al completamento del tentativo.
 
-** Più tardi, a quiz ancora aperto" è come il caso precedente ma entro la data di chiusura del quiz.
+** Più tardi, a quiz ancora aperto** è come il caso precedente ma entro la data di chiusura del quiz.
 
 ** Dopo la chiusura del quiz** ha valenza dopo la data di chiusura del quiz. Se il quiz non ha una data di chiusura, questa condizione non sarà mai soddisfatta.';
 $string['reviewoverallfeedback'] = 'Feedback complessivo';

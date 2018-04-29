@@ -102,7 +102,7 @@ $string['configmanydiscussions'] = 'フォーラム1ページあたりに表示�
 $string['configmaxattachments'] = '投稿ごとに許可されるデフォルトの最大添付ファイル数です。';
 $string['configmaxbytes'] = 'すべてのフォーラムの添付ファイルに関するデフォルト最大サイズ (コース制限および他のローカル設定に従います)';
 $string['configoldpostdays'] = '古い投稿を既読とする日数です。';
-$string['configreplytouser'] = 'フォーラムの投稿がメール送信される場合、受信者がフォーラムを介さず個人的に返信できるようメールにユーザのメールアドレスを表示しますか?　「Yes」に設定した場合でもユーザはプロファイルページでメールアドレスを隠すよう設定することができます。';
+$string['configreplytouser'] = 'フォーラムの投稿がメール送信される場合、受信者がフォーラムを介さず個人的に返信できるようメールにユーザのメールアドレスを表示しますか? 「Yes」に設定した場合でもユーザはプロファイルページでメールアドレスを隠すよう設定することができます。';
 $string['configrssarticlesdefault'] = 'RSSフィードが有効にされた場合、デフォルト投稿数 (ディスカッションまたは投稿) を設定してください。';
 $string['configrsstypedefault'] = 'RSSフィードが有効にされた場合、デフォルト活動タイプを設定してください。';
 $string['configshortpost'] = 'この文字長以下の長さ (HTMLは含まない) は短いとみなされます (下記参照)。';
@@ -113,9 +113,9 @@ $string['confirmsubscribe'] = '本当にフォーラム「 {$a} 」を購読し�
 $string['confirmsubscribediscussion'] = '本当にフォーラム「 {$a->forum} 」内のディスカッション「 {$a->discussion} 」を購読してもよろしいですか?';
 $string['confirmunsubscribe'] = '本当にフォーラム「 {$a} 」から購読解除してもよろしいですか?';
 $string['confirmunsubscribediscussion'] = '本当にフォーラム「 {$a->forum} 」内のディスカッション「 {$a->discussion} 」から購読解除してもよろしいですか?';
-$string['couldnotadd'] = '不明なエラーのため、あなたの投稿を追加できませんでした。';
+$string['couldnotadd'] = '不明なエラーのためあなたの投稿を追加できませんでした。';
 $string['couldnotdeletereplies'] = '申し訳ございません、返信済みのため削除できませんでした。';
-$string['couldnotupdate'] = '不明なエラーのため、投稿を更新できませんでした。';
+$string['couldnotupdate'] = '不明なエラーのため投稿を更新できませんでした。';
 $string['crontask'] = 'フォーラムメーリングおよびメンテナンスジョブ';
 $string['delete'] = '削除';
 $string['deleteddiscussion'] = 'ディスカッショントピックが削除されました。';
@@ -263,7 +263,7 @@ $string['forumtype_help'] = 'フォーラムには5つのタイプあります:
 * Q&Aフォーラム - 学生は他の学生の投稿を読む前に自分の考え方を投稿する必要があります。
 * ブログフォーマットで表示される標準フォーラム - 誰でも常に新しいトピックを開始できる開かれたフォーラムです。ディスカッショントピックは1つのページに「このトピックを読む」リンクとして表示されます。
 * 一般利用のための標準フォーラム - 誰でも常に新しいトピックを開始できる開かれたフォーラムです。';
-$string['forum:viewallratings'] = '個々のユーザから与えられた実評価すべてを表示する';
+$string['forum:viewallratings'] = '個別のユーザから与えられた実評価すべてを表示する';
 $string['forum:viewanyrating'] = 'すべてのユーザが受けた評価合計を表示する';
 $string['forum:viewdiscussion'] = 'ディスカッションを表示する';
 $string['forum:viewhiddentimedposts'] = '非表示の時間制限投稿を表示する';
@@ -510,9 +510,7 @@ $string['subscriptionmode_help'] = '参加者がフォーラムを購読する�
 * 任意購読 - 参加者は購読するかどうか選択することができます。
 * 強制購読 - すべての人が購読登録され、購読解除することはできません。
 * 自動購読 - 最初にすべての人が購読登録されますが、いつでも購読解除することができます。
-* 購読停止 - 購読は許可されません。
-
-注意: すべての購読モード変更は将来的にコースに登録するユーザにのみ影響して既存のユーザには影響しません。';
+* 購読停止 - 購読は許可されません。';
 $string['subscriptionoptional'] = '任意購読';
 $string['subscriptions'] = '購読';
 $string['thisforumisthrottled'] = 'このフォーラムでは期限内にあなたが投稿できる投稿数を制限しています - 現在 {$a->blockperiod} で {$a->blockafter} 回に設定されています。';

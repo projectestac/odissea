@@ -106,6 +106,7 @@ $string['badges:deletebadge'] = 'Ta bort märken';
 $string['badges:earnbadge'] = 'Ta märke';
 $string['badges:manageglobalsettings'] = 'Administrera globala inställningar för märken';
 $string['badges:manageownbadges'] = 'Visa och administrera egna tagna märken';
+$string['badges:revokebadge'] = 'Återkalla ett märke från en användare';
 $string['badges:viewawarded'] = 'Visa användare som tagit ett specifikt märke utan att kunna tilldela ett märke';
 $string['badges:viewbadges'] = 'Visa tillgängliga märken utan att ha tagit dem';
 $string['badges:viewotherbadges'] = 'Visa publika märken i andra användares profiler';

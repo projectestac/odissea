@@ -37,4 +37,5 @@ $string['levelgroup'] = 'レベル評価および定義';
 $string['levels'] = 'レベル';
 $string['mustbeunique'] = 'レベル評価はクライテリア内でユニークである必要があります。';
 $string['mustchooseone'] = 'あなたはこれらのアイテムから1つを選択する必要があります。';
+$string['mustdefinelevel'] = '少なくとも1レベル必要です。';
 $string['pluginname'] = 'ルーブリック';

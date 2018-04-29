@@ -57,11 +57,11 @@ Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no se
 É altamente recomendado que esteja a executar a atualização mais recente disponível para a sua versão do Moodle antes de executar a pesquisa de valores predefinidos errados.
 
 Esta funcionalidade não realiza nenhuma ação na BD (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
-$string['confirmcheckforeignkeys'] = 'Esta funcionalidade vai pesquisar por potenciais violações das chaves estrangeiras definidas nos ficheiros install.xml. (O Moodle atualmente não gera restrições de chaves estrangeiras na base de dados, pelo que é possível existir informação inválida.)
+$string['confirmcheckforeignkeys'] = 'Esta funcionalidade irá procurar potenciais violações das chaves estrangeiras definidas no ficheiro install.xml. (O Moodle atualmente não gera restrições de chaves estrangeiras na base de dados, pelo que é possível existir informação inválida.)
 
 É altamente recomendado que esteja a executar a atualização mais recente disponível para a sua versão do Moodle antes de executar a pesquisa de potenciais violações de chaves estrangeiras.
 
-Esta funcionalidade não realiza nenhuma ação na base dados (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
+Esta funcionalidade não realiza qualquer ação na base de dados (apenas lê a partir desta) e, por isso, pode ser executada com segurança em qualquer momento.';
 $string['confirmcheckindexes'] = 'Esta funcionalidade vai procurar índices em falta no seu servidor Moodle, gerando (mas não executando!) automaticamente os comandos SQL necessários para ter tudo atualizado.
 
 Uma vez gerados, pode copiar estes comandos e executá-los de forma segura no seu interface SQL preferido (não se esqueça de fazer uma cópia de segurança dos seus dados antes de executar o comando).
@@ -123,7 +123,7 @@ $string['fieldsusedinkey'] = 'Este campo é usado como chave.';
 $string['filemodifiedoutfromeditor'] = 'Aviso: ficheiro modificado localmente ao usar o Editor XMLDB. Guardar irá substituir alterações locais.';
 $string['filenotwriteable'] = 'Ficheiro sem permissões de escrita';
 $string['fkunknownfield'] = 'Chave estrangeira {$a->keyname} na tabela {$a->tablename} aponta para um ficheiro inexistente {$a->reffield} na tabela referenciada {$a->reftable}.';
-$string['fkunknowntable'] = 'Chave estrangeira {$a->keyname} na tabela {$a->tablename} aponta para uma tabela inexistente {$a->reffield}.';
+$string['fkunknowntable'] = 'Chave estrangeira {$a->keyname} na tabela {$a->tablename} aponta para uma tabela inexistente {$a->reftable}.';
 $string['fkviolationdetails'] = 'Chave externa {$a->keyname} na tabela {$a->tablename} tem {$a->numviolations} violações em {$a->numrows} registos.';
 $string['float2numbernote'] = 'Advertência: Embora os campos "float" sejam 100% suportados pelo XMLDB, é recomendado migrar estes campos para "number".';
 $string['floatincorrectdecimals'] = 'Nº incorreto de decimais para o campo "float"';

@@ -22,13 +22,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['autologinkeygenerationlockout'] = 'Auto-login key generation is blocked because of too many requests within an hour.';
+$string['autologinkeygenerationlockout'] = 'Auto-login key generation is blocked. You need to wait 6 minutes between requests.';
 $string['autologinnotallowedtoadmins'] = 'Auto-login is not allowed for site admins.';
 $string['cachedef_plugininfo'] = 'This stores the list of plugins with mobile addons';
 $string['clickheretolaunchtheapp'] = 'Click here if the app does not open automatically.';
 $string['configmobilecssurl'] = 'A CSS file to customise your mobile app interface.';
 $string['enablesmartappbanners'] = 'Enable Smart App Banners';
-$string['enablesmartappbanners_desc'] = 'This will display a banner promoting the Moodle Mobile app when visiting the site in Mobile Safari.';
+$string['enablesmartappbanners_desc'] = 'If enabled, a banner promoting the mobile app will be displayed when accessing the site using a mobile browser.';
 $string['forcedurlscheme'] = 'If you want to allow only your custom branded app to be opened via a browser window, then specify its URL scheme here; otherwise leave the field empty.';
 $string['forcedurlscheme_key'] = 'URL scheme';
 $string['httpsrequired'] = 'HTTPS required';

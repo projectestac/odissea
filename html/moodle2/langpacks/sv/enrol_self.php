@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['canntenrolearly'] = 'Kursen är öppnar för registrering den {$a}.';
+$string['canntenrollate'] = 'Kursen är stängd för registrering sedan den {$a}.';
 $string['cohortnonmemberinfo'] = 'Endast medlemmar av kohort {$a} kan självregistrera';
 $string['cohortonly'] = 'Endast kohortmedlemmarna';
 $string['cohortonly_help'] = 'Självregistrering kan begränsas till medlemmar av en viss kohort. Observera att om du ändrar den här inställningen har detta ingen effekt på befintliga registreringar.';
@@ -39,8 +41,14 @@ $string['enrolperiod'] = 'Längd på period som användaren kopplas.';
 $string['enrolperiod_desc'] = 'Standard tidslängd som registreringen är giltig (i sekunder). Om satt till noll, kommer registreringens varaktighet att vara obegränsad som standard.';
 $string['enrolstartdate'] = 'Startdatum';
 $string['enrolstartdate_help'] = 'Om aktiverat, kan användare koppla sig till kurssidan med kursnyckeln från och med det angivna datumet.';
+$string['expirymessageenrolledbody'] = 'Hej {$a->user},
+
+din registrering i kursen \'{$a->course}\' upphör den {$a->timeend}. Efter det kommer du inte att kunna logga in till kursen längre.
+
+Om du behöver hjälp eller har frågor är du välkommen att kontakta {$a->enroller}.';
 $string['groupkey'] = 'Använd grupp-kursnycklar.';
 $string['groupkey_desc'] = 'Använd grupp-kursnycklar som förinställning.';
+$string['keyholder'] = 'Du bör ha fått denna kursnyckel från';
 $string['longtimenosee'] = 'Koppla bort inaktiva användare efter';
 $string['longtimenosee_help'] = 'Om användare inte har besökt kurssidan inom angiven tid kopplas de automatiskt bort.';
 $string['maxenrolled'] = 'Maximalt antal kopplade användare';

@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Lägg till sida';
+$string['alldashboardswerereset'] = 'Alla Mitt Moodle-sidor har återställts till standard';
+$string['allprofileswerereset'] = 'Alla profilsidor har återställts till standard';
 $string['defaultpage'] = 'Mitt Moodle standardsida';
 $string['defaultprofilepage'] = 'Standardprofilsida';
 $string['delpage'] = 'Ta bort sida';
@@ -35,3 +37,4 @@ $string['nocourses'] = 'Det finns ingen kursinformation att visa.';
 $string['noguest'] = 'Sidan \'Mitt Moodle\' är inte tillgänglig för gästanvändare.';
 $string['pinblocks'] = 'Konfigurera \'fast placerade\' block för Mitt Moodle.';
 $string['pinblocksexplan'] = 'Alla inställningar för block som Du konfigurerar här kommer att vara synliga (och inte-redigerbara) för varje användare av Moodle på deras \'Mitt Moodle\' skärm.';
+$string['resetpage'] = 'Återställ sidan till standard';

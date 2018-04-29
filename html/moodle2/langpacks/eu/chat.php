@@ -92,7 +92,7 @@ Txata behin erabiltzeko aktibitatea izan daiteke edo hainbat alditan errepika da
 
 Txatak bereziki erabilgarriak dira aurrez aurreko talde-bilerak egin ezin direnean, hala nola
 
-* Online ikastaroetan parte hartzen duten ikasleen artean esperientziak trukatzeko, kokapen geografiko ezberdinetan daudenean.
+* On-line ikastaroetan parte hartzen duten ikasleen artean esperientziak trukatzeko, kokapen geografiko ezberdinetan daudenean.
 * Aldi batez bertaratu ezin den ikasle bat irakaslearekin hitz egiteko besteen maila harrapatzeko.
 * Praktiketan dauden ikasleek euren artean eta irakaslearekin euren esperientziak eztabaidatzeko.
 * Gaztetxoenek etxetik txata erabiltzeko, sare sozialen mundura sarbide kontrolatu (monitorizatu) bat egiteko.

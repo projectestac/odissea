@@ -152,4 +152,4 @@ $string['viewmessageswith'] = 'Visualizar mensagens com {$a}';
 $string['viewnotificationresource'] = 'Ir para: {$a}';
 $string['viewunreadmessageswith'] = 'Ver mensagens não lidas com {$a}';
 $string['writeamessage'] = 'Escrever uma mensagem...';
-$string['you'] = 'Tu:';
+$string['you'] = 'Eu:';

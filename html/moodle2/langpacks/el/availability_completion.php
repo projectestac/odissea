@@ -30,4 +30,5 @@ $string['option_fail'] = 'πρέπει να ολοκληρωθεί με βαθμ
 $string['option_incomplete'] = 'πρέπει να μην ολοκληρωθεί';
 $string['option_pass'] = 'πρέπει να ολοκληρωθεί με βαθμό άνω της βάσης';
 $string['pluginname'] = 'Περιορισμός από την ολοκλήρωση δραστηριότητας';
+$string['requires_complete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ολοκληρωμένη';
 $string['title'] = 'Ολοκλήρωση δραστηριότητας';

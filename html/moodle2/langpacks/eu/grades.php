@@ -43,11 +43,11 @@ $string['aggregatemean'] = 'Kalifikazioen batez bestekoa';
 $string['aggregatemedian'] = 'Kalifikazioen mediana';
 $string['aggregatemin'] = 'Kalifikazio baxuena';
 $string['aggregatemode'] = 'Kalifikazioen moda';
-$string['aggregatenotonlygraded'] = 'Kalifikazio hutsak barne ditu';
-$string['aggregateonlygraded'] = 'Hutsik dauden kalifikazioak bakarrik baztertu';
-$string['aggregateonlygraded_help'] = 'Kalifikazio hutsa kalifikazio-liburuan ez dagoen kalifikazioa da. Oraindik kalifikatu ez den zeregina izan daiteke edo saiakerarik izan ez duen galdetegia, adibidez.
+$string['aggregatenotonlygraded'] = 'Hutsik dauden kalifikazioak barne ditu';
+$string['aggregateonlygraded'] = 'Baztertu hutsik dauden kalifikazioak';
+$string['aggregateonlygraded_help'] = 'Hutsik dagoen kalifikazioa kalifikazio-liburuan ez dagoen kalifikazioa da. Oraindik kalifikatu ez den zeregina izan daiteke edo saiakerarik izan ez duen galdetegia, adibidez.
 
-Ezarpen honek adierazten du kalifikazio hutsak agregazioan sartzen ez diren ala gutxieneko kalifikaziotzat hartzen diren, adibidez 0 0tik 100era kalifikatzen den zeregin batean.';
+Ezarpen honek adierazten du hutsik dauden kalifikazioak agregazioan sartzen ez diren ala gutxieneko kalifikaziotzat hartzen diren, adibidez 0 0tik 100era kalifikatzen den zeregin batean.';
 $string['aggregateoutcomes'] = 'Ikas-emaitzak agregazioan sartu';
 $string['aggregateoutcomes_help'] = 'Gaituta, ikas-emaitzak agregazioan sartzen dira. Honen ondorioz, kategoriako guztirakoa espero ez zena izan daiteke.';
 $string['aggregatesonly'] = 'Aldatu agregatutakoetara bakarrik';
@@ -72,7 +72,7 @@ $string['aggregationcoefweight_help'] = 'Elementuaren pisua kategoriaren agregaz
 $string['aggregationcoefweight_link'] = 'kalifikazioa/agregazioa';
 $string['aggregation_help'] = 'Agregazioak zehazten du kategoria bateko kalifikazioak nola lotzen diren, adibidez
 
-* Kalifikazioen media - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
+* Kalifikazioen batez bestekoa - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
 * Kalifikazioen mediana - Tarteko kalifikazioa kalifikazioak tamainaren arabera sailkatzen direnean
 * Kalifikazio baxuena
 * Kalifikazio altuena
@@ -112,7 +112,7 @@ $string['calculation_help'] = 'Kalifikazioen kalkulua kalifikazioak ezartzeko er
 $string['calculation_link'] = 'kalifikazioa/kalkulua';
 $string['calculationsaved'] = 'Kalkulua gordeta';
 $string['calculationview'] = 'Ikusi kalkulua';
-$string['cannotaccessgroup'] = 'Ezin dira eskuratu aukeratutako taldearen kalifikazioa, barkatu.';
+$string['cannotaccessgroup'] = 'Ezin dira eskuratu aukeratutako taldearen kalifikazioa, sentitzen dugu.';
 $string['categories'] = 'Kategoriak';
 $string['categoriesanditems'] = 'Kategoriak eta elementuak';
 $string['category'] = 'Kategoria';
@@ -164,7 +164,7 @@ $string['dropdown'] = 'Zabaltzen den menua';
 $string['droplow'] = 'Baxuena baztertu';
 $string['droplowestvalue'] = 'Ezarri kalifikazio-balore txikiena baztertzeko aukera';
 $string['droplowestvalues'] = 'Baztertu balore txikienak {$a}';
-$string['droplow_help'] = '<p>Hau aukeratuta X kalifikazio baxuenak baztertu egingo dira, X aukera honetarako balorea delarik.</p>';
+$string['droplow_help'] = 'Ezarpen honek X kalifikaziotik beherakoak agregaziotik baztertzea ahalbidetzen du.';
 $string['dropped'] = 'Baztertuta';
 $string['dropxlowest'] = 'Baztertu X baino baxuagoak';
 $string['dropxlowestwarning'] = 'Oharra: \'X baino baxuagorik kontuan ez hartu\' erabiltzen baduzu, kalifikazioak kategoriako item guztiak gehienezko puntuazio berez balioesten direla suposatzen du. Aipatutako baloreak ezberdinak badira, emaitzak edonolakoak izango dira.';
@@ -194,7 +194,7 @@ $string['errornocalculationallowed'] = 'Kalkuluak ez daude baimenduta elementu h
 $string['errornocategorisedid'] = 'Ez da kategorizatu gabeko id-rik lortu.';
 $string['errornocourse'] = 'Ez da ikastaroaren informaziorik lortu';
 $string['errorreprintheadersnonnumeric'] = 'Birrinprimaketa-goialdeetarako balore ez zenbakiduna jaso da';
-$string['errorsavegrade'] = 'Ezin da kalifikazioa gorde, barkatu.';
+$string['errorsavegrade'] = 'Ezin da kalifikazioa gorde, sentitzen dugu.';
 $string['errorsettinggrade'] = 'Errorea "{$a->itemname}" -(r)en kalifikazioa gordetzean {$a->userid} erabiltzailearentzat';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Errorea {$a->id} ID kategoria-kalifikazioaren "Hutsik dauden kalifikazioak baino ez agregatu" ezarpena eguneratzean.';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Errorea {$a->id} ID kategoria-kalifikazioaren "I ikas-emaitzak agregazioan sartu" ezarpena eguneratzean.';

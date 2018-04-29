@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Criterio di accesso basato sul completamento di altre attività.';
 $string['error_selectcmid'] = 'Devi selezionare un\'attività per il criterio di completamento.';
+$string['error_selectcmidpassfail'] = 'Devi selezionare un\'attività con il criterio "Valutazione" impostato.';
 $string['label_cm'] = 'Attività o risorsa';
 $string['label_completion'] = 'Stato di completamento richiesto';
 $string['missing'] = '(Attività mancante)';

@@ -42,14 +42,14 @@ Sie können folgende Platzhalter im Text verwenden:
 * Vollständiger Nutzername {$a->fullname}';
 $string['defaultrole'] = 'Rolle im Kurs';
 $string['defaultrole_desc'] = 'Wählen Sie eine Rolle aus, die Nutzer/innen bei der Selbsteinschreibung zugewiesen werden soll';
-$string['enrolenddate'] = 'Einschreibeende';
+$string['enrolenddate'] = 'Einschreibungsende';
 $string['enrolenddate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich bis zum angegebenen Zeitpunkt selbst einschreiben.';
-$string['enrolenddaterror'] = 'Das Einschreibungsende muss später als der -beginn sein';
+$string['enrolenddaterror'] = 'Das Einschreibungsende muss nach dem Einschreibungsbeginn liegen.';
 $string['enrolme'] = 'Einschreiben';
 $string['enrolperiod'] = 'Teilnahmedauer';
 $string['enrolperiod_desc'] = 'Die standardmäßige Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
 $string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
-$string['enrolstartdate'] = 'Einschreibebeginn';
+$string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
 $string['expiredaction_help'] = 'Legen Sie fest was nach dem Ablauf der Einschreibung in einem Kurs erfolgt. Denken Sie daran, dass bei der Austragung des Nutzers aus dem Kurs einige Daten nicht mehr verfügbar sind.';
@@ -57,20 +57,26 @@ $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 
 Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer lauft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
 
-Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.';
+Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.
+
+Ihr E-Learning-Team';
 $string['expirymessageenrolledsubject'] = 'In Kürze endet Ihr Kurs';
-$string['expirymessageenrollerbody'] = 'Die Selbsteinschreibung im Kurs \'{$a->course}\' wird innerhalb der nächsten {$a->threshold} für folgende Nutzer/innen ablaufen:
+$string['expirymessageenrollerbody'] = 'Guten Tag,
+
+im Kurs \'{$a->course}\' läuft für folgende Nutzer/in/nen innerhalb der nächsten  {$a->threshold}  die Einschreibung ab:
 
 {$a->users}
 
-Die Einschreibung kann über folgenden Link verlängert werden: {$a->extendurl}';
+Sie können auf der folgenden Seite die Einschreibedauer verlängern: {$a->extendurl}
+
+Ihr E-Learning Team';
 $string['expirymessageenrollersubject'] = 'In Kürze endet Ihr Kurs';
 $string['groupkey'] = 'Einschreibeschlüssel für Gruppen';
 $string['groupkey_desc'] = 'Standardmäßig einen Einschreibeschlüssel für Gruppen benutzen';
 $string['groupkey_help'] = 'Ergänzend zum Einschreibeschlüssel für die Kurseinschreibung lassen sich weitere Einschreibeschlüssel für Gruppen festlegen. Nutzer/innen können damit bei ihrer Kurseinschreibung automatisch einer bestimmten Gruppe zugewiesen werden.
 
 Um Einschreibeschlüssel für Gruppen verwenden zu können, muss zusätzlich ein Einschreibeschlüssel für den Kurs vergeben sein, den aber niemand kennen muss.';
-$string['keyholder'] = 'Sie sollten den Zugangsschlüssel erhalten haben von:';
+$string['keyholder'] = 'Sie sollten den Einschreibeschlüssel erhalten haben von:';
 $string['longtimenosee'] = 'Inaktive abmelden
 ';
 $string['longtimenosee_help'] = 'Wenn Personen lange Zeit nicht mehr auf einen Kurs zugreifen, werden sie automatisch abgemeldet. Dieser Parameter legt die maximale Inaktivitätsdauer fest.';
@@ -104,7 +110,7 @@ $string['self:unenrolself'] = 'Selbst aus dem Kurs abmelden';
 $string['sendcoursewelcomemessage'] = 'Begrüßungstext versenden';
 $string['sendcoursewelcomemessage_help'] = 'Wenn ein Nutzer sich in den Kurs einschreibt, kann ihm eine Begrüßungsnachricht gesendet werden. Wenn diese vom Kurskontakt geschickt wird (voreingetstellt vom Lehrer) und mehrere Nutzer diese Rolle haben, wird die E-Mail von dem Nutzer versendet, dem diese Rolle zuerst zugewiesen wurde.';
 $string['showhint'] = 'Hinweis zeigen';
-$string['showhint_desc'] = 'Erstes Zeichen des Zugangsschlüssels zeigen';
+$string['showhint_desc'] = 'Erstes Zeichen des Einschreibeschlüssels zeigen';
 $string['status'] = 'Existierende Einschreibungen erlauben';
 $string['status_desc'] = 'Selbsteinschreibung für neue Kurse aktivieren';
 $string['status_help'] = 'Wenn diese Option aktiviert und \'Neue Einschreibungen erlauben\' deaktiviert ist, können alle vorhandenen Selbsteinschreibungen weiter auf den Kurs zugreifen. Wenn die Option deaktiviert ist, werden alle vorhandenen Selbsteinschreibungen deaktiviert und keine neuen Selbsteinschreibungen zugelassen.';

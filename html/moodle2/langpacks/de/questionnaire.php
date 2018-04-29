@@ -38,7 +38,9 @@ $string['all'] = 'Alle';
 $string['alreadyfilled'] = 'Sie haben diese Befragung bereits ausgefüllt. {$a}';
 $string['andaveragevalues'] = 'und durchschnittliche Werte';
 $string['anonymous'] = 'Anonym';
+$string['answer'] = 'Antwort';
 $string['answerquestions'] = 'Beantworten Sie die Fragen ...';
+$string['answers'] = 'Antworten';
 $string['attempted'] = 'Der Fragebogen wurde abgegeben.';
 $string['attemptstillinprogress'] = 'In Bearbeitung. Gespeichert unter:';
 $string['autonumbering'] = 'Automatische Nummerierung';
@@ -217,6 +219,7 @@ $string['managequestions_help'] = 'In der "Fragen bearbeiten"-Sektion der "Frage
 $string['maxdigitsallowed'] = 'Max. erlaubte Ziffern';
 $string['maxdigitsallowed_help'] = 'Durch die Verwendung von Max. erlaubte Ziffern und Anzahl der Nachkomastellen können Sie die Länge und Anzahl der geforderten Nachkommastellen bestimmen.';
 $string['maxforcedresponses'] = 'Max. geforderte Antworten';
+$string['maxforcedresponses_help'] = 'Verwenden Sie diese Parameter um den Befragten zu zwingen, mindestens **Min.** und höchstens **Max.** Häkchen zu setzen. Um eine bestimmte Anzahl von Häkchen zu erzwingen, setzen Sie in **Min.** und **Max.** den gleichen Wert ein. Wenn nur Minimum oder Maximum gewünscht wird, lassen Sie das andere Feld auf seinem Standardwert **0**. Wenn Sie **Min.** oder **Max.** auf einen anderen Wert als den Standard **0** setzen, wird eine Warnmeldung angezeigt, wenn der Befragte nicht mit Ihren Anforderungen übereinstimmt. Selbstverständlich sollten Sie dem Befragten alle Anforderungen entweder in den allgemeinen Angaben zu Ihrer Befragung oder im Text der betreffenden Fragen eindeutig erläutern.';
 $string['maxtextlength'] = 'Max. Textlänge';
 $string['maxtextlength_help'] = 'Für die Textbox-Frage geben Sie die Länge des Feldes und die maximal eingebbaren Zeichen an. Voreingestellt sind eingebbare 25 Zeichen bei einer Anzeigelänge von 20.';
 $string['messageprovider:message'] = 'Fragebogen Reminder';
@@ -264,8 +267,10 @@ $string['notavail'] = 'Die Befragung steht nicht länger zur Verfügung. Die Bef
 $string['noteligible'] = 'Sie können an dieser Befragung nicht teilnehmen.';
 $string['notemplatesurveys'] = 'Keine Befragungs-Templates';
 $string['notenoughscaleitems'] = 'Sie müssen mindestens zwei Werte für die Skala angeben!';
+$string['notificationfull'] = 'Vollständig beantwortet';
 $string['notifications'] = 'Benachrichtigung verschicken';
 $string['notifications_help'] = 'Rollen, die bei einer Abgabe benachrichtigt werden.';
+$string['notificationsimple'] = 'Nur Benachrichtigung';
 $string['notopen'] = 'Diese Befragung steht ab {$a} zur Verfügung.';
 $string['notrequired'] = 'Antwort ist nicht erforderlich';
 $string['not_started'] = 'nicht gestartet';
@@ -274,6 +279,7 @@ $string['num'] = 'Nr.';
 $string['numattemptsmade'] = '{$a} Versuche bei dieser Befragung';
 $string['numberfloat'] = 'Die eingegebene Zahl <strong>{$a->number}</strong> wurde neu gerundet mit <strong>{$a->precision}</strong> Dezimalstelle(n).';
 $string['numberofdecimaldigits'] = 'Dezimalstellen';
+$string['numberofdecimaldigits_help'] = 'Verwenden Sie **Dezimalziffern** um das Format des berechneten und im Fragebogenbericht angezeigten Durchschnittswertes festzulegen.';
 $string['numberscaleitems'] = 'Skalenstufen';
 $string['numberscaleitems_help'] = 'Skalenstufen bezeichnet die Anzahl der Einheiten Ihrer Bewertungsskala.
 
@@ -292,7 +298,15 @@ $string['order_ascending'] = 'Aufsteigend';
 $string['order_default'] = 'Standardreihenfolge';
 $string['order_descending'] = 'Absteigend';
 $string['orderresponses'] = 'Antworten sortieren';
-$string['orderresponses_help'] = 'Bei der Anzeige Alle Antworten können Sie die Auswahl nach der Anzahl der Anworten (die anordnen';
+$string['orderresponses_help'] = 'Wenn Sie alle Antworten anzeigen, können Sie die Auswahl nach Anzahl der Antworten (die Spalte \'Durchschnitt\') für die folgenden 4 Arten von Fragen auswählen:
+
+* Einzelauswahl-Optionsfeld
+* Einzelauswahl Dropdown-Liste
+* Mehrfachauswahl (Kontrollkästchen)
+* Wertungsfragen (einschließlich Likert Skalen).
+
+Wenn Sie auf der Seite \'Alle Antworten\' ankommen, werden standardmäßig alle Antworten in der Reihenfolge geordnet, in der der Fragebogen-Ersteller die Frage-Auswahl eingegeben hat.
+Sie können sie in auf- oder absteigender Reihenfolge ordnen.';
 $string['osgood'] = 'Semantisches Differential';
 $string['other'] = 'Andere:';
 $string['otherempty'] = 'Wenn Sie dies ankreuzen, müssen Sie etwas ins Textfeld eingeben.';
@@ -370,7 +384,8 @@ $string['realm_help'] = '**Es gibt 3 Typen von Befragungen**
 $string['redirecturl'] = 'URL, zu welcher ein Nutzer nach Abschluss der Befragung weiter geleitet wird.';
 $string['remove'] = 'Löschen';
 $string['removeallquestionnaireattempts'] = 'Alle Abgaben der Befragung löschen';
-$string['required'] = 'Anwort ist erforderlich';
+$string['removenotinuse'] = 'Diese Befragung war von einer öffentlichen Befragung abhängig, die gelöscht wurde. Sie kann nicht länger verwendet und sollte daher gelöscht werden.';
+$string['required'] = 'Antwort ist erforderlich';
 $string['required_help'] = 'Wenn Sie **Ja** wählen, ist eine Antwort auf diese Frage obligatorisch, d.h. der Nutzer wird die Befragung nicht abgeben können, bis diese Frage beantwortet ist.';
 $string['requiredparameter'] = 'Ein notwendiger Parameter fehlt.';
 $string['reset'] = 'Zurücksetzen';
@@ -394,7 +409,7 @@ $string['responseview'] = 'Alle Antworten den Teilnehmenden anzeigen';
 $string['responseview_help'] = 'Sie können festlegen, wer die Antworten aller Befragten auf abgegebene Befragungen sehen darf (allgemeine Auswertungstabelle).';
 $string['responseviewstudentsalways'] = 'Immer';
 $string['responseviewstudentsnever'] = 'Nie';
-$string['responseviewstudentswhenanswered'] = 'Nach dem Aufüllen der Befragung';
+$string['responseviewstudentswhenanswered'] = 'Nach dem Ausfüllen der Befragung';
 $string['responseviewstudentswhenclosed'] = 'Nach dem Ende der Befragung';
 $string['restrictedtoteacher'] = 'Diese Funktionen sind nur für Trainer/innen mit Editier-Rechten.';
 $string['resume'] = 'Speichern/Fortsetzen';
@@ -407,6 +422,8 @@ $string['savedbutnotsubmitted'] = 'Die Befragung wurde gespeichert aber noch nic
 $string['savedprogress'] = 'Ihr Stand wurde gespeichert. Sie können jederzeit zurückkehren um die Befragung zu vervollständigen.';
 $string['saveeditedquestion'] = 'Frage {$a} sichern';
 $string['savesettings'] = 'Einstellungen sichern';
+$string['search:activity'] = 'Questionnaire (Befragung) - Information zu Aktivität';
+$string['search:question'] = 'Questionnaire - Fragen';
 $string['section'] = 'Beschreibung';
 $string['sectionbreak'] = '-----Seitenumbruch-----';
 $string['sectionbreak_help'] = '-----Seitenumbruch-----';

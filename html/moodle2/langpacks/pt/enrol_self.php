@@ -30,7 +30,7 @@ $string['canntenrolearly'] = 'Ainda não é possível inscrever-se; as inscriç�
 $string['canntenrollate'] = 'Não é possível inscrever mais utilizadores, pois as inscrições terminaram {$a}.';
 $string['cohortnonmemberinfo'] = 'Apenas membros do grupo global \'{$a}\' se podem autoinscrever';
 $string['cohortonly'] = 'Apenas membros do grupo global';
-$string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um grupo global específico. Note que a alteração dessa configuração não tem efeito sobre as inscrições existentes.';
+$string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um grupo global específico. Note que a alteração desta configuração não tem efeito sobre as inscrições existentes.';
 $string['customwelcomemessage'] = 'Mensagem personalizada de boas-vindas';
 $string['customwelcomemessage_help'] = 'Pode definir uma mensagem personalizada em texto simples ou Autoformatação-Moodle, incluíndo código HTML e tags multi-lang .
 
@@ -67,7 +67,7 @@ Para prolongar estas inscrições, vá a {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificação de expiração da autoinscrição';
 $string['groupkey'] = 'Usar senhas de inscrição de grupo';
 $string['groupkey_desc'] = 'Usar senhas de inscrição de grupo como configuração predefinida.';
-$string['groupkey_help'] = 'Para além de restringir o acesso à disciplina apenas aos utilizadores que têm a senha de inscrição, é possível definir senhas de inscrição para grupos, o que faz com que os utilizadores, ao se inscreverem na disciplina, fiquem automaticamente integrados num grupo.
+$string['groupkey_help'] = 'Para além de restringir o acesso à disciplina apenas aos utilizadores que têm a senha de inscrição, também é possível definir senhas de inscrição nos grupos, o que faz com que os utilizadores, ao se inscreverem na disciplina, fiquem automaticamente integrados num grupo.
 
 Nota: Uma senha de inscrição para a disciplina deve ser especificada nas configurações de autoinscrição, bem como as senhas de inscrição do grupo nas configurações do grupo.';
 $string['keyholder'] = 'Deve ter recebido esta chave de inscrição de:';
@@ -84,15 +84,15 @@ $string['nopassword'] = 'Não é pedida senha de inscrição';
 $string['password'] = 'Senha de inscrição';
 $string['password_help'] = 'A senha de inscrição permite restringir o acesso à disciplina apenas aos utilizadores que conheçam a senha de inscrição.
 
-Se este campo não estiver preenchido, então qualquer utilizador poderá inscrever-se nesta disciplina.
+Se este campo não estiver preenchido, qualquer utilizador poderá inscrever-se nesta disciplina.
 
-Se for especificada uma senha, qualquer utilizador que tente aceder à disciplina terá que indicar essa senha. Este procedimento só acontece no momento da inscrição nas disciplinas, os acessos posteriores dos alunos inscritos dispensam a indicação desta senha.';
-$string['passwordinvalid'] = 'A senha de inscrição que indicou não é a correta, por favor, tente novamente';
-$string['passwordinvalidhint'] = 'A senha de inscrição que indicou não é a correta, por favor, tente novamente. Sugestão: A primeira letra é "{$a}"';
+Se for especificada uma senha, qualquer utilizador que tente aceder à disciplina terá que indicar essa senha. Este procedimento SÓ acontece no momento da inscrição nas disciplinas, os acessos posteriores dos alunos inscritos dispensam a indicação desta senha.';
+$string['passwordinvalid'] = 'A senha de inscrição que indicou não é a correta. Por favor, tente novamente';
+$string['passwordinvalidhint'] = 'A senha de inscrição que indicou não é a correta. Por favor, tente novamente. Sugestão: A primeira letra é "{$a}"';
 $string['pluginname'] = 'Autoinscrição';
 $string['pluginname_desc'] = 'Este módulo permite aos utilizadores decidir em que disciplinas se pretendem inscrever. As disciplinas podem ser protegidas por uma senha de inscrição. Internamente a inscrição é feita através do módulo de inscrições manuais, pelo que este módulo tem que estar igualmente ativo na disciplina.';
 $string['requirepassword'] = 'Pedir senha de inscrição';
-$string['requirepassword_desc'] = 'Esta configuração faz com que as novas disciplinas criadas peçam sempre senha de inscrição e evita que as disciplinas que já existem possam deixar de pedir essa senha.';
+$string['requirepassword_desc'] = 'Esta configuração faz com que as novas disciplinas criadas peçam sempre senha de inscrição e evita que as disciplinas que já existem possam deixar de pedir a senha.';
 $string['role'] = 'Atribuir papel';
 $string['self:config'] = 'Configurar instâncias de auto-inscrição';
 $string['self:holdkey'] = 'Aparecer como titular da chave de inscrição';
@@ -110,7 +110,7 @@ $string['unenrol'] = 'Cancelar inscrição do utilizador';
 $string['unenrolselfconfirm'] = 'Tem a certeza de que pretende cancelar a sua inscrição na disciplina "{$a}"?';
 $string['unenroluser'] = 'Tem a certeza de que pretende cancelar a sua inscrição de "{$a->user}" da disciplina "{$a->course}"?';
 $string['usepasswordpolicy'] = 'Usar a política de senhas do site';
-$string['usepasswordpolicy_desc'] = 'Se esta configuração estiver ativa a senha de inscrição nas disciplinas terá que obedecer às mesmas regras que as palavras-senhas das contas dos utilizadores.';
+$string['usepasswordpolicy_desc'] = 'Se ativar esta opção, a senha de inscrição nas disciplinas terá que obedecer às mesmas regras que as senhas das contas dos utilizadores.';
 $string['welcometocourse'] = 'Bem-vindo(a) a "{$a}"';
 $string['welcometocoursetext'] = 'Bem-vindo(a) à disciplina "{$a->coursename}"!
 

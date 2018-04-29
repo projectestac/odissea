@@ -24,6 +24,7 @@ $string['shortanswerwiris_answersinstruct'] = 'You must provide at least one cor
 $string['shortanswerwiris_algorithm'] = 'Algorithm';
 $string['shortanswerwiris_cantimportcompoundtest'] = 'The short answer - math & science question could not be imported properly from Moodle 1.9 format. The question can be manually fixed following the instructions at <a href="http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade">http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade</a>.';
 $string['filloutoneanswer'] = 'You must provide at least one possible answer. The first matching answer will be used to determine the score and feedback. Click the icon next to the answer field to edit the mathematical properties of the answer and the question.';
+$string['failedtogradetest'] = 'Failed to grade (testing-{$a})!';
 
 // From Moodle 2.3.
 $string['pluginname'] = 'Short answer - science';

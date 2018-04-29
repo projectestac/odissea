@@ -77,7 +77,7 @@ class qtype_wq extends question_type {
                 $question->options->wirisquestion = $record->xml;
                 $question->options->wirisoptions = $record->options;
             } else {
-                $OUTPUT->notification('Failed to load WIRIS quizzes XML definition for question id ' . $question->id . '.');
+                $OUTPUT->notification( get_string('failedtoloadwirisquizzesfromxml', 'qtype_wq') . ' ' . $question->id . '.');
                 return false;
             }
         }

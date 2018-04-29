@@ -1,5 +1,8 @@
 # WIRIS Quizzes Matching question type
+### Master Build Status
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_matchwiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_matchwiris)
+### Development Build Status
+[![Build Status](https://travis-ci.org/wiris/moodle-qtype_matchwiris.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_matchwiris)
 
 The WIRIS Matching question type extends the Moodle matching type, adding mathematical functionality to it.
 

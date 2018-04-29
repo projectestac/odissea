@@ -7,4 +7,4 @@ las actividades LTI.
 El bloque de cursos Vicens Vives permite la configuración automática del web
 service.
 
-Versiones de Moodle: 2.3, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0 y 3.1
+Versiones de Moodle: 2.8, 2.9, 3.0, 3.1, 3.2, 3.3

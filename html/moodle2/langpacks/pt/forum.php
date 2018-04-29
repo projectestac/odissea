@@ -85,13 +85,13 @@ $string['clicktosubscribe'] = 'Não tem subscrição ativa para este tópico. Cl
 $string['clicktounsubscribe'] = 'Tem subscrição ativa para este tópico. Clique para cancelar a subscrição.';
 $string['completiondiscussions'] = 'Número de tópicos que o aluno deve criar';
 $string['completiondiscussionsgroup'] = 'Nº de tópicos';
-$string['completiondiscussionshelp'] = 'requer a criação de determinado número de tópicos para completar a atividade';
+$string['completiondiscussionshelp'] = 'requer a criação de determinado número de tópicos para concluir a atividade';
 $string['completionposts'] = 'Número de tópicos ou respostas que o aluno deve criar';
 $string['completionpostsgroup'] = 'Nº de mensagens';
-$string['completionpostshelp'] = 'número de tópicos ou respostas requeridos para completar a atividade';
+$string['completionpostshelp'] = 'número de tópicos ou respostas requeridos para concluir a atividade';
 $string['completionreplies'] = 'Número de respostas a tópicos que o aluno deve submeter';
 $string['completionrepliesgroup'] = 'Nº de respostas';
-$string['completionreplieshelp'] = 'número de respostas requerido para completar a atividade';
+$string['completionreplieshelp'] = 'número de respostas requerido para concluir a atividade';
 $string['configcleanreadtime'] = 'Hora do dia em que as mensagens antigas serão apagadas da tabela de \'não lidas\'.';
 $string['configdigestmailtime'] = 'Aos utilizadores que optarem por receber resumos do fórum por e-mail será enviado um resumo por dia. Esta configuração define a hora do dia em que o e-mail será enviado (a mensagem será enviada quando correr o cron após esta hora definida).';
 $string['configdisplaymode'] = 'Modo predefinido de apresentação dos tópicos.';
@@ -360,7 +360,7 @@ $string['newforumposts'] = 'Novas mensagens no fórum';
 $string['nextdiscussiona'] = 'Próximo tópico de discussão: {$a}';
 $string['noattachments'] = 'Esta mensagem não tem anexos';
 $string['nodiscussions'] = 'Ainda não há tópicos de discussão neste fórum';
-$string['nodiscussionsstartedby'] = 'Nenhum tópico iniciado por este utilizador';
+$string['nodiscussionsstartedby'] = '{$a} não iniciou nenhum tópico de discução';
 $string['nodiscussionsstartedbyyou'] = 'Ainda não começou nenhuma discussão';
 $string['noguestpost'] = 'Lamentamos mas como visitante não pode submeter mensagens neste fórum';
 $string['noguestsubscribe'] = 'Os convidados não têm permissão para subscrever um fórum.';
@@ -398,7 +398,7 @@ $string['overviewnumpostssince'] = '{$a} mensagens novas desde a última vez que
 $string['overviewnumunread'] = '{$a} mensagens não lidas';
 $string['page-mod-forum-discuss'] = 'Página de discussão do fórum';
 $string['page-mod-forum-view'] = 'Página principal do fórum';
-$string['page-mod-forum-x'] = 'Qualquer página do fórum';
+$string['page-mod-forum-x'] = 'Qualquer página da atividade fórum';
 $string['parent'] = 'Mostrar mensagem ascendente';
 $string['parentofthispost'] = 'Ascendente desta mensagem';
 $string['permalink'] = 'Hiperligação direta';
@@ -504,14 +504,12 @@ $string['subscriptiondisabled'] = 'Subscrição desativada';
 $string['subscriptionforced'] = 'Subscrição obrigatória';
 $string['subscription_help'] = 'Subscrever um fórum significa que receberá notificações por e-mail dos novos tópicos publicados no fórum. Normalmente, pode optar por subscrever, ou não, um fórum. No entanto, em alguns fóruns a subscrição é obrigatória para que todos recebam as notificações.';
 $string['subscriptionmode'] = 'Modo de subscrição';
-$string['subscriptionmode_help'] = 'Quando um participante se encontra com a subscrição ativa num fórum, significa que irá receber notificações dos tópicos desse fórum. Existem 4 opções de subscrição:
+$string['subscriptionmode_help'] = 'Quando um participante tem a subscrição ativa num fórum, significa que irá receber notificações dos tópicos desse fórum. Existem 4 opções de subscrição:
 
 * Subscrição opcional - Os participantes podem escolher se desejam ativar a subscrição;
 * Subscrição obrigatória - Todos ficam com a subscrição ativa e não podem cancelar;
-* Subscrição automática (ativa no início)- Todos estão com a subscrição ativa no início mas podem cancelá-la a qualquer momento;
-* Subscrição desativada - Não é permitido subscrever o fórum.
-
-Nota: Quaisquer alterações ao modo de subscrição só afetarão os utilizadores que se inscreverem futuramente na disciplina, e não os utilizadores existentes.';
+* Subscrição opcional (ativa no início) - Todos estão com a subscrição ativa no início mas podem cancelá-la a qualquer momento;
+* Subscrição desativada - Não é permitido subscrever o fórum.';
 $string['subscriptionoptional'] = 'Subscrição opcional';
 $string['subscriptions'] = 'Subscrições';
 $string['thisforumisthrottled'] = 'Este fórum possui um limite ao número de mensagens que pode submeter num determinado período de tempo. Está atualmente configurado para {$a->blockafter} mensagem(s) em {$a->blockperiod}';

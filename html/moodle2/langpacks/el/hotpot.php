@@ -33,6 +33,7 @@ $string['clickreporting'] = 'Ενεργοποίησε αναφορά κλικ';
 $string['clues'] = 'Ίχνη';
 $string['completed'] = 'Ολοκληρωμένο';
 $string['correct'] = 'Σωστά';
+$string['duration'] = 'Διάρκεια';
 $string['feedbackformmail'] = 'Φόρμα ανάδρασης';
 $string['feedbackmoodleforum'] = 'Ομάδα συζήτησης Moodle';
 $string['feedbackmoodlemessaging'] = 'Μηνύματα Moodle';
@@ -59,11 +60,20 @@ $string['penalties'] = 'Ποινές';
 $string['pluginname'] = 'Το Hot Potatoes Κουίζ';
 $string['questionshort'] = 'Ε-{$a}';
 $string['score'] = 'Βαθμός';
+$string['sourcefilenotfound'] = 'Αδυναμία εύρεσης πηγαίου αρχείου (ή είναι κενό): {$a}';
+$string['stopbutton_help'] = 'Αν αυτή η ρύθμιση είναι ενεργοποιημένη, στο κουίζ θα προστεθεί ένα κουμπί διακοπής.
+<br /><br />
+Αν ένας μαθητής πατήσει το κουμπί διακοπής, τα αποτελέσματα μέχρι εκείνη τη στιγμή θα επιστραφούν στο Moodle και η κατάσταση της προσπάθειας στο κουίζ θα οριστεί ως εγκαταλήφθηκε.
+<br /><br />
+Το κείμενο που εμφανίζεται στο κουμπί διακοπής μπορεί να είναι μία από τις προκαθορισμένες φράσεις από τα πακέτα γλωσσών του Moodle ή μπορεί να καθορίσει ο διδάσκων το δικό του κείμενο για το κουμπί.';
+$string['stopbutton_langpack'] = 'Από πακέτο γλώσσας';
 $string['studentfeedback'] = 'Ανάδραση φοιτητών';
+$string['subplugintype_hotpotreport_plural'] = 'Αναφορές';
 $string['textsourcefilename'] = 'Χρήση ονόματος αρχείου';
 $string['textsourcefilepath'] = 'Χρήση διεύθυνσης αρχείου';
 $string['textsourcequiz'] = 'Λήψη από το κουίζ';
 $string['textsourcespecific'] = 'Συγκεκριμένο κείμενο';
+$string['timeclose'] = 'Διαθέσιμο έως';
 $string['timedout'] = 'Έληξε ο χρόνος';
 $string['title'] = 'Τίτλος';
 $string['weighting'] = 'Εφαρμογή βαρύτητας';

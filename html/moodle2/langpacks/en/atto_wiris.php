@@ -25,7 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'WIRIS plugin for Atto';
+$string['error_connection'] = 'An error occurred while loading MathType';
+$string['pluginname'] = 'MathType by WIRIS';
 $string['wiris_cas_title'] = 'Calculator';
-$string['wiris_chem_editor_title'] = 'Chemistry editor';
-$string['wiris_editor_title'] = 'Math editor';
+$string['wiris_chem_editor_title'] = 'Insert a chemistry formula - ChemType';
+$string['wiris_editor_title'] = 'Insert a math equation - MathType';

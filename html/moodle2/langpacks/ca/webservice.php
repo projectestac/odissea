@@ -204,6 +204,7 @@ $string['usernameorid_help'] = 'Introduïu un nom d\'usuari o un ID d\'usuari.';
 $string['usernameoridnousererror'] = 'No hi ha usuaris amb aquest nom d\'usuari o ID d\'usuari.';
 $string['usernameoridoccurenceerror'] = 'S\'ha trobat més d\'un usuari amb aquest nom d\'usuari. Introduïu l\'ID d\'usuari.';
 $string['usernotallowed'] = 'L\'usuari no té permés aquest servei. Primer us cal permetre aquest usuari en la pàgina d\'administració {$a} del usuaris permesos.';
+$string['userservices'] = 'Serveis de l\'usuari: {$a}';
 $string['usersettingssaved'] = 'S\'han desat els paràmetres de l\'usuari';
 $string['validuntil'] = 'Vàlid fins';
 $string['validuntil_help'] = 'Si ho habiliteu, el servei serà inactivat després d\'aquesta data per a aquest usuari.';

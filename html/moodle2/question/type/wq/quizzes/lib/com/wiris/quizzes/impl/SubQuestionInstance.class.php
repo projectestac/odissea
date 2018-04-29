@@ -16,7 +16,7 @@ class com_wiris_quizzes_impl_SubQuestionInstance extends com_wiris_quizzes_impl_
 		$this->userData = $s->serializeChildName($this->userData, com_wiris_quizzes_impl_UserData::$TAGNAME);
 		$this->setChecksCompoundAnswers();
 		$a = $s->serializeArrayName($this->hashToChecks($this->checks), "checks");
-		if($this->isCompoundAnswer($a)) {
+		if($this->isCompoundAnswerChecks($a)) {
 			$this->collapseCompoundAnswerChecks($a);
 		}
 		$this->checks = $this->checksToHash($a, null);

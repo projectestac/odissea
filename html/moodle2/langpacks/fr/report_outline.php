@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = 'Rapport d\'activité consulté';
 $string['eventoutlinereportviewed'] = 'Rapport résumé consulté';
 $string['neverseen'] = 'Jamais consulté';
+$string['nocapability'] = 'Impossible d\'accéder au rapport résumé de l\'utilisateur';
 $string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
 $string['numviews'] = '{$a->numviews} par {$a->distinctusers} utilisateurs';
 $string['outline:view'] = 'Consulter le rapport d\'activité du cours';

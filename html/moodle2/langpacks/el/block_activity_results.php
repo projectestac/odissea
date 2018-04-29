@@ -30,6 +30,7 @@ $string['bestgrade'] = 'Ο μεγαλύτερος βαθμός:';
 $string['bestgrades'] = 'Οι {$a} μεγαλύτεροι βαθμοί:';
 $string['config_format_percentage'] = 'Ποσοστά';
 $string['config_name_format'] = 'Ιδιωτικότητα αποτελεσμάτων';
+$string['config_names_full'] = 'Εμφάνιση πλήρων ονομάτων';
 $string['defaultnameoptions'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['worstgrade'] = 'Ο χαμηλότερος βαθμός:';
 $string['worstgrades'] = 'Οι {$a} χαμηλότεροι βαθμοί:';

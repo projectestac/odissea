@@ -190,6 +190,7 @@ Le tue risposte saranno considerate con attenzione e ci aiuteranno a migliorare 
 
 Grazie.';
 $string['collespname'] = 'COLLES (Ideale)';
+$string['completionsubmit'] = 'Lo studente deve rispondere al sondaggio per completarlo';
 $string['customintro'] = 'Descrizione';
 $string['deleteallanswers'] = 'Cancella tutte le risposte al sondaggio';
 $string['deleteanalysis'] = 'Elimina analisi risposte';

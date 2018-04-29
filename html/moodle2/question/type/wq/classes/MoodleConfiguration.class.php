@@ -30,6 +30,36 @@ class MoodleConfiguration implements com_wiris_quizzes_api_Configuration{
         $proxyuserenabled = isset($CFG->proxyuser) && !empty($CFG->proxyuser);
         $proxypassenabled = isset($CFG->proxypassword) && !empty($CFG->proxypassword);
 
+        if ($key == 'quizzes.service.url') {
+            $quizzesserviceurl = get_config('qtype_wq', 'quizzesserviceurl');
+            if (isset($quizzesserviceurl) && !empty($quizzesserviceurl)) {
+                return $quizzesserviceurl;
+            }
+        }
+        if ($key == 'quizzes.editor.url') {
+            $quizzeseditorurl = get_config('qtype_wq', 'quizzeseditorurl');
+            if (isset($quizzeseditorurl) && !empty($quizzeseditorurl)) {
+                return $quizzeseditorurl;
+            }
+        }
+        if ($key == 'quizzes.hand.url') {
+            $quizzeshandurl = get_config('qtype_wq', 'quizzeshandurl');
+            if (isset($quizzeshandurl) && !empty($quizzeshandurl)) {
+                return $quizzeshandurl;
+            }
+        }
+        if ($key == 'quizzes.wirislauncher.url') {
+            $quizzeswirislauncherurl = get_config('qtype_wq', 'quizzeswirislauncherurl');
+            if (isset($quizzeswirislauncherurl) && !empty($quizzeswirislauncherurl)) {
+                return $quizzeswirislauncherurl;
+            }
+        }
+        if ($key == 'quizzes.wiris.url') {
+            $quizzeswirisurl = get_config('qtype_wq', 'quizzeswirisurl');
+            if (isset($quizzeswirisurl) && !empty($quizzeswirisurl)) {
+                return $quizzeswirisurl;
+            }
+        }
         if ($key == 'quizzes.httpproxy.host' && $moodleproxyenabled) {
             return $CFG->proxyhost;
         }
@@ -79,5 +109,14 @@ class MoodleConfiguration implements com_wiris_quizzes_api_Configuration{
         }
         return null;
     }
+
+    // @codingStandardsIgnoreStart
+    public function loadFile($file) {
+    }
+
+    public function set($key, $value) {
+    }
+    // @codingStandardsIgnoreEnd
+
 
 }

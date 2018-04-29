@@ -320,6 +320,7 @@ $string['trackscoreraw'] = '原始分';
 $string['tracktime'] = '时间';
 $string['tracktype'] = '类型';
 $string['tracktype_help'] = '问题类型, 例如 "选择" 或 "简答"';
+$string['trackweight'] = '权重';
 $string['type'] = '类型';
 $string['typeaiccurl'] = '外部 AICC URL 地址';
 $string['typeexternal'] = '外部 SCORM manifest';

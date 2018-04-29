@@ -292,7 +292,9 @@ vielen Dank für die Abgabe Ihrer Antworten zu \'{$a->quizname}\' im Kurs \'{$a-
 
 Diese E-Mail bestätigt, dass Ihre Abgabe sicher angekommen ist.
 
-Sie können auf den Test zugreifen unter {$a->quizurl}.';
+Sie können auf den Test zugreifen unter {$a->quizurl}.
+
+Ihr E-Learning-Team';
 $string['emailconfirmsmall'] = 'Danke für die Übermittlung Ihrer Antworten auf \'{$a->quizname}\'';
 $string['emailconfirmsubject'] = 'Bestätigung der Testlösungen für {$a->quizname}';
 $string['emailnotifybody'] = 'Guten Tag {$a->username},
@@ -302,14 +304,18 @@ $string['emailnotifybody'] = 'Guten Tag {$a->username},
 \'{$a->quizname}\' ({$a->quizurl})
 im Kurs \'{$a->coursename}\' beendet.
 
-Sie können diesen Versuch unter {$a->quizreviewurl} ansehen.';
+Sie können diesen Versuch unter {$a->quizreviewurl} ansehen.
+
+Ihr E-Learning-Team';
 $string['emailnotifysmall'] = '{$a->studentname} hat {$a->quizname} abgeschlossen. Siehe {$a->quizreviewurl}';
 $string['emailnotifysubject'] = '{$a->studentname} hat den Test {$a->quizname} beendet';
 $string['emailoverduebody'] = 'Guten Tag {$a->studentname},
 
 Sie haben denTest {$a->quizname} im Kurs {$a->coursename} begonnen. Der Testversuch wurde von Ihnen jedoch bisher nicht abgeschlossen. Dies sollten Sie bis zu diesem Termin nachholen: [{$a->attemptduedate}.
 
-Um den Testversuch jetzt abzuschließen, gehen Sie auf {$a->attemptsumaryurl} und klicken Sie den \'Abgeben\'-Button. Sie müssen dies vor dem {$a->attemptgracend} tun. Andernfalls wird der Versuch nicht gewertet.';
+Um den Testversuch jetzt abzuschließen, gehen Sie auf {$a->attemptsumaryurl} und klicken Sie den \'Abgeben\'-Button. Sie müssen dies vor dem {$a->attemptgracend} tun. Andernfalls wird der Versuch nicht gewertet.
+
+Ihr E-Learning-Team';
 $string['emailoverduesmall'] = 'Sie haben den Testversuch in {$a->quizname} nicht abgeschlossen. Gehen Sie bitte vor dem {$a->attemptgraceend} zu {$a->attemptsummaryurl} wenn Sie den Versuch noch abschließen möchten.';
 $string['emailoverduesubject'] = 'Testversuch nun überfällig für {$a->quizname}';
 $string['empty'] = 'Leer';
@@ -373,7 +379,7 @@ $string['fractionsnomax'] = 'Eine dieser Antworten sollte 100% sein, damit
 <br />Möchten Sie zurückgehen und diese Frage korrigieren?';
 $string['fromfile'] = 'aus der Datei:';
 $string['functiondisabledbysecuremode'] = 'Diese Funktion ist aktuell deaktiviert';
-$string['generalfeedback'] = 'Standard-Feedback';
+$string['generalfeedback'] = 'Allgemeines Feedback';
 $string['generalfeedback_help'] = 'Das Fragen-Feedback besteht aus dem Text, den die Teilnehmer/innen nach dem Versuch sehen, eine Frage zu beantworten. Anders als das Feedback, das vom Fragetyp und der Nutzerantwort abhängt, wird der Text des allgemeinen Fragen-Feedbacks allen Teilnehmern/innen gezeigt';
 $string['graceperiod'] = 'Nachfrist für Abgabe';
 $string['graceperiod_desc'] = 'Wenn für den Zeitablauf gewählt wurde \'Nachfrist zur Abgabe, aber keine Änderungen an den Antworten\' wird die voreingestellte Zeitdauer in Sekunden festgelegt.';
@@ -408,7 +414,7 @@ $string['gradingmethod'] = 'Bewertungsmethode: {$a}';
 $string['groupoverrides'] = 'Gruppenänderungen';
 $string['groupoverridesdeleted'] = 'Gruppenüberschreibungen gelöscht';
 $string['groupsnone'] = 'Es gibt in diesem Kurs keine Gruppen';
-$string['guestsno'] = 'Gäste können den Test weder sehen noch ausprobieren.';
+$string['guestsno'] = 'Gäste können einen Test weder sehen noch ausprobieren.';
 $string['hidebreaks'] = 'Seitenumbrüche verbergen';
 $string['hidereordertool'] = 'Neuanordnung verbergen';
 $string['history'] = 'Frühere Antworten:';
@@ -427,7 +433,7 @@ $string['importingquestions'] = 'Import von {$a} Fragen aus Datei';
 $string['importmax10error'] = 'In der Frage ist ein Fehler aufgetreten. Sie dürfen höchstens zehn Antworten formulieren.';
 $string['importmaxerror'] = 'Fehler in der Frage: zu viele Antworten.';
 $string['importquestions'] = 'Frage aus einer Datei importieren';
-$string['inactiveoverridehelp'] = '* Teilnehmer/in hat nicht die richtige Gruppenzugehörigkeit, um den Test auszuführen.';
+$string['inactiveoverridehelp'] = '* Teilnehmer/in hat nicht die richtige Gruppenzugehörigkeit oder Rolle, um den Test auszuführen.';
 $string['incorrect'] = 'Falsch';
 $string['indivresp'] = 'Antworten der einzelnen Personen zu jeder Frage';
 $string['info'] = 'Info';
@@ -456,7 +462,7 @@ $string['literal'] = 'Schreibweise';
 $string['loadingquestionsfailed'] = 'Das Laden der Fragen ist gescheitert: {$a}';
 $string['makecopy'] = 'Als neue Frage abspeichern';
 $string['managetypes'] = 'Fragetypen und Server verwalten';
-$string['manualgradequestion'] = 'Manulle Bewertung der Frage {$a->question} in {$a->quiz} für {$a->user}';
+$string['manualgradequestion'] = 'Manuelle Bewertung der Frage {$a->question} in {$a->quiz} für {$a->user}';
 $string['manualgrading'] = 'Bewertung';
 $string['mark'] = 'Abschicken';
 $string['markall'] = 'Seite bewerten lassen';
@@ -499,6 +505,7 @@ $string['newattemptfail'] = 'Fehler: Ein neuer Versuch des Tests konnte nicht be
 $string['newpage'] = 'Neue Seite';
 $string['newpageevery'] = 'Automatisch eine neue Seite beginnen';
 $string['newpage_help'] = 'Bei längeren Tests ist es sinnvoll, die Fragen auf mehrere Seiten zu verteilen. Wenn Sie bei der Testzusammenstellung Fragen hinzufügen, werden an der entsprechenden Stelle automatisch Seitenumbrüche eingefügt. Sie können die Seitenumbrüche später manuell anpassen.';
+$string['newsectionheading'] = 'Neue Abschnittsüberschrift';
 $string['noanswers'] = 'Es wurden keine Antworten ausgewählt!';
 $string['noattempts'] = 'Diesen Test hat niemand durchgeführt.';
 $string['noattemptsfound'] = 'Keine Versuche gefunden';
@@ -715,7 +722,7 @@ $string['reattemptquiz'] = 'Test wiederholen';
 $string['recentlyaddedquestion'] = 'Kürzlich hinzugefügte Frage!';
 $string['recurse'] = 'Fragen aus Unterkategorien einbeziehen';
 $string['redoesofthisquestion'] = 'Andere Fragen wurden versucht: {$a}';
-$string['redoquestion'] = 'Versuchen Sie eine weitere Frage außer dieser hier.';
+$string['redoquestion'] = 'Versuchen Sie eine weitere Frage wie diese hier.';
 $string['regrade'] = 'Alle Versuche neu bewerten';
 $string['regradecomplete'] = 'Alle Versuche wurden neu bewertet.';
 $string['regradecount'] = '{$a->changed} von {$a->attempt} Noten wurden geändert.';
@@ -795,9 +802,9 @@ $string['reviewoptionsheading_help'] = 'Mit diesen Optionen legen Sie fest, welc
 
 **Direkt nach dem Versuch** bedeutet, dass ein Feedback innerhalb von zwei Minuten gezeigt wird, nachdem Test abgeschickt und beendet wurde.
 
-**Später, während der Test noch offen ist** zeigt das Feedback, solange der Bearbeitungszeitraum läuft.
+**Später, während der Test noch geöffnet ist** zeigt das Feedback, solange der Bearbeitungszeitraum läuft.
 
-**Nach Beendigung des Tests** meint das Feedback nach Ende des Bearbeitungszeitraums. Wenn kein solcher Termin definiert ist, ist diese Einstellung nicht sinnvoll.';
+**Wenn der Test abgeschlossen ist** meint das Feedback nach Ende des Bearbeitungszeitraums. Wenn kein solcher Termin definiert ist, ist diese Einstellung nicht sinnvoll.';
 $string['reviewoverallfeedback'] = 'Gesamtfeedback';
 $string['reviewoverallfeedback_help'] = 'Das Feedback wird am Ende des Versuchs gegeben und ist abhängig vom Gesamtergebnis.';
 $string['reviewresponse'] = 'Antwort erneut anzeigen';

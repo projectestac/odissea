@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'Online testua ondo kargatu da.';
+$string['event_assessable_uploaded'] = 'On-line testua ondo kargatu da.';
 $string['pluginname'] = 'On-line';

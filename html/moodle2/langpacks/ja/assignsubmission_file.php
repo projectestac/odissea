@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptedfiletypes'] = '許可されたファイルタイプ';
-$string['acceptedfiletypes_help'] = '許可されたファイルタイプはセミコロンで分けられたMIMEタイプを入力して制限することができます。例えば「video/mp4; audio/mp3; image/png; image/jpeg」のようになります。あなたはドットを含むことで拡張子を制限することもできます。例えば「.png; .jpg」のようになります。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
+$string['acceptedfiletypes'] = '許可されるファイルタイプ';
+$string['acceptedfiletypes_help'] = '許可されるファイルタイプはカンマ区切りの「video/mp4, audio/mp3, image/png, image/jpeg」のようなMIMEタイプ一覧またはドットを含む「.png, .jpg」のようなファイル拡張子を入力して制限することができます。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
 $string['configmaxbytes'] = '最大ファイルサイズ';
 $string['countfiles'] = '{$a} ファイル';
 $string['default'] = 'デフォルトで有効にする';

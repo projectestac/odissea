@@ -41,6 +41,7 @@ $string['cachedef_config'] = '修改配置信息';
 $string['cachedef_coursecat'] = '特定用户的课程列表';
 $string['cachedef_coursecatrecords'] = '课程目录记录';
 $string['cachedef_coursecattree'] = '课程目录树';
+$string['cachedef_coursecompletion'] = '课程完成状态';
 $string['cachedef_coursecontacts'] = '课程联系人列表';
 $string['cachedef_coursemodinfo'] = '有关每一个课程章节和单元的汇总信息';
 $string['cachedef_databasemeta'] = '数据库元信息';

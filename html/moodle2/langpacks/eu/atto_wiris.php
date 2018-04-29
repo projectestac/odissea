@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'WIRIS plugina Atto-rako';
-$string['wiris_editor_title'] = 'WIRIS editorea';
+$string['wiris_cas_title'] = 'Kalkulagailua';
+$string['wiris_chem_editor_title'] = 'Kimika-editorea';
+$string['wiris_editor_title'] = 'Matematika-editorea';

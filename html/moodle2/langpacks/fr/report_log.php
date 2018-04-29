@@ -37,6 +37,7 @@ $string['eventuserreportviewed'] = 'Historique d\'utilisateur consulté';
 $string['logsformat'] = 'Format des historiques';
 $string['log:view'] = 'Consulter les historiques du cours';
 $string['log:viewtoday'] = 'Consulter l\'historique du jour';
+$string['nocapability'] = 'Impossible d\'accéder au journal de l\'utilisateur';
 $string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
 $string['origin'] = 'Source';
 $string['other'] = 'Autre';

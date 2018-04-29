@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['calendar_upcoming:addinstance'] = 'Voeg een komende activiteitenblok toe';
-$string['calendar_upcoming:myaddinstance'] = 'Voeg een nieuw komende activiteitenblok toe aan  Mijn startpagina';
+$string['calendar_upcoming:addinstance'] = 'Voeg een komend activiteitenblok toe';
+$string['calendar_upcoming:myaddinstance'] = 'Voeg een nieuw komend activiteitenblok toe aan Mijn startpagina';
 $string['pluginname'] = 'Binnenkort';

@@ -472,6 +472,12 @@ defined('MOODLE_INTERNAL') || die();
       'component' => 'filter_wiris',
       'area' => 'images',
     ),
+    'filter_wiris/formulas' =>
+    array (
+      'mode' => 1,
+      'component' => 'filter_wiris',
+      'area' => 'formulas',
+    ),
     'repository_skydrive/foldername' => 
     array (
       'mode' => 2,

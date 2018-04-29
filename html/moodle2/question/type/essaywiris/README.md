@@ -1,5 +1,8 @@
 # WIRIS Quizzes Essay question type
+### Master Build Status
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_essaywiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_essaywiris)
+### Development Build Status
+[![Build Status](https://travis-ci.org/wiris/moodle-qtype_essaywiris.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_essaywiris)
 
 The WIRIS Essay question type extends the Moodle Essay type, adding mathematical functionality to it.
 

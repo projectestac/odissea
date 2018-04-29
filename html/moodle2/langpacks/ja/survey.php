@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actual'] = '実体験';
 $string['actualclass'] = 'クラスの実体験';
 $string['actualstudent'] = '{$a} の実体験';
-$string['allquestionrequireanswer'] = 'すべての質問は必須回答であり、答える必要があります。';
+$string['allquestionrequireanswer'] = 'すべての質問は必須回答であり答える必要があります。';
 $string['allquestions'] = 'すべての質問を順番に、すべての学生';
 $string['allscales'] = 'すべての評価尺度、すべての学生';
 $string['alreadysubmitted'] = 'あなたはこの調査をすでに送信しています。';
@@ -43,15 +43,15 @@ $string['attls12'] = '私が議論を評価する場合、特定のクライテ�
 $string['attls12short'] = '評価にクライテリアを使用する';
 $string['attls13'] = '私は誰かの意見を評価するより理解するよう務めます。';
 $string['attls13short'] = '理解に努める';
-$string['attls14'] = '私は議論を明確にするために他の人の考え方の弱点を指摘します。';
+$string['attls14'] = '私は議論を明確にするため他の人の考え方の弱点を指摘します。';
 $string['attls14short'] = '弱点を指摘する';
-$string['attls15'] = '私が議論する場合、他の人がなぜそのように考えるのか理解するために相手の立場に立って考える傾向があります。';
+$string['attls15'] = '私が議論する場合、他の人がなぜそのように考えるのか理解するため相手の立場に立って考える傾向があります。';
 $string['attls15short'] = '相手の立場に立つ';
 $string['attls16'] = '私の分析方法は「試してみる」方法と呼べます。なぜならすべてのエビデンスを慎重に考慮したいからです。';
 $string['attls16short'] = '試してみる';
 $string['attls17'] = '私が問題を解決する場合、自分の価値観を押しつけるより論理および根拠に基づいて行動します。';
 $string['attls17short'] = '論理を重要視する';
-$string['attls18'] = '感情移入することにより、私の考え方と異なる意見を洞察することができます。';
+$string['attls18'] = '感情移入することにより私の考え方と異なる意見を洞察することができます。';
 $string['attls18short'] = '感情移入による洞察';
 $string['attls19'] = '私の意見とかけ離れた人に遭遇した場合、どのようにしてそのような考え方を持ったのかを知るために自分を相手の立場に置き換えるよう慎重に努力します。';
 $string['attls19short'] = '相手の立場に立つ';
@@ -60,11 +60,11 @@ $string['attls2'] = '私はわざと他の人と違う意見を述べること�
 $string['attls20'] = '何が「問題なのか」理解するために時間をかけます。例えば十分に議論しつくされていない内容を探します。';
 $string['attls20short'] = '何が問題?';
 $string['attls2short'] = 'わざと反対意見を述べる';
-$string['attls3'] = 'どのような体験をすればそのような考えにいたるのか知るため、他の人の体験を理解することが好きです。';
+$string['attls3'] = 'どのような体験をすればそのような考えにいたるのか知るため他の人の体験を理解することが好きです。';
 $string['attls3short'] = '他の人の体験';
 $string['attls4'] = '学習にとって一番大切なことは私と異なる意見を持った人のことを理解することです。';
 $string['attls4short'] = '異なる考え方の人を理解する';
-$string['attls5'] = '私自身のアイデンティティを得るためには、様々な人々との相互理解が最良の方法だと思います。';
+$string['attls5'] = '私自身のアイデンティティを得るためには様々な人々との相互理解が最良の方法だと思います。';
 $string['attls5short'] = '様々な人との相互理解';
 $string['attls6'] = '私と異なる背景を持った人の意見を聞くことを楽しく思います。このことでいかに1つの事柄を異なる観点から見ることができるか理解できます。';
 $string['attls6short'] = '意見を聞くことが楽しい';
@@ -95,7 +95,7 @@ $string['ciq4'] = 'フォーラムの中でどのような行動が一番困惑�
 $string['ciq4short'] = '困惑した時';
 $string['ciq5'] = 'どのようなことに一番驚きましたか?';
 $string['ciq5short'] = '驚いた時';
-$string['ciqintro'] = '今までのクラスの中での出来事を思い出して下記の質問に答えてください。';
+$string['ciqintro'] = '今までのクラスの中での出来事を思い出して以下の質問に答えてください。';
 $string['ciqname'] = 'クリティカルインシデント';
 $string['clicktocontinue'] = '続ける';
 $string['clicktocontinuecheck'] = '確認して続ける';
@@ -109,7 +109,7 @@ $string['colles12short'] = '学生が私に返答する';
 $string['colles13'] = '先生が私の考えを刺激します。';
 $string['colles13short'] = '先生が考え方を刺激する';
 $string['colles14'] = '先生が私に参加するよう励まします。';
-$string['colles14short'] = '先生が励ます';
+$string['colles14short'] = '先生が私を励ます';
 $string['colles15'] = '先生が分かりやすく説明します。';
 $string['colles15short'] = '先生が説明する';
 $string['colles16'] = '先生が批判的な自己反省を披露します。';
@@ -132,13 +132,13 @@ $string['colles23'] = '私は先生のメッセージをよく理解します。
 $string['colles23short'] = '私は先生を理解する';
 $string['colles24'] = '先生が私のメッセージをよく理解します。';
 $string['colles24short'] = '先生が私を理解する';
-$string['colles2short'] = '私の練習にとって重要';
-$string['colles3'] = '私の専門的な練習をいかに改善するか学びます。';
-$string['colles3short'] = '私の練習を改善する';
-$string['colles4'] = '私が学んでいることは専門的な練習につながります。';
-$string['colles4short'] = '私の練習につながる';
+$string['colles2short'] = '私の訓練にとって重要';
+$string['colles3'] = '私の専門的な訓練をいかに改善するか学びます。';
+$string['colles3short'] = '私の訓練を改善する';
+$string['colles4'] = '私が学んでいることは専門的な訓練につながります。';
+$string['colles4short'] = '私の訓練につながる';
 $string['colles5'] = '私が学んでいることに批判的です。';
-$string['colles5short'] = '私の学習に批判的';
+$string['colles5short'] = '私の自分の学習に批判的';
 $string['colles6'] = '私は自分の考え方に批判的です。';
 $string['colles6short'] = '自分の考え方に批判的';
 $string['colles7'] = '私の他の学生の考え方に批判的です。';
@@ -151,7 +151,7 @@ $string['collesaintro'] = 'この調査の目的はオンライン教材があ�
 
 下記24の質問では学習内容に関するあなたの実体験に関してたずねます。
 
-回答には「正解」「不正解」はありません。私たちはあなたの意見にのみ関心を持っています。あなたの回答内容は守秘義務を厳守して取り扱われ、評価に影響を与えることはありません。
+回答には「正解」「不正解」はありません。私たちはあなたの意見にのみ関心を持っています。あなたの回答内容は守秘義務を厳守して取り扱われます。評価に影響を与えることはありません。
 
 あなたの思慮深い回答はこの教材の将来的な改善に役立ちます。
 
@@ -159,9 +159,9 @@ $string['collesaintro'] = 'この調査の目的はオンライン教材があ�
 $string['collesaname'] = 'COLLES (実体験)';
 $string['collesapintro'] = 'この調査の目的はオンライン教材があなたの学習にどのような影響をあたえているのかを知ることにあります。
 
-下記の24の質問では、学習内容に関するあなたの <b>要望<b> (理想的な) および <b>実体験</b> に関してたずねます。
+下記の24の質問では学習内容に関するあなたの<b>要望<b> (理想的な) および<b>実体験</b>に関してたずねます。
 
-回答には「正解」「不正解」はありません。私たちはあなたの意見にのみ関心を持っています。あなたの回答内容は守秘義務を厳守して取り扱われます。また、評価に影響を与えることはありません。
+回答には「正解」「不正解」はありません。私たちはあなたの意見にのみ関心を持っています。あなたの回答内容は守秘義務を厳守して取り扱われます。評価に影響を与えることはありません。
 
 あなたの思慮深い回答はこの教材の将来的な改善に役立ちます。
 
@@ -173,20 +173,20 @@ $string['collesm2'] = '熟考';
 $string['collesm2short'] = '熟考';
 $string['collesm3'] = '相互理解';
 $string['collesm3short'] = '相互理解';
-$string['collesm4'] = 'チューターのサポート';
-$string['collesm4short'] = 'チューターのサポート';
+$string['collesm4'] = 'チューターサポート';
+$string['collesm4short'] = 'チューターサポート';
 $string['collesm5'] = 'ピアサポート';
 $string['collesm5short'] = 'ピアサポート';
 $string['collesm6'] = '解釈';
 $string['collesm6short'] = '解釈';
 $string['collesmintro'] = 'このオンライン教材で ...';
-$string['collespintro'] = 'この調査の目的は、あなたがオンライン学習をどのように見ているのかを知ることにあります。
+$string['collespintro'] = 'この調査の目的はあなたがオンライン学習をどのように見ているのかを知ることにあります。
 
-下記の24の質問では、学習内容に関するあなたの<b>要望</b> (理想的な) に関してたずねます。
+下記の24の質問では学習内容に関するあなたの<b>要望</b> (理想的な) に関してたずねます。
 
-回答には「正解」「不正解」はありません。私たちはあなたの意見にのみ関心を持っています。あなたの回答内容は守秘義務を厳守して取り扱われます。また、評価に影響を与えることはありません。
+回答には「正解」「不正解」はありません。私たちはあなたの意見にのみ関心を持っています。あなたの回答内容は守秘義務を厳守して取り扱われます。評価に影響を与えることはありません。
 
-あなたの思慮深い回答は、この教材の将来的な改善に役立ちます。
+あなたの思慮深い回答はこの教材の将来的な改善に役立ちます。
 
 ありがとうございます。';
 $string['collespname'] = 'COLLES (要望)';
@@ -206,7 +206,7 @@ $string['eventreportdownloaded'] = '調査レポートがダウンロードさ�
 $string['eventreportviewed'] = '調査レポートが閲覧されました。';
 $string['eventresponsesubmitted'] = '調査回答が送信されました。';
 $string['guestsnotallowed'] = '登録済みユーザのみ調査を送信することができます。';
-$string['howlong'] = 'この調査を終えるのにどのくらいの時間がかかりましたか?';
+$string['howlong'] = 'この調査を終えるのにどのくらい時間がかかりましたか?';
 $string['howlongoptions'] = '1分以下,1-2分,2-3分,3-4分,4-5分,5-10分,10分以上';
 $string['ifoundthat'] = '私は次のことを発見しました:';
 $string['introtext'] = 'イントロダクションテキスト';
@@ -214,7 +214,7 @@ $string['invalidsurveyid'] = '調査IDが正しくありません。';
 $string['invalidtmptid'] = '無効なテンプレートIDです。';
 $string['ipreferthat'] = '私は次のことが好きです:';
 $string['modulename'] = '調査';
-$string['modulename_help'] = '調査モジュールはオンライン学習環境における評価および刺激に関して有益であると検証された多くの調査手段を提供します。自身の授業に関して学ぶことや、指導に反映させる手助けとするため、教師は学生からデータを収集する目的で使用できます。
+$string['modulename_help'] = '調査モジュールはオンライン学習環境における評価および刺激に関して有益であると検証された多くの調査手段を提供します。自身の授業に関して学ぶことや指導に反映させる手助けとするため教師は学生からデータを収集する目的で使用できます。
 
 調査ツールには事前に質問が実装されていることに留意してください。自分の調査を作成したい場合、フィードバックモジュールをお使いください。';
 $string['modulenameplural'] = '調査';
@@ -243,11 +243,11 @@ $string['scaleagree5'] = '全く賛成できない,多少賛成できない,ど�
 $string['scales'] = '評価尺度';
 $string['scaletimes5'] = 'ほとんどない,まれに,時々,頻繁に,ほとんどいつも';
 $string['search:activity'] = '調査 - 活動情報';
-$string['seemoredetail'] = '詳細を見るためにはここをクリックしてください。';
+$string['seemoredetail'] = 'さらに詳細を見るためにはここをクリックしてください。';
 $string['selectedquestions'] = '評価尺度から選ばれた質問、すべての学生';
 $string['summary'] = '概要';
 $string['survey:addinstance'] = '新しい調査を追加する';
-$string['surveycompleted'] = '調査が終了しました。下のグラフはクラスの平均とあなたの結果を比較したものです。';
+$string['surveycompleted'] = 'あなたはこの調査を完了しました。下のグラフはクラス平均とあなたの結果を比較したものです。';
 $string['surveycompletednograph'] = 'あなたはこの調査を完了しました。';
 $string['survey:download'] = '回答をダウンロードする';
 $string['surveygraph'] = '調査グラフ';
@@ -259,8 +259,8 @@ $string['surveytype'] = '調査タイプ';
 $string['surveytype_help'] = '調査には下記3つのタイプがあります:
 
 * 考え方と学び方に対する姿勢の調査 (ATTLS - Attitudes to Thinking and Learning Survey) - どの人が「関連認識者」 (学ぶことに楽しみを感じ、多くの場合、協力的であり愛想がよく、他の人とアイデアを構築することを望む傾向があります) または「分離認識者」 (学習に対して批判的および論争的なスタンスをとる傾向があります) であるか程度を測定します。
-* クリティカル・インシデント調査
-* 構成主義オンライン学習環境調査　(COLLES - On-line Learning Environment Survey) - ワールドワイドウェブの相互作用的な性質が学生の動的学習の実践に興味を持たせる効果の程度を測定します。';
-$string['thanksforanswers'] = '{$a} さん、調査にご協力いただきまして、ありがとうございます';
+* クリティカルインシデント調査
+* 構成主義オンライン学習環境調査 (COLLES - On-line Learning Environment Survey) - ワールドワイドウェブの相互作用的な性質が学生の動的学習の実践に興味を持たせる効果の程度を測定します。';
+$string['thanksforanswers'] = '{$a} さん、調査にご回答頂きましてありがとうございます';
 $string['time'] = '時間';
 $string['viewsurveyresponses'] = '{$a} 件の調査結果を表示する';

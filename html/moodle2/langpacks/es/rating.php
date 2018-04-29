@@ -43,7 +43,7 @@ $string['aggregatetype_help'] = 'El tipo de consolidación define cómo se combi
 Si "No hay valoraciones" está seleccionado, entonces la actividad no aparece en el libro de calificaciones.';
 $string['allowratings'] = '¿Permitir que los ítems sean calificados?';
 $string['allratingsforitem'] = 'Todas las clasificaciones emitidas';
-$string['capabilitychecknotavailable'] = 'La comprobación de privilegios no está disponible hasta que se guarde la actividad';
+$string['capabilitychecknotavailable'] = 'La comprobación de capacidades no está disponible hasta que se guarde la actividad';
 $string['couldnotdeleteratings'] = 'Lo sentimos, no se puede eliminar, puesto que alguien lo ha calificado';
 $string['norate'] = 'No se permite calificar ítems.';
 $string['noratings'] = 'No se han emitido calificaciones';

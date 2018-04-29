@@ -95,7 +95,7 @@ $string['filenotuploadederror'] = '\'{$a}\' fitxategia ezin da egoki eguneratu';
 $string['files'] = 'Fitxategiak';
 $string['filtername'] = 'Wikiaren auto-estekak';
 $string['firstpagetitle'] = 'Lehen orriaren izena';
-$string['firstpagetitle_help'] = 'Wikiaren hasiera-orriaren izenburua';
+$string['firstpagetitle_help'] = 'Wikiaren hasiera-orriaren izenburua. Behin wikia sortu dela, ezin da titulua aldatu.';
 $string['forceformat'] = 'Behartu formatua';
 $string['forceformat_help'] = 'Formatua behartzen bada (laukitxoa markatuta) ezin da formatua aukeratua wiki-orria editatzean.';
 $string['format'] = 'Formatua';
@@ -150,7 +150,7 @@ Wikiak erabili daitezke
 
 * Taldeka hitzaldien oharrak edo ikasgai-apunteak osatzeko
 * Taldeko kideek laneko plangintza antolatu edo bilera agenda osatzeko
-* Ikasleek elkarlanean online liburu bat osatzeko, tutoreak proposatutako gaiaren inguruan edukiak sortuz.
+* Ikasleek elkarlanean on-line liburu bat osatzeko, tutoreak proposatutako gaiaren inguruan edukiak sortuz.
 * Istorio-kontaketa edo poesia elkarlanean sortzeko, non partaide bakoitzak lerro edo bertso bat idazten duen.
 * Azterketa ohar edo berrikuspenen norbanakoen eguneroko bat osatzeko (banakako wikia erabilita)';
 $string['modulenameplural'] = 'Wikiak';

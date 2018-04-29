@@ -34,7 +34,7 @@ $string['deletea'] = 'Elimina {$a}';
 $string['delete_confirmation'] = 'Sei sicuro di rimuovere <strong>.{$a}</strong>?';
 $string['deletefiletypes'] = 'Elimina un tipo di file';
 $string['description'] = 'Descrizione personalizzata';
-$string['description_help'] = 'Una descrizione breve del tipo di file, ad esempio &lsquo;Kindle ebook&rsquo;. Se il sito supporta più lingue ed utilizza il filtro multilingua, è possibile inserire nel campo dei tag multi lingua per ottenere la descrizione in diverse lingue.';
+$string['description_help'] = 'Una descrizione breve del tipo di file, ad esempio ‘Kindle ebook’. Se il sito supporta più lingue ed utilizza il filtro multilingua, è possibile inserire nel campo dei tag multi lingua per ottenere la descrizione in diverse lingue.';
 $string['descriptiontype'] = 'Descrizione del tipo';
 $string['descriptiontype_custom'] = 'Descrizione personalizzata da inserire nel campo sottostante';
 $string['descriptiontype_default'] = 'Default (tipo MIME o la stringa di lingua corrispondente, se disponibile)';
@@ -54,13 +54,13 @@ $string['error_notfound'] = 'Non è possibile trovare Il tipo di file con estens
 $string['extension'] = 'Estensione';
 $string['extension_help'] = 'L\'estensione del nome del file, senza il punto. Ad esempio ‘mobi’';
 $string['groups'] = 'Tipologia';
-$string['groups_help'] = 'Elenco facoltativo delle tipologie alle quali appartiene il tipo di file. Si tratta di tipologie generiche come ad esempio &lsquo;document&rsquo; and &lsquo;image&rsquo;.';
+$string['groups_help'] = 'Elenco facoltativo delle tipologie alle quali appartiene il tipo di file. Si tratta di tipologie generiche come ad esempio ‘document’ and ‘image’.';
 $string['icon'] = 'Icona del file';
 $string['icon_help'] = 'Nome del file dell\'icona.
 
 L\'elenco delle icone è tratto dalla cartella /pix/f, presente nella installazione di Moodle. Se lo si desidera, nella cartella è possibile aggiungere icone personalizzate.';
 $string['mimetype'] = 'Tipo MIME';
-$string['mimetype_help'] = 'Il MIME associato al tipo di file, ad esempio &lsquo;application/x-mobipocket-ebook&rsquo;';
+$string['mimetype_help'] = 'Il MIME associato al tipo di file, ad esempio \'application/x-mobipocket-ebook\'';
 $string['pluginname'] = 'Tipi di file';
 $string['revert'] = 'Ripristina {$a} ai default di Moodle';
 $string['revert_confirmation'] = 'Sei sicuro di ripristinare <strong>.{$a}</strong> al default di Moodle, perdendo le modifiche effettuate?';

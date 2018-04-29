@@ -521,7 +521,7 @@ function valid_activity($resultext, $book, $rcontentactivityid, $unidadid) {
 
             if ($book->structureforaccess == 1) {
                 // Just update if no isset unit/actividad title or no isset unit/activity order
-                $update = $actividad && ((empty($activitat->name) && !empty($resultext->ActividadTitulo)) || (empty($activitat->sortorder) && !empty($resultext->ActividadOrden)));
+                $update = $actividad && ((empty($actividad->name) && !empty($resultext->ActividadTitulo)) || (empty($activitat->sortorder) && !empty($resultext->ActividadOrden)));
 
                 // Si no se ha encontrado la unidad o se ha encontrado pero cambia el nombre o orden llamamos al ws
                 if (!$actividad || $update) {

@@ -20,11 +20,15 @@ if (! $rcontent = $DB->get_record('rcontent', array('id' => $cm->instance))) {
 
 require_login($course, false, $cm);
 
-$userid = required_param('user', PARAM_INT);  // User ID
+$userid = required_param('userid', PARAM_INT);  // User ID
 $attempt = optional_param('attempt', '1', PARAM_INT);  // attempt number
 $update = optional_param('update', false, PARAM_INT);
 $unitid = optional_param('b', false, PARAM_INT);     // Unit Id
 $activityid = optional_param('c', false, PARAM_INT);     // Activity Id
+
+
+$gradeid= optional_param('gradeid', false, PARAM_INT);
+
 
 // Filter by status, get parameter with the filterby
 $filterby   = optional_param('filterby', '', PARAM_RAW);
@@ -54,10 +58,11 @@ $userdata = rcontent_get_user_data($userid);
 $toform = new stdClass();
 $toform->rcontentid = $rcontent->id;
 $toform->id = $cm->id;
-$toform->user = $user->id;
+$toform->userid = $user->id;
 $toform->attempt = $attempt;
 $toform->duration = rcontent_get_ellapsed_time($grade->totaltime);
-$toform->gradeid = $grade->id;
+//$toform->gradeid = $grade->id;
+$toform->gradeid = $gradeid;
 $toform->grade = $grade->justgrade;
 $toform->comment_editor['text'] = $grade->justcomments;
 $toform->comment_editor['format'] = FORMAT_HTML;
@@ -81,9 +86,23 @@ if (!$mform->is_cancelled() && $data = $mform->get_data()) {
 
     // Update gradebook
     $rcontent = $DB->get_record('rcontent', array('id' => $rcontent->id));
-    rcontent_update_grades($rcontent, $data->user);
+    rcontent_update_grades($rcontent, $data->userid);
 
-    add_to_log($course->id, 'rcontent', 'update grades', 'grade.php?id='.$data->id.'&user='.$data->user, $data->user, $data->id);
+    //add_to_log($course->id, 'rcontent', 'update grades', 'grade.php?id='.$data->id.'&user='.$data->user, $data->user, $data->id);
+    // add to log
+    $params = array(
+        'context' => context_module::instance($cm->id),
+        'relateduserid' => $userid,
+        'other' => array(
+            //'gradeid' => $grade->id,
+            'gradeid'=>$data->gradeid,
+            'rcontentid' =>$data->itemid
+        )
+    );
+
+    $event = \mod_rcontent\event\grades_updated::create($params);
+    $event->add_record_snapshot('rcontent', $rcontent);
+    $event->trigger();
 
     close_window();
 }

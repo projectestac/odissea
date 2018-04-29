@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'Tillåt användare att docka det här blocket';
 $string['pluginname'] = 'Inställningar';
+$string['settings:addinstance'] = 'Lägg till blocket Inställningar';
 $string['settings:myaddinstance'] = 'Lägg till ett nytt block för Inställningar till Mitt Moodle';

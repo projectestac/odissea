@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enableleap2a'] = 'Gaitu Leap2A portfoliorako laguntza (Mahara 1.3 edo altuagoa beharrezkoa da)';
 $string['err_invalidhost'] = 'MNet ostalari baliogabea';
 $string['err_networkingoff'] = 'Moodle sarea itzalita dago';
 $string['err_nomnetauth'] = 'Moodle Sarea motako  autentifikaziorako plugina desgaituta dago';

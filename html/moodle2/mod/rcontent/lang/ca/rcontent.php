@@ -78,6 +78,7 @@ $string['whatgrade'] = 'Qualificació dels intents';
 $string['whatgrade_help'] = 'Aquesta preferència fixa el valor per defecte sobre la calificació d\'intents';
 $string['withselected'] = 'Amb els seleccionats';
 
+
 //wsSeguimiento
 $string['usrnotexists'] = 'L\'usuari/ària no pertany al curs.';
 $string['mandatoryvalues'] = 'Falten valors obligatoris';
@@ -104,3 +105,5 @@ $string['rcontent:updatescore'] = 'Actualitzar la puntuació';
 $string['rcontent:viewreport'] = 'Veure informe';
 $string['rcontent:viewresult'] = 'Veure resultats';
 $string['rcontent:viewscores'] = 'Veure puntuació';
+$string['fullscreen'] = 'Visualització de pantalla completa';
+$string['eventgrades_updated'] = 'Actualitzar la puntuació';

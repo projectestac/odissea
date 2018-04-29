@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = 'Activiteitenrapport bekeken';
 $string['eventoutlinereportviewed'] = 'Overzichtsrapport bekeken';
 $string['neverseen'] = 'Nooit gezien';
+$string['nocapability'] = 'Geen toegang tot cursusactiviteitenrapport';
 $string['nologreaderenabled'] = 'Er is geen loglezer ingeschakeld';
 $string['numviews'] = '{$a->numviews} door {$a->distinctusers} gebruikers';
 $string['outline:view'] = 'Bekijk cursusactiviteitenrapport';

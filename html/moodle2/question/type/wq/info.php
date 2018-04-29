@@ -19,9 +19,9 @@ require_once($CFG->dirroot . '/question/type/wq/config.php');
 // BEGIN HELPERS FUNCTIONS.
 function wrs_assert_simple($condition) {
     if ($condition) {
-        return '<span class="ok wrs_filter wrs_plugin">OK</span>';
+        return '<span class="ok wrs_filter wrs_plugin">'. get_string('ok', 'qtype_wq').'</span>';
     } else {
-        return '<span class="error wrs_filter wrs_plugin">ERROR</span>';
+        return '<span class="error wrs_filter wrs_plugin">'. get_string('error', 'qtype_wq').'</span>';
     }
 }
 
@@ -40,9 +40,9 @@ function wrs_assert($condition, $reporttext, $solutionlink) {
 
 function wrs_getstatus($condition) {
     if ($condition) {
-            return '<span class="ok wrs_filter wrs_plugin">OK</span>';
+            return '<span class="ok wrs_filter wrs_plugin">'. get_string('ok', 'qtype_wq').'</span>';
     } else {
-            return '<span class="error wrs_filter wrs_plugin">ERROR</span>';
+            return '<span class="error wrs_filter wrs_plugin">'. get_string('error', 'qtype_wq').'</span>';
     }
 }
 
@@ -94,6 +94,10 @@ if (isset($plugin->release)) {
     $version = $plugin->release;
     $reporttext = get_string('info_test1_rt1', 'qtype_wq') . $version;
     $condition = true;
+} else if ($plugin->maturity == MATURITY_BETA) {
+    $version = $plugin->version;
+    $reporttext = get_string('info_test1_rt1', 'qtype_wq') . $version;
+    $condition = true;
 } else {
     $reporttext = get_string('info_test1_rt2', 'qtype_wq');
     $condition = false;
@@ -121,6 +125,9 @@ if (isset($plugin->release)) {
         $reporttext = get_string('info_test2_rt2', 'qtype_wq') . ' ' . $version . ' ' . $plugininfo;
         $condition = false;
     }
+} else if ($plugin->maturity == MATURITY_BETA) {
+    $reporttext = get_string('info_test2_rt1', 'qtype_wq') . ' ' . $plugininfo;
+    $condition = true;
 } else {
     $reporttext = get_string('info_test2_rt3', 'qtype_wq') . ' ' . $plugininfo;
     $condition = false;

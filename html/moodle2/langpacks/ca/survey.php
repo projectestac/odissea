@@ -198,7 +198,9 @@ $string['invalidsurveyid'] = 'L\'ID de l\'enquesta és incorrecte';
 $string['invalidtmptid'] = 'L\'ID de la plantilla és invàlid';
 $string['ipreferthat'] = 'Prefereixo això';
 $string['modulename'] = 'Enquesta';
-$string['modulename_help'] = 'El mòdul d\'exàmens proporciona tres tipus de instruments per determinar i estimular l\'aprenentatge en ambients en línia. El professor pot utilitzar-los per recopilar dades que poden ajudar-lo a aprendre sobre les seves classes i mostren el procés d\'aprenentatge.';
+$string['modulename_help'] = 'El mòdul d\'enquestes proporciona uns tipus d\'instruments d\'enquestes verificats que s\'han considerat útils per determinar i estimular l\'aprenentatge en entorns en línia. El professor pot utilitzar-los per recopilar dades dels estudiants que poden ajudar-lo a aprendre sobre les seves classes i reflexionar sobre la tasca docent.
+
+Noteu que aquestes eines d\'enquesta tenen les preguntes preestablertes. Els professors que vulguin crear la seva pròpia enquesta han d\'utilitzar l\'activitat de «Retroacció».';
 $string['modulenameplural'] = 'Enquestes';
 $string['name'] = 'Nombre';
 $string['newsurveyresponses'] = 'Noves respostes a l’enquesta';

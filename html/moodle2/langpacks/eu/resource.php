@@ -55,7 +55,7 @@ $string['displayselect_help'] = 'Ezarpen honek, fitxategi-mota kontuan hartuta e
 * Leiho berria - Fitxategia web-nabigatzailearen leiho berri batean erakutsiko da, menuekin eta nabigazio-barrarekin.';
 $string['dnduploadresource'] = 'Sortu fitxategia izeneko baliabidea';
 $string['encryptedcode'] = 'Kode zifratua';
-$string['filenotfound'] = 'Ez da fitxategia aurkitu, barkatu.';
+$string['filenotfound'] = 'Ez da fitxategia aurkitu, sentitzen dugu.';
 $string['filterfiles'] = 'Fitxategiaren edukian iragazkiak erabili ';
 $string['filterfilesexplain'] = 'Aukeratu fitxategien edukiko iragazki mota; kontuan izan honek Flash eta Java applet-etan arazoak eragin ditzakela. Ziurtatu mesedez testu-fitxategi guztiek UTF-8 kodeaketa dutela.';
 $string['filtername'] = 'Automatikoki lotutako baliabideak';
@@ -76,7 +76,7 @@ Fitxategia erabil daiteke
 * Web-gune txiki bat ikastaroko baliabide moduan gehitzeko
 * Software zehatz batzuen zirriborro-fitxategiak eskuragarri jartzeko, ikasleek edita eta kalifikatzeko bidal dezaten';
 $string['modulenameplural'] = 'Fitxategiak';
-$string['notmigrated'] = 'Heredatutako baliabide-mota hau ({$a}) ez da oraindik migratu, barkatu.';
+$string['notmigrated'] = 'Heredatutako baliabide-mota hau ({$a}) ez da oraindik migratu, sentitzen dugu.';
 $string['optionsheader'] = 'Erakusteko aukerak';
 $string['page-mod-resource-x'] = 'Fitxategia moduluaren edozein orri';
 $string['pluginadministration'] = 'Fitxategiaren kudeaketa';

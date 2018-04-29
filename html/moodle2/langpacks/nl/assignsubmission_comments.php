@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Deelnemer {$a}';
+$string['blindmarkingviewfullname'] = 'Deelnemer {$a->participantnumber} ({$a->participantfullname';
 $string['default'] = 'Standaard ingeschakeld';
 $string['default_help'] = 'Indien ingeschakeld, zal deze instuurmethode als standaard ingeschakeld worden voor alle nieuwe opdrachten.';
 $string['enabled'] = 'Opmerkingen insturen';

@@ -43,13 +43,13 @@ class courses_vicensvives_setting_wscheck extends admin_setting {
         try {
             $ws->books();
         } catch (vicensvives_ws_error $e) {
-            $errors[] = html_writer::tag('div', $e->getMessage(), array('class' => 'alert alert-error'));
+            $errors[] = html_writer::tag('div', $e->getMessage(), array('class' => 'alert alert-danger'));
         }
 
         // Comprueba si el plugin local del web service está instalado
         if (!courses_vicensvives_setting_moodlews::get_service()) {
             $message = get_string('moodlewsnotinstalled', 'block_courses_vicensvives');
-            $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-error'));
+            $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-danger'));
         }
 
         $adminroot = admin_get_root();
@@ -58,13 +58,13 @@ class courses_vicensvives_setting_wscheck extends admin_setting {
             // Comprueba si el web service está configurado
             if (!courses_vicensvives_setting_moodlews::is_enabled()) {
                 $message = get_string('moodlewsnotenabled', 'block_courses_vicensvives');
-                $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-error'));
+                $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-danger'));
             }
 
             // Comprueba si ha habido un error en enviar el token
             if (array_key_exists('s__vicensvives_moodlews', $adminroot->errors)) {
                 $message = $adminroot->errors['s__vicensvives_moodlews']->error;
-                $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-error'));
+                $errors[] = html_writer::tag('div', $message, array('class' => 'alert alert-danger'));
             }
         }
 

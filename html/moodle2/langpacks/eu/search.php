@@ -105,6 +105,6 @@ $string['totalsize'] = 'Tamaina osoa';
 $string['totime'] = 'Data honen aurretik eguneratuta:';
 $string['type'] = 'Mota';
 $string['uncompleteindexingerror'] = 'Indexatzea ez da osorik egoki egin; mesedez, abiarazi berriz.';
-$string['versiontoolow'] = 'Barkatu, bilaketa orokorrak PHP 5.0.0 edo aurreragokoa behar du';
+$string['versiontoolow'] = 'Sentitzen dugu, bilaketa orokorrak PHP 5.0.0 edo aurreragokoa behar du';
 $string['viewresultincontext'] = 'Ikusi emaitza hau bere testuinguruan';
 $string['wordsintitle'] = 'Hitzak izenburuan';

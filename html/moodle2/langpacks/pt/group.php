@@ -62,7 +62,7 @@ $string['enrolmentkey'] = 'Senha de inscrição';
 $string['enrolmentkeyalreadyinuse'] = 'Esta chave de inscrição já está a ser usada por outro grupo.';
 $string['enrolmentkey_help'] = 'Uma senha de inscrição permite que o acesso à disciplina seja limitado apenas para aqueles que conhecem a senha. Se especificar a senha de inscrição de um grupo, essa senha não permitirá apenas o acesso do utilizador à disciplina, mas também a sua inscrição automática como membro do grupo.
 
-Nota: As senhas de inscrição para grupos devem ser ativadas nas configurações de autoinscrição, devendo também ser especificada uma chave de inscrição para a disciplina.';
+Nota: As senhas de inscrição para grupos devem ser ativadas nas configurações de autoinscrição e também deve ser especificada uma senha de inscrição para a disciplina.';
 $string['erroraddremoveuser'] = 'Ocorreu um erro ao adicionar/remover o utilizador {$a} de um grupo';
 $string['erroreditgroup'] = 'Erro ao criar/atualizar grupo {$a}';
 $string['erroreditgrouping'] = 'Erro ao criar/atualizar agrupamento {$a}';
@@ -82,17 +82,17 @@ $string['eventgroupmemberadded'] = 'Membro do grupo adicionado';
 $string['eventgroupmemberremoved'] = 'Membro do grupo removido';
 $string['eventgroupupdated'] = 'Grupo atualizado';
 $string['existingmembers'] = 'Membros existentes: {$a}';
-$string['filtergroups'] = 'Filtrar grupos por:';
+$string['filtergroups'] = 'Filtrar grupos por:&nbsp;';
 $string['group'] = 'Grupo';
-$string['groupaddedsuccesfully'] = 'Grupo {$a} adicionado com sucesso';
+$string['groupaddedsuccesfully'] = 'Grupo \'{$a}\' adicionado com sucesso';
 $string['groupaddedtogroupingsuccesfully'] = 'O grupo {$a->groupname} foi adicionado com sucesso ao agrupamento {$a->groupingname}';
 $string['groupby'] = 'Criar automaticamente com base em';
-$string['groupdescription'] = 'Descrição do Grupo';
+$string['groupdescription'] = 'Descrição do grupo';
 $string['groupinfo'] = 'Informação sobre o grupo selecionado';
 $string['groupinfomembers'] = 'Informação sobre os membros selecionados';
 $string['groupinfopeople'] = 'Informação sobre as pessoas selecionadas';
 $string['grouping'] = 'Agrupamento';
-$string['groupingaddedsuccesfully'] = 'O agrupamento {$a} foi adicionado com sucesso';
+$string['groupingaddedsuccesfully'] = 'O agrupamento \'{$a}\' foi adicionado com sucesso';
 $string['groupingdescription'] = 'Descrição do agrupamento';
 $string['grouping_help'] = 'Um agrupamento é uma compilação de grupos dentro de uma disciplina. Se um grupo é selecionado, os alunos atribuídos a grupos dentro do agrupamento poderão trabalhar em conjunto.';
 $string['groupingname'] = 'Nome do agrupamento';
@@ -117,7 +117,7 @@ $string['groupmode_help'] = 'A definição do modo de grupo pode ser uma das tr�
 
 O modo de grupo definido ao nível da disciplina será o modo aplicado automaticamente a todas as atividades nessa disciplina. Contudo, cada atividade  poderá também ter a sua própria definição de modo de grupo. No entanto, se o modo de grupo for forçado ao nível da disciplina, então o modo de grupo definido no âmbito das atividades será ignorado.';
 $string['groupmy'] = 'Meu grupo';
-$string['groupname'] = 'Nome do Grupo';
+$string['groupname'] = 'Nome do grupo';
 $string['groupnameexists'] = 'O nome de grupo \'{$a}\' já existe nesta disciplina, escolha outro.';
 $string['groupnotamember'] = 'Não é membro desse grupo.';
 $string['groups'] = 'Grupos';
@@ -152,7 +152,7 @@ $string['namingscheme_help'] = 'O símbolo de arroba (@) pode ser utilizado para
 
 O símbolo cardinal (#) pode ser utilizado para criar grupos com nomes que contenham números. Por exemplo, o Grupo # irá gerar grupos, denominados Grupo 1, Grupo 2, Grupo 3, ...';
 $string['newgrouping'] = 'Novo agrupamento';
-$string['newpicture'] = 'Nova imagem';
+$string['newpicture'] = 'Nova fotografia';
 $string['newpicture_help'] = 'Selecione uma imagem no formato JPG ou PNG. A imagem será ajustada a um quadrado e redimensionada para 100x100 pixels.';
 $string['noallocation'] = 'Sem atribuições';
 $string['nogroup'] = 'Sem grupo';
@@ -162,7 +162,7 @@ $string['nogroupsassigned'] = 'Não foram atribuídos grupos';
 $string['nopermissionforcreation'] = 'Não é possível criar o grupo"{$a}", porque não tem as permissões necessárias';
 $string['nosmallgroups'] = 'Apagar último pequeno grupo';
 $string['notingroup'] = 'Ignorar utilizadores em grupos';
-$string['notingrouping'] = '[Não está num agrupamento]';
+$string['notingrouping'] = '[Não pertence a nenhum agrupamento]';
 $string['notingrouplist'] = '[Não pertence a nenhum grupo]';
 $string['nousersinrole'] = 'Não existem utilizadores adequados no papel selecionado';
 $string['number'] = 'Número de grupos/membros por grupo';
@@ -183,7 +183,7 @@ $string['removeselectedusers'] = 'Remover utilizadores selecionados';
 $string['selectfromgroup'] = 'Selecione os membros do grupo';
 $string['selectfromgrouping'] = 'Selecione os membros do agrupamento';
 $string['selectfromrole'] = 'Selecionar membros com o papel';
-$string['showgroupsingrouping'] = 'Mostrar grupos no agrupamento';
+$string['showgroupsingrouping'] = 'Mostrar grupos do agrupamento';
 $string['showmembersforgroup'] = 'Mostrar membros do grupo';
 $string['toomanygroups'] = 'Número de utilizadores insuficiente para preencher este número de grupos; existem apenas {$a} utilizadores no papel selecionado.';
 $string['usercount'] = 'Número de utilizadores';

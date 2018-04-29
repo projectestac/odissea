@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['participants:addinstance'] = 'Lägg till blocket Personer';
 $string['pluginname'] = 'Personer';

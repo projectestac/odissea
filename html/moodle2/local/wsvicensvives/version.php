@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-$plugin->version  = 2016070700;
-$plugin->requires = 2012062500;
+defined('MOODLE_INTERNAL') || die();
+
+$plugin->version  = 2016072900;
+$plugin->requires = 2014111000;
 $plugin->component = 'local_wsvicensvives';

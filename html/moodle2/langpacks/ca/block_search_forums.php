@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['advancedsearch'] = 'Cerca avançada.';
+$string['advancedsearch'] = 'Cerca avançada';
 $string['pluginname'] = 'Cerca als fòrums';
 $string['search_forums:addinstance'] = 'Afegir un bloc nou per a cercar als fòrums';

@@ -10,6 +10,7 @@ function set_marsupial_state($enable) {
 }
 
 function is_marsupial_enabled() {
+    global $CFG;
     if (isset($CFG->ismarsupial) && $CFG->ismarsupial) {
         return true;
     } else {

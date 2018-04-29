@@ -78,6 +78,7 @@ $string['whatgrade'] = 'Calificación de intentos';
 $string['whatgrade_help'] = 'Esta preferencia fija el valor por defecto sobre la calificación de intentos';
 $string['withselected'] = 'Con seleccionadas';
 
+
 //wsSeguimiento
 $string['usrnotexists'] = 'El usuario no pertenece al curso';
 $string['mandatoryvalues'] = 'Faltan valores obligatorios';
@@ -104,3 +105,5 @@ $string['rcontent:updatescore'] = 'Actualizar puntuación';
 $string['rcontent:viewreport'] = 'Ver informe';
 $string['rcontent:viewresult'] = 'Ver resultados';
 $string['rcontent:viewscores'] = 'Ver puntuación';
+$string['fullscreen'] = 'Mostrar a pantalla completa';
+$string['eventgrades_updated'] = 'Actualizar puntuación';

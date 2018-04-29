@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Relatório de pauta global visualizado';
-$string['gradesoverview'] = 'Visão geral das notas';
+$string['gradesoverview'] = 'Visão global das notas';
 $string['overview:view'] = 'Ver pauta global';
 $string['pluginname'] = 'Pauta global';

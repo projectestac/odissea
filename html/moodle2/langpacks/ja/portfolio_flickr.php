@@ -44,7 +44,7 @@ $string['safetylevel'] = 'セーフティレベル';
 $string['screenshot'] = 'スクリーンショット';
 $string['set'] = 'セット';
 $string['setupinfo'] = 'セットアップインストラクション';
-$string['setupinfodetails'] = 'APIキーおよび秘密鍵ストリングを取得するにはFlickrにログインした後、<a href="{$a->applyurl}">新しいキーを取得してください</a>。あなたに新しいキーおよび秘密鍵が作成された場合、ページ内の「Edit auth flow for this app」リンクをクリックしてください。「Callback URL」フィールドに次の値を入力してください: <br /><code>{$a->callbackurl}</code><br />あなたのMoodleサイトの説明およびロゴを任意で提供することもできます。これらの値は後であなたの<a href="{$a->keysurl}">Flickrアプリケーション一覧ページ</a> で編集することができます。';
+$string['setupinfodetails'] = 'APIキーおよび秘密鍵ストリングを取得するにはFlickrにログインした後、<a href="{$a->applyurl}">新しいキーを取得してください</a>。あなたに新しいキーおよび秘密鍵が作成された場合、ページ内の「Edit auth flow for this app」リンクをクリックしてください。「Callback URL」フィールドに次の値を入力してください: <br /><code>{$a->callbackurl}</code><br />あなたのMoodleサイトの説明およびロゴを任意で提供することもできます。これらの値は後であなたの<a href="{$a->keysurl}">Flickrアプリケーション一覧ページ</a>で編集することができます。';
 $string['sharedsecret'] = '秘密鍵ストリング';
 $string['title'] = 'タイトル';
 $string['uploadfailed'] = 'flickr.comへのイメージのアップロードに失敗しました: {$a}';

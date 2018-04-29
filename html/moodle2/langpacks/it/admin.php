@@ -29,7 +29,7 @@ $string['accessdenied'] = 'Accesso negato';
 $string['accounts'] = 'Profili';
 $string['addcategory'] = 'Aggiungi categoria';
 $string['additionalhtml'] = 'HTML aggiuntivo';
-$string['additionalhtml_desc'] = 'Le impostazioni seguenti consentono di aggiungere codice HTML che sarà incluso in tutte le pagine. E\' possibile specificare codice HTML da inserire all\'interno del tag HEAD, all\'interno del corpo pagina dopo l\'apertura del tag BODY oppure subito prima della chiusura del tag BODY.<br/>Le impostazioni consentono di aggiungere intestazioni o note a piè di pagina personalizzati su tutte le pagine, oppure di aggiungere servizi quali Google Analytics con facilità ed indipendentemente dal tema utilizzato.';
+$string['additionalhtml_desc'] = 'Le impostazioni seguenti consentono di aggiungere codice HTML da includere in tutte le pagine. E\' possibile specificare codice HTML da inserire all\'interno del tag HEAD, all\'interno del corpo pagina dopo l\'apertura del tag BODY oppure subito prima della chiusura del tag BODY.<br/>Le impostazioni consentono di aggiungere intestazioni o note a piè di pagina personalizzati su tutte le pagine, oppure di aggiungere servizi quali Google Analytics con facilità ed indipendentemente dal tema utilizzato.';
 $string['additionalhtmlfooter'] = 'Prima della chiusura del tag BODY';
 $string['additionalhtmlfooter_desc'] = 'Il codice HTML verrà aggiunto in tutte le pagine prima della chiusura del tag BODY.';
 $string['additionalhtmlhead'] = 'All\'interno del tag HEAD';
@@ -150,7 +150,7 @@ $string['configallowblockstodock'] = 'Se il tema scelto supporta questa funzione
 $string['configallowcategorythemes'] = 'Abilitando questa opzione, i temi potranno essere impostati a livello di categoria. L\'impostazione influenzerà tutte le sotto categorie ed i relativi corsi a meno che gli stessi non abbiano  impostato esplicitamente il tema da utilizzare. ATTENZIONE: L\'abilitazione dei temi di categoria può influenzare le prestazioni.';
 $string['configallowcoursethemes'] = 'Se abilitato, sarà  possibile impostare un tema diverso per ogni corso. Il tema del corso avrà precedenza su ogni altra preferenza (tema di sito, tema dell\'utente, tema di sessione).';
 $string['configallowedemaildomains'] = 'Elenco dei domini di posta che è possibile rivelare nella sezione "From" delle email in uscita. Il valore "Vuoto" di default utilizzerà l\'indirizzo no-reply per tutte le mail in uscita. E\' consentito l\'utilizzo dei caratteri jolly,  ad esempio *.example.com consentirà l\'invio di email da qualsiasi sotto dominio di example.com, ma non da example.com, che eventualmente può essere aggiunto all\'elenco.';
-$string['configallowemailaddresses'] = 'Se si desidera che le email utilizzabili appartengano solo a determinati domini, è possibile elencare i domini autorizzati in questa impostazione, avendo cura di separare i domini tra loro con uno spazio. Le email che non appartengono ai domini elencati non saranno accettate. Per autorizzare anche i sotto domini, elencare il dominio precedendolo con \'.\'. Ad esempio  <strong>ourcollege.edu.au .gov.au</strong>';
+$string['configallowemailaddresses'] = 'Se si desidera che le email utilizzabili appartengano solo a determinati domini, è possibile elencare i domini autorizzati in questa impostazione, avendo cura di separare i domini tra loro con uno spazio. Le email che non appartengono ai domini elencati non saranno accettate. Per autorizzare anche i sotto domini, elencare il dominio precedendolo con \'.\'. Per autorizzare un dominio e i suoi sotto domini, inserire il dominio una volta col punto ed una volta senza, ad esempio  .ourcollege.edu.au ourcollege.edu.au.';
 $string['configallowguestmymoodle'] = 'Consente l\'accesso alla Dashboard per gli i ospiti. Se l\'impostazione è disabilitata gli ospiti saranno reindirizzati alla home page del sito.';
 $string['configallowobjectembed'] = 'Come misura standard di sicurezza, gli utenti normali non possono incorporare oggetti multimediali (come Flash) utilizzando esplicitamente i tag EMBED e OBJECT nei testi HTML (possono sempre utilizzare il filtro Plugin multimediali). Se preferisci consentire l\'utilizzo di questi tag, allora devi abilitare l\'opzione.';
 $string['configallowoverride'] = 'E\' possibile consentire ai ruoli elencati a sinistra di modificare i ruoli riportati nelle colonne';
@@ -249,7 +249,7 @@ $string['configfrontpage'] = 'Puoi impostare gli elementi da visualizzare nella 
 $string['configfrontpagecourselimit'] = 'Numero massimo di corsi';
 $string['configfrontpagecourselimithelp'] = 'Il numero massimo di corsi presenti negli elenchi di corsi visualizzati nella home page del sito';
 $string['configfrontpageloggedin'] = 'Puoi impostare gli elementi da visualizzare nella pagina home del sito ed il loro ordine per gli utenti che si sono autenticati.';
-$string['configfullnamedisplay'] = 'Definisce la modalità di visualizzazione dei nomi quando vengono visualizzati in forma  completa. Il valore di default "language" delega la modalità di visualizzazione alla stringa "fullnamedisplay" contenuta nel language pack in uso. Lingue diverse possono avere convenzioni diverse
+$string['configfullnamedisplay'] = 'Imposta la modalità di visualizzazione dei nomi quando vengono visualizzati in forma  completa. Il valore di default "language" delega la modalità di visualizzazione alla stringa "fullnamedisplay" contenuta nel language pack in uso. Lingue diverse possono avere convenzioni diverse
 
 Per la maggioranza dei siti mono lingua l\'impostazione preferibile è "firstname lastname", tuttavia è possibile scegliere di nascondere il cognome. I segnaposto che possono essere usati sono: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, e alternatename.';
 $string['configgeoipfile'] = 'La posizione del file binario GeoLite2 City. Questo file non fa parte della distribuzione di Moodle e deve essere scaricato manualmente da <a href="http://www.maxmind.com/">MaxMind</a>. E\' possibile acquistare la versione commerciale o utilizzare la versione gratuita.<br />Per il download recarsi su <a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz">http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> ed estrarre il file nella cartella "{$a}" del proprio server.';
@@ -299,7 +299,7 @@ $string['configmodchooserdefault'] = 'Il selettore attività sarà presentato ag
 $string['configmycoursesperpage'] = 'Numero massimo di corsi presenti nell\'elenco dei corsi ai quali si è iscritti.';
 $string['configmymoodleredirect'] = 'L\'impostazione reindirizza gli utenti non amministratori a /my dopo il login, sostituendo anche la navigazione verso la home page con /my';
 $string['configmypagelocked'] = 'L\'impostazione impedisce la modifica della pagina di default da parte di utenti che non abbiamo il ruolo di amministratori';
-$string['confignavcourselimit'] = 'Limita il numero di corsi visibili agli utenti quando non sono autenticati o non iscritti in nessun corso.';
+$string['confignavcourselimit'] = 'Limita il numero di corsi visibili agli utenti nella navigazione.';
 $string['confignavshowallcourses'] = 'L\'impostazione stabilisce se gli utenti iscritti ad almeno un corso possano visualizzare la voce Corsi (elenco di tutti corsi)  nel blocco Navigazione. Tale voce sarà visualizzata in aggiunta alla voce I miei corsi (elenco dei corsi ai quali l\'utente è iscritto).';
 $string['confignavshowcategories'] = 'Visualizza le categorie di corso nelle briciole e nel blocco Navigazione. Le categorie non saranno visualizzate nei corsi dove l\'utente è iscritto, che saranno elencati nel link I miei corsi.';
 $string['confignoreplyaddress'] = 'In genere le email vengono spedite a nome di un utente (ad esempio, gli interventi nei forum). L\'indirizzo di email No-reply verrà  utilizzato come mittente del messaggio nei casi in cui il destinatario non può rispondere direttamente al mittente (ad esempio quando un utente decide di non visualizzare il proprio indirizzo email).';
@@ -429,7 +429,7 @@ $string['customcheck'] = 'Altri controlli';
 $string['custommenu'] = 'Menu personalizzato';
 $string['custommenuitems'] = 'Elementi menu personalizzato';
 $string['customusermenuitems'] = 'Elementi menu utente';
-$string['datarootsecurityerror'] = '<p><strong>AVVISO PER LA SICUREZZA!</strong></p><p>La tua cartella dataroot directory è in una posizione sbagliata ed è esposta al web. Questo significa che tutti i tuoi file privati sono accessibili da chiunque nel mondo, e qualcuno di questi potrebbe essere usato da un cracker per ottenere un accesso non autorizzato come amministartore del tuo sito!</p>
+$string['datarootsecurityerror'] = '<p><strong>AVVISO PER LA SICUREZZA!</strong></p><p>La tua cartella dataroot directory è in una posizione sbagliata ed è esposta al web. Questo significa che tutti i tuoi file privati sono accessibili da chiunque nel mondo, e qualcuno di questi potrebbe essere usato da un cracker per ottenere un accesso non autorizzato come amministratore del tuo sito!</p>
 <p><em>Devi</em> spostare la cartella dataroot ({$a}) in un\'altra posizione che non sia nella cartella pubblica per il web, e aggiornare di conseguenza l\'impostazione <code>$CFG->dataroot</code> nel tuo config.php.</p>';
 $string['datarootsecuritywarning'] = 'La configurazione del tuo sito potrebbe non essere al sicuro. Accertati che la tua cartella dataroot ({$a}) non sia direttamente accessibile via web.';
 $string['dbsessions'] = 'Usa il database per le informazioni di sessione';
@@ -465,6 +465,7 @@ $string['devicedetectregex_desc'] = '<p>Per default Moodle è in grado di ricono
 $string['devicedetectregexexpression'] = 'Regular expression';
 $string['devicedetectregexvalue'] = 'Valore di ritorno';
 $string['devicetype'] = 'Tipo di dispositivo';
+$string['devlibdirpresent'] = 'Cartelle con librerie di sviluppo come <em>vendor</em> oppure <em>node_modules</em> non devono essere presenti su siti pubblici. Per ulteriori informazioni, consultare il <a href="{$a->moreinfourl}">report sulla sicurezza</a>.';
 $string['disableuserimages'] = 'Disabilita immagini profilo utente';
 $string['displayerrorswarning'] = 'Abilitare l\'impostazione PHP <em>display_errors</em> non è raccomandato sui siti di produzione perché alcuni messaggi di errore potrebbero rivelare informazioni sensibili del tuo server.';
 $string['displayloginfailures'] = 'Visualizza login errati';
@@ -629,6 +630,7 @@ $string['indexinginfo'] = 'Si raccomanda di indicizzare i contenuti del sito tra
 $string['installhijacked'] = 'Spiacente, l\'installazione deve essere completata dallo stesso indirizzo IP dal quale è stata avviata.';
 $string['installsessionerror'] = 'Non è possibile inizializzare la sessione PHP, per favore verifica che il browser accetti i cookie.';
 $string['intlrecommended'] = 'L\'estensione intl migliora il supporto all\'internazionalizzazione, come l\'ordinamento in accordo alle impostazioni locali';
+$string['intlrequired'] = 'E\' necessario installare l\'estensione Intl per migliorare l\'internazionalizzazione, come ordinamenti in funzioni della lingua e nomi di dominio internazionali.';
 $string['invalidsection'] = 'Sezione non valida';
 $string['invaliduserchangeme'] = 'Il nome utente "changeme" è riservato - non è possibile creare utenti con quel nome utente.';
 $string['ipblocked'] = 'Questo sito non è al momento disponibile.';
@@ -694,7 +696,7 @@ $string['loginpasswordautocomplete_help'] = 'Gli utenti non potranno salvare la 
 $string['loglifetime'] = 'Conserva i log per';
 $string['logo'] = 'Logo';
 $string['logocompact'] = 'Logo piccolo';
-$string['logocompact_desc'] = 'Una versione più piccola del logo, in formato PNG o JPEG.';
+$string['logocompact_desc'] = 'Una versione più piccola del logo, in formato PNG o JPEG. L\'immagine deve essere riconoscibile anche in dimensioni piccole.';
 $string['logo_desc'] = 'Un logo a grandezza normale, in formato PNG o JPEG.';
 $string['logossettings'] = 'Logo';
 $string['logstorenotrequired'] = 'Log store non richiesto';
@@ -902,8 +904,9 @@ $string['profilesignup'] = 'Da compilare nella pagina di creazione account';
 $string['profilespecificsettings'] = 'Impostazioni specifiche';
 $string['profilevisible'] = 'Visibilità del campo';
 $string['profilevisibleall'] = 'Visibile a tutti';
-$string['profilevisible_help'] = '<p>Ad ogni campo creato dall\'utente può essere assegnata una impostazione di visibilità: non visibile, visibile a tutti, visibile all\'utente. L\'impostazione \'non visibile\' sarà normalmente assegnata da un amministratore che vuole mantenere dati privati riguardanti gli utenti. L\'impostazione \'visibile all\'utente\' sarà di solito scelta per un campo contenente informazioni sensibili, mentre \'visibile a tutti\' potrà essere utilizzata per ogni tipo di informazione.
-</p>';
+$string['profilevisible_help'] = '* Non visibile - Per dati riservati visibili solo all\'amministratore
+* Visibile all\'utente - Per dati riservati visibili solo all\'utente e all\'amministratore
+* Visibile a tutti';
 $string['profilevisiblenone'] = 'Non visibile';
 $string['profilevisibleprivate'] = 'Visibile all\'utente';
 $string['profiling'] = 'Profiling';
@@ -951,6 +954,7 @@ $string['registerwithmoodleorg'] = 'Registra il tuo sito';
 $string['registration'] = 'Registrazione';
 $string['registration_help'] = 'Si consiglia di registrare il sito per ricevere avvisi di sicurezza ed accedere a Moodle.net, la nostra piattaforma di condivisione di corsi.';
 $string['registrationwarning'] = 'Il tuo sito non è ancora registrato.';
+$string['registrationwarningcontactadmin'] = 'Il sito non è registrato. Per favore avverti l\'amministratore.';
 $string['releasenoteslink'] = 'Per informazioni su questa versione di Moodle, si prega di consultare le <a target="_blank" href="{$a}">Note di rilascio</a> in linea';
 $string['rememberusername'] = 'Ricorda username';
 $string['rememberusername_desc'] = 'Memorizza un cookie permanente con lo username usato per il login. Tenere presente che i cookie permanenti possono rappresentare un problema di privacy se utilizzati in assenza di consenso.';
@@ -1156,6 +1160,7 @@ $string['unsupporteddbstorageengine'] = 'Lo storage engine utilizzato dal databa
 $string['unsupporteddbtablerowformat'] = 'Il database utilizza il formato file Antelope. Si raccomanda di convertire le tabelle nel formato file Barracuda. Per dettagli su come convertire le tabelle InnoDB in formato Barracuda, è disponibile la documentazione: <a href="https://docs.moodle.org/en/cli">Administration via command line</a>';
 $string['unsupportedphpversion7'] = 'La versione 7 del PHP non è supportata.';
 $string['unsupportedphpversion71'] = 'PHP 7.1 non è supportato.';
+$string['unsupportedphpversion72'] = 'Il PHP versione 7.2 non è supportato';
 $string['unsuspenduser'] = 'Attiva account';
 $string['updateaccounts'] = 'Aggiornare registrazioni esistenti';
 $string['updateautocheck'] = 'Controllo automatico degli aggiornamenti';

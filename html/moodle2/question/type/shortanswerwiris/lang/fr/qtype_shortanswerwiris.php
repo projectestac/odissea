@@ -24,6 +24,7 @@ $string['shortanswerwiris_answersinstruct'] = 'Vous devez proposer au moins une 
 $string['shortanswerwiris_algorithm'] = 'Algorithme';
 $string['shortanswerwiris_cantimportcompoundtest'] = 'La question de type Réponse courte - Maths et sciences n\'a pas pu être correctement importée depuis le format Moodle 1.9. La question peut être corrigée manuellement en suivant les instructions disponibles à la page <a href="http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade">http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade</a>.';
 $string['filloutoneanswer'] = 'Vous devez proposer au moins une réponse. La première bonne réponse sert à déterminer le score et les commentaires. Cliquez sur l\'icône en regard du champ de réponse pour modifier les propriétés mathématiques de la réponse et de la question.';
+$string['failedtogradetest'] = 'Failed to grade (testing-{$a})!';
 
 // From Moodle 2.3.
 $string['pluginname'] = 'Réponse courte - Maths et sciences';

@@ -33,6 +33,7 @@ $string['cohortroleassignmentremoved'] = '群角色作业被移除。';
 $string['cohortroles'] = '群角色';
 $string['existingcohortroles'] = '存在群角色作业';
 $string['managecohortroles'] = '分配用户角色到群';
+$string['noassignableroles'] = '目前还没有能够在该用户情景中分配的角色。<a href="../../roles/manage.php">管理角色</a>';
 $string['nocohortroleassignmentssaved'] = '没有群角色作业被保存。';
 $string['onecohortroleassignmentsaved'] = '一个群角色作业被保存。';
 $string['pluginname'] = '群角色管理';

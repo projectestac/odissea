@@ -30,4 +30,4 @@ $string['nologreaderenabled'] = '有効にされているログリーダはあ�
 $string['page-report-participation-index'] = 'コース参加レポート';
 $string['page-report-participation-x'] = 'すべてのコース参加レポート';
 $string['participation:view'] = 'コース参加レポートを表示する';
-$string['pluginname'] = 'コース参加者';
+$string['pluginname'] = 'コース参加';

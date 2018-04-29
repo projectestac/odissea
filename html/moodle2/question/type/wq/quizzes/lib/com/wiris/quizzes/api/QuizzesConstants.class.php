@@ -5,6 +5,7 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	}
 	static $OPTION_RELATIVE_TOLERANCE = "relative_tolerance";
 	static $OPTION_TOLERANCE = "tolerance";
+	static $OPTION_TOLERANCE_DIGITS = "tolerance_digits";
 	static $OPTION_PRECISION = "precision";
 	static $OPTION_TIMES_OPERATOR = "times_operator";
 	static $OPTION_IMAGINARY_UNIT = "imaginary_unit";
@@ -22,5 +23,6 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	static $META_PROPERTY_REFERER = "referer";
 	static $META_PROPERTY_QUESTION = "question";
 	static $META_PROPERTY_USER = "userref";
+	static $PARAMETER_USER_ID = "user_id";
 	function __toString() { return 'com.wiris.quizzes.api.QuizzesConstants'; }
 }

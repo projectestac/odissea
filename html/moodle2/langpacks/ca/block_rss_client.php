@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfeed'] = 'Afegeix un URL d\'un canal d\'informació:';
 $string['addheadlineblock'] = 'Afegeix un bloc de titulars RSS';
 $string['addnew'] = 'Afegeix';
-$string['addnewfeed'] = 'Afegeix un nou canal';
+$string['addnewfeed'] = 'Afegeix un canal nou';
 $string['cannotmakemodification'] = 'No podeu modificar aquest canal RSS en aquest moment.';
 $string['choosefeedlabel'] = 'Trieu els canals que voleu incloure en aquest bloc:';
 $string['clientchannellink'] = 'Lloc origen...';

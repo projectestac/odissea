@@ -32,22 +32,22 @@ $string['addanewtopic'] = 'Neues Thema hinzufügen';
 $string['advancedsearch'] = 'Erweiterte Suche';
 $string['allforums'] = 'Alle Foren';
 $string['allowdiscussions'] = 'Darf \'{$a}\' in diesem Forum schreiben?';
-$string['allowsallsubscribe'] = 'Alle dürfen im Forum über ihr Abonnement entscheiden';
+$string['allowsallsubscribe'] = 'Alle dürfen im Forum über ihr Abonnement entscheiden.';
 $string['allowsdiscussions'] = 'Alle dürfen im Forum ein neues Thema beginnen.';
 $string['allsubscribe'] = 'Alle Foren abonnieren';
 $string['allunsubscribe'] = 'Alle Foren abbestellen';
-$string['alreadyfirstpost'] = 'Dies ist der erste Beitrag zu diesem Thema';
-$string['anyfile'] = 'Jede Datei';
+$string['alreadyfirstpost'] = 'Dies ist der erste Beitrag zu diesem Thema.';
+$string['anyfile'] = 'Beliebige Datei';
 $string['areaattachment'] = 'Anhänge';
 $string['areapost'] = 'Nachrichten';
 $string['attachment'] = 'Anhang';
 $string['attachment_help'] = 'Sie dürfen eine oder mehrere Dateien an einen Beitrag anhängen. Ein angehängtes Bild wird am Ende des Beitrags angezeigt.';
-$string['attachmentnopost'] = 'Ohne Nachrichten-ID können Anhänge nicht exportiert werden';
+$string['attachmentnopost'] = 'Ohne Nachrichten-ID können Anhänge nicht exportiert werden.';
 $string['attachments'] = 'Anhänge';
 $string['attachmentswordcount'] = 'Anhänge und Wortzahl';
-$string['blockafter'] = 'Nutzer sperren';
+$string['blockafter'] = 'Nutzer/innen sperren';
 $string['blockafter_help'] = 'Diese Zahl legt fest, wie viele Beiträge pro Nutzer/in im angegebenen Zeitfenster maximal ins Forum eingetragen werden dürfen. Nutzer/innen mit der Berechtigung mod/forum:postwithoutthrottling sind von einer Sperre ausgenommen.';
-$string['blockperiod'] = 'Zeitfenster';
+$string['blockperiod'] = 'Sperrdauer';
 $string['blockperioddisabled'] = 'Nicht sperren';
 $string['blockperiod_help'] = 'In diesem Zeitfenster dürfen maximal so viele Beiträge pro Nutzer/in ins Forum eingetragen werden, wie mit der Zahl \'Sperre\' festgelegt sind. Nutzer/innen mit der Berechtigung mod/forum:postwithoutthrottling sind von einer Sperre ausgenommen.';
 $string['blogforum'] = 'Standardforum in blog-ähnlicher Anzeige';
@@ -73,30 +73,30 @@ $string['cannotmovetosingleforum'] = 'Das Thema kann nicht ein Einzeldiskussions
 $string['cannotpurgecachedrss'] = 'Die zwischengespeicherten RSS-Feeds für die Quell- und/oder Ziel-Foren können nicht beseitigt werden - überprüfen Sie Ihre Forenberechtigungen.';
 $string['cannotremovesubscriber'] = 'Die ID {$a} konnte nicht aus der Abonnentenliste entfernt werden!';
 $string['cannotreply'] = 'Sie dürfen nicht auf diesen Beitrag antworten.';
-$string['cannotsplit'] = 'Diskussionsthemen können in diesem Forum nicht geteilt werden';
+$string['cannotsplit'] = 'Themen können in diesem Forum nicht geteilt werden.';
 $string['cannotsubscribe'] = 'Für ein Abonnement müssen Sie Gruppenmitglied sein.';
-$string['cannottrack'] = 'Das Tracking des Forums konnte nicht beendet werden';
-$string['cannotunsubscribe'] = 'Sie konnten nicht aus dem Forum abgemeldet werden';
+$string['cannottrack'] = 'Das Tracking des Forums konnte nicht beendet werden.';
+$string['cannotunsubscribe'] = 'Sie konnten nicht aus dem Forum abgemeldet werden.';
 $string['cannotupdatepost'] = 'Sie können den Beitrag nicht aktualisieren.';
-$string['cannotviewpostyet'] = 'Sie können die Beiträge anderer Personen erst lesen, wenn Sie selber einen Beitrag geschrieben haben.';
+$string['cannotviewpostyet'] = 'Sie können fremde Beiträge erst lesen, wenn Sie selber einen Beitrag geschrieben haben.';
 $string['cannotviewusersposts'] = 'Von dieser Person gibt es keine Beiträge, die Sie sehen könnten.';
 $string['cleanreadtime'] = '\'Gelesen\' zu diesen Zeitpunkt markieren';
 $string['clicktosubscribe'] = 'Nicht abonniert. Klicken Sie, um das Forum zu abonnieren.';
 $string['clicktounsubscribe'] = 'Abonniert. Klicken, um das Forum abzubestellen.';
 $string['completiondiscussions'] = 'Teilnehmer/in muss ein Thema neu beginnen:';
 $string['completiondiscussionsgroup'] = 'Themen erforderlich';
-$string['completiondiscussionshelp'] = 'Zum Beenden sind Themen erforderlich';
+$string['completiondiscussionshelp'] = 'Zum Abschluss sind Themen erforderlich';
 $string['completionposts'] = 'Teilnehmer/in muss ein Thema neu beginnen oder Antworten verfassen:';
 $string['completionpostsgroup'] = 'Forumsbeiträge erforderlich';
-$string['completionpostshelp'] = 'Zum Beenden sind Themen oder Antworten erforderlich';
+$string['completionpostshelp'] = 'Zum Abschluss sind Themen oder Antworten erforderlich';
 $string['completionreplies'] = 'Teilnehmer/in muss Antworten verfassen:';
 $string['completionrepliesgroup'] = 'Antworten erforderlich';
-$string['completionreplieshelp'] = 'Zum Beenden sind Antworten erforderlich';
+$string['completionreplieshelp'] = 'Zum Abschluss sind Antworten erforderlich';
 $string['configcleanreadtime'] = 'Ältere Beiträge werden täglich zu dieser Zeit (Stunde) als \'gelesen\' markiert.';
-$string['configdigestmailtime'] = 'Diese Option legt fest, wann die tägliche Zusammenfassung neuer Forumsbeiträge (Digest) erstellt und versendet wird.';
+$string['configdigestmailtime'] = 'Diese Option legt fest, wann die tägliche Zusammenfassung neuer Forumsbeiträge erstellt und versendet wird.';
 $string['configdisplaymode'] = 'Standardanzeige für Themen, falls nichts eingestellt wurde.';
 $string['configenablerssfeeds'] = 'Diese Option aktiviert die Einstellmöglichkeit von RSS Feeds für alle Foren. Jedes Forum muss einzeln für RSS Feeds freigegeben werden.';
-$string['configenabletimedposts'] = 'Wenn diese Option aktiviert ist, dann lässt sich ein Zeitraum für Sichtbarkeit eines Forumsbeitrags festzulegen.';
+$string['configenabletimedposts'] = 'Wenn diese Option aktiviert ist, dann lässt sich ein Zeitraum für die Sichtbarkeit eines Forumsbeitrags festlegen.';
 $string['configlongpost'] = 'Jeder Beitrag wird als lang eingestuft, wenn er länger als diese Zeichenzahl ist (ohne Berücksichtigung der HTML-Codierung).';
 $string['configmanydiscussions'] = 'Anzahl von Themen pro Seite';
 $string['configmaxattachments'] = 'Voreinstellung für die Anzahl von Anhängen, die pro Beitrag in einem Forum erlaubt sind';
@@ -123,16 +123,20 @@ $string['deletedpost'] = 'Der Beitrag wurde gelöscht.';
 $string['deletedposts'] = 'Diese Beiträge wurden gelöscht.';
 $string['deletesure'] = 'Möchten Sie diesen Beitrag wirklich löschen?';
 $string['deletesureplural'] = 'Möchten Sie diesen Beitrag und alle Antworten wirklich löschen? ({$a} Beiträge)';
-$string['digestmailheader'] = 'Diese E-Mail enthält die tägliche Zusammenfassung neuer Forenbeiträge (Digest) von {$a->sitename}. Die Einstellungen zu den E-Mails aus Foren können Sie über {$a->userprefs} ändern.';
-$string['digestmailpost'] = 'Einstellungen zur Zusammenfassung (Digest) neuer Forenbeiträge ändern';
-$string['digestmailpostlink'] = 'Einstellungen für die Forumszusammenfassung ändern';
+$string['digestmailheader'] = 'Guten Tag,
+
+Diese E-Mail enthält die tägliche Zusammenfassung neuer Forenbeiträge von {$a->sitename}. Die Einstellungen zu den E-Mails aus Foren können Sie über {$a->userprefs} ändern.
+
+Ihr E-Learning-Team';
+$string['digestmailpost'] = 'Einstellungen zur Zusammenfassung neuer Forenbeiträge ändern';
+$string['digestmailpostlink'] = 'Einstellungen für die Forumszusammenfassung ändern: {$a}';
 $string['digestmailprefs'] = 'Ihr Profil';
 $string['digestmailsubject'] = '{$a}: Zusammenfassung des Forums';
 $string['digestmailtime'] = 'Termin für Foren- Zusammenfassungen';
 $string['digestsentusers'] = 'Die E-Mail-Zusammenfassung wurde erfolgreich an {$a} Teilnehmer/innen versandt.';
 $string['disallowsubscribe'] = 'Das Forum kann nicht abonniert werden';
 $string['disallowsubscribeteacher'] = 'Das Forum kann nicht abonniert werden (nur Trainer/innen)';
-$string['disallowsubscription'] = 'Abonnenent';
+$string['disallowsubscription'] = 'Abonnement';
 $string['disallowsubscription_help'] = 'Das Forum ist so eingestellt, dass Sie keine Themen abonnieren können.';
 $string['discussion'] = 'Thema';
 $string['discussionlocked'] = 'Dieses Thema wurde gesperrt, so dass Sie hier nicht weiter antworten können.';
@@ -397,8 +401,16 @@ $string['pluginname'] = 'Forum';
 $string['postadded'] = '<p>Ihr Beitrag wurde erfolgreich hinzugefügt. </p><p>Wenn Sie etwas ändern möchten, haben Sie {$a} Zeit dafür.</p>';
 $string['postaddedsuccess'] = 'Der Beitrag wurde erfolgreich eingefügt.';
 $string['postaddedtimeleft'] = 'Wenn Sie etwas korrigieren möchten, haben Sie {$a} Zeit für diese Änderungen.';
-$string['postbymailsuccess'] = 'Ihr Forumsbeitrag \'{$a->subject}\' wurde erfolgreich hinzugefügt. Sie finden Ihren Beitrag unter {$a->discussionurl}.';
-$string['postbymailsuccess_html'] = 'Ihr Forumsbeitrag \'{$a->subject}\' wurde erfolgreich hinzugefügt. Sie finden Ihren Beitrag im <a href="{$a->discussionurl}">Forum</a>.';
+$string['postbymailsuccess'] = 'Guten Tag,
+
+Ihr Forumsbeitrag \'{$a->subject}\' wurde erfolgreich hinzugefügt. Sie finden Ihren Beitrag unter {$a->discussionurl}.
+
+Ihr E-Learning-Team';
+$string['postbymailsuccess_html'] = 'Guten Tag,
+
+Ihr Forumsbeitrag \'{$a->subject}\' wurde erfolgreich hinzugefügt. Sie finden Ihren Beitrag im <a href="{$a->discussionurl}">Forum</a>.
+
+Ihr E-Learning-Team';
 $string['postbyuser'] = '{$a->post} von {$a->user}';
 $string['postincontext'] = 'Diskussion im Forum zeigen';
 $string['postmailinfo'] = 'Diese Mitteilung wurde auf der Webseite \'{$a}\' eingetragen.
@@ -429,7 +441,7 @@ $string['pruneheading'] = 'Das Thema teilen und mit diesem Beitrag ein neues The
 $string['qandaforum'] = 'Frage-Antwort-Forum';
 $string['qandanotify'] = 'In diesem Frage-Antwort-Forum müssen Sie zuerst eine eigene Antwort eintragen, bevor Sie die Antworten anderer Personen sehen können';
 $string['re'] = 'Re:';
-$string['readtherest'] = 'Thema vollständig anzeigen ';
+$string['readtherest'] = 'Weiter lesen';
 $string['replies'] = 'Antworten';
 $string['repliesmany'] = '{$a} Antworten';
 $string['repliesone'] = '{$a} Antwort bis jetzt';
@@ -487,7 +499,7 @@ $string['subscribers'] = 'Abonnent/innen';
 $string['subscribersto'] = 'Abonnent/innen für \'{$a->name}\'';
 $string['subscriberstowithcount'] = 'Abonnent/innen für \'{$a->name}\' ({$a->count})';
 $string['subscribestart'] = 'Mitteilungen über neue Forenbeiträge an mich senden';
-$string['subscribestop'] = 'Keine Benachrichtigungen als E-Mail an mich senden';
+$string['subscribestop'] = 'Keine Beiträge als E-Mail an mich senden';
 $string['subscription'] = 'Abonnement';
 $string['subscriptionandtracking'] = 'Abonnement und Tracking';
 $string['subscriptionauto'] = 'Automatisch';
@@ -502,16 +514,14 @@ $string['subscriptionmode_help'] = 'Alle Abonnent/innen dieses Forums bekommen d
 * Optional - alle dürfen auswählen, ob sie das Forum abonnieren möchten oder nicht
 * Verpflichtend - alle haben das Forum abonniert und niemand kann es abbestellen
 * Automatisch - alle haben das Forum abonniert, dürfen es aber jederzeit abbestellen
-* Deaktiviert - Das Forum kann von niemandem abonniert werden
-
-Änderungen des Abonnements haben nur Einfluss auf Nutzer/innen, die neu in den Kurs eingeschrieben werden. Für bestehende Nutzer/innen muss die Abonnementenliste manuell angepasst werden.';
+* Deaktiviert - Das Forum kann von niemandem abonniert werden';
 $string['subscriptionoptional'] = 'Optional';
 $string['subscriptions'] = 'Abonnements';
 $string['thisforumisthrottled'] = 'Für dieses Forum ist eine Höchstzahl von Beiträgen innerhalb eines bestimmten Zeitraums festgelegt worden. Dies gilt nach {$a->blockafter} Beiträgen innerhalb von {$a->blockperiod}';
 $string['timedhidden'] = 'Zeitgesteuerter Status: Für Teilnehmer/innen verbergen';
 $string['timedposts'] = 'Zeitgesteuerte Beiträge';
 $string['timedvisible'] = 'Zeitgesteuerter Status: Für Teilnehmer/innen sichtbar';
-$string['timestartenderror'] = 'Der Endtermin kann nicht vor dem Starttermin liegen.';
+$string['timestartenderror'] = 'Das Forumsende muss nach dem Forumsbeginn liegen.';
 $string['trackforum'] = 'Ungelesene Beiträge markieren';
 $string['tracking'] = 'Markieren?';
 $string['trackingoff'] = 'Aus';

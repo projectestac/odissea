@@ -61,6 +61,7 @@ $string['removeoldlogentries'] = 'Remove old H5P log entries';
 $string['displayoptionnevershow'] = 'Never show';
 $string['displayoptionalwaysshow'] = 'Always show';
 $string['displayoptionpermissions'] = 'Show only if user has permissions to export H5P';
+$string['displayoptionpermissionsembed'] = 'Show only if user has permissions to embed H5P';
 $string['displayoptionauthoron'] = 'Controlled by author, default is on';
 $string['displayoptionauthoroff'] = 'Controlled by author, default is off';
 $string['displayoptions'] = 'Display Options';
@@ -70,6 +71,8 @@ $string['enableembed'] = 'Embed button';
 $string['enablecopyright'] = 'Copyright button';
 $string['enableabout'] = 'About H5P button';
 
+$string['sendusagestatistics'] = 'Contribute usage statistics';
+$string['sendusagestatistics_help'] = 'Usage statistics numbers will automatically be reported to help the developers better understand how H5P is used and to determine potential areas of improvement. Read more about which <a {$a}>data is collected on h5p.org</a>.';
 $string['enablesavecontentstate'] = 'Save content state';
 $string['enablesavecontentstate_help'] = 'Automatically save the current state of interactive content for each user. This means that the user may pick up where he left off.';
 $string['contentstatefrequency'] = 'Save content state frequency';
@@ -91,6 +94,12 @@ $string['upload'] = 'Upload';
 $string['installedlibraries'] = 'Installed Libraries';
 $string['invalidtoken'] = 'Invalid security token.';
 $string['missingparameters'] = 'Missing parameters';
+$string['nocontenttype'] = 'No content type was specified.';
+$string['invalidcontenttype'] = 'The chosen content type is invalid.';
+$string['installdenied'] = 'You do not have permission to install content types. Contact the administrator of your site.';
+$string['downloadfailed'] = 'Downloading the requested library failed.';
+$string['validationfailed'] = 'The requested H5P was not valid';
+$string['validatingh5pfailed'] = 'Validating h5p package failed.';
 
 // H5P library list headers on admin page.
 $string['librarylisttitle'] = 'Title';
@@ -138,8 +147,16 @@ $string['nextpage'] = 'לעמוד הבא';
 $string['previouspage'] = 'לעמוד הקודם';
 $string['search'] = 'חיפוש';
 $string['empty'] = 'לא נמצאו תכנים';
+$string['viewreportlabel'] = 'Report';
+$string['dataviewreportlabel'] = 'View Answers';
+$string['invalidxapiresult'] = 'No xAPI results were found for the given content and user id combination';
+$string['reportnotsupported'] = 'Not supported';
+$string['reportingscorelabel'] = 'Score:';
+$string['reportingscaledscorelabel'] = 'Gradebook score:';
+$string['reportingscoredelimiter'] = 'out of';
+$string['reportingscaledscoredelimiter'] = ',';
 
-// Editor
+// Editor.
 $string['javascriptloading'] = 'מחכים ל JavaScript...';
 $string['action'] = 'פעולה';
 $string['upload'] = 'העלאה';
@@ -155,26 +172,30 @@ $string['missingcontentuserdata'] = 'התרחשה תקלה: לא זמינים נ
 $string['maximumgrade'] = 'Maximum grade';
 $string['maximumgradeerror'] = 'Please enter a valid positive integer as the max points available for this activity';
 
-// Capabilities
+// Capabilities.
+$string['hvp:view'] = 'See and interact with H5P activities';
 $string['hvp:addinstance'] = 'הוספת פעילות H5P חדשה';
-$string['hvp:restrictlibraries'] = 'הגבלת גישה לספריית H5P';
-$string['hvp:updatelibraries'] = 'עדכון גרסה של ספריית H5P';
-$string['hvp:userestrictedlibraries'] = 'שימוש בספריות H5P שמורות';
-$string['hvp:savecontentuserdata'] = 'שמירת נתוני משתמש מתוך פעילות H5P';
-$string['hvp:saveresults'] = 'שמירת תוצאות שימוש ברכיב H5P';
-$string['hvp:viewresults'] = 'צפיה בתוצאות שימוש ברכיב H5P';
-$string['hvp:getcachedassets'] = 'אחזור משאבי מטמון של רכיב H5P';
-$string['hvp:getcontent'] = 'צפיה בתוכן פעילות H5P מתוך הקורס';
+$string['hvp:manage'] = 'Edit existing H5P activites';
 $string['hvp:getexport'] = 'יצוא תוכן פעילות H5P מתוך הקורס';
+$string['hvp:getembedcode'] = 'View H5P embed code when \'controlled by permission\' option is set';
+$string['hvp:saveresults'] = 'שמירת תוצאות שימוש ברכיב H5P';
+$string['hvp:savecontentuserdata'] = 'שמירת נתוני משתמש מתוך פעילות H5P';
+$string['hvp:viewresults'] = 'צפיה בתוצאות שימוש ברכיב H5P';
+$string['hvp:viewallresults'] = 'View result for all users in course';
+$string['hvp:restrictlibraries'] = 'הגבלת גישה לספריית H5P';
+$string['hvp:userestrictedlibraries'] = 'שימוש בספריות H5P שמורות';
+$string['hvp:updatelibraries'] = 'עדכון גרסה של ספריית H5P';
+$string['hvp:getcachedassets'] = 'אחזור משאבי מטמון של רכיב H5P';
+$string['hvp:installrecommendedh5plibraries'] = 'Install new safe H5P content types recommended by H5P.org';
 
-// Capabilities error messages
+// Capabilities error messages.
 $string['nopermissiontoupgrade'] = 'You do not have permission to upgrade libraries.';
 $string['nopermissiontorestrict'] = 'You do not have permission to restrict libraries.';
 $string['nopermissiontosavecontentuserdata'] = 'You do not have permission to save content user data.';
 $string['nopermissiontosaveresult'] = 'You do not have permission to save result for this content.';
 $string['nopermissiontoviewresult'] = 'You do not have permission to view results for this content.';
 
-// Editor translations
+// Editor translations.
 $string['noziparchive'] = 'Your PHP version does not support ZipArchive.';
 $string['noextension'] = 'The file you uploaded is not a valid HTML5 Package (It does not have the .h5p file extension)';
 $string['nounzip'] = 'The file you uploaded is not a valid HTML5 Package (We are unable to unzip it)';
@@ -199,8 +220,13 @@ $string['invalidlibrarydata'] = 'Invalid data provided for {$a->%property} in {$
 $string['invalidlibraryproperty'] = 'Can\'t read the property {$a->%property} in {$a->%library}';
 $string['missinglibraryproperty'] = 'The required property {$a->%property} is missing from {$a->%library}';
 $string['invalidlibraryoption'] = 'Illegal option {$a->%option} in {$a->%library}';
-$string['addedandupdatelibraries'] = 'Added {$a->%new} new H5P libraries and updated {$a->%old} old.';
+$string['addedandupdatedss'] = 'Added {$a->%new} new H5P library and updated {$a->%old} old one.';
+$string['addedandupdatedsp'] = 'Added {$a->%new} new H5P library and updated {$a->%old} old ones.';
+$string['addedandupdatedps'] = 'Added {$a->%new} new H5P libraries and updated {$a->%old} old one.';
+$string['addedandupdatedpp'] = 'Added {$a->%new} new H5P libraries and updated {$a->%old} old ones.';
+$string['addednewlibrary'] = 'Added {$a->%new} new H5P library.';
 $string['addednewlibraries'] = 'Added {$a->%new} new H5P libraries.';
+$string['updatedlibrary'] = 'Updated {$a->%old} H5P library.';
 $string['updatedlibraries'] = 'Updated {$a->%old} H5P libraries.';
 $string['missingdependency'] = 'Missing dependency {$a->@dep} required by {$a->@lib}.';
 $string['invalidstring'] = 'Provided string is not valid according to regexp in semantics. (value: \"{$a->%value}\", regexp: \"{$a->%regexp}\")';
@@ -209,6 +235,26 @@ $string['invalidmultiselectoption'] = 'Invalid selected option in multi-select.'
 $string['invalidselectoption'] = 'Invalid selected option in select.';
 $string['invalidsemanticstype'] = 'H5P internal error: unknown content type "{$a->@type}" in semantics. Removing content!';
 $string['invalidsemantics'] = 'Library used in content is not a valid library according to semantics';
+$string['unabletocreatedir'] = 'Unable to create directory.';
+$string['unabletogetfieldtype'] = 'Unable to get field type.';
+$string['filetypenotallowed'] = 'File type isn\'t allowed.';
+$string['invalidfieldtype'] = 'Invalid field type.';
+$string['invalidimageformat'] = 'Invalid image file format. Use jpg, png or gif.';
+$string['filenotimage'] = 'File is not an image.';
+$string['invalidaudioformat'] = 'Invalid audio file format. Use mp3 or wav.';
+$string['invalidvideoformat'] = 'Invalid video file format. Use mp4 or webm.';
+$string['couldnotsave'] = 'Could not save file.';
+$string['couldnotcopy'] = 'Could not copy file.';
+$string['librarynotselected'] = 'You must select a content type.';
+
+// Welcome messages.
+$string['welcomeheader'] = 'ברוכים הבאים לעולם של H5P!';
+$string['welcomegettingstarted'] = 'כדי להתחיל בהכרת רכיב H5P במערכת Moodle ניתן לבחור ב<a {$a->moodle_tutorial}>מדריך</a> וגם <a {$a->example_content}>תוכן לדוגמה</a> באתר H5P.org לקבלת השראה.';
+$string['welcomecommunity'] = 'אנו מקווים שתהנו פעילות ברכיב H5P ושתמצאו עניין וזמן להצטרף לקהילת המשתמשים ויצרני התוכן העולמית שלנו בעזרת הקישורים הבאים  <a {$a->forums}>פורומים, קבוצות דיון</a>';
+$string['welcomecontactus'] = 'נשמח לקבל כל משוב <a {$a}>יצירת קשר</a>. אנו מתייחסים למשוב באופן מאוד רציני ומחוייבים ליצירת חווית שימוש איכותית ומשופרת ברכיב H5P !';
+$string['invalidlibrarynamed'] = 'The H5P library {$a->%library} used in the content is not valid';
+
+// Licensing.
 $string['copyrightinfo'] = 'Copyright information';
 $string['years'] = 'Year(s)';
 $string['undisclosed'] = 'Undisclosed';
@@ -223,19 +269,28 @@ $string['pd'] = 'Public Domain';
 $string['pddl'] = 'Public Domain Dedication and Licence';
 $string['pdm'] = 'Public Domain Mark';
 $string['copyrightstring'] = 'Copyright';
-$string['unabletocreatedir'] = 'Unable to create directory.';
-$string['unabletogetfieldtype'] = 'Unable to get field type.';
-$string['filetypenotallowed'] = 'File type isn\'t allowed.';
-$string['invalidfieldtype'] = 'Invalid field type.';
-$string['invalidimageformat'] = 'Invalid image file format. Use jpg, png or gif.';
-$string['filenotimage'] = 'File is not an image.';
-$string['invalidaudioformat'] = 'Invalid audio file format. Use mp3 or wav.';
-$string['invalidvideoformat'] = 'Invalid video file format. Use mp4 or webm.';
-$string['couldnotsave'] = 'Could not save file.';
-$string['couldnotcopy'] = 'Could not copy file.';
+$string['by'] = 'by';
+$string['showmore'] = 'Show more';
+$string['showless'] = 'Show less';
+$string['sublevel'] = 'Sublevel';
+$string['noversionattribution'] = 'Attribution';
+$string['noversionattributionsa'] = 'Attribution-ShareAlike';
+$string['noversionattributionnd'] = 'Attribution-NoDerivs';
+$string['noversionattributionnc'] = 'Attribution-NonCommercial';
+$string['noversionattributionncsa'] = 'Attribution-NonCommercial-ShareAlike';
+$string['noversionattributionncnd'] = 'Attribution-NonCommercial-NoDerivs';
+$string['licenseCC40'] = '4.0 International';
+$string['licenseCC30'] = '3.0 Unported';
+$string['licenseCC25'] = '2.5 Generic';
+$string['licenseCC20'] = '2.0 Generic';
+$string['licenseCC10'] = '1.0 Generic';
+$string['licenseGPL'] = 'General Public License';
+$string['licenseV3'] = 'Version 3';
+$string['licenseV2'] = 'Version 2';
+$string['licenseV1'] = 'Version 1';
+$string['licenseCC010'] = 'CC0 1.0 Universal (CC0 1.0) Public Domain Dedication';
+$string['licenseCC010U'] = 'CC0 1.0 Universal';
+$string['licenseversion'] = 'License Version';
 
-// Welcome messages
-$string['welcomeheader'] = 'ברוכים הבאים לעולם של H5P!';
-$string['welcomegettingstarted'] = 'כדי להתחיל בהכרת רכיב H5P במערכת Moodle ניתן לבחור ב<a {$a->moodle_tutorial}>מדריך</a> וגם <a {$a->example_content}>תוכן לדוגמה</a> באתר H5P.org לקבלת השראה.';
-$string['welcomecommunity'] = 'אנו מקווים שתהנו פעילות ברכיב H5P ושתמצאו עניין וזמן להצטרף לקהילת המשתמשים ויצרני התוכן העולמית שלנו בעזרת הקישורים הבאים  <a {$a->forums}>פורומים, קבוצות דיון</a> וחדרי רב־שיח <a {$a->gitter}>H5P at Gitter</a>';
-$string['welcomecontactus'] = 'נשמח לקבל כל משוב <a {$a}>יצירת קשר</a>. אנו מתייחסים למשוב באופן מאוד רציני ומחוייבים ליצירת חווית שימוש איכותית ומשופרת ברכיב H5P !';
+// Embed.
+$string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';

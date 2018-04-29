@@ -46,13 +46,19 @@ $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 
 Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer lauft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
 
-Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.';
+Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.
+
+Ihr E-Learning-Team';
 $string['expirymessageenrolledsubject'] = 'Benachrichtigung zum Teilnahmeende';
-$string['expirymessageenrollerbody'] = 'Die Einschreibung in den Kurs \'{$a->course}\' läuft für folgende Nutzer in den nächsten {$a->threshold} ab:
+$string['expirymessageenrollerbody'] = 'Guten Tag,
+
+im Kurs \'{$a->course}\' läuft für folgende Nutzer/in/nen innerhalb der nächsten  {$a->threshold}  die Einschreibung ab:
 
 {$a->users}
 
-Um die Einschreibedauer zu verlängern: {$a->extendurl}';
+Sie können auf der folgenden Seite die Einschreibedauer verlängern: {$a->extendurl}
+
+Ihr E-Learning Team';
 $string['expirymessageenrollersubject'] = 'Benachrichtigung zum Teilnahmeende';
 $string['manual:config'] = 'Manuelle Einschreibung verwalten';
 $string['manual:enrol'] = 'Nutzer/innen einschreiben';

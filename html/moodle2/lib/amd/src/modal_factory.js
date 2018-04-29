@@ -55,19 +55,33 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
      * is closed.
      *
      * @method setUpTrigger
-     * @param {object} modal The modal instance
+     * @param {Promise} modalPromise The modal instance
      * @param {object} triggerElement The jQuery element to open the modal
      */
-    var setUpTrigger = function(modal, triggerElement) {
+    var setUpTrigger = function(modalPromise, triggerElement) {
         if (typeof triggerElement != 'undefined') {
+            // The element that actually shows the modal.
+            var actualTriggerElement = null;
             CustomEvents.define(triggerElement, [CustomEvents.events.activate]);
             triggerElement.on(CustomEvents.events.activate, function(e, data) {
-                modal.show();
+                actualTriggerElement = e.currentTarget;
+                modalPromise.then(function(modal) {
+                    modal.show();
+
+                    return modal;
+                });
                 data.originalEvent.preventDefault();
             });
 
-            modal.getRoot().on(ModalEvents.hidden, function() {
-                triggerElement.focus();
+            modalPromise.then(function(modal) {
+                modal.getRoot().on(ModalEvents.hidden, function() {
+                    // Focus on the trigger element that actually launched the modal.
+                    if (actualTriggerElement !== null) {
+                        actualTriggerElement.focus();
+                    }
+                });
+
+                return modal;
             });
         }
     };
@@ -82,11 +96,10 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
      * @param {object} triggerElement The trigger HTML jQuery object
      * @return {object} Modal instance
      */
-    var createFromElement = function(type, modalElement, triggerElement) {
+    var createFromElement = function(type, modalElement) {
         modalElement = $(modalElement);
         var ClassName = CLASSES[type];
         var modal = new ClassName(modalElement);
-        setUpTrigger(modal, triggerElement);
 
         return modal;
     };
@@ -104,12 +117,16 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
     var createFromType = function(type, triggerElement) {
         var templateName = TEMPLATES[type];
 
-        return Templates.render(templateName, {})
+        var modalPromise = Templates.render(templateName, {})
             .then(function(html) {
                 var modalElement = $(html);
-                return createFromElement(type, modalElement, triggerElement);
+                return createFromElement(type, modalElement);
             })
             .fail(Notification.exception);
+
+        setUpTrigger(modalPromise, triggerElement);
+
+        return modalPromise;
     };
 
     /**

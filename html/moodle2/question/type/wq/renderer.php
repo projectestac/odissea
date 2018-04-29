@@ -63,18 +63,15 @@ class qtype_wq_renderer extends qtype_renderer {
     }
     protected function question_instance(question_attempt $qa) {
         // Add question instance.
+        $question = $qa->get_question();
         $xml = $qa->get_last_qt_var('_sqi');
-        if (empty($xml)) {
-            $question = $qa->get_question();
-            $sqi = $question->wirisquestioninstance->getStudentQuestionInstance();
-            $xml = $sqi->serialize();
-        } else {
+        if (!empty($xml)) {
             $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
             $sqi = $builder->readQuestionInstance($xml);
-            $question = $qa->get_question();
             $question->wirisquestioninstance->updateFromStudentQuestionInstance($sqi);
-            $xml = $question->wirisquestioninstance->serialize();
         }
+        $sqi = $question->wirisquestioninstance->getStudentQuestionInstance();
+        $xml = $sqi->serialize();
 
         $sqiname = $qa->get_qt_field_name('_sqi');
         $wirisquestioninstanceattributes = array(

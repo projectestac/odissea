@@ -2,6 +2,8 @@
 
 interface com_wiris_quizzes_api_QuestionInstance extends com_wiris_quizzes_api_Serializable{
 	function setParameter($name, $value);
+	function getProperty($name);
+	function setProperty($name, $value);
 	function areVariablesReady();
 	function getAssertionChecks($correctAnswer, $studentAnswer);
 	function getStudentAnswersLength();

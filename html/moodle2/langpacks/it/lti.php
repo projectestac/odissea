@@ -136,24 +136,22 @@ $string['embed_no_blocks'] = 'incorporato, senza blocchi';
 $string['enableemailnotification'] = 'Invia notifiche per email';
 $string['enableemailnotification_help'] = 'Consente di inviare email di notifica agli studenti quando la loro consegna del tool sarà stata valutata.';
 $string['enterkeyandsecret'] = 'Inserisci la consumer key e lo shared secret';
+$string['enterkeyandsecret_help'] = 'Se hai ricevuto un consumer key o un shared secret, inseriscili qui.';
 $string['errorbadurl'] = 'L\'URL non è un URL di tool o cartridge valido.';
 $string['errorincorrectconsumerkey'] = 'La chiave consumer è errata.';
 $string['errorinvaliddata'] = 'Dati non validi: {$a}';
 $string['errorinvalidmediatype'] = 'Tipo di media non valido: {$a}';
+$string['errorinvalidresponseformat'] = 'Il formato della risposta Content-Item non è valido.';
 $string['errormisconfig'] = 'Il tool è mal configurato. Per favore chiedi al tuo amministratore Moodle di sistemare la configurazione del tool.';
 $string['errortooltypenotfound'] = 'Tipo di tool LTI non tovato.';
 $string['existing_window'] = 'Finestra esistente';
 $string['extensions'] = 'Servizi di estensione LTI';
 $string['external_tool_type'] = 'Tool preconfigurato';
-$string['external_tool_type_help'] = 'Lo scopo principale della configurazione del tool è quello di impostare una comunicazione sicura tra Moodle e il tool provider.
-E\' anche un modo per configurare i default ed impostare eventuali servizi addizionali forniti dal tool.
+$string['external_tool_type_help'] = '* **Automatico, in funzione dell\'URL del tool. Verrà scelta automaticamente la configurazione più appropriata. Nel caso in cui venga riconosciuto l\'URL del tool, sarà necessario inserire manualmente i dettagli della configurazione.
+* **Uno specifico tool preconfigurato** - Verrà utilizzata la configurazione del tool per comunicare con il tool provider esterno. Qualora l\'URL di lancio non appartenga al tool provider, verrà visualizzato un avvertimento. In alcuni casi non è necessario impostare un URL del tool
+* **Configurazione personalizzata** - Devono essere inseriti manualmente consumer key e shared secret, ottenibili dal fornitore del tool. Non tutti i tool richiedono consumer key e shared secret, nel qual caso è possibile non compilare i relativi campi.
 
-* **Automatico, in funzione dell\'URL di lancio. Impostazione da scegliere nella maggior parte dei casi. Moodle sceglierà la configurazione più appropriata del tool in funzione dell\'URL di lancio. Verranno utilizzati tool configurati dall\'amministratore o nel corso. Specificando un URL di lancio, Moodle informerà se è in grado di trovarla oppure no. Nel caso in cui Moodle non riconosca l\'URL di lancio, potrebbe essere necessario inserire manualmente i dettagli della configurazione del tool.
-* **Un tipo di tool specifico** - Scegliendo un tipo di tool specifico, puoi obbligare Moodle ad usare quella configurazione del tool per comunicare con il tool provider esterno. Qualora l\'URL di lancio non appartenga al tool provider. verrà visualizzato un avvertimento. In alcuni casi non è necessario impostare un URL di lancio (a meno che non si stia lanciando un URL specifico contenuto nel tool provider).
-* **Configurazione personalizzata** - Per impostare una configurazione personalizzata del tool per questa specifica istanza, visualizza le Impostazioni avanzate ed inserisci consumer key e shared secret. Se non sei in possesso di conumer key e shared secret, richiedilo al tool provider esterno.
-Non tutti i tool richiedono consumer key e shared secret, nel qual caso è possibile non compilare i relativi campi.
-
-### Modifica dei tipi di tool
+### Modifica dei tool preconfigurati
 
 Accanto al menu a discesa Tipo di tool esterno sono disponibili tre icone:
 
@@ -184,7 +182,7 @@ $string['global_tool_types'] = 'Tool preconfigurati globali';
 $string['grading'] = 'Instradamento valutazioni';
 $string['icon_url'] = 'URL dell\'icona';
 $string['icon_url_help'] = 'L\'URL dell\'icona consente di visualizzare nella home page del corso l\'icona specifica del tool al posto dell\'icona LTI default';
-$string['id'] = 'id';
+$string['id'] = 'ID';
 $string['invalidid'] = 'L\'ID LTI non era corretta';
 $string['launch_in_moodle'] = 'Lancia il tool in Moodle';
 $string['launchinpopup'] = 'Contenitore di lancio';
@@ -197,10 +195,12 @@ $string['launchinpopup_help'] = 'Il contenitore di lancio influenza la visualizz
 * **Nuova finestra** - Il tool viene aperto in una nuova finestra che occuperà tutto lo spazio disponibile. In funzione del tipo di browser, la nuova finestra può essere una finestra popup oppure un tab di una finestra già esistente. E\' possibile che il browser impedisca l\'apertura di nuove finestre.';
 $string['launchoptions'] = 'Opzioni di lancio';
 $string['launch_url'] = 'URL tool';
-$string['launch_url_help'] = 'L\'URL di lancio specifica l\'indirizzo web del tool esterno e può contenere informazioni aggiuntive come la risorsa da visualizzare.
-Se non sei certo su cosa inserire per l\'URL di lancio, verifica le informazioni con il tool provider.
+$string['launch_url_help'] = 'L\'URL del tool specifica l\'indirizzo web del tool esterno e può contenere informazioni aggiuntive come la risorsa da visualizzare.
+Se non sei certo su cosa inserire per l\'URL del tool, verifica le informazioni con il tool provider.
 
-Se hai selezionato un tipo di tool specifico, potrebbe non essere necessario inserire l\'URL di lancio, ad esempio quando l\'URl di lancio è utilizzata per accedere al sistema del tool provider invece che ad una specifica risorsa.';
+E\' possibile inserire un URL cartridge se disponibile, in modo da compilare i campi restanti in modo automatico.
+
+Se è stato selezionato un tipo di tool specifico, può non essere necessario inserire l\'URL del tool, ad esempio quando l\'URl del tool è utilizzata per accedere al sistema del tool provider invece che ad una specifica risorsa.';
 $string['leaveblank'] = 'Lascia vuoto se non ti servono';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Aggiungere configurazioni Tool esterno a livello di corso';
@@ -224,13 +224,13 @@ $string['lti_tool_request_existing'] = 'E\' già stata inviata una configurazion
 $string['ltiunknownserviceapicall'] = 'Chiamata servizio API LTI sconosciuta';
 $string['lti:view'] = 'Lanciare attività Tool esterno';
 $string['main_admin'] = 'Help generale';
-$string['main_admin_help'] = 'I tool esterni consentono a Moodle di interagire con risorse formative ospitate in altri siti. Tramite uno speciale protocollo di lancio, il tool remoto può accedere ad alcune informazioni relative all\'utente, come ad esempio il nome dell\'istituzione, l\'id del corso, l\'id dell\'utente, il nome dell\'utente e l\'email.
+$string['main_admin_help'] = 'I tool esterni consentono di interagire con risorse formative ospitate in altri siti. Tramite uno speciale protocollo di lancio, il tool remoto può accedere ad alcune informazioni relative all\'utente, come ad esempio il nome dell\'istituzione, l\'id del corso, l\'id dell\'utente, il nome dell\'utente e l\'email.
 
-I tipi di tool elencati in questa pagina sono divisi in tre categorie:
+I tool elencati nella pagina sono divisi in tre categorie:
 
-* **Attivi** - Questi tool provider sono stati approvati e configurati da un amministratore e  possono essere utilizzati nei corsi. Se viene inserito un consumer key e uno shared secret, allora verrà stabilita una relazione di trust tra questa istanza Moodle e il tool esterno attraverso un canale di comunicazione sicuro.
-* ** In attesa ** - Questi tool provider sono stati importati da un pacchetto ma non sono stati ancora configurati da una amministratore. I docenti possono usare i tool in attesa solo se hanno un consumer key ed uno shared secret oppure se questi parametri non sono necessari.
-* ** Rifiutati ** - Questi tool provider sono stati contrassegnati per indicare che l\'amministratore non ha intenzione di renderli disponibili.  I docenti possono usare i tool rifiutati solo se hanno un consumer key ed uno shared secret oppure se questi parametri non sono necessari.';
+* **Attivi** - Questi tool provider sono stati approvati e configurati da un amministratore e  possono essere utilizzati nei corsi. Se viene inserito un consumer key e un shared secret, allora verrà stabilita una relazione di fiducia tra questo sito e il tool esterno attraverso un canale di comunicazione sicuro.
+* ** In attesa ** - Questi tool provider sono stati importati tramite pacchetto ma non sono stati ancora configurati da una amministratore. I docenti possono usare i tool in attesa solo se hanno un consumer key ed un shared secret oppure se questi parametri non sono necessari.
+* ** Rifiutati ** - Questi tool provider sono stati contrassegnati per indicare che l\'amministratore non ha intenzione di renderli disponibili.  I docenti possono usare i tool rifiutati solo se hanno un consumer key ed un shared secret oppure se questi parametri non sono necessari.';
 $string['manage_external_tools'] = 'Gestione tool';
 $string['manage_tool_proxies'] = 'Gestione registrazione tool esterni';
 $string['manage_tools'] = 'Gestione tool preconfigurati';
@@ -310,7 +310,7 @@ $string['quickgrade_help'] = 'Consente la valutazione di più tool nella stessa 
 $string['redirect'] = 'Tra pochi secondi verrai reindirizzato, in caso contrario premi il pulsante.';
 $string['register'] = 'Regsitra';
 $string['registertype'] = 'Aggiungi registrazione tool esterno';
-$string['register_warning'] = 'La pagina di registrazione sta impiegando troppo tempo per essere visualizzata. Se non dovesse comparire, verificare di aver inserto l\'URL corretto nelle impostazioni di configurazione.';
+$string['register_warning'] = 'La visualizzazione della pagina di registrazione sta impiegando troppo tempo. Se non dovesse comparire, verificare di aver inserto l\'URL corretto nelle impostazioni di configurazione. Se il sito è configurato in https, accertarsi che il tool da configurare supporti https e che l\'URL utilizzata riporti https.';
 $string['registrationname'] = 'Nome tool provider';
 $string['registrationname_help'] = 'Il nome del tool provider da registare';
 $string['registration_options'] = 'Opzioni di registarzione';
@@ -378,9 +378,7 @@ $string['share_roster_help'] = 'E\' possibile consentire al tool di conoscere l\
 Da notare che questa impostazione può essere modificata dalla configurazione del tool.';
 $string['show_in_course_activity_chooser'] = 'Visualizza nel selettore attività e come tool preconfigurato';
 $string['show_in_course_lti1'] = 'Utilizzo della configurazione del tool';
-$string['show_in_course_lti1_help'] = 'Questo tool può essere visualizzato nel selettore attività consentendo ai docenti di aggiungerlo ai corsi oppure può essere visualizzato nel menù a discesa dei tool preconfigurati quando si aggiunge un tool al corso.
-
-In alternativa la configurazione del tool può non essere visualizzata ma utilizzata solo se viene inserita il corretto URL di lancio quando si aggiunge un tool esterno al corso.';
+$string['show_in_course_lti1_help'] = 'Questo tool può essere visualizzato nel selettore attività consentendo ai docenti di aggiungerlo ai corsi. In alternativa può essere visualizzato nel menù a discesa dei tool preconfigurati quando si aggiunge un tool al corso. E\' disponibile un\'opzione ulteriore per consentire l\'utilizzo del tool solamente se viene inserito il corretto URL di lancio quando si aggiunge un tool esterno al corso.';
 $string['show_in_course_lti2'] = 'Utilizzo della configurazione del tool';
 $string['show_in_course_lti2_help'] = 'Questo tool può essere visualizzato nel selettore attività consentendo ai docenti di aggiungerlo ai corsi oppure può essere visualizzato nel menù a discesa dei tool preconfigurati quando si aggiunge un tool al corso.';
 $string['show_in_course_no'] = 'Non visualizzare; da utilizzare solo se viene inserita un URL corretta del tool';
@@ -406,14 +404,14 @@ E\' utile per descrivere il tool e le sue funzionalità, assieme ad altre inform
 $string['toolisbeingused'] = 'Questo tool è stato utilizzato {$a} volte';
 $string['toolisnotbeingused'] = 'Questo tool non è stato utilizzato';
 $string['toolproxy'] = 'Registrazioni tool esterno';
-$string['toolproxy_help'] = 'Le registrazioni di tool esterni consentono agli amministratori di Moodle di configurare tool esterni tramite un tool proxy di un tool provider che supporti LTI 2.0. Per avviare una registrazione Il solo parametro necessario è l\'URL fornita dal tool provider. Le funzionalità ed i servizi offerti dal tool provider possono essere selezionati durante la configurazione di una nuova registrazione.
+$string['toolproxy_help'] = 'Le registrazioni di tool esterni consentono agli amministratori di configurare tool esterni tramite un tool proxy di un tool provider che supporti LTI 2.0. Per registrare un tool l\'unico parametro necessario è l\'URL fornioa dal tool provider. Le funzionalità ed i servizi offerti dal tool provider possono essere selezionati durante la configurazione di una nuova registrazione.
 
-Le registrazioni di tool sono suddivisi in quattro categorie:
+Le registrazioni dei tool sono suddivisi in quattro categorie:
 
-* **Configurati** - Le registrazioni di tool sono state impostate ma la registrazioni non sono state avviate.
-* ** In attesa ** - Le registrazioni sono state avviate ma non sono terminate. Aprirle e salvare le impostazioni per spostarle nella categorie "Configurati"
-* **Accettati ** - le registrazioni sono approvate: le risorse specificate nel tool proxy appariranno nella pagina del tool esterno con uno stato iniziale di \' in attesa\'.
-* ** Rifiutati ** - Le registrazioni rifiutate. Aprirle e salvarle le impostazioni per spostarle nella categoria "Configurati".';
+* **Configurati** - Le registrazioni dei tool sono state impostate ma il processo di registrazione non è stato avviato.
+* ** In attesa ** - I processi di registrazione dei tool sono stati avviati ma non sono terminati. Aprire e salvare le impostazioni per spostarle nella categoria \'Configurati\'.
+* **Accettati ** - le registrazioni dei tool sono state approvate: le risorse specificate nel tool proxy appariranno nella pagina del tool esterno con uno stato iniziale di \' In attesa\'.
+* ** Rifiutati ** - Le registrazioni sono state rifiutate. Aprire e salvare le impostazioni per spostarle nella categoria \'Configurati\', al fine di avviare di nuovo il processo di registrazione.';
 $string['toolproxyregistration'] = 'Registrazione tool esterno';
 $string['toolregistration'] = 'Registrazione tool esterno';
 $string['tool_settings'] = 'Impostazioni tool';
@@ -424,30 +422,31 @@ $string['tooltypenotdeleted'] = 'Non è stato possibile eliminare il tool precon
 $string['tooltypes'] = 'Tool';
 $string['tooltypeupdated'] = 'Il tool preconfigurato è stato aggiornato';
 $string['toolurl'] = 'URL tool';
-$string['toolurl_help'] = 'L\'URL base del tool viene utilizzata per far corrispondere  l\'URL di lancio del tool con la relativa configurazione. Il prefisso http(s) sull\'URL è opzionale.
+$string['toolurl_help'] = 'L\'URL del tool viene utilizzata per far corrispondere  l\'URL del tool con la relativa configurazione. Il prefisso http(s) sull\'URL è facoltativo.
 
-Inoltre, l\'URL base viene utilizzata come URL di lancio se non è stata definita una URL di lancio nell\'stanza del tool esterno.
+Inoltre, l\'URL di base viene utilizzata come URL del tool se non è stata definita una URL del tool nell\'istanza del tool esterno.
 
-Ad esempio, un URL base come *tool.com* corrisponde a:
+Ad esempio, un URL di base come *tool.com* corrisponde a:
 
 * tool.com
 * tool.com/quizzes
 * tool.com/quizzes/quiz.php?id=10
 * www.tool.com/quizzes
 
-Un URL base come *www.tool.com/quizzes* corrisponde a:
+Un URL di base come *www.tool.com/quizzes* corrisponde a:
 
 * www.tool.com/quizzes
 * tool.com/quizzes
 * tool.com/quizzes/take.php?id=10
 
-
-Un URL base come *quiz.tool.com* corrisponde a:
+Un URL di base come *quiz.tool.com* corrisponde a:
 
 * quiz.tool.com
 * quiz.tool.com/take.php?id=10
 
-Se due configurazioni di tool si riferiscono ad uno stesso dominio, verrà utilizzata la corrispondenza più rilevante.';
+Se due configurazioni di tool si riferiscono ad uno stesso dominio, verrà utilizzata la corrispondenza più rilevante.
+
+E\' anche possibile inserire un URL cartridge e i dettagli del tool saranno compilati automaticamente.';
 $string['toolurlplaceholder'] = 'URL del tool';
 $string['typename'] = 'Nome del tool';
 $string['typename_help'] = 'Il nome del tool è consente di identificare il provider del tool in Moodle. Il nome sarà visibile ai docenti quando aggiungono i tool nei corsi.';

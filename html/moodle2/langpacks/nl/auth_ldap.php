@@ -99,7 +99,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type is niet gedefinieerd
 $string['auth_ldap_version'] = 'De versie van het LDAP-protocol die jouw server gebruikt.';
 $string['auth_ldap_version_key'] = 'Versie';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te bekomen.<strong>Opmerking</strong>dit vereist bijkomende instellingen op de webserver. Zie <a href="http://docs.moodle.org/nl/NTLM_authenticatie">http://docs.moodle.org/nl/NTLM_authenticatie</a';
+$string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te bekomen.<strong>Opmerking</strong>dit vereist bijkomende instellingen op de webserver. Zie <a href="http://docs.moodle.org/nl/NTLM_authenticatie">http://docs.moodle.org/nl/NTLM_authenticatie</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Inschakelen';
 $string['auth_ntlmsso_ie_fastpath'] = 'Zet op ja om NTLM SSO fast path in in te schakelen (slaat sommige stappen over als de browser MS Internet Explorer is).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Probeer NTLM met alle browsers';

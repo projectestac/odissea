@@ -178,7 +178,7 @@ $string['collesm5'] = 'Ikaskideen laguntza';
 $string['collesm5short'] = 'Ikaskideen laguntza';
 $string['collesm6'] = 'Interpretazioa';
 $string['collesm6short'] = 'Interpretazioa';
-$string['collesmintro'] = 'Online unitate honetan...';
+$string['collesmintro'] = 'On-line unitate honetan...';
 $string['collespintro'] = 'Galdeketa honen helburua on-line ikasketan zer baloratzen duzun jakitea da.
 
 Azpiko 24 esaldietako bakoitza unitate honekin zure <B>nahia</B> (esperientzia ideala) baloratzen du.
@@ -213,7 +213,7 @@ $string['invalidsurveyid'] = 'HAusnarketaren IDa ez zen zuzena';
 $string['invalidtmptid'] = 'Txantiloiaren IDa ez da baliozkoa';
 $string['ipreferthat'] = 'Nahiago dut';
 $string['modulename'] = 'Hausnarketa';
-$string['modulename_help'] = 'Hausnarketa jarduerak online inguruneetan ikasketa eta ebaluazioa sustatzeko baliagarriak diren hausnarketa erremintak erabiltzeko aukera ematen du. Irakasleak erreminta hauek bere ikasleak eta bere irakasteko modua hobeto ezagutzen laguntzeko erabili ditzake.
+$string['modulename_help'] = 'Hausnarketa jarduerak on-line inguruneetan ikasketa eta ebaluazioa sustatzeko baliagarriak diren hausnarketa erremintak erabiltzeko aukera ematen du. Irakasleak erreminta hauek bere ikasleak eta bere irakasteko modua hobeto ezagutzen laguntzeko erabili ditzake.
 
 Kontuan izan hausnarketa erreminta hauetako galderak aurrez definiturik daudela. Norbere inkestak egin nahi dituen irakasleak feedback jarduera erabili behar du.';
 $string['modulenameplural'] = 'Hausnarketak';
@@ -259,7 +259,7 @@ $string['surveytype_help'] = '3 inkesta mota daude eskuragarri:
 
 * Pentsatzeko eta Ikasteko Jarrerarako Inkesta (ATTS inglesezko hitzetatik) - pertsona bat zein neurrira arte \'konektatutako ikaslea\' den (ikastea gustagarriago aurkitzen du, eta askotan lagunkoiagoa, atseginagoa eta besteekin ideiak eraikitzeko prestutasun handiagoa izaten du) edo \'ikasle bereizia\' den (ikastean kritikoagoa eta jarrera eztabaidatsuagoa izateko joera du) neurtzeko.
 * Gertakari kritikoetarako inkesta
-* Online-ko Ikaste Ingurune Konstruktibistarako Inkesta (COLLES inglesezko hitzetatik) - World Wide Web-eko gaitasun interaktiboa ikasteko praktika dinamikoetan ikasleen parte-hartzea areagotzeko esplotatzeko gaitasuna monitorizatzeko.';
+* On-line-ko Ikaste Ingurune Konstruktibistarako Inkesta (COLLES inglesezko hitzetatik) - World Wide Web-eko gaitasun interaktiboa ikasteko praktika dinamikoetan ikasleen parte-hartzea areagotzeko esplotatzeko gaitasuna monitorizatzeko.';
 $string['thanksforanswers'] = 'Eskerrik asko erantzuteagatik, {$a}';
 $string['time'] = 'Denbora';
 $string['viewsurveyresponses'] = 'Ikusi hausnarketaren {$a} erantzun';

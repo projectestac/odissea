@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = 'さらに {no} 件の空白の選択肢を追加する';
+$string['addmorechoiceblanks'] = 'さらに {no} 個の空白の選択肢を追加する';
 $string['answer'] = '答え';
 $string['choices'] = '選択肢';
 $string['choicex'] = '選択肢 {no}';
@@ -41,8 +41,8 @@ $string['pleaseputananswerineachbox'] = 'それぞれのテキストボックス
 $string['pluginname'] = 'ミッシングワード選択';
 $string['pluginnameadding'] = 'ミッシングワード選択問題の追加';
 $string['pluginnameediting'] = 'ミッシングワード選択問題の編集';
-$string['pluginname_help'] = 'ミッシングワード問題ではドロップダウンメニューから選択すためにレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して、[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。問題を難しくするため、さらに答えの選択肢を追加することができます。それぞれのドロップダウンメニューで利用できる答えを制限するため、答えの選択肢をグループ分けすることができます。';
+$string['pluginname_help'] = 'ミッシングワード問題ではドロップダウンメニューから選択するためレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。問題を難しくするためさらに答えの選択肢を追加することができます。それぞれのドロップダウンメニューで利用できる答えを制限するため答えの選択肢をグループ分けすることができます。';
 $string['pluginnamesummary'] = 'ドロップダウンメニューを使って問題テキスト内のミッシングワードを埋めます。';
 $string['shuffle'] = 'シャッフル';
-$string['tagsnotallowed'] = '{$a->tag} は許可されません ({$a->allowed} のみ許可されています)。';
-$string['tagsnotallowedatall'] = '{$a->tag} は許可されません (ここでHTMLは許可されていません)。';
+$string['tagsnotallowed'] = '{$a->tag} は許可されません ({$a->allowed} のみ許可されます)。';
+$string['tagsnotallowedatall'] = '{$a->tag} は許可されません (ここでHTMLは許可されません)。';

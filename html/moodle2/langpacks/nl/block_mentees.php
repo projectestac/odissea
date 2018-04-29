@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'Blok titel';
+$string['configtitle'] = 'Bloktitel';
 $string['configtitleblankhides'] = 'Bloktitel (geen titel als leeg)';
 $string['leaveblanktohide'] = 'Laat leeg om geen titel te tonen';
-$string['mentees:addinstance'] = 'Voeg een nieuw mentees blok toe';
-$string['mentees:myaddinstance'] = 'Voeg een nieuw Menteesblok toe aan Mijn startpagina.';
-$string['newmenteesblock'] = '(nieuw blok voor mentees)';
+$string['mentees:addinstance'] = 'Voeg een nieuw mentees-blok toe';
+$string['mentees:myaddinstance'] = 'Voeg een nieuw mentees-blok toe aan Mijn startpagina.';
+$string['newmenteesblock'] = '(nieuw blok voor Mentees)';
 $string['pluginname'] = 'Mentees';

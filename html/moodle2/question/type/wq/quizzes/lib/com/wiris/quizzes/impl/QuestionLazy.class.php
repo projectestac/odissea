@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_QuestionInternal implements com_wiris_quizzes_api_Question{
+class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_QuestionInternal implements com_wiris_quizzes_api_MultipleQuestion{
 	public function __construct($xml) {
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct();
@@ -26,6 +26,27 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 			$this->id = _hx_substr($tag, $s, $e - $s);
 		}
 	}}
+	public function addAssertionOfSubquestion($sub, $name, $correctAnswer, $studentAnswer, $parameters) {
+		$this->getImpl()->addAssertionOfSubquestion($sub, $name, $correctAnswer, $studentAnswer, $parameters);
+	}
+	public function setPropertyOfSubquestion($sub, $name, $value) {
+		$this->getImpl()->setPropertyOfSubquestion($sub, $name, $value);
+	}
+	public function getPropertyOfSubquestion($sub, $name) {
+		return $this->getImpl()->getPropertyOfSubquestion($sub, $name);
+	}
+	public function setCorrectAnswerOfSubquestion($sub, $index, $correctAnswer) {
+		$this->getImpl()->setCorrectAnswerOfSubquestion($sub, $index, $correctAnswer);
+	}
+	public function getCorrectAnswerOfSubquestion($sub, $index) {
+		return $this->getImpl()->getCorrectAnswerOfSubquestion($sub, $index);
+	}
+	public function getCorrectAnswersLengthOfSubquestion($sub) {
+		return $this->getImpl()->getCorrectAnswersLengthOfSubquestion($sub);
+	}
+	public function getNumberOfSubquestions() {
+		return $this->getImpl()->getNumberOfSubquestions();
+	}
 	public function getImpl() {
 		if($this->question === null) {
 			$s = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getSerializer();

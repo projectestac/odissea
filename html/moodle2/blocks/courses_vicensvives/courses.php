@@ -17,9 +17,6 @@
 require('../../config.php');
 require_once("$CFG->dirroot/blocks/courses_vicensvives/locallib.php");
 
-if (!isloggedin() or isguestuser()) {
-    require_login();
-}
 require_login(null, false);
 
 $returnurl = new moodle_url('/blocks/courses_vicensvives/courses.php');
@@ -93,11 +90,11 @@ if (has_capability('moodle/course:update', context_system::instance())) {
     }
 }
 
-if (!$courses) {
-    redirect($CFG->wwwroot, get_string('nohaycursos', 'block_courses_vicensvives'), 10);
-}
-
 echo $OUTPUT->header();
+
+if (!$courses) {
+    echo html_writer::div(get_string('nohaycursos', 'block_courses_vicensvives'), 'alert alert-info');
+}
 
 $contextcat = context_coursecat::instance($CFG->block_courses_vicensvives_defaultcategory);
 if (has_capability('moodle/course:create', $contextcat)) {

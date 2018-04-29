@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Tipos de archivo aceptados';
+$string['acceptedfiletypes_help'] = 'Se puede restringir los tipos de archivo aceptados introduciendo una lista de tipos MIME separados por comas, por ejemplo video/mp4, audio/mp3, image/png, image/jpeg, o bien extensiones de archivo incluyendo el punto, por ejemplo .png, .jpg. Si la casilla se deja vacía, será aceptado cualquier tipo de archivo.';
 $string['configmaxbytes'] = 'Tamaño máximo de archivo';
 $string['countfiles'] = '{$a} archivos';
 $string['default'] = 'Habilitado por defecto';
@@ -40,6 +42,7 @@ $string['maxfilessubmission'] = 'Número máximo de archivos subidos';
 $string['maxfilessubmission_help'] = 'Si la entrega de archivos está habilitada, cada estudiante podrá subir hasta este número de archivos en sus envíos';
 $string['maximumsubmissionsize'] = 'Tamaño máximo de la entrega';
 $string['maximumsubmissionsize_help'] = 'El archivo subido por el alumno no puede estar por encima de este tamaño.';
+$string['nonexistentfiletypes'] = 'Los siguientes tipos de archivo no fueron reconocidos: {$a}';
 $string['numfilesforlog'] = 'El número de archivos: {$a} archivos';
 $string['pluginname'] = 'Archivos enviados';
 $string['siteuploadlimit'] = 'Límite de subida del sitio';

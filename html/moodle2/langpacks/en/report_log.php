@@ -37,6 +37,7 @@ $string['eventuserreportviewed'] = 'User log report viewed';
 $string['logsformat'] = 'Logs format';
 $string['log:view'] = 'View course logs';
 $string['log:viewtoday'] = 'View today\'s logs';
+$string['nocapability'] = 'Can not access user log report';
 $string['nologreaderenabled'] = 'No log reader enabled';
 $string['origin'] = 'Source';
 $string['other'] = 'Other';

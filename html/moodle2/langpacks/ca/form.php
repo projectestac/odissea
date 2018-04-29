@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfields'] = 'Afegeix {$a} camps al formulari';
+$string['addfields'] = 'Afegeix {$a} camp(s) al formulari';
 $string['advancedelement'] = 'Element avançat';
 $string['close'] = 'Tanca';
 $string['day'] = 'Dia';
@@ -34,7 +34,7 @@ $string['err_alphanumeric'] = 'Només s\'hi admeten lletres o nombres.';
 $string['err_email'] = 'Heu d\'introduir una adreça de correu vàlida.';
 $string['err_lettersonly'] = 'Només s\'hi admeten lletres.';
 $string['err_maxfiles'] = 'Aquí no podeu adjuntar més de {$a} fitxers.';
-$string['err_maxlength'] = 'Només s\'hi admeten com a màxim {$a->format} caràcters.';
+$string['err_maxlength'] = 'Aquí només s\'hi admeten com a màxim {$a->format} caràcters.';
 $string['err_minlength'] = 'Heu d\'introduir com a mínim {$a->format} caràcters.';
 $string['err_nonzero'] = 'Heu d\'introduir un nombre que no comenci per zero.';
 $string['err_nopunctuation'] = 'No s\'hi admeten signes de puntuació.';
@@ -53,8 +53,12 @@ $string['nomethodforaddinghelpbutton'] = 'No hi ha cap mètode per a afegir un b
 $string['nonexistentformelements'] = 'S\'està intentant afegir botons d\'ajuda a elements del formulari inexistents: {$a}';
 $string['noselection'] = 'Cap selecció';
 $string['nosuggestions'] = 'Sense suggeriments';
+$string['novalue'] = 'No s\'ha introduït res';
+$string['novalueclicktoset'] = 'Cliqueu per introduir text';
 $string['optional'] = 'Opcional';
 $string['othersettings'] = 'Altres paràmetres';
+$string['passwordunmaskedithint'] = 'Edita la contrasenya';
+$string['passwordunmaskinstructions'] = 'Pitgeu la tecla de retorn per desar els canvis';
 $string['passwordunmaskrevealhint'] = 'Revela';
 $string['requiredelement'] = 'Camp requerit';
 $string['revealpassword'] = 'Revela';

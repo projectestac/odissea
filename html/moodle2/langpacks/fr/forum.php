@@ -198,7 +198,7 @@ $string['eventdiscussionmoved'] = 'Discussion déplacée';
 $string['eventdiscussionpinned'] = 'Discussion épinglée';
 $string['eventdiscussionsubscriptioncreated'] = 'Abonnement à une discussion créé';
 $string['eventdiscussionsubscriptiondeleted'] = 'Abonnement à une discussion supprimé';
-$string['eventdiscussionunpinned'] = 'Discussion dé';
+$string['eventdiscussionunpinned'] = 'Discussion dépinglée';
 $string['eventdiscussionupdated'] = 'Discussion modifiée';
 $string['eventdiscussionviewed'] = 'Discussion consultée';
 $string['eventpostcreated'] = 'Message créé';
@@ -502,14 +502,12 @@ $string['subscriptiondisabled'] = 'Abonnement désactivé';
 $string['subscriptionforced'] = 'Abonnement imposé';
 $string['subscription_help'] = 'Si vous êtes abonné à un forum, vous recevrez par courriel une notification des nouveaux messages postés sur ce forum. Habituellement, vous pouvez décider de vous abonner, mais dans certains forums, l\'abonnement est imposé, de sorte que tout le monde reçoit les notifications.';
 $string['subscriptionmode'] = 'Mode d\'abonnement';
-$string['subscriptionmode_help'] = 'Lorsqu\'un participant est abonné à un forum, il reçoit par courriel une copie de tous les messages postés sur ce forum. Il existe 4 options pour l\'abonnement :
+$string['subscriptionmode_help'] = 'Lorsqu\'un participant est abonné à un forum, il reçoit par courriel une copie de tous les messages postés sur ce forum. Il existe 4 modes pour cet abonnement :
 
-* Abonnement facultatif : les participants peuvent décider de s\'abonner ou non à chaque forum.
-* Abonnement imposé : tous les participants du cours sont abonnés et ne peuvent pas se désabonner.
-* Abonnement automatique : tous les participants du cours sont initialement abonnés, mais peuvent choisir de se désabonner quand ils le veulent.
-* Abonnement désactivé : l\'abonnement n\'est pas autorisé.
-
-Les changements effectués au type d\'abonnement n\'affectent que les futurs inscrits au cours.';
+* Abonnement facultatif : les participants peuvent décider de s\'abonner ou non.
+* Abonnement imposé : tous les participants sont abonnés et ne peuvent pas se désabonner.
+* Abonnement automatique : tous les participants sont initialement abonnés, mais peuvent choisir de se désabonner quand ils le veulent.
+* Abonnement désactivé : l\'abonnement n\'est pas autorisé.';
 $string['subscriptionoptional'] = 'Abonnement facultatif';
 $string['subscriptions'] = 'Abonnements';
 $string['thisforumisthrottled'] = 'Ce forum a une limite du nombre de messages que vous pouvez poster durant une période donnée. Cette limite est actuellement de {$a->blockafter} message(s) durant {$a->blockperiod}';

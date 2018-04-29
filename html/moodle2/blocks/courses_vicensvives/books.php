@@ -72,7 +72,7 @@ try {
 
 } catch (vicensvives_ws_error $e) {
     echo $OUTPUT->header();
-    echo html_writer::tag('p', $e->getMessage(), array('class' => 'alert alert-error'));
+    echo html_writer::tag('p', $e->getMessage(), array('class' => 'alert alert-danger'));
     echo $OUTPUT->footer();
     exit;
 }
@@ -197,7 +197,7 @@ foreach ($filteredbooks as $book) {
     $row->isbn = $book->isbn;
     $addurl = new moodle_url('/blocks/courses_vicensvives/books.php', array('create' => $book->idBook));
     $title = get_string('addcourse', 'block_courses_vicensvives');
-    $icon = html_writer::empty_tag('img', array('src' => $OUTPUT->pix_url('t/addfile'), 'alt' => $title));
+    $icon = $OUTPUT->pix_icon('t/addfile', $title);
     $row->actions = html_writer::link($addurl, $icon, array('title' => $title));
     $rows[] = $row;
 }

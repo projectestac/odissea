@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = '{$a} partaidea';
+$string['blindmarkingviewfullname'] = '{$a->participantnumber}. partaidea ({$a->participantfullname})';
 $string['default'] = 'Berez gaituta';
 $string['default_help'] = 'Ezarriz gero, bidalketa-metodo hau berez gaituko da zeregin berri guztietan';
 $string['enabled'] = 'Bidalketaren iruzkinak';

@@ -45,5 +45,5 @@ $string['pluginname'] = 'Paquetes de idioma';
 $string['purgestringcaches'] = 'Purgar cachés de cadenas';
 $string['remotelangnotavailable'] = 'Debido a que Moodle no puede conectarse a download.moodle.org, no podemos instalar el paquete de idioma automáticamente. Por favor, descargue los archivos apropiados de http://download.moodle.org, cópielos a su directorio {$a} y descomprímalos manualmente.';
 $string['uninstall'] = 'Desinstalar el paquete de idioma seleccionado';
-$string['uninstallconfirm'] = 'Está a punto de desinstalar el paquete de idioma "{$a}"; ¿está usted seguro?';
-$string['updatelangs'] = 'Actualizar todos los paquetes locales de idioma';
+$string['uninstallconfirm'] = 'Está a punto de desinstalar por completo estos paquetes de idioma <strong>{$a}</strong>. ¿Está usted seguro?';
+$string['updatelangs'] = 'Actualizar todos los paquetes de idioma instalados';

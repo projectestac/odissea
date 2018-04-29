@@ -148,6 +148,7 @@ $string['exportcategory'] = 'Εξαγωγή κατηγορίας';
 $string['exporterror'] = 'Σφάλματα συνέβησαν κατά την εξαγωγή!';
 $string['exportfilename'] = 'κουίζ';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportquestions'] = 'Εξαγωγή ερωτήσεων σε αρχείο';
 $string['exportquestions_help'] = '<p>Αυτή η λειτουργία επιτρέπει την εξαγωγή μιας ολόκληρης κατηγορίας (και όλων
    των υποκατηγοριών) ερωτήσεων σε ένα αρχείο κειμένου. </p>
 

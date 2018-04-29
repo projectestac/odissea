@@ -24,6 +24,7 @@ $string['shortanswerwiris_answersinstruct'] = 'Sie müssen mindestens eine richt
 $string['shortanswerwiris_algorithm'] = 'Algorithmus';
 $string['shortanswerwiris_cantimportcompoundtest'] = 'Die Kurzantwort-Frage zu Mathematik und Naturwissenschaften konnte nicht korrekt aus dem Moodle-1.9-Format importiert werden. Die Frage kann manuell repariert werden. Befolgen Sie dazu die Anweisungen unter <a href="http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade">http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade</a>.';
 $string['filloutoneanswer'] = 'Sie müssen mindestens eine mögliche Antwort angeben. Die erste übereinstimmende Antwort wird zur Bestimmung der Punktzahl und des Feedbacks verwendet. Klicken Sie auf das Symbol neben dem Antwortfeld, um die mathematischen Eigenschaften der Antwort und Frage zu bearbeiten.';
+$string['failedtogradetest'] = 'Failed to grade (testing-{$a})!';
 
 // From Moodle 2.3.
 $string['pluginname'] = 'Kurzantwort-Fragen – Mathematik und Naturwissenschaften';

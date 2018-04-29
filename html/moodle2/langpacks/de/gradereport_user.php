@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Bewertungsübersicht angezeigt';
-$string['myself'] = 'Selbst';
-$string['otheruser'] = 'Nutzer';
+$string['myself'] = 'Selber';
+$string['otheruser'] = 'Nutzer/in';
 $string['pluginname'] = 'Teilnehmerübersicht';
 $string['tablesummary'] = 'Die Tabelle enthält eine Übersicht über die bewerteten Aktivitäten mitsamt den Kategorien für Bewertungen. Werte, die Kategorien hinterlegt wurden, werden in diese auch angezeigt.';
 $string['user:view'] = 'Eigene Bewertungen sehen';
-$string['viewas'] = 'Bericht anzeigen als';
+$string['viewas'] = 'Report anzeigen als';

@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmimport'] = 'Επιβεβαίωση εισαγωγής βαθμών';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
+$string['offlinegradingworksheet'] = 'Βαθμοί';
+$string['processgrades'] = 'Εισαγωγή βαθμών';

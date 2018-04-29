@@ -67,8 +67,8 @@ class mod_choicegroup_mod_form extends moodleform_mod {
 			$groups[$group->id]->id = $group->id;
 		}
 
-		if (count($db_groups) < 2) {
-			print_error('pleasesetgroups', 'choicegroup', new moodle_url('/course/view.php?id='.$COURSE->id));
+		if (count($db_groups) < 1) {
+			print_error('pleasesetonegroup', 'choicegroup', new moodle_url('/course/view.php?id='.$COURSE->id));
 		}
 
 		$db_groupings = $DB->get_records('groupings', array('courseid' => $COURSE->id));
@@ -248,11 +248,11 @@ function data_preprocessing(&$default_values){
 
 		if (array_key_exists('multipleenrollmentspossible', $data) && $data['multipleenrollmentspossible'] === '1') {
 			if (count($groupIDs) < 1) {
-				$errors['serializedselectedgroups'] = get_string('fillinatleastoneoption', 'choicegroup');
+				$errors['groups'] = get_string('fillinatleastoneoption', 'choicegroup');
 			}
 		} else {
-			if (count($groupIDs) < 2) {
-				$errors['serializedselectedgroups'] = get_string('fillinatleasttwooptions', 'choicegroup');
+			if (count($groupIDs) < 1) {
+				$errors['groups'] = get_string('fillinatleastoneoption', 'choicegroup');
 			}
 		}
 

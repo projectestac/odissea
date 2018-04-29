@@ -47,7 +47,7 @@ class restore_rcontent_activity_structure_step extends restore_activity_structur
     }
 
     protected function process_rcontent($data) {
-        global $DB;
+        global $DB, $CFG;
 
         $data = (object)$data;
         $oldid = $data->id;

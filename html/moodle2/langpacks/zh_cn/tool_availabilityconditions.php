@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = '管理限制';
+$string['pluginname'] = '可用性状态管理';

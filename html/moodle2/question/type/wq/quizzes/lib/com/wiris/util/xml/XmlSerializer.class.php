@@ -256,11 +256,23 @@ class com_wiris_util_xml_XmlSerializer {
 			if($this->mode === com_wiris_util_xml_XmlSerializer::$MODE_WRITE && $content !== null && $this->ignoreTagStackCount === 0) {
 				$textNode = null;
 				if(strlen($content) > 100 || StringTools::startsWith($content, "<") && StringTools::endsWith($content, ">")) {
-					$textNode = Xml::createCData($content);
+					$k = _hx_index_of($content, "]]>", null);
+					$i = 0;
+					while($k > -1) {
+						$subcontent = _hx_substr($content, $i, $k - $i + 2);
+						$textNode = Xml::createCData($subcontent);
+						$this->element->addChild($textNode);
+						$i = $k + 2;
+						$k = _hx_index_of($content, "]]>", $i);
+						unset($subcontent);
+					}
+					$str = _hx_substr($content, $i, null);
+					$textNode = Xml::createCData($str);
+					$this->element->addChild($textNode);
 				} else {
 					$textNode = com_wiris_util_xml_WXmlUtils::createPCData($this->element, $content);
+					$this->element->addChild($textNode);
 				}
-				$this->element->addChild($textNode);
 			}
 		}
 		return $content;
@@ -472,6 +484,11 @@ class com_wiris_util_xml_XmlSerializer {
 			}
 		}
 		return $res;
+	}
+	public function readXml($xml) {
+		$this->setCurrentElement($xml);
+		$this->mode = com_wiris_util_xml_XmlSerializer::$MODE_READ;
+		return $this->readNode();
 	}
 	public function read($xml) {
 		$document = Xml::parse($xml);

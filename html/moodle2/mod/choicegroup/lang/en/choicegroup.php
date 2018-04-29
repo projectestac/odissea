@@ -120,6 +120,8 @@ $string['hidedescription'] = 'Hide descriptions';
 $string['generallimitation'] = 'General limitation';
 $string['applytoallgroups'] = 'Apply to all groups';
 $string['pleasesetgroups'] = 'Please create at least two groups in this course.';
+$string['pleasesetonegroup'] = 'Please create at least one group in this course.';
+$string['pleaseselectonegroup'] = 'Please select at least one group to chose from.';
 
 $string['multipleenrollmentspossible'] = 'Allow enrollment to multiple groups';
 $string['and'] = 'and';

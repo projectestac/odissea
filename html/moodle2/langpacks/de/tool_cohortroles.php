@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['acohortroleassignmentssaved'] = '{$a} Rollenzuweisungen \'Globale Gruppe\' wurden gesichert.';
 $string['assign'] = 'Aufgabe';
 $string['assignroletocohort'] = 'Rollen im Nutzerkontext an alle Mitglieder der globalen Gruppe zuweisen';
-$string['backgroundsync'] = 'Hinweis: Neue Rollenzuweisungen \'Globale Gruppe\' werden nicht sofort aktiviert. Änderungen bei den Rollenzuweisungen werden in einem zeitgesteuerten Prozess über Cron vorgenommen.';
+$string['backgroundsync'] = 'Hinweis: Die Rollenzuweisungen \'Globale Gruppe\' werden nicht sofort wirksam. Änderungen in den Rollenzuweisungen werden von einem regelmäßigen Task übertragen.';
 $string['cohortroleassignmentnotremoved'] = 'Die Rollenzuweisung \'Globale Gruppe\' wurde nicht entfernt.';
 $string['cohortroleassignmentremoved'] = 'Die Rollenzuweisung \'Globale Gruppe\' wurde nicht entfernt.';
 $string['cohortroles'] = 'Rollen der globalen Gruppen';

@@ -80,15 +80,35 @@ Si teniu planejat lliurar insígnies des d\'un lloc en producció haureu de solu
 
 L\'únic URL necessari per la verificació és [URL-del-lloc]/badges/assertion.php, així que si podeu modificar el tallafocs per tal de permetre l\'accés extern a aquest fitxer, la verificació podrà funcionar.';
 $string['backpackbadges'] = 'Es mostren {$a->totalbadges} insígnia(es) de {$a->totalcollections} col·lecció(ons). <a href="mybackpack.php">Canvia la configuració de la motxilla</a>.';
+$string['backpackcannotsendverification'] = 'No es pot enviar un correu de verificació';
 $string['backpackconnection'] = 'Connexió a la motxilla';
+$string['backpackconnectioncancelattempt'] = 'Connecta utilitzant una adreça de correu diferent';
+$string['backpackconnectionconnect'] = 'Connecta a la motxilla';
 $string['backpackconnection_help'] = 'Aquesta pàgina us permet configurar la connexió a un proveïdor extern de motxilles. Si us hi connecteu podreu mostrar insígnies externes en aquest lloc i pujar a la motxilla les insígnies que guanyeu aquí.
 
 Actualment només hi ha suport per la motxilla de Mozilla, la <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Cal que us  registreu en aquest servei de motxilles abans de provar d\'establir la connexió des d\'aquesta pàgina.';
+$string['backpackconnectionresendemail'] = 'Torna a enviar el correu de verificació';
+$string['backpackconnectionunexpectedresult'] = 'Hi ha hagut un problema en connectar amb la vostra motxilla. Torneu a intentar-ho de nou. <br><br>Si el problema persisteix, contacteu amb el vostre administrador.';
 $string['backpackdetails'] = 'Configuració de la motxilla';
 $string['backpackemail'] = 'Adreça de correu';
 $string['backpackemail_help'] = 'Adreça electrònica associada a la vostra motxilla.
 Mentre esteu connectat, qualsevol insígnia guanyada en aquest lloc quedarà associada amb aquesta adreça electrònica.';
 $string['backpackemailverificationpending'] = 'Pendent de verificació';
+$string['backpackemailverifyemailbody'] = 'Hola,
+
+S\'ha sol·licitat una connexió a la vostra motxilla d\'OpenBadges des de «{$a->sitename}» utilitzant la vostra adreça de correu electrònic.
+
+Per a confirmar i activar la connexió amb la vostra motxilla, aneu a
+
+{$a->link}
+
+En la majoria de clients de correu, hauria d\'aparèixer un enllaç blau on podeu fer clic. Si això no funciona, copieu i enganxeu l\'adreça a la barra d\'adreces a la part superior del navegador.
+
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc, {$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: verificació del correu de la motxilla d\'OpenBadges';
+$string['backpackemailverifypending'] = 'S\'ha enviat un correu de verificació a <strong>{$a}</strong>. Feu clic sobre l\'enllaç de verificació del correu per tal d\'activar la connexió a la vostra motxilla.';
+$string['backpackemailverifysuccess'] = 'Gràcies per verificar la vostra adreça de correu electrònic. Ja esteu connectats a la vostra motxilla.';
+$string['backpackemailverifytokenmismatch'] = 'El testimoni (<em>token</em>) de l\'enllaç on heu fet clic no coincideix amb el testimoni desat. Assegureu-vos que heu fet clic a l\'enllaç del correu més recent que heu rebut.';
 $string['backpackimport'] = 'Configuració de la importació d\'insígnies';
 $string['backpackimport_help'] = 'Un cop s\'hagi establert correctament la connexió amb la motxilla, les insígnies de la vostra motxilla es podran veure a la pàgina «Les meves insígnies» i a la del vostre perfil.
 
@@ -215,10 +235,13 @@ $string['error:backpackemailnotfound'] = 'L\'adreça electrònica «{$a}» no es
 $string['error:backpackloginfailed'] = 'No heu pogut connectar a una motxilla externa pel següent motiu: {$a}';
 $string['error:backpacknotavailable'] = 'El vostre lloc no és accessible a través d\'Internet, per la qual cosa les insígnies emeses per aquest lloc no podran verificar-se pels serveis de motxilla externs.';
 $string['error:backpackproblem'] = 'Hi ha hagut un problema en connectar amb el vostre proveïdor de serveis de motxilla. Intenteu-ho més tard.';
+$string['error:badgeawardnotfound'] = 'No es pot verificar la insígnia concedida. Aquesta insígnia pot haver estat revocada.';
+$string['error:badgenotfound'] = 'No s\'ha trobat la insígnia';
 $string['error:badjson'] = 'L\'intent de connexió ha retornat dades invàlides.';
 $string['error:cannotact'] = 'No es pot activar la insígnia.';
 $string['error:cannotawardbadge'] = 'No es pot concedir la insígnia a un usuari.';
 $string['error:cannotdeletecriterion'] = 'Aquest criteri no es pot eliminar.';
+$string['error:cannotrevokebadge'] = 'No es pot revocar la insígnia d\'un usuari.';
 $string['error:clone'] = 'No es pot duplicar la insígnia.';
 $string['error:connectionunknownreason'] = 'La connexió no ha prosperat, però no s\'ha donat cap raó.';
 $string['error:duplicatename'] = 'Ja existeix al sistema una insígnia amb el mateix nom.';
@@ -247,7 +270,20 @@ $string['error:requesterror'] = 'La petició de connexió ha fallat (codi d\'err
 $string['error:requesttimeout'] = 'La petició de connexió ha superat el temps permès abans de poder-se completar.';
 $string['error:save'] = 'No es pot desar la insígnia.';
 $string['error:userdeleted'] = '{$a->user} (Aquest usuari ja no existeix al lloc {$a->site})';
-$string['eventbadgeawarded'] = 'Insígnia concedida';
+$string['eventbadgearchived'] = 'S\'ha arxivat la insígnia';
+$string['eventbadgeawarded'] = 'S\'ha concedit la insígnia';
+$string['eventbadgecreated'] = 'S\'ha creat la insígnia';
+$string['eventbadgecriteriacreated'] = 'S\'han creat els criteris de la insígnia';
+$string['eventbadgecriteriadeleted'] = 'S\'han suprimit els criteris de la insígnia';
+$string['eventbadgecriteriaupdated'] = 'S\'han actualitzat els criteris de la insígnia';
+$string['eventbadgedeleted'] = 'S\'ha suprimit la insígnia';
+$string['eventbadgedisabled'] = 'S\'ha inhabilitat la insígnia';
+$string['eventbadgeduplicated'] = 'S\'ha duplicat la insígnia';
+$string['eventbadgeenabled'] = 'S\'ha habilitat la insígnia';
+$string['eventbadgelistingviewed'] = 'S\'ha mostrat el llistat d\'insígnies';
+$string['eventbadgerevoked'] = 'S\'ha revocat la insígnia';
+$string['eventbadgeupdated'] = 'S\'ha actualitzat la insígnia';
+$string['eventbadgeviewed'] = 'S\'ha visualitzat la insígnia';
 $string['evidence'] = 'Evidència';
 $string['existingrecipients'] = 'Destinataris de la insígnia existents';
 $string['expired'] = 'Ha caducat';
@@ -340,6 +376,7 @@ $string['reviewconfirm'] = '<p> Això farà la vostra insígnia visible per als 
 <p> Una vegada que una insígnia ha estat aconseguida serà <strong> bloquejada </strong> - Certs ajustos incloent els criteris i les opcions de caducitat ja no podran ser canviats </p>
 
 <p> Esteu segur que voleu habilitar l\'accés a la insígnia «{$a}»? </p>';
+$string['revoke'] = 'Revoca la insígnia';
 $string['save'] = 'Desa';
 $string['searchname'] = 'Cerca per nom';
 $string['selectaward'] = 'Seleccioneu el rol que voleu utilitzar per concedir aquesta insígnia:';

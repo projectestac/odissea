@@ -35,12 +35,12 @@ $string['additionalcoursedesc'] = '{$a->lang} Auteur: {$a->creatorname} - Uitgev
 $string['addtocommunityblock'] = 'Bewaar een link naar deze cursus';
 $string['audience'] = 'Ontworpen voor';
 $string['audience_help'] = 'Welk soort cursus zoek je?
-Zowel als naar traditionele cursussen, bedoeld voor leerlingen, zou je ook op zoek kunnen zijn naar Leraarsgroepen of groepen met Moodle systeembeheerders';
+Zowel naar traditionele cursussen, bedoeld voor leerlingen, zou je ook op zoek kunnen zijn naar Leraarsgroepen of groepen met Moodle systeembeheerders';
 $string['blocks'] = 'Blokken';
-$string['cannotselecttopsubject'] = 'Kan geen top onderwerpniveau selecteren';
+$string['cannotselecttopsubject'] = 'Kan geen toponderwerpniveau selecteren';
 $string['comments'] = 'Commentaren ({$a})';
-$string['community:addinstance'] = 'Voeg een nieuw community zoekblok toe';
-$string['community:myaddinstance'] = 'Voeg een nieuw community zoekblok toe aan de Mijn startpagina';
+$string['community:addinstance'] = 'Voeg een nieuw community-zoekblok toe';
+$string['community:myaddinstance'] = 'Voeg een nieuw community-zoekblok toe aan de Mijn startpagina';
 $string['contentinfo'] = 'Onderwerp: {$a->subject} - Publiek: {$a->audience} - Studieniveau: {$a->educationallevel}';
 $string['continue'] = 'Ga verder';
 $string['contributors'] = '- Bijdrage van: {$a}';
@@ -60,7 +60,7 @@ $string['downloadingcourse'] = 'Cursus downloaden...';
 $string['downloadingsize'] = 'Wacht terwijl je cursus aan het downloaden is ({$a->total}Mb)...';
 $string['downloadtemplate'] = 'Maak cursus van sjabloon';
 $string['educationallevel'] = 'Studieniveau';
-$string['educationallevel_help'] = 'Naar welk studieniveau ben je op zoek? In het geval van groepen leraars beschrijft dit het studieniveau waarin ze lesgeven';
+$string['educationallevel_help'] = 'Naar welk studieniveau ben je op zoek? In het geval van groepen leraren beschrijft dit het studieniveau waarin ze lesgeven';
 $string['enroldownload'] = 'Zoek';
 $string['enroldownload_help'] = 'Sommige cursussen die in de lijst van de geselecteerde hub voorkomen, worden daar voorgesteld, zodat mensen kunnen gaan deelnemen aan de cursus op de originele site.
 
@@ -74,7 +74,7 @@ $string['hideall'] = 'Verberg hubs';
 $string['hub'] = 'hub';
 $string['hubnottrusted'] = 'Niet vertrouwd';
 $string['hubtrusted'] = 'Deze hub wordt vertrouwd door Moodle.org';
-$string['install'] = 'Download';
+$string['install'] = 'Installeer';
 $string['keywords'] = 'Sleutelwoorden';
 $string['keywords_help'] = 'Je kunt cursussen zoeken die bepaalde tekst bevatten in de naam, beschrijving of andere velden van de databank.';
 $string['langdesc'] = 'Taal: {$a} -';

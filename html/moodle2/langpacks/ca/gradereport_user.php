@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe d\'usuari de qualificacions';
+$string['myself'] = 'Jo';
+$string['otheruser'] = 'Usuari';
 $string['pluginname'] = 'Informe d\'usuari';
 $string['tablesummary'] = 'La taula està ordenada com una llista d\'elements incloent-hi categories o notes. Quan els elements pertanyen a una categoria s\'indica.';
 $string['user:view'] = 'Visualitzar l\'informe de qualificacions propi';
+$string['viewas'] = 'Visualitza l\'informe com a';

@@ -60,7 +60,7 @@ $string['archiveconfirm'] = 'Eliminar y mantener las insignias otorgadas existen
 $string['archivehelp'] = '<p>Esta opción significa que la insignia se marcará como "retirada" y ya no aparecerá en la lista de insignias. Los usuarios no podrán ganar esta insignia, sin embargo los destinatarios de la insignia existentes seguirán pudiendo mostrarla en su página de perfil y subirla a sus mochilas externas. </p>
 <p> Si desea que sus usuarios pueden mantener el acceso a las insignias obtenidas es importante seleccionar esta opción en lugar de eliminar totalmente las insignias.</p>';
 $string['attachment'] = 'Adjuntar insignia al mensaje';
-$string['attachment_help'] = 'Si se selecciona, se adjuntará una insignia al correo electrónico que se podrá descargar';
+$string['attachment_help'] = 'Si se selecciona, se adjuntará una archivo de insignia emitida al e-mail del destinatario para descarga. (Los adjuntos deben ser habilitados en Administración del sitio  > Extensiones > Salidas de mensaje > Email para usar esta opción.)';
 $string['award'] = 'Otorgar insignia';
 $string['awardedtoyou'] = 'Emitida para mi';
 $string['awardoncron'] = 'El acceso a las insignias se activó con éxito. Muchos usuarios pueden ganar simultáneamente esta insignia. Para garantizar el funcionamiento del sitio, esta acción llevará un cierto tiempo de proceso.';

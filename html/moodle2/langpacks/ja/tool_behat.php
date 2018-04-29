@@ -49,7 +49,7 @@ $string['theninfo'] = 'Then - アウトカムが期待された結果である�
 $string['unknownexceptioninfo'] = 'Seleniumまたはブラウザに問題が発生しました。あなたが最新バージョンのSeleniumを使用していることを確認してください。エラー:';
 $string['viewsteps'] = 'フィルタ';
 $string['wheninfo'] = 'When - イベントを発生させるアクション';
-$string['wrongbehatsetup'] = 'behatセットアップに問題が生じたため、ステップ定義を一覧表示できませんでした: <b>{$a->errormsg}</b><br/><br/>確認してください:<ul>
+$string['wrongbehatsetup'] = 'behatセットアップに問題が生じたため、ステップ定義を一覧表示できませんでした: <b>{$a->errormsg}</b><br /><br />確認してください:<ul>
 <li>config.php内で「$CFG->behat_dataroot」「$CFG->behat_prefix」および「$CFG->behat_wwwroot」に「$CFG->dataroot」「$CFG->prefix」および「$CFG->wwwroot」とは異なる値が設定されている。</li>
 <li>あなたのMoodleディレクトリから「{$a->behatinit}」を実行した。</li>
 <li>ベンダにより依存関係がインストールされ、{$a->behatcommand} ファイルに実行権限が与えられている。</li></ul>';

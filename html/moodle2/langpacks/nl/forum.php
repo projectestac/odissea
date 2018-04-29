@@ -237,7 +237,7 @@ $string['forumauthorhidden'] = 'Auteur (verborgen)';
 $string['forumblockingalmosttoomanyposts'] = 'Je nadert de berichtenlimiet. Je hebt {$a->numposts} berichten in de afgelopen {$a->blockperiod} gepost en de limiet is {$a->blockafter} berichten.';
 $string['forumbodyhidden'] = 'Je kunt dit bericht niet bekijken. Mogelijke oorzaken: je hebt zelf nog niets gepost in deze discussie, de maximale tijd tussen twee bewerkingen is nog niet verstreken, de discussie is nog niet gestart of de discussie is afgelopen.';
 $string['forum:canoverridediscussionlock'] = 'Antwoorden op gesloten discussies';
-$string['forum:canposttomygroups'] = 'Kan aan alle groepen een bericht sturen waar je toegang toe hebt.';
+$string['forum:canposttomygroups'] = 'Kan aan alle groepen een bericht sturen waar je toegang toe hebt';
 $string['forum:createattachment'] = 'Bijlage toevoegen';
 $string['forum:deleteanypost'] = 'Gelijk welk bericht verwijderen (altijd)';
 $string['forum:deleteownpost'] = 'Eigen berichten verwijderen (binnen bepaalde tijd)';
@@ -490,7 +490,7 @@ $string['searchwhichforums'] = 'Kies in welke forums je wil zoeken';
 $string['searchwords'] = 'Deze woorden mogen overal in het bericht voorkomen';
 $string['seeallposts'] = 'Bekijk alle berichten die deze gebruiker gepost heeft.';
 $string['shortpost'] = 'Kort bericht';
-$string['showsubscribers'] = 'Toon / wijzig wie e-mail van dit forum krijgt.';
+$string['showsubscribers'] = 'Toon / wijzig wie e-mail van dit forum krijgt';
 $string['singleforum'] = 'Eén eenvoudige discussie';
 $string['smallmessage'] = '{$a->user} heeft gepost in {$a->forumname}';
 $string['smallmessagedigest'] = 'Forum samenvatting bevat {$a} berichten';
@@ -514,16 +514,14 @@ $string['subscriptiondisabled'] = 'Inschrijven uitgeschakeld';
 $string['subscriptionforced'] = 'Verplicht inschrijven';
 $string['subscription_help'] = 'Als je op een forum ingeschreven bent, dan betekent dat dat je meldingen van nieuwe forumberichten zult krijgen. Gewoonlijk kun je kiezen of je ingeschreven bent of niet. Soms is inschrijven verplicht, zodat iedereen meldingen ontvangt.';
 $string['subscriptionmode'] = 'Inschrijvingsmodus';
-$string['subscriptionmode_help'] = 'Wanneer een persoon ingeschreven wordt op een forum, dan betekent dit dat hij e-mailkopieën zal krijgen van elk bericht in dat forum.
+$string['subscriptionmode_help'] = 'Wanneer een persoon ingeschreven wordt op een forum, dan betekent dit dat hij via e-mail kopieën zal ontvangen van elk bericht in dat forum.
 
 Er zijn vier mogelijke manieren om in te schrijven op een forum:
 
-* Optioneeel - Deelnemers kunnen kiezen of ze ingeschreven willen zijn
+* Optioneel - Deelnemers kunnen kiezen of ze ingeschreven willen zijn
 * Verplicht - Iedereen is ingeschreven en kan niet uitschrijven
-* Initieel - Iedereen is initieel ingeschreven, maar kan zich elk moment terug uitschrijven
-* Uitgeschakeld - Inschrijven is niet toegestaan
-
-Merk op: wijzigingen van deze instellingen zijn enkel van toepassing op gebruikers die zich na de wijziging in de cursus inschrijven, niet voor bestaande gebruikers.';
+* Initieel - Iedereen is initieel ingeschreven, maar kan zich elk moment weer uitschrijven
+* Uitgeschakeld - Inschrijven is niet toegestaan';
 $string['subscriptionoptional'] = 'Optioneel inschrijven';
 $string['subscriptions'] = 'Deze deelnemers krijgen e-mail';
 $string['thisforumisthrottled'] = 'Dit forum heeft een limiet op het aantal berichten dat je kan posten in een bepaalde periode - deze is nu ingesteld op {$a->blockafter} bericht(en) in {$a->blockperiod}';

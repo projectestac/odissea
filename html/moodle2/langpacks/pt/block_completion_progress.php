@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'pt', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_completion_progress', language 'pt', branch 'MOODLE_32_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -83,13 +83,13 @@ $string['notCompleted_colour_descr'] = 'Código da cor HTML dos atuais elementos
 $string['notCompleted_colour_title'] = 'Cor dos elementos não-concluídos';
 $string['no_visible_activities_message'] = 'Todas as atividades monitorizadas estão ocultas.';
 $string['now_indicator'] = 'AGORA';
-$string['overview'] = 'Visão Geral dos Alunos';
+$string['overview'] = 'Visão Global dos alunos';
 $string['pluginname'] = 'Barra de Progresso';
 $string['progress'] = 'Progresso';
 $string['progressbar'] = 'Barra de Progresso';
 $string['shortname'] = 'Nome curto da disciplina';
 $string['showallinfo'] = 'Mostrar todas as informações';
-$string['showinactive'] = 'Mostrar alunos inativos na Visão Geral';
+$string['showinactive'] = 'Mostrar alunos inativos na Visão Global';
 $string['submitted'] = 'Submetido';
 $string['submittednotcomplete_colour'] = '#FFCC00';
 $string['submittednotcomplete_colour_descr'] = 'Código da cor HTML dos elementos que já foram submetidos, mas ainda não estão concluídos';

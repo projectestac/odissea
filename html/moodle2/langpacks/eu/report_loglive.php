@@ -29,6 +29,7 @@ $string['eventcomponent'] = 'Osagaia';
 $string['eventcontext'] = 'Testuingurua';
 $string['eventloggedas'] = '{$a->realusername} {$a->asusername} gisa';
 $string['eventorigin'] = 'Jatorria';
+$string['eventrelatedfullnameuser'] = 'Inplikatutako erabiltzailea';
 $string['livelogs'] = 'Azken orduko agerraldiak zuzenean';
 $string['loglive:view'] = 'Ikusi une honetako agerraldiak';
 $string['nologreaderenabled'] = 'Agerraldien irakurlea gaitu da';

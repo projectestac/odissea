@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['display_address'] = 'Εμφάνιση διεύθυνσης';
+$string['display_phone2'] = 'Εμφάνισε κινητό τηλέφωνο';
 $string['pluginname'] = 'Συνδεδεμένος χρήστης';

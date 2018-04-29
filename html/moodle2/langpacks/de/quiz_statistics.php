@@ -47,7 +47,7 @@ $string['count'] = 'Zählen';
 $string['counttryno'] = 'Versuchsanzahl {$a}';
 $string['coursename'] = 'Kursname';
 $string['detailedanalysis'] = 'Mehr Details zu den Antworten dieser Frage';
-$string['detailedanalysisforvariant'] = 'Weitere Detailanalysen der Anwortabweichungen {$a} zu dieser Frage.';
+$string['detailedanalysisforvariant'] = 'Weitere Detailanalysen der Antwortabweichungen {$a} zu dieser Frage.';
 $string['discrimination_index'] = 'Discrimination Index
 ';
 $string['discriminative_efficiency'] = 'Unterscheidungs-Effizienz';
@@ -116,4 +116,4 @@ $string['statisticsreportgraph'] = 'Statistik für Fragepositionen';
 $string['statistics:view'] = 'Ansehen des Statistik-Reports';
 $string['statsfor'] = 'Statistik (für {$a})';
 $string['variant'] = 'Variante';
-$string['whichtries'] = 'Antworten anaylsieren für';
+$string['whichtries'] = 'Antworten analysieren für';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Участник {$a}';
+$string['blindmarkingviewfullname'] = 'Участник {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Включено по умолчанию';
 $string['default_help'] = 'Если установлено, то этот метод представления будет включен по умолчанию для всех новых заданий.';
 $string['enabled'] = 'Комментарии к ответу';

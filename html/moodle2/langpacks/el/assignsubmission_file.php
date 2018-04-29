@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Αποδεκτοί τύποι αρχείου';
+$string['acceptedfiletypes_help'] = 'Οι αποδεκτοί τύποι αρχείου μπορούν να περιοριστούν εισάγοντας μια λίστα με mimetypes διαχωρισμένα με κόμμα, π.χ. video/mp4, audio/mp3, image/png, image/jpeg, ή τις επεκτάσεις αρχείων συμπεριλαμβάνοντας μια τελεία, π.χ. .png, .jpg. Αν το πεδίο μείνει κενό, τότε επιτρέπονται όλοι οι τύποι αρχείων.';
 $string['configmaxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['countfiles'] = '{$a} αρχεία';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
@@ -38,4 +40,5 @@ $string['maximumsubmissionsize'] = 'Μέγιστο μέγεθος υποβολή
 $string['maximumsubmissionsize_help'] = 'Τα αρχεία από τους μαθητές μπορεί να είναι μέχρι αυτό το μέγεθος.';
 $string['numfilesforlog'] = 'Ο αριθμός των αρχείου (ων):  {$a} αρχείο (α).';
 $string['pluginname'] = 'Υποβολές αρχείων';
+$string['siteuploadlimit'] = 'Όριο ταχύτητας upload του ιστοτόπου';
 $string['submissionfilearea'] = 'Ανεβασμένα αρχεία υποβολής';

@@ -190,6 +190,7 @@ $string['collespintro'] = 'Ο σκοπός αυτής της έρευνας εί
 
 Σας ευχαριστούμε πολύ.';
 $string['collespname'] = 'COLLES (Προτιμώμενη)';
+$string['completionsubmit'] = 'Ο μαθητής πρέπει να υποβάλλει στη δραστηριότητα για να την ολοκληρώσει';
 $string['customintro'] = 'Κείμενο εισαγωγής';
 $string['deleteallanswers'] = 'Διαγραφή όλων των απαντήσεων';
 $string['deleteanalysis'] = 'Διαγραφή της ανάλυσης απαντήσεων';

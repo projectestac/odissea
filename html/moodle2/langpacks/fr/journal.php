@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'journal', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['editingends'] = 'La période d\'édition se termine';
 $string['entries'] = 'Entrées';
 $string['entry'] = 'Entrée';
 $string['evententriesviewed'] = 'Entrées du journal visualisées';
+$string['evententrycreated'] = 'Entrée du journal créée';
 $string['evententryupdated'] = 'Entrée de journal modifiée';
 $string['eventfeedbackupdated'] = 'Feedback du journal modifié';
 $string['eventjournalcreated'] = 'Journal créé';

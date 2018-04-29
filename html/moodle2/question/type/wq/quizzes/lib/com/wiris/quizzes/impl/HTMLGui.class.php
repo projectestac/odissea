@@ -144,24 +144,54 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$start = _hx_index_of($session, "\"", $start) + 1;
 		return _hx_substr($session, $start, 2);
 	}
+	public function getPrecisionFeedback($a) {
+		$feedback = null;
+		$min = $a->getParam("min");
+		$max = $a->getParam("max");
+		if("" === $min && "" === $max) {
+			$feedback = "";
+		} else {
+			if("" === $min && !("" === $max)) {
+				$feedback = $this->t->t("check_precision_correct_feedback_max");
+			} else {
+				if(!("" === $min) && "" === $max) {
+					$feedback = $this->t->t("check_precision_correct_feedback_min");
+				} else {
+					if($min === $max) {
+						$feedback = $this->t->t("check_precision_correct_feedback_equal");
+					} else {
+						$feedback = $this->t->t("check_precision_correct_feedback");
+					}
+				}
+			}
+		}
+		$feedback = str_replace("\${min}", $min, $feedback);
+		$feedback = str_replace("\${max}", $max, $feedback);
+		$feedback = str_replace("\${relative}", (($a->getParam("relative") === "true") ? $this->t->t("significantfigures") : $this->t->t("decimalplaces")), $feedback);
+		return $feedback;
+	}
 	public function printAssertionFeedback($h, $c, $q) {
 		$gradeClass = $this->getGradeClass($c->value);
 		$typeClass = _hx_substr($c->assertion, 0, _hx_index_of($c->assertion, "_", null));
 		$h->openSpan(null, $gradeClass . " " . $typeClass);
-		$feedback = $this->t->t($c->assertion . "_correct_feedback");
 		$index = $q->getAssertionIndex($c->assertion, $c->getCorrectAnswer(), $c->getAnswer());
+		$feedback = $this->t->t($c->assertion . "_correct_feedback");
 		if($index !== -1) {
 			$a = $q->assertions[$index];
 			if($a->parameters !== null) {
-				$i = null;
-				{
-					$_g1 = 0; $_g = $a->parameters->length;
-					while($_g1 < $_g) {
-						$i1 = $_g1++;
-						$name = _hx_array_get($a->parameters, $i1)->name;
-						$value = _hx_array_get($a->parameters, $i1)->content;
-						$feedback = str_replace("\${" . $name . "}", $value, $feedback);
-						unset($value,$name,$i1);
+				if($a->name === com_wiris_quizzes_impl_Assertion::$CHECK_PRECISION) {
+					$feedback = $this->getPrecisionFeedback($a);
+				} else {
+					$i = null;
+					{
+						$_g1 = 0; $_g = $a->parameters->length;
+						while($_g1 < $_g) {
+							$i1 = $_g1++;
+							$name = _hx_array_get($a->parameters, $i1)->name;
+							$value = _hx_array_get($a->parameters, $i1)->content;
+							$feedback = str_replace("\${" . $name . "}", $value, $feedback);
+							unset($value,$name,$i1);
+						}
 					}
 				}
 			}
@@ -234,7 +264,6 @@ class com_wiris_quizzes_impl_HTMLGui {
 	}
 	public function getWirisTestDynamic($q, $qi, $correctAnswer, $userAnswer, $unique) {
 		$h = new com_wiris_quizzes_impl_HTML();
-		$hasCorrectAnswer = $q->correctAnswers !== null && $correctAnswer < $q->correctAnswers->length;
 		$h->openDivClass("wiristestresult" . _hx_string_rec($unique, ""), "wiristestresult");
 		$h->openDivClass("wiristestassertions" . _hx_string_rec($unique, ""), "wiristestassertions");
 		$h->openDivClass("wiristestassertionslistwrapper", "wiristestassertionslistwrapper");
@@ -244,12 +273,10 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->openDivClass("wiristestcorrectanswer" . _hx_string_rec($unique, "") . "[" . _hx_string_rec($correctAnswer, "") . "]", "wiristestcorrectanswer");
 		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wiristestcorrectanswerfieldset" . _hx_string_rec($unique, ""), $this->t->t("correctanswer"), "wirismainfieldset wiristestcorrectanswerfieldset");
-		if($hasCorrectAnswer) {
-			$h->open("span", new _hx_array(array(new _hx_array(array("id", "wiriscorrectanswerlabel")), new _hx_array(array("class", "mathml wiriscorrectanswerlabel")))));
-			$h->close();
-			$h->input("button", "wirisfillwithcorrectbutton", null, null, $this->t->t("fillwithcorrect"), "wirisfillwithcorrectbutton");
-			$h->input("button", "wirisrefreshbutton", null, null, $this->t->t("refresh"), "wirisrefreshbutton");
-		}
+		$h->open("span", new _hx_array(array(new _hx_array(array("id", "wiriscorrectanswerlabel")), new _hx_array(array("class", "mathml wiriscorrectanswerlabel")))));
+		$h->close();
+		$h->input("button", "wirisfillwithcorrectbutton", null, null, $this->t->t("fillwithcorrect"), "wirisfillwithcorrectbutton");
+		$h->input("button", "wirisrefreshbutton", null, null, $this->t->t("refresh"), "wirisrefreshbutton");
 		$h->close();
 		$h->close();
 		$h->close();
@@ -285,13 +312,15 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->openFieldset("wiriscomparisonfieldset" . _hx_string_rec($unique, "") . $answers, $this->t->t("comparisonwithstudentanswer"), "wirismainfieldset wiriscomparisonfieldset");
 		$h->help("wiriscomparisonhelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/validation#comparison", $this->t->t("manual"));
 		$h->openDivClass("wiristolerance" . _hx_string_rec($unique, ""), "wiristolerance");
-		$idtol = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE . "]";
-		$h->label($this->t->t("tolerancedigits") . ":", $idtol, "wirisleftlabel2");
+		$idtolPrefix = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS . "," . com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION . "]";
+		$idTolValue = $idtolPrefix . "[tolerance_value]" . $answers;
+		$h->label($this->t->t("tolerance") . ":", $idTolValue, "wirisleftlabel2");
 		$h->text(" ");
-		$h->input("text", $idtol, "", null, null, null);
-		$idRelTol = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE . "]";
-		$h->input("checkbox", $idRelTol, "", null, null, null);
-		$h->label($this->t->t("relative"), $idRelTol, null);
+		$h->input("text", $idTolValue, "", null, null, "wirissmalltextfield");
+		$h->text(" ");
+		$idTolType = $idtolPrefix . "[tolerance_type]" . $answers;
+		$toleranceTypes = new _hx_array(array(new _hx_array(array("relative_tolerance", $this->t->t("percenterror"))), new _hx_array(array("absolute_tolerance", $this->t->t("absoluteerror"))), new _hx_array(array("significant_figures", $this->t->t("significantfigures"))), new _hx_array(array("decimal_places", $this->t->t("decimalplaces")))));
+		$h->select($idTolType, "", $toleranceTypes);
 		$h->close();
 		$h->openUl("wiriscomparison" . _hx_string_rec($unique, "") . $answers, "wirisul");
 		$i = null;
@@ -370,27 +399,45 @@ class com_wiris_quizzes_impl_HTMLGui {
 			$_g1 = 0; $_g = com_wiris_quizzes_impl_Assertion::$checks->length;
 			while($_g1 < $_g) {
 				$i1 = $_g1++;
+				$aname = com_wiris_quizzes_impl_Assertion::$checks[$i1];
 				$h->openLi();
-				$idassertion = "wirisassertion" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$checks[$i1] . "]" . $answers;
+				$idassertion = "wirisassertion" . _hx_string_rec($unique, "") . "[" . $aname . "]" . $answers;
 				$h->input("checkbox", $idassertion, null, null, null, null);
-				$h->label($this->t->t(com_wiris_quizzes_impl_Assertion::$checks[$i1]), $idassertion, null);
-				$parameters = com_wiris_quizzes_impl_Assertion::getParameterNames(com_wiris_quizzes_impl_Assertion::$checks[$i1]);
+				$h->label($this->t->t($aname), $idassertion, null);
+				$parameters = com_wiris_quizzes_impl_Assertion::getParameterNames($aname);
 				if($parameters !== null) {
-					$j = null;
-					{
-						$_g3 = 0; $_g2 = $parameters->length;
-						while($_g3 < $_g2) {
-							$j1 = $_g3++;
-							$h->text(" ");
-							$h->input("text", "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_impl_Assertion::$checks[$i1] . "][" . $parameters[$j1] . "]" . $answers, null, null, null, null);
-							unset($j1);
+					if($aname === com_wiris_quizzes_impl_Assertion::$CHECK_PRECISION) {
+						$idparam = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[0] . "]" . $answers;
+						$h->text(" ");
+						$h->label($this->t->t("fromprecision"), $idparam, null);
+						$h->text(" ");
+						$h->input("text", $idparam, null, null, null, "wirisintinputbox");
+						$idparam = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[1] . "]" . $answers;
+						$h->text(" ");
+						$h->label($this->t->t("toprecision"), $idparam, null);
+						$h->text(" ");
+						$h->input("text", $idparam, null, null, null, "wirisintinputbox");
+						$idparam = "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[2] . "]" . $answers;
+						$h->text(" ");
+						$h->select($idparam, null, new _hx_array(array(new _hx_array(array("true", $this->t->t("significantfigures"))), new _hx_array(array("false", $this->t->t("decimalplaces"))))));
+						unset($idparam);
+					} else {
+						$j = null;
+						{
+							$_g3 = 0; $_g2 = $parameters->length;
+							while($_g3 < $_g2) {
+								$j1 = $_g3++;
+								$h->text(" ");
+								$h->input("text", "wirisassertionparam" . _hx_string_rec($unique, "") . "[" . $aname . "][" . $parameters[$j1] . "]" . $answers, null, null, null, "wirissmalltextfield");
+								unset($j1);
+							}
+							unset($_g3,$_g2);
 						}
-						unset($_g3,$_g2);
+						unset($j);
 					}
-					unset($j);
 				}
 				$h->close();
-				unset($parameters,$i1);
+				unset($parameters,$i1,$aname);
 			}
 		}
 		$h->close();
@@ -567,7 +614,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 										if($count > 0) {
 											$sb->add("; ");
 										}
-										$sb->add($this->shortenText($ap->content, Math::floor(Math::round($chars / 3.0))));
+										$sb->add($this->shortenText($ap->content, intval(Math::round($chars / 3.0))));
 										$count++;
 									}
 								}
@@ -619,7 +666,10 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->label($this->t->t(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION), $id, "wirisleftlabel");
 		$h->close();
 		$h->openTd(null);
-		$h->input("text", $id, null, null, null, "wirissmalltextfield");
+		$h->input("text", $id, null, null, null, "wirisintinputbox");
+		$h->text(" ");
+		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT . "]";
+		$h->select($id . "[0]", null, new _hx_array(array(new _hx_array(array("m", $this->t->t("significantfigures"))), new _hx_array(array("f", $this->t->t("decimalplaces"))))));
 		$h->openSpan("wirisfloatingexample" . _hx_string_rec($unique, ""), "wirisfloatingexample");
 		$h->text($this->t->t("example") . ":");
 		$h->openSpan("wirisfloatingexamplewrapper" . _hx_string_rec($unique, ""), null);
@@ -629,11 +679,10 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->close();
 		$h->openTr(null);
 		$h->openTd("wirisleftlabellist");
-		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT . "]";
-		$h->label($this->t->t("notation"), $id, "wirisleftlabel");
+		$h->label($this->t->t("notation"), $id . "[1]", "wirisleftlabel");
 		$h->close();
 		$h->openTd(null);
-		$h->select($id, null, new _hx_array(array(new _hx_array(array("mg", $this->t->t("auto"))), new _hx_array(array("mr", $this->t->t("floatingDecimal"))), new _hx_array(array("f", $this->t->t("fixedDecimal"))), new _hx_array(array("me", $this->t->t("scientific"))))));
+		$h->select($id . "[1]", null, new _hx_array(array(new _hx_array(array("g", $this->t->t("auto"))), new _hx_array(array("r", $this->t->t("floatingDecimal"))), new _hx_array(array("e", $this->t->t("scientific"))))));
 		$id = "wirisoption" . _hx_string_rec($unique, "") . "[" . com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR . "]";
 		$h->label($this->t->t("decimalSeparator"), null, "wirisleftlabel wirissecondlabel");
 		$h->select($id, null, new _hx_array(array(new _hx_array(array(".", $this->t->t("point"))), new _hx_array(array(",", $this->t->t("comma"))))));

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredropzones'] = 'さらに {no} 件の空白のドロップゾーンを追加する';
-$string['addmoreimages'] = 'さらに {no} 件の空白のドラッグ可能アイテムを追加する';
+$string['addmoredropzones'] = 'さらに {no} 個の空白のドロップゾーンを追加する';
+$string['addmoreimages'] = 'さらに {no} 個の空白のドラッグ可能アイテムを追加する';
 $string['answer'] = '解答';
 $string['bgimage'] = '背景イメージ';
 $string['blank'] = '空白';
@@ -41,17 +41,17 @@ $string['dropbackground'] = 'マーカーをドラッグするための背景イ
 $string['dropzone'] = 'ドロップゾーン {$a}';
 $string['dropzoneheader'] = 'ドロップゾーン';
 $string['formerror_disallowedtags'] = '申し訳ございません、ドラッグ可能テキストではHTMLタグが許可されていません。';
-$string['formerror_multipledraginstance'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージ {$a} を1回選択しましたが、無制限のドラッグアイテムとしてマークされていません。';
+$string['formerror_multipledraginstance'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージ {$a} を1回選択しましたが無制限のドラッグアイテムとしてマークされていません。';
 $string['formerror_multipledraginstance2'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージを1回以上選択しましたが、無制限のドラッグアイテムとしてマークされていません。';
 $string['formerror_noallowedtags'] = 'このテキストにはドラッグ可能イメージの代替テキストとしてHTMLタグは許可されていません。';
 $string['formerror_nobgimage'] = 'あなたはドラッグ＆ドロップエリアの背景として使用するイメージを選択する必要があります。';
 $string['formerror_nofile'] = 'あなたはここで使用するファイルをアップロードまたは選択する必要があります。';
-$string['formerror_nofile3'] = 'あなたはここでイメージファイルを選択するか関連ラベルを削除して、無制限チェックボックスを解除する必要があります。';
-$string['formerror_noimageselected'] = 'あなたｈこのドロップゾーンの正解の選択肢のためにドラッグアイテムを選択する必要があります。';
+$string['formerror_nofile3'] = 'あなたはここでイメージファイルを選択するか関連ラベルを削除して無制限チェックボックスを解除する必要があります。';
+$string['formerror_noimageselected'] = 'あなたはこのドロップゾーンの正解の選択肢のためにドラッグアイテムを選択する必要があります。';
 $string['formerror_notintxleft'] = 'x座標は整数である必要があります。';
 $string['formerror_notintytop'] = 'y座標は整数である必要があります。';
-$string['formerror_noxleft'] = 'あなたはこのドロップエリアの左上隅のx座標の値を提供する必要があります。あなたは座標を設定するために上のドロップエリアにドラッグ＆ドロップするか、ここに手動で入力することができます。';
-$string['formerror_noytop'] = 'あなたはこのドロップエリアの左上隅のy座標の値を提供する必要があります。あなたは座標を設定するために上のドロップエリアにドラッグ＆ドロップするか、ここに手動で入力することができます。';
+$string['formerror_noxleft'] = 'あなたはこのドロップエリアの左上隅のx座標の値を提供する必要があります。あなたは座標を設定するために上のドロップエリアにドラッグ＆ドロップするか、ここに手動入力することができます。';
+$string['formerror_noytop'] = 'あなたはこのドロップエリアの左上隅のy座標の値を提供する必要があります。あなたは座標を設定するために上のドロップエリアにドラッグ＆ドロップするか、ここに手動入力することができます。';
 $string['infinite'] = '無制限';
 $string['label'] = 'テキスト';
 $string['nolabel'] = 'ラベルテキストなし';
@@ -59,7 +59,7 @@ $string['pleasedraganimagetoeachdropregion'] = 'あなたの解答は完了し�
 $string['pluginname'] = 'ドラッグ＆ドロップイメージ';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップイメージの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップイメージの編集';
-$string['pluginname_help'] = 'ドラッグ＆ドロップイメージ問題は背景イメージに定義されたドロップゾーンにイメージまたはテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。ドラッグ可能アイテムは特定のグループ内アイテムすべてをドロップゾーンで同じ色にするためグループ分けすることができます。無制限にマークされたドラッグ可能アイテムは2つの以上のゾーンにドロップすることができます。';
+$string['pluginname_help'] = 'ドラッグ＆ドロップイメージ問題は背景イメージに定義されたドロップゾーンにイメージまたはテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。ドラッグ可能アイテムは特定のグループ内アイテムすべてをドロップゾーンで同じ色にするためにグループ分けすることができます。無制限にマークされたドラッグ可能アイテムは2つの以上のゾーンにドロップすることができます。';
 $string['pluginnamesummary'] = 'イメージまたはテキストラベルを背景イメージのドロップゾーンにドラッグ＆ドロップします。';
 $string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージを選択してドラッグ可能イメージ指定した後、ドラッグするための背景イメージのドロップゾーンを定義してください。';

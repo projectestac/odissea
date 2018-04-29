@@ -39,6 +39,7 @@ $string['configblock'] = 'Ρύθμιση μπλοκ';
 $string['couldnotfindfeed'] = 'Δεν βρέθηκε το RSS με id {$a}';
 $string['customtitlelabel'] = 'Δικός σας τίτλος (αφήστε κενό για χρήση του τίτλου του RSS):';
 $string['deletefeedconfirm'] = 'Σίγουρα θέλετε να διαγράψετε αυτό το RSS;';
+$string['disabledrssfeeds'] = 'Οι τροφοδοτήσεις RSS είναι απενεργοποιημένες';
 $string['displaydescriptionlabel'] = 'Εμφάνιση περιγραφής για κάθε σύνδεσμο;';
 $string['editfeeds'] = 'Επεξεργασία RSS';
 $string['editnewsfeeds'] = 'Επεξεργασία RSS';

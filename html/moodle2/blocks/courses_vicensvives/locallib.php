@@ -200,7 +200,6 @@ class courses_vicensvives_add_book {
 
         foreach ($mods as $mod) {
             $cm = $this->get_cm($mod, $section);
-
             if ($cm) {
                 // Actualizamos idnumber si ha cambiado (etiquetas y enlaces creadas con una versión anterior)
                 if ($cm->idnumber != $mod['idnumber']) {
@@ -251,46 +250,13 @@ class courses_vicensvives_add_book {
     private function get_cm($mod, $section) {
         global $DB;
 
-        $conditions = array('course' => $this->course->id, 'idnumber' => $mod['idnumber']);
-        $cm = $DB->get_record('course_modules', $conditions);
-        if ($cm) {
-            return $cm;
-        }
+        $conditions = array(
+            'course' => $this->course->id,
+            'idnumber' => $mod['idnumber'],
+            'deletioninprogress' => 0,
+        );
 
-        // Anteriormente las etiquetas no tenían idnumber asignado, buscamos la etiqueta por nombre.
-        if ($mod['modname'] == 'label') {
-            $sql = 'SELECT cm.*
-                    FROM {course_modules} cm
-                    JOIN {modules} m ON m.id = cm.module
-                    JOIN {label} l ON l.id = cm.instance
-                    WHERE cm.course = :course
-                    AND cm.section = :section
-                    AND m.name = :modname
-                    AND l.name = :name';
-            $params = array(
-                'course' => $this->course->id,
-                'section' => $section->id,
-                'modname' => 'label',
-                'name' => $mod['name'],
-            );
-            $records = $DB->get_records_sql($sql, $params, 0, 1);
-            if ($records) {
-                return reset($records);
-            }
-        }
-
-        // Anteriormente los enlaces tenían el idnumber con un formato diferente
-        if ($mod['modname'] == 'url') {
-            if (preg_match('/^.+_(link_.+)$/', $mod['idnumber'], $match)) {
-                $conditions = array('course' => $this->course->id, 'idnumber' => $match[1]);
-                $cm = $DB->get_record('course_modules', $conditions);
-                if ($cm) {
-                    return $cm;
-                }
-            }
-        }
-
-        return null;
+        return $DB->get_record('course_modules', $conditions);
     }
 
     private function get_lti_mod($type, $element, $gradecat) {
@@ -335,7 +301,7 @@ class courses_vicensvives_add_book {
         foreach ($unit->sections as $section) {
             $mods[] = array(
                 'idnumber' => $this->book->idBook . '_label_' . $section->id,
-                'name' => '', // Se generar a partir de la descripción
+                'name' => s($section->label) . '. ' . s($section->name),
                 'modname' => 'label',
                 'indent' => 0,
                 'params' => array(
@@ -504,6 +470,7 @@ class courses_vicensvives_add_book {
                 JOIN {modules} m ON m.id = cm.module
                 JOIN {grade_items} gi ON gi.iteminstance = cm.instance AND gi.itemmodule = m.name
                 WHERE cm.id $sqlin
+                AND cm.deletioninprogress = 0
                 AND gi.itemtype = :itemtype
                 AND gi.courseid = cm.course";
         $params['itemtype'] = 'mod';
@@ -537,7 +504,9 @@ class courses_vicensvives_add_book {
             $sql = "SELECT s.*
                     FROM {course_modules} cm
                     JOIN {course_sections} s ON s.id = cm.section
-                    WHERE cm.course = :courseid AND cm.idnumber $idnumbersql
+                    WHERE cm.course = :courseid
+                    AND cm.idnumber $idnumbersql
+                    AND cm.deletioninprogress = 0
                     ORDER BY s.section";
             $params['courseid'] = $this->course->id;
             $sections = $DB->get_records_sql($sql, $params, 0, 1);

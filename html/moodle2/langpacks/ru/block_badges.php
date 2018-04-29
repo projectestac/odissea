@@ -29,4 +29,4 @@ $string['badges:addinstance'] = 'Добавлять новый блок «Мои
 $string['badges:myaddinstance'] = 'Добавлять новый блок «Мои последние значки» на страницу «Личный кабинет»';
 $string['nothingtodisplay'] = 'У Вас нет значков для отображения';
 $string['numbadgestodisplay'] = 'Количество отображаемых последних значков';
-$string['pluginname'] = 'Мои последние значки';
+$string['pluginname'] = 'Последние значки';

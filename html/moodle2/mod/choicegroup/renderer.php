@@ -32,10 +32,17 @@ define ('CHOICEGROUP_DISPLAY_VERTICAL_LAYOUT', 1);
 class mod_choicegroup_renderer extends plugin_renderer_base {
 
     /**
-     * Returns HTML to display choicegroups of option
-     * @param object $options
-     * @param int  $coursemoduleid
+     * @param      $options
+     * @param      $coursemoduleid
      * @param bool $vertical
+     * @param bool $publish
+     * @param bool $limitanswers
+     * @param bool $showresults
+     * @param bool $current
+     * @param bool $choicegroupopen
+     * @param bool $disabled
+     * @param bool $multipleenrollmentspossible
+     *
      * @return string
      */
     public function display_options($options, $coursemoduleid, $vertical = true, $publish = false, $limitanswers = false, $showresults = false, $current = false, $choicegroupopen = false, $disabled = false, $multipleenrollmentspossible = false) {
@@ -162,11 +169,11 @@ class mod_choicegroup_renderer extends plugin_renderer_base {
                $html .= html_writer::tag('p', get_string('choicegroupfull', 'choicegroup'));
             } else {
                 if (!$disabled) {
-                    $html .= html_writer::empty_tag('input', array('type'=>'submit', 'value'=>get_string('savemychoicegroup','choicegroup'), 'class'=>'button', 'style' => $initiallyHideSubmitButton?'display: none':''));
+                    $html .= html_writer::empty_tag('input', array('type'=>'submit', 'value'=>get_string('savemychoicegroup','choicegroup'), 'class'=>'button modchoicegroupsumbit', 'style' => $initiallyHideSubmitButton?'display: none':''));
                 }
             }
 
-            if (!empty($options['allowupdate']) && ($options['allowupdate']) && !($multipleenrollmentspossible == 1)) {
+            if (!empty($options['allowupdate']) && ($options['allowupdate']) && !($multipleenrollmentspossible == 1) && !$disabled) {
                 $url = new moodle_url('view.php', array('id'=>$coursemoduleid, 'action'=>'delchoicegroup', 'sesskey'=>sesskey()));
                 $html .= ' ' . html_writer::link($url, get_string('removemychoicegroup','choicegroup'));
             }

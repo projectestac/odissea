@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addscreenshots'] = 'Ajouter des copies d\'écran';
 $string['advertise'] = 'Publier ce cours pour l\'inscription de personnes';
-$string['advertised'] = 'Publier';
+$string['advertised'] = 'Publié';
 $string['advertiseon'] = 'Publier ce cours sur {$a}';
 $string['advertiseonhub'] = 'Publier ce cours sur un serveur d\'échanges';
 $string['advertiseonmoodleorg'] = 'Publier ce cours sur Moodle.org';
@@ -164,7 +164,7 @@ $string['registermoochtips'] = 'Ennregistrez votre site afin afin de recevoir le
 $string['registersite'] = 'Enregistrer sur {$a}';
 $string['registerwith'] = 'S\'enregistrer sur un serveur d\'échanges';
 $string['registrationconfirmed'] = 'Enregistrement du site confirmé';
-$string['registrationconfirmedon'] = 'Merci pour l\'enregistrement de votre plateforme. Les informations d\'enregistrement sont maintenues à jour par la tâche planifiée « Enregistrement du site ».';
+$string['registrationconfirmedon'] = 'Merci pour l\'enregistrement de votre plateforme. Les informations d\'enregistrement sont tenues à jour par la tâche programmée « Enregistrement du site ».';
 $string['registrationinfo'] = 'Information d\'enregistrement';
 $string['registrationupdated'] = 'L\'enregistrement a été mis à jour.';
 $string['registrationupdatedfailed'] = 'Échec de la mise à jour de l\'enregistrement';

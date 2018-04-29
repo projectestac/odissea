@@ -208,7 +208,7 @@ function rcontent_get_user_grades($rcontent, $userid=0) {
     if (empty($userid)) {
         if ($rcontentusers = $DB->get_records_select('rcontent_grades', "rcontentid='$rcontent->id' AND unitid=$rcontent->unitid AND activityid=$rcontent->activityid GROUP BY userid", array(), "","userid")) {
             foreach ($rcontentusers as $rcontentuser) {
-                $grades[$rcontentuser->userid] = new object();
+                $grades[$rcontentuser->userid] = new stdClass();
                 $grades[$rcontentuser->userid]->id         = $rcontentuser->userid;
                 $grades[$rcontentuser->userid]->userid     = $rcontentuser->userid;
                 $grades[$rcontentuser->userid]->rawgrade   = rcontent_grade_user($rcontent, $rcontentuser->userid, 'gradebook');
@@ -224,7 +224,7 @@ function rcontent_get_user_grades($rcontent, $userid=0) {
         }
         $rcontentuser=array_values($rcontentuser);
         $rcontentuser=$rcontentuser[0];
-        $grades[$userid] = new object();
+        $grades[$userid] = new stdClass();
         $grades[$userid]->id         = $userid;
         $grades[$userid]->userid     = $userid;
         $grades[$userid]->rawgrade   = rcontent_grade_user($rcontent, $userid, 'gradebook');
@@ -249,7 +249,7 @@ function rcontent_update_grades($rcontent=null, $userid=0, $nullifnone=true) {
             rcontent_grade_item_update($rcontent, $grades);
 
         } else if ($userid and $nullifnone) {
-            $grade = new object();
+            $grade = new stdClass();
             $grade->userid   = $userid;
             $grade->rawgrade = NULL;
             rcontent_grade_item_update($rcontent, $grade);

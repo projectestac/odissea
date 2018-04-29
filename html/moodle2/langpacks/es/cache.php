@@ -46,6 +46,7 @@ $string['cachedef_coursemodinfo'] = 'Información acumulada sobre los módulos y
 $string['cachedef_databasemeta'] = 'Meta Información de Base de Datos';
 $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas de un usuario concreto';
+$string['cachedef_grade_categories'] = 'Consulta de categorías de grado';
 $string['cachedef_groupdata'] = 'Información de grupos del curso';
 $string['cachedef_htmlpurifier'] = 'Depurador de HTML - Limpieza de contenido';
 $string['cachedef_langmenu'] = 'Lista de idiomas disponibles';

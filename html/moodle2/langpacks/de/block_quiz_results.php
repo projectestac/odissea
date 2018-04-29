@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Testergebnisse (deaktiviert)';
+$string['pluginname'] = 'Testergebnisse';
 $string['quiz_results:addinstance'] = 'Block \'Testergebnisse\' hinzufügen';

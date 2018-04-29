@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowadditionalcssclasses'] = 'Eigenes CSS erlauben';
-$string['configallowadditionalcssclasses'] = 'Option hinzufügen, um für jeden Textblock eigenes CSS zu erlauben';
-$string['configclasses'] = 'Eigenes CSS';
+$string['allowadditionalcssclasses'] = 'Zusätzliche CSS-Klassen erlauben';
+$string['configallowadditionalcssclasses'] = 'Option hinzufügen, um für jeden Textblock eigene CSS-Klassen zu erlauben';
+$string['configclasses'] = 'Zusätzliche CSS-Klassen';
 $string['configclasses_help'] = 'Zweck dieser Option ist, mehrere Textblöcke durch eigene CSS-Festlegungen unterscheidbar zu machen. Alle hier eingegebenen CSS-Klassen (Leerzeichen getrennt) werden den standardmäßigen Klassen hinzugefügt.';
 $string['configcontent'] = 'Inhalt';
 $string['configtitle'] = 'Blocktitel';

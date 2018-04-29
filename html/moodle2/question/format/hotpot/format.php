@@ -513,10 +513,10 @@ class qformat_hotpot extends qformat_default {
                 $question->generalfeedbackformat = FORMAT_HTML;
 
                 $type = $source->xml_value($tags, $question_record."['question-type'][0]['#']");
-                //  1 : multiple choice
+                //  1 : multi-choice
                 //  2 : short-answer
                 //  3 : hybrid
-                //  4 : multiple select
+                //  4 : multi-select
 
                 if ($type==2) {
                     $question->qtype = 'shortanswer';
@@ -527,7 +527,7 @@ class qformat_hotpot extends qformat_default {
                     $question->partiallycorrectfeedback = array('text'=>'', 'format'=>FORMAT_HTML);
                 }
                 if ($type==4) {
-                    $question->single = 0; // multiple select
+                    $question->single = 0; // multi-select
                 } else {
                     $question->single = 1;
                 }
@@ -535,14 +535,15 @@ class qformat_hotpot extends qformat_default {
                 // set tags to start of answers array
                 $answers = $question_record."['answers'][0]['#']";
 
-                // workaround required to calculate scores for multiple select answers
+                // workaround required to calculate scores for multi-select answers
                 $no_of_correct_answers = 0;
+                $no_of_incorrect_answers = 0;
                 if ($type==4) {
                     $a = 0;
                     while (($answer = $answers."['answer'][$a]['#']") && $source->xml_value($tags, $answer)) {
                         $correct = $source->xml_value($tags, $answer."['correct'][0]['#']");
                         if (empty($correct)) {
-                            // do nothing
+                            $no_of_incorrect_answers++;
                         } else {
                             $no_of_correct_answers++;
                         }
@@ -559,15 +560,22 @@ class qformat_hotpot extends qformat_default {
                 $correct_answers_all_zero = true;
                 while (($answer = $answers."['answer'][$a]['#']") && $source->xml_value($tags, $answer)) {
                     $correct = $source->xml_value($tags, $answer."['correct'][0]['#']");
-                    if (empty($correct)) {
-                        $fraction = 0;
-                    } else if ($type==4) { // multiple select
-                        // strange behavior if the $fraction isn't exact to 5 decimal places
-                        $fraction = round(1/$no_of_correct_answers, 5);
+                    if ($type==4) {
+                        // multi-select
+                        if (empty($correct)) {
+                            // https://moodle.org/mod/forum/discuss.php?d=356809
+                            $fraction = -round(1/$no_of_incorrect_answers, 5);
+                        } else {
+                            $fraction = round(1/$no_of_correct_answers, 5);
+                        }
                     } else {
-                        // HP6 JQuiz
-                        $percent = $source->xml_value($tags, $answer."['percent-correct'][0]['#']");
-                        $fraction = $percent/100;
+                        // multi-choice, short-answer, or hybrid
+                        if (empty($correct)) {
+                            $fraction = 0;
+                        } else {
+                            $percent = $source->xml_value($tags, $answer."['percent-correct'][0]['#']");
+                            $fraction = $percent/100;
+                        }
                     }
                     $answertext = $this->hotpot_prepare_str($source->xml_value($tags, $answer."['text'][0]['#']"));
                     if (strlen($answertext)) {

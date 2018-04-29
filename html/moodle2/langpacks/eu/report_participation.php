@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventreportviewed'] = 'Partaidetza-txostena ikusi da';
+$string['nologreaderenabled'] = 'Ez dago agerraldien irakurlerik gaituta';
 $string['page-report-participation-index'] = 'Ikastaroaren partaidetza-txostena';
 $string['page-report-participation-x'] = 'Edozein partaidetza-txosten';
 $string['participation:view'] = 'Ikastaroaren partaidetza-txostena ikusi';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTMLフォーマット';
-$string['pluginname_help'] = 'XHTMLフォーマットでは、別のアプリケーションで使用できるようカテゴリ内の問題すべてをstrict XHTML形式の単一ページにエクスポートすることができます。';
+$string['pluginname_help'] = 'XHTMLフォーマットでは別のアプリケーションで使用できるようカテゴリ内の問題すべてをstrict XHTML形式の単一ページにエクスポートすることができます。';

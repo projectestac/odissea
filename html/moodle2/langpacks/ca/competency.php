@@ -105,6 +105,7 @@ $string['evidence_manualoverrideinplan'] = 'S\'ha configurat de forma manual la 
 $string['invalidevidencedesc'] = 'La descripció de l\'evidència no és vàlida.';
 $string['invalidgrade'] = 'La qualificació no és vàlida';
 $string['invalidpersistent'] = 'Persistent no vàlid';
+$string['invalidpersistenterror'] = 'Error: {$a}';
 $string['invalidplan'] = 'El pla d\'aprenentatge no és vàlid.';
 $string['invalidtaxonomy'] = 'Taxonomia invàlida: {$a}';
 $string['invalidurl'] = 'L\'URL no és vàlid. Assegureu-vos que comença per \'http://\' o \'https://\'.';

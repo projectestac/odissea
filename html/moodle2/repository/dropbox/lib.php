@@ -366,6 +366,20 @@ class repository_dropbox extends repository {
                 'hash'          => sha1($packed),
                 'repoid'        => $this->id,
             );
+            // XTEC ************** MODIFICAT - oracle clob compare for reference field
+            // 2018.04.13 @svallde2
+            // CODI MODIFICAT
+            $refid = $DB->get_field_sql('SELECT id FROM {files_reference}
+                WHERE dbms_lob.compare(reference, :reference) = 0 AND referencehash = :hash
+                AND repositoryid = :repoid', $params);
+            if (!$refid) {
+                return $newreference;
+            }
+
+            $existingrefid = $DB->get_field_sql('SELECT id FROM {files_reference}
+                WHERE dbms_lob.compare(reference, :newreference) = 0 AND referencehash = :newhash
+                AND repositoryid = :repoid', $params);
+            /* CODI ORIGINAL
             $refid = $DB->get_field_sql('SELECT id FROM {files_reference}
                 WHERE reference = :reference AND referencehash = :hash
                 AND repositoryid = :repoid', $params);
@@ -376,6 +390,8 @@ class repository_dropbox extends repository {
             $existingrefid = $DB->get_field_sql('SELECT id FROM {files_reference}
                     WHERE reference = :newreference AND referencehash = :newhash
                     AND repositoryid = :repoid', $params);
+            */
+            //FI PATCH
             if ($existingrefid) {
                 // The same reference already exists, we unlink all files from it,
                 // link them to the current reference and remove the old one.

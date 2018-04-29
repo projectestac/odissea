@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Behartu ikasleak beste jarduera bat osatzera (edo ez osatzera).';
 $string['error_selectcmid'] = 'Jarduera bat aukeratu behar duzu osaketa-baldintzarako.';
+$string['error_selectcmidpassfail'] = '"Kalifikazioa behar du" baldintza zehaztuta duen jarduera bat aukeratu behar duzu.';
 $string['label_cm'] = 'Jarduera edo baliabidea';
 $string['label_completion'] = 'Osaketaren egoera beharrezkoa da.';
 $string['missing'] = '(Jarduera falta da)';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activity_results:addinstance'] = 'Aggiungere blocco Risultati dell\'attività';
-$string['bestgrade'] = 'Il voto più alto';
+$string['activity_results:addinstance'] = 'Aggiungere blocco Valutazioni delle attività';
+$string['bestgrade'] = 'Valutazione più alta:';
 $string['bestgrades'] = 'I {$a} voti più alti:';
 $string['bestgroupgrade'] = 'Il gruppo con la media più alta:';
 $string['bestgroupgrades'] = 'I {$a} gruppi con la media più alta:';
@@ -43,7 +43,7 @@ $string['config_no_activities_in_course'] = 'In questo corso al momento non sono
 $string['config_select_activity'] = 'Attività dalla quale trarre i risultati da visualizzare';
 $string['config_show_best'] = 'Numero di valutazioni più alte (0 per disabilitare)';
 $string['config_show_worst'] = 'Numero di valutazioni più basse (0 per disabilitare)';
-$string['configuredtoshownothing'] = 'La configurazione impostata non consente la visualizzazione di nessun risultato.';
+$string['configuredtoshownothing'] = 'La configurazione impostata non consente la visualizzazione di nessuna valutazione.';
 $string['config_use_groups'] = 'Visualizza i gruppi al posto degli studenti (solo se l\'attività supporta i gruppi)';
 $string['defaultdecimalplaces'] = 'Cifre decimali';
 $string['defaultdecimalplaces_desc'] = 'Numero di cifre decimale visualizzati per default';
@@ -62,9 +62,9 @@ $string['error_emptyactivityrecord'] = 'Errore: l\'attività selezionata non esi
 $string['error_nogroupsexist'] = 'Errore: il blocco è configurato per visualizzare i gruppi ma non ci sono gruppi.';
 $string['error_unsupportedgradetype'] = 'Errore: l\'attività selezionata utilizza un metodo di valutazione che non è supportato da questo blocco.';
 $string['notyetgraded'] = 'Non ancora valutato';
-$string['pluginname'] = 'Risultati dell\'attività';
+$string['pluginname'] = 'Valutazioni delle attività';
 $string['unknown'] = 'Scala sconosciuta';
-$string['worstgrade'] = 'Il voto più basso:';
+$string['worstgrade'] = 'Valutazione più bassa:';
 $string['worstgrades'] = 'I {$a} voti più bassi:';
 $string['worstgroupgrade'] = 'Il gruppo con la media più bassa:';
 $string['worstgroupgrades'] = 'I {$a} gruppi con la media più bassa:';

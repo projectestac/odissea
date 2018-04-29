@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enabledockdesc'] = 'Να επιτρέπεται ο χρήστης να προσθέσει αυτό το μπλοκ';
 $string['navigation:addinstance'] = 'Προσθήκη νέου μπλοκ πλοήγηση';
 $string['navigation:myaddinstance'] = 'Προσθήκη νέου μπλοκ πλοήγηση στη σελίδα Η αρχική μου';
 $string['pluginname'] = 'Πλοήγηση';

@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['disregardedwithoutpenalty'] = '送信が有効ではないため、ペナルティなしとして無視されました。';
+$string['disregardedwithoutpenalty'] = '送信が有効ではないためペナルティなしとして無視されました。';
 $string['gradingdetails'] = 'この送信の評点: {$a->raw}/{$a->max}';
 $string['gradingdetailsadjustment'] = '前の受験により <strong>{$a->cur}/{$a->max}</strong> に調整されます。';
-$string['gradingdetailspenalty'] = 'この解答のペナルティ: {$a}';
+$string['gradingdetailspenalty'] = 'この送信のペナルティ: {$a}';
 $string['gradingdetailspenaltytotal'] = '現在の合計ペナルティ: {$a}';
 $string['gradingdetailswithadjustment'] = 'この送信の評点は {$a->raw}/{$a->max} です。前の受験に基づき <strong>{$a->cur}/{$a->max}</strong> に補正されます。';
 $string['gradingdetailswithadjustmentpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。前の受験に基づき <strong>{$a->cur}/{$a->max}</strong> に補正されます。この送信からペナルティ {$a->penalty} 点が引かれます。';
-$string['gradingdetailswithadjustmenttotalpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。 前の受験に基づき <strong>{$a->cur}/{$a->max}</strong> に補正されます。この送信からペナルティ {$a->penalty} 点が引かれます。現在のペナルティ合計は {$a->totalpenalty} です。';
+$string['gradingdetailswithadjustmenttotalpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。前の受験に基づき <strong>{$a->cur}/{$a->max}</strong> に補正されます。この送信からペナルティ {$a->penalty} 点が引かれます。現在のペナルティ合計は {$a->totalpenalty} です。';
 $string['gradingdetailswithpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。この送信からペナルティ {$a->penalty} 点が引かれます。';
 $string['gradingdetailswithtotalpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。この送信からペナルティ {$a->penalty} 点が引かれます。現在のペナルティ合計は {$a->totalpenalty} です。';
 $string['notcomplete'] = '未完了';

@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configuration'] = '';
 $string['criteria'] = 'Kριτήρια';
 $string['dimensiondescription'] = 'Περιγραφή';
+$string['layout'] = '';
 $string['layoutgrid'] = 'Πλέγμα';
 $string['layoutlist'] = 'Λίστα';
 $string['levels'] = 'Επίπεδα';

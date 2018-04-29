@@ -30,6 +30,7 @@ $string['assignmentdisabled'] = 'Heredatutako "Zeregina 2.2" jarduera desgaituta
 $string['assignment:exportownsubmission'] = 'Norberaren bidalketa esportatu ';
 $string['assignment:exportsubmission'] = 'Esportatu bidalketa';
 $string['assignment:grade'] = 'Zeregina kalifikatu';
+$string['assignmentneedsupgrade'] = 'Zaharkitutako "Zeregina 2.2" jarduera desgaitu egin da. Mesedez eskatu zure guneko kudeatzaileari zereginak eguneratzeko tresna exekutatzeko gune honetako  zaharkitutako zeregin guztiak eguneratzeko.';
 $string['assignment:submit'] = 'Bidali zeregina';
 $string['assignment:view'] = 'Zeregina ikusi';
 $string['messageprovider:assignment_updates'] = 'Zereginen jakinarazpenak (2.2)';

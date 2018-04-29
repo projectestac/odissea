@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptederror'] = '受け入れることのできるエラー範囲';
-$string['addmoreanswerblanks'] = 'さらに {no} 件の答え入力欄を追加する';
-$string['addmoreunitblanks'] = 'さらに {no} 件の単位を追加する';
+$string['addmoreanswerblanks'] = 'さらに {no} 個の答え入力欄を追加する';
+$string['addmoreunitblanks'] = 'さらに {no} 個の単位を追加する';
 $string['answercolon'] = '答え:';
 $string['answererror'] = 'エラー';
 $string['answermustbenumberorstar'] = '答えには「-1.234」「3e8」のような数値、または「*」を使用してください。';
@@ -36,20 +36,20 @@ $string['decfractionofquestiongrade'] = '問題評点の小数 (0-1) として';
 $string['decfractionofresponsegrade'] = '解答評点の小数 (0-1) として';
 $string['decimalformat'] = '小数';
 $string['editableunittext'] = 'テキスト入力エレメント';
-$string['errornomultiplier'] = 'この単位の乗数を指定してください。';
-$string['errorrepeatedunit'] = '同じ名称で2つの単位を設定することはできません。';
-$string['geometric'] = '幾何平均値';
+$string['errornomultiplier'] = 'あなたはこの単位の乗数を指定する必要があります。';
+$string['errorrepeatedunit'] = 'あなたは同じ名称で2つの単位を設定することはできません。';
+$string['geometric'] = '対数';
 $string['invalidnumber'] = 'あなたは有効な数値を入力する必要があります。';
-$string['invalidnumbernounit'] = 'あなたは有効な数値を入力する必要があります。あなたの解答に単位を含まないでください。';
+$string['invalidnumbernounit'] = 'あなたは有効な数字を入力する必要があります。あなたの解答に単位を含まないでください。';
 $string['invalidnumericanswer'] = 'あなたが入力した答えの1つが有効な数字ではありません。';
 $string['invalidnumerictolerance'] = 'あなたが入力した許容範囲の1つが有効な数字ではありません。';
-$string['leftexample'] = '$1.00 または £1.00のように左側';
-$string['manynumerical'] = '単位は任意です。単位が入力された場合、評定される前に解答を単位1で変換するために使用されます。';
+$string['leftexample'] = '$1.00または£1.00のように左側';
+$string['manynumerical'] = '単位は任意です。単位が入力された場合、評定される前に解答を単位1で変換するため使用されます。';
 $string['multiplier'] = '乗数';
-$string['nominal'] = '名義尺度';
+$string['nominal'] = '絶対';
 $string['noneditableunittext'] = '単位1の編集不可テキスト';
 $string['nonvalidcharactersinnumber'] = '有効ではない文字が数字として入力されています。';
-$string['notenoughanswers'] = '少なくとも1つの答えを入力してください。';
+$string['notenoughanswers'] = 'あなたは少なくとも1つの答えを入力する必要があります。';
 $string['nounitdisplay'] = '単位評定なし';
 $string['numericalmultiplier'] = '乗数';
 $string['numericalmultiplier_help'] = '乗数は正しい数値の解答に掛けられる要素です。
@@ -58,7 +58,7 @@ $string['numericalmultiplier_help'] = '乗数は正しい数値の解答に掛�
 
 あなたが乗数0.001の単位kWを追加した場合、正解は5.5kWになります。これは5500Wまたは5.5kWの解答が正解とされることを意味します。
 
-許容されるエラーも乗算されることに留意してください。ですから、許容されるエラーが100Wの場合、0.1kWのエラーとなります。';
+許容されるエラーも乗算されることに留意してください。そのため、許容されるエラーが100Wの場合、0.1kWのエラーとなります。';
 $string['oneunitshown'] = '単位1が表示されます。数字の解答のみ評定されます。';
 $string['onlynumerical'] = '単位の使用は許可されません。数字の解答のみ評定されます。';
 $string['pleaseenterananswer'] = '答えを入力してください。';
@@ -66,14 +66,14 @@ $string['pleaseenteranswerwithoutthousandssep'] = '3桁区切り ({$a}) を使�
 $string['pluginname'] = '数値問題';
 $string['pluginnameadding'] = '数値問題の追加';
 $string['pluginnameediting'] = '数値問題の編集';
-$string['pluginname_help'] = '学生からは数値問題は記述問題のように見えます。記述問題と異なる点は数値問題では間違いを受け入れるようにすることができることです。このことにより連続した範囲の答えを設定することができます。例えば正解が10で受け入れることのできるエラー範囲が2の場合、8から12までの間の答えが正解とされます。';
-$string['pluginnamesummary'] = '単位を使って数値で解答することができます。また、さまざまな解答モデルに対して、許容範囲を設定して評定することができます。';
-$string['relative'] = '相対度数';
+$string['pluginname_help'] = '数値問題は学生からは記述問題のように見えます。記述問題と異なる点は数値問題では間違いを受け入れるようにすることができることです。このことにより連続した範囲の答えを設定することができます。例えば正解が10で受け入れることのできるエラー範囲が2の場合、8から12までの間の答えが正解とされます。';
+$string['pluginnamesummary'] = '単位を使って数値で解答することができます。また、さまざまな解答モデルに対して許容範囲を設定して評定することができます。';
+$string['relative'] = '相対';
 $string['rightexample'] = '1.00cmまたは1.00kmのように右側';
 $string['selectunit'] = '単位を選択してください。';
 $string['selectunits'] = '単位を選択する';
 $string['studentunitanswer'] = '単位入力に使用する';
-$string['tolerancetype'] = '許容タイプ';
+$string['tolerancetype'] = '許容誤差タイプ';
 $string['unit'] = '単位';
 $string['unitappliedpenalty'] = 'この評点には正しくない単位に対する {$a} のペナルティを含みます。';
 $string['unitchoice'] = '複数選択';
@@ -105,7 +105,7 @@ $string['validnumberformats_help'] = '* 正則数 13500.67、13 500.67、13500,6
  * あなたの言語パック設定 (langconfig.phpファイル) が3桁区切りに「,」を使用する場合、常に13,500.67 : 13,500のように小数点を入力してください。
 
 * 例えば1.350067 * 10<sup>4</sup>のような指数の場合、1.350067 E4 : 1.350067 E04を使用してください。';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 または 1.350067 E04';
+$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4または1.350067 E04';
 $string['xmustbenumeric'] = '{$a} は数字にする必要があります。';
 $string['xmustnotbenumeric'] = '{$a} を数字にすることはできません。';
 $string['youmustenteramultiplierhere'] = 'あなたはここに乗数を入力する必要があります。';

@@ -110,7 +110,7 @@ $string['cwrqpfs'] = 'Domande prese \'a caso\' da domande delle sotto-categorie.
 $string['cwrqpfsinfo'] = '<p>Durante l\'aggiornamento a Moodle 1.9 le categorie di domande saranno suddivise in  contesti differenti. Per alcune domande e categorie di domande e domande sarà modificato il modo con cui sono condivise. La modifica si rende necessaria nel  nel raro caso in cui in un quiz una o più domande \'random\' vengono prese da diverse categorie sia condivise che no, come avviene in questo sito. Le domande \'random\' vengono prese da sotto categorie di domande e le sotto categorie sono condivise in modi diversi rispetto alla categorie genitore da dove viene creata la domanda random.</p>
 <p>La condivisione sarà cambiata per le seguenti categorie di domande. Le domande interessate dal cambiamento continueranno a funzionare come prima fino a quando non verranno rimosse dai quiz nei quali appaiono.</p>';
 $string['cwrqpfsnoprob'] = 'Nessuna categoria del tuo sito è affetta dal problema \'Domande a caso che pescano domande da sotto-categorie\'.';
-$string['decimalplacesingrades'] = 'Cifre decimali nelle valuatzioni';
+$string['decimalplacesingrades'] = 'Cifre decimali nelle valutazioni';
 $string['defaultfor'] = 'Default per {$a}';
 $string['defaultinfofor'] = 'La categoria default per le domande condivise nel contesto \'{$a}\'.';
 $string['defaultmark'] = 'Punteggio di default';

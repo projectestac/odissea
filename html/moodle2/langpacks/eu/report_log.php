@@ -26,14 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allsources'] = 'Iturburu guztiak';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Osagaia';
 $string['eventcontext'] = 'Testuingurua';
+$string['eventloggedas'] = '{$a->realusername} $a->asusername} gisa';
 $string['eventorigin'] = 'Jatorria';
+$string['eventrelatedfullnameuser'] = 'Inplikatutako erabiltzailea';
 $string['eventreportviewed'] = 'Agerraldi-txostena ikusi da';
 $string['eventuserreportviewed'] = 'Erabiltzailearen agerraldi-txostena ikusi da';
 $string['logsformat'] = 'Agerraldien formatua';
 $string['log:view'] = 'Ikusi ikastaroko agerraldiak';
 $string['log:viewtoday'] = 'Ikusi gaurko agerraldiak';
+$string['nocapability'] = 'Ez dago sarbiderik erabiltzailearen agerraldien txostenera';
 $string['nologreaderenabled'] = 'Agerraldi-irakurlea ez dago gaituta';
 $string['origin'] = 'Iturburua';
 $string['other'] = 'Bestelako bat';

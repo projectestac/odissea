@@ -291,7 +291,7 @@ Bedankt voor het insturen van je antwoorden voor \'{$a->quizname}\'
 uit de cursus \'{$a->coursename}\'
 op {$a->submissiontime}.
 
-Deze e-mail bevestigd dat we je antwoorden ontvangen hebben.
+Deze e-mail bevestigt dat we je antwoorden ontvangen hebben.
 
 Je kunt deze test vinden op {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Bedankt voor het insturen van je antwoorden voor \'{$a->quizname}\'';
@@ -526,6 +526,7 @@ $string['newpage'] = 'Nieuwe pagina';
 $string['newpageevery'] = 'Start automatisch een nieuwe pagina';
 $string['newpage_help'] = '<p>Voor langere testen is het een goed idee om deze te verdelen over verschillende pagina\'s door het aantal vragen per pagina te beperken. Wanneer je vragen aan de test toevoegt, worden de paginascheidingen automatisch ingevoegd, afhankelijk van de instelling die je hier gemaakt hebt. Je kunt de paginascheidingen later ook met de hand verplaatsen op de pagina voor het bewerken van de test.
 </p>';
+$string['newsectionheading'] = 'Nieuwe kop';
 $string['noanswers'] = 'Er zijn geen antwoorden geselecteerd!';
 $string['noattempts'] = 'Er zijn geen pogingen geweest om deze test te maken';
 $string['noattemptsfound'] = 'Geen pogingen gevonden';
@@ -587,7 +588,7 @@ $string['outof'] = '{$a->grade} op een maximum van {$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade} op een maximum van {$a->maxgrade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = 'Algemene feedback test';
-$string['overallfeedback_help'] = 'De algemene feedback is een tekst die aan de leerlingen wordt getoond nadat ze de hele test beëindicht hebben. Door puntenmarges in te geven (als percentage of als cijfer) kan de tekst afhankelijk gemaakt worden van het behaalde cijfer.';
+$string['overallfeedback_help'] = 'De algemene feedback is een tekst die aan de leerlingen wordt getoond nadat ze de hele test beëindigd hebben. Door puntenmarges in te geven (als percentage of als cijfer) kan de tekst afhankelijk gemaakt worden van het behaalde cijfer.';
 $string['overdue'] = 'Te laat';
 $string['overduehandling'] = 'Wanneer de tijd verlopen is';
 $string['overduehandlingautoabandon'] = 'Pogingen moeten ingestuurd worden voor de tijd verlopen is of ze worden niet meegeteld';

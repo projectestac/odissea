@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} 件のエラーが検出されました。';
-$string['missinganswer'] = '{$a} 行目の問題文に関して、「:ANSWER」「:Lx」「:Rx」の記述が少なすぎます。あなたは少なくとも2つの考えられる答えを定義する必要があります。';
+$string['missinganswer'] = '{$a} 行目の問題文に「:ANSWER」「:Lx」「:Rx」の記述が少なすぎます。あなたは少なくとも2つの考えられる答えを定義する必要があります。';
 $string['missingquestion'] = '{$a} 行目の後に問題ラベルがありません。';
 $string['pluginname'] = 'WebCTフォーマット';
-$string['pluginname_help'] = 'WebCTフォーマットでは、WebCTテキストベースフォーマットで保存された多肢選択問題および記述問題をインポートすることができます。';
-$string['questionnametoolong'] = '{$a} 行目の問題名が長すぎます (最大半角255文字)。そのため、問題名は省略されました。';
+$string['pluginname_help'] = 'WebCTフォーマットではWebCTテキストベースフォーマットで保存された多肢選択問題および記述問題をインポートすることができます。';
+$string['questionnametoolong'] = '{$a} 行目の問題名が長すぎます (最大半角255文字)。問題名は省略されました。';
 $string['unknowntype'] = '{$a} 行目以後に不明な問題タイプがあります。';
 $string['warningsdetected'] = '{$a} 件の警告が見つかりました。';
-$string['wronggrade'] = '正しくない評点 ({$a} 行の後) :';
+$string['wronggrade'] = '正しくない評点 ({$a} 行目の後) :';

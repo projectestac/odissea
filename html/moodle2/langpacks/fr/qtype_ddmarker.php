@@ -41,7 +41,7 @@ $string['dropbackground'] = 'Image de fond pouvant être recouverte de marqueurs
 $string['dropzone'] = 'Zone de dépôt {$a}';
 $string['dropzoneheader'] = 'Zone de dépôt';
 $string['dropzones'] = 'Zones de dépôt';
-$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu ci-dessus, se met immédiatement à jour, ce qui vous permet de placer et d\'ajuster les zones pas à pas.
+$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu ci-dessous se met immédiatement à jour, ce qui vous permet de placer et d\'ajuster les zones pas à pas.
 
 * Cercle : centre_x, centre_y; rayon<br />par exemple : <code>80, 100; 50</code>
 * Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20, 60; 100, 60; 20, 100</code>

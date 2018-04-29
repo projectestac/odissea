@@ -16,18 +16,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-// Checking that WIRIS plugin is installed.
-$filterexists = file_exists($CFG->dirroot . '/filter/wiris/filter.php');
-
-$output = '';
-if (!$filterexists) {
-    $title = '<br /><br /><br /><span style="color:#aa0000; font-size:18px;">Attention! WIRIS filter is not installed</span>';
-    $info = '<a target="_blank" href="http://www.wiris.com/plugins/docs/moodle">';
-    $info .= '<img style="vertical-align:-3px;"';
-    $info .= ' alt="" src="https://www.wiris.com/system/files/attachments/1689/WIRIS_manual_icon_17_17.png" /></a>';
-    $text = '<br />WIRIS quizzes for Moodle 2.x needs that WIRIS plugin for Moodle 2.x is installed on your Moodle. ';
-    $output = $title . $text . $info;
-}
 
 // Checkbox to enable/disable all the WIRIS quizzes question types.
 $qtypes = array('essay', 'match', 'multianswer', 'multichoice', 'shortanswer', 'truefalse');
@@ -49,15 +37,51 @@ if ($quizzesdisabled == '1') {
     }
 }
 
-$settings->add(new admin_setting_configcheckbox('question/wq_disabled', 'WIRIS quizzes', $output, '0', '0', '1'));
+$settings->add(new admin_setting_heading('qtype_wq/connectionsettings',
+                                                            get_string('connectionsettings', 'qtype_wq'),
+                                                            get_string('connectionsettings_text', 'qtype_wq')));
 
-if ($filterexists) {
-    if ($CFG->version >= 2012120300 && $CFG->version < 2013051400) {
-        $settingslink = 'filtersettingfilterwiris';
-    } else {
-        $settingslink = 'filtersettingwiris';
-    }
-    $url = $CFG->wwwroot . '/admin/settings.php?section=' . $settingslink;
-    $url = '<a href="' . $url . '">WIRIS filter settings</a>';
-    $settings->add(new admin_setting_heading('filter_wirisfilterheading', $url, ''));
+$settings->add(new admin_setting_configtext('qtype_wq/quizzesserviceurl',
+                                                            get_string('quizzesserviceurl', 'qtype_wq'),
+                                                            get_string('quizzesserviceurl_help', 'qtype_wq'),
+                                                            'http://www.wiris.net/demo/quizzes',
+                                                            PARAM_URL));
+
+$settings->add(new admin_setting_configtext('qtype_wq/quizzeseditorurl',
+                                                            get_string('quizzeseditorurl', 'qtype_wq'),
+                                                            get_string('quizzeseditorurl_help', 'qtype_wq'),
+                                                            'http://www.wiris.net/demo/editor',
+                                                            PARAM_URL));
+
+$settings->add(new admin_setting_configtext('qtype_wq/quizzeshandurl',
+                                                            get_string('quizzeshandurl', 'qtype_wq'),
+                                                            get_string('quizzeshandurl_help', 'qtype_wq'),
+                                                            'http://www.wiris.net/demo/hand',
+                                                            PARAM_URL));
+
+$settings->add(new admin_setting_configtext('qtype_wq/quizzeswirislauncherurl',
+                                                            get_string('quizzeswirislauncherurl', 'qtype_wq'),
+                                                            get_string('quizzeswirislauncherurl_help', 'qtype_wq'),
+                                                            'http://stateful.wiris.net/demo/wiris',
+                                                            PARAM_URL));
+
+$settings->add(new admin_setting_configtext('qtype_wq/quizzeswirisurl',
+                                                            get_string('quizzeswirisurl', 'qtype_wq'),
+                                                            get_string('quizzeswirisurl_help', 'qtype_wq'),
+                                                            'http://www.wiris.net/demo/wiris',
+                                                            PARAM_URL));
+
+// Access provider option. If enabled only loged users can access to WIRIS Quizzes services
+$settings->add(new admin_setting_configcheckbox('qtype_wq/access_provider_enabled',
+                                                            get_string('access_provider_enabled', 'qtype_wq'),
+                                                            get_string('access_provider_enabled_help', 'qtype_wq'),
+                                                            '0'));
+
+if ($CFG->version >= 2012120300 && $CFG->version < 2013051400) {
+    $settingslink = 'filtersettingfilterwiris';
+} else {
+    $settingslink = 'filtersettingwiris';
 }
+$url = $CFG->wwwroot . '/admin/settings.php?section=' . $settingslink;
+$url = '<a href="' . $url . '">WIRIS filter settings</a>';
+$settings->add(new admin_setting_heading('filter_wirisfilterheading', $url, ''));

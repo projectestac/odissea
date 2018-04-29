@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Шаблоны для еще {no} вариантов';
 $string['answer'] = 'Ответ';
+$string['blank'] = 'пусто';
 $string['correctansweris'] = 'Верный ответ: {$a}';
 $string['infinite'] = 'несколько';
 $string['pleaseputananswerineachbox'] = 'Пожалуйста, введите ответ в каждое поле';

@@ -30,6 +30,7 @@ $string['application/msword'] = 'documento Word';
 $string['application/pdf'] = 'documento PDF';
 $string['application/vnd.moodle.backup'] = 'Backup Moodle';
 $string['application/vnd.ms-excel'] = 'foglio di calcolo Excel';
+$string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'Workbook Excel 2007 con macro abilitate';
 $string['application/vnd.ms-powerpoint'] = 'presentazione Powerpoint';
 $string['application/vnd.oasis.opendocument.spreadsheet'] = 'Foglio elettronico OpenDocument';
 $string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Modello di foglio elettronico OpenDocument';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['autoactivedescription'] = 'Wählen Sie, ob eine automatische Sicherung durchgeführt werden soll. Falls Sie "Manuell" auswählen, sind automatische Sicherungen nur noch über das CLI-Script "automated backups" möglich. Dieses CLI-Script kann manuell oder über einen Cronjob gestartet werden.';
+$string['autoactivedescription'] = 'Wählen Sie, ob eine automatische Sicherung durchgeführt werden soll. Falls Sie die Option \'Manuell\' auswählen, sind automatische Sicherungen nur noch über das CLI-Script \'automated backups\' möglich. Dieses CLI-Script kann manuell in der Befehlszeile oder über einen Cronjob gestartet werden.';
 $string['autoactivedisabled'] = 'Deaktiviert';
 $string['autoactiveenabled'] = 'Aktiviert';
 $string['autoactivemanual'] = 'Manuell';
@@ -140,7 +140,7 @@ $string['generalanonymize'] = 'Informationen anonymisieren';
 $string['generalbackdefaults'] = 'Allgemeines';
 $string['generalbadges'] = 'Auszeichnungen einbeziehen';
 $string['generalblocks'] = 'Blöcke einbeziehen';
-$string['generalcalendarevents'] = 'Kalendereinträge einbeziehen';
+$string['generalcalendarevents'] = 'Kalender einbeziehen';
 $string['generalcomments'] = 'Kommentare einbeziehen';
 $string['generalcompetencies'] = 'Kompetenzen einbeziehen';
 $string['generalfilters'] = 'Filter einbeziehen';
@@ -207,7 +207,7 @@ $string['restoreexecutionsuccess'] = 'Der Kurs wurde erfolgreich wiederhergestel
 $string['restorefileweremissing'] = 'Einige Dateien konnten nicht wiederhergestellt werden. Sie fehlten im Backup.';
 $string['restorenewcoursefullname'] = 'Neuer Kursname';
 $string['restorenewcourseshortname'] = 'Kurzer Kursname des neuen Kurses';
-$string['restorenewcoursestartdate'] = 'Neuer Starttermin';
+$string['restorenewcoursestartdate'] = 'Neuer Kursbeginn';
 $string['restorerolemappings'] = 'Wiederherstellen Rollenzuordnungen';
 $string['restorerootsettings'] = 'Einstellungen wiederherstellen';
 $string['restoresection'] = 'Abschnitt wiederherstellen';

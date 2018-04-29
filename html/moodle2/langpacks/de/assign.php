@@ -43,7 +43,7 @@ $string['allowsubmissionsfromdate_help'] = 'Wenn diese Option aktiviert ist, kö
 $string['allowsubmissionsfromdatesummary'] = 'Abgabe möglich ab <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Abgabeänderung erlauben';
 $string['alwaysshowdescription'] = 'Beschreibung immer anzeigen';
-$string['alwaysshowdescription_help'] = 'Wenn diese Option deaktiviert ist, wird die Aufgabenbeschreibung für Teilnehmer/innen nur während des Abgabezeitraums angezeigt.';
+$string['alwaysshowdescription_help'] = 'Wenn diese Option deaktiviert ist, wird die Aufgabenbeschreibung für Teilnehmer/innen nur ab dem Abgabebeginn angezeigt.';
 $string['applytoteam'] = 'Bewertungen und Feedback der gesamten Gruppe zuweisen.';
 $string['assign:addinstance'] = 'Aufgabe hinzufügen';
 $string['assign:editothersubmission'] = 'Weitere Teilnehmerlösung bearbeiten';
@@ -56,9 +56,25 @@ $string['assign:manageallocations'] = 'Bewerter/innen verwalten, die dieser Abga
 $string['assign:managegrades'] = 'Bewertungen überprüfen und veröffentlichen';
 $string['assign:manageoverrides'] = 'Verfügbarkeitsänderungen für Aufgaben verwalten';
 $string['assignmentisdue'] = 'Das Abgabeende ist vorbei';
-$string['assignmentmail'] = '{$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für  \'{$a->assignment}\' bereitgestellt. Mit dem folgenden Link können Sie direkt darauf zugreifen: {$a->url}';
-$string['assignmentmailhtml'] = '<p>{$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für \'<i>{$a->assignment}</i>\' bereitgestellt.</p> <p>Mit dem folgenden Link können Sie direkt darauf zugreifen: <a href="{$a->url}">Link zu Ihrer Lösung und zum Feedback</a>.</p>';
-$string['assignmentmailsmall'] = '{$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für  \'{$a->assignment}\' bereitgestellt. Mit dem folgenden Link können Sie direkt darauf zugreifen: {$a->url}';
+$string['assignmentmail'] = 'Guten Tag,
+
+{$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für  \'{$a->assignment}\' bereitgestellt.
+
+Mit dem folgenden Link können Sie direkt darauf zugreifen:
+
+{$a->url}
+
+Ihr E-Learning-Team';
+$string['assignmentmailhtml'] = 'Guten Tag,
+
+<p>{$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für \'<i>{$a->assignment}</i>\' bereitgestellt.</p> <p>Mit dem folgenden Link können Sie direkt darauf zugreifen: <a href="{$a->url}">Link zu Ihrer Lösung und zum Feedback</a>.</p>
+
+Ihr E-Learning-Team';
+$string['assignmentmailsmall'] = 'Guten Tag,
+
+{$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für  \'{$a->assignment}\' bereitgestellt. Mit dem folgenden Link können Sie direkt darauf zugreifen: {$a->url}
+
+Ihr E-Learning-Team';
 $string['assignmentname'] = 'Name der Aufgabe';
 $string['assignmentplugins'] = 'Aufgabentypen';
 $string['assignmentsperpage'] = 'Aufgaben pro Seite';
@@ -136,8 +152,8 @@ $string['deleteallsubmissions'] = 'Alle Abgaben löschen';
 $string['description'] = 'Beschreibung';
 $string['disabled'] = 'Deaktiviert';
 $string['downloadall'] = 'Alle Abgaben herunterladen';
-$string['downloadasfolders'] = 'Als separate Ordner runterladen';
-$string['downloadasfolders_help'] = 'Wenn mehr als eine Datei als Lösung abgegeben wurde, werden diese in getrennte Ordner zum Download gelegt. Bei Aktivierung werden die heruntergeladenen Dateien in separate Ordnern platziert und Dateien werden nicht umbenannt.';
+$string['downloadasfolders'] = 'Abgaben in Verzeichnissen herunterladen';
+$string['downloadasfolders_help'] = 'Bei Aktivierung werden die heruntergeladenen Dateien in separate Ordnern platziert und Dateien werden nicht umbenannt.';
 $string['downloadselectedsubmissions'] = 'Ausgewählte Abgaben herunterladen';
 $string['duedate'] = 'Fälligkeitsdatum';
 $string['duedatecolon'] = 'Fälligkeitsdatum: {$a}';
@@ -206,6 +222,9 @@ $string['filternone'] = 'Kein Filter';
 $string['filternotsubmitted'] = 'Nicht abgegeben';
 $string['filterrequiregrading'] = 'Bewertung notwendig';
 $string['filtersubmitted'] = 'Abgegeben';
+$string['fixrescalednullgrades'] = 'Die Aufgabe enthält fehlerhafte Bewertungen. Sie können die <a href="{$a-> link} ">Bewertungen automatisch beheben</a>. Die Kurssummen könnten dabei beeinflusst werden.';
+$string['fixrescalednullgradesconfirm'] = 'Möchten Sie die fehlerhaften Bewertungen automatisch beheben lassen? Alle betroffenen Bewertungen werden entfernt. Die Kurssummen könnten beeinflusst werden.';
+$string['fixrescalednullgradesdone'] = 'Bewertungen korrigiert';
 $string['gradeabovemaximum'] = 'Bewertung muss kleiner oder gleich {$a} sein.';
 $string['gradebelowzero'] = 'Bewertung muss größer oder gleich Null sein.';
 $string['gradecanbechanged'] = 'Bewertung kann geändert werden';
@@ -305,7 +324,7 @@ $string['nofiles'] = 'Keine Dateien.';
 $string['nofilters'] = 'Keine Filter';
 $string['nograde'] = 'Keine Bewertung.';
 $string['nolatesubmissions'] = 'Spätere Abgaben sind nicht zugelassen.';
-$string['nomoresubmissionsaccepted'] = 'Weitere Abgaben sind nur zugelassen wenn der Abgabezeitraum verlängert wurde.';
+$string['nomoresubmissionsaccepted'] = 'Weitere Abgaben sind nur zugelassen, wenn der Abgabezeitraum verlängert wurde.';
 $string['none'] = 'Kein';
 $string['noonlinesubmissions'] = 'Diese Aufgabe benötigt keine Online-Abgabe';
 $string['noopen'] = 'Kein Startdatum';

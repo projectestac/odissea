@@ -26,7 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cancellabel'] = 'Ακύρωση';
+$string['download'] = 'Λήψη';
+$string['filenotfoundonserver'] = 'Αδυναμία εύρεσης αρχείου στο διακομιστή. Ελέγξτε τις ρυθμίσεις μεταφόρτωσης αρχείου.';
 $string['filenotimage'] = 'Το αρχείο δεν είναι εικόνα.';
+$string['librarylistactions'] = 'Ενέργειες';
 $string['librarylisttitle'] = 'Τίτλος';
+$string['pd'] = 'Δημόσιος Τομέας';
 $string['search'] = 'Αναζήτηση';
+$string['showless'] = 'Εμφάνιση λιγότερων';
+$string['showmore'] = 'Εμφάνιση περισσότερων';
 $string['title'] = 'Τίτλος';

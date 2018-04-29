@@ -86,7 +86,7 @@ A Sondagem pode ser utilizada:
 * Como uma pergunta rápida para estimular o pensamento sobre um tópico, testando assim rapidamente a compreensão dos alunos;
 * Para facilitar a tomada de decisões, por exemplo, permitindo que os alunos votem em algo.';
 $string['modulename_link'] = 'mod/choice/view';
-$string['modulenameplural'] = 'Opções de resposta';
+$string['modulenameplural'] = 'Sondagens';
 $string['moveselectedusersto'] = 'Mover os utilizadores selecionados para...';
 $string['multiplenotallowederror'] = 'Múltiplas respostas não são permitidas nesta sondagem';
 $string['mustchooseone'] = 'Deve selecionar uma opção de resposta antes de gravar.';
@@ -100,7 +100,7 @@ $string['numberofuserinpercentage'] = 'Percentagem de respostas';
 $string['option'] = 'Opção de resposta';
 $string['optionno'] = 'Opção {no}';
 $string['options'] = 'Opções';
-$string['page-mod-choice-x'] = 'Qualquer página da sondagem';
+$string['page-mod-choice-x'] = 'Qualquer página da atividade sondagem';
 $string['pluginadministration'] = 'Administração da Sondagem';
 $string['pluginname'] = 'Sondagem';
 $string['previewonly'] = 'Esta é apenas uma pré-visualização das opções disponíveis para esta atividade. Não poderá submeter a sua escolha até {$a}.';

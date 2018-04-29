@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comment'] = 'Σχόλιο';
+$string['export'] = 'Εξαγωγή';
 $string['lastrunof'] = 'Σύνοψη τελευταίας εκτέλεσης {$a}';
 $string['summaryof'] = 'Σύνοψη {$a}';

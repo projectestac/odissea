@@ -198,6 +198,7 @@ $string['enrolledstudents'] = 'Étudiants inscrits';
 $string['error_field'] = 'Champ non autorisé';
 $string['error_operator'] = 'Opérateur non autorisé';
 $string['error_value_expected_integer'] = 'Valeur entière prévue';
+$string['excludedeletedusers'] = 'Exclure les utilisateurs supprimés (uniquement pour les rapports SQL)';
 $string['executeat'] = 'Exécuter à';
 $string['executeatinfo'] = 'Le Cron Moodle lancera les requêtes SQL planifiées après l\'heure sélectionnée. Une fois par 24h.';
 $string['export_csv'] = 'Exporter au format CSV';

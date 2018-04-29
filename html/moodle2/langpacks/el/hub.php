@@ -36,6 +36,7 @@ $string['language'] = 'Γλώσσα';
 $string['name'] = 'Όνομα';
 $string['next'] = 'Επόμενο';
 $string['none'] = 'Κανένα';
+$string['operation'] = 'Ενέργειες';
 $string['postaladdress'] = 'Ταχυδρομική διεύθυνση';
 $string['postaladdress_help'] = 'Ταχυδρομική διεύθυνση αυτού του ιστοχώρου, ή της οντότητας που αντιπροσωπεύεται από αυτόν τον ιστοχώρο.';
 $string['privacy'] = 'Ιδιωτικότητα';

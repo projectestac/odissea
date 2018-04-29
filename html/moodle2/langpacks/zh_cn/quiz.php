@@ -387,6 +387,8 @@ $string['grademethod_help'] = '当允许学生多次参加测验，提交了多�
 * 最后一次答题（其它次都被忽略）';
 $string['gradesdeleted'] = '测验成绩已删除';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}';
+$string['gradetopassmustbeset'] = '通过分数不能为零，因为这个测验的完成方法要求及格。请设置一个非零值。';
+$string['gradetopassnotset'] = '这个测验没有分数通过设置，所以你不能使用这个选项。请使用要求的等级设置。';
 $string['gradingdetails'] = '这次提交的分数：{$a->raw}/{$a->max}。';
 $string['gradingdetailsadjustment'] = '扣除先前的罚分，此次得分 <strong>{$a->cur}/{$a->max}</strong>。';
 $string['gradingdetailspenalty'] = '此次提交被罚 {$a} 分';

@@ -31,6 +31,7 @@ $string['blue'] = 'Μπλέ';
 $string['cannotopenpdf'] = 'Δεν μπορεί να ανοιχτεί το PDF. Το αρχείο μπορεί να είναι κατεστραμμένο ή μη υποστηριζόμενο τύπος αρχείου.';
 $string['clear'] = 'Καθαρισμός';
 $string['colourpicker'] = 'Επιλογέας χρώματος';
+$string['command'] = 'Εντολή:';
 $string['comment'] = 'Σχόλια';
 $string['commentcolour'] = 'Χρώμα σχολίου';
 $string['couldnotsavepage'] = 'Δεν μπόρεσε να αποθηκευτεί η σελίδα {$a}';

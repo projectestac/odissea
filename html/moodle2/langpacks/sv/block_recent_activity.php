@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Senaste aktivitet';
+$string['recent_activity:addinstance'] = 'Lägg till blocket Senaste aktivitet';
+$string['recent_activity:viewaddupdatemodule'] = 'Visa nya och uppdaterade moduler i blocket Senaste aktivitet';
+$string['recent_activity:viewdeletemodule'] = 'Visa borttagna moduler i blocket Senaste aktivitet';

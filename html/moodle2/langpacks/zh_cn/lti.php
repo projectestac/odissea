@@ -46,8 +46,10 @@ $string['basicltiname'] = '活动名称';
 $string['basiclti_parameters'] = 'LTI 启动参数';
 $string['cannot_delete'] = '您不能删除这个工具的配置。';
 $string['cannot_edit'] = '您不能编辑这个工具的配置。';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">点击继续</a>';
 $string['comment'] = '评论';
 $string['configpassword'] = '默认的远程工具密码';
+$string['configresourceurl'] = '默认的资源URL';
 $string['configtypes'] = '激活 LTI 应用';
 $string['courseid'] = '课程编号';
 $string['coursemisconf'] = '课程配置错误';
@@ -56,6 +58,8 @@ $string['createdon'] = '创建于';
 $string['curllibrarymissing'] = '要使用 LTI 必须安装 PHP Curl 库';
 $string['custom'] = '定制参数';
 $string['custom_config'] = '使用定制的工具配置。';
+$string['custom_help'] = '自定义参数是工具提供者使用的设置。例如，可以使用自定义参数来显示来自提供者的特定资源。每个参数都应该使用“name=value”的格式在单独的行中输入;例如,“章= 3”。除非由工具提供者指导，否则保持该字段不变是安全的。';
+$string['custominstr'] = '自定义参数';
 $string['debuglaunch'] = '调试选项';
 $string['debuglaunchoff'] = '以普通模式启动';
 $string['debuglaunchon'] = '以调试模式启动';
@@ -138,6 +142,14 @@ $string['misconfiguredtools'] = '检测到错误配置的工具实例';
 $string['missingparameterserror'] = '页面配置错误：“{$a}”';
 $string['module_class_type'] = 'Moodle 模块类型';
 $string['modulename'] = '外部工具';
+$string['modulename_help'] = '外部工具活动模块使学生能够与其他网站上的学习资源和活动进行交互。
+例如，一个外部工具可以提供来自发布者的新活动类型或学习材料的访问权。
+要创建一个外部工具活动，需要一个支持LTI(学习工具互操作性)的工具提供程序。
+教师可以创建一个外部工具活动，或者使用由站点管理员配置的工具。
+外部工具活动不同于URL资源的几方面:
+* 外部工具是上下文意识，即它们可获得启动该工具的用户的信息,例如机构,课程和姓名
+* 外部工具支持阅读、更新，和删除与活动实例相关的成绩
+* 外部工具配置创建一个你的网站和工具提供者之间的信任关系,允许它们之间的安全通信';
 $string['modulenameplural'] = '基本 lti';
 $string['modulenamepluralformatted'] = 'LTI 实例';
 $string['never'] = '从不';
@@ -202,6 +214,8 @@ $string['secure_launch_url'] = '安全开始 URL';
 $string['send'] = '发送';
 $string['setupoptions'] = '设置选项';
 $string['share_email_admin'] = '使用工具分享启动者的名字';
+$string['share_email_admin_help'] = '指定启动该工具的用户的电子邮件地址是否将与工具提供程序共享。工具提供者可能需要启动器的电子邮件地址来区分用户在UI中的相同名称，或者根据工具中的操作向用户发送电子邮件。';
+$string['share_email_help'] = '指定启动该工具的用户的电子邮件地址是否将与工具提供程序共享。工具提供者可能需要启动器的电子邮件地址来区分具有相同名称的用户，或者根据工具中的操作向用户发送电子邮件。注意，这个设置可能会在工具配置中被覆盖。';
 $string['share_name'] = '使用此工具分享启动者的名字';
 $string['share_name_admin'] = '使用工具分享启动者的名字';
 $string['submissions'] = '提交';

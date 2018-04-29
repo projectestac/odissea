@@ -59,7 +59,7 @@ $string['mailsettings'] = 'メール設定';
 $string['message_handlers'] = 'メッセージハンドラ';
 $string['messageinbound'] = 'インバウンドメッセージ';
 $string['messageinboundenabled'] = '受信メール処理を有効にする';
-$string['messageinboundenabled_desc'] = '適切な情報をメッセージ送信するためには、受信メール処理を有効にする必要があります。';
+$string['messageinboundenabled_desc'] = '適切な情報をメッセージ送信するためには受信メール処理を有効にする必要があります。';
 $string['messageinboundgeneralconfiguration'] = '一般設定';
 $string['messageinboundgeneralconfiguration_desc'] = '受信メッセージ処理ではあなたがMoodle内でメールを受信および処理することができます。これはフォーラム投稿に返信するために、またはユーザプライベートファイルにファイルを追加するためにメールを送信する用途に使用することができます。';
 $string['messageinboundhost'] = '受信メールサーバ';
@@ -87,7 +87,7 @@ $string['messageprocessingsuccess'] = '{$a->plain} さん
 $string['messageprocessingsuccesshtml'] = '{$a->html} さん
 
 <p>将来的にこれらの通知を受信したくない場合、<a href="{$a->messagepreferencesurl}">あなたのパーソナルメッセージングプリファレンスを編集</a>することができます。</p>';
-$string['messageprovider:invalidrecipienthandler'] = 'あなたから受信した受信メッセージのメッセージ確認';
+$string['messageprovider:invalidrecipienthandler'] = 'あなたから受信メッセージが到着したことを確認するメッセージ';
 $string['messageprovider:messageprocessingerror'] = '受信メッセージを処理できなかった場合の警告';
 $string['messageprovider:messageprocessingsuccess'] = 'メッセージが正常に送信された場合の確認';
 $string['name'] = '名称';

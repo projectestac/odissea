@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Partecipante {$a}';
+$string['blindmarkingviewfullname'] = 'Partecipante {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Abilitato per default';
 $string['default_help'] = 'Il metodo di consegna sarà abilitato per default in tutte le nuove istanze di compito.';
 $string['enabled'] = 'Commenti alla consegna';

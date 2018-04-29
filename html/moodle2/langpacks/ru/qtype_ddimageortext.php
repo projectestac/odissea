@@ -29,6 +29,7 @@ $string['addmoredropzones'] = 'Добавить зоны - {no}';
 $string['addmoreimages'] = 'Добавить перетаскиваемые элементы -  {no}';
 $string['answer'] = 'Ответ';
 $string['bgimage'] = 'Фоновое изображения';
+$string['blank'] = 'пусто';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
 $string['draggableimage'] = 'Перетаскиваемое изображение';
 $string['draggableitem'] = 'Перетаскиваемый элемент';

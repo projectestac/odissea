@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Χειροκίνητη κατανομή';
+$string['showallparticipants'] = 'Εμφάνιση όλων των συμμετεχόντων';

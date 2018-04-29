@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcohort'] = 'Adicionar novo grupo global';
+$string['addcohort'] = 'Adicionar novo Grupo global';
 $string['allcohorts'] = 'Todos os Grupos globais';
 $string['anycohort'] = 'Qualquer';
 $string['assign'] = 'Atribuir membros';
@@ -71,7 +71,7 @@ $string['nocomponent'] = 'Criado manualmente';
 $string['potusers'] = 'Utilizadores potenciais';
 $string['potusersmatching'] = 'Utilizadores potenciais para correspondência';
 $string['preview'] = 'Pré-visualização';
-$string['removeuserwarning'] = 'Remover utilizadores dos Grupos globais significa desinscreve-los de várias disciplinas, o que faz com que estes percam as suas configurações, notas, grupos e outras informações nessas disciplinas.';
+$string['removeuserwarning'] = 'Remover utilizadores dos Grupos globais significa desinscrevê-los de várias disciplinas, o que faz com que estes percam as suas configurações, notas, grupos e outras informações nessas disciplinas.';
 $string['search'] = 'Procurar';
 $string['searchcohort'] = 'Procurar Grupos globais';
 $string['selectfromcohort'] = 'Selecionar utilizadores do grupo global';

@@ -29,6 +29,7 @@ $string['addtodock'] = 'Minimizar en la barra lateral';
 $string['anypagematchingtheabove'] = 'Cualquier página coincidente con la de arriba';
 $string['appearsinsubcontexts'] = 'Aparece en subcontextos';
 $string['assignrolesinblock'] = 'Asignar roles en el bloque {$a}';
+$string['blocksdrawertoggle'] = 'Ocultar / mostrar caja de bloques';
 $string['blocksettings'] = 'Ajustes de bloque';
 $string['bracketfirst'] = '{$a} (primero)';
 $string['bracketlast'] = '{$a} (último)';

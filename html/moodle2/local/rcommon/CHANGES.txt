@@ -1,6 +1,12 @@
 ﻿Changes in progress
 -------------------------------------------
 
+Versió 2017101000 - ITTERIA (@svallde2)
+-------------------------------------------
+ - Fix the use of global variables without global keyword in the scope.
+ - fix: COMPILE_ERROR: break in local/rcommon/add_user_credential.php #25
+
+
 Versió 2015061500 0.2.7
 -------------------------------------------
  - Requirements of Moodle 2.7 or greater

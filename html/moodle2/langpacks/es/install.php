@@ -35,7 +35,7 @@ $string['admindirsettingsub'] = 'Muy pocos servidores web usan /admin como URL e
     de las páginas de administración de Moodle. Usted puede corregir esto renombrando el directorio admin
     en su instalación, y poniendo aquí ese nuevo nombre. Por ejemplo: <br /> <br /><b>moodleadmin</b><br /> <br />
     Así se corregirán los enlaces admin en Moodle.';
-$string['availablelangs'] = 'Packs de idiomas disponibles';
+$string['availablelangs'] = 'Paquetes de idiomas disponibles';
 $string['caution'] = 'Precaución';
 $string['chooselanguage'] = 'Seleccionar idioma';
 $string['chooselanguagehead'] = 'Seleccionar idioma';

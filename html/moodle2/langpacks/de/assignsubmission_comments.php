@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Teilnehmer/in {$a}';
+$string['blindmarkingviewfullname'] = 'Teilnehmer/in {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Standardmäßig aktiviert';
 $string['default_help'] = 'Die gewählte Methode für die Abgabe von Lösungen wird für alle neuen Aufgaben voreingestellt.';
 $string['enabled'] = 'Kommentare zur Lösung';

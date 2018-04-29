@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Verfügbare Logdaten';
-$string['configlogplugins'] = 'Aktivieren Sie alle notwendigen Plugins und wählen Sie dann eine geeignete Reihenfolge.';
+$string['configlogplugins'] = 'Aktivieren Sie die notwendigen Plugins und wählen Sie anschließend die bevorzugte Reihenfolge.';
 $string['logging'] = 'Logdaten';
 $string['managelogging'] = 'Logdaten verwalten';
 $string['pluginname'] = 'Logdatenverwalter';

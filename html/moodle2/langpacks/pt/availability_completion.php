@@ -25,20 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Requer que o aluno complete (ou não) outra atividade.';
+$string['description'] = 'Requer que o aluno conclua (ou não conclua) outra atividade.';
 $string['error_selectcmid'] = 'Tem de selecionar uma atividade para a condição de conclusão.';
+$string['error_selectcmidpassfail'] = 'Deve selecionar uma atividade configurada com condição de conclusão "Requer nota"';
 $string['label_cm'] = 'Atividade ou recurso';
 $string['label_completion'] = 'Estado de conclusão requerido';
 $string['missing'] = '(Atividade em falta)';
-$string['option_complete'] = 'deve estar concluída';
-$string['option_fail'] = 'deve estar concluída com nota de reprovação';
-$string['option_incomplete'] = 'não deve estar concluída';
-$string['option_pass'] = 'deve estar concluída com nota de aprovação';
+$string['option_complete'] = 'deve estar concluído(a)';
+$string['option_fail'] = 'deve estar concluído(a) com nota de reprovação';
+$string['option_incomplete'] = 'não deve estar concluído(a)';
+$string['option_pass'] = 'deve estar concluído(a) com nota de aprovação';
 $string['pluginname'] = 'Restrição por conclusão de atividade';
-$string['requires_complete'] = 'Deve aceder e/ou concluir a atividade <strong>{$a}</strong>.';
-$string['requires_complete_fail'] = 'A atividade <strong>{$a}</strong> está completa e sem aproveitamento';
-$string['requires_complete_pass'] = 'A atividade <strong>{$a}</strong> deve estar concluída com nota de aprovação.';
-$string['requires_incomplete'] = 'A atividade <strong>{$a}</strong> está incompleta';
-$string['requires_not_complete_fail'] = 'A atividade <strong>{$a}</strong> está incompleta e sem aproveitamento';
-$string['requires_not_complete_pass'] = 'A atividade <strong>{$a}</strong> está incompleta e com aproveitamento';
+$string['requires_complete'] = 'A atividade <strong>{$a}</strong> está concluída.';
+$string['requires_complete_fail'] = 'A atividade <strong>{$a}</strong> foi concluída sem nota de aprovação';
+$string['requires_complete_pass'] = 'A atividade <strong>{$a}</strong> foi concluída com nota de aprovação';
+$string['requires_incomplete'] = 'A atividade <strong>{$a}</strong> não foi concluída';
+$string['requires_not_complete_fail'] = 'A atividade <strong>{$a}</strong> não foi concluída e não tem nota de aprovação';
+$string['requires_not_complete_pass'] = 'A atividade <strong>{$a}</strong> não foi concluída e tem nota de aprovação';
 $string['title'] = 'Concluir atividade';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configjabberhost'] = 'Dieser Server soll verwendet werden, um Jabber-Mitteilungen zu versenden';
+$string['configjabberhost'] = 'Server für den Versand von Jabber-Mitteilungen';
 $string['configjabberpassword'] = 'Das Kennwort ist für die Verbindung zum Jabber-Server notwendig.';
 $string['configjabberport'] = 'Über diesen Port wird die Verbindung zum Jabber-Server aufgebaut.';
 $string['configjabberserver'] = 'XMPP-Host-ID (leer, wenn dies der gleiche Server wie der Jabber-Server ist)';

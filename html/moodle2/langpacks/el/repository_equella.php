@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['group'] = 'Ρυθμίσεις ρόλων {$a}';
 $string['restrictionitemsonly'] = 'Σύνοψη αντικειμένων μόνο';

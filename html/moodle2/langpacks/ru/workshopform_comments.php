@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Добавить еще критерии - {$a}';
 $string['dimensioncomment'] = 'Комментарий';
+$string['dimensioncommentfor'] = 'Комментарий к {$a}';
 $string['dimensiondescription'] = 'Описание';
 $string['dimensionnumber'] = 'Критерий {$a}';
 $string['pluginname'] = 'Комментарии';

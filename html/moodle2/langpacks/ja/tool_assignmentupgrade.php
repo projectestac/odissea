@@ -38,7 +38,7 @@ $string['confirmbatchupgrade'] = '課題のバッチアップグレードの確�
 $string['conversioncomplete'] = '課題がコンバートされました。';
 $string['conversionfailed'] = '課題が正常にコンバートされました。アップグレードログは次のとおりです: <br />{$a}';
 $string['listnotupgraded'] = 'アップグレードされなかった課題一覧';
-$string['listnotupgraded_desc'] = 'あなたはここで個々の課題をアップグレードすることができます。';
+$string['listnotupgraded_desc'] = 'あなたはここで個別の課題をアップグレードすることができます。';
 $string['noassignmentsselected'] = '選択された課題はありません。';
 $string['noassignmentstoupgrade'] = 'アップグレードが必要な課題はありません。';
 $string['notsupported'] = '';
@@ -53,7 +53,7 @@ $string['updatetable'] = 'テーブルを更新する';
 $string['upgradable'] = 'アップグレード可';
 $string['upgradeall'] = 'すべての課題をアップグレードする';
 $string['upgradeallconfirm'] = 'すべてをアップグレードしてもよろしいですか?';
-$string['upgradeassignmentfailed'] = '結果: アップグレードに失敗しました。アップグレードログ: <br/><div class="tool_assignmentupgrade_upgradelog">{$a->log}</div>';
+$string['upgradeassignmentfailed'] = '結果: アップグレードに失敗しました。アップグレードログ: <br /><div class="tool_assignmentupgrade_upgradelog">{$a->log}</div>';
 $string['upgradeassignmentsuccess'] = '結果: アップグレード成功';
 $string['upgradeassignmentsummary'] = '課題をアップグレードする: {$a->name} (コース: {$a->shortname})';
 $string['upgradeprogress'] = '課題をアップグレードする {$a->current} / {$a->total}';

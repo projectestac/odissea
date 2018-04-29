@@ -99,6 +99,6 @@ $string['test_unoconvok'] = 'Het unoconv pad is juist geconfigureerd.';
 $string['test_unoconvversionnotsupported'] = 'De unoconv versie die je hebt geïnstalleerd wordt niet ondersteund. De beoordelingsfunctie vereist versie 0.7 of hoger.';
 $string['tool'] = 'Gereedschap';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
-$string['viewfeedbackonline'] = 'Bekijk een geannoteerde pdf...';
+$string['viewfeedbackonline'] = 'Bekijk verbeterde opdracht...';
 $string['white'] = 'Wit';
 $string['yellow'] = 'Geel';

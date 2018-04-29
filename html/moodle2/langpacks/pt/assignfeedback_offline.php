@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confirmimport'] = 'Confirmar a importação de notas';
 $string['default'] = 'Ativo por predefinição';
-$string['default_help'] = 'Se ativar esta opção, a avaliação por carregamento de ficheiro será configurada como ativa, por predefinição, para todos os novos trabalhos.';
+$string['default_help'] = 'Se ativar esta opção, a avaliação offline por carregamento de ficheiro será permitida, por predefinição, para todos os novos trabalhos.';
 $string['downloadgrades'] = 'Descarregar ficheiro de avaliação';
 $string['enabled'] = 'Ficheiro de avaliação';
 $string['enabled_help'] = 'Se ativar esta opção, o professor poderá descarregar e carregar ficheiro com as notas dos alunos quando estiver a avaliar os trabalhos.';

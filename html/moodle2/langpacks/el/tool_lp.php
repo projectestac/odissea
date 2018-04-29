@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actions'] = 'Ενέργειες';
 $string['activities'] = 'Δραστηριότητες';
 $string['addcohorts'] = 'Προσθήκη ομάδας χρηστών';
 $string['addcohortstosync'] = 'Προσθήκη ομάδων χρηστών για συγχρονισμό';
@@ -53,6 +54,9 @@ $string['taxonomy_add_outcome'] = 'Προσθήκη αποτελέσματος';
 $string['taxonomy_add_practice'] = 'Προσθήκη πρακτικής';
 $string['taxonomy_add_proficiency'] = 'Προσθήκη επάρκειας';
 $string['taxonomy_add_skill'] = 'Προσθήκη ικανότητας';
+$string['taxonomy_edit_domain'] = 'Επεξεργασία τομέα';
+$string['taxonomy_parent_domain'] = 'Γονικός τομέας';
+$string['taxonomy_selected_domain'] = 'Επιλεγμένος τομέας';
 $string['templatecohortnotsyncedwhileduedateispassed'] = 'Οι ομάδες χρηστών δεν θα συγχρονιστούν, αν έχει περάσει η ημερομηνία λήξης του προτύπου.';
 $string['templatecohortnotsyncedwhilehidden'] = 'Οι ομάδες χρηστών δεν θα συγχρονιστούν όσο το πρότυπο είναι κρυμμένο.';
 $string['uponcoursemodulecompletion'] = 'Με την ολοκλήρωση δραστηριότητας:';

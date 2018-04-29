@@ -19,14 +19,14 @@
  * Completion Progress block version details
  *
  * @package    block_completion_progress
- * @copyright  2016 Michael de Raadt
+ * @copyright  2018 Michael de Raadt
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2016090500;
-$plugin->requires  = 2014051200; // Moodle 2.7.
+$plugin->version   = 2018021000;
+$plugin->requires  = 2014111100; // Moodle 2.8.
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = 'Version for Moodle 2.7 onwards';
+$plugin->release   = 'Version for Moodle 2.8 onwards';
 $plugin->component = 'block_completion_progress';

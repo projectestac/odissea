@@ -36,7 +36,7 @@ $string['assesswosubmission'] = 'I partecipanti possono valutare senza aver cons
 $string['confignumofreviews'] = 'Numero di consegne di default da distribuire casualmente';
 $string['excludesamegroup'] = 'Evita revisioni da parte di partecipanti appartenenti allo stesso gruppo';
 $string['noallocationtoadd'] = 'Non ci sono distribuzioni da aggiungere';
-$string['nogroupusers'] = '<p>Attenzione: si il workshop è in modalità \'gruppi visibili\' o \' gruppi separati\', gli utenti per ricevere l\'assegnazione una valutazione tra pari devono appartenere almeno ad un gruppo. Gli utenti che non appartengono a nessun  gruppo possono ricevere nuove auto valuatzioni oppure vedere rimosse le valuatzioni assegnate.</p>
+$string['nogroupusers'] = '<p>Attenzione: si il workshop è in modalità \'gruppi visibili\' o \' gruppi separati\', gli utenti per vedersi assegnata una valutazione tra pari devono appartenere almeno ad un gruppo. Gli utenti che non appartengono a nessun  gruppo possono ricevere nuove auto valutazioni oppure vedere rimosse le valutazioni assegnate.</p>
 <p>Di seguito l\'elenco degli utenti che non appartengono a nessun gruppo: {$a}</p>';
 $string['numofdeallocatedassessment'] = 'Eliminazione della distribuzione di {$a} valutazioni';
 $string['numofrandomlyallocatedsubmissions'] = 'Distribuzione casuale di {$a} consegne';

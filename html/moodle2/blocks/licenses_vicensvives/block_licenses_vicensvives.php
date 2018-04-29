@@ -47,7 +47,7 @@ class block_licenses_vicensvives extends block_base {
                 try {
                     $licenses = vicensvives_count_licenses($idbook);
                 } catch (vicensvives_ws_error $e) {
-                    $this->content->text = html_writer::tag('div', $e->getMessage(), array('class' => 'error alert alert-error'));
+                    $this->content->text = html_writer::tag('div', $e->getMessage(), array('class' => 'error alert alert-danger'));
                     return $this->context;
                 }
                 if (isset($licenses[$idbook])) {

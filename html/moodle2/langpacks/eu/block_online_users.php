@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Noiztik aurrera (minututan) ulertu behar da erabiltzaile bat offline dagoela?';
-$string['online_users:addinstance'] = 'Gehitu beste online erabiltzaileak bloke bat';
-$string['online_users:myaddinstance'] = 'Gehitu online erabiltzaileak bloke berria aginte-panelean';
-$string['online_users:viewlist'] = 'Ikusi online erabiltzaileen zerrenda';
+$string['online_users:addinstance'] = 'Gehitu beste on-line erabiltzaileak bloke bat';
+$string['online_users:myaddinstance'] = 'Gehitu on-line erabiltzaileak bloke berria aginte-panelean';
+$string['online_users:viewlist'] = 'Ikusi on-line erabiltzaileen zerrenda';
 $string['periodnminutes'] = 'azken {$a} minutuetan';
-$string['pluginname'] = 'Online erabiltzaileak';
+$string['pluginname'] = 'On-line erabiltzaileak';
 $string['timetosee'] = 'Jardunik ez badago (minututan) ezabatu';

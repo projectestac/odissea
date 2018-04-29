@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Filtyper som accepteras';
 $string['configmaxbytes'] = 'Maximal filstorlek';
 $string['countfiles'] = '{$a} filer';
 $string['default'] = 'Aktiverad som förval';
@@ -33,11 +34,13 @@ $string['enabled'] = 'Filinlämningar';
 $string['enabled_help'] = 'Om aktiverad, kan studenter ladda upp en eller flera filer som sin inlämningsuppgift';
 $string['eventassessableuploaded'] = 'En fil har laddats upp.';
 $string['file'] = 'Filinlämningar';
+$string['filesofthesetypes'] = 'Dessa filtyper kan bifogas i inlämningsuppgiften';
 $string['maxbytes'] = 'Maximal filstorlek';
 $string['maxfilessubmission'] = 'Maximalt antal uppladdade filer';
 $string['maxfilessubmission_help'] = 'Om uppladdning av filer är aktiverad, kommer varje student att kunna ladda upp till definierad antal filer för inlämnande';
 $string['maximumsubmissionsize'] = 'Maximal inlämningsstorlek';
 $string['maximumsubmissionsize_help'] = 'Filer som laddas upp av studenter kan vara upp till denna storlek';
+$string['nonexistentfiletypes'] = 'Dessa filtyper kändes inte igen: {$a}';
 $string['numfilesforlog'] = 'Antalet fil (er): {$a} fil (er).';
 $string['pluginname'] = 'Filinlämningar';
 $string['siteuploadlimit'] = 'Webbplatsens uppladningsbegränsning';

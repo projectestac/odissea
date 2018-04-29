@@ -25,12 +25,41 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['choosereadme'] = '<div class="clearfix">
+<div class="well">
+<h2>Clean</h2>
+<p><img class=img-polaroid src="clean/pix/screenshot.jpg" /></p>
+</div>
+<div class="well">
+<h3>Honi buruz</h3>
+<p>Clean bere goragoko itxuratik estiloak eta render-ak heredatzen dituen Moodle-ko bootstrap itxura moldatu bat da.</p>
+<h3>Goragoko itxurak</h3>
+<p>Itxura hau Bootstrap itxuran oinarrituta dago, Moodle 2.5-erako sortu zena, hurrengoen laguntzarekin:<br>
+Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>
+<h3>Itxuraren kredituak</h3>
+<p>Egileak: Bas Brands, David Scotson, Mary Evans<br>
+Kontaktua: bas@sonsbeekmedia.nl<br>
+Webgunea: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
+</p>
+<h3>Arazo baten berri eman:</h3>
+<p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
+<h3>Informazio gehiago</h3>
+<p><a href="clean/README.txt">Nola kopiatu eta pertsonalizatu itxura hau.</a></p>
+</div></div>';
 $string['configtitle'] = 'Clean';
 $string['customcss'] = 'Pertsonalizatu CSSa';
+$string['customcssdesc'] = 'Testu-eremu honetan gehitzen duzun edozein CSS arau orri guztietan islatuko da, itxura honen pertsonalizazioa errazte aldera.';
 $string['footnote'] = 'Orripekoaren oharra';
+$string['footnotedesc'] = 'Testu-eremu honetan gehitzen duzuna zure Moodle gune osoan zeharreko orri-oinetan erakutsiko da.';
+$string['invert'] = 'Nabigazio-barra alderantzikatu';
+$string['invertdesc'] = 'Orriaren goikaldeko nabigazio-barraren testua eta atzekaldea txuri eta beltzaren artean trukatzen ditu.';
 $string['logo'] = 'Logoa';
+$string['logodesc'] = 'Logoa soilik hasiera-orriaren eta sarbide-orriaren goikaldean erakusten da.<br /> Zure logoaren altuera 75px baino gehiagokoa bada gehitu div.logo {height: 100px;} behekaldeko CSS pertsonalizatuaren eremuan, altuera 100px ez den kasuak konpontzeko. Hemen logo bat gehitzen ez bada, Itxura > Logoak atalekoa erabiliko da.';
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Eskuina';
 $string['region-side-pre'] = 'Ezkerra';
 $string['sitelogo'] = 'Gunearen logoa';
+$string['sitename'] = 'Erakutsi gunearen izena logo txikiarekin batera';
+$string['sitenamedesc'] = 'Logo txikirik ez badago, nabigazio-barran gunearen izena beti erakutsiko da. Logo txikia badago, berau gunearen izenarekin edo bakarrik erakutsi daiteke.';
 $string['smalllogo'] = 'Logo txikia';
+$string['smalllogodesc'] = 'Logo txikia nabigazio-barran erakusten da. Hasiera-orrirako eta sarbide-orrirako goiburuko logoa badago, logo txikia ez da orri horietan erakutsiko. Hemen logorik zehazten ez bada, Itxura > Logoak ataleko logo txikia erakutsiko da.';

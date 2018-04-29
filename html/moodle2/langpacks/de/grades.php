@@ -94,13 +94,16 @@ $string['aggregationcoefweight'] = 'Gewichtung der Aspekte';
 $string['aggregationcoefweight_help'] = '<h2>Gewichtung des Wertes</h2>
 <p>Gewichtung der Bewertungen dieser Aktivität bei der Berechnung der Teil- oder Gesamtnote.
 </p>';
-$string['aggregation_help'] = 'Die Aggregation legt fest, wie die Bewertungen innerhalb einer Kategorie zusammengerechnet werden.
+$string['aggregation_help'] = 'Diese Einstellung legt fest, wie die einzelnen Bewertungsaspekte der Kategorie zusammengefasst werden.
 
-* Durchschnitt: Die Summe aller Werte wird durch die Anzahl der Werte geteilt.
-* Mittelwert (Median): Wenn die Werte in aufsteigender Reihe aufgelistet werden, wird der mittlere Wert benutzt.
-* Niedrigster Wert
-* Höchster Wert
-* Häufigster Wert: Der Wert, der am häufigsten vorkommt (wird oft bei Bewertungen ohne Zahlen verwandt)
+* Durchschnittsbewertung: Arithmetische Mittel der Quotienten aus erreichter Punktezahl und Maximalpunktzahl.
+* Gewichteter Durchschnittswert: Jeder Bewertungsaspekt wird mit einer Gewichtung versehen.
+* Einfach gewichteter Durchschnittswert: Bewertungsaspekt mit hoher Maximalpunktzahl haben eine hohe Gewichtung.
+* Durchschnittsbewertung (mit Zusatzpunkten): Wird nicht mehr unterstützt; sollte nicht verwendet werden.
+* Median aller Bewertungen: Wenn die Werte in aufsteigender Reihe aufgelistet werden, wird der mittlere Wert benutzt.
+* Niedrigste Bewertung
+* Höchste Bewertung
+* Modus (Modalwert) aller Bewertungen: Der Wert, der am häufigsten vorkommt (Wird oft bei Bewertungen ohne Zahlen verwandt.)
 * Natürlich: Die Punktwerte der einzelnen Bewertungen werden addiert.';
 $string['aggregationhintdropped'] = '(Unberücksichtigt)';
 $string['aggregationhintexcluded'] = '(Unberücksichtigt)';
@@ -269,7 +272,7 @@ $string['forelementtypes'] = 'für die ausgewählten {$a}';
 $string['forstudents'] = 'Für Teilnehmer/innen';
 $string['full'] = 'Vollständig';
 $string['fullmode'] = 'Zur vollständigen Ansicht wechseln';
-$string['generalsettings'] = 'Grundeinstellungen';
+$string['generalsettings'] = 'Allgemeines';
 $string['grade'] = 'Bewertung';
 $string['gradeadministration'] = 'Bewertungsverwaltung';
 $string['gradealreadyupdated'] = '{$a} Bewertungen wurden nicht imprtiert, da diese Bewertungen älter waren als die im Bewertungsebereich vorhandenen. Um den Import dennoch fortzuführen verwenden Sie die \'Import erzwingen\'-Funktion.';
@@ -634,7 +637,7 @@ $string['pointsdescending'] = 'sortieren, Punkte absteigend';
 $string['positionfirst'] = 'Erste';
 $string['positionlast'] = 'Letzte';
 $string['preferences'] = 'Grundeinstellungen';
-$string['prefgeneral'] = 'Allgemein';
+$string['prefgeneral'] = 'Allgemeines';
 $string['prefletters'] = 'Notenstufen und -grenzen';
 $string['prefrows'] = 'Spezielle Zeilen';
 $string['prefshow'] = 'Schalter zeigen/verbergen';

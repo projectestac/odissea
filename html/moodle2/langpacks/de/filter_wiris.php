@@ -25,5 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessproviderenabled'] = 'Zugriffskontrolle';
+$string['accessproviderenabled_help'] = 'Diese Option legt fest, dass ausschließlich authentifizierte Nutzer/innen auf WIRIS-Services zugreifen können.';
+$string['alloweditorpluginactive'] = 'WIRIS-Editor immer aktiv';
+$string['alloweditorpluginactive_help'] = 'Das WIRIS-Plugin ist immer aktiviert, unabhängig davon, ob der WIRIS-Filter auf Kurs- oder Aktivitätsebene deaktiviert ist. Standardmäßig ist auch der WIRIS-Editor deaktiviert und nicht verfügbar, wenn der WIRIS-Filter in einem Kurs oder einer Aktivität abgeschaltet ist.';
+$string['area'] = 'Bereich';
+$string['arenotinstalled'] = 'sind nicht installiert.';
+$string['atto'] = 'Atto';
+$string['button1'] = 'WIRIS-Plugin für Tests';
+$string['button2'] = 'WIRIS-Quiz-Tests';
+$string['cachedef_formulas'] = 'WIRIS-Plugin-Formeln';
+$string['cachedef_images'] = 'WIRIS-Plugin-Bilder';
+$string['clearcache'] = 'Cache leeren';
+$string['error'] = 'Fehler';
+$string['errordeletingcache'] = 'Fehler beim Leeren des Caches im Bereich {$a}';
+$string['errorsavingcache'] = 'Fehler beim Sichern des Caches im Bereich {$a}';
 $string['filtername'] = 'WIRIS Filter - Maths';
 $string['pluginname'] = 'WIRIS Filter - Maths';

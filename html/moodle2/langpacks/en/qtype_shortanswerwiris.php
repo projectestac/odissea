@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addingshortanswerwiris'] = 'Adding a short answer - math & science question by WIRIS';
 $string['contentnotviewable'] = 'The content can not be displayed.';
 $string['editingshortanswerwiris'] = 'Editing a short answer - math & science question by WIRIS';
+$string['failedtogradetest'] = 'Failed to grade (testing-{$a})!';
 $string['filloutoneanswer'] = 'You must provide at least one possible answer. The first matching answer will be used to determine the score and feedback. Click the icon next to the answer field to edit the mathematical properties of the answer and the question.';
 $string['pluginname'] = 'Short answer - science';
 $string['pluginnameadding'] = 'Adding a short answer - math & science question by WIRIS';

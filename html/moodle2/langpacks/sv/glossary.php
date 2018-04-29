@@ -310,6 +310,7 @@ $string['onebyline'] = '(en per rad)';
 $string['pluginadministration'] = 'Administration av ord- och begreppslista';
 $string['pluginname'] = 'Ord- och begreppslista';
 $string['popupformat'] = 'Popup-format';
+$string['print'] = 'Skriv ut';
 $string['printerfriendly'] = 'Utskriftsvänlig version';
 $string['printviewnotallowed'] = 'Visning av utskrift är inte tillåten.';
 $string['question'] = 'Fråga';

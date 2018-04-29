@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['asap'] = 'ASAP';
 $string['blocking'] = 'Blocage';
 $string['component'] = 'Composant';
-$string['corecomponent'] = 'Cœur';
+$string['corecomponent'] = 'Cœur';
 $string['default'] = 'Défaut';
 $string['disabled'] = 'Désactivé';
 $string['disabled_help'] = 'Les tâches programmées désactivées ne sont pas lancées par le cron, mais peuvent cependant être lancées manuellement via l\'outil CLI.';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actions'] = 'Ενέργειες';
 $string['cachedef_completion'] = 'Κατάσταση ολοκλήρωσης δραστηριότητας';
 $string['cachedef_suspended_userids'] = 'Λίστα χρηστών σε αναστολή ανά μάθημα';
 $string['none'] = 'Κανένα';
+$string['purge'] = 'Εκκαθάριση';

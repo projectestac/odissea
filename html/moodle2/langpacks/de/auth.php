@@ -44,8 +44,8 @@ $string['auth_fieldlocks'] = 'Nutzerdatenfelder sperren';
 $string['auth_fieldlocks_help'] = '<p>Sie können Datenfelder im Nutzerprofil sperren. Dies ist sinnvoll, wenn die Nutzerdaten von Administratoren gepflegt werden, manuell angelegt oder im Bulkupload (Hochladen über Textdatei) hochgeladen werden. Falls Sie von Moodle benötigte Datenfelder sperren, müssen Sie sicher stellen, dass diese Datenfelder beim Anlegen der Nutzerprofile sinnvoll belegt werden.</p><p>Um Probleme zu vermeiden, achten Sie darauf, dass die Einstellung auf "Bearbeitbar (wenn leer)" gesetzt ist.</p>';
 $string['authinstructions'] = 'Wenn dieses Textfeld leer ist, wird auf der Anmeldeseite der Standardtext angezeigt. Falls Sie eine eigene Anleitung anbieten möchten, welche Anmeldenamen und Kennwörter verwendet werden sollen, schreiben Sie hier Ihren Text.';
 $string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Bitte kopieren Sie die URL noch einmal und versuchen es erneut.';
-$string['authloginviaemail'] = 'Anmeldung über E-Mail erlauben';
-$string['authloginviaemail_desc'] = 'Nutzer/innen erlauben, sich mit dem Anmeldenamen oder der E-Mail-Adresse anzumelden, falls die E-Mail-Adresse eindeutig ist.';
+$string['authloginviaemail'] = 'Anmeldung mit E-Mail erlauben';
+$string['authloginviaemail_desc'] = 'Nutzer/innen erlauben, sich mit dem Anmeldenamen oder mit der E-Mail-Adresse anzumelden, falls die E-Mail-Adresse eindeutig ist.';
 $string['auth_multiplehosts'] = 'Mehrere Adressen können angegeben werden (z.B. host1.com;host2.de;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Die Authentifizierung ‘{$a}\' ist nicht konfiguriert.';
 $string['auth_outofnewemailupdateattempts'] = 'Sie haben die zulässige Zahl von Versuchen überschritten, Ihre E-Mail-Adresse zu ändern. Der Änderungsvorgang wurde abgebrochen.';
@@ -56,7 +56,7 @@ $string['auth_remove_keep'] = 'Nur intern zugänglich';
 $string['auth_remove_suspend'] = 'Intern sperren';
 $string['auth_remove_user'] = 'Legen Sie fest, was mit einem internen Nutzerprofil passieren soll, wenn bei einer Massensynchronisierung dieser Account im externen System entfernt wurde.  Nur gesperrte Nutzer werden automatisch reaktiviert, wenn sie in der externen Quelle wieder erscheinen.';
 $string['auth_remove_user_key'] = 'Entfernte externe Nutzer';
-$string['auth_sync_script'] = 'Synchronisierung der Nutzerkonten';
+$string['auth_sync_script'] = 'Synchronisierung von Nutzerkonten';
 $string['auth_sync_suspended'] = 'Die Option legt fest, dass das Ausblendemerkmal bei der Synchronisation von lokalen Nutzerkonten verwendet wird.';
 $string['auth_sync_suspended_key'] = 'Status von lokalen Nutzerkonten synchronisieren';
 $string['auth_updatelocal'] = 'Lokal aktualisieren';
@@ -78,13 +78,15 @@ $string['emailchangecancel'] = 'E-Mail-Änderung abbrechen';
 $string['emailchangepending'] = 'Die Änderung ist noch nicht abgeschlossen. Öffnen Sie den zugesandten Link in {$a->preference_newemail}';
 $string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil eintragen möchten, wird bereits von jemand anders verwendet. Der Änderungsvorgang wird abgebrochen, aber Sie können die Eingabe einer weiteren Adresse versuchen.';
 $string['emailupdate'] = 'Änderung der E-Mail-Adresse';
-$string['emailupdatemessage'] = 'Hallo {$a->fullname},
+$string['emailupdatemessage'] = 'Guten Tag {$a->fullname},
 
 Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto auf {$a->site} ändern. Bitte öffnen Sie die folgende URL in Ihrem Browser, um die Änderung zu bestätigen.
 
 Wenn Sie Fragen haben, kontaktieren Sie den Support: {$a->supportemail}
 
-{$a->url}';
+{$a->url}
+
+Ihr E-Learning-Team';
 $string['emailupdatesuccess'] = 'Die E-Mail-Adresse von <em>{$a->fullname}</em> wurde erfolgreich aktualisiert: <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Bestätigung der E-Mail-Änderung bei {$a->site}';
 $string['enterthenumbersyouhear'] = 'Geben Sie die gehörten Zahlen ein';
@@ -95,7 +97,7 @@ $string['errorminpasswordlength'] = 'Kennwörter müssen mindestens {$a} Zeichen
 $string['errorminpasswordlower'] = 'Kennwörter müssen mindestens {$a} Kleinbuchstaben enthalten.';
 $string['errorminpasswordnonalphanum'] = 'Kennwörter müssen mindestens {$a} Sonderzeichen enthalten, z.B. *, -, oder #.';
 $string['errorminpasswordupper'] = 'Kennwörter müssen mindestens {$a} Großbuchstaben enthalten.';
-$string['errorpasswordreused'] = 'Dieses Kennwort wurde bereits benutzt und kann nicht wiederverwendet werden.';
+$string['errorpasswordreused'] = 'Dieses Kennwort wurde bereits benutzt und kann nicht erneut verwendet werden.';
 $string['errorpasswordupdate'] = 'Fehler: Kennwort konnte nicht geändert werden!';
 $string['eventuserloggedin'] = 'Nutzer/in ist angemeldet';
 $string['eventuserloggedinas'] = 'Nutzer/in ist als andere Person angemeldet';
@@ -108,8 +110,8 @@ $string['forgottenpasswordurl'] = 'URL für vergessene Kennwörter';
 $string['getanaudiocaptcha'] = 'Audio-Captcha laden';
 $string['getanimagecaptcha'] = 'Bild-Captcha laden';
 $string['getanothercaptcha'] = 'Neues Captcha laden';
-$string['guestloginbutton'] = 'Taste für Gast-Login';
-$string['incorrectpleasetryagain'] = 'Leider falsch! Bitte probieren Sie es nochmal.';
+$string['guestloginbutton'] = 'Login für Gäste';
+$string['incorrectpleasetryagain'] = 'Leider falsch! Probieren Sie es nochmal.';
 $string['infilefield'] = 'Erforderliches Feld in Datei';
 $string['informminpassworddigits'] = '{$a} Ziffer(n)';
 $string['informminpasswordlength'] = 'mindestens {$a} Zeichen';
@@ -134,7 +136,7 @@ $string['passwordhandling'] = 'Nutzung des Kennwortfeldes';
 $string['plaintext'] = 'Unformatierter Text';
 $string['pluginnotenabled'] = 'Authentifizierungsplugin \'{$a}\' ist nicht aktiviert.';
 $string['pluginnotinstalled'] = 'Authentifizierungsplugin \'{$a}\' ist nicht installiert.';
-$string['potentialidps'] = 'Nutzen Sie Ihre Anmeldung auf:';
+$string['potentialidps'] = 'Verwenden Sie Ihr Nutzerkonto bei:';
 $string['recaptcha'] = 'ReCaptcha';
 $string['recaptcha_help'] = 'Das Captcha versucht Missbrauch durch automatisierte Programme zu verhindern. Tragen Sie die Wörter in das Eingabefeld ein, und zwar in der richtigen Reihenfolge und getrennt durch ein Leerzeichen.
 
@@ -143,13 +145,13 @@ $string['security_question'] = 'Sicherheitsfrage';
 $string['selfregistration'] = 'Selbstregistrierung';
 $string['selfregistration_help'] = 'Wenn die Selbstregistrierung (z.B. \'E-Mail basiert\') aktiviert ist, können sich alle Personen selbst registrieren und ein Nutzerkonto anlegen. Auf diese Weise könnten aber auch Spammer ein Nutzerkonto erhalten und Einträge in Foren, Blogs oder Profilen  missbrauchen. Um dieses Risiko zu vermeiden, können Sie die Selbstregistrierung ausschalten oder auf bestimmte E-Mail-Domains (z.B. meinefirma.de) beschränken.';
 $string['sha1'] = 'SHA-1 hash';
-$string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zum Gast-Login anzeigen oder verbergen. Wenn die Taste verborgen ist, wird ein Gast-Login für die Website untersagt.';
+$string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zum Gast-Login anzeigen oder verbergen. Wenn die Taste verborgen ist, ist ein Gast-Login für die Website nicht erlaubt.';
 $string['stdchangepassword'] = 'Standardseite zur Kennwortänderung nutzen';
 $string['stdchangepassword_expl'] = 'Stellen Sie \'Ja\' ein, wenn das externe Authentifizierungssystem eine Änderung des Kennwortes durch Moodle zulässt. Die Einstellungen überschreiben \'URL zur Kennwortänderung\'';
 $string['stdchangepassword_explldap'] = 'Warnung: LDAP sollte unbedingt SSL-verschlüsselt sein (ldaps://), wenn der LDAP-Server extern betrieben wird.';
 $string['suspended'] = 'Gesperrtes Nutzerkonto';
 $string['suspended_help'] = 'Gesperrte Nutzer/innen können sich nicht einloggen und auch keine Webservices benutzen. Alle ausgehenden Mitteilungen werden gelöscht.';
-$string['testsettings'] = 'Testeinstellungen';
+$string['testsettings'] = 'Einstellungen prüfen';
 $string['testsettingsheading'] = 'Authentifizierungseinstellungen prüfen - {$a}';
 $string['unlocked'] = 'Bearbeitbar';
 $string['unlockedifempty'] = 'Bearbeitbar (wenn leer)';

@@ -33,3 +33,4 @@ $string['modulename'] = 'Φάκελος';
 $string['modulenameplural'] = 'Φάκελοι';
 $string['pluginname'] = 'Φάκελος';
 $string['search:activity'] = 'Φάκελος';
+$string['showexpanded_help'] = 'Αν οριστεί σε \'ναι\', οι υποφακέλοι εμφανίζονται ανεπτυγμένοι από προεπιλογή. Διαφορετικά εμφανίζονται συμπτυγμένοι.';

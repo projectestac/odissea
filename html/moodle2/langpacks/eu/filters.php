@@ -76,6 +76,7 @@ $string['off'] = 'Itzalita';
 $string['offbutavailable'] = 'Itzalita, baina eskuragarri';
 $string['on'] = 'Piztuta';
 $string['profilefilterfield'] = 'Profil-eremuaren izena';
+$string['profilefilterlimiter'] = 'Profil-eremuko operadorea';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Ezabatu iragazki guztiak';

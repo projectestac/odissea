@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'Tipus de fitxers acceptats';
+$string['acceptedfiletypes_help'] = 'Els tipus de fitxers acceptats es poden restringir introduint una llista de mimetypes separats per punt i coma, p. ex.: «video/mp4; audio/mp3; image/png; image/jpeg». Fins i tot podeu limitar les extensions incloent un punt; p. ex., «.png; .jpg». Si el camp es deixa buit, es permeten tot tipus de fitxers.';
 $string['configmaxbytes'] = 'Mida màxima del fitxer';
 $string['countfiles'] = '{$a} fitxers';
 $string['default'] = 'Habilitat per defecte';
@@ -32,7 +34,9 @@ $string['default_help'] = 'Si està actiu, aquest mètode de tramesa s\'habilita
 $string['enabled'] = 'Fitxers de la tramesa';
 $string['enabled_help'] = 'Si està habilitat, l\'estudiantat podrà carregar un o més fitxers com a tramesa.';
 $string['eventassessableuploaded'] = 'S\'ha pujat un fitxer.';
-$string['file'] = 'Fitxers de la tramesa';
+$string['file'] = 'Tramesa de fitxers';
+$string['filesofthesetypes'] = 'Es poden afegir a la tramesa fitxers d\'aquests tipus:';
+$string['filetypewithexts'] = '{$a->name} &mdash; {$a->extlist}';
 $string['maxbytes'] = 'Mida màxima del fitxer';
 $string['maxfiles'] = 'Nombre màxim de fitxers per tramesa';
 $string['maxfiles_help'] = 'Si la tramesa de fitxers està habilitada, cada tasca es pot configurar per acceptar fins aquest nombre de fitxers en cada tramesa.';
@@ -40,6 +44,7 @@ $string['maxfilessubmission'] = 'Quantitat màxima de fitxers carregats';
 $string['maxfilessubmission_help'] = 'Si els fitxers de la tramesa estan habilitats, cada estudiant podrà carregar aquesta quantitat de fitxers en la seva tramesa.';
 $string['maximumsubmissionsize'] = 'Mida màxima de cada fitxer de la tramesa';
 $string['maximumsubmissionsize_help'] = 'Els fitxers carregats per l\'estudiantat poden ser de fins a aquesta mida.';
+$string['nonexistentfiletypes'] = 'No s\'han reconegut els tipus de fitxer següents: {$a}';
 $string['numfilesforlog'] = 'El nombre de fitxers: {$a} fitxers.';
 $string['pluginname'] = 'Fitxers de la tramesa';
 $string['siteuploadlimit'] = 'Límit de càrrega del servidor';

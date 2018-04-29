@@ -55,6 +55,10 @@ define('FIRSTUSEDEXCELROW', 3);
 define('MOD_CLASS_ACTIVITY', 0);
 define('MOD_CLASS_RESOURCE', 1);
 
+define('COURSE_TIMELINE_PAST', 'past');
+define('COURSE_TIMELINE_INPROGRESS', 'inprogress');
+define('COURSE_TIMELINE_FUTURE', 'future');
+
 function make_log_url($module, $url) {
     switch ($module) {
         case 'course':
@@ -1160,8 +1164,10 @@ function course_delete_module($cmid, $async = false) {
 
     // Delete events from calendar.
     if ($events = $DB->get_records('event', array('instance' => $cm->instance, 'modulename' => $modulename))) {
+        $coursecontext = context_course::instance($cm->course);
         foreach($events as $event) {
-            $calendarevent = calendar_event::load($event->id);
+            $event->context = $coursecontext;
+            $calendarevent = calendar_event::load($event);
             $calendarevent->delete();
         }
     }
@@ -3330,15 +3336,23 @@ function duplicate_module($course, $cm) {
         }
     }
 
+    $rc->destroy();
+
+    if (empty($CFG->keeptempdirectoriesonbackup)) {
+        fulldelete($backupbasepath);
+    }
+
     // If we know the cmid of the new course module, let us move it
     // right below the original one. otherwise it will stay at the
     // end of the section.
     if ($newcmid) {
-        $info = get_fast_modinfo($course);
-        $newcm = $info->get_cm($newcmid);
         $section = $DB->get_record('course_sections', array('id' => $cm->section, 'course' => $cm->course));
-        moveto_module($newcm, $section, $cm);
-        moveto_module($cm, $section, $newcm);
+        $modarray = explode(",", trim($section->sequence));
+        $cmindex = array_search($cm->id, $modarray);
+        if ($cmindex !== false && $cmindex < count($modarray) - 1) {
+            $newcm = get_coursemodule_from_id($cm->modname, $newcmid, $cm->course);
+            moveto_module($newcm, $section, $modarray[$cmindex + 1]);
+        }
 
         // Update calendar events with the duplicated module.
         $refresheventsfunction = $newcm->modname . '_refresh_events';
@@ -3347,15 +3361,9 @@ function duplicate_module($course, $cm) {
         }
 
         // Trigger course module created event. We can trigger the event only if we know the newcmid.
+        $newcm = get_fast_modinfo($cm->course)->get_cm($newcmid);
         $event = \core\event\course_module_created::create_from_cm($newcm);
         $event->trigger();
-    }
-    rebuild_course_cache($cm->course);
-
-    $rc->destroy();
-
-    if (empty($CFG->keeptempdirectoriesonbackup)) {
-        fulldelete($backupbasepath);
     }
 
     return isset($newcm) ? $newcm : null;
@@ -3925,6 +3933,46 @@ function course_check_updates($course, $tocheck, $filter = array()) {
         }
     }
     return array($instances, $warnings);
+}
+
+/**
+ * This function classifies a course as past, in progress or future.
+ *
+ * This function may incur a DB hit to calculate course completion.
+ * @param stdClass $course Course record
+ * @param stdClass $user User record (optional - defaults to $USER).
+ * @param completion_info $completioninfo Completion record for the user (optional - will be fetched if required).
+ * @return string (one of COURSE_TIMELINE_FUTURE, COURSE_TIMELINE_INPROGRESS or COURSE_TIMELINE_PAST)
+ */
+function course_classify_for_timeline($course, $user = null, $completioninfo = null) {
+    global $USER;
+
+    if ($user == null) {
+        $user = $USER;
+    }
+
+    $today = time();
+    // End date past.
+    if (!empty($course->enddate) && $course->enddate < $today) {
+        return COURSE_TIMELINE_PAST;
+    }
+
+    if ($completioninfo == null) {
+        $completioninfo = new completion_info($course);
+    }
+
+    // Course was completed.
+    if ($completioninfo->is_enabled() && $completioninfo->is_course_complete($user->id)) {
+        return COURSE_TIMELINE_PAST;
+    }
+
+    // Start date not reached.
+    if (!empty($course->startdate) && $course->startdate > $today) {
+        return COURSE_TIMELINE_FUTURE;
+    }
+
+    // Everything else is in progress.
+    return COURSE_TIMELINE_INPROGRESS;
 }
 
 /**

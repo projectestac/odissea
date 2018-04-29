@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'journal', language 'en', branch 'MOODLE_32_STABLE'
  *
  * @package   journal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,6 +77,8 @@ $string['rate'] = 'Rate';
 $string['removeentries'] = 'Remove all entries';
 $string['removemessages'] = 'Remove all Journal entries';
 $string['saveallfeedback'] = 'Save all my feedback';
+$string['search:activity'] = 'Journal - activity information';
+$string['search:entry'] = 'Journal - entries';
 $string['showoverview'] = 'Show journals overview on my moodle';
 $string['showrecentactivity'] = 'Show recent activity';
 $string['startoredit'] = 'Start or edit my journal entry';

@@ -34,7 +34,7 @@ $string['deletea'] = 'Löschen {$a}';
 $string['delete_confirmation'] = 'Möchten Sie wirklich \'.{$a}\' löschen?';
 $string['deletefiletypes'] = 'Dateityp löschen';
 $string['description'] = 'Angepasste Beschreibung';
-$string['description_help'] = 'Einfache Beschreibung für den Dateityp, z.B. \'Kindle ebook\'. Falls Ihre Website mehrere Sprachen unterstützt und den Multilanguage-Filter verwendet, können Sie auch Multilanguage-Tags eingeben und die Beschreibung in verschiedenen Sprachen liefern.';
+$string['description_help'] = 'Einfache Beschreibung für den Dateityp, z.B. \'Kindle ebook\'. Falls Ihre Website mehrere Sprachen unterstützt und der Multilanguage-Filter aktiviert ist, können Sie mit Multilanguage-Tags die Beschreibung auch in verschiedenen Sprachen anbieten.';
 $string['descriptiontype'] = 'Beschreibungstyp';
 $string['descriptiontype_custom'] = 'Angepasste Beschreibung, wie in diesem Formular angegeben';
 $string['descriptiontype_default'] = 'Standard (MIME-Type oder Texteintrag, falls vorhanden)';
@@ -60,7 +60,7 @@ $string['icon_help'] = 'Icon-Dateiname
 
 Die Liste der Icons wird aus dem Verzeichnis /pix/f genommen. Sie können weitere Icons in diesem Verzeichnis hinzufügen, falls dies notwendig ist.';
 $string['mimetype'] = 'MIME-Typ';
-$string['mimetype_help'] = 'MIME-Type für diesen Dateityp, z.B. \'application/x-mobipocket-ebook\'';
+$string['mimetype_help'] = 'MIME-Type, der diesem Dateityp zugeordnet ist, z.B. \'application/x-mobipocket-ebook\'';
 $string['pluginname'] = 'Dateitypen';
 $string['revert'] = '{$a} auf Standard zurücksetzen';
 $string['revert_confirmation'] = 'Möchten Sie wirklich \'.{$a}\' auf den Standard zurücksetzen und die Änderungen verwerfen?';

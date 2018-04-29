@@ -126,7 +126,7 @@ $string['unassignroleid'] = 'ロールID「 {$a->role_id} 」をユーザID「 {
 $string['updatelocal'] = 'ローカルデータを更新する';
 $string['user_attribute'] = 'グループメンバーシップに識別名が含まれている場合、name/searchユーザに使用される属性を指定してください。あなたがLDAP認証を使用している場合、この値はLDAP認証プラグインの「IDナンバー」マッピングで指定されている属性と合致する必要があります。';
 $string['user_attribute_key'] = 'IDナンバー属性';
-$string['user_contexts'] = 'グループメンバーシップに識別名が含まれている場合、ユーザが配置されているコンテクスト一覧を指定してください。異なるコンテクストは「;」で分離します。例えば次のようになります: ou=users,o=org; ou=others,o=org';
+$string['user_contexts'] = 'グループメンバーシップに識別名が含まれている場合、ユーザが配置されているコンテクスト一覧を指定してください。異なるコンテクストはセミコロン「;」で分離します。例えば次のようになります: ou=users,o=org; ou=others,o=org';
 $string['user_contexts_key'] = 'コンテクスト';
 $string['user_search_sub'] = 'グループメンバーシップに識別名が含まれている場合、ユーザ検索時にサブコンテクストも同時に検索するかどうか指定してください。';
 $string['user_search_sub_key'] = 'サブコンテクストを検索する';

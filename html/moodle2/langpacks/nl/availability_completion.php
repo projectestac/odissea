@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Eis van leerlingen om een andere activiteit te voltooien (of niet te voltooien)';
 $string['error_selectcmid'] = 'Je moet een activiteit selecteren voor de voorwaarde "voltooien".';
+$string['error_selectcmidpassfail'] = 'Je moet een activiteit selecteren met voltooiingsconditie "Cijfer vereist" ingesteld.';
 $string['label_cm'] = 'Activiteit of bron';
 $string['label_completion'] = 'Vereiste voltooiingsstatus';
 $string['missing'] = '(Ontbrekende activiteit)';

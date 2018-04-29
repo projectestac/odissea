@@ -73,6 +73,7 @@ $string['mustchooseone'] = 'Πρέπει να επιλέξετε μία απάν
 $string['noguestchoose'] = 'Συγνώμη, οι επισκέπτες δεν μπορούν να κάνουν επιλογές';
 $string['noresultsviewable'] = 'Τα αποτελέσματα δεν είναι ορατά προς το παρόν.';
 $string['notanswered'] = 'Δεν απαντήθηκε ακόμα';
+$string['notenrolledchoose'] = 'Λυπούμαστε, αλλά μόνο εγγεγραμμένοι χρήστες επιτρέπεται να κάνουν επιλογή.';
 $string['notopenyet'] = 'Συγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
 $string['numberofuser'] = 'Αριθμός απαντήσεων';
 $string['numberofuserinpercentage'] = 'Ποσοστό απαντήσεων';

@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = '活動レポートが閲覧されました。';
 $string['eventoutlinereportviewed'] = 'アウトラインレポートが閲覧されました。';
 $string['neverseen'] = '未閲覧';
+$string['nocapability'] = 'ユーザアウトラインレポートにアクセスできません。';
 $string['nologreaderenabled'] = '有効にされているログリーダはありません。';
 $string['numviews'] = '{$a->numviews} by {$a->distinctusers} ユーザ';
 $string['outline:view'] = '活動レポートを表示する';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Foram adicionadas palavras-chave oficiais';
 $string['addedotag'] = '"{$a}" foi adicionada como palavra-chave oficial.';
-$string['addotags'] = 'Adicionar palavras-chave oficiais';
+$string['addotags'] = 'Adicionar palavras-chave';
 $string['addtagcoll'] = 'Adicionar coleção de palavras-chave';
 $string['addtagtomyinterests'] = 'Adicionar "{$a}" aos meus interesses';
 $string['alltagpages'] = 'Todas as páginas de palavras-chave';
@@ -126,7 +126,7 @@ $string['selectcoll'] = 'Selecionar coleção de palavras-chave';
 $string['selectmaintag'] = 'Selecione a palavra-chave que será utilizada depois de combinar';
 $string['selectmultipletags'] = 'Seleccione mais do que uma palavra-chave';
 $string['selecttag'] = 'Selecionar a palavra-chave {$a}';
-$string['settypedefault'] = 'Remover das palavras-chave oficiais';
+$string['settypedefault'] = 'Remover das palavras-chave';
 $string['settypeofficial'] = 'Tornar oficial';
 $string['settypestandard'] = 'Tornar palavra-chave oficial';
 $string['showingfirsttags'] = 'A mostrar as {$a} palavras-chave mais populares';

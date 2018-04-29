@@ -613,7 +613,7 @@ class mod_questionnaire_generator extends testing_module_generator {
                     $responses[] = new question_response($question->id, 83);
                     break;
                 case QUESDATE :
-                    $date = mktime(0, 0, 0, 12, 28, date('Y'));
+                    $date = mktime(0, 0, 0, 12, 28, 2017);
                     $dateformat = get_string('strfdate', 'questionnaire');
                     $datestr = userdate ($date, $dateformat, '1', false);
                     $responses[] = new question_response($question->id, $datestr);
@@ -655,23 +655,12 @@ class mod_questionnaire_generator extends testing_module_generator {
         $qdg = $this;
 
         $questiontypes = [QUESTEXT, QUESESSAY, QUESNUMERIC, QUESDATE, QUESRADIO, QUESDROP, QUESCHECK, QUESRATE];
-
-        $totalquestions = $coursecount * $questionnairecount * ($questionspertype * count($questiontypes));
-        $totalquestionresponses = $studentcount * $totalquestions;
-        mtrace($coursecount.' courses * '.$questionnairecount.' questionnaires * '.($questionspertype * count($questiontypes)).
-            ' questions = '.$totalquestions.' total questions');
-        mtrace($totalquestions.' total questions * '.$studentcount.' resondees = '.$totalquestionresponses.
-            ' total question responses');
-
-        $questionsprocessed = 0;
-
         $students = [];
         $courses = [];
-
         $questionnaires = [];
 
         for ($u = 0; $u < $studentcount; $u++) {
-            $students[] = $dg->create_user();
+            $students[] = $dg->create_user(['firstname' => 'Testy']);
         }
 
         $manplugin = enrol_get_plugin('manual');
@@ -690,8 +679,8 @@ class mod_questionnaire_generator extends testing_module_generator {
         }
 
         // Create questionnaires in each course.
+        $qname = 1000;
         for ($q = 0; $q < $questionnairecount; $q++) {
-            $coursesprocessed = 0;
             foreach ($courses as $course) {
                 $questionnaire = $qdg->create_instance(['course' => $course->id]);
                 $questionnaires[] = $questionnaire;
@@ -716,7 +705,7 @@ class mod_questionnaire_generator extends testing_module_generator {
                             $questionnaire,
                             [
                                 'survey_id' => $questionnaire->sid,
-                                'name'      => uniqid($qdg->type_name($questiontype).' '),
+                                'name'      => $qdg->type_name($questiontype).' '.$qname++,
                                 'type_id'   => $questiontype
                             ],
                             $opts
@@ -727,24 +716,16 @@ class mod_questionnaire_generator extends testing_module_generator {
                         $questionnaire,
                         [
                             'survey_id' => $questionnaire->sid,
-                            'name' => uniqid('pagebreak '),
+                            'name' => 'pagebreak '.$qname++,
                             'type_id' => QUESPAGEBREAK
                         ]
                     );
-                    $questionsprocessed++;
-                    mtrace($questionsprocessed.' questions processed out of '.$totalquestions);
                 }
 
                 // Create responses.
-                mtrace('Creating responses');
                 foreach ($students as $student) {
                     $qdg->generate_response($questionnaire, $questions, $student->id);
                 }
-                mtrace('Responses created');
-
-                $coursesprocessed++;
-                mtrace($coursesprocessed.' courses processed out of '.$coursecount);
-
             }
         }
 

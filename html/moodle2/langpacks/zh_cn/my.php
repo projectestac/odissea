@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = '添加页面';
+$string['allprofileswerereset'] = '所有个人资料页面都被重置为默认值。';
 $string['defaultpage'] = '缺省我的Moodle页面';
 $string['defaultprofilepage'] = '缺省个人资料页';
 $string['delpage'] = '删除页面';
@@ -37,4 +38,5 @@ $string['pinblocks'] = '为我的 Moodle 配置固定的版块';
 $string['pinblocksexplan'] = '您在这里设置的任何版块配置将显示（但不可编辑）在所有用户的“我的Moodle”页上';
 $string['reseterror'] = '发生错误正在重置你的页面';
 $string['reseteveryonesdashboard'] = '重置所有用户个人主页';
+$string['reseteveryonesprofile'] = '重置所有用户个人资料页';
 $string['resetpage'] = '重置页面为默认值';

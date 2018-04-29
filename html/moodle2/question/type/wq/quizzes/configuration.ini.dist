@@ -14,6 +14,11 @@
 ;quizzes.wiris.url = "http://www.wiris.net/demo/wiris"
 
 ;
+; URL where to load the WIRIS Calc.
+
+;quizzes.calc.url = "https://calcme.com"
+
+;
 ; URL where to load the WIRIS editor 3.
 
 ;quizzes.editor.url = "http://www.wiris.net/demo/editor"
@@ -92,6 +97,11 @@
 ;quizzes.hand.enabled = "true"
 
 ;
+; Enable WIRIS calc for algorithm edition
+
+;quizzes.calc.enabled = "false"
+
+;
 ; Log correct answers for WIRIS hand training.
 ;
 ;quizzes.hand.logtraces = "false"
@@ -99,4 +109,4 @@
 ;
 ; WIRIS graph URL.
 ;
-;quizzes.graph.url = ""
+;quizzes.graph.url = "http://www.wiris.net/demo/graph"

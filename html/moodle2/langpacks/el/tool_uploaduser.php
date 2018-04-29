@@ -27,11 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowdeletes'] = 'Να επιτρέπονται διαγραφές';
 $string['allowrenames'] = 'Να επιτρέπονται μετονομασίες';
+$string['allowsuspends'] = 'Να επιτρέπεται η αναστολή και η ενεργοποίηση λογαριασμών';
 $string['csvdelimiter'] = 'Διαχωριστικό CSV';
 $string['defaultvalues'] = 'Προεπιλεγμένες τιμές';
 $string['deleteerrors'] = 'Προεπιλεγμένα σφάλματα';
 $string['encoding'] = 'Κωδικοποίηση';
 $string['errors'] = 'Σφάλματα';
+$string['invalidupdatetype'] = 'Δεν είναι εφικτή αυτή η επιλογή για τον επιλεγμένο τύπο μεταφόρτωσης.';
 $string['nochanges'] = 'Καμία αλλαγή';
 $string['renameerrors'] = 'Σφάλματα στις μετονομασίες';
 $string['requiredtemplate'] = 'Απαιτείται. Μπορείτε να χρησιμοποιήσετε συντακτικό πρότυπο εδώ (%l = επίθετο, %f = όνομα, %u = όνομα χρήστη). Δείτε τη βοήθεια για λεπτομέρειες και παραδείγματα.';
@@ -165,6 +167,7 @@ $string['uuoptype_addupdate'] = 'Προσθήκη νέων και ανανέωσ
 $string['uuoptype_update'] = 'Μόνο ανανέωση υπάρχοντων χρηστών';
 $string['uupasswordnew'] = 'Νέο συνθηματικό χρήστη';
 $string['uupasswordold'] = 'Υπάρχον συνθηματικό χρήστη';
+$string['uustandardusernames'] = 'Τυποποίηση ονομάτων χρήστη';
 $string['uuupdateall'] = 'Υπερίσχυση με αρχείο και προεπιλογές';
 $string['uuupdatefromfile'] = 'Υπερίσχυση με αρχείο';
 $string['uuupdatemissing'] = 'Συμπλήρωση κενών από αρχείο και προεπιλογές';

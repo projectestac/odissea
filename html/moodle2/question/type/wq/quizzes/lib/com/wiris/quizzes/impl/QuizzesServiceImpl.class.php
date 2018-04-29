@@ -52,9 +52,14 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 				$http = new com_wiris_quizzes_impl_HttpImpl($url, $httpl);
 			} else {
 				$http = new com_wiris_quizzes_impl_MaxConnectionsHttpImpl($url, $httpl);
+				$referrer = $config->get(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL);
+				if($referrer === null || trim($referrer) === "") {
+					com_wiris_system_Logger::log(900, "'quizzes.referer.url' configuration item is not set so requests to the " . "service can not be identified. Unidentified requests may be blocked by the server " . "and will certainly be blocked in future releases." . "\x0A" . "Setup the referrer editing your configuration.ini file or setting it programatically " . "through the Configuration interface." . "\x0A");
+				} else {
+					$http->setHeader("Referer", $referrer);
+				}
 			}
 			$http->setHeader("Content-Type", "text/xml; charset=UTF-8");
-			$http->setHeader("Referer", $config->get(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL));
 			$http->setPostData($postData);
 		}
 		$http->setAsync($async);

@@ -52,9 +52,9 @@ $string['endswith'] = '次の文字で終わる';
 $string['filterallwarning'] = 'ヘッディングおよびコンテンツにフィルタを適用する場合、あなたのサーバに対する負荷を極めて増大させます。「適用先」設定は控えめに使ってください。主な使用は多言語コンテンツフィルタです。';
 $string['filtersettings'] = 'フィルタ設定';
 $string['filtersettingsforin'] = '{$a->context} の {$a->filter} に関するフィルタ設定';
-$string['filtersettings_help'] = 'このページでは、あなたはサイトの特定部分においてフィルタを有効または無効にすることができます。
+$string['filtersettings_help'] = 'このページではあなたはサイトの特定部分においてフィルタを有効または無効にすることができます。
 
-いくつかのフィルタにおいて、あなたはローカル設定を設定することができます。この場合、フィルタ名の次に「設定」リンクが表示されます。';
+いくつかのフィルタにおいてあなたはローカル設定を設定することができます。この場合、フィルタ名の次に「設定」リンクが表示されます。';
 $string['filtersettingsin'] = '{$a} のフィルタ設定';
 $string['firstaccess'] = '初回アクセス';
 $string['globalrolelabel'] = '{$a->label} が {$a->value}';

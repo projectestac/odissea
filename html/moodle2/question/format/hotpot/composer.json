@@ -1,0 +1,10 @@
+{
+    "name": "gbateson/moodle-qformat_hotpot",
+    "type": "moodle-qformat",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "hotpot"
+    }
+}

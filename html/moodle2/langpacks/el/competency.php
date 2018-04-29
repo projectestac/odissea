@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['syncplanscohorts'] = 'Συγχρονισμός πλάνων από ομάδες χρηστών προτύπου εκπαιδευτικού πλάνου';
+$string['taxonomy_domain'] = 'Τομέας';

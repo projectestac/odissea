@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'geogebra', language 'fr', branch 'MOODLE_32_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['availabledate'] = 'Disponible à partir de';
 $string['average'] = 'Moyenne';
 $string['choosescripttype'] = 'Choisissez le type de script';
 $string['comment'] = 'Commentaire';
+$string['contentheader'] = 'Contenu';
 $string['coursewithoutstudents'] = 'Cours sans étudiant';
 $string['datestudent'] = 'Dernière modification (envoi)';
 $string['dateteacher'] = 'Dernière modification (note)';
@@ -46,7 +47,10 @@ $string['duration'] = 'Durée';
 $string['enableLabelDrags'] = 'Activer le déplacement des étiquettes';
 $string['enableRightClick'] = 'Activer le clic droit';
 $string['errorattempt'] = 'Erreur : votre tentative n\'a pas pu être enregistrée.';
+$string['event_course_module_viewed'] = 'Module du cours vu';
+$string['event_instances_list_viewed'] = 'Liste des instances vues';
 $string['expired'] = 'Désolé, cette activité à été fermée le {$a} et n\'est plus disponible';
+$string['extractedfromggb'] = 'Fichiers extrait du ggb';
 $string['filename'] = 'Nom du fichier';
 $string['filenotfound'] = 'Le fichier spécifié n\'existe pas';
 $string['filetype'] = 'Type';
@@ -85,9 +89,17 @@ $string['lowestattempt'] = 'Tentative la plus basse';
 $string['manualgrade'] = 'Évaluation manuelle';
 $string['maxattempts'] = 'Nombre maximum de tentatives';
 $string['modulename'] = 'GeoGebra';
-$string['modulename_help'] = '<b>ATTENTION !!</b> <br>Version alpha du module pour Moodle 2. Le module est incomplet et certaines fonctionnalités ne marchent pas correctement.';
+$string['modulename_help'] = '<p><a href="http://www.geogebra.org" target="_blank">GeoGebra</a> est un logiciel libre et multi-plateforme de mathématiques dynamique pour tous les niveaux d\'éducation qui relie géometrie, algèbre, tableur, graphique, statistiques et calcule dans un seul paquet facile à utiliser.</p>
+<p>Par conséquent, Le <a href="http://www.gencat.cat/ensenyament/" target="_blank">Département d\'Education de Catalogne</a> en association avec <a href="http://acgeogebra.cat/" target="_blank">l\'Association Catalane de GeoGebra</a> (ACG) et l\'équipe de développement de GeoGeobra ont créé ce module qui permet l\'ajout d\'activités Geogebra dans Moodle. Les fonctionnalités principales sont :
+<ul>
+<li>Intégration facile d\'activités Geogebra dans des cours Moodle.</li>
+<li>Facilite le suivi des étudiants grâce à la sauvegardes des scores, dates, durée et construction de chaque tentative de l\'utilisateur.</li>
+<li>Les étudiants peuvent sauvegarder l\'état de l\'activité pour reprendre plus tard.</li>
+</ul>
+</p>';
 $string['modulenameplural'] = 'GeoGebra';
 $string['msg_noattempts'] = 'Vous avez utilisé toutes les tentatives autorisées';
+$string['msg_nosessions'] = 'Il n\'y a aucune session pour cette activité Géogebra';
 $string['name'] = 'Nom';
 $string['noattempts'] = '-';
 $string['nograding'] = 'Pas d\'évaluation';
@@ -95,9 +107,11 @@ $string['nomoreattempts'] = 'Plus de tentative possible pour cette activité';
 $string['notopenyet'] = 'Désolé, cette activité n\'est pas disponible avant le {$a}';
 $string['pluginadministration'] = 'Administration de GeoGebra';
 $string['pluginname'] = 'GeoGebra';
+$string['preview_geogebra'] = 'Prévisualiser l\'activité Géogebra';
 $string['previewtab'] = 'Aperçu';
 $string['redirecttocourse'] = 'L\'activité a été enregistrée. Retour à la page du cours';
 $string['report'] = 'Rapport de';
+$string['results'] = 'Résultats';
 $string['resultstab'] = 'Résultats';
 $string['resumeattempt'] = 'Revenir à la tentative non terminée';
 $string['review'] = 'Révision pour';
@@ -114,12 +128,16 @@ $string['showToolBar'] = 'Afficher la barre d\'outils';
 $string['showToolBarHelp'] = 'Afficher l\'aide de la barre d\'outils';
 $string['status'] = 'État';
 $string['submitandfinish'] = 'Envoyer et terminer';
+$string['timing'] = 'Disponibilité';
 $string['total'] = 'Total';
 $string['unfinished'] = 'Non terminé';
 $string['ungraded'] = 'Non noté';
 $string['unlimitedattempts'] = 'Nombre de tentatives illimitées pour cette activité';
 $string['urledit'] = 'Fichier GeoGebra';
 $string['urledit_help'] = 'Le fichier « .ggb » où vous trouverez l\'activité GeoGebra.';
+$string['useBrowserForJS'] = 'Utiliser Javascript depuis :';
+$string['useBrowserForJS_geogebra'] = 'Fichier GeoGebra (faux)';
+$string['useBrowserForJS_html'] = 'HTML (vrai)';
 $string['view'] = 'Voir';
 $string['viewattempt'] = 'Voir';
 $string['viewattempts'] = 'Voir les tentatives';

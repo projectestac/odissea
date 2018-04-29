@@ -25,11 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktomarkusercomplete'] = 'Sakatu hemen erabiltzailea osatutzat markatzeko';
 $string['completiondate'] = 'Osaketa-data';
 $string['completion:view'] = 'Ikastaro-osaketaren txostena ikusi';
 $string['eventreportviewed'] = 'Osaketa-txostena ikusi da';
+$string['eventuserreportviewed'] = 'Erabiltzailearen osaketa-txostena ikusi da';
 $string['id'] = 'IDa';
 $string['name'] = 'Izena';
+$string['nocapability'] = 'Ez dago sarbiderik erabiltzailearen osaketa-txostenera';
 $string['page-report-completion-index'] = 'Ikastaro-osaketaren txostena';
 $string['page-report-completion-user'] = 'Erabiltzailearen ikastaro-osaketaren txostena';
 $string['page-report-completion-x'] = 'Edozein osaketa-txosten';

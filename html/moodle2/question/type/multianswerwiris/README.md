@@ -1,4 +1,7 @@
 # WIRIS Quizzes Embedded answer (Cloze) question type
+### Master Build Status
+[![Build Status](https://travis-ci.org/wiris/moodle-qtype_multianswerwiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_multianswerwiris)
+### Development Build Status
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_multianswerwiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_multianswerwiris)
 
 The WIRIS Embedded answer (Cloze) question type extends the Moodle Embedded answer type, adding mathematical functionality to it.

@@ -98,5 +98,5 @@ $string['subdeletesuccess'] = 'Подписка удалена';
 $string['subhelp'] = 'Информация о подписке';
 $string['subhelp_help'] = 'Это подписка на уведомления о случаях, когда в модуле «{$a->moduleinstance}» событие «{$a->eventname}» происходит {$a->frequency} раз(а) за {$a->minutes} мин.';
 $string['subscribeto'] = 'Подписаться на правило «{$a}»';
-$string['taskcleanevents'] = 'Удаление неиспользуемых данных модуля отслеживания событий';
+$string['taskcleanevents'] = 'Очистить данные отслеживания событий';
 $string['unsubscribe'] = 'Отказаться от подписки';

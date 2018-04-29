@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Geavanceerd zoeken';
 $string['pluginname'] = 'Doorzoek forums';
-$string['search_forums:addinstance'] = 'Voeg een nieuw zoek in forumsblok toe';
+$string['search_forums:addinstance'] = 'Voeg een nieuw zoek-in-forumsblok toe';
