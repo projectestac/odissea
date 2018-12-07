@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'langconfig', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,8 @@ $string['strftimemonthyear'] = '%Y年 %m月';
 $string['strftimerecent'] = '%m月 %d日 %H:%M';
 $string['strftimerecentfull'] = '%Y年 %m月 %d日(%a) %H:%M';
 $string['strftimetime'] = '%H:%M';
+$string['strftimetime12'] = '%I:%M %p';
+$string['strftimetime24'] = '%H:%M';
 $string['thisdirection'] = 'ltr';
 $string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = '日本語';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_completion', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['option_fail'] = 'must be complete with fail grade';
 $string['option_incomplete'] = 'must not be marked complete';
 $string['option_pass'] = 'must be complete with pass grade';
 $string['pluginname'] = 'Restriction by activity completion';
+$string['privacy:metadata'] = 'The Restriction by activity completion plugin does not store any personal data.';
 $string['requires_complete'] = 'The activity <strong>{$a}</strong> is marked complete';
 $string['requires_complete_fail'] = 'The activity <strong>{$a}</strong> is complete and failed';
 $string['requires_complete_pass'] = 'The activity <strong>{$a}</strong> is complete and passed';

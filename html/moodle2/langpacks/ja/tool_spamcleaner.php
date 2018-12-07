@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_spamcleaner', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_spamcleaner
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'スパムクリーナー';
+$string['privacy:metadata'] = 'スパムクリーナープラグインはどのような個人データも保存しません。';
 $string['spamauto'] = '一般的なスパムパターンを自動検出する';
 $string['spamcannotdelete'] = 'このユーザを削除することはできません。';
 $string['spamcannotfinduser'] = 'あなたの検索に合致するユーザはありません。';

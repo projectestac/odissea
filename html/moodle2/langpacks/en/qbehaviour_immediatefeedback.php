@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatefeedback', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_immediatefeedback', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_immediatefeedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Not complete';
 $string['pluginname'] = 'Immediate feedback';
+$string['privacy:metadata'] = 'The Immediate feedback question behaviour plugin does not store any personal data.';

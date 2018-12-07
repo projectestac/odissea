@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_gift', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_gift
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,3 +36,4 @@ $string['importminerror'] = 'Il y a une erreur dans la question. Il n\'y a pas a
 $string['nohandler'] = 'Pas de traitement pour le type de question {$a}';
 $string['pluginname'] = 'Format Gift';
 $string['pluginname_help'] = 'Le format Gift permet l\'importation et l\'exportation de questions à choix multiple, vrai/faux, à réponses courtes, d\'appariement, mot manquant, numériques et de composition par l\'intermédiaire d\'un fichier texte.';
+$string['privacy:metadata'] = 'Le plugin de format de question Gift n\'enregistre aucune donnée personnelle.';

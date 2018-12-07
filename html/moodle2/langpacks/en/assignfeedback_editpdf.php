@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'Command:';
 $string['comment'] = 'Comments';
 $string['commentcolour'] = 'Comment colour';
 $string['commentcontextmenu'] = 'Comment context menu';
+$string['commentindex'] = 'Index of comments';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Could not save page {$a}';
 $string['currentstamp'] = 'Stamp';
 $string['deleteannotation'] = 'Delete annotation';
@@ -51,6 +53,7 @@ $string['enabled'] = 'Annotate PDF';
 $string['enabled_help'] = 'If enabled, the teacher will be able to create annotated PDF files when marking the assignments. This allows the teacher to add comments, drawing and stamps directly on top of the students work. The annotating is done in the browser and no extra software is required.';
 $string['errorgenerateimage'] = 'Error generating image with ghostscript, debugging info: {$a}';
 $string['errorpdfpage'] = 'There was an error while generating this page.';
+$string['expcolcomments'] = 'Expand/collapse all comments';
 $string['filter'] = 'Filter comments...';
 $string['generatefeedback'] = 'Generate feedback PDF';
 $string['generatingpdf'] = 'Generating the PDF...';
@@ -69,10 +72,16 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Page {$a}';
 $string['pagexofy'] = 'Page {$a->page} of {$a->total}';
 $string['pathtogspathdesc'] = 'Please note that annotate PDF requires the path to ghostscript to be set in {$a}.';
-$string['pathtounoconvpathdesc'] = 'Please note that annotate PDF requires the path to unoconv to be set in {$a}.';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annotate PDF';
 $string['preparesubmissionsforannotation'] = 'Prepare submissions for annotation';
+$string['privacy:metadata:colourpurpose'] = 'Colour of the comment or annotation';
+$string['privacy:metadata:conversionpurpose'] = 'Files are converted to PDFs to allow for annotations.';
+$string['privacy:metadata:filepurpose'] = 'Stores an annotated PDF with feedback for the user.';
+$string['privacy:metadata:rawtextpurpose'] = 'Stores raw text for the quick data.';
+$string['privacy:metadata:tablepurpose'] = 'Stores teacher specified quicklist comments';
+$string['privacy:metadata:userid'] = 'An identifier for the user.';
+$string['privacy:path'] = 'PDF Feedback';
 $string['rectangle'] = 'Rectangle';
 $string['red'] = 'Red';
 $string['result'] = 'Result:';
@@ -89,14 +98,6 @@ $string['test_isdir'] = 'The ghostscript path points to a folder, please include
 $string['test_notestfile'] = 'The test PDF is missing';
 $string['test_notexecutable'] = 'The ghostscript points to a file that is not executable';
 $string['test_ok'] = 'The ghostscript path appears to be OK - please check you can see the message in the image below';
-$string['test_unoconv'] = 'Test unoconv path';
-$string['test_unoconvdoesnotexist'] = 'The unoconv path does not point to the unoconv program. Please review your path settings.';
-$string['test_unoconvdownload'] = 'Download the converted pdf test file.';
-$string['test_unoconvisdir'] = 'The unoconv path points to a folder, please include the unoconv program in the path you specify';
-$string['test_unoconvnotestfile'] = 'The test document to be coverted into a PDF is missing';
-$string['test_unoconvnotexecutable'] = 'The unoconv path points to a file that is not executable';
-$string['test_unoconvok'] = 'The unoconv path appears to be properly configured.';
-$string['test_unoconvversionnotsupported'] = 'The version of unoconv you have installed is not supported. Moodle\'s assignment grading feature requires version 0.7 or higher.';
 $string['tool'] = 'Tool';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'View annotated PDF...';

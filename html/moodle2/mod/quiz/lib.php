@@ -65,6 +65,12 @@ define('QUIZ_NAVMETHOD_SEQ',  'sequential');
 /**#@-*/
 
 /**
+ * Event types.
+ */
+define('QUIZ_EVENT_TYPE_OPEN', 'open');
+define('QUIZ_EVENT_TYPE_CLOSE', 'close');
+
+/**
  * Given an object containing all the necessary data,
  * (defined by the form in mod_form.php) this function
  * will create a new instance and return the id number
@@ -206,9 +212,10 @@ function quiz_delete_instance($id) {
  *
  * @param object $quiz The quiz object.
  * @param int $overrideid The id of the override being deleted
+ * @param bool $log Whether to trigger logs.
  * @return bool true on success
  */
-function quiz_delete_override($quiz, $overrideid) {
+function quiz_delete_override($quiz, $overrideid, $log = true) {
     global $DB;
 
     if (!isset($quiz->cmid)) {
@@ -219,9 +226,16 @@ function quiz_delete_override($quiz, $overrideid) {
     $override = $DB->get_record('quiz_overrides', array('id' => $overrideid), '*', MUST_EXIST);
 
     // Delete the events.
-    $events = $DB->get_records('event', array('modulename' => 'quiz',
-            'instance' => $quiz->id, 'groupid' => (int)$override->groupid,
-            'userid' => (int)$override->userid));
+    if (isset($override->groupid)) {
+        // Create the search array for a group override.
+        $eventsearcharray = array('modulename' => 'quiz',
+            'instance' => $quiz->id, 'groupid' => (int)$override->groupid);
+    } else {
+        // Create the search array for a user override.
+        $eventsearcharray = array('modulename' => 'quiz',
+            'instance' => $quiz->id, 'userid' => (int)$override->userid);
+    }
+    $events = $DB->get_records('event', $eventsearcharray);
     foreach ($events as $event) {
         $eventold = calendar_event::load($event);
         $eventold->delete();
@@ -229,26 +243,28 @@ function quiz_delete_override($quiz, $overrideid) {
 
     $DB->delete_records('quiz_overrides', array('id' => $overrideid));
 
-    // Set the common parameters for one of the events we will be triggering.
-    $params = array(
-        'objectid' => $override->id,
-        'context' => context_module::instance($quiz->cmid),
-        'other' => array(
-            'quizid' => $override->quiz
-        )
-    );
-    // Determine which override deleted event to fire.
-    if (!empty($override->userid)) {
-        $params['relateduserid'] = $override->userid;
-        $event = \mod_quiz\event\user_override_deleted::create($params);
-    } else {
-        $params['other']['groupid'] = $override->groupid;
-        $event = \mod_quiz\event\group_override_deleted::create($params);
-    }
+    if ($log) {
+        // Set the common parameters for one of the events we will be triggering.
+        $params = array(
+            'objectid' => $override->id,
+            'context' => context_module::instance($quiz->cmid),
+            'other' => array(
+                'quizid' => $override->quiz
+            )
+        );
+        // Determine which override deleted event to fire.
+        if (!empty($override->userid)) {
+            $params['relateduserid'] = $override->userid;
+            $event = \mod_quiz\event\user_override_deleted::create($params);
+        } else {
+            $params['other']['groupid'] = $override->groupid;
+            $event = \mod_quiz\event\group_override_deleted::create($params);
+        }
 
-    // Trigger the override deleted event.
-    $event->add_record_snapshot('quiz_overrides', $override);
-    $event->trigger();
+        // Trigger the override deleted event.
+        $event->add_record_snapshot('quiz_overrides', $override);
+        $event->trigger();
+    }
 
     return true;
 }
@@ -257,13 +273,14 @@ function quiz_delete_override($quiz, $overrideid) {
  * Deletes all quiz overrides from the database and clears any corresponding calendar events
  *
  * @param object $quiz The quiz object.
+ * @param bool $log Whether to trigger logs.
  */
-function quiz_delete_all_overrides($quiz) {
+function quiz_delete_all_overrides($quiz, $log = true) {
     global $DB;
 
     $overrides = $DB->get_records('quiz_overrides', array('quiz' => $quiz->id), 'id');
     foreach ($overrides as $override) {
-        quiz_delete_override($quiz, $override->id);
+        quiz_delete_override($quiz, $override->id, $log);
     }
 }
 
@@ -388,6 +405,24 @@ function quiz_delete_all_attempts($quiz) {
     question_engine::delete_questions_usage_by_activities(new qubaids_for_quiz($quiz->id));
     $DB->delete_records('quiz_attempts', array('quiz' => $quiz->id));
     $DB->delete_records('quiz_grades', array('quiz' => $quiz->id));
+}
+
+/**
+ * Delete all the attempts belonging to a user in a particular quiz.
+ *
+ * @param object $quiz The quiz object.
+ * @param object $user The user object.
+ */
+function quiz_delete_user_attempts($quiz, $user) {
+    global $CFG, $DB;
+    require_once($CFG->dirroot . '/mod/quiz/locallib.php');
+    question_engine::delete_questions_usage_by_activities(new qubaids_for_quiz_user($quiz->get_quizid(), $user->id));
+    $params = [
+        'quiz' => $quiz->get_quizid(),
+        'userid' => $user->id,
+    ];
+    $DB->delete_records('quiz_attempts', $params);
+    $DB->delete_records('quiz_grades', $params);
 }
 
 /**
@@ -852,10 +887,21 @@ function quiz_grade_item_delete($quiz) {
  * This function is used, in its new format, by restore_refresh_events()
  *
  * @param int $courseid
+ * @param int|stdClass $instance Quiz module instance or ID.
+ * @param int|stdClass $cm Course module object or ID (not used in this module).
  * @return bool
  */
-function quiz_refresh_events($courseid = 0) {
+function quiz_refresh_events($courseid = 0, $instance = null, $cm = null) {
     global $DB;
+
+    // If we have instance information then we can just update the one event instead of updating all events.
+    if (isset($instance)) {
+        if (!is_object($instance)) {
+            $instance = $DB->get_record('quiz', array('id' => $instance), '*', MUST_EXIST);
+        }
+        quiz_update_events($instance);
+        return true;
+    }
 
     if ($courseid == 0) {
         if (!$quizzes = $DB->get_records('quiz')) {
@@ -988,8 +1034,7 @@ function quiz_print_recent_mod_activity($activity, $courseid, $detail, $modnames
     if ($detail) {
         $modname = $modnames[$activity->type];
         echo '<div class="title">';
-        echo '<img src="' . $OUTPUT->pix_url('icon', $activity->type) . '" ' .
-                'class="icon" alt="' . $modname . '" />';
+        echo $OUTPUT->image_icon('icon', $modname, $activity->type);
         echo '<a href="' . $CFG->wwwroot . '/mod/quiz/view.php?id=' .
                 $activity->cmid . '">' . $activity->name . '</a>';
         echo '</div>';
@@ -1172,6 +1217,8 @@ function quiz_after_add_or_update($quiz) {
 
     // Update the events relating to this quiz.
     quiz_update_events($quiz);
+    $completionexpected = (!empty($quiz->completionexpected)) ? $quiz->completionexpected : null;
+    \core_completion\api::update_completion_date_event($quiz->coursemodule, 'quiz', $quiz->id, $completionexpected);
 
     // Update related grade item.
     quiz_grade_item_update($quiz);
@@ -1196,23 +1243,28 @@ function quiz_update_events($quiz, $override = null) {
         // Only load events for this override.
         if (isset($override->userid)) {
             $conds['userid'] = $override->userid;
-        } else if (isset($override->groupid)) {
+        } else {
             $conds['groupid'] = $override->groupid;
         }
     }
-    $oldevents = $DB->get_records('event', $conds);
+    $oldevents = $DB->get_records('event', $conds, 'id ASC');
 
-    // Now make a todo list of all that needs to be updated.
+    // Now make a to-do list of all that needs to be updated.
     if (empty($override)) {
-        // We are updating the primary settings for the quiz, so we
-        // need to add all the overrides.
-        $overrides = $DB->get_records('quiz_overrides', array('quiz' => $quiz->id));
-        // As well as the original quiz (empty override).
-        $overrides[] = new stdClass();
+        // We are updating the primary settings for the quiz, so we need to add all the overrides.
+        $overrides = $DB->get_records('quiz_overrides', array('quiz' => $quiz->id), 'id ASC');
+        // It is necessary to add an empty stdClass to the beginning of the array as the $oldevents
+        // list contains the original (non-override) event for the module. If this is not included
+        // the logic below will end up updating the wrong row when we try to reconcile this $overrides
+        // list against the $oldevents list.
+        array_unshift($overrides, new stdClass());
     } else {
         // Just do the one override.
         $overrides = array($override);
     }
+
+    // Get group override priorities.
+    $grouppriorities = quiz_get_group_override_priorities($quiz->id);
 
     foreach ($overrides as $current) {
         $groupid   = isset($current->groupid)?  $current->groupid : 0;
@@ -1231,6 +1283,7 @@ function quiz_update_events($quiz, $override = null) {
         }
 
         $event = new stdClass();
+        $event->type = !$timeclose ? CALENDAR_EVENT_TYPE_ACTION : CALENDAR_EVENT_TYPE_STANDARD;
         $event->description = format_module_intro('quiz', $quiz, $cmid);
         // Events module won't show user events when the courseid is nonzero.
         $event->courseid    = ($userid) ? 0 : $quiz->course;
@@ -1240,11 +1293,14 @@ function quiz_update_events($quiz, $override = null) {
         $event->instance    = $quiz->id;
         $event->timestart   = $timeopen;
         $event->timeduration = max($timeclose - $timeopen, 0);
+        $event->timesort    = $timeopen;
         $event->visible     = instance_is_visible('quiz', $quiz);
-        $event->eventtype   = 'open';
+        $event->eventtype   = QUIZ_EVENT_TYPE_OPEN;
+        $event->priority    = null;
 
-        // Determine the event name.
+        // Determine the event name and priority.
         if ($groupid) {
+            // Group override event.
             $params = new stdClass();
             $params->quiz = $quiz->name;
             $params->group = groups_get_group_name($groupid);
@@ -1253,48 +1309,56 @@ function quiz_update_events($quiz, $override = null) {
                 continue;
             }
             $eventname = get_string('overridegroupeventname', 'quiz', $params);
+            // Set group override priority.
+            if ($grouppriorities !== null) {
+                $openpriorities = $grouppriorities['open'];
+                if (isset($openpriorities[$timeopen])) {
+                    $event->priority = $openpriorities[$timeopen];
+                }
+            }
         } else if ($userid) {
+            // User override event.
             $params = new stdClass();
             $params->quiz = $quiz->name;
             $eventname = get_string('overrideusereventname', 'quiz', $params);
+            // Set user override priority.
+            $event->priority = CALENDAR_EVENT_USER_OVERRIDE_PRIORITY;
         } else {
+            // The parent event.
             $eventname = $quiz->name;
         }
+
         if ($addopen or $addclose) {
-            if ($timeclose and $timeopen and $event->timeduration <= QUIZ_MAX_EVENT_LENGTH) {
-                // Single event for the whole quiz.
+            // Separate start and end events.
+            $event->timeduration  = 0;
+            if ($timeopen && $addopen) {
                 if ($oldevent = array_shift($oldevents)) {
                     $event->id = $oldevent->id;
                 } else {
                     unset($event->id);
                 }
-                $event->name = $eventname;
+                $event->name = get_string('quizeventopens', 'quiz', $eventname);
                 // The method calendar_event::create will reuse a db record if the id field is set.
-                calendar_event::create($event);
-            } else {
-                // Separate start and end events.
-                $event->timeduration  = 0;
-                if ($timeopen && $addopen) {
-                    if ($oldevent = array_shift($oldevents)) {
-                        $event->id = $oldevent->id;
-                    } else {
-                        unset($event->id);
-                    }
-                    $event->name = $eventname.' ('.get_string('quizopens', 'quiz').')';
-                    // The method calendar_event::create will reuse a db record if the id field is set.
-                    calendar_event::create($event);
+                calendar_event::create($event, false);
+            }
+            if ($timeclose && $addclose) {
+                if ($oldevent = array_shift($oldevents)) {
+                    $event->id = $oldevent->id;
+                } else {
+                    unset($event->id);
                 }
-                if ($timeclose && $addclose) {
-                    if ($oldevent = array_shift($oldevents)) {
-                        $event->id = $oldevent->id;
-                    } else {
-                        unset($event->id);
+                $event->type      = CALENDAR_EVENT_TYPE_ACTION;
+                $event->name      = get_string('quizeventcloses', 'quiz', $eventname);
+                $event->timestart = $timeclose;
+                $event->timesort  = $timeclose;
+                $event->eventtype = QUIZ_EVENT_TYPE_CLOSE;
+                if ($groupid && $grouppriorities !== null) {
+                    $closepriorities = $grouppriorities['close'];
+                    if (isset($closepriorities[$timeclose])) {
+                        $event->priority = $closepriorities[$timeclose];
                     }
-                    $event->name      = $eventname.' ('.get_string('quizcloses', 'quiz').')';
-                    $event->timestart = $timeclose;
-                    $event->eventtype = 'close';
-                    calendar_event::create($event);
                 }
+                calendar_event::create($event, false);
             }
         }
     }
@@ -1304,6 +1368,58 @@ function quiz_update_events($quiz, $override = null) {
         $badevent = calendar_event::load($badevent);
         $badevent->delete();
     }
+}
+
+/**
+ * Calculates the priorities of timeopen and timeclose values for group overrides for a quiz.
+ *
+ * @param int $quizid The quiz ID.
+ * @return array|null Array of group override priorities for open and close times. Null if there are no group overrides.
+ */
+function quiz_get_group_override_priorities($quizid) {
+    global $DB;
+
+    // Fetch group overrides.
+    $where = 'quiz = :quiz AND groupid IS NOT NULL';
+    $params = ['quiz' => $quizid];
+    $overrides = $DB->get_records_select('quiz_overrides', $where, $params, '', 'id, timeopen, timeclose');
+    if (!$overrides) {
+        return null;
+    }
+
+    $grouptimeopen = [];
+    $grouptimeclose = [];
+    foreach ($overrides as $override) {
+        if ($override->timeopen !== null && !in_array($override->timeopen, $grouptimeopen)) {
+            $grouptimeopen[] = $override->timeopen;
+        }
+        if ($override->timeclose !== null && !in_array($override->timeclose, $grouptimeclose)) {
+            $grouptimeclose[] = $override->timeclose;
+        }
+    }
+
+    // Sort open times in ascending manner. The earlier open time gets higher priority.
+    sort($grouptimeopen);
+    // Set priorities.
+    $opengrouppriorities = [];
+    $openpriority = 1;
+    foreach ($grouptimeopen as $timeopen) {
+        $opengrouppriorities[$timeopen] = $openpriority++;
+    }
+
+    // Sort close times in descending manner. The later close time gets higher priority.
+    rsort($grouptimeclose);
+    // Set priorities.
+    $closegrouppriorities = [];
+    $closepriority = 1;
+    foreach ($grouptimeclose as $timeclose) {
+        $closegrouppriorities[$timeclose] = $closepriority++;
+    }
+
+    return [
+        'open' => $opengrouppriorities,
+        'close' => $closegrouppriorities
+    ];
 }
 
 /**
@@ -1469,6 +1585,8 @@ function quiz_reset_userdata($data) {
                        WHERE quiz IN (SELECT id FROM {quiz} WHERE course = ?)
                          AND timeclose <> 0", array($data->timeshift, $data->courseid));
 
+        // Any changes to the list of dates that needs to be rolled should be same during course restore and course reset.
+        // See MDL-9367.
         shift_course_mod_dates('quiz', array('timeopen', 'timeclose'),
                 $data->timeshift, $data->courseid);
 
@@ -1483,11 +1601,17 @@ function quiz_reset_userdata($data) {
 
 /**
  * Prints quiz summaries on MyMoodle Page
- * @param arry $courses
+ *
+ * @deprecated since 3.3
+ * @todo The final deprecation of this function will take place in Moodle 3.7 - see MDL-57487.
+ * @param array $courses
  * @param array $htmlarray
  */
 function quiz_print_overview($courses, &$htmlarray) {
     global $USER, $CFG;
+
+    debugging('The function quiz_print_overview() is now deprecated.', DEBUG_DEVELOPER);
+
     // These next 6 Lines are constant in all modules (just change module name).
     if (empty($courses) || !is_array($courses) || count($courses) == 0) {
         return array();
@@ -1988,5 +2112,315 @@ function quiz_check_updates_since(cm_info $cm, $from, $filter = array()) {
         $updates->grades->itemids = array_keys($grades);
     }
 
+    // Now, teachers should see other students updates.
+    if (has_capability('mod/quiz:viewreports', $cm->context)) {
+        $select = 'quiz = ? AND timemodified > ?';
+        $params = array($cm->instance, $from);
+
+        if (groups_get_activity_groupmode($cm) == SEPARATEGROUPS) {
+            $groupusers = array_keys(groups_get_activity_shared_group_members($cm));
+            if (empty($groupusers)) {
+                return $updates;
+            }
+            list($insql, $inparams) = $DB->get_in_or_equal($groupusers);
+            $select .= ' AND userid ' . $insql;
+            $params = array_merge($params, $inparams);
+        }
+
+        $updates->userattempts = (object) array('updated' => false);
+        $attempts = $DB->get_records_select('quiz_attempts', $select, $params, '', 'id');
+        if (!empty($attempts)) {
+            $updates->userattempts->updated = true;
+            $updates->userattempts->itemids = array_keys($attempts);
+        }
+
+        $updates->usergrades = (object) array('updated' => false);
+        $grades = $DB->get_records_select('quiz_grades', $select, $params, '', 'id');
+        if (!empty($grades)) {
+            $updates->usergrades->updated = true;
+            $updates->usergrades->itemids = array_keys($grades);
+        }
+    }
     return $updates;
+}
+
+/**
+ * Get icon mapping for font-awesome.
+ */
+function mod_quiz_get_fontawesome_icon_map() {
+    return [
+        'mod_quiz:navflagged' => 'fa-flag',
+    ];
+}
+
+/**
+ * This function receives a calendar event and returns the action associated with it, or null if there is none.
+ *
+ * This is used by block_myoverview in order to display the event appropriately. If null is returned then the event
+ * is not displayed on the block.
+ *
+ * @param calendar_event $event
+ * @param \core_calendar\action_factory $factory
+ * @return \core_calendar\local\event\entities\action_interface|null
+ */
+function mod_quiz_core_calendar_provide_event_action(calendar_event $event,
+                                                     \core_calendar\action_factory $factory) {
+    global $CFG, $USER;
+
+    require_once($CFG->dirroot . '/mod/quiz/locallib.php');
+
+    $cm = get_fast_modinfo($event->courseid)->instances['quiz'][$event->instance];
+    $quizobj = quiz::create($cm->instance, $USER->id);
+    $quiz = $quizobj->get_quiz();
+
+    // Check they have capabilities allowing them to view the quiz.
+    if (!has_any_capability(array('mod/quiz:reviewmyattempts', 'mod/quiz:attempt'), $quizobj->get_context())) {
+        return null;
+    }
+
+    quiz_update_effective_access($quiz, $USER->id);
+
+    // Check if quiz is closed, if so don't display it.
+    if (!empty($quiz->timeclose) && $quiz->timeclose <= time()) {
+        return null;
+    }
+
+    $attempts = quiz_get_user_attempts($quizobj->get_quizid(), $USER->id);
+    if (!empty($attempts)) {
+        // The student's last attempt is finished.
+        return null;
+    }
+
+    $name = get_string('attemptquiznow', 'quiz');
+    $url = new \moodle_url('/mod/quiz/view.php', [
+        'id' => $cm->id
+    ]);
+    $itemcount = 1;
+    $actionable = true;
+
+    // Check if the quiz is not currently actionable.
+    if (!empty($quiz->timeopen) && $quiz->timeopen > time()) {
+        $actionable = false;
+    }
+
+    return $factory->create_instance(
+        $name,
+        $url,
+        $itemcount,
+        $actionable
+    );
+}
+
+/**
+ * Add a get_coursemodule_info function in case any quiz type wants to add 'extra' information
+ * for the course (see resource).
+ *
+ * Given a course_module object, this function returns any "extra" information that may be needed
+ * when printing this activity in a course listing.  See get_array_of_activities() in course/lib.php.
+ *
+ * @param stdClass $coursemodule The coursemodule object (record).
+ * @return cached_cm_info An object on information that the courses
+ *                        will know about (most noticeably, an icon).
+ */
+function quiz_get_coursemodule_info($coursemodule) {
+    global $DB;
+
+    $dbparams = ['id' => $coursemodule->instance];
+    $fields = 'id, name, intro, introformat, completionattemptsexhausted, completionpass';
+    if (!$quiz = $DB->get_record('quiz', $dbparams, $fields)) {
+        return false;
+    }
+
+    $result = new cached_cm_info();
+    $result->name = $quiz->name;
+
+    if ($coursemodule->showdescription) {
+        // Convert intro to html. Do not filter cached version, filters run at display time.
+        $result->content = format_module_intro('quiz', $quiz, $coursemodule->id, false);
+    }
+
+    // Populate the custom completion rules as key => value pairs, but only if the completion mode is 'automatic'.
+    if ($coursemodule->completion == COMPLETION_TRACKING_AUTOMATIC) {
+        $result->customdata['customcompletionrules']['completionattemptsexhausted'] = $quiz->completionattemptsexhausted;
+        $result->customdata['customcompletionrules']['completionpass'] = $quiz->completionpass;
+    }
+
+    return $result;
+}
+
+/**
+ * Callback which returns human-readable strings describing the active completion custom rules for the module instance.
+ *
+ * @param cm_info|stdClass $cm object with fields ->completion and ->customdata['customcompletionrules']
+ * @return array $descriptions the array of descriptions for the custom rules.
+ */
+function mod_quiz_get_completion_active_rule_descriptions($cm) {
+    // Values will be present in cm_info, and we assume these are up to date.
+    if (empty($cm->customdata['customcompletionrules'])
+        || $cm->completion != COMPLETION_TRACKING_AUTOMATIC) {
+        return [];
+    }
+
+    $descriptions = [];
+    foreach ($cm->customdata['customcompletionrules'] as $key => $val) {
+        switch ($key) {
+            case 'completionattemptsexhausted':
+                if (empty($val)) {
+                    continue;
+                }
+                $descriptions[] = get_string('completionattemptsexhausteddesc', 'quiz');
+                break;
+            case 'completionpass':
+                if (empty($val)) {
+                    continue;
+                }
+                $descriptions[] = get_string('completionpassdesc', 'quiz', format_time($val));
+                break;
+            default:
+                break;
+        }
+    }
+    return $descriptions;
+}
+
+/**
+ * Returns the min and max values for the timestart property of a quiz
+ * activity event.
+ *
+ * The min and max values will be the timeopen and timeclose properties
+ * of the quiz, respectively, if they are set.
+ *
+ * If either value isn't set then null will be returned instead to
+ * indicate that there is no cutoff for that value.
+ *
+ * If the vent has no valid timestart range then [false, false] will
+ * be returned. This is the case for overriden events.
+ *
+ * A minimum and maximum cutoff return value will look like:
+ * [
+ *     [1505704373, 'The date must be after this date'],
+ *     [1506741172, 'The date must be before this date']
+ * ]
+ *
+ * @throws \moodle_exception
+ * @param \calendar_event $event The calendar event to get the time range for
+ * @param stdClass $quiz The module instance to get the range from
+ * @return array
+ */
+function mod_quiz_core_calendar_get_valid_event_timestart_range(\calendar_event $event, \stdClass $quiz) {
+    global $CFG, $DB;
+    require_once($CFG->dirroot . '/mod/quiz/locallib.php');
+
+    // Overrides do not have a valid timestart range.
+    if (quiz_is_overriden_calendar_event($event)) {
+        return [false, false];
+    }
+
+    $mindate = null;
+    $maxdate = null;
+
+    if ($event->eventtype == QUIZ_EVENT_TYPE_OPEN) {
+        if (!empty($quiz->timeclose)) {
+            $maxdate = [
+                $quiz->timeclose,
+                get_string('openafterclose', 'quiz')
+            ];
+        }
+    } else if ($event->eventtype == QUIZ_EVENT_TYPE_CLOSE) {
+        if (!empty($quiz->timeopen)) {
+            $mindate = [
+                $quiz->timeopen,
+                get_string('closebeforeopen', 'quiz')
+            ];
+        }
+    }
+
+    return [$mindate, $maxdate];
+}
+
+/**
+ * This function will update the quiz module according to the
+ * event that has been modified.
+ *
+ * It will set the timeopen or timeclose value of the quiz instance
+ * according to the type of event provided.
+ *
+ * @throws \moodle_exception
+ * @param \calendar_event $event A quiz activity calendar event
+ * @param \stdClass $quiz A quiz activity instance
+ */
+function mod_quiz_core_calendar_event_timestart_updated(\calendar_event $event, \stdClass $quiz) {
+    global $CFG, $DB;
+    require_once($CFG->dirroot . '/mod/quiz/locallib.php');
+
+    if (!in_array($event->eventtype, [QUIZ_EVENT_TYPE_OPEN, QUIZ_EVENT_TYPE_CLOSE])) {
+        // This isn't an event that we care about so we can ignore it.
+        return;
+    }
+
+    $courseid = $event->courseid;
+    $modulename = $event->modulename;
+    $instanceid = $event->instance;
+    $modified = false;
+    $closedatechanged = false;
+
+    // Something weird going on. The event is for a different module so
+    // we should ignore it.
+    if ($modulename != 'quiz') {
+        return;
+    }
+
+    if ($quiz->id != $instanceid) {
+        // The provided quiz instance doesn't match the event so
+        // there is nothing to do here.
+        return;
+    }
+
+    // We don't update the activity if it's an override event that has
+    // been modified.
+    if (quiz_is_overriden_calendar_event($event)) {
+        return;
+    }
+
+    $coursemodule = get_fast_modinfo($courseid)->instances[$modulename][$instanceid];
+    $context = context_module::instance($coursemodule->id);
+
+    // The user does not have the capability to modify this activity.
+    if (!has_capability('moodle/course:manageactivities', $context)) {
+        return;
+    }
+
+    if ($event->eventtype == QUIZ_EVENT_TYPE_OPEN) {
+        // If the event is for the quiz activity opening then we should
+        // set the start time of the quiz activity to be the new start
+        // time of the event.
+        if ($quiz->timeopen != $event->timestart) {
+            $quiz->timeopen = $event->timestart;
+            $modified = true;
+        }
+    } else if ($event->eventtype == QUIZ_EVENT_TYPE_CLOSE) {
+        // If the event is for the quiz activity closing then we should
+        // set the end time of the quiz activity to be the new start
+        // time of the event.
+        if ($quiz->timeclose != $event->timestart) {
+            $quiz->timeclose = $event->timestart;
+            $modified = true;
+            $closedatechanged = true;
+        }
+    }
+
+    if ($modified) {
+        $quiz->timemodified = time();
+        $DB->update_record('quiz', $quiz);
+
+        if ($closedatechanged) {
+            quiz_update_open_attempts(array('quizid' => $quiz->id));
+        }
+
+        // Delete any previous preview attempts.
+        quiz_delete_previews($quiz);
+        quiz_update_events($quiz);
+        $event = \core\event\course_module_updated::create_from_cm($coursemodule, $context);
+        $event->trigger();
+    }
 }

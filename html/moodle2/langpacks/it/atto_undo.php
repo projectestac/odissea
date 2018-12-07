@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_undo', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_undo', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_undo
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Annulla/Ripristina';
+$string['privacy:metadata'] = 'Il plugin atto_undo non memorizza dati personali.';
 $string['redo'] = 'Ripristina';
 $string['undo'] = 'Annulla';

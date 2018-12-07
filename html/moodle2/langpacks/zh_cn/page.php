@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = '建立新页面';
 $string['displayoptions'] = '可用的显示选项';
 $string['displayselect'] = '显示';
 $string['displayselectexplain'] = '选择显示类型。';
+$string['indicator:cognitivedepth'] = '网页资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 网页资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '网页资源社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在网页资源中所达到的社会宽度。';
 $string['legacyfiles'] = '迁移所有课程旧文件';
 $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';

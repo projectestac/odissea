@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_googledocs', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['both'] = 'Barrukoa eta kanpokoa';
+$string['cachedef_folder'] = 'Sistemaren kontuan dauden karpetetako Google-ko fitxategien IDak';
 $string['clientid'] = 'Bezeroaren IDa';
 $string['configplugin'] = 'Konfiguratu Google Drive plugina';
+$string['defaultreturntype'] = 'Berezko itzulera-mota';
+$string['docsformat'] = 'Dokumentuen berezko inportatze-formatua';
+$string['drawingformat'] = 'Marrazkien berezko inportatze-formatua';
+$string['external'] = 'Kanpokoa (Moodle-n estekak baino ez dira gordetzen)';
+$string['fileoptions'] = 'Hemen bueltatzen diren fitxate-motak eta berezko balioak konfiguratzen dira. Kontuan izan kanpotik estekatutako dokumentu guztiak eguneratuko direla jabea Moodle-ko sistemako kontua izan dadin.';
 $string['googledocs:view'] = 'Ikusi Google Drive biltegia';
-$string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea Google-n erregistratu behar duzu, <a href="{$a->docsurl}">Google OAuth 2.0 setup</a> dokumentazioan azaltzen den moduan.</p><p>Erregistro-prozesuan hurrengo URLa \'Authorized Redirect URIs\' gisa zehaztu beharko duzu:</p><p>{$a->callbackurl}</p><p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek erabili ahalko dituzu Google Drive eta Picasa pluginak konfiguratzeko.</p><p>Kontuan izan ere \'Drive API\' zerbitzua gaitu beharko duzula.</p>';
+$string['importformat'] = 'Konfiguratu berezko formatuak Google-tik inportatzerakoan';
+$string['internal'] = 'Barrukoa (fitxategiak Moodle-n gordeko dira)';
+$string['issuer'] = 'OAuth 2 zerbitzua';
+$string['issuer_help'] = 'Aukeratu Google Drive API-arekin konektatzeko OAuth 2 zerbitzua. Zerbitzua oraindik existitzen ez bada sortu beharko duzu.';
+$string['oauth2serviceslink'] = '<a href="{$a}" title="OAuth 2 zerbitzuaren konfiguraziorako esteka">"OAuth 2 zerbitzuaren konfigurazioa</a>';
+$string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea Google-n erregistratu behar duzu, <a href="{$a->docsurl}">Google OAuth 2.0 setup</a> dokumentazioan azaltzen den moduan.</p><p>Erregistro-prozesuan hurrengo URLa \'Authorized Redirect URIs\' gisa zehaztu beharko duzu:</p><p>{$a->callbackurl}</p><p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek erabili ahalko dituzu Google Drive eta Picasa plugin zehatz batzuk konfiguratzeko.</p><p>Kontuan izan ere \'Drive API\' zerbitzua gaitu beharko duzula.</p>';
+$string['owner'] = 'Jabea: {$a}';
 $string['pluginname'] = 'Google Drive';
+$string['presentationformat'] = 'Aurkenpenen berezko inportatze-formatua';
+$string['privacy:metadata:repository_googledocs'] = 'Google Drive biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_googledocs:email'] = 'Google Drive biltegiko erabiltzailearen e-posta helbidea.';
+$string['privacy:metadata:repository_googledocs:searchtext'] = 'Google Drive biltegiko erabiltzailearen bilaketaren testua.';
+$string['searchfor'] = 'Bilatu {$a}';
 $string['secret'] = 'Sekretua';
 $string['servicenotenabled'] = 'Sarbidea ez dago konfiguratuta. Ziurtatu \'Drive API\' zerbitzua gaituta dagoela.';
+$string['spreadsheetformat'] = 'Kalkulu-orrien berezko inportatze-formatua';
+$string['supportedreturntypes'] = 'Onartutako fitxategiak';

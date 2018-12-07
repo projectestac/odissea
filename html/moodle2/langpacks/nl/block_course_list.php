@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_list', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['course_list:myaddinstance'] = 'Voeg een nieuw cursusblok toe aan Mijn s
 $string['hideallcourseslink'] = 'Verberg "Alle cursussen"-link';
 $string['owncourses'] = 'Beheerder ziet eigen cursussen';
 $string['pluginname'] = 'Cursussen';
+$string['privacy:metadata'] = 'Het cursusblok toont alleen gegevens over cursussen en slaat zelf geen gegevens op.';

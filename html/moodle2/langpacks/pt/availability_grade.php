@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grade', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['missing'] = '(atividade em falta)';
 $string['option_max'] = 'tem de ser <';
 $string['option_min'] = 'tem de ser ≥';
 $string['pluginname'] = 'Restrição por notas';
+$string['privacy:metadata'] = 'O módulo Restrição por notas não armazena dados pessoais.';
 $string['requires_any'] = 'Tem uma nota em <strong>{$a}</strong>';
 $string['requires_max'] = 'Obtem uma not adequada em <strong>{$a}</strong>';
 $string['requires_min'] = 'Atingiu nota mínima em <strong>{$a}</strong>';

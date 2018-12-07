@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -361,6 +361,7 @@ $string['subplugintype_datafield'] = 'Fälttyp i databas';
 $string['subplugintype_datafield_plural'] = 'Fälttyper i databas';
 $string['subplugintype_datapreset'] = 'Förinställning';
 $string['subplugintype_datapreset_plural'] = 'Förinställda mallar';
+$string['tags'] = 'etiketter';
 $string['teachersandstudents'] = '{$a->teachers} och  {$a->students}';
 $string['templates'] = 'Mallar';
 $string['templatesaved'] = 'Mallen har sparats';

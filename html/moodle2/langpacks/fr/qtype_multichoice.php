@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multichoice', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['answerhowmany'] = 'Une seule ou plusieurs réponses ?';
+$string['answerhowmany'] = 'Plusieurs réponses ou une seule ?';
+$string['answerhowmany_desc'] = 'Ce réglage détermine si la question demande par défaut une seule réponse (boutons radio) ou plusieurs réponses (cases à cocher).';
 $string['answernumbering'] = 'Numéroter les choix ?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
+$string['answernumbering_desc'] = 'Style de numérotation par défaut.';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'Sans numérotation';
@@ -63,9 +65,11 @@ $string['pluginnameadding'] = 'Ajouter une question à choix multiple';
 $string['pluginnameediting'] = 'Modification d\'une question à choix multiple';
 $string['pluginname_help'] = 'Pour répondre à la question (qui peut inclure une image) les étudiants peuvent choisir parmi plusieurs propositions. Il existe deux types de questions à choix multiple - une réponse (QCU) ou plusieurs réponses (QCM).';
 $string['pluginnamesummary'] = 'Permet la sélection d\'une ou plusieurs réponses dans une liste prédéfinie.';
+$string['privacy:metadata'] = 'Le plugin de type de question Choix multiple n\'enregistre aucune donnée personnelle.';
 $string['selectmulti'] = 'Veuillez choisir au moins une réponse :';
 $string['selectone'] = 'Veuillez choisir une réponse :';
 $string['shuffleanswers'] = 'Mélanger les réponses possibles ?';
+$string['shuffleanswers_desc'] = 'Ce réglage détermine si par défaut les réponses proposées doivent être mélangées à chaque tentative.';
 $string['shuffleanswers_help'] = 'Si vous cochez cette option, l\'ordre des réponses proposées sera mélangé aléatoirement au début de chaque tentative d\'un test contenant cette question, étant entendu que l\'option « Mélanger les réponses possibles » soit également activée dans les réglages du test.';
 $string['singleanswer'] = 'Choisir une réponse.';
 $string['toomanyselected'] = 'Vous avez sélectionné trop d\'options.';

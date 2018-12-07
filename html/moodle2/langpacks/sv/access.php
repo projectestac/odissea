@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'access', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   access
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,6 @@ $string['activitynext'] = 'Nästa aktivitet';
 $string['activityprev'] = 'Föregående aktivitet';
 $string['breadcrumb'] = '\'Brödsmule\'-spår';
 $string['hideblocka'] = 'Dölj {$a} block';
-$string['monthnext'] = 'Nästa månad';
 $string['monthprev'] = 'Föregående månad';
 $string['showblocka'] = 'Visa {$a} block';
 $string['sitemap'] = 'Karta över webbplatsen';

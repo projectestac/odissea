@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -99,8 +99,9 @@ $string['missingshortnamenotemplate'] = 'Nom abrégé manquant et modèle de nom
 $string['mode'] = 'Mode de traitement';
 $string['mode_help'] = 'Ce réglage permet de spécifier si les cours peuvent être créés et/ou modifiés.';
 $string['nochanges'] = 'Aucun changement';
-$string['pluginname'] = 'Traitement du cours';
+$string['pluginname'] = 'Déposer des cours';
 $string['preview'] = 'Prévisualiser';
+$string['privacy:metadata'] = 'Le plugin Déposer des cours n\'enregistre aucune donnée personnelle.';
 $string['reset'] = 'Réinitialiser le cours';
 $string['reset_help'] = 'Détermine s\'il faut réinitialiser le cours après sa création ou modification.';
 $string['restoreafterimport'] = 'Restaurer après importation';

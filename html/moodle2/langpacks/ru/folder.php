@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['folder:addinstance'] = 'Добавлять новый ресурс ти
 $string['foldercontent'] = 'Файлы и вложенные папки';
 $string['folder:managefiles'] = 'Управлять файлами в модуле «Папка»';
 $string['folder:view'] = 'Просматривать содержимое ресурса типа «Папка»';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Папка.';
 $string['maxsizetodownload'] = 'Максимальный размер скачиваемой папки (Мб)';
 $string['maxsizetodownload_help'] = 'Максимальный размер папки, которая может быть скачана в виде zip-файла. Если параметр равен 0, размер папки не ограничен.';
 $string['modulename'] = 'Папка';

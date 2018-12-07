@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'media', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,5 +41,6 @@ Wenn die MediaPlayer nicht aktiviert sind, werden die Mediendateien nicht eingeb
 
 Wenn zwei MediaPlayer das gleiche Format unterstützen, können beide aktiviert werden, um das Abspielen auf unterschiedlichen digitalen Endgeräten zu ermöglichen oder verschiedene Dateiformate alternativ anzubieten.';
 $string['mediasettings'] = 'Mediaeinbettung';
+$string['privacy:metadata'] = 'Die Einbettung von Medien speichert keine persönlichen Daten.';
 $string['supports'] = 'Unterstützung';
 $string['videoextensions'] = 'Video: {$a}';

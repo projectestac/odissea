@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculated', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,13 +115,13 @@ $string['replacewithrandom'] = 'Remplazar con un valor aleatorio';
 $string['reuseifpossible'] = 'reutilice el valor anterior si está disponible';
 $string['setno'] = 'Valor {$a} del conjunto';
 $string['setwildcardvalues'] = 'serie(s) de valores para el comodín';
-$string['sharedwildcard'] = 'Comodín compartido <strong>{$a}</strong>';
-$string['sharedwildcardname'] = 'Comodiín compartido';
+$string['sharedwildcard'] = 'Comodín compartido {<strong>{$a}</strong>}';
+$string['sharedwildcardname'] = 'Comodín compartido';
 $string['sharedwildcards'] = 'Comodines compartidos';
 $string['showitems'] = 'Mostrar';
 $string['significantfigures'] = 'Con {$a}';
 $string['significantfiguresformat'] = 'Cifras significativas';
-$string['synchronize'] = 'Sincronizar los datos de un conjunto de datos compartido con otras preguntas dentro de un cuestionario';
+$string['synchronize'] = 'Sincronizar los datos de un conjunto de datos compartido con otras preguntas de un cuestionario';
 $string['synchronizeno'] = 'No sincronizar';
 $string['synchronizeyes'] = 'Sincronizar';
 $string['synchronizeyesdisplay'] = 'Sincronizar y mostrar el nombre de los conjuntos de datos compartidos como prefijo del nombre de la pregunta';

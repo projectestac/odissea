@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'booktool_importhtml', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   booktool_importhtml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['importhtml:import'] = 'Importeer hoofdstukken';
 $string['importing'] = 'Importeren';
 $string['importingchapters'] = 'Importeren van hoofdstukken in het boek';
 $string['pluginname'] = 'Boek hoofdstuk import';
+$string['privacy:metadata'] = 'De Boek hoofdstuk import-plugin bewaart geen persoonlijke gegevens.';
 $string['relinking'] = 'Opnieuw linken';
 $string['type'] = 'Type';
 $string['typeonefile'] = 'Eén HTML-bestand met koppen als hoofdstukken';

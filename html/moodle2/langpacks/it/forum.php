@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,12 +84,15 @@ $string['cleanreadtime'] = 'Ora per spuntare come letti i messaggi vecchi';
 $string['clicktosubscribe'] = 'Non hai sottoscritto questa discussione, Click per sottoscriverla.';
 $string['clicktounsubscribe'] = 'Hai sottoscritto la discussione. Click per revocare la sottoscrizione.';
 $string['completiondiscussions'] = 'L\'utente deve iniziare il seguente numero di discussioni:';
+$string['completiondiscussionsdesc'] = 'Lo studente deve avviare almeno il seguente numero di discussioni: {$a}';
 $string['completiondiscussionsgroup'] = 'Numero minimo discussioni';
 $string['completiondiscussionshelp'] = 'è necessario un numero minimo di discussioni';
 $string['completionposts'] = 'L\'utente deve effettuare il seguente numero di discussioni o di interventi:';
+$string['completionpostsdesc'] = 'L\'utente deve effettuare almeno {$a} discussioni o interventi';
 $string['completionpostsgroup'] = 'Numero minimo interventi';
 $string['completionpostshelp'] = 'è necessario un numero minimo di discussioni o di interventi';
 $string['completionreplies'] = 'L\'utente deve inviare il seguente numero di risposte:';
+$string['completionrepliesdesc'] = 'L\'utente deve effettuare almeno {$a} interventi';
 $string['completionrepliesgroup'] = 'Numero minimo risposte';
 $string['completionreplieshelp'] = 'è necessario un numero minimo di interventi';
 $string['configcleanreadtime'] = 'L\'ora del giorno in cui la tabella \'lettura\' vien ripulita dai messaggi vecchi.';
@@ -106,6 +109,7 @@ $string['configreplytouser'] = 'Nelle email inviate dai forum, per default compa
 $string['configrssarticlesdefault'] = 'Imposta il numero di default di articoli (interventi o discussioni) quando i feed RSS sono abilitati.';
 $string['configrsstypedefault'] = 'Imposta il tipo di attività di default quando i feed RSS sono abilitati.';
 $string['configshortpost'] = 'Gli interventi al di sotto del numero di caratteri specificato (escludendo i tag HTML) saranno considerati "brevi".';
+$string['configsubscriptiontype'] = 'Impostazioni di default della sottoscrizione';
 $string['configtrackingtype'] = 'Il tipo di evidenziamento dei messaggi di default.';
 $string['configtrackreadposts'] = 'Impostare a \'Si\' se si desidera tracciare lo stato "letto/non letto" per ciascun utente.';
 $string['configusermarksread'] = 'Con "Si", l\'utente deve spuntare manualmente un intervento come "letto". Con "No", l\'intervento viene automaticamente considerato "letto" all\'atto della visualizzazione.';
@@ -238,7 +242,7 @@ $string['forum:exportdiscussion'] = 'Esportare intera discussione';
 $string['forum:exportownpost'] = 'Esportare propri interventi';
 $string['forum:exportpost'] = 'Esportare intervento';
 $string['forumintro'] = 'Descrizione';
-$string['forum:managesubscriptions'] = 'Gestire le sottoscrizioni';
+$string['forum:managesubscriptions'] = 'Gestire sottoscrittori';
 $string['forum:movediscussions'] = 'Spostare le discussioni';
 $string['forumname'] = 'Nome del forum';
 $string['forum:pindiscussions'] = 'Mettere in evidenza discussioni';
@@ -271,6 +275,10 @@ $string['forum:viewsubscribers'] = 'Visualizzare i sottoscrittori';
 $string['generalforum'] = 'Forum standard per uso generale';
 $string['generalforums'] = 'Forum per uso generale';
 $string['hiddenforumpost'] = 'Intervento nascosto';
+$string['indicator:cognitivedepth'] = 'Forum cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'forum\'.';
+$string['indicator:socialbreadth'] = 'Forum sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'forum\'.';
 $string['inforum'] = 'in {$a}';
 $string['introblog'] = 'I post di questo forum sono stati copiati automaticamente dai blog degli utenti iscritti al corso poiché tali interventi blog non sono più disponibili';
 $string['intronews'] = 'Annunci e news di carattere generale';
@@ -291,6 +299,8 @@ $string['lockdiscussionafter_help'] = 'Le discussioni possono essere bloccate au
 Gli utenti con il privilegio di intervenire in discussioni bloccate potranno sbloccare la discussione semplicemente inviando una risposta.';
 $string['longpost'] = 'Intervento lungo';
 $string['mailnow'] = 'Invia l\'intervento immediatamente senza attendere il tempo per la modifica.';
+$string['managesubscriptionsoff'] = 'Termina gestione sottoscrizioni';
+$string['managesubscriptionson'] = 'Gestione sottoscrittori';
 $string['manydiscussions'] = 'Discussioni per pagina';
 $string['markalldread'] = 'Segna come letti tutti gli interventi in questa discussione.';
 $string['markallread'] = 'Segna come letti tutti gli interventi in questo forum.';
@@ -436,6 +446,7 @@ $string['qandaforum'] = 'Forum Domande e Risposte';
 $string['qandanotify'] = 'Questo è un forum Domande e Risposte. Per poter vedere le risposte date dagli altri partecipanti  devi prima rispondere a tua volta..';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Leggi il resto dell\'argomento';
+$string['removeallforumtags'] = 'Rimuovi tutti i tag del forum';
 $string['replies'] = 'Repliche';
 $string['repliesmany'] = '{$a} risposte finora';
 $string['repliesone'] = '{$a} risposta finora';
@@ -470,6 +481,7 @@ $string['searchphrase'] = 'Nell\'intervento deve apparire esattamente questa fra
 $string['search:post'] = 'Forum - Interventi';
 $string['searchresults'] = 'Risultati delle ricerche';
 $string['searchsubject'] = 'Queste parole devono apparire nell\'oggetto';
+$string['searchtags'] = 'E\' taggato con';
 $string['searchuser'] = 'Questo nome deve corrispondere all\'autore';
 $string['searchuserid'] = 'Il Moodle ID dell\'autore';
 $string['searchwhichforums'] = 'Scegliere in quali forum cercare';
@@ -489,7 +501,6 @@ $string['subscribediscussion'] = 'Sottoscrivi questa discussione';
 $string['subscribeenrolledonly'] = 'Spiacente, solo gli utenti iscritti possono sottoscrivere i forum e ricevere notifiche di nuovi interventi.';
 $string['subscribenone'] = 'Revoca tutte le sottoscrizioni di questo forum';
 $string['subscribers'] = 'Sottoscrittori';
-$string['subscribersto'] = 'Sottoscrittori di "{$a->name}"';
 $string['subscriberstowithcount'] = '({$a->count}) sottoscrittori di "{$a->name}"';
 $string['subscribestart'] = 'Desidero ricevere notifiche sui nuovi interventi di questo forum';
 $string['subscribestop'] = 'Non desidero ricevere notifiche sui nuovi interventi di questo forum';
@@ -508,6 +519,8 @@ $string['subscriptionmode_help'] = 'La sottoscrizione di un forum consente di ri
 * Disabilitata - Non è possibile sottoscrivere il forum';
 $string['subscriptionoptional'] = 'Facoltativa';
 $string['subscriptions'] = 'Sottoscrizioni';
+$string['tagarea_forum_posts'] = 'Interventi forum';
+$string['tagsdeleted'] = 'I tag del forum sono stati eliminati';
 $string['thisforumisthrottled'] = 'Questo forum ha una soglia massima di interventi che è possibile effettuare in un dato intervallo di tempo - la soglia al momento è impostata a {$a->blockafter} interventi in {$a->blockperiod}';
 $string['timedhidden'] = 'Stato Intervento a tempo: non visibile agli studenti';
 $string['timedposts'] = 'Interventi a tempo';

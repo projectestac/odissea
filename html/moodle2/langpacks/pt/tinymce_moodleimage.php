@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodleimage', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodleimage', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodleimage
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'Encontrar ou carregar uma imagem...';
 $string['pluginname'] = 'Inserir imagem';
+$string['privacy:metadata'] = 'O módulo Inserir imagem do TinyMCE não armazena dados pessoais.';

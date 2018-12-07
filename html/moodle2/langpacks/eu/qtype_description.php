@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_description', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_description', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_description
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['pluginname_help'] = 'Deskribapena ez da benetako galdera mota bat. Horr
 
 Galderaren testua saiakera egitean eta berrikusketa orrian erakusten da. Feedback orokorra ordea berrikusketa orrian bakarrik erakusten da.';
 $string['pluginnamesummary'] = 'Gaur egun hau ez da galdera bat. Horren ordez, galdetegiari instrukzioak, izenburua edo beste edukiren bat gehitzeko era da. Ikastaroaren orriari edukia gehitzeko Etiketak erabiltzen dira, eta galdetegietan berriz hau.';
+$string['privacy:metadata'] = 'Deskribapena galdera-mota pluginak ez du datu pertsonalik biltzen.';

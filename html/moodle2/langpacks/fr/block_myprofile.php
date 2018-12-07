@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_myprofile', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,3 +48,4 @@ $string['myprofile:addinstance'] = 'Ajouter un bloc utilisateur connecté';
 $string['myprofile:myaddinstance'] = 'Ajouter un bloc utilisateur connecté au tableau de bord';
 $string['myprofile_settings'] = 'Informations utilisateur visibles';
 $string['pluginname'] = 'Utilisateur connecté';
+$string['privacy:metadata'] = 'Le bloc Utilisateur connecté affiche des informations sur l\'utilisateur connecté et n\'enregistre aucune donnée.';

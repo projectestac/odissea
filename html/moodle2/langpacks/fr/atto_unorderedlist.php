@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_unorderedlist', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_unorderedlist', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_unorderedlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Liste non numérotée';
+$string['privacy:metadata'] = 'Le plugin atto_unorderedlist n\'enregistre aucune donnée personnelle.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,7 +123,7 @@ $string['repeattimes'] = 'Repeteix/publica els horaris de les sessions';
 $string['repeatweekly'] = 'El mateix dia a la mateixa hora cada setmana';
 $string['saidto'] = 'dit a';
 $string['savemessages'] = 'Desa les sessions anteriors';
-$string['search:activity'] = 'Xat - Informació d\'activitat';
+$string['search:activity'] = 'Xat: informació de l\'activitat';
 $string['seesession'] = 'Visualitza aquesta sessió';
 $string['send'] = 'Envia';
 $string['sending'] = 'S\'està enviant';

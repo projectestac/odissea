@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,10 @@ $string['displayselect_help'] = 'URLファイルタイプおよびブラウザ�
 * 新しいウィンドウ - URLは新しいウィンドウ内にメニューおよびアドレスバーと共に表示されます。';
 $string['externalurl'] = '外部URL';
 $string['framesize'] = 'フレーム高';
+$string['indicator:cognitivedepth'] = 'URL認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はURLリソースで学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'URL社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はURLリソースで学生が到達した社会的広がりに基づきます。';
 $string['invalidstoredurl'] = 'URLが無効のためこのリソースを表示できません。';
 $string['invalidurl'] = '入力されたURLが無効です。';
 $string['modulename'] = 'URL';
@@ -67,6 +71,7 @@ $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
 $string['printintro'] = 'URL説明を表示する';
 $string['printintroexplain'] = 'コンテンツの下にURL説明を表示しますか? この設定を有効にした場合でもいくつかの表示タイプでは説明を表示することができません。';
+$string['privacy:metadata'] = 'mod_urlはどのような個人データも保存しません。';
 $string['rolesinparams'] = 'パラメータにロール名を含む';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'サーバURL';

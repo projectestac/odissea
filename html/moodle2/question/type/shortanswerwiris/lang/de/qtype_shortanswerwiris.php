@@ -33,3 +33,4 @@ $string['pluginnamesummary'] = 'Wie bei der standardmäßigen Kurzantwort-Frage.
 $string['pluginnameediting'] = 'Kurzantwort-Frage bearbeiten – Mathematik und Naturwissenschaften von WIRIS';
 $string['pluginnameadding'] = 'Kurzantwort-Frage hinzufügen – Mathematik und Naturwissenschaften von WIRIS';
 $string['contentnotviewable'] = 'Der Inhalt kann nicht angezeigt werden.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Short-Answer question type does not effect or store any data itself.';

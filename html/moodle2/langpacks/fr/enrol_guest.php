@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'Mot de passe incorrect. Veuillez essayer encore.';
 $string['passwordinvalidhint'] = 'Ce mot de passe d\'accès anonyme est incorrect. Veuillez essayer encore<br />(voici un indice : il commence par « {$a} »).';
 $string['pluginname'] = 'Accès anonyme';
 $string['pluginname_desc'] = 'Le plugin accès anonyme n\'autorise qu\'un accès au cours. Il n\'inscrit effectivement pas les utilisateurs';
+$string['privacy:metadata'] = 'Le plugin d\'inscription Accès anonyme n\'enregistre aucune donnée personnelle.';
 $string['requirepassword'] = 'Nécessite un mot de passe pour l\'accès anonyme';
 $string['requirepassword_desc'] = 'Utiliser un mot de passe pour l\'accès anonyme dans les nouveaux cours et empêcher la suppression du mot de passe d\'accès des cours existants.';
 $string['showhint'] = 'Afficher l\'indice';
@@ -42,5 +43,5 @@ $string['showhint_desc'] = 'Afficher la première lettre du mot de passe d\'acc�
 $string['status'] = 'Permettre l\'accès anonyme';
 $string['status_desc'] = 'Permettre par défaut l\'accès anonyme temporaire';
 $string['status_help'] = 'Ce réglage détermine si un utilisateur peut accéder au cours anonymement, sans nécessiter d\'inscription.';
-$string['usepasswordpolicy'] = 'Utiliser les règles de mots de passe';
-$string['usepasswordpolicy_desc'] = 'Utiliser pour les mots de passe d\'accès anonyme les règles de mots de passe standard.';
+$string['usepasswordpolicy'] = 'Utiliser la politique de mots de passe';
+$string['usepasswordpolicy_desc'] = 'Utiliser la politique de mots de passe standard pour les mots de passe d\'accès anonyme.';

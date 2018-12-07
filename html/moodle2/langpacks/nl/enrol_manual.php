@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Geavanceerd';
 $string['alterstatus'] = 'Wijzig status';
 $string['altertimeend'] = 'Wijzig eindtijd';
 $string['altertimestart'] = 'Wijzig starttijd';
 $string['assignrole'] = 'Rol toewijzen';
+$string['assignroles'] = 'Rollen toewijzen';
 $string['browsecohorts'] = 'Blader door site-groepen';
 $string['browseusers'] = 'Blader door gebruikers';
 $string['confirmbulkdeleteenrolment'] = 'Wil je echt deze gebruikersaanmeldingen verwijderen?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Verwijder gebruikersaanmeldingen';
 $string['editselectedusers'] = 'Bewerk geselecteerde gebruikersaanmelding';
 $string['enrolledincourserole'] = 'Aangemeld in "{$a->course}" als "{$a->role}"';
 $string['enrolusers'] = 'Gebruikers aanmelden';
+$string['enroluserscohorts'] = 'Geselecteerde gebruikers en site-groepen aanmelden';
 $string['expiredaction'] = 'Actie bij verlopen van de aanmelding';
 $string['expiredaction_help'] = 'Selecteer een uit te voeren actie wanneer de aanmelding van een gebruiker vervalt. Merk op dat sommige gebruikersgegevens en instellingen gewist zullen worden tijdens het afmelden van de cursus.';
 $string['expirymessageenrolledbody'] = 'Beste {$a->user},
@@ -64,6 +67,10 @@ $string['messageprovider:expiry_notification'] = 'Manuele meldingen voor het ver
 $string['now'] = 'Nu';
 $string['pluginname'] = 'Manuele aanmeldingen';
 $string['pluginname_desc'] = 'Met de manuele aanmeldingsplugin kunnen gebruikers manueel aangemeld worden via een link in het cursusbeheer door een gebruiker met de juiste rechten, zoals een leraar. Deze plugin moet ingeschakeld zijn, vermits ook andere aanmeldingsplugins, zoals zelf aanmelden, dit vereisen.';
+$string['privacy:metadata'] = 'De manuele aanmeldingsplugin bewaart geen persoonlijke gegevens.';
+$string['selectcohorts'] = 'Selecteer site-groepen';
+$string['selection'] = 'Selectie';
+$string['selectusers'] = 'Selecteer gebruikers';
 $string['status'] = 'Manuele aanmeldingen inschakelen';
 $string['status_desc'] = 'Toegang tot de cursus toestaan voor intern aangemelde gebruikers. Dit moet meestal ingeschakeld blijven.';
 $string['statusdisabled'] = 'Uitgeschakeld';

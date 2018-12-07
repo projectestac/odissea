@@ -140,6 +140,36 @@ class mssql_sql_generator extends sql_generator {
         return $tablename;
     }
 
+    public function getCreateIndexSQL($xmldb_table, $xmldb_index) {
+        list($indexsql) = parent::getCreateIndexSQL($xmldb_table, $xmldb_index);
+
+        // Unique indexes need to work-around non-standard SQL server behaviour.
+        if ($xmldb_index->getUnique()) {
+            // Find any nullable columns. We need to add a
+            // WHERE field IS NOT NULL to the index definition for each one.
+            //
+            // For example if you have a unique index on the three columns
+            // (required, option1, option2) where the first one is non-null,
+            // and the others nullable, then the SQL will end up as
+            //
+            // CREATE UNIQUE INDEX index_name ON table_name (required, option1, option2)
+            // WHERE option1 IS NOT NULL AND option2 IS NOT NULL
+            //
+            // The first line comes from parent calls above. The WHERE is added below.
+            $extraconditions = [];
+            foreach ($this->get_nullable_fields_in_index($xmldb_table, $xmldb_index) as $fieldname) {
+                $extraconditions[] = $this->getEncQuoted($fieldname) .
+                        ' IS NOT NULL';
+            }
+
+            if ($extraconditions) {
+                $indexsql .= ' WHERE ' . implode(' AND ', $extraconditions);
+            }
+        }
+
+        return [$indexsql];
+    }
+
     /**
      * Given one correct xmldb_table, returns the SQL statements
      * to create temporary table (inside one array).
@@ -287,8 +317,16 @@ class mssql_sql_generator extends sql_generator {
             return array();
         }
 
-        // Call to standard (parent) getRenameFieldSQL() function
-        $results = array_merge($results, parent::getRenameFieldSQL($xmldb_table, $xmldb_field, $newname));
+        // We can't call to standard (parent) getRenameFieldSQL() function since it would enclose the field name
+        // with improper quotes in MSSQL: here, we use a stored procedure to rename the field i.e. a column object;
+        // we need to take care about how this stored procedure expects parameters to be "qualified".
+        $rename = str_replace('TABLENAME', $this->getTableName($xmldb_table), $this->rename_column_sql);
+        // Qualifying the column object could require brackets: use them, regardless the column name not being a reserved word.
+        $rename = str_replace('OLDFIELDNAME', '[' . $xmldb_field->getName() . ']', $rename);
+        // The new field name should be passed as the actual name, w/o any quote.
+        $rename = str_replace('NEWFIELDNAME', $newname, $rename);
+
+        $results[] = $rename;
 
         return $results;
     }
@@ -548,9 +586,9 @@ class mssql_sql_generator extends sql_generator {
         $fieldname = $xmldb_field->getName();
 
         // Look for any default constraint in this field and drop it
-        if ($default = $this->mdb->get_record_sql("SELECT id, object_name(cdefault) AS defaultconstraint
-                                                     FROM syscolumns
-                                                    WHERE id = object_id(?)
+        if ($default = $this->mdb->get_record_sql("SELECT object_id, object_name(default_object_id) AS defaultconstraint
+                                                     FROM sys.columns
+                                                    WHERE object_id = object_id(?)
                                                           AND name = ?", array($tablename, $fieldname))) {
             return $default->defaultconstraint;
         } else {
@@ -607,7 +645,7 @@ class mssql_sql_generator extends sql_generator {
             case 'fk':
             case 'ck':
                 if ($check = $this->mdb->get_records_sql("SELECT name
-                                                            FROM sysobjects
+                                                            FROM sys.objects
                                                            WHERE lower(name) = ?", array(strtolower($object_name)))) {
                     return true;
                 }
@@ -615,7 +653,7 @@ class mssql_sql_generator extends sql_generator {
             case 'ix':
             case 'uix':
                 if ($check = $this->mdb->get_records_sql("SELECT name
-                                                            FROM sysindexes
+                                                            FROM sys.indexes
                                                            WHERE lower(name) = ?", array(strtolower($object_name)))) {
                     return true;
                 }
@@ -652,36 +690,29 @@ class mssql_sql_generator extends sql_generator {
     public static function getReservedWords() {
         // This file contains the reserved words for MSSQL databases
         // from http://msdn2.microsoft.com/en-us/library/ms189822.aspx
+        // Should be identical to sqlsrv_native_moodle_database::$reservewords.
         $reserved_words = array (
-            'add', 'all', 'alter', 'and', 'any', 'as', 'asc', 'authorization',
-            'avg', 'backup', 'begin', 'between', 'break', 'browse', 'bulk',
-            'by', 'cascade', 'case', 'check', 'checkpoint', 'close', 'clustered',
-            'coalesce', 'collate', 'column', 'commit', 'committed', 'compute',
-            'confirm', 'constraint', 'contains', 'containstable', 'continue',
-            'controlrow', 'convert', 'count', 'create', 'cross', 'current',
-            'current_date', 'current_time', 'current_timestamp', 'current_user',
-            'cursor', 'database', 'dbcc', 'deallocate', 'declare', 'default', 'delete',
-            'deny', 'desc', 'disk', 'distinct', 'distributed', 'double', 'drop', 'dummy',
-            'dump', 'else', 'end', 'errlvl', 'errorexit', 'escape', 'except', 'exec',
-            'execute', 'exists', 'exit', 'external', 'fetch', 'file', 'fillfactor', 'floppy',
-            'for', 'foreign', 'freetext', 'freetexttable', 'from', 'full', 'function',
-            'goto', 'grant', 'group', 'having', 'holdlock', 'identity', 'identitycol',
-            'identity_insert', 'if', 'in', 'index', 'inner', 'insert', 'intersect', 'into',
-            'is', 'isolation', 'join', 'key', 'kill', 'left', 'level', 'like', 'lineno',
-            'load', 'max', 'min', 'mirrorexit', 'national', 'nocheck', 'nonclustered',
-            'not', 'null', 'nullif', 'of', 'off', 'offsets', 'on', 'once', 'only', 'open',
-            'opendatasource', 'openquery', 'openrowset', 'openxml', 'option', 'or', 'order',
-            'outer', 'over', 'percent', 'perm', 'permanent', 'pipe', 'pivot', 'plan', 'precision',
-            'prepare', 'primary', 'print', 'privileges', 'proc', 'procedure', 'processexit',
-            'public', 'raiserror', 'read', 'readtext', 'reconfigure', 'references',
-            'repeatable', 'replication', 'restore', 'restrict', 'return', 'revoke',
-            'right', 'rollback', 'rowcount', 'rowguidcol', 'rule', 'save', 'schema',
-            'select', 'serializable', 'session_user', 'set', 'setuser', 'shutdown', 'some',
-            'statistics', 'sum', 'system_user', 'table', 'tape', 'temp', 'temporary',
-            'textsize', 'then', 'to', 'top', 'tran', 'transaction', 'trigger', 'truncate',
-            'tsequal', 'uncommitted', 'union', 'unique', 'update', 'updatetext', 'use',
-            'user', 'values', 'varying', 'view', 'waitfor', 'when', 'where', 'while',
-            'with', 'work', 'writetext'
+            "add", "all", "alter", "and", "any", "as", "asc", "authorization", "avg", "backup", "begin", "between", "break",
+            "browse", "bulk", "by", "cascade", "case", "check", "checkpoint", "close", "clustered", "coalesce", "collate", "column",
+            "commit", "committed", "compute", "confirm", "constraint", "contains", "containstable", "continue", "controlrow",
+            "convert", "count", "create", "cross", "current", "current_date", "current_time", "current_timestamp", "current_user",
+            "cursor", "database", "dbcc", "deallocate", "declare", "default", "delete", "deny", "desc", "disk", "distinct",
+            "distributed", "double", "drop", "dummy", "dump", "else", "end", "errlvl", "errorexit", "escape", "except", "exec",
+            "execute", "exists", "exit", "external", "fetch", "file", "fillfactor", "floppy", "for", "foreign", "freetext",
+            "freetexttable", "from", "full", "function", "goto", "grant", "group", "having", "holdlock", "identity",
+            "identity_insert", "identitycol", "if", "in", "index", "inner", "insert", "intersect", "into", "is", "isolation",
+            "join", "key", "kill", "left", "level", "like", "lineno", "load", "max", "merge", "min", "mirrorexit", "national",
+            "nocheck", "nonclustered", "not", "null", "nullif", "of", "off", "offsets", "on", "once", "only", "open",
+            "opendatasource", "openquery", "openrowset", "openxml", "option", "or", "order", "outer", "over", "percent", "perm",
+            "permanent", "pipe", "pivot", "plan", "precision", "prepare", "primary", "print", "privileges", "proc", "procedure",
+            "processexit", "public", "raiserror", "read", "readtext", "reconfigure", "references", "repeatable", "replication",
+            "restore", "restrict", "return", "revert", "revoke", "right", "rollback", "rowcount", "rowguidcol", "rule", "save",
+            "schema", "securityaudit", "select", "semantickeyphrasetable", "semanticsimilaritydetailstable",
+            "semanticsimilaritytable", "serializable", "session_user", "set", "setuser", "shutdown", "some", "statistics", "sum",
+            "system_user", "table", "tablesample", "tape", "temp", "temporary", "textsize", "then", "to", "top", "tran",
+            "transaction", "trigger", "truncate", "try_convert", "tsequal", "uncommitted", "union", "unique", "unpivot", "update",
+            "updatetext", "use", "user", "values", "varying", "view", "waitfor", "when", "where", "while", "with", "within group",
+            "work", "writetext"
         );
         return $reserved_words;
     }

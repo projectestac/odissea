@@ -1866,7 +1866,7 @@ abstract class admin_setting {
         }
 
         $callbackfunction = $this->updatedcallback;
-        if (!empty($callbackfunction) and function_exists($callbackfunction)) {
+        if (!empty($callbackfunction) and is_callable($callbackfunction)) {
             $callbackfunction($this->get_full_name());
         }
         return true;
@@ -2946,6 +2946,8 @@ class admin_setting_configmulticheckbox2 extends admin_setting_configmulticheckb
 class admin_setting_configselect extends admin_setting {
     /** @var array Array of choices value=>label */
     public $choices;
+    /** @var array Array of choices grouped using optgroups */
+    public $optgroups;
 
     /**
      * Constructor
@@ -2956,7 +2958,19 @@ class admin_setting_configselect extends admin_setting {
      * @param array $choices array of $value=>$label for each selection
      */
     public function __construct($name, $visiblename, $description, $defaultsetting, $choices) {
-        $this->choices = $choices;
+        // Look for optgroup and single options.
+        if (is_array($choices)) {
+            $this->choices = [];
+            foreach ($choices as $key => $val) {
+                if (is_array($val)) {
+                    $this->optgroups[$key] = $val;
+                    $this->choices = array_merge($this->choices, $val);
+                } else {
+                    $this->choices[$key] = $val;
+                }
+            }
+        }
+
         parent::__construct($name, $visiblename, $description, $defaultsetting);
     }
 
@@ -3089,6 +3103,27 @@ class admin_setting_configselect extends admin_setting {
         }
 
         $options = [];
+        $template = 'core_admin/setting_configselect';
+
+        if (!empty($this->optgroups)) {
+            $optgroups = [];
+            foreach ($this->optgroups as $label => $choices) {
+                $optgroup = array('label' => $label, 'options' => []);
+                foreach ($choices as $value => $name) {
+                    $optgroup['options'][] = [
+                        'value' => $value,
+                        'name' => $name,
+                        'selected' => (string) $value == $data
+                    ];
+                    unset($this->choices[$value]);
+                }
+                $optgroups[] = $optgroup;
+            }
+            $context->options = $options;
+            $context->optgroups = $optgroups;
+            $template = 'core_admin/setting_configselect_optgroup';
+        }
+
         foreach ($this->choices as $value => $name) {
             $options[] = [
                 'value' => $value,
@@ -3098,7 +3133,7 @@ class admin_setting_configselect extends admin_setting {
         }
         $context->options = $options;
 
-        $element = $OUTPUT->render_from_template('core_admin/setting_configselect', $context);
+        $element = $OUTPUT->render_from_template($template, $context);
 
         return format_admin_setting($this, $this->visiblename, $element, $this->description, true, $warning, $defaultinfo, $query);
     }
@@ -3221,6 +3256,29 @@ class admin_setting_configmultiselect extends admin_setting_configselect {
 
         $defaults = [];
         $options = [];
+        $template = 'core_admin/setting_configmultiselect';
+
+        if (!empty($this->optgroups)) {
+            $optgroups = [];
+            foreach ($this->optgroups as $label => $choices) {
+                $optgroup = array('label' => $label, 'options' => []);
+                foreach ($choices as $value => $name) {
+                    if (in_array($value, $default)) {
+                        $defaults[] = $name;
+                    }
+                    $optgroup['options'][] = [
+                        'value' => $value,
+                        'name' => $name,
+                        'selected' => in_array($value, $data)
+                    ];
+                    unset($this->choices[$value]);
+                }
+                $optgroups[] = $optgroup;
+            }
+            $context->optgroups = $optgroups;
+            $template = 'core_admin/setting_configmultiselect_optgroup';
+        }
+
         foreach ($this->choices as $value => $name) {
             if (in_array($value, $default)) {
                 $defaults[] = $name;
@@ -3241,7 +3299,7 @@ class admin_setting_configmultiselect extends admin_setting_configselect {
             $defaultinfo = get_string('none');
         }
 
-        $element = $OUTPUT->render_from_template('core_admin/setting_configmultiselect', $context);
+        $element = $OUTPUT->render_from_template($template, $context);
 
         return format_admin_setting($this, $this->visiblename, $element, $this->description, true, '', $defaultinfo, $query);
     }
@@ -5063,6 +5121,28 @@ class admin_setting_configselect_with_advanced extends admin_setting_configselec
 
 }
 
+/**
+ * Select with an advanced checkbox that controls an additional $name.'_locked' config setting.
+ *
+ * @copyright 2017 Marina Glancy
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class admin_setting_configselect_with_lock extends admin_setting_configselect {
+    /**
+     * Constructor
+     * @param string $name unique ascii name, either 'mysetting' for settings that in config,
+     *     or 'myplugin/mysetting' for ones in config_plugins.
+     * @param string $visiblename localised
+     * @param string $description long localised info
+     * @param array $defaultsetting ('value'=>string, 'locked'=>bool)
+     * @param array $choices array of $value=>$label for each selection
+     */
+    public function __construct($name, $visiblename, $description, $defaultsetting, $choices) {
+        parent::__construct($name, $visiblename, $description, $defaultsetting['value'], $choices);
+        $this->set_locked_flag_options(admin_setting_flag::ENABLED, !empty($defaultsetting['locked']));
+    }
+}
+
 
 /**
  * Graded roles in gradebook
@@ -5122,8 +5202,9 @@ class admin_setting_special_coursecontact extends admin_setting_pickroles {
         parent::__construct('coursecontact', get_string('coursecontact', 'admin'),
             get_string('coursecontact_desc', 'admin'),
             array('editingteacher'));
-        $this->set_updatedcallback(create_function('',
-                "cache::make('core', 'coursecontacts')->purge();"));
+        $this->set_updatedcallback(function (){
+            cache::make('core', 'coursecontacts')->purge();
+        });
     }
 }
 
@@ -5885,13 +5966,13 @@ class admin_setting_manageenrols extends admin_setting {
             if (isset($active_enrols[$enrol])) {
                 $aurl = new moodle_url($url, array('action'=>'disable', 'enrol'=>$enrol));
                 $hideshow = "<a href=\"$aurl\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/hide') . "\" class=\"iconsmall\" alt=\"$strdisable\" /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/hide', $strdisable) . '</a>';
                 $enabled = true;
                 $displayname = $name;
             } else if (isset($enrols_available[$enrol])) {
                 $aurl = new moodle_url($url, array('action'=>'enable', 'enrol'=>$enrol));
                 $hideshow = "<a href=\"$aurl\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/show') . "\" class=\"iconsmall\" alt=\"$strenable\" /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/show', $strenable) . '</a>';
                 $enabled = false;
                 $displayname = $name;
                 $class = 'dimmed_text';
@@ -5912,16 +5993,16 @@ class admin_setting_manageenrols extends admin_setting {
                 if ($updowncount > 1) {
                     $aurl = new moodle_url($url, array('action'=>'up', 'enrol'=>$enrol));
                     $updown .= "<a href=\"$aurl\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/up') . "\" alt=\"$strup\" class=\"iconsmall\" /></a>&nbsp;";
+                    $updown .= $OUTPUT->pix_icon('t/up', $strup) . '</a>&nbsp;';
                 } else {
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('spacer') . "\" class=\"iconsmall\" alt=\"\" />&nbsp;";
+                    $updown .= $OUTPUT->spacer() . '&nbsp;';
                 }
                 if ($updowncount < $enrolcount) {
                     $aurl = new moodle_url($url, array('action'=>'down', 'enrol'=>$enrol));
                     $updown .= "<a href=\"$aurl\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/down') . "\" alt=\"$strdown\" class=\"iconsmall\" /></a>";
+                    $updown .= $OUTPUT->pix_icon('t/down', $strdown) . '</a>&nbsp;';
                 } else {
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('spacer') . "\" class=\"iconsmall\" alt=\"\" />";
+                    $updown .= $OUTPUT->spacer() . '&nbsp;';
                 }
                 ++$updowncount;
             }
@@ -6424,14 +6505,12 @@ class admin_setting_manageauths extends admin_setting {
 
         //add always enabled plugins first
         $displayname = $displayauths['manual'];
-        $settings = "<a href=\"auth_config.php?auth=manual\">{$txt->settings}</a>";
-        //$settings = "<a href=\"settings.php?section=authsettingmanual\">{$txt->settings}</a>";
+        $settings = "<a href=\"settings.php?section=authsettingmanual\">{$txt->settings}</a>";
         $usercount = $DB->count_records('user', array('auth'=>'manual', 'deleted'=>0));
         $table->data[] = array($displayname, $usercount, '', '', $settings, '', '');
         $displayname = $displayauths['nologin'];
-        $settings = "<a href=\"auth_config.php?auth=nologin\">{$txt->settings}</a>";
         $usercount = $DB->count_records('user', array('auth'=>'nologin', 'deleted'=>0));
-        $table->data[] = array($displayname, $usercount, '', '', $settings, '', '');
+        $table->data[] = array($displayname, $usercount, '', '', '', '', '');
 
 
         // iterate through auth plugins and add to the display table
@@ -6446,15 +6525,13 @@ class admin_setting_manageauths extends admin_setting {
             // hide/show link
             if (in_array($auth, $authsenabled)) {
                 $hideshow = "<a href=\"$url&amp;action=disable&amp;auth=$auth\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/hide') . "\" class=\"iconsmall\" alt=\"disable\" /></a>";
-                // $hideshow = "<a href=\"$url&amp;action=disable&amp;auth=$auth\"><input type=\"checkbox\" checked /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/hide', get_string('disable')) . '</a>';
                 $enabled = true;
                 $displayname = $name;
             }
             else {
                 $hideshow = "<a href=\"$url&amp;action=enable&amp;auth=$auth\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/show') . "\" class=\"iconsmall\" alt=\"enable\" /></a>";
-                // $hideshow = "<a href=\"$url&amp;action=enable&amp;auth=$auth\"><input type=\"checkbox\" /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/show', get_string('enable')) . '</a>';
                 $enabled = false;
                 $displayname = $name;
                 $class = 'dimmed_text';
@@ -6467,17 +6544,17 @@ class admin_setting_manageauths extends admin_setting {
             if ($enabled) {
                 if ($updowncount > 1) {
                     $updown .= "<a href=\"$url&amp;action=up&amp;auth=$auth\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/up') . "\" alt=\"up\" class=\"iconsmall\" /></a>&nbsp;";
+                    $updown .= $OUTPUT->pix_icon('t/up', get_string('moveup')) . '</a>&nbsp;';
                 }
                 else {
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('spacer') . "\" class=\"iconsmall\" alt=\"\" />&nbsp;";
+                    $updown .= $OUTPUT->spacer() . '&nbsp;';
                 }
                 if ($updowncount < $authcount) {
                     $updown .= "<a href=\"$url&amp;action=down&amp;auth=$auth\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/down') . "\" alt=\"down\" class=\"iconsmall\" /></a>";
+                    $updown .= $OUTPUT->pix_icon('t/down', get_string('movedown')) . '</a>&nbsp;';
                 }
                 else {
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('spacer') . "\" class=\"iconsmall\" alt=\"\" />";
+                    $updown .= $OUTPUT->spacer() . '&nbsp;';
                 }
                 ++ $updowncount;
             }
@@ -6485,8 +6562,10 @@ class admin_setting_manageauths extends admin_setting {
             // settings link
             if (file_exists($CFG->dirroot.'/auth/'.$auth.'/settings.php')) {
                 $settings = "<a href=\"settings.php?section=authsetting$auth\">{$txt->settings}</a>";
-            } else {
+            } else if (file_exists($CFG->dirroot.'/auth/'.$auth.'/config.html')) {
                 $settings = "<a href=\"auth_config.php?auth=$auth\">{$txt->settings}</a>";
+            } else {
+                $settings = '';
             }
 
             // Uninstall link.
@@ -6634,15 +6713,13 @@ class admin_setting_manageeditors extends admin_setting {
             $class = '';
             if (in_array($editor, $active_editors)) {
                 $hideshow = "<a href=\"$url&amp;action=disable&amp;editor=$editor\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/hide') . "\" class=\"iconsmall\" alt=\"disable\" /></a>";
-                // $hideshow = "<a href=\"$url&amp;action=disable&amp;editor=$editor\"><input type=\"checkbox\" checked /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/hide', get_string('disable')) . '</a>';
                 $enabled = true;
                 $displayname = $name;
             }
             else {
                 $hideshow = "<a href=\"$url&amp;action=enable&amp;editor=$editor\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/show') . "\" class=\"iconsmall\" alt=\"enable\" /></a>";
-                // $hideshow = "<a href=\"$url&amp;action=enable&amp;editor=$editor\"><input type=\"checkbox\" /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/show', get_string('enable')) . '</a>';
                 $enabled = false;
                 $displayname = $name;
                 $class = 'dimmed_text';
@@ -6653,17 +6730,17 @@ class admin_setting_manageeditors extends admin_setting {
             if ($enabled) {
                 if ($updowncount > 1) {
                     $updown .= "<a href=\"$url&amp;action=up&amp;editor=$editor\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/up') . "\" alt=\"up\" class=\"iconsmall\" /></a>&nbsp;";
+                    $updown .= $OUTPUT->pix_icon('t/up', get_string('moveup')) . '</a>&nbsp;';
                 }
                 else {
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('spacer') . "\" class=\"iconsmall\" alt=\"\" />&nbsp;";
+                    $updown .= $OUTPUT->spacer() . '&nbsp;';
                 }
                 if ($updowncount < $editorcount) {
                     $updown .= "<a href=\"$url&amp;action=down&amp;editor=$editor\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/down') . "\" alt=\"down\" class=\"iconsmall\" /></a>";
+                    $updown .= $OUTPUT->pix_icon('t/down', get_string('movedown')) . '</a>&nbsp;';
                 }
                 else {
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('spacer') . "\" class=\"iconsmall\" alt=\"\" />";
+                    $updown .= $OUTPUT->spacer() . '&nbsp;';
                 }
                 ++ $updowncount;
             }
@@ -6813,14 +6890,14 @@ class admin_setting_manageantiviruses extends admin_setting {
             if (in_array($antivirus, $activeantiviruses)) {
                 $hideshowurl = $baseurl;
                 $hideshowurl->params(array('action' => 'disable', 'antivirus' => $antivirus));
-                $hideshowimg = html_writer::img($OUTPUT->pix_url('t/hide'), 'disable', array('class' => 'iconsmall'));
+                $hideshowimg = $OUTPUT->pix_icon('t/hide', get_string('disable'));
                 $hideshow = html_writer::link($hideshowurl, $hideshowimg);
                 $enabled = true;
                 $displayname = $name;
             } else {
                 $hideshowurl = $baseurl;
                 $hideshowurl->params(array('action' => 'enable', 'antivirus' => $antivirus));
-                $hideshowimg = html_writer::img($OUTPUT->pix_url('t/show'), 'enable', array('class' => 'iconsmall'));
+                $hideshowimg = $OUTPUT->pix_icon('t/show', get_string('enable'));
                 $hideshow = html_writer::link($hideshowurl, $hideshowimg);
                 $enabled = false;
                 $displayname = $name;
@@ -6833,18 +6910,18 @@ class admin_setting_manageantiviruses extends admin_setting {
                 if ($updowncount > 1) {
                     $updownurl = $baseurl;
                     $updownurl->params(array('action' => 'up', 'antivirus' => $antivirus));
-                    $updownimg = html_writer::img($OUTPUT->pix_url('t/up'), 'up', array('class' => 'iconsmall'));
+                    $updownimg = $OUTPUT->pix_icon('t/up', get_string('moveup'));
                     $updown = html_writer::link($updownurl, $updownimg);
                 } else {
-                    $updown .= html_writer::img($OUTPUT->pix_url('spacer'), '', array('class' => 'iconsmall'));
+                    $updownimg = $OUTPUT->spacer();
                 }
                 if ($updowncount < $antiviruscount) {
                     $updownurl = $baseurl;
                     $updownurl->params(array('action' => 'down', 'antivirus' => $antivirus));
-                    $updownimg = html_writer::img($OUTPUT->pix_url('t/down'), 'down', array('class' => 'iconsmall'));
+                    $updownimg = $OUTPUT->pix_icon('t/down', get_string('movedown'));
                     $updown = html_writer::link($updownurl, $updownimg);
                 } else {
-                    $updown .= html_writer::img($OUTPUT->pix_url('spacer'), '', array('class' => 'iconsmall'));
+                    $updownimg = $OUTPUT->spacer();
                 }
                 ++ $updowncount;
             }
@@ -6950,14 +7027,14 @@ class admin_setting_managelicenses extends admin_setting {
 
             if ($value->enabled == 1) {
                 $hideshow = html_writer::link($url.'&action=disable&license='.$value->shortname,
-                    html_writer::tag('img', '', array('src'=>$OUTPUT->pix_url('t/hide'), 'class'=>'iconsmall', 'alt'=>'disable')));
+                    $OUTPUT->pix_icon('t/hide', get_string('disable')));
             } else {
                 $hideshow = html_writer::link($url.'&action=enable&license='.$value->shortname,
-                    html_writer::tag('img', '', array('src'=>$OUTPUT->pix_url('t/show'), 'class'=>'iconsmall', 'alt'=>'enable')));
+                    $OUTPUT->pix_icon('t/show', get_string('enable')));
             }
 
             if ($value->shortname == $CFG->sitedefaultlicense) {
-                $displayname .= ' '.html_writer::tag('img', '', array('src'=>$OUTPUT->pix_url('t/locked'), 'class'=>'iconsmall', 'alt'=>get_string('default'), 'title'=>get_string('default')));
+                $displayname .= ' '.$OUTPUT->pix_icon('t/locked', get_string('default'));
                 $hideshow = '';
             }
 
@@ -7327,6 +7404,232 @@ class admin_page_managefilters extends admin_externalpage {
 }
 
 /**
+ * Generic class for managing plugins in a table that allows re-ordering and enable/disable of each plugin.
+ * Requires a get_rank method on the plugininfo class for sorting.
+ *
+ * @copyright 2017 Damyon Wiese
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+abstract class admin_setting_manage_plugins extends admin_setting {
+
+    /**
+     * Get the admin settings section name (just a unique string)
+     *
+     * @return string
+     */
+    public function get_section_name() {
+        return 'manage' . $this->get_plugin_type() . 'plugins';
+    }
+
+    /**
+     * Get the admin settings section title (use get_string).
+     *
+     * @return string
+     */
+    abstract public function get_section_title();
+
+    /**
+     * Get the type of plugin to manage.
+     *
+     * @return string
+     */
+    abstract public function get_plugin_type();
+
+    /**
+     * Get the name of the second column.
+     *
+     * @return string
+     */
+    public function get_info_column_name() {
+        return '';
+    }
+
+    /**
+     * Get the type of plugin to manage.
+     *
+     * @param plugininfo The plugin info class.
+     * @return string
+     */
+    abstract public function get_info_column($plugininfo);
+
+    /**
+     * Calls parent::__construct with specific arguments
+     */
+    public function __construct() {
+        $this->nosave = true;
+        parent::__construct($this->get_section_name(), $this->get_section_title(), '', '');
+    }
+
+    /**
+     * Always returns true, does nothing
+     *
+     * @return true
+     */
+    public function get_setting() {
+        return true;
+    }
+
+    /**
+     * Always returns true, does nothing
+     *
+     * @return true
+     */
+    public function get_defaultsetting() {
+        return true;
+    }
+
+    /**
+     * Always returns '', does not write anything
+     *
+     * @param mixed $data
+     * @return string Always returns ''
+     */
+    public function write_setting($data) {
+        // Do not write any setting.
+        return '';
+    }
+
+    /**
+     * Checks if $query is one of the available plugins of this type
+     *
+     * @param string $query The string to search for
+     * @return bool Returns true if found, false if not
+     */
+    public function is_related($query) {
+        if (parent::is_related($query)) {
+            return true;
+        }
+
+        $query = core_text::strtolower($query);
+        $plugins = core_plugin_manager::instance()->get_plugins_of_type($this->get_plugin_type());
+        foreach ($plugins as $name => $plugin) {
+            $localised = $plugin->displayname;
+            if (strpos(core_text::strtolower($name), $query) !== false) {
+                return true;
+            }
+            if (strpos(core_text::strtolower($localised), $query) !== false) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * The URL for the management page for this plugintype.
+     *
+     * @return moodle_url
+     */
+    protected function get_manage_url() {
+        return new moodle_url('/admin/updatesetting.php');
+    }
+
+    /**
+     * Builds the HTML to display the control.
+     *
+     * @param string $data Unused
+     * @param string $query
+     * @return string
+     */
+    public function output_html($data, $query = '') {
+        global $CFG, $OUTPUT, $DB, $PAGE;
+
+        $context = (object) [
+            'manageurl' => new moodle_url($this->get_manage_url(), [
+                    'type' => $this->get_plugin_type(),
+                    'sesskey' => sesskey(),
+                ]),
+            'infocolumnname' => $this->get_info_column_name(),
+            'plugins' => [],
+        ];
+
+        $pluginmanager = core_plugin_manager::instance();
+        $allplugins = $pluginmanager->get_plugins_of_type($this->get_plugin_type());
+        $enabled = $pluginmanager->get_enabled_plugins($this->get_plugin_type());
+        $plugins = array_merge($enabled, $allplugins);
+        foreach ($plugins as $key => $plugin) {
+            $pluginlink = new moodle_url($context->manageurl, ['plugin' => $key]);
+
+            $pluginkey = (object) [
+                'plugin' => $plugin->displayname,
+                'enabled' => $plugin->is_enabled(),
+                'togglelink' => '',
+                'moveuplink' => '',
+                'movedownlink' => '',
+                'settingslink' => $plugin->get_settings_url(),
+                'uninstalllink' => '',
+                'info' => '',
+            ];
+
+            // Enable/Disable link.
+            $togglelink = new moodle_url($pluginlink);
+            if ($plugin->is_enabled()) {
+                $toggletarget = false;
+                $togglelink->param('action', 'disable');
+
+                if (count($context->plugins)) {
+                    // This is not the first plugin.
+                    $pluginkey->moveuplink = new moodle_url($pluginlink, ['action' => 'up']);
+                }
+
+                if (count($enabled) > count($context->plugins) + 1) {
+                    // This is not the last plugin.
+                    $pluginkey->movedownlink = new moodle_url($pluginlink, ['action' => 'down']);
+                }
+
+                $pluginkey->info = $this->get_info_column($plugin);
+            } else {
+                $toggletarget = true;
+                $togglelink->param('action', 'enable');
+            }
+
+            $pluginkey->toggletarget = $toggletarget;
+            $pluginkey->togglelink = $togglelink;
+
+            $frankenstyle = $plugin->type . '_' . $plugin->name;
+            if ($uninstalllink = core_plugin_manager::instance()->get_uninstall_url($frankenstyle, 'manage')) {
+                // This plugin supports uninstallation.
+                $pluginkey->uninstalllink = $uninstalllink;
+            }
+
+            if (!empty($this->get_info_column_name())) {
+                // This plugintype has an info column.
+                $pluginkey->info = $this->get_info_column($plugin);
+            }
+
+            $context->plugins[] = $pluginkey;
+        }
+
+        $str = $OUTPUT->render_from_template('core_admin/setting_manage_plugins', $context);
+        return highlight($query, $str);
+    }
+}
+
+/**
+ * Generic class for managing plugins in a table that allows re-ordering and enable/disable of each plugin.
+ * Requires a get_rank method on the plugininfo class for sorting.
+ *
+ * @copyright 2017 Andrew Nicols <andrew@nicols.co.uk>
+* @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class admin_setting_manage_fileconverter_plugins extends admin_setting_manage_plugins {
+    public function get_section_title() {
+        return get_string('type_fileconverter_plural', 'plugin');
+    }
+
+    public function get_plugin_type() {
+        return 'fileconverter';
+    }
+
+    public function get_info_column_name() {
+        return get_string('supportedconversions', 'plugin');
+    }
+
+    public function get_info_column($plugininfo) {
+        return $plugininfo->get_supported_conversions();
+    }
+}
+
+/**
  * Special class for media player plugins management.
  *
  * @copyright 2016 Marina Glancy
@@ -7667,9 +7970,7 @@ function admin_externalpage_setup($section, $extrabutton = '', array $extraurlpa
  * @return object admin_root object
  */
 function admin_get_root($reload=false, $requirefulltree=true) {
-    global $CFG, $DB, $OUTPUT;
-
-    static $ADMIN = NULL;
+    global $CFG, $DB, $OUTPUT, $ADMIN;
 
     if (is_null($ADMIN)) {
     // create the admin tree!
@@ -8339,14 +8640,14 @@ class admin_setting_managerepository extends admin_setting {
 
                 if ($updowncount > 1) {
                     $updown .= "<a href=\"$this->baseurl&amp;action=moveup&amp;repos=".$typename."\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/up') . "\" alt=\"up\" class=\"iconsmall\" /></a>&nbsp;";
+                    $updown .= $OUTPUT->pix_icon('t/up', get_string('moveup')) . '</a>&nbsp;';
                 }
                 else {
                     $updown .= $spacer;
                 }
                 if ($updowncount < $totalrepositorytypes) {
                     $updown .= "<a href=\"$this->baseurl&amp;action=movedown&amp;repos=".$typename."\">";
-                    $updown .= "<img src=\"" . $OUTPUT->pix_url('t/down') . "\" alt=\"down\" class=\"iconsmall\" /></a>";
+                    $updown .= $OUTPUT->pix_icon('t/down', get_string('movedown')) . '</a>&nbsp;';
                 }
                 else {
                     $updown .= $spacer;
@@ -8444,8 +8745,10 @@ class admin_setting_enablemobileservice extends admin_setting_configcheckbox {
         $html = parent::output_html($data, $query);
 
         if ((string)$data === $this->yes) {
-            if (!is_https()) {
-               $html .= $OUTPUT->notification(get_string('nohttpsformobilewarning', 'admin'));
+            $notifications = tool_mobile\api::get_potential_config_issues(); // Safe to call, plugin available if we reach here.
+            foreach ($notifications as $notification) {
+                $message = get_string($notification[0], $notification[1]);
+                $html .= $OUTPUT->notification($message, \core\output\notification::NOTIFY_WARNING);
             }
         }
 
@@ -9161,11 +9464,11 @@ class admin_setting_managewebserviceprotocols extends admin_setting {
             // hide/show link
             if (in_array($protocol, $active_protocols)) {
                 $hideshow = "<a href=\"$url&amp;action=disable&amp;webservice=$protocol\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/hide') . "\" class=\"iconsmall\" alt=\"$strdisable\" /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/hide', $strdisable) . '</a>';
                 $displayname = "<span>$name</span>";
             } else {
                 $hideshow = "<a href=\"$url&amp;action=enable&amp;webservice=$protocol\">";
-                $hideshow .= "<img src=\"" . $OUTPUT->pix_url('t/show') . "\" class=\"iconsmall\" alt=\"$strenable\" /></a>";
+                $hideshow .= $OUTPUT->pix_icon('t/show', $strenable) . '</a>';
                 $displayname = "<span class=\"dimmed_text\">$name</span>";
             }
 
@@ -9239,83 +9542,28 @@ class admin_setting_managewebservicetokens extends admin_setting {
      * @return string
      */
     public function output_html($data, $query='') {
-        global $CFG, $OUTPUT, $DB, $USER;
+        global $CFG, $OUTPUT;
 
-        // display strings
-        $stroperation = get_string('operation', 'webservice');
-        $strtoken = get_string('token', 'webservice');
-        $strservice = get_string('service', 'webservice');
-        $struser = get_string('user');
-        $strcontext = get_string('context', 'webservice');
-        $strvaliduntil = get_string('validuntil', 'webservice');
-        $striprestriction = get_string('iprestriction', 'webservice');
+        require_once($CFG->dirroot . '/webservice/classes/token_table.php');
+        $baseurl = new moodle_url('/' . $CFG->admin . '/settings.php?section=webservicetokens');
 
         $return = $OUTPUT->box_start('generalbox webservicestokenui');
 
-        $table = new html_table();
-        $table->head  = array($strtoken, $struser, $strservice, $striprestriction, $strvaliduntil, $stroperation);
-        $table->colclasses = array('leftalign', 'leftalign', 'leftalign', 'centeralign', 'centeralign', 'centeralign');
-        $table->id = 'webservicetokens';
-        $table->attributes['class'] = 'admintable generaltable';
+        if (has_capability('moodle/webservice:managealltokens', context_system::instance())) {
+            $return .= \html_writer::div(get_string('onlyseecreatedtokens', 'webservice'));
+        }
+
+        $table = new \webservice\token_table('webservicetokens');
+        $table->define_baseurl($baseurl);
+        $table->attributes['class'] = 'admintable generaltable'; // Any need changing?
         $table->data  = array();
+        ob_start();
+        $table->out(10, false);
+        $tablehtml = ob_get_contents();
+        ob_end_clean();
+        $return .= $tablehtml;
 
         $tokenpageurl = "$CFG->wwwroot/$CFG->admin/webservice/tokens.php?sesskey=" . sesskey();
-
-        //TODO: in order to let the administrator delete obsolete token, split this request in multiple request or use LEFT JOIN
-
-        //here retrieve token list (including linked users firstname/lastname and linked services name)
-        $sql = "SELECT t.id, t.token, u.id AS userid, u.firstname, u.lastname, s.name, t.iprestriction, t.validuntil, s.id AS serviceid
-                  FROM {external_tokens} t, {user} u, {external_services} s
-                 WHERE t.creatorid=? AND t.tokentype = ? AND s.id = t.externalserviceid AND t.userid = u.id";
-        $tokens = $DB->get_records_sql($sql, array($USER->id, EXTERNAL_TOKEN_PERMANENT));
-        if (!empty($tokens)) {
-            foreach ($tokens as $token) {
-                //TODO: retrieve context
-
-                $delete = "<a href=\"".$tokenpageurl."&amp;action=delete&amp;tokenid=".$token->id."\">";
-                $delete .= get_string('delete')."</a>";
-
-                $validuntil = '';
-                if (!empty($token->validuntil)) {
-                    $validuntil = userdate($token->validuntil, get_string('strftimedatetime', 'langconfig'));
-                }
-
-                $iprestriction = '';
-                if (!empty($token->iprestriction)) {
-                    $iprestriction = $token->iprestriction;
-                }
-
-                $userprofilurl = new moodle_url('/user/profile.php?id='.$token->userid);
-                $useratag = html_writer::start_tag('a', array('href' => $userprofilurl));
-                $useratag .= $token->firstname." ".$token->lastname;
-                $useratag .= html_writer::end_tag('a');
-
-                //check user missing capabilities
-                require_once($CFG->dirroot . '/webservice/lib.php');
-                $webservicemanager = new webservice();
-                $usermissingcaps = $webservicemanager->get_missing_capabilities_by_users(
-                        array(array('id' => $token->userid)), $token->serviceid);
-
-                if (!is_siteadmin($token->userid) and
-                        array_key_exists($token->userid, $usermissingcaps)) {
-                    $missingcapabilities = implode(', ',
-                            $usermissingcaps[$token->userid]);
-                    if (!empty($missingcapabilities)) {
-                        $useratag .= html_writer::tag('div',
-                                        get_string('usermissingcaps', 'webservice',
-                                                $missingcapabilities)
-                                        . '&nbsp;' . $OUTPUT->help_icon('missingcaps', 'webservice'),
-                                        array('class' => 'missingcaps'));
-                    }
-                }
-
-                $table->data[] = array($token->token, $useratag, $token->name, $iprestriction, $validuntil, $delete);
-            }
-
-            $return .= html_writer::table($table);
-        } else {
-            $return .= get_string('notoken', 'webservice');
-        }
 
         $return .= $OUTPUT->box_end();
         // add a token to the table
@@ -10233,6 +10481,214 @@ class admin_setting_scsscode extends admin_setting_configtextarea {
             // Silently ignore this - it could be a scss variable defined from somewhere
             // else which we are not examining here.
             return true;
+        }
+
+        return true;
+    }
+}
+
+
+/**
+ * Administration setting to define a list of file types.
+ *
+ * @copyright 2016 Jonathon Fowler <fowlerj@usq.edu.au>
+ * @copyright 2017 David Mudrák <david@moodle.com>
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class admin_setting_filetypes extends admin_setting_configtext {
+
+    /** @var array Allow selection from these file types only. */
+    protected $onlytypes = [];
+
+    /** @var bool Allow selection of 'All file types' (will be stored as '*'). */
+    protected $allowall = true;
+
+    /** @var core_form\filetypes_util instance to use as a helper. */
+    protected $util = null;
+
+    /**
+     * Constructor.
+     *
+     * @param string $name Unique ascii name like 'mycoresetting' or 'myplugin/mysetting'
+     * @param string $visiblename Localised label of the setting
+     * @param string $description Localised description of the setting
+     * @param string $defaultsetting Default setting value.
+     * @param array $options Setting widget options, an array with optional keys:
+     *   'onlytypes' => array Allow selection from these file types only; for example ['onlytypes' => ['web_image']].
+     *   'allowall' => bool Allow to select 'All file types', defaults to true. Does not apply if onlytypes are set.
+     */
+    public function __construct($name, $visiblename, $description, $defaultsetting = '', array $options = []) {
+
+        parent::__construct($name, $visiblename, $description, $defaultsetting, PARAM_RAW);
+
+        if (array_key_exists('onlytypes', $options) && is_array($options['onlytypes'])) {
+            $this->onlytypes = $options['onlytypes'];
+        }
+
+        if (!$this->onlytypes && array_key_exists('allowall', $options)) {
+            $this->allowall = (bool)$options['allowall'];
+        }
+
+        $this->util = new \core_form\filetypes_util();
+    }
+
+    /**
+     * Normalize the user's input and write it to the database as comma separated list.
+     *
+     * Comma separated list as a text representation of the array was chosen to
+     * make this compatible with how the $CFG->courseoverviewfilesext values are stored.
+     *
+     * @param string $data Value submitted by the admin.
+     * @return string Epty string if all good, error message otherwise.
+     */
+    public function write_setting($data) {
+        return parent::write_setting(implode(',', $this->util->normalize_file_types($data)));
+    }
+
+    /**
+     * Validate data before storage
+     *
+     * @param string $data The setting values provided by the admin
+     * @return bool|string True if ok, the string if error found
+     */
+    public function validate($data) {
+
+        // No need to call parent's validation here as we are PARAM_RAW.
+
+        if ($this->util->is_whitelisted($data, $this->onlytypes)) {
+            return true;
+
+        } else {
+            $troublemakers = $this->util->get_not_whitelisted($data, $this->onlytypes);
+            return get_string('filetypesnotwhitelisted', 'core_form', implode(' ', $troublemakers));
+        }
+    }
+
+    /**
+     * Return an HTML string for the setting element.
+     *
+     * @param string $data The current setting value
+     * @param string $query Admin search query to be highlighted
+     * @return string HTML to be displayed
+     */
+    public function output_html($data, $query='') {
+        global $OUTPUT, $PAGE;
+
+        $default = $this->get_defaultsetting();
+        $context = (object) [
+            'id' => $this->get_id(),
+            'name' => $this->get_full_name(),
+            'value' => $data,
+            'descriptions' => $this->util->describe_file_types($data),
+        ];
+        $element = $OUTPUT->render_from_template('core_admin/setting_filetypes', $context);
+
+        $PAGE->requires->js_call_amd('core_form/filetypes', 'init', [
+            $this->get_id(),
+            $this->visiblename->out(),
+            $this->onlytypes,
+            $this->allowall,
+        ]);
+
+        return format_admin_setting($this, $this->visiblename, $element, $this->description, true, '', $default, $query);
+    }
+
+    /**
+     * Should the values be always displayed in LTR mode?
+     *
+     * We always return true here because these values are not RTL compatible.
+     *
+     * @return bool True because these values are not RTL compatible.
+     */
+    public function get_force_ltr() {
+        return true;
+    }
+}
+
+/**
+ * Used to validate the content and format of the age of digital consent map and ensuring it is parsable.
+ *
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 2018 Mihail Geshoski <mihail@moodle.com>
+ */
+class admin_setting_agedigitalconsentmap extends admin_setting_configtextarea {
+
+    /**
+     * Constructor.
+     *
+     * @param string $name
+     * @param string $visiblename
+     * @param string $description
+     * @param mixed $defaultsetting string or array
+     * @param mixed $paramtype
+     * @param string $cols
+     * @param string $rows
+     */
+    public function __construct($name, $visiblename, $description, $defaultsetting, $paramtype = PARAM_RAW,
+                                $cols = '60', $rows = '8') {
+        parent::__construct($name, $visiblename, $description, $defaultsetting, $paramtype, $cols, $rows);
+        // Pre-set force LTR to false.
+        $this->set_force_ltr(false);
+    }
+
+    /**
+     * Validate the content and format of the age of digital consent map to ensure it is parsable.
+     *
+     * @param string $data The age of digital consent map from text field.
+     * @return mixed bool true for success or string:error on failure.
+     */
+    public function validate($data) {
+        if (empty($data)) {
+            return true;
+        }
+
+        try {
+            \core_auth\digital_consent::parse_age_digital_consent_map($data);
+        } catch (\moodle_exception $e) {
+            return get_string('invalidagedigitalconsent', 'admin', $e->getMessage());
+        }
+
+        return true;
+    }
+}
+
+/**
+ * Selection of plugins that can work as site policy handlers
+ *
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 2018 Marina Glancy
+ */
+class admin_settings_sitepolicy_handler_select extends admin_setting_configselect {
+
+    /**
+     * Constructor
+     * @param string $name unique ascii name, either 'mysetting' for settings that in config, or 'myplugin/mysetting'
+     *        for ones in config_plugins.
+     * @param string $visiblename localised
+     * @param string $description long localised info
+     * @param string $defaultsetting
+     */
+    public function __construct($name, $visiblename, $description, $defaultsetting = '') {
+        parent::__construct($name, $visiblename, $description, $defaultsetting, null);
+    }
+
+    /**
+     * Lazy-load the available choices for the select box
+     */
+    public function load_choices() {
+        if (during_initial_install()) {
+            return false;
+        }
+        if (is_array($this->choices)) {
+            return true;
+        }
+
+        $this->choices = ['' => new lang_string('sitepolicyhandlercore', 'core_admin')];
+        $manager = new \core_privacy\local\sitepolicy\manager();
+        $plugins = $manager->get_all_handlers();
+        foreach ($plugins as $pname => $unused) {
+            $this->choices[$pname] = new lang_string('sitepolicyhandlerplugin', 'core_admin',
+                ['name' => new lang_string('pluginname', $pname), 'component' => $pname]);
         }
 
         return true;

@@ -233,4 +233,227 @@ class mod_scorm_lib_testcase extends externallib_advanced_testcase {
     public function test_scorm_get_last_completed_attempt() {
         $this->assertEquals(1, scorm_get_last_completed_attempt($this->scorm->id, $this->student->id));
     }
+
+    public function test_scorm_core_calendar_provide_event_action_open() {
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+
+        // Create a course.
+        $course = $this->getDataGenerator()->create_course();
+
+        // Create a scorm activity.
+        $scorm = $this->getDataGenerator()->create_module('scorm', array('course' => $course->id,
+            'timeopen' => time() - DAYSECS, 'timeclose' => time() + DAYSECS));
+
+        // Create a calendar event.
+        $event = $this->create_action_event($course->id, $scorm->id, SCORM_EVENT_TYPE_OPEN);
+
+        // Only students see scorm events.
+        $this->setUser($this->student);
+
+        // Create an action factory.
+        $factory = new \core_calendar\action_factory();
+
+        // Decorate action event.
+        $actionevent = mod_scorm_core_calendar_provide_event_action($event, $factory);
+
+        // Confirm the event was decorated.
+        $this->assertInstanceOf('\core_calendar\local\event\value_objects\action', $actionevent);
+        $this->assertEquals(get_string('enter', 'scorm'), $actionevent->get_name());
+        $this->assertInstanceOf('moodle_url', $actionevent->get_url());
+        $this->assertEquals(1, $actionevent->get_item_count());
+        $this->assertTrue($actionevent->is_actionable());
+    }
+
+    public function test_scorm_core_calendar_provide_event_action_closed() {
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+
+        // Create a course.
+        $course = $this->getDataGenerator()->create_course();
+
+        // Create a scorm activity.
+        $scorm = $this->getDataGenerator()->create_module('scorm', array('course' => $course->id,
+            'timeclose' => time() - DAYSECS));
+
+        // Create a calendar event.
+        $event = $this->create_action_event($course->id, $scorm->id, SCORM_EVENT_TYPE_OPEN);
+
+        // Create an action factory.
+        $factory = new \core_calendar\action_factory();
+
+        // Decorate action event.
+        $actionevent = mod_scorm_core_calendar_provide_event_action($event, $factory);
+
+        // No event on the dashboard if module is closed.
+        $this->assertNull($actionevent);
+    }
+
+    public function test_scorm_core_calendar_provide_event_action_open_in_future() {
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+
+        // Create a course.
+        $course = $this->getDataGenerator()->create_course();
+
+        // Create a scorm activity.
+        $scorm = $this->getDataGenerator()->create_module('scorm', array('course' => $course->id,
+            'timeopen' => time() + DAYSECS));
+
+        // Create a calendar event.
+        $event = $this->create_action_event($course->id, $scorm->id, SCORM_EVENT_TYPE_OPEN);
+
+        // Only students see scorm events.
+        $this->setUser($this->student);
+
+        // Create an action factory.
+        $factory = new \core_calendar\action_factory();
+
+        // Decorate action event.
+        $actionevent = mod_scorm_core_calendar_provide_event_action($event, $factory);
+
+        // Confirm the event was decorated.
+        $this->assertInstanceOf('\core_calendar\local\event\value_objects\action', $actionevent);
+        $this->assertEquals(get_string('enter', 'scorm'), $actionevent->get_name());
+        $this->assertInstanceOf('moodle_url', $actionevent->get_url());
+        $this->assertEquals(1, $actionevent->get_item_count());
+        $this->assertFalse($actionevent->is_actionable());
+    }
+
+    public function test_scorm_core_calendar_provide_event_action_no_time_specified() {
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+
+        // Create a course.
+        $course = $this->getDataGenerator()->create_course();
+
+        // Create a scorm activity.
+        $scorm = $this->getDataGenerator()->create_module('scorm', array('course' => $course->id));
+
+        // Create a calendar event.
+        $event = $this->create_action_event($course->id, $scorm->id, SCORM_EVENT_TYPE_OPEN);
+
+        // Only students see scorm events.
+        $this->setUser($this->student);
+
+        // Create an action factory.
+        $factory = new \core_calendar\action_factory();
+
+        // Decorate action event.
+        $actionevent = mod_scorm_core_calendar_provide_event_action($event, $factory);
+
+        // Confirm the event was decorated.
+        $this->assertInstanceOf('\core_calendar\local\event\value_objects\action', $actionevent);
+        $this->assertEquals(get_string('enter', 'scorm'), $actionevent->get_name());
+        $this->assertInstanceOf('moodle_url', $actionevent->get_url());
+        $this->assertEquals(1, $actionevent->get_item_count());
+        $this->assertTrue($actionevent->is_actionable());
+    }
+
+    /**
+     * Creates an action event.
+     *
+     * @param int $courseid
+     * @param int $instanceid The data id.
+     * @param string $eventtype The event type. eg. DATA_EVENT_TYPE_OPEN.
+     * @return bool|calendar_event
+     */
+    private function create_action_event($courseid, $instanceid, $eventtype) {
+        $event = new stdClass();
+        $event->name = 'Calendar event';
+        $event->modulename = 'scorm';
+        $event->courseid = $courseid;
+        $event->instance = $instanceid;
+        $event->type = CALENDAR_EVENT_TYPE_ACTION;
+        $event->eventtype = $eventtype;
+        $event->timestart = time();
+
+        return calendar_event::create($event);
+    }
+
+    /**
+     * Test the callback responsible for returning the completion rule descriptions.
+     * This function should work given either an instance of the module (cm_info), such as when checking the active rules,
+     * or if passed a stdClass of similar structure, such as when checking the the default completion settings for a mod type.
+     */
+    public function test_mod_scorm_completion_get_active_rule_descriptions() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        // Two activities, both with automatic completion. One has the 'completionsubmit' rule, one doesn't.
+        $course = $this->getDataGenerator()->create_course(['enablecompletion' => 2]);
+        $scorm1 = $this->getDataGenerator()->create_module('scorm', [
+            'course' => $course->id,
+            'completion' => 2,
+            'completionstatusrequired' => 6,
+            'completionscorerequired' => 5,
+            'completionstatusallscos' => 1
+        ]);
+        $scorm2 = $this->getDataGenerator()->create_module('scorm', [
+            'course' => $course->id,
+            'completion' => 2,
+            'completionstatusrequired' => null,
+            'completionscorerequired' => null,
+            'completionstatusallscos' => null
+        ]);
+        $cm1 = cm_info::create(get_coursemodule_from_instance('scorm', $scorm1->id));
+        $cm2 = cm_info::create(get_coursemodule_from_instance('scorm', $scorm2->id));
+
+        // Data for the stdClass input type.
+        // This type of input would occur when checking the default completion rules for an activity type, where we don't have
+        // any access to cm_info, rather the input is a stdClass containing completion and customdata attributes, just like cm_info.
+        $moddefaults = new stdClass();
+        $moddefaults->customdata = ['customcompletionrules' => [
+            'completionstatusrequired' => 6,
+            'completionscorerequired' => 5,
+            'completionstatusallscos' => 1
+        ]];
+        $moddefaults->completion = 2;
+
+        // Determine the selected statuses using a bitwise operation.
+        $cvalues = array();
+        foreach (scorm_status_options(true) as $key => $value) {
+            if (($scorm1->completionstatusrequired & $key) == $key) {
+                $cvalues[] = $value;
+            }
+        }
+        $statusstring = implode(', ', $cvalues);
+
+        $activeruledescriptions = [
+            get_string('completionstatusrequireddesc', 'scorm', $statusstring),
+            get_string('completionscorerequireddesc', 'scorm', $scorm1->completionscorerequired),
+            get_string('completionstatusallscos', 'scorm'),
+        ];
+        $this->assertEquals(mod_scorm_get_completion_active_rule_descriptions($cm1), $activeruledescriptions);
+        $this->assertEquals(mod_scorm_get_completion_active_rule_descriptions($cm2), []);
+        $this->assertEquals(mod_scorm_get_completion_active_rule_descriptions($moddefaults), $activeruledescriptions);
+        $this->assertEquals(mod_scorm_get_completion_active_rule_descriptions(new stdClass()), []);
+    }
+
+    /**
+     * A user who does not have capabilities to add events to the calendar should be able to create a SCORM.
+     */
+    public function test_creation_with_no_calendar_capabilities() {
+        $this->resetAfterTest();
+        $course = self::getDataGenerator()->create_course();
+        $context = context_course::instance($course->id);
+        $user = self::getDataGenerator()->create_and_enrol($course, 'editingteacher');
+        $roleid = self::getDataGenerator()->create_role();
+        self::getDataGenerator()->role_assign($roleid, $user->id, $context->id);
+        assign_capability('moodle/calendar:manageentries', CAP_PROHIBIT, $roleid, $context, true);
+        $generator = self::getDataGenerator()->get_plugin_generator('mod_scorm');
+        // Create an instance as a user without the calendar capabilities.
+        $this->setUser($user);
+        $time = time();
+        $params = array(
+            'course' => $course->id,
+            'timeopen' => $time + 200,
+            'timeclose' => $time + 2000,
+        );
+        $generator->create_instance($params);
+    }
 }

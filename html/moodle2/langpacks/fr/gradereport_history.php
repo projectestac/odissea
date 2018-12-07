@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_history', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,7 @@ $string['history:view'] = 'Consulter l\'historique d\'évaluation';
 $string['loadmoreusers'] = 'Charger plus d\'utilisateurs';
 $string['pluginname'] = 'Historique d\'évaluation';
 $string['preferences'] = 'Réglages de l\'historique d\'évaluation';
+$string['privacy:metadata'] = 'Le Rapport d\'historique d\'évaluation affiche seulement des données enregistrées à d\'autres endroits.';
 $string['revisedonly'] = 'Seulement les notes révisées';
 $string['revisedonly_help'] = 'N\'afficher que les notes révisées.
 

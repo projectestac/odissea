@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -334,6 +334,29 @@ $string['permissionmove'] = 'Move this question';
 $string['permissionsaveasnew'] = 'Save this as a new question';
 $string['permissionto'] = 'You have permission to :';
 $string['previewquestion'] = 'Preview question: {$a}';
+$string['privacy:metadata:database:question'] = 'The details about an specific question.';
+$string['privacy:metadata:database:question_attempts'] = 'The information about an attempt at a specific question.';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'An indication that the user has flagged this question within the attempt.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'A summary of the question response.';
+$string['privacy:metadata:database:question_attempt_step_data'] = 'Question attempt steps may have additional data specific to that step. The data is stored in the step_data table.';
+$string['privacy:metadata:database:question_attempt_step_data:name'] = 'The name of the data item.';
+$string['privacy:metadata:database:question_attempt_step_data:value'] = 'The value of the data item.';
+$string['privacy:metadata:database:question_attempt_steps'] = 'Each question attempt has a number of steps to indicate the different phases from beginning to completion to marking. This table stores the information for each of these steps.';
+$string['privacy:metadata:database:question_attempt_steps:fraction'] = 'The grade that was awarded to this question attempt scaled to a value out of 1.';
+$string['privacy:metadata:database:question_attempt_steps:state'] = 'The state of this question attempt step at the end of the step transition.';
+$string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'The date and time that this step transition begun.';
+$string['privacy:metadata:database:question_attempt_steps:userid'] = 'The user who performed the step transition.';
+$string['privacy:metadata:database:question_attempts:timemodified'] = 'The time that the question attempt was updated.';
+$string['privacy:metadata:database:question:createdby'] = 'The person who created the question.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'The general feedback for this question.';
+$string['privacy:metadata:database:question:modifiedby'] = 'The person who last updated the question.';
+$string['privacy:metadata:database:question:name'] = 'The name of the question.';
+$string['privacy:metadata:database:question:questiontext'] = 'The question text.';
+$string['privacy:metadata:database:question:timecreated'] = 'The date and time when this question was created.';
+$string['privacy:metadata:database:question:timemodified'] = 'The date and time when this question was updated.';
+$string['privacy:metadata:link:qbehaviour'] = 'The Question subsystem makes use of the Question Behaviour plugintype.';
+$string['privacy:metadata:link:qformat'] = 'The Question subsystem makes use of the Question Format plugintype for the purpose of importing and exporting questions in different formats.';
+$string['privacy:metadata:link:qtype'] = 'The Question subsystem interacts with the Question Type plugintype which contains the different types of questions.';
 $string['published'] = 'shared';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">Question "{$a->name}" ({$a->qtype})</a> is in this question category but is also being used in <a href="{$a->qurl}">quiz "{$a->quizname}"</a> in another course "{$a->coursename}".';
@@ -392,6 +415,7 @@ $string['specificfeedback_help'] = 'Feedback that depends on what response the s
 $string['started'] = 'Started';
 $string['state'] = 'State';
 $string['step'] = 'Step';
+$string['steps'] = 'Steps';
 $string['stoponerror'] = 'Stop on error';
 $string['stoponerror_help'] = 'This setting determines whether the import process stops when an error is detected, resulting in no questions being imported, or whether any questions containing errors are ignored and any valid questions are imported.';
 $string['submissionoutofsequence'] = 'Access out of sequence. Please do not click the back button when working on quiz questions.';

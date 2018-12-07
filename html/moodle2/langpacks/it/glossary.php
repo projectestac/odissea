@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,6 +90,7 @@ $string['comments'] = 'Commenti';
 $string['commentson'] = 'Commenti su';
 $string['commentupdated'] = 'Il commento è stato aggiornato';
 $string['completionentries'] = 'Lo studente deve inserire il seguente numero di voci:';
+$string['completionentriesdesc'] = 'Lo studente deve inserire il seguente numero di voci: {$a}';
 $string['completionentriesgroup'] = 'Numero di voci';
 $string['concept'] = 'Concetto';
 $string['concepts'] = 'Concetti';
@@ -107,6 +108,7 @@ $string['defaultsortorder'] = 'Priorità di ordinamento di default';
 $string['definition'] = 'Definizione';
 $string['definitions'] = 'Definizioni';
 $string['deleteentry'] = 'Elimina voce';
+$string['deleteentrya'] = 'Elimina voce: {$a}';
 $string['deletenotenrolled'] = 'Elimina le voci inserite da utenti non iscritti';
 $string['deletingcomment'] = 'Eliminazione commento';
 $string['deletingnoneemptycategory'] = 'Eliminando questa categoria, non verranno comunque eliminate le voci in essa contenute, le voci saranno contrassegnate come non categorizzate.';
@@ -140,6 +142,7 @@ $string['editalways'] = 'Consenti di modificare sempre';
 $string['editalways_help'] = 'L\'impostazione determina se le voci saranno sempre modificabili oppure no. Nel secondo caso i partecipanti le potranno modificare ed eliminare all\'interno di un prefissato intervallo di tempo (di norma 30 minuti).';
 $string['editcategories'] = 'Modifica categorie';
 $string['editentry'] = 'Modifica voce';
+$string['editentrya'] = 'Modifica voce: {$a}';
 $string['editingcomment'] = 'Modifica commento';
 $string['entbypage'] = 'Termini visualizzati per pagina';
 $string['entries'] = 'Voci';
@@ -213,6 +216,10 @@ $string['importedentries'] = 'Voci importate';
 $string['importentries'] = 'Importa voci';
 $string['importentriesfromxml'] = 'Importa voci da file XML';
 $string['includegroupbreaks'] = 'Visualizza separazione dei gruppi';
+$string['indicator:cognitivedepth'] = 'Glossario cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'glossario\'.';
+$string['indicator:socialbreadth'] = 'Glossario sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'glossario\'.';
 $string['isglobal'] = 'Glossario globale';
 $string['isglobal_help'] = 'le voci di un glossario globale sono collegati automaticamente in tutto il sito. Solo gli amministratori possono impostare glossari globali.';
 $string['letter'] = 'alfabetico';
@@ -227,7 +234,7 @@ $string['modulename_help'] = 'Il modulo di attività Glossario consente  ai part
 
 Un docente può consentire di allegare file alle definizioni delle voci. I file allegati di tipo immagine vengono visualizzati assieme alla definizione.  E\' possibile cercare voci oppure ordinarle alfabeticamente per categoria, data o autore. Per default le voci e le definizioni inserite sono considerati approvate, tuttavia,  prima di rendere la voce visibile a tutti i partecipanti. è anche possibile impostare l\'approvazione da parte di un docente
 
-Tramite l\'attivazione del filtro \'Link automatici al glossario\' le voci potranno essere collegate automaticamente quando la voce compare nei testi del corso.
+Tramite l\'attivazione del filtro \'Collegamento automatico alle voci di glossario\' le voci potranno essere collegate automaticamente quando la voce compare nei testi del corso.
 
 Un docente può anche consentire l\'inserimento di commenti alle voci. Le voci possono essere valutate sia dal docente sia dagli studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro del valutatore.
 
@@ -267,6 +274,7 @@ $string['printviewnotallowed'] = 'La visualizzazione per la stampa non è permes
 $string['question'] = 'Domanda';
 $string['rejectedentries'] = 'Voci rifiutate';
 $string['rejectionrpt'] = 'Report voci non approvate';
+$string['removeallglossarytags'] = 'Elimina tutti i tag del glossario';
 $string['resetglossaries'] = 'Elimina voci da';
 $string['resetglossariesall'] = 'Elimina voci da tutti i glossari';
 $string['rssarticles'] = 'Numero di articoli RSS';
@@ -291,6 +299,8 @@ $string['sortchronogically'] = 'Ordina cronologicamente per';
 $string['special'] = 'Caratteri speciali';
 $string['standardview'] = 'Visualizza in ordine alfabetico';
 $string['studentcanpost'] = 'Gli studenti possono inserire termini';
+$string['tagarea_glossary_entries'] = 'Voci di glossario';
+$string['tagsdeleted'] = 'I tag del glossario sono stati eliminati';
 $string['totalentries'] = 'Totale voci';
 $string['usedynalink'] = 'Collega automaticamente le voci di glossario';
 $string['usedynalink_help'] = 'Se l\'amministratore ha abilitato il collegamento automatico delle voci a livello di sito e questa opzione  è selezionata, il form per aggiungere nuovi termini includerà l\'opzione per il collegamento automatico della voce in tutto il corso.';

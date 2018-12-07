@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_profile', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['op_isequalto'] = '次の文字と等しい';
 $string['op_isnotempty'] = '空白ではない';
 $string['op_startswith'] = '次の文字で始まる';
 $string['pluginname'] = 'プロファイルによる制限';
+$string['privacy:metadata'] = 'プロファイルによる制限プラグインはどのような個人データも保存しません。';
 $string['requires_contains'] = 'あなたの <strong>{$a->field}</strong> に <strong>{$a->value}</strong> が含まれている場合';
 $string['requires_doesnotcontain'] = 'あなたの <strong>{$a->field}</strong> に <strong>{$a->value}</strong> が含まれていない場合';
 $string['requires_endswith'] = 'あなたの <strong>{$a->field}</strong> が <strong>{$a->value}</strong> で終わっている場合';

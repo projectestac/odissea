@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,13 +54,14 @@ $string['err_maxscoreisnegative'] = 'La nota máxima no es válida, los valores 
 $string['err_maxscorenotnumeric'] = 'La puntuación máxima del criterio debe ser numérica';
 $string['err_nocomment'] = 'El comentario no puede dejarse en blanco';
 $string['err_nodescription'] = 'La descripción para los estudiantes no puede dejarse en blanco';
-$string['err_nodescriptionmarkers'] = 'La descricpción para los evaluadores no puede dejarse en blanco';
+$string['err_nodescriptionmarkers'] = 'La descripción para los evaluadores no puede dejarse en blanco';
 $string['err_nomaxscore'] = 'La puntuación máxima del criterio no puede dejarse en blanco';
 $string['err_noshortname'] = 'El nombre del criterio no puede dejarse en blanco';
 $string['err_scoreinvalid'] = 'La puntuación dada a {$a->criterianame} no es válida, la puntuación máxima es: {$a->maxscore}';
 $string['err_scoreisnegative'] = 'La puntuación dada a \'{$a->criterianame}\' no es válida, los valores negativos no están permitidos.';
 $string['err_shortnametoolong'] = 'El criterio para establecer un nombre obliga a incluir menos de 256 caracteres';
 $string['gradingof'] = 'Calificando {$a}';
+$string['guide'] = 'Guía de evaluación';
 $string['guidemappingexplained'] = 'ADVERTENCIA: Esta guía de evaluación puede puntuarse como máximo hasta {$a->maxscore} puntos, pero la puntuación máxima establecida para la actividad es de {$a->modulegrade} puntos.
 
 La puntuación máxima de la guía de evaluación se modificada proporcionalmente para hacerla equivalente a la calificación máxima de la tarea. Las calificaciones intermedias también se convertirán y redondearán según este criterio.';

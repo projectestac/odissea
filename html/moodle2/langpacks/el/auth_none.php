@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_none', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_none
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Οι χρήστες μπορούν να συνδεθούν και να δημιουργήσουν έγκυρους λογαριασμούς αμέσως, χωρίς πιστοποίηση έναντι σε έναν εξωτερικό εξυπηρετητή και χωρίς επιβεβαίωση μέσω ηλεκτρονικού ταχυδρομείου. Να είστε προσεκτικοί χρησιμοποιώντας αυτήν την επιλογή - σκεφτείτε τα προβλήματα ασφάλειας και διαχείρισης που αυτό θα μπορούσε να προκαλέσει.';
-$string['pluginname'] = 'Χωρίς αυθεντικοποίηση';
+$string['pluginname'] = 'Χωρίς πιστοποίηση';

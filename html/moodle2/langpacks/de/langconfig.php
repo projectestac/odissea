@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'langconfig', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['backupnameformat'] = '%Y%m%d-%H%M';
 $string['decsep'] = ',';
 $string['firstdayofweek'] = '1';
 $string['iso6391'] = 'de';
-$string['iso6392'] = 'ger';
+$string['iso6392'] = 'deu';
 $string['labelsep'] = ': ';
 $string['listsep'] = ';';
 $string['locale'] = 'de_DE.UTF-8';
@@ -51,6 +51,8 @@ $string['strftimemonthyear'] = '%B %Y';
 $string['strftimerecent'] = '%d. %b, %H:%M';
 $string['strftimerecentfull'] = '%a, %d. %b %Y, %H:%M';
 $string['strftimetime'] = '%H:%M';
+$string['strftimetime12'] = '%I:%M %p';
+$string['strftimetime24'] = '%H:%M';
 $string['thisdirection'] = 'ltr';
 $string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = 'Deutsch';

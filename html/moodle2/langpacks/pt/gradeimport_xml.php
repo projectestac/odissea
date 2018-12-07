@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeimport_xml', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,5 +39,6 @@ $string['importxml'] = 'Importar XML';
 $string['importxml_help'] = 'As notas podem ser importadas através de um ficheiro XML que contenha os números de ID dos utilizadores, e os números de ID das atividades.
 Para obter o formato correto, primeiro exporte algumas notas para um ficheiro XML e visualize-o.';
 $string['pluginname'] = 'Ficheiro XML';
+$string['privacy:metadata'] = 'O módulo Importar ficheiro XML não armazena dados pessoais.';
 $string['xml:publish'] = 'Publicar notas importadas a partir do ficheiro XML';
 $string['xml:view'] = 'Importar notas a partir do ficheiro XML';

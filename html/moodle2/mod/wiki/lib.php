@@ -53,7 +53,13 @@ function wiki_add_instance($wiki) {
     if (empty($wiki->forceformat)) {
         $wiki->forceformat = 0;
     }
-    return $DB->insert_record('wiki', $wiki);
+
+    $id = $DB->insert_record('wiki', $wiki);
+
+    $completiontimeexpected = !empty($wiki->completionexpected) ? $wiki->completionexpected : null;
+    \core_completion\api::update_completion_date_event($wiki->coursemodule, 'wiki', $id, $completiontimeexpected);
+
+    return $id;
 }
 
 /**
@@ -72,6 +78,9 @@ function wiki_update_instance($wiki) {
     if (empty($wiki->forceformat)) {
         $wiki->forceformat = 0;
     }
+
+    $completiontimeexpected = !empty($wiki->completionexpected) ? $wiki->completionexpected : null;
+    \core_completion\api::update_completion_date_event($wiki->coursemodule, 'wiki', $wiki->id, $completiontimeexpected);
 
     # May have to add extra stuff in here #
 
@@ -134,6 +143,9 @@ function wiki_delete_instance($id) {
             $result = false;
         }
     }
+
+    $cm = get_coursemodule_from_instance('wiki', $id);
+    \core_completion\api::update_completion_date_event($cm->id, 'wiki', $wiki->id, null);
 
     # Delete any dependent records here #
     if (!$DB->delete_records('wiki', array('id' => $wiki->id))) {
@@ -218,6 +230,12 @@ function wiki_reset_userdata($data) {
             }
         }
     }
+
+    // Any changes to the list of dates that needs to be rolled should be same during course restore and course reset.
+    // See MDL-9367.
+    shift_course_mod_dates('wiki', array('editbegin', 'editend'), $data->timeshift, $data->courseid);
+    $status[] = array('component' => $componentstr, 'item' => get_string('datechanged'), 'error' => false);
+
     return $status;
 }
 
@@ -466,7 +484,7 @@ function wiki_search_form($cm, $search = '', $subwiki = null) {
         $output .= '<input name="subwikiid" type="hidden" value="' . $subwiki->id . '" />';
     }
     $output .= '<input name="searchwikicontent" type="hidden" value="1" />';
-    $output .= '<input value="' . get_string('searchwikis', 'wiki') . '" type="submit" />';
+    $output .= '<input value="' . get_string('searchwikis', 'wiki') . '" class="btn btn-secondary" type="submit" />';
     $output .= '</fieldset>';
     $output .= '</form>';
     $output .= '</div>';
@@ -778,4 +796,60 @@ function wiki_check_updates_since(cm_info $cm, $from, $filter = array()) {
         }
     }
     return $updates;
+}
+
+/**
+ * Get icon mapping for font-awesome.
+ */
+function mod_wiki_get_fontawesome_icon_map() {
+    return [
+        'mod_wiki:attachment' => 'fa-paperclip',
+    ];
+}
+
+/**
+ * This function receives a calendar event and returns the action associated with it, or null if there is none.
+ *
+ * This is used by block_myoverview in order to display the event appropriately. If null is returned then the event
+ * is not displayed on the block.
+ *
+ * @param calendar_event $event
+ * @param \core_calendar\action_factory $factory
+ * @return \core_calendar\local\event\entities\action_interface|null
+ */
+function mod_wiki_core_calendar_provide_event_action(calendar_event $event,
+                                                    \core_calendar\action_factory $factory) {
+    $cm = get_fast_modinfo($event->courseid)->instances['wiki'][$event->instance];
+
+    $completion = new \completion_info($cm->get_course());
+
+    $completiondata = $completion->get_data($cm, false);
+
+    if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
+        return null;
+    }
+
+    return $factory->create_instance(
+        get_string('view'),
+        new \moodle_url('/mod/wiki/view.php', ['id' => $cm->id]),
+        1,
+        true
+    );
+}
+
+/**
+ * Sets dynamic information about a course module
+ *
+ * This callback is called from cm_info when checking module availability (incl. $cm->uservisible)
+ *
+ * Main viewing capability in mod_wiki is 'mod/wiki:viewpage' instead of the expected standardised 'mod/wiki:view'.
+ * The method cm_info::is_user_access_restricted_by_capability() does not work for wiki, we need to implement
+ * this callback.
+ *
+ * @param cm_info $cm
+ */
+function wiki_cm_info_dynamic(cm_info $cm) {
+    if (!has_capability('mod/wiki:viewpage', $cm->context, $cm->get_modinfo()->get_user_id())) {
+        $cm->set_available(false);
+    }
 }

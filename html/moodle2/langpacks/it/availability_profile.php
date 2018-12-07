@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_profile', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['op_isequalto'] = 'è uguale a';
 $string['op_isnotempty'] = 'non è vuoto';
 $string['op_startswith'] = 'inizia con';
 $string['pluginname'] = 'Criterio basato sul profilo utente';
+$string['privacy:metadata'] = 'l plugin "criterio di accesso basato sul profilo utente" non memorizza dati personali.';
 $string['requires_contains'] = 'Il campo <strong>{$a->field}</strong> del tuo profilo deve contenere <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Il campo <strong>{$a->field}</strong> del tuo profilo non deve contenere <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Il campo <strong>{$a->field}</strong> del tuo profilo deve terminare con <strong>{$a->value}</strong>';

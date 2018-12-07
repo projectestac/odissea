@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_date', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['full_from_date'] = '<strong>{$a}</strong> edo ondoren';
 $string['full_until'] = '<strong>{$a}</strong> baino lehen.';
 $string['full_until_date'] = '<strong>{$a}</strong> bukatu baino lehen.';
 $string['pluginname'] = 'Dataren araberako baldintza';
+$string['privacy:metadata'] = 'Dataren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['short_from'] = 'Eskuragarri <strong>{$a}</strong>-(e)tik aurrera';
 $string['short_from_date'] = 'Eskuragarri <strong>{$a}</strong>-(e)tik aurrera';
 $string['short_until'] = 'Eskuragarri <strong>{$a}</strong>-(e)ra arte';

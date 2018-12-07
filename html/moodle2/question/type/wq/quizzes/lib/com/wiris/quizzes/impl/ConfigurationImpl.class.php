@@ -185,7 +185,7 @@ class com_wiris_quizzes_impl_ConfigurationImpl implements com_wiris_quizzes_api_
 	static $DEF_WIRIS_URL = "http://www.wiris.net/demo/wiris";
 	static $DEF_WIRISLAUNCHER_URL = "http://stateful.wiris.net/demo/wiris";
 	static $DEF_CALC_URL = "https://calcme.com";
-	static $DEF_CALC_ENABLED = "false";
+	static $DEF_CALC_ENABLED = "true";
 	static $DEF_EDITOR_URL = "http://www.wiris.net/demo/editor";
 	static $DEF_HAND_URL = "http://www.wiris.net/demo/hand";
 	static $DEF_SERVICE_URL = "http://www.wiris.net/demo/quizzes";
@@ -213,6 +213,10 @@ class com_wiris_quizzes_impl_ConfigurationImpl implements com_wiris_quizzes_api_
 			com_wiris_quizzes_impl_ConfigurationImpl::$config = new com_wiris_quizzes_impl_ConfigurationImpl();
 		}
 		return com_wiris_quizzes_impl_ConfigurationImpl::$config;
+	}
+	static function getUrlKeys() {
+		$urls = new _hx_array(array(com_wiris_quizzes_api_ConfigurationKeys::$WIRIS_URL, com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL, com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL, com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL, com_wiris_quizzes_api_ConfigurationKeys::$HAND_URL, com_wiris_quizzes_api_ConfigurationKeys::$RESOURCES_URL, com_wiris_quizzes_api_ConfigurationKeys::$WIRISLAUNCHER_URL, com_wiris_quizzes_api_ConfigurationKeys::$CALC_URL));
+		return $urls;
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.ConfigurationImpl'; }
 }

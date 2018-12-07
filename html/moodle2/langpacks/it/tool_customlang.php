@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_customlang', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['markinguptodate'] = 'Contrassegno la personalizzazione come aggiornata'
 $string['markinguptodate_help'] = 'Le traduzioni personalizzate possono diventare obsolete se la traduzione inglese o la traduzione master sono state cambiate dopo le personalizzazioni. Puoi rivedere le personalizzazioni e se ritieni che siano corrette fai click su "contrassegna come aggiornato", altrimenti aggiornale.';
 $string['markuptodate'] = 'contrassegna come aggiornata';
 $string['modifiedno'] = 'Non sono presenti stringhe modificate da salvare';
-$string['modifiednum'] = 'Sono presenti {$a} stringhe modificate.Vuoi memorizzare i cambiamenti nel language pack locale?';
+$string['modifiednum'] = 'Sono presenti {$a} stringhe modificate. Vuoi memorizzare i cambiamenti nel language pack locale?';
 $string['nostringsfound'] = 'Non sono state trovate stringhe, per favore modifica le impostazioni di filtraggio';
 $string['placeholder'] = 'Segna posto';
 $string['placeholder_help'] = 'I segna posto sono elementi speciali presenti in una stringa, come ad esempio `{$a}` o `{$a->something}`. Questi elementi vengono sostituiti dinamicamente al momento della visualizzazione.

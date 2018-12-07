@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,23 @@ $string['page-mod-assignment-view'] = '課題モジュールメインページ';
 $string['page-mod-assignment-x'] = 'すべての課題モジュールページ';
 $string['pluginadministration'] = '課題2.2 (無効) 管理';
 $string['pluginname'] = '課題2.2 (無効)';
+$string['privacy:markedsubmissionspath'] = '送信済みの提出です。';
+$string['privacy:metadata:assignmentfilter'] = '課題提出のフィルタプリファレンスです。';
+$string['privacy:metadata:assignmentmailinfo'] = '課題提出のメール情報プリファレンスです。';
+$string['privacy:metadata:assignmentperpage'] = '1ページあたりの課題提出数プリファレンスです。';
+$string['privacy:metadata:assignmentquickgrade'] = '課題提出のクイック評定プリファレンスです。';
+$string['privacy:metadata:assignment_submissions'] = '課題に関連する課題提出です。';
+$string['privacy:metadata:assignment_submissions:data1'] = '課題提出の送信済みオンラインテキストです。';
+$string['privacy:metadata:assignment_submissions:data2'] = '課題提出の追跡ステータスです。 ';
+$string['privacy:metadata:assignment_submissions:grade'] = '課題提出の評点です。';
+$string['privacy:metadata:assignment_submissions:mailed'] = '課題提出のメール通知ステータスです。';
+$string['privacy:metadata:assignment_submissions:numfiles'] = '課題提出に許可された最大ファイル数です。';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = '課題提出に付けられた提出コメントです。';
+$string['privacy:metadata:assignment_submissions:teacher'] = '課題提出を評定する教師ユーザのIDです。';
+$string['privacy:metadata:assignment_submissions:timecreated'] = '課題提出の作成日時です。';
+$string['privacy:metadata:assignment_submissions:timemarked'] = '課題提出の評定日時です。';
+$string['privacy:metadata:assignment_submissions:timemodified'] = '課題提出の修正日時です。';
+$string['privacy:metadata:assignment_submissions:userid'] = '課題提出を送信したユーザのIDです。';
+$string['privacy:submissionpath'] = '提出です。';
 $string['upgradenotification'] = 'この活動は古い課題モジュールに基づきます。';
 $string['viewassignmentupgradetool'] = '課題アップグレードツールを表示する';

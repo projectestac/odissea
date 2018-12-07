@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_standard', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_standard
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['buffersize'] = 'Größe des Schreibpuffers';
 $string['pluginname'] = 'Logdaten Standard';
 $string['pluginname_desc'] = 'Das Plugin speichert die Logdaten in der Moodle-Datenbank.';
+$string['privacy:metadata:log'] = 'Sammlung letzter Ereignisse';
+$string['privacy:metadata:log:anonymous'] = 'Ob Ereignis als anonym gekennzeichnet wurde';
+$string['privacy:metadata:log:eventname'] = 'Ereignisname';
+$string['privacy:metadata:log:ip'] = 'IP-Adresse, die zum Zeitpunkt des Ereignisses genutzt wurde';
+$string['privacy:metadata:log:origin'] = 'Ursprung des Ereignisses';
+$string['privacy:metadata:log:other'] = 'Zusätzliche Informationen zum Ereignis';
+$string['privacy:metadata:log:realuserid'] = 'ID des tatsächlichen Nutzers, derim Namen eines anderen Nutzers tätig war';
+$string['privacy:metadata:log:relateduserid'] = 'ID des Nutzers, der dem Ereignis zugeordnet ist';
+$string['privacy:metadata:log:timecreated'] = 'Zeitpunkt des Ereignisses';
+$string['privacy:metadata:log:userid'] = 'ID des Nutzers, der Ereignis ausgelöst hat';
 $string['taskcleanup'] = 'Logdaten bereinigen';

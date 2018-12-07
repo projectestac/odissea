@@ -245,7 +245,7 @@ function xmldb_enrol_lti_upgrade($oldversion) {
     // Automatically generated Moodle v3.2.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2016120501) {
+    if ($oldversion < 2017011300) {
 
         // Changing precision of field value on table enrol_lti_lti2_nonce to (64).
         $table = new xmldb_table('enrol_lti_lti2_nonce');
@@ -255,8 +255,14 @@ function xmldb_enrol_lti_upgrade($oldversion) {
         $dbman->change_field_precision($table, $field);
 
         // Lti savepoint reached.
-        upgrade_plugin_savepoint(true, 2016120501, 'enrol', 'lti');
+        upgrade_plugin_savepoint(true, 2017011300, 'enrol', 'lti');
     }
+
+    // Automatically generated Moodle v3.3.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.4.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

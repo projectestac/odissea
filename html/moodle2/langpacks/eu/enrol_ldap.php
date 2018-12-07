@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,13 +85,13 @@ $string['group_memberofattribute_key'] = '\'Member of\' atributua';
 $string['host_url'] = 'Zehaztu LDAP hosta URL formatuan, adib. \'ldap://ldap.myorg.com/\'
 edo \'ldaps://ldap.myorg.com/\'';
 $string['host_url_key'] = 'Ostalariaren URLa';
-$string['idnumber_attribute'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu LDAP autentifikazio ezarpenetako erabiltzailearen \'ID zenbakia\' eremuarekin lotutako atributu berdina.';
+$string['idnumber_attribute'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu ezazu LDAP autentifikazio ezarpenetako erabiltzailearen \'ID zenbakia\' eremuarekin lotutako atributu berdina.';
 $string['idnumber_attribute_key'] = 'Atributuaren ID zenbakia';
 $string['ldap_encoding'] = 'Zehaztu LDAP zerbitzariak erabiltzen duen kodifikazioa. Ziuraski utf-8, MS AD v2-k berez cp1252, cp1250 eta antzeko kodifikazioak erabiltzen ditu.';
 $string['ldap_encoding_key'] = 'LDAP kodifikazioa';
 $string['ldap:manage'] = 'Kudeatu LDAP matrikulaziorako instantziak';
 $string['memberattribute'] = 'LDAP kide-ezaugarria';
-$string['memberattribute_isdn'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), hemen zehaztu beharko duzu. Hala izanez gero, atal honetako beste ezarpenak ere konfiguratu beharko dituzu.';
+$string['memberattribute_isdn'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), hemen zehaztu beharko dituzu. Hala izanez gero, atal honetako beste ezarpenak ere konfiguratu beharko dituzu.';
 $string['memberattribute_isdn_key'] = '\'Member\' atributuak \'dn\' erabiltzen du';
 $string['nested_groups'] = 'Habiaratutako taldeak (adib. taldeen taldeak) matrikulaziorako?';
 $string['nested_groups_key'] = 'Habiaratutako taldeak';
@@ -100,13 +100,14 @@ $string['nosuchrole'] = 'Hurrengo rola ez da existitzen: \'{$a}\'';
 $string['objectclass'] = 'Ikastaroak bilatzeko erabilitako objectClass. Ohikoena \'posixGroup\'.';
 $string['objectclass_key'] = 'Objektu-mota';
 $string['ok'] = 'ONDO!';
-$string['opt_deref'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu bilaketetan alias-ak nola kudeatuko diren. Aukeratu hurengo balioetako bat: \'Ez\' (LDAP_DEREF_NEVER) edo \'Bai\' (LDAP_DEREF_ALWAYS)';
+$string['opt_deref'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu bilaketetan ezinezak nola kudeatuko diren. Aukeratu hurengo balioetako bat: \'Ez\' (LDAP_DEREF_NEVER) edo \'Bai\' (LDAP_DEREF_ALWAYS)';
 $string['opt_deref_key'] = 'Erreferentziazko ezizenak';
-$string['phpldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago instalatuta. Mesedez ziurtatu instalatuta eta gaituta dagoela matrikulazio gehigarri hau erabili nahi baduzu</em>';
+$string['phpldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago instalatuta. Mesedez ziurtatu instalatuta eta gaituta dagoela matrikulazio plugin hau erabili nahi baduzu</em>';
 $string['pluginname'] = 'LDAP matrikulak';
 $string['pluginname_desc'] = '<p>LDAP zerbitzaria erabil dezakezu matrikulazioak kontrolatzeko. Suposatu egiten da zure LDAP arbolak ikastaroetarako taldeak dituela eta hauetako talde edo ikastaro bakoitzak ikasleei erreferentzia egiten dieten matrikulazio-sarrerak dituztela.</p><p>Suposatu egiten da ikastaroak talde bezala daudela definituta LDAPen, talde bakoitzak erabiltzailea identifikazio bakarra duten hainbat matrikulazio-eremu dituelarik (<em>member</em> edo <em>memberUid</em>).</p><p>LDAP matrikulazioa erabiltzeko, erabiltzaileek balio duen ID zenbakia eremua izan <strong>behar</strong>dute. LDAP taldeek \'idnumber\' hori izan behar dute erabiltzaile-eremuetan erabiltzailea ikastaro batean matrikulatu ahal izateko. Ondo funtzionatuko du dagoeneko LDAP Autentifikazioa erabiltzen baduzu.</p><p>Matrikulazioak eguneratu egingo dira erabiltzailea idenfikatzen denean. Kontsulta ezazu <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Plugin hau LDAPn talde berriak agertzen direnean ikastaro berriak era automatikoan sortzeko ere zehaztu ahal da.</p>';
 $string['pluginnotenabled'] = 'Plugina ez dago gaituta!';
+$string['privacy:metadata'] = 'LDAP bidezko matrikulazio-pluginak ez du datu pertsonalik biltzen.';
 $string['role_mapping'] = '<p>LDAP bidez esleitu nahi duzun rol bakoitzeko, zehaztu beharko duzu non dagoen kokatuta rol horren ikastaroetako taldeetako testuinguruen zerrenda. Banadu testuinguruak \';\' karakterea erabilz.</p><p>Zure LDAP zerbitzariak taldeetako kideak gordetzeko erabiltzen duen atributua ere zehaztu beharko duzu. Normalean \'member\' edo \'memberUid\'</p>';
 $string['role_mapping_attribute'] = 'LDAP \'member\' atributua {$a}-(r)entzat';
 $string['role_mapping_context'] = 'LDAP testuinguruak {$a}-(r)entzat';
@@ -114,6 +115,7 @@ $string['role_mapping_key'] = 'Lotu rolak LDAPetik';
 $string['roles'] = 'Rolen lotura';
 $string['server_settings'] = 'LDAP zerbitzariaren ezarpenak';
 $string['synccourserole'] = '== \'{$a->idnumber}\' ikastaroaren \'{$a->role_shortname}\' rola sinkronizatzen';
+$string['syncenrolmentstask'] = 'Sinkronizatu matrikulazio-zereginak';
 $string['template'] = 'Aukerakoa: era automatikoan sortutako ikastaroak ikastaro-txantiloi batetik kopia ditzakete beren zehaztasunak.';
 $string['template_key'] = 'Itxura';
 $string['unassignrole'] = '\'{$a->user_username}\' erabiltzaileari \'{$a->role_shortname}\' rola kentzen \'{$a->course_shortname}\' ikastarotik (id {$a->course_id})';
@@ -122,7 +124,7 @@ $string['unassignroleid'] = '\'{$a->user_id}\' erabiltzaileari \'{$a->role_id}\'
 $string['updatelocal'] = 'Datu lokalak eguneratu';
 $string['user_attribute'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu erabiltzaileak izendatzeko/bilatzeko erabiliko den atributua. Autentifikaziorako LDAP erabiltzen baduzu, balio hau LDAPeko autentifikazio ezarpenetako \'ID zenbakia\' eremuan lotutakoaren berdina izan beharko luke.';
 $string['user_attribute_key'] = 'Atributuaren ID zenbakia';
-$string['user_contexts'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu erabiltzaileak dauden testuinguruen zerrenda. Banandu testuinguru ezberdinak \';\' karakterea erabilita. Adibidez: \'ou=users,o=org; ou=others,o=org\'';
+$string['user_contexts'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu ezazu erabiltzaileak dauden testuinguruen zerrenda. Banandu testuinguru ezberdinak \';\' karakterea erabilita. Adibidez: \'ou=erabitzaileak,o=org; ou=besteak,o=org\'.';
 $string['user_contexts_key'] = 'Testuinguruak';
 $string['user_search_sub'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu azpitestuinguruetan ere erabiltzaileak bilatuko ote diren.';
 $string['user_search_sub_key'] = 'Bilatu azpitestuinguruak';

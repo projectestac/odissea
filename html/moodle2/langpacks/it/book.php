@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,10 @@ $string['eventchapterdeleted'] = 'Eliminato capitolo';
 $string['eventchapterupdated'] = 'Aggiornato capitolo';
 $string['eventchapterviewed'] = 'Visualizzato capitolo';
 $string['hidechapter'] = 'Nascondi il capitolo "{$a}"';
+$string['indicator:cognitivedepth'] = 'Libro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse \'libro\'.';
+$string['indicator:socialbreadth'] = 'Libro sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'Libro\'.';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'Il modulo libro consente ad un docente di creare risorse multi pagina componendole, similmente ad un libro, in capitoli e paragrafi.
 I libri possono contenere file multimediali e testi e sono indicati per contenuti corposi da suddividere in diverse sezioni.
@@ -90,6 +94,8 @@ $string['numberingoptions_desc'] = 'Le opzioni di numerazione da rendere disponi
 $string['page-mod-book-x'] = 'Qualsiasi pagina con modulo libro';
 $string['pluginadministration'] = 'Gestione libro';
 $string['pluginname'] = 'Libro';
+$string['privacy:metadata'] = 'Il modulo di attività "Libro" non memorizza dati personali.';
+$string['removeallbooktags'] = 'Elimina tutti i tag del libro';
 $string['search:activity'] = 'Libro - Informazioni sulla risorsa';
 $string['search:chapter'] = 'Libro - Capitoli';
 $string['showchapter'] = 'Visualizza capitolo "{$a}"';
@@ -97,5 +103,7 @@ $string['subchapter'] = 'Paragrafo';
 $string['subchapternotice'] = '(Disponibile solo dopo la creazione del primo capitolo)';
 $string['subplugintype_booktool'] = 'Tool libro';
 $string['subplugintype_booktool_plural'] = 'Tool libro';
+$string['tagarea_book_chapters'] = 'Capitolo dei libri';
+$string['tagsdeleted'] = 'I tag del libro sono stati eliminati';
 $string['toc'] = 'Sommario';
 $string['top'] = 'Ritorna su';

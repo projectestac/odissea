@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['allowmultiple'] = '2つ以上の選択を許可する';
 $string['allowupdate'] = '投票内容の更新を許可する';
 $string['answered'] = '投票済み';
 $string['atleastoneoption'] = 'あなたは少なくとも1つの考えられる答えを提供する必要があります。';
-$string['calendarend'] = '投票 {$a} 終了';
-$string['calendarstart'] = '投票 {$a} 開始';
+$string['calendarend'] = '{$a} 終了';
+$string['calendarstart'] = '{$a} 開始';
 $string['cannotsubmit'] = '申し訳ございません、あなたの投票送信時に問題が発生しました。再度お試しください。';
 $string['choice'] = '選択肢';
 $string['choiceactivityname'] = '投票: {$a}';
@@ -70,6 +70,10 @@ $string['expired'] = '申し訳ございません、この活動は {$a} に終�
 $string['full'] = '(上限到達)';
 $string['havetologin'] = 'あなたは投票する前にログインする必要があります。';
 $string['includeinactive'] = '利用停止ユーザからの回答を含む';
+$string['indicator:cognitivedepth'] = '投票認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標は投票活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = '投票社会的';
+$string['indicator:socialbreadth_help'] = 'この指標は投票活動で学生が到達した社会的広がりに基づきます。';
 $string['limit'] = '投票制限数';
 $string['limitanswers'] = '投票可能数を制限する';
 $string['limitanswers_help'] = 'このオプションではあなたは参加者がそれぞれの投票選択肢を選択できる数を制限することができます。制限数に達した場合、その選択肢を選択できないようになります。
@@ -97,6 +101,7 @@ $string['notenrolledchoose'] = '申し訳ございません、登録済みユー
 $string['notopenyet'] = '申し訳ございません、この活動は {$a} まで利用することができません。';
 $string['numberofuser'] = '投票者数';
 $string['numberofuserinpercentage'] = '投票者数 (%)';
+$string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['option'] = 'オプション';
 $string['optionno'] = 'オプション {no}';
 $string['options'] = 'オプション';
@@ -105,6 +110,11 @@ $string['pluginadministration'] = '投票管理';
 $string['pluginname'] = '投票';
 $string['previewonly'] = 'これはこの活動で利用可能なオプションのプレビューです。あなたの投票は {$a} まで送信することができません。';
 $string['privacy'] = '投票結果のプライバシー';
+$string['privacy:metadata:choice_answers'] = '投票活動でユーザが選択した回答に関する情報です。';
+$string['privacy:metadata:choice_answers:choiceid'] = 'ユーザが回答する投票活動のIDです。';
+$string['privacy:metadata:choice_answers:optionid'] = 'ユーザが選択したオプションのIDです。';
+$string['privacy:metadata:choice_answers:timemodified'] = 'タイムスタンプはユーザによって投票が修正された日時を示します。';
+$string['privacy:metadata:choice_answers:userid'] = 'この投票活動でのユーザ回答のIDです。';
 $string['publish'] = '投票結果を公開する';
 $string['publishafteranswer'] = '投票した後、学生に投票結果を表示する';
 $string['publishafterclose'] = 'この投票全体が終了した場合のみ学生に投票結果を表示する';
@@ -129,5 +139,6 @@ $string['spacesleft'] = '件 (投票可能数)';
 $string['taken'] = '投票済み';
 $string['userchoosethisoption'] = 'このオプションを選択したユーザ';
 $string['viewallresponses'] = '{$a} 件の投票結果を表示する';
+$string['viewchoices'] = '投票を表示する';
 $string['withselected'] = '選択したものを';
 $string['yourselection'] = 'あなたの投票';

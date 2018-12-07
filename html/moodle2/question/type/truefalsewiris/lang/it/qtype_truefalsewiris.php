@@ -34,3 +34,4 @@ $string['pluginname_help'] = 'Questo tipo di risposte vero/falso è simile alla 
 $string['pluginnamesummary'] = 'Questo tipo di risposte vero/falso è simile alla tipologia standard, ma qui puoi creare diversi enunciati inserendo numeri casuali, formule o diagrammi. Puoi definire in modo dinamico se la risposta corretta è vera o falsa. Il feedback può anche contenere valori casuali.';
 $string['pluginnameediting'] = 'Modificare una risposta vero/falso - domanda di matematica e scienza WIRIS';
 $string['pluginnameadding'] = 'Aggiungere una risposta vero/falso - domanda di matematica e scienza WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes True/False question type does not effect or store any data itself.';

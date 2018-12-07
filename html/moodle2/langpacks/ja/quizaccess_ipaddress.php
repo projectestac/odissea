@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_ipaddress', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_ipaddress', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_ipaddress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'IPアドレス - 小テストアクセスルール';
-$string['subnetwrong'] = 'この小テストには特定の場所からのみアクセスすることができます。このコンピュータは許可一覧に登録されていません。';
+$string['privacy:metadata'] = 'IPアドレス小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['subnetwrong'] = 'この小テストには特定の場所からのみアクセスすることができます。このコンピュータは許可一覧にありません。';

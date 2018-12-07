@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -89,9 +89,9 @@ $string['ciq1'] = 'Σε ποιά χρονική στιγμή είχατε εμπ
 $string['ciq1short'] = 'Μεγαλύτερη εμπλοκή';
 $string['ciq2'] = 'Σε ποιά χρονική στιγμή είχατε απομακρυνθεί περισσότερο από το ρόλο του μαθητή;';
 $string['ciq2short'] = 'Μεγαλύτερη απόσταση';
-$string['ciq3'] = 'Ποιά ενέργεια οποιουδήποτε στις ομάδες συζητήσεων θεωρείτε πως ήταν θετική ή πως βοήθησε πολύ;';
+$string['ciq3'] = 'Ποιά ενέργεια οποιουδήποτε στα φόρουμ θεωρείτε πως ήταν θετική ή πως βοήθησε πολύ;';
 $string['ciq3short'] = 'Βοηθητική στιγμή';
-$string['ciq4'] = 'Ποιά ενέργεια οποιουδήποτε στις ομάδες συζητήσεων θεωρείτε πως προκάλεσε σύγχυση ή προβλήματα;';
+$string['ciq4'] = 'Ποιά ενέργεια οποιουδήποτε στα φόρουμ θεωρείτε πως προκάλεσε σύγχυση ή προβλήματα;';
 $string['ciq4short'] = 'Στιγμή σύγχυσης';
 $string['ciq5'] = 'Ποιό γεγονός σας εξέπληξε περισσότερο;';
 $string['ciq5short'] = 'Στιγμή έκπληξης';
@@ -234,9 +234,9 @@ $string['scales'] = 'Κλίμακες';
 $string['scaletimes5'] = 'Σχεδόν ποτέ, Σπάνια, Μερικές φορές, Συχνά, Σχεδόν πάντα';
 $string['seemoredetail'] = 'Κάντε κλικ εδώ για να δείτε περισσότερες λεπτομέρειες';
 $string['selectedquestions'] = 'Επιλεγμένες ερωτήσεις μιας κλίμακας, όλοι οι μαθητές';
-$string['summary'] = 'Σύνοψη';
-$string['survey:addinstance'] = 'Προσθήκη νέας έρευνας';
-$string['surveycompleted'] = 'Έχετε ολοκληρώσει αυτή την έρευνα. Το παρακάτω γράφημα δείχνει μια σύνοψη των αποτελεσμάτων σας, σε σύγκριση με τους μέσους όρους της τάξης.';
+$string['summary'] = 'Περίληψη';
+$string['survey:addinstance'] = 'Προσθέστε μία νέα έρευνα';
+$string['surveycompleted'] = 'Έχετε ολοκληρώσει αυτή την έρευνα. Το παρακάτω γράφημα δείχνει μια περίληψη των αποτελεσμάτων σας, σε σύγκριση με τους μέσους όρους της τάξης.';
 $string['surveycompletednograph'] = 'Έχετε ολοκληρώσει αυτή την έρευνα.';
 $string['survey:download'] = 'Κατεβάστε τις απαντήσεις';
 $string['surveygraph'] = 'Γραφική παράσταση';

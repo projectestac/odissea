@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_aiken', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_aiken
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aikenフォーマット';
 $string['pluginname_help'] = 'これはテキストファイルから多肢選択問題をインポートするためのシンプルなフォーマットです。';
+$string['privacy:metadata'] = 'Aiken問題フォーマットプラグインはどのような個人データも保存しません。';

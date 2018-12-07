@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_user', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_user', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['configplugin'] = 'ユーザプライベートファイルリポジト�
 $string['emptyfilelist'] = '表示するファイルはありません。';
 $string['pluginname'] = 'プライベートファイル';
 $string['pluginname_help'] = 'ユーザプライベートエリアのファイル';
+$string['privacy:metadata'] = 'プライベートファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
 $string['user:view'] = 'ユーザプライベートファイルを表示する';

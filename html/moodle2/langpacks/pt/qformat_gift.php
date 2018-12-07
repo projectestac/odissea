@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_gift', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_gift
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['nohandler'] = 'Nenhum manipulador para o tipo de pergunta {$a}';
 $string['pluginname'] = 'Formato GIFT';
 $string['pluginname_help'] = 'O formato GIFT permite importar e exportar como ficheiro de texto perguntas do tipo escolha múltipla, verdadeiro/falso, resposta curta, correspondência, preenchimento de espaços, numéricas e de desenvolvimento.';
 $string['pluginname_link'] = 'qformat/gift';
+$string['privacy:metadata'] = 'O módulo Pergunta em formato GIFT não armazena dados pessoais.';

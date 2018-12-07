@@ -412,7 +412,7 @@ function get_ResultadoDetalleExtendido($ResultadoExtendido, $user, $passwd) {
 				}
             }
         }
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         return generate_error($e->getMessage(), "", "ResultadoDetalleExtendido", $cm->id);
     }
 
@@ -485,7 +485,7 @@ function valid_unit($resultext, $book, $rcontentunitid) {
             }
             return $unidad;
         }
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         log_to_file("wsSeguimiento: function valid_unit - Exception = " . $e->getMessage());
         return false;
     }
@@ -542,7 +542,7 @@ function valid_activity($resultext, $book, $rcontentactivityid, $unidadid) {
             }
             return $actividad;
         }
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         log_to_file("wsSeguimiento: function valid_activity - Exception = " . $e->getMessage());
         return false;
     }

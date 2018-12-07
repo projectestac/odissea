@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_table', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['addcolumnafter'] = 'Kolom hierna invoegen';
 $string['addrowafter'] = 'Rij hierna invoegen';
 $string['all'] = 'Rond elke cel';
 $string['allowbackgroundcolour'] = 'Achtergrondkleur toestaan';
-$string['allowborder'] = 'Randstijlen toestaan';
+$string['allowborder'] = 'Randen toestaan';
 $string['allowborder_desc'] = 'Indien ingeschakeld kunnen celranden aangepast worden.';
 $string['allowwidth'] = 'Breedte toestaan';
 $string['appearance'] = 'Uiterlijk';
@@ -59,6 +59,7 @@ $string['numberofcolumns'] = 'Aantal kolommen';
 $string['numberofrows'] = 'Aantal rijen';
 $string['outer'] = 'Rond tabel';
 $string['pluginname'] = 'Tabel';
+$string['privacy:metadata'] = 'De plugin atto_table slaat geen persoonlijke gegevens op.';
 $string['rows'] = 'Rijen';
 $string['settings'] = 'Tabelinstellingen';
 $string['solid'] = 'Egaal';

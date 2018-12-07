@@ -15,7 +15,7 @@ Feature: Test creating a True/False question
       | user     | course | role           |
       | teacher1 | C1     | editingteacher |
     And I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "Question bank" node in "Course administration"
 
   Scenario: Create a True/False question with Correct answer as False
@@ -27,7 +27,7 @@ Feature: Test creating a True/False question
       | Correct answer                     | False                                      |
       | Feedback for the response 'True'.  | Well done!                                 |
       | Feedback for the response 'False'. | Read more about England.                   |
-      Then I should see "true-false-001"
+    Then I should see "true-false-001"
 
   Scenario: Create a True/False question with Correct answer as True
     When I add a "True/False" question filling the form with:
@@ -38,4 +38,4 @@ Feature: Test creating a True/False question
       | Correct answer                     | True                                   |
       | Feedback for the response 'True'.  | Well done!                             |
       | Feedback for the response 'False'. | Read more about England.               |
-      Then I should see "true-false-002"
+    Then I should see "true-false-002"

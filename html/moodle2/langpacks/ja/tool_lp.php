@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_lp', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['assigncohorts'] = 'コーホートを割り当てる';
 $string['averageproficiencyrate'] = 'このテンプレートに基づく完了した学習プランの平均熟達度は {$a} %です。';
 $string['cancelreviewrequest'] = 'レビューリクエストをキャンセルする';
 $string['cannotaddrules'] = 'このコンピテンシーは設定できません。';
-$string['cannotcreateuserplanswhentemplateduedateispassed'] = '新しい学習プランを作成できません。このテンプレートの期限が切れたかまもなく切れます。';
+$string['cannotcreateuserplanswhentemplateduedateispassed'] = '新しい学習プランを作成できません。このテンプレートの有効期限が切れたかまもなく切れます。';
 $string['cannotcreateuserplanswhentemplatehidden'] = 'このテンプレートが非表示の間、新しい学習プランを作成することはできません。';
 $string['category'] = 'カテゴリ';
 $string['chooserating'] = '評定を選択する ...';
@@ -179,6 +179,7 @@ $string['planupdated'] = '学習プランが更新されました。';
 $string['pluginname'] = '学習プラン';
 $string['points'] = '評点';
 $string['pointsgivenfor'] = '「 {$a} 」の評点';
+$string['privacy:metadata'] = '学習プランプラグインはどのような個人データも保存しません。';
 $string['proficient'] = '熟達';
 $string['progress'] = '進捗';
 $string['rate'] = '評定';
@@ -189,7 +190,7 @@ $string['ratingaffectsuserplans'] = 'コンピテンシーの評定により学�
 $string['reopenplan'] = 'この学習プランを再オープンする';
 $string['reopenplanconfirm'] = 'プラン「 {$a} 」を再オープンしますか? 前にプランが完了した時に記録されたユーザコンピテンシーの状態は削除されます。同時にプランが再度アクティブになります。';
 $string['requestreview'] = 'レビューをリクエストする';
-$string['reviewer'] = 'レビュア';
+$string['reviewer'] = '評価者';
 $string['reviewstatus'] = 'レビューステータス';
 $string['savechanges'] = '変更を保存する';
 $string['scale'] = '尺度';

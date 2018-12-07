@@ -20,7 +20,7 @@ require_once($CFG->dirroot . '/question/type/wq/quizzes/quizzes.php');
 require_once($CFG->dirroot . '/question/type/wq/lib.php');
 
 /**
- * Multichoicewiris question type conversion handler
+ * Multichoicewiris qtype conversion handler
  */
 class moodle1_qtype_multichoicewiris_handler extends moodle1_qtype_multichoice_handler {
 
@@ -28,8 +28,8 @@ class moodle1_qtype_multichoicewiris_handler extends moodle1_qtype_multichoice_h
         return array(
             'ANSWERS/ANSWER',
             'MULTICHOICE',
-            'MULTICHOICEWIRIS',
-            'MULTICHOICEWIRIS/WIRISOPTIONS'
+            'MULTICHOICEWiris',
+            'MULTICHOICEWiris/WirisOPTIONS'
         );
     }
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,10 @@ $string['dndresizeheight'] = 'Egokitu hartu eta eraman altueran';
 $string['dndresizewidth'] = 'Egokitu hartu eta eraman zabaleran';
 $string['dnduploadlabel'] = 'Gehitu media ikastaroaren orrira';
 $string['dnduploadlabeltext'] = 'Gehitu etiketa ikastaroaren orrira';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa etiketetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Etiketa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala etiketetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Etiketa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['label:addinstance'] = 'Gehitu beste etiketa bat';
 $string['labeltext'] = 'Etiketaren testua';
 $string['label:view'] = 'Ikusi etiketa';
@@ -47,4 +51,5 @@ Etiketak erabil daitezke
 $string['modulenameplural'] = 'Etiketak';
 $string['pluginadministration'] = 'Etiketaren kudeaketa';
 $string['pluginname'] = 'Etiketa';
+$string['privacy:metadata'] = 'mod_label pluginak ez du datu pertsonalik biltzen.';
 $string['search:activity'] = 'Etiketa';

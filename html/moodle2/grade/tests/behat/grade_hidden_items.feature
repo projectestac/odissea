@@ -18,15 +18,17 @@ Feature: Student and teacher's view of aggregated grade items is consistent when
       | student1 | C1 | student |
     And the following "grade categories" exist:
       | fullname | course |
-      | Sub category 1 | C1 |
-      | Sub category 2 | C1 |
+      | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> Sub category 1 | C1 |
+      | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> Sub category 2 | C1 |
     And the following "activities" exist:
       | activity | course | idnumber | name | intro | gradecategory| grade |
-      | assign | C1 | a1 | Test assignment one | Submit something! | Sub category 1 | 100 |
-      | assign | C1 | a2 | Test assignment two | Submit something! | Sub category 1 | 100 |
-      | assign | C1 | a3 | Test assignment three | Submit something! | Sub category 2 | 100 |
-      | assign | C1 | a4 | Test assignment four | Submit something! | Sub category 2 | 100 |
+      | assign | C1 | a1 | Test assignment one | Submit something! | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> Sub category 1 | 100 |
+      | assign | C1 | a2 | Test assignment two | Submit something! | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> Sub category 1 | 100 |
+      | assign | C1 | a3 | Test assignment three | Submit something! | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> Sub category 2 | 100 |
+      | assign | C1 | a4 | Test assignment four | Submit something! | <span lang="en" class="multilang">EN</span><span lang="fr" class="multilang">FR</span> Sub category 2 | 100 |
     And I log in as "admin"
+    And the "multilang" filter is "on"
+    And the "multilang" filter applies to "content and headings"
     And I am on "Course 1" course homepage
     And I navigate to "Setup > Gradebook setup" in the course gradebook
     And I press "Add grade item"
@@ -34,7 +36,7 @@ Feature: Student and teacher's view of aggregated grade items is consistent when
       | Item name | calculated |
     And I press "Save changes"
     And I set "=[[a4]]/2" calculation for grade item "calculated" with idnumbers:
-      | Sub category 1 | sub1 |
+      | EN Sub category 1 | sub1 |
     And I navigate to "Overview report" node in "Site administration > Grades > Report settings"
     And I set the field "s__grade_report_overview_showtotalsifcontainhidden" to "Show totals excluding hidden items"
     And I navigate to "User report" node in "Site administration > Grades > Report settings"
@@ -42,7 +44,7 @@ Feature: Student and teacher's view of aggregated grade items is consistent when
     And I press "Save changes"
     When I log out
     And I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "View > Grader report" in the course gradebook
     And I turn editing mode on
     And I give the grade "50.00" to the user "Student 1" for the grade item "Test assignment one"
@@ -51,7 +53,7 @@ Feature: Student and teacher's view of aggregated grade items is consistent when
     And I set the following settings for grade item "Test assignment four":
       | Hidden | 1 |
     And I press "Save changes"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "View > User report" in the course gradebook
     And I select "Myself" from the "View report as" singleselect
     And I select "Student 1" from the "Select all or one user" singleselect
@@ -63,7 +65,7 @@ Feature: Student and teacher's view of aggregated grade items is consistent when
       | Course total | - | 100.00 | 0–200 | 50.00 % | - |
     When I log out
     And I log in as "student1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "User report" in the course gradebook
     Then the following should exist in the "user-grade" table:
       | Grade item | Calculated weight | Grade | Range | Percentage | Contribution to course total |

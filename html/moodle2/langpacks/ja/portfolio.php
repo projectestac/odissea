@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['exportalreadyfinisheddesc'] = 'ポートフォリオのエクスポー�
 $string['exportcomplete'] = 'ポートフォリオのエクスポートが完了しました!';
 $string['exportedpreviously'] = '前のエクスポート';
 $string['exportexceptionnoexporter'] = '活動セッションでportfolio_export_exceptionがスローされましたが、エクスポーターオブジェクトがありません。';
-$string['exportexpired'] = 'ポートフォリオエクスポート期限切れ';
+$string['exportexpired'] = 'ポートフォリオエクスポート有効期限切れ';
 $string['exportexpireddesc'] = 'あなたはいくつかの情報を繰り返しエクスポートしようとしているか、空のエクスポートを開始しようとしています。適切にエクスポートするにはオリジナルのロケーションに戻って再度エクスポートを開始する必要があります。エクスポートの後、あなたがブラウザの戻るボタンを使用したか無効なURLをブックマークした場合、この現象が時々発生します。';
 $string['exporting'] = 'ポートフォリオへのエクスポート';
 $string['exportingcontentfrom'] = '{$a} からコンテンツをエクスポートする';
@@ -169,6 +169,23 @@ $string['plugincouldnotpackage'] = 'あなたのエクスポートするデー�
 $string['pluginismisconfigured'] = 'ポートフォリオプラグインの設定が正しくありません。エラーは次のとおりです - {$a}';
 $string['portfolio'] = 'ポートフォリオ';
 $string['portfolios'] = 'ポートフォリオ';
+$string['privacy:metadata'] = 'ポートフォリオサブシステムはプラグインから様々なポートフォリオプラグインへのリクエストを渡すためのチャネルとして動作します。';
+$string['privacy:metadata:instance'] = 'ポートフォリオのIDです。';
+$string['privacy:metadata:instancesummary'] = 'ポートフォリオユーザが使用しているポートフォリオのインスタンスおよびプリファレンスを保存します。';
+$string['privacy:metadata:name'] = 'プリファレンス名です。';
+$string['privacy:metadata:portfolio_log'] = 'ポートフォリオ転送のログです (後で重複を確認するため使用されます)。';
+$string['privacy:metadata:portfolio_log:caller_class'] = '転送を作成するため使用されるクラス名です。';
+$string['privacy:metadata:portfolio_log:caller_component'] = 'エクスポートに関与するコンポーネント名です。';
+$string['privacy:metadata:portfolio_log:time'] = '転送時間です (キューに入れられた転送の場合、これはユーザが開始した時間ではなく、実際に転送が実行された時間です)。';
+$string['privacy:metadata:portfolio_log:userid'] = 'コンテンツをエクスポートしたユーザです。';
+$string['privacy:metadata:portfolio_tempdata'] = 'ポートフォリオエクスポートの一時データを保存します。1日後にcronで削除されます。';
+$string['privacy:metadata:portfolio_tempdata:data'] = 'データをエクスポートします。';
+$string['privacy:metadata:portfolio_tempdata:expirytime'] = 'このレコードの有効期限切れの日時です。';
+$string['privacy:metadata:portfolio_tempdata:instance'] = '使用されるポートフォリオプラグインインスタンスです。';
+$string['privacy:metadata:portfolio_tempdata:userid'] = 'エクスポートを実施するユーザです。';
+$string['privacy:metadata:userid'] = 'ユーザIDです。';
+$string['privacy:metadata:value'] = 'プリファレンスの値です。';
+$string['privacy:path'] = 'ポートフォリオインスタンスです。';
 $string['queuesummary'] = '現在キューに入れられている転送';
 $string['returntowhereyouwere'] = '戻る';
 $string['save'] = '保存';

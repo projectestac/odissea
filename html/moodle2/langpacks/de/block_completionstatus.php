@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_completionstatus', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_completionstatus
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Block \'Bearbeitungsstand\' hinzufüg
 $string['criteriagroup'] = 'Kriteriengruppen';
 $string['firstofsecond'] = '{$a->first} von {$a->second}';
 $string['pluginname'] = 'Bearbeitungsstand';
+$string['privacy:metadata'] = 'Der Block Kursabschlusstatus zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['requirement'] = 'Anforderungen';
 $string['returntocourse'] = 'Zurück zum Kurs';

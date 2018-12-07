@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_cohortroles', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_cohortroles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assign'] = 'Tarea';
+$string['managecohortroles'] = 'Asignar roles de usuario a cohorte';
 $string['selectrole'] = 'Seleccionar rol';
+$string['selectusers'] = 'Seleccionar usuarios para asignar rol';

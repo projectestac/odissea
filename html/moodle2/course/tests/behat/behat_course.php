@@ -337,7 +337,7 @@ class behat_course extends behat_base {
      * @param int $sectionnumber
      */
     public function i_show_section($sectionnumber) {
-        $showlink = $this->show_section_icon_exists($sectionnumber);
+        $showlink = $this->show_section_link_exists($sectionnumber);
 
         // Ensure section edit menu is open before interacting with it.
         if ($this->running_javascript()) {
@@ -358,13 +358,26 @@ class behat_course extends behat_base {
      * @param int $sectionnumber
      */
     public function i_hide_section($sectionnumber) {
-        $hidelink = $this->hide_section_icon_exists($sectionnumber);
+        // Ensures the section exists.
+        $xpath = $this->section_exists($sectionnumber);
 
-        // Ensure section edit menu is open before interacting with it.
+        // We need to know the course format as the text strings depends on them.
+        $courseformat = $this->get_course_format();
+        if (get_string_manager()->string_exists('hidefromothers', $courseformat)) {
+            $strhide = get_string('hidefromothers', $courseformat);
+        } else {
+            $strhide = get_string('hidesection');
+        }
+
+        // If javascript is on, link is inside a menu.
         if ($this->running_javascript()) {
             $this->i_open_section_edit_menu($sectionnumber);
         }
-        $hidelink->click();
+
+        // Click on delete link.
+        $this->execute('behat_general::i_click_on_in_the',
+              array($strhide, "link", $this->escape($xpath), "xpath_element")
+        );
 
         if ($this->running_javascript()) {
             $this->getSession()->wait(self::TIMEOUT * 1000, self::PAGE_READY_JS);
@@ -431,9 +444,7 @@ class behat_course extends behat_base {
         $xpath = $this->section_exists($sectionnumber);
 
         // The important checking, we can not check the img.
-        $xpath = $xpath . "/descendant::img[contains(@src, 'marked')]";
-        $exception = new ExpectationException('The "' . $sectionnumber . '" section is not highlighted', $this->getSession());
-        $this->find('xpath', $xpath, $exception);
+        $this->execute('behat_general::should_exist_in_the', ['This topic is highlighted as the current topic', 'icon', $xpath, 'xpath_element']);
     }
 
     /**
@@ -498,7 +509,7 @@ class behat_course extends behat_base {
         if ($this->is_course_editor()) {
 
             // The section must be hidden.
-            $this->show_section_icon_exists($sectionnumber);
+            $this->show_section_link_exists($sectionnumber);
 
             // If there are activities they should be hidden and the visibility icon should not be available.
             if ($activities = $this->get_section_activities($sectionxpath)) {
@@ -623,9 +634,67 @@ class behat_course extends behat_base {
                 // All ok.
             }
 
-            // The 'Hide' button should be available.
-            $nohideexception = new ExpectationException('"' . $activityname . '" don\'t have a "' . get_string('hide') . '" icon', $this->getSession());
-            $this->find('named_partial', array('link', get_string('hide')), $nohideexception, $activitynode);
+            // Additional check if this is a teacher in editing mode.
+            if ($this->is_editing_on()) {
+                // The 'Hide' button should be available.
+                $nohideexception = new ExpectationException('"' . $activityname . '" doesn\'t have a "' .
+                    get_string('hide') . '" icon', $this->getSession());
+                $this->find('named_partial', array('link', get_string('hide')), $nohideexception, $activitynode);
+            }
+        }
+    }
+
+    /**
+     * Checks that the specified activity is visible. You need to be in the course page.
+     * It can be used being logged as a student and as a teacher on editing mode.
+     *
+     * @Then /^"(?P<activity_or_resource_string>(?:[^"]|\\")*)" activity should be available but hidden from course page$/
+     * @param string $activityname
+     * @throws ExpectationException
+     */
+    public function activity_should_be_available_but_hidden_from_course_page($activityname) {
+
+        if ($this->is_course_editor()) {
+
+            // The activity must exists and be visible.
+            $activitynode = $this->get_activity_node($activityname);
+
+            // The activity should not be dimmed.
+            try {
+                $xpath = "/descendant-or-self::a[contains(concat(' ', normalize-space(@class), ' '), ' dimmed ')] | " .
+                    "/descendant-or-self::div[contains(concat(' ', normalize-space(@class), ' '), ' dimmed_text ')]";
+                $this->find('xpath', $xpath, false, $activitynode);
+                throw new ExpectationException('"' . $activityname . '" is hidden', $this->getSession());
+            } catch (ElementNotFoundException $e) {
+                // All ok.
+            }
+
+            // Should has "stealth" class.
+            $exception = new ExpectationException('"' . $activityname . '" does not have CSS class "stealth"', $this->getSession());
+            $xpath = "/descendant-or-self::a[contains(concat(' ', normalize-space(@class), ' '), ' stealth ')]";
+            $this->find('xpath', $xpath, $exception, $activitynode);
+
+            // Additional check if this is a teacher in editing mode.
+            if ($this->is_editing_on()) {
+                // Also has either 'Hide' or 'Make unavailable' edit control.
+                $nohideexception = new ExpectationException('"' . $activityname . '" has neither "' . get_string('hide') .
+                    '" nor "' . get_string('makeunavailable') . '" icons', $this->getSession());
+                try {
+                    $this->find('named_partial', array('link', get_string('hide')), false, $activitynode);
+                } catch (ElementNotFoundException $e) {
+                    $this->find('named_partial', array('link', get_string('makeunavailable')), $nohideexception, $activitynode);
+                }
+            }
+
+        } else {
+
+            // Student should not see the activity at all.
+            try {
+                $this->get_activity_node($activityname);
+                throw new ExpectationException('The "' . $activityname . '" should not appear', $this->getSession());
+            } catch (ElementNotFoundException $e) {
+                // This is good, the activity should not be there.
+            }
         }
     }
 
@@ -649,20 +718,48 @@ class behat_course extends behat_base {
                      "/descendant-or-self::div[contains(concat(' ', normalize-space(@class), ' '), ' dimmed_text ')]";
             $this->find('xpath', $xpath, $exception, $activitynode);
 
-            // Also 'Show' icon.
-            $noshowexception = new ExpectationException('"' . $activityname . '" don\'t have a "' . get_string('show') . '" icon', $this->getSession());
-            $this->find('named_partial', array('link', get_string('show')), $noshowexception, $activitynode);
+            // Additional check if this is a teacher in editing mode.
+            if ($this->is_editing_on()) {
+                // Also has either 'Show' or 'Make available' edit control.
+                $noshowexception = new ExpectationException('"' . $activityname . '" has neither "' . get_string('show') .
+                    '" nor "' . get_string('makeavailable') . '" icons', $this->getSession());
+                try {
+                    $this->find('named_partial', array('link', get_string('show')), false, $activitynode);
+                } catch (ElementNotFoundException $e) {
+                    $this->find('named_partial', array('link', get_string('makeavailable')), $noshowexception, $activitynode);
+                }
+            }
 
         } else {
 
             // It should not exist at all.
             try {
-                $this->find_link($activityname);
+                $this->get_activity_node($activityname);
                 throw new ExpectationException('The "' . $activityname . '" should not appear', $this->getSession());
             } catch (ElementNotFoundException $e) {
                 // This is good, the activity should not be there.
             }
         }
+
+    }
+
+    /**
+     * Checks that the specified activity is dimmed. You need to be in the course page.
+     *
+     * @Then /^"(?P<activity_or_resource_string>(?:[^"]|\\")*)" activity should be dimmed$/
+     * @param string $activityname
+     * @throws ExpectationException
+     */
+    public function activity_should_be_dimmed($activityname) {
+
+        // The activity should exist.
+        $activitynode = $this->get_activity_node($activityname);
+
+        // Should be hidden.
+        $exception = new ExpectationException('"' . $activityname . '" is not dimmed', $this->getSession());
+        $xpath = "/descendant-or-self::a[contains(concat(' ', normalize-space(@class), ' '), ' dimmed ')] | ".
+            "/descendant-or-self::div[contains(concat(' ', normalize-space(@class), ' '), ' dimmed_text ')]";
+        $this->find('xpath', $xpath, $exception, $activitynode);
 
     }
 
@@ -678,7 +775,7 @@ class behat_course extends behat_base {
         // Ensure the destination is valid.
         $sectionxpath = $this->section_exists($sectionnumber);
 
-        $activitynode = $this->get_activity_element('.editing_move img', 'css_element', $activityname);
+        $activitynode = $this->get_activity_element('Move', 'icon', $activityname);
 
         // JS enabled.
         if ($this->running_javascript()) {
@@ -800,6 +897,42 @@ class behat_course extends behat_base {
         $classes = array_flip(explode(' ', $activitynode->getAttribute('class')));
         if (empty($classes['action-menu-shown'])) {
             throw new ExpectationException(sprintf("The action menu for '%s' is not open", $activityname), $this->getSession());
+        }
+    }
+
+    /**
+     * Checks that the specified activity's action menu contains an item.
+     *
+     * @Then /^"(?P<activity_name_string>(?:[^"]|\\")*)" actions menu should have "(?P<menu_item_string>(?:[^"]|\\")*)" item$/
+     * @throws DriverException The step is not available when Javascript is disabled
+     * @param string $activityname
+     * @param string $menuitem
+     */
+    public function actions_menu_should_have_item($activityname, $menuitem) {
+        $activitynode = $this->get_activity_node($activityname);
+
+        $notfoundexception = new ExpectationException('"' . $activityname . '" doesn\'t have a "' .
+            $menuitem . '" item', $this->getSession());
+        $this->find('named_partial', array('link', $menuitem), $notfoundexception, $activitynode);
+    }
+
+    /**
+     * Checks that the specified activity's action menu does not contains an item.
+     *
+     * @Then /^"(?P<activity_name_string>(?:[^"]|\\")*)" actions menu should not have "(?P<menu_item_string>(?:[^"]|\\")*)" item$/
+     * @throws DriverException The step is not available when Javascript is disabled
+     * @param string $activityname
+     * @param string $menuitem
+     */
+    public function actions_menu_should_not_have_item($activityname, $menuitem) {
+        $activitynode = $this->get_activity_node($activityname);
+
+        try {
+            $this->find('named_partial', array('link', $menuitem), false, $activitynode);
+            throw new ExpectationException('"' . $activityname . '" has a "' . $menuitem .
+                '" item when it should not', $this->getSession());
+        } catch (ElementNotFoundException $e) {
+            // This is good, the menu item should not be there.
         }
     }
 
@@ -1022,7 +1155,7 @@ class behat_course extends behat_base {
      * @param int $sectionnumber
      * @return NodeElement
      */
-    protected function show_section_icon_exists($sectionnumber) {
+    protected function show_section_link_exists($sectionnumber) {
 
         // Gets the section xpath and ensure it exists.
         $xpath = $this->section_exists($sectionnumber);
@@ -1031,12 +1164,10 @@ class behat_course extends behat_base {
         $courseformat = $this->get_course_format();
 
         // Checking the show button alt text and show icon.
-        $showtext = behat_context_helper::escape(get_string('showfromothers', $courseformat));
-        $linkxpath = $xpath . "/descendant::a[@title=$showtext]";
-        $imgxpath = $linkxpath . "/descendant::img[contains(@src, 'show')]";
+        $showtext = get_string('showfromothers', $courseformat);
+        $linkxpath = $xpath . "/descendant::a[@title=" . behat_context_helper::escape($showtext) . "]";
 
-        $exception = new ElementNotFoundException($this->getSession(), 'Show section icon ');
-        $this->find('xpath', $imgxpath, $exception);
+        $exception = new ElementNotFoundException($this->getSession(), 'Show section link ');
 
         // Returing the link so both Non-JS and JS browsers can interact with it.
         return $this->find('xpath', $linkxpath, $exception);
@@ -1049,7 +1180,7 @@ class behat_course extends behat_base {
      * @param int $sectionnumber
      * @return NodeElement
      */
-    protected function hide_section_icon_exists($sectionnumber) {
+    protected function hide_section_link_exists($sectionnumber) {
 
         // Gets the section xpath and ensure it exists.
         $xpath = $this->section_exists($sectionnumber);
@@ -1060,10 +1191,9 @@ class behat_course extends behat_base {
         // Checking the hide button alt text and hide icon.
         $hidetext = behat_context_helper::escape(get_string('hidefromothers', $courseformat));
         $linkxpath = $xpath . "/descendant::a[@title=$hidetext]";
-        $imgxpath = $linkxpath . "/descendant::img[contains(@src, 'hide')]";
 
         $exception = new ElementNotFoundException($this->getSession(), 'Hide section icon ');
-        $this->find('xpath', $imgxpath, $exception);
+        $this->find('icon', 'Hide', $exception);
 
         // Returing the link so both Non-JS and JS browsers can interact with it.
         return $this->find('xpath', $linkxpath, $exception);
@@ -1157,6 +1287,15 @@ class behat_course extends behat_base {
         }
 
         return true;
+    }
+
+    /**
+     * Returns whether the user can edit the course contents and the editing mode is on.
+     *
+     * @return bool
+     */
+    protected function is_editing_on() {
+        return $this->getSession()->getPage()->findButton(get_string('turneditingoff')) ? true : false;
     }
 
     /**
@@ -1691,7 +1830,7 @@ class behat_course extends behat_base {
         $node->click();
 
         // Smooth expansion.
-        $this->getSession()->wait(1000, false);
+        $this->getSession()->wait(1000);
     }
 
     /**

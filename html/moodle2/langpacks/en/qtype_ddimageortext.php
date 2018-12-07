@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnamesummary'] = 'Images or text labels are dragged and dropped into drop zones on a background image.';
 $string['previewareaheader'] = 'Preview';
 $string['previewareamessage'] = 'Select a background image, specify draggable items and define drop zones on the background image into which they must be dragged.';
+$string['privacy:metadata'] = 'The Drag and drop onto image question type plugin does not store any personal data.';
 $string['refresh'] = 'Refresh preview';
 $string['shuffleimages'] = 'Shuffle drag items each time question is attempted';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

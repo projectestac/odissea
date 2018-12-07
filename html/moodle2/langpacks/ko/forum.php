@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -412,7 +412,6 @@ $string['subscribed'] = '구독함';
 $string['subscribeenrolledonly'] = '죄송합니다. 등록된 사용자만이 포럼 게시물을 이메일로 구독할 수 있습니다.';
 $string['subscribenone'] = '아무에게도 이메일 보내지 않기';
 $string['subscribers'] = '구독자';
-$string['subscribersto'] = '\'{$a}\' 을 이메일로 받아보기';
 $string['subscribestart'] = '이곳 게시물들은 계속 구독하겠음';
 $string['subscribestop'] = '이곳 게시물들은 구독하지 않음.';
 $string['subscription'] = '이메일로 구독';

@@ -119,7 +119,9 @@ class com_wiris_quizzes_impl_HTMLGui {
 			if(!$conf->optAuxiliarCasReplaceEditor) {
 				$h->input("checkbox", $id, "", com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD, null, null);
 			}
-			$h->label($this->t->t("showauxiliarcas"), $id, null);
+			$useCalc = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$CALC_ENABLED);
+			$labelText = ((strtolower($useCalc) === "true") ? $this->t->t("showauxiliarcalcme") : $this->t->t("showauxiliarcas"));
+			$h->label($labelText, $id, null);
 			if($conf->optAuxiliarCasReplaceEditor) {
 				$h->text(" ");
 				$h->select($id, null, new _hx_array(array(new _hx_array(array(com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_FALSE, $this->t->t("no"))), new _hx_array(array(com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD, $this->t->t("add"))), new _hx_array(array(com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT, $this->t->t("replaceeditor"))))));
@@ -657,7 +659,7 @@ class com_wiris_quizzes_impl_HTMLGui {
 		$h->openDiv("wirisoutputcontrols" . _hx_string_rec($unique, ""));
 		$h->openDivClass(null, "wirisfieldsetwrapper");
 		$h->openFieldset("wirisoutputcontrolsfieldset" . _hx_string_rec($unique, ""), $this->t->t("outputoptions"), "wirismainfieldset");
-		$h->help("wirisoutputcontrolshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/variables", $this->t->t("manual"));
+		$h->help("wirisoutputcontrolshelp" . _hx_string_rec($unique, ""), "http://www.wiris.com/quizzes/docs/moodle/manual/variables#output_options", $this->t->t("manual"));
 		$h->openTable("wirisoutputcontrolslist" . _hx_string_rec($unique, ""), "wirisoutputcontrolslist");
 		$id = null;
 		$h->openTr(null);

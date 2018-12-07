@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Tag(s) standard(s) ajouté(s)';
-$string['addedotag'] = '« {$a} » a été ajouté comme tag officiel.';
 $string['addotags'] = 'Ajouter des tags standards';
 $string['addtagcoll'] = 'Ajouter une collection de tags';
 $string['addtagtomyinterests'] = 'Ajouter « {$a} » à mes centres d\'intérêts';
@@ -90,7 +89,6 @@ $string['name'] = 'Nom du tag';
 $string['namesalreadybeeingused'] = 'Noms des tags déjà utilisés';
 $string['nameuseddocombine'] = 'Ce tag est déjà utilisé. Voulez-vous combiner ces tags ?';
 $string['newcollnamefor'] = 'Nouveau nom de la collection de tag {$a}';
-$string['newname'] = 'Nouveau nom de tag';
 $string['newnamefor'] = 'Nouveau nom du tag {$a}';
 $string['nextpage'] = 'Plus';
 $string['noresultsfor'] = 'Aucun résultat pour « {$a} »';
@@ -105,6 +103,19 @@ $string['page-tag-manage'] = 'Page de gestion des tags';
 $string['page-tag-search'] = 'Page de recherche de tags';
 $string['page-tag-x'] = 'Toute page de tag';
 $string['prevpage'] = 'Retour';
+$string['privacy:metadata:tag'] = 'Les informations de chaque tag sont enregistrées avec leur description et d\'autres informations.';
+$string['privacy:metadata:tag:description'] = 'Description du tag.';
+$string['privacy:metadata:tag:flag'] = 'Si le tag a été signalé comme inapproprié.';
+$string['privacy:metadata:taginstance'] = 'Lien entre chaque tag et où il est utilisé.';
+$string['privacy:metadata:taginstance:ordering'] = 'Ordre relatif du tag.';
+$string['privacy:metadata:taginstance:tagid'] = 'Lien vers le tag.';
+$string['privacy:metadata:taginstance:timecreated'] = 'Date et heure du lien du tag vers sa cible.';
+$string['privacy:metadata:taginstance:timemodified'] = 'Date et heure de la modification du lien du tag.';
+$string['privacy:metadata:taginstance:tiuserid'] = 'Utilisateurs propriétaire de cet instance de tag, là où du contenu partagé peut être taggé individuellement.';
+$string['privacy:metadata:tag:name'] = 'Le nom du tag – il s\'agit de la version normalisée du nom.';
+$string['privacy:metadata:tag:rawname'] = 'Nom du tag tel qu\'affiché.';
+$string['privacy:metadata:tag:timemodified'] = 'La date et l\'heure de la dernière modification du tag.';
+$string['privacy:metadata:tag:userid'] = 'L\'identifiant de l\'utilisateur ayant créé le tag.';
 $string['ptags'] = 'Tags personnels (séparés par des virgules)';
 $string['relatedblogs'] = 'Articles de blog les plus récents';
 $string['relatedtags'] = 'Tags';
@@ -154,13 +165,8 @@ $string['taggedwith'] = 'avec tag « {$a} »';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Les tags sont désactivés';
 $string['tagtype'] = 'Type de tag';
-$string['tagtype_default'] = 'Défaut';
-$string['tagtype_official'] = 'Officiel';
 $string['thingstaggedwith'] = '{$a->count} éléments sont marqués avec « {$a->name} »';
 $string['thingtaggedwith'] = 'Un élément est marqué avec « {$a->name} »';
-$string['thistaghasnodesc'] = 'Ce tag n\'a actuellement pas de description.';
 $string['timemodified'] = 'Modifié';
 $string['typechanged'] = 'Type du tag modifié';
-$string['updated'] = 'Modifié';
 $string['updatetag'] = 'Modifier';
-$string['withselectedtags'] = 'Avec les tags sélectionnés...';

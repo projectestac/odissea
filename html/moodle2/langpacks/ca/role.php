@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['allowroletooverride'] = 'Permet que els usuaris amb rol {$a->fromrole} 
 $string['allowroletoswitch'] = 'Permet que els usuaris amb rol {$a->fromrole} commutin al rol {$a->targetrole}';
 $string['allowswitch'] = 'Permís per commutar rols';
 $string['allsiteusers'] = 'Tots els usuaris del lloc';
+$string['analytics:listinsights'] = 'Enumera les prediccions';
 $string['archetype'] = 'Arquetipus del rol';
 $string['archetypecoursecreator'] = 'ARQUETIPUS: Creador de cursos';
 $string['archetypeeditingteacher'] = 'ARQUETIPUS: Professor (editor)';
@@ -167,6 +168,7 @@ $string['course:create'] = 'Crear cursos';
 $string['course:delete'] = 'Suprimir cursos';
 $string['course:enrolconfig'] = 'Configurar les instàncies d\'inscripció als cursos';
 $string['course:enrolreview'] = 'Revisar les inscripcions als cursos';
+$string['course:ignoreavailabilityrestrictions'] = 'Ignora les restriccions de disponibilitat';
 $string['course:ignorefilesizelimits'] = 'Utilitzar fitxers més grans que les restriccions de mida de fitxer';
 $string['course:isincompletionreports'] = 'Mostrar en els informes de compleció';
 $string['course:manageactivities'] = 'Gestionar activitats';
@@ -176,6 +178,7 @@ $string['course:managegroups'] = 'Gestionar grups';
 $string['course:managescales'] = 'Gestionar escales';
 $string['course:markcomplete'] = 'Marca usuaris com a completats en la compleció del curs';
 $string['course:movesections'] = 'Moure seccions';
+$string['course:overridecompletion'] = 'Canvia l\'estat de compleció de l\'activitat';
 $string['course:publish'] = 'Publicar un curs a la col·lectivitat';
 $string['course:renameroles'] = 'Canvia el nom dels rols';
 $string['course:request'] = 'Demanar nous cursos';
@@ -408,7 +411,6 @@ $string['site:viewfullnames'] = 'Veure sempre els noms complets dels usuaris';
 $string['site:viewparticipants'] = 'Veure els participants';
 $string['site:viewreports'] = 'Veure informes';
 $string['site:viewuseridentity'] = 'Veure la identitat completa de l\'usuari en les llistes';
-$string['tag:create'] = 'Crear noves etiquetes';
 $string['tag:edit'] = 'Editar etiquetes existents';
 $string['tag:editblocks'] = 'Editar blocs en pàgines d\'etiquetes';
 $string['tag:flag'] = 'Marcar etiquetes com a inadequades';

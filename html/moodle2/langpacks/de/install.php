@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'install', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -146,11 +146,10 @@ $string['nativemysqlihelp'] = '<p>Die Datenbank, in der Moodle seine Einstellung
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = 'Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.';
 $string['nativepgsql'] = 'PostgreSQL (native/pgsql)';
-$string['nativepgsqlhelp'] = '<p>Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. in ihr weden die meisten Daten von Moodle abgespeichert.</p><p>Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.</p><p>DieDatenbank muss bereits existieren und der angegebene Nutzer muß sowohl über Lese- also auch Schreibrechte verfügen.</p>';
+$string['nativepgsqlhelp'] = '<p>Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. in ihr weden die meisten Daten von Moodle abgespeichert.</p><p>Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.</p><p>DieDatenbank muss bereits existieren und der angegebene Datenbanknutzer muss über entsprechende Lese- und Schreibrechte verfügen.</p>';
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.';
 $string['nativesqlsrvnodriver'] = 'Die Microsoft-Treiber zum SQL Server für PHP sind nicht installiert oder nicht richtig konfiguriert.';
-$string['nativesqlsrvnonwindows'] = 'Die Microsoft-Treiber zum SQL Server für PHP sind ausschließlich für Windows verfügbar.';
 $string['ociextensionisnotpresentinphp'] = 'PHP wurde nicht richtig konfiguriert, um über die PHP-Extension OCI8 mit der Oracle-Datenbank zu kommunizieren. Prüfen Sie die Datei php.ini oder übersetzen Sie PHP neu.';
 $string['pass'] = 'Durchgang';
 $string['paths'] = 'Pfade';

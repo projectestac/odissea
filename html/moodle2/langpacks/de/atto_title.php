@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_title', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['h5'] = 'Überschrift (klein)';
 $string['p'] = 'Absatz';
 $string['pluginname'] = 'Absatzformate';
 $string['pre'] = 'Vorformatiert';
+$string['privacy:metadata'] = 'Das Plugin atto_title speichert keine personenbezogenen Daten.';
 $string['title'] = 'Absatzformate';

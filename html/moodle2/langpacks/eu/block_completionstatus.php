@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_completionstatus', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_completionstatus
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Gehitu ikastaro-osaketaren egoera blo
 $string['criteriagroup'] = 'Irizpide-multzoa';
 $string['firstofsecond'] = '{$a->second}-(e)tik  {$a->first}';
 $string['pluginname'] = 'Ikastaro-osaketaren egoera';
+$string['privacy:metadata'] = 'Ikastaro-osaketaren egoera blokeak ikastaroaren osaketaren inguruko informazioa baino ez du erakusten eta ez du inolako daturik biltzen.';
 $string['requirement'] = 'Betekizuna';
 $string['returntocourse'] = 'Itzuli ikastarora';

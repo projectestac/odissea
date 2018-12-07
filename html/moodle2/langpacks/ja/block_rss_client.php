@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,8 @@ $string['editnewsfeeds'] = 'ニュースフィードを編集する';
 $string['editrssblock'] = 'RSSヘッドラインブロックを編集する';
 $string['enableautodiscovery'] = 'フィードのオートディスカバリを有効にしますか?';
 $string['enableautodiscovery_help'] = 'この設定を有効にした場合、ウェブページのフィードが自動的に探されます。例えばhttp://docs.moodle.orgが入力された場合、http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rssが見つかります。';
+$string['failedfeed'] = 'フィードのダウンロードに失敗しました -  {$a} 後に再試行します。';
+$string['failedfeeds'] = '1つまたはそれ以上のRSSフィードが失敗しました。';
 $string['feed'] = 'フィード';
 $string['feedadded'] = 'ニュースフィードが追加されました。';
 $string['feeddeleted'] = 'ニュースフィードが削除されました。';
@@ -63,6 +65,15 @@ $string['nofeeds'] = 'このサイトに設定されたRSSフィードはあり�
 $string['numentries'] = 'フィードあたりのエントリ数';
 $string['pickfeed'] = 'ニュースフィードを取得する';
 $string['pluginname'] = 'リモートRSSフィード';
+$string['privacy:metadata:block_rss_client:description'] = 'RSSフィードの説明です。';
+$string['privacy:metadata:block_rss_client:preferredtitle'] = 'RSSフィードの優先 (カスタム) タイトルです。';
+$string['privacy:metadata:block_rss_client:shared'] = 'すべてのコースでRSSフィードが利用可能な場合です。';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'RSSフィード失敗時にcronが再試行するまでに待つ時間 (秒) を定義します。';
+$string['privacy:metadata:block_rss_client:skipuntil'] = '失敗したRSSフィードのオープンをcronが試行する最大時間を定義します。';
+$string['privacy:metadata:block_rss_client:tableexplanation'] = 'ここにRSSブロック情報が保存されます。';
+$string['privacy:metadata:block_rss_client:title'] = 'RSSフィードのタイトルです。';
+$string['privacy:metadata:block_rss_client:url'] = 'RSSフィードのＵＲＬです。';
+$string['privacy:metadata:block_rss_client:userid'] = 'RSSフィードを追加したユーザのIDです。';
 $string['remotenewsfeed'] = 'リモートニュースフィード';
 $string['rss_client:addinstance'] = '新しいリモートRSSフィードブロックを追加する';
 $string['rss_client:createprivatefeeds'] = 'プライベートRSSフィードを作成する';

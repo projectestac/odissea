@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mentees', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['mentees:addinstance'] = 'Add a new mentees block';
 $string['mentees:myaddinstance'] = 'Add a new mentees block to Dashboard';
 $string['newmenteesblock'] = '(new Mentees block)';
 $string['pluginname'] = 'Mentees';
+$string['privacy:metadata'] = 'The Mentees block only shows data stored in other locations.';

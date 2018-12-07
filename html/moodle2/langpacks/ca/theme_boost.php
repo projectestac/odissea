@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_boost', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_boost
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedsettings'] = 'Paràmetres avançats';
+$string['backgroundimage'] = 'Imatge de fons';
+$string['backgroundimage_desc'] = 'La imatge que es mostrarà com a fons del lloc. La imatge de fons que carregueu aquí substituirà la imatge de fons als vostres fitxers predefinits de tema.';
 $string['region-side-pre'] = 'Dreta';

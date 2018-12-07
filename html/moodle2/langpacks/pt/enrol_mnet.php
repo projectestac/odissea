@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_mnet', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ o serviço SSO (Fornecedor de Identidade) em {$a}. </li></ul><br />Subscreva est
 $string['mnet_enrol_name'] = 'Serviço de inscrição externa';
 $string['pluginname'] = 'Inscrições através da Rede Moodle';
 $string['pluginname_desc'] = 'Este módulo permite que utilizadores (externos) registados na Rede Moodle possam inscrever os seus utilizadores nas disciplinas existentes neste Moodle.';
+$string['privacy:metadata'] = 'O módulo Inscrições através da Rede Moodle não armazena dados pessoais.';
 $string['remotesubscriber'] = 'Servidor externo';
 $string['remotesubscriber_help'] = 'Selecione "Todos os servidores" para disponibilizar esta disciplina a todos os pares da Rede Moodle que utilizem o serviço de inscrições externas. Em alternativa, defina apenas um servidor se quiser disponibilizar a disciplina apenas aos utilizadores desse servidor.';
 $string['remotesubscribersall'] = 'Todos os servidores';

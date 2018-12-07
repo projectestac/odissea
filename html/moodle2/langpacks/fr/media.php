@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'media', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,5 +39,6 @@ $string['mediaformats_desc'] = 'Lorsque des lecteurs sont activés, des fichiers
 
 Si deux lecteurs supportent le même format, leur activation commune permet d\'augmenter la compatibilité avec des appareils différents, comme les téléphones portables ou les tablettes. Il est possible d\'augmenter encore cette compatibilité en fournissant un même son ou une même vidéo en plusieurs formats.';
 $string['mediasettings'] = 'Intégration de média';
+$string['privacy:metadata'] = 'Le plugin Intégration de média n\'enregistre aucune donnée personnelle.';
 $string['supports'] = 'Supports';
 $string['videoextensions'] = 'Vidéo : {$a}';

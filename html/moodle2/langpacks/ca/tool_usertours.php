@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_usertours', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_usertours
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,7 +110,7 @@ $string['selectordisplayname'] = 'Un selector de CSS que coincideixi amb «{$a}�
 $string['selecttype'] = 'Seleccioneu el tipus de pas';
 $string['sharedtourslink'] = 'Repositori de visites guiades';
 $string['skip'] = 'Omet';
-$string['target'] = 'Àrea de destinació';
+$string['target'] = 'Destinació';
 $string['target_block'] = 'Bloc';
 $string['target_heading'] = 'Destinació del pas';
 $string['target_selector'] = 'Selector';
@@ -130,9 +130,9 @@ Alternativament, es pot introduir un identificador de cadena d\'idioma en l\'ide
 $string['tour1_content_addingblocks'] = 'Penseu bé quins blocs voleu incloure a les vostres pàgines. Els blocs no es mostren a l\'aplicació per al mòbil de Moodle, per tant, com a regla general, assegureu-vos que el vostre lloc funciona correctament sense blocs.';
 $string['tour1_content_blockregion'] = 'Encara hi ha una regió de blocs aquí. Recomanem eliminar completament els blocs de Navegació i Administració, ja que tota la funcionalitat es troba en un altre lloc del tema Boost.';
 $string['tour1_content_customisation'] = 'Per personalitzar l\'aspecte del vostre lloc i la portada, utilitzeu el menú de configuració a la cantonada de la capçalera. Proveu d\'activar l\'edició ara.';
-$string['tour1_content_end'] = 'Això ha estat una visita guiada; és una funcionalitat nova a Moodle 3.2. No es tornarà a mostrar fins que no la restabliu fent servir l\'enllaç que trobareu a peu de pàgina. Com a administrador, també podeu crear les vostres pròpies visites guiades.';
+$string['tour1_content_end'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina. Com a administrador també podeu crear les vostres visites guiades d\'usuari.';
 $string['tour1_content_navigation'] = 'La navegació principal ara es fa a través d\'aquest menú. El contingut del menú s\'actualitza segons el lloc on es trobi. Utilitzeu el botó de part superior per amagar-lo o mostrar-lo.';
-$string['tour1_content_welcome'] = 'Benvinguts al tema Boost per a Moodle 3.2. Si heu fet servir Moodle abans, segurament trobareu que l\'aspecte és una mica diferent.';
+$string['tour1_content_welcome'] = 'Benvinguts al tema Boost. Si l\'heu actualitzat des d\'una versió anterior, trobareu una aparença diferent amb aquest tema.';
 $string['tour1_title_addingblocks'] = 'S\'estan afegint blocs';
 $string['tour1_title_blockregion'] = 'Espai per als blocs';
 $string['tour1_title_customisation'] = 'Personalització';
@@ -142,11 +142,11 @@ $string['tour1_title_welcome'] = 'Benvinguts';
 $string['tour2_content_addblock'] = 'Si activeu l\'edició, podreu afegir blocs des del menú lateral. Tot i això, penseu bé sobre com incloure blocs a les vostres pàgines. Tingueu en compte que els blocs no es mostren a l\'aplicació de Moodle per a dispositius mòbils, de manera que per a una millor experiència d\'usuari, cal que us assegureu que el vostre curs funciona bé sense cap bloc.';
 $string['tour2_content_addingblocks'] = 'Podeu afegir blocs a aquesta pàgina fent servir aquest botó. Tot i això, penseu bé sobre com incloure blocs a les vostres pàgines. Tingueu en compte que els blocs no es mostren a l\'aplicació de Moodle per a dispositius mòbils, de manera que per a una millor experiència d\'usuari, cal que us assegureu que el vostre curs funciona bé sense cap bloc.';
 $string['tour2_content_customisation'] = 'Per canviar els paràmetres del curs, feu servir el menú de configuració que trobareu a la cantonada de la capçalera. Podreu trobar un menú de configuració semblant a la pàgina principal de cadascuna de les activitats. Proveu a activar l\'edició ara.';
-$string['tour2_content_end'] = 'Això ha estat una visita guiada; és una funcionalitat nova a Moodle 3.2. No es tornarà a mostrar fins que no la restabliu fent servir l\'enllaç que trobareu a peu de pàgina. L\'administrador del lloc també pot crear visites guiades per a aquest lloc.';
+$string['tour2_content_end'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina. Com a administrador també podeu crear les vostres visites guiades d\'usuari.';
 $string['tour2_content_navigation'] = 'La navegació principal ara es fa a través d\'aquest menú. Utilitzeu el botó de la part superior per amagar-lo o mostrar-lo. Veureu que hi ha enllaços directes a les seccions del vostre curs.';
 $string['tour2_content_opendrawer'] = 'Proveu a obrir el menú de navegació ara.';
 $string['tour2_content_participants'] = 'Visualitzeu els participants aquí. Des d\'aquí podreu afegir i treure estudiants.';
-$string['tour2_content_welcome'] = 'Benvinguts al tema Boost per a Moodle 3.2. Si heu fet servir Moodle abans, veureu que a la pàgina del curs l\'aspecte és una mica diferent.';
+$string['tour2_content_welcome'] = 'Benvinguts al tema Boost. Si el vostre lloc s\'ha actualitzat des d\'una versió anterior, trobareu un aspecte diferent aquí, a la pàgina del curs.';
 $string['tour2_title_addblock'] = 'Afegeix un bloc';
 $string['tour2_title_addingblocks'] = 'S\'estan afegint blocs';
 $string['tour2_title_customisation'] = 'Personalització';

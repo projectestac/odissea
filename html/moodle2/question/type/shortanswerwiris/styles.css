@@ -10,5 +10,5 @@ div.wirisanswerfielddecoration.wiriseditordecoration.wiriscorrect div.wirisedito
 
 div.wirisanswerfielddecoration.wirisembeddeddecoration.wirispartiallycorrect,
 div.wirisanswerfielddecoration.wiriseditordecoration.wirispartiallycorrect div.wiriseditorwrapper {
-    background-image: url([[pix:core|i/grade_partiallycorrect]]) !important!
+    background-image: url([[pix:core|i/grade_partiallycorrect]]) !important;
 }

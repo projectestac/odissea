@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addedotag'] = 'Se ha añadido "{$a}" como marca oficial.';
 $string['addotags'] = 'Añadir marcas estándar.';
 $string['addtagcoll'] = 'Agregar colección de marcas';
 $string['addtagtomyinterests'] = 'Agregar "{$a}" a mis intereses';
@@ -66,7 +65,6 @@ $string['managetags'] = 'Gestionar marcas';
 $string['moretags'] = 'más...';
 $string['name'] = 'Nombre de la marca';
 $string['namesalreadybeeingused'] = 'Los nombres de marca ya se están usando';
-$string['newname'] = 'Nombre de la nueva marca';
 $string['newnamefor'] = 'Nuevo nombre para etiqueta {$a}';
 $string['nextpage'] = 'Más';
 $string['noresultsfor'] = 'No hay resultados para "{$a}"';
@@ -121,13 +119,8 @@ $string['taggedwith'] = 'marcada con "{$a}"';
 $string['tags'] = 'Marcas';
 $string['tagsaredisabled'] = 'Las marcas están deshabilitadas';
 $string['tagtype'] = 'Tipo de marca';
-$string['tagtype_default'] = 'Valor por defecto';
-$string['tagtype_official'] = 'Oficial';
 $string['thingstaggedwith'] = '"{$a->name}" es usada {$a->count} veces';
 $string['thingtaggedwith'] = '"{$a->name}" se usa una vez';
-$string['thistaghasnodesc'] = 'Esta marca no tiene descripción en este momento.';
 $string['timemodified'] = 'Modificado';
 $string['typechanged'] = 'Tipo de marca cambiado';
-$string['updated'] = 'Actualizado';
 $string['updatetag'] = 'Actualizar';
-$string['withselectedtags'] = 'Con las marcas seleccionadas...';

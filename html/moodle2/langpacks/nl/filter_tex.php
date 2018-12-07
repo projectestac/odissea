@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_tex', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,4 +36,5 @@ $string['pathdvisvgm'] = 'Pad van <i>dvisvgm</i> binair bestand';
 $string['pathlatex'] = 'Pad van <i>latex</i> binary';
 $string['pathmimetex'] = 'Pad van het <i>mimetex</i> binair bestand';
 $string['pathmimetexdesc'] = 'Moodle zal zijn eigen mimetex binair bestand gebruiken, tenzij er een ander geldig pad is opgegeven.';
+$string['privacy:metadata'] = 'De TeX notatieplugin bewaart geen persoonlijke gegevens.';
 $string['source'] = 'TeX bron';

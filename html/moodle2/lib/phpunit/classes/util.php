@@ -217,6 +217,7 @@ class phpunit_util extends testing_util {
         core_filetypes::reset_caches();
         \core_search\manager::clear_static();
         core_user::reset_caches();
+        \core\output\icon_system::reset_caches();
         if (class_exists('core_media_manager', false)) {
             core_media_manager::reset_caches();
         }
@@ -228,6 +229,11 @@ class phpunit_util extends testing_util {
 
         // Reset internal users.
         core_user::reset_internal_users();
+
+        // Clear static caches in calendar container.
+        if (class_exists('\core_calendar\local\event\container', false)) {
+            core_calendar\local\event\container::reset_caches();
+        }
 
         //TODO MDL-25290: add more resets here and probably refactor them to new core function
 
@@ -549,7 +555,15 @@ class phpunit_util extends testing_util {
             <testsuite name="@component@_testsuite">
                 <directory suffix="_test.php">.</directory>
             </testsuite>
-        </testsuites>';
+        </testsuites>
+        <filter>
+            <whitelist processUncoveredFilesFromWhitelist="false">
+                <directory suffix=".php">.</directory>
+                <exclude>
+                    <directory suffix="_test.php">.</directory>
+                </exclude>
+            </whitelist>
+        </filter>';
 
         // Start a sequence between 100000 and 199000 to ensure each call to init produces
         // different ids in the database.  This reduces the risk that hard coded values will
@@ -607,7 +621,7 @@ class phpunit_util extends testing_util {
 
         foreach ($backtrace as $bt) {
             if (isset($bt['object']) and is_object($bt['object'])
-                    && $bt['object'] instanceof PHPUnit_Framework_TestCase) {
+                    && $bt['object'] instanceof PHPUnit\Framework\TestCase) {
                 $debug = new stdClass();
                 $debug->message = $message;
                 $debug->level   = $level;

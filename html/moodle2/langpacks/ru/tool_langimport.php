@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Не удается подключиться к серверу загрузки. Невозможно автоматически установить или обновить языковые пакеты. Загрузите соответствующие ZIP-файлы из <a href="{$a->src}">{$a->src}</a>> и разархивируйте их вручную в свой каталог данных <code>{$a->dest}</code>';
 $string['install'] = 'Установить выбранный языковый пакет';
 $string['installedlangs'] = 'Установленные языковые пакеты';
 $string['langimport'] = 'Процедура импорта языка';
@@ -45,7 +46,6 @@ $string['noenglishuninstall'] = 'Пакет английского языка н
 $string['nolangupdateneeded'] = 'Все Ваши языковые пакеты актуальны, обновление не требуется';
 $string['pluginname'] = 'Языковые пакеты';
 $string['purgestringcaches'] = 'Очистка строк кэша';
-$string['remotelangnotavailable'] = 'Moodle не может подключиться к download.moodle.org, автоматическая установка языкового пакета невозможна. Загрузите соответствующий архивный файл с <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>, скопируйте его в каталог {$a} и распакуйте вручную.';
 $string['selectlangs'] = 'Выберите языки для удаления';
 $string['uninstall'] = 'Удалить выбранный языковой пакет';
 $string['uninstallconfirm'] = 'Вы собираетесь полностью удалить следующие языковые пакеты: <strong>{$a}</strong>. Вы уверены?';

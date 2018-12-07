@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'Tem de selecionar uma nota para este critério';
 $string['pluginname'] = 'Nota quantitativa';
 $string['poor'] = 'Fraco';
 $string['present'] = 'Existente';
+$string['privacy:metadata'] = 'O módulo Nota quantitativa apenas armazena detalhes da grelha de avaliação. Os atuais dados pessoais de como a grelha tem sido preenchida são armazenados pelo módulo workshop e anexados a avaliações exportadas.';
 $string['scalename0'] = 'Sim/Não (2 pontos)';
 $string['scalename1'] = 'Presente/Ausente (2 pontos)';
 $string['scalename2'] = 'Correto/Incorreto (2 pontos)';

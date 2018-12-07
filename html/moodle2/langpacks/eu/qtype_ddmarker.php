@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,30 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreitems'] = '{no} zuriune gehiago markatzaileetarako';
+$string['addmoreitems'] = 'Zuriuneak {no} markatzaile gehiagotarako';
 $string['alttext'] = 'Aukerako testua';
 $string['answer'] = 'Erantzuna';
 $string['bgimage'] = 'Atzeko planoaren irudia';
 $string['clearwrongparts'] = 'Mugitu gaizki kokatutako markatzaileak irudiaren azpiko berezko hasiera puntura.';
 $string['coords'] = 'Koordenatuak';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
-$string['draggableimage'] = 'Irudi eramangarria';
-$string['draggableitem'] = 'Elementu eramangarria';
-$string['draggableitemheader'] = '{$a} elementu eramangarria';
+$string['draggableimage'] = 'Eramateko irudia';
+$string['draggableitem'] = 'Eramateko elementua';
+$string['draggableitemheader'] = 'Eramateko elementua {$a}';
 $string['draggableitemtype'] = 'Mota';
-$string['draggableword'] = 'Testu eramangarria';
+$string['draggableword'] = 'Eramateko testua';
 $string['dropbackground'] = 'Atzeko planoaren irudia, bertara markatzaileak eramateko';
-$string['dropzone'] = '{$a} askatze-eremua';
-$string['dropzoneheader'] = 'Askatze-eremuak';
-$string['dropzones'] = 'Askatze-eremuak';
+$string['dropzone'] = 'Eramateko tokia {$a}';
+$string['dropzoneheader'] = 'Eramateko tokiak';
+$string['dropzones'] = 'Eramateko tokiak';
 $string['dropzones_help'] = 'Askatze-eremuak koordenatuak idatzita zehazten dira. Idazten joan ahala, goiko aurrebista berehala eguneratzen da, eta beraz elementuak kokatu ditzakezu probatu eta ondoren hobetzen joanda.
 
 * Zirkulua: zentroa_x, zentroa_y; erradioa<br>adibidez: <code>80, 100; 50</code>
 * Poligonoa: x1,y1; x2,y2; ...; xn, yn<br>adibidez: <code>20, 60; 100, 60; 20, 100</code>
-* Laukizuzena: ezkerra, goikaldea, zabalera, altuera<br>adibidez: <code>20, 60; 80, 40</code>';
+* Laukizuzena: x1, y1; zabalera, altuera<br>adibidez: <code>20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Ondoko markatzaileak okerreko tokian jarri dira: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Hurrengo markatzaileak gaizki kokatu dira: {$a}. Nabarmendutako markatzaileak orain kokapen egokietan erakusten dira.<br /> Klik egin markatzailean baimendutako eremua nabarmentzeko.';
-$string['formerror_nobgimage'] = 'Atzeko planoko irudi bat aukeratu behar duzu hartu eta eramateko eremurako.';
+$string['formerror_nobgimage'] = 'Irudi bat aukeratu behar duzu atzeko planoan hartu eta eramateko tokiak zehazteko.';
 $string['formerror_noitemselected'] = 'Askatze-eremu bat zehaztu duzu baina ez duzu zehaztu bertara eraman behar den markatzailea zein den.';
 $string['formerror_nosemicolons'] = 'Ez dago puntu eta komarik zure koordenatuen katean. {$a->shape} batentzat koordenatuak horrela adierazi beharko lirateke: {$a->coordsstring}.';
 $string['formerror_onlysometagsallowed'] = 'Soilik "{$a}" etiketak baimentzen dira markatzailearen etiketan.';
@@ -61,7 +61,7 @@ $string['formerror_unrecognisedwidthheightpart'] = 'Zehaztu dituzun zabalera eta
 $string['formerror_unrecognisedxypart'] = 'Zehaztu dituzun x eta y koordenatuak ezezagunak dira. {$a->shape} batentzat koordenatuak horrela adierazi beharko lirateke: {$a->coordsstring}.';
 $string['infinite'] = 'Mugagabea';
 $string['marker'] = 'Markatzailea';
-$string['marker_n'] = '{no}. markatzailea';
+$string['marker_n'] = 'Markatzailea {no}';
 $string['markers'] = 'Markatzaileak';
 $string['nolabel'] = 'Ez dago testurik etiketan';
 $string['noofdrags'] = 'Kopurua';
@@ -70,9 +70,10 @@ $string['pluginname'] = 'Hartu eta eraman markatzaileak';
 $string['pluginnameadding'] = 'Hartu eta eraman markatzaileak motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman markatzaileak motako galdera editatzen';
 $string['pluginname_help'] = 'Hartu eta eraman markatzaileak motako galderek ikasleei testu-etiketak hartu eta irudi batean zehaztutako askatze-eremuetara eramatea eskatzen diete.';
-$string['pluginnamesummary'] = 'Markatzaileak hartu eta atzeko planoaren irudira eraman behar dira.';
+$string['pluginnamesummary'] = 'Markatzaileak hartu eta eraman dira atzeko planoaren irudira.';
 $string['previewareaheader'] = 'Aurreikusi';
 $string['previewareamessage'] = 'Aukeratu atzeko planoaren irudia, zehaztu markatzaileen testu-etiketak eta zehaztu testu-etiketa hauek irudiaren gainean kokatzeko askatze-eremuak.';
+$string['privacy:metadata'] = 'Hartu eta eraman markatzaileak galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['refresh'] = 'Freskatu aurrebista';
 $string['shape'] = 'Forma';
 $string['shape_circle'] = 'Zirkulua';
@@ -85,8 +86,8 @@ $string['shape_rectangle'] = 'Laukizuzena';
 $string['shape_rectangle_coords'] = 'x,y;w,h (non x,y goiko ezkerreko ertzaren koordenatuak diren eta w eta h laukizuzenaren zabalera eta altuera diren)';
 $string['shape_rectangle_lowercase'] = 'laukizuzena';
 $string['showmisplaced'] = 'Nabarmendu askatze-eremuak bertara markatzaile egokiak eraman ez badira';
-$string['shuffleimages'] = 'Nahastu elementu eramangarriak galderari erantzuten zaion bakoitzean';
+$string['shuffleimages'] = 'Nahastu eramateko elementuak galderari erantzuten zaion bakoitzean';
 $string['stateincorrectlyplaced'] = 'Adierazi zeintzuk diren gaizki kokatutako markatzaileak';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
-$string['summariseplaceno'] = '{$a} askatze-eremua';
+$string['summariseplaceno'] = 'Eramateko tokia {$a}';
 $string['ytop'] = 'Goian';

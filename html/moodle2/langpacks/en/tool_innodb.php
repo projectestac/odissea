@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_innodb', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_innodb', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_innodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Convert to InnoDB';
+$string['privacy:metadata'] = 'The Convert to InnoDB plugin does not store any personal data.';

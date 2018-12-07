@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_completion', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['option_fail'] = 'muss abgeschlossen und gescheitert sein';
 $string['option_incomplete'] = 'darf nicht abgeschlossen sein';
 $string['option_pass'] = 'muss abgeschlossen und bestanden sein';
 $string['pluginname'] = 'Voraussetzung: Aktivitätsabschluss';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung Aktivitätsabschluss\' speichert keine personenbezogenen Daten.';
 $string['requires_complete'] = 'Die Aktivität <strong>{$a}</strong> ist als abgeschlossen markiert';
 $string['requires_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist abgeschlossen und gescheitert';
 $string['requires_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist abgeschlossen und bestanden';

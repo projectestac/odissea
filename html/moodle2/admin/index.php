@@ -29,14 +29,9 @@ if (!file_exists('../config.php')) {
     die();
 }
 
-// Check that PHP is of a sufficient version as soon as possible
-if (version_compare(phpversion(), '5.6.5') < 0) {
-    $phpversion = phpversion();
-    // do NOT localise - lang strings would not work here and we CAN NOT move it to later place
-    echo "Moodle 3.2 or later requires at least PHP 5.6.5 (currently using version $phpversion).<br />";
-    echo "Please upgrade your server software or install older Moodle version.";
-    die();
-}
+// Check that PHP is of a sufficient version as soon as possible.
+require_once(__DIR__.'/../lib/phpminimumversionlib.php');
+moodle_require_minimum_php_version();
 
 // make sure iconv is available and actually works
 if (!function_exists('iconv')) {
@@ -100,6 +95,12 @@ if (function_exists('opcache_invalidate')) {
 // Make sure the component cache gets rebuilt if necessary, any method that
 // indirectly calls the protected init() method is good here.
 core_component::get_core_subsystems();
+
+if (is_major_upgrade_required() && isloggedin()) {
+    // A major upgrade is required.
+    // Terminate the session and redirect back here before anything DB-related happens.
+    redirect_if_major_upgrade_required();
+}
 
 require_once($CFG->libdir.'/adminlib.php');    // various admin-only functions
 require_once($CFG->libdir.'/upgradelib.php');  // general upgrade/install related functions
@@ -722,6 +723,7 @@ if (!$cache and moodle_needs_upgrading()) {
 if (during_initial_install()) {
     set_config('rolesactive', 1); // after this, during_initial_install will return false.
     set_config('adminsetuppending', 1);
+    set_config('registrationpending', 1); // Remind to register site after all other setup is finished.
     // we need this redirect to setup proper session
     upgrade_finished("index.php?sessionstarted=1&amp;lang=$CFG->lang");
 }
@@ -837,6 +839,9 @@ if (isset($SESSION->pluginuninstallreturn)) {
     }
 }
 
+// If site registration needs updating, redirect.
+\core\hub\registration::registration_reminder('/admin/index.php');
+
 // Everything should now be set up, and the user is an admin
 
 // Print default admin page with notifications.
@@ -880,19 +885,23 @@ if ($updateschecker->enabled()) {
 
 $buggyiconvnomb = (!function_exists('mb_convert_encoding') and @iconv('UTF-8', 'UTF-8//IGNORE', '100'.chr(130).'€') !== '100€');
 //check if the site is registered on Moodle.org
-$registered = $DB->count_records('registration_hubs', array('huburl' => HUB_MOODLEORGHUBURL, 'confirmed' => 1));
+$registered = \core\hub\registration::is_registered();
 // Check if there are any cache warnings.
 $cachewarnings = cache_helper::warnings();
 // Check if there are events 1 API handlers.
 $eventshandlers = $DB->get_records_sql('SELECT DISTINCT component FROM {events_handlers}');
 $themedesignermode = !empty($CFG->themedesignermode);
+$mobileconfigured = !empty($CFG->enablemobilewebservice);
+$invalidforgottenpasswordurl = !empty($CFG->forgottenpasswordurl) && empty(clean_param($CFG->forgottenpasswordurl, PARAM_URL));
 
 // Check if a directory with development libraries exists.
-if (is_dir($CFG->dirroot.'/vendor') || is_dir($CFG->dirroot.'/node_modules')) {
+if (empty($CFG->disabledevlibdirscheck) && (is_dir($CFG->dirroot.'/vendor') || is_dir($CFG->dirroot.'/node_modules'))) {
     $devlibdir = true;
 } else {
     $devlibdir = false;
 }
+// Check if the site is being foced onto ssl.
+$overridetossl = !empty($CFG->overridetossl);
 
 admin_externalpage_setup('adminnotifications');
 
@@ -900,4 +909,5 @@ $output = $PAGE->get_renderer('core', 'admin');
 
 echo $output->admin_notifications_page($maturity, $insecuredataroot, $errorsdisplayed, $cronoverdue, $dbproblems,
                                        $maintenancemode, $availableupdates, $availableupdatesfetch, $buggyiconvnomb,
-                                       $registered, $cachewarnings, $eventshandlers, $themedesignermode, $devlibdir);
+                                       $registered, $cachewarnings, $eventshandlers, $themedesignermode, $devlibdir,
+                                       $mobileconfigured, $overridetossl, $invalidforgottenpasswordurl);

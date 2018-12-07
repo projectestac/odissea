@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_user', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_user', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['configplugin'] = 'Erabiltzailearen fitxategi pribatuen ezarpenak';
 $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
 $string['pluginname'] = 'Fitxategi pribatuak';
 $string['pluginname_help'] = 'Erabiltzailearen eremu pribatuan dauden fitxategiak';
+$string['privacy:metadata'] = 'Fitxategi pribatuak biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['user:view'] = 'Erabiltzailearen fitxategi pribatuak ikusi';

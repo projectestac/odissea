@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'rating', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,11 @@ $string['norate'] = 'Não é permitido avaliar!';
 $string['noratings'] = 'Não foram submetidas avaliações';
 $string['noviewanyrate'] = 'Apenas pode consultar os resultados dos items que criou';
 $string['noviewrate'] = 'Não tem permissão para ver avaliações';
+$string['privacy:metadata:rating'] = 'A nota atribuída pelo utilizador é armazenada juntamente com o mapeamento do item que foi avaliado.';
+$string['privacy:metadata:rating:rating'] = 'A nota numérica que o utilizador atribuiu.';
+$string['privacy:metadata:rating:timecreated'] = 'A data/hora em que a nota foi atribuida pela última vez.';
+$string['privacy:metadata:rating:timemodified'] = 'A data/hora em que a nota foi atualizada pela última vez.';
+$string['privacy:metadata:rating:userid'] = 'O utilizador que fez a avaliação.';
 $string['rate'] = 'Avaliar';
 $string['ratepermissiondenied'] = 'Não tem permissão para avaliar';
 $string['rating'] = 'Avaliação';

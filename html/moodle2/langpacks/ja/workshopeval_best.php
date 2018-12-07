@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_best', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopeval_best', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopeval_best
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['comparisonlevel7'] = '甘い';
 $string['comparisonlevel9'] = '非常に甘い';
 $string['configcomparison'] = '成績評価に影響する要素のデフォルト値です。';
 $string['pluginname'] = '最高評価との比較';
+$string['privacy:metadata'] = '最良評価比較プラグインはどのような個人データも保存しません。ユーザの評点の実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出および評価データに添付されます。';

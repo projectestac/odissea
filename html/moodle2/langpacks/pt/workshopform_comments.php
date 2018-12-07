@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_comments', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['dimensioncommentfor'] = 'Comentário para {$a}';
 $string['dimensiondescription'] = 'Descrição';
 $string['dimensionnumber'] = 'Aspeto {$a}';
 $string['pluginname'] = 'Comentários';
+$string['privacy:metadata'] = 'O módulo Comentários de avaliação apenas armazena detalhes da grelha de avaliação. Os atuais dados pessoais de como a grelha tem sido preenchida são armazenados pelo módulo workshop e anexados a avaliações exportadas.';

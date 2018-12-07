@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'install', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -94,7 +94,7 @@ Specifica l\'indirizzo web per raggiungere la tua installazione Moodle. Se l\'in
 <b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare questo folder se non esiste,';
 $string['dirroot'] = 'Cartella di Moodle';
 $string['dirrooterror'] = 'L\'impostazione \'Cartella di Moodle\' sembra essere errata - non è possibile trovare l\'installazione di Moodle nel percorso specificato. Il valore riportato sotto  è stato resettato.';
-$string['download'] = 'Download';
+$string['download'] = 'Scarica';
 $string['downloadlanguagebutton'] = 'Scarica il language pack "{$a}";';
 $string['downloadlanguagehead'] = 'Scarica language pack';
 $string['downloadlanguagenotneeded'] = 'È possibile continuare l\'installazione utilizzando il language pack "{$a}" di default.';
@@ -156,7 +156,6 @@ $string['nativepgsqlhelp'] = '<p>Devi ora configurare il database dove Moodle me
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati. Il database con l\'utente e la password d\'accesso devono già essere stati creati. Il prefisso delle tabelle è obbligatorio.';
 $string['nativesqlsrvnodriver'] = 'I driver PHP Microsoft per SQL Server non sono installati o non sono configurati correttamente.';
-$string['nativesqlsrvnonwindows'] = 'I driver PHP Microsoft per SQL Server sono disponibili solamente nei sistemi operativi Windows.';
 $string['ociextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione OCI8 e non può comunicare con Oracle. Controlla il file php.ini o ricompila il PHP.';
 $string['pass'] = 'Test superato';
 $string['paths'] = 'Percorsi';

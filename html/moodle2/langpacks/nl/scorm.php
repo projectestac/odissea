@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,6 +78,8 @@ $string['browsed'] = 'Voorgeproefd';
 $string['browsemode'] = 'Probeermodus';
 $string['browserepository'] = 'Blader door de opslagruimte';
 $string['calculatedweight'] = 'Berekende weging';
+$string['calendarend'] = '{$a} sluit';
+$string['calendarstart'] = '{$a} opent';
 $string['cannotaccess'] = 'Je kunt dit script niet op deze manier oproepen';
 $string['cannotfindsco'] = 'Kon SCO niet vinden';
 $string['chooseapacket'] = 'Kies of update een SCORM/AICC-pakket';
@@ -87,17 +89,20 @@ $string['collapsetocwinsizedesc'] = 'Deze instelling laat je de venstergrootte k
 $string['compatibilitysettings'] = 'Compatibiliteitsinstellingen';
 $string['completed'] = 'Volledig';
 $string['completionscorerequired'] = 'Vereiste minimumscore';
+$string['completionscorerequireddesc'] = 'Maximale score van {$a} vereist voor voltooiing.';
 $string['completionscorerequired_help'] = 'Het inschakelen van deze instelling zal er voor zorgen dat een gebruiker minstens de minimumscore moet behalen om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
 $string['completionstatusallscos'] = 'Vereis alle scos om hun voltooiingsstatus te melden';
 $string['completionstatusallscos_help'] = 'Somige SCORM-pakketten bevatten meerdere onderdelen of "scos" - wanneer dit is ingeschakeld moeten alle scos in het pakket hun relevante lesson_status voor deze activiteit als voltooid markeren.';
 $string['completionstatus_completed'] = 'Voltooid';
 $string['completionstatus_passed'] = 'Geslaagd';
 $string['completionstatusrequired'] = 'Vereist status';
+$string['completionstatusrequireddesc'] = 'Leerling moet minstens één van volgende statussen bereiken: {$a}';
 $string['completionstatusrequired_help'] = 'Het controleren van één of meerdere statussen zal er voor zorgen dat en gebruiker minstens één gecontroleerde status moet bereiken om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
 $string['confirmloosetracks'] = 'WAARSCHUWING: Dit pakket is blijkbaar gewijzigd of aangepast. Als de pakketstructuur is gewijzigd, dan zou het afgelegde leerpad van sommige gebruikers zou kunnen verloren gegaan zijn tijdens het updateproces.';
 $string['contents'] = 'Inhoud';
 $string['coursepacket'] = 'Cursuspakket';
 $string['coursestruct'] = 'Cursusstructuur';
+$string['crontask'] = 'Achtergrondverwerking voor SCORM';
 $string['currentwindow'] = 'Huidig venster';
 $string['datadir'] = 'Fout van het bestandssysteem: de gegevensfolder van de cursus kan niet gemaakt worden';
 $string['defaultdisplaysettings'] = 'Standaard scherminstellingen';
@@ -200,6 +205,10 @@ $string['hidetoc_help'] = 'Deze instelling bepaalt hoe de inhoudstabel getoond w
 $string['highestattempt'] = 'Beste poging';
 $string['identifier'] = 'Vraagidentificatie';
 $string['incomplete'] = 'Onvolledig';
+$string['indicator:cognitivedepth'] = 'SCORM cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een SCORM activiteit.';
+$string['indicator:socialbreadth'] = 'SCORM sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een SCORM activiteit.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interacties';
 $string['invalidactivity'] = 'Fout in SCORM-activiteit';
@@ -316,6 +325,20 @@ $string['position_error'] = 'De {$a->tag} kan geen child zijn van {$a->parent} t
 $string['preferencespage'] = 'Voorkeuren enkel voor deze pagina';
 $string['preferencesuser'] = 'Voorkeuren voor dit rapport';
 $string['prev'] = 'Vorige';
+$string['privacy:metadata:aicc:data'] = 'Persoonlijke gegevens die doorgegeven worden via het AICC/SCORM subsysteem.';
+$string['privacy:metadata:aicc:externalpurpose'] = 'Deze plugin stuurt extern gegevens uit via AICC HACP.';
+$string['privacy:metadata:aicc_session:lessonstatus'] = 'De status van de op te volgen les';
+$string['privacy:metadata:aicc_session:scormmode'] = 'De modus van het op te volgen element';
+$string['privacy:metadata:aicc_session:scormstatus'] = 'De status van het op te volgen element';
+$string['privacy:metadata:aicc_session:sessiontime'] = 'De op te volgen sessietijd';
+$string['privacy:metadata:aicc_session:timecreated'] = 'Het tijdstip waarop het op te volgen element was gemaakt';
+$string['privacy:metadata:attempt'] = 'Het pogingnummer';
+$string['privacy:metadata:scoes_track:element'] = 'De naam van het op te volgen element';
+$string['privacy:metadata:scoes_track:value'] = 'De waarde van het gegeven element';
+$string['privacy:metadata:scorm_aicc_session'] = 'De sessie-informatie over de AICC HACP';
+$string['privacy:metadata:scorm_scoes_track'] = 'De opgevolgde gegevesn van de SCOes die bij de activiteit horen';
+$string['privacy:metadata:timemodified'] = 'De tijd waarop het op te volgen element laatst was gewijzigd';
+$string['privacy:metadata:userid'] = 'De ID van de gebruiker die toegang had tot de SCORM-activiteit';
 $string['protectpackagedownloads'] = 'Bescherm pakketdownloads';
 $string['protectpackagedownloads_desc'] = 'Indien ingeschakeld zullen SCORM-pakketten enkel gedownload kunnen worden als de gebruiker de course:manageactivities mogelijkheid heeft. Indien uitgeschakeld kunnen SCORM-pakketten aldijd gedownload worden (mobiel of op andere manieren).';
 $string['raw'] = 'Ruwe score';

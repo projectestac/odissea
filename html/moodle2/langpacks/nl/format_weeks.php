@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_weeks', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Voeg weken toe';
+$string['automaticenddate'] = 'Bereken de einddatum uit het aantal secties';
+$string['automaticenddate_help'] = 'Indien ingeschakeld zal de einddatum van de cursus automatisch berekend worden uit het aantal secties en de cursus startdatum.';
 $string['currentsection'] = 'Deze week';
 $string['deletesection'] = 'Verwijder week';
 $string['editsection'] = 'Bewerk week';
@@ -34,6 +37,7 @@ $string['newsectionname'] = 'Nieuwe naam voor week {$a}';
 $string['page-course-view-weeks'] = 'Alle hoofdpagina\'s van cursussen in weekformat';
 $string['page-course-view-weeks-x'] = 'Alle cursuspagina\'s in weekopmaak';
 $string['pluginname'] = 'Weekformat';
+$string['privacy:metadata'] = 'De weekformaatplugin bewaart geen persoonlijke gegevens.';
 $string['section0name'] = 'Algemeen';
 $string['sectionname'] = 'Week';
 $string['showfromothers'] = 'Toon week';

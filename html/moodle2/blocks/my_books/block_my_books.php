@@ -54,7 +54,7 @@ class block_my_books extends block_list {
                     continue;
                 }
                 $this->content->items[] = $item;
-                $this->content->icons[] = '<img src="'.$OUTPUT->pix_url('icon', 'rcontent').'" class="icon" alt="" />';
+                $this->content->icons[] = '<img src="'.$OUTPUT->image_url('icon', 'rcontent').'" class="icon" alt="" />';
 	        }
         }
 

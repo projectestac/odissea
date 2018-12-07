@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,4 +37,12 @@ $string['nopublishers'] = 'Aucun pair distant disponible.';
 $string['noroamingusers'] = 'Pour s\'inscrire dans des cours distants, les utilisateurs doivent avoir la capacité « {$a} » dans le contexte système. Or il n\'y a actuellement aucun utilisateur avec cette capacité. Cliquer le bouton Continuer pour attribuer la capacité requise à l\'un ou plusieurs rôles de votre site.';
 $string['otherenrolledusers'] = 'Autres utilisateurs inscrits';
 $string['pluginname'] = 'Service d\'inscription à distance';
+$string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Service d\'inscription à distance';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'La date et l\'heure de la modification de l\'inscription.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Le nom du plugin d\'inscription du le serveur distant qui a été utilisé pour inscrire l\'étudiant sur le cours distant.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'L\'identifiant du serveur MNet distant.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'L\'identifiant du cours sur le serveur distant.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Le nom du rôle sur le serveur distant.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Cette table enregistre les informations sur les inscriptions des utilisateurs locaux dans des cours sur des serveurs distants.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'L\'identifiant de l\'utilisateur local sur ce serveur.';
 $string['refetch'] = 'Mettre à jour l\'affichage des données des serveurs distants';

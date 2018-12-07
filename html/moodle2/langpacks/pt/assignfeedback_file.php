@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_file', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['countfiles'] = '{$a} ficheiros';
 $string['default'] = 'Ativo por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método de feedback estará disponivel para todos os novos trabalhos.';
 $string['enabled'] = 'Ficheiro de feedback';
-$string['enabled_help'] = 'Se ativo, o professor poderá adicionar ficheiros de feedback quando realizar as avaliações. Esses ficheiros podem ser o documento submetido pelo aluno com comentários do professor, ficheiros de audio com feedback ao trabalho, entre outros.';
+$string['enabled_help'] = 'Se ativar esta opção, o professor poderá adicionar ficheiros de feedback quando realizar as avaliações. Os ficheiros podem ser o documento submetido pelo aluno com comentários do professor, ficheiros de audio com feedback ao trabalho, entre outros.';
 $string['feedbackfileadded'] = 'Novo ficheiro de feedback "{$a->filename}" para o aluno "{$a->student}"';
 $string['feedbackfileupdated'] = 'Ficheiro de feedback modificado "{$a->filename}" para o aluno "{$a->student}"';
 $string['feedbackzip'] = 'Ficheiro zip com ficheiros de feedback';
@@ -49,6 +49,8 @@ $string['maximumsize'] = 'Tamanho máximo do ficheiro';
 $string['moreusers'] = '{$a} mais...';
 $string['nochanges'] = 'Sem alterações';
 $string['pluginname'] = 'Ficheiro de feedback';
+$string['privacy:metadata:filepurpose'] = 'Ficheiros de feedback do professor para o aluno';
+$string['privacy:path'] = 'Ficheiros de feedback';
 $string['selectedusers'] = 'Utilizadores selecionados';
 $string['uploadfiles'] = 'Enviar ficheiros de feedback';
 $string['uploadzip'] = 'Carregar múltiplos ficheiros de feedback num ficheiro zip';

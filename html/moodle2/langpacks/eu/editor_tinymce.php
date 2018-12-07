@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_tinymce', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -407,7 +407,7 @@ $string['fullpage_dlg:encoding'] = 'Karaktere-kodifikazioa';
 $string['fullpage_dlg:fontface'] = 'Letra-tipoa';
 $string['fullpage_dlg:font_face'] = 'Letra-tipoa';
 $string['fullpage_dlg:fontsize'] = 'Letra-tamaina';
-$string['fullpage_dlg:font_size'] = 'Tamaina';
+$string['fullpage_dlg:font_size'] = 'Letra-tamaina';
 $string['fullpage_dlg:general_props'] = 'Orokorra';
 $string['fullpage_dlg:head_elements'] = 'Goiburuaren elementuak';
 $string['fullpage_dlg:hover_color'] = 'Goiburuaren kolorea';
@@ -601,6 +601,7 @@ $string['paste:selectall_desc'] = 'Aukeratu guztia';
 $string['pluginname'] = 'TinyMCE HTML editorea';
 $string['preview:preview_desc'] = 'Aurrebista';
 $string['print:print_desc'] = 'Inprimatu';
+$string['privacy:metadata'] = 'TinyMCE HTML editorea pluginak ez du datu pertsonalik biltzen.';
 $string['save:cancel_desc'] = 'Utzi aldaketak guztiak';
 $string['save:save_desc'] = 'Gorde';
 $string['searchreplace:delta_height'] = '0';
@@ -794,7 +795,7 @@ $string['table_dlg:style'] = 'Estiloa';
 $string['table_dlg:summary'] = 'Laburpena';
 $string['table_dlg:tbody'] = 'Gorputza';
 $string['table_dlg:td'] = 'Datuak';
-$string['table_dlg:tfoot'] = 'Oina';
+$string['table_dlg:tfoot'] = 'Orri-oina';
 $string['table_dlg:th'] = 'Goiburua';
 $string['table_dlg:thead'] = 'Goiburua';
 $string['table_dlg:title'] = 'Txertatu/editatu taula';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_match', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,6 @@ $string['pluginnameadding'] = 'Zuordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Zuordnungsfrage bearbeiten';
 $string['pluginname_help'] = 'Zuordnungsfragen fordern dazu auf, Begriffe, Aussagen oder Fragen jeweils anderen Begriffen, Aussagen oder Fragen zuzuordnen.';
 $string['pluginnamesummary'] = 'Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.';
+$string['privacy:metadata'] = 'Der Zuordnungsfragetyp speichert keine persönlichen Daten';
 $string['shuffle'] = 'Mischen';
 $string['shuffle_help'] = 'Wenn aktiviert ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" aktiviert ist.';

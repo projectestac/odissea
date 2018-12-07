@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,9 +34,9 @@ $string['allocationconfigured'] = 'Distribuzione configurata';
 $string['allocationdone'] = 'Distribuzione effettuata';
 $string['allocationerror'] = 'Errore durante la distribuzione';
 $string['allowedfiletypesforoverallfeedback'] = 'Tipi di file consentiti da allegare al feedback';
-$string['allowedfiletypesforoverallfeedback_help'] = 'I tipi di file che è consentito allegare ai feedback possono essere specificati inserendo un elenco separato da virgole con le estensioni desiderate, ad esempio \'mp4, mp3, png, jpg\'. Lasciando il campo vuoto, sarà possibile allegare un file di qualsiasi tipo.';
+$string['allowedfiletypesforoverallfeedback_help'] = 'I tipi di file che è consentito allegare ai feedback possono essere specificati inserendo un elenco separato da virgole con le estensioni desiderate. Lasciando il campo vuoto, sarà possibile allegare un file di qualsiasi tipo.';
 $string['allowedfiletypesforsubmission'] = 'Tipi di file consentiti da allegare alla consegna';
-$string['allowedfiletypesforsubmission_help'] = 'I tipi di file che è consentito allegare alle consegne possono essere specificati inserendo un elenco separato da virgole con le estensioni desiderate, ad esempio \'mp4, mp3, png, jpg\'. Lasciando il campo vuoto, sarà possibile allegare un file di qualsiasi tipo.';
+$string['allowedfiletypesforsubmission_help'] = 'I tipi di file che è consentito allegare alle consegne possono essere specificati inserendo un elenco separato da virgole con le estensioni desiderate. Lasciando il campo vuoto, sarà possibile allegare un file di qualsiasi tipo.';
 $string['allsubmissions'] = 'Tutte le consegne ({$a})';
 $string['alreadygraded'] = 'Ha già un voto';
 $string['areaconclusion'] = 'Contenuto della conclusione';
@@ -59,7 +59,7 @@ $string['assessmentdeleted'] = 'La distribuzione della valutazione è stata rimo
 $string['assessmentend'] = 'Fine valutazioni';
 $string['assessmentendbeforestart'] = 'La data di fine valutazioni non può essere anteriore la data di inizio valutazioni';
 $string['assessmentenddatetime'] = 'Fine valutazioni: {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentendevent'] = '{$a} (Fine valutazioni)';
+$string['assessmentendevent'] = '{$a} fine valutazioni';
 $string['assessmentform'] = 'Scheda di valutazione';
 $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Valutazione</a> di <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Valutazione di riferimento';
@@ -68,7 +68,7 @@ $string['assessmentreferenceneeded'] = 'Per fornire una valutazione di riferimen
 $string['assessmentsettings'] = 'Impostazioni valutazione';
 $string['assessmentstart'] = 'Aperto per le valutazioni di';
 $string['assessmentstartdatetime'] = 'Aperto per le valutazioni da {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentstartevent'] = '{$a} (aperto per le valutazioni)';
+$string['assessmentstartevent'] = '{$a} aperto per le valutazioni';
 $string['assessmentweight'] = 'Peso della valutazione';
 $string['assignedassessments'] = 'Consegne da valutare';
 $string['assignedassessmentsnone'] = 'Non hai consegne assegnate da valutare';
@@ -180,6 +180,10 @@ $string['gradinggradeover'] = 'Modifica il voto per la valutazione';
 $string['gradingsettings'] = 'Impostazioni voto';
 $string['groupnoallowed'] = 'Non sei autorizzato ad accedere nessun gruppo in questo workshop';
 $string['iamsure'] = 'Si, sono sicuro';
+$string['indicator:cognitivedepth'] = 'Workshop cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'workshop\'.';
+$string['indicator:socialbreadth'] = 'Workshop sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'workshop\'.';
 $string['info'] = 'Informazioni';
 $string['instructauthors'] = 'Istruzioni di consegna';
 $string['instructreviewers'] = 'Istruzioni per la valutazione';
@@ -276,7 +280,7 @@ $string['submissiondeleteconfirmassess'] = 'Sei sicuro di eliminare la consegna 
 $string['submissionend'] = 'Fine consegne';
 $string['submissionendbeforestart'] = 'la data di fine consegne non può essere anteriore alla data di inizio consegne';
 $string['submissionenddatetime'] = 'Fine delle consegne: {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (fine delle consegne)';
+$string['submissionendevent'] = '{$a} fine delle consegne';
 $string['submissionendswitch'] = 'Passa alla fase successiva dopo la data di fine consegne';
 $string['submissionendswitch_help'] = 'Specificando la data di fine consegne e selezionando questa casella, dopo la data di fine consegne il workshop passerà automaticamente alla fase di valutazione.
 
@@ -291,7 +295,7 @@ $string['submissionsettings'] = 'Impostazioni consegna';
 $string['submissionsreport'] = 'Report delle consegne';
 $string['submissionstart'] = 'Inizio consegne da';
 $string['submissionstartdatetime'] = 'Inizio consegne da {$a->daydatetime} ({$a->distanceday})';
-$string['submissionstartevent'] = '{$a} (Inizio consegne)';
+$string['submissionstartevent'] = '{$a} Inizio consegne';
 $string['submissiontitle'] = 'Titolo';
 $string['submittednotsubmitted'] = 'Consegne effettuate ({$a->submitted}) / non effettuate ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Metodo di distribuzione consegne';
@@ -302,12 +306,18 @@ $string['subplugintype_workshopform'] = 'Criterio di votazione';
 $string['subplugintype_workshopform_plural'] = 'Strategie di valutazione';
 $string['switchingphase'] = 'Cambiamento di fase';
 $string['switchphase'] = 'Cambia fase';
+$string['switchphase10'] = 'Vai alla fase di allestimento';
 $string['switchphase10info'] = 'Stai per passare il workshop nella  <strong>Fase di allestimento</strong>. Durante questa fase i partecipanti non potranno modificare le consegne o le valutazioni. I docenti potranno usare questa fase per modificare le impostazioni del workshop, i criteri di valutazione o migliorare la scheda di valutazione.';
+$string['switchphase20'] = 'Passa alla fase di consegna';
 $string['switchphase20info'] = 'Il workshop sta per entrare nella <strong>Fase di consegna</strong>. Durante questa fase gli studenti potranno consegnare i lavori (nelle date stabilite, se impostate). I docenti potranno distribuire le consegne per la revisione tra pari.';
+$string['switchphase30'] = 'Passa alla fase di valutazione';
 $string['switchphase30auto'] = 'Il workshop passerà automaticamente alla fase di valutazione dopo {$a->daydatetime} ({$a->distanceday})';
 $string['switchphase30info'] = 'Il workshop sta per entrare nella <strong>Fase di valutazione</strong>. Durante questa fase i revisori potranno valutare le consegne a loro distribuite (all\'interno delle date stabilite, se impostate).';
+$string['switchphase40'] = 'Passa alla fase di calcolo dei voti';
 $string['switchphase40info'] = 'Il workshop sta per entrare nella <strong>Fase di calcolo dei voti</strong>. Durante questa fase i partecipanti non potranno modificare le proprie consegne e le valutazioni date. I docenti potranno usare gli strumenti di valutazione per calcolare il voto finale e dare il proprio feedback ai revisori.';
+$string['switchphase50'] = 'Chiudi workshop';
 $string['switchphase50info'] = 'Il workshop sta per essere chiuso. I voti verranno calcolati ed appariranno nel registro delle valutazioni. Gli studenti potranno visualizzare le proprie consegne e le valutazioni ricevute.';
+$string['switchphaseauto'] = 'Il cambiamento di fase è stato pianificato';
 $string['switchphasenext'] = 'Passa alla fase successiva';
 $string['taskassesspeers'] = 'Valuta pari';
 $string['taskassesspeersdetails'] = 'totale: {$a->total}<br />in attesa: {$a->todo}';
@@ -339,6 +349,7 @@ $string['userplan_help'] = 'Il planner visualizza tutte le fasi del workshop ele
 $string['useselfassessment'] = 'Usa auto valutazione';
 $string['useselfassessment_desc'] = 'Gli studenti potranno valutare il proprio lavoro';
 $string['useselfassessment_help'] = 'I partecipanti potranno valutare il proprio lavoro e riceveranno un voto aggiuntivo per l\'attività svolta.';
+$string['viewworkshopsummary'] = 'Visualizza riassunto workshop';
 $string['weightinfo'] = 'Peso: {$a}';
 $string['withoutsubmission'] = 'Revisori che non hanno consegnato il proprio lavoro';
 $string['workshop:addinstance'] = 'Aggiungere workshop';

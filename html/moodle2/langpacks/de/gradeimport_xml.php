@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeimport_xml', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['fileurl_help'] = 'Tragen Sie hier die URL für eine Datei mit Daten auf
 $string['importxml'] = 'XML-Import';
 $string['importxml_help'] = 'Bewertungen können mithilfe einer XML-Datei eingelesen werden. Diese muss die Nutzer-ID-Nummer und die Aktivitäts-ID enthalten. Um das geanue Format der XML-Datei zu ermitteln, erstellen Sie zunächst einen Export mit einigen Bewertungen. Verwenden Sie dann die darin enthaltene Struktur für einen Import.';
 $string['pluginname'] = 'XML-Datei';
+$string['privacy:metadata'] = 'Das XML-Importplugin für Bewertungen speichert keine persönlichen Daten.';
 $string['xml:publish'] = 'Aus XML Datei importierte Bewertungen veröffentlichen';
 $string['xml:view'] = 'Bewertungen aus XML-Datei importieren';

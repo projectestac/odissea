@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,6 @@ $string['activity'] = '活动';
 $string['addserver'] = '添加新的可信服务器';
 $string['addtype'] = '添加外部工具配置';
 $string['allow'] = '允许';
-$string['allowinstructorcustom'] = '允许教师添加自定义';
 $string['always'] = '总是';
 $string['baseurl'] = '基础网页地址 / 工具注册名称';
 $string['basiclti'] = 'LTI';
@@ -123,6 +122,10 @@ $string['force_ssl'] = '强制使用 SSL';
 $string['global_tool_types'] = '全局工具类型';
 $string['icon_url'] = '图标的网址';
 $string['id'] = 'id号';
+$string['indicator:cognitivedepth'] = 'LTI 活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 LTI活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = 'LTI活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在LTI活动中所达到的社会宽度。';
 $string['invalidid'] = 'LTI ID 不正确';
 $string['launch_in_moodle'] = '在 moodle 中启动工具';
 $string['launchinpopup'] = '启动容器';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_flickr', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['apikey'] = 'API key';
 $string['contenttype'] = 'Inhoudstypes';
 $string['err_noapikey'] = 'Geen API-sleutel';
-$string['err_noapikey_help'] = 'Er is geen API-sleutel geconfigureerd voor deze plugin. Je kunt er één bekomen van de Flickr services pagina';
+$string['err_noapikey_help'] = 'Er is geen API-sleutel geconfigureerd voor deze plugin. Je kunt er één verkrijgen van de Flickr services pagina';
 $string['hidefrompublicsearches'] = 'Deze afbeeldingen verbergen voor publieke zoekopdrachten?';
 $string['isfamily'] = 'Zichtbaar voor familie';
 $string['isfriend'] = 'Zichtbaar voor vrienden';
@@ -38,13 +38,15 @@ $string['noauthtoken'] = 'Kon geen authenticatietoken krijgen om te gebruiken ti
 $string['other'] = 'Kunst, illustratie, CGI of andere niet-fotografische afbeeldingen';
 $string['photo'] = 'Foto\'s';
 $string['pluginname'] = 'Flickr.com';
+$string['privacy:metadata'] = 'Deze plugin stuurt gegevens extern door naar een gelinkte Flickr-account en bewaart geen gegevens lokaal.';
+$string['privacy:metadata:data'] = 'Persoonlijke gegevens, binnengekomen via het portfolio subsysteem.';
 $string['restricted'] = 'Beperkt';
 $string['safe'] = 'Veilig';
 $string['safetylevel'] = 'Veiligheidsniveau';
 $string['screenshot'] = 'Schermafdrukken';
 $string['set'] = 'Ingesteld';
 $string['setupinfo'] = 'Installatie-instructies';
-$string['setupinfodetails'] = 'Om een API-sleutel en de geheime string te bekomen moet je inloggen op Flickr en <a href="{$a->applyurl}">een nieuwe sleutel aanvragen</a>. Als de nieuwe sleutel en geheime string voor jouw zijn aangemaakt, volg je de \'Edit auth flow for this app\' link op die pagina. Selecteer als \'App Type\'  \'Web Application\'. In het  \'Callback URL\' veld, zet je de waarde: <br /><code>{$a->callbackurl}</code><br />Optioneel kun je ook nog je Moodle site beschrijving en log toevoegen. Deze waarden kunnen later ingegeven worden op <a href="{$a->keysurl}">de pagina</a> die je Flickr applicaties oplijst.';
+$string['setupinfodetails'] = 'Om een API-sleutel en de geheime string te verkrijgen moet je inloggen op Flickr en <a href="{$a->applyurl}">een nieuwe sleutel aanvragen</a>. Als de nieuwe sleutel en geheime string voor jouw zijn aangemaakt, volg je de \'Edit auth flow for this app\' link op die pagina. Selecteer als \'App Type\'  \'Web Application\'. In het  \'Callback URL\' veld, zet je de waarde: <br /><code>{$a->callbackurl}</code><br />Optioneel kun je ook nog je Moodle site beschrijving en log toevoegen. Deze waarden kunnen later ingegeven worden op <a href="{$a->keysurl}">de pagina</a> die je Flickr applicaties oplijst.';
 $string['sharedsecret'] = 'Geheime string';
 $string['title'] = 'Titel';
 $string['uploadfailed'] = 'Uploaden van afbeelding(en) naar flickr.com mislukt: {$a}';

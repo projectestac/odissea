@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_xmldb', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -173,6 +173,7 @@ $string['pendingchangescannotbesaved'] = 'There are changes in this file but the
 $string['pendingchangescannotbesavedreload'] = 'There are changes in this file but they cannot be saved! Please verify that both the directory and the "install.xml" within it have write permissions for the web server. Then reload this page and you should be able to save those changes.';
 $string['pluginname'] = 'XMLDB editor';
 $string['primarykeyonlyallownotnullfields'] = 'Primary keys cannot be null';
+$string['privacy:metadata'] = 'The XMLDB editor plugin does not store any personal data.';
 $string['reserved'] = 'Reserved';
 $string['reservedwords'] = 'Reserved words';
 $string['revert'] = 'Revert';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,6 @@ $string['addnewapp'] = 'Enable external application';
 $string['addserver'] = 'Add new trusted server';
 $string['addtype'] = 'Add preconfigured tool';
 $string['allow'] = 'Allow';
-$string['allowinstructorcustom'] = 'Allow teachers to add custom parameters';
 $string['allowsetting'] = 'Allow tool to store 8K of settings in Moodle';
 $string['always'] = 'Always';
 $string['autoaddtype'] = 'Add tool';
@@ -91,7 +90,7 @@ $string['courselink'] = 'Go to course';
 $string['coursemisconf'] = 'Course is misconfigured';
 $string['course_tool_types'] = 'Course tools';
 $string['createdon'] = 'Created on';
-$string['curllibrarymissing'] = 'PHP Curl library must be installed to use LTI';
+$string['curllibrarymissing'] = 'PHP cURL extension required for the External tool.';
 $string['custom'] = 'Custom parameters';
 $string['custom_config'] = 'Using custom tool configuration.';
 $string['custom_help'] = 'Custom parameters are settings used by the tool provider. For example, a custom parameter may be used to display
@@ -191,6 +190,10 @@ $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'The icon URL allows the icon that shows up in the course listing for this activity to be modified. Instead of using the default
 LTI icon, an icon which conveys the type of activity may be specified.';
 $string['id'] = 'ID';
+$string['indicator:cognitivedepth'] = 'LTI cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in an LTI activity.';
+$string['indicator:socialbreadth'] = 'LTI social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in an LTI activity.';
 $string['invalidid'] = 'LTI ID was incorrect';
 $string['launch_in_moodle'] = 'Launch tool in Moodle';
 $string['launchinpopup'] = 'Launch container';
@@ -218,6 +221,7 @@ $string['leaveblank'] = 'Leave blank if you do not need them';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Add course-specific tool configurations';
 $string['lti:addinstance'] = 'Add new external tool activities';
+$string['lti:admin'] = 'Be an administrator when the tool is launched';
 $string['lti_administration'] = 'Edit preconfigured tool';
 $string['lti_errormsg'] = 'The tool returned the following error message: "{$a}"';
 $string['lti:grade'] = 'View grades returned by the external tool';
@@ -329,6 +333,32 @@ $string['preferwidget'] = 'Prefer widget launch';
 $string['preferwidth'] = 'Preferred width';
 $string['press_to_submit'] = 'Press to launch this activity';
 $string['privacy'] = 'Privacy';
+$string['privacy:metadata:coursefullname'] = 'The fullname of the course the user is accessing the LTI Consumer from';
+$string['privacy:metadata:courseid'] = 'The ID of the course the user is accessing the LTI Consumer from';
+$string['privacy:metadata:courseidnumber'] = 'The ID number of the course the user is accessing the LTI Consumer from';
+$string['privacy:metadata:courseshortname'] = 'The shortname of the course the user is accessing the LTI Consumer from';
+$string['privacy:metadata:createdby'] = 'The user who created the record';
+$string['privacy:metadata:email'] = 'The email address of the user accessing the LTI Consumer';
+$string['privacy:metadata:externalpurpose'] = 'The LTI Consumer provides user information and context to the LTI Tool Provider.';
+$string['privacy:metadata:firstname'] = 'The firstname of the user accessing the LTI Consumer';
+$string['privacy:metadata:fullname'] = 'The fullname of the user accessing the LTI Consumer';
+$string['privacy:metadata:lastname'] = 'The lastname of the user accessing the LTI Consumer';
+$string['privacy:metadata:lti_submission'] = 'LTI submission';
+$string['privacy:metadata:lti_submission:datesubmitted'] = 'The timestamp indicating when the submission was made';
+$string['privacy:metadata:lti_submission:dateupdated'] = 'The timestamp indicating when the submission was modified';
+$string['privacy:metadata:lti_submission:gradepercent'] = 'The grade for the user as a percentage';
+$string['privacy:metadata:lti_submission:originalgrade'] = 'The original grade for the user';
+$string['privacy:metadata:lti_submission:userid'] = 'The ID of the user who submitted for the LTI activity';
+$string['privacy:metadata:lti_tool_proxies'] = 'LTI proxies';
+$string['privacy:metadata:lti_tool_proxies:name'] = 'LTI proxy name';
+$string['privacy:metadata:lti_types'] = 'LTI types';
+$string['privacy:metadata:lti_types:name'] = 'LTI type name';
+$string['privacy:metadata:role'] = 'The role in the course for the user accessing the LTI Consumer';
+$string['privacy:metadata:timecreated'] = 'The date at which the record was created';
+$string['privacy:metadata:timemodified'] = 'The date at which the record was modified';
+$string['privacy:metadata:userid'] = 'The ID of the user accessing the LTI Consumer';
+$string['privacy:metadata:useridnumber'] = 'The ID number of the user accessing the LTI Consumer';
+$string['privacy:metadata:username'] = 'The username of the user accessing the LTI Consumer';
 $string['quickgrade'] = 'Allow quick grading';
 $string['quickgrade_help'] = 'If enabled, multiple tools can be graded on one page. Add grades and comments then click the "Save all my feedback" button to save all changes for that page.';
 $string['redirect'] = 'You will be redirected in few seconds. If you are not, press the button.';

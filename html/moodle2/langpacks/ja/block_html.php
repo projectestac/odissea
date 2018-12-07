@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_html', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_html
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,3 +36,5 @@ $string['html:myaddinstance'] = '新しいHTMLブロックをダッシュボー�
 $string['leaveblanktohide'] = '空白の場合、タイトルを隠す';
 $string['newhtmlblock'] = '(新しいHTMLブロック)';
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata:block'] = 'HTMLブロックはブロックサブシステム内のデータすべてを保存します。';
+$string['search:content'] = 'HTMLブロックコンテンツ';

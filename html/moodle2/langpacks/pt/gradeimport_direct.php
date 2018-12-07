@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeimport_direct', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeimport_direct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Importar notas a partir de CSV';
 $string['pluginname'] = 'Colar a partir da folha de cálculo';
+$string['privacy:metadata'] = 'O módulo Importar colar a partir da folha de cálculo não armazena dados pessoais.';
 $string['userdata'] = 'Ajuda a copiar dados para este formulário.';
 $string['userdata_help'] = 'As notas podem ser copiadas e coladas a partir de uma folha de cálculo para a pauta. A folha de cálculo deve ter uma coluna que contenha dados de identidade do utilizador - nome de utilizador, número ID ou e-mail. Cada coluna para importação deverá ter um cabeçalho.';

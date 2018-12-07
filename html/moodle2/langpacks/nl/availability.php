@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['accessrestrictions'] = 'Toegangsbeperkingen';
 $string['addrestriction'] = 'Voeg beperking toe...';
 $string['and'] = 'en';
 $string['condition_group'] = 'Beperkingenset';
-$string['condition_group_info'] = 'Voeg een reeks geneste beperkingen toe om een complexe logica te bekomen.';
+$string['condition_group_info'] = 'Voeg een reeks geneste beperkingen toe om een complexe logica toe te passen.';
 $string['enableavailability'] = 'Beperkte toegang inschakelen';
 $string['enableavailability_desc'] = 'Wanneer dit ingeschakeld is, dan kun je voorwaarden instellen (gebaseerd op datum, cijfer of voltooid) die controleren wanneer toegang tot een activiteit of bron mogelijk is.';
 $string['error_list_nochildren'] = 'Beperkingssets moeten minstens één voorwaarde bevatten.';
@@ -46,7 +46,7 @@ $string['list_and'] = 'Alle van:';
 $string['list_and_hidden'] = 'Alle van (verborgen):';
 $string['listheader_multi_after'] = 'van volgende';
 $string['listheader_multi_and'] = 'alle';
-$string['listheader_multi_before'] = 'komt overeen';
+$string['listheader_multi_before'] = 'voldoen aan';
 $string['listheader_multi_or'] = 'gelijk welke';
 $string['listheader_sign_before'] = 'Leerling';
 $string['listheader_sign_neg'] = 'moet niet';
@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = 'Niet beschikbaar (verborgen) tenzij één van:
 $string['manageplugins'] = 'Beheer beperkingen';
 $string['missingplugin'] = 'Beperkings-plugin ontbreekt';
 $string['or'] = 'of';
+$string['privacy:metadata'] = 'Het toegangsbeperking subsysteem bewaart geen persoonlijke gegevens.';
 $string['restrictaccess'] = 'Beperk toegang';
 $string['restrictbygroup'] = 'Voeg toegangsrestrictie voor groep/groepering toe';
 $string['setheading'] = '{$a->number} Set van {$a->count} beperking(en)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,16 +45,19 @@ $string['deleteinstancenousersconfirm'] = 'You are about to delete the enrolment
 $string['disableinstanceconfirmself'] = 'Are you really sure you want to disable instance "{$a->name}" that gives you access to this course? It is possible that you will not be able to access this course if you continue.';
 $string['durationdays'] = '{$a} days';
 $string['editenrolment'] = 'Edit enrolment';
+$string['edituserenrolment'] = 'Edit {$a}\'s enrolment';
 $string['enrol'] = 'Enrol';
 $string['enrolcandidates'] = 'Not enrolled users';
 $string['enrolcandidatesmatching'] = 'Matching not enrolled users';
 $string['enrolcohort'] = 'Enrol cohort';
 $string['enrolcohortusers'] = 'Enrol users';
+$string['enroldetails'] = 'Enrolment details';
 $string['enrollednewusers'] = 'Successfully enrolled {$a} new users';
 $string['enrolledusers'] = 'Enrolled users';
 $string['enrolledusersmatching'] = 'Matching enrolled users';
 $string['enrolme'] = 'Enrol me in this course';
 $string['enrolmentinstances'] = 'Enrolment methods';
+$string['enrolmentmethod'] = 'Enrolment method';
 $string['enrolmentnew'] = 'New enrolment in {$a}';
 $string['enrolmentnewuser'] = '{$a->user} has enrolled in course "{$a->course}"';
 $string['enrolmentoptions'] = 'Enrolment options';
@@ -63,6 +66,7 @@ $string['enrolnotpermitted'] = 'You do not have permission or are not allowed to
 $string['enrolperiod'] = 'Enrolment duration';
 $string['enroltimecreated'] = 'Enrolment created';
 $string['enroltimeend'] = 'Enrolment ends';
+$string['enroltimeendinvalid'] = 'Enrolment end date must be after the enrolment start date';
 $string['enroltimestart'] = 'Enrolment starts';
 $string['enrolusage'] = 'Instances / enrolments';
 $string['enrolusers'] = 'Enrol users';
@@ -99,6 +103,7 @@ $string['instanceadded'] = 'Method added';
 $string['instanceeditselfwarning'] = 'Warning:';
 $string['instanceeditselfwarningtext'] = 'You are enrolled into this course through this enrolment method, changes may affect your access to this course.';
 $string['invalidenrolinstance'] = 'Invalid enrolment instance';
+$string['invalidrequest'] = 'Invalid request';
 $string['invalidrole'] = 'Invalid role';
 $string['manageenrols'] = 'Manage enrol plugins';
 $string['manageinstance'] = 'Manage';
@@ -112,12 +117,23 @@ $string['notenrollable'] = 'You can not enrol yourself in this course.';
 $string['notenrolledusers'] = 'Other users';
 $string['otheruserdesc'] = 'The following users are not enrolled in this course but do have roles, inherited or assigned within it.';
 $string['participationactive'] = 'Active';
+$string['participationnotcurrent'] = 'Not current';
 $string['participationstatus'] = 'Status';
 $string['participationsuspended'] = 'Suspended';
 $string['periodend'] = 'until {$a}';
 $string['periodnone'] = 'enrolled {$a}';
 $string['periodstart'] = 'from {$a}';
 $string['periodstartend'] = 'from {$a->start} until {$a->end}';
+$string['privacy:metadata:user_enrolments'] = 'Enrolments';
+$string['privacy:metadata:user_enrolments:enrolid'] = 'The instance of the enrol plugin.';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'The ID of the user who last modified the user enrolment.';
+$string['privacy:metadata:user_enrolments:status'] = 'The status of the user enrolment in a course.';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = 'This is where Enrol management stores enrolled users.';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'The date/time of when the user enrolment was created.';
+$string['privacy:metadata:user_enrolments:timeend'] = 'The date/time of when the user enrolment ends.';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'The date/time of when the user enrolment was modified.';
+$string['privacy:metadata:user_enrolments:timestart'] = 'The date/time of when the user enrolment starts.';
+$string['privacy:metadata:user_enrolments:userid'] = 'The ID of the user.';
 $string['proceedtocourse'] = 'Proceed to course content';
 $string['recovergrades'] = 'Recover user\'s old grades if possible';
 $string['rolefromcategory'] = '{$a->role} (Inherited from course category)';
@@ -135,12 +151,13 @@ $string['totalenrolledusers'] = '{$a} enrolled users';
 $string['totalotherusers'] = '{$a} other users';
 $string['unassignnotpermitted'] = 'You do not have permission to unassign roles in this course';
 $string['unenrol'] = 'Unenrol';
-$string['unenrolconfirm'] = 'Do you really want to unenrol user "{$a->user}" from course "{$a->course}"?';
+$string['unenrolconfirm'] = 'Do you really want to unenrol "{$a->user}" (previously enrolled via "{$a->enrolinstancename}") from "{$a->course}"?';
 $string['unenrolme'] = 'Unenrol me from {$a}';
 $string['unenrolnotpermitted'] = 'You do not have permission or can not unenrol this user from this course.';
 $string['unenrolroleusers'] = 'Unenrol users';
 $string['uninstallmigrating'] = 'Migrating "{$a}" enrolments';
 $string['unknowajaxaction'] = 'Unknown action requested';
 $string['unlimitedduration'] = 'Unlimited';
+$string['userremovedfromselectiona'] = 'User "{$a}" was removed from the selection.';
 $string['usersearch'] = 'Search';
 $string['withselectedusers'] = 'With selected users';

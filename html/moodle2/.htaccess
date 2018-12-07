@@ -2,6 +2,10 @@ RewriteEngine on
 
 RewriteBase /
 
+#RewriteCond %{HTTP:X-FORWARDED-PROTO} !^https$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [QSA,R=permanent,L]
+
 # Block access to install.php
 RewriteCond %{REQUEST_URI} ([^/]*)/install.php
 RewriteRule ^([^.]*)/install.php(.*)$ $1/siteoff.html [QSA,L]

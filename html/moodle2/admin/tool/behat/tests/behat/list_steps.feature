@@ -11,7 +11,7 @@ Feature: List the system steps definitions
 
   @javascript
   Scenario: Accessing the list
-    Then I should see "Steps definitions"
+    Then I should see "Step definitions"
     And I should not see "There aren't steps definitions matching this filter"
 
   @javascript
@@ -26,4 +26,3 @@ Feature: List the system steps definitions
     Given I set the field "Contains" to "homepage"
     When I press "Filter"
     Then I should see "Opens Moodle homepage."
-

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['configdndresizewidth'] = 'Quan es crea una etiqueta arrossegant i solta
 $string['dndmedia'] = 'Arrossega i solta multimèdia';
 $string['dndresizeheight'] = 'Alçada de redimensionat en arrossegar i soltar';
 $string['dndresizewidth'] = 'Amplada de redimensionat en arrossegar i soltar';
-$string['dnduploadlabel'] = 'Afegeix una imatge a la pàgina del curs';
+$string['dnduploadlabel'] = 'Afegeix un recurs multimèdia a la pàgina del curs';
 $string['dnduploadlabeltext'] = 'Afegeix una etiqueta a la pàgina del curs';
 $string['label:addinstance'] = 'Afegeix una etiqueta nova';
 $string['labeltext'] = 'Text de l\'etiqueta';

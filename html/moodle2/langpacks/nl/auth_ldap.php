@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,12 +44,12 @@ $string['auth_ldap_creators'] = 'Lijst met groepen gebruikers. De leden van de g
 $string['auth_ldap_creators_key'] = 'Aanmakers';
 $string['auth_ldapdescription'] = 'Deze methode levert authenticatie door middel van een externe LDAP-server.
 Als de gebruikersnaam en wachtwoord geldig zijn maakt Moodle een nieuwe gebruiker aan in zijn database. Deze module kan gebruikerseigenschappen vanuit LDAP lezen en bepaalde velden in Moodle alvast invullen. Bij latere aanmeldingen worden alleen de gebruikersnaam en het wachtwoord gecontroleerd.';
-$string['auth_ldap_expiration_desc'] = 'Kies nee om de controle op verlopen wachtwoorden uit te schakelen of om LDAP de geldigheidsduur van de wachtwoorden rechtstreeks uit LDAP te laten lezen';
-$string['auth_ldap_expiration_key'] = 'Wachtwoord verloopt';
-$string['auth_ldap_expiration_warning_desc'] = 'Aantal dagen op voorhand dat er een waarschuwing voor het verlopen van het wachtwoord gegeven wordt.';
-$string['auth_ldap_expiration_warning_key'] = 'Waarschuwing verloop wachtwoord';
-$string['auth_ldap_expireattr_desc'] = 'Optioneel: gaat voor op het LDAP-attribuut dat de wachtwoordverlooptijd bewaart.';
-$string['auth_ldap_expireattr_key'] = 'Attribuut verloop wachtwoord';
+$string['auth_ldap_expiration_desc'] = 'Kies  \'{$a->no}\' om de controle op vervallen wachtwoorden uit te schakelen of  \'{$a->ldapserver}\' de geldigheidsduur van de wachtwoorden rechtstreeks uit LDAP te laten lezen.';
+$string['auth_ldap_expiration_key'] = 'Verstrijken';
+$string['auth_ldap_expiration_warning_desc'] = 'Aantal dagen op voorhand dat er een waarschuwing voor het vervallen van het wachtwoord gegeven wordt.';
+$string['auth_ldap_expiration_warning_key'] = 'Waarschuwing vervallen wachtwoord';
+$string['auth_ldap_expireattr_desc'] = 'Optioneel: gaat voor op het LDAP-attribuut dat de vervaltijd van het wachtwoord bewaart.';
+$string['auth_ldap_expireattr_key'] = 'Attribuut vervallen wachtwoord';
 $string['auth_ldapextrafields'] = 'Deze velden zijn niet verplicht. Je kunt ervoor kiezen om sommige Moodle-gebruikersvelden van te voren in te vullen met informatie uit de <b>LDAP-velden</b> die je hier kunt aangeven. <p>Als je deze velden leeg laat zal er niets vanuit LDAP worden overgebracht en worden de standaardwaarden van Moodle gebruikt.<p> In beide gevallen kan de gebruiker al deze velden wijzigingen zodra hij/zij ingelogd is.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Optioneel: gaat voor op het gracelogin-attribuut';
 $string['auth_ldap_gracelogin_key'] = 'Grace login attribuut';
@@ -78,9 +78,11 @@ $string['auth_ldap_opt_deref_key'] = 'Bepaalt hoe aliassen tijdens het zoeken be
 Dereference aliases';
 $string['auth_ldap_passtype'] = 'Geef de opmaak voor nieuwe of gewijzigde wachtwoorden in de LDAP-server';
 $string['auth_ldap_passtype_key'] = 'Wachtwoordopmaak';
-$string['auth_ldap_passwdexpire_settings'] = 'Instellingen voor het verlopen van het LDAP-wachtwoord';
+$string['auth_ldap_passwdexpire_settings'] = 'Instellingen voor het vervallen van het LDAP-wachtwoord';
 $string['auth_ldap_preventpassindb'] = 'Kies ja om te verhinderen dat wachtwoorden in de Moodle databank bewaard worden.';
 $string['auth_ldap_preventpassindb_key'] = 'Wachtwoorden niet in cache zetten';
+$string['auth_ldap_rolecontext'] = '{$a->localname} context';
+$string['auth_ldap_rolecontext_help'] = 'De gebruikte LDAP context om te selecterne voor  <i>{$a->localname}</i>  koppeling. Scheidt meerdere groepen met \';\'. Gewooonlijk wordt het iets als "cn={$a->shortname},ou=staff,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Zet waarde <> 0 als je gebruikers wilt kunnen zoeken in subcontexten.';
 $string['auth_ldap_search_sub_key'] = 'Zoek subcontexten';
 $string['auth_ldap_server_settings'] = 'LDAP-server instellingen';
@@ -92,14 +94,14 @@ $string['auth_ldap_user_attribute'] = 'Het attribuut dat wordt gebruikt om gebru
 $string['auth_ldap_user_attribute_key'] = 'Gebruikersattribuut';
 $string['auth_ldap_user_exists'] = 'LDAP gebruikersnaam bestaat al';
 $string['auth_ldap_user_settings'] = 'Instellingen voor het opzoeken van gebruikers';
-$string['auth_ldap_user_type'] = 'Kies hoe gebruikers in LDAP bewaard worden. Deze instelling geeft ook aan hoe verlopen wachtwoorden, grace logins en het aanmaken van nieuwe gebruikers zal werken.';
+$string['auth_ldap_user_type'] = 'Kies hoe gebruikers in LDAP bewaard worden. Deze instelling geeft ook aan hoe vervallen wachtwoorden, grace logins en het aanmaken van nieuwe gebruikers zal werken.';
 $string['auth_ldap_user_type_key'] = 'Gebruikerstype';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type is niet gedefinieerd of de functie ldap_expirationtime2unix ondersteunt het geselecteerde type niet!';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type is niet gedefinieerd of de functie ldap_expirationtime ondersteunt het geselecteerde type niet!';
 $string['auth_ldap_version'] = 'De versie van het LDAP-protocol die jouw server gebruikt.';
 $string['auth_ldap_version_key'] = 'Versie';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te bekomen.<strong>Opmerking</strong>dit vereist bijkomende instellingen op de webserver. Zie <a href="http://docs.moodle.org/nl/NTLM_authenticatie">http://docs.moodle.org/nl/NTLM_authenticatie</a>';
+$string['auth_ntlmsso_enabled'] = 'Zet dit op Ja om Single-sign-on met het NTLM-domein te verkrijgen.<strong>Opmerking</strong>dit vereist bijkomende instellingen op de webserver. Zie <a href="http://docs.moodle.org/nl/NTLM_authenticatie">http://docs.moodle.org/nl/NTLM_authenticatie</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Inschakelen';
 $string['auth_ntlmsso_ie_fastpath'] = 'Zet op ja om NTLM SSO fast path in in te schakelen (slaat sommige stappen over als de browser MS Internet Explorer is).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Probeer NTLM met alle browsers';
@@ -108,20 +110,23 @@ $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Ja, probeer NTLM met alle brow
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Ja, alle andere browsers gebruiken een standaard loginformulier';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'Kon de gebruikersnaam niet uit de REMOTE_USER header halen. Is de geconfigureerde format correct?';
 $string['auth_ntlmsso_missing_username'] = 'Je moet minstens %username% gebruiken in externe gebruikersnaam format.';
-$string['auth_ntlmsso_remoteuserformat'] = 'Als je \'NTLM\' in \'Authenticatietype\' gekozen hebt, dan kun je hier de opmaak van de externe gebruikersnaam opgeven. Als je dit leeg laat, dan zal de standaard DOMEIN\\gebruikersnaam opmaak gebruikt worden. Je kunt de optionele <b>%domain%</b> plaatshouder gebruiken om op te geven waar de gebruikersnaam komt en de verplichte <b>%username%</b> plaatshouder om te tonen waar de gebruikersnaam komt. <br /><br />Enkele voorbeelden van veelgebruikte opmaak zijn
-<tt>%domain%\\%username%</tt> (MS Windows standaard), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> of gewoon <tt>%username%</tt> (als er geen domeindeel is)';
+$string['auth_ntlmsso_remoteuserformat'] = 'Als je \'NTLM\' in \'Authenticatietype\' gekozen hebt, dan kun je hier de opmaak van de externe gebruikersnaam opgeven. Als je dit leeg laat, dan zal de standaard DOMAINusername opmaak gebruikt worden. Je kunt de optionele <b>%domain%</b> plaatshouder gebruiken om op te geven waar de gebruikersnaam komt en de verplichte <b>%username%</b> plaatshouder om te tonen waar de gebruikersnaam komt. <br /><br />Enkele voorbeelden van veelgebruikte opmaak zijn
+<tt>%domain%%username%</tt> (MS Windows standaard), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> of gewoon <tt>%username%</tt> (als er geen domeindeel is)';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Format externe gebruikersnaam';
 $string['auth_ntlmsso_subnet'] = 'Indien ingeschakeld, zal alleen SSO geprobeerd worden met clients in dit subnet. Opmaak: xxx.xxx.xxx.xxx/bitmask. Verschillende subnets worden gescheiden met een \',\' (komma).';
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
 $string['auth_ntlmsso_type'] = 'De authenticatiemethode die in de webserver is geconfigureerd om de gebruikers te authenticeren (kies bij twijfel NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Authenticatietype';
+$string['cannotmaprole'] = 'De rol "{$a->rolename}" kan niet worden toegewezen omdat de korte naam "{$a->shortname}" te lang is en / of koppeltekens bevat. Om toe te staan dat het in kaart wordt gebracht, moet de korte naam worden teruggebracht tot een maximum van {$a->charlimit} tekens en eventuele koppeltekens worden verwijderd. <a href="{$a->link}">Bewerk de rol</a>';
 $string['connectingldap'] = 'Verbinden met LDAP-server';
+$string['connectingldapsuccess'] = 'Verbinding maken met je LDAP-server was succesvol';
 $string['creatingtemptable'] = 'Tijdelijke tabel {$a} aanmaken';
 $string['didntfindexpiretime'] = 'password_expire() vond de verlooptijd niet';
 $string['didntgetusersfromldap'] = 'Kreeg geen enkele gebruiker van LDAP. Configuratiefout?';
 $string['gotcountrecordsfromldap'] = 'Kreeg {$a} records van LDAP';
+$string['ldapnotconfigured'] = 'De LDAP-host url is momenteel niet geconfigureerd';
 $string['morethanoneuser'] = 'Meer dan één gebruikersrecord gevonden in LDAP. Alleen de eerste wordt gebruikt.';
-$string['needbcmath'] = 'Je hebt de BCMath extentie nodig op grace logins te gebruiken met Active Directory';
+$string['needbcmath'] = 'Je hebt de BCMath extensie nodig om te controleren op verlopen wachtwoorden met Active Directory.';
 $string['needmbstring'] = 'Je hebt de mbstring extentie nodig om wachtwoorden te kunnen wijzigen in Active Directory';
 $string['nodnforusername'] = 'Fout in user_update_password(). Geen DN voor: {$a->username}';
 $string['noemail'] = 'Probeerde je een e-mail te zenden maar het zenden is mislukt!';
@@ -139,13 +144,16 @@ $string['pagesize'] = 'Zorg ervoor dat deze waarde kleiner is dan je LDAP-server
 $string['pagesize_key'] = 'Paginagrootte';
 $string['pluginname'] = 'LDAP-server';
 $string['pluginnotenabled'] = 'Plugin niet ingeschakeld!';
+$string['privacy:metadata'] = 'De LDAP-server authenticatie-plugin bewaart geen persoonlijke gegevens.';
 $string['renamingnotallowed'] = 'Hernoemen van gebruiker niet toegelaten in LDAP';
 $string['rootdseerror'] = 'Fout bij het bevragen van de rootDSE voor Active Directory';
 $string['start_tls'] = 'Gebruik de gewone LDAP-service (poort 389) met TLS-encryptie.';
 $string['start_tls_key'] = 'Gebruik TLS';
+$string['syncroles'] = 'Synchroniseer systeemrollen via LDAP';
 $string['synctask'] = 'LDAP-gebruikers sync job';
+$string['systemrolemapping'] = 'Systeemrolkoppeling';
 $string['updatepasserror'] = 'Fout in user_update_password(). Foutcode {$a->errno}; Foutstring: {$a->errstring}';
-$string['updatepasserrorexpire'] = 'Fout in user_update_password() bij het lezen van de verlooptijd voor het wachtwoord. Foutcode: {$a->errno}; Foutstring: {$a->errstring}';
+$string['updatepasserrorexpire'] = 'Fout in user_update_password() bij het lezen van de vervaltijd voor het wachtwoord. Foutcode: {$a->errno}; Foutstring: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Fout in user_update_password() bij het wijzigen van de verlooptijd en/of gracelogins.  Foutcode: {$a->errno}; Foutstring: {$a->errstring}';
 $string['updateremfail'] = 'Fout updaten LDAP-record  Foutcode: {$a->errno}; Foutstring: {$a->errstring}<br />Sleutel ({$a->key}) - oude moodle-waarde: \'{$a->ouvalue}\' nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'LDAP updaten met abigu veld {$a->key} mislukt; oude Moodle waarde: \'{$a->ouvalue}\', nieuwe waarde: \'{$a->nuvalue}\'';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,12 +84,15 @@ $string['cleanreadtime'] = '标记旧帖为已读的时间';
 $string['clicktosubscribe'] = '你没有订阅这一话题。点击订阅。';
 $string['clicktounsubscribe'] = '你已订阅该话题。点击取消订阅';
 $string['completiondiscussions'] = '学生必须开启话题：';
+$string['completiondiscussionsdesc'] = '学生必须开启至少{$a}条话题';
 $string['completiondiscussionsgroup'] = '必须开话题';
 $string['completiondiscussionshelp'] = '开新话题后才算完成';
 $string['completionposts'] = '学生必须发布话题或回帖：';
+$string['completionpostsdesc'] = '学生必须发布话题或回帖至少{$a}条';
 $string['completionpostsgroup'] = '必须发帖';
 $string['completionpostshelp'] = '开新话题或回帖后才算完成';
 $string['completionreplies'] = '学生必须回帖：';
+$string['completionrepliesdesc'] = '学生必须回帖至少{$a}条';
 $string['completionrepliesgroup'] = '必须回帖';
 $string['completionreplieshelp'] = '回帖后才算完成';
 $string['configcleanreadtime'] = '在几点清理“read”表中的旧帖子。';
@@ -284,6 +287,10 @@ $string['forum:viewsubscribers'] = '查看订阅者';
 $string['generalforum'] = '一般用途的标准讨论区';
 $string['generalforums'] = '普通讨论区';
 $string['hiddenforumpost'] = '隐藏讨论区帖子内容';
+$string['indicator:cognitivedepth'] = '讨论区活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在讨论区活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '讨论区活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在讨论区活动中所达到的社会宽度。';
 $string['inforum'] = '在 {$a} 里';
 $string['introblog'] = '本讨论区的帖子自动拷贝自课程的博客用户。那些博客将不能再使用。';
 $string['intronews'] = '普通新闻与通告';
@@ -304,6 +311,8 @@ $string['lockdiscussionafter_help'] = '自最后一次回帖过后的设定时�
 拥有回复已冻结话题权限的用户可以通过回复解冻话题。';
 $string['longpost'] = '长帖';
 $string['mailnow'] = '立刻发送邮件';
+$string['managesubscriptionsoff'] = '完成订阅设置管理';
+$string['managesubscriptionson'] = '管理订阅设置';
 $string['manydiscussions'] = '每页讨论的话题数';
 $string['markalldread'] = '将此话题中的所有帖子标记为已读';
 $string['markallread'] = '将此讨论区中的所有帖子标记为已读';
@@ -458,6 +467,7 @@ $string['qandaforum'] = '问题及解答讨论区';
 $string['qandanotify'] = '这是一个问题和解答讨论区。为了能看到其他人的回应，您首先需要发表您的解答';
 $string['re'] = '回复:';
 $string['readtherest'] = '阅读剩余部分';
+$string['removeallforumtags'] = '删除所有讨论区的标签';
 $string['replies'] = '回帖';
 $string['repliesmany'] = '迄今有 {$a} 个回帖';
 $string['repliesone'] = '迄今有 {$a} 个回帖';
@@ -506,6 +516,7 @@ $string['searchphrase'] = '这个词组必须出现在帖子中';
 $string['search:post'] = '讨论区 - 帖子';
 $string['searchresults'] = '搜索结果';
 $string['searchsubject'] = '这些文字应当出现在标题中';
+$string['searchtags'] = '被标以';
 $string['searchuser'] = '此名字要和作者匹配';
 $string['searchuserid'] = '作者的Moodle ID';
 $string['searchwhichforums'] = '选择要搜索哪个讨论区';
@@ -525,7 +536,6 @@ $string['subscribediscussion'] = '订阅这个话题';
 $string['subscribeenrolledonly'] = '抱歉，只有已选课用户才能订阅讨论区帖子通知。';
 $string['subscribenone'] = '让所有人退订此讨论区';
 $string['subscribers'] = '订阅者';
-$string['subscribersto'] = '“{$a}”的订阅用户';
 $string['subscriberstowithcount'] = '订阅"{$a->name}" (共{$a->count}人)';
 $string['subscribestart'] = '该讨论区有新帖子时，通知我';
 $string['subscribestop'] = '该讨论区有新帖子时，不要通知我';
@@ -546,6 +556,8 @@ $string['subscriptionmode_help'] = '当用户订阅了讨论区时，他们会�
 * 禁止订阅 - 不允许订阅';
 $string['subscriptionoptional'] = '可选订阅';
 $string['subscriptions'] = '订阅';
+$string['tagarea_forum_posts'] = '讨论区帖子';
+$string['tagsdeleted'] = '讨论区标签已删除';
 $string['thisforumisthrottled'] = '这个讨论区有规定周期内发帖数的限制，它被设置为 {$a->blockperiod} 内最多发 {$a->blockafter} 个帖子。';
 $string['timedhidden'] = '定时状态：不让学生看见';
 $string['timedposts'] = '定时帖子';

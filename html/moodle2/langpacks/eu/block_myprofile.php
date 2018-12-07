@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_myprofile', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,3 +48,4 @@ $string['myprofile:addinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke be
 $string['myprofile:myaddinstance'] = 'Gehitu saioa hasitako erabiltzailea bloke berria aginte-panelean';
 $string['myprofile_settings'] = 'Erabiltzailearen informazioa ikusgai';
 $string['pluginname'] = 'Saioa hasitako erabiltzailea';
+$string['privacy:metadata'] = 'Saioa hasitako erabiltzaileak blokeak saioa hasitako erabiltzaileen informazioa baino ez du erakusten eta ez du inolako daturik biltzen.';

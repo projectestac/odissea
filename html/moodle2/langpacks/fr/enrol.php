@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,16 +45,19 @@ $string['deleteinstancenousersconfirm'] = 'Vous allez supprimer la méthode d\'i
 $string['disableinstanceconfirmself'] = 'Voulez-vous vraiment désactiver l\'instance « {$a->name} » qui vous donne accès à ce cours ? Il est possible que vous ne puissiez plus accéder à ce cours, si vous continuez.';
 $string['durationdays'] = '{$a} jours';
 $string['editenrolment'] = 'Modifier l\'inscription';
+$string['edituserenrolment'] = 'Modifier l\'inscription de {$a}';
 $string['enrol'] = 'Inscrire';
 $string['enrolcandidates'] = 'Utilisateurs non inscrits';
 $string['enrolcandidatesmatching'] = 'Utilisateurs non inscrits correspondants';
 $string['enrolcohort'] = 'Inscrire une cohorte';
 $string['enrolcohortusers'] = 'Inscrire des utilisateurs';
+$string['enroldetails'] = 'Détails de l\'inscription';
 $string['enrollednewusers'] = '{$a} utilisateurs inscrits';
 $string['enrolledusers'] = 'Utilisateurs inscrits';
 $string['enrolledusersmatching'] = 'Utilisateurs inscrits correspondants';
 $string['enrolme'] = 'M\'inscrire dans ce cours';
 $string['enrolmentinstances'] = 'Méthodes d\'inscription';
+$string['enrolmentmethod'] = 'Méthode d\'inscription';
 $string['enrolmentnew'] = 'Nouvelle inscription dans {$a}';
 $string['enrolmentnewuser'] = '{$a->user} s\'est inscrit au cours « {$a->course} »';
 $string['enrolmentoptions'] = 'Options d\'inscription';
@@ -63,6 +66,7 @@ $string['enrolnotpermitted'] = 'Vous n\'avez pas les droits d\'accès requis pou
 $string['enrolperiod'] = 'Durée d\'inscription';
 $string['enroltimecreated'] = 'Inscription créée';
 $string['enroltimeend'] = 'L\'inscription se termine';
+$string['enroltimeendinvalid'] = 'La date de fin de l\'inscription doit être postérieure à sa date de début.';
 $string['enroltimestart'] = 'L\'inscription commence';
 $string['enrolusage'] = 'Méthodes / inscriptions';
 $string['enrolusers'] = 'Inscrire des utilisateurs';
@@ -99,10 +103,11 @@ $string['instanceadded'] = 'Méthode ajoutée';
 $string['instanceeditselfwarning'] = 'Attention :';
 $string['instanceeditselfwarningtext'] = 'Vous êtes inscrit à ce cours au moyen de cette méthode d\'inscription. Des modifications pourraient empêcher votre accès à ce cours.';
 $string['invalidenrolinstance'] = 'Instance d\'inscription non valide';
+$string['invalidrequest'] = 'Requête non valide';
 $string['invalidrole'] = 'Rôle non valide';
 $string['manageenrols'] = 'Gérer les plugins d\'inscription';
 $string['manageinstance'] = 'Gestion';
-$string['migratetomanual'] = 'Migrer vers l\'inscription manuelle';
+$string['migratetomanual'] = 'Migrer vers les inscriptions manuelles';
 $string['nochange'] = 'Aucun changement';
 $string['noexistingparticipants'] = 'Aucun participant';
 $string['nogroup'] = 'Aucun groupe';
@@ -112,12 +117,23 @@ $string['notenrollable'] = 'Vous ne pouvez pas vous inscrire à ce cours.';
 $string['notenrolledusers'] = 'Autres utilisateurs';
 $string['otheruserdesc'] = 'Les utilisateurs suivants ne sont pas inscrits dans ce cours, mais y ont des rôles attribués ou hérités.';
 $string['participationactive'] = 'Active';
+$string['participationnotcurrent'] = 'Pas actuel';
 $string['participationstatus'] = 'Statut';
 $string['participationsuspended'] = 'Suspendu';
 $string['periodend'] = 'jusqu\'au {$a}';
 $string['periodnone'] = 'inscrit le {$a}';
 $string['periodstart'] = 'dès le {$a}';
 $string['periodstartend'] = 'du {$a->start} au {$a->end}';
+$string['privacy:metadata:user_enrolments'] = 'Inscriptions';
+$string['privacy:metadata:user_enrolments:enrolid'] = 'L\'instance du plugin d\'inscription';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'L\'identifiant de l\'utilisateur qui a modifié pour la dernière fois l\'inscription de l\'utilisateur.';
+$string['privacy:metadata:user_enrolments:status'] = 'Le statut de l\'inscription de l\'utilisateur dans un cours.';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = 'La zone où le gestionnaire d\'inscriptions enregistre les utilisateurs inscrits.';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'La date et l\'heure de la création de l\'inscription de l\'utilisateur.';
+$string['privacy:metadata:user_enrolments:timeend'] = 'La date et l\'heure de l\'échéance de l\'inscription de l\'utilisateur.';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'La date et l\'heure de la modification de l\'inscription de l\'utilisateur.';
+$string['privacy:metadata:user_enrolments:timestart'] = 'La date et l\'heure du début de l\'inscription de l\'utilisateur.';
+$string['privacy:metadata:user_enrolments:userid'] = 'L\'identifiant de l\'utilisateur.';
 $string['proceedtocourse'] = 'Continuer vers le contenu du cours';
 $string['recovergrades'] = 'Récupérer si possible les anciennes notes de l\'utilisateur';
 $string['rolefromcategory'] = '{$a->role} (hérité d\'une catégorie de cours)';
@@ -135,12 +151,13 @@ $string['totalenrolledusers'] = '{$a} utilisateurs inscrits';
 $string['totalotherusers'] = '{$a} autres utilisateurs';
 $string['unassignnotpermitted'] = 'Vous n\'avez pas les droits d\'accès requis pour retirer des rôles dans ce cours';
 $string['unenrol'] = 'Désinscription';
-$string['unenrolconfirm'] = 'Voulez-vous vraiment désinscrire « {$a->user} » du cours « {$a->course} »?';
+$string['unenrolconfirm'] = 'Voulez-vous vraiment désinscrire « {$a->user} » (inscrit via « {$a->enrolinstancename} ») du cours « {$a->course} »?';
 $string['unenrolme'] = 'Me désinscrire de {$a}';
 $string['unenrolnotpermitted'] = 'Vous n\'avez pas les droits d\'accès requis pour désinscrire cet utilisateur de ce cours.';
 $string['unenrolroleusers'] = 'Désinscrire les utilisateurs';
 $string['uninstallmigrating'] = 'Migration des inscriptions « {$a} »';
 $string['unknowajaxaction'] = 'Action demandée inconnue';
 $string['unlimitedduration'] = 'Illimité';
+$string['userremovedfromselectiona'] = 'L\'utilisateur « {$a} » a été retiré de la sélection.';
 $string['usersearch'] = 'Recherche';
 $string['withselectedusers'] = 'Pour les utilisateurs sélectionnés';

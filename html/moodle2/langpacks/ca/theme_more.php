@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_more', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,7 +47,7 @@ $string['backgroundrepeatrepeat'] = 'Es repetirà';
 $string['backgroundrepeatrepeatx'] = 'Es repetirà horitzontalment';
 $string['backgroundrepeatrepeaty'] = 'Es repetirà verticalment';
 $string['bodybackground'] = 'Color de fons';
-$string['bodybackground_desc'] = 'El color principal que s\'utilitzarà com a fons.';
+$string['bodybackground_desc'] = 'El color principal que s’ha d’utilitzar com a fons.';
 $string['choosereadme'] = '<p>More és un tema que permet personalitzar fàcilment l\'aspecte de Moodle des de la interfície web.</p>
 <p>Aneu als paràmetres d\'administració per a canviar els colors, afegir una imatge de fons, el vostre logotip i d\'altres. </p>';
 $string['configtitle'] = 'Clean';

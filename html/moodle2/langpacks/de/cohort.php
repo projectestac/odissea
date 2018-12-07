@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cohort', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,10 @@ $string['potusers'] = 'Mögliche Nutzer/innen';
 $string['potusersmatching'] = 'Mögliche passende Nutzer/innen
 ';
 $string['preview'] = 'Vorschau';
+$string['privacy:metadata:cohort_members'] = 'Informationen zur globalen Gruppe mit Nutzer/in';
+$string['privacy:metadata:cohort_members:cohortid'] = 'ID der globalen Gruppe';
+$string['privacy:metadata:cohort_members:timeadded'] = 'Zeitstempel wann der Nutzer der Globalen Gruppe zugeordnet wurde';
+$string['privacy:metadata:cohort_members:userid'] = 'ID des Nutzers, der der Globalen Gruppe zugeordnet ist';
 $string['removeuserwarning'] = 'Wenn Nutzer/innen aus einer globalen Gruppe entfernt werden, könnten diese Nutzer/innen aus diversen Kursen abgemeldet werden. Dabei werden alle Nutzereinstellungen, Bewertungen, Gruppenzugehörigkeiten und weitere Nutzerinformationen in den betroffenen Kursen gelöscht.';
 $string['search'] = 'Suchen';
 $string['searchcohort'] = 'Globale Gruppen suchen';

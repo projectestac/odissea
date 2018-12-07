@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_summary', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_summary', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_summary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['coursesummary'] = 'コース概要';
 $string['course_summary:addinstance'] = '新しいコース/サイト概要ブロックを追加する';
 $string['pluginname'] = 'コース/サイト概要';
+$string['privacy:metadata'] = 'コース/サイト概要ブロックはコースに関する情報のみ表示します。データ自体を保存することはありません。';

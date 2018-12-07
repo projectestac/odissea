@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,15 +36,15 @@ $string['formatnoinline'] = 'Нет встроенного текста';
 $string['formatplain'] = 'Обычный текст';
 $string['graderinfo'] = 'Информация для оценивающих';
 $string['graderinfoheader'] = 'Информация об оценщике';
-$string['mustattach'] = 'Когда выбрано "Нет встроенного текст" или ответы не являются обязательными, Вы должны разрешить по меньшей мере одно вложение.';
-$string['mustrequire'] = 'Когда выбрано "Нет встроенного текст" или ответы не являются обязательными, Вы должны требовать по меньшей мере одно вложение.';
+$string['mustattach'] = 'Когда выбрано "Нет встроенного текста" или ответы не являются обязательными, Вы должны разрешить хотя бы одно вложение.';
+$string['mustrequire'] = 'Когда выбрано "Нет встроенного текста" или ответы не являются обязательными, необходимо потребовать хотя бы одно вложение.';
 $string['mustrequirefewer'] = 'Вы не можете требовать больше вложений, чем разрешили.';
 $string['nlines'] = '{$a} строк';
 $string['pluginname'] = 'Эссе';
 $string['pluginnameadding'] = 'Добавление вопроса «Эссе»';
 $string['pluginnameediting'] = 'Редактирование вопроса «Эссе»';
-$string['pluginname_help'] = 'В качестве ответа на вопрос (который может содержать изображение), студент пишет один-два абзаца. Эссе оценивается преподавателем вручную после просмотра.';
-$string['pluginnamesummary'] = 'Допускает ответ из нескольких предложений или абзацев. Должен быть оценен преподавателем вручную.';
+$string['pluginname_help'] = 'В качестве ответа на вопрос студент может загрузить один или несколько файлов и/или ввести текст. Может быть предоставлен шаблон ответа. Ответы должны оцениваться вручную.';
+$string['pluginnamesummary'] = 'Допускает в ответе загрузить файл и/или ввести текст. Ответ должен быть оценен преподавателем вручную.';
 $string['responsefieldlines'] = 'Размер поля';
 $string['responseformat'] = 'Формат ответа';
 $string['responseisrequired'] = 'Требовать от студента ввода текста';

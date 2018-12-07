@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_date', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['full_from_date'] = 'Het is op of na  <strong>{$a}</strong>';
 $string['full_until'] = 'Voor  <strong>{$a}</strong>';
 $string['full_until_date'] = 'Voor het einde van  <strong>{$a}</strong>';
 $string['pluginname'] = 'Beperking door tijd';
+$string['privacy:metadata'] = 'De beperkingen door datum-plugin bewaart geen persoonlijke gegevens.';
 $string['short_from'] = 'Beschikbaar vanaf  <strong>{$a}</strong>';
 $string['short_from_date'] = 'Beschikbaar vanaf  <strong>{$a}</strong>';
 $string['short_until'] = 'Beschikbaar tot  <strong>{$a}</strong>';

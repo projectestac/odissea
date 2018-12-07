@@ -185,4 +185,32 @@ class feedback_item_captcha extends feedback_item_base {
         unset($actions['update']);
         return $actions;
     }
+
+    public function get_data_for_external($item) {
+        global $CFG;
+
+        if (empty($CFG->recaptchaprivatekey) || empty($CFG->recaptchapublickey)) {
+            return null;
+        }
+
+        // With reCAPTCHA v2 the captcha will be rendered by the mobile client using just the publickey.
+        // For now include placeholders for the v1 paramaters to support older mobile app versions.
+        // recaptchachallengehash, recaptchachallengeimage and recaptchachallengejs.
+        $data = array('', '', '');
+        $data[] = $CFG->recaptchapublickey;
+        return json_encode($data);
+    }
+
+    /**
+     * Return the analysis data ready for external functions.
+     *
+     * @param stdClass $item     the item (question) information
+     * @param int      $groupid  the group id to filter data (optional)
+     * @param int      $courseid the course id (optional)
+     * @return array an array of data with non scalar types json encoded
+     * @since  Moodle 3.3
+     */
+    public function get_analysed_for_external($item, $groupid = false, $courseid = false) {
+        return [];
+    }
 }

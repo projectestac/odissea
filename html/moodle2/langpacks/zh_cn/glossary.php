@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -212,6 +212,10 @@ $string['importedentries'] = '导入的词条';
 $string['importentries'] = '导入词条';
 $string['importentriesfromxml'] = '从 XML 文件导入词条';
 $string['includegroupbreaks'] = '包含分组';
+$string['indicator:cognitivedepth'] = '词汇表活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在词汇表活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '词汇表活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在词汇表活动中所达到的社会宽度。';
 $string['isglobal'] = '是全局词汇表吗？';
 $string['isglobal_help'] = '全局词汇表的词条不仅可以在所属课程中自动链接，而且可以在全站自动链接。只有管理员可以将词汇表设为全局。';
 $string['letter'] = '字母';

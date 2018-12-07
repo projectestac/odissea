@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -245,6 +245,7 @@ $string['showall'] = 'عرض كل المدخلات';
 $string['single'] = 'معاينة فردية';
 $string['singletemplate'] = 'قالب فردي';
 $string['subplugintype_datapreset_plural'] = 'إعدادات مسبقة';
+$string['tags'] = 'علامات';
 $string['teachersandstudents'] = '{$a->teachers} معلمون و {$a->students} طلاب';
 $string['templates'] = 'قوالب';
 $string['templatesaved'] = 'تم حفظ القالب';

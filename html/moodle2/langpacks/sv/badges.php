@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'badges', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -288,19 +288,19 @@ Om du skulle vilja se vilka användare som redan tagit det här märket så kan 
 $string['notconnected'] = 'Inte ansluten';
 $string['nothingtoadd'] = 'Det finns inga tillgängliga kriterier att lägga till.';
 $string['notification'] = 'Notifiera skaparen av märket';
-$string['notification_help'] = 'Den här inställningen administrerar notiser som skickas till skaparen av ett märke för att låta dem veta att märket tilldelats.
+$string['notification_help'] = 'Den här inställningen administrerar notifieringarna som skickas till skaparen av ett märke för att låta dem veta att märket tilldelats.
 
 Följande alternativ är tillgängliga:
 
-* **ALDRIG** – Skicka inte notiser.
+* **ALDRIG** – Skicka inte notifieringar.
 
-* **VARJE GÅNG** – Skicka en notiser varje gång det här märket tilldelats.
+* **VARJE GÅNG** – Skicka en notifiering varje gång det här märket tilldelats.
 
-* **DAGLIGEN** – Skicka notiser en gång per dag.
+* **DAGLIGEN** – Skicka notifieringar en gång per dag.
 
-* **VECKOVIS** – Skicka notiser en gång per vecka.
+* **VECKOVIS** – Skicka notifieringar en gång per vecka.
 
-* **MÅNADSVIS** – Skicka notiser en gång per månad.';
+* **MÅNADSVIS** – Skicka notifieringar en gång per månad.';
 $string['notifydaily'] = 'Dagligen';
 $string['notifyevery'] = 'Varje gång';
 $string['notifymonthly'] = 'Månadsvis';

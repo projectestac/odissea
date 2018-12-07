@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_mnet', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,31 @@ $string['auth_mnet_roamout'] = 'Jouw gebruikers kunnen zich op deze hosts aanmel
 $string['auth_mnet_rpc_negotiation_timeout'] = 'De timeout in seconden voor authenticatie over XMLRPC-transport.';
 $string['auto_add_remote_users'] = 'Voeg externe gebruikers automatisch toe';
 $string['pluginname'] = 'MNet authenticatie';
+$string['privacy:metadata:external:mahara'] = 'Deze plugin kan extern data versturen naar een gelinkte Mahara-applicatie.';
+$string['privacy:metadata:external:moodle'] = 'Deze plugin kan extern data versturen naar een gelinkte Moodle-applicatie.';
+$string['privacy:metadata:mnet_external:address'] = 'Het adres van de gebruiker.';
+$string['privacy:metadata:mnet_external:aim'] = 'De AIM identifier van de gebruiker.';
+$string['privacy:metadata:mnet_external:alternatename'] = 'Een alternatieve naam voor de gebruiker.';
+$string['privacy:metadata:mnet_external:city'] = 'De woonplaats van de gebruiker.';
+$string['privacy:metadata:mnet_external:country'] = 'Het land waar de gebruiker zich bevindt.';
+$string['privacy:metadata:mnet_external:currentlogin'] = 'De huidige login van deze gebruiker.';
+$string['privacy:metadata:mnet_external:department'] = 'De afdeling waar deze gebruiker gevonden kan worden.';
+$string['privacy:metadata:mnet_external:description'] = 'Algemene informatie over deze gebruiker.';
+$string['privacy:metadata:mnet_external:email'] = 'Een e-mailadres om contact op te nemen.';
+$string['privacy:metadata:mnet_external:emailstop'] = 'Een voorkeur om het sturen van e-mail naar de gebruiker te stoppen.';
+$string['privacy:metadata:mnet_external:firstaccess'] = 'De datum en tijd dat deze gebruiker de eerste keer toegang tot de site had.';
+$string['privacy:metadata:mnet_external:firstname'] = 'De voornaam van de gebruiker.';
+$string['privacy:metadata:mnet_external:firstnamephonetic'] = 'De fonetische weergave van de voornaam van de gebruiker.';
+$string['privacy:metadata:mnet_external:icq'] = 'Het ICQ nummer van de gebruiker.';
+$string['privacy:metadata:mnet_external:id'] = 'De identifier voor de gebruiker.';
+$string['privacy:metadata:mnet_external:idnumber'] = 'Een identificatienummer gegeven door de instelling.';
+$string['privacy:metadata:mnet_external:imagealt'] = 'Alternatieve tekst voor de gebruikersafbeelding.';
+$string['privacy:metadata:mnet_external:institution'] = 'De instelling waarvan deze gebruiker lid is.';
+$string['privacy:metadata:mnet_external:lang'] = 'Een gebruikersvoorkeur voor de te tonen taal.';
+$string['privacy:metadata:mnet_external:lastaccess'] = 'De datum en tijd dat deze gebruiker de laatste keer toegang tot de site had.';
+$string['privacy:metadata:mnet_external:lastlogin'] = 'De laatste login van deze gebruiker.';
+$string['privacy:metadata:mnet_external:lastname'] = 'De achternaam van de gebruiker.';
+$string['privacy:metadata:mnet_external:lastnamephonetic'] = 'De fonetische weergave van de achternaam van de gebruiker.';
 $string['rpc_negotiation_timeout'] = 'RPC-negotiatie time-out';
 $string['sso_idp_description'] = 'Publiceer deze service om het voor gebruikers mogelijk te maken naar de {$a} Moodle site te gaan zonder daar opnieuw te moeten inloggen.
 <ul><li><em>Dependentie:</em>Je moet op de SSO service (service provider) ook <strong>inschrijven</strong> op {$a}.</li></ul><br />Schrijf je op deze service in om geautenticeerde gebruikers van {$a} toegang te geven tot jouw site zonder dat ze opnieuw moeten inloggen.<ul><li><em>Dependentie</em>: je moet de SSO service (service provider) <strong>publiceren</strong> voor {$a}.</li></ul><br />';

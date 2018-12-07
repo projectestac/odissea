@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_shibboleth', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,8 +43,9 @@ $string['auth_shib_idp_list'] = 'Identity providers';
 $string['auth_shib_idp_list_description'] = 'Provide a list of Identity Provider entityIDs to let the user choose from on the login page.<br />On each line there must be a comma-separated tuple for entityID of the IdP (see the Shibboleth metadata file) and Name of IdP as it shall be displayed in the drop-down list.<br />As an optional third parameter you can add the location of a Shibboleth session initiator that shall be used in case your Moodle installation is part of a multi federation setup.';
 $string['auth_shib_instructions'] = 'Use the <a href="{$a}">Shibboleth login</a> to get access via Shibboleth, if your institution supports it.<br />Otherwise, use the normal login form shown here.';
 $string['auth_shib_instructions_help'] = 'Here you should provide custom instructions for your users to explain Shibboleth.  It will be shown on the login page in the instructions section. The instructions must include a link to "<b>{$a}</b>" that users click when they want to log in.';
+$string['auth_shib_instructions_key'] = 'Login instructions';
 $string['auth_shib_integrated_wayf'] = 'Moodle WAYF service';
-$string['auth_shib_integrated_wayf_description'] = 'If you check this, Moodle will use its own WAYF service instead of the one configured for Shibboleth. Moodle will display a drop-down list on this alternative login page where the user has to select his Identity Provider.';
+$string['auth_shib_integrated_wayf_description'] = 'If you enable this, Moodle will use its own WAYF service instead of the one configured for Shibboleth. Moodle will display a drop-down list on this alternative login page where the user has to select his Identity Provider.';
 $string['auth_shib_logout_return_url'] = 'Alternative logout return URL';
 $string['auth_shib_logout_return_url_description'] = 'Provide the URL that Shibboleth users shall be redirected to after logging out.<br />If left empty, users will be redirected to the location that moodle will redirect users to';
 $string['auth_shib_logout_url'] = 'Shibboleth Service Provider logout handler URL';
@@ -54,6 +55,7 @@ $string['auth_shib_only'] = 'Shibboleth only';
 $string['auth_shib_only_description'] = 'Check this option if a Shibboleth authentication shall be enforced';
 $string['auth_shib_username_description'] = 'Name of the webserver Shibboleth environment variable that shall be used as Moodle username';
 $string['pluginname'] = 'Shibboleth';
+$string['privacy:metadata'] = 'The Shibboleth authentication plugin does not store any personal data.';
 $string['shib_invalid_account_error'] = 'You seem to be Shibboleth authenticated but Moodle has no valid account for your username. Your account may not exist or it may have been suspended.';
 $string['shib_no_attributes_error'] = 'You seem to be Shibboleth authenticated but Moodle didn\'t receive any user attributes. Please check that your Identity Provider releases the necessary attributes ({$a}) to the Service Provider Moodle is running on or inform the webmaster of this server.';
 $string['shib_not_all_attributes_error'] = 'Moodle needs certain Shibboleth attributes which are not present in your case. The attributes are: {$a}<br />Please contact the webmaster of this server or your Identity Provider.';

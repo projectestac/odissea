@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Categoría actual';
 $string['categorycurrentuse'] = 'Usar esta categoría';
 $string['categorydoesnotexist'] = 'Esta categoría no existe';
 $string['categoryinfo'] = 'Información sobre la categoría';
-$string['categorymove'] = 'La categoría \'{$a->name}\' contiene {$a->count} preguntas (algunas de las cuales pueden ser preguntas  antiguas ocultas que todavía se usan en exámenes existentes). Por favor elija otra categoría a donde moverlas..';
+$string['categorymove'] = 'La categoría \'{$a->name}\' contiene {$a->count} preguntas (algunas de las cuales pueden ser preguntas antiguas ocultas o aleatorias que todavía se usan en exámenes existentes). Por favor elija otra categoría a donde moverlas.';
 $string['categorymoveto'] = 'Guardar en categoría';
 $string['categorynamecantbeblank'] = 'El nombre de la categoría no puede estar en blanco';
 $string['changeoptions'] = 'Cambiar opciones';

@@ -35,12 +35,15 @@ abstract class action_column_base extends column_base {
 
     protected function print_icon($icon, $title, $url) {
         global $OUTPUT;
-        echo '<a title="' . $title . '" href="' . $url . '">
-                <img src="' . $OUTPUT->pix_url($icon) . '" class="iconsmall icon" alt="' . $title . '" /></a>';
+        echo '<a title="' . $title . '" href="' . $url . '">' . $OUTPUT->pix_icon($icon, $title) . '</a>';
+    }
+
+    public function get_extra_joins() {
+        return array('qc' => 'JOIN {question_categories} qc ON qc.id = q.category');
     }
 
     public function get_required_fields() {
         // Createdby is required for permission checks.
-        return array('q.id', 'q.createdby');
+        return array('q.id', 'q.createdby', 'qc.contextid');
     }
 }

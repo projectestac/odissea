@@ -78,8 +78,11 @@ class behat_form_select extends behat_form_field {
                 if (!$node = $this->session->getDriver()->find($dialoguexpath)) {
                     $script = "Syn.trigger('change', {}, {{ELEMENT}})";
                     try {
-                        $this->session->getDriver()->triggerSynScript($this->field->getXpath(), $script);
-                        $this->session->getDriver()->click('//body//div[@class="skiplinks"]');
+                        $driver = $this->session->getDriver();
+                        if ($driver instanceof \Moodle\BehatExtension\Driver\MoodleSelenium2Driver) {
+                            $driver->triggerSynScript($this->field->getXpath(), $script);
+                        }
+                        $driver->click('//body//div[@class="skiplinks"]');
                     } catch (\Exception $e) {
                         return;
                     }
@@ -138,15 +141,9 @@ class behat_form_select extends behat_form_field {
         $values = $this->get_selected_options(false);
         $selectedoptionvalues = $this->get_unescaped_options($values);
 
-        // Precheck to speed things up.
-        if (count($expectedoptions) !== count($selectedoptiontexts) ||
-                count($expectedoptions) !== count($selectedoptionvalues)) {
-            return false;
-        }
-
         // We check against string-ordered lists of options.
-        if ($expectedoptions != $selectedoptiontexts &&
-                $expectedoptions != $selectedoptionvalues) {
+        if ($expectedoptions !== $selectedoptiontexts &&
+                $expectedoptions !== $selectedoptionvalues) {
             return false;
         }
 

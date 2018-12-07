@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_mnet', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,7 @@ $string['mnet_enrol_description'] = 'このサービスを公開することで�
 $string['mnet_enrol_name'] = 'リモート登録サービス';
 $string['pluginname'] = 'MNetリモート登録';
 $string['pluginname_desc'] = 'リモートMNetホストのユーザを私たちのコースに登録できるようにします。';
+$string['privacy:metadata'] = 'ＭＮｅｔリモート登録プラグインはどのような個人データも保存しません。';
 $string['remotesubscriber'] = 'リモートホスト';
 $string['remotesubscriber_help'] = '私たちがリモート登録サービスをすべてのMNetピアに提供する場合、「すべてのホスト」を選択してください。このコースを特定のホストのユーザに限定する場合、単一のホストを選択してください。';
 $string['remotesubscribersall'] = 'すべてのホスト';

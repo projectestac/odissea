@@ -17,7 +17,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 
-// Checkbox to enable/disable all the WIRIS quizzes question types.
+// Checkbox to enable/disable all the Wiris Quizzes question types.
 $qtypes = array('essay', 'match', 'multianswer', 'multichoice', 'shortanswer', 'truefalse');
 $quizzesdisabled = get_config('question', 'wq_disabled');
 
@@ -71,7 +71,7 @@ $settings->add(new admin_setting_configtext('qtype_wq/quizzeswirisurl',
                                                             'http://www.wiris.net/demo/wiris',
                                                             PARAM_URL));
 
-// Access provider option. If enabled only loged users can access to WIRIS Quizzes services
+// Access provider option. If enabled only loged users can access to Wiris Quizzes services
 $settings->add(new admin_setting_configcheckbox('qtype_wq/access_provider_enabled',
                                                             get_string('access_provider_enabled', 'qtype_wq'),
                                                             get_string('access_provider_enabled_help', 'qtype_wq'),
@@ -83,5 +83,5 @@ if ($CFG->version >= 2012120300 && $CFG->version < 2013051400) {
     $settingslink = 'filtersettingwiris';
 }
 $url = $CFG->wwwroot . '/admin/settings.php?section=' . $settingslink;
-$url = '<a href="' . $url . '">WIRIS filter settings</a>';
+$url = '<a href="' . $url . '">MathType filter settings</a>';
 $settings->add(new admin_setting_heading('filter_wirisfilterheading', $url, ''));

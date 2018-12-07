@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_badges', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Προσθήκη νέου μπλοκ Τα τελευταία βραβεία μου';
-$string['badges:myaddinstance'] = 'Προσθήκη νέου μπλοκ Τα τελευταία βραβεία μου στη σελίδα Η αρχική μου';
+$string['badges:addinstance'] = 'Προσθήκη νέου μπλοκ «Τα πρόσφατα βραβεία μου»';
+$string['badges:myaddinstance'] = 'Προσθήκη νέου μπλοκ «Τα πρόσφατα βραβεία μου» στη σελίδα «Η αρχική μου»';
+$string['nothingtodisplay'] = 'Δεν έχετε κανένα βραβείο προς εμφάνιση';
+$string['numbadgestodisplay'] = 'Αριθμός πρόσφατων βραβείων προς εμφάνιση';
+$string['pluginname'] = 'Πρόσφατα βραβεία';

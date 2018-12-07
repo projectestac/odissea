@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = '利用可能なアップデートデータ�
 $string['filterall'] = 'すべてを表示する';
 $string['filtercontribonly'] = '追加プラグインのみ表示する';
 $string['filterupdatesonly'] = '更新可能のみ表示する';
+$string['isenabled'] = '有効にしますか?';
 $string['misdepinfoplugin'] = 'プラグイン情報';
 $string['misdepinfoversion'] = 'バージョン情報';
 $string['misdepsavail'] = '利用可能な不足している依存';
@@ -102,6 +103,7 @@ $string['status_new'] = 'インストール予定';
 $string['status_nodb'] = 'データベースなし';
 $string['status_upgrade'] = 'アップグレード予定';
 $string['status_uptodate'] = 'インストール';
+$string['supportedconversions'] = 'サポートされるドキュメントコンバージョン';
 $string['supportedmoodleversions'] = 'サポートされるMoodleバージョン';
 $string['systemname'] = '識別子';
 $string['type_antivirus'] = 'アンチウイルスプラグイン';
@@ -126,6 +128,9 @@ $string['type_editor'] = 'エディタ';
 $string['type_editor_plural'] = 'エディタ';
 $string['type_enrol'] = '登録方法';
 $string['type_enrol_plural'] = '登録方法';
+$string['type_fileconverter'] = 'ドキュメントコンバータ';
+$string['type_fileconvertermanage'] = 'ドキュメントコンバータを管理する';
+$string['type_fileconverter_plural'] = 'ドキュメントコンバータ';
 $string['type_filter'] = 'テキストフィルタ';
 $string['type_filter_plural'] = 'テキストフィルタ';
 $string['type_format'] = 'コースフォーマット';
@@ -144,6 +149,8 @@ $string['type_media'] = 'メディアプレイヤ';
 $string['type_media_plural'] = 'メディアプレイヤ';
 $string['type_message'] = 'メッセージングアウトプット';
 $string['type_message_plural'] = 'メッセージングアウトプット';
+$string['type_mlbackend'] = '機械学習バックエンド';
+$string['type_mlbackend_plural'] = '機械学習バックエンド';
 $string['type_mnetservice'] = 'MNetサービス';
 $string['type_mnetservice_plural'] = 'MNetサービス';
 $string['type_mod'] = '活動モジュール';

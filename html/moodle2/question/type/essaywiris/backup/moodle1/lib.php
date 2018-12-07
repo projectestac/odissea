@@ -20,17 +20,17 @@ require_once($CFG->dirroot . '/question/type/wq/quizzes/quizzes.php');
 require_once($CFG->dirroot . '/question/type/wq/lib.php');
 
 /**
- * Essay WIRIS question type conversion handler
+ * Essay Wiris Quizzes question type conversion handler
  */
 class moodle1_qtype_essaywiris_handler extends moodle1_qtype_essay_handler {
 
     public function get_question_subpaths() {
-        return array('ESSAYWIRIS', 'ESSAYWIRIS/WIRISOPTIONS');
+        return array('ESSAYWiris', 'ESSAYWiris/WirisOPTIONS');
     }
 
 
     /**
-     * Appends the essay WIRIS specific information to the question
+     * Appends the essay Wiris specific information to the question
      */
     public function process_question(array $data, array $raw) {
         parent::process_question($data, $raw);
@@ -90,7 +90,7 @@ class moodle1_qtype_essaywiris_handler extends moodle1_qtype_essay_handler {
     }
 
     public function wrsqz_hidden_initial_cas_value($data) {
-        
+
         $wrap = com_wiris_system_CallWrapper::getInstance();
 
         $wirisquestion = '';

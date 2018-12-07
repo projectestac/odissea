@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,6 +66,7 @@ $string['nestedcategories'] = 'Verschachtelte Kategorien erlauben';
 $string['nestedcategories_desc'] = 'Bei Aktivierung wird IMS Enterprise geschachtelte Kategorien erzeugen';
 $string['pluginname'] = 'IMS Enterprise Datei';
 $string['pluginname_desc'] = 'IMS Enterprise-Datei';
+$string['privacy:metadata'] = 'Das IMS Enterprise Datei-Einschreibungsplugin speichert keine persönlichen Daten.';
 $string['processphoto'] = 'Nutzerfoto zu Profil hinzufügen';
 $string['processphotowarning'] = 'Warnung: Die Bildverarbeitung stellt hohe Anforderungen an die Leistung des Servers. Es wird empfohlen, diese Funktion nicht zu nutzen, wenn eine große Zahl von Nutzer/innen auf diesem Wege ins System integriert werden soll.';
 $string['restricttarget'] = 'Daten nur verarbeiten, wenn das folgende Ziel angegeben ist';
@@ -87,7 +88,7 @@ $string['truncatecoursecodes_desc'] = 'Manchmal ist es gewünscht, die Länge de
 $string['updatecourses'] = 'Kurs aktualisieren';
 $string['updatecourses_desc'] = 'Bei Aktivierung kann das IMS Enterprise Einschreibungs-Plugin die vollständigen und kurzen Namen aktualisieren (wenn die "recstatus"-Markierung durch \'2\' ein Update signalisiert).';
 $string['updateusers'] = 'Nutzeraccounts aktualisieren, falls dies in IMS Daten festgelegt ist';
-$string['updateusers_desc'] = 'Bei Aktivierung können IMS Enterprise Enschreibungs-Daten Veränderungen in Nutzeraccounts festlegen (wenn die "recstatus"-Markierung auf 2 steht, was ein Update signalisiert).';
+$string['updateusers_desc'] = 'Bei Aktivierung können IMS Enterprise Enschreibungs-Daten Veränderungen in Nutzer Accounts festlegen (wenn die "recstatus"-Markierung durch \'2\' ein Update signalisiert).';
 $string['usecapitafix'] = 'Box anklicken, wenn "Großbuchstaben" verwendet werden (XML-Format ist fehlerhaft)';
 $string['usecapitafix_desc'] = 'Nur für Nutzer des Teilnehmerverwaltungssystem CAPITA: Der XML Output von Capita enthält einen Fehler. Bei Verwendung von Capita sollte diese Einstellung deaktiviert sein.';
 $string['usersettings'] = 'Nutzerdateneinstellungen';

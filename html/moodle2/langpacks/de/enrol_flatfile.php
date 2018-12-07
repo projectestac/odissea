@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_flatfile', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['expiredaction'] = 'Aktion bei Ablauf der Einschreibung';
 $string['expiredaction_help'] = 'Wählen Sie, was passieren soll, wenn die Nutzereinschreibung abläuft. Bitte beachten Sie, dass einige Nutzerdaten und -einstellungen bei der Kursabmeldung gelöscht werden.';
 $string['filelockedmail'] = 'Die Textdatei \'{$a}\' für die Kurseinschreibung kann nicht vom Cronjob gelöscht werden. Dieses Problem tritt meistens bei falschen Zugriffsrechten auf. Bitte korrigieren Sie die Zugriffsrechte, damit die Datei gelöscht werden kann und nicht  erneut ausgeführt wird.';
 $string['filelockedmailsubject'] = 'Fehler: Datei für Kursanmeldung';
+$string['flatfileenrolments'] = 'Flat-File (CSV) Einschreibungen';
 $string['flatfile:manage'] = 'Nutzer/innen manuell in den Kurs einschreiben';
 $string['flatfilesync'] = 'CSV-Einschreibung (Flat file)';
 $string['flatfile:unenrol'] = 'Nutzer/innen manuell aus dem Kurs abmelden';
@@ -63,3 +64,11 @@ Die Datei könnte folgendermaßen aussehen:
    del, student, 17, Kurs101
    add, student, 21, Kurs101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'Das Flat-File (CSV) Einschreibungsplugin kann persönliche Daten speichern für künftige Einschreibungen in der enrol_flatfile-Tabelle';
+$string['privacy:metadata:enrol_flatfile:action'] = 'Erwartete Einschreibung zu einem definierten Termin';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'Kurs-ID für die Einschreibung';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'ID der zugeordneten oder widerrufenen Rolle';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'Zeitpunkt, zu dem die Änderung der Einschreibung endete';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'Zeitpunkt der Änderung für die Einschreibung';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'Zeitpunkt des Beginns der Einschreibungsänderung';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'ID des Nutzers, dem die Rolle zugeordnet wurde';

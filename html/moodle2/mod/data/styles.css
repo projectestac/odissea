@@ -8,6 +8,10 @@
     height: 34px;
 }
 
+.path-mod-data #id_entrieshdr div .alert.alert-danger {
+    margin-bottom: 2rem;
+}
+
 #page-mod-data-view img.list_picture {
     border: 0;
 }
@@ -141,4 +145,8 @@
 
 #page-mod-data-edit .mod-data-input {
     margin-left: 10px;
+}
+
+#page-mod-data-edit .datatagcontrol {
+    padding-left: 10px;
 }

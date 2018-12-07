@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_templatelibrary', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_templatelibrary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['example'] = 'Beispiel';
 $string['noresults'] = 'Keine Ergebnisse';
 $string['notemplateselected'] = 'Keine Vorlage ausgewählt';
 $string['pluginname'] = 'Vorlagen';
+$string['privacy:metadata'] = 'Das Plugin \'Vorlagenbibliothek\' speichert keine personenbezogenen Daten.';
 $string['search'] = 'Suchen';
 $string['searchtemplates'] = 'Vorlagen suchen';
 $string['templatehasnoexample'] = 'Diese Vorlage hat keinen Beispielkontext, so dass sie nicht gerendert werden kann. Um bespielhaften Kontext hinzuzufügen, gegen Sie einen Mustache Kommentare ein: "Example context (json):", gefolgt von einem Beispielkontext (json encoded).';

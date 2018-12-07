@@ -57,6 +57,7 @@ Feature: Manage evidence of prior learning
     And I click on "Delete" of edit menu in the "Evidence-4" row
     And "Confirm" "dialogue" should be visible
     When I click on "Delete" "button"
+    And I wait until the page is ready
     Then I should not see "Evidence-4"
 
   Scenario: List evidences of prior learning
@@ -78,4 +79,3 @@ Feature: Manage evidence of prior learning
     Then I should see "List of evidence"
     And I should see "Evidence-6"
     And I should not see "Evidence-5"
-

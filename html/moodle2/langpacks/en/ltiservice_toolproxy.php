@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_toolproxy', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'ltiservice_toolproxy', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   ltiservice_toolproxy
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tool Proxy Service';
+$string['privacy:metadata'] = 'The Tool Proxy Service plugin does not store any personal data.';

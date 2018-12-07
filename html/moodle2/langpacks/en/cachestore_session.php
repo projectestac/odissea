@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_session', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_session', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_session
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Session cache';
+$string['privacy:metadata:core_user'] = 'The Session cachestore plugin stores data briefly as part of its caching functionality. This data is stored in the short-lived user session.';

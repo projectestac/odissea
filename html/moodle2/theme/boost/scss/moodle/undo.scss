@@ -126,15 +126,17 @@ body:not(.jsenabled) .langmenu:hover > .dropdown-menu,
     overflow-y: auto;
 }
 
-// Extends bootstrapbase/less/bootstrap/type.less
-// to enable ol lists to use a larger number set.
-
-ol {
-    margin: 0 0 $line-height-base / 2 2.5em;
-}
-
 // Set menus in the fixed header to scroll vertically when they are longer than the page.
 .navbar-static-top .dropdown .dropdown-menu {
     max-height: calc(100vh - #{$navbar-height});
     overflow-y: auto;
+}
+
+// Dont allow z-index creep anywhere.
+.page-item {
+    &.active .page-link {
+        @include plain-hover-focus {
+            z-index: inherit;
+        }
+    }
 }

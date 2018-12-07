@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hub', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,17 +38,17 @@ $string['next'] = 'Επόμενο';
 $string['none'] = 'Κανένα';
 $string['operation'] = 'Ενέργειες';
 $string['postaladdress'] = 'Ταχυδρομική διεύθυνση';
-$string['postaladdress_help'] = 'Ταχυδρομική διεύθυνση αυτού του ιστοχώρου, ή της οντότητας που αντιπροσωπεύεται από αυτόν τον ιστοχώρο.';
+$string['postaladdress_help'] = 'Ταχυδρομική διεύθυνση αυτού του ιστοτόπου, ή της οντότητας που αντιπροσωπεύεται από αυτόν τον ιστότοπο.';
 $string['privacy'] = 'Ιδιωτικότητα';
 $string['publishcourse'] = 'Δημοσίευση {$a}';
-$string['registermoochtips'] = 'Καταχωρήστε τον ιστοχώρο σας στο Moodle για να λαμβάνετε ειδοποιήσεις ασφαλείας και να έχετε πρόσβαση στο Moodle.net, την πλατφόρμα κοινής χρήσης.';
-$string['registrationconfirmedon'] = 'Σας ευχαριστούμε για την καταχώρηση του ιστοχώρου σας. Οι πληροφορίες καταχώρησης θα ενημερόνται από την προγραμματισμένη εργασία \' Καταχώρηση ιστοχώρου\'.';
+$string['registermoochtips'] = 'Καταχωρήστε τον ιστότοπό σας στο Moodle για να λαμβάνετε ειδοποιήσεις ασφαλείας και να έχετε πρόσβαση στο Moodle.net, την πλατφόρμα κοινής χρήσης.';
+$string['registrationconfirmedon'] = 'Σας ευχαριστούμε για την καταχώρηση του ιστοτόπου σας. Οι πληροφορίες καταχώρησης θα ενημερόνται από την προγραμματισμένη εργασία \' Καταχώρηση ιστοτόπου\'.';
 $string['registrationinfo'] = 'Πληροφορίες καταχώρησης';
 $string['search'] = 'Αναζήτηση';
 $string['sendfollowinginfo'] = 'Περισσότερες πληροφορίες';
 $string['settings'] = 'Ρυθμίσεις';
 $string['siteadmin'] = 'Διαχειριστής';
-$string['siteadmin_help'] = 'Το πλήρες όνομα του διαχειριστή του ιστοχώρου';
+$string['siteadmin_help'] = 'Το πλήρες όνομα του διαχειριστή του ιστοτόπου';
 $string['sitecountry'] = 'Χώρα';
 $string['sitedesc'] = 'Περιγραφή';
 $string['siteemail'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';

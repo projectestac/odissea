@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,8 @@ $string['editnewsfeeds'] = 'RSS Feeds bearbeiten';
 $string['editrssblock'] = 'RSS Themen bearbeiten';
 $string['enableautodiscovery'] = 'RSS Feeds automatisch erkennen';
 $string['enableautodiscovery_help'] = 'Wenn diese Option aktiviert ist, werden RSS Feeds auf Webseiten automatisch erkannt. Wenn Sie z.B. http://docs.moodle.org als Webseite eingeben, dann würde http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss automatisch gefunden werden.';
+$string['failedfeed'] = 'Der Feed konnte nicht heruntergeladen werden - wird nach {$a} wiederholt';
+$string['failedfeeds'] = 'Einer oder mehrere RSS Feeds sind fehlgeschlagen';
 $string['feed'] = 'RSS Feed';
 $string['feedadded'] = 'RSS Feed hinzugefügt';
 $string['feeddeleted'] = 'RSS Feed gelöscht';
@@ -63,6 +65,15 @@ $string['nofeeds'] = 'Es sind keine RSS Feeds für diese Seite definiert.';
 $string['numentries'] = 'Einträge pro RSS Feed';
 $string['pickfeed'] = 'RSS Feed auswählen';
 $string['pluginname'] = 'RSS Feeds';
+$string['privacy:metadata:block_rss_client:description'] = 'Beschreibung des RSS-Feeds';
+$string['privacy:metadata:block_rss_client:preferredtitle'] = 'Bevorzugter (angepasster) Titel des RSS-Feeds';
+$string['privacy:metadata:block_rss_client:shared'] = 'Falls das RRS-Feed in allen Kursen verfügbar ist.';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'Festgelegter Zeitraum in Sekunden den der Cron wartet, um einen fehlgeschlagenen Versuch zum Aufruf von RSS-Feeds zu wiederholen.';
+$string['privacy:metadata:block_rss_client:skipuntil'] = 'Höchstzeitdauer, den Cron verwendet, um fehlgeschlagenen RSS-Feed aufzurufen.';
+$string['privacy:metadata:block_rss_client:tableexplanation'] = 'Die RSS-Blockinformationen sind hier gespeichert.';
+$string['privacy:metadata:block_rss_client:title'] = 'Titel des RSS-Feeds';
+$string['privacy:metadata:block_rss_client:url'] = 'URL des RSS-Feeds';
+$string['privacy:metadata:block_rss_client:userid'] = 'Nutzer-ID, mit der das RSS-Feed hinzugefügt wurde';
 $string['remotenewsfeed'] = 'RSS Feed';
 $string['rss_client:addinstance'] = 'Block \'RSS Feeds\' hinzufügen';
 $string['rss_client:createprivatefeeds'] = 'Persönliche RSS Feeds erstellen';

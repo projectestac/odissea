@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_behat', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,7 @@ $string['stepsdefinitionscomponent'] = 'Zone';
 $string['stepsdefinitionscontains'] = 'Bevat';
 $string['stepsdefinitionsfilters'] = 'Stappendefinitie';
 $string['stepsdefinitionstype'] = 'Type';
-$string['theninfo'] = 'Then. Controles die er voor zorgen dat de resultaten zijn wat verwacht wordt.';
+$string['theninfo'] = 'Then. Controles die er voor zorgen dat de uitkomst is wat verwacht wordt.';
 $string['unknownexceptioninfo'] = 'Er was een probleem met Selenium of de browser. Update Selenium tot de laatste versie: Fout:';
 $string['viewsteps'] = 'Filter';
 $string['wheninfo'] = 'When. Acties die een gebeurtenis veroorzaken';

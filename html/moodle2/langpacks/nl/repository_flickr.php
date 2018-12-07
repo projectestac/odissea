@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_flickr', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['notitle'] = 'geen titel';
 $string['nullphotolist'] = 'Er hoort geen foto bij deze account';
 $string['pluginname'] = 'Flickr';
 $string['pluginname_help'] = 'Opslagruimte voor flickr.com';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'De Flickr-gegevensopslagruimte OAuth geheime voorkeur; dit is uitgesloten van de export van privacygegevens.';
 $string['remember'] = 'Gegevens onthouden';
 $string['secret'] = 'Geheim';
 $string['username'] = 'Flickr-account';

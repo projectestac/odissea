@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_randomsamatch
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['pluginnameadding'] = 'Erantzun laburrak ausaz lotzeko galderak';
 $string['pluginnameediting'] = 'Erantzun laburrak ausaz lotzeko galderak';
 $string['pluginname_help'] = 'Ikaslearen ikuspuntutik, galdera hau lotu motakoa dirudi. Ezberdintasuna lotzeko izenen edo galderen zerrenda kategoria horretako erantzun laburreko galderetatik ausaz hartutakoak izatea da. Erabili gabeko erantzun laburreko galdera nahiko egon beharko litzateke kategorian, bestela errore mezu bat erakutsiko da.';
 $string['pluginnamesummary'] = 'Lotu mota galdera bezalakoa, baina galderen zerrenda kategoria bateko erantzun laburreko galderetatik ausaz hartutakoak.';
+$string['privacy:metadata'] = 'Erantzun laburrak ausaz lotu galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['randomsamatch'] = 'Erantzun laburrak ausaz lotu';
 $string['randomsamatchintro'] = 'Aukeratu menutik jarraian agertzen diren galdera bakoitzari dagokion erantzuna.';
 $string['randomsamatchnumber'] = 'Aukeratzeko galdera-kopurua';

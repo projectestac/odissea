@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -410,7 +410,6 @@ $string['site:viewfullnames'] = 'Ver sempre os nomes completos dos usuarios';
 $string['site:viewparticipants'] = 'Ver participantes';
 $string['site:viewreports'] = 'Ver informes';
 $string['site:viewuseridentity'] = 'Ver a identidade completa do usuario nas listas';
-$string['tag:create'] = 'Crear novas etiquetas';
 $string['tag:edit'] = 'Editar as etiquetas existentes';
 $string['tag:editblocks'] = 'Editar bloques en páxinas de etiquetas';
 $string['tag:flag'] = 'Sinalar etiquetas como inapropiadas';

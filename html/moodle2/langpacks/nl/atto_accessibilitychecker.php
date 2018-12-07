@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_accessibilitychecker', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_accessibilitychecker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['needsmorecontrast'] = 'De kleuren van de voorgrond- en achtergrondtekst
 $string['needsmoreheadings'] = 'Er is veel tekst zonder gebruik van koppen. Koppen maken het voor schermlezers mogelijk om gebruikers gemakkelijk door een pagina te laten navigeren en maken de pagina meer gebruiksvriendelijk voor iedereen.';
 $string['nowarnings'] = 'Proficiat, er zijn geen toegankelijkheidsproblemen gevonden!';
 $string['pluginname'] = 'Toegankelijkheidscontrole';
+$string['privacy:metadata'] = 'De plug-in atto_accessibilitychecker slaat geen persoonlijke gegevens op.';
 $string['report'] = 'Toegankelijkheidsrapport:';
 $string['tablesmissingcaption'] = 'Tabellen hebben bijschriften nodig. Hoewel niet elke tabel een bijschrift nodig heeft, is een titeltje doorgaans erg nuttig.';
 $string['tablesmissingheaders'] = 'Tabellen moeten rij en/of kolomkoppen hebben.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['pluginnameadding'] = 'Numerische Frage hinzufügen';
 $string['pluginnameediting'] = 'Numerische Frage ändern';
 $string['pluginname_help'] = 'Aus Nutzersicht sehen numerische Fragen wie gewöhnliche Kurztextfragen aus. Der Unterschied liegt darin, dass numerische Fragen mit einer Fehlertoleranz versehen werden können. Beispiel: Ist die Antwort 10 und die Fehlertoleranz liegt bei 2, so sind alle Antworten von 8 bis 12 richtig.';
 $string['pluginnamesummary'] = 'Erlaubt eine numerische Antwort (auch mit Maßeinheiten), die gegen einige Modellantworten, ggf. mit Toleranzen, bewertet wird.';
+$string['privacy:metadata'] = 'Der Numerische Fragentyp speichert keine persönlichen Daten';
 $string['relative'] = 'Relative';
 $string['rightexample'] = 'Rechts, z.B. 1.00cm oder 1.000km';
 $string['selectunit'] = 'Maßeinheit wählen';

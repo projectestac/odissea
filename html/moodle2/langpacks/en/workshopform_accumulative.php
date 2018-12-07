@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'You have to select a grade for this aspect';
 $string['pluginname'] = 'Accumulative grading';
 $string['poor'] = 'Poor';
 $string['present'] = 'Present';
+$string['privacy:metadata'] = 'The Accumulative grading plugin only stores the details of the assessment form. Actual personal data of how the form has been filled are stored by the Workshop module itself and are attached to exported assessments.';
 $string['scalename0'] = 'Yes/No (2 point)';
 $string['scalename1'] = 'Present/Absent (2 point)';
 $string['scalename2'] = 'Correct/Incorrect (2 point)';

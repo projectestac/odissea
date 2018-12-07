@@ -33,3 +33,4 @@ $string['pluginnamesummary'] = 'Semblable à la réponse courte standard, mais a
 $string['pluginnameediting'] = 'Modification d\'une réponse courte - Question de maths et sciences par WIRIS';
 $string['pluginnameadding'] = 'Ajout d\'une réponse courte - Question de maths et sciences par WIRIS';
 $string['contentnotviewable'] = 'Impossible d\'afficher le contenu.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Short-Answer question type does not effect or store any data itself.';

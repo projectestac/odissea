@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['messageprovider:expiry_notification'] = 'Notificaciones de expiración 
 $string['now'] = 'Ahora';
 $string['pluginname'] = 'Matriculacion manual';
 $string['pluginname_desc'] = 'La extensión para la matriculación manual permite que los usuarios sean  matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso. La extensión debe normalmente estar activada, ya que algunas extensions de inscripción, tales como la matrícula libre, así lo requieran.';
+$string['selectusers'] = 'Seleccionar usuarios';
 $string['status'] = 'Habilita matriculación manual';
 $string['status_desc'] = 'Permitir el acceso de los usuarios matriculados internamente. Esta opción debe estar hailitada en la mayoría de los casos.';
 $string['statusdisabled'] = 'Deshabilitado';

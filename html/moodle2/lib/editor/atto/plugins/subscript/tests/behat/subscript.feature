@@ -33,4 +33,3 @@ Feature: Atto subscript button
     And I press "Save changes"
     And I click on "Edit profile" "link" in the "region-main" "region"
     Then I should see "<sub>Submarine</sub>"
-

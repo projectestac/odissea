@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emoticon', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_emoticon', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_emoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Converter emoticons em imagens';
+$string['privacy:metadata'] = 'O módulo Converter emoticons em imagens não armazena dados pessoais.';
 $string['settingformats'] = 'Aplicar filtro aos seguintes formatos';
 $string['settingformats_desc'] = 'O filtro apenas será aplicado se o texto original tiver sido inserido de acordo com um dos formatos selecionados.';

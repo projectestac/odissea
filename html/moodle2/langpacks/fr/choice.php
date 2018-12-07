@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['allowmultiple'] = 'Permettre le choix de plusieurs réponses';
 $string['allowupdate'] = 'Permettre la modification du choix';
 $string['answered'] = 'Répondu';
 $string['atleastoneoption'] = 'Vous devez fournir au moins une proposition de réponse.';
-$string['calendarend'] = 'Le sondage {$a} se termine';
-$string['calendarstart'] = 'Le sondage {$a} s\'ouvre';
+$string['calendarend'] = '{$a} se termine';
+$string['calendarstart'] = '{$a} s\'ouvre';
 $string['cannotsubmit'] = 'Un problème est survenu lors de l\'envoi de votre choix.';
 $string['choice'] = 'Proposition';
 $string['choiceactivityname'] = 'Sondage : {$a}';
@@ -70,6 +70,10 @@ $string['expired'] = 'Désolé, cette activité s\'est terminée le {$a} et n\'e
 $string['full'] = '(complet)';
 $string['havetologin'] = 'Vous devez vous connecter pour pouvoir répondre à ce sondage';
 $string['includeinactive'] = 'Inclure les réponses des utilisateurs inactifs/désactivés';
+$string['indicator:cognitivedepth'] = 'Sondage : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Sondage.';
+$string['indicator:socialbreadth'] = 'Sondage : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Sondage.';
 $string['limit'] = 'Limite';
 $string['limitanswers'] = 'Limiter le nombre de réponses permises';
 $string['limitanswers_help'] = 'Ce réglage vous permet de limiter le nombre de personnes pouvant sélectionner une option d\'un sondage. Lorsque cette limite est atteinte, personne d\'autre ne pourra plus choisir cette option.
@@ -97,6 +101,7 @@ $string['notenrolledchoose'] = 'Seuls les utilisateurs inscrits peuvent particip
 $string['notopenyet'] = 'Désolé, cette activité ne sera disponible que le {$a}';
 $string['numberofuser'] = 'Nombre de réponses';
 $string['numberofuserinpercentage'] = 'Pourcentage de réponses';
+$string['openafterclose'] = 'Vous avez indiqué une date d\'ouverture postérieure à la date de fermeture.';
 $string['option'] = 'Option';
 $string['optionno'] = 'Option {no}';
 $string['options'] = 'Options';
@@ -105,6 +110,11 @@ $string['pluginadministration'] = 'Administration du sondage';
 $string['pluginname'] = 'Sondage';
 $string['previewonly'] = 'Cet affichage est une prévisualisation des options disponibles pour cette activité. Vous ne pourrez pas enregistrer votre choix avant le {$a}.';
 $string['privacy'] = 'Confidentialité des résultats';
+$string['privacy:metadata:choice_answers'] = 'Informations sur les réponses données par l\'utilisateur à un sondage.';
+$string['privacy:metadata:choice_answers:choiceid'] = 'Identifiant du sondage à laquelle l\'utilisateur donne une réponse.';
+$string['privacy:metadata:choice_answers:optionid'] = 'L\'identifiant de l\'option que l\'utilisateur à choisie.';
+$string['privacy:metadata:choice_answers:timemodified'] = 'L\'horodatage de la modification du sondage par l\'utilisateur';
+$string['privacy:metadata:choice_answers:userid'] = 'Identifiant de l\'utilisateur répondant au sondage.';
 $string['publish'] = 'Publication des résultats';
 $string['publishafteranswer'] = 'Afficher les résultats aux étudiants après leur réponse';
 $string['publishafterclose'] = 'N\'afficher les résultats aux étudiants qu\'une fois le sondage fermé';
@@ -129,5 +139,6 @@ $string['spacesleft'] = 'places disponibles';
 $string['taken'] = 'Effectué';
 $string['userchoosethisoption'] = 'Utilisateurs qui ont choisi l\'option';
 $string['viewallresponses'] = 'Voir les {$a} réponses';
+$string['viewchoices'] = 'Afficher les choix';
 $string['withselected'] = 'Avec la sélection';
 $string['yourselection'] = 'Votre choix';

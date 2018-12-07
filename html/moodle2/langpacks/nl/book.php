@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,10 @@ $string['eventchapterdeleted'] = 'Hoofdstuk verwijderd';
 $string['eventchapterupdated'] = 'Hoofdstuk aangepast';
 $string['eventchapterviewed'] = 'Hoofdstuk bekeken';
 $string['hidechapter'] = 'Verberg hoofdstuk  "{$a}"';
+$string['indicator:cognitivedepth'] = 'Boek cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de sociale breedte die door de leerling is bereikt in een bron Boek.';
+$string['indicator:socialbreadth'] = 'Boek sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Boek bron.';
 $string['modulename'] = 'Boek';
 $string['modulename_help'] = 'Met de boekmodule kan een leraar bronnen maken met meerdere pagina\'s in een boek-stijl opmaak met hoofdstukken en subtitels. In de boekmodule kunnen mediabestanden en tekst gezet worden en is nuttig voor het tonen van lange passages tekst of informatie die opgedeeld kan worden in delen.
 
@@ -89,6 +93,8 @@ $string['numberingoptions_desc'] = 'Opties voor het tonen van hoofdstukken en su
 $string['page-mod-book-x'] = 'Om het even welke pagina van de boekmodule';
 $string['pluginadministration'] = 'Boekbeheer';
 $string['pluginname'] = 'Boek';
+$string['privacy:metadata'] = 'De boek activiteitsmodule bewaart geen persoonlijke gegevens.';
+$string['removeallbooktags'] = 'Verwijder alle boek-tags';
 $string['search:activity'] = 'Boek - broninformatie';
 $string['search:chapter'] = 'Boek - hoofdstukken';
 $string['showchapter'] = 'Toon hoofdstuk  "{$a}"';
@@ -96,5 +102,7 @@ $string['subchapter'] = 'Paragraaf';
 $string['subchapternotice'] = '(enkel beschikbaar als het eerste hoofdstuk gemaakt is)';
 $string['subplugintype_booktool'] = 'Boek tool';
 $string['subplugintype_booktool_plural'] = 'Boek tools';
+$string['tagarea_book_chapters'] = 'Boek hoofdstukken';
+$string['tagsdeleted'] = 'Boek-tags zijn verwijderd';
 $string['toc'] = 'Inhoudsopgave';
 $string['top'] = 'boven';

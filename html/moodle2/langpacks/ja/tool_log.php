@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_log', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,12 @@ $string['configlogplugins'] = 'すべての必要なプラグインを有効に�
 $string['logging'] = 'ロギング';
 $string['managelogging'] = 'ログストアを管理する';
 $string['pluginname'] = 'ログストアマネージャ';
+$string['privacy:metadata:logstore'] = 'ログストアです。';
+$string['privacy:path:logs'] = 'ログです。';
+$string['privacy:request:origin:cli'] = 'コマンドラインツールです。';
+$string['privacy:request:origin:restore'] = 'リストアされたバックアップです。';
+$string['privacy:request:origin:web'] = '標準ウェブリクエストです。';
+$string['privacy:request:origin:ws'] = 'モバイルアプリまたはウェブサービスです。';
 $string['reportssupported'] = 'サポートされるレポート';
 $string['subplugintype_logstore'] = 'ログストア';
 $string['subplugintype_logstore_plural'] = 'ログストア';

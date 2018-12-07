@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Kon beschikbare updategegevens niet ophalen
 $string['filterall'] = 'Toon alles';
 $string['filtercontribonly'] = 'Toon enkel contributiecode';
 $string['filterupdatesonly'] = 'Toon enkel geüpdated';
+$string['isenabled'] = 'Ingeschakeld?';
 $string['misdepinfoplugin'] = 'Plugin info';
 $string['misdepinfoversion'] = 'Versie info';
 $string['misdepsavail'] = 'Beschikbare ontbrekende afhankelijkheden';
@@ -66,7 +67,7 @@ $string['notdownloadable'] = 'Kan pakket niet downloaden';
 $string['notdownloadable_help'] = 'ZIP-pakket met de update kan niet automatisch gedownload worden. Bekijk de documentatiepagina voor meer hulp.';
 $string['notes'] = 'Notities';
 $string['notwritable'] = 'Pluginbestanden niet beschrijfbaar';
-$string['notwritable_help'] = 'De plugin-bestanden zijn niet beschrijfbaar door de webserver. Het webserverproces moet schrijftoegang hebben tot de plugin-map en alle inhoud ervan. Schrijftoegang tot de root-map van het plugintype kan ook nodig zijn.';
+$string['notwritable_help'] = 'Plugin-bestanden kunnen niet geschreven worden door de webserver. Het webserverproces moet schrijfrechten hebben in de plugin-map en alle inhoud ervan. Schrijfrechten op de root-map van een bepaald plugintype kan ook nodig zijn.';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
 $string['overviewall'] = 'Alle plugins';
@@ -102,6 +103,7 @@ $string['status_new'] = 'Te installeren';
 $string['status_nodb'] = 'Geen databank';
 $string['status_upgrade'] = 'Te upgraden';
 $string['status_uptodate'] = 'Geïnstalleerd';
+$string['supportedconversions'] = 'Ondersteunde documentconversies';
 $string['supportedmoodleversions'] = 'Ondersteunde Moodleversies';
 $string['systemname'] = 'Identificatie';
 $string['type_antivirus'] = 'Antivirus plugin';
@@ -118,14 +120,17 @@ $string['type_cachestore'] = 'Cache opslag';
 $string['type_cachestore_plural'] = 'Cache opslag';
 $string['type_calendartype'] = 'Kalendertype';
 $string['type_calendartype_plural'] = 'Kalendertypes';
-$string['type_coursereport'] = 'cursusrapport';
+$string['type_coursereport'] = 'Cursusrapport';
 $string['type_coursereport_plural'] = 'Cursusrapporten';
 $string['type_dataformat'] = 'Datumformaat';
 $string['type_dataformat_plural'] = 'Datumformaten';
 $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editors';
-$string['type_enrol'] = 'Aanmelsdingswijze';
+$string['type_enrol'] = 'Aanmeldingswijze';
 $string['type_enrol_plural'] = 'Aanmeldingswijze';
+$string['type_fileconverter'] = 'Document converter';
+$string['type_fileconvertermanage'] = 'Beheer document converters';
+$string['type_fileconverter_plural'] = 'Document converters';
 $string['type_filter'] = 'Filter';
 $string['type_filter_plural'] = 'Tekst filters';
 $string['type_format'] = 'Cursusopmaak';
@@ -144,6 +149,8 @@ $string['type_media'] = 'Media-speler';
 $string['type_media_plural'] = 'Media-spelers';
 $string['type_message'] = 'Berichten-output';
 $string['type_message_plural'] = 'Berichten-outputs';
+$string['type_mlbackend'] = 'Machine learning backend';
+$string['type_mlbackend_plural'] = 'Machine learning backends';
 $string['type_mnetservice'] = 'MNet service';
 $string['type_mnetservice_plural'] = 'MNet services';
 $string['type_mod'] = 'Activiteitenmodule';
@@ -153,7 +160,7 @@ $string['type_plagiarism_plural'] = 'Plagiaatspreventieplugins';
 $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolio\'s';
 $string['type_profilefield'] = 'Profielveldtype';
-$string['type_profilefield_plural'] = 'Profielveldtypes';
+$string['type_profilefield_plural'] = 'Profielbveldtypes';
 $string['type_qbehaviour'] = 'Vragengedrag';
 $string['type_qbehaviour_plural'] = 'Vragengedrag';
 $string['type_qformat'] = 'Vraag import/export opmaak';
@@ -204,7 +211,7 @@ $string['validationmsglevel_error'] = 'Fout';
 $string['validationmsglevel_info'] = 'OK';
 $string['validationmsglevel_warning'] = 'Waarschuwing';
 $string['validationmsg_maturity'] = 'Verklaar maturiteitsniveau';
-$string['validationmsg_maturity_help'] = 'De plugin kan verklaren hoe volwassen de code is. Als degene die de code onderhoud vindt dat de code stabiel is, dan zal er MATURITY_STABLE staan. Alle andere niveau\'s (zoals alpha of beta) moeten als niet stabiel beschouwd worden en er wordt een waarschuwing getoond.';
+$string['validationmsg_maturity_help'] = 'De plugin kan verklaren hoe volwassen de code is. Als degene die de code onderhoud vindt dat de code stabiel is, dan zal er MATURITY_STABLE staan. Alle andere niveau\'s (zoals alfa of beta) moeten als niet stabiel beschouwd worden en er wordt een waarschuwing getoond.';
 $string['validationmsg_missingcomponent'] = 'Plugin verklaart zijn componentnaam niet';
 $string['validationmsg_missingcomponent_help'] = 'Alle plugins moeten hun volledige componentnaam geven via de `$plugin->component` verklaring in het bestand version.php.';
 $string['validationmsg_missingexpectedlangenfile'] = 'Fout in de bestandsnaam van het Engelstalig taalpakket';

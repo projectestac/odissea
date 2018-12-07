@@ -17,8 +17,7 @@ Feature: In a lesson activity, teachers can review student attempts
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
     And I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "Lesson" to section "1"
     And I set the following fields to these values:
       | Name | Test lesson name |
@@ -35,7 +34,7 @@ Feature: In a lesson activity, teachers can review student attempts
       | id_answer_editor_0 | Next page |
       | id_jumpto_0 | Next page |
     And I press "Save page"
-    And I select "Question" from the "qtype" singleselect
+    And I select "Add a question page" from the "qtype" singleselect
     And I set the field "Select a question type" to "True/false"
     And I press "Add a question page"
     And I set the following fields to these values:
@@ -48,7 +47,7 @@ Feature: In a lesson activity, teachers can review student attempts
       | id_response_editor_1 | Wrong |
       | id_jumpto_1 | This page |
     And I press "Save page"
-    And I select "Question" from the "qtype" singleselect
+    And I select "Add a question page" from the "qtype" singleselect
     And I set the field "Select a question type" to "True/false"
     And I press "Add a question page"
     And I set the following fields to these values:
@@ -81,7 +80,7 @@ Feature: In a lesson activity, teachers can review student attempts
     And I press "Save page"
     And I log out
     When I log in as "student1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test lesson name"
     And I should see "First page contents"
     And I press "Next page"
@@ -102,7 +101,7 @@ Feature: In a lesson activity, teachers can review student attempts
     And I should see "Congratulations - end of lesson reached"
     And I log out
     Then I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test lesson name"
     And I follow "Reports"
     And I should see "Student 1"
@@ -148,7 +147,7 @@ Feature: In a lesson activity, teachers can review student attempts
     And I press "Save page"
     And I log out
     When I log in as "student1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test lesson name"
     And I should see "First page contents"
     And I press "Next page"
@@ -160,7 +159,7 @@ Feature: In a lesson activity, teachers can review student attempts
     And I press "End of lesson"
     And I log out
     Then I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test lesson name"
     And I follow "Reports"
     And I should see "Student 1"

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_myprofile', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,3 +48,4 @@ $string['myprofile:addinstance'] = 'Add a new logged in user block';
 $string['myprofile:myaddinstance'] = 'Add a new logged in user block to Dashboard';
 $string['myprofile_settings'] = 'Visible user information';
 $string['pluginname'] = 'Logged in user';
+$string['privacy:metadata'] = 'The Logged in user block only shows information about the logged in user and does not store data itself.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_multilangupgrade', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_multilangupgrade', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_multilangupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['multilangupgradeinfo'] = '<p>Iragazki eleanitzaren sintaxia 1.8 bertsiotik aurrera aldatu egin da eta <lang> etiketa dagoeneko ez da onartzen.</p>
+<p>Adibidez: <span lang="en" class="multilang">Hello!</span><span lang="eu" class="multilang">Kaixo!</span></p>
+<p>Existitzen diren testu guztietan sintaxia orain eguneratu nahi duzu?</p>';
 $string['pluginname'] = 'Eduki elenitzaren eguneraketa';
+$string['privacy:metadata'] = 'Eduki elenitzaren eguneraketa pluginak ez du datu pertsonalik biltzen.';

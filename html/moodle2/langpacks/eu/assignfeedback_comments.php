@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,8 @@ $string['default_help'] = 'Ezarriz gero, feedback-metodo hau berez gaituko da ze
 $string['enabled'] = 'Feedback-iruzkinak';
 $string['enabled_help'] = 'Ezarriz gero, feedback-metodo hau berez gaituko da zeregin berri guztietan';
 $string['pluginname'] = 'Feedback-iruzkinak';
+$string['privacy:commentpath'] = 'Feedback iruzkinak';
+$string['privacy:metadata:assignmentid'] = 'Zereginaren identifikatzailea';
+$string['privacy:metadata:commentpurpose'] = 'Iruzkinaren testua.';
+$string['privacy:metadata:gradepurpose'] = 'Iruzkinarekin lotutako kalifikazioaren IDa.';
+$string['privacy:metadata:tablesummary'] = 'Hemen ikasleen bidalketen feedback gisa kalifikatzaileek egindako iruzkinak biltzen dira.';

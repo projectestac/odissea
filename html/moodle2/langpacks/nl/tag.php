@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Standaard-tag(s) toegevoegd';
-$string['addedotag'] = '"{$a}" is toegevoegd als officiële tag';
-$string['addotags'] = 'Voeg standaard-tags toe';
+$string['addotags'] = 'Voeg standaard-tag toe';
 $string['addtagcoll'] = 'Voeg tag-collectie toe';
 $string['addtagtomyinterests'] = 'Voeg "{$a}" toe aan mijn interesses';
 $string['alltagpages'] = 'Alle tag-pagina\'s';
@@ -86,17 +85,16 @@ $string['managestandardtags'] = 'Beheer standaard tags';
 $string['managetagcolls'] = 'Beheer tag-collectie';
 $string['managetags'] = 'Beheer tags';
 $string['moretags'] = 'meer...';
-$string['name'] = 'Tag-naam';
+$string['name'] = 'Tag naam';
 $string['namesalreadybeeingused'] = 'Tag-naam is al in gebruik';
 $string['nameuseddocombine'] = 'De tag-naam is al in gebruik. Wil je deze tags combineren?';
 $string['newcollnamefor'] = 'Nieuwe naam voor tag-collectie {$a}';
-$string['newname'] = 'Nieuwe tag-naam';
 $string['newnamefor'] = 'Nieuwe naam voor tag {$a}';
 $string['nextpage'] = 'Meer';
 $string['noresultsfor'] = 'Geen resultaten voor "{$a}"';
 $string['notagsfound'] = 'Geen tags die overeenkomen met "{$a}" gevonden';
 $string['nothingtoupdate'] = 'Niets aan te passen';
-$string['officialtag'] = 'Officieel';
+$string['officialtag'] = 'Officiëel';
 $string['otags'] = 'Officiële tags';
 $string['othertags'] = 'Andere tags';
 $string['owner'] = 'Eigenaar';
@@ -105,11 +103,24 @@ $string['page-tag-manage'] = 'Beheer tag-pagina';
 $string['page-tag-search'] = 'Tag zoekpagina';
 $string['page-tag-x'] = 'Alle tag-pagina\'s';
 $string['prevpage'] = 'Terug';
+$string['privacy:metadata:tag'] = 'De details van iedere, unieke tag worden samen met hun beschrijving en andere gerelateerde informatie bewaard';
+$string['privacy:metadata:tag:description'] = 'De beschrijving van de tag.';
+$string['privacy:metadata:tag:flag'] = 'Of een tag is gemarkeerd als niet geschikt.';
+$string['privacy:metadata:taginstance'] = 'De link tussen iedere tag en waar deze wordt gebruikt.';
+$string['privacy:metadata:taginstance:ordering'] = 'De relatieve volgorde van deze tag.';
+$string['privacy:metadata:taginstance:tagid'] = 'De link naar de tag.';
+$string['privacy:metadata:taginstance:timecreated'] = 'De tijd dat deze tag gekoppeld werd met het doel.';
+$string['privacy:metadata:taginstance:timemodified'] = 'De tijd dat deze tag gewijzigd werd voor het doel.';
+$string['privacy:metadata:taginstance:tiuserid'] = 'Waar gedeelde inhoud individueel door gebruikers getagd kan worden, wordt de eigenaar van de tag-instantie bewaard.';
+$string['privacy:metadata:tag:name'] = 'De naam van de tag - dit is de genormaliseerde versie van de naam.';
+$string['privacy:metadata:tag:rawname'] = 'De naam van de tag - dit is de getoonde naam.';
+$string['privacy:metadata:tag:timemodified'] = 'De tijd dat de tag voor het laatst werd gewijzigd.';
+$string['privacy:metadata:tag:userid'] = 'Het ID van de gebruiker die de tag aanmaakte.';
 $string['ptags'] = 'Doot gebruiker gedefiniëerde tags (door komma\'s gescheiden lijst)';
 $string['relatedblogs'] = 'Meest recente blogs';
 $string['relatedtags'] = 'Gerelateerde tags';
 $string['removetagfrommyinterests'] = 'Verwijder "{$a}" uit mijn interesselijst';
-$string['reset'] = 'Herstel tag-vlag';
+$string['reset'] = 'Tag vlag terugzetten';
 $string['resetfilter'] = 'Herstel filter';
 $string['resetflag'] = 'Herstel markering';
 $string['responsiblewillbenotified'] = 'De verantwoordelijke zal een melding krijgen';
@@ -120,7 +131,7 @@ $string['searchable'] = 'Doorzoekbaar';
 $string['searchable_help'] = 'Indien aangevinkt kunnen tags in deze collectie gevonden worden via de "Zoek tags"-pagina. Indien niet aangevinkt kunnen tags nog steeds gevonden worden via andere zoekpagina\'s';
 $string['searchresultsfor'] = 'Zoekresultaten voor "{$a}"';
 $string['searchtags'] = 'Zoek tags';
-$string['seeallblogs'] = 'Bekijk alle blogs met tag "{$a}"';
+$string['seeallblogs'] = 'Bekijk alle blogs met tag "{$a}"...';
 $string['select'] = 'Selecteer';
 $string['selectcoll'] = 'Selecteer tag-collectie';
 $string['selectmaintag'] = 'Selecteer de tag die gebruikt zal worden na het combineren';
@@ -149,18 +160,13 @@ $string['tagarea_user'] = 'Gebruikersinteresses';
 $string['tagcollection'] = 'Tag-collectie';
 $string['tagcollection_help'] = 'Tag-collecties zijn sets met tags voor verschillende zones. Zo kan bijvoorbeeld een collectie met standaard tags gebruikt worden om cursussen te taggen, met interesses van de gebruikers en tags voor blogberichten in een aparte collectie. Wanneer een gebruiker klikt op een tag, dan zal de pagina enkel items tonen met die tag in dezelfde collectie. Tags kunnen automatisch aan een collectie toegevoegd worden die overeen komen met de getagde zone of kunnen manueel als standaard-tags toegevoegd worden.';
 $string['tagcollections'] = 'Tag-collectie';
-$string['tagdescription'] = 'Tag-beschrijving';
-$string['taggedwith'] = 'getagd met "{$a}"';
+$string['tagdescription'] = 'Tag beschrijving';
+$string['taggedwith'] = 'getagged met "{$a}"';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Tags zijn uitgeschakeld';
 $string['tagtype'] = 'Tag-type';
-$string['tagtype_default'] = 'Standaard';
-$string['tagtype_official'] = 'Officiëel';
 $string['thingstaggedwith'] = ' "{$a->name}" is {$a->count}  keer gebruikt';
 $string['thingtaggedwith'] = '"{$a}"->name is één keer gebruikt';
-$string['thistaghasnodesc'] = 'Deze tag heeft nog geen beschrijving';
 $string['timemodified'] = 'Gewijzigd';
 $string['typechanged'] = 'Tag-type gewijzigd';
-$string['updated'] = 'Geüpdatet';
 $string['updatetag'] = 'Aanpassen';
-$string['withselectedtags'] = 'Met geselecteerde tags ...';

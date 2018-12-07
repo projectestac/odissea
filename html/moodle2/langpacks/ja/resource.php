@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,10 @@ $string['filterfilesexplain'] = 'コンテンツフィルタのタイプを選�
 $string['filtername'] = 'リソース名オートリンク';
 $string['forcedownload'] = 'ダウンロードを強制する';
 $string['framesize'] = 'フレーム高';
+$string['indicator:cognitivedepth'] = 'ファイル認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はファイルリソースで学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'ファイル社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はファイルリソースで学生が到達した社会的広がりに基づきます。';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -89,6 +93,7 @@ $string['popupwidth'] = 'ポップアップ幅 (ピクセル)';
 $string['popupwidthexplain'] = 'ポップアップウィンドウのデフォルト幅を指定してください。';
 $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの下にページ説明を表示しますか? 有効にしてもいくつかの表示タイプでは説明を表示することができません。';
+$string['privacy:metadata'] = 'mod_resourceプラグインはどのような個人データも保存しません。';
 $string['resource:addinstance'] = '新しいリソースを追加する';
 $string['resourcecontent'] = 'ファイルおよびサブフォルダ';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

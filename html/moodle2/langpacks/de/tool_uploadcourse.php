@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,6 +101,7 @@ $string['mode_help'] = 'Hiermit legen Sie fest, ob Kurse erstelt und/oder aktual
 $string['nochanges'] = 'Keine Änderung';
 $string['pluginname'] = 'Kursliste hochladen';
 $string['preview'] = 'Vorschau';
+$string['privacy:metadata'] = 'Das Plugin \'Kurs-Upload\' speichert keine personenbezogenen Daten.';
 $string['reset'] = 'Kurs nach dem Hochladen zurücksetzen';
 $string['reset_help'] = 'Sollen Kurse nach dem Erstellen/Update zurückgesetzt werden?';
 $string['restoreafterimport'] = 'Nach dem Import zurücksetzen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'Configurar instâncias de inscrição da base de d
 $string['database:unenrol'] = 'Desinscrever utilizadores suspensos';
 $string['dbencoding'] = 'Codificação da base de dados';
 $string['dbhost'] = 'Servidor de base de dados';
-$string['dbhost_desc'] = 'Digite o IP do servidor da base de dados ou o nome do host. Use um nome do sistema DSN se estiver a usar ODBC.';
+$string['dbhost_desc'] = 'Digite o IP do servidor da base de dados ou o nome do host. Use um nome do sistema DSN se estiver a usar ODBC. Use PDO DSN se estiver a usar PDO.';
 $string['dbname'] = 'Nome da base de dados';
 $string['dbname_desc'] = 'Deixe em branco se estiver a usar um nome DSN na base de dados do host.';
 $string['dbpass'] = 'Senha de acesso à base de dados';
@@ -60,6 +60,7 @@ $string['newcoursetable'] = 'Nome da tabela externa de novas disciplinas';
 $string['newcoursetable_desc'] = 'Nome da tabela que contém as disciplinas que devem ser criadas automaticamente. Se este campo estiver vazio, quer dizer que não serão criadas disciplinas.';
 $string['pluginname'] = 'Base de dados externa';
 $string['pluginname_desc'] = 'Este módulo de inscrição permite a utilização de bases de dados externas (de praticamente qualquer tipo) para gerir inscrições. É obrigatório que a base de dados externa contenha pelo menos os campos ID de disciplina e ID de utilizador. Estes campos serão sincronizados com os campos definidos localmente.';
+$string['privacy:metadata'] = 'O módulo Base de dados externa não armazena quaisquer dados pessoais.';
 $string['remotecoursefield'] = 'Nome do campo "Disciplina" na tabela externa';
 $string['remotecoursefield_desc'] = 'Nome do campo na tabela externa que é usado na sincronização com a tabela de disciplinas do Moodle.';
 $string['remoteenroltable'] = 'Nome da tabela externa de inscrições';

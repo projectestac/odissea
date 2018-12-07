@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cache', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,10 +34,12 @@ $string['addstoresuccess'] = 'Speicher {$a} erfolgreich hinzugefügt';
 $string['area'] = 'Bereich';
 $string['cacheadmin'] = 'Cache Verwaltung';
 $string['cacheconfig'] = 'Konfiguration';
+$string['cachedef_calendar_categories'] = 'Kalenderkurskategorien, auf die eine Person zugreifen kann';
 $string['cachedef_calendar_subscriptions'] = 'Kalender Abonnements';
 $string['cachedef_capabilities'] = 'Liste von Systemrechten';
 $string['cachedef_completion'] = 'Abschlussstatus von Aktivitäten';
 $string['cachedef_config'] = 'Konfigurationseinstellungen';
+$string['cachedef_contextwithinsights'] = 'Kontext mit Einschätzungen';
 $string['cachedef_coursecat'] = 'Kurskategorien für ausgewählte Nutzer/innen';
 $string['cachedef_coursecatrecords'] = 'Datensätze der Kurskategorien';
 $string['cachedef_coursecattree'] = 'Struktur der Kurskategorien';
@@ -47,6 +49,7 @@ $string['cachedef_coursemodinfo'] = 'Angesammelte Informationen über Module und
 $string['cachedef_databasemeta'] = 'Metainformationen zur Datenbank';
 $string['cachedef_eventinvalidation'] = 'Termin löschen';
 $string['cachedef_externalbadges'] = 'Externe Auszeichnungen einzelner Nutzer/innen';
+$string['cachedef_fontawesomeiconmapping'] = 'Zuordnen von Icons für Schriftart Awesome';
 $string['cachedef_grade_categories'] = 'Abfragen der Bewertungskategorie';
 $string['cachedef_groupdata'] = 'Information für Kursgruppe';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - Inhalt entfernt';
@@ -59,13 +62,16 @@ $string['cachedef_observers'] = 'Event-Beobachtung';
 $string['cachedef_plugin_functions'] = 'Callbacks für verfügbare Plugins';
 $string['cachedef_plugin_manager'] = 'Plugin-Informatonsmanager';
 $string['cachedef_postprocessedcss'] = 'Letztverarbeitetes CSS';
+$string['cachedef_presignup'] = 'Voranmeldedaten für bestimmte unregistrierte Nutzer/innen';
 $string['cachedef_questiondata'] = 'Fragedefinition';
 $string['cachedef_repositories'] = 'Daten der Repositories';
+$string['cachedef_roledefs'] = 'Rollendefinitionen';
 $string['cachedef_string'] = 'Sprachstring-Cache';
 $string['cachedef_suspended_userids'] = 'Liste der gesperrten Nutzer/innen pro Kurs';
 $string['cachedef_tagindexbuilder'] = 'Suchergebnisse für verschlagwortete Elemente';
 $string['cachedef_tags'] = 'Schlagwortgruppen und Bereiche';
 $string['cachedef_temp_tables'] = 'Cache für temporäre Tabellen';
+$string['cachedef_user_group_groupings'] = 'Gruppierungen und Gruppen von Nutzer/in';
 $string['cachedef_userselections'] = 'Daten, die verwendet werden, um eine Nutzerauswahl an mehreren Stellen zu verwenden';
 $string['cachedef_yuimodules'] = 'YUI Modul-Definitionen';
 $string['cachelock_file_default'] = 'Standard-Dateisperre';
@@ -130,6 +136,7 @@ $string['nativelocking'] = 'Dieses Plugin verwendet eigene Sperrungen.';
 $string['none'] = 'Kein';
 $string['plugin'] = 'Plugin';
 $string['pluginsummaries'] = 'Installierte Cache-Speicher';
+$string['privacy:metadata:cachestore'] = 'Das Cache-Subsystem';
 $string['purge'] = 'Verwerfen';
 $string['purgedefinitionsuccess'] = 'Die abgefragte Definition wurde erfolgreich ersetzte.';
 $string['purgestoresuccess'] = 'Gewählten Speicher erfolgreich gelöscht';

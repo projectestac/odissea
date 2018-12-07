@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,10 @@ $string['myblocks'] = 'My blocks';
 $string['onthispage'] = 'On this page';
 $string['pagetypes'] = 'Page types';
 $string['pagetypewarning'] = 'The previously specified page type is no longer selectable. Please choose the most appropriate page type below.';
+$string['privacy:metadata:userpref:dockedinstance'] = 'Records when the user docked a block';
+$string['privacy:metadata:userpref:hiddenblock'] = 'Records when the user collapsed/hid a block';
+$string['privacy:request:blockisdocked'] = 'Indicates whether the block was docked';
+$string['privacy:request:blockishidden'] = 'Indicates whether the block was hidden/collapsed';
 $string['region'] = 'Region';
 $string['restrictpagetypes'] = 'Display on page types';
 $string['showblock'] = 'Show {$a} block';

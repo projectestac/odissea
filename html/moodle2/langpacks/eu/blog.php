@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'blog', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,7 @@ $string['associations'] = 'Loturak';
 $string['associationunviewable'] = 'Sarrera hau ezin dute besteek ikusi ikastaro batekin lotu arte edo "Norentzat argitaratu" eramua aldatu arte';
 $string['autotags'] = 'Gehitu etiketa hauek';
 $string['autotags_help'] = 'Idatzi etiketa lokal bat edo gehiago (komaz banatuta) kanpoko blogetik zure blog lokalera kopiatutako blog-sarrera bakoitzari automatikoki gehitzea nahi baduzu.';
-$string['backupblogshelp'] = 'Gaituz gero, blogak ere GUNEAren automatizatutako segurtasun-kopietan sartuko dira';
+$string['backupblogshelp'] = 'Gaituz gero, blogak ere GUNEAren segurtasun-kopia automatizatuetan sartuko dira';
 $string['blockexternalstitle'] = 'Kanpoko blogak';
 $string['blocktitle'] = 'Blog-etiketen bloke izenburua';
 $string['blog'] = 'Bloga';
@@ -135,6 +135,29 @@ $string['pagesize'] = 'Blog-sarrerak orriko';
 $string['permalink'] = 'Lotura iraunkorra';
 $string['personalblogs'] = 'Erabiltzaileek beren blogak baino ezin dituzte ikusi';
 $string['preferences'] = 'Blogaren hobespenak';
+$string['privacy:metadata:core_comments'] = 'Blog-sarrerekin lotutako iruzkinak';
+$string['privacy:metadata:core_files'] = '';
+$string['privacy:metadata:core_tag'] = 'Blog-sarrerekin lotutako etiketak';
+$string['privacy:metadata:external'] = 'Kanpoko RSS jarioaren esteka';
+$string['privacy:metadata:external:description'] = 'Jarioaren deskribapena';
+$string['privacy:metadata:external:filtertags'] = 'Sarrerak iragazteko etiketen zerrenda';
+$string['privacy:metadata:external:name'] = 'Jarioaren izena';
+$string['privacy:metadata:external:timefetched'] = 'Jarioa azkenengoz eskuratu zeneko data.';
+$string['privacy:metadata:external:timemodified'] = 'Lotura azkenengoz aldatu zeneko data';
+$string['privacy:metadata:external:url'] = 'Jarioaren URLa';
+$string['privacy:metadata:external:userid'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:post'] = 'Blog-sarrerekin lotutako informazioa';
+$string['privacy:metadata:post:content'] = 'Kanpoko sarreraren edukia';
+$string['privacy:metadata:post:created'] = 'Sarrera sortu zeneko data';
+$string['privacy:metadata:post:lastmodified'] = 'Sarrera azkenengoz aldatu zeneko data';
+$string['privacy:metadata:post:publishstate'] = 'Sarrera besteentzat ikusgai dagoen edo ez';
+$string['privacy:metadata:post:subject'] = 'Blog-sarreraren izenburua.';
+$string['privacy:metadata:post:summary'] = 'Blog-sarrera.';
+$string['privacy:metadata:post:uniquehash'] = 'Kanpoko-sarrera bateko identifikatzaile-bakarra, normalean URL bat.';
+$string['privacy:metadata:post:userid'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:post:usermodified'] = 'Sarrera azkenengoz aldatu zuen erabiltzailea';
+$string['privacy:path:blogassociations'] = 'Lotutako blog-sarrerak';
+$string['privacy:unknown'] = 'Ezezaguna';
 $string['publishto'] = 'Norentzat argitaratu';
 $string['publishtocourse'] = 'Zurekin ikastaroa konpartitzen duten erabiltzaileak';
 $string['publishtocourseassoc'] = 'Lotutako ikastaroko kideak';
@@ -191,5 +214,5 @@ $string['viewmyentriesaboutmodule'] = 'Ikusi nire sarrerak {$a} honi buruz';
 $string['viewsiteentries'] = 'Sarrera guztiak ikusi';
 $string['viewuserentries'] = '{$a}-ren sarrera guztiak ikusi';
 $string['worldblogs'] = 'Edozeinek ikus ditzake mundu osoarentzat argitaratutako sarrerak';
-$string['wrongexternalid'] = 'Kanpoko blog ID baliogabea';
+$string['wrongexternalid'] = 'Kanpoko blogaren ID baliogabea';
 $string['wrongpostid'] = 'Blog-mezuaren ID okerra';

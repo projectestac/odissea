@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_capability', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['changeoverrides'] = 'Η αλλαγή υπερισχύει σε αυτό
 $string['changeroles'] = 'Αλλαγή ορισμού ρόλων';
 $string['forroles'] = 'Για τους ρόλους {$a}';
 $string['getreport'] = 'Λήψη της αναφοράς';
-$string['intro'] = 'Αυτή η αναφορά δείχνει, για μια συγκεκριμένη ικανότητα, τι δικαίωμα έχει αυτή η ικανότητα στον ορισμό κάθε ρόλου (ή ενός συνόλου ρόλων), και που σε όλο τον ιστοχώρο αυτή η ικανότητα υπερισχύεται από κάτι άλλο.';
+$string['intro'] = 'Αυτή η αναφορά δείχνει, για μια συγκεκριμένη ικανότητα, τι δικαίωμα έχει αυτή η ικανότητα στον ορισμό κάθε ρόλου (ή ενός συνόλου ρόλων), και που σε όλο τον ιστότοπο αυτή η ικανότητα υπερισχύεται από κάτι άλλο.';
 $string['pluginname'] = 'Αναφορά ικανότητας';
 $string['reportforcapability'] = 'Αναφορά για την ικανότητα \'{$a}\'';
 $string['reportsettings'] = 'Ρυθμίσεις αναφοράς';

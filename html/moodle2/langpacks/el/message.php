@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,11 +39,12 @@ $string['defaults'] = 'Προεπιλογές';
 $string['deleteallmessages'] = 'Διαγραφή όλων των μηνυμάτων';
 $string['deleteselectedmessages'] = 'Διαγραφή επιλεγμένων μηνυμάτων';
 $string['disableall'] = 'Προσωρινή απενεργοποίηση ειδοποιήσεων';
-$string['disabled'] = 'Η ανταλλαγή μυνημάτων έχει απενεργοποιηθεί σε αυτό τον ιστοχώρο';
+$string['disabled'] = 'Η ανταλλαγή μυνημάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο';
 $string['disallowed'] = 'Απογορεύεται';
 $string['discussion'] = 'Συζήτηση';
 $string['editmessages'] = 'Επεξεργασία μηνυμάτων';
-$string['emailtagline'] = 'Αυτό είναι ένα αντίγραφο του μηνύματος που στάλθηκε σε εσάς στο "{$a->sitename}". Πηγαίνετε στο {$a->url} για να απαντήσετε.';
+$string['emailtagline'] = 'Αυτό το μήνυμα ηλ.ταχυδρομείου είναι αντίγραφο του μηνύματος που σας  στάλθηκε στο "{$a}".<br />
+Μπορείτε να απαντήσετε στη διεύθυνση {$a->url}';
 $string['emptysearchstring'] = 'Πρέπει να ψάξετε για κάτι';
 $string['enabled'] = 'Ενεργοποιημένο';
 $string['errorcallingprocessor'] = 'Σφάλμα κατά την κλήση του ορισμένου επεξεργαστή';
@@ -65,7 +66,7 @@ $string['messagehistory'] = 'Ιστορικό μηνυμάτων';
 $string['messageoutputs'] = 'Μηνύματα που παράγονται';
 $string['messagepreferences'] = 'Προτιμήσεις μηνύματος';
 $string['messages'] = 'Μηνύματα';
-$string['messagingdisabled'] = 'Η ανταλλαγή μυνημάτων έχει απενεργοποιηθεί σε αυτό τον ιστοχώρο, αντί αυτών θα σταλούν μυνήματα ηλεκτρονικού ταχυδρομείου';
+$string['messagingdisabled'] = 'Η ανταλλαγή μυνημάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο, αντί αυτών θα σταλούν μηνύματα ηλεκτρονικού ταχυδρομείου';
 $string['newmessage'] = 'Νέο μήνυμα';
 $string['newmessagesearch'] = 'Επιλέξτε ή αναζητήστε μια επαφή για να στείλετε μήνυμα.';
 $string['newonlymsg'] = 'Εμφάνιση μόνο νέων';
@@ -104,13 +105,14 @@ $string['settingssaved'] = 'Οι ρυθμίσεις σας έχουν αποθη
 $string['strftimedaydatetime'] = '%A, %d %B %Y, %I:%M %p';
 $string['timenosee'] = 'Λεπτά από την τελευταία φορά που ήμουν συνδεδεμένος/η';
 $string['timesent'] = 'Χρόνος αποστολής';
-$string['togglenotificationmenu'] = 'Μενού εναλλαγής ειδοποιήσεων';
+$string['togglemessagemenu'] = 'Εναλλαγή εμφάνισης/απόκρυψης του μενού μηνυμάτων';
+$string['togglenotificationmenu'] = 'Εναλλαγή εμφάνισης/απόκρυψης του μενού ειδοποιήσεων';
 $string['unblockcontact'] = 'Ξεμπλόκαρε την επαφή';
 $string['unreadnewmessage'] = 'Νέο μήνυμα από {$a}';
 $string['unreadnotification'] = 'Αδιάβαστη ειδοποίηση: {$a}';
 $string['userisblockingyou'] = 'Αυτός ο χρήστης έχει μπλοκάρει την αποδοχή μηνυμάτων από σας';
 $string['userisblockingyounoncontact'] = 'Αυτός ο χρήστης δέχεται μηνύματα μόνο από ανθρώπους που βρίσκονται στη λίστα επαφών του και προς το παρόν εσείς δεν βρίσκεστε στη λίστα αυτή.';
-$string['userssearchresults'] = 'Αποτελέσματα αναζήτησης: {$a} χρήστες βρέθηκαν';
+$string['userssearchresults'] = 'Χρήστες που βρέθηκαν: {$a}';
 $string['viewfullnotification'] = 'Ολόκληρη η ειδοποίηση';
 $string['viewunreadmessageswith'] = 'Προβολή αδιάβαστων μηνυμάτων με {$a}';
 $string['writeamessage'] = 'Γράψτε ένα μήνυμα...';

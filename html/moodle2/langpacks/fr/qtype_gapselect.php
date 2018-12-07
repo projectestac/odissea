@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_gapselect', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['pluginnameediting'] = 'Modification d\'une question permettant de séle
 $string['pluginname_help'] = 'Les questions à mots manquants demandent au participer de choisir les réponses correctes dans des menus déroulants. Les marqueurs [[1]], [[2]], [[3]], ... sont utilisés comme paramètres fictifs dans le texte de la question, avec les choix corrects correspondants 1, 2, 3, … respectivement. Des réponses supplémentaires peuvent être ajoutées pour rendre la question plus difficile à répondre. Les choix disponibles peuvent être groupés afin de restreindre les réponses disponibles dans chaque menu déroulant.';
 $string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnamesummary'] = 'Les mots manquants dans le texte de la question sont comblés par des menus déroulants.';
+$string['privacy:metadata'] = 'Le plugin de type de question Sélectionner les mots manquants n\'enregistre aucune donnée personnelle.';
 $string['shuffle'] = 'Mélanger';
 $string['tagsnotallowed'] = '{$a->tag} n\'est pas permis (seulement {$a->allowed} sont permis).';
 $string['tagsnotallowedatall'] = '{$a->tag} n\'est pas permis (aucun code HTML n\'est permis ici).';

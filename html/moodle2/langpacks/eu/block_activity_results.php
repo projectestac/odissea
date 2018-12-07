@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_activity_results', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['error_nogroupsexist'] = 'Errorea: blokea kalifikazioak talde-moduan era
 $string['error_unsupportedgradetype'] = 'Errorea: aukeratutako jarduerak bloke honek onartzen ez duen kalifikazio-metodoa erabiltzen du.';
 $string['notyetgraded'] = 'Oraindik kalifikatu gabea';
 $string['pluginname'] = 'Jardueraren emaitzak';
+$string['privacy:metadata'] = 'Jardueraren emaitzak blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['unknown'] = 'Eskala ezezaguna';
 $string['worstgrade'] = 'Notarik baxuena:';
 $string['worstgrades'] = '{$a} kalifikazio baxuenak:';

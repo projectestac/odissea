@@ -383,7 +383,7 @@ class mod_chat_external extends external_api {
             $returnedmessages[] = array(
                 'id' => $message->id,
                 'userid' => $message->userid,
-                'system' => (bool) $message->system,
+                'system' => (bool) $message->issystem,
                 'message' => $messageformatted,
                 'timestamp' => $message->timestamp,
             );
@@ -494,7 +494,7 @@ class mod_chat_external extends external_api {
     /**
      * Describes the parameters for get_chats_by_courses.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.0
      */
     public static function get_chats_by_courses_parameters() {

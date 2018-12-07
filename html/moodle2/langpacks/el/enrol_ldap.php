@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_ldap', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['autocreate'] = '<p>Είναι εφικτό να γίνει αυτόματη δημιουργία μαθημάτων αν υπάρχουν εγγραφές σε ένα μάθημα που δεν υπάρχει ακόμα στο Moodle</p><p>Αν χρησιμοποιείτε την αυτόματη δημιουργία μαθημάτων, συνιστάται η αφαίρεση των ακόλουθων δυνατοτήτων:
-<br/>moodle/course:changeidnumber,
-<br/>moodle/course:changeshortname,
-<br/>moodle/course:changefullname και
-<br/>moodle/course:changesummary,
-<br/>από τους αντίστοιχους ρόλους για την αποφυγή τροποποιήσεων των τεσσάρων πεδίων μαθήματος που αναφέρονται παραπάνω (αναγνωριστικό, σύντομο όνομα, πλήρες όνομα και σύνοψη).</p>';
+$string['autocreate'] = 'Μαθήματα μπορούν να δημιουργούνται αυτόματα εάν υπάρχουν εγγραφές σε ένα μάθημα το οποίο δεν υπάρχει ακόμα στο ΠΗΛΕΑΣ.';
 $string['autocreation_settings'] = 'Ρυθμίσεις αυτόματης δημιουργίας μαθημάτων';
 $string['bind_dn'] = 'Εάν θέλετε να χρησιμοποιήσετε το bind-user για αναζήτηση χρηστών, ορίστε το εδώ. Κάτι σαν \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_pw'] = 'Κωδικός για το bind-user.';
@@ -64,8 +59,10 @@ $string['pluginname_desc'] = '<p>Μπορείτε να χρησιμοποιήσ�
 <p>Για την χρήση εγγραφής LDAP, οι χρήστες σας <strong>πρέπει</strong> να έχουν ένα έγκυρο πεδίο idnumber. Οι ομάδες LDAP πρέπει να έχουν αυτό το idnumber στα πεδία των μελών για να εγγραφεί ένας χρήστης στο μάθημα. Αυτό δουλεύει καλά εάν χρησιμοποιείτε LDAP πιστοποίηση ήδη.</p>
 <p>Οι εγγραφές ενημερώνονται όταν ο χρήστης εισέλθει. Μπορείτε να εκτελέσετε και ένα σενάριο για να συγχρονίζονται οι εγγραφές. Δείτε στο <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p> Αυτό το plugin μπορεί να οριστεί ώστε να δημιουργεί νέα μαθήματα αυτόματα όταν εμφανίζονται νέες ομάδες στον LDAP.</p>';
+$string['pluginnotenabled'] = 'Το πρόσθετο αυτό δεν έχει ενεργοποιηθεί!';
 $string['roles'] = 'Αντιστοίχηση ρόλων';
 $string['server_settings'] = 'Ρυθμίσεις εξυπηρετητή LDAP';
 $string['template'] = 'Προαιρετικό: μαθήματα που δημιουργούνται αυτόματα μπορούν να αντιγράψουν τις ρυθμίσεις τους από πρότυπο μάθημα.';
 $string['updatelocal'] = 'Ενημέρωσε τα τοπικά δεδομένα';
 $string['version'] = 'Η έκδοση του LDAP πρωτοκόλλου που χρησιμοποιεί ο εξυπηρετητής.';
+$string['version_key'] = 'Έκδοση';

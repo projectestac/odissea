@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_progress', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_progress', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   report_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['page-report-progress-index'] = 'Activity completion report';
 $string['page-report-progress-user'] = 'User activity completion report';
 $string['page-report-progress-x'] = 'Any activity completion report';
 $string['pluginname'] = 'Activity completion';
+$string['privacy:metadata'] = 'The Activity completion report only shows data stored in other locations.';
 $string['progress:view'] = 'View activity completion reports';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grading', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,27 @@ $string['manageactionshareconfirm'] = 'Está prestes a guardar uma cópia da gre
 $string['manageactionsharedone'] = 'A grelha de avaliação foi guardada com sucesso como modelo.';
 $string['noitemid'] = 'A avaliação não é possivel, o item de avaliação não existe.';
 $string['nosharedformfound'] = 'Não foram encontrados modelos';
+$string['privacy:metadata:grading_definitions'] = 'Informação básica sobre um formulário de avaliação avançado na área definida.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'O ID da área onde o formulário de avaliação avançada é definido.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'O ID de definição da avaliação de onde isto foi copiado.';
+$string['privacy:metadata:grading_definitions:description'] = 'A descrição do método de avaliação avançada';
+$string['privacy:metadata:grading_definitions:method'] = 'O método de avaliação que é responsável pela definição.';
+$string['privacy:metadata:grading_definitions:name'] = 'O nome da definição de avaliação avançada';
+$string['privacy:metadata:grading_definitions:options'] = 'Algumas configurações desta definição de avaliação';
+$string['privacy:metadata:grading_definitions:status'] = 'O estado desta avaliação avançada';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'A hora a que a definição da avaliação foi copiada.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'A hora a que a definição da avaliação foi criada.';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'A hora a que a definição da avaliação foi modificada.';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'O ID do utilizador que criou a definição de avaliação.';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'O ID do utilizador que modificou a definição de avaliação pela última vez.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Dados do método de avaliação.';
+$string['privacy:metadata:grading_instances'] = 'registo da avaliação para um item avaliado por um avaliador.';
+$string['privacy:metadata:grading_instances:feedback'] = 'O feedback atribuído pelo utilizador.';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'O formato de texto do feedback atribuído pelo utilizador.';
+$string['privacy:metadata:grading_instances:raterid'] = 'O ID do utilizador que avaliou a instância de avaliação.';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'A avaliação para a instância de avaliação.';
+$string['privacy:metadata:grading_instances:status'] = 'O estado desta instância de avaliação';
+$string['privacy:metadata:grading_instances:timemodified'] = 'A hora em que a instância de avaliação foi modificado pela última vez.';
 $string['searchownforms'] = 'incluir as minhas grelhas';
 $string['searchtemplate'] = 'Pesquisar grelhas de avaliação';
 $string['searchtemplate_help'] = 'Pode pesquisar por uma grelha de avaliação e usá-la aqui como modelo a partir da nova grelha de avaliação. Basta inserir as palavras que devem aparecer em algum lugar no nome da grelha, na sua descrição ou no próprio corpo da grelha. Para pesquisar uma frase, insira a expressão inteira entre aspas.

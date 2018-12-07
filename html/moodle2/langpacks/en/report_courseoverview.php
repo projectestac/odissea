@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_courseoverview', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_courseoverview', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   report_courseoverview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'View course overview report';
 $string['pluginname'] = 'Course overview';
+$string['privacy:metadata'] = 'The Course overview plugin does not store any personal data.';

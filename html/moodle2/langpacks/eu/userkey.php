@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'userkey', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   userkey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,14 @@ $string['keyvaliduntil'] = 'Giltza noiz arte erabilgarri:';
 $string['keyvaliduntil_help'] = '<p>Ezarri data eta hortik aurrera gakoak ez du balioko (aparteko segurtasunerako gomendatua).</p>';
 $string['keyvalue'] = 'Giltzaren balorea';
 $string['newuserkey'] = 'Erabiltzaile berriaren giltza';
+$string['privacy:metadata:user_private_key'] = 'Erabiltzailearentzako gako pribatuak.';
+$string['privacy:metadata:user_private_key:instance'] = 'Script-aren instantzia.';
+$string['privacy:metadata:user_private_key:iprestriction'] = 'Gako hau erabili dezaketen IP helbideen tartea.';
+$string['privacy:metadata:user_private_key:script'] = 'Erabiltzaile-gakoaren arduraduna izango den script-a.';
+$string['privacy:metadata:user_private_key:timecreated'] = 'Gako sortu zeneko unea.';
+$string['privacy:metadata:user_private_key:userid'] = 'Gakoarekin lotutako erabiltzailea.';
+$string['privacy:metadata:user_private_key:validuntil'] = 'Gako pribatua noiz arte izango den baliozkoa.';
+$string['privacy:metadata:user_private_key:value'] = 'Gakoaren balioa.';
 $string['userkey'] = 'Erabiltzaile-giltza';
 $string['userkey_help'] = '<p>Kalifikazioak argitaratzea kalifikazioak URL bidez esportatzeko bide bat da Moodle-n sartu behar izan gabe. Ausaz sortzen da karaktere-multzo bat da erabiltzaile-gakoa eta URL helbideari eransten zaio segurtasuna mantentzeko.</p>
 

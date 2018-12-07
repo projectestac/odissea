@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_skydrive', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_skydrive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,8 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cachedef_foldername'] = 'Karpeta izenaren cachea';
 $string['clientid'] = 'Bezeroaren IDa';
-$string['configplugin'] = 'Konfiguratu Microsoft OneDrive';
-$string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea <a href="https://account.live.com/developers/applications">Microsoft-en</a> erregistratu beharko duzu.<p>Erregistro-prozesuan hurrengo URLa \'Redirect domain\' gisa zehaztu beharko duzu:</p><p>{$a->callbackurl}</p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek hemen erabili ahalko dituzu.</p>';
-$string['pluginname'] = 'Microsoft OneDrive';
+$string['configplugin'] = 'Konfiguratu Microsoft OneDrive (zaharkitua)';
+$string['deprecatedwarning'] = 'Kontuz: Microsoft-ek biltegi honek erabiltzen duen API-a baztertu egin du eta uneren batean funtzionatzeari utziko dio. Mesedez migratu "Microsoft OneDrive" biltegi berriagora.';
+$string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea <a href="https://account.live.com/developers/applications">Microsoft-en</a> erregistratu beharko duzu.</p>
+<p>Erregistro-prozesuan hurrengo URLa \'Redirect domain\' gisa zehaztu beharko duzu:</p>
+<p>{$a->callbackurl}</p>
+<p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek hemen sartu beharko dituzu.</p>';
+$string['pluginname'] = 'Microsoft OneDrive (zaharkitua)';
+$string['privacy:metadata'] = 'Microsoft OneDrive (zaharkitua) biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['secret'] = 'Sekretua';
-$string['skydrive:view'] = 'Ikusi OneDrive';
+$string['skydrive:view'] = 'Ikusi OneDrive (zaharkitua)';

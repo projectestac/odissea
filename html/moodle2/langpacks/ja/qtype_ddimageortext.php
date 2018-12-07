@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['pluginname_help'] = 'ドラッグ＆ドロップイメージ問題は�
 $string['pluginnamesummary'] = 'イメージまたはテキストラベルを背景イメージのドロップゾーンにドラッグ＆ドロップします。';
 $string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージを選択してドラッグ可能イメージ指定した後、ドラッグするための背景イメージのドロップゾーンを定義してください。';
+$string['privacy:metadata'] = 'ドラッグ＆ドロップイメージ問題タイププラグインはどのような個人データも保存しません。';
 $string['refresh'] = 'プレビューをリフレッシュする';
 $string['shuffleimages'] = '問題の受験ごとにドラッグアイテムをシャッフルする';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

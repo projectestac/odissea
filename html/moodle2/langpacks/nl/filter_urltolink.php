@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_urltolink', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_urltolink', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_urltolink
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = 'Ingebedde bestanden';
 $string['embedimages_desc'] = 'Vervang afbeeldings-URL\'s met afbeeldingen in de geselecteerde tekstopmaak.';
 $string['filtername'] = 'Converteer URL\'s naar links en afbeeldingen';
+$string['privacy:metadata'] = 'De converteer URLs naar links en afbeeldingenplugin bewaart geen persoonlijke gegevens.';
 $string['settingformats'] = 'Toepassen voor opmaak';
 $string['settingformats_desc'] = 'De filter zal alleen toegepast worden als de originele tekst in één van de geselecteerde opmaken was ingevoerd.';

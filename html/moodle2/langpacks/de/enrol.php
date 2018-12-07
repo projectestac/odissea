@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,16 +43,19 @@ $string['deleteinstancenousersconfirm'] = 'Möchten Sie die Einschreibemethode \
 $string['disableinstanceconfirmself'] = 'Möchten Sie wirklich die Instanz \'{$a->name}\' deaktivieren, mit der Sie Zugriff auf den Kurs haben? Es könnte sein, dass Sie danach keinen Zugriff mehr haben.';
 $string['durationdays'] = '{$a} Tage';
 $string['editenrolment'] = 'Einschreibung bearbeiten';
+$string['edituserenrolment'] = 'Einschreibung von {$a} bearbeiten';
 $string['enrol'] = 'Einschreiben';
 $string['enrolcandidates'] = 'Nichteingeschriebene Nutzer/innen';
 $string['enrolcandidatesmatching'] = 'Passende nichteingeschriebene Nutzer/innen';
 $string['enrolcohort'] = 'Globale Gruppe einschreiben';
 $string['enrolcohortusers'] = 'Nutzer/innen einschreiben';
+$string['enroldetails'] = 'Einschreibedetails';
 $string['enrollednewusers'] = 'Erfolgreich {$a} neue Nutzer/innen eingeschrieben';
 $string['enrolledusers'] = 'Eingeschriebene Nutzer/innen';
 $string['enrolledusersmatching'] = 'Passende eingeschriebene Nutzer/innen';
 $string['enrolme'] = 'Mich in diesem Kurs einschreiben';
 $string['enrolmentinstances'] = 'Einschreibemethoden';
+$string['enrolmentmethod'] = 'Einschreibemethode';
 $string['enrolmentnew'] = 'Neue Anmeldung in {$a}';
 $string['enrolmentnewuser'] = '{$a->user} hat sich im Kurs "{$a->course}" eingeschrieben';
 $string['enrolmentoptions'] = 'Einschreibeoptionen';
@@ -61,6 +64,7 @@ $string['enrolnotpermitted'] = 'Sie haben nicht das Recht, in diesem Kurs jemand
 $string['enrolperiod'] = 'Teilnahmedauer';
 $string['enroltimecreated'] = 'Einschreibung erstellt';
 $string['enroltimeend'] = 'Einschreibeende';
+$string['enroltimeendinvalid'] = 'Das Einschreibeende muss nach dem Einschreibebeginn liegen.';
 $string['enroltimestart'] = 'Einschreibebeginn';
 $string['enrolusage'] = 'Einschreibungen';
 $string['enrolusers'] = 'Nutzer/innen einschreiben';
@@ -97,6 +101,7 @@ $string['instanceadded'] = 'Methode hinzugefügt';
 $string['instanceeditselfwarning'] = 'Warnung:';
 $string['instanceeditselfwarningtext'] = 'Sie sind über diese Einschreibemethode in den Kurs eingeschrieben. Änderungen könnten sich auf Ihren Zugriff zum Kurs auswirken.';
 $string['invalidenrolinstance'] = 'Falsche Einschreibung';
+$string['invalidrequest'] = 'Ungültige Anfrage';
 $string['invalidrole'] = 'Falsche Rolle';
 $string['manageenrols'] = 'Übersicht';
 $string['manageinstance'] = 'Verwalten';
@@ -110,12 +115,23 @@ $string['notenrollable'] = 'Sie können sich nicht selbst in diesen Kurs einschr
 $string['notenrolledusers'] = 'Weitere Nutzer/innen';
 $string['otheruserdesc'] = 'Folgende Nutzer/innen sind nicht in diesem Kurs eingeschrieben, aber sie besitzen hier zugewiesene oder vererbte Rollen. ';
 $string['participationactive'] = 'Aktiv';
+$string['participationnotcurrent'] = 'Nicht aktuell';
 $string['participationstatus'] = 'Status';
 $string['participationsuspended'] = 'Inaktiv';
 $string['periodend'] = 'bis {$a}';
 $string['periodnone'] = 'eingeschrieben {$a}';
 $string['periodstart'] = 'ab {$a}';
 $string['periodstartend'] = 'von {$a->start} bis {$a->end}';
+$string['privacy:metadata:user_enrolments'] = 'Einschreibungen';
+$string['privacy:metadata:user_enrolments:enrolid'] = 'Instanz des Einschreibeplugins';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'ID des Nutzers, der zuletzt die Einschreibung des Nutzers geändert hat';
+$string['privacy:metadata:user_enrolments:status'] = 'Status der Nutzereinschreibung im Kurs';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = 'Wo die Einschreibeverwaltung die eingeschriebenen Nutzer speichert';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'Datum/Zeitpunkt, zu dem die Nutzereinschreibung erstellt wurde';
+$string['privacy:metadata:user_enrolments:timeend'] = 'Datum/Zeitpunkt, zu dem die Nutzereinschreibung abläuft';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'Datum/Zeitpunkt, zu dem die Nutzereinschreibung bearbeitet wurde';
+$string['privacy:metadata:user_enrolments:timestart'] = 'Datum/Zeitpunkt, zu dem die Nutzereinschreibung beginnt';
+$string['privacy:metadata:user_enrolments:userid'] = 'ID des Nutzers';
 $string['proceedtocourse'] = 'Weiter zum Kurs';
 $string['recovergrades'] = 'Alte Nutzerbewertungen falls möglich wiederherstellen';
 $string['rolefromcategory'] = '{$a->role} (vererbt vom Kursbereich)';
@@ -133,12 +149,13 @@ $string['totalenrolledusers'] = '{$a} eingeschriebene Nutzer/innen';
 $string['totalotherusers'] = '{$a} weitere Nutzer/innen';
 $string['unassignnotpermitted'] = 'Sie haben nicht das Recht, in diesem Kurs Rollenzuweisungen zu ändern.';
 $string['unenrol'] = 'Abmelden';
-$string['unenrolconfirm'] = 'Möchten Sie wirklich "{$a->user}" aus dem Kurs "{$a->course}" abmelden?';
+$string['unenrolconfirm'] = 'Möchten Sie wirklich "{$a->user}" (eingeschrieben über "{$a->enrolinstancename}") aus dem Kurs "{$a->course}" abmelden?';
 $string['unenrolme'] = 'Abmelden aus \'{$a}\'';
 $string['unenrolnotpermitted'] = 'Sie haben nicht das Recht, diese/n Nutzer/in aus dem Kurs abzumelden';
 $string['unenrolroleusers'] = 'Nutzer/innen abmelden';
 $string['uninstallmigrating'] = '"{$a}" Einschreibungen werden übertragen';
 $string['unknowajaxaction'] = 'Unbekannter Funktionsaufruf';
 $string['unlimitedduration'] = 'Unbegrenzt';
+$string['userremovedfromselectiona'] = 'Nutzer/in \'{$a}\' wurde aus der Auswahl entfernt.';
 $string['usersearch'] = 'Suchen';
 $string['withselectedusers'] = 'Mit ausgewählten Nutzer/innen';

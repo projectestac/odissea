@@ -45,7 +45,7 @@ class qtype_multianswerwiris_helper_renderer extends qtype_multianswer_renderer 
 }
 /**
  * Helper/Hack class which is a mix between the base shortanswer question class
- * and the shortanswerwiris question class so it is usable by the multianswer
+ * and the shortanswerwiris qtypes class so it is usable by the multianswer
  * renderer functions.
  * **/
 class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortanswer_question {
@@ -73,7 +73,7 @@ class qtype_multianswerwiris_shortanswer_helper_question extends qtype_shortansw
                         return $this->subq->get_matching_answer($response);
                     }
                     // This code is for retro-compatibility. The attempts graded
-                    // with previous versions of WIRIS quizzes don't have the
+                    // with previous versions of Wiris Quizzes don't have the
                     // '_matching_answer' var but a '_fraction' var. We re-grade
                     // such answers in order to have the new data and therefore
                     // have the good rendering of correct/incorrect responses.

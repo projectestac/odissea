@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'imscp', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,10 @@ $string['contentheader'] = 'Inhalt';
 $string['deploymenterror'] = 'Fehler im IMS-Content!';
 $string['imscp:addinstance'] = 'IMS-Content hinzufügen';
 $string['imscp:view'] = 'IMS-Content sehen';
+$string['indicator:cognitivedepth'] = 'IMS Paket kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer IMS content package Ressource erreicht hat.';
+$string['indicator:socialbreadth'] = 'IMS Paket sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer IMS content package Ressource erreicht hat.';
 $string['keepold'] = 'Pakete archivieren';
 $string['keepoldexplain'] = 'Wie viele Pakete sollen archiviert werden?';
 $string['modulename'] = 'IMS-Content';
@@ -45,5 +49,6 @@ $string['packagefile'] = 'Paketdatei';
 $string['page-mod-imscp-x'] = 'Jeder IMS-Content-Seite';
 $string['pluginadministration'] = 'IMS-CP-Administration';
 $string['pluginname'] = 'IMS-Content';
+$string['privacy:metadata'] = 'Das IMS Content-Paketplugin speichert keine persönlichen Daten.';
 $string['search:activity'] = 'IMS Content Packages - Materialinformation';
 $string['toc'] = 'Inhaltsverzeichnis';

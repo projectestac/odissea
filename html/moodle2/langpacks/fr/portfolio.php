@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -168,6 +168,23 @@ $string['plugincouldnotpackage'] = 'Échec de la préparation de vos données po
 $string['pluginismisconfigured'] = 'Le plugin de portfolio est mal configuré et a été ignoré. L\'erreur était {$a}';
 $string['portfolio'] = 'Portfolio';
 $string['portfolios'] = 'Portfolios';
+$string['privacy:metadata'] = 'Le sous-système portfolio agit comme un canal, passant des requêtes de plugins aux divers plugins de portfolio.';
+$string['privacy:metadata:instance'] = 'Identifiant du portfolio.';
+$string['privacy:metadata:instancesummary'] = 'Enregistre les instances et préférence des portfolios de l\'utilisateur.';
+$string['privacy:metadata:name'] = 'Nom du réglage.';
+$string['privacy:metadata:portfolio_log'] = 'Journal des transferts de portfolio (utilisés pour détecter les doublons)';
+$string['privacy:metadata:portfolio_log:caller_class'] = 'Nom de la classe utilisée pour créer le transfert';
+$string['privacy:metadata:portfolio_log:caller_component'] = 'Nom du composant responsable de l\'exportation';
+$string['privacy:metadata:portfolio_log:time'] = 'Date et heure du transfert (dans le cas d\'un transfert en file d\'attente, il s\'agit de la date effective du transfert, et non du lancement de celui-ci par l\'utilisateur)';
+$string['privacy:metadata:portfolio_log:userid'] = 'Utilisateur qui a exporté le contenu';
+$string['privacy:metadata:portfolio_tempdata'] = 'Enregistre des données temporaires pour les exportations de portfolio, nettoyées après une journée par le cron';
+$string['privacy:metadata:portfolio_tempdata:data'] = 'Données exportées';
+$string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Date et heure d\'échéance de l\'enregistrement';
+$string['privacy:metadata:portfolio_tempdata:instance'] = 'Instance de plugin de portfolio utilisée';
+$string['privacy:metadata:portfolio_tempdata:userid'] = 'Utilisateur qui effectue l\'exportation';
+$string['privacy:metadata:userid'] = 'L\'identifiant de l\'utilisateur';
+$string['privacy:metadata:value'] = 'Valeur du réglage';
+$string['privacy:path'] = 'Instances de portfolio';
 $string['queuesummary'] = 'Transferts actuellement en attente';
 $string['returntowhereyouwere'] = 'Retour à la page précédente';
 $string['save'] = 'Enregistrer';

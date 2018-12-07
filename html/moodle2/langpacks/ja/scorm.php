@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,8 @@ $string['browsed'] = '閲覧済み';
 $string['browsemode'] = 'プレビューモード';
 $string['browserepository'] = 'リポジトリを閲覧する';
 $string['calculatedweight'] = '計算加重';
+$string['calendarend'] = '{$a} 終了';
+$string['calendarstart'] = '{$a} 開始';
 $string['cannotaccess'] = 'あなたはこのスクリプトをそのようにコールすることはできません。';
 $string['cannotfindsco'] = 'SCOを見つけることができませんでした。';
 $string['chooseapacket'] = 'パッケージを選択または更新する';
@@ -83,17 +85,20 @@ $string['collapsetocwinsizedesc'] = 'ここではTOCを自動的に折りたた�
 $string['compatibilitysettings'] = '互換性設定';
 $string['completed'] = '完了';
 $string['completionscorerequired'] = '必要最小点数';
+$string['completionscorerequireddesc'] = '完了するには最低でも {$a} 点必要です。';
 $string['completionscorerequired_help'] = 'この設定を有効にすることによりユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも設定された最小点数に到達する必要があります。';
 $string['completionstatusallscos'] = 'すべてのscosに完了ステータスの返信を要求する';
 $string['completionstatusallscos_help'] = 'SCORMパッケージには複数のコンポーネントまたは「scos」を含むものがあります。この設定が有効にされた場合、この活動の完了をフラグするためにパッケージ内のすべてのscosは関連するlesson_statusを返す必要があります。';
 $string['completionstatus_completed'] = '完了';
 $string['completionstatus_passed'] = '合格';
 $string['completionstatusrequired'] = '必要ステータス';
+$string['completionstatusrequireddesc'] = '学生は少なくとも次のステータスに到達する必要があります: {$a}';
 $string['completionstatusrequired_help'] = '1つまたはそれ以上のステータスを選択することによりユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも選択されたステータスの1つに到達する必要があります。';
 $string['confirmloosetracks'] = '警告: パッケージが変更/修正されたようです。パッケージ構造が変更された場合、更新処理中にユーザトラックが失われる可能性があります。';
 $string['contents'] = 'コンテンツ';
 $string['coursepacket'] = 'コースパッケージ';
 $string['coursestruct'] = 'コース構造';
+$string['crontask'] = 'SCORMバックグラウンド処理';
 $string['currentwindow'] = '現在のウィンドウ';
 $string['datadir'] = 'ファイルシステムエラー: コースデータディレクトリを作成できません。';
 $string['defaultdisplaysettings'] = 'デフォルト表示設定';
@@ -193,6 +198,10 @@ $string['hidetoc_help'] = 'SCORMプレイヤの目次表示方法';
 $string['highestattempt'] = '最高評点';
 $string['identifier'] = '問題識別子';
 $string['incomplete'] = '不完全';
+$string['indicator:cognitivedepth'] = 'SCORM認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はSCORM活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'SCORM社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はSCORM活動で学生が到達した社会的広がりに基づきます。';
 $string['info'] = '情報';
 $string['interactions'] = 'インタラクション';
 $string['invalidactivity'] = 'SCORM活動が正しくありません。';
@@ -293,6 +302,20 @@ $string['position_error'] = '{$a->tag} タグを {$a->parent} タグの子タグ
 $string['preferencespage'] = 'このページ限定のプリファレンス';
 $string['preferencesuser'] = 'このレポートのプリファレンス';
 $string['prev'] = '前に戻る';
+$string['privacy:metadata:aicc:data'] = 'AICC/SCORMサブシステムから渡される個人データです。';
+$string['privacy:metadata:aicc:externalpurpose'] = 'このプラグインはAICC HACPを使用して外部にデータを送信します。';
+$string['privacy:metadata:aicc_session:lessonstatus'] = '追跡するレッスンのステータスです。';
+$string['privacy:metadata:aicc_session:scormmode'] = '追跡するエレメントのモードです。';
+$string['privacy:metadata:aicc_session:scormstatus'] = '追跡するエレメントのステータスです。';
+$string['privacy:metadata:aicc_session:sessiontime'] = '追跡するセッション時間です。';
+$string['privacy:metadata:aicc_session:timecreated'] = '追跡するエレメントが作成された日時です。';
+$string['privacy:metadata:attempt'] = '受験番号です。';
+$string['privacy:metadata:scoes_track:element'] = '追跡するエレメントの名称です。';
+$string['privacy:metadata:scoes_track:value'] = 'エレメントの値です。';
+$string['privacy:metadata:scorm_aicc_session'] = 'AICC HACPのセッション情報です。';
+$string['privacy:metadata:scorm_scoes_track'] = '活動に属するSCOの追跡データです。';
+$string['privacy:metadata:timemodified'] = '追跡エレメントの最終更新日時です。';
+$string['privacy:metadata:userid'] = 'SCORM活動にアクセスしたユーザのIDです。';
 $string['protectpackagedownloads'] = 'パッケージダウンロードを保護する';
 $string['protectpackagedownloads_desc'] = 'この設定を有効にした場合、course:manageactivitiesケイパビリティが割り当てられているユーザのみSCORMパッケージをダウンロードすることができます。この設定が無効にされた場合、SCORMパッケージを常に (モバイルまたは他の方法で) ダウンロードすることができます';
 $string['raw'] = '素点';

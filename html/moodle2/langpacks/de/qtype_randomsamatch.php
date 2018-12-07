@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_randomsamatch
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['pluginnameadding'] = 'Zufällige Kurzantwort Zuordnungsfrage hinzufüge
 $string['pluginnameediting'] = 'Zufällige Kurzantwort Zuordnungsfrage bearbeiten';
 $string['pluginname_help'] = 'Aus Teilnehmeransicht scheint dies eine Zuordnungsfrage zu sein. Der Unterschied besteht darin, dass die Fragen und Antworten zufällig aus den Kurzantwortfragen der gewählten Kategorie genommen werden. Es müssen ausreichend noch nicht genutzte Kurzantwortfragen in der Kategorie abgelegt sein. Andernfalls erscheint eine Fehlernachricht.';
 $string['pluginnamesummary'] = 'Wie Zuordnungsfrage, jedoch zufällig aus Kurzantwortfragen der Kategorie erstellt.';
+$string['privacy:metadata'] = 'Der Zufallsfragen-Zuordnungs Fragentyp speichert keine persönlichen Daten';
 $string['randomsamatch'] = 'Zufällige Kurzantwort-Zuordnung';
 $string['randomsamatchintro'] = 'Wählen Sie für jede der folgenden Fragen die passende Antwort aus dem Menu.';
 $string['randomsamatchnumber'] = 'Anzahl der Fragen zur Auswahl';

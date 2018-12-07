@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_mnet', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ Schrijf je op deze service in om je leerlingen te kunnen aanmelden op {$a}.<br /
 $string['mnet_enrol_name'] = 'Externe aanmeldingsservice';
 $string['pluginname'] = 'MNet externe aanmeldingen';
 $string['pluginname_desc'] = 'Staat externe MNet host toe om hun gebruikers aan te melden in onze cursussen.';
+$string['privacy:metadata'] = 'De MNET externe aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['remotesubscriber'] = 'Externe host';
 $string['remotesubscriber_help'] = 'Selecteer \'alle hosts\' om deze cursus open te stellen voor alle MNet peers aan wie we de externe mogelijkheid tot aanmelding bieden. Of kies één enkele host en maak deze cursus enkel voor hun gebruikers beschikbaar.';
 $string['remotesubscribersall'] = 'Alle hosts';

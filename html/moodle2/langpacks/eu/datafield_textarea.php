@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_textarea', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['fieldtypelabel'] = 'Testu-eremua';
 $string['maxbytes'] = 'Enbotatutako fitxatategiaren gehienezko tamaina  (byteak)';
 $string['maxbytes_desc'] = 'O ezarriz gero, berez mugarik gabea izango da';
 $string['pluginname'] = 'Testu-eremua';
+$string['privacy:metadata'] = 'Testu-eremua eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';

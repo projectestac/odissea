@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_picture', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_picture
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo imagem';
 $string['pluginname'] = 'Imagem';
+$string['privacy:metadata'] = 'A componente Campo de imagem não armazena dados pessoais, usa tabelas definidas em mod_data.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeexport_ods', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeexport_ods
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['eventgradeexported'] = 'Bewertung als ODS exportiert';
 $string['ods:publish'] = 'Bewertungen als OpenOffice-Datei veröffentlichen';
 $string['ods:view'] = 'Bewertungen als OpenOffice-Datei exportieren';
 $string['pluginname'] = 'OpenDocument-Datei';
+$string['privacy:metadata'] = 'Das Plugin zum Export in Tabellenkalkulatonsdateien OpenDocument  speichert keine persönlichen Daten.';
 $string['timeexported'] = 'Zuletzt aus diesem Kurs geladen';

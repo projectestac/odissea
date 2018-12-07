@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'competency', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,55 @@ $string['planstatusdraft'] = 'Entwurf';
 $string['planstatusinreview'] = 'Überprüfung läuft';
 $string['planstatuswaitingforreview'] = 'Überprüfung abwarten';
 $string['pointsrequiredaremet'] = 'Erforderliche Punktzahl erreicht';
+$string['privacy:evidence:action:complete'] = 'Kompetenz abschließen falls unbewertet';
+$string['privacy:evidence:action:log'] = 'Log-Aktion';
+$string['privacy:evidence:action:override'] = 'Kompetenzbewertung überschreiben';
+$string['privacy:metadata:competency'] = 'Aufzeichnung der Kompetenzen';
+$string['privacy:metadata:competency_coursecomp'] = 'Aufzeichnung der Kompetenzen eines Kurses';
+$string['privacy:metadata:competency_coursecompsetting'] = 'Aufzeichnung der Kompetenzeinstellungen eines Kurses';
+$string['privacy:metadata:competency_evidence'] = 'Aufzeichnung des Nachweises für einen Kompetenzstatus';
+$string['privacy:metadata:competency_framework'] = 'Aufzeichnung der Kompetenzrahmen';
+$string['privacy:metadata:competency_modulecomp'] = 'Aufzeichnung der Kompetzenzen, die mit einem Modul verbunden sind';
+$string['privacy:metadata:competency_plan'] = 'Aufzeichnung der Lernpläne';
+$string['privacy:metadata:competency_plancomp'] = 'Aufzeichnung der Kompetenzen in einem Lernplan';
+$string['privacy:metadata:competency_relatedcomp'] = 'Aufzeichnung der Verbindung zwischen Kompetenzen';
+$string['privacy:metadata:competency_template'] = 'Aufzeichnung von Lernplanvorlagen';
+$string['privacy:metadata:competency_templatecohort'] = 'Aufzeichnung von Lernplanvorlagen einer globalen Gruppe';
+$string['privacy:metadata:competency_templatecomp'] = 'Aufzeichnung von Kompetenzen einer Lernplanvorlage';
+$string['privacy:metadata:competency_usercomp'] = 'Aufzeichnung des Nutzerstatus für eine Kompetenz';
+$string['privacy:metadata:competency_usercompcourse'] = 'Aufzeichnung des Nutzerstatus für eine Kompetenz in einem Kurs';
+$string['privacy:metadata:competency_usercompplan'] = 'Aufzeichnung des Status für Kompetenzen in einem Lernplan';
+$string['privacy:metadata:competency_userevidence'] = 'Aufzeichnung des Nachweis aus anderen Lernprozessen';
+$string['privacy:metadata:competency_userevidencecomp'] = 'Aufzeichnung der Kompetenzen, die mit früheren Lernprozessen verbunden sind';
+$string['privacy:metadata:core_comments'] = 'Kommentare zu Lernplänen und Kompetenzen';
+$string['privacy:metadata:evidence:action'] = 'Aktionstypen für Nachweis';
+$string['privacy:metadata:evidence:actionuserid'] = 'Nutzerleistung für Aktion';
+$string['privacy:metadata:evidence:desca'] = 'Beschreibung der optionalen Parameter der Zuordnung von Nachweisen';
+$string['privacy:metadata:evidence:desccomponent'] = 'Beschreibung der Komponente der Zuordnung von Nachweisen';
+$string['privacy:metadata:evidence:descidentifier'] = 'Identifier der Beschreibung der Zuordnung von Nachweisen';
+$string['privacy:metadata:evidence:grade'] = 'Bewertung, die mit Nachweis verbunden ist';
+$string['privacy:metadata:evidence:note'] = 'Nicht verwendete Notiz für Nachweis';
+$string['privacy:metadata:evidence:url'] = 'Mit Nachweis verbundene URL';
+$string['privacy:metadata:plan:description'] = 'Beschreibung des Lernplans';
+$string['privacy:metadata:plan:duedate'] = 'Fälligkeitsdatum für Lernplan';
+$string['privacy:metadata:plan:name'] = 'Name des Lernplans';
+$string['privacy:metadata:plan:reviewerid'] = 'ID des Prüfers für den Lernplan';
+$string['privacy:metadata:plan:status'] = 'Status des Lernplans';
+$string['privacy:metadata:plan:userid'] = 'ID des Nutzers, der dem Lernplan zugeordnet ist';
+$string['privacy:metadata:timecreated'] = 'Erstelldatum des Datensatzes';
+$string['privacy:metadata:timemodified'] = 'Bearbeitunsgdatum des Datensatzes';
+$string['privacy:metadata:usercomp:grade'] = 'Bewertung für Kompetenz';
+$string['privacy:metadata:usercomp:proficiency'] = 'Ob Fähigkeit erreicht wurde';
+$string['privacy:metadata:usercomp:reviewerid'] = 'ID des Prüfers';
+$string['privacy:metadata:usercomp:status'] = 'Status der Kompetenz';
+$string['privacy:metadata:usercomp:userid'] = 'ID des Nutzers, der Kompetenz hält';
+$string['privacy:metadata:userevidence:description'] = 'Beschreibung des Nachweises';
+$string['privacy:metadata:userevidence:name'] = 'Name des Nachweises für frühere Lernprozesse';
+$string['privacy:metadata:userevidence:url'] = 'URL, mit Nachweis verbunden';
+$string['privacy:metadata:usermodified'] = 'Der Nutzer, der den Datensatz erstellt oder bearbeitet hat';
+$string['privacy:path:plans'] = 'Lernpläne';
+$string['privacy:path:relatedtome'] = 'Mir zugeordnet';
+$string['privacy:path:userevidence'] = 'Nachweis frührerer Lernprozesse';
 $string['pushcourseratingstouserplans'] = 'Kursbewertungen in die individuellen Lernpläne übertragen';
 $string['pushcourseratingstouserplans_desc'] = 'Standardmäßiger Wert zur Aktualisierung von individuellen Lernplänen, wenn die Kurskompetenzen bewertet sind.';
 $string['syncplanscohorts'] = 'Lernpläne aus der Vorlage für globale Gruppen synchronisieren';

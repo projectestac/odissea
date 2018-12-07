@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_random', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['includingsubcategories'] = 'Enthaltene Unterkategorien';
 $string['pluginname'] = 'Zufall';
 $string['pluginnameediting'] = 'Zufallsfrage bearbeiten';
 $string['pluginname_help'] = 'Eine Zufallsfrage ist kein Fragetyp als solcher, sondern sie ist ein Weg zur Einbeziehung einer zufällig gewählten Frage aus einer bestimmten Kategorie in einem Test.';
+$string['privacy:metadata'] = 'Der Zufalls Fragentyp speichert keine persönlichen Daten';
 $string['randomqname'] = 'Zufall ({$a})';
 $string['randomqplusname'] = 'Zufall ({$a} und Unterkategorien)';
 $string['selectedby'] = '{$a->questionname} ausgewählt von {$a->randomname}';

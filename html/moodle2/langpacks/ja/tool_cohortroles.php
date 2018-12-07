@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_cohortroles', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_cohortroles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,14 @@ $string['noassignableroles'] = '現在、ユーザコンテクストで割り当
 $string['nocohortroleassignmentssaved'] = 'コーホートロール割り当ては保存されませんでした。';
 $string['onecohortroleassignmentsaved'] = '1件のコーホートロール割り当てが保存されました。';
 $string['pluginname'] = 'コーホートロール管理';
+$string['privacy:metadata:tool_cohortroles'] = 'コーホートロール管理プラグインはユーザのコーホートロールマッピングを保存します。';
+$string['privacy:metadata:tool_cohortroles:cohortid'] = 'コーホートのIDです。';
+$string['privacy:metadata:tool_cohortroles:id'] = 'コーホートロールマッピングレコードのIDです。';
+$string['privacy:metadata:tool_cohortroles:roleid'] = 'ロールのIDです。';
+$string['privacy:metadata:tool_cohortroles:timecreated'] = 'コーホートロールマッピングの作成日時です。';
+$string['privacy:metadata:tool_cohortroles:timemodified'] = 'コーホートロールマッピングの修正日時です。';
+$string['privacy:metadata:tool_cohortroles:userid'] = 'ユーザのIDです。';
+$string['privacy:metadata:tool_cohortroles:usermodified'] = 'コーホートロールマッピングを最後に修正したユーザのIDです。';
 $string['removecohortroleassignment'] = 'コーホートロール割り当てを削除する';
 $string['removecohortroleassignmentconfirm'] = '本当にこのコーホートロール割り当てを削除してもよろしいですか? 他のすべてのユーザコンテクストにおいて、このユーザのロールが削除されます。';
 $string['selectcohorts'] = 'コーホートを選択する';

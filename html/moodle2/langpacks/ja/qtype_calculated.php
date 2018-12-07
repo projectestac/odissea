@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculated', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,7 @@ $string['pluginnameediting'] = '計算問題の編集';
 $string['pluginname_help'] = '計算問題では小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
 $string['pluginnamesummary'] = '計算問題は数値問題に似ていますが、小テスト受験時、設定された数値がランダムに使用されます。';
 $string['possiblehdr'] = '問題テキスト内のみのワイルドカード';
+$string['privacy:metadata'] = '計算問題タイププラグインはどのような個人データも保存しません。';
 $string['questiondatasets'] = '問題データセット';
 $string['questiondatasets_help'] = '個別の問題で使用されるワイルドカードの問題データセットです。';
 $string['questionstoredname'] = '問題保存名';

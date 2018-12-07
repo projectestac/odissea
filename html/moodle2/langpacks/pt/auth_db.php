@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_db', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,16 +39,16 @@ $string['auth_dbfieldpass'] = 'Nome do campo que contém as senhas';
 $string['auth_dbfieldpass_key'] = 'Campo senha';
 $string['auth_dbfielduser'] = 'Nome do campo que contém os nomes de utilizador';
 $string['auth_dbfielduser_key'] = 'Campo nome de utilizador';
-$string['auth_dbhost'] = 'Máquina onde está alojado o servidor de base de dados. Use um sistema de entrada DSN se estiver a usar ODBC.';
+$string['auth_dbhost'] = 'Computador onde está alojado o servidor de base de dados. Use um sistema de entrada DSN se estiver a usar ODBC. Use uma entrada PDO DSN se estiver a usar PDO.';
 $string['auth_dbhost_key'] = 'Servidor';
 $string['auth_dbinsertuser'] = 'Foi criado o utilizador {$a->name} com o id {$a->id}';
 $string['auth_dbinsertuserduplicate'] = 'Erro ao inserir {$a->username} - o utilizador com este nome já foi criado através do módulo \'{$a->auth}';
 $string['auth_dbinsertusererror'] = 'Erro ao criar o utilizador {$a}';
-$string['auth_dbname'] = 'Nome da própria base de dados. Deixe em branco se estiver a usar um DSN ODBC.';
+$string['auth_dbname'] = 'Nome da própria base de dados. Deixe em branco se estiver a usar um DSN ODBC. Deixe em branco se o seu PDO DSN já contém o nome da base de dados.';
 $string['auth_dbname_key'] = 'Nome da base de dados';
 $string['auth_dbpass'] = 'Senha do utilizador indicado acima';
 $string['auth_dbpass_key'] = 'Senha';
-$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso. O hashing MD5 é útil para se ligar a outras aplicações web comuns, como o PostNuke.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail na Base de Dados externa, e deve executar o admin/cron.php e auth/db/cli/sync_users.php com regularidade. O Moodle enviará um e-mail para os novos utilizadores com uma senha temporária.</p>';
+$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail na Base de Dados externa, e deve executar o admin/cron.php e também auth/db/cli/sync_users.php com regularidade. O Moodle enviará um e-mail para os novos utilizadores com uma senha temporária.</p>';
 $string['auth_dbpasstype_key'] = 'Formato da senha';
 $string['auth_dbreviveduser'] = 'O utilizador {$a->name} com ID {$a->id} foi reativado';
 $string['auth_dbrevivedusererror'] = 'Erro ao reativar o utilizador {$a}';
@@ -59,10 +59,13 @@ $string['auth_dbsuspenduser'] = 'O utilizador {$a->name} com ID {$a->id} foi sus
 $string['auth_dbsuspendusererror'] = 'Erro ao suspender o utilizador {$a}';
 $string['auth_dbsybasequoting'] = 'Usar formato de aspas Sybase';
 $string['auth_dbsybasequotinghelp'] = 'Usar o estilo de Sybase de escaping de aspas - necessário para Oracle, MS SQL e outras bases de dados. Não usar com MySQL!';
+$string['auth_dbsyncuserstask'] = 'Sincronizar tarefa de utilizadores';
 $string['auth_dbtable'] = 'Nome da tabela na base de dados';
 $string['auth_dbtable_key'] = 'Tabela';
 $string['auth_dbtype'] = 'Tipo de base de dados (veja <a href="../lib/adodb/readme.htm#drivers">Documentação do ADOdb</a> para mais informações)';
 $string['auth_dbtype_key'] = 'Base de dados';
+$string['auth_dbupdateusers'] = 'Atualizar utilizadores';
+$string['auth_dbupdateusers_description'] = 'Bem como ao inserir novos utilizadores, atualizar os utilizadores já existentes.';
 $string['auth_dbupdatinguser'] = 'A atualizar o utilizador {$a->name} com ID {$a->id}';
 $string['auth_dbuser'] = 'Nome de utilizador de conta com permissão de leitura na base de dados';
 $string['auth_dbuser_key'] = 'Utilizador da base de dados';
@@ -70,3 +73,4 @@ $string['auth_dbusernotexist'] = 'Não é possível atualizar o utilizador {$a} 
 $string['auth_dbuserstoadd'] = 'Registos de utilizador a adicionar: {$a}';
 $string['auth_dbuserstoremove'] = 'Registos de utilizador a remover: {$a}';
 $string['pluginname'] = 'Base de dados externa';
+$string['privacy:metadata'] = 'O módulo de autenticação Base de dados externa não armazena nenhum dado pessoal.';

@@ -18,8 +18,7 @@ Feature: Add preconfigured tools via teacher interface
   @javascript
   Scenario: Add a tool from a cartridge
     When I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "External tool" to section "1" and I fill the form with:
       | Activity name | Test tool activity 1 |
     And I open "Test tool activity 1" actions menu
@@ -37,8 +36,7 @@ Feature: Add preconfigured tools via teacher interface
   @javascript @_switch_window
   Scenario: Add a preconfigured tool from a cartridge
     When I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "External tool" to section "1" and I fill the form with:
       | Activity name | Test tool activity 1 |
     And I open "Test tool activity 1" actions menu
@@ -57,12 +55,15 @@ Feature: Add preconfigured tools via teacher interface
     And the field "Secure icon URL" matches value "https://download.moodle.org/unittest/test.jpg"
     And I press "Cancel"
     And I switch to the main window
+    And I press "Save and return to course"
+    And I open "Test tool activity 1" actions menu
+    And I choose "Edit settings" in the open action menu
+    And the field "Preconfigured tool" matches value "Placeholder"
 
   @javascript @_switch_window
   Scenario: Add and use a preconfigured tool
     When I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "External tool" to section "1" and I fill the form with:
       | Activity name | Test tool activity 1 |
     And I open "Test tool activity 1" actions menu

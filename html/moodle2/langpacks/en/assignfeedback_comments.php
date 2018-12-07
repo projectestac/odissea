@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,8 @@ $string['default_help'] = 'If set, this feedback method will be enabled by defau
 $string['enabled'] = 'Feedback comments';
 $string['enabled_help'] = 'If enabled, the marker can leave feedback comments for each submission.';
 $string['pluginname'] = 'Feedback comments';
+$string['privacy:commentpath'] = 'Feedback comments';
+$string['privacy:metadata:assignmentid'] = 'Assignment identifier';
+$string['privacy:metadata:commentpurpose'] = 'The comment text.';
+$string['privacy:metadata:gradepurpose'] = 'The grade ID associated with the comment.';
+$string['privacy:metadata:tablesummary'] = 'This stores comments made by the graders as feedback for the student on their submission.';

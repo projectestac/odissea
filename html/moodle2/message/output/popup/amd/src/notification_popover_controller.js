@@ -60,7 +60,7 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/str', 'core/url',
         this.initialLoad = false;
 
         // Let's find out how many unread notifications there are.
-        this.loadUnreadNotificationCount();
+        this.unreadCount = this.root.find(SELECTORS.COUNT_CONTAINER).html();
     };
 
     /**
@@ -189,21 +189,6 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/str', 'core/url',
     };
 
     /**
-     * Ask the server how many unread notifications are left, render the value
-     * as a badge on the menu toggle and update the aria labels on the menu
-     * toggle.
-     *
-     * @method loadUnreadNotificationCount
-     */
-    NotificationPopoverController.prototype.loadUnreadNotificationCount = function() {
-        NotificationRepo.countUnread({useridto: this.userId}).then(function(count) {
-            this.unreadCount = count;
-            this.renderUnreadCount();
-            this.updateButtonAriaLabel();
-        }.bind(this));
-    };
-
-    /**
      * Find the notification element for the given id.
      *
      * @param {int} id
@@ -226,38 +211,42 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/str', 'core/url',
      */
     NotificationPopoverController.prototype.renderNotifications = function(notifications, container) {
         var promises = [];
-        var allhtml = [];
-        var alljs = [];
 
-        if (notifications.length) {
-            $.each(notifications, function(index, notification) {
-                // Determine what the offset was when loading this notification.
-                var offset = this.getOffset() - this.limit;
-                // Update the view more url to contain the offset to allow the notifications
-                // page to load to the correct position in the list of notifications.
-                notification.viewmoreurl = URL.relativeUrl('/message/output/popup/notifications.php', {
-                    notificationid: notification.id,
-                    offset: offset,
-                });
+        $.each(notifications, function(index, notification) {
+            // Determine what the offset was when loading this notification.
+            var offset = this.getOffset() - this.limit;
+            // Update the view more url to contain the offset to allow the notifications
+            // page to load to the correct position in the list of notifications.
+            notification.viewmoreurl = URL.relativeUrl('/message/output/popup/notifications.php', {
+                notificationid: notification.id,
+                offset: offset,
+            });
 
-                var promise = Templates.render('message_popup/notification_content_item', notification);
-                promises.push(promise);
-
-                promise.then(function(html, js) {
-                    allhtml[index] = html;
-                    alljs[index] = js;
-                })
-                .fail(DebugNotification.exception);
-            }.bind(this));
-        }
-
-        return $.when.apply($.when, promises).then(function() {
-            if (notifications.length) {
-                $.each(notifications, function(index) {
-                    container.append(allhtml[index]);
-                    Templates.runTemplateJS(alljs[index]);
-                });
+            // Link to mark read page before loading the actual link.
+            var notificationurlparams = {
+                notificationid: notification.id
+            };
+            if (notification.contexturl) {
+                notificationurlparams.redirecturl = encodeURIComponent(notification.contexturl);
             }
+            notification.contexturl = URL.relativeUrl('message/output/popup/mark_notification_read.php', notificationurlparams);
+
+            var promise = Templates.render('message_popup/notification_content_item', notification)
+            .then(function(html, js) {
+                return {html: html, js: js};
+            });
+            promises.push(promise);
+        }.bind(this));
+
+        return $.when.apply($, promises).then(function() {
+            // Each of the promises in the when will pass its results as an argument to the function.
+            // The order of the arguments will be the order that the promises are passed to when()
+            // i.e. the first promise's results will be in the first argument.
+            $.each(arguments, function(index, argument) {
+                container.append(argument.html);
+                Templates.runTemplateJS(argument.js);
+            });
+            return;
         });
     };
 
@@ -327,26 +316,6 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/str', 'core/url',
     };
 
     /**
-     * Send a request to the server to mark a single notification as read and update
-     * the unread count and unread notification elements appropriately.
-     *
-     * @param {jQuery} element
-     * @return {Promise|boolean}
-     * @method markAllAsRead
-     */
-    NotificationPopoverController.prototype.markNotificationAsRead = function(element) {
-        if (!element.hasClass('unread')) {
-            return false;
-        }
-
-        return NotificationRepo.markAsRead(element.attr('data-id'))
-            .then(function() {
-                this.unreadCount--;
-                element.removeClass('unread');
-            }.bind(this));
-    };
-
-    /**
      * Add all of the required event listeners for this notification popover.
      *
      * @method registerEventListeners
@@ -357,15 +326,21 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/str', 'core/url',
         ]);
 
         // Mark all notifications read if the user activates the mark all as read button.
-        this.root.on(CustomEvents.events.activate, SELECTORS.MARK_ALL_READ_BUTTON, function(e) {
+        this.root.on(CustomEvents.events.activate, SELECTORS.MARK_ALL_READ_BUTTON, function(e, data) {
             this.markAllAsRead();
             e.stopPropagation();
+            data.originalEvent.preventDefault();
         }.bind(this));
 
         // Mark individual notification read if the user activates it.
         this.root.on(CustomEvents.events.activate, SELECTORS.NOTIFICATION_LINK, function(e) {
             var element = $(e.target).closest(SELECTORS.NOTIFICATION);
-            this.markNotificationAsRead(element);
+
+            if (element.hasClass('unread')) {
+                this.unreadCount--;
+                element.removeClass('unread');
+            }
+
             e.stopPropagation();
         }.bind(this));
 

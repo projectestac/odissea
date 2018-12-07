@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_multilangupgrade', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_multilangupgrade', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_multilangupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['multilangupgradeinfo'] = '<p>The multilang filter syntax was changed in
 <p>Example: &lt;span lang="en" class="multilang"&gt;Hello!&lt;/span&gt;&lt;span lang="es" class="multilang"&gt;Hola!&lt;/span&gt;</p>
 <p>Do you want to upgrade the syntax in all existing texts now?</p>';
 $string['pluginname'] = 'Multilang upgrade';
+$string['privacy:metadata'] = 'The Multilang upgrade plugin does not store any personal data.';

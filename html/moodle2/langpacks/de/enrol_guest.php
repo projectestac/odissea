@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'Falscher Gastschlüssel!';
 $string['passwordinvalidhint'] = 'Falscher Gastschlüssel!<br />(Hinweis: Das erste Zeichen ist \'{$a}\')';
 $string['pluginname'] = 'Gastzugang';
 $string['pluginname_desc'] = 'Der Gastzugang ermöglicht einen temporären Kurszugang. Nutzer/innen werden nicht eingeschrieben.';
+$string['privacy:metadata'] = 'Das Gastzugangsplugin speichert keine persönlichen Daten.';
 $string['requirepassword'] = 'Gastschlüssel notwendig';
 $string['requirepassword_desc'] = 'Der Gastschlüssel ist bei neuen Kursen notwendig und kann bei vorhandenen Kursen nicht entfernt werden';
 $string['showhint'] = 'Hinweis anzeigen';

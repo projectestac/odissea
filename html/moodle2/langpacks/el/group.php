@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,8 +31,8 @@ $string['adduserstogroup'] = 'Προσθήκη/διαγραφή χρηστών';
 $string['allocateby'] = 'Κατανομή μελών';
 $string['anygrouping'] = '[Οποιαδήποτε ομαδοποίηση]';
 $string['autocreategroups'] = 'Αυτόματη δημιουργία ομάδων';
-$string['backtogroupings'] = 'Επιστροφή στις ομαδοποιήσεις';
-$string['backtogroups'] = 'Επιστροφή στις ομάδες';
+$string['backtogroupings'] = 'Πίσω στις ομαδοποιήσεις';
+$string['backtogroups'] = 'Πίσω στις ομάδες';
 $string['badnamingscheme'] = 'Πρέπει να περιέχει ακριβώς έναν \'@\' ή έναν \'#\' χαρακτήρα';
 $string['byfirstname'] = 'Αλφαβητικά βάσει ονόματος, επώνυμου';
 $string['byidnumber'] = 'Αλφαβητικά βάσει αναγνωριστικού αριθμού';
@@ -66,7 +66,7 @@ $string['errorselectsome'] = 'Παρακαλούμε επιλέξτε μια ή 
 $string['evenallocation'] = 'Σημείωση: Για την διατήρηση της ομαλότητας στην κατανομή ομάδας, ο πραγματικός αριθμός των μελών ανά ομάδα διαφέρει από τον αριθμό που ορίσατε.';
 $string['existingmembers'] = 'Υπάρχοντα μέλη: {$a}';
 $string['filtergroups'] = 'Φιλτράρισμα ομάδων με:';
-$string['group'] = 'Ομάδα';
+$string['group'] = 'Ομάδα συμμετεχόντων';
 $string['groupaddedsuccesfully'] = 'Η ομάδα {$a} προστέθηκε επιτυχημένα';
 $string['groupby'] = 'Προσδιορισμός';
 $string['groupdescription'] = 'Περιγραφή ομάδας';
@@ -179,7 +179,7 @@ $string['newpicture_help'] = '<p align="center"><b>Φορτώνοντας μια
 $string['noallocation'] = 'Καθόλου κατανομή';
 $string['nogroups'] = 'Δεν υπάρχουν εγκατεστημένες ομάδες σε αυτό το μάθημα ακόμα';
 $string['nogroupsassigned'] = 'Χωρίς ανάθεση ομάδων';
-$string['nopermissionforcreation'] = 'Αδυναμία δημιουργίας της ομάδας "{$a}" καθώς δεν έχετε τα απαιτούμενα δικαιώματα';
+$string['nopermissionforcreation'] = 'Αποτυχία δημιουργίας της ομάδας "{$a}" καθώς δεν έχετε τα απαιτούμενα δικαιώματα';
 $string['nosmallgroups'] = 'Αποτροπή τελευταίας μικρής ομάδας';
 $string['notingrouping'] = '[Όχι σε ομαδοποίηση]';
 $string['nousersinrole'] = 'Δεν υπάρχουν κατάλληλοι χρήστες στον επιλεγμένο ρόλο';

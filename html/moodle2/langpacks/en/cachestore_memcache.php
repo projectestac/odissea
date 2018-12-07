@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcache', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['prefix_help'] = 'This prefix is used for all key names on the memcache 
 * If you only have one Moodle instance using this server, you can leave this value default.
 * Due to key length restrictions, a maximum of 5 characters is permitted.';
 $string['prefixinvalid'] = 'Invalid prefix. You can only use a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcache'] = 'The Memcache cachestore plugin stores data briefly as part of its caching functionality. This data is stored on an Memcache server where data is regularly removed.';
+$string['privacy:metadata:memcache:data'] = 'The various data stored in the cache';
 $string['servers'] = 'Servers';
 $string['serversclusterinvalid'] = 'Exactly one server is required when clustering is enabled.';
 $string['servers_help'] = 'This sets the servers that should be utilised by this memcache adapter.
@@ -52,7 +54,7 @@ servername:port:weight
 </pre>
 
 If *Enable clustered servers* is enabled below, there must be only one server listed here. This would usually be a name that always resolves to the local machine, like 127.0.0.1 or localhost.';
-$string['sessionhandlerconflict'] = 'Warning: A memcache instance ({$a}) has being configured to use the same memcached server as sessions. Purging all caches will lead to sessions also being purged.';
+$string['sessionhandlerconflict'] = 'Warning: A memcache instance ({$a}) has being configured to use the same memcache server as sessions. Purging all caches will lead to sessions also being purged.';
 $string['setservers'] = 'Set Servers';
 $string['setservers_help'] = 'This is the list of servers that will updated when data is modified in the cache. Generally the fully qualified name of each server in the pool.
 It **must** include the server listed in *Servers* above, even if by a different hostname.

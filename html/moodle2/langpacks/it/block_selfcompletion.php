@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_selfcompletion', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_selfcompletion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Hai già confermato di aver completato questo corso';
 $string['completecourse'] = 'Conferma il completamento del corso';
 $string['pluginname'] = 'Conferma di completamento';
+$string['privacy:metadata'] = 'Il blocco Conferma di completamento visualizza solamente dati provenienti da altre parti.';
 $string['selfcompletion:addinstance'] = 'Aggiungere blocco Conferma di completamento';
 $string['selfcompletionnotenabled'] = 'In questo corso non sono stati abilitati criteri per la conferma personale del completamento';

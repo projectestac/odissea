@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message_jabber', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   message_jabber
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,3 +38,7 @@ $string['jabberserver'] = 'Server Jabber';
 $string['jabberusername'] = 'User name Jabber';
 $string['notconfigured'] = 'Il server Jabber non è stato configurato, non è possibile inviare messaggi jabber.';
 $string['pluginname'] = 'Jabber';
+$string['privacy:metadata:contexturl'] = 'L\'URL per visualizzare l\'evento.';
+$string['privacy:metadata:smallmessage'] = 'La versione ridotta del messaggio';
+$string['privacy:metadata:userfrom'] = 'L\'utente che ha inviato il messaggio di notifica.';
+$string['privacy:metadata:userto'] = 'Il destinatario del messaggio di notifica.';

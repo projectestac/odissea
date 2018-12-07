@@ -50,7 +50,7 @@ class mod_jclic_lib_testcase extends mod_jclic_base_testcase {
         $this->setUser($this->editingteachers[0]);
 
         $data = array();
-        $data['url'] = 'http://clic.xtec.cat/projects/colour2/jclic/colour2.jclic.zip';
+        $data['url'] = 'https://clic.xtec.cat/projects/colour2/jclic/colour2.jclic.zip';
         $data['skin'] = '@orange.xml';
         $data['maxattempts'] = 1;
         $data['width'] = 800;

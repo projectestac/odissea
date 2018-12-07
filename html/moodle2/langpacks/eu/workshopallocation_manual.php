@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_manual', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,5 @@ $string['allocationexists'] = 'Esleipena dagoeneko badago';
 $string['areyousuretodeallocate'] = 'Ziur al zaude aukeratutako ebaluaketaren esleipena kendu nahi duzula?';
 $string['areyousuretodeallocategraded'] = 'Dagoeneko kalifikatu den ebaluazioa ezabatuko duzu. Ziur al zaude ezabatu nahi duzula?';
 $string['pluginname'] = 'Eskuzko esleipena';
+$string['privacy:metadata:preference:perpage'] = 'Erabiltzaeilak orri bakoitzean ikusi nahi duen esleitutako ebaluazio kopurua.';
 $string['showallparticipants'] = 'Partaide guztiak erakutsi';

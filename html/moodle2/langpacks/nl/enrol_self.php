@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_self', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,6 +92,7 @@ $string['passwordinvalidhint'] = 'Die \'Cursussleutel\' was niet correct. Probee
 (Hier een hint: Hij begint met \'{$a}\')';
 $string['pluginname'] = 'Zelf aanmelden';
 $string['pluginname_desc'] = 'De zelf aanmelden-plugin maakt het voor gebruikers mogelijk te kiezen in welke cursussen ze gaan deelnemen. De cursussen kunnen beschermd zijn door een cursussleutel. Intern wordt de aanmelding gedaan via de manuele aanmeldingsplugin die moet ingeschakeld zijn in dezelfde cursus.';
+$string['privacy:metadata'] = 'De zelf aanmeldenplugin bewaart geen persoonlijke gegevens.';
 $string['requirepassword'] = 'Aanmeldingssleutel vereist';
 $string['requirepassword_desc'] = 'Vereis aanmeldingssleutel voor nieuwe cursussen en verhinder het verwijderen van de sleutel bij bestaande cursussen';
 $string['role'] = 'Standaard toegewezen rol';
@@ -101,7 +102,7 @@ $string['self:manage'] = 'Beheer aangemelde gebruikers';
 $string['self:unenrol'] = 'Gebruikers afmelden van de cursus';
 $string['self:unenrolself'] = 'Jezelf afmelden van de cursus';
 $string['sendcoursewelcomemessage'] = 'Stuur welkomstboodschap voor cursus';
-$string['sendcoursewelcomemessage_help'] = 'Wanneer een gebruiker zichzelf aanmeldt in de cursus, kan er een welkomstbericht gestuurd worden via e-mail. Als de afzender de cursus contactpersoon is (standaard de leraar) en er zijn meerdere gebruikers met die rol, dan wordt deze e-mail verstuurd van de eerste gebruiker die deze rol gekregen heeft.';
+$string['sendcoursewelcomemessage_help'] = 'Gebruikers kunnen een welkomstboodschap via e-mail krijgen wanneer zij zichzelf aanmelden bij een cursus. Indien deze verstuurd wordt vanaf de account van de contactpersoon van de cursus (standaard de leraar) en er zijn meer gebruikers met die rol, dan wordt de e-mail verstuurd vanaf de eerste gebruiker die die rol gekregen heeft.';
 $string['showhint'] = 'Toon hint';
 $string['showhint_desc'] = 'Toon de eerste letter van de gast toegangssleutel';
 $string['status'] = 'Bestaande aanmeldingen toestaan';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_usersessions', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   report_usersessions
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'Mijn actieve sessies';
 $string['navigationlink'] = 'Browsersessies';
 $string['pluginname'] = 'Sessie-rapport van gebruiker';
+$string['privacy:metadata'] = 'De gebruikerssessierapport-plugin bewaart geen persoonlijke gegevens.';
 $string['thissession'] = 'Huidige sessie';
 $string['usersessions:manageownsessions'] = 'Beheer eigen browser-sessies';

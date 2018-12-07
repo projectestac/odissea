@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Unerwarteter Fehler: verfügbare Aktualisie
 $string['filterall'] = 'Alle zeigen';
 $string['filtercontribonly'] = 'Nur zusätzliche Plugins zeigen';
 $string['filterupdatesonly'] = 'Nur Aktualisierbare zeigen';
+$string['isenabled'] = 'Aktiviert?';
 $string['misdepinfoplugin'] = 'Plugin-Info';
 $string['misdepinfoversion'] = 'Versionsinfo';
 $string['misdepsavail'] = 'Verfügbare fehlende Abhängigkeiten';
@@ -102,6 +103,7 @@ $string['status_new'] = 'Wird installiert';
 $string['status_nodb'] = 'Keine Datenbank';
 $string['status_upgrade'] = 'Wird aktualisiert';
 $string['status_uptodate'] = 'Ist installiert';
+$string['supportedconversions'] = 'Unterstützte Dokumentkonverter';
 $string['supportedmoodleversions'] = 'Unterstützte Moodle-Versionen';
 $string['systemname'] = 'Identifizierung';
 $string['type_antivirus'] = 'Antivirus Plugin';
@@ -127,6 +129,9 @@ $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editoren';
 $string['type_enrol'] = 'Einschreibemethode';
 $string['type_enrol_plural'] = 'Einschreibemethoden';
+$string['type_fileconverter'] = 'Dokumentkonverter';
+$string['type_fileconvertermanage'] = 'Dokumentkonverter verwalten';
+$string['type_fileconverter_plural'] = 'Dokumentkonverter';
 $string['type_filter'] = 'Filter';
 $string['type_filter_plural'] = 'Filter';
 $string['type_format'] = 'Kursformat';
@@ -145,6 +150,8 @@ $string['type_media'] = 'MediaPlayer';
 $string['type_media_plural'] = 'MediaPlayer';
 $string['type_message'] = 'Mitteilungskanal';
 $string['type_message_plural'] = 'Mitteilungskanäle';
+$string['type_mlbackend'] = 'Maschinelles Lernen Backend';
+$string['type_mlbackend_plural'] = 'Maschinelles Lernen Backends';
 $string['type_mnetservice'] = 'MNet Service';
 $string['type_mnetservice_plural'] = 'MNet Services';
 $string['type_mod'] = 'Aktivitäten';

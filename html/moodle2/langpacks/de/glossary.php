@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,6 +90,7 @@ $string['comments'] = 'Kommentare';
 $string['commentson'] = 'Kommentare eingeschaltet';
 $string['commentupdated'] = 'Der Kommentar wurde geändert.';
 $string['completionentries'] = 'Teilnehmer/innen müssen Einträge anlegen:';
+$string['completionentriesdesc'] = 'Teilnehmer/in muss mindestens {$a} Einträge anlegen';
 $string['completionentriesgroup'] = 'Einträge notwendig';
 $string['concept'] = 'Begriff';
 $string['concepts'] = 'Begriffe';
@@ -110,6 +111,7 @@ $string['defaultsortorder'] = 'Standardsortierung';
 $string['definition'] = 'Definition';
 $string['definitions'] = 'Definitionen';
 $string['deleteentry'] = 'Eintrag löschen';
+$string['deleteentrya'] = 'Eintrag löschen: {$a}';
 $string['deletenotenrolled'] = 'Einträge von eingeschriebenen Nutzer/innen löschen';
 $string['deletingcomment'] = 'Lösche Kommentar';
 $string['deletingnoneemptycategory'] = 'Wenn diese Kategorie gelöscht wird, werden die Einträge daraus nicht gelöscht. Sie werden als \'keiner Kategorie zugeordnet\' gekennzeichnet.';
@@ -150,6 +152,7 @@ $string['editalways_help'] = 'Diese Option legt fest, wie Teilnehmer/innen ihre 
 * Nein - Einträge sind nur im festgelegten Zeitraum bearbeitbar (standardmäßig 30 min)';
 $string['editcategories'] = 'Kategorien bearbeiten';
 $string['editentry'] = 'Eintrag bearbeiten';
+$string['editentrya'] = 'Eintrag bearbeiten: {$a}';
 $string['editingcomment'] = 'Kommentar bearbeiten';
 $string['entbypage'] = 'Einträge pro Seite';
 $string['entries'] = 'Einträge';
@@ -225,6 +228,10 @@ $string['importedentries'] = 'Importierte Einträge';
 $string['importentries'] = 'Einträge importieren';
 $string['importentriesfromxml'] = 'Einträge aus XML-Datei importieren';
 $string['includegroupbreaks'] = 'Gruppentrennung einbeziehen';
+$string['indicator:cognitivedepth'] = 'Glossar kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Glossaraktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Glossar sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Glossaraktivität erreicht hat.';
 $string['isglobal'] = 'Kursübergreifendes Glossar 
 ';
 $string['isglobal_help'] = 'Ein kursübergreifendes Glossar enthält Einträge, die im gesamten Moodle verlinkt werden. Ist ein Glossar nicht global, werden die Einträge nur lokal im Kurs verlinkt. Ausschließlich Administrator/innen können Glossare als kursübergreifend definieren.';
@@ -268,9 +275,22 @@ $string['popupformat'] = 'Popup-Format';
 $string['print'] = 'Drucken';
 $string['printerfriendly'] = 'Druckfreundliche Version';
 $string['printviewnotallowed'] = 'Druckansicht ist nicht erlaubt.';
+$string['privacy'] = 'Datenschutz der Ergebnisse';
+$string['privacy:metadata:core_comments'] = 'Kommentare für Glossareinträge werden im core_comment System gespeichert';
+$string['privacy:metadata:core_files'] = 'Dateien als Anhänge zu Forenbeiträgen werden im core_files System gespeichert';
+$string['privacy:metadata:core_rating'] = 'Bewertungen zu Glossraeinträgen werden im core_ratings-System gespeichert.';
+$string['privacy:metadata:core_tag'] = 'Tags zu Glossareinträgen werden im core_rating-System gespeichert.';
+$string['privacy:metadata:glossary_entries'] = 'Informationen  über Nutzereinträge in einer Glossaraktivität';
+$string['privacy:metadata:glossary_entries:attachment'] = 'Anhänge am Eintrag eines Nutzers';
+$string['privacy:metadata:glossary_entries:concept'] = 'Konzept des hinzugefügten Nutzereintrags';
+$string['privacy:metadata:glossary_entries:definition'] = 'Definition des Nutzereintrags';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'ID der Glossaraktivität, in dem der Nutzereintrag vorgenommen wurde';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'Zeitpunkt wann Glossareintrag vom Nutzer bearbeitet wurde';
+$string['privacy:metadata:glossary_entries:userid'] = 'ID des Nutzers der Glossareintrag erstellt hat';
 $string['question'] = 'Frage';
 $string['rejectedentries'] = 'Abgelehnte Einträge';
 $string['rejectionrpt'] = 'Übersicht über abgelehnte Einträge';
+$string['removeallglossarytags'] = 'Alle Glossarschlagwörter entfernen';
 $string['resetglossaries'] = 'Einträge löschen von';
 $string['resetglossariesall'] = 'Einträge aus allen Glossaren löschen';
 $string['rssarticles'] = 'Anzahl neuer RSS-Artikel ';
@@ -295,6 +315,8 @@ $string['sortchronogically'] = 'Sortiere chronologisch';
 $string['special'] = '@';
 $string['standardview'] = 'Alphabetisch';
 $string['studentcanpost'] = 'Teilnehmer/innen können eigene Einträge anlegen, bearbeiten und löschen.';
+$string['tagarea_glossary_entries'] = 'Glossareinträge';
+$string['tagsdeleted'] = 'Glossarschlagwörter wurden gelöscht';
 $string['totalentries'] = 'Gesamtzahl der Einträge';
 $string['usedynalink'] = 'Automatisch verlinken';
 $string['usedynalink_help'] = 'Wenn diese Option aktiviert ist, wird beim Hinzufügen eines neuen Eintrages die Option "Eintrag automatisch verlinken" angezeigt.

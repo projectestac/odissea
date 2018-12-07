@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = '高度';
 $string['alterstatus'] = 'ステータスを変更する';
 $string['altertimeend'] = '終了日を変更する';
 $string['altertimestart'] = '開始日を変更する';
 $string['assignrole'] = 'ロールを割り当てる';
+$string['assignroles'] = 'ロールを割り当てる';
 $string['browsecohorts'] = 'コーホートを閲覧する';
 $string['browseusers'] = 'ユーザを閲覧する';
 $string['confirmbulkdeleteenrolment'] = '本当にこれらのユーザ登録を削除してもよろしいですか?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = '選択されたユーザの登録を削除す�
 $string['editselectedusers'] = '選択したユーザの登録を編集する';
 $string['enrolledincourserole'] = '「 {$a->course} 」に「 {$a->role} 」として登録されました。';
 $string['enrolusers'] = 'ユーザを登録する';
+$string['enroluserscohorts'] = '選択したユーザおよびコーホートを登録する';
 $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除時、コースからユーザデータおよび設定が削除されることに留意してください。';
 $string['expirymessageenrolledbody'] = '{$a->user} さん
@@ -64,6 +67,10 @@ $string['messageprovider:expiry_notification'] = '手動登録期限切れ通知
 $string['now'] = '今すぐ';
 $string['pluginname'] = '手動登録';
 $string['pluginname_desc'] = '手動登録プラグインではコース管理設定内のリンクを使用してユーザが教師等の適切なパーミッションを割り当てたユーザを手動で登録できるようにします。自己登録等の登録プラグインで必要とするため、通常、このプラグインは有効にされています。';
+$string['privacy:metadata'] = '手動登録プラグインはどのような個人データも保存しません。';
+$string['selectcohorts'] = 'コーホートを選択する';
+$string['selection'] = '選択';
+$string['selectusers'] = 'ユーザを選択する';
 $string['status'] = '手動登録を有効にする';
 $string['status_desc'] = '内部登録済みユーザがコースにアクセスできるようにします。多くの場合、この設定は有効のままにすべきです。';
 $string['statusdisabled'] = '無効';

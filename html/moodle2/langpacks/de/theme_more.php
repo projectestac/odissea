@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_more', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['logodesc'] = 'Dieses Logo wird nur im Kopfbereich der Startseite und de
 <pre>div.logo {height: 100px;}</pre>
 Wenn die Höhe einen anderen Wert als 100 Pixel hat, passen Sie dies entsprechend an. Wenn hier kein Logo hinzugefügt wird, wird das Logo unter Erscheinung > Logos genutzt.';
 $string['pluginname'] = 'More';
+$string['privacy:metadata'] = 'Das Design More speichert keine personenbezogenen Nutzerdaten.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
 $string['secondarybackground'] = 'Sekundäre Hintergrundfarbe';

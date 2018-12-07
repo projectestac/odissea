@@ -16,7 +16,8 @@ $temp->add(new admin_setting_configexecutable('pathtodu', new lang_string('patht
 $temp->add(new admin_setting_configexecutable('aspellpath', new lang_string('aspellpath', 'admin'), new lang_string('edhelpaspellpath'), ''));
 $temp->add(new admin_setting_configexecutable('pathtodot', new lang_string('pathtodot', 'admin'), new lang_string('pathtodot_help', 'admin'), ''));
 $temp->add(new admin_setting_configexecutable('pathtogs', new lang_string('pathtogs', 'admin'), new lang_string('pathtogs_help', 'admin'), '/usr/bin/gs'));
-$temp->add(new admin_setting_configexecutable('pathtounoconv', new lang_string('pathtounoconv', 'admin'), new lang_string('pathtounoconv_help', 'admin'), '/usr/bin/unoconv'));
+$temp->add(new admin_setting_configexecutable('pathtopython', new lang_string('pathtopython', 'admin'),
+    new lang_string('pathtopythondesc', 'admin'), ''));
 $ADMIN->add('server', $temp);
 //XTEC ************ AFEGIT - To let access only to xtecadmin user
 //2012.06.20  @sarjona
@@ -247,16 +248,12 @@ $ADMIN->add('server', $temp);
 //XTEC ************ AFEGIT - To let access only to xtecadmin user
 //2012.06.20  @sarjona
 }
-//************ FI    
-
+//************ FI
 
 //XTEC ************ AFEGIT - To let access only to xtecadmin user
 //2012.06.20  @sarjona
 if (get_protected_agora() ) {
-//************ FI    
-$ADMIN->add('server', new admin_externalpage('adminregistration', new lang_string('hubs', 'admin'),
-    "$CFG->wwwroot/$CFG->admin/registration/index.php"));
-
+//************ FI
 // E-mail settings.
 $ADMIN->add('server', new admin_category('email', new lang_string('categoryemail', 'admin')));
 

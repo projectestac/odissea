@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Advanced';
 $string['alterstatus'] = 'Alter status';
 $string['altertimeend'] = 'Alter end time';
 $string['altertimestart'] = 'Alter start time';
 $string['assignrole'] = 'Assign role';
+$string['assignroles'] = 'Assign roles';
 $string['browsecohorts'] = 'Browse cohorts';
 $string['browseusers'] = 'Browse users';
 $string['confirmbulkdeleteenrolment'] = 'Are you sure you want to delete these users enrolments?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Delete selected user enrolments';
 $string['editselectedusers'] = 'Edit selected user enrolments';
 $string['enrolledincourserole'] = 'Enrolled in "{$a->course}" as "{$a->role}"';
 $string['enrolusers'] = 'Enrol users';
+$string['enroluserscohorts'] = 'Enrol selected users and cohorts';
 $string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['expirymessageenrolledbody'] = 'Dear {$a->user},
@@ -64,6 +67,10 @@ $string['messageprovider:expiry_notification'] = 'Manual enrolment expiry notifi
 $string['now'] = 'Now';
 $string['pluginname'] = 'Manual enrolments';
 $string['pluginname_desc'] = 'The manual enrolments plugin allows users to be enrolled manually via a link in the course administration settings, by a user with appropriate permissions such as a teacher. The plugin should normally be enabled, since certain other enrolment plugins, such as self enrolment, require it.';
+$string['privacy:metadata'] = 'The Manual enrolments plugin does not store any personal data.';
+$string['selectcohorts'] = 'Select cohorts';
+$string['selection'] = 'Selection';
+$string['selectusers'] = 'Select users';
 $string['status'] = 'Enable manual enrolments';
 $string['status_desc'] = 'Allow course access of internally enrolled users. This should be kept enabled in most cases.';
 $string['statusdisabled'] = 'Disabled';

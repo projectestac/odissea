@@ -45,12 +45,17 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
             $this->registerNamedXpath($name, $xpath);
         }
 
-        // Call the constructor after adding any new selector or replacement values.
+        foreach (self::$customreplacements as $from => $tos) {
+            $this->registerReplacement($from, implode(' or ', $tos));
+        }
+
+        $this->registerReplacement('%iconMatch%', "(contains(concat(' ', @class, ' '), ' icon ') or name() = 'img')");
+        $this->registerReplacement('%imgAltMatch%', './/*[%iconMatch% and (%altMatch% or %titleMatch%)]');
         parent::__construct();
     }
 
     /**
-     * @var Allowed types when using text selectors arguments.
+     * @var array Allowed types when using text selectors arguments.
      */
     protected static $allowedtextselectors = array(
         'activity' => 'activity',
@@ -58,6 +63,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
         'css_element' => 'css_element',
         'dialogue' => 'dialogue',
         'fieldset' => 'fieldset',
+        'icon' => 'icon',
         'list_item' => 'list_item',
         'message_area_region' => 'message_area_region',
         'message_area_region_content' => 'message_area_region_content',
@@ -71,7 +77,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     );
 
     /**
-     * @var Allowed types when using selector arguments.
+     * @var array Allowed types when using selector arguments.
      */
     protected static $allowedselectors = array(
         'activity' => 'activity',
@@ -84,6 +90,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
         'fieldset' => 'fieldset',
         'file' => 'file',
         'filemanager' => 'filemanager',
+        'icon' => 'icon',
         'link' => 'link',
         'link_or_button' => 'link_or_button',
         'list_item' => 'list_item',
@@ -102,6 +109,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
         'text' => 'text',
         'xpath_element' => 'xpath_element',
         'form_row' => 'form_row',
+        'autocomplete_selection' => 'autocomplete_selection',
     );
 
     /**
@@ -110,7 +118,7 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
      * xpaths that represents that names and includes a placeholder that
      * will be replaced by the locator. These are Moodle's own xpaths.
      *
-     * @var XPaths for moodle elements.
+     * @var array XPaths for moodle elements.
      */
     protected static $moodleselectors = array(
         'activity' => <<<XPATH
@@ -130,6 +138,21 @@ XPATH
     normalize-space(descendant::div[@class='hd']) = %locator%]
         |
 .//div[@data-region='modal' and descendant::*[@data-region='title'] = %locator%]
+        |
+.//div[
+        contains(concat(' ', normalize-space(@class), ' '), ' modal-content ')
+            and
+        normalize-space(descendant::h4[contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')]) = %locator%
+    ]
+        |
+.//div[
+        contains(concat(' ', normalize-space(@class), ' '), ' modal ')
+            and
+        normalize-space(descendant::*[contains(concat(' ', normalize-space(@class), ' '), ' modal-header ')] = %locator%)
+    ]
+XPATH
+        , 'icon' => <<<XPATH
+.//*[contains(concat(' ', normalize-space(@class), ' '), ' icon ') and ( contains(normalize-space(@title), %locator%))]
 XPATH
         , 'list_item' => <<<XPATH
 .//li[contains(normalize-space(.), %locator%) and not(.//li[contains(normalize-space(.), %locator%)])]
@@ -169,6 +192,9 @@ XPATH
         , 'message_area_action' => <<<XPATH
 .//div[@data-region='messaging-area']/descendant::*[@data-action = %locator%]
 XPATH
+        , 'autocomplete_selection' => <<<XPATH
+.//div[contains(concat(' ', normalize-space(@class), ' '), concat(' ', 'form-autocomplete-selection', ' '))]/span[@role='listitem'][contains(normalize-space(.), %locator%)]
+XPATH
     );
 
     protected static $customselectors = [
@@ -194,6 +220,22 @@ XPATH
 .//*[@data-passwordunmask='wrapper']
     /descendant::input[@id = %locator% or @id = //label[contains(normalize-space(string(.)), %locator%)]/@for]
 XPATH
+        ],
+    ];
+
+    /**
+     * Mink comes with a number of named replacements.
+     * Sometimes we want to add our own.
+     *
+     * @var array XPaths for moodle elements.
+     */
+    protected static $customreplacements = [
+        '%buttonMatch%' => [
+            'upstream' => '%idOrNameMatch% or %valueMatch% or %titleMatch%',
+            'aria' => '%ariaLabelMatch%',
+        ],
+        '%ariaLabelMatch%' => [
+            'moodle' => 'contains(./@aria-label, %locator%)',
         ],
     ];
 

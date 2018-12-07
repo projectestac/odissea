@@ -52,33 +52,64 @@ class yesno extends base {
     }
 
     /**
+     * Override this and return true if the question type allows dependent questions.
+     * @return boolean
+     */
+    public function allows_dependents() {
+        return true;
+    }
+
+    /**
+     * True if question type supports feedback options. False by default.
+     */
+    public function supports_feedback() {
+        return true;
+    }
+
+    /**
+     * True if the question supports feedback and has valid settings for feedback. Override if the default logic is not enough.
+     */
+    public function valid_feedback() {
+        return $this->required();
+    }
+
+    /**
+     * Get the maximum score possible for feedback if appropriate. Override if default behaviour is not correct.
+     * @return int | boolean
+     */
+    public function get_feedback_maxscore() {
+        if ($this->valid_feedback()) {
+            $maxscore = 1;
+        } else {
+            $maxscore = false;
+        }
+        return $maxscore;
+    }
+
+    /**
+     * Returns an array of dependency options for the question as an array of id value / display value pairs. Override in specific
+     * question types that support this.
+     * @return array An array of valid pair options.
+     */
+    protected function get_dependency_options() {
+        $options = [];
+        if ($this->name != '') {
+            $options[$this->id . ',0'] = $this->name . '->' . get_string('yes');
+            $options[$this->id . ',1'] = $this->name . '->' . get_string('no');
+        }
+        return $options;
+    }
+
+    /**
      * Return the context tags for the check question template.
      * @param object $data
-     * @param string $descendantdata
+     * @param array $dependants Array of all questions/choices depending on this question.
      * @param boolean $blankquestionnaire
      * @return object The check question context tags.
      *
      */
-    protected function question_survey_display($data, $descendantsdata, $blankquestionnaire=false) {
+    protected function question_survey_display($data, $dependants=[], $blankquestionnaire=false) {
         global $idcounter;  // To make sure all radio buttons have unique ids. // JR 20 NOV 2007.
-
-        // To display or hide dependent questions on Preview page.
-        $onclickdepend = [];
-        if ($descendantsdata) {
-            $descendants = implode(',', $descendantsdata['descendants']);
-            if (isset($descendantsdata['choices'][0])) {
-                $choices['y'] = implode(',', $descendantsdata['choices'][0]);
-            } else {
-                $choices['y'] = '';
-            }
-            if (isset($descendantsdata['choices'][1])) {
-                $choices['n'] = implode(',', $descendantsdata['choices'][1]);
-            } else {
-                $choices['n'] = '';
-            }
-            $onclickdepend['y'] = 'depend(\''.$descendants.'\', \''.$choices['y'].'\')';
-            $onclickdepend['n'] = 'depend(\''.$descendants.'\', \''.$choices['n'].'\')';
-        }
 
         $stryes = get_string('yes');
         $strno = get_string('no');
@@ -94,7 +125,6 @@ class yesno extends base {
         $options = [$val1 => $stryes, $val2 => $strno];
         $name = 'q'.$this->id;
         $checked = (isset($data->{'q'.$this->id}) ? $data->{'q'.$this->id} : '');
-        $output = '';
         $ischecked = false;
 
         $choicetags = new \stdClass();
@@ -115,13 +145,10 @@ class yesno extends base {
             if ($blankquestionnaire) {
                 $option->disabled = true;
             }
-            if (isset($onclickdepend[$value])) {
-                $option->onclick = $onclickdepend[$value];
-            }
             $choicetags->qelements->choice[] = $option;
         }
         // CONTRIB-846.
-        if ($this->required == 'n') {
+        if (!$this->required()) {
             $id = '';
             $htmlid = 'auto-rb'.sprintf('%04d', ++$idcounter);
             $content = get_string('noanswer', 'questionnaire');
@@ -129,12 +156,9 @@ class yesno extends base {
             $option->name = $name;
             $option->id = $htmlid;
             $option->value = $id;
-            $option->label = format_text($content, FORMAT_HTML);
+            $option->label = format_text($content, FORMAT_HTML, ['noclean' => true]);
             if (!$ischecked && !$blankquestionnaire) {
                 $option->checked = true;
-            }
-            if ($onclickdepend) {
-                $option->onclick = 'depend(\''.$descendants.'\', \'\')';
             }
             $choicetags->qelements->choice[] = $option;
         }

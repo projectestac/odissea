@@ -50,7 +50,7 @@ if (isset($_REQUEST['wsdl']) || isset($_REQUEST['WSDL'])) {
         $server->addFunction(SOAP_FUNCTIONS_ALL);
 
         $server->handle();
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         log_to_file("wsSeguimiento: WSDL initialization - Exception = " . $e->getMessage());
     }
 }

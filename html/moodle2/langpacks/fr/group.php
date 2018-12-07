@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,7 @@ $string['deletegroupsconfirm'] = 'Voulez-vous vraiment supprimer les groupes sui
 $string['deleteselectedgroup'] = 'Supprimer le groupe sélectionné';
 $string['editgroupingsettings'] = 'Modifier les réglages du groupement';
 $string['editgroupsettings'] = 'Modifier les réglages du groupe';
+$string['editusersgroupsa'] = 'Modifier les groupes de {$a}';
 $string['enrolmentkey'] = 'Clef d\'inscription';
 $string['enrolmentkeyalreadyinuse'] = 'Cette clef d\'inscription est déjà utilisée pour un autre groupe.';
 $string['enrolmentkey_help'] = 'Une clef d\'inscription permet de donner accès à un cours aux seuls utilisateurs la détenant. Si  une clef d\'inscription de groupe est spécifiée, non seulement cette clef permettra l\'accès au cours, mais elle inscrira simultanément l\'utilisateur utilisant cette clef comme membre de ce groupe.
@@ -111,11 +112,11 @@ $string['groupmodeforce'] = 'Imposer le mode de groupe';
 $string['groupmodeforce_help'] = 'Lorsque le type des groupes est imposé, le type des groupes défini dans le cours est appliqué à chaque activité du cours. Le type des groupes défini dans les activités est ignoré.';
 $string['groupmode_help'] = 'Ce réglage a trois options :
 
-* Pas de groupe - il n\'y a pas de groupes, tout le monde fait partie d\'une seule communauté ;
-* Groupes séparés - chaque groupe ne peut voir que son propre groupe, les autres groupes étant invisibles ;
-* Groupes visibles - chaque groupe travaille uniquement dans son propre groupe, mais les autres groupes sont visibles.
+* Pas de groupe ;
+* Groupes séparés - chaque membre du groupe ne peut voir que son propre groupe, les autres groupes étant invisibles ;
+* Groupes visibles - chaque membre du groupe travaille uniquement dans son propre groupe, mais peut aussi voir les autres groupes.
 
-Le type de groupe défini au niveau du cours est le type par défaut pour toutes les activités du cours. Chaque activité qui supporte les groupes peut définir son propre type de groupe. Toutefois, si dans le cours le paramètre « Imposer le type des groupes » a été choisi, le type des groupes défini dans les activités sera ignoré.';
+Le mode de groupe défini au niveau du cours est le type par défaut pour toutes les activités du cours. Chaque activité qui supporte les groupes peut définir son propre mode de groupe. Toutefois, si dans le cours le paramètre « Imposer le mode des groupes » a été choisi, le mode des groupes défini dans les activités sera ignoré.';
 $string['groupmy'] = 'Mon groupe';
 $string['groupname'] = 'Nom du groupe';
 $string['groupnameexists'] = 'Le nom de groupe « {$a} » existe déjà dans ce cours. Veuillez en choisir un autre.';
@@ -173,6 +174,10 @@ $string['overview'] = 'Vue d\'ensemble';
 $string['potentialmembers'] = 'Membres potentiels : {$a}';
 $string['potentialmembs'] = 'Membres potentiels';
 $string['printerfriendly'] = 'Affichage pour impression';
+$string['privacy:metadata:groups'] = 'Un enregistrement des affiliations à des groupes.';
+$string['privacy:metadata:groups:groupid'] = 'L\'identifiant du groupe.';
+$string['privacy:metadata:groups:timeadded'] = 'L\'horodatage de l\'ajout de l\'utilisateur au groupe.';
+$string['privacy:metadata:groups:userid'] = 'L\'identifiant de l\'utilisateur qui est affilié au groupe.';
 $string['random'] = 'Aléatoirement';
 $string['removefromgroup'] = 'Retirer un utilisateur du groupe {$a}';
 $string['removefromgroupconfirm'] = 'Voulez-vous vraiment retirer l\'utilisateur « {$a->user} » du groupe « {$a->group} »?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_ipaddress', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_ipaddress', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_ipaddress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'IP address quiz access rule';
+$string['privacy:metadata'] = 'The IP address quiz access rule plugin does not store any personal data.';
 $string['subnetwrong'] = 'This quiz is only accessible from certain locations, and this computer is not on the allowed list.';

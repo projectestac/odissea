@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatecbm', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_immediatecbm', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_immediatecbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Selecione o seu grau de certeza.';
 $string['pluginname'] = 'Feedback Imediato com ABGC';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback Imediato com ABGC não armazena dados pessoais.';

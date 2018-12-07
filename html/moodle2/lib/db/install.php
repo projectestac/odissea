@@ -118,7 +118,6 @@ function xmldb_main_install() {
     $defaults = array(
         'rolesactive'           => '0', // marks fully set up system
         'auth'                  => 'email',
-        'auth_pop3mailbox'      => 'INBOX',
         'enrol_plugins_enabled' => 'manual,guest,self,cohort',
         'theme'                 => theme_config::DEFAULT_THEME,
         'filter_multilang_converted' => 1,
@@ -132,7 +131,6 @@ function xmldb_main_install() {
         'texteditors'           => 'atto,tinymce,textarea',
         'antiviruses'           => '',
         'media_plugins_sortorder' => 'videojs,youtube,swf',
-        'upgrade_minmaxgradestepignored' => 1, // New installs should not run this upgrade step.
         'upgrade_extracreditweightsstepignored' => 1, // New installs should not run this upgrade step.
         'upgrade_calculatedgradeitemsignored' => 1, // New installs should not run this upgrade step.
         'upgrade_letterboundarycourses' => 1, // New installs should not run this upgrade step.
@@ -321,4 +319,7 @@ function xmldb_main_install() {
     require_once($CFG->libdir . '/db/upgradelib.php');
     make_default_scale();
     make_competence_scale();
+
+    // Add built-in prediction models.
+    \core_analytics\manager::add_builtin_models();
 }

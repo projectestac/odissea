@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_messageinbound', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['component'] = 'Συστατικό';
+$string['component'] = 'Στοιχείο λογισμικού';
 $string['edit'] = 'Επεξεργασία';
 $string['enabled'] = 'Ενεργοποιημένο';
 $string['messageinboundhostpass'] = 'Κωδικός πρόσβασης';
+$string['messageprocessingsuccess'] = '{$a->plain}
+
+Εάν δεν επιθυμείτε να λαμβάνετε αυτές τις ειδοποιήσεις στο μέλλον, μπορείτε να επεξεργαστείτε τις ρυθμίσεις προσωπικών μηνυμάτων, ανοίγοντας τη διεύθυνση {$a->messagepreferencesurl} στον περιηγητή σας.';

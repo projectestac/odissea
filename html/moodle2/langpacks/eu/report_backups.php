@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_backups', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   report_backups
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['logsofbackupexecutedon'] = '{$a}-n egikaritutako segurtasun-kopien ager
 $string['nobackupsfound'] = 'Ez da segurtasun-kopiarik aurkitu.';
 $string['nologsfound'] = 'Ez da segurtasun-kopia honen agerraldirik aurkitu.';
 $string['pluginname'] = 'Segurtasun-kopien txostena';
+$string['privacy:metadata'] = 'Segurtasun-kopien txostena pluginak ez du datu pertsonalik biltzen.';
 $string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Ikusi agerraldiak';

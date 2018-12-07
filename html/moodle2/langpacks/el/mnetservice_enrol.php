@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clientname_help'] = 'Εγγράψτε και απεγγράψτε χρήστες από την εγκατάσταση του Moodle σας
-                                    σε κεντρικούς υπολογιστές Moodle που σας το επιτρέπουν μέσω της
-                                    υπομονάδας λογισμικού Δικτυακής εγγραφής.';
+$string['clientname_help'] = 'Αυτό το εργαλείο σας επιτρέπει να κάνετε εγγραφές και διαγραφές τοπικών χρηστών σας, σε απομακρυσμένους υπολογιστές που σας το επιτρέπουν, μέσω του πρόσθετου αυθεντικοποίησης MNet.';
 $string['otherenrolledusers'] = 'Άλλοι εγγεγραμμένοι χρήστες';
 $string['pluginname'] = 'Υπηρεσία απομακρυσμένης εγγραφής';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_shibboleth', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,8 +43,9 @@ $string['auth_shib_idp_list'] = 'Fournisseurs d\'identité';
 $string['auth_shib_idp_list_description'] = 'Veuillez fournir une liste des entityIDs des fournisseurs d\'identité parmi lesquels l\'utilisateur devra choisir sur la page de connexion.<br />Sur chaque ligne doit être indiqués l\'identifiant entityID du fournisseur d\'identité (voir le fichier de métadonnées Shibboleth) et son nom, séparés par une virgule.<br />Vous pouvez également ajouter comme troisième paramètre l\'emplacement d\'un initiateur de session Shibboleth devant être utilisé au cas où votre installation de Moodle installation fait partie d\'une fédération.';
 $string['auth_shib_instructions'] = 'Utilisez la <a href="{$a}">connexion Shibboleth</a> pour accéder via Shibboleth, si votre institution le permet.<br />Sinon, utilisez la connexion standard de ce formulaire.';
 $string['auth_shib_instructions_help'] = 'Veuillez indiquer ici les instructions expliquant le fonctionnement de Shibboleth à vos utilisateurs. Ces instructions seront affichées sur la page de connexion, dans la zone adéquate. Le texte doit contenir un lien vers « <b>{$a}</b> » que les utilisateurs doivent cliquer pour se connecter à Moodle.';
+$string['auth_shib_instructions_key'] = 'Instructions pour la connexion';
 $string['auth_shib_integrated_wayf'] = 'Service Moodle WAYF';
-$string['auth_shib_integrated_wayf_description'] = 'Si vous cochez cette option, Moodle utilisera son propre service WAYF au lieu de celui configuré pour Shibboleth. Moodle affichera sur cette page de connexion alternative un menu déroulant dans lequel l\'utilisateur devra choisir son fournisseur d\'identité.';
+$string['auth_shib_integrated_wayf_description'] = 'Si cette option est activée, Moodle utilisera son propre service WAYF au lieu de celui configuré pour Shibboleth. Moodle affichera sur cette page de connexion alternative un menu déroulant dans lequel l\'utilisateur devra choisir son fournisseur d\'identité.';
 $string['auth_shib_logout_return_url'] = 'URL alternative de retour de déconnexion';
 $string['auth_shib_logout_return_url_description'] = 'Indiquez l\'URL vers laquelle les utilisateurs Shibboleth seront envoyés après leur déconnexion.<br />Si ce champ n\'est pas renseigné, les utilisateurs seront envoyés vers l\'URL où Moodle envoie les utilisateurs dans ce cas';
 $string['auth_shib_logout_url'] = 'URL du gestionnaire de déconnexion du fournisseur de service Shibboleth';
@@ -54,6 +55,7 @@ $string['auth_shib_only'] = 'Seulement Shibboleth';
 $string['auth_shib_only_description'] = 'Cocher cette option pour imposer l\'authentification Shibboleth';
 $string['auth_shib_username_description'] = 'Nom de la variable d\'environnement du serveur web Shibboleth à utiliser comme nom d\'utilisateur Moodle';
 $string['pluginname'] = 'Shibboleth';
+$string['privacy:metadata'] = 'Le plugin d\'authentification Shibboleth n\'enregistre aucune donnée personnelle.';
 $string['shib_invalid_account_error'] = 'Il semble que vous soyez authentifié via Shibboleth, mais Moodle n\'a pas de compte valide pour votre nom d\'utilisateur. Il est possible que votre compte n\'existe pas ou qu\'il soit suspendu.';
 $string['shib_no_attributes_error'] = 'Il semble que vous êtes authentifié par Shibboleth, mais Moodle n\'a reçu aucun attribut utilisateur. Veuillez vérifier que votre fournisseur d\'identité (Identity Provider) distribue les attributs nécessaires ({$a}) au fournisseur de services chez lequel Moodle fonctionne ou informer l\'administrateur de ce serveur.';
 $string['shib_not_all_attributes_error'] = 'Moodle nécessite certains attributs Shibboleth qui ne sont pas présents dans votre cas. Ces attributs sont : {$a}<br />Veuillez contacter l\'administrateur de ce serveur ou votre fournisseur d\'identité.';

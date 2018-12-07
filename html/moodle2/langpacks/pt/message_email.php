@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message_email', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   message_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,13 @@ $string['email'] = 'Enviar notificações por e-mail para';
 $string['emailonlyfromnoreplyaddress'] = 'Enviar sempre e-mail a partir do endereço no-reply?';
 $string['ifemailleftempty'] = 'Deixe em branco para enviar notificações para {$a}';
 $string['pluginname'] = 'E-mail';
+$string['privacy:metadata:attachment'] = 'Um ficheiro no sistema de arquivos.';
+$string['privacy:metadata:attachname'] = 'O nome do ficheiro anexado (extensão indica MIME).';
+$string['privacy:metadata:externalpurpose'] = 'Esta informação é enviado para um servidor SMTP externo para ser finalmente entregue como email ao destinatário.';
+$string['privacy:metadata:fullmessage'] = 'A mensagem completa num determinado formato.';
+$string['privacy:metadata:fullmessagehtml'] = 'A versão completa da mensagem.';
+$string['privacy:metadata:recipient'] = 'O destinatário da mensagem.';
+$string['privacy:metadata:replyto'] = 'O endereço de email para responder.';
+$string['privacy:metadata:replytoname'] = 'O nome da resposta ao destinatário.';
+$string['privacy:metadata:subject'] = 'A linha de conteúdo da mensagem.';
+$string['privacy:metadata:userfrom'] = 'O utilizador a enviar a mensagem.';

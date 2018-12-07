@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'admin', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,10 @@ $string['adminseesall'] = 'Gli amministratori visualizzano qualsiasi evento';
 $string['adminseesallevents'] = 'Gli amministratori visualizzano tutti gli eventi';
 $string['adminseesownevents'] = 'Gli amministratori visualizzano solo i propri eventi';
 $string['advancedfeatures'] = 'Funzionalità avanzate';
+$string['agedigitalconsentverification'] = 'Verifica dell’età del consenso digitale';
+$string['agedigitalconsentverification_desc'] = 'Abilita la verifica dell’età del consenso digitale prima di visualizzare la pagina di creazione account. E’ utile per prevenire la creazione di account da parte di minori senza l’autorizzazione dei genitori o di chi ne fa le veci. Per supporto ai minori verrà visualizzato il <a target="_blank" href="{$a}">Contatto di supporto</a>.';
+$string['ageofdigitalconsentmap'] = 'Età del consenso digitale';
+$string['ageofdigitalconsentmap_desc'] = 'E’ possibile specificare il valore di default dell’età del consenso digitale e l’età del consenso per tutte le nazioni dove tale valore è diverso dal default. Inserire ciascuna età in una linea diversa con il seguente formato: “codice nazione, età”. L’età di default è indicata da un asterisco “*” al posto del codice della nazione. I codici delle nazioni devono essere indicati nel formato ISO 3166-2.';
 $string['allcountrycodes'] = 'Elenco codici nazione';
 $string['allowattachments'] = 'Consenti allegati';
 $string['allowbeforeblock'] = 'Elabora per primo l\'elenco degli IP autorizzati';
@@ -55,6 +59,12 @@ $string['allowemailaddresses'] = 'Domini di posta autorizzati';
 $string['allowframembedding'] = 'Consenti l\'embed in frame';
 $string['allowframembedding_help'] = 'Consenti di incorporare questo sito dentro frame di altri siti, come suggerito dal plugin di iscrizione \'Pubblicazione come tool LTI\'. Se non si usa il plugin, per motivi di sicurezza si sconsiglia l\'uso di questa impostazione.';
 $string['allowguestmymoodle'] = 'Consenti agli ospiti l\'accesso alla dashboard';
+$string['allowindexing'] = 'Consenti indicizzazione dei motori di ricerca';
+$string['allowindexing_desc'] = 'Consente l’indicizzazione del sito da parte dei motori di ricerca. “Qualsiasi parte” consentirà ai motori di ricerca di cercare dappertutto includendo anche la pagina di autenticazione e di creazione account, cosa che consentirà l’indicizzazione anche dei siti con l’impostazione ‘Autenticazione obbligatoria’ attiva. Per evitare il rischio di spam che può generarsi a fronte dell’indicizzazione dlla pagina di autenticazione e di creazione account, è possibile impostare “Qualsiasi parte eccetto le pagine di autenticazione e di creazione account”. “Nessuna parte” chiederà ai motori di ricerca di non indicizzare nessuna pagina. Da notare che l’impostazione si rifletterà sui tag dell’header ma è responsabilità dei motori di ricerca rispettare l’impostazione.';
+$string['allowindexingeverywhere'] = 'Qualsiasi parte';
+$string['allowindexingexceptlogin'] = 'Qualsiasi parte eccetto le pagine di autenticazione e di creazione
+account';
+$string['allowindexingnowhere'] = 'Nessuna parte';
 $string['allowobjectembed'] = 'Consenti i tag EMBED e OBJECT';
 $string['allowthemechangeonurl'] = 'Consenti il cambio del tema tramite URL';
 $string['allowuserblockhiding'] = 'Consenti agli utenti di nascondere i blocchi';
@@ -192,7 +202,7 @@ Moodle community|https://moodle.org
 -Moodle development|https://moodle.org/development
 Moodle.com|http://moodle.com/
 </pre>';
-$string['configcustomusermenuitems'] = 'E\' possibile configurare i contenuti del menu utente (ad eccezione del link di logout che verrà inserito automaticamente). Gli elementi su ciascuna linea devono essere separati dal carattere | e contengono 1) una stringa del tipo "langstringname, componentname" oppure di testo semplice, 2) un URL e 3) un\'icona specificata come icona pix oppure come URL. E\' possibile utilizzare separatori aggiungendo una line con uno più caratteri #.';
+$string['configcustomusermenuitems'] = 'E\' possibile configurare i contenuti del menu utente (ad eccezione del link di logout che verrà inserito automaticamente). Gli elementi su ciascuna linea devono essere separati dal carattere | e contengono 1) una stringa del tipo "langstringname, componentname" oppure una stringa di testo semplice, 2) un URL e 3) un\'icona specificata come icona pix (inserita nella cartella pix/t oppure se l\'icano si trova in un folder diverso, aggiungendo al nome il prefisso ../) oppure come URL. E\' possibile utilizzare separatori aggiungendo una linea con uno più caratteri #.';
 $string['configdbsessions'] = 'E\' possibile memorizzare le informazioni delle sessioni nel database. L\'impostazione è particolarmente utile per siti molto grandi, con molto traffico o per siti in cluster. Attenzione: cambiare questa impostazione provoca il logout dal sito di tutti gli utenti collegati, tu compreso.
 Se viene utilizzato MySQL, accertarsi di impostare \'max_allowed_packet\' in my.cnf (o in my.ini) ad almeno 4M. E\' anche possibile configurare altri driver di sessione direttamente nel file config.php. Per maggiori informazioni vedere il file config-dist.php. Questa impostazione scompare se vengono specificati driver di sessione nel file config.php,';
 $string['configdebug'] = 'L\'impostazione regola il dettaglio della reportistica del PHP. E\' utile esclusivamente per gli sviluppatori.';
@@ -205,7 +215,7 @@ $string['configdefaultrequestcategory'] = 'I corsi a richiesta, se approvati, sa
 $string['configdefaultrequestedcategory'] = 'Categoria in cui inserire i corsi a richiesta, una volta approvati.';
 $string['configdefaultuserroleid'] = 'A tutti gli utenti autenticati, nel contesto del sito, sarà assegnato il ruolo qui indicato. Tale ruolo viene assegnato in aggiunta ai ruoli che gli utenti già possiedono nel sito. Il valore di default è Utente autenticato. Il ruolo di Utente autenticato non entra in conflitto con nessun altro ruolo: il suo scopo è quello di garantire agli utenti autenticati alcuni privilegi, indipendenti dal fatto di essere iscritti ad un corso, come ad esempio inserire un intervento nel blog, gestire il proprio calendario, eccetera.';
 $string['configdeleteincompleteusers'] = 'Dopo questo periodo di tempo, gli account non completati saranno eliminati.';
-$string['configdeleteunconfirmed'] = 'Se si sta usando l\'autenticazione e-mail, questo parametro imposta il periodo di tempo entro il quale sarà  accettata la conferma da parte dagli utenti. Trascorso questo periodo, gli utenti non confermati vengono eliminati.';
+$string['configdeleteunconfirmed'] = 'In alcuni metodi di autenticazione, ad esempio l\'autenticazione via e-mail, gli utenti devono confermare l\'account entro un certo periodo di tempo. Trascorso il periodo, gli utenti non confermati verranno eliminati.';
 $string['configdenyemailaddresses'] = 'Se si desidera impedire l\'uso di email appartenenti a taluni domini, in questa impostazione è possibile elencare i domini indesiderati . Le email appartenenti a domini non presenti nell\'elenco potranno invece essere utilizzate. Per includere anche i sotto domini, elencare il dominio precedendolo con \'.\'. Ad esempio, <strong>hotmail.com .yahoo.co.uk.live</strong>';
 $string['configdisableuserimages'] = 'Gli utenti non potranno  cambiare l\' immagine del proprio profilo.';
 $string['configdisplayloginfailures'] = 'Abilita la visualizzazione dei tentativi errati di login.';
@@ -226,7 +236,7 @@ $string['configenabledevicedetection'] = 'Abilita il riconoscimento di dispositi
 $string['configenablemobilewebservice'] = 'Abilita il servizio mobile per la app ufficiale Moodle o per altre app. Per maggiori informazioni leggere {$a}';
 $string['configenablerssfeeds'] = 'Attiva il generatore RSS (RSS Feed) del sito. Per poter utilizzare i feed RSS è necessario attivare anche il generatore RSS nei singoli moduli di attività.';
 $string['configenablerssfeedsdisabled'] = 'Non è disponibile poiché il generatore RSS è disabilitato a livello di sito. Per attivarlo, andate in \'configura variabili\' nel pannello di Amministrazione.';
-$string['configenablerssfeedsdisabled2'] = 'I feed RSS sono disabilitati a livello di server. Devi abilitarli in Server/RSS.';
+$string['configenablerssfeedsdisabled2'] = 'I feed RSS sono disabilitati a livello di sito. Possono essere abilitati nelle funzionalità avanzate da un amministratore del e del sito.';
 $string['configenablesafebrowserintegration'] = 'Aggiunge l\'opzione \'Safe Exam Browser\' nel menù a discesa \'Livello sicurezza browser\' presente nelle impostazioni dei quiz. Per maggiori informazioni: http://safeexambrowser.org.';
 $string['configenablestats'] = 'Attivando le statistiche, Moodle elaborerà il log con cadenza giornaliera. La durata dell\'elaborazione  dipenderà dal traffico del sito. Le statistiche consentono di visualizzare graficamente dati sui corsi e sul sito.';
 $string['configenabletrusttext'] = 'Per default Moodle ripulisce con cura tutti i testi inseriti dagli utenti, al fine di rimuovere ogni possibile script malevolo, oggetto multimediale od altro che possa mettere a repentaglio la sicurezza. Il sistema di Contenuto Affidabile è un modo per dare ad  utenti degni di fiducia la possibilità di usare funzioni evolute nei loro contenuti senza alcuna interferenza. Per attivare il sistema è necessario abilitare l\'impostazione e poi attribuire il privilegio Contenuto Affidabile ad uno specifico ruolo. I testi creati o caricati dagli utenti che hanno tale ruolo saranno contrassegnati come "affidabili" e non saranno ripuliti prima della visualizzazione.';
@@ -280,8 +290,7 @@ $string['configloglifetime'] = 'L\'impostazione specifica la durata di conservaz
 Sebbene sia desiderabile conservare i log il più a lungo possibile, se si dispone di un server sovraccarico o in presenza di problemi di performance, è preferibile abbreviare la durata di conservazione. Impostazioni di 30 giorni o meno non sono consigliate in quanto le statistiche non funzionerebbero correttamente.';
 $string['configlookahead'] = 'Giorni futuri da controllare';
 $string['configmailnewline'] = 'I caratteri Newline (salto riga) usati nei messaggi di posta. Secondo il RFC 822bis è richiesto il carattere CRLF. Alcuni server di posta convertono automaticamente il carattere LF in CRLF, altri convertono in modo non corretto da CRLF a CRCRLF, altri ancora rifiutano mail con solo LF (qmail per esempio). Se si riscontrano problemi con messaggi non spediti o doppi salti riga, provare a cambiare questa impostazione.';
-$string['configmaxbytes'] = 'Imposta la dimensione massima per gli upload di file. Il valore massimo è limitato dalla variabile PHP  \'upload_max_filesize\' e \'post_max_size\'  e dal valore della variabile \'LimitRequestBody\' di Apache.
-L\'impostazione a sua volta limita la dimensione massima degli upload nei corsi e nei moduli. Scegliendo \'Limite server\', sarà usato il valore di upload massimo consentito.';
+$string['configmaxbytes'] = 'Imposta la dimensione massima per gli upload di file. Il valore massimo è limitato dalla variabile PHP  \'upload_max_filesize\' e \'post_max_size\'  e dal valore della variabile \'LimitRequestBody\' di Apache. L\'impostazione a sua volta limita la dimensione massima degli upload nei corsi e nei moduli. Impostando \'Limite server\', sarà usato il valore di upload massimo consentito.';
 $string['configmaxconsecutiveidentchars'] = 'Le password non devono contenere un numero di caratteri identici e consecutivi maggiori del valore specificato. Per disabilitare questa verifica inserite il valore 0.';
 $string['configmaxeditingtime'] = 'Questo parametro specifica il tempo massimo a disposizione degli utenti per per modificare i loro interventi su forum, commenti del glossario, eccetera. Normalmente 30 minuti è un valore adeguato.';
 $string['configmaxevents'] = 'Eventi da anticipare';
@@ -321,8 +330,8 @@ $string['configproxypassword'] = 'Password per accedere a internet attraverso il
 $string['configproxyport'] = 'Specificate la porta usata dal proxy per accedere ad Internet';
 $string['configproxytype'] = 'Tipo di proxy (per il supporto SOCKS5 sono necessari il PHP5 e l\'estensione cURL ).';
 $string['configproxyuser'] = 'Username abilitato ad accedere ad internet attraverso il proxy, lasciare vuoto se non utilizzato (è necessaria l\'estensione PHP cURL).';
-$string['configrecaptchaprivatekey'] = 'Stringa di caratteri (chiave privata) usata per comunicare tra il proprio server Moodle e il server recaptcha. E\' possibile richiedere le chivi ReCAPTCHA visitando il sito <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
-$string['configrecaptchapublickey'] = 'Stringa di caratteri (chiave pubblica) usata per visualizzare l\'immagine reCAPTCHA nella pagina di creazione account. <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['configrecaptchaprivatekey'] = 'Stringa di caratteri (chiave privata) usata per la comunicazione tra il proprio server Moodle e il server recaptcha. E\' possibile richiedere le chiavi reCAPTCHA visitando il sito <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['configrecaptchapublickey'] = 'Stringa di caratteri (chiave pubblica) usata per visualizzare l\'elemento reCAPTCHA nella pagina di creazione account. E\' possibile richiedere le chiavi reCAPTCHA visitando il sito <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['configrequestcategoryselection'] = 'Consente di selezionare una categoria durante la richiesta di corsi';
 $string['configrequestedstudentname'] = 'Termine per \'studente\' da utilizzare nel corsi richiesti';
 $string['configrequestedstudentsname'] = 'Termine per \'studenti\' da utilizzare nel corsi richiesti';
@@ -394,7 +403,7 @@ $string['country'] = 'Paese di default';
 $string['coursecontact'] = 'Gestori dei corsi';
 $string['coursecontact_desc'] = 'E\' possibile indicare quali ruoli far comparire nella descrizione dei corsi. Affinché il nome di un utente compaia nella descrizione di un corso, l\'utente dovrà avere almeno uno dei ruoli qui specificati.';
 $string['courselistshortnames'] = 'Visualizza titoli dei corsi estesi';
-$string['courselistshortnames_desc'] = 'Consente la visualizzazione del titolo del corso assieme al titolo abbreviato del corso sia nella visualizzazione degli elenchi dei corsi sia nella pagine di amministrazione dove sono presenti titoli di corsi. Se l\'impostazione è attiva, la visualizzazione dei titoli dei corsi  utilizzerà la stringa \'courseextendednamedisplay\', che può essere modificata secondo necessità personalizzando il language pack.ta';
+$string['courselistshortnames_desc'] = 'Consente la visualizzazione del titolo del corso assieme al titolo abbreviato del corso sia nella visualizzazione degli elenchi dei corsi sia nella pagine di amministrazione dove sono presenti titoli di corsi. Se l\'impostazione è attiva, la visualizzazione dei titoli dei corsi utilizzerà la stringa \'courseextendednamedisplay\', che può essere modificata secondo necessità personalizzando il language pack.';
 $string['coursemgmt'] = 'Gestione corsi e categorie';
 $string['courseoverview'] = 'Panoramica sui corsi';
 $string['courserequestnotify'] = 'Avvertire in caso di richieste';
@@ -475,7 +484,7 @@ $string['docroot'] = 'URL del sito di documentazione di Moodle';
 $string['doctonewwindow'] = 'Apri in una nuova finestra';
 $string['doesnotfit'] = 'Impostazioni visualizzazione email';
 $string['doesnotfitdetail'] = 'Impostazioni visualizzazione delle email in uscita da Moodle';
-$string['download'] = 'Download';
+$string['download'] = 'Scarica';
 $string['durationunits'] = 'unità di durata';
 $string['edithelpdocs'] = 'Modifica documenti di Help';
 $string['editlang'] = '<b>Modifica</b>';
@@ -553,6 +562,7 @@ $string['experimentalsettings'] = 'Impostazioni sperimentali';
 $string['extendedusernamechars'] = 'Consenti l\'uso di caratteri speciali negli username';
 $string['extramemorylimit'] = 'Extra PHP memory limit';
 $string['fatalsessionautostart'] = '<p>E\' stato rilevato un grave errore di configurazione, per favore avvertire l\'amministratore del server.</p><p> Per funzionare correttamente, Moodle ha bisogno che l\'amministratore modifichi le impostazioni del PHP..</p><p><code>session.auto_start</code> deve essere impostato ad <code>off</code>.</p><p>E\' possibile modificare questa impostazione nel file <code>php.ini</code>, nella configurazione di Apache/IIS <br /> oppure usando file <code>.htaccess</code>.</p>';
+$string['fileconversioncleanuptask'] = 'Pulizia file temporanei della conversione file.';
 $string['filecreated'] = 'Nuovo file creato';
 $string['filestoredin'] = 'Salva il file nella cartella:';
 $string['filestoredinhelp'] = 'Dove sarà memorizzato il file';
@@ -631,6 +641,8 @@ $string['installhijacked'] = 'Spiacente, l\'installazione deve essere completata
 $string['installsessionerror'] = 'Non è possibile inizializzare la sessione PHP, per favore verifica che il browser accetti i cookie.';
 $string['intlrecommended'] = 'L\'estensione intl migliora il supporto all\'internazionalizzazione, come l\'ordinamento in accordo alle impostazioni locali';
 $string['intlrequired'] = 'E\' necessario installare l\'estensione Intl per migliorare l\'internazionalizzazione, come ordinamenti in funzioni della lingua e nomi di dominio internazionali.';
+$string['invalidagedigitalconsent'] = 'L’età del consenso digitale non è valida: {$a}';
+$string['invalidforgottenpasswordurl'] = 'L\'URL di recupero password non è un URL valido.';
 $string['invalidsection'] = 'Sezione non valida';
 $string['invaliduserchangeme'] = 'Il nome utente "changeme" è riservato - non è possibile creare utenti con quel nome utente.';
 $string['ipblocked'] = 'Questo sito non è al momento disponibile.';
@@ -705,7 +717,7 @@ $string['longtimewarning'] = '<b>Da notare che questo processo può durare molto
 $string['mailnewline'] = 'Caratteri Newline nelle email';
 $string['maintenancemode'] = 'In modalità manutenzione';
 $string['maintenancemodeisscheduled'] = 'Il sito sarà posto in modalità manutenzione tra {$a->min} minuti e  {$a->sec} secondi';
-$string['maintenancemodeisscheduledlong'] = 'Ilsito sarà posto in modalità manutenzione tra {$a->hour} ore {$a->min} minuti e {$a->sec} secondi';
+$string['maintenancemodeisscheduledlong'] = 'Il sito sarà posto in modalità manutenzione tra {$a->hour} ore {$a->min} minuti e {$a->sec} secondi';
 $string['maintfileopenerror'] = 'Errore aprendo i file di manutenzione!';
 $string['maintinprogress'] = 'Manutenzione in corso...';
 $string['manageformats'] = 'Gestione formati dei corsi';
@@ -759,6 +771,7 @@ $string['mnetrestore_extusers_mismatch'] = '<strong>Nota:</strong> Questo file d
 $string['mnetrestore_extusers_noadmin'] = '<strong>Nota:</strong> Questo file di backup sembra essere stato generato da un\'altra installazione di Moodle e contiene account di utenti Moodle Network. Non sei autorizzato ad eseguire questo tipo di ripristino. Contatta l\'amministratore del sito oppure ripristina il corso senza informazioni sugli utenti (moduli, file...)';
 $string['mnetrestore_extusers_switchuserauth'] = 'Il metodo di autenticazione dell\'utente remoto {$a->username} (proveniente da {$a->mnethosturl}) è stato cambiato in autenticazione {$a->auth} locale.';
 $string['mobile'] = 'Mobile';
+$string['mobilenotconfiguredwarning'] = 'Moodle Mobile non è abilitato';
 $string['modchooserdefault'] = 'Usa il selettore attività per default';
 $string['modeditdefaults'] = 'Valori di default dell\'attività';
 $string['modsettings'] = 'Gestione attività';
@@ -809,6 +822,8 @@ $string['notifyloginthreshold'] = 'Soglia per l\'invio di avvisi tramite email';
 $string['notloggedinroleid'] = 'Ruolo per i visitatori';
 $string['numberofmissingstrings'] = 'Numero stringhe mancanti: {$a}';
 $string['numberofstrings'] = 'Totale stringhe: {$a->strings}<br />Mancanti: {$a->missing} ({$a->missingpercent}&nbsp;%)';
+$string['oauthrefreshtokenexpired'] = 'Il token di rinnovo per i servizi OAuth {$a->issuer} sul tuo sito {$a->siteurl} è scaduto. Questo limiterà la funzionalità dei plugin che utilizzano questo servizio. Per risolvere il problema, visita la pagina di configurazione dei Servizi OAuth 2 e clicca sull\'icona "Collega ad un account di sistema" nella riga della tabella per questo servizio. Assicurati di fare login ogni volta con lo stesso account di servizio per il sistema OAuth.';
+$string['oauthrefreshtokenexpiredshort'] = 'Il token di rinnovo è scaduto per {$a->issuer} sul tuo sito {$a->siteurl}.';
 $string['onlynoreply'] = 'Solo se da indirizzo no-reply';
 $string['opcacherecommended'] = 'La cache PHP opcode migliora le prestazioni e riduce la memoria utilizzata. L\'estensione OPcache è sia consigliata sia supportata.';
 $string['opensslrecommended'] = 'E\' fortemente raccomandata l\'installazione della libreria opzionale OpenSSL -- questa abilita la funzionalità Moodle Networking.';
@@ -820,6 +835,7 @@ $string['order2'] = 'Secondo';
 $string['order3'] = 'Terzo';
 $string['order4'] = 'Quarto';
 $string['outgoingmailconfig'] = 'Configurazione email in uscita';
+$string['overridetossl'] = 'L\'impostazione Login HTTPS è stata deprecata ed è stato forzato l\'uso di SSL. Per eliminare questo messaggio, modificare wwwroot in https://';
 $string['passwordchangelogout'] = 'Termina sessione dopo la modifica della password';
 $string['passwordchangelogout_desc'] = 'Tutte le sessioni browser saranno terminate con l\'unica eccezione della sessione dove è stata modificata la password. (L\'impostazione non influenza la modifica della password effettuata tramite le Azioni in massa.)';
 $string['passwordchangetokendeletion'] = 'Elimina i token di accesso web service quando viene cambiata la password';
@@ -839,8 +855,8 @@ $string['pathtopgdumpinvalid'] = 'Percorso non valido per pg_dump - percorso err
 $string['pathtopsql'] = 'Path per psql';
 $string['pathtopsqldesc'] = 'E\' nescessario solo se hai più di un psql sul sistema (per esempio hai più versioni di postgresql installate)';
 $string['pathtopsqlinvalid'] = 'Percorso non valido per pgsql - percorso errato o non eseguibile';
-$string['pathtounoconv'] = 'Percorso del convertitore di documenti unoconv';
-$string['pathtounoconv_help'] = 'Il percorso del convertitore di documenti unoconv. E\' un programma eseguibile che può convertire documenti con i formati supportati da LibreOffice. Sebbene il programma sia opzionale, se disponibile Moodle lo utilizzerà per convertire i formati, supportando così uno spettro più ampio di formati nella annotazione di compiti PDF.';
+$string['pathtopython'] = 'Percorso del Python';
+$string['pathtopythondesc'] = 'Il percorso dell’eseguibile binario Python (sono supportati sia Python 2 sia Python 3).';
 $string['pcreunicodewarning'] = 'Si raccomanda di utilizzare l\'estensione PHP PCRE che è compatibile con i caratteri Unicode.';
 $string['perfdebug'] = 'Visualizza prestazioni';
 $string['performance'] = 'Prestazioni';
@@ -848,6 +864,7 @@ $string['pgcluster'] = 'Cluster PostgreSQL';
 $string['pgclusterdescription'] = 'Parametro per le operazioni a linea di comando della versione/cluster di PostgreSQL. Se hai un solo postgresql sul sistema o non sei sicuro di cosa significhi, lascialo vuoto.';
 $string['phpfloatproblem'] = 'E\' stato rilevato un problema inatteso durante l\'utilizzo di numeri a virgola mobile tramite PHP - {$a}';
 $string['pleaserefreshregistration'] = 'Questo sito è registrato e l\'ultimo aggiornamento della registrazione è stato effettuato il {$a}. L\'elaborazione pianificata "Registrazione del sito" aggiorna con regolarità la registrazione, tuttavia è anche possibile aggiornarla manualmente in qualsiasi momento.';
+$string['pleaserefreshregistrationnewdata'] = 'Le informazioni della registrazione sono cambiati. Per favore confermale utilizzando il pulsante \'Aggiorna registrazione\'';
 $string['pleaserefreshregistrationunknown'] = 'Il sito è registrato ma non è nota la data di registrazione. Per favore aggiorna la registrazione con il pulsante \'Aggiorna registrazione\' oppure assicurati che l\'elaborazione pianificata \'Registrazione del sito\' sia attiva.';
 $string['plugin'] = 'Plugin';
 $string['plugins'] = 'Plugin';
@@ -856,6 +873,10 @@ $string['pluginscheckfailed'] = 'Il controllo delle dipendenze plugin è fallito
 $string['pluginschecktodo'] = 'Devi soddisfare tutti i requisiti richiesti dai plugin prima di continuare con l\'installazione di questa versione di Moodle';
 $string['pluginsoverview'] = 'Panoramica plugin';
 $string['pluginsoverviewsee'] = 'Per maggiori informazioni è disponibile la pagina <a href="{$a->url}">panoramica plugin</a>';
+$string['policysettings'] = 'Impostazioni politiche';
+$string['privacyandpolicies'] = 'Privacy e politiche';
+$string['privacy:metadata'] = 'Il plugin "Amministrazione" non memorizza dati personali.';
+$string['privacysettings'] = 'Impostazioni privacy';
 $string['profilecategory'] = 'Categoria';
 $string['profilecategoryname'] = 'Nome categoria (deve essere unico)';
 $string['profilecategorynamenotunique'] = 'Nome categoria già in uso';
@@ -946,14 +967,14 @@ $string['questiontypes'] = 'Tipi domande';
 $string['quizattemptsupgradedmessage'] = 'Moodle 2.1 ha introdotto un significativo aggiornamento alle domande. Sebbene sia stato possibile ritardare l\'aggiornamento del database, prima di migrare a Moodle 2.7 è indispensabile effettuare l\'aggiornamento.';
 $string['recaptchaprivatekey'] = 'Chiave segreta CAPTCHA';
 $string['recaptchapublickey'] = 'Chiave sito reCAPTCHA';
-$string['register'] = 'Registra il tuo sito';
+$string['register'] = 'Registra il sito';
 $string['registermoodleorg'] = 'Sito registrato il';
 $string['registermoodleorgli1'] = 'Verrai inserito in una mailing list a basso traffico utile per ricevere notifiche importanti come avvisi di sicurezza e disponibilità di nuove versioni di Moodle.';
 $string['registermoodleorgli2'] = 'Le statistiche relative al tuo sito saranno inserite nella comunità mondiale {$a} di Moodle.';
-$string['registerwithmoodleorg'] = 'Registra il tuo sito';
+$string['registerwithmoodleorg'] = 'Registra il sito';
 $string['registration'] = 'Registrazione';
 $string['registration_help'] = 'Si consiglia di registrare il sito per ricevere avvisi di sicurezza ed accedere a Moodle.net, la nostra piattaforma di condivisione di corsi.';
-$string['registrationwarning'] = 'Il tuo sito non è ancora registrato.';
+$string['registrationwarning'] = 'Il sito non è stato registrato.';
 $string['registrationwarningcontactadmin'] = 'Il sito non è registrato. Per favore avverti l\'amministratore.';
 $string['releasenoteslink'] = 'Per informazioni su questa versione di Moodle, si prega di consultare le <a target="_blank" href="{$a}">Note di rilascio</a> in linea';
 $string['rememberusername'] = 'Ricorda username';
@@ -982,11 +1003,13 @@ $string['riskspamshort'] = 'Spam';
 $string['riskxss'] = 'Gli utenti possono aggiungere files e testi che consentono il cross-site scripting (XSS)';
 $string['riskxssshort'] = 'XSS';
 $string['roleswithexceptions'] = '{$a->roles}, con {$a->exceptions}';
-$string['rssglobaldisabled'] = 'Disabilitato a livello server';
+$string['rssglobaldisabled'] = 'Disabilitato a livello di sito';
 $string['save'] = 'Salva';
 $string['savechanges'] = 'Salva modifiche';
 $string['scssinvalid'] = 'Il codice SCSS non è valido. Errore: {$a}';
 $string['search'] = 'Ricerca';
+$string['searchallavailablecourses_off'] = 'Cerca nei corsi dove l\'utente è iscritto';
+$string['searchallavailablecourses_on'] = 'Cerca nei corsi dove l\'utente può accedere';
 $string['searchalldeleted'] = 'Tutti i contenuti indicizzati sono stati eliminati';
 $string['searchareadisabled'] = 'Area di ricerca disabilitata';
 $string['searchareaenabled'] = 'Area di ricerca abilitata';
@@ -995,10 +1018,14 @@ $string['searchdeleteindex'] = 'Elimina tutti i contenuti indicizzati';
 $string['searchengine'] = 'Motore di ricerca';
 $string['searchindexactions'] = 'Azioni indice';
 $string['searchindexdeleted'] = 'Indice eliminato';
+$string['searchindextime'] = 'Tempo limite di indicizzazione';
+$string['searchindextime_desc'] = 'L\'elaborazione pianificata di indicizzazione si fermerà una volta raggiunto il tempo limite impostato. L\'indicizzazione proseguirà al successivo lancio dell\'elaborazione.';
 $string['searchindexupdated'] = 'I contenuti del motore di ricerca sono stati aggiornati';
 $string['searchinsettings'] = 'Cerca nelle impostazioni';
 $string['searchlastrun'] = 'Ultima elaborazione (orario, # documenti, # record, # ignorati)';
 $string['searchnotavailable'] = 'La ricerca non è disponibile';
+$string['searchoptions'] = 'Opzioni di ricerca';
+$string['searchpartial'] = '(non completamente indicizzato)';
 $string['searchreindexed'] = 'Tutti i contenuti del sito sono stati indicizza di nuovo.';
 $string['searchreindexindex'] = 'Indicizza di nuovo tutti i contenuti del sito';
 $string['searchresults'] = 'Risultati ricerca';
@@ -1039,9 +1066,12 @@ $string['sitemaintenancewarning2'] = 'Il sito al momento è in manutenzione (sol
 $string['sitepolicies'] = 'Politiche del sito';
 $string['sitepolicy'] = 'URL delle politiche del sito';
 $string['sitepolicyguest'] = 'URL politiche del sito per gli ospiti';
-$string['sitepolicyguest_help'] = 'E\' possibile specificare l\'URL delle politiche del sito per gli ospiti. Le politiche dovranno essere accettate per poter utilizzare il sito.
-L\'impostazione può contenere un qualsiasi URL pubblico. Nota: l\'accesso di utenti non autenticato può essere evitato attraverso  l\'impostazione forcelogin.';
-$string['sitepolicy_help'] = 'Se si dispone di una politica del sito (modalità  di utilizzo) che tutti gli utenti devono leggere e sottoscrivere prima di utilizzare il sito, specificarne qui l\'indirizzo (URL), altrimenti lasciare in bianco. L\'URL può puntare ad un qualsiasi URL pubblico.';
+$string['sitepolicyguest_help'] = 'E\' possibile specificare l\'URL delle politiche del sito per gli ospiti. Le politiche dovranno essere accettate per poter utilizzare il sito. L\'impostazione può contenere un qualsiasi URL pubblico. Nota: l\'accesso di utenti non autenticati può essere evitato attraverso  l\'impostazione \'forcelogin\'.';
+$string['sitepolicyhandler'] = 'Gestore politiche del sito';
+$string['sitepolicyhandlercore'] = 'Default (core)';
+$string['sitepolicyhandler_desc'] = 'Selezionare il componente per la gestione delle accettazioni delle politiche del sito da parte degli utenti. Il gestore core di default fornisce una semplice funzione controllata da due elementi: `politiche del sito` e `politiche del sito per gli ospiti`. E\' possibile fornire altri gestori tramite plugin aggiuntivi in grado di offrire ulteriori funzionalità.';
+$string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
+$string['sitepolicy_help'] = 'Se si dispone di una politica del sito che tutti gli utenti devono leggere e accettare prima di utilizzare il sito, è possibile impostare l\'indirizzo (URL), in mancanza lasciare vuoto il campo. L\'URL può puntare ad un qualsiasi URL pubblico.';
 $string['sitesectionhelp'] = 'E\' possibile visualizzare una sezione nella Pagina home.';
 $string['slasharguments'] = 'Utilizza gli "slash arguments"';
 $string['slashargumentswarning'] = 'Si raccomanda di abilitare l\'utilizzo degli slash arguments poiché in futuro tale requisito sarà obbligatorio. Per maggiori informazioni: <a href="https://docs.moodle.org/en/admin/environment/slasharguments">Utiilzzo degli slash arguments</a>.';
@@ -1087,6 +1117,7 @@ $string['tablenosave'] = 'Le modifiche apportate nella tabella soprastante saran
 $string['tablesnosave'] = 'Le modifiche apportate nelle tabelle soprastanti saranno salvate automaticamente.';
 $string['tabselectedtofront'] = 'Nelle tabelle con tab, il tab selezionato deve essere portato in primo piano?';
 $string['tabselectedtofronttext'] = 'Porta in primo piano il tab selezionato';
+$string['taskanalyticscleanup'] = 'Pulizia analitica';
 $string['taskautomatedbackup'] = 'Backup automatici';
 $string['taskbackupcleanup'] = 'Pulizia tabelle e log di backup';
 $string['taskbadgescron'] = 'Rilascio badge';
@@ -1113,6 +1144,7 @@ $string['taskpasswordresetcleanup'] = 'Pulizia tentativi recupero password';
 $string['taskplagiarismcron'] = 'Elaborazione in background per i cron legacy dei plugin prevenzione plagio';
 $string['taskportfoliocron'] = 'Elaborazione in background per i plugin portfolio';
 $string['taskquestioncron'] = 'Elaborazione in background per il motore delle domande';
+$string['taskrefreshsystemtokens'] = 'Aggiorna i token OAuth per gli account di servizio';
 $string['taskregistrationcron'] = 'Registrazione del sito';
 $string['tasksendfailedloginnotifications'] = 'Invio avvisi sui login errati';
 $string['tasksendnewuserpasswords'] = 'Invio password ai nuovi utenti';
@@ -1142,6 +1174,8 @@ $string['timezonenotforced'] = 'Gli utenti possono scegliere il proprio fuso ora
 $string['timezonephpdefault'] = 'Fuso orario PHP di default ({$a})';
 $string['timezoneserver'] = 'Fuso orario del server ({$a})';
 $string['tlswarning'] = 'Non sono state rilevate estensioni PHP/cURL con il supporto TLSv1.2. Si raccomanda fortemente di aggiornare le librerie TLS.';
+$string['tokenduration'] = 'Durata del token creati dagli utenti';
+$string['tokenduration_desc'] = 'Imposta la durata temporale dei token web service creati dagli utenti (ad esempio tramite app mobile).';
 $string['tokenizerrecommended'] = 'E\' raccomandata l\'installazione di Tokenizer - estensione opzionale del PHP - per migliorare la funzionalità del Moodle Networking.';
 $string['tools'] = 'Tool amministrativi';
 $string['toolsmanage'] = 'Gestione tool amministrativi';
@@ -1153,7 +1187,7 @@ $string['unlockaccount'] = 'Sblocca profilo';
 $string['unoconvwarning'] = 'La versione di unoconv installata non è supportata. La funzionalità di valutazione dei compiti di Moodel richiede la versione 0.7 o superiore.';
 $string['unsettheme'] = 'Deseleziona tema';
 $string['unsupported'] = 'Non supportato';
-$string['unsupporteddbfileformat'] = 'Il database utilizza il formato file Antelope. Per avere un supporto completo UTF-8 sia in MySQL sia in MariaDB è necessario utilizzare il formato file Barracuda. Per favore converti le tabelle in formato Barracuda. Per dettagli sulla conversione, consultare la documentazione <a href="https://docs.moodle.org/en/cli">Administration via command line</a>.';
+$string['unsupporteddbfileformat'] = 'Il database utilizza il formato file Antelope. Per avere un supporto completo UTF-8 sia con MySQL sia con MariaDB è necessario utilizzare il formato file Barracuda. Per favore convertire le tabelle in formato Barracuda. Per dettagli sulla conversione, consultare la documentazione <a href="https://docs.moodle.org/en/admin/environment/custom check/mysql full unicode support">MySQL full unicode support</a>.';
 $string['unsupporteddbfilepertable'] = 'Per avere un supporto completo UTF-8 sia in MySQL sia in MariaDB è necessario impostare \'innodb_file_per_table\' a \'ON\'. Per maggiori informazioni consultare la documentazione.';
 $string['unsupporteddblargeprefix'] = 'Per avere un supporto completo UTF-8 sia in MySQL sia in MariaDB è necessario impostare \'innodb_large_prefix\' a \'ON\'. Per maggiori informazioni consultare la documentazione.';
 $string['unsupporteddbstorageengine'] = 'Lo storage engine utilizzato dal database non è più supportato.';
@@ -1247,6 +1281,6 @@ $string['warningcurrentsetting'] = 'Valore corrente non valido: {$a}';
 $string['warningiconvbuggy'] = 'La versione della libreria iconv installata non supporta il modifier //IGNORE. Puoi installare l\'estensione mbstring che può essere utilizzata in alternativa per pulire le stringhe contenenti caratteri UTF-8 non validi.';
 $string['webproxy'] = 'Proxy web';
 $string['webproxyinfo'] = 'Usa le impostazioni seguenti se il tuo server Moodle non può accedere direttamente ad Internet. L\'accesso ad Internet è necessario per scaricare dati di ambiente, language pack, feed RSS, timezone, eccetera.<br /><em>L\'estensione PHP cURL è fortemente raccomandata.</em>';
-$string['xmlrpcrecommended'] = 'L\'installazione della estensione opzionale xmlrpc è necessaria per la comunicazione dell\'hub ed è utile per i web service e il Moodle Networking.';
+$string['xmlrpcrecommended'] = 'L\'estensione XMLRPC è utile per i web service e il Moodle Networking.';
 $string['yuicomboloading'] = 'Caricamento YUI combo';
 $string['ziprequired'] = 'Moodle richiede l\'estensione Zip PHP. Gli eseguibili info-ZIP o la libreria PclZip non sono più utilizzati.';

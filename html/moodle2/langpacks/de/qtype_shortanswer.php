@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,3 +42,4 @@ $string['pluginnameadding'] = 'Kurzantwort hinzufügen';
 $string['pluginnameediting'] = 'Kurztextfrage bearbeiten';
 $string['pluginname_help'] = 'Als Antwort auf eine Frage (welche auch ein Bild enthalten darf) kann ein Wort oder ein kurzer Satz eingegeben werden. Dabei können mehrere richtige Antworten erlaubt sein, die alle unterschiedlich bewertet werden. Mit der Option "Groß-/Kleinschreibung" kann auch die Schreibweise berücksichtigt werden.';
 $string['pluginnamesummary'] = 'Die Antwort wird von Teilnehmer/innen eingetippt. Zur automatischen Bewertung wird der Eintrag mit Musterantworten verglichen. Wildcards (Platzhalter) sind möglich.';
+$string['privacy:metadata'] = 'Der Kurzantwort Fragentyp speichert keine persönlichen Daten';

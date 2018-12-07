@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'フィールド {$a} 個をフォームに追加する';
 $string['advancedelement'] = '拡張要素';
 $string['close'] = '閉じる';
+$string['custom'] = 'カスタム';
 $string['day'] = '日';
+$string['default'] = 'デフォルト';
 $string['display'] = '表示';
 $string['err_alphanumeric'] = 'あなたはここに文字または数字のみ入力する必要があります。';
 $string['err_email'] = 'あなたはここに有効なメールアドレスを入力する必要があります。';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'あなたはここに句読点以外の文字を
 $string['err_numeric'] = 'あなたはここに数字を入力する必要があります。';
 $string['err_rangelength'] = 'あなたはここに {$a->format[0]} から {$a->format[1]} の文字を入力する必要があります。';
 $string['err_required'] = 'あなたはここに値を入力する必要があります。';
+$string['err_wrongfileextension'] = 'いくつかのファイル ({$a->wrongfiles}) はアップロードすることができません。ファイルタイプ {$a->whitelist} のみ許可されます。';
+$string['filesofthesetypes'] = '許可されるファイルタイプ:';
+$string['filetypesany'] = 'すべてのファイルタイプ';
+$string['filetypesnotall'] = 'ここでは「すべてのファイルタイプ」を選択することはできません。';
+$string['filetypesnotwhitelisted'] = 'これらのファイルタイプはここでは許可されていません: {$a}';
+$string['filetypesothers'] = 'その他ファイル';
+$string['filetypesunknown'] = '不明なファイルタイプ: {$a}';
 $string['general'] = '一般';
 $string['hideadvanced'] = '拡張要素を隠す';
 $string['hour'] = '時';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'その他の設定';
 $string['modstandardels'] = 'モジュール共通設定';
 $string['month'] = '月';
 $string['mustbeoverriden'] = 'クラス {$a} のabstract form_definition() メソッドはオーバーライドすべきです。コードを修正してください。';
+$string['newvaluefor'] = '{$a} の新しい値';
 $string['nomethodforaddinghelpbutton'] = 'フォームエレメント {$a->name} (クラス{$a->classname}) にヘルプボタンを追加する方法がありません。';
 $string['nonexistentformelements'] = '存在しないフォームエレメント {$a} にヘルプボタンを追加しようとしています。';
 $string['noselection'] = '選択なし';
@@ -60,6 +70,8 @@ $string['othersettings'] = 'その他の設定';
 $string['passwordunmaskedithint'] = 'パスワードを編集する';
 $string['passwordunmaskinstructions'] = '変更を保存するにはEnterキーを押してください。';
 $string['passwordunmaskrevealhint'] = '表示';
+$string['privacy:metadata:preference:filemanager_recentviewmode'] = 'ファイルピッカエレメントの最近選択された表示モードです。';
+$string['privacy:preference:filemanager_recentviewmode'] = 'あなたのファイルピッカでのファイル表示方法は次のとおりです: {$a}';
 $string['requiredelement'] = '必須入力フィールド';
 $string['revealpassword'] = '公開';
 $string['security'] = 'セキュリティ';

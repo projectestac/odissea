@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,10 @@ $string['folder:addinstance'] = 'Add a new folder';
 $string['foldercontent'] = 'Files and subfolders';
 $string['folder:managefiles'] = 'Manage files in folder module';
 $string['folder:view'] = 'View folder content';
+$string['indicator:cognitivedepth'] = 'Folder cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Folder resource.';
+$string['indicator:socialbreadth'] = 'Folder social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Folder resource.';
 $string['maxsizetodownload'] = 'Maximum folder download size (MB)';
 $string['maxsizetodownload_help'] = 'The maximum size of folder that can be downloaded as a zip file. If set to zero, the folder size is unlimited.';
 $string['modulename'] = 'Folder';
@@ -58,6 +62,7 @@ $string['page-mod-folder-view'] = 'Folder module main page';
 $string['page-mod-folder-x'] = 'Any folder module page';
 $string['pluginadministration'] = 'Folder administration';
 $string['pluginname'] = 'Folder';
+$string['privacy:metadata'] = 'The mod_folder plugin does not store any personal data.';
 $string['search:activity'] = 'Folder';
 $string['showdownloadfolder'] = 'Show download folder button';
 $string['showdownloadfolder_help'] = 'If set to \'yes\', a button will be displayed allowing the contents of the folder to be downloaded as a zip file.';

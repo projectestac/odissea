@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -155,7 +155,7 @@ $string['newpicture_help'] = 'Seleccioneu una imatge en format JPG o PNG. La ima
 $string['noallocation'] = 'Sense ubicació';
 $string['nogroup'] = 'Sense grup';
 $string['nogrouping'] = 'Sense agrupaments';
-$string['nogroups'] = 'Encara no s\'han definit grups en aquest curs';
+$string['nogroups'] = 'Encara no s\'ha definit cap grup en aquest curs';
 $string['nogroupsassigned'] = 'No s\'han assignat grups';
 $string['nopermissionforcreation'] = 'No s\'ha pogut crear el grup "{$a}" perquè no teniu els permisos requerits';
 $string['nosmallgroups'] = 'Impedeix que el darrer grup sigui massa petit';

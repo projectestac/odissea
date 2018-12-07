@@ -28,8 +28,8 @@ class moodle1_qtype_shortanswerwiris_handler extends moodle1_qtype_shortanswer_h
         return array(
             'ANSWERS/ANSWER',
             'SHORTANSWER',
-            'SHORTANSWERWIRIS',
-            'SHORTANSWERWIRIS/WIRISOPTIONS',
+            'SHORTANSWERWiris',
+            'SHORTANSWERWiris/WirisOPTIONS',
         );
     }
 

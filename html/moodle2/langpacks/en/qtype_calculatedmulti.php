@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculatedmulti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['pluginnameediting'] = 'Editing a Calculated multichoice question';
 $string['pluginname_help'] = 'Calculated multichoice questions are like multichoice questions which in their choice elements can be included numerical formula results using wildcards in curly brackets that are substituted with individual values when the quiz is taken. For example, if the question "What is the area of a rectangle of length {l} and width {w}?" one of the choice is {={l}*{w}} (where * denotes multiplication).';
 $string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnamesummary'] = 'Calculated multichoice questions are like multichoice questions which choice elements can include formula results from numeric values that are selected randomly from a set when the quiz is taken.';
+$string['privacy:metadata'] = 'The Calculated multichoice question type plugin does not store any personal data.';

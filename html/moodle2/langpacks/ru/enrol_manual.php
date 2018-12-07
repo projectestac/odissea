@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['alterstatus'] = 'Изменить статус';
 $string['altertimeend'] = 'Изменить время окончания';
 $string['altertimestart'] = 'Изменить время начала';
 $string['assignrole'] = 'Назначить роль';
+$string['assignroles'] = 'Назначить роли';
 $string['browsecohorts'] = 'Просмотреть глобальные группы';
 $string['browseusers'] = 'Просмотреть пользователей';
 $string['confirmbulkdeleteenrolment'] = 'Вы уверены, что хотите отчислить этих пользователей?';
@@ -40,6 +41,7 @@ $string['deleteselectedusers'] = 'Отчислить выбранных поль
 $string['editselectedusers'] = 'Изменить зачисления выбранных пользователей';
 $string['enrolledincourserole'] = 'Записан на курс «{$a->course}» как «{$a->role}»';
 $string['enrolusers'] = 'Запись пользователей на курс';
+$string['enroluserscohorts'] = 'Записать выбранных пользователей и глобальные группы';
 $string['expiredaction'] = 'Действие при истечении срока зачисления';
 $string['expiredaction_help'] = 'Выберите выполняемое действие при истечении срока записи пользователя в курсе. Обратите внимание, что из курса удаляются некоторые настройки  и данные пользователя при исключении его из курса.';
 $string['expirymessageenrolledbody'] = 'Уважаемый(ая) {$a->user}, уведомляем Вас, что обучение в курсе «{$a->course}» истекает {$a->timeend}. При необходимости свяжитесь с {$a->enroller}.';
@@ -60,6 +62,8 @@ $string['messageprovider:expiry_notification'] = 'Уведомления об и
 $string['now'] = 'Сейчас';
 $string['pluginname'] = 'Зачисление вручную';
 $string['pluginname_desc'] = 'Плагин ручной записи на курсы позволяет администраторам и преподавателям записывать пользователей на курс вручную, используя соответствующую ссылку в настройках курса. Рекомендуется включить этот плагин, т.к. некоторые другие плагины зависят от него, например, самостоятельная запись.';
+$string['selectcohorts'] = 'Выберите глобальные группы';
+$string['selectusers'] = 'Выберите пользователей';
 $string['status'] = 'Разрешить ручную запись на курсы';
 $string['status_desc'] = 'Разрешить доступ к курсу внутренним зарегистрированным пользователям. Этот параметр  должен быть включен в большинстве случаев.';
 $string['statusdisabled'] = 'Отключено';

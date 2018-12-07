@@ -76,9 +76,6 @@ class script_enable_service extends agora_script_base{
         filter_set_global_state('filter/tex', TEXTFILTER_ON);
         mtrace('Activat filtre TEX', '<br/>');
 
-        set_config('loginhttps', 1);
-        mtrace('Activat login https', '<br/>');
-
         set_config('maxbytes', 0, 'assignsubmission_file');
         mtrace('Límit de tramesa de tasques pujat al límit de servidor', '<br/>');
 

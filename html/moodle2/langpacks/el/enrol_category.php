@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_category', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:synchronised'] = 'Οι αναθέσεις ρόλων συγχρονίζονται με τις εγγραφές μαθημάτων';
 $string['pluginname'] = 'Κατηγορία εγγραφών';
-$string['pluginname_desc'] = 'Το πρόσθετο εγγραφή σε κατηγορία είναι μια παλαιού τύπου λύση για εγγραφές σε επίπεδο κατηγορίας μαθήματος μέσω αναθέσεων ρόλων. Συνιστάται να χρησιμοποήσετει αντί αυτού το συγχρονισμό ομάδας χρηστών.';
+$string['pluginname_desc'] = 'Το πρόσθετο εγγραφών κατηγορίας συγχρονίζει κάθε ανάθεση ρόλου στο πλαίσιο μιας κατηγορίας, για ρόλους με την επιλογή enrol/category:synchronised ενεργοποιημένη.';

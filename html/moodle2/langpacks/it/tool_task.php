@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = 'ASAP';
+$string['backtoscheduledtasks'] = 'Torna alle elaborazioni pianificate';
 $string['blocking'] = 'Blocco';
 $string['component'] = 'Componente';
 $string['corecomponent'] = 'Core';
@@ -38,8 +39,11 @@ $string['lastruntime'] = 'Ultima elaborazione';
 $string['nextruntime'] = 'Prossima elaborazione';
 $string['plugindisabled'] = 'Plugin disabilitato';
 $string['pluginname'] = 'Configurazione elaborazioni pianificate';
+$string['privacy:metadata'] = 'Il plugin "Elaborazioni pianificate" non memorizza dati personali.';
 $string['resettasktodefaults'] = 'Ripristina la pianificazione di default';
 $string['resettasktodefaults_help'] = 'La pianificazione personalizzata sarà eliminata e verrà ripristinata la pianificazione di default';
+$string['runnow'] = 'Esegui adesso';
+$string['runnow_confirm'] = 'Sei sicuro di eseguire l\'elaborazione ‘{$a}’ adesso? L\'elaborazione sarà lanciata sul server web e richiederà del tempo per essere completata.';
 $string['scheduledtaskchangesdisabled'] = 'La modifica delle elaborazioni pianificate è disabilitata';
 $string['scheduledtasks'] = 'Elaborazioni pianificate';
 $string['taskdisabled'] = 'Elaborazione disabilitata';

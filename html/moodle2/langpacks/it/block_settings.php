@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_settings', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_settings
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'Consenti all\'utente di spostare il blocco nel dock';
 $string['pluginname'] = 'Amministrazione';
+$string['privacy:metadata'] = 'Il blocco Amministrazione visualizza solamente dati provenienti da altre parti.';
 $string['settings:addinstance'] = 'Aggiungere blocco Amministrazione';
 $string['settings:myaddinstance'] = 'Aggiungere blocco Amministrazione nella Dashboard';

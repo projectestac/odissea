@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_textarea', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_textarea', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Unformatierter Text';
+$string['privacy:metadata'] = 'Das editor_textarea-Plugin speichert keine persönlichen Daten.';

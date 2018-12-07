@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_underline', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_underline', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_underline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subrayar';
+$string['privacy:metadata'] = 'El plugin atto_underline no guarda ningún dato personal.';

@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Igual que la pregunta estándar de Ensayo, pero se
 $string['pluginnamesummary'] = 'Igual que la pregunta estándar de Ensayo, pero se pueden crear enunciados y retroalimentaciones múltiples insertando variables con números, fórmulas o gráficas.';
 $string['pluginnameadding'] = 'Agregando una pregunta de ensayo - Matemáticas y Ciencias por WIRIS';
 $string['pluginnameediting'] = 'Editando una pregunta de ensayo - Matemáticas y Ciencias por WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

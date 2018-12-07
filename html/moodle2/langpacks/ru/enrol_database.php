@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'Настраивать экземпляры спо
 $string['database:unenrol'] = 'Отчислять приостановленных пользователей';
 $string['dbencoding'] = 'Кодировка базы данных';
 $string['dbhost'] = 'Сервер базы данных';
-$string['dbhost_desc'] = 'IP-адрес или имя хоста сервера базы данных. Используйте имя системы DSN при применении ODBC.';
+$string['dbhost_desc'] = 'IP-адрес или имя хоста сервера базы данных. Используйте имя системы DSN при применении ODBC. Используйте PDO DSN при применении PDO.';
 $string['dbname'] = 'Имя базы данных';
 $string['dbname_desc'] = 'Оставьте пустым при использовании имени DSN сервера базы данных.';
 $string['dbpass'] = 'Пароль базы данных';

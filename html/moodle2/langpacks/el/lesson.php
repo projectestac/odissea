@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lesson', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,16 +34,16 @@ $string['activitylink_help'] = '<p align="center"><b>Συνδεσμος δρασ
 
 <p>Το μενού περιέχει όλες τις δραστηριότητες για αυτό το μάθημα. Εάν γίνει επιλογή, τότε ένας σύνδεσμος προς αυτή τη δραστηριότητα θα εμφανιστεί στο τέλος του Μαθήματος.</p>';
 $string['activitylinkname'] = 'Πήγαινε στο: {$a}';
-$string['addabranchtable'] = 'Προσθήκη σελίδας περιεχομένου';
-$string['addanendofbranch'] = 'Προσθήκη τέλους διακλάδωσης';
+$string['addabranchtable'] = 'Προσθήκη ενός πίνακα διακλαδώδεων';
+$string['addanendofbranch'] = 'Προσθήκη ενός τέλους διακλάδωσης';
 $string['addanewpage'] = 'Προσθήκη νέας σελίδας';
 $string['addaquestionpage'] = 'Προσθήκη σελίδας ερωτήσεων';
 $string['addaquestionpagehere'] = 'Προσθήκη σελίδας ερωτήσεων εδώ';
 $string['addbranchtable'] = 'Προσθήκη σελίδας περιεχομένου';
 $string['addcluster'] = 'Προσθήκη συστοιχίας';
-$string['addedabranchtable'] = 'Προστέθηκε σελίδα περιεχομένου';
-$string['addedanendofbranch'] = 'Προστέθηκε τέλος διακλάδωσης';
-$string['addedaquestionpage'] = 'Προστέθηκε σελίδα ερωτήσεων';
+$string['addedabranchtable'] = 'Προστέθηκε ένας πίνακας διακλαδώδεων';
+$string['addedanendofbranch'] = 'Προστέθηκε ένα τέλος διακλάδωσης';
+$string['addedaquestionpage'] = 'Προστέθηκε μια σελίδα ερωτήσεων';
 $string['addedcluster'] = 'Προστέθηκε συστοιχία';
 $string['addedendofcluster'] = 'Προστέθηκε τέλος συστοιχίας';
 $string['addendofbranch'] = 'Προσθήκη τέλους διακλάδωσης';
@@ -54,7 +54,7 @@ $string['and'] = 'ΚΑΙ';
 $string['answer'] = 'Απάντηση';
 $string['answeredcorrectly'] = 'απαντήθηκε σωστά.';
 $string['answersfornumerical'] = 'Οι απαντήσεις σε αριθμητικές ερωτήσεις πρέπει να είναι ζευγάρια από Ελάχιστες και Μέγιστες τιμές';
-$string['arrangebuttonshorizontally'] = 'Οργάνωση κουμπιών διακλάδωσης οριζόντια σε μορφή παρουσίασης;';
+$string['arrangebuttonshorizontally'] = 'Τακτοποίηση κουμπιών περιεχομένου οριζόντια;';
 $string['attempt'] = 'Προσπάθεια: {$a}';
 $string['attempts'] = 'Προσπάθειες';
 $string['attemptsdeleted'] = 'Διεγραμμένες προσπάθειες';
@@ -88,7 +88,6 @@ $string['checknavigation'] = 'Έλεγχος πλοήγησης';
 $string['checkquestion'] = 'Έλεγχος ερώτησης';
 $string['classstats'] = 'Στατιστικά τάξης';
 $string['clicktodownload'] = 'Πατήστε στον παρακάτω σύνδεσμο για να κατεβάσετε το αρχείο.';
-$string['clicktopost'] = 'Πατήστε εδώ για να γράψετε τους βαθμούς σας στη λίστα με τους Υψηλότερους Βαθμούς.';
 $string['clusterjump'] = 'Ερώτηση μέσα σε συστοιχεία που δεν εμφανίστηκε';
 $string['clustertitle'] = 'Συστοιχεία';
 $string['collapsed'] = 'Ξεδιπλωμένο';
@@ -99,7 +98,6 @@ $string['completethefollowingconditions'] = 'Πρέπει να εκλπληρώ�
 $string['conditionsfordependency'] = 'Προϋποθέσεις για την εξάρτηση';
 $string['configactionaftercorrectanswer'] = 'Η προεπιλεγμένη ενέργεια μετά από μια σωστή απάντηση';
 $string['configmaxanswers'] = 'Προεπιλογή του μέγιστου αριθμού απαντήσεων ανά σελίδα';
-$string['configmaxhighscores'] = 'Αριθμός των υψηλών βαθμών που εμφανίζονται';
 $string['configmediaclose'] = 'Εμφανίζεται ένα κουμπί εξόδου ως μέρος του αναδυόμενου παραθύρου που δημιουργείται για ένα συνδεδεμένο αρχείο πολυμέσων';
 $string['configmediaheight'] = 'Ορίζει το ύψος του αναδυόμενου παράθυρου που εμφανίζεται για ένα συνδεδεμένο αρχείο πολυμέσων';
 $string['configmediawidth'] = 'Ορίζει το πλάτος του αναδυόμενου παράθυρου που εμφανίζεται για ένα συνδεδεμένο αρχείο πολυμέσων';
@@ -161,7 +159,6 @@ $string['displaydefaultfeedback_help'] = '<p align="center"><strong>Αναπαρ
 <p>Εάν <strong>ΝΑΙ</strong>, όταν δεν υπάρχει απάντηση για μια συγκεκριμένη ερώτηση, οι προκαθορισμένες απαντήσεις "Αυτή είναι η σωστή απάντηση" και
     "Αυτή είναι η λάθος απάντηση" χρησιμοποιούνται.</p>
 <p> Εάν <strong>ΟΧΙ</strong>, όταν δεν υπάρχει απάντηση για μια συγκεκριμένη ερώτηση, δεν εμφανίζεται ανατροφοδότηση. Ο χρήστης που συμμετέχει σε αυτό το Μάθημα κατευθύνεται στην επόμενη σελίδα Μαθήματος.</p>';
-$string['displayhighscores'] = 'Εμφάνιση των υψηλότερων βαθμολογιών';
 $string['displayinleftmenu'] = 'Εμφάνιση στο αριστερό μενού;';
 $string['displayleftif'] = 'και εμφάνιση μόνο αν {$a} έχει βαθμό υψηλότερο από:';
 $string['displayleftif_help'] = 'Αυτή η ρύθμιση καθορίζει αν ο μαθητής πρέπει να επιτύχει κάποιο βαθμό πριν την εμφάνιση του αριστερού μενού. Αυτό αναγκάζει τον μαθητή να περάσει από όλο το μάθημα για την πρώτη του προσπάθεια, έπειτα μετά την επίτευξη του απαιτούμενου βαθμού θα μπορεί να χρησιμοποιήσει το μενού στα αριστερά για επανεξέταση.';
@@ -187,7 +184,7 @@ $string['displayreview_help'] = '<p align="center"><b>Προβολή Κουμπ�
 <p>Αυτό θα προβάλει ένα κουμπί έπειτα από μια λανθασμένα απαντημένη ερώτηση, επιτρέποντας στο μαθητή να ξαναπροσπαθήσει. Δεν είναι συμβατό με ερωτήσεις διαγωνίσματος για αυτό αγνοήστε το, εάν χρησιμοποιείτε ερωτήσεις διαγωνίσματος.</p>';
 $string['displayscorewithessays'] = 'Πήρατε {$a->score} στα {$a->tempmaxgrade} για τις αυτόματα βαθμολογούμενες ερωτήσεις.<br>Οι {$a->essayquestions} ερωτήσεις έκθεσης θα βαθμολογηθούν και θα προστεθούν<br />στον τελικό σας βαθμό αργότερα.<br /><br />Ο τρέχον βαθμός σας χωρίς τις ερωτήσεις έκθεσης είναι {$a->score} στα {$a->grade}';
 $string['displayscorewithoutessays'] = 'Ο βαθμός σας είναι {$a->score} (στα {$a->grade}).';
-$string['edit'] = 'Επεξεργασία';
+$string['edit'] = 'Edit';
 $string['editendofbranch'] = 'Επεξεργασία σελίδας τέλους διακλάδωσης';
 $string['editlessonsettings'] = 'Επεξεργασία ρυθμίσεων ενότητας';
 $string['editpagecontent'] = 'Επεξεργασία περιεχομένων σελίδας';
@@ -201,7 +198,6 @@ $string['endofbranch'] = 'Τέλος διακλάδωσης';
 $string['endofclustertitle'] = 'Τέλος συστοιχίας';
 $string['endoflesson'] = 'Τέλος ενότητας';
 $string['enteredthis'] = 'εισήχθει αυτό.';
-$string['entername'] = 'Εισάγετε ένα παρατσούκλι για την λίστα των υψηλών βαθμολογιών';
 $string['enterpassword'] = 'Παρακαλώ εισάγετε τον κωδικό:';
 $string['eolstudentoutoftime'] = 'Προσοχή: Βγήκατε εκτός χρόνου σε αυτή την ενότητα. Η τελευταία απάντησή σας μπορεί να μη μετρήσει αν δόθηκε μετά το τέλος του χρόνου.';
 $string['eolstudentoutoftimenoanswers'] = 'Δεν απαντήσατε καμία ερώτηση. Πήρατε 0 σε αυτή την ενότητα.';
@@ -226,6 +222,7 @@ $string['general'] = 'Γενικά';
 $string['grade'] = 'Βαθμός';
 $string['gradebetterthan'] = 'Βαθμός καλύτερος από (%)';
 $string['gradebetterthanerror'] = 'Βαθμολογηθείτε καλύτερα από {$a} τις εκατό';
+$string['graded'] = 'Βαθμολογήθηκε';
 $string['gradeessay'] = 'Βαθμολογήστε τις ερωτήσεις της έκθεσης ({$a->notgradedcount} δεν βαθμολογήθηκαν και {$a->notsentcount} δεν στάλθηκαν)';
 $string['gradeis'] = 'Ο βαθμός είναι {$a}';
 $string['gradeoptions'] = 'Ρυθμίσεις βαθμού';
@@ -240,7 +237,6 @@ $string['handlingofretakes_help'] = '<p align="center"><b>Ο βαθμός σε �
 $string['havenotgradedyet'] = 'Δεν έχει βαθμολογηθεί ακόμα';
 $string['here'] = 'εδώ';
 $string['highscore'] = 'Υψηλός βαθμός';
-$string['highscores'] = 'Υψηλοί βαθμοί';
 $string['hightime'] = 'Υψηλός χρόνος';
 $string['importcount'] = 'Εισαγωγή {$a} ερωτήσεων';
 $string['importquestions'] = 'Εισαγωγή ερωτήσεων';
@@ -367,7 +363,6 @@ $string['maxgrade_help'] = '<p align="center"><b>Βαθμολογία εργασ
 τότε ο μέγιστος γενικός βαθμός της άσκησης είναι το 100.</p>
 
 <p>Ο βαθμός μπορεί να αλλάξει εύκολα και να γίνει άμεσα αντιληπτός από διδάσκοντες και διδασκόμενους.</p>';
-$string['maxhighscores'] = 'Αριθμός υψηλών βαθμών προς εμφάνιση';
 $string['maximumnumberofanswersbranches'] = 'Μέγιστος αριθμός απαντήσεων/διακλαδώσεων';
 $string['maximumnumberofanswersbranches_help'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -454,7 +449,7 @@ $string['notcompleted'] = 'Δεν ολοκληρώθηκε';
 $string['notdefined'] = 'Δεν καθορίστηκε';
 $string['notenoughsubquestions'] = 'Δεν έχουν οριστεί αρκετά υποερωτήματα!<br />
 Θέλετε να επιστρέψετε και να διορθώσετε αυτήν την ερώτηση;';
-$string['nothighscore'] = 'Δεν μπήκατε στη λίστα με τους {$a} υψηλότερους βαθμούς.';
+$string['notgraded'] = 'Χωρίς βαθμό';
 $string['notitle'] = 'Χωρίς τίτλο';
 $string['numberofcorrectanswers'] = 'Αριθμός σωστών απαντήσεων: {$a}';
 $string['numberofcorrectmatches'] = 'Αριθμός σωστών αντιστοιχιών: {$a}';
@@ -530,7 +525,7 @@ $string['practice_help'] = '<p align="center"><b>Εξάσκηση Ενότητα
 
 <p>Ένα μάθημα πρακτικής δεν θα εμφανίζεται στό βαθμολόγιο.</p>';
 $string['preprocesserror'] = 'Ένα σφάλμα συνέβη κατά την προεπεξεργασία!';
-$string['preview'] = 'Προεπισκόπηση';
+$string['preview'] = 'Προεπισκόπιση';
 $string['previewlesson'] = 'Προεπισκόπηση {$a}';
 $string['previouspage'] = 'Προηγούμενη σελίδα';
 $string['processerror'] = 'Ένα σφάλμα συνέβη κατά την επεξεργασία!';
@@ -603,7 +598,6 @@ $string['timeremaining'] = 'Υπολοιπόμενος χρόνος';
 $string['timespenterror'] = 'Πρέπει να αφιερώσετε τουλάχιστον {$a} λεπτά στην ενότητα';
 $string['timespentminutes'] = 'Χρόνος που Πέρασε (σε λεπτά)';
 $string['timetaken'] = 'Χρόνος που χρειάστηκε';
-$string['topscorestitle'] = 'Οι {$a} Υψηλότεροι Βαθμοί';
 $string['true'] = 'Σωστό';
 $string['unseenpageinbranch'] = 'Ερώτηση μέσα σε διακλάδωση που δεν εμφανίσθηκε';
 $string['unsupportedqtype'] = 'Μη υποστηριζόμενος τύπος ερώτησης ({$a})!';
@@ -618,7 +612,6 @@ $string['usepassword_help'] = '<p align="center"><b>Χρήση Συνθηματ�
 <p>Η επιλογή Χρήση Συνθηματικού χρησιμοποιείται για να συνδέσει ένα ενεργό κωδικό με την άσκηση.Υπάρχουν υποθέσεις πότε είναι απαραίτητη η προστασία της άσκησης με κωδικό. Για παράδειγμα, μία άσκηση μπορεί να χρησιμοποιείται από αρκετές ομάδες μαθητών σε μιά ενότητα και κάθε ομάδα χρησιμοποιεί την άσκηση σε διαφορετικές ώρες. Ο ενεργός κωδικός χρησιμοποιείται ωστέ να εμποδίσει την &quot;δεύτερη&quot; ομάδα μαθητών, να κάνει την άσκηση όταν η άσκηση έχει ανοιχτεί από το &quot;πρώτη&quot; ομάδα. </p>
 <p>&nbsp;</p>';
 $string['viewgrades'] = 'Προβολή βαθμών';
-$string['viewhighscores'] = 'Εμφάνιση της λίστας με τους Υψηλότερους Βαθμούς';
 $string['viewreports'] = 'Εμφάνιση {$a->attempts} ολοκληρωμένων προσπαθειών του χρήστη {$a->student}';
 $string['viewreports2'] = 'Εμφάνιση των {$a} ολοκληρωμένων προσπαθειών';
 $string['welldone'] = 'Μπράβο!';
@@ -628,7 +621,6 @@ $string['wronganswerscore'] = 'Λάθος βαθμός απάντησης';
 $string['wrongresponse'] = 'Λάθος απάντηση';
 $string['xattempts'] = '{$a} προσπάθειες';
 $string['youhaveseen'] = 'Έχετε δει περισσότερες από μία σελίδες αυτής της ενότητας.<br />Θέλετε να ξεκινήσετε από την τελευταία σελίδα που είδατε;';
-$string['youmadehighscore'] = 'Μπήκατε στην λίστα με τους {$a} υψηλότερους βαθμούς!';
 $string['youranswer'] = 'Η απάντησή σας';
 $string['yourcurrentgradeis'] = 'Ο τρέχων βαθμός σας είναι {$a}';
 $string['yourcurrentgradeisoutof'] = 'Ο τρέχον βαθμός σας είναι {$a->grade} στα {$a->total}';

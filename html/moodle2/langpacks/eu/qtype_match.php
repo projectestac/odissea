@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_match', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,6 @@ $string['pluginnameadding'] = 'Lotu galdera gehitzen ';
 $string['pluginnameediting'] = 'Lotu galdera editatzen';
 $string['pluginname_help'] = 'Entzuntziatu lotu izeneko galderetan izen-zerrenda bat (galderak) eta izen edo enuntziatuen beste zerrenda baten (erantzunak) arteko erlazioa zuzen ezarri behar da.';
 $string['pluginnamesummary'] = 'Azpigaldera multzo bateko bakoitzeko erantzuna aukera-zerrenda batetik aukeratu behar da.';
+$string['privacy:metadata'] = 'Lotu galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['shuffle'] = 'Nahastu';
 $string['shuffle_help'] = 'Gaituz gero, saiakera bakoitzean erantzunak ausaz ordenatzen dirak, betiere galdetegiaren ezarpenetako "Galderen barruan nahastu" ezarpenean "Bai" ezarrita badago.';

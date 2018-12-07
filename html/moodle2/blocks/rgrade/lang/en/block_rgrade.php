@@ -10,4 +10,4 @@ $string['alert_units_table'] = "The data displayed correspond to the last two un
 $string['alert_units_table_hide'] = "I don't want to see the notice again.";
 $string['alert_units_table_ok'] = 'Accept';
 
-$string['rgrade:addinstance'] = 'Add a new remote contents\' grades block';
+$string['rgrade:myaddinstance'] = 'Add a new remote contents\' grades block';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_replace', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['notsupported'] = 'Das Script verändert die Datenbank. Die Änderungen 
 <br />Erstellen Sie unbedingt eine vollständige Sicherung der Datenbank, bevor Sie dieses Script ausführen!';
 $string['pageheader'] = 'Suchen und Ersetzen in der Datenbank';
 $string['pluginname'] = 'Suchen und Ersetzen in der Datenbank';
+$string['privacy:metadata'] = 'Das Plugin \'DB Suchen und Ersetzen\' speichert keine personenbezogenen Daten.';
 $string['replacewith'] = 'Durch diesen Text ersetzen:';
 $string['replacewithhelp'] = 'neue Server-URL';
 $string['searchwholedb'] = 'In der gesamten Datenbank suchen:';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scormreport_interactions', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   scormreport_interactions
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Relatório de interações';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'Se exibe o resumo das questões no relatório de interações do SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'Se exibe o resumo de respostas no relatório de interações do SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'Se exibe o resumo de resultados no relatório de interações do SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Se exibe o resumo de respostas certas no relatório de interações do SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Número de utilizadores exibidos nos relatórios SCORM';
 $string['questionx'] = 'Pergunta {$a}';
 $string['responsex'] = 'Resposta {$a}';
 $string['resultx'] = 'Resultado {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_lp', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_lp', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,5 +33,6 @@ $string['myplans'] = 'I miei piani di formazione';
 $string['noactiveplans'] = 'Non ci sono piani di formazione attivi.';
 $string['planstoreview'] = 'Piano da revisionare';
 $string['pluginname'] = 'Piani di formazione';
+$string['privacy:metadata'] = 'Il blocco Piani di formazione visualizza solamente dati provenienti da altre parti.';
 $string['viewmore'] = 'Visualizza più elementi...';
 $string['viewotherplans'] = 'Visualizza altri piani...';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_accessibilitychecker', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_accessibilitychecker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['needsmorecontrast'] = 'I colori di primo piano e sfondo non hanno suffi
 $string['needsmoreheadings'] = 'E\' presente moto testo privo di intestazioni. Le intestazioni facilitano la navigazione della pagine tramite screen reader e rendono comunque il testo più usabile per chiunque.';
 $string['nowarnings'] = 'Congratulazioni, non sono stati trovati problemi di accessibilità!';
 $string['pluginname'] = 'Verifica accessibilità';
+$string['privacy:metadata'] = 'Il plugin atto_accessibilitychecker non memorizza dati personali.';
 $string['report'] = 'Report accessibilità:';
 $string['tablesmissingcaption'] = 'Le tabelle devono avere le didascalie. Sebbene non strettamente necessarie per tutte le tabelle, le didascalie sono generalmente molto utili.';
 $string['tablesmissingheaders'] = 'Le tabelle devono utilizzare le intestazioni di riga e di colonna';

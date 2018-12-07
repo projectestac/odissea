@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_timelimit', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_timelimit
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = 'Galdetegi honek {$a}-(e)ko denbora-muga du. Denbora saiakera egiten hasten zarenean hasiko da eta bukatu aurretik bidali beharko duzu. Ziur zaude orain hasi nahi duzula?';
 $string['confirmstartheader'] = 'Denbora-mugadun galdetegia';
 $string['pluginname'] = 'Denbora-mugaren araberako sarbide-araua';
+$string['privacy:metadata'] = 'Denbora-mugaren araberako galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['quiztimelimit'] = 'Denbora-muga: {$a}';

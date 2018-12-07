@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_static', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_static', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_static
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Eskaera estatikoen cachea';
+$string['pluginname'] = 'Eskaeren cache estatikoa';
+$string['privacy:metadata'] = 'Eskaeren cache estatikoa cache-biltegi pluginak datu batzuk gordetzen ditu, baina datu hauek soilik HTTP eskaera bakoitzaren bizialdian iraungo dute.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_tinymce', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -475,7 +475,7 @@ $string['layer:forward_desc'] = 'Avanzar';
 $string['layer:insertlayer_desc'] = 'Insertar nueva capa';
 $string['media:delta_height'] = '';
 $string['media:delta_width'] = '';
-$string['media:desc'] = 'Insertar/editar medio embebido';
+$string['media:desc'] = 'Insertar/editar multimedia embebida';
 $string['media_dlg:advanced'] = 'Avanzado';
 $string['media_dlg:align'] = 'Alineación';
 $string['media_dlg:align_bottom'] = 'Debajo';
@@ -576,7 +576,7 @@ $string['media_dlg:swstretchstyle'] = 'Estilo estiramiento';
 $string['media_dlg:swstretchvalign'] = 'Alin. V. Estiramiento';
 $string['media_dlg:target'] = 'Target';
 $string['media_dlg:targetcache'] = 'Target cache';
-$string['media_dlg:title'] = 'Insertar/editar medio embebido';
+$string['media_dlg:title'] = 'Insertar/editar multimedia embebida';
 $string['media_dlg:type'] = 'Tipo';
 $string['media_dlg:uimode'] = 'Modo UI';
 $string['media_dlg:video'] = 'Video HTML5';
@@ -586,7 +586,7 @@ $string['media_dlg:windowlessvideo'] = 'Video sin ventana';
 $string['media_dlg:windowsmedia'] = 'Windows Media';
 $string['media_dlg:wmode'] = 'WMode';
 $string['media_dlg:wmp_options'] = 'Opciones Windows media player';
-$string['media:edit'] = 'Editar medio embebido';
+$string['media:edit'] = 'Editar multimedia embebida';
 $string['nonbreaking:nonbreaking_desc'] = 'Insertar caracter de espacio \'non-breaking\'';
 $string['pagebreak:desc'] = 'Insertar fin de página para imprimir';
 $string['paste_dlg:text_linebreaks'] = 'Keep linebreaks';
@@ -642,7 +642,7 @@ $string['spellchecker:sug'] = 'Sugerencias';
 $string['spellchecker:wait'] = 'Espere...';
 $string['style:delta_height'] = '';
 $string['style:delta_width'] = '';
-$string['style:desc'] = 'Editar Estilo CSS';
+$string['style:desc'] = 'Editar estilo CSS';
 $string['style_dlg:apply'] = 'Aplicar';
 $string['style_dlg:background'] = 'Fondo';
 $string['style_dlg:background_attachment'] = 'Adjunto';
@@ -705,7 +705,7 @@ $string['style_dlg:text_tab'] = 'Texto';
 $string['style_dlg:text_underline'] = 'Subrayado';
 $string['style_dlg:text_variant'] = 'Variante';
 $string['style_dlg:text_weight'] = 'Peso';
-$string['style_dlg:title'] = 'Editar Estilo CSS';
+$string['style_dlg:title'] = 'Editar estilo CSS';
 $string['style_dlg:toggle_insert_span'] = 'Insertar extensión en selección';
 $string['style_dlg:top'] = 'Arriba';
 $string['style_dlg:visibility'] = 'Visibilidad';
@@ -796,7 +796,7 @@ $string['table_dlg:td'] = 'Datos';
 $string['table_dlg:tfoot'] = 'Pie de la tabla';
 $string['table_dlg:th'] = 'Encabezado';
 $string['table_dlg:thead'] = 'Encabezado de la tabla';
-$string['table_dlg:title'] = 'Insertar/Modificar tabla';
+$string['table_dlg:title'] = 'Insertar/editar tabla';
 $string['table_dlg:valign'] = 'Alineación vertical';
 $string['table_dlg:width'] = 'Ancho';
 $string['table:merge_cells_delta_height'] = '';
@@ -839,14 +839,14 @@ $string['xhtmlxtras:acronym_delta_width'] = '';
 $string['xhtmlxtras:acronym_desc'] = 'Acrónimo';
 $string['xhtmlxtras:attribs_delta_height'] = '';
 $string['xhtmlxtras:attribs_delta_width'] = '';
-$string['xhtmlxtras:attribs_desc'] = 'Insertar/Editar atributos';
+$string['xhtmlxtras:attribs_desc'] = 'Insertar/editar atributos';
 $string['xhtmlxtras:cite_delta_height'] = '';
 $string['xhtmlxtras:cite_delta_width'] = '';
 $string['xhtmlxtras:cite_desc'] = 'Cita';
 $string['xhtmlxtras:del_delta_height'] = '';
 $string['xhtmlxtras:del_delta_width'] = '';
 $string['xhtmlxtras:del_desc'] = 'Borrado';
-$string['xhtmlxtras_dlg:attribs_title'] = 'Insertar/Editar atributos';
+$string['xhtmlxtras_dlg:attribs_title'] = 'Insertar/editar atributos';
 $string['xhtmlxtras_dlg:attrib_tab'] = 'Atributos';
 $string['xhtmlxtras_dlg:attribute_attrib_tab'] = 'Atributos';
 $string['xhtmlxtras_dlg:attribute_events_tab'] = 'Eventos';

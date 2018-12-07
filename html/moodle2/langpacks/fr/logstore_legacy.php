@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_legacy', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_legacy', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_legacy
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,4 +30,11 @@ $string['loglegacy'] = 'Enregistrer les données dans la table obsolète';
 $string['loglegacy_help'] = 'Ce plugin enregistre les données d\'historiques dans la table d\'historiques obsolète (mdl_log). Cette fonctionnalité a été remplacée par des plugins plus riches et plus efficients. Par conséquent, ce plugin ne devrait être employé que si vous utilisez d\'anciens rapports personnalisés qui font appel directement à l\'ancienne table. L\'écriture d\'historiques à l\'aide de ce plugin augmentera la charge serveur. Il est donc vivement recommandé de le désactiver.';
 $string['pluginname'] = 'Historiques obsolètes';
 $string['pluginname_desc'] = 'Un plugin qui enregistre les historiques dans la table obsolète de la base de données.';
+$string['privacy:metadata:log'] = 'Une collection des événements passés';
+$string['privacy:metadata:log:action'] = 'Une description de l\'action';
+$string['privacy:metadata:log:info'] = 'Informations additionnelles';
+$string['privacy:metadata:log:ip'] = 'L\'adresse IP utilisée au moment de l\'événement';
+$string['privacy:metadata:log:time'] = 'La date à laquelle l\'action a eu lieu';
+$string['privacy:metadata:log:url'] = 'L\'URL liée à l\'événement';
+$string['privacy:metadata:log:userid'] = 'L\'identifiant de l\'utilisateur qui a effectué l\'action';
 $string['taskcleanup'] = 'Nettoyage de la table d\'historiques obsolète';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_censor', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_censor', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_censor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'merda,fodido,foda-se,foder,picha,caralho,cabeça de cócó,pila,cona,idiota,cú,pilinha,cabrão,porra,prostituta,puta,masturbar,punheta,sacana,vibrador,masturbação,orgasmo,pénis,escarumba,rata,vagina';
 $string['filtername'] = 'Censura de palavras';
+$string['privacy:metadata'] = 'O módulo Censura de palavras não armazena dados pessoais.';

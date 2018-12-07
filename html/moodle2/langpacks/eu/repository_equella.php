@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_equella', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_equella
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['equella:view'] = 'Ikusi EQUELLA biltegia';
 $string['group'] = '{$a} rolaren ezarpenak';
 $string['groupdefault'] = 'Berezkoa';
 $string['pluginname'] = 'EQUELLA biltegia';
+$string['privacy:metadata'] = 'EQUELLA biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['restrictionattachmentsonly'] = 'Erantsitako baliabidea bakarrik';
 $string['restrictionitemsonly'] = 'Elementuen laburpena bakarrik';
 $string['restrictionnone'] = 'Mugarik ez';

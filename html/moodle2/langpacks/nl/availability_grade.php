@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grade', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['missing'] = '(ontbrekende activiteit)';
 $string['option_max'] = 'moet < zijn';
 $string['option_min'] = 'moet  ≥ zijn';
 $string['pluginname'] = 'Beperking door cijfers';
+$string['privacy:metadata'] = 'De beperkingen door cijfers-plugin bewaart geen persoonlijke gegevens.';
 $string['requires_any'] = 'Je hebt een cijfer in  <strong>{$a}</strong>';
 $string['requires_max'] = 'Je krijgt een geschikt cijfer in  <strong>{$a}</strong>';
 $string['requires_min'] = 'Je bereikt een vereist cijfer in  <strong>{$a}</strong>';

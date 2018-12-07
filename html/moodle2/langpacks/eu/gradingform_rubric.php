@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_rubric', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,7 @@ $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Errubrikaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi errubrika hau egiaztatu eta kalifikazioa eguneratu arte.';
 $string['pluginname'] = 'Errubrika';
 $string['previewrubric'] = 'Aurreikusi errubrika';
+$string['privacy:metadata'] = 'Errubrika kalifikazio-formulario pluginak ez du datu pertsonalik biltzen.';
 $string['regrademessage1'] = 'Aldaketak egin behar dituzu kalifikatzeko erabili den errubrika batean. Mesedez, adierazi orain arteko kalifikazioak berrikusi behar diren. Ezarpen hau gaitzen baduzu, errubrika ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regrademessage5'] = 'Kalifikatzeko erabilia izan den errubrika batean aldaketa nabarmenak egin behar dituzu. Kalifikazio liburuaren balioa ez da aldatuko, baina errubrika ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regradeoption0'] = 'Ez markatu berriz kalifikatzeko';

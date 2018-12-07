@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Cijfer voor {$a}';
 $string['gradeitem'] = 'Beoordeel item: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Dit cijfer kan niet overschreven worden.';
 $string['gradeuser'] = 'Beoordeel gebruiker: {$a}';
+$string['itemsperpage'] = 'Items per pagina';
 $string['noscreens'] = 'Kon geen geschikt enkelvoudig scherm vinden.';
 $string['notvalid'] = 'Ongeldig enkelvoudig scherm: {$a}';
 $string['override'] = 'Overschrijf';

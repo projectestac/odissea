@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_outline', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,9 +30,10 @@ $string['eventoutlinereportviewed'] = 'Lernzielbericht gesehen';
 $string['neverseen'] = 'Nie gesehen';
 $string['nocapability'] = 'Zugriff auf Benutzer-Gliederungsbericht nicht möglich';
 $string['nologreaderenabled'] = 'Anzeige für Logdaten deaktiviert';
-$string['numviews'] = '{$a->numviews} von {$a->distinctusers} Nutzern';
+$string['numviews'] = '{$a->numviews} Ansichten von {$a->distinctusers} Nutzer/innen';
 $string['outline:view'] = 'Übersicht der Kursaktivitäten ansehen';
 $string['page-report-outline-index'] = 'Kurs-Lernzielbericht';
 $string['page-report-outline-user'] = 'Nutzer-Lernzielbericht';
 $string['page-report-outline-x'] = 'Alle Lernzielberichte';
 $string['pluginname'] = 'Kursaktivität';
+$string['privacy:metadata'] = 'Das Aktivitätenberichts-Plugin speichert keine persönlichen Daten';

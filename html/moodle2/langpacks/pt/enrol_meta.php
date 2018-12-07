@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_meta', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['nosyncroleids'] = 'Papéis que não são sincronizados';
 $string['nosyncroleids_desc'] = 'Por predefinição todas as atribuições de papéis feitas ao nível da disciplina são sincronizadas. Os papéis aqui indicados não serão sincronizados. Os papéis atuais serão atualizados durante a próxima execução do cron.';
 $string['pluginname'] = 'Sincronização com Disciplina';
 $string['pluginname_desc'] = 'Este módulo de inscrição permite sincronizar inscrições e atribuições de papéis entre duas disciplinas.';
+$string['privacy:metadata:core_group'] = 'O módulo de inscrição por sincronização pode criar um novo grupo ou usar um grupo existente para adicionar todos os participantes da disciplina vinculada.';
 $string['syncall'] = 'Sincronizar todos os utilizadores inscritos';
 $string['syncall_desc'] = 'Se ativar esta opção, todos os utilizadores inscritos são sincronizados mesmo que não possuam nenhum papel na disciplina de origem das inscrições. Caso contrário, apenas os utilizadores que possuem pelo menos um papel sincronizado na disciplina de origem serão inscritos na disciplina.';

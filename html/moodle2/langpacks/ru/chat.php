@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,8 @@ $string['explainmethoddaemon'] = 'Эти параметры используют
 $string['explainmethodnormal'] = 'Эти параметры используются <strong>только</strong> если выбран «Обычный режим»';
 $string['generalconfig'] = 'Основная конфигурация';
 $string['idle'] = 'Фоном';
+$string['indicator:cognitivedepth_help'] = 'Этот показатель основан на  глубине познания, достигнутой студентом при участии в Чатах.';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Чат.';
 $string['inputarea'] = 'Область ввода';
 $string['invalidid'] = 'Невозможно найти этот чат!';
 $string['list_all_sessions'] = 'Список всех сессий.';

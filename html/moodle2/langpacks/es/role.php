@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['allowroletooverride'] = 'Permitir a los usuarios con el rol {$a->fromro
 $string['allowroletoswitch'] = 'Permitir a los usuarios con el rol {$a->fromrole} cambiar al rol {$a->targetrole}';
 $string['allowswitch'] = 'Permitir cambios de rol';
 $string['allsiteusers'] = 'Todos los usuarios del sitio';
+$string['analytics:listinsights'] = 'Listar intuiciones (predicciones)';
 $string['archetype'] = 'Arquetipo de rol';
 $string['archetypecoursecreator'] = 'ARQUETIPO: Creador de cursos';
 $string['archetypeeditingteacher'] = 'ARQUETIPO: Profesor con permiso de edición';
@@ -139,6 +140,7 @@ $string['course:create'] = 'Crear cursos';
 $string['course:delete'] = 'Eliminar cursos';
 $string['course:enrolconfig'] = 'Configurar ejemplos de matriculación en cursos';
 $string['course:enrolreview'] = 'Revisar matriculaciones del curso';
+$string['course:ignoreavailabilityrestrictions'] = 'Ignorar restricciones de acceso';
 $string['course:ignorefilesizelimits'] = 'Usar archivos mayores a las restricciones por tamaño';
 $string['course:isincompletionreports'] = 'Mostrarse en reportes de finalización';
 $string['course:manageactivities'] = 'Gestionar actividades';
@@ -191,6 +193,7 @@ $string['errorbadrolename'] = 'Nombre de rol incorrecto';
 $string['errorbadroleshortname'] = 'Nombre corto de rol incorrecto';
 $string['errorexistsrolename'] = 'El nombre de este rol ya existe';
 $string['errorexistsroleshortname'] = 'El nombre de este rol ya existe';
+$string['errorroleshortnametoolong'] = 'El nombre corto no puede exceder de 100 caracteres';
 $string['eventroleallowassignupdated'] = 'Permitir asignación de roles';
 $string['eventroleallowoverrideupdated'] = 'Permitir sobreescritura de roles';
 $string['eventroleallowswitchupdated'] = 'Permitir cambio de rol';
@@ -381,7 +384,6 @@ $string['site:viewfullnames'] = 'Ver siempre nombres completos de los usuarios';
 $string['site:viewparticipants'] = 'Ver a los participantes';
 $string['site:viewreports'] = 'Ver informes';
 $string['site:viewuseridentity'] = 'Ver la identidad completa del usuario en las listas';
-$string['tag:create'] = 'Crear nuevas marcas';
 $string['tag:edit'] = 'Editar marcas existentes';
 $string['tag:editblocks'] = 'Editar bloques en páginas de marcas';
 $string['tag:flag'] = 'Señalar marcas (tags) como inapropiadas';

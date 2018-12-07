@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_admin_bookmarks', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_admin_bookmarks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['admin_bookmarks:addinstance'] = '新しい管理ブックマークブロックを追加する';
 $string['admin_bookmarks:myaddinstance'] = '新しい管理ブックマークブロックをダッシュボードに追加する';
 $string['pluginname'] = '管理ブックマーク';
+$string['privacy:metadata'] = '管理ブックマークブロックは他の場所で保存されたデータのみ表示します。';

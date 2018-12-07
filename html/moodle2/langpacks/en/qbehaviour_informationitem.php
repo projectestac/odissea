@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_informationitem', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_informationitem', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_informationitem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Behaviour for information items';
+$string['privacy:metadata'] = 'The Information items question behaviour plugin does not store any personal data.';
 $string['seen'] = 'Seen';

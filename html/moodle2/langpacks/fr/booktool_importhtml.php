@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'booktool_importhtml', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   booktool_importhtml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['importhtml:import'] = 'Importer des chapitres';
 $string['importing'] = 'Importation';
 $string['importingchapters'] = 'Importation de chapitres dans un livre';
 $string['pluginname'] = 'Importation de chapitre de livre';
+$string['privacy:metadata'] = 'Le plugin Importation de chapitre de livre n\'enregistre aucune donnée personnelle.';
 $string['relinking'] = 'Mise à jour des liens';
 $string['type'] = 'Type';
 $string['typeonefile'] = 'Un fichier HTML avec les entêtes comme chapitres';

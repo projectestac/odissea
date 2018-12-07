@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assign', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,9 +81,7 @@ $string['attemptheading'] = 'Poging {$a->attemptnumber}: {$a->submissionsummary}
 $string['attempthistory'] = 'Vorige pogingen';
 $string['attemptnumber'] = 'Pogingnummer';
 $string['attemptreopenmethod'] = 'Heropende pogingen';
-$string['attemptreopenmethod_help'] = 'Bepaalt hoe de inzendingen van leerlingen heropend kunnen worden. De mogelijke opties zijn: <ul><li>Nooit - de inzending van de leerling kan door een leraar niet heropend worden.</li>
-<li>Manueel - de inzending van de leerling kan door een leraar heropend worden.</li>
-<li>Automatisch tot geslaagd - De inzending van de leerling wordt automatisch terug heropend tot de leerling een cijfer heeft dat hoog genoeg is om te slagen. Deze waarde wordt voor deze opdracht ingesteld in de cijferlijst, bij Categorieën en items.</li></ul>';
+$string['attemptreopenmethod_help'] = 'Bepaalt hoe de inzendingen van leerlingen heropend kunnen worden. De beschikbare opties zijn: <ul><li>Nooit - de inzending van de leerling kan niet heropend worden.</li><li>Manueel - De inzending van de leerling kan worden heropend door een leraar.</li><li>Automatisch tot geslaagd - De inzending van de leerling wordt automatisch heropend tot de leerling een cijfer behaalt dat ingesteld is als slagingswaarde in het Cijferboek (via Cijferboek instellen) voor deze opdracht. </li></ul>';
 $string['attemptreopenmethod_manual'] = 'Manueel';
 $string['attemptreopenmethod_none'] = 'Nooit';
 $string['attemptreopenmethod_untilpass'] = 'Automatisch tot geslaagd';
@@ -107,6 +105,8 @@ $string['batchsetmarkingworkflowstateforusers'] = 'Stel de status van de beoorde
 $string['blindmarking'] = 'Blind beoordelen';
 $string['blindmarkingenabledwarning'] = 'Voor deze activiteit is blind beoordelen ingeschakeld.';
 $string['blindmarking_help'] = 'Blind beoordelen verbergt de identiteit van leerlingen voor de beoordelaars. De blind beooordelen instellingen zullen geblokkeerd worden als er minstens één beoordeling is gebeurd voor deze opdracht.';
+$string['calendardue'] = '{$a} moet worden ingeleverd';
+$string['calendargradingdue'] = '{$a} moet worden beoordeeld';
 $string['changefilters'] = 'Wijzig filters';
 $string['changegradewarning'] = 'Deze opdracht heeft beoordeelde inzendingen en het wijzigen van het cijfer zal de bestaande cijfers niet herberekenen. Je moet alle bestaande inzendingen herbeoordelen als je het cijfer wil wijzigen.';
 $string['changeuser'] = 'Wijzig gebruiker';
@@ -121,6 +121,7 @@ $string['completionsubmit'] = 'Leerling moet deze activiteit insturen om ze te v
 $string['configshowrecentsubmissions'] = 'Iedereen kan in rapportages over "Recente activiteit" zien dat er opdrachten zijn ingestuurd.';
 $string['confirmbatchgradingoperation'] = 'Weet je zeker dat je wil {$a->operation} voor {$a->count} leerlingen?';
 $string['confirmsubmission'] = 'Weet je zeker dat je je werk wil insturen voor beoordeling? Je zult geen wijzigingen meer kunnen aanbrengen.';
+$string['confirmsubmissionheading'] = 'Bevestig de inzending';
 $string['conversionexception'] = 'Kon opdracht niet converteren. Het probleem was: {$a}.';
 $string['couldnotconvertgrade'] = 'Kon beoordelingscijfer van de opdracht niet converteren voor gebruiker {$a}.';
 $string['couldnotconvertsubmission'] = 'Kon inzending van de opdracht niet converteren voor gebruiker {$a}';
@@ -157,6 +158,7 @@ $string['editaction'] = 'Acties...';
 $string['editattemptfeedback'] = 'Bewerk cijfer een feedback van poging nummer {$a}';
 $string['editingpreviousfeedbackwarning'] = 'Je bewerkt de feedback van een vorige poging. Dit is poging {$a->attemptnumber} van {$a->totalattempts} pogingen.';
 $string['editingstatus'] = 'Status bewerken';
+$string['editonline'] = 'Bewerk online';
 $string['editoverride'] = 'Bewerk overschrijving';
 $string['editsubmission'] = 'Bewerk inzending';
 $string['editsubmission_help'] = 'Wijzig je inzending';
@@ -214,6 +216,7 @@ $string['feedbacksettings'] = 'Feedback-instellingen';
 $string['feedbacktypes'] = 'Feedbacktypes';
 $string['filesubmissions'] = 'Ingestuurde bestanden';
 $string['filter'] = 'Filter';
+$string['filtergrantedextension'] = 'Verleen verlenging';
 $string['filternone'] = 'Geen filter';
 $string['filternotsubmitted'] = 'Niet ingestuurd';
 $string['filterrequiregrading'] = 'Beoordelen vereist';
@@ -244,6 +247,10 @@ $string['gradestudent'] = 'Beoordeel leerling: (id={$a->id}, naam={$a->fullname}
 $string['gradeuser'] = 'Cijfer {$a}';
 $string['grading'] = 'Beoordeling';
 $string['gradingchangessaved'] = 'De cijferwijzigingen zijn bewaard';
+$string['gradingduedate'] = 'Herinner me eraan om te beoordelen tegen';
+$string['gradingduedate_help'] = 'De verwachte datum waarop het beoordelen van de inzending  moet worden voltooid. Deze datum wordt gebruikt om prioriteiten te melden op de startpagina voor leraren.';
+$string['gradingdueduedatevalidation'] = 'De "herinner me eraan om te beoordelen tegen"-datum kan niet vroeger zijn dan de Uiterste inleverdatum.';
+$string['gradingduefromdatevalidation'] = 'De "herinner me eraan om te beoordelen tegen"-datum kan niet vroeger zijn dan de "insturen toestaan vanaf"-datum.';
 $string['gradingmethodpreview'] = 'Beoordelingscriteria';
 $string['gradingoptions'] = 'Opties';
 $string['gradingstatus'] = 'Beoordelingsstatus';
@@ -258,6 +265,10 @@ $string['groupsubmissionsettings'] = 'Instellingen groepswerk';
 $string['hiddenuser'] = 'Deelnemer';
 $string['hideshow'] = 'Verberg/toon';
 $string['inactiveoverridehelp'] = '* De leerling heeft niet de juiste groep of rol om deze opdracht uit te voeren';
+$string['indicator:cognitivedepth'] = 'Opdracht cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de cognitieve diepte die door de leerling is bereikt in een activiteit Opdracht.';
+$string['indicator:socialbreadth'] = 'Opdracht sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de sociale breedte die door de leerling is bereikt in een activiteit Opdracht.';
 $string['instructionfiles'] = 'Instructiebestanden';
 $string['introattachments'] = 'Extra bestanden';
 $string['introattachments_help'] = 'Er kunnen extra bestanden voor het gebruik in de opdracht, zoals antwoordsjablonen, toegevoegd worden. Onder de beschrijving van de opdracht zullen er dan downloadlinks verschijnen.';
@@ -310,6 +321,7 @@ Bij het beoordelen van opdrachten, kunnen leraren feedback geven en bestanden up
 $string['modulenameplural'] = 'Opdrachten';
 $string['moreusers'] = '{$a} meer...';
 $string['multipleteams'] = 'Lid van meer dan één groep';
+$string['multipleteams_desc'] = 'De opdracht vereist insturen in groep. Je bent lid van meer dan één groep. Om te kunnen insturen mag je slechts lid zijn van één groep. Neem contact op met je leraar om je groepslidmaatschap aan te passen.';
 $string['multipleteamsgrader'] = 'Lid van meer dan één groep, dus kan geen inzendingen doen.';
 $string['mysubmission'] = 'Status van jouw opdracht:&nbsp;';
 $string['newsubmissions'] = 'Ingestuurde opdrachten';
@@ -328,6 +340,7 @@ $string['nosavebutnext'] = 'Volgende';
 $string['nosubmission'] = 'Er is nog niets ingestuurd voor deze opdracht';
 $string['nosubmissionsacceptedafter'] = 'Er worden geen opdrachten meer aanvaard na';
 $string['noteam'] = 'Lid van geen enkele groep';
+$string['noteam_desc'] = 'De opdracht vereist insturen in groep. Je bent van geen enkele groep lid, dus je kan niets insturen. Neem contact op met je leraar om in een groep gezet te worden.';
 $string['noteamgrader'] = 'Lid van geen enkele groep, dus kan geen inzendingen doen.';
 $string['notgraded'] = 'Niet beoordeeld';
 $string['notgradedyet'] = 'Nog niet beoordeeld';
@@ -364,6 +377,32 @@ $string['preventsubmissionnotingroup_help'] = 'Indien ingeschakeld zullen enkel 
 $string['preventsubmissions'] = 'Verhinder de gebruiker om meer in te sturen voor deze opdracht.';
 $string['preventsubmissionsshort'] = 'Verhinder het wijzigen van ingestuurde opdrachten';
 $string['previous'] = 'Vorige';
+$string['privacy:attemptpath'] = 'poging {$a}';
+$string['privacy:blindmarkingidentifier'] = 'De identificatie, gebruikt voor blind beoordelen.';
+$string['privacy:gradepath'] = 'cijfer';
+$string['privacy:metadata:assigndownloadasfolders'] = 'Een gebruikersvoorkeur waarmee ingesteld wordt of meerdere inzendingen in mappen moeten gedownload worden';
+$string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedback voor de opdracht.';
+$string['privacy:metadata:assignfilter'] = 'Filteropties zoals ingestuurd, niet ingestuurd, wacht op beoordeling en langere tijd gegeven.';
+$string['privacy:metadata:assigngrades'] = 'Bewaart gebruikerscijfers voor de opdracht';
+$string['privacy:metadata:assignmentid'] = 'Opdracht identificatie';
+$string['privacy:metadata:assignmessageexplanation'] = 'Berichten worden naar leerlingen gestuurd via het berichtensysteem.';
+$string['privacy:metadata:assignoverrides'] = 'Bewaart overschrijvingsinformatie voor de opdracht';
+$string['privacy:metadata:assignperpage'] = 'Aantal opdrachten getoond per pagina.';
+$string['privacy:metadata:assignquickgrading'] = 'Een voorkeur of snel beoordelen gebruikt wordt of niet.';
+$string['privacy:metadata:assignsubmissiondetail'] = 'Bewaart inzendingsinformatie van gebruikers';
+$string['privacy:metadata:assignsubmissionpluginsummary'] = 'Inzendingsgegevens voor de opdracht.';
+$string['privacy:metadata:assignuserflags'] = 'Bewaart metagegevens over gebruikers, zoals verlengde tijd';
+$string['privacy:metadata:assignusermapping'] = 'De koppeling voor blind beoordelen';
+$string['privacy:metadata:assignworkflowfilter'] = 'Filter op de verschillende stadia van de workflow.';
+$string['privacy:metadata:grade'] = 'Het numerieke cijfer voor de inzending van de opdracht. Kan bepaald worden door schalen, geavanceerde beoordelingsformulieren enz., maar zal altijd terug geconverteerd worden naar een decimaal cijfer.';
+$string['privacy:metadata:grader'] = 'De gebruikersID van de beoordelende persoon.';
+$string['privacy:metadata:groupid'] = 'GroepsID waarvan de gebruiker lid is.';
+$string['privacy:metadata:latest'] = 'Vereenvoudigd vragen die enkel informatie willen over de laatste poging.';
+$string['privacy:metadata:mailed'] = 'Heeft deze gebruiker al e-mail ontvangen?';
+$string['privacy:metadata:timecreated'] = 'Aanmaaktijd';
+$string['privacy:metadata:userid'] = 'Identificatie van de gebruiker.';
+$string['privacy:studentpath'] = 'Inzendingen van leerlingen';
+$string['privacy:submissionpath'] = 'inzending';
 $string['quickgrading'] = 'Snel beoordelen';
 $string['quickgradingchangessaved'] = 'De wijzigingen aan de cijfers zijn bewaard';
 $string['quickgrading_help'] = 'Met snel beoordelen kun je rechtstreeks cijfers geven in de tabel met ingstuurde opdrachten. Snel beoordelen is niet compatibel met geavanceerde beoordelingsmethodes en wordt niet aangeraden wanneer er meerdere beoordelaars zijn.';

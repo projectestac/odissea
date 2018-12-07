@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = 'Das Datum \'Verfügbar bis\' kann nicht 
 $string['blank'] = 'Leer';
 $string['buttons'] = 'Aktionen';
 $string['bynameondate'] = 'von {$a->name} - {$a->date}';
-$string['calendarend'] = 'Datenbank {$a} endet';
-$string['calendarstart'] = 'Datenbank {$a} beginnt';
+$string['calendarend'] = '{$a} endet';
+$string['calendarstart'] = '{$a} beginnt';
 $string['cancel'] = 'Abbrechen';
 $string['cannotaccesspresentsother'] = 'Sie können nicht auf Vorlagen anderer Nutzer/innen zugreifen.';
 $string['cannotadd'] = 'Kann keine Einträge hinzufügen!';
@@ -76,6 +76,9 @@ $string['comments'] = 'Kommentare';
 $string['commentsaved'] = 'Kommentare gesichert';
 $string['commentsn'] = '{$a} Kommentare';
 $string['commentsoff'] = 'Kommentare sind nicht aktiviert';
+$string['completionentries'] = 'Einträge notwendig';
+$string['completionentriescount'] = 'Anzahl der Einträge';
+$string['completionentriesdesc'] = 'Minimale Anzahl von Einträgen erforderlich: {$a}';
 $string['configenablerssfeeds'] = 'Mit dieser Funktion aktivieren Sie RSS-Feeds für alle Datenbanken. Nach der Aktivierung an dieser Stelle ist zusätzlich die Aktivierung in jeder einzelnen Datenbank innerhalb der Kursräume erforderlich.';
 $string['confirmdeletefield'] = 'Möchten Sie dieses Feld wirklich in der Datenbank löschen?';
 $string['confirmdeleterecord'] = 'Möchten Sie diesen Datensatz wirklich in der Datenbank löschen?';
@@ -200,8 +203,13 @@ $string['headersingletemplate'] = 'Definiert Darstellung für die Einzelansicht'
 $string['importentries'] = 'Einträge importieren';
 $string['importsuccess'] = 'Die Vorlagensatz wurde erfolgreich übernommen.';
 $string['includeapproval'] = 'Bestätigungsstatus einfügen';
+$string['includetags'] = 'Schlagworte einbinden';
 $string['includetime'] = 'Zeitpunkt hinzugefügt/geändert einfügen';
 $string['includeuserdetails'] = 'Nutzerdetails einfügen';
+$string['indicator:cognitivedepth'] = 'Datenbank kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Datenbankaktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Datenbank sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Datenbankaktivität erreicht hat.';
 $string['insufficiententries'] = 'Weitere Einträge sind erforderlich, um die Datenbank einzusehen.';
 $string['intro'] = 'Beschreibung';
 $string['invalidaccess'] = 'Seite wurde nicht richtig aufgerufen';
@@ -299,21 +307,44 @@ $string['pluginname'] = 'Datenbank';
 $string['portfolionotfile'] = 'In ein Portfolio und nicht als Datei exportieren (csv und leap2a)';
 $string['presetinfo'] = 'Durch das Sichern als Vorlagensatz wird Ihre Datenbank-Gestaltung für die gesamte Moodle-Installation veröffentlicht. Andere Nutzer/innen können dann diesen Vorlagensatz für ihre Datenbank nutzen.';
 $string['presets'] = 'Vorlagensätze';
+$string['privacy:metadata:commentpurpose'] = 'Kommentar zum Datenbankeintrag';
+$string['privacy:metadata:data_content'] = 'Steht für eine Antwort in einem Feld in der Datenbankaktivität';
+$string['privacy:metadata:data_content:content'] = 'Inhalt';
+$string['privacy:metadata:data_content:content1'] = 'Zusätzlicher Inhalt 1';
+$string['privacy:metadata:data_content:content2'] = 'Zusätzlicher Inhalt 2';
+$string['privacy:metadata:data_content:content3'] = 'Zusätzlicher Inhalt 3';
+$string['privacy:metadata:data_content:content4'] = 'Zusätzlicher Inhalt 4';
+$string['privacy:metadata:data_content:fieldid'] = 'ID der Felddefiniton';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Felder der Datenbankaktivität';
+$string['privacy:metadata:data_records'] = 'Steht für Einträge in der Datenbank';
+$string['privacy:metadata:data_records:approved'] = 'Bestätigungsstatus';
+$string['privacy:metadata:data_records:groupid'] = 'Gruppe';
+$string['privacy:metadata:data_records:timecreated'] = 'Zeitpunkt an dem Eintrag erstellt wurde';
+$string['privacy:metadata:data_records:timemodified'] = 'Zeitpunkt zu dem Eintrag verändert wurde';
+$string['privacy:metadata:data_records:userid'] = 'Nutzer, der den Eintrag erstellt hat';
+$string['privacy:metadata:filepurpose'] = 'Datei, die Datenbankeintrag zugeordnet wurde';
+$string['privacy:metadata:ratingpurpose'] = 'Bewertung für Datenbankeintrag';
+$string['privacy:metadata:tagpurpose'] = 'Tags für Datenbankeintrag';
 $string['radiobutton'] = 'Einfachauswahl';
 $string['recordapproved'] = 'Datensatz wurde angenommen';
 $string['recorddeleted'] = 'Datensatz gelöscht';
 $string['recorddisapproved'] = 'Eintrag nicht freigegeben';
 $string['recordsnotsaved'] = 'Kein Datensatz wurde gespeichert. Prüfen Sie bitte das Format der hochgeladenen Datei.';
 $string['recordssaved'] = 'Datensätze gespeichert';
+$string['removealldatatags'] = 'Alle Datenbank-Tags entfernen';
 $string['requireapproval'] = 'Freigabe erforderlich?';
 $string['requireapproval_help'] = 'Wenn diese Option aktiviert ist, müssen die Einträge von Trainer/innen erst bestätigt werden, bevor sie für alle anderen angezeigt werden?';
 $string['required'] = 'Notwendig';
-$string['requiredentries'] = 'Erforderliche Einträge';
-$string['requiredentries_help'] = 'Die erforderliche Zahl der Einträge gibt die Zahl der eigenen Einträge an, die Teilnehmer/innen speichern müssen, bevor die Aktivität als vollständig bearbeitet gewertet wird.';
+$string['requiredentries'] = 'Erforderliche Einträge für den Abschluss (alt)';
+$string['requiredentries_help'] = 'Bei Aktivierung wird eine Nachricht angezeigt, welche die erforderliche Anzahl von Beiträgen angibt, die zum Abschluss notwendig sind. Beachten Sie, dass dies nicht mit Akivitätsabschluss verbunden ist.
+
+Für erforderliche Beiträge zum Akivitätabschluss sollte die neue Einstellung "Beiträge erforderlich" in den Einstellungen für Aktivitätsabschlüsse verwendet werden. Um diese Einstellung vollständig zu entfernen setzten Sie sie auf "Keine" und klicken auf "Änderungen speichern".
+Bitte wählen Sie stattdessen "Beiträge erforderlich" in den Einstellungen für Akivitätsabschlüsse aus.';
 $string['requiredentriestoview'] = 'Erforderliche Einträge vor der Ansicht aller Daten';
 $string['requiredentriestoview_help'] = 'Die erforderliche Zahl der Einträge gibt die Zahl der eigenen Einträge an, die Teilnehmer/innen liefern müssen, bevor sie Einträge anderer Teilnehmer/innen einsehen dürfen.
 
 Hinweis: Falls Einträge vor der Ansicht notwendig sind, sollte die Autoverlinkung für die Datenbank deaktiviert sein. Die Autoverlinkung kann nämlich nicht entscheiden, ob jemand die erforderliche Anzahl von Einträgen bereits geliefert hat.';
+$string['requiredentrieswarning'] = 'Diese Einstellung wurde durch die Abschlussbedingung \'Einträge erforderlich\' ersetzt.';
 $string['requiredfield'] = 'Pflichtfeld';
 $string['resetsettings'] = 'Filter zurücksetzen';
 $string['resettemplate'] = 'Vorlage zurücksetzen';
@@ -341,6 +372,9 @@ $string['subplugintype_datafield'] = 'Datenbank-Feldtyp';
 $string['subplugintype_datafield_plural'] = 'Datenbank-Feldtypen';
 $string['subplugintype_datapreset'] = 'Vorlagensatz';
 $string['subplugintype_datapreset_plural'] = 'Vorlagensätze';
+$string['tagarea_data_records'] = 'Datensätze';
+$string['tags'] = 'Schlagwörter';
+$string['tagsdeleted'] = 'Datenbank-Tags wurden entfernt';
 $string['teachersandstudents'] = '{$a->teachers} und {$a->students}';
 $string['templates'] = 'Vorlagen';
 $string['templatesaved'] = 'Vorlage wurde gespeichert';

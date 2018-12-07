@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_log', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,7 @@ $string['page-report-log-index'] = 'Rapport d\'historiques de cours';
 $string['page-report-log-user'] = 'Rapport utilisateur d\'historiques de cours';
 $string['page-report-log-x'] = 'Tout rapport d\'historiques';
 $string['pluginname'] = 'Historiques';
+$string['privacy:metadata'] = 'Le plugin Historiques n\'enregistre aucune donnée personnelle.';
 $string['restore'] = 'Restaurer';
 $string['selectlogreader'] = 'Sélectionner un lecteur d\'historiques';
 $string['web'] = 'Web';

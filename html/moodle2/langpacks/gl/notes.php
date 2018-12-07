@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewnote'] = 'Engadir unha nova nota';
 $string['addnewnoteselect'] = 'Seleccione os usuarios para escribir notas sobre';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Produciuse un erro ao eliminar a mensaxe';
 $string['configenablenotes'] = 'Activar o almacenamento de notas sobre usuarios individuais.';
 $string['content'] = 'Contido';
 $string['course'] = 'curso';

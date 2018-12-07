@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,10 @@ $string['folder:addinstance'] = 'Gehitu beste karpeta bat';
 $string['foldercontent'] = 'Fitxategiak eta azpikarpetak';
 $string['folder:managefiles'] = 'Fitxategiak kudeatu karpeta moduluan';
 $string['folder:view'] = 'Ikusi karpetaren edukia';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa karpetetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Karpeta motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala karpetetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Karpeta motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['maxsizetodownload'] = 'Karpetak jaisteko gehienezko tamaina (MB)';
 $string['maxsizetodownload_help'] = 'Karpetak zip fitxategi moduan jaisteko gehienezko tamaina. 0 ezarriz gero, karpetaren tamainak ez du mugarik izango.';
 $string['modulename'] = 'Karpeta';
@@ -57,6 +61,7 @@ $string['page-mod-folder-view'] = 'Karpetaren orri nagusia';
 $string['page-mod-folder-x'] = 'Karpetaren edozein orri';
 $string['pluginadministration'] = 'Karpetaren kudeaketa';
 $string['pluginname'] = 'Karpeta';
+$string['privacy:metadata'] = 'mod_folder pluginak ez du datu pertsonalik biltzen.';
 $string['search:activity'] = 'Karpeta';
 $string['showdownloadfolder'] = 'Erakutsi karpeta jaitsi botoia';
 $string['showdownloadfolder_help'] = '\'Bai\' aukeratuz gero, botoi bat erakutsiko da karpetaren edukiak zip fitxategi moduan jaisteko aukera emateko.';

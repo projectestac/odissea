@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_activity_results', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['error_nogroupsexist'] = 'Fehler: Der Block soll Gruppenergebnisse anzei
 $string['error_unsupportedgradetype'] = 'Fehler: Die gewählte Aktivität verwendet eine Bewertungsmethode, die von diesem Block nicht unterstützt wird.';
 $string['notyetgraded'] = 'Noch nicht bewertet';
 $string['pluginname'] = 'Aktivitätsergebnisse';
+$string['privacy:metadata'] = 'Der Block \'Aktivitätsergebnisse\' zeigt ausschließlich Daten an, die woanders gespeichert sind.';
 $string['unknown'] = 'Unbekannte Skala';
 $string['worstgrade'] = 'Niedrigste Bewertung:';
 $string['worstgrades'] = 'Die {$a} niedrigsten Bewertungen:';

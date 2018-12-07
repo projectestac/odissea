@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_navigation', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['linkcategoriesdesc'] = 'Apresentar categorias com hiperligações';
 $string['navigation:addinstance'] = 'Adicionar um novo bloco Navegação';
 $string['navigation:myaddinstance'] = 'Adicionar um novo bloco Navegação ao Painel do utilizador';
 $string['pluginname'] = 'Navegação';
+$string['privacy:metadata'] = 'O bloco Navegação apenas mostra dados armazenados noutros locais.';
 $string['trimlength'] = 'Número de espaços a apagar';
 $string['trimmode'] = 'Modo de eliminação de espaços';
 $string['trimmodecenter'] = 'Apagar espaços do centro';

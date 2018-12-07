@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_social', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   format_social
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Numero di discussioni';
 $string['numberdiscussions_help'] = 'Il numero di discussioni da visualizzare.';
 $string['pluginname'] = 'Relazionale';
+$string['privacy:metadata'] = 'Il plugin formato di corso "Relazionale" non memorizza dati personali.';
 $string['sectionname'] = 'sezione';

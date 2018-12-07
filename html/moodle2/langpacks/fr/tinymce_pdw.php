@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_pdw', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_pdw', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_pdw
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pdw:desc'] = 'Développer/réduire la barre d\'outils';
 $string['pluginname'] = 'Développer/réduire la barre d\'outils';
+$string['privacy:metadata'] = 'Le plugin TinyMCE Développer/réduire la barre d\'outils n\'enregistre aucune donnée personnelle.';

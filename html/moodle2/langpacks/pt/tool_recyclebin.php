@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_recyclebin', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'Contexto fornecido inválido.';
 $string['noitemsinbin'] = 'A reciclagem está vazia.';
 $string['notenabled'] = 'Desculpe, mas a funcionalidade reciclagem foi desativada pelo administrador.';
 $string['pluginname'] = 'Reciclagem';
+$string['privacy:metadata'] = 'O módulo Reciclagem não armazena dados pessoais.';
 $string['recyclebin:deleteitems'] = 'Apagar itens da reciclagem';
 $string['recyclebin:restoreitems'] = 'Restaurar itens da reciclagem';
 $string['recyclebin:viewitems'] = 'Ver itens da reciclagem';

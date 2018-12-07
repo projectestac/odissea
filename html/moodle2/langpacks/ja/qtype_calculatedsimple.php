@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculatedsimple
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['pluginnameadding'] = 'シンプル計算問題を追加する';
 $string['pluginnameediting'] = 'シンプル計算問題を編集する';
 $string['pluginname_help'] = 'シンプル計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。シンプル計算問題では計算問題で使用されるほとんどの機能を簡単な作成インターフェースにより提供します。';
 $string['pluginnamesummary'] = '計算問題のシンプルバージョンです。シンプル計算問題は数値問題に似ていますが小テスト受験時、設定された数値がランダムに使用されます';
+$string['privacy:metadata'] = 'シンプル計算問題タイププラグインはどのような個人データも保存しません。';
 $string['setno'] = 'セット {$a}';
 $string['setwildcardvalues'] = 'セットのワイルドカード値';
 $string['showitems'] = '表示';

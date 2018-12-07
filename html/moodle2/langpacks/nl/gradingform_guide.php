@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['commentsmovedown'] = 'Verplaats omlaag';
 $string['commentsmoveup'] = 'Verplaats omhoog';
 $string['confirmdeletecriterion'] = 'Weet je zeker dat je dit item wil verwijderen?';
 $string['confirmdeletelevel'] = 'Weet je zeker dat je dit niveau wil verwijderen';
-$string['criterion'] = 'Criterium-naam';
+$string['criterion'] = 'Criteriumnaam';
 $string['criteriondelete'] = 'Verwijder criterium';
 $string['criterionempty'] = 'Klik om het criterium te bewerken';
 $string['criterionmovedown'] = 'Verplaats omlaag';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -176,6 +176,7 @@ $string['permittedtransports'] = 'Zugelassene Verbindungen';
 $string['phperror'] = 'Ein interner PHP-Fehler verhindert, dass Ihre Anforderung erledigt wird.';
 $string['position'] = 'Position';
 $string['postrequired'] = 'Die Funktion \'delete\' erfordert eine POST-Anforderung.';
+$string['privacy:metadata'] = 'Das MNet Plugin speichert keine persönlichen Daten.';
 $string['profileexportfields'] = 'Felder zum Senden';
 $string['profilefielddesc'] = 'Hier können Sie die Liste der Profilfelder konfigurieren, die MNET sendet und empfängt, sobald Nutzerkonten erstellt oder aktualisiert werden. Sie können diese auch für jede MNet-Verbindung individuell anpassen. Hinweis:Die folgenden Felder werden immer übertragen: {$a}';
 $string['profilefields'] = 'Profilfelder';

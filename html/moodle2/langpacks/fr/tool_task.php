@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = 'ASAP';
+$string['backtoscheduledtasks'] = 'Retour aux tâches programmées';
 $string['blocking'] = 'Blocage';
 $string['component'] = 'Composant';
 $string['corecomponent'] = 'Cœur';
@@ -33,13 +34,18 @@ $string['default'] = 'Défaut';
 $string['disabled'] = 'Désactivé';
 $string['disabled_help'] = 'Les tâches programmées désactivées ne sont pas lancées par le cron, mais peuvent cependant être lancées manuellement via l\'outil CLI.';
 $string['edittaskschedule'] = 'Modifier la programmation de la tâche : {$a}';
+$string['enablerunnow'] = 'Permettre de lancer immédiatement les tâches programmées';
+$string['enablerunnow_desc'] = 'Ce réglage permet aux administrateurs de lancer une tâche programmée immédiatement, plutôt que d\'attendre son lancement tel que programmé. La tâche se lance sur le serveur web, c\'est pourquoi il peut être préférable de désactiver cette fonctionnalité pour éviter d\'éventuels problèmes de performance.';
 $string['faildelay'] = 'Échec de délai';
 $string['lastruntime'] = 'Dernière exécution';
 $string['nextruntime'] = 'Prochaine exécution';
 $string['plugindisabled'] = 'Plugin désactivé';
 $string['pluginname'] = 'Configuration des tâches programmées';
+$string['privacy:metadata'] = 'Le plugin Configuration des tâches programmées n\'enregistre aucune donnée personnelle.';
 $string['resettasktodefaults'] = 'Revenir à la programmation par défaut';
 $string['resettasktodefaults_help'] = 'Cette action supprimera toutes les modifications et configurera la programmation de cette tâche à ses réglages par défaut.';
+$string['runnow'] = 'Lancer maintenant';
+$string['runnow_confirm'] = 'Voulez-vous vraiment lancer la tâche « {$a} » maintenant ? La tâche sera lancée sur le serveur web et prendra un certain temps à s\'effectuer.';
 $string['scheduledtaskchangesdisabled'] = 'Des modifications à la liste des tâches programmées ont été bloquées dans la configuration de Moodle';
 $string['scheduledtasks'] = 'Tâches programmées';
 $string['taskdisabled'] = 'Tâche désactivée';

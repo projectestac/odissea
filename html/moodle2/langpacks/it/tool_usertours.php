@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_usertours', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_usertours
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,12 @@ $string['event_tour_ended'] = 'Terminato tour';
 $string['event_tour_reset'] = 'Reimpostato tour';
 $string['event_tour_started'] = 'Avviato tour';
 $string['exporttour'] = 'Esporta tour';
+$string['filter_category'] = 'Categoria';
+$string['filter_category_help'] = 'Visualizza il tour in una pagina che è associata a un corso nella categoria selezionata.';
+$string['filter_course'] = 'Corsi';
+$string['filter_courseformat'] = 'Formato di corso';
+$string['filter_courseformat_help'] = 'Visualizza il tour in una pagina che è associata a un corso utilizzando il formato del corso selezionato.';
+$string['filter_course_help'] = 'Visualizza il tour su una pagina che è associata al corso selezionato.';
 $string['filter_header'] = 'Filtri tour';
 $string['filter_help'] = 'Imposta le condizioni di visualizzazione del tour. I filtri devono corrispondere ad un tour da visualizzare all\'utente.';
 $string['filter_role'] = 'Ruolo';
@@ -99,6 +105,10 @@ $string['placement_help'] = 'E\' possibile posizionare un passo sopra, sotto, a 
 
 Qualora il passo non si adatti ad essere visualizzato nella posizione impostata, sarà posizionato altrove automaticamente.';
 $string['pluginname'] = 'Tour utente';
+$string['privacy:metadata:preference:completed'] = 'L\'orario nel quale un utente ha più recentemente completato il tour.';
+$string['privacy:metadata:preference:requested'] = 'L\'orario nel quale un utente ha più recentemente resettato manualmente il tour.';
+$string['privacy:request:preference:completed'] = 'Il {$a->time} hai contrassegnato come completato il tour utente "{$a->name}"';
+$string['privacy:request:preference:requested'] = 'Il {$a->time} hai richiesto il tour utente "{$a->name}"';
 $string['reflex'] = 'Avanza con click';
 $string['reflex_help'] = 'Avanza al passo successivo se viene fatto click sull\'obiettivo';
 $string['resettouronpage'] = 'Reimposta il tour utente in questa pagina';
@@ -130,9 +140,9 @@ In alternativa è possibile inserire un ID della stringa della lingua con il for
 $string['tour1_content_addingblocks'] = 'Valuta attentamente l\'inserimento di blocchi poiché nella app Moodle Mobile i blocchi non verranno visualizzati, pertanto è preferibile accertari che il sito funzioni bene senza l\'utilizzo dei blocchi.';
 $string['tour1_content_blockregion'] = 'Una regione per i blocchi è ancora disponibile. Si raccomanda di eliminare completamente il blocco Navigazione ed il blocco Amministrazione poiché le stesse funzionalità sono presenti nel tema Boost.';
 $string['tour1_content_customisation'] = 'Per personalizzare l\'aspetto del sito e della pagina home, utilizza le impostazioni del menu presente nell\'angolo dell\'intestazione. Prova ad attivare adesso la modalità modifica.';
-$string['tour1_content_end'] = 'Questo è un tour utente, una nuova funzionalità di Moodle 3.2. Il tour non sarà visualizzato di nuovo a meno che venga reimpostato utilizzando il link nel piè di pagina. Un amministratore del sito può anche creare tour personalizzati.';
+$string['tour1_content_end'] = 'Sei alla fine del tour utente. Il tour non sarà più visualizzato a meno che venga reimpostato utilizzando il link nel piè di pagina. Un amministratore del sito può anche creare tour personalizzati.';
 $string['tour1_content_navigation'] = 'La navigazione avviene ora tramite il cassetto di navigazione, Il contenuto del cassetto cambierà in funzione di dove trovi. Utilizza il pulsante in alto per aprire e chiudere il cassetto.';
-$string['tour1_content_welcome'] = 'Benvenuti nel tema Boost per Moodle 3.2. Se hai già utilizzato Moodle, scoprirai molte novità.';
+$string['tour1_content_welcome'] = 'Benvenuti nel tema Boost per Moodle 3.2. Se hai aggiornato da una versione precedente di Moodle, scoprirai molte novità.';
 $string['tour1_title_addingblocks'] = 'Inserimento blocchi';
 $string['tour1_title_blockregion'] = 'Regione del blocco';
 $string['tour1_title_customisation'] = 'Personalizzazione';
@@ -142,11 +152,11 @@ $string['tour1_title_welcome'] = 'Benvenuto';
 $string['tour2_content_addblock'] = 'Attivando la modalità modifica è possibile aggiungere blocchi dal cassetto di navigazione. Valuta attentamente l\'inserimento di blocchi poiché nella app Moodle Mobile i blocchi non verranno visualizzati, pertanto è preferibile allestire i corsi senza l\'utilizzo dei blocchi, migliorando l\'esperienza degli utenti,';
 $string['tour2_content_addingblocks'] = 'E\' possibile aggiungere blocchi utilizzando questo pulsante. Valuta attentamente l\'inserimento di blocchi poiché nella app Moodle Mobile i blocchi non verranno visualizzati, pertanto è preferibile allestire i corsi senza l\'utilizzo dei blocchi, migliorando l\'esperienza degli utenti,';
 $string['tour2_content_customisation'] = 'Per modificare le impostazioni del corso, utilizza le impostazioni disponibili nel menu presente nell\'angolo dell\'intestazione. Troverai un menu simile nelle pagine home di tutte le attività. Prova ad attivare adesso la modalità modifica.';
-$string['tour2_content_end'] = 'Questo è un tour utente, una nuova funzionalità di Moodle 3.2. Il tour non sarà visualizzato di nuovo a meno che venga reimpostato utilizzando il link nel piè di pagina. Un amministratore del sito può anche creare tour personalizzati.';
+$string['tour2_content_end'] = 'Sei alla fine del tuo tour utente. Il tour non sarà più visualizzato a meno che venga reimpostato utilizzando il link nel piè di pagina. Un amministratore del sito può anche creare tour personalizzati.';
 $string['tour2_content_navigation'] = 'La navigazione avviene ora tramite il cassetto di navigazione.Utilizza il pulsante in alto per aprire e chiudere il cassetto. Nel cassetto sono disponibili i collegamenti alle sezioni del corso.';
 $string['tour2_content_opendrawer'] = 'Prova ad aprire adesso il cassetto di navigazione.';
 $string['tour2_content_participants'] = 'Qui puoi visualizzare i partecipanti ed aggiungere o rimuovere studenti.';
-$string['tour2_content_welcome'] = 'Benvenuti nel tema Boost per Moodle 3.2. Se hai già utilizzato Moodle, scoprirai molte novità.';
+$string['tour2_content_welcome'] = 'Benvenuti nel tema Boost. Se il tuo sito è stato aggiornato da una versione precedente di Moodle, troverai molte novità nella pagina del corso.';
 $string['tour2_title_addblock'] = 'Aggiungi un blocco';
 $string['tour2_title_addingblocks'] = 'Aggiunta di un blocco';
 $string['tour2_title_customisation'] = 'Personalizzazione';

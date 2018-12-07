@@ -38,7 +38,7 @@ class login_signup_form extends moodleform implements renderable, templatable {
         $mform->addElement('header', 'createuserandpass', get_string('createuserandpass'), '');
 
 
-        $mform->addElement('text', 'username', get_string('username'), 'maxlength="100" size="12"');
+        $mform->addElement('text', 'username', get_string('username'), 'maxlength="100" size="12" autocapitalize="none"');
         $mform->setType('username', PARAM_RAW);
         $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
 
@@ -92,18 +92,15 @@ class login_signup_form extends moodleform implements renderable, templatable {
         profile_signup_fields($mform);
 
         if (signup_captcha_enabled()) {
-            $mform->addElement('recaptcha', 'recaptcha_element', get_string('security_question', 'auth'), array('https' => $CFG->loginhttps));
+            $mform->addElement('recaptcha', 'recaptcha_element', get_string('security_question', 'auth'));
             $mform->addHelpButton('recaptcha_element', 'recaptcha', 'auth');
             $mform->closeHeaderBefore('recaptcha_element');
         }
 
-        if (!empty($CFG->sitepolicy)) {
-            $mform->addElement('header', 'policyagreement', get_string('policyagreement'), '');
-            $mform->setExpanded('policyagreement');
-            $mform->addElement('static', 'policylink', '', '<a href="'.$CFG->sitepolicy.'" onclick="this.target=\'_blank\'">'.get_String('policyagreementclick').'</a>');
-            $mform->addElement('checkbox', 'policyagreed', get_string('policyaccept'));
-            $mform->addRule('policyagreed', get_string('policyagree'), 'required', null, 'client');
-        }
+        // Add "Agree to sitepolicy" controls. By default it is a link to the policy text and a checkbox but
+        // it can be implemented differently in custom sitepolicy handlers.
+        $manager = new \core_privacy\local\sitepolicy\manager();
+        $manager->signup_form($mform);
 
         // buttons
         $this->add_action_buttons(true, get_string('createaccount'));

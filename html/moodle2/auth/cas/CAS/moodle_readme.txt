@@ -1,5 +1,4 @@
-Description of phpCAS 1.3.4 library import
+Description of phpCAS 1.3.5 library import
 
 * downloaded from http://downloads.jasig.org/cas-clients/php/current/
-
-* MDL-59456 phpCAS library has been patched because of an authentication bypass security vulnerability.
+* applied patch https://github.com/apereo/phpCAS/pull/247 for PHP 7.2 compatibility (MDL-60280)

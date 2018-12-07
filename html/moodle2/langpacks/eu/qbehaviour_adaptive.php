@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_adaptive', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_adaptive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['gradingdetailswithpenalty'] = 'Bidalketa honetarako puntuak: {$a->max}(
 $string['gradingdetailswithtotalpenalty'] = 'Bidalketa honetarako puntuak: {$a->max}(e)tik {$a->raw}. Bidalketa honek {$a->penalty} -(e)ko penalizazioa izan du. Penalizazioak denera: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Osatu gabea';
 $string['pluginname'] = 'Egokitze modua';
+$string['privacy:metadata'] = 'Egokitze modua galdera-jokaera pluginak ez du datu pertsonalik biltzen.';

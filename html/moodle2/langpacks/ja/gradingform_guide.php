@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,8 @@ $string['name'] = '名称';
 $string['needregrademessage'] = 'この学生が評定された後、評定ガイド定義が変更されています。あなたが評定ガイドを確認して評点を更新するまで、学生はこの評定ガイドを閲覧することができません。';
 $string['pluginname'] = '評定ガイド';
 $string['previewmarkingguide'] = '評定ガイドをプレビューする';
+$string['privacy:metadata:preference:showmarkerdesc'] = '採点者のクライテリア説明を表示するか指定します。';
+$string['privacy:metadata:preference:showstudentdesc'] = '学生のクライテリア説明を表示するか指定します。';
 $string['regrademessage1'] = 'あなたはすでに評定で使用されている評定ガイドの変更を保存しようとしています。既存の評点のレビューが必要な場合、表明してください。あなたがこれを設定した場合、学生のアイテムが再評定されるまで、評定ガイドは学生から非表示にされます。';
 $string['regrademessage5'] = 'あなたはすでに評定で使用されている評定ガイドの大幅な変更を保存しようとしています。評定表の値は変更されませんが、学生のアイテムが再評定されるまで、評定ガイドは学生から非表示にされます。';
 $string['regradeoption0'] = '再評定しない';

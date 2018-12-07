@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_usertours', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_usertours
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,12 @@ $string['event_tour_ended'] = 'Demonstração terminada';
 $string['event_tour_reset'] = 'Reiniciar demonstração';
 $string['event_tour_started'] = 'Demonstração iniciada';
 $string['exporttour'] = 'Exportar demonstração';
+$string['filter_category'] = 'Categoria';
+$string['filter_category_help'] = 'Mostrar o tour numa página que está associada com a categoria selecionada.';
+$string['filter_course'] = 'Disciplinas';
+$string['filter_courseformat'] = 'Formato de disciplina';
+$string['filter_courseformat_help'] = 'Mostrar o tour numa página que está associada com a disciplina selecionada usando o formato de disciplina selecionada.';
+$string['filter_course_help'] = 'Mostrar o tour numa página que está associada com a disciplina selecionada.';
 $string['filter_header'] = 'Filtros da demonstração';
 $string['filter_help'] = 'Selecione as condições sob as quais a demonstração será mostrada. Todos os filtros devem corresponder a uma demonstração a ser mostrada a um utilizador.';
 $string['filter_role'] = 'Papel';
@@ -100,6 +106,10 @@ $string['placement_help'] = 'Uma etapa pode ser colocada acima, abaixo, à esque
 
 Se não for possível ajustar a etapa no local especificado de uma determinada página, ela será automaticamente colocada noutro lugar.';
 $string['pluginname'] = 'Demonstrações ao utilizador';
+$string['privacy:metadata:preference:completed'] = 'A data/hora em que um utilizador completou pela última vez uma demonstração de utilizador.';
+$string['privacy:metadata:preference:requested'] = 'A data/hora em que um utilizador solicitou pela última vez uma demonstração de utilizador.';
+$string['privacy:request:preference:completed'] = 'A última vez que marcou como concluída a demonstração de utilizador "{$a->name}" foi em {$a->time}';
+$string['privacy:request:preference:requested'] = 'Solicitou a demonstração de utilizador "{$a->name}" pela última vez em {$a->time}';
 $string['reflex'] = 'Clique para avançar';
 $string['reflex_help'] = 'Ir para a próxima etapa quando clicar no destino.';
 $string['resettouronpage'] = 'Repor a demonstração ao utilizador nesta página';
@@ -131,9 +141,9 @@ Em alternativa, um ID de string do idioma pode ser inserido no identificador de 
 $string['tour1_content_addingblocks'] = 'Na verdade, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, como regra geral, é muito melhor certificar-se de que o seu site funciona bem sem quaisquer blocos.';
 $string['tour1_content_blockregion'] = 'Existe ainda uma área com blocos. Recomenda-se a remoção completa dos blocos Navegação e Administração, uma vez que toda a funcionalidade destes está noutro lugar no tema Boost.';
 $string['tour1_content_customisation'] = 'Para personalizar a aparência do seu site e da página principal, use o menu de configurações no canto deste cabeçalho. Clique em Ativar o modo de edição.';
-$string['tour1_content_end'] = 'Esta foi uma demonstração ao utilizador, um novo recurso no Moodle 3.2. Não será mostrada novamente a menos que a reinicie através da hiperligação existente no rodapé. Como administrador, também pode criar as suas demonstrações!';
+$string['tour1_content_end'] = 'Esta foi uma demonstração ao utilizador. Não será mostrada novamente a menos que a reinicie através da hiperligação existente no rodapé. Como administrador, também pode criar as suas demonstrações!';
 $string['tour1_content_navigation'] = 'A maioria da navegação é agora feita através desta caixa de navegação. Os conteúdos mostrados dependem de onde está no site. Use o botão na parte superior para ocultá-la ou mostrá-la.';
-$string['tour1_content_welcome'] = 'Bem-vindo ao tema Boost para o Moodle 3.2. Se já usou o Moodle antes, irá notar que as coisas estão um pouco diferentes.';
+$string['tour1_content_welcome'] = 'Bem-vindo ao tema Boost. Se o seu site foi atualizado a partir de uma versão anterior, irá notar que as coisas estão um pouco diferentes com este tema.';
 $string['tour1_title_addingblocks'] = 'A adicionar blocos';
 $string['tour1_title_blockregion'] = 'Região do bloco';
 $string['tour1_title_customisation'] = 'Personalização';
@@ -143,11 +153,11 @@ $string['tour1_title_welcome'] = 'Bem-vindo';
 $string['tour2_content_addblock'] = 'Se ativar o modo de edição, poderá adicionar blocos da caixa de navegação. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, para uma melhor experiência do utilizador é melhor certificar-se de que a disciplina funciona bem, sem quaisquer blocos.';
 $string['tour2_content_addingblocks'] = 'Pode adicionar blocos a esta página através deste botão. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, para uma melhor experiência do utilizador é melhor certificar-se de que a disciplina funciona bem, sem quaisquer blocos.';
 $string['tour2_content_customisation'] = 'Para alterar as configurações da disciplina, use o menu de configurações no canto deste cabeçalho. Também encontrará um menu de configurações semelhante na página inicial de todas as atividades. Clique em Ativar o modo de edição.';
-$string['tour2_content_end'] = 'Esta foi uma demonstração ao utilizador, um novo recurso no Moodle 3.2. Não será mostrada novamente a menos que a reinicie através da hiperligação existente no rodapé. Se necessário, o administrador do site também pode criar outras demonstrações para este site.';
+$string['tour2_content_end'] = 'Esta foi uma demonstração ao utilizador. Não será mostrada novamente a menos que a reinicie usando a hiperligação existente no rodapé. Se necessário, o administrador do site também pode criar outras demonstrações para este site.';
 $string['tour2_content_navigation'] = 'A navegação é agora feita através desta caixa de navegação. Use o botão na parte superior para ocultá-la ou mostrá-la. Verá que existem hiperligações para as secções principais da sua disciplina.';
 $string['tour2_content_opendrawer'] = 'Tente abrir agora a caixa de navegação.';
 $string['tour2_content_participants'] = 'Ver os participantes aqui. Também é onde pode adicionar ou remover alunos.';
-$string['tour2_content_welcome'] = 'Bem-vindo ao tema Boost para o Moodle 3.2. Se já usou o Moodle antes, irá notar que as coisas estão um pouco diferentes aqui na página da disciplina.';
+$string['tour2_content_welcome'] = 'Bem-vindo ao tema Boost. Se o seu site foi atualizado a partir de uma versão anterior, irá notar que as coisas estão um pouco diferentes aqui na página da disciplina.';
 $string['tour2_title_addblock'] = 'Adicionar um bloco';
 $string['tour2_title_addingblocks'] = 'A adicionar blocos';
 $string['tour2_title_customisation'] = 'Personalização';

@@ -684,6 +684,7 @@ function clickedu_sync_contents_module($course, $section, $idnumber, $modulecont
     $moduleinfo->course = $course->id;
     $moduleinfo->section = $section->section;
     $moduleinfo->cmidnumber = $idnumber;
+    $moduleinfo->visibleoncoursepage = 1;
 
     foreach ($modulecontents as $key => $value) {
         $moduleinfo->$key = $value;

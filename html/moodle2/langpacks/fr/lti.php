@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,6 @@ $string['addnewapp'] = 'Activer l\'application externe';
 $string['addserver'] = 'Ajouter un serveur fiable';
 $string['addtype'] = 'Ajouter un outil préconfiguré';
 $string['allow'] = 'Autoriser';
-$string['allowinstructorcustom'] = 'Permettre aux enseignants d\'ajouter des paramètres personnalisés';
 $string['allowsetting'] = 'Permettre à l\'outil de stocker 8 kO de réglages dans Moodle';
 $string['always'] = 'Toujours';
 $string['autoaddtype'] = 'Ajouter un outil';
@@ -90,7 +89,7 @@ $string['courselink'] = 'Aller au cours';
 $string['coursemisconf'] = 'Le cours n\'est pas configuré correctement';
 $string['course_tool_types'] = 'Outils de cours';
 $string['createdon'] = 'Créé le';
-$string['curllibrarymissing'] = 'La bibliothèque PHP cURL doit être installée pour utiliser LTI';
+$string['curllibrarymissing'] = 'La bibliothèque PHP cURL est requise pour les outils externes.';
 $string['custom'] = 'Paramètres personnalisés';
 $string['custom_config'] = 'Utilisation de l\'outil de configuration personnalisé';
 $string['custom_help'] = 'Les paramètres personnalisés sont des réglages utilisés par le fournisseur de l\'outil. Par exemple, un paramètre personnalisé pourrait être utilisé pour afficher une ressource spécifique du fournisseur. Chaque paramètre doit être saisi sur une ligne séparée, dans le format « nom=valeur », par exemple : « chapitre=3 ».
@@ -183,6 +182,10 @@ $string['grading'] = 'Évaluation';
 $string['icon_url'] = 'URL de l\'icône';
 $string['icon_url_help'] = 'L\'URL de l\'icône permet de spécifier une icône différente à afficher pour cette activité dans la liste du cours. Au lieu d\'afficher l\'icône LTI par défaut, on peut spécifier une icône qui représente mieux le type de l\'activité.';
 $string['id'] = 'ID';
+$string['indicator:cognitivedepth'] = 'LTI : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité LTI.';
+$string['indicator:socialbreadth'] = 'LTI : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité LTI.';
 $string['invalidid'] = 'L\'identifiant LTI est incorrect';
 $string['launch_in_moodle'] = 'Lancer l\'outil dans Moodle';
 $string['launchinpopup'] = 'Conteneur de lancement';
@@ -204,6 +207,7 @@ $string['leaveblank'] = 'Laisser vide si vous n\'en avez pas besoin';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Ajouter des configurations d\'outils externes propres à un cours';
 $string['lti:addinstance'] = 'Ajouter des activités d\'outils externes';
+$string['lti:admin'] = 'Devenir un administrateur lorsque l\'outil est lancé';
 $string['lti_administration'] = 'Modifier outil préconfiguré';
 $string['lti_errormsg'] = 'L\'outil a retourné le message d\'erreur suivant : « {$a} »';
 $string['lti:grade'] = 'Voir les notes retournées par un outil externe';
@@ -299,6 +303,32 @@ $string['preferwidget'] = 'Préférer le gadget de lancement';
 $string['preferwidth'] = 'Largeur préférée';
 $string['press_to_submit'] = 'Cliquer pour lancer cette activité';
 $string['privacy'] = 'Confidentialité';
+$string['privacy:metadata:coursefullname'] = 'Le nom complet du cours depuis lequel l\'utilisateur accède au contenu LTI';
+$string['privacy:metadata:courseid'] = 'L\'identifiant du cours depuis lequel l\'utilisateur accède au contenu LTI';
+$string['privacy:metadata:courseidnumber'] = 'Le numéro du cours depuis lequel l\'utilisateur accède au contenu LTI';
+$string['privacy:metadata:courseshortname'] = 'Le nom abrégé du cours depuis lequel l\'utilisateur accède au contenu LTI';
+$string['privacy:metadata:createdby'] = 'L\'utilisateur qui a créé l\'enregistrement';
+$string['privacy:metadata:email'] = 'L\'adresse de courriel de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:externalpurpose'] = 'Le contenu LTI fournit des informations utilisateur et le contexte vers le fournisseur de l\'outil LTI.';
+$string['privacy:metadata:firstname'] = 'Le prénom de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:fullname'] = 'Le nom complet de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:lastname'] = 'Le nom de famille de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:lti_submission'] = 'Remise LTI';
+$string['privacy:metadata:lti_submission:datesubmitted'] = 'L\'horodatage de la remise du travail';
+$string['privacy:metadata:lti_submission:dateupdated'] = 'L\'horodatage de la modification de la remise du travail';
+$string['privacy:metadata:lti_submission:gradepercent'] = 'La note de l\'utilisateur en pourcentage';
+$string['privacy:metadata:lti_submission:originalgrade'] = 'La note originale de l\'utilisateur';
+$string['privacy:metadata:lti_submission:userid'] = 'L\'identifiant de l\'utilisateur qui fait une remise pour l\'activité LTI';
+$string['privacy:metadata:lti_tool_proxies'] = 'Proxies LTI';
+$string['privacy:metadata:lti_tool_proxies:name'] = 'Nom du proxy LTI';
+$string['privacy:metadata:lti_types'] = 'Types LTI';
+$string['privacy:metadata:lti_types:name'] = 'Nom du type LTI';
+$string['privacy:metadata:role'] = 'Le rôle dans le cours de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:timecreated'] = 'La date et l\'heure de création de l\'enregistrement';
+$string['privacy:metadata:timemodified'] = 'La date et l\'heure de modification de l\'enregistrement';
+$string['privacy:metadata:userid'] = 'L\'identifiant de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:useridnumber'] = 'Le numéro de l\'utilisateur de l\'utilisateur qui accède au contenu LTI';
+$string['privacy:metadata:username'] = 'Le nom d\'utilisateur de l\'utilisateur qui accède au contenu LTI';
 $string['quickgrade'] = 'Permettre l\'évaluation rapide';
 $string['quickgrade_help'] = 'Si ce réglage est activé, plusieurs outils peuvent être évalués sur une seule page. Ajoutez des notes et des commentaires, puis cliquez « Enregistrer mes feedbacks » pour enregistrer toutes les modifications.';
 $string['redirect'] = 'Vous allez être redirigé dans quelques secondes. Dans le cas contraire, cliquez sur le bouton.';

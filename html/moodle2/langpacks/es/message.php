@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -84,7 +84,7 @@ $string['newonlymsg'] = 'Mostrar sólo nuevos';
 $string['newsearch'] = 'Nueva búsqueda';
 $string['nocontacts'] = 'No hay contactos';
 $string['noframesjs'] = 'Usar interfaz más accesible';
-$string['nomessages'] = 'No hay mensajes en espera';
+$string['nomessages'] = 'No hay mensajes';
 $string['nomessagesfound'] = 'No se encontraron mensajes';
 $string['noncontacts'] = 'No contactos';
 $string['nonotifications'] = 'No tienes notificaciones';

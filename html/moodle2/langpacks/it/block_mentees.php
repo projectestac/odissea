@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mentees', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['mentees:addinstance'] = 'Aggiungere blocco Assistiti';
 $string['mentees:myaddinstance'] = 'Aggiungere blocco Assistiti nella Dashboard';
 $string['newmenteesblock'] = '(nuovo blocco Assistiti)';
 $string['pluginname'] = 'Assistiti';
+$string['privacy:metadata'] = 'Il blocco Assistiti visualizza solamente dati provenienti da altre parti.';

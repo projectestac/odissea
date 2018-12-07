@@ -33,3 +33,4 @@ $string['pluginnamesummary'] = 'Παρόμοια με την τυπική σύν
 $string['pluginnameediting'] = 'Επεξεργασία ερώτησης τύπου σύντομης απάντησης για μαθηματικά και επιστήμη από τη WIRIS';
 $string['pluginnameadding'] = 'Προσθήκη ερώτησης τύπου σύντομης απάντησης για μαθηματικά και επιστήμη από τη WIRIS';
 $string['contentnotviewable'] = 'Το περιεχόμενο δεν μπορεί να εμφανιστεί.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Short-Answer question type does not effect or store any data itself.';

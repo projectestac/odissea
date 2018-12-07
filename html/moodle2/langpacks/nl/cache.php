@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cache', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,10 +34,12 @@ $string['addstoresuccess'] = 'Toevoegen van een nieuwe {$a} opslag gelukt';
 $string['area'] = 'Zone';
 $string['cacheadmin'] = 'Cache-beheer';
 $string['cacheconfig'] = 'Configuratie';
+$string['cachedef_calendar_categories'] = 'Kalender cursus categorieën die een gebruiker kan openen';
 $string['cachedef_calendar_subscriptions'] = 'Kalenderinschrijvingen';
 $string['cachedef_capabilities'] = 'Lijst systeemmogelijkheden';
 $string['cachedef_completion'] = 'Status van activiteitsvoltooiing';
 $string['cachedef_config'] = 'Configuratie-instellingen';
+$string['cachedef_contextwithinsights'] = 'Context met inzichten';
 $string['cachedef_coursecat'] = 'Cursuscategorielijst voor een bepaalde gebruiker';
 $string['cachedef_coursecatrecords'] = 'Cursuscategorie-records';
 $string['cachedef_coursecattree'] = 'Cursuscategorieboomstructuur';
@@ -47,6 +49,7 @@ $string['cachedef_coursemodinfo'] = 'Geaccumuleerde informatie over modules en s
 $string['cachedef_databasemeta'] = 'Meta-informatie databank';
 $string['cachedef_eventinvalidation'] = 'Gebeurtenis ongeldig maken';
 $string['cachedef_externalbadges'] = 'Externe badges voor een bepaalde gebruiker';
+$string['cachedef_fontawesomeiconmapping'] = 'Koppeling van icoontjes voor lettertype awesome';
 $string['cachedef_grade_categories'] = 'Cijfercategorie queries';
 $string['cachedef_groupdata'] = 'Cursus groepsinformatie';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - opgeschoonde inhoud';
@@ -59,13 +62,16 @@ $string['cachedef_observers'] = 'Actie wachters';
 $string['cachedef_plugin_functions'] = 'Plugins beschikbare callbacks';
 $string['cachedef_plugin_manager'] = 'Plugin infobeheerder';
 $string['cachedef_postprocessedcss'] = 'Nabewerkt CSS';
+$string['cachedef_presignup'] = 'Pre-aanmeldingsgegevens voor bepaalde niet-geregistreerde gebruikers';
 $string['cachedef_questiondata'] = 'Vraagdefinities';
 $string['cachedef_repositories'] = 'Opslagruimtegegevens';
+$string['cachedef_roledefs'] = 'Roldefinities';
 $string['cachedef_string'] = 'Taalstringcache';
 $string['cachedef_suspended_userids'] = 'Lijst van geschorste leerlingen per cursus.';
 $string['cachedef_tagindexbuilder'] = 'Doorzoek de resultaten van getagede items';
 $string['cachedef_tags'] = 'Tagcollecties en ideeën';
 $string['cachedef_temp_tables'] = 'Tijdelijke tabelcache';
+$string['cachedef_user_group_groupings'] = 'Groepen en groeperingen van gebruiker per cursus';
 $string['cachedef_userselections'] = 'Gegevens gebruikt om gebruikersselecties door Moodle te laten volgen';
 $string['cachedef_yuimodules'] = 'YUI Moduledefinities';
 $string['cachelock_file_default'] = 'Standaard bestandsblokkering';
@@ -110,7 +116,7 @@ $string['invalidstore'] = 'Ongeldige cache opslag gegeven';
 $string['localstorenotification'] = 'Deze cache kan veilig gekoppeld worden aan een opslagruimte, lokaal voor elke webserver';
 $string['lockdefault'] = 'Standaard';
 $string['locking'] = 'Blokkeren';
-$string['locking_help'] = 'Locking is een mechanisme dat de toegang tot gegevens in cache beperkt tot één proces tegelijk om te voorkomen dat de gegevens overschreven worden. De methode van locking bepaalt hoe de lock bekomen en gecontroleerd wordt.';
+$string['locking_help'] = 'Locking is een mechanisme dat de toegang tot gegevens in cache beperkt tot één proces tegelijk om te voorkomen dat de gegevens overschreven worden. De methode van locking bepaalt hoe de lock verkregen en gecontroleerd wordt.';
 $string['lockname'] = 'Naam';
 $string['locknamedesc'] = 'De naam moet uniek zijn en mag enkel letters, hoofdletters en underscore bevatten (a-z, A-Z, _ )';
 $string['locknamenotunique'] = 'De gekozen naam is niet uniek. Kies een unieke naam.';
@@ -130,6 +136,7 @@ $string['nativelocking'] = 'Deze plugin doet zijn eigen blokkeringen';
 $string['none'] = 'Geen';
 $string['plugin'] = 'Plugin';
 $string['pluginsummaries'] = 'Geïnstalleerde cache opslag';
+$string['privacy:metadata:cachestore'] = 'Het cache subsysteem bewaart tijdelijk gegevens voor andere delen van Moodle. Deze gegevens kunnen niet eenvoudig geïdentificeerd worden en leven kort. Het is bedoeld als cache van gegevens die elders in Moodle bewaard worden en zijn daarom al behandeld door die Moodle-componenten.';
 $string['purge'] = 'Leegmaken';
 $string['purgedefinitionsuccess'] = 'Met succes de gevraagde definitie weggegooid.';
 $string['purgestoresuccess'] = 'Opslag met succes leeggemaakt';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_atto', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'Could not connect to the server. If you submit this page now, your changes may be lost.';
 $string['autosavefrequency'] = 'Autosave frequency';
 $string['autosavefrequency_desc'] = 'This is the number of seconds between auto save attempts. Atto will automatically save the text in the editor according to this setting, so that text can be automatically restored when the same user returns to the same form.';
+$string['autosaves'] = 'Editor autosave information';
 $string['autosavesucceeded'] = 'Draft saved.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -40,6 +41,10 @@ $string['errortextrecovery'] = 'Unfortunately the draft version could not be res
 $string['infostatus'] = 'Information';
 $string['pluginname'] = 'Atto HTML editor';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['privacy:metadata:database:atto_autosave'] = 'Automatically saved text editor drafts.';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'The text which was saved.';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'The time that content was modified.';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'The ID of the user whose data was saved.';
 $string['recover'] = 'Recover';
 $string['settings'] = 'Atto toolbar settings';
 $string['subplugintype_atto'] = 'Atto plugin';

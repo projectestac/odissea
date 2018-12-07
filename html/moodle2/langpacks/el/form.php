@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,11 +41,12 @@ $string['err_nopunctuation'] = 'Δεν πρέπει να εισάγετε χαρ
 $string['err_numeric'] = 'Πρέπει να εισάγετε έναν αριθμό εδώ.';
 $string['err_rangelength'] = 'Πρέπει να εισάγετε μεταξύ {$a->format[0]} και {$a->format[1]} χαρακτήρες εδώ.';
 $string['err_required'] = 'Πρέπει να εισάγετε μια τιμή εδώ.';
+$string['filesofthesetypes'] = 'Αποδεκτοί τύποι αρχείου:';
 $string['general'] = 'Γενικά';
 $string['hideadvanced'] = 'Απόκρυψη προχωρημένων';
 $string['hour'] = 'Ώρα';
 $string['minute'] = 'Λεπτό';
-$string['miscellaneoussettings'] = 'Ετερόκλητες Ρυθμίσεις';
+$string['miscellaneoussettings'] = 'Διάφορες ρυθμίσεις';
 $string['modstandardels'] = 'Συχνές ρυθμίσεις μονάδας';
 $string['month'] = 'Μήνας';
 $string['mustbeoverriden'] = 'Η αφηρημένη μέθοδος form_definition() στην κλάση {$a} πρέπει να υπερισχύεται από κάτι άλλο, παρακαλούμε διορθώστε τον κώδικα.';

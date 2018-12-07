@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_menu', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_menu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Zabaltzen den menua';
+$string['privacy:metadata:profilefield_menu:data'] = 'Gordetako erabiltzaile-informazioa.';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'Gordetako erabiltzaile-informazioaren formatua.';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'Profil-eremuaren IDa.';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Hemen erabiltzaile-informazio gehigarria gordetzen da.';
+$string['privacy:metadata:profilefield_menu:userid'] = 'Zabaltzen den menua pluginak gordetzen duen datuen erabiltzailearen IDa.';

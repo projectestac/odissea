@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculatedsimple
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['pluginnameediting'] = 'Editing a Simple calculated question';
 $string['pluginname_help'] = 'Simple calculated questions enable individual numerical questions to be created using wildcards that are substituted with individual values when the quiz is taken. Simple calculated questions offer the most used features of the calculated question with a simpler creation interface.';
 $string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnamesummary'] = 'A simpler version of calculated questions which are like numerical questions but with the numbers used selected randomly from a set when the quiz is taken.';
+$string['privacy:metadata'] = 'The Calculated simple question type plugin does not store any personal data.';
 $string['setno'] = 'Set {$a}';
 $string['setwildcardvalues'] = 'set(s) of wild card(s) values';
 $string['showitems'] = 'Display';

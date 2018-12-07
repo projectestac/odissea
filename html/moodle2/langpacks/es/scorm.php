@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -98,6 +98,7 @@ $string['confirmloosetracks'] = 'ATENCIÓN: El paquete parece haber sido cambiad
 $string['contents'] = 'Contenido';
 $string['coursepacket'] = 'Paquete de curso';
 $string['coursestruct'] = 'Estructura de curso';
+$string['crontask'] = 'Procesamiento en segundo plano para SCORM';
 $string['currentwindow'] = 'Ventana actual';
 $string['datadir'] = 'Error del sistema de archivos: No se puede crear el directorio de datos del curso';
 $string['defaultdisplaysettings'] = 'Configuración de pantalla predeterminada';
@@ -199,6 +200,10 @@ $string['hidetoc_help'] = 'Esta configuración especifica cómo se muestra la ta
 $string['highestattempt'] = 'Intento más alto';
 $string['identifier'] = 'Identificador de preguntas';
 $string['incomplete'] = 'Incompleto';
+$string['indicator:cognitivedepth'] = 'SCORM cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad SCORM.';
+$string['indicator:socialbreadth'] = 'SCORM social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad SCORM.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interacciones';
 $string['invalidactivity'] = 'La actividad SCORM es incorrecta';

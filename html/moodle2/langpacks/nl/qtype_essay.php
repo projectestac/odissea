@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,8 +43,10 @@ $string['nlines'] = '{$a} lijnen';
 $string['pluginname'] = 'Open vraag';
 $string['pluginnameadding'] = 'Open vraag toevoegen';
 $string['pluginnameediting'] = 'Open vraag bewerken';
-$string['pluginname_help'] = 'Als antwoord op de vraag (die een afbeelding kan bevatten) schrijft de respondent een antwoord van één of enkele paragrafen. De open vraag zal geen cijfer krijgen tot de leraar ze manueel beoordeeld heeft.';
+$string['pluginname_help'] = 'Als antwoord op de vraag kan de respondent één of meer bestanden uploaden en/of een antwoord online noteren. Er kan een antwoordsjabloon voorzien worden.
+De antwoorden moeten manueel beoordeeld worden.';
 $string['pluginnamesummary'] = 'Hiermee kun je een antwoord laten geven dat bestaat uit enkele zinnen of paragrafen. Deze antwoorden moeten manueel beoordeeld worden.';
+$string['privacy:metadata'] = 'Het vraagtype Open vraag bewaart geen persoonlijke gegevens.';
 $string['responsefieldlines'] = 'Grootte invoerveld';
 $string['responseformat'] = 'Antwoord formaat';
 $string['responseisrequired'] = 'Eis van de leerling dat die tekst invoert';

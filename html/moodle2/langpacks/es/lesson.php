@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lesson', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -104,7 +104,6 @@ $string['checknavigation'] = 'Revisar navegación';
 $string['checkquestion'] = 'Revisar pregunta';
 $string['classstats'] = 'Estadísticas de clase';
 $string['clicktodownload'] = 'Haga clic en el siguiente enlace para descargar el archivo.';
-$string['clicktopost'] = 'Haga clic aquí para enviar su calificación a la lista de mejores puntuaciones.';
 $string['closebeforeopen'] = 'No se ha podido actualizar la lección. Ha especificado una fecha de cierre anterior a la fecha de apertura.';
 $string['cluster'] = 'Cluster';
 $string['clusterjump'] = 'Pregunta no vista dentro de un cluster';
@@ -121,7 +120,6 @@ $string['completiontimespentgroup'] = 'Tiempo necesario invertido';
 $string['conditionsfordependency'] = 'Condición(es) para la dependencia';
 $string['configactionaftercorrectanswer'] = 'Acción predeterminada a ejecutar tras una respuesta correcta';
 $string['configmaxanswers'] = 'Número máximo de respuestas por página predeterminado';
-$string['configmaxhighscores'] = 'Número de puntuaciones altas a mostrar';
 $string['configmediaclose'] = 'Muestra un botón de cierre en el marco de la ventana emergente generada por un archivo multimedia vinculado';
 $string['configmediaheight'] = 'Establece la altura de la ventana emergente para mostrar un archivo multimedia enlazado';
 $string['configmediawidth'] = 'Establece el ancho de la ventana emergente para mostrar un archivo multimedia enlazado.';
@@ -171,7 +169,6 @@ $string['displaydefaultfeedback_help'] = '<p align="center"><strong>Mostrar retr
 
 <p>Si se ajusta esta opción a <strong>Sí</strong>, cuando no se encuentre una respuesta a una pregunta en particular, se usará por defecto el comentario "Esa es la respuesta correcta" y "Esa es la respuesta incorrecta".</p>
 <p>Si la opción se ajusta a <strong>No</strong>, cuando no se encuentre una respuesta a una pregunta en particular, no se mostrarán comentarios de retroalimentación. El usuario que está realizando la lección pasará directamente a la siguiente página de la lección.</p>';
-$string['displayhighscores'] = 'Mostrar mejores puntuaciones';
 $string['displayinleftmenu'] = '¿Mostrar en el menú?';
 $string['displayleftif'] = 'Calificación mínima para mostrar el menú';
 $string['displayleftif_help'] = 'Esta configuración determina si un estudiante debe obtener una cierta puntuación para poder ver el menú de la izquierda. Esto obliga al estudiante a pasar por toda la lección en su primer intento y así obtener la puntuación necesaria para poder utilizar el menú de la izquierda para la revisión.';
@@ -204,7 +201,6 @@ $string['endofcluster'] = 'Final de cluster';
 $string['endofclustertitle'] = 'Fin de cluster';
 $string['endoflesson'] = 'Fin de la lección';
 $string['enteredthis'] = 'introducido ésta.';
-$string['entername'] = 'Escriba un apodo para la lista de mejores puntuaciones';
 $string['enterpassword'] = 'Por favor, escriba la contraseña:';
 $string['eolstudentoutoftime'] = 'Atención: Usted ha sobrepasado el tiempo fijado para esta lección. Su última respuesta puede no haber sido contabilizada si ha sido dada con el tiempo finalizado.';
 $string['eolstudentoutoftimenoanswers'] = 'No ha contestado a ninguna pregunta. En esta lección ha obtenido 0 puntos.';
@@ -217,8 +213,6 @@ $string['essayscore'] = 'Puntuación del ensayo';
 $string['eventcontentpageviewed'] = 'Página de contenidos visualizada';
 $string['eventessayassessed'] = 'Ensayo evaluado';
 $string['eventessayattemptviewed'] = 'Intento del ensayo visualizado';
-$string['eventhighscoreadded'] = 'Puntuación más alta añadida';
-$string['eventhighscoresviewed'] = 'Puntuaciones más altas visualizadas';
 $string['eventlessonended'] = 'Lección finalizada';
 $string['eventlessonrestarted'] = 'Lección reiniciada';
 $string['eventlessonresumed'] = 'Lección reanudada';
@@ -246,6 +240,7 @@ $string['gotoendoflesson'] = 'Ir al final de la lección';
 $string['grade'] = 'Calificación';
 $string['gradebetterthan'] = 'Calificación superior a (%)';
 $string['gradebetterthanerror'] = 'Obtener una calificación superior al {$a} por ciento';
+$string['graded'] = 'Calificado';
 $string['gradeessay'] = 'Calificar preguntas de ensayo ({$a->notgradedcount} no calificadas y {$a->notsentcount} no enviadas)';
 $string['gradeis'] = 'La calificación es {$a}';
 $string['gradeoptions'] = 'Opciones de Calificación';
@@ -257,12 +252,15 @@ $string['handlingofretakes_help'] = 'Si se permite repetir la lección, este aju
 $string['havenotgradedyet'] = 'Aún no calificado.';
 $string['here'] = 'aquí';
 $string['highscore'] = 'Puntuación alta';
-$string['highscores'] = 'Puntuaciones altas';
 $string['hightime'] = 'Tiempo alto';
 $string['importcount'] = 'Importando {$a} preguntas';
 $string['importquestions'] = 'Importar preguntas';
 $string['importquestions_help'] = 'Esta función permite importar preguntas de diferentes formatos mediante archivos de texto,';
 $string['inactiveoverridehelp'] = '* El estudiante no está en el grupo correcto o no posee el rol adecuado para ver/realizar un intento en esta lección';
+$string['indicator:cognitivedepth'] = 'Lección cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Lección.';
+$string['indicator:socialbreadth'] = 'Lección social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Lección.';
 $string['insertedpage'] = 'Página insertada';
 $string['invalidfile'] = 'Archivo no válido';
 $string['invalidid'] = 'No se superó ningún ID de módulo o de lección en el curso';
@@ -293,7 +291,7 @@ $string['lessonopen'] = 'Esta lección se abrirá el {$a}.';
 $string['lessonopens'] = 'La lección se abre';
 $string['lessonpagelinkingbroken'] = 'No se encuentra la primera página. El enlace a la página de la lección debe estar roto. Por favor, contacte con el administrador.';
 $string['lessonstats'] = 'Estadísticas de la lección';
-$string['lesson:view'] = 'Ver actividad en la lección';
+$string['lesson:view'] = 'Ver actividad de la lección';
 $string['lesson:viewreports'] = 'Ver informes de lecciones';
 $string['linkedmedia'] = 'Medios enlazados';
 $string['loginfail'] = 'Acceso fallido, por favor pruebe de nuevo...';
@@ -305,14 +303,13 @@ $string['matching'] = 'Emparejamiento';
 $string['matchingpair'] = 'Pareja {$a}';
 $string['maxgrade'] = 'Calificación máxima';
 $string['maxgrade_help'] = 'Este ajuste especifica la calificación máxima de la lección. Si se establece en 0, la lección no aparece en las páginas de notas.';
-$string['maxhighscores'] = 'Número de puntuaciones más altas para mostrar';
 $string['maximumnumberofanswersbranches'] = 'Número máximo de respuestas';
 $string['maximumnumberofanswersbranches_help'] = 'Este ajuste determina el número máximo de respuestas que se pueden usar en la lección. Si solo se utilizan preguntas de tipo Verdadero/Falso, podemos establecer el valor de 2.
 Este valor se puede cambiar en cualquier momento ya que sólo afecta a lo que el profesor ve, no a los datos.';
 $string['maximumnumberofattempts'] = 'Número máximo de intentos';
 $string['maximumnumberofattempts_help'] = 'Este ajuste especifica el número máximo de intentos permitidos para cada pregunta. Si se responde incorrectamente en repetidas ocasiones, al alcanzar este valor máximo, se muestra la siguiente página de la lección.';
 $string['maximumnumberofattemptsreached'] = 'Se ha alcanzado el número máximo de intentos. Traslado a la página siguiente';
-$string['mediaclose'] = 'Mostrar botón de cierre:';
+$string['mediaclose'] = 'Mostrar botón de cierre';
 $string['mediafile'] = 'Archivo en ventana emergente';
 $string['mediafile_help'] = '<p>Esta opción crea una ventana emergente al comienzo de la lección a un archivo (e.g., mp3) o página web. Asimismo, en cada página de la lección aparecerá un enlace que abre de nuevo la ventana emergente si fuera necesario.</p>
 
@@ -389,7 +386,7 @@ $string['notcompleted'] = 'Sin finalizar';
 $string['notdefined'] = 'Sin definir';
 $string['notenoughsubquestions'] = 'No se han definido suficientes subpreguntas.<br /> ¿Quiere regresar y arreglar esta pregunta?';
 $string['notenoughtimespent'] = 'Ha finalizado esta lección en {$a->timespent}, una cantidad de tiempo inferior al tiempo necesario establecido en {$a->timerequired}. Puede que tenga que volver a realizar un intento en esta lección.';
-$string['nothighscore'] = 'No ha fijado la lista {$a} de puntuaciones más altas.';
+$string['notgraded'] = 'Sin calificar';
 $string['notitle'] = 'Sin título';
 $string['notyetcompleted'] = 'La lección se ha comenzado, pero no ha sido finalizada todavía';
 $string['numberofcorrectanswers'] = 'Número de respuestas correctas: {$a}';
@@ -550,7 +547,6 @@ $string['timeremaining'] = 'Tiempo restante';
 $string['timespenterror'] = 'Dedicar al menos {$a} minutos a la lección';
 $string['timespentminutes'] = 'Tiempo empleado (minutos)';
 $string['timetaken'] = 'Tiempo empleado';
-$string['topscorestitle'] = '{$a} puntuaciones más altas.';
 $string['totalpagesviewedheader'] = 'Número de páginas vistas';
 $string['true'] = 'Verdadero';
 $string['truefalse'] = 'Verdadero/Falso';
@@ -569,7 +565,6 @@ $string['useroverrides'] = 'Excepciones de usuario';
 $string['useroverridesdeleted'] = 'Excepciones de usuario eliminadas';
 $string['usersnone'] = 'Los alumnos no tienen acceso a esta lección';
 $string['viewgrades'] = 'Ver calificaciones';
-$string['viewhighscores'] = 'Ver lista de puntuaciones más altas.';
 $string['viewreports'] = 'Ver {$a->attempts} intentos {$a->student} completados';
 $string['viewreports2'] = 'View {$a} intentos completados';
 $string['warning'] = 'Aviso';
@@ -580,7 +575,6 @@ $string['wronganswerscore'] = 'Puntuación de respuesta errónea';
 $string['wrongresponse'] = 'Comentario (erróneo)';
 $string['xattempts'] = '{$a} intentos';
 $string['youhaveseen'] = 'Usted ya ha visto más de una página de esta lección.<br />¿Desea comenzar desde la última página vista?';
-$string['youmadehighscore'] = 'Lo ha hecho en la lista {$a} de puntuaciones más altas.';
 $string['youranswer'] = 'Su respuesta';
 $string['yourcurrentgradeis'] = 'Su calificación actual es {$a}';
 $string['yourcurrentgradeisoutof'] = 'Su calificación actual es {$a->grade} sobre {$a->total}';

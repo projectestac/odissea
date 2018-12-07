@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_random', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['numofselfallocatedsubmissions'] = '{$a} bidalketa automatikoki esleitze
 $string['numperauthor'] = 'bidalketako';
 $string['numperreviewer'] = 'ebaluatzaileko';
 $string['pluginname'] = 'Ausazko esleipena';
+$string['privacy:metadata'] = 'Ausazko esleipena pluginak ez du datu pertsonalik biltzen. Ebaluatuko duen pertsonaren datuak Tailerra moduluak berak gordetzen du eta horiek dira ebaluaziorako xehetasunak esportatzeko oinarria.';
 $string['randomallocationdone'] = 'Ausazko esleipena eginda';
 $string['removecurrentallocations'] = 'Ezabatu oraingo esleipena';
 $string['resultnomorepeers'] = 'Ez dago kide gehiago libre';

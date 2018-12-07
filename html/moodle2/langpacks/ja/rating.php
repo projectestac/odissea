@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'rating', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,11 @@ $string['norate'] = 'アイテムの評価は許可されていません!';
 $string['noratings'] = '送信された評価はありません。';
 $string['noviewanyrate'] = 'あなたは自分で作成したアイテムの結果のみ閲覧することができます。';
 $string['noviewrate'] = 'あなたにはアイテムの評価を閲覧するケイパビリティがありません。';
+$string['privacy:metadata:rating'] = 'ユーザが入力した評価は評価されたアイテムのマッピングと共に保存されます。';
+$string['privacy:metadata:rating:rating'] = 'ユーザが入力した数字評価です。';
+$string['privacy:metadata:rating:timecreated'] = '評価が最初に作成された時間です。';
+$string['privacy:metadata:rating:timemodified'] = '評価が最後に更新された時間です。';
+$string['privacy:metadata:rating:userid'] = '評価した人です。';
 $string['rate'] = '評価';
 $string['ratepermissiondenied'] = 'あなたにはこのアイテムを評価するパーミッションがありません。';
 $string['rating'] = '評価';

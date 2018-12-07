@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_activity_results', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['error_nogroupsexist'] = 'エラー: ブロックはグループモー�
 $string['error_unsupportedgradetype'] = 'エラー: 選択された活動はこのブロックでサポートされていない評定方法を使用するよう設定されています。';
 $string['notyetgraded'] = '未評定';
 $string['pluginname'] = '活動結果';
+$string['privacy:metadata'] = '活動結果ブロックは他の場所で保存されたデータのみ表示します。';
 $string['unknown'] = '不明な評価尺度';
 $string['worstgrade'] = '最低得点:';
 $string['worstgrades'] = 'ワースト {$a}:';

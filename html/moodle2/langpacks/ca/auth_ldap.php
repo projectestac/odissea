@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,10 +115,12 @@ $string['auth_ntlmsso_subnet_key'] = 'Subxarxa';
 $string['auth_ntlmsso_type'] = 'El mètode d\'autenticació configurat al servidor web per autenticar els usuaris ( en cas de dubte escolliu NTLM).';
 $string['auth_ntlmsso_type_key'] = 'Tipus d\'autenticació';
 $string['connectingldap'] = 'Connectant al Servidor LDAP';
+$string['connectingldapsuccess'] = 'La connexió amb el vostre servidor LDAP s\'ha realitzat amb èxit';
 $string['creatingtemptable'] = 'S\'està creant una taula temporal {$a}';
 $string['didntfindexpiretime'] = 'password_expire() no ha pogut trobar el temps de caducitat';
 $string['didntgetusersfromldap'] = 'Encara no hi usuaris LDAP -- error ? -- S\'està sortint.';
 $string['gotcountrecordsfromldap'] = 'S\'han trobat {$a} registres de LDAP';
+$string['ldapnotconfigured'] = 'Actualment l\'URL del servidor LDAP no està configurat';
 $string['morethanoneuser'] = 'Que estrany! Més d\'un registre d\'usuari en LDAP. Sols s\'usa el primer.';
 $string['needbcmath'] = 'Us cal l\'extensió BCMath per utilitzar els inicis de sessió de gràcia amb l\'Active Directory.';
 $string['needmbstring'] = 'Us cal l\'extensió mbstring per canviar contrasenyes al directori actiu.';

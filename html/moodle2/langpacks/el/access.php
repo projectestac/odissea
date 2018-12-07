@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'access', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   access
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,11 +32,11 @@ $string['accessstatement'] = 'Δήλωση πρόσβασης';
 $string['activitynext'] = 'Επόμενη δραστηριότητα';
 $string['activityprev'] = 'Προηγούμενη δραστηριότητα';
 $string['breadcrumb'] = 'Ίχνος διαδρομής';
-$string['hideblocka'] = 'Απόκρυψη μπλοκ {$a}';
+$string['hideblocka'] = 'Απόκρυψη {$a} μπλοκ';
 $string['monthnext'] = 'Επόμενος μήνας';
 $string['monthprev'] = 'Προηγούμενος μήνας';
-$string['showblocka'] = 'Εμφάνιση μπλοκ {$a}';
-$string['sitemap'] = 'Χάρτης ιστοχώρου';
+$string['showblocka'] = 'Εμφάνιση {$a} μπλοκ';
+$string['sitemap'] = 'Χάρτης ιστοτόπου';
 $string['skipa'] = 'Παράλειψη {$a}';
 $string['skipblock'] = 'Παράλειψη μπλοκ';
 $string['skipnavigation'] = 'Παράλειψη πλοήγησης';

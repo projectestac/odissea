@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grouping', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grouping
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['description'] = '指定されたグルーピング内のグループに
 $string['error_selectgrouping'] = 'あなたはグルーピングを選択する必要があります。';
 $string['missing'] = '(不明のグルーピング)';
 $string['pluginname'] = 'グルーピングによる制限';
+$string['privacy:metadata'] = 'グルーピングによる制限プラグインはどのような個人データも保存しません。';
 $string['requires_grouping'] = 'あなたが <strong>{$a}</strong> においてグループに属している場合';
 $string['requires_notgrouping'] = 'あなたが <strong>{$a}</strong> においてグループに属していない場合';
 $string['title'] = 'グルーピング';

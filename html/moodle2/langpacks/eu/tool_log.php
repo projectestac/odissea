@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_log', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,12 @@ $string['configlogplugins'] = 'Gaitu beharrezko pluginak eta antolatu ordena ego
 $string['logging'] = 'Agerraldiak';
 $string['managelogging'] = 'Kudeatu agerraldi-biltegiak';
 $string['pluginname'] = 'Agerraldi-biltegiaren kudeatzaiea';
+$string['privacy:metadata:logstore'] = 'Erregistro-biltegiak';
+$string['privacy:path:logs'] = 'Erregistroak';
+$string['privacy:request:origin:cli'] = 'Komando-lerro bidezko erreminta';
+$string['privacy:request:origin:restore'] = 'Berreskuratzen ari den segurtasun-kopia';
+$string['privacy:request:origin:web'] = 'Web-eskaera estandarra';
+$string['privacy:request:origin:ws'] = 'Mobile appa edo web-zerbitzua';
 $string['reportssupported'] = 'Onartutako txostenak';
 $string['subplugintype_logstore'] = 'Agerraldi-biltegia';
 $string['subplugintype_logstore_plural'] = 'Agerraldi-biltegia';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multianswer', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['pluginnameadding'] = 'Gehitu txertatutako erantzuna (Cloze) motako gald
 $string['pluginnameediting'] = 'Editatu txertatutako erantzuna (Cloze) motako galdera';
 $string['pluginname_help'] = 'Txertatutako erantzunak (Cloze) motako galderetan testu bat aurkezten da eta horretan aukera anitzeko erantzunak edo txertatutako erantzunak.';
 $string['pluginnamesummary'] = 'Mota honetako galderak oso malguak dira, baina aukera anitzeko, erantzun laburreko eta zenbakizko galdera enbotatuak sortzen dituzten kode bereziak dituen testua gehituta bakarrik sor daitezke.';
+$string['privacy:metadata'] = 'Txertatutako erantzunak (Cloze) galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['qtypenotrecognized'] = '{$a} galdera-mota ezezaguna da';
 $string['questiondefinition'] = 'Galderaren definizioa';
 $string['questiondeleted'] = 'Galdera ezabatuta';

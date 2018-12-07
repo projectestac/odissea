@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Avançado';
 $string['alterstatus'] = 'Alterar estado';
 $string['altertimeend'] = 'Alterar data de fim';
 $string['altertimestart'] = 'Alterar data de inicio';
 $string['assignrole'] = 'Atribuir papel';
+$string['assignroles'] = 'Atribuir papeis';
 $string['browsecohorts'] = 'Ver a lista de Grupos globais';
 $string['browseusers'] = 'Ver lista de utilizadores';
 $string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que pretende remover a inscrição desses utilizadores?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Apagar inscrições selecionadas';
 $string['editselectedusers'] = 'Editar papéis dos utilizadores selecionados';
 $string['enrolledincourserole'] = 'Inscrito na disciplina "{$a->course}" como "{$a->role}"';
 $string['enrolusers'] = 'Inscrever utilizadores';
+$string['enroluserscohorts'] = 'Inscrever utilizadores e grupos globais selecionados';
 $string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a implementar quando a inscrição do utilizador expira. Por favor, note que alguns dados e definições do utilizador são removidos da disciplina durante o cancelamento da inscrição.';
 $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
@@ -64,6 +67,10 @@ $string['messageprovider:expiry_notification'] = 'Notificações de expiração 
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Inscrições manuais';
 $string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (ex: professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de auto-inscrição, dependem deste módulo.';
+$string['privacy:metadata'] = 'O módulo Inscrições manuais não armazena dados pessoais.';
+$string['selectcohorts'] = 'Selecionar grupos globais';
+$string['selection'] = 'Seleção';
+$string['selectusers'] = 'Selecionar utilizadores';
 $string['status'] = 'Ativar inscrições manuais';
 $string['status_desc'] = 'Permitir que os utilizadores inscritos internamente possam aceder à disciplina. Isto deve ser permitido na maior parte das situações.';
 $string['statusdisabled'] = 'Desativado';

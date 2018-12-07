@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_charmap', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_charmap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,8 +36,8 @@ $string['agrave'] = 'a - grave';
 $string['agrave_caps'] = 'A - grave';
 $string['alefsymbol'] = 'alef symbool';
 $string['almostequalto'] = 'bijna gelijk aan';
-$string['alpha'] = 'alpha';
-$string['alpha_caps'] = 'Alpha';
+$string['alpha'] = 'alfa';
+$string['alpha_caps'] = 'Alfa';
 $string['amacron'] = 'a - macron';
 $string['amacron_caps'] = 'A - macron';
 $string['ampersand'] = 'ampersand';
@@ -211,6 +211,7 @@ $string['pisymbol'] = 'pi-symbool';
 $string['pluginname'] = 'Teken invoegen';
 $string['plusminussign'] = 'plus minusteken';
 $string['poundsign'] = 'pond';
+$string['privacy:metadata'] = 'De plugin atto_charmap slaat geen persoonlijke gegevens op.';
 $string['proportionalto'] = 'in verhouding tot';
 $string['psi'] = 'psi';
 $string['psi_caps'] = 'Psi';

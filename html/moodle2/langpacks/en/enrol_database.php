@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'Configure database enrol instances';
 $string['database:unenrol'] = 'Unenrol suspended users';
 $string['dbencoding'] = 'Database encoding';
 $string['dbhost'] = 'Database host';
-$string['dbhost_desc'] = 'Type database server IP address or host name. Use a system DSN name if using ODBC.';
+$string['dbhost_desc'] = 'Type database server IP address or host name. Use a system DSN name if using ODBC. Use a PDO DSN if using PDO.';
 $string['dbname'] = 'Database name';
 $string['dbname_desc'] = 'Leave empty if using a DSN name in database host.';
 $string['dbpass'] = 'Database password';
@@ -60,6 +60,7 @@ $string['newcoursetable'] = 'Remote new courses table';
 $string['newcoursetable_desc'] = 'Specify of the name of the table that contains list of courses that should be created automatically. Empty means no courses are created.';
 $string['pluginname'] = 'External database';
 $string['pluginname_desc'] = 'You can use an external database (of nearly any kind) to control your enrolments. It is assumed your external database contains at least a field containing a course ID, and a field containing a user ID. These are compared against fields that you choose in the local course and user tables.';
+$string['privacy:metadata'] = 'The External database enrolment plugin does not store any personal data.';
 $string['remotecoursefield'] = 'Remote course field';
 $string['remotecoursefield_desc'] = 'The name of the field in the remote table that we are using to match entries in the course table.';
 $string['remoteenroltable'] = 'Remote user enrolment table';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'rating', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,8 +47,13 @@ $string['capabilitychecknotavailable'] = 'Egiaztatzeko gaitasuna ez dago eskura 
 $string['couldnotdeleteratings'] = 'Sentitzen dugu, ezin da ezabatu zeren norbaitek kalifikatu baitu';
 $string['norate'] = 'Elementuak sailkatzea ez dago gaituta!';
 $string['noratings'] = 'Ez da puntuaziorik bidali';
-$string['noviewanyrate'] = 'Zeure mezuen emaitzak bakarrik ikus ditzakezu';
+$string['noviewanyrate'] = 'Zeure elementuen emaitzak bakarrik ikus ditzakezu';
 $string['noviewrate'] = 'Ez duzu elementuen puntuazioa ikusteko gaitasunik';
+$string['privacy:metadata:rating'] = 'Erabiltzaileak emandako puntuazioa puntuatutako elementuaren loturarekin batera gordetzen da.';
+$string['privacy:metadata:rating:rating'] = 'Erabiltzaileak emandako puntuazio numerikoa.';
+$string['privacy:metadata:rating:timecreated'] = 'Puntuazioa lehenengoz egin zeneko unea.';
+$string['privacy:metadata:rating:timemodified'] = 'Puntuazioa azkenengoz eguneratu zeneko unea.';
+$string['privacy:metadata:rating:userid'] = 'Puntuazioa egin zuen erabiltzailea.';
 $string['rate'] = 'Puntuatu';
 $string['ratepermissiondenied'] = 'Ez duzu elementu hau puntuatzeko baimenik';
 $string['rating'] = 'Puntuazioa';

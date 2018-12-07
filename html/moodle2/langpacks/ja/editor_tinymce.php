@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_tinymce', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -554,7 +554,7 @@ $string['media_dlg:progress'] = '進捗';
 $string['media_dlg:qt_options'] = 'QuickTimeオプション';
 $string['media_dlg:qtsrc'] = 'QTソース';
 $string['media_dlg:qtsrcchokespeed'] = '再生データレート';
-$string['media_dlg:qt_stream_warn'] = 'RTSPストリーミングリソースを高度な設定タブのQTソースフィールドに入力してください。あなたはソースフィールドにストリーミングではないバージョーンを追加する必要があります。';
+$string['media_dlg:qt_stream_warn'] = 'RTSPストリームリソースを高度な設定タブのQTソースフィールドに入力してください。あなたはソースフィールドに非ストリームバージョーンを追加する必要があります。';
 $string['media_dlg:quality'] = '品質';
 $string['media_dlg:quicktime'] = 'QuickTime';
 $string['media_dlg:rate'] = '再生レート';
@@ -600,6 +600,7 @@ $string['paste:selectall_desc'] = 'すべてを選択する';
 $string['pluginname'] = 'TinyMCE HTMLエディタ';
 $string['preview:preview_desc'] = 'プレビュー';
 $string['print:print_desc'] = '印刷';
+$string['privacy:metadata'] = 'editor_tinymceプラグインはどのような個人データも保存しません。';
 $string['save:cancel_desc'] = 'すべての変更を破棄する';
 $string['save:save_desc'] = '保存';
 $string['searchreplace:delta_height'] = '';

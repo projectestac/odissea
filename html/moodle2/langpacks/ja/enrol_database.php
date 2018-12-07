@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'データベース登録インスタンスを設�
 $string['database:unenrol'] = '利用停止ユーザを登録解除する';
 $string['dbencoding'] = 'データベースエンコーディング';
 $string['dbhost'] = 'データベースホスト';
-$string['dbhost_desc'] = 'データベースサーバのIPアドレスまたはホスト名を入力してください。ODBCを使用している場合、システムDSN名を使用してください。';
+$string['dbhost_desc'] = 'データベースサーバのIPアドレスまたはホスト名を入力してください。ODBCを使用している場合、システムDSN名を使用してください。PDOを使用している場合、PDO DSNエントリを使用してください。';
 $string['dbname'] = 'データベース名';
 $string['dbname_desc'] = 'データベースホストにDSN名を使用している場合、空白のままにしてください。';
 $string['dbpass'] = 'データベースパスワード';
@@ -60,6 +60,7 @@ $string['newcoursetable'] = 'リモートの新しいコーステーブル';
 $string['newcoursetable_desc'] = '自動的に作成させるコース一覧を含むテーブル名を指定してください。空白の場合、コースは作成されません。';
 $string['pluginname'] = '外部データベース';
 $string['pluginname_desc'] = 'あなたはユーザ登録に (ほとんどの種類の) 外部データベースを使用することができます。あなたの外部データベースにはコースIDおよびユーザIDを含んでいると仮定します。これらのフィールドはあなたが選択したローカルのコーステーブルおよびユーザテーブルのフィールドと比較されます。';
+$string['privacy:metadata'] = '外部データベース登録プラグインはどのような個人データも保存しません。';
 $string['remotecoursefield'] = 'リモートコースフィールド';
 $string['remotecoursefield_desc'] = 'コーステーブルのエントリに私たちが合致させるため使用するリモートテーブルのフィールド名です。 ';
 $string['remoteenroltable'] = 'リモートユーザ登録テーブル';

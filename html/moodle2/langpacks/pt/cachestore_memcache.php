@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcache', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['prefix_help'] = 'Este prefixo é usado para todos os nomes de chave no 
 
 *Devido às restrições de extensão da chave, é permitido um máximo de 5 caracteres.';
 $string['prefixinvalid'] = 'Prefixo inválido. Pode usar apenas a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcache'] = 'O armazenamento de cache do módulo Memcache armazena dados temporariamente como parte da sua funcionalidade de armazenamento em cache. Esses dados são armazenados num servidor Memcache e são removidos regularmente.';
+$string['privacy:metadata:memcache:data'] = 'Vários dados armazenados na cache';
 $string['servers'] = 'Servidores';
 $string['serversclusterinvalid'] = 'É necessário precisamente um servidor quando o clustering está ativado.';
 $string['servers_help'] = 'Esta configuração define os servidores que devem ser utilizados por este adaptador memcache.
@@ -54,7 +56,7 @@ servername:port:weight
 </pre>
 
 Se ativar a configuração *Ativar servidores em cluster*, apenas poderá estar listado um servidor. Normalmente é o nome da máquina local, como por exemplo 127.0.0.1 ou localhost.';
-$string['sessionhandlerconflict'] = 'Aviso: uma instância de memcache ({$a}) foi configurada para usar o mesmo servidor de memcache que as sessões. Apagar o conteúdo de todas as caches fará com que também sejam apagadas as sessões.';
+$string['sessionhandlerconflict'] = 'Aviso: uma instância de memcache ({$a}) foi configurada para usar o mesmo servidor de memcache que as sessões. Ao apagar o conteúdo de todas as caches fará com que também sejam apagadas as sessões.';
 $string['setservers'] = 'Definir servidores';
 $string['setservers_help'] = 'Esta é a lista de servidores que serão atualizados quando os dados são modificados na cache. Geralmente o nome completo de cada servidor na pool.
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_completionstatus', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_completionstatus
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['completionprogressdetails'] = 'Vorderingsdetails voltooing';
+$string['completionprogressdetails'] = 'Vorderingsdetails';
 $string['completionstatus:addinstance'] = 'Voeg een nieuw status blok voor cursusvoltooien toe';
 $string['criteriagroup'] = 'Criteriagroep';
 $string['firstofsecond'] = '{$a->first} van {$a->second}';
 $string['pluginname'] = 'Status voltooien cursus';
+$string['privacy:metadata'] = 'Het statusblok voor de voltooiing van de cursus toont alleen informatie over het voltooien van de cursus en slaat geen eigen gegevens op.';
 $string['requirement'] = 'Vereiste';
 $string['returntocourse'] = 'Keer terug naar de cursus';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityisscheduledfordeletion'] = 'A atividade está a ser apagada...';
+$string['agedigitalconsentmapinvalidage'] = 'Não foi possível aceder a {$a->url} para verificar a notificação de pagamento instantâneo: {$a->result}';
+$string['agedigitalconsentmapinvalidcomma'] = '"{$a}" tem mais ou menos que um separador de vírgula.';
+$string['agedigitalconsentmapinvalidcountry'] = '"{$a}" não é um valor válido para o país.';
+$string['agedigitalconsentmapinvaliddefault'] = 'O valor predefinido (*) está em falta.';
+$string['agelocationverificationdisabled'] = 'Verificação de idade e localização desativada';
 $string['alreadyloggedin'] = 'Está autenticado como {$a}, precisa de sair antes de se autenticar como um utilizador diferente.';
 $string['authnotexisting'] = 'O módulo de autorização não existe';
 $string['backupcontainexternal'] = 'Esta cópia de segurança contém servidores de rede externos Moodle que não estão configurados localmente';
@@ -133,13 +138,13 @@ $string['cannotresetthisrole'] = 'Não é possível redefinir este papel';
 $string['cannotrestore'] = 'Ocorreu um erro e o restauro não pôde ser concluído!';
 $string['cannotrestoreadminorcreator'] = 'Necessita de ser um criador ou administrador para restaurar numa nova disciplina!';
 $string['cannotrestoreadminoredit'] = 'Necessita de ser um professor editor ou administrador para restaurar na disciplina selecionada!';
-$string['cannotsaveagreement'] = 'Não foi possível guardar o seu trabalho';
+$string['cannotsaveagreement'] = 'Não foi possível guardar a sua aceitação';
 $string['cannotsaveblock'] = 'Ocorreu um erro ao configurar o bloco';
 $string['cannotsavecomment'] = 'Não é possível guardar o comentário';
 $string['cannotsavedata'] = 'Não é possível guardar os dados';
 $string['cannotsavefile'] = 'Não é possível guardar o ficheiro "{$a}"!';
-$string['cannotsavemd5file'] = 'Não é possível gravar o ficheiro md5';
-$string['cannotsavezipfile'] = 'Não é possível gravar o ficheiro ZIP';
+$string['cannotsavemd5file'] = 'Não é possível guardar o ficheiro md5';
+$string['cannotsavezipfile'] = 'Não é possível guardar o ficheiro ZIP';
 $string['cannotservefile'] = 'Sem acesso - ocorreram problemas na configuração do servidor.';
 $string['cannotsetparentforcatoritem'] = 'Não é possível configurar o ascendente para a categoria ou item da disciplina!';
 $string['cannotsetpassword'] = 'Não foi possível definir a senha do utilizador';
@@ -179,6 +184,7 @@ $string['confirmationnotenabled'] = 'A confirmação do utilizador não está at
 $string['confirmsesskeybad'] = 'A sua chave de sessão não pôde ser confirmada de modo a poder realizar esta ação. Este método de segurança previne a execução, acidental ou maliciosa, de funções importantes em seu nome. Certifique-se de que pretende realmente executar esta função.';
 $string['couldnotassignrole'] = 'Ocorreu um erro sério, mas indeterminado, durante a operação de atribuição de um papel a si próprio.';
 $string['couldnotupdatenoexistinguser'] = 'Não é possível atualizar este utilizador - não existe';
+$string['couldnotverifyagedigitalconsent'] = 'Ocorreu um erro ao tentar verificar a idade do consentimento digital.<br /> Entre em contacto com o administrador.';
 $string['countriesphpempty'] = 'Erro: O ficheiro countries.php no pacote linguístico {$a} está vazio ou não existe.';
 $string['coursedoesnotbelongtocategory'] = 'A disciplina não pertence a esta categoria';
 $string['courseformatnotfound'] = 'O formato da disciplina \'{$a}\' não existe ou não é reconhecido';
@@ -217,7 +223,7 @@ $string['detectedbrokenplugin'] = 'O módulo "{$a}" está com defeito ou desatua
 $string['dmlexceptiononinstall'] = '<p>Ocorreu um erro de base de dados [{$a->errorcode}].<br />{$a->debuginfo}</p>';
 $string['dmlreadexception'] = 'Ocorreu um erro na leitura da base de dados';
 $string['dmltransactionexception'] = 'Ocorreu um erro numa transição da base de dados';
-$string['dmlwriteexception'] = 'Ocorreu um erro ao gravar na base de dados';
+$string['dmlwriteexception'] = 'Ocorreu um erro ao guardar na base de dados';
 $string['downgradedcore'] = 'ERRO!!! O código que está a usar é mais ANTIGO que a versão com que foram feitas das base de dados!';
 $string['downloadedfilecheckfailed'] = 'A verificação do ficheiro descarregado falhou.';
 $string['duplicatefieldname'] = 'Nome no campo "{$a}" em duplicado';
@@ -350,7 +356,7 @@ $string['invalidrole'] = 'Papel inválido';
 $string['invalidroleid'] = 'ID do papel inválido';
 $string['invalidscaleid'] = 'ID da escala inválido';
 $string['invalidsection'] = 'Registo de módulo de disciplina contém secção inválida';
-$string['invalidsesskey'] = 'Chave submetida incorreta, não aceite!';
+$string['invalidsesskey'] = 'É possível que a sua sessão tenha expirado. Autentique-se novamente.';
 $string['invalidshortname'] = 'Esse é um nome curto da disciplina inválido';
 $string['invalidsourcefield'] = 'O campo do rascunho do ficheiro de origem é inválido';
 $string['invalidstatedetected'] = 'Algo de errado ocorreu: {$a}. Normalmente isso nunca deveria acontecer.';
@@ -500,7 +506,7 @@ $string['sessionipnomatch'] = 'O seu número de IP parece ter mudado desde a sua
 $string['sessionipnomatch2'] = 'O seu número de IP parece ter mudado desde a sua autenticação. Esta funcionalidade de segurança previne que crackers roubem a sua identidade durante a sessão neste site. Pode ver este erro se estiver a utilizar redes sem fios ou se estiver em roaming entre redes diferentes. Peça ajuda ao administrador do site. <br /><br />Se quiser continuar, por favor pressione a tecla F5 para atualizar esta página.';
 $string['sessionwaiterr'] = 'Esgotou o tempo limite enquanto aguardava pelo bloqueio da sessão.<br />Aguarde pelos seus pedidos atuais para terminar e tente novamente mais tarde.';
 $string['shortnametaken'] = 'O nome curto já está a ser utilizado por outra disciplina ({$a})';
-$string['sitepolicynotagreed'] = 'A política do site não aceita: <a href="{$a}">Clique aqui para abrir a política do site.</a>';
+$string['sitepolicynotagreed'] = 'A política do site não aceite: <a href="{$a}">Clique aqui para abrir a política do site.</a>';
 $string['socksnotsupported'] = 'SOCKS5 proxy não é suportado em PHP4';
 $string['spellcheckernotconf'] = 'O verificador ortográfico não se encontra configurado';
 $string['sslonlyaccess'] = 'Por questões de segurança apenas são permitidas ligações https.';
@@ -565,6 +571,7 @@ $string['usernotaddederror'] = 'Utilizador não adicionado - erro.';
 $string['usernotaddedregistered'] = 'Utilizador não adicionado - já estava registado.';
 $string['usernotavailable'] = 'Informação detalhada deste utilizador não pode ser vista por si.';
 $string['usernotdeletedadmin'] = 'O utilizador não foi eliminado - não pode apagar as contas de administrador';
+$string['usernotdeleteddeleted'] = 'Este utilizador já foi apagado.';
 $string['usernotdeletederror'] = 'Utilizador não eliminado - erro.';
 $string['usernotdeletedmissing'] = 'Utilizador não eliminado - não foi possível encontrar o nome de utilizador.';
 $string['usernotdeletedoff'] = 'Utilizador não eliminado - a operação não é permitida.';
@@ -579,6 +586,7 @@ $string['usernotupdatederror'] = 'Utilizador não atualizado - erro.';
 $string['usernotupdatednotexists'] = 'Utilizador não atualizado - não existe.';
 $string['userquotalimit'] = 'Atingiu o seu limite de cota de ficheiro.';
 $string['userselectortoomany'] = 'user_selector tem mais de um utilizador selecionado, embora a multiseleção não se aplique.';
+$string['verifyagedigitalconsentnotpossible'] = 'De momento não é possível a verificação da idade mínima de consentimento.';
 $string['wrongcall'] = 'Este script é chamado de forma errada';
 $string['wrongcontextid'] = 'O contexto ID estava incorreto (não é possível encontrá-lo)';
 $string['wrongdestpath'] = 'Caminho de destino errado';

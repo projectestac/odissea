@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcache', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['prefix_help'] = 'Ce préfixe est utilisé pour tous les noms de clef su
 * Si vous n\'avez qu\'une instance de Moodle qui tourne sur ce serveur, vous pouvez laisser la valeur par défaut.
 * Un maximum de 5 caractères est autorisé.';
 $string['prefixinvalid'] = 'Préfixe non valide. Vous ne pouvez utiliser que les caractères a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcache'] = 'Le plugin de stockage de cache Memcache enregistre des données brièvement, de par sa fonction de mise en cache. Ces données sont enregistrées sur un serveur Memcache, où les données sont supprimées régulièrement.';
+$string['privacy:metadata:memcache:data'] = 'Les diverses données enregistrées en cache';
 $string['servers'] = 'Serveurs';
 $string['serversclusterinvalid'] = 'Un serveur exactement doit être indiqué lorsque la mise des serveurs en cluster est activée.';
 $string['servers_help'] = 'Ce réglage permet de spécifier les serveurs devant être utilisés par cet adaptateur memcache.

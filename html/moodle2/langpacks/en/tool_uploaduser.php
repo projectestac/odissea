@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploaduser', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['invalidupdatetype'] = 'This option cannot be selected with the chosen u
 $string['invaliduserdata'] = 'Invalid data detected for user {$a} and it has been automatically cleaned.';
 $string['nochanges'] = 'No changes';
 $string['pluginname'] = 'User upload';
+$string['privacy:metadata'] = 'The User upload plugin does not store any personal data.';
 $string['renameerrors'] = 'Rename errors';
 $string['requiredtemplate'] = 'Required. You may use template syntax here (%l = lastname, %f = firstname, %u = username). See help for details and examples.';
 $string['rowpreviewnum'] = 'Preview rows';

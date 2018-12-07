@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_boost', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_boost
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsettings'] = 'Erweiterte Einstellungen';
+$string['backgroundimage'] = 'Hintergrundbild';
+$string['backgroundimage_desc'] = 'Bild zur Anzeige als Hintergrund der Website.';
 $string['brandcolor'] = 'Markenfarbe';
 $string['brandcolor_desc'] = 'Der Farbton.';
 $string['choosereadme'] = 'Boost ist ein modernes hoch anpassungsfähiges Theme. Dieses Theme ist für den direkten Gebrauch vorgesehen oder als Ausgangstheme für die Erzeugung neuer Themes mit Bootstrap 4.';
@@ -37,6 +39,7 @@ $string['preset'] = 'voreingestelltes Theme';
 $string['preset_desc'] = 'Wählen Sie ein Preset, um das Aussehen des Designs vollständig zu ändern.';
 $string['presetfiles'] = 'Zusätzliche Design-Preset-Dateien';
 $string['presetfiles_desc'] = 'Preset-Dateien können verwendet werden, um das Erscheinungsbild des Designs vollständig zu verändern. Weitere Informationen zum Erstellen und Freigeben von eigenen Preset-Dateien finden Sie unter <a href=https://docs.moodle.org/dev/Boost_Presets> Boost Presets</a>. Schauen Sie auch in das <a href=http://moodle.net/boost>Presets Repository</a>, um Presets zu finden, die andere freigegeben haben.';
+$string['privacy:metadata'] = 'Das Design Boost speichert keine personenbezogenen Nutzerdaten.';
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Verwenden Sie dieses Feld, um SCSS- oder CSS-Code bereitzustellen, der am Ende des Stylesheets hinzugefügt wird.';
 $string['rawscsspre'] = 'Raw initial SCSS';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['dropzone'] = 'Dejar caer la zona {$a}';
 $string['dropzoneheader'] = 'Dejar caer las zonas';
 $string['dropzones'] = 'Dejar caer las zonas';
 $string['formerror_nobgimage'] = 'Debe seleccionar una imagen para ser utilizada como fondo para la zona de arrastrar y soltar.';
+$string['formerror_shapeoutsideboundsofbgimage'] = 'La forma que ha definido se sale de los límites de la imagen de fondo.';
 $string['infinite'] = 'Infinito';
 $string['marker'] = 'Marcador';
 $string['marker_n'] = 'Marcador {no}';
@@ -48,7 +49,10 @@ $string['noofdrags'] = 'Número';
 $string['pluginname'] = 'Arrastrar y soltar marcadores';
 $string['pluginnameadding'] = 'Añadiendo arrastrar y soltar marcadores';
 $string['pluginnameediting'] = 'Editando arrastrar y soltar marcadores';
+$string['pluginname_help'] = 'Arrastrar y soltar marcadores requiere que el usuario arrastre etiquetas de texto y las suelte dentro de zonas de descarga definidas sobre de una imagen de fondo.';
+$string['pluginnamesummary'] = 'Los marcadores se arrastran y sueltan sobre una imagen de fondo.';
 $string['previewareaheader'] = 'Previsualizar';
+$string['previewareamessage'] = 'Elija un archivo de imagen de fondo, escriba etiquetas de texto para los marcadores y defina las zonas para soltar sobre la imagen de fondo en donde deberán arrastrarse.';
 $string['refresh'] = 'Refrescar previsualización';
 $string['shape'] = 'Forma';
 $string['shape_circle'] = 'Círculo';

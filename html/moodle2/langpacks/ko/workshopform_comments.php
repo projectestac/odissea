@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_comments', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

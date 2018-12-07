@@ -29,3 +29,4 @@ $string['pluginnamesummary'] = 'Wie bei der standardmäßigen Lückentext-Frage 
 $string['pluginnameadding'] = 'Lückentext-Frage hinzufügen (Cloze) – Mathematik und Naturwissenschaften von WIRIS';
 $string['pluginnameediting'] = 'Lückentext-Frage bearbeiten (Cloze) – Mathematik und Naturwissenschaften von WIRIS';
 $string['contentnotviewable'] = 'Der Inhalt kann nicht angezeigt werden.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Cloze question type does not effect or store any data itself.';

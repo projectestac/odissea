@@ -392,42 +392,10 @@ M.util.init_frametop = function(Y) {
 };
 
 /**
- * Finds all nodes that match the given CSS selector and attaches events to them
- * so that they toggle a given classname when clicked.
- *
- * @param {YUI} Y
- * @param {string} id An id containing elements to target
- * @param {string} cssselector A selector to use to find targets
- * @param {string} toggleclassname A classname to toggle
+ * @deprecated since Moodle 3.3
  */
 M.util.init_toggle_class_on_click = function(Y, id, cssselector, toggleclassname, togglecssselector) {
-
-    if (togglecssselector == '') {
-        togglecssselector = cssselector;
-    }
-
-    var node = Y.one('#'+id);
-    node.all(cssselector).each(function(n){
-        n.on('click', function(e){
-            e.stopPropagation();
-            if (e.target.test(cssselector) && !e.target.test('a') && !e.target.test('img')) {
-                if (this.test(togglecssselector)) {
-                    this.toggleClass(toggleclassname);
-                } else {
-                    this.ancestor(togglecssselector).toggleClass(toggleclassname);
-            }
-            }
-        }, n);
-    });
-    // Attach this click event to the node rather than all selectors... will be much better
-    // for performance
-    node.on('click', function(e){
-        if (e.target.hasClass('addtoall')) {
-            this.all(togglecssselector).addClass(toggleclassname);
-        } else if (e.target.hasClass('removefromall')) {
-            this.all(togglecssselector+'.'+toggleclassname).removeClass(toggleclassname);
-        }
-    }, node);
+    throw new Error('M.util.init_toggle_class_on_click can not be used any more. Please use jQuery instead.');
 };
 
 /**
@@ -712,16 +680,22 @@ M.util.complete_js = [];
 
 /**
  * Register any long running javascript code with a unique identifier.
- * Should be followed with a call to js_complete with a matching
- * idenfitier when the code is complete. May also be called with no arguments
- * to test if there is any js calls pending. This is relied on by behat so that
- * it can wait for all pending updates before interacting with a page.
- * @param String uniqid - optional, if provided,
- *                        registers this identifier until js_complete is called.
- * @return boolean - True if there is any pending js.
+ * This is used to ensure that Behat steps do not continue with interactions until the page finishes loading.
+ *
+ * All calls to M.util.js_pending _must_ be followed by a subsequent call to M.util.js_complete with the same exact
+ * uniqid.
+ *
+ * This function may also be called with no arguments to test if there is any js calls pending.
+ *
+ * The uniqid specified may be any Object, including Number, String, or actual Object; however please note that the
+ * paired js_complete function performs a strict search for the key specified. As such, if using an Object, the exact
+ * Object must be passed into both functions.
+ *
+ * @param   {Mixed}     uniqid Register long-running code against the supplied identifier
+ * @return  {Number}    Number of pending items
  */
 M.util.js_pending = function(uniqid) {
-    if (uniqid !== false) {
+    if (typeof uniqid !== 'undefined') {
         M.util.pending_js.push(uniqid);
     }
 
@@ -749,11 +723,12 @@ YUI.add('moodle-core-io', function(Y) {
 });
 
 /**
- * Unregister any long running javascript code by unique identifier.
- * This function should form a matching pair with js_pending
+ * Unregister some long running javascript code using the unique identifier specified in M.util.js_pending.
  *
- * @param String uniqid - required, unregisters this identifier
- * @return boolean - True if there is any pending js.
+ * This function must be matched with an identical call to M.util.js_pending.
+ *
+ * @param   {Mixed}     uniqid Register long-running code against the supplied identifier
+ * @return  {Number}    Number of pending items remaining after removing this item
  */
 M.util.js_complete = function(uniqid) {
     // Use the Y.Array.indexOf instead of the native because some older browsers do not support
@@ -761,6 +736,8 @@ M.util.js_complete = function(uniqid) {
     var index = Y.Array.indexOf(M.util.pending_js, uniqid);
     if (index >= 0) {
         M.util.complete_js.push(M.util.pending_js.splice(index, 1));
+    } else {
+        window.console.log("Unable to locate key for js_complete call", uniqid);
     }
 
     return M.util.pending_js.length;
@@ -839,42 +816,21 @@ M.util.get_string = function(identifier, component, a) {
 };
 
 /**
- * Set focus on username or password field of the login form
+ * Set focus on username or password field of the login form.
+ * @deprecated since Moodle 3.3.
  */
 M.util.focus_login_form = function(Y) {
-    var username = Y.one('#username');
-    var password = Y.one('#password');
-
-    if (username == null || password == null) {
-        // something is wrong here
-        return;
-    }
-
-    var curElement = document.activeElement
-    if (curElement == 'undefined') {
-        // legacy browser - skip refocus protection
-    } else if (curElement.tagName == 'INPUT') {
-        // user was probably faster to focus something, do not mess with focus
-        return;
-    }
-
-    if (username.get('value') == '') {
-        username.focus();
-    } else {
-        password.focus();
-    }
-}
+    Y.log('M.util.focus_login_form no longer does anything. Please use jquery instead.', 'warn', 'javascript-static.js');
+};
 
 /**
- * Set focus on login error message
+ * Set focus on login error message.
+ * @deprecated since Moodle 3.3.
  */
 M.util.focus_login_error = function(Y) {
-    var errorlog = Y.one('#loginerrormessage');
+    Y.log('M.util.focus_login_error no longer does anything. Please use jquery instead.', 'warn', 'javascript-static.js');
+};
 
-    if (errorlog) {
-        errorlog.focus();
-    }
-}
 /**
  * Adds lightbox hidden element that covers the whole node.
  *
@@ -944,96 +900,53 @@ M.util.add_spinner = function(Y, node) {
     return spinner;
 }
 
-//=== old legacy JS code, hopefully to be replaced soon by M.xx.yy and YUI3 code ===
-
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function checkall() {
-    var inputs = document.getElementsByTagName('input');
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].type == 'checkbox') {
-            if (inputs[i].disabled || inputs[i].readOnly) {
-                continue;
-            }
-            inputs[i].checked = true;
-        }
-    }
-}
-
-function checknone() {
-    var inputs = document.getElementsByTagName('input');
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].type == 'checkbox') {
-            if (inputs[i].disabled || inputs[i].readOnly) {
-                continue;
-            }
-            inputs[i].checked = false;
-        }
-    }
+    throw new Error('checkall can not be used any more. Please use jQuery instead.');
 }
 
 /**
- * Either check, or uncheck, all checkboxes inside the element with id is
- * @param id the id of the container
- * @param checked the new state, either '' or 'checked'.
+ * @deprecated since Moodle 3.3.
+ */
+function checknone() {
+    throw new Error('checknone can not be used any more. Please use jQuery instead.');
+}
+
+/**
+ * @deprecated since Moodle 3.3.
  */
 function select_all_in_element_with_id(id, checked) {
-    var container = document.getElementById(id);
-    if (!container) {
-        return;
-    }
-    var inputs = container.getElementsByTagName('input');
-    for (var i = 0; i < inputs.length; ++i) {
-        if (inputs[i].type == 'checkbox' || inputs[i].type == 'radio') {
-            inputs[i].checked = checked;
-        }
-    }
+    throw new Error('select_all_in_element_with_id can not be used any more. Please use jQuery instead.');
 }
 
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function select_all_in(elTagName, elClass, elId) {
-    var inputs = document.getElementsByTagName('input');
-    inputs = filterByParent(inputs, function(el) {return findParentNode(el, elTagName, elClass, elId);});
-    for(var i = 0; i < inputs.length; ++i) {
-        if(inputs[i].type == 'checkbox' || inputs[i].type == 'radio') {
-            inputs[i].checked = 'checked';
-        }
-    }
+    throw new Error('select_all_in can not be used any more. Please use jQuery instead.');
 }
 
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function deselect_all_in(elTagName, elClass, elId) {
-    var inputs = document.getElementsByTagName('INPUT');
-    inputs = filterByParent(inputs, function(el) {return findParentNode(el, elTagName, elClass, elId);});
-    for(var i = 0; i < inputs.length; ++i) {
-        if(inputs[i].type == 'checkbox' || inputs[i].type == 'radio') {
-            inputs[i].checked = '';
-        }
-    }
+    throw new Error('deselect_all_in can not be used any more. Please use jQuery instead.');
 }
 
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function confirm_if(expr, message) {
-    if(!expr) {
-        return true;
-    }
-    return confirm(message);
+    throw new Error('confirm_if can not be used any more.');
 }
 
-
-/*
-    findParentNode (start, elementName, elementClass, elementID)
-
-    Travels up the DOM hierarchy to find a parent element with the
-    specified tag name, class, and id. All conditions must be met,
-    but any can be ommitted. Returns the BODY element if no match
-    found.
-*/
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function findParentNode(el, elName, elClass, elId) {
-    while (el.nodeName.toUpperCase() != 'BODY') {
-        if ((!elName || el.nodeName.toUpperCase() == elName) &&
-            (!elClass || el.className.indexOf(elClass) != -1) &&
-            (!elId || el.id == elId)) {
-            break;
-        }
-        el = el.parentNode;
-    }
-    return el;
+    throw new Error('findParentNode can not be used any more. Please use jQuery instead.');
 }
 
 function unmaskPassword(id) {
@@ -1079,54 +992,25 @@ function unmaskPassword(id) {
     }
 }
 
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function filterByParent(elCollection, parentFinder) {
-    var filteredCollection = [];
-    for (var i = 0; i < elCollection.length; ++i) {
-        var findParent = parentFinder(elCollection[i]);
-        if (findParent.nodeName.toUpperCase() != 'BODY') {
-            filteredCollection.push(elCollection[i]);
-        }
-    }
-    return filteredCollection;
+    throw new Error('filterByParent can not be used any more. Please use jQuery instead.');
 }
 
-/*
-    All this is here just so that IE gets to handle oversized blocks
-    in a visually pleasing manner. It does a browser detect. So sue me.
-*/
-
+/**
+ * @deprecated since Moodle 3.3, but shouldn't be used in earlier versions either.
+ */
 function fix_column_widths() {
-    var agt = navigator.userAgent.toLowerCase();
-    if ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1)) {
-        fix_column_width('left-column');
-        fix_column_width('right-column');
-    }
+    Y.log('fix_column_widths() no longer does anything. Please remove it from your code.', 'warn', 'javascript-static.js');
 }
 
+/**
+ * @deprecated since Moodle 3.3, but shouldn't be used in earlier versions either.
+ */
 function fix_column_width(colName) {
-    if(column = document.getElementById(colName)) {
-        if(!column.offsetWidth) {
-            setTimeout("fix_column_width('" + colName + "')", 20);
-            return;
-        }
-
-        var width = 0;
-        var nodes = column.childNodes;
-
-        for(i = 0; i < nodes.length; ++i) {
-            if(nodes[i].className.indexOf("block") != -1 ) {
-                if(width < nodes[i].offsetWidth) {
-                    width = nodes[i].offsetWidth;
-                }
-            }
-        }
-
-        for(i = 0; i < nodes.length; ++i) {
-            if(nodes[i].className.indexOf("block") != -1 ) {
-                nodes[i].style.width = width + 'px';
-            }
-        }
-    }
+    Y.log('fix_column_width() no longer does anything. Please remove it from your code.', 'warn', 'javascript-static.js');
 }
 
 
@@ -1326,10 +1210,11 @@ function convert_object_to_string(obj, separator) {
     return list.join(separator);
 }
 
+/**
+ * @deprecated since Moodle 3.3.
+ */
 function stripHTML(str) {
-    var re = /<\S[^><]*>/g;
-    var ret = str.replace(re, "");
-    return ret;
+    throw new Error('stripHTML can not be used any more. Please use jQuery instead.');
 }
 
 function updateProgressBar(id, percent, msg, estimate) {
@@ -1361,64 +1246,6 @@ function updateProgressBar(id, percent, msg, estimate) {
     }
 
     el.dispatchEvent(event);
-}
-
-// ===== Deprecated core Javascript functions for Moodle ====
-//       DO NOT USE!!!!!!!
-// Do not put this stuff in separate file because it only adds extra load on servers!
-
-/**
- * @method show_item
- * @deprecated since Moodle 2.7.
- * @see Y.Node.show
- */
-function show_item() {
-    throw new Error('show_item can not be used any more. Please use Y.Node.show.');
-}
-
-/**
- * @method destroy_item
- * @deprecated since Moodle 2.7.
- * @see Y.Node.destroy
- */
-function destroy_item() {
-    throw new Error('destroy_item can not be used any more. Please use Y.Node.destroy.');
-}
-
-/**
- * @method hide_item
- * @deprecated since Moodle 2.7.
- * @see Y.Node.hide
- */
-function hide_item() {
-    throw new Error('hide_item can not be used any more. Please use Y.Node.hide.');
-}
-
-/**
- * @method addonload
- * @deprecated since Moodle 2.7 - please do not use this function any more.
- */
-function addonload() {
-    throw new Error('addonload can not be used any more.');
-}
-
-/**
- * @method getElementsByClassName
- * @deprecated Since Moodle 2.7 - please do not use this function any more.
- * @see Y.one
- * @see Y.all
- */
-function getElementsByClassName() {
-    throw new Error('getElementsByClassName can not be used any more. Please use Y.one or Y.all.');
-}
-
-/**
- * @method findChildNodes
- * @deprecated since Moodle 2.7 - please do not use this function any more.
- * @see Y.all
- */
-function findChildNodes() {
-    throw new Error('findChildNodes can not be used any more. Please use Y.all.');
 }
 
 M.util.help_popups = {
@@ -1489,209 +1316,11 @@ M.form = M.form || {};
 
 /**
  * Converts a nbsp indented select box into a multi drop down custom control much
- * like the custom menu. It also selectable categories on or off.
- *
- * $form->init_javascript_enhancement('elementname','smartselect', array('selectablecategories'=>true|false, 'mode'=>'compact'|'spanning'));
- *
- * @param {YUI} Y
- * @param {string} id
- * @param {Array} options
+ * like the custom menu. Can no longer be used.
+ * @deprecated since Moodle 3.3
  */
-M.form.init_smartselect = function(Y, id, options) {
-    if (!id.match(/^id_/)) {
-        id = 'id_'+id;
-    }
-    var select = Y.one('select#'+id);
-    if (!select) {
-        return false;
-    }
-    Y.use('event-delegate',function(){
-        var smartselect = {
-            id : id,
-            structure : [],
-            options : [],
-            submenucount : 0,
-            currentvalue : null,
-            currenttext : null,
-            shownevent : null,
-            cfg : {
-                selectablecategories : true,
-                mode : null
-            },
-            nodes : {
-                select : null,
-                loading : null,
-                menu : null
-            },
-            init : function(Y, id, args, nodes) {
-                if (typeof(args)=='object') {
-                    for (var i in this.cfg) {
-                        if (args[i] || args[i]===false) {
-                            this.cfg[i] = args[i];
-                        }
-                    }
-                }
-
-                // Display a loading message first up
-                this.nodes.select = nodes.select;
-
-                this.currentvalue = this.nodes.select.get('selectedIndex');
-                this.currenttext = this.nodes.select.all('option').item(this.currentvalue).get('innerHTML');
-
-                var options = Array();
-                options[''] = {text:this.currenttext,value:'',depth:0,children:[]};
-                this.nodes.select.all('option').each(function(option, index) {
-                    var rawtext = option.get('innerHTML');
-                    var text = rawtext.replace(/^(&nbsp;)*/, '');
-                    if (rawtext === text) {
-                        text = rawtext.replace(/^(\s)*/, '');
-                        var depth = (rawtext.length - text.length ) + 1;
-                    } else {
-                        var depth = ((rawtext.length - text.length )/12)+1;
-                    }
-                    option.set('innerHTML', text);
-                    options['i'+index] = {text:text,depth:depth,index:index,children:[]};
-                }, this);
-
-                this.structure = [];
-                var structcount = 0;
-                for (var i in options) {
-                    var o = options[i];
-                    if (o.depth == 0) {
-                        this.structure.push(o);
-                        structcount++;
-                    } else {
-                        var d = o.depth;
-                        var current = this.structure[structcount-1];
-                        for (var j = 0; j < o.depth-1;j++) {
-                            if (current && current.children) {
-                                current = current.children[current.children.length-1];
-                            }
-                        }
-                        if (current && current.children) {
-                            current.children.push(o);
-                        }
-                    }
-                }
-
-                this.nodes.menu = Y.Node.create(this.generate_menu_content());
-                this.nodes.menu.one('.smartselect_mask').setStyle('opacity', 0.01);
-                this.nodes.menu.one('.smartselect_mask').setStyle('width', (this.nodes.select.get('offsetWidth')+5)+'px');
-                this.nodes.menu.one('.smartselect_mask').setStyle('height', (this.nodes.select.get('offsetHeight'))+'px');
-
-                if (this.cfg.mode == null) {
-                    var formwidth = this.nodes.select.ancestor('form').get('offsetWidth');
-                    if (formwidth < 400 || this.nodes.menu.get('offsetWidth') < formwidth*2) {
-                        this.cfg.mode = 'compact';
-                    } else {
-                        this.cfg.mode = 'spanning';
-                    }
-                }
-
-                if (this.cfg.mode == 'compact') {
-                    this.nodes.menu.addClass('compactmenu');
-                } else {
-                    this.nodes.menu.addClass('spanningmenu');
-                    this.nodes.menu.delegate('mouseover', this.show_sub_menu, '.smartselect_submenuitem', this);
-                }
-
-                Y.one(document.body).append(this.nodes.menu);
-                var pos = this.nodes.select.getXY();
-                pos[0] += 1;
-                this.nodes.menu.setXY(pos);
-                this.nodes.menu.on('click', this.handle_click, this);
-
-                Y.one(window).on('resize', function(){
-                     var pos = this.nodes.select.getXY();
-                    pos[0] += 1;
-                    this.nodes.menu.setXY(pos);
-                 }, this);
-            },
-            generate_menu_content : function() {
-                var content = '<div id="'+this.id+'_smart_select" class="smartselect">';
-                content += this.generate_submenu_content(this.structure[0], true);
-                content += '</ul></div>';
-                return content;
-            },
-            generate_submenu_content : function(item, rootelement) {
-                this.submenucount++;
-                var content = '';
-                if (item.children.length > 0) {
-                    if (rootelement) {
-                        content += '<div class="smartselect_mask" href="#ss_submenu'+this.submenucount+'">&nbsp;</div>';
-                        content += '<div id="ss_submenu'+this.submenucount+'" class="smartselect_menu">';
-                        content += '<div class="smartselect_menu_content">';
-                    } else {
-                        content += '<li class="smartselect_submenuitem">';
-                        var categoryclass = (this.cfg.selectablecategories)?'selectable':'notselectable';
-                        content += '<a class="smartselect_menuitem_label '+categoryclass+'" href="#ss_submenu'+this.submenucount+'" value="'+item.index+'">'+item.text+'</a>';
-                        content += '<div id="ss_submenu'+this.submenucount+'" class="smartselect_submenu">';
-                        content += '<div class="smartselect_submenu_content">';
-                    }
-                    content += '<ul>';
-                    for (var i in item.children) {
-                        content += this.generate_submenu_content(item.children[i],false);
-                    }
-                    content += '</ul>';
-                    content += '</div>';
-                    content += '</div>';
-                    if (rootelement) {
-                    } else {
-                        content += '</li>';
-                    }
-                } else {
-                    content += '<li class="smartselect_menuitem">';
-                    content += '<a class="smartselect_menuitem_content selectable" href="#" value="'+item.index+'">'+item.text+'</a>';
-                    content += '</li>';
-                }
-                return content;
-            },
-            select : function(e) {
-                var t = e.target;
-                e.halt();
-                this.currenttext = t.get('innerHTML');
-                this.currentvalue = t.getAttribute('value');
-                this.nodes.select.set('selectedIndex', this.currentvalue);
-                this.hide_menu();
-            },
-            handle_click : function(e) {
-                var target = e.target;
-                if (target.hasClass('smartselect_mask')) {
-                    this.show_menu(e);
-                } else if (target.hasClass('selectable') || target.hasClass('smartselect_menuitem')) {
-                    this.select(e);
-                } else if (target.hasClass('smartselect_menuitem_label') || target.hasClass('smartselect_submenuitem')) {
-                    this.show_sub_menu(e);
-                }
-            },
-            show_menu : function(e) {
-                e.halt();
-                var menu = e.target.ancestor().one('.smartselect_menu');
-                menu.addClass('visible');
-                this.shownevent = Y.one(document.body).on('click', this.hide_menu, this);
-            },
-            show_sub_menu : function(e) {
-                e.halt();
-                var target = e.target;
-                if (!target.hasClass('smartselect_submenuitem')) {
-                    target = target.ancestor('.smartselect_submenuitem');
-                }
-                if (this.cfg.mode == 'compact' && target.one('.smartselect_submenu').hasClass('visible')) {
-                    target.ancestor('ul').all('.smartselect_submenu.visible').removeClass('visible');
-                    return;
-                }
-                target.ancestor('ul').all('.smartselect_submenu.visible').removeClass('visible');
-                target.one('.smartselect_submenu').addClass('visible');
-            },
-            hide_menu : function() {
-                this.nodes.menu.all('.visible').removeClass('visible');
-                if (this.shownevent) {
-                    this.shownevent.detach();
-                }
-            }
-        };
-        smartselect.init(Y, id, options, {select:select});
-    });
+M.form.init_smartselect = function() {
+    throw new Error('M.form.init_smartselect can not be used any more.');
 };
 
 /**

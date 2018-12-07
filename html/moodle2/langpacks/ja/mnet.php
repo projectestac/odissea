@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -174,6 +174,7 @@ $string['permittedtransports'] = '許可されたトランスポート';
 $string['phperror'] = '内部PHPエラーが発生したため、処理を実行できませんでした。';
 $string['position'] = 'ポジション';
 $string['postrequired'] = '削除処理にはPOSTリクエストが必要です。';
+$string['privacy:metadata'] = 'MNetプラグインはどのような個人データも保存しません。';
 $string['profileexportfields'] = '送信するフィールド';
 $string['profilefielddesc'] = 'ここであなたはユーザアカウント作成または更新時にMNet経由で送信または受信されるプロファイルフィールドのリストを設定することができます。あなたはそれぞれのMNetピア設定を個別にオーバーライドすることもできます。次のフィールドは常に送信さるため、任意ではないことに留意してください: {$a}';
 $string['profilefields'] = 'プロファイルフィールド';

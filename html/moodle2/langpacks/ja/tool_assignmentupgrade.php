@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['notsupported'] = '';
 $string['notupgradedintro'] = 'このページでは古いバージョンのMoodleで作成され、Moodle 2.3の新しい課題モジュールにアップグレードされなかった課題を一覧表示します。すべての課題をアップグレードできるということではありません - 課題がカスタム課題サブタイプで作成されている場合、アップグレードを完了するため、サブタイプも新しい課題プラグインフォーマットにアップグレードする必要があります。';
 $string['notupgradedtitle'] = 'アップグレードされなかった課題';
 $string['pluginname'] = '課題アップグレードヘルパ';
+$string['privacy:metadata:preference:perpage'] = 'ユーザに設定されたページプリファレンスごとの課題アップグレードレコードです。';
 $string['select'] = '選択';
 $string['submissions'] = '提出';
 $string['supported'] = 'アップグレード';

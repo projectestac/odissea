@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,7 +110,6 @@ $string['calculationsaved'] = '計算が保存されました。';
 $string['calculationview'] = '計算を表示する';
 $string['cannotaccessgroup'] = '申し訳ございません、選択したグループの評定にはアクセスできません。';
 $string['categories'] = 'カテゴリ';
-$string['categoriesanditems'] = 'カテゴリおよび項目';
 $string['category'] = 'カテゴリ';
 $string['categoryedit'] = 'カテゴリを編集する';
 $string['categoryname'] = 'カテゴリ名';
@@ -602,6 +601,44 @@ $string['prefletters'] = '評定文字および境界';
 $string['prefrows'] = '特別行';
 $string['prefshow'] = 'トグルの表示/非表示';
 $string['previewrows'] = 'プレビュー行';
+$string['privacy:metadata:categorieshistory'] = '前のバージョンの評定カテゴリのレコードです。';
+$string['privacy:metadata:grade_import_newitem'] = '評定インポートから新しいgrade_item名を保存する一時テーブルです。';
+$string['privacy:metadata:grade_import_newitem:importcode'] = 'インポートのバッチからバッチを識別するためのユニークなバッチコードです。';
+$string['privacy:metadata:grade_import_newitem:importer'] = 'データをインポートするユーザです。';
+$string['privacy:metadata:grade_import_newitem:itemname'] = '新しい評定アイテム名です。';
+$string['privacy:metadata:grade_import_values'] = '評定をインポートする一時テーブルです。';
+$string['privacy:metadata:grade_import_values:feedback'] = '評定フィードバックです。';
+$string['privacy:metadata:grade_import_values:finalgrade'] = '生評定値です。';
+$string['privacy:metadata:grade_import_values:importcode'] = 'インポートのバッチからバッチを識別するためのユニークなバッチコードです。';
+$string['privacy:metadata:grade_import_values:importer'] = 'データをインポートするユーザです。';
+$string['privacy:metadata:grade_import_values:importonlyfeedback'] = 'フィードバックがインポートされた場のみフラグ付けされます。';
+$string['privacy:metadata:grade_import_values:userid'] = '評定がインポートされたユーザです。';
+$string['privacy:metadata:grades'] = '評定レコードです。';
+$string['privacy:metadata:grades:aggregationstatus'] = '総計ステータスです。';
+$string['privacy:metadata:grades:aggregationweight'] = '総計の加重です。';
+$string['privacy:metadata:grades:feedback'] = 'フィードバックです。';
+$string['privacy:metadata:grades:finalgrade'] = '評定です。';
+$string['privacy:metadata:gradeshistory'] = '前の評定のレコードです。';
+$string['privacy:metadata:grades:information'] = '追加情報の情報です。';
+$string['privacy:metadata:grades:timemodified'] = '最後に評点が修正された日時です。';
+$string['privacy:metadata:grades:userid'] = '評点のユーザのIDです。';
+$string['privacy:metadata:grades:usermodified'] = '最後に評点を修正したユーザのIDです。';
+$string['privacy:metadata:history:loggeduser'] = 'バージョニング発生時にログインしたユーザのIDです。';
+$string['privacy:metadata:history:timemodified'] = 'バージョニングが発生した日時です。';
+$string['privacy:metadata:itemshistory'] = '前のバージョンの評定アイテムのレコードです。';
+$string['privacy:metadata:outcomes'] = 'アウトカムのレコードです。';
+$string['privacy:metadata:outcomeshistory'] = '前のバージョンのアウトカムのレコードです。';
+$string['privacy:metadata:outcomes:timemodified'] = 'レコードが修正された日時です。';
+$string['privacy:metadata:outcomes:usermodified'] = '最後にレコードを修正したユーザです。';
+$string['privacy:metadata:scale'] = '尺度のレコードです。';
+$string['privacy:metadata:scalehistory'] = '前のバージョンの尺度のレコードです。';
+$string['privacy:metadata:scale:timemodified'] = 'レコードが最後に修正された日時です。';
+$string['privacy:metadata:scale:userid'] = 'レコードを最後に修正したユーザです。';
+$string['privacy:path:relatedtome'] = '私に関連します。';
+$string['privacy:request:historyactiondelete'] = '削除';
+$string['privacy:request:historyactioninsert'] = '挿入';
+$string['privacy:request:historyactionupdate'] = '更新';
+$string['privacy:request:unknowndeletedgradeitem'] = '不明 (評定項目が削除されました)';
 $string['profilereport'] = 'ユーザプロファイルレポート';
 $string['profilereport_help'] = 'ユーザプロファイルページで使用される評定レポートです。';
 $string['publishing'] = '公開';
@@ -680,7 +717,7 @@ $string['showcalculations_help'] = 'この設定を有効にした場合、編�
 $string['showcontributiontocoursetotal'] = 'コース合計の内訳を表示する';
 $string['showcontributiontocoursetotal_help'] = 'それぞれの評定項目が (加重適用後) ユーザのコース合計にどのくらい貢献しているかを示すパーセンテージのカラムを表示します。';
 $string['showeyecons'] = '表示/非表示アイコンを表示する';
-$string['showeyecons_help'] = 'この設定を有効にした場合、学生に対する可視性をコントロールするため、それぞれの評定に表示/非表示アイコンが表示されます。';
+$string['showeyecons_help'] = 'この設定を有効にした場合、編集モード有効時に学生に対する可視性をコントロールするためそれぞれの評定に表示/非表示アイコンが表示されます。';
 $string['showfeedback'] = 'フィードバックを表示する';
 $string['showfeedback_help'] = 'フィードバックカラムを表示するかどうか指定してください。';
 $string['showgrade'] = '評定を表示する';
@@ -699,7 +736,7 @@ $string['showinggradesonly'] = '評点のみを表示する';
 $string['showlettergrade'] = '評定文字を表示する';
 $string['showlettergrade_help'] = '評定文字カラムを表示するかどうか指定してください。';
 $string['showlocks'] = 'ロックを表示する';
-$string['showlocks_help'] = 'この設定を有効にした場合、編集モード有効時に関連した活動により評定が自動的に更新されるかコントロールするため、ロック/ロック解除アイコンがそれぞれの評定に表示されます。';
+$string['showlocks_help'] = 'この設定を有効にした場合、編集モード有効時に関連した活動により評定が自動的に更新されるかコントロールするためロック/ロック解除アイコンがそれぞれの評定に表示されます。';
 $string['shownohidden'] = '表示しない';
 $string['shownooutcomes'] = 'アウトカムを隠す';
 $string['shownumberofgrades'] = '平均に評定数を表示する';
@@ -709,13 +746,13 @@ $string['showonlyactiveenrol_help'] = 'この設定では評定表レポート�
 $string['showpercentage'] = 'パーセンテージを表示する';
 $string['showpercentage_help'] = 'それぞれの評定項目にパーセンテージを表示するかどうか指定してください。';
 $string['showquickfeedback'] = 'クイックフィードバックを表示する';
-$string['showquickfeedback_help'] = 'この設定を有効にした場合、編集モード有効時に多くの評定のフィードバックを同時に編集できるようにするため、それぞれの評定にドット枠線のテキスト入力欄が表示されます。更新ボタンクリック時に変更が保存され、ハイライトされます。
+$string['showquickfeedback_help'] = 'この設定を有効にした場合、編集モード有効時に多くの評定のフィードバックを同時に編集できるようにするため、それぞれの評定にドット枠線のフィードバックテキスト入力欄が表示されます。更新ボタンクリック時に変更が保存され、ハイライトされます。
 
 評定者レポート内でフィードバックが編集された場合、オーバーライドフラグが設定され、関連する活動でフィードバックを変更できないようになることに留意してください。';
 $string['showrange'] = '範囲を表示する';
 $string['showrange_help'] = '範囲カラムを表示するかどうか指定してください。';
 $string['showranges'] = '範囲を表示する';
-$string['showranges_help'] = 'この設定を有効にした場合、それぞれのカテゴリおよび評定項目の範囲を表示した追加行が評定者レポートに含まれます。';
+$string['showranges_help'] = 'この設定を有効にした場合、それぞれのカテゴリおよび評定項目の範囲を表示するための追加行が評定者レポートに含まれます。';
 $string['showrank'] = 'ランクを表示する';
 $string['showrank_help'] = 'それぞれの評定項目に関してクラス内のユーザの位置を表示するかどうか指定してください。';
 $string['showuserimage'] = 'ユーザプロファイルイメージを表示する';

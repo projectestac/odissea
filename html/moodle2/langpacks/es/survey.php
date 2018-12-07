@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,10 @@ $string['guestsnotallowed'] = 'Los invitados no pueden participar en las encuest
 $string['howlong'] = '¿Cuánto tiempo le llevó completar esta encuesta?';
 $string['howlongoptions'] = 'menos de 1 <abbr title=minuto>min.</abbr>, 1-2 <abbr title=minuto>min.</abbr>,  2-3 <abbr title=minuto>min.</abbr>,  3-4 <abbr title=minuto>min.</abbr>,  4-5 <abbr title=minuto>min.</abbr>,  5-10 <abbr title=minuto>min.</abbr>, más de 10 minutos.';
 $string['ifoundthat'] = 'Encontrado:';
+$string['indicator:cognitivedepth'] = 'Encuesta predefinida cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Encuesta predefinida.';
+$string['indicator:socialbreadth'] = 'Encuesta predefinida social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Encuesta predefinida.';
 $string['introtext'] = 'Texto de introducción';
 $string['invalidsurveyid'] = 'ID de la encuesta incorrecto';
 $string['invalidtmptid'] = 'Id de plantilla no válido';

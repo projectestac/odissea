@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_wrap', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_wrap', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_wrap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlewrap:desc'] = 'Umbruch';
 $string['pluginname'] = 'Umbruch';
+$string['privacy:metadata'] = 'DasTinyMCE-Plugin speichert keine persönlichen Daten';

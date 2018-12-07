@@ -120,8 +120,8 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar navbar-fixed-top moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-			<a href="http://www20.gencat.cat/portal/site/ensenyament" class="brand ensenyament hidden-phone"><img src="<?php echo $OUTPUT->pix_url('departament', 'theme'); ?>" alt="Departament d'Ensenyament" title="" /></a>
-			<a href="http://www.xtec.cat" class="brand xtec hidden-phone"><img src="<?php echo $OUTPUT->pix_url('xtec', 'theme'); ?>" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>
+			<a href="http://www20.gencat.cat/portal/site/ensenyament" class="brand ensenyament hidden-phone"><img src="<?php echo $OUTPUT->image_url('departament', 'theme'); ?>" alt="Departament d'Ensenyament" title="" /></a>
+			<a href="http://www.xtec.cat" class="brand xtec hidden-phone"><img src="<?php echo $OUTPUT->image_url('xtec', 'theme'); ?>" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>
 			<a class="brand mainbrand" href="<?php echo $CFG->wwwroot;?>"><?php echo $SITE->fullname; ?></a>
             <div class="navbar">
                 <?php if($haslogin) { ?>
@@ -215,10 +215,10 @@ echo $OUTPUT->doctype() ?>
         </div>
     </div>
     <div class="footerlogos clearfix container-fluid">
-        <a href="http://agora.xtec.cat" target="_blank" class="agora_footer"><img src="<?php echo $OUTPUT->pix_url('logo_main', 'theme'); ?>" alt="Àgora" title="" /></a>
-        <a href="http://moodle.org" target="_blank" class="moodle_footer"><img src="<?php echo $OUTPUT->pix_url('logo_moodle', 'theme'); ?>" alt="Moodle" title="Moodle" /></a>
-        <a href="http://www20.gencat.cat/portal/site/ensenyament" class="brand ensenyament visible-phone"><img src="<?php echo $OUTPUT->pix_url('departament', 'theme'); ?>" alt="Departament d'Ensenyament" title="" /></a>
-        <a href="http://www.xtec.cat" class="brand xtec visible-phone"><img src="<?php echo $OUTPUT->pix_url('xtec', 'theme'); ?>" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>
+        <a href="http://agora.xtec.cat" target="_blank" class="agora_footer"><img src="<?php echo $OUTPUT->image_url('logo_main', 'theme'); ?>" alt="Àgora" title="" /></a>
+        <a href="http://moodle.org" target="_blank" class="moodle_footer"><img src="<?php echo $OUTPUT->image_url('logo_moodle', 'theme'); ?>" alt="Moodle" title="Moodle" /></a>
+        <a href="http://www20.gencat.cat/portal/site/ensenyament" class="brand ensenyament visible-phone"><img src="<?php echo $OUTPUT->image_url('departament', 'theme'); ?>" alt="Departament d'Ensenyament" title="" /></a>
+        <a href="http://www.xtec.cat" class="brand xtec visible-phone"><img src="<?php echo $OUTPUT->image_url('xtec', 'theme'); ?>" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>
     </div>
     <a href="#top" class="hidden-phone back-to-top"><i class="fa fa-angle-up"></i></a>
 </footer>

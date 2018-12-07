@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = 'La date de fin de disponibilité ne peut
 $string['blank'] = 'Vide';
 $string['buttons'] = 'Actions';
 $string['bynameondate'] = 'par {$a->name}, le {$a->date}';
-$string['calendarend'] = 'La base de données {$a} se ferme';
-$string['calendarstart'] = 'La base de données {$a} s\'ouvre';
+$string['calendarend'] = '{$a} se termine';
+$string['calendarstart'] = '{$a} s\'ouvre';
 $string['cancel'] = 'Annuler';
 $string['cannotaccesspresentsother'] = 'Vous n\'avez pas l\'autorisation d\'accéder à des préréglages d\'autres utilisateurs';
 $string['cannotadd'] = 'Impossible d\'ajouter des fiches !';
@@ -76,6 +76,9 @@ $string['comments'] = 'Commentaires';
 $string['commentsaved'] = 'Commentaire enregistré';
 $string['commentsn'] = '{$a} commentaire(s)';
 $string['commentsoff'] = 'La fonctionnalité de commentaire n\'est pas activée';
+$string['completionentries'] = 'Requiert des fiches';
+$string['completionentriescount'] = 'Nombre de fiches';
+$string['completionentriesdesc'] = 'Nombre minimale de fiches requises : {$a}';
 $string['configenablerssfeeds'] = 'Cette option permet l\'activation des flux RSS pour toutes les bases de données. Il est en outre nécessaire d\'activer manuellement les flux RSS dans les réglages de chaque base de données.';
 $string['confirmdeletefield'] = 'Vous êtes sur le point de supprimer ce champ. Voulez-vous continuer ?';
 $string['confirmdeleterecord'] = 'Voulez-vous vraiment supprimer cette fiche ?';
@@ -200,8 +203,13 @@ $string['headersingletemplate'] = 'Définit l\'interface présentée lors de la 
 $string['importentries'] = 'Importer des fiches';
 $string['importsuccess'] = 'Le préréglage a été mis en place correctement.';
 $string['includeapproval'] = 'Inclure le statut d\'approbation';
+$string['includetags'] = 'Inclure les tags';
 $string['includetime'] = 'Inclure la date d\'ajout/de modification';
 $string['includeuserdetails'] = 'Inclure les détails de l\'utilisateur';
+$string['indicator:cognitivedepth'] = 'Base de données : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Base de données.';
+$string['indicator:socialbreadth'] = 'Base de données : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Base de données.';
 $string['insufficiententries'] = 'autres fiches sont requises pour afficher cette base de données';
 $string['intro'] = 'Description';
 $string['invalidaccess'] = 'L\'accès à cette page n\'a pas été effectué correctement';
@@ -305,21 +313,43 @@ $string['pluginname'] = 'Base de données';
 $string['portfolionotfile'] = 'Exporter vers un portfolio plutôt que vers un fichier (CSV et LEAP2a seulement)';
 $string['presetinfo'] = 'L\'enregistrement en tant que préréglage publiera ce modèle. D\'autres utilisateurs pourront l\'utiliser dans leurs bases de données.';
 $string['presets'] = 'Préréglages';
+$string['privacy:metadata:commentpurpose'] = 'Commentaires sur les fiches de base de données';
+$string['privacy:metadata:data_content'] = 'Représente une réponse à un champ de la base de données';
+$string['privacy:metadata:data_content:content'] = 'Contenu';
+$string['privacy:metadata:data_content:content1'] = 'Contenu additionnel 1';
+$string['privacy:metadata:data_content:content2'] = 'Contenu additionnel 2';
+$string['privacy:metadata:data_content:content3'] = 'Contenu additionnel 3';
+$string['privacy:metadata:data_content:content4'] = 'Contenu additionnel 4';
+$string['privacy:metadata:data_content:fieldid'] = 'Identifiant de la définition du champ';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Champs de la base de données';
+$string['privacy:metadata:data_records'] = 'Représente les enregistrements de la base de données';
+$string['privacy:metadata:data_records:approved'] = 'Statut d\'approbation';
+$string['privacy:metadata:data_records:groupid'] = 'Groupe';
+$string['privacy:metadata:data_records:timecreated'] = 'Date et heure de la création de la fiche';
+$string['privacy:metadata:data_records:timemodified'] = 'Date et heure de la dernière modification de la fiche';
+$string['privacy:metadata:data_records:userid'] = 'Utilisateur qui a créé la fiche';
+$string['privacy:metadata:filepurpose'] = 'Fichier annexé à la fiche de base de données';
+$string['privacy:metadata:ratingpurpose'] = 'Évaluations des fiches de base de données';
+$string['privacy:metadata:tagpurpose'] = 'Tags des fiches de base de données';
 $string['radiobutton'] = 'Boutons radio';
 $string['recordapproved'] = 'Fiche approuvée';
 $string['recorddeleted'] = 'Fiche supprimée';
 $string['recorddisapproved'] = 'Fiche désapprouvée';
 $string['recordsnotsaved'] = 'Aucune fiche n\'a été importée. Veuillez vérifier le format du fichier déposé.';
 $string['recordssaved'] = 'fiches importées';
+$string['removealldatatags'] = 'Supprimer tous les tags de base de données';
 $string['requireapproval'] = 'Approbation requise';
 $string['requireapproval_help'] = 'Si vous désirez que les fiches soient approuvées par un enseignant avant de pouvoir être vues par les autres participants, activez cette option.';
 $string['required'] = 'Requis';
-$string['requiredentries'] = 'Nombre de fiches requises';
-$string['requiredentries_help'] = 'Le nombre de fiches qu\'un participant a l\'obligation de créer dans cette activité pour qu\'elle soit considérée comme terminée.';
+$string['requiredentries'] = 'Fiches requises (anciennement)';
+$string['requiredentries_help'] = 'Si ce réglage est activé, un message s\'affiche indiquant le nombre de fiches requis. Ce réglage n\'est pas en lien avec l\'achèvement de l\'activité.
+
+Pour spécifier un nombre de fiches qu\'un participant a l\'obligation de créer dans cette activité pour qu\'elle soit considérée comme terminée, le nouveau réglage « Requiert des fiches » doit être utilisé. Pour retirer définitivement le présent réglage, fixez sa valeur à aucun et enregistrez les modifications.';
 $string['requiredentriestoview'] = 'Fiches requises avant consultation';
 $string['requiredentriestoview_help'] = 'Ce réglage indique le nombre de fiches qu\'un participant doit créer avant de pouvoir consulter les fiches d\'autres participants.
 
 Remarque ! Cette fonctionnalité ne peut pas être utilisée en même temps que le filtre des liens automatiques des articles de base de données, car ce filtre est incapable de déterminer si un utilisateur a proposé le nombre requis d\'articles.';
+$string['requiredentrieswarning'] = 'Ce réglage a été remplacé par un réglage « Requiert des fiches » dans l\'achèvement des activités';
 $string['requiredfield'] = 'Champ requis';
 $string['resetsettings'] = 'Réinitialiser les filtres';
 $string['resettemplate'] = 'Réinitialiser le modèle';
@@ -347,6 +377,9 @@ $string['subplugintype_datafield'] = 'Type de champ Base de données';
 $string['subplugintype_datafield_plural'] = 'Types de champ Base de données';
 $string['subplugintype_datapreset'] = 'Préréglage';
 $string['subplugintype_datapreset_plural'] = 'Préréglages';
+$string['tagarea_data_records'] = 'Fiches de données';
+$string['tags'] = 'Tags';
+$string['tagsdeleted'] = 'Les tags de base de données ont été supprimés.';
 $string['teachersandstudents'] = '{$a->teachers} et {$a->students}';
 $string['templates'] = 'Modèles';
 $string['templatesaved'] = 'Modèle enregistré';

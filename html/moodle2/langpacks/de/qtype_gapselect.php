@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_gapselect', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['pluginnameadding'] = '"Lückentextauswahl"-Frage hinzufügen';
 $string['pluginnameediting'] = '"Lückentextauswahl"-Frage bearbeiten';
 $string['pluginname_help'] = 'Fragetexte mit Auswahlantworten benötigen Platzhalter, um die richtigen Antworten über Dropdown-Menüs auswählen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Zusätzliche Antworttexte können hinzugefügt werden, um die Beantwortung der Frage schwieriger zu machen. Auswahlantworten können gruppiert werden, um Antworten in den Dropdown-Menüs zu beschränken.';
 $string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden über Dropdown-Menüs ausgefüllt.';
+$string['privacy:metadata'] = 'Das Lückentext Frageformat Plugin speichert keine persönlichen Daten';
 $string['shuffle'] = 'Zufallsanordnung';
 $string['tagsnotallowed'] = '{$a->tag} ist unzulässig. (Nur {$a->allowed} sind zulässig.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ist unzulässig. (HTML ist hier nicht zulässig.)';

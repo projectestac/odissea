@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_mahara', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,5 +48,7 @@ $string['pf_description'] = 'Abonnieren <b>und</b> veröffentlichen Sie diesen D
 <li><em>Voraussetzung</em>: Sie müssen die MNet-Authentifizierung aktivieren.</li></ul>';
 $string['pf_name'] = 'Portfolio-Service';
 $string['pluginname'] = 'Mahara ePortfolio';
+$string['privacy:metadata'] = 'Dieses Plugin sendet Daten an ein extern verbundene Mahara-Anwendung. Es speichert lokal keine Daten.';
+$string['privacy:metadata:data'] = 'Persönliche Daten über das Portfolio-Subsystem weitergeleitet';
 $string['senddisallowed'] = 'Sie können momentan keine Daten zu Mahara übertragen';
 $string['url'] = 'URL';

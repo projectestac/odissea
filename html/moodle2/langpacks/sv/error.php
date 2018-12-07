@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,7 +62,7 @@ $string['cannotdeletebackupids'] = 'Kunde inte raderas tidigare backuppers id.';
 $string['cannotdeletecategorycourse'] = 'Det gick inte att ta bort kursen {$a}.';
 $string['cannotdeletecategoryquestions'] = 'Det gick inte att ta bort frågor från kategorin {$a}.';
 $string['cannotdeletecourse'] = 'Du har inte tillstånd att ta bort den här kursen. ';
-$string['cannotdeletecustomfield'] = 'Fel i sb m borttagande av standardiserade fältdata';
+$string['cannotdeletecustomfield'] = 'Fel i sb m borttagande av anpassad fältdata';
 $string['cannotdeletedir'] = 'Kan inte ta bort ({$a})';
 $string['cannotdeletefile'] = 'Det går inte att ta bort den här filen';
 $string['cannotdeleterole'] = 'It cannot be deleted, because {$a}';

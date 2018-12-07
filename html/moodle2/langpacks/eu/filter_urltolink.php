@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_urltolink', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_urltolink', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_urltolink
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = 'Enbotatutako irudiak';
 $string['embedimages_desc'] = 'Irudien URLak irudiekin ordezkatu aukeratutako testu formatuan.';
 $string['filtername'] = 'URLak esteka eta irudi bihurtu';
+$string['privacy:metadata'] = 'URLak esteka eta irudi bihurtu pluginak ez du datu pertsonalik biltzen.';
 $string['settingformats'] = 'Aplikatu formatuei';
 $string['settingformats_desc'] = 'Iragazkia bakarrik aplikatuko da jatorrizko testua aukeratutako formatuetako batean txertatu bada.';

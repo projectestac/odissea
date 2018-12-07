@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_missing', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_missing', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_missing
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comportamento desconhecido';
+$string['privacy:metadata'] = 'O módulo comportamento de questão em falta não armazena dados pessoais.';
 $string['questionusedunknownmodel'] = 'Realizou uma tentativa à pergunta com um tipo de comportamento que não se encontra disponível. Estamos a tentar exibir a pergunta, mas podem ocorrer problemas.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcache', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,7 +51,7 @@ servername:port:weight
 </pre>
 
 Если ниже включен параметр *Включить кластер серверов*, то здесь должен быть приведен только один сервер. Это, как правило, имя локального компьютера, такое как 127.0.0.1 или localhost.';
-$string['sessionhandlerconflict'] = 'Предупреждение: Экземпляр memcache ({$a}) был настроен на использование того же кэшированного memcache сервера, что и сессии. Очистка всех кэшей приведет к тому, что сессии тоже будут удалены.';
+$string['sessionhandlerconflict'] = 'Предупреждение: Экземпляр memcache ({$a}) был настроен на использование того же сервера, который  кэширует и сессии. Очистка всех кэшей приведет к тому, что сессии тоже будут удалены.';
 $string['setservers'] = 'Серверы';
 $string['setservers_help'] = 'Список серверов, которые будут обновлены  при изменении данных в кэше. Обычно это полные имена каждого из объединенных серверов.
 Он  **должен** включать серверы, перечисленные выше в списке *Серверы*, даже если с другим именем хоста.

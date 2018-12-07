@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Add {$a} field(s) to form';
 $string['advancedelement'] = 'Advanced element';
 $string['close'] = 'Close';
+$string['custom'] = 'Custom';
 $string['day'] = 'Day';
+$string['default'] = 'Default';
 $string['display'] = 'Display';
 $string['err_alphanumeric'] = 'You must enter only letters or numbers here.';
 $string['err_email'] = 'You must enter a valid email address here.';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'You must enter no punctuation characters here.';
 $string['err_numeric'] = 'You must enter a number here.';
 $string['err_rangelength'] = 'You must enter between {$a->format[0]} and {$a->format[1]} characters here.';
 $string['err_required'] = 'You must supply a value here.';
+$string['err_wrongfileextension'] = 'Some files ({$a->wrongfiles}) cannot be uploaded. Only file types {$a->whitelist} are allowed.';
+$string['filesofthesetypes'] = 'Accepted file types:';
+$string['filetypesany'] = 'All file types';
+$string['filetypesnotall'] = 'It is not allowed to select \'All file types\' here';
+$string['filetypesnotwhitelisted'] = 'These file types are not allowed here: {$a}';
+$string['filetypesothers'] = 'Other files';
+$string['filetypesunknown'] = 'Unknown file types: {$a}';
 $string['general'] = 'General';
 $string['hideadvanced'] = 'Hide advanced';
 $string['hour'] = 'Hour';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'Miscellaneous settings';
 $string['modstandardels'] = 'Common module settings';
 $string['month'] = 'Month';
 $string['mustbeoverriden'] = 'Abstract form_definition() method in class {$a} must be overridden, please fix the code.';
+$string['newvaluefor'] = 'New value for {$a}';
 $string['nomethodforaddinghelpbutton'] = 'There is no method for adding a help button to form element {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Trying to add help buttons to non-existent form elements : {$a}';
 $string['noselection'] = 'No selection';
@@ -60,6 +70,8 @@ $string['othersettings'] = 'Other settings';
 $string['passwordunmaskedithint'] = 'Edit password';
 $string['passwordunmaskinstructions'] = 'Press enter to save changes';
 $string['passwordunmaskrevealhint'] = 'Reveal';
+$string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Recently selected view mode of the file picker element.';
+$string['privacy:preference:filemanager_recentviewmode'] = 'Your preferred way of displaying files in the file picker is: {$a}';
 $string['requiredelement'] = 'Required field';
 $string['revealpassword'] = 'Reveal';
 $string['security'] = 'Security';

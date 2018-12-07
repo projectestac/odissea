@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'admin', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -802,8 +802,6 @@ $string['pathtopgdumpinvalid'] = 'Ruta incorrecta a pg_dump: ou é errónea, ou 
 $string['pathtopsql'] = 'Ruta a psql';
 $string['pathtopsqldesc'] = 'Isto só é necesario para entrar se ten máis dun psql no seu sistema (por exemplo, se vostede ten instalada máis dunha versión de PostgreSQ)';
 $string['pathtopsqlinvalid'] = 'Ruta incorrecta a psql: ou é errónea, ou non é executábel';
-$string['pathtounoconv'] = 'Ruta do convertedor de documentos «unoconv»';
-$string['pathtounoconv_help'] = 'Ruta do convertedor de documentos «unoconv». Tratase dun executábel que é quen de converter formatos de documento admitidos por LibreOffice. É opcional, mais se o especifica, Moodle usarao para converter automaticamente entre formatos de documentos. Utilizase para dar compatibilidade a máis de tipos de ficheiros que se usan coa ferramenta de anotación PDF das tarefas.';
 $string['pcreunicodewarning'] = 'Recomendase encarecidamente empregar a extensión PCRE PHP que é compatíbel con caracteres Unicode.';
 $string['perfdebug'] = 'Información de rendemento';
 $string['performance'] = 'Rendemento';

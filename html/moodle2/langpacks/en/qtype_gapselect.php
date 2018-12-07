@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_gapselect', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['pluginnameediting'] = 'Editing a select missing words question';
 $string['pluginname_help'] = 'Select missing words questions require the respondent to select correct answers from dropdown menus. [[1]], [[2]], [[3]], ... are used as placeholders in the question text, with the correct answers specified as choice answers 1, 2, 3, ... respectively. Extra choice answers may be added to make the question harder. Choice answers may be grouped to restrict answers available in each dropdown menu.';
 $string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnamesummary'] = 'Missing words in the question text are filled in using dropdown menus.';
+$string['privacy:metadata'] = 'The Select missing words plugin does not store any personal data.';
 $string['shuffle'] = 'Shuffle';
 $string['tagsnotallowed'] = '{$a->tag} is not allowed. (Only {$a->allowed} are permitted.)';
 $string['tagsnotallowedatall'] = '{$a->tag} is not allowed. (No HTML is allowed here.)';

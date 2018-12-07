@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,3 +36,4 @@ $string['pluginnameadding'] = '"Drag-and-drop auf Text" hinzufügen';
 $string['pluginnameediting'] = '"Drag-and-drop auf Text" bearbeiten';
 $string['pluginname_help'] = 'Fragetexte mit Drag-and-drop-Lücken benötigen Platzhalter, um die richtigen Antworten in die entsprechenden Lücken im Fragetext zuordnen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Antworten können gruppiert werden, um alle Antwortenmöglichkeiten für eine Lücke farblich zu markieren. Wenn Antwortmöglichkeiten als \'unbegrenzt\' markiert sind, können sie in mehr als einer Lücke verwendet werden.';
 $string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden per Drag-and-drop ausgefüllt.';
+$string['privacy:metadata'] = 'Das Drag-and-Drop in Text Frageformat Plugin speichert keine persönlichen Daten.';

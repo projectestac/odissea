@@ -57,12 +57,8 @@ class core_accesslib_testcase extends advanced_testcase {
         $this->setAdminUser();
         load_all_capabilities();
 
-        $this->assertNotEmpty($ACCESSLIB_PRIVATE->rolepermissions);
-        $this->assertNotEmpty($ACCESSLIB_PRIVATE->rolepermissions);
         $this->assertNotEmpty($ACCESSLIB_PRIVATE->accessdatabyuser);
         accesslib_clear_all_caches_for_unit_testing();
-        $this->assertEmpty($ACCESSLIB_PRIVATE->rolepermissions);
-        $this->assertEmpty($ACCESSLIB_PRIVATE->rolepermissions);
         $this->assertEmpty($ACCESSLIB_PRIVATE->dirtycontexts);
         $this->assertEmpty($ACCESSLIB_PRIVATE->accessdatabyuser);
     }
@@ -93,9 +89,9 @@ class core_accesslib_testcase extends advanced_testcase {
 
             $this->assertTrue(is_array($access));
             $this->assertTrue(is_array($access['ra']));
-            $this->assertTrue(is_array($access['rdef']));
-            $this->assertTrue(isset($access['rdef_count']));
-            $this->assertTrue(is_array($access['loaded']));
+            $this->assertFalse(isset($access['rdef']));
+            $this->assertFalse(isset($access['rdef_count']));
+            $this->assertFalse(isset($access['loaded']));
             $this->assertTrue(isset($access['time']));
             $this->assertTrue(is_array($access['rsw']));
         }
@@ -1589,6 +1585,42 @@ class core_accesslib_testcase extends advanced_testcase {
     }
 
     /**
+     * Test get_user_roles and get_users_roles
+     */
+    public function test_get_user_roles() {
+        global $DB, $CFG;
+
+        $this->resetAfterTest();
+
+        $teacherrole = $DB->get_record('role', array('shortname'=>'editingteacher'), '*', MUST_EXIST);
+        $studentrole = $DB->get_record('role', array('shortname'=>'student'), '*', MUST_EXIST);
+        $course = $this->getDataGenerator()->create_course();
+        $coursecontext = context_course::instance($course->id);
+        $teacherrename = (object)array('roleid'=>$teacherrole->id, 'name'=>'Učitel', 'contextid'=>$coursecontext->id);
+        $DB->insert_record('role_names', $teacherrename);
+
+        $roleids = explode(',', $CFG->profileroles); // Should include teacher and student in new installs.
+
+        $user1 = $this->getDataGenerator()->create_user();
+        role_assign($teacherrole->id, $user1->id, $coursecontext->id);
+        role_assign($studentrole->id, $user1->id, $coursecontext->id);
+        $user2 = $this->getDataGenerator()->create_user();
+        role_assign($studentrole->id, $user2->id, $coursecontext->id);
+        $user3 = $this->getDataGenerator()->create_user();
+
+        $u1roles = get_user_roles($coursecontext, $user1->id);
+
+        $u2roles = get_user_roles($coursecontext, $user2->id);
+
+        $allroles = get_users_roles($coursecontext, [], false);
+        $specificuserroles = get_users_roles($coursecontext, [$user1->id, $user2->id]);
+        $this->assertEquals($u1roles, $allroles[$user1->id]);
+        $this->assertEquals($u1roles, $specificuserroles[$user1->id]);
+        $this->assertEquals($u2roles, $allroles[$user2->id]);
+        $this->assertEquals($u2roles, $specificuserroles[$user2->id]);
+    }
+
+    /**
      * Test has_capability(), has_any_capability() and has_all_capabilities().
      */
     public function test_has_capability_and_friends() {
@@ -1662,6 +1694,271 @@ class core_accesslib_testcase extends advanced_testcase {
         $this->assertFalse(has_capability('moodle/site:approvecourse', $coursecontext, 0));
         $this->assertFalse(has_any_capability($sca, $coursecontext, 0));
         $this->assertFalse(has_all_capabilities($sca, $coursecontext, 0));
+    }
+
+    /**
+     * Test that the caching in get_role_definitions() and get_role_definitions_uncached()
+     * works as intended.
+     */
+    public function test_role_definition_caching() {
+        global $DB;
+
+        $this->resetAfterTest();
+
+        // Get some role ids.
+        $authenticatedrole = $DB->get_record('role', array('shortname' => 'user'), '*', MUST_EXIST);
+        $studentrole = $DB->get_record('role', array('shortname' => 'student'), '*', MUST_EXIST);
+        $emptyroleid = create_role('No capabilities', 'empty', 'A role with no capabilties');
+        $course = $this->getDataGenerator()->create_course();
+        $coursecontext = context_course::instance($course->id);
+
+        // Instantiate the cache instance, since that does DB queries (get_config)
+        // and we don't care about those.
+        cache::make('core', 'roledefs');
+
+        // One database query is not necessarily one database read, it seems. Find out how many.
+        $startdbreads = $DB->perf_get_reads();
+        $rs = $DB->get_recordset('user');
+        $rs->close();
+        $readsperquery = $DB->perf_get_reads() - $startdbreads;
+
+        // Now load some role definitions, and check when it queries the database.
+
+        // Load the capabilities for two roles. Should be one query.
+        $startdbreads = $DB->perf_get_reads();
+        get_role_definitions([$authenticatedrole->id, $studentrole->id]);
+        $this->assertEquals(1 * $readsperquery, $DB->perf_get_reads() - $startdbreads);
+
+        // Load the capabilities for same two roles. Should not query the DB.
+        $startdbreads = $DB->perf_get_reads();
+        get_role_definitions([$authenticatedrole->id, $studentrole->id]);
+        $this->assertEquals(0 * $readsperquery, $DB->perf_get_reads() - $startdbreads);
+
+        // Include a third role. Should do one DB query.
+        $startdbreads = $DB->perf_get_reads();
+        get_role_definitions([$authenticatedrole->id, $studentrole->id, $emptyroleid]);
+        $this->assertEquals(1 * $readsperquery, $DB->perf_get_reads() - $startdbreads);
+
+        // Repeat call. No DB queries.
+        $startdbreads = $DB->perf_get_reads();
+        get_role_definitions([$authenticatedrole->id, $studentrole->id, $emptyroleid]);
+        $this->assertEquals(0 * $readsperquery, $DB->perf_get_reads() - $startdbreads);
+
+        // Alter a role.
+        role_change_permission($studentrole->id, $coursecontext, 'moodle/course:tag', CAP_ALLOW);
+
+        // Should now know to do one query.
+        $startdbreads = $DB->perf_get_reads();
+        get_role_definitions([$authenticatedrole->id, $studentrole->id]);
+        $this->assertEquals(1 * $readsperquery, $DB->perf_get_reads() - $startdbreads);
+
+        // Now clear the in-memory cache, and verify that it does not query the DB.
+        // Cannot use accesslib_clear_all_caches_for_unit_testing since that also
+        // clears the MUC cache.
+        global $ACCESSLIB_PRIVATE;
+        $ACCESSLIB_PRIVATE->cacheroledefs = array();
+
+        // Get all roles. Should not need the DB.
+        $startdbreads = $DB->perf_get_reads();
+        get_role_definitions([$authenticatedrole->id, $studentrole->id, $emptyroleid]);
+        $this->assertEquals(0 * $readsperquery, $DB->perf_get_reads() - $startdbreads);
+    }
+
+    /**
+     * Tests get_user_capability_course() which checks a capability across all courses.
+     */
+    public function test_get_user_capability_course() {
+        global $CFG, $USER;
+
+        $this->resetAfterTest();
+
+        $generator = $this->getDataGenerator();
+        $cap = 'moodle/course:view';
+
+        // The structure being created here is this:
+        //
+        // All tests work with the single capability 'moodle/course:view'.
+        //
+        //             ROLE DEF/OVERRIDE                        ROLE ASSIGNS
+        //    Role:  Allow    Prohib    Empty   Def user      u1  u2  u3  u4   u5  u6  u7  u8
+        // System    ALLOW    PROHIBIT                            A   E   A+E
+        //   cat1                       ALLOW
+        //     C1                               (ALLOW)                            P
+        //     C2             ALLOW                                                    E   P
+        //     cat2                     PREVENT
+        //       C3                     ALLOW                                      E
+        //       C4
+        //   Misc.                                                             A
+        //     C5    PREVENT                                                       A
+        //     C6                       PROHIBIT
+        //
+        // Front-page and guest role stuff from the end of this test not included in the diagram.
+
+        // Create a role which allows course:view and one that prohibits it, and one neither.
+        $allowroleid = $generator->create_role();
+        $prohibitroleid = $generator->create_role();
+        $emptyroleid = $generator->create_role();
+        $systemcontext = context_system::instance();
+        assign_capability($cap, CAP_ALLOW, $allowroleid, $systemcontext->id);
+        assign_capability($cap, CAP_PROHIBIT, $prohibitroleid, $systemcontext->id);
+
+        // Create two categories (nested).
+        $cat1 = $generator->create_category();
+        $cat2 = $generator->create_category(['parent' => $cat1->id]);
+
+        // Create six courses - two in cat1, two in cat2, and two in default category.
+        // Shortnames are used for a sorting test. Otherwise they are not significant.
+        $c1 = $generator->create_course(['category' => $cat1->id, 'shortname' => 'Z']);
+        $c2 = $generator->create_course(['category' => $cat1->id, 'shortname' => 'Y']);
+        $c3 = $generator->create_course(['category' => $cat2->id, 'shortname' => 'X']);
+        $c4 = $generator->create_course(['category' => $cat2->id]);
+        $c5 = $generator->create_course();
+        $c6 = $generator->create_course();
+
+        // Category overrides: in cat 1, empty role is allowed; in cat 2, empty role is prevented.
+        assign_capability($cap, CAP_ALLOW, $emptyroleid,
+                context_coursecat::instance($cat1->id)->id);
+        assign_capability($cap, CAP_PREVENT, $emptyroleid,
+                context_coursecat::instance($cat2->id)->id);
+
+        // Course overrides: in C5, allow role is prevented; in C6, empty role is prohibited; in
+        // C3, empty role is allowed.
+        assign_capability($cap, CAP_PREVENT, $allowroleid,
+                context_course::instance($c5->id)->id);
+        assign_capability($cap, CAP_PROHIBIT, $emptyroleid,
+                context_course::instance($c6->id)->id);
+        assign_capability($cap, CAP_ALLOW, $emptyroleid,
+                context_course::instance($c3->id)->id);
+        assign_capability($cap, CAP_ALLOW, $prohibitroleid,
+                context_course::instance($c2->id)->id);
+
+        // User 1 has no roles except default user role.
+        $u1 = $generator->create_user();
+
+        // It returns false (annoyingly) if there are no courses.
+        $this->assertFalse(get_user_capability_course($cap, $u1->id, true, '', 'id'));
+
+        // Final override: in C1, default user role is allowed.
+        assign_capability($cap, CAP_ALLOW, $CFG->defaultuserroleid,
+                context_course::instance($c1->id)->id);
+
+        // Should now get C1 only.
+        $courses = get_user_capability_course($cap, $u1->id, true, '', 'id');
+        $this->assert_course_ids([$c1->id], $courses);
+
+        // User 2 has allow role (system wide).
+        $u2 = $generator->create_user();
+        role_assign($allowroleid, $u2->id, $systemcontext->id);
+
+        // Should get everything except C5.
+        $courses = get_user_capability_course($cap, $u2->id, true, '', 'id');
+        $this->assert_course_ids([SITEID, $c1->id, $c2->id, $c3->id, $c4->id, $c6->id], $courses);
+
+        // User 3 has empty role (system wide).
+        $u3 = $generator->create_user();
+        role_assign($emptyroleid, $u3->id, $systemcontext->id);
+
+        // Should get cat 1 courses but not cat2, except C3.
+        $courses = get_user_capability_course($cap, $u3->id, true, '', 'id');
+        $this->assert_course_ids([$c1->id, $c2->id, $c3->id], $courses);
+
+        // User 4 has allow and empty role (system wide).
+        $u4 = $generator->create_user();
+        role_assign($allowroleid, $u4->id, $systemcontext->id);
+        role_assign($emptyroleid, $u4->id, $systemcontext->id);
+
+        // Should get everything except C5 and C6.
+        $courses = get_user_capability_course($cap, $u4->id, true, '', 'id');
+        $this->assert_course_ids([SITEID, $c1->id, $c2->id, $c3->id, $c4->id], $courses);
+
+        // User 5 has allow role in default category only.
+        $u5 = $generator->create_user();
+        role_assign($allowroleid, $u5->id, context_coursecat::instance($c5->category)->id);
+
+        // Should get C1 and the default category courses but not C5.
+        $courses = get_user_capability_course($cap, $u5->id, true, '', 'id');
+        $this->assert_course_ids([$c1->id, $c6->id], $courses);
+
+        // User 6 has a bunch of course roles: prohibit role in C1, empty role in C3, allow role in
+        // C6.
+        $u6 = $generator->create_user();
+        role_assign($prohibitroleid, $u6->id, context_course::instance($c1->id)->id);
+        role_assign($emptyroleid, $u6->id, context_course::instance($c3->id)->id);
+        role_assign($allowroleid, $u6->id, context_course::instance($c5->id)->id);
+
+        // Should get C3 only because the allow role is prevented in C5.
+        $courses = get_user_capability_course($cap, $u6->id, true, '', 'id');
+        $this->assert_course_ids([$c3->id], $courses);
+
+        // User 7 has empty role in C2.
+        $u7 = $generator->create_user();
+        role_assign($emptyroleid, $u7->id, context_course::instance($c2->id)->id);
+
+        // Should get C1 by the default user role override, and C2 by the cat1 level override.
+        $courses = get_user_capability_course($cap, $u7->id, true, '', 'id');
+        $this->assert_course_ids([$c1->id, $c2->id], $courses);
+
+        // User 8 has prohibit role as system context, to verify that prohibits can't be overridden.
+        $u8 = $generator->create_user();
+        role_assign($prohibitroleid, $u8->id, context_course::instance($c2->id)->id);
+
+        // Should get C1 by the default user role override, no other courses because the prohibit cannot be overridden.
+        $courses = get_user_capability_course($cap, $u8->id, true, '', 'id');
+        $this->assert_course_ids([$c1->id], $courses);
+
+        // Admin user gets everything....
+        $courses = get_user_capability_course($cap, get_admin()->id, true, '', 'id');
+        $this->assert_course_ids([SITEID, $c1->id, $c2->id, $c3->id, $c4->id, $c5->id, $c6->id],
+                $courses);
+
+        // Unless you turn off doanything, when it only has the things a user with no role does.
+        $courses = get_user_capability_course($cap, get_admin()->id, false, '', 'id');
+        $this->assert_course_ids([$c1->id], $courses);
+
+        // Using u3 as an example, test the limit feature.
+        $courses = get_user_capability_course($cap, $u3->id, true, '', 'id', 2);
+        $this->assert_course_ids([$c1->id, $c2->id], $courses);
+
+        // Check sorting.
+        $courses = get_user_capability_course($cap, $u3->id, true, '', 'shortname');
+        $this->assert_course_ids([$c3->id, $c2->id, $c1->id], $courses);
+
+        // Check returned fields - default.
+        $courses = get_user_capability_course($cap, $u3->id, true, '', 'id');
+        $this->assertEquals((object)['id' => $c1->id], $courses[0]);
+
+        // Add a selection of fields, including the context ones with special handling.
+        $courses = get_user_capability_course($cap, $u3->id, true, 'shortname, ctxlevel, ctxdepth, ctxinstance', 'id');
+        $this->assertEquals((object)['id' => $c1->id, 'shortname' => 'Z', 'ctxlevel' => 50,
+                'ctxdepth' => 3, 'ctxinstance' => $c1->id], $courses[0]);
+
+        // Test front page role - user 1 has no roles, but if we change the front page role
+        // definition so that it has our capability, then they should see the front page course.
+        // as well as C1.
+        assign_capability($cap, CAP_ALLOW, $CFG->defaultfrontpageroleid, $systemcontext->id);
+        $courses = get_user_capability_course($cap, $u1->id, true, '', 'id');
+        $this->assert_course_ids([SITEID, $c1->id], $courses);
+
+        // Check that temporary guest access (in this case, given on course 2 for user 1)
+        // also is included, if it has this capability.
+        assign_capability($cap, CAP_ALLOW, $CFG->guestroleid, $systemcontext->id);
+        $this->setUser($u1);
+        load_temp_course_role(context_course::instance($c2->id), $CFG->guestroleid);
+        $courses = get_user_capability_course($cap, $USER->id, true, '', 'id');
+        $this->assert_course_ids([SITEID, $c1->id, $c2->id], $courses);
+    }
+
+    /**
+     * Extracts an array of course ids to make the above test script shorter.
+     *
+     * @param int[] $expected Array of expected course ids
+     * @param stdClass[] $courses Array of course objects
+     */
+    protected function assert_course_ids(array $expected, array $courses) {
+        $courseids = array_map(function($c) {
+            return $c->id;
+        }, $courses);
+        $this->assertEquals($expected, $courseids);
     }
 
     /**

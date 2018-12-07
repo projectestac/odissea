@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'Comando:';
 $string['comment'] = 'Comentários';
 $string['commentcolour'] = 'Cor do comentário';
 $string['commentcontextmenu'] = 'Menu de contexto do comentário';
+$string['commentindex'] = 'Índice de comentários';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Não foi possível guardar a página {$a}';
 $string['currentstamp'] = 'Carimbo';
 $string['deleteannotation'] = 'Apagar anotação';
@@ -51,6 +53,7 @@ $string['enabled'] = 'Anotar PDF';
 $string['enabled_help'] = 'Se ativar esta opção, o professor poderá criar ficheiros PDF anotados quando estiver a avaliar os trabalhos. Isto permite ao professor adicionar comentários, desenhos e carimbos diretamente no documento que os alunos submeteram. A anotação é feita no navegador, não sendo necessário nenhum software adicional.';
 $string['errorgenerateimage'] = 'Erro ao gerar imagem com ghostscript, informação de depuração: {$a}';
 $string['errorpdfpage'] = 'Ocorreu um erro ao gerar esta página.';
+$string['expcolcomments'] = 'Expandir/contrair todos os comentários';
 $string['filter'] = 'Filtrar comentários...';
 $string['generatefeedback'] = 'Gerar PDF de feedback';
 $string['generatingpdf'] = 'A gerar o PDF...';
@@ -69,10 +72,16 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Página  {$a}';
 $string['pagexofy'] = 'Página {$a->page} de {$a->total}';
 $string['pathtogspathdesc'] = 'Note que a anotação de PDF requer que o caminho para Ghostscript seja definido em {$a}.';
-$string['pathtounoconvpathdesc'] = 'Tenha em atenção que para anotar diretamente no PDF é necessário indicar a localização do unoconv em {$a}.';
 $string['pen'] = 'Caneta';
 $string['pluginname'] = 'Anotar PDF';
 $string['preparesubmissionsforannotation'] = 'Preparar submissões de Trabalhos para anotação';
+$string['privacy:metadata:colourpurpose'] = 'A cor do comentário ou anotação';
+$string['privacy:metadata:conversionpurpose'] = 'Os ficheiros são convertidos em PDF para permitir anotações.';
+$string['privacy:metadata:filepurpose'] = 'Armazena um PDF anotado com feedback para o utilizador';
+$string['privacy:metadata:rawtextpurpose'] = 'Armazena o texto bruto para os dados rápidos';
+$string['privacy:metadata:tablepurpose'] = 'Armazena comentários específicos da lista rápida do professor';
+$string['privacy:metadata:userid'] = 'Um identificador para o utilizador.';
+$string['privacy:path'] = 'PDF de feedback';
 $string['rectangle'] = 'Retângulo';
 $string['red'] = 'Vermelho';
 $string['result'] = 'Resultado:';
@@ -89,14 +98,6 @@ $string['test_isdir'] = 'O caminho ghostscript aponta para uma pasta, por favor 
 $string['test_notestfile'] = 'O PDF de teste está em falta';
 $string['test_notexecutable'] = 'O caminho ghostscript aponta para um ficheiro que não é executável';
 $string['test_ok'] = 'O caminho ghostscript parece estar OK - por favor verifique que consegue ver a mensagem na imagem abaixo';
-$string['test_unoconv'] = 'Testar o caminho do unoconv';
-$string['test_unoconvdoesnotexist'] = 'O caminho para o unoconv não aponta para o programa unoconv. Reveja as configurações do caminho.';
-$string['test_unoconvdownload'] = 'Descarregar o ficheiro de teste convertido em pdf.';
-$string['test_unoconvisdir'] = 'O caminho para o unoconv aponta para uma pasta, por favor inclua o programa unoconv no caminho especificado';
-$string['test_unoconvnotestfile'] = 'Falta o documento de teste a ser convertido em PDF';
-$string['test_unoconvnotexecutable'] = 'O caminho para o unoconv aponta para um ficheiro que não é executável';
-$string['test_unoconvok'] = 'O caminho para o unoconv parece estar configurado corretamente.';
-$string['test_unoconvversionnotsupported'] = 'A versão do unoconv instalada não é suportada. A funcionalidade de avaliar Trabalho requer a versão 0.7 ou superior.';
 $string['tool'] = 'Ferramenta';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Ver o PDF anotado...';

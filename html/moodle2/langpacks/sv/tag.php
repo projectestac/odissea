@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addedotag'] = '"{$a}" lades till som en officiell etikett';
 $string['addotags'] = 'Lägg till officiella etiketter';
 $string['addtagtomyinterests'] = 'Lägg till "{$a}" till mina intressen';
 $string['changename'] = 'Ändra namn på etikett';
@@ -48,7 +47,6 @@ $string['managetags'] = 'Administrera rubriker för intressen';
 $string['moretags'] = 'mer...';
 $string['name'] = 'Namn på etikett';
 $string['namesalreadybeeingused'] = 'Namn på etiketter som redan är tagna i bruk';
-$string['newname'] = 'Nytt namn på etikett';
 $string['noresultsfor'] = 'Inget resultat för  "{$a}"';
 $string['officialtag'] = 'Officiell etikett';
 $string['otags'] = 'Officiella etiketter';
@@ -75,13 +73,8 @@ $string['taggedwith'] = 'med den här etiketten  "{$a}"';
 $string['tags'] = 'Rubriker för intressen';
 $string['tagsaredisabled'] = 'Rubriker för intressen är avaktiverade';
 $string['tagtype'] = 'Typ av etikett';
-$string['tagtype_default'] = 'Förinställt standardval';
-$string['tagtype_official'] = 'Officiell';
 $string['thingstaggedwith'] = '"{$a->name}" har använts {$a->count} gånger';
 $string['thingtaggedwith'] = '"{$a->name}" har använts en gång';
-$string['thistaghasnodesc'] = 'Den här rubriken för intresse har ingen beskrivning';
 $string['timemodified'] = 'Modifierad';
 $string['typechanged'] = 'Typen av etikett har  ändrats';
-$string['updated'] = 'Uppdaterad';
 $string['updatetag'] = 'Uppdatera';
-$string['withselectedtags'] = 'Med valda etiketter...';

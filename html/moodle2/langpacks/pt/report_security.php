@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_security', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,7 +79,7 @@ $string['check_noauth_details'] = '<p>O módulo de autenticação <strong>Sem au
 $string['check_noauth_error'] = 'O módulo de autenticação <strong>Sem autenticação</strong> não deve ser usado em sites em produção.';
 $string['check_noauth_name'] = 'Módulo de autenticação <strong>Sem autenticação</strong>';
 $string['check_noauth_ok'] = 'O módulo de autenticação <strong>Sem autenticação</strong> não está ativo.';
-$string['check_nodemodules_details'] = '<p>O diretório <em>{$a->path}</em> contém módulos Node.js modules  e respetivas dependências, tipicamente instaladas pelo utilitário NPM. Estes módulos podem ser necessários para o desenvolvimento do Moodle. Não são necessários para executar um site moodle assim como pode conter código potencialmente perigoso que expõe seu site a ataques remotos.</p><p>É altamente recomendável remover o diretório se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso exterior ao diretório.</p>';
+$string['check_nodemodules_details'] = '<p>A diretoria <em>{$a->path}</em> contém módulos Node.js e suas dependências, normalmente instalados pelo utilitário NPM. Esses módulos podem ser necessários para o desenvolvimento local do Moodle, como, por exemplo, o uso da grunt framework. Não são necessários para executar um site Moodle em produção e podem conter código potencialmente perigoso, expondo o seu site a ataques remotos.</p><p>É altamente recomendável remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso web na configuração do seu servidor web.</p>';
 $string['check_nodemodules_info'] = 'O diretório de módulos Node não deve estar presente em sites públicos.';
 $string['check_nodemodules_name'] = 'Diretório de módulos Node.js';
 $string['check_openprofiles_details'] = '<p>Os perfis de utilizador que permitem acesso público podem ser utilizados de forma abusiva por <em>spammers</em>. É recomendado ativar a configuração <code>Apenas utilizadores autenticados podem aceder a perfis de outros utilizadores</code> ou <code>Apenas utilizadores autenticados podem aceder ao site</code>.</p>';
@@ -91,6 +91,10 @@ No entanto, não devem ser definidas regras demasiado exigentes, para que os uti
 $string['check_passwordpolicy_error'] = 'Devem ser definidas regras para as palavras-chaves.';
 $string['check_passwordpolicy_name'] = 'Regras para as senhas';
 $string['check_passwordpolicy_ok'] = 'Estão definidas regras para as palavras-chaves.';
+$string['check_preventexecpath_details'] = '<p>Permitir que os caminhos para executáveis sejam definidos através da interface de Administração, é um vetor para escalonamento de privilégios.</p>';
+$string['check_preventexecpath_name'] = 'Caminhos executáveis';
+$string['check_preventexecpath_ok'] = 'Os caminhos executáveis apenas podem ser configurados no config.php.';
+$string['check_preventexecpath_warning'] = 'Os caminhos executáveis podem ser configurados na Admin GUI.';
 $string['check_riskadmin_detailsok'] = '<p>Verifique a lista de administradores do sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Verifique a lista de administradores do sistema:</p>{$a->admins}
 <p>É recomendado que o papel de administrador apenas seja atribuído no contexto de sistema. Os seguintes utilizadores têm o papel de administrador  em outros contextos (não aconselhado):</p>{$a->unsupported}';
@@ -118,7 +122,7 @@ $string['check_unsecuredataroot_error'] = 'A pasta de dados está numa localiza�
 $string['check_unsecuredataroot_name'] = 'Segurança da pasta de dados';
 $string['check_unsecuredataroot_ok'] = 'Não deve ser possível aceder à pasta de dados através da web.';
 $string['check_unsecuredataroot_warning'] = 'A diretoria dataroot <code>{$a}</code> está no local errado e pode ser acessível através da web.';
-$string['check_vendordir_details'] = '<p>O diretório de fornecedor <em>{$a->path}</em> contém várias bibliotecas de terceiros e respetivas dependências, tipicamente instaladas pelo PHP Composer. Pode ser necessário para o desenvolvimento local, tal como para instalar o framework PHPUnit assim como pode conter código potencialmente perigoso que expõe seu site a ataques remotos.</p><p>É altamente recomendável remover o diretório se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso exterior ao diretório.</p>';
+$string['check_vendordir_details'] = '<p>A diretoria <em>{$a->path}</em> contém várias bibliotecas de terceiros e suas dependências, normalmente instaladas pelo PHP Composer. Essas bibliotecas podem ser necessárias para o desenvolvimento local do Moodle, como por exemplo, para instalar o framework PHPUnit. Eles não são necessários para executar um site Moodle em produção e podem conter código potencialmente perigoso expondo seu site a ataques remotos.</p><p>É altamente recomendável remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso via web na configuração do seu servidor web.</p>';
 $string['check_vendordir_info'] = 'O diretório de fornecedor não deve estar presente em sites públicos.';
 $string['check_vendordir_name'] = 'Diretório de fornecedores';
 $string['check_webcron_details'] = '<p>Executar o cron pela Web pode expor informação privilegiada a utilizadores não identificados. É recomendado que o cron seja executado via CLI ou proteger a página do cron com uma senha.</p>';
@@ -130,6 +134,7 @@ $string['description'] = 'Descrição';
 $string['details'] = 'Detalhes';
 $string['issue'] = 'Assunto';
 $string['pluginname'] = 'Informação de segurança';
+$string['privacy:metadata'] = 'O módulo Informação de segurança não armazena dados pessoais.';
 $string['security:view'] = 'Ver relatório de segurança';
 $string['status'] = 'Estado';
 $string['statuscritical'] = 'Crítico';

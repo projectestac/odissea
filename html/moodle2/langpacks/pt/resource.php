@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,10 @@ $string['filterfilesexplain'] = 'Selecione quais os ficheiros a serem filtrados,
 $string['filtername'] = 'Hiperligações automáticas para nomes dos recursos';
 $string['forcedownload'] = 'Forçar descarga';
 $string['framesize'] = 'Largura da frame';
+$string['indicator:cognitivedepth'] = 'Compreensão do Ficheiro';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Ficheiro.';
+$string['indicator:socialbreadth'] = 'Socialização do Ficheiro';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Ficheiro.';
 $string['legacyfiles'] = 'Migração de ficheiro antigo de disciplina';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
@@ -96,6 +100,7 @@ $string['popupwidth'] = 'Largura da janela de pop-up (em pixeis)';
 $string['popupwidthexplain'] = 'Largura predefinida da janela de pop-up';
 $string['printintro'] = 'Mostrar descrição do recurso';
 $string['printintroexplain'] = 'Mostrar a descrição do recurso abaixo do conteúdo? Alguns modos de exibição não apresentam o nome do recurso, mesmo com esta configuração ativa.';
+$string['privacy:metadata'] = 'O módulo mod_resource não armazena qualquer dado pessoal.';
 $string['resource:addinstance'] = 'Adicionar um novo recurso';
 $string['resourcecontent'] = 'Ficheiros e subpastas';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

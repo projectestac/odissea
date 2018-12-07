@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_grading', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alldoneredirecting'] = '選択された問題すべてが評定されました。問題一覧に戻ります。';
-$string['alreadygraded'] = '評定済み';
+$string['alldoneredirecting'] = '選択された問題すべてが評定されました。問題リストに戻ります。';
+$string['alreadygraded'] = 'すでに評定済み';
 $string['alsoshowautomaticallygraded'] = '自動評定された問題も表示する';
 $string['attemptstograde'] = '評定する受験';
 $string['automaticallygraded'] = '自動評定済み';
@@ -36,7 +36,7 @@ $string['bystudentfirstname'] = '学生名順';
 $string['bystudentidnumber'] = '学籍番号順';
 $string['bystudentlastname'] = '学生姓順';
 $string['cannotgradethisattempt'] = 'この受験を評定できません。';
-$string['cannotloadquestioninfo'] = '問題情報を特定する問題タイプを読み込めませんでした。';
+$string['cannotloadquestioninfo'] = '問題タイプ固有の問題情報を読み込めませんでした。';
 $string['changeoptions'] = 'オプションを変更する';
 $string['essayonly'] = '以下の問題は手動評定する必要があります。';
 $string['grade'] = '評定';
@@ -65,12 +65,13 @@ $string['grading:viewstudentnames'] = '評定中、学生名を表示する';
 $string['hideautomaticallygraded'] = '自動評定された問題を隠す';
 $string['inprogress'] = '進行中';
 $string['invalidattemptid'] = 'そのような受験IDはありません。';
-$string['invalidquestionid'] = '評定できる問題 (ID {$a}) が見つかりませんでした。';
-$string['noquestionsfound'] = '手動評定問題は見つかりませんでした。';
+$string['invalidquestionid'] = '評定できるID {$a} の問題が見つかりませんでした。';
+$string['noquestionsfound'] = '手動評定問題が見つかりませんでした。';
 $string['nothingfound'] = '表示するものはありません。';
 $string['options'] = 'オプション';
 $string['orderattempts'] = '受験順';
 $string['pluginname'] = '手動評定';
+$string['privacy:metadata'] = '小テスト手動評定プラグインはどのような個人データも保存しません。データ自体を保存せずにデータを保存するユーザインターフェースを提供します。';
 $string['qno'] = 'Q #';
 $string['questionname'] = '問題名';
 $string['questionsperpage'] = '1ページあたりの問題数';

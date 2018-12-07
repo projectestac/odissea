@@ -23,8 +23,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
-        'core/custom_interaction_events', 'core/modal_backdrop', 'core/modal_events'],
-     function($, Templates, Notification, KeyCodes, CustomEvents, ModalBackdrop, ModalEvents) {
+        'core/custom_interaction_events', 'core/modal_backdrop', 'core/event', 'core/modal_events'],
+     function($, Templates, Notification, KeyCodes, CustomEvents, ModalBackdrop, Event, ModalEvents) {
 
     var SELECTORS = {
         CONTAINER: '[data-region="modal-container"]',
@@ -241,13 +241,7 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
     Modal.prototype.setTitle = function(value) {
         var title = this.getTitle();
 
-        if (typeof value === 'string') {
-            title.html(value);
-        } else {
-            value.then(function(content) {
-                return title.html(content);
-            });
-        }
+        this.asyncSet(value, title.html.bind(title));
     };
 
     /**
@@ -265,6 +259,8 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
         if (typeof value === 'string') {
             // Just set the value if it's a string.
             body.html(value);
+            Event.notifyFilterContentUpdated(body);
+            this.getRoot().trigger(ModalEvents.bodyRendered, this);
         } else {
             var jsPendingId = 'amd-modal-js-pending-id-' + this.getModalCount();
             M.util.js_pending(jsPendingId);
@@ -341,6 +337,8 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
                         this.bodyJS = js;
                     }
                 }
+                Event.notifyFilterContentUpdated(body);
+                this.getRoot().trigger(ModalEvents.bodyRendered, this);
 
                 return result;
             }.bind(this))
@@ -360,7 +358,8 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
     };
 
     /**
-     * Set the modal footer element.
+     * Set the modal footer element. The footer element is made visible, if it
+     * isn't already.
      *
      * This method is overloaded to take either a string
      * value for the body or a jQuery promise that is resolved with HTML and Javascript
@@ -370,6 +369,9 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
      * @param {(string|object)} value The footer string or jQuery promise
      */
     Modal.prototype.setFooter = function(value) {
+        // Make sure the footer is visible.
+        this.showFooter();
+
         var footer = this.getFooter();
 
         if (typeof value === 'string') {
@@ -396,6 +398,34 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
                 }.bind(this));
             }.bind(this));
         }
+    };
+
+    /**
+     * Check if the footer has any content in it.
+     *
+     * @method hasFooterContent
+     * @return {bool}
+     */
+    Modal.prototype.hasFooterContent = function() {
+        return this.getFooter().children().length ? true : false;
+    };
+
+    /**
+     * Hide the footer element.
+     *
+     * @method hideFooter
+     */
+    Modal.prototype.hideFooter = function() {
+        this.getFooter().addClass('hidden');
+    };
+
+    /**
+     * Show the footer element.
+     *
+     * @method showFooter
+     */
+    Modal.prototype.showFooter = function() {
+        this.getFooter().removeClass('hidden');
     };
 
     /**
@@ -510,6 +540,12 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
             return;
         }
 
+        if (this.hasFooterContent()) {
+            this.showFooter();
+        } else {
+            this.hideFooter();
+        }
+
         if (!this.isAttached) {
             this.attachToDOM();
         }
@@ -536,10 +572,6 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
      * @method hide
      */
     Modal.prototype.hide = function() {
-        if (!this.isVisible()) {
-            return;
-        }
-
         this.getBackdrop().done(function(backdrop) {
             if (!this.countOtherVisibleModals()) {
                 // Hide the backdrop if we're the last open modal.
@@ -686,6 +718,31 @@ define(['jquery', 'core/templates', 'core/notification', 'core/key_codes',
             this.hide();
             data.originalEvent.preventDefault();
         }.bind(this));
+    };
+
+    /**
+     * Set or resolve and set the value using the function.
+     *
+     * @method asyncSet
+     * @param {(string|object)} value The string or jQuery promise.
+     * @param {function} setFunction The setter
+     * @return {Promise}
+     */
+    Modal.prototype.asyncSet = function(value, setFunction) {
+        var p = value;
+        if (typeof value !== 'object' || !value.hasOwnProperty('then')) {
+            p = $.Deferred();
+            p.resolve(value);
+        }
+
+        p.then(function(content) {
+            setFunction(content);
+
+            return;
+        })
+        .fail(Notification.exception);
+
+        return p;
     };
 
     return Modal;

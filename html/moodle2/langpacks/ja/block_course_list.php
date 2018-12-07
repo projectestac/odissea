@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_list', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['course_list:myaddinstance'] = '新しいコースブロックをダッ�
 $string['hideallcourseslink'] = '「すべてのコース」リンクを隠す';
 $string['owncourses'] = '管理者は自分のコースのみ閲覧可';
 $string['pluginname'] = 'コース';
+$string['privacy:metadata'] = 'コースブロックはコースに関するデータのみ表示します。データ自体を保存することはありません。';

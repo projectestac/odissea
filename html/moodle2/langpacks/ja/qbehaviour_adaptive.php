@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_adaptive', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_adaptive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['gradingdetailswithpenalty'] = 'この送信の評点は {$a->raw}/{$a->
 $string['gradingdetailswithtotalpenalty'] = 'この送信の評点は {$a->raw}/{$a->max} です。この送信からペナルティ {$a->penalty} 点が引かれます。現在のペナルティ合計は {$a->totalpenalty} です。';
 $string['notcomplete'] = '未完了';
 $string['pluginname'] = 'アダプティブモード';
+$string['privacy:metadata'] = 'アダプティブモード問題動作プラグインはどのような個人データも保存しません。';

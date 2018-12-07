@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,15 +36,16 @@ $string['formatnoinline'] = 'Kein Textfeld';
 $string['formatplain'] = 'Unformatierter Text';
 $string['graderinfo'] = 'Information zur Bewertung';
 $string['graderinfoheader'] = 'Bewerterinformation';
-$string['mustattach'] = 'Wenn \'Kein Textfeld\' ausgewählt wurde, oder Antworten optional sind, muss mindestens ein Dateianhang zugelassen werden.';
-$string['mustrequire'] = 'Wenn \'Kein Textfeld\' ausgewählt wurde, oder Antworten optional sind, ist mindestens ein Dateianhang erforderlich.';
+$string['mustattach'] = 'Wenn \'Kein Textfeld\' ausgewählt wurde oder Antworten optional sind, muss mindestens ein Dateianhang zugelassen werden.';
+$string['mustrequire'] = 'Wenn \'Kein Textfeld\' ausgewählt wurde oder Antworten optional sind, ist mindestens ein Dateianhang erforderlich.';
 $string['mustrequirefewer'] = 'Sie können nicht mehr Dateianhänge als erforderlich festlegen als zugelassen sind.';
 $string['nlines'] = '{$a} Zeilen';
 $string['pluginname'] = 'Freitext';
 $string['pluginnameadding'] = 'Freitextfrage hinzufügen';
 $string['pluginnameediting'] = 'Freitextfrage bearbeiten';
-$string['pluginname_help'] = 'Teilnehmer/innen erstellen zur Beantwortung der Frage einen oder zwei Textabsätze. Die Bewertung erfolgt durch die Trainer/innen manuell und wird erst danach den Teilnehmer/innen angezeigt.';
-$string['pluginnamesummary'] = 'Erlaubt eine Antwort von einigen Sätzen oder Absätzen. Diese muss manuell bewertet werden.';
+$string['pluginname_help'] = 'Teilnehmer/innen laden zur Beantwortung der Frage eine oder mehrere Dateien hoch oder erstellen einen Text. Eine Antwortvorlage kann bereitgestellt werden. Die Bewertung erfolgt durch die Trainer/innen manuell und wird danach den Teilnehmer/innen angezeigt.';
+$string['pluginnamesummary'] = 'Eine Freitextantwort erlaubt eine Antwort als Datei und/oder als Onlinetext. Diese Antwort muss manuell bewertet werden.';
+$string['privacy:metadata'] = 'Das Essay-Frage Frageformat Plugin speichert keine persönlichen Daten.';
 $string['responsefieldlines'] = 'Größe des Eingabefeldes';
 $string['responseformat'] = 'Antwortformat';
 $string['responseisrequired'] = 'Teilnehmer/in muss Text eingeben';

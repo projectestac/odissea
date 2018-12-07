@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_loglive', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,6 @@ $string['loglive:view'] = 'Ver registos de atividade em tempo real';
 $string['nologreaderenabled'] = 'Nenhum leitor de registos ativado';
 $string['pause'] = 'Suspender atualizações em tempo real';
 $string['pluginname'] = 'Registos de atividade em tempo real';
+$string['privacy:metadata'] = 'O módulo Registos de atividade em tempo real não armazena dados pessoais.';
 $string['resume'] = 'Retomar atualizações em tempo real';
 $string['selectlogreader'] = 'Selecione o leitor de registos';

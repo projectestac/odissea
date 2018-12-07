@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_areafiles', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_areafiles', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_areafiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['areafiles:view'] = 'View repository Embedded files';
 $string['configplugin'] = 'Configuration for repository Embedded files';
 $string['pluginname'] = 'Embedded files';
 $string['pluginname_help'] = 'Files embedded in the current text editor';
+$string['privacy:metadata'] = 'The Embedded files repository plugin does not store or transmit any personal data.';

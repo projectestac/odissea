@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_mathjaxloader', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_mathjaxloader
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ Isto pode ser útil para economizar largura de banda ou por causa das restriçõ
 Para utilizar uma instalação local do MathJax, primeiro descarregue a biblioteca MathJax completa a partir de http://www.mathjax.org/. Em seguida, instale-o num servidor web. Por fim, atualize as configurações de filtro MathJax httpurl e/ou httpsurl para apontar para o MathJax.js URL local.';
 $string['mathjaxsettings'] = 'Configuração MathJax';
 $string['mathjaxsettings_desc'] = 'A configuração predefinida do MathJax deve adequar-se à maioria dos utilizadores, no entanto, o MathJax é altamente configurável e qualquer uma das opções de configuração predefinida do MathJax podem ser adicionadas aqui.';
+$string['privacy:metadata'] = 'O módulo MathJax não armazena dados pessoais.';
 $string['texfiltercompatibility'] = 'Compatibilidade do filtro TeX';
 $string['texfiltercompatibility_help'] = 'O filtro MathJax pode ser utilizado como um substituto para o filtro de notação Tex.
 

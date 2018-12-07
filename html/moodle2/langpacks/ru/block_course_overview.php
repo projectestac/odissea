@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_overview', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,16 +32,8 @@ $string['configotherexpanded'] = 'При включенном параметре
 $string['configpreservestates'] = 'При включенном параметре сохраняется выбранное пользователем состояние «свернуто/развернуто» и используется при каждой загрузке.';
 $string['course_overview:addinstance'] = 'Добавлять новый блок «Сводка по курсам»';
 $string['course_overview:myaddinstance'] = 'Добавлять новый блок «Сводка по курсам» на страницу «Личный кабинет»';
-$string['defaultmaxcourses'] = 'Максимум курсов по умолчанию';
-$string['defaultmaxcoursesdesc'] = 'Максимум курсов, которые могут отображаться в блоке «Сводка по курсам». Если 0, то будут показаны все курсы.';
 $string['expandall'] = 'Развернуть весь список курсов';
-$string['forcedefaultmaxcourses'] = 'Принудительный максимум курсов';
-$string['forcedefaultmaxcoursesdesc'] = 'При установленном параметре пользователь не сможет изменить свою личную настройку';
 $string['fullpath'] = 'Все категории и подкатегории';
-$string['hiddencoursecount'] = 'У Вас есть скрытые курсы - {$a}';
-$string['hiddencoursecountplural'] = 'У Вас есть скрытые курсы - {$a}';
-$string['hiddencoursecountwithshowall'] = 'У Вас есть {$a->coursecount} скрытый курс ({$a->showalllink})';
-$string['hiddencoursecountwithshowallplural'] = 'У Вас есть скрытые курсы ({$a->coursecount}) - ({$a->showalllink})';
 $string['message'] = 'сообщение';
 $string['messages'] = 'сообщения';
 $string['moveafterhere'] = 'Переместить {$a->movingcoursename} после курса {$a->currentcoursename}';
@@ -53,17 +45,14 @@ $string['none'] = 'Не отображать';
 $string['numtodisplay'] = 'Количество отображаемых курсов:';
 $string['onlyparentname'] = 'Только родительская категория';
 $string['otherexpanded'] = 'Другие курсы развернуты';
-$string['pluginname'] = 'Сводка по курсам';
+$string['pluginname'] = 'Сводка по курсам (устаревший)';
 $string['preservestates'] = 'Сохранить развернутое состояние';
 $string['shortnameprefix'] = 'Включает {$a}';
 $string['shortnamesufixprural'] = '({$a} и др.)';
 $string['shortnamesufixsingular'] = '({$a} и др.)';
 $string['showcategories'] = 'Отображение категорий';
 $string['showcategoriesdesc'] = 'Нужно ли под каждым курсом отображать категорию?';
-$string['showchildren'] = 'Показать дочерние';
-$string['showchildrendesc'] = 'Должны ли под названием основного курса быть перечислены дочерние курсы?';
-$string['showwelcomearea'] = 'Показать область приветствия';
-$string['showwelcomeareadesc'] = 'Показать область приветствия над списком курсов?';
+$string['title'] = 'Сводка по курсам';
 $string['view_edit_profile'] = '(Просмотр и редактирование своего профиля.)';
 $string['welcome'] = 'Добро пожаловать {$a}';
 $string['youhavemessages'] = 'У Вас есть непрочитанные {$a}';

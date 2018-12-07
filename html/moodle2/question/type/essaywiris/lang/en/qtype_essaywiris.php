@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Like the standard Essay question, but you can deli
 $string['pluginnamesummary'] = 'Like the standard Essay question, but you can deliver different question text by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['pluginnameadding'] = 'Adding an essay - math & science question by WIRIS';
 $string['pluginnameediting'] = 'Editing an essay - math & science question by WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

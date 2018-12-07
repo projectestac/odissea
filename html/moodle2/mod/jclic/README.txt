@@ -92,6 +92,6 @@ Special Thanks:
 
 
 -----------------------------------------------------------------------------
-[1] http://clic.xtec.cat/
+[1] https://clic.xtec.cat/
 [2] http://www.gencat.cat/ensenyament
 

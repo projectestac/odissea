@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -356,6 +356,7 @@ $string['invalidsourcefield'] = 'El campo de origen del archivo borrador es inv�
 $string['invalidstatedetected'] = 'Algo ha salido mal: {$a}. Esto normalmente no debería suceder.';
 $string['invalidurl'] = 'URL no válida';
 $string['invaliduser'] = 'Usuario no válido';
+$string['invaliduserdata'] = 'Datos de usuario no válidos: {$a}';
 $string['invaliduserfield'] = 'Campo de usuario no válido: {$a}';
 $string['invaliduserid'] = 'Id de usuario no válido';
 $string['invalidusername'] = 'El nombre de usuario indicado contiene caracteres no válidos';
@@ -376,6 +377,7 @@ $string['loginasnoenrol'] = 'No puede usar matricular o desmatricular cuando est
 $string['loginasonecourse'] = 'No puede entrar a este curso.<br /> Debe terminar la sesión "Entrar como" antes de entrar a cualquier otro curso.';
 $string['maxareabytes'] = 'Este archivo es mayor que el espacio  disponible en este área.';
 $string['maxbytes'] = 'El tamaño de este archivo supera el máximo permitido.';
+$string['maxbytesfile'] = 'El archivo {$a->file} es demasiado grande. El tamaño de subida máximo es {$a->size}.';
 $string['messagingdisable'] = 'El envío de mensajes esta deshabilitado en este sitio';
 $string['mimetexisnotexist'] = 'Su sistema no está configurado para ejecutar mimeTeX. Usted necesita descargar el ejecutable adecuado para su plataforma PHP_OS de <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>, o obtener el código fuente C de <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>, compilarlo y colocar el ejecutable dentro de su directorio moodle/filter/tex/';
 $string['mimetexnotexecutable'] = 'MimeTeX personalizado no es ejecutable!';
@@ -441,6 +443,7 @@ $string['nopermissiontoviewletergrade'] = 'Le falta permisos para revisar las ca
 $string['nopermissiontoviewpage'] = 'No está autorizado a ver esta página';
 $string['nosite'] = 'No se puede encontrar un curso de nivel superior!';
 $string['nositeid'] = 'No existe ID del sitio';
+$string['nostartdatenoenddate'] = 'Solamente se puede establecer una fecha de finalización del curso si se ha establecido una fecha de inicio.';
 $string['nostatstodisplay'] = 'Lo sentimos, no hay datos disponibles para mostrar';
 $string['notallowedtoupdateprefremotely'] = 'No está autorizado para actualizar esta preferencia de usuario de forma remota';
 $string['notavailable'] = 'No disponible en este momento';
@@ -504,6 +507,7 @@ $string['statsnodata'] = 'No hay datos disponibles para esa combinación de curs
 $string['storedfilecannotcreatefile'] = 'No se puede crear el archivo local, verifique los permisos del área de datos y el espacio en disco disponible.';
 $string['storedfilecannotcreatefiledirs'] = 'No se puede crear directorios \'pool\' de archivos locales, por favor verifique los permisos en dataroot.';
 $string['storedfilecannotread'] = 'No se puede leer el archivo, ya sea el archivo no existe o hay problemas de permisos';
+$string['storedfilecannotreadfile'] = 'No se pudo leer el archivo \'{$a}\'. O bien el archivo no existe o bien hay un problema de permisos.';
 $string['storedfilenotcreated'] = 'No se puede crear el archivo "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
 $string['storedfileproblem'] = 'Excepción desconocida relacionadas con los archivos locales ({$a})';
 $string['tagdisabled'] = 'Las etiquetas están deshabilitadas';
@@ -558,6 +562,7 @@ $string['usernotaddederror'] = 'No se agregó el usuario - error desconocido';
 $string['usernotaddedregistered'] = 'No se agregó el usuario - ya está registrado';
 $string['usernotavailable'] = 'Usted no puede acceder a los detalles de este usuario';
 $string['usernotdeletedadmin'] = 'Usuario no eliminado - no se pueden eliminar las cuentas de los administradores';
+$string['usernotdeleteddeleted'] = 'Ese usuario ya ha sido borrado.';
 $string['usernotdeletederror'] = 'Usuario no eliminado: error';
 $string['usernotdeletedmissing'] = 'Usuario no eliminado: no se encontró el nombre de usuario.';
 $string['usernotdeletedoff'] = 'Usuario no eliminado: eliminación no permitida.';

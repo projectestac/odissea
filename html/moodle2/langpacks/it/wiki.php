@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,6 +121,10 @@ $string['incorrectdeleteversions'] = 'Le versioni delle pagine che si desidera e
 $string['incorrectpageid'] = 'L\'ID della pagina non è corretto.';
 $string['incorrectsubwikiid'] = 'L\'ID del subwiki non è corretto.';
 $string['incorrectwikiid'] = 'L\'ID del wiki non è corretto.';
+$string['indicator:cognitivedepth'] = 'Wiki cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'wiki\'.';
+$string['indicator:socialbreadth'] = 'Wiki sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'wiki\'.';
 $string['individualpagedoesnotexist'] = 'La pagina wiki individuale non esiste';
 $string['insertcomment'] = 'Inserisci commento';
 $string['insertimage'] = 'Inserisci un\'immagine...';
@@ -128,7 +132,7 @@ $string['insertimage_help'] = 'Questo menu a discesa consente l\'inserimento di 
 $string['invalidlock'] = 'Al momento la pagina è bloccata da un altro utente.';
 $string['invalidparameters'] = 'E\' stato dato un parametro non valido.';
 $string['invalidsection'] = 'Sezione non valida';
-$string['invalidsesskey'] = 'La Sesskey fornita non è valida. per favore inviare nuovamente i dati.';
+$string['invalidsesskey'] = 'La tua sessione è probabilmente terminata. Per favore annota le modifiche e autenticati nuovamente.';
 $string['javascriptdisabledlocks'] = 'Nel tuo browser Javascript è disabilitato. Le modifiche effettuate potrebbero non essere salvate correttamente.';
 $string['links'] = 'Link';
 $string['listall'] = 'Elenca tutte';
@@ -236,7 +240,6 @@ $string['special'] = 'Speciale';
 $string['tableofcontents'] = 'Indice';
 $string['tagarea_wiki_pages'] = 'Pagine wiki';
 $string['tagsdeleted'] = 'I tag wiki sono stati eliminati';
-$string['tagtitle'] = 'Vedi il tag {$a}"';
 $string['teacherrating'] = 'Valutazione del docente';
 $string['timesrating'] = 'Questa pagina è stata valutata {$a->c} volte con una media di: {$a->s}';
 $string['updatedpages'] = 'Pagine aggiornate';

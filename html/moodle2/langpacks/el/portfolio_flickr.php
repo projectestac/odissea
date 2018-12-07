@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_flickr', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['isfamily'] = 'Εμφάνιση στην οικογένεια';
 $string['isfriend'] = 'Εμφάνιση σε φίλους';
 $string['ispublic'] = 'Δημόσιο (όλοι μπορούν τα το δουν)';
 $string['moderate'] = 'Επίβλεψη';
-$string['noauthtoken'] = 'Αδυναμία λήψης αδειοπλαισίου αυθεντικοποίησης για χρήση σε αυτή τη συνεδρία';
+$string['noauthtoken'] = 'Αποτυχία λήψης τεκμηρίου πιστοποίησης για χρήση σε αυτή τη σύνοδο';
 $string['other'] = 'Καλλιτεχνικές, Εικονογραφίες, CGI, ή άλλες μη-φωτογραφικές εικόνες';
 $string['photo'] = 'Φωτογραφίες';
 $string['pluginname'] = 'Σύστημα διαδικτυακής διαχείρισης φωτογραφιών Flickr';

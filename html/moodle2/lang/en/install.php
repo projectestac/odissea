@@ -48,7 +48,7 @@ $string['cliinstallfinished'] = 'Installation completed successfully.';
 $string['cliinstallheader'] = 'Moodle {$a} command line installation program';
 $string['climustagreelicense'] = 'In non interactive mode you must agree to license by specifying --agree-license option';
 $string['cliskipdatabase'] = 'Skipping database installation.';
-$string['clitablesexist'] = 'Database tables already present, cli installation can not continue.';
+$string['clitablesexist'] = 'Database tables already present; CLI installation cannot continue.';
 $string['compatibilitysettings'] = 'Checking your PHP settings ...';
 $string['compatibilitysettingshead'] = 'Checking your PHP settings ...';
 $string['compatibilitysettingssub'] = 'Your server should pass all these tests to make Moodle run properly';
@@ -194,7 +194,6 @@ $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Now you need to configure the database where most Moodle data will be stored.
 This database must already have been created and a username and password created to access it. Table prefix is mandatory.';
 $string['nativesqlsrvnodriver'] = 'Microsoft Drivers for SQL Server for PHP are not installed or not configured properly.';
-$string['nativesqlsrvnonwindows'] = 'Microsoft Drivers for SQL Server for PHP are available only for Windows OS.';
 $string['ociextensionisnotpresentinphp'] = 'PHP has not been properly configured with the OCI8 extension so that it can communicate with Oracle.  Please check your php.ini file or recompile PHP.';
 $string['pass'] = 'Pass';
 $string['paths'] = 'Paths';

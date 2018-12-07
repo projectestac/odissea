@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_censor', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_censor', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_censor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'merde, enculé, bite, couille, pute, putain, niquer, gode, godemichet, nègre';
 $string['filtername'] = 'Caviardage';
+$string['privacy:metadata'] = 'Le plugin Caviardage n\'enregistre aucune donnée personnelle.';

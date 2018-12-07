@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'Configureer databank aanmeldinstanties';
 $string['database:unenrol'] = 'Verwijder geschorste gebruikers uit cursus';
 $string['dbencoding'] = 'Databank encodering';
 $string['dbhost'] = 'Databank host';
-$string['dbhost_desc'] = 'Type databankserver, IP-adres of hostnaam. Gebruik een systeem DSN naam als je ODBC gebruikt.';
+$string['dbhost_desc'] = 'Type databankserver, IP-adres of hostnaam. Gebruik een systeem DSN naam als je ODBC gebruikt. Gebruik een PDO DSN als je PDO gebruikt.';
 $string['dbname'] = 'Databanknaam';
 $string['dbname_desc'] = 'Laat leeg als je een DSN naam in database host gebruikt.';
 $string['dbpass'] = 'Databank wachtwoord';
@@ -60,6 +60,7 @@ $string['newcoursetable'] = 'Tabel voor nieuwe cursussen';
 $string['newcoursetable_desc'] = 'Geef de naam van de tabel op die de lijst met cursussen bevat die automatisch gecreëerd zou moeten worden. Leeg betekent dat er geen cursussen gemaakt zijn.';
 $string['pluginname'] = 'Externe databank';
 $string['pluginname_desc'] = 'Je kunt nagenoeg gelijk welke externe databank gebruiken om je aanmeldingen te controleren. Je externe databank moet minstens een veld bevatten met course ID en een veld met user ID. Deze worden vergeleken met velden die je kiest in de lokale cursus en gebruikerstabellen.';
+$string['privacy:metadata'] = 'De externe databank aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['remotecoursefield'] = 'Extern cursusveld';
 $string['remotecoursefield_desc'] = 'De veldnaam uit de externe tabel die we gebruiken om records in de cursustabel te koppelen.';
 $string['remoteenroltable'] = 'Externe aanmeldingstabel';

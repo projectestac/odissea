@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_group', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['description'] = 'Criterio di accesso basato sull\'appartenenza a gruppi
 $string['error_selectgroup'] = 'Devi selezionare un gruppo';
 $string['missing'] = '(Gruppo mancante)';
 $string['pluginname'] = 'Criterio basato sul gruppo';
+$string['privacy:metadata'] = 'l plugin "criterio di accesso basato sul gruppo" non memorizza dati personali.';
 $string['requires_anygroup'] = 'Appartenere a qualsiasi gruppo';
 $string['requires_group'] = 'Appartenere al gruppo <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'Non appartenere a nessun gruppo';

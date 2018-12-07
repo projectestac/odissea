@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,7 @@ $string['deletegroupsconfirm'] = 'Ziur al zaude ondorengo taldeak ezabatu nahi d
 $string['deleteselectedgroup'] = 'Ezabatu aukeratutako taldea';
 $string['editgroupingsettings'] = 'Editatu taldekatze-ezarpenak';
 $string['editgroupsettings'] = 'Editatu talde-ezarpenak';
+$string['editusersgroupsa'] = 'Editatu taldeak "{$a}"-(r)entzat';
 $string['enrolmentkey'] = 'Matrikulazio-giltza';
 $string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-giltza hau beste talde baterako erabiltzen ari da jada.';
 $string['enrolmentkey_help'] = 'Matrikulazio-giltzek talde baterako sarbidea pasahitza ezagutzen dutenei mugatzeko aukera ematen dute. Matrikulazio-giltza bat zehaztuz gero, giltza sartuz gero erabiltzailea ikastaroan sartzeaz gain, talde horretako kide ere bihurtuko du.
@@ -111,11 +112,11 @@ $string['groupmodeforce'] = 'Behartu talde-modua';
 $string['groupmodeforce_help'] = 'Taldea modua behartuta badago, ikastaroko taldea modua aplikatuko zaio ikastaroko edozein jarduerari. Jarduera bakoitzeko taldea modua ezarpenari ez zaio jaramonik egingo.';
 $string['groupmode_help'] = 'Hiru aukera dago:
 
-Talderik ez - Ez dago talderik eta partaide guztiak batera ari dira talde bakarrean
-Taldeek ezin elkar ikusi - Ikasle bakoitzak bere taldea baino ezin du ikusi; gainerakoak ezin ditu ikusi
-Taldeek elkar ikusten dute - Ikasle bakoitzak bere taldean egiten du lan baina gainerakoetan zertan ari diren ikusten du
+* Talderik ez
+* Taldeek ezin elkar ikusi - taldekide bakoitzak bere taldea baino ezin du ikusi; gainerakoak ezin ditu ikusi
+* Taldeek elkar ikusten dute - taldekide bakoitzak bere taldean egiten du lan baina gainerakoak ere ikusten ditu
 
-Ikastaro mailan definitutako taldea modua izango da berezko modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere ezar daiteke taldea modua, baina ikastaro mailan taldea modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren taldea modua ezarpenari.';
+Ikastaro mailan definitutako taldea modua izango da berezko modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere taldea modua ezarri daiteke, baina ikastaro mailan taldea modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren taldea modua ezarpenari.';
 $string['groupmy'] = 'Neure taldea';
 $string['groupname'] = 'Taldearen izena';
 $string['groupnameexists'] = 'Dagoeneko bada ikastaro honetan \'{$a}\' izeneko taldea; mesedez, aukeratu beste bat.';
@@ -173,6 +174,10 @@ $string['overview'] = 'Ikuspegi orokorra';
 $string['potentialmembers'] = 'Balizko kideak: {$a}';
 $string['potentialmembs'] = 'Balizko kideak';
 $string['printerfriendly'] = 'Taldekatzea inprimatzeko formatuan erakutsi';
+$string['privacy:metadata:groups'] = 'Talde-partaidetzen erregistroa.';
+$string['privacy:metadata:groups:groupid'] = 'Taldearen IDa.';
+$string['privacy:metadata:groups:timeadded'] = 'Erabiltzailea taldera gehitu zeneko unea.';
+$string['privacy:metadata:groups:userid'] = 'Taldera lotutako erabiltzailearen IDa.';
 $string['random'] = 'Ausaz';
 $string['removefromgroup'] = 'Ezabatu erabitlzailea {$a} taldetik';
 $string['removefromgroupconfirm'] = 'Benetan ezabatu nahi al duzu "{$a->user}" erabiltzailea "{$a->group}" taldetik?';

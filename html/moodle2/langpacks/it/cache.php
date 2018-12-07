@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cache', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,7 @@ $string['cachedef_calendar_subscriptions'] = 'Sottoscrizioni calendario';
 $string['cachedef_capabilities'] = 'Elenco capacità del sistema';
 $string['cachedef_completion'] = 'Stato di completamento attività';
 $string['cachedef_config'] = 'Impostazioni di configurazione';
+$string['cachedef_contextwithinsights'] = 'Contesti con considerazioni';
 $string['cachedef_coursecat'] = 'Elenchi di categorie di corso per un utente specifico';
 $string['cachedef_coursecatrecords'] = 'Record delle categorie di corso';
 $string['cachedef_coursecattree'] = 'Alberatura delle categorie di corso';
@@ -47,6 +48,7 @@ $string['cachedef_coursemodinfo'] = 'Informazioni accumulate sui moduli e delle 
 $string['cachedef_databasemeta'] = 'Meta informazioni database';
 $string['cachedef_eventinvalidation'] = 'Event invalidation';
 $string['cachedef_externalbadges'] = 'Badge esterni per utente specifico';
+$string['cachedef_fontawesomeiconmapping'] = 'Mappatura icone per font awesone';
 $string['cachedef_grade_categories'] = 'Query sulle categorie di valutazioni';
 $string['cachedef_groupdata'] = 'Informazioni sui gruppi dei corsi';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier . contenuto ripulito';
@@ -61,11 +63,13 @@ $string['cachedef_plugin_manager'] = 'Gestore informazioni plugin';
 $string['cachedef_postprocessedcss'] = 'CSS post processati';
 $string['cachedef_questiondata'] = 'Definizioni domanda';
 $string['cachedef_repositories'] = 'Dati delle istanze dei repository';
+$string['cachedef_roledefs'] = 'Definizioni dei ruoli';
 $string['cachedef_string'] = 'Cache stringhe della lingua';
 $string['cachedef_suspended_userids'] = 'Elenco degli utenti sospesi nei corsi';
 $string['cachedef_tagindexbuilder'] = 'Risultati della ricerca per elementi con tag';
 $string['cachedef_tags'] = 'Aree e raccolte di tag';
 $string['cachedef_temp_tables'] = 'Cache delle tabelle temporanee';
+$string['cachedef_user_group_groupings'] = 'Gruppi e raggruppamenti dell\'utente suddivisi per corso';
 $string['cachedef_userselections'] = 'Dati utilizzati per rendere persistenti le selezioni dell\'utente in Moodle';
 $string['cachedef_yuimodules'] = 'Definizioni moduli YUI';
 $string['cachelock_file_default'] = 'File locking di default';
@@ -145,7 +149,7 @@ $string['sharing_input'] = 'Chiave personalizzata (da inserire sotto)';
 $string['sharingrequired'] = 'Devi scegliere almeno un\'opzione di condivisione';
 $string['sharingselected_all'] = 'Tutti.';
 $string['sharingselected_input'] = 'Chiave personalizzata';
-$string['sharingselected_siteid'] = 'Site identifier';
+$string['sharingselected_siteid'] = 'Identificativo del sito';
 $string['sharingselected_version'] = 'Versione';
 $string['sharing_siteid'] = 'Siti con stesso site identifier';
 $string['sharing_version'] = 'Siti con la stessa versione';

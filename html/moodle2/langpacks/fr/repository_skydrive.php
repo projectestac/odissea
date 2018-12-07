@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_skydrive', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_skydrive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,11 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cachedef_foldername'] = 'Nom du dossier cache';
 $string['clientid'] = 'ID client';
-$string['configplugin'] = 'Configurer Microsoft OneDrive';
+$string['configplugin'] = 'Configurer Microsoft OneDrive (obsolète)';
+$string['deprecatedwarning'] = 'Avertissement : l\'API utilisée par ce plugin de dépôt a été rendue obsolète par Microsoft et ne fonctionnera plus prochainement. Veuillez migrer vers le nouveau dépôt « Microsoft OneDrive ».';
 $string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez enregistrer votre site <a href="https://account.live.com/developers/applications/">chez Microsoft</a>.</p>
 <p>Au cours du processus d\'enregistrement, vous devrez saisir l\'URL suivante sous « Domaine de redirection »:</p>
 <p>{$a->callbackurl}</p>
 <p>Une fois l\'enregistrement effectué, un ID client et un secret vous seront fournis, que vous pourrez saisir dans ce formulaire.</p>';
-$string['pluginname'] = 'Microsoft OneDrive';
+$string['pluginname'] = 'Microsoft OneDrive (obsolète)';
+$string['privacy:metadata'] = 'Le plugin de dépôt Microsoft OneDrive (obsolète) n\'enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
 $string['secret'] = 'Secret';
-$string['skydrive:view'] = 'Consulter un dépôt OneDrive';
+$string['skydrive:view'] = 'Consulter OneDrive (obsolète)';

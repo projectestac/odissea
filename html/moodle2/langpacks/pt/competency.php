@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'competency', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,7 +61,7 @@ $string['eventcompetencyframeworkupdated'] = 'Quadro de competências atualizado
 $string['eventcompetencyframeworkviewed'] = 'Quadro de competências visualizado.';
 $string['eventcompetencyupdated'] = 'Competência atualizada.';
 $string['eventcompetencyviewed'] = 'Competência visualizada.';
-$string['eventevidencecreated'] = 'Evidência criada.';
+$string['eventevidencecreated'] = 'Comprovativo criado.';
 $string['eventplanapproved'] = 'Plano de aprendizagem aprovado.';
 $string['eventplancompleted'] = 'Plano de aprendizagem concluído.';
 $string['eventplancreated'] = 'Plano de aprendizagem criado.';
@@ -102,7 +102,7 @@ $string['evidence_evidenceofpriorlearningunlinked'] = 'O comprovativo de aprendi
 $string['evidence_manualoverride'] = 'A avaliação da competência foi configurada manualmente.';
 $string['evidence_manualoverrideincourse'] = 'A avaliação da competência foi configurada manualmente na disciplina \'{$a}\'.';
 $string['evidence_manualoverrideinplan'] = 'A avaliação da competência foi configurada manualmente no plano de aprendizagem \'{$a}\'.';
-$string['invalidevidencedesc'] = 'Descrição inválida da evidência';
+$string['invalidevidencedesc'] = 'Descrição inválida do comprovativo';
 $string['invalidgrade'] = 'Avaliação inválida';
 $string['invalidpersistent'] = 'Persistente inválida';
 $string['invalidpersistenterror'] = 'Erro: {$a}';
@@ -115,6 +115,55 @@ $string['planstatusdraft'] = 'Rascunho';
 $string['planstatusinreview'] = 'Em revisão';
 $string['planstatuswaitingforreview'] = 'À espera de revisão';
 $string['pointsrequiredaremet'] = 'Foram cumpridos os pontos necessários';
+$string['privacy:evidence:action:complete'] = 'Completar competência se não avaliada';
+$string['privacy:evidence:action:log'] = 'Registo de ação';
+$string['privacy:evidence:action:override'] = 'Sobrepor avaliação da competência';
+$string['privacy:metadata:competency'] = 'O registo das competências';
+$string['privacy:metadata:competency_coursecomp'] = 'O registo de competências ligadas a uma disciplina';
+$string['privacy:metadata:competency_coursecompsetting'] = 'O registo das configurações de competências numa disciplina';
+$string['privacy:metadata:competency_evidence'] = 'O registo do comprovativo a afetar o estado da competancia';
+$string['privacy:metadata:competency_framework'] = 'O registo de quadros de competência';
+$string['privacy:metadata:competency_modulecomp'] = 'O registo de competência ligadas a um módulo';
+$string['privacy:metadata:competency_plan'] = 'O registo de planos de aprendizagem';
+$string['privacy:metadata:competency_plancomp'] = 'O resisto de competências num plano de aprendizagem';
+$string['privacy:metadata:competency_relatedcomp'] = 'Registo da relação entre competências';
+$string['privacy:metadata:competency_template'] = 'Registo de modelos de planos de aprendizagem';
+$string['privacy:metadata:competency_templatecohort'] = 'O registo de grupos associados ao modelo de plano de aprendizagem';
+$string['privacy:metadata:competency_templatecomp'] = 'O registo de competências num modelo de plano de aprendizagem';
+$string['privacy:metadata:competency_usercomp'] = 'O registo do estado da competência de um utilizador';
+$string['privacy:metadata:competency_usercompcourse'] = 'O registo do estado da competência de um utilizador numa disicplina';
+$string['privacy:metadata:competency_usercompplan'] = 'O registo do estado da competência num plano de aprendizagem';
+$string['privacy:metadata:competency_userevidence'] = 'O registo do comprovativo de aprendizagem anterior';
+$string['privacy:metadata:competency_userevidencecomp'] = 'O registo de competências associadas ao comprovativo de aprendizagem anterior';
+$string['privacy:metadata:core_comments'] = 'Comentários feitos nos planos de aprendizagem e competências';
+$string['privacy:metadata:evidence:action'] = 'O tipo de ação realizada com o comprovativo';
+$string['privacy:metadata:evidence:actionuserid'] = 'O utilizador a executar a ação';
+$string['privacy:metadata:evidence:desca'] = 'Os parâmetros opcionais da descrição do comprovativo conversível';
+$string['privacy:metadata:evidence:desccomponent'] = 'O componente da descrição do comprovativo conversível';
+$string['privacy:metadata:evidence:descidentifier'] = 'O identificador da descrição do comprovativo conversível';
+$string['privacy:metadata:evidence:grade'] = 'A avaliação associada ao comprovativo';
+$string['privacy:metadata:evidence:note'] = 'A notificação anexado ao comprovativo não foi localizada';
+$string['privacy:metadata:evidence:url'] = 'O URL associado ao comprovativo';
+$string['privacy:metadata:plan:description'] = 'A descrição do plano de aprendizadem';
+$string['privacy:metadata:plan:duedate'] = 'A data limite do plano de aprendizagem';
+$string['privacy:metadata:plan:name'] = 'O nome do plano de aprendizagem';
+$string['privacy:metadata:plan:reviewerid'] = 'O ID do avaliador plano de aprendizagem';
+$string['privacy:metadata:plan:status'] = 'Estado do plano de aprendizagem';
+$string['privacy:metadata:plan:userid'] = 'O ID do utilizador a quem pertence o plano de aprendizagem';
+$string['privacy:metadata:timecreated'] = 'A data em que o registo foi criado';
+$string['privacy:metadata:timemodified'] = 'A data em que o registo foi editado';
+$string['privacy:metadata:usercomp:grade'] = 'A avaliação atribuída pela competência';
+$string['privacy:metadata:usercomp:proficiency'] = 'Se a proficiência é atingida';
+$string['privacy:metadata:usercomp:reviewerid'] = 'Id do avaliador';
+$string['privacy:metadata:usercomp:status'] = 'Estado da competência';
+$string['privacy:metadata:usercomp:userid'] = 'O ID do utilizador a quem pertence a competência';
+$string['privacy:metadata:userevidence:description'] = 'A descrição do comprovativo de aprendizagem anterior';
+$string['privacy:metadata:userevidence:name'] = 'O nome do comprovativo de aprendizagem anterior';
+$string['privacy:metadata:userevidence:url'] = 'O URL associado ao comprovativo de aprendizagem anterior';
+$string['privacy:metadata:usermodified'] = 'O utilizador que criou ou modificou o regsito';
+$string['privacy:path:plans'] = 'Planos de apendizagem';
+$string['privacy:path:relatedtome'] = 'Relacionada comigo';
+$string['privacy:path:userevidence'] = 'Comprovativo de aprendizagem anterior';
 $string['pushcourseratingstouserplans'] = 'Utilizar avaliações da disciplina nos planos individuais de aprendizagem';
 $string['pushcourseratingstouserplans_desc'] = 'Valor predefinido para a configuração da disciplina, para atualizar planos de aprendizagem individuais, sempre que as competências da disciplina são avaliadas.';
 $string['syncplanscohorts'] = 'Sincronizar planos a partir dos modelos de planos de aprendizagem dos grupos globais';

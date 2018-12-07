@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,6 +70,10 @@ $string['explainmethoddaemon'] = 'これらの設定はchat_methodに「Chatサ�
 $string['explainmethodnormal'] = 'これらの設定はchat_methodに「ノーマルメソッド」を選択した場合<strong>のみ</strong>影響します。';
 $string['generalconfig'] = '一般設定';
 $string['idle'] = 'アイドル';
+$string['indicator:cognitivedepth'] = 'チャット認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はチャット活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'チャット社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はチャット活動で学生が到達した社会的広がりに基づきます。';
 $string['inputarea'] = '入力エリア';
 $string['invalidid'] = 'チャットルームが見つかりませんでした!';
 $string['list_all_sessions'] = 'すべてのセッションを一覧表示する';
@@ -116,6 +120,20 @@ $string['page-mod-chat-x'] = 'すべてのチャットモジュールページ';
 $string['pastchats'] = '過去のチャットセッション';
 $string['pluginadministration'] = 'チャット管理';
 $string['pluginname'] = 'チャット';
+$string['privacy:metadata:chat_messages_current'] = '現在のセッションです。このデータは一時的でありチャットセッション後に削除されます。';
+$string['privacy:metadata:chat_users'] = 'どのユーザがチャットルームにいるのか追跡します。';
+$string['privacy:metadata:chat_users:firstping'] = 'チャットルームへの最初のアクセスの日時です。';
+$string['privacy:metadata:chat_users:ip'] = 'ユーザIPです。';
+$string['privacy:metadata:chat_users:lang'] = 'ユーザの言語です。';
+$string['privacy:metadata:chat_users:lastmessageping'] = 'このチャットルームの最後のメッセージの日時です。';
+$string['privacy:metadata:chat_users:lastping'] = 'チャットルームへの最後のアクセスの日時です。';
+$string['privacy:metadata:chat_users:userid'] = 'ユーザIDです。';
+$string['privacy:metadata:chat_users:version'] = 'ユーザがどのようにしてチャットルームにアクセスするか示します (ソケット/基本/ajax/header_js)。';
+$string['privacy:metadata:messages'] = 'チャットセッション中に送信されたメッセージのレコードです。';
+$string['privacy:metadata:messages:issystem'] = 'メッセージがシステムによって生成されたメッセージかどうか示します。';
+$string['privacy:metadata:messages:message'] = 'メッセージ';
+$string['privacy:metadata:messages:timestamp'] = 'メッセージが送信された日時です。';
+$string['privacy:metadata:messages:userid'] = 'メッセージの作成者のユーザIDです。';
 $string['refreshroom'] = 'ルームをリフレッシュする';
 $string['refreshuserlist'] = 'ユーザリストをリフレッシュする';
 $string['removemessages'] = 'すべてのメッセージを削除する';

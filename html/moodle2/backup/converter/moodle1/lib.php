@@ -1385,7 +1385,7 @@ class moodle1_file_manager implements loggable {
     protected function make_file_record(array $fileinfo) {
 
         $defaultrecord = array(
-            'contenthash'   => 'da39a3ee5e6b4b0d3255bfef95601890afd80709',  // sha1 of an empty file
+            'contenthash'   => file_storage::hash_from_string(''),
             'contextid'     => $this->contextid,
             'component'     => $this->component,
             'filearea'      => $this->filearea,
@@ -1428,7 +1428,7 @@ class moodle1_file_manager implements loggable {
             throw new moodle1_convert_exception('file_not_readable');
         }
 
-        $contenthash = sha1_file($pathname);
+        $contenthash = file_storage::hash_from_path($pathname);
         $filesize    = filesize($pathname);
         $hashpath    = $this->converter->get_workdir_path().'/files/'.substr($contenthash, 0, 2);
         $hashfile    = "$hashpath/$contenthash";

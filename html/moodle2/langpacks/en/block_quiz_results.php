@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_quiz_results', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Quiz results (disabled)';
+$string['privacy:metadata'] = 'The Quiz results block only shows data stored in other locations.';
 $string['quiz_results:addinstance'] = 'Add a new quiz results block';

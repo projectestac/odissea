@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_filetypes', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_filetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ Die Liste der Icons wird aus dem Verzeichnis /pix/f genommen. Sie können weiter
 $string['mimetype'] = 'MIME-Typ';
 $string['mimetype_help'] = 'MIME-Type, der diesem Dateityp zugeordnet ist, z.B. \'application/x-mobipocket-ebook\'';
 $string['pluginname'] = 'Dateitypen';
+$string['privacy:metadata'] = 'Das Plugin \'Dateitypen\' speichert keine personenbezogenen Daten.';
 $string['revert'] = '{$a} auf Standard zurücksetzen';
 $string['revert_confirmation'] = 'Möchten Sie wirklich \'.{$a}\' auf den Standard zurücksetzen und die Änderungen verwerfen?';
 $string['revertfiletype'] = 'Dateityp wiederherstellen';

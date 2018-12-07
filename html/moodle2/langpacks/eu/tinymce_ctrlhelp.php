@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_ctrlhelp', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_ctrlhelp', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_ctrlhelp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ctrlhelp:desc'] = 'Sakatu CTRL + right aukera gehiagotarako';
 $string['pluginname'] = 'Sakatu CTRL + right laguntzarako';
+$string['privacy:metadata'] = 'Ctrl+right TinyMCE pluginak ez du datu pertsonalik biltzen.';

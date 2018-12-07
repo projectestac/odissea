@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'Configurer les instances d\'inscription par base d
 $string['database:unenrol'] = 'Désinscrire les utilisateurs suspendus';
 $string['dbencoding'] = 'Encodage de la base de données';
 $string['dbhost'] = 'Adresse IP ou nom de domaine du serveur';
-$string['dbhost_desc'] = 'Saisir l\'adresse IP ou le nom d\'hôte du serveur de base de données. Si vous utilisez ODBC, veuillez utiliser une entrée système DSN.';
+$string['dbhost_desc'] = 'Saisir l\'adresse IP ou le nom d\'hôte du serveur de base de données. Si vous utilisez ODBC, veuillez utiliser une entrée système DSN. Si vous utilisez PDO, indiquez une entrée PDO DSN.';
 $string['dbname'] = 'Nom de la base de données';
 $string['dbname_desc'] = 'Laisser vide si vous utilisez un nom DSN sur le serveur de base de données.';
 $string['dbpass'] = 'Mot de passe de la base de données';
@@ -60,6 +60,7 @@ $string['newcoursetable'] = 'Table des nouveaux cours de la base de données ext
 $string['newcoursetable_desc'] = 'Nom de la table contenant la liste des cours à créer automatiquement. Si le champ n\'est pas renseigné, aucun cours ne sera créé.';
 $string['pluginname'] = 'Base de données externe';
 $string['pluginname_desc'] = 'Vous pouvez utiliser une base de données externe (presque de n\'importe quel type) pour contrôler les inscriptions. On suppose que la base de données externe comporte au moins un champ contenant l\'identifiant de cours et un champ contenant l\'identifiant de l\'utilisateur. Ces champs sont comparés à ceux que vous choisissez dans les tables de cours et d\'utilisateurs dans la base Moodle.';
+$string['privacy:metadata'] = 'Le plugin d\'inscription Base de données externe n\'enregistre aucune donnée personnelle.';
 $string['remotecoursefield'] = 'Champ cours de la base de données externe';
 $string['remotecoursefield_desc'] = 'Nom du champ de la table de la base de données externe utilisé pour comparer les enregistrements de la table de cours.';
 $string['remoteenroltable'] = 'Table des inscriptions de la base de données externe';

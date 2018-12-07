@@ -140,8 +140,7 @@ class mod_assign_renderer extends plugin_renderer_base {
         if ($summary->suspendeduser) {
             $supendedclass = ' usersuspended';
             $suspendedstring = get_string('userenrolmentsuspended', 'grades');
-            $suspendedicon = ' ' . html_writer::empty_tag('img', array('src' => $this->pix_url('i/enrolmentsuspended'),
-                'title' => $suspendedstring, 'alt' => $suspendedstring, 'class' => 'usersuspendedicon'));
+            $suspendedicon = ' ' . $this->pix_icon('i/enrolmentsuspended', $suspendedstring);
         }
         $o .= $this->output->container_start('usersummary');
         $o .= $this->output->box_start('boxaligncenter usersummarysection'.$supendedclass);
@@ -179,8 +178,7 @@ class mod_assign_renderer extends plugin_renderer_base {
         $o = '';
 
         $o .= $this->output->container_start('submitforgrading');
-        $o .= $this->output->heading(get_string('submitassignment', 'assign'), 3);
-        $o .= $this->output->spacer(array('height'=>30));
+        $o .= $this->output->heading(get_string('confirmsubmissionheading', 'assign'), 3);
 
         $cancelurl = new moodle_url('/mod/assign/view.php', array('id' => $page->coursemoduleid));
         if (count($page->notifications)) {
@@ -195,9 +193,7 @@ class mod_assign_renderer extends plugin_renderer_base {
             $o .= $this->output->continue_button($cancelurl);
         } else {
             // All submission plugins ready - show the confirmation form.
-            $o .= $this->output->box_start('generalbox submitconfirm');
             $o .= $this->moodleform($page->confirmform);
-            $o .= $this->output->box_end();
         }
         $o .= $this->output->container_end();
 
@@ -340,9 +336,11 @@ class mod_assign_renderer extends plugin_renderer_base {
         $urlparams = array('id' => $summary->coursemoduleid, 'action' => 'grading');
         $url = new moodle_url('/mod/assign/view.php', $urlparams);
         $o .= '<a href="' . $url . '" class="btn btn-secondary">' . get_string('viewgrading', 'mod_assign') . '</a> ';
-        $urlparams = array('id' => $summary->coursemoduleid, 'action' => 'grader');
-        $url = new moodle_url('/mod/assign/view.php', $urlparams);
-        $o .= '<a href="' . $url . '" class="btn btn-primary">' . get_string('grade') . '</a>';
+        if ($summary->cangrade) {
+            $urlparams = array('id' => $summary->coursemoduleid, 'action' => 'grader');
+            $url = new moodle_url('/mod/assign/view.php', $urlparams);
+            $o .= '<a href="' . $url . '" class="btn btn-primary">' . get_string('grade') . '</a>';
+        }
         $o .= $this->output->container_end();
 
         // Close the container and insert a spacer.
@@ -635,6 +633,7 @@ class mod_assign_renderer extends plugin_renderer_base {
 
         $t = new html_table();
 
+        $warningmsg = '';
         if ($status->teamsubmissionenabled) {
             $row = new html_table_row();
             $cell1 = new html_table_cell(get_string('submissionteam', 'assign'));
@@ -643,13 +642,19 @@ class mod_assign_renderer extends plugin_renderer_base {
                 $cell2 = new html_table_cell(format_string($group->name, false, $status->context));
             } else if ($status->preventsubmissionnotingroup) {
                 if (count($status->usergroups) == 0) {
+                    $notification = new \core\output\notification(get_string('noteam', 'assign'), 'error');
+                    $notification->set_show_closebutton(false);
                     $cell2 = new html_table_cell(
-                        html_writer::span(get_string('noteam', 'assign'), 'alert alert-error')
+                        $this->output->render($notification)
                     );
+                    $warningmsg = $this->output->notification(get_string('noteam_desc', 'assign'), 'error');
                 } else if (count($status->usergroups) > 1) {
+                    $notification = new \core\output\notification(get_string('multipleteams', 'assign'), 'error');
+                    $notification->set_show_closebutton(false);
                     $cell2 = new html_table_cell(
-                        html_writer::span(get_string('multipleteams', 'assign'), 'alert alert-error')
+                        $this->output->render($notification)
                     );
+                    $warningmsg = $this->output->notification(get_string('multipleteams_desc', 'assign'), 'error');
                 }
             } else {
                 $cell2 = new html_table_cell(get_string('defaultteam', 'assign'));
@@ -906,6 +911,7 @@ class mod_assign_renderer extends plugin_renderer_base {
             }
         }
 
+        $o .= $warningmsg;
         $o .= html_writer::table($t);
         $o .= $this->output->box_end();
 
@@ -1015,7 +1021,9 @@ class mod_assign_renderer extends plugin_renderer_base {
             $grade = null;
             foreach ($history->grades as $onegrade) {
                 if ($onegrade->attemptnumber == $submission->attemptnumber) {
-                    $grade = $onegrade;
+                    if ($onegrade->grade != ASSIGN_GRADE_NOT_SET) {
+                        $grade = $onegrade;
+                    }
                     break;
                 }
             }
@@ -1413,7 +1421,7 @@ class mod_assign_renderer extends plugin_renderer_base {
             $result .= '<li yuiConfig=\'' . json_encode($yuiconfig) . '\'>' .
                        '<div>' . $image . ' ' .
                                  $file->fileurl . ' ' .
-                                 $plagiarismlinks .
+                                 $plagiarismlinks . ' ' .
                                  $file->portfoliobutton . '</div>' .
                        '</li>';
         }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'ダウンロードサーバに接続できません。言語パックをインストールまたは自動更新することができません。適切なZIPファイルを「 <a href="{$a->src}">{$a->src}</a> 」からダウンロードした後、あなたのデータディレクトリ「 <code>{$a->dest}</code> 」に手動で展開してください。';
 $string['install'] = '選択された言語パックをインストールする';
 $string['installedlangs'] = 'インストール済み言語パック';
 $string['langimport'] = '言語インポートユーティリティ';
@@ -44,8 +45,8 @@ $string['missinglangparent'] = '「 {$a->lang} 」の親言語「 {$a->parent} �
 $string['noenglishuninstall'] = '英語言語パックをアンインストールすることはできません。';
 $string['nolangupdateneeded'] = 'すべての言語パックは最新版です。アップデートの必要はありません。';
 $string['pluginname'] = '言語パック';
+$string['privacy:metadata'] = '言語パックプラグインはどのような個人データも保存しません。';
 $string['purgestringcaches'] = 'ストリングキャッシュを消去する';
-$string['remotelangnotavailable'] = 'Moodleがmoodle.orgに接続できないため、言語パックを自動インストールすることができません。<a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>より適切なzipファイルを手動でダウンロードして、{$a} ディレクトリにコピーおよび解凍してください。';
 $string['selectlangs'] = 'アンインストールする言語を選択してください!';
 $string['uninstall'] = '選択された言語パックをアンインストールする';
 $string['uninstallconfirm'] = 'あなたは言語パック <strong>{$a}</strong> を完全にアンインストールしようとしています。本当によろしいですか?';

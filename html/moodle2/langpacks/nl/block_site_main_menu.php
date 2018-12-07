@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_site_main_menu', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_site_main_menu', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_site_main_menu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Hoofdmenu';
+$string['privacy:metadata'] = 'Het hoofdmenublok toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['site_main_menu:addinstance'] = 'Voeg een nieuw hoofdmenublok toe';

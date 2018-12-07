@@ -34,3 +34,4 @@ $string['pluginname_help'] = 'Igual que la pregunta estàndard de Vertader/Fals,
 $string['pluginnamesummary'] = 'Igual que la pregunta estàndard de Vertader/Fals, però es poden crear enunciats i retroalimentacions múltiples inserint variables amb números, fórmules o gràfiques. També es pot definir dinàmicament la Resposta correcta.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de verdader/fals - Matemàtiques i Ciències per WIRIS';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de verdader/fals - Matemàtiques i Ciències per WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes True/False question type does not effect or store any data itself.';

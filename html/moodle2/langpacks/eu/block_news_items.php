@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_news_items', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_news_items
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = 'Gehitu azken berriak bloke berria';
-$string['news_items:myaddinstance'] = 'Gehitu azken berriak bloke berria aginte-panelean';
+$string['news_items:myaddinstance'] = 'Gehitu azken berriak bloke berria Aginte-panelean';
 $string['pluginname'] = 'Azken berriak';
+$string['privacy:metadata'] = 'Azken berriak blokeak foroan gordetako informazioa baino ez du erakusten eta ez du inolako daturik biltzen.';

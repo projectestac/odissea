@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_badges', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,3 +30,4 @@ $string['badges:myaddinstance'] = '新しいマイ最新バッジブロックを
 $string['nothingtodisplay'] = 'あなたに表示するバッジはありません。';
 $string['numbadgestodisplay'] = '最新バッジの表示数';
 $string['pluginname'] = '最新バッジ';
+$string['privacy:metadata'] = '最新バッジブロックは他の場所で保存されたデータのみ表示します。';

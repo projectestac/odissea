@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_textarea', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['fieldtypelabel'] = 'Campo area di testo';
 $string['maxbytes'] = 'Dimensione massima per il file incorporati (in byte)';
 $string['maxbytes_desc'] = 'Impostando il valore a zero la dimensione sarà per default illimitata';
 $string['pluginname'] = 'Area di testo';
+$string['privacy:metadata'] = 'Il plugin campo "Area di testo" non memorizza dati personali, utilizza tabelle definite in mod_data.';

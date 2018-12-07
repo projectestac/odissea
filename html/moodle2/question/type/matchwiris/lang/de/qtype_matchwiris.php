@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Wie bei der standardmäßigen Zuordnungsfrage. All
 $string['pluginnamesummary'] = 'Wie bei der standardmäßigen Zuordnungsfrage. Allerdings können Sie vielfältige Fragetexte und Auswahlmöglichkeiten durch Einfügen von zufälligen Zahlen, Formeln oder grafischen Darstellungen erstellen. Die zufälligen Werte können auch für das Feedback verwendet werden.';
 $string['pluginnameadding'] = 'Zuordnungsfrage hinzufügen – Mathematik und Naturwissenschaften von WIRIS';
 $string['pluginnameediting'] = 'Zuordnungsfrage bearbeiten – Mathematik und Naturwissenschaften von WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Match question type does not effect or store any data itself.';

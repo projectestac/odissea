@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_db', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,16 +39,17 @@ $string['auth_dbfieldpass'] = 'パスワードを含んだフィールド名';
 $string['auth_dbfieldpass_key'] = 'パスワードフィールド';
 $string['auth_dbfielduser'] = 'ユーザ名を含んだフィールド名';
 $string['auth_dbfielduser_key'] = 'ユーザ名フィールド';
-$string['auth_dbhost'] = 'データベースサーバが稼動しているコンピュータです。ODBCを使用している場合、システムDSNエントリを使用してください。';
+$string['auth_dbhost'] = 'データベースサーバが稼動しているコンピュータです。ODBCを使用している場合、システムDSNエントリを使用してください。PDOを使用している場合、PDO DSNエントリを使用してください。';
 $string['auth_dbhost_key'] = 'ホスト';
 $string['auth_dbinsertuser'] = '登録済みユーザ {$a->name} id {$a->id}';
 $string['auth_dbinsertuserduplicate'] = 'ユーザ {$a->username} の追加中にエラーが発生しました - このユーザ名のユーザはすでに「 {$a->auth} 」プラグイン経由で作成されています。';
 $string['auth_dbinsertusererror'] = 'ユーザ登録エラー {$a}';
-$string['auth_dbname'] = 'データベース名です。ODBC DSNを使用している場合、空白のままにしてください。';
+$string['auth_dbname'] = 'データベース名です。ODBC DSNを使用している場合、空白のままにしてください。あなたのPDO DSNにすでにデータベース名が含まれている場合、空白のままにしてください。';
 $string['auth_dbname_key'] = 'データベース名';
 $string['auth_dbpass'] = '上記ユーザ名に合致するパスワード';
 $string['auth_dbpass_key'] = 'パスワード';
-$string['auth_dbpasstype'] = '<p>パスワードフィールドで使用するフォーマットを指定してください。MD5暗号化はPostNukeのような他の一般的なウェブアプリケーションへの接続に有用です。</p><p>あなたが外部データベースにユーザ名およびメールアドレスを管理させて、Moodleにはパスワードを管理させたい場合、「内部」を使用してください。「内部」を使用する場合、外部データベースのメールアドレスフィールドを提供して、定期的にadmin/cron.phpおよびauth/db/cli/sync_users.phpを実行してください。Moodleが新しいユーザに仮パスワード含んだメールを送信します。</p>';
+$string['auth_dbpasstype'] = '<p>パスワードフィールドで使用するフォーマットを指定してください。</p>
+<p>あなたが外部データベースにユーザ名およびメールアドレスを管理させてMoodleにはパスワードを管理させたい場合、「内部」を使用してください。「内部」を使用する場合、外部データベースのメールアドレスフィールドを提供して定期的にadmin/cron.phpおよびauth/db/cli/sync_users.phpを実行してください。新しいユーザに仮パスワード記載したメールをMoodleが送信します。</p>';
 $string['auth_dbpasstype_key'] = 'パスワードフォーマット';
 $string['auth_dbreviveduser'] = '回復済みユーザ {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'ユーザ {$a} の回復中にエラーが発生しました。';
@@ -59,10 +60,13 @@ $string['auth_dbsuspenduser'] = '一時停止済みユーザ {$a->name} id {$a->
 $string['auth_dbsuspendusererror'] = 'ユーザ {$a} の一時停止中にエラーが発生しました。';
 $string['auth_dbsybasequoting'] = 'Sybaseクオートを使用する';
 $string['auth_dbsybasequotinghelp'] = 'Sybaseスタイルのシングルクオートエスケープです - Oracle、MS SQLおよび他のデータベースに必要です。MySQLには使用しないでください!';
+$string['auth_dbsyncuserstask'] = 'ユーザタスクを同期する';
 $string['auth_dbtable'] = 'データベースのテーブル名';
 $string['auth_dbtable_key'] = 'テーブル';
 $string['auth_dbtype'] = 'データベースタイプ (詳細は<a href="http://phplens.com/adodb/supported.databases.html" target="_blank">ADOdbドキュメンテーション</a>をご覧ください)';
 $string['auth_dbtype_key'] = 'データベース';
+$string['auth_dbupdateusers'] = 'ユーザを更新する';
+$string['auth_dbupdateusers_description'] = '新しいユーザを追加および既存のユーザを更新します。';
 $string['auth_dbupdatinguser'] = '更新ユーザ {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'データベースへのリードアクセス用ユーザ名';
 $string['auth_dbuser_key'] = 'DBユーザ';
@@ -70,3 +74,4 @@ $string['auth_dbusernotexist'] = '登録されていないユーザを更新で�
 $string['auth_dbuserstoadd'] = '追加するユーザエントリ: {$a}';
 $string['auth_dbuserstoremove'] = '削除するユーザエントリ: {$a}';
 $string['pluginname'] = '外部データベース';
+$string['privacy:metadata'] = '外部データ認証プラグインはどのような個人データも保存しません。';

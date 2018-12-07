@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_login', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_login', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_login
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = 'Aggiungere blocco Login';
 $string['pluginname'] = 'Login';
+$string['privacy:metadata'] = 'Il blocco Login fornisce solamente un modo per autenticarsi e non memorizza dati propri.';

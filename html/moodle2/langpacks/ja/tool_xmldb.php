@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_xmldb', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -173,6 +173,7 @@ $string['pendingchangescannotbesaved'] = 'このファイルに変更が加え�
 $string['pendingchangescannotbesavedreload'] = 'このファイルに変更が加えられましたが、保存できませんでした! ディレクトリおよび「install.xml」にウェブサーバからの書込み権があるかどうか確認してください。確認後、このページをリロードすることで、あなたは変更を保存することができます。';
 $string['pluginname'] = 'XMLDBエディタ';
 $string['primarykeyonlyallownotnullfields'] = '主キーをNullにすることはできません。';
+$string['privacy:metadata'] = 'XMLDBエディタプラグインはどのような個人データも保存しません。';
 $string['reserved'] = '予約済み';
 $string['reservedwords'] = '予約語';
 $string['revert'] = '元に戻す';

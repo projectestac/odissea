@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'search', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,19 +38,19 @@ $string['checkdbadvice'] = 'Konprobatu datu-basea arazoak ikusteko';
 $string['checkdir'] = 'Konprobatu dir-a';
 $string['checkdiradvice'] = 'Ziurtatu datu-direktorioa badela eta bertan idaz daitekeela';
 $string['commenton'] = 'Iruzkina noiz:';
-$string['createanindex'] = 'Sortu aurkibidea';
+$string['createanindex'] = 'sortu indizea';
 $string['createdon'] = 'Sortua noiz:';
 $string['database'] = 'Datu-basea';
 $string['databasestate'] = 'Datu-basearen egoera indexatzen';
 $string['datadirectory'] = 'Datu-direktorioa';
-$string['deletionsinindex'] = 'Ezabaketak aurkibidean';
+$string['deletionsinindex'] = 'Ezabaketak indizean';
 $string['docmodifiedon'] = 'Azken aldaketa: {$a}';
 $string['doctype'] = 'Dokumentu-mota';
 $string['doctypenotsupported'] = 'Zehaztutako dokumentu mota ez da oraindik onartzen.';
 $string['documents'] = 'dokumentuak';
 $string['documentsfor'] = 'Dokumentuak honetarako:';
 $string['documentsindatabase'] = 'Dokumentuak datu-basean';
-$string['documentsinindex'] = 'Dokumentuak aurkibidean';
+$string['documentsinindex'] = 'Dokumentuak indizean';
 $string['duration'] = 'Iraupena';
 $string['emptydatabaseerror'] = 'Ez dago datu-basearen taula edo ez du aurkibide-erregistrorik';
 $string['enginenotfound'] = 'Ez da {$a} bilatzailea aurkitu.';
@@ -59,6 +59,7 @@ $string['enginenotselected'] = 'Ez duzu bilatzailerik aukeratu.';
 $string['engineserverstatus'] = 'Bilatzailea ez dago eskuragarri. Jar zaitez harremanetan kudeatzailearekin.';
 $string['enteryoursearchquery'] = 'Idatzi zure bilaketa';
 $string['errorareanotavailable'] = '{$a} bilaketa-eremua ez dago oraindik eskuragarri.';
+$string['error_indexing'] = 'Errorea gertatu da indexatzean';
 $string['errors'] = 'Erroreak';
 $string['filesinindexdirectory'] = 'Fitxategiak aurkibide-direktorioan';
 $string['filterheader'] = 'Iragazkia';
@@ -66,7 +67,7 @@ $string['fromtime'] = 'Data honen ostean eguneratuta:';
 $string['globalsearch'] = 'Bilaketa orokorra';
 $string['globalsearchdisabled'] = 'Bilaketa orokorra ez dago gaituta';
 $string['incourse'] = '{$a} ikastaroan';
-$string['index'] = 'Aurkibidea';
+$string['index'] = 'Indizea';
 $string['invalidindexerror'] = 'Aurkibide-direktorioak aurkibide ezegoki bat du edo hutsik dago';
 $string['ittook'] = 'Tori';
 $string['matchingfile'] = '<span class="filename">{$a}</span> fitxategian topatutakoak';
@@ -78,6 +79,7 @@ $string['normalsearch'] = 'Bilaketa normala';
 $string['notitle'] = 'Izenbururik ez';
 $string['openedon'] = 'irekia noiz:';
 $string['optimize'] = 'Optimizatu';
+$string['privacy:metadata'] = 'Bilaketa-sistemak ez du datu pertsonalik biltzen.';
 $string['queryerror'] = 'Bilaketa-motoreak ezin izan du zure bilaketa aztertu: {$a}';
 $string['resultsreturnedfor'] = 'lortutako emaitzak honetarako:';
 $string['runindexer'] = 'Abiarazi indexatzailea (erreala)';

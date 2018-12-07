@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,8 +43,9 @@ $string['nlines'] = '{$a} lignes';
 $string['pluginname'] = 'Composition';
 $string['pluginnameadding'] = 'Ajout d\'une question de composition';
 $string['pluginnameediting'] = 'Modification d\'une question de composition';
-$string['pluginname_help'] = 'Pour répondre à la question (qui peut contenir des images), les participants écrivent un texte de quelques paragraphes. La question de type Composition n\'a pas d\'évaluation automatique, et nécessite qu\'un enseignant relise et évalue manuellement chaque réponse.';
-$string['pluginnamesummary'] = 'Permet une réponse de plusieurs phrases ou paragraphes. Cette question doit être évaluée manuellement.';
+$string['pluginname_help'] = 'Pour répondre à la question, les participants peut déposer un ou plusieurs fichiers ou écrire un texte en ligne. Un modèle de réponse peut être fourni. Les réponses doivent être évaluées manuellement.';
+$string['pluginnamesummary'] = 'Permet une réponse sous forme d\'un fichier ou d\'un texte en ligne. Cette question doit être évaluée manuellement.';
+$string['privacy:metadata'] = 'Le plugin de type de question Composition n\'enregistre aucune donnée personnelle.';
 $string['responsefieldlines'] = 'Taille du champ de saisie';
 $string['responseformat'] = 'Format de la réponse';
 $string['responseisrequired'] = 'Requiert la saisie d\'un texte par le participant';

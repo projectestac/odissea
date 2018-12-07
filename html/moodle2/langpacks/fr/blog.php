@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'blog', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,6 +135,29 @@ $string['pagesize'] = 'Nombre d\'articles par page';
 $string['permalink'] = 'Permalien';
 $string['personalblogs'] = 'Les utilisateurs ne peuvent voir que les articles de leur propre blog';
 $string['preferences'] = 'Préférences de blog';
+$string['privacy:metadata:core_comments'] = 'Commentaires associés à des articles de blog';
+$string['privacy:metadata:core_files'] = 'Fichiers annexés à des articles de blog';
+$string['privacy:metadata:core_tag'] = 'Tags associés à des articles de blog';
+$string['privacy:metadata:external'] = 'Un lien vers un flux RSS externe';
+$string['privacy:metadata:external:description'] = 'La description du flux';
+$string['privacy:metadata:external:filtertags'] = 'La liste des tags avec laquelle filtrer les articles';
+$string['privacy:metadata:external:name'] = 'Le nom du flux';
+$string['privacy:metadata:external:timefetched'] = 'La date et l\'heure à laquelle le flux a été récupéré pour la dernière fois';
+$string['privacy:metadata:external:timemodified'] = 'La date et l\'heure à laquelle l\'association a été modifiée pour la dernière fois';
+$string['privacy:metadata:external:url'] = 'L\'URL du flux';
+$string['privacy:metadata:external:userid'] = 'L\'identifiant de l\'utilisateur qui a ajouté un article de blog externe.';
+$string['privacy:metadata:post'] = 'Les informations en lien avec les articles de blog';
+$string['privacy:metadata:post:content'] = 'Le contenu d\'un article de blog externe.';
+$string['privacy:metadata:post:created'] = 'La date et l\'heure à laquelle l\'article a été créé.';
+$string['privacy:metadata:post:lastmodified'] = 'La date et l\'heure à laquelle l\'article a été modifié pour la dernière fois.';
+$string['privacy:metadata:post:publishstate'] = 'Si l\'article est visible ou non';
+$string['privacy:metadata:post:subject'] = 'Le titre de l\'article de blog.';
+$string['privacy:metadata:post:summary'] = 'L\'article de blog.';
+$string['privacy:metadata:post:uniquehash'] = 'L\'identifiant unique d\'un article de blog externe, typiquement une URL.';
+$string['privacy:metadata:post:userid'] = 'L\'identifiant de l\'utilisateur qui a ajouté l\'article de blog.';
+$string['privacy:metadata:post:usermodified'] = 'L\'utilisateur qui a modifié l\'article de blog pour la dernière fois';
+$string['privacy:path:blogassociations'] = 'Articles de blog associés';
+$string['privacy:unknown'] = 'Inconnu';
 $string['publishto'] = 'Publier pour';
 $string['publishtocourse'] = 'Les participants à un de vos cours';
 $string['publishtocourseassoc'] = 'Les participants au cours associé';

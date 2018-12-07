@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_wq', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_wq', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_wq
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -82,6 +82,9 @@ $string['info_test9_name'] = 'Wiris Quizzes service';
 $string['ok'] = 'OK';
 $string['pluginname'] = 'Wiris Quizzes';
 $string['pluginnamesummary'] = '';
+$string['privacy:metadata:qtype_wq'] = 'Information about user\'s correct answer for a given Wiris Quizzes question type';
+$string['privacy:metadata:qtype_wq:question'] = 'Wiris Quizzes question type id';
+$string['privacy:metadata:qtype_wq:xml'] = 'Wiris Quizzes Question XML';
 $string['proxyurl'] = 'PROXY_URL:';
 $string['quizzeseditorurl'] = 'MathType service URL';
 $string['quizzeseditorurl_help'] = 'URL where to load MathType.';

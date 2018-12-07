@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_collapse', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_collapse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mostrar/ocultar botones avanzados';
+$string['privacy:metadata'] = 'El plugin atto_collapse no guarda ningún dato personal.';
 $string['settings'] = 'Colapsar opciones de configuración de la barra de herramientas';
 $string['showfewer'] = 'Mostrar menos botones';
 $string['showgroups'] = 'Mostrar primero (n) grupos cuando esté colapsado.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,7 +41,7 @@ $string['dropbackground'] = 'Image de fond pouvant être recouverte de marqueurs
 $string['dropzone'] = 'Zone de dépôt {$a}';
 $string['dropzoneheader'] = 'Zone de dépôt';
 $string['dropzones'] = 'Zones de dépôt';
-$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu ci-dessous se met immédiatement à jour, ce qui vous permet de placer et d\'ajuster les zones pas à pas.
+$string['dropzones_help'] = 'Les zones de dépôt sont définies en saisissant leurs coordonnées. En les saisissant, l\'aperçu ci-dessus, se met immédiatement à jour, ce qui vous permet de placer et d\'ajuster les zones pas à pas.
 
 * Cercle : centre_x, centre_y; rayon<br />par exemple : <code>80, 100; 50</code>
 * Polygone : x1, y1; x2, y2; ...; xn, yn<br />par exemple : <code>20, 60; 100, 60; 20, 100</code>
@@ -74,6 +74,7 @@ $string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnamesummary'] = 'Des marqueurs sont glissés et déposés sur une image de fond.';
 $string['previewareaheader'] = 'Prévisualiser';
 $string['previewareamessage'] = 'Sélectionner un fichier pour l\'image de fond, entrez des labels pour les marqueurs et définissez des zones de dépôt pour ces marqueurs sur l\'image de fond.';
+$string['privacy:metadata'] = 'Le plugin de type de question Marqueurs à glisser-déposer n\'enregistre aucune donnée personnelle.';
 $string['refresh'] = 'Rafraîchir l\'aperçu';
 $string['shape'] = 'Forme';
 $string['shape_circle'] = 'Cercle';

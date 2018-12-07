@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'badges', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -324,8 +324,8 @@ $string['makepublic'] = 'Publiko egin';
 $string['managebadges'] = 'Kudeatu dominak';
 $string['message'] = 'Mezuren gurputza';
 $string['messagebody'] = '<p>"%badgename%" domina lortu duzu!</p>
-<p>Domina honi buruzko informazio gehiago %badgelink% dominaren informazio orrian lortu ahal da.</p>
-<p>Domina {$a}-tik deskarga eta kudea dezakezu.</p>';
+<p>Domina honi buruzko informazio gehiago %badgelink% dominaren informazio orrian topatu dezakezu.</p>
+<p>Domina {$a}-tik deskarga eta kudeatu dezakezu.</p>';
 $string['messagesubject'] = 'Zorionak! Domina bat irabazi duzu!';
 $string['method'] = 'Irizpidea honela beteko da:';
 $string['mingrade'] = 'Eskatutako gutxieneko kalifikazioa';
@@ -374,6 +374,34 @@ $string['personaconnection_help'] = 'Persona zeure e-posta helbidea erabilita ze
 Pertsonari buruzko informazio gehiago lortzeko jo hona:<a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Balizko domina-jasotzaileak';
 $string['preferences'] = 'Dominen hobespenak';
+$string['privacy:metadata:backpack'] = 'Erabiltzailearen motxilen erregistroa';
+$string['privacy:metadata:backpack:backpackuid'] = 'Motxilaren identifikatzaile-bakarra';
+$string['privacy:metadata:backpack:backpackurl'] = 'Motxilaren URLa';
+$string['privacy:metadata:backpack:email'] = 'Motxilarekin lotutako e-posta helbidea';
+$string['privacy:metadata:backpack:userid'] = 'Motxilaren jabea den erabiltzailearen IDa';
+$string['privacy:metadata:badge'] = 'Dominen bilduma bat';
+$string['privacy:metadata:badge:timecreated'] = 'Domina sortu zeneko data';
+$string['privacy:metadata:badge:timemodified'] = 'Domina azkenengoz aldatu zeneko data';
+$string['privacy:metadata:badge:usercreated'] = 'Domina sortu zuenerabiltzailearen IDa';
+$string['privacy:metadata:badge:usermodified'] = 'Domina aldatu zuen erabiltzailearen IDa';
+$string['privacy:metadata:criteriamet'] = 'Bete diren irizpideen bilduma bat';
+$string['privacy:metadata:criteriamet:datemet'] = 'Irizpidea bete zeneko data';
+$string['privacy:metadata:criteriamet:userid'] = 'Irizpidea bete duen erabiltzailearen IDa';
+$string['privacy:metadata:external:backpacks'] = 'Erabiltzaileek euren dominak kanpoko motxiletara bidaltzean partekatzen den informazioa';
+$string['privacy:metadata:external:backpacks:badge'] = 'Dominaren izena';
+$string['privacy:metadata:external:backpacks:description'] = 'Dominaren deskribapena';
+$string['privacy:metadata:external:backpacks:image'] = 'Dominaren irudia';
+$string['privacy:metadata:external:backpacks:issuer'] = 'Emailearen inguruko informazioa';
+$string['privacy:metadata:external:backpacks:url'] = 'Dominaren informazioa ikusgarri dagoen Moodle-ko URLa';
+$string['privacy:metadata:issued'] = 'Emandako dominen erregistroa';
+$string['privacy:metadata:issued:dateexpire'] = 'Domina-ematea iraungitzen deneko data';
+$string['privacy:metadata:issued:dateissued'] = 'Domina-ematearen data';
+$string['privacy:metadata:issued:userid'] = 'Domina jaso zuen erabiltzailearen IDa';
+$string['privacy:metadata:manualaward'] = 'Eskuz emandako dominen erregistroa';
+$string['privacy:metadata:manualaward:datemet'] = 'Erabiltzaileari domina eskuz eman zitzaioneko data';
+$string['privacy:metadata:manualaward:issuerid'] = 'Domina eman zuen erabiltzailearen IDa';
+$string['privacy:metadata:manualaward:issuerrole'] = 'Domina eman zuen erabiltzailearen rola';
+$string['privacy:metadata:manualaward:recipientid'] = 'Eskuz emandako domina jaso duen erabiltzailearen IDa';
 $string['recipientdetails'] = 'Jasotzailearen zehaztasunak';
 $string['recipientidentificationproblem'] = 'Ezin da domina honetarako jasotzailerik aurkitu dauden erabiltzaileen artean.';
 $string['recipients'] = 'Domina-jasotzaileak';

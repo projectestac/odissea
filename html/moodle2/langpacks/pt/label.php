@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,10 @@ $string['dndresizeheight'] = 'Redimensionar altura da imagem';
 $string['dndresizewidth'] = 'Redimensionar largura da imagem';
 $string['dnduploadlabel'] = 'Adicionar conteúdo multimédia à página da disciplina';
 $string['dnduploadlabeltext'] = 'Adicionar um separador à página da disciplina';
+$string['indicator:cognitivedepth'] = 'Compreensão do Separador';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Separador.';
+$string['indicator:socialbreadth'] = 'Socialização do Separador';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Separador.';
 $string['label:addinstance'] = 'Adicionar novo Separador';
 $string['labeltext'] = 'Texto do separador';
 $string['label:view'] = 'Ver separador';
@@ -48,4 +52,5 @@ $string['modulename_link'] = 'mod/label/link';
 $string['modulenameplural'] = 'Separadores';
 $string['pluginadministration'] = 'Administração do Separador';
 $string['pluginname'] = 'Separador';
+$string['privacy:metadata'] = 'O módulo mod_label não armazena qualquer dado pessoal.';
 $string['search:activity'] = 'Separador';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_mahara', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,5 +45,7 @@ $string['mnet_wronghost'] = 'Le serveur distant ne correspond pas à l\'enregist
 $string['pf_description'] = 'Permet aux utilisateurs de copier des contenus du site Moodle sur ce serveur.<br />En vous abonnant à ce service, vous permettrez aux utilisateurs authentifiés de votre site de copier des contenus sur {$a}<br /><ul><li><em>Dépendance</em> : vous devez également <strong>publier</strong> le service SSO (fournisseur d\'identité) vers {$a}.</li><li><em>Dépendance</em> : vous devez également vous <strong>abonner</strong> au service SSO (fournisseur de service) de {$a}</li><li><em>Dépendance</em> : vous devez également activer le plugin d\'authentification MNet.</li></ul><br />';
 $string['pf_name'] = 'Services portfolio';
 $string['pluginname'] = 'Portfolio Mahara';
+$string['privacy:metadata'] = 'Ce plugin transmet des données vers une application Mahara externe liée. Il n\'enregistre aucune donnée localement.';
+$string['privacy:metadata:data'] = 'Données personnelles transmises à partir du sous-système portfolio.';
 $string['senddisallowed'] = 'Il n\'est actuellement pas possible de transférer des fichiers vers Mahara';
 $string['url'] = 'URL';

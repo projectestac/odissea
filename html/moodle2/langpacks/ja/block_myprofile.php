@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_myprofile', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,3 +48,4 @@ $string['myprofile:addinstance'] = '新しいログインユーザブロック�
 $string['myprofile:myaddinstance'] = '新しいログインユーザブロックをダッシュボードに追加する';
 $string['myprofile_settings'] = '閲覧可能なユーザ情報';
 $string['pluginname'] = 'ログインユーザ';
+$string['privacy:metadata'] = 'ログインユーザブロックはログインしているユーザの情報のみ表示します。データ自体を保存することはありません。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Aanvaarde bestandstypes';
-$string['acceptedfiletypes_help'] = 'De aanvaarde bestandstypes kunnen beperkt worden door een puntkomma gescheiden lijst van mimeypes, bijvoorbeeld \'video/mp4;image/png;image/jpeg\' of door een lijst met extensies, inclusief het punt te gebruiken, bijvoorbeeld \'.png;.jpg\'. Als het veld leeg is, dan worden alle bestandstypes toegestaan.';
+$string['acceptedfiletypes_help'] = 'De aanvaarde bestandstypes kunnen beperkt worden door een puntkomma gescheiden lijst van extensies. Als het veld leeg is, dan worden alle bestandstypes toegestaan.';
 $string['configmaxbytes'] = 'Maximale bestandsgrootte';
 $string['countfiles'] = '{$a} bestanden';
 $string['default'] = 'Standaard ingeschakeld';
+$string['defaultacceptedfiletypes'] = 'Standaard aanvaarde bestandstypes';
 $string['default_help'] = 'Indien ingeschakeld, zal deze instuurmethode als standaard zijn ingesteld voor alle nieuwe opdrachten.';
 $string['enabled'] = 'Ingestuurde bestanden.';
 $string['enabled_help'] = 'Indien ingeschakeld, kunnen leerlingen één of meer bestanden uploaden als opdracht';
@@ -47,5 +48,6 @@ $string['maximumsubmissionsize_help'] = 'Bestanden die leerlingen insturen mogen
 $string['nonexistentfiletypes'] = 'Volgende bestandstypes werden niet herkend: {$a}';
 $string['numfilesforlog'] = 'aantal bestanden: {$a} bestand(en)';
 $string['pluginname'] = 'Bestanden insturen';
+$string['privacy:metadata:filepurpose'] = 'De ingeladen bestanden voor deze ingestuurde opdracht.';
 $string['siteuploadlimit'] = 'Site upload limiet';
 $string['submissionfilearea'] = 'Geüploade bestanden';

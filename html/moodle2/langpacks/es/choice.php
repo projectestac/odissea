@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,6 @@ $string['allowmultiple'] = 'Permitir seleccionar más de una opción';
 $string['allowupdate'] = 'Permitir la actualización de la consulta';
 $string['answered'] = 'Contestado';
 $string['atleastoneoption'] = 'Necesita proporcionar al menos una respuesta posible.';
-$string['calendarend'] = 'Cierre de la consulta {$a}';
-$string['calendarstart'] = 'Apertura de la consulta {$a}';
 $string['cannotsubmit'] = 'Lo lamentamos, se ha producido un error con el envío de su respuesta. Por favor inténtelo de nuevo.';
 $string['choice'] = 'Opción';
 $string['choiceactivityname'] = 'Consulta: {$a}';
@@ -39,7 +37,7 @@ $string['choice:addinstance'] = 'Añadir una nueva opción';
 $string['choice:choose'] = 'Registrar una elección';
 $string['choiceclose'] = 'Hasta';
 $string['choicecloseson'] = 'La consulta se cierra el {$a}';
-$string['choice:deleteresponses'] = 'Modificar y eliminar respuestas';
+$string['choice:deleteresponses'] = 'Eliminar respuestas';
 $string['choice:downloadresponses'] = 'Descargar respuestas';
 $string['choicefull'] = 'Esta opción está completa y no hay espacios disponibles.';
 $string['choicename'] = 'Título de la consulta';
@@ -70,6 +68,8 @@ $string['expired'] = 'Lo sentimos, esta actividad se cerró el {$a} y ya no est�
 $string['full'] = '(Lleno)';
 $string['havetologin'] = 'Debe entrar antes de remitir su elección';
 $string['includeinactive'] = 'Incluir respuestas de usuarios inactivos/suspendidos';
+$string['indicator:cognitivedepth'] = 'Elección cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Elección.';
 $string['limit'] = 'Límite';
 $string['limitanswers'] = 'Limitar el número de respuestas permitidas';
 $string['limitanswers_help'] = '<p>Esta opción le permite limitar el número de participantes que

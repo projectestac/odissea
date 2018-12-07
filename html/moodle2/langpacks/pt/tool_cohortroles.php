@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_cohortroles', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_cohortroles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,14 @@ $string['noassignableroles'] = 'Atualmente, não existem papéis que possam ser 
 $string['nocohortroleassignmentssaved'] = 'Nenhuma atribuição de papéis do grupo global foi gravada.';
 $string['onecohortroleassignmentsaved'] = 'Foi gravada uma atribuição de papel do grupo global.';
 $string['pluginname'] = 'Gestão dos papéis do grupo global';
+$string['privacy:metadata:tool_cohortroles'] = 'O módulo Gestão dos papéis do grupo global armazena o mapa de papéis de utilizador atribuídos no grupo.';
+$string['privacy:metadata:tool_cohortroles:cohortid'] = 'O ID do grupo.';
+$string['privacy:metadata:tool_cohortroles:id'] = '';
+$string['privacy:metadata:tool_cohortroles:roleid'] = 'O ID do papel';
+$string['privacy:metadata:tool_cohortroles:timecreated'] = 'A data/hora de quando o mapa de papéis atribuídos no grupo global foi criado';
+$string['privacy:metadata:tool_cohortroles:timemodified'] = 'A data/hora de quando o mapa de papéis atribuídos no grupo global foi modificado';
+$string['privacy:metadata:tool_cohortroles:userid'] = 'O ID do utilizador';
+$string['privacy:metadata:tool_cohortroles:usermodified'] = 'O ID do utilizador que modificou pela última vez o mapa de papéis atribuídos no grupo global.';
 $string['removecohortroleassignment'] = 'Remover atribuição de papel do grupo global';
 $string['removecohortroleassignmentconfirm'] = 'Tem a certeza de que pretende remover esta atribuição de papel do grupo global? Este papel será removido do utilizador em todos os outros contextos de utilizador.';
 $string['selectcohorts'] = 'Selecionar Grupos globais';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Добавлены стандартные теги';
-$string['addedotag'] = '«{$a}» был добавлен в качестве глобального тега';
 $string['addotags'] = 'Добавить стандартные теги';
 $string['addtagcoll'] = 'Добавить коллекцию тегов';
 $string['addtagtomyinterests'] = 'Добавить «{$a}» к моим интересам';
@@ -90,7 +89,6 @@ $string['name'] = 'Название тега';
 $string['namesalreadybeeingused'] = 'Название тега уже используется';
 $string['nameuseddocombine'] = 'Название тега уже используется. Вы хотите скомбинировать эти теги?';
 $string['newcollnamefor'] = 'Новое название для коллекции тегов «{$a}»';
-$string['newname'] = 'Новое имя тега';
 $string['newnamefor'] = 'Новое название для тега «{$a}»';
 $string['nextpage'] = 'Больше';
 $string['noresultsfor'] = 'Не найдено ни одного тега, содержащего «{$a}»';
@@ -154,13 +152,8 @@ $string['taggedwith'] = 'Теги с «{$a}»';
 $string['tags'] = 'Теги';
 $string['tagsaredisabled'] = 'Теги отключены';
 $string['tagtype'] = 'Тип тега';
-$string['tagtype_default'] = 'Обыкновенный';
-$string['tagtype_official'] = 'Официальный';
 $string['thingstaggedwith'] = '«{$a->name}» использовалось {$a->count} раз(а)';
 $string['thingtaggedwith'] = '«{$a->name}» использовалось однажды';
-$string['thistaghasnodesc'] = 'Этот тег сейчас не имеет описания.';
 $string['timemodified'] = 'Изменен';
 $string['typechanged'] = 'Тип тега изменен';
-$string['updated'] = 'Обновлен';
 $string['updatetag'] = 'Обновить';
-$string['withselectedtags'] = 'С выделенными тегами...';

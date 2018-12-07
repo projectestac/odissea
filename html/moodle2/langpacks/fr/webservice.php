@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,6 +134,7 @@ $string['norequiredcapability'] = 'Aucune capacité requise';
 $string['notoken'] = 'La liste des jetons est vide.';
 $string['onesystemcontrolling'] = 'Autoriser un système externe à contrôler Moodle';
 $string['onesystemcontrollingdescription'] = 'Les étapes suivantes vous aident à configurer les services web de Moodle pour permettre à un système d\'interagir avec Moodle. Cela inclut la configuration de la méthode d\'authentification par jeton (clefs de sécurité).';
+$string['onlyseecreatedtokens'] = 'Tous les jetons peuvent être supprimés, même si vous ne pouvez voir que les jetons que vous avez créés.';
 $string['operation'] = 'Opération';
 $string['optional'] = 'Optionnel';
 $string['passwordisexpired'] = 'Le mot de passe est échu.';

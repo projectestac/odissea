@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculatedsimple
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['pluginnameadding'] = 'Kalkulatutako galdera sinplea gehitzen';
 $string['pluginnameediting'] = 'Kalkulatutako galdera sinplea editatzen';
 $string['pluginname_help'] = 'Kalkulatutako galdera sinpleek zenbakizko galderak komodinak erabiliz sortzea ahalbidetzen dute, galdetegia egiterakoan balioekin ordezkatzen direnak. Kalkulatutako galdera sinpleak kalkulatutako galderen aukera erabilienak eskaintzen ditu sortze-interfaze sinpleagoa erabilita.';
 $string['pluginnamesummary'] = 'Kalkulatutako galderen bertsio sinpleagoa, zenbakizko galderen modukoak direnak baina hauetan erabilitako zenbakiak datu-multzo batetik ausaz aukeratzen dira galdetegia egitean.';
+$string['privacy:metadata'] = 'Kalkulatutako galdera sinplea galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['setno'] = 'Multzoa {$a}';
 $string['setwildcardvalues'] = 'Komodin(ar)en baloreen ezarpena(k)';
 $string['showitems'] = 'Erakutsi';

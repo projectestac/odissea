@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['allowmultiple'] = 'Gaitu aukera bat baino gehiago erantzun ahal izatea'
 $string['allowupdate'] = 'Utzi kontsulta eguneratzen';
 $string['answered'] = 'Erantzunda';
 $string['atleastoneoption'] = 'Gutxienez erantzun posible bat eman behar duzu.';
-$string['calendarend'] = '{$a} kontsultaren itxiera:';
-$string['calendarstart'] = '{$a} kontsultaren irekiera:';
+$string['calendarend'] = '{$a}-(r)en itxiera-data:';
+$string['calendarstart'] = '{$a}-(r)en hasiera-data';
 $string['cannotsubmit'] = 'Sentitzen dugu, arazoa gertatu da zure aukera bidaltzean. Mesedez, saiatu berriz.';
 $string['choice'] = 'Aukera';
 $string['choiceactivityname'] = 'Aukera: {$a}';
@@ -71,6 +71,10 @@ $string['expired'] = 'Sentitzen dugu, jarduera hau {$a}(e)an itxi zen eta dagoen
 $string['full'] = '(Beteta)';
 $string['havetologin'] = 'Saioa hasi behar duzu erantzuna bidali ahal izateko.';
 $string['includeinactive'] = 'Kontuan hartu kontua etenda duten edo aktibo ez dauden erabiltzaileen erantzunak';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa kontsultetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Kontsulta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala kontsultetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Kontsulta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['limit'] = 'Muga';
 $string['limitanswers'] = 'Onar daitezkeen erantzunen kopurua mugatu';
 $string['limitanswers_help'] = 'Kontsultaren aukera posible bakoitza zenbat partaidek aukeratu ahal duen mugatzen du ezarpen honek.
@@ -100,6 +104,7 @@ $string['notenrolledchoose'] = 'Sentitzen dugu, baina matrikulatutako erabiltzai
 $string['notopenyet'] = 'Sentitzen dugu, baina jarduera hau ez dago erabiltzeko moduan {$a} arte.';
 $string['numberofuser'] = 'Erantzun-kopurua';
 $string['numberofuserinpercentage'] = 'Erantzunen portzentajea';
+$string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['option'] = 'Aukera';
 $string['optionno'] = 'Aukera {no}';
 $string['options'] = 'Aukerak';
@@ -108,6 +113,11 @@ $string['pluginadministration'] = 'Kontsultaren kudeaketa';
 $string['pluginname'] = 'Kontsulta';
 $string['previewonly'] = 'Hau jarduera honetan eskuragarri dauden aukeren aurrebista besterik ez da. Ezingo duzu zure erantzuna bidali {$a}-(e)ra arte.';
 $string['privacy'] = 'Emaitzen pribatutasuna';
+$string['privacy:metadata:choice_answers'] = 'Emandako kontsulta-jardueran erabiltzaileak aukeratutako erantzunen inguruko informazioa';
+$string['privacy:metadata:choice_answers:choiceid'] = 'Erabiltzailea erantzuten ari den kontsulta-jardueraren IDa';
+$string['privacy:metadata:choice_answers:optionid'] = 'Erabiltzaileak aukeratutako aukeraren IDa';
+$string['privacy:metadata:choice_answers:timemodified'] = 'Erabiltzaileak kontsulta aldatu zueneko data eta ordua.';
+$string['privacy:metadata:choice_answers:userid'] = 'Kontsulta-jarduera hau erantzuten ari den erabiltzailearen IDa';
 $string['publish'] = 'Emaitzak argitaratu';
 $string['publishafteranswer'] = 'Erakutsi emaitzak ikasleari erantzun ondoren';
 $string['publishafterclose'] = 'Erakutsi emaitzak ikasleari bakarrik kontsulta itxi ondoren.';
@@ -132,5 +142,6 @@ $string['spacesleft'] = 'espazio erabilgarriak';
 $string['taken'] = 'Hartuta';
 $string['userchoosethisoption'] = 'Aukera hau hautatu duten erabiltzaileak';
 $string['viewallresponses'] = 'Ikusi {$a} erantzun';
+$string['viewchoices'] = 'Ikusi aukerak';
 $string['withselected'] = 'Aukeratutakoekin';
 $string['yourselection'] = 'Zure aukera';

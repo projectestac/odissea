@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculated', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -117,6 +117,7 @@ $string['pluginname_help'] = 'Calculated questions enable individual numerical q
 $string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnamesummary'] = 'Calculated questions are like numerical questions but with the numbers used selected randomly from a set when the quiz is taken.';
 $string['possiblehdr'] = 'Possible wild cards present only in the question text';
+$string['privacy:metadata'] = 'The Calculated question type plugin does not store any personal data.';
 $string['questiondatasets'] = 'Question datasets';
 $string['questiondatasets_help'] = 'Question datasets of wild cards that will be used in each individual question';
 $string['questionstoredname'] = 'Question stored name';

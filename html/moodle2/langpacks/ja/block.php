@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,10 @@ $string['myblocks'] = 'マイブロック';
 $string['onthispage'] = 'このページ';
 $string['pagetypes'] = 'ページタイプ';
 $string['pagetypewarning'] = '前回選択したページタイプを選択できないようになりました。下記より最も適切なページタイプを選択してください。';
+$string['privacy:metadata:userpref:dockedinstance'] = 'ユーザがブロックをドックした時のレコードです。';
+$string['privacy:metadata:userpref:hiddenblock'] = 'ユーザがブロックを折り畳み/非表示にした時のレコードです。';
+$string['privacy:request:blockisdocked'] = 'ブロックがドックされているかどうか示します。';
+$string['privacy:request:blockishidden'] = 'ブロックが折り畳み/非表示にされているかどうか示します。';
 $string['region'] = '場所';
 $string['restrictpagetypes'] = 'ページタイプに表示する';
 $string['showblock'] = '{$a} ブロックを表示する';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_group', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['description'] = 'Laat enkel leerlingen toe die tot een bepaalde groep b
 $string['error_selectgroup'] = 'Je moet een groep selecteren';
 $string['missing'] = '(Groep ontbreekt)';
 $string['pluginname'] = 'Beperking per groep';
+$string['privacy:metadata'] = 'De beperkingen door groep-plugin bewaart geen persoonlijke gegevens.';
 $string['requires_anygroup'] = 'Je moet deel uitmaken van een groep';
 $string['requires_group'] = 'Je behoort tot  <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'Je behoort niet tot een groep';

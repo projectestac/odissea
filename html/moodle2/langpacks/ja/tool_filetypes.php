@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_filetypes', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_filetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['icon_help'] = 'アイコンファイル名
 $string['mimetype'] = 'MIMEタイプ';
 $string['mimetype_help'] = 'このファイルに関連付けられているMIMEタイプ 例) 「application/x-mobipocket-ebook」';
 $string['pluginname'] = 'ファイルタイプ';
+$string['privacy:metadata'] = 'ファイルタイププラグインはどのような個人データも保存しません。';
 $string['revert'] = '{$a} をMoodleデフォルトにリストアする';
 $string['revert_confirmation'] = '本当にあなたの変更を破棄して、<strong>.{$a}</strong> をMoodleデフォルトとしてリストアしてもよろしいですか?';
 $string['revertfiletype'] = 'ファイルタイプをリストアする';

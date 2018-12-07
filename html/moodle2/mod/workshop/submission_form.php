@@ -42,6 +42,7 @@ class workshop_submission_form extends moodleform {
         $mform->addElement('text', 'title', get_string('submissiontitle', 'workshop'));
         $mform->setType('title', PARAM_TEXT);
         $mform->addRule('title', null, 'required', null, 'client');
+        $mform->addRule('title', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
 
         $mform->addElement('editor', 'content_editor', get_string('submissioncontent', 'workshop'), null, $contentopts);
         $mform->setType('content', PARAM_RAW);
@@ -74,47 +75,7 @@ class workshop_submission_form extends moodleform {
 
         $errors = parent::validation($data, $files);
 
-        if (empty($data['id']) and empty($data['example'])) {
-            // make sure there is no submission saved meanwhile from another browser window
-            $sql = "SELECT COUNT(s.id)
-                      FROM {workshop_submissions} s
-                      JOIN {workshop} w ON (s.workshopid = w.id)
-                      JOIN {course_modules} cm ON (w.id = cm.instance)
-                      JOIN {modules} m ON (m.name = 'workshop' AND m.id = cm.module)
-                     WHERE cm.id = ? AND s.authorid = ? AND s.example = 0";
-
-            if ($DB->count_records_sql($sql, array($data['cmid'], $USER->id))) {
-                $errors['title'] = get_string('err_multiplesubmissions', 'mod_workshop');
-            }
-        }
-
-        $getfiles = file_get_drafarea_files($data['attachment_filemanager']);
-        if (empty($getfiles->list) and html_is_blank($data['content_editor']['text'])) {
-            $errors['content_editor'] = get_string('submissionrequiredcontent', 'mod_workshop');
-            $errors['attachment_filemanager'] = get_string('submissionrequiredfile', 'mod_workshop');
-        }
-
-        if (isset($data['attachment_filemanager']) and isset($this->_customdata['workshop']->submissionfiletypes)) {
-            $whitelist = workshop::normalize_file_extensions($this->_customdata['workshop']->submissionfiletypes);
-            if ($whitelist) {
-                $draftfiles = file_get_drafarea_files($data['attachment_filemanager']);
-                if ($draftfiles) {
-                    $wrongfiles = array();
-                    foreach ($draftfiles->list as $file) {
-                        if (!workshop::is_allowed_file_type($file->filename, $whitelist)) {
-                            $wrongfiles[] = $file->filename;
-                        }
-                    }
-                    if ($wrongfiles) {
-                        $a = array(
-                            'whitelist' => workshop::clean_file_extensions($whitelist),
-                            'wrongfiles' => implode(', ', $wrongfiles),
-                        );
-                        $errors['attachment_filemanager'] = get_string('err_wrongfileextension', 'mod_workshop', $a);
-                    }
-                }
-            }
-        }
+        $errors += $this->_customdata['workshop']->validate_submission_data($data);
 
         return $errors;
     }

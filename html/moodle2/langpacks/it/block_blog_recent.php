@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_blog_recent', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['blog_recent:addinstance'] = 'Aggiungere blocco Interventi Blog Recenti'
 $string['norecentblogentries'] = 'Non ci sono interventi recenti';
 $string['numentriestodisplay'] = 'Numero di interventi recenti da visualizzare';
 $string['pluginname'] = 'Interventi Blog recenti';
+$string['privacy:metadata'] = 'Il blocco Interventi blog recenti visualizza solamente dati provenienti da altre parti.';
 $string['recentinterval'] = 'Intervallo di tempo entro il quale considerare "recente" un intervento';

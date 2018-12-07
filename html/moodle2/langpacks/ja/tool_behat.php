@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_behat', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ $string['newstepsinfo'] = '新しいステップ定義の追加に関して、{$
 $string['newtestsinfo'] = '新しいテストの記述に関して、{$a} をご覧ください。';
 $string['nostepsdefinitions'] = 'このフィルタに合致するステップ定義はありません。';
 $string['pluginname'] = '受け入れテスト';
+$string['privacy:metadata'] = '受け入れテストプラグインはどのような個人データも保存しません。';
 $string['stepsdefinitionscomponent'] = 'エリア';
 $string['stepsdefinitionscontains'] = '含む';
 $string['stepsdefinitionsfilters'] = 'ステップ定義';

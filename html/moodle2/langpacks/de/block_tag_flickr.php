@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_tag_flickr', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_tag_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,8 @@ $string['interestingness-asc'] = 'Interessantheit aufsteigend';
 $string['interestingness-desc'] = 'Interessantheit absteigend';
 $string['numberofphotos'] = 'Anzahl von Fotos';
 $string['pluginname'] = 'Flickr';
+$string['privacy:metadata:block_tag_flickr'] = 'Das Flickr-Block-Plugin speichert keine persönlichen Daten. Es über trägt aber Daten an das externe System.';
+$string['privacy:metadata:block_tag_flickr:tags'] = 'Die Schlagwortliste wird im CSV-Format an Flickr zur Bildersuche gesandt';
 $string['relevance'] = 'Bedeutung';
 $string['sortby'] = 'Sortierung nach';
 $string['tag_flickr:addinstance'] = 'Flickr-Block hinzufügen';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,10 @@ $string['eventchapterdeleted'] = '删除章节';
 $string['eventchapterupdated'] = '更新章节';
 $string['eventchapterviewed'] = '查看章节';
 $string['hidechapter'] = '隐藏章节“{$a}”';
+$string['indicator:cognitivedepth'] = '图书资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在图书资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '图书资源社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在图书资源中所达到的社会广度。';
 $string['modulename'] = '图书';
 $string['modulename_help'] = '通过图书模块，教师可以用类似书本的格式创建一份多页的资源，并且可以分章节和子章节。图书可以包含媒体文件和文本，可以有很长的篇幅，并且可以分节。
 
@@ -92,5 +96,6 @@ $string['subchapter'] = '子章节';
 $string['subchapternotice'] = '（只用第一章建立后才可用）';
 $string['subplugintype_booktool'] = '图书工具';
 $string['subplugintype_booktool_plural'] = '图书工具';
+$string['tagarea_book_chapters'] = '图书章节';
 $string['toc'] = '目录';
 $string['top'] = '顶部';

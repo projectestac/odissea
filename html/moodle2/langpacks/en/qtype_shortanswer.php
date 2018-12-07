@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,3 +43,4 @@ $string['pluginnameediting'] = 'Editing a Short answer question';
 $string['pluginname_help'] = 'In response to a question (that may include a image) the respondent types a word or short phrase. There may be several possible correct answers, each with a different grade. If the "Case sensitive" option is selected, then you can have different scores for "Word" or "word".';
 $string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnamesummary'] = 'Allows a response of one or a few words that is graded by comparing against various model answers, which may contain wildcards.';
+$string['privacy:metadata'] = 'The Short answer question type plugin does not store any personal data.';

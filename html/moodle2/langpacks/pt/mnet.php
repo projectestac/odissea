@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -175,6 +175,7 @@ $string['permittedtransports'] = 'Transportes permitidos';
 $string['phperror'] = 'Um erro interno do PHP impediu a satisfação do seu pedido.';
 $string['position'] = 'Posição';
 $string['postrequired'] = 'A função de apagar requer um pedido POST.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Modo adaptável (sem penalizações) não armazena dados pessoais.';
 $string['profileexportfields'] = 'Campos a enviar';
 $string['profilefielddesc'] = 'Esta configuração permite definir a lista de campos do perfil que são enviados e recebidos através da Rede Moodle quando as contas de utilizador são criadas ou atualizadas. Além disso, é possível sobrepor esta configuração individualmente para cada par da Rede Moodle. De notar que os campos seguintes são sempre enviados e não são opcionais: {$a}';
 $string['profilefields'] = 'Campos do perfil';

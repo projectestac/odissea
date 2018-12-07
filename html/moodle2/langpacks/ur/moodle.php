@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ur', branch 'MOODLE_32_STABLE'
+ * Strings for component 'moodle', language 'ur', branch 'MOODLE_34_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,7 @@ $string['deletecompletely'] = 'مکمل اخراج کرو';
 $string['deletecourse'] = 'کسی کورس کو خارج کرو';
 $string['deletecoursecheck'] = 'کیا آپ واقع ہی مکمل طور اس کورس اور اسکی ساری معلومات کا اخراج چاہتے ہیں';
 $string['deleted'] = 'اخراج ہو چکا';
+$string['deletepicture'] = 'خارج کرو';
 $string['deleteselected'] = 'انتخاب کا اخراج ہو چکا';
 $string['department'] = 'شعبہ';
 $string['desc'] = 'ترتیب سعودی';
@@ -158,6 +159,7 @@ $string['mins'] = 'منٹ';
 $string['minutes'] = 'منٹ';
 $string['miscellaneous'] = 'متفرق';
 $string['missingcategory'] = 'آپ کو ایک زمرہ منتخب کرنا ہے';
+$string['modshow'] = 'دکھاؤ';
 $string['mycourses'] = 'میرے کورسز';
 $string['myfiles'] = 'میری نجی فائلیں';
 $string['myhome'] = 'میرا گھر';

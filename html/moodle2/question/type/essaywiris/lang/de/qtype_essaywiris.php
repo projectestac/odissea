@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Wie bei der standardmäßigen Freitext-Frage. Alle
 $string['pluginnamesummary'] = 'Wie bei der standardmäßigen Freitext-Frage. Allerdings können Sie verschiedene Fragetexte durch Einfügen von zufälligen Zahlen, Formeln oder grafischen Darstellungen erstellen. Die zufälligen Werte können auch für das Feedback verwendet werden.';
 $string['pluginnameadding'] = 'Freitext-Frage hinzufügen – Mathematik und Naturwissenschaften von WIRIS';
 $string['pluginnameediting'] = 'Freitext-Frage bearbeiten – Mathematik und Naturwissenschaften von WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

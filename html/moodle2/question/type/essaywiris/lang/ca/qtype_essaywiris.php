@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Igual que la pregunta estàndard de Resposta obert
 $string['pluginnamesummary'] = 'Igual que la pregunta estàndard de Resposta oberta, però es poden crear enunciats i retroalimentacions múltiples inserint variables amb números, fórmules o gràfiques.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de resposta oberta - Matemàtiques i Ciències per WIRIS';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de resposta oberta - Matemàtiques i Ciències per WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

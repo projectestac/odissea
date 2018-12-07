@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_flatfile', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a ser executada quando a inscrição do utilizador expira. Por favor, note que alguns dados e configurações do utilizador são removidos da disciplina durante o processo de desinscrição.';
 $string['filelockedmail'] = 'O script cron não conseguiu apagar do servidor o ficheiro de texto ({$a}) que está a ser utilizado na gestão de inscrições. O problema deverá estar relacionado com as permissões desse ficheiro. Enquanto esta questão não for resolvida, o ficheiro será processado consecutivamente por não ter sido removido durante o processamento.';
 $string['filelockedmailsubject'] = 'Erro importante: Ficheiro de inscrições';
+$string['flatfileenrolments'] = 'Inscrições Ficheiro de texto (CSV)';
 $string['flatfile:manage'] = 'Gerir inscrições do utilizador manualmente';
 $string['flatfilesync'] = 'Sincronização de inscrições com ficheiro Flat';
 $string['flatfile:unenrol'] = 'Desinscrever utilizadores da disciplina manualmente.';
@@ -64,3 +65,11 @@ Poderá assemelhar-se a algo como:
    del, student, 17, CF101
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'O módulo inscrição Ficheiro de texto (CSV) pode armazenar dados pessoais relacionados com inscrições futuras na tabela enrol_flatfile';
+$string['privacy:metadata:enrol_flatfile:action'] = 'A ação de inscrição esperada na data atribuída.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'O couseid cuja inscrição se relaciona.';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'O ID do papel a ser atribuído ou revogado.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'A hora em que a alteração da inscrição acaba.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'A hora de modificação desta alteração de inscrição.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'A hora em que a alteração da inscrição inicia.';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'O id do utilizador relacionado com a atribuição de papel.';

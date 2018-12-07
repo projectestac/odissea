@@ -171,6 +171,7 @@ Feature: Manage plan workflow
     And I follow "Learning plans"
     When I click on "Complete this learning plan" of edit menu in the "Test-Plan3" row
     And I click on "Complete this learning plan" "button" in the "Confirm" "dialogue"
+    And I wait until the page is ready
     And I follow "Test-Plan4"
     And I follow "Complete this learning plan"
     And I click on "Complete this learning plan" "button" in the "Confirm" "dialogue"
@@ -179,7 +180,7 @@ Feature: Manage plan workflow
     And I should not see "Active"
     And I log out
 
-Scenario: Manager reopen a complete learning plan
+  Scenario: Manager reopen a complete learning plan
     Given  the following lp "plans" exist:
       | name | user | description | status | reviewer |
       | Test-Plan3 | user1 | Description of plan 3 for user 1 | complete | manager1 |

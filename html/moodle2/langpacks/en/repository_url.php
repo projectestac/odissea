@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_url', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_url', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'URL repository type configuration';
 $string['download'] = 'Download';
 $string['pluginname'] = 'URL downloader';
+$string['privacy:metadata'] = 'The URL downloader repository plugin does not store or tranmit any personal data.';
 $string['rename'] = 'Name';
 $string['url'] = 'URL';
 $string['url:view'] = 'Use URL downloader in file picker';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_paypal', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,9 @@ $string['enrolperiod_desc'] = '登録が有効な場合のデフォルト登録�
 $string['enrolperiod_help'] = '登録が有効な場合の登録期間です。ユーザが登録された時点で開始します。この設定が無効にされた場合、登録期間は無制限となります。';
 $string['enrolstartdate'] = '開始日';
 $string['enrolstartdate_help'] = 'この設定を有効にした場合、ユーザはこの日以降のみ登録することができます。';
+$string['errdisabled'] = 'PayPal登録プラグインが無効にされているため支払通知を処理できません。';
+$string['erripninvalid'] = '即時支払通知がPayPalによって確認されました。';
+$string['errpaypalconnect'] = '即時支払通知を確認するための {$a->url} に接続できませんでした: {$a->result}';
 $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除中、一部のユーザデータおよび設定が削除されてしまうことに留意してください。';
 $string['mailadmins'] = '管理者に通知する';
@@ -56,7 +59,35 @@ $string['paypal:unenrol'] = 'ユーザをコースから登録解除する';
 $string['paypal:unenrolself'] = '自分自身をコースから登録解除する';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'あなたはPayPalモジュールで有料のコースを設定することができます。コースの費用がゼロの場合、学生は登録時に支払いを求められません。サイト全体に適用されるデフォルトの費用をここで設定します。また、コース設定でコース個別の費用を設定することができます。コース費用はサイト全体の費用に優先されます。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'PayPal登録のPayPalトランザクションに関する情報です。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = '支払受領者 (マーチャント) のメールアドレスまたはPayPalアカウントIDです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = '販売されたコースのIDです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'コースの登録インスタンスのIDです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = '登録が販売されたコースのフルネームです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'PayPalウェブサイト支払ノートフィールドに購入者によって入力されたノートです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = '購入者のフルネームです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = '払い戻し、リバースまたはリバースのキャンセル時のオリジナルトランザクションのトランザクションIDです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = '支払ステータスです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = '支払いがeCheck、PayPalバランス、クレジットカードまたは即時送金によって実行されたか保持します。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = '支払ステータスが保留にされている理由です (保留されている場合)。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = '支払ステータスがリバース、返金、リバースのキャンセルまたは拒否になっている場合の理由です (ステータスがどれかにあたる場合)。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = '支払先 (マーチャントである場合) の主メールアドレスです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = '支払先 (例 マーチャント) のユニークPayPalアカウントIDです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = '支払時に課された合計税額です。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = '支払いに関してPayPalから通知されるMoodleの時間です。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = '登録された場合の購入者からの支払いに関するマーチャントのオリジナルトランザクションIDナンバーです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'コース登録を購入したユーザのIDです。';
+$string['privacy:metadata:enrol_paypal:paypal_com'] = 'PayPal登録プラグインはMoodleからPayPalウェブサイトにユーザデータを送信します。';
+$string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'コースを購入するユーザのアドレスです。';
+$string['privacy:metadata:enrol_paypal:paypal_com:city'] = 'コースを購入するユーザの市町村です。';
+$string['privacy:metadata:enrol_paypal:paypal_com:country'] = 'コースを購入するユーザの国です。';
+$string['privacy:metadata:enrol_paypal:paypal_com:custom'] = 'ユーザ (購入者) ID、コースID、登録インスタンスIDを含むハイフンで区切られたストリングです。';
+$string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'コースを購入するユーザのメールアドレスです。';
+$string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'コースを購入するユーザの名です。';
+$string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'コースを購入するユーザの姓です。';
+$string['privacy:metadata:enrol_paypal:paypal_com:os0'] = '購入者のフルネームです。';
 $string['sendpaymentbutton'] = 'PayPalで支払いを送信する';
 $string['status'] = 'PayPal登録を許可する';
 $string['status_desc'] = 'デフォルトでユーザのコース登録にPayPalを使用できるようにします。';
+$string['transactions'] = 'PayPalトランザクションです。';
 $string['unenrolselfconfirm'] = '本当にコース「 {$a} 」からあなたを登録解除してもよろしいですか?';

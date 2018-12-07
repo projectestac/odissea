@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,8 @@ $string['pluginname'] = 'Memcached';
 $string['prefix'] = '前置キー';
 $string['prefix_help'] = 'この設定はアイテムキーに「ドメイン」を作成するために使用することができます。あなたは単一のmemcachedインストレーションにおいて複数のmemcachedストアを作成できるようになります。キー長の問題に遭遇しないために文字長は半角16文字以上にすることはできません。';
 $string['prefixinvalid'] = '無効な接頭辞です。あなたは「a-z A-Z 0-9-_」のみ使用することができます。';
+$string['privacy:metadata:memcached'] = 'Memcachedキャッシュストアプラグインはキャッシング機能の一部として短時間だけデータを保存します。このデータはデータが定期的に削除されるMemcachedサーバに保存されます。';
+$string['privacy:metadata:memcached:data'] = 'キャッシュに保存された様々なデータです。';
 $string['serialiser_igbinary'] = 'igbinaryシリアライザ';
 $string['serialiser_json'] = 'JSONシリアライザ';
 $string['serialiser_php'] = 'デフォルトのPHPシリアライザ';

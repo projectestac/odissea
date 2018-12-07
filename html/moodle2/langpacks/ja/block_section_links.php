@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_section_links', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_section_links
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['numsections1_help'] = 'この値にコース内セクション数が到
 $string['numsections2'] = '代替セクション数';
 $string['numsections2_help'] = 'この値にコース内セクション数が到達した場合、代替増分値が使用されます。';
 $string['pluginname'] = 'セクションリンク';
+$string['privacy:metadata'] = 'セクションリンクブロックは他の場所で保存されたデータのみ表示します。';
 $string['section_links:addinstance'] = '新しいセクションリンクブロックを追加する';
 $string['topics'] = 'トピック';
 $string['weeks'] = '週';

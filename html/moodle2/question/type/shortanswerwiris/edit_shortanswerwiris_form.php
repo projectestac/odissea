@@ -44,7 +44,7 @@ class qtype_shortanswerwiris_edit_form extends qtype_wq_edit_form {
                     $elem = $mform->_elements[$value];
                     foreach ($elem->_elements as $k => $subel) {
                         if ($subel->_type == 'text') {
-                            // Add class info in order to be recognized by WIRIS quizzes.
+                            // Add class info in order to be recognized by Wiris Quizzes.
                             $classattributes = 'wirisauthoringfield wirisstudio wirisopenanswer';
                             $classattributes .= ' ' . 'wirisvariables wirisauxiliarcas wirisgradingfunction';
                             $subel->_attributes['class'] = $classattributes;

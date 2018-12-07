@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,10 @@ Folgende Einstelloptionen sind möglich:
 * Neues Fenster - Die URL wird in einem neuen Browserfenster mit Menüs und mit Adressleiste angezeigt';
 $string['externalurl'] = 'Externe URL';
 $string['framesize'] = 'Frame-Höhe';
+$string['indicator:cognitivedepth'] = 'URL kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in bei einer URL-Ressource erreicht hat.';
+$string['indicator:socialbreadth'] = 'URL sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in bei einer URL-Ressource erreicht hat.';
 $string['invalidstoredurl'] = 'Das Material kann nicht angezeigt werden, weil die URL ungültig ist';
 $string['invalidurl'] = 'Ungültige URL';
 $string['modulename'] = 'Link/URL';
@@ -72,6 +76,7 @@ $string['popupwidth'] = 'Popup-Breite (Pixel)';
 $string['popupwidthexplain'] = 'Standardbreite von Popup-Fenstern festlegen';
 $string['printintro'] = 'Beschreibung anzeigen';
 $string['printintroexplain'] = 'Beschreibung unterhalb des Inhalts anzeigen? Einige Anzeigetypen können die Beschreibung nicht anzeigen, selbst wenn diese Option aktiviert ist.';
+$string['privacy:metadata'] = 'Das Plugin \'Link/URL\' speichert keine personenbezogenen Daten.';
 $string['rolesinparams'] = 'Rollennamen als Parameter einbeziehen';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'Server-URL';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_legacy', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_legacy', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_legacy
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,4 +30,11 @@ $string['loglegacy'] = 'レガシーデータを記録する';
 $string['loglegacy_help'] = 'このプラグインではログデータをレガシーログテーブル (mdl_log) に記録します。この機能は新しく効率の良いロギングプラグインに置き換えられました。そのため、あなたが古いログテーブルを直接参照している古いカスタムレポートを使用している場合のみ、このプラグインを動作させてください。レガシーログに書き込むことにより負荷を上げることになるため、パフォーマンスの理由から必要でない場合はこのプラグインを無効にしてください。';
 $string['pluginname'] = 'レガシーログ';
 $string['pluginname_desc'] = 'レガシーログテーブルにログエントリを記録するログプラグインです。';
+$string['privacy:metadata:log'] = '過去のイベント群です。';
+$string['privacy:metadata:log:action'] = 'アクションの説明です。';
+$string['privacy:metadata:log:info'] = '追加情報です。';
+$string['privacy:metadata:log:ip'] = 'イベントの時間に使用されるIPアドレスです。';
+$string['privacy:metadata:log:time'] = 'アクションが実施される日時です。';
+$string['privacy:metadata:log:url'] = 'イベントに関連するURLです。';
+$string['privacy:metadata:log:userid'] = 'アクションを実施するユーザのIDです。';
 $string['taskcleanup'] = 'レガシーログテーブルクリーンアップ';

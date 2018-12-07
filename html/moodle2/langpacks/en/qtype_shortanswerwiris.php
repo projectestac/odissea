@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswerwiris', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_shortanswerwiris', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_shortanswerwiris
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['pluginnameadding'] = 'Adding a short answer - math & science question b
 $string['pluginnameediting'] = 'Editing a short answer - math & science question by WIRIS';
 $string['pluginname_help'] = 'Like the standard Short answer, but you can check the answer using the mathematical equivalence of your choice. Optionally, insert random parameters in the wording of your question and provide a full-fledged formula editor for the answer.';
 $string['pluginnamesummary'] = 'Like the standard Short answer, but you can check the answer using the mathematical equivalence of your choice. Optionally, insert random parameters in the wording of your question and provide a full-fledged formula editor for the answer.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Short-Answer question type does not effect or store any data itself.';
 $string['shortanswerwiris'] = 'Short answer - science';
 $string['shortanswerwiris_addanswers'] = 'Blank for another choice';
 $string['shortanswerwiris_algorithm'] = 'Algorithm';

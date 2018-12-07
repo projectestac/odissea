@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_random', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['includingsubcategories'] = 'サブカテゴリを含む';
 $string['pluginname'] = 'ランダム問題';
 $string['pluginnameediting'] = 'ランダム問題の編集';
 $string['pluginname_help'] = 'ランダム問題は通常の問題タイプではありませんが特定のカテゴリよりランダムに選択された問題を活動に追加することができます。';
+$string['privacy:metadata'] = 'ランダム問題タイププラグインはどのような個人データも保存しません。';
 $string['randomqname'] = 'ランダム ({$a})';
 $string['randomqplusname'] = 'ランダム ({$a} およびサブカテゴリ)';
 $string['selectedby'] = '{$a->randomname} に選択された {$a->questionname}';

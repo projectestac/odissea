@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Ajouter une annotation pour {$a} personnes';
+$string['addbulknotedone'] = 'Annotation ajoutée pour {$a} personnes';
+$string['addbulknotedonesingle'] = 'Annotation ajoutée pour 1 personne';
+$string['addbulknotesingle'] = 'Ajouter une annotation pour 1 personne';
 $string['addnewnote'] = 'Ajouter une annotation';
 $string['addnewnoteselect'] = 'Sélectionnez les utilisateurs sur lesquels écrire une annotation';
 $string['bynameondate'] = 'par {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Une erreur est survenue lors de la suppression de l\'annotation';
 $string['configenablenotes'] = 'Activer la prise de notes sur des utilisateurs.';
 $string['content'] = 'Contenu';
 $string['course'] = 'cours';
@@ -58,8 +61,15 @@ $string['page-notes-index'] = 'Page principale des annotations';
 $string['page-notes-x'] = 'Toute page d\'annotations';
 $string['personal'] = 'personnelle';
 $string['personalnotes'] = 'Annotations personnelles';
+$string['privacy:metadata:core_notes'] = 'Le composant Annotations enregistre des annotations d\'utilisateurs dans le sous-système central.';
+$string['privacy:metadata:core_notes:content'] = 'Le contenu de l\'annotation.';
+$string['privacy:metadata:core_notes:courseid'] = 'L\'identifiant du cours associé à l\'annotation.';
+$string['privacy:metadata:core_notes:created'] = 'La date et l\'heure de la création de l\'annotation.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'La date et l\'heure de la dernière modification de l\'annotation.';
+$string['privacy:metadata:core_notes:publishstate'] = 'Le statut de publication de l\'annotation.';
+$string['privacy:metadata:core_notes:userid'] = 'L\'identifiant de l\'utilisateur associé à l\'annotation.';
 $string['publishstate'] = 'Contexte';
-$string['publishstate_help'] = 'Le contexte d\'une annotation détermine qui peut la consulter.
+$string['publishstate_help'] = 'Le contexte d\'une annotation détermine qui peut la consulter. Les utilisateurs doivent être conscients que toutes les annotations, y compris celles contenant des données personnelles, peuvent être communiquées selon les lois de leur juridiction.
 
 * Personnel : l\'annotation ne sera visible que par vous-même
 * Course : l\'annotation sera visible pour les enseignants de ce cours

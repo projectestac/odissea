@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeimport_direct', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeimport_direct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Importeer cijfers van CSV';
 $string['pluginname'] = 'Plak vanuit rekenblad';
+$string['privacy:metadata'] = 'De imporeer cijfers van een gekopieerd rekenblad-plugin bewaart geen persoonlijke gegevens.';
 $string['userdata'] = 'Help gegevens te kopiëren in dit formulier.';
 $string['userdata_help'] = 'Cijfers kunnen van een rekenblad gekopieerd worden en geplakt worden in de cijferlijst. Het rekenblad moet een kolom met gegevens over de gebruikersidentiteit hebben - hun gebruikernaam, ID-nummer of e-mailadres. Elke kolom die je gaat importeren moet een kolomkop hebben.';

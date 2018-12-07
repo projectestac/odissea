@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_flickr_public', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,11 @@ $string['notitle'] = 'notitle';
 $string['nullphotolist'] = 'There are no photos in this account';
 $string['pluginname'] = 'Flickr public';
 $string['pluginname_help'] = 'Repository on flickr.com';
+$string['privacy:metadata:repository_flickr_public'] = 'The Flickr public repository plugin does not store any personal data, but does transmit user data from Moodle to the remote system.';
+$string['privacy:metadata:repository_flickr_public:author'] = 'The Flickr public repository content author.';
+$string['privacy:metadata:repository_flickr_public:email_address'] = 'The Flickr public repository user email address.';
+$string['privacy:metadata:repository_flickr_public:text'] = 'The Flickr public repository user search text.';
+$string['privacy:metadata:repository_flickr_public:user_id'] = 'The Flickr public repository user ID.';
 $string['remember'] = 'Remember me';
 $string['secret'] = 'Secret';
 $string['sharealike'] = 'Yes, as long as others share alike';

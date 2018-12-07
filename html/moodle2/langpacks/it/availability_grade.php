@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grade', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['missing'] = '(attività mancante)';
 $string['option_max'] = 'deve essere <';
 $string['option_min'] = 'deve essere  ≥';
 $string['pluginname'] = 'Criterio basato sulla valutazione';
+$string['privacy:metadata'] = 'l plugin "criterio di accesso basato sulla valutazione" non memorizza dati personali.';
 $string['requires_any'] = 'Aver ricevuto una valutazione in <strong>{$a}</strong>';
 $string['requires_max'] = 'Non aver ottenuto né superato una determinata valutazione in <strong>{$a}</strong>';
 $string['requires_min'] = 'Aver ottenuto o superato la valutazione richiesta in <strong>{$a}</strong>';

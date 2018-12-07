@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,23 @@ $string['page-mod-assignment-view'] = 'Opdrachtmodule hoofdpagina';
 $string['page-mod-assignment-x'] = 'Elke opdracht module pagina';
 $string['pluginadministration'] = 'Opdrachten 2.2 (uitgeschakeld) beheer';
 $string['pluginname'] = 'Opdracht 2.2 (uitgeschakeld)';
+$string['privacy:markedsubmissionspath'] = 'beoordeelde inzendingen';
+$string['privacy:metadata:assignmentfilter'] = 'Filtervoorkeur voor de inzendingen van de opdracht.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Voorkeur voor het versturen van informatie-email over ingestuurde opdrachten.';
+$string['privacy:metadata:assignmentperpage'] = 'Voorkeur voor het getoonde aantal ingestuurde opdrachten per pagina.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Voorkeur voor snel beoordelen van ingestuurde opdrachten.';
+$string['privacy:metadata:assignment_submissions'] = 'Ingestuurde opdrachten geassocieerd met een opdracht.';
+$string['privacy:metadata:assignment_submissions:data1'] = 'De online tekst ingestuurd als opdracht.';
+$string['privacy:metadata:assignment_submissions:data2'] = 'De gevolgde status voor de ingezonden opdracht.';
+$string['privacy:metadata:assignment_submissions:grade'] = 'Het aan de ingestuurde opdracht toegekende cijfer.';
+$string['privacy:metadata:assignment_submissions:mailed'] = 'De ge-e-mailde statusmelding van de ingestuurde opdracht.';
+$string['privacy:metadata:assignment_submissions:numfiles'] = 'Het maximale aantal bestanden dat toegestaan is voor een ingestuurde opdracht.';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'De opmerking die hoort bij een ingestuurde opdracht.';
+$string['privacy:metadata:assignment_submissions:teacher'] = 'De ID van de leraar die de ingestuurde opdracht beoordeelt.';
+$string['privacy:metadata:assignment_submissions:timecreated'] = 'De aanmaakdatum/tijd van de ingestuurde opdracht.';
+$string['privacy:metadata:assignment_submissions:timemarked'] = 'De beoordelingsdatum/tijd van de ingestuurde opdracht.';
+$string['privacy:metadata:assignment_submissions:timemodified'] = 'De wijzigingsdatum/tijd van de ingestuurde opdracht.';
+$string['privacy:metadata:assignment_submissions:userid'] = 'De gebruikerID van wie de opdracht instuurde.';
+$string['privacy:submissionpath'] = 'ingestuurde opdracht';
 $string['upgradenotification'] = 'Deze opdracht is gebaseerd op een oudere opdrachtmodule';
 $string['viewassignmentupgradetool'] = 'Bekijk de opdracht upgrade tool';

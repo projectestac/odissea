@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_log', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,12 @@ $string['configlogplugins'] = 'Aktivieren Sie die notwendigen Plugins und wähle
 $string['logging'] = 'Logdaten';
 $string['managelogging'] = 'Logdaten verwalten';
 $string['pluginname'] = 'Logdatenverwalter';
+$string['privacy:metadata:logstore'] = 'LogStores';
+$string['privacy:path:logs'] = 'Logs';
+$string['privacy:request:origin:cli'] = 'CommandLine-Tool';
+$string['privacy:request:origin:restore'] = 'Wiederhergestelltes Backup';
+$string['privacy:request:origin:web'] = 'Standard-Web-Request';
+$string['privacy:request:origin:ws'] = 'MobileApp oder Webservice';
 $string['reportssupported'] = 'Berichte werden unterstützt';
 $string['subplugintype_logstore'] = 'Logdatenspeicher';
 $string['subplugintype_logstore_plural'] = 'Logdatenspeicher';

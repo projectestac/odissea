@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,6 @@ $string['configdndresizewidth'] = 'عند إنشاء ملصق عن طريق سح
 $string['dndmedia'] = 'وسائط السحب والإفلات';
 $string['dndresizeheight'] = 'تغيير ارتفاع منطقة السحب والإفلات';
 $string['dndresizewidth'] = 'تغيير عرض منطقة السحب والإفلات';
-$string['dnduploadlabel'] = 'إضافة صورة إلى صفحة المقرر الدراسي';
 $string['dnduploadlabeltext'] = 'إضافة ملصق إلى صفحة المقرر الدراسي';
 $string['label:addinstance'] = 'إضافة ملصق جديد';
 $string['labeltext'] = 'نص الملصق';

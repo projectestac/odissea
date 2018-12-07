@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'my', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,12 +32,12 @@ $string['defaultpage'] = 'Προεπιλεγμένη σελίδα Το Moodle μ
 $string['defaultprofilepage'] = 'Προεπιλεγμένη σελίδα προφίλ';
 $string['delpage'] = 'Διαγραφή σελίδας';
 $string['managepages'] = 'Διαχείριση σελίδων';
-$string['mymoodle'] = 'Η αρχική μου';
+$string['mymoodle'] = 'Προβολή των μαθημάτων μου';
 $string['nocourses'] = 'Δεν υπάρχει πληροφορία του μαθήματος για προβολή.';
-$string['noguest'] = 'Η σελίδα \'Η αρχική μου\' δεν είναι διαθέσιμη στους επισκέπτες';
-$string['pinblocks'] = 'Διαμόρφωση μπλοκ στη σελίδα Το Moodle μου';
-$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του Moodle στη σελίδα επισκόπησης \'Το Moodle μου\'.';
+$string['noguest'] = 'Η σελίδα \'Επισκόπιση Μαθήματος\' δεν είναι διαθέσιμη σε guest χρήστες';
+$string['pinblocks'] = 'Διαμόρφωση blocks με πινέζα για τη σελίδα my ΠΗΛΕΑΣ';
+$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του ΠΗΛΕΑΣ στη \'my ΠΗΛΕΑΣ\' σελίδα τους.';
 $string['reseterror'] = 'Προέκυψε σφάλμα κατά την επαναφορά της σελίδας';
 $string['reseteveryonesdashboard'] = 'Επαναφορά αρχικής σελίδας για όλους τους χρήστες';
 $string['reseteveryonesprofile'] = 'Επαναφορά προφίλ για όλους τους χρήστες';
-$string['resetpage'] = 'Επαναφορά σελίδας σε προεπιλογή';
+$string['resetpage'] = 'Επαναφορά σελίδα σε προεπιλογή';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_quiz_results', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_quiz_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '小テスト結果 (無効)';
+$string['privacy:metadata'] = '小テスト結果ブロックは他の場所で保存されたデータのみ表示します。';
 $string['quiz_results:addinstance'] = '新しい小テスト結果ブロックを追加する';

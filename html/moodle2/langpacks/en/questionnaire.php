@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'questionnaire', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,8 @@ $string['alreadyfilled'] = 'You have already filled out this questionnaire for u
 $string['andaveragevalues'] = 'and average values';
 $string['anonymous'] = 'Anonymous';
 $string['answer'] = 'Answer';
+$string['answergiven'] = 'This answer given';
+$string['answernotgiven'] = 'This answer not given';
 $string['answerquestions'] = 'Answer the questions...';
 $string['answers'] = 'Answers';
 $string['attempted'] = 'This questionnaire has been submitted.';
@@ -84,6 +86,7 @@ $string['closedate_help'] = 'You can specify a date to close the questionnaire h
  Users will not be able to fill out the questionnaire after that date. If this is not selected, it will never be closed.';
 $string['closeson'] = 'Questionnaire closes on {$a}';
 $string['completionsubmit'] = 'Student must submit this questionnaire to complete it';
+$string['condition'] = 'Condition';
 $string['confalts'] = '- OR - <br />Confirmation page';
 $string['configmaxsections'] = 'Maximum feedback sections';
 $string['configusergraph'] = 'Display charts for "Personality Test" feedback';
@@ -117,10 +120,12 @@ $string['deletedisabled'] = 'This item cannot be deleted';
 $string['deletedresp'] = 'Deleted Response';
 $string['deleteresp'] = 'Delete this Response';
 $string['deletingresp'] = 'Deleting Response';
+$string['dependencies'] = 'Dependencies';
 $string['dependquestion'] = 'Parent Question';
 $string['dependquestion_help'] = 'You can select a parent question and a choice option for this question. A child question will only be displayed
                 to the student if its parent question and parent choice have been previously selected.';
 $string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
+$string['directwarnings'] = 'Direct dependencies to this question will be removed. This will affect:';
 $string['displaymethod'] = 'Display method not defined for question.';
 $string['download'] = 'Download';
 $string['downloadtextformat'] = 'Download in text format';
@@ -224,6 +229,7 @@ $string['includechoicetext'] = 'Include choice text';
 $string['incorrectcourseid'] = 'Course ID is incorrect';
 $string['incorrectmodule'] = 'Course Module ID was incorrect';
 $string['incorrectquestionnaire'] = 'Questionnaire is incorrect';
+$string['indirectwarnings'] = 'This list shows the indirect dependent questions and the remaining dependencies for direct dependent questions:';
 $string['invalidresponse'] = 'Invalid response specified.';
 $string['invalidresponserecord'] = 'Invalid response record specified.';
 $string['invalidsurveyid'] = 'Invalid questionnaire ID.';
@@ -235,6 +241,7 @@ $string['length'] = 'Length';
 $string['managequestions'] = 'Manage questions';
 $string['managequestions_help'] = 'In the Manage questions section of the Edit Questions page, you can conduct a number of operations on a Questionnaire\'s questions.';
 $string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
+$string['mandatory'] = 'Mandatory - All these dependencies must be fulfilled.';
 $string['maxdigitsallowed'] = 'Max. digits allowed';
 $string['maxdigitsallowed_help'] = 'Use **Max. digits allowed** to set a limit to the number of characters entered for a Numeric question. Note that the
 decimal point also counts as one character!';
@@ -301,6 +308,7 @@ $string['notificationsimple'] = 'Notification only';
 $string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notopen'] = 'This questionnaire will not open until {$a}.';
 $string['notrequired'] = 'Response is not required';
+$string['notset'] = 'not set';
 $string['not_started'] = 'not started';
 $string['nousersselected'] = 'No users selected';
 $string['num'] = '#';
@@ -318,6 +326,7 @@ $string['opendate'] = 'Use Open Date';
 $string['opendate_help'] = 'You can specify a date to open the questionnaire here. Check the check box, and select the date and time you want.
  Users will not be able to fill out the questionnaire before that date. If this is not selected, it will be open immediately.';
 $string['option'] = 'option {$a}';
+$string['optional'] = 'Optional - At least one of this dependencies has to be fulfilled.';
 $string['optionalname'] = 'Question Name';
 $string['optionalname_help'] = 'The Question Name is only used when you export responses to CSV/Excel format.
  If you never export to CSV, then you needn\'t worry about Question names at all.
@@ -349,6 +358,7 @@ $string['overviewnumrespvw1'] = 'response';
 $string['owner'] = 'Owner';
 $string['page'] = 'Page';
 $string['pageof'] = 'Page {$a->page} of {$a->totpages}';
+$string['parent'] = 'Parent';
 $string['participant'] = 'Participant';
 $string['pleasecomplete'] = 'Please complete this choice.';
 $string['pluginadministration'] = 'Questionnaire administration';
@@ -482,6 +492,7 @@ You can provide more than one address by separating them with commas.
 Leave blank for no email backup.';
 $string['send_message'] = 'Send message to selected users';
 $string['send_message_to'] = 'Send message to:';
+$string['set'] = 'set';
 $string['settings'] = 'Settings';
 $string['settingssaved'] = 'Settings saved';
 $string['show_nonrespondents'] = 'Non-respondents';

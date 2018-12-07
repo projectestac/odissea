@@ -110,15 +110,16 @@ define(['jquery',
      * Callback to render the region template.
      *
      * @param {Object} context The context for the template.
+     * @return {Promise}
      */
     PlanActions.prototype._renderView = function(context) {
         var self = this;
-        templates.render(self._template, context)
-            .done(function(newhtml, newjs) {
+        return templates.render(self._template, context)
+            .then(function(newhtml, newjs) {
                 $(self._region).replaceWith(newhtml);
                 templates.runTemplateJS(newjs);
-            })
-            .fail(notification.exception);
+                return;
+            });
     };
 
     /**
@@ -129,19 +130,26 @@ define(['jquery',
      * @return {Promise}
      */
     PlanActions.prototype._callAndRefresh = function(calls, planData) {
-        var self = this;
+        // Because this function causes a refresh, we must track the JS completion from start to finish to prevent
+        // stale reference issues in Behat.
+        var callKey = 'tool_lp/planactions:_callAndRefresh-' + Math.floor(Math.random() * Math.floor(1000));
+        M.util.js_pending(callKey);
 
+        var self = this;
         calls.push({
             methodname: self._contextMethod,
             args: self._getContextArgs(planData)
         });
 
         // Apply all the promises, and refresh when the last one is resolved.
-        return $.when.apply($.when, ajax.call(calls))
+        return $.when.apply($, ajax.call(calls))
             .then(function() {
-                self._renderView(arguments[arguments.length - 1]);
+                return self._renderView(arguments[arguments.length - 1]);
             })
-            .fail(notification.exception);
+            .fail(notification.exception)
+            .always(function() {
+                return M.util.js_complete(callKey);
+            });
     };
 
     /**
@@ -229,7 +237,7 @@ define(['jquery',
                 notification.confirm(
                     strings[0], // Confirm.
                     strings[1], // Reopen plan X?
-                    strings[2], // reopen.
+                    strings[2], // Reopen.
                     strings[3], // Cancel.
                     function() {
                         self._doReopenPlan(planData);

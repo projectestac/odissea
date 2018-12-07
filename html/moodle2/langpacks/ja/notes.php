@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = '{$a} 名に新しいノートを追加する';
+$string['addbulknotedone'] = '{$a} 名に新しいノートが追加されました。';
+$string['addbulknotedonesingle'] = '1 名に新しいノートが追加されました。';
+$string['addbulknotesingle'] = '1 名に新しいノートを追加する';
 $string['addnewnote'] = '新しいノートを追加する';
 $string['addnewnoteselect'] = 'ノートを書くユーザを選択する';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = '投稿の削除中にエラーが発生しました。';
 $string['configenablenotes'] = '個別のユーザに関するノートの保存を有効にします。';
 $string['content'] = 'コンテンツ';
 $string['course'] = 'コース';
@@ -58,8 +61,16 @@ $string['page-notes-index'] = 'ノートメインページ';
 $string['page-notes-x'] = 'すべてのノートページ';
 $string['personal'] = 'パーソナル';
 $string['personalnotes'] = 'パーソナルノート';
+$string['privacy:metadata:core_notes'] = 'ノートコンポーネントはコアサブシステム内でユーザノートを保存します。';
+$string['privacy:metadata:core_notes:content'] = 'ノートのコンテンツです。';
+$string['privacy:metadata:core_notes:courseid'] = 'ノートに関連するコースのIDです。';
+$string['privacy:metadata:core_notes:created'] = 'ノートの作成日時です。';
+$string['privacy:metadata:core_notes:lastmodified'] = 'ノートの最終更新日時です。';
+$string['privacy:metadata:core_notes:publishstate'] = 'ノートの公開状態です。';
+$string['privacy:metadata:core_notes:userid'] = 'ノートに関連するユーザのIDです。';
 $string['publishstate'] = 'コンテクスト';
-$string['publishstate_help'] = 'ノートコンテクストでは誰がノートを閲覧することができるか決定します。
+$string['publishstate_help'] = 'ノートコンテクストでは誰がノートを閲覧することができるか決定します。個人ノートを含むすべてのノートは管轄権の下の法律により秘匿できる点にユーザは留意すべきです。
+
 * パーソナル - ノートはあなただけに表示されます。
 * コース - ノートはこのコースの教師に表示されます。
 * サイト - ノートはすべてのコースの教師に表示されます。';

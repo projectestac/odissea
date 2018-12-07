@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assign', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -207,6 +207,7 @@ $string['feedbacksettings'] = 'Paràmetres de retroacció';
 $string['feedbacktypes'] = 'Tipus de retroacció';
 $string['filesubmissions'] = 'Fitxers de la tramesa';
 $string['filter'] = 'Filtre';
+$string['filtergrantedextension'] = 'Amb pròrroga concedida';
 $string['filternone'] = 'Sense filtre';
 $string['filternotsubmitted'] = 'No s\'ha tramès';
 $string['filterrequiregrading'] = 'Requereix qualificació';
@@ -234,6 +235,10 @@ $string['gradestudent'] = 'Qualifica l\'estudiant: (id={$a->id}, fullname={$a->f
 $string['gradeuser'] = 'Qualifica {$a}';
 $string['grading'] = 'Qualificació';
 $string['gradingchangessaved'] = 'Els canvis a les notes han estat desats';
+$string['gradingduedate'] = 'Recorda\'m de qualificar-ho';
+$string['gradingduedate_help'] = 'És la data esperada en què s\'hauria d\'haver completat la qualificació de les trameses. Aquesta data s\'utilitza per prioritzar les notificacions del Tauler per als professors.';
+$string['gradingdueduedatevalidation'] = 'La data de Recorda\'m de qualificar-ho no pot ser anterior a la data de venciment.';
+$string['gradingduefromdatevalidation'] = 'La data de Recorda\'m de qualificar-ho no pot ser anterior a la data a partir de la qual es permet trametre.';
 $string['gradingmethodpreview'] = 'Criteris de qualificació';
 $string['gradingoptions'] = 'Opcions';
 $string['gradingstatus'] = 'Estat de la qualificació';
@@ -297,6 +302,7 @@ En la revisió de les tasques, els professors poden deixar comentaris i pujar fi
 $string['modulenameplural'] = 'Tasques';
 $string['moreusers'] = '{$a} més...';
 $string['multipleteams'] = 'Membre de més d\'un grup';
+$string['multipleteams_desc'] = 'La tasca requereix la tramesa en grups. Sou membre de més d\'un grup. Per poder trametre heu de ser membre de només un grup. Per favor, poseu-vos en contacte amb el professorat per a canviar la vostra adhesió a un grup.';
 $string['multipleteamsgrader'] = 'Sou membre de més d\'un grup, per això no teniu els permisos per fer trameses.';
 $string['mysubmission'] = 'La meva tramesa:';
 $string['newsubmissions'] = 'Tasques trameses';
@@ -312,6 +318,7 @@ $string['nosavebutnext'] = 'Següent';
 $string['nosubmission'] = 'No s\'ha tramès res per a aquesta tasca';
 $string['nosubmissionsacceptedafter'] = 'No s\'accepten trameses després de';
 $string['noteam'] = 'No és membre de cap grup';
+$string['noteam_desc'] = 'La tasca requereix la tramesa en grups. No sou membre de cap grup, per tant no podeu fer una tramesa. Per favor, poseu-vos en contacte amb el professorat per a afegir-vos a un grup.';
 $string['noteamgrader'] = 'No sou membre de cap grup, per això no teniu els permisos per fer trameses.';
 $string['notgraded'] = 'Sense qualificació';
 $string['notgradedyet'] = 'No s\'ha qualificat encara';
@@ -372,7 +379,7 @@ $string['savenext'] = 'Desa i mostra el següent';
 $string['saveoverrideandstay'] = 'Desa i introdueix una altra excepció';
 $string['savingchanges'] = 'S\'estan desant els canvis...';
 $string['scale'] = 'Escala';
-$string['search:activity'] = 'Tasques - Informació de l\'activitat';
+$string['search:activity'] = 'Tasques: informació de l\'activitat';
 $string['selectedusers'] = 'Usuaris seleccionats';
 $string['selectlink'] = 'Seleccioneu...';
 $string['selectuser'] = 'Seleccioneu {$a}';

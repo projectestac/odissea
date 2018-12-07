@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,6 +134,7 @@ $string['norequiredcapability'] = 'No cal cap capacitat';
 $string['notoken'] = 'La llista de tokens està buida.';
 $string['onesystemcontrolling'] = 'Permet que un sistema extern controli Moodle';
 $string['onesystemcontrollingdescription'] = 'Els passos següents us ajudaran a configurar els serveis web de Moodle per permetre que un sistema extern interactuï amb Moodle. Això inclou configurar un mètode d\'identificació per testimoni (amb clau de seguretat).';
+$string['onlyseecreatedtokens'] = 'Qualsevol testimoni (<em>token<em>) pot ser esborrat, encara que només podeu visualitzar els testimonis que heu creat.';
 $string['operation'] = 'Operació';
 $string['optional'] = 'Opcional';
 $string['passwordisexpired'] = 'La contrasenya ha caducat.';

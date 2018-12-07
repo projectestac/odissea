@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,10 @@ $string['filterfilesexplain'] = 'Seleccione el tipo de archivo que contiene el f
 $string['filtername'] = 'Auto-enlace de nombres de recursos';
 $string['forcedownload'] = 'Forzar descarga';
 $string['framesize'] = 'Tamaño del marco';
+$string['indicator:cognitivedepth'] = 'Archivo cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Archivo.';
+$string['indicator:socialbreadth'] = 'Archivo social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Archivo.';
 $string['legacyfiles'] = 'Migración de archivo antiguo de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Terminado';

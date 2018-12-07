@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_numattempts', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_numattempts', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_numattempts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Tentatives autorisées : {$a}';
 $string['pluginname'] = 'Nombre de tentatives autorisées';
+$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Nombre de tentatives autorisées n\'enregistre aucune donnée personnelle.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_standard', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_standard
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['buffersize'] = 'Taille du tampon d\'écriture';
 $string['pluginname'] = 'Historiques standards';
 $string['pluginname_desc'] = 'Un plugin qui enregistre les historiques dans une table de la base de données de Moodle.';
+$string['privacy:metadata:log'] = 'Une collection des événements passés';
+$string['privacy:metadata:log:anonymous'] = 'Si l\'événement a été marqué comme anonyme';
+$string['privacy:metadata:log:eventname'] = 'Le nom de l\'événement';
+$string['privacy:metadata:log:ip'] = 'L\'adresse IP utilisée au moment de l\'événement';
+$string['privacy:metadata:log:origin'] = 'L\'origine de l\'événement';
+$string['privacy:metadata:log:other'] = 'Informations supplémentaires sur l\'événement';
+$string['privacy:metadata:log:realuserid'] = 'L\'identifiant de l\'utilisateur réel de l\'événement, lorsqu\'un utilisateur est masqué.';
+$string['privacy:metadata:log:relateduserid'] = 'L\'identifiant d\'un utilisateur en lien avec cet événement';
+$string['privacy:metadata:log:timecreated'] = 'La date et l\'heure de la survenue de l\'événement';
+$string['privacy:metadata:log:userid'] = 'L\'identifiant de l\'utilisateur qui a déclenché cet événement';
 $string['taskcleanup'] = 'Nettoyage de la table d\'historiques';

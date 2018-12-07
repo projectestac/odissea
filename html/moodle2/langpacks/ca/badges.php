@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'badges', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -316,7 +316,7 @@ $string['localbadgesp'] = 'Insígnies de {$a}:';
 $string['localconnectto'] = 'Per compartir aquestes insígnies fora d\'aquest lloc web cal <a href="{$a}">connectar-se a una motxilla</a> .';
 $string['makeprivate'] = 'Fes privada';
 $string['makepublic'] = 'Fes pública';
-$string['managebadges'] = 'Gestiona insígnies';
+$string['managebadges'] = 'Gestiona les insígnies';
 $string['message'] = 'Cos del missatge';
 $string['messagebody'] = '<p>Heu guanyat una insígnia "%badgename%"! </p>
 <p>Podeu trobar més informació sobre aquesta insígnia a la pàgina %badgelink%. /p>

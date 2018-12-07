@@ -42,14 +42,12 @@ define(['jquery'], function($) {
      */
     var calculateRows = function(element) {
         var currentRows = element.attr('rows');
+        var minRows = element.data('min-rows');
         var maxRows = element.attr('data-max-rows');
 
         var height = element.height();
         var innerHeight = element.innerHeight();
         var padding = innerHeight - height;
-
-        // Set height to 1ox to force scroll height to calculate correctly.
-        element.height('1px');
 
         var scrollHeight = element[0].scrollHeight;
         var rows = (scrollHeight - padding) / (height / currentRows);
@@ -58,10 +56,35 @@ define(['jquery'], function($) {
         // based on the row attribute.
         element.css('height', '');
 
-        if (maxRows && rows >= maxRows) {
+        if (rows < minRows) {
+            return minRows;
+        } else if (maxRows && rows >= maxRows) {
             return maxRows;
         } else {
             return rows;
+        }
+    };
+
+    /**
+     * Listener for change events to trigger resizing of the element.
+     *
+     * @method changeListener
+     * @param {Event} e The triggered event.
+     * @private
+     */
+    var changeListener = function(e) {
+        var element = $(e.target);
+        var minRows = element.data('min-rows');
+        var currentRows = element.attr('rows');
+
+        if (typeof minRows === "undefined") {
+            element.data('min-rows', currentRows);
+        }
+        var rows = calculateRows(element);
+
+        if (rows != currentRows) {
+            element.attr('rows', rows);
+            element.trigger(EVENTS.ROW_CHANGE);
         }
     };
 
@@ -73,16 +96,11 @@ define(['jquery'], function($) {
      * @public
      */
     var init = function(root) {
-        $(root).on('input propertychange', SELECTORS.ELEMENT, function(e) {
-            var element = $(e.target);
-            var currentRows = element.attr('rows');
-            var rows = calculateRows(element);
-
-            if (rows != currentRows) {
-                element.attr('rows', rows);
-                $(root).trigger(EVENTS.ROW_CHANGE);
-            }
-        });
+        if ($(root).data('auto-rows')) {
+            $(root).on('input propertychange', changeListener.bind(this));
+        } else {
+            $(root).on('input propertychange', SELECTORS.ELEMENT, changeListener.bind(this));
+        }
     };
 
     return /** @module core/auto_rows */ {

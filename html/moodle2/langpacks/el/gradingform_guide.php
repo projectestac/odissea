@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backtoediting'] = 'Επιστροφή στην επεξεργασία';
+$string['backtoediting'] = 'Επιστροφή στην επεξεργασίας';
 $string['clicktoedit'] = 'Πατήστε για επεξεργασία';
 $string['comment'] = 'Σχόλιο';
 $string['comments'] = 'Συχνά χρησιμοποιούμενα σχόλια';

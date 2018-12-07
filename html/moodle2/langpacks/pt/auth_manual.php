@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_manual', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Configurações de expiração da senha';
 $string['passwdexpiretime'] = 'Duração da senha';
 $string['passwdexpiretime_desc'] = 'Período de tempo para o qual uma senha é válida.';
 $string['pluginname'] = 'Contas manuais';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'A data da última alteração de senha.';

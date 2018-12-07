@@ -23,20 +23,25 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      2.9
  */
-define(['core/mustache',
-         'jquery',
-         'core/ajax',
-         'core/str',
-         'core/notification',
-         'core/url',
-         'core/log',
-         'core/config',
-         'core/localstorage',
-         'core/event',
-         'core/yui',
-         'core/log'
-       ],
-       function(mustache, $, ajax, str, notification, coreurl, log, config, storage, event, Y, Log) {
+define([
+        'core/mustache',
+        'jquery',
+        'core/ajax',
+        'core/str',
+        'core/notification',
+        'core/url',
+        'core/config',
+        'core/localstorage',
+        'core/icon_system',
+        'core/event',
+        'core/yui',
+        'core/log',
+        'core/truncate',
+        'core/user_date',
+        'core/pending',
+    ],
+    function(mustache, $, ajax, str, notification, coreurl, config, storage, IconSystem, event, Y, Log, Truncate, UserDate,
+        Pending) {
 
     // Module variables.
     /** @var {Number} uniqInstances Count of times this constructor has been called. */
@@ -48,6 +53,12 @@ define(['core/mustache',
     /** @var {Promise[]} templatePromises - Cache of already loaded template promises */
     var templatePromises = {};
 
+    /** @var {Promise[]} cachePartialPromises - Cache of already loaded template partial promises */
+    var cachePartialPromises = {};
+
+    /** @var {Object} iconSystem - Object extending core/iconsystem */
+    var iconSystem = {};
+
     /**
      * Constructor
      *
@@ -56,12 +67,16 @@ define(['core/mustache',
     var Renderer = function() {
         this.requiredStrings = [];
         this.requiredJS = [];
+        this.requiredDates = [];
         this.currentThemeName = '';
     };
     // Class variables and functions.
 
     /** @var {string[]} requiredStrings - Collection of strings found during the rendering of one template */
     Renderer.prototype.requiredStrings = null;
+
+    /** @var {object[]} requiredDates - Collection of dates found during the rendering of one template */
+    Renderer.prototype.requiredDates = [];
 
     /** @var {string[]} requiredJS - Collection of js blocks found during the rendering of one template */
     Renderer.prototype.requiredJS = null;
@@ -140,6 +155,39 @@ define(['core/mustache',
     };
 
     /**
+     * Render a single image icon.
+     *
+     * @method renderIcon
+     * @private
+     * @param {string} key The icon key.
+     * @param {string} component The component name.
+     * @param {string} title The icon title
+     * @return {Promise}
+     */
+    Renderer.prototype.renderIcon = function(key, component, title) {
+        // Preload the module to do the icon rendering based on the theme iconsystem.
+        var modulename = config.iconsystemmodule;
+
+        // RequireJS does not return a promise.
+        var ready = $.Deferred();
+        require([modulename], function(System) {
+            var system = new System();
+            if (!(system instanceof IconSystem)) {
+                ready.reject('Invalid icon system specified' + config.iconsystemmodule);
+            } else {
+                iconSystem = system;
+                system.init().then(ready.resolve).catch(notification.exception);
+            }
+        });
+
+        return ready.then(function(iconSystem) {
+            return this.getTemplate(iconSystem.getTemplateName());
+        }.bind(this)).then(function(template) {
+            return iconSystem.renderIcon(key, component, title, template);
+        });
+    };
+
+    /**
      * Render image icons.
      *
      * @method pixHelper
@@ -154,32 +202,27 @@ define(['core/mustache',
         var key = '';
         var component = '';
         var text = '';
-        var result;
 
         if (parts.length > 0) {
-            key = parts.shift().trim();
+            key = helper(parts.shift().trim(), context);
         }
         if (parts.length > 0) {
-            component = parts.shift().trim();
+            component = helper(parts.shift().trim(), context);
         }
         if (parts.length > 0) {
-            text = parts.join(',').trim();
+            text = helper(parts.join(',').trim(), context);
         }
-        var url = coreurl.imageUrl(key, component);
 
-        var templatecontext = {
-            attributes: [
-                {name: 'src', value: url},
-                {name: 'alt', value: helper(text)},
-                {name: 'title', value: helper(text)},
-                {name: 'class', value: 'smallicon'}
-            ]
-        };
-        // We forced loading of this early, so it will be in the cache.
-        var searchKey = this.currentThemeName + '/core/pix_icon';
+        var templateName = iconSystem.getTemplateName();
+
+        var searchKey = this.currentThemeName + '/' + templateName;
         var template = templateCache[searchKey];
-        result = mustache.render(template, templatecontext, this.partialHelper.bind(this));
-        return result.trim();
+
+        // The key might have been escaped by the JS Mustache engine which
+        // converts forward slashes to HTML entities. Let us undo that here.
+        key = key.replace(/&#x2F;/gi, '/');
+
+        return iconSystem.renderIcon(key, component, text, template);
     };
 
     /**
@@ -262,6 +305,59 @@ define(['core/mustache',
     };
 
     /**
+     * Shorten text helper to truncate text and append a trailing ellipsis.
+     *
+     * @method shortenTextHelper
+     * @private
+     * @param {object} context The current mustache context.
+     * @param {string} sectionText The text to parse the arguments from.
+     * @param {function} helper Used to render subsections of the text.
+     * @return {string}
+     */
+    Renderer.prototype.shortenTextHelper = function(context, sectionText, helper) {
+        // Non-greedy split on comma to grab section text into the length and
+        // text parts.
+        var regex = /(.*?),(.*)/;
+        var parts = sectionText.match(regex);
+        // The length is the part matched in the first set of parethesis.
+        var length = parts[1].trim();
+        // The length is the part matched in the second set of parethesis.
+        var text = parts[2].trim();
+        var content = helper(text, context);
+        return Truncate.truncate(content, {
+            length: length,
+            words: true,
+            ellipsis: '...'
+        });
+    };
+
+    /**
+     * User date helper to render user dates from timestamps.
+     *
+     * @method userDateHelper
+     * @private
+     * @param {object} context The current mustache context.
+     * @param {string} sectionText The text to parse the arguments from.
+     * @param {function} helper Used to render subsections of the text.
+     * @return {string}
+     */
+    Renderer.prototype.userDateHelper = function(context, sectionText, helper) {
+        // Non-greedy split on comma to grab the timestamp and format.
+        var regex = /(.*?),(.*)/;
+        var parts = sectionText.match(regex);
+        var timestamp = helper(parts[1].trim(), context);
+        var format = helper(parts[2].trim(), context);
+        var index = this.requiredDates.length;
+
+        this.requiredDates.push({
+            timestamp: timestamp,
+            format: format
+        });
+
+        return '[[_t_' + index + ']]';
+    };
+
+    /**
      * Add some common helper functions to all context objects passed to templates.
      * These helpers match exactly the helpers available in php.
      *
@@ -287,6 +383,12 @@ define(['core/mustache',
         context.quote = function() {
           return this.quoteHelper.bind(this, context);
         }.bind(this);
+        context.shortentext = function() {
+          return this.shortenTextHelper.bind(this, context);
+        }.bind(this);
+        context.userdate = function() {
+          return this.userDateHelper.bind(this, context);
+        }.bind(this);
         context.globals = {config: config};
         context.currentTheme = themeName;
     };
@@ -296,17 +398,15 @@ define(['core/mustache',
      *
      * @method getJS
      * @private
-     * @param {string[]} strings Replacement strings.
      * @return {string}
      */
-    Renderer.prototype.getJS = function(strings) {
+    Renderer.prototype.getJS = function() {
         var js = '';
         if (this.requiredJS.length > 0) {
             js = this.requiredJS.join(";\n");
         }
 
-        // Re-render to get the final strings.
-        return this.treatStringsInContent(js, strings);
+        return js;
     };
 
     /**
@@ -344,7 +444,7 @@ define(['core/mustache',
                 treated += content.substring(0, index);
                 content = content.substr(index);
                 strIndex = '';
-                walker = 4;  // 4 is the length of '[[_s'.
+                walker = 4; // 4 is the length of '[[_s'.
 
                 // Walk the characters to manually extract the index of the string from the placeholder.
                 char = content.substr(walker, 1);
@@ -361,7 +461,7 @@ define(['core/mustache',
                     strFinal = '';
                 }
                 treated += strFinal;
-                content = content.substr(6 + strIndex.length);  // 6 is the length of the placeholder without the index: '[[_s]]'.
+                content = content.substr(6 + strIndex.length); // 6 is the length of the placeholder without the index: '[[_s]]'.
 
                 // Find the next placeholder.
                 index = content.search(pattern);
@@ -379,6 +479,26 @@ define(['core/mustache',
     };
 
     /**
+     * Treat strings in content.
+     *
+     * The purpose of this method is to replace the date placeholders found in the
+     * content with the their respective translated dates.
+     *
+     * @param {String} content The content in which string placeholders are to be found.
+     * @param {Array} strings The strings to replace with.
+     * @return {String} The treated content.
+     */
+    Renderer.prototype.treatDatesInContent = function(content, dates) {
+        dates.forEach(function(date, index) {
+            var key = '\\[\\[_t_' + index + '\\]\\]';
+            var re = new RegExp(key, 'g');
+            content = content.replace(re, date);
+        });
+
+        return content;
+    };
+
+    /**
      * Render a template and then call the callback with the result.
      *
      * @method doRender
@@ -390,13 +510,26 @@ define(['core/mustache',
      */
     Renderer.prototype.doRender = function(templateSource, context, themeName) {
         this.currentThemeName = themeName;
+        var iconTemplate = iconSystem.getTemplateName();
 
-        return this.getTemplate('core/pix_icon').then(function() {
+        var pendingPromise = new Pending('core/templates:doRender');
+        return this.getTemplate(iconTemplate).then(function() {
             this.addHelpers(context, themeName);
             var result = mustache.render(templateSource, context, this.partialHelper.bind(this));
-
+            return $.Deferred().resolve(result.trim(), this.getJS()).promise();
+        }.bind(this))
+        .then(function(html, js) {
             if (this.requiredStrings.length > 0) {
                 return str.get_strings(this.requiredStrings).then(function(strings) {
+
+                    // Make sure string substitutions are done for the userdate
+                    // values as well.
+                    this.requiredDates = this.requiredDates.map(function(date) {
+                        return {
+                            timestamp: this.treatStringsInContent(date.timestamp, strings),
+                            format: this.treatStringsInContent(date.format, strings)
+                        };
+                    }.bind(this));
 
                     // Why do we not do another call the render here?
                     //
@@ -404,14 +537,31 @@ define(['core/mustache',
                     // I create an assignment called "{{fish" which
                     // would get inserted in the template in the first pass
                     // and cause the template to die on the second pass (unbalanced).
-
-                    result = this.treatStringsInContent(result, strings);
-                    return $.Deferred().resolve(result, this.getJS(strings)).promise();
+                    html = this.treatStringsInContent(html, strings);
+                    js = this.treatStringsInContent(js, strings);
+                    return $.Deferred().resolve(html, js).promise();
                 }.bind(this));
-            } else {
-                return $.Deferred().resolve(result.trim(), this.getJS([])).promise();
             }
-        }.bind(this));
+
+            return $.Deferred().resolve(html, js).promise();
+        }.bind(this))
+        .then(function(html, js) {
+            // This has to happen after the strings replacement because you can
+            // use the string helper in content for the user date helper.
+            if (this.requiredDates.length > 0) {
+                return UserDate.get(this.requiredDates).then(function(dates) {
+                    html = this.treatDatesInContent(html, dates);
+                    js = this.treatDatesInContent(js, dates);
+                    return $.Deferred().resolve(html, js).promise();
+                }.bind(this));
+            }
+
+            return $.Deferred().resolve(html, js).promise();
+        }.bind(this))
+        .then(function(html, js) {
+            pendingPromise.resolve();
+            return $.Deferred().resolve(html, js).promise();
+        });
     };
 
     /**
@@ -509,24 +659,45 @@ define(['core/mustache',
      * @return {Promise} JQuery promise object resolved when all partials are in the cache.
      */
     Renderer.prototype.cachePartials = function(templateName) {
-        return this.getTemplate(templateName).then(function(templateSource) {
-            var i;
+        var searchKey = this.currentThemeName + '/' + templateName;
+
+        if (searchKey in cachePartialPromises) {
+            return cachePartialPromises[searchKey];
+        }
+
+        // This promise will not be resolved until all child partials are also resolved and ready.
+        // We create it here to allow us to check for recursive inclusion of templates.
+        cachePartialPromises[searchKey] = $.Deferred();
+
+        this.getTemplate(templateName)
+        .then(function(templateSource) {
             var partials = this.scanForPartials(templateSource);
-            var fetchThemAll = [];
+            var uniquePartials = partials.filter(function(partialName) {
+                // Check for recursion.
 
-            for (i = 0; i < partials.length; i++) {
-                var searchKey = this.currentThemeName + '/' + partials[i];
-                if (searchKey in templatePromises) {
-                    fetchThemAll.push(templatePromises[searchKey]);
-                } else {
-                    fetchThemAll.push(this.cachePartials(partials[i]));
+                if (typeof cachePartialPromises[this.currentThemeName + '/' + partialName] !== 'undefined') {
+                    // Ignore templates which include their parent.
+                    return false;
                 }
-            }
 
-            return $.when.apply($, fetchThemAll).then(function() {
-                return templateSource;
+                // Ignore templates that include themselves.
+                return partialName != templateName;
+            }.bind(this));
+
+            // Fetch any partial which has not already been fetched.
+            var fetchThemAll = uniquePartials.map(function(partialName) {
+                return this.cachePartials(partialName);
+            }.bind(this));
+
+            // Resolve the templateName promise when all of the children are resolved.
+            return $.when.apply($, fetchThemAll)
+            .then(function() {
+                return cachePartialPromises[searchKey].resolve(templateSource);
             });
-        }.bind(this));
+        }.bind(this))
+        .catch(cachePartialPromises[searchKey].reject);
+
+        return cachePartialPromises[searchKey];
     };
 
     /**
@@ -549,9 +720,25 @@ define(['core/mustache',
 
         this.currentThemeName = themeName;
 
-        return this.cachePartials(templateName).then(function(templateSource) {
-            return this.doRender(templateSource, context, themeName);
-        }.bind(this));
+        // Preload the module to do the icon rendering based on the theme iconsystem.
+        var modulename = config.iconsystemmodule;
+
+        var ready = $.Deferred();
+        require([modulename], function(System) {
+            var system = new System();
+            if (!(system instanceof IconSystem)) {
+                ready.reject('Invalid icon system specified' + config.iconsystem);
+            } else {
+                iconSystem = system;
+                system.init().then(ready.resolve).catch(notification.exception);
+            }
+        });
+
+        return ready.then(function() {
+                return this.cachePartials(templateName);
+            }.bind(this)).then(function(templateSource) {
+                return this.doRender(templateSource, context, themeName);
+            }.bind(this));
     };
 
     /**
@@ -614,6 +801,22 @@ define(['core/mustache',
         render: function(templateName, context, themeName) {
             var renderer = new Renderer();
             return renderer.render(templateName, context, themeName);
+        },
+
+        /**
+         * Every call to renderIcon creates a new instance of the class and calls renderIcon on it. This
+         * means each render call has it's own class variables.
+         *
+         * @method renderIcon
+         * @public
+         * @param {string} key - Icon key.
+         * @param {string} component - Icon component
+         * @param {string} title - Icon title
+         * @return {Promise} JQuery promise object resolved when the pix has been rendered.
+         */
+        renderPix: function(key, component, title) {
+            var renderer = new Renderer();
+            return renderer.renderIcon(key, component, title);
         },
 
         /**

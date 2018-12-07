@@ -71,8 +71,7 @@ class data_field_picture extends data_field_base {
 
         if ($this->field->required) {
             $str .= '&nbsp;' . get_string('requiredelement', 'form') . '</span></legend>';
-            $image = html_writer::img($OUTPUT->pix_url('req'), get_string('requiredelement', 'form'),
-                                      array('class' => 'req', 'title' => get_string('requiredelement', 'form')));
+            $image = $OUTPUT->pix_icon('req', get_string('requiredelement', 'form'));
             $str .= html_writer::div($image, 'inline-req');
         } else {
             $str .= '</span></legend>';
@@ -141,8 +140,12 @@ class data_field_picture extends data_field_base {
                'value="' . s($value) . '" class="form-control"/>';
     }
 
-    function parse_search_field() {
-        return optional_param('f_'.$this->field->id, '', PARAM_NOTAGS);
+    public function parse_search_field($defaults = null) {
+        $param = 'f_'.$this->field->id;
+        if (empty($defaults[$param])) {
+            $defaults = array($param => '');
+        }
+        return optional_param($param, $defaults[$param], PARAM_NOTAGS);
     }
 
     function generate_sql($tablealias, $value) {
@@ -222,6 +225,10 @@ class data_field_picture extends data_field_base {
 
         // Should always be available since it is set by display_add_field before initializing the draft area.
         $content = $DB->get_record('data_content', array('fieldid' => $this->field->id, 'recordid' => $recordid));
+        if (!$content) {
+            $content = (object)array('fieldid' => $this->field->id, 'recordid' => $recordid);
+            $content->id = $DB->insert_record('data_content', $content);
+        }
 
         $names = explode('_', $name);
         switch ($names[2]) {
@@ -313,5 +320,20 @@ class data_field_picture extends data_field_base {
             return count($files) >= 2;
         }
         return false;
+    }
+
+    /**
+     * Return the plugin configs for external functions.
+     *
+     * @return array the list of config parameters
+     * @since Moodle 3.3
+     */
+    public function get_config_for_external() {
+        // Return all the config parameters.
+        $configs = [];
+        for ($i = 1; $i <= 10; $i++) {
+            $configs["param$i"] = $this->field->{"param$i"};
+        }
+        return $configs;
     }
 }

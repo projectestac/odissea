@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nologin', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_nologin', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_nologin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nologindescription'] = 'Plugin auxiliaire empêchant la connexion des utilisateurs. Elle élimine également les messages courriels envoyés à l\'utilisateur. Cette méthode peut être utilisée pour <em>désactiver</em> des comptes utilisateur.';
 $string['pluginname'] = 'Pas de connexion';
+$string['privacy:metadata'] = 'Le plugin d\'authentification Pas de connexion n\'enregistre aucune donnée personnelle.';

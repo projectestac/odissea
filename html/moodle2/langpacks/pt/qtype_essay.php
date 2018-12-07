@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,16 +36,17 @@ $string['formatnoinline'] = 'Sem texto online';
 $string['formatplain'] = 'Texto simples';
 $string['graderinfo'] = 'Informação sobre a avaliação';
 $string['graderinfoheader'] = 'Informação do Avaliador';
-$string['mustattach'] = 'Quando a opção "Sem texto online" é selecionada, ou as respostas são opcionais, tem de permitir pelo menos um anexo.';
-$string['mustrequire'] = 'Quando a opção "Sem texto online" é selecionada, ou as respostas são opcionais, tem de exigir pelo menos um anexo.';
+$string['mustattach'] = 'Quando é selecionada a opção "Sem texto online" ou as respostas são opcionais, tem de permitir pelo menos um anexo.';
+$string['mustrequire'] = 'Quando é selecionada a opção "Sem texto online" ou as respostas são opcionais, tem de exigir pelo menos um anexo.';
 $string['mustrequirefewer'] = 'Não pode exigir mais anexos do que aqueles que permite.';
 $string['nlines'] = '{$a} linhas';
 $string['pluginname'] = 'Desenvolvimento';
 $string['pluginnameadding'] = 'A adicionar pergunta de desenvolvimento';
 $string['pluginnameediting'] = 'A editar pergunta de desenvolvimento';
-$string['pluginname_help'] = 'Numa pergunta de desenvolvimento (que pode incluir uma imagem) o aluno pode escrever a sua resposta num parágrafo ou dois. A pergunta não terá avaliação até que o professor a avalie manualmente.';
+$string['pluginname_help'] = 'Ao responder a uma pergunta, o aluno pode carregar um ou mais ficheiros e/ou inserir texto online. Pode ser fornecido um modelo de resposta. As respostas devem ser avaliadas manualmente.';
 $string['pluginname_link'] = 'pergunta/tipo/desenvolvimento';
-$string['pluginnamesummary'] = 'Permite uma resposta composta por várias frases ou parágrafos. Este tipo de perguntas tem de ser avaliado manualmente.';
+$string['pluginnamesummary'] = 'Permitir responder com carregamento de ficheiro e/ou texto online. Este tipo de perguntas tem de ser avaliado manualmente.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Desenvolvimento não armazena quaisquer dados pessoais.';
 $string['responsefieldlines'] = 'Tamanho da caixa de resposta';
 $string['responseformat'] = 'Formato da resposta';
 $string['responseisrequired'] = 'Requerer que o aluno insira texto';

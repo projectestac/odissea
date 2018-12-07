@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_picasa', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,5 +31,7 @@ $string['nooauthcredentials'] = 'OAuth認証情報が必要です。';
 $string['nooauthcredentials_help'] = 'Picasaポートフォリオプラグインを使用するにはポートフォリオ設定でOAuth認証情報を設定する必要があります。';
 $string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環として、あなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインに使用することのできるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Picasa';
+$string['privacy:metadata'] = 'このプラグインは外部のリンクされたPicasaアカウントにデータを送信します。ローカルにデータを保存することはありません。';
+$string['privacy:metadata:data'] = 'ポートフォリオサブシステムから渡された個人データです。';
 $string['secret'] = '秘密鍵';
 $string['sendfailed'] = 'Picasaへのファイル {$a} の転送に失敗しました。';

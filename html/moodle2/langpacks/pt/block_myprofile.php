@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_myprofile', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   block_myprofile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,3 +48,4 @@ $string['myprofile:addinstance'] = 'Adicionar um novo bloco Utilizadores autenti
 $string['myprofile:myaddinstance'] = 'Adicionar um novo bloco Utilizadores autenticados ao Painel do utilizador';
 $string['myprofile_settings'] = 'Informações do utilizador visíveis';
 $string['pluginname'] = 'Utilizador autenticado';
+$string['privacy:metadata'] = 'O bloco Utilizadores autenticado apenas mostra dados dos utilizadores autenticados e não armazena dados.';

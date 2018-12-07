@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_clean', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,7 @@ $string['logodesc'] = 'Dieses Logo wird lediglich im Kopfbereich der Startseite 
 <pre>div.logo {height: 100px;}</pre>
 Wenn die Höhe einen anderen Wert als 100 Pixel hat, passen Sie dies entsprechend an. Wenn hier kein Logo hinzugefügt wird, wird das Logo unter Erscheinung > Logos genutzt.';
 $string['pluginname'] = 'Clean';
+$string['privacy:metadata'] = 'Das Design Clean speichert keine personenbezogenen Nutzerdaten.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
 $string['sitelogo'] = 'Site-Logo';

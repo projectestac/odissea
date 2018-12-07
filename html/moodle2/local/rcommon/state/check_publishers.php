@@ -44,7 +44,7 @@ foreach ($publisher_books as $publisher){
             $success = $response->ObtenerTodosResult->Codigo == 1;
             $fail_description = $response->ObtenerTodosResult->Descripcion;
         }
-    } catch (Exception $e){
+    } catch (Throwable $e){
         $fail_description = $e->getMessage();
     } catch (SoapFault $e){
         $fail_description = $e->getMessage();

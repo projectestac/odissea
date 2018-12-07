@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_noautolink', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_noautolink', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_noautolink
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '自動リンクを抑える';
+$string['privacy:metadata'] = 'atto_noautolinkプラグインはどのような個人データも保存しません。';

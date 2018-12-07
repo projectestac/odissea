@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_db', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,16 +40,16 @@ $string['auth_dbfieldpass'] = 'Name des Feldes, das das Passwort enthält';
 $string['auth_dbfieldpass_key'] = 'Kennwortfeld';
 $string['auth_dbfielduser'] = 'Name des Feldes, das den Nutzernamen enthält';
 $string['auth_dbfielduser_key'] = 'Nutzernamenfeld';
-$string['auth_dbhost'] = 'Computer mit der Datenbank. Bei ODBC benutzen Sie einen DSN-Systemeintrag.';
+$string['auth_dbhost'] = 'Server mit der Datenbank. Verwenden Sie einen DNS-Systemeintrag, wenn ODBC verwendet wird. Benutzen Sie einen PDO DNS Eintrag, wenn PDO verwendet wird.';
 $string['auth_dbhost_key'] = 'Host';
 $string['auth_dbinsertuser'] = 'Eingefügte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbinsertuserduplicate'] = 'Fehler beim Anlegen des Nutzers {$a->username}. Ein Nutzer mit diesem Nutzernamen wurde bereits mit der Authentifizierung über \'{$a-auth}\' angelegt.';
 $string['auth_dbinsertusererror'] = 'Fehler beim Einfügen von Nutzer/in {$a}';
-$string['auth_dbname'] = 'Name der Datenbank. Bei ODBC DSN lassen Sie das Feld leer.';
+$string['auth_dbname'] = 'Name der Datenbank. Lassen Sie das Feld leer, falls ODBC DSN verwendet wird oder der PDO DNS bereits den Datenbanknamen enthält.';
 $string['auth_dbname_key'] = 'DB Name';
 $string['auth_dbpass'] = 'Passwort, das zum Nutzernamen gehört';
 $string['auth_dbpass_key'] = 'Kennwort';
-$string['auth_dbpasstype'] = '<p>Geben Sie an, welches Format das Kennwortfeld benutzt. MD5-Hashing ist nützlich, um Verbindungen mit anderen Webanwendungen herzustellen, wie etwa zu PostNuke.</p> <p>Verwenden Sie \'internal\', falls die externe Datenbank die Anmeldenamen und E-Mail-Adresse verwalten soll, aber Moodle für die Kennwörter zuständig ist. In diesem Fall <i>müssen</i> Sie ein E-Mail-Feld in der externen Datenbank bereitstellen und die beiden Scripte admin/cron.php und auth/db/cli/sync_users.php regelmäßig ausführen! Moodle sendet an alle neuen Nutzer/innen eine E-Mail mit einem temporären Kennwort.</p>';
+$string['auth_dbpasstype'] = '<p>Geben Sie an, welches Format das Kennwortfeld benutzt.</p><p>Verwenden Sie \'internal\', falls die externe Datenbank die Anmeldenamen und E-Mail-Adresse verwalten soll, aber Moodle für die Kennwörter zuständig ist. In diesem Fall <i>müssen</i> Sie ein E-Mail-Feld in der externen Datenbank bereitstellen und die beiden Scripte admin/cron.php und auth/db/cli/sync_users.php regelmäßig ausführen! Moodle sendet an neue Nutzer/innen eine E-Mail mit einem temporären Kennwort.</p>';
 $string['auth_dbpasstype_key'] = 'Kennwortformat';
 $string['auth_dbreviveduser'] = 'Entsperrte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Fehler beim Entsperren von Nutzer/in {$a}';
@@ -60,10 +60,13 @@ $string['auth_dbsuspenduser'] = 'Gesperrte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbsuspendusererror'] = 'Fehler beim Sperren von Nutzer/in {$a}';
 $string['auth_dbsybasequoting'] = 'Sybase Anführungszeichen verwenden';
 $string['auth_dbsybasequotinghelp'] = 'Sybase Stil mit einfachen Anführungszeichen - für Oracle, MS SQL und einige andere Datenbanken, nicht jedoch für MySQL verwnden!';
+$string['auth_dbsyncuserstask'] = 'Nutzersynchronisierung';
 $string['auth_dbtable'] = 'Name der Datenbank-Tabelle';
 $string['auth_dbtable_key'] = 'Tabelle';
 $string['auth_dbtype'] = 'Datenbanktyp (siehe <a href="http://phplens.com/adodb/supported.databases.html">ADOdb Dokumentation</a>)';
 $string['auth_dbtype_key'] = 'Datenbank';
+$string['auth_dbupdateusers'] = 'Nutzer/innen aktualisieren';
+$string['auth_dbupdateusers_description'] = 'Neue Nutzer/innen hinzufügen, existierende Nutzer/innen aktualisieren';
 $string['auth_dbupdatinguser'] = 'Aktualisierte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbuser'] = 'Nutzername mit Schreibzugriff auf die Datenbank';
 $string['auth_dbuser_key'] = 'Datenbanknutzer';
@@ -71,3 +74,4 @@ $string['auth_dbusernotexist'] = 'Nicht existierender Nutzer {$a} kann nicht akt
 $string['auth_dbuserstoadd'] = 'Nutzereinträge zum Hinzufügen: {$a}';
 $string['auth_dbuserstoremove'] = 'Nutzereinträge zum Entfernen: {$a}';
 $string['pluginname'] = 'Externe Datenbank';
+$string['privacy:metadata'] = 'Das Plugin \'Authentifizierung Externe Datenbank\' speichert keine personenbezogenen Daten.';

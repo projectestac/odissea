@@ -31,6 +31,6 @@ try {
     } else {
   		echo '<span style="color:red">' . get_string('bad_connection', 'local_rcommon') . ': <span style="font-size:small">' . get_string('error_code_' . $result->AutenticarUsuarioContenidoResult->Codigo, 'local_rcommon') . '</span></span>';
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     echo '<span style="color:red">' . get_string('bad_connection', 'local_rcommon') . ': <span style="font-size:small">' . $e->getMessage() . '</span></span>';
 }

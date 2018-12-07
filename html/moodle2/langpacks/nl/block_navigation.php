@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_navigation', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['navigation:addinstance'] = 'Voeg een nieuw navigatieblok toe';
 $string['navigation:myaddinstance'] = 'Voeg een nieuw navigatieblok toe aan Mijn start
 pagina.';
 $string['pluginname'] = 'Navigatie';
+$string['privacy:metadata'] = 'Het navigatieblok toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['trimlength'] = 'Aantal tekens tot waar afgekort moet worden';
 $string['trimmode'] = 'Afkortmodus';
 $string['trimmodecenter'] = 'Haal tekens weg vanaf het midden';

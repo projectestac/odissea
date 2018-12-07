@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['auth_shib_idp_list'] = 'Поставщики удостоверений
 $string['auth_shib_idp_list_description'] = 'Введите перечень поставщиков удостоверений, чтобы пользователь мог выбирать из него на странице входа. <br /> В каждой строке должны быть разделенные запятыми записи entityID поставщика удостоверений (см. файл метаданных Shibboleth) и его название. Они будут отображаться в выпадающем списке.<br /> В качестве необязательного третьего параметра Вы можете добавить расположение инициатора сессии Shibboleth, который используется в случае, если система Moodle является частью объединения.';
 $string['auth_shib_instructions'] = 'Используйте <a href="{$a}">Вход через Shibboleth</a>, чтобы получить доступ через Shibboleth, если Ваша организация поддерживает его.<br /> В противном случае используйте обычную форму входа, показанную здесь.';
 $string['auth_shib_instructions_help'] = 'Здесь Вы должны предоставить инструкции для пользователей, чтобы объяснить им как заходить с помощью Shibboleth. Эти инструкции будут отображаться на странице входа. Инструкции должны содержать ссылку на «<b>{$a}</b>», чтобы пользователи могли перейти по ней, когда захотят войти в систему.';
+$string['auth_shib_instructions_key'] = 'Инструкции по входу';
 $string['auth_shib_integrated_wayf'] = 'Встроенная в Moodle служба WAYF';
 $string['auth_shib_integrated_wayf_description'] = 'При отмеченном параметре Moodle будет использовать свою собственную службу WAYF (служба выбора своей организации) вместо настроенной для Shibboleth. Moodle будет отображать список поставщиков удостоверений в раскрывающемся списке на странице альтернативного входа, где пользователь сможет выбирать своего поставщика удостоверений.';
 $string['auth_shib_logout_return_url'] = 'Альтернативный URL-адрес перенаправления при выходе';

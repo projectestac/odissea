@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_rubric', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,3 +39,4 @@ $string['mustbeunique'] = 'レベル評価はクライテリア内でユニー�
 $string['mustchooseone'] = 'あなたはこれらのアイテムから1つを選択する必要があります。';
 $string['mustdefinelevel'] = '少なくとも1レベル必要です。';
 $string['pluginname'] = 'ルーブリック';
+$string['privacy:metadata'] = 'Rubricプラグインは評価フォームの詳細のみ保存します。フォームがどのように入力されたかという実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出に添付されます。';

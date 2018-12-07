@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_db', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,10 +60,13 @@ $string['auth_dbsuspenduser'] = 'L\'usuari {$a->name} amb ID {$a->id} té la ins
 $string['auth_dbsuspendusererror'] = 'S\'ha produït un error en suspendre l\'usuari {$a}';
 $string['auth_dbsybasequoting'] = 'Utilitza cometes sybase';
 $string['auth_dbsybasequotinghelp'] = 'Alteració de cometes estil Sybase: necessària per a Oracle, MS SQL i algunes altres bases de dades. No utilitzeu aquesta opció amb MySQL.';
+$string['auth_dbsyncuserstask'] = 'Tasca de sincronització dels usuaris';
 $string['auth_dbtable'] = 'Nom de la taula en la base de dades';
 $string['auth_dbtable_key'] = 'Taula';
 $string['auth_dbtype'] = 'El tipus de base de dades (per a més informació vegeu la <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">documentació sobre ADOdb</a>)';
 $string['auth_dbtype_key'] = 'Base de dades';
+$string['auth_dbupdateusers'] = 'Actualitza els usuaris';
+$string['auth_dbupdateusers_description'] = 'A més d\'afegir usuaris nous, actualitza els ja existents.';
 $string['auth_dbupdatinguser'] = 'S\'està actualitzant l\'usuari {$a->name} amb ID {$a->id}';
 $string['auth_dbuser'] = 'Nom d\'usuari amb accés de lectura a la base de dades';
 $string['auth_dbuser_key'] = 'Usuari de la base de dades';

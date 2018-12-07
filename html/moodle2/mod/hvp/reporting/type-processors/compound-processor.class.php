@@ -20,6 +20,13 @@ class CompoundProcessor extends TypeProcessor {
     $reports = '';
 
     if (isset($extras->children)) {
+
+      // Generate a grading container if gradable content types exist
+      $reports .= $H5PReport->generateGradableReports($extras->children);
+
+      // Do not render gradable content types in their own containers
+      $extras->children = $H5PReport->stripGradableChildren($extras->children);
+
       foreach ($extras->children as $childData) {
         $reports .=
           '<div class="h5p-result">' .

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_community', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -96,8 +96,14 @@ $string['orderbyname'] = 'Naam';
 $string['orderbynewest'] = 'Nieuwste';
 $string['orderbypublisher'] = 'Uitgever';
 $string['orderbyratingaverage'] = 'Beoordeling';
-$string['outcomes'] = 'Eindresultaten: {$a}';
+$string['outcomes'] = 'Competenties: {$a}';
 $string['pluginname'] = 'Community zoeker';
+$string['privacy:metadata:block_community'] = 'Het gemeenschapsblok bewaart links naar gedeelde gemeenschapscursussen waar gebruikers zich kunnen aanmelden.';
+$string['privacy:metadata:block_community:coursedescription'] = 'De beschrijving van de gelinkte gemeenschapscursus.';
+$string['privacy:metadata:block_community:coursename'] = 'De naam van de gelinkte gemeenschapscursus.';
+$string['privacy:metadata:block_community:courseurl'] = 'De cursus-URL van de gelinkte gemeenschapscursus.';
+$string['privacy:metadata:block_community:imageurl'] = 'De afbeeldings-URL van de gelinkte gemeenschapscursus.';
+$string['privacy:metadata:block_community:userid'] = 'De ID van de gebruiker die de gelinkte gemeenschapscursus gemaakt heeft.';
 $string['rateandcomment'] = 'Beoordeel en geef commentaar';
 $string['rating'] = 'Beoordeling';
 $string['removecommunitycourse'] = 'Verwijder community-cursus';

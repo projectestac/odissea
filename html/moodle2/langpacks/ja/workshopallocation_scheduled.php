@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['currentstatusresult'] = '最近の実行結果';
 $string['enablescheduled'] = 'スケジュール割り当てを有効にする';
 $string['enablescheduledinfo'] = '提出フェーズの後、提出を自動的に割り当てる';
 $string['pluginname'] = 'スケジュール割り当て';
+$string['privacy:metadata'] = 'スケジュール割り当てプラグインはどのような個人データも保存しません。誰が誰を評価したかという実際の個人データはワークショップモジュール自体に保存されます。データは評価詳細をエクスポートすることを目的として整形されます。';
 $string['randomallocationsettings'] = '割り当て設定';
 $string['randomallocationsettings_help'] = 'ここでランダム割り当て方法のパラメータを設定します。これらの設定値は実際の提出を割り当てるランダム割り当てプラグインで使用されます。';
 $string['resultdisabled'] = 'スケジュール割り当てが無効にされました。';

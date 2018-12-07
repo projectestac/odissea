@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multichoice', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,8 @@ $string['answersingleyes'] = 'Endast ett svar';
 $string['choiceno'] = 'Val {$a}';
 $string['choices'] = 'Tillgängliga val';
 $string['clozeaid'] = 'Mata in det saknade ordet';
-$string['correctansweris'] = 'Rätta svaret är:{$a}';
+$string['correctansweris'] = 'Det rätta svaret är: {$a}';
+$string['correctanswersare'] = 'Det rätta svaren är: {$a}';
 $string['correctfeedback'] = 'För vilket korrekt svar som helst';
 $string['errfractionsaddwrong'] = 'De positiva betygen Du har valt adderar inte till 100%.<br />Istället adderar de till {$a}%.';
 $string['errfractionsnomax'] = 'Ett av svaren borde bli 100% så att det blir möjligt att få ett komplett betyg/omdöme för den här frågan.';
@@ -62,7 +63,7 @@ $string['pluginnameediting'] = 'Redigera en flervalsfråga';
 $string['pluginname_help'] = 'Man väljer från olika svaralternativ när man svarar på frågan (som kan innehålla också en bild). Det finns två olika typer av flervalsfrågor - med ett rätt svar och med några rätta svar.';
 $string['pluginnamesummary'] = 'Tillåter val av ett eller flera svar från en fördefinierad lista.';
 $string['selectmulti'] = 'Välj en eller flera:';
-$string['selectone'] = 'Välj ett svar';
+$string['selectone'] = 'Blanda svaren';
 $string['shuffleanswers'] = 'Blanda svaren';
 $string['shuffleanswers_help'] = 'Om aktiverat kommer ordningen på svaren blandas slumpmässigt för varje försök, förutsatt att "blanda inom frågor" i aktivitetsinställningarna är aktiverat.';
 $string['singleanswer'] = 'Välj ett svar';

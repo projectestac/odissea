@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_unsuproles', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_unsuproles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,3 +30,4 @@ $string['contextlevel'] = 'Niveau de contexte';
 $string['count'] = 'Nombre';
 $string['noprolbems'] = 'Aucune attribution non supportée de rôle';
 $string['pluginname'] = 'Attributions non supportées de rôles';
+$string['privacy:metadata'] = 'Le plugin Attributions non supportées de rôles n\'enregistre aucune donnée personnelle.';

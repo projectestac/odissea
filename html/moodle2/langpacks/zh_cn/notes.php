@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewnote'] = '添加新备注';
 $string['addnewnoteselect'] = '选择用户撰写备注';
 $string['bynameondate'] = '由{$a->name} - {$a->date}';
-$string['cannotdeletepost'] = '删除备注时发生错误';
 $string['configenablenotes'] = '允许单独为每个用户记备注。';
 $string['content'] = '内容';
 $string['course'] = '课程';

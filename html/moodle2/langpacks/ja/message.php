@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['disabled'] = 'このサイトではメッセージングが無効にさ
 $string['disallowed'] = '無許可';
 $string['discussion'] = 'ディスカッション';
 $string['editmessages'] = 'メッセージを編集する';
-$string['emailtagline'] = 'このメールはあなた宛に「 {$a->sitename} 」内で送信されたメッセージのコピーです。 返信するには {$a->url} にアクセスしてください。';
+$string['emailtagline'] = 'これはあなた宛に「 {$a->sitename} 」で送信されたメッセージのコピーです。返信するには {$a->url} にアクセスしてください。';
 $string['emptysearchstring'] = 'あなたは何かを探す必要があります。';
 $string['enabled'] = '有効';
 $string['errorcallingprocessor'] = '定義されたアウトプットのコールにエラーが発生しました。';
@@ -107,6 +107,29 @@ $string['outputnotconfigured'] = '未設定';
 $string['page-message-x'] = 'すべてのメッセージページ';
 $string['pagerefreshes'] = 'このページは {$a} 秒ごとに自動更新されます。';
 $string['permitted'] = '許可';
+$string['privacy:metadata:message_contacts'] = '連絡先一覧です。';
+$string['privacy:metadata:message_contacts:blocked'] = 'ユーザがブロックされているかどうか示すフラグです。';
+$string['privacy:metadata:message_contacts:contactid'] = '連絡先のユーザのIDです。';
+$string['privacy:metadata:message_contacts:userid'] = '私たちが閲覧している連絡先一覧のユーザのIDです。';
+$string['privacy:metadata:messages'] = 'メッセージ/通知';
+$string['privacy:metadata:messages:component'] = 'メッセージ/通知を送信するコンポーネントです。';
+$string['privacy:metadata:messages:contexturl'] = '通知に関連するURLです。';
+$string['privacy:metadata:messages:contexturlname'] = 'コンテクスト名です。';
+$string['privacy:metadata:messages:eventtype'] = 'イベントタイプです。';
+$string['privacy:metadata:messages:fullmessage'] = '完全なメッセージ/通知です。';
+$string['privacy:metadata:messages:fullmessageformat'] = 'メッセージ/通知のフォーマットです。';
+$string['privacy:metadata:messages:fullmessagehtml'] = 'メッセージ/通知のHTMLです。';
+$string['privacy:metadata:messages:notification'] = 'これが通知であるかどうかに関するフラグです。';
+$string['privacy:metadata:messages:smallmessage'] = 'スモールメッセージ/通知です。';
+$string['privacy:metadata:messages:subject'] = 'メッセージ/通知の件名です。';
+$string['privacy:metadata:messages:timecreated'] = 'メッセージ/通知が作成された日時です。';
+$string['privacy:metadata:messages:timeread'] = 'メッセージ/通知が読まれた日時です。';
+$string['privacy:metadata:messages:timeuserfromdeleted'] = 'メッセージ/通知が送信者によって削除された日時です。';
+$string['privacy:metadata:messages:timeusertodeleted'] = 'メッセージ/通知が受信者によって削除された日時です。';
+$string['privacy:metadata:messages:useridfrom'] = '通知を送信したユーザのIDです。';
+$string['privacy:metadata:messages:useridto'] = '通知を受信したユーザのIDです。';
+$string['privacy:metadata:preference:core_message_settings'] = 'メッセージングに関連する設定です。';
+$string['privacy:request:preference:set'] = '設定「 {$a->name} 」の値は「 {$a->value} 」でした。';
 $string['processorsettings'] = 'プロセッサ設定';
 $string['recent'] = '最近';
 $string['removecontact'] = 'コンタクトから削除する';
@@ -123,6 +146,10 @@ $string['seeall'] = 'すべてを表示する';
 $string['selectmessagestodelete'] = '削除するメッセージを選択する';
 $string['selectnotificationtoview'] = '詳細を表示するには横の通知一覧から選択してください。';
 $string['send'] = '送信';
+$string['sendbulkmessage'] = '{$a} 名にメッセージを送信する';
+$string['sendbulkmessagesent'] = '{$a} 名にメッセージが送信されました。';
+$string['sendbulkmessagesentsingle'] = '1 名にメッセージが送信されました。';
+$string['sendbulkmessagesingle'] = '1 名にメッセージを送信する';
 $string['sendingvia'] = '「 {$a->processor} 」経由で「 {$a->provider} 」に送信する';
 $string['sendingviawhen'] = '{$a->state} の場合、「 {$a->processor} 」経由で「 {$a->provider} 」に送信する';
 $string['sendmessage'] = 'メッセージを送信する';
@@ -141,6 +168,7 @@ $string['togglemessagemenu'] = 'メッセージメニューに切り替える';
 $string['togglenotificationmenu'] = '通知メニューに切り替える';
 $string['touserdoesntexist'] = 'あなたは存在しないユーザID ({$a}) に対して、メッセージを送信することはできません。';
 $string['unblockcontact'] = 'コンタクトの拒否を解除する';
+$string['unknownuser'] = '不明なユーザです。';
 $string['unreadnewmessage'] = '{$a} からの新しいメッセージ';
 $string['unreadnotification'] = '未読通知: {$a}';
 $string['userisblockingyou'] = 'このユーザはあなたからのメッセージを受信拒否しています。';

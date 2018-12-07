@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'blog', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -111,7 +111,7 @@ $string['groupblogdisable'] = 'Блоги групп отключены';
 $string['groupblogentries'] = 'Записи блога связаны с курсом «{$a->coursename}» и группой «{$a->groupname}»';
 $string['groupblogs'] = 'Пользователи могут только просматривать блоги участников группы';
 $string['incorrectblogfilter'] = 'Указан неверный фильтр типа блога';
-$string['intro'] = 'Эта лента RSS бала автоматически сгенерирована по материалам одного или нескольких блогов';
+$string['intro'] = 'Эта лента RSS была автоматически сгенерирована по материалам одного или нескольких блогов';
 $string['invalidgroupid'] = 'Недопустимый ID группы';
 $string['invalidurl'] = 'Этот адрес недоступен';
 $string['linktooriginalentry'] = 'Ссылка на оригинальную запись блога';

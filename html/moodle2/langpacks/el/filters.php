@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filters', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,13 +59,14 @@ $string['isafter'] = 'είναι μετά';
 $string['isanyvalue'] = 'είναι οποιαδήποτε τιμή';
 $string['isbefore'] = 'είναι πριν';
 $string['isdefined'] = 'είναι ορισμένο';
-$string['isempty'] = 'είναι κενό';
+$string['isempty'] = 'είναι άδειο';
 $string['isequalto'] = 'είναι ίσο με';
 $string['isnotdefined'] = 'δεν είναι ορισμένο';
 $string['isnotequalto'] = 'δεν είναι ίσο με';
 $string['neveraccessed'] = 'Δεν εισήλθε ποτέ';
 $string['nevermodified'] = 'Δεν έγινε ποτέ τροποποίηση';
 $string['newfilter'] = 'Νέο φίλτρο';
+$string['nofiltersenabled'] = 'Δεν έχει ενεργοποιηθεί κανένα πρόσθετο φίλτρου στον ιστότοπο αυτό.';
 $string['off'] = 'Απενεργοποιημένο';
 $string['offbutavailable'] = 'Απενεργοποιημένο, αλλά διαθέσιμο';
 $string['on'] = 'Ενεργοποιημένο';

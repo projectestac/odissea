@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_checkbox', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_checkbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Selectievakje';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'De bewaarde gebruikersgegevens.';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'De opmaak van de bewaarde gebruikersgegevens.';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'De ID van het profielveld.';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Bijkomende gebruikersinformatie wordt hier bewaard.';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'De ID van de gebruiker waarvan de gegevens bewaard worden door de Checkbox plugin.';

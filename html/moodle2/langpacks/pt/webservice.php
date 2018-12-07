@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,6 +134,7 @@ $string['norequiredcapability'] = 'Não é necessária nenhuma capacidade';
 $string['notoken'] = 'A lista de tokens está vazia.';
 $string['onesystemcontrolling'] = 'Um sistema a controlar o Moodle com um token';
 $string['onesystemcontrollingdescription'] = 'Os passos seguintes mostram como configurar os web services para que um sistema possa controlar o Moodle. Estes passos também ajudam a configurar o método para autenticação dos tokens (chaves de segurança).';
+$string['onlyseecreatedtokens'] = 'Qualquer token pode ser apagado, no entanto só pode ver tokens que criou.';
 $string['operation'] = 'Operação';
 $string['optional'] = 'Opcional';
 $string['passwordisexpired'] = 'A senha expirou';
@@ -143,6 +144,22 @@ $string['postrestparam'] = 'Código PHP para REST (pedido POST)';
 $string['potusers'] = 'Utilizadores não autorizados';
 $string['potusersmatching'] = 'Utilizadores não autorizados com as seguintes caraterísticas';
 $string['print'] = 'Imprimir todo(a)s';
+$string['privacy:metadata:serviceusers'] = 'A lista de utilizador que pode usar determinados serviços externos';
+$string['privacy:metadata:serviceusers:iprestriction'] = 'IP restrito para usar o serviço';
+$string['privacy:metadata:serviceusers:timecreated'] = 'A data de quando o registo foi criado';
+$string['privacy:metadata:serviceusers:userid'] = 'O ID de utilizador';
+$string['privacy:metadata:serviceusers:validuntil'] = 'A data em que a autorização termina';
+$string['privacy:metadata:tokens'] = 'Um registo de tokens a interagir com o Moodle através de serviços web ou aplicações móveis.';
+$string['privacy:metadata:tokens:creatorid'] = 'O ID do utilizador que criou o token';
+$string['privacy:metadata:tokens:iprestriction'] = 'IP restrito para este token';
+$string['privacy:metadata:tokens:lastaccess'] = 'A data de quando o token foi usado pela última vez';
+$string['privacy:metadata:tokens:privatetoken'] = 'Um token mais privado usado ocasionalmente para validar certas operações, tais como SSO.';
+$string['privacy:metadata:tokens:timecreated'] = 'A data de quando o token foi criado';
+$string['privacy:metadata:tokens:token'] = 'O token do utilizador';
+$string['privacy:metadata:tokens:tokentype'] = 'O tipo de token';
+$string['privacy:metadata:tokens:userid'] = 'O ID do utilizador a quem pertence o token';
+$string['privacy:metadata:tokens:validuntil'] = 'A data a partir da qual o token de torna inválido';
+$string['privacy:request:notexportedsecurity'] = 'Não exportado por motivos de segurança';
 $string['protocol'] = 'Protocolo';
 $string['removefunction'] = 'Remover';
 $string['removefunctionconfirm'] = 'Tem a certeza de que pretende apagar a função "{$a->function}" do serviço "{$a->service}"?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_security', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ Merk op dat dit de veiligheid van de server niet enorm gaat verhogen, maar het k
 $string['check_configrw_name'] = 'config.php beschrijfbaar';
 $string['check_configrw_ok'] = 'config.php kan niet gewijzigd worden door PHP-scripts';
 $string['check_configrw_warning'] = 'PHP-scripts kunnen config.php wijzigen';
-$string['check_cookiesecure_details'] = '<p>Als je https inschakelt, dan kun je ook best secure cookies inschakelen. Je zou ook een permanente omleiding van http naar https moeten maken. Het best zou je ook nog HSTS-headers gebruiken</p>';
+$string['check_cookiesecure_details'] = '<p>Als je https inschakelt, dan kun je ook best secure cookies inschakelen. Je zou ook een permanente omleiding van http naar https moeten maken. Best schakel je ook HSTS headers in op je webserver.</p>';
 $string['check_cookiesecure_error'] = 'Schakel secure cookies in';
 $string['check_cookiesecure_name'] = 'Secure cookies';
 $string['check_cookiesecure_ok'] = 'Secure cookies ingeschakeld.';
@@ -78,7 +78,7 @@ $string['check_noauth_details'] = '<p>De <em>Geen authenticatie</em>-plugin is n
 $string['check_noauth_error'] = 'De Geen authenticatie-plugin mag niet gebruikt worden op productie-sites.';
 $string['check_noauth_name'] = 'Geen authenticatie';
 $string['check_noauth_ok'] = 'Geen authenticatie-plugin is uitgeschakeld';
-$string['check_nodemodules_details'] = '<p>De map <em>{$a->path}</em> bevat Node.js-modules en hun afhankelijkheden, typisch geïnstalleerd door de NPM-tool. Deze modules kunnen vereist zijn voor het ontwikkelen van Moodle. Ze zijn niet nodig om een Moodle-site te laten werken en kunnen mogelijk gevaarlijke code bevatten die je site bloot stelt aan externe aanvallen.</p><p>Het wordt sterk aangeraden om de map te verwijderen als de site beschikbaar is via een publieke URL of minstens de webtoegang tot de map te verhinderen.</p>';
+$string['check_nodemodules_details'] = '<p>De map <em>{$a->path}</em> bevat Node.js modules en hun afhankelijkheden, typisch geïnstalleerd door NPM. Deze modules kunnen nodig zijn voor lokale Moodle-ontwikkeling, zoals voor het gebruik van het grunt framework. Ze zijn niet nodig om een Moodle-site in productie te gebruiken en kunnen mogelijk gevaarlijke code bevatten die je site kwetsbaar maakt voor aanvallen.</p><p>Het is sterk aangeraden om deze map te verwijderen als je site bereikbaar is via een publieke URL of om om minstens de toegang ertoe te beveiligen via de configuratie van je webserver.</p>';
 $string['check_nodemodules_info'] = 'De map node_modules zou niet mogen aanwezig zijn op publieke sites';
 $string['check_nodemodules_name'] = 'Map voor node_modules';
 $string['check_openprofiles_details'] = 'Open gebruikersprofielen kunnen door spammers misbruikt worden. Aangeraden wordt om ofwel <code>Aanmelden verplicht voor gebruikersprofielen</code> ofwel <code>Aanmelden verplicht</code> in te schakelen.';
@@ -89,6 +89,10 @@ $string['check_passwordpolicy_details'] = '<p>Aangeraden wordt om een wachtwoord
 $string['check_passwordpolicy_error'] = 'Wachtwoordbeleid niet ingesteld';
 $string['check_passwordpolicy_name'] = 'Wachtwoordbeleid';
 $string['check_passwordpolicy_ok'] = 'Wachtwoordbeleid ingeschakeld';
+$string['check_preventexecpath_details'] = '<p>Het toestaan van het instellen van uitvoerbare programma\'s via de administratiepagina\'s is een bijkomend risico voor escalatie van privileges.</p>';
+$string['check_preventexecpath_name'] = 'Paden voor uitvoerbare programma\'s';
+$string['check_preventexecpath_ok'] = 'Paden voor uitvoerbare programma\'s kunnen enkel in config.php ingesteld worden.';
+$string['check_preventexecpath_warning'] = 'Paden voor uitvoerbare programma\'s kunnen in de beheerdersinterface ingesteld worden.';
 $string['check_riskadmin_detailsok'] = '<p>Controleer aub volgende lijst beheerders:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Controleer onderstaande lijst beheerders::</p>{$a->admins}
 <p>Aangeraden wordt om de beheerdersrol enkel toe te wijzen in de systeemcontext. Volgende gebruikers hebben een niet-ondersteunde beheerdersrol:</p>{$a->unsupported}';
@@ -116,7 +120,7 @@ $string['check_unsecuredataroot_error'] = 'Je dataroot-map <code>{$a}</code> sta
 $string['check_unsecuredataroot_name'] = 'Onveilige dataroot';
 $string['check_unsecuredataroot_ok'] = 'De dataroot-map mag niet toegankelijk zijn vanaf het internet.';
 $string['check_unsecuredataroot_warning'] = 'Je dataroot-map <code>{$a}</code> staat op de verkeerde plaats en kan toegankelijk zijn vanaf het internet!';
-$string['check_vendordir_details'] = '<p>De vendor-map <em>{$a->path}</em> bevat verschillende externe bibliotheken en hun afhankelijkheden, typisch geïnstalleerd door de PHP Composer. Dit kan nodig zijn voor locale ontwikkeling, zoals om het PHPUnit framework te installeren. Maar dit kan ook mogelijk gevaarlijke code bevatten die je site bloot geeft voor externe aanvallen.</p<<p>Het wordt sterk aangeraden om deze map te verwijderen als de site beschikbaar is via een publieke URL, of minstens de webtoegang tot de map te verhindern.</p>';
+$string['check_vendordir_details'] = '<p>De map <em>{$a->path}</em> bevat verschillende externe bibliotheken en hun afhankelijkheden, typisch geïnstalleerd door de PHP Composer. Deze bibliotheken kunnen nodig zijn voor lokale Moodle-ontwikkeling, zoals voor het installeren van het PHPUnit framework. Ze zijn niet nodig om een Moodle-site in productie te gebruiken en kunnen mogelijk gevaarlijke code bevatten die je site kwetsbaar maakt voor aanvallen.</p><p>Het is sterk aangeraden om deze map te verwijderen als je site bereikbaar is via een publieke URL of om om minstens de toegang ertoe te beveiligen via de configuratie van je webserver.</p>';
 $string['check_vendordir_info'] = 'De vendor-map zou niet mogen bestaan op publieke sites.';
 $string['check_vendordir_name'] = 'Vendor-map';
 $string['check_webcron_details'] = '<p>Web cron kan privé-gegevens van gebruikers tonen aan anonieme gebruikers. Daarom kun je best cron via CLI gebruiken of de cron-pagina beschermen met een wachtwoord.</p>';
@@ -128,6 +132,7 @@ $string['description'] = 'Beschrijving';
 $string['details'] = 'Details';
 $string['issue'] = 'Probleem';
 $string['pluginname'] = 'Veiligheidsoverzicht';
+$string['privacy:metadata'] = 'De beveiligingsoverzichtsplugin bewaart geen persoonlijke gegevens.';
 $string['security:view'] = 'Bekijk veiligheidsrapport';
 $string['status'] = 'Status';
 $string['statuscritical'] = 'Kritiek';

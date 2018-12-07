@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_messageinbound', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'klassenaam';
 $string['component'] = 'Component';
-$string['configmessageinboundhost'] = 'Het serveradres waar Moodle e-mail moet controleren. Om een niet-standaard poort op te geven, kun je [server]:[poort] gebruikern, bijvoorbeeld mail.voorbeeld.com:587. Als je dit veld leeg laat, zal Moodle de standaard poort gebruiken voor het type mailserver dat je opgegeven hebt.';
+$string['configmessageinboundhost'] = 'Het serveradres waar Moodle e-mail moet controleren. Om een niet-standaard poort op te geven, kun je [server]:[poort] gebruikern, bijvoorbeeld mail.voorbeeld.com:587. Als je geen poort opgeeft, zal Moodle de standaard poort gebruiken voor het type mailserver dat gebruikt zal worden.';
 $string['defaultexpiration'] = 'Vervalperiode standaard adres';
 $string['defaultexpiration_help'] = 'Wanneer een e-mailadres is gegenereerd, dan kan het automatisch vervallen na een tijdje, zodat het niet meer gebruikt kan worden. Het is een goed idee om een vervalperiode in te stellen.';
 $string['description'] = 'Beschrijving';

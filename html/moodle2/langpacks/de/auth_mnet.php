@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_mnet', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,69 @@ $string['auth_mnet_roamout'] = 'Nutzer/innen können sich von Ihrer Website zu d
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Timeout in Sekunden für die Authentifizierung über den XMLRPC Transfer.';
 $string['auto_add_remote_users'] = 'Remote-Nutzer/innen automatisch hinzufügen';
 $string['pluginname'] = 'MNET Authentifizierung';
+$string['privacy:metadata:external:mahara'] = 'Dieses Plugin kann Daten an ein verbundenes Mahara-System übertragen.';
+$string['privacy:metadata:external:moodle'] = 'Diees Plugin kann Daten von einem externen System an Moodle übertragen.';
+$string['privacy:metadata:mnet_external:address'] = 'Die Adresse des Nutzers.';
+$string['privacy:metadata:mnet_external:aim'] = 'Der AIM-Identifier des Nutzers.';
+$string['privacy:metadata:mnet_external:alternatename'] = 'Ein alternativer Name des Nutzers';
+$string['privacy:metadata:mnet_external:autosubscribe'] = 'Voreinstellung, dass Nutzer automatisch  Foren abonnieren wenn sie darin posten';
+$string['privacy:metadata:mnet_external:calendartype'] = 'Nutzereinstellung wie der Kalender genutzt wird';
+$string['privacy:metadata:mnet_external:city'] = 'Stadt des Nutzers';
+$string['privacy:metadata:mnet_external:country'] = 'Land aus der Nutzerkommt.';
+$string['privacy:metadata:mnet_external:currentlogin'] = 'Der letzte Login des Nutzers';
+$string['privacy:metadata:mnet_external:department'] = 'Abteilung des Nutzers';
+$string['privacy:metadata:mnet_external:description'] = 'Allgemeine Details über denNutzer';
+$string['privacy:metadata:mnet_external:email'] = 'E-Mail-Adresse für Kontakt';
+$string['privacy:metadata:mnet_external:emailstop'] = 'Einstellung, dass dem Nutzer keine E-Mail gesandt wird';
+$string['privacy:metadata:mnet_external:firstaccess'] = 'Zeitpunkt des ersten Zugriffs des Nutzers';
+$string['privacy:metadata:mnet_external:firstname'] = 'Vorname des Nutzers';
+$string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Phonetische Aussprache des Nutzernamens';
+$string['privacy:metadata:mnet_external:icq'] = 'ICQ-Nummer des Nutzers';
+$string['privacy:metadata:mnet_external:id'] = 'Identifier des Nutzers';
+$string['privacy:metadata:mnet_external:idnumber'] = 'Identifikationsnummer, die von der Institution vergeben wurde';
+$string['privacy:metadata:mnet_external:imagealt'] = 'Alternativer Text für Bild des Nutzers.';
+$string['privacy:metadata:mnet_external:institution'] = 'Institution aus der der Nutzer kommt';
+$string['privacy:metadata:mnet_external:lang'] = 'Nutzereinstellung zur Sprache';
+$string['privacy:metadata:mnet_external:lastaccess'] = 'Zeitpunkt des letzten Zugriffs auf die Seite';
+$string['privacy:metadata:mnet_external:lastlogin'] = 'Letzter Login des Nutzers';
+$string['privacy:metadata:mnet_external:lastname'] = 'Nachname des Nutzers';
+$string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Phonetische Aussprache des Nachnamens';
+$string['privacy:metadata:mnet_external:maildigest'] = 'Einstellung der E-Mail-Zusammenfassung des Nutzers';
+$string['privacy:metadata:mnet_external:maildisplay'] = 'Einstellung des Nutzers zur  Anzeige der E-Mail-Adresse für andere Nutzer';
+$string['privacy:metadata:mnet_external:middlename'] = 'Mittelerer Name des Nutzers';
+$string['privacy:metadata:mnet_external:msn'] = 'MSN-Identifier des Nutzers';
+$string['privacy:metadata:mnet_external:phone1'] = 'Telefonnummer des Nutzers';
+$string['privacy:metadata:mnet_external:phone2'] = 'Zusätzliche Teefonnummer des Nutzers';
+$string['privacy:metadata:mnet_external:picture'] = 'Bilddetails des Profilfotos des Nutzers';
+$string['privacy:metadata:mnet_external:policyagreed'] = 'Kennzeichen, ob der Nutzer die Richtlinien der Seite bestätigt hat';
+$string['privacy:metadata:mnet_external:skype'] = 'Skype-Identifier des Nutzers';
+$string['privacy:metadata:mnet_external:suspended'] = 'Kennzeichen ob der Nutzeraccount gesperrt wurde';
+$string['privacy:metadata:mnet_external:timezone'] = 'Zeitzone, die Nutzer eingestellt hat';
+$string['privacy:metadata:mnet_external:trackforums'] = 'Voreinstellung für Forum und Lesetracking';
+$string['privacy:metadata:mnet_external:trustbitmask'] = 'Trust Bit Mask';
+$string['privacy:metadata:mnet_external:url'] = 'URL für Nutzer';
+$string['privacy:metadata:mnet_external:username'] = 'Nutzername des Nutzers';
+$string['privacy:metadata:mnet_external:yahoo'] = 'Yahoo-Identifier des Nutzers';
+$string['privacy:metadata:mnet_log'] = 'Details zum Zugriff des Nutzers auf ein Remote-System';
+$string['privacy:metadata:mnet_log:action'] = 'Vom Nutzer ausgelöste Aktion';
+$string['privacy:metadata:mnet_log:cmid'] = 'ID des Kursmoduls';
+$string['privacy:metadata:mnet_log:course'] = 'Remote System Kurs-ID in der die Aktion erfolgte';
+$string['privacy:metadata:mnet_log:coursename'] = 'Remote System Langname des Kurses in der die Aktion erfolgte';
+$string['privacy:metadata:mnet_log:hostid'] = 'Remote System MNet ID';
+$string['privacy:metadata:mnet_log:info'] = 'Zusätzliche Information zurAktion';
+$string['privacy:metadata:mnet_log:ip'] = 'IP-Adresse zum Zeitpunkt der Aktion';
+$string['privacy:metadata:mnet_log:module'] = 'Remote System Modul wo Aktion stattfand';
+$string['privacy:metadata:mnet_log:remoteid'] = 'Remote-ID des Nutzers der Aktion in Remote-System auslöste';
+$string['privacy:metadata:mnet_log:time'] = 'Zeitpunkt der Aktionsausführung';
+$string['privacy:metadata:mnet_log:url'] = 'URL des Remote-Sytems in dem Aktion erfolgte';
+$string['privacy:metadata:mnet_log:userid'] = 'Lokale ID des Nutzers, der Aktion im Remote-System ausführte';
+$string['privacy:metadata:mnet_session'] = 'Die Details jeder MNet Nutzersession im Remote-System werden kurze Zeit gespeichert';
+$string['privacy:metadata:mnet_session:expires'] = 'Zeitpunkt des Ablaufs der Session';
+$string['privacy:metadata:mnet_session:mnethostid'] = 'Remote System MNet ID';
+$string['privacy:metadata:mnet_session:token'] = 'Eindeutiger Sessionidentifier';
+$string['privacy:metadata:mnet_session:useragent'] = 'String, der den   Nutzer beim Zugriff auf die Seite während der Session wiedererkennt';
+$string['privacy:metadata:mnet_session:userid'] = 'ID des Nutzers, der auf Remote-System zugreift';
+$string['privacy:metadata:mnet_session:username'] = 'Nutzername des Nutzers, der Remote-System nutzt';
 $string['rpc_negotiation_timeout'] = 'RPC negotiation timeout';
 $string['sso_idp_description'] = 'Veröffentlichen Sie diesen Dienst, um Ihren Nutzer/innen einen Zugriff auf {$a} zu ermöglichen, ohne sich dort erneut anmelden zu müssen.
 <ul><li><em>Voraussetzung</em>: Sie müssen außerdem den SSO-Dienst (Service Provider) auf {$a} <strong>abonnieren </strong>.</li></ul>
@@ -46,3 +109,4 @@ $string['sso_sp_description'] = 'Veröffentlichen Sie diesen Dienst, um angemeld
 <br />Abonnieren Sie diesen Dienst, um Ihren Nutzer/innen einen Zugriff auf {$a} zu ermöglichen, ohne sich dort erneut anmelden zu müssen.
 <ul><li><em>Voraussetzung</em>: Sie müssen zusätzlich den SSO-Dienst (Identity Provider) für {$a} <strong> veröffentlichen </strong>.</li></ul>';
 $string['sso_sp_name'] = 'SSO (Service Provider)';
+$string['unknownhost'] = 'Unbekannter Host';

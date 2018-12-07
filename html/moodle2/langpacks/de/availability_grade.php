@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grade', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['missing'] = '(Fehlende Aktivität)';
 $string['option_max'] = 'muss < sein';
 $string['option_min'] = 'muss ≥ sein';
 $string['pluginname'] = 'Voraussetzung: Bewertung';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung Bewertung\' speichert keine personenbezogenen Daten.';
 $string['requires_any'] = 'Sie haben eine Bewertung in <strong>{$a}</strong>';
 $string['requires_max'] = 'Sie haben eine angemessene Punktzahl in <strong>{$a}</strong>';
 $string['requires_min'] = 'Sie haben die erforderliche Punktzahl in <strong>{$a}</strong> erhalten';

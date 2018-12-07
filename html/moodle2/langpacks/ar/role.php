@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -248,7 +248,6 @@ $string['site:uploadusers'] = 'تحمل مستخدمين جدد من ملف';
 $string['site:viewfullnames'] = 'دائما معاينة الأسم الكامل للمستخدمين';
 $string['site:viewparticipants'] = 'معاينة المشاركين';
 $string['site:viewreports'] = 'معاينة التقارير';
-$string['tag:create'] = 'إنشاء وسوم جديدة';
 $string['tag:edit'] = 'تحرير الوسوم الموجودة';
 $string['tag:manage'] = 'إدارة كافة الوسوم';
 $string['thisusersroles'] = 'تعيين الأدوار لهذا المستخدم';

@@ -73,9 +73,9 @@ $string['lastaccess'] = 'Azken sarrera';
 $string['maxattempts'] = 'Gehienezko saiakera-kopurua';
 $string['maxgrade'] = 'Lortu beharreko jarduera/puntuazioa';
 $string['modulename'] = 'JClic';
-$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> Kataluniako Generalitateko Hezkuntza Sailaren proiektua da.
+$string['modulename_help'] = '<a href="https://clic.xtec.cat" target="_blank">JClic</a> Kataluniako Generalitateko Hezkuntza Sailaren proiektua da.
 Software askeko hainbat aplikatibok osatzen dute eta hainbat hezkuntza-jarduera multimedia sortzeko aukera ematen dute: puzzleak, loturak, testu-ariketak, gurutzegramak, letra-zopak eta bestelakoak.
-Gainera, <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic-ak</a> jarduera-biltegi bat du eta bertan bere lana elkarbanatu nahi izan duten irakasle eta beste talde batzuetako hainbat lagunek sortutako 1000 proiektutik gora daude
+Gainera, <a href="https://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic-ak</a> jarduera-biltegi bat du eta bertan bere lana elkarbanatu nahi izan duten irakasle eta beste talde batzuetako hainbat lagunek sortutako 1000 proiektutik gora daude
 
 Modulu honen bitartez irakasleek JClic motako edozein jarduera gehi dezakete ikastaro batean eta baita ikasle bakoitzak lortutako emaitzak eskuratu ere (jardueran emandako denbora, saiakerak, asmatutakoak, e.a.).';
 $string['modulenameplural'] = 'JClic';

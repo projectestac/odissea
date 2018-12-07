@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_random', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['includingsubcategories'] = 'azpikategoriak barne ditu';
 $string['pluginname'] = 'Ausazkoa';
 $string['pluginnameediting'] = 'Ausazko galdera editatzen';
 $string['pluginname_help'] = 'Ausazko galdera bat berez ez da galdera mota bat, kategoria zehatz batetik ausaz aukeratutako galderak jarduera batean sartzeko modua baizik.';
+$string['privacy:metadata'] = 'Ausazkoa galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['randomqname'] = 'Ausazkoa ({$a})';
 $string['randomqplusname'] = 'Ausazkoa ({$a} eta azpikategoriak)';
 $string['selectedby'] = '{$a->randomname}-(e)k {$a->questionname} aukeratu du';

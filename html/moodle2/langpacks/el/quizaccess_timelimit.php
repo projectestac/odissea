@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_timelimit', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_timelimit
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'Το quiz έχει όριο χρόνου {$a}. Ο χρόνος θα μετρήσει αντίστροφα από τη στιγμή που θα ξεκινήσετε την προσπάθειά σας και πρέπει να την υποβάλλετε πριν τη λήξη του. Είστε σίγουρος ότι επιθυμείτε να ξεκινήσετε;';
-$string['confirmstartheader'] = 'Quiz με χρόνο';
+$string['confirmstart'] = 'Το κουίζ έχει όριο χρόνου {$a}. Ο χρόνος θα μετρήσει αντίστροφα από τη στιγμή που θα ξεκινήσετε την προσπάθειά σας και πρέπει να την υποβάλλετε πριν τη λήξη του. Είστε σίγουρος ότι επιθυμείτε να ξεκινήσετε τώρα;';
+$string['confirmstartheader'] = 'Κουίζ με χρονικό όριο';
+$string['pluginname'] = 'Κανόνας πρόσβασης σε κουίζ, με χρονικό ορίο';
 $string['quiztimelimit'] = 'Χρονικό όριο: {$a}';

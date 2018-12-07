@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['invalidgradeimport'] = 'Moodle-ek ezin izan du irakurri igotako kalkulu
 $string['nochanges'] = 'Ez da topatu aldatutako kalifikaziorik igotako kalkulu-orrian';
 $string['offlinegradingworksheet'] = 'Kalifikazioak';
 $string['pluginname'] = 'Lineaz kanpoko kalkulu-orria';
+$string['privacy:nullproviderreason'] = 'Plugin honek ez du erabiltzailearen informazioa biltzeko datu-baserik. Soilik mod_assign-eko APIak erabiltzen ditu kalifikazio-interfazea erakusten laguntzeko.';
 $string['processgrades'] = 'Kalifikazioak inportatu';
 $string['skiprecord'] = 'Erregistroa alde batera utzi';
 $string['updatedgrades'] = '{$a} kalifikazioak eta feedbackak eguneratu dira';

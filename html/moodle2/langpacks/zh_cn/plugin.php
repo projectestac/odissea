@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -97,6 +97,8 @@ $string['type_editor'] = '编辑器';
 $string['type_editor_plural'] = '编辑器';
 $string['type_enrol'] = '注册方法';
 $string['type_enrol_plural'] = '注册方法';
+$string['type_fileconvertermanage'] = '管理文档转换器';
+$string['type_fileconverter_plural'] = '文档转换器';
 $string['type_filter'] = '文本过滤器';
 $string['type_filter_plural'] = '文本过滤器';
 $string['type_format'] = '课程格式';
@@ -114,6 +116,7 @@ $string['type_local_plural'] = '本地插件';
 $string['type_media_plural'] = '媒体播放器';
 $string['type_message'] = '消息输出';
 $string['type_message_plural'] = '消息输出';
+$string['type_mlbackend_plural'] = '机器学习的后端';
 $string['type_mnetservice'] = 'MNet 服务';
 $string['type_mnetservice_plural'] = 'MNet 服务';
 $string['type_mod'] = '活动模块';

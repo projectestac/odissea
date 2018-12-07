@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_file', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['path_help'] = 'このキャッシュストアのファイルを保存�
 $string['pluginname'] = 'ファイルキャッシュ';
 $string['prescan'] = 'ディレクトリを事前スキャンする';
 $string['prescan_help'] = 'この設定を有効にした場合、キャッシュが最初に使用されスキャンデータに対してファイルリクエストが最初にチェックされる時点でディレクトリがスキャンされます。あなたが遅いファイルシステムを使用してファイル処理がボトルネックを発生させている場合、これは役に立ちます。';
+$string['privacy:metadata'] = 'ファイルキャッシュストアプラグインはキャッシング機能の一部として短時間だけデータを保存します。しかし、データは定期的に削除されます。';
 $string['singledirectory'] = '単一ディレクトリストア';
 $string['singledirectory_help'] = 'この設定を有効にした場合、ファイル (キャッシュアイテム) は複数のディレクトリに分けられるのではなく、単一ディレクトリに保存されます。<br />
 有効にすることでファイルインタラクションをスピードアップすることができますが、ファイルシステム制限に達するリスクを増大させる可能性があります。<br />

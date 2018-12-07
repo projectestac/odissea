@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_ctrlhelp', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_ctrlhelp', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_ctrlhelp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ctrlhelp:desc'] = 'CTRL + right click for more options';
 $string['pluginname'] = 'CTRL+right click helper';
+$string['privacy:metadata'] = 'The Ctrl+right TinyMCE plugin does not store any personal data.';

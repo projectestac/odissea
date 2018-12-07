@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,6 @@ $string['noenglishuninstall'] = 'Non é posíbel desinstalar o paquete de idioma
 $string['nolangupdateneeded'] = 'Ningún dos seus paquetes de idioma precisa de ser actualizado.';
 $string['pluginname'] = 'Paquetes de idioma';
 $string['purgestringcaches'] = 'Purgar as cachés de cadeas';
-$string['remotelangnotavailable'] = 'Non podemos facer a instalación do paquete de idioma debido a que o Moodle non consegue conectarse con download.moodle.org. Por favor, descargue os ficheiros comprimidos da lista de abaixo, cópieos no directorio {$a} e descomprímaos manualmente.';
 $string['selectlangs'] = 'Seleccione os idiomas a desinstalar';
 $string['uninstall'] = 'Desinstale o paquete de idiomas seleccionado';
 $string['uninstallconfirm'] = 'Está a punto de desinstalar completamente o paquete de idiomas {$a}, está certo?';

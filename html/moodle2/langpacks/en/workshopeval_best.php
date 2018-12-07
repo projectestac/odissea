@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_best', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopeval_best', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopeval_best
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['comparisonlevel7'] = 'lax';
 $string['comparisonlevel9'] = 'very lax';
 $string['configcomparison'] = 'Default value of the factor that influence the grading evaluation.';
 $string['pluginname'] = 'Comparison with the best assessment';
+$string['privacy:metadata'] = 'The Comparison with the best assessment plugin does not store any personal data. Actual personal data user\'s grades are stored by the Workshop module itself and are attached to the exported submissions and assessments data.';

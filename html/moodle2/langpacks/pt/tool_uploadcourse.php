@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,6 +101,7 @@ $string['mode_help'] = 'Esta opção especifica se as disciplinas podem ser cria
 $string['nochanges'] = 'Sem alterações';
 $string['pluginname'] = 'Carregamento de Disciplina';
 $string['preview'] = 'Pré-visualização';
+$string['privacy:metadata'] = 'O módulo Carregar Disciplina não armazena dados pessoais.';
 $string['reset'] = 'Reiniciar disciplina depois do carregamento';
 $string['reset_help'] = 'Define se a disciplina é reiniciada depois de criada/atualizada';
 $string['restoreafterimport'] = 'Restaurar depois de importar';

@@ -47,7 +47,9 @@ abstract class base {
      *
      * @return string response table name.
      */
-    abstract public function response_table();
+    static public function response_table() {
+        return 'Must be implemented!';
+    }
 
     /**
      * Insert a provided response to the question.
@@ -65,7 +67,7 @@ abstract class base {
      * @param boolean $anonymous - Whether or not responses are anonymous.
      * @return array - Array of data records.
      */
-    abstract protected function get_results($rids=false, $anonymous=false);
+    abstract public function get_results($rids=false, $anonymous=false);
 
     /**
      * Provide the result information for the specified result records.
@@ -77,6 +79,30 @@ abstract class base {
      */
     abstract public function display_results($rids=false, $sort='', $anonymous=false);
 
+    /**
+     * If the choice id needs to be transformed into a different value, override this in the child class.
+     * @param $choiceid
+     * @return mixed
+     */
+    public function transform_choiceid($choiceid) {
+        return $choiceid;
+    }
+
+    /**
+     * Provide the feedback scores for all requested response id's. This should be provided only by questions that provide feedback.
+     * @param array $rids
+     * @return array | boolean
+     */
+    public function get_feedback_scores(array $rids) {
+        return false;
+    }
+
+    /**
+     * @param $rows
+     * @param $rids
+     * @param $sort
+     * @return string
+     */
     protected function display_response_choice_results($rows, $rids, $sort) {
         $output = '';
         if (is_array($rids)) {
@@ -110,6 +136,20 @@ abstract class base {
     }
 
     /**
+     * Return an array of answers by question/choice for the given response. Must be implemented by the subclass.
+     *
+     * @param int $rid The response id.
+     * @param null $col Other data columns to return.
+     * @param bool $csvexport Using for CSV export.
+     * @param int $choicecodes CSV choicecodes are required.
+     * @param int $choicetext CSV choicetext is required.
+     * @return array
+     */
+    static public function response_select($rid, $col = null, $csvexport = false, $choicecodes = 0, $choicetext = 1) {
+        return [];
+    }
+
+    /**
      * Return all the fields to be used for users in bulk questionnaire sql.
      *
      * @author: Guy Thomas
@@ -123,7 +163,7 @@ abstract class base {
             $userfields .= $userfields === '' ? '' : ', ';
             $userfields .= 'u.'.$field;
         }
-        $userfields .= ', u.id as userid';
+        $userfields .= ', u.id as usrid';
         return $userfields;
     }
 
@@ -139,12 +179,10 @@ abstract class base {
     public function get_bulk_sql($surveyid, $responseid = false, $userid = false, $groupid = false) {
         global $DB;
 
-        $usernamesql = $DB->sql_cast_char2int('qr.username');
-
         $sql = $this->bulk_sql($surveyid, $responseid, $userid);
         $params = [];
         if (($groupid !== false) && ($groupid > 0)) {
-            $groupsql = ' INNER JOIN {groups_members} gm ON gm.groupid = ? AND gm.userid = '.$usernamesql.' ';
+            $groupsql = ' INNER JOIN {groups_members} gm ON gm.groupid = ? AND gm.userid = qr.userid ';
             $gparams = [$groupid];
         } else {
             $groupsql = '';
@@ -152,7 +190,7 @@ abstract class base {
         }
         $sql .= "
             AND qr.survey_id = ? AND qr.complete = ?
-      LEFT JOIN {user} u ON u.id = $usernamesql
+      LEFT JOIN {user} u ON u.id = qr.userid
       $groupsql
         ";
         $params = array_merge([$surveyid, 'y'], $gparams);
@@ -160,7 +198,7 @@ abstract class base {
             $sql .= " WHERE qr.id = ?";
             $params[] = $responseid;
         } else if ($userid) {
-            $sql .= " WHERE qr.username = ?"; // Note: username is the userid.
+            $sql .= " WHERE qr.userid = ?";
             $params[] = $userid;
         }
 
@@ -207,7 +245,7 @@ abstract class base {
 
         return "
             SELECT " . $DB->sql_concat_join("'_'", ['qr.id', "'".$this->question->helpname()."'", $alias.'.id']) . " AS id,
-                   qr.submitted, qr.complete, qr.grade, qr.username, $userfields, qr.id AS rid, $alias.question_id,
+                   qr.submitted, qr.complete, qr.grade, qr.userid, $userfields, qr.id AS rid, $alias.question_id,
                    $extraselect
               FROM {questionnaire_response} qr
               JOIN {".$config->table."} $alias

@@ -50,7 +50,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         }
     }
     /**
-     * @return All the text of the question in a single string so WIRIS quizzes
+     * @return All the text of the question in a single string so Wiris Quizzes
      * can extract the variable placeholders.
      */
     public function join_all_text() {
@@ -64,7 +64,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
 
     /**
      *
-     * @return String Return the general feedback text in a single string so WIRIS
+     * @return String Return the general feedback text in a single string so Wiris
      * quizzes can extract the variable placeholders.
      */
     public function join_feedback_text() {
@@ -141,7 +141,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
     public function get_matching_answer(array $response) {
         try {
             // Quick return if no answer given.
-            if (!isset($response['answer']) || $response['answer'] == null) {
+            if (!isset($response['answer']) || $response['answer'] === null) {
                 return null;
             }
             // Optimization in order to avoid a service call.
@@ -165,7 +165,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             // Does nothing on production, may throw exception on test environment.
             $this->get_matching_answer_fail_test($response);
 
-            // Use the WIRIS quizzes API to grade this response.
+            // Use the Wiris Quizzes API to grade this response.
             $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
             // Build array of correct answers.
             $correctvalues = array();
@@ -247,6 +247,27 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         return $text;
     }
 
+    public function is_complete_response(array $response) {
+        if (array_key_exists('answer', $response) && $this->is_empty_mathml($response['answer'])) {
+            return false;
+        } else {
+            return parent::is_complete_response($response);
+        }
+    }
+
+    public function is_gradable_response(array $response) {
+        return $this->is_complete_response($response);
+    }
+
+    private function is_empty_mathml($string) {
+        $mathml = simplexml_load_string($string);
+        if (gettype($mathml) != 'boolean' && $mathml->getName() == 'math' && count($mathml->children()) == 0) {
+
+            return true;
+        }
+        return false;
+    }
+
     private function is_text_answer() {
         if (!empty($this->parent)) {
             return true;
@@ -275,7 +296,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         // We need to replace all aterisk for scaped asterisks:
         // Because shortanswer get_correct_response() methods
         // cleans all asterisks, asterisks are shortanswer wildcards.
-        // However on WIRIS shortanswers asterisk means product.
+        // However on Wiris shortanswers asterisk means product.
         foreach ($this->answers as $key => $value) {
             $this->answers[$key]->answer = str_replace('*', '\*', $value->answer);
         }

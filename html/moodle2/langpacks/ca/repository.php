@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -156,6 +156,7 @@ $string['linkexternal'] = 'Lloc extern';
 $string['listview'] = 'Visualitza com a llista';
 $string['loading'] = 'S\'està carregant...';
 $string['login'] = 'Inicia la sessió';
+$string['logintoaccount'] = 'Inicieu la sessió al vostre compte {$a}';
 $string['logout'] = 'Tanca la sessió';
 $string['lostsource'] = 'Error. No es troba la font. {$a}';
 $string['makefileinternal'] = 'Fes una còpia del fitxer';
@@ -234,6 +235,7 @@ $string['typenotvisible'] = 'Tipus no visible';
 $string['undisclosedreference'] = '(No revelat)';
 $string['undisclosedsource'] = '(No revelat)';
 $string['unknownoriginal'] = 'Desconegut';
+$string['unknownsource'] = 'Font desconeguda';
 $string['unzipped'] = 'Descomprimit amb èxit';
 $string['upload'] = 'Penja aquest fitxer';
 $string['uploading'] = 'S\'està carregant...';

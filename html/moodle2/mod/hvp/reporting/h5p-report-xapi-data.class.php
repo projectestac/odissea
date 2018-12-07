@@ -217,6 +217,9 @@ class H5PReportXAPIData {
         $additionals['source'] = $this->getObjectDefinition('source', array());
         $additionals['target'] = $this->getObjectDefinition('target', array());
         break;
+
+      default:
+        $additionals['extensions'] = $this->getObjectDefinition('extensions', (object)array());
     }
 
     return (empty($additionals) ? '' : json_encode($additionals));
@@ -229,18 +232,18 @@ class H5PReportXAPIData {
    */
   public function validateData() {
 
-      if ($this->getInteractionType() === '') {
-          return false;
-      }
+    if ($this->getInteractionType() === '') {
+      return false;
+    }
 
-      // Validate children
-      $children = $this->getChildren();
-      foreach ($children as $child) {
-          if (!$child->validateData()) {
-              return false;
-          }
+    // Validate children
+    $children = $this->getChildren();
+    foreach ($children as $child) {
+      if (!$child->validateData()) {
+        return false;
       }
+    }
 
-      return true;
+    return true;
   }
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_match', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,6 @@ $string['pluginnameadding'] = 'Ajout d\'une question d\'appariement';
 $string['pluginnameediting'] = 'Modification d\'une question d\'appariement';
 $string['pluginname_help'] = 'La question d\'appariement demande au participant de faire correspondre une liste de termes (questions) avec une autre liste de termes (réponses).';
 $string['pluginnamesummary'] = 'La réponse à chaque sous-question doit être choisie parmi une liste de possibilités prédéfinies.';
+$string['privacy:metadata'] = 'Le plugin de type de question Appariement n\'enregistre aucune donnée personnelle.';
 $string['shuffle'] = 'Mélanger';
 $string['shuffle_help'] = 'Si vous activez cette option, les réponses seront mélangées aléatoirement avant chaque tentative, pour autant que l\'option « Mélanger les réponses possibles » soit activée dans les paramètres du test.';

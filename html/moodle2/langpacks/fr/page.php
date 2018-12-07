@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = 'Créer une ressource page';
 $string['displayoptions'] = 'Options d\'affichage disponibles';
 $string['displayselect'] = 'Affichage';
 $string['displayselectexplain'] = 'Sélectionner le type d\'affichage.';
+$string['indicator:cognitivedepth'] = 'Page : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Page.';
+$string['indicator:socialbreadth'] = 'Page : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Page.';
 $string['legacyfiles'] = 'Migration d\'un ancien fichier de cours';
 $string['legacyfilesactive'] = 'Actif';
 $string['legacyfilesdone'] = 'Terminé';
@@ -61,4 +65,5 @@ $string['printheading'] = 'Afficher le nom de la page';
 $string['printheadingexplain'] = 'Afficher le nom de la page au-dessus de son contenu ?';
 $string['printintro'] = 'Afficher la description de la page';
 $string['printintroexplain'] = 'Afficher la description de la page au-dessus de son contenu ?';
+$string['privacy:metadata'] = 'Le plugin mod_page n\'enregistre aucune donnée personnelle.';
 $string['search:activity'] = 'Page';

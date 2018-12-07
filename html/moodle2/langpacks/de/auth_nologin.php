@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nologin', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_nologin', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_nologin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nologindescription'] = 'Diese Authentifizierungsmethode sollten Sie für ein Nutzerkonto setzen, das Sie temporär sperren, aber nicht endgültig löschen möchten. Das Plugin verhindert das Login und unterdrückt den Mailversand.';
 $string['pluginname'] = 'Kein Login';
+$string['privacy:metadata'] = 'Das Plugin \'Authentifizierung Kein-Login\' speichert keine personenbezogenen Daten.';

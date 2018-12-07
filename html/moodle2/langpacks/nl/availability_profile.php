@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_profile', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['op_isequalto'] = 'gelijk aan';
 $string['op_isnotempty'] = 'is niet leeg';
 $string['op_startswith'] = 'begint met';
 $string['pluginname'] = 'Beperking door profiel';
+$string['privacy:metadata'] = 'De beperkingen door profiel-plugin bewaart geen persoonlijke gegevens.';
 $string['requires_contains'] = 'Jouw <strong>{$a->field}</strong> bevat <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Jouw <strong>{$a->field}</strong> bevat <strong>{$a->value}</strong> niet';
 $string['requires_endswith'] = 'Jouw <strong>{$a->field}</strong> eindigt met <strong>{$a->value}</strong>';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_tinymce', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_tinymce
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -254,7 +254,7 @@ $string['advlink_dlg:tabindex'] = 'Tabindex';
 $string['advlink_dlg:target'] = 'Fenster';
 $string['advlink_dlg:target_blank'] = 'In neuem Fenster öffnen';
 $string['advlink_dlg:target_langcode'] = 'Sprache';
-$string['advlink_dlg:target_name'] = 'Name der Zielseite';
+$string['advlink_dlg:target_name'] = 'Name des Ziels';
 $string['advlink_dlg:target_parent'] = 'In übergeordnetem Fenster/Frame öffnen';
 $string['advlink_dlg:target_same'] = 'In selbem Fenster/Frame öffnen';
 $string['advlink_dlg:target_top'] = 'In oberstem Frame öffnen (ersetzt Frameset)';
@@ -600,6 +600,7 @@ $string['paste:selectall_desc'] = 'Alles auswählen';
 $string['pluginname'] = 'Texteditor TinyMCE';
 $string['preview:preview_desc'] = 'Vorschau';
 $string['print:print_desc'] = 'Drucken';
+$string['privacy:metadata'] = 'Das editor_tinymce-Plugin speichert keine persönlichen Daten.';
 $string['save:cancel_desc'] = 'Alle Änderungen verwerfen';
 $string['save:save_desc'] = 'Speichern';
 $string['searchreplace:delta_height'] = '0';

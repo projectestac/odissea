@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,13 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Αποδεκτοί τύποι αρχείου';
-$string['acceptedfiletypes_help'] = 'Οι αποδεκτοί τύποι αρχείου μπορούν να περιοριστούν εισάγοντας μια λίστα με mimetypes διαχωρισμένα με κόμμα, π.χ. video/mp4, audio/mp3, image/png, image/jpeg, ή τις επεκτάσεις αρχείων συμπεριλαμβάνοντας μια τελεία, π.χ. .png, .jpg. Αν το πεδίο μείνει κενό, τότε επιτρέπονται όλοι οι τύποι αρχείων.';
 $string['configmaxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['countfiles'] = '{$a} αρχεία';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
+$string['defaultacceptedfiletypes'] = 'Προεπιλεγμένοι αποδεκτοί τύποι αρχείου';
 $string['enabled'] = 'Υποβολές αρχείων';
 $string['eventassessableuploaded'] = 'Ένα αρχείο έχει φορτωθεί.';
 $string['file'] = 'Υποβολές αρχείων';
+$string['filesofthesetypes'] = 'Τύποι αρχείων που μπορούν να προστεθούν στην υποβολή:';
 $string['maxbytes'] = 'Μέγιστο μέγεθος αρχείου';
 $string['maxfiles'] = 'Μέγιστο αριθμό αρχείων ανά υποβολή';
 $string['maxfilessubmission'] = 'Μέγιστος αριθμός αρχείων που έχουν αποσταλεί';

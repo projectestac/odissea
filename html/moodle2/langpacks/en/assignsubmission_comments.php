@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_comments', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['default_help'] = 'If set, this submission method will be enabled by def
 $string['enabled'] = 'Submission comments';
 $string['enabled_help'] = 'If enabled, students can leave comments on their own submission. This can be used to let students alert the marker about which files the master file is in cases of inter-linked files, for instance.';
 $string['pluginname'] = 'Submission comments';
+$string['privacy:metadata:commentpurpose'] = 'Comments between the student and teacher about a submission.';

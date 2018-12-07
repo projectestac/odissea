@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['pluginname_help'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder o
 $string['pluginnamesummary'] = 'Bilder oder Texte werden auf Ablegebereiche auf ein Hintergrundbild gezogen.';
 $string['previewareaheader'] = 'Vorschau';
 $string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder oder geben Sie Texte ein. Definieren Sie anschließend auf dem Hintergrundbild für jedes Objekt einen Ablegebereich, auf den das Objekt gezogen werden soll.';
+$string['privacy:metadata'] = 'Das Drag-and-Drop auf Bild Frageformat Plugin speichert keine persönlichen Daten.';
 $string['refresh'] = 'Vorschau neu laden';
 $string['shuffleimages'] = 'Ziehbare Objekte bei jedem Versuch zufällig anordnen.';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

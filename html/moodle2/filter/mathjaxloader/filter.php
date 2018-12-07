@@ -36,55 +36,39 @@ class filter_mathjaxloader extends moodle_text_filter {
      * @return string The MathJax language code.
      */
     public function map_language_code($moodlelangcode) {
-        $mathjaxlangcodes = array('br',
-                                  'cdo',
-                                  'cs',
-                                  'da',
-                                  'de',
-                                  'en',
-                                  'eo',
-                                  'es',
-                                  'fa',
-                                  'fi',
-                                  'fr',
-                                  'gl',
-                                  'he',
-                                  'ia',
-                                  'it',
-                                  'ja',
-                                  'ko',
-                                  'lb',
-                                  'mk',
-                                  'nl',
-                                  'oc',
-                                  'pl',
-                                  'pt',
-                                  'pt-br',
-                                  'ru',
-                                  'sl',
-                                  'sv',
-                                  'tr',
-                                  'uk',
-                                  'zh-hans');
-        $exceptions = array('cz' => 'cs');
 
-        // First see if this is an exception.
-        if (isset($exceptions[$moodlelangcode])) {
-            $moodlelangcode = $exceptions[$moodlelangcode];
+        // List of language codes found in the MathJax/localization/ directory.
+        $mathjaxlangcodes = [
+            'ar', 'ast', 'bcc', 'bg', 'br', 'ca', 'cdo', 'ce', 'cs', 'cy', 'da', 'de', 'diq', 'en', 'eo', 'es', 'fa',
+            'fi', 'fr', 'gl', 'he', 'ia', 'it', 'ja', 'kn', 'ko', 'lb', 'lki', 'lt', 'mk', 'nl', 'oc', 'pl', 'pt',
+            'pt-br', 'qqq', 'ru', 'scn', 'sco', 'sk', 'sl', 'sv', 'th', 'tr', 'uk', 'vi', 'zh-hans', 'zh-hant'
+        ];
+
+        // List of explicit mappings and known exceptions (moodle => mathjax).
+        $explicit = [
+            'cz' => 'cs',
+            'pt_br' => 'pt-br',
+            'zh_tw' => 'zh-hant',
+            'zh_cn' => 'zh-hans',
+        ];
+
+        // If defined, explicit mapping takes the highest precedence.
+        if (isset($explicit[$moodlelangcode])) {
+            return $explicit[$moodlelangcode];
         }
 
-        // Now look for an exact lang string match.
+        // If there is exact match, it will be probably right.
         if (in_array($moodlelangcode, $mathjaxlangcodes)) {
             return $moodlelangcode;
         }
 
-        // Now try shortening the moodle lang string.
-        $moodlelangcode = preg_replace('/-.*/', '', $moodlelangcode);
-        // Look for a match on the shortened string.
-        if (in_array($moodlelangcode, $mathjaxlangcodes)) {
-            return $moodlelangcode;
+        // Finally try to find the best matching mathjax pack.
+        $parts = explode('_', $moodlelangcode, 2);
+        if (in_array($parts[0], $mathjaxlangcodes)) {
+            return $parts[0];
         }
-        // All failed - use english.
+
+        // No more guessing, use English.
         return 'en';
     }
 
@@ -95,10 +79,8 @@ class filter_mathjaxloader extends moodle_text_filter {
      * @param context $context The current context.
      */
     public function setup($page, $context) {
-        // This only requires execution once per request.
-        static $jsinitialised = false;
 
-        if (empty($jsinitialised)) {
+        if ($page->requires->should_create_one_time_item_now('filter_mathjaxloader-scripts')) {
             $url = get_config('filter_mathjaxloader', 'httpsurl');
             $lang = $this->map_language_code(current_language());
             $url = new moodle_url($url, array('delayStartupUntil' => 'configured'));
@@ -118,8 +100,6 @@ class filter_mathjaxloader extends moodle_text_filter {
             $params = array('mathjaxconfig' => $config, 'lang' => $lang);
 
             $page->requires->yui_module('moodle-filter_mathjaxloader-loader', 'M.filter_mathjaxloader.configure', array($params));
-
-            $jsinitialised = true;
         }
     }
 
@@ -148,37 +128,116 @@ class filter_mathjaxloader extends moodle_text_filter {
             $text = str_replace('\\]', '\\)', $text);
         }
 
-        $hasinline = strpos($text, '\\(') !== false && strpos($text, '\\)') !== false;
-        $hasdisplay = (strpos($text, '$$') !== false) ||
-                      (strpos($text, '\\[') !== false && strpos($text, '\\]') !== false);
-
         $hasextra = false;
-
         foreach ($extradelimiters as $extra) {
             if ($extra && strpos($text, $extra) !== false) {
                 $hasextra = true;
                 break;
             }
         }
-        if ($hasinline || $hasdisplay || $hasextra) {
+
+        $hasdisplayorinline = false;
+        if ($hasextra) {
+            // If custom dilimeters are used, wrap whole text to prevent autolinking.
+            $text = '<span class="nolink">' . $text . '</span>';
+        } else {
+            // Wrap display and inline math environments in nolink spans.
+            // Do not wrap nested environments, i.e., if inline math is nested
+            // inside display math, only the outer display math is wrapped in
+            // a span. The span HTML inside a LaTex math environment would break
+            // MathJax. See MDL-61981.
+            list($text, $hasdisplayorinline) = $this->wrap_math_in_nolink($text);
+        }
+
+        if ($hasdisplayorinline || $hasextra) {
             $PAGE->requires->yui_module('moodle-filter_mathjaxloader-loader', 'M.filter_mathjaxloader.typeset');
-            if ($hasextra) {
-                // If custom dilimeters are used, wrap whole text to prevent autolinking.
-                $text = '<span class="nolink">' . $text . '</span>';
-            } else {
-                if ($hasinline) {
-                    // If the default inline TeX delimiters \( \) are present, wrap each pair in nolink.
-                    $text = preg_replace('/\\\\\\([\S\s]*?\\\\\\)/u',
-                        '<span class="nolink">\0</span>', $text);
-                }
-                if ($hasdisplay) {
-                    // If default display TeX is used, wrap $$ $$ or \[ \] individually.
-                    $text = preg_replace('/\$\$[\S\s]*?\$\$|\\\\\\[[\S\s]*?\\\\\\]/u',
-                        '<span class="nolink">\0</span>', $text);
-                }
-            }
             return '<span class="filter_mathjaxloader_equation">' . $text . '</span>';
         }
         return $text;
+    }
+
+    /**
+     * Find math environments in the $text and wrap them in no link spans
+     * (<span class="nolink"></span>). If math environments are nested, only
+     * the outer environment is wrapped in the span.
+     *
+     * The recognized math environments are \[ \] and $$ $$ for display
+     * mathematics and \( \) for inline mathematics.
+     *
+     * @param string $text The text to filter.
+     * @return array An array containing the potentially modified text and
+     * a boolean that is true if any changes were made to the text.
+     */
+    protected function wrap_math_in_nolink($text) {
+        $i = 1;
+        $len = strlen($text);
+        $displaystart = -1;
+        $displaybracket = false;
+        $displaydollar = false;
+        $inlinestart = -1;
+        $changesdone = false;
+        // Loop over the $text once.
+        while ($i < $len) {
+            if ($displaystart === -1) {
+                // No display math has started yet.
+                if ($text[$i - 1] === '\\' && $text[$i] === '[') {
+                    // Display mode \[ begins.
+                    $displaystart = $i - 1;
+                    $displaybracket = true;
+                } else if ($text[$i - 1] === '$' && $text[$i] === '$') {
+                    // Display mode $$ begins.
+                    $displaystart = $i - 1;
+                    $displaydollar = true;
+                } else if ($text[$i - 1] === '\\' && $text[$i] === '(') {
+                    // Inline math \( begins, not nested inside display math.
+                    $inlinestart = $i - 1;
+                } else if ($text[$i - 1] === '\\' && $text[$i] === ')' && $inlinestart > -1) {
+                    // Inline math ends, not nested inside display math.
+                    // Wrap the span around it.
+                    $text = $this->insert_span($text, $inlinestart, $i);
+
+                    $inlinestart = -1; // Reset.
+                    $i += 28; // The $text length changed due to the <span>.
+                    $len += 28;
+                    $changesdone = true;
+                }
+            } else {
+                // Display math open.
+                if (($text[$i - 1] === '\\' && $text[$i] === ']' && $displaybracket) ||
+                        ($text[$i - 1] === '$' && $text[$i] === '$' && $displaydollar)) {
+                    // Display math ends, wrap the span around it.
+                    $text = $this->insert_span($text, $displaystart, $i);
+
+                    $displaystart = -1; // Reset.
+                    $displaybracket = false;
+                    $displaydollar = false;
+                    $i += 28; // The $text length changed due to the <span>.
+                    $len += 28;
+                    $changesdone = true;
+                }
+            }
+
+            ++$i;
+        }
+        return array($text, $changesdone);
+    }
+
+    /**
+     * Wrap a portion of the $text inside a no link span
+     * (<span class="nolink"></span>). The whole text is then returned.
+     *
+     * @param string $text The text to modify.
+     * @param int $start The start index of the substring in $text that should
+     * be wrapped in the span.
+     * @param int $end The end index of the substring in $text that should be
+     * wrapped in the span.
+     * @return string The whole $text with the span inserted around
+     * the defined substring.
+     */
+    protected function insert_span($text, $start, $end) {
+        return substr_replace($text,
+                '<span class="nolink">'. substr($text, $start, $end - $start + 1) .'</span>',
+                $start,
+                $end - $start + 1);
     }
 }

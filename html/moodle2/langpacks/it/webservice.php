@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -134,6 +134,7 @@ $string['norequiredcapability'] = 'Nessun privilegio richiesto';
 $string['notoken'] = 'L\'elenco dei token è vuoto';
 $string['onesystemcontrolling'] = 'Consentire ad un sistema esterno di controllare Moodle';
 $string['onesystemcontrollingdescription'] = 'I passi che seguono chiariscono le impostazioni necessarie per consentire il controllo di Moodle da parte di un sistema esterno. I passi suggeriscono anche come impostare il metodo di autenticazione basato su token (chiave di sicurezza).';
+$string['onlyseecreatedtokens'] = 'E\' possibile eliminare qualsiasi token ma puoi visualizzare solo i token che hai creato.';
 $string['operation'] = 'Operazione';
 $string['optional'] = 'Opzionale';
 $string['passwordisexpired'] = 'La password è scaduta';

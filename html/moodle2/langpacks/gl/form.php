@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,7 @@ $string['err_nopunctuation'] = 'Aquí non debe escribir ningún signo de puntuac
 $string['err_numeric'] = 'Aquí debe escribir un número.';
 $string['err_rangelength'] = 'Aquí debe escribir entre {$a->format[0]} e {$a->format[1]} caracteres.';
 $string['err_required'] = 'Aquí debe fornecer un valor.';
+$string['err_wrongfileextension'] = 'Algúns ficheios ({$a->wrongfiles}) non poden ser enviados. Só se admiten os tipos de ficheiro {$a->whitelist}.';
 $string['general'] = 'Xeral';
 $string['hideadvanced'] = 'Agochar avanzadas';
 $string['hour'] = 'Hora';

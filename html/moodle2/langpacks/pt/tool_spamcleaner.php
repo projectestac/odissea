@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_spamcleaner', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_spamcleaner
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Limpeza de spam';
+$string['privacy:metadata'] = 'O módulo Limpeza de spam não armazena dados pessoais.';
 $string['spamauto'] = 'Detetar padrões comuns de spam';
 $string['spamcannotdelete'] = 'Não pode apagar este utilizador';
 $string['spamcannotfinduser'] = 'Não existem utilizadores que correspondam à sua pesquisa';

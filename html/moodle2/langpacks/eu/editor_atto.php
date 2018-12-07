@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_atto', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'Ezin izan da zerbitzarira konektatu. Orri hau berriz bidaltzen baduzu, agian aldaketak galduko dira.';
 $string['autosavefrequency'] = 'Automatikoki gordetzeko maiztasuna';
 $string['autosavefrequency_desc'] = 'Gordetze automatikoen arteko segundu-kopurua da hau. Attok editoreko testua automatikoki gordeko du ezarpen honen arabera, eta horrela testua automatikoki berreskuratu ahal izango da erabiltzaile berdina formulario horretara bueltatzen denean.';
+$string['autosaves'] = 'Editoreko gordetze-automatikoaren informazioa';
 $string['autosavesucceeded'] = 'Zirriborroa gorde da.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -40,6 +41,10 @@ $string['errortextrecovery'] = 'Zoritxarrez zirriborroa ezin izan da berrezarri.
 $string['infostatus'] = 'Informazioa';
 $string['pluginname'] = 'Atto HTML editorea';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['privacy:metadata:database:atto_autosave'] = 'Automatikoki gordetako testu-editorearen zirriborroak.';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'Gorde zen testua.';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'Edukia gorde zeneko unea.';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'Gordetako datuen jabea den erabiltzailearen IDa.';
 $string['recover'] = 'Berreskuratu';
 $string['settings'] = 'Atto tresna-barraren ezarpenak';
 $string['subplugintype_atto'] = 'Atto plugina';
@@ -47,5 +52,5 @@ $string['subplugintype_atto_plural'] = 'Atto pluginak';
 $string['taskautosavecleanup'] = 'Ezabatu iraungitako automatikoki gordetako zirriborroak datu-basetik.';
 $string['textrecovered'] = 'Testu honen zirriborroa automatikoki berrezarri da.';
 $string['toolbarconfig'] = 'Konfiguratu tresna-barra';
-$string['toolbarconfig_desc'] = 'Gehigarrien zerrenda eta agertuko diren ordena hemen zehaztu daitezke. Konfigurazioa taldetan antolatzen da (talde bat lerroko) eta ondoren talde horretako gehigarrien zerrenda. Taldea eta gehigarriak berdin sinboloa batek banatzen ditu, eta gehigarriak koma bidez banatzen dira. Taldeen izenak gehigarriek komunean diten ezaugarria adierazi beharko luke. Gehigarri eta taldeen izenak ezin dira errepikatu eta karaketere alfanumerikoak baino ez dituzte izan behar.';
+$string['toolbarconfig_desc'] = 'Pluginen zerrenda eta agertuko diren ordena hemen zehaztu daitezke. Konfigurazioa taldetan antolatzen da (talde bat lerroko) eta ondoren talde horretako pluginen zerrenda. Taldea eta pluginak berdin sinboloa batek banatzen ditu, eta pluginak koma bidez banatzen dira. Taldeen izenak gehigarriek komunean diten ezaugarria adierazi beharko luke. Gehigarri eta taldeen izenak ezin dira errepikatu eta karaketere alfanumerikoak baino ez dituzte izan behar.';
 $string['warningstatus'] = 'Kontuz';

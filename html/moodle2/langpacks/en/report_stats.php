@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_stats', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,16 @@ $string['page-report-stats-index'] = 'Course statistics report';
 $string['page-report-stats-user'] = 'User course statistics report';
 $string['page-report-stats-x'] = 'Any statistics report';
 $string['pluginname'] = 'Statistics';
+$string['privacy:dailypath'] = 'Stats daily';
+$string['privacy:metadata'] = 'The Statistics plugin does not store any personal data.';
+$string['privacy:metadata:courseid'] = 'An identifier for a course.';
+$string['privacy:metadata:roleid'] = 'The role ID of the user.';
+$string['privacy:metadata:statsreads'] = 'Views of content';
+$string['privacy:metadata:statssummary'] = 'Records basic statistics about user interaction in courses.';
+$string['privacy:metadata:statswrites'] = 'Content made in the course.';
+$string['privacy:metadata:stattype'] = 'The type of stat being recorded';
+$string['privacy:metadata:timeend'] = 'End time of logs view';
+$string['privacy:metadata:userid'] = 'The user ID linked to this table.';
+$string['privacy:monthlypath'] = 'Stats monthly';
+$string['privacy:weeklypath'] = 'Stats weekly';
 $string['stats:view'] = 'View course statistics report';

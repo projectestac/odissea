@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_webct', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_webct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['missinganswer'] = '{$a} 行目の問題文に「:ANSWER」「:Lx」「:
 $string['missingquestion'] = '{$a} 行目の後に問題ラベルがありません。';
 $string['pluginname'] = 'WebCTフォーマット';
 $string['pluginname_help'] = 'WebCTフォーマットではWebCTテキストベースフォーマットで保存された多肢選択問題および記述問題をインポートすることができます。';
+$string['privacy:metadata'] = 'WebCT問題フォーマットプラグインはどのような個人データも保存しません。';
 $string['questionnametoolong'] = '{$a} 行目の問題名が長すぎます (最大半角255文字)。問題名は省略されました。';
 $string['unknowntype'] = '{$a} 行目以後に不明な問題タイプがあります。';
 $string['warningsdetected'] = '{$a} 件の警告が見つかりました。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipus de fitxers acceptats';
-$string['acceptedfiletypes_help'] = 'Els tipus de fitxers acceptats es poden restringir introduint una llista de mimetypes separats per punt i coma, p. ex.: «video/mp4; audio/mp3; image/png; image/jpeg». Fins i tot podeu limitar les extensions incloent un punt; p. ex., «.png; .jpg». Si el camp es deixa buit, es permeten tot tipus de fitxers.';
+$string['acceptedfiletypes_help'] = 'Els tipus de fitxers acceptats es poden restringir introduint una llista d\'extensions de fitxers. Si el camp es deixa buit, tots els tipus de fitxer estaran permesos.';
 $string['configmaxbytes'] = 'Mida màxima del fitxer';
 $string['countfiles'] = '{$a} fitxers';
 $string['default'] = 'Habilitat per defecte';
+$string['defaultacceptedfiletypes'] = 'Tipus de fitxers acceptats per defecte';
 $string['default_help'] = 'Si està actiu, aquest mètode de tramesa s\'habilitarà per defecte per a totes les tasques noves.';
 $string['enabled'] = 'Fitxers de la tramesa';
 $string['enabled_help'] = 'Si està habilitat, l\'estudiantat podrà carregar un o més fitxers com a tramesa.';

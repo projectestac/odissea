@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_local', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_local', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_local
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,5 @@ $string['local:view'] = 'サーバリポジトリを表示する';
 $string['notitle'] = 'タイトルなし';
 $string['pluginname'] = 'サーバファイル';
 $string['pluginname_help'] = '前回、Moodleサーバにアップロードされたファイル';
+$string['privacy:metadata'] = 'サーバファイルリポジトリプラグインはどのような個人データも保存または転送しません。';
 $string['remember'] = '次回から入力を省略する';

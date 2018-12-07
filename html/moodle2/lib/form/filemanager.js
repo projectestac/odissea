@@ -30,6 +30,7 @@
  * this.filemanager, contains reference to filemanager Node
  * this.selectnode, contains referenct to select-file Node
  * this.selectui, M.core.dialogue to select the file
+ * this.viewmode, contains current view mode - icons, tree or details
  *
  * FileManager options:
  * =====
@@ -70,6 +71,7 @@ M.form_filemanager.init = function(Y, options) {
             this.maxfiles = options.maxfiles;
             this.maxbytes = options.maxbytes;
             this.areamaxbytes = options.areamaxbytes;
+            this.userprefs = options.userprefs;
             this.emptycallback = null; // Used by drag and drop upload
 
             this.filepicker_options = options.filepicker?options.filepicker:{};
@@ -126,9 +128,13 @@ M.form_filemanager.init = function(Y, options) {
             // set event handler for lazy loading of thumbnails
             this.filemanager.one('.fp-content').on(['scroll','resize'], this.content_scrolled, this);
             // display files
-            this.viewmode = 1; // TODO take from cookies?
-            this.filemanager.all('.fp-vb-icons,.fp-vb-tree,.fp-vb-details').removeClass('checked')
-            this.filemanager.all('.fp-vb-icons').addClass('checked')
+            this.viewmode = this.get_preference("recentviewmode");
+            if (this.viewmode != 2 && this.viewmode != 3) {
+                this.viewmode = 1;
+            }
+            var viewmodeselectors = {'1': '.fp-vb-icons', '2': '.fp-vb-tree', '3': '.fp-vb-details'};
+            this.filemanager.all('.fp-vb-icons,.fp-vb-tree,.fp-vb-details').removeClass('checked');
+            this.filemanager.all(viewmodeselectors[this.viewmode]).addClass('checked');
             this.refresh(this.currentpath); // MDL-31113 get latest list from server
         },
 
@@ -414,6 +420,7 @@ M.form_filemanager.init = function(Y, options) {
                         this.render();
                         this.filemanager.one('.fp-content').setAttribute('tabIndex', '0');
                         this.filemanager.one('.fp-content').focus();
+                        this.set_preference('recentviewmode', this.viewmode);
                     }
                 }, this);
         },
@@ -781,6 +788,7 @@ M.form_filemanager.init = function(Y, options) {
         },
         setup_select_file: function() {
             var selectnode = this.selectnode;
+            var scope = this;
             // bind labels with corresponding inputs
             selectnode.all('.fp-saveas,.fp-path,.fp-author,.fp-license').each(function (node) {
                 node.all('label').set('for', node.one('input,select').generateID());
@@ -791,12 +799,10 @@ M.form_filemanager.init = function(Y, options) {
                 e.preventDefault();
                 this.update_file();
             }, this);
-            selectnode.all('form').on('keydown', function(e) {
-                if (e.keyCode == 13) {
-                    e.preventDefault();
-                    this.update_file();
-                }
-            }, this);
+            selectnode.all('form input').on('key', function(e) {
+                e.preventDefault();
+                scope.update_file();
+            }, 'enter');
             selectnode.one('.fp-file-download').on('click', function(e) {
                 e.preventDefault();
                 if (this.selectui.fileinfo.type != 'folder') {
@@ -915,6 +921,11 @@ M.form_filemanager.init = function(Y, options) {
                 // TODO if changed asked to confirm, the same with close button
                 this.selectui.hide();
             }, this);
+            selectnode.all('.fp-file-update, .fp-file-download, .fp-file-delete, .fp-file-zip, .fp-file-unzip, ' +
+                '.fp-file-setmain, .fp-file-cancel').on('key', function(e) {
+                    e.preventDefault();
+                    this.simulate('click');
+            }, 'enter');
         },
         get_parent_folder_name: function(node) {
             if (node.type != 'folder' || node.filepath.length < node.fullname.length+1) {
@@ -1051,7 +1062,20 @@ M.form_filemanager.init = function(Y, options) {
                 }
             }
             return false;
-        }
+        },
+        get_preference: function(name) {
+            if (this.userprefs[name]) {
+                return this.userprefs[name];
+            } else {
+                return false;
+            }
+        },
+        set_preference: function(name, value) {
+            if (this.userprefs[name] != value) {
+                M.util.set_user_preference('filemanager_' + name, value);
+                this.userprefs[name] = value;
+            }
+        },
     });
 
     // finally init everything needed

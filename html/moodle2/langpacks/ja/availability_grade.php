@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grade', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['missing'] = '(不明な活動)';
 $string['option_max'] = '評点 <';
 $string['option_min'] = '評点 ≥';
 $string['pluginname'] = '評点による制限';
+$string['privacy:metadata'] = '評点による制限プラグインはどのような個人データも保存しません。';
 $string['requires_any'] = 'あなたに <strong>{$a}</strong> の評点がない場合';
 $string['requires_max'] = 'あなたが <strong>{$a}</strong> の適切な評点を取得している場合';
 $string['requires_min'] = 'あなたが <strong>{$a}</strong> の必須評点に達した場合';

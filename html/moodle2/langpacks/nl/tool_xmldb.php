@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_xmldb', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,7 +59,7 @@ Het is ten zeerste aangeraden om de laatste beschikbare +-versie van je Moodleve
 Deze actie leest alleen je databank en kan dus altijd veilig uitgevoerd worden.';
 $string['confirmcheckforeignkeys'] = 'Deze functie zoekt naar mogelijke schendingen van foreign keys, gedefinieerd in de install.xml-definities. (Moodle genereert op dit ogenblik geen foreign key beperkingen in de databank - hierdoor kan er ongeldige data voorkomen.)
 
-Je kunt best de laatste Moodleversie gebruiken (+-versie) die voor jouw Moodleversie beschikbaar is voor je op zoek gaat naar ontbrekende indexen.
+Je kunt best de laatste Moodle-versie gebruiken (+-versie) die voor jouw Moodle-versie beschikbaar is voor je op zoek gaat naar ontbrekende indexen.
 
 Deze functie wijzigt niets aan de databank (enkel lezen). Je kunt dit dus op elk moment veilig uitvoeren.';
 $string['confirmcheckindexes'] = 'Deze functie zal zoeken naar mogelijk ontbrekende indexen op je Moodle server, en hierbij automatisch de nodige SQL-statements genereren (maar niet uitvoeren!) om alles up to date te houden. Eens gegenereerd kun je die statements kopiëren en veilig uitvoeren in je favoriete SQL-interface

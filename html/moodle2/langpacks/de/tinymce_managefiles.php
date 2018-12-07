@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_managefiles', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_managefiles', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_managefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['hasmissingfiles'] = 'Warnung: Folgende Dateien werden im Textbereich re
 $string['manageareafiles'] = 'Eingebettete Dateien im Texteditor verwalten';
 $string['managefiles:desc'] = 'Eingebettete Dateien verwalten';
 $string['pluginname'] = 'Eingebettete Dateien verwalten';
+$string['privacy:metadata'] = 'Das TinyMCE Plugin für eingebettete Dateien speichert keine persönlichen Daten.';
 $string['refreshfiles'] = 'Liste der fehlenden und unbenutzten Dateien erneuern';
 $string['unusedfilesdesc'] = 'Folgende eingebettete Dateien werden nicht im Textbereich benutzt:';
 $string['unusedfilesheader'] = 'Unbenutzte Dateien';

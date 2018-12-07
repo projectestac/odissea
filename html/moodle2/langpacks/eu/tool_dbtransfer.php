@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_dbtransfer', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_dbtransfer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,15 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clidriverlist'] = 'Migraziorako eskuragarri dauden datu-base kontrolatzaileak';
+$string['cliheading'] = 'Datu-basearen migrazioa - ziurta ezazu migrazioa egin bitartean inor ez dela zerbitzarira sartzen ari!';
+$string['climigrationnotice'] = 'Datu-basearen migrazioa martxan da, mesedez itxaron migrazioa burutu, zerbitzariko kudeatzaileak konfigurazioa eguneratu eta $CFG->dataroot/climaintenance.html fitxategia ezabatzen duenera arte.';
+$string['convertinglogdisplay'] = 'Erregistroak erakusteko ekintzak bihurtzen';
 $string['dbexport'] = 'Datu-basearen esportazioa';
 $string['dbtransfer'] = 'Datu-basearen migrazioa';
 $string['enablemaintenance'] = 'Gaitu mantenu-modua';
+$string['enablemaintenance_help'] = 'Aukera honek mantenu-modua gaitzen du datu-basearen migrazioa egin bitartean eta amaitu ondoren, erabiltzaileak migrazioa burutu bitartean sartzea eragotziz. Mesedez kontuan izan eguneratzea amaitu ondoren kudeatzaileak eskuz $CFG->dataroot/climaintenance.html fitxategia ezabatu beharko duela funtzionamendu normala berriz hasteko.';
 $string['exportdata'] = 'Esportatu datuak';
 $string['notargetconectexception'] = 'Sentitzen dugu, ezin da konektatu helburu den datu-basearekin.';
 $string['options'] = 'Aukerak';
 $string['pluginname'] = 'Datu-basearen transferentzia';
-$string['targetdatabase'] = 'Helburu-datu-basea';
+$string['privacy:metadata'] = 'Datu-basearen transferentzia pluginak ez du datu pertsonalik biltzen.';
+$string['targetdatabase'] = 'Helburuko datu-basea';
+$string['targetdatabasenotempty'] = 'Helburuko datu-baseak ezin du emandako aurrizki bera duen taularik izan!';
 $string['transferdata'] = 'Transferitu datuak';
 $string['transferdbintro'] = 'Script-ak datu-base honetako eduki guztiak beste datu-base zerbitzari batera transferituko ditu. Datu-base mota ezberdinen arteko datu-migrazioak egiteko erabili ohi da.';
-$string['transferdbtoserver'] = 'Transferitu Moodle datu-base hau beste zerbitzari batera';
+$string['transferdbtoserver'] = 'Transferitu Moodle-ko datu-base hau beste zerbitzari batera';
 $string['transferringdbto'] = '{$a->dbtypefrom} datu-basea {$a->dbtype} motako "{$a->dbname}" datu-basera transferitzen "{$a->dbhost}" -n';

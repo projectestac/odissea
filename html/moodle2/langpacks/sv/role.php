@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -501,7 +501,6 @@ $string['site:uploadusers'] = 'Ladda upp nya användare från fil';
 $string['site:viewfullnames'] = 'Se alltid användarnas fullständiga namn';
 $string['site:viewparticipants'] = 'Visa deltagare';
 $string['site:viewreports'] = 'Visa rapporter';
-$string['tag:create'] = 'Skapa nya rubriker för intressen';
 $string['tag:edit'] = 'Redigera befintliga rubriker för intressen';
 $string['tag:editblocks'] = 'Redigera block som finns på sidorna för rubriker för intressen';
 $string['tag:manage'] = 'Administrera alla rubriker för intressen';

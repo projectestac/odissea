@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['dndresizeheight'] = 'Изменить высоту при перета�
 $string['dndresizewidth'] = 'Изменить ширину при перетаскивании';
 $string['dnduploadlabel'] = 'Добавить изображение на страницу курса';
 $string['dnduploadlabeltext'] = 'Добавить пояснение на страницу курса';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Пояснение.';
 $string['label:addinstance'] = 'Добавить новое пояснение';
 $string['labeltext'] = 'Текст пояснения';
 $string['label:view'] = 'Просматривать пояснение';

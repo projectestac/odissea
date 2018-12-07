@@ -80,7 +80,7 @@ $string['check_noauth_details'] = '<p>The <em>No authentication</em> plugin is n
 $string['check_noauth_error'] = 'The No authentication plugin cannot be used on production sites.';
 $string['check_noauth_name'] = 'No authentication';
 $string['check_noauth_ok'] = 'No authentication plugin is disabled.';
-$string['check_nodemodules_details'] = '<p>The directory <em>{$a->path}</em> contains Node.js modules and their dependencies, typically installed by the NPM utility. These modules may be required for Moodle development. They are not needed to run a Moodle site and they can contain potentially dangerous code exposing your site to remote attacks.</p><p>It is strongly recommended to remove the directory if the site is available via a public URL, or at least prohibit web access to it.</p>';
+$string['check_nodemodules_details'] = '<p>The directory <em>{$a->path}</em> contains Node.js modules and their dependencies, typically installed by the NPM utility. These modules may be needed for local Moodle development, such as for using the grunt framework. They are not needed to run a Moodle site in production and they can contain potentially dangerous code exposing your site to remote attacks.</p><p>It is strongly recommended to remove the directory if the site is available via a public URL, or at least prohibit web access to it in your webserver configuration.</p>';
 $string['check_nodemodules_info'] = 'The node_modules directory should not be present on public sites.';
 $string['check_nodemodules_name'] = 'Node.js modules directory';
 $string['check_openprofiles_details'] = 'Open user profiles can be abused by spammers. It is recommended that either <code>Force users to log in for profiles</code> or <code>Force users to log in</code> are enabled.';
@@ -92,6 +92,11 @@ Do not make the requirements too strict though, as this can result in users not 
 $string['check_passwordpolicy_error'] = 'Password policy not set.';
 $string['check_passwordpolicy_name'] = 'Password policy';
 $string['check_passwordpolicy_ok'] = 'Password policy enabled.';
+$string['check_preventexecpath_name'] = 'Executable paths';
+$string['check_preventexecpath_ok'] = 'Executable paths only settable in config.php.';
+$string['check_preventexecpath_warning'] = 'Executable paths can be set in the Admin GUI.';
+$string['check_preventexecpath_details'] = '<p>Allowing executable paths to be set via the Admin GUI is a vector for privilege escalation.</p>';
+
 $string['check_riskadmin_detailsok'] = '<p>Please verify the following list of system administrators:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Please verify the following list of system administrators:</p>{$a->admins}
 <p>It is recommended to assign administrator role in the system context only. The following users have (unsupported) admin role assignments in other contexts:</p>{$a->unsupported}';
@@ -119,7 +124,7 @@ $string['check_unsecuredataroot_error'] = 'Your dataroot directory <code>{$a}</c
 $string['check_unsecuredataroot_name'] = 'Insecure dataroot';
 $string['check_unsecuredataroot_ok'] = 'Dataroot directory must not be accessible via the web.';
 $string['check_unsecuredataroot_warning'] = 'Your dataroot directory <code>{$a}</code> is in the wrong location and might be exposed to the web.';
-$string['check_vendordir_details'] = '<p>The vendor directory <em>{$a->path}</em> contains various third-party libraries and their dependencies, typically installed by the PHP Composer. It may be needed for local development, such as for installing the PHPUnit framework. But it can also contain potentially dangerous code exposing your site to remote attacks.</p><p>It is strongly recommended to remove the directory if the site is available via a public URL, or at least prohibit web access to it.</p>';
+$string['check_vendordir_details'] = '<p>The directory <em>{$a->path}</em> contains various third-party libraries and their dependencies, typically installed by the PHP Composer. These libraries may be needed for local Moodle development, such as for installing the PHPUnit framework. They are not needed to run a Moodle site in production and they can contain potentially dangerous code exposing your site to remote attacks.</p><p>It is strongly recommended to remove the directory if the site is available via a public URL, or at least prohibit web access to it in your webserver configuration.</p>';
 $string['check_vendordir_info'] = 'The vendor directory should not be present on public sites.';
 $string['check_vendordir_name'] = 'Vendor directory';
 $string['check_webcron_details'] = '<p>Running the cron from a web browser can expose privileged information to anonymous users. It is recommended to only run the cron from the command line or set a cron password for remote access.</p>';
@@ -136,3 +141,4 @@ $string['statusok'] = 'OK';
 $string['statusserious'] = 'Serious';
 $string['statuswarning'] = 'Warning';
 $string['timewarning'] = 'Data processing may take a long time, please be patient...';
+$string['privacy:metadata'] = 'The Security overview plugin does not store any personal data.';

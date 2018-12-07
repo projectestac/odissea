@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_database', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,6 +47,16 @@ $string['other'] = 'Outro';
 $string['participating'] = 'Aluno';
 $string['pluginname'] = 'Base de dados externa para registos de atividade';
 $string['pluginname_desc'] = 'Um módulo de registo que armazena entradas de registos de atividade numa tabela de uma base de dados externa.';
+$string['privacy:metadata:log'] = 'Uma coleção de eventos anteriores';
+$string['privacy:metadata:log:anonymous'] = 'Se o evento foi sinalizado como anónimo';
+$string['privacy:metadata:log:eventname'] = 'Nome do evento';
+$string['privacy:metadata:log:ip'] = 'O endereço IP utilizado na altura do evento';
+$string['privacy:metadata:log:origin'] = 'A origem do evento';
+$string['privacy:metadata:log:other'] = 'Informação adicional sobre o evento';
+$string['privacy:metadata:log:realuserid'] = 'O ID do utilizador real responsável pelo evento, quando mascarado';
+$string['privacy:metadata:log:relateduserid'] = 'O ID do utilizador relacionado com este evento';
+$string['privacy:metadata:log:timecreated'] = 'A hora em que o evento ocorreu';
+$string['privacy:metadata:log:userid'] = 'O ID do utilizador que desencadeou este evento';
 $string['read'] = 'Ler';
 $string['tablenotfound'] = 'A tabela especificada não foi encontrada';
 $string['teaching'] = 'Professor';

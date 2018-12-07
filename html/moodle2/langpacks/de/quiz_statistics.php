@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_statistics', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,6 +90,7 @@ $string['partofquestion'] = 'Teil der Frage';
 $string['pluginname'] = 'Statistiken';
 $string['position'] = 'Position';
 $string['positions'] = 'Position(en)';
+$string['privacy:metadata'] = 'Das Teststatistikplugin speichert keine persönlichen Daten';
 $string['questioninformation'] = 'Information zur Frage';
 $string['questionname'] = 'Name der Frage';
 $string['questionnumber'] = 'F#';

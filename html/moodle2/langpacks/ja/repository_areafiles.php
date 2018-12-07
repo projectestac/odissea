@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_areafiles', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_areafiles', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_areafiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['areafiles:view'] = 'リポジトリ埋め込みファイルを表示す
 $string['configplugin'] = 'リポジトリ埋め込みファイルの設定';
 $string['pluginname'] = '埋め込みファイル';
 $string['pluginname_help'] = '現在のテキストエディタの埋め込みファイルです。';
+$string['privacy:metadata'] = '埋め込みファイルリポジトリプラグインはどのような個人データも保存または転送しません。';

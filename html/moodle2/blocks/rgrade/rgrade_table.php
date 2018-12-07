@@ -41,13 +41,14 @@ $PAGE->set_heading($page_title);
 $PAGE->set_title($title);
 
 $jspath = $CFG->wwwroot.'/blocks/rgrade/js';
-$PAGE->requires->js(new moodle_url($jspath.'/jquery-1.7.1.min.js'), 'rgrade_table');
-$PAGE->requires->js(new moodle_url($jspath.'/jquery.ba-bbq.js'), 'rgrade_table');
-$PAGE->requires->js(new moodle_url($jspath.'/handlebars-1.0.0.beta.6.js'), 'rgrade_table');
-$PAGE->requires->js(new moodle_url($jspath.'/i18n.js'), 'rgrade_table');
-$PAGE->requires->js(new moodle_url($jspath.'/css.js'), 'rgrade_table');
-$PAGE->requires->js(new moodle_url($jspath.'/jquery.cookie.js'), 'rgrade_table');
-$PAGE->requires->js(new moodle_url($jspath.'/jquery.simplemodal.1.4.2.min.js'), 'rgrade_table');
+
+$PAGE->requires->js(new moodle_url($jspath.'/jquery-1.7.1.min.js'));
+$PAGE->requires->js(new moodle_url($jspath.'/jquery.ba-bbq.js'));
+$PAGE->requires->js(new moodle_url($jspath.'/handlebars-1.0.0.beta.6.js'));
+$PAGE->requires->js(new moodle_url($jspath.'/i18n.js'));
+$PAGE->requires->js(new moodle_url($jspath.'/css.js'));
+$PAGE->requires->js(new moodle_url($jspath.'/jquery.cookie.js'));
+$PAGE->requires->js(new moodle_url($jspath.'/jquery-ui-1.9.2.custom.js'));
 
 $js_module = array(
   'name' => 'local_block_rgrade',
@@ -299,7 +300,7 @@ echo $OUTPUT->header();
 
 <script id="layer-edit-content-template"
 	type="text/x-handlebars-template">
-<a href="#" class="simplemodal-close">X</a>
+<a href="#" class="simplemodal-close" title="Pre esc per sortir">X</a>
 {{> headerGrades}}
 {{> contentGradesEdit}}
 </script>
@@ -482,9 +483,6 @@ echo $OUTPUT->header();
 <form id="form_hide_unit_msg" action="#">
 	<input type="checkbox" id="hide_msg" value="1" name="hide_msg"/>
 	<label for="hide_msg"><strong><?php echo rgrade_get_string('alert_units_table_hide');?></strong></label>
-	<div class="container-button">
-	<input type="submit" class="button" name="ok" value="<?php echo rgrade_get_string('alert_units_table_ok');?>"/>
-	</div>
 </form>
 </div>
 

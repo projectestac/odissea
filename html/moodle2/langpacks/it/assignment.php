@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,6 @@ $string['page-mod-assignment-view'] = 'Pagina principale del modulo compito';
 $string['page-mod-assignment-x'] = 'Qualsiasi pagina principale del modulo compito';
 $string['pluginadministration'] = 'Gestione Compito 2.2 (Disabilitato)';
 $string['pluginname'] = 'Compito 2.2 (Disabilitato)';
+$string['privacy:submissionpath'] = 'consegna';
 $string['upgradenotification'] = 'Questa attività si basa su un modulo compito obsoleto.';
 $string['viewassignmentupgradetool'] = 'Visualizza l\'assistente per l\'aggiornamento dei compiti';

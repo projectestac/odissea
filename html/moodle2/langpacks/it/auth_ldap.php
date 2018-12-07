@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,12 +45,12 @@ $string['auth_ldap_creators'] = 'Elenco dei gruppi o dei contesti i cui membri s
 $string['auth_ldap_creators_key'] = 'Creatori';
 $string['auth_ldapdescription'] = 'Il plugin consente la confiugrazione dell\'autenticazione tramite un server LDAP esterno.
 Autenticandosi in Moodle con credenziali LDAP valide, verrà creato un utente nel database. Il plugin può leggere gli attributi dell\'utente da LDAP e mappare i campi in Moodle.';
-$string['auth_ldap_expiration_desc'] = 'Seleziona No per disabilitare il controllo delle password scadute o la lettura della data di scadenza delle password da LDAP';
+$string['auth_ldap_expiration_desc'] = 'Selezionare \'{$a->no}\' per disabilitare il controllo delle password scadute oppure  \'{$a->ldapserver}\' per ottenere la data di scadenza delle password dal server LDAP';
 $string['auth_ldap_expiration_key'] = 'Scadenza';
 $string['auth_ldap_expiration_warning_desc'] = 'Numero di giorni che precedono l\'invio dell\'avviso di password scaduta.';
 $string['auth_ldap_expiration_warning_key'] = 'Avviso di scadenza';
-$string['auth_ldap_expireattr_desc'] = 'Opzionale: modifica l\'attributo ldap che stabilisce la data di scadenza delle password.';
-$string['auth_ldap_expireattr_key'] = 'Attributo di scadenza';
+$string['auth_ldap_expireattr_desc'] = 'Opzionale: modifica l\'attributo ldap che definisce la data di scadenza delle password.';
+$string['auth_ldap_expireattr_key'] = 'Attributo per la scadenza';
 $string['auth_ldapextrafields'] = 'i campi seguenti sono opzionali. E\'  possibile scegliere di mapapre alcuni campi del profilo utente in Moodle utilizzando i dati provenienti dai <b>campi LDAP</b>. <p>Lasciando i campi vuoti, non verranno mapapti dati da LDAP e verranno utilizzati i dati di default di Moodle.</p><p>In entrambi i casi,gli utenti potranno modificare questi campi dopo essersi autenticati.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Opzionale: esclude l\'attributo gracelogin';
 $string['auth_ldap_gracelogin_key'] = 'Attributo Grace login';
@@ -82,7 +82,9 @@ $string['auth_ldap_passtype'] = 'Specificare il formato delle password nuove o m
 $string['auth_ldap_passtype_key'] = 'Formato password';
 $string['auth_ldap_passwdexpire_settings'] = 'Impostazione scadenza password LDAP';
 $string['auth_ldap_preventpassindb'] = 'Selezionare Si per evitare il salvataggio delle password nel database di Moodle.';
-$string['auth_ldap_preventpassindb_key'] = 'Non memorizzare le password';
+$string['auth_ldap_preventpassindb_key'] = 'Evita il caching delle password';
+$string['auth_ldap_rolecontext'] = 'Contesto {$a->localname}';
+$string['auth_ldap_rolecontext_help'] = 'Il contesto LDAP utilizzato per la mappatura dei <i>{$a->localname}</i>. In presenza di più gruppi separarli con \';\'. Di solito "cn={$a->shortname},ou=staff,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Cerca gli utenti anche nei sotto-contesti.';
 $string['auth_ldap_search_sub_key'] = 'Cerca nei sotto-contesti';
 $string['auth_ldap_server_settings'] = 'Impostazioni server LDAP';
@@ -94,7 +96,7 @@ $string['auth_ldap_user_attribute'] = 'Opzionale: sovrascrive l\'attributo usato
 $string['auth_ldap_user_attribute_key'] = 'Attributo utente';
 $string['auth_ldap_user_exists'] = 'Lo username LDAP è già esistente.';
 $string['auth_ldap_user_settings'] = 'Impostazioni ricerca utente';
-$string['auth_ldap_user_type'] = 'La modalità con cui sono memorizzati gli utenti in LDAP. Questa impostazione determina anche il funzionamento della scadenza della password, del grace login e della creazione dell\'utente.';
+$string['auth_ldap_user_type'] = 'La modalità con la quale sono memorizzati gli utenti in LDAP. Questa impostazione determina anche il funzionamento della scadenza della password, del grace login e della creazione dell\'utente.';
 $string['auth_ldap_user_type_key'] = 'Tipo utente';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type non definito o la funzione ldap_expirationtime2unix non supporta il tipo selezionato.';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type non definito o la funzione ldap_unix2expirationtime non supporta il tipo selezionato.';
@@ -117,11 +119,14 @@ $string['auth_ntlmsso_subnet'] = 'L\'impostazione consente l\'SSO solo dai clien
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
 $string['auth_ntlmsso_type'] = 'Il metodo di autenticazione configurato nel web server per autenticare gli utenti (se sei in dubbio scegli NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Tipo di autenticazione';
+$string['cannotmaprole'] = 'Non è possibile mappare Il ruolo  "{$a->rolename}" poiché è troppo lungo il suo nome abbreviato "{$a->shortname}". Per poterlo mappare, è necessario ridurre la lunghezza a {$a->charlimit} caratteri. <a href="{$a->link}">Modifica i campi del profilo utente.</a>';
 $string['connectingldap'] = 'Connessione al server LDAP...';
+$string['connectingldapsuccess'] = 'La connessione al server LDAP è avvenuta correttamente';
 $string['creatingtemptable'] = 'Creazione tabella temporanea {$a}';
 $string['didntfindexpiretime'] = 'password_expire() non ha trovato la data di scadenza.';
 $string['didntgetusersfromldap'] = 'LDAP non ha restituito nessun acccount -- un errore ? --';
 $string['gotcountrecordsfromldap'] = 'LDAP ha restituito {$a} record';
+$string['ldapnotconfigured'] = 'L\'URL dell\'host LDAP non è configurata';
 $string['morethanoneuser'] = 'Strano! LDAP ha restituito più account dello stesso utente. Verrà usato il primo.';
 $string['needbcmath'] = 'Per verificare le password scadute su Active Directory occorre l\'estensione BCMath';
 $string['needmbstring'] = 'Per cambiare password in Active Directory occorre l\'estensione mbstring.';
@@ -141,13 +146,16 @@ $string['pagesize'] = 'Accertati che il valore impostato sia minore della dimens
 $string['pagesize_key'] = 'Dimensione pagina';
 $string['pluginname'] = 'Server LDAP';
 $string['pluginnotenabled'] = 'Plugin non abilitato!';
+$string['privacy:metadata'] = 'Il plugin di autenticazione "Server LDAP" non memorizza dati personali.';
 $string['renamingnotallowed'] = 'In LDAP non è consentito di rinominare gli utenti';
 $string['rootdseerror'] = 'Si è verificato un errore durante la query del rootDSE in Active Directory';
 $string['start_tls'] = 'Utilizza la porta LDAP standard 389 con crittografia TLS';
 $string['start_tls_key'] = 'Usa TLS';
+$string['syncroles'] = 'Sincronizzazione ruoli di sistema da LDAP';
 $string['synctask'] = 'Sincronizzazione utenti LDAP';
+$string['systemrolemapping'] = 'Mappatura ruoli di sistema';
 $string['updatepasserror'] = 'Errore in user_update_password(). Error code: {$a->errno}; Error string: {$a->errstring}';
-$string['updatepasserrorexpire'] = 'Errore in user_update_password() durante la lettura della data di scadenza della password. Error code: {$a->errno}; Error string: {$a->errstring}';
+$string['updatepasserrorexpire'] = 'Si è verificato un errore in user_update_password() durante la lettura della data di scadenza della password. Codice errore: {$a->errno}; messagio di errore: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Errore in user_update_password() durante la modifica di expirationtime e/o gracelogin. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Errore durante l\'aggiornamento del record LDAP. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errore durante l\'aggiornamento LDAP con il campo ambiguo {$a->key}; valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';

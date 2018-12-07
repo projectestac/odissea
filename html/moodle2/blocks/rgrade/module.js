@@ -833,20 +833,21 @@ M.local_block_rgrade={
             return false;
           }
 
-          $("#layer-unit_message").modal({
-            overlayClose : true,
-
-            minHeight : 140
-          });
-
-          $("#form_hide_unit_msg").submit(function() {
-
-            if ($("#hide_msg").is(':checked')) {
-              $.cookie(COOKIE_NAME, true);
-            }
-
-            $.modal.close();
-            return false;
+          $("#layer-unit_message").dialog({
+              modal: true,
+              resizable: false,
+              height: "auto",
+              title: "info",
+              dialogClass: 'noTitleStuff',
+              width: 400,
+              buttons: {
+                  Acceptar: function () {
+                      if ($("#hide_msg").is(':checked')) {
+                          $.cookie(COOKIE_NAME, true);
+                      }
+                      $(this).dialog('close');
+                  }
+              }
           });
         }
 
@@ -1204,11 +1205,13 @@ M.local_block_rgrade={
 
           $('#layer-grades').handlebars($('#layer-edit-content-template'), data);
 
-          $('#layer-grades').modal({
-            overlayClose : true,
-            focus : false,
-            minHeight : 400,
-            minWidth : 800,
+          $('#layer-grades').dialog({
+              modal: true,
+              resizable: false,
+              height: "auto",
+              title: "info",
+              dialogClass: 'noTitleStuff',
+              width: 400,
             onClose : function(dialog) {
 
               log("onClose dialog, reload: " + reload);
@@ -1221,7 +1224,7 @@ M.local_block_rgrade={
                 return;
               }
 
-              $.modal.close();
+              $(this).dialog("close");
 
               if (reload && currentView) {
                 log("Reload view " + currentView.name);
@@ -1229,14 +1232,6 @@ M.local_block_rgrade={
               }
 
             }
-          });
-
-          // Solve simplemodal bug - rebinding handler
-          $('#layer-grades').on('click', '.simplemodal-close', function(e) {
-            log("Closing simpleModal ...");
-            $.modal.close();
-
-            return false;
           });
 
           /*

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_spamcleaner', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_spamcleaner
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,15 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Καθαριστής μαζικών ενοχλητικών μηνυμάτων';
 $string['spamauto'] = 'Αυτόματος εντοπισμός των συνηθισμένων πρότυπων μαζικών ενοχλητικών μηνυμάτων';
-$string['spamcannotdelete'] = 'Αδυναμία διαγραφής χρήστη';
+$string['spamcannotdelete'] = 'Δεν είναι δυνατόν να διαγραφεί αυτός ο χρήστης';
 $string['spamcannotfinduser'] = 'Δεν υπάρχουν χρήστες που ταιριάζουν με την αναζήτηση που κάνατε';
-$string['spamcleanerintro'] = 'Αυτό το σενάριο σας επιτρέπει να αναζητήσετε όλα τα προφίλ των χρηστών για συγκεκριμένα αλφαριθμητικά και έπειτα να σβήσετε τους λογαριασμούς που έχουν προφανώς δημιουργηθεί από κακόβουλους χρήστες. Μπορείτε να κάνετε αναζήτηση με πολλαπλές λέξεις κλειδιά χρησιμοποιώντας κόμμα (π.χ καζίνο, πορνό)<br /><br />Η τεκμηρίωση του Moodle έχει περισσότερες πληροφορίες σχετικά με την <a href="http://docs.moodle.org/en/Reducing_spam_in_Moodle">Μείωση των μαζικών ενοχλητικών μηνυμάτων στο Moodle</a>.';
+$string['spamcleanerintro'] = '<p>Αυτή η δέσμη ενεργειών σας επιτρέπει να αναζητήσετε σε όλα τα προφίλ των χρηστών για συγκεκριμένες συμβολοσειρές και έπειτα να σβήσετε αυτούς τους λογαριασμούς που έχουν προφανώς δημιουργηθεί από κακόβουλους χρήστες. Μπορείτε να κάνετε αναζήτηση με πολλαπλές λέξεις κλειδιά χρησιμοποιώντας κόμμα (π.χ καζίνο, πορνό)</p>
+<p>Για περισσότερες πληροφορίες, δες την τεκμηρίωση του Moodle σχετικά με την <a href="http://docs.moodle.org/en/Reducing_spam_in_Moodle">Μείωση των ανεπιθύμητων μηνυμάτων στο Moodle</a>.</p>';
 $string['spamdeleteall'] = 'Διαγραφή όλων αυτών των λογαριασμών χρηστών';
 $string['spamdeleteallconfirm'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε όλους αυτούς τους λογαριασμούς χρηστών?  Δεν μπορείτε έπειτα να αναιρέσετε αυτή την ενέργεια.';
 $string['spamdeleteconfirm'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτή την καταχώρηση; Δεν μπορείτε έπειτα να αναιρέσετε αυτή την ενέργεια.';
 $string['spamdesc'] = 'Περιγραφή';
 $string['spameg'] = 'π.χ:  καζίνο, πορνό, σεξ';
-$string['spamfromblog'] = 'Από δημοσίευση blog:';
+$string['spamfromblog'] = 'Από ανάρτηση ιστολογίου:';
 $string['spaminvalidresult'] = 'Άγνωστο αλλά μη έγκυρο αποτέλεσμα';
 $string['spamoperation'] = 'Λειτουργία';
 $string['spamresult'] = 'Αποτελέσματα αναζήτησης προφίλ χρηστών που περιέχουν:';

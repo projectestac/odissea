@@ -52,6 +52,10 @@
         text-align: right;
     }
 }
+// This rule overrides the automatic no-overflow on the participants table. It kills the auto-complete.
+#participantsform .no-overflow {
+    overflow: visible;
+}
 
 /**
  * This rule has been added to duplicate the style of icons with the
@@ -191,13 +195,32 @@
     font-weight: bold;
 }
 .groupinfobox {
-    .well
+    .well;
+    position: relative;
+
+    h3 {
+        margin-top: 0px;
+    }
 }
+
 .groupinfobox .left {
     padding: 10px;
     width: 100px;
     vertical-align: top;
 }
+
+.group-image {
+    display: block;
+    float: left;
+    margin-right: 1em;
+}
+
+.group-edit {
+    position: absolute;
+    right: 0;
+    margin-right: 0.6em;
+}
+
 .course-participation #showall {
     text-align: center;
     margin: 10px 0;
@@ -263,21 +286,6 @@
         div,
         input {
             margin: 0;
-        }
-    }
-}
-
-#groupeditform {
-    .groups,
-    .members {
-        min-width: 175px;
-        width: 49%;
-        float: left;
-        text-align: left;
-
-        select {
-            min-width: 175px;
-            max-width: 90%;
         }
     }
 }

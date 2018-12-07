@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_self', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,6 +92,7 @@ $string['passwordinvalidhint'] = 'That enrolment key was incorrect, please try a
 (Here\'s a hint - it starts with \'{$a}\')';
 $string['pluginname'] = 'Self enrolment';
 $string['pluginname_desc'] = 'The self enrolment plugin allows users to choose which courses they want to participate in. The courses may be protected by an enrolment key. Internally the enrolment is done via the manual enrolment plugin which has to be enabled in the same course.';
+$string['privacy:metadata'] = 'The Self enrolment plugin does not store any personal data.';
 $string['requirepassword'] = 'Require enrolment key';
 $string['requirepassword_desc'] = 'Require enrolment key in new courses and prevent removing of enrolment key from existing courses.';
 $string['role'] = 'Default assigned role';

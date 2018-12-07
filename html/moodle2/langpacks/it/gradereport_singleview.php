@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Valutazioni di {$a}';
 $string['gradeitem'] = 'Elemento di valutazione: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Non è possibile modificare questo elemento di valutazione.';
 $string['gradeuser'] = 'Valutazione utente: {$a}';
+$string['itemsperpage'] = 'Elementi per pagina';
 $string['noscreens'] = 'Non è stato possibile trovare una schermata adatta per la Scheda singola';
 $string['notvalid'] = 'Non è una schermata valida per la Scheda singola: {$a}';
 $string['override'] = 'Modifiche';

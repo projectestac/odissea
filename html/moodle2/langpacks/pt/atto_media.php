@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_media', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['metadatasourcelabel'] = 'URL da faixa de metadados';
 $string['mute'] = 'Sem som';
 $string['pluginname'] = 'Media';
 $string['poster'] = 'URL da miniatura';
+$string['privacy:metadata'] = 'O módulo atto_media não armazena nenhum dado pessoal.';
 $string['remove'] = 'Remover';
 $string['size'] = 'Tamanho';
 $string['srclang'] = 'Idioma';

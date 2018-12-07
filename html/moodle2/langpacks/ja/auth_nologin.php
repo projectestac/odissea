@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nologin', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_nologin', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_nologin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nologindescription'] = 'システムへのユーザログインを停止するための予備的なプラグインです。ユーザ宛に送信されるメールもすべて破棄されます。ユーザアカウントを「一時停止」する場合に使用することができます。';
 $string['pluginname'] = 'ログインなし';
+$string['privacy:metadata'] = 'ログインなし認証プラグインはどのような個人データも保存しません。';

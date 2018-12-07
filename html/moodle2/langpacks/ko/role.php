@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -361,7 +361,6 @@ $string['site:viewfullnames'] = '언제나 사용자의 성명을 볼 수 있음
 $string['site:viewparticipants'] = '참여자 보기';
 $string['site:viewreports'] = '보고서 보기';
 $string['site:viewuseridentity'] = '전체 사용자 아이덴티티를 목록으로 봄';
-$string['tag:create'] = '새 태그 생성';
 $string['tag:edit'] = '기존 태그 수정';
 $string['tag:editblocks'] = '태그 페이지에서 블록 편집';
 $string['tag:flag'] = '태그를 부적절한 것으로 표식';

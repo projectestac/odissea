@@ -70,7 +70,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for get_grades
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.4
      */
     public static function get_grades_parameters() {
@@ -369,6 +369,7 @@ class mod_assign_external extends external_api {
                      'm.timemodified, '.
                      'm.completionsubmit, ' .
                      'm.cutoffdate, ' .
+                     'm.gradingduedate, ' .
                      'm.teamsubmission, ' .
                      'm.requireallteammemberssubmit, '.
                      'm.teamsubmissiongroupingid, ' .
@@ -441,6 +442,7 @@ class mod_assign_external extends external_api {
                         'timemodified' => $module->timemodified,
                         'completionsubmit' => $module->completionsubmit,
                         'cutoffdate' => $assign->get_instance()->cutoffdate,
+                        'gradingduedate' => $assign->get_instance()->gradingduedate,
                         'teamsubmission' => $module->teamsubmission,
                         'requireallteammemberssubmit' => $module->requireallteammemberssubmit,
                         'teamsubmissiongroupingid' => $module->teamsubmissiongroupingid,
@@ -517,6 +519,7 @@ class mod_assign_external extends external_api {
                 'timemodified' => new external_value(PARAM_INT, 'last time assignment was modified'),
                 'completionsubmit' => new external_value(PARAM_INT, 'if enabled, set activity as complete following submission'),
                 'cutoffdate' => new external_value(PARAM_INT, 'date after which submission is not accepted without an extension'),
+                'gradingduedate' => new external_value(PARAM_INT, 'the expected date for marking the submissions'),
                 'teamsubmission' => new external_value(PARAM_INT, 'if enabled, students submit as a team'),
                 'requireallteammemberssubmit' => new external_value(PARAM_INT, 'if enabled, all team members must submit'),
                 'teamsubmissiongroupingid' => new external_value(PARAM_INT, 'the grouping id for the team submission groups'),
@@ -660,7 +663,7 @@ class mod_assign_external extends external_api {
     /**
      * Describes the parameters for get_submissions
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 2.5
      */
     public static function get_submissions_parameters() {
@@ -1317,7 +1320,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for lock_submissions
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function lock_submissions_parameters() {
@@ -1374,7 +1377,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for revert_submissions_to_draft
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function revert_submissions_to_draft_parameters() {
@@ -1431,7 +1434,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for unlock_submissions
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function unlock_submissions_parameters() {
@@ -1488,7 +1491,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for submit_grading_form webservice.
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 3.1
      */
     public static function submit_grading_form_parameters() {
@@ -1566,7 +1569,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the return for submit_grading_form
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 3.1
      */
     public static function submit_grading_form_returns() {
@@ -1575,7 +1578,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for submit_for_grading
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function submit_for_grading_parameters() {
@@ -1630,7 +1633,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for save_user_extensions
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function save_user_extensions_parameters() {
@@ -1703,7 +1706,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for reveal_identities
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function reveal_identities_parameters() {
@@ -1752,7 +1755,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for save_submission
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function save_submission_parameters() {
@@ -1828,7 +1831,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for save_grade
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.6
      */
     public static function save_grade_parameters() {
@@ -1964,7 +1967,7 @@ class mod_assign_external extends external_api {
 
     /**
      * Describes the parameters for save_grades
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since  Moodle 2.7
      */
     public static function save_grades_parameters() {
@@ -2220,7 +2223,7 @@ class mod_assign_external extends external_api {
     /**
      * Describes the parameters for view_submission_status.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.1
      */
     public static function view_submission_status_parameters() {
@@ -2274,7 +2277,7 @@ class mod_assign_external extends external_api {
     /**
      * Describes the parameters for get_submission_status.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.1
      */
     public static function get_submission_status_parameters() {
@@ -2617,6 +2620,7 @@ class mod_assign_external extends external_api {
                 $userdetails['fullname'] = $fullname;
                 $userdetails['submitted'] = $record->submitted;
                 $userdetails['requiregrading'] = $record->requiregrading;
+                $userdetails['grantedextension'] = $record->grantedextension;
                 if (!empty($record->groupid)) {
                     $userdetails['groupid'] = $record->groupid;
                 }
@@ -2687,6 +2691,7 @@ class mod_assign_external extends external_api {
             ),
             'submitted' => new external_value(PARAM_BOOL, 'have they submitted their assignment'),
             'requiregrading' => new external_value(PARAM_BOOL, 'is their submission waiting for grading'),
+            'grantedextension' => new external_value(PARAM_BOOL, 'have they been granted an extension'),
             'groupid' => new external_value(PARAM_INT, 'for group assignments this is the group id', VALUE_OPTIONAL),
             'groupname' => new external_value(PARAM_NOTAGS, 'for group assignments this is the group name', VALUE_OPTIONAL),
         ];
@@ -2752,6 +2757,7 @@ class mod_assign_external extends external_api {
             'fullname' => $participant->fullname,
             'submitted' => $participant->submitted,
             'requiregrading' => $participant->requiregrading,
+            'grantedextension' => $participant->grantedextension,
             'blindmarking' => $assign->is_blind_marking(),
             'allowsubmissionsfromdate' => $assign->get_instance()->allowsubmissionsfromdate,
             'duedate' => $assign->get_instance()->duedate,
@@ -2793,6 +2799,7 @@ class mod_assign_external extends external_api {
             'fullname' => new external_value(PARAM_NOTAGS, 'The fullname of the user'),
             'submitted' => new external_value(PARAM_BOOL, 'have they submitted their assignment'),
             'requiregrading' => new external_value(PARAM_BOOL, 'is their submission waiting for grading'),
+            'grantedextension' => new external_value(PARAM_BOOL, 'have they been granted an extension'),
             'blindmarking' => new external_value(PARAM_BOOL, 'is blind marking enabled for this assignment'),
             'allowsubmissionsfromdate' => new external_value(PARAM_INT, 'allowsubmissionsfromdate for the user'),
             'duedate' => new external_value(PARAM_INT, 'duedate for the user'),
@@ -2829,7 +2836,7 @@ class mod_assign_external extends external_api {
     /**
      * Describes the parameters for view_assign.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.2
      */
     public static function view_assign_parameters() {

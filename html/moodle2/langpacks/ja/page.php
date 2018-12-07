@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = '新しいページリソースを作成する';
 $string['displayoptions'] = '利用可能な表示オプション';
 $string['displayselect'] = '表示';
 $string['displayselectexplain'] = '表示タイプを選択してください。';
+$string['indicator:cognitivedepth'] = 'ページ認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はページリソースで学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'ページ社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はページリソースで学生が到達した社会的広がりに基づきます。';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -61,4 +65,5 @@ $string['printheading'] = 'ページ名を表示する';
 $string['printheadingexplain'] = 'コンテンツの上にページ名を表示しますか?';
 $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの上にページ説明を表示しますか?';
+$string['privacy:metadata'] = 'mod_pageプラグインはどのような個人データも保存しません。';
 $string['search:activity'] = 'ページ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice_soap', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice_soap', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice_soap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Protocollo SOAP';
+$string['privacy:metadata'] = 'Il plugin protocollo "SOAP" non memorizza dati personali.';
 $string['soap:use'] = 'Usare protocollo SOAP';

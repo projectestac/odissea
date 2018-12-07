@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_customlang', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,5 +56,6 @@ $string['placeholder_help'] = 'プレースホルダはストリングの中で�
 プレースホルダはオリジナルのストリングと同じようにコピーすることが重要です。また、翻訳したり、左右の向きを変えないでください。';
 $string['placeholderwarning'] = 'プレースホルダを含むストリング';
 $string['pluginname'] = '言語カスタマイゼーション';
+$string['privacy:metadata'] = '言語カスタマイゼーションプラグインはどのような個人データも保存しません。';
 $string['savecheckin'] = '修正を言語パックに保存する';
 $string['savecontinue'] = '修正を適用して編集を続ける';

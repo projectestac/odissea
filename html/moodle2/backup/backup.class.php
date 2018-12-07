@@ -125,17 +125,22 @@ abstract class backup implements checksumable {
     const OPERATION_BACKUP  ='backup'; // We are performing one backup
     const OPERATION_RESTORE ='restore';// We are performing one restore
 
+    // Options for "Include enrolment methods" restore setting.
+    const ENROL_NEVER     = 0;
+    const ENROL_WITHUSERS = 1;
+    const ENROL_ALWAYS    = 2;
+
     // Version and release (to keep CFG->backup_version (and release) updated automatically).
     /**
      * Usually same than major release version, this is used to mark important
      * point is backup when some behavior/approach channged, in order to allow
      * conditional coding based on it.
      */
-    const VERSION = 2016120500;
+    const VERSION = 2017111300;
     /**
      * Usually same than major release zero version, mainly for informative/historic purposes.
      */
-    const RELEASE = '3.2';
+    const RELEASE = '3.4';
 
     /**
      * Cipher to be used in backup and restore operations.

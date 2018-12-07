@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_safebrowser', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_safebrowser', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_safebrowser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regra de acesso ao teste com navegador seguro';
+$string['privacy:metadata'] = 'O módulo Regra de acesso ao teste com navegador seguro não armazena dados pessoais.';
 $string['requiresafeexambrowser'] = 'Necessita do uso do navegador seguro';
 $string['safebrowsererror'] = 'Este teste foi configurado para que só possa ser realizado através de um navegador seguro. Não pode realizar o teste a partir deste navegador.';
 $string['safebrowsernotice'] = 'Este teste foi configurado para que os alunos o realizem apenas usando um navegador seguro.';

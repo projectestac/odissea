@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_forums', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_search_forums', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_search_forums
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Geavanceerd zoeken';
 $string['pluginname'] = 'Doorzoek forums';
+$string['privacy:metadata'] = 'Het blok zoeken in forums toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['search_forums:addinstance'] = 'Voeg een nieuw zoek-in-forumsblok toe';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_profiling', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_profiling
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,19 +25,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['calls'] = 'Funtzio-deiak';
+$string['cannotfindanyrunforrunid'] = 'Sentitzen dugu, ezin da aurkitu \'{$a}\' profilatze-exekuzioa';
+$string['cannotfindanyrunforurl'] = 'Sentitzen dugu, ezin da aurkitu \'{$a}\' URLarentzako profilatze-exekuziorik';
 $string['comment'] = 'Iruzkina';
 $string['cputime'] = 'CPU denbora';
-$string['executiontime'] = 'Egikaritze-denbora';
+$string['differencesbetween2runsof'] = '{$a}-(r)en 2 exekuzioren arteko ezberdintasunak';
+$string['executiontime'] = 'Exekuzio-denbora';
 $string['export'] = 'Esportatu';
-$string['exportthis'] = 'Esportatu profilen araberako exekuzioak';
+$string['exportproblem'] = 'Arazoren bat gertatu da "{$a->listurl}" eskaerari dagokion "{$a->runid}" profilatze-exekuzioa esportatzean.';
+$string['exportthis'] = 'Esportatu profilatze-exekuzio hau';
 $string['import'] = 'Inportatu';
 $string['importok'] = '"{$a}" fitxategia ondo inportatu da';
 $string['importprefix'] = 'Inportatu aurrizkia';
+$string['importproblem'] = 'Arazoren bat gertatu da "{$a}" fitxategia inportatzean.';
+$string['lastrunof'] = '{$a}-(r)en azken exekuzioaren laburpena';
+$string['markreferencerun'] = 'Markatu erreferentziazko exekuzio/iruzkina';
 $string['memory'] = 'Erabilitako memoria';
-$string['pluginname'] = 'Profilen araberako exekuzioak';
-$string['profilingruns'] = 'Profilen araberako exekuzioak';
-$string['profilingrunsfor'] = 'Profilen araberako exekuzioak honentzat: {$a}';
+$string['pluginname'] = 'Profilatze-exekuzioak';
+$string['privacy:metadata'] = 'Profilatze-exekuzioak pluginak ez du datu pertsonalik biltzen.';
+$string['profilingfocusscript'] = 'Erreparatu script-aren profilatze-exekuzioei: {$a}';
+$string['profilingruns'] = 'Profilatze-exekuzioak';
+$string['profilingrunsfor'] = '{$a}-(r)entzako profilatze-exekuzioak';
+$string['referencerun'] = 'Erreferentziazko exekuzio/iruzkina';
+$string['runid'] = 'Exekuzioaren IDa';
 $string['summaryof'] = '{$a}(r)en laburpena';
-$string['viewdetails'] = 'Ikusi profilaren xehetasunak';
-$string['viewdiff'] = 'Ikusi profilaren ezberdinatasunen xehetasunak honekin:';
-$string['viewdiffdetails'] = 'Ikusi profilaren ezberdinatasunen xehetasunak';
+$string['viewdetails'] = 'Ikusi profilatzearen xehetasunak';
+$string['viewdiff'] = 'Ikusi profilatzeen ezberdinatasunen xehetasunak honekin:';
+$string['viewdiffdetails'] = 'Ikusi profilatzeen ezberdinatasunen xehetasunak';

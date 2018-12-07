@@ -38,7 +38,7 @@ class course_enrolment_manager {
 
     /**
      * The course context
-     * @var stdClass
+     * @var context
      */
     protected $context;
     /**
@@ -379,8 +379,9 @@ class course_enrolment_manager {
         $params = array('guestid' => $CFG->siteguest);
         if (!empty($search)) {
             $conditions = get_extra_user_fields($this->get_context());
-            $conditions[] = 'u.firstname';
-            $conditions[] = 'u.lastname';
+            foreach (get_all_user_name_fields() as $field) {
+                $conditions[] = 'u.'.$field;
+            }
             $conditions[] = $DB->sql_fullname('u.firstname', 'u.lastname');
             if ($searchanywhere) {
                 $searchparam = '%' . $search . '%';
@@ -521,13 +522,12 @@ class course_enrolment_manager {
     /**
      * Returns all of the enrolment instances for this course.
      *
-     * NOTE: since 2.4 it includes instances of disabled plugins too.
-     *
+     * @param bool $onlyenabled Whether to return data from enabled enrolment instance names only.
      * @return array
      */
-    public function get_enrolment_instances() {
+    public function get_enrolment_instances($onlyenabled = false) {
         if ($this->_instances === null) {
-            $this->_instances = enrol_get_instances($this->course->id, false);
+            $this->_instances = enrol_get_instances($this->course->id, $onlyenabled);
         }
         return $this->_instances;
     }
@@ -535,13 +535,12 @@ class course_enrolment_manager {
     /**
      * Returns the names for all of the enrolment instances for this course.
      *
-     * NOTE: since 2.4 it includes instances of disabled plugins too.
-     *
+     * @param bool $onlyenabled Whether to return data from enabled enrolment instance names only.
      * @return array
      */
-    public function get_enrolment_instance_names() {
+    public function get_enrolment_instance_names($onlyenabled = false) {
         if ($this->_inames === null) {
-            $instances = $this->get_enrolment_instances();
+            $instances = $this->get_enrolment_instances($onlyenabled);
             $plugins = $this->get_enrolment_plugins(false);
             foreach ($instances as $key=>$instance) {
                 if (!isset($plugins[$instance->enrol])) {
@@ -556,7 +555,7 @@ class course_enrolment_manager {
     }
 
     /**
-     * Gets all of the enrolment plugins that are active for this course.
+     * Gets all of the enrolment plugins that are available for this course.
      *
      * @param bool $onlyenabled return only enabled enrol plugins
      * @return array
@@ -805,7 +804,7 @@ class course_enrolment_manager {
      */
     public function edit_enrolment($userenrolment, $data) {
         //Only allow editing if the user has the appropriate capability
-        //Already checked in /enrol/users.php but checking again in case this function is called from elsewhere
+        //Already checked in /user/index.php but checking again in case this function is called from elsewhere
         list($instance, $plugin) = $this->get_user_enrolment_components($userenrolment);
         if ($instance && $plugin && $plugin->allow_manage($instance) && has_capability("enrol/$instance->enrol:manage", $this->context)) {
             if (!isset($data->status)) {
@@ -935,7 +934,7 @@ class course_enrolment_manager {
     /**
      * Returns the course context
      *
-     * @return stdClass
+     * @return context
      */
     public function get_context() {
         return $this->context;

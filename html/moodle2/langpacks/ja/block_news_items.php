@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_news_items', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_news_items
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['news_items:addinstance'] = '新しい最新アナウンスメントブロックを追加する';
 $string['news_items:myaddinstance'] = '新しい最新アナウンスメントブロックをダッシュボードに追加する';
 $string['pluginname'] = '最新アナウンスメント';
+$string['privacy:metadata'] = '最新アナウンスメントブロックはフォーラム内に保存されたデータのみ表示します。データ自体を保存することはありません。';

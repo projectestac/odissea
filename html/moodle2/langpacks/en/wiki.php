@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -123,6 +123,10 @@ $string['incorrectdeleteversions'] = 'Page versions provided for deletion are in
 $string['incorrectpageid'] = 'Page ID is incorrect.';
 $string['incorrectsubwikiid'] = 'Subwiki ID is incorrect.';
 $string['incorrectwikiid'] = 'Wiki ID is incorrect.';
+$string['indicator:cognitivedepth'] = 'Wiki cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Wiki activity.';
+$string['indicator:socialbreadth'] = 'Wiki social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Wiki activity.';
 $string['individualpagedoesnotexist'] = 'Individual wiki page doesn\'t exist';
 $string['insertcomment'] = 'Insert comment';
 $string['insertimage'] = 'Insert an image...';
@@ -130,7 +134,7 @@ $string['insertimage_help'] = 'This drop-down list will insert an image to the w
 $string['invalidlock'] = 'This page is already locked by another user.';
 $string['invalidparameters'] = 'Invalid parameters have been given.';
 $string['invalidsection'] = 'Invalid section.';
-$string['invalidsesskey'] = 'The given sesskey is not valid. Please resend data again';
+$string['invalidsesskey'] = 'Your session has most likely timed out. Please make a note of your edit then log in again.';
 $string['javascriptdisabledlocks'] = 'Javascript is disabled on your browser and locks are not working. The changes you make may not be saved correctly.';
 $string['links'] = 'Links';
 $string['listall'] = 'List all';
@@ -212,6 +216,31 @@ $string['pluginname'] = 'Wiki';
 $string['prettyprint'] = 'Printer-friendly version';
 $string['previewwarning'] = 'This is a preview. Changes have not been saved yet.';
 $string['print'] = 'Print';
+$string['privacy:metadata:core_comment'] = 'Comments on wiki page';
+$string['privacy:metadata:core_files'] = 'Files attached to subwikis';
+$string['privacy:metadata:core_tag'] = 'Tags associated with wiki pages';
+$string['privacy:metadata:wiki_locks'] = 'Temporary storage for wiki edit locks';
+$string['privacy:metadata:wiki_locks:lockedat'] = 'Date when locked';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'Name of the locked page section';
+$string['privacy:metadata:wiki_locks:userid'] = 'User who locked a page';
+$string['privacy:metadata:wiki_pages'] = 'Information about wiki pages';
+$string['privacy:metadata:wiki_pages:cachedcontent'] = 'Cached content in HTML format';
+$string['privacy:metadata:wiki_pages:pageviews'] = 'Number of times page was viewed';
+$string['privacy:metadata:wiki_pages:readonly'] = 'Whether a page is read-only';
+$string['privacy:metadata:wiki_pages:timecreated'] = 'Time when page was first created';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'Time when page was last modified';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'Time when page was last rendered';
+$string['privacy:metadata:wiki_pages:title'] = 'Name of the page';
+$string['privacy:metadata:wiki_pages:userid'] = 'Last user who edited the page';
+$string['privacy:metadata:wiki_subwikis'] = 'Information about subwikis (in case of group or individual mode)';
+$string['privacy:metadata:wiki_subwikis:groupid'] = 'Group that owns a subwiki';
+$string['privacy:metadata:wiki_subwikis:userid'] = 'User who owns a subwiki (for individual wikis)';
+$string['privacy:metadata:wiki_versions'] = 'Information about wiki pages history';
+$string['privacy:metadata:wiki_versions:content'] = 'Revision content';
+$string['privacy:metadata:wiki_versions:contentformat'] = 'Revision content format';
+$string['privacy:metadata:wiki_versions:timecreated'] = 'Time when revision was created';
+$string['privacy:metadata:wiki_versions:userid'] = 'User who created revision';
+$string['privacy:metadata:wiki_versions:version'] = 'Version number';
 $string['rated'] = 'You rated this page as a {$a}';
 $string['rating'] = 'Rating';
 $string['ratingmode'] = 'Rating mode';
@@ -239,7 +268,6 @@ $string['special'] = 'Special';
 $string['tableofcontents'] = 'Table of contents';
 $string['tagarea_wiki_pages'] = 'Wiki pages';
 $string['tagsdeleted'] = 'Wiki tags have been deleted';
-$string['tagtitle'] = 'See the "{$a}" tag';
 $string['teacherrating'] = 'Teacher rating';
 $string['timesrating'] = 'This page has been rated  {$a->c} times with an average of: {$a->s}';
 $string['updatedpages'] = 'Updated pages';

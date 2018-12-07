@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_security', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,17 +74,21 @@ $string['check_noauth_details'] = '<p>Le plugin d\'authentification <em>Pas d\'a
 $string['check_noauth_error'] = 'Le plugin d\'authentification <em>Pas d\'authentification</em> ne doit pas être utilisé sur des sites en production.';
 $string['check_noauth_name'] = 'Pas d\'authentification';
 $string['check_noauth_ok'] = 'Le plugin d\'authentification <em>Pas d\'authentification</em> est désactivé.';
-$string['check_nodemodules_details'] = '<p>Le dossier <em>{$a->path}</em> contient des modules Node.js et leur dépendances, installés typiquement par l\'utilitaire NPM. Ces modules peuvent être requis pour le développement de Moodle. Ils ne sont pas nécessaires pour le fonctionnement d\'un site Moodle et peuvent comporter du code dangereux, qui expose potentiellement votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si votre site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web.</p>';
+$string['check_nodemodules_details'] = '<p>Le dossier <em>{$a->path}</em> contient des modules Node.js et leur dépendances, installés typiquement par l\'utilitaire NPM. Ces modules peuvent être requis pour le développement de Moodle en local, par exemple pour utiliser grunt. Ils ne sont pas nécessaires pour le fonctionnement d\'un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web dans la configuration de votre serveur web.</p>';
 $string['check_nodemodules_info'] = 'Le dossier <em>node_modules</em> ne devrait pas être présent sur des sites publics.';
 $string['check_nodemodules_name'] = 'Dossier des modules Node.js';
 $string['check_openprofiles_details'] = 'Les profils utilisateurs ouverts peuvent être pollués par des spammeurs. Il est recommandé d\'activer soit le réglage <code>Imposer la connexion pour voir les profils</code>, soit <code>Imposer la connexion</code>.';
 $string['check_openprofiles_error'] = 'Tout le monde peut voir les profils utilisateurs sans se connecter.';
 $string['check_openprofiles_name'] = 'Profils utilisateurs ouverts';
 $string['check_openprofiles_ok'] = 'La connexion est requise pour consulter les profils utilisateurs.';
-$string['check_passwordpolicy_details'] = '<p>Il est recommandé de définir des règles pour les mots de passe, car deviner les mots de passe est la façon la plus fréquente de se procurer un accès non autorisé. Ne définissez pas des règles trop strictes, qui entraîneraient une trop grande difficulté de mémorisation des mots de passe, avec pour conséquence leur oubli ou leur écriture.</p>';
-$string['check_passwordpolicy_error'] = 'Règles pour les mots de passe non définies.';
-$string['check_passwordpolicy_name'] = 'Règles pour les mots de passe';
-$string['check_passwordpolicy_ok'] = 'Des règles sont définies pour les mots de passe.';
+$string['check_passwordpolicy_details'] = '<p>Il est recommandé de définir une politique de mots de passe, car deviner les mots de passe est la façon la plus fréquente de se procurer un accès non autorisé. Ne définissez pas une politique trop restrictive, qui entraîneraient une trop grande difficulté de mémorisation des mots de passe, avec pour conséquence leur oubli ou leur écriture.</p>';
+$string['check_passwordpolicy_error'] = 'Politique de mots de passe non définie.';
+$string['check_passwordpolicy_name'] = 'Politique de mots de passe';
+$string['check_passwordpolicy_ok'] = 'Politique de mots de passe active.';
+$string['check_preventexecpath_details'] = '<p>L\'autorisation de configurer les chemins des programmes exécutables dans l\'interface graphique d\'administration est un vecteur d\'escalade de privilège.</p>';
+$string['check_preventexecpath_name'] = 'Chemins des programmes exécutables';
+$string['check_preventexecpath_ok'] = 'Les chemins des exécutables ne peuvent être configurés que dans config.php.';
+$string['check_preventexecpath_warning'] = 'Les chemins des exécutables peuvent être configurés dans l\'interface graphique d\'administration.';
 $string['check_riskadmin_detailsok'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a->admins}<p>Il est recommandé de n\'attribuer le rôle d\'administrateur que dans le contexte Système. Les utilisateurs ci-dessous ont des attributions (non supportées) du rôle d\'administrateur dans d\'autres contextes :</p><p>{$a->unsupported}</p>';
 $string['check_riskadmin_name'] = 'Administrateurs';
@@ -109,7 +113,7 @@ $string['check_unsecuredataroot_error'] = 'Votre dossier de données <code>{$a}<
 $string['check_unsecuredataroot_name'] = 'Dossier de données non sûr';
 $string['check_unsecuredataroot_ok'] = 'Le dossier de données n\'est pas accessible via le web.';
 $string['check_unsecuredataroot_warning'] = 'Votre dossier de données <code>{$a}</code> est dans un emplacement où il pourrait être accessible directement via le web.';
-$string['check_vendordir_details'] = '<p>Le dossier « vendor » <em>{$a->path}</em> contient diverses bibliothèques de tierces parties et leur dépendances, installées typiquement par l\'utilitaire PHP Composer. Ce dossier peut être requis pour du développement local, par exemple pour installer PHPUnit. Il peut cependant comporter du code dangereux, qui expose potentiellement votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si votre site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web.</p>';
+$string['check_vendordir_details'] = '<p>Le dossier <em>{$a->path}</em> contient diverses bibliothèques de tierces parties et leur dépendances, installées typiquement par l\'utilitaire PHP Composer. Ces bibliothèques peuvent être requises pour le développement de Moodle en local, par exemple pour installer PHPUnit. Elles ne sont pas nécessaires pour le fonctionnement d\'un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web dans la configuration de votre serveur web.</p>';
 $string['check_vendordir_info'] = 'Le dossier <em>vendor</em> ne devrait pas être présent sur des sites publics.';
 $string['check_vendordir_name'] = 'Dossier <em>vendor</em>';
 $string['check_webcron_details'] = '<p>Le lancement du cron par l\'intermédiaire d\'un navigateur web peut exposer des informations sensibles à des utilisateurs anonymes. Il est donc recommandé de ne lancer le cron qu\'en ligne de commande ou de définir un mot de passe pour l\'accès distant au cron.</p>';
@@ -121,6 +125,7 @@ $string['description'] = 'Description';
 $string['details'] = 'Détails';
 $string['issue'] = 'Problème';
 $string['pluginname'] = 'Panorama de sécurité';
+$string['privacy:metadata'] = 'Le plugin Panorama de sécurité n\'enregistre aucune donnée personnelle.';
 $string['security:view'] = 'Consulter le rapport de sécurité';
 $string['status'] = 'Statut';
 $string['statuscritical'] = 'Critique';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'geogebra', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   geogebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,7 +69,7 @@ $string['geogebrafile_help'] = 'ficheiro .gbb';
 $string['geogebra:grade'] = 'Avaliar GeoGebra';
 $string['geogebra:submit'] = 'Submeter GeoGebra';
 $string['geogebraurl'] = 'URL';
-$string['geogebraurl_help'] = 'Essa configuração permite que seja especificado um URL para o ficheiro GeoGebra, em vez de escolher um ficheiro através do seletor de ficheiros.';
+$string['geogebraurl_help'] = 'Esta configuração permite que seja especificado um URL para o ficheiro GeoGebra, em vez de escolher um ficheiro através do seletor de ficheiros.';
 $string['geogebra:view'] = 'Visualizar GeoGebra';
 $string['grade'] = 'Nota';
 $string['gradeit'] = 'Avaliar';

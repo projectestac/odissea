@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_completion', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clicktomarkusercomplete'] = 'クリックしてユーザ完了をマークする';
-$string['completiondate'] = '完了データ';
+$string['completiondate'] = '完了日時';
 $string['completion:view'] = 'コース完了レポートを表示する';
 $string['eventreportviewed'] = '完了レポートが閲覧されました。';
 $string['eventuserreportviewed'] = '完了ユーザレポートが閲覧されました。';
@@ -37,3 +37,4 @@ $string['page-report-completion-index'] = 'コース完了レポート';
 $string['page-report-completion-user'] = 'ユーザコース完了レポート';
 $string['page-report-completion-x'] = 'すべての完了レポート';
 $string['pluginname'] = 'コース完了';
+$string['privacy:metadata'] = 'コース完了レポートは他の場所で保存されたデータのみ表示します。';

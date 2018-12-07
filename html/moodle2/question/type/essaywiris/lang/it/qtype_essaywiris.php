@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Questo tipo di quesiti è simile a un tema di tipo
 $string['pluginnamesummary'] = 'Questo tipo di quesiti è simile a un tema di tipologia standard, ma qui puoi creare diversi enunciati inserendo numeri casuali, formule o diagrammi. Il feedback può anche contenere valori casuali.';
 $string['pluginnameadding'] = 'Aggiungere un tema - domanda di matematica e scienza WIRIS';
 $string['pluginnameediting'] = 'Modificare un tema - domanda di matematica e scienza WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

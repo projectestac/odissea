@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,13 +32,14 @@ $string['answerno'] = '答え {$a}';
 $string['caseno'] = 'いいえ、大文字小文字は重要ではありません';
 $string['casesensitive'] = '大文字小文字の区別';
 $string['caseyes'] = 'はい、大文字小文字を区別します';
-$string['correctansweris'] = '正解は {$a} です。';
+$string['correctansweris'] = '正解: {$a}';
 $string['correctanswers'] = '正解';
-$string['filloutoneanswer'] = '1つ以上の考えられる答えを入力してください。空白の答えは使用されません。「*」はどのような文字にでも合致するワイルドカードとして使用することができます。最初の組み合わせの答えは評点とフィードバックを決定するため使用されます。';
+$string['filloutoneanswer'] = '1つ以上の考えられる答えを入力してください。空白の答えは使用されません。「*」はどのような文字にでも合致するワイルドカードとして使用することができます。最初の組み合わせの答えは評点およびフィードバックを決定するため使用されます。';
 $string['notenoughanswers'] = 'このタイプの問題には少なくとも {$a} 件の答えが必要です。';
 $string['pleaseenterananswer'] = '答えを入力してください。';
 $string['pluginname'] = '記述問題';
 $string['pluginnameadding'] = '記述問題の追加';
 $string['pluginnameediting'] = '記述問題の編集';
-$string['pluginname_help'] = '問題 (イメージを含む) に対して、解答者が言葉またはフレーズを入力します。異なる評点を持つ、いくつかの正解を設定することができます。「大文字小文字の区別」オプションで「はい、文字の大小は合致する必要があります」が選択された場合、あなたは「Word」と「word」に異なる評点をつけることができます。';
+$string['pluginname_help'] = '問題 (イメージを含む) に対して解答者が言葉またはフレーズを入力します。異なる評点を持つ数個の正解を設定することができます。「大文字小文字の区別」オプションで「はい、文字の大小は合致する必要があります」が選択された場合、あなたは「Word」と「word」に異なる評点をつけることができます。';
 $string['pluginnamesummary'] = '様々な答えのモデルと比較して評定される1つまたは少数の言葉を入力することができます。答えにはワイルドカードを含むことができます。';
+$string['privacy:metadata'] = '記述問題タイププラグインはどのような個人データも保存しません。';

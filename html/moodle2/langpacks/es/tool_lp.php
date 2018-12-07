@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_lp', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -151,6 +151,7 @@ $string['nocompetencyselected'] = 'No se han seleccionado competencias';
 $string['nocrossreferencedcompetencies'] = 'No se han referenciado otras competencias a esta competencia.';
 $string['noevidence'] = 'Sin evidencias';
 $string['nofiles'] = 'Sin archivos';
+$string['noparticipants'] = 'No se han encontrado participantes.';
 $string['notemplates'] = 'No se han creado plantillas de planes de aprendizaje aún.';
 $string['nourl'] = 'Sin URL';
 $string['nouserevidence'] = 'No se ha agregado evidencia de aprendizajes previos aún.';
@@ -188,11 +189,13 @@ $string['taxonomies'] = 'Taxonomías';
 $string['taxonomy_add_behaviour'] = 'Agregar comportamiento';
 $string['taxonomy_add_competency'] = 'Agregar una competencia';
 $string['taxonomy_add_domain'] = 'Agregar dominio';
+$string['taxonomy_add_indicator'] = 'Añadir indicador';
 $string['taxonomy_add_level'] = 'Agregar nivel';
 $string['taxonomy_add_proficiency'] = 'Añadir aptitud';
 $string['taxonomy_add_skill'] = 'Agregar habilidad';
 $string['taxonomy_edit_behaviour'] = 'Editar comportamiento';
 $string['taxonomy_edit_domain'] = 'Editar dominio';
+$string['taxonomy_edit_indicator'] = 'Editar indicador';
 $string['taxonomy_edit_level'] = 'Editar nivel';
 $string['taxonomy_edit_proficiency'] = 'Editar aptitud';
 $string['taxonomy_edit_skill'] = 'Editar habilidad';
@@ -210,6 +213,7 @@ $string['taxonomy_parent_value'] = 'Valor padre';
 $string['taxonomy_selected_behaviour'] = 'Comportamiento seleccionado';
 $string['taxonomy_selected_competency'] = 'Competencia seleccionada';
 $string['taxonomy_selected_domain'] = 'Dominio elegido';
+$string['taxonomy_selected_indicator'] = 'Indicador seleccionado';
 $string['taxonomy_selected_level'] = 'Nivel seleccionado';
 $string['taxonomy_selected_proficiency'] = 'Aptitud seleccionada';
 $string['taxonomy_selected_skill'] = 'Habilidad seleccionada';

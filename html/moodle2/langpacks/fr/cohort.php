@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cohort', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,10 @@ $string['nocomponent'] = 'Création manuelle';
 $string['potusers'] = 'Utilisateurs potentiels';
 $string['potusersmatching'] = 'Utilisateurs potentiels correspondants';
 $string['preview'] = 'Prévisualisation';
+$string['privacy:metadata:cohort_members'] = 'Informations sur la cohorte de l\'utilisateur.';
+$string['privacy:metadata:cohort_members:cohortid'] = 'L\'identifiant de la cohorte';
+$string['privacy:metadata:cohort_members:timeadded'] = 'L\'horodatage de l\'ajout de l\'utilisateur à la cohorte';
+$string['privacy:metadata:cohort_members:userid'] = 'L\'identifiant de l\'utilisateur associé à la cohorte';
 $string['removeuserwarning'] = 'En retirant des utilisateurs de cohortes, la désinscription de ces utilisateurs de plusieurs cours pourrait survenir. Il pourrait s\'ensuivre la suppression de réglages utilisateur, de notes, d\'affiliation à des groupes et tout autre information utilisateur dans les cours affectés.';
 $string['search'] = 'Rechercher';
 $string['searchcohort'] = 'Rechercher une cohorte';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'install', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -157,7 +157,6 @@ $string['nativesqlsrv'] = 'SQL*服务器Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = '现在，您需要配置数据库，Moodle的大部分数据都将保存于此。
 这个数据库必须已经创建，并且有用户名和密码可以访问它。必须设置表前缀。';
 $string['nativesqlsrvnodriver'] = 'Microsoft 为 PHP 提供的 SQL Server 驱动程序未安装或者未正确配置。';
-$string['nativesqlsrvnonwindows'] = 'Microsoft 为 PHP 提供的 SQL Server 驱动程序只能在Windows 系统上使用。';
 $string['ociextensionisnotpresentinphp'] = 'PHP的OCI8扩展并未安装正确，因此无法与Oracle通信。请检查您的php.ini文件或重新编译PHP。';
 $string['pass'] = '通过';
 $string['paths'] = '路径';

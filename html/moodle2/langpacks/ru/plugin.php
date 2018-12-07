@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Невозможно получить ин�
 $string['filterall'] = 'Отображать все';
 $string['filtercontribonly'] = 'Отображать только дополнения';
 $string['filterupdatesonly'] = 'Отображать только с доступными обновлениями';
+$string['isenabled'] = 'Разрешить?';
 $string['misdepinfoplugin'] = 'Информация о плагине';
 $string['misdepinfoversion'] = 'Информация о версии';
 $string['misdepsavail'] = 'Доступные плагины, необходимые для удовлетворения зависимостей';
@@ -104,6 +105,7 @@ $string['status_new'] = 'Должен быть установлен';
 $string['status_nodb'] = 'Нет в базе данных';
 $string['status_upgrade'] = 'Должен быть обновлен';
 $string['status_uptodate'] = 'Установлен';
+$string['supportedconversions'] = 'Поддерживаемые преобразования документов';
 $string['supportedmoodleversions'] = 'Поддерживаемые версии Moodle';
 $string['systemname'] = 'Идентификатор';
 $string['type_antivirus'] = 'Антивирусный плагин';
@@ -128,6 +130,9 @@ $string['type_editor'] = 'Редактор';
 $string['type_editor_plural'] = 'Редакторы';
 $string['type_enrol'] = 'Способ записи';
 $string['type_enrol_plural'] = 'Способы записи';
+$string['type_fileconverter'] = 'Конвертер документов';
+$string['type_fileconvertermanage'] = 'Управление конвертерами документов';
+$string['type_fileconverter_plural'] = 'Конвертеры документов';
 $string['type_filter'] = 'Фильтр';
 $string['type_filter_plural'] = 'Текстовые фильтры';
 $string['type_format'] = 'Формат курса';

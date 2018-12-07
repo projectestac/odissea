@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,8 @@ $string['mailteachers'] = 'Ενημέρωση καθηγητών';
 $string['paypalaccepted'] = 'Αποδεκτές οι πληρωμές μέσω PayPal';
 $string['paypal:config'] = 'Παραμετροποίηση περιπτώσεων εγγραφής μέσω PayPal';
 $string['paypal:manage'] = 'Διαχείρηση εγγεγραμένων χρηστών';
-$string['paypal:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
-$string['paypal:unenrolself'] = 'Ακύρωση εγγραφής στο μάθημα';
+$string['paypal:unenrol'] = 'Απεγγραφή χρηστών από το μάθημα';
+$string['paypal:unenrolself'] = 'Απεγγραφή του ιδίου από το μάθημα';
 $string['pluginname_desc'] = 'Η ενότητα PayPal σας επιτρέπει να δημιουργήσετε μαθήματα επί πληρωμή. Αν το κόστος για κάθε μάθημα είναι μηδενικό, τότε οι μαθητές δεν καλούνται να πληρώσουν για να εισαχθούν. Υπάρχει ένα κόστος για όλο τον ιστότοπο το οποίο το ορίζετε εδώ ως προεπιλογή για όλο τον ιστότοπο και έπειτα μια ρύθμιση μαθήματος που μπορείτε να ορίσετε για κάθε μάθημα μεμονωμένα. Το κόστος μαθήματος παρακάμπτει το κόστος ιστοτόπου.';
 $string['sendpaymentbutton'] = 'Αποστολή πληρωμής με Paypal';
 $string['status'] = 'Επιτρέπονται εγγραφές PayPal';

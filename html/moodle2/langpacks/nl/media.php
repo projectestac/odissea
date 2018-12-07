@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'media', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,9 +35,10 @@ $string['legacyheading'] = 'Verouderde mediaspelers';
 $string['legacyheading_desc'] = 'Volgende bestandsformaten worden niet aangeraden voor algemeen gebruik. Ze worden meestal gebruikt in intranetinstallaties met centraal beheerde clients.';
 $string['managemediaplayers'] = 'Beheer media-spelers';
 $string['mediaformats'] = 'Beschikbare spelers';
-$string['mediaformats_desc'] = 'Als er spelers ingeschakeld zijn, dan kunnen bestanden ingebed worden via de media-filter (indien ingeschakeld) of door een bestand of URL-bron te gebruiken. Als dit niet ingeschakeld is, dan zullen deze bestandsformaten niet ingebed worden en kunnen gebruikers ze manueel downloaden of de links volgen naar deze bronnen.
+$string['mediaformats_desc'] = 'Als er spelers ingeschakeld zijn in deze instellingen, dan kunnen bestanden ingebed worden via de multimedia plugin-filter (indien ingeschakeld) of door een bestand of URL-bron te gebruiken. Als dit niet ingeschakeld is, dan zullen deze bestandsformaten niet ingebed worden en kunnen gebruikers ze downloaden of de links volgen naar deze bronnen.
 
 Wanneer twee spelers hetzelfde bestandsformaat ondersteunen, dan zal het inschakelen van beide spelers de compatibiliteit over verschillende toestellen zoals mobiele telefoons verbeteren. De compatibiliteit kan nog verbeterd worden door meerdere bestanden te voorzien in verschillende bestandsformaten voor één enkel geluidsbestand of videoclip.';
 $string['mediasettings'] = 'Media inbedden';
+$string['privacy:metadata'] = 'Media embedden bewaart geen persoonlijke gegevens.';
 $string['supports'] = 'Ondersteunt';
 $string['videoextensions'] = 'Video: {$a}';

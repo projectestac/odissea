@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_overview', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,10 +58,10 @@ $string['preferencessave'] = 'Εμφάνιση αναφοράς';
 $string['preferencesuser'] = 'Οι προτιμήσεις σας για αυτή την αναφορά';
 $string['regrade'] = 'Επαναβαθμολόγηση';
 $string['regradeall'] = 'Επαναβαθμολόγηση όλων';
-$string['regradealldry'] = 'Γενική δοκιμή μια πλήρους επαναβαθμολόγησης';
+$string['regradealldry'] = 'Γενική δοκιμή μιας πλήρους επαναβαθμολόγησης';
 $string['regradealldrydo'] = 'Επαναβαθμολόγηση προσπαθειών που είναι σημειωμένες οτι χρήζουν επαναβαθμολόγησης ({$a})';
 $string['regradealldrydogroup'] = 'Επαναβαθμολόγηση προσπαθειών ({$a->countregradeneeded}) που είναι σημειωμένες οτι χρήζουν επαναβαθμολόγησης στην ομάδα \'{$a->groupname}\'';
-$string['regradealldrygroup'] = 'Γενική δοκιμή μια πλήρους επαναβαθμολόγησης για την ομάδα \'{$a->groupname}\'';
+$string['regradealldrygroup'] = 'Γενική δοκιμή μιας πλήρους επαναβαθμολόγησης για την ομάδα \'{$a->groupname}\'';
 $string['regradeallgroup'] = 'Πλήρη επαναβαθμολόγηση για την ομάδα \'{$a->groupname}\'';
 $string['regradeheader'] = 'Επαναβαθμολόγηση';
 $string['regradeselected'] = 'Επαναβαθμολόγηση των επιλεγμένων προσπαθειών';

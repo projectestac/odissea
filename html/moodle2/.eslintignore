@@ -3,10 +3,10 @@
 */**/build/
 node_modules/
 vendor/
+admin/tool/policy/amd/src/jquery-eu-cookie-law-popup.js
 admin/tool/usertours/amd/src/tour.js
 admin/tool/usertours/amd/src/popper.js
 auth/cas/CAS/
-auth/fc/fcFPP.php
 enrol/lti/ims-blti/
 filter/algebra/AlgParser.pm
 filter/tex/mimetex.*
@@ -14,6 +14,7 @@ lib/editor/atto/yui/src/rangy/js/*.*
 lib/editor/tinymce/plugins/pdw/tinymce/
 lib/editor/tinymce/plugins/spellchecker/rpc.php
 lib/editor/tinymce/tiny_mce/
+lib/mlbackend/php/phpml/
 lib/adodb/
 lib/bennu/
 lib/evalmath/
@@ -56,9 +57,14 @@ lib/amd/src/chartjs-lazy.js
 lib/maxmind/GeoIp2/
 lib/maxmind/MaxMind/
 lib/ltiprovider/
+lib/amd/src/truncate.js
+lib/fonts/
+lib/validateurlsyntax.php
 media/player/videojs/amd/src/video-lazy.js
 media/player/videojs/amd/src/Youtube-lazy.js
 media/player/videojs/videojs/
+media/player/videojs/amd/src/videojs-flash-lazy.js
+media/player/videojs/videojs/video-js.swf
 mod/assign/feedback/editpdf/fpdi/
 repository/s3/S3.php
 theme/boost/scss/bootstrap/
@@ -74,6 +80,8 @@ theme/boost/amd/src/tab.js
 theme/boost/amd/src/tooltip.js
 theme/boost/amd/src/util.js
 theme/boost/amd/src/tether.js
+theme/boost/scss/fontawesome/
 theme/bootstrapbase/less/bootstrap/
 theme/bootstrapbase/javascript/html5shiv.js
 theme/bootstrapbase/amd/src/bootstrap.js
+theme/bootstrapbase/less/fontawesome/

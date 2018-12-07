@@ -20,8 +20,7 @@ Feature: We can change the maximum and minimum number of points for manual items
       | student1 | C1 | student |
       | student2 | C1 | student |
     And I log in as "teacher1"
-    And I am on site homepage
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "Setup > Gradebook setup" in the course gradebook
     And I press "Add grade item"
     And I set the following fields to these values:
@@ -35,14 +34,13 @@ Feature: We can change the maximum and minimum number of points for manual items
     And I press "Save changes"
 
   Scenario: Change maximum number of points on a graded item.
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "View > Grader report" in the course gradebook
     And I turn editing mode on
     And I give the grade "10.00" to the user "Student 1" for the grade item "Manual item 1"
     And I give the grade "8.00" to the user "Student 2" for the grade item "Manual item 1"
     And I press "Save changes"
     When I navigate to "Setup > Gradebook setup" in the course gradebook
-    And I click on "Edit" "link" in the "Manual item 1" "table_row"
     And I click on "Edit settings" "link" in the "Manual item 1" "table_row"
     And I set the following fields to these values:
       | Maximum grade | 10 |
@@ -58,7 +56,6 @@ Feature: We can change the maximum and minimum number of points for manual items
       | Grade item    | Calculated weight | Grade  | Contribution to course total |
       | Manual item 1 | 100.00 %          | 8.00   | 80.00 %                      |
     And I navigate to "Setup > Gradebook setup" in the course gradebook
-    And I click on "Edit" "link" in the "Manual item 1" "table_row"
     And I click on "Edit settings" "link" in the "Manual item 1" "table_row"
     And I set the following fields to these values:
       | Maximum grade | 20 |

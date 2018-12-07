@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_rubric', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,3 +39,4 @@ $string['mustbeunique'] = 'O nível das notas deve ser único em cada critério'
 $string['mustchooseone'] = 'Tem de selecionar um dos itens';
 $string['mustdefinelevel'] = 'É necessário pelo menos um nível';
 $string['pluginname'] = 'Escolha múltipla';
+$string['privacy:metadata'] = 'O módulo rubrica apenas armazena detalhes da grelha de avaliação. Os atuais dados pessoais de como a grelha tem sido preenchida são armazenados pelo módulo workshop e anexados a avaliações exportadas.';

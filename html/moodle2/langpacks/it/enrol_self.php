@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_self', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,6 +91,7 @@ $string['passwordinvalid'] = 'Chiave errata, per favore riprova';
 $string['passwordinvalidhint'] = 'La chiave d\'iscrizione è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
 $string['pluginname'] = 'Iscrizione spontanea';
 $string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di decidere a quali corsi iscriversi. E\' possibile regolare le iscrizioni spontanee tramite chiavi di iscrizione. L\'iscrizione spontanea per funzionare ha bisogno del plugin Iscrizioni manuali, che deve essere abilitato nel medesimo corso.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "Iscrizione spontanea" non memorizza dati personali.';
 $string['requirepassword'] = 'Chiave d\'iscrizione obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave d\'iscrizione nei nuovi corsi ed evita l\'eliminazione di chiavi d\'iscrizione già esistenti.';
 $string['role'] = 'Ruolo assegnato per default';

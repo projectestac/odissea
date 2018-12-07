@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,8 @@ $string['editnewsfeeds'] = 'Albiste-jarioak editatu';
 $string['editrssblock'] = 'RSS goialdeko blokea editatu';
 $string['enableautodiscovery'] = 'Gaitu jarioak berez aurkitzea?';
 $string['enableautodiscovery_help'] = 'Gaituz gero, web-orrietako jarioak automatikoki bilatuko dira. Adibidez, http://docs.moodle.org idazten bada, http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss bilatuko da.';
+$string['failedfeed'] = 'Ezin izan da jarioa deskargatu - {$a}-ren ostean beste saiakera bat egingo da';
+$string['failedfeeds'] = 'Ezin izan da RSS jarioren bat deskargatu';
 $string['feed'] = 'Jarioa';
 $string['feedadded'] = 'Albiste-jarioa gehitu da';
 $string['feeddeleted'] = 'Albiste-jarioa ezabatu da';
@@ -63,6 +65,15 @@ $string['nofeeds'] = 'Gune honetako ez da RSS jariorik definitu.';
 $string['numentries'] = 'Sarrerak jarioko';
 $string['pickfeed'] = 'Albiste-jarioa aukeratu';
 $string['pluginname'] = 'Urrutiko RSS jarioak';
+$string['privacy:metadata:block_rss_client:description'] = 'RSS jarioaren deskribapena.';
+$string['privacy:metadata:block_rss_client:preferredtitle'] = 'RSS jarioaren izenburu pertsonalizatua.';
+$string['privacy:metadata:block_rss_client:shared'] = 'RSS jarioa ikastaro guztietan eskuragarri dagoen edo ez.';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'Huts egindako RSS jarioa eskuratzen berriz saiatu aurretik cron-ak itxaron beharreko denbora, segunduetan.';
+$string['privacy:metadata:block_rss_client:skipuntil'] = 'Huts egindako RSS jarioa irekitzeko cron-ak erabiliko duen gehienezko denbora.';
+$string['privacy:metadata:block_rss_client:tableexplanation'] = 'Hemen RSS blokearen informazioa gordetzen da.';
+$string['privacy:metadata:block_rss_client:title'] = 'RSS jarioaren izenburua';
+$string['privacy:metadata:block_rss_client:url'] = 'RSS jarioaren URLa';
+$string['privacy:metadata:block_rss_client:userid'] = 'RSS jarioa gehitu zuen erabiltzailearen IDa.';
 $string['remotenewsfeed'] = 'Urrutiko albiste-jarioa';
 $string['rss_client:addinstance'] = 'Gehitu urrutiko albiste-jarioa bloke berria';
 $string['rss_client:createprivatefeeds'] = 'RSS jario pribatuak sortu';

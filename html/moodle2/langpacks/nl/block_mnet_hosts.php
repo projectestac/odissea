@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = 'Gebruikers hebben de mogelijkheid \'Ga 
 $string['mnet_hosts:addinstance'] = 'Voeg een nieuw netwerkserversblok toe';
 $string['mnet_hosts:myaddinstance'] = 'Voeg een nieuw netwerkserversblok toe aan Mijn startpagina.';
 $string['pluginname'] = 'Netwerkservers';
+$string['privacy:metadata'] = 'Het netwerkserversblok staat alleen interactie met netwerkservers toe en geen opslag of exporteert gegevens zelf.';
 $string['server'] = 'Server';

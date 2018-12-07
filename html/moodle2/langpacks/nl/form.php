@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Voeg {$a} velden toe aan formulier';
 $string['advancedelement'] = 'Geavanceerd element';
 $string['close'] = 'Sluiten';
+$string['custom'] = 'Aangepast';
 $string['day'] = 'Dag';
+$string['default'] = 'Standaard';
 $string['display'] = 'Scherm';
 $string['err_alphanumeric'] = 'Je mag hier enkel cijfers en letters ingeven';
 $string['err_email'] = 'Je moet hier een geldig e-mailadres ingeven';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'Je mag hier geen leestekens gebruiken';
 $string['err_numeric'] = 'Je moet hier een getal ingeven';
 $string['err_rangelength'] = 'Je moet hier tussen de {$a->format[0]} en {$a->format[1]} karakters ingeven.';
 $string['err_required'] = 'Je moet hier een waarde opgeven.';
+$string['err_wrongfileextension'] = 'Sommige bestanden {$a->wrongfiles} kunnen niet geüpload worden. Enkel bestanden met volgende bestandstypes zijn toegestaan: {$a->whitelist}';
+$string['filesofthesetypes'] = 'Geaccepteerde bestandstypes:';
+$string['filetypesany'] = 'Alle bestandstypes';
+$string['filetypesnotall'] = 'Het is niet toegestaan om \'alle bestandstypes\' hier te selecteren';
+$string['filetypesnotwhitelisted'] = 'Deze bestandstypes zijn hier niet toegestaan {$a}';
+$string['filetypesothers'] = 'Andere bestanden';
+$string['filetypesunknown'] = 'Onbekende bestandstypes: {$a}';
 $string['general'] = 'Algemeen';
 $string['hideadvanced'] = 'Verberg geavanceerd';
 $string['hour'] = 'Uur';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'Diverse instellingen';
 $string['modstandardels'] = 'Algemene module-instellingen';
 $string['month'] = 'Maand';
 $string['mustbeoverriden'] = 'Abstracte form_definition() methode in class {$a} moet overschreven worden, herstel de code.';
+$string['newvaluefor'] = 'Nieuwe waarde voor {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Er is geen methode om een helpknop aan formulierelement {$a->name} (klasse {$a->classname}) toe  te voegen';
 $string['nonexistentformelements'] = 'Je probeert een helpknop toe te voegen aan een onbestaand formulierelement: {$a}';
 $string['noselection'] = 'Geen selectie';

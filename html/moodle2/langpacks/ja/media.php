@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'media', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,5 +39,6 @@ $string['mediaformats_desc'] = 'プレイヤが有効にされた場合、マル
 
 2つのプレイヤが同じフォーマットをサポートする場合、両方を有効にすることにより、モバイルフォン等、異なるデバイスでの互換性が増します。単一のオーディオまたはビデオクリップに対して異なるフォーマットのファイルを複数提供することにより、互換性を増すことができます。';
 $string['mediasettings'] = 'メディア埋め込み';
+$string['privacy:metadata'] = 'メディア埋め込みはどのような個人データも保存しません。';
 $string['supports'] = 'サポート';
 $string['videoextensions'] = 'ビデオ {$a}';

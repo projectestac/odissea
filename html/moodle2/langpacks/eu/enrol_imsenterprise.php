@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,15 +35,15 @@ $string['categoryseparator'] = 'Kategoriako karaktere-banatzailea';
 $string['categoryseparator_desc'] = 'Beharrezkoa "Kategoriako ID zenbakia" gaituta dagoenean. Kategoriaren izena eta ID zenbakia banatzeko karakterea.';
 $string['coursesettings'] = 'Ikastaroaren datuen aukerak';
 $string['createnewcategories'] = 'Ikastaroaren kategoria berriak (ezkutukoak) sortu Moodlen ez badaude';
-$string['createnewcategories_desc'] = '<org><orgunit> elementua ikastaroaren sarrerako datuetan badago, bere edukia ikastaroaren kategoria zehazteko erabiliko da ikastaroa sortu behar bada. Gehigarriak EZ ditu existitzen diren ikastaroak berriz kategorizatzen.
+$string['createnewcategories_desc'] = '<org><orgunit> elementua ikastaroaren sarrerako datuetan badago, bere edukia ikastaroaren kategoria zehazteko erabiliko da ikastaroa sortu behar bada. Pluginak EZ ditu existitzen diren ikastaroak berriz kategorizatzen.
 
 Zehaztutako izeneko kategoriarik existitzen ez bada, ezkutuzko kategoria bat sortuko da.';
 $string['createnewcourses'] = 'Ikastaro berriak (ezkutukoak) sortu Moodlen ez badaude';
-$string['createnewcourses_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-gehigarriak ikastaro berriak sortu ahalko ditu IMS datuetan Moodle-ko datu-basean existitzen ez den ikastarorik aurkitzen badu. Ikastaro sortu-berri guztiak hasieran ezkutuan egongo dira.';
+$string['createnewcourses_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-pluginak ikastaro berriak sortu ahalko ditu IMS datuetan Moodle-ko datu-basean existitzen ez den ikastarorik aurkitzen badu. Ikastaro sortu-berri guztiak hasieran ezkutuan egongo dira.';
 $string['createnewusers'] = 'Oraindik Moodlen erregistratu ez diren erabiltzaileentzako erabiltzaile-kontuak sortu';
 $string['createnewusers_desc'] = 'IMS Enterprise matrikulazio-datuek normalean erabiltzaile-multzo bat deskribatzen dute. Gaituz gero, Moodle-ko datu-basean existitzen ez diren erabiltzaileentzako kontuak sortu ahalko dira.
 
-Erabiltzaileak aurkitzeko lehenengo euren "ID zenbakia" eta ondoren euren Moodle-ko erabiltzaile-izena bilatzen dira. IMS Enterprise gehigarriak ez ditu pasahitzak inportatzen. Erabiltzaileak autentifikatzeko autentifikazio-gehigarri bat erabiltzea gomendatzen da.';
+Erabiltzaileak aurkitzeko lehenengo euren "ID zenbakia" eta ondoren euren Moodle-ko erabiltzaile-izena bilatzen dira. IMS Enterprise pluginak ez ditu pasahitzak inportatzen. Erabiltzaileak autentifikatzeko autentifikazio-plugin bat erabiltzea gomendatzen da.';
 $string['cronfrequency'] = 'Prozesamendu-maiztasuna';
 $string['deleteusers'] = 'Erabiltzaile-kontuak ezabatu IMS datuetan zehazten denean';
 $string['deleteusers_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-gehigarriak erabiltzaile-kontuen ezabatzea zehaztu dezake ("recstatus" banderak 3 balioa badu, kontuaren ezabatzea irudikatzen duena). Moodle-n berez gertatzen den moduan, erabiltzailearen erregistroa ez da datu-basetik ezabatzen, baina kontua ezabatu gisa markatzen da.';
@@ -68,6 +68,7 @@ $string['nestedcategories'] = 'Baimendu habiaratutako kategoriak';
 $string['nestedcategories_desc'] = 'Gaituz gero IMS Enterprise-k habiaratutako kategoriak sortuko ditu';
 $string['pluginname'] = 'IMS Enterprise fitxategia';
 $string['pluginname_desc'] = 'Metodo honek modu errepikakorrean zehaztutako kokapenean dagoen formatu bereziko testu-fitxategia bilatu eta prozesatu egingo du. Fitxategiak IMS Enterprise ezarpenak jarraitu eta person, group, eta membership XML elementuak izan behar ditu.';
+$string['privacy:metadata'] = 'IMS Enterprise fitxategia matrikulazio-pluginak ez du datu pertsonalik biltzen.';
 $string['processphoto'] = 'Profilari erabiltzailearen argazkia gaineratu';
 $string['processphotowarning'] = 'Kontuz: Irudiak prozesatzeak zerbitzariari lan karga nabarmen gaineratuko dio seguruenik. Aukera hau ez aktibatzeko gomendatzen da ikasle-kopuru altua prozesatzeko asmoa badago.';
 $string['restricttarget'] = 'Ondorengo helburua zehaztu bada bakarrik prozesatu datuak.';
@@ -88,7 +89,7 @@ Informazio Zerbitzu batzuk ikasleen <userid> eremua esportatzean huts egiten dut
 $string['truncatecoursecodes'] = 'Ikastaroaren kodeak luzera honetara moztu';
 $string['truncatecoursecodes_desc'] = 'Egoera batzuetan prozesatu aurretik ikastaro batzuetako kodeak moztu nahiko dituzu gehienezko luzera bat izan dezaten. Horrela bada, zehaztu hemen gehienezko karaktere kopurua. Bestela, utzi ezarpen hau hutsik eta ez da mozketarik egingo.';
 $string['updatecourses'] = 'Eguneratu ikastaroa';
-$string['updatecourses_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-gehigarriak ikastaroen izen laburra eta izen osoa eguneratzeko aukera izango du ("recstatus" banderak 2 balioa badu, eguneratze bat erakusten duena)';
+$string['updatecourses_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-pluginak ikastaroen izen laburra eta izen osoa eguneratzeko aukera izango du ("recstatus" banderak 2 balioa badu, eguneratze bat erakusten duena)';
 $string['updateusers'] = 'Eguneratu erabiltzaile-kontuak IMS datuetan zehaztuta dagoenean';
 $string['updateusers_desc'] = 'Gaituz gero, IMS Enterprise  matrikulazio-gehigarriaren datuetan erabiltzaile-kontuetako aldaketak zehaz daitezke ("recstatus" banderak 2 balioa badu, eguneratze bat erakusten duena)';
 $string['usecapitafix'] = 'Kutxa hau markatu "Capita" erabiltzen bada (XML formatua neurri batean okerra da)';

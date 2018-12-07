@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,16 +45,19 @@ $string['deleteinstancenousersconfirm'] = 'Je gaat de aanmeldingsmethode {$a->na
 $string['disableinstanceconfirmself'] = 'Weet je zeker dat je instantie "{$a->name}" waardoor je zelf toegang tot de cursus krijgt wil uitschakelen? Het is mogelijk dat je niet meer in deze cursus kan als je hiermee verder gaat.';
 $string['durationdays'] = '{$a} dagen';
 $string['editenrolment'] = 'Bewerk aanmelding';
+$string['edituserenrolment'] = 'Bewerk aanmelding van {$a}';
 $string['enrol'] = 'Meld aan';
 $string['enrolcandidates'] = 'Niet aangemelde gebruikers';
 $string['enrolcandidatesmatching'] = 'Mogelijke niet aangemelde gebruikers';
-$string['enrolcohort'] = 'Site-groep aanmelden';
+$string['enrolcohort'] = 'Site groep aanmelden';
 $string['enrolcohortusers'] = 'Gebruikers aanmelden';
+$string['enroldetails'] = 'Aanmeldingsdetails';
 $string['enrollednewusers'] = 'Met succes {$a} nieuwe gebruikers aangemeld';
 $string['enrolledusers'] = 'Aangemelde gebruikers';
 $string['enrolledusersmatching'] = 'Aangemelde gebruikers';
 $string['enrolme'] = 'Meld me aan bij deze cursus';
 $string['enrolmentinstances'] = 'Aanmeldingsmethodes';
+$string['enrolmentmethod'] = 'Aanmeldingsmethode';
 $string['enrolmentnew'] = 'Nieuwe aanmelding in {$a}';
 $string['enrolmentnewuser'] = '{$a->user} is aangemeld bij de cursus "{$a->course}"';
 $string['enrolmentoptions'] = 'Aanmeldingsopties';
@@ -63,6 +66,7 @@ $string['enrolnotpermitted'] = 'Je hebt het recht niet om iemand aan te melden i
 $string['enrolperiod'] = 'Aanmeldingsperiode';
 $string['enroltimecreated'] = 'Aanmelding aangemaakt';
 $string['enroltimeend'] = 'Aanmelding eindigt';
+$string['enroltimeendinvalid'] = 'Aanmeldingseinddatum moet na de aanmeldingsstartdatum zijn';
 $string['enroltimestart'] = 'Aanmelding begint';
 $string['enrolusage'] = 'Exemplaren / Aanmeldingen';
 $string['enrolusers'] = 'Meld gebruikers aan';
@@ -70,8 +74,8 @@ $string['enrolxusers'] = '{$a} gebruikers aanmelden';
 $string['errajaxfailedenrol'] = 'Aanmelden gebruiker mislukt';
 $string['errajaxsearch'] = 'Fout bij het zoeken naar gebruikers';
 $string['erroreditenrolment'] = 'Er is een fout opgetreden bij het bewerken van de aanmelding van een gebruiker';
-$string['errorenrolcohort'] = 'Fout bij het maken van een site-groep sync-aanmelding in deze cursus.';
-$string['errorenrolcohortusers'] = 'Fout bij het aanmelden van site-groepsleden in deze cursus';
+$string['errorenrolcohort'] = 'Fout bij het maken van een site groep sync aanmelding in deze cursus.';
+$string['errorenrolcohortusers'] = 'Fout bij het aanmelden van site groepsleden in deze cursus';
 $string['errorthresholdlow'] = 'De notificatietijd moet minstens 1 dag zijn.';
 $string['errorwithbulkoperation'] = 'Er is een fout opgetreden bij het in bulk bewerken van aanmeldingswijzigingen.';
 $string['eventenrolinstancecreated'] = 'Aanmeldingsinstantie aangemaakt';
@@ -99,6 +103,7 @@ $string['instanceadded'] = 'Methode toegevoegd';
 $string['instanceeditselfwarning'] = 'Waarschuwing:';
 $string['instanceeditselfwarningtext'] = 'Je bent in deze cursus aangemeld door deze aanmeldingsmethode. Het wijzigen hiervan kan je toegang tot deze cursus onmogelijk maken.';
 $string['invalidenrolinstance'] = 'Ongeldige aanmelding';
+$string['invalidrequest'] = 'Ongeldige aanvraag';
 $string['invalidrole'] = 'Ingeldige rol';
 $string['manageenrols'] = 'Beheer aanmeldingsplugins';
 $string['manageinstance'] = 'Beheer';
@@ -112,6 +117,7 @@ $string['notenrollable'] = 'Je kunt je nu niet aanmelden in deze cursus';
 $string['notenrolledusers'] = 'Andere gebruikers';
 $string['otheruserdesc'] = 'Volgende gebruikers zijn niet aangemeld in deze cursus, maar hebben er wel rollen geërfd of toegewezen.';
 $string['participationactive'] = 'Actief';
+$string['participationnotcurrent'] = 'Niet actueel';
 $string['participationstatus'] = 'Status';
 $string['participationsuspended'] = 'Geschorst';
 $string['periodend'] = 'tot {$a}';
@@ -135,12 +141,13 @@ $string['totalenrolledusers'] = '{$a} aangemelde gebruikers';
 $string['totalotherusers'] = '{$a} andere gebruikers';
 $string['unassignnotpermitted'] = 'Je hebt het recht niet om rollen te verwijderen in deze cursus';
 $string['unenrol'] = 'Zeg lidmaatschap op';
-$string['unenrolconfirm'] = 'Wil je echt gebruiker "{$a->user}" van cursus "{$a->course}" afmelden?';
+$string['unenrolconfirm'] = 'Wil je echt gebruiker "{$a->user}" van cursus "{$a->course}" afmelden (was aangemeld via "{$a->enrolinstancename}") ?';
 $string['unenrolme'] = 'Zeg mijn lidmaatschap van {$a} op';
 $string['unenrolnotpermitted'] = 'Je hebt het recht niet of je kunt deze gebruiker niet afmelden van deze cursus.';
 $string['unenrolroleusers'] = 'Gebruikers afmelden';
 $string['uninstallmigrating'] = 'Migreren van "{$a}" aanmeldingen';
 $string['unknowajaxaction'] = 'Onbekende actie gevraagd';
 $string['unlimitedduration'] = 'Onbeperkt';
+$string['userremovedfromselectiona'] = 'Gebruiker "{$a}"  is uit de selectie verwijderd.';
 $string['usersearch'] = 'Zoek';
 $string['withselectedusers'] = 'Met geselecteerde gebruikers';

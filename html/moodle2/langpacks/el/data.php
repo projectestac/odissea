@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['add'] = 'Προσθήκη καταχώρησης';
 $string['addcomment'] = 'Προσθήκη σχολίου';
 $string['addentries'] = 'Προσθήκη καταχωρήσεων';
 $string['addtemplate'] = 'Προσθήκη προτύπου';
-$string['advancedsearch'] = 'Advanced search';
+$string['advancedsearch'] = 'Σύνθετη αναζήτηση';
 $string['allowcomments'] = 'Να επιτρέπονται τα σχόλια στις εγγραφές';
 $string['alttext'] = 'Εναλλακτικό κείμενο';
 $string['approve'] = 'Έγκριση';
@@ -56,9 +56,9 @@ $string['buttons'] = 'Ενέργειας';
 $string['bynameondate'] = 'από {$a->name} - {$a->date}';
 $string['cancel'] = 'Ακύρωση';
 $string['cannotaccesspresentsother'] = 'Δε σας επιτρέπεται η πρόσβαση σε προκαθορισμένες τιμές άλλων χρηστών';
-$string['cannotadd'] = 'Αδυναμία προσθήκης καταχωρήσεων!';
+$string['cannotadd'] = 'Δεν είναι δυνατή η προσθήκη καταχωρήσεων!';
 $string['cannotdeletepreset'] = 'Σφάλμα κατά τη διαγραφή του προτύπου!';
-$string['cannotunziptopreset'] = 'Αδυναμία αποσυμπίεσης στον προκαθορισμένο κατάλογο';
+$string['cannotunziptopreset'] = 'Δεν είναι δυνατή η αποσυμπίεση στον προκαθορισμένο κατάλογο';
 $string['checkbox'] = 'Κουμπί επιλογής';
 $string['chooseexportfields'] = 'Επιλέξτε τα πεδία που επιθυμείτε να εξαγάγετε:';
 $string['chooseexportformat'] = 'Επιλέξτε το φορμάτ στο οποίο θέλετε να εξαγάγετε:';
@@ -136,7 +136,7 @@ $string['deletenotenrolled'] = 'Διαγραφή καταχωρήσεων από
 $string['deletewarning'] = 'Σίγουρα θέλετε να διαγράψετε αυτές τις ρυθμίσεις;';
 $string['descending'] = 'Φθίνουσα';
 $string['directorynotapreset'] = 'Ο κατάλογος {$a->directory} δεν περιέχει πρότυπο: λείπουν αρχεία: {$a->missing_files}';
-$string['download'] = 'Κατέβασμα';
+$string['download'] = 'Λήψη';
 $string['edit'] = 'Επεξεργασία';
 $string['editcomment'] = 'Επεξεργασία σχολίου';
 $string['editentry'] = 'Επεξεργασία καταχώρησης';
@@ -241,7 +241,7 @@ $string['modulename'] = 'Βάση δεδομένων';
 $string['modulenameplural'] = 'Βάσεις δεδομένων';
 $string['more'] = 'Περισσότερα';
 $string['moreurl'] = 'Περισσότερα URL';
-$string['movezipfailed'] = 'Αδυναμία μετακίνησης συμπιεσμένου αρχείου';
+$string['movezipfailed'] = 'Δεν είναι δυνατή η μετακίνηση του συμπιεσμένου αρχείου';
 $string['multientry'] = 'Επαναλαμβανόμενη καταχώρηση';
 $string['multimenu'] = 'Μενού (Πολλαπλή επιλογή)';
 $string['multipletags'] = 'Βρέθηκαν πολλαπλές ετικέτες! Το πρότυπο δεν αποθηκεύτηκε';
@@ -255,7 +255,7 @@ $string['namenumber'] = 'Πεδίο αριθμών';
 $string['namepicture'] = 'Πεδίο εικόνων';
 $string['nameradiobutton'] = 'Πεδίο radio button';
 $string['nametext'] = 'Πεδίο κειμένου';
-$string['nametextarea'] = 'Πεδίο χώρου κειμένου';
+$string['nametextarea'] = 'Πεδίο περιοχής κειμένου';
 $string['nameurl'] = 'Πεδίο URL';
 $string['newentry'] = 'Νέα καταχώρηση';
 $string['newfield'] = 'Δημιουργία νέου πεδίου';
@@ -283,8 +283,8 @@ $string['optionaldescription'] = 'Μικρή περιγραφή (προαιρε�
 $string['optionalfilename'] = 'Όνομα αρχείου (προαιρετικό)';
 $string['other'] = 'Άλλο';
 $string['overrwritedesc'] = 'Αντικατάσταση προκαθορισμένου αν υπάρχει ήδη';
-$string['overwrite'] = 'Αντικατάσταση';
-$string['overwritesettings'] = 'Αντικατάσταση τρέχουσας ρύθμισης';
+$string['overwrite'] = 'Επικάλυψη';
+$string['overwritesettings'] = 'Επικάλυψη τρέχουσας ρύθμισης';
 $string['pagesize'] = 'Καταχωρήσεις ανά σελίδα';
 $string['participants'] = 'Συμμετέχοντες';
 $string['picture'] = 'Εικόνα';
@@ -335,6 +335,7 @@ $string['single'] = 'Προβολή μοναδιαίας';
 $string['singletemplate'] = 'Μονό πρότυπο';
 $string['subplugintype_datafield_plural'] = 'Τύποι πεδίων βάσης δεδομένων';
 $string['subplugintype_datapreset_plural'] = 'Προεπιλεγμένα';
+$string['tags'] = 'Ετικέτες';
 $string['teachersandstudents'] = '{$a->teachers} και {$a->students}';
 $string['templates'] = 'Πρότυπα';
 $string['templatesaved'] = 'Το πρότυπο αποθηκεύτηκε';

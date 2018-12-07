@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodleemoticon', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodleemoticon', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodleemoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'Txertatu aurpegiera';
 $string['pluginname'] = 'Txertatu aurpegiera';
+$string['privacy:metadata'] = 'TinyMCEko Txertatu aurpegiera pluginak ez du datu pertsonalik biltzen.';
 $string['requireemoticon'] = 'Aurpegiera-iragazkia behar du';
 $string['requireemoticon_desc'] = 'Gaituz gero, emotikoien botoia bakarrik ikusgai izango da editorearen testuinguruan emotikoien iragazkia gaituta dagoenean.';

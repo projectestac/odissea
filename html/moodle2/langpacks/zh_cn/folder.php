@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,10 @@ $string['folder:addinstance'] = '添加一个新文件夹';
 $string['foldercontent'] = '文件和子文件夹';
 $string['folder:managefiles'] = '在文件夹模块中管理文件';
 $string['folder:view'] = '查看文件夹内容';
+$string['indicator:cognitivedepth'] = '文件夹资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在文件夹资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '文件夹资源社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在文件夹资源中所达到的社会宽度。';
 $string['maxsizetodownload'] = '文件夹下载的最大容量限制(MB)';
 $string['maxsizetodownload_help'] = '当以压缩文件下载时，这个文件夹最大可以达到多少。若设为0，表示大小没有限制。';
 $string['modulename'] = '文件夹';

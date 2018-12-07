@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_description', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_description', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_description
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['pluginname_help'] = 'このタイプの問題は実際の問題では�
 
 問題テキストは小テストの受験中およびレビューページの両方に表示されます。一般的なフィードバックはレビューページにのみ表示されます。';
 $string['pluginnamesummary'] = 'これは実際の問題とは異なります。代わりにインストラクション、説明文または他のコンテンツを小テストに追加します。これはコースページにコンテンツとしてラベルを追加する方法に似ています。';
+$string['privacy:metadata'] = '説明問題タイププラグインはどのような個人データも保存しません。';

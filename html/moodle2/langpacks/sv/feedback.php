@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['anonymous'] = 'Anonym';
 $string['anonymous_edit'] = 'Anonym redigering';
 $string['anonymous_entries'] = 'Anonyma inlägg';
 $string['anonymous_user'] = 'Anonym användare';
+$string['answerquestions'] = 'Svara på frågorna';
 $string['append_new_items'] = 'Lägg till nya komponenter';
 $string['autonumbering'] = 'Automatiska tal';
 $string['autonumbering_help'] = 'Aktiverar eller avaktiverar automatiska tal för varje fråga';

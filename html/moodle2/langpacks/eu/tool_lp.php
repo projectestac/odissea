@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_lp', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -179,6 +179,7 @@ $string['planupdated'] = 'Ikasketa-plana eguneratu da';
 $string['pluginname'] = 'Ikasketa-planak';
 $string['points'] = 'Puntuak';
 $string['pointsgivenfor'] = '\'{$a}\'-(r)i emandako puntuak';
+$string['privacy:metadata'] = 'Ikasketa-planak pluginak ez du datu pertsonalik biltzen.';
 $string['proficient'] = 'Gai';
 $string['progress'] = 'Aurrerapena';
 $string['rate'] = 'Kalifikatu';

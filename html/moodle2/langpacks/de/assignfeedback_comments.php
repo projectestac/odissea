@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,8 @@ $string['default_help'] = 'Die gewählte Feedback-Methode wird für alle neuen A
 $string['enabled'] = 'Feedback als Kommentar';
 $string['enabled_help'] = 'Bewerter/innen können Feedback-Kommentare für jede abgegebene Lösung erstellen, wenn die Funktion aktiviert wird.';
 $string['pluginname'] = 'Feedback als Kommentar';
+$string['privacy:commentpath'] = 'Feedback Kommentare';
+$string['privacy:metadata:assignmentid'] = 'ID der Aufgabe';
+$string['privacy:metadata:commentpurpose'] = 'Der Text des Kommentars';
+$string['privacy:metadata:gradepurpose'] = 'Bewertungs-ID für Kommentar';
+$string['privacy:metadata:tablesummary'] = 'Speichert Kommentare, die der Bewertende als Feedback zu einer Lösung des Teilnehmenden erstellt hat';

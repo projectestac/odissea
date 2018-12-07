@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,8 @@ $string['password'] = 'パスワード';
 $string['password_help'] = '接続に使用されるユーザパスワードです。';
 $string['pleaseupgrademongo'] = 'あなたは古いバージョンのPHP Mongo拡張モジュール (< 1.3) を使用しています。古いバージョンのMongo拡張モジュールのサポートは将来的に廃止されます。アップグレードをお考えください。.';
 $string['pluginname'] = 'MongoDB';
+$string['privacy:metadata:mongodb'] = 'MongoDBキャッシュストアプラグインはキャッシング機能の一部として短時間だけデータを保存します。このデータはデータが定期的に削除されるMongoDBサーバに保存されます。';
+$string['privacy:metadata:mongodb:data'] = 'キャッシュに保存された様々なデータです。';
 $string['replicaset'] = 'レプリカセット';
 $string['replicaset_help'] = '接続するレプリカセット名です。この名称が設定された場合、シードのismasterデータベースコマンドを使ってマスタが決定されます。そのため、リスト内に存在しないサーバであってもドライバは接続することができます。';
 $string['server'] = 'サーバ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'Comando:';
 $string['comment'] = 'Commenti';
 $string['commentcolour'] = 'Colore commento';
 $string['commentcontextmenu'] = 'Menu contestuale commenti';
+$string['commentindex'] = 'Indice dei commenti';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Non è stato possibile salvare la pagina {$a}';
 $string['currentstamp'] = 'Timbro';
 $string['deleteannotation'] = 'Elimina annotazione';
@@ -51,6 +53,7 @@ $string['enabled'] = 'Annotazione PDF';
 $string['enabled_help'] = 'I docenti potranno annotare file PDF durante la valutazione dei compiti, aggiungendo commenti, segni e timbri sulla consegna degli studenti. Per annotare non sono necessari software aggiuntivi, è sufficiente il browser.';
 $string['errorgenerateimage'] = 'Si è verificato un errore durante la generazione dell\'immagine con ghostscript, informazioni di debug: {$a}';
 $string['errorpdfpage'] = 'Si è verificato un errore durante la generazione della pagina.';
+$string['expcolcomments'] = 'Espandi/contrai tutti i commenti';
 $string['filter'] = 'Filtra commenti...';
 $string['generatefeedback'] = 'Genera feedback PDF';
 $string['generatingpdf'] = 'Generazione PDF in corso...';
@@ -69,10 +72,10 @@ $string['oval'] = 'Ovale';
 $string['pagenumber'] = 'Pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} di {$a->total}';
 $string['pathtogspathdesc'] = 'L\'annotazione PDF richiede l\'impostazione del percorso per ghostscript in {$a}.';
-$string['pathtounoconvpathdesc'] = 'Da notare che le annotazioni PDF richiedono l\'impostazione in {$a} del percorso per unoconv.';
 $string['pen'] = 'Penna';
 $string['pluginname'] = 'Annotazione PDF';
 $string['preparesubmissionsforannotation'] = 'Prepara le consegne per l\'annotazione';
+$string['privacy:metadata:userid'] = 'Identificativo dell\'utente.';
 $string['rectangle'] = 'Rettangolo';
 $string['red'] = 'Rosso';
 $string['result'] = 'Risultato:';
@@ -89,14 +92,6 @@ $string['test_isdir'] = 'Il percorso ghostscript punta ad una cartella, per favo
 $string['test_notestfile'] = 'Il test PDF è mancante';
 $string['test_notexecutable'] = 'Il percorso ghostscript punta ad un file non eseguibile';
 $string['test_ok'] = 'Il percorso ghostscript sembra OK - verifica se sotto è visibile un messaggio nell\'immagine sottostante.';
-$string['test_unoconv'] = 'Test del percorso per unoconv';
-$string['test_unoconvdoesnotexist'] = 'Il percorso per unoconv non punta all\'eseguibile unoconv. Devi verificare il percorso impostato.';
-$string['test_unoconvdownload'] = 'Scarica il file pdf di test converito';
-$string['test_unoconvisdir'] = 'Il percorso per unoconv punta ad un cartella, nel percorso devi includere anche il nome dell\'eseguibile';
-$string['test_unoconvnotestfile'] = 'Il documento di test da convertire in pdf è mancante.';
-$string['test_unoconvnotexecutable'] = 'Il percorso per unoconv punta ad un file che non è eseguibile';
-$string['test_unoconvok'] = 'Il percorso per unoconv è configurato correttamente.';
-$string['test_unoconvversionnotsupported'] = 'La versione installata di unoconv non è supportata. La funzionalità di valutazione dei compiti richiede la versione 0.7 o superiore.';
 $string['tool'] = 'Strumento';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Visualizza pdf annotato...';

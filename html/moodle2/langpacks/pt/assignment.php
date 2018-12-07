@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,23 @@ $string['page-mod-assignment-view'] = 'Página principal do Trabalho';
 $string['page-mod-assignment-x'] = 'Qualquer página da atividade trabalho';
 $string['pluginadministration'] = 'Administração dos Trabalhos 2.2 (Desativado)';
 $string['pluginname'] = 'Trabalho 2.2 (Desativado)';
+$string['privacy:markedsubmissionspath'] = 'submissões avaliadas';
+$string['privacy:metadata:assignmentfilter'] = 'Preferência de filtro de submissão de trabalhos';
+$string['privacy:metadata:assignmentmailinfo'] = 'Preferência de informação de email para notificação de trabalho.';
+$string['privacy:metadata:assignmentperpage'] = 'Número de submissões de trabalhos exibidos por preferência de página.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Preferências de avaliação rápida para submissões de trabalho.';
+$string['privacy:metadata:assignment_submissions'] = 'Submissões de trabalhos associado a um trabalho';
+$string['privacy:metadata:assignment_submissions:data1'] = 'O texto online submetido para a submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:data2'] = 'O estado selecionado para a submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:grade'] = 'O valor da avaliação concebida ao trabalho submetido.';
+$string['privacy:metadata:assignment_submissions:mailed'] = 'O estado da notificação do trabalho submetido';
+$string['privacy:metadata:assignment_submissions:numfiles'] = 'O número máximo de ficheiros permitidos para a submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'O comentário que acompanha a submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:teacher'] = 'O ID do professor a avaliar o trabalho submetido';
+$string['privacy:metadata:assignment_submissions:timecreated'] = 'A data/hora da criação da submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:timemarked'] = 'A data/hora da avaliação da submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:timemodified'] = 'A data/hora da modificação da submissão do trabalho.';
+$string['privacy:metadata:assignment_submissions:userid'] = 'O ID do utilizador a submeter trabalho';
+$string['privacy:submissionpath'] = 'submissão';
 $string['upgradenotification'] = 'Esta atividade está baseada no antigo módulo de trabalhos';
 $string['viewassignmentupgradetool'] = 'Ver a ferramenta de atualização de trabalhos';

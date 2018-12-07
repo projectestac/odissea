@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version      = 2016120500; // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires     = 2016112900; // Requires this Moodle version.
+$plugin->version      = 2017111300; // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires     = 2017110800; // Requires this Moodle version.
 $plugin->component    = 'block_completionstatus';
-$plugin->dependencies = array('report_completion' => 2016112900);
+$plugin->dependencies = array('report_completion' => 2017110800);

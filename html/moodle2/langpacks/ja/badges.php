@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'badges', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -178,7 +178,7 @@ $string['criteriadeleted'] = 'バッジクライテリアが正常に削除さ�
 $string['criteria_descr'] = '次の必要条件を完了した場合、ユーザにこのバッジが授与されます:';
 $string['criteria_descr_0'] = '一覧表示された必要条件の「 {$a} 」を完了した場合、ユーザにこのバッジが授与されます。';
 $string['criteria_descr_1'] = '「 {$a} 」の次の活動が完了しました:';
-$string['criteria_descr_2'] = 'このバッジは下記ロールの<strong>{$a}</strong> のユーザによって授与される必要があります:';
+$string['criteria_descr_2'] = 'このバッジは次のロールの <strong>{$a}</strong> のユーザによって授与される必要があります:';
 $string['criteria_descr_4'] = 'ユーザはコースを完了する必要がある';
 $string['criteria_descr_5'] = '「 {$a} 」 の次のコースを完了する必要があります:';
 $string['criteria_descr_6'] = '「 {$a} 」 の次のユーザプロファイルフィールドを完了する必要があります:';
@@ -366,6 +366,34 @@ $string['personaconnection_help'] = 'ペルソナはあなたのメールアド�
 ペルソナに関するさらなる情報は<a href="https://login.persona.org/about">https://login.persona.org/about</a>にアクセスしてください。';
 $string['potentialrecipients'] = '潜在的なバッジ取得者';
 $string['preferences'] = 'バッジプリファレンス';
+$string['privacy:metadata:backpack'] = 'ユーザのバックパックのレコードです。';
+$string['privacy:metadata:backpack:backpackuid'] = 'バックパックのユニークIDです。';
+$string['privacy:metadata:backpack:backpackurl'] = 'バックパックURLです。';
+$string['privacy:metadata:backpack:email'] = 'バックパックに関連付けられるメールアドレスです。';
+$string['privacy:metadata:backpack:userid'] = 'ユーザのバックパックのIDです。';
+$string['privacy:metadata:badge'] = 'バッジのコレクションです。';
+$string['privacy:metadata:badge:timecreated'] = 'バッジの作成日時です。';
+$string['privacy:metadata:badge:timemodified'] = 'バッジの最終更新日時です。';
+$string['privacy:metadata:badge:usercreated'] = 'バッジを作成したユーザのIDです。';
+$string['privacy:metadata:badge:usermodified'] = 'バッジを修正したユーザのIDです。';
+$string['privacy:metadata:criteriamet'] = '合致したクライテリア群です。';
+$string['privacy:metadata:criteriamet:datemet'] = 'クライテリアに合致した日時です。';
+$string['privacy:metadata:criteriamet:userid'] = 'クライテリアに合致したユーザのIDです。';
+$string['privacy:metadata:external:backpacks'] = 'ユーザが外部バックパックにバッジを送信した場合に共有される情報です。';
+$string['privacy:metadata:external:backpacks:badge'] = 'バッジの名称です。';
+$string['privacy:metadata:external:backpacks:description'] = 'バッジの説明です。';
+$string['privacy:metadata:external:backpacks:image'] = 'バッジのイメージです。';
+$string['privacy:metadata:external:backpacks:issuer'] = '発行者に関する情報です。';
+$string['privacy:metadata:external:backpacks:url'] = '発行者情報を確認することのできるMoodleのURLです。';
+$string['privacy:metadata:issued'] = '授与されたバッジのレコードです。';
+$string['privacy:metadata:issued:dateexpire'] = '授与有効期限日です。';
+$string['privacy:metadata:issued:dateissued'] = '授与日です。';
+$string['privacy:metadata:issued:userid'] = 'バッジが授与されたユーザのIDです。';
+$string['privacy:metadata:manualaward'] = '手動授与のレコードです。';
+$string['privacy:metadata:manualaward:datemet'] = 'ユーザにバッジが授与された日付です。';
+$string['privacy:metadata:manualaward:issuerid'] = 'バッジを授与するユーザのIDです。';
+$string['privacy:metadata:manualaward:issuerrole'] = 'バッジを授与するユーザのロールです。';
+$string['privacy:metadata:manualaward:recipientid'] = 'バッジを手動授与されたユーザのIDです。';
 $string['recipientdetails'] = '取得者詳細';
 $string['recipientidentificationproblem'] = '既存のユーザの中から、このバッジの取得者を見つけることはできません。';
 $string['recipients'] = 'バッジ取得者';

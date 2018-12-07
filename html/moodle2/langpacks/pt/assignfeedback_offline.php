@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['invalidgradeimport'] = 'O Moodle não conseguiu ler o ficheiro carregad
 $string['nochanges'] = 'Não foram encontradas notas alteradas no ficheiro carregado';
 $string['offlinegradingworksheet'] = 'Notas';
 $string['pluginname'] = 'Ficheiro de avaliação';
+$string['privacy:nullproviderreason'] = 'Este módulo não tem base de dados para guardar informação de utilizador. Utiliza apenas APIs no mod_assign para ajudar a exibir a interface de avaliação.';
 $string['processgrades'] = 'Importar notas';
 $string['skiprecord'] = 'Saltar registo';
 $string['updatedgrades'] = 'Atualizadas {$a} notas e feedback';

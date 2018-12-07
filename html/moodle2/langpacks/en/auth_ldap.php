@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,12 +47,12 @@ $string['auth_ldapdescription'] = 'This method provides authentication against a
                                   entry in its database. This module can read user attributes from LDAP and prefill
                                   wanted fields in Moodle.  For following logins only the username and
                                   password are checked.';
-$string['auth_ldap_expiration_desc'] = 'Select No to disable expired password checking or LDAP to read passwordexpiration time directly from LDAP';
-$string['auth_ldap_expiration_key'] = 'Expiration';
-$string['auth_ldap_expiration_warning_desc'] = 'Number of days before password expiration warning is issued.';
-$string['auth_ldap_expiration_warning_key'] = 'Expiration warning';
-$string['auth_ldap_expireattr_desc'] = 'Optional: Overrides the LDAP attribute that stores password expiration time.';
-$string['auth_ldap_expireattr_key'] = 'Expiration attribute';
+$string['auth_ldap_expiration_desc'] = 'Select \'{$a->no}\' to disable expired password checking or \'{$a->ldapserver}\' to read the password expiry time directly from the LDAP server.';
+$string['auth_ldap_expiration_key'] = 'Expiry';
+$string['auth_ldap_expiration_warning_desc'] = 'Number of days before password expiry warning is issued.';
+$string['auth_ldap_expiration_warning_key'] = 'Expiry warning';
+$string['auth_ldap_expireattr_desc'] = 'Optional: Overrides the LDAP attribute that stores password expiry time.';
+$string['auth_ldap_expireattr_key'] = 'Expiry attribute';
 $string['auth_ldapextrafields'] = 'These fields are optional.  You can choose to pre-fill some Moodle user fields with information from the <b>LDAP fields</b> that you specify here. <p>If you leave these fields blank, then nothing will be transferred from LDAP and Moodle defaults will be used instead.</p><p>In either case, the user will be able to edit all of these fields after they log in.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Optional: Overrides  gracelogin attribute';
 $string['auth_ldap_gracelogin_key'] = 'Grace login attribute';
@@ -80,9 +80,11 @@ $string['auth_ldap_opt_deref'] = 'Determines how aliases are handled during sear
 $string['auth_ldap_opt_deref_key'] = 'Dereference aliases';
 $string['auth_ldap_passtype'] = 'Specify the format of new or changed passwords in LDAP server.';
 $string['auth_ldap_passtype_key'] = 'Password format';
-$string['auth_ldap_passwdexpire_settings'] = 'LDAP password expiration settings';
+$string['auth_ldap_passwdexpire_settings'] = 'LDAP password expiry settings';
 $string['auth_ldap_preventpassindb'] = 'Select yes to prevent passwords from being stored in Moodle\'s DB.';
-$string['auth_ldap_preventpassindb_key'] = 'Don\'t cache passwords';
+$string['auth_ldap_preventpassindb_key'] = 'Prevent password caching';
+$string['auth_ldap_rolecontext'] = '{$a->localname} context';
+$string['auth_ldap_rolecontext_help'] = 'LDAP context used to select for <i>{$a->localname}</i> mapping. Separate multiple groups with \';\'. Usually something like "cn={$a->shortname},ou=staff,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Search users from subcontexts.';
 $string['auth_ldap_search_sub_key'] = 'Search subcontexts';
 $string['auth_ldap_server_settings'] = 'LDAP server settings';
@@ -94,7 +96,7 @@ $string['auth_ldap_user_attribute'] = 'Optional: Overrides the attribute used to
 $string['auth_ldap_user_attribute_key'] = 'User attribute';
 $string['auth_ldap_user_exists'] = 'LDAP username already exists.';
 $string['auth_ldap_user_settings'] = 'User lookup settings';
-$string['auth_ldap_user_type'] = 'Select how users are stored in LDAP. This setting also specifies how login expiration, grace logins and user creation will work.';
+$string['auth_ldap_user_type'] = 'Select how users are stored in LDAP. This setting also specifies how login expiry, grace logins and user creation will work.';
 $string['auth_ldap_user_type_key'] = 'User type';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type not defined or function ldap_expirationtime2unix does not support selected type!';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type not defined or function ldap_unixi2expirationtime does not support selected type!';
@@ -116,11 +118,14 @@ $string['auth_ntlmsso_subnet'] = 'If set, it will only attempt SSO with clients 
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
 $string['auth_ntlmsso_type'] = 'The authentication method configured in the web server to authenticate the users (if in doubt, choose NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Authentication type';
+$string['cannotmaprole'] = 'The role "{$a->rolename}" cannot be mapped because its short name "{$a->shortname}" is too long and/or contains hyphens. To allow it to be mapped, the short name needs to be reduced to a maximum of {$a->charlimit} characters and any hyphens removed. <a href="{$a->link}">Edit the role</a>';
 $string['connectingldap'] = 'Connecting to LDAP server...';
+$string['connectingldapsuccess'] = 'Connecting to your LDAP server was successful';
 $string['creatingtemptable'] = 'Creating temporary table {$a}';
 $string['didntfindexpiretime'] = 'password_expire() didn\'t find expiration time.';
 $string['didntgetusersfromldap'] = 'Did not get any users from LDAP -- error? -- exiting';
 $string['gotcountrecordsfromldap'] = 'Got {$a} records from LDAP';
+$string['ldapnotconfigured'] = 'The LDAP host url is currently not configured';
 $string['morethanoneuser'] = 'Strange! More than one user record found in ldap. Only using the first one.';
 $string['needbcmath'] = 'You need the BCMath extension to use expired password checking with Active Directory.';
 $string['needmbstring'] = 'You need the mbstring extension to change passwords in Active Directory';
@@ -140,13 +145,16 @@ $string['pagesize'] = 'Make sure this value is smaller than your LDAP server res
 $string['pagesize_key'] = 'Page size';
 $string['pluginname'] = 'LDAP server';
 $string['pluginnotenabled'] = 'Plugin not enabled!';
+$string['privacy:metadata'] = 'The LDAP server authentication plugin does not store any personal data.';
 $string['renamingnotallowed'] = 'User renaming not allowed in LDAP';
 $string['rootdseerror'] = 'Error querying rootDSE for Active Directory';
 $string['start_tls'] = 'Use regular LDAP service (port 389) with TLS encryption';
 $string['start_tls_key'] = 'Use TLS';
+$string['syncroles'] = 'Synchronise system roles from LDAP';
 $string['synctask'] = 'LDAP users sync job';
+$string['systemrolemapping'] = 'System role mapping';
 $string['updatepasserror'] = 'Error in user_update_password(). Error code: {$a->errno}; Error string: {$a->errstring}';
-$string['updatepasserrorexpire'] = 'Error in user_update_password() when reading password expiration time. Error code: {$a->errno}; Error string: {$a->errstring}';
+$string['updatepasserrorexpire'] = 'Error in user_update_password() when reading password expiry time. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Error in user_update_password() when modifying expirationtime and/or gracelogins. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Error updating LDAP record. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - old moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Failed to update LDAP with ambiguous field {$a->key}; old moodle value: \'{$a->ouvalue}\', new value: \'{$a->nuvalue}\'';

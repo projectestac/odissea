@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Nota para {$a}';
 $string['gradeitem'] = 'Avaliar item: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Este item de avaliação não pode ser ajustado.';
 $string['gradeuser'] = 'Avaliar utilizador: {$a}';
+$string['itemsperpage'] = 'Itens por página';
 $string['noscreens'] = 'Não foi possível encontrar um ecrã de vista simples adequado.';
 $string['notvalid'] = 'Não é um ecrã válido de Vista simples: {$a}';
 $string['override'] = 'Ajustar';
@@ -52,7 +53,8 @@ $string['overrideall'] = 'Ajustar todas as notas';
 $string['overridefor'] = 'Ajustar para {$a}';
 $string['overridenone'] = 'Não ajustar nenhuma nota';
 $string['pluginname'] = 'Vista simples';
-$string['save'] = 'Gravar';
+$string['privacy:metadata'] = 'O Relatório de vista simples mostra apenas dados armazenados noutros locais';
+$string['save'] = 'Guardar';
 $string['savegrades'] = 'A guardar notas';
 $string['savegradessuccess'] = 'As notas foram definidas para {$a} itens';
 $string['selectgrade'] = 'Escolha um item de avaliação...';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityisscheduledfordeletion'] = 'Aktivitätslöschung ...';
+$string['agedigitalconsentmapinvalidage'] = '\'{$a}\' ist kein gültiger Wert für das Alter.';
+$string['agedigitalconsentmapinvalidcomma'] = '\'{$a}\' hat mehr oder weniger als ein Kommatrennzeichen.';
+$string['agedigitalconsentmapinvalidcountry'] = '\'{$a}\' ist kein gültiger Wert für ein Land.';
+$string['agedigitalconsentmapinvaliddefault'] = 'Es fehlt ein standardmäßiger (*) Wert.';
+$string['agelocationverificationdisabled'] = 'Die Überprüfung von Alter und Aufenthaltsort ist deaktiviert.';
 $string['alreadyloggedin'] = 'Sie sind bereits als {$a} angemeldet. Sie müssen sich abmelden, bevor Sie sich mit anderen Daten wieder anmelden.';
 $string['authnotexisting'] = 'Das Plugin zur Authorisierung existiert nicht.';
 $string['backupcontainexternal'] = 'Diese Sicherungsdatei enthält externe Netzwerkverbindungen (MNET), die lokal nicht konfiguriert sind.';
@@ -133,7 +138,7 @@ $string['cannotresetthisrole'] = 'Diese Rolle kann nicht zurückgesetzt werden.'
 $string['cannotrestore'] = 'Die Wiederherstellung wurde wegen eines Fehlers nicht abgeschlossen!';
 $string['cannotrestoreadminorcreator'] = 'Sie müssen Kursersteller/in oder Administrator/in sein, um die Daten in einen neuen Kurs wiederherzustellen!';
 $string['cannotrestoreadminoredit'] = 'Sie müssen Trainer/in oder Administrator/in sein, um die Daten im ausgewählten Kurs wiederherzustellen!';
-$string['cannotsaveagreement'] = 'Die Zustimmung konnte nicht gespeichert werden.';
+$string['cannotsaveagreement'] = 'Die Bestätigung konnte nicht gespeichert werden.';
 $string['cannotsaveblock'] = 'Fehler beim Speichern der Block-Einstellungen';
 $string['cannotsavecomment'] = 'Der Kommentar wurde nicht gespeichert.';
 $string['cannotsavedata'] = 'Die Daten wurden nicht gespeichert.';
@@ -179,6 +184,7 @@ $string['confirmationnotenabled'] = 'Nutzer-Bestätigung ist auf dieser Seite ni
 $string['confirmsesskeybad'] = 'Der \'session key\' für diese Aktion konnte nicht bestätigt werden. Dieses Sicherheitsfeature schützt Sie vor der nicht beabsichtigten Ausführung wichtiger Funktionen oder der Ausführung von Aktionen durch Dritte in Ihrem Namen. Bitte loggen Sie sich nun ggfs. neu ein.';
 $string['couldnotassignrole'] = 'Ein schwerer, nicht näher bezeichneter Fehler ist aufgetreten, während Sie sich eine Rolle zuweisen wollten.';
 $string['couldnotupdatenoexistinguser'] = 'Nutzer konnte nicht aktualisiert werden - Nutzer existiert nicht';
+$string['couldnotverifyagedigitalconsent'] = 'Beim Versuch, das Alters zu überprüfen, ist ein Fehler aufgetreten. <br />Wenden Sie sich an den Administrator.';
 $string['countriesphpempty'] = 'Fehler: Die Datei countries.php im Sprachpaket \'{$a}\' ist leer oder fehlt.';
 $string['coursedoesnotbelongtocategory'] = 'Der Kurs gehört nicht zu diesem Bereich';
 $string['courseformatnotfound'] = 'Das Kursformat \'{$a}\' existiert nicht oder wird nicht erkannt.';
@@ -351,7 +357,7 @@ $string['invalidrole'] = 'Ungültige Rolle';
 $string['invalidroleid'] = 'Ungültige Rollen-ID';
 $string['invalidscaleid'] = 'Falsche Skalen-ID';
 $string['invalidsection'] = 'Der Datensatz des Kursmoduls enthält ungültigen Abschnitt.';
-$string['invalidsesskey'] = 'Falsche sesskey übergeben, Formular nicht akzeptiert!';
+$string['invalidsesskey'] = 'Ihre Sitzung ist höchstwahrscheinlich abgelaufen. Bitte melden Sie sich erneut an.';
 $string['invalidshortname'] = 'Die Kurzbezeichnung für den Kurs ist ungültig';
 $string['invalidsourcefield'] = 'Der Eintrag im Feld für die Datei (draft file) ist ungültig.';
 $string['invalidstatedetected'] = 'Eigentlich hätte hier kein Fehler passieren dürfen: {$a}';
@@ -501,7 +507,7 @@ $string['sessionipnomatch'] = 'Die IP-Adresse scheint sich seit Ihrem letzten Lo
 $string['sessionipnomatch2'] = '<p>Ihre IP-Adresse hat sich geändert, seit Sie sich eingeloggt haben. Diese Sicherheitsoption schützt davor, dass Ihre Identität gestohlen werden kann, während Sie eingeloggt sind. Sie könnten diese Fehlermeldung auch erhalten, wenn Sie ein Funknetzwerk benutzen oder zwischen unterschiedlichen Netzwerken pendeln (roaming). Bitte fragen Sie für weitere Hilfe den Administrator Ihrer Website. </p><p>Falls Sie weitermachen möchten, aktualisieren Sie bitte die Seite (F5-Taste).</p>';
 $string['sessionwaiterr'] = 'Zeitüberschreitung beim Warten auf exklusiven Session-Zugriff.<br />Bitte warten Sie, bis Ihre laufenden Anfragen abgeschlossen sind, und versuchen Sie es anschließend noch einmal.';
 $string['shortnametaken'] = 'Kurzbezeichnung wird für anderen Kurs genutzt  ({$a})';
-$string['sitepolicynotagreed'] = 'Zustimmungserklärung nicht bestätigt. <a href="{$a}">Klicken Sie hier, um die Zustimmungserklärung zu öffnen</a>.';
+$string['sitepolicynotagreed'] = 'Datenschutzinformation nicht bestätigt. <a href="{$a}">Klicken Sie hier, um die Datenschutzinformation zu öffnen</a>.';
 $string['socksnotsupported'] = 'SOCKS5 Proxy wird in PHP4 nicht unterstützt';
 $string['spellcheckernotconf'] = 'Rechtschreibhilfe ist nicht eingerichtet';
 $string['sslonlyaccess'] = 'Aus Sicherheitsgründen sind ausschließlich Verbindungen über HTTPS erlaubt.';
@@ -566,6 +572,7 @@ $string['usernotaddederror'] = 'Nutzer wurde nicht hinzugefügt - Fehler';
 $string['usernotaddedregistered'] = 'Nutzer wurde nicht hinzugefügt - er/sie war bereits registriert.';
 $string['usernotavailable'] = 'Sie können die Details für diese/n Nutzer/in nicht einsehen.';
 $string['usernotdeletedadmin'] = 'Nutzerkonto nicht gelöscht - Administratorkonten können nicht gelöscht werden';
+$string['usernotdeleteddeleted'] = 'Dieses Nutzerkonto ist bereits gelöscht.';
 $string['usernotdeletederror'] = 'Nutzer/in wurde nicht gelöscht - unbekannter Fehler';
 $string['usernotdeletedmissing'] = 'Nutzer/in wurde nicht gelöscht - Anmeldename wurde nicht gefunden';
 $string['usernotdeletedoff'] = 'Nutzer/in nicht gelöscht - Löschen ist nicht erlaubt';
@@ -580,6 +587,7 @@ $string['usernotupdatederror'] = 'Nutzer/in nicht aktualisiert - unbekannter Feh
 $string['usernotupdatednotexists'] = 'Nutzer/in nicht aktualisiert - der Account existiert nicht.';
 $string['userquotalimit'] = 'Sie haben die Obergrenze für Ihren Datenquota erreicht.';
 $string['userselectortoomany'] = 'Die Auswahl user_selector erhielt mehr als eine/n ausgewählten Nutzer/in, obwohl die Mehrfachauswahl (multiselect) deaktiviert ist.';
+$string['verifyagedigitalconsentnotpossible'] = 'Die Überprüfung des Alters ist derzeit nicht möglich.';
 $string['wrongcall'] = 'Das Skript wurde falsch aufgerufen';
 $string['wrongcontextid'] = 'Kontext-ID war falsch (konnte nicht gefunden werden)';
 $string['wrongdestpath'] = 'Falscher Pfad';

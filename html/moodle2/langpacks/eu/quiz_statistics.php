@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_statistics', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,6 +91,7 @@ $string['partofquestion'] = 'Galdera zati bat';
 $string['pluginname'] = 'Estatistikak';
 $string['position'] = 'Kokalekua';
 $string['positions'] = 'kokalekua(k)';
+$string['privacy:metadata'] = 'Galdetegien Estatistikak pluginak datu-baseko taulak dituen arren, bertako datuak agregatuak dira eta ez dute norbanakorik deskribaptzen.';
 $string['questioninformation'] = 'Galderaren informazioa';
 $string['questionname'] = 'Galderaren izena';
 $string['questionnumber'] = 'G#';

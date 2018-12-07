@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -454,4 +454,4 @@ $string['wrongprefix'] = 'Nameprefix {$a} formattato erroneamente';
 $string['xoutofmax'] = '{$a->mark} su {$a->max}';
 $string['yougotnright'] = 'Hai selezionato correttamente {$a->num}.';
 $string['youmustselectaqtype'] = 'Devi scegliere il tipo di domanda.';
-$string['yourfileshoulddownload'] = 'Il download del file di esportazione dovrebbe cominciare tra breve. Altrimenti cliccare <a href="{$a}">qui</a>.';
+$string['yourfileshoulddownload'] = 'Lo scaricamento del file di esportazione comincerà tra breve. Altrimenti cliccare <a href="{$a}">qui</a>.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_webct', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_webct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['missingquestion'] = 'Missing question label after line {$a}';
 $string['pluginname'] = 'WebCT format';
 $string['pluginname_help'] = 'WebCT format enables multiple-choice and short answer questions saved in WebCT\'s text-based format to be imported.';
 $string['pluginname_link'] = 'qformat/webct';
+$string['privacy:metadata'] = 'The WebCT question format plugin does not store any personal data.';
 $string['questionnametoolong'] = 'Question name too long at line {$a} (255 char. max). It has been truncated.';
 $string['unknowntype'] = 'Unknown question type after line {$a}';
 $string['warningsdetected'] = '{$a} warning(s) detected';

@@ -29,3 +29,4 @@ $string['pluginnamesummary'] = 'Questo tipo di risposte incorporate (Cloze) è s
 $string['pluginnameadding'] = 'Aggiungere risposte incorporate (Cloze) - domanda di matematica e scienza WIRIS';
 $string['pluginnameediting'] = 'Modificare risposte incorporate (Cloze) - domanda di matematica e scienza WIRIS';
 $string['contentnotviewable'] = 'Impossibile visualizzare il contenuto.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Cloze question type does not effect or store any data itself.';

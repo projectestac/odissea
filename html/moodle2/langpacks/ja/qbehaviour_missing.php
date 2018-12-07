@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_missing', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_missing', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_missing
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '不明動作';
+$string['privacy:metadata'] = 'タイプ不明問題動作プラグインはどのような個人データも保存しません。';
 $string['questionusedunknownmodel'] = 'この問題は現在利用できない動作によって受験されました。問題を表示することはできましたが、いくつかの部分が欠けているか、正常ではありません。';

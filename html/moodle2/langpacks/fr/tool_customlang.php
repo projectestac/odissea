@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_customlang', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,5 +56,6 @@ $string['placeholder_help'] = 'Les paramètres sont des expressions spéciales c
 Il est important de les copier de manière exactement identique à l\'original. Ne les traduisez pas, et ne modifiez pas non plus leur orientation de gauche à droite (pour les langues écrites de droite à gauche).';
 $string['placeholderwarning'] = 'La chaîne contient un paramètre';
 $string['pluginname'] = 'Personnalisation de la langue';
+$string['privacy:metadata'] = 'Le plugin Personnalisation de la langue n\'enregistre aucune donnée personnelle.';
 $string['savecheckin'] = 'Enregistrer les modifications dans le paquetage de langue';
 $string['savecontinue'] = 'Enregistrer et continuer les modifications';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_meta', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['nosyncroleids'] = 'Roles that are not synchronised';
 $string['nosyncroleids_desc'] = 'By default all course level role assignments are synchronised from parent to child courses. Roles that are selected here will not be included in the synchronisation process. The roles available for synchronisation will be updated in the next cron execution.';
 $string['pluginname'] = 'Course meta link';
 $string['pluginname_desc'] = 'Course meta link enrolment plugin synchronises enrolments and roles in two different courses.';
+$string['privacy:metadata:core_group'] = 'Enrol meta plugin can create a new group or use an existing group to add all the participants of the course linked.';
 $string['syncall'] = 'Synchronise all enrolled users';
 $string['syncall_desc'] = 'If enabled all enrolled users are synchronised even if they have no role in parent course, if disabled only users that have at least one synchronised role are enrolled in child course.';

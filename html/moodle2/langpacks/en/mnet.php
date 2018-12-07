@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -175,6 +175,7 @@ $string['permittedtransports'] = 'Permitted transports';
 $string['phperror'] = 'An internal PHP error prevented your request being fulfilled.';
 $string['position'] = 'Position';
 $string['postrequired'] = 'The delete function requires a POST request.';
+$string['privacy:metadata'] = 'The MNet plugin does not store any personal data.';
 $string['profileexportfields'] = 'Fields to send';
 $string['profilefielddesc'] = 'Here you can configure the list of profile fields that are sent and received over MNet when user accounts are created, or updated.  You can also override this for each MNet peer individually. Note that the following fields are always sent and are not optional: {$a}';
 $string['profilefields'] = 'Profile fields';

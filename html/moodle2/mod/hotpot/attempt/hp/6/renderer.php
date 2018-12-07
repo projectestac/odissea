@@ -290,6 +290,24 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
             ."		value -= getOffset(obj.offsetParent, type);\n"
             ."	}\n"
             ."	if (obj.style) {\n"
+            ."		var p = new Array();\n"
+            ."		var cs = window.getComputedStyle(obj, null);\n"
+            ."		if (cs.getPropertyValue('box-sizing')=='content-box') {\n"
+            ."			switch (type){\n"
+            ."				case 'Height':\n"
+            ."					var p = new Array('margin-top', 'margin-bottom', 'border-width-top', 'border-width-bottom', 'padding-top', 'padding-bottom');\n"
+            ."					break;\n"
+            ."				case 'Width':\n"
+            ."					var p = new Array('margin-left', 'margin-right', 'border-width-left', 'border-width-right', 'padding-left', 'padding-right');\n"
+            ."					break;\n"
+            ."			}\n"
+            ."		}\n"
+            ."		for (var i=0; i<p.length; i++) {\n"
+            ."			var v = cs.getPropertyValue(p[i]);\n"
+            ."			if (v) {\n"
+            ."				value -= parseInt(v.replace('px', ''));\n"
+            ."			}\n"
+            ."		}\n"
             ."		obj.style[type.toLowerCase()] = value + 'px';\n"
             ."	}\n"
             ."}\n"
@@ -740,7 +758,7 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
 
         // fix DragTop (=top side of Drag area)
         $search = '/DragTop = [^;]+;/';
-        $replace = "DragTop = getOffset(document.getElementById('CheckButtonDiv'),'Bottom') + 10;";
+        $replace = "DragTop = getOffset(document.getElementById('CheckButtonDiv'), 'Bottom') + 10;";
         $substr = preg_replace($search, $replace, $substr, 1);
     }
 
@@ -836,53 +854,104 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
             $id = $this->embed_object_id;
             $onload = $this->embed_object_onload;
             $insert = "\n"
-            ."// fix canvas height, if necessary\n"
-            ."	if (! window.hotpot_mediafilter_loader){\n"
-            ."		StretchCanvasToCoverContent();\n"
-            ."	}\n"
-            ."}\n"
-            ."function StretchCanvasToCoverContent(skipTimeout){\n"
-            ."	if (! skipTimeout){\n"
-            ."		if (navigator.userAgent.indexOf('Firefox/3')>=0){\n"
-            ."			var millisecs = 1000;\n"
-            ."		} else {\n"
-            ."			var millisecs = 500;\n"
-            ."		}\n"
-            ."		setTimeout('StretchCanvasToCoverContent(true)', millisecs);\n"
-            ."		return;\n"
-            ."	}\n"
-            ."	var canvas = $canvas;\n"
-            ."	if (canvas){\n"
-            ."		var ids = new Array('Reading','ReadingDiv','MainDiv');\n"
-            ."		var i_max = ids.length;\n"
-            ."		for (var i=i_max-1; i>=0; i--){\n"
-            ."			var obj = document.getElementById(ids[i]);\n"
-            ."			if (obj){\n"
-            ."				obj.style.height = ''; // reset height\n"
-            ."			} else {\n"
-            ."				ids.splice(i, 1); // remove this id\n"
-            ."				i_max--;\n"
-            ."			}\n"
-            ."		}\n"
-            ."		var b = 0;\n"
-            ."		for (var i=0; i<i_max; i++){\n"
-            ."			var obj = document.getElementById(ids[i]);\n"
-            ."			b = Math.max(b, getOffset(obj,'Bottom'));\n"
-            ."		}\n"
-            ."		if (window.Segments) {\n" // JMix special
-            ."			var obj = document.getElementById('D'+(Segments.length-1));\n"
-            ."			if (obj) {\n"
-            ."				b = Math.max(b, getOffset(obj,'Bottom'));\n"
-            ."			}\n"
-            ."		}\n"
-            ."		if (b){\n"
-            ."			setOffset(canvas, 'Bottom', b + 21);\n"
-            ."			for (var i=0; i<i_max; i++){\n"
-            ."				var obj = document.getElementById(ids[i]);\n"
-            ."				setOffset(obj, 'Bottom', b);\n"
-            ."			}\n"
-            ."		}\n"
-            ."	}\n"
+                ."// fix canvas height, if necessary\n"
+                ."	if (! window.hotpot_mediafilter_loader){\n"
+                ."		StretchCanvasToCoverContent();\n"
+                ."	}\n"
+                ."}\n"
+                ."function StretchCanvasToCoverContent(skipTimeout){\n"
+                ."	if (! skipTimeout){\n"
+                ."		if (navigator.userAgent.indexOf('Firefox/3')>=0){\n"
+                ."			var millisecs = 1000;\n"
+                ."		} else {\n"
+                ."			var millisecs = 500;\n"
+                ."		}\n"
+                ."		setTimeout('StretchCanvasToCoverContent(true)', millisecs);\n"
+                ."		return;\n"
+                ."	}\n"
+                ."	var canvas = $canvas;\n"
+                ."	if (canvas){\n"
+                        // unset height of TALL elements (may or may not be exist)
+                ."		var ids = new Array('Reading','ReadingDiv','MainDiv');\n"
+                ."		var i_max = ids.length;\n"
+                ."		for (var i=i_max-1; i>=0; i--){\n"
+                ."			var obj = document.getElementById(ids[i]);\n"
+                ."			if (obj){\n"
+                ."				obj.style.height = ''; // reset height\n"
+                ."			} else {\n"
+                ."				ids.splice(i, 1); // remove this id\n"
+                ."				i_max--;\n"
+                ."			}\n"
+                ."		}\n"
+                        // get BOTTOM of each TALL element
+                ."		var b = 0;\n"
+                ."		for (var i=0; i<i_max; i++){\n"
+                ."			var obj = document.getElementById(ids[i]);\n"
+                ."			b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."		}\n"
+                        // set TALL elements to standard height
+                ."		if (b){\n"
+                ."			for (var i=0; i<i_max; i++){\n"
+                ."				var obj = document.getElementById(ids[i]);\n"
+                ."				setOffset(obj, 'Bottom', b);\n"
+                ."			}\n"
+                ."		}\n"
+                        // get BOTTOM of last JMix drop line
+                ."		if (window.DropTotal) {\n"
+                ."			var obj = document.getElementById('Drop'+(DropTotal-1));\n"
+                ."			if (obj) {\n"
+                ."				b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."			}\n"
+                ."		}\n"
+                        // get BOTTOM of last JMix segment
+                ."		if (window.Segments) {\n"
+                ."			var obj = document.getElementById('D'+(Segments.length-1));\n"
+                ."			if (obj) {\n"
+                ."				b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."			}\n"
+                ."		}\n"
+                        // get BOTTOM of last JMatch fixed element
+                ."		if (window.F) {\n"
+                ."			var obj = document.getElementById('F'+(F.length-1));\n"
+                ."			if (obj) {\n"
+                ."				b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."			}\n"
+                ."		}\n"
+                        // get BOTTOM of last JMatch draggable element
+                ."		if (window.D) {\n"
+                ."			var obj = document.getElementById('D'+(D.length-1));\n"
+                ."			if (obj) {\n"
+                ."				b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."			}\n"
+                ."		}\n"
+                        // get BOTTOM of last JMatch Flashcard table
+                ."		if (window.JMatchFlashcard) {\n"
+                ."			var obj = canvas.querySelector('.FlashcardTable');\n"
+                ."			if (obj) {\n"
+                ."				b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."			}\n"
+                ."		}\n"
+                        // set BOTTOM of role=main element
+                ."		var obj = canvas.querySelector('[role=main]');\n"
+                ."		if (obj){\n"
+                ."			setOffset(obj, 'Bottom', b);\n"
+                ."		}\n"
+                        // locate activity-navigation (Moodle >= 3.4)
+                ."		var obj = document.getElementById('jump-to-activity')\n"
+                ."				|| document.getElementById('prev-activity-link')\n"
+                ."				|| document.getElementById('next-activity-link');\n"
+                ."		while (obj) {\n"
+                ."			if (obj.parentNode==canvas) {\n"
+                ."				b = Math.max(b, getOffset(obj, 'Bottom'));\n"
+                ."				obj = null;\n"
+                ."			} else {\n"
+                ."				obj = obj.parentNode;\n"
+                ."			}\n"
+                ."		}\n"
+                ."		if (b){\n"
+                ."			setOffset(canvas, 'Bottom', b);\n"
+                ."		}\n"
+                ."	}\n"
             ;
             if ($this->hotpot->navigation==hotpot::NAVIGATION_EMBED) {
                 // stretch container object/iframe
@@ -3216,24 +3285,21 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
         }
 
         // initialize loop values
-        $q = 0;
+        $i = 0;
         $tags = 'data,gap-fill';
-        $question_record = "$tags,question-record";
-
-        // initialize loop values
-        $q = 0;
-        $tags = 'data,gap-fill';
+        $open_text = "$tags,open-text";
         $question_record = "$tags,question-record";
 
         // loop through text and gaps
         $looping = true;
         while ($looping) {
-            $text = $this->hotpot->source->xml_value($tags, "[0]['#'][$q]");
+            $item = "[$i]['#']";
+            $text = $this->hotpot->source->xml_value($open_text, $item);
             $gap = '';
-            if (($question="[$q]['#']") && $this->hotpot->source->xml_value($question_record, $question)) {
-                $gap .= '<span class="GapSpan" id="GapSpan'.$q.'">';
+            if ($this->hotpot->source->xml_value($question_record, $item)) {
+                $gap .= '<span class="GapSpan" id="GapSpan'.$i.'">';
                 if ($this->use_DropDownList()) {
-                    $gap .= '<select id="Gap'.$q.'"><option value=""></option>'.$dropdownlist.'</select>';
+                    $gap .= '<select id="Gap'.$i.'"><option value=""></option>'.$dropdownlist.'</select>';
                 } else {
                     // minimum gap size
                     if (! $gapsize = $this->hotpot->source->xml_value_int($this->hotpot->source->hbs_software.'-config-file,'.$this->hotpot->source->hbs_quiztype.',minimum-gap-size')) {
@@ -3242,19 +3308,19 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
 
                     // increase gap size to length of longest answer for this gap
                     $a = 0;
-                    while (($answer=$question."['answer'][$a]['#']") && $this->hotpot->source->xml_value($question_record, $answer)) {
+                    while (($answer=$item."['answer'][$a]['#']") && $this->hotpot->source->xml_value($question_record, $answer)) {
                         $answertext = $this->hotpot->source->xml_value($question_record,  $answer."['text'][0]['#']");
                         $answertext = preg_replace('/&[#a-zA-Z0-9]+;/', 'x', $answertext);
                         $gapsize = max($gapsize, strlen($answertext));
                         $a++;
                     }
 
-                    $gap .= '<input type="text" id="Gap'.$q.'" onfocus="TrackFocus('.$q.')" onblur="LeaveGap()" class="GapBox" size="'.$gapsize.'"></input>';
+                    $gap .= '<input type="text" id="Gap'.$i.'" onfocus="TrackFocus('.$i.')" onblur="LeaveGap()" class="GapBox" size="'.$gapsize.'"></input>';
                 }
                 if ($includeclues) {
-                    $clue = $this->hotpot->source->xml_value($question_record, $question."['clue'][0]['#']");
+                    $clue = $this->hotpot->source->xml_value($question_record, $item."['clue'][0]['#']");
                     if (strlen($clue)) {
-                        $gap .= '<button style="line-height: 1.0" class="FuncButton" onfocus="FuncBtnOver(this)" onmouseover="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowClue('.$q.')">'.$cluecaption.'</button>';
+                        $gap .= '<button style="line-height: 1.0" class="FuncButton" onfocus="FuncBtnOver(this)" onmouseover="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowClue('.$i.')">'.$cluecaption.'</button>';
                     }
                 }
                 $gap .= '</span>';
@@ -3265,13 +3331,13 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
                 } else {
                     $str .= $text.$gap;
                 }
-                $q++;
+                $i++;
             } else {
                 // no text or gap, so force end of loop
                 $looping = false;
             }
         }
-        if ($q==0) {
+        if ($i==0) {
             // oops, no gaps found!
             return $this->hotpot->source->xml_value($tags);
         } else {

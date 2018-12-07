@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,6 @@ $string['addnewapp'] = 'Habilita l\'aplicació externa';
 $string['addserver'] = 'Afegeix un servidor fiable nou';
 $string['addtype'] = 'Afegeix la configuració externa de l\'eina';
 $string['allow'] = 'Permet';
-$string['allowinstructorcustom'] = 'Permet als professors afegir paràmetres personalitzats';
 $string['allowsetting'] = 'Permet a l\'eina emmagatzemar 8K de paràmetres a Moodle';
 $string['always'] = 'Sempre';
 $string['autoaddtype'] = 'Afegeix eina';
@@ -347,7 +346,7 @@ El proveïdor de l\'eina ha de proporcionar la clau de consumidor. El mètode d\
 $string['resourceurl'] = 'URL del recurs';
 $string['return_to_course'] = 'Cliqueu <a href="{$a->link}" target="_top">aquí</a> per tornar al curs.';
 $string['saveallfeedback'] = 'Desa totes les meves realimentacions';
-$string['search:activity'] = 'Eina externa: informació d\'activitat';
+$string['search:activity'] = 'Eina externa: informació de l\'activitat';
 $string['secure_icon_url'] = 'Icona d\'URL segura';
 $string['secure_icon_url_help'] = 'Semblant a la icona d\'URL, però utilitzada quan l\'usuari accedeix a Moodle mitjançant SSL. El propòsit principal d\'aquest camp és evitar que el navegador avisi l\'usuari si s\'ha accedit a la pàgina subjacent amb SSL, però demanant-li si vol mostrar una imatge insegura.';
 $string['secure_launch_url'] = 'URL de llançament segur';

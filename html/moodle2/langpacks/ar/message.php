@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -109,6 +109,8 @@ $string['seeall'] = 'مشاهدة الكل';
 $string['selectmessagestodelete'] = 'اختر رسائل لحذفها';
 $string['selectnotificationtoview'] = 'اختر من قائمة الاشعارات لعرض تفاصيل أكثر';
 $string['send'] = 'ارسال';
+$string['sendbulkmessagesentsingle'] = 'تم ارسال الرسالة إلى شخص واحد';
+$string['sendbulkmessagesingle'] = 'ارسل إلى شخص واحد';
 $string['sendmessage'] = 'إرسل رسالة';
 $string['sendmessageto'] = 'إرسل رسالة إلى {$a}';
 $string['sendmessagetopopup'] = 'إرسل رسالة إلى {$a} - نافذة جديدة';

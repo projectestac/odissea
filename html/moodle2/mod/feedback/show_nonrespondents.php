@@ -216,36 +216,38 @@ if ($showall) {
     $pagecount = $table->get_page_size();
 }
 
-$students = feedback_get_incomplete_users($cm, $usedgroupid, $sort, $startpage, $pagecount);
+// Return students record including if they started or not the feedback.
+$students = feedback_get_incomplete_users($cm, $usedgroupid, $sort, $startpage, $pagecount, true);
 //####### viewreports-start
 //print the list of students
 echo $OUTPUT->heading(get_string('non_respondents_students', 'feedback', $matchcount), 4);
 echo isset($groupselect) ? $groupselect : '';
 echo '<div class="clearer"></div>';
 
-if (!$students) {
+if (empty($students)) {
     echo $OUTPUT->notification(get_string('noexistingparticipants', 'enrol'));
 } else {
 
-    if (has_capability('moodle/course:bulkmessaging', $coursecontext)) {
+    $canbulkmessaging = has_capability('moodle/course:bulkmessaging', $coursecontext);
+    if ($canbulkmessaging) {
         echo '<form class="mform" action="show_nonrespondents.php" method="post" id="feedback_sendmessageform">';
     }
-    foreach ($students as $student) {
-        $user = $DB->get_record('user', array('id'=>$student));
-        //userpicture and link to the profilepage
-        $profile_url = $CFG->wwwroot.'/user/view.php?id='.$user->id.'&amp;course='.$course->id;
-        $profilelink = '<strong><a href="'.$profile_url.'">'.fullname($user).'</a></strong>';
-        $data = array ($OUTPUT->user_picture($user, array('courseid'=>$course->id)), $profilelink);
 
-        if ($DB->record_exists('feedback_completedtmp', array('userid' => $user->id, 'feedback' => $feedback->id))) {
+    foreach ($students as $student) {
+        //userpicture and link to the profilepage
+        $profileurl = $CFG->wwwroot.'/user/view.php?id='.$student->id.'&amp;course='.$course->id;
+        $profilelink = '<strong><a href="'.$profileurl.'">'.fullname($student).'</a></strong>';
+        $data = array($OUTPUT->user_picture($student, array('courseid' => $course->id)), $profilelink);
+
+        if ($student->feedbackstarted) {
             $data[] = get_string('started', 'feedback');
         } else {
             $data[] = get_string('not_started', 'feedback');
         }
 
         //selections to bulk messaging
-        if (has_capability('moodle/course:bulkmessaging', $coursecontext)) {
-            $data[] = '<input type="checkbox" class="usercheckbox" name="messageuser[]" value="'.$user->id.'" />';
+        if ($canbulkmessaging) {
+            $data[] = '<input type="checkbox" class="usercheckbox" name="messageuser[]" value="'.$student->id.'" />';
         }
         $table->add_data($data);
     }
@@ -264,8 +266,8 @@ if (!$students) {
     }
     if (has_capability('moodle/course:bulkmessaging', $coursecontext)) {
         echo '<div class="buttons"><br />';
-        echo '<input type="button" id="checkall" value="'.get_string('selectall').'" /> ';
-        echo '<input type="button" id="checknone" value="'.get_string('deselectall').'" /> ';
+        echo '<input type="button" id="checkall" value="'.get_string('selectall').'" class="btn btn-secondary" /> ';
+        echo '<input type="button" id="checknone" value="'.get_string('deselectall').'" class="btn btn-secondary" /> ';
         echo '</div>';
         echo '<fieldset class="clearfix">';
         echo '<legend class="ftoggler">'.get_string('send_message', 'feedback').'</legend>';
@@ -277,7 +279,7 @@ if (!$students) {
         print_string('formathtml');
         echo '<input type="hidden" name="format" value="'.FORMAT_HTML.'" />';
         echo '<br /><div class="buttons">';
-        echo '<input type="submit" name="send_message" value="'.get_string('send', 'feedback').'" />';
+        echo '<input type="submit" name="send_message" value="'.get_string('send', 'feedback').'" class="btn btn-secondary" />';
         echo '</div>';
         echo '<input type="hidden" name="sesskey" value="'.sesskey().'" />';
         echo '<input type="hidden" name="action" value="sendmessage" />';

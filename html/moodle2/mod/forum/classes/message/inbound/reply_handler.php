@@ -162,6 +162,7 @@ class reply_handler extends \core\message\inbound\handler {
         $addpost->subject      = $subject;
         $addpost->parent       = $post->id;
         $addpost->itemid       = file_get_unused_draft_itemid();
+        $addpost->deleted      = 0;
 
         list ($message, $format) = self::remove_quoted_text($messagedata);
         $addpost->message = $message;
@@ -170,11 +171,21 @@ class reply_handler extends \core\message\inbound\handler {
         // We don't trust text coming from e-mail.
         $addpost->messagetrust = false;
 
+        // Find all attachments. If format is plain text, treat inline attachments as regular ones.
+        $attachments = !empty($messagedata->attachments['attachment']) ? $messagedata->attachments['attachment'] : [];
+        $inlineattachments = [];
+        if (!empty($messagedata->attachments['inline'])) {
+            if ($addpost->messageformat == FORMAT_HTML) {
+                $inlineattachments = $messagedata->attachments['inline'];
+            } else {
+                $attachments = array_merge($attachments, $messagedata->attachments['inline']);
+            }
+        }
+
         // Add attachments to the post.
-        if (!empty($messagedata->attachments['attachment']) && count($messagedata->attachments['attachment'])) {
-            $attachmentcount = count($messagedata->attachments['attachment']);
-            if (empty($forum->maxattachments) || $forum->maxbytes == 1 ||
-                    !has_capability('mod/forum:createattachment', $modcontext)) {
+        if ($attachments) {
+            $attachmentcount = count($attachments);
+            if (!forum_can_create_attachment($forum, $modcontext)) {
                 // Attachments are not allowed.
                 mtrace("--> User does not have permission to attach files in this forum. Rejecting e-mail.");
 
@@ -197,7 +208,7 @@ class reply_handler extends \core\message\inbound\handler {
 
             $filesize = 0;
             $addpost->attachments  = file_get_unused_draft_itemid();
-            foreach ($messagedata->attachments['attachment'] as $attachment) {
+            foreach ($attachments as $attachment) {
                 mtrace("--> Processing {$attachment->filename} as an attachment.");
                 $this->process_attachment('*', $usercontext, $addpost->attachments, $attachment);
                 $filesize += $attachment->filesize;
@@ -216,8 +227,8 @@ class reply_handler extends \core\message\inbound\handler {
         }
 
         // Process any files in the message itself.
-        if (!empty($messagedata->attachments['inline'])) {
-            foreach ($messagedata->attachments['inline'] as $attachment) {
+        if ($inlineattachments) {
+            foreach ($inlineattachments as $attachment) {
                 mtrace("--> Processing {$attachment->filename} as an inline attachment.");
                 $this->process_attachment('*', $usercontext, $addpost->itemid, $attachment);
 

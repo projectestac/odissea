@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_eventlist', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   report_eventlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,20 +40,21 @@ $string['edulevel'] = '教育レベル';
 $string['errorinvaliddirectory'] = 'イベントディレクトリが存在しないか、有効ではありません。';
 $string['errorinvalidevent'] = '提供されたイベントは有効なイベントではありません。';
 $string['eventcode'] = 'イベントコード';
-$string['eventexplanation'] = 'イベント説明';
+$string['eventexplanation'] = 'イベントの説明';
 $string['eventname'] = 'イベント名';
 $string['filter'] = 'フィルタ';
 $string['legacyevent'] = 'レガシーイベント';
 $string['name'] = '名称';
 $string['objecttable'] = 'オブジェクトテーブル';
 $string['other'] = 'その他';
-$string['othereventparameters'] = '他のイベントパラメータ';
+$string['othereventparameters'] = 'その他のイベントパラメータ';
 $string['otherinformation'] = 'その他の情報:';
 $string['parentevent'] = '親イベント';
 $string['participating'] = '参加';
 $string['pluginname'] = 'イベントリスト';
+$string['privacy:metadata'] = 'イベントリストプラグインはどのような個人データも保存しません。';
 $string['read'] = 'リード';
-$string['relatedobservers'] = 'イベントを監視しているプラグイン';
+$string['relatedobservers'] = 'このイベントを監視しているプラグイン';
 $string['since'] = '以降';
 $string['teaching'] = '教える';
 $string['typedeclaration'] = 'その他のイベントパラメータ';

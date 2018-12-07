@@ -269,7 +269,7 @@ class quiz_grading_report extends quiz_default_report {
     }
 
     protected function display_index($includeauto) {
-        global $OUTPUT;
+        global $OUTPUT, $PAGE;
 
         if ($groupmode = groups_get_activity_groupmode($this->cm)) {
             // Groups is being used.
@@ -300,6 +300,8 @@ class quiz_grading_report extends quiz_default_report {
 
             $row[] = $this->questions[$counts->slot]->number;
 
+            $row[] = $PAGE->get_renderer('question', 'bank')->qtype_icon($this->questions[$counts->slot]->type);
+
             $row[] = format_string($counts->name);
 
             $row[] = $this->format_count_for_table($counts, 'needsgrading', 'grade');
@@ -325,6 +327,7 @@ class quiz_grading_report extends quiz_default_report {
         $table->id = 'questionstograde';
 
         $table->head[] = get_string('qno', 'quiz_grading');
+        $table->head[] = get_string('qtypeveryshort', 'question');
         $table->head[] = get_string('questionname', 'quiz_grading');
         $table->head[] = get_string('tograde', 'quiz_grading');
         $table->head[] = get_string('alreadygraded', 'quiz_grading');

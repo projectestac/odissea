@@ -74,7 +74,7 @@ class user_competency_course extends persistent {
      * @return competency Competency Object
      */
     public function get_competency() {
-        return new competency($this->get_competencyid());
+        return new competency($this->get('competencyid'));
     }
 
     /**
@@ -83,7 +83,7 @@ class user_competency_course extends persistent {
      * @return context The context.
      */
     public function get_context() {
-        return context_user::instance($this->get_userid());
+        return context_user::instance($this->get('userid'));
     }
 
     /**
@@ -218,7 +218,7 @@ class user_competency_course extends persistent {
             } else {
                 $ids = array();
                 foreach ($competenciesorids as $comp) {
-                    $ids[] = $comp->get_id();
+                    $ids[] = $comp->get('id');
                 }
             }
 
@@ -282,7 +282,6 @@ class user_competency_course extends persistent {
               ORDER BY p.timesproficient ASC, c.id DESC';
 
         $results = $DB->get_records_sql($sql, $params, $skip, $limit);
-        $a = $DB->get_records_sql('SELECT * from {' . self::TABLE . '}');
 
         $comps = array();
         foreach ($results as $r) {

@@ -19,4 +19,3 @@ Feature: Atto clear button
     And I press "Save changes"
     And I click on "Edit profile" "link" in the "region-main" "region"
     Then I should not see "<i>Pisa"
-

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,10 @@ $string['auth_data_mapping'] = 'データマッピング';
 $string['authenticationoptions'] = '認証オプション';
 $string['auth_fieldlock'] = '設定値のロック';
 $string['auth_fieldlock_expl'] = '<p><b>設定値のロック:</b> この設定を有効にした場合、Moodleユーザおよび管理者によるフィールドの直接編集を防ぎます。外部認証システムにデータを保持している場合、このオプションを使用してください。</p>';
+$string['auth_fieldlockfield'] = 'ロック値 ({$a})';
 $string['auth_fieldlocks'] = 'ユーザフィールドのロック';
 $string['auth_fieldlocks_help'] = '<p>あなたはユーザデータフィールドをロックすることができます。ユーザレコードを管理者が手動で管理する方法、または「ユーザをアップロードする」機能を使用してユーザレコードをアップロードする方法をとっているサイトに有用です。Moodleが必要とするフィールドをロックする場合、ユーザアカウント作成時にそのデータを必ず提供してください。そうでない場合、アカウントを使用できなくなります。</p><p>この問題を避けるため、「空の場合はロックしない」に設定することをお勧めします。</p>';
+$string['auth_fieldmapping'] = 'データマッピング ({$a})';
 $string['authinstructions'] = 'ログインページにデフォルトのログインインストラクションを表示したい場合、空白のままにしてください。あなたが特別なログインインストラクションを表示したい場合、ここに入力してください。';
 $string['auth_invalidnewemailkey'] = 'エラー: あなたがメールアドレスの変更確認を試みているのでしたら、あなたに送信されたメール内URLのコピーに失敗しているようです。URLをコピーして、再度お試しください。';
 $string['authloginviaemail'] = 'メールによるログインを許可する';
@@ -61,13 +63,16 @@ $string['auth_sync_suspended'] = 'この設定が有効にされた場合、利�
 $string['auth_sync_suspended_key'] = 'ローカルユーザの利用停止ステータスを同期する';
 $string['auth_updatelocal'] = 'ローカルデータの更新';
 $string['auth_updatelocal_expl'] = '<p><b>ローカルデータの更新:</b> この設定を有効にした場合、このフィールドは (外部認証を通して) ログインごとまたはユーザの同期ごとに更新されます。更新されるローカルフィールドはロックする必要があります。</p>';
+$string['auth_updatelocalfield'] = 'ローカルを更新する ({$a})';
 $string['auth_updateremote'] = '外部データの更新';
 $string['auth_updateremote_expl'] = '<p><b>外部データの更新:</b> この設定を有効にした場合、ユーザレコードが更新される時に外部認証が更新されます。編集を許可するにはフィールドのロックを解除する必要があります。</p>';
+$string['auth_updateremotefield'] = '外部を更新する ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>注意:</b> 外部LDAPデータを更新するにはすべてのユーザレコードに書き込み権を持ったバインドユーザに対してbinddnおよびbindpwを設定する必要があります。現在、多値属性を保持することはできません。超過した値は更新時に取り除かれます。</p>';
 $string['auth_user_create'] = 'ユーザ作成を有効にする';
 $string['auth_user_creation'] = '新しい (匿名) ユーザは外部認証元のユーザアカウントを作成することができます。また、メールによりアカウント登録が確認されます。このオプションを有効にした場合、ユーザ作成に関して、モジュール特有のオプションを同時に設定する必要があります。';
 $string['auth_usernameexists'] = 'このユーザ名はすでに登録されています。新しいユーザ名を選んでください。';
 $string['auto_add_remote_users'] = 'リモートユーザを自動的に追加する';
+$string['cannotmapfield'] = '省略名「 {$a->shortname} 」が長過ぎるためフィールド「 {$a->fieldname} 」をマップできません。マッピングするにはプロファイルフィールド省略名を {$a->charlimit} 文字以下にしてください。<a href="{$a->link}">プロファイルフィールドを編集する</a>';
 $string['changepassword'] = 'パスワードURLの変更';
 $string['changepasswordhelp'] = 'ユーザにメールを送信するためのパスワード回復ページのURLです。認証共通設定でパスワード喪失URLが設定されている場合、この設定は影響を及ぼさないことに留意してください。';
 $string['chooseauthmethod'] = '認証方法を選択する';
@@ -108,6 +113,7 @@ $string['forgottenpasswordurl'] = 'パスワード喪失URL';
 $string['getanaudiocaptcha'] = 'CAPTCHAオーディオを取得する';
 $string['getanimagecaptcha'] = 'CAPTCHAイメージを取得する';
 $string['getanothercaptcha'] = '別のCAPTCHAを取得する';
+$string['getrecaptchaapi'] = 'reCAPTCHAを使用するにはあなたは<a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>でAPIキーを取得する必要があります。';
 $string['guestloginbutton'] = 'ゲストログインボタン';
 $string['incorrectpleasetryagain'] = '正しくありません、再度お試しください。';
 $string['infilefield'] = 'ファイルのパスワードフィールドを使用する';
@@ -135,13 +141,22 @@ $string['plaintext'] = 'プレインテキスト';
 $string['pluginnotenabled'] = '認証プラグイン「 {$a} 」が有効にされていません。';
 $string['pluginnotinstalled'] = '認証プラグイン「 {$a} 」がインストールされていません。';
 $string['potentialidps'] = 'あなたのアカウントを使用してログインします:';
+$string['privacy:metadata:userpref:createpassword'] = 'ユーザのパスワードを生成すべきか示します。';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'ログイン時にユーザがパスワードを変更すべきか示します。';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'ユーザがログインに失敗した回数です。';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = '最後にログインに成功してからユーザがログインに失敗した回数です。';
+$string['privacy:metadata:userpref:loginfailedlast'] = '最後にログイン失敗が記録された日時です。';
+$string['privacy:metadata:userpref:loginlockout'] = 'ログイン失敗によりユーザのアカウントがロックされたか示します。また、アカウントがロックアウト状態に入った日時を示します。';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'ユーザのアカウントがロックアウト配下にないことを示します。';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'ロックされた場合、ユーザはアカウントのロック解除に秘密鍵が必要です。';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'CAPTCHAは自動プログラムからの不正を防ぐためにあります。テキストボックスにテキストを順番にスペースで区切って入力してください。
+$string['recaptcha_help'] = 'CAPTCHAは自動プログラムからの不正を防ぐためにあります。あなたが人であることを確認するためインストラクションに従ってください。これはチェックボックスであったり、あなたが入力する必要のある文字が画像に表示されていたり、選択するための一連のイメージだったりします。
 
-どのような文字か分からない場合、別のCAPTCHAまたはオーディオCAPTCHAをお試しください。';
+画像が分からない場合、あなたは別のCAPTCHAまたはオーディオCAPTCHAを試すことができます。';
 $string['security_question'] = 'セキュリティ質問';
 $string['selfregistration'] = '自己登録';
 $string['selfregistration_help'] = '「Eメールによる自己登録」のような認証プラグインが選択された場合、潜在的なユーザに自分自身での登録およびユーザアカウント作成を許可します。この場合、フォーラム投稿、ブログエントリ等でスパムを発信するスパム発信者に対して、アカウントを作成させてしまうことになります。このリスクを避けるには自己登録を無効にするか「許可されるメールアドレスのドメイン」設定で使用できるメールアドレスを制限してください。';
+$string['settingmigrationmismatch'] = 'プラグイン設定名の訂正中に値の不適合が検出されました。認証プラグイン「 {$a->plugin} 」はレガシー名の下で設定「 {$a->setting} 」に「 {$a->legacy} 」が設定されています。また、現在の名称の下で「 {$a->current} 」が設定されています。後者の値は有効な値として設定されていますが、 あなたはこれが期待された設定値であることを確認する必要があります。';
 $string['sha1'] = 'SHA-1暗号化';
 $string['showguestlogin'] = 'あなたはログインページのゲストログインボタンを表示または非表示にできます。';
 $string['stdchangepassword'] = 'パスワード変更に標準ページを使用する';

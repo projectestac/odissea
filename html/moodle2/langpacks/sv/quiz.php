@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -202,9 +202,9 @@ $string['continuepreview'] = 'Fortsätt med den senaste förhandsgranskningen';
 $string['copyingfrom'] = 'Skapar en kopia av frågan \'{$a}\'';
 $string['copyingquestion'] = 'Kopierar en fråga';
 $string['correct'] = 'Rätt';
-$string['correctanswer'] = 'Rätt svar';
+$string['correctanswer'] = 'Det rätta svaret är';
 $string['correctanswerformula'] = 'Formel för korrekta svar';
-$string['correctansweris'] = 'Korrekt svar: {$a}';
+$string['correctansweris'] = 'Det rätta svaret är: {$a}';
 $string['correctanswerlength'] = 'Viktiga symboler';
 $string['correctanswers'] = 'Rätt svar';
 $string['correctanswershows'] = 'Rätt svar visar';
@@ -439,6 +439,7 @@ $string['incorrect'] = 'Felaktigt';
 $string['indivresp'] = 'Individers svarsreaktioner på varje komponent i testet';
 $string['info'] = 'Info';
 $string['infoshort'] = 'i';
+$string['initialnumfeedbacks'] = 'Förvalt antal fält för övergripande återkoppling';
 $string['inprogress'] = 'Pågår';
 $string['introduction'] = 'Introduktion';
 $string['invalidattemptid'] = 'Det finns inget försök med detta ID';
@@ -500,6 +501,8 @@ $string['multichoice'] = 'Flerval';
 $string['multipleanswers'] = 'Välj minst ett svar';
 $string['mustbesubmittedby'] = 'Detta försöket måste skickas in av {$a}.';
 $string['name'] = 'Namn';
+$string['navigatenext'] = 'Nästa sida';
+$string['navigateprevious'] = 'Föregående sida';
 $string['navmethod'] = 'Navigationsmetod';
 $string['navmethod_free'] = 'Fri';
 $string['navmethod_help'] = 'När sekventiell navigering är aktiverat måste eleven gå igenom testet i angiven ordning och kan då inte gå tillbaka till tidigare sidor eller hoppa framåt.';

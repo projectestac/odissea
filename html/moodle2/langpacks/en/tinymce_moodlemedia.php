@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodlemedia', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodlemedia', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodlemedia
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['moodlemedia:browsemedia'] = 'Find or upload a sound, video or applet...
 $string['moodlemedia:desc'] = 'Insert Moodle media';
 $string['nopreview'] = 'Can not preview media.';
 $string['pluginname'] = 'Insert media';
+$string['privacy:metadata'] = 'The TinyMCE Moodle Media plugin does not store any personal data.';

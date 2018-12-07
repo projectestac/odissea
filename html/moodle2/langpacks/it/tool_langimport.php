@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,8 +44,8 @@ $string['missinglangparent'] = 'Manca il parent language <em>{$a->parent}</em> o
 $string['noenglishuninstall'] = 'Il language pack Inglese non può essere rimosso';
 $string['nolangupdateneeded'] = 'Tutti i language pack sono aggiornati, non sono necessari ulteriori aggiornamenti';
 $string['pluginname'] = 'Language pack';
+$string['privacy:metadata'] = 'Il plugin "Language pack" non memorizza dati personali.';
 $string['purgestringcaches'] = 'Svuota la cache delle stringhe';
-$string['remotelangnotavailable'] = 'Non è possibile installare automaticamente i language pack perché Moodle non riesce a connettersi a download.moodle.org. Si prega di scaricare i file ZIP necessari da <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>, copiarli nella cartella {$a} e scompattarli manualmente.';
 $string['selectlangs'] = 'Devi selezionare i language pack da rimuovere';
 $string['uninstall'] = 'Rimuovi i language pack selezionati';
 $string['uninstallconfirm'] = 'Stai per rimuovere i seguenti language pack <strong>{$a}</strong>. Sei sicuro ?';

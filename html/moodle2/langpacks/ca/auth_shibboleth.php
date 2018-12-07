@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['auth_shib_idp_list_description'] = 'Proporciona una llista de proveïdo
 Un tercer paràmetre opcional que podeu afegir és la vostra ubicació en la sessió Shibboleth que pot ser utilitzada en cas que la instal·lació de Moodle sigui part d\'una configuració multifederació.';
 $string['auth_shib_instructions'] = 'Utilitzeu l\'<a href="{$a}">inici de sessió Shibboleth</a> per accedir mitjançant Shibboleth, si la vostra institució ho permet. Si no, utilitzeu el formulari d\'inici de sessió normal.';
 $string['auth_shib_instructions_help'] = 'Aquí podeu proporcionar instruccions per explicar Shibboleth als vostres usuaris. Es visualitzaran en la secció d\'instruccions de la pàgina d\'inici de sessió. Les instruccions han d\'incloure un enllaç a «<b>{$a}</b>» on els usuaris faran clic quan vulguin iniciar la sessió.';
+$string['auth_shib_instructions_key'] = 'Instruccions per a l\'inici de sessió';
 $string['auth_shib_integrated_wayf'] = 'Servei Moodle WAYF';
 $string['auth_shib_integrated_wayf_description'] = 'Si ho habiliteu, Moodle utilitzarà el seu propi servei WAYF en lloc del que proporciona Shibboleth. Moodle mostrarà una llista desplegable en aquesta pàgina alternativa d\'inici de sessió on l\'usuari haurà de seleccionar el seu proveïdor d\'identitats.';
 $string['auth_shib_logout_return_url'] = 'Desconnexió alternativa i retorn a l\'URL';

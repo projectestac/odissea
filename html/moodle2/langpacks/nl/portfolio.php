@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -173,6 +173,7 @@ $string['plugincouldnotpackage'] = 'Inpakken van je gegevens voor export mislukt
 $string['pluginismisconfigured'] = 'De portfolio plugin is fout geconfigureerd, overgeslagen. De fout was: {$a}';
 $string['portfolio'] = 'Portfolio';
 $string['portfolios'] = 'Portfolio\'s';
+$string['privacy:metadata'] = 'Het subsysteem voor het portfolio gedraagt zich als een kanaal dat aanvragen van diverse plugins doorgeeft aan de verschillende portfolio-plugins.';
 $string['queuesummary'] = 'Transfers in wachtrij';
 $string['returntowhereyouwere'] = 'Keer terug';
 $string['save'] = 'Bewaar';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_matchwiris', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_matchwiris', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_matchwiris
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['pluginnameadding'] = 'Adding a matching - math & science question by WI
 $string['pluginnameediting'] = 'Editing a matching - math & science question by WIRIS';
 $string['pluginname_help'] = 'Like the standard Matching, but you can deliver different question text and choices by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['pluginnamesummary'] = 'Like the standard Matching, but you can deliver different question text and choices by inserting random numbers, formulas or plots. The feedback can also use the random values.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Match question type does not effect or store any data itself.';

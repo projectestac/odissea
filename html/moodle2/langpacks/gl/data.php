@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -343,6 +343,7 @@ $string['subplugintype_datafield'] = 'Tipo de campo de base de datos';
 $string['subplugintype_datafield_plural'] = 'Tipos de campo de base de datos';
 $string['subplugintype_datapreset'] = 'Predefinición';
 $string['subplugintype_datapreset_plural'] = 'Predefinicións';
+$string['tags'] = 'Etiquetas';
 $string['teachersandstudents'] = '{$a->teachers} e {$a->students}';
 $string['templates'] = 'Modelos';
 $string['templatesaved'] = 'Modelo gardado';

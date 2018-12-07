@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_flickr_public', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,11 @@ $string['notitle'] = 'Izenbururik gabe';
 $string['nullphotolist'] = 'Ez dago argazkirik kontu honetan';
 $string['pluginname'] = 'Flickr Publikoa';
 $string['pluginname_help'] = 'Biltegia flickr.com-en';
+$string['privacy:metadata:repository_flickr_public'] = 'Flickr Publikoa biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_flickr_public:author'] = 'Flickr Publikoa biltegiko edukien egilea.';
+$string['privacy:metadata:repository_flickr_public:email_address'] = 'Flickr Publikoa biltegi-plugineko erabiltzailearen e-posta helbidea.';
+$string['privacy:metadata:repository_flickr_public:text'] = 'Flickr Publikoa biltegi-plugineko erabiltzailearen bilaketa-testua.';
+$string['privacy:metadata:repository_flickr_public:user_id'] = 'Flickr Publikoa biltegiko erabiltzailearen IDa.';
 $string['remember'] = 'Gogoratu';
 $string['secret'] = 'Sekretua';
 $string['sharealike'] = 'Bai, baldin eta gainerakoek berbera partekatzen badute';

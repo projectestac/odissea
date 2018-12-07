@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_group', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['description'] = 'Baimendu talde bateko ikasleei soilik edo talde guztie
 $string['error_selectgroup'] = 'Taldea aukeratu behar duzu.';
 $string['missing'] = '(Taldea falta da)';
 $string['pluginname'] = 'Taldearen araberako baldintza';
+$string['privacy:metadata'] = 'Taldearen araberako baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_anygroup'] = 'Edozein taldeetako kide zara';
 $string['requires_group'] = '<strong>{$a}</strong> taldeko kide zara';
 $string['requires_notanygroup'] = 'Ez zara talde bateko kide';

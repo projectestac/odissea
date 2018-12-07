@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilityhelper', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_accessibilityhelper', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_accessibilityhelper
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,5 +32,6 @@ $string['noimages'] = 'Non sono presenti immagini';
 $string['nolinks'] = 'Non sono presenti collegamenti';
 $string['nostyles'] = 'Non sono stati usati stili';
 $string['pluginname'] = 'Assistente screenreader';
+$string['privacy:metadata'] = 'Il plugin atto_accessibilityhelper non memorizza dati personali.';
 $string['selectimage'] = 'Seleziona immagine';
 $string['selectlink'] = 'Seleziona collegamento';

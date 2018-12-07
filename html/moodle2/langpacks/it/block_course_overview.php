@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_overview', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,22 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = 'Ci sono {$a} che richiedono attenzione';
+$string['addfavourite'] = 'Aggiungi preferito';
 $string['alwaysshowall'] = 'Visualizza sempre tutti i corsi';
 $string['collapseall'] = 'Minimizza tutti gli elenchi corsi';
 $string['configotherexpanded'] = 'Gli altri corsi saranno espansi per default a meno che l\'utente non cambi le proprie preferenze.';
 $string['configpreservestates'] = 'Consente la memorizzazione e il riutilizzo dello stato minimizzato/espanso impostato dall\'utente.';
 $string['course_overview:addinstance'] = 'Aggiungere blocco Panoramica corsi';
 $string['course_overview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi nella Dashboard';
-$string['defaultmaxcourses'] = 'Numero massimo di corsi di default';
-$string['defaultmaxcoursesdesc'] = 'Il numero massimo di corsi da visualizzare nel blocco Panoramica corsi. Impostare a 0 per visualizzare tutti i corsi.';
 $string['expandall'] = 'Espandi tutti gli elenchi corsi';
-$string['forcedefaultmaxcourses'] = 'Forza numero massimo di corsi';
-$string['forcedefaultmaxcoursesdesc'] = 'Gli utenti non potranno personalizzare il numero massimo di corsi visualizzati nel blocco';
+$string['favourites'] = 'Preferiti';
 $string['fullpath'] = 'Tutte le categorie e sotto categorie';
-$string['hiddencoursecount'] = 'Hai {$a} corso nascosto';
-$string['hiddencoursecountplural'] = 'Hai {$a} corsi nascosti';
-$string['hiddencoursecountwithshowall'] = 'Hai {$a->coursecount} corso nascosto ({$a->showalllink})';
-$string['hiddencoursecountwithshowallplural'] = 'Hai {$a->coursecount} corsi nascosti ({$a->showalllink})';
+$string['help'] = 'Aiuto';
+$string['help_help'] = 'Click su \'Personalizza questa pagina\', poi trascina e rilascia per riordinare i corsi. Per una panoramica click sulle icone delle attività.';
+$string['keepfavourites'] = 'Mantieni i preferiti nell\'elenco dei corsi';
+$string['keepfavouritesdesc'] = 'Visualizza i corsi nella scheda principale anche se sono presenti nella scheda dei preferiti.';
+$string['makefavourite'] = 'Aggiungi ai preferiti';
 $string['message'] = 'messaggio';
 $string['messages'] = 'messaggi';
 $string['moveafterhere'] = 'Sposta corso {$a->movingcoursename} dopo {$a->currentcoursename}';
@@ -49,21 +48,26 @@ $string['movecourse'] = 'Sposta corso: {$a}';
 $string['movecoursehere'] = 'Sposta il corso qui';
 $string['movetofirst'] = 'Sposta corso {$a} all\'inizio';
 $string['movingcourse'] = 'Stai spostando: {$a->fullname} ({$a->cancellink})';
+$string['nocourses'] = 'Nessun corso da visualizzare';
 $string['none'] = 'Nessuno';
 $string['numtodisplay'] = 'Numero di corsi da visualizzare';
 $string['onlyparentname'] = 'Solo categoria genitore';
 $string['otherexpanded'] = 'Espandi altri corsi';
-$string['pluginname'] = 'Panoramica corsi';
+$string['pluginname'] = 'Panoramica corsi (obsoleto)';
 $string['preservestates'] = 'Mantieni stati espansi';
+$string['removefavourite'] = 'Rimuovi dai preferiti';
+$string['reorderfullname'] = 'Titolo del corso';
+$string['reorderid'] = 'Codice identificativo del corso';
+$string['reordernone'] = 'Ordinamento trascina e rialscia';
+$string['reordershortname'] = 'Titolo abbreviato del corso';
 $string['shortnameprefix'] = 'Includi {$a}';
 $string['shortnamesufixprural'] = '(e {$a} altri)';
 $string['shortnamesufixsingular'] = '(e {$a} altri)';
 $string['showcategories'] = 'Categorie da visualizzare';
 $string['showcategoriesdesc'] = 'Visualizza la categoria di appartenenza sotto al corso';
-$string['showchildren'] = 'Visualizza corsi figli';
-$string['showchildrendesc'] = 'Consente la visualizzazione dei corsi figli al di sotto del corso principale.';
-$string['showwelcomearea'] = 'Visualizza area di benvenuto';
-$string['showwelcomeareadesc'] = 'Consente la visualizzazione dell\'area di benvenuto sopra l\'elenco dei corsi';
+$string['sortorder'] = 'Ordinamento';
+$string['title'] = 'Panoramica corsi (obsoleta)';
+$string['unfavourite'] = 'Rimuovi dai preferiti';
 $string['view_edit_profile'] = '(Visualizza e modifica il tuo profilo)';
 $string['welcome'] = 'Benvenuto {$a}';
 $string['youhavemessages'] = 'Hai {$a} messaggi da leggere&nbsp;';

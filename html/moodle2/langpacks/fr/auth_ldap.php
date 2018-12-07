@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['auth_ldap_create_error'] = 'Erreur lors de la création de l\'utilisate
 $string['auth_ldap_creators'] = 'Liste des groupes ou contextes dont les membres sont autorisés à créer des cours. Les groupes (en général, de la forme « cn=teachers,ou=staff,o=myorg ») sont séparés par des points-virgules (;).';
 $string['auth_ldap_creators_key'] = 'Gestionnaires de cours';
 $string['auth_ldapdescription'] = 'Cette méthode permet l\'authentification auprès d\'un annuaire LDAP externe. Si les nom d\'utilisateur et mot de passe sont corrects, Moodle créera un nouvel enregistrement pour cet utilisateur dans sa base de données. Ce module peut récupérer les attributs de l\'enregistrement LDAP de l\'utilisateur afin de remplir certains champs dans Moodle. Lors des connexions suivantes, seuls les nom d\'utilisateur et mot de passe sont vérifiés.';
-$string['auth_ldap_expiration_desc'] = 'Si vous voulez désactiver le contrôle d\'échéance des mots de passe, indiquez « Non ». Si vous indiquez LDAP, la durée sera reprise automatiquement de la variable passwordexpiration du serveur LDAP';
+$string['auth_ldap_expiration_desc'] = 'Sélectionnez « {$a->no} » pour désactiver le contrôle d\'échéance des mots de passe ou « {$a->ldapserver} » pour reprendre la durée d\'échéance des mots de passe à partir du serveur LDAP';
 $string['auth_ldap_expiration_key'] = 'Échéance';
 $string['auth_ldap_expiration_warning_desc'] = 'Nombre de jours avant que l\'avertissement d\'échéance soit affiché.';
 $string['auth_ldap_expiration_warning_key'] = 'Avertissement d\'échéance';
@@ -78,7 +78,9 @@ $string['auth_ldap_passtype'] = 'Indiquer le format des mots de passe (nouveaux 
 $string['auth_ldap_passtype_key'] = 'Format de mot de passe';
 $string['auth_ldap_passwdexpire_settings'] = 'Réglages de l\'échéance du mot de passe LDAP';
 $string['auth_ldap_preventpassindb'] = 'Choisissez « Oui » pour empêcher le stockage des mots de passe dans la base de données de Moodle.';
-$string['auth_ldap_preventpassindb_key'] = 'Ne pas mettre les mots de passe en cache';
+$string['auth_ldap_preventpassindb_key'] = 'Empêcher la mise en cache des mots de passe';
+$string['auth_ldap_rolecontext'] = 'Contexte {$a->localname}';
+$string['auth_ldap_rolecontext_help'] = 'Le contexte LDAP utilisé pour la sélection de la correspondance <i>{$a->localname}</i>. Séparez les groupes multiples par des points-virgules (;). Un exemple possible : cn={$a->shortname},ou=staff,o=monorganisation.';
 $string['auth_ldap_search_sub'] = 'Rechercher les utilisateurs dans les sous-contextes.';
 $string['auth_ldap_search_sub_key'] = 'Recherche sous-contextes';
 $string['auth_ldap_server_settings'] = 'Configuration du serveur LDAP';
@@ -112,11 +114,14 @@ $string['auth_ntlmsso_subnet'] = 'L\'activation de ce paramètre ne permettra le
 $string['auth_ntlmsso_subnet_key'] = 'Sous-réseau';
 $string['auth_ntlmsso_type'] = 'La méthode d\'authentification configurée dans le serveur web pour authentifier les utilisateurs. En cas de doute, choisir NTLM.';
 $string['auth_ntlmsso_type_key'] = 'Type d\'authentification';
+$string['cannotmaprole'] = 'Le rôle « {$a->rolename} »  ne peut pas être mis en correspondance, car son nom abrégé « {$a->shortname} » est trop long ou comporte des traits d\'union. Pour lui permettre d\'être mis en correspondance, son nom doit être raccourci à {$a->charlimit} caractères et tous les tirets supprimés. <a href="{$a->link}">Modifier le rôle ici</a>';
 $string['connectingldap'] = 'Connection au serveur LDAP...';
+$string['connectingldapsuccess'] = 'La connexion au serveur LDAP a réussi';
 $string['creatingtemptable'] = 'Création de la table temporaire {$a}';
 $string['didntfindexpiretime'] = 'La fonction password_expire() n\'a pas trouvé de durée d\'échéance';
 $string['didntgetusersfromldap'] = 'Aucun utilisateur obtenu depuis LDAP';
 $string['gotcountrecordsfromldap'] = '{$a} enregistrements obtenus de LDAP';
+$string['ldapnotconfigured'] = 'L\'hôte LDAP n\'est pas configuré';
 $string['morethanoneuser'] = 'Bizarre autant qu\'étrange ! Plus d\'un enregistrement utilisateur trouvé dans LDAP. Seul le premier sera utilisé.';
 $string['needbcmath'] = 'L\'extension BCMath est nécessaire pour pouvoir vérifier l\'échéance des mots de passe avec Active Directory.';
 $string['needmbstring'] = 'L\'extension mbstring est nécessaire pour pouvoir changer les mots de passe de Active Directory';
@@ -136,11 +141,14 @@ $string['pagesize'] = 'Assurez-vous que cette valeur est inférieure à la taill
 $string['pagesize_key'] = 'Taille de page';
 $string['pluginname'] = 'Serveur LDAP';
 $string['pluginnotenabled'] = 'Plugin non activé !';
+$string['privacy:metadata'] = 'Le plugin d\'authentification Serveur LDAP n\'enregistre aucune donnée personnelle.';
 $string['renamingnotallowed'] = 'Le changement de nom d\'utilisateur n\'est pas autorisé dans LDAP';
 $string['rootdseerror'] = 'Erreur lors de la requête rootDSE pour Active Directory';
 $string['start_tls'] = 'Utiliser le service LDAP normal (port 389) avec cryptage TLS';
 $string['start_tls_key'] = 'Utiliser TLS';
+$string['syncroles'] = 'Synchroniser les rôles système à partir de LDAP';
 $string['synctask'] = 'Tâche de synchronisation pour utilisateurs LDAP';
+$string['systemrolemapping'] = 'Correspondance des rôles système';
 $string['updatepasserror'] = 'Erreur dans user_update_password(). Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}';
 $string['updatepasserrorexpire'] = 'Erreur dans user_update_password() lors de la lecture de la durée d\'échéance de mot de passe. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Erreur dans user_update_password() lors de la modification de expirationtime et/ou gracelogins. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}';

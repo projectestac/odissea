@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatecbm', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_immediatecbm', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_immediatecbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Mesedez, aukera ezazu ziurtasun-maila.';
 $string['pluginname'] = 'Berehalako feedbacka CBMrekin';
+$string['privacy:metadata'] = 'Berehalako feedbacka CBMrekin galdera-jokaera pluginak ez du datu pertsonalik biltzen.';

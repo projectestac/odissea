@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Unable to connect to the download server. It is not possible to install or update the language packs automatically. Please download the appropriate ZIP file(s) from <a href="{$a->src}">{$a->src}</a> and unzip them manually to your data directory <code>{$a->dest}</code>';
 $string['install'] = 'Install selected language pack(s)';
 $string['installedlangs'] = 'Installed language packs';
 $string['langimport'] = 'Language import utility';
@@ -44,8 +45,8 @@ $string['missinglangparent'] = 'Missing parent language <em>{$a->parent}</em> of
 $string['noenglishuninstall'] = 'The English language pack cannot be uninstalled.';
 $string['nolangupdateneeded'] = 'All your language packs are up to date, no update is needed';
 $string['pluginname'] = 'Language packs';
+$string['privacy:metadata'] = 'The Language packs plugin does not store any personal data.';
 $string['purgestringcaches'] = 'Purge string caches';
-$string['remotelangnotavailable'] = 'Because Moodle cannot connect to download.moodle.org, it is not possible for language packs to be installed automatically. Please download the appropriate ZIP file(s) from <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>, copy them to your {$a} directory and unzip them manually.';
 $string['selectlangs'] = 'Select languages to uninstall';
 $string['uninstall'] = 'Uninstall selected language pack(s)';
 $string['uninstallconfirm'] = 'You are about to completely uninstall these language packs: <strong>{$a}</strong>. Are you sure?';

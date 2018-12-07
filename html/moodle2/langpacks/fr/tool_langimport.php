@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Impossible de se connecter au serveur de téléchargement. Il n\'est pas possible d\'installer ou de mettre à jour les paquetages de langue automatiquement. Veuillez télécharger le(s) fichier(s) ZIP adéquat(s) sur <a href="{$a->src}">{$a->src}</a> et les décompresser manuellement dans le dossier de données de votre Moodle <code>{$a->dest}</code>';
 $string['install'] = 'Installer les paquetages de langue sélectionnés';
 $string['installedlangs'] = 'Langues installées';
 $string['langimport'] = 'Utilitaire d\'importation de langues';
@@ -44,8 +45,8 @@ $string['missinglangparent'] = 'Le paquetage de la langue parente <em>{$a->paren
 $string['noenglishuninstall'] = 'Le paquetage de langue anglais ne peut pas être désinstallé';
 $string['nolangupdateneeded'] = 'Toutes les langues sont à jour. Aucune mise à jour n\'est nécessaire';
 $string['pluginname'] = 'Paquetages de langue';
+$string['privacy:metadata'] = 'Le plugin Paquetages de langue n\'enregistre aucune donnée personnelle.';
 $string['purgestringcaches'] = 'Vider les caches des chaînes de caractères';
-$string['remotelangnotavailable'] = 'Moodle ne peut pas se connecter au site download.moodle.org. L\'installation automatique des langues ne peut donc pas avoir lieu. Veuillez télécharger sur <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> le(s) fichier(s) compressé(s) nécessaire(s) dans la liste ci-dessous, les copier dans votre dossier {$a} et les décompresser manuellement.';
 $string['selectlangs'] = 'Sélectionnez les langues à désinstaller';
 $string['uninstall'] = 'Désinstaller le(s) paquetage(s) de langue sélectionné(s)';
 $string['uninstallconfirm'] = 'Vous êtes sur le point de supprimer totalement les paquetages de langue suivants : <strong>{$a}</strong>. Voulez-vous continuer ?';

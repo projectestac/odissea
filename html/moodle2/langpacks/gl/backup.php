@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'backup', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -263,7 +263,6 @@ $string['setting_course_shortname'] = 'Nome curto do curso';
 $string['setting_course_startdate'] = 'Data de inicio do curso';
 $string['setting_keep_groups_and_groupings'] = 'Manter os grupos e as agrupacións actuais';
 $string['setting_keep_roles_and_enrolments'] = 'Manter os roles e matriculacións actuais';
-$string['setting_overwriteconf'] = 'Sobrescribir a configuración do curso';
 $string['showtypes'] = 'Amosar as opcións de tipos';
 $string['sitecourseformatwarning'] = 'Isto é unha copia de seguranza da páxina principal, teña en conta que só se pode restaurar na páxina principal';
 $string['skiphidden'] = 'Omitir cursos agochados';

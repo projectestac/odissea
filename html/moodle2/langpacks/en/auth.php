@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,10 @@ $string['auth_data_mapping'] = 'Data mapping';
 $string['authenticationoptions'] = 'Authentication options';
 $string['auth_fieldlock'] = 'Lock value';
 $string['auth_fieldlock_expl'] = '<p><b>Lock value:</b> If enabled, will prevent Moodle users and admins from editing the field directly. Use this option if you are maintaining this data in the external auth system. </p>';
+$string['auth_fieldlockfield'] = 'Lock value ({$a})';
 $string['auth_fieldlocks'] = 'Lock user fields';
 $string['auth_fieldlocks_help'] = '<p>You can lock user data fields. This is useful for sites where the user data is maintained by the administrators manually by editing user records or uploading using the \'Upload users\' facility. If you are locking fields that are required by Moodle, make sure that you provide that data when creating user accounts or the accounts will be unusable.</p><p>Consider setting the lock mode to \'Unlocked if empty\' to avoid this problem.</p>';
+$string['auth_fieldmapping'] = 'Data mapping ({$a})';
 $string['authinstructions'] = 'Leave this blank for the default login instructions to be displayed on the login page. If you want to provide custom login instructions, enter them here.';
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
 $string['authloginviaemail'] = 'Allow log in via email';
@@ -61,13 +63,16 @@ $string['auth_sync_suspended'] = 'When enabled, the suspended attribute will be 
 $string['auth_sync_suspended_key'] = 'Synchronise local user suspension status';
 $string['auth_updatelocal'] = 'Update local';
 $string['auth_updatelocal_expl'] = '<p><b>Update local:</b> If enabled, the field will be updated (from external auth) every time the user logs in or there is a user synchronisation. Fields set to update locally should be locked.</p>';
+$string['auth_updatelocalfield'] = 'Update local ({$a})';
 $string['auth_updateremote'] = 'Update external';
 $string['auth_updateremote_expl'] = '<p><b>Update external:</b> If enabled, the external auth will be updated when the user record is updated. Fields should be unlocked to allow edits.</p>';
+$string['auth_updateremotefield'] = 'Update external ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Note:</b> Updating external LDAP data requires that you set binddn and bindpw to a bind-user with editing privileges to all the user records. It currently does not preserve multi-valued attributes, and will remove extra values on update. </p>';
 $string['auth_user_create'] = 'Enable user creation';
 $string['auth_user_creation'] = 'New (anonymous) users can create user accounts on the external authentication source and confirmed via email. If you enable this , remember to also configure module-specific options for user creation.';
 $string['auth_usernameexists'] = 'Selected username already exists. Please choose a new one.';
 $string['auto_add_remote_users'] = 'Auto add remote users';
+$string['cannotmapfield'] = 'The field "{$a->fieldname}" can\'t be mapped because its short name "{$a->shortname}" is too long. To allow it to be mapped, you need to reduce the short name to {$a->charlimit} characters. <a href="{$a->link}">Edit user profile fields</a>';
 $string['changepassword'] = 'Change password URL';
 $string['changepasswordhelp'] = 'URL of lost password recovery page, which will be sent to users in an email. Note that this setting will have no effect if a forgotten password URL is set in the authentication common settings.';
 $string['chooseauthmethod'] = 'Choose an authentication method';
@@ -108,6 +113,7 @@ $string['forgottenpasswordurl'] = 'Forgotten password URL';
 $string['getanaudiocaptcha'] = 'Get an audio CAPTCHA';
 $string['getanimagecaptcha'] = 'Get an image CAPTCHA';
 $string['getanothercaptcha'] = 'Get another CAPTCHA';
+$string['getrecaptchaapi'] = 'To use reCAPTCHA you must get an API key from <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Guest login button';
 $string['incorrectpleasetryagain'] = 'Incorrect. Please try again.';
 $string['infilefield'] = 'Field required in file';
@@ -135,14 +141,23 @@ $string['plaintext'] = 'Plain text';
 $string['pluginnotenabled'] = 'Authentication plugin \'{$a}\' is not enabled.';
 $string['pluginnotinstalled'] = 'Authentication plugin \'{$a}\' is not installed.';
 $string['potentialidps'] = 'Log in using your account on:';
+$string['privacy:metadata:userpref:createpassword'] = 'Indicates that a password should be generated for the user';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Indicates whether the user should change their password upon logging in';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'The number of times the user failed to log in';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'The number of times the user failed to login since their last successful login';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'The date at which the last failed login attempt was recorded';
+$string['privacy:metadata:userpref:loginlockout'] = 'Indicates whether the user\'s account is locked due to failed login attempts, and the date at which the account entered the lockout state';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Indicates that a user\'s account should never be subject to lockouts';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'When locked, the secret the user must use for unlocking their account';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'The CAPTCHA is for preventing abuse from automated programs. Simply enter the words in the box, in order and separated by a space.
+$string['recaptcha_help'] = 'The CAPTCHA is for preventing abuse from automated programs. Follow the instructions to verify you are a person. This could be a box to check, characters presented in an image you must enter or a set of images to select from.
 
-If you are not sure what the words are, you can try getting another CAPTCHA or an audio CAPTCHA.';
+If you are not sure what the images are, you can try getting another CAPTCHA or an audio CAPTCHA.';
 $string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Security question';
 $string['selfregistration'] = 'Self registration';
 $string['selfregistration_help'] = 'If an authentication plugin, such as email-based self-registration, is selected, then it enables potential users to register themselves and create accounts. This results in the possibility of spammers creating accounts in order to use forum posts, blog entries etc. for spam. To avoid this risk, self-registration should be disabled or limited by <em>Allowed email domains</em> setting.';
+$string['settingmigrationmismatch'] = 'Values mismatch detected while correcting the plugin setting names! The authentication plugin \'{$a->plugin}\' had the setting \'{$a->setting}\' configured to \'{$a->legacy}\' under the legacy name and to \'{$a->current}\' under the current name. The latter value has been set as the valid one but you should check and confirm that it is expected.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'You can hide or show the guest login button on the login page.';
 $string['stdchangepassword'] = 'Use standard page for changing password';

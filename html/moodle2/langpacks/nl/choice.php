@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['allowmultiple'] = 'Meer dan één keuze toestaan';
 $string['allowupdate'] = 'Laat toe de keuze aan te passen';
 $string['answered'] = 'Beantwoord';
 $string['atleastoneoption'] = 'Je moet minstens één mogelijk antwoord geven';
-$string['calendarend'] = 'Keuze {$a} zal sluiten';
-$string['calendarstart'] = 'Keuze {$a} zal openen';
+$string['calendarend'] = '{$a} zal sluiten';
+$string['calendarstart'] = '{$a} zal openen';
 $string['cannotsubmit'] = 'Er was een probleem bij het insturen van je keuze. Probeer opnieuw';
 $string['choice'] = 'Keuze {$a}';
 $string['choiceactivityname'] = 'Keuze: {$a}';
@@ -70,6 +70,10 @@ $string['expired'] = 'Sorry, deze activiteit is afgesloten op {$a} en is niet me
 $string['full'] = '(volledig)';
 $string['havetologin'] = 'Je moet aangemeld zijn voor je je keuze kunt insturen';
 $string['includeinactive'] = 'Antwoorden opnemen van niet actieve/geschorste gebruikers';
+$string['indicator:cognitivedepth'] = 'Keuze cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Keuze activiteit.';
+$string['indicator:socialbreadth'] = 'Keuze sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Keuze activiteit.';
 $string['limit'] = 'Beperk';
 $string['limitanswers'] = 'Beperk het aantal toegelaten antwoorden';
 $string['limitanswers_help'] = '<p>Met deze optie is het mogelijk om het aantal deelnemers dat elke optie kan kiezen te beperken.</p>
@@ -99,6 +103,7 @@ $string['notenrolledchoose'] = 'Enkel aangemelde gebruikers mogen hun keuze invu
 $string['notopenyet'] = 'Deze activiteit is niet beschikbaar tot {$a}';
 $string['numberofuser'] = 'Aantal antwoorden';
 $string['numberofuserinpercentage'] = 'Percentage antwoorden';
+$string['openafterclose'] = 'Je hebt een startdatum opgegeven die na de sluitdatum valt';
 $string['option'] = 'Optie';
 $string['optionno'] = 'Optie {no}';
 $string['options'] = 'Opties';
@@ -107,6 +112,11 @@ $string['pluginadministration'] = 'Keuzebeheer';
 $string['pluginname'] = 'Keuze';
 $string['previewonly'] = 'Dit is slechts een voorbeeld van de beschikbare opties voor deze activiteit. Je zult je keuze niet kunnen maken voor {$a}.';
 $string['privacy'] = 'Privacy van de resultaten';
+$string['privacy:metadata:choice_answers'] = 'Informatie over het door de gebruiker gekozen antwoord voor een bepaalde keuzeactiviteit';
+$string['privacy:metadata:choice_answers:choiceid'] = 'De ID van de keuzeactiviteit waarop de gebruiker antwoord geeft';
+$string['privacy:metadata:choice_answers:optionid'] = 'De ID van de optie die de gebruiker heeft geselecteerd.';
+$string['privacy:metadata:choice_answers:timemodified'] = 'Het tijdstempel dat aangeeft wanneer de keuze door de gebruiker is gewijzigd';
+$string['privacy:metadata:choice_answers:userid'] = 'De ID van de gebruiker die deze keuzeactiviteit beantwoordt';
 $string['publish'] = 'Publiceer de resultaten';
 $string['publishafteranswer'] = 'Toon de resultaten aan de leerling nadat die geantwoord heeft';
 $string['publishafterclose'] = 'Toon de resultaten aan de leerling nadat de keuze gesloten is';
@@ -131,5 +141,6 @@ $string['spacesleft'] = 'plaatsen beschikbaar';
 $string['taken'] = 'Ingenomen';
 $string['userchoosethisoption'] = 'Gebruikers die deze optie kozen';
 $string['viewallresponses'] = 'Bekijk {$a} antwoorden';
+$string['viewchoices'] = 'Bekijk keuzes';
 $string['withselected'] = 'Met geselecteerde';
 $string['yourselection'] = 'Jouw selectie';

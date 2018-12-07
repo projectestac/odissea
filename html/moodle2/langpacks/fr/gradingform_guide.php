@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -75,6 +75,8 @@ $string['name'] = 'Nom';
 $string['needregrademessage'] = 'Le guide d\'évaluation a été modifié après que cet participant a été évalué. Le participant ne pourra voir ce guide que lorsque vous aurez vérifié le guide et modifié la note.';
 $string['pluginname'] = 'Guide d\'évaluation';
 $string['previewmarkingguide'] = 'Prévisualiser le guide d\'évaluation';
+$string['privacy:metadata:preference:showmarkerdesc'] = 'S\'il faut afficher à l\'évaluateur la description des critères';
+$string['privacy:metadata:preference:showstudentdesc'] = 'S\'il faut afficher à l\'étudiant la description des critères';
 $string['regrademessage1'] = 'Vous allez enregistrer des modifications d\'un guide d\'évaluation qui a déjà été utilisé pour donner des notes. Veuillez indiquer si les notes déjà données doivent être revues. Dans ce cas, ce guide ne sera visible pour les participants que lorsque vous aurez réévalué leur travail.';
 $string['regrademessage5'] = 'Vous allez enregistrer d\'importantes modifications d\'un guide d\'évaluation qui a déjà été utilisé pour donner des notes. Les notes ne seront pas modifiées dans le carnet de notes, mais le guide ne sera visible pour les participants que lorsque vous aurez réévalué leur travail.';
 $string['regradeoption0'] = 'Ne pas marquer pour réévaluation';

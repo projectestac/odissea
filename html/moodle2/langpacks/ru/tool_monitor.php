@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_monitor', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,7 +38,7 @@ $string['defaultmessagetemplate'] = 'Название правила: {rulename}
 $string['deleterule'] = 'Удалить правило';
 $string['deletesubscription'] = 'Удалить подписку';
 $string['description'] = 'Описание:';
-$string['disablefieldswarning'] = 'Некоторые поля не могут быть изменены, как это правило уже имеет подписки.';
+$string['disablefieldswarning'] = 'Некоторые поля не могут быть изменены, так как это правило уже имеет подписки.';
 $string['duplicaterule'] = 'Дублировать правило';
 $string['editrule'] = 'Редактировать правило';
 $string['enablehelp'] = 'Включить/отключить отслеживание событий';

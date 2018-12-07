@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_outcomes', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_outcomes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['coursespecoutcome'] = 'Ikastaroaren ikas-emaitzak';
 $string['eventgradereportviewed'] = 'Ikas-emaitzen kalifikazioen txostena ikusi da';
 $string['outcomes:view'] = 'Ikusi ikas-emaitzen txostena';
 $string['pluginname'] = 'Ikas-emaitzen txostena';
+$string['privacy:metadata'] = 'Ikas-emaitzen txostenak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['usedgradeitem'] = 'Kalifikazio-elementuen kopurua';

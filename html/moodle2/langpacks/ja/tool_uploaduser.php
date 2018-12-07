@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['invalidupdatetype'] = '選択したアップロードタイプでこの
 $string['invaliduserdata'] = 'ユーザ {$a} のデータに無効なデータが検出されたため、自動的に削除されました。';
 $string['nochanges'] = '変更なし';
 $string['pluginname'] = 'ユーザアップロード';
+$string['privacy:metadata'] = 'ユーザアップロードプラグインはどのような個人データも保存しません。';
 $string['renameerrors'] = 'リネームエラー';
 $string['requiredtemplate'] = '必須項目です。あなたはここでテンプレート構文 (%l = 姓、%f = 名、%u = ユーザ名) を使用することができます。詳細および例に関して、ヘルプをご覧ください。';
 $string['rowpreviewnum'] = 'プレビュー行';

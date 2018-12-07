@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,6 @@ $string['addnewapp'] = 'Externes Programm aktivieren';
 $string['addserver'] = 'Neuen vertrauensvollen Server hinzufügen';
 $string['addtype'] = 'Vorkonfiguriertes Tool hinzufügen';
 $string['allow'] = 'Erlauben';
-$string['allowinstructorcustom'] = 'Trainer/innen erlauben,  Parameter anzupassen';
 $string['allowsetting'] = 'Dem Tool erlauben, Einstellungen (8 KB) in Moodle zu speichern';
 $string['always'] = 'Immer';
 $string['autoaddtype'] = 'Tool hinzufügen';
@@ -86,7 +85,7 @@ $string['courselink'] = 'Zum Kurs';
 $string['coursemisconf'] = 'Kurs ist falsch konfiguriert';
 $string['course_tool_types'] = 'Kurs-Tools';
 $string['createdon'] = 'Erstellt am';
-$string['curllibrarymissing'] = 'PHP Curl Bibliothek muss zur Nutzung von LTI installiert sein';
+$string['curllibrarymissing'] = 'PHP-Extension curl ist notwendig für das externe Tool.';
 $string['custom'] = 'Angepasste Parameter';
 $string['custom_config'] = 'Angepasste Tool-Konfiguration verwenden';
 $string['custom_help'] = 'Angepasste Parameter sind Einstellungen, die vom Tool Provider genutzt werden. Beispiel: eine Parameter kann die Nutzung einer Ressource des Providers sein.
@@ -136,11 +135,9 @@ $string['errortooltypenotfound'] = 'LTI Tool-Typ nicht gefunden';
 $string['existing_window'] = 'Vorhandenes Fenster';
 $string['extensions'] = 'LTI Extension Service';
 $string['external_tool_type'] = 'Vorkonfiguriertes Tool';
-$string['external_tool_type_help'] = 'Die Hauptfunktion der Tool-Konfiguration ist die Vorbereitung einer sicheren Kommunikation mit dem Tool-Anbieter. Zusätzlich erlaubt sie Grundeinstellungen vorzunehmen und spezielle Services des Tool-Anbieters aufzurufen.
-
-* **Automatisch mit StartURL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Start-URL. Es können Tools verwandt werden, die vom Administrator vorkonfiguriert oder im Kurs angelegt wurden.
+$string['external_tool_type_help'] = '* **Automatisch mit Tool-tURL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Toolt-URL. Es können Tools verwandt werden, die vom Administrator vorkonfiguriert oder im Kurs angelegt wurden.
 Sofern eine Start-URL definiert ist, erzeugt Moodle ein Feedback, ob dieses erkannt wird oder nicht. Sollte dieser Zugang scheitern, können Konfigurationsinformationen manuell eingetragen werden.
-* **Ein spezifischer Tool-Typ** - Die Auswahl erzwingt eine bestimmte Konfiguration zur Kommunikation mit dem Tool-Anbieter zu nutzen. Sollte die eingetragene Start-URL nicht zu dem Tool-Anbieter passen, erfolgt eine Warnung. Manchmal ist es nicht nötig eine Start-URL einzutragen falls ein spezifischer Tool-Typ verwandt wird.
+* **Ein spezifischer vorkonfigurierter  Tool-Typ** - Die Auswahl erzwingt eine bestimmte Konfiguration zur Kommunikation mit dem Tool-Anbieter zu nutzen. Sollte die eingetragene Start-URL nicht zu dem Tool-Anbieter passen, erfolgt eine Warnung. Manchmal ist es nicht nötig eine Start-URL einzutragen falls ein spezifischer Tool-Typ verwandt wird.
 * **Individuelle Konfiguration** - Die spezifische Konfiguration wird nur für die spezielle Instanz verwandt. Unter erweiterten Einstellungen können Anwenderschlüsssel und Kennwörter (shared secret) eingetragen werden. Beide werden durch den Tool Provider zur Verfügung gestellt. Falls das Tool diese Einstellungen nicht benötigt, können die Felder leer bleiben.
 
 ##Tool-Typ bearbeiten
@@ -172,6 +169,10 @@ $string['grading'] = 'Bewertungsweiterleitung';
 $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'Die Funktion Icon URl ermöglich es, das für die Aktivität verwandte Icon auszutauschen.  An Stelle des Standard LTI Icons kann ein Icon, das zur eingebundenen Aktivität passt, gewählt werden.';
 $string['id'] = 'ID';
+$string['indicator:cognitivedepth'] = 'LTI kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer LTI-Aktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'LTI sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer LTI-Aktivität erreicht hat.';
 $string['invalidid'] = 'LTI ID war fehlerhaft';
 $string['launch_in_moodle'] = 'Tool in Moodle starten';
 $string['launchinpopup'] = 'Startcontainer';
@@ -193,6 +194,7 @@ $string['leaveblank'] = 'Lassen Sie dies leer, wenn Sie die Angaben nicht brauch
 $string['lti'] = 'Externes Tool';
 $string['lti:addcoursetool'] = 'Kursspezifisch LTI Aktivitäten konfigurieren';
 $string['lti:addinstance'] = 'Aktivität \'Externes Tool\' hinzufügen';
+$string['lti:admin'] = 'Tool als Administrator ausführen';
 $string['lti_administration'] = 'Vorkonfiguriertes Tool bearbeiten';
 $string['lti_errormsg'] = 'Das Tool gab folgende Fehlermeldung zurück: \'{$a}\'';
 $string['lti:grade'] = 'Bewertungen vom ext. Tool anzeigen';
@@ -278,6 +280,32 @@ $string['preferwidget'] = 'Widget Start (bevorzugt)';
 $string['preferwidth'] = 'Breite (bevorzugt)';
 $string['press_to_submit'] = 'Klicken zum Start der Aktivität';
 $string['privacy'] = 'Datenschutz';
+$string['privacy:metadata:coursefullname'] = 'Vollständiger Name des Kurses aus dem der Nutzer den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:courseid'] = 'ID des Kurses aus dem der Nutzer den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:courseidnumber'] = 'ID-Nummer des Kurses aus dem der Nutzer den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:courseshortname'] = 'Kurzbezeichnung des Kurses, aus dem der Nutzer den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:createdby'] = 'Nutzer, der Datensatz erzeugt hat';
+$string['privacy:metadata:email'] = 'E-Mail-Adresse des Nutzers, der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:externalpurpose'] = 'Der LTI Consumer hält Nutzer und Kontextinformationen für den LTI Toolprovider vor';
+$string['privacy:metadata:firstname'] = 'Vorname des Nutzers Nutzer der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:fullname'] = 'Vollständiger Name des Nutzers, der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:lastname'] = 'Vollständiger Name des Nutzers, der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:lti_submission'] = 'LTI-Abgabe';
+$string['privacy:metadata:lti_submission:datesubmitted'] = 'Zeitstempel wann Abgabe erfolgte';
+$string['privacy:metadata:lti_submission:dateupdated'] = 'Zeitpunkt wann Abgabe geändert wurde';
+$string['privacy:metadata:lti_submission:gradepercent'] = 'Bewertung des Nutzers in Prozent';
+$string['privacy:metadata:lti_submission:originalgrade'] = 'Originalbewertung für den Nutzer';
+$string['privacy:metadata:lti_submission:userid'] = 'ID des Nutzers der die LTI-Aktivität bearbeitete';
+$string['privacy:metadata:lti_tool_proxies'] = 'LTI Proxies';
+$string['privacy:metadata:lti_tool_proxies:name'] = 'LTI Proxyname';
+$string['privacy:metadata:lti_types'] = 'LTI Typen';
+$string['privacy:metadata:lti_types:name'] = 'LTI Typname';
+$string['privacy:metadata:role'] = 'Rolle im Kurs für den  Nutzer, der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:timecreated'] = 'Datum an dem der Datensatz erstellt wurde';
+$string['privacy:metadata:timemodified'] = 'Datum an dem Datensatz verändert wurde';
+$string['privacy:metadata:userid'] = 'ID des Nutzers, der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:useridnumber'] = 'ID-Nummer des Nutzers, der den LTI Consumer aufgerufen hat';
+$string['privacy:metadata:username'] = 'Nutzername des Nutzers, der den LTI Consumer aufgerufen hat';
 $string['quickgrade'] = 'Direktbewertung zulassen';
 $string['quickgrade_help'] = 'Nach der Aktivierung können mehrere Tools auf einer Seite bewertet werden. Bewertungen und Kommentare eintragen und dann den \'Speichern aller Feedbacks\' Button drücken.';
 $string['redirect'] = 'Sie werden in ein paar Sekunden weitergeleitet. andernfalls den Button anklicken.';

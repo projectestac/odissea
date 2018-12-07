@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Onartutako fitxategi-motak';
-$string['acceptedfiletypes_help'] = 'Onartutako fitxategi-motak murriz daitezke puntu eta komaz banatutako mimetype zerrenda sartuta, esaterako \'video/mp4; audio/mp3; image/png; image/jpeg\'. Fitxategien luzapenak ere murriz daitezke puntuak ere gehituta, esaterako \'.png; .jpg\'. Eremua hutsik utziz gero fitxategi-mota guztiak onartuko dira.';
+$string['acceptedfiletypes_help'] = 'Onartutako fitxategi-motak muga daitezke luzapenen puntu eta komaz banatutako zerrenda sartuta. Eremua hutsik utziz gero, fitxategi-mota guztiak onartuko dira.';
 $string['configmaxbytes'] = 'Fitxategiaren gehienezko tamaina';
 $string['countfiles'] = '{$a} fitxategi';
 $string['default'] = 'Berez gaituta';
+$string['defaultacceptedfiletypes'] = 'Berez onartutako fitxategi-motak';
 $string['default_help'] = 'Ezarriz gero, bidalketa-metodo hau berez gaituko da zeregin berri guztietan';
 $string['enabled'] = 'Fitxategi-bidalketak';
 $string['enabled_help'] = 'Gaituz gero, ikasleek fitxategi bat edo gehiago igo dezakete euren bidalketan';
@@ -47,5 +48,6 @@ $string['maximumsubmissionsize_help'] = 'Ikasleek igotako fitxategiek tamaina ha
 $string['nonexistentfiletypes'] = 'Hurrengo fitxategi-motak ez dira onartu: {$a}';
 $string['numfilesforlog'] = 'Fitxategi-kopurua: {$a} fitxategi.';
 $string['pluginname'] = 'Fitxategi-bidalketak';
+$string['privacy:metadata:filepurpose'] = 'Zereginaren bidalketan igotako fitxategiak';
 $string['siteuploadlimit'] = 'Gunearen igoera-muga';
 $string['submissionfilearea'] = 'Bidalketan igotako fitxategiak';

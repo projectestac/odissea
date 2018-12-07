@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Calificación para {$a}';
 $string['gradeitem'] = 'Elemento de calificación: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Esta calificación no puede ser anulado.';
 $string['gradeuser'] = 'Usuario';
+$string['itemsperpage'] = 'Elementos por página';
 $string['noscreens'] = 'No se pudo encontrar una pantalla de vista simple adecuada.';
 $string['notvalid'] = 'Es una una pantalla de Vista Simple válida: {$a}';
 $string['override'] = 'Anular';

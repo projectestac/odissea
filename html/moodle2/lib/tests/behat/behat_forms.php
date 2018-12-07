@@ -117,11 +117,16 @@ class behat_forms extends behat_base {
         // so, we will use the reduced timeout as it is a common task and we should save time.
         try {
 
-            // Expand fieldsets link.
-            $xpath = "//div[@class='collapsible-actions']" .
-                "/descendant::a[contains(concat(' ', @class, ' '), ' collapseexpand ')]" .
+            // Expand all fieldsets link - which will only be there if there is more than one collapsible section.
+            $expandallxpath = "//div[@class='collapsible-actions']" .
+                "//a[contains(concat(' ', @class, ' '), ' collapseexpand ')]" .
                 "[not(contains(concat(' ', @class, ' '), ' collapse-all '))]";
-            $collapseexpandlink = $this->find('xpath', $xpath, false, false, self::REDUCED_TIMEOUT);
+            // Else, look for the first expand fieldset link.
+            $expandonlysection = "//legend[@class='ftoggler']" .
+                    "//a[contains(concat(' ', @class, ' '), ' fheader ') and @aria-expanded = 'false']";
+
+            $collapseexpandlink = $this->find('xpath', $expandallxpath . '|' . $expandonlysection,
+                    false, false, self::REDUCED_TIMEOUT);
             $collapseexpandlink->click();
 
         } catch (ElementNotFoundException $e) {
@@ -141,13 +146,20 @@ class behat_forms extends behat_base {
                 return;
             }
 
-            // Funny thing about this, with findAll() we specify a pattern and each element matching the pattern is added to the array
-            // with of xpaths with a [0], [1]... sufix, but when we click on an element it does not matches the specified xpath
-            // anymore (now is a "Show less..." link) so [1] becomes [0], that's why we always click on the first XPath match,
-            // will be always the next one.
-            $iterations = count($showmores);
-            for ($i = 0; $i < $iterations; $i++) {
-                $showmores[0]->click();
+            if ($this->getSession()->getDriver() instanceof \DMore\ChromeDriver\ChromeDriver) {
+                // Chrome Driver produces unique xpaths for each element.
+                foreach ($showmores as $showmore) {
+                    $showmore->click();
+                }
+            } else {
+                // Funny thing about this, with findAll() we specify a pattern and each element matching the pattern
+                // is added to the array with of xpaths with a [0], [1]... sufix, but when we click on an element it
+                // does not matches the specified xpath anymore (now is a "Show less..." link) so [1] becomes [0],
+                // that's why we always click on the first XPath match, will be always the next one.
+                $iterations = count($showmores);
+                for ($i = 0; $i < $iterations; $i++) {
+                    $showmores[0]->click();
+                }
             }
 
         } catch (ElementNotFoundException $e) {
@@ -510,4 +522,28 @@ class behat_forms extends behat_base {
         }
     }
 
+    /**
+     * Select item from autocomplete list.
+     *
+     * @Given /^I click on "([^"]*)" item in the autocomplete list$/
+     *
+     * @param string $item
+     */
+    public function i_click_on_item_in_the_autocomplete_list($item) {
+        $xpathtarget = "//ul[@class='form-autocomplete-suggestions']//*[contains(concat('|', string(.), '|'),'|" . $item . "|')]";
+
+        $this->execute('behat_general::i_click_on', [$xpathtarget, 'xpath_element']);
+
+        $this->execute('behat_general::i_press_key_in_element', ['13', 'body', 'xpath_element']);
+    }
+
+    /**
+     * Open the auto-complete suggestions list (Assuming there is only one on the page.).
+     *
+     * @Given /^I open the autocomplete suggestions list$/
+     */
+    public function i_open_the_autocomplete_suggestions_list() {
+        $csstarget = ".form-autocomplete-downarrow";
+        $this->execute('behat_general::i_click_on', [$csstarget, 'css_element']);
+    }
 }

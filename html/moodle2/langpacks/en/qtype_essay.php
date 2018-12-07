@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,20 +32,21 @@ $string['attachmentsrequired_help'] = 'This option specifies the minimum number 
 $string['formateditor'] = 'HTML editor';
 $string['formateditorfilepicker'] = 'HTML editor with file picker';
 $string['formatmonospaced'] = 'Plain text, monospaced font';
-$string['formatnoinline'] = 'No inline text';
+$string['formatnoinline'] = 'No online text';
 $string['formatplain'] = 'Plain text';
 $string['graderinfo'] = 'Information for graders';
 $string['graderinfoheader'] = 'Grader Information';
-$string['mustattach'] = 'When "no inline text" is selected, or responses are optional, you must allow at least one attachment.';
-$string['mustrequire'] = 'When "no inline text" is selected, or responses are optional, you must require at least one attachment.';
+$string['mustattach'] = 'When "No online text" is selected, or responses are optional, you must allow at least one attachment.';
+$string['mustrequire'] = 'When "No online text" is selected, or responses are optional, you must require at least one attachment.';
 $string['mustrequirefewer'] = 'You cannot require more attachments than you allow.';
 $string['nlines'] = '{$a} lines';
 $string['pluginname'] = 'Essay';
 $string['pluginnameadding'] = 'Adding an Essay question';
 $string['pluginnameediting'] = 'Editing an Essay question';
-$string['pluginname_help'] = 'In response to a question (that may include an image) the respondent writes an answer of a paragraph or two. The essay question will not be assigned a grade until it has been reviewed by a teacher and manually graded.';
+$string['pluginname_help'] = 'In response to a question, the respondent may upload one or more files and/or enter text online. A response template may be provided. Responses must be graded manually.';
 $string['pluginname_link'] = 'question/type/essay';
-$string['pluginnamesummary'] = 'Allows a response of a few sentences or paragraphs. This must then be graded manually.';
+$string['pluginnamesummary'] = 'Allows a response of a file upload and/or online text. This must then be graded manually.';
+$string['privacy:metadata'] = 'The Essay question type plugin does not store any personal data.';
 $string['responsefieldlines'] = 'Input box size';
 $string['responseformat'] = 'Response format';
 $string['responseisrequired'] = 'Require the student to enter text';

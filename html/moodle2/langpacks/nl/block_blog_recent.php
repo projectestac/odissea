@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_blog_recent', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['blog_recent:addinstance'] = 'Voeg een nieuw recente blogitems-blok toe'
 $string['norecentblogentries'] = 'Geen recente items';
 $string['numentriestodisplay'] = 'Aantal te tonen recente items';
 $string['pluginname'] = 'Recente blogitems';
+$string['privacy:metadata'] = 'Het blok blokken voor recente berichten bevat alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['recentinterval'] = 'Tijdspanne die als recent beschouwd wordt';

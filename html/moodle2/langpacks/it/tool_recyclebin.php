@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_recyclebin', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'E\' stato fornito un contesto non valido.';
 $string['noitemsinbin'] = 'Il cestino è vuoto.';
 $string['notenabled'] = 'Spiacenti, il cestino è stato disabilitato dall\'amministratore.';
 $string['pluginname'] = 'Cestino';
+$string['privacy:metadata'] = 'Il plugin "Cestino" non memorizza dati personali.';
 $string['recyclebin:deleteitems'] = 'Eliminare i contenuti del cestino';
 $string['recyclebin:restoreitems'] = 'Ripristinare i contenuti del cestino';
 $string['recyclebin:viewitems'] = 'Visualizzare i contenuti del cestino';

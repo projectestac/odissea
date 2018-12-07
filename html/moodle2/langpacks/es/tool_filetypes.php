@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_filetypes', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_filetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['error_notfound'] = 'El tipo de fichero con extensión {$a} no puede ser
 $string['extension'] = 'Extensión';
 $string['extension_help'] = 'Nombre de la extensión del fichero sin el punto, e.g. &lsquo;mobi&rsquo;';
 $string['groups'] = 'Tipos de grupos';
-$string['icon'] = 'Icono del fichero';
+$string['icon'] = 'Archivo de icono';
 $string['mimetype'] = 'tipo MIME';
 $string['pluginname'] = 'Tipos de fichero';
 $string['revert'] = 'Restaurar {$a} a los ajustes por defecto de Moodle';

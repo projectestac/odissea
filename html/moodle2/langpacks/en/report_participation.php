@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_participation', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   report_participation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['page-report-participation-index'] = 'Course participation report';
 $string['page-report-participation-x'] = 'Any participation report';
 $string['participation:view'] = 'View course participation report';
 $string['pluginname'] = 'Course participation';
+$string['privacy:metadata'] = 'The Course participation plugin does not store any personal data.';

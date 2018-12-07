@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,13 +35,14 @@ $string['anonymous'] = '匿名';
 $string['anonymous_edit'] = 'ユーザ名を記録する';
 $string['anonymous_entries'] = '匿名エントリ ({$a})';
 $string['anonymous_user'] = '匿名ユーザ';
+$string['answerquestions'] = '質問に回答する';
 $string['append_new_items'] = '新しいアイテムを追加する';
 $string['autonumbering'] = '問題の自動番号付け';
 $string['autonumbering_help'] = 'それぞれの質問の自動ナンバリングを有効または無効にします。';
 $string['average'] = '平均';
 $string['bold'] = '太字';
-$string['calendarend'] = 'フィードバック {$a} 終了';
-$string['calendarstart'] = 'フィードバック {$a} 開始';
+$string['calendarend'] = '{$a} 終了';
+$string['calendarstart'] = '{$a} 開始';
 $string['cancel_moving'] = '移動をキャンセルする';
 $string['cannotaccess'] = 'あなたはこのフィードバックにコースからのみアクセスすることができます。';
 $string['cannotmapfeedback'] = 'データベーストラブル、フィードバックをコースにマップできません。';
@@ -149,6 +150,10 @@ $string['horizontal'] = '水平';
 $string['importfromthisfile'] = 'このファイルからインポートする';
 $string['import_questions'] = '質問をインポートする';
 $string['import_successfully'] = '正常にインポートされました。';
+$string['indicator:cognitivedepth'] = 'フィードバック認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はフィードバック活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'フィードバック社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はフィードバック活動で学生が到達した社会的広がりに基づきます。';
 $string['info'] = '情報';
 $string['infotype'] = '情報タイプ';
 $string['insufficient_responses'] = '不十分な回答';
@@ -218,6 +223,7 @@ $string['of'] = '/';
 $string['oldvaluespreserved'] = 'すべての古い問題および割り当てられた値は保持されます';
 $string['oldvalueswillbedeleted'] = '現在の問題およびすべてのユーザ回答が削除されます';
 $string['only_one_captcha_allowed'] = '1フィードバックあたり1つのCAPTCHAのみ許可されています。';
+$string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['overview'] = '概要';
 $string['page'] = 'ページ';
 $string['page_after_submit'] = '完了メッセージ';
@@ -233,6 +239,14 @@ $string['position'] = 'ポジション';
 $string['preview'] = 'プレビュー';
 $string['preview_help'] = 'このプレビューであなたは質問の順番を変更することができます。';
 $string['previous_page'] = '前のページ';
+$string['privacy:metadata:completed'] = 'フィードバックへの送信のレコードです。';
+$string['privacy:metadata:completed:anonymousresponse'] = '送信が匿名で使用されるかどうか決定します。';
+$string['privacy:metadata:completed:timemodified'] = '送信の最終修正時間です。';
+$string['privacy:metadata:completedtmp'] = '進行中の送信のレコードです。';
+$string['privacy:metadata:completed:userid'] = 'フィードバック活動を完了したユーザのIDです。';
+$string['privacy:metadata:value'] = '質問への回答のレコードです。';
+$string['privacy:metadata:valuetmp'] = '進行中のサブシステムの質問に対する回答のレコードです。';
+$string['privacy:metadata:value:value'] = '選択された回答です。';
 $string['public'] = '公開';
 $string['question'] = '質問';
 $string['questionandsubmission'] = '質問および回答設定';

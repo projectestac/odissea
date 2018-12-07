@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_completion', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,3 +37,4 @@ $string['page-report-completion-index'] = 'Rapport d\'achèvement de cours';
 $string['page-report-completion-user'] = 'Rapport utilisateur d\'achèvement de cours';
 $string['page-report-completion-x'] = 'Tout rapport d\'achèvement';
 $string['pluginname'] = 'Achèvement de cours';
+$string['privacy:metadata'] = 'Le Rapport d\'achèvement de cours affiche seulement des données enregistrées à d\'autres endroits.';

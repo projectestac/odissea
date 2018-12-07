@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,10 @@ $string['myblocks'] = 'Nire blokeak';
 $string['onthispage'] = 'Orri honetan';
 $string['pagetypes'] = 'Orri-motak';
 $string['pagetypewarning'] = 'Lehenago aukeratutako orri mota ezin da jada aukeratu. Mesedez aukeratu azpian orri mota egokiena.';
+$string['privacy:metadata:userpref:dockedinstance'] = 'Erabiltzaileak bloke bat ertzera eramaten duenean erregistratzen du';
+$string['privacy:metadata:userpref:hiddenblock'] = 'Erabiltzaileak bloke bat tolestu/ezkutatzen duenean erregistratzen du';
+$string['privacy:request:blockisdocked'] = 'Bloke bat ertzera eraman den adierazten du';
+$string['privacy:request:blockishidden'] = 'Bloke bat tolestu/ezkutatu den adierazten du';
 $string['region'] = 'Kokapena';
 $string['restrictpagetypes'] = 'Erakutsi orri-mota hauetan';
 $string['showblock'] = 'Erakutsi {$a} blokea';

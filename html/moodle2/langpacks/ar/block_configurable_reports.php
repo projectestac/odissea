@@ -25,5 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addreport'] = 'أضف تقرير';
+$string['average'] = 'معدل';
+$string['categories'] = 'الاقسام';
+$string['comp_calcs_help'] = '</p>هنا يمكنك إضافة حسابات للخانات، على سبيل المثال: متوسط عدد المستخدمين المسجلين في الدورات التدريبية<p>
+<p>معلومات اكثر: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
+$string['comp_calculations_help'] = '<p> يمكنك هنا إضافة حسابات للخانات، على سبيل المثال: متوسط عدد المستخدمين المسجلين في الدورات </ p>';
+$string['comp_columns'] = 'خانات';
+$string['comp_columns_help'] = '<p> يمكنك هنا اختيار الخانات المختلفة لتقريرك بناءً على نوع التقرير </ p>
+<p>معلومات اكثر: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
+$string['comp_customsql'] = 'مخصص SQL';
+$string['comp_filters'] = 'فلتر';
+$string['conditionexpr'] = 'شرط';
+$string['conditionexpr_conditions'] = 'شرط';
+$string['configurable_reports:managereports'] = 'إدارة التقارير';
+$string['configurable_reports:managesqlreports'] = 'إدارة تقارير SQL';
+$string['configurable_reports:viewreports'] = 'عرض التقارير';
+$string['currentuser'] = 'المستخدم الحالي';
 $string['email_send'] = 'إرسل';
 $string['reports'] = 'تقارير';

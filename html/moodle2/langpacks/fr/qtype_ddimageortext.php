@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnamesummary'] = 'Les images ou les labels sont glissés et déposés dans des zones de dépôt sur une image de fond.';
 $string['previewareaheader'] = 'Aperçu';
 $string['previewareamessage'] = 'Sélectionnez un fichier image de fond, définissez des éléments à glisser-déposer ainsi que des zones de dépôt sur l\'image de fond où ces éléments doivent être placés.';
+$string['privacy:metadata'] = 'Le plugin de type de question Glisser-déposer sur une image n\'enregistre aucune donnée personnelle.';
 $string['refresh'] = 'Rafraîchir l\'aperçu';
 $string['shuffleimages'] = 'Mélanger les éléments déplaçables lors de chaque tentative';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

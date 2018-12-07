@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_rubric', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,3 +39,4 @@ $string['mustbeunique'] = 'Level grades must be unique within a criterion';
 $string['mustchooseone'] = 'You have to select one of these items';
 $string['mustdefinelevel'] = 'At least one level is required';
 $string['pluginname'] = 'Rubric';
+$string['privacy:metadata'] = 'The Rubric plugin only stores the details of the assessment form. Actual personal data of how the form has been filled are stored by the Workshop module itself and are attached to exported assessments.';

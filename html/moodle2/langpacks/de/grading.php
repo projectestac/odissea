@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grading', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,27 @@ $string['manageactionshareconfirm'] = 'Sie sind dabei eine Kopie es Bewertungsfo
 $string['manageactionsharedone'] = 'Das Formular wurde erfolgreich als Vorlage gespeichert';
 $string['noitemid'] = 'Bewertung nicht möglich. Der Notenwert existiert nicht.';
 $string['nosharedformfound'] = 'Keine Vorlage gefunden';
+$string['privacy:metadata:grading_definitions'] = 'Basisinformation über ein erweitertes Bewertungsformular im Bewertungsbereich';
+$string['privacy:metadata:grading_definitions:areaid'] = 'Bereichs-ID, wo erweitertes Bewertungsformular definiert ist';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'Bewertungsdefinitions-ID, die kopiert wurde';
+$string['privacy:metadata:grading_definitions:description'] = 'Beschreibung der erweiterten Bewertungsmethode';
+$string['privacy:metadata:grading_definitions:method'] = 'Bewertungsmethode, die bei der Definiton genutzt wird';
+$string['privacy:metadata:grading_definitions:name'] = 'Name der erweiterten Bewertungsdefinition';
+$string['privacy:metadata:grading_definitions:options'] = 'Einige Einstellungen der Bewertungsdefinition';
+$string['privacy:metadata:grading_definitions:status'] = 'Status der erweiterten Bewertungsdefinition';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'Zeitpunkt, zu dem die erweiterte Bewertungsdefinition kopiert wurde';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'Zeitpunkt, zu dem die erweiterte Bewertungsdefinition erstellt wurde';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'Zeitpunkt, zu dem die erweiterte Bewertungsdefinition zuletzt geändert wurde';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'ID des Nutzers der die Bewertubgsdefinition erstellt hat';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'ID des Nutzers der die Bewertubgsdefinition zuletzt verändert hat';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Daten aus der Bewertungsmethode';
+$string['privacy:metadata:grading_instances'] = 'Bewertungsaufzeichnung eines einzelnen Bewerters für ein Item';
+$string['privacy:metadata:grading_instances:feedback'] = 'Vom Nutzer gegebenes Feedback';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'Textformat des Feedbacks des Nutzers';
+$string['privacy:metadata:grading_instances:raterid'] = 'ID des Nutzers, der Bewertungsinstanz bewertet hat';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'Bewertung in der Bewertungsinstanz';
+$string['privacy:metadata:grading_instances:status'] = 'Status der Bewertungsinstanz';
+$string['privacy:metadata:grading_instances:timemodified'] = 'Zeitpunkt der letzten Änderung an der Bewertungsinstanz';
 $string['searchownforms'] = 'einschl. meine eigenen Formulare';
 $string['searchtemplate'] = 'Suche nach Bewertungsformularen';
 $string['searchtemplate_help'] = 'Sie können ein Bewertungsformular suchen und es als Vorlage zur weiteren Bearbeitung verwenden. Geben Sie Begriffe ein, die im Titel, dem Formular oder der Beschreibung vermutlich vorkommen. Sie können auch komplexe Begriffe suchen wenn Sie diese in Anführungszeichen (") setzen.

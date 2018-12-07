@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_comments', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['dimensioncommentfor'] = 'Comment for {$a}';
 $string['dimensiondescription'] = 'Description';
 $string['dimensionnumber'] = 'Aspect {$a}';
 $string['pluginname'] = 'Comments';
+$string['privacy:metadata'] = 'The Comments grading plugin only stores the details of the assessment form. Actual personal data of how the form has been filled are stored by the Workshop module itself and are attached to exported assessments.';

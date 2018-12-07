@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_flatfile', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除中に一部のユーザデータおよび設定がコースから削除されてしまうことに留意してください。';
 $string['filelockedmail'] = 'ファイルベースのユーザ登録で使用しているテキストファイル ({$a}) はcron処理により削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
 $string['filelockedmailsubject'] = '重大なエラー: 登録ファイル';
+$string['flatfileenrolments'] = 'フラットファイル (CSV) 登録です。';
 $string['flatfile:manage'] = 'ユーザ登録を手動で管理する';
 $string['flatfilesync'] = 'フラットファイル登録同期';
 $string['flatfile:unenrol'] = 'ユーザをコースから手動で登録解除する';
@@ -63,3 +64,11 @@ del, student, 8, CF101
 del, student, 17, CF101
 add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'フラットファイル (CSV) 登録プラグインは将来的なenrol_flatfileテーブルの登録に関する個人データを保存します。';
+$string['privacy:metadata:enrol_flatfile:action'] = '所与の日付に期待される登録処理です。';
+$string['privacy:metadata:enrol_flatfile:courseid'] = '登録に関連するコースIDです。';
+$string['privacy:metadata:enrol_flatfile:roleid'] = '割り当てまたは割り当て解除されるロールのIDです。';
+$string['privacy:metadata:enrol_flatfile:timeend'] = '登録変更の終了日時です。';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'この登録変更の修正日時です。';
+$string['privacy:metadata:enrol_flatfile:timestart'] = '登録変更の開始日時です。';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'ロール割り当てに関連するユーザのIDです。';

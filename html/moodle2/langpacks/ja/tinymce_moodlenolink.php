@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodlenolink', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodlenolink', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodlenolink
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['moodlenolink:desc'] = '自動リンクを避ける';
-$string['pluginname'] = '自動リンクを避ける';
+$string['moodlenolink:desc'] = '自動リンクを抑制する';
+$string['pluginname'] = '自動リンクを抑制する';
+$string['privacy:metadata'] = 'TinyMCE自動リンク防止プラグインはどのような個人データも保存しません。';

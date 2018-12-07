@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploaduser', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,8 +39,9 @@ $string['invalidupdatetype'] = 'Não pode selecionar esta opção com o \'Tipo d
 $string['invaliduserdata'] = 'Foram detetados dados inválidos para o utilizador {$a} que foram apagados automaticamente.';
 $string['nochanges'] = 'Sem alterações';
 $string['pluginname'] = 'Carregar utilizador';
+$string['privacy:metadata'] = 'O módulo Carregar Utilizadores não armazena dados pessoais.';
 $string['renameerrors'] = 'Renomear erros';
-$string['requiredtemplate'] = 'Necessário. Pode usar a sintaxe modelo aqui (%l = lastname, %f = firstname, %u = username). Consulte a ajuda para mais detalhes e exemplos.';
+$string['requiredtemplate'] = 'Obrigatório. Pode usar a sintaxe modelo (%l = lastname, %f = firstname, %u = username). Consulte a ajuda para mais detalhes e exemplos.';
 $string['rowpreviewnum'] = 'Número de linhas a pré-visualizar';
 $string['unassignedsysrole'] = 'Retirado o papel de sistema {$a}';
 $string['uploadpicture_baduserfield'] = 'O atributo do utilizador não é válido. Por favor, tente novamente.';

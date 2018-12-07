@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_social_activities', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_social_activities', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_social_activities
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Attività sociali';
+$string['privacy:metadata'] = 'Il blocco Attività sociali visualizza solamente dati provenienti da altre parti.';
 $string['social_activities:addinstance'] = 'Aggiungere blocco Attività sociali';

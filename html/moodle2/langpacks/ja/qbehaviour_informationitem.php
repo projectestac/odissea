@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_informationitem', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_informationitem', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_informationitem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '情報アイテムに対する動作';
+$string['privacy:metadata'] = '情報アイテム問題動作プラグインはどのような個人データも保存しません。';
 $string['seen'] = '閲覧';

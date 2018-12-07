@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'Sie müssen eine Bewertung für dieses Kriterium v
 $string['pluginname'] = 'Beurteilen mit Kommentaren und Punkten';
 $string['poor'] = 'Schlecht';
 $string['present'] = 'Anwesend';
+$string['privacy:metadata'] = 'Das Plugin zur aufsummierten Bewertung speichert keine persönlichen Daten. Die aktuellen Daten, wer wem zugewiesen wird, um Lösungen zu bewerten, werden in der Aktivität \'gegenseitige Beurteilung\' gespeichert und an die exportierten Aufgaben angehängt.';
 $string['scalename0'] = 'Ja/Nein (2 Optionen)';
 $string['scalename1'] = 'Anwesend/Abwesend (2 Optionen)';
 $string['scalename2'] = 'Richtig/Falsch (2 Optionen)';

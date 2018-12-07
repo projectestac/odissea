@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_questioninstances', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   report_questioninstances
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['getreport'] = 'Lortu txostena';
 $string['hiddenquestions'] = 'Ezkutuan';
 $string['intro'] = 'Txosten honek mota bereziko galderak dituzten sistemako testuinguru guztiak zerrendatzen ditu';
 $string['pluginname'] = 'Galdera-instantziak';
+$string['privacy:metadata'] = 'Galdera-instantziak pluginak ez du datu pertsonalik biltzen.';
 $string['questioninstances:view'] = 'Galdera-instantzien txostena ikusi';
 $string['reportforallqtypes'] = 'Galdera-mota guztietarako txostena';
 $string['reportformissingqtypes'] = 'Galdera-mota ezezagunetarako txostena';

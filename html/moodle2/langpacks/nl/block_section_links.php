@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_section_links', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_section_links
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['numsections1_help'] = 'Als het aantal secties in de cursus dit aantal b
 $string['numsections2'] = 'Alternatief aantal secties';
 $string['numsections2_help'] = 'Als het aantal secties in de cursus dit aantal bereikt, dan wordt de toenemen-met-waarde gebruikt.';
 $string['pluginname'] = 'Sectie hyperlinks';
+$string['privacy:metadata'] = 'Het koppelblok Secties toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['section_links:addinstance'] = 'Voeg een nieuw sectielinksblok toe';
 $string['topics'] = 'Onderwerpen';
 $string['weeks'] = 'Weken';

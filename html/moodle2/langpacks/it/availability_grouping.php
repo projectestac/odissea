@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_grouping', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_grouping
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['description'] = 'Criterio di accesso basato sui raggruppamenti.';
 $string['error_selectgrouping'] = 'Devi selezionare un raggruppamento.';
 $string['missing'] = '(Raggruppamento mancante)';
 $string['pluginname'] = 'Criterio basato sul raggruppamento';
+$string['privacy:metadata'] = 'l plugin "criterio di accesso basato sul raggruppamento" non memorizza dati personali.';
 $string['requires_grouping'] = 'Appartenere ad un gruppo presente in <strong>{$a}</strong>';
 $string['requires_notgrouping'] = 'Non appartenere ad un gruppo presente in <strong>{$a}</strong>';
 $string['title'] = 'Raggruppamento';

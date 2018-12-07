@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_collapse', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_collapse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Toon/verberg geavanceerd-knoppen';
+$string['privacy:metadata'] = 'De plugin atto_collapse slaat geen persoonlijke gegevens op.';
 $string['settings'] = 'Werkbalkinstellingen inklappen';
 $string['showfewer'] = 'Toon minder knoppen';
 $string['showgroups'] = 'Toon de eerste (n) groepen wanneer ingeklapt.';

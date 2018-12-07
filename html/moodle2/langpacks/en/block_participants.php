@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_participants', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_participants', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_participants
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Add a new people block';
 $string['pluginname'] = 'People';
+$string['privacy:metadata'] = 'The People block only shows data stored in other locations.';

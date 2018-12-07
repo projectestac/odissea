@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_outline', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,7 +30,7 @@ $string['eventoutlinereportviewed'] = 'S\'ha mostrat l\'informe esquemàtic';
 $string['neverseen'] = 'Mai vist';
 $string['nologreaderenabled'] = 'No hi ha habilitat cap lector de registres';
 $string['numviews'] = '{$a->numviews} de {$a->distinctusers} usuaris';
-$string['outline:view'] = 'Veure informe d\'activitat';
+$string['outline:view'] = 'Visualitza l\'informe d\'activitat';
 $string['page-report-outline-index'] = 'Informe esquemàtic del curs';
 $string['page-report-outline-user'] = 'Informe esquemàtic de l\'usuari en el curs';
 $string['page-report-outline-x'] = 'Qualsevol informe esquemàtic';

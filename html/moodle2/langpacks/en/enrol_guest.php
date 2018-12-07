@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['passwordinvalidhint'] = 'That access password was incorrect, please try
 (Here\'s a hint - it starts with \'{$a}\')';
 $string['pluginname'] = 'Guest access';
 $string['pluginname_desc'] = 'Guest access plugin is only granting temporary access to courses, it is not actually enrolling users.';
+$string['privacy:metadata'] = 'The Guest access enrolment plugin does not store any personal data.';
 $string['requirepassword'] = 'Require guest access password';
 $string['requirepassword_desc'] = 'Require access password in new courses and prevent removing of access password from existing courses.';
 $string['showhint'] = 'Show hint';

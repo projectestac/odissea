@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multichoice', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'One or multiple answers?';
+$string['answerhowmany_desc'] = 'Whether the default should be one response (i.e. radio buttons) or multiple responses (i.e. checkboxes).';
 $string['answernumbering'] = 'Number the choices?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
+$string['answernumbering_desc'] = 'The default numbering style.';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'No numbering';
@@ -64,9 +66,11 @@ $string['pluginnameediting'] = 'Editing a Multiple choice question';
 $string['pluginname_help'] = 'In response to a question (that may include a image) the respondent chooses from multiple answers. There are two types of multiple choice questions - one answer and multiple answer.';
 $string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnamesummary'] = 'Allows the selection of a single or multiple responses from a pre-defined list.';
+$string['privacy:metadata'] = 'The Multiple choice question type plugin does not store any personal data.';
 $string['selectmulti'] = 'Select one or more:';
 $string['selectone'] = 'Select one:';
 $string['shuffleanswers'] = 'Shuffle the choices?';
+$string['shuffleanswers_desc'] = 'Whether options should be randomly shuffled for each attempt by default.';
 $string['shuffleanswers_help'] = 'If enabled, the order of the answers is randomly shuffled for each attempt, provided that "Shuffle within questions" in the activity settings is also enabled.';
 $string['singleanswer'] = 'Choose one answer.';
 $string['toomanyselected'] = 'You have selected too many options.';

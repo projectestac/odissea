@@ -21,9 +21,9 @@ Feature: Rate scale questions can be used to uniquely rank options
       | activity | name | description | course | idnumber |
       | questionnaire | Test questionnaire | Test questionnaire description | C1 | questionnaire0 |
     And I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test questionnaire"
-    And I navigate to "Questions" node in "Questionnaire administration"
+    And I navigate to "Questions" in current page administration
     And I add a "Rate (scale 1..5)" question and I fill the form with:
       | Question Name | Q1 |
       | Yes | y |
@@ -37,12 +37,12 @@ Feature: Rate scale questions can be used to uniquely rank options
     And I log out
 
     And I log in as "student1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test questionnaire"
-    And I navigate to "Answer the questions..." node in "Questionnaire administration"
+    And I navigate to "Answer the questions..." in current page administration
     Then I should see "Test questionnaire"
     And I should see "What are your top three movies?"
-    And I click on "Choice 1 for row 1" "radio"
-    And I click on "Choice 2 for row 3" "radio"
-    And I click on "Choice 3 for row 2" "radio"
+    And I click on "Choice 1 for row Star Wars" "radio"
+    And I click on "Choice 2 for row Airplane" "radio"
+    And I click on "Choice 3 for row Casablanca" "radio"
     And I press "Submit questionnaire"

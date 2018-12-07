@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_manualgraded', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_manualgraded', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_manualgraded
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Manually graded';
+$string['privacy:metadata'] = 'The Manually graded question behaviour plugin does not store any personal data.';

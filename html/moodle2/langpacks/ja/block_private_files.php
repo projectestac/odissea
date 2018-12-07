@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_private_files', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_private_files
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'プライベートファイル';
+$string['privacy:metadata'] = 'プライベートファイルブロックはユーザのプライベートファイルの表示およびリンクのみ提供します。';
 $string['privatefiles'] = 'プライベートファイル';
 $string['private_files:addinstance'] = '新しいプライベートファイルブロックを追加する';
 $string['private_files:myaddinstance'] = '新しいプライベートファイルブロックをダッシュボードに追加する';

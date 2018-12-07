@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_section_links', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_section_links
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['numsections1_help'] = 'Se il numero di sezioni presenti nel corso raggi
 $string['numsections2'] = 'Numero di sezioni alternativo';
 $string['numsections2_help'] = 'Se il numero di sezioni presenti nel corso raggiunge il valore impostato, sarà usato il valore impostato per "Aumento alternativo di"';
 $string['pluginname'] = 'Collegamenti sezione';
+$string['privacy:metadata'] = 'Il blocco Collegamenti sezione visualizza solamente dati provenienti da altre parti.';
 $string['section_links:addinstance'] = 'Aggiungere blocco Collegamenti sezione';
 $string['topics'] = 'Argomenti';
 $string['weeks'] = 'Settimane';

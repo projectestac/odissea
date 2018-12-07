@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['pluginnameediting'] = 'A editar pergunta numérica';
 $string['pluginname_help'] = 'Da perspetiva do aluno a pergunta numérica é idêntica a uma pergunta de resposta curta, no entanto as numéricas permitem definir uma margem de erro. Isto permite que uma opção de resposta enquadre um conjunto de respostas possíveis. Por exemplo, se a resposta for 10 com um erro aceite de 2, os números entre 8 e 12 serão aceites como corretos.';
 $string['pluginname_link'] = 'pergunta/tipo/numérica';
 $string['pluginnamesummary'] = 'Aceita uma resposta numérica, eventualmente com unidades, a qual é avaliada comparando com várias respostas modelo, com eventuais margens de erro.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Numérica não armazena dados pessoais.';
 $string['relative'] = 'Relativa';
 $string['rightexample'] = 'Direita (exemplo: 1.00cm)';
 $string['selectunit'] = 'Selecione uma unidade';

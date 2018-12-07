@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_self', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,6 +91,7 @@ $string['passwordinvalid'] = '登録キーが正しくありません。再度�
 $string['passwordinvalidhint'] = '登録キーが正しくありません。再度入力してください。<br /> (ヒント - 「 {$a} 」で始まる言葉です)';
 $string['pluginname'] = '自己登録';
 $string['pluginname_desc'] = '自己登録プラグインにより、ユーザは自分が参加したいコースを選択することができます。登録キーによりコースを保護することができます。内部的には同一コースで有効にする必要のある手動登録プラグイン経由で登録されます。';
+$string['privacy:metadata'] = '自己登録プラグインはどのような個人データも保存しません。';
 $string['requirepassword'] = '登録キーを要求する';
 $string['requirepassword_desc'] = '新しいコースに登録キーを要求します。また、既存のコースからの登録キーの削除を防ぎます。';
 $string['role'] = 'デフォルトに割り当てるロール';

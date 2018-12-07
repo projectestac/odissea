@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,10 +66,10 @@ $string['hidemessagewindow'] = 'Verberg bericht venster';
 $string['hidenotificationwindow'] = 'Verberg kennisgeving venster';
 $string['keywords'] = 'Sleutelwoorden';
 $string['loggedin'] = 'Online';
-$string['loggedindescription'] = 'Wanneer je aangemeld bent in Moodle';
+$string['loggedindescription'] = 'Wanneer ik aangemeld ben in Moodle';
 $string['loggedin_help'] = 'Configureren hoe ik de meldingen zou willen ontvangen wanneer ik aangemeld bent bij Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoffdescription'] = 'Wanneer je niet aangemeld bent in Moodle';
+$string['loggedoffdescription'] = 'Wanneer ik niet aangemeld ben in Moodle';
 $string['loggedoff_help'] = 'Configureren hoe ik de meldingen zou willen ontvangen wanneer ik niet aangemeld bent bij Moodle';
 $string['managemessageoutputs'] = 'Beheer berichtenoutput';
 $string['message'] = 'Bericht';
@@ -123,6 +123,10 @@ $string['seeall'] = 'Bekijk alles';
 $string['selectmessagestodelete'] = 'Selecteer te verwijderen berichten';
 $string['selectnotificationtoview'] = 'Selecteer uit de lijst met meldingen aan de zijkant om meer details te bekijken';
 $string['send'] = 'Verstuur';
+$string['sendbulkmessage'] = 'Verstuur bericht naar {$a} mensen';
+$string['sendbulkmessagesent'] = 'Bericht verstuurd naar {$a} mensen';
+$string['sendbulkmessagesentsingle'] = 'Bericht verstuurd naar 1 persoon';
+$string['sendbulkmessagesingle'] = 'Verstuur bericht naar 1 persoon';
 $string['sendingvia'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen';
 $string['sendingviawhen'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen wanneer {$a->state}';
 $string['sendmessage'] = 'Stuur bericht';

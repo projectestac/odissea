@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_log', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,7 @@ $string['page-report-log-index'] = 'Registos de atividade na disciplina';
 $string['page-report-log-user'] = 'Registos da atividade do utilizador na disciplina';
 $string['page-report-log-x'] = 'Qualquer registo de atividade';
 $string['pluginname'] = 'Registos de atividade';
+$string['privacy:metadata'] = 'O módulo Registos de atividade não armazena dados pessoais.';
 $string['restore'] = 'Restaurar';
 $string['selectlogreader'] = 'Selecione o tipo de registo';
 $string['web'] = 'Web';

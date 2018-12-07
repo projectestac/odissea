@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_timelimit', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_timelimit
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = 'Der Test hat eine Zeitbegrenzung von {$a}. Die Zeit wird ab dem Start des Versuchs heruntergezählt. Der Test muss vor dem Ende der Zeitbegrenzung abgeschlossen sein. Möchten Sie den Test wirklich jetzt beginnen?';
 $string['confirmstartheader'] = 'Zeitlimitierter Test';
 $string['pluginname'] = 'Zeitbegrenzung';
+$string['privacy:metadata'] = 'Das Plugin für die Zeitbegrenzung bei Testversuchen speichert keine persönlichen Daten';
 $string['quiztimelimit'] = 'Zeitbegrenzung: {$a}';

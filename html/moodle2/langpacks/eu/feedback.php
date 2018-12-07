@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,13 +35,14 @@ $string['anonymous'] = 'Anonimoa';
 $string['anonymous_edit'] = 'Gorde erabiltzaile-izenak';
 $string['anonymous_entries'] = 'Sarrera anonimoak ({$a})';
 $string['anonymous_user'] = 'Erabiltzaile ezezaguna';
+$string['answerquestions'] = 'Erantzun galderari';
 $string['append_new_items'] = 'Gehitu elementu berriak';
 $string['autonumbering'] = 'Zenbatu galdera bakoitza automatikoki';
 $string['autonumbering_help'] = 'Gaitu edo desgaitu galdera bakoitzerako zenbaketa automatikoa';
 $string['average'] = 'Batez bestekoa';
 $string['bold'] = 'Lodia';
-$string['calendarend'] = 'Inkesta ondoko datan itxiko da: {$a}';
-$string['calendarstart'] = 'Inkesta ondoko datan zabalduko da: {$a}';
+$string['calendarend'] = '{$a}-(r)en itxiera-data:';
+$string['calendarstart'] = '{$a}-(r)en hasiera-data';
 $string['cancel_moving'] = 'Mugitzeari utzi';
 $string['cannotaccess'] = 'Inkestarako sarbidea ikastarotik bakarrik izan ahal duzu';
 $string['cannotmapfeedback'] = 'Datu-basearen arazoa, ezin da esleitu feedback-ik ikastarorako';
@@ -50,7 +51,7 @@ $string['cannotunmap'] = 'Datu-basearen arazoa, ezin da esleitu feedback-ik';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha ez da ezarri';
 $string['check'] = 'Aukera anitza - erantzun anitzak';
-$string['checkbox'] = 'Aukera anitza - erantzun anitzak baimenduta (egiaztatze-karratutxoak)';
+$string['checkbox'] = 'Aukera anitza - erantzun anitzak baimenduta (aukera anitzeko laukitxoak)';
 $string['check_values'] = 'Erantzun posibleak';
 $string['choosefile'] = 'Aukeratu fitxategi bat';
 $string['chosen_feedback_response'] = 'Aukeratutako inkestaren erantzunak';
@@ -65,7 +66,7 @@ $string['confirmdeleteentry'] = 'Ziur al zaude sarrera hau ezabatu nahi duzula?'
 $string['confirmdeleteitem'] = 'Ziur al zaude elementu hau ezabatu nahi duzula?';
 $string['confirmdeletetemplate'] = 'Ziur al zaude txantiloi hau ezabatu nahi duzula?';
 $string['confirmusetemplate'] = 'Ziur al zaude txantiloi hau erabili nahi duzula?';
-$string['continue_the_form'] = 'Jarraitu formularioarekin';
+$string['continue_the_form'] = 'Jarraitu galderei erantzuten...';
 $string['count_of_nums'] = 'Zenbaki-kontagailua';
 $string['courseid'] = 'ikastaroarenIDa';
 $string['creating_templates'] = 'Gorde galdera hauek txantiloi berri gisa';
@@ -144,6 +145,10 @@ $string['horizontal'] = 'horizontala';
 $string['importfromthisfile'] = 'Inportatu fitxategi honetatik';
 $string['import_questions'] = 'Inportatu galderak';
 $string['import_successfully'] = 'Ondo inportatu da';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa inkestetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Inkesta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala inkestetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Inkesta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['info'] = 'Informazioa';
 $string['infotype'] = 'Informazioa-mota';
 $string['insufficient_responses'] = 'Ez dago erantzun nahikorik';
@@ -213,6 +218,7 @@ $string['of'] = 'zenbatetik';
 $string['oldvaluespreserved'] = 'Galdera eta horiekin lotutako balore zahar guztiak mantendu egingo dira.';
 $string['oldvalueswillbedeleted'] = 'Oraingo galderak eta erantzun guztiak ezabatu egingo dira.';
 $string['only_one_captcha_allowed'] = 'Feedbackean captcha bat baino ez da baimentzen';
+$string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['overview'] = 'Ikuspegi orokorra';
 $string['page'] = 'Orria';
 $string['page_after_submit'] = 'Osaketa-mezua';
@@ -228,6 +234,14 @@ $string['position'] = 'Kokalekua';
 $string['preview'] = 'Aurrebista';
 $string['preview_help'] = 'Aurrebistan galderen ordena alda daiteke.';
 $string['previous_page'] = 'Aurreko orria';
+$string['privacy:metadata:completed'] = 'Feedback-erako bidalketen erregistroa';
+$string['privacy:metadata:completed:anonymousresponse'] = 'Bidalketa modu anonimoan erabiliko den edo ez.';
+$string['privacy:metadata:completed:timemodified'] = 'Bidalketa azkenengoz aldatu zeneko unea.';
+$string['privacy:metadata:completedtmp'] = 'Oraindik bukatu gabeko bidalketen erregistroa.';
+$string['privacy:metadata:completed:userid'] = 'Erabiltzailearen IDa';
+$string['privacy:metadata:value'] = 'Galderaren erantzunaren erregistroa.';
+$string['privacy:metadata:valuetmp'] = 'Oraindik bukatu gabeko galderaren erantzunaren erregistroa.';
+$string['privacy:metadata:value:value'] = 'Aukeratutako erantzuna.';
 $string['public'] = 'Publikoa';
 $string['question'] = 'Galdera';
 $string['questionandsubmission'] = 'Galdera eta bidalketen ezarpenak';

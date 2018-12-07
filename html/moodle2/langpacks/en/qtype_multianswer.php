@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multianswer', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,7 @@ $string['pluginnameediting'] = 'Editing an Embedded answers (Cloze) question';
 $string['pluginname_help'] = 'Embedded answers (Cloze) questions consist of a passage of text with questions such as multiple-choice and short answer embedded within it.';
 $string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnamesummary'] = 'Questions of this type are very flexible, but can only be created by entering text containing special codes that create embedded multiple-choice, short answers and numerical questions.';
+$string['privacy:metadata'] = 'The Embedded answers (Cloze) question type plugin does not store any personal data.';
 $string['qtypenotrecognized'] = 'questiontype {$a} not recognized';
 $string['questiondefinition'] = 'Question definition';
 $string['questiondeleted'] = 'Question deleted';

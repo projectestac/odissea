@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = 'Criar um novo recurso do tipo Página';
 $string['displayoptions'] = 'Opções de visualização disponíveis';
 $string['displayselect'] = 'Exibir em';
 $string['displayselectexplain'] = 'Escolha a forma de exibição.';
+$string['indicator:cognitivedepth'] = 'Compreensão da Página';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recursos Página.';
+$string['indicator:socialbreadth'] = 'Socialização da Página';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Página.';
 $string['legacyfiles'] = 'Migração de ficheiro de disciplina antiga';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
@@ -58,6 +62,7 @@ $string['popupwidth'] = 'Largura da janela de pop-up (em pixeis)';
 $string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela de pop-up';
 $string['printheading'] = 'Mostrar nome da página';
 $string['printheadingexplain'] = 'Exibir nome da página acima do conteúdo?';
-$string['printintro'] = 'Mostrar descrição da Página';
-$string['printintroexplain'] = 'Mostrar descrição da Página por cima do conteúdo?';
+$string['printintro'] = 'Mostrar descrição da página';
+$string['printintroexplain'] = 'Mostrar descrição da página por cima do conteúdo?';
+$string['privacy:metadata'] = 'O módulo mod_page não armazena qualquer dado pessoal.';
 $string['search:activity'] = 'Página';

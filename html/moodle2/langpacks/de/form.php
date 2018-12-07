@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = '{$a} Feld(er) zum Formular hinzufügen';
 $string['advancedelement'] = 'Erweitertes Element';
 $string['close'] = 'Schließen';
+$string['custom'] = 'Angepasst';
 $string['day'] = 'Tag';
+$string['default'] = 'Standard';
 $string['display'] = 'Anzeige';
 $string['err_alphanumeric'] = 'Sie dürfen hier nur Buchstaben oder Zahlen eingeben.';
 $string['err_email'] = 'Sie müssen hier eine gültige E-Mail-Adresse eingeben.';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'Sie dürfen hier keine Satzseichen verwenden.';
 $string['err_numeric'] = 'Sie müssen hier eine Zahl eingeben.';
 $string['err_rangelength'] = 'Sie müssen hier zwischen {$a->format[0]} und {$a->format[1]} Buchstaben eingeben.';
 $string['err_required'] = 'Sie müssen hier einen Wert eingeben.';
+$string['err_wrongfileextension'] = 'Die Dateien ({$a->wrongfiles}) konnten nicht hochgeladen werden. Es sind nur die Dateitypen {$a->whitelist} zugelassen.';
+$string['filesofthesetypes'] = 'Akzeptierte Dateitypen:';
+$string['filetypesany'] = 'Alle Dateitypen';
+$string['filetypesnotall'] = 'Es ist nicht erlaubt, hier \'Alle Dateitypen\' auszuwählen';
+$string['filetypesnotwhitelisted'] = 'Dieser Dateipyo ist hier nicht erlaubt: {$a}';
+$string['filetypesothers'] = 'Andere Dateien';
+$string['filetypesunknown'] = 'Unbekannte Dateitypen: {$a}';
 $string['general'] = 'Allgemeines';
 $string['hideadvanced'] = 'Optionale Felder verbergen';
 $string['hour'] = 'Stunde';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'Verschiedene Einstellungen';
 $string['modstandardels'] = 'Weitere Einstellungen';
 $string['month'] = 'Monat';
 $string['mustbeoverriden'] = 'Die Methode form_definition() in der Klasse {$a} muss geändert werden. Bitte korrigieren Sie den Code.';
+$string['newvaluefor'] = 'Neuer Wert für {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Es gibt keine Möglichkeit, einen Hilfebutton zum Formularelement {$a->name} (class {$a->classname}) hinzuzufügen.';
 $string['nonexistentformelements'] = 'Sie versuchen, Hilfebuttons zu nicht existierenden Formularelementen hinzuzufügen: {$a}';
 $string['noselection'] = 'Keine Auswahl';
@@ -60,6 +70,8 @@ $string['othersettings'] = 'Andere Einstellungen';
 $string['passwordunmaskedithint'] = 'Passwort ändern';
 $string['passwordunmaskinstructions'] = 'Drücken Sie Enter um die Änderungen zu speichern';
 $string['passwordunmaskrevealhint'] = 'Klartext';
+$string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Kürzlich vewendeter Darstellungsmodus im Dateiauswahlelement';
+$string['privacy:preference:filemanager_recentviewmode'] = 'Der von Ihnen bevorzugte Wert zur Darstellung der Dateiliste ist: {$a}';
 $string['requiredelement'] = 'Pflichtfeld';
 $string['revealpassword'] = 'Klartext';
 $string['security'] = 'Sicherheit';

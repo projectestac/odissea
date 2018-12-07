@@ -44,12 +44,16 @@ class redis extends handler {
     protected $host = '';
     /** @var int $port The port to connect to */
     protected $port = 6379;
+    /** @var string $auth redis password  */
+    protected $auth = '';
     /** @var int $database the Redis database to store sesions in */
     protected $database = 0;
     /** @var array $servers list of servers parsed from save_path */
     protected $prefix = '';
     /** @var int $acquiretimeout how long to wait for session lock in seconds */
     protected $acquiretimeout = 120;
+    /** @var int $serializer The serializer to use */
+    protected $serializer = \Redis::SERIALIZER_PHP;
     /**
      * @var int $lockexpire how long to wait in seconds before expiring the lock automatically
      * so that other requests may continue execution, ignored if PECL redis is below version 2.2.0.
@@ -79,6 +83,10 @@ class redis extends handler {
             $this->port = (int)$CFG->session_redis_port;
         }
 
+        if (isset($CFG->session_redis_auth)) {
+            $this->auth = $CFG->session_redis_auth;
+        }
+
         if (isset($CFG->session_redis_database)) {
             $this->database = (int)$CFG->session_redis_database;
         }
@@ -89,6 +97,10 @@ class redis extends handler {
 
         if (isset($CFG->session_redis_acquire_lock_timeout)) {
             $this->acquiretimeout = (int)$CFG->session_redis_acquire_lock_timeout;
+        }
+
+        if (!empty($CFG->session_redis_serializer_use_igbinary) && defined('\Redis::SERIALIZER_IGBINARY')) {
+            $this->serializer = \Redis::SERIALIZER_IGBINARY; // Set igbinary serializer if phpredis supports it.
         }
 
         // The following configures the session lifetime in redis to allow some
@@ -145,32 +157,61 @@ class redis extends handler {
             throw new exception('redissessionhandlerproblem', 'error');
         }
 
-        try {
-            // One second timeout was chosen as it is long for connection, but short enough for a user to be patient.
-            if (!$this->connection->connect($this->host, $this->port, 1)) {
-                throw new RedisException('Unable to connect to host.');
-            }
-            if (!$this->connection->setOption(\Redis::OPT_SERIALIZER, \Redis::SERIALIZER_PHP)) {
-                throw new RedisException('Unable to set Redis PHP Serializer option.');
+        // MDL-59866: Add retries for connections (up to 5 times) to make sure it goes through.
+        $counter = 1;
+        $maxnumberofretries = 5;
+
+        while ($counter <= $maxnumberofretries) {
+
+            try {
+
+                $delay = rand(100000, 500000);
+
+                // One second timeout was chosen as it is long for connection, but short enough for a user to be patient.
+                if (!$this->connection->connect($this->host, $this->port, 1, null, $delay)) {
+                    throw new RedisException('Unable to connect to host.');
+                }
+
+                if ($this->auth !== '') {
+                    if (!$this->connection->auth($this->auth)) {
+                        throw new RedisException('Unable to authenticate.');
+                    }
+                }
+
+                if (!$this->connection->setOption(\Redis::OPT_SERIALIZER, $this->serializer)) {
+                    throw new RedisException('Unable to set Redis PHP Serializer option.');
+                }
+
+                if ($this->prefix !== '') {
+                    // Use custom prefix on sessions.
+                    if (!$this->connection->setOption(\Redis::OPT_PREFIX, $this->prefix)) {
+                        throw new RedisException('Unable to set Redis Prefix option.');
+                    }
+                }
+                if ($this->database !== 0) {
+                    if (!$this->connection->select($this->database)) {
+                        throw new RedisException('Unable to select Redis database '.$this->database.'.');
+                    }
+                }
+                $this->connection->ping();
+                return true;
+            } catch (RedisException $e) {
+                $logstring = "Failed to connect (try {$counter} out of {$maxnumberofretries}) to redis ";
+                $logstring .= "at {$this->host}:{$this->port}, error returned was: {$e->getMessage()}";
+
+                // @codingStandardsIgnoreStart
+                error_log($logstring);
+                // @codingStandardsIgnoreEnd
             }
 
-            if ($this->prefix !== '') {
-                // Use custom prefix on sessions.
-                if (!$this->connection->setOption(\Redis::OPT_PREFIX, $this->prefix)) {
-                    throw new RedisException('Unable to set Redis Prefix option.');
-                }
-            }
-            if ($this->database !== 0) {
-                if (!$this->connection->select($this->database)) {
-                    throw new RedisException('Unable to select Redis database '.$this->database.'.');
-                }
-            }
-            $this->connection->ping();
-            return true;
-        } catch (RedisException $e) {
-            error_log('Failed to connect to redis at '.$this->host.':'.$this->port.', error returned was: '.$e->getMessage());
-            return false;
+            $counter++;
+
+            // Introduce a random sleep between 100ms and 500ms.
+            usleep(rand(100000, 500000));
         }
+
+        // We have exhausted our retries, time to give up.
+        return false;
     }
 
     /**
@@ -355,7 +396,7 @@ class redis extends handler {
         }
 
         try {
-            return $this->connection->exists($sid);
+            return !empty($this->connection->exists($sid));
         } catch (RedisException $e) {
             return false;
         }

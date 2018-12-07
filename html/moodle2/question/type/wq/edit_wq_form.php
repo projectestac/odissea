@@ -27,7 +27,7 @@ class qtype_wq_edit_form extends question_edit_form {
         // We don't call the parent constructor because we will use the form in
         // $base. So we don't have to build another one. Just reference some
         // public properties that may be used and call the definition_inner from
-        // this class to add WIRIS quizzes elements.
+        // this class to add Wiris Quizzes elements.
 
         $this->base = $base;
         $this->question = &$this->base->question;

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,4 +37,12 @@ $string['nopublishers'] = 'Keine externen Peers verfügbar';
 $string['noroamingusers'] = 'Die Nutzerfähigkeit \'{$a}\' ist im Systemkontext nötig, um in Remote-Kursen eingeschrieben sein, aber zur Zeit gibt niemanden mit dieser Fähigkeit. Klicken Sie auf die Taste "Weiter", um die erforderliche Fähigkeit an eine oder mehrere Rollen auf der Website zuzuweisen.';
 $string['otherenrolledusers'] = 'Weitere eingetragene Nutzer/innen';
 $string['pluginname'] = 'Service für externe Einschreibungen ';
+$string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Externer Einschreibedienst';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'Datum/Zeitpunkt, zu dem die Einschreibung geändert wurde';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Name des Einschreibeplugins des externen Dienstes, die für die Einschreibung in den Kurs genutzt wurde';
+$string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'ID des Externen MNet-Hosts';
+$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'ID des Kurses auf dem Externen Server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Name der Rolle auf dem Externen Server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Die Tabelle speichert Informationen über Einschreibungen der Nutzer durch Externe Server';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'ID des lokalen Nutzers auf diesem Server';
 $string['refetch'] = 'Status für externe Hosts zurücksetzen';

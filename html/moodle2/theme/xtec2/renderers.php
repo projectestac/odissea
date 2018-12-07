@@ -261,10 +261,10 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             $content .= '<a href="tel:'.$url.'" target="_blank"><i class="fa fa-phone" title="'.get_string('phone', 'theme_xtec2', $url).'"></i></a>';
         }
         if (get_config('theme_xtec2', 'nodes') && theme_xtec2_is_service_enabled('nodes')) {
-            $content .= '<a href="'.get_service_url('nodes').'" target="_blank" class="agora-social icon nodes"><img src="'.$OUTPUT->pix_url('nodes-32', 'theme').'" alt="" title="Nodes" /></a>';
+            $content .= '<a href="'.get_service_url('nodes').'" target="_blank" class="agora-social icon nodes"><img src="'.$OUTPUT->image_url('nodes-32', 'theme').'" alt="" title="Nodes" /></a>';
         }
         if (get_config('theme_xtec2', 'intranet') && theme_xtec2_is_service_enabled('intranet')) {
-            $content .= '<a href="'.get_service_url('intranet').'" target="_blank" class="agora-social icon intranet"><img src="'.$OUTPUT->pix_url('intranet-32', 'theme').'" alt="" title="Intranet" /></a>';
+            $content .= '<a href="'.get_service_url('intranet').'" target="_blank" class="agora-social icon intranet"><img src="'.$OUTPUT->image_url('intranet-32', 'theme').'" alt="" title="Intranet" /></a>';
         }
         if ($url = get_config('theme_xtec2', 'whatsapp')) {
             $content .= '<a href="tel:'.$url.'" target="_blank"><i class="fa fa-whatsapp" title="'.get_string('whatsapp_tel', 'theme_xtec2', $url).'"></i></a>';

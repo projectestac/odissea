@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_clean', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['invertdesc'] = 'Alterne le texte et le fond de la barre de navigation e
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Le logo n\'est affiché que dans l\'entête de la page d\'accueil et de la page de connexion.<br />Si la hauteur de votre logo dépasse 75px, ajoutez la règle CSS div.logo {height: 100px;} dans la zone CSS personnalisée ci-dessous, en adaptant la hauteur en pixels à la taille de votre logo. Si un logo n\'est pas défini ici, le logo défini dans Présentation > Logos sera utilisé.';
 $string['pluginname'] = 'Clean';
+$string['privacy:metadata'] = 'Le thème Clean n\'enregistre aucune donnée personnelle.';
 $string['region-side-post'] = 'Droite';
 $string['region-side-pre'] = 'Gauche';
 $string['sitelogo'] = 'Logo de la plateforme';

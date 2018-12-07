@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_s3', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_s3
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['configplugin'] = 'Amazon S3の設定';
 $string['endpoint'] = 'Amazon S3エンドポイント';
 $string['needaccesskey'] = 'アクセスキーを入力してください。';
 $string['pluginname'] = 'Amazon S3';
+$string['privacy:metadata'] = 'Amazon S3リポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['s3:view'] = 'Amazon S3リポジトリを表示する';
 $string['secret_key'] = '秘密鍵';

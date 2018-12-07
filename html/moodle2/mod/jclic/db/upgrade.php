@@ -186,6 +186,24 @@ function xmldb_jclic_upgrade($oldversion) {
         upgrade_mod_savepoint(true, 2016061300, 'jclic');
     }
 
+    if ($oldversion < 2018112000) {
+
+        // Modify default values for 'width' and 'height' on table 'jclic'
+        $table = new xmldb_table('jclic');
+
+        // Change default width to 800
+        $field = new xmldb_field('width', XMLDB_TYPE_INTEGER, '5');
+        $field->setDefault('800');
+        $dbman->change_field_default($table, $field);
+
+        // Change default height to 600
+        $field = new xmldb_field('height', XMLDB_TYPE_INTEGER, '5');
+        $field->setDefault('600');
+        $dbman->change_field_default($table, $field);
+
+        upgrade_mod_savepoint(true, 2018112000, 'jclic');
+    }
+
     // Final return of upgrade result (true, all went good) to Moodle.
     return true;
 }

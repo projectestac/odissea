@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hvp', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -99,6 +99,10 @@ $string['enablehublabel'] = 'Usar H5P Hub';
 $string['enablejavascript'] = 'Por favor active JavaScript.';
 $string['enablesavecontentstate'] = 'Guardar estado de contenido';
 $string['enablesavecontentstate_help'] = 'Guarde automáticamente el estado actual del contenido interactivo para cada usuario. Esto significa que el usuario puede continuar donde lo dejó.';
+$string['hide'] = 'Ocultar';
+$string['showadvanced'] = 'Mostrar avanzado';
+$string['showless'] = 'Mostrar menos';
+$string['showmore'] = 'Mostrar más';
 $string['user'] = 'Usuario';
 $string['welcomegettingstarted'] = 'Para empezar con H5P y Moodle échale un vistazo a nuestro <a {$a->moodle_tutorial}>tutorial</a> y revisa el <a {$a->example_content}>contenido de ejemplo</a> en H5P.org para que te sirva de guía.<br>¡Para su comodidad ya se han instalado los contenidos más populares!';
 $string['welcomeheader'] = '¡Bienvenido al mundo de H5P!';

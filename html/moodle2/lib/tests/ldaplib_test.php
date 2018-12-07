@@ -285,7 +285,7 @@ class core_ldaplib_testcase extends advanced_testcase {
             // Test object 1.
             array(
                 // Add/remove this object to LDAP directory? There are existing standard LDAP
-                // objects that we might want to test, but that we should'nt add/remove ourselves.
+                // objects that we might want to test, but that we shouldn't add/remove ourselves.
                 'addremove' => true,
                 // Relative (to test container) or absolute distinguished name (DN).
                 'relativedn' => true,

@@ -59,33 +59,25 @@ M.editor_tinymce.init_editor = function(Y, editorid, options) {
         }
     }
 
-    // We have to override the editor setup to work around a bug in iOS browsers - MDL-36803.
-    if (Y.UA.ios) {
-        // Retain any setup which is already defined.
-        options.originalSetupFunction = options.setup || function(){};
-        options.setup = function(editor) {
-            options.originalSetupFunction();
-            editor.onPostRender.add(function(ed) {
-                // Whenever there is a keydown event, ensure that the contentWindow still have focus.
-                ed.contentDocument.addEventListener('keydown', function() {
-                    ed.contentWindow.focus();
-                });
+    // Retain any setup which is already defined.
+    options.originalSetupFunction = options.setup || function(){};
+    options.setup = function(editor) {
+        options.originalSetupFunction();
+        editor.onChange.add(function(ed) {
+            ed.save();
+        });
+    };
 
-                // Whenever a touch event is registered against the content document,
-                // reapply focus. This works around an issue with the location caret not
-                // being focusable without use of the Loupe.
-                ed.contentDocument.addEventListener('touchend', function() {
-                    ed.contentWindow.focus();
-                });
-            });
-        };
-    }
     tinyMCE.init(options);
 
     var item = document.getElementById(editorid+'_filemanager');
     if (item) {
         item.parentNode.removeChild(item);
     }
+
+    document.getElementById(editorid).addEventListener('form:editorUpdated', function() {
+        M.editor_tinymce.updateEditorState(editorid);
+    });
 };
 
 M.editor_tinymce.init_callback = function() {
@@ -98,6 +90,25 @@ M.editor_tinymce.init_filepicker = function(Y, editorid, options) {
 
 M.editor_tinymce.toggle = function(id) {
     tinyMCE.execCommand('mceToggleEditor', false, id);
+};
+
+/**
+ * Update the state of the editor.
+ * @param {String} id
+ */
+M.editor_tinymce.updateEditorState = function(id) {
+    var instance = window.tinyMCE.get(id),
+        content = instance.getBody(),
+        controls = instance.controlManager.controls,
+        disabled = instance.getElement().readOnly;
+    // Enable/Disable all plugins.
+    for (var key in controls) {
+        if (controls.hasOwnProperty(key)) {
+            controls[key].setDisabled(disabled);
+        }
+    }
+    // Enable/Disable body content.
+    content.setAttribute('contenteditable', !disabled);
 };
 
 M.editor_tinymce.filepicker_callback = function(args) {

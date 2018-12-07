@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityisscheduledfordeletion'] = 'Jarduera-ezabaketa martxan da...';
+$string['agedigitalconsentmapinvalidage'] = '"{$a}" ez da balore baliagarria adinerako.';
+$string['agedigitalconsentmapinvalidcomma'] = '"{$a}"-(e)k koma banatzaile bat baino gehiago edo gutxiago dauka.';
+$string['agedigitalconsentmapinvalidcountry'] = '"{$a}" ez da herrialde-kode baliozkoa.';
+$string['agedigitalconsentmapinvaliddefault'] = 'Berezko (*) balorea falta da.';
+$string['agelocationverificationdisabled'] = 'Adina eta kokapenaren egiaztapena desgaituta dago.';
 $string['alreadyloggedin'] = 'Dagoeneko {$a} gisa identifikatuta zaude, beste erabiltzaile bat bezala identifikatzeko lehenik irten egin behar duzu.';
 $string['authnotexisting'] = 'Autorizazio-plugina ez da existitzen';
 $string['backupcontainexternal'] = 'Segurtasun-fitxategi honek lokalean konfiguratuta ez dauden kanpoko Moodle sarerako ostalariak ditu.';
@@ -181,6 +186,7 @@ $string['confirmationnotenabled'] = 'Erabiltzaileen baieztatzea ez dago gaituta 
 $string['confirmsesskeybad'] = 'Sentitzen dugu, baina ekintza hau egiteko zure saio-pasahitza ezin izan da baieztatu. Segurtasun-ezaugarri honek zure izenean, ustekabean edo fede txarrez, eginkizun garrantzitsuen egikaritzea saihesten du. Eginkizun hori egikaritu nahi duzula ziur izan, mesedez.';
 $string['couldnotassignrole'] = 'Zuri rol bat ezartzean zehaztu gabeko arazo larria gertatu da.';
 $string['couldnotupdatenoexistinguser'] = 'Ezin da eguneratu erabitlzailea - erabitlzailea ez dago';
+$string['couldnotverifyagedigitalconsent'] = 'Errorea gertatu da onespen-adin digitala egiaztatzean.<br />Mesedez, jarri harremanetan kudeatzailearekin.';
 $string['countriesphpempty'] = 'Errorea: {$a} hizkuntza-paketeko countries.php fitxategia hutsik edo galduta dago';
 $string['coursedoesnotbelongtocategory'] = 'Ikastaroa ez da kategoria honetakoa';
 $string['courseformatnotfound'] = '\'{$a}\' ikastaro-formatua ez da existitzen, edo ez da formatu ezaguna';
@@ -352,6 +358,7 @@ $string['invalidrole'] = 'Rol baliogabea';
 $string['invalidroleid'] = 'Rolaren ID baliogabea';
 $string['invalidscaleid'] = 'Eskalaren IDa ez da zuzena';
 $string['invalidsection'] = 'Ikastaro moduluaren erregistroak atal baliogabea dauka';
+$string['invalidsesskey'] = 'Ziuraski zure saioa iraungi da. Mesedez, sar zaitez berriz.';
 $string['invalidshortname'] = 'Ikastaroaren izen laburra ez da egokia';
 $string['invalidsourcefield'] = 'Zirriborro-fitxategiaren jatorrizko eremua ez da baliozkoa';
 $string['invalidstatedetected'] = 'Zerbait gaizki joan da: {$a}. Honek ez luke normalean gertatu behar.';
@@ -502,7 +509,7 @@ $string['sessionipnomatch2'] = '<p>Sentitzen dugu, baina sartu zarenetik zure IP
 <p>Jarraitu nahi baduzu mesedez sakatu F5 tekla orri hau freskatzeko.</p>';
 $string['sessionwaiterr'] = 'Saioaren blokeoaren zai egoteko denbora amaitu da.<br />Itxaron zure oraingo eskaera bukatu arte eta berriz saiatu zaitez.';
 $string['shortnametaken'] = 'Izan laburra dagoeneko beste ikastaro batean erabili da ({$a})';
-$string['sitepolicynotagreed'] = 'Ez duzu gunearen politika onartu: <a href="{$a}">Egin klik hemen gunearen politika irekitzeko.</a>';
+$string['sitepolicynotagreed'] = 'Ez duzu guneko politika onartu: <a href="{$a}">Egin klik hemen guneko politika irekitzeko.</a>';
 $string['socksnotsupported'] = 'SOCKS5 proxya ez da onartzen PHP4-n';
 $string['spellcheckernotconf'] = 'Zuzentzaile ortografikoa ez dago konfiguratuta';
 $string['sslonlyaccess'] = 'Segurtasun-arrazoiak direla-eta, https konexioak bakarrik daude baimenduta, sentitzen dugu.';
@@ -567,6 +574,7 @@ $string['usernotaddederror'] = 'Erabiltzailea ez da gehitu - errorea';
 $string['usernotaddedregistered'] = 'Erabiltzailea ez da gehitu - dagoeneko izena emanda dago';
 $string['usernotavailable'] = 'Erabiltzaile honen xehetasunak ezin dituzu ikusi';
 $string['usernotdeletedadmin'] = 'Erabiltzailea ez da ezabatu - ezin da kudeatzaileen konturik ezabatu';
+$string['usernotdeleteddeleted'] = 'Erabiltzaile hau ezabatua izan da dagoeneko.';
 $string['usernotdeletederror'] = 'Ez da erabiltzailea ezabatu - errorea.';
 $string['usernotdeletedmissing'] = 'Ez da erabiltzailea ezabatu - ez da erabiltzaile-izena aurkitu.';
 $string['usernotdeletedoff'] = 'Ez da erabiltzailea ezabatu - ezabatzea ez dago baimenduta';
@@ -581,6 +589,7 @@ $string['usernotupdatederror'] = 'Ez da erabiltzailea eguneratu - errorea.';
 $string['usernotupdatednotexists'] = 'Ez da erabiltzailea eguneratu - ez da existitzen.';
 $string['userquotalimit'] = 'Fitxategietarako gehienezko kuotara irsitsi zara.';
 $string['userselectortoomany'] = 'user_selector-ek aukeratutako erabiltzaile bat baino gehiago dauzka, nahiz eta multiselect false izan.';
+$string['verifyagedigitalconsentnotpossible'] = 'Sentitzen dugu, une honetan ez da posible onespen-adin digitala egiaztapena.';
 $string['wrongcall'] = 'Script hau gaizki deitu da';
 $string['wrongcontextid'] = 'Testuinguru ID-a ez da zuzena (ezin da aurkitu)';
 $string['wrongdestpath'] = 'Bide desegokia';

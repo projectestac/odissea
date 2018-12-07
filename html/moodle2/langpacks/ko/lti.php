@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,6 @@ $string['addnewapp'] = '외부 어플리케이션 활성화';
 $string['addserver'] = '새 신뢰 서버 추가';
 $string['addtype'] = '외부 도구 구성 추가';
 $string['allow'] = '허용';
-$string['allowinstructorcustom'] = '선생님들이 맞춤 파라메터를 추가하는 것을 허용';
 $string['allowsetting'] = '도구가 무들에 8K의 설정을 저장하는 것을 허용';
 $string['always'] = '항상';
 $string['automatic'] = '기동 URL 기반 자동으로';

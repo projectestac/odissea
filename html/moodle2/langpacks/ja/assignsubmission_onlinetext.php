@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,12 @@ $string['onlinetext'] = 'オンラインテキスト';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'オンラインテキスト提出を許可する';
 $string['pluginname'] = 'オンラインテキスト提出';
+$string['privacy:metadata:assignmentid'] = '課題IDです。';
+$string['privacy:metadata:filepurpose'] = 'テキスト提出に埋め込まれるファイルです。';
+$string['privacy:metadata:submissionpurpose'] = 'ユーザの提出にリンクされる提出IDです。';
+$string['privacy:metadata:tablepurpose'] = 'それぞれの受験のテキスト提出が保存されます。';
+$string['privacy:metadata:textpurpose'] = 'この課題の受験に提出された実テキストです。';
+$string['privacy:path'] = '提出テキストです。';
 $string['wordlimit'] = '語数制限';
 $string['wordlimitexceeded'] = 'この課題の語数制限は {$a->limit} 文字です。あなたは {$a->count} 語を提出しようとしています。あなたの提出をレビューした後、再度提出してください。';
 $string['wordlimit_help'] = 'オンラインテキスト提出が有効にされた場合、学生が提出することのできる最大語数です。';

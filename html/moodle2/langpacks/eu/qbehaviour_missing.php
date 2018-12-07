@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_missing', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_missing', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_missing
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Jokaera falta da';
+$string['privacy:metadata'] = 'Jokaera falta da galdera-jokaera pluginak ez du datu pertsonalik biltzen.';
 $string['questionusedunknownmodel'] = 'Galdera honi une honetan eskuragarri ez dagoen jokaera batekin erantzun zaio. Galdera ahal bezain ondo erakusten ari da baina agian zatiren bat falta da edo gaizki egon daiteke.';

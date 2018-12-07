@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_participants', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_participants', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_participants
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Gehitu partaideak bloke berria';
 $string['pluginname'] = 'Partaideak';
+$string['privacy:metadata'] = 'Partaideak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';

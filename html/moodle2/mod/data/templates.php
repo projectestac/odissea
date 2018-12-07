@@ -103,6 +103,7 @@ $PAGE->requires->js('/mod/data/data.js');
 $PAGE->set_title($data->name);
 $PAGE->set_heading($course->fullname);
 $PAGE->set_pagelayout('admin');
+$PAGE->force_settings_menu(true);
 echo $OUTPUT->header();
 echo $OUTPUT->heading(format_string($data->name), 2);
 echo $OUTPUT->box(format_module_intro('data', $data, $cm->id), 'generalbox', 'intro');
@@ -259,6 +260,11 @@ if ($mode != 'csstemplate' and $mode != 'jstemplate') {
             echo '<option value="[['.$field->name.'#id]]" title="'.$field->description.' id">'.$field->name.' id - [['.$field->name.'#id]]</option>';
         }
         echo '</optgroup>';
+        if (core_tag_tag::is_enabled('mod_data', 'data_records')) {
+            echo '<optgroup label="'.get_string('other', 'data').'">';
+            echo '<option value="##tags##">' . get_string('tags') . ' - ##tags##</option>';
+            echo '</optgroup>';
+        }
     }
 
     // Print special tags. fix for MDL-7031
@@ -284,6 +290,11 @@ if ($mode != 'csstemplate' and $mode != 'jstemplate') {
         echo '<option value="##user##">' .get_string('user'). ' - ##user##</option>';
         echo '<option value="##userpicture##">' . get_string('userpic') . ' - ##userpicture##</option>';
         echo '<option value="##approvalstatus##">' .get_string('approvalstatus', 'data'). ' - ##approvalstatus##</option>';
+
+        if (core_tag_tag::is_enabled('mod_data', 'data_records')) {
+            echo '<option value="##tags##">' . get_string('tags') . ' - ##tags##</option>';
+        }
+
         if ($mode != 'singletemplate') {
             // more points to single template - not useable there
             echo '<option value="##comments##">' .get_string('comments', 'data'). ' - ##comments##</option>';

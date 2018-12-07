@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactive', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_interactive', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_interactive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interactive with multiple tries';
+$string['privacy:metadata'] = 'The Interactive with multiple tries question behaviour plugin does not store any personal data.';
 $string['triesremaining'] = 'Tries remaining: {$a}';
 $string['tryagain'] = 'Try again';

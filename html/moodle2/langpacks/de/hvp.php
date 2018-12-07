@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hvp', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,9 +115,9 @@ $string['hubisdisabled'] = 'Der Hub ist deaktiviert. Sie können ihn in den H5P-
 $string['hubisdisableduploadlibraries'] = 'Der H5P Hub wurde deaktiviert, bis dieses Problem behoben werden kann. Sie können immer noch Bibliotheken über die Seite "H5P-Bibliotheken" hochladen.';
 $string['hubsettingsheader'] = 'Inhaltstypen';
 $string['hvp:addinstance'] = 'Neue H5P-Aktivität hinzufügen';
-$string['hvp:getcachedassets'] = 'H5P-Inhalte aus dem Cache holen';
-$string['hvp:getembedcode'] = 'H5P-Code zum Einbetten anzeigen (wenn Anzeige über Berechtigungen geregelt wird)';
-$string['hvp:getexport'] = 'H5P-Inhalt im Kurs als Datei exportieren';
+$string['hvp:getcachedassets'] = 'Notwendig zum Anzeigen von H5P-Aktivitäten';
+$string['hvp:getembedcode'] = 'H5P-Code zum Einbetten anzeigen, wenn die Berechtigung freigegeben ist';
+$string['hvp:getexport'] = 'H5P-Datei herunterladen, wenn die Berechtigung freigegeben ist';
 $string['hvp:installrecommendedh5plibraries'] = 'Empfohlene H5P-Bibliotheken installieren';
 $string['hvp:manage'] = 'Vorhandene H5P-Aktivititäten bearbeiten.';
 $string['hvp:restrictlibraries'] = 'H5P-Bibliothek beschränken';
@@ -126,9 +126,9 @@ $string['hvp:saveresults'] = 'H5P-Ergebnis speichern';
 $string['hvp:updatelibraries'] = 'H5P-Bibliothek aktualisieren';
 $string['hvp:userestrictedlibraries'] = 'Beschränkte H5P-Bibliotheken verwenden';
 $string['hvp:view'] = 'H5P-Aktivitäten anzeigen und verwenden';
-$string['hvp:viewallresults'] = 'Ergebnis für alle Benutzer im Kurs anzeigen';
-$string['hvp:viewresults'] = 'Ergebnis für eigene Fragen im Kurs anzeigen';
-$string['installdenied'] = 'Sie haben keine Berechtigung, Inhaltstypen zu installieren. Wenden Sie sich an den Administrator.';
+$string['hvp:viewallresults'] = 'Alle Ergebnisse für abgeschlossene H5P-Aktivitäten anzeigen';
+$string['hvp:viewresults'] = 'Eigene Ergebnisse für abgeschlossene H5P-Aktivitäten anzeigen';
+$string['installdenied'] = 'Sie haben keine Berechtigung, H5P-Inhaltstypen zu installieren. Wenden Sie sich an den Administrator.';
 $string['installedlibraries'] = 'Installierte Bibliotheken';
 $string['intro'] = 'Beschreibung';
 $string['invalidaudioformat'] = 'Ungültiges Audioformate. Nur mp3 und wav sind erlaubt.';
@@ -206,9 +206,10 @@ Zusätzlich zu den Funktionen als Autorentool für Rich Content, ermöglicht H5P
 Nutzerinteraktionen und Punktzahlen werden mittels der xAPI verfolgt und sind über die Moodle-Bewertungen verfügbar.
 
 Sie fügen interaktive H5P-Inhalte hinzu, indem Sie Inhalte mit dem integrierten Authoring-Tool erstellen oder H5P-Dateien hochladen, die auf anderen H5P-aktivierten Websites gefunden wurden.';
-$string['modulenameplural'] = 'Interaktiver Inhalt';
+$string['modulenameplural'] = 'Interaktive Inhalte';
 $string['nextpage'] = 'Nächste Seite';
-$string['nocontent'] = 'Die content.json-Datei konnte nicht gefunden oder analysiert werden';
+$string['noanswersubmitted'] = 'Diese Person hat noch keine Antwort zur H5P-Aktivität gesendet.';
+$string['nocontent'] = 'Die Datei content.json konnte nicht gefunden oder gelesen werden';
 $string['nocontenttype'] = 'Es wurde kein Inhaltstyp festgelegt.';
 $string['nocopyright'] = 'Für diesen Inhalt sind keine Informationen zum Urheberrecht verfügbar.';
 $string['nodata'] = 'Es sind keine Daten vorhanden, die Ihren Kriterien entsprechen.';
@@ -246,12 +247,48 @@ $string['pluginadministration'] = 'H5P';
 $string['pluginname'] = 'H5P';
 $string['postmessagerequired'] = 'Eine Post-Nachricht ist erforderlich, um auf den angegebenen Endpunkt zuzugreifen';
 $string['previouspage'] = 'Vorherige Seite';
+$string['privacy:metadata:core_files'] = 'Die H5P-Aktivität speichert Dateien, die als Teil des H5P-Inhalts hochgeladen wurden.';
+$string['privacy:metadata:core_grades'] = 'Die H5P Aktivität speichert Bewertungen von Personen, die den H5P-Inhalt beantwortet haben.';
+$string['privacy:metadata:hvp_content_user_data'] = 'Der aktuelle Status eines Inhalts für eine Person. Dies wird verwendet, um Inhalt auf einen vorherigen Stand zurückzusetzen.';
+$string['privacy:metadata:hvp_content_user_data:data'] = 'Nutzerdaten, die gespeichert wurden.';
+$string['privacy:metadata:hvp_content_user_data:data_id'] = 'Datentyp-Identifikator.';
+$string['privacy:metadata:hvp_content_user_data:delete_on_content_change'] = 'Marker, der anzeigt, ob Daten gelöscht werden sollten, wenn sich der Inhalt ändert.';
+$string['privacy:metadata:hvp_content_user_data:hvp_id'] = 'Die ID des H5P-Inhalts, zu dem die Daten gehören.';
+$string['privacy:metadata:hvp_content_user_data:id'] = 'Die ID der Beziehung Inhalt <-> Nutzerdaten.';
+$string['privacy:metadata:hvp_content_user_data:preloaded'] = 'Marker, der anzeigt, ob Daten in den Inhalt vor-geladen werden sollten.';
+$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Unter-Inhalt von H5P, 0 wenn dies kein Unter-Inhalt ist.';
+$string['privacy:metadata:hvp_content_user_data:user_id'] = 'Die ID der Person, zu der die Daten gehören.';
+$string['privacy:metadata:hvp_events'] = 'Verfolgt protokollierte H5P-Ereignisse.';
+$string['privacy:metadata:hvp_events:content_id'] = 'Die Inhalts-ID, für die die Aktion ausgeführt wurde, 0, wenn neu oder kein Inhalt.';
+$string['privacy:metadata:hvp_events:content_title'] = 'Titel des Inhalts.';
+$string['privacy:metadata:hvp_events:created_at'] = 'Der Zeitpunkt, an dem das Ereignis erzeugt wurde.';
+$string['privacy:metadata:hvp_events:id'] = 'Die eindeutige ID des Ereignisses.';
+$string['privacy:metadata:hvp_events:library_name'] = 'Die Bibliothek, auf die sich das Ereignis ausgewirkt hat.';
+$string['privacy:metadata:hvp_events:library_version'] = 'Die Version der Bibliothek, auf die sich das Ereignis ausgewirkt hat.';
+$string['privacy:metadata:hvp_events:sub_type'] = 'Der Untertyp des Ereignisses oder die Aktion des Ereignisses.';
+$string['privacy:metadata:hvp_events:type'] = 'Der Ereignistyp.';
+$string['privacy:metadata:hvp_events:user_id'] = 'Die ID der Person, die die Aktion durchgeführt hat.';
+$string['privacy:metadata:hvp_xapi_results'] = 'Speichert xAPI-Ereignisse im H5P-Inhalt.';
+$string['privacy:metadata:hvp_xapi_results:additionals'] = 'Zusätzliche Information, die von der H5P-Aktivität gesendet werden kann.';
+$string['privacy:metadata:hvp_xapi_results:content_id'] = 'Die ID des Inhalts zu dem das Ereignis ausgeführt wurde.';
+$string['privacy:metadata:hvp_xapi_results:correct_responses_pattern'] = 'Das richtige Antwortmuster.';
+$string['privacy:metadata:hvp_xapi_results:description'] = 'Die Beschreibung, Aufgabe oder Frage des Inhalts, zu dem die Aktion ausgeführt wurde.';
+$string['privacy:metadata:hvp_xapi_results:id'] = 'Die eindeutige ID des xAPI-Ereignisses.';
+$string['privacy:metadata:hvp_xapi_results:interaction_type'] = 'Der Typ der Interaktion.';
+$string['privacy:metadata:hvp_xapi_results:max_score'] = 'Maximal mögliche Punktzahl für das Ereignis.';
+$string['privacy:metadata:hvp_xapi_results:parent_id'] = 'Die ID des übergeordneten Elements des Inhalts, für den dieses Ereignis ausgeführt wurde. Null, wenn es kein übergeordnetes Element gibt.';
+$string['privacy:metadata:hvp_xapi_results:raw_score'] = 'Erzielte Punktzahl für das Ereignis.';
+$string['privacy:metadata:hvp_xapi_results:response'] = 'Die Antwort, die die Person eingeschickt hat.';
+$string['privacy:metadata:hvp_xapi_results:user_id'] = 'Die ID der Person, die die Aktion durchgeführt hat.';
 $string['removeoldlogentries'] = 'Alte H5P-Logdaten löschen';
 $string['removetmpfiles'] = 'Alte H5P-Temporärdateien löschen';
+$string['reportingquestionsremaininglabel'] = 'noch zu bewertende Fragen';
+$string['reportingscaledscoredelimiter'] = ';';
 $string['reportingscaledscorelabel'] = 'Notenbewertung:';
 $string['reportingscoredelimiter'] = 'von';
 $string['reportingscorelabel'] = 'Stand:';
 $string['reportnotsupported'] = 'Nicht unterstützt';
+$string['reportsubmitgradelabel'] = 'Bewertung absenden';
 $string['resizescript'] = 'Fügen Sie dieses Skript auf Ihrer Webseite ein, wenn Sie eine dynamische Größe von dem eingebetteten Inhalt möchten:';
 $string['reveal'] = 'Aufdecken';
 $string['reviseserversetupandretry'] = 'Wenn Sie Ihr Server-Setup überarbeitet haben, können Sie die H5P-Hub-Kommunikation in den H5P-Einstellungen wieder aktivieren.';

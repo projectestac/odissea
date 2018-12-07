@@ -1708,6 +1708,22 @@ class com_wiris_quizzes_impl_HTMLTools {
 	static function emptyCasSession($value) {
 		return $value === null || _hx_index_of($value, "<mo", null) === -1 && _hx_index_of($value, "<mi", null) === -1 && _hx_index_of($value, "<mn", null) === -1 && _hx_index_of($value, "<csymbol", null) === -1;
 	}
+	static function hasCasSessionParameter($session, $parameter, $name) {
+		$expr = com_wiris_quizzes_impl_HTMLTools::getParameterEReg($parameter, $name);
+		if($expr->match($session)) {
+			return true;
+		} else {
+			$noaccents = com_wiris_util_type_StringUtils::stripAccents($parameter);
+			if(!($noaccents === $parameter)) {
+				$expr = com_wiris_quizzes_impl_HTMLTools::getParameterEReg($noaccents, $name);
+				return $expr->match($session);
+			}
+			return false;
+		}
+	}
+	static function getParameterEReg($parameter, $name) {
+		return new EReg(".*<input>\\s*<math[^>]*>\\s*<mi>" . $parameter . "</mi>\\s*<mo>\\s*(&nbsp;|&#xA0;|\\s)\\s*</mo><mi>" . $name . "</mi>.*", "gmi");
+	}
 	static function casSessionLang($value) {
 		$start = _hx_index_of($value, "<session", null);
 		if($start === -1) {
@@ -1771,6 +1787,53 @@ class com_wiris_quizzes_impl_HTMLTools {
 			}
 		}
 		return $calcSession;
+	}
+	static function setCalcSessionTitle($calcSession, $title) {
+		if(com_wiris_quizzes_impl_HTMLTools::isCalc($calcSession)) {
+			$start = _hx_index_of($calcSession, "<wiriscalc", null);
+			$end = _hx_index_of($calcSession, "</wiriscalc>", $start + 1);
+			$start = _hx_index_of($calcSession, "<title", $start + 1);
+			if($start > -1 && $start < $end) {
+				$end = _hx_index_of($calcSession, "</title>", $start + 1);
+				$start = _hx_index_of($calcSession, "<math", $start + 1);
+				if($start > -1 && $start < $end) {
+					$start = _hx_index_of($calcSession, "<mtext", $start + 1);
+					$end = _hx_index_of($calcSession, "</mtext>", $start + 1);
+					if($start > -1 && $start < $end) {
+						$start = _hx_index_of($calcSession, ">", $start + 1) + 1;
+						if($start > -1 && $start < $end) {
+							$s1 = _hx_substr($calcSession, 0, $start);
+							$s2 = _hx_substr($calcSession, $end, null);
+							return $s1 . $title . $s2;
+						}
+					}
+				}
+			}
+		}
+		return $calcSession;
+	}
+	static function getCalcSessionTitle($calcSession) {
+		if(com_wiris_quizzes_impl_HTMLTools::isCalc($calcSession)) {
+			$start = _hx_index_of($calcSession, "<wiriscalc", null);
+			$end = _hx_index_of($calcSession, "</wiriscalc>", $start + 1);
+			$start = _hx_index_of($calcSession, "<title", $start + 1);
+			if($start > -1 && $start < $end) {
+				$end = _hx_index_of($calcSession, "</title>", $start + 1);
+				$start = _hx_index_of($calcSession, "<math", $start + 1);
+				if($start > -1 && $start < $end) {
+					$start = _hx_index_of($calcSession, "<mtext", $start + 1);
+					$end = _hx_index_of($calcSession, "</mtext>", $start + 1);
+					if($start > -1 && $start < $end) {
+						$start = _hx_index_of($calcSession, ">", $start + 1) + 1;
+						if($start > -1 && $start < $end) {
+							$title = _hx_substr($calcSession, $start, $end - $start);
+							return $title;
+						}
+					}
+				}
+			}
+		}
+		return null;
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLTools'; }
 }

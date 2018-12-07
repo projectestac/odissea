@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_weeks', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Gehitu asteak';
+$string['automaticenddate'] = 'Kalkulatu bukaera-data atal kopuruaren arabera';
+$string['automaticenddate_help'] = 'Gaituz gero ikastaroaren bukaera-data automatikoki kalkulatuko da atal-kopuruaren eta hasiera-dataren arabera.';
 $string['currentsection'] = 'Aste hau';
 $string['deletesection'] = 'Ezabatu astea';
 $string['editsection'] = 'Editatu astea';
@@ -34,6 +37,7 @@ $string['newsectionname'] = 'izen berria {$a} asterako';
 $string['page-course-view-weeks'] = 'Aste-formatuko edozein ikastaroko hasiera-orria';
 $string['page-course-view-weeks-x'] = 'Aste-formatuko edozein ikastaro-orri';
 $string['pluginname'] = 'Aste-formatua';
+$string['privacy:metadata'] = 'Aste-formatua pluginak ez du datu pertsonalik biltzen.';
 $string['section0name'] = 'Orokorra';
 $string['sectionname'] = 'Astea';
 $string['showfromothers'] = 'Erakutsi astea';

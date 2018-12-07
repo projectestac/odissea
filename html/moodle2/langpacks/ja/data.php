@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = '終了日時を開始日時の前にす�
 $string['blank'] = 'ブランク';
 $string['buttons'] = '操作';
 $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
-$string['calendarend'] = 'データベース {$a} 終了';
-$string['calendarstart'] = 'データベース {$a} 開始';
+$string['calendarend'] = '{$a} 終了';
+$string['calendarstart'] = '{$a} 開始';
 $string['cancel'] = 'キャンセル';
 $string['cannotaccesspresentsother'] = 'あなたは他のユーザのプリセットへのアクセスを許可されていません。';
 $string['cannotadd'] = 'エントリを追加できません!';
@@ -76,6 +76,9 @@ $string['comments'] = 'コメント';
 $string['commentsaved'] = 'コメントが保存されました。';
 $string['commentsn'] = '{$a} コメント';
 $string['commentsoff'] = 'コメント機能は有効にされていません。';
+$string['completionentries'] = '必須エントリ';
+$string['completionentriescount'] = 'エントリ数';
+$string['completionentriesdesc'] = '最少必須エントリ数 : {$a}';
 $string['configenablerssfeeds'] = 'ここではすべてのデータベースに関するRSSフィードを有効にします。さらにあなたはそれぞれのデータベースのRSSフィード設定を手動で有効にする必要があります。';
 $string['confirmdeletefield'] = 'あなたはこのフィールドを削除しようとしています。よろしいですか?';
 $string['confirmdeleterecord'] = '本当にこのエントリを削除してもよろしいですか?';
@@ -201,8 +204,13 @@ $string['headersingletemplate'] = '個別表示用の閲覧インターフェー
 $string['importentries'] = 'エントリをインポートする';
 $string['importsuccess'] = 'プリセットが正常に適用されました。';
 $string['includeapproval'] = '承認ステータスを含む';
+$string['includetags'] = 'タグを含む';
 $string['includetime'] = '追加/修正時間を含む';
 $string['includeuserdetails'] = 'ユーザ詳細を含む';
+$string['indicator:cognitivedepth'] = 'データベース認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はデータベース活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'データベース社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はデータベース活動で学生が到達した社会的広がりに基づきます。';
 $string['insufficiententries'] = 'このデータベースを閲覧するにはさらにエントリが必要です。';
 $string['intro'] = '説明';
 $string['invalidaccess'] = 'このページは正しくアクセスされていません。';
@@ -306,21 +314,43 @@ $string['pluginname'] = 'データベース';
 $string['portfolionotfile'] = 'ファイル (csvおよびLeap2Aのみ) ではなくポートフォリオにエクスポートする';
 $string['presetinfo'] = 'プリセットとして保存することによりこのテンプレートが公開されます。他のユーザはこのテンプレートを自分のデータベースで使用することができます。';
 $string['presets'] = 'プリセット';
+$string['privacy:metadata:commentpurpose'] = 'データベースレコードのコメントです。';
+$string['privacy:metadata:data_content'] = 'データベース活動モジュールでは1つの回答が1つのフィールドを示します。';
+$string['privacy:metadata:data_content:content'] = 'コンテンツです。';
+$string['privacy:metadata:data_content:content1'] = '追加コンテンツ1です。';
+$string['privacy:metadata:data_content:content2'] = '追加コンテンツ2です。';
+$string['privacy:metadata:data_content:content3'] = '追加コンテンツ3です。';
+$string['privacy:metadata:data_content:content4'] = '追加コンテンツ4です。';
+$string['privacy:metadata:data_content:fieldid'] = 'フィールド定義IDです。';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'データベース活動モジュールのフィールです。';
+$string['privacy:metadata:data_records'] = 'データベース活動モジュールのレコードを示します。';
+$string['privacy:metadata:data_records:approved'] = '承認ステータスです。';
+$string['privacy:metadata:data_records:groupid'] = 'グループです。';
+$string['privacy:metadata:data_records:timecreated'] = 'レコードが作成された日時です。';
+$string['privacy:metadata:data_records:timemodified'] = 'レコードが最後に修正された日時です。';
+$string['privacy:metadata:data_records:userid'] = 'レコードを作成したユーザです。';
+$string['privacy:metadata:filepurpose'] = 'データベースレコードに添付されたファイルです。';
+$string['privacy:metadata:ratingpurpose'] = 'データベースレコードの評価です。';
+$string['privacy:metadata:tagpurpose'] = 'データベースレコードのタグです。';
 $string['radiobutton'] = 'ラジオボタン';
 $string['recordapproved'] = 'エントリが承認されました。';
 $string['recorddeleted'] = 'エントリが削除されました。';
 $string['recorddisapproved'] = 'エントリ未承認';
 $string['recordsnotsaved'] = 'エントリは保存されませんでした。アップロードファイルのフォーマットを確認してください。';
 $string['recordssaved'] = 'エントリが保存されました。';
+$string['removealldatatags'] = 'すべてのデータベースタグを削除する';
 $string['requireapproval'] = '要承認';
 $string['requireapproval_help'] = 'この設定を有効にした場合、すべての人が閲覧できる前に教師からエントリの承認を受ける必要があります。';
 $string['required'] = '必須';
-$string['requiredentries'] = '完了のための必須エントリ数';
-$string['requiredentries_help'] = '活動が完了したとみなされるまでに学生が送信する必要のあるエントリ数です。';
+$string['requiredentries'] = '完了のための必須エントリ数 (旧)';
+$string['requiredentries_help'] = 'この設定を有効にした場合、完了に必要なエントリ数の最初にメッセージが表示されます。この設定は活動完了に関連付けられないことに留意してください。
+活動完了にエントリを必要とする場合、新しい活動完了設定「必須エントリ」を使用してください。この設定を完全に削除する場合、「なし」に設定して変更を保存してください。
+代わりに活動完了セクションの必須エントリ数フィールドを使用してください。';
 $string['requiredentriestoview'] = '閲覧前に必要な入力エントリ数';
 $string['requiredentriestoview_help'] = 'このデータベースエントリの閲覧が許可されるまでに参加者が登録する必要のある入力エントリ数です。
 
 注意: 閲覧前にエントリが必要な場合、データベースオートリンクフィルタを無効にしてください。データベースオートリンクフィルタではユーザにより必要な入力エントリ数が送信されたかどうか判定することができません。';
+$string['requiredentrieswarning'] = 'この設定は活動完了設定「必須エントリ」と置換されました。';
 $string['requiredfield'] = '必須フィールド';
 $string['resetsettings'] = 'フィルタをリセットする';
 $string['resettemplate'] = 'テンプレートをリセットする';
@@ -348,6 +378,9 @@ $string['subplugintype_datafield'] = 'データベースフィールドタイプ
 $string['subplugintype_datafield_plural'] = 'データベースフィールドタイプ';
 $string['subplugintype_datapreset'] = 'プリセット';
 $string['subplugintype_datapreset_plural'] = 'プリセット';
+$string['tagarea_data_records'] = 'データレコード';
+$string['tags'] = 'タグ';
+$string['tagsdeleted'] = 'データベースタグが削除されました。';
 $string['teachersandstudents'] = '{$a->teachers} および {$a->students}';
 $string['templates'] = 'テンプレート';
 $string['templatesaved'] = 'テンプレートが保存されました。';

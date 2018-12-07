@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_weeks', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['automaticenddate'] = 'Calcula la data de finalització del curs a partir del nombre de seccions';
 $string['currentsection'] = 'Aquesta setmana';
 $string['deletesection'] = 'Suprimeix la setmana';
 $string['editsection'] = 'Edita la setmana';

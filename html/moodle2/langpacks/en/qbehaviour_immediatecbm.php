@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatecbm', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_immediatecbm', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_immediatecbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Please select a certainty.';
 $string['pluginname'] = 'Immediate feedback with CBM';
+$string['privacy:metadata'] = 'The Immediate feedback with CBM question behaviour plugin does not store any personal data.';

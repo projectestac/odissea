@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_cas', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,21 +34,21 @@ $string['auth_cas_broken_password'] = 'You cannot proceed without changing your 
 $string['auth_cas_cantconnect'] = 'LDAP part of CAS-module cannot connect to server: {$a}';
 $string['auth_cas_casversion'] = 'Version';
 $string['auth_cas_changepasswordurl'] = 'Password-change URL';
-$string['auth_cas_create_user'] = 'Ενεργοποιήστε τη ρύθμιση αν επιθυμείτε να εισάγετε CAS- πιστοποιημένους χρήστες στη βάση δεδομένων του Moodle. Αν όχι, τότε μόνο οι χρήστες που είναι ήδη στην βάση μπορούν να εισέλθουν.';
+$string['auth_cas_create_user'] = 'Ενεργοποιήστε το εάν επιθυμείτε να εισάγετε CAS- πιστοποιημένους χρήστες στην βάση δεδομένων του ΠΗΛΕΑΣ. Εάν όχι, τότε μόνο οι χρήστες που είναι ήδη στην βάση μπορούν να εισέλθουν.';
 $string['auth_cas_create_user_key'] = 'Create user';
-$string['auth_casdescription'] = 'Αυτή η μέθοδο χρησιμοποιεί ένα διακομιστή CAS (Central Authentication Service) για την αυθεντικοποίηση των χρηστών σε ένα Single Sign On περιβάλλον (SSO). Μπορείτε επίσης να χρησιμοποιήσετε μια απλή LDAP αυθεντικοποίηση. Αν το όνομα χρήστη και ο κωδικός πρόσβασης είναι έγκυρα σύμφωνα με το CAS, το Moodle δημιουργεί μια νέα καταχώριση για τον χρήστη στην βάση δεδομένων, λαμβάνοντας χαρακτηριστικά του χρήστη από τον LDAP αν χρειαστεί. Στις επόμενες εισόδους μόνο το όνομα χρήστη και ο κωδικός πρόσβασης ελέγχονται.';
-$string['auth_cas_enabled'] = 'Ενεργοποιήστε αν θέλετε να χρησιμοποιήσετε αυθεντικοποίηση CAS.';
+$string['auth_casdescription'] = 'Αυτή η μέθοδο χρησιμοποιεί ένα διακομιστή CAS (Central Authentication Service) για την πιστοποίηση των χρηστών σε ένα Single Sign On περιβάλλον(SSO). Μπορείτε επίσης να χρησιμοποιήσετε απλή LDAP πιστοποίηση. Εάν τα δοθέντα όνομα χρήστη και κωδικός είναι έγκυρα σύμφωνα με το CAS, το ΠΗΛΕΑΣ δημιουργεί καινούργια εγγραφή για τον χρήστη στην βάση δεδομένων, λαμβάνοντας χαρακτηριστικά του χρήστη από τον LDAP αν χρειαστεί. Στις επόμενες εισόδους μόνο το όνομα χρήστη και ο κωδικός ελέγχονται.';
+$string['auth_cas_enabled'] = 'Ενεργοποιήστε το εάν θέλετε CAS- πιστοποίηση';
 $string['auth_cas_hostname'] = 'Hostname του CAS διακομιστή <br />πχ: host.domain.fr';
 $string['auth_cas_hostname_key'] = 'Hostname';
 $string['auth_cas_invalidcaslogin'] = 'Συγνώμη, η είσοδος απέτυχε, δεν πιστοποιήθηκε η ταυτότητά σας';
-$string['auth_cas_language'] = 'Επιλογή γλώσσας για σελίδες αυθεντικοποίησης';
-$string['auth_cas_language_key'] = 'Γλώσσα';
+$string['auth_cas_language'] = 'Επιλεγμένη γλώσσα';
+$string['auth_cas_language_key'] = 'Language';
 $string['auth_cas_logincas'] = 'Πρόσβαση ασφαλούς σύνδεσης';
 $string['auth_cas_logoutcas'] = 'Turn this to \'yes\' if tou want to logout from CAS when you deconnect from Moodle';
 $string['auth_cas_logoutcas_key'] = 'Logout CAS';
-$string['auth_cas_multiauth'] = 'Επιλέξτε  \'yes\' αν θέλετε να έχετε πολλαπλή  αυθεντικοποίηση (CAS + άλλη αυθεντικοποίηση)';
-$string['auth_cas_multiauth_key'] = 'Πολλαπλή αυθεντικοποίηση';
-$string['auth_casnotinstalled'] = 'Αδυναμία χρήσης αυθεντικοποίησης CAS. Το άρθρωμα PHP LDAP δεν έχει εγκατασταθεί.';
+$string['auth_cas_multiauth'] = 'Turn this to \'yes\' if you want to have multi-authentication (CAS + other authentication)';
+$string['auth_cas_multiauth_key'] = 'Multi-authentication';
+$string['auth_casnotinstalled'] = 'Cannot use CAS authentication. The PHP LDAP module is not installed.';
 $string['auth_cas_port'] = 'Θύρα του διακομιστή CAS';
 $string['auth_cas_port_key'] = 'Port';
 $string['auth_cas_proxycas'] = 'Turn this to \'yes\' if you use CASin proxy-mode';
@@ -57,5 +57,5 @@ $string['auth_cas_server_settings'] = 'Ρύθμιση του CAS Server';
 $string['auth_cas_text'] = 'Ασφαλή σύνδεση';
 $string['auth_cas_use_cas'] = 'Use CAS';
 $string['auth_cas_version'] = 'Έκδοση του CAS server';
-$string['CASform'] = 'Επιλογή αυθεντικοποίησης';
+$string['CASform'] = 'Authentication choice';
 $string['pluginname'] = 'Χρησιμοποίησε έναν διακομιστή CAS';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Afegeix {$a} camp(s) al formulari';
 $string['advancedelement'] = 'Element avançat';
 $string['close'] = 'Tanca';
+$string['custom'] = 'Personalitzat';
 $string['day'] = 'Dia';
+$string['default'] = 'Per defecte';
 $string['display'] = 'Mostra';
 $string['err_alphanumeric'] = 'Només s\'hi admeten lletres o nombres.';
 $string['err_email'] = 'Heu d\'introduir una adreça de correu vàlida.';
@@ -41,6 +43,8 @@ $string['err_nopunctuation'] = 'No s\'hi admeten signes de puntuació.';
 $string['err_numeric'] = 'Heu d\'introduir un nombre.';
 $string['err_rangelength'] = 'Heu d\'introduir una cadena entre {$a->format[0]} i {$a->format[1]} caràcters.';
 $string['err_required'] = 'Heu d\'introduir un valor.';
+$string['err_wrongfileextension'] = 'Alguns fitxers ({$a->wrongfiles}) no s\'han pogut enviar. Només les extensions del tipus {$a->whitelist} estan permeses.';
+$string['filesofthesetypes'] = 'Tipus de fitxers acceptats:';
 $string['general'] = 'Paràmetres generals';
 $string['hideadvanced'] = 'Oculta les característiques avançades';
 $string['hour'] = 'Hora';
@@ -49,6 +53,7 @@ $string['miscellaneoussettings'] = 'Paràmetres diversos';
 $string['modstandardels'] = 'Paràmetres comuns de mòduls';
 $string['month'] = 'Mes';
 $string['mustbeoverriden'] = 'Cal sobreescriure el mètode abstracte form_definition() en la classe {$a}. Si us plau corregiu el codi.';
+$string['newvaluefor'] = 'Valor nou per a {$a}';
 $string['nomethodforaddinghelpbutton'] = 'No hi ha cap mètode per a afegir un botó d\'ajuda a l\'element del formulari {$a->name} (classe {$a->classname})';
 $string['nonexistentformelements'] = 'S\'està intentant afegir botons d\'ajuda a elements del formulari inexistents: {$a}';
 $string['noselection'] = 'Cap selecció';

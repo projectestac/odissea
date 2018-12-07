@@ -1,4 +1,4 @@
-@core @core_notes
+@core @core_notes @javascript
 Feature: Add notes to course participants
   In order to share information with other staff
   As a teacher
@@ -31,18 +31,22 @@ Feature: Add notes to course participants
     And I press "Save changes"
     And I log out
     And I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Participants"
     And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 1')]//input[@type='checkbox']" to "1"
+    And I choose "Add a new note" from the participants page bulk action menu
+    And I set the field "bulk-note" to "Student 1 needs to pick up his game"
+    And I press "Add a new note to 1 person"
+    And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 1')]//input[@type='checkbox']" to "0"
     And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 2')]//input[@type='checkbox']" to "1"
+    And I choose "Add a new note" from the participants page bulk action menu
+    And I set the field "bulk-note" to ""
+    And I press "Add a new note to 1 person"
+    And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 2')]//input[@type='checkbox']" to "0"
     And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 3')]//input[@type='checkbox']" to "1"
-    And I set the field "With selected users..." to "Add a new note"
-    And I press "OK"
-    # Add a note to student 1, but leave student 2 empty and student 3 with space.
-    When I set the field with xpath "//tr[contains(normalize-space(.), 'Student 1')]//textarea" to "Student 1 needs to pick up his game"
-    And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 2')]//textarea" to ""
-    And I set the field with xpath "//tr[contains(normalize-space(.), 'Student 3')]//textarea" to "  "
-    And I press "Save changes"
+    And I choose "Add a new note" from the participants page bulk action menu
+    And I set the field "bulk-note" to "  "
+    And I press "Add a new note to 1 person"
     And I follow "Student 1"
     And I follow "Notes"
     # Student 1 has note from Teacher
@@ -51,7 +55,7 @@ Feature: Add notes to course participants
     And I follow "Participants"
     And I follow "Student 2"
     And I follow "Notes"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Participants"
     And I follow "Notes"
     Then I should see "Student 1"

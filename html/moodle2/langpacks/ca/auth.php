@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,10 @@ $string['auth_data_mapping'] = 'Mapatge de dades';
 $string['authenticationoptions'] = 'Opcions d\'autenticació';
 $string['auth_fieldlock'] = 'Bloca valor';
 $string['auth_fieldlock_expl'] = '<p><b>Bloca valor:</b> si l\'habiliteu, impedirà que els usuaris i administradors de Moodle editin el camp directament. Utilitzeu aquesta opció quan aquestes es mantinguin en un sistema d\'autenticació extern.';
+$string['auth_fieldlockfield'] = 'Valor blocat ({$a})';
 $string['auth_fieldlocks'] = 'Bloca camps d\'usuari';
 $string['auth_fieldlocks_help'] = '<p>Podeu blocar els camps de dades d\'usuari. Això és útil en llocs on els administradors mantenen manualment les dades dels usuaris tot editant els registres d\'usuari o per mitjà de l\'opció de càrrega d\'usuaris. Si bloqueu camps requerits per Moodle, assegureu-vos que aquestes dades s\'introdueixen en crear els comptes d\'usuari, o en cas contrari no es podran utilitzar els comptes.</p><p>Considereu la possibilitat d\'utilitzar el mode \'Desblocat si està buit\' per evitar aquest problema.</p>';
+$string['auth_fieldmapping'] = 'Mapatge de dades ({$a})';
 $string['authinstructions'] = 'Deixeu aquest camp en blanc si voleu mostrar les instruccions d\'inici de sessió per defecte a la pàgina d\'inici de sessió. Si voleu proporcionar instruccions alternatives, introduïu-les aquí.';
 $string['auth_invalidnewemailkey'] = 'Error: si esteu intentant confirmar un canvi d\'adreça de correu, probablement heu copiat malament l\'enllaç que us hem enviat. Copieu l\'enllaç complet i torneu a intentar-ho.';
 $string['authloginviaemail'] = 'Permet l\'inici de sessió mitjançant el correu electrònic';
@@ -61,13 +63,16 @@ $string['auth_sync_suspended'] = 'Si s\'habilita, l\'atribut «suspès» s\'util
 $string['auth_sync_suspended_key'] = 'Sincronitza l\'estat de suspensió de l\'usuari local';
 $string['auth_updatelocal'] = 'Actualitza dades locals';
 $string['auth_updatelocal_expl'] = '<p><b>Actualitza dades locals:</b> si habiliteu aquesta opció, el camp s\'actualitzarà (amb les dades externes d\'autenticació) cada vegada que l\'usuari entri o quan es faci una sincronització d\'usuaris. Els camps definits per actualitzar-se localment haurien d\'estar blocats.</p>';
+$string['auth_updatelocalfield'] = 'Actualitza les dades locals ({$a})';
 $string['auth_updateremote'] = 'Actualitza dades externes';
 $string['auth_updateremote_expl'] = '<p>Actualitza dades externes:</b> si habiliteu aquesta opció, les dades externes d\'autenticació s\'actualitzaran quan s\'actualitzi el registre de l\'usuari. Els camps s\'haurien de desblocar per permetre l\'edició.</p>';
+$string['auth_updateremotefield'] = 'Actualitza les dades externes ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> actualitzar dades LDAP externes requreix definir binddn i dindpw amb un bind-user que tingui privilegis d\'edició en tots els registres d\'usuari. Actualment no preserva valors múltiples en els atributs i suprimeix els valors extra quan es fa l\'actualització.</p>';
 $string['auth_user_create'] = 'Habilita la creació d\'usuaris';
 $string['auth_user_creation'] = 'Els nous usuaris (anònims) poden crear comptes d\'usuari en la font d\'autenticació externa i confirmar-los via correu electrònic. Si habiliteu aquesta opció, recordeu de configurar també opcions específiques del mòdul per a la creació d\'usuaris.';
 $string['auth_usernameexists'] = 'El nom d\'usuari elegit ja existeix. Sisplau trieu-ne un altre.';
 $string['auto_add_remote_users'] = 'Afegeix automàticament usuaris remots';
+$string['cannotmapfield'] = 'El camp «{$a->fieldname}» no pot ser mapat, perquè el nom curt «{$a->shortname}» és massa llarg. Per habilitar el mapatge cal reduir el nom curt del camp del perfil fins a {$a->charlimit} caràcters. <a href="{$a->link}">Edita els camps de perfil de l\'usuari</a>';
 $string['changepassword'] = 'URL de canvi de contrasenya';
 $string['changepasswordhelp'] = 'URL de la pàgina de recuperació d\'una contrasenya perduda, la qual s\'enviarà als usuaris per correu electrònic. Pareu esment en que aquest paràmetre no té cap efecte si s\'ha establert una URL de contrasenya oblidada als paràmetres comuns d\'autenticació.';
 $string['chooseauthmethod'] = 'Trieu un mètode d\'autenticació';
@@ -140,6 +145,7 @@ Si no sabeu segur quines paraules són, podeu provar un altre CAPTCHA o bé un C
 $string['security_question'] = 'Pregunta de seguretat';
 $string['selfregistration'] = 'Autoregistre';
 $string['selfregistration_help'] = 'Si seleccioneu un connector d\'autenticació, com ara l\'autoregistre basat en correu electrònic, llavors es permet que usuaris potencials s\'inscriguin i creïn comptes. Això fa possible que s\'enviï brossa a fòrums, blogs, etc. Per evitar aquest perill, inhabiliteu l\'autoregistre o limiteu-lo mitjançant el paràmetre <em>Dominis de correu permesos</em>.';
+$string['settingmigrationmismatch'] = 'S\'han detectat valors no coincidents mentre es corregien els noms de configuració del connector. El connector d\'autenticació «{$a->plugin}»  tenia el paràmetre «{$a->setting}» configurat a «{$a->legacy}» sota el nom antic i a «{$a->current}» sota el nom actual. Aquest últim valor s\'ha definit com a vàlid, però heu de verificar i confirmar que és el valor esperat.';
 $string['sha1'] = 'Resum SHA-1';
 $string['showguestlogin'] = 'Podeu ocultar o mostrar el botó d\'inici de sessió com a visitant a la pàgina d\'inici de sessió.';
 $string['stdchangepassword'] = 'Utilitza la pàgina estàndard de canvi de contrasenya';

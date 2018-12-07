@@ -696,7 +696,8 @@ class com_wiris_quizzes_impl_QuizzesBuilderImpl extends com_wiris_quizzes_api_Qu
 					while($_g1 < $_g) {
 						$i1 = $_g1++;
 						if($variables[$i1] !== null) {
-							$newvariables[$j++] = $variables[$i1];
+							$newvariables[$j] = $variables[$i1];
+							$j++;
 						}
 						unset($i1);
 					}

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['indicator:cognitivedepth'] = '标签资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在标签资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '标签资源社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在标签资源中所达到的社会宽度。';
 $string['label:addinstance'] = '添加新标签';
 $string['labeltext'] = '标签文本';
 $string['modulename'] = '标签';

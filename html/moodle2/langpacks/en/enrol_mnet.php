@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_mnet', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['mnet_enrol_description'] = 'Publish this service to allow administrator
 $string['mnet_enrol_name'] = 'Remote enrolment service';
 $string['pluginname'] = 'MNet remote enrolments';
 $string['pluginname_desc'] = 'Allows remote MNet host to enrol their users into our courses.';
+$string['privacy:metadata'] = 'The MNet remote enrolments plugin does not store any personal data.';
 $string['remotesubscriber'] = 'Remote host';
 $string['remotesubscriber_help'] = 'Select \'All hosts\' to open this course for all MNet peers we are offering the remote enrolment service to. Or choose a single host to make this course available for their users only.';
 $string['remotesubscribersall'] = 'All hosts';

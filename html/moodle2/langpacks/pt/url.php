@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,10 @@ $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de 
 * Nova janela: o ficheiro é exibido numa nova janela do navegador, com menus e barra de endereço.';
 $string['externalurl'] = 'URL externo';
 $string['framesize'] = 'Altura da frame';
+$string['indicator:cognitivedepth'] = 'URL cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na profundidade cognitiva alcançada pelo aluno num recurso URL.';
+$string['indicator:socialbreadth'] = 'URL social';
+$string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude social alcançada pelo aluno numa recurso URL.';
 $string['invalidstoredurl'] = 'Não é possível mostrar este recurso, o URL é inválido';
 $string['invalidurl'] = 'Insira um URL válido';
 $string['modulename'] = 'URL';
@@ -73,6 +77,7 @@ $string['popupwidth'] = 'Largura da janela de pop-up (em pixeis)';
 $string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela de pop-up';
 $string['printintro'] = 'Mostrar descrição do URL';
 $string['printintroexplain'] = 'Mostrar a descrição do URL abaixo do conteúdo? Alguns modos de exibição não apresentam a descrição do recurso, mesmo com esta configuração ativa.';
+$string['privacy:metadata'] = 'O módulo mod_url não armazena qualquer dado pessoal.';
 $string['rolesinparams'] = 'Incluir designações de papéis nos parâmetros';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL do servidor';

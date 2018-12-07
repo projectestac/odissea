@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,6 +121,10 @@ $string['incorrectdeleteversions'] = 'De gevraagde versies om te verwijderen zij
 $string['incorrectpageid'] = 'Pagina-ID is fout.';
 $string['incorrectsubwikiid'] = 'Subwiki-ID is fout.';
 $string['incorrectwikiid'] = 'Wiki-ID is fout.';
+$string['indicator:cognitivedepth'] = 'Wiki cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Wiki activiteit.';
+$string['indicator:socialbreadth'] = 'Wiki sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Wiki activiteit.';
 $string['individualpagedoesnotexist'] = 'Individuele wiki-pagina bestaat niet';
 $string['insertcomment'] = 'Opmerking invoegen';
 $string['insertimage'] = 'Voeg een afbeelding toe...';
@@ -128,7 +132,7 @@ $string['insertimage_help'] = 'Met dit rolmenu kun je een afbeelding in de wiki-
 $string['invalidlock'] = 'Deze pagina is al geblokkeerd door een andere gebruiker.';
 $string['invalidparameters'] = 'Ongeldige parameters gegeven.';
 $string['invalidsection'] = 'Ongeldige sectie.';
-$string['invalidsesskey'] = 'De opgegeven sessiesleutel is niet geldig. Stuur de gegevens opnieuw';
+$string['invalidsesskey'] = 'De opgegeven sessiesleutel is waarschijnlijk verlopen. Neem nota van je bewerking en log opnieuw in.';
 $string['javascriptdisabledlocks'] = 'Javascript is uitgeschakeld in je browser en het blokkeren werkt niet. De wijzigingen die je aanbrengt kunnen fout bewaard worden.';
 $string['links'] = 'Links';
 $string['listall'] = 'Toon alles';
@@ -236,7 +240,6 @@ $string['special'] = 'Speciaal';
 $string['tableofcontents'] = 'Inhoudsopgave';
 $string['tagarea_wiki_pages'] = 'Wiki pagina\'s';
 $string['tagsdeleted'] = 'Wiki tags zijn verwijderd';
-$string['tagtitle'] = 'Zie tag "{$a}"';
 $string['teacherrating'] = 'Leraarbeoordeling';
 $string['timesrating'] = 'Deze pagina is {$a->c} keer beoordeeld met een gemiddelde van {$a->s}';
 $string['updatedpages'] = 'Gewijzigde pagina\'s';

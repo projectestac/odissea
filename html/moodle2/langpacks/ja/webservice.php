@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -133,7 +133,8 @@ $string['nofunctions'] = 'このサービスに関数はありません。';
 $string['norequiredcapability'] = '必須ケイパビリティなし';
 $string['notoken'] = 'トークンリストが空です。';
 $string['onesystemcontrolling'] = '外部システムによるMoodleのコントロールを許可する';
-$string['onesystemcontrollingdescription'] = '次のステップは外部システムによるMoodleとの連携を許可するためのMoodleウェブサービスをあなたが設定するための補助となります。これにはトークン (セキュリティキー) 認証方法のセットアップを含みます。';
+$string['onesystemcontrollingdescription'] = '次のステップは外部システムによるMoodleとの相互連携を許可するためのMoodleウェブサービスをあなたが設定するための補助となります。これにはトークン (セキュリティキー) 認証方法のセットアップを含みます。';
+$string['onlyseecreatedtokens'] = 'すべてのトークンは削除することができますが、あなたが作成したトークンのみ閲覧することができます。';
 $string['operation'] = '操作';
 $string['optional'] = '任意';
 $string['passwordisexpired'] = 'パスワードの有効期限が切れました。';
@@ -143,6 +144,22 @@ $string['postrestparam'] = ' RESTのPHPコード (POSTリクエスト)';
 $string['potusers'] = '未認証ユーザ';
 $string['potusersmatching'] = '合致する未認証ユーザ';
 $string['print'] = 'すべてをプリントする';
+$string['privacy:metadata:serviceusers'] = '特定の外部サービスを利用することのできるユーザの一覧です。';
+$string['privacy:metadata:serviceusers:iprestriction'] = 'サービスの使用を制限するIPです。';
+$string['privacy:metadata:serviceusers:timecreated'] = 'レコードが作成された日時です。';
+$string['privacy:metadata:serviceusers:userid'] = 'ユーザのIDです。';
+$string['privacy:metadata:serviceusers:validuntil'] = '権限付与終了の日時です。';
+$string['privacy:metadata:tokens'] = 'ウェブサービスまたはモバイルアプリケーションを通してMoodleと通信するトークンのレコードです。';
+$string['privacy:metadata:tokens:creatorid'] = 'トークンを作成したユーザのIDです。';
+$string['privacy:metadata:tokens:iprestriction'] = 'このトークンを使用するためのIP制限です。';
+$string['privacy:metadata:tokens:lastaccess'] = 'トークンが最後に使用された日時です。';
+$string['privacy:metadata:tokens:privatetoken'] = 'SSOのような特定の処理を認証するため時々さらにプライベートなトークンが使用されます。';
+$string['privacy:metadata:tokens:timecreated'] = 'トークンが作成された日時です。';
+$string['privacy:metadata:tokens:token'] = 'ユーザのトークンです。';
+$string['privacy:metadata:tokens:tokentype'] = 'トークのタイプです。';
+$string['privacy:metadata:tokens:userid'] = 'トークンを所有しているユーザのIDです。';
+$string['privacy:metadata:tokens:validuntil'] = 'トークンが無効になる日付です。';
+$string['privacy:request:notexportedsecurity'] = 'セキュリティ上の理由でエクスポートされませんでした。';
 $string['protocol'] = 'プロトコル';
 $string['removefunction'] = '削除';
 $string['removefunctionconfirm'] = '本当に「 {$a->service} 」から関数「 {$a->function} 」を削除してもよろしいですか?';
@@ -217,7 +234,7 @@ $string['webservicesoverview'] = '概要';
 $string['webservicetokens'] = 'ウェブサービストークン';
 $string['wrongusernamepassword'] = 'ユーザ名またはパスワードが正しくありません。';
 $string['wsaccessuserdeleted'] = '削除によるウェブサービスアクセス拒否のユーザ名: {$a}';
-$string['wsaccessuserexpired'] = 'パスワード期限切れによるウェブサービスアクセス拒否のユーザ名: {$a}';
+$string['wsaccessuserexpired'] = 'パスワード有効期限切れによるウェブサービスアクセス拒否のユーザ名: {$a}';
 $string['wsaccessusernologin'] = 'ログイン認証なしによるウェブサービスアクセス拒否のユーザ名: {$a}';
 $string['wsaccessusersuspended'] = 'アカウント停止によるウェブサービスアクセス拒否のユーザ名: {$a}';
 $string['wsaccessuserunconfirmed'] = '確認未了によるウェブサービスアクセス拒否のユーザ名: {$a}';

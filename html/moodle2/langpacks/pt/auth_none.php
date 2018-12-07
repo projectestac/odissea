@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_none', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_none
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Os utilizadores podem registar-se e criar contas válidas imediatamente, sem autenticação em nenhum servidor externo e sem nenhuma confirmação por e-mail. Este módulo levanta questões de segurança que devem ser devidamente analisadas antes da sua utilização.';
 $string['pluginname'] = 'Sem autenticação';
+$string['privacy:metadata'] = 'O módulo Impedir autenticação não armazena nenhum dado pessoal.';

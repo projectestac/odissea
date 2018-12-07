@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_user', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Отчет «Отчет по пользователю» просмотрен';
-$string['otheruser'] = 'Пользователь';
+$string['myself'] = 'самого себя';
+$string['otheruser'] = 'пользователя';
 $string['pluginname'] = 'Отчет по пользователю';
 $string['tablesummary'] = 'Таблица упорядочена в виде списка элементов, включая категории оцениваемых элементов. Когда элементы находятся в категории, то они будут обозначены как таковые.';
 $string['user:view'] = 'Просматривать отчет о собственных оценках';
-$string['viewas'] = 'Просмотр отчета как';
+$string['viewas'] = 'Просмотр отчета от лица';

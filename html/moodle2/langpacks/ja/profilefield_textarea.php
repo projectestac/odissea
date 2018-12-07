@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_textarea', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'テキストエリア';
+$string['privacy:metadata:profile_field_textarea:data'] = '保存されたユーザデータです。';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = '保存されたユーザデータのフォーマットです。';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'プロファイルフィールドのIDです。';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = '追加ユーザ情報がここに保存されます。';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'テキストエリアプラグインにデータが保存されるユーザのIDです。';

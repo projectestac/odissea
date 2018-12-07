@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_loglive', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   report_loglive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,12 +29,13 @@ $string['eventcomponent'] = 'コンポーネント';
 $string['eventcontext'] = 'イベントコンテクスト';
 $string['eventloggedas'] = '{$a->realusername} - 代替ログイン: {$a->asusername}';
 $string['eventorigin'] = 'オリジン';
-$string['eventrelatedfullnameuser'] = '影響を受けたユーザ';
+$string['eventrelatedfullnameuser'] = '影響を受けるユーザ';
 $string['eventreportviewed'] = 'ライブログレポートが閲覧されました。';
 $string['livelogs'] = '過去1時間のライブログ';
 $string['loglive:view'] = 'ライブログを表示する';
 $string['nologreaderenabled'] = '有効にされているログリーダはありません。';
-$string['pause'] = 'ライブアップデートを中断する';
+$string['pause'] = 'ライブアップデートを一時停止する';
 $string['pluginname'] = 'ライブログ';
+$string['privacy:metadata'] = 'ライブログプラグインはどのような個人データも保存しません。';
 $string['resume'] = 'ライブアップデートを再開する';
 $string['selectlogreader'] = 'ログリーダを選択する';

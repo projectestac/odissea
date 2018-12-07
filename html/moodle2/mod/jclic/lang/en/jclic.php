@@ -97,9 +97,9 @@ $string['jclicfile'] = 'JClic file';
 $string['jclicfile_help'] = 'The .jclic file containing the JClic files.';
 $string['lap'] = 'Lap';
 $string['lap_help'] = 'Time between client-server transactions (in seconds)';
-$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> is a project of the Catalan Ministry of Education.
+$string['modulename_help'] = '<a href="https://clic.xtec.cat" target="_blank">JClic</a> is a project of the Catalan Ministry of Education.
     It consists of a set of open source software applications that allow the creation of several types of multimedia educational activities: puzzles, association games, text activities, crosswords, wordsearch games and more.
-    Besides, the <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">ClicZone</a> offers a repository where more than a thousand activities are displayed.
+    Besides, the <a href="https://clic.xtec.cat/db/listact_ca.jsp" target="_blank">ClicZone</a> offers a repository where more than a thousand activities are displayed.
     It has been created by teachers and other professionals who want to share their work with others.
 
 This module allows teachers to add JClick activities to any course and to track pupils\' results (time spent on each of the activities, number of tries, score...).';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_date', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_date', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '日付フィールド';
 $string['pluginname'] = '日付';
+$string['privacy:metadata'] = 'データフィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

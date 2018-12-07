@@ -80,10 +80,8 @@ class mod_questionnaire_generator extends testing_module_generator {
      * @param array $options
      * @return questionnaire
      */
-    public function create_instance($record = array(), array $options = array()) {
-        if (is_array($record)) {
-            $record = (object)$record;
-        }
+    public function create_instance($record = null, array $options = null) {
+        $record = (object)(array)$record;
 
         $defaultquestionnairesettings = array(
             'qtype'                 => 0,
@@ -110,7 +108,7 @@ class mod_questionnaire_generator extends testing_module_generator {
             }
         }
 
-        $instance = parent::create_instance($record, $options);
+        $instance = parent::create_instance($record, (array)$options);
         $cm = get_coursemodule_from_instance('questionnaire', $instance->id);
         $course = get_course($cm->course);
         $questionnaire = new questionnaire(0, $instance, $course, $cm, false);
@@ -191,8 +189,7 @@ class mod_questionnaire_generator extends testing_module_generator {
         // Add the question.
         $record->id = $DB->insert_record('questionnaire_question', $record);
 
-        $typename = \mod_questionnaire\question\base::qtypename($record->type_id);
-        $question = questionnaire::question_factory($typename, $record->id, $record);
+        $question = \mod_questionnaire\question\base::question_builder($record->type_id, $record->id, $record);
 
         // Add the question choices if required.
         if ($typeid !== QUESPAGEBREAK && $typeid !== QUESSECTIONTEXT) {
@@ -236,9 +233,6 @@ class mod_questionnaire_generator extends testing_module_generator {
         $this->response_commit($questionnaire, $responseid);
         questionnaire_record_submission($questionnaire, $userid, $responseid);
         return $DB->get_record('questionnaire_response', array('id' => $responseid));
-        // TO DO - look at the implementing Guy's code below.
-        /* $responses[] = new question_response($question->id, 'Test answer');
-        return $this->create_response(['survey_id' => $questionnaire->sid, 'username' => $userid], $responses); */
     }
 
     /**
@@ -523,9 +517,8 @@ class mod_questionnaire_generator extends testing_module_generator {
             throw new coding_exception('survey_id must be present in phpunit_util::create_response() $record');
         }
 
-        if (!isset($record['username'])) {
-            throw new coding_exception('username (actually the user id) must be present in '.
-                'phpunit_util::create_response() $record');
+        if (!isset($record['userid'])) {
+            throw new coding_exception('userid must be present in phpunit_util::create_response() $record');
         }
 
         $record['submitted'] = time() + $this->responsecount;
@@ -547,7 +540,7 @@ class mod_questionnaire_generator extends testing_module_generator {
         $DB->update_record('questionnaire_response', $record);
 
         // Create attempt record.
-        $attempt = ['qid' => $record['survey_id'], 'userid' => $record['username'], 'rid' => $record['id'],
+        $attempt = ['qid' => $record['survey_id'], 'userid' => $record['userid'], 'rid' => $record['id'],
             'timemodified' => time()];
         $DB->insert_record('questionnaire_attempts', $attempt);
 
@@ -644,7 +637,7 @@ class mod_questionnaire_generator extends testing_module_generator {
             }
 
         }
-        return $this->create_response(['survey_id' => $questionnaire->sid, 'username' => $userid], $responses);
+        return $this->create_response(['survey_id' => $questionnaire->sid, 'userid' => $userid], $responses);
     }
 
     public function create_and_fully_populate($coursecount = 4, $studentcount = 20, $questionnairecount = 2,

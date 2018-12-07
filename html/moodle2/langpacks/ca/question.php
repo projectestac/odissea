@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,7 +115,7 @@ $string['cwrqpfsinfo'] = '<p>Durant l\'actualització a Moodle 1.9 se separaran 
 $string['cwrqpfsnoprob'] = 'El vostre lloc no conté categories afectades pel problema de les "preguntes aleatòries que seleccionen preguntes de subcategories".';
 $string['decimalplacesingrades'] = 'Decimals en graus';
 $string['defaultfor'] = 'Categoria per defecte en {$a}';
-$string['defaultinfofor'] = 'La categoria per defecte per a preguntes compartides en el context \'{$a}\'';
+$string['defaultinfofor'] = 'La categoria per defecte per a preguntes compartides en el context «{$a}».';
 $string['defaultmark'] = 'Puntuació per defecte';
 $string['defaultmarkmustbepositive'] = 'La puntuació per defecte ha de ser positiva.';
 $string['deletecoursecategorywithquestions'] = ' Hi ha preguntes del banc de preguntes associades amb aquesta categoria del curs. Si procediu, s\'esborraran. Podeu desplaçar-les abans de continuar des de la interfície del banc de preguntes.';

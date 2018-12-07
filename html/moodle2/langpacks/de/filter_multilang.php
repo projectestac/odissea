@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_multilang', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_multilang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Mehrsprachiger Inhalt';
+$string['privacy:metadata'] = 'Der Multi-Lang-Filter speichert keine persönlichen Daten.';

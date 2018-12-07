@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'my', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   my
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['nocourses'] = 'Geen cursusinformatie';
 $string['noguest'] = '"Mijn startpagina" is niet beschikbaar voor gasten';
 $string['pinblocks'] = 'Configureer permanente blokken voor Mijn Moodle';
 $string['pinblocksexplan'] = 'Alle blokinstellingen die je hier configureert zijn zichtbaar (en niet bewerkbaar) voor alle Moodlegebruikers op hun \'Mijn Moodle\' overzichtspagina.';
+$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'De gebruikersvoorkeuren voor de startpagina.';
 $string['reseterror'] = 'Er was een fout bij het resetten van je pagina';
 $string['reseteveryonesdashboard'] = 'Startpagina op standaardinstellingen voor alle gebruikers';
 $string['reseteveryonesprofile'] = 'Profiel op standaardinstellingen voor alle gebruikers';

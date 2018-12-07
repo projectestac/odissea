@@ -13,7 +13,10 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 /**
+ * References files that should be automatically loaded
+ *
  * @package    mod_hvp
  * @copyright  2016 Joubel AS <contact@joubel.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -58,7 +61,12 @@ function hvp_autoloader($class) {
         'LongChoiceProcessor' => 'reporting/type-processors/long-choice-processor.class.php',
         'MatchingProcessor' => 'reporting/type-processors/matching-processor.class.php',
         'TrueFalseProcessor' => 'reporting/type-processors/true-false-processor.class.php',
+        'IVOpenEndedQuestionProcessor' => 'reporting/type-processors/iv-open-ended-question-processor.class.php',
         'TypeProcessor' => 'reporting/type-processors/type-processor.class.php',
+        'DocumentationToolProcessor' => 'reporting/type-processors/compound/documentation-tool-processor.class.php',
+        'GoalsPageProcessor' => 'reporting/type-processors/compound/goals-page-processor.class.php',
+        'GoalsAssessmentPageProcessor' => 'reporting/type-processors/compound/goals-assessment-page-processor.class.php',
+        'StandardPageProcessor' => 'reporting/type-processors/compound/standard-page-processor.class.php',
 
         // Plugin specific classes are loaded by Moodle.
         );

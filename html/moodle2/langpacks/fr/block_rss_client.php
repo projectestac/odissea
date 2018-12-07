@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,8 @@ $string['editnewsfeeds'] = 'Modifier les flux RSS';
 $string['editrssblock'] = 'Modifier le bloc manchette RSS';
 $string['enableautodiscovery'] = 'Activer la découverte automatique de flux ?';
 $string['enableautodiscovery_help'] = 'L\'activation de cette option permet à Moodle d\'essayer de découvrir automatiquement un flux RSS sur une page web. Par exemple, si l\'on saisit http://docs.moodle.org/fr, Moodle découvrira automatiquement le lien http://docs.moodle.org/fr/index.php?title=Special:RecentChanges&feed=rss.';
+$string['failedfeed'] = 'Échec du téléchargement du flux. Nouvelle tentative après le {$a}';
+$string['failedfeeds'] = 'Un ou plusieurs flux RSS ont échoué';
 $string['feed'] = 'Flux RSS';
 $string['feedadded'] = 'Flux RSS ajouté';
 $string['feeddeleted'] = 'Flux RSS supprimé';
@@ -63,6 +65,15 @@ $string['nofeeds'] = 'Il n\'y a pas de flux RSS défini sur ce site.';
 $string['numentries'] = 'Articles par flux';
 $string['pickfeed'] = 'Choisir un flux RSS';
 $string['pluginname'] = 'Flux RSS';
+$string['privacy:metadata:block_rss_client:description'] = 'La description du flux RSS.';
+$string['privacy:metadata:block_rss_client:preferredtitle'] = 'Le titre personnalisé du flux RSS.';
+$string['privacy:metadata:block_rss_client:shared'] = 'Si le flux RSS est disponible pour tous les cours.';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'La durée en secondes que le cron va attendre entre les tentatives infructueuses d\'accéder aux flux RSS.';
+$string['privacy:metadata:block_rss_client:skipuntil'] = 'La durée maximale durant laquelle le cron va tenter d\'ouvrir les flux RSS.';
+$string['privacy:metadata:block_rss_client:tableexplanation'] = 'Les informations du bloc RSS sont enregistrées ici.';
+$string['privacy:metadata:block_rss_client:title'] = 'Le titre du flux RSS.';
+$string['privacy:metadata:block_rss_client:url'] = 'L\'URL du flux RSS.';
+$string['privacy:metadata:block_rss_client:userid'] = 'L\'identifiant de l\'utilisateur qui a ajouté le flux RSS.';
 $string['remotenewsfeed'] = 'Flux RSS';
 $string['rss_client:addinstance'] = 'Ajouter un bloc flux RSS';
 $string['rss_client:createprivatefeeds'] = 'Créer des flux RSS privés';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,23 @@ $string['page-mod-assignment-view'] = 'Assignment module main page';
 $string['page-mod-assignment-x'] = 'Any assignment module page';
 $string['pluginadministration'] = 'Assignment 2.2 (Disabled) administration';
 $string['pluginname'] = 'Assignment 2.2 (Disabled)';
+$string['privacy:markedsubmissionspath'] = 'markedsubmissions';
+$string['privacy:metadata:assignmentfilter'] = 'Filter preference of assignment submissions.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Mail info preference for assignment submissions.';
+$string['privacy:metadata:assignmentperpage'] = 'Number of assignment submissions shown per page preference.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Quick grading preference for assignment submissions.';
+$string['privacy:metadata:assignment_submissions'] = 'Assignment submissions associated with an assignment.';
+$string['privacy:metadata:assignment_submissions:data1'] = 'The onlinetext submitted for the assignment submission.';
+$string['privacy:metadata:assignment_submissions:data2'] = 'The tracked status for the assignment submission.';
+$string['privacy:metadata:assignment_submissions:grade'] = 'The grade value awarded for the assignment submission.';
+$string['privacy:metadata:assignment_submissions:mailed'] = 'The mailed notification status of the assignment submission.';
+$string['privacy:metadata:assignment_submissions:numfiles'] = 'The maximum number of files allowed for the assignment submission.';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'The submission comment accompanying the assignment submission.';
+$string['privacy:metadata:assignment_submissions:teacher'] = 'The teacher user ID grading the assignment submission.';
+$string['privacy:metadata:assignment_submissions:timecreated'] = 'The creation date/time of the assignment submission.';
+$string['privacy:metadata:assignment_submissions:timemarked'] = 'The marking date/time of the assignment submission.';
+$string['privacy:metadata:assignment_submissions:timemodified'] = 'The modification date/time of the assignment submission.';
+$string['privacy:metadata:assignment_submissions:userid'] = 'The user ID submitting the assignment submission.';
+$string['privacy:submissionpath'] = 'submission';
 $string['upgradenotification'] = 'This activity is based on an older assignment module.';
 $string['viewassignmentupgradetool'] = 'View the assignment upgrade tool';

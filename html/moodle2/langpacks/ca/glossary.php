@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -333,11 +333,11 @@ $string['rsstype_help'] = '<p>Aquesta opció us permet habilitar alimentacions R
 <li><b>Amb autor:</b> les alimentacions generades inclouran el nom de l\'autor de cada article.</li>
 <li><b>Sense autor:</b> les alimentacions generades no inclouran el nom de l\'autor de cada article.</li>
 </ul>';
-$string['search:activity'] = 'Glossari - Informació de l\'activitat';
+$string['search:activity'] = 'Glossari: informació de l\'activitat';
 $string['search:entry'] = 'Glossari - Entrades';
 $string['searchindefinition'] = 'Cerca en tot el text';
 $string['secondaryglossary'] = 'Glossari secundari';
-$string['showall'] = 'Mostra l\'enllaç \'Tot\'';
+$string['showall'] = 'Mostra l\'enllaç «Tot»';
 $string['showall_help'] = '<p>Podeu personalitzar l\'estil de navegació d\'un glossari. Sempre es pot navegar i cercar, però podeu definir tres opcions més:</p>
 
 <p><b>MOSTRA ESPECIAL</b> Habilita o inhabilita la navegació de caràcters especials com ara @, #, etc.</p>

@@ -27,7 +27,12 @@
 }
 
 .assignfeedback_editpdf_widget .drawingregion[data-currenttool=select] .drawingcanvas {
-    cursor: pointer;
+    cursor: default;
+}
+
+.assignfeedback_editpdf_widget .drawingregion[data-currenttool=select] .commentdrawable textarea,
+.assignfeedback_editpdf_widget .drawingregion[data-currenttool=select] .commentdrawable svg {
+    cursor: move;
 }
 
 .assignfeedback_editpdf_widget .drawingregion {
@@ -39,6 +44,7 @@
     position: absolute;
     overflow: auto;
     background-color: #ccc;
+    touch-action: none;
 }
 
 .assignfeedback_editpdf_widget {
@@ -127,6 +133,7 @@
 
 .assignfeedback_editpdf_widget .pageheader .toolbar,
 .assignfeedback_editpdf_widget .pageheader .navigation-search,
+.assignfeedback_editpdf_widget .pageheader .navigation-expcol,
 .assignfeedback_editpdf_widget .pageheader .navigation {
     border: 1px solid #ccc;
     border-bottom-color: #b3b3b3;
@@ -165,8 +172,13 @@
 }
 
 .assignfeedback_editpdf_widget .navigation-search,
+.assignfeedback_editpdf_widget .navigation-expcol,
 .assignfeedback_editpdf_widget .navigation {
     float: left;
+}
+
+.assignfeedback_editpdf_widget .toolbar_group {
+    float: right;
 }
 
 .assignfeedback_editpdf_widget .toolbar button {
@@ -176,11 +188,12 @@
 }
 
 .assignfeedback_editpdf_widget .toolbar {
-    float: right;
+    float: left;
 }
 
 .assignfeedback_editpdf_widget .navigation,
 .assignfeedback_editpdf_widget .navigation-search,
+.assignfeedback_editpdf_widget .navigation-expcol,
 .assignfeedback_editpdf_widget .toolbar {
     display: inline-block;
 }
@@ -325,8 +338,40 @@ ul.assignfeedback_editpdf_menu {
     min-height: 1.2em;
 }
 
+.assignfeedback_editpdf_widget .commentdrawable textarea:focus {
+    outline: thin dotted #333;
+    outline-color: -webkit-focus-ring-color;
+    outline-width: 5px;
+    outline-style: auto;
+    outline-offset: -2px;
+}
+
 .assignfeedback_editpdf_widget .commentdrawable {
+    display: flex;
+    z-index: 1;
+}
+
+.assignfeedback_editpdf_widget .commentdrawable label {
     display: inline-block;
+}
+
+.assignfeedback_editpdf_widget .commentdrawable svg {
+    display: none;
+}
+
+.assignfeedback_editpdf_widget .commentdrawable.commentcollapsed {
+    z-index: auto;
+}
+
+.assignfeedback_editpdf_widget .commentdrawable.commentcollapsed textarea,
+.assignfeedback_editpdf_widget .commentdrawable.commentcollapsed a {
+    display: none;
+}
+
+.assignfeedback_editpdf_widget .commentdrawable.commentcollapsed svg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }
 
 .assignfeedback_editpdf_widget .drawingcanvas .loading .progressbarlabel {
@@ -353,6 +398,7 @@ ul.assignfeedback_editpdf_menu {
         position: relative;
         margin-bottom: 1em;
         top: 0;
+        max-height: 312px;
     }
 
     .assignfeedback_editpdf_widget .pageheader {

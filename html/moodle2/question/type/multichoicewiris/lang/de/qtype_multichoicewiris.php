@@ -29,3 +29,4 @@ $string['pluginname_help'] = 'Wie bei der standardmäßigen Multiple-Choice-Frag
 $string['pluginnamesummary'] = 'Wie bei der standardmäßigen Multiple-Choice-Frage. Allerdings können Sie vielfältige Fragetexte und Auswahlmöglichkeiten durch Einfügen von zufälligen Zahlen, Formeln oder grafischen Darstellungen erstellen. Die Zufallswerte können auch für das Feedback verwendet werden.';
 $string['pluginnameadding'] = 'Multiple-Choice-Frage hinzufügen – Mathematik und Naturwissenschaften von WIRIS';
 $string['pluginnameediting'] = 'Multiple-Choice-Frage bearbeiten – Mathematik und Naturwissenschaften von WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Multi Choice question type does not effect or store any data itself.';

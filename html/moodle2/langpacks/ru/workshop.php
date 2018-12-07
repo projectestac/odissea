@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -177,6 +177,7 @@ $string['gradinggradeover'] = 'Переопределить баллы за оц
 $string['gradingsettings'] = 'Параметры оценивания';
 $string['groupnoallowed'] = 'Вы не можете получить доступ к любой группе в этом семинаре';
 $string['iamsure'] = 'Да, я уверен(а)';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Семинар.';
 $string['info'] = 'Информация';
 $string['instructauthors'] = 'Инструкции для работы';
 $string['instructreviewers'] = 'Инструкции по оценке';
@@ -299,12 +300,18 @@ $string['subplugintype_workshopform'] = 'Стратегия оценивания
 $string['subplugintype_workshopform_plural'] = 'Стратегии оценивания';
 $string['switchingphase'] = 'Переключение фазы';
 $string['switchphase'] = 'Переключить фазу';
+$string['switchphase10'] = 'Переключиться на фазу настройки';
 $string['switchphase10info'] = 'Вы собираетесь переключить семинар в фазу <strong> «Настройка»</strong>. В этой фазе пользователи не могут изменять свои работы или оценки работ. Преподаватели могут использовать эту фазу для изменения настроек семинара, изменения стратегии оценивания и корректировки формы оценивания.';
+$string['switchphase20'] = 'Переключиться на фазу подачи';
 $string['switchphase20info'] = 'Вы собираетесь переключить семинар в фазу <strong> «Представление»</strong>. В этой фазе студенты могут представить свои работы (в течение срока для представления, если он задан). Преподаватели могут распределять работы для рецензирования сокурсниками.';
+$string['switchphase30'] = 'Переключение к фазе оценивания';
 $string['switchphase30auto'] = 'После {$a->daydatetime} ({$a->distanceday}) семинар будет автоматически переключаться в фазу оценивания';
 $string['switchphase30info'] = 'Вы собираетесь переключить семинар в фазу<strong> «Оценивание»</strong>. В этой фазе рецензенты могут оценивать представленные работы (в течение срока для оценки, если он задан).';
+$string['switchphase40'] = 'Переключение к фазе оценивания';
 $string['switchphase40info'] = 'Вы собираетесь переключить семинар в фазу <strong> «Оценивание оценок»</strong>. В этой фазе пользователи не могут изменять свои работы и оценки работ. Преподаватели могут использовать инструменты оценивания оценок для расчета итоговых оценок и предоставлять отзывы для рецензентов.';
+$string['switchphase50'] = 'Семинар окончен';
 $string['switchphase50info'] = 'Вы собираетесь закрыть семинар. Это приведет к появлению вычисленных оценок в журнале оценок. Студенты смогут просматривать свои работы и их оценки.';
+$string['switchphaseauto'] = 'Запланированное переключение';
 $string['switchphasenext'] = 'Переключиться к следующей фазе';
 $string['taskassesspeers'] = 'Оценки сокурсников';
 $string['taskassesspeersdetails'] = 'итог: {$a->total}<br />ожидается: {$a->todo}';
@@ -337,6 +344,7 @@ $string['useselfassessment'] = 'Использовать самооценки';
 $string['useselfassessment_desc'] = 'Студенты могут оценивать свою собственную работу';
 $string['useselfassessment_help'] = 'Если параметр включен, то
 пользователь может оценить собственную работу и получит баллы за оценивание в дополнение к оценке за свою работу.';
+$string['viewworkshopsummary'] = 'Посмотреть итоги семинара';
 $string['weightinfo'] = 'Вес: {$a}';
 $string['withoutsubmission'] = 'Рецензент без собственной работы';
 $string['workshop:addinstance'] = 'Добавлять новый семинар';

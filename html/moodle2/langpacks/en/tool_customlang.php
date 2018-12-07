@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_customlang', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_customlang
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,5 +56,6 @@ $string['placeholder_help'] = 'Placeholders are special statements like `{$a}` o
 It is important to copy them exactly as they are in the original string. Do not translate them nor change their left-to-right orientation.';
 $string['placeholderwarning'] = 'string contains a placeholder';
 $string['pluginname'] = 'Language customisation';
+$string['privacy:metadata'] = 'The Language customisation plugin does not store any personal data.';
 $string['savecheckin'] = 'Save changes to the language pack';
 $string['savecontinue'] = 'Apply changes and continue editing';

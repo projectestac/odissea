@@ -1,4 +1,4 @@
-Plugin local Clickedu (Moodle 3.2)
+Plugin local Clickedu (Moodle 3.3 i 3.4)
 ==================================
 
 Este plugin integra Moodle con la plataforma Clickedu.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,7 @@ $string['pluginname_help'] = 'ドラッグ＆ドロップマーカーは背景�
 $string['pluginnamesummary'] = '背景イメージにマーカーをドラッグ＆ドロップします。';
 $string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージファイルを選択してマーカーのテキストラベルを入力した後、ドラッグされるための背景イメージのドロップゾーンを定義してください。';
+$string['privacy:metadata'] = 'ドラッグ＆ドロップマーカー問題タイププラグインはどのような個人データも保存しません。';
 $string['refresh'] = 'プレビューをリフレッシュする';
 $string['shape'] = '形状';
 $string['shape_circle'] = '円';

@@ -33,3 +33,4 @@ $string['pluginnamesummary'] = 'Questo tipo di risposta breve è simile alla tip
 $string['pluginnameediting'] = 'Modificare una risposta breve - domanda di matematica e scienza WIRIS';
 $string['pluginnameadding'] = 'Aggiungere una risposta breve - domanda di matematica e scienza WIRIS';
 $string['contentnotviewable'] = 'Impossibile visualizzare il contenuto.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Short-Answer question type does not effect or store any data itself.';

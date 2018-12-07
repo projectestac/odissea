@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_capability', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['forroles'] = 'Für Rolle {$a}';
 $string['getreport'] = 'Bericht aufrufen';
 $string['intro'] = 'Der Bericht zeigt für ein einzelnes Recht, welche Erlaubnisse sich in allen Rollen (oder in einer Rollenauswahl) daraus ergeben und wo überall das Recht geändert wurde.';
 $string['pluginname'] = 'Rechteübersicht';
+$string['privacy:metadata'] = 'Das Plugin für den Berechtigungsüberblick speichert keine persönlichen Daten';
 $string['reportforcapability'] = 'Übersicht für das Recht \'{$a}\':';
 $string['reportsettings'] = 'Einstellungen';
 $string['roleslabel'] = 'Rollen:';

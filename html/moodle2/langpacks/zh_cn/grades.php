@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,7 +110,6 @@ $string['calculationsaved'] = '计算方法已保存';
 $string['calculationview'] = '查看计算方法';
 $string['cannotaccessgroup'] = '无法访问所选组的成绩，抱歉。';
 $string['categories'] = '类别';
-$string['categoriesanditems'] = '类别和项';
 $string['category'] = '类别';
 $string['categoryedit'] = '编辑类别';
 $string['categoryname'] = '类别名称';

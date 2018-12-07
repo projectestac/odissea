@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['pluginnameadding'] = 'Gehitu Zenbakizko galdera';
 $string['pluginnameediting'] = 'Zenbakizko galdera editatzen';
 $string['pluginname_help'] = 'Ikaslearen ikuspuntutik, zenbakizko galdera bat erantzun laburreko galdera baten modukoa da. Ezberdintasuna zenbakizko erantzunek errore onargarri bat izan dezaketela da. Honek muga batzuen barruko erantzunak erantzun bakar gisa kalifikatzeko aukera ematen du. Esaterako, erantzun zuzena 10 bada eta errore onargarria 2 bada, 8 eta 12 arteko erantzun guztiak zuzentzat hartuko dira.';
 $string['pluginnamesummary'] = 'Zenbakizko erantzun bat behar du, gehienetan unitatetan, eta erantzun-tarte batekin alderatuta kalifikatzen da, malgutasun-tartearekin.';
+$string['privacy:metadata'] = 'Zenbakizkoa galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['relative'] = 'Erlatiboa';
 $string['rightexample'] = 'eskuinean, adibidez 1.00cm edo 1.00km';
 $string['selectunit'] = 'Aukera ezazu unitate bat';

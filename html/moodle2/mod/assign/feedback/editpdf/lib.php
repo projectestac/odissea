@@ -33,6 +33,7 @@ defined('MOODLE_INTERNAL') || die();
  * @param string $filearea
  * @param array $args
  * @param bool $forcedownload
+ * @param array $options - List of options affecting file serving.
  * @return bool false if file not found, does not return if found - just send the file
  */
 function assignfeedback_editpdf_pluginfile($course,
@@ -40,26 +41,27 @@ function assignfeedback_editpdf_pluginfile($course,
                                            context $context,
                                            $filearea,
                                            $args,
-                                           $forcedownload) {
+                                           $forcedownload,
+                                           array $options=array()) {
     global $USER, $DB, $CFG;
+
+    require_once($CFG->dirroot . '/mod/assign/locallib.php');
 
     if ($context->contextlevel == CONTEXT_MODULE) {
 
         require_login($course, false, $cm);
         $itemid = (int)array_shift($args);
 
-        if (!$assign = $DB->get_record('assign', array('id'=>$cm->instance))) {
-            return false;
-        }
+        $assign = new assign($context, $cm, $course);
 
-        $record = $DB->get_record('assign_grades', array('id'=>$itemid), 'userid,assignment', MUST_EXIST);
+        $record = $DB->get_record('assign_grades', array('id' => $itemid), 'userid,assignment', MUST_EXIST);
         $userid = $record->userid;
-        if ($assign->id != $record->assignment) {
+        if ($assign->get_instance()->id != $record->assignment) {
             return false;
         }
 
-        // Check is users feedback or has grading permission.
-        if ($USER->id != $userid and !has_capability('mod/assign:grade', $context)) {
+        // Rely on mod_assign checking permissions.
+        if (!$assign->can_view_submission($userid)) {
             return false;
         }
 
@@ -72,7 +74,7 @@ function assignfeedback_editpdf_pluginfile($course,
             return false;
         }
         // Download MUST be forced - security!
-        send_stored_file($file, 0, 0, true);// Check if we want to retrieve the stamps.
+        send_stored_file($file, 0, 0, true, $options);// Check if we want to retrieve the stamps.
     }
 
 }

@@ -31,8 +31,8 @@ class moodle1_qtype_multianswerwiris_handler extends moodle1_qtype_multianswer_h
         return array(
             'ANSWERS/ANSWER',
             'MULTIANSWERS/MULTIANSWER',
-            'MULTIANSWERWIRIS',
-            'MULTIANSWERWIRIS/WIRISOPTIONS'
+            'MULTIANSWERWiris',
+            'MULTIANSWERWiris/WirisOPTIONS'
         );
     }
 

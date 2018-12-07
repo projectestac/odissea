@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_paypal', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_paypal
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,9 @@ $string['enrolperiod_desc'] = 'Matrikulazioaren berezko iraupena. Zero ezarriz g
 $string['enrolperiod_help'] = 'Matrikulazioaren iraupena, erabiltzaileak bere burua matrikulatzen duen unetik hasita. Desgaituz gero, matrikulazioa mugarik gabekoa izango da.';
 $string['enrolstartdate'] = 'Hasiera-data';
 $string['enrolstartdate_help'] = 'Gaituz gero, erabiltzaileek data honetatik aurrera soilik matrikulatu ahalko dute.';
+$string['errdisabled'] = 'PayPal matrikulazio-plugina desgaituta dago eta ez du ordainketa-jakinarazpenik kudeatzen.';
+$string['erripninvalid'] = 'Bat-bateko ordainketaren jakinarazpena ez da PayPal bitartez egiaztatu.';
+$string['errpaypalconnect'] = 'Ezin izan da {$a->url} helbidera konektatu bat-bateko ordainketaren jakinarazpena egiaztatzeko: {$a->result}';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['mailadmins'] = 'Jakinarazi kudeatzaileari';
@@ -56,7 +59,35 @@ $string['paypal:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['paypal:unenrolself'] = 'Norbera ikastararotik desmatrikulatu';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'PayPal moduluak ordaindutako ikastaroak konfiguratzeko aukera ematen du. Ikastaroren bateko kostua zero bada ikasleei ikastaroan sartzeko ez zaie ordaintzea eskatuko. Berezko gune mailako kostua zehazten da hemen eta ondoren ikastaro bakoitzaren ezarpenetan kostua zehaz daiteke. Ikastaroaren kostuak gune mailakoa baliogabetzen du.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'PayPal matrikulazioetarako PayPal transakzioen inguruko informazioa.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Ordainketaren jasotzailearen e-posta helbidea edo PayPal kontuaren IDa (hau da, saleroslea).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'Saltzen den ikastaroaren IDa.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'Ikastaroaren matrikulazio-instantziaren IDa.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = 'Saldu den matrikularen ikastaroaren izen osoa.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'Erosleak PayPal webgunean ordainketa-oharraren eremuan idatzitako oharra.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'Eroslearen izen osoa.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'Itzulketa, atzera botatzea edo bertan behera utzi eta atzera botatzea gertatzekotan, hau izango da jatorrizko transakzioaren transakzio-IDa.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'Ordainketaren egoera.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Ordainketa eCheck baten bitartez (echeck), PayPal balantzearekin, kreditu-txartelarekin edo bat-bateko transferentziarekin (instant) egin den gordetzen du.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Ordainketa ordaindu gabe egotearen arrazoia (ordaindu gabe dagoenean).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'Ordainketa atzera botata (Reversed), itzulita (Refunded), bertan behera utzi eta atzera botata (Canceled_Reversal) edo ukatua (Denied) egotearen arrazoia (egoera horietako bat denean).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Ordainketaren jasotzailearen e-posta helbidea (hau da, saleroslea).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Ordainketaren jasotzailearen PayPal kontuaren IDa (hau da, saleroslea).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = 'Ordainketa egitean kobratutako zerga kopurua.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = 'Moodle-ri PayPal-eko ordainketa buruz jakinarazi zaion unea.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Saleroslean jatorrizko transakzioaren eroslearen ordainketaren zenbaki identifikatzailea, kasua erregistratu duena hain zuzen ere.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'Ikastaro-matrikulazioa erosi zuen erabiltzailearen IDa.';
+$string['privacy:metadata:enrol_paypal:paypal_com'] = 'PayPal matrikulazio-pluginak erabiltzaile-datuak Moodle-tik PayPal-eko webgunera bidaltzen ditu.';
+$string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'Ikastaroa erosten ari den erabiltzailearen helbidea.';
+$string['privacy:metadata:enrol_paypal:paypal_com:city'] = 'Ikastaroa erosten ari den erabiltzailearen hiria.';
+$string['privacy:metadata:enrol_paypal:paypal_com:country'] = 'Ikastaroa erosten ari den erabiltzailearen herrialdea.';
+$string['privacy:metadata:enrol_paypal:paypal_com:custom'] = 'Erabiltzailearen (eroslea) IDa, ikastaroaren IDa eta matrikulazio-instantziaren IDa dituen gidoiaz banatutako katea.';
+$string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Ikastaroa erosten ari den erabiltzailearen e-posta helbidea.';
+$string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Ikastaroa erosten ari den erabiltzailearen izena.';
+$string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Ikastaroa erosten ari den erabiltzailearen abizena.';
+$string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Ikastaroa erosten ari den erabiltzailearen izen osoa.';
 $string['sendpaymentbutton'] = 'Paypal bidezko ordainketa bidali';
 $string['status'] = 'Baimendu PayPal bidezko matrikulazioa';
 $string['status_desc'] = 'Baimendu erabiltzaileak PayPal erabiltzen ikastaro batean matrikulatzeko berezko balore gisa.';
+$string['transactions'] = 'PayPal-eko transakzioak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';

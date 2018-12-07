@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mimetypes', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,7 +71,7 @@ $string['group:web_video'] = 'Webean erabilitako bideo-fitxategiak';
 $string['image'] = 'Irudia ({$a->MIMETYPE2})';
 $string['image/vnd.microsoft.icon'] = 'Windows-eko ikonoa';
 $string['text/css'] = 'Kaskadako estilo-orriak (CSS)';
-$string['text/csv'] = 'Komek banatutako baloreak';
+$string['text/csv'] = 'Komek banatutako baloreak (CSV)';
 $string['text/html'] = 'HTML dokumentua';
 $string['text/plain'] = 'Testu-fitxategia';
 $string['text/rtf'] = 'RTF dokumentua';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_user', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_user', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['configplugin'] = 'Configurar repositório "Ficheiros privados de utiliz
 $string['emptyfilelist'] = 'O repositório está vazio';
 $string['pluginname'] = 'Ficheiros privados ';
 $string['pluginname_help'] = 'Ficheiros na área privada do utilizador';
+$string['privacy:metadata'] = 'O módulo Ficheiros privados não armazena ou transmite dados pessoais.';
 $string['user:view'] = 'Ver ficheiros privados de utilizador';

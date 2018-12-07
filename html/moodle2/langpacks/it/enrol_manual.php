@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Avanzato';
 $string['alterstatus'] = 'Modifica lo stato';
 $string['altertimeend'] = 'Modifica data di fine';
 $string['altertimestart'] = 'Modifica data di inizio';
 $string['assignrole'] = 'Assegna ruolo';
+$string['assignroles'] = 'Assegna ruoli';
 $string['browsecohorts'] = 'Sfoglia gruppi globali';
 $string['browseusers'] = 'Sfoglia utenti';
 $string['confirmbulkdeleteenrolment'] = 'Sei sicuro di eliminare queste iscrizioni ?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Elimina le iscrizioni selezionate';
 $string['editselectedusers'] = 'Modifica le iscrizioni selezionate';
 $string['enrolledincourserole'] = 'Iscritto al corso "{$a->course}" con il ruolo di "{$a->role}"';
 $string['enrolusers'] = 'Iscrivi utenti';
+$string['enroluserscohorts'] = 'Iscrivi gli utenti e i gruppi globali selezionati';
 $string['expiredaction'] = 'Azione alla scadenza dell\'iscrizione';
 $string['expiredaction_help'] = 'L\'azione da compiere quando scade l\'iscrizione di un partecipante. Da notare che alcuni dati verranno eliminati per effetto della disiscrizione.';
 $string['expirymessageenrolledbody'] = 'Gentile {$a->user},
@@ -64,6 +67,10 @@ $string['messageprovider:expiry_notification'] = 'Notifiche di scadenza iscrizio
 $string['now'] = 'Adesso';
 $string['pluginname'] = 'Iscrizione manuale';
 $string['pluginname_desc'] = 'Il plugin Iscrizione manuale consente di iscrivere manualmente gli utenti ai corsi sia tramite un link nell\'Amministrazione del corso, sia da parte di un utente in possesso dei privilegi necessari, ad esempio un docente. Di norma questo plugin dovrebbe essere abilitato poiché altri plugin di iscrizione, come ad esempio le iscrizioni spontanee, lo richiedono.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "Iscrizione manuale" non memorizza dati personali.e';
+$string['selectcohorts'] = 'Seleziona gruppi globali';
+$string['selection'] = 'Selezione';
+$string['selectusers'] = 'Seleziona utenti';
 $string['status'] = 'Abilita iscrizione manuale';
 $string['status_desc'] = 'Consente l\'accesso ai corsi da parte di utenti iscritti manualmente. Di norma deve rimanere abilitato.';
 $string['statusdisabled'] = 'Disabilitato';

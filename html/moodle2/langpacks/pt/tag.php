@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Foram adicionadas palavras-chave oficiais';
-$string['addedotag'] = '"{$a}" foi adicionada como palavra-chave oficial.';
 $string['addotags'] = 'Adicionar palavras-chave';
 $string['addtagcoll'] = 'Adicionar coleção de palavras-chave';
 $string['addtagtomyinterests'] = 'Adicionar "{$a}" aos meus interesses';
@@ -34,7 +33,7 @@ $string['alltagpages'] = 'Todas as páginas de palavras-chave';
 $string['backtoallitems'] = 'Regressar a todos os itens com a palavra-chave "{$a}"';
 $string['changename'] = 'Alterar nome da palavra-chave';
 $string['changeshowstandard'] = 'Alterar exibição das palavras-chave oficiais na área {$a}';
-$string['changessaved'] = 'Alterações gravadas';
+$string['changessaved'] = 'Alterações guardadas';
 $string['changetagcoll'] = 'Alterar a coleção de palavras-chave da área {$a}';
 $string['changetype'] = 'Alterar tipo da palavra-chave';
 $string['collnameexplained'] = 'Deixe o campo em branco para utilizar o valor predefinido: {$a}';
@@ -90,7 +89,6 @@ $string['name'] = 'Nome da palavra-chave';
 $string['namesalreadybeeingused'] = 'Nomes de palavras-chave já utilizados';
 $string['nameuseddocombine'] = 'Já existe uma palavra-chave com este nome. Pretende combinar estas palavras-chave?';
 $string['newcollnamefor'] = 'Novo nome para a coleção de palavras-chave {$a}';
-$string['newname'] = 'Novo nome da palavra-chave';
 $string['newnamefor'] = 'Novo nome para a palavra-chave {$a}';
 $string['nextpage'] = 'Mais';
 $string['noresultsfor'] = 'Não foram devolvidos resultados para "{$a}"';
@@ -105,6 +103,19 @@ $string['page-tag-manage'] = 'Gerir página de palavras-chave';
 $string['page-tag-search'] = 'Pesquisa na página de palavras-chave';
 $string['page-tag-x'] = 'Todas as páginas de palavras-chave';
 $string['prevpage'] = 'Voltar';
+$string['privacy:metadata:tag'] = 'Os detalhes de cada palavra-chave são armazenados juntamente com a sua descrição e outras informações relacionadas';
+$string['privacy:metadata:tag:description'] = 'A descrição da palavra-chave.';
+$string['privacy:metadata:tag:flag'] = 'Se uma palavra-chave foi sinalizada como inadequada.';
+$string['privacy:metadata:taginstance'] = 'A hiperligação entre cada palavra-chave e onde é usada.';
+$string['privacy:metadata:taginstance:ordering'] = 'A ordem relativa desta palavra-chave.';
+$string['privacy:metadata:taginstance:tagid'] = 'A hiperligação para a palavra-chave.';
+$string['privacy:metadata:taginstance:timecreated'] = 'A data/hora em que esta palavra-chave foi ligada ao objetivo.';
+$string['privacy:metadata:taginstance:timemodified'] = 'A data/hora em que esta palavra-chave foi modificada para o objetivo.';
+$string['privacy:metadata:taginstance:tiuserid'] = 'Onde o conteúdo partilhado pode ser marcado individualmente pelos utilizadores, o proprietário da instância da palavras-chave é armazenado.';
+$string['privacy:metadata:tag:name'] = 'O nome da palavra-chave - Isto é uma versão normalizada do nome.';
+$string['privacy:metadata:tag:rawname'] = 'O nome da palavras-chave - nome que é mostrado.';
+$string['privacy:metadata:tag:timemodified'] = 'A última vez que a palavra-chave foi modificada.';
+$string['privacy:metadata:tag:userid'] = 'O ID do utilizador que criou a palavra-chave pela primeira vez.';
 $string['ptags'] = 'Palavras-chave definidas pelo utilizador (separadas por vírgulas)';
 $string['relatedblogs'] = 'Entradas de blogue mais recentes';
 $string['relatedtags'] = 'Palavras-chave relacionadas';
@@ -147,20 +158,15 @@ $string['tagarea_post'] = 'Entradas de blogue';
 $string['tagareas'] = 'Áreas de palavras-chave';
 $string['tagarea_user'] = 'Interesses do utilizador';
 $string['tagcollection'] = 'Coleção de palavras-chave';
-$string['tagcollection_help'] = 'Coleções de palavras-chave são conjuntos de palavras-chave para áreas diferentes. Por exemplo, pode dispor de uma coleção de palavras-chave oficiais usada para disciplinas sendo as palavras-chave para blogues e interesses do utilizador mantidas numa coleção spearada. Quando um utilizador clica numa palavra-chave, a página da palavra-chave mostra apenas itens com essa palavra-chave na mesma coleção. As palavras-chave podem ser adicionadas automaticamente a uma coleção consoante a área em que são aplicadas ou podem ser adicionadas manualmente como palavras chave oficiais.';
+$string['tagcollection_help'] = 'Coleções de palavras-chave são conjuntos de palavras-chave para áreas diferentes. Por exemplo, pode dispor de uma coleção de palavras-chave oficiais usada para disciplinas sendo as palavras-chave para blogues e interesses do utilizador mantidas numa coleção separada. Quando um utilizador clica numa palavra-chave, a página da palavra-chave mostra apenas itens com essa palavra-chave na mesma coleção. As palavras-chave podem ser adicionadas automaticamente a uma coleção consoante a área em que são aplicadas ou podem ser adicionadas manualmente como palavras chave oficiais.';
 $string['tagcollections'] = 'Coleções de palavras-chave';
 $string['tagdescription'] = 'Descrição da palavra-chave';
 $string['taggedwith'] = 'Com a palavra-chave "{$a}"';
 $string['tags'] = 'Palavras-chave';
 $string['tagsaredisabled'] = 'As palavras-chave estão desativadas';
 $string['tagtype'] = 'Tipo de palavra-chave';
-$string['tagtype_default'] = 'Predefinido';
-$string['tagtype_official'] = 'Oficial';
 $string['thingstaggedwith'] = '<b>{$a->count}</b> coisas sinalizadas com "{$a->name}"';
 $string['thingtaggedwith'] = '"{$a->name}" é usado uma vez';
-$string['thistaghasnodesc'] = 'Atualmente, esta palavra-chave não contém qualquer descrição';
 $string['timemodified'] = 'Alterada';
 $string['typechanged'] = 'O tipo de palavra-chave foi alterado';
-$string['updated'] = 'Atualizada';
 $string['updatetag'] = 'Atualizar';
-$string['withselectedtags'] = 'Com as palavras-chave selecionadas...';

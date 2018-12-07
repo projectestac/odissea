@@ -10,4 +10,3 @@ Feature: Atto collapse button
     Then "Equation editor" "button" should be visible
     And I click on "Show fewer buttons" "button"
     Then "Equation editor" "button" should not be visible
-

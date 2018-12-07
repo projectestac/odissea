@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_bootstrapbase', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_bootstrapbase', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_bootstrapbase
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,5 +68,6 @@ on the Moodle tracker</p>
 </a></li>
 </ul>';
 $string['pluginname'] = 'Bootstrap Base';
+$string['privacy:metadata'] = 'bootstrapbaseテーマはすべてのユーザに関してどのような個人データも保存しません。';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';

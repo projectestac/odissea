@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'Comando:';
 $string['comment'] = 'Comentarios';
 $string['commentcolour'] = 'Color del comentario';
 $string['commentcontextmenu'] = 'Menú contextual del comentario';
+$string['commentindex'] = 'Índice de comentarios';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'No se pudo guardar la página {$a}';
 $string['currentstamp'] = 'Sello';
 $string['deleteannotation'] = 'Eliminar anotación';
@@ -68,7 +70,6 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Página {$a}';
 $string['pagexofy'] = 'Página {$a->page} de {$a->total}';
 $string['pathtogspathdesc'] = 'Por favor tenga en cuenta que la anotación de PDF requiere que la ruta de ghostscript sea especificada en {$a}.';
-$string['pathtounoconvpathdesc'] = 'Por favor tenga cuenta que comentar un PDF requiere que la ruta a unoconv se establezca en {$a}';
 $string['pen'] = 'Pluma';
 $string['pluginname'] = 'Anotación PDF';
 $string['preparesubmissionsforannotation'] = 'Preparar los envíos para la anotación';
@@ -88,14 +89,6 @@ $string['test_isdir'] = 'El PATH de ghostscript apunta a un directorio, por favo
 $string['test_notestfile'] = 'Falta test de PDF';
 $string['test_notexecutable'] = 'Ghostscript apunta a un fichero no ejecutable';
 $string['test_ok'] = 'La ruta de ghostscript parece estar correcta - por favor compruebe que pueda ver la imagen a continuación';
-$string['test_unoconv'] = 'Ruta de test de unoconv';
-$string['test_unoconvdoesnotexist'] = 'La ruta de unoconv no apunta al programa unoconv. Por favor revisa la configuración de la ruta.';
-$string['test_unoconvdownload'] = 'Descargar el archivo de prueba convertido PDF';
-$string['test_unoconvisdir'] = 'La ruta de unoconv apunta a un directorio, por favor incluye el programa unoconv en la ruta que ha especificado.';
-$string['test_unoconvnotestfile'] = 'El documento de prueba que ha de ser convertido a PDF no existe';
-$string['test_unoconvnotexecutable'] = 'La ruta unoconv apunta a un fichero que no es ejecutable.';
-$string['test_unoconvok'] = 'La ruta de unoconv parece estar configurada correctamente.';
-$string['test_unoconvversionnotsupported'] = 'La versión de unoconv instalada no está soportada. La característica de calificar tareas de Moodle requiere la versión 0.7 o superior.';
 $string['tool'] = 'Herramienta';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Ver PDF con anotaciones...';

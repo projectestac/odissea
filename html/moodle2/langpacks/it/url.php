@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,10 @@ $string['displayselect_help'] = 'L\'impostazione, assieme al tipo di URL e ciò 
 * Nuova finestra - L\'URL sarà visualizzato in una nuova finestra completa di barre dei menu e di navigazione.';
 $string['externalurl'] = 'URL';
 $string['framesize'] = 'Altezza frame';
+$string['indicator:cognitivedepth'] = 'URL cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse \'URL\'.';
+$string['indicator:socialbreadth'] = 'URL sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'URL\'.';
 $string['invalidstoredurl'] = 'Non è possibile visualizzare la risorsa, l\'URL non è valida';
 $string['invalidurl'] = 'L\'URL inserito non è valido';
 $string['modulename'] = 'URL';
@@ -67,6 +71,7 @@ $string['popupwidth'] = 'Larghezza popup (in pixel)';
 $string['popupwidthexplain'] = 'Larghezza di default per le finestre popup.';
 $string['printintro'] = 'Visualizza la descrizione dell\'URL';
 $string['printintroexplain'] = 'Consente di visualizzare la descrizione dell\'URL sotto il contenuto. enere presente che alcuni tipi di visualizzazione potrebbero non rispettare questa impostazione.';
+$string['privacy:metadata'] = 'Il plugin mod_url non memorizza dati personali.';
 $string['rolesinparams'] = 'Includi nei parametri i nomi dei ruoli';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL server';

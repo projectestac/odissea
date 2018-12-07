@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_indent', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_indent', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_indent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'Aumenta rientro';
 $string['outdent'] = 'Riduci rientro';
 $string['pluginname'] = 'Rientro';
+$string['privacy:metadata'] = 'Il plugin atto_indent non memorizza dati personali.';

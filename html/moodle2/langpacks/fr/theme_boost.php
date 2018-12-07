@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_boost', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_boost
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsettings'] = 'Réglages avancés';
+$string['backgroundimage'] = 'Image de fond';
+$string['backgroundimage_desc'] = 'L\'image à afficher comme arrière-plan du site. L\'image de fond déposée ici remplacera l\'image de fond définie dans vos fichiers de préréglages de thème.';
 $string['brandcolor'] = 'Couleur principale';
 $string['brandcolor_desc'] = 'La couleur majeure du thème.';
 $string['choosereadme'] = 'Boost est un thème moderne hautement personnalisable. Ce thème est destiné à être utilisé directement ou comme thème parent lors de la création de nouveaux thèmes basés sur Bootstrap 4.';
@@ -37,6 +39,7 @@ $string['preset'] = 'Préréglage de thème';
 $string['preset_desc'] = 'Veuillez choisir un préréglage pour modifier l\'aspect du thème.';
 $string['presetfiles'] = 'Fichiers de réglages additionnels pour le thème';
 $string['presetfiles_desc'] = 'Des fichiers de réglages peuvent être utilisés afin de changer totalement la présentation du thème. Voir <a href=https://docs.moodle.org/dev/Boost_Presets>Boost presets</a>  pour des informations sur la façon de créer et partager vos propres fichiers de réglages et consultez le <a href=http://moodle.net/boost>catalogue des fichiers de réglages</a> existants.';
+$string['privacy:metadata'] = 'Le thème Boost n\'enregistre aucune donnée personnelle.';
 $string['rawscss'] = 'SCSS brut';
 $string['rawscss_desc'] = 'Ce champ permet d\'indiquer du code SCSS ou CSS qui sera injecté à la fin de la feuille de styles.';
 $string['rawscsspre'] = 'Code SCSS initial';

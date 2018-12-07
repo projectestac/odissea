@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,7 @@ $string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa área 
 $string['pluginnamesummary'] = 'Os marcadores podem ser arrastados e largados em zonas predefinidas para largar, numa imagem de fundo.';
 $string['previewareaheader'] = 'Pré-visualização';
 $string['previewareamessage'] = 'Selecione um ficheiro de imagem de fundo, insira os seus quadros de texto para marcadores e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa área não armazena quaisquer dados pessoais.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shape'] = 'Forma';
 $string['shape_circle'] = 'Círculo';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,6 @@ $string['langpackupdateskipped'] = 'تم تخطي تحديث حزمة اللغة
 $string['langupdatecomplete'] = 'تم تحديث حزمة اللغة';
 $string['nolangupdateneeded'] = 'كل حزم اللغة الخاصة بك محدثة ولا تحتاج أي تحديث.';
 $string['pluginname'] = 'حزم اللغة';
-$string['remotelangnotavailable'] = 'لان مودل لا يستطيع الوصل إلى صفحة تنزيل حزمة اللغة لذا تعذر تثبيت حزمة اللغة آليا. الرجاء انسخ الملف المضغوط المناسب ثم الصقه في دليل {$a} وقم بفك يدويا.';
 $string['uninstall'] = 'حذف حزمة اللغة المختارة';
 $string['uninstallconfirm'] = 'أنت على وشك القيام بحذف حزمة اللغة {$a}، هل أنت متأكد؟';
 $string['updatelangs'] = 'حدث جميع حزم اللغة المحليه';

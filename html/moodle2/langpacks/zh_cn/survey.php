@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -204,6 +204,10 @@ $string['guestsnotallowed'] = '访客不允许提交问卷';
 $string['howlong'] = '您完成这份问卷花了多长时间？';
 $string['howlongoptions'] = '1 分钟之内、1-2 分钟、2-3 分钟、3-4 分钟、4-5 分钟、5-10 分钟、超过 10 分钟';
 $string['ifoundthat'] = '我发现';
+$string['indicator:cognitivedepth'] = '问卷调查活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 问卷调查活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '问卷调查活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在问卷调查活动中所达到的社会宽度。';
 $string['introtext'] = '描述';
 $string['invalidsurveyid'] = '调查 ID 不正确';
 $string['invalidtmptid'] = '无效的模板 id';

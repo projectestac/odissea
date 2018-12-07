@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Aggiungi {$a} campi al form';
 $string['advancedelement'] = 'Elemento avanzato';
 $string['close'] = 'Chiudi';
+$string['custom'] = 'Personalizzato';
 $string['day'] = 'Giorno';
+$string['default'] = 'Default';
 $string['display'] = 'Display';
 $string['err_alphanumeric'] = 'Devi inserire esclusivamente lettere o numeri.';
 $string['err_email'] = 'Devi inserire un indirizzo email valido.';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'Non devi inserire segni di punteggiatura.';
 $string['err_numeric'] = 'Devi inserire un numero.';
 $string['err_rangelength'] = 'Devi inserire tra {$a->format[0]} e {$a->format[1]} caratteri.';
 $string['err_required'] = 'Devi inserire un valore.';
+$string['err_wrongfileextension'] = 'Non è stato possibile caricare alcuni file ({$a->wrongfiles}). Possono essere caricati solamente file {$a->whitelist}.';
+$string['filesofthesetypes'] = 'Tipi di file accettati:';
+$string['filetypesany'] = 'Tutti i tipi di file';
+$string['filetypesnotall'] = 'Non è consentito selezionare \'Tutti i tipi di file\'.';
+$string['filetypesnotwhitelisted'] = 'I seguenti tipi di file non sono consentiti: {$a}';
+$string['filetypesothers'] = 'Altri file';
+$string['filetypesunknown'] = 'Tipo di file sconosciuto: {$a}';
 $string['general'] = 'Generale';
 $string['hideadvanced'] = 'Nascondi impostazioni avanzate';
 $string['hour'] = 'Ora';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'Impostazioni varie';
 $string['modstandardels'] = 'Impostazioni comuni';
 $string['month'] = 'Mese';
 $string['mustbeoverriden'] = 'Il metodo astratto form_definition() nella classe {$a} deve essere annullato, per favore correggi il codice.';
+$string['newvaluefor'] = 'Nuovo valore di  {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Non c\'è alcun metodo per aggiungere un pulsante di help al form {$a->name} (classe {$a->classname})';
 $string['nonexistentformelements'] = 'Hai tentato di aggiungere pulsanti di help agli elementi di un form inesistente: {$a}';
 $string['noselection'] = 'Nessuna selezione';

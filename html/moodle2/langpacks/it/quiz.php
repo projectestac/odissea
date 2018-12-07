@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,8 +170,10 @@ $string['commentorgrade'] = 'Commenta o modifica valutazione';
 $string['comments'] = 'Commenti';
 $string['completedon'] = 'Terminato';
 $string['completionattemptsexhausted'] = 'oppure all\'esaurimento dei tentativi consentiti';
+$string['completionattemptsexhausteddesc'] = 'Esaurimento dei tentativi';
 $string['completionattemptsexhausted_help'] = 'L\'attività sarà considerata completata quando lo studente avrà esaurito il massimo numero di tentativi consentiti';
 $string['completionpass'] = 'Valutazione sufficiente';
+$string['completionpassdesc'] = 'Lo studente deve raggiungere la sufficienza per completare l\'attività';
 $string['completionpass_help'] = 'L\'attività sarà considerata completata quando lo studente avrà ottenuto un punteggio pari o superiore alla sufficienza impostata nella registro del valutatore.';
 $string['configadaptive'] = 'Impostando a Si, lo studente avrà la possibilità di rispondere più volte a una domanda anche all\'interno dello stesso tentativo di risposta al quiz.';
 $string['configattemptsallowed'] = 'Limitazione del numero dei tentativi consentiti di risposta al quiz .';
@@ -259,7 +261,7 @@ $string['description'] = 'Commento';
 $string['disabled'] = 'Disabilitato';
 $string['displayoptions'] = 'Opzioni';
 $string['donotuseautosave'] = 'Non usare il salvataggio auomatico';
-$string['download'] = 'Click per il download del file della categoria esportata';
+$string['download'] = 'Click per scaricare il del file della categoria esportata';
 $string['downloadextra'] = '(il file è anche salvato nei files del corso nella cartella /backupdata/quiz)';
 $string['dragtoafter'] = 'Dopo {$a}';
 $string['dragtostart'] = 'All\'inizio';
@@ -290,13 +292,12 @@ grazie per aver inviato le tue risposte al quiz \'{$a->quizname}\' nel corso \'{
 
 Questa email conferma che le tue risposte sono state ricevute correttamente.
 
-Puoi accedere questo quiz all\'indirizzo {$a->quizurl}.';
+Puoi accedere al quiz tramite l\'indirizzo {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Grazie per aver risposto al quiz \'{$a->quizname}\'';
 $string['emailconfirmsubject'] = 'Conferma invio: {$a->quizname}';
 $string['emailnotifybody'] = 'Gentile {$a->username},
 
-{$a->studentname} ha completato il quiz
-\'{$a->quizname}\' ({$a->quizurl})
+{$a->studentname} ha completato il quiz \'{$a->quizname}\' ({$a->quizurl})
 nel corso \'{$a->coursename}\'
 
 Le risposte possono essere visualizzate all\'indirizzo {$a->quizreviewurl}.';
@@ -304,7 +305,7 @@ $string['emailnotifysmall'] = '{$a->studentname} ha completato {$a->quizname}. V
 $string['emailnotifysubject'] = '{$a->studentname} ha completato il quiz {$a->quizname}';
 $string['emailoverduebody'] = 'Gentile {$a->studentname},
 
-hai iniziato un tentativo del quiz \'{$a->quizname}\' nel corso {$a->coursename} ma non lo hai completato. Avresti dovuto inviarlo entro il {$a->attemptduedate}.
+hai avviato un tentativo del quiz \'{$a->quizname}\' nel corso {$a->coursename} ma non lo hai completato. Avresti dovuto inviarlo entro il {$a->attemptduedate}.
 
 Se desideri inviare il tentativo, vai su {$a->attemptsummaryurl} e fai click sul pulsante invia.
 Devi inviare il tentativo prima del {$a->attemptgraceend}, altrimenti il tentativo non sarà tenuto in considerazione.';
@@ -422,6 +423,10 @@ $string['importmaxerror'] = 'C\'è un errore nella domanda. Ci sono troppe rispo
 $string['importquestions'] = 'Importa domande da file';
 $string['inactiveoverridehelp'] = '* Gli studenti non appartengono al gruppo corretto oppure non hanno il ruolo giusto per partecipare al quiz';
 $string['incorrect'] = 'Sbagliato';
+$string['indicator:cognitivedepth'] = 'Quiz cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'quiz\'.';
+$string['indicator:socialbreadth'] = 'Quiz sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'quiz\'.';
 $string['indivresp'] = 'Risposte di ciascuno ai vari  elementi';
 $string['info'] = 'Info';
 $string['infoshort'] = 'i';
@@ -551,6 +556,7 @@ $string['onlyteachersexport'] = 'Solo i docenti possono esportare domande';
 $string['onlyteachersimport'] = 'Solo i docenti con diritto di modifica possono importare domande';
 $string['onthispage'] = 'Questa pagina';
 $string['open'] = 'Senza risposta';
+$string['openafterclose'] = 'Non è stato possibile aggiornare il quiz. La data di apertura è successiva alla data di chiusura.';
 $string['openclosedatesupdated'] = 'Date apertura e chiusura quiz aggiornate';
 $string['optional'] = 'opzionale';
 $string['orderandpaging'] = 'Ordinamento e impaginazione';
@@ -657,6 +663,8 @@ $string['quiz:deleteattempts'] = 'Eliminare tentativi dei quiz';
 $string['quiz:emailconfirmsubmission'] = 'Ricevere conferma via email all\'invio';
 $string['quiz:emailnotifysubmission'] = 'Ricevere notifica via email all\'invio di tentativi';
 $string['quiz:emailwarnoverdue'] = 'Ricevere una notifica quando è scaduto il tempo massimo per svolgere il tentativo del quiz';
+$string['quizeventcloses'] = '{$a} chiude';
+$string['quizeventopens'] = '{$a} apre';
 $string['quiz:grade'] = 'Valutare i quiz manualmente';
 $string['quiz:ignoretimelimits'] = 'Ignorare tempo massimo sui quiz';
 $string['quizisclosed'] = 'Questo quiz è chiuso';
@@ -807,10 +815,12 @@ $string['select'] = 'Seleziona';
 $string['selectall'] = 'Seleziona tutto';
 $string['selectcategory'] = 'Seleziona categoria';
 $string['selectedattempts'] = 'Tentativi selezionati...';
+$string['selectmultipleitems'] = 'Seleziona più elementi';
+$string['selectmultipletoolbar'] = 'Seleziona barre degli strumenti multiple';
 $string['selectnone'] = 'Deseleziona tutto';
 $string['selectquestiontype'] = '-- Scegli il tipo di domanda --';
 $string['serveradded'] = 'Server aggiunto';
-$string['serveridentifier'] = 'Identificatore';
+$string['serveridentifier'] = 'Identificativo';
 $string['serverinfo'] = 'Informazioni sul server';
 $string['servers'] = 'Server';
 $string['serverurl'] = 'URL del server';

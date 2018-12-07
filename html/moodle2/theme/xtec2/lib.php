@@ -227,7 +227,7 @@ function theme_xtec2_set_logo($css, $logo) {
     $tag = '[[setting:logo]]';
     $replacement = $logo;
     if (empty($replacement)) {
-        $replacement = $OUTPUT->pix_url('top','theme');
+        $replacement = $OUTPUT->image_url('top','theme');
     }
 
     $css = str_replace($tag, $replacement, $css);

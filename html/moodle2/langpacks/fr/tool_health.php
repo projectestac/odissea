@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_health', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_health', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_health
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['healthproblemsolution'] = 'Solution proposée';
 $string['healthreturntomain'] = 'Continuer';
 $string['healthsolution'] = 'Solution';
 $string['pluginname'] = 'Diagnostic et aide à la résolution de problèmes';
+$string['privacy:metadata'] = 'Le plugin Diagnostic et aide à la résolution de problèmes n\'enregistre aucune donnée personnelle.';

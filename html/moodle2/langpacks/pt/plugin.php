@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Não é possível descarregar dados de atua
 $string['filterall'] = 'Mostrar tudo';
 $string['filtercontribonly'] = 'Mostrar apenas módulos adicionais';
 $string['filterupdatesonly'] = 'Mostrar apenas o que está disponível para atualizar';
+$string['isenabled'] = 'Ativo?';
 $string['misdepinfoplugin'] = 'Informação do módulo';
 $string['misdepinfoversion'] = 'Informação da versão';
 $string['misdepsavail'] = 'Dependências em falta disponíveis';
@@ -102,6 +103,7 @@ $string['status_new'] = 'Pronto para ser instalado';
 $string['status_nodb'] = 'Não existe base de dados';
 $string['status_upgrade'] = 'A ser atualizado';
 $string['status_uptodate'] = 'Atualizado';
+$string['supportedconversions'] = 'Conversões de documentos suportadas';
 $string['supportedmoodleversions'] = 'Versões Moodle suportadas';
 $string['systemname'] = 'Identificador';
 $string['type_antivirus'] = 'Módulo Antivírus';
@@ -126,6 +128,9 @@ $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editores';
 $string['type_enrol'] = 'Método de inscrição';
 $string['type_enrol_plural'] = 'Métodos de inscrição';
+$string['type_fileconverter'] = 'Conversor de documento';
+$string['type_fileconvertermanage'] = 'Gerir conversores de documentos';
+$string['type_fileconverter_plural'] = 'Conversores de documentos';
 $string['type_filter'] = 'Filtro';
 $string['type_filter_plural'] = 'Filtros de texto';
 $string['type_format'] = 'Formato da disciplina';
@@ -144,6 +149,8 @@ $string['type_media'] = 'Leitor de Media';
 $string['type_media_plural'] = 'Leitores de Media';
 $string['type_message'] = 'Destino de mensagens';
 $string['type_message_plural'] = 'Destinos de mensagens';
+$string['type_mlbackend'] = 'Estrutura de suporte à aprendizagem';
+$string['type_mlbackend_plural'] = 'Estruturas de suporte à aprendizagem';
 $string['type_mnetservice'] = 'MNet service';
 $string['type_mnetservice_plural'] = 'MNet services';
 $string['type_mod'] = 'Módulo de atividade';

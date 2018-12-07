@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,10 @@ $string['eventchapterdeleted'] = 'Capítulo eliminado';
 $string['eventchapterupdated'] = 'Capítulo actualizado';
 $string['eventchapterviewed'] = 'Capítulo visto';
 $string['hidechapter'] = 'Ocultar capítulo "{$a}"';
+$string['indicator:cognitivedepth'] = 'Libro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Libro.';
+$string['indicator:socialbreadth'] = 'Libro social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Libro.';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'El módulo libro permite crear material de estudio de múltiples páginas en formato libro, con capítulos y subcapítulos. El libro puede incluir contenido multimedia así como texto y es útil para mostrar grandes volúmenes de información repartido en secciones.
 

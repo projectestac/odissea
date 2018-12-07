@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_comments', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['default_help'] = 'Indien ingeschakeld, zal deze instuurmethode als stan
 $string['enabled'] = 'Opmerkingen insturen';
 $string['enabled_help'] = 'Indien ingeschakeld, kunnen leerlingen opmerkingen achterlaten bij hun eigen ingestuurde opdracht. Dit kan bijvoorbeeld gebruikt worden om de beoordeler te laten weten over welk bestand het hoofdbestand is bij gelinkte bestanden.';
 $string['pluginname'] = 'Opmerkingen bij ingestuurde opdrachten';
+$string['privacy:metadata:commentpurpose'] = 'Opmerkingen tussen de leraar en de leerling over een ingestuurde opdracht.';

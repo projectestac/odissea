@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_flatfile', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['encoding'] = 'Fitxategiaren kodifikazioa';
+$string['encoding'] = 'Fitxategien kodifikazioa';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['filelockedmail'] = 'Cron prozesuak ezin du ezabatu matrikulazioak egiteko ({$a}) fitxategian oinarriturik erabiltzen ari zaren testu-fitxategia. Normalean honen zergatia zure baimenak desegokiak izatean datza. Baimenak ezar itzazu Moodle-k fitxategia ezabatu ahal izateko, mesedez. Bestela, prozesua errepikatu egingo da.';
 $string['filelockedmailsubject'] = 'Errore larria: Matrikulazio-fitxategia';
+$string['flatfileenrolments'] = 'Testu-soileko fitxategi (CSV) bidezko matrikulazioak';
 $string['flatfile:manage'] = 'Kudeatu erabiltzaileen matrikulazioak eskuz';
 $string['flatfilesync'] = 'Testu-soileko fitxategi bidezko sinkronizazioa';
 $string['flatfile:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik eskuz';
@@ -64,3 +65,11 @@ del, student, 8, CF101
 del, student, 17, CF101
 add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'Testu-soileko fitxategi (CSV) bidezko matrikulazio-pluginak enrol_flatfile taulan etorkizuneko matrikulazioen inguruko informazioa gorde dezake.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'Matrikulazio-ekintza espero den data.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'Matrikulazioarekin lotutako ikastaroaren IDa.';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'Esleitu edo kenduko den rolaren IDa.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'Matrikulazio-aldaketa amaitzen den unea.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'Matrikulazio-aldaketa honen aldatze-unea.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'Matrikulazio-aldaketa hasten den unea.';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'Matrikulazioarekin lotutako erabiltzailearen IDa.';

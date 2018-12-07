@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,8 @@ $string['editnewsfeeds'] = 'Редактировать новостные лен
 $string['editrssblock'] = 'Редактировать заголовок блока RSS-ленты';
 $string['enableautodiscovery'] = 'Включить автоматическое обнаружение лент?';
 $string['enableautodiscovery_help'] = 'При включенном параметре ленты на веб-страницах будут найдены автоматически. Например, если вводится http://docs.moodle.org, то будет найдено http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
+$string['failedfeed'] = 'Загрузка не удалась - повторите попытку позже {$a}';
+$string['failedfeeds'] = 'Один или несколько RSS-каналов не удалось загрузить';
 $string['feed'] = 'Лента';
 $string['feedadded'] = 'Новостная лента добавлена';
 $string['feeddeleted'] = 'Новостная лента удалена';

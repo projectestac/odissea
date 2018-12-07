@@ -501,6 +501,21 @@ class core_filelib_testcase extends advanced_testcase {
         $CFG->proxybypass = $oldproxybypass;
     }
 
+    /**
+     * Test that duplicate lines in the curl header are removed.
+     */
+    public function test_duplicate_curl_header() {
+        $testurl = $this->getExternalTestFileUrl('/test_post.php');
+
+        $curl = new curl();
+        $headerdata = 'Accept: application/json';
+        $header = [$headerdata, $headerdata];
+        $this->assertCount(2, $header);
+        $curl->setHeader($header);
+        $this->assertCount(1, $curl->header);
+        $this->assertEquals($headerdata, $curl->header[0]);
+    }
+
     public function test_curl_post() {
         $testurl = $this->getExternalTestFileUrl('/test_post.php');
 
@@ -525,6 +540,29 @@ class core_filelib_testcase extends advanced_testcase {
     public function test_curl_file() {
         $this->resetAfterTest();
         $testurl = $this->getExternalTestFileUrl('/test_file.php');
+
+        $fs = get_file_storage();
+        $filerecord = array(
+            'contextid' => context_system::instance()->id,
+            'component' => 'test',
+            'filearea' => 'curl_post',
+            'itemid' => 0,
+            'filepath' => '/',
+            'filename' => 'test.txt'
+        );
+        $teststring = 'moodletest';
+        $testfile = $fs->create_file_from_string($filerecord, $teststring);
+
+        // Test post with file.
+        $data = array('testfile' => $testfile);
+        $curl = new curl();
+        $contents = $curl->post($testurl, $data);
+        $this->assertSame('OK', $contents);
+    }
+
+    public function test_curl_file_name() {
+        $this->resetAfterTest();
+        $testurl = $this->getExternalTestFileUrl('/test_file_name.php');
 
         $fs = get_file_storage();
         $filerecord = array(
@@ -1023,7 +1061,6 @@ EOF;
     public static function create_draft_file($filedata = array()) {
         global $USER;
 
-        self::setAdminUser();
         $fs = get_file_storage();
 
         $filerecord = array(
@@ -1185,7 +1222,9 @@ EOF;
         global $USER;
 
         $this->resetAfterTest(true);
-        $this->setAdminUser();
+        // The admin has no restriction for max file uploads, so use a normal user.
+        $user = $this->getDataGenerator()->create_user();
+        $this->setUser($user);
         $fs = get_file_storage();
 
         $file = self::create_draft_file();
@@ -1228,6 +1267,211 @@ EOF;
         $this->assertCount(1, $files);
         $file = array_shift($files);
         $this->assertTrue($file->is_directory());
+    }
+
+    /**
+     * Test file_get_draft_area_info.
+     */
+    public function test_file_get_draft_area_info() {
+        global $USER;
+
+        $this->resetAfterTest(true);
+        $this->setAdminUser();
+        $fs = get_file_storage();
+
+        $filerecord = array(
+            'filename'  => 'one.txt',
+        );
+        $file = self::create_draft_file($filerecord);
+        $size = $file->get_filesize();
+        $draftitemid = $file->get_itemid();
+        // Add another file.
+        $filerecord = array(
+            'itemid'  => $draftitemid,
+            'filename'  => 'second.txt',
+        );
+        $file = self::create_draft_file($filerecord);
+        $size += $file->get_filesize();
+
+        // Create directory.
+        $usercontext = context_user::instance($USER->id);
+        $dir = $fs->create_directory($usercontext->id, 'user', 'draft', $draftitemid, '/testsubdir/');
+        // Add file to directory.
+        $filerecord = array(
+            'itemid'  => $draftitemid,
+            'filename' => 'third.txt',
+            'filepath' => '/testsubdir/',
+        );
+        $file = self::create_draft_file($filerecord);
+        $size += $file->get_filesize();
+
+        $fileinfo = file_get_draft_area_info($draftitemid);
+        $this->assertEquals(3, $fileinfo['filecount']);
+        $this->assertEquals($size, $fileinfo['filesize']);
+        $this->assertEquals(1, $fileinfo['foldercount']);   // Directory created.
+        $this->assertEquals($size, $fileinfo['filesize_without_references']);
+
+        // Now get files from just one folder.
+        $fileinfo = file_get_draft_area_info($draftitemid, '/testsubdir/');
+        $this->assertEquals(1, $fileinfo['filecount']);
+        $this->assertEquals($file->get_filesize(), $fileinfo['filesize']);
+        $this->assertEquals(0, $fileinfo['foldercount']);   // No subdirectories inside the directory.
+        $this->assertEquals($file->get_filesize(), $fileinfo['filesize_without_references']);
+
+        // Check we get the same results if we call file_get_file_area_info.
+        $fileinfo = file_get_file_area_info($usercontext->id, 'user', 'draft', $draftitemid);
+        $this->assertEquals(3, $fileinfo['filecount']);
+        $this->assertEquals($size, $fileinfo['filesize']);
+        $this->assertEquals(1, $fileinfo['foldercount']);   // Directory created.
+        $this->assertEquals($size, $fileinfo['filesize_without_references']);
+    }
+
+    /**
+     * Test file_get_file_area_info.
+     */
+    public function test_file_get_file_area_info() {
+        global $USER;
+
+        $this->resetAfterTest(true);
+        $this->setAdminUser();
+        $fs = get_file_storage();
+
+        $filerecord = array(
+            'filename'  => 'one.txt',
+        );
+        $file = self::create_draft_file($filerecord);
+        $size = $file->get_filesize();
+        $draftitemid = $file->get_itemid();
+        // Add another file.
+        $filerecord = array(
+            'itemid'  => $draftitemid,
+            'filename'  => 'second.txt',
+        );
+        $file = self::create_draft_file($filerecord);
+        $size += $file->get_filesize();
+
+        // Create directory.
+        $usercontext = context_user::instance($USER->id);
+        $dir = $fs->create_directory($usercontext->id, 'user', 'draft', $draftitemid, '/testsubdir/');
+        // Add file to directory.
+        $filerecord = array(
+            'itemid'  => $draftitemid,
+            'filename' => 'third.txt',
+            'filepath' => '/testsubdir/',
+        );
+        $file = self::create_draft_file($filerecord);
+        $size += $file->get_filesize();
+
+        // Add files to user private file area.
+        $options = array('subdirs' => 1, 'maxfiles' => 3);
+        file_merge_files_from_draft_area_into_filearea($draftitemid, $file->get_contextid(), 'user', 'private', 0, $options);
+
+        $fileinfo = file_get_file_area_info($usercontext->id, 'user', 'private');
+        $this->assertEquals(3, $fileinfo['filecount']);
+        $this->assertEquals($size, $fileinfo['filesize']);
+        $this->assertEquals(1, $fileinfo['foldercount']);   // Directory created.
+        $this->assertEquals($size, $fileinfo['filesize_without_references']);
+
+        // Now get files from just one folder.
+        $fileinfo = file_get_file_area_info($usercontext->id, 'user', 'private', 0, '/testsubdir/');
+        $this->assertEquals(1, $fileinfo['filecount']);
+        $this->assertEquals($file->get_filesize(), $fileinfo['filesize']);
+        $this->assertEquals(0, $fileinfo['foldercount']);   // No subdirectories inside the directory.
+        $this->assertEquals($file->get_filesize(), $fileinfo['filesize_without_references']);
+    }
+
+    /**
+     * Test confirming that draft files not referenced in the editor text are removed.
+     */
+    public function test_file_remove_editor_orphaned_files() {
+        global $USER, $CFG;
+        $this->resetAfterTest(true);
+        $this->setAdminUser();
+
+        // Create three draft files.
+        $filerecord = ['filename'  => 'file1.png'];
+        $file = self::create_draft_file($filerecord);
+        $draftitemid = $file->get_itemid();
+
+        $filerecord['itemid'] = $draftitemid;
+
+        $filerecord['filename'] = 'file2.png';
+        self::create_draft_file($filerecord);
+
+        $filerecord['filename'] = 'file 3.png';
+        self::create_draft_file($filerecord);
+
+        // Confirm the user drafts area lists 3 files.
+        $fs = get_file_storage();
+        $usercontext = context_user::instance($USER->id);
+        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $draftitemid, 'itemid', 0);
+        $this->assertCount(3, $draftfiles);
+
+        // Now, spoof some editor text content, referencing 2 of the files; one requiring name encoding, one not.
+        $editor = [
+            'itemid' => $draftitemid,
+            'text' => '
+                <img src="'.$CFG->wwwroot.'/draftfile.php/'.$usercontext->id.'/user/draft/'.$draftitemid.'/file%203.png" alt="">
+                <img src="'.$CFG->wwwroot.'/draftfile.php/'.$usercontext->id.'/user/draft/'.$draftitemid.'/file1.png" alt="">'
+        ];
+
+        // Run the remove orphaned drafts function and confirm that only the referenced files remain in the user drafts.
+        $expected = ['file1.png', 'file 3.png']; // The drafts we expect will not be removed (are referenced in the online text).
+        file_remove_editor_orphaned_files($editor);
+        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $draftitemid, 'itemid', 0);
+        $this->assertCount(2, $draftfiles);
+        foreach ($draftfiles as $file) {
+            $this->assertContains($file->get_filename(), $expected);
+        }
+    }
+
+    /**
+     * Test that all files in the draftarea are returned.
+     */
+    public function test_file_get_all_files_in_draftarea() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $filerecord = ['filename' => 'basepic.jpg'];
+        $file = self::create_draft_file($filerecord);
+
+        $secondrecord = [
+            'filename' => 'infolder.jpg',
+            'filepath' => '/assignment/',
+            'itemid' => $file->get_itemid()
+        ];
+        $file = self::create_draft_file($secondrecord);
+
+        $thirdrecord = [
+            'filename' => 'deeperfolder.jpg',
+            'filepath' => '/assignment/pics/',
+            'itemid' => $file->get_itemid()
+        ];
+        $file = self::create_draft_file($thirdrecord);
+
+        $fourthrecord = [
+            'filename' => 'differentimage.jpg',
+            'filepath' => '/secondfolder/',
+            'itemid' => $file->get_itemid()
+        ];
+        $file = self::create_draft_file($fourthrecord);
+
+        // This record has the same name as the last record, but it's in a different folder.
+        // Just checking this is also returned.
+        $fifthrecord = [
+            'filename' => 'differentimage.jpg',
+            'filepath' => '/assignment/pics/',
+            'itemid' => $file->get_itemid()
+        ];
+        $file = self::create_draft_file($fifthrecord);
+
+        $allfiles = file_get_all_files_in_draftarea($file->get_itemid());
+        $this->assertCount(5, $allfiles);
+        $this->assertEquals($filerecord['filename'], $allfiles[0]->filename);
+        $this->assertEquals($secondrecord['filename'], $allfiles[1]->filename);
+        $this->assertEquals($thirdrecord['filename'], $allfiles[2]->filename);
+        $this->assertEquals($fourthrecord['filename'], $allfiles[3]->filename);
+        $this->assertEquals($fifthrecord['filename'], $allfiles[4]->filename);
     }
 }
 

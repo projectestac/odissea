@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_shibboleth', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,9 @@ $string['auth_shib_idp_list'] = 'Nortasun-hornitzaileak';
 $string['auth_shib_idp_list_description'] = 'Sartu erabiltzaileari sarrera-orrian aukeran emateko Identitate-Hornitzaileen entityID-ak.<br />Errenkada bakoitzean komaz banatuta IdP-aren entityID-a (ikusi Shibboleth metadatuen fitxategia) eta IdP-aren izena agertu behar dira menuaren zerrendan erakutsiko diren moduan.<br />Aukerazko hirugarren parametro gisa erabiliko den Shibboleth saioaren abiarazlearen kokapena gehitu dezakezu zure Moodle instalazioa multi-federazio konfigurazio baten parte bada.';
 $string['auth_shib_instructions'] = '<a href="{$a}">Shibboleth login</a> erabili Shibboleth-en bidez sartzeko zure erakundeak onartzen badu.<br />Bestela, hemen erakusten den sarrera arrunteko formularioa erabili.';
 $string['auth_shib_instructions_help'] = 'Hemen zure erabiltzaileei Shibboleth erabiltzeko argibide pertsonalizatuak eman beharko zenizkieke. Sarbide orriko argibideen atalean agertu beharko lirateke, eta "<b>{$a}</b>" esteka erakutsi, Shibboletheko erabiltzaileak erraz sar daitezen. Zuriz utziz gero, argibide estandarrak erakutsiko dira (ez Shibboleth-enak berak)';
+$string['auth_shib_instructions_key'] = 'Sartzeko argibideak';
 $string['auth_shib_integrated_wayf'] = 'Moodle-ren WAYF zerbitzua';
+$string['auth_shib_integrated_wayf_description'] = 'Hau gaitzen baduzu, Moodle-k bere WAYF zerbitzua erabiliko du Shibboleth-en konfiguratuta dagoenaren ordez. Moodle-k sarrera-orri alternatibo honetan menuko zerrenda bat erakutsiko du eta bertan erabiltzaileak bere Identitate Hornitzailea aukeratu beharko du.';
 $string['auth_shib_logout_return_url'] = 'Saioa amaitzean erabili beharreko ordezko URLa.';
 $string['auth_shib_logout_return_url_description'] = 'Sartu saioa amaitu ondoren Shibboleth erabiltzaileak berbideratzeko erabiliko den URLa.<br />Hutsik utziz gero, erabiltzaileak Moodle-k bideratzen dituen kokapenera bideratuko dira.';
 $string['auth_shib_logout_url'] = 'Shibboleth Zerbitzu Hornitzailearen saio-amaiera kudeatzeko URLa';
@@ -53,6 +55,7 @@ $string['auth_shib_only'] = 'Shibboleth soilik';
 $string['auth_shib_only_description'] = 'Aukera hau hartu soilik Shibboleth autentikazioa bortxatu nahi baduzu.';
 $string['auth_shib_username_description'] = 'Moodlen erabiltzaile izen gisa erabiliko den Shibboleth zerbitzariaren testuinguru aldagaiaren izena';
 $string['pluginname'] = 'Shibboleth';
+$string['privacy:metadata'] = 'Shibboleth autentifikazio-pluginak ez du datu pertsonalik biltzen.';
 $string['shib_invalid_account_error'] = 'Shibboleth bidez autentikatu behar zarela ematen du baina Moodle-k ez du zure erabiltzaile-izenarentzako kontu baliagarririk. Baliteke zure kontua ez existitzea edo etenda egotea.';
 $string['shib_no_attributes_error'] = 'Badirudi Shibboleth-ek autentikatu zaituela, baina Moodlek ez du erabiltzaile-atributurik jaso. Zure nortasun-emaileak beharrezkoak diren ({$a}) atributuak Moodle egikaritzen ari den Zerbitzu Emaileari pasa dizkiola ziurtatu, edo zerbitzari honetako webmasterrari jakinarazi.';
 $string['shib_not_all_attributes_error'] = 'Moodle Shibboleth-en atributu batzuk behar ditu, kasu honetan agertzen ez direnak. Atributuak hauek dira: {$a}<br />Mesedez, web masterrarekin edo nortasun-emailearekin harremanetan jarri.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -410,7 +410,6 @@ $string['subscribed'] = 'Subscrito';
 $string['subscribeenrolledonly'] = 'Soamente os usuarios matriculados poden subscribirse ás notificacións de comentarios no foro';
 $string['subscribenone'] = 'Cancelar a subscrición de todo o mundo a este foro';
 $string['subscribers'] = 'Subscritores';
-$string['subscribersto'] = 'Subscritores de \'{$a}';
 $string['subscribestart'] = 'Enviarme copias por correo dos comentarios neste foro';
 $string['subscribestop'] = 'Non quero enviar copias por correo dos comentarios neste foro';
 $string['subscription'] = 'Subscrición';

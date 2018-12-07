@@ -51,6 +51,8 @@ abstract class restore_step extends base_step {
      * Note we are using one static cache here, but *by restoreid*, so it's ok for concurrence/multiple
      * executions in the same request
      *
+     * Note: The policy is to roll date only for configurations and not for user data. see MDL-9367.
+     *
      * @param int $value Time value (seconds since epoch), or empty for nothing
      * @return int Time value after applying the date offset, or empty for nothing
      */
@@ -70,7 +72,12 @@ abstract class restore_step extends base_step {
         $original = $this->task->get_info()->original_course_startdate;
         $setting = 0;
         if ($this->setting_exists('course_startdate')) { // Seting may not exist (MDL-25019).
-            $setting  = $this->get_setting_value('course_startdate');
+            $settingobject = $this->task->get_setting('course_startdate');
+            if (method_exists($settingobject, 'get_normalized_value')) {
+                $setting = $settingobject->get_normalized_value();
+            } else {
+                $setting = $settingobject->get_value();
+            }
         }
 
         if (empty($original) || empty($setting)) {
@@ -79,11 +86,6 @@ abstract class restore_step extends base_step {
 
         } else if (abs($setting - $original) < 24 * 60 * 60) {
             // Less than 24h of difference, offset = 0 (this avoids some problems with timezones).
-            $cache[$this->get_restoreid()] = 0;
-
-        } else if (!has_capability('moodle/restore:rolldates',
-               context_course::instance($this->get_courseid()), $this->task->get_userid())) {
-            // Re-enforce 'moodle/restore:rolldates' capability for the user in the course, just in case.
             $cache[$this->get_restoreid()] = 0;
 
         } else {

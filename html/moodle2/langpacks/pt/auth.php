@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,10 @@ $string['auth_data_mapping'] = 'Mapa de Dados';
 $string['authenticationoptions'] = 'Opções de autenticação';
 $string['auth_fieldlock'] = 'Bloquear valor';
 $string['auth_fieldlock_expl'] = '<p><b>Valor bloqueado:</b> Se ativo, irá prevenir que os utilizadores e administradores do Moodle editem um campo diretamente. Utilize esta opção se quiser manter os dados no sistema de autorização externo. </p>';
+$string['auth_fieldlockfield'] = 'Bloquear valor ({$a})';
 $string['auth_fieldlocks'] = 'Bloquear campos de utilizador';
 $string['auth_fieldlocks_help'] = '<p>Pode bloquear os campos de perfil dos utilizadores. Esta configuração é útil para sites onde os dados dos utilizadores são mantidos manualmente pelos administradores, editando os registos dos utilizadores ou fazendo o carregamento utilizando a ferramenta \'Carregar utilizadores\'. Se está a bloquear campos requeridos pelo Moodle, verifique que fornece esses dados ao criar contas de utilizadores, senão as contas não serão válidas.</p><p>Pondere a utilização do modo de bloqueio \'Desbloquear se vazio\' para evitar este problema.</p>';
+$string['auth_fieldmapping'] = 'Mapeamento de dados ({$a})';
 $string['authinstructions'] = 'Deixe este campo em branco para que as instruções de autenticação predefinidas sejam mostradas na página de autenticação. Se pretender disponibilizar instruções personalizadas, introduza-as aqui.';
 $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alteração de e-mail, deve ter cometido um erro ao copiar o URL enviado no e-mail de confirmação. Por favor, copie novamente o URL e volte a tentar.';
 $string['authloginviaemail'] = 'Permitir autenticação por e-mail';
@@ -61,13 +63,16 @@ $string['auth_sync_suspended'] = 'Se ativar esta opção, o atributo suspenso se
 $string['auth_sync_suspended_key'] = 'Sincronizar estado da suspensão do utilizador local';
 $string['auth_updatelocal'] = 'Atualizar localmente';
 $string['auth_updatelocal_expl'] = '<p><b>Atualização local:</b> Se ativo, o campo será atualizado (a partir da origem externa) cada vez que o utilizador faz a autenticação ou ocorra uma sincronização de utilizadores. Os campos definidos para serem atualizados localmente deverão estar bloqueados.</p>';
+$string['auth_updatelocalfield'] = 'Atualizar campo local ({$a})';
 $string['auth_updateremote'] = 'Atualizar externamente';
 $string['auth_updateremote_expl'] = '<p><b>Atualização externa:</b> Se ativo, a autorização externa será atualizada quando o registo do utilizador for atualizado. Os campos deverão estar desbloquados para que sejam permitidas edições.</p>';
+$string['auth_updateremotefield'] = 'Atualizar campo externo ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Note:</b> Para atualizar dados externos do LDAP é necessário que defina o binddn e o bindpw para um utilizador bind com privilégios de edição a todos os registos do utilizador. Atualmente não preserva os atributos multi-valued, e irá remover valores extra aquando da atualização. </p>';
 $string['auth_user_create'] = 'Permitir a criação de utilizadores';
 $string['auth_user_creation'] = 'Novos (anónimos) utilizadores podem criar contas de autenticação externa confirmadas por e-mail. Se ativar esta opção, lembre-se de configurar as opções no módulo específico para criação de utilizadores.';
 $string['auth_usernameexists'] = 'O nome escolhido já existe. Escolha outro.';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
+$string['cannotmapfield'] = 'O campo "{$a->fieldname}" não pode ser mapeado porque o nome curto "{$a->shortname}" é muito longo. Para ser possível o mapeamento, reduza o campo de perfil \'Nome curto\' para {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos de perfil do utilizador</a>';
 $string['changepassword'] = 'Endereço para alteração de senha';
 $string['changepasswordhelp'] = 'Endereço URL da página de recuperação de senha, que será enviado aos utilizadores por e-mail. Tenha em atenção que esta configuração não terá efeito caso um endereço URL de recuperação de senha esteja definido nas configurações comuns de autenticação.';
 $string['chooseauthmethod'] = 'Método de autenticação';
@@ -109,6 +114,7 @@ $string['forgottenpasswordurl'] = 'URL para recuperação de senha';
 $string['getanaudiocaptcha'] = 'Versão áudio do CAPTCHA';
 $string['getanimagecaptcha'] = 'Versão gráfica do CAPTCHA';
 $string['getanothercaptcha'] = 'Gerar outro CAPTCHA';
+$string['getrecaptchaapi'] = 'Para usar o reCAPTCHA, tem de obter uma chave de API desde <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Botão de entrada como visitante';
 $string['incorrectpleasetryagain'] = 'Incorreto. Por favor, tente novamente.';
 $string['infilefield'] = 'Campo necessário no ficheiro';
@@ -135,13 +141,24 @@ $string['passwordhandling'] = 'Tratamento do campo de senha';
 $string['plaintext'] = 'Texto simples';
 $string['pluginnotenabled'] = 'O módulo de autenticação \'{$a}\' não está ativado.';
 $string['pluginnotinstalled'] = 'O módulo de autenticação \'{$a}\' não está instalado.';
-$string['potentialidps'] = 'Autenticar-se usando a sua conta em:';
+$string['potentialidps'] = 'Autenticar usando a sua conta em:';
+$string['privacy:metadata:userpref:createpassword'] = 'Indica que uma senha deve ser gerada para o tuilizador';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Indica se o utilizador deve alterar a sua senha na sua autenticação';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'O número de vezes que o utilizador falhou a autenticação';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'O número de vezes que o utilizador falhou a autenticação desde a última autenticação com sucesso';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'A data em que a última tentativa de autenticação sem sucesso foi registada';
+$string['privacy:metadata:userpref:loginlockout'] = 'Indica se a conta de utilizador está bloquada devido a tentativas de autenticação falhadas, e a data em que a conta entrou em estado de bloqueio';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica que a conta de um utilizador nunca deverá ser sujeita a bloqueio';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'Quando bloqueada, o segredo que o utilizador deve usar para desbloquear a sua conta';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'O CAPTCHA serve para evitar ações indevidas por parte de programas automáticos. Insira as palavras na caixa, pela ordem apresentada e separadas por um espaço em branco.Se não tem a certeza das palavras, obtenha um novo CAPTCHA ou um CAPTCHA em formato áudio.';
+$string['recaptcha_help'] = 'O CAPTCHA serve para evitar ações indevidas por parte de programas automáticos. Siga as instruções para verificar se é uma pessoa.Pode ser uma caixa para verificar, carateres apresentados numa imagem que deve inserir ou um conjunto de imagens para selecionar.
+
+Se não tiver certeza de quais são as imagens, tente obter outro CAPTCHA ou um CAPTCHA de áudio.';
 $string['recaptcha_link'] = 'link';
 $string['security_question'] = 'Pergunta de segurança';
 $string['selfregistration'] = 'Autorregisto';
 $string['selfregistration_help'] = 'Se estiver selecionado um módulo de autenticação como, por exemplo, o Autorregisto com confirmação por e-mail, então é possível aos utilizadores potenciais se registarem e criarem a sua conta de utilizador. Todavia isto torna também possível que spammers criem para usar os fóruns, blogues, etc. para inserir mensagens de spam (publicidade por exemplo). Para evitar estas situações, o autorregisto deve ser desativado ou limitado através da opção <em>Domínios de e-mail permitidos</em>';
+$string['settingmigrationmismatch'] = 'Foram detetados valores incompatíveis ao corrigir os nomes de configuração do módulo! O módulo de autenticação \'{$a->plugin}\' tinha a opção \'{$a->setting}\' configurada para \'{$a->legacy}\' com o nome antigo e \'{$a->current} com o nome atual. O último valor foi definido como válido, mas deve verificar e confirmar se é o que pretende.';
 $string['sha1'] = 'tabela hash SHA-1';
 $string['showguestlogin'] = 'Pode optar por ocultar ou mostrar o botão de entrada para visitantes na página de autenticação.';
 $string['stdchangepassword'] = 'Usar a página predefinida para alterar a senha';

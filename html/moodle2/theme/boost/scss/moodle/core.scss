@@ -1,5 +1,10 @@
 /* core.less */
 
+// When we upgrade boostrap to v4 release, we will need to change this to be used by the text-white class.
+// Because a primary colour that is both AA accessible on grey (footer) and white is not possible, we always
+// want white default colour.
+$bg-inverse-link-color: #fff !default;
+
 #region-main > .card {
     overflow-x: auto;
     overflow-y: visible;
@@ -19,6 +24,7 @@
 .context-header-settings-menu .dropdown-toggle > .icon,
 #region-main-settings-menu .dropdown-toggle > .icon {
     height: 24px;
+    font-size: 24px;
     width: auto;
 }
 /** Prevent user notifications overlapping with region main settings menu */
@@ -75,10 +81,6 @@ a.dimmed_text:visited,
 .dimmed_category,
 .dimmed_category a {
     @extend .text-muted;
-}
-
-.activity.label .dimmed_text {
-    opacity: 0.5;
 }
 
 .unlist,
@@ -234,6 +236,13 @@ img.resize {
     text-decoration: none;
 }
 
+.dropdown-toggle {
+    // Bootstrap turns off focus outlines for menu buttons. This turns them back on the same as links.
+    &:focus {
+        @include tab-focus();
+    }
+}
+
 .action-menu {
     white-space: nowrap;
 }
@@ -347,9 +356,6 @@ a.skip:active {
     margin-left: 43px;
 }
 // Group
-#page-group-index #groupeditform {
-    text-align: center;
-}
 
 #doc-contents h1 {
     margin: 1em 0 0 0;
@@ -886,106 +892,6 @@ tr.flagged-tag a {
     text-align: left;
     border: 0 solid black;
 }
-/**
-* Smart Select Element
-*/
-.smartselect {
-    position: absolute;
-}
-
-.smartselect .smartselect_mask {
-    background-color: #fff;
-}
-
-.smartselect ul {
-    padding: 0;
-    margin: 0;
-}
-
-.smartselect ul li {
-    list-style: none;
-}
-
-.smartselect .smartselect_menu {
-    margin-right: 5px;
-}
-
-.safari .smartselect .smartselect_menu {
-    margin-left: 2px;
-}
-
-.smartselect .smartselect_menu,
-.smartselect .smartselect_submenu {
-    border: 1px solid #000;
-    background-color: #fff;
-    display: none;
-}
-
-.smartselect .smartselect_menu.visible,
-.smartselect .smartselect_submenu.visible {
-    display: block;
-}
-
-.smartselect .smartselect_menu_content ul li {
-    position: relative;
-    padding: 2px 5px;
-}
-
-.smartselect .smartselect_menu_content ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-.smartselect .smartselect_menu_content ul li a.selectable {
-    color: inherit;
-}
-
-.smartselect .smartselect_submenuitem {
-    background-image: url([[pix:moodle|t/collapsed]]);
-    background-repeat: no-repeat;
-    background-position: 100%;
-}
-/** Spanning mode */
-.smartselect.spanningmenu .smartselect_submenu {
-    position: absolute;
-    top: -1px;
-    left: 100%;
-}
-
-.smartselect.spanningmenu .smartselect_submenu a {
-    white-space: nowrap;
-    padding-right: 16px;
-}
-
-.smartselect.spanningmenu .smartselect_menu_content ul li a.selectable:hover {
-    text-decoration: underline;
-}
-/** Compact mode */
-.smartselect.compactmenu .smartselect_submenu {
-    position: relative;
-    margin: 2px -3px;
-    margin-left: 10px;
-    display: none;
-    border-width: 0;
-    z-index: 1010;
-}
-
-.smartselect.compactmenu .smartselect_submenu.visible {
-    display: block;
-}
-
-.smartselect.compactmenu .smartselect_menu {
-    z-index: 1000;
-    overflow: hidden;
-}
-
-.smartselect.compactmenu .smartselect_submenu .smartselect_submenu {
-    z-index: 1020;
-}
-
-.smartselect.compactmenu .smartselect_submenuitem:hover > .smartselect_menuitem_label {
-    font-weight: bold;
-}
 
 /**
 * Enrol
@@ -1030,17 +936,17 @@ tr.flagged-tag a {
     margin-right: 30px;
 }
 
-.userenrolment .col_group .group {
-    float: left;
-    padding: 3px;
-    margin: 3px;
-    white-space: nowrap;
-}
-
 .userenrolment .col_role .role {
     float: left;
     padding: 0 3px 3px;
     margin: 0 3px 3px;
+    white-space: nowrap;
+}
+
+.userenrolment .col_group .group {
+    float: left;
+    padding: 3px;
+    margin: 3px;
     white-space: nowrap;
 }
 
@@ -1194,16 +1100,95 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 }
 
 .initialbar {
-    a,
-    strong {
-        padding-left: 3px;
-        padding-right: 3px;
+
+    overflow: auto;
+
+    .initialbarlabel {
+        display: inline-block;
+        width: 6em;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .initialbarall {
+        float: left;
+        width: 4em;
+        margin-bottom: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .initialbargroups {
+        float: left;
+    }
+
+    .initialbargroup {
+        float: left;
+        display: inline-block;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            list-style: none;
+        }
+    }
+
+    .letter {
+        display: inline-block;
+        height: 1.5em;
+        min-width: 1.5em;
+        text-align: center;
+
+        color: $pagination-color;
+        border-width: $pagination-border-width;
+        border-color: $pagination-border-color;
+        border-style: solid;
+        background-color: $pagination-bg;
+    }
+    .letter:hover {
+        color: $pagination-hover-color;
+        border-color: $pagination-hover-border;
+        background-color: $pagination-hover-bg;
+    }
+
+    .letter.active {
+        color: $pagination-active-color;
+        border-color: $pagination-active-border;
+        background-color: $pagination-active-bg;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .initialbar {
+        .letter {
+            /* This is chosen so that 23 letter at 320px just fits */
+            font-size: 11.5px;
+        }
     }
 }
+
 
 /* Moodle Dialogue Settings (moodle-core-dialogue)  */
 .moodle-dialogue-base .moodle-dialogue-lightbox {
     background-color: $gray;
+}
+
+// Prevent adding backdrops to popups in popups.
+.pagelayout-popup {
+    .moodle-dialogue-base {
+        .moodle-dialogue-lightbox {
+            background-color: transparent;
+        }
+        .moodle-dialogue {
+            box-shadow: $popover-box-shadow;
+        }
+    }
 }
 
 .moodle-dialogue-base .hidden,
@@ -1561,6 +1546,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .chooserdialogue-course-modchooser .modicon .icon {
     width: 24px;
     height: 24px;
+    font-size: 24px;
 }
 
 @include media-breakpoint-down(xs) {
@@ -2007,6 +1993,10 @@ dd:after {
     &.inplaceeditable-toggle .quickediticon {
         display: none;
     }
+
+    &.inplaceeditable-autocomplete {
+        display: block;
+    }
 }
 
 h3.sectionname .inplaceeditable.inplaceeditingon .editinstructions {
@@ -2134,9 +2124,30 @@ ul {
     }
 }
 
-$footer-link-color: $brand-primary !default;
+// Footer link colour was added to allow the colour of footer links to be changed,
+// but really in bootstrap we want the colour of links on .bg-inverse to be changed
+// rather than being specific to the footer. This is kept for backwards compatibility.
+$footer-link-color: $bg-inverse-link-color !default;
 #page-footer a {
     color: $footer-link-color;
+    text-decoration: underline;
+    .icon {
+        color: $footer-link-color;
+    }
+}
+
+.bg-inverse a {
+    color: $bg-inverse-link-color;
+    text-decoration: underline;
+    .icon {
+        color: $bg-inverse-link-color;
+    }
+}
+
+.sitelink {
+    img {
+        width: 112px;
+    }
 }
 
 // Make links in a menu clickable anywhere in the row.
@@ -2161,5 +2172,35 @@ $footer-link-color: $brand-primary !default;
         padding: 7px;
         left: 0;
         top: 0;
+    }
+}
+
+[data-drag-type="move"] {
+    cursor: move;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.overlay-icon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    .loading-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .icon {
+            height: 40px;
+            width: 40px;
+
+        }
     }
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['assignmentid'] = 'ID εργασίας';
 $string['assignmentnotfound'] = 'Η εργασία δε βρέθηκε (id={$a})';
 $string['assignmentsperpage'] = 'Εργασίες / σελίδα';
 $string['assignmenttype'] = 'Τύπος εργασίας';
-$string['backtoindex'] = 'Επιστροφή στα περιεχόμενα';
+$string['backtoindex'] = 'Πίσω στα περιεχόμενα';
 $string['batchoperations'] = 'Μαζικές λειτουργίες';
 $string['batchupgrade'] = 'Αναβάθμιση πολλαπλών εργασιών';
 $string['confirmbatchupgrade'] = 'Επιβεβαίωση μαζικής αναβάθμισης εργασιών';

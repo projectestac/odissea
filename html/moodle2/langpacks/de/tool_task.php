@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,33 +26,39 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = 'ASAP';
-$string['blocking'] = 'Blockierung';
+$string['backtoscheduledtasks'] = 'Zurück zu den geplanten Vorgängen';
+$string['blocking'] = 'Blockierend';
 $string['component'] = 'Komponente';
 $string['corecomponent'] = 'Kern';
 $string['default'] = 'Standard';
 $string['disabled'] = 'Deaktiviert';
-$string['disabled_help'] = 'Deaktivitierte regelmäßigen Tasks werden vom Cronjob nicht ausgeführt, können aber manuell über das CLI Tool gestartet werden.';
+$string['disabled_help'] = 'Deaktivierte geplante Vorgänge werden vom Cronjob nicht ausgeführt, können aber manuell über die Kommandozeile gestartet werden.';
 $string['edittaskschedule'] = 'Geplanten Vorgang bearbeiten: {$a}';
+$string['enablerunnow'] = '\'Sofort ausführen\' von geplanten Vorgängen erlauben';
+$string['enablerunnow_desc'] = 'Diese Option ermöglicht es Administratoren, einen einzelnen geplanten Vorgang sofort auszuführen, ohne auf den planmäßigen Termin zu warten. Ein solcher Vorgang läuft auf dem Webserver, so dass diese Option deaktiviert sein könnte, um Leistungseinbrüche zu vermeiden.';
 $string['faildelay'] = 'Fehlerverzögerung';
 $string['lastruntime'] = 'Letzte Ausführung';
 $string['nextruntime'] = 'Nächste Ausführung';
 $string['plugindisabled'] = 'Plugin deaktiviert';
-$string['pluginname'] = 'Einstellungen für regelmäßige Tasks';
-$string['resettasktodefaults'] = 'Geplante Vorgänge auf Standard zurücksetzen';
-$string['resettasktodefaults_help'] = 'Damit werden alle lokalen Änderungen rückgängig gemacht und die Originaleinstellungen für die Aufgabe wieder hergestellt.';
-$string['scheduledtaskchangesdisabled'] = 'Änderungen in der Liste der regelmäßigen Tasks sind nicht erlaubt.';
-$string['scheduledtasks'] = 'Regelmäßige Tasks';
-$string['taskdisabled'] = 'Aufgabe deaktiviert';
+$string['pluginname'] = 'Einstellungen für geplante Vorgänge';
+$string['privacy:metadata'] = 'Das Plugin zur Konfiguration geplanter Vorgänge speichert keine personenbezogenen Daten.';
+$string['resettasktodefaults'] = 'Zeitplan dieses Vorgangs auf Standardwerte zurücksetzen';
+$string['resettasktodefaults_help'] = 'Damit werden alle lokalen Änderungen rückgängig gemacht und die Originaleinstellungen für den Vorgang wieder hergestellt.';
+$string['runnow'] = 'Sofort ausführen';
+$string['runnow_confirm'] = 'Möchten Sie den Vorgang \'{$a}\' wirklich sofort ausführen? Der Vorgang läuft auf dem Webserver und könnte eventuell lange dauern, um fertig zu werden.';
+$string['scheduledtaskchangesdisabled'] = 'Änderungen in der Liste der geplanten Vorgänge sind nicht erlaubt.';
+$string['scheduledtasks'] = 'Geplante Vorgänge';
+$string['taskdisabled'] = 'Vorgang deaktiviert';
 $string['taskscheduleday'] = 'Tag';
-$string['taskscheduleday_help'] = 'Feld der Aufgabenverwaltung: Tag des Monats. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
+$string['taskscheduleday_help'] = 'Zeitplanung: Tag des Monats. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
 <br/><ul><li><strong>*</strong> Jeden Tag</li><li><strong>*/2</strong>Jeden zweiten Tag</li><li><strong>1</strong> Der erste Tag jeden Monats</li><li><strong>1,15</strong> Am ersten und 15. Tag jeden Monats</li></ul>';
 $string['taskscheduledayofweek'] = 'Wochentag';
-$string['taskscheduledayofweek_help'] = 'Feld der Wochentagverwaltung. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele: <br/><ul><li><strong>*</strong> Jeden Tag</li><li><strong>0</strong> Jeden Sonntag</li><li><strong>6</strong> Jeden Samstag</li><li><strong>1,5</strong> Jeden Montag und jeden Freitag</li></ul>';
+$string['taskscheduledayofweek_help'] = 'Zeitplanung: Wochentag. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele: <br/><ul><li><strong>*</strong> Jeden Tag</li><li><strong>0</strong> Jeden Sonntag</li><li><strong>6</strong> Jeden Samstag</li><li><strong>1,5</strong> Jeden Montag und jeden Freitag</li></ul>';
 $string['taskschedulehour'] = 'Stunde';
-$string['taskschedulehour_help'] = 'Feld der Stundenverwaltung. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele: <br/><ul><li><strong>*</strong> Jede Stunde</li><li><strong>*/2</strong> Alle zwei Stunden</li><li><strong>2-10</strong> Jede Stunde zwischen  2am bisl 10am (inkl.)</li><li><strong>2,6,9</strong> um 2am, 6am und 9am</li></ul>';
+$string['taskschedulehour_help'] = 'Zeitplanung: Stunde. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele: <br/><ul><li><strong>*</strong> Jede Stunde</li><li><strong>*/2</strong> Alle zwei Stunden</li><li><strong>2-10</strong> Jede Stunde zwischen  2am bisl 10am (inkl.)</li><li><strong>2,6,9</strong> um 2am, 6am und 9am</li></ul>';
 $string['taskscheduleminute'] = 'Minute';
-$string['taskscheduleminute_help'] = 'Feld der Minutenverwaltung. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
+$string['taskscheduleminute_help'] = 'Zeitplanung: Minute. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
 <br/><ul><li><strong>*</strong> Jede Minute</li><li><strong>*/5</strong> Alle 5 Minuten</li><li><strong>2-10</strong> Jede Minute zwischen 2 und 10 Minuten nach der vollen Stunde (inkl)</li><li><strong>2,6,9</strong> um 2, 6 und 9 Minuten nach jeder vollen Stunde</li></ul>';
 $string['taskschedulemonth'] = 'Monat';
-$string['taskschedulemonth_help'] = 'Feld der Monatsverwaltung. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
+$string['taskschedulemonth_help'] = 'Zeitplanung: Monat. Das Feld verwendet das gleiche Format wie der Unix Cron. Einige Beispiele:
 <br/><ul><li><strong>*</strong> Jeden Monat</li><li><strong>*/2</strong> Jeden zweiten Monat</li><li><strong>1</strong> Jeden  Januar</li><li><strong>1,5</strong> Jeden Januar und Mai</li></ul>';

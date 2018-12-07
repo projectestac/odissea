@@ -29,3 +29,4 @@ $string['pluginname_help'] = 'Igual que la pregunta estàndard de Selecció múl
 $string['pluginnamesummary'] = 'Igual que la pregunta estàndard de Selecció múltiple, però es poden crear enunciats i retroalimentacions múltiples inserint variables amb números, fórmules o gràfiques.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de selecció múltiple - Matemàtiques i Ciències per WIRIS';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de selecció múltiple - Matemàtiques i Ciències per WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Multi Choice question type does not effect or store any data itself.';

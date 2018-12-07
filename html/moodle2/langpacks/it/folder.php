@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,10 @@ $string['folder:addinstance'] = 'Aggiungere cartelle';
 $string['foldercontent'] = 'File e sotto cartelle';
 $string['folder:managefiles'] = 'Gestire file nel modulo cartella';
 $string['folder:view'] = 'Visualizzare contenuto cartella';
+$string['indicator:cognitivedepth'] = 'Cartella cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse \'cartella\'.';
+$string['indicator:socialbreadth'] = 'Cartella sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'file\'.';
 $string['maxsizetodownload'] = 'Dimensione massima della cartella da scaricare (MB)';
 $string['maxsizetodownload_help'] = 'L\'impostazione limita la dimensione massima oltre la quale gli utenti non potranno scaricare la cartella in formato zip. Impostando a zero, non ci saranno limiti dimensionai.';
 $string['modulename'] = 'Cartella';
@@ -56,6 +60,7 @@ $string['page-mod-folder-view'] = 'Pagina principale modulo cartella';
 $string['page-mod-folder-x'] = 'Qualsiasi pagina con modulo cartella';
 $string['pluginadministration'] = 'Gestione cartella';
 $string['pluginname'] = 'Cartella';
+$string['privacy:metadata'] = 'Il plugin mod_folder non memorizza dati personali.';
 $string['search:activity'] = 'Cartella - Informazioni sull\'attività';
 $string['showdownloadfolder'] = 'Visualizza pulsante Scarica cartella';
 $string['showdownloadfolder_help'] = 'Visualizza un pulsante che consente lo scaricamento in formato zip dei file presenti in una cartella.';

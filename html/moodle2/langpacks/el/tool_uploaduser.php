@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploaduser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowdeletes'] = 'Να επιτρέπονται διαγραφές';
-$string['allowrenames'] = 'Να επιτρέπονται μετονομασίες';
+$string['allowdeletes'] = 'Να επιτρέπονται διαγραφές (deletes)';
+$string['allowrenames'] = 'Να επιτρέπονται οι μετονομασίες';
 $string['allowsuspends'] = 'Να επιτρέπεται η αναστολή και η ενεργοποίηση λογαριασμών';
 $string['csvdelimiter'] = 'Διαχωριστικό CSV';
 $string['defaultvalues'] = 'Προεπιλεγμένες τιμές';
@@ -44,7 +44,7 @@ $string['uploadpicture_cannotprocessdir'] = 'Αδυναμία επεξεργασ
 $string['uploadpicture_cannotsave'] = 'Αδυναμία αποθήκευσης εικόνας για το χρήστη {$a}. Ελέγξτε το αρχικό αρχείο.';
 $string['uploadpicture_cannotunzip'] = 'Αδυναμία αποσυμπίεσης αρχείου εικόνας.';
 $string['uploadpicture_invalidfilename'] = 'Το αρχείο εικόνας {$a} περιέχει μη έγκυρους χαρακτήρες στο όνομά του. Παράλειψη αρχείου.';
-$string['uploadpicture_overwrite'] = 'Αντικατάσταση υπάρχοντων εικόνων χρηστών;';
+$string['uploadpicture_overwrite'] = 'Αντικατάσταση υφιστάμενων εικόνων χρηστών;';
 $string['uploadpictures'] = 'Μεταφόρτωση εικόνων χρηστών';
 $string['uploadpictures_help'] = '<p>Εικόνες χρηστών μπορούν να μεταφορτωθούν ως συμπιεσμένο αρχείο zip ή ως αρχεία εικόνων. Τα αρχεία εικόνων θα πρέπει να είναι ονομασμένα <i>επιλεγμένος-χρήστης-ιδιότητα.επέκταση</i>. Για παράδειγμα, εάν η επιλεχθείσα ιδιότητα του χρήστη που χρησιμεύει για το ταίριασμα των εικόνων είναι το όνομα χρήστη και το όνομα χρήστη είναι user1234, τότε το αρχείο θα πρέπει να είναι user1234.jpg.</p>
 <p>Τύποι εικόνων που υποστηρίζονται είναι, μεταξύ άλλων, gif, jpg, and png.</p>
@@ -151,7 +151,7 @@ $string['usersrenamed'] = 'Μετονομάστηκαν οι χρήστες';
 $string['usersskipped'] = 'Χρήστες που παραλείφθηκαν';
 $string['usersupdated'] = 'Οι χρήστες ανανεώθηκαν';
 $string['usersweakpassword'] = 'Οι χρήστες έχουν αδύναμο κωδικό ασφαλείας';
-$string['uubulk'] = 'Επιλογή για μαζικές ενέργειες χρήστη';
+$string['uubulk'] = 'Επιλογή για μαζικές ενέργειες σε χρήστες';
 $string['uubulkall'] = 'Όλοι οι χρητες';
 $string['uubulknew'] = 'Νέοι χρήστες';
 $string['uubulkupdated'] = 'Ανανεωμένοι χρήστες';
@@ -162,9 +162,9 @@ $string['uulegacy3role'] = '(Αρχικός καθηγητής χωρίς δικ
 $string['uunoemailduplicates'] = 'Μη αποδοχή διπλότυπων διευθύνσεων ηλεκτρονικού ταχυδρομείου';
 $string['uuoptype'] = 'Μεταφόρτωση τύπου';
 $string['uuoptype_addinc'] = 'Προσθήκη όλων, προσάρτηση μετρητή στα ονόματα χρηστών εάν χρειάζεται';
-$string['uuoptype_addnew'] = 'Μόνο προσθήκη νέων, παράλειψη υπάρχοντων χρηστών';
-$string['uuoptype_addupdate'] = 'Προσθήκη νέων και ανανέωση υπάρχοντων χρηστών';
-$string['uuoptype_update'] = 'Μόνο ανανέωση υπάρχοντων χρηστών';
+$string['uuoptype_addnew'] = 'Μόνο προσθήκη νέων, παράλειψη υφιστάμενων χρηστών';
+$string['uuoptype_addupdate'] = 'Προσθήκη νέων και ανανέωση υφιστάμενων χρηστών';
+$string['uuoptype_update'] = 'Μόνο ανανέωση υφιστάμενων χρηστών';
 $string['uupasswordnew'] = 'Νέο συνθηματικό χρήστη';
 $string['uupasswordold'] = 'Υπάρχον συνθηματικό χρήστη';
 $string['uustandardusernames'] = 'Τυποποίηση ονομάτων χρήστη';

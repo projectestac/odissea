@@ -55,9 +55,18 @@ var _wrs_isNewElement = typeof _wrs_isNewElement != 'undefined' ? _wrs_isNewElem
 var _wrs_temporalImage;
 var _wrs_temporalFocusElement;
 var _wrs_range;
+var _wrs_latex_formula_name = "Latex Formula";
+var _wrs_latex_formula_number = 1;
 
+// Tags used for LaTeX formulas.
+var _wrs_latexTags = {
+    'open': '$$',
+    'close': '$$'
+};
 // LaTex client cache.
 var _wrs_int_LatexCache = {};
+// Cache for all the mathmls withouts translation to LaTex.
+var _wrs_int_nonLatexCache = {};
 
 // Accessible client cache.
 var _wrs_int_AccessibleCache = {};
@@ -138,6 +147,9 @@ var _wrs_css_loaded = false;
 var _wrs_modalWindowProperties = typeof _wrs_modalWindowProperties != 'undefined' ? _wrs_modalWindowProperties : {};
 var _wrs_editor = typeof _wrs_editor != 'undefined' ? _wrs_editor : null;
 var _wrs_modalWindow = typeof _wrs_modalWindow != 'undefined' ? _wrs_modalWindow : null;
+
+// If true all MathML should be parse despite of save mode.
+var _wrs_parseXml = true;
 
 /**
  * Adds element events.
@@ -619,7 +631,7 @@ function wrs_createObjectCode(object) {
 }
 
 /**
- * Parses end HTML code. The end HTML code is HTML code with embedded images or LaTeX formulas created with the WIRIS editor. <br>
+ * Parses end HTML code. The end HTML code is HTML code with embedded images or LaTeX formulas created with MathType. <br>
  * By default this method converts the formula images and LaTeX strings in MathML. <br>
  * If image mode is enabled the images will not be converted into MathML. For further information see {@link http://www.wiris.com/plugins/docs/full-mathml-mode}.
  * @param {string} code String to be parsed.
@@ -652,24 +664,18 @@ function wrs_endParseEditMode(code, wirisProperties, language) {
         var output = '';
         var endPosition = 0;
         var startPosition = code.indexOf('$$');
-
         while (startPosition != -1) {
             output += code.substring(endPosition, startPosition);
             endPosition = code.indexOf('$$', startPosition + 2);
 
             if (endPosition != -1) {
+                // Before, it was a condition here to execute the next codelines 'latex.indexOf('<') == -1'.
+                // We don't know why it was used, but seems to have a conflict with latex formulas that contains '<'.
                 var latex = code.substring(startPosition + 2, endPosition);
-
-                if (latex.indexOf('<') == -1) {
-                    latex = wrs_htmlentitiesDecode(latex);
-                    var mathml = wrs_getMathMLFromLatex(latex, true);
-                    output += mathml;
-                    endPosition += 2;
-                }
-                else {
-                    output += '$$';
-                    endPosition = startPosition + 2;
-                }
+                latex = wrs_htmlentitiesDecode(latex);
+                var mathml = wrs_getMathMLFromLatex(latex, true);
+                output += mathml;
+                endPosition += 2;
             }
             else {
                 output += '$$';
@@ -918,10 +924,15 @@ function wrs_getLatexFromMathML(mathml) {
  * Extracts the latex of a determined position in a text.
  * @param {string} textNode test to extract LaTeX
  * @param {int} caretPosition starting position to find LaTeX.
+ * @param {object} latexTags optional parameter representing tags between latex is inserted. It has the 'open' attribute for the open tag and the 'close' attribute for the close tag.
  * @return {object} An object with 3 keys: 'latex', 'start' and 'end'. Null if latex is not found.
  * @ignore
  */
-function wrs_getLatexFromTextNode(textNode, caretPosition) {
+function wrs_getLatexFromTextNode(textNode, caretPosition, latexTags) {
+    // latexTags is an optional parameter. If is not set, use default latexTags.
+    if (typeof latexTags == 'undefined' || latexTags == null) {
+        latexTags = _wrs_latexTags;
+    }
     // Looking for the first textNode.
     var startNode = textNode;
 
@@ -931,8 +942,23 @@ function wrs_getLatexFromTextNode(textNode, caretPosition) {
 
     // Finding latex.
 
-    function getNextLatexPosition(currentNode, currentPosition) {
-        var position = currentNode.nodeValue.indexOf('$$', currentPosition);
+    /**
+     * It gets the next latex position and node from a specific node and position.
+     * @param {Object} currentNode node where searching latex.
+     * @param {number} currentPosition current position inside the currentNode.
+     * @param {Object} latexTagsToUse tags used at latex beggining and latex final.
+     * @param {boolean} searchEndTag If true, the first tag to search is an end tag. Otherwise, it searches the open tag first.
+     */
+    function getNextLatexPosition(currentNode, currentPosition, latexTagsToUse, searchEndTag) {
+        var latexTags = latexTagsToUse;
+        if (searchEndTag) {
+            latexTags = {
+                'open': latexTagsToUse.close,
+                'close': latexTagsToUse.open
+            };
+        }
+
+        var position = currentNode.nodeValue.indexOf(latexTags.open, currentPosition);
 
         while (position == -1) {
             currentNode = currentNode.nextSibling;
@@ -941,7 +967,7 @@ function wrs_getLatexFromTextNode(textNode, caretPosition) {
                 return null; // Not found.
             }
 
-            position = currentNode.nodeValue.indexOf('$$');
+            position = currentNode.nodeValue.indexOf(latexTags.close);
         }
 
         return {
@@ -963,43 +989,46 @@ function wrs_getLatexFromTextNode(textNode, caretPosition) {
     }
 
     var start;
-
     var end = {
         'node': startNode,
         'position': 0
     };
-
+    var searchEndTag = false;
+    // Is supposed that open and close tags has the same length.
+    var tagLength = latexTags.open.length;
     do {
-        var start = getNextLatexPosition(end.node, end.position);
+        var start = getNextLatexPosition(end.node, end.position, latexTags, searchEndTag);
 
         if (start == null || isPrevious(textNode, caretPosition, start.node, start.position)) {
             return null;
         }
 
-        var end = getNextLatexPosition(start.node, start.position + 2);
+        var end = getNextLatexPosition(start.node, start.position + tagLength, latexTags, !searchEndTag);
 
         if (end == null) {
             return null;
         }
 
-        end.position += 2;
+        end.position += tagLength;
+        // For the next iteration, the start position to search corresponds to the opposite tag.
+        searchEndTag = !searchEndTag;
     } while (isPrevious(end.node, end.position, textNode, caretPosition));
 
     // Isolating latex.
     var latex;
 
     if (start.node == end.node) {
-        latex = start.node.nodeValue.substring(start.position + 2, end.position - 2);
+        latex = start.node.nodeValue.substring(start.position + tagLength, end.position - tagLength);
     }
     else {
-        latex = start.node.nodeValue.substring(start.position + 2, start.node.nodeValue.length);
+        latex = start.node.nodeValue.substring(start.position + tagLength, start.node.nodeValue.length);
         var currentNode = start.node;
 
         do {
             currentNode = currentNode.nextSibling;
 
             if (currentNode == end.node) {
-                latex += end.node.nodeValue.substring(0, end.position - 2);
+                latex += end.node.nodeValue.substring(0, end.position - tagLength);
             }
             else {
                 latex += currentNode.nodeValue;
@@ -1217,6 +1246,39 @@ function wrs_getSelectedItem(target, isIframe, forceGetSelection) {
 }
 
 /**
+ * Returns null if there isn't any item or if it is malformed.
+ * Otherwise returns a div DOM node containing the mathml image and the cursor position inside the textarea.
+ * @param {Object} textarea DOM Element.
+ * @ignore
+ */
+function wrs_getSelectedItemOnTextarea(textarea) {
+    var textNode = document.createTextNode(textarea.value);
+    var textNodeWithLatex = wrs_getLatexFromTextNode(textNode, textarea.selectionStart);
+    if (textNodeWithLatex == null) {
+        return null
+    };
+
+    // Try to get latex mathml from cache
+    var latex = textNodeWithLatex.latex;
+    var mathml = _wrs_int_LatexCache[latex];
+    // If the formula was written and not generated by the editor, caches won't have the data.
+    if (typeof mathml == 'undefined') {
+        mathml = wrs_getMathMLFromLatex(latex);
+    }
+
+    var mathmlWithoutSemantics = wrs_removeSemanticsMathml(mathml);
+    var img = wrs_parseMathmlToImg(mathmlWithoutSemantics, _wrs_xmlCharacters, _wrs_int_langCode);
+    var div = document.createElement('div');
+    div.innerHTML = img;
+
+    return {
+        'node': div.firstChild,
+        'startPosition': textNodeWithLatex.startPosition,
+        'endPosition': textNodeWithLatex.endPosition
+    };
+}
+
+/**
  * Converts the HTML of a image into the output code that WIRIS must return.
  * By default returns the mathml stored on data-mahml attribute (if imgCode is a formula)
  * or the Wiriscas attribute of a WIRIS applet.
@@ -1315,22 +1377,16 @@ function wrs_httpBuildQuery(properties) {
  * MathML code: Image containing the corresponding MathML formulas.
  * MathML code with LaTeX annotation : LaTeX.
  * </pre>
- * @param {string} code HTML code with data generated by WIRIS plugin.
+ * @param {string} code HTML code with data generated by MathType.
  * @param {string} language Language for the formula.
  * @return {string} HTML code with the WIRIS data converted into LaTeX and images.
  */
- /* Note: The code inside this function has been inverted.
+function wrs_initParse(code, language) {
+    /* Note: The code inside this function has been inverted.
     If you invert again the code then you cannot use correctly LaTeX
     in Moodle.
- */
-function wrs_initParse(code, language) {
+    */
     wrs_initSetSize();
-    if (window._wrs_conf_saveMode) {
-        _wrs_parseXml = _wrs_conf_saveMode == 'safeXml'|| _wrs_conf_saveMode == 'xml';
-        if (window._wrs_conf_parseModes !== undefined) {
-            _wrs_parseXml = _wrs_parseXml || wrs_arrayContains(_wrs_conf_parseModes, 'xml') != -1;
-        }
-    }
     code = wrs_initParseSaveMode(code, language);
     return wrs_initParseEditMode(code);
 }
@@ -1535,19 +1591,41 @@ function wrs_insertElementOnSelection(element, focusElement, windowTarget) {
         // integration script can call focus method from the editor instance.
         // For example, on CKEditor calls CKEditorInstance.focus() method.
         // With this method we can call proper focus methods which in some scenarios
-        // help's WIRIS plugin to focus properly on the current editor window.
+        // help's MathType to focus properly on the current editor window.
         if (typeof wrs_int_insertElementOnSelection != 'undefined') {
             wrs_int_insertElementOnSelection();
-            if (!_wrs_range) {
-                focusElement.focus();
-            }
         }
-        else {
+        if(typeof focusElement.frameElement != 'undefined'){
+            function get_browser(){
+                var ua = navigator.userAgent;
+                if(ua.search("Edge/") >= 0){
+                    return "EDGE";
+                }else if(ua.search("Chrome/") >= 0){
+                    return "CHROME";
+                }else if(ua.search("Trident/") >= 0){
+                    return "IE";
+                }else if(ua.search("Firefox/") >= 0){
+                    return "FIREFOX";
+                }else if(ua.search("Safari/") >= 0){
+                    return "SAFARI";
+                }
+            }
+            var browserName = get_browser();
+            // Iexplorer, Edge and Safari can't focus into iframe
+            if (browserName == 'SAFARI' || browserName == 'IE' || browserName == 'EDGE') {
+                focusElement.focus();
+            }else{
+                focusElement.frameElement.focus();
+            }
+        }else{
             focusElement.focus();
         }
 
         if (_wrs_isNewElement) {
-            if (document.selection && document.getSelection == 0) {
+            if (focusElement.type == "textarea") {
+                wrs_updateTextarea(focusElement, element.textContent);
+            }
+            else if (document.selection && document.getSelection == 0) {
                 var range = windowTarget.document.selection.createRange();
                 windowTarget.document.execCommand('InsertImage', false, element.src);
 
@@ -1570,10 +1648,8 @@ function wrs_insertElementOnSelection(element, focusElement, windowTarget) {
                 }
             }
             else {
-                var ua = navigator.userAgent.toLowerCase();
-                var isAndroid = ua.indexOf("android") > -1;
-                var isIOS = ((ua.indexOf("ipad") > -1) || (ua.indexOf("iphone") > -1));
                 var selection = windowTarget.getSelection();
+                // We have use wrs_range beacuse IExplorer delete selection when select another part of text.
                 if (_wrs_range) {
                     var range = _wrs_range;
                     _wrs_range = null;
@@ -1602,20 +1678,17 @@ function wrs_insertElementOnSelection(element, focusElement, windowTarget) {
                 else if (node.nodeType == 1) { // ELEMENT_NODE.
                     node.insertBefore(element, node.childNodes[position]);
                 }
-
-                if (!isAndroid && !isIOS){
-                    // Fix to set the caret after the inserted image.
-                    range.selectNode(element);
-                    position = range.endOffset;
-                    selection.collapse(node, position);
-                    // Integration function
-                    // If wrs_int_setCaretPosition function exists on
-                    // integration script can call caret method from the editor instance.
-                    // With this method we can call proper specific editor methods which in some scenarios
-                    // help's WIRIS plugin to set caret position properly on the current editor window.
-                    if (typeof wrs_int_selectRange != 'undefined') {
-                        wrs_int_selectRange(range);
-                    }
+                // Fix to set the caret after the inserted image.
+                range.selectNode(element);
+                position = range.endOffset;
+                selection.collapse(node, position);
+                // Integration function
+                // If wrs_int_setCaretPosition function exists on
+                // integration script can call caret method from the editor instance.
+                // With this method we can call proper specific editor methods which in some scenarios
+                // help's MathType to set caret position properly on the current editor window.
+                if (typeof wrs_int_selectRange != 'undefined') {
+                    wrs_int_selectRange(range);
                 }
             }
         }
@@ -1631,11 +1704,33 @@ function wrs_insertElementOnSelection(element, focusElement, windowTarget) {
                 _wrs_temporalRange.insertNode(element);
             }
         }
+        else if (focusElement.type == "textarea") {
+            var item;
+            // Wrapper for some integrations that can have special behaviours to show latex.
+            if (typeof wrs_int_getSelectedItem != 'undefined') {
+                item = wrs_int_getSelectedItem(focusElement, false);
+            }
+            else {
+                item = wrs_getSelectedItemOnTextarea(focusElement);
+            }
+            wrs_updateExistingFormulaOnTextarea(focusElement, element.textContent, item.startPosition, item.endPosition);
+        }
         else {
             if (!element) { // Editor empty, formula has been erased on edit.
                 _wrs_temporalImage.parentNode.removeChild(_wrs_temporalImage);
             }
             _wrs_temporalImage.parentNode.replaceChild(element, _wrs_temporalImage);
+            function placeCaretAfterNode(node) {
+                if (typeof window.getSelection != "undefined") {
+                    var range = windowTarget.document.createRange();
+                    range.setStartAfter(node);
+                    range.collapse(true);
+                    var selection = windowTarget.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+            }
+            placeCaretAfterNode(element);
         }
     }
     catch (e) {
@@ -2167,6 +2262,7 @@ function wrs_openEditorWindow(language, target, isIframe) {
     // Avoid double slashes.
     var path = _wrs_conf_path.lastIndexOf('/') == _wrs_conf_path.length - 1 ? _wrs_conf_path + "core/editor.html" : _wrs_conf_path + "/core/editor.html";
 
+    // Params for editor.html
     if (language) {
         path = wrs_addArgument(path, "lang", language);
     }
@@ -2174,6 +2270,8 @@ function wrs_openEditorWindow(language, target, isIframe) {
     if (location.protocol == 'https:') {
         path = wrs_addArgument(path, "secure", "true");
     }
+
+    path = wrs_addArgument(path, "v", _wrs_plugin_version);
 
     var availableDirs = new Array('rtl', 'ltr');
     if (typeof _wrs_int_directionality != 'undefined' && wrs_arrayContains(availableDirs, _wrs_int_directionality) != -1){
@@ -2245,7 +2343,7 @@ function wrs_openEditorWindow(language, target, isIframe) {
         }
     }
 
-    var title = wrs_int_getCustomEditorEnabled() != null ? wrs_int_getCustomEditorEnabled().title : 'WIRIS EDITOR math';
+    var title = wrs_int_getCustomEditorEnabled() != null ? wrs_int_getCustomEditorEnabled().title : 'MathType';
     if (typeof _wrs_conf_modalWindow != 'undefined' && _wrs_conf_modalWindow === false) {
         _wrs_popupWindow = window.open(path, title, _wrs_conf_editorAttributes);
         return _wrs_popupWindow;
@@ -2271,6 +2369,7 @@ function wrs_openEditorWindow(language, target, isIframe) {
 /**
  * Converts all occurrences of mathml code to LATEX. The MathML code should containg <annotation encoding="LaTeX"/> to be converted.
  * @param {string} content A string containing MathML valid code.
+ * @param {Object} characters An object containing special characters.
  * @return {string} String with all MathML annotated occurrences replaced by the corresponding LaTeX code.
  * @ignore
  */
@@ -2321,7 +2420,7 @@ function wrs_parseMathmlToLatex(content, characters){
 
 /**
  * Converts all occurrences of mathml code to the corresponding image.
- * @param {string} content An string with valid MathML code.
+ * @param {string} content An string with valid MathML code. The matml code doesn't contain semantics.
  * @param {object} characters An object containing xmlCharacters or safeXmlCharacters relation.
  * @param {string} language String containging a valid language code in order to generate formula accesibilty.
  * @return {string} The input string with all the MathML ocurrences replaced by the corresponding image.
@@ -2483,7 +2582,7 @@ wrs_PluginEvent.prototype.preventDefault = function () {
 }
 
 /**
- * Fires WIRIS plugin event listeners
+ * Fires MathType event listeners
  * @param  {String} eventName event name
  * @param  {Object} e         event properties
  * @return {bool}             false if event has been prevented.
@@ -2554,8 +2653,15 @@ function wrs_updateFormula(focusElement, windowTarget, mathml, wirisProperties, 
     }
     else if (editMode == 'latex') {
         e.latex = wrs_getLatexFromMathML(mathml);
-        e.node = windowTarget.document.createTextNode('$$' + e.latex + '$$');
-        wrs_populateLatexCache(e.latex, mathml);
+        // wrs_int_getNonLatexNode is an integration wrapper to have special behaviours for nonLatex.
+        // Not all the integrations have special behaviours for nonLatex.
+        if (typeof wrs_int_getNonLatexNode != 'undefined' && (typeof e.latex == 'undefined' || e.latex == null)) {
+            wrs_int_getNonLatexNode(e, windowTarget, mathml);
+        }
+        else {
+            e.node = windowTarget.document.createTextNode('$$' + e.latex + '$$');
+            wrs_populateLatexCache(e.latex, mathml);
+        }
         wrs_insertElementOnSelection(e.node, focusElement, windowTarget);
     }
     else if (editMode == 'iframes') {
@@ -2583,13 +2689,29 @@ function wrs_updateTextarea(textarea, text) {
         textarea.focus();
 
         if (textarea.selectionStart != null) {
+            var selectionEnd = textarea.selectionEnd;
             textarea.value = textarea.value.substring(0, textarea.selectionStart) + text + textarea.value.substring(textarea.selectionEnd, textarea.value.length);
+            textarea.selectionEnd = selectionEnd + text.length;
         }
         else {
             var selection = document.selection.createRange();
             selection.text = text;
         }
     }
+}
+
+/**
+ * Modifies existing formula on a textarea.
+ * @param {object} textarea Target
+ * @param {string} text Text to add in the textarea. For example, if you want to add the link to the image, you can call this function as wrs_updateTextarea(textarea, wrs_createImageSrc(mathml));
+ * @param {number} start Beggining index from textarea where it needs to be replaced by text.
+ * @param {number} end Ending index from textarea where it needs to be replaced by text
+ * @ignore
+ */
+function wrs_updateExistingFormulaOnTextarea(textarea, text, start, end) {
+    textarea.focus();
+    textarea.value = textarea.value.substring(0, start) + text + textarea.value.substring(end, textarea.value.length);
+    textarea.selectionEnd = start + text.length;
 }
 
 /**
@@ -2851,6 +2973,7 @@ function wrs_createModalWindow() {
 
 /**
  * Closes modal window
+ * @ignore
  */
 function wrs_closeModalWindow() {
     // We avoid to close window when it's closed
@@ -2860,6 +2983,17 @@ function wrs_closeModalWindow() {
         _wrs_editMode = (window._wrs_conf_defaultEditMode) ? _wrs_conf_defaultEditMode : 'images';
         _wrs_modalWindow.close();
     }
+}
+
+/**
+ * Check content of editor before close action
+ * @ignore
+ */
+function wrs_showPopUpMessage() {
+    if (_wrs_modalWindow.properties.state == 'minimized') {
+        _wrs_modalWindow.stackModalWindow();
+    }
+    _wrs_modalWindow.popup.show();
 }
 
 /**
@@ -3024,6 +3158,20 @@ function wrs_populateLatexCache(latex, mathml) {
 }
 
 /**
+ * Populates Non-LaTeX cache into _wrs_int_nonLatexCache global variable.
+ * Non-LaTeX is called to all the mathmls without LaTeX translation.
+ *
+ * @param {string}latex Non-LaTeX code.
+ * @param {string} mathml matml associated.
+ * @ignore
+ */
+function wrs_populateNonLatexCache(latex, mathml) {
+    if (!_wrs_int_LatexCache.hasOwnProperty(latex)) {
+        _wrs_int_nonLatexCache[latex] = mathml;
+    }
+}
+
+/**
  * Puts into _wrs_int_AccessibleCache global variable dictionary the pair mathml=>accessibleText.
  *
  * @param {string} mathml MatML text.
@@ -3040,10 +3188,16 @@ function wrs_populateAccessibleCache(mathml, accessibleText) {
  * Add annotation tag to mathml without it (mathml comes from LaTeX string)
  * @param  {string} mathml MathML code generated by a LaTeX string.
  * @param  {string} latex Original LaTeX string
+ * @param  {string} withoutLatexTranslate True if not exists latex translation from mathml.
  * @return {string} new mathml containing LaTeX code on annotation tag.
  * @ignore
  */
 function wrs_insertSemanticsMathml(mathml, latex) {
+
+    // If latex is empty, insert semantics doesn't provide information. We can avoid semantics insertion and return the mathml.
+    if (latex == "") {
+        return mathml;
+    }
 
     var firstEndTag = '>';
     var mathTagEnd = '<' + '/math' + '>';
@@ -3070,6 +3224,27 @@ function wrs_insertSemanticsMathml(mathml, latex) {
         return mathml;
     }
 
+}
+
+/**
+ * Removes annotation tag to mathml.
+ * @param {*} mathml Valid MathML.
+ */
+function wrs_removeSemanticsMathml(mathml) {
+    var mathTagEnd = '<' + '/math' + '>';
+    var openSemantics = '<' + 'semantics' + '>';
+    var openAnnotation = '<annotation encoding="LaTeX">';
+
+    var mathmlWithoutSemantics = mathml;
+    var startSemantics = mathml.indexOf(openSemantics);
+    if (startSemantics != -1) {
+        var startAnnotation = mathml.indexOf(openAnnotation, startSemantics + openSemantics.length);
+        if (startAnnotation != -1) {
+            mathmlWithoutSemantics = mathml.substring(0, startSemantics) + mathml.substring(startSemantics + openSemantics.length, startAnnotation) + mathTagEnd;
+        }
+    }
+
+    return mathmlWithoutSemantics;
 }
 
 /**
@@ -3558,9 +3733,9 @@ if (!String.prototype.codePointAt) {
 }
 
 /**
- * Add a new callback to a WIRIS plugins listener.
+ * Add a new callback to a MathType listener.
  * @param {object} listener an Object containing listener name and a callback.
- * @ignore
+ * @tutorial tutorial
  */
 function wrs_addPluginListener(listener) {
     wrs_pluginListeners.push(listener);
@@ -3569,7 +3744,7 @@ function wrs_addPluginListener(listener) {
 /**
  * For now its not possible comunicate directly between editor.js and ModalWindow object.
  * We need to use this method to call ModalWindow prototype from editor.js
- * @param  {object} editor WIRIS Editor
+ * @param  {object} editor
  * @ignore
  */
 function wrs_setModalWindowEditor(editor) {
@@ -3580,6 +3755,7 @@ function wrs_setModalWindowEditor(editor) {
 
 /**
  * Get the base URL (i.e the URL on core.js lives).
+ * @ignore
  */
 function wrs_getServerPath() {
     url = wrs_getCorePath();
@@ -4314,13 +4490,16 @@ function ModalWindow(path, editorAttributes) {
     deviceProperties['isAndroid'] = isAndroid ? true : false;
     deviceProperties['isIOS'] = isIOS ? true : false;
     deviceProperties['isMobile'] = isMobile;
+    deviceProperties['isDesktop'] = !isMobile && !isIOS && !isAndroid;
 
     this.deviceProperties = deviceProperties;
     this.properties = {
         created : false,
         state : '',
         previousState : '',
-        deviceProperties: deviceProperties
+        deviceProperties: deviceProperties,
+        position : {bottom: 0, right: 10},
+        size :  {height: 338, width: 580}
     }
 
     this.properties.iframeAttributes = iframeAttributes;
@@ -4354,10 +4533,17 @@ function ModalWindow(path, editorAttributes) {
 
     attributes = {};
     attributes['class'] = 'wrs_modal_stack_button';
-    attributes['title'] = strings['fullscreen'];
+    attributes['title'] = "Exit full-screen";
     var stackModalDiv = wrs_createElement('a', attributes);
     stackModalDiv.setAttribute('role','button');
     this.stackDiv = stackModalDiv;
+
+    attributes = {};
+    attributes['class'] = 'wrs_modal_maximize_button';
+    attributes['title'] = strings['fullscreen'];
+    var maximizeModalDiv = wrs_createElement('a', attributes);
+    maximizeModalDiv.setAttribute('role','button');
+    this.maximizeDiv = maximizeModalDiv;
 
     attributes = {};
     attributes['class'] = 'wrs_modal_minimize_button';
@@ -4369,13 +4555,12 @@ function ModalWindow(path, editorAttributes) {
     attributes = {};
     attributes['class'] = 'wrs_modal_dialogContainer';
     var containerDiv = wrs_createElement('div', attributes);
-    containerDiv.style.overflow = 'hidden';
     this.containerDiv = containerDiv;
 
     attributes = {};
     attributes['id'] = 'wrs_modal_iframe_id';
     attributes['class'] = 'wrs_modal_iframe';
-    attributes['title'] = 'WIRIS Editor Modal Window';
+    attributes['title'] = 'MathType modal window';
     attributes['src'] = iframeAttributes['src'];
     attributes['frameBorder'] = "0";
     var iframeModal = wrs_createElement('iframe', attributes);
@@ -4397,6 +4582,7 @@ function ModalWindow(path, editorAttributes) {
 ModalWindow.prototype.create = function() {
     this.titleBardDiv.appendChild(this.closeDiv);
     this.titleBardDiv.appendChild(this.stackDiv);
+    this.titleBardDiv.appendChild(this.maximizeDiv);
     this.titleBardDiv.appendChild(this.minimizeDiv);
     this.titleBardDiv.appendChild(this.titleDiv);
     this.iframeContainer.appendChild(this.iframe);
@@ -4407,20 +4593,29 @@ ModalWindow.prototype.create = function() {
         }
     });
 
-    if (!this.deviceProperties['isMobile'] && !this.deviceProperties['isAndroid'] && !this.deviceProperties['isIOS']) {
+    if (this.deviceProperties['isDesktop']) {
         this.containerDiv.appendChild(this.titleBardDiv);
     }
     this.containerDiv.appendChild(this.iframeContainer);
+    // Check if browser has scrollBar before modal has modified.
+    this.recalculateScrollBar();
 
     document.body.appendChild(this.containerDiv);
     document.body.appendChild(this.overlayDiv);
 
-    wrs_addEvent(this.closeDiv, 'click', this.close.bind(this));
+    wrs_addEvent(this.closeDiv, 'click', function(){
+        _wrs_popupWindow.postMessage({'objectName' : 'checkCloseCondition'}, this.iframeOrigin);
+    }.bind(this));
 
-    if (!this.deviceProperties['isMobile'] && !this.deviceProperties['isIOS'] && !this.deviceProperties['isAndroid']) { // Desktop.
+    if (this.deviceProperties['isDesktop']) { // Desktop.
+        this.maximizeDiv.addEventListener('click', this.maximizeModalWindow.bind(this), true);
         this.stackDiv.addEventListener('click', this.stackModalWindow.bind(this), true);
         this.minimizeDiv.addEventListener('click', this.minimizeModalWindow.bind(this), true);
         this.createModalWindowDesktop();
+        this.createResizeButtons();
+        if (_wrs_conf_modalWindow) {
+            this.addListeners();
+        }
     }
     else if (this.deviceProperties['isAndroid']) {
         this.createModalWindowAndroid();
@@ -4428,16 +4623,93 @@ ModalWindow.prototype.create = function() {
     else if (this.deviceProperties['isIOS'] && !this.deviceProperties['isMobile']) {
         this.createModalWindowIos();
     }
-    this.addListeners();
     _wrs_popupWindow = this.iframe.contentWindow;
     this.properties.open = true;
     this.properties.created = true;
 
-    if (typeof _wrs_conf_modalWindow != "undefined" && _wrs_conf_modalWindow && _wrs_conf_modalWindowFullScreen) {
-        this.maximizeModalWindow();
+    // Maximize window only when the configuration is set and the device is not ios or android.
+    if (this.deviceProperties['isDesktop'] && typeof _wrs_conf_modalWindow != "undefined" && _wrs_conf_modalWindow && _wrs_conf_modalWindowFullScreen) {
+            this.maximizeModalWindow();
     }
-    // This method obtain a width of scrollBar
-    this.scrollbarWidth = this.getScrollBarWidth();
+    this.popup = new PopUpMessage(strings);
+}
+
+/**
+ * Method to create resize buttons in modal DOM
+ * @ignore
+ */
+ModalWindow.prototype.createResizeButtons = function() {
+    // This is a definition of Resize Button Bottom-Right
+    this.resizerBR = document.createElement('div');
+    this.resizerBR.className  = 'wrs_bottom_right_resizer';
+    this.resizerBR.innerHTML = '◢';
+    // This is a definition of Resize Button Top-Left
+    this.resizerTL = document.createElement('div');
+    this.resizerTL.className  = 'wrs_bottom_left_resizer';
+    // Append resize buttons to modal
+    this.containerDiv.appendChild(this.resizerBR);
+    this.titleBardDiv.appendChild(this.resizerTL);
+    // Add events to resize on click and drag
+    wrs_addEvent(this.resizerBR, 'mousedown', this.activateResizeStateBR.bind(this));
+    wrs_addEvent(this.resizerTL, 'mousedown', this.activateResizeStateTL.bind(this));
+}
+/**
+ * Method to initialize variables for Bottom-Right resize button
+ * @param {event} ev mouse
+ * @ignore
+ */
+ModalWindow.prototype.activateResizeStateBR = function(ev) {
+    this.initializeResizeProperties(ev, false);
+}
+
+/**
+ * Method to initialize variables for Top-Left resize button
+ * @param {event} ev mouse
+ * @ignore
+ */
+ModalWindow.prototype.activateResizeStateTL = function(ev) {
+    this.initializeResizeProperties(ev, true);
+}
+
+/**
+ * Common method to initialize variables at resize
+ * @param {event} ev mouse
+ * @ignore
+ */
+ModalWindow.prototype.initializeResizeProperties = function(ev, leftOption) {
+    // Apply class for disable involuntary select text when drag.
+    wrs_addClass(document.body, 'wrs_noselect');
+    this.resizeDataObject = {
+        x: this.eventClient(ev).X,
+        y: this.eventClient(ev).Y
+    };
+    // Save Initial state of modal to compare on drag and obtain the difference.
+    this.initialWidth = parseInt(this.containerDiv.style.width);
+    this.initialHeight = parseInt(this.containerDiv.style.height);
+    if (!leftOption) {
+        this.initialRight = parseInt(this.containerDiv.style.right);
+        this.initialBottom = parseInt(this.containerDiv.style.bottom);
+    } else {
+        this.leftScale = true;
+    }
+    if (!this.initialRight){
+        this.initialRight = 0;
+    }
+    if (!this.initialBottom){
+        this.initialBottom = 0;
+    }
+    // Disable mouse events on editor when we start to drag modal.
+    this.iframe.style['pointer-events'] = 'none';
+    document.body.style['user-select'] = 'none';
+    // Needed for IE11 for apply disabled mouse events on editor because iexplorer need a dinamic object to apply this property.
+    if (this.isIE11()) {
+        this.iframe.style['position'] = 'relative';
+    }
+    // Prevent lost mouse events into other iframes
+    // Activate overlay div to prevent mouse events behind modal
+    if (_wrs_modalWindow.properties.state != "maximized") {
+        this.overlayDiv.style.display = "";
+    }
 }
 
 ModalWindow.prototype.open = function() {
@@ -4480,11 +4752,12 @@ ModalWindow.prototype.open = function() {
             }
 
             if (!this.properties.deviceProperties.isAndroid && !this.properties.deviceProperties.isIOS) {
-                this.stackModalWindow();
+                this.restoreStateModalWindow();
             }
         }
 
-        if (typeof _wrs_conf_modalWindow != "undefined" && _wrs_conf_modalWindow && _wrs_conf_modalWindowFullScreen) {
+        // Maximize window only when the configuration is set and the device is not ios or android.
+        if (this.deviceProperties['isDesktop'] && typeof _wrs_conf_modalWindow != "undefined" && _wrs_conf_modalWindow && _wrs_conf_modalWindowFullScreen) {
             this.maximizeModalWindow();
         }
 
@@ -4493,7 +4766,7 @@ ModalWindow.prototype.open = function() {
             this.setIframeContainerHeight("100" + this.iosMeasureUnit);
         }
     } else {
-        var title = wrs_int_getCustomEditorEnabled() != null ? wrs_int_getCustomEditorEnabled().title : 'WIRIS EDITOR math';
+        var title = wrs_int_getCustomEditorEnabled() != null ? wrs_int_getCustomEditorEnabled().title : 'MathType';
         _wrs_modalWindow.setTitle(title);
         this.create();
     }
@@ -4513,7 +4786,7 @@ ModalWindow.prototype.updateToolbar = function() {
         }
     } else {
         var toolbar = this.checkToolbar();
-        _wrs_modalWindow.setTitle('WIRIS EDITOR math');
+        _wrs_modalWindow.setTitle('MathType');
         if (this.toolbar == null || this.toolbar != toolbar) {
             this.setToolbar(toolbar);
             wrs_int_disableCustomEditors();
@@ -4554,7 +4827,9 @@ ModalWindow.prototype.isOpen = function() {
  * @ignore
  */
 ModalWindow.prototype.close = function() {
-    this.setMathML('<math/>');
+    this.saveModalProperties();
+    // Set disabled focus to prevent lost focus.
+    this.setMathML('<math/>',true);
     this.overlayDiv.style.visibility = 'hidden';
     this.containerDiv.style.visibility = 'hidden';
     this.containerDiv.style.display = 'none';
@@ -4562,9 +4837,6 @@ ModalWindow.prototype.close = function() {
     this.overlayDiv.style.display = 'none';
     this.properties.open = false;
     wrs_int_disableCustomEditors();
-    // Properties to initial state.
-    this.properties.state = '';
-    this.properties.previousState = '';
     setTimeout(
         function() {
             if (typeof _wrs_currentEditor != 'undefined' && _wrs_currentEditor) {
@@ -4572,6 +4844,18 @@ ModalWindow.prototype.close = function() {
             }
         }, 100);
     _wrs_popupWindow.postMessage({'objectName' : 'editorClose'}, this.iframeOrigin);
+}
+
+/**
+ * Util function for know if user is using iexplorer v11.
+ * @return {boolean} return true if browser is iexplorer v11 or false in others.
+ * @ignore
+ */
+ModalWindow.prototype.isIE11 = function() {
+    if (navigator.userAgent.search("Msie/") >= 0 || navigator.userAgent.search("Trident/") >= 0 || navigator.userAgent.search("Edge/") >= 0 ) {
+        return true;
+    }
+    return false;
 }
 
 ModalWindow.prototype.addClass = function(cls) {
@@ -4583,6 +4867,7 @@ ModalWindow.prototype.addClass = function(cls) {
     wrs_addClass(this.iframe, cls);
     wrs_addClass(this.stackDiv, cls);
     wrs_addClass(this.minimizeDiv, cls);
+    wrs_addClass(this.maximizeDiv, cls);
 }
 
 ModalWindow.prototype.removeClass = function(cls) {
@@ -4594,6 +4879,7 @@ ModalWindow.prototype.removeClass = function(cls) {
     wrs_removeClass(this.iframe, cls);
     wrs_removeClass(this.stackDiv, cls);
     wrs_removeClass(this.minimizeDiv, cls);
+    wrs_removeClass(this.maximizeDiv, cls);
 }
 
 ModalWindow.prototype.setTitle = function(title) {
@@ -4603,10 +4889,6 @@ ModalWindow.prototype.setTitle = function(title) {
 }
 /**
  * Create modal dialog for desktop OS.
- * @param  {modalDiv} modal overlay div.
- * @param  {containerDiv} modal window div.
- * @param  {iframe} embedded iframe.
- * @param  {iframeParams}  embedded iframe params (height, width).
  * @ignore
  */
 ModalWindow.prototype.createModalWindowDesktop = function() {
@@ -4616,10 +4898,6 @@ ModalWindow.prototype.createModalWindowDesktop = function() {
 
 /**
  * Create modal dialog for non mobile android devices.
- * @param  {modalDiv} modal overlay div.
- * @param  {containerDiv} modal window div.
- * @param  {iframe} embedded iframe.
- * @param  {iframeParams}  embedded iframe params (height, width).
  * @ignore
  */
 
@@ -4647,41 +4925,53 @@ ModalWindow.prototype.createModalWindowIos = function() {
     });
 }
 
-ModalWindow.prototype.stackModalWindow = function () {
-    if (this.properties.state == 'stack' || (this.properties.state == 'minimized') && !this.properties.previousState == 'stack') {
+/**
+ * Restore previous state, position and size of previous stacked modal window
+ * @ignore
+ */
+
+ModalWindow.prototype.restoreStateModalWindow = function() {
+    if (this.properties.state == 'maximized') {
+        // Reseting states for prevent return to stack state.
         this.maximizeModalWindow();
+    } else if (this.properties.state == 'minimized') {
+        // Reseting states for prevent return to stack state.
+        this.properties.state = this.properties.previousState;
+        this.properties.previousState = '';
+        this.minimizeModalWindow();
     } else {
-        this.properties.previousState = this.properties.state;
-        this.properties.state = 'stack';
-        this.containerDiv.style.top = null;
-        this.containerDiv.style.left = null;
-        this.containerDiv.style.position = null;
-        this.containerDiv.style.bottom = '0px';
-        this.containerDiv.style.right = '10px';
+        this.stackModalWindow();
+    }
+}
 
-        this.overlayDiv.style.background = "rgba(0,0,0,0)";
+ModalWindow.prototype.stackModalWindow = function () {
+    this.properties.previousState = this.properties.state;
+    this.properties.state = 'stack';
+    this.overlayDiv.style.background = "rgba(0,0,0,0)";
+    this.removeClass('wrs_maximized');
+    this.minimizeDiv.title = "Minimise";
+    this.removeClass('wrs_minimized');
+    this.addClass('wrs_stack');
 
-        this.stackDiv.title = "Full-screen";
-
-        var modalWidth = parseInt(this.properties.iframeAttributes['width']);
-        this.iframeContainer.style.width = modalWidth + 'px';
-        this.iframeContainer.style.height = 300 + 'px';
-        this.containerDiv.style.width = (modalWidth + 12) + 'px';
-        this.iframe.style.width = this.properties.iframeAttributes['width'] + 'px';
-        this.iframe.style.height = (parseInt(300) + 3) + 'px';
-        this.iframe.style.margin = '6px';
-        this.removeClass('wrs_maximized');
-        this.minimizeDiv.title = "Minimise";
-        this.removeClass('wrs_minimized');
-        this.addClass('wrs_stack');
-        if (typeof _wrs_popupWindow != 'undefined' && _wrs_popupWindow) {
-            _wrs_popupWindow.postMessage({'objectName' : 'editorResize', 'arguments': [_wrs_modalWindow.iframeContainer.offsetHeight - 10]}, this.iframeOrigin);
-        }
-
+    this.restoreModalProperties();
+    // Sending sizes to iframe
+    if (typeof _wrs_popupWindow != 'undefined' && _wrs_popupWindow) {
+        this.containerDiv.style.position = "fixed";
+        this.setResizeButtonsVisibility();
+        this.applyIframeSize();
+    }
+    // Need recalculate position of actual modal because window can was changed in fullscreenmode
+    this.recalculateScrollBar();
+    this.recalculatePosition();
+    this.recalculateScale();
+    if (typeof _wrs_popupWindow != 'undefined' && _wrs_popupWindow) {
+        this.focus();
     }
 }
 
 ModalWindow.prototype.minimizeModalWindow = function() {
+    // Saving width, height, top and bottom parameters to restore when open
+    this.saveModalProperties();
     if (this.properties.state == 'minimized' && this.properties.previousState == 'stack') {
         this.stackModalWindow();
     }
@@ -4689,15 +4979,16 @@ ModalWindow.prototype.minimizeModalWindow = function() {
         this.maximizeModalWindow();
     }
     else {
+        // Setting css to prevent important tag into css style
+        this.containerDiv.style.height = "30px";
+        this.containerDiv.style.width = "250px";
+        this.containerDiv.style.bottom = "0px";
+        this.containerDiv.style.right = "10px";
+
         this.removeListeners();
         this.properties.previousState = this.properties.state;
         this.properties.state = "minimized";
-        this.containerDiv.style.width = null;
-        this.containerDiv.style.left = null;
-        this.containerDiv.style.top = null;
-        this.containerDiv.style.position = null;
-        this.containerDiv.style.right = "10px";
-        this.containerDiv.style.bottom = "0px";
+        this.setResizeButtonsVisibility();
         this.overlayDiv.style.background = "rgba(0,0,0,0)";
         this.minimizeDiv.title = "Maximise";
 
@@ -4707,51 +4998,138 @@ ModalWindow.prototype.minimizeModalWindow = function() {
         else {
             this.removeClass('wrs_maximized');
         }
-
         this.addClass('wrs_minimized');
     }
 }
 
 /**
- * Minimizes modal window.
+ * Maximize modal window.
  * @ignore
  */
 ModalWindow.prototype.maximizeModalWindow = function() {
-    this.properties.previousState = this.properties.state;
-    this.properties.state = 'maximized';
+    // Saving width, height, top and bottom parameters to restore when open
+    this.saveModalProperties();
+    if (this.properties.state != 'maximized') {
+        this.properties.previousState = this.properties.state;
+        this.properties.state = 'maximized';
+    }
+    // Don't permit resize on maximize mode.
+    this.setResizeButtonsVisibility();
 
-    this.iframeContainer.style.width = this.modalWidth + 'px';
-    this.iframeContainer.style.height = this.modalHeight + 'px';
-    this.containerDiv.style.width = (this.modalWidth + 12) + 'px';
-    this.iframe.style.width = this.properties.iframeAttributes['width'] + 'px';
-    this.iframe.style.height = (parseInt(this.properties.iframeAttributes['height']) + 3) + 'px';
-    this.iframe.style.margin = '6px';
-    this.removeClass('wrs_drag');
     if (wrs_containsClass(this.overlayDiv, 'wrs_minimized')) {
         this.minimizeDiv.title = "Minimise";
         this.removeClass('wrs_minimized');
-    } else if (wrs_containsClass(this.overlayDiv, 'wrs_stack')) {
+    }
+    else if (wrs_containsClass(this.overlayDiv, 'wrs_stack')) {
         this.containerDiv.style.left = null;
         this.containerDiv.style.top = null;
         this.removeClass('wrs_stack');
     }
-    this.stackDiv.title = "Exit full-screen";
     this.overlayDiv.style.background = "rgba(0,0,0,0.8)";
     this.overlayDiv.style.display = '';
     this.addClass('wrs_maximized');
 
-    this.containerDiv.style.bottom = window.innerHeight / 2 - this.containerDiv.offsetHeight / 2 + "px";
-    this.containerDiv.style.right = window.innerWidth / 2 - this.containerDiv.offsetWidth / 2 + "px";
-    this.containerDiv.style.position = "fixed";
-    _wrs_popupWindow.postMessage({'objectName' : 'editorResize', 'arguments': [_wrs_modalWindow.iframeContainer.offsetHeight - 10]}, this.iframeOrigin);
+    // Set size to 80% screen with a max size.
+    this.setSize(parseInt(window.innerHeight * 0.8) , parseInt(window.innerWidth * 0.8));
+    var sizeModificated = false;
+    if (this.containerDiv.clientHeight > 700) {
+        this.containerDiv.style.height = '700px';
+        sizeModificated = true;
+    }
+    if (this.containerDiv.clientWidth > 1200) {
+        this.containerDiv.style.width  = '1200px';
+        sizeModificated = true;
+    }
 
+    // Setting modal position in center on screen.
+    this.setPosition(window.innerHeight / 2 - this.containerDiv.offsetHeight / 2, window.innerWidth / 2 - this.containerDiv.offsetWidth / 2);
+    this.recalculateScale();
+    this.recalculatePosition();
+    this.applyIframeSize();
+    this.focus();
+}
+
+/**
+ * Set modal size.
+ * @param  {integer} height set a height of modal with an integer
+ * @param  {integer} width set a width of modal with an integer
+ * @ignore
+ */
+ModalWindow.prototype.setSize = function(height, width) {
+    this.containerDiv.style.height = height + 'px';
+    this.containerDiv.style.width = width + 'px';
+    this.applyIframeSize();
+}
+
+/**
+ * Set modal position.
+ * @param  {integer} bottom set a bottom of div modal with an integer
+ * @param  {integer} right set a right of div modal with an integer
+ * @ignore
+ */
+ModalWindow.prototype.setPosition = function(bottom, right) {
+    this.containerDiv.style.bottom = bottom + 'px';
+    this.containerDiv.style.right = right + 'px';
+}
+
+/**
+ * Save actual parameters of opened modal (like size and position...) to restore when modal will open.
+ * @ignore
+ */
+ModalWindow.prototype.saveModalProperties = function() {
+    // Saving values of modal only when modal is in stack state.
+    if (this.properties.state == 'stack') {
+        this.properties.position.bottom = parseInt(this.containerDiv.style.bottom);
+        this.properties.position.right = parseInt(this.containerDiv.style.right);
+        this.properties.size.width = parseInt(this.containerDiv.style.width);
+        this.properties.size.height = parseInt(this.containerDiv.style.height);
+    }
+}
+
+/**
+ * Restore previous parameters values of closed modal (like size and position) and apply this parameters in actual modal.
+ * @ignore
+ */
+ModalWindow.prototype.restoreModalProperties = function() {
+    if (this.properties.state == 'stack') {
+        // Restoring Bottom and Right values from last modal
+        this.setPosition(this.properties.position.bottom, this.properties.position.right);
+        // Restoring Height and Left values from last modal
+        this.setSize(this.properties.size.height, this.properties.size.width);
+    }
+}
+
+/**
+ * Set modal size.
+ * @ignore
+ */
+ModalWindow.prototype.applyIframeSize = function() {
+    this.iframeContainer.style.width = this.containerDiv.clientWidth + 'px';
+    this.iframeContainer.style.height = this.containerDiv.clientHeight - 38 + 'px';
+    this.iframe.style.width = parseInt(this.iframeContainer.style.width) - 12 + 'px';
+    this.iframe.style.height = this.iframeContainer.style.height;
+    if ( typeof _wrs_popupWindow != 'undefined') {
+        _wrs_popupWindow.postMessage({'objectName' : 'editorResize', 'arguments': [_wrs_modalWindow.iframeContainer.offsetHeight - 10]}, this.iframeOrigin);
+    }
+}
+
+/**
+ * Active and disable visibility of resize buttons in modal window depend on state.
+ * @ignore
+ */
+ModalWindow.prototype.setResizeButtonsVisibility = function() {
+    if (this.properties.state == 'stack') {
+        this.resizerTL.style.visibility = 'visible';
+        this.resizerBR.style.visibility = 'visible';
+    }
+    else {
+        this.resizerTL.style.visibility = 'hidden';
+        this.resizerBR.style.visibility = 'hidden';
+    }
 }
 
 /**
  * Makes an object draggable adding mouse and touch events.
- *
- * @param  {object} draggable object (for example modal dialog).
- * @param  {target} target to add the events (for example de titlebar of a modal dialog)
  * @ignore
  */
 ModalWindow.prototype.addListeners = function() {
@@ -4760,13 +5138,11 @@ ModalWindow.prototype.addListeners = function() {
     wrs_addEvent(window, 'mouseup', this.stopDrag.bind(this));
     wrs_addEvent(document, 'mouseup', this.stopDrag.bind(this));
     wrs_addEvent(document, 'mousemove', this.drag.bind(this));
+    wrs_addEvent(window, 'resize', this.onWindowResize.bind(this));
 }
 
 /**
  * Removes draggable events from an object.
- *
- * @param  {object} draggable object (for example modal dialog).
- * @param  {target} target to add the events (for example de titlebar of a modal dialog)
  * @ignore
  */
 ModalWindow.prototype.removeListeners = function() {
@@ -4776,12 +5152,13 @@ ModalWindow.prototype.removeListeners = function() {
     wrs_removeEvent(document, 'mouseup', this.stopDrag);
     wrs_removeEvent(document.getElementsByClassName("wrs_modal_iframe")[0], 'mouseup', this.stopDrag);
     wrs_removeEvent(document, 'mousemove', this.drag);
+    wrs_removeEvent(window, 'resize', this.onWindowResize);
 }
 
 
 /**
  * Returns mouse or touch coordinates (on touch events ev.ClientX doesn't exists)
- * @param {event} ev mnouse or touch event
+ * @param {event} ev mouse or touch event
  * @return {object} with the X and Y coordinates.
  * @ignore
  */
@@ -4792,7 +5169,8 @@ ModalWindow.prototype.eventClient = function(ev) {
             Y : ev.changedTouches[0].clientY
         };
         return client;
-    } else {
+    }
+    else {
         client = {
             X : ev.clientX,
             Y : ev.clientY
@@ -4846,13 +5224,18 @@ ModalWindow.prototype.startDrag = function(ev) {
             // Disable mouse events on editor when we start to drag modal.
             this.iframe.style['pointer-events'] = 'none';
             // Needed for IE11 for apply disabled mouse events on editor because iexplorer need a dinamic object to apply this property.
-            if (navigator.userAgent.search("Msie/") >= 0 || navigator.userAgent.search("Trident/") >= 0 || navigator.userAgent.search("Edge/") >= 0 ) {
+            if (this.isIE11()) {
                 this.iframe.style['position'] = 'relative';
             }
             // Apply class for disable involuntary select text when drag.
             wrs_addClass(document.body, 'wrs_noselect');
             // Obtain screen limits for prevent overflow.
             this.limitWindow = this.getLimitWindow();
+            // Prevent lost mouse events into other iframes
+            // Activate overlay div to prevent mouse events behind modal
+            if (_wrs_modalWindow.properties.state != "maximized") {
+                this.overlayDiv.style.display = "";
+            }
         }
     }
 
@@ -4865,7 +5248,7 @@ ModalWindow.prototype.startDrag = function(ev) {
  * @ignore
  */
 ModalWindow.prototype.drag = function(ev) {
-    if(this.dragDataObject) {
+    if (this.dragDataObject) {
         ev.preventDefault();
         ev = ev || event;
         // Calculate max and min between actual mouse position and limit of screeen. It restric the movement of modal into window.
@@ -4885,10 +5268,49 @@ ModalWindow.prototype.drag = function(ev) {
         this.containerDiv.style.transform = "translate3d(" + dragX + "," + dragY + ",0)";
         this.containerDiv.style.position = 'absolute';
     }
+    if (this.resizeDataObject) {
+        var limitX = Math.min(this.eventClient(ev).X,window.innerWidth - this.scrollbarWidth - 7);
+        var limitY = Math.min(this.eventClient(ev).Y,window.innerHeight - 7);
+        if (limitX < 0) {
+            limitX = 0;
+        }
+
+        if (limitY < 0) {
+            limitY = 0;
+        }
+
+        var scaleMultiplier;
+        if (this.leftScale) {
+            scaleMultiplier = -1;
+        }
+        else {
+            scaleMultiplier = 1;
+        }
+        this.containerDiv.style.width = this.initialWidth + scaleMultiplier * (limitX - this.resizeDataObject.x) + 'px';
+        this.containerDiv.style.height = this.initialHeight + scaleMultiplier * (limitY - this.resizeDataObject.y) + 'px';
+        if (!this.leftScale) {
+            if (this.resizeDataObject.x - limitX - this.initialWidth < -580) {
+                this.containerDiv.style.right = this.initialRight - (limitX - this.resizeDataObject.x) + 'px';
+            }
+            else {
+                this.containerDiv.style.right  = this.initialRight + this.initialWidth - 580 + "px";
+                this.containerDiv.style.width = "580px";
+            }
+            if (this.resizeDataObject.y - limitY < this.initialHeight - 338) {
+                this.containerDiv.style.bottom = this.initialBottom - (limitY - this.resizeDataObject.y) + 'px';
+            }
+            else {
+                this.containerDiv.style.bottom  = this.initialBottom + this.initialHeight - 338 + "px";
+                this.containerDiv.style.height = "338px";
+            }
+        }
+        this.recalculateScale();
+        this.recalculatePosition();
+    }
 }
 /**
  * Get limits of actual window to limit modal movement
- * @param {mouseX,mouseY} mouseX and mouseY are coordinates of actual mouse on screen.
+ * @return {Object} Object containing mouseX and mouseY are coordinates of actual mouse on screen.
  * @ignore
  */
 ModalWindow.prototype.getLimitWindow = function() {
@@ -4955,28 +5377,108 @@ ModalWindow.prototype.getScrollBarWidth = function() {
 ModalWindow.prototype.stopDrag = function(ev) {
     // Due to we have multiple events that call this function, we need only to execute the next modifiers one time,
     // when the user stops to drag and dragDataObject is not null (the object to drag is attached).
-    if (this.dragDataObject) {
+    if (this.dragDataObject || this.resizeDataObject) {
         // If modal doesn't change, it's not necessary to set position with interpolation
         if(this.containerDiv.style.position != 'fixed'){
             this.containerDiv.style.position = 'fixed';
             // Fixed position makes the coords relative to the main window. So that, we need to transform
             // the absolute coords to relative.
             this.containerDiv.style.transform = '';
-            this.containerDiv.style.right = parseInt(this.containerDiv.style.right) - parseInt(this.lastDrag.x) + pageXOffset + "px";
-            this.containerDiv.style.bottom = parseInt(this.containerDiv.style.bottom) - parseInt(this.lastDrag.y) + pageYOffset + "px";
+            if (this.dragDataObject) {
+                this.containerDiv.style.right = parseInt(this.containerDiv.style.right) - parseInt(this.lastDrag.x) + pageXOffset + "px";
+                this.containerDiv.style.bottom = parseInt(this.containerDiv.style.bottom) - parseInt(this.lastDrag.y) + pageYOffset + "px";
+            }
         }
         // We make focus on editor after drag modal windows to prevent lose focus.
         this.focus();
         // Restore mouse events on iframe
         this.iframe.style['pointer-events'] = 'auto';
+        document.body.style['user-select'] = '';
         // Restore static state of iframe if we use iexplorer
-        if (navigator.userAgent.search("Msie/") >= 0 || navigator.userAgent.search("Trident/") >= 0 || navigator.userAgent.search("Edge/") >= 0 ) {
+        if (this.isIE11()) {
             this.iframe.style['position'] = null;
         }
         // Active text select event
         wrs_removeClass(document.body, 'wrs_noselect');
+        // Disable overlay for click behind modal
+        if (_wrs_modalWindow.properties.state != "maximized") {
+            this.overlayDiv.style.display = "none";
+        }
     }
     this.dragDataObject = null;
+    this.resizeDataObject = null;
+    this.initialWidth = null;
+    this.leftScale = null;
+}
+
+/**
+ * Recalculating scale for modal when resize browser window
+ *
+ * @ignore
+ */
+ModalWindow.prototype.onWindowResize = function() {
+    this.recalculateScrollBar();
+    this.recalculatePosition();
+    this.recalculateScale();
+}
+
+/**
+ * Recalculating position for modal when resize browser window
+ *
+ * @ignore
+ */
+ModalWindow.prototype.recalculatePosition = function() {
+    this.containerDiv.style.right = Math.min(parseInt(this.containerDiv.style.right), window.innerWidth - this.scrollbarWidth - this.containerDiv.offsetWidth) + "px";
+    if(parseInt(this.containerDiv.style.right) < 0) {
+        this.containerDiv.style.right = "0px";
+    }
+    this.containerDiv.style.bottom = Math.min(parseInt(this.containerDiv.style.bottom), window.innerHeight - this.containerDiv.offsetHeight) + "px";
+    if(parseInt(this.containerDiv.style.bottom) < 0) {
+        this.containerDiv.style.bottom = "0px";
+    }
+}
+
+/**
+ * Recalculating scale for modal when resize browser window
+ *
+ * @ignore
+ */
+ModalWindow.prototype.recalculateScale = function() {
+    var sizeModificated = false;
+    if (parseInt(this.containerDiv.style.width) > 580) {
+        this.containerDiv.style.width = Math.min(parseInt(this.containerDiv.style.width), window.innerWidth - this.scrollbarWidth) + "px";
+        sizeModificated = true;
+    }
+    else {
+        this.containerDiv.style.width = "580px";
+        sizeModificated = true;
+    }
+    if (parseInt(this.containerDiv.style.height) > 338) {
+        this.containerDiv.style.height = Math.min(parseInt(this.containerDiv.style.height), window.innerHeight) + "px";
+        sizeModificated = true;
+    }
+    else {
+        this.containerDiv.style.height = "338px";
+        sizeModificated = true;
+    }
+    if (sizeModificated) {
+        this.applyIframeSize();
+    }
+}
+
+/**
+ * Recalculating width of scrollBar browser
+ *
+ * @ignore
+ */
+ModalWindow.prototype.recalculateScrollBar = function() {
+    this.hasScrollBar = window.innerWidth > document.documentElement.clientWidth;
+    if(this.hasScrollBar){
+        this.scrollbarWidth = this.getScrollBarWidth();
+    }
+    else {
+        this.scrollbarWidth = 0;
+    }
 }
 
 /**
@@ -5002,8 +5504,8 @@ ModalWindow.prototype.getOriginFromUrl = function(url) {
 }
 
 /**
- * Enable safe cross-origin comunication betweenWIRIS Plugin and WIRIS Editor. We can't call directly
- * WIRIS Editor methods because the content iframe could be in a different domain.
+ * Enable safe cross-origin comunication between plugin and MathType services. We can't call directly
+ * MathType editor methods because the content iframe could be in a different domain.
  * We use postMessage method to create a wrapper between modal window and editor.
  *
  */
@@ -5013,9 +5515,12 @@ ModalWindow.prototype.getOriginFromUrl = function(url) {
  * @param {string} mathml MathML string.
  * @ignore
  */
-ModalWindow.prototype.setMathML = function(mathml) {
+ModalWindow.prototype.setMathML = function(mathml, focusDisabled) {
     _wrs_popupWindow.postMessage({'objectName' : 'editor', 'methodName' : 'setMathML', 'arguments': [mathml]}, this.iframeOrigin);
-    this.focus();
+    // Check if focus is not necessary when clean modal on close
+    if (!focusDisabled){
+        this.focus();
+    }
 }
 /**
  * Set a MathML into editor and call function in back.
@@ -5128,5 +5633,83 @@ ModalWindow.prototype.setIframeContainerHeight = function (height) {
     _wrs_modalWindow.iframeContainer.style.height = height;
     _wrs_popupWindow.postMessage({'objectName' : 'editorResize', 'arguments': [_wrs_modalWindow.iframeContainer.offsetHeight - 10]}, this.iframeOrigin);
 }
+// PopUpMessageClass definition
+// This class generate a modal message to show information to user
+// We should send a language strings to show messages
+function PopUpMessage(strings)
+{
+    this.strings = strings;
+    this.overlayEnvolture = document.getElementsByClassName('wrs_modal_iframeContainer')[0].appendChild(document.createElement("DIV"));
+    this.overlayEnvolture.setAttribute("style", "display: none;width: 100%;");
 
+    this.message = this.overlayEnvolture.appendChild(document.createElement("DIV"));
+    this.message.setAttribute("style", "top:50%; left: 50%; transform: translate(-50%,-50%); position: absolute; background: white; max-width: 500px; width: 75%; border-radius: 2px;padding: 20px;font-family: sans-serif;font-size: 15px;text-align: left;color: #2e2e2e;z-index: 5; max-height: 75%; overflow: auto;");
+
+    var overlay = this.overlayEnvolture.appendChild(document.createElement("DIV"));
+    overlay.setAttribute("style", "position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 4; cursor: pointer;");
+    self = this;
+    // We create a overlay that close popup message on click in there
+    overlay.addEventListener("click", function(){self.close();});
+
+    this.buttonArea = this.message.appendChild(document.createElement('p'));
+    // By default, popupwindow give close modal message with close and cancel buttons
+    // You can set other message with other buttons
+    this.setOptions('close_modal_warning','close,cancel');
+    document.addEventListener('keydown',function(e) {
+        if (e.key !== undefined && e.repeat === false) {
+            if (e.key == "Escape" || e.key === 'Esc') {
+                _wrs_popupWindow.postMessage({'objectName' : 'checkCloseCondition'}, _wrs_modalWindow.iframeOrigin);
+            }
+        }
+    });
+}
+PopUpMessage.prototype.setOptions = function(messageKey,values){
+    this.message.removeChild(this.buttonArea);
+    if(typeof this.strings[messageKey] != 'undefined'){
+        this.message.innerHTML = this.strings[messageKey];
+    }
+    this.buttonArea = this.message.appendChild(document.createElement('p'));
+    this.buttonArea.style.margin = '10px 0 0 0';
+    var types = values.split(',');
+    self = this;
+    // This is definition of buttons. You can create others.
+    types.forEach(function(type){
+        if(type == "close"){
+            var buttonClose = self.buttonArea.appendChild(document.createElement("BUTTON"));
+            buttonClose.setAttribute("style","margin: 0px;border: 0px;background: #567e93;border-radius: 4px;padding: 7px 11px;color: white;");
+            buttonClose.addEventListener('click',function(){self.close();wrs_closeModalWindow();})
+            if(typeof this.strings['close'] != 'undefined'){
+                buttonClose.innerHTML = this.strings['close'];
+            }
+        }
+        if(type == 'cancel'){
+            var buttonCancel = self.buttonArea.appendChild(document.createElement("BUTTON"));
+            buttonCancel.setAttribute("style","margin: 0px;border: 0px;border-radius: 4px;padding: 7px 11px;color: white;color: black;border: 1px solid silver;margin: 0px 5px;");
+            buttonCancel.addEventListener("click", function(){self.close();});
+            if(typeof this.strings['cancel'] != 'undefined'){
+                buttonCancel.innerHTML = this.strings['cancel'];
+            }
+        }
+    });
+}
+// This method show popup message.
+PopUpMessage.prototype.show = function(){
+    if (this.overlayEnvolture.style.display != 'block') {
+        // Clear focus with blur for prevent press anykey
+        document.activeElement.blur();
+        _wrs_popupWindow.postMessage({'objectName' : 'blur'}, _wrs_modalWindow.iframeOrigin);
+        // For works with Safari
+        window.focus();
+        this.overlayEnvolture.style.display = 'block';
+    }
+    else {
+        this.overlayEnvolture.style.display = 'none';
+        _wrs_modalWindow.focus();
+    }
+}
+// This method hide popup message
+PopUpMessage.prototype.close = function(){
+    this.overlayEnvolture.style.display = 'none';
+    _wrs_modalWindow.focus();
+}
 var _wrs_conf_core_loaded = true;

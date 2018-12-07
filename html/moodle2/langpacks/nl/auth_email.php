@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_email', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['auth_emailrecaptcha'] = 'Hiermee voeg je een visueel/auditief bevestigi
 $string['auth_emailrecaptcha_key'] = 'reCAPTCHA-element inschakelen';
 $string['auth_emailsettings'] = 'Instellingen';
 $string['pluginname'] = 'E-mail zelfregistratie';
+$string['privacy:metadata'] = 'De e-mailgebaseerde zelfregistratie authenticatie-plugin bewaart geen persoonlijke gegevens.';

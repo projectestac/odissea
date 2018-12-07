@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -176,6 +176,10 @@ $string['gradinggradeover'] = '覆盖评价成绩';
 $string['gradingsettings'] = '成绩设置';
 $string['groupnoallowed'] = '您未被允许访问该互动评价中的任何一组';
 $string['iamsure'] = '是的，我确定';
+$string['indicator:cognitivedepth'] = '互动评价活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 互动评价活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '互动评价活动认社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在 互动评价活动中所达到的社会广度。';
 $string['info'] = '信息';
 $string['instructauthors'] = '作业说明';
 $string['instructreviewers'] = '如何评价';

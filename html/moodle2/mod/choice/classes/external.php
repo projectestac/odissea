@@ -42,7 +42,7 @@ class mod_choice_external extends external_api {
     /**
      * Describes the parameters for get_choices_by_courses.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.0
      */
     public static function get_choice_results_parameters() {
@@ -167,7 +167,7 @@ class mod_choice_external extends external_api {
     /**
      * Describes the parameters for mod_choice_get_choice_options.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.0
      */
     public static function get_choice_options_parameters() {
@@ -288,7 +288,7 @@ class mod_choice_external extends external_api {
     /**
      * Describes the parameters for submit_choice_response.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.0
      */
     public static function submit_choice_response_parameters() {
@@ -449,7 +449,7 @@ class mod_choice_external extends external_api {
     /**
      * Describes the parameters for get_choices_by_courses.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.0
      */
     public static function get_choices_by_courses_parameters() {
@@ -587,7 +587,7 @@ class mod_choice_external extends external_api {
     /**
      * Describes the parameters for delete_choice_responses.
      *
-     * @return external_external_function_parameters
+     * @return external_function_parameters
      * @since Moodle 3.0
      */
     public static function delete_choice_responses_parameters() {
@@ -596,7 +596,7 @@ class mod_choice_external extends external_api {
                 'choiceid' => new external_value(PARAM_INT, 'choice instance id'),
                 'responses' => new external_multiple_structure(
                     new external_value(PARAM_INT, 'response id'),
-                    'Array of response ids, empty for deleting all the user responses',
+                    'Array of response ids, empty for deleting all the current user responses.',
                     VALUE_DEFAULT,
                     array()
                 ),
@@ -608,7 +608,7 @@ class mod_choice_external extends external_api {
      * Delete the given submitted responses in a choice
      *
      * @param int $choiceid the choice instance id
-     * @param array $responses the response ids,  empty for deleting all the user responses
+     * @param array $responses the response ids,  empty for deleting all the current user responses
      * @return array status information and warnings
      * @throws moodle_exception
      * @since Moodle 3.0
@@ -633,33 +633,38 @@ class mod_choice_external extends external_api {
 
         require_capability('mod/choice:choose', $context);
 
-        // If we have the capability, delete all the passed responses.
-        if (has_capability('mod/choice:deleteresponses', $context)) {
-            if (empty($params['responses'])) {
-                // Get all the responses for the choice.
-                $params['responses'] = array_keys(choice_get_all_responses($choice));
+        $candeleteall = has_capability('mod/choice:deleteresponses', $context);
+        if ($candeleteall || $choice->allowupdate) {
+
+            // Check if we can delete our own responses.
+            if (!$candeleteall) {
+                $timenow = time();
+                if (!empty($choice->timeclose) && ($timenow > $choice->timeclose)) {
+                    throw new moodle_exception("expired", "choice", '', userdate($choice->timeclose));
+                }
             }
-            $status = choice_delete_responses($params['responses'], $choice, $cm, $course);
-        } else if ($choice->allowupdate) {
-            // Check if we can delate our own responses.
-            $timenow = time();
-            if (!empty($choice->timeclose) && ($timenow > $choice->timeclose)) {
-                throw new moodle_exception("expired", "choice", '', userdate($choice->timeclose));
-            }
-            // Delete only our responses.
-            $myresponses = array_keys(choice_get_my_response($choice));
 
             if (empty($params['responses'])) {
-                $todelete = $myresponses;
+                // No responses indicated so delete only my responses.
+                $todelete = array_keys(choice_get_my_response($choice));
             } else {
+                // Fill an array with the responses that can be deleted for this choice.
+                if ($candeleteall) {
+                    // Teacher/managers can delete any.
+                    $allowedresponses = array_keys(choice_get_all_responses($choice));
+                } else {
+                    // Students can delete only their own responses.
+                    $allowedresponses = array_keys(choice_get_my_response($choice));
+                }
+
                 $todelete = array();
                 foreach ($params['responses'] as $response) {
-                    if (!in_array($response, $myresponses)) {
+                    if (!in_array($response, $allowedresponses)) {
                         $warnings[] = array(
                             'item' => 'response',
                             'itemid' => $response,
                             'warningcode' => 'nopermissions',
-                            'message' => 'No permission to delete this response'
+                            'message' => 'Invalid response id, the response does not exist or you are not allowed to delete it.'
                         );
                     } else {
                         $todelete[] = $response;

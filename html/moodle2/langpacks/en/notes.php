@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Add a new note to {$a} people';
+$string['addbulknotedone'] = 'Note added to {$a} people';
+$string['addbulknotedonesingle'] = 'Note added to 1 person';
+$string['addbulknotesingle'] = 'Add a new note to 1 person';
 $string['addnewnote'] = 'Add a new note';
 $string['addnewnoteselect'] = 'Select users to write notes about';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Error occurred while deleting post';
 $string['configenablenotes'] = 'Enable storing of notes about individual users.';
 $string['content'] = 'Content';
 $string['course'] = 'course';
@@ -58,8 +61,15 @@ $string['page-notes-index'] = 'Notes main page';
 $string['page-notes-x'] = 'Any note pages';
 $string['personal'] = 'personal';
 $string['personalnotes'] = 'Personal notes';
+$string['privacy:metadata:core_notes'] = 'The Notes component stores user notes within the core subsystem.';
+$string['privacy:metadata:core_notes:content'] = 'The content of the note.';
+$string['privacy:metadata:core_notes:courseid'] = 'The Id of the course associated with the note.';
+$string['privacy:metadata:core_notes:created'] = 'The creation date/time for the note.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'The last modified date/time for the note.';
+$string['privacy:metadata:core_notes:publishstate'] = 'The publish state of the note.';
+$string['privacy:metadata:core_notes:userid'] = 'The Id of the user associated with the note.';
 $string['publishstate'] = 'Context';
-$string['publishstate_help'] = 'A note\'s context determines who can see the note.
+$string['publishstate_help'] = 'A note\'s context determines who can see the note in everyday use. Users should be aware that all notes, including personal ones, may be disclosed under the laws of their jurisdictions.
 
 * Personal - The note will be visible only to you
 * Course - The note will be visible to teachers in this course

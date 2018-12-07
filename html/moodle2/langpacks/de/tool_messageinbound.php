@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_messageinbound', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -98,6 +98,12 @@ $string['onehour'] = 'Eine Stunde';
 $string['oneweek'] = 'Eine Woche';
 $string['oneyear'] = 'Ein Jahr';
 $string['pluginname'] = 'Einstellungen für eintreffende Mitteilungen';
+$string['privacy:metadata:coreuserkey'] = 'Nutzerschlüssel zur Prüfung der empfangenen E-Mail';
+$string['privacy:metadata:messagelist'] = 'Liste von Mittteilungs-Identifiern mit fehlender Prüfung erfordern weitere Autorisierung';
+$string['privacy:metadata:messagelist:address'] = 'Adresse, an die die E-Mail gesandt wurde';
+$string['privacy:metadata:messagelist:messageid'] = 'Mitteilungs-ID';
+$string['privacy:metadata:messagelist:timecreated'] = 'Zeitpunkt, zu dem die Aufzeichnung erfolgte';
+$string['privacy:metadata:messagelist:userid'] = 'ID des Nutzers, der Mitteilung bestätigen muss';
 $string['replysubjectprefix'] = 'Re:';
 $string['requirevalidation'] = 'Absenderadresse überprüfen';
 $string['ssl'] = 'SSL (Auto-detect SSL version)';

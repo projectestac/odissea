@@ -231,7 +231,9 @@ class engine extends \core_search\engine {
         } else if (isset($response->response->numFound)) {
             // Get the number of results for standard queries.
             $found = $response->response->numFound;
-            $included = count($response->response->docs);
+            if ($found > 0 && is_array($response->response->docs)) {
+                $included = count($response->response->docs);
+            }
         }
 
         return array($included, $found);
@@ -1168,7 +1170,13 @@ class engine extends \core_search\engine {
 
         if ($CFG->proxyhost && !is_proxybypass('http://' . $this->config->server_hostname . '/')) {
             $options['proxy_host'] = $CFG->proxyhost;
-            $options['proxy_port'] = $CFG->proxyport;
+            if (!empty($CFG->proxyport)) {
+                $options['proxy_port'] = $CFG->proxyport;
+            }
+            if (!empty($CFG->proxyuser) && !empty($CFG->proxypassword)) {
+                $options['proxy_login'] = $CFG->proxyuser;
+                $options['proxy_password'] = $CFG->proxypassword;
+            }
         }
 
         if (!class_exists('\SolrClient')) {
@@ -1226,6 +1234,9 @@ class engine extends \core_search\engine {
                 $options['CURLOPT_CAPATH'] = $this->config->ssl_capath;
             }
         }
+
+        // Set timeout as for Solr client.
+        $options['CURLOPT_TIMEOUT'] = !empty($this->config->server_timeout) ? $this->config->server_timeout : '30';
 
         $this->curl->setopt($options);
 

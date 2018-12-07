@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Añadir {$a} campo/s al formulario';
 $string['advancedelement'] = 'Elemento avanzado';
 $string['close'] = 'Cerrar';
+$string['custom'] = 'Personalizar';
 $string['day'] = 'Día';
 $string['display'] = 'Mostrar';
 $string['err_alphanumeric'] = 'Debe escribir sólo letras o números aquí.';
@@ -41,6 +42,8 @@ $string['err_nopunctuation'] = 'No debe escribir ningún signo de puntuación aq
 $string['err_numeric'] = 'Debe escribir un número aquí.';
 $string['err_rangelength'] = 'Debe escribir entre {$a->format[0]} y {$a->format[1]} caracteres aquí.';
 $string['err_required'] = 'Debe suministrar un valor aquí.';
+$string['err_wrongfileextension'] = 'Algunos ficheros ({$a}->wrongfiles}) no se pueden subir. Sólo se permiten los ficheros de tipo {$a->whitelist}.';
+$string['filesofthesetypes'] = 'Tipos de archivo aceptados:';
 $string['general'] = 'General';
 $string['hideadvanced'] = 'Ocultar Avanzadas';
 $string['hour'] = 'Hora';

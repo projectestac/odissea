@@ -32,6 +32,7 @@ $d = required_param('d', PARAM_INT);
 $exportuser = optional_param('exportuser', false, PARAM_BOOL); // Flag for exporting user details
 $exporttime = optional_param('exporttime', false, PARAM_BOOL); // Flag for exporting date/time information
 $exportapproval = optional_param('exportapproval', false, PARAM_BOOL); // Flag for exporting user details
+$tags = optional_param('exporttags', false, PARAM_BOOL); // Flag for exporting user details.
 
 $PAGE->set_url('/mod/data/export.php', array('d'=>$d));
 
@@ -83,6 +84,7 @@ if($mform->is_cancelled()) {
     // build header to match the rest of the UI
     $PAGE->set_title($data->name);
     $PAGE->set_heading($course->fullname);
+    $PAGE->force_settings_menu(true);
     echo $OUTPUT->header();
     echo $OUTPUT->heading(format_string($data->name), 2);
     echo $OUTPUT->box(format_module_intro('data', $data, $cm->id), 'generalbox', 'intro');
@@ -111,7 +113,7 @@ foreach ($formdata as $key => $value) {
 $currentgroup = groups_get_activity_group($cm);
 
 $exportdata = data_get_exportdata($data->id, $fields, $selectedfields, $currentgroup, $context,
-                                  $exportuser, $exporttime, $exportapproval);
+                                  $exportuser, $exporttime, $exportapproval, $tags);
 $count = count($exportdata);
 switch ($formdata['exporttype']) {
     case 'csv':

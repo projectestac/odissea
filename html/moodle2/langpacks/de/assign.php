@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assign', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -116,6 +116,8 @@ $string['batchsetmarkingworkflowstateforusers'] = 'Bewertungsworkflow-Status fü
 $string['blindmarking'] = 'Anonyme Bewertung';
 $string['blindmarkingenabledwarning'] = 'Anonyme Bewertungen sind für diese Aktivität aktiviert.';
 $string['blindmarking_help'] = 'Die anonyme Bewertung verbirgt die Teilnehmeridentität während der Bewertung. Die Option kann nicht mehr geändert werden, nachdem die erste Lösung eingereicht oder Bewertung vorgenommen wurde.';
+$string['calendardue'] = '{$a} ist fällig.';
+$string['calendargradingdue'] = '{$a} ist zur Bewertung fällig.';
 $string['changefilters'] = 'Filter wechseln';
 $string['changegradewarning'] = 'In dieser Aufgabe sind bereits Lösungen bewertet worden. Bei einer Änderung der Bewertungsskala sind Neuberechnungen der Bewertungen erforderlich. Sie müssen ggfs. die Neuberechnung gesondert starten.';
 $string['changeuser'] = 'Nutzer/in wechseln';
@@ -130,6 +132,7 @@ $string['completionsubmit'] = 'Teilnehmer/in muss Lösung eingereicht haben, um 
 $string['configshowrecentsubmissions'] = 'Alle können Mitteilungen zur Aufgabenabgabe im Aktivitätenbericht sehen';
 $string['confirmbatchgradingoperation'] = 'Möchten Sie für {$a->count} Nutzer/innen die Operation {$a->operation} ausführen?';
 $string['confirmsubmission'] = 'Wenn Sie nun Ihre Lösung zur Bewertung einreichen, können Sie keine Änderungen mehr vornehmen. Sind Sie sich sicher?';
+$string['confirmsubmissionheading'] = 'Abgabe bestätigen';
 $string['conversionexception'] = 'Die Aufgabe konnte nicht konvertiert werden. {$a}';
 $string['couldnotconvertgrade'] = 'Die Aufgabenbewertung für \'{$a}\' konnte nicht konvertiert werden.';
 $string['couldnotconvertsubmission'] = 'Die Aufgabenabgabe für \'{$a}\' konnte nicht konvertiert werden.';
@@ -166,6 +169,7 @@ $string['editaction'] = 'Aktivitäten...';
 $string['editattemptfeedback'] = 'Bewertung und Feedback für Versuch {$a} bearbeiten';
 $string['editingpreviousfeedbackwarning'] = 'Sie bearbeiten das Feedback für einen vorherigen Versuch. Dies ist Versuch {$a->attemptnumber} von {$a->totalattempts}.';
 $string['editingstatus'] = 'Bearbeitungsstatus';
+$string['editonline'] = 'Online bearbeiten';
 $string['editoverride'] = 'Überschreibung bearbeiten';
 $string['editsubmission'] = 'Lösung bearbeiten';
 $string['editsubmission_help'] = 'Lösung ändern';
@@ -218,11 +222,12 @@ $string['feedbacksettings'] = 'Feedback';
 $string['feedbacktypes'] = 'Feedback-Typen';
 $string['filesubmissions'] = 'Dateiabgaben';
 $string['filter'] = 'Filter';
+$string['filtergrantedextension'] = 'Gewährte Verlängerung';
 $string['filternone'] = 'Kein Filter';
 $string['filternotsubmitted'] = 'Nicht abgegeben';
 $string['filterrequiregrading'] = 'Bewertung notwendig';
 $string['filtersubmitted'] = 'Abgegeben';
-$string['fixrescalednullgrades'] = 'Die Aufgabe enthält fehlerhafte Bewertungen. Sie können die <a href="{$a-> link} ">Bewertungen automatisch beheben</a>. Die Kurssummen könnten dabei beeinflusst werden.';
+$string['fixrescalednullgrades'] = 'Die Aufgabe enthält fehlerhafte Bewertungen. Sie können die <a href="{$a->link} ">Bewertungen automatisch beheben</a>. Die Kurssummen könnten dabei beeinflusst werden.';
 $string['fixrescalednullgradesconfirm'] = 'Möchten Sie die fehlerhaften Bewertungen automatisch beheben lassen? Alle betroffenen Bewertungen werden entfernt. Die Kurssummen könnten beeinflusst werden.';
 $string['fixrescalednullgradesdone'] = 'Bewertungen korrigiert';
 $string['gradeabovemaximum'] = 'Bewertung muss kleiner oder gleich {$a} sein.';
@@ -247,6 +252,10 @@ $string['gradestudent'] = 'Bewertung für Teilnehmer/in: (id={$a->id}, Name={$a-
 $string['gradeuser'] = 'Bewertung {$a}';
 $string['grading'] = 'Wird bewertet';
 $string['gradingchangessaved'] = 'Die geänderten Bewertungen wurden gespeichert.';
+$string['gradingduedate'] = 'An Bewertung erinnern';
+$string['gradingduedate_help'] = 'Dieser voraussichtliche Termin markiert den Abschluss der Abgabe. Das Datum wird verwendet, um Benachrichtigungen für Trainer/innen im Dashboard zu priorisieren.';
+$string['gradingdueduedatevalidation'] = 'Der Erinnerungstermin zur Bewertung kann nicht früher liegen als das Fälligkeitsdatum.';
+$string['gradingduefromdatevalidation'] = 'Der Erinnerungstermin zur Bewertung kann nicht früher liegen als der erlaubte Abgabebeginn';
 $string['gradingmethodpreview'] = 'Bewertungskriterium';
 $string['gradingoptions'] = 'Optionen';
 $string['gradingstatus'] = 'Bewertungsstatus';
@@ -261,6 +270,10 @@ $string['groupsubmissionsettings'] = 'Einstellungen für Gruppeneinreichungen';
 $string['hiddenuser'] = 'Teilnehmer/in';
 $string['hideshow'] = 'Verbergen/Anzeigen';
 $string['inactiveoverridehelp'] = '* Der Schüler hat nicht die korrekte Gruppe oder Rolle um die Aufgabe zu versuchen';
+$string['indicator:cognitivedepth'] = 'Aufgabe kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Aufgabenaktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Aufgabe sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Aufgabenaktivität erreicht hat.';
 $string['instructionfiles'] = 'Anleitungsdateien';
 $string['introattachments'] = 'Zusätzliche Dateien';
 $string['introattachments_help'] = 'Zusätzliche Dateien bei der Benutzung der Aktivität Aufgabe können hinzugefügt werden, z.B. Antwortvorlagen.';
@@ -315,6 +328,7 @@ Bewertungsmöglichkeiten:
 $string['modulenameplural'] = 'Aufgaben';
 $string['moreusers'] = 'Weitere {$a}...';
 $string['multipleteams'] = 'Mitglied in mehreren Gruppen';
+$string['multipleteams_desc'] = 'Diese Aufgabe wird in Gruppen abgegeben. Sie sind Mitglied in mehr als einer Gruppe. Um die Aufgabe einzureichen müssen Sie Mitglied in genau einer Gruppe sein, damit Ihre Einreichung Ihrer Gruppe korrekt zugeordnet werden kann. Bitte kontaktieren Sie Ihren Trainer um Ihre Gruppenzugehörigkeit zu aktualisieren.';
 $string['multipleteamsgrader'] = 'Mitglied in mehreren Gruppen. Die Abgabe von Aufgaben ist nicht möglich.';
 $string['mysubmission'] = 'Meine Lösung:&nbsp;';
 $string['newsubmissions'] = 'Aufgaben abgegeben';
@@ -333,6 +347,7 @@ $string['nosavebutnext'] = 'Weiter';
 $string['nosubmission'] = 'Für diese Aufgabe wurde nichts abgegeben';
 $string['nosubmissionsacceptedafter'] = 'Weitere Abgaben sind nicht zugelassen nach';
 $string['noteam'] = 'Nicht Mitglied einer Gruppe';
+$string['noteam_desc'] = 'Diese Aufgabe wird in Gruppen abgegeben. Sie sind kein Mitglied einer Gruppe, deshalb können Sie die Aufgabe derzeit nicht einreichen. Bitte kontaktieren Sie Ihren Trainer um einer Gruppe hinzugefügt zu werden.';
 $string['noteamgrader'] = 'Nicht Mitglied einer Gruppe. Die Abgabe von Aufgaben ist nicht möglich.';
 $string['notgraded'] = 'Nicht bewertet';
 $string['notgradedyet'] = 'Noch nicht bewertet';
@@ -369,6 +384,33 @@ $string['preventsubmissionnotingroup_help'] = 'Diese Option legt fest, dass auss
 $string['preventsubmissions'] = 'Verhindert die Abgabe von Lösungen für diese Aufgabe durch Teilnehmer/innen';
 $string['preventsubmissionsshort'] = 'Abgabeänderung verhindern';
 $string['previous'] = 'Zurück';
+$string['privacy:attemptpath'] = 'Versuch {$a}';
+$string['privacy:blindmarkingidentifier'] = 'Identifier, der für verdeckte Bewertungen genutzt wird.';
+$string['privacy:gradepath'] = 'Bewertung';
+$string['privacy:metadata:assigndownloadasfolders'] = 'Nutzerpräferenz, ob mehrere Dateien in einer  Aufgabenlösung in Ordnern sortiert heruntergeladen werden sollen.';
+$string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedbackeinträge für die Aufgabe';
+$string['privacy:metadata:assignfilter'] = 'Filteroptionen wie \'Eingereicht\', \'Nicht eingereicht\', \'Erfordert Bewertung\' und \'Verlängerung bewilligt\'.';
+$string['privacy:metadata:assigngrades'] = 'Speichert Bewertungen des Nutzers für die Aufgabe';
+$string['privacy:metadata:assignmarkerfilter'] = 'Aufgabenzusammenfassung gefiltert anhand des zugewiesenenen Kennzeichens';
+$string['privacy:metadata:assignmentid'] = 'Aufgaben-Identifier';
+$string['privacy:metadata:assignmessageexplanation'] = 'Mitteilungen an den Nutzer über das Mitteilungssystem';
+$string['privacy:metadata:assignoverrides'] = 'Speichert überschriebene Informationen für die Aufgabe';
+$string['privacy:metadata:assignperpage'] = 'Anzahl der Aufgabenlösungen auf einer Seite';
+$string['privacy:metadata:assignquickgrading'] = 'Voreinstellung, ob die \'Schnelle Bewertung\' verwendet wird oder nicht';
+$string['privacy:metadata:assignsubmissiondetail'] = 'Speichert Infornationen zur Lösung des Nutzers';
+$string['privacy:metadata:assignsubmissionpluginsummary'] = 'Lösungsdaten zur Aufgabe';
+$string['privacy:metadata:assignuserflags'] = 'Speichert Metadaten des Nutzers wie Verlängerungsdaten';
+$string['privacy:metadata:assignusermapping'] = 'Zuuodnung für verdeckte Bewertung';
+$string['privacy:metadata:assignworkflowfilter'] = 'Filter für verschiedene Workflow-Schritte';
+$string['privacy:metadata:grade'] = 'Die Bewertung als Zahl für die Lösung der Aufgabe.  Kann von einer Skala oder mehreren Bewertungskriterien erzeugt sein. Es handelt sich immer um eine Zahl.';
+$string['privacy:metadata:grader'] = 'Dies ist die Nutzer ID der bewertenden Person.';
+$string['privacy:metadata:groupid'] = 'Dies ist die ID der Gruppe, zu der der Nutzer gehört.';
+$string['privacy:metadata:latest'] = 'Stark vereinfachte Abfrage zum letzten Versuch';
+$string['privacy:metadata:mailed'] = 'Wurde dem Nutzer bereits eine E-Mail geschickt?';
+$string['privacy:metadata:timecreated'] = 'Erstelldatum';
+$string['privacy:metadata:userid'] = 'ID des Nutzers';
+$string['privacy:studentpath'] = 'Abgaben von Teilnehmern';
+$string['privacy:submissionpath'] = 'Abgabe';
 $string['quickgrading'] = 'Schnellbewertung';
 $string['quickgradingchangessaved'] = 'Die Änderungen in der Bewertung wurden gespeichert';
 $string['quickgrading_help'] = 'Die Schnellbewertung ermöglicht Ihnen direkt in der Übersichtstabelle Bewertungen vorzunehmen. Diese Möglichkeit steht nicht bei erweiterten Bewertungsmethoden zur Verfügung.';

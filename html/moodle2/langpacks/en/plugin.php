@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Unable to fetch available updates data - un
 $string['filterall'] = 'Show all';
 $string['filtercontribonly'] = 'Show additional plugins only';
 $string['filterupdatesonly'] = 'Show updateable only';
+$string['isenabled'] = 'Enabled?';
 $string['misdepinfoplugin'] = 'Plugin info';
 $string['misdepinfoversion'] = 'Version info';
 $string['misdepsavail'] = 'Available missing dependencies';
@@ -103,6 +104,7 @@ $string['status_new'] = 'To be installed';
 $string['status_nodb'] = 'No database';
 $string['status_upgrade'] = 'To be upgraded';
 $string['status_uptodate'] = 'Installed';
+$string['supportedconversions'] = 'Supported document conversions';
 $string['supportedmoodleversions'] = 'Supported Moodle versions';
 $string['systemname'] = 'Identifier';
 $string['type_antivirus'] = 'Antivirus plugin';
@@ -127,6 +129,9 @@ $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editors';
 $string['type_enrol'] = 'Enrolment method';
 $string['type_enrol_plural'] = 'Enrolment methods';
+$string['type_fileconverter'] = 'Document converter';
+$string['type_fileconvertermanage'] = 'Manage document converters';
+$string['type_fileconverter_plural'] = 'Document converters';
 $string['type_filter'] = 'Text filter';
 $string['type_filter_plural'] = 'Text filters';
 $string['type_format'] = 'Course format';
@@ -145,6 +150,8 @@ $string['type_media'] = 'Media player';
 $string['type_media_plural'] = 'Media players';
 $string['type_message'] = 'Messaging output';
 $string['type_message_plural'] = 'Messaging outputs';
+$string['type_mlbackend'] = 'Machine learning backend';
+$string['type_mlbackend_plural'] = 'Machine learning backends';
 $string['type_mnetservice'] = 'MNet service';
 $string['type_mnetservice_plural'] = 'MNet services';
 $string['type_mod'] = 'Activity module';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_statistics', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actualresponse'] = '実解答';
 $string['allattempts'] = 'すべての受験';
-$string['allattemptsavg'] = 'すべての受験評点の平均値';
+$string['allattemptsavg'] = 'すべての受験の平均点';
 $string['allattemptscount'] = '受験総数 (評定済み)';
 $string['analysisnameonly'] = '「 {$a->name} 」';
 $string['analysisno'] = '({$a->number}) 「 {$a->name} 」';
@@ -63,15 +63,15 @@ $string['errorstatisticsquestions'] = '問題評点の統計を計算するデ�
 $string['facility'] = 'ファシリティ指標';
 $string['firstattempts'] = '最初の受験';
 $string['firstattemptsavg'] = '最初の受験評点の平均値';
-$string['firstattemptscount'] = '最初の受験数 (評定済み)';
+$string['firstattemptscount'] = '評定済み受験数 (評定済み)';
 $string['frequency'] = '頻度';
 $string['highestattempts'] = '最高評点の受験';
-$string['highestattemptsavg'] = '最高評点の受験の平均点';
+$string['highestattemptsavg'] = '受験の最高評点の平均点';
 $string['intended_weight'] = '意図された加重';
 $string['kurtosis'] = '評点分布の尖度 ({$a})';
 $string['lastattempts'] = '前回の受験';
 $string['lastattemptsavg'] = '前回の受験の平均点';
-$string['lastcalculated'] = '最終計算 {$a->lastcalculated} 前より {$a->count} 件の受験がありました。';
+$string['lastcalculated'] = '最後に {$a->lastcalculated} 前に計算されてから {$a->count} 件の受験がありました。';
 $string['maximumfacility'] = '容易さ - 最大';
 $string['median'] = '評点の中央値 ({$a})';
 $string['medianfacility'] = '容易さ - 中間';
@@ -79,11 +79,11 @@ $string['minimumfacility'] = '容易さ - 最低';
 $string['modelresponse'] = 'モデル解答';
 $string['nameforvariant'] = '{$a->name} の変形 {$a->variant}';
 $string['negcovar'] = '受験評点総計における評点の負の共分散';
-$string['negcovar_help'] = '小テストの一連の受験に関する、この問題の評点は全体の受験評点と反対であるという点で異なります。これはこの問題の評点が反対に平均以上であることに対して、全体の受験評点は平均以下の傾向があることを意味します。
+$string['negcovar_help'] = '小テストの一連の受験に関するこの問題の評点は全体の受験評点と反対であるという点で異なります。これはこの問題の評点が反対に平均以上であることに対して全体の受験評点は平均以下の傾向があることを意味します。
 
 この場合、私たちの有効問題加重の式では計算できません。負の共分散でハイライトされた問題にゼロの最大評点が与えられた場合、この小テスト内の他の問題に関する計算の有効問題加重はこれらの問題の有効問題加重となります。
 
-あなたが問題を編集して、これらの問題に最大評点ゼロの負の共分散を与えた場合、これらの問題の有効問題加重はゼロになります。そして、他の問題の実有効問題加重は直ちに計算されます。';
+あなたが問題を編集してこれらの問題に最大評点ゼロの負の共分散を与えた場合、これらの問題の有効問題加重はゼロになります。そして、他の問題の実有効問題加重は直ちに計算されます。';
 $string['nogradedattempts'] = 'この小テストでは受験されたものがありません。またはすべての受験を手動評定する必要があります。';
 $string['nostudentsingroup'] = 'このグループにはまだ学生が登録されていません。';
 $string['optiongrade'] = '部分点';
@@ -91,6 +91,7 @@ $string['partofquestion'] = '問題の一部';
 $string['pluginname'] = '統計';
 $string['position'] = 'ポジション';
 $string['positions'] = 'ポジション';
+$string['privacy:metadata'] = '統計プラグインにはデータベーステーブルがありますがデータは総計値であり特定の個人を記述するものではありません。';
 $string['questioninformation'] = '問題情報';
 $string['questionname'] = '問題名';
 $string['questionnumber'] = '問題#';

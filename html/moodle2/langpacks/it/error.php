@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityisscheduledfordeletion'] = 'Eliminazione dell\'attività in corso...';
+$string['agedigitalconsentmapinvalidage'] = '"{$a}" non è un valore valido per l\'età.';
+$string['agedigitalconsentmapinvalidcomma'] = '"{$a}" ha una virgola di separazione in più o in meno.';
+$string['agedigitalconsentmapinvalidcountry'] = '"{$a}" non è un valore valido per la nazione.';
+$string['agedigitalconsentmapinvaliddefault'] = 'Manca il valore di default (*).';
+$string['agelocationverificationdisabled'] = 'La verifica dell\'età e della della nazione è disabilitata';
 $string['alreadyloggedin'] = 'Sei già autenticato come {$a}, per autenticarti con un altro account devi effettuare il logout.';
 $string['authnotexisting'] = 'Il plugin di autenticazione non esiste';
 $string['backupcontainexternal'] = 'Questo file di backup contiene host Moodle Network che non sono definiti in questo sito';
@@ -180,6 +185,7 @@ $string['confirmationnotenabled'] = 'La conferma di account non è abilitata';
 $string['confirmsesskeybad'] = 'Spiacente, ma la tua chiave di sessione non può essere confermata per completare questa operazione. Questa caratteristica di sicurezza previene l\'esecuzione accidentale o maligna di funzioni importanti effettuate a tuo nome. Assicurati di voler eseguire realmente questa funzione.';
 $string['couldnotassignrole'] = 'Si è verificato un problema non specificato ma serio mentre si tentava di assegnarvi un ruolo';
 $string['couldnotupdatenoexistinguser'] = 'Non è possibile aggiornare l\'utente: l\'utente non esiste';
+$string['couldnotverifyagedigitalconsent'] = 'Si è verificato un errore durante la verifica dell\'età del consenso digitale.<br />Per favore contatta l\'amministratore del sito.';
 $string['countriesphpempty'] = 'Errore: nel language pack {$a} il file countries.php è vuoto o mancante';
 $string['coursedoesnotbelongtocategory'] = 'Il corso non appartiene a questa categoria';
 $string['courseformatnotfound'] = 'Il formato di corso \'{$a}\'  non esiste oppure non viene riconoscituo';
@@ -351,7 +357,7 @@ $string['invalidrole'] = 'Ruolo non valido';
 $string['invalidroleid'] = 'ID Ruolo non valido';
 $string['invalidscaleid'] = 'Id scala non valido';
 $string['invalidsection'] = 'Il record del modulo del corso contiene una sezione non valida';
-$string['invalidsesskey'] = 'E\' stata inviata una sesskey non corretta, il form non è stato accettato!';
+$string['invalidsesskey'] = 'La sessione è probabilmente andata in time out. Per favore autenticati nuovamente.';
 $string['invalidshortname'] = 'Titolo abbreviato del corso non valido';
 $string['invalidsourcefield'] = 'Il campo del file bozza sorgente non è valido';
 $string['invalidstatedetected'] = 'Qualcosa non è andato a buon fine: {$a}. Di norma questo non dovrebbe mai verificarsi.';
@@ -568,6 +574,7 @@ $string['usernotaddederror'] = 'Errore - L\'utente "{$a}" non è stato aggiunto'
 $string['usernotaddedregistered'] = 'L\'utente non è stato aggiunto - utente già  registrato';
 $string['usernotavailable'] = 'Non puoi visualizzare i dettagli di questo utente.';
 $string['usernotdeletedadmin'] = 'L\'utente non è stato eliminato - non è possibile eliminare l\'account dell\'amministratore';
+$string['usernotdeleteddeleted'] = 'L\'utente è già stato eliminato.';
 $string['usernotdeletederror'] = 'Errore - L\'utente non è stato eliminato';
 $string['usernotdeletedmissing'] = 'Errore - L\'utente non è stato eliminato, non è stato possibile trovare lo username';
 $string['usernotdeletedoff'] = 'L\'utente non è stato eliminato. L\'eliminazione non è consentita';
@@ -582,6 +589,7 @@ $string['usernotupdatederror'] = 'Utente non aggiornato - errore.';
 $string['usernotupdatednotexists'] = 'Utente non aggiornato - non esiste.';
 $string['userquotalimit'] = 'Hai raggiunto il limite della tua quota di file';
 $string['userselectortoomany'] = 'user_selector ha ottenuto più di un utente, anche se multiselect è false';
+$string['verifyagedigitalconsentnotpossible'] = 'Al momento la verifica dell’età del consenso digitale non è possibile.';
 $string['wrongcall'] = 'Questo script è stato chiamato in modo errato';
 $string['wrongcontextid'] = 'l\'ID del contesto è errato (non è possibile trovarla)';
 $string['wrongdestpath'] = 'Percorso di destinazione errato';

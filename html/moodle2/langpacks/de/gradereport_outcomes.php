@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_outcomes', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_outcomes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['coursespecoutcome'] = 'Lernziele im Kurs';
 $string['eventgradereportviewed'] = 'Ergebnisübersicht angezeigt';
 $string['outcomes:view'] = 'Übersicht der Lernziele anzeigen';
 $string['pluginname'] = 'Übersicht der Lernziele';
+$string['privacy:metadata'] = 'Der Bericht über die Lernziele zeigt nur Daten, die an anderer Stelle gespeichert sind.';
 $string['usedgradeitem'] = 'Anzahl der Bewertungsaspekte';

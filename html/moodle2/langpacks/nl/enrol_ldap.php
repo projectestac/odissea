@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_ldap', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['contexts'] = 'LDAP contexten';
 $string['couldnotfinduser'] = 'Kon gebruiker {$a} niet vinden, overgeslagen.';
 $string['course_fullname'] = 'Optioneel: LDAP-veld waaruit de volledige naam gehaald moet worden.';
 $string['course_fullname_key'] = 'Volledige naam';
-$string['course_fullname_updateonsync'] = 'Update volledige naam met synchronisatiescript';
+$string['course_fullname_updateonsync'] = 'Update volledige naam tijdens synchronisatiescript';
 $string['course_fullname_updateonsync_key'] = 'Update volledige naam';
 $string['course_idnumber'] = 'Pad naar de unique identifier in LDAP, gewoonlijk  <em>cn</em> of <em>uid</em>. Het is aangewezen de waarde vast te zetten als je automatisch aanmaken van cursussenn gebruikt.';
 $string['course_idnumber_key'] = 'ID nummer';
@@ -56,11 +56,11 @@ $string['course_search_sub_key'] = 'Doorzoek subcontexts';
 $string['course_settings'] = 'Instellingen voor het aanmelden bij cursussen';
 $string['course_shortname'] = 'Optioneel: LDAP-veld om de korte cursusnaam uit te halen';
 $string['course_shortname_key'] = 'Korte naam';
-$string['course_shortname_updateonsync'] = 'Update korte naam met synchronisatiescript';
+$string['course_shortname_updateonsync'] = 'Update korte naam tijdens synchronisatiescript';
 $string['course_shortname_updateonsync_key'] = 'Update korte naam';
 $string['course_summary'] = 'Optioneel: LDAP-veld om de beschrijving uit te halen';
 $string['course_summary_key'] = 'Samenvatting';
-$string['course_summary_updateonsync'] = 'Update-samenvatting tijdens synchronisatie-script';
+$string['course_summary_updateonsync'] = 'Update samenvatting tijdens synchronisatiescript';
 $string['course_summary_updateonsync_key'] = 'Update samenvatting';
 $string['courseupdated'] = 'Aanpassen cursus met IDnummer \'{$a->idnumber}\'  is gelukt.';
 $string['courseupdateskipped'] = 'Cursus met IDnummer \'{$a->idnumber}\' moet niet aangepast worden. Sla over...';
@@ -86,7 +86,7 @@ $string['host_url'] = 'Specifier de LDAP-host als een URL, bijvoorbeeld
 \'ldap://ldap.myorg.com/\'
 of \'ldaps://ldap.myorg.com/\'';
 $string['host_url_key'] = 'Host URL';
-$string['idnumber_attribute'] = 'Als het groepslidmaatschap distiguised names bevat, geeg dan hetzelfde attribuut dat je gebruikt hebt voor de mapping van het gebruiker \'ID nummer\' in de LDAP authenticatieinstellingen.';
+$string['idnumber_attribute'] = 'Als het groepslidmaatschap distiguised names bevat, geef dan hetzelfde attribuut dat je gebruikt hebt voor de mapping van het gebruiker \'ID nummer\' in de LDAP authenticatieinstellingen.';
 $string['idnumber_attribute_key'] = 'ID nummer attribuut';
 $string['ldap_encoding'] = 'Geef de encoding die de LDAP-server gebruikt. Waarschijnlijk is het utf-8, MS AD v2 gebruikt standaard platform encodering, zoals cp1252, cp 1250 enz.';
 $string['ldap_encoding_key'] = 'LDAP-encoding';
@@ -101,7 +101,7 @@ $string['nosuchrole'] = 'Rol {$a} bestaat niet';
 $string['objectclass'] = 'objectClass gebruikt om cursussen te zoeken. Gewoonlijk  \'posixGroup\'.';
 $string['objectclass_key'] = 'Object klasse';
 $string['ok'] = 'OK!';
-$string['opt_deref'] = 'Indien onder de groepsleden prominente namen voorkomen, specifieer dan hoe aliassen behandeld worden tijdens het zoeken. Selecteer een van de volgende waarden: \'Nee\' (LDAP_DEREF_NEVER) of \'Ja\' (LDAP_DEREF_ALWAYS)';
+$string['opt_deref'] = 'Indien onder de groepsleden prominente namen voorkomen, specificeer dan hoe aliassen behandeld worden tijdens het zoeken. Selecteer een van de volgende waarden: \'Nee\' (LDAP_DEREF_NEVER) of \'Ja\' (LDAP_DEREF_ALWAYS).';
 $string['opt_deref_key'] = 'Maak de referentie naar aliassen ongedaan';
 $string['phpldap_noextension'] = '<em>De PHP LDAP module lijkt niet aanwezig. Controleer of ze geïnstalleerd en ingeschakeld is indien je deze aanmeldingsplugin wil gebruiken.</em>';
 $string['pluginname'] = 'LDAP aanmeldingen';
@@ -111,6 +111,7 @@ $string['pluginname_desc'] = '<p>Je kunt een LDAP-server gebruiken om je cursusa
 <p>Aanmeldingen worden geüpdatet wanneer de gebruiker inlogd. Je kunt ook een script laten lopen om de aanmeldingen te synchroniseren. Kijk daarvoor in <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Deze plugin kan zo ingesteld worden dat nieuwe cursussen aangemaakt worden als nieuwe groepen in LDAP verschijnen.</p>';
 $string['pluginnotenabled'] = 'Plugin niet ingeschakeld!';
+$string['privacy:metadata'] = 'De LDAP aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['role_mapping'] = '<p>Voor elke rol die je wil toewijzen vanuit LDAP, moet je de lijst van contexten specifiëren waar de groepen binnen de cursussen met de rol zich bevinden. Scheid de verschillende contexten af met \';\'.</p><p>Specifieer ook het attribuut dat je LDAP server gebruikt om de groepsleden te bewaren. Gewoonlijk \'member\' of \'memberUid\'</p>';
 $string['role_mapping_attribute'] = 'LDAP member attribuut voor {$a}';
 $string['role_mapping_context'] = 'LDAP contexten voor {$a}';
@@ -118,17 +119,18 @@ $string['role_mapping_key'] = 'Koppel rollen uit LDAP';
 $string['roles'] = 'Rolmapping';
 $string['server_settings'] = 'LDAP-serverinstellingen';
 $string['synccourserole'] = '==Synchroniseren van cursus \'{$a->idnumber}\' voor rol \'{$a->role_shortname}\'';
+$string['syncenrolmentstask'] = 'Synchroniseer aanmeldingentaak';
 $string['template'] = 'Optioneel: automatisch gecreëerde cursussen kunnen instellingen kopieren vanaf een voorbeeldcursus.';
 $string['template_key'] = 'Sjabloon';
 $string['unassignrole'] = 'Rol {$a->role_shortname} wordt weggenomen van gebruiker {$a->user_name} uit cursus {$a->course_shortname} (id {$a->course_id}';
 $string['unassignrolefailed'] = 'Rol {$a->role_shortname} wegnemen van gebruiker {$a->user_name} uit cursus {$a->course_shortname} (id {$a->course_id} mislukt';
 $string['unassignroleid'] = 'Rol ID {$a->role_id} van gebruiker {$a->user_id} wegnemen';
 $string['updatelocal'] = 'Update de lokale gegevens';
-$string['user_attribute'] = 'Indien het groepslidmaatschap \'distinguised names\' bevat, specifieer dan het attribuut dat wordt gebruikt om gebruikers te benoemen of te zoeken. Indien je gebruik maakt van LDAP authenticatie, dan moet deze waarde overeenkomen met het attribuut gespecifieerd in de \'ID nummer\' mapping in de LDAP authenticatie plugin.';
+$string['user_attribute'] = 'Indien het groepslidmaatschap \'distinguised names\' bevat, specificeer dan het attribuut dat wordt gebruikt om gebruikers te benoemen of te zoeken. Indien je gebruik maakt van LDAP authenticatie, dan moet deze waarde overeenkomen met het attribuut gespecifieerd in de \'ID nummer\' mapping in de LDAP authenticatie plugin.';
 $string['user_attribute_key'] = 'ID nummer attribuut';
-$string['user_contexts'] = 'Indien het groepslidmaatschap \'distinguised names\' bevat, specifieer dan de lijst van contexten waarin de gebruikers zich bevinden. Scheid de verschillende contexten af met \';\'. Bij voorbeeld: \'ou=gebruikers,o=org; ou=anderen,o=org\'';
+$string['user_contexts'] = 'Indien het groepslidmaatschap \'distinguised names\' bevat, specificeer dan de lijst van contexten waarin de gebruikers zich bevinden. Scheid de verschillende contexten af met \';\'. Bij voorbeeld: \'ou=gebruikers,o=org; ou=anderen,o=org\'.';
 $string['user_contexts_key'] = 'Contexten';
-$string['user_search_sub'] = 'Indien onder de groepsleden prominente namen voorkomen, specifieer dan of de zoekopdracht naar gebruikers ook in de subcontexten gebeurt';
+$string['user_search_sub'] = 'Indien onder de groepsleden prominente namen voorkomen, specificeer dan of de zoekopdracht naar gebruikers ook in de subcontexten gebeurt.';
 $string['user_search_sub_key'] = 'Doorzoek subcontexten';
 $string['user_settings'] = 'Gebruiker opzoekinstellingen';
 $string['user_type'] = 'Indien onder de groepsleden prominente namen voorkomen, specifieer dan hoe gebruikers worden opgeslagen in LDAP';

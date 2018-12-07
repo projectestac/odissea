@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_stats', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,16 @@ $string['page-report-stats-index'] = 'Ikastaroko estatistika-txostena';
 $string['page-report-stats-user'] = 'Ikastaroko estatistika-txostena';
 $string['page-report-stats-x'] = 'Edozein estatistika-txosten';
 $string['pluginname'] = 'Estatistikak';
+$string['privacy:dailypath'] = 'Eguneroko estatistikak';
+$string['privacy:metadata'] = 'Estatistikak pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata:courseid'] = 'Ikastaroaren identifikatzailea.';
+$string['privacy:metadata:roleid'] = 'Erabiltzailearen rolaren IDa.';
+$string['privacy:metadata:statsreads'] = 'Edukiaren ikustaldiak';
+$string['privacy:metadata:statssummary'] = 'Erabiltzaileek ikastaroetan izandako jardueraren oinarrizko estatistikak gordetzen ditu.';
+$string['privacy:metadata:statswrites'] = 'Ikastaroan egindako edukiak.';
+$string['privacy:metadata:stattype'] = 'Gordetako estatistika-mota';
+$string['privacy:metadata:timeend'] = 'Erregistro-ikustaldien amaiera-data';
+$string['privacy:metadata:userid'] = 'Taula honekin lotutako erabiltzailearen IDa.';
+$string['privacy:monthlypath'] = 'Hilabetekako estatistikak';
+$string['privacy:weeklypath'] = 'Astekako estatistikak';
 $string['stats:view'] = 'Ikastaroaren estatistiken txostena ikusi';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mimetypes', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,7 @@ $string['application/pdf'] = 'Έγγραφο Acrobat Reader PDF';
 $string['application/vnd.ms-excel'] = 'Έγγραφο Λογιστικού Φύλλου Excel';
 $string['application/vnd.ms-powerpoint'] = 'Έγγραφο Παρουσίασης Powerpoint';
 $string['document/unknown'] = 'Αρχείο';
+$string['group:html_audio'] = 'Αρχεία ήχου με εγγενή υποστήριξη από τους περιηγητές';
+$string['group:html_video'] = 'Αρχεία βίντεο με εγγενή υποστήριξη από τους περιηγητές';
 $string['text/plain'] = 'Αρχείο Κειμένου';
 $string['text/rtf'] = 'Αρχείο Εμπλουτισμένου Κειμένου RTF';

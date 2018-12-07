@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'install', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -163,7 +163,6 @@ $string['nativesqlsrv'] = 'SQL*Server Microsoft («родной»/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Теперь Вам необходимо настроить базу данных, в которой будут храниться основные данные Moodle.
 База данных, имя пользователя и пароль для доступа к ней должны быть уже созданы. Префикс имен таблиц является обязательным.';
 $string['nativesqlsrvnodriver'] = 'Драйвер PHP от Microsoft для SQL Server не установлен или неправильно сконфигурирован.';
-$string['nativesqlsrvnonwindows'] = 'Драйвер PHP от Microsoft для SQL Server досупен только в операционной системе Windows.';
 $string['ociextensionisnotpresentinphp'] = 'Расширение OCI8 для PHP сконфигурировано неверно, в результате чего невозможно установить связь с сервером Oracle. Проверьте настройки в файле php.ini или перекомпилируйте PHP.';
 $string['pass'] = 'Тест пройден';
 $string['paths'] = 'Пути';

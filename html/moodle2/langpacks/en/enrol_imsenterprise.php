@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['nestedcategories'] = 'Allow nested categories';
 $string['nestedcategories_desc'] = 'If enabled IMS Enterprise will create nested categories';
 $string['pluginname'] = 'IMS Enterprise file';
 $string['pluginname_desc'] = 'This method will repeatedly check for and process a specially-formatted text file in the location that you specify.  The file must follow the IMS Enterprise specifications containing person, group, and membership XML elements.';
+$string['privacy:metadata'] = 'The IMS Enterprise file enrolment plugin does not store any personal data.';
 $string['processphoto'] = 'Add user photo data to profile';
 $string['processphotowarning'] = 'Warning: Image processing is likely to add a significant burden to the server. You are recommended not to activate this option if large numbers of students are expected to be processed.';
 $string['restricttarget'] = 'Only process data if the following target is specified';

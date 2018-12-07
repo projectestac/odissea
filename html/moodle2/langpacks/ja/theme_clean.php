@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_clean', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['invertdesc'] = 'ページトップのナビゲーションバーのテ�
 $string['logo'] = 'ロゴ';
 $string['logodesc'] = 'ロゴはフロントページおよびログインページのヘッダ内に表示されます。<br />あなたのロゴの高さが75px以上の場合、以下のカスタムCSSボックスに「div.logo {height: 100px;}」を追加してください。高さが100px以外の場合、それに応じて修正されます。ここでロゴが追加されない場合、「アピアランス > ブランディング」のロゴが使用されます。';
 $string['pluginname'] = 'Clean';
+$string['privacy:metadata'] = 'Cleanテーマはすべてのユーザに関してどのような個人データも保存しません。';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';
 $string['sitelogo'] = 'サイトロゴ';

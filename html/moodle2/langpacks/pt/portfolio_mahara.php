@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_mahara', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,5 +45,7 @@ $string['mnet_wronghost'] = 'O servidor indicado para esta transferência é tok
 $string['pf_description'] = 'Permitir aos utilizadores o envio de conteúdo Moodle para este servidor.<br />Subscrever <b>e</b> publicar este serviço para permitir a utilizadores autenticados no site o envio de conteúdos para {$a}<br /><ul><li><em>Dependência</em>: É obrigatória a <strong>publicação</strong> do serviço de SSO (Identify Provider) para {$a}.</li><li><em>Dependência</em>: É obrigatória a <strong>subscrição</strong> do serviço SSO (Service Provider) em {$a}</li><li><em>Dependência</em>: É obrigatória a ativação do módulo de autenticação Rede Moodle.</li></ul><br />';
 $string['pf_name'] = 'Serviços portefólio';
 $string['pluginname'] = 'ePortefólio Mahara';
+$string['privacy:metadata'] = 'Este módulo envia dados externamente para uma aplicação Mahara. Não armazena dados localmente.';
+$string['privacy:metadata:data'] = 'Dados pessoais transmitidos através do subsistema portefólio.';
 $string['senddisallowed'] = 'Não é possível transferir ficheiros para o site Mahara neste momento';
 $string['url'] = 'URL';

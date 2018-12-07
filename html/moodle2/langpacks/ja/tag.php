@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = '標準タグが追加されました。';
-$string['addedotag'] = '「 {$a} 」がオフィシャルタグとして追加されました。';
 $string['addotags'] = '標準タタグを追加する';
 $string['addtagcoll'] = 'タグコレクションを追加する';
 $string['addtagtomyinterests'] = '私の「興味のあること」に「 {$a} 」を追加する';
@@ -90,7 +89,6 @@ $string['name'] = 'タグ名';
 $string['namesalreadybeeingused'] = 'タグ名がすでに使用されています。';
 $string['nameuseddocombine'] = 'このタグ名はすでに使用されています。これらのタグを結合しますか?';
 $string['newcollnamefor'] = 'タグコレクション {$a} の新しい名称';
-$string['newname'] = '新しいタグ名';
 $string['newnamefor'] = 'タグ {$a} の新しい名称';
 $string['nextpage'] = 'さらに';
 $string['noresultsfor'] = '「 {$a} 」の検索結果なし';
@@ -105,6 +103,19 @@ $string['page-tag-manage'] = 'タグページを管理する';
 $string['page-tag-search'] = 'タグ検索ページ';
 $string['page-tag-x'] = 'すべてのタグページ';
 $string['prevpage'] = '戻る';
+$string['privacy:metadata:tag'] = 'それぞれのユニークタグの詳細は説明および他の関連情報と共に保存されます。';
+$string['privacy:metadata:tag:description'] = 'タグの説明です。';
+$string['privacy:metadata:tag:flag'] = 'タグが不適切にフラグされているかどうかです。';
+$string['privacy:metadata:taginstance'] = 'タグと使用場所間のリンクです。';
+$string['privacy:metadata:taginstance:ordering'] = 'このタグの相対的順序です。';
+$string['privacy:metadata:taginstance:tagid'] = 'タグへのリンクです。';
+$string['privacy:metadata:taginstance:timecreated'] = 'このタグがターゲットにリンクされた時間です。';
+$string['privacy:metadata:taginstance:timemodified'] = 'このタグがターゲットのために修正された時間です。';
+$string['privacy:metadata:taginstance:tiuserid'] = 'ユーザが共有コンテンツを個別にタグ付けできる場合、タグインスタンスのオーナーが保存されます。';
+$string['privacy:metadata:tag:name'] = 'タグ名 - これは正規化されたバージョンの名称です。';
+$string['privacy:metadata:tag:rawname'] = 'タグ名 - これは表示名です。';
+$string['privacy:metadata:tag:timemodified'] = 'タグが最後に修正された時間です。';
+$string['privacy:metadata:tag:userid'] = 'タグを最初に作成したユーザのIDです。';
 $string['ptags'] = 'ユーザ定義タグ (カンマ区切り)';
 $string['relatedblogs'] = '最新のブログエントリ';
 $string['relatedtags'] = '関連タグ';
@@ -154,13 +165,8 @@ $string['taggedwith'] = '- タグ「 {$a} 」';
 $string['tags'] = 'タグ';
 $string['tagsaredisabled'] = 'タグが無効にされています。';
 $string['tagtype'] = 'タグタイプ';
-$string['tagtype_default'] = 'デフォルト';
-$string['tagtype_official'] = 'オフィシャル';
 $string['thingstaggedwith'] = '「 {$a->name} 」は {$a->count} 回使用されています。';
 $string['thingtaggedwith'] = '「 {$a->name} 」は 1 回使用されています。';
-$string['thistaghasnodesc'] = '現在、このタグには説明がありません。';
 $string['timemodified'] = '修正日時';
 $string['typechanged'] = 'タグタイプが変更されました。';
-$string['updated'] = '更新されました。';
 $string['updatetag'] = '更新';
-$string['withselectedtags'] = '選択したタグに対して ...';

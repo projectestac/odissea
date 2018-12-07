@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipi di file accettati';
-$string['acceptedfiletypes_help'] = 'E\' possibile limitare i tipi di file accettati inserendo un elenco di tipi mime separati dal punto e virgola, ad esempio: \'video/mp4; audio/mp3; image/png; image/jpeg\'. E\' anche possibile limitare le estensioni, ad esempio \'.png; .jpg\'. Lasciano il campo vuoto saranno accettati  tutti i tipi di file.';
+$string['acceptedfiletypes_help'] = 'E\' possibile limitare i tipi di file accettati inserendo un elenco di estensioni. Lasciando il campo vuoto saranno accettati  tutti i tipi di file.';
 $string['configmaxbytes'] = 'Dimensione massima file';
 $string['countfiles'] = '{$a} file';
 $string['default'] = 'Abilitato per default';
+$string['defaultacceptedfiletypes'] = 'Tipi di file accettati per default';
 $string['default_help'] = 'Questo metodo di consegna sarà abilitato per default per le nuove istanze di compito.';
 $string['enabled'] = 'Consegna file';
 $string['enabled_help'] = 'Consente agli studenti di consegnare file.';

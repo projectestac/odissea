@@ -23,5 +23,6 @@
  */
 
 $string['dataformat'] = 'OpenDocument (.ods)';
-$string['shortname'] = 'OpenDoc';
+$string['privacy:metadata'] = 'The OpenDoc Data format plugin does not store any personal data.';
+$string['shortname'] = 'OpenDocument';
 

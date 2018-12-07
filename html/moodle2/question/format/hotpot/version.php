@@ -32,8 +32,8 @@ if (empty($plugin) || ! is_object($plugin)) {
 $plugin->component = 'qformat_hotpot';
 $plugin->maturity  = MATURITY_STABLE; // = 200
 $plugin->requires  = 2010112400; // Moodle 2.0
-$plugin->release   = '2017-12-29 (19)';
-$plugin->version   = 2017122919;
+$plugin->release   = '2018-05-25 (20)';
+$plugin->version   = 2018052520;
 
 if (defined('ANY_VERSION')) {
     // Moodle >= 2.2

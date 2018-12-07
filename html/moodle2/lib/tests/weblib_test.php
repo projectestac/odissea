@@ -64,6 +64,56 @@ class core_weblib_testcase extends advanced_testcase {
         $CFG->formatstringstriptags = $originalformatstringstriptags;
     }
 
+    /**
+     * The format string static caching should include the filters option to make
+     * sure filters are correctly applied when requested.
+     */
+    public function test_format_string_static_caching_with_filters() {
+        global $CFG;
+
+        $this->resetAfterTest(true);
+        $this->setAdminUser();
+        $generator = $this->getDataGenerator();
+        $course = $generator->create_course();
+        $user = $generator->create_user();
+        $rawstring = 'Shortname <a href="#">link</a> curseword';
+        $expectednofilter = strip_links($rawstring);
+        $expectedfilter = 'Shortname link \*\**';
+        $striplinks = true;
+        $context = context_course::instance($course->id);
+        $options = [
+            'context' => $context,
+            'escape' => true,
+            'filter' => false
+        ];
+
+        $this->setUser($user);
+
+        // Format the string without filters. It should just strip the
+        // links.
+        $nofilterresult = format_string($rawstring, $striplinks, $options);
+        $this->assertEquals($expectednofilter, $nofilterresult);
+
+        // Add the censor filter. Make sure it's enabled globally.
+        $CFG->filterall = true;
+        $CFG->stringfilters = 'censor';
+        $CFG->filter_censor_badwords = 'curseword';
+        filter_set_global_state('censor', TEXTFILTER_ON);
+        filter_set_local_state('censor', $context->id, TEXTFILTER_ON);
+        // This time we want to apply the filters.
+        $options['filter'] = true;
+        $filterresult = format_string($rawstring, $striplinks, $options);
+        $this->assertRegExp("/$expectedfilter/", $filterresult);
+
+        filter_set_local_state('censor', $context->id, TEXTFILTER_OFF);
+
+        // Confirm that we get back the cached string. The result should be
+        // the same as the filtered text above even though we've disabled the
+        // censor filter in between.
+        $cachedresult = format_string($rawstring, $striplinks, $options);
+        $this->assertRegExp("/$expectedfilter/", $cachedresult);
+    }
+
     public function test_s() {
         // Special cases.
         $this->assertSame('0', s(0));
@@ -670,15 +720,15 @@ EXPECTED;
      */
     public function test_validate_email() {
 
-        $this->assertEquals(1, validate_email('moodle@example.com'));
-        $this->assertEquals(1, validate_email('moodle@localhost.local'));
-        $this->assertEquals(1, validate_email('verp_email+is=mighty@moodle.org'));
-        $this->assertEquals(1, validate_email("but_potentially'dangerous'too@example.org"));
-        $this->assertEquals(1, validate_email('posts+AAAAAAAAAAIAAAAAAAAGQQAAAAABFSXz1eM/P/lR2bYyljM+@posts.moodle.org'));
+        $this->assertTrue(validate_email('moodle@example.com'));
+        $this->assertTrue(validate_email('moodle@localhost.local'));
+        $this->assertTrue(validate_email('verp_email+is=mighty@moodle.org'));
+        $this->assertTrue(validate_email("but_potentially'dangerous'too@example.org"));
+        $this->assertTrue(validate_email('posts+AAAAAAAAAAIAAAAAAAAGQQAAAAABFSXz1eM/P/lR2bYyljM+@posts.moodle.org'));
 
-        $this->assertEquals(0, validate_email('moodle@localhost'));
-        $this->assertEquals(0, validate_email('"attacker\\" -oQ/tmp/ -X/var/www/vhost/moodle/backdoor.php  some"@email.com'));
-        $this->assertEquals(0, validate_email("moodle@example.com>\r\nRCPT TO:<victim@example.com"));
+        $this->assertFalse(validate_email('moodle@localhost'));
+        $this->assertFalse(validate_email('"attacker\\" -oQ/tmp/ -X/var/www/vhost/moodle/backdoor.php  some"@email.com'));
+        $this->assertFalse(validate_email("moodle@example.com>\r\nRCPT TO:<victim@example.com"));
     }
 
     /**

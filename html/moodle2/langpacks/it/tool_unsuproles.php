@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_unsuproles', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_unsuproles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,3 +30,4 @@ $string['contextlevel'] = 'Livello di contesto';
 $string['count'] = 'Numero';
 $string['noprolbems'] = 'Non sono state trovate assegnazioni di ruolo non supportate';
 $string['pluginname'] = 'Assegnazioni di ruolo non supportate';
+$string['privacy:metadata'] = 'Il plugin "Assegnazioni di ruolo non supportate" non memorizza dati personali.';

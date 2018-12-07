@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_truefalse', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_truefalse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,7 +35,8 @@ $string['pleaseselectananswer'] = '答えを選択してください。';
 $string['pluginname'] = '○/×問題';
 $string['pluginnameadding'] = '○/×問題の追加';
 $string['pluginnameediting'] = '○/×問題の編集';
-$string['pluginname_help'] = '問題 (イメージを含む) の解答に対して、解答者は「○」または「×」を選択します。';
+$string['pluginname_help'] = '問題 (イメージを含む) の解答として解答者は「○」または「×」を選択します。';
 $string['pluginnamesummary'] = '2つの選択肢「○」および「×」のみ持ったシンプルな形の多肢選択問題です。';
+$string['privacy:metadata'] = '○/×問題タイププラグインはどのような個人データも保存しません。';
 $string['selectone'] = '1つ選択してください:';
 $string['true'] = '○';

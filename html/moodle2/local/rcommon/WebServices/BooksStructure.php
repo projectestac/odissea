@@ -74,7 +74,7 @@ function get_books_structure_publisher($publisher, $isbn = false) {
 
                         get_book_structure($publisher, $codisbn);
                         echo '<li>'.$OUTPUT->notification($message, 'notifysuccess').'</li>';
-                    } catch (Exception $e) {
+                    } catch (Throwable $e) {
                         $message .= " - Error: ".$e->getMessage();
                         echo '<li>'.$OUTPUT->notification($message).'</li>';
                     }
@@ -86,7 +86,7 @@ function get_books_structure_publisher($publisher, $isbn = false) {
         	echo get_string('nobooks', 'local_rcommon');
         	return true;
         }
-    } catch (Exception $fault) {
+    } catch (Throwable $fault) {
         $message = rcommon_ws_error('get_books_structure_publisher', $fault->getMessage());
         throw new Exception($message);
     }
@@ -131,7 +131,7 @@ function get_books($publisher) {
             throw new Exception(get_string('empty_response_error', 'local_rcommon'));
         }
 
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         $message = rcommon_ws_error('get_books', $e->getMessage());
         throw new Exception($message);
     }
@@ -161,7 +161,7 @@ function get_book_structure($publisher, $isbn) {
 
         log_to_file("get_book_structure Request: ".$client->__getLastRequest());
         log_to_file("get_book_structure Response: ".$client->__getLastResponse());
-    } catch (Exception $fault) {
+    } catch (Throwable $fault) {
         log_to_file("wsBookStructure: get_book_structure - Exception = ".$fault->getMessage());
         $message = rcommon_ws_error('get_book_structure', $fault->getMessage());
         throw new Exception($message);

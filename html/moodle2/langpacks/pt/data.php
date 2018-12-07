@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = '"Disponível até" não pode ser anterio
 $string['blank'] = 'Vazio';
 $string['buttons'] = 'Botões';
 $string['bynameondate'] = 'por  {$a->name} - {$a->date}';
-$string['calendarend'] = 'Base de dados fecha a {$a}';
-$string['calendarstart'] = 'Base de dados abre a {$a}';
+$string['calendarend'] = 'Fecha a {$a}';
+$string['calendarstart'] = 'Abre a {$a}';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'Não tem permissão para aceder a protótipos de outros utilizadores';
 $string['cannotadd'] = 'Não foi possível adicionar registos!';
@@ -76,6 +76,9 @@ $string['comments'] = 'Comentários';
 $string['commentsaved'] = 'O comentário foi gravado';
 $string['commentsn'] = '{$a} comentário(s)';
 $string['commentsoff'] = 'A opção de comentários não está ativa';
+$string['completionentries'] = 'Requer registos';
+$string['completionentriescount'] = 'Número de Registos';
+$string['completionentriesdesc'] = 'Número mínimo de registos requeridos: {$a}';
 $string['configenablerssfeeds'] = 'A ativação desta configuração permite a geração de listas RSS em todas as bases de dados, ao nível do site. Para utilizar esta funcionalidade numa base de dados específica deve ainda ativar a mesma na respectiva página de configuração.';
 $string['confirmdeletefield'] = 'Tem a certeza de que pretende apagar este campo?';
 $string['confirmdeleterecord'] = 'Tem a certeza de que pretende apagar este registo?';
@@ -199,8 +202,13 @@ $string['headersingletemplate'] = 'Define a aparência da página de registos in
 $string['importentries'] = 'Importar registos';
 $string['importsuccess'] = 'O protótipo foi aplicado com sucesso.';
 $string['includeapproval'] = 'Incluir estado de aprovação';
+$string['includetags'] = 'Incluir palavaras-chave';
 $string['includetime'] = 'Incluir data de criação/modificação';
 $string['includeuserdetails'] = 'Incluir detalhes do utilizador';
+$string['indicator:cognitivedepth'] = 'Compreensão da Base de dados';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Base de dados.';
+$string['indicator:socialbreadth'] = 'Socialização da Base de dados';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Base de dados.';
 $string['insufficiententries'] = 'são necessários mais registos para ver esta base de dados';
 $string['intro'] = 'Descrição';
 $string['invalidaccess'] = 'Esta página não foi acedida corretamente';
@@ -305,21 +313,44 @@ $string['pluginname'] = 'Base de dados';
 $string['portfolionotfile'] = 'Exportar para portefólio em vez de ficheiro (apenas CSV e Leap2a)';
 $string['presetinfo'] = 'A gravação como protótipo permite a outros utilizadores usar o mesmo nas suas bases de dados.';
 $string['presets'] = 'Protótipos';
+$string['privacy:metadata:commentpurpose'] = 'Comentários aos registos da Base de dados';
+$string['privacy:metadata:data_content'] = 'Representa uma resposta a um campo na atividade Base de dados';
+$string['privacy:metadata:data_content:content'] = 'Conteúdo';
+$string['privacy:metadata:data_content:content1'] = 'Conteúdo adicional 1';
+$string['privacy:metadata:data_content:content2'] = 'Conteúdo adicional 2';
+$string['privacy:metadata:data_content:content3'] = 'Conteúdo adicional 3';
+$string['privacy:metadata:data_content:content4'] = 'Conteúdo adicional 4';
+$string['privacy:metadata:data_content:fieldid'] = 'ID da definição do campo';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para a atividade Base de dados';
+$string['privacy:metadata:data_records'] = 'Representa registos na atividade Base de dados';
+$string['privacy:metadata:data_records:approved'] = 'Estado da aprovação';
+$string['privacy:metadata:data_records:groupid'] = 'Grupo';
+$string['privacy:metadata:data_records:timecreated'] = 'Data/hora da criação do registo';
+$string['privacy:metadata:data_records:timemodified'] = 'Data/hora da última modificação';
+$string['privacy:metadata:data_records:userid'] = 'Utilizador que criou o registo';
+$string['privacy:metadata:filepurpose'] = 'Ficheiro anexado ao registo da Base de dados';
+$string['privacy:metadata:ratingpurpose'] = 'Classificações nos registos da Base de dados';
+$string['privacy:metadata:tagpurpose'] = 'Palavras-chave no registo da base de dados';
 $string['radiobutton'] = 'Botões de rádio';
 $string['recordapproved'] = 'Registo aprovado';
 $string['recorddeleted'] = 'Registo apagado';
 $string['recorddisapproved'] = 'Entrada não aprovada';
 $string['recordsnotsaved'] = 'Não foram gravados registos. Verifique o formato do ficheiro enviado.';
 $string['recordssaved'] = 'os registos foram gravados';
+$string['removealldatatags'] = 'Apagar todas as tags da base de dados';
 $string['requireapproval'] = 'Requer aprovação';
 $string['requireapproval_help'] = 'Se ativar esta opção os registos necessitam de aprovação do professor antes de ficarem visíveis para todos os utilizadores.';
 $string['required'] = 'Obrigatório';
-$string['requiredentries'] = 'Registos requeridos para conclusão';
-$string['requiredentries_help'] = 'Número de registos que o aluno tem que submeter antes que a atividade seja considerada completa.';
+$string['requiredentries'] = 'Registos requeridos para conclusão (antigo)';
+$string['requiredentries_help'] = 'Se ativar esta opção, uma mensagem será mostrada para informar o número de registos necessários para a conclusão. Tenha em atenção que esta configuração não está ligada à conclusão da atividade.
+
+Para os registos necessários para a conclusão da atividade, na nova configuração de conclusão da atividade, deve ser usada \'Requer registos\'. Para remover completamente esta definição, defina como Nenhum e, em seguida, guarde as alterações.
+Use em vez de registos necessários na secção de conclusão da atividade.';
 $string['requiredentriestoview'] = 'Registos requeridos antes de ser permitida a visualização';
 $string['requiredentriestoview_help'] = 'Número de registos que o aluno tem que submeter antes de poder ver os registos dos outros participantes.
 
 Nota: Se for necessário submeter registos antes de poder ver a base de dados, o filtro <b>hiperligações automáticas à base de dados</b> tem que ser desativado pois este filtro não consegue determinar se um utilizador já submeteu o número de registos requerido.';
+$string['requiredentrieswarning'] = 'Esta configuração foi substituída por uma configuração de conclusão da atividade "Requer registos"';
 $string['requiredfield'] = 'Campo obrigatório';
 $string['resetsettings'] = 'Reiniciar filtros';
 $string['resettemplate'] = 'Reiniciar modelo';
@@ -328,14 +359,14 @@ $string['rows'] = 'linhas';
 $string['rssglobaldisabled'] = 'Desativado. Consulte as variáveis de configuração do site.';
 $string['rsstemplate'] = 'Modelo para Listas RSS';
 $string['rsstitletemplate'] = 'Listas RSS';
-$string['save'] = 'Gravar';
-$string['saveandadd'] = 'Gravar e adicionar outro';
-$string['saveandview'] = 'Gravar e visualizar';
-$string['saveaspreset'] = 'Gravar como protótipo';
-$string['saveaspreset_help'] = 'Gravar como protótipo permite gravar os modelos existentes e os campos da base de dados como um protótipo que os outros utilizadores podem usar. Poderá apagar o protótipo da lista de protótipos em qualquer momento.';
-$string['savesettings'] = 'Gravar configurações';
+$string['save'] = 'Guardar';
+$string['saveandadd'] = 'Guardar e adicionar outro';
+$string['saveandview'] = 'Guardar e visualizar';
+$string['saveaspreset'] = 'Guardar como protótipo';
+$string['saveaspreset_help'] = 'Guardar como protótipo permite gguardar os modelos existentes e os campos da base de dados como um protótipo que os outros utilizadores podem usar. Em qualquer momento poderá apagar o protótipo da lista de protótipos.';
+$string['savesettings'] = 'Guardar configurações';
 $string['savesuccess'] = 'Gravado com sucesso. Este protótipo será disponibilizado em todo o site.';
-$string['savetemplate'] = 'Gravar modelo';
+$string['savetemplate'] = 'Guardar modelo';
 $string['search'] = 'Pesquisar';
 $string['search:activity'] = 'Base de dados - informações da atividade';
 $string['search:entry'] = 'Base de dados - registos';
@@ -347,6 +378,9 @@ $string['subplugintype_datafield'] = 'Tipo de campo da Base de Dados';
 $string['subplugintype_datafield_plural'] = 'Tipos de campos da Base de Dados';
 $string['subplugintype_datapreset'] = 'Protótipo';
 $string['subplugintype_datapreset_plural'] = 'Protótipos';
+$string['tagarea_data_records'] = 'Registos de dados';
+$string['tags'] = 'Palavras-chave';
+$string['tagsdeleted'] = 'Todas as tags da base de dados foram apagadas';
 $string['teachersandstudents'] = '{$a->teachers} e {$a->students}';
 $string['templates'] = 'Modelos';
 $string['templatesaved'] = 'O modelo foi gravado';
@@ -372,7 +406,7 @@ $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Incluir na pesquisa.';
 $string['usestandard'] = 'Usar um protótipo';
-$string['usestandard_help'] = 'Para criar a base de dados a partir de protótipo, selecione um da lista. (Se adicionou um protótipo através da função <b>Gravar como protótipo</b> pode remover o mesmo em qualquer momento).';
+$string['usestandard_help'] = 'Para criar a base de dados a partir de um protótipo, selecione um da lista. (Se adicionou um protótipo através da função <b>Guardar como protótipo</b> pode remover o mesmo em qualquer momento).';
 $string['viewfromdate'] = 'Visível a partir de';
 $string['viewtodate'] = 'Visível até';
 $string['viewtodatevalidation'] = '"Apenas de leitura até" não pode ser anterior a "Apenas de leitura a partir de".';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipos de ficheiro permitidos';
-$string['acceptedfiletypes_help'] = 'Pode restringir os tipos de ficheiro permitidos, introduzindo uma lista de mimetypes separados por vírgula, como por exemplo \'video/mp4, audio/mp3, image/png, image/jpeg\', ou igualmente limitar o tipo de extensões permitidas incluindo o ponto, como por exemplo \'.png, .jpg\'. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
+$string['acceptedfiletypes_help'] = 'Os tipos de ficheiros aceites podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
 $string['configmaxbytes'] = 'Tamanho máximo do ficheiro';
 $string['countfiles'] = '{$a} ficheiros';
 $string['default'] = 'Ativo por predefinição';
+$string['defaultacceptedfiletypes'] = 'Tipos de ficheiros aceites por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método estará ativo por predefinição para todos os novos trabalhos.';
 $string['enabled'] = 'Submissão de ficheiros';
 $string['enabled_help'] = 'Se ativo, os alunos podem  submeter um ou mais ficheiros quando submetem o seu trabalho.';
@@ -47,5 +48,6 @@ $string['maximumsubmissionsize_help'] = 'Os ficheiros enviados pelos alunos não
 $string['nonexistentfiletypes'] = 'Os seguintes tipos de ficheiro não foram reconhecidos: {$a}';
 $string['numfilesforlog'] = 'O número de ficheiro(s): {$a} ficheiro(s).';
 $string['pluginname'] = 'Submissão de ficheiros';
+$string['privacy:metadata:filepurpose'] = 'Os ficheiros carregados nesta submissão de trabalho';
 $string['siteuploadlimit'] = 'Limite máximo do site';
 $string['submissionfilearea'] = 'Ficheiros submetidos';

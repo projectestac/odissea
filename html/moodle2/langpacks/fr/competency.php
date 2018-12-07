@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'competency', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,55 @@ $string['planstatusdraft'] = 'Brouillon';
 $string['planstatusinreview'] = 'En cours de validation';
 $string['planstatuswaitingforreview'] = 'En attente de validation';
 $string['pointsrequiredaremet'] = 'Le nombre de points requis est atteint';
+$string['privacy:evidence:action:complete'] = 'Compétence achevée is non évalué';
+$string['privacy:evidence:action:log'] = 'Journal de l\'action';
+$string['privacy:evidence:action:override'] = 'Note de compétence de remplacement';
+$string['privacy:metadata:competency'] = 'Un enregistrement des compétences';
+$string['privacy:metadata:competency_coursecomp'] = 'Un enregistrement des compétences liées à un cours';
+$string['privacy:metadata:competency_coursecompsetting'] = 'Un enregistrement des réglages des compétences dans un cours';
+$string['privacy:metadata:competency_evidence'] = 'Un enregistrement de preuve affectant le statut d\'une compétence';
+$string['privacy:metadata:competency_framework'] = 'Un enregistrement des référentiels de compétences';
+$string['privacy:metadata:competency_modulecomp'] = 'Un enregistrement des compétences liées à un module';
+$string['privacy:metadata:competency_plan'] = 'Un enregistrement des plans de formation';
+$string['privacy:metadata:competency_plancomp'] = 'Un enregistrement des compétences dans un plan de formation';
+$string['privacy:metadata:competency_relatedcomp'] = 'Un enregistrement des relations entre compétences';
+$string['privacy:metadata:competency_template'] = 'Un enregistrement des modèles de plan de formation';
+$string['privacy:metadata:competency_templatecohort'] = 'Un enregistrement des cohortes associées à un modèle de plan de formation';
+$string['privacy:metadata:competency_templatecomp'] = 'Un enregistrement des compétences dans un modèle de plan de formation';
+$string['privacy:metadata:competency_usercomp'] = 'Un enregistrement du statut des compétences d\'un utilisateur';
+$string['privacy:metadata:competency_usercompcourse'] = 'Un enregistrement du statut des compétences d\'un utilisateur dans un cours';
+$string['privacy:metadata:competency_usercompplan'] = 'Un enregistrement du statut des compétences dans un plan de formation';
+$string['privacy:metadata:competency_userevidence'] = 'Un enregistrement des preuves d\'acquis';
+$string['privacy:metadata:competency_userevidencecomp'] = 'Un enregistrement des compétences associées avec des preuves d\'acquis';
+$string['privacy:metadata:core_comments'] = 'Commentaires sur les plans de formation et les compétences';
+$string['privacy:metadata:evidence:action'] = 'Le type d\'action effectuée sur la preuve';
+$string['privacy:metadata:evidence:actionuserid'] = 'L\'utilisateur qui a effectué l\'action';
+$string['privacy:metadata:evidence:desca'] = 'Les paramètres optionnels de la description de preuve traduisible';
+$string['privacy:metadata:evidence:desccomponent'] = 'Le composant de la description de preuve traduisible';
+$string['privacy:metadata:evidence:descidentifier'] = 'Un identifiant de la description de la preuve traduisible';
+$string['privacy:metadata:evidence:grade'] = 'La note associée à la preuve';
+$string['privacy:metadata:evidence:note'] = 'Une annotation non traduite annexée à la preuve';
+$string['privacy:metadata:evidence:url'] = 'Une URL associée à la preuve';
+$string['privacy:metadata:plan:description'] = 'La description du plan de formation';
+$string['privacy:metadata:plan:duedate'] = 'La date limite du plan de formation';
+$string['privacy:metadata:plan:name'] = 'Le nom du plan de formation';
+$string['privacy:metadata:plan:reviewerid'] = 'L\'identifiant du contrôleur du plan de formation';
+$string['privacy:metadata:plan:status'] = 'Le statut du plan de formation';
+$string['privacy:metadata:plan:userid'] = 'L\'identifiant de l\'utilisateur dont c\'est le plan de formation';
+$string['privacy:metadata:timecreated'] = 'La date et l\'heure de la création de l\'enregistrement';
+$string['privacy:metadata:timemodified'] = 'La date et l\'heure de la modification de l\'enregistrement';
+$string['privacy:metadata:usercomp:grade'] = 'La note donnée pour la compétence';
+$string['privacy:metadata:usercomp:proficiency'] = '';
+$string['privacy:metadata:usercomp:reviewerid'] = 'L\'identifiant du contrôleur';
+$string['privacy:metadata:usercomp:status'] = 'Le statut de la compétence';
+$string['privacy:metadata:usercomp:userid'] = 'L\'identifiant de l\'utilisateur dont c\'est la compétence';
+$string['privacy:metadata:userevidence:description'] = 'La description de la preuve';
+$string['privacy:metadata:userevidence:name'] = 'Le nom de la preuve d\'acquis';
+$string['privacy:metadata:userevidence:url'] = 'L\'URL associé à la preuve';
+$string['privacy:metadata:usermodified'] = 'L\'utilisateur qui a créé ou modifié l\'enregistrement';
+$string['privacy:path:plans'] = 'Plans de formation';
+$string['privacy:path:relatedtome'] = 'Lié avec moi';
+$string['privacy:path:userevidence'] = 'Preuve d\'acquis';
 $string['pushcourseratingstouserplans'] = 'Envoyer les évaluations du cours vers les plans de formation individuels';
 $string['pushcourseratingstouserplans_desc'] = 'Valeur par défaut dans les réglages des cours pour la modification des plans de formation individuels lorsque les compétences du cours sont évaluées.';
 $string['syncplanscohorts'] = 'Synchronisation des plans de formation depuis les modèles de plan de cohorte';

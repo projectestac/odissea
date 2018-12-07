@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_ipaddress', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_ipaddress', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_ipaddress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Restriction par adresse IP';
+$string['privacy:metadata'] = 'Le plugin de restriction d\'accès au test Restriction par adresse IP n\'enregistre aucune donnée personnelle.';
 $string['subnetwrong'] = 'Ce test n\'est accessible que depuis certains endroits, et cet ordinateur n\'est pas dans la liste autorisée.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_delaybetweenattempts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Verzögerung zwischen Versuchen';
+$string['privacy:metadata'] = 'Die Verzögerung zwischen Testversuchen speichert keine persönlichen Daten';
 $string['youcannotwait'] = 'Dieser Test wird beendet, bevor Ihnen der Start eines weiteren Versuchs erlaubt wird.';
 $string['youmustwait'] = 'Sie müssen abwarten, bevor Sie eine Wiederholung für diesen Test versuchen dürfen. Sie dürfen einen weiteren Versuch nach {$a} beginnen.';

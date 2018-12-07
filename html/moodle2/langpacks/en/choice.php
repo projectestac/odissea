@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['allowmultiple'] = 'Allow more than one choice to be selected';
 $string['allowupdate'] = 'Allow choice to be updated';
 $string['answered'] = 'Answered';
 $string['atleastoneoption'] = 'You need to provide at least one possible answer.';
-$string['calendarend'] = 'Choice {$a} closes';
-$string['calendarstart'] = 'Choice {$a} opens';
+$string['calendarend'] = '{$a} closes';
+$string['calendarstart'] = '{$a} opens';
 $string['cannotsubmit'] = 'Sorry, there was a problem submitting your choice. Please try again.';
 $string['choice'] = 'Choice';
 $string['choiceactivityname'] = 'Choice: {$a}';
@@ -70,6 +70,10 @@ $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer avail
 $string['full'] = '(Full)';
 $string['havetologin'] = 'You have to log in before you can submit your choice';
 $string['includeinactive'] = 'Include responses from inactive/suspended users';
+$string['indicator:cognitivedepth'] = 'Choice cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Choice activity.';
+$string['indicator:socialbreadth'] = 'Choice social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Choice activity.';
 $string['limit'] = 'Limit';
 $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.
@@ -98,6 +102,7 @@ $string['notenrolledchoose'] = 'Sorry, only enrolled users are allowed to make c
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
 $string['numberofuser'] = 'Number of responses';
 $string['numberofuserinpercentage'] = 'Percentage of responses';
+$string['openafterclose'] = 'You have specified an open date after the close date';
 $string['option'] = 'Option';
 $string['optionno'] = 'Option {no}';
 $string['options'] = 'Options';
@@ -106,6 +111,11 @@ $string['pluginadministration'] = 'Choice administration';
 $string['pluginname'] = 'Choice';
 $string['previewonly'] = 'This is just a preview of the available options for this activity. You will not be able to submit your choice until {$a}.';
 $string['privacy'] = 'Privacy of results';
+$string['privacy:metadata:choice_answers'] = 'Information about the user\'s chosen answer(s) for a given choice activity';
+$string['privacy:metadata:choice_answers:choiceid'] = 'The ID of the choice activity the user is providing answer for';
+$string['privacy:metadata:choice_answers:optionid'] = 'The ID of the option that the user selected.';
+$string['privacy:metadata:choice_answers:timemodified'] = 'The timestamp indicating when the choice was modified by the user';
+$string['privacy:metadata:choice_answers:userid'] = 'The ID of the user answering this choice activity';
 $string['publish'] = 'Publish results';
 $string['publishafteranswer'] = 'Show results to students after they answer';
 $string['publishafterclose'] = 'Show results to students only after the choice is closed';
@@ -130,5 +140,6 @@ $string['spacesleft'] = 'spaces available';
 $string['taken'] = 'Taken';
 $string['userchoosethisoption'] = 'Users who chose this option';
 $string['viewallresponses'] = 'View {$a} responses';
+$string['viewchoices'] = 'View choices';
 $string['withselected'] = 'With selected';
 $string['yourselection'] = 'Your selection';

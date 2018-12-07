@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,8 @@ $string['noticket'] = 'Kein Ticket von box.net empfangen, um die Authentifizieru
 $string['password'] = 'Ihr Kennwort für box.net (wird nicht gespeichert)';
 $string['pluginname'] = 'Box.net
 ';
+$string['privacy:metadata'] = 'Dieses Plugin sendet Daten an einen extern verbundenen Box-Account. Es speichert lokal keine Daten.';
+$string['privacy:metadata:data'] = 'Persönliche Daten über das Portfolio-Subsystem weitergeleitet';
 $string['sendfailed'] = 'Fehler beim Senden von Daten an box.net: {$a}';
 $string['setupinfo'] = 'Einstellungsanleitung';
 $string['setupinfodetails'] = 'Sie erhalten Ihre Client-ID und den Schlüssel für Box.net über die <a href="{$a->servicesurl} "> Box-Entwicklerseite </ a>. Bei den \'Developer Tools\' gehen Sie zu \'Create new application\' und legen eine neue Anwendung für Ihre Moodle-Instanz an. Die Client-ID und der Schlüssel (secret) werden im Abschnitt \'OAuth2 parameters\' angezeigt. Optional können Sie weitere Informationen über Ihre Moodle-Instanz angeben.';

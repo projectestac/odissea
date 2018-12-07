@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_installaddon', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,7 @@ $string['permcheckrepeat'] = 'Check again';
 $string['permcheckresultno'] = 'Plugin type location <em>{$a->path}</em> is not writable';
 $string['permcheckresultyes'] = 'Plugin type location <em>{$a->path}</em> is writable';
 $string['pluginname'] = 'Plugin installer';
+$string['privacy:metadata'] = 'The Plugin installer plugin does not store any personal data.';
 $string['remoterequestalreadyinstalled'] = 'There is a request to install plugin {$a->name} ({$a->component}) version {$a->version} from the Moodle plugins directory on this site. However, this plugin is <strong>already installed</strong> on the site.';
 $string['remoterequestconfirm'] = 'There is a request to install plugin <strong>{$a->name}</strong> ({$a->component}) version {$a->version} from the Moodle plugins directory on this site. If you continue, the plugin ZIP package will be downloaded for validation. Nothing will be installed yet.';
 $string['remoterequestinvalid'] = 'There is a request to install a plugin from the Moodle plugins directory on this site. Unfortunately the request is not valid and so the plugin cannot be installed.';

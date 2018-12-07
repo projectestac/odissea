@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emoticon', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_emoticon', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_emoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Display emoticons as images';
+$string['privacy:metadata'] = 'The Display emoticons as images plugin does not store any personal data.';
 $string['settingformats'] = 'Apply to formats';
 $string['settingformats_desc'] = 'The filter will be applied only if the original text was inserted in one of the selected formats.';

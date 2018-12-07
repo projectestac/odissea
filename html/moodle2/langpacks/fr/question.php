@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -320,6 +320,29 @@ $string['permissionmove'] = 'Déplacer cette question';
 $string['permissionsaveasnew'] = 'Enregistrer ceci en tant que nouvelle question';
 $string['permissionto'] = 'Vous avez les droits d\'accès requis pour :';
 $string['previewquestion'] = 'Prévisualisation de la question : {$a}';
+$string['privacy:metadata:database:question'] = 'Les informations sur une question spécifique.';
+$string['privacy:metadata:database:question_attempts'] = 'Les informations sur une tentative d\'une question spécifique.';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'Une indication que l\'utilisateur a signalé cette question durant la tentative.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Un résumé de la réponse.';
+$string['privacy:metadata:database:question_attempt_step_data'] = 'Les étapes de la tentative de question peuvent comporter des données complémentaires relative à cette étape. Ces données sont enregistrées dans la table step_data.';
+$string['privacy:metadata:database:question_attempt_step_data:name'] = 'Le nom de l\'élément de données.';
+$string['privacy:metadata:database:question_attempt_step_data:value'] = 'La valeur l\'élément de données.';
+$string['privacy:metadata:database:question_attempt_steps'] = 'Chaque tentative de question comporte des étapes indiquant les différentes phases du début à la fin de la tentative et jusqu\'à l\'évaluation. Cette table enregistre les informations de chacune de ces étapes.';
+$string['privacy:metadata:database:question_attempt_steps:fraction'] = 'La note reçue pour cette tentative de question, ramenée à un maximum de 1.';
+$string['privacy:metadata:database:question_attempt_steps:state'] = 'Le statut de l\'étape de la tentative de la question à la fin de la transition entre étapes.';
+$string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'La date et l\'heure du début de la transition vers cette étape.';
+$string['privacy:metadata:database:question_attempt_steps:userid'] = 'L\'utilisateur qui a effectué la transition d\'étape.';
+$string['privacy:metadata:database:question_attempts:timemodified'] = 'La date et l\'heure de la modification de la tentative de la question.';
+$string['privacy:metadata:database:question:createdby'] = 'L\'utilisateur qui a créé la question.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'Le feedback général pour cette question.';
+$string['privacy:metadata:database:question:modifiedby'] = 'L\'utilisateur qui a modifié la question en dernier.';
+$string['privacy:metadata:database:question:name'] = 'Le nom de la question.';
+$string['privacy:metadata:database:question:questiontext'] = 'Le texte de la question.';
+$string['privacy:metadata:database:question:timecreated'] = 'La date et l\'heure de la création de la question.';
+$string['privacy:metadata:database:question:timemodified'] = 'La date et l\'heure de la modification de la question.';
+$string['privacy:metadata:link:qbehaviour'] = 'Le sous-système Question utilise le type de plugin Comportement de question.';
+$string['privacy:metadata:link:qformat'] = 'Le sous-système Question utilise le type de plugin format de question pour importer et exporter les questions dans différents formats.';
+$string['privacy:metadata:link:qtype'] = 'Le sous-système Question interagit avec le type de plugin Type de question, qui contient les différentes types de question.';
 $string['published'] = 'partagée';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">La question « {$a->name} » ({$a->qtype})</a> est dans cette catégorie, mais est aussi utilisée dans le <a href="{$a->qurl}">test « {$a->quizname} »</a> dans le cours « {$a->coursename} ».';
@@ -378,6 +401,7 @@ $string['specificfeedback_help'] = 'Feedback dépendant de la réponse donnée p
 $string['started'] = 'Commencé';
 $string['state'] = 'État';
 $string['step'] = 'Étape';
+$string['steps'] = 'Étapes';
 $string['stoponerror'] = 'Stopper en cas d\'erreur';
 $string['stoponerror_help'] = 'Ce réglage détermine si le processus d\'importation s\'arrête lorsqu\'une erreur est détectée. Dans ce cas, aucune question n\'est importée. Sinon, les questions contenant des erreurs sont ignorées et seules les questions valides sont importées.';
 $string['submissionoutofsequence'] = 'Accès hors séquence. Merci de ne pas cliquer sur le bouton retour de votre navigateur lorsque vous travaillez sur les questions de tests.';

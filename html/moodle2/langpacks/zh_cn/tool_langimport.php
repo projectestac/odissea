@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,6 @@ $string['missinglangparent'] = '缺少语言参数。<em>{$a->lang}</em>的<em>{
 $string['nolangupdateneeded'] = '您的语言包已经是最新的了，不需要升级。';
 $string['pluginname'] = '语言包';
 $string['purgestringcaches'] = '清除字符串缓存';
-$string['remotelangnotavailable'] = '由于 Moodle 无法连接到 download.moodle.org，我们无法自动完成语言包的安装。请从 <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> 下载相应的 zip 文件，并将它们复制到 {$a} 目录中解压。';
 $string['uninstall'] = '卸载选择的语言包';
 $string['uninstallconfirm'] = '您准备要完全卸载语言包{$a}，您确定吗？';
 $string['updatelangs'] = '更新所有已安装的语言包';

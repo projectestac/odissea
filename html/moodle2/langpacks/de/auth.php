@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,10 @@ $string['auth_data_mapping'] = 'Datenzuordnung';
 $string['authenticationoptions'] = 'Authentifizierungsoptionen';
 $string['auth_fieldlock'] = 'Feld sperren';
 $string['auth_fieldlock_expl'] = '<p><b>Feld sperren:</b> Wenn diese Option aktiviert ist, verhindert Moodle die Änderung des Feldinhalts. Dies ist sinnvoll, wenn die Daten in einer externen Datenbank verwaltet werden. </p>';
+$string['auth_fieldlockfield'] = 'Feld sperren ({$a})';
 $string['auth_fieldlocks'] = 'Nutzerdatenfelder sperren';
 $string['auth_fieldlocks_help'] = '<p>Sie können Datenfelder im Nutzerprofil sperren. Dies ist sinnvoll, wenn die Nutzerdaten von Administratoren gepflegt werden, manuell angelegt oder im Bulkupload (Hochladen über Textdatei) hochgeladen werden. Falls Sie von Moodle benötigte Datenfelder sperren, müssen Sie sicher stellen, dass diese Datenfelder beim Anlegen der Nutzerprofile sinnvoll belegt werden.</p><p>Um Probleme zu vermeiden, achten Sie darauf, dass die Einstellung auf "Bearbeitbar (wenn leer)" gesetzt ist.</p>';
+$string['auth_fieldmapping'] = 'Daten übernehmen ({$a})';
 $string['authinstructions'] = 'Wenn dieses Textfeld leer ist, wird auf der Anmeldeseite der Standardtext angezeigt. Falls Sie eine eigene Anleitung anbieten möchten, welche Anmeldenamen und Kennwörter verwendet werden sollen, schreiben Sie hier Ihren Text.';
 $string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie versuchen, die Änderung Ihrer E-Mail-Adresse zu bestätigen, haben Sie eventuell einen Fehler beim Kopieren der zugesandten URL gemacht. Bitte kopieren Sie die URL noch einmal und versuchen es erneut.';
 $string['authloginviaemail'] = 'Anmeldung mit E-Mail erlauben';
@@ -61,13 +63,16 @@ $string['auth_sync_suspended'] = 'Die Option legt fest, dass das Ausblendemerkma
 $string['auth_sync_suspended_key'] = 'Status von lokalen Nutzerkonten synchronisieren';
 $string['auth_updatelocal'] = 'Lokal aktualisieren';
 $string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal von extern (external auth) aktualisiert, wenn der Teilnehmer sich einloggt oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
+$string['auth_updatelocalfield'] = 'Lokal aktualisieren ({$a})';
 $string['auth_updateremote'] = 'Extern aktualisieren';
 $string['auth_updateremote_expl'] = '<p><b>Extern aktualisieren:</b> Wenn diese Option aktiviert ist, wird die externe Datenbank aktualisiert, sobald der Nutzerdatensatz aktualisiert wird. Die Felder sollten bearbeitbar bleiben, um Datenänderungen zuzulassen.</p>';
+$string['auth_updateremotefield'] = 'Extern aktualisieren ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Anmerkung:</b> Das Update externer LDAP-Daten erfordert die Einstellung \'binddn\' und \'bindpw\' für einen Bind-Nutzer mit Schreibrechten für alle Nutzerdatensätze. Aktuell werden mehrfach gesetzte Eigenschaften nicht unterstützt und die zusätzlichen Werte bei einem Update entfernt.</p>';
 $string['auth_user_create'] = 'Nutzererstellung aktivieren';
 $string['auth_user_creation'] = 'Neue (anonyme) Nutzer können Nutzerkonten außerhalb der Authentifizierungsquelle erstellen und per E-Mail bestätigen. Wenn Sie diese Option aktivieren, müssen Sie außerdem modulspezifische Optionen zur Erstellung neuer Nutzerkonten konfigurieren.';
 $string['auth_usernameexists'] = 'Der Anwendername existiert bereits. Bitte ändern Sie Ihre Eingabe.';
 $string['auto_add_remote_users'] = 'Automatisches Hinzufügen externer Nutzer';
+$string['cannotmapfield'] = 'Das Profilfeld \'{$a->fieldname}\' kann nicht zugeordnet werden, da sein Kurzname \'{$a->shortname}\' zu lang ist. Um die Zuordnung aktivieren zu können, darf der Kurzname des Profilfelds nur {$a->charlimit} Zeichen haben. <a href="{$a->link}">Profilfelder bearbeiten</a>';
 $string['changepassword'] = 'URL zur Kennwortänderung';
 $string['changepasswordhelp'] = 'Hier können Sie eine Adresse angeben, über die die Nutzer ihren Anmeldenamen erfahren und ihr Kennwort zurücksetzen können, sofern sie diese Daten vergessen haben. Diese Option wird als Schaltfläche auf der Anmeldungsseite angeboten. Wenn Sie dieses Feld leer lassen, wird die Option nicht angeboten.';
 $string['chooseauthmethod'] = 'Authentifizierung';
@@ -110,6 +115,7 @@ $string['forgottenpasswordurl'] = 'URL für vergessene Kennwörter';
 $string['getanaudiocaptcha'] = 'Audio-Captcha laden';
 $string['getanimagecaptcha'] = 'Bild-Captcha laden';
 $string['getanothercaptcha'] = 'Neues Captcha laden';
+$string['getrecaptchaapi'] = 'Um reCAPTCHA verwenden zu können, müssen Sie einen API-Schlüssel von <a href=\'https://www.google.com/recaptcha/admin\'> https://www.google.com/recaptcha/admin</a> anfordern.';
 $string['guestloginbutton'] = 'Login für Gäste';
 $string['incorrectpleasetryagain'] = 'Leider falsch! Probieren Sie es nochmal.';
 $string['infilefield'] = 'Erforderliches Feld in Datei';
@@ -137,13 +143,22 @@ $string['plaintext'] = 'Unformatierter Text';
 $string['pluginnotenabled'] = 'Authentifizierungsplugin \'{$a}\' ist nicht aktiviert.';
 $string['pluginnotinstalled'] = 'Authentifizierungsplugin \'{$a}\' ist nicht installiert.';
 $string['potentialidps'] = 'Verwenden Sie Ihr Nutzerkonto bei:';
+$string['privacy:metadata:userpref:createpassword'] = 'Legt fest, dass ein Kennwort für den Nutzer erstellt werden soll';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Legt fest, ob ein Nutzer beim Login das Kennwort ändern soll';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'Anzahl der Fehllogins des Nutzers';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Anzahl der Fehllogins des Nutzers nach seinem letzten erfolgreichen Login';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'Das Datum, an dem der letzte Loginversuch erfolgte';
+$string['privacy:metadata:userpref:loginlockout'] = 'Kennzeicnet, ob ein Nutzeraccount geblockt ist weil er vergebliche Loginversuche hatte und zu welchem Zeitpunkt der Account geblockt wurde';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Kennzeichnet, dass ein Nutzeraccount niemals geblockt werden soll.';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = '\'Kennzeichen\' mit dem ein geblockter Nutzer den Account entsperren kann.';
 $string['recaptcha'] = 'ReCaptcha';
-$string['recaptcha_help'] = 'Das Captcha versucht Missbrauch durch automatisierte Programme zu verhindern. Tragen Sie die Wörter in das Eingabefeld ein, und zwar in der richtigen Reihenfolge und getrennt durch ein Leerzeichen.
+$string['recaptcha_help'] = 'Das Captcha dient dazu, Missbrauch durch automatisierte Programme zu verhindern. Befolgen Sie die Anleitung zur Bestätigung, dass Sie kein Roboter sind. Verschiedene Dinge sind möglich, z.B. eine Box zum Markieren, Buchstaben in einem angezeigten Bild oder eine Reihe zur Auswahl angezeigte Bilder.
 
-Sollten Sie nicht sicher sein, welche Wörter zu sehen sind, holen Sie sich einfach ein neues Captcha oder versuchen Sie es mit einem Audio-Captcha.';
+Sollten Sie nicht sicher sein, wie sie antworten sollen, versuchen Sie es noch einmal mit einem neuen Captcha oder mit einem Audio-Captcha.';
 $string['security_question'] = 'Sicherheitsfrage';
 $string['selfregistration'] = 'Selbstregistrierung';
 $string['selfregistration_help'] = 'Wenn die Selbstregistrierung (z.B. \'E-Mail basiert\') aktiviert ist, können sich alle Personen selbst registrieren und ein Nutzerkonto anlegen. Auf diese Weise könnten aber auch Spammer ein Nutzerkonto erhalten und Einträge in Foren, Blogs oder Profilen  missbrauchen. Um dieses Risiko zu vermeiden, können Sie die Selbstregistrierung ausschalten oder auf bestimmte E-Mail-Domains (z.B. meinefirma.de) beschränken.';
+$string['settingmigrationmismatch'] = 'Fehlende Übereinstimmungen, die bei der Korrektur der Namen in den Plugin-Einstellungen erkannt wurden! Beim Authentifizierungs-Plugin \'{$a->plugin}\' war die Einstellung \'{$a->setting}\' konfiguriert mit dem veralteten Namen \'{$a->legacy}\' und dem aktuellen Namen \'{$a->current}\'. Der letztere Wert wurde als gültig gesetzt, aber Sie sollten dies noch einmal überprüfen.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zum Gast-Login anzeigen oder verbergen. Wenn die Taste verborgen ist, ist ein Gast-Login für die Website nicht erlaubt.';
 $string['stdchangepassword'] = 'Standardseite zur Kennwortänderung nutzen';

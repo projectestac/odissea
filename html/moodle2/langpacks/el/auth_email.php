@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_email', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_emaildescription'] = '<p>Η εγγραφή με χρήση ηλεκτρονικού ταχυδρομείου επιτρέπει σε ένα χρήστη να δημιουργήσει λογαρισμό μέσω του πλήκτρου \'Δημιουργία νέου λογαριασμού\' στη σελίδα σύνδεσης. Στη συνέχεια ο χρήστης λαμβάνει ένα μήνυμα ηλεκτρονικού ταχυδρομείου που περιέχει έναν ασφαλή σύνδεσμο για μια σελίδα για επιβεβαίωση του λογαριασμού. Σε κάθε μελλοντική σύνδεση, απλά ελέγχεται το όνομα χρήστη και ο κωδικός πρόσβασης σε σχέση με τις αποθηκευμένες τιμές στη βάση δεδομένων του Moodle.</p><p>Σημείωση: Εκτός από την ενεργοποίηση του πρόσθετου, η εγγραφή με χρήση ηλεκτρονικού ταχυδρομείου πρέπει επίσης να επιλεγεί από το αναπτυσσόμενο μενού εγγραφής στη σελίδα \'Διαχείριση αυθεντικοποίησης\'.</p>';
+$string['auth_emaildescription'] = 'Η επιβεβαίωση μέσω ηλ. ταχυδρομείου είναι η προκαθορισμένη μέθοδος πιστοποίησης. Όταν ο χρήστης συνδεθεί επιλέγοντας το δικό του όνομα χρήστη και συνθηματικό, αποστέλεται στην ηλ. διεύθυνσή του ένα μήνυμα ηλεκτρονικού ταχυδρομείου για επιβεβαίωση. Αυτό το μήνυμα περιέχει έναν ασφαλή σύνδεσμο για μία σελίδα όπου ο χρήστης μπορεί να επιβεβαιώσει τον λογαριασμό του. Σε κάθε μελλοντική σύνδεση, απλά ελέγχεται το όνομα χρήστη και το συνθηματικό σε σχέση με τις αποθηκευμένες τιμές στη βάση δεδομένων του ΠΗΛΕΑΣ.';
 $string['auth_emailnoemail'] = 'Tried to send you an email but failed!';
-$string['auth_emailrecaptcha'] = 'Adds a visual/audio confirmation form element to the signup page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://recaptcha.net/learnmore.html for more details. <br /><em>PHP cURL extension is required.</em>';
+$string['auth_emailrecaptcha'] = 'Προσθέτει ένα στοιχείο φόρμας για οπτική/ακουστική επιβεβαίωση στην σελίδα αυτο-εγγραφής χρηστών μέσω ηλεκτρονικού ταχυδρομείουs. Αυτό προστατεύει τον ιστότοπό σας από επιθέσεις και συμβάλει και σε ένα αξιόλογο σκοπό. Για περισσότερες λεπτομέρειες  http://recaptcha.net/learnmore.html. <br /><em>Προσοχή! Απαιτείται η επέκταση PHP cURL.</em>';
 $string['auth_emailrecaptcha_key'] = 'Enable reCAPTCHA element';
 $string['auth_emailsettings'] = 'Settings';
-$string['pluginname'] = 'Εγγραφή με χρήση ηλεκτρονικού ταχυδρομείου';
+$string['pluginname'] = 'Πιστοποίηση βασισμένη στο ηλ. ταχυδρομείο.';

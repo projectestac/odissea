@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,6 +88,7 @@ $string['nestedcategories'] = 'Geneste categorieën toestaan';
 $string['nestedcategories_desc'] = 'Indien ingeschakeld zal IMS Enterprice geneste categorieën maken';
 $string['pluginname'] = 'IMS Enterprise bestand';
 $string['pluginname_desc'] = 'Via deze aanmeldingswijze zal er herhaaldelijk gezocht worden naar een speciaal opgemaakt tekstbestand op de plaats die je hier opgeeft. Het bestand moet voldoen aan de IMS Enterprise specificaties en moet personen, groep en lidmaadschap XML-elementen bevatten.';
+$string['privacy:metadata'] = 'De IMS Enterprise bestand aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['processphoto'] = 'Voeg een gebruikersfoto toe aan het profiel';
 $string['processphotowarning'] = 'Waarschuwing: bewerken van afbeeldingen kan je server behoorlijk belasten. Aangeraden wordt om deze optie niet te gebruiken wanneer je grote aantallen leerlingen wil verwerken.';
 $string['restricttarget'] = 'Verwerk alleen datea als volgend doel ie opgegeven';

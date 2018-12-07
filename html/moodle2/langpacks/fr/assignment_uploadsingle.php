@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_uploadsingle', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment_uploadsingle', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment_uploadsingle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Déposer un travail';
+$string['privacy:metadata'] = 'Le plugin Déposer un travail n\'enregistre aucune donnée personnelle.';

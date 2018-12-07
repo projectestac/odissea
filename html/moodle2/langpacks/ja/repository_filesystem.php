@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_filesystem', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['nosubdir'] = 'ここで選択できるようあなたは少なくとも
 $string['path'] = 'サブディレクトリを選択する';
 $string['pluginname'] = 'ファイルシステム';
 $string['pluginname_help'] = 'ローカルディレクトリからリポジトリを作成する';
+$string['privacy:metadata'] = 'ファイルシステムリポジトリプラグインはどのような個人データも保存または転送しません。';
 $string['relativefiles'] = '相対ファイルを許可する';
 $string['relativefiles_desc'] = 'リポジトリのファイルすべてに対して、相対リンクでアクセスできるようにします。';
 $string['root'] = 'ルート';

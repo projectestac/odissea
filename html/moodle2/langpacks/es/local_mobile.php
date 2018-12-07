@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'local_mobile', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   local_mobile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,16 +30,9 @@ $string['allowpermissionsdescription'] = 'Editar el rol Usuario Autenticado y pe
 $string['cannotcreatetoken'] = 'La generación automática de token no está disponible para los administradores del sitio (deben crear una manualmente en el sitio)';
 $string['checkpluginconfiguration'] = 'Comprobar configuración del plugin';
 $string['clickheretolaunchtheapp'] = 'Por favor, haz clic aquí si la aplicación no se abre automáticamente';
-$string['customlangstrings'] = 'Cadenas de lenguaje personalizadas';
-$string['custommenuitems'] = 'Elementos de menú personalizados';
-$string['disabledfeatures'] = 'Características desactivadas';
 $string['enableadditionalservice'] = 'Habilitar el servicio de características adicionales Moodle Mobile';
 $string['enableadditionalservicedescription'] = 'Este servicio debe estar habilitado.';
-$string['forcelogout'] = 'Forzar el cierre de sesión';
 $string['local_mobiledescription'] = 'Extensión que amplía las características del servicio móvil';
 $string['local_mobilesettings'] = 'Ajustes';
-$string['mainmenu'] = 'Menú principal';
-$string['mobilefeatures'] = 'Características en el móvil';
 $string['pluginname'] = 'Características adicionales de Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'La extensión local de Moodle Mobile debe estar habilitada y configurda a fin de poder ejecutar la aplicación';
-$string['remoteaddons'] = 'Extensiones remotas';

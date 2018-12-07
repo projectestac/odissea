@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mentees', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mentees
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['mentees:addinstance'] = '新しいメンティブロックを追加す�
 $string['mentees:myaddinstance'] = '新しいメンティブロックをダッシュボードに追加する';
 $string['newmenteesblock'] = '(新しいメンティブロック)';
 $string['pluginname'] = 'メンティ';
+$string['privacy:metadata'] = 'メンティーブロックは他の場所で保存されたデータのみ表示します。';

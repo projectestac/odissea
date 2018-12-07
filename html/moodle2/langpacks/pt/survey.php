@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,10 @@ $string['guestsnotallowed'] = 'Apenas os utilizadores inscritos têm permissão 
 $string['howlong'] = 'Quanto tempo demorou a completar este inquérito?';
 $string['howlongoptions'] = 'Menos de 1 min, 1 a 2 min, 2 a 3 min, 3 a 4 min, 4 a 5 min, 5 a 10 min, mais de 10';
 $string['ifoundthat'] = 'Achei isso';
+$string['indicator:cognitivedepth'] = 'Compreensão do Inquérito predefinido';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito predefinido.';
+$string['indicator:socialbreadth'] = 'Socialização do Inquérito predefinido';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['introtext'] = 'Texto introdutório';
 $string['invalidsurveyid'] = 'O ID do questionário está incorreto';
 $string['invalidtmptid'] = 'Modelo ID inválido';
@@ -231,6 +235,15 @@ $string['pluginname'] = 'Inquérito predefinido';
 $string['preferred'] = 'Ideal';
 $string['preferredclass'] = 'Turma ideal';
 $string['preferredstudent'] = '{$a} ideal';
+$string['privacy:metadata:analysis'] = 'Resisto da análise das respostas do Inquérito Predefinido.';
+$string['privacy:metadata:analysis:notes'] = 'Notas salvas contra as respostas do utilizador.';
+$string['privacy:metadata:analysis:userid'] = 'O ID do utilizador a responder ao Inquérito predefinido.';
+$string['privacy:metadata:answers'] = 'A coleção de respostas a Inquérito predefinido.';
+$string['privacy:metadata:answers:answer1'] = 'Campo para armazenar a resposta a uma questão.';
+$string['privacy:metadata:answers:answer2'] = 'Campo adicional para armazenar a resposta a uma pergunta.';
+$string['privacy:metadata:answers:question'] = 'A pergunta.';
+$string['privacy:metadata:answers:time'] = 'A hora em que a resposta foi escrita.';
+$string['privacy:metadata:answers:userid'] = 'O ID do utilizador que submeteu a resposta.';
 $string['question'] = 'Pergunta';
 $string['questions'] = 'Perguntas';
 $string['questionsnotanswered'] = 'Algumas perguntas de escolha múltipla não foram respondidas.';

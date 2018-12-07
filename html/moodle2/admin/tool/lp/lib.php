@@ -183,7 +183,7 @@ function tool_lp_coursemodule_edit_post_actions($data, $course) {
 
     $existingids = array();
     foreach ($existing as $cmc) {
-        array_push($existingids, $cmc->get_competencyid());
+        array_push($existingids, $cmc->get('competencyid'));
     }
 
     $newids = isset($data->competencies) ? $data->competencies : array();
@@ -207,4 +207,13 @@ function tool_lp_coursemodule_edit_post_actions($data, $course) {
     }
 
     return $data;
+}
+
+/**
+ * Map icons for font-awesome themes.
+ */
+function tool_lp_get_fontawesome_icon_map() {
+    return [
+        'tool_lp:url' => 'fa-external-link'
+    ];
 }

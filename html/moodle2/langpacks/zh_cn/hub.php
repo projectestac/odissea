@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hub', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -143,6 +143,7 @@ $string['private'] = '私有的';
 $string['privatehuburl'] = '私有中心服务器网址';
 $string['publicationinfo'] = '课程发布信息';
 $string['publichub'] = '公共中心服务器';
+$string['publish'] = '发布';
 $string['publishcourse'] = '发布“{$a}”';
 $string['publishcourseon'] = '发布到{$a}';
 $string['publishedon'] = '已发布在';

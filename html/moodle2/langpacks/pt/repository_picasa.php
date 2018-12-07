@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_picasa', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,4 +30,6 @@ $string['configplugin'] = 'Configurações repositório "Picasa"';
 $string['oauthinfo'] = '<p>Para utilizar este modulo será necessário registar o seu site com o Google, como descrito na documentação  <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do processo de registo, será necessário digitar o seguinte URL \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um  ID de cliente e uma Chave secreta que podem ser utilizados para configurar todos os módulos Google Drive e Picasa.</p>';
 $string['picasa:view'] = 'Ver repositório Picasa';
 $string['pluginname'] = 'Picasa';
+$string['privacy:metadata:repository_picasa'] = 'O módulo repositório Picasa web album não armazena dados pessoais, mais transmite dados do utilizador do Moodle para o sistema remoto.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'Pesquisa de texto do utilizador no repositório Picasa.';
 $string['secret'] = 'Senha';

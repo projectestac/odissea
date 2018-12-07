@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,7 @@ $string['unitmandatory'] = 'Obligatori';
 $string['unitmandatory_help'] = '* La resposta serà qualificada utilitzant la resposta escrita.
 
 * Es penalitzarà si el camp està buit.';
-$string['unitnotselected'] = 'Cal que seleccioneu una resposta';
+$string['unitnotselected'] = 'Cal que seleccioneu una unitat.';
 $string['unitonerequired'] = 'Cal que introduïu almenys una unitat';
 $string['unitoptional'] = 'Pregunta opcional';
 $string['unitoptional_help'] = '* Si el camp no està buit, la resposta es qualificarà utilitzant aquesta resposta.

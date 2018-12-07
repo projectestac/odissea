@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,8 @@ $string['default'] = '默认';
 $string['disabled'] = '关闭';
 $string['disabled_help'] = 'Cron不会执行被关闭的工作安排，但它们仍然可由CLI工具手动执行。';
 $string['edittaskschedule'] = '编辑计划任务：{$a}';
+$string['enablerunnow'] = '允许“现在运行”预定的任务';
+$string['enablerunnow_desc'] = '允许管理员立即运行一个单独的预定任务，而不是等待它按照计划运行。该任务在web服务器上运行，因此一些站点可能希望禁用该特性，以避免潜在的性能问题。';
 $string['faildelay'] = '故障延迟';
 $string['lastruntime'] = '最后运行';
 $string['nextruntime'] = '下次运行';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_password', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_password', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_password
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'Sartutako pasahitza ez da zuzena';
-$string['pluginname'] = 'Pasahitzaren bidez sartzeko araua';
+$string['pluginname'] = 'Pasahitzaren bidezko sarbide-araua';
+$string['privacy:metadata'] = 'Pasahitzaren bidezko galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['quizpassword'] = 'Galdetegiaren pasahitza';
 $string['requirepasswordmessage'] = 'Galdetegi hau egiten saiatzeko galdetegiko pasahitza jakin behar duzu';

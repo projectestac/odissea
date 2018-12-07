@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,8 @@ $string['browsed'] = 'Visitato';
 $string['browsemode'] = 'Modalità anteprima';
 $string['browserepository'] = 'Visita repository';
 $string['calculatedweight'] = 'Peso calcolato';
+$string['calendarend'] = '{$a} chiude';
+$string['calendarstart'] = '{$a} apre';
 $string['cannotaccess'] = 'Non è possibile chiamare lo script in quel modo';
 $string['cannotfindsco'] = 'SCO non trovato';
 $string['chooseapacket'] = 'Scegli o aggiorna un pacchetto';
@@ -83,17 +85,20 @@ $string['collapsetocwinsizedesc'] = 'Consente di impostare la dimensione minima 
 $string['compatibilitysettings'] = 'Impostazioni di compatibilità';
 $string['completed'] = 'Completato';
 $string['completionscorerequired'] = 'Punteggio minimo richiesto';
+$string['completionscorerequireddesc'] = 'Per completare l\'attività è necessario n punteggio minimo di {$a}';
 $string['completionscorerequired_help'] = 'Un utente, oltre a soddisfare eventuali altri criteri di completamento, dovrà raggiungere il punteggio impostato per completare l\'attività SCORM.';
 $string['completionstatusallscos'] = 'Tutti gli SCO devono riportare lo stato';
 $string['completionstatusallscos_help'] = 'Alcuni pacchetti SCORM sono composti da più SCO. Abilitando questa impostazione tutti gli SCO dovranno riportare lo stato prescelto affinché l\'attiivtà possa risultare completata.';
 $string['completionstatus_completed'] = 'Completed';
 $string['completionstatus_passed'] = 'Passed';
 $string['completionstatusrequired'] = 'Stato richiesto';
+$string['completionstatusrequireddesc'] = 'Lo studente dovrà ottenere almeno uno dei seguenti stati: {$a}';
 $string['completionstatusrequired_help'] = 'Affinché l\'attività SCORM venga contrassegnata come completata, oltre a soddisfare gli eventuali altri criteri di completamento, lo studente dovrà ottenere almeno uno degli stati richiesti.';
 $string['confirmloosetracks'] = 'ATTENZIONE: Il pacchetto sembra cambiato o modificato. Se la struttura del pacchetto è cambiata, alcuni tracciamenti degli utenti potrebbero andare persi durante il processo di aggiornamento.';
 $string['contents'] = 'Contenuti';
 $string['coursepacket'] = 'Pacchetto del corso';
 $string['coursestruct'] = 'Struttura del corso';
+$string['crontask'] = 'Elaborazioni in background per gli SCORM';
 $string['currentwindow'] = 'Stessa finestra';
 $string['datadir'] = 'Errore filesystem: non è possibile creare la cartella dei dati del corso';
 $string['defaultdisplaysettings'] = 'Impostazioni di visualizzazione di default';
@@ -193,6 +198,10 @@ $string['hidetoc_help'] = 'La modalità di visualizzazione della struttura del c
 $string['highestattempt'] = 'Tentativo migliore';
 $string['identifier'] = 'Identificativo domanda';
 $string['incomplete'] = 'Incompleto';
+$string['indicator:cognitivedepth'] = 'SCORM cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'SCORM\'.';
+$string['indicator:socialbreadth'] = 'SCORM sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'SCORM\'.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interazioni';
 $string['invalidactivity'] = 'L\'attività SCORM è errata';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_coursefiles', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_coursefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['emptyfilelist'] = 'Er zijn geen bestanden om te tonen';
 $string['notitle'] = 'Geen titel';
 $string['pluginname'] = 'Verouderde cursusbestanden';
 $string['pluginname_help'] = 'Verouderde cursusbestanden';
+$string['privacy:metadata'] = 'De verouderde cursusbestanden opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['remember'] = 'Mij onthouden';

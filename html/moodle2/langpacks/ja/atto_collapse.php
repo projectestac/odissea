@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_collapse', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_collapse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '拡張ボタンを表示/非表示にする';
+$string['privacy:metadata'] = 'atto_collapseプラグインはどのような個人データも保存しません。';
 $string['settings'] = '折りたたみツールバー設定';
 $string['showfewer'] = 'ボタンを少なく表示する';
 $string['showgroups'] = '折りたたみ時に最初の (n) グループを表示する';

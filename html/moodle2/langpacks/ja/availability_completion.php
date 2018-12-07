@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_completion', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['option_fail'] = '不合格で完了する必要あり';
 $string['option_incomplete'] = '完了マークされない必要あり';
 $string['option_pass'] = '合格で完了する必要あり';
 $string['pluginname'] = '活動完了による制限';
+$string['privacy:metadata'] = '活動完了による制限プラグインはどのような個人データも保存しません。';
 $string['requires_complete'] = '活動「 <strong>{$a}</strong> 」が完了マークされた場合';
 $string['requires_complete_fail'] = '活動「 <strong>{$a}</strong> 」が完了して不合格の場合';
 $string['requires_complete_pass'] = '活動「 <strong>{$a}</strong> 」が完了して合格の場合';

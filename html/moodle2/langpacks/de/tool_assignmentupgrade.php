@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['notsupported'] = ' ';
 $string['notupgradedintro'] = 'Diese Seite zeigt eine Liste der Aufgaben, die mit einem älteren Moodle erstellt und noch nicht in das neue Aufgabenformat von Moodle 2.3 aktualisiert wurden. Nicht alle Aufgaben können umgewandelt werden - falls ein angepasster Aufgabentyp verwendet wurde, muss zuerst der Typ auf das neue Format angepasst werden, um die Aktualisierung durchführen zu können.';
 $string['notupgradedtitle'] = 'Nicht aktualisierte Aufgaben';
 $string['pluginname'] = 'Aufgaben-Update';
+$string['privacy:metadata:preference:perpage'] = 'Einstellung für das Upgrade des Aufgabenplugins der Datensätze/Seite für Nutzer';
 $string['select'] = 'Auswählen';
 $string['submissions'] = 'Einreichungen';
 $string['supported'] = 'Aktualisieren';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,26 +33,26 @@ $string['atleastoneoption'] = 'Θα πρέπει να δώσετε τουλάχ�
 $string['choice'] = 'Επιλογή {$a}';
 $string['choiceactivityname'] = 'Επιλογή: {$a}';
 $string['choice:choose'] = 'Καταγραφή επιλογής';
-$string['choiceclose'] = 'Επέτρεψε απαντήσεις μέχρι';
-$string['choice:deleteresponses'] = 'Τροποποίηση και διαγραφή απαντήσεων';
-$string['choice:downloadresponses'] = 'Κατέβασμα απαντήσεων';
+$string['choiceclose'] = 'Μέχρι';
+$string['choice:deleteresponses'] = 'Διαγραφή απαντήσεων';
+$string['choice:downloadresponses'] = 'Λήψη απαντήσεων';
 $string['choicefull'] = 'Δεν υπάρχουν διαθέσιμες επιλογές για σας.';
 $string['choicename'] = 'Επιλογή όνομα';
-$string['choiceopen'] = 'Επέτρεψε απαντήσεις από';
+$string['choiceopen'] = 'Ανοιχτό';
 $string['choiceoptions_help'] = '<p align="center"><b>Διαθέσιμες επιλογές</b></p>
 
 <p>Εδώ καθορίζετε τις επιλογές ανάμεσα από τις οποίες πρέπει να επιλέξουν οι μαθητές.</p>
 
 <p>Μπορείτε να συμπληρώσετε οποιοδήποτε αριθμό από αυτές. δεν υπάρχει πρόβλημα να αφήσετε
 μερικές επιλογές κενές εάν δεν τις χρειάζεστε όλες.</p>';
-$string['choice:readresponses'] = 'Προβολή απαντήσεων';
+$string['choice:readresponses'] = 'Ανάγνωση απαντήσεων';
 $string['choicesaved'] = 'Η επιλογή σας καταγράφηκε';
 $string['choicetext'] = 'Επιλογή κείμενο';
 $string['chooseaction'] = 'Επέλεξε μία ενέργεια ...';
 $string['chooseoption'] = 'Επιλογή: {$a}';
 $string['description'] = 'Κείμενο εισαγωγής';
 $string['displayhorizontal'] = 'Οριζόντια προβολή';
-$string['displaymode'] = 'Τρόπος εμφάνισης για τις επιλογές';
+$string['displaymode'] = 'Τρόπος εμφάνισης';
 $string['displayvertical'] = 'Κάθετη προβολή';
 $string['expired'] = 'Η δραστηριότητα αυτή έκλεισε στις {$a} και δεν είναι πλέον διαθέσιμη';
 $string['full'] = '(Πλήρες)';
@@ -81,7 +81,7 @@ $string['option'] = 'Επιλογή';
 $string['optionno'] = 'Επιλογή {no}';
 $string['options'] = 'Επιλογές';
 $string['pluginname'] = 'Επιλογή';
-$string['privacy'] = 'Ιδιωτικότητα αποτελεσμάτων';
+$string['privacy'] = 'Μυστικότητα αποτελεσμάτων';
 $string['publish'] = 'Δημοσιοποίηση αποτελεσμάτων';
 $string['publishafteranswer'] = 'Εμφάνιση αποτελεσμάτων στο μαθητή αφού απαντήσει';
 $string['publishafterclose'] = 'Εμφάνιση αποτελεσμάτων στους μαθητές όταν κλείσει η επιλογή';

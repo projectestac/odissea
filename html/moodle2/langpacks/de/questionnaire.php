@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'questionnaire', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,8 @@ $string['alreadyfilled'] = 'Sie haben diese Befragung bereits ausgefüllt. {$a}'
 $string['andaveragevalues'] = 'und durchschnittliche Werte';
 $string['anonymous'] = 'Anonym';
 $string['answer'] = 'Antwort';
+$string['answergiven'] = 'Diese Antwort gegeben';
+$string['answernotgiven'] = 'Diese Antwort nicht gegeben';
 $string['answerquestions'] = 'Beantworten Sie die Fragen ...';
 $string['answers'] = 'Antworten';
 $string['attempted'] = 'Der Fragebogen wurde abgegeben.';
@@ -81,6 +83,7 @@ $string['closedate_help'] = 'Sie können hier ein Abgabedatum für den Frageboge
 Teilnehmer werden den Fragebogen nach diesem Zeitpunkt nicht mehr ausfüllen können. Wenn hier keine Angabe gemacht wird, wird der Fragebogen nie geschlossen.';
 $string['closeson'] = 'Befragung schließt am {$a}';
 $string['completionsubmit'] = 'Teilnehmer müssen den Frageboten einreichen um ihn zu beenden';
+$string['condition'] = 'Bedingung';
 $string['confalts'] = '---oder--- <br />Bestätigungsseite';
 $string['configmaxsections'] = 'Maximale Feedback-Stufen';
 $string['configusergraph'] = 'Zeigen Sie die Grafiken für das "Personality Test"-Feedback';
@@ -113,8 +116,10 @@ $string['deletedisabled'] = 'Diese Objekt kann nicht gelöscht werden';
 $string['deletedresp'] = 'Antwort löschen';
 $string['deleteresp'] = 'Diese Antwort löschen';
 $string['deletingresp'] = 'Antort wird gelöscht';
+$string['dependencies'] = 'Abhängigkeiten';
 $string['dependquestion'] = 'Übergeordnete Frage';
 $string['dependquestion_help'] = 'Sie können eine übergeordnete Frage und eine Auswahlmöglichkeit für die Frage wählen. Eine untergeordnete Frage wird Nutzer/innen nur dargestellt wenn die übergeordnete Frage und die Wahlmöglichkeit vorher ausgewählt wurden.';
+$string['directwarnings'] = 'Direkte Abhängigkeiten zu dieser Frage werden entfernt. Dies wird betreffen:';
 $string['displaymethod'] = 'Anzeigemethode für Frage nicht definiert';
 $string['download'] = 'Herunterladen';
 $string['downloadtextformat'] = 'Im Text-Format herunterladen';
@@ -207,6 +212,7 @@ $string['includechoicetext'] = 'Auswahltext einbeziehen';
 $string['incorrectcourseid'] = 'Falsche Kurs-ID';
 $string['incorrectmodule'] = 'Falsche Kursmodul-ID';
 $string['incorrectquestionnaire'] = 'Falsche Befragung';
+$string['indirectwarnings'] = 'Diese Liste zeigt die indirekt abhängigen Fragen und die verbleibenden Abhängigkeiten für direkt abhängige Fragen:';
 $string['invalidresponse'] = 'Falsche Antwort angegeben';
 $string['invalidresponserecord'] = 'Falscher Antwortdatensatz angegeben';
 $string['invalidsurveyid'] = 'Falsche Befragungs-ID';
@@ -216,6 +222,7 @@ $string['lastrespondent'] = 'Letze Abgabe';
 $string['length'] = 'Länge';
 $string['managequestions'] = 'Fragen bearbeiten';
 $string['managequestions_help'] = 'In der "Fragen bearbeiten"-Sektion der "Frage hinzufügen"-Seite können Sie mehre Aktionen an den Fragebogen-Fragen vornehmen.';
+$string['mandatory'] = 'Verpflichtend - Alle diese Abhängigkeiten müssen erfüllt sein.';
 $string['maxdigitsallowed'] = 'Max. erlaubte Ziffern';
 $string['maxdigitsallowed_help'] = 'Durch die Verwendung von Max. erlaubte Ziffern und Anzahl der Nachkomastellen können Sie die Länge und Anzahl der geforderten Nachkommastellen bestimmen.';
 $string['maxforcedresponses'] = 'Max. geforderte Antworten';
@@ -245,7 +252,7 @@ $string['myresponsetitle'] = 'Ihre {$a} Antworten';
 $string['myresults'] = 'Ihre Ergebnisse';
 $string['name'] = 'Name';
 $string['navigate'] = 'Verzweigte Fragen erlauben';
-$string['navigate_help'] = 'Aktivieren Sie die Option, dass Ja/Nein-Fragen und Radio-Button-Fragen abhängig von ihrer Auswahl weitere Fragen sichtbar oder unsichtbar schalten.';
+$string['navigate_help'] = 'Aktivieren Sie diese Option, damit Ja/Nein-Fragen, Radio-Button-Fragen und Mehrfachauswahlfragen abhängig von den gegebenen Antworten weitere Fragen sichtbar oder unsichtbar schalten.';
 $string['next'] = 'Weiter';
 $string['nextpage'] = 'Nächste Seite';
 $string['nlines'] = '{$a} Zeilen';
@@ -273,6 +280,7 @@ $string['notifications_help'] = 'Rollen, die bei einer Abgabe benachrichtigt wer
 $string['notificationsimple'] = 'Nur Benachrichtigung';
 $string['notopen'] = 'Diese Befragung steht ab {$a} zur Verfügung.';
 $string['notrequired'] = 'Antwort ist nicht erforderlich';
+$string['notset'] = 'nicht gewählt';
 $string['not_started'] = 'nicht gestartet';
 $string['nousersselected'] = 'Keine Teilnehmer/innen ausgewählt';
 $string['num'] = 'Nr.';
@@ -291,6 +299,7 @@ $string['opendate'] = 'Startdatum verwenden';
 $string['opendate_help'] = 'Hier können Sie ein Anfangszeitpunkt für den Fragebogen festlegen. Markieren Sie das Feld und wählen Sie die gewünschte Datum und Uhrzeit.
 Teilnhemer können vor dem angegebenen Zeitpunkt den Fragebogen nicht ausfüllen. Ohne Angabe steht der Fragebogen sofort zur Verfügung.';
 $string['option'] = 'Option {$a}';
+$string['optional'] = 'Optional - Mindestens eine dieser Abhängigkeiten muss erfüllt sein.';
 $string['optionalname'] = 'Name der Frage';
 $string['optionalname_help'] = 'Der Fragetitel wird nur benutzt, wenn Sie die Antworten in das CSV/Excel-Format exportieren. Wenn Sie diese Funktion nicht verwenden, müssen Sie sich über die Fragetitel keine Gedanken machen. Wenn Sie einen regelmäßigen Export der Daten ins CSV-Format Planen, haben Sie die Wahl von zwei';
 $string['or'] = '---oder---';
@@ -317,6 +326,7 @@ $string['overviewnumrespvw1'] = 'Antwort';
 $string['owner'] = 'Ersteller';
 $string['page'] = 'Seite';
 $string['pageof'] = 'Seite {$a->page} von {$a->totpages}';
+$string['parent'] = 'Vorläufer';
 $string['participant'] = 'Teilnehmer/in';
 $string['pleasecomplete'] = 'Bitte Auswahl vervollständigen';
 $string['pluginadministration'] = 'Befragungsadministration';
@@ -437,6 +447,7 @@ $string['sendemail_help'] = 'Sendet eine Kopie jeder Einsendung an die angegeben
 Für kein zusätzliches Mail-Backup lassen Sie dieses Feld leer.';
 $string['send_message'] = 'Ausgewählten Teilnehmer/innen eine Nachricht senden';
 $string['send_message_to'] = 'Nachricht senden an:';
+$string['set'] = 'gewählt';
 $string['settings'] = 'Einstellungen';
 $string['settingssaved'] = 'Einstellungen gesichert';
 $string['show_nonrespondents'] = 'Nicht-Teilnehmende';

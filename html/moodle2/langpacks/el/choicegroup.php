@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choicegroup', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['choicegroup:addinstance'] = 'Προσθήκη νέας δραστηρι
 $string['choicegroup:choose'] = 'Καταγραφή μιας επιλογής';
 $string['choicegroupclose'] = 'Έως';
 $string['choicegroup:deleteresponses'] = 'Διαγραφή απαντήσεων';
-$string['choicegroup:downloadresponses'] = 'Μεταφόρτωση απαντήσεων';
+$string['choicegroup:downloadresponses'] = 'Λήψη απαντήσεων';
 $string['choicegroupfull'] = 'Αυτή η επιλογή ομάδας είναι γεμάτη και δεν υπάρχουν διαθέσιμες θέσεις.';
 $string['choicegroupname'] = 'Όνομα επιλογής ομάδας';
 $string['choicegroupopen'] = 'Άνοιγμα';

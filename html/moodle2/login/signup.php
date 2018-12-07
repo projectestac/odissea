@@ -27,19 +27,11 @@
 require('../config.php');
 require_once($CFG->dirroot . '/user/editlib.php');
 require_once($CFG->libdir . '/authlib.php');
-
-// Try to prevent searching for sites that allow sign-up.
-if (!isset($CFG->additionalhtmlhead)) {
-    $CFG->additionalhtmlhead = '';
-}
-$CFG->additionalhtmlhead .= '<meta name="robots" content="noindex" />';
+require_once('lib.php');
 
 if (!$authplugin = signup_is_enabled()) {
     print_error('notlocalisederrormessage', 'error', '', 'Sorry, you may not use this page.');
 }
-
-//HTTPS is required in this page when $CFG->loginhttps enabled
-$PAGE->https_required();
 
 $PAGE->set_url('/login/signup.php');
 $PAGE->set_context(context_system::instance());
@@ -59,7 +51,7 @@ if (isloggedin() and !isguestuser()) {
     // Prevent signing up when already logged in.
     echo $OUTPUT->header();
     echo $OUTPUT->box_start();
-    $logout = new single_button(new moodle_url($CFG->httpswwwroot . '/login/logout.php',
+    $logout = new single_button(new moodle_url('/login/logout.php',
         array('sesskey' => sesskey(), 'loginpage' => 1)), get_string('logout'), 'post');
     $continue = new single_button(new moodle_url('/'), get_string('cancel'), 'get');
     echo $OUTPUT->confirm(get_string('cannotsignup', 'error', fullname($USER)), $logout, $continue);
@@ -67,6 +59,23 @@ if (isloggedin() and !isguestuser()) {
     echo $OUTPUT->footer();
     exit;
 }
+
+// If verification of age and location (digital minor check) is enabled.
+if (\core_auth\digital_consent::is_age_digital_consent_verification_enabled()) {
+    $cache = cache::make('core', 'presignup');
+    $isminor = $cache->get('isminor');
+    if ($isminor === false) {
+        // The verification of age and location (minor) has not been done.
+        redirect(new moodle_url('/login/verify_age_location.php'));
+    } else if ($isminor === 'yes') {
+        // The user that attempts to sign up is a digital minor.
+        redirect(new moodle_url('/login/digital_minor.php'));
+    }
+}
+
+// Plugins can create pre sign up requests.
+// Can be used to force additional actions before sign up such as acceptance of policies, validations, etc.
+core_login_pre_signup_requests();
 
 $mform_signup = $authplugin->signup_form();
 
@@ -80,9 +89,6 @@ if ($mform_signup->is_cancelled()) {
     $authplugin->user_signup($user, true); // prints notice and link to login/index.php
     exit; //never reached
 }
-
-// make sure we really are on the https page when https login required
-$PAGE->verify_https_required();
 
 
 $newaccount = get_string('newaccount');

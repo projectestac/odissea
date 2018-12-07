@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_blog_recent', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['blog_recent:addinstance'] = 'Add a new recent blog entries block';
 $string['norecentblogentries'] = 'No recent entries';
 $string['numentriestodisplay'] = 'Number of recent entries to display';
 $string['pluginname'] = 'Recent blog entries';
+$string['privacy:metadata'] = 'The Recent blog entries block only shows data stored in other locations.';
 $string['recentinterval'] = 'Interval of time considered "recent"';

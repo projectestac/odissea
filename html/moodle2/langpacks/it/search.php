@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'search', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   search
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,7 @@ $string['enginenotselected'] = 'Non hai selezionato nessun motore di ricerca.';
 $string['engineserverstatus'] = 'Il motore di ricerca non è disponibile. Per favore contatta l\'amministratore del sito.';
 $string['enteryoursearchquery'] = 'Parole da cercare';
 $string['errorareanotavailable'] = 'L\'area di ricerca {$a} non è disponibile.';
+$string['error_indexing'] = 'Si è verificato un errore durante l\'indicizzazione';
 $string['errors'] = 'Errori';
 $string['filesinindexdirectory'] = 'Files nella directory indice';
 $string['filterheader'] = 'Filtri';
@@ -78,6 +79,7 @@ $string['normalsearch'] = 'Rierca normale';
 $string['notitle'] = 'Senza titolo';
 $string['openedon'] = 'aperto il';
 $string['optimize'] = 'Ottimizza';
+$string['privacy:metadata'] = 'Il sotto sistema di ricerca non memorizza dati personali.';
 $string['queryerror'] = 'Il motore di ricerca non ha potuto analizzare la query: {$a}';
 $string['resultsreturnedfor'] = 'risultati ottenuti per';
 $string['runindexer'] = 'Eseguire indexer (reale)';

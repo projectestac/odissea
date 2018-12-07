@@ -61,6 +61,9 @@ function add_moduleinfo($moduleinfo, $course, $mform = null) {
     $newcm->instance         = 0; // Not known yet, will be updated later (this is similar to restore code).
     $newcm->visible          = $moduleinfo->visible;
     $newcm->visibleold       = $moduleinfo->visible;
+    if (isset($moduleinfo->visibleoncoursepage)) {
+        $newcm->visibleoncoursepage = $moduleinfo->visibleoncoursepage;
+    }
     if (isset($moduleinfo->cmidnumber)) {
         $newcm->idnumber         = $moduleinfo->cmidnumber;
     }
@@ -608,7 +611,7 @@ function update_moduleinfo($cm, $moduleinfo, $course, $mform = null) {
 
     // Make sure visibility is set correctly (in particular in calendar).
     if (has_capability('moodle/course:activityvisibility', $modcontext)) {
-        set_coursemodule_visible($moduleinfo->coursemodule, $moduleinfo->visible);
+        set_coursemodule_visible($moduleinfo->coursemodule, $moduleinfo->visible, $moduleinfo->visibleoncoursepage);
     }
 
     if (isset($moduleinfo->cmidnumber)) { // Label.
@@ -666,6 +669,7 @@ function get_moduleinfo_data($cm, $course) {
     $data->coursemodule       = $cm->id;
     $data->section            = $cw->section;  // The section number itself - relative!!! (section column in course_sections)
     $data->visible            = $cm->visible; //??  $cw->visible ? $cm->visible : 0; // section hiding overrides
+    $data->visibleoncoursepage = $cm->visibleoncoursepage;
     $data->cmidnumber         = $cm->idnumber;          // The cm IDnumber
     $data->groupmode          = groups_get_activity_groupmode($cm); // locked later if forced
     $data->groupingid         = $cm->groupingid;
@@ -768,6 +772,12 @@ function prepare_new_moduleinfo_data($course, $modulename, $section) {
     $data->id               = '';
     $data->instance         = '';
     $data->coursemodule     = '';
+
+    // Apply completion defaults.
+    $defaults = \core_completion\manager::get_default_completion($course, $module);
+    foreach ($defaults as $key => $value) {
+        $data->$key = $value;
+    }
 
     if (plugin_supports('mod', $data->modulename, FEATURE_MOD_INTRO, true)) {
         $draftid_editor = file_get_submitted_draft_itemid('introeditor');

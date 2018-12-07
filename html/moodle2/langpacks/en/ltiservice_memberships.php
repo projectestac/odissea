@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'ltiservice_memberships', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   ltiservice_memberships
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Memberships LTI Service';
+$string['privacy:metadata:email'] = 'The email of the user using the LTI consumer.';
+$string['privacy:metadata:externalpurpose'] = 'This information is sent to an external LTI provider.';
+$string['privacy:metadata:firstname'] = 'The firstname of the user using the LTI consumer.';
+$string['privacy:metadata:fullname'] = 'The fullname of the user using the LTI consumer.';
+$string['privacy:metadata:lastname'] = 'The lastname of the user using the LTI consumer.';
+$string['privacy:metadata:userid'] = 'The ID of the user using the LTI consumer.';
+$string['privacy:metadata:useridnumber'] = 'The idnumber of the user using the LTI consumer.';
 $string['servicename'] = 'Memberships';

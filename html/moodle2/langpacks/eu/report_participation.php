@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_participation', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   report_participation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['page-report-participation-index'] = 'Ikastaroaren partaidetza-txostena'
 $string['page-report-participation-x'] = 'Edozein partaidetza-txosten';
 $string['participation:view'] = 'Ikastaroaren partaidetza-txostena ikusi';
 $string['pluginname'] = 'Ikastaroaren partaidetza';
+$string['privacy:metadata'] = 'Ikastaroaren partaidetza pluginak ez du datu pertsonalik biltzen.';

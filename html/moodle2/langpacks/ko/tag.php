@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addedotag'] = '공식 태그로 "{$a}"가 추가되었읍니다.';
 $string['addotags'] = '공식 태그 추가';
 $string['addtagtomyinterests'] = '관심분야에 "{$a}" 추가';
 $string['alltagpages'] = '모든 태그 페이지';
@@ -55,7 +54,6 @@ $string['manageofficialtags'] = '공식 태그 관리';
 $string['managetags'] = '태그 관리';
 $string['name'] = '태그 명칭';
 $string['namesalreadybeeingused'] = '이미 있는 태그명칭';
-$string['newname'] = '새 태그명칭';
 $string['noresultsfor'] = '"{$a}"에 대한 결과 없음';
 $string['officialtag'] = '공식 태그';
 $string['otags'] = '공식 태그';
@@ -85,13 +83,8 @@ $string['taggedwith'] = '"{$a}" 태그';
 $string['tags'] = '태그';
 $string['tagsaredisabled'] = '태그를 사용할 수 없음';
 $string['tagtype'] = '태그 형식';
-$string['tagtype_default'] = '기본';
-$string['tagtype_official'] = '공식적인';
 $string['thingstaggedwith'] = '"{$a->name}"이  {$a->count} 번 사용됨';
 $string['thingtaggedwith'] = '"{$a->name}" 가 한차례 사용되었음';
-$string['thistaghasnodesc'] = '이 태그에는 설명이 없음';
 $string['timemodified'] = '수정됨';
 $string['typechanged'] = '태그 형식이 변경됨';
-$string['updated'] = '업데이트됨';
 $string['updatetag'] = '업데이트';
-$string['withselectedtags'] = '선택한 태그';

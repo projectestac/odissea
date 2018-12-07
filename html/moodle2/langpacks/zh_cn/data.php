@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -192,6 +192,10 @@ $string['importsuccess'] = '已成功采用了预设';
 $string['includeapproval'] = '包含审核状态';
 $string['includetime'] = '包含增加时间、修改时间';
 $string['includeuserdetails'] = '包含用户详情';
+$string['indicator:cognitivedepth'] = '数据库活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在数据库活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '数据库活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在数据库活动中所达到的社会宽度。';
 $string['insufficiententries'] = '查看这个数据库需要更多的条目';
 $string['intro'] = '描述';
 $string['invalidaccess'] = '页面访问错误';
@@ -328,6 +332,7 @@ $string['subplugintype_datafield'] = '数据库字段类型';
 $string['subplugintype_datafield_plural'] = '数据库字段类型';
 $string['subplugintype_datapreset'] = '预设';
 $string['subplugintype_datapreset_plural'] = '预设';
+$string['tags'] = '标签';
 $string['teachersandstudents'] = '{$a->teachers} 和 {$a->students}';
 $string['templates'] = '模板';
 $string['templatesaved'] = '模板已保存';

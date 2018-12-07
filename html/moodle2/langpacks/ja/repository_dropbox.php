@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_dropbox', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,7 @@ $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
 $string['notitle'] = 'タイトルなし';
 $string['oauth2redirecturi'] = 'OAuth 2リダイレクトURI';
 $string['pluginname'] = 'Dropbox';
+$string['privacy:metadata:repository_dropbox'] = 'Dropboxリポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata:repository_dropbox:query'] = 'Dropboxリポジトリユーザ検索テキストクエリです。';
 $string['remember'] = '次回から入力を省略する';
 $string['secret'] = 'Dropbox秘密鍵';

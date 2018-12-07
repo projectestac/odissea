@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_glossary_random', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['noentriesyet'] = 'O glossário selecionado não contém qualquer termo.
 $string['notyetconfigured'] = 'Configure este bloco clicando no ícone de edição';
 $string['notyetglossary'] = 'Tem de ter pelo menos um glossário disponível';
 $string['pluginname'] = 'Termo aleatório do glossário';
+$string['privacy:metadata'] = 'O bloco Termo aleatório do glossário apenas mostra dados armazenados noutros locais.';
 $string['random'] = 'Termo aleatório';
 $string['refresh'] = 'Nº de dias que um termo é exibido';
 $string['select_glossary'] = 'Selecionar termos deste glossário';

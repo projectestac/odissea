@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_statistics', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_statistics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,7 +59,7 @@ $string['errorpowerquestions'] = 'Fout bij het ophalen van gegevens om de variat
 $string['errorpowers'] = 'Fout bij het ophalen van gegevens om de variatie op de testresultaten te berekenen';
 $string['errorrandom'] = 'Fout bij het opvragen van gegevens voor het sub item';
 $string['errorratio'] = 'Foutenratio (voor  {$a})';
-$string['errorstatisticsquestions'] = 'Fout bij het bekomen van gegevens om statistieken te berekenen over deze vragen';
+$string['errorstatisticsquestions'] = 'Fout bij het verkrijgen van gegevens om statistieken te berekenen over deze vragen';
 $string['facility'] = 'Gemakkelijkheidsindex';
 $string['firstattempts'] = 'eerste pogingen';
 $string['firstattemptsavg'] = 'Gemiddelde cijfer voor eerste poging';

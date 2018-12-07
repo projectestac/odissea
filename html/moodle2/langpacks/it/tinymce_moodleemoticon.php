@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodleemoticon', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodleemoticon', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodleemoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'Inserimento emoticon';
 $string['pluginname'] = 'Inserimento emoticon';
+$string['privacy:metadata'] = 'Il plugin TinyMCE "Faccine" non memorizza dati personali.';
 $string['requireemoticon'] = 'Richiedi filtro emoticon';
 $string['requireemoticon_desc'] = 'Il pulsante emoticon sarà visibile solo se il filtro emoticon è abilitato nel contesto dell\'editor.';

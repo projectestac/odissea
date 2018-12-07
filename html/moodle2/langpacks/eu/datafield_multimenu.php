@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_multimenu', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_multimenu', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_multimenu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Aukera anitzeko menua';
-$string['pluginname'] = 'Menu anitza';
+$string['pluginname'] = 'Aukera anitzeko menua';
+$string['privacy:metadata'] = 'Menu anitza eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';

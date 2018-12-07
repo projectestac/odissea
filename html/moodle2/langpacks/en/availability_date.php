@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_date', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['full_from_date'] = 'It is on or after <strong>{$a}</strong>';
 $string['full_until'] = 'It is before <strong>{$a}</strong>';
 $string['full_until_date'] = 'It is before end of <strong>{$a}</strong>';
 $string['pluginname'] = 'Restriction by date';
+$string['privacy:metadata'] = 'The Restriction by date plugin does not store any personal data.';
 $string['short_from'] = 'Available from <strong>{$a}</strong>';
 $string['short_from_date'] = 'Available from <strong>{$a}</strong>';
 $string['short_until'] = 'Available until <strong>{$a}</strong>';

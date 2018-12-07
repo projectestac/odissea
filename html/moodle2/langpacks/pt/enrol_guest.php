@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'A senha não está correta, por favor, tente novam
 $string['passwordinvalidhint'] = 'A senha introduzida não está correta, por favor, tente novamente<br />Sugestão: a senha começa por "{$a}"';
 $string['pluginname'] = 'Acesso de visitantes';
 $string['pluginname_desc'] = 'Este módulo apenas permite o acesso temporário às disciplinas, na realidade os utilizadores não são inscritos.';
+$string['privacy:metadata'] = 'O módulo Acesso de visitantes não armazena quaisquer dados pessoais.';
 $string['requirepassword'] = 'Limitar acesso através de senha';
 $string['requirepassword_desc'] = 'A ativação desta configuração define que todas as novas disciplinas que sejam criadas passem a exigir uma senha a visitantes e impede que esse requisito seja removido das disciplinas criadas previamente.';
 $string['showhint'] = 'Mostrar sugestão';

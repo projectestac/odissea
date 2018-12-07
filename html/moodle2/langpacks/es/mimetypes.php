@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mimetypes', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   mimetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['application/vnd.moodle.backup'] = 'Copia de seguridad Moodle';
 $string['application/vnd.ms-excel'] = 'hoja de cálculo Excel';
 $string['application/vnd.ms-powerpoint'] = 'presentación Powerpoint';
 $string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Presentación PowerPoint';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Pase de diapositivas PowerPoint';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Pase de diapositivas PowerPoint 2007';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Hoja de cálculo Excel';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Plantilla Excel';
 $string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Documento Word';
@@ -40,6 +40,7 @@ $string['archive'] = 'Archivo ({$a->EXT})';
 $string['audio'] = 'Archivo de audio ({$a->EXT})';
 $string['default'] = '{$a->mimetype}';
 $string['document/unknown'] = 'Archivo';
+$string['group:web_image'] = 'Formatos de imagen usados para web';
 $string['image'] = 'Imagen ({$a->MIMETYPE2})';
 $string['text/html'] = 'Documento HTML';
 $string['text/plain'] = 'Archivo de texto';

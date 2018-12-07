@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['createpage'] = 'Создать новый ресурс типа «Ст�
 $string['displayoptions'] = 'Доступные опции отображения';
 $string['displayselect'] = 'Отображать';
 $string['displayselectexplain'] = 'Выберите тип отображения.';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Страница.';
 $string['legacyfiles'] = 'Миграция файла из старого курса';
 $string['legacyfilesactive'] = 'Активный';
 $string['legacyfilesdone'] = 'Закончить';

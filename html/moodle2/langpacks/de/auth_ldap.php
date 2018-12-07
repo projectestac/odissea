@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,12 +48,12 @@ $string['auth_ldapdescription'] = '<p>Diese Anmeldemethode ermöglicht die Authe
 <p>Um ein neues LDAP-basiertes Nutzerkonto in Moodle anzulegen, muss vorher das LDAP-Nutzerkonto existieren. Beim ersten Login wird automatisch ein neues Nutzerkonto in der Moodle-Datenbank, wobei Anmeldename und Kennwort vorher von LDAP geprüft werden. Das Modul sorgt dafür, dass ausgewählte Nutzerdaten von LDAP in die Moodle-Datenbank übernommen werden können. Wenn das Kennwort weiterhin ausschließlich von LDAP verwaltet wird, ermöglicht dies einheitliche Anmeldedaten in unterschiedlichen Moodle-Instanzen und bei anderen Servern.</p>
 
 <p>Bei allen weiteren Logins werden weiterhin Anmeldename und Kennwort vom LDAP-Server überprüft.</p>';
-$string['auth_ldap_expiration_desc'] = 'Setzen Sie \'Nein\' (\'no\'), um das Gültigkeitsende für Kennwörter nicht zu prüfen. Wenn Sie \'LDAP\' wählen, wird diese Überprüfung direkt über LDAP abgewickelt.';
-$string['auth_ldap_expiration_key'] = 'Gültigkeitsende';
-$string['auth_ldap_expiration_warning_desc'] = 'Diese Zahl gibt an, wie viele Tage vor dem Gültigkeitsende von Kennwörtern eine Warnung versendet wird.';
-$string['auth_ldap_expiration_warning_key'] = 'Warnung zum Gültigkeitsende';
-$string['auth_ldap_expireattr_desc'] = 'Optional: Überschreibt die LDAP Attribute, die das Ablaufdatum für Kennwörter enthält.';
-$string['auth_ldap_expireattr_key'] = 'Merkmal für Gültigkeitsende';
+$string['auth_ldap_expiration_desc'] = 'Wählen Sie \'{$a->no}\', um den Ablauf von Kennwörtern nicht zu prüfen. Wenn Sie \'{$a->ldapserver}\' wählen, wird Ablaufdatum direkt vom LDAP-Server zu lesen.';
+$string['auth_ldap_expiration_key'] = 'Ablauf';
+$string['auth_ldap_expiration_warning_desc'] = 'Anzahl der Tage, an denen vor dem Ablauf eines Kennwortes eine Warnung ausgegeben wird';
+$string['auth_ldap_expiration_warning_key'] = 'Ablaufwarnung';
+$string['auth_ldap_expireattr_desc'] = 'Optional: Überschreibt die LDAP-Attribute, die das Ablaufdatum für Kennwörter enthalten.';
+$string['auth_ldap_expireattr_key'] = 'Ablaufmerkmal';
 $string['auth_ldapextrafields'] = 'Die folgenden Felder sind optional. Im Nutzerprofil können automatisch einige Moodle-Felder mit ausgewählten Nutzerdaten aus <b>LDAP-Feldern</b> vorbelegt werden. <p>Wenn Sie die nachfolgenden Einträge leer lassen, wird nichts von LDAP übertragen und die Moodle-Voreinstellungen werden verwendet. In diesem Fall muss das Nutzerprofil beim ersten Login selbst fertig ausgefüllt werden.</p> <p>Zusätzlich wird eingestellt, welche Felder im Nutzerprofil bearbeitbar sein sollen.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Optional: Merkmal für GraceLogin ändern';
 $string['auth_ldap_gracelogin_key'] = 'Merkmal für GraceLogin';
@@ -81,9 +81,11 @@ $string['auth_ldap_opt_deref'] = 'Legt fest wie Aliasbezeichnungen bei der Suche
 $string['auth_ldap_opt_deref_key'] = 'Aliase berücksichtigen';
 $string['auth_ldap_passtype'] = 'Geben Sie das Format für neue Kennwörter auf dem LDAP-Server an.';
 $string['auth_ldap_passtype_key'] = 'Kennwortformat';
-$string['auth_ldap_passwdexpire_settings'] = 'Gültigkeitsablauf von LDAP-Kennwörtern';
+$string['auth_ldap_passwdexpire_settings'] = 'Einstellungen zum Ablauf von LDAP-Kennwörtern';
 $string['auth_ldap_preventpassindb'] = 'Wählen Sie \'ja\', um Kennwörter <b>nicht</b> in die Moodle-Datenbank zu übernehmen';
-$string['auth_ldap_preventpassindb_key'] = 'Kennwörter nicht cachen';
+$string['auth_ldap_preventpassindb_key'] = 'Kennwort-Caching verhindern';
+$string['auth_ldap_rolecontext'] = '{$a->localname}-Kontext';
+$string['auth_ldap_rolecontext_help'] = 'Der LDAP-Kontext wird verwendet, um die <i>{$a->localname}</i> Zuordnung vorzunehmen. Trennen Sie verschiedene Gruppen mit \';\'. Normalerweise sieht das so aus: "cn={$a->shortname},ou=staff,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Nutzersuche auch in Subkontexten durchführen';
 $string['auth_ldap_search_sub_key'] = 'Subkontexte';
 $string['auth_ldap_server_settings'] = 'LDAP-Server-Einstellungen';
@@ -95,7 +97,7 @@ $string['auth_ldap_user_attribute'] = 'Optional: Merkmal zur Nutzerbenennung und
 $string['auth_ldap_user_attribute_key'] = 'Nutzermerkmal';
 $string['auth_ldap_user_exists'] = 'LDAP-Anmeldename existiert bereits!';
 $string['auth_ldap_user_settings'] = 'Nutzersuche (user lookup)';
-$string['auth_ldap_user_type'] = 'Wählen Sie, wie die Nutzerdaten in LDAP hinterlegt sind. Diese Einstellungen legen auch fest, wie das Gültigkeitsende für Kennwörter, die GraceLogins und das Anlegen neuer Nutzer in LDAP funktionieren.';
+$string['auth_ldap_user_type'] = 'Wählen Sie, wie Nutzerkonten in LDAP gespeichert werden. Diese Einstellung legt auch fest, wie das Ablaufdatum für Kennwörter, die GraceLogins und das Anlegen neuer Nutzerkonten in LDAP funktionieren.';
 $string['auth_ldap_user_type_key'] = 'Nutzertyp';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type ist nicht definiert oder Funktion ldap_expirationtime2unix unterstützt den ausgewählten Typ nicht!';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type ist nicht definiert oder Funktion ldap_unixi2expirationtime unterstützt den ausgewählten Typ nicht!';
@@ -117,11 +119,14 @@ $string['auth_ntlmsso_subnet'] = 'Tragen Sie in dieses Feld eine Maske für ein 
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
 $string['auth_ntlmsso_type'] = 'Diese Methode ist beim Webserver eingestellt, um Nutzer/innen zu authentifizieren. Falls Sie sich nicht sicher sind, wählen Sie bitte NTLM.';
 $string['auth_ntlmsso_type_key'] = 'Authentifizierungsart';
+$string['cannotmaprole'] = 'Die Rolle \'{$a->rolename}\' kann nicht zugeordnet werden, weil der Kurzname \'{$a->shortname}\' zu lang ist oder Bindestriche enthält. Um die Rolle zuordnen zu können, müssen Sie den Kurznamen auf maximal {$a->charlimit} Zeichen reduzieren und die Bindestriche entfernen. <a href="{$a->link}">Rolle bearbeiten</a>';
 $string['connectingldap'] = 'Verbindung zum LDAP-Server aufbauen...';
+$string['connectingldapsuccess'] = 'Die Verbindung zum LDAP-Server wurde erfolgreich hergestellt.';
 $string['creatingtemptable'] = 'Temporäre Tabelle {$a} erstellen';
 $string['didntfindexpiretime'] = 'Für die Funktion password_expire() wurde kein Gültigkeitsende gefunden';
 $string['didntgetusersfromldap'] = 'Kein Nutzerkonto über LDAP einlesbar! Fehler?';
 $string['gotcountrecordsfromldap'] = '{$a} Datensätze von LDAP eingelesen';
+$string['ldapnotconfigured'] = 'Die URL zum LDAP-Server ist aktuell nicht konfiguriert.';
 $string['morethanoneuser'] = 'Mehr als ein Nutzerkonto in LDAP gefunden! Es wird nur das erste Nutzerkonto verwendet.';
 $string['needbcmath'] = 'Sie benötigen die PHP-Extension BCMath, um das Prüfen abgelaufener Kennwörter mit Active Directory nutzen zu können.';
 $string['needmbstring'] = 'Sie benötigen die PHP-Extension mbstring, um Kennwörter im Active Directory ändern zu können';
@@ -141,15 +146,17 @@ $string['pagesize'] = 'Stellen Sie sicher, dass dieser Wert kleiner ist als die 
 $string['pagesize_key'] = 'Seitengröße';
 $string['pluginname'] = 'LDAP-Server';
 $string['pluginnotenabled'] = 'Plugin nicht aktiviert!';
+$string['privacy:metadata'] = 'Das Plugin \'Authentifizierung LDAP-Server\' speichert keine personenbezogenen Daten.';
 $string['renamingnotallowed'] = 'Namensänderungen sind in LDAP nicht erlaubt';
 $string['rootdseerror'] = 'Fehler bei der rootDSE-Abfrage für das Active Directory';
 $string['start_tls'] = 'LDAP-Service mit TLS (über Port 389) verschlüsseln';
 $string['start_tls_key'] = 'TLS benutzen';
+$string['syncroles'] = 'Systemrollen aus LDAP synchronisieren';
 $string['synctask'] = 'Synchronisierung von LDAP-Nutzerkonten';
+$string['systemrolemapping'] = 'Zuordnung von Systemrollen';
 $string['updatepasserror'] = 'Fehler in der Funktion user_update_password().
 <br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
-$string['updatepasserrorexpire'] = 'Fehler in der Funktion user_update_password() beim Lesen der Gültigkeitsdauer des Kennwortes.
-<br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
+$string['updatepasserrorexpire'] = 'Fehler in der Funktion user_update_password() beim Lesen des Ablaufdatums für das Kennwort. Fehler-Code: {$a->errno}. Fehlertext: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Fehler in der Funktion user_update_password() beim Ändern der Gültigkeitsdauer bzw. des GraceLogins.
 <br />Fehler-Code: {$a->errno}; Fehlertext: {$a->errstring}';
 $string['updateremfail'] = 'Fehler beim Aktualisieren des LDAP-Datensatzes {$a->key}.

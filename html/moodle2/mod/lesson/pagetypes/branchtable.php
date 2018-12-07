@@ -160,6 +160,8 @@ class lesson_page_type_branchtable extends lesson_page {
     public function check_answer() {
         global $USER, $DB, $PAGE, $CFG;
 
+        $result = parent::check_answer();
+
         require_sesskey();
         $newpageid = optional_param('jumpto', null, PARAM_INT);
         // going to insert into lesson_branch
@@ -214,7 +216,10 @@ class lesson_page_type_branchtable extends lesson_page {
         $branch->nextpageid = $newpageid;
         $DB->update_record("lesson_branch", $branch);
 
-        redirect(new moodle_url('/mod/lesson/view.php', array('id' => $PAGE->cm->id, 'pageid' => $newpageid)));
+        // This will force to redirect to the newpageid.
+        $result->inmediatejump = true;
+        $result->newpageid = $newpageid;
+        return $result;
     }
 
     public function display_answers(html_table $table) {
@@ -229,12 +234,12 @@ class lesson_page_type_branchtable extends lesson_page {
                 continue;
             }
             $cells = array();
-            $cells[] = "<span class=\"label\">".get_string("branch", "lesson")." $i<span>: ";
+            $cells[] = '<label>' . get_string('branch', 'lesson') . ' ' . $i . '</label>: ';
             $cells[] = format_text($answer->answer, $answer->answerformat, $options);
             $table->data[] = new html_table_row($cells);
 
             $cells = array();
-            $cells[] = "<span class=\"label\">".get_string("jump", "lesson")." $i<span>: ";
+            $cells[] = '<label>' . get_string('jump', 'lesson') . ' ' . $i . '</label>: ';
             $cells[] = $this->get_jump_name($answer->jumpto);
             $table->data[] = new html_table_row($cells);
 

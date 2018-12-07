@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cohort', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,10 @@ $string['nocomponent'] = '手動作成';
 $string['potusers'] = '潜在的ユーザ';
 $string['potusersmatching'] = '潜在的な合致ユーザ';
 $string['preview'] = 'プレビュー';
+$string['privacy:metadata:cohort_members'] = 'ユーザのコーホートに関する情報です。';
+$string['privacy:metadata:cohort_members:cohortid'] = 'コーホートのIDです。';
+$string['privacy:metadata:cohort_members:timeadded'] = 'タイムスタンプはユーザがコーホートに追加された日時を示します。';
+$string['privacy:metadata:cohort_members:userid'] = 'コーホートに関連するユーザのIDです。';
 $string['removeuserwarning'] = 'コーホートからユーザを削除することにより、結果としてユーザ設定、評定、グループメンバーシップおよびコースに関係するユーザ情報も含めて、複数のコースからユーザの登録を解除することになります。';
 $string['search'] = '検索';
 $string['searchcohort'] = 'コーホートを検索する';

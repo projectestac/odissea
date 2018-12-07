@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculatedsimple
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['atleastonewildcard'] = 'Deve existir pelo menos uma variável <strong>{x..}</strong> nas fórmulas das respostas';
-$string['converttocalculated'] = 'Gravar como nova pergunta numérica com variáveis normal';
+$string['converttocalculated'] = 'Guardar como nova pergunta numérica normal com variáveis';
 $string['findwildcards'] = 'Encontrar as variáveis {x..} nas fórmulas das respostas';
 $string['generatenewitemsset'] = 'Gerar';
 $string['newsetwildcardvalues'] = 'novo(s) conjunto(s) de valore(s) das variáveis';
@@ -36,6 +36,7 @@ $string['pluginnameediting'] = 'A editar pergunta numérica com variáveis simpl
 $string['pluginname_help'] = 'A pergunta numérica com variáveis simples permite criar perguntas numéricas contendo variáveis que são substituídas por valores diferentes em cada nova tentativa de resolução. Estas perguntas oferecem as funcionalidades mais importantes das perguntas numéricas com variáveis com uma mais simples interface de criação.';
 $string['pluginname_link'] = 'pergunta/tipo/numericavariaveisimples';
 $string['pluginnamesummary'] = 'Uma versão simplificada das perguntas numéricas com variáveis, em que os valores das variáveis são selecionados aleatoriamente de uma série de conjuntos de valores definida na própria pergunta.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo numérica com variáveis simples não armazena dados pessoais.';
 $string['setno'] = 'Conjunto de valores {$a}';
 $string['setwildcardvalues'] = 'conjunto(s) de valores das variáveis';
 $string['showitems'] = 'Mostrar';

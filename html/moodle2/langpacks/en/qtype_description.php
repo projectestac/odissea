@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_description', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_description', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_description
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['pluginname_help'] = 'A description is not really a question type. It si
 
 The question text is displayed both during the attempt and on the review page. Any general feedback is displayed on the review page only.';
 $string['pluginnamesummary'] = 'This is not actually a question. Instead it is a way to add some instructions, rubric or other content to the activity. This is similar to the way that labels can be used to add content to the course page.';
+$string['privacy:metadata'] = 'The Description question type plugin does not store any personal data.';

@@ -34,3 +34,4 @@ $string['pluginname_help'] = 'Wie bei der standardmäßigen Wahr/Falsch-Frage. A
 $string['pluginnamesummary'] = 'Wie bei der standardmäßigen Wahr/Falsch-Frage. Allerdings können Sie verschiedene Fragetexte durch Einfügen von zufälligen Zahlen, Formeln oder grafischen Darstellungen erstellen. Sie können auch auf dynamische Weise die richtige Antwort festlegen. Die zufälligen Werte können auch für das Feedback verwendet werden.';
 $string['pluginnameediting'] = 'Wahr/Falsch-Frage bearbeiten – Mathematik und Naturwissenschaften von WIRIS';
 $string['pluginnameadding'] = 'Wahr/Falsch-Frage hinzufügen – Mathematik und Naturwissenschaften von WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes True/False question type does not effect or store any data itself.';

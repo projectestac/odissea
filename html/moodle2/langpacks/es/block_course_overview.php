@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_overview', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,16 +32,8 @@ $string['configotherexpanded'] = 'Si se habilita, otros cursos serán desplegado
 $string['configpreservestates'] = 'Si se habilita, los estados de colapsado/expandido configurados por el usuario se guardan y emplean en cada carga.';
 $string['course_overview:addinstance'] = 'Añadir un nuevo bloque de vista general de cursos';
 $string['course_overview:myaddinstance'] = 'Añadir un nuevo bloque de vista general de cursos al Área personal';
-$string['defaultmaxcourses'] = 'Número máximo de cursos por omisión';
-$string['defaultmaxcoursesdesc'] = 'El número máximo de cursos que deberán ser mostrados en el bloque de vista general de cursos. 0 mostrará todos los cursos';
 $string['expandall'] = 'Desplegar todas las listas del curso';
-$string['forcedefaultmaxcourses'] = 'Forzar número máximo de cursos';
-$string['forcedefaultmaxcoursesdesc'] = 'Si se activa la opción, el usuario no podrá cambiar su configuración personal';
 $string['fullpath'] = 'Todas las categorías y subcategorías';
-$string['hiddencoursecount'] = 'Usted tiene {$a} cursos(s) oculto(s)';
-$string['hiddencoursecountplural'] = 'Usted tiene {$a} cursos(s) oculto(s)';
-$string['hiddencoursecountwithshowall'] = 'Usted tiene {$a->coursecount} curso oculto ({$a->showalllink})';
-$string['hiddencoursecountwithshowallplural'] = 'Usted tiene {$a->coursecount} cursos ocultos ({$a->showalllink})';
 $string['message'] = 'mensaje';
 $string['messages'] = 'mensajes';
 $string['moveafterhere'] = 'Mover el curso {$a->movingcoursename} detrás de {$a->currentcoursename}';
@@ -49,21 +41,17 @@ $string['movecourse'] = 'Mover curso: {$a}';
 $string['movecoursehere'] = 'Mover curso aquí';
 $string['movetofirst'] = 'Mover curso {$a} a arriba';
 $string['movingcourse'] = 'Está moviendo: {$a->fullname} ({$a->cancellink})';
+$string['nocourses'] = 'No hay cursos para mostrar';
 $string['none'] = 'Ninguno';
 $string['numtodisplay'] = 'Número de cursos para mostrar:';
 $string['onlyparentname'] = 'Sólo la categtoría padre';
 $string['otherexpanded'] = 'Otros cursos desplegados';
-$string['pluginname'] = 'Vista general de cursos';
 $string['preservestates'] = 'Mantener estados desplegados';
 $string['shortnameprefix'] = 'Incluye {$a}';
 $string['shortnamesufixprural'] = '(y otros {$a} )';
 $string['shortnamesufixsingular'] = '(y otro {$a} )';
 $string['showcategories'] = 'Categorías a mostrar';
 $string['showcategoriesdesc'] = '¿Deben mostrarse las categorías de cursos debajo de cada curso?';
-$string['showchildren'] = 'Ver hijos';
-$string['showchildrendesc'] = '¿Deberían listarse los cursos hijos debajo del título del curso principal?';
-$string['showwelcomearea'] = 'Mostrar área de bienvenida';
-$string['showwelcomeareadesc'] = '¿Mostrar el área de bienvenida por encima de la lista de cursos?';
 $string['view_edit_profile'] = '(Ver y editar su perfil.)';
 $string['welcome'] = 'Bienvenido/a {$a}';
 $string['youhavemessages'] = 'Usted tiene {$a} sin leer';

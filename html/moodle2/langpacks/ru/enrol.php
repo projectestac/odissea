@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,11 +51,13 @@ $string['enrolcandidates'] = 'Не записанные на курс польз
 $string['enrolcandidatesmatching'] = 'Подходящие не записанные пользователи';
 $string['enrolcohort'] = 'Записать глобальную группу';
 $string['enrolcohortusers'] = 'Записать пользователей на курс';
+$string['enroldetails'] = 'Подробности зачисления';
 $string['enrollednewusers'] = 'Успешно записано {$a} новых пользователей';
 $string['enrolledusers'] = 'Записанные на курс пользователи';
 $string['enrolledusersmatching'] = 'Подходящие записанные пользователи';
 $string['enrolme'] = 'Записаться на курс';
 $string['enrolmentinstances'] = 'Способы зачисления на курс';
+$string['enrolmentmethod'] = 'Способ зачисления';
 $string['enrolmentnew'] = 'Новое зачисление в {$a}';
 $string['enrolmentnewuser'] = '{$a->user} зарегистрирован на курсе «{$a->course}»';
 $string['enrolmentoptions'] = 'Настройка зачисления на курс';
@@ -100,6 +102,7 @@ $string['instanceadded'] = 'Метод добавлен';
 $string['instanceeditselfwarning'] = 'Предупреждение:';
 $string['instanceeditselfwarningtext'] = 'Вы зачислены в курс при помощи этого способа записи, изменения могут повлиять на Ваш доступ к этому курсу.';
 $string['invalidenrolinstance'] = 'Неправильный способ записи';
+$string['invalidrequest'] = 'Неверный запрос';
 $string['invalidrole'] = 'Неправильная роль';
 $string['manageenrols'] = 'Управление способами записи';
 $string['manageinstance'] = 'Управление';
@@ -136,7 +139,7 @@ $string['totalenrolledusers'] = 'На курс записано пользова
 $string['totalotherusers'] = 'Других пользователей: {$a}';
 $string['unassignnotpermitted'] = 'Вы не можете отменить назначение ролей в этом курсе';
 $string['unenrol'] = 'Исключить';
-$string['unenrolconfirm'] = 'Вы действительно хотите исключить пользователя «{$a->user}» из курса «{$a->course}»?';
+$string['unenrolconfirm'] = 'Вы действительно хотите исключить пользователя «{$a->user}» (ранее зачисленного посредством «{$a->enrolinstancename}») из курса «{$a->course}»?';
 $string['unenrolme'] = 'Исключить себя из курса «{$a}»';
 $string['unenrolnotpermitted'] = 'Вы не можете исключить этого пользователя из этого курса.';
 $string['unenrolroleusers'] = 'Исключить пользователей';

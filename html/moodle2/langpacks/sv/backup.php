@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'backup', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -253,7 +253,6 @@ $string['setting_course_shortname'] = 'Kortnamn för kurs';
 $string['setting_course_startdate'] = 'Startdatum för kurs';
 $string['setting_keep_groups_and_groupings'] = 'Behåll nuvarande grupper och grupperingar';
 $string['setting_keep_roles_and_enrolments'] = 'Behåll nuvarande roller och registreringar';
-$string['setting_overwriteconf'] = 'Skriv över konfiguration för kurs';
 $string['showtypes'] = 'Visa optioner';
 $string['sitecourseformatwarning'] = 'Detta är en säkerhetskopia av en Ingångssida. OBS! dessa kan endast återställas på Ingångssidan';
 $string['skiphidden'] = 'Hoppa över dolda kurser';

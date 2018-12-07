@@ -23,3 +23,8 @@
  */
 
 $string['pluginname'] = 'Dropdown menu';
+$string['privacy:metadata:profilefield_menu:userid'] = 'The ID of the user whose data is stored by the Dropdown menu user profile field';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'The ID of the profile field';
+$string['privacy:metadata:profilefield_menu:data'] = 'Dropdown menu user profile field user data';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'The format of Dropdown menu user profile field user data';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Additional profile data';

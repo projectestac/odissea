@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_webct', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_webct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['missinganswer'] = 'Zu wenig Anweisungen :ANSWER, :Lx, :Rx in Fragezeile
 $string['missingquestion'] = 'Fehlendes Fragefeld nach Zeile {$a}';
 $string['pluginname'] = 'WebCT-Format';
 $string['pluginname_help'] = 'Das WebCT-Format erlaubt den Import von Kurzantwort- und Multiple-Choice-Fragen, die im Textformat von WebCT gespeichert wurden.';
+$string['privacy:metadata'] = 'Das WebCT Frageformat Plugin speichert keine persönlichen Daten.';
 $string['questionnametoolong'] = 'Ein zu langer Fragename in Zeile {$a} (max. 255 Zeichen) wurde verkürzt';
 $string['unknowntype'] = 'Unbekannter Typ nach Zeile {$a}';
 $string['warningsdetected'] = '{$a} Warnung(en) gefunden';

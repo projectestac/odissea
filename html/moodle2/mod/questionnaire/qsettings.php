@@ -58,7 +58,7 @@ if (!$questionnaire->capabilities->manage) {
     print_error('nopermissions', 'error', 'mod:questionnaire:manage');
 }
 
-$settingsform = new mod_questionnaire_settings_form('qsettings.php');
+$settingsform = new \mod_questionnaire\settings_form('qsettings.php');
 $sdata = clone($questionnaire->survey);
 $sdata->sid = $questionnaire->survey->id;
 $sdata->id = $cm->id;
@@ -141,7 +141,7 @@ if ($settings = $settingsform->get_data()) {
     } else {
         $sdata->feedbacksections = '';
     }
-    $sdata->owner = $settings->owner;
+    $sdata->courseid = $settings->courseid;
     if (!($sid = $questionnaire->survey_update($sdata))) {
         print_error('couldnotcreatenewsurvey', 'questionnaire');
     } else {

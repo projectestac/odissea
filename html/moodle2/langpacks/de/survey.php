@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,10 @@ $string['guestsnotallowed'] = 'Gäste dürfen an Umfragen nicht teilnehmen.';
 $string['howlong'] = 'Wie lange haben Sie für das Ausfüllen dieser Umfrage gebraucht?';
 $string['howlongoptions'] = 'unter 1 Min, 1-2 Min, 2-3 Min, 3-4 Min, 4-5 Min, 5-10 Min, mehr als 10 Min';
 $string['ifoundthat'] = 'Dies findet statt:';
+$string['indicator:cognitivedepth'] = 'Umfrage kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Umfrageaktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Umfrage sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Umfrageaktivität erreicht hat.';
 $string['introtext'] = 'Einführungstext';
 $string['invalidsurveyid'] = 'Falsche Umfrage-ID';
 $string['invalidtmptid'] = 'Ungültige Masken-ID';
@@ -232,6 +236,15 @@ $string['pluginname'] = 'Umfrage';
 $string['preferred'] = 'Bevorzugt';
 $string['preferredclass'] = 'Ansprüche der Lerngruppe';
 $string['preferredstudent'] = 'Ansprüche von {$a}';
+$string['privacy:metadata:analysis'] = 'Datensatz zur Analyse von Befragungsantworten';
+$string['privacy:metadata:analysis:notes'] = 'Notizen über Antworten von Nutzern';
+$string['privacy:metadata:analysis:userid'] = 'ID des Nutzers, der Befragung beantwortet hat';
+$string['privacy:metadata:answers'] = 'Sammlung von Antworten in Befragungen';
+$string['privacy:metadata:answers:answer1'] = 'Ein Feld zum Speichern der Antwort auf eine Frage.';
+$string['privacy:metadata:answers:answer2'] = 'Zusätzliches Feld zum Speichern der Anwort zu einer Frage.';
+$string['privacy:metadata:answers:question'] = 'Die Frage.';
+$string['privacy:metadata:answers:time'] = 'Zeitpunkt, an dem die Anwort übermittelt wurde.';
+$string['privacy:metadata:answers:userid'] = 'ID des Nutzers, der seine Anwort eingereicht hat';
 $string['question'] = 'Frage';
 $string['questions'] = 'Fragen';
 $string['questionsnotanswered'] = 'Manche der Fragen mit Mehrfachantworten sind nicht beantwortet worden.';
@@ -239,7 +252,7 @@ $string['report'] = 'Bericht zur Umfrage';
 $string['responsereports'] = 'Berichte';
 $string['responses'] = 'Antworten';
 $string['savednotes'] = 'Ihre Anmerkungen wurden gespeichert';
-$string['scaleagree5'] = 'vollständige Ablehnung, überwiegende Ablehnung, geringe Ablehnung, geringe Zustimmung, überwiegende Zustimmung, völlige Zustimmung';
+$string['scaleagree5'] = 'Vollständige Ablehnung, überwiegende Ablehnung, geringe Ablehnung, geringe Zustimmung, überwiegende Zustimmung, völlige Zustimmung';
 $string['scales'] = 'Skalen';
 $string['scaletimes5'] = 'fast nie, selten, manchmal, oft, fast immer';
 $string['search:activity'] = 'Umfrage - Aktivitätsinformation';

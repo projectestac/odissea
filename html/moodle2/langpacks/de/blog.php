@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'blog', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,6 +135,29 @@ $string['pagesize'] = 'Zahl der Blogeinträge pro Seite';
 $string['permalink'] = 'Dauerlink';
 $string['personalblogs'] = 'Nach Anmeldung nur eigener Blog sichtbar';
 $string['preferences'] = 'Blogeinstellungen';
+$string['privacy:metadata:core_comments'] = 'Kommentare, bezogen auf Blogbeiträge';
+$string['privacy:metadata:core_files'] = 'Dateien, angehängt an Blogbeiträge';
+$string['privacy:metadata:core_tag'] = 'Schlagwörter, bezogen auf Blogbeiträge';
+$string['privacy:metadata:external'] = 'Link zu einem externen RSS-Feed';
+$string['privacy:metadata:external:description'] = 'Beschreibung des RSS-Feeds';
+$string['privacy:metadata:external:filtertags'] = 'Liste von Schlagwörtern, um Blogbeiträge zu filtern';
+$string['privacy:metadata:external:name'] = 'Name des RSS-Feeds';
+$string['privacy:metadata:external:timefetched'] = 'Datum, an dem der RSS-Feed zuletzt abgerufen wurde';
+$string['privacy:metadata:external:timemodified'] = 'Datum, an dem der Verbund zuletzt geändert wurde';
+$string['privacy:metadata:external:url'] = 'URL des RSS-Feeds';
+$string['privacy:metadata:external:userid'] = 'Nutzer-ID, mit der der externe Blogbeitrag hinzugefügt wurde';
+$string['privacy:metadata:post'] = 'Informationen, bezogen auf Blogbeiträge';
+$string['privacy:metadata:post:content'] = 'Inhalt eines externen Blogbeitrags';
+$string['privacy:metadata:post:created'] = 'Datum, an dem der Blogbeitrag erstellt wurde';
+$string['privacy:metadata:post:lastmodified'] = 'Datum, an dem der Blogbeitrag zuletzt geändert wurde';
+$string['privacy:metadata:post:publishstate'] = 'Sichtbarkeit des Blogbeitrags für andere';
+$string['privacy:metadata:post:subject'] = 'Titel des Blogbeitrags';
+$string['privacy:metadata:post:summary'] = 'Blogbeitrag';
+$string['privacy:metadata:post:uniquehash'] = 'Eindeutige Identifizierung für einen externen Blogbeitrag, normalerweise eine URL';
+$string['privacy:metadata:post:userid'] = 'Nutzer-ID, mit der der Blogbeitrag hinzugefügt wurde';
+$string['privacy:metadata:post:usermodified'] = 'Nutzer-ID, mit der der Blogbeitrag zuletzt geändert';
+$string['privacy:path:blogassociations'] = 'In Verbindung stehende Blogbeiträge';
+$string['privacy:unknown'] = 'Unbekannt';
 $string['publishto'] = 'Veröffentlichen für';
 $string['publishtocourse'] = 'Mitglieder in gemeinsamen Kursen';
 $string['publishtocourseassoc'] = 'Mitglieder des verbundenen Kurses';

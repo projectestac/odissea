@@ -29,3 +29,4 @@ $string['pluginname_help'] = 'Questo tipo di domande a scelta multipla è simile
 $string['pluginnamesummary'] = 'Questo tipo di domande a scelta multipla è simile alla tipologia standard, ma qui puoi creare diversi enunciati e alternative inserendo numeri casuali, formule o diagrammi. Il feedback può anche contenere valori casuali.';
 $string['pluginnameadding'] = 'Aggiungere una scelta multipla - domanda di matematica e scienza WIRIS';
 $string['pluginnameediting'] = 'Modificare una scelta multipla - domanda di matematica e scienza WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Multi Choice question type does not effect or store any data itself.';

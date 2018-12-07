@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details
+ * Version information
  *
  * @package    auth_ldap
  * @author     Martin Dougiamas
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016120500;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2016112900;        // Requires this Moodle version
+$plugin->version   = 2017111300;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->requires  = 2017110800;        // Requires this Moodle version
 $plugin->component = 'auth_ldap';       // Full name of the plugin (used for diagnostics)

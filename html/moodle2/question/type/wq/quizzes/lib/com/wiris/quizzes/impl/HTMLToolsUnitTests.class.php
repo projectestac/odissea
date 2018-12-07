@@ -5,6 +5,25 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		if(!php_Boot::$skip_constructor) {
 		$this->h = new com_wiris_quizzes_impl_HTMLTools();
 	}}
+	public function unitTestParameter() {
+		$inputs = new _hx_array(array("<session lang=\"en\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\" xml:lang=\"en\">variables</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>parameter</mi><mo>&nbsp;</mo><mi>answer</mi><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mn>123</mn></math></input></command></group></library></session>", "<wiriscalc version=\"3.1\"><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Untitled calc</mtext></math></title><properties><property name=\"lang\">en</property></properties><session version=\"3.0\" lang=\"en\"><task><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Sheet 1</mtext></math></title><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>parameter</mi><mo>&#xA0;</mo><mi>answer</mi><mo>=</mo><mn>123</mn></math></input></command></group></task></session></wiriscalc>", "<wiriscalc version=\"3.1\"><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Calc sem título</mtext></math></title><properties><property name=\"lang\">pt</property></properties><session version=\"3.0\" lang=\"pt\"><task><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Hoja 1</mtext></math></title><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>parâmetro</mi><mo>&#xA0;</mo><mi>resposta</mi><mo>=</mo><mn>123</mn></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"/></input></command></group></task></session></wiriscalc>", "<wiriscalc version=\"3.1\"><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Calc sem título</mtext></math></title><properties><property name=\"lang\">pt</property></properties><session version=\"3.0\" lang=\"pt\"><task><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Hoja 1</mtext></math></title><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>parametro</mi><mo>&#xA0;</mo><mi>resposta</mi><mo>=</mo><mn>123</mn></math></input></command><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"/></input></command></group></task></session></wiriscalc>"));
+		$parameters = new _hx_array(array("parameter", "parameter", "parâmetro", "parâmetro"));
+		$answers = new _hx_array(array("answer", "answer", "resposta", "resposta"));
+		$i = null;
+		{
+			$_g1 = 0; $_g = $inputs->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if(!com_wiris_quizzes_impl_HTMLTools::hasCasSessionParameter($inputs[$i1], $parameters[$i1], $answers[$i1])) {
+					throw new HException("Failed test");
+				}
+				if(com_wiris_quizzes_impl_HTMLTools::hasCasSessionParameter($inputs[$i1], $parameters[$i1], _hx_substr($answers[$i1], 0, 3))) {
+					throw new HException("Failed test");
+				}
+				unset($i1);
+			}
+		}
+	}
 	public function unitTestStripRootTag() {
 		$inputs = new _hx_array(array("<math><mi>x</mi></math>", "<math><math/></math>", "<math></math><math/>", "<math><mi>e</mi><mo>+</mo><math><mi>i</mi></math></math>", "<math><math></math><math/><math></math></math><math></math>"));
 		$outputs = new _hx_array(array("<mi>x</mi>", "<math/>", "<math></math><math/>", "<mi>e</mi><mo>+</mo><math><mi>i</mi></math>", "<math><math></math><math/><math></math></math><math></math>"));
@@ -185,11 +204,12 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		}
 	}
 	public function unitTestReplaceVariablesInHTML() {
-		$texts = new _hx_array(array("<table><tr><td>X</td><td>#X</td></tr><tr><td>«math»«/math»</td><td></td></tr></table>", "<table><tr><td>X</td><td><math xmlns=¨http://www.w3.org/1998/Math/MathML¨><msqrt><mo>#</mo><mi>X</mi></msqrt></math></td></tr><tr><td></td><td></td></tr></table>", "<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo mathcolor=¨#FF0000¨»#«/mo»«mi mathcolor=¨#FF0000¨»a«/mi»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mi>#a1</mi></math>", "<math><mo>#</mo><mi>a</mi><mn>1</mn></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + #dif</p>", "a  «math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;»«mfrac»«mrow»«mi»#«/mi»«mi»a«/mi»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mi»#«/mi»«mi»b«/mi»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p>#a&#xa1;<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = #a1; ]]> </script> <select><option>#a</option><option>#a1</option></select></p>", "<math><mo>#</mo><mi>a</mi><mn>0</mn></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»#«/mo»«mi»§#945;«/mi»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" />&nbsp;i #&alpha;.</p>"));
+		$texts = new _hx_array(array("<p><br></p><table id=\"yui_05\"><caption id=\"yui_06\"></caption><thead id=\"yui_07\"><tr id=\"yui_08\"><th scope=\"col\" id=\"yui_09\">«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»#«/mo»«mi»c«/mi»«/math»</th></tr></thead><tbody></tbody></table><br>", "<table><tr><td>X</td><td>#X</td></tr><tr><td>«math»«/math»</td><td></td></tr></table>", "<table><tr><td>X</td><td><math xmlns=¨http://www.w3.org/1998/Math/MathML¨><msqrt><mo>#</mo><mi>X</mi></msqrt></math></td></tr><tr><td></td><td></td></tr></table>", "<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo mathcolor=¨#FF0000¨»#«/mo»«mi mathcolor=¨#FF0000¨»a«/mi»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mi>#a1</mi></math>", "<math><mo>#</mo><mi>a</mi><mn>1</mn></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + #dif</p>", "a  «math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;»«mfrac»«mrow»«mi»#«/mi»«mi»a«/mi»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mi»#«/mi»«mi»b«/mi»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p>#a&#xa1;<script type=\"text/javascript\"> <!-- #a1 will be replaced by Wiris Quizzes --> <![CDATA[ a = #a1; ]]> </script> <select><option>#a</option><option>#a1</option></select></p>", "<math><mo>#</mo><mi>a</mi><mn>0</mn></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mo»#«/mo»«mi»§#945;«/mi»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" />&nbsp;i #&alpha;.</p>"));
 		$mml = new Hash();
 		$mml->set("dif", "<math><mn>0</mn></math>");
 		$mml->set("a", "<math><mi>x</mi></math>");
 		$mml->set("b", "<math><mi>y</mi></math>");
+		$mml->set("c", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></mfenced></math>");
 		$mml->set("a1", "<math><mi>z</mi></math>");
 		$mml->set("α", "<math><mn>2</mn></math>");
 		$mml->set("X", "<math><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mi>i</mi></mrow></mfenced></math>");
@@ -197,13 +217,14 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		$txt->set("dif", "0");
 		$txt->set("a", "x");
 		$txt->set("b", "y");
+		$txt->set("c", "[1,2,3]");
 		$txt->set("a1", "z");
 		$txt->set("α", "2");
 		$txt->set("X", "{1,i}");
 		$v = new Hash();
 		$v->set(com_wiris_quizzes_impl_MathContent::$TYPE_MATHML, $mml);
 		$v->set(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT, $txt);
-		$responses = new _hx_array(array("<table class=\"wiristable\"><tr><td>X</td><td>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«/math»</td></tr><tr><td>«math»«/math»</td><td>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»i«/mi»«/math»</td></tr></table>", "<table><tr><td>X</td><td><math xmlns=¨http://www.w3.org/1998/Math/MathML¨><msqrt><mrow><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mi>i</mi></mrow></mfenced></mrow></msqrt></math></td></tr><tr><td></td><td></td></tr></table>", "<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathcolor=¨#FF0000¨»«mrow»«mi»x«/mi»«/mrow»«/mstyle»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mrow><mi>z</mi></mrow></math>", "<math><mrow><mi>z</mi></mrow></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + <math><mn>0</mn></math></p>", "a  «math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mrow»«mrow»«mi»x«/mi»«/mrow»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mrow»«mi»y«/mi»«/mrow»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p><math><mi>x</mi></math>¡<script type=\"text/javascript\"> <!-- #a1 will be replaced by wiris quizzes --> <![CDATA[ a = z; ]]> </script> <select><option>x</option><option>z</option></select></p>", "<math><mrow><mrow><mi>x</mi></mrow><mo>0</mo></mrow></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mrow»«mn»2«/mn»«/mrow»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" /> i «math»«mn»2«/mn»«/math».</p>"));
+		$responses = new _hx_array(array("<p><br></p><table id=\"yui_05\" class=\"wiristable\"><caption id=\"yui_06\"></caption><thead id=\"yui_07\"><tr id=\"yui_08\"><th scope=\"col\" id=\"yui_09\">«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«/math»</th><th scope=\"col\" id=\"yui_09\">«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»2«/mn»«/math»</th><th scope=\"col\" id=\"yui_09\">«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»3«/mn»«/math»</th></tr></thead><tbody></tbody></table><br>", "<table class=\"wiristable\"><tr><td>X</td><td>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mn»1«/mn»«/math»</td></tr><tr><td>«math»«/math»</td><td>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mi»i«/mi»«/math»</td></tr></table>", "<table><tr><td>X</td><td><math xmlns=¨http://www.w3.org/1998/Math/MathML¨><msqrt><mrow><mfenced open=\"{\" close=\"}\"><mrow><mn>1</mn><mo>,</mo><mi>i</mi></mrow></mfenced></mrow></msqrt></math></td></tr><tr><td></td><td></td></tr></table>", "<p>«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathcolor=¨#FF0000¨»«mrow»«mi»x«/mi»«/mrow»«/mstyle»«mo mathcolor=¨#FF0000¨»+«/mo»«mn mathcolor=¨#FF0000¨»3«/mn»«/math»</p>", "<math><mrow><mi>z</mi></mrow></math>", "<math><mrow><mi>z</mi></mrow></math>", "<p><img align=\"middle\" src=\"http://localhost/moodle21/lib/editor/tinymce/tiny_mce/3.4.2/plugins/tiny_mce_wiris/integration/showimage.php?formula=cb550f21cbc30fac59e4f2bba550693d.png\" /> + <math><mn>0</mn></math></p>", "a  «math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mfrac»«mrow»«mrow»«mi»x«/mi»«/mrow»«mo»+«/mo»«mn»1«/mn»«/mrow»«mrow»«mrow»«mi»y«/mi»«/mrow»«mo»-«/mo»«mn»1«/mn»«/mrow»«/mfrac»«/math» a", "<p><math><mi>x</mi></math>¡<script type=\"text/javascript\"> <!-- #a1 will be replaced by Wiris Quizzes --> <![CDATA[ a = z; ]]> </script> <select><option>x</option><option>z</option></select></p>", "<math><mrow><mrow><mi>x</mi></mrow><mo>0</mo></mrow></math>", "<p><img align=\"middle\" alt=\"# alpha\" class=\"Wirisformula\" data-mathml=\"«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mrow»«mn»2«/mn»«/mrow»«/math»\" height=\"13\" src=\"/pluginwiris_engine/app/showimage?formula=4f52b56f431aac53cad4c548ef47e646&amp;cw=26&amp;ch=13&amp;cb=12\" style=\"vertical-align: -1px;\" width=\"26\" /> i «math»«mn»2«/mn»«/math».</p>"));
 		$i = null;
 		{
 			$_g1 = 0; $_g = $texts->length;
@@ -296,6 +317,7 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		$this->unitTestTables();
 		$this->unitTestParseCompoundAnswers();
 		$this->unitTestUtf8();
+		$this->unitTestParameter();
 	}
 	public $h;
 	public function __call($m, $a) {

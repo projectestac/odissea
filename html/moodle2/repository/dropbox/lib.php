@@ -607,7 +607,7 @@ class repository_dropbox extends repository {
     public static function get_oauth2callbackurl() {
         global $CFG;
 
-        return new moodle_url($CFG->httpswwwroot . '/admin/oauth2callback.php');
+        return new moodle_url('/admin/oauth2callback.php');
     }
 
     /**
@@ -678,9 +678,7 @@ class repository_dropbox extends repository {
                     ]);
                 $info = $c->get_info();
                 if ($result === true && isset($info['http_code']) && $info['http_code'] == 200) {
-                    $fs = get_file_storage();
-                    list($contenthash, $filesize, ) = $fs->add_file_to_pool($saveas);
-                    $file->set_synchronized($contenthash, $filesize);
+                    $file->set_synchronised_content_from_file($saveas);
                     return true;
                 }
             } catch (Exception $e) {
@@ -726,7 +724,7 @@ class repository_dropbox extends repository {
                         // Use the display path here rather than lower.
                         // Dropbox is case insensitive but this leads to more accurate breadcrumbs.
                         'path'              => file_correct_filepath($entrydata->path_display),
-                        'thumbnail'         => $OUTPUT->pix_url(file_folder_icon(64))->out(false),
+                        'thumbnail'         => $OUTPUT->image_url(file_folder_icon(64))->out(false),
                         'thumbnail_height'  => 64,
                         'thumbnail_width'   => 64,
                         'children'          => array(),
@@ -738,7 +736,7 @@ class repository_dropbox extends repository {
                         'source'            => $entrydata->path_lower,
                         'size'              => $entrydata->size,
                         'date'              => strtotime($entrydata->client_modified),
-                        'thumbnail'         => $OUTPUT->pix_url(file_extension_icon($entrydata->path_lower, 64))->out(false),
+                        'thumbnail'         => $OUTPUT->image_url(file_extension_icon($entrydata->path_lower, 64))->out(false),
                         'realthumbnail'     => $this->get_thumbnail_url($entrydata),
                         'thumbnail_height'  => 64,
                         'thumbnail_width'   => 64,

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_print', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'booktool_print', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   booktool_print
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['printchapter'] = 'Kapitel drucken';
 $string['printdate'] = 'Datum';
 $string['printedby'] = 'Gedruckt von';
 $string['print:print'] = 'Buch drucken';
+$string['privacy:metadata'] = 'Das Plugin \'Buch drucken\' speichert keine personenbezogenen Daten.';

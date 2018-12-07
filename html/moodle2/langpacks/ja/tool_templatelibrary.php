@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_templatelibrary', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_templatelibrary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['example'] = '例';
 $string['noresults'] = '該当データはありません。';
 $string['notemplateselected'] = 'テンプレート未選択';
 $string['pluginname'] = 'テンプレートライブラリ';
+$string['privacy:metadata'] = 'テンプレートライブラリプラグインはどのような個人データも保存しません。';
 $string['search'] = '検索';
 $string['searchtemplates'] = 'テンプレートを検索する';
 $string['templatehasnoexample'] = 'このテンプレートにはコンテクスト例がないため、ここで表示することはできません。このテンプレートにコンテクスト例を追加するにはjsonエンコードコンテクスト例が続くMustacheコメント「Example context (json):」をテンプレートに追加してください。';

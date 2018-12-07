@@ -100,6 +100,12 @@ abstract class core_filetypes {
             'gallery' => array('type' => 'application/x-smarttech-notebook', 'icon' => 'archive'),
             'galleryitem' => array('type' => 'application/x-smarttech-notebook', 'icon' => 'archive'),
             'gallerycollection' => array('type' => 'application/x-smarttech-notebook', 'icon' => 'archive'),
+            'gdraw' => array('type' => 'application/vnd.google-apps.drawing', 'icon' => 'image', 'groups' => array('image')),
+            'gdoc' => array('type' => 'application/vnd.google-apps.document', 'icon' => 'document', 'groups' => array('document')),
+            'gsheet' => array('type' => 'application/vnd.google-apps.spreadsheet', 'icon' => 'spreadsheet',
+                    'groups' => array('spreadsheet')),
+            'gslides' => array('type' => 'application/vnd.google-apps.presentation', 'icon' => 'powerpoint',
+                    'groups' => array('presentation')),
             'gif' => array('type' => 'image/gif', 'icon' => 'gif', 'groups' => array('image', 'web_image'), 'string' => 'image'),
             'gtar' => array('type' => 'application/x-gtar', 'icon' => 'archive',
                     'groups' => array('archive'), 'string' => 'archive'),
@@ -133,6 +139,7 @@ abstract class core_filetypes {
             'jpg' => array('type' => 'image/jpeg', 'icon' => 'jpeg', 'groups' => array('image', 'web_image'), 'string' => 'image'),
             'jqz' => array('type' => 'text/xml', 'icon' => 'markup'),
             'js' => array('type' => 'application/x-javascript', 'icon' => 'text', 'groups' => array('web_file')),
+            'json' => array('type' => 'application/json', 'icon' => 'text'),
             'latex' => array('type' => 'application/x-latex', 'icon' => 'text'),
             'm' => array('type' => 'text/plain', 'icon' => 'sourcecode'),
             'mbz' => array('type' => 'application/vnd.moodle.backup', 'icon' => 'moodle'),
@@ -171,8 +178,10 @@ abstract class core_filetypes {
             'odm' => array('type' => 'application/vnd.oasis.opendocument.text-master', 'icon' => 'writer'),
             'odg' => array('type' => 'application/vnd.oasis.opendocument.graphics', 'icon' => 'draw'),
             'otg' => array('type' => 'application/vnd.oasis.opendocument.graphics-template', 'icon' => 'draw'),
-            'odp' => array('type' => 'application/vnd.oasis.opendocument.presentation', 'icon' => 'impress'),
-            'otp' => array('type' => 'application/vnd.oasis.opendocument.presentation-template', 'icon' => 'impress'),
+            'odp' => array('type' => 'application/vnd.oasis.opendocument.presentation', 'icon' => 'impress',
+                    'groups' => array('presentation')),
+            'otp' => array('type' => 'application/vnd.oasis.opendocument.presentation-template', 'icon' => 'impress',
+                    'groups' => array('presentation')),
             'ods' => array('type' => 'application/vnd.oasis.opendocument.spreadsheet',
                     'icon' => 'calc', 'groups' => array('spreadsheet')),
             'ots' => array('type' => 'application/vnd.oasis.opendocument.spreadsheet-template',
@@ -197,15 +206,19 @@ abstract class core_filetypes {
             'pps' => array('type' => 'application/vnd.ms-powerpoint', 'icon' => 'powerpoint', 'groups' => array('presentation')),
             'ppt' => array('type' => 'application/vnd.ms-powerpoint', 'icon' => 'powerpoint', 'groups' => array('presentation')),
             'pptx' => array('type' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
-                    'icon' => 'powerpoint'),
-            'pptm' => array('type' => 'application/vnd.ms-powerpoint.presentation.macroEnabled.12', 'icon' => 'powerpoint'),
+                    'icon' => 'powerpoint', 'groups' => array('presentation')),
+            'pptm' => array('type' => 'application/vnd.ms-powerpoint.presentation.macroEnabled.12', 'icon' => 'powerpoint',
+                    'groups' => array('presentation')),
             'potx' => array('type' => 'application/vnd.openxmlformats-officedocument.presentationml.template',
-                    'icon' => 'powerpoint'),
-            'potm' => array('type' => 'application/vnd.ms-powerpoint.template.macroEnabled.12', 'icon' => 'powerpoint'),
-            'ppam' => array('type' => 'application/vnd.ms-powerpoint.addin.macroEnabled.12', 'icon' => 'powerpoint'),
+                    'icon' => 'powerpoint', 'groups' => array('presentation')),
+            'potm' => array('type' => 'application/vnd.ms-powerpoint.template.macroEnabled.12', 'icon' => 'powerpoint',
+                    'groups' => array('presentation')),
+            'ppam' => array('type' => 'application/vnd.ms-powerpoint.addin.macroEnabled.12', 'icon' => 'powerpoint',
+                    'groups' => array('presentation')),
             'ppsx' => array('type' => 'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
-                    'icon' => 'powerpoint'),
-            'ppsm' => array('type' => 'application/vnd.ms-powerpoint.slideshow.macroEnabled.12', 'icon' => 'powerpoint'),
+                    'icon' => 'powerpoint', 'groups' => array('presentation')),
+            'ppsm' => array('type' => 'application/vnd.ms-powerpoint.slideshow.macroEnabled.12', 'icon' => 'powerpoint',
+                    'groups' => array('presentation')),
             'ps' => array('type' => 'application/postscript', 'icon' => 'pdf'),
             'pub' => array('type' => 'application/x-mspublisher', 'icon' => 'publisher', 'groups' => array('presentation')),
 
@@ -247,8 +260,9 @@ abstract class core_filetypes {
             'stc' => array('type' => 'application/vnd.sun.xml.calc.template', 'icon' => 'calc'),
             'sxd' => array('type' => 'application/vnd.sun.xml.draw', 'icon' => 'draw'),
             'std' => array('type' => 'application/vnd.sun.xml.draw.template', 'icon' => 'draw'),
-            'sxi' => array('type' => 'application/vnd.sun.xml.impress', 'icon' => 'impress'),
-            'sti' => array('type' => 'application/vnd.sun.xml.impress.template', 'icon' => 'impress'),
+            'sxi' => array('type' => 'application/vnd.sun.xml.impress', 'icon' => 'impress', 'groups' => array('presentation')),
+            'sti' => array('type' => 'application/vnd.sun.xml.impress.template', 'icon' => 'impress',
+                    'groups' => array('presentation')),
             'sxg' => array('type' => 'application/vnd.sun.xml.writer.global', 'icon' => 'writer'),
             'sxm' => array('type' => 'application/vnd.sun.xml.math', 'icon' => 'math'),
 
@@ -290,6 +304,23 @@ abstract class core_filetypes {
 
             'zip' => array('type' => 'application/zip', 'icon' => 'archive', 'groups' => array('archive'), 'string' => 'archive')
         );
+    }
+
+    /**
+     * Given a mimetype - return a valid file extension for it.
+     *
+     * @param $mimetype string
+     * @return string|bool False if the mimetype was not known, a string indicating a valid file extension otherwise. It may not
+     *                     be the only valid file extension - just the first one found.
+     */
+    public static function get_file_extension($mimetype) {
+        $types = self::get_types();
+        foreach ($types as $extension => $info) {
+            if ($info['type'] == $mimetype) {
+                return $extension;
+            }
+        }
+        return false;
     }
 
     /**

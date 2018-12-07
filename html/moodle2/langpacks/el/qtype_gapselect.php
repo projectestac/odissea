@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_gapselect', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_gapselect
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}';
+$string['errornoslots'] = 'Το κείμενο της ερώτησης πρέπει να περιέχει προσδιοριστικά κράτησης θέσης όπως [[1]] για να δείχνουν που πηγαίνουν οι λέξεις που λείπουν.';
 $string['group'] = 'Ομάδα συμμετεχόντων';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,8 @@ $string['notarget'] = 'Je moet ofwel een bestaande map kiezen of een nieuwe map 
 $string['noticket'] = 'Kon geen ticket krijgen van Box om de authenticatiesessie te beginnen';
 $string['password'] = 'Je Box wachtwoord (wordt niet bewaard)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'Deze plugin stuurt gegevens extern naar een gelinkte Box-account en bewaart lokaal geen gegevens.';
+$string['privacy:metadata:data'] = 'Persoonlijke gegevens, binnengekomen via het portfolio subsysteem.';
 $string['sendfailed'] = 'Inhoud naar Box sturen mislukt: {$a}';
 $string['setupinfo'] = 'Installatie-instructies';
 $string['setupinfodetails'] = 'Om een API-sleutel te verkrijgen, moet je inloggen bij Box en hun <a href="{$a->servicesurl}">Box development page</a> bezoeken.  In \'Developer Tools\', volg \'Create new application\' en maak een nieuwe applicatie voor jouw Moodle site. De client ID en geheim worden getoond in  \'OAuth2 parameters\'-sectie van het bewerk applicatieformulier. Optioneel kun je ook meer informatie over je Moodle site geven.';

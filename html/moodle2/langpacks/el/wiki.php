@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['backpage'] = 'Επιστροφή στη σελίδα';
 $string['backtomapmenu'] = 'Επιστροφή στο χάρτη μενού';
 $string['comments'] = 'Σχόλια';
 $string['commentscount'] = 'Σχόλια ({$a})';
+$string['contributions'] = 'Συνεισφορές';
 $string['createcomment'] = 'Δημιουργία σχολίου';
 $string['defaultformat'] = 'Προεπιλεγμένη μορφή';
 $string['defaultformat_help'] = 'Αυτή η ρύθμιση καθορίζει την προεπιλεγμένη μορφή που θα χρησιμοποιείται κατά την επεξεργασία των wiki σελίδων. * HTML - Ο επεξεργαστής HTML είναι διαθέσιμος * Creole - Μια συνηθισμένη γλώσσα σήμανσης για το wiki για την οποία μια μικρή μόνο γραμμή εργαλείων επεξεργασίας είναι διαθέσιμη * Nwiki - όπως η Mediawiki γλώσσα σήμανσης χρησιμοποιείται για την συνεισφορά στην Nwiki ενότητα';
@@ -55,10 +56,12 @@ $string['forceformat_help'] = 'Αν η μορφή είναι υποχρεωτι�
 $string['html'] = 'Μορφή HTML';
 $string['insertcomment'] = 'Εισαγωγή σχολίου';
 $string['invalidsection'] = 'Άκυρη ενότητα';
+$string['javascriptdisabledlocks'] = 'Η Javascript είναι απενεργοποιημένη στον περιηγητή σας και τα κλειδώματα δεν λειτουργούν. Οι αλλαγές που κάνετε μπορεί να μην αποθηκευτούν σωστά.';
 $string['modulename'] = 'Wiki';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Πλοήγηση';
 $string['nocomments'] = 'Δεν υπάρχουν σχόλια';
+$string['nocontribs'] = 'Δεν έχετε συνεισφορές σε αυτό το wiki';
 $string['pageindex'] = 'Περιεχόμενα σελίδας';
 $string['pluginname'] = 'Wiki';
 $string['return'] = 'Επιστροφή';

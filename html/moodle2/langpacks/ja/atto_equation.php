@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_equation', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_equation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['librarygroup4'] = '高度';
 $string['librarygroup4_desc'] = '拡張タブに一覧表示されるTeXコマンドです。';
 $string['pluginname'] = '数式エディタ';
 $string['preview'] = '数式プレビュー';
+$string['privacy:metadata'] = 'atto_equationプラグインはどのような個人データも保存しません。';
 $string['saveequation'] = '数式を保存する';
 $string['settings'] = '数式エディタ設定';
 $string['update'] = '更新';

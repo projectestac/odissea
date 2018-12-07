@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_date', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_date', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Data';
 $string['pluginname'] = 'Data';
+$string['privacy:metadata'] = 'Data eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';

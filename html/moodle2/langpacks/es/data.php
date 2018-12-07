@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,6 +76,9 @@ $string['comments'] = 'Comentarios';
 $string['commentsaved'] = 'Comentario guardado';
 $string['commentsn'] = '{$a} comentarios';
 $string['commentsoff'] = 'La opción comentarios no está habilitada';
+$string['completionentries'] = 'Entradas requeridas';
+$string['completionentriescount'] = 'Número de entradas';
+$string['completionentriesdesc'] = 'Número mínimo de entradas requeridas: {$a}';
 $string['configenablerssfeeds'] = 'Esta opción habilita la posibilidad de canales RSS para todas las bases de datos. Aún así necesitará activar manualmente los canales en los ajustes de cada base de datos.';
 $string['confirmdeletefield'] = 'Está a punto de eliminar este campo. ¿Está seguro?';
 $string['confirmdeleterecord'] = '¿Está seguro de que desea eliminar esta entrada?';
@@ -228,8 +231,13 @@ $string['headersingletemplate'] = 'Define la interfaz de navegación para una en
 $string['importentries'] = 'Importar entradas';
 $string['importsuccess'] = 'El ajuste previo ha sido aplicado con éxito.';
 $string['includeapproval'] = 'Incluya el estado de aprobación';
+$string['includetags'] = 'Incluir marcas';
 $string['includetime'] = 'Incluya fecha añadido / modificado';
 $string['includeuserdetails'] = 'Incluya detalles del usuario';
+$string['indicator:cognitivedepth'] = 'Base de Datos cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Base de Datos.';
+$string['indicator:socialbreadth'] = 'Base de Datos social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Base de Datos.';
 $string['insufficiententries'] = 'se necesitan más entradas para ver esta base de datos';
 $string['intro'] = 'Descripción';
 $string['invalidaccess'] = 'No se ha accedido correctamente a esta página';
@@ -379,6 +387,7 @@ Tipos de campo de la base de datos';
 $string['subplugintype_datapreset'] = '	
 Tipos de campo de la base de datos';
 $string['subplugintype_datapreset_plural'] = 'Ajustes previos';
+$string['tags'] = 'Marcas';
 $string['teachersandstudents'] = '{$a->teachers} y {$a->students}';
 $string['templates'] = 'Plantillas';
 $string['templatesaved'] = 'Plantilla guardada';

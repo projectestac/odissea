@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,6 +90,7 @@ $string['comments'] = 'Comments';
 $string['commentson'] = 'Comments on';
 $string['commentupdated'] = 'The comment has been updated.';
 $string['completionentries'] = 'Student must create entries:';
+$string['completionentriesdesc'] = 'Student must create at least {$a} entry/entries';
 $string['completionentriesgroup'] = 'Require entries';
 $string['concept'] = 'Concept';
 $string['concepts'] = 'Concepts';
@@ -107,6 +108,7 @@ $string['defaultsortorder'] = 'Default sort order';
 $string['definition'] = 'Definition';
 $string['definitions'] = 'Definitions';
 $string['deleteentry'] = 'Delete entry';
+$string['deleteentrya'] = 'Delete entry: {$a}';
 $string['deletenotenrolled'] = 'Delete entries by users not enrolled';
 $string['deletingcomment'] = 'Deleting comment';
 $string['deletingnoneemptycategory'] = 'Deleting this category will not delete the entries it contains - they will be marked as uncategorised.';
@@ -140,6 +142,7 @@ $string['editalways'] = 'Always allow editing';
 $string['editalways_help'] = 'This setting specifies whether entries are always editable or whether students can only edit their entries during a configured editing time (usually 30 minutes).';
 $string['editcategories'] = 'Edit categories';
 $string['editentry'] = 'Edit entry';
+$string['editentrya'] = 'Edit entry: {$a}';
 $string['editingcomment'] = 'Editing comment';
 $string['entbypage'] = 'Entries shown per page';
 $string['entries'] = 'Entries';
@@ -213,6 +216,10 @@ $string['importedentries'] = 'Imported entries';
 $string['importentries'] = 'Import entries';
 $string['importentriesfromxml'] = 'Import entries from XML file';
 $string['includegroupbreaks'] = 'Include group breaks';
+$string['indicator:cognitivedepth'] = 'Glossary cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Glossary activity.';
+$string['indicator:socialbreadth'] = 'Glossary social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Glossary activity.';
 $string['isglobal'] = 'Is this glossary global?';
 $string['isglobal_help'] = 'A global glossary has entries which are linked to from throughout the site, rather than only in the course that the glossary is in. Only administrators can set a glossary as global.';
 $string['letter'] = 'letter';
@@ -264,9 +271,22 @@ $string['popupformat'] = 'Popup format';
 $string['print'] = 'Print';
 $string['printerfriendly'] = 'Printer-friendly version';
 $string['printviewnotallowed'] = 'Print view isn\'t allowed';
+$string['privacy'] = 'Privacy of results';
+$string['privacy:metadata:core_comments'] = 'Comments made on glossary definitions are stored using core_comment system';
+$string['privacy:metadata:core_files'] = 'Files linked to glossary definitions are stored using the core_files system';
+$string['privacy:metadata:core_rating'] = 'Ratings added to glossary entries are stored using core_rating system';
+$string['privacy:metadata:core_tag'] = 'Tags added to glossary definitions are stored using core_tag system';
+$string['privacy:metadata:glossary_entries'] = 'Information about the user\'s entries for a given glossary activity';
+$string['privacy:metadata:glossary_entries:attachment'] = 'The attachment of the entry the user added';
+$string['privacy:metadata:glossary_entries:concept'] = 'The concept of the entry the user added';
+$string['privacy:metadata:glossary_entries:definition'] = 'The definition of the entry the user added';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'The ID of the glossary activity the user is providing entry for';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'The timestamp indicating when the glossary entry was modified by the user';
+$string['privacy:metadata:glossary_entries:userid'] = 'The ID of the user that is adding this glossary entry';
 $string['question'] = 'Question';
 $string['rejectedentries'] = 'Rejected entries';
 $string['rejectionrpt'] = 'Rejection report';
+$string['removeallglossarytags'] = 'Remove all glossary tags';
 $string['resetglossaries'] = 'Delete entries from';
 $string['resetglossariesall'] = 'Delete entries from all glossaries';
 $string['rssarticles'] = 'Number of RSS recent articles';
@@ -291,6 +311,8 @@ $string['sortchronogically'] = 'Sort chronologically';
 $string['special'] = 'Special';
 $string['standardview'] = 'Browse by alphabet';
 $string['studentcanpost'] = 'Students can add entries';
+$string['tagarea_glossary_entries'] = 'Glossary entries';
+$string['tagsdeleted'] = 'Glossary tags have been deleted';
 $string['totalentries'] = 'Total entries';
 $string['usedynalink'] = 'Automatically link glossary entries';
 $string['usedynalink_help'] = 'If site-wide glossary auto-linking has been enabled by an administrator and this setting is enabled, the "Add a new entry" form includes the option to automatically link the entry wherever the concept words and phrases appear throughout the rest of the course.';

@@ -15,12 +15,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This class implements WIRIS cache interface
- * to store WIRIS Quizzes cache on Moodle database.
+ * This class implements Wiris cache interface
+ * to store Wiris Quizzes cache on Moodle database.
  *
  * @package    qtype
  * @subpackage wq
- * @copyright  Maths for More S.L. <info@wiris.com>
+ * @copyright  WIRIS Europe (Maths for more S.L)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_mnet', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['mnet_enrol_description'] = 'Per consentire gli amministratori del sito 
 $string['mnet_enrol_name'] = 'Servizio remoto di iscrizione';
 $string['pluginname'] = 'Iscrizioni remote MNet';
 $string['pluginname_desc'] = 'Consente l\'iscrizione ai corsi di utenti provenienti da host MNet.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "Iscrizioni remote MNet" non memorizza dati personali.';
 $string['remotesubscriber'] = 'Host remoto';
 $string['remotesubscriber_help'] = 'Scegli \'Tutti gli host\' se si desideri consentire l\'accesso al corso da tutti i nodi MNet verso i quali pubblichi il servizi di iscrizione remota. In alternativa, imposta l\'host dal quale consentire l\'accesso al corso.';
 $string['remotesubscribersall'] = 'Tutti gli host';

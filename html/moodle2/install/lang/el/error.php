@@ -30,20 +30,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cannotcreatedboninstall'] = '<p>Αδυναμία δημιουργίας βάσης δεδομένων.</p> <p>Η βάση δεδομένων που προσδιορίστηκε δεν υπάρχει και ο χρήστης που δόθηκε δεν έχει δικαίωμα να δημιουργήσει την βάση δεδομένων.</p> <p>Ο διαχειριστής του ιστοτόπου πρέπει να επαληθεύσει τις ρυθμίσεις της βάσης δεδομένων.</p>';
 $string['cannotcreatelangdir'] = 'Δε δημιουργήθηκε φάκελος γλώσσας.';
 $string['cannotcreatetempdir'] = 'Αδυναμία δημιουργίας προσωρινού φακέλου';
-$string['cannotdownloadcomponents'] = 'Αδυναμία λήψης συστατικών.';
-$string['cannotdownloadzipfile'] = 'Αδυναμία λήψης συμπιεσμένου αρχείου';
-$string['cannotfindcomponent'] = 'Αδυναμία εύρεσης συστατικού.';
+$string['cannotdownloadcomponents'] = 'Δεν μπορεί να γίνει λήψη των στοιχείων λογισμικού';
+$string['cannotdownloadzipfile'] = 'Δεν μπορεί να γίνει λήψη του αρχείου ZIP.';
+$string['cannotfindcomponent'] = 'Δεν βρέθηκε το στοιχείο λογισμικού.';
 $string['cannotsavemd5file'] = 'Αδυναμία αποθήκευσης αρχείου md5.';
 $string['cannotsavezipfile'] = 'Αδυναμία αποθήκευσης συμπιεσμένου αρχείου';
 $string['cannotunzipfile'] = 'Αδυναμία αποσυμπίεσης αρχείου';
-$string['componentisuptodate'] = 'Το συστατικό είναι ενημερωμένο.';
-$string['downloadedfilecheckfailed'] = 'Το κατέβασμα ελέγχου αρχείου απέτυχε.';
+$string['componentisuptodate'] = 'Το στοιχείο λογισμικού είναι ενημερωμένο.';
+$string['dmlexceptiononinstall'] = '<p>Παρουσιάστηκε σφάλμα βάσης δεδομένων [{$a->errorcode}].<br />{$a->debuginfo}</p>';
+$string['downloadedfilecheckfailed'] = 'Αποτυχία ελέγχου αρχείου που έγινε λήψη';
 $string['invalidmd5'] = 'Μη έγκυρο md5';
 $string['missingrequiredfield'] = 'Κάποιο απαιτούμενο πεδίο λείπει';
-$string['remotedownloaderror'] = '<p>Απέτυχε η λήψη του συστατικού στο διακομιστή σας. Παρακαλώ επιβεβαιώστε τις ρυθμίσεις του διακομιστή proxy, η επέκταση PHP cURL συνιστάται ιδιαίτερα.</p>
-<p>Πρέπει να κατεβάσετε το αρχείο <a href="{$a->url}">{$a->url}</a> χειροκίνητα, να το αντιγράψετε στο "{$a->dest}" στο διακομιστή σας και να το αποσυμπιέσετε εκεί.</p>';
-$string['wrongdestpath'] = 'Λανθασμένη διαδρομή προορισμού.';
+$string['remotedownloaderror'] = '<p>Απέτυχε η λήψη του τμήματος στον εξυπηρετητή σας. Παρακαλούμε επιβεβαιώστε τις ρυθμίσεις του διακομιστή μεσολάβησης (proxy)· η επέκταση PHP cURL συνιστάται θερμά.</p> <p>Πρέπει να κατεβάσετε το <a href="{$a->url}">{$a->url}</a> χειροκίνητα, να το αντιγράψετε στο "{$a->dest}" στον εξυπηρετητή σας και να το αποσυμπιέσετε εκεί.</p>';
+$string['wrongdestpath'] = 'Λανθασμένη διαδρομή προορισμού (πλήρες όνομα).';
 $string['wrongsourcebase'] = 'Λανθασμένη βάση πηγής URL.';
 $string['wrongzipfilename'] = 'Λανθασμένo όνομα αρχείου ZIP.';

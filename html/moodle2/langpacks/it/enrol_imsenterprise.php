@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['nestedcategories'] = 'Consenti categorie nidificate';
 $string['nestedcategories_desc'] = 'IMS Enterprise creerà categorie nidificate';
 $string['pluginname'] = 'File IMS Enterprise';
 $string['pluginname_desc'] = 'Il plugin di iscrizione IMS Enterprise controlla ripetutamente la presenza di un file di testo in un dato percorso. Il file deve seguire le specifiche IMS Enterprise e contenere gli elementi XML relativi a persone, gruppi e appartenenza. ';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "File IMS Enterprise" non memorizza dati personali.';
 $string['processphoto'] = 'Aggiungi una foto al profilo';
 $string['processphotowarning'] = 'ATTENZIONE: lavorare un\'immagine potrebbe aggravare il lavoro del server. Si raccomanda di NON attivare questa opzione se è previsto un elevato numero di utenti.';
 $string['restricttarget'] = 'Elabora i dati solo se destinati al sistema specificato';

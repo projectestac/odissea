@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -190,6 +190,7 @@ $string['guestsnotallowed'] = 'Только записанные в курс п�
 $string['howlong'] = 'Как долго Вы заполняли анкету?';
 $string['howlongoptions'] = 'менее 1 мин, 1-2 мин, 2-3 мин, 3-4 мин, 4-5- мин, 5-10 мин, более 10 мин';
 $string['ifoundthat'] = 'Я узнал, что';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Анкета.';
 $string['introtext'] = 'Вступительный текст';
 $string['invalidsurveyid'] = 'ID анкеты некорректен';
 $string['invalidtmptid'] = 'Неверный ID шаблона';

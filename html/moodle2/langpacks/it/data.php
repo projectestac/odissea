@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = 'La data di disponibilità \'Fino al\' no
 $string['blank'] = 'Vuoto';
 $string['buttons'] = 'Azioni';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
-$string['calendarend'] = 'L\'attività database {$a} chiude';
-$string['calendarstart'] = 'Il database {$a} apre';
+$string['calendarend'] = '{$a} chiude';
+$string['calendarstart'] = '{$a} apre';
 $string['cancel'] = 'Annulla';
 $string['cannotaccesspresentsother'] = 'Non sei autorizzato ad accedere alle preimpostazioni di altri utenti';
 $string['cannotadd'] = 'Impossibile aggiungere record!';
@@ -76,6 +76,9 @@ $string['comments'] = 'Commenti ai record';
 $string['commentsaved'] = 'Il commento è stato salvato';
 $string['commentsn'] = '{$a} commento(i)';
 $string['commentsoff'] = 'I commenti non sono abilitati';
+$string['completionentries'] = 'Record  richiesti';
+$string['completionentriescount'] = 'Numero di record';
+$string['completionentriesdesc'] = 'Numero minimo di record da inserire: {$a}';
 $string['configenablerssfeeds'] = 'Questa impostazione consente di generare feed RSS dalle attività Database. Per generare il feed RSS, sarà poi necessario abilitare manualmente l\'impostazione in ciascuna attività Database.';
 $string['confirmdeletefield'] = 'Stai per eliminare questo campo. Sei sicuro?';
 $string['confirmdeleterecord'] = 'Stai per eliminare questo record. Ne sei certo?';
@@ -201,8 +204,13 @@ $string['headersingletemplate'] = 'Impostazione dell\'interfaccia per la visuali
 $string['importentries'] = 'Importa contenuti';
 $string['importsuccess'] = 'Le preimpostazioni sono state applicate correttamente.';
 $string['includeapproval'] = 'Includi stato di approvazione';
+$string['includetags'] = 'Includi tag';
 $string['includetime'] = 'Includi data di inserimento/modifica';
 $string['includeuserdetails'] = 'Includi dettagli utente';
+$string['indicator:cognitivedepth'] = 'Database cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'database\'.';
+$string['indicator:socialbreadth'] = 'Database sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'database\'.';
 $string['insufficiententries'] = 'è necessario inserire un maggior numero di record prima di poter visualizzare questo Database';
 $string['intro'] = 'Descrizione';
 $string['invalidaccess'] = 'Questa pagina non è stata acceduta correttamente';
@@ -241,7 +249,7 @@ $string['modulename_help'] = 'Il modulo attività database consente ai partecipa
 
 L\'impaginazione delle informazioni per le viste singola, ad elenco e modifica, possono essere impostate attraverso modelli. Le attività Database possono essere condivise tra corsi diversi tramite le preimpostazioni ed è anche possibile esportare ed importare record.
 
-Nel caso in cui il filtro Link automatici al database sia attivo, verrà creato un link tutte le volte che il contenuto di un campo comparirà nei testi del corso.
+Nel caso in cui il filtro "Collegamento automatico ai campi del database" sia attivo, verrà creato un link tutte le volte che il contenuto di un campo comparirà nei testi del corso.
 
 Un docente può consentire i commenti e la valutazione dei record, anche da parte degli stessi studenti (valutazione tra pari). Le valutazioni possono essere aggregate e la valutazione finale sarà memorizzata nel registro del valutatore.
 
@@ -312,15 +320,17 @@ $string['recorddeleted'] = 'Il record è stato eliminato';
 $string['recorddisapproved'] = 'Record disapprovato';
 $string['recordsnotsaved'] = 'Nessun record è stato salvato. Prima di provare nuovamente, per favore controlla il formato del file usato per il caricamento.';
 $string['recordssaved'] = 'record salvati';
+$string['removealldatatags'] = 'Rimuovi tutti i tag del database';
 $string['requireapproval'] = 'Approvazione dei record inseriti';
 $string['requireapproval_help'] = 'Sarà necessario approvare i record inseriti per renderli visualizzabili dagli altri utenti.';
 $string['required'] = 'Obbligatorio';
-$string['requiredentries'] = 'Numero minimo di record da inserire';
+$string['requiredentries'] = 'Numero minimo di record da inserire (obsoleto)';
 $string['requiredentries_help'] = 'Il numero minimo di record che un utente deve obbligatoriamente inserire nel Database per ritenere completata l\'attività.';
 $string['requiredentriestoview'] = 'Numero minimo di record da inserire per visualizzare';
 $string['requiredentriestoview_help'] = 'Il numero minimo di record che l\'utente deve inserire obbligatoriamente prima di poter visualizzare i record presenti nel Database.
 
 Nota: se è previsto un numero minimo di record prima della visualizzazione, allora il filtro Auto collegamento al database deve essere disabilitato poiché il filtro non può sapere se un utente ha inserito il numero di record minimo.';
+$string['requiredentrieswarning'] = 'L\'impostazione è stata sostituita dal criterio di completamento attività "Record  richiesti"';
 $string['requiredfield'] = 'Campo obbligatorio';
 $string['resetsettings'] = 'Reimposta filtri';
 $string['resettemplate'] = 'Reimposta il modello';
@@ -348,6 +358,8 @@ $string['subplugintype_datafield'] = 'Tipo di campo database';
 $string['subplugintype_datafield_plural'] = 'Tipi di campi database';
 $string['subplugintype_datapreset'] = 'Preimpostazione';
 $string['subplugintype_datapreset_plural'] = 'Preimpostazioni';
+$string['tags'] = 'Tag';
+$string['tagsdeleted'] = 'I tag database sono stati eliminati';
 $string['teachersandstudents'] = '{$a->teachers} e {$a->students}';
 $string['templates'] = 'Modelli';
 $string['templatesaved'] = 'Il modello di visualizzazione è stato salvato';

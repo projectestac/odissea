@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = '早急に (ASAP)';
+$string['backtoscheduledtasks'] = 'スケジュールタスクに戻る';
 $string['blocking'] = 'ブロッキング';
 $string['component'] = 'コンポーネント';
 $string['corecomponent'] = 'コア';
@@ -33,13 +34,18 @@ $string['default'] = 'デフォルト';
 $string['disabled'] = '無効';
 $string['disabled_help'] = '無効にされたスケジュールタスクはcronにより実行されません。CLIツール経由で手動実行することはできます。';
 $string['edittaskschedule'] = 'スケジュールタスクを編集する: {$a}';
+$string['enablerunnow'] = 'スケジュールタスクの「今すぐ実行する」を許可する';
+$string['enablerunnow_desc'] = '定期的な実行を待つのではなく、管理者が個別のスケジュールタスクを今すぐ実行できるようにします。タスクはウェブサーバ上で実行されるため、サイトによっては潜在的なパフォーマンスの問題を避ける目的でこの機能を無効にしてもよいでしょう。';
 $string['faildelay'] = '失敗時の待機';
 $string['lastruntime'] = '最新実行';
 $string['nextruntime'] = '次の実行';
 $string['plugindisabled'] = 'プラグイン無効';
 $string['pluginname'] = 'スケジュールタスク設定';
+$string['privacy:metadata'] = 'スケジュールタスク設定プラグインはどのような個人データも保存しません。';
 $string['resettasktodefaults'] = 'スケジュールタスクをデフォルトにリセットする';
 $string['resettasktodefaults_help'] = 'これによりローカルの変更すべてが破棄され、このタスクのスケジュールはオリジナル設定に戻されます。';
+$string['runnow'] = '今すぐ実行する';
+$string['runnow_confirm'] = '本当にタスク「 {$a} 」を今すぐ実行してもよろしいですか? タスクはウェブサーバ上で実行されて完了までに時間を要します。';
 $string['scheduledtaskchangesdisabled'] = 'スケジュールタスク一覧の修正はMoodle設定で禁止されています。';
 $string['scheduledtasks'] = 'スケジュールタスク';
 $string['taskdisabled'] = 'タスクが無効にされました。';

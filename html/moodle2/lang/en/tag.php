@@ -92,6 +92,19 @@ $string['noresultsfor'] = 'No results for "{$a}"';
 $string['nothingtoupdate'] = 'Nothing to update';
 $string['owner'] = 'Owner';
 $string['prevpage'] = 'Back';
+$string['privacy:metadata:tag'] = 'The details of each unique tag are stored alongside their description and other related information';
+$string['privacy:metadata:tag:name'] = 'The name of the tag - this is the normalised version of the name.';
+$string['privacy:metadata:tag:rawname'] = 'The name of the tag - this is the display name.';
+$string['privacy:metadata:tag:description'] = 'The description of the tag.';
+$string['privacy:metadata:tag:flag'] = 'Whether a tag has been flagged as inappropriate.';
+$string['privacy:metadata:tag:timemodified'] = 'The time that the tag was last modified.';
+$string['privacy:metadata:tag:userid'] = 'The ID of the user who created the tag.';
+$string['privacy:metadata:taginstance'] = 'The link between each tag and where it is used.';
+$string['privacy:metadata:taginstance:tagid'] = 'The link to the tag.';
+$string['privacy:metadata:taginstance:ordering'] = 'The relative order of this tag.';
+$string['privacy:metadata:taginstance:timecreated'] = 'The time that this tag was linked to the target.';
+$string['privacy:metadata:taginstance:timemodified'] = 'The time that this tag was modified for the target.';
+$string['privacy:metadata:taginstance:tiuserid'] = 'Where shared content can be individually tagged by users, the owner of the tag instance is stored.';
 $string['ptags'] = 'User defined tags (Comma separated)';
 $string['relatedblogs'] = 'Most recent blog entries';
 $string['relatedtags'] = 'Related tags';
@@ -147,16 +160,6 @@ $string['page-tag-x'] = 'All tag pages';
 $string['page-tag-index'] = 'Single tag page';
 $string['page-tag-search'] = 'Tag search page';
 $string['page-tag-manage'] = 'Manage tags page';
-
-// Deprecated since 3.0 .
-
-$string['addedotag'] = '"{$a}" was added as an official tag.';
-$string['newname'] = 'New tag name';
-$string['tagtype_default'] = 'Default';
-$string['tagtype_official'] = 'Official';
-$string['thistaghasnodesc'] = 'This tag currently has no description.';
-$string['updated'] = 'Updated';
-$string['withselectedtags'] = 'With selected tags...';
 
 // Deprecated since 3.1 .
 

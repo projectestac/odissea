@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodleimage', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodleimage', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodleimage
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'イメージを探すまたはアップロードする ...';
 $string['pluginname'] = 'イメージを追加する';
+$string['privacy:metadata'] = 'TinyMCE Moodleイメージプラグインはどのような個人データも保存しません。';

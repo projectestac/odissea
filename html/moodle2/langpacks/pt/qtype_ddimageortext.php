@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa imagem
 $string['pluginnamesummary'] = 'As imagens e quadros de texto podem ser arrastados e largados em zonas predefinidas para largar, numa imagem de fundo.';
 $string['previewareaheader'] = 'Pré-visualização';
 $string['previewareamessage'] = 'Selecione uma imagem de fundo, indique os itens arrastáveis e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa imagem não armazena quaisquer dados pessoais.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shuffleimages'] = 'Baralhar os itens para arrastar a cada nova tentativa da pergunta';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

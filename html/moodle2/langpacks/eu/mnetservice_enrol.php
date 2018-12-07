@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availablecourseson'] = 'Eskura dauden ikastaroak hemen: {$a}';
 $string['availablecoursesonnone'] = '<a href="{$a->hosturl}">{$a->hostname}</a> urrutiko ostalariak ez die gure erabiltzaileei ikastarorik eskaintzen.';
 $string['clientname'] = 'Urrutiko matrikulazio-bezeroa';
-$string['clientname_help'] = 'Erreminta honek zure erabiltzaile lokalak \'MNet urrutiko matrikulazioak\' gehigarriaren bidez baimendutako urruneko ostalarietan matrikulatu eta desmatrikulatzea ahalbidetzen dizu.';
+$string['clientname_help'] = 'Erreminta honek zure erabiltzaile lokalak \'MNet urrutiko matrikulazioak\' pluginaren bidez baimendutako urruneko ostalarietan matrikulatu eta desmatrikulatzea ahalbidetzen dizu.';
 $string['editenrolments'] = 'Editatu matrikulazioak';
 $string['hostappname'] = 'Aplikazioa';
 $string['hostname'] = 'Ostalariaren izena';
@@ -37,4 +37,12 @@ $string['nopublishers'] = 'Ez dago eskura urrutiko kiderik.';
 $string['noroamingusers'] = 'Erabiltzaileek \'{$a}\' gaitasuna behar dute sistemaren testuinguruan urruneko ikastaroetan matrikulatu ahal izateko, baina une honetan ez dago gaitasun hori duen erabiltzailerik. Klik egin Jarraitu botoian zure guneko rol bati edo gehiagori beharrezko gaitasuna esleitzeko.';
 $string['otherenrolledusers'] = 'Matrikulatutako beste erabiltzaile batzuk';
 $string['pluginname'] = 'Urrutiko matrikulazio-zerbitzua';
+$string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Urruneko matrikulazio-zerbitzua';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'Matrikulazioa aldatu zeneko unea';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'Gure ikaslea euren ikastaroan matrikulatzeko erabilitako urruneko zerbitzariko matrikulazio-pluginaren izena.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'Urruneko MNet ostalariaren IDa.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'Urruneko zerbitzariko ikastaroaren IDa.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Urruneko zerbitzariko rolaren izena.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Taula honek erabiltzaile lokalek urruneko ostalarietako ikastaroetan dituzten matrikulazioen informazioa gordetzen du.';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'Erabiltzaile lokalak zerbitzari honetan duen IDa.';
 $string['refetch'] = 'Berriz eskuratu urruneko ostalariko eguneratze-egoera';

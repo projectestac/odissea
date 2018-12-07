@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ Por ejemplo, si una respuesta se marca como incorrecta, el alumno podrá volver 
 $string['add'] = 'Agregar';
 $string['addaquestion'] = 'una nueva pregunta';
 $string['addarandomquestion'] = 'una pregunta aleatoria';
-$string['addarandomquestion_help'] = 'Cuando se añade una pregunta al azar, se traduce en que en el cuestionario se inserta una pregunta seleccionada aleatoriamente de entre las que componen la categoría. Esto significa que los distintos alumnos tendrán probablemente una selección distinta de preguntas. Por otra parte, cuando el cuestionario permite múltiples intentos, cada uno de ellos probablemente contendrá una nueva selección de preguntas.';
+$string['addarandomquestion_help'] = 'Cuando se añade una pregunta aleatoria, se traduce en que en el cuestionario se inserta una pregunta seleccionada aleatoriamente de entre las que componen la categoría. Esto significa que los distintos alumnos tendrán probablemente una selección distinta de preguntas. Por otra parte, cuando el cuestionario permite múltiples intentos, cada uno de ellos probablemente contendrá una nueva selección de preguntas.';
 $string['addarandomselectedquestion'] = 'Agregar una pregunta seleccionada aleatoria ...';
 $string['addasection'] = 'un nuevo encabezado para la sección';
 $string['adddescriptionlabel'] = 'Agregar una descripción/etiqueta';
@@ -58,7 +58,7 @@ $string['addrandom2'] = 'preguntas aleatorias';
 $string['addrandomfromcategory'] = 'Agregar preguntas aleatorias de la categoría:';
 $string['addrandomquestion'] = 'Agregar pregunta aleatoria';
 $string['addrandomquestionatend'] = 'Añadir una pregunta aleatoria al final';
-$string['addrandomquestiontopage'] = 'Añadir una pregunta al azar a la página {$a}';
+$string['addrandomquestiontopage'] = 'Añadir una pregunta aleatoria a la página {$a}';
 $string['addrandomquestiontoquiz'] = 'Agregar pregunta aleatoria al cuestionario {$a}';
 $string['addselectedquestionstoquiz'] = 'Añadir preguntas seleccionadas para el cuestionario';
 $string['addselectedtoquiz'] = 'Agregar al cuestionario';
@@ -229,7 +229,7 @@ $string['countdowntenminutes'] = 'El cuestionario se cerrará en diez minutos.';
 $string['coursetestmanager'] = 'Formato de Administración de Test de Curso';
 $string['createcategoryandaddrandomquestion'] = 'Crear la categoría y añadir pregunta aleatoria';
 $string['createfirst'] = 'Antes debe crear algunas preguntas de respuesta corta.';
-$string['createmultiple'] = 'Añadir varias preguntas aleatoriamente al cuestionario';
+$string['createmultiple'] = 'Añadir varias preguntas aleatorias al cuestionario';
 $string['createnewquestion'] = 'Crear una pregunta nueva';
 $string['createquestionandadd'] = 'Crear una nueva pregunta y agregarla al cuestionario.';
 $string['custom'] = 'Formato personalizado';
@@ -446,6 +446,10 @@ Hay demasiadas respuestas.';
 $string['importquestions'] = 'Importar preguntas de un archivo';
 $string['inactiveoverridehelp'] = '* El estudiante no tiene el rol o el grupo correctos para intentar resolver el cuestionario';
 $string['incorrect'] = 'Incorrecta';
+$string['indicator:cognitivedepth'] = 'Cuestionario cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Cuestionario.';
+$string['indicator:socialbreadth'] = 'Cuestionario social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Cuestionario.';
 $string['indivresp'] = 'Respuestas de los individuos a cada ítem';
 $string['info'] = 'Información';
 $string['infoshort'] = 'i';
@@ -723,7 +727,7 @@ $string['randomcreate'] = 'Crear preguntas aleatorias';
 $string['randomfromcategory'] = 'Pregunta aleatoria de la categoría.';
 $string['randomfromexistingcategory'] = 'Pregunta aleatoria desde una categoría existente';
 $string['randomnosubcat'] = 'Preguntas sólo de esta categoría, no de sus sub-categorías.';
-$string['randomnumber'] = 'Número de preguntas al azar';
+$string['randomnumber'] = 'Número de preguntas aleatorias';
 $string['randomquestionusinganewcategory'] = 'Pregunta aleatoria utilizando una categoría nueva';
 $string['randomwithsubcat'] = 'Preguntas de esta categoría y de sus sub-categorías.';
 $string['readytosend'] = 'Está a punto de enviar su cuestionario para que sea evaluado. ¿Está seguro de que desea continuar?';
@@ -802,7 +806,7 @@ $string['reviewofpreview'] = 'Revisión de la vista previa';
 $string['reviewofquestion'] = 'Revisión de la pregunta {$a->question} en {$a->quiz} por {$a->user}';
 $string['reviewopen'] = 'Más tarde, mientras el cuestionario está aún abierto';
 $string['reviewoptions'] = 'Los estudiantes pueden revisar';
-$string['reviewoptionsheading'] = 'Revisar opciones';
+$string['reviewoptionsheading'] = 'Opciones de revisión';
 $string['reviewoptionsheading_help'] = 'Estas opciones controlan qué información pueden ver los estudiantes cuando revisan un intento del cuestionario o cuando consultan los informes del cuestionario.
 
 ** Durante el intento** los ajustes solo son relevantes en algunas situaciones, como en el caso  "interactivo con varios intentos", que pueden mostrar información durante el intento.
@@ -842,6 +846,7 @@ $string['select'] = 'Seleccionar';
 $string['selectall'] = 'Seleccionar todos';
 $string['selectcategory'] = 'Seleccionar categoría';
 $string['selectedattempts'] = 'Intentos seleccionados...';
+$string['selectmultipleitems'] = 'Seleccionar varios elementos';
 $string['selectnone'] = 'Omitir todos';
 $string['selectquestiontype'] = '-- Seleccionar tipo de pregunta --';
 $string['serveradded'] = 'Servidor añadido';
@@ -933,7 +938,7 @@ $string['timetaken'] = 'Tiempo empleado';
 $string['timing'] = 'Temporalización';
 $string['tofile'] = 'al archivo';
 $string['tolerance'] = 'Tolerancia';
-$string['toomanyrandom'] = 'El número requerido de preguntas es mayor de las que contiene esta categoría.';
+$string['toomanyrandom'] = '¡El número solicitado de preguntas aleatorias es mayor de las que contiene esta categoría!';
 $string['top'] = 'Arriba';
 $string['totalmarksx'] = 'Total de calificaciones: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Total de {$a} preguntas en la categoría.';

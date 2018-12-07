@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_tex', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,4 +36,5 @@ $string['pathdvisvgm'] = '<i>dvisvgm</i> bitarrerako bidea';
 $string['pathlatex'] = '<i>latex</i> bitarrerako bidea';
 $string['pathmimetex'] = '<i>mimetex</i> bitarrarako bidea';
 $string['pathmimetexdesc'] = 'Moodle-k bere mimetex bitarra erabiliko du baliozkoa den beste helbide bat zehazten ez bada.';
+$string['privacy:metadata'] = 'TeX idazketa pluginak ez du datu pertsonalik biltzen.';
 $string['source'] = 'TeX iturburua';

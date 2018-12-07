@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_topics', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   format_topics
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Themen hinzufügen';
 $string['currentsection'] = 'Dieses Thema';
 $string['deletesection'] = 'Thema löschen';
 $string['editsection'] = 'Thema bearbeiten';
@@ -34,6 +35,7 @@ $string['newsectionname'] = 'Neuer Name für Thema {$a}';
 $string['page-course-view-topics'] = 'Jede Kurshauptseite im Themenformat';
 $string['page-course-view-topics-x'] = 'Jede Kursseite im Themenformat';
 $string['pluginname'] = 'Themenformat';
+$string['privacy:metadata'] = 'Das Themen-Kursformat-Plugin speichert keine persönlichen Daten.';
 $string['section0name'] = 'Allgemeines';
 $string['sectionname'] = 'Thema';
 $string['showfromothers'] = 'Thema anzeigen';

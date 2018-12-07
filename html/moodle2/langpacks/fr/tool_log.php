@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_log', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,10 @@ $string['configlogplugins'] = 'Veuillez activer tous les plugins nécessaires et
 $string['logging'] = 'Historiques';
 $string['managelogging'] = 'Gérer les stockages d\'historiques';
 $string['pluginname'] = 'Gestion des stockages d\'historiques';
+$string['privacy:path:logs'] = 'Journaux';
+$string['privacy:request:origin:restore'] = 'Sauvegarde restaurée';
+$string['privacy:request:origin:web'] = 'Requête web standard';
+$string['privacy:request:origin:ws'] = 'App mobile ou service web';
 $string['reportssupported'] = 'Rapports supportés';
 $string['subplugintype_logstore'] = 'Stockage d\'historiques';
 $string['subplugintype_logstore_plural'] = 'Stockages d\'historiques';

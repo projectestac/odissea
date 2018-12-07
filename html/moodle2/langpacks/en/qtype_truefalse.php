@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_truefalse', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_truefalse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['pluginnameediting'] = 'Editing a True/False question';
 $string['pluginname_help'] = 'In response to a question (that may include a image) the respondent chooses from true or false.';
 $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnamesummary'] = 'A simple form of multiple choice question with just the two choices \'True\' and \'False\'.';
+$string['privacy:metadata'] = 'The True/False question type plugin does not store any personal data.';
 $string['selectone'] = 'Select one:';
 $string['true'] = 'True';

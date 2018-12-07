@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,7 +39,6 @@ $string['missinglangparent'] = '<em>{$a->lang}</em>의 바탕언어팩인 <em>{$
 $string['nolangupdateneeded'] = '모든 언어팩이 최신판임. 업데이트가 필요없음';
 $string['pluginname'] = '언어팩 설치';
 $string['purgestringcaches'] = '문자열 캐시 청소';
-$string['remotelangnotavailable'] = '무들이 download.moodle.org에 접속하지 못했기 때문에 언어팩을 자동으로 설치하지 못하였습니다. http://download.moodle.org에서 적절한 zip파일을 내려받아 여러분의 {$a} 디랙토리에 수동으로 풀어넣기 바랍니다.';
 $string['uninstall'] = '선택된 언어팩의 제거';
 $string['uninstallconfirm'] = '{$a} 언어팩을 완전히 제거할 예정입니다. 확실합니까?';
 $string['updatelangs'] = '설치된 모든 언어팩 업데이트';

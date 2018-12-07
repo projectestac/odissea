@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -231,7 +231,6 @@ $string['special'] = 'Especial';
 $string['tableofcontents'] = 'Taula de continguts';
 $string['tagarea_wiki_pages'] = 'Pàgines wiki';
 $string['tagsdeleted'] = 'Les etiquetes wiki han estat suprimides';
-$string['tagtitle'] = 'Mostra l\'etiqueta «{$a}»';
 $string['teacherrating'] = 'Valoració del professor';
 $string['timesrating'] = 'Aquesta pàgina ha estat valorada {$a->c} vegades amb una mitjana = {$a->s}';
 $string['updatedpages'] = 'Pàgines actualitzades';

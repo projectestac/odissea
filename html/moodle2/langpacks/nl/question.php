@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,7 +77,7 @@ $string['categorycurrent'] = 'Huidige categorie';
 $string['categorycurrentuse'] = 'Gebruik deze categorie';
 $string['categorydoesnotexist'] = 'Deze categorie bestaat niet';
 $string['categoryinfo'] = 'Categorie info';
-$string['categorymove'] = 'De categorie \'{$a->name}\' bevat {$a->count} vragen (sommigen kunnen verborgen vragen of willekeurige vragen zijn die nog in gebruik zijn in een test). Kies alsjeblieft een andere categorie om deze vragen naar te verplaatsen.';
+$string['categorymove'] = 'De categorie \'{$a->name}\' bevat {$a->count} vragen (sommigen kunnen verborgen vragen zijn of willekeurige vragen die nog gebruikt worden in een test). Kies alsjeblieft een andere categorie om deze vragen naar te verplaatsen.';
 $string['categorymoveto'] = 'Bewaar in categorie';
 $string['categorynamecantbeblank'] = 'De categorienaam kan niet leeg zijn';
 $string['changeoptions'] = 'Wijzig opties';
@@ -115,7 +115,7 @@ $string['defaultfor'] = 'Standaard voor {$a}';
 $string['defaultinfofor'] = 'De standaardcategorie voor gedeelde vragen in context \'{$a}\'';
 $string['defaultmark'] = 'Standaard cijfer';
 $string['defaultmarkmustbepositive'] = 'Het standaardcijfer moet positief zijn.';
-$string['deletecoursecategorywithquestions'] = 'Er zijn vragen in de vragenbank geassocieerd met deze cursuscategorie. Als je verdergaat zullen die verwijderd worden. Misschien wil je ze eerst verplaatsen. Gebruik hiervoor de vragenbankinterface.';
+$string['deletecoursecategorywithquestions'] = 'Er zijn vragen in de vragenpool geassocieerd met deze cursuscategorie. Als je verdergaat zullen die verwijderd worden. Misschien wil je ze eerst verplaatsen. Gebruik hiervoor de vragenpoolinterface.';
 $string['deletequestioncheck'] = 'Weet je zeker dat je \'{$a}\' wil verwijderen?';
 $string['deletequestionscheck'] = 'Weet je zeker dat je volgende vragen wil verwijderen?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'Vraaggedrag \'{$a}\' verwijderen';
@@ -333,7 +333,7 @@ $string['questionname'] = 'Vraagnaam';
 $string['questionnamecopy'] = '{$a} (kopie)';
 $string['questionno'] = 'Vraag {$a}';
 $string['questionpreviewdefaults'] = 'Standaardinstellingen vraagvoorbeeld';
-$string['questionpreviewdefaults_desc'] = 'Deze standaardwaarden worden gebruikt wanneer een gebruiker vragen bekijkt in de vragenbank. Wanneer een gebruiker een vraag bekeken heeft, worden deze instellingen bewaard als persoonlijke gebruikersvoorkeuren.';
+$string['questionpreviewdefaults_desc'] = 'Deze standaardwaarden worden gebruikt wanneer een gebruiker vragen bekijkt in de vragenpool. Wanneer een gebruiker een vraag bekeken heeft, worden deze instellingen bewaard als persoonlijke gebruikersvoorkeuren.';
 $string['questions'] = 'Vragen';
 $string['questionsaveerror'] = 'Fouten opgetreden tijdens het bewaren van de vraag - ({$a})';
 $string['questionsinuse'] = '(* Vragen, gemerkt met een sterretje, zijn al in gebruik in sommige testen. Deze vragen zullen niet uit de testen gewist worden, enkel uit de categorielijst.)';

@@ -25,8 +25,8 @@ class moodle1_qtype_truefalsewiris_handler extends moodle1_qtype_truefalse_handl
         return array(
             'ANSWERS/ANSWER',
             'TRUEFALSE',
-            'TRUEFALSEWIRIS',
-            'TRUEFALSEWIRIS/WIRISOPTIONS'
+            'TRUEFALSEWiris',
+            'TRUEFALSEWiris/WirisOPTIONS'
         );
     }
 

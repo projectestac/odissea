@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choicegroup', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,7 +103,7 @@ $string['members/max'] = 'Membres / Capacité';
 $string['modulename'] = 'Choix de Groupe';
 $string['modulename_help'] = 'Le module « Choix de Groupe » permet à l\'enseignant de laisser l\'étudiant choisir un groupe. L\'enseignant peut déterminer parmi quels groupes les étudiants peuvent choisir et le nombre maximal d\'étudiants dans chaque groupe.';
 $string['modulenameplural'] = 'Choix de Groupe';
-$string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés pour ...';
+$string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés pour...';
 $string['multipleenrollmentspossible'] = 'Permettre l\'inscription à plusieurs groupes';
 $string['mustchooseone'] = 'Vous devez choisir une réponse avant de l\'enregistrer. Rien n\'a été sauvegardé.';
 $string['name'] = 'Nom';
@@ -123,6 +123,7 @@ $string['pleasesetonegroup'] = 'Veuillez créer au moins un groupe dans ce cours
 $string['pluginadministration'] = 'Administration de Choix de Groupe';
 $string['pluginname'] = 'Choix de groupe';
 $string['privacy'] = 'Confidentialité des résultats';
+$string['privacy:metadata'] = 'Le plugin Choix de groupe n\'enregistre aucune donnée personnelle. Les données personnelles sont stockées par le composant central des groupes de Moodle (core_group).';
 $string['publish'] = 'Publier les résultats';
 $string['publishafteranswer'] = 'Afficher les résultats aux étudiants après leur réponse';
 $string['publishafterclose'] = 'Afficher les résultats pour les étudiants seulement après la fermeture du choix';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -156,8 +156,10 @@ $string['linkexternal'] = 'Link external';
 $string['listview'] = 'View as list';
 $string['loading'] = 'Loading...';
 $string['login'] = 'Log in to your account';
+$string['logintoaccount'] = 'Log in to your {$a} account';
 $string['logout'] = 'Logout';
 $string['lostsource'] = 'Error. Source is missing. {$a}';
+$string['makefilecontrolledlink'] = 'Create an access controlled link to the file';
 $string['makefileinternal'] = 'Make a copy of the file';
 $string['makefilelink'] = 'Link to the file directly';
 $string['makefilereference'] = 'Create an alias/shortcut to the file';
@@ -195,6 +197,15 @@ $string['pluginnamehelp'] = 'If you leave this empty the default name will be us
 $string['popup'] = 'Click "Login" button to log in';
 $string['popupblockeddownload'] = 'The downloading window is blocked, please allow the popup window, and try again.';
 $string['preview'] = 'Preview';
+$string['privacy:metadata:repository'] = 'The Repository component stores the repository types within the core subsystem.';
+$string['privacy:metadata:repository_instances'] = 'The Repository plug-ins component stores user repository instances data within the core subsystem.';
+$string['privacy:metadata:repository_instances:name'] = 'The custom name of the repository instance.';
+$string['privacy:metadata:repository_instances:password'] = 'The optional password configured for the repository instance.';
+$string['privacy:metadata:repository_instances:timecreated'] = 'The date/time of creation for the repository instance.';
+$string['privacy:metadata:repository_instances:timemodified'] = 'The date/time of modification of the repository instance.';
+$string['privacy:metadata:repository_instances:typeid'] = 'The ID type of the repository instance.';
+$string['privacy:metadata:repository_instances:userid'] = 'The ID of the user owning the repository instance.';
+$string['privacy:metadata:repository_instances:username'] = 'The optional username configured for the repository instance.';
 $string['privatefilesof'] = '{$a} Private files';
 $string['readonlyinstance'] = 'You cannot edit/delete a read-only instance';
 $string['referencesexist'] = 'There are {$a} alias/shortcut files that use this file as their source';
@@ -224,7 +235,7 @@ $string['settings'] = 'Settings';
 $string['setupdefaultplugins'] = 'Setting up default repository plugins';
 $string['siteinstances'] = 'Repositories instances of the site';
 $string['size'] = 'Size';
-$string['sourcekeymismatch'] = 'The source url does not match the sourcekey.';
+$string['sourcekeymismatch'] = 'The source URL does not match the source key.';
 $string['submit'] = 'Submit';
 $string['sync'] = 'Sync';
 $string['syncfiletimeout'] = 'Sync file timeout';
@@ -236,6 +247,7 @@ $string['typenotvisible'] = 'Type not visible';
 $string['undisclosedreference'] = '(Undisclosed)';
 $string['undisclosedsource'] = '(Undisclosed)';
 $string['unknownoriginal'] = 'Unknown';
+$string['unknownsource'] = 'Unknown source';
 $string['unzipped'] = 'Unzipped successfully';
 $string['upload'] = 'Upload this file';
 $string['uploading'] = 'Uploading...';

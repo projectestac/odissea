@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_boost', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_boost
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsettings'] = 'Impostazioni avanzate';
-$string['choosereadme'] = 'Boost è un teme moderno e fortemente personalizzabile. E\' possibile usarlo come tema del sito oppure come tema padre di altri temi che usano Bootstrap 4.';
+$string['backgroundimage'] = 'Immagine di sfondo';
+$string['choosereadme'] = 'Boost è un tema moderno e fortemente personalizzabile. E\' possibile usarlo come tema del sito oppure come tema padre di altri temi che usano Bootstrap 4.';
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(zttuale)';
 $string['generalsettings'] = 'Impostazioni generali';
@@ -36,6 +37,7 @@ $string['preset_desc'] = 'Seleziona una preimpostazione per cambiare il look glo
 $string['presetfiles'] = 'File addizionali di preimpostazione del tema';
 $string['presetfiles_desc'] = 'I file di preimpostazione possono modificare fortemente il tema. Per informazioni sulla creazione e sulla condivisioni di file: <a href=https://docs.moodle.org/dev/Boost_Presets>Boost presets</a>
 Per scaricare preimpostazioni: <a href=http://moodle.net/boost>Presets repository</a>';
+$string['privacy:metadata'] = 'Il tema Boost non memorizza dati personali.';
 $string['rawscss'] = 'SCSS grezzo';
 $string['rawscss_desc'] = 'Utilizzare il campo per impostare un SCSS o CSS che sarò inserito alla fine fine del foglio di stile';
 $string['rawscsspre'] = 'SCSS grezzo iniziale';

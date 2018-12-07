@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -347,7 +347,7 @@ $string['invalidrole'] = 'Некорректная роль';
 $string['invalidroleid'] = 'Неверный идентификатор роли';
 $string['invalidscaleid'] = 'Неверный идентификатор шкалы';
 $string['invalidsection'] = 'Запись модуля курса содержит неверный раздел';
-$string['invalidsesskey'] = 'Отправлен неверный ключ сеанса (sesskey), форма не принята!';
+$string['invalidsesskey'] = 'Ваш сеанс, по-видимому, истек. Пожалуйста, войдите снова.';
 $string['invalidshortname'] = 'Это некорректное краткое название курса';
 $string['invalidsourcefield'] = 'Неверное поле источника файлов проекта';
 $string['invalidstatedetected'] = 'Что-то пошло не так: {$a}.
@@ -559,6 +559,7 @@ $string['usernotaddederror'] = 'Пользователь не добавлен -
 $string['usernotaddedregistered'] = 'Пользователь не добавлен - он уже зарегистрирован';
 $string['usernotavailable'] = 'Информация о данном пользователе Вам не доступна.';
 $string['usernotdeletedadmin'] = 'Пользователь не удален - нельзя удалять учетные записи администраторов';
+$string['usernotdeleteddeleted'] = 'Этот пользователь уже удален.';
 $string['usernotdeletederror'] = 'Ошибка - пользователь не удален';
 $string['usernotdeletedmissing'] = 'Пользователь не удален - не удается найти имя пользователя';
 $string['usernotdeletedoff'] = 'Пользователь не удален - удаление не разрешено';

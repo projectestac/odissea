@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_eventlist', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   report_eventlist
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,6 +52,7 @@ $string['otherinformation'] = 'Bestelako informazioa:';
 $string['parentevent'] = 'Goragoko ekitaldia';
 $string['participating'] = 'Partaidetza';
 $string['pluginname'] = 'Ekitaldi-zerrenda';
+$string['privacy:metadata'] = 'Ekitaldi-zerrenda pluginak ez du datu pertsonalik biltzen.';
 $string['read'] = 'irakurri';
 $string['relatedobservers'] = 'Ekitaldi honi begiratzen dioten pluginak';
 $string['since'] = 'Noiztik';

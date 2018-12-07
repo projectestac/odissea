@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -66,6 +66,10 @@ $string['filterfilesexplain'] = 'Bitte wählen Sie die Art der Filterung von Dat
 $string['filtername'] = 'Autoverlinkung zu Materialnamen';
 $string['forcedownload'] = 'Download erzwingen';
 $string['framesize'] = 'Framegröße';
+$string['indicator:cognitivedepth'] = 'Datei kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in bei einer Datei erreicht hat.';
+$string['indicator:socialbreadth'] = 'Datei sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in bei einer Datei erreicht hat.';
 $string['legacyfiles'] = 'Migration einer alten Kursdatei';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
@@ -88,6 +92,7 @@ $string['popupwidth'] = 'Breite des Popups (Pixel)';
 $string['popupwidthexplain'] = 'Standardbreite von Popup-Fenstern festlegen';
 $string['printintro'] = 'Beschreibung anzeigen';
 $string['printintroexplain'] = 'Beschreibung unterhalb des Inhalts anzeigen? Einige Anzeigetypen können die Beschreibung nicht anzeigen, selbst wenn diese Option aktiviert ist.';
+$string['privacy:metadata'] = 'Das Plugin Datei speichert keine personenbezogenen Daten.';
 $string['resource:addinstance'] = 'Datei hinzufügen';
 $string['resourcecontent'] = 'Dateien und Verzeichnisse';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

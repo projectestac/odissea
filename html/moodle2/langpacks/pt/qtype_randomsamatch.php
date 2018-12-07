@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_randomsamatch
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['pluginnameediting'] = 'A editar pergunta de correspondência de respost
 $string['pluginname_help'] = 'Na perspetiva do aluno esta pergunta é similar à de correspondência. A diferença é que a lista de itens (perguntas) para correspondência é retirada aleatoriamente do conjunto de perguntas de resposta curta disponíveis numa categoria. Para tal, devem existir perguntas de resposta curta em número suficiente, caso contrário é exibida uma mensagem de erro.';
 $string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnamesummary'] = 'Esta pergunta é exibida como uma pergunta de correspondência, mas é criada aleatoriamente com base nas perguntas de resposta curta existentes numa categoria específica.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Correspondência de respostas curtas aleatórias não armazena quaisquer dados pessoais.';
 $string['randomsamatch'] = 'Correspondência aleatória de resposta curta';
 $string['randomsamatchintro'] = 'Para cada uma das seguintes perguntas, selecione a resposta correspondente do menu.';
 $string['randomsamatchnumber'] = 'Número de perguntas a selecionar';

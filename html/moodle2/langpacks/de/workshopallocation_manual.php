@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_manual', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,5 @@ $string['allocationexists'] = 'Diese Zuordnung besteht bereits';
 $string['areyousuretodeallocate'] = 'Wollen Sie wirklich die Zuweisungen der ausgewählten Beurteilungen rückgängig machen?';
 $string['areyousuretodeallocategraded'] = 'Sie sind dabei eine Beurteilung zu löschen. Sind Sie sich sicher, dass Sie dies tun wollen?';
 $string['pluginname'] = 'Manuelle Zuordnung';
+$string['privacy:metadata:preference:perpage'] = 'Anzahl der zugeordneten Aufgaben, die der Nutzer auf einer Seite sieht.';
 $string['showallparticipants'] = 'Alle Teilnehmer/innen anzeigen';

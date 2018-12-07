@@ -284,8 +284,10 @@ class core_tag_tag {
         $tags = $DB->get_records_select('tag', 'name = :name AND tagcollid ' . $sql, $params, '', $returnfields);
         if (count($tags) > 1) {
             // Sort in the same order as tag collections.
-            uasort($tags, create_function('$a,$b', '$tagcolls = core_tag_collection::get_collections(); ' .
-                'return $tagcolls[$a->tagcollid]->sortorder < $tagcolls[$b->tagcollid]->sortorder ? -1 : 1;'));
+            $tagcolls = core_tag_collection::get_collections();
+            uasort($tags, function($a, $b) use ($tagcolls) {
+                return $tagcolls[$a->tagcollid]->sortorder < $tagcolls[$b->tagcollid]->sortorder ? -1 : 1;
+            });
         }
         $rv = array();
         foreach ($tags as $id => $tag) {
@@ -793,7 +795,7 @@ class core_tag_tag {
         }
 
         $ordering = $DB->get_field_sql('SELECT MAX(ordering) FROM {tag_instance} ti
-                WHERE ti.itemtype = :itemtype AND ti.itemid = itemid AND
+                WHERE ti.itemtype = :itemtype AND ti.itemid = :itemid AND
                 ti.component = :component' . $usersql, $params);
 
         return $tag->add_instance($component, $itemtype, $itemid, $context, $ordering + 1, $tiuserid);

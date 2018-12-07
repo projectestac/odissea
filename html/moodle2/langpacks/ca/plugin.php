@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'No s\'han pogut obtenir les dades d\'actual
 $string['filterall'] = 'Mostra tot';
 $string['filtercontribonly'] = 'Mostra només els connectors addicionals';
 $string['filterupdatesonly'] = 'Mostra només actualitzables';
+$string['isenabled'] = 'S\'ha habilitat?';
 $string['misdepinfoplugin'] = 'Informació del connector';
 $string['misdepinfoversion'] = 'Informació de la versió';
 $string['misdepsavail'] = 'Dependències perdudes disponibles';
@@ -104,6 +105,7 @@ $string['status_new'] = 'S\'instal·larà';
 $string['status_nodb'] = 'Cap base de dades';
 $string['status_upgrade'] = 'S\'actualitzarà';
 $string['status_uptodate'] = 'Instal·lat';
+$string['supportedconversions'] = 'Conversions de documents admeses';
 $string['supportedmoodleversions'] = 'Versions compatibles de Moodle';
 $string['systemname'] = 'Identificador';
 $string['type_antivirus'] = 'Connector antivirus';
@@ -128,6 +130,9 @@ $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editors';
 $string['type_enrol'] = 'Mètode d\'inscripció';
 $string['type_enrol_plural'] = 'Mètodes d\'inscripció';
+$string['type_fileconverter'] = 'Conversor de document';
+$string['type_fileconvertermanage'] = 'Gestiona els conversors de documents';
+$string['type_fileconverter_plural'] = 'Conversors de documents';
 $string['type_filter'] = 'Filtre';
 $string['type_filter_plural'] = 'Filtres de text';
 $string['type_format'] = 'Format de curs';

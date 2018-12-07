@@ -217,10 +217,15 @@ class com_wiris_quizzes_impl_HTMLTableTools {
 		}
 	}
 	public function isCellExpandableImpl($cell, $variables, $is2d) {
-		if(_hx_index_of($cell, "<math", null) !== -1) {
+		if(_hx_index_of($cell, "<input", null) !== -1) {
 			return false;
-		} else {
-			if(_hx_index_of($cell, "<input", null) !== -1) {
+		}
+		$h = new com_wiris_quizzes_impl_HTMLTools();
+		$start = null;
+		$end = 0;
+		while(($start = _hx_index_of($cell, "<math", $end)) !== -1) {
+			$end = _hx_index_of($cell, "</math>", $start) + 7;
+			if(!$h->isTokensMathML(_hx_substr($cell, $start, $end - $start))) {
 				return false;
 			}
 		}
@@ -283,7 +288,7 @@ class com_wiris_quizzes_impl_HTMLTableTools {
 						$_g3 = 0; $_g2 = _hx_array_get($grid, $i1)->length;
 						while($_g3 < $_g2) {
 							$j1 = $_g3++;
-							$model = $grid[$i1][$j1];
+							$model = $this->getModel($grid[$i1][$j1]);
 							$placeholder = trim(com_wiris_quizzes_impl_HTMLTableTools::stripTags($model));
 							$pos = _hx_index_of($model, $placeholder, null);
 							$opentds[$j1] = _hx_substr($model, 0, $pos);
@@ -380,6 +385,22 @@ class com_wiris_quizzes_impl_HTMLTableTools {
 		}
 		return $sb->b;
 	}
+	public function getModel($cell) {
+		if(_hx_index_of($cell, "<math", null) === -1) {
+			return $cell;
+		}
+		$placeholder = trim(com_wiris_quizzes_impl_HTMLTableTools::stripTags($cell));
+		$pos = _hx_index_of($cell, $placeholder, null);
+		$prefix = _hx_substr($cell, 0, $pos);
+		$suffix = _hx_substr($cell, $pos + strlen($placeholder), null);
+		if(($pos = _hx_index_of($prefix, "<math", null)) !== -1) {
+			$prefix = _hx_substr($prefix, 0, $pos);
+		}
+		if(($pos = _hx_index_of($suffix, "</math>", null)) !== -1) {
+			$suffix = _hx_substr($suffix, $pos + 7, null);
+		}
+		return $prefix . $placeholder . $suffix;
+	}
 	public function expandHorizontal($rows, $grid, $variables) {
 		$j = 0;
 		$end = false;
@@ -404,7 +425,7 @@ class com_wiris_quizzes_impl_HTMLTableTools {
 					$_g1 = 0; $_g = $grid->length;
 					while($_g1 < $_g) {
 						$i1 = $_g1++;
-						$model = $grid[$i1][$j];
+						$model = $this->getModel($grid[$i1][$j]);
 						$parsed = $this->parseTabularVariable(_hx_substr(trim(com_wiris_quizzes_impl_HTMLTableTools::stripTags($model)), 1, null), $variables);
 						$tds = $this->joinTds($model, $parsed);
 						$grid[$i1][$j] = $tds;
@@ -509,11 +530,11 @@ class com_wiris_quizzes_impl_HTMLTableTools {
 								$_g5 = 0; $_g4 = _hx_array_get($grid, $i1)->length;
 								while($_g5 < $_g4) {
 									$j1 = $_g5++;
-									$cell = $grid[$i1][$j1];
+									$model = $this->getModel($grid[$i1][$j1]);
 									$x = $vars[$i1][$j1];
-									$tds = $this->joinTds($cell, $x[$k1]);
+									$tds = $this->joinTds($model, $x[$k1]);
 									$sb->add($tds);
-									unset($x,$tds,$j1,$cell);
+									unset($x,$tds,$model,$j1);
 								}
 								unset($_g5,$_g4);
 							}

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -197,7 +197,7 @@ $string['hintn'] = 'ヒント {no}';
 $string['hintnoptions'] = 'ヒント {no} オプション';
 $string['hinttext'] = 'ヒントテキスト';
 $string['howquestionsbehave'] = '問題動作';
-$string['howquestionsbehave_help'] = '学生は小テスト内の問題に対して、様々に異なる方法で接することができます。例えばあなたが学生にそれぞれの問題で答えを入力した後、評定またはフィードバックの前に小テストすべてを送信してもらいたい場合もあるでしょう。これには「遅延フィードバック」モードを使用します。
+$string['howquestionsbehave_help'] = '学生は小テスト内の問題に対して様々に異なる方法で接することができます。例えばあなたが学生にそれぞれの問題で答えを入力した後、評定またはフィードバックの前に小テストすべてを送信してもらいたい場合もあるでしょう。これには「遅延フィードバック」モードを使用します。
 
 代わりにあなたが学生に即時フィードバックを与えて、すぐに正解できない場合に評点の低い次の受験に挑戦させたいとします。これには「複数受験インタラクティブ」モードを使用します。
 
@@ -321,6 +321,29 @@ $string['permissionmove'] = 'この問題を移動する';
 $string['permissionsaveasnew'] = 'この問題を新しい問題として保存する';
 $string['permissionto'] = 'あなたには以下のパーミッションがあります:';
 $string['previewquestion'] = '問題をプレビューする: {$a}';
+$string['privacy:metadata:database:question'] = '特定の問題に関する詳細です。';
+$string['privacy:metadata:database:question_attempts'] = '特定の問題の受験に関する情報です。';
+$string['privacy:metadata:database:question_attempts:flagged'] = '受験内でユーザがこの問題にフラグした時のIDです。';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = '問題解答の概要です。';
+$string['privacy:metadata:database:question_attempt_step_data'] = '問題受験ステップではステップに関する追加情報を持つことができます。データはstep_dataテーブルに保存されます。';
+$string['privacy:metadata:database:question_attempt_step_data:name'] = 'データアイテムの名称です。';
+$string['privacy:metadata:database:question_attempt_step_data:value'] = 'データアイテムの値です。';
+$string['privacy:metadata:database:question_attempt_steps'] = 'それぞれの問題受験には開始から評定のための完了までを示した多くのステップがあります。このテーブルはそれぞれこれらのステップの情報を保存します。';
+$string['privacy:metadata:database:question_attempt_steps:fraction'] = 'この問題受験に付与された最大1に縮小された評点です。';
+$string['privacy:metadata:database:question_attempt_steps:state'] = 'ステップ移行終了時のこの問題の受験ステップの状態です。';
+$string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'このステップ移行が始まった日時です。';
+$string['privacy:metadata:database:question_attempt_steps:userid'] = 'このステップ移行を実行したユーザです。';
+$string['privacy:metadata:database:question_attempts:timemodified'] = '問題受験が更新された日時です。';
+$string['privacy:metadata:database:question:createdby'] = '問題を作成した人です。';
+$string['privacy:metadata:database:question:generalfeedback'] = 'この問題の一般フィードバックです。';
+$string['privacy:metadata:database:question:modifiedby'] = '最後に問題を更新した人です。';
+$string['privacy:metadata:database:question:name'] = '問題名です。';
+$string['privacy:metadata:database:question:questiontext'] = '問題テキストです。';
+$string['privacy:metadata:database:question:timecreated'] = 'この問題の作成日時です。';
+$string['privacy:metadata:database:question:timemodified'] = 'この問題の更新日時です。';
+$string['privacy:metadata:link:qbehaviour'] = '問題サブシステムは問題行動プラグインタイプを使用します。';
+$string['privacy:metadata:link:qformat'] = '問題サブシステムは異なるフォーマットで問題をインポートおよびエクスポートする目的で問題フォーマットプラグインタイプを使用します。';
+$string['privacy:metadata:link:qtype'] = '小テストサブシステムは異なるタイプの問題を含む問題タイププラグインと相互連携します。';
 $string['published'] = '共有';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">問題「 {$a->name}」({$a->qtype})</a>はこの問題カテゴリ内にありますが、別のコース「 {$a->coursename} 」の<a href="{$a->qurl}">小テスト「 {$a->quizname} 」</a>でも使用されています。';
@@ -379,6 +402,7 @@ $string['specificfeedback_help'] = '学生の解答に応じて与えられる�
 $string['started'] = '開始';
 $string['state'] = '状態';
 $string['step'] = 'ステップ';
+$string['steps'] = 'ステップ';
 $string['stoponerror'] = 'エラーで中止する';
 $string['stoponerror_help'] = 'この設定ではエラー検出時にインポート処理を停止するかどうか決定します。結果として問題が全くインポートされない、またはエラーを含んだ問題を無視して有効な問題のみインポートされます。';
 $string['submissionoutofsequence'] = '範囲外のアクセスです。小テスト問題に取り組む場合、戻るボタンをクリックしないでください。';

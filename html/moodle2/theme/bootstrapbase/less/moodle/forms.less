@@ -58,6 +58,10 @@ form {
 }
 .mform .fdescription.required {
     margin-left: @horizontalComponentOffset;
+    & > .icon {
+        width: 8px;
+        height: 12px;
+    }
 }
 .mform .fpassword .unmask {
     display: inline-block;
@@ -87,13 +91,19 @@ form {
 .mform label .req,
 .mform label .adv {
     cursor: help;
+    & > .icon {
+        width: 8px;
+        height: 12px;
+        margin-left: 3px;
+    }
 }
 .mform .fcheckbox input {
     margin-left: 0;
 }
 .mform .fcheckbox > span,
 .mform .fradio > span,
-.mform .fgroup > span {
+.mform .fgroup > span,
+.mform .fadvcheckbox > span {
     display: inline-block;
     margin-top: 5px;
 }
@@ -270,7 +280,7 @@ fieldset.coursesearchbox label {
     font-weight: bold;
 }
 .makeFormsVertical() {
-    #region-main .mform:not(.unresponsive) {
+    &:not(.unresponsive) {
         .fitem {
             .fitemtitle {
                 display: block;
@@ -306,7 +316,6 @@ fieldset.coursesearchbox label {
                 display: inline-block;
                 margin-top: 4px;
                 padding-top: 5px;
-                width: auto;
             }
         }
         .fitem_fcheckbox {
@@ -323,10 +332,17 @@ fieldset.coursesearchbox label {
 }
 
 /**
+ * Forms marked as vertical always display this way;
+ */
+.mform.full-width-labels {
+    .makeFormsVertical;
+}
+
+/**
  * Make forms vertical when the screen is less than 1200px;
  */
 @media (max-width: 1199px) {
-    body {
+    body #region-main .mform {
         .makeFormsVertical;
     }
 }
@@ -345,7 +361,7 @@ fieldset.coursesearchbox label {
 @maxWidthForVerticalForms: 1474px;
 
 @media (max-width: @maxWidthForVerticalForms) {
-    .used-region-side-pre.used-region-side-post {
+    .used-region-side-pre.used-region-side-post #region-main .mform {
         .makeFormsVertical;
     }
 }
@@ -445,9 +461,27 @@ input[size] {
 }
 
 /* Custom styles for autocomplete form element */
+
+[data-fieldtype=autocomplete] select,
+[data-fieldtype=tags] select,
+select.form-autocomplete-original-select {
+    visibility: hidden;
+    overflow: hidden;
+    width: 15rem;
+    height: 3 * @baseLineHeight + @baseFontSize / 2;
+    margin: 0;
+    margin-bottom: 0.2em;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+}
+.form-autocomplete-container {
+    display: inline-block;
+    min-height: 4.2rem;
+}
 .form-autocomplete-selection {
     margin: 0.2em;
-    min-height: 21px;
+    min-height: @baseLineHeight + @baseFontSize / 2;
 }
 .form-autocomplete-multiple [role=listitem] {
     cursor: pointer;
@@ -506,4 +540,13 @@ div[data-passwordunmask="wrapper"] {
     height: 30px;
     line-height: 30px;
     margin-bottom: 10px;
+}
+
+// Styles for the JS file types browser provided by the "filetypes" element.
+[data-filetypesbrowserbody] {
+    [aria-expanded="false"] > [role="group"],
+    [aria-expanded="false"] [data-filetypesbrowserfeature="hideifcollapsed"],
+    [aria-expanded="true"] [data-filetypesbrowserfeature="hideifexpanded"] {
+        display: none;
+    }
 }

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,6 +101,7 @@ $string['mode_help'] = 'This allows you to specify if courses can be created and
 $string['nochanges'] = 'No changes';
 $string['pluginname'] = 'Course upload';
 $string['preview'] = 'Preview';
+$string['privacy:metadata'] = 'The Course upload plugin does not store any personal data.';
 $string['reset'] = 'Reset course after upload';
 $string['reset_help'] = 'Whether to reset the course after creating/updating it.';
 $string['restoreafterimport'] = 'Restore after import';

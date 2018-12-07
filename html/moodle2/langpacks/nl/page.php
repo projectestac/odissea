@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = 'Maak een nieuwe paginabron';
 $string['displayoptions'] = 'Mogelijk opties om te tonen';
 $string['displayselect'] = 'Toon';
 $string['displayselectexplain'] = 'Kies type om te tonen';
+$string['indicator:cognitivedepth'] = 'Pagina cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Pagina bron.';
+$string['indicator:socialbreadth'] = 'Pagina sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Pagina bron.';
 $string['legacyfiles'] = 'Migratie van oude cursusbestanden';
 $string['legacyfilesactive'] = 'Actief';
 $string['legacyfilesdone'] = 'Beëindigd';
@@ -61,4 +65,5 @@ $string['printheading'] = 'Toon paginanaam';
 $string['printheadingexplain'] = 'Paginanaam boven inhoud tonen?';
 $string['printintro'] = 'Toon paginabeschrijving';
 $string['printintroexplain'] = 'Toon paginabeschrijving boven inhoud?';
+$string['privacy:metadata'] = 'De mod_page-plugin bewaart geen persoonlijke gegevens.';
 $string['search:activity'] = 'Pagina';

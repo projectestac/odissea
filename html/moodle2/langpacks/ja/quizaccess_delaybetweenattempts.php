@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_delaybetweenattempts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = '受験間の遅延に関する小テストアクセスルール';
-$string['youcannotwait'] = 'あなたが次の受験の開始を許可される前に、この問題は終了します。';
+$string['pluginname'] = '受験間の遅延 - 小テストアクセスルール';
+$string['privacy:metadata'] = '受験間の遅延小テストアクセスルールプラグインはどのような個人データも保存しません。';
+$string['youcannotwait'] = 'あなたが次の受験を開始できるようになる前にこの小テストは終了します。';
 $string['youmustwait'] = 'この小テストの再受験はお待ちください。あなたは次の受験を {$a} 以後に開始することができます。';

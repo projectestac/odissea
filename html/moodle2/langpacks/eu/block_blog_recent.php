@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_blog_recent', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['blog_recent:addinstance'] = 'Gehitu azken aldiko blog-sarrerak bloke be
 $string['norecentblogentries'] = 'Ez da izan sarrerarik azken aldian';
 $string['numentriestodisplay'] = 'Erakusteko azken aldiko sarrera-kopurua';
 $string['pluginname'] = 'Azken aldiko blog-sarrerak';
+$string['privacy:metadata'] = 'Azken aldiko blog-sarrerak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
 $string['recentinterval'] = '"Azken aldiko"tzat hartzeko denbora-tartea';

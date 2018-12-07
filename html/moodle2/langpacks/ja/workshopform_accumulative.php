@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'あなたはこのアスペクトの評点を選�
 $string['pluginname'] = '累積評価';
 $string['poor'] = '悪い';
 $string['present'] = '出席';
+$string['privacy:metadata'] = '累積評価プラグインは評価フォームの詳細のみ保存します。フォームがどのように入力されたかという実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出に添付されます。';
 $string['scalename0'] = 'Yes/No (2点)';
 $string['scalename1'] = '出席/欠席 (2点)';
 $string['scalename2'] = '正解/不正解 (2点)';

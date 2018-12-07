@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_standard', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_standard
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['buffersize'] = 'Escrever tamanho do buffer';
 $string['pluginname'] = 'Registo de atividade padrão';
 $string['pluginname_desc'] = 'Um módulo de registo armazena entradas de registo de atividade numa tabela de base de dados Moodle.';
+$string['privacy:metadata:log'] = 'Uma coleção de eventos passados';
+$string['privacy:metadata:log:anonymous'] = 'Se o evento foi marcado como anónimo';
+$string['privacy:metadata:log:eventname'] = 'O nome do evento';
+$string['privacy:metadata:log:ip'] = 'O endereço IP utilizado na altura do evento';
+$string['privacy:metadata:log:origin'] = 'A origem do evento';
+$string['privacy:metadata:log:other'] = 'Informação adicional sobre o evento';
+$string['privacy:metadata:log:realuserid'] = 'O ID do utilizador real responsável pelo evento, quando mascarado';
+$string['privacy:metadata:log:relateduserid'] = 'O ID do utilizador relacionado com o evento';
+$string['privacy:metadata:log:timecreated'] = 'A hora em que o evento ocorreu';
+$string['privacy:metadata:log:userid'] = 'O ID do utilizador que desencadeou o evento';
 $string['taskcleanup'] = 'Limpeza da tabela de registos de atividade';

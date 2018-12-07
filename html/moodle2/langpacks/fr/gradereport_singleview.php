@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['bulkinsertvalue'] = 'Insérer valeur';
 $string['bulklegend'] = 'Insérer en masse';
 $string['bulkperform'] = 'Effectuer l\'insertion en masse';
 $string['entrypage'] = 'Utilisateur évalué ou élément d\'évaluation';
-$string['eventgradereportviewed'] = 'Affichage simplifié des notes consulté';
+$string['eventgradereportviewed'] = 'Rapport d\'évaluation simplifié consulté';
 $string['exclude'] = 'Exclure';
 $string['excludeall'] = 'Exclure toutes les notes';
 $string['excludefor'] = 'Exclure pour {$a}';
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Note pour {$a}';
 $string['gradeitem'] = 'Élément d\'évaluation : {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Cet élément d\'évaluation ne peut pas être modifié.';
 $string['gradeuser'] = 'Utilisateur évalué : {$a}';
+$string['itemsperpage'] = 'Éléments par page';
 $string['noscreens'] = 'Impossible de trouver un affichage simplifié adéquat.';
 $string['notvalid'] = 'Affichage simplifié non valide : {$a}';
 $string['override'] = 'Modifier';
@@ -52,6 +53,7 @@ $string['overrideall'] = 'Modifier toutes les notes';
 $string['overridefor'] = 'Modifier pour {$a}';
 $string['overridenone'] = 'Ne modifier aucune note';
 $string['pluginname'] = 'Affichage simplifié';
+$string['privacy:metadata'] = 'Le Rapport d\'évaluation simplifié affiche seulement des données enregistrées à d\'autres endroits.';
 $string['save'] = 'Enregistrer';
 $string['savegrades'] = 'Enregistrement des notes';
 $string['savegradessuccess'] = 'Les notes ont été données pour {$a} éléments';

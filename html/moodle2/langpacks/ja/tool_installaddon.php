@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_installaddon', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,7 @@ $string['permcheckrepeat'] = '再度確認する';
 $string['permcheckresultno'] = 'プラグインタイプロケーション「<em>{$a->path}</em>」が書き込み可能ではありません。';
 $string['permcheckresultyes'] = 'プラグインタイプロケーション「<em>{$a->path}</em>」は書き込み可能です。';
 $string['pluginname'] = 'プラグインインストーラ';
+$string['privacy:metadata'] = 'プラグインインストーラプラグインはどのような個人データも保存しません。';
 $string['remoterequestalreadyinstalled'] = 'このサイトにMoodleプラグインディレクトリからプラグイン {$a->name} ({$a->component}) バージョン {$a->version} をインストールするリクエストがあります。しかし、このプラグインは<strong>すでにこのサイトにインストールされています</strong>。';
 $string['remoterequestconfirm'] = 'このサイトにMoodleプラグインディレクトリからプラグイン <strong>{$a->name}</strong> ({$a->component}) バージョン {$a->version} をインストールするリクエストがあります。あなたが続ける場合、妥当性確認のため、プラグインZIPパッケージがダウンロードされます。まだ、何もインストールされません。';
 $string['remoterequestinvalid'] = 'このサイトにMoodleプラグインディレクトリからのプラグインのインストールリクエストがあります。残念ですが、リクエストが有効ではないため、プラグインをインストールすることはできません。';

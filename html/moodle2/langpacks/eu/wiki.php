@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,6 +121,10 @@ $string['incorrectdeleteversions'] = 'Ez dira zuzenak ezabatzeko emandako orrien
 $string['incorrectpageid'] = 'Orriaren IDa ez da zuzena.';
 $string['incorrectsubwikiid'] = 'Azpiwikiaren IDa ez da zuzena.';
 $string['incorrectwikiid'] = 'Wikiaren IDa ez da zuzena.';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa wikietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Wikia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala wikietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Wikia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['individualpagedoesnotexist'] = 'Norberaren wiki-orria ez da existitzen';
 $string['insertcomment'] = 'Txertatu iruzkina';
 $string['insertimage'] = 'Txertatu irudi bat...';
@@ -128,7 +132,7 @@ $string['insertimage_help'] = 'Zerrenda zabalgarri honek irudia txertatuko du wi
 $string['invalidlock'] = 'Orri hau dagoeneko beste erabiltzaile batek blokeatu du';
 $string['invalidparameters'] = 'Parametro baliogabeak eman dira.';
 $string['invalidsection'] = 'Atal ezegokia.';
-$string['invalidsesskey'] = 'Emandako sesskey-a ez da baliagarria. Mesedez, bidali berriz datuak';
+$string['invalidsesskey'] = 'Badirudi zure saioa iraungitu dela. Mesedez apuntatu ezazu editatzen ari zinen hori eta berriz hasi saioa.';
 $string['javascriptdisabledlocks'] = 'Javascript desgaituta dago zure nabigatzailean, sarrailek ez dute funtzionatzen. Moldaketak ez dira zuzen gordeko.';
 $string['links'] = 'Estekak';
 $string['listall'] = 'Zerrendatu guztiak';
@@ -209,6 +213,31 @@ $string['pluginname'] = 'Wikia';
 $string['prettyprint'] = 'Inprimatzeko bertsioa';
 $string['previewwarning'] = 'Hau aurrebista da. Aldaketak ez dira oraindik gorde.';
 $string['print'] = 'Inprimatu';
+$string['privacy:metadata:core_comment'] = 'Wiki-orrietako iruzkiak';
+$string['privacy:metadata:core_files'] = 'Azpiwikietara lotutako fitxategiak';
+$string['privacy:metadata:core_tag'] = 'Azpiwikietara lotutako etiketak';
+$string['privacy:metadata:wiki_locks'] = 'Wikietako editatze-blokeoen behin behineko biltegia';
+$string['privacy:metadata:wiki_locks:lockedat'] = 'Blokeatu zeneko unea';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'Blokeatutako orri-atalaren izena';
+$string['privacy:metadata:wiki_locks:userid'] = 'Orria blokeatu zuen erabiltzailea';
+$string['privacy:metadata:wiki_pages'] = 'Wiki-orrien inguruko informazioa';
+$string['privacy:metadata:wiki_pages:cachedcontent'] = 'HTML formatuan cacheatutako edukiak';
+$string['privacy:metadata:wiki_pages:pageviews'] = 'Orria ikusi den aldi kopurua';
+$string['privacy:metadata:wiki_pages:readonly'] = 'Orria irakurtzekoa-bakarrik den edo ez';
+$string['privacy:metadata:wiki_pages:timecreated'] = 'Orria sortu zeneko unea';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'Orria azkenengoz eguneratu zeneko unea';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'Orria azkenengoz erakutsi zeneko unea';
+$string['privacy:metadata:wiki_pages:title'] = 'Orriaren izena';
+$string['privacy:metadata:wiki_pages:userid'] = 'Orria azkenengoz eguneratu zuen erabiltzailea';
+$string['privacy:metadata:wiki_subwikis'] = 'Azpiwikien inguruko informazioa (taldekako edo banakako moduak erabiltzen bada)';
+$string['privacy:metadata:wiki_subwikis:groupid'] = 'Azpiwikiaren jabea den taldea';
+$string['privacy:metadata:wiki_subwikis:userid'] = 'Azpiwikiaren jabea den erabiltzailea (banakako wikia bada)';
+$string['privacy:metadata:wiki_versions'] = 'Wiki-orrien historiaren inguruko informazioa';
+$string['privacy:metadata:wiki_versions:content'] = 'Berrikuspenaren edukia';
+$string['privacy:metadata:wiki_versions:contentformat'] = 'Berrikuspenaren edukiaren formatua';
+$string['privacy:metadata:wiki_versions:timecreated'] = 'Berrikuspena sortu zeneko unea';
+$string['privacy:metadata:wiki_versions:userid'] = 'Berrikuspena sortu zuen erabiltzailea';
+$string['privacy:metadata:wiki_versions:version'] = 'Bertsioaren zenbakia';
 $string['rated'] = 'Orri hau honela kalifikatu duzu: {$a}';
 $string['rating'] = 'Puntuazioa';
 $string['ratingmode'] = 'Puntuazio-modua';
@@ -236,7 +265,6 @@ $string['special'] = 'Berezia';
 $string['tableofcontents'] = 'Eduki-taula';
 $string['tagarea_wiki_pages'] = 'Wiki-orriak';
 $string['tagsdeleted'] = 'Wiki-etiketak ezabatu egin dira';
-$string['tagtitle'] = 'Ikusi "{$a}" etiketa';
 $string['teacherrating'] = 'Irakaslearen puntuazioa';
 $string['timesrating'] = 'Orri hau kalifikatu da {$a->c} aldiz honako batezbesteko honekin:  {$a->s}';
 $string['updatedpages'] = 'Eguneratutako orriak';

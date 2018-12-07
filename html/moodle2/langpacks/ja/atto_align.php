@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_align', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_align', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_align
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = '中央';
 $string['leftalign'] = '左寄せ';
 $string['pluginname'] = 'テキスト揃え';
+$string['privacy:metadata'] = 'atto_alignプラグインはどのような個人データも保存しません。';
 $string['rightalign'] = '右寄せ';

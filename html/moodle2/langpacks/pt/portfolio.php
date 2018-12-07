@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -169,6 +169,23 @@ $string['plugincouldnotpackage'] = 'Erro ao compactar os seus dados para exporta
 $string['pluginismisconfigured'] = 'Ignorado - o módulo Portefólio está mal configurado. Mensagem de erro: {$a}';
 $string['portfolio'] = 'Portefólio';
 $string['portfolios'] = 'Portefólios';
+$string['privacy:metadata'] = 'O subsistema portefólio funciona como um canal, transmite pedidos dos módulos a vários módulos de portefólio.';
+$string['privacy:metadata:instance'] = 'Identificador do portfolio.';
+$string['privacy:metadata:instancesummary'] = 'Isto armazena instâncias e preferências do portefólio para o portefólio que o utilizador está a usar.';
+$string['privacy:metadata:name'] = 'Nome da preferência.';
+$string['privacy:metadata:portfolio_log'] = 'Log da transferências de portefólio (utilizado para verificar duplicação mais tarde)';
+$string['privacy:metadata:portfolio_log:caller_class'] = 'Nome da classe utilizada para cirar a transferência';
+$string['privacy:metadata:portfolio_log:caller_component'] = 'Nome da componente responsável pela exportação';
+$string['privacy:metadata:portfolio_log:time'] = 'Hora da transferência (No caso de transferências em espera, este é o tempo em que a transferência foi executada, não quando o utilizador a iniciou)';
+$string['privacy:metadata:portfolio_log:userid'] = 'Utilizador que exportou o conteúdo';
+$string['privacy:metadata:portfolio_tempdata'] = 'Armazena dados temporários para a exportação do portefólio, limpo pelo cron após um dia';
+$string['privacy:metadata:portfolio_tempdata:data'] = 'Exportar dados';
+$string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Hora em que este registo irá expirar';
+$string['privacy:metadata:portfolio_tempdata:instance'] = 'Instância do módulo portefólio a ser usado';
+$string['privacy:metadata:portfolio_tempdata:userid'] = 'Utilizador a executar exportação';
+$string['privacy:metadata:userid'] = 'Identificador do utilizador.';
+$string['privacy:metadata:value'] = 'Valor da preferência';
+$string['privacy:path'] = 'Instâncias do portefólio';
 $string['queuesummary'] = 'Transferências em lista de espera';
 $string['returntowhereyouwere'] = 'Voltar para onde estava anteriormente';
 $string['save'] = 'Guardar';

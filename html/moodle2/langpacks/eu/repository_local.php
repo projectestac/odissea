@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_local', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_local', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_local
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,5 @@ $string['local:view'] = 'Zerbitzariaren biltegia ikusi';
 $string['notitle'] = 'Izenbururik gabe';
 $string['pluginname'] = 'Zerbitzariko fitxategiak';
 $string['pluginname_help'] = 'Moodle zerbitzari lokalaren biltegia';
+$string['privacy:metadata'] = 'Zerbitzariko fitxategiak biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['remember'] = 'Gogoratu';

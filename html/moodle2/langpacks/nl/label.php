@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'label', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   label
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,10 @@ $string['dndresizeheight'] = 'Herschalen hoogte bij slepen en neerzetten';
 $string['dndresizewidth'] = 'Herschalen breedte bij slepen en neerzetten';
 $string['dnduploadlabel'] = 'Media toevoegen aan de cursuspagina';
 $string['dnduploadlabeltext'] = 'Voeg tekst toe aan de cursuspagina';
+$string['indicator:cognitivedepth'] = 'Label cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Label bron.';
+$string['indicator:socialbreadth'] = 'Label sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Label bron.';
 $string['label:addinstance'] = 'Voeg een nieuw label toe';
 $string['labeltext'] = 'Label tekst';
 $string['label:view'] = 'Bekijk label';
@@ -47,4 +51,5 @@ Labels kunnen gebruikt worden
 $string['modulenameplural'] = 'Labels';
 $string['pluginadministration'] = 'Label beheer';
 $string['pluginname'] = 'Label';
+$string['privacy:metadata'] = 'De mod_label-plugin bewaart geen persoonlijke gegevens.';
 $string['search:activity'] = 'Label';

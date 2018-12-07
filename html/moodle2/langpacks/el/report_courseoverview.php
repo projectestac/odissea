@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_courseoverview', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_courseoverview', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   report_courseoverview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseoverview:view'] = 'Εμφάνιση αναφοράς επισκόπησης μαθημάτων';
-$string['pluginname'] = 'Επισκόπηση μαθημάτων';
+$string['courseoverview:view'] = 'Εμφάνιση αναφοράς σύνοψης μαθήματος';
+$string['pluginname'] = 'Επισκόπηση μαθήματος';

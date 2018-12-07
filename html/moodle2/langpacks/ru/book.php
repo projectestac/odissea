@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,8 @@ $string['eventchapterdeleted'] = 'Глава удалена';
 $string['eventchapterupdated'] = 'Глава обновлена';
 $string['eventchapterviewed'] = 'Глава просмотрена';
 $string['hidechapter'] = 'Скрыть главу «{$a}»';
+$string['indicator:cognitivedepth_help'] = 'Этот показатель основан на  глубине познания, достигнутой студентом при изучении Книг.';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Книга.';
 $string['modulename'] = 'Книга';
 $string['modulename_help'] = 'Модуль Книга позволяет преподавателю создать многостраничный ресурс, подобный книге, с главами и подглавами. Книги могут содержать медиа-файлы, а также длинную текстовую информацию, которая может быть разбита на разделы.
 
@@ -92,6 +94,7 @@ $string['numberingoptions_desc'] = 'Выберите параметры нуме
 $string['page-mod-book-x'] = 'Страница любого модуля Книга';
 $string['pluginadministration'] = 'Управление книгой';
 $string['pluginname'] = 'Книга';
+$string['removeallbooktags'] = 'Удалить все теги книги';
 $string['search:activity'] = 'Книга — информация о ресурсе';
 $string['search:chapter'] = 'Книга — главы';
 $string['showchapter'] = 'Показать главу «{$a}»';
@@ -99,5 +102,7 @@ $string['subchapter'] = 'Подраздел';
 $string['subchapternotice'] = '(Создана только одна первая глава)';
 $string['subplugintype_booktool'] = 'Инструмент плагина «Книга»';
 $string['subplugintype_booktool_plural'] = 'Инструменты плагина «Книга»';
+$string['tagarea_book_chapters'] = 'Главы книги';
+$string['tagsdeleted'] = 'Тэги книг были удалены';
 $string['toc'] = 'Оглавление';
 $string['top'] = 'наверх';

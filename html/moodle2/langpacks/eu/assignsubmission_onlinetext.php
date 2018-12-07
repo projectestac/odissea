@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,12 @@ $string['onlinetext'] = 'On-line testua';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Baimendu on-line testuen bidalketa';
 $string['pluginname'] = 'Baimendu on-line testuen bidalketa';
+$string['privacy:metadata:assignmentid'] = 'Zereginaren identifikatzailea';
+$string['privacy:metadata:filepurpose'] = 'Bidalketaren testuan txertatutako fitxategiak';
+$string['privacy:metadata:submissionpurpose'] = 'Erabiltzaileren bidalketekin lotura duen bidalketaren IDa';
+$string['privacy:metadata:tablepurpose'] = 'Saiakera bakoitzeko bidalketaren testua gordetzen da.';
+$string['privacy:metadata:textpurpose'] = 'Zereginaren saiakera honetan bidalitako testua';
+$string['privacy:path'] = 'Bidalketaren Testua';
 $string['wordlimit'] = 'Gehienezko hitz-kopurua';
 $string['wordlimitexceeded'] = 'Zeregin honetarako gehienezko hitz-kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Mesedez, alda ezazu zure bidalketa eta ondoren saiatu berriz.';
 $string['wordlimit_help'] = 'On-line testuen bidalketa gaituta badago, hau da ikasle bakoitzak bidali ahal izango duen gehienezko hitz-kopurua.';

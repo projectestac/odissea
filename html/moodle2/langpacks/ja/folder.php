@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,10 @@ $string['folder:addinstance'] = '新しいフォルダを追加する';
 $string['foldercontent'] = 'ファイルおよびサブフォルダ';
 $string['folder:managefiles'] = 'フォルダモジュールのファイルを管理する';
 $string['folder:view'] = 'フォルダコンテンツを表示する';
+$string['indicator:cognitivedepth'] = 'フォルダ認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はフォルダリソースで学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'フォルダ社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はフォルダリソースで学生が到達した社会的広がりに基づきます。';
 $string['maxsizetodownload'] = '最大フォルダダウンロードサイズ  (MB)';
 $string['maxsizetodownload_help'] = 'ZIPファイルとしてダウンロードできるフォルダの最大サイズです。ゼロに設定された場合、フォルダサイズに制限はありません。';
 $string['modulename'] = 'フォルダ';
@@ -55,6 +59,7 @@ $string['page-mod-folder-view'] = 'フォルダモジュールメインページ
 $string['page-mod-folder-x'] = 'すべてのフォルダモジュールページ';
 $string['pluginadministration'] = 'フォルダ管理';
 $string['pluginname'] = 'フォルダ';
+$string['privacy:metadata'] = 'mod_folderプラグインはどのような個人データも保存しません。';
 $string['search:activity'] = 'フォルダ';
 $string['showdownloadfolder'] = 'ダウンロードフォルダボタンを表示する';
 $string['showdownloadfolder_help'] = 'この設定を有効にした場合、フォルダのコンテンツをZIPファイルとしてダウンロードできるボタンが表示されます。';

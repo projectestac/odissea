@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_comments', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_comments', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['comments:addinstance'] = '新しいコメントブロックを追加する';
 $string['comments:myaddinstance'] = '新しいコメントブロックをダッシュボードに追加する';
 $string['pluginname'] = 'コメント';
+$string['privacy:metadata:core_comment'] = 'コメント追加のレコードです。';

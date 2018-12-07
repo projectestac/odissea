@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Semblable à la dissertation standard, avec la pos
 $string['pluginnamesummary'] = 'Semblable à la dissertation standard, avec la possibilité de poser une question avec des nombres, des formules ou des courbes aléatoires. Les commentaires peuvent également utiliser les valeurs aléatoires.';
 $string['pluginnameadding'] = 'Ajout d\'une dissertation - Question de maths et sciences par WIRIS';
 $string['pluginnameediting'] = 'Modification d\'une dissertation - Question de maths et sciences par WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Essay question type does not effect or store any data itself.';

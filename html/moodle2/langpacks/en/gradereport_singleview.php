@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Grade for {$a}';
 $string['gradeitem'] = 'Grade item: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'This grade item cannot be overridden.';
 $string['gradeuser'] = 'Grade user: {$a}';
+$string['itemsperpage'] = 'Items per page';
 $string['noscreens'] = 'Could not find a suitable single view screen.';
 $string['notvalid'] = 'Not a valid Single view screen: {$a}';
 $string['override'] = 'Override';
@@ -52,6 +53,7 @@ $string['overrideall'] = 'Override all grades';
 $string['overridefor'] = 'Override for {$a}';
 $string['overridenone'] = 'Do not override any grades';
 $string['pluginname'] = 'Single view';
+$string['privacy:metadata'] = 'The Grade single view report only shows data stored in other locations.';
 $string['save'] = 'Save';
 $string['savegrades'] = 'Saving grades';
 $string['savegradessuccess'] = 'Grades were set for {$a} items';

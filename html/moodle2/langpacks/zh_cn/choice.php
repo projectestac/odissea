@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,10 @@ $string['expired'] = '对不起，该活动已于 {$a} 关闭，不能再参加'
 $string['full'] = '(已满)';
 $string['havetologin'] = '只有登录后才能提交您的选择';
 $string['includeinactive'] = '包含来自停止活动或已休学用户的投票结果';
+$string['indicator:cognitivedepth'] = '投票活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在投票活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '投票活动社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在投票活动中所达到的社会宽度。';
 $string['limit'] = '限制';
 $string['limitanswers'] = '是否使用限制投票的次数';
 $string['limitanswers_help'] = '这个选项允许您限制选择某一选项的参与者数目。如果达到此限制，那么任何人都不能再选择此选项。

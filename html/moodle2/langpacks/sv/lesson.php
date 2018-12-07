@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lesson', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,7 +118,6 @@ $string['checknavigation'] = 'Kontrollera navigation';
 $string['checkquestion'] = 'Kontrollera fråga';
 $string['classstats'] = 'Statistik för klass';
 $string['clicktodownload'] = 'Klicka på den följande länken för att ladda ner filen.';
-$string['clicktopost'] = 'Klicka här för att lägga till Ditt betyg/omdöme till listan över Höga resultat.';
 $string['cluster'] = 'Kluster';
 $string['clusterjump'] = 'Ej visad fråga inom ett kluster';
 $string['clustertitle'] = 'Kluster';
@@ -130,7 +129,6 @@ $string['completethefollowingconditions'] = 'Du måste uppfylla följande villko
 $string['conditionsfordependency'] = 'Villkor för beroendet';
 $string['configactionaftercorrectanswer'] = 'Det standardmässiga förvalet av åtgärd efter rätt svar';
 $string['configmaxanswers'] = 'Det standardmässiga förvalet av maximalt antal svar per sida';
-$string['configmaxhighscores'] = 'Antal höga resultat som visas';
 $string['configmediaclose'] = 'Visar en stängningsknapp som en del av det popup-fönster som skapas för en länkad mediafil';
 $string['configmediaheight'] = 'Avgör höjden på det popup-fönster som visas för en länkad mediafil';
 $string['configmediawidth'] = 'Avgör bredden på det popup-fönster som visas för en länkad mediafil';
@@ -178,7 +176,6 @@ $string['displaydefaultfeedback_help'] = '<p align="center"><strong>Visa standar
 
 <p>Om detta är inställt till <strong>Ja</strong>, då kommer, när det inte går att hitta något förslag till återkoppling för en viss fråga, den standardiserade återkopplingen \'Det är ett korrekt svar\' eller \'Det är ett felaktigt svar\' att användas. </p>
 <p>Om detta är inställt till <strong>Nej</strong>, då kommer, när det inte går att hitta något förslag till återkoppling för en viss fråga, ingen återkoppling alls att visas.  Användaren skickas istället automatiskt vidare till nästa sida i lektionen. </p>';
-$string['displayhighscores'] = 'Visa höga resultat';
 $string['displayinleftmenu'] = 'Visa i den vänstra menyn?';
 $string['displayleftif'] = 'Visa den vänstra menyn bara om betyg/omdöme är högre än:';
 $string['displayleftif_help'] = 'Den här inställningen avgör huruvida en student/elev/deltagare/lärande måste uppnå ett visst betyg innan han/hon får se menyn till vänster. Detta tvingar dem att gå igenom hela lektionen under sitt första försök. Efter det att de har uppnått det nödvändiga betyget kan de använda den vänstra menyn för utvärdering.';
@@ -205,7 +202,6 @@ $string['endofcluster'] = 'Slut på kluster';
 $string['endofclustertitle'] = 'Slut på kluster';
 $string['endoflesson'] = 'Slut på lektion';
 $string['enteredthis'] = 'matade in det här.';
-$string['entername'] = 'Skriv in ett kortnamn för listan över höga betyg';
 $string['enterpassword'] = 'Var snäll och skriv in lösenordet:';
 $string['eolstudentoutoftime'] = 'OBS! Tiden har gått ut för den här lektionen. Ditt sista svar kanske inte kommer att räknas om Du lämnade det efter det att tiden hade gått ut.';
 $string['eolstudentoutoftimenoanswers'] = 'Du svarade inte på några frågor. Ditt resultat för den här lektionen är 0.';
@@ -231,6 +227,7 @@ $string['gotoendoflesson'] = 'Gå till slutet av lektionen';
 $string['grade'] = 'Betyg/omdöme';
 $string['gradebetterthan'] = 'Betyg bättre än (%)';
 $string['gradebetterthanerror'] = 'Prestera för ett betyg som är bättre än {$a} procent';
+$string['graded'] = 'Betygssatt';
 $string['gradeessay'] = 'Betygssätt essäfrågor';
 $string['gradeis'] = 'Betyget/omdömet är {$a}';
 $string['gradeoptions'] = 'Alternativ för betyg/omdömen';
@@ -244,7 +241,6 @@ eller som det \'högsta\' betyget som uppnåtts under försöken.
 $string['havenotgradedyet'] = 'har inte satt betyg/avgett omdöme än.';
 $string['here'] = 'här';
 $string['highscore'] = 'Högt resultat';
-$string['highscores'] = 'Höga resultat';
 $string['hightime'] = 'Hög tid';
 $string['importcount'] = 'Importerar frågor';
 $string['importquestions'] = 'Importera frågor';
@@ -403,7 +399,6 @@ Dess omfång är 0 till 100. Du kan ändra detta värde när som helst under lek
 Varje ändring återspeglas omedelbart på sidan för betyg/omdömen och på de betyg/omdömen som visas för
 studenterna/eleverna/deltagarna/de lärande på olika listor.Om Du väljer betyget 0 så
 kommer lektionen inte att visas på betygs/omdömessidan.</p>';
-$string['maxhighscores'] = 'Antal visade höga resultat';
 $string['maximumnumberofanswersbranches'] = 'Maximalt antal svar';
 $string['maximumnumberofanswersbranches_help'] = '<p>Det här värdet avgör det maximala antalet svar som (distans)läraren kan använda.
 Det förinställda standardvärdet är 4.
@@ -527,7 +522,7 @@ $string['notcompleted'] = 'Inte avslutad';
 $string['notdefined'] = 'Inte definierad';
 $string['notenoughsubquestions'] = 'Otillräckligt antal delfrågor!<br />
 Vill Du gå tillbaka och rätta till den här frågan?';
-$string['nothighscore'] = 'Du lyckades ínte komma med på listan över höga betyg.';
+$string['notgraded'] = 'Ej betygssatt';
 $string['notitle'] = 'Ingen titel';
 $string['numberofcorrectanswers'] = 'Antal rätta svar: {$a}';
 $string['numberofcorrectmatches'] = 'Antal rätta matchningar:  {$a}';
@@ -754,7 +749,6 @@ $string['timeremaining'] = 'Återstående tid';
 $string['timespenterror'] = 'Lägg ner åtminstone {$a} minuter på den här lektionen';
 $string['timespentminutes'] = 'Använd tid (minuter)';
 $string['timetaken'] = 'Använd tid';
-$string['topscorestitle'] = 'De högsta {$a} resultaten';
 $string['true'] = 'Sant';
 $string['truefalse'] = 'Sant/Falskt';
 $string['unabledtosavefile'] = 'Det gick inte att spara den fil som Du laddade upp';
@@ -768,7 +762,6 @@ $string['usemean'] = 'Använd medel';
 $string['usepassword'] = 'Lektion som kräver lösenord';
 $string['usepassword_help'] = '<p>Det här innebär att studenterna/eleverna/deltagarna/de lärande inte kommer att kunna göra lektionen om de inte skriver in lösenordet.</p>';
 $string['viewgrades'] = 'Visa betyg/omdömen';
-$string['viewhighscores'] = 'Visa listan över höga resultat';
 $string['viewreports'] = 'Visa {$a->attempts} fullföljda {$a->student} försök';
 $string['viewreports2'] = 'Visa {$a} fullföljda försök';
 $string['welldone'] = 'Bra gjort!';
@@ -778,7 +771,6 @@ $string['wronganswerscore'] = 'Resultat för fel svar';
 $string['wrongresponse'] = 'Fel svarsreaktion';
 $string['xattempts'] = '{$a} försök';
 $string['youhaveseen'] = 'Du har redan sett mer än en sida av den här lektionen.<br />Vill Du börja med den senaste sidan som Du såg?';
-$string['youmadehighscore'] = 'Du lyckades komma med på listan över höga resultat.';
 $string['youranswer'] = 'Ditt svar';
 $string['yourcurrentgradeis'] = 'Ditt nuvarande betyg/omdöme är {$a}';
 $string['yourcurrentgradeisoutof'] = 'Ditt aktuella betyg/omdöme är {$a->grade} av {$a->total}';

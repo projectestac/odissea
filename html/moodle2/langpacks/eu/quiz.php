@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,6 +91,9 @@ $string['attemptclosed'] = 'Saiakera ez da oraindik itxi.';
 $string['attemptduration'] = 'Emandako denbora';
 $string['attemptedon'] = 'Noiz saiatuta';
 $string['attempterror'] = 'Ez duzu baimenik galdetegi hau egiten orain saiatzeko. Arrazoia: {$a}';
+$string['attempterrorcontentchange'] = 'Galdetegiaren aurreikuspen hau jadanik ez dago. Galdetegi bat editatzen denean, aurreikuspen guztiak automatikoki ezabatzen dira.';
+$string['attempterrorcontentchangeforuser'] = 'Galdetegi-saiakera hau jadanik ez dago.';
+$string['attempterrorinvalid'] = 'Galdetegi-saiakeraren ID baliogabea';
 $string['attemptfirst'] = 'Lehen saiakera';
 $string['attemptincomplete'] = '{$a}-(r)en saiakera hau ez da burutu';
 $string['attemptlast'] = 'Azken saiakera';
@@ -170,8 +173,10 @@ $string['commentorgrade'] = 'Iruzkina egin edo kalifikazioa baliogabetu';
 $string['comments'] = 'Iruzkinak';
 $string['completedon'] = 'Noiz bukatua';
 $string['completionattemptsexhausted'] = 'Edo aukerako saiakera guztiak osatuta';
+$string['completionattemptsexhausteddesc'] = 'Osatutzat eman saiakera guztiak agortu badira.';
 $string['completionattemptsexhausted_help'] = 'Markatu galdetegia osatuta ikasleak gehienezko saiakera kopurua agortzen duenean.';
 $string['completionpass'] = 'Gainditzeko kalifikazioa behar du.';
+$string['completionpassdesc'] = 'Ikasleek gainditze-kalifikazio bat lortu behar dute jarduera hau osatutzat emateko';
 $string['completionpass_help'] = 'Gaituta, jarduera hau osatutzat hartuko da ikasleak gainditzeko kalifikazioa jasotzen duenean, kalifikazio-liburuan ezarritako gainditzeko kalifikazioaren araberakoa.';
 $string['configadaptive'] = 'Aukera honetan Bai ezarriz gero, ikasleak aukera izango du galdetegiaren saiakera berean galdera bati hainbat erantzun emateko.';
 $string['configattemptsallowed'] = 'Ikasleek galdetegian egin dezaketen saiakera-kopuruaren muga';
@@ -292,23 +297,21 @@ Eskerrik asko \'{$a->coursename}\' ikastaroko \'{$a->quizname}\' galdetegia eran
 
 Mezu honen bidez zure erantzunak jaso ditugula ziurtatu nahi dizugu.
 
-Ondoko helbidean duzu galdetegia {$a->quizurl}.';
+Ondoko helbidean galdetegia iksui dezakezu {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Eskerrik asko \'{$a->quizname}\' galdetegiari erantzun izanagatik';
 $string['emailconfirmsubject'] = 'Bidalketaren berrespena: {$a->quizname}';
 $string['emailnotifybody'] = 'Kaixo {$a->username},
 
-{$a->studentname} -k osatu du
-\'{$a->quizname}\' ({$a->quizurl}) galdetegia
-\'{$a->coursename}\' ikastaroan
+{$a->studentname} -k \'{$a->quizname}\' ({$a->quizurl}) galdetegia osatu du \'{$a->coursename}\' ikastaroan.
 
-Saiakera hau hemen {$a->quizreviewurl} berrikusi ahal duzu.';
+Saiakera hau hemen berrikusi ahal duzu {$a->quizreviewurl}.';
 $string['emailnotifysmall'] = '{$a->studentname}-(e)k {$a->quizname} osatu du. Ikusi {$a->quizreviewurl}';
 $string['emailnotifysubject'] = '{$a->studentname} -(e)k {$a->quizname} osatu du';
-$string['emailoverduebody'] = '{$a->studentname} agurgarria,
+$string['emailoverduebody'] = 'Kaixo {$a->studentname},
 
 Saiakera bat hasi zenuen \'{$a->coursename}\' ikastaroko \'{$a->quizname}\' galdetegian, baina ez duzu bidalketa egin. Bidalita egon beharko litzateke {$a->attemptduedate}-rako.
 
-Oraindik bidali nahi baduzu, mesedez joan {$a->attemptsummaryurl}-ra eta klik egin bidalketa botoian. {$a->attemptgraceend} baino lehen egiten ez baduzu, zure saiakera ez da aintzat hartuko.';
+Oraindik saiakera bidali nahi baduzu, mesedez joan {$a->attemptsummaryurl}-ra eta klik egin bidalketa botoian. Hau {$a->attemptgraceend} baino lehen egin behar duzu, bestela zure saiakera ez da aintzat hartuko.';
 $string['emailoverduesmall'] = 'Ez duzu bidali zure saiakera {$a->quizname} galdetegian. Oraindik bidali nahi baduzu, mesedez, joan {$a->attemptsummaryurl}-ra {$a->attemptgraceend} baino lehen.';
 $string['emailoverduesubject'] = 'Epez kanpoko saiakera:  {$a->quizname}';
 $string['empty'] = 'Hutsik';
@@ -347,11 +350,11 @@ $string['exportquestions'] = 'Galderak fitxategi batera esportatu';
 $string['extraattemptrestrictions'] = 'Aparteko murrizketak saiakeretarako';
 $string['false'] = 'Gezurra';
 $string['feedback'] = 'Feedbacka';
-$string['feedbackerrorboundaryformat'] = 'Atzera-elikaduraren muga-kalifikazioa ehunekoa edo zenbakia izan behar du. {$a} mugan sartu den balorea ezin da onartu.';
-$string['feedbackerrorboundaryoutofrange'] = 'Atzera-elikaduraren muga-kalifikazioak %0 eta %100en artean egon behar du. {$a} mugan sartu den muga ez dago horien artean.';
-$string['feedbackerrorjunkinboundary'] = 'Atzera-elikaduraren muga-kalifikazioen atalak hutsunerik gabe bete behar dituzu.';
+$string['feedbackerrorboundaryformat'] = 'Atzera-elikaduraren kalifikazio-muga ehunekoa edo zenbakia izan behar du. {$a} mugan sartu den balorea ezin da onartu.';
+$string['feedbackerrorboundaryoutofrange'] = 'Atzera-elikaduraren kalifikazio-mugak %0 eta %100en artean egon behar du. {$a} mugan sartu den muga ez dago horien artean.';
+$string['feedbackerrorjunkinboundary'] = 'Atzera-elikaduraren kalifikazio-mugan atalak hutsunerik gabe bete behar dituzu.';
 $string['feedbackerrorjunkinfeedback'] = 'Atzera-elikadura atalak hutsunerik gabe bete behar dituzu.';
-$string['feedbackerrororder'] = 'Feedback-aren muga-kalifikazioek ordenatuta joan behar dute, altuenetik hasita. {$a} mugan sartutako balorea ez dago ordenan.';
+$string['feedbackerrororder'] = 'Feedback-aren kalifikazio-mugek ordenatuta joan behar dute, altuenetik hasita. {$a} mugan sartutako balorea ez dago ordenan.';
 $string['file'] = 'Fitxategia';
 $string['fileformat'] = 'Fitxategiaren formatua';
 $string['fillcorrect'] = 'Erantzun zuzena eman';
@@ -368,19 +371,9 @@ $string['fractionsaddwrong'] = 'Aukeratu dituzun gradu positiboak gehituta ez da
 $string['fractionsnomax'] = 'Erantzunetako batek %100 izan beharko luke, horrela<br/>erantzun honentzat gehienezko nota lortzea posible izan dadin.<br/>Atzera bueltatu nahi duzu arazoa konpontzeko?';
 $string['fromfile'] = 'fitxategi honetatik:';
 $string['functiondisabledbysecuremode'] = 'Funtzionalitate hau une honetan desgaituta dago';
-$string['generalfeedback'] = 'Feedback orokorra';
-$string['generalfeedback_help'] = '<p>Galderen feedback orokorra galderari erantzun ondoren ikasleei
-erakutsiko zaien testua da. Galdera-mota eta ikaslearen erantzunaren
-araberako feedback-ean ez bezala, feedback orokorrean testu bera
-erakutsiko zaie ikasle guztiei.</p>
-
-<p>Ikasleei feedback orokorra noiz erakutsiko zaien kontrola dezakezu
-"Berrikusteko aukera:"ko laukitxoan erabilita galdetegia editatzeko
-formularioan.</p>
-
-<p>Aztertzen ari zaren gaiari buruzko aurrezagutzak emateko erabil
-dezakezu feedback orokorra. Edo informazio gehiago lortzeko estekaren bat
-eskaintzeko, galderak ulertzen ez badituzte.</p>';
+$string['generalfeedback'] = 'Galderaren feedback orokorra';
+$string['generalfeedback_help'] = 'Galderaren feedback orokorra galderari erantzun ondoren ikasleei erakutsiko zaien testua da. Galdera-mota eta ikaslearen erantzunaren araberako feedback-ean ez bezala, galderaren feedback orokorrean ikasle guztiei testu bera
+erakusten zaie.';
 $string['graceperiod'] = 'Bidalketaren graziazko epea';
 $string['graceperiod_desc'] = 'Epea iraungitzen denean egin beharrekoa  \'Bidalketa berrietarako graziazko epea eman baina ez onartu aldaketarik emandako erantzunetan\' aukeran ezarrita badago, hau da emandako aparteko denborarako balio lehenetsia.';
 $string['graceperiod_help'] = 'Epea iraungitzen denean egin beharrekoa  \'Bidalketa berrietarako graziazko epea eman baina ez onartu aldaketarik emandako erantzunetan\' aukeran ezarrita badago, hau da emandako aparteko denbora.';
@@ -435,6 +428,10 @@ $string['importmaxerror'] = 'Galderan errore bat dago. Erantzun gehiegi dago.';
 $string['importquestions'] = 'Galderak fitxategi batetik inportatu';
 $string['inactiveoverridehelp'] = '* Ikasleak ez du rol edo talde egokirik galdetegi honi erantzuteko';
 $string['incorrect'] = 'Ez zuzena';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa galdetegietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Galdetegia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala galdetegietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Galdetegia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indivresp'] = 'Elementu bakoitzari norberak emandako erantzunak';
 $string['info'] = 'Informazioa';
 $string['infoshort'] = 'i';
@@ -510,7 +507,7 @@ $string['navmethod_free'] = 'Librea';
 $string['navmethod_help'] = 'Nabigazio sekuentziala gaituta dagoenean ikasleek galdetegiaren ordena jarraitu behar dute, eta ezingo dute aurreko orrira itzuli edo hurrengora joan.';
 $string['navmethod_seq'] = 'Sekuentziala';
 $string['navnojswarning'] = 'Kontuz: esteka horrek ez ditu gordeko zure erantzunak. Erabili hurrengoa botoia orriaren beheko aldean.';
-$string['neverallononepage'] = 'Inoiz ez, orri guztiak orri batean.';
+$string['neverallononepage'] = 'Inoiz ez, galdera guztiak orri batean.';
 $string['newattemptfail'] = 'Errorea: ezin izan da beste saiakera bat hasi galdetegian';
 $string['newpage'] = 'Orri berria';
 $string['newpageevery'] = 'Orri berria automatikoki hasi';
@@ -565,12 +562,13 @@ $string['onlyteachersexport'] = 'Irakasleek bakarrik esporta ditzakete galderak'
 $string['onlyteachersimport'] = 'Edizio baimema duten irakasleek bakarrik inporta ditzakete galderak';
 $string['onthispage'] = 'Orri hau';
 $string['open'] = 'Erantzunik gabe';
+$string['openafterclose'] = 'Ezin izan da galdetegia eguneratu. Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['openclosedatesupdated'] = 'Galdetegia zabaltzeko eta ixteko datak eguneratuta';
 $string['optional'] = 'aukerakoa';
 $string['orderandpaging'] = 'Ordenatu eta orrikatu';
 $string['orderandpaging_help'] = 'Galderen aldamenean dauden 10, 20, 30... zenbakiek galderen ordena adierazten dute. Zenbakiak hamarnaka igotzen dira, galdera berriak tartekatu behar badira, lekua izateko. Galderak berrantolatu behar badira, sakatu "Galderak berrantolatu" botoia.
 
-Orri-jauziak ezartzeko galdera jakin baten ondoren, galderen aldamenean dauden karratutxoak markatu, eta klik egin "Gehitu beste orri batzuk aukeratutako galderen ondoren" botoian.
+Orri-jauziak ezartzeko galdera jakin baten ondoren, galderen aldamenean dauden laukitxoak markatu, eta klik egin "Gehitu beste orri batzuk aukeratutako galderen ondoren" botoian.
 
 Galderak orri-kopuru jakin baten artean banatzeko, "Berriz orrikatu" botoian klikatu eta aukeratu orri bakoitzeko nahi den galdera-kopurua.';
 $string['orderingquiz'] = 'Ordenatu eta orrikatu';
@@ -579,28 +577,8 @@ $string['outcomesadvanced'] = 'Ikas-emaitzak ezarpen aurreratuak dira';
 $string['outof'] = '{$a->grade} eta gehienez {$a->maxgrade}';
 $string['outofpercent'] = '{$a->grade} eta gehienez {$a->maxgrade} (%{$a->percent})';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
-$string['overallfeedback'] = 'Feedback orokorra';
-$string['overallfeedback_help'] = '<p>Feedback orokorra galdetegiaren saiakera bat osatu
-ondoren ikasleari erakutsiko zaion testua da. Erakutsitako testua
-ikasleak lortutako kalifikazioaren araberakoa izan daiteke.</p>
-
-<p>Adibidez, hau sartzen baduzu:</p>
-
-<p>Muga-kalifikazioa: 100%<br />
-Feedback-a: Oso ondo<br />
-Muga-kalifikazioa: 40%<br />
-Feedback-a: Asteburu honetan birpasatu egin beharko duzu<br />
-...<br />
-Muga-kalifikazioa: 0%</p>
-
-<p>%100 eta %40 arteko kalifikazioa lortzen duen ikasleak "Oso ondo"
-mezua ikusiko du, eta %39,99 eta %0 arteko kalifikazioa lortzen duenak,
-berriz, beste mezua ikusiko du. Horrela, muga-kalifikazioek kalifikazio-mailak
-ezartzen dituzte, eta bakoitzaren feedback-katea dagokion mailako puntuazioetarako
-erakutsiko da.</p>
-
-<p>Muga-kalifikazioak ehunekotan ezar daitezke, "% 31.41%" adibidez, edo
-zenbaki batekin, "7" adibidez. Zure galdetegiak 10ekoa bada, 7ko muga-kalifikazioak 10etik 7 edo gehiago esan nahi du.</p>';
+$string['overallfeedback'] = 'Galdetegiaren feedbacka orokorra';
+$string['overallfeedback_help'] = 'Galdetegiaren feedbacka orokorra galdetegiaren saiakera bat osatu ondoren ikasleari erakutsiko zaion testua da. Kalifikazio-muga gehiago zehaztuta (zenbakia edo ehunekoa adieraziz), erakutsitako testua ikasleak lortutako kalifikazioaren araberakoa izan daiteke.';
 $string['overdue'] = 'Atzeratuta';
 $string['overduehandling'] = 'Epea iraungitzen denean';
 $string['overduehandlingautoabandon'] = 'Saiakerak denbora agortu aurretik bidali behar dira; bestela, ez dira aintzat hartuko';
@@ -648,6 +626,31 @@ $string['previewquestion'] = 'Galdera aurreikusi';
 $string['previewquiz'] = '{$a} aurreikusi';
 $string['previewquiznow'] = 'Galdetegia orain aurreikusi';
 $string['previous'] = 'Aurreko egoera';
+$string['privacy:metadata:core_question'] = 'Galdetegia jarduerak galderen erabileraren informazioa gordetzen du core_question sisteman.';
+$string['privacy:metadata:quiz'] = 'Galdetegia jarduerak galdetegi-txostenen erabilera egiten du.';
+$string['privacy:metadata:quizaccess'] = 'Galdetegia jarduerak galdetegien sarbide-arauen erabilera egiten du.';
+$string['privacy:metadata:quiz_attempts'] = 'Galdetegi bateko saiakera bakoitzaren inguruko xehetasunak.';
+$string['privacy:metadata:quiz_attempts:attempt'] = 'Saiakera-zenbakia.';
+$string['privacy:metadata:quiz_attempts:currentpage'] = 'Erabiltzean une honetan dagoen orria.';
+$string['privacy:metadata:quiz_attempts:preview'] = 'Galdetegiaren aurrebista bat den edo ez.';
+$string['privacy:metadata:quiz_attempts:state'] = 'Saiakeraren une honetako egoera';
+$string['privacy:metadata:quiz_attempts:sumgrades'] = 'Saiakerako kalifikazioen batuketa.';
+$string['privacy:metadata:quiz_attempts:timecheckstate'] = 'Egoera konprobatu zeneko unea.';
+$string['privacy:metadata:quiz_attempts:timefinish'] = 'Saiakera osatu zeneko unea.';
+$string['privacy:metadata:quiz_attempts:timemodified'] = 'Saiakera eguneratu zeneko unea.';
+$string['privacy:metadata:quiz_attempts:timemodifiedoffline'] = 'Saiakera lineaz kanpoko eguneraketa baten bitartez eguneratu zeneko unea.';
+$string['privacy:metadata:quiz_attempts:timestart'] = 'Saiakera hasi zeneko unea.';
+$string['privacy:metadata:quiz_grades'] = 'Galdetegi honetako kalifikazio orokorraren inguruko xehetasunak.';
+$string['privacy:metadata:quiz_grades:grade'] = 'Galdetegi honetako kalifikazio orokorra.';
+$string['privacy:metadata:quiz_grades:quiz'] = 'Kalifikatutako galdetegia.';
+$string['privacy:metadata:quiz_grades:timemodified'] = 'Kalifikazioa aldatu zeneko unea.';
+$string['privacy:metadata:quiz_grades:userid'] = 'Kalifikatutako erabiltzailea.';
+$string['privacy:metadata:quiz_overrides'] = 'Galdetegi honetako baliogabetzeen inguruko xehetasunak.';
+$string['privacy:metadata:quiz_overrides:quiz'] = 'Baliogabetutako informazioa duen galdetegia.';
+$string['privacy:metadata:quiz_overrides:timeclose'] = 'Galdetegirako ixteko data berria.';
+$string['privacy:metadata:quiz_overrides:timelimit'] = 'Galdetegirako denbora-muga berria.';
+$string['privacy:metadata:quiz_overrides:timeopen'] = 'Galdetegirako zabaltze-une berria.';
+$string['privacy:metadata:quiz_overrides:userid'] = 'Baliogabetzen ari den erabiltzailea';
 $string['publish'] = 'Argitaratu';
 $string['publishedit'] = 'Argitaratzeko erabaki den ikastaroan baimena behar duzu izan kategoria honetan galderak editatu edo gehitzeko';
 $string['qbrief'] = 'Q. {$a}';
@@ -693,6 +696,8 @@ $string['quiz:deleteattempts'] = 'Galdetegiaren saiakerak ezabatu';
 $string['quiz:emailconfirmsubmission'] = 'Jaso e-postako berreste-mezua bidaltzean';
 $string['quiz:emailnotifysubmission'] = 'Jaso e-postako jakinarazpen-mezua saiakera bat bidaltzen denean';
 $string['quiz:emailwarnoverdue'] = 'Jakinarazpen-mezu bat jaso saiakera batek epea gainditzen duenean eta bidaltzera behartzen denean.';
+$string['quizeventcloses'] = '{$a}-(r)en itxiera-data:';
+$string['quizeventopens'] = '{$a}-(r)en hasiera-data';
 $string['quiz:grade'] = 'Galdetegiak eskuz kalifikatu';
 $string['quiz:ignoretimelimits'] = 'Galdetegien denbora-mugari jaramonik ez egin';
 $string['quizisclosed'] = 'Galdetegi hau itxita dago';
@@ -832,7 +837,7 @@ $string['reviewoptionsheading_help'] = 'Aukera hauek kontrolatzen dute ikasleek 
 **Beranduago, galdetegia irekita dagoen bitartean** aukerak aurrekoaren ondoren aplikatzen da, galdetegiaren itxiera-data heldu arte.
 
 **Galdetegia itxi ondoren** aukera galdetegiaren itxiera-data igaro ondoren aplikatzen da. Galdetegiak ez badu itxiera-datarik egoera honetara ez da inoiz heltzen.';
-$string['reviewoverallfeedback'] = 'Feedback orokorra';
+$string['reviewoverallfeedback'] = 'Galdetegiaren feedbacka orokorra';
 $string['reviewoverallfeedback_help'] = 'Saiakeraren amaieran emandako feedbacka, ikasleak denera jasotako kalifikazio orokorraren araberakoa.';
 $string['reviewresponse'] = 'Ebazpena berrikusi';
 $string['reviewresponsetoq'] = 'Ebazpena berrikusi ({$a} galdera)';
@@ -862,6 +867,8 @@ $string['select'] = 'Aukeratu';
 $string['selectall'] = 'Denak aukeratu';
 $string['selectcategory'] = 'Kategoria aukeratu';
 $string['selectedattempts'] = 'Aukeratutako saiakerak...';
+$string['selectmultipleitems'] = 'Aukeratu elementu bat baino gehiago';
+$string['selectmultipletoolbar'] = 'Aukeratu erreminta-barra bat baino gehiago';
 $string['selectnone'] = 'Guztiak alde batera utzi';
 $string['selectquestiontype'] = '-- Aukeratu galdera-mota --';
 $string['serveradded'] = 'Zerbitzaria gehituta';

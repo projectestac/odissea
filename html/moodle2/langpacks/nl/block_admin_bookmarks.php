@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_admin_bookmarks', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_admin_bookmarks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['admin_bookmarks:addinstance'] = 'Voeg een nieuw favorietenblok toe';
 $string['admin_bookmarks:myaddinstance'] = 'Voeg een nieuw blok aan Mijn startpagina toe om favorieten te beheren';
 $string['pluginname'] = 'Beheer bladwijzers';
+$string['privacy:metadata'] = 'Het beheer bladwijzersblok toont alleen gegevens die op andere locaties zijn opgeslagen.';

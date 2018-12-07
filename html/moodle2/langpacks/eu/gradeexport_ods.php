@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeexport_ods', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeexport_ods
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['eventgradeexported'] = 'Kalifikazioa OpenDocument gisa esportatu da';
 $string['ods:publish'] = 'ODS kalifikazioen esportazioa argitaratu';
 $string['ods:view'] = 'Kalifikazioak esportatzeko OpenDocument erabili';
 $string['pluginname'] = 'OpenDocument-en kalkulu-orria';
+$string['privacy:metadata'] = 'OpenDocument-en kalkulu-orria kalifikazioak esportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['timeexported'] = 'Azkenik jaitsi da ikastaro honetatik';

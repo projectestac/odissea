@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_database', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -47,6 +47,16 @@ $string['other'] = 'Other';
 $string['participating'] = 'Participating';
 $string['pluginname'] = 'External database log';
 $string['pluginname_desc'] = 'A log plugin that stores log entries in an external database table.';
+$string['privacy:metadata:log'] = 'A collection of past events';
+$string['privacy:metadata:log:anonymous'] = 'Whether the event was flagged as anonymous';
+$string['privacy:metadata:log:eventname'] = 'The event name';
+$string['privacy:metadata:log:ip'] = 'The IP address used at the time of the event';
+$string['privacy:metadata:log:origin'] = 'The origin of the event';
+$string['privacy:metadata:log:other'] = 'Additional information about the event';
+$string['privacy:metadata:log:realuserid'] = 'The ID of the real user behind the event, when masquerading a user.';
+$string['privacy:metadata:log:relateduserid'] = 'The ID of a user related to this event';
+$string['privacy:metadata:log:timecreated'] = 'The time at which the event occurred';
+$string['privacy:metadata:log:userid'] = 'The ID of the user who triggered this event';
 $string['read'] = 'Read';
 $string['tablenotfound'] = 'Specified table was not found';
 $string['teaching'] = 'Teaching';

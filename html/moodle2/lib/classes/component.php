@@ -83,6 +83,8 @@ class core_component {
         'MatthiasMullie\\Minify' => 'lib/minify/matthiasmullie-minify/src/',
         'MatthiasMullie\\PathConverter' => 'lib/minify/matthiasmullie-pathconverter/src/',
         'IMSGlobal\LTI' => 'lib/ltiprovider/src',
+        'Phpml' => 'lib/mlbackend/php/phpml/src/Phpml',
+        'PHPMailer\\PHPMailer' => 'lib/phpmailer/src',
     );
 
     /**
@@ -415,6 +417,7 @@ $cache = '.var_export($cache, true).';
         $info = array(
             'access'      => null,
             'admin'       => $CFG->dirroot.'/'.$CFG->admin,
+            'analytics'   => $CFG->dirroot . '/analytics',
             'antivirus'   => $CFG->dirroot . '/lib/antivirus',
             'auth'        => $CFG->dirroot.'/auth',
             'availability' => $CFG->dirroot . '/availability',
@@ -439,8 +442,9 @@ $cache = '.var_export($cache, true).';
             'enrol'       => $CFG->dirroot.'/enrol',
             'error'       => null,
             'filepicker'  => null,
+            'fileconverter' => $CFG->dirroot.'/files/converter',
             'files'       => $CFG->dirroot.'/files',
-            'filters'     => null,
+            'filters'     => $CFG->dirroot.'/filter',
             //'fonts'       => null, // Bogus.
             'form'        => $CFG->dirroot.'/lib/form',
             'grades'      => $CFG->dirroot.'/grade',
@@ -466,10 +470,9 @@ $cache = '.var_export($cache, true).';
             'plagiarism'  => $CFG->dirroot.'/plagiarism',
             'plugin'      => null,
             'portfolio'   => $CFG->dirroot.'/portfolio',
-            'publish'     => $CFG->dirroot.'/course/publish',
+            'privacy'     => $CFG->dirroot . '/privacy',
             'question'    => $CFG->dirroot.'/question',
             'rating'      => $CFG->dirroot.'/rating',
-            'register'    => $CFG->dirroot.'/'.$CFG->admin.'/registration', // Broken badly if $CFG->admin changed.
             'repository'  => $CFG->dirroot.'/repository',
             'rss'         => $CFG->dirroot.'/rss',
             'role'        => $CFG->dirroot.'/'.$CFG->admin.'/roles',
@@ -478,7 +481,7 @@ $cache = '.var_export($cache, true).';
             'tag'         => $CFG->dirroot.'/tag',
             'timezones'   => null,
             'user'        => $CFG->dirroot.'/user',
-            'userkey'     => null,
+            'userkey'     => $CFG->dirroot.'/lib/userkey',
             'webservice'  => $CFG->dirroot.'/webservice',
         );
 
@@ -514,6 +517,7 @@ $cache = '.var_export($cache, true).';
             'gradeimport'   => $CFG->dirroot.'/grade/import',
             'gradereport'   => $CFG->dirroot.'/grade/report',
             'gradingform'   => $CFG->dirroot.'/grade/grading/form',
+            'mlbackend'     => $CFG->dirroot.'/lib/mlbackend',
             'mnetservice'   => $CFG->dirroot.'/mnet/service',
             'webservice'    => $CFG->dirroot.'/webservice',
             'repository'    => $CFG->dirroot.'/repository',
@@ -525,6 +529,7 @@ $cache = '.var_export($cache, true).';
             'tool'          => $CFG->dirroot.'/'.$CFG->admin.'/tool',
             'cachestore'    => $CFG->dirroot.'/cache/stores',
             'cachelock'     => $CFG->dirroot.'/cache/locks',
+            'fileconverter' => $CFG->dirroot.'/files/converter',
         );
         $parents = array();
         $subplugins = array();
@@ -1242,5 +1247,39 @@ $cache = '.var_export($cache, true).';
                 }
             }
         }
+    }
+
+    /**
+     * Returns a list of frankenstyle component names and their paths, for all components (plugins and subsystems).
+     *
+     * E.g.
+     *  [
+     *      'mod' => [
+     *          'mod_forum' => FORUM_PLUGIN_PATH,
+     *          ...
+     *      ],
+     *      ...
+     *      'core' => [
+     *          'core_comment' => COMMENT_SUBSYSTEM_PATH,
+     *          ...
+     *      ]
+     * ]
+     *
+     * @return array an associative array of components and their corresponding paths.
+     */
+    public static function get_component_list() : array {
+        $components = [];
+        // Get all plugins.
+        foreach (self::get_plugin_types() as $plugintype => $typedir) {
+            $components[$plugintype] = [];
+            foreach (self::get_plugin_list($plugintype) as $pluginname => $plugindir) {
+                $components[$plugintype][$plugintype . '_' . $pluginname] = $plugindir;
+            }
+        }
+        // Get all subsystems.
+        foreach (self::get_core_subsystems() as $subsystemname => $subsystempath) {
+            $components['core']['core_' . $subsystemname] = $subsystempath;
+        }
+        return $components;
     }
 }

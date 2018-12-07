@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,7 +63,7 @@ $string['cannotdeletepost'] = 'Je kunt dit bericht niet verwijderen!';
 $string['cannoteditposts'] = 'Je kunt een bericht van andere gebruikers niet wijzigen!';
 $string['cannotfinddiscussion'] = 'Kon die discussie in dit forum niet vinden';
 $string['cannotfindfirstpost'] = 'Kon het eerste bericht van dit forum niet vinden';
-$string['cannotfindorcreateforum'] = 'Kon geen mededelingenforum vinden of maken voor deze site';
+$string['cannotfindorcreateforum'] = 'Kon geen mededelingenforum maken of vinden voor deze site';
 $string['cannotfindparentpost'] = 'Kon top ouder van bericht {$a} niet vinden';
 $string['cannotmovefromsingleforum'] = 'Kan de discussie van een eenvoudig enkele discussieforum niet verplaatsen';
 $string['cannotmovenotvisible'] = 'Forum niet zichtbaar';
@@ -84,19 +84,22 @@ $string['cleanreadtime'] = 'Markeer oude berichten als gelezen';
 $string['clicktosubscribe'] = 'Je bent niet ingeschreven op deze discussie. Klik om in te schrijven.';
 $string['clicktounsubscribe'] = 'Je bent ingeschreven op deze discussie. Klik om uit te schrijven.';
 $string['completiondiscussions'] = 'Leerling moet discussies starten:';
+$string['completiondiscussionsdesc'] = 'Leerling moet minstens {$a} discussie(s) maken';
 $string['completiondiscussionsgroup'] = 'Discussies vereist';
 $string['completiondiscussionshelp'] = 'discussies vereist om te voltooien';
 $string['completionposts'] = 'Leerling moet discussies starten of beantwoorden:';
+$string['completionpostsdesc'] = 'Leerling moet minstens {$a} discussie(s) of antwoord(en) posten';
 $string['completionpostsgroup'] = 'Berichten vereist';
 $string['completionpostshelp'] = 'discussies of antwoorden vereist voor voltooien';
 $string['completionreplies'] = 'Leerling moet antwoorden posten:';
+$string['completionrepliesdesc'] = 'Leerling moet minstens {$a} antwoord(en) posten';
 $string['completionrepliesgroup'] = 'Antwoorden vereist';
 $string['completionreplieshelp'] = 'antwoorden vereist voor voltooien';
 $string['configcleanreadtime'] = 'Het uur van de dag waarop oude berichten van de \'gelezen\'-tabel moeten verwijderd worden.';
 $string['configdigestmailtime'] = 'Gebruikers die ervoor kiezen dat de e-mails hun als samenvatting toegezonden worden, zullen dagelijks een e-mail ontvangen. Deze instelling controleert op welk moment van de dag deze dagelijkse mail verzonden wordt (de mail wordt verstuurd door de cron die volgt op het uur dat hier gekozen wordt)';
 $string['configdisplaymode'] = 'De standaardmanier voor het weergeven van discussies als er geen methode is ingesteld.';
 $string['configenablerssfeeds'] = 'Met deze instelling kun je de mogelijkheid voor het maken van RSS-feeds inschakelen voor alle forums. Je zult wel nog voor elk forum afzonderlijk het maken van de RSS-feeds moeten  inschakelen.';
-$string['configenabletimedposts'] = 'Zet op \'Ja\' als je een tijdvak wil instellen wanneer je een nieuwe discussie start.';
+$string['configenabletimedposts'] = 'Zet op \'Ja\' als je een tijdvak wil tonen wanneer je een nieuwe discussie start.';
 $string['configlongpost'] = 'Elk bericht dat langer is dan deze waarde (HTML-code niet inbegrepen) wordt als lang beschouwd.';
 $string['configmanydiscussions'] = 'Maximale aantal discussies van een forum die per pagina getoond worden';
 $string['configmaxattachments'] = 'Standaard maximale aantal bijlagen per bericht';
@@ -106,6 +109,7 @@ $string['configreplytouser'] = 'Wil je dat de e-mail van een bericht op het foru
 $string['configrssarticlesdefault'] = 'Indien RSS-feeds zijn ingeschakeld, dan stelt deze instelling het aantal artikels in (discussies of berichten)';
 $string['configrsstypedefault'] = 'Indien RSS-feeds zijn ingeschakeld, dan stelt deze instelling de standaard activiteit in.';
 $string['configshortpost'] = 'Elk bericht dat korter is dan deze waarde (HTML-code niet inbegrepen) wordt als kort beschouwd.';
+$string['configsubscriptiontype'] = 'Standaardinstellingen voor inschrijvingsmodus.';
 $string['configtrackingtype'] = 'Standaardinstelling voor het opvolgen van lezen.';
 $string['configtrackreadposts'] = 'Zet op \'ja\' als je gelezen/ongelezen wil bijhouden voor elke gebruiker.';
 $string['configusermarksread'] = 'Indien \'ja\' moet de lezer de berichten manueel als gelezen markeren. Indien \'nee\' wordt het bericht als gelezen gemarkeerd wanneer het geopend werd.';
@@ -246,14 +250,14 @@ $string['forum:exportdiscussion'] = 'Exporteer de hele discussie';
 $string['forum:exportownpost'] = 'Exporteer je eigen bericht';
 $string['forum:exportpost'] = 'Exporteer bericht';
 $string['forumintro'] = 'Beschrijving';
-$string['forum:managesubscriptions'] = 'Beheer het ontvangen van e-mail';
+$string['forum:managesubscriptions'] = 'Beheer abonnementen';
 $string['forum:movediscussions'] = 'Discussies verplaatsen';
 $string['forumname'] = 'Naam van het forum';
 $string['forum:pindiscussions'] = 'Discussies vastpinnen';
 $string['forumposts'] = 'Forumberichten';
 $string['forum:postwithoutthrottling'] = 'Vrijgesteld van beperkingen om te posten';
 $string['forum:rate'] = 'Berichten beoordelen';
-$string['forum:replynews'] = 'Antwoord op mededelingen';
+$string['forum:replynews'] = 'Beantwoord mededelingen';
 $string['forum:replypost'] = 'Berichten beantwoorden';
 $string['forums'] = 'Forums';
 $string['forum:splitdiscussions'] = 'Discussies splitsen';
@@ -279,6 +283,10 @@ $string['forum:viewsubscribers'] = 'Bekijk wie e-mail ontvangt';
 $string['generalforum'] = 'Standaardforum voor algemeen gebruik';
 $string['generalforums'] = 'Algemene forums';
 $string['hiddenforumpost'] = 'Verborgen forumbericht';
+$string['indicator:cognitivedepth'] = 'Forum cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Forum activiteit.';
+$string['indicator:socialbreadth'] = 'Forum sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Forum activiteit.';
 $string['inforum'] = 'in {$a}';
 $string['introblog'] = 'De berichten in dit forum zijn automatisch naar hier gekopieerd van blogs van gebruikers in deze cursus omdat deze blogs niet langer beschikbaar zijn';
 $string['intronews'] = 'Algemeen nieuws en aankondigingen';
@@ -297,7 +305,9 @@ $string['lockdiscussionafter'] = 'Blokkeer discussies na een periode zonder acti
 $string['lockdiscussionafter_help'] = 'Discussies kunnen automatisch worden geblokkeerd nadat een bepaalde tijd is verstreken sinds het laatste antwoord.
 Gebruikers met de mogelijkheid om te antwoorden op gesloten discussies kunnen een discussie ontgrendelen door een antwoord te plaatsen.';
 $string['longpost'] = 'Lang bericht';
-$string['mailnow'] = 'Stuur meldingen van forumberichten zonder vertraging voor bewerken';
+$string['mailnow'] = 'Stuur e-mail onmiddellijk';
+$string['managesubscriptionsoff'] = 'Beëindig het beheren van inschrijvingen';
+$string['managesubscriptionson'] = 'Beheer abonnementen';
 $string['manydiscussions'] = 'Discussies per pagina';
 $string['markalldread'] = 'Markeer alle berichten in deze discussie als gelezen';
 $string['markallread'] = 'Markeer alle berichten in dit forum als gelezen';
@@ -335,7 +345,7 @@ Er zijn verschillende forumtypes om uit te kiezen, zoals standaard forum, waarbi
 
 Deelnemers kunnen zich inschrijven op een forum, zodat ze meldingen krijgen van nieuwe forumberichten. Een leraar kan die inschrijvingsmodus op optioneel, verplicht of automatich zetten of het inschrijven volledig blokkeren. Indien nodig kunnen leerlingen geblokkeerd worden als ze meer dan een bepaald aantal berichten posten per tijdsperiode; dit kan verhinderen dat sommigen de discussie domineren.
 
-Forumberichten kunnen beoordeeld worden door leraars of door leerlingen (peer-evaluatie). De beoordelingen kunnen samengeteld worden om een eindbeoordeling voor het forum te bekomen, die dan in de cijferlijst opgenomen wordt.
+Forumberichten kunnen beoordeeld worden door leraars of door leerlingen (peer-evaluatie). De beoordelingen kunnen samengeteld worden om een eindbeoordeling voor het forum te verkrijgen, die dan in de cijferlijst opgenomen wordt.
 
 Forums kunnen voor veel zaken gebruikt worden, zoals
 
@@ -369,7 +379,7 @@ $string['noguestpost'] = 'Sorry, gasten mogen geen berichten posten';
 $string['noguestsubscribe'] = 'Sorry, maar gasten mogen niet inschrijven.';
 $string['noguesttracking'] = 'Sorry, gasten kunnen de instellingen voor het volgen van forumberichten niet wijzigen.';
 $string['nomorepostscontaining'] = 'Er zijn geen berichten met \'{$a}\' meer gevonden';
-$string['nonews'] = 'Er zijn nog geen mededelingen';
+$string['nonews'] = 'Er zijn nog geen mededelingen.';
 $string['noonecansubscribenow'] = 'Inschrijven is nu niet toegelaten';
 $string['nopermissiontosubscribe'] = 'Je hebt het recht niet te zien wie e-mail van dit forum ontvangt';
 $string['nopermissiontoview'] = 'Je mag dit bericht niet zien';
@@ -417,7 +427,7 @@ $string['postincontext'] = 'Bekijk dit bericht in zijn context';
 $string['postmailinfo'] = 'Dit is een kopie van een bericht dat op de {$a} website is toegevoegd.
 
 Klik op deze link om jouw antwoord via de website toe te voegen:';
-$string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost in {$a->coursename}.
+$string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost op de website {$a->coursename}.
 
 Klik op volgende link om te antwoorden: {$a->replylink}';
 $string['postmailnow'] = '<p>Dit bericht zal onmiddellijk verstuurd worden naar iedereen die e-mail van dit forum wil.</p>';
@@ -443,6 +453,7 @@ $string['qandaforum'] = 'Vraag- en antwoordforum';
 $string['qandanotify'] = 'Dit is een vraag- en antwoordforum. Om de andere antwoorden op deze vraag te kunnen zien, moet je eerst je eigen antwoord posten.';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Lees de rest van deze discussie';
+$string['removeallforumtags'] = 'Verwijder alle forum-tags';
 $string['replies'] = 'Antwoorden';
 $string['repliesmany'] = '{$a} antwoorden tot nu toe';
 $string['repliesone'] = '{$a} antwoord tot nu toe';
@@ -484,6 +495,7 @@ $string['searchphrase'] = 'Dit zinsdeel moet exact voorkomen in het bericht';
 $string['search:post'] = 'Forum - berichten';
 $string['searchresults'] = 'Zoekresultaten';
 $string['searchsubject'] = 'Deze woorden moeten in het onderwerp staan';
+$string['searchtags'] = 'Is getagged met';
 $string['searchuser'] = 'Dit is de naam van de auteur';
 $string['searchuserid'] = 'Dit is de Moodle ID van de auteur';
 $string['searchwhichforums'] = 'Kies in welke forums je wil zoeken';
@@ -503,7 +515,6 @@ $string['subscribediscussion'] = 'Meldingen krijgen van deze discussie';
 $string['subscribeenrolledonly'] = 'Enkel aangemelde gebruikers mogen inschrijven op een forum om meldingen over nieuwe forumberichten te ontvangen';
 $string['subscribenone'] = 'Laat niemand van deze cursus e-mail van dit forum ontvangen';
 $string['subscribers'] = 'Krijgen e-mail';
-$string['subscribersto'] = 'Krijgen e-mail van "{$a->name}"';
 $string['subscriberstowithcount'] = 'Krijgen e-mail van "{$a->name}" ({$a->count})';
 $string['subscribestart'] = 'Stuur me een melding wanneer iemand een bericht op dit forum plaatst';
 $string['subscribestop'] = 'Ik wil geen meldingen van inzendingen op dit forum ontvangen';
@@ -524,6 +535,8 @@ Er zijn vier mogelijke manieren om in te schrijven op een forum:
 * Uitgeschakeld - Inschrijven is niet toegestaan';
 $string['subscriptionoptional'] = 'Optioneel inschrijven';
 $string['subscriptions'] = 'Deze deelnemers krijgen e-mail';
+$string['tagarea_forum_posts'] = 'Forumberichten';
+$string['tagsdeleted'] = 'Forum-tags zijn verwijderd';
 $string['thisforumisthrottled'] = 'Dit forum heeft een limiet op het aantal berichten dat je kan posten in een bepaalde periode - deze is nu ingesteld op {$a->blockafter} bericht(en) in {$a->blockperiod}';
 $string['timedhidden'] = 'Getimede status: verborgen voor leerlingen';
 $string['timedposts'] = 'Getimed bericht';
@@ -535,11 +548,11 @@ $string['trackingoff'] = 'Uit';
 $string['trackingon'] = 'Verplicht';
 $string['trackingoptional'] = 'Optioneel';
 $string['trackingtype'] = 'Lezen van dit forum opvolgen';
-$string['trackingtype_help'] = 'Als \'Volgen forum\' is ingeschakeld, dan zien gebruikers welke berichten ze gelezen hebben en welke berichten niet.
+$string['trackingtype_help'] = 'Als \'Volgen forum\' is ingeschakeld, dan kunnen gebruikers makkelijk zien welke berichten ze gelezen hebben en welke berichten niet door het oplichten van nieuwe berichten.
 
-Indien ingesteld op optioneel, dan kunnen gebruikers kiezen of ze al dan niet forum volgen inschakelen via een link in het beheer-blok. (Gebruikers moeten forum volgen ook inschakelen in hun forum voorkeuren.)
+Indien deze instelling als optioneel is gezet, dan kunnen deelnemers het volgen inschakelen of uitschakelen via een link in het beheerblok. (Gebruikers moeten ook forum volgen inschakelen in hun forum voorkeuren.)
 
-Indien \'verplicht forum volgen\' is ingeschakeld in het site-beheer, dan is er een extra optie mogelijk - verplicht. Dit betekent dat het volgen altijd ingeschakeld is, wat de gebruikersinstellingen ook zijn.';
+Als \'Forum opvolgen verplicht\' ingeschakeld is in het site-beheer, dan is er nog een optie mogelijk - verplicht. Dit betekent dat het opvolgen altijd aan is, ongeacht de forumvoorkeuren van de gebruiker.';
 $string['trackreadposts_header'] = 'Forum opvolgen';
 $string['unread'] = 'Niet gelezen';
 $string['unreadposts'] = 'Niet gelezen berichten';

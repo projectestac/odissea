@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_areafiles', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_areafiles', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_areafiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['areafiles:view'] = 'Bekijk opslagruimte Ingebedde bestanden';
 $string['configplugin'] = 'Configuratie voor opslagruimte Ingebedde bestanden';
 $string['pluginname'] = 'Ingebedde bestanden';
 $string['pluginname_help'] = 'Bestanden, ingebed in de huidige tekst editor';
+$string['privacy:metadata'] = 'De ingebedde bestanden opslagruimte-plugin bewaart geen persoonlijke gegevens.';

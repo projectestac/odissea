@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_settings', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_settings
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'De gebruiker toestaan dit blok naar het paneel te schuiven';
 $string['pluginname'] = 'Instellingen';
+$string['privacy:metadata'] = 'Het Administration-blok toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['settings:addinstance'] = 'Voeg een nieuw instellingenblok toe';
 $string['settings:myaddinstance'] = 'Voeg een nieuw instellingenblok toe aan Mijn startpagina.';

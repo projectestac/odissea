@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hub', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   hub
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -149,14 +149,15 @@ $string['private'] = 'Privado';
 $string['privatehuburl'] = 'URL de hub privado';
 $string['publicationinfo'] = 'Información de la publicación del curso';
 $string['publichub'] = 'Hub público';
-$string['publishcourse'] = 'Publicar {$a}';
-$string['publishcourseon'] = 'Publicar en {$a}';
+$string['publish'] = 'Compartir';
+$string['publishcourse'] = 'Compartir {$a}';
+$string['publishcourseon'] = 'Compartir en {$a}';
 $string['publishedon'] = 'Publicado en';
 $string['publisheremail'] = 'Email del Editor';
 $string['publisheremail_help'] = 'La dirección de correo electrónico del editor permite al administrador de hub alertar al editor sobre cualquier cambio en el estado del curso publicado.';
 $string['publishername'] = 'Editor';
 $string['publishername_help'] = 'El editor es la persona u organización  editora oficial del curso. A menos que usted lo está publicando en nombre de otra persona, el editor será usted.';
-$string['publishon'] = 'Publicar en';
+$string['publishon'] = 'Compartir en';
 $string['publishonspecifichub'] = 'Publicar en otro Hub';
 $string['questionsnumber'] = 'Número de preguntas ({$a})';
 $string['readvertiseon'] = 'Actualizar los avisos en {$a}';
@@ -242,7 +243,7 @@ $string['subject_help'] = 'Seleccione el tema principal que trata el curso.';
 $string['tags'] = 'Etiquetas';
 $string['tags_help'] = 'Las etiquetas ayudan a clasificar mejor su curso y ayudan a encontrarlo. Por favor, use palabras sencillas y significativas separadas por una coma. Ejemplo: matemáticas, álgebra, geometría';
 $string['trustme'] = 'Confiar';
-$string['type'] = 'Publicado/Compartido';
+$string['type'] = 'Compartido';
 $string['unknownstatus'] = 'Desconocido';
 $string['unlistedurl'] = 'URL de hub fuera de la lista';
 $string['unprioritise'] = 'Des-priorizar';

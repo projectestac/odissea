@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -95,7 +95,7 @@ $string['filenotuploadederror'] = 'Datei \'{$a}\' konnte nicht hochgeladen werde
 $string['files'] = 'Dateien';
 $string['filtername'] = 'Autoverlinkung im Wiki';
 $string['firstpagetitle'] = 'Name der Startseite';
-$string['firstpagetitle_help'] = 'Der Name der Startseite im Wiki kann nicht geändert werden, sobald das Wiki angelegt wurde.';
+$string['firstpagetitle_help'] = 'Der Name der Startseite im Wiki kann nachträglich nicht geändert werden!';
 $string['forceformat'] = 'Format vorgeben';
 $string['forceformat_help'] = 'Wenn das Format vorgegeben ist, kann bei der Erstellung einer neuen Wikiseite kein anderes Format eingestellt werden.';
 $string['format'] = 'Format';
@@ -121,6 +121,10 @@ $string['incorrectdeleteversions'] = 'Zu löschende Versionen sind falsch.';
 $string['incorrectpageid'] = 'Die Seiten-ID ist falsch.';
 $string['incorrectsubwikiid'] = 'Die Subwiki-ID ist falsch.';
 $string['incorrectwikiid'] = 'Die Wiki-ID ist falsch.';
+$string['indicator:cognitivedepth'] = 'Wiki kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Wiki-Aktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Wiki sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Wiki-Aktivität erreicht hat.';
 $string['individualpagedoesnotexist'] = 'Wikiseite existiert nicht';
 $string['insertcomment'] = 'Kommentar einfügen';
 $string['insertimage'] = 'Bild einfügen...';
@@ -128,7 +132,7 @@ $string['insertimage_help'] = 'Diese Dropdown-Liste fügt ein Bild in den Wikied
 $string['invalidlock'] = 'Diese Seite ist bereits von jemand anderem gesperrt.';
 $string['invalidparameters'] = 'Ungültige Parameter';
 $string['invalidsection'] = 'Ungültiger Abschnitt';
-$string['invalidsesskey'] = 'Ungültiger Sessionkey - bitte senden Sie die Daten noch einmal!';
+$string['invalidsesskey'] = 'Offenbar ist Ihre Session abgelaufen. Bitte notieren Sie Ihren Bearbeitungsstand und loggen Sie sich erneut ein.';
 $string['javascriptdisabledlocks'] = 'JavaScript ist in Ihrem Browser deaktiviert, so dass die Datensperre nicht funktioniert. Ihre  Änderungen könnten eventuell verloren gehen.';
 $string['links'] = 'Links';
 $string['listall'] = 'Alle Seiten auflisten';
@@ -203,6 +207,31 @@ $string['pluginname'] = 'Wiki';
 $string['prettyprint'] = 'Druckversion';
 $string['previewwarning'] = 'Dies ist eine Seitenvorschau - Ihre Änderungen wurden bisher noch nicht gespeichert';
 $string['print'] = 'Drucken';
+$string['privacy:metadata:core_comment'] = 'Kommentare auf Wiki-Seiten';
+$string['privacy:metadata:core_files'] = 'Angehängte Dateien in Unter-Wikis';
+$string['privacy:metadata:core_tag'] = 'Tags in Wiki-Seiten';
+$string['privacy:metadata:wiki_locks'] = 'Temporäre Sperrung von Wiki-Seiten';
+$string['privacy:metadata:wiki_locks:lockedat'] = 'Daten der Sperrung';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'Name des gesperrten Seitenabschnitts';
+$string['privacy:metadata:wiki_locks:userid'] = 'Nutzer, der Seite gesperrt hat';
+$string['privacy:metadata:wiki_pages'] = 'Information über Wikiseite';
+$string['privacy:metadata:wiki_pages:cachedcontent'] = 'Gecachter Inhalt im HTML-Format';
+$string['privacy:metadata:wiki_pages:pageviews'] = 'Wie oft die Seite betrachtet wurde';
+$string['privacy:metadata:wiki_pages:readonly'] = 'Ob die Seite nur gelesen werden darf';
+$string['privacy:metadata:wiki_pages:timecreated'] = 'Zeitpunkt der Erstellung der Seite';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'Zeitpunkt der letzten Änderung der Seite';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'Zeitpunkt an dem die Seite zuletzt gerendert wurde';
+$string['privacy:metadata:wiki_pages:title'] = 'Name der Seite';
+$string['privacy:metadata:wiki_pages:userid'] = 'Letzter Nutzer der die Seite bearbeitet hat';
+$string['privacy:metadata:wiki_subwikis'] = 'Information über Unterwikis (im Falle des Gruppen- oder Einzelmodus)';
+$string['privacy:metadata:wiki_subwikis:groupid'] = 'Gruppe, die Subwiki besitzt';
+$string['privacy:metadata:wiki_subwikis:userid'] = 'Nutzer, der eigenes Wiki besitzt';
+$string['privacy:metadata:wiki_versions'] = 'Informationen zur Geschichte der Wikiseiten';
+$string['privacy:metadata:wiki_versions:content'] = 'Inhaltsüberarbeitung';
+$string['privacy:metadata:wiki_versions:contentformat'] = 'Überarbeitug des Inhaltsformats';
+$string['privacy:metadata:wiki_versions:timecreated'] = 'Zeitpunkt der Überarbeitung';
+$string['privacy:metadata:wiki_versions:userid'] = 'Nutzer der Überarbeitung vornahm';
+$string['privacy:metadata:wiki_versions:version'] = 'Versionsnummer';
 $string['rated'] = 'Ihre Bewertung der Seite: {$a}';
 $string['rating'] = 'Bewertung';
 $string['ratingmode'] = 'Bewertungsmodus';
@@ -230,7 +259,6 @@ $string['special'] = 'Spezial';
 $string['tableofcontents'] = 'Inhaltsübersicht';
 $string['tagarea_wiki_pages'] = 'Wikiseiten';
 $string['tagsdeleted'] = 'Wiki-Schlagwörter wurden gelöscht';
-$string['tagtitle'] = 'Siehe Schlagwort \'{$a}\'';
 $string['teacherrating'] = 'Trainerwertung';
 $string['timesrating'] = 'Diese Seite wurde {$a->c}-mal bewertet, u.z. mit einem Mittelwert {$a->s}';
 $string['updatedpages'] = 'Aktualisierte Seiten';

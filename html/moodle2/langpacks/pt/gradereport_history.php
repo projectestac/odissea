@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_history', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,7 @@ $string['history:view'] = 'Visualizar o histórico de notas';
 $string['loadmoreusers'] = 'Carregar mais utilizadores...';
 $string['pluginname'] = 'Histórico de notas';
 $string['preferences'] = 'Preferências do histórico de notas';
+$string['privacy:metadata'] = 'O Relatório de histórico de notas mostra apenas dados armazenados noutros locais';
 $string['revisedonly'] = 'Apenas notas revistas';
 $string['revisedonly_help'] = 'Mostrar apenas as notas que foram revistas. Isto significa que serão listadas apenas as notas que foram alteradas.';
 $string['selectedusers'] = 'Utilizadores selecionados';

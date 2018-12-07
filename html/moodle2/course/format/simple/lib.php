@@ -240,7 +240,7 @@ function simple_get_default_icon_url($mod, $iconsize = format_simple_renderer::D
     global $OUTPUT;
     // Support modules setting their own, external, icon image
     if (empty($mod->iconurl) && empty($mod->icon)) {
-        return $OUTPUT->pix_url('icon', $mod->modname);
+        return $OUTPUT->image_url('icon', $mod->modname);
     }
     $iconurl = $mod->get_icon_url();
     if ($mod->modname == 'resource') {

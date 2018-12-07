@@ -69,9 +69,16 @@ class assign_submission_file extends assign_submission_plugin {
     public function get_settings(MoodleQuickForm $mform) {
         global $CFG, $COURSE;
 
-        $defaultmaxfilesubmissions = $this->get_config('maxfilesubmissions');
-        $defaultmaxsubmissionsizebytes = $this->get_config('maxsubmissionsizebytes');
-        $defaultfiletypes = (string)$this->get_config('filetypeslist');
+        if ($this->assignment->has_instance()) {
+            $defaultmaxfilesubmissions = $this->get_config('maxfilesubmissions');
+            $defaultmaxsubmissionsizebytes = $this->get_config('maxsubmissionsizebytes');
+            $defaultfiletypes = $this->get_config('filetypeslist');
+        } else {
+            $defaultmaxfilesubmissions = get_config('assignsubmission_file', 'maxfiles');
+            $defaultmaxsubmissionsizebytes = get_config('assignsubmission_file', 'maxbytes');
+            $defaultfiletypes = get_config('assignsubmission_file', 'filetypes');
+        }
+        $defaultfiletypes = (string)$defaultfiletypes;
 
         $settings = array();
         $options = array();
@@ -108,23 +115,10 @@ class assign_submission_file extends assign_submission_plugin {
                            'notchecked');
 
         $name = get_string('acceptedfiletypes', 'assignsubmission_file');
-        $mform->addElement('text', 'assignsubmission_file_filetypes', $name);
+        $mform->addElement('filetypes', 'assignsubmission_file_filetypes', $name);
         $mform->addHelpButton('assignsubmission_file_filetypes', 'acceptedfiletypes', 'assignsubmission_file');
-        $mform->setType('assignsubmission_file_filetypes', PARAM_RAW);
         $mform->setDefault('assignsubmission_file_filetypes', $defaultfiletypes);
         $mform->disabledIf('assignsubmission_file_filetypes', 'assignsubmission_file_enabled', 'notchecked');
-        $mform->addFormRule(function ($values, $files) {
-            if (empty($values['assignsubmission_file_filetypes'])) {
-                return true;
-            }
-            $nonexistent = $this->get_nonexistent_file_types($values['assignsubmission_file_filetypes']);
-            if (empty($nonexistent)) {
-                return true;
-            } else {
-                $a = join(' ', $nonexistent);
-                return ["assignsubmission_file_filetypes" => get_string('nonexistentfiletypes', 'assignsubmission_file', $a)];
-            }
-        });
     }
 
     /**
@@ -152,11 +146,11 @@ class assign_submission_file extends assign_submission_plugin {
      * @return array
      */
     private function get_file_options() {
-        $fileoptions = array('subdirs'=>1,
-                                'maxbytes'=>$this->get_config('maxsubmissionsizebytes'),
-                                'maxfiles'=>$this->get_config('maxfilesubmissions'),
-                                'accepted_types' => $this->get_accepted_types(),
-                                'return_types'=>FILE_INTERNAL);
+        $fileoptions = array('subdirs' => 1,
+                                'maxbytes' => $this->get_config('maxsubmissionsizebytes'),
+                                'maxfiles' => $this->get_config('maxfilesubmissions'),
+                                'accepted_types' => $this->get_configured_typesets(),
+                                'return_types' => (FILE_INTERNAL | FILE_CONTROLLED_LINK));
         if ($fileoptions['maxbytes'] == 0) {
             // Use module default.
             $fileoptions['maxbytes'] = get_config('assignsubmission_file', 'maxbytes');
@@ -173,6 +167,7 @@ class assign_submission_file extends assign_submission_plugin {
      * @return bool
      */
     public function get_form_elements($submission, MoodleQuickForm $mform, stdClass $data) {
+        global $OUTPUT;
 
         if ($this->get_config('maxfilesubmissions') <= 0) {
             return false;
@@ -190,34 +185,6 @@ class assign_submission_file extends assign_submission_plugin {
                                                   $submissionid);
         $mform->addElement('filemanager', 'files_filemanager', $this->get_name(), null, $fileoptions);
 
-        if (!empty($this->get_config('filetypeslist'))) {
-            $text = html_writer::tag('p', get_string('filesofthesetypes', 'assignsubmission_file'));
-            $text .= html_writer::start_tag('ul');
-
-            $typesets = $this->get_configured_typesets();
-            foreach ($typesets as $type) {
-                $a = new stdClass();
-                $extensions = file_get_typegroup('extension', $type);
-                $typetext = html_writer::tag('li', $type);
-                // Only bother checking if it's a mimetype or group if it has extensions in the group.
-                if (!empty($extensions)) {
-                    if (strpos($type, '/') !== false) {
-                        $a->name = get_mimetype_description($type);
-                        $a->extlist = implode(' ', $extensions);
-                        $typetext = html_writer::tag('li', get_string('filetypewithexts', 'assignsubmission_file', $a));
-                    } else if (get_string_manager()->string_exists("group:$type", 'mimetypes')) {
-                        $a->name = get_string("group:$type", 'mimetypes');
-                        $a->extlist = implode(' ', $extensions);
-                        $typetext = html_writer::tag('li', get_string('filetypewithexts', 'assignsubmission_file', $a));
-                    }
-                }
-                $text .= $typetext;
-            }
-
-            $text .= html_writer::end_tag('ul');
-            $mform->addElement('static', '', '', $text);
-        }
-
         return true;
     }
 
@@ -229,7 +196,6 @@ class assign_submission_file extends assign_submission_plugin {
      * @return int
      */
     private function count_files($submissionid, $area) {
-
         $fs = get_file_storage();
         $files = $fs->get_area_files($this->assignment->get_context()->id,
                                      'assignsubmission_file',
@@ -296,7 +262,7 @@ class assign_submission_file extends assign_submission_plugin {
         $groupid = 0;
         // Get the group name as other fields are not transcribed in the logs and this information is important.
         if (empty($submission->userid) && !empty($submission->groupid)) {
-            $groupname = $DB->get_field('groups', 'name', array('id' => $submission->groupid), '*', MUST_EXIST);
+            $groupname = $DB->get_field('groups', 'name', array('id' => $submission->groupid), MUST_EXIST);
             $groupid = $submission->groupid;
         } else {
             $params['relateduserid'] = $submission->userid;
@@ -549,8 +515,16 @@ class assign_submission_file extends assign_submission_plugin {
      * @return bool
      */
     public function submission_is_empty(stdClass $data) {
-        $files = file_get_drafarea_files($data->files_filemanager);
-        return count($files->list) == 0;
+        global $USER;
+        $fs = get_file_storage();
+        // Get a count of all the draft files, excluding any directories.
+        $files = $fs->get_area_files(context_user::instance($USER->id)->id,
+                                     'user',
+                                     'draft',
+                                     $data->files_filemanager,
+                                     'id',
+                                     false);
+        return count($files) == 0;
     }
 
     /**
@@ -635,56 +609,9 @@ class assign_submission_file extends assign_submission_plugin {
     private function get_configured_typesets() {
         $typeslist = (string)$this->get_config('filetypeslist');
 
-        $sets = $this->get_typesets($typeslist);
+        $util = new \core_form\filetypes_util();
+        $sets = $util->normalize_file_types($typeslist);
 
         return $sets;
-    }
-
-    /**
-     * Get the type sets passed.
-     *
-     * @param string $types The space , ; separated list of types
-     * @return array('groupname', 'mime/type', ...)
-     */
-    private function get_typesets($types) {
-        $sets = array();
-        if (!empty($types)) {
-            $sets = preg_split('/[\s,;:"\']+/', $types, null, PREG_SPLIT_NO_EMPTY);
-        }
-        return $sets;
-    }
-
-
-    /**
-     * Return the accepted types list for the file manager component.
-     *
-     * @return array|string
-     */
-    private function get_accepted_types() {
-        $acceptedtypes = $this->get_configured_typesets();
-
-        if (!empty($acceptedtypes)) {
-            return $acceptedtypes;
-        }
-
-        return '*';
-    }
-
-    /**
-     * List the nonexistent file types that need to be removed.
-     *
-     * @param string $types space , or ; separated types
-     * @return array A list of the nonexistent file types.
-     */
-    private function get_nonexistent_file_types($types) {
-        $nonexistent = [];
-        foreach ($this->get_typesets($types) as $type) {
-            // If there's no extensions under that group, it doesn't exist.
-            $extensions = file_get_typegroup('extension', [$type]);
-            if (empty($extensions)) {
-                $nonexistent[$type] = true;
-            }
-        }
-        return array_keys($nonexistent);
     }
 }

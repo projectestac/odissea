@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,8 @@ $string['notarget'] = 'Deve indicar uma pasta que já exista ou um novo onde pos
 $string['noticket'] = 'Não foi possível obter um ticket no site Box para dar início à sessão de autenticação';
 $string['password'] = 'Senha Box (não será guardada)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'Este módulo envia dados externamente para uma conta Box. Não armazena dados localmente.';
+$string['privacy:metadata:data'] = 'Dados pessoais transmitidos através do subsistema portefólio.';
 $string['sendfailed'] = 'Não foi possível enviar conteúdo para Box: {$a}';
 $string['setupinfo'] = 'Instruções de configuração';
 $string['setupinfodetails'] = 'Para obter uma chave de acesso e ID autentique-se no site Box e consulte a página <a href="{$a->servicesurl}">Box developers page</a>. Clique em "Create new application" e crie uma nova aplicação para o seu site Moodle. A chave de acesso e ID são mostradas na secção \'OAuth2 parameters\' do formulário de edição da aplicação. Pode também fornecer outra informação sobre o seu site Moodle.';

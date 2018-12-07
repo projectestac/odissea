@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,10 @@ $string['displayselect_help'] = '此设置，URL文件的类型，及浏览器�
 ';
 $string['externalurl'] = '外部URL';
 $string['framesize'] = '框架高度';
+$string['indicator:cognitivedepth'] = '网页地址资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 网页地址资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '网页地址资源社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在网页地址资源中所达到的社会宽度。';
 $string['invalidstoredurl'] = '不能显示此资源，URL 无效。';
 $string['invalidurl'] = '输入的 URL 无效';
 $string['modulename'] = '网页地址';

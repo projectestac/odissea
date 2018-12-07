@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculatedsimple
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['pluginnameadding'] = 'Einfach berechnete Frage hinzufügen';
 $string['pluginnameediting'] = 'Einfach berechnete Frage bearbeiten';
 $string['pluginname_help'] = 'Einfach berechnete Fragen ermöglichen numerische Fragen mit Ersatzzeichen (Wildcards), die bei der Testdurchführung ersetzt werden. Es sind die meisten Funktionen von berechneten Fragen vorhanden, wobei die Erstellung wesentlich einfacher ist.';
 $string['pluginnamesummary'] = 'Einfach berechnete Fragen sind eine einfachere Form von berechneten Fragen, welche numerische Fragen mit die austauschbaren Werten enthalten. Diese Werte werden bei jeder Durchführung des Tests zufällig aus einer Liste ausgewählt.';
+$string['privacy:metadata'] = 'Das Einfache berechnete Fragen Frageformat Plugin speichert keine persönlichen Daten.';
 $string['setno'] = 'Datensatz {$a}';
 $string['setwildcardvalues'] = 'Daten für Ersatzzeichenwerte';
 $string['showitems'] = 'Anzeigen';

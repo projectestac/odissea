@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_installaddon', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,7 @@ $string['permcheckrepeat'] = 'Erneut prüfen';
 $string['permcheckresultno'] = 'Das Plugin-Verzeichnis <em>{$a->path}</em> ist schreibgeschützt.';
 $string['permcheckresultyes'] = 'Das Plugin-Verzeichnis <em>{$a->path}</em> ist beschreibbar.';
 $string['pluginname'] = 'Plugin Installer';
+$string['privacy:metadata'] = 'Das Plugin \'Installer\' speichert keine personenbezogenen Daten.';
 $string['remoterequestalreadyinstalled'] = 'Das Plugin {$a->name} ({$a->component}) ({$a->version}) soll aus der Plugin-Datenbank von Moodle installiert werden. Dieses Plugin ist <strong>bereits installiert</strong>.';
 $string['remoterequestconfirm'] = 'Das Plugin {$a->name} ({$a->component}) ({$a->version}) soll aus der Plugin-Datenbank von Moodle installiert werden. Wenn Sie fortsetzen, wird das ZIP-Paket heruntergeladen und geprüft. Es erfolgt aber noch keine Installation.';
 $string['remoterequestinvalid'] = 'Ein Plugin soll aus der Plugin-Datenbank von Moodle installiert werden. Die Anfrage ist ungültig, eine Installation ist nicht möglich.';

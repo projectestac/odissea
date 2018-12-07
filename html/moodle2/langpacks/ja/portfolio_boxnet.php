@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,8 @@ $string['notarget'] = 'あなたはファイルをアップロードする既存
 $string['noticket'] = '認証セッションを開始するためのチケットをBoxから取得できませんでした。';
 $string['password'] = 'あなたのBoxパスワード (保存されません)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'このプラグインは外部のリンクされたBoxアカウントにデータを送信します。ローカルにデータを保存することはありません。';
+$string['privacy:metadata:data'] = 'ポートフォリオサブシステムから渡された個人データです。';
 $string['sendfailed'] = 'コンテンツをBoxに送信できませんでした: {$a}';
 $string['setupinfo'] = 'セットアップインストラクション';
 $string['setupinfodetails'] = 'クライアントIDおよび秘密鍵を取得するにはBoxにログインした後、<a href="{$a->servicesurl}">Box.net開発者ページ</a>にアクセスしてください。「Create new application」ボタンをクリックしてあなたのMoodleサイト用の新しいアプリケーションを作成してください。クライアントIDおよび秘密鍵はアプリケーション編集フォームの「OAuth2 parameters」セクションに表示されます。あなたのMoodleサイトに関する他の情報を任意に提供することもできます。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_community', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -97,6 +97,12 @@ $string['orderbypublisher'] = 'Publisher';
 $string['orderbyratingaverage'] = 'Rating';
 $string['outcomes'] = 'Outcomes: {$a}';
 $string['pluginname'] = 'Community finder';
+$string['privacy:metadata:block_community'] = 'The Community block stores links to shared community courses users can enrol in.';
+$string['privacy:metadata:block_community:coursedescription'] = 'The description of the linked community course.';
+$string['privacy:metadata:block_community:coursename'] = 'The name of the linked community course.';
+$string['privacy:metadata:block_community:courseurl'] = 'The course URL of the linked community course.';
+$string['privacy:metadata:block_community:imageurl'] = 'The image URL of the linked community course.';
+$string['privacy:metadata:block_community:userid'] = 'The ID of the user who created the linked community course.';
 $string['rateandcomment'] = 'Rate and comment';
 $string['rating'] = 'Rating';
 $string['removecommunitycourse'] = 'Remove community course';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_completionstatus', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_completionstatus
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Ajouter un bloc achèvement de cours'
 $string['criteriagroup'] = 'Groupe de critères';
 $string['firstofsecond'] = '{$a->first} sur {$a->second}';
 $string['pluginname'] = 'Achèvement de cours';
+$string['privacy:metadata'] = 'Le block État d\'achèvement de cours affiche seulement des informations sur l\'achèvement du cours et n\'enregistre aucune donnée.';
 $string['requirement'] = 'Prérequis';
 $string['returntocourse'] = 'Revenir au cours';

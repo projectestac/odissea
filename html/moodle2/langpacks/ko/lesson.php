@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lesson', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,7 +91,6 @@ $string['checknavigation'] = '찾아가기 점검';
 $string['checkquestion'] = '질문 점검';
 $string['classstats'] = '학급 통계';
 $string['clicktodownload'] = '파일을 내려받으려면 다음의 링크를 클릭하시오.';
-$string['clicktopost'] = '고득점 목록에 당신의 성적을 게시하려면 여기를 클릭하시오.';
 $string['cluster'] = '질문묶음';
 $string['clusterjump'] = '질문묶음에서 보지 않은 질문';
 $string['clustertitle'] = '질문묶음';
@@ -103,7 +102,6 @@ $string['completethefollowingconditions'] = '계속하기 위해서는 <b>{$a}</
 $string['conditionsfordependency'] = '선수 학습';
 $string['configactionaftercorrectanswer'] = '정답일 때의 기본 활동';
 $string['configmaxanswers'] = '페이지 당 기본 최대 답 수';
-$string['configmaxhighscores'] = '표시할 최고점의 갯수';
 $string['configmediaclose'] = '미디어 파일에 의해 생성된 팝업창의 종료버튼 표시';
 $string['configmediaheight'] = '미디어 파일에 의해 생성된 팝업창의 높이 조정';
 $string['configmediawidth'] = '미디어 파일에 의해 생성된 팝업창의 너비 조정';
@@ -138,7 +136,6 @@ $string['didnotanswerquestion'] = '이 질문에 답하지 않았음';
 $string['didnotreceivecredit'] = '점수를 못 받음';
 $string['displaydefaultfeedback'] = '기본 피드백 사용';
 $string['displaydefaultfeedback_help'] = '활성화되면 특정 질문에 대해 응답이 발견되지 않으면 "정답입니다" 혹은 "틀린 답입니다"라는 기본 응답이 보여질 것입니다.';
-$string['displayhighscores'] = '고득점 표시';
 $string['displayinleftmenu'] = '왼쪽 메뉴를 보일까요?';
 $string['displayleftif'] = '다음 성적 이상일 때 왼쪽 메뉴 표시 :';
 $string['displayleftif_help'] = '이 설정은 학생이 왼쪽 메뉴를 보기 전, 몇 점을 얻어야 하는지를 결정하는 것이다. 이는 학생으로 하여금 첫 시도에 전체 학습을 하게 하고, 요구된 점수를 얻게 되면 복습을 위해 왼쪽 메뉴를 사용할 수 있게 한다.';
@@ -165,7 +162,6 @@ $string['endofcluster'] = '질문묶음 끝';
 $string['endofclustertitle'] = '질문묶음 끝';
 $string['endoflesson'] = '학습 종료';
 $string['enteredthis'] = '입장했습니다.';
-$string['entername'] = '고득점 목록에 쓸 별명을 입력하세요';
 $string['enterpassword'] = '비밀번호를 입력하세요 :';
 $string['eolstudentoutoftime'] = '주의: 학습시간이 종료되었습니다.
 마지막 답변이 종료 후에 입력되었다면, 그것은 평가되지 않을 것입니다.';
@@ -190,6 +186,7 @@ $string['gotoendoflesson'] = '완전학습의 끝으로 가기';
 $string['grade'] = '성적';
 $string['gradebetterthan'] = '점(%) 이상 획득';
 $string['gradebetterthanerror'] = '{$a} 퍼센트 보다 좋은 성적 얻기';
+$string['graded'] = '채점됨';
 $string['gradeessay'] = '에세이 질문 채점 ({$a->notgradedcount}이 아직 채점되지 않았고  {$a->notsentcount} 제출하지 않았습니다)';
 $string['gradeis'] = '성적은 {$a} 입니다';
 $string['gradeoptions'] = '성적 옵션';
@@ -198,7 +195,6 @@ $string['handlingofretakes_help'] = '재이수가 허용되면 이 설정은 완
 $string['havenotgradedyet'] = '아직 채점되지 않았습니다.';
 $string['here'] = '이 곳';
 $string['highscore'] = '고득점';
-$string['highscores'] = '높은 점수들';
 $string['hightime'] = '최장 시간';
 $string['importcount'] = '{$a} 질문 가져오기';
 $string['importquestions'] = '질문 가져오기';
@@ -240,7 +236,6 @@ $string['matching'] = '짝찾기형';
 $string['matchingpair'] = '일치하는 짝 {$a}';
 $string['maxgrade'] = '최대 성적';
 $string['maxgrade_help'] = '이 설정은 완전학습에 대한 최대 성적을 명시합니다. 만일 0으로 설정되면 완전학습은 성적 페이지에 나타나지 않습니다.';
-$string['maxhighscores'] = '표시할 고득점 수';
 $string['maximumnumberofanswersbranches'] = '답의 최대 수';
 $string['maximumnumberofanswersbranches_help'] = '이 설정은 완전학습에 사용될 수 있는 최대 답 수를 지정합니다. 만일 참/거짓 질문만 사용된다면 2로 설정될 수 있습니다. 이 설정은 선생님이 보는 것만 영향을 주고 데이터에는 영향을 주지 않기 때문에 언제든지 변경될 수 있습니다.';
 $string['maximumnumberofattempts'] = '최대 시도 수';
@@ -296,7 +291,7 @@ $string['normal'] = '정상 - 학습 과정 따라가기';
 $string['notcompleted'] = '완료하지 않았음';
 $string['notdefined'] = '정의되지 않았음';
 $string['notenoughsubquestions'] = '하위 질문이 제대로 정의되지 않았습니다. 되돌아 가서 이 질문을 고치겠습니까?';
-$string['nothighscore'] = '고득점 {$a} 목록에 등재되지 않았음';
+$string['notgraded'] = '채점되지 않음';
 $string['notitle'] = '제목없음';
 $string['numberofcorrectanswers'] = '정답 수: {$a}';
 $string['numberofcorrectmatches'] = '바른 연결을 한 갯수: {$a}';
@@ -407,7 +402,6 @@ $string['timeremaining'] = '남은 시간';
 $string['timespenterror'] = '적어도 {$a} 분간은 학습에 임해야 합니다.';
 $string['timespentminutes'] = '소비 시간(분)';
 $string['timetaken'] = '시간이 걸렸음';
-$string['topscorestitle'] = '상위 {$a} 고득점';
 $string['true'] = '진실';
 $string['truefalse'] = '참/거짓';
 $string['unabledtosavefile'] = '올린 파일을 저장할 수 없음';
@@ -421,7 +415,6 @@ $string['usemean'] = '평균값 사용';
 $string['usepassword'] = '암호로 보호된 학습';
 $string['usepassword_help'] = '<p>이는 학생들이 지정한 암호를 입력하지 않으면 학습에 접속할 수 없게 하는 것이다.</p>';
 $string['viewgrades'] = '성적 보기';
-$string['viewhighscores'] = '고득점 목록 보기';
 $string['viewreports'] = '{$a->attempts} 회 마친 {$a->student} 의 결과 보기';
 $string['viewreports2'] = '완료된 {$a} 시도 보기';
 $string['welldone'] = '잘했어요!';
@@ -431,7 +424,6 @@ $string['wronganswerscore'] = '오답에 대한 점수';
 $string['wrongresponse'] = '오답에 대한 반응';
 $string['xattempts'] = '{$a} 번째 시도';
 $string['youhaveseen'] = '당신은 이미 이 학습을 시도한 적이 있습니다.<br /> 도중에 끝마쳤던 부분부터 시작하길 원합니까?';
-$string['youmadehighscore'] = '당신은 {$a} 를 고득점 목록에 올렸습니다.';
 $string['youranswer'] = '당신의 대답';
 $string['yourcurrentgradeis'] = '현재 성적은  {$a} 입니다';
 $string['yourcurrentgradeisoutof'] = '현재 성적은 {$a->total} 중 {$a->grade} 입니다.';

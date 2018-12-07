@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculated', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,7 @@ $string['pluginnameediting'] = 'Berechnete Frage ändern';
 $string['pluginname_help'] = 'Berechnete Multiple-Choice-Fragen entsprechen normalen Multiple-Choice-Fragen, können aber im Gegensatz zu diesen Ersatzzeichen (Wildcards) in geschweiften Klammern enthalten, welche dann bei der Durchführung des Tests durch vordefinierte Werte ersetzt werden. Beispiel: Auf die Frage "Welche Fläche hat ein Rechteck mit der Länger {l} und der Breite {b}?" wäre "{={l}*{b}}" eine Antwortmöglichkeit (das Sternchen (*) steht für die Multiplikation).';
 $string['pluginnamesummary'] = 'Berechnete Fragen ähneln numerischen Fragen. Die Zahlen werden jedoch zufällig beim Start des Tests gewählt.';
 $string['possiblehdr'] = 'Mögliche Ersatzzeichen nur im Fragetext vorhanden';
+$string['privacy:metadata'] = 'Das Berechnete Fragen Frageformat Plugin speichert keine persönlichen Daten.';
 $string['questiondatasets'] = 'Datensätze für Fragen';
 $string['questiondatasets_help'] = 'Datensatz für Wildcards der Frage, die nur in dieser Frage genutzt werden';
 $string['questionstoredname'] = 'gespeicherter Titel für Frage';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'calendar', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   calendar
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,6 +53,7 @@ $string['daywithnoevents'] = 'Det finns inga händelser för den här dagen';
 $string['default'] = 'Aktuell';
 $string['deleteevent'] = 'Ta bort händelse';
 $string['deleteevents'] = 'Ta bort händelser';
+$string['detailedmonthviewfor'] = 'Detaljerad månadsvy för:';
 $string['detailedmonthviewtitle'] = 'Detaljerad vy över månad {$a}';
 $string['durationminutes'] = 'Varaktighet i minuter';
 $string['durationnone'] = 'Utan varaktighet';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_db', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,16 +39,16 @@ $string['auth_dbfieldpass'] = 'Pasahitzak dituen eremuaren izena';
 $string['auth_dbfieldpass_key'] = 'Pasahitzaren eremua';
 $string['auth_dbfielduser'] = 'Erabiltzaile-izenak dituen eremuaren izena';
 $string['auth_dbfielduser_key'] = 'Erabiltzaile-izenaren eremua';
-$string['auth_dbhost'] = 'Datu-base zerbitzaria ostatzen duen ordenagailua. Erabili sistemako DSN sarrera bat ODBC erabiliz gero.';
+$string['auth_dbhost'] = 'Datu-base zerbitzaria dagoen ordenagailua. ODBC erabiliz gero, erabil ezazu sistemako DSN sarrera bat. PDO erabiliz gero, erabil ezazu PDO DSN sarrera bat.';
 $string['auth_dbhost_key'] = 'Ostalaria';
 $string['auth_dbinsertuser'] = '{$a->name} id {$a->id} erabiltzailea txertatuta';
-$string['auth_dbinsertuserduplicate'] = 'Errorea {$a->username} erabiltzailea sartzean - erabiltzaile-izen hori duen erabiltzailea dagoeneko sortuta dago \'{$a->auth}\' gehigarriaren bitartez.';
+$string['auth_dbinsertuserduplicate'] = 'Errorea {$a->username} erabiltzailea sartzean - erabiltzaile-izen hori duen erabiltzailea dagoeneko sortuta dago \'{$a->auth}\' pluginaren bitartez.';
 $string['auth_dbinsertusererror'] = 'Errorea {$a} erabiltzailea txertatzean';
-$string['auth_dbname'] = 'Datu-basearen izena. Hutsik utzi ODBC DSN bat erabiliz gero.';
+$string['auth_dbname'] = 'Datu-basearen izena. Hutsik utzi ODBC DSN bat erabiliz gero. Hutsik utzi zure PDO DSNak dagoeneko datu-basearen izena badauka.';
 $string['auth_dbname_key'] = 'Datu-basearen izena';
 $string['auth_dbpass'] = 'Goiko erabiltzaile-izenarekin bat datorren pasahitza';
 $string['auth_dbpass_key'] = 'Pasahitza';
-$string['auth_dbpasstype'] = '<p>Pasahitzaren eremuak erabiltzen duen formatua zehaztu. MD5 zifratze-mota beste web aplikazio orokorrekin konektatzeko erabilgarria da, PostNuke adibidez.</p> <p>Erabili \'barrukoa\' kanpo datu-baseak erabiltzaile eta e-posta helbideak kudeatzea baina pasahitzak Moodle-k kudeatzea nahi baduzu. \'barrukoa\' erabiliz gero kanpo datu-baseko e-posta helbidearen eremuan betetako e-posta helbidea eman <i>beharko</i> duzu, eta admin/cron.php eta auth/db/cli/sync_users.php maiz exekutatu beharko dituzu. Moodle-k erabiltzaile berriei e-posta bat bidaliko die behin-behineko pasahitz batekin.</p>';
+$string['auth_dbpasstype'] = '<p>Pasahitzaren eremuak erabiltzen duen formatua zehaztu.</p> <p>Erabili \'barrukoa\' kanpo datu-baseak erabiltzaile eta e-posta helbideak kudeatzea baina pasahitzak Moodle-k kudeatzea nahi baduzu. \'Barrukoa\' erabiliz gero kanpo datu-baseko e-posta helbidearen eremuan betetako e-posta helbidea eman <i>beharko</i> duzu, eta admin/cron.php eta auth/db/cli/sync_users.php maiz exekutatu beharko dituzu. Moodle-k erabiltzaile berriei e-posta bat bidaliko die behin-behineko pasahitz batekin.</p>';
 $string['auth_dbpasstype_key'] = 'Pasahitzaren formatua';
 $string['auth_dbreviveduser'] = '{$a->name} id {$a->id} erabiltzailea berreskuratuta';
 $string['auth_dbrevivedusererror'] = 'Errorea {$a} erabiltzailea berreskuratzean';
@@ -59,10 +59,13 @@ $string['auth_dbsuspenduser'] = 'Kontua etendako erabiltzailea ({$a->name}) eta 
 $string['auth_dbsuspendusererror'] = 'Errorea {$a} erabiltzailea suspenditzean';
 $string['auth_dbsybasequoting'] = 'Erabili sybase kakotxak (quotes)';
 $string['auth_dbsybasequotinghelp'] = 'Sybase motako kakotx sinpleen ihesbdea - beharezkoa Oracle, MS SQL eta beste datu-base batzuetan. Ez erabil MySQL-rentzat!';
+$string['auth_dbsyncuserstask'] = 'Sinkronizatu erabiltzaileak zeregina';
 $string['auth_dbtable'] = 'Taularen izena datu-basean';
 $string['auth_dbtable_key'] = 'Taula';
 $string['auth_dbtype'] = 'Datu-base mota (Ikus <a href="http://phplens.com/adodb/supported.databases.html">ADOdb documentation</a> xehetasun gahiagorako)';
 $string['auth_dbtype_key'] = 'Datu-basea';
+$string['auth_dbupdateusers'] = 'Eguneratu erabiltzaileak';
+$string['auth_dbupdateusers_description'] = 'Erabiltzaile berriak sortzeaz gain, lehendik daudenak eguneratu.';
 $string['auth_dbupdatinguser'] = '{$a->name} id {$a->id} erabiltzailea eguneratzen';
 $string['auth_dbuser'] = 'Datu-basean irakurtzeko baimena duen erabiltzaile-izena';
 $string['auth_dbuser_key'] = 'Datu-basearen erabiltzailea';
@@ -70,3 +73,4 @@ $string['auth_dbusernotexist'] = 'Ezin da existitzen ez den erabiltzailea eguner
 $string['auth_dbuserstoadd'] = 'Gehituko diren erabiltzailearen sarrerak: {$a}';
 $string['auth_dbuserstoremove'] = 'Ezabatuko diren erabiltzailearen sarrerak: {$a}';
 $string['pluginname'] = 'Kanpoko datu-basea';
+$string['privacy:metadata'] = 'Kanpoko datu-baserako autentifikazio-pluginak ez du datu pertsonalik biltzen.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_datetime', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_datetime
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,11 @@ $string['defaultdate'] = 'Berezko data';
 $string['endyear'] = 'Amaiera-urtea';
 $string['notset'] = 'Ezarri gabea';
 $string['pluginname'] = 'Data / Ordua';
+$string['privacy:metadata:profilefield_datetime:data'] = 'Gordetako erabiltzaile-informazioa.';
+$string['privacy:metadata:profilefield_datetime:dataformat'] = 'Gordetako erabiltzaile-informazioaren formatua.';
+$string['privacy:metadata:profilefield_datetime:fieldid'] = 'Profil-eremuaren IDa';
+$string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Hemen erabiltzaile-informazio gehigarria gordetzen da.';
+$string['privacy:metadata:profilefield_datetime:userid'] = 'Data / Ordua pluginak gordetzen duen datuen erabiltzailearen IDa.';
 $string['specifydatedefault'] = 'edo zehaztu data bat';
 $string['startyear'] = 'Hasiera-urtea';
 $string['startyearafterend'] = 'Hasiera-urtea ezin da amaiera-urtearen ondorengoa izan ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_objectives', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scormreport_objectives', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   scormreport_objectives
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = 'Show objective score';
 $string['objectivex'] = 'Objective {$a}';
 $string['pluginname'] = 'Objectives report';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'Whether to display the objective score in the SCORM report';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Number of users to display in the SCORM reports';
 $string['score'] = 'score';
 $string['status'] = 'status';

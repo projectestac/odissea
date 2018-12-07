@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aggregategrades'] = 'Cijfers herrekenen';
+$string['aggregategrades'] = 'Cijfers opnieuw berekenen';
 $string['aggregation'] = 'Cijferaggregatie';
 $string['allocate'] = 'Inzendingen toewijzen';
 $string['allocatedetails'] = 'verwacht: {$a->expected}<br />ingestuurd: {$a->submitted}<br />toe te wijzen: {$a->allocate}';
@@ -34,44 +34,44 @@ $string['allocationconfigured'] = 'Toewijzing geconfigureerd';
 $string['allocationdone'] = 'Toewijzing klaar';
 $string['allocationerror'] = 'Toewijzingsfout';
 $string['allowedfiletypesforoverallfeedback'] = 'Toegestane bestandstypes voor feedback-bijlages';
-$string['allowedfiletypesforoverallfeedback_help'] = 'De toegestane bestandstypes voor feedback-bijlages kan beperkt worden door een komma-gescheiden lijst in te geven met bestandsextenties, bijvoorbeeld \'mp3, mp4, png, jpg\'. Als het veld leeg gelaten wordt, dan worden alle bestandstypes toegestaan.';
+$string['allowedfiletypesforoverallfeedback_help'] = 'De toegestane bestandstypes voor feedback-bijlages kan beperkt worden door een  lijst in te geven met toegestane bestandsextensies. Als het veld leeg gelaten wordt, dan worden alle bestandstypes toegestaan.';
 $string['allowedfiletypesforsubmission'] = 'Toegestane bestandtypes voor ingestuurde bestanden';
-$string['allowedfiletypesforsubmission_help'] = 'De toegestane bestandstypes voor inzendingen kan beperkt worden door een komma-gescheiden lijst in te geven met bestandsextenties, bijvoorbeeld \'mp3, mp4, png, jpg\'. Als het veld leeg gelaten wordt, dan worden alle bestandstypes toegestaan.';
+$string['allowedfiletypesforsubmission_help'] = 'De toegestane bestandstypes voor feedback-bijlages kan beperkt worden door een  lijst in te geven met toegestane bestandsextensies. Als het veld leeg gelaten wordt, dan worden alle bestandstypes toegestaan.';
 $string['allsubmissions'] = 'Alle inzendingen ({$a})';
 $string['alreadygraded'] = 'Al beoordeeld';
 $string['areaconclusion'] = 'Conclusietekst';
 $string['areainstructauthors'] = 'Instructies voor insturen';
-$string['areainstructreviewers'] = 'Instructies voor evaluatie';
+$string['areainstructreviewers'] = 'Instructies voor beoordeling';
 $string['areaoverallfeedbackattachment'] = 'Algemene feedback bijlagen';
 $string['areaoverallfeedbackcontent'] = 'Algemene feedback teksten';
 $string['areasubmissionattachment'] = 'Bijlagen van de inzending';
 $string['areasubmissioncontent'] = 'Teksten van de inzending';
-$string['assess'] = 'Evalueer';
-$string['assessedexample'] = 'Ingestuurd evaluatievoorbeeld';
-$string['assessedsubmission'] = 'Geëvalueerde inzending';
-$string['assessingexample'] = 'Evalueer voorbeeldinzending';
-$string['assessingsubmission'] = 'Evalueer inzending';
-$string['assessment'] = 'Evaluatie';
+$string['assess'] = 'Beoordeel';
+$string['assessedexample'] = 'Ingestuurd beoordelingsvoorbeeld';
+$string['assessedsubmission'] = 'Beoordeelde inzending';
+$string['assessingexample'] = 'Beoordeel voorbeeldinzending';
+$string['assessingsubmission'] = 'Beoordeel inzending';
+$string['assessment'] = 'Beoordeling';
 $string['assessmentby'] = 'door <a href="{$a->url}">{$a->name}</a>';
-$string['assessmentbyfullname'] = 'Evaluatie door {$a}';
-$string['assessmentbyyourself'] = 'Jouw evaluatie';
-$string['assessmentdeleted'] = 'Evaluatie niet meer toegewezen';
-$string['assessmentend'] = 'Deadline voor evaluatie';
-$string['assessmentendbeforestart'] = 'De deadline voor evaluatie kan niet voor de openingsdatum van de evaluatie vallen';
-$string['assessmentenddatetime'] = 'Beoordelingsdeadline: {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentendevent'] = '{$a} (beoordelingsdeadline)';
-$string['assessmentform'] = 'Evaluatievorm';
-$string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Beoordeling</a> van <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
+$string['assessmentbyfullname'] = 'Beoordeling door {$a}';
+$string['assessmentbyyourself'] = 'Jouw beoordeling';
+$string['assessmentdeleted'] = 'Beoordeling niet meer toegewezen';
+$string['assessmentend'] = 'Deadline voor beoordeling';
+$string['assessmentendbeforestart'] = 'De deadline voor beoordeling kan niet voor de openingsdatum van de evaluatie vallen';
+$string['assessmentenddatetime'] = 'Deadline voor beoordeling: {$a->daydatetime} ({$a->distanceday})';
+$string['assessmentendevent'] = '{$a} deadline voor beoordeling';
+$string['assessmentform'] = 'Beoordelingsformulier';
+$string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Evaluatie</a> van <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Referentiebeoordeling';
 $string['assessmentreferenceconflict'] = 'Het is niet mogelijk om een voorbeeldtaak te beoordelen waarvoor je een referentiebeoordeling hebt voorzien.';
 $string['assessmentreferenceneeded'] = 'Je moet deze voorbeeldinzending beoordelen om een referentiebeoordeling te maken. Klik op de "Ga verder"-knop om de inzending te beoordelen. ';
 $string['assessmentsettings'] = 'Beoordelingsinstellingen';
 $string['assessmentstart'] = 'Open voor beoordeling vanaf';
 $string['assessmentstartdatetime'] = 'Open voor beoordeling van {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentstartevent'] = '{$a} (gaat open voor beoordeling)';
-$string['assessmentweight'] = 'Weging evaluatie';
+$string['assessmentstartevent'] = '{$a} gaat open voor beoordeling';
+$string['assessmentweight'] = 'Weging beoordeling';
 $string['assignedassessments'] = 'Toegewezen inzendingen om te beoordelen';
-$string['assignedassessmentsnone'] = 'Je hebt geen inzending toegewezen om te evalueren';
+$string['assignedassessmentsnone'] = 'Je hebt geen inzending toegewezen om te beoordelen';
 $string['backtoeditform'] = 'Terug naar bewerkscherm';
 $string['byfullname'] = 'door <a href="{$a->url}">{$a->name}</a>';
 $string['byfullnamewithoutlink'] = 'bij {$a}';
@@ -115,7 +115,7 @@ $string['evaluategradeswait'] = 'Wacht tot de beoordelingen geëvalueerd zijn en
 $string['evaluation'] = 'Evaluatie van de beoordeling';
 $string['evaluationmethod'] = 'Methode voor de evaluatie van de beoordeling';
 $string['evaluationmethod_help'] = 'De beoordelingsevaluatiemethode bepaalt hoe het cijfer voor de beoordeling wordt berekend. Je kunt laten herberekenen met verschillende instellingen tenzij je tevreden bent met het resultaat.';
-$string['evaluationsettings'] = 'Instellingen voor het cijfer van de evaluatie';
+$string['evaluationsettings'] = 'Instellingen voor het cijfer van de beoordeling';
 $string['eventassessableuploaded'] = 'Er is een taak geüpload.';
 $string['eventassessmentevaluated'] = 'Beoordeling geëvalueerd';
 $string['eventassessmentevaluationsreset'] = 'Beoordelingsevaluaties gereset';
@@ -167,10 +167,10 @@ $string['gradeitemassessment'] = '{$a->workshopname} (Beoordeling)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (taak)';
 $string['gradeover'] = 'Cijfer voor taak overschrijven';
 $string['gradereceivedfrom'] = '&lt;';
-$string['gradesreport'] = 'Workshop cijfer rapport';
+$string['gradesreport'] = 'Workshop cijferrapport';
 $string['gradetopassgrading'] = 'Beoordelingscijfer om te slagen';
 $string['gradetopasssubmission'] = 'Instuurcijfer om te slagen';
-$string['gradinggrade'] = 'Cijfer voor evaluatie';
+$string['gradinggrade'] = 'Cijfer voor beoordeling';
 $string['gradinggradecalculated'] = 'Berekend cijfer voor beoordeling';
 $string['gradinggrade_help'] = 'Deze instelling bepaalt het maximumcijfer dat kan behaald worden voor de beoordeling van een taak.';
 $string['gradinggradeof'] = 'Cijfer voor beoordeling (van {$a})';
@@ -178,6 +178,10 @@ $string['gradinggradeover'] = 'Overschrijf cijfer voor beoordeling';
 $string['gradingsettings'] = 'Cijferinstellingen';
 $string['groupnoallowed'] = 'Je hebt toegang tot geen enkele groep in deze workshop';
 $string['iamsure'] = 'Ja, ik weet het zeker';
+$string['indicator:cognitivedepth'] = 'Workshop cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de cognitieve diepte bereikt door de leerling in een Workshop activiteit.';
+$string['indicator:socialbreadth'] = 'Workshop sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de sociale breedte bereikt door de leerling in een Workshop activiteit.';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instructies voor taak';
 $string['instructreviewers'] = 'Instructies voor beoordeling';
@@ -274,7 +278,7 @@ $string['submissiondeleteconfirmassess'] = 'Weet je zeker dat je volgende inzend
 $string['submissionend'] = 'Deadline voor het insturen';
 $string['submissionendbeforestart'] = 'De deadline van insturen kan niet voor het openen van insturen vallen.';
 $string['submissionenddatetime'] = 'Deadline voor taak: {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (instuurdeadline)';
+$string['submissionendevent'] = '{$a} deadline voor insturen';
 $string['submissionendswitch'] = 'Schakel na de deadline voor insturen over naar de volgende fase';
 $string['submissionendswitch_help'] = 'Als er een deadline voor insturen is opgegeven en deze box is geselecteerd, dan zal de workshop automatisch naar de evaluatiefase schakelen na de deadline.
 
@@ -289,7 +293,7 @@ $string['submissionsettings'] = 'Taak instellingen';
 $string['submissionsreport'] = 'Workshop insturingsrapport';
 $string['submissionstart'] = 'Inzenden kan vanaf';
 $string['submissionstartdatetime'] = 'Taak afgeven open vanaf {$a->daydatetime} ({$a->distanceday})';
-$string['submissionstartevent'] = '{$a} (opent voor insturen)';
+$string['submissionstartevent'] = '{$a} gaat open voor insturen';
 $string['submissiontitle'] = 'Titel';
 $string['submittednotsubmitted'] = 'Ingestuurd ({$a->submitted}) / niet ingestuurd ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Toewijzingsmethode voor taken';
@@ -300,12 +304,18 @@ $string['subplugintype_workshopform'] = 'Beoordelingsstrategie';
 $string['subplugintype_workshopform_plural'] = 'Beoordelingsstrategieën';
 $string['switchingphase'] = 'Schakelfase';
 $string['switchphase'] = 'Schakelfase';
+$string['switchphase10'] = 'Schakel naar opstartfase';
 $string['switchphase10info'] = 'Je staat op het punt om de workshop  over te schakelen op de <strong>Instellingsfase</strong>. In deze fase kunnen gebruikers hun inzendingen of hun beoordelingen niet wijzigen. Leraren kunnen deze fase gebruiken om  de instellingen van de workshop te wijzigen, de beoordeligsstrategie aan te passen of de beoordelingsformulieren bij te sturen.';
+$string['switchphase20'] = 'Schakel naar instuurfase';
 $string['switchphase20info'] = 'Je gaat de Workshop naar de <strong>Insturen fase</strong> schakelen. Leerlingen kunnen gedurende deze fase hun werk insturen (binnen de instuur data, indien ingesteld). Leraren kunnen taken toewijzen voor peer beoordeling.';
+$string['switchphase30'] = 'Schakel naar beoordelingsfase';
 $string['switchphase30auto'] = 'De workshop zal automatisch naar de evaluatiefase schakelen na  {$a->daydatetime} ({$a->distanceday})';
 $string['switchphase30info'] = 'Je gaat de Workshop in de <strong>Beoordelingsfase</strong> schakelen. In deze fase kunnen beoordelaars de taken beoordelen die ze toegewezen gekregen hebben (binnen de beoordelings data indien ingesteld).';
+$string['switchphase40'] = 'Schakel naar beoordelingsfase';
 $string['switchphase40info'] = 'Je gaat de Workshop in de <strong>Evaluatiecijfers fase</strong> schakelen. In deze fase kunnen gebruikers hun taak en hun beoordelingen niet meer wijzigen. Leraren kunnen in deze fase de evaluatietools gebruiken om een eindcijfer te berekenen en om feedback aan de leerlingen en beoordelaars te geven.';
+$string['switchphase50'] = 'Sluit workshop';
 $string['switchphase50info'] = 'Je gaat de Workshop sluiten. Hierdoor zullen de berekende cijfers in de cijferlijst verschijnen. Leerlingen kunnen dan hun taken en de beoordelingen ervan bekijken .';
+$string['switchphaseauto'] = 'Schakelen is nu ingepland';
 $string['switchphasenext'] = 'Schakel naar de volgende fase';
 $string['taskassesspeers'] = 'Beoordeel anderen';
 $string['taskassesspeersdetails'] = 'totaal: {$a->total}<br />te doen: {$a->todo}';
@@ -337,6 +347,7 @@ $string['userplan_help'] = 'De Workshop planner toont alle fasen van de activite
 $string['useselfassessment'] = 'Zelfevaluatie';
 $string['useselfassessment_desc'] = 'Leerlingen mogen hun eigen werk evalueren';
 $string['useselfassessment_help'] = 'Indien ingeschakeld kan een gebruiker zijn eigen taak toegewezen krijgen om te beoordelen en zal die gebruiker een cijfer krijgen voor die beoordeling naast het cijfer dat die krijgt voor zijn eigen taak.';
+$string['viewworkshopsummary'] = 'Bekijk samenvatting workshop';
 $string['weightinfo'] = 'Weging: {$a}';
 $string['withoutsubmission'] = 'Beoordelaar zonder eigen inzending';
 $string['workshop:addinstance'] = 'Voeg een nieuwe workshop toe';

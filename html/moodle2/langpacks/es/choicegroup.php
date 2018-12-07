@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choicegroup', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['add_grouping'] = 'Añadir agrupamiento';
 $string['add_groupings'] = 'Añadir agrupamientos';
 $string['add_groups'] = 'Añadir grupos';
 $string['addmorechoices'] = 'Añadir más opciones';
-$string['afterresultsviewable'] = 'Los resultados serán visibles después de que haya hecho su elección.';
+$string['afterresultsviewable'] = 'La composición de los grupos será visible después de que haya hecho su elección.';
 $string['allowupdate'] = 'Permitir modificar la elección';
 $string['and'] = 'y';
 $string['answered'] = 'Respondido';
@@ -104,13 +104,13 @@ $string['modulenameplural'] = 'Selección de grupos.';
 $string['moveselectedusersto'] = 'Mover los usuarios seleccionados a ...';
 $string['multipleenrollmentspossible'] = 'Permitir la inclusión en múltiples grupos';
 $string['mustchooseone'] = 'Debe elegir una respuesta antes de guardar. No se ha realizado esta acción.';
-$string['neverresultsviewable'] = 'Los resultados no son visibles.';
+$string['neverresultsviewable'] = 'La composición de los grupos no es visible.';
 $string['noguestchoose'] = 'Disculpe, los invitados no están autorizados para hacer elecciones.';
-$string['noresultsviewable'] = 'Los resultados no son visibles por el momento.';
+$string['noresultsviewable'] = 'La composición de los grupos no es visible por el momento.';
 $string['notanswered'] = 'Aún no hay respuesta.';
 $string['notenrolledchoose'] = 'Sólo a usuarios inscritos se les permite elegir opciones.';
 $string['notopenyet'] = 'Esta actividad no está disponible hasta {$a}';
-$string['notyetresultsviewable'] = 'Los resultados serán visibles después de que esta actividad se haya cerrado';
+$string['notyetresultsviewable'] = 'La composición de los grupos será visible después de que esta actividad se haya cerrado';
 $string['numberofuser'] = 'El número de usuarios';
 $string['option'] = 'Grupo';
 $string['page-mod-choice-x'] = 'Cualquier página del módulo Elección de grupo';
@@ -133,6 +133,7 @@ $string['samegroupused'] = 'No se puede utilizar el mismo grupo varias veces.';
 $string['savemychoicegroup'] = 'Guardar mi elección';
 $string['selected_groups'] = 'Grupos seleccionados';
 $string['set_limit_for_group'] = 'Límite para';
+$string['showdescription'] = 'Mostrar descripciones';
 $string['showunanswered'] = 'Mostrar una columna con los alumnos que no han respondido';
 $string['skipresultgraph'] = 'Pasar por alto gráfico de resultados';
 $string['spaceleft'] = 'Espacio disponible';

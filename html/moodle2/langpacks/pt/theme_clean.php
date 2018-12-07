@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_clean', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,7 @@ $string['invertdesc'] = 'Alterna a cor do texto e do fundo da barra de navegaç�
 $string['logo'] = 'Logótipo';
 $string['logodesc'] = 'O logótipo apenas é exibido no cabeçalho da página principal e na página de autenticação. <br /> Se a altura do logótipo for maior do que 75px, adicione a seguinte regra de CSS "div.logo {height: 100px;}" na caixa abaixo \'Personalizar CSS\' (alterar de acordo com a altura do logótipo diferente de 100px). Se um logótipo não for adicionado aqui, será usado o logótipo reduzido que foi definido em Aparência > Logótipos.';
 $string['pluginname'] = 'Tema Clean';
+$string['privacy:metadata'] = 'O tema Clean não armazena qualquer dado pessoal de nenhum utilizador.';
 $string['region-side-post'] = 'Direita';
 $string['region-side-pre'] = 'Esquerda';
 $string['sitelogo'] = 'Logótipo do site';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_flickr', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_flickr
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['noauthtoken'] = 'Impossible de récupérer un jeton d\'authentification
 $string['other'] = 'Oeuvre, illustration, CGI ou autres images non-photographiques';
 $string['photo'] = 'Photos';
 $string['pluginname'] = 'Flickr';
+$string['privacy:metadata'] = 'Ce plugin transmet des données vers un compte Flickr lié. Il n\'enregistre aucune donnée localement.';
+$string['privacy:metadata:data'] = 'Données personnelles transmises à partir du sous-système portfolio.';
 $string['restricted'] = 'Diffusion restreinte';
 $string['safe'] = 'Sûr';
 $string['safetylevel'] = 'Niveau de sécurité';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_managefiles', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_managefiles', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_managefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,3 +33,4 @@ $string['missingfiles'] = 'Fitxers perduts';
 $string['pluginname'] = 'Gestiona fitxers';
 $string['unusedfilesdesc'] = 'Els fitxers incrustats següents no s\'estan utilitzant en l\'àrea de text:';
 $string['unusedfilesheader'] = 'Fitxers no utilitzats';
+$string['unusedfilesremovalnotice'] = 'Qualsevol fitxer no utilitzat s\'eliminarà automàticament quan deseu els canvis.';

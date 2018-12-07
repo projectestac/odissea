@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grading', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,27 @@ $string['manageactionshareconfirm'] = '\'{$a}\' kalifikazio-formularioaren kopia
 $string['manageactionsharedone'] = 'Formularioa ondo gorde da txantiloi berri gisa';
 $string['noitemid'] = 'Ezin da kalifikatu. Kalifikatzeko elementua ez da existitzen.';
 $string['nosharedformfound'] = 'Ez da itxurarik aurkitu';
+$string['privacy:metadata:grading_definitions'] = 'Kalifikagarria den eremu batean definitutako kalifikazio aurreraturako formularioaren inguruko oinarrizko informazioa.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'Kalifikazio aurreraturako formularioa definituta dagoen eremuaren IDa.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'Hau kopiatu zeneko kalifikazio-definizioaren IDa.';
+$string['privacy:metadata:grading_definitions:description'] = 'Kalifikazio aurreraturako metodoaren deskribapena.';
+$string['privacy:metadata:grading_definitions:method'] = 'Definizioaren arduraduna den kalifikazio metodoa.';
+$string['privacy:metadata:grading_definitions:name'] = 'Kalifikazio aurreraturako definizioaren izena.';
+$string['privacy:metadata:grading_definitions:options'] = 'Kalifikazio-definizio honen ezarpen batzuk.';
+$string['privacy:metadata:grading_definitions:status'] = 'Kalifikazio aurreraturako definizio honen egoera.';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'Kalifikazio-definizioa kopiatu zeneko unea.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'Kalifikazio-definizioa sortu zeneko unea.';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'Kalifikazio-definizioa azkenengoz aldatu zeneko unea.';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'Kalifikazio-definizioa sortu zuen erabiltzailearen IDa.';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'Kalifikazio-definizioa azkenengoz aldatu zuen erabiltzailearen IDa.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Kalifikazio-metodoarentzako datuak.';
+$string['privacy:metadata:grading_instances'] = 'Ebaluatzaile batek elementu kalifikagarri bakoitzari emandako ebaluazioaren erregistroa.';
+$string['privacy:metadata:grading_instances:feedback'] = 'Erabiltzaileak emandako feedbacka.';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'Erabiltzaileak emandako feedbackaren testu-formatua';
+$string['privacy:metadata:grading_instances:raterid'] = 'Kalifikazio-instantzia ebaluatu zuen erabiltzailearen IDa.';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'Kalifikazio-instantziaren kalifikazioa.';
+$string['privacy:metadata:grading_instances:status'] = 'Kalifikazio-instantzia honen egoera.';
+$string['privacy:metadata:grading_instances:timemodified'] = 'Kalifikazio-instantzia azkenengoz aldatu zeneko unea.';
 $string['searchownforms'] = 'Neure formularioak ere barne';
 $string['searchtemplate'] = 'Bilatu kalifikazio-formularioak';
 $string['searchtemplate_help'] = 'Hemen kalifikazio-formulario bat bilatu eta txantiloi gisa erabil dezakezu. Formularioaren izenenan agertu beharko liratekeen hitzak idatzi, bere deskribapena edo formularioaren edukiak berak. Esaldi bat bilatzeko. idatz ezazu kontsulta osoa komatxo bikoitzen barruan.

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,10 @@ $string['explainmethoddaemon'] = '这些设置<strong>只有</strong>在您选�
 $string['explainmethodnormal'] = '这些设置<strong>只有</strong>在您选择了“普通方式”的聊天模式时才会有效';
 $string['generalconfig'] = '常规设置';
 $string['idle'] = '空闲';
+$string['indicator:cognitivedepth'] = '聊天活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在聊天活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '聊天活动社交广度';
+$string['indicator:socialbreadth_help'] = '这个指标基于学生在聊天活动中所达到的社交广度。';
 $string['inputarea'] = '输入区';
 $string['invalidid'] = '找不到聊天室！';
 $string['list_all_sessions'] = '列出所有会话。';

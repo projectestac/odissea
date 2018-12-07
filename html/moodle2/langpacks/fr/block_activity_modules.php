@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_modules', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_activity_modules', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_activity_modules
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'Ajouter un bloc activités';
 $string['pluginname'] = 'Activités';
+$string['privacy:metadata'] = 'Le bloc Activités affiche seulement des données enregistrées à d\'autres endroits.';

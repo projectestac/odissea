@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xhtml', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_xhtml', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_xhtml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Format XHTML';
 $string['pluginname_help'] = 'Le format XHTML permet d\'exporter toutes les questions d\'une catégorie dans une page en XHTML strict pour utilisation dans une autre application.';
+$string['privacy:metadata'] = 'Le plugin de format de question XHTML n\'enregistre aucune donnée personnelle.';

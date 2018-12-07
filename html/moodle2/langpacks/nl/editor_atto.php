@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_atto', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'Kon geen verbinding maken met de server. Als je deze pagina nu instuurt, dan kunnen je gegevens verloren gaan.';
 $string['autosavefrequency'] = 'Frequentie automatisch bewaren';
 $string['autosavefrequency_desc'] = 'Dit is het aantal seconden tussen automatisch bewaren. Atto zal de tekst in de editor automatisch bewaren volgens deze instelling, zodat tekst automatisch kan teruggezet worden wanneer de gebruiker terugkeert naar dit formulier.';
+$string['autosaves'] = 'Autobewaar-informatie van de editor';
 $string['autosavesucceeded'] = 'Bewaard.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -40,6 +41,10 @@ $string['errortextrecovery'] = 'De bewaarde versie kon niet teruggezet worden.';
 $string['infostatus'] = 'Informatie';
 $string['pluginname'] = 'Atto HTML-editor';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['privacy:metadata:database:atto_autosave'] = 'Automatisch bewaarde kladwerken van de tekst-editor.';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'De bewaarde tekst.';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'Het tijdstip waarop de inhoud is bewerkt.';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'De ID van de gebruiker van wie de gegevens bewaard zijn.';
 $string['recover'] = 'Herstellen';
 $string['settings'] = 'Atto werkbalkinstellingen';
 $string['subplugintype_atto'] = 'Atto plugin';

@@ -29,3 +29,4 @@ $string['pluginnamesummary'] = 'Παρόμοια με την τυπική ερώ
 $string['pluginnameadding'] = 'Προσθήκη ερώτησης ενσωματωμένων απαντήσεων (συμπλήρωση κενών) για μαθηματικά και επιστήμη από τη WIRIS';
 $string['pluginnameediting'] = 'Επεξεργασία ερώτησης ενσωματωμένων απαντήσεων (συμπλήρωση κενών) για μαθηματικά και επιστήμη από τη WIRIS';
 $string['contentnotviewable'] = 'Το περιεχόμενο δεν μπορεί να εμφανιστεί.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Cloze question type does not effect or store any data itself.';

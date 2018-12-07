@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_atto', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'サーバに接続できませんでした。このページを送信した場合、あなたの変更を失うことになります。';
 $string['autosavefrequency'] = 'オートセーブ頻度';
 $string['autosavefrequency_desc'] = 'これはオートセーブ間の秒数です。同じユーザが同じフォームに戻った時点で自動的にテキストがリストアされるようAttoはこの設定をもとにエディタのテキストを自動的に保存します。';
+$string['autosaves'] = 'エディタ自動保存情報です。';
 $string['autosavesucceeded'] = '下書きが保存されました。';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -40,6 +41,10 @@ $string['errortextrecovery'] = '残念ですが下書きバージョンを保存
 $string['infostatus'] = '情報';
 $string['pluginname'] = 'Atto HTMLエディタ';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['privacy:metadata:database:atto_autosave'] = '自動的に保存されたテキストエディタ下書きです。';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = '保存されたテキストです。';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'コンテンツが修正された時間です。';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'データが保存されたユーザのIDです。';
 $string['recover'] = '回復';
 $string['settings'] = 'Attoツールバー設定';
 $string['subplugintype_atto'] = 'Attoプラグイン';

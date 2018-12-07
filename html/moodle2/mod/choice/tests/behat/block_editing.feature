@@ -1,5 +1,5 @@
 @mod @mod_choice
-Feature: Add choice activity
+Feature: Editing choice block
   In order to customise choice page
   As a teacher or admin
   I need to add remove block from the choice page
@@ -10,9 +10,7 @@ Feature: Add choice activity
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
     And I log in as "admin"
-    And I am on site homepage
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "Choice" to section "1" and I fill the form with:
       | Choice name | Choice name 1 |
       | Description | Choice Description 1 |
@@ -43,8 +41,7 @@ Feature: Add choice activity
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
     And I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "Choice" to section "1" and I fill the form with:
       | Choice name | Choice name 1 |
       | Description | Choice Description 1 |
@@ -74,8 +71,7 @@ Feature: Add choice activity
       | teacher1 | C1 | editingteacher |
       | teacher1 | C1 | student |
     And I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "Choice" to section "1" and I fill the form with:
       | Choice name | Choice name 1 |
       | Description | Choice Description 1 |

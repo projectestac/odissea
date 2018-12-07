@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -263,6 +263,10 @@ $string['importedentries'] = 'Entradas importadas';
 $string['importentries'] = 'Importar entradas';
 $string['importentriesfromxml'] = 'Importar entradas desde archivo XML';
 $string['includegroupbreaks'] = 'Incluir segmentaciones de grupo';
+$string['indicator:cognitivedepth'] = 'Glosario cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Glosario.';
+$string['indicator:socialbreadth'] = 'Glosario social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Glosario.';
 $string['isglobal'] = '¿Este es el glosario global?';
 $string['isglobal_help'] = 'Un glosario global tiene entradas que están enlazadas desde cualquier lugar del sitio, no solo desde el curso en que reside el glosario. Únicamente los administradores pueden determinar que un glosario sea global.';
 $string['letter'] = 'letra';
@@ -339,7 +343,7 @@ $string['searchindefinition'] = '¿Buscar en conceptos y definiciones?';
 $string['secondaryglossary'] = 'Glosario secundario';
 $string['showall'] = 'Mostrar enlace \'TODAS\'';
 $string['showall_help'] = 'Si se activa, los participantes pueden buscar todas las entradas a la vez.';
-$string['showalphabet'] = 'Mostrar alfabeto';
+$string['showalphabet'] = 'Mostrar enlaces del alfabeto';
 $string['showalphabet_help'] = 'Si se activa, los participantes pueden buscar en el glosario según las letras del alfabeto.';
 $string['showspecial'] = 'Mostrar enlace \'Especial\'';
 $string['showspecial_help'] = 'Si se activa, los participantes pueden buscar en el glosario según caracteres especiales, como por ejemplo @ y #.';

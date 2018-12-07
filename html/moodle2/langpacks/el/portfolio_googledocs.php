@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_googledocs', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['noauthtoken'] = 'Δεν λήφθηκε αδειοπλαίδιο αυθεντικοποίησης (token) από το Google. Παρακαλούμε εξασφαλίστε ότι επιτρέπετε πρόσβαση από το moodle στον λογαριασμό σας στο Google';
+$string['noauthtoken'] = 'Δεν λήφθηκε τεκμήριο πιστοποίησης από το google. Παρακαλούμε εξασφαλίστε ότι επιτρέπετε πρόσβαση από το moodle στον λογαριασμό σας στο google';
 $string['nosessiontoken'] = 'Δεν υπάρχει τεκμήριο συνόδου γεγονός το οποίο απαγορεύει την εξαγωγή στο google.';
 $string['pluginname'] = 'Κείμενα Google';
 $string['sendfailed'] = 'Αποτυχία μεταφοράς του αρχείου {$a} στο google';

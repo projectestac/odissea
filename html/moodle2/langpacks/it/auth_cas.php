@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_cas', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_cas
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,4 +78,5 @@ $string['auth_cas_version'] = 'Versione protocollo CAS da utilizzare';
 $string['CASform'] = 'Scelta autenticazione';
 $string['noldapserver'] = 'Nessun server LDAP è stato configurato per l\'autenticazione CAS. La sincronizzazione è disabilitata.';
 $string['pluginname'] = 'Server CAS (SSO)';
+$string['privacy:metadata'] = 'Il plugin di autenticazione "Server CAS (SSO)" non memorizza dati personali.';
 $string['synctask'] = 'Sincronizzazione utenti CAS';

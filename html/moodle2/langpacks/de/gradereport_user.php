@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_user', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,6 +29,7 @@ $string['eventgradereportviewed'] = 'Bewertungsübersicht angezeigt';
 $string['myself'] = 'Selber';
 $string['otheruser'] = 'Nutzer/in';
 $string['pluginname'] = 'Teilnehmerübersicht';
+$string['privacy:metadata:preference:gradereport_user_view_user'] = 'Ob der Bericht als derzeitiger Nutzer  oder für anderen Nutzer angezeigt wird';
 $string['tablesummary'] = 'Die Tabelle enthält eine Übersicht über die bewerteten Aktivitäten mitsamt den Kategorien für Bewertungen. Werte, die Kategorien hinterlegt wurden, werden in diese auch angezeigt.';
 $string['user:view'] = 'Eigene Bewertungen sehen';
 $string['viewas'] = 'Report anzeigen als';

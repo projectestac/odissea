@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_user', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_user', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_user
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['configplugin'] = 'Configurazione repository File personali';
 $string['emptyfilelist'] = 'Non ci sono file da visualizzare';
 $string['pluginname'] = 'File personali';
 $string['pluginname_help'] = 'File personali dell\'utente';
+$string['privacy:metadata'] = 'Il plugin risorsa "File personali" non memorizza dati personali.';
 $string['user:view'] = 'Visualizzare i file personali dell\'utente';

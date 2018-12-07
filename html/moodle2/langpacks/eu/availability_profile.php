@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_profile', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_profile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['op_isequalto'] = 'honen berdina';
 $string['op_isnotempty'] = 'ez dago hutsik';
 $string['op_startswith'] = 'honela hasten da';
 $string['pluginname'] = 'Profilaren araberako baldintza';
+$string['privacy:metadata'] = 'Profilaren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_contains'] = 'Zure <strong>{$a->field}</strong>-(a)k <strong>{$a->value}</strong> dauka';
 $string['requires_doesnotcontain'] = 'Zure <strong>{$a->field}</strong>-(a)k ez dauka <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Zure <strong>{$a->field}</strong> <strong>{$a->value}</strong>-(r)ekin bukatzen da';

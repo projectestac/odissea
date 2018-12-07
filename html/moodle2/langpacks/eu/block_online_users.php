@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_online_users', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['online_users:myaddinstance'] = 'Gehitu on-line erabiltzaileak bloke ber
 $string['online_users:viewlist'] = 'Ikusi on-line erabiltzaileen zerrenda';
 $string['periodnminutes'] = 'azken {$a} minutuetan';
 $string['pluginname'] = 'On-line erabiltzaileak';
+$string['privacy:metadata'] = 'On-line erabiltzaileak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
 $string['timetosee'] = 'Jardunik ez badago (minututan) ezabatu';

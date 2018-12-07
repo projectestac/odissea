@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_flatfile', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['filelockedmail'] = 'The text file you are using for file-based enrolments ({$a}) can not be deleted by the cron process.  This usually means the permissions are wrong on it.  Please fix the permissions so that Moodle can delete the file, otherwise it might be processed repeatedly.';
 $string['filelockedmailsubject'] = 'Important error: Enrolment file';
+$string['flatfileenrolments'] = 'Flat file (CSV) enrolments';
 $string['flatfile:manage'] = 'Manage user enrolments manually';
 $string['flatfilesync'] = 'Flat file enrolment sync';
 $string['flatfile:unenrol'] = 'Unenrol users from the course manually';
@@ -64,3 +65,11 @@ It could look something like this:
    del, student, 17, CF101
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'The Flat file (CSV) enrolment plugin may store personal data relating to future enrolments in the enrol_flatfile table.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'The enrolment action expected at the given date.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'The courseid to which the enrolment relates.';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'The id of the role to be assigned or revoked.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'The time at which the enrolment change ends.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'The modification time of this enrolment change.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'The time at which the enrolment change starts.';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'The id of the user to which the role assignment relates.';

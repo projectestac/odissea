@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_tex', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,4 +36,5 @@ $string['pathdvisvgm'] = 'Pfad zu <i>dvisvgm</i>';
 $string['pathlatex'] = 'Pfad zu <i>latex</i>';
 $string['pathmimetex'] = 'Pfad zu <i>mimetex</i>';
 $string['pathmimetexdesc'] = 'Moodle nutzt sein eigenes MimeTeX, wenn kein anderer gültiger Pfad angegeben ist.';
+$string['privacy:metadata'] = 'Der TeX-Filter speichert keine persönlichen Daten.';
 $string['source'] = 'TeX Quellcode';

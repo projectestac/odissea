@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_datetime', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_datetime
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,11 @@ $string['defaultdate'] = 'デフォルト日付';
 $string['endyear'] = '終了年';
 $string['notset'] = '未設定';
 $string['pluginname'] = '日付/時間';
+$string['privacy:metadata:profilefield_datetime:data'] = '保存されたユーザデータです。';
+$string['privacy:metadata:profilefield_datetime:dataformat'] = '保存されたユーザデータのフォーマットです。';
+$string['privacy:metadata:profilefield_datetime:fieldid'] = 'プロファイルフィールドのIDです。';
+$string['privacy:metadata:profilefield_datetime:tableexplanation'] = '追加ユーザ情報がここに保存されます。';
+$string['privacy:metadata:profilefield_datetime:userid'] = '日付/時間プラグインに保存されるユーザのIDです。';
 $string['specifydatedefault'] = 'または特定日付';
 $string['startyear'] = '開始年';
 $string['startyearafterend'] = '開始年は終了年の後に設定できません。';

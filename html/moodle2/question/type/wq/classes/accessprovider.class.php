@@ -16,11 +16,11 @@
 
 /**
  * This class implements com_wiris_plugin_api_Accesprovider interface
- * to use Moodle access methods to control access to WIRIS Quizzes services.
+ * to use Moodle access methods to control access to Wiris Quizzes services.
  *
  * @package    qtype
  * @subpackage wq
- * @copyright  Maths for More S.L. <info@wiris.com>
+ * @copyright  WIRIS Europe (Maths for more S.L)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -29,13 +29,17 @@ defined('MOODLE_INTERNAL') || die();
 global $CFG;
 
 require_once($CFG->dirroot . '/lib/moodlelib.php');
-require_once($CFG->dirroot . '/question/type/wq/quizzes/lib/com/wiris/util/sys/AccessProvider.interface.php');
+
+// Avoid redeclareding or AccessProvider interface.
+if (interface_exists('com_wiris_util_sys_AccessProvider')) {
+    require_once($CFG->dirroot . '/question/type/wq/quizzes/lib/com/wiris/util/sys/AccessProvider.interface.php');
+}
 
 class accessprovider  implements com_wiris_util_sys_AccessProvider{
 
     /**
      * This method is called before all service. We use it as a wrapper to call
-     * Moodle require_login() method. Any WIRIS service can't be called without a
+     * Moodle require_login() method. Any Wiris service can't be called without a
      * login.
      */
     // @codingStandardsIgnoreStart

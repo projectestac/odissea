@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -239,7 +239,6 @@ $string['special'] = 'Especial';
 $string['tableofcontents'] = 'Índice';
 $string['tagarea_wiki_pages'] = 'Páxinas do wiki';
 $string['tagsdeleted'] = 'As etiquetas do wiki foron eliminadas';
-$string['tagtitle'] = 'Ver a etiqueta «{$a}»';
 $string['teacherrating'] = 'Puntuación de profesor';
 $string['timesrating'] = 'Esta páxina foi puntuada {$a->c} veces cunha media de: {$a->s}';
 $string['updatedpages'] = 'Páxinas actualizadas';

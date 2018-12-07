@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_filesystem', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['nosubdir'] = 'Tem que ser criada pelo menos uma pasta na pasta <b>{$a}<
 $string['path'] = 'Selecionar uma subpasta';
 $string['pluginname'] = 'Pasta no servidor';
 $string['pluginname_help'] = 'Criar um repositório a partir da pasta local do servidor';
+$string['privacy:metadata'] = 'O módulo Pasta no servidor não armazena ou transmite dados pessoais.';
 $string['relativefiles'] = 'Permitir ficheiros relativos';
 $string['relativefiles_desc'] = 'Isto permite que todos os ficheiros do repositório estejam acessíveis a partir de hiperligações relativas.';
 $string['root'] = 'Raiz';

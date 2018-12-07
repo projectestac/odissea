@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_accessibilitychecker', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_accessibilitychecker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['needsmorecontrast'] = '前景および背景テキスト色に十分な
 $string['needsmoreheadings'] = 'ヘッディングのないテキストが数多く存在します。ヘッディングはスクリーンリーダユーザのページ間ナビゲートを容易にします。また、すべての人に対してページをさらに使いやすくします。';
 $string['nowarnings'] = 'おめでとうございます、アクセシビリティ問題は発見されませんでした!';
 $string['pluginname'] = 'アクセシビリティチェッカ';
+$string['privacy:metadata'] = 'atto_accessibilitycheckerプラグインはどのような個人データも保存しません。';
 $string['report'] = 'アクセシビリティレポート:';
 $string['tablesmissingcaption'] = 'テーブルにキャプションを付けてください。それぞれのテーブルにキャプションを付ける必要はありませんが、キャプションは一般的に非常に有用です。';
 $string['tablesmissingheaders'] = 'テーブルに行およびカラムヘッダを付けてください。';

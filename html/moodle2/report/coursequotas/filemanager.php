@@ -149,7 +149,7 @@ if ($files->count) {
             } else {
                 $columndir = $dir == "ASC" ? "DESC" : "ASC";
                 $columnicon = ($dir == "ASC") ? "sort_asc" : "sort_desc";
-                $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->pix_url('t/' . $columnicon) . "\" alt=\"\" />";
+                $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->image_url('t/' . $columnicon) . "\" alt=\"\" />";
             }
             $baseurl->param('sort', $column);
             $baseurl->param('dir', $columndir);

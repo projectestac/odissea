@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_filetypes', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_filetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,7 @@ $string['icon_help'] = 'Nom de fichier';
 $string['mimetype'] = 'Type MIME';
 $string['mimetype_help'] = 'Le type MIME associé à ce type de fichier, par exemple « application/epub+zip »';
 $string['pluginname'] = 'Types de fichier';
+$string['privacy:metadata'] = 'Le plugin Types de fichier n\'enregistre aucune donnée personnelle.';
 $string['revert'] = 'Revenir à la définition par défaut de {$a}';
 $string['revert_confirmation'] = 'Voulez-vous vraiment revenir à la définition par défaut du type <strong>.{$a}</strong>, en supprimant toutes vos modifications ?';
 $string['revertfiletype'] = 'Restaurer un type de fichier';

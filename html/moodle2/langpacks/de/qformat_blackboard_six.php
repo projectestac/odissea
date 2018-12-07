@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_blackboard_six', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_blackboard_six
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,5 @@ $string['importnotext'] = 'Fragetext fehlt in XML-Datei';
 $string['notenoughtsubans'] = 'Die Zuordnungsfrage \'{$a}\' konnte nicht importiert werden. Eine Zuordnungsfrage besteht zumindest aus zwei Fragen und drei Antworten.';
 $string['pluginname'] = 'Blackboard';
 $string['pluginname_help'] = 'Das Format Blackboard ermöglicht den Import von Fragen, die in Blackboards Exportformat als dat- oder ZIP-Datei gespeichert wurden. Bei Zip-Dateien können auch Bilder importiert werden..';
+$string['privacy:metadata'] = 'Das Blackboard Frageformat Plugin speichert keine persönlichen Daten.';
 $string['unhandledpresblock'] = 'Präsentationsblock wird nicht berücksichtigt.';

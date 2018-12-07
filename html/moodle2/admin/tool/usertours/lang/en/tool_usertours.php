@@ -52,6 +52,12 @@ $string['event_tour_reset'] = 'Tour reset';
 $string['event_tour_ended'] = 'Tour ended';
 $string['event_step_shown'] = 'Step shown';
 $string['exporttour'] = 'Export tour';
+$string['filter_category'] = 'Category';
+$string['filter_category_help'] = 'Show the tour on a page that is associated with a course in the selected category.';
+$string['filter_course'] = 'Courses';
+$string['filter_course_help'] = 'Show the tour on a page that is associated with the selected course.';
+$string['filter_courseformat'] = 'Course format';
+$string['filter_courseformat_help'] = 'Show the tour on a page that is associated with a course using the selected course format.';
 $string['filter_header'] = 'Tour filters';
 $string['filter_help'] = 'Select the conditions under which the tour will be shown. All of the filters must match for a tour to be shown to a user.';
 $string['filter_theme'] = 'Theme';
@@ -140,7 +146,7 @@ $string['tour_resetforall'] = 'The state of the tour has been reset. It will be 
 
 // Boost - administrator tour.
 $string['tour1_title_welcome'] = 'Welcome';
-$string['tour1_content_welcome'] = 'Welcome to the Boost theme for Moodle 3.2. If you\'ve used Moodle before you might find some things look a bit different.';
+$string['tour1_content_welcome'] = 'Welcome to the Boost theme. If you\'ve upgraded from an earlier version, you might find some things look a bit different with this theme.';
 $string['tour1_title_navigation'] = 'Navigation';
 $string['tour1_content_navigation'] = 'Major navigation is now through this nav drawer. The contents update depending on where you are in the site. Use the button at the top to hide or show it.';
 $string['tour1_title_customisation'] = 'Customisation';
@@ -150,11 +156,11 @@ $string['tour1_content_blockregion'] = 'There is still a block region over here.
 $string['tour1_title_addingblocks'] = 'Adding blocks';
 $string['tour1_content_addingblocks'] = 'In fact, think carefully about including any blocks on your pages. Blocks are not shown on the Moodle Mobile app, so as a general rule it\'s much better to make sure your site works well without any blocks.';
 $string['tour1_title_end'] = 'End of tour';
-$string['tour1_content_end'] = 'This has been a user tour, a new feature in Moodle 3.2. It won\'t show again unless you reset it using the link in the footer. As an admin you can also create your own tours like this!';
+$string['tour1_content_end'] = 'This is the end of your user tour. It won\'t show again unless you reset it using the link in the footer. As an admin you can also create your own tours like this!';
 
 // Boost - course view tour.
 $string['tour2_title_welcome'] = 'Welcome';
-$string['tour2_content_welcome'] = 'Welcome to the Boost theme for Moodle 3.2. If you\'ve used Moodle before you might find things look a bit different here on the course page.';
+$string['tour2_content_welcome'] = 'Welcome to the Boost theme. If your site has been upgraded from an earlier version, you might find things look a bit different here on the course page.';
 $string['tour2_title_customisation'] = 'Customisation';
 $string['tour2_content_customisation'] = 'To change any course settings, use the settings menu in the corner of this header. You will find a similar settings menu on the home page of every activity, too. Try turning editing on right now.';
 $string['tour2_title_navigation'] = 'Navigation';
@@ -168,4 +174,8 @@ $string['tour2_content_addblock'] = 'If you turn editing on you can add blocks f
 $string['tour2_title_addingblocks'] = 'Adding blocks';
 $string['tour2_content_addingblocks'] = 'You can add blocks to this page using this button. However, think carefully about including any blocks on your pages. Blocks are not shown on the Moodle Mobile app, so for the best user experience it is better to make sure your course works well without any blocks.';
 $string['tour2_title_end'] = 'End of tour';
-$string['tour2_content_end'] = 'This has been a user tour, a new feature in Moodle 3.2. It won\'t show again unless you reset it using the link in the footer. The site admin can also create further tours for this site if required.';
+$string['tour2_content_end'] = 'This is the end of your user tour. It won\'t show again unless you reset it using the link in the footer. The site admin can also create further tours for this site if required.';
+$string['privacy:metadata:preference:requested'] = 'The time that a user last manually requested a user tour.';
+$string['privacy:metadata:preference:completed'] = 'The time that a user last completed a user tour.';
+$string['privacy:request:preference:requested'] = 'You last requested the "{$a->name}" user tour on {$a->time}';
+$string['privacy:request:preference:completed'] = 'You last marked the "{$a->name}" user tour as completed on {$a->time}';

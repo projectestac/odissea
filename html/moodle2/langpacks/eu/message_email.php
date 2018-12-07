@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message_email', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   message_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,13 @@ $string['email'] = 'Bidali e-posta bidezko jakinarazpenak hona';
 $string['emailonlyfromnoreplyaddress'] = 'Beti bidali nahi duzu e-posta ez-erantzun moduko helbide batetik?';
 $string['ifemailleftempty'] = 'Utzi hutsik jakinarazpenak hona bidaltzeko: {$a}';
 $string['pluginname'] = 'E-posta';
+$string['privacy:metadata:attachment'] = 'Fitxategi-sistemako fitxategi bat.';
+$string['privacy:metadata:attachname'] = 'Erantsitako fitxategiaren izena (luzapenak MIME mota adierazten du).';
+$string['privacy:metadata:externalpurpose'] = 'Informazio hau kanpoko SMTP zerbitzari batera bidaltzen da hartzaileari e-posta gisa helarazteko.';
+$string['privacy:metadata:fullmessage'] = 'Mezu osoa emandako formatuan.';
+$string['privacy:metadata:fullmessagehtml'] = 'Mezuaren bertsio osoa';
+$string['privacy:metadata:recipient'] = 'Mezuaren hartzailea.';
+$string['privacy:metadata:replyto'] = 'Erantzuteko e-posta helbidea.';
+$string['privacy:metadata:replytoname'] = 'Erantzuteko igorlearen izena.';
+$string['privacy:metadata:subject'] = 'Mezuaren gaia duen lerroa.';
+$string['privacy:metadata:userfrom'] = 'Mezua bidaltzen duen erabiltzailea.';

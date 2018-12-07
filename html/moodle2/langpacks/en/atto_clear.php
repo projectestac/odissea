@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_clear', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_clear', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_clear
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Clear formatting';
+$string['privacy:metadata'] = 'The atto_clear plugin does not store any personal data.';

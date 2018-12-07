@@ -37,9 +37,11 @@ define(['jquery', 'core/modal_factory', 'core/templates', 'core/str', 'core/noti
             var addblocklink = $('[data-key=addblock]');
 
             // We need the fetch the names of the blocks. It was too much to send in the page.
-            var titlerequests = [];
-            $.each(context.blocks, function(index, key) {
-                titlerequests[titlerequests.length] = {key: 'pluginname', component: 'block_' + key};
+            var titlerequests = context.blocks.map(function(blockName) {
+                return {
+                    key: 'pluginname',
+                    component: 'block_' + blockName,
+                };
             });
 
             var bodyPromise = Str.get_strings(titlerequests)

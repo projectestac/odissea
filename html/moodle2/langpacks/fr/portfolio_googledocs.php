@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_googledocs', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,5 +32,7 @@ $string['nooauthcredentials_help'] = 'Pour utiliser le plugin de portfolio Googl
 $string['nosessiontoken'] = 'Il n\'y a pas de jeton de session, ce qui empêche l\'exportation vers Google.';
 $string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d\'abord enregistrer votre site auprès de Google, suivant la documentation de <a href="{$a->docsurl}">configuration Google OAuth 2.0</a>.</p><p>Au cours du processus d\'enregistrement, vous devrez saisir l\'URL suivante comme « Authorized Redirect URIs » :</p><p>{$a->callbackurl}</p><p>Après l\'enregistrement, vous recevrez un ID client et un secret que vous pourrez utiliser pour configurer tous les plugins Google Drive et Picasa.</p>';
 $string['pluginname'] = 'Google Drive';
+$string['privacy:metadata'] = 'Ce plugin transmet des données vers un compte Google lié. Il n\'enregistre aucune donnée localement.';
+$string['privacy:metadata:data'] = 'Données personnelles transmises à partir du sous-système portfolio.';
 $string['secret'] = 'Secret';
 $string['sendfailed'] = 'Échec du transfert du fichier {$a} vers Google';

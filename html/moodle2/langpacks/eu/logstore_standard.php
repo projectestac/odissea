@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'logstore_standard', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   logstore_standard
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Idazteko buffer-aren tamaina';
 $string['pluginname'] = 'Agerraldi estandarra';
-$string['pluginname_desc'] = 'Ekitaldiak Moodle-ko datu-basean gordetzen dituen agerraldi-erregistro gehigarri bat.';
+$string['pluginname_desc'] = 'Ekitaldiak Moodle-ko datu-basean gordetzen dituen agerraldi-erregistro plugin bat.';
+$string['privacy:metadata:log'] = 'Igarotako ekitaldien bilduma';
+$string['privacy:metadata:log:anonymous'] = 'Ekitaldia anonimo gisa markatua izan den edo ez';
+$string['privacy:metadata:log:eventname'] = 'Ekitaldiaren izena';
+$string['privacy:metadata:log:ip'] = 'Ekitaldiaren unean erabilitako IP helbidea';
+$string['privacy:metadata:log:origin'] = 'Ekitaldiaren jatorria';
+$string['privacy:metadata:log:other'] = 'Ekitaldiaren inguruko informazio gehigarria';
+$string['privacy:metadata:log:realuserid'] = 'Ekitaldiaren atzean dagoen benetako erabiltzailearen IDa, beste erabiltzaile baten izenean dabilenean.';
+$string['privacy:metadata:log:relateduserid'] = 'Ekitaldiarekin lotutako erabiltzailearen IDa';
+$string['privacy:metadata:log:timecreated'] = 'Ekitaldia gertatu zeneko unea';
+$string['privacy:metadata:log:userid'] = 'Ekitaldia abiarazi zuen erabiltzailearen IDa';
 $string['taskcleanup'] = 'Garbitu agerraldien taula';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_safebrowser', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_safebrowser', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_safebrowser
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Safe Exam Browser sarbide-araua';
+$string['privacy:metadata'] = 'Safe Exam Browser galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['requiresafeexambrowser'] = 'Behartu Safe Exam Browser erabiltzera';
 $string['safebrowsererror'] = 'Galdetegi hau saiakerak Safe Exam Browser erabilita bakarrik egiteko prestatu da. Ezin duzu saiakera web-nabigatzaile honekin egin.';
 $string['safebrowsernotice'] = 'Galdetegi hau ikasleek saiakerak Safe Exam Browser erabilita bakarrik egiteko prestatu da.';

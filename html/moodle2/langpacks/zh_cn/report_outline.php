@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_outline', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   report_outline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventactivityreportviewed'] = '查看了活动报表';
 $string['neverseen'] = '从未查看';
+$string['numviews'] = '由{$a->distinctusers} 用户浏览{$a->numviews}次';
 $string['outline:view'] = '查看课程活跃度报表';
 $string['page-report-outline-index'] = '课程大纲报告';
 $string['page-report-outline-user'] = '用户课程大纲报告';

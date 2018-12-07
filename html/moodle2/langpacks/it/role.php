@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,8 @@ $string['allowroletooverride'] = 'Consenti agli utenti con il ruolo {$a->fromrol
 $string['allowroletoswitch'] = 'Consenti agli utenti con il ruolo {$a->fromrole} di cambiare il ruolo in {$a->targetrole}';
 $string['allowswitch'] = 'Autorizzati a cambiare ruolo';
 $string['allsiteusers'] = 'Tutti gli utenti del sito';
+$string['analytics:listinsights'] = 'Elenco considerazioni';
+$string['analytics:managemodels'] = 'Gestire modelli';
 $string['archetype'] = 'Ruolo archetipo';
 $string['archetypecoursecreator'] = 'ARCHETIPO: Creatore di corsi';
 $string['archetypeeditingteacher'] = 'ARCHETIPO: Docente (editor)';
@@ -65,7 +67,7 @@ $string['backup:anonymise'] = 'Rendere anonimi i dati utente nei backup';
 $string['backup:backupactivity'] = 'Eseguire backup di attività';
 $string['backup:backupcourse'] = 'Eseguire backup di corsi';
 $string['backup:backupsection'] = 'Eseguire backup di sezioni';
-$string['backup:backuptargethub'] = 'Eseguire backup per hub';
+$string['backup:backuptargethub'] = 'Backup per pubblicazione su Moodle.net';
 $string['backup:backuptargetimport'] = 'Eseguire backup per importare';
 $string['backup:configure'] = 'Configurare opzioni di backup';
 $string['backup:downloadfile'] = 'Scaricare file dalle aree di backup';
@@ -114,7 +116,7 @@ $string['cohort:view'] = 'Visualizzare gruppi globali del sito';
 $string['comment:delete'] = 'Eliminare commenti';
 $string['comment:post'] = 'Scrivere commenti';
 $string['comment:view'] = 'Visualizzare commenti';
-$string['community:add'] = 'Usare il Blocco community per cercare corsi negli hub';
+$string['community:add'] = 'Usare il Blocco community per cercare corsi su Moodle.net';
 $string['community:download'] = 'Scaricare un corso dal Blocco community';
 $string['competency:competencygrade'] = 'Impostare valutazioni delle competenze';
 $string['competency:competencymanage'] = 'Gestire quadri di competenze';
@@ -168,6 +170,7 @@ $string['course:create'] = 'Creare corsi';
 $string['course:delete'] = 'Eliminare corsi';
 $string['course:enrolconfig'] = 'Configurare istanze di plugin di iscrizione nei corsi';
 $string['course:enrolreview'] = 'Rivedere le iscrizioni al corso';
+$string['course:ignoreavailabilityrestrictions'] = 'Ignorare disponibilità condizionata';
 $string['course:ignorefilesizelimits'] = 'Usare file di dimensioni maggiori dei limiti impostati';
 $string['course:isincompletionreports'] = 'Comparire nei report di completamento';
 $string['course:manageactivities'] = 'Gestire attività';
@@ -177,7 +180,8 @@ $string['course:managegroups'] = 'Gestire gruppi';
 $string['course:managescales'] = 'Gestire scale di valutazione';
 $string['course:markcomplete'] = 'Approvare manualmente il completamento del corso';
 $string['course:movesections'] = 'Spostare sezioni';
-$string['course:publish'] = 'Pubblicare corsi nell\'hub';
+$string['course:overridecompletion'] = 'Modificare lo stato di completamento delle attività';
+$string['course:publish'] = 'Pubblicare corsi';
 $string['course:renameroles'] = 'Personalizzare nomi dei ruoli';
 $string['course:request'] = 'Richiedere corsi';
 $string['course:reset'] = 'Eseguire reset del corso';
@@ -221,6 +225,7 @@ $string['errorbadrolename'] = 'Nome ruolo non corretto';
 $string['errorbadroleshortname'] = 'Nome abbreviato del ruolo non corretto';
 $string['errorexistsrolename'] = 'Nome ruolo già esistente';
 $string['errorexistsroleshortname'] = 'Nome ruolo già esistente';
+$string['errorroleshortnametoolong'] = 'Il nome abbreviato non deve superare i 100 caratteri';
 $string['eventroleallowassignupdated'] = 'Aggiornamento autorizzati ad assegnare ruoli';
 $string['eventroleallowoverrideupdated'] = 'Aggiornamento autorizzati a modificare ruoli';
 $string['eventroleallowswitchupdated'] = 'Aggiornamento autorizzati a modificare ruoli';
@@ -346,7 +351,7 @@ $string['restore:createuser'] = 'Creare utenti durante il ripristino';
 $string['restore:restoreactivity'] = 'Ripristinare attività';
 $string['restore:restorecourse'] = 'Ripristinare corsi';
 $string['restore:restoresection'] = 'Ripristinare sezioni';
-$string['restore:restoretargethub'] = 'Ripristinare da file contrassegnati come hub';
+$string['restore:restoretargethub'] = 'Ripristinare corsi scaricati da Moodle.net';
 $string['restore:restoretargetimport'] = 'Ripristinare da file contrassegnati  per l\'importazione';
 $string['restore:rolldates'] = 'Posticipare date di attività durante il ripristino';
 $string['restore:uploadfile'] = 'Caricare file dalle aree di backup';
@@ -412,7 +417,6 @@ $string['site:viewfullnames'] = 'Visualizzare sempre nome e cognome degli utenti
 $string['site:viewparticipants'] = 'Visualizzare i partecipanti';
 $string['site:viewreports'] = 'Visualizzare i report';
 $string['site:viewuseridentity'] = 'Visulizzare negli elenchi di utenti l\'identità completa delle persone';
-$string['tag:create'] = 'Creare nuovi tag';
 $string['tag:edit'] = 'Modificare tag esistenti';
 $string['tag:editblocks'] = 'Modificare blocchi nelle pagine dei tag';
 $string['tag:flag'] = 'Segnala tag inappropriato';
@@ -455,6 +459,7 @@ $string['viewingdefinitionofrolex'] = 'Visualizzazione della definizione del ruo
 $string['viewrole'] = 'Visualizzazione dettagliata del ruolo';
 $string['webservice:createmobiletoken'] = 'Creare un web service per l\'accesso mobile';
 $string['webservice:createtoken'] = 'Creare token web service';
+$string['webservice:managealltokens'] = 'Gestire i token web service di tutti gli utenti';
 $string['whydoesuserhavecap'] = 'Come mai {$a->fullname} ha il privilegio {$a->capability} nel contesto {$a->context}?';
 $string['whydoesusernothavecap'] = 'Come mai {$a->fullname} non ha il privilegio {$a->capability} nel contesto {$a->context}?';
 $string['xroleassignments'] = 'Ruoli assegnati a {$a}';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = 'ASAP';
+$string['backtoscheduledtasks'] = 'Voltar para as tarefas agendadas';
 $string['blocking'] = 'Bloqueio';
 $string['component'] = 'Componente';
 $string['corecomponent'] = 'Core';
@@ -33,13 +34,18 @@ $string['default'] = 'Predefinições';
 $string['disabled'] = 'Desativada';
 $string['disabled_help'] = 'As tarefas agendadas mas desativadas não são executadas a partir do cron, no entanto, estas podem continuar a ser executadas manualmente através da ferramenta CLI.';
 $string['edittaskschedule'] = 'Editar agendamento de tarefa: {$a}';
+$string['enablerunnow'] = 'Permitir \'Executar agora\' para tarefas agendadas';
+$string['enablerunnow_desc'] = 'Permite que os administradores executem imediatamente uma tarefa agendada, em vez de esperar que ela seja executada conforme o programado. A tarefa é executada no servidor web, por isso alguns sites podem querer desativar este recurso para evitar potenciais problemas de desempenho.';
 $string['faildelay'] = 'Falha da tarefa em atraso';
 $string['lastruntime'] = 'Última execução';
 $string['nextruntime'] = 'Próxima execução';
 $string['plugindisabled'] = 'Módulo desativado';
 $string['pluginname'] = 'Configuração da tarefa agendada';
+$string['privacy:metadata'] = 'O módulo Configuração da tarefa agendada não armazena dados pessoais.';
 $string['resettasktodefaults'] = 'Restaurar agendamento de tarefa para as configurações predefinidas';
 $string['resettasktodefaults_help'] = 'Se ativar esta opção, irá descartar quaisquer alterações locais e reverter o agendamento desta tarefa para as configurações predefinidas.';
+$string['runnow'] = 'Executar agora';
+$string['runnow_confirm'] = 'Tem a certeza de que pretende executar agora a tarefa \'{$a}\'? A tarefa será executada no servidor Web e pode levar algum tempo até estar concluída.';
 $string['scheduledtaskchangesdisabled'] = 'As alterações à lista de tarefas agendadas foram impedidas na configuração do Moodle';
 $string['scheduledtasks'] = 'Tarefas agendadas';
 $string['taskdisabled'] = 'Tarefa desativada';

@@ -415,19 +415,22 @@ EOD;
             $record['category'] = $DB->get_field_select('course_categories', "MIN(id)", "parent=0");
         }
 
+        if (!isset($record['startdate'])) {
+            $record['startdate'] = usergetmidnight(time());
+        }
+
         if (isset($record['tags']) && !is_array($record['tags'])) {
             $record['tags'] = preg_split('/\s*,\s*/', trim($record['tags']), -1, PREG_SPLIT_NO_EMPTY);
         }
 
+        if (!empty($options['createsections']) && empty($record['numsections'])) {
+            // Since Moodle 3.3 function create_course() automatically creates sections if numsections is specified.
+            // For BC if 'createsections' is given but 'numsections' is not, assume the default value from config.
+            $record['numsections'] = get_config('moodlecourse', 'numsections');
+        }
+
         $course = create_course((object)$record);
         context_course::instance($course->id);
-        if (!empty($options['createsections'])) {
-            if (isset($course->numsections)) {
-                course_create_sections_if_missing($course, range(0, $course->numsections));
-            } else {
-                course_create_sections_if_missing($course, 0);
-            }
-        }
 
         return $course;
     }
@@ -1103,5 +1106,81 @@ EOD;
 
         // Get the tool associated with this instance.
         return $DB->get_record('enrol_lti_tools', array('enrolid' => $instanceid));
+    }
+
+    /**
+     * Helper function used to create an event.
+     *
+     * @param   array   $data
+     * @return  stdClass
+     */
+    public function create_event($data = []) {
+        global $CFG;
+
+        require_once($CFG->dirroot . '/calendar/lib.php');
+        $record = new \stdClass();
+        $record->name = 'event name';
+        $record->eventtype = 'global';
+        $record->repeat = 0;
+        $record->repeats = 0;
+        $record->timestart = time();
+        $record->timeduration = 0;
+        $record->timesort = 0;
+        $record->eventtype = 'user';
+        $record->courseid = 0;
+        $record->categoryid = 0;
+
+        foreach ($data as $key => $value) {
+            $record->$key = $value;
+        }
+
+        switch ($record->eventtype) {
+            case 'user':
+                unset($record->categoryid);
+                unset($record->courseid);
+                unset($record->groupid);
+                break;
+            case 'group':
+                unset($record->categoryid);
+                break;
+            case 'course':
+                unset($record->categoryid);
+                unset($record->groupid);
+                break;
+            case 'category':
+                unset($record->courseid);
+                unset($record->groupid);
+                break;
+            case 'global':
+                unset($record->categoryid);
+                unset($record->courseid);
+                unset($record->groupid);
+                break;
+        }
+
+        $event = new calendar_event($record);
+        $event->create($record);
+
+        return $event->properties();
+    }
+
+    /**
+     * Create a new user, and enrol them in the specified course as the supplied role.
+     *
+     * @param   \stdClass   $course The course to enrol in
+     * @param   string      $role The role to give within the course
+     * @param   \stdClass   $userparams User parameters
+     * @return  \stdClass   The created user
+     */
+    public function create_and_enrol($course, $role = 'student', $userparams = null, $enrol = 'manual',
+            $timestart = 0, $timeend = 0, $status = null) {
+        global $DB;
+
+        $user = $this->create_user($userparams);
+        $roleid = $DB->get_field('role', 'id', ['shortname' => $role ]);
+
+        $this->enrol_user($user->id, $course->id, $roleid, $enrol, $timestart, $timeend, $status);
+
+        return $user;
     }
 }

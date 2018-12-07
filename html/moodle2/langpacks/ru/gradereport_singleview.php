@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Оценка для {$a}';
 $string['gradeitem'] = 'Оцениваемый элемент: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Этот оцениваемый элемент не может быть переопределен.';
 $string['gradeuser'] = 'Оцениваемый пользователь: {$a}';
+$string['itemsperpage'] = 'Элементов на странице';
 $string['noscreens'] = 'Не удается найти подходящую схему для отображения одиночного вида.';
 $string['notvalid'] = 'Неправильная схема для отображения одиночного вида: {$a}';
 $string['override'] = 'Переопределить';

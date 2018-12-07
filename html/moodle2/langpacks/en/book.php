@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,10 @@ $string['eventchapterdeleted'] = 'Chapter deleted';
 $string['eventchapterupdated'] = 'Chapter updated';
 $string['eventchapterviewed'] = 'Chapter viewed';
 $string['hidechapter'] = 'Hide chapter "{$a}"';
+$string['indicator:cognitivedepth'] = 'Book cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Book resource.';
+$string['indicator:socialbreadth'] = 'Book social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Book resource.';
 $string['modulename'] = 'Book';
 $string['modulename_help'] = 'The book module enables a teacher to create a multi-page resource in a book-like format, with chapters and subchapters. Books can contain media files as well as text and are useful for displaying lengthy passages of information which can be broken down into sections.
 
@@ -90,6 +94,8 @@ $string['numberingoptions_desc'] = 'Options for displaying chapters and subchapt
 $string['page-mod-book-x'] = 'Any book module page';
 $string['pluginadministration'] = 'Book administration';
 $string['pluginname'] = 'Book';
+$string['privacy:metadata'] = 'The book activity module does not store any personal data.';
+$string['removeallbooktags'] = 'Remove all book tags';
 $string['search:activity'] = 'Book - resource information';
 $string['search:chapter'] = 'Book - chapters';
 $string['showchapter'] = 'Show chapter "{$a}"';
@@ -97,5 +103,7 @@ $string['subchapter'] = 'Subchapter';
 $string['subchapternotice'] = '(Only available once the first chapter has been created)';
 $string['subplugintype_booktool'] = 'Book tool';
 $string['subplugintype_booktool_plural'] = 'Book tools';
+$string['tagarea_book_chapters'] = 'Book chapters';
+$string['tagsdeleted'] = 'Book tags have been deleted';
 $string['toc'] = 'Table of contents';
 $string['top'] = 'top';

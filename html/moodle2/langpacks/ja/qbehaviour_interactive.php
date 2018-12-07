@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactive', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_interactive', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_interactive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '複数受験インタラクティブ';
+$string['privacy:metadata'] = '複数受験インタラクティブ問題動作プラグインはどのような個人データも保存しません。';
 $string['triesremaining'] = '残り受験数: {$a}';
 $string['tryagain'] = '再受験';

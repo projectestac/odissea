@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,16 +43,16 @@ $string['auth_ldap_create_error'] = 'LDAPでのユーザ作成中にエラーが
 $string['auth_ldap_creators'] = 'メンバーが新しいコースの作成を許可されているグループの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
 $string['auth_ldap_creators_key'] = 'コース作成者';
 $string['auth_ldapdescription'] = 'この方法では外部のLDAPサーバに対して認証を提供します。ユーザ名およびパスワードが正しい場合、Moodleは新しいユーザをデータベースに作成します。このモジュールはユーザ属性をLDAPから取得して、Moodleのフィールドに入力します。認証後のログインではユーザ名およびパスワードのみ確認されます。';
-$string['auth_ldap_expiration_desc'] = 'パスワードチェックの有効期限を無効にする場合、またはLDAPがLDAPサーバから直接passwordexpirationを参照する場合、「No」を選択してください。';
+$string['auth_ldap_expiration_desc'] = 'パスワードチェックの有効期限を無効にする場合、または「 {$a->ldapserver} 」から直接パスワード有効期限を参照する場合、「 {$a->no} 」を選択してください。';
 $string['auth_ldap_expiration_key'] = '有効期限切れ';
 $string['auth_ldap_expiration_warning_desc'] = 'パスワードの有効期限切れを警告するまでの日数を入力してください。';
-$string['auth_ldap_expiration_warning_key'] = '有効期限切れを警告';
+$string['auth_ldap_expiration_warning_key'] = '有効期限切れ警告';
 $string['auth_ldap_expireattr_desc'] = '任意: パスワード有効期限を保持するLDAP属性をオーバーライドします。';
 $string['auth_ldap_expireattr_key'] = '有効期限切れ属性';
 $string['auth_ldapextrafields'] = 'これらのフィールドは任意です。<b>LDAPフィールド</b>より事前に入力されたMoodleユーザフィールドを選択することもできます。<p>空白の場合、LDAPよりデータは転送されず、代わりにMoodleのデフォルト値が使用されます。</p><p>どちらの場合でも、ユーザはログイン後、すべてのフィールドを編集することができます。</p>';
 $string['auth_ldap_graceattr_desc'] = '任意: 猶予ログイン属性をオーバーライドします。';
 $string['auth_ldap_gracelogin_key'] = '猶予ログイン属性';
-$string['auth_ldap_gracelogins_desc'] = 'LDAPの猶予ログインサポートを有効にします。パスワードの有効期限が切れた後、猶予ログインカウントがゼロになるまでログインすることができます。この設定を「Yes」にすることで、パスワードが期限切れになった場合、猶予ログインメッセージが表示されます。';
+$string['auth_ldap_gracelogins_desc'] = 'LDAPの猶予ログインサポートを有効にします。パスワードの有効期限が切れた後、猶予ログインカウントがゼロになるまでログインすることができます。この設定を「Yes」にすることで、パスワードの有効期限が切れた場合、猶予ログインメッセージが表示されます。';
 $string['auth_ldap_gracelogins_key'] = '猶予ログイン';
 $string['auth_ldap_groupecreators'] = 'メンバーがグループの作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
 $string['auth_ldap_groupecreators_key'] = 'グループ作成者';
@@ -79,6 +79,8 @@ $string['auth_ldap_passtype_key'] = 'パスワードフォーマット';
 $string['auth_ldap_passwdexpire_settings'] = 'LDAPパスワード有効期限設定';
 $string['auth_ldap_preventpassindb'] = 'Moodleデータベースにパスワードが保存されることを防ぐには「Yes」を選択してください。';
 $string['auth_ldap_preventpassindb_key'] = 'パスワードをキャッシュしない';
+$string['auth_ldap_rolecontext'] = '{$a->localname} コンテクスト';
+$string['auth_ldap_rolecontext_help'] = '「 {$a->localname} 」のマッピングの選択に使用されるLDAPコンテクストです。複数グループは「;]で分けてください。通常「cn={$a->shortname},ou=staff,o=myorg」のようになります。';
 $string['auth_ldap_search_sub'] = 'サブコンテクストからユーザを検索します。';
 $string['auth_ldap_search_sub_key'] = 'サブコンテクストを検索する';
 $string['auth_ldap_server_settings'] = 'LDAPサーバ設定';
@@ -112,11 +114,14 @@ $string['auth_ntlmsso_subnet'] = '設定した場合、このサブネットの�
 $string['auth_ntlmsso_subnet_key'] = 'サブネット';
 $string['auth_ntlmsso_type'] = 'ユーザを認証するためサーバで設定された認証メソッドです (分からない場合、NTLMを選択してください)。';
 $string['auth_ntlmsso_type_key'] = '認証タイプ';
+$string['cannotmaprole'] = '省略名「 {$a->shortname} 」が長過ぎるかハイフンを含んでいるためロール「 {$a->rolename} 」をマップできません。マップできるようにするにはあなたは省略名を {$a->charlimit} 文字に減らすかハイフンを削除する必要があります。<a href="{$a->link}">ロールを編集する</a>';
 $string['connectingldap'] = 'LDAPサーバに接続中 ...';
+$string['connectingldapsuccess'] = 'あなたのLDAPサーバに正常に接続しました。';
 $string['creatingtemptable'] = '一時テーブル {$a} の作成';
 $string['didntfindexpiretime'] = 'password_expire()が有効期限を見つけることができませんでした。';
 $string['didntgetusersfromldap'] = 'LDAPサーバからユーザを取得できませんでした。';
 $string['gotcountrecordsfromldap'] = 'LDAPから {$a} レコードを取得しました。';
+$string['ldapnotconfigured'] = '現在、LDAPホストURLが設定されていません。';
 $string['morethanoneuser'] = '変です! LDAPに2名以上のユーザレコードが見つかりました。最初のユーザレコードのみ使用します。';
 $string['needbcmath'] = '有効期限切れパスワードを使用してActive Directoryに問い合わせる場合、あなたはBCMath拡張モジュールが必要です。';
 $string['needmbstring'] = 'Active Directoryのパスワードを変更するにはmbstring拡張モジュールが必要です。';
@@ -136,11 +141,14 @@ $string['pagesize'] = 'この値があなたのLDAPサーバ結果設定サイ�
 $string['pagesize_key'] = 'ページサイズ';
 $string['pluginname'] = 'LDAPサーバ';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';
+$string['privacy:metadata'] = 'LDAPサーバ認証プラグインはどのような個人データも保存しません。';
 $string['renamingnotallowed'] = 'LDAPでのユーザ名変更は許可されていません。';
 $string['rootdseerror'] = 'Active DirectoryのrootDSEクエリにエラーが発生しました。';
 $string['start_tls'] = 'TLS暗号化による標準LDAPサービス (ポート389) を使用する';
 $string['start_tls_key'] = 'TLSを使用する';
+$string['syncroles'] = 'LDAPからシステムロールを同期する';
 $string['synctask'] = 'LDAPユーザ同期ジョブ';
+$string['systemrolemapping'] = 'システムロールマッピング';
 $string['updatepasserror'] = 'user_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';
 $string['updatepasserrorexpire'] = 'パスワードの有効期限読み込み中にuser_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'パスワード有効期限または猶予ログインの修正中にuser_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';

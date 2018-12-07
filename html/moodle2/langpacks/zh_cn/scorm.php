@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,6 +170,10 @@ $string['hidetoc_help'] = '该项设置设置内容列表出现在SCORM播放器
 $string['highestattempt'] = '最高分';
 $string['identifier'] = '问题标识符';
 $string['incomplete'] = '不完整';
+$string['indicator:cognitivedepth'] = 'SCORM课件活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 SCORM课件活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = 'SCORM课件活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在SCORM课件活动中所达到的社会宽度。';
 $string['info'] = '信息';
 $string['interactions'] = '交互';
 $string['invalidactivity'] = 'Scorm 活动不正确';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_file', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['path_help'] = 'Ce dossier doit sera utilisé pour stocker les fichiers 
 $string['pluginname'] = 'Cache de fichiers';
 $string['prescan'] = 'Pré-scanner le dossier';
 $string['prescan_help'] = 'Si ce réglage est activé, le dossier est scanné lors de la première utilisation du cache et les requêtes de fichiers sont d\'abord comparées aux données scannées. Ce comportement peut être utile si votre système de fichiers est lent et que vous constatez que les opérations sur les fichiers ralentissent votre système.';
+$string['privacy:metadata'] = 'Le plugin de stockage de cache Cache de fichiers enregistre des données brièvement, de par sa fonction de mise en cache. Les données sont supprimées régulièrement.';
 $string['singledirectory'] = 'Dépôt dossier unique';
 $string['singledirectory_help'] = 'Si ce réglage est activé, les fichiers (éléments mis en cache) seront stockés dans un dossier unique, plutôt que d\'être répartis dans plusieurs dossiers.<br />
 L\'activation rendra plus rapide l\'interaction avec les fichiers, mais au risque d\'arriver aux limites du système.<br />

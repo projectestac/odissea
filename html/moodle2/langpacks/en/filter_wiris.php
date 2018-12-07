@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_wiris', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_wiris
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,7 +76,7 @@ $string['imagesettings_text'] = '';
 $string['impossibletofindwirisfilterversion'] = 'Impossible to find MathType filter version file.';
 $string['lookingforfilterfiles'] = 'Looking for filter files';
 $string['lookingforwirisfilterversion'] = 'Looking for MathType filter version';
-$string['lookingforwirisplugin'] = 'Looking for Mathtype for';
+$string['lookingforwirisplugin'] = 'Looking for MathType for';
 $string['lookingforwirispluginenabled'] = 'Looking for MathType for';
 $string['mustbeinstalled'] = 'must be installed.';
 $string['noteditorspluginsinstalled'] = 'There are not editors plugins installed';
@@ -88,6 +88,7 @@ $string['or'] = 'or';
 $string['pluginname'] = 'MathType by WIRIS';
 $string['pluginperformance'] = 'Image performance mode';
 $string['pluginperformance_help'] = '';
+$string['privacy:null_reason'] = 'MathType filter does not effect or store any data itself.';
 $string['securitysettings'] = 'Security settings';
 $string['securitysettings_text'] = '';
 $string['tinymce'] = 'TinyMCE';
@@ -101,8 +102,8 @@ $string['wiriscas'] = 'Calculator';
 $string['wirischemeditor'] = 'Chemistry editor';
 $string['wirisfilterversion'] = 'MathType filter version =';
 $string['wirismatheditor'] = 'Math editor';
-$string['wirispluginfilterfor'] = 'MathType filter and Mathtype for';
+$string['wirispluginfilterfor'] = 'MathType filter and MathType for';
 $string['wirispluginfiltermustbeinstalled'] = 'MathType filter must be installed.';
-$string['wirispluginfor'] = 'Mathtype for';
-$string['wirispluginforatto'] = 'Mathtype for Atto';
-$string['wirispluginfortinymce'] = 'Mathtype for TinyMCE';
+$string['wirispluginfor'] = 'MathType for';
+$string['wirispluginforatto'] = 'MathType for Atto';
+$string['wirispluginfortinymce'] = 'MathType for TinyMCE';

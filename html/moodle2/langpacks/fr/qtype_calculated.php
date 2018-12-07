@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_calculated', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_calculated
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -116,6 +116,7 @@ $string['pluginnameediting'] = 'Modification d\'une question calculée';
 $string['pluginname_help'] = 'Les questions calculées permettent de créer des questions numériques en utilisant des variables, placées entre deux accolades, qui sont remplacées pas des valeurs lorsque le test est lancé. Par exemple, la question « Quelle est l\'aire d\'un rectangle de longueur {a} et de largeur {b} ?» aura comme réponse correcte la formule « {a}*{b} » (où le symbole * représente la multiplication).';
 $string['pluginnamesummary'] = 'Les questions calculées sont des questions numériques dont les nombres sont tirés aléatoirement d\'un jeu de données lorsque le test est effectué.';
 $string['possiblehdr'] = 'Des caractères joker sont peut-être présents seulement dans le texte de la question';
+$string['privacy:metadata'] = 'Le plugin de type de question Calculée n\'enregistre aucune donnée personnelle.';
 $string['questiondatasets'] = 'Jeu de données de la question';
 $string['questiondatasets_help'] = 'Jeux de données des variables qui seront utilisés dans chacune des questions';
 $string['questionstoredname'] = 'Nom enregistré pour la question';

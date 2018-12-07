@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_undo', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_undo', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_undo
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '元に戻す/やり直す';
+$string['privacy:metadata'] = 'atto_undoプラグインはどのような個人データも保存しません。';
 $string['redo'] = 'やり直す';
 $string['undo'] = '元に戻す';

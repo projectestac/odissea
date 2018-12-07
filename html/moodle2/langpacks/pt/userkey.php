@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'userkey', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   userkey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,14 @@ $string['keyvaliduntil'] = 'A chave é válida até';
 $string['keyvaliduntil_help'] = 'Por questões de segurança, deve definir uma data adicional a partir da qual a chave não será válida.';
 $string['keyvalue'] = 'Valor da chave';
 $string['newuserkey'] = 'Nova chave de utilizador';
+$string['privacy:metadata:user_private_key'] = 'Chaves privadas do utilizador';
+$string['privacy:metadata:user_private_key:instance'] = 'A instância do script.';
+$string['privacy:metadata:user_private_key:iprestriction'] = 'O intervalo de endereços IP nos quais esta chave pode ser usada.';
+$string['privacy:metadata:user_private_key:script'] = 'O script responsável por esta chave de utilizador';
+$string['privacy:metadata:user_private_key:timecreated'] = 'A data e hora em que a chave foi criada.';
+$string['privacy:metadata:user_private_key:userid'] = 'O utilizador associado à chave.';
+$string['privacy:metadata:user_private_key:validuntil'] = 'A data e hora até quando a chave é válida.';
+$string['privacy:metadata:user_private_key:value'] = 'O valor da chave.';
 $string['userkey'] = 'Chave de utilizador';
 $string['userkey_help'] = 'Selecione uma das chaves gravadas para dar acesso aos utilizadores à informação publicada por este módulo de exportação. Estes utilizadores não terão que iniciar sessão no Moodle para terem acesso a esta informação. Selecione "Criar uma nova chave de utilizador" para gerar uma nova chave quando submeter este formulário.';
 $string['userkeys'] = 'Chaves de utilizador';

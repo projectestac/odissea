@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_delaybetweenattempts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Saiakeren arteko denbora-tartea ezartzeko sarbide-araua';
+$string['privacy:metadata'] = 'Saiakeren arteko denbora-tartea ezartzeko galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['youcannotwait'] = 'Galdetegi hau itxi egingo da beste saiakera bat hasteko denbora izan baino lehen';
 $string['youmustwait'] = 'Itxaron beharko duzu galdetegi honetan beste saiakera bat egiteko. Beste saiakera bat hasteko baimena izango duzu {$a}-(r)en ondoren.';

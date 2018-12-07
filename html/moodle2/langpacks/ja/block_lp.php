@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_lp', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_lp', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,5 +33,6 @@ $string['myplans'] = 'マイプラン';
 $string['noactiveplans'] = '現在、アクティブなプランはありません。';
 $string['planstoreview'] = 'レビューするプラン';
 $string['pluginname'] = '学習プラン';
+$string['privacy:metadata'] = '学習プランブロックは他の場所で保存されたデータのみ表示します。';
 $string['viewmore'] = 'さらに表示する ...';
 $string['viewotherplans'] = '他のプランを表示する ...';

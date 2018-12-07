@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Kon niet verbinden met de downloadserver. Het is niet mogelijk om de taalpakketten te installeren of updaten. Download de juiste zip-bestanden van<a href="{$a->src}">{$a->src}</a> en unzip ze manueel in je datamap  <code>{$a->dest}</code>';
 $string['install'] = 'Installeer geselecteerde taalpakket(ten)';
 $string['installedlangs'] = 'Geïnstalleerde taalpakketten';
 $string['langimport'] = 'Taalpakkettenbeheer';
@@ -45,7 +46,6 @@ $string['noenglishuninstall'] = 'Het Engels taalpakket kan niet verwijderd worde
 $string['nolangupdateneeded'] = 'Al je geïnstalleerde taalpakketten zijn up-to-date. Er is geen update nodig.';
 $string['pluginname'] = 'Pakketten';
 $string['purgestringcaches'] = 'Taalcache leegmaken';
-$string['remotelangnotavailable'] = 'Het is niet mogelijk om automatisch taalpakketten te installeren, omdat Moodle geen verbinding kan maken met Moodle.org. Download daarom de nodige zipbestanden van <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a>,  kopieer ze naar je {$a} map en unzip ze daar.';
 $string['selectlangs'] = 'Selecteer te verwijderen taalpakketten';
 $string['uninstall'] = 'Verwijder geselecteerde taalpakketten';
 $string['uninstallconfirm'] = 'Je gaat zodadelijk taalpakketten verwijderen:<strong>{$a}</strong>.  Verder gaan?';

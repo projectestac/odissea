@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'imscp', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,10 @@ $string['contentheader'] = 'Contenuto';
 $string['deploymenterror'] = 'Si è verificato un errore nel pacchetto';
 $string['imscp:addinstance'] = 'Aggiungere pacchetti IMS';
 $string['imscp:view'] = 'Visualizzare IMS Content';
+$string['indicator:cognitivedepth'] = 'Pacchetto IMS cognitvo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'feedback\'.';
+$string['indicator:socialbreadth'] = 'Pacchetto IMS sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'Pacchetto IMS\'.';
 $string['keepold'] = 'Pacchetti da archiviare';
 $string['keepoldexplain'] = 'Quanti pacchetti devono essere archiviati?';
 $string['modulename'] = 'IMS content package';

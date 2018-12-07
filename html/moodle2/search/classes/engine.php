@@ -199,6 +199,63 @@ abstract class engine {
     }
 
     /**
+     * Loop through given iterator of search documents
+     * and and have the search engine back end add them
+     * to the index.
+     *
+     * @param iterator $iterator the iterator of documents to index
+     * @param searcharea $searcharea the area for the documents to index
+     * @param array $options document indexing options
+     * @return array Processed document counts
+     */
+    public function add_documents($iterator, $searcharea, $options) {
+        $numrecords = 0;
+        $numdocs = 0;
+        $numdocsignored = 0;
+        $lastindexeddoc = 0;
+        $firstindexeddoc = 0;
+        $partial = false;
+
+        foreach ($iterator as $document) {
+            // Stop if we have exceeded the time limit (and there are still more items). Always
+            // do at least one second's worth of documents otherwise it will never make progress.
+            if ($lastindexeddoc !== $firstindexeddoc &&
+                    !empty($options['stopat']) && manager::get_current_time() >= $options['stopat']) {
+                $partial = true;
+                break;
+            }
+
+            if (!$document instanceof \core_search\document) {
+                continue;
+            }
+
+            if (isset($options['lastindexedtime']) && $options['lastindexedtime'] == 0) {
+                // If we have never indexed this area before, it must be new.
+                $document->set_is_new(true);
+            }
+
+            if ($options['indexfiles']) {
+                // Attach files if we are indexing.
+                $searcharea->attach_files($document);
+            }
+
+            if ($this->add_document($document, $options['indexfiles'])) {
+                $numdocs++;
+            } else {
+                $numdocsignored++;
+            }
+
+            $lastindexeddoc = $document->get('modified');
+            if (!$firstindexeddoc) {
+                $firstindexeddoc = $lastindexeddoc;
+            }
+            $numrecords++;
+        }
+
+        return array($numrecords, $numdocs, $numdocsignored, $lastindexeddoc, $partial);
+    }
+
+    /**
      * Returns the plugin name.
      *
      * @return string Frankenstyle plugin name.

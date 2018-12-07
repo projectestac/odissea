@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_calendar_upcoming', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_calendar_upcoming
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Gehitu datozen ekitaldiak bloke berria';
 $string['calendar_upcoming:myaddinstance'] = 'Gehitu datozen ekitaldiak bloke berria aginte-panelean';
+$string['gotocalendar'] = 'Joan egutegira...';
 $string['pluginname'] = 'Datozen ekitaldiak';
+$string['privacy:metadata'] = 'Datozen ekitaldiak blokeak egutegiko datuak baino ez ditu erakusten.';

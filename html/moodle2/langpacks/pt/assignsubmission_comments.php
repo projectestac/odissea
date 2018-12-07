@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_comments', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['default_help'] = 'Se ativar esta opção, este método de trabalho esta
 $string['enabled'] = 'Comentários';
 $string['enabled_help'] = 'Se ativo, os alunos podem inserir comentários junto dos seus trabalhos. Isto pode ser usado, por exemplo, para permitir que os alunos alertem o professor sobre qual o ficheiro a avaliar no caso de submeterem mais do que um.';
 $string['pluginname'] = 'Comentários à submissão';
+$string['privacy:metadata:commentpurpose'] = 'Comentários entre aluno e professor sobre a submissão';

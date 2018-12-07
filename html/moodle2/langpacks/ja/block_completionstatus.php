@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_completionstatus', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_completionstatus
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = '新しいコース完了ステータ�
 $string['criteriagroup'] = 'クライテリアグループ';
 $string['firstofsecond'] = '{$a->first} / {$a->second}';
 $string['pluginname'] = 'コース完了ステータス';
+$string['privacy:metadata'] = 'コース完了ステータスブロックはコース完了に関する情報のみ表示します。データ自体を保存することはありません。';
 $string['requirement'] = '前提条件';
 $string['returntocourse'] = 'コースに戻る';

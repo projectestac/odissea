@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_category', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['category:config'] = 'Configurare istanze plugin Iscrizioni di categoria
 $string['category:synchronised'] = 'Assegnazioni di ruolo sincronizzate alle iscrizioni del corso';
 $string['pluginname'] = 'Iscrizioni di categoria';
 $string['pluginname_desc'] = 'Il plugin Iscrizioni di categoria è una soluzione legacy per le iscrizioni a livello di categoria di corsi tramite l\'assegnazione di ruolo. Al posto di questo plugin si raccomanda di utilizzare il plugin Sincronizzazione gruppi globali.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "Iscrizioni di categoria" non memorizza dati personali.';

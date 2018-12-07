@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_settings', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_settings
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'ユーザにこのブロックのドックを許可する';
 $string['pluginname'] = '管理';
+$string['privacy:metadata'] = '管理ブロックは他の場所で保存されたデータのみ表示します。';
 $string['settings:addinstance'] = '新しい管理ブロックを追加する';
 $string['settings:myaddinstance'] = '新しい管理ブロックをダッシュボードに追加する';

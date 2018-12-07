@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_textarea', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_textarea
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Textbereich';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Gespeicherte Nutzerdaten';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Format der gespeicherten Nutzerdaten';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID des Profilfeldes';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Format der gespeicherten Nutzerdaten';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'ID des Nutzers dessen Daten im Textbereichs-Plugin gespeichert werden';

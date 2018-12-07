@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['anonymous'] = 'Анонимный';
 $string['anonymous_edit'] = 'Вид респондента';
 $string['anonymous_entries'] = 'Анонимные записи ({$a})';
 $string['anonymous_user'] = 'Анонимные пользователи';
+$string['answerquestions'] = 'Ответы на вопросы';
 $string['append_new_items'] = 'Добавлены новые элементы';
 $string['autonumbering'] = 'Автоматическая нумерация вопросов';
 $string['autonumbering_help'] = 'Включает или отключает автоматизированную нумерацию каждого вопроса.';
@@ -146,6 +147,7 @@ $string['horizontal'] = 'горизонтально';
 $string['importfromthisfile'] = 'импорт из файла';
 $string['import_questions'] = 'импорт вопросов';
 $string['import_successfully'] = 'импорт прошел успешно';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Обратная связь.';
 $string['info'] = 'информация';
 $string['infotype'] = 'Тип информации';
 $string['insufficient_responses'] = 'недостаточно ответов';

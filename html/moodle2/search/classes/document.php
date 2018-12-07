@@ -278,8 +278,21 @@ class document implements \renderable, \templatable {
         if ($fielddata['type'] === 'int' || $fielddata['type'] === 'tdate') {
             $this->data[$fieldname] = intval($value);
         } else {
+            // Remove disallowed Unicode characters.
+            $value = \core_text::remove_unicode_non_characters($value);
+
             // Replace all groups of line breaks and spaces by single spaces.
             $this->data[$fieldname] = preg_replace("/\s+/u", " ", $value);
+            if ($this->data[$fieldname] === null) {
+                if (isset($this->data['id'])) {
+                    $docid = $this->data['id'];
+                } else {
+                    $docid = '(unknown)';
+                }
+                throw new \moodle_exception('error_indexing', 'search', '', null, '"' . $fieldname .
+                        '" value causes preg_replace error (may be caused by unusual characters) ' .
+                        'in document with id "' . $docid . '"');
+            }
         }
 
         return $this->data[$fieldname];
@@ -566,7 +579,8 @@ class document implements \renderable, \templatable {
     public function export_for_template(\renderer_base $output) {
         list($componentname, $areaname) = \core_search\manager::extract_areaid_parts($this->get('areaid'));
 
-        $title = $this->is_set('title') ? $this->format_text($this->get('title')) : '';
+        $searcharea = \core_search\manager::get_search_area($this->data['areaid']);
+        $title = $this->is_set('title') ? $this->format_text($searcharea->get_document_display_title($this)) : '';
         $data = [
             'componentname' => $componentname,
             'areaname' => $areaname,

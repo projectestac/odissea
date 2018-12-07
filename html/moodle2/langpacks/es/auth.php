@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,8 +40,10 @@ $string['auth_data_mapping'] = 'Mapeado de datos';
 $string['authenticationoptions'] = 'Opciones de identificación';
 $string['auth_fieldlock'] = 'Bloquear valor';
 $string['auth_fieldlock_expl'] = '<p><b>Bloquear valor:</b> Si se activa, los usuarios y administradores de Moodle no podrán editar directamente el campo. Utilice esta opción si mantiene estos datos en el sistema de identificación externo. </p>';
+$string['auth_fieldlockfield'] = 'Bloquear valor ({$a})';
 $string['auth_fieldlocks'] = 'Bloquear campos de usuario';
 $string['auth_fieldlocks_help'] = '<p>Usted puede bloquear los campos de datos de los usuarios, lo que resulta útil en sitios donde esos datos están mantenidos por administradores de forma manual, editando los registros de los usuarios o subiéndolos mediante la utilidad \'Subir usuarios\'. Si usted bloquea campos requeridos por Moodle, asegúrese de que proporciona esos datos al crear las cuentas de los usuarios; de otro modo las cuentas no serán utilizables.</p><p>Considere fijar esta opción de bloqueo en \'Desbloqueado si está vacío\', para evitar este problema.</p>';
+$string['auth_fieldmapping'] = 'Mapeo de datos ({$a})';
 $string['authinstructions'] = 'Deje esta opción en blanco para mostrar las instrucciones por defecto de entrada al sitio en la página de entrada. Si desea proporcionar instrucciones personalizadas introdúzcalas aquí.';
 $string['auth_invalidnewemailkey'] = 'Error: Si está intentando confirmar un cambio de dirección email. debe haber cometido un error al copiar la URL que le enviamos por email. Por favor, copie la dirección y pruebe de nuevo.';
 $string['authloginviaemail'] = 'Permitir iniciar sesión por correo electrónico';
@@ -54,20 +56,23 @@ $string['auth_passwordwillexpire'] = 'Su contraseña caducará en {$a} días ¿D
 $string['auth_remove_delete'] = 'Borrado completo';
 $string['auth_remove_keep'] = 'Mantener interna';
 $string['auth_remove_suspend'] = 'Suspender interna';
-$string['auth_remove_user'] = 'Especificar qué hacer con la cuenta de usuario durante la sincronización interna masiva cuando el usuario se retira de una fuente externa. Sólo los usuarios suspendidos se restauran automáticamente si vuelven a aparecer en la fuente externa.';
+$string['auth_remove_user'] = 'Especifique qué hacer con una cuenta de usuario interna durante sincronización masiva cuando el usuario fue eliminado de la fuente externa. Únicamente los usuarios suspendidos son automáticamente revividos si ellos reaparecen en una fuente externa.';
 $string['auth_remove_user_key'] = 'Usuario externo eliminado';
-$string['auth_sync_script'] = 'Sincronización de cuenta de usuario';
+$string['auth_sync_script'] = 'Sincronización de la cuenta de usuario';
 $string['auth_sync_suspended'] = 'Cuando está habilitado, el atributo suspendido será utilizado para actualizar el estado de suspensión de la cuenta de usuario local.';
-$string['auth_sync_suspended_key'] = 'Sincronizar estado de suspensión de usuario local';
+$string['auth_sync_suspended_key'] = 'Sincronizar el estado de suspensión de usuario local';
 $string['auth_updatelocal'] = 'Actualizar datos locales';
 $string['auth_updatelocal_expl'] = '<p><b>Actualizar datos locales:</b> Si está activado, el campo debe ser actualizado (con identificación externa) cada vez que el usuario entra o se produce una sincronización de usuarios. Los campos a actualizar localmente deberían ser bloqueados.</p>';
+$string['auth_updatelocalfield'] = 'Actualizar local ({$a})';
 $string['auth_updateremote'] = 'Actualizar datos externos';
 $string['auth_updateremote_expl'] = '<p><b>Actualizar datos externos:</b> Si está activado, la identificación externa será actualizada cuando se actualice el registro del usuario. Los campos deberían estar desbloqueados para poder editarlos.</p>';
+$string['auth_updateremotefield'] = 'Actualizar externo ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Note:</b> La actualización de datos LDAP externos requiere que usted ajuste los valores \'binddn\' y \'bindpw\' a un usuario con privilegios de edición de todos los registros de usuario. Por el momento, esto no preserva los atributos multi-valor, y eliminará los valores extra durante la actualización. </p>';
 $string['auth_user_create'] = 'Habilitar creación por parte del usuario';
 $string['auth_user_creation'] = 'Los nuevos usuarios (anónimos) pueden crear cuentas de usuario sobre el código externo de identificación y confirmar vía correo electrónico. Si usted habilita esto, recuerde también configurar las opciones del módulo específico para la creación de usuario.';
 $string['auth_usernameexists'] = 'El nombre de usuario seleccionado ya existe. Por favor, elija otro.';
 $string['auto_add_remote_users'] = 'Añadir automáticamente usuarios remotos';
+$string['cannotmapfield'] = 'El campo "{$a->fieldname}" no puede ser mapeado porque su nombre corto "{$a->shortname}" es demasiado largo. Para permitir que sea mapeado, necesita reducir el nombre corto a  {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos del perfil del usuario</a>';
 $string['changepassword'] = 'Cambiar contraseña URL';
 $string['changepasswordhelp'] = 'URL de la página de recuperación de contraseña perdida, que será enviada a los usuarios en un correo electrónico. Tenga en cuenta que este ajuste no tendrá efecto si se indica una URL de contraseña perdida en los ajustes generales de autenticación.';
 $string['chooseauthmethod'] = 'Escoger un método de identificación:';
@@ -106,6 +111,7 @@ $string['forgottenpasswordurl'] = 'URL contraseña olvidada';
 $string['getanaudiocaptcha'] = 'Obtener un CAPTCHA de audio';
 $string['getanimagecaptcha'] = 'Obtener un CAPTCHA de imagen';
 $string['getanothercaptcha'] = 'Obtener otro CAPTCHA';
+$string['getrecaptchaapi'] = 'Para usar reCAPTCHA necesita obtener una clave API de <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Botón de entrada para invitados';
 $string['incorrectpleasetryagain'] = 'Incorrecto. Por favor, inténtelo de nuevo.';
 $string['infilefield'] = 'Campo requerido en el archivo';
@@ -140,6 +146,7 @@ Si no está seguro de qué palabras son, puede conseguir otro CAPTCHA, o un CAPT
 $string['security_question'] = 'Pregunta de seguridad';
 $string['selfregistration'] = 'Registrarse a sí mismo';
 $string['selfregistration_help'] = 'Escoja qué conector (\'plugin\') de identificación manejar cuando los usuarios se registren a sí mismos.';
+$string['settingmigrationmismatch'] = '¡Se detectó un mal pareado de valores al corregir los nombres de configuración de la extensión! La extensión para autenticación \'{$a->plugin}\' tenía el ajuste \'{$a->setting}\' configurado a \'{$a->legacy}\' debajo del nombre antiguo y tenía \'{$a->current}\' debajo del nombre actual. Este último valor ha sido ajustado como el válido, pero debería revisarlo y confirmar que es lo esperado.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Puede ocultar o mostrar el botón de entrada para invitados en la página de acceso.';
 $string['stdchangepassword'] = 'Utilizar Página de cambio de contraseña estándar';

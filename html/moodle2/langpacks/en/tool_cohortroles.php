@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_cohortroles', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_cohortroles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,14 @@ $string['noassignableroles'] = 'There are currently no roles that can be assigne
 $string['nocohortroleassignmentssaved'] = 'No cohort role assignments were saved.';
 $string['onecohortroleassignmentsaved'] = 'One cohort role assignment was saved.';
 $string['pluginname'] = 'Cohort roles management';
+$string['privacy:metadata:tool_cohortroles'] = 'The Cohort roles management plugin stores user cohort role mappings.';
+$string['privacy:metadata:tool_cohortroles:cohortid'] = 'The ID of the cohort.';
+$string['privacy:metadata:tool_cohortroles:id'] = 'The ID of the cohort role mapping record.';
+$string['privacy:metadata:tool_cohortroles:roleid'] = 'The ID of the role.';
+$string['privacy:metadata:tool_cohortroles:timecreated'] = 'The date/time of when the cohort  role mapping was created.';
+$string['privacy:metadata:tool_cohortroles:timemodified'] = 'The date/time of when the cohort role mapping was modified.';
+$string['privacy:metadata:tool_cohortroles:userid'] = 'The ID of the user.';
+$string['privacy:metadata:tool_cohortroles:usermodified'] = 'The ID of the user who last modified the cohort role mapping.';
 $string['removecohortroleassignment'] = 'Remove cohort role assignment';
 $string['removecohortroleassignmentconfirm'] = 'Are you sure you want to remove this cohort role assignment? This role will be removed for this user in all other user contexts.';
 $string['selectcohorts'] = 'Select cohorts';

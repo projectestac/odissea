@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_monitor', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -81,6 +81,23 @@ $string['monitor:managetool'] = 'Activer/désactiver la surveillance d\'événem
 $string['monitor:subscribe'] = 'S\'abonner à des règles de surveillance d\'événements';
 $string['norules'] = 'Il n\'y a pas de règle de surveillance d\'événement.';
 $string['pluginname'] = 'Surveillance d\'événements';
+$string['privacy:createdrules'] = 'Règles de surveillance d\'événements que j\'ai créées';
+$string['privacy:metadata:description'] = 'Description de la règle';
+$string['privacy:metadata:eventname'] = 'Nom complet de l\'événement';
+$string['privacy:metadata:frequency'] = 'Fréquence des notifications';
+$string['privacy:metadata:historysummary'] = 'Enregistre l\'historique des notifications envoyées';
+$string['privacy:metadata:inactivedate'] = 'Durée en jour après laquelle un abonnement inactif sera supprimé totalement';
+$string['privacy:metadata:lastnotificationsent'] = 'Date de l\'envoi de la dernière notification pour cet abonnement.';
+$string['privacy:metadata:messagesummary'] = 'Les notifications sont envoyées au système de messagerie.';
+$string['privacy:metadata:name'] = 'Nom de la règle';
+$string['privacy:metadata:plugin'] = 'Nom de développement du plugin';
+$string['privacy:metadata:rulessummary'] = 'Ceci enregistre les règles de surveillance.';
+$string['privacy:metadata:subscriptionssummary'] = 'Enregistre les abonnements des utilisateurs aux diverses règles';
+$string['privacy:metadata:template'] = 'Modèle de message';
+$string['privacy:metadata:timecreatedrule'] = 'Quand la règle a été créée';
+$string['privacy:metadata:timecreatedsub'] = 'Quand l\'abonnement a été créé';
+$string['privacy:metadata:timemodifiedrule'] = 'Quand cette règle a été modifiée pour la dernière fois';
+$string['privacy:metadata:timesent'] = 'Quand le message a été envoyé';
 $string['processevents'] = 'Traiter les événements';
 $string['ruleareyousure'] = 'Voulez-vous vraiment supprimer la règle « {$a} » ?';
 $string['ruleareyousureextra'] = 'Les abonnements à cette règle seront également supprimés. Il y a actuellement {$a} abonnement(s).';

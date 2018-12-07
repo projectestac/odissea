@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_radiobutton', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_radiobutton', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_radiobutton
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo Pulsante Radio';
 $string['pluginname'] = 'Pulsante radio';
+$string['privacy:metadata'] = 'Il plugin campo "Pulsante radio" non memorizza dati personali, utilizza tabelle definite in mod_data.';

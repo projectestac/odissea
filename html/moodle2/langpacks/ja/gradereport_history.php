@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_history', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_history
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,7 @@ $string['history:view'] = '評定履歴を表示する';
 $string['loadmoreusers'] = 'さらにユーザを読み込む ...';
 $string['pluginname'] = '評定履歴';
 $string['preferences'] = '評定履歴プリファレンス';
+$string['privacy:metadata'] = '評定履歴レポートは他の場所に保存されたデータのみ表示します。';
 $string['revisedonly'] = '修正済み評定のみ';
 $string['revisedonly_help'] = '修正された評定のみ表示されます。
 

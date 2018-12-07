@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcache', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['prefix_help'] = 'この接頭辞はmemcacheサーバで使用される�
 * このサーバに1つのインスタンスのみ存在する場合、あなたはこの値をデフォルトのままにすることができます。
 * キー長の制限のため、半角5文字の最大長が許可されています。';
 $string['prefixinvalid'] = '無効な接頭辞です。あなたは「a-z A-Z 0-9-_」のみ使用することができます。';
+$string['privacy:metadata:memcache'] = 'Memcacheキャッシュストアプラグインはキャッシング機能の一部として短時間だけデータを保存します。このデータはデータが定期的に削除されるMemcacheサーバに保存されます。';
+$string['privacy:metadata:memcache:data'] = 'キャッシュに保存された様々なデータです。';
 $string['servers'] = 'サーバ';
 $string['serversclusterinvalid'] = 'クラスタが有効にされている場合、厳密に1台のサーバを必要とします。';
 $string['servers_help'] = 'ここではmemcacheアダプタに使用されるサーバを設定します。
@@ -52,7 +54,7 @@ servername:ポート:ウェイト値
 </pre>
 
 「クラスタサーバを有効にする」が有効にされた場合、ここに1台のサーバのみ表示される必要があります。通常、これは「127.0.0.1」または「localhost」のようにローカルマシンを解決する名称となります。';
-$string['sessionhandlerconflict'] = '警告: memcacheインスタンス ({$a}) はセッションとして同じmemcachedサーバを使用するよう設定されています。すべてのキャッシュを削除することにより、セッションも削除されることになります。';
+$string['sessionhandlerconflict'] = '警告: memcacheインスタンス ({$a}) はセッションとして同じmemcachedサーバを使用するよう設定されています。すべてのキャッシュを削除することによりセッションも削除されることになります。';
 $string['setservers'] = 'サーバを設定する';
 $string['setservers_help'] = 'これはデータが修正された場合に更新されるサーバの一覧です。通常、プール内サーバの完全修飾名となります。仮に異なるホスト名であったとしても、上記に一覧表示されている「サーバ」を含む必要があります。サーバはサーバアドレスおよび任意でポートを1行に1台定義します。
 ポートが提供されない場合、デフォルトポート (11211) が使用されます。

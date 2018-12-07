@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'コマンド:';
 $string['comment'] = 'コメント';
 $string['commentcolour'] = 'コメント色';
 $string['commentcontextmenu'] = 'コメントコンテクストメニュー';
+$string['commentindex'] = 'コメントインデックス';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'ページ {$a} を保存できませんでした。';
 $string['currentstamp'] = 'スタンプ';
 $string['deleteannotation'] = 'アノテーションを削除する';
@@ -51,6 +53,7 @@ $string['enabled'] = 'PDFに注釈をつける';
 $string['enabled_help'] = 'この設定を有効にした場合、教師は作成時に注釈付きのPDFを作成することができます。これにより、教師はコメント、スケッチおよびスタンプを直接学生の課題のトップに追加することができます。注釈はブラウザ内で作成します。また、別途ソフトウェアを必要としません。';
 $string['errorgenerateimage'] = 'Ghostscriptイメージ生成中にエラーが発生しました。デバッグ情報: {$a}';
 $string['errorpdfpage'] = 'このページの生成中にエラーが発生しました。';
+$string['expcolcomments'] = 'すべてのコメントを展開/折りたたむ';
 $string['filter'] = 'コメントをフィルタする ...';
 $string['generatefeedback'] = 'フィードバックPDFを生成する';
 $string['generatingpdf'] = 'PDF生成中 ...';
@@ -69,10 +72,16 @@ $string['oval'] = '楕円';
 $string['pagenumber'] = 'ページ {$a}';
 $string['pagexofy'] = 'ページ {$a->page} / {$a->total}';
 $string['pathtogspathdesc'] = 'PDFに注釈を付けるには「 {$a} 」にGhostscriptのパスを設定する必要があることに留意してください。';
-$string['pathtounoconvpathdesc'] = 'PDFに注釈を付けるには「 {$a} 」にunoconvのパスを設定する必要があることに留意してください。';
 $string['pen'] = 'ペン';
 $string['pluginname'] = 'PDF注釈';
 $string['preparesubmissionsforannotation'] = 'アノテーションのために提出を準備する';
+$string['privacy:metadata:colourpurpose'] = 'コメントまたはアノテーションの色です。';
+$string['privacy:metadata:conversionpurpose'] = 'アノテーションのためにファイルはPDFに変換されます。';
+$string['privacy:metadata:filepurpose'] = 'ユーザのフィードバックとしてアノテーションが付けられたPDFが保存されます。';
+$string['privacy:metadata:rawtextpurpose'] = 'クイックデータの生テキストを保存します。';
+$string['privacy:metadata:tablepurpose'] = '教師が指定したクイックリストコメントが保存されます。';
+$string['privacy:metadata:userid'] = 'ユーザのIDです。';
+$string['privacy:path'] = 'PDFフィードバックです。';
 $string['rectangle'] = '長方形';
 $string['red'] = '赤';
 $string['result'] = '結果:';
@@ -89,14 +98,6 @@ $string['test_isdir'] = 'Ghostscriptのパスはフォルダを指していま�
 $string['test_notestfile'] = 'テストPDFがありません。';
 $string['test_notexecutable'] = 'Ghostscriptは実行できないファイルを指しています。';
 $string['test_ok'] = 'Ghostscriptのパスに問題はないようですが - 下のイメージ内にメッセージが表示されることを確認してください。';
-$string['test_unoconv'] = 'unoconvパスをテストする';
-$string['test_unoconvdoesnotexist'] = 'unoconvパスはunoconvプログラムを指していません。あなたのパス設定を確認してください。';
-$string['test_unoconvdownload'] = '変換済みPDFテストファイルをダウンロードします。';
-$string['test_unoconvisdir'] = 'unoconvパスはフォルダを指しています。あなたが指定するパス内にunoconvプログラムを含んでください。';
-$string['test_unoconvnotestfile'] = 'PDFに変換されるテストドキュメントがありません。';
-$string['test_unoconvnotexecutable'] = 'unoconvパスが実行可能ではないファイルを指しています。';
-$string['test_unoconvok'] = 'unoconvパスは適切に設定されているようです。';
-$string['test_unoconvversionnotsupported'] = 'あなたがインストールしているunoconvのバージョンはサポートされません。Moodle課題評定機能ではバージョン0.7またはそれ以上を必要とします。';
 $string['tool'] = 'ツール';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = '注釈付きPDFを表示する ...';

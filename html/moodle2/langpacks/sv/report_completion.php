@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_completion', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   report_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completiondate'] = 'Datum för fullföljande';
-$string['completion:view'] = 'Visa rapport om fullföljande av kurs';
-$string['page-report-completion-index'] = 'Rapport om fullföljande av kurs';
+$string['completion:view'] = 'Visa rapport om fullföljning av kurs';
+$string['page-report-completion-index'] = 'Rapport kursfullföljning';
 $string['page-report-completion-user'] = 'Rapport över användares fullföljande av kurs';
 $string['page-report-completion-x'] = 'Vilken fullföljanderapport somhelst';
-$string['pluginname'] = 'Fullföljande av kurs';
+$string['pluginname'] = 'Fullföljning av kurs';

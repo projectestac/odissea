@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -87,9 +87,11 @@ $string['completiondiscussions'] = 'L\'estudiant ha d\'obrir debats:';
 $string['completiondiscussionsgroup'] = 'Requereix obrir debats';
 $string['completiondiscussionshelp'] = 'S\'han de tancar els debats';
 $string['completionposts'] = 'L\'estudiant ha d\'obrir debats o participar-hi:';
+$string['completionpostsdesc'] = 'L\'estudiant ha d\'obrir debats o participar-hi almenys amb {$a} intervencions';
 $string['completionpostsgroup'] = 'Requereix contribucions';
 $string['completionpostshelp'] = 'Cal que acabeu els debats o les respostes.';
 $string['completionreplies'] = 'L\'estudiant ha d\'enviar respostes als debats:';
+$string['completionrepliesdesc'] = 'L\'estudiant ha de participar-hi almenys amb {$a} respostes';
 $string['completionrepliesgroup'] = 'Requereix respostes';
 $string['completionreplieshelp'] = 'S\'han de finalitzar les respostes';
 $string['configcleanreadtime'] = 'L\'hora del dia per a netejar missatges vells de la taula de missatges llegits.';
@@ -291,6 +293,8 @@ $string['lockdiscussionafter_help'] = 'Els debats es poden bloquejar de manera a
 Els usuaris amb la capacitat de respondre als debats bloquejats poden desbloquejar-los responent-hi.';
 $string['longpost'] = 'Missatge llarg';
 $string['mailnow'] = 'Envia notificacions dels missatges al fòrum sense període de retard per editar';
+$string['managesubscriptionsoff'] = 'Finalitza la gestió de les subscripcions';
+$string['managesubscriptionson'] = 'Gestiona les subscripcions';
 $string['manydiscussions'] = 'Debats per pàgina';
 $string['markalldread'] = 'Marca com a llegits tots els missatges d\'aquest debat.';
 $string['markallread'] = 'Marca com a llegits tots els missatges d\'aquest fòrum.';
@@ -435,6 +439,7 @@ $string['qandaforum'] = 'Fòrum de preguntes i respostes';
 $string['qandanotify'] = 'Aquest és un fòrum de preguntes i respostes. Per tal de poder veure les respostes d\'altres a aquestes preguntes, heu d\'enviar primer la vostra resposta.';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Mostra la resta d\'aquest tema';
+$string['removeallforumtags'] = 'Suprimeix totes les etiquetes del fòrum';
 $string['replies'] = 'Respostes';
 $string['repliesmany'] = '{$a} respostes fins ara';
 $string['repliesone'] = '{$a} resposta fins ara';
@@ -467,7 +472,7 @@ $string['rsstype_help'] = '<p>Aquesta opció us permet habilitar l\'RSS en aques
 <li><b>Missatges:</b> l\'RSS inclourà cada missatge nou que s\'enviï al fòrum.</li>
 </ul>';
 $string['search'] = 'Cerca';
-$string['search:activity'] = 'Fòrum - informació d\'activitat';
+$string['search:activity'] = 'Fòrum: informació de l\'activitat';
 $string['searchdatefrom'] = 'Missatges posteriors a aquesta data';
 $string['searchdateto'] = 'Missatges anteriors a aquesta data';
 $string['searchforumintro'] = 'Introduïu els termes de la cerca en els camps següents:';
@@ -479,6 +484,7 @@ $string['searchphrase'] = 'Aquesta frase exacta ha d\'aparèixer al missatge';
 $string['search:post'] = 'Fòrum - missatges';
 $string['searchresults'] = 'Resultats de la cerca';
 $string['searchsubject'] = 'Aquests mots haurien de ser a l\'assumpte';
+$string['searchtags'] = 'S\'ha etiquetat com a';
 $string['searchuser'] = 'Aquest nom hauria de coincidir amb l\'autor';
 $string['searchuserid'] = 'L\'ID de Moodle de l\'autor';
 $string['searchwhichforums'] = 'Trieu quins fòrums voleu cercar';
@@ -498,7 +504,6 @@ $string['subscribediscussion'] = 'Subscriu-me a aquest debat';
 $string['subscribeenrolledonly'] = 'Només els usuaris inscrits al curs es poden subscriure al fòrum i rebre els missatges per correu electrònic.';
 $string['subscribenone'] = 'Cancel·la totes les subscripcions a aquest fòrum';
 $string['subscribers'] = 'Subscriptors';
-$string['subscribersto'] = 'Subscriptors de «{$a->name}»';
 $string['subscriberstowithcount'] = 'Subscriptors de «{$a->name}» ({$a->count})';
 $string['subscribestart'] = 'Envia\'m notificacions dels missatges nous d\'aquest fòrum';
 $string['subscribestop'] = 'No vull rebre notificacions dels nous missatges d\'aquest fòrum';
@@ -521,6 +526,8 @@ Hi ha 4 modalitats de subscripció:
 Nota: Qualssevol canvis en la modalitat de subscripció afecten només els usuaris que s\'inscriguin al curs en el futur i els usuaris no existents.';
 $string['subscriptionoptional'] = 'Subscripció voluntària';
 $string['subscriptions'] = 'Subscripcions';
+$string['tagarea_forum_posts'] = 'Missatges del fòrum';
+$string['tagsdeleted'] = 'Les etiquetes del fòrum s\'han suprimit';
 $string['thisforumisthrottled'] = 'Aquest fòrum té limitat el nombre de missatges que podeu enviar-hi en un període de temps determinat. Actualment el límit són {$a->blockafter} missatges en {$a->blockperiod}';
 $string['timedhidden'] = 'Estat actual: Amagat per als estudiants';
 $string['timedposts'] = 'Missatges programats';
@@ -547,7 +554,7 @@ $string['unsubscribeall'] = 'Cancel·la la meva subscripció a tots els fòrums'
 $string['unsubscribeallconfirm'] = 'Us heu subscrit a {$a->forums} fòrums i a {$a->discussions} debats. Segur que voleu cancel·lar la vostra subscripció a tots els fòrums i debats, i inhabilitar la subscripció automàtica?';
 $string['unsubscribeallconfirmdiscussions'] = 'Us heu subscrit a {$a->discussions} debats. Segur que voleu cancel·lar la vostra subscripció a tots els debats i inhabilitar-hi la subscripció automàtica?';
 $string['unsubscribeallconfirmforums'] = 'Us heu subscrit a {$a->forums} fòrums. Segur que voleu cancel·lar la vostra subscripció a tots els fòrums i inhabilitar-hi la subscripció automàtica?';
-$string['unsubscribealldone'] = 'S\'han cancel·lat totes les vostres subscripcions a fòrums, però encara rebreu notificacions dels fòrums que imposin la subscripció. Per a gestionar les notificacions del fòrum aneu a la Missatgeria de la Configuració del meu perfil, al bloc Configuració.';
+$string['unsubscribealldone'] = 'S\'han cancel·lat totes les vostres subscripcions a fòrums, però encara rebreu notificacions dels fòrums que imposin la subscripció. Per gestionar les notificacions del fòrum, aneu a la Missatgeria de la Configuració del meu perfil, al bloc Configuració.';
 $string['unsubscribeallempty'] = 'No us heu subscrit a cap fòrum.
 Per desactivar totes les notificacions del servidor, aneu a la Missatgeria de la Configuració del meu perfil, al bloc Configuració.';
 $string['unsubscribed'] = 'La vostra subscripció ha estat cancel·lada';

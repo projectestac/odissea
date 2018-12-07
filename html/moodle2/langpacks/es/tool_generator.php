@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_generator', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_generator
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['error_nonexistingcourse'] = 'El curso especificado no existe';
 $string['error_nopageinstances'] = 'El curso seleccionado no contiene instancias de página';
 $string['error_notdebugging'] = 'No disponible en este servidor porque la depuración no está configurada a DESARROLLADOR';
 $string['fullname'] = 'Curso de test: {$a->size}';
+$string['maketestcourse'] = 'Hacer curso de prueba';
 $string['notenoughusers'] = 'El curso seleccionado no tiene suficientes usuarios';
 $string['pluginname'] = 'Generador de cursos aleatorio';
 $string['progress_checkaccounts'] = 'Comprobando cuentas de usuario ({$a})';

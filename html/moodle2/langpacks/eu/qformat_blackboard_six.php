@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_blackboard_six', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_blackboard_six
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,5 @@ $string['importnotext'] = 'XML fitxategian galderaren testua falta da';
 $string['notenoughtsubans'] = 'Ezin izan da {$a} elkartu motako galdera inportatu, mota honetako galderek gutxienez bi galdera eta hiru erantzun izan behar dituztelako.';
 $string['pluginname'] = 'Blackboard';
 $string['pluginname_help'] = 'Blackboard formatuak Blackboard-eko edozein esportazio formatutan gordetako galderak inportatzeko aukera ematen du dat edo zip fitxategien bitartez. Zip fitxategien kasuan irudien inportazioa onartzen da.';
+$string['privacy:metadata'] = 'Blackboard galdera-formatu pluginak ez du datu pertsonalik biltzen.';
 $string['unhandledpresblock'] = 'Kontrolatu gabeko aurkezpen blokea';

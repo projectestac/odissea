@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'badges', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -363,6 +363,34 @@ $string['personaconnection_help'] = 'O Persona é um sistema que permite que sej
 Para mais informações sobre o Persona visite <a href="https://login.persona.org/about">https://login.persona.org/about</a> .';
 $string['potentialrecipients'] = 'Potenciais destinatários da Medalha';
 $string['preferences'] = 'Preferências das Medalhas';
+$string['privacy:metadata:backpack'] = 'O registo das medalhas de utilizador';
+$string['privacy:metadata:backpack:backpackuid'] = 'O identificador único da medalha';
+$string['privacy:metadata:backpack:backpackurl'] = 'O URL de medalha';
+$string['privacy:metadata:backpack:email'] = 'O email associado com a backpack';
+$string['privacy:metadata:backpack:userid'] = 'O ID do utilizador de quem é a backpack';
+$string['privacy:metadata:badge'] = 'Uma coleção de medalhas';
+$string['privacy:metadata:badge:timecreated'] = 'A data de quando a medalha foi criada';
+$string['privacy:metadata:badge:timemodified'] = 'A data de quando a medalha foi modificada pela última vez';
+$string['privacy:metadata:badge:usercreated'] = 'O ID do utilizador que criou a medalha';
+$string['privacy:metadata:badge:usermodified'] = 'O ID do utilizador que modificou a medalha';
+$string['privacy:metadata:criteriamet'] = 'Uma coleção de critérios que foram alcançados';
+$string['privacy:metadata:criteriamet:datemet'] = 'A data de quando os critérios foram alcançados';
+$string['privacy:metadata:criteriamet:userid'] = 'O ID do utilizador que alcançou os critérios';
+$string['privacy:metadata:external:backpacks'] = 'Informação partilhada quando os utilizadores submetem as suas medalhas numa backpack externa';
+$string['privacy:metadata:external:backpacks:badge'] = 'O nome da medalha';
+$string['privacy:metadata:external:backpacks:description'] = 'A descrição da medalha';
+$string['privacy:metadata:external:backpacks:image'] = 'A imagem da medalha';
+$string['privacy:metadata:external:backpacks:issuer'] = 'Alguma informação sobre o problema';
+$string['privacy:metadata:external:backpacks:url'] = 'O URL Moodle onde informação sobre o problema da medalha pode ser visto';
+$string['privacy:metadata:issued'] = 'O registo de medalhas condecoradas';
+$string['privacy:metadata:issued:dateexpire'] = 'A data de quando a condecoração expira';
+$string['privacy:metadata:issued:dateissued'] = 'A data da condecoração';
+$string['privacy:metadata:issued:userid'] = 'O ID do utilizador que foi condecorado com a medalha';
+$string['privacy:metadata:manualaward'] = 'O registo de condecorações manuais';
+$string['privacy:metadata:manualaward:datemet'] = 'A data de quando o utilizador foi condecorado com a medalha';
+$string['privacy:metadata:manualaward:issuerid'] = 'O ID do utilizador condecorado com a medalha';
+$string['privacy:metadata:manualaward:issuerrole'] = 'O papel do utilizador condecorado com a medalha';
+$string['privacy:metadata:manualaward:recipientid'] = 'O ID do utilizador que foi condecorado manualmente com a medalha';
 $string['recipientdetails'] = 'Detalhes do condecorado';
 $string['recipientidentificationproblem'] = 'Não é possível encontrar um condecorado com esta Medalha entre os utilizadores existentes.';
 $string['recipients'] = 'Condecorados com a Medalha';

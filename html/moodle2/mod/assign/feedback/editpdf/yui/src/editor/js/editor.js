@@ -81,6 +81,15 @@ EDITOR.prototype = {
     pages: [],
 
     /**
+     * The reported status of the document.
+     *
+     * @property documentstatus
+     * @type int
+     * @protected
+     */
+    documentstatus: 0,
+
+    /**
      * The yui node for the loading icon.
      *
      * @property loadingicon
@@ -208,6 +217,15 @@ EDITOR.prototype = {
      * @public
      */
     editingcomment: false,
+
+    /**
+     * Should inactive comments be collapsed?
+     *
+     * @property collapsecomments
+     * @type Boolean
+     * @public
+     */
+    collapsecomments: true,
 
     /**
      * Called during the initialisation process of the object.
@@ -347,7 +365,7 @@ EDITOR.prototype = {
             this.refresh_button_state();
         }
 
-        this.load_all_pages();
+        this.start_generation();
     },
 
     /**
@@ -389,7 +407,7 @@ EDITOR.prototype = {
                 this.refresh_button_state();
             }
 
-            this.load_all_pages();
+            this.start_generation();
             drawingcanvas.on('windowresize', this.resize, this);
 
             resize = false;
@@ -406,21 +424,31 @@ EDITOR.prototype = {
 
     /**
      * Called to load the information and annotations for all pages.
-     * @method load_all_pages
+     *
+     * @method start_generation
      */
-    load_all_pages: function() {
-        var ajaxurl = AJAXBASE,
-            config,
-            checkconversionstatus,
-            ajax_error_total;
+    start_generation: function() {
+        this.poll_document_conversion_status();
+    },
 
-        config = {
+    /**
+     * Poll the current document conversion status and start the next step
+     * in the process.
+     *
+     * @method poll_document_conversion_status
+     */
+    poll_document_conversion_status: function() {
+        if (this.get('destroyed')) {
+            return;
+        }
+
+        Y.io(AJAXBASE, {
             method: 'get',
             context: this,
             sync: false,
             data: {
                 sesskey: M.cfg.sesskey,
-                action: 'loadallpages',
+                action: 'pollconversions',
                 userid: this.get('userid'),
                 attemptnumber: this.get('attemptnumber'),
                 assignmentid: this.get('assignmentid'),
@@ -428,109 +456,106 @@ EDITOR.prototype = {
             },
             on: {
                 success: function(tid, response) {
-                    this.all_pages_loaded(response.responseText);
+                    var data = this.handle_response_data(response),
+                        poll = false;
+                    if (data) {
+                        this.documentstatus = data.status;
+                        if (data.status === 0) {
+                            // The combined document is still waiting for input to be ready.
+                            poll = true;
+
+                        } else if (data.status === 1) {
+                            // The combine document is ready for conversion into a single PDF.
+                            poll = true;
+
+                        } else if (data.status === 2 || data.status === -1) {
+                            // The combined PDF is ready.
+                            // We now know the page count and can convert it to a set of images.
+                            this.pagecount = data.pagecount;
+
+                            if (data.pageready == data.pagecount) {
+                                this.prepare_pages_for_display(data);
+                            } else {
+                                // Some pages are not ready yet.
+                                // Note: We use a different polling process here which does not block.
+                                this.update_page_load_progress();
+
+                                // Fetch the images for the combined document.
+                                this.start_document_to_image_conversion();
+                            }
+                        }
+
+                        if (poll) {
+                            // Check again in 1 second.
+                            Y.later(1000, this, this.poll_document_conversion_status);
+                        }
+                    }
                 },
                 failure: function(tid, response) {
                     return new M.core.exception(response.responseText);
                 }
             }
-        };
+        });
+    },
 
-        Y.io(ajaxurl, config);
-
-        // If pages are not loaded, check PDF conversion status for the progress bar.
-        if (this.pagecount <= 0) {
-            checkconversionstatus = {
-                method: 'get',
-                context: this,
-                sync: false,
-                data: {
-                    sesskey: M.cfg.sesskey,
-                    action: 'conversionstatus',
-                    userid: this.get('userid'),
-                    attemptnumber: this.get('attemptnumber'),
-                    assignmentid: this.get('assignmentid')
-                },
-                on: {
-                    success: function(tid, response) {
-                        ajax_error_total = 0;
-                        if (this.pagecount === 0) {
-                            var pagetotal = this.get('pagetotal');
-
-                            // Update the progress bar.
-                            var progressbarcontainer = this.get_dialogue_element(SELECTOR.PROGRESSBARCONTAINER);
-                            var progressbar = progressbarcontainer.one('.bar');
-                            if (progressbar) {
-                                // Calculate progress.
-                                var progress = (response.response / pagetotal) * 100;
-                                progressbar.setStyle('width', progress + '%');
-                                progressbarcontainer.setAttribute('aria-valuenow', progress);
-                            }
-
-                            // New ajax request delayed of a second.
-                            M.util.js_pending('checkconversionstatus');
-                            Y.later(1000, this, function() {
-                                M.util.js_complete('checkconversionstatus');
-                                Y.io(AJAXBASEPROGRESS, checkconversionstatus);
-                            });
-                        }
-                    },
-                    failure: function(tid, response) {
-                        ajax_error_total = ajax_error_total + 1;
-                        // We only continue on error if the all pages were not generated,
-                        // and if the ajax call did not produce 5 errors in the row.
-                        if (this.pagecount === 0 && ajax_error_total < 5) {
-                            M.util.js_pending('checkconversionstatus');
-                            Y.later(1000, this, function() {
-                                M.util.js_complete('checkconversionstatus');
-                                Y.io(AJAXBASEPROGRESS, checkconversionstatus);
-                            });
-                        }
-                        return new M.core.exception(response.responseText);
-                    }
-                }
-            };
-            // We start the AJAX "generated page total number" call a second later to give a chance to
-            // the AJAX "combined pdf generation" call to clean the previous submission images.
-            M.util.js_pending('checkconversionstatus');
-            Y.later(1000, this, function() {
-                ajax_error_total = 0;
-                M.util.js_complete('checkconversionstatus');
-                Y.io(AJAXBASEPROGRESS, checkconversionstatus);
-            });
+    /**
+     * Spwan the PDF to Image conversion on the server.
+     *
+     * @method get_images_for_documents
+     */
+    start_document_to_image_conversion: function() {
+        if (this.get('destroyed')) {
+            return;
         }
+        Y.io(AJAXBASE, {
+            method: 'get',
+            context: this,
+            sync: false,
+            data: {
+                sesskey: M.cfg.sesskey,
+                action: 'pollconversions',
+                userid: this.get('userid'),
+                attemptnumber: this.get('attemptnumber'),
+                assignmentid: this.get('assignmentid'),
+                readonly: this.get('readonly') ? 1 : 0
+            },
+            on: {
+                success: function(tid, response) {
+                    var data = this.handle_response_data(response);
+                    if (data) {
+                        this.documentstatus = data.status;
+                        if (data.status === 2) {
+                            // The pages are ready. Add all of the annotations to them.
+                            this.prepare_pages_for_display(data);
+                        }
+                    }
+                },
+                failure: function(tid, response) {
+                    return new M.core.exception(response.responseText);
+                }
+            }
+        });
     },
 
     /**
      * The info about all pages in the pdf has been returned.
+     *
      * @param string The ajax response as text.
      * @protected
-     * @method all_pages_loaded
+     * @method prepare_pages_for_display
      */
-    all_pages_loaded: function(responsetext) {
-        var data, i, j, comment, error;
-        try {
-            data = Y.JSON.parse(responsetext);
-            if (data.error || !data.pagecount) {
-                if (this.dialogue) {
-                    this.dialogue.hide();
-                }
-                // Display alert dialogue.
-                error = new M.core.alert({message: M.util.get_string('cannotopenpdf', 'assignfeedback_editpdf')});
-                error.show();
-                return;
-            }
-        } catch (e) {
+    prepare_pages_for_display: function(data) {
+        var i, j, comment, error;
+        if (!data.pagecount) {
             if (this.dialogue) {
                 this.dialogue.hide();
             }
             // Display alert dialogue.
-            error = new M.core.alert({title: M.util.get_string('cannotopenpdf', 'assignfeedback_editpdf')});
+            error = new M.core.alert({message: M.util.get_string('cannotopenpdf', 'assignfeedback_editpdf')});
             error.show();
             return;
         }
 
-        this.pagecount = data.pagecount;
         this.pages = data.pages;
 
         for (i = 0; i < this.pages.length; i++) {
@@ -558,6 +583,128 @@ EDITOR.prototype = {
         this.setup_navigation();
         this.setup_toolbar();
         this.change_page();
+    },
+
+    /**
+     * Fetch the page images.
+     *
+     * @method update_page_load_progress
+     */
+    update_page_load_progress: function() {
+        if (this.get('destroyed')) {
+            return;
+        }
+        var checkconversionstatus,
+            ajax_error_total = 0,
+            progressbar = this.get_dialogue_element(SELECTOR.PROGRESSBARCONTAINER + ' .bar');
+
+        if (!progressbar) {
+            return;
+        }
+
+        // If pages are not loaded, check PDF conversion status for the progress bar.
+        checkconversionstatus = {
+            method: 'get',
+            context: this,
+            sync: false,
+            data: {
+                sesskey: M.cfg.sesskey,
+                action: 'conversionstatus',
+                userid: this.get('userid'),
+                attemptnumber: this.get('attemptnumber'),
+                assignmentid: this.get('assignmentid')
+            },
+            on: {
+                success: function(tid, response) {
+                    if (this.get('destroyed')) {
+                        return;
+                    }
+                    ajax_error_total = 0;
+
+                    var progress = 0;
+                    var progressbar = this.get_dialogue_element(SELECTOR.PROGRESSBARCONTAINER + ' .bar');
+                    if (progressbar) {
+                        // Calculate progress.
+                        progress = (response.response / this.pagecount) * 100;
+                        progressbar.setStyle('width', progress + '%');
+                        progressbar.ancestor(SELECTOR.PROGRESSBARCONTAINER).setAttribute('aria-valuenow', progress);
+
+                        if (progress < 100) {
+                            // Keep polling until all pages are generated.
+                            M.util.js_pending('checkconversionstatus');
+                            Y.later(1000, this, function() {
+                                M.util.js_complete('checkconversionstatus');
+                                Y.io(AJAXBASEPROGRESS, checkconversionstatus);
+                            });
+                        }
+                    }
+                },
+                failure: function(tid, response) {
+                    if (this.get('destroyed')) {
+                        return;
+                    }
+                    ajax_error_total = ajax_error_total + 1;
+                    // We only continue on error if the all pages were not generated,
+                    // and if the ajax call did not produce 5 errors in the row.
+                    if (this.pagecount === 0 && ajax_error_total < 5) {
+                        M.util.js_pending('checkconversionstatus');
+                        Y.later(1000, this, function() {
+                            M.util.js_complete('checkconversionstatus');
+                            Y.io(AJAXBASEPROGRESS, checkconversionstatus);
+                        });
+                    }
+                    return new M.core.exception(response.responseText);
+                }
+            }
+        };
+        // We start the AJAX "generated page total number" call a second later to give a chance to
+        // the AJAX "combined pdf generation" call to clean the previous submission images.
+        M.util.js_pending('checkconversionstatus');
+        Y.later(1000, this, function() {
+            ajax_error_total = 0;
+            M.util.js_complete('checkconversionstatus');
+            Y.io(AJAXBASEPROGRESS, checkconversionstatus);
+        });
+    },
+
+    /**
+     * Handle response data.
+     *
+     * @method  handle_response_data
+     * @param   {object} response
+     * @return  {object}
+     */
+    handle_response_data: function(response) {
+        if (this.get('destroyed')) {
+            return;
+        }
+        var data;
+        try {
+            data = Y.JSON.parse(response.responseText);
+            if (data.error) {
+                if (this.dialogue) {
+                    this.dialogue.hide();
+                }
+
+                new M.core.alert({
+                    message: M.util.get_string('cannotopenpdf', 'assignfeedback_editpdf'),
+                    visible: true
+                });
+            } else {
+                return data;
+            }
+        } catch (e) {
+            if (this.dialogue) {
+                this.dialogue.hide();
+            }
+
+            new M.core.alert({
+                title: M.util.get_string('cannotopenpdf', 'assignfeedback_editpdf'),
+                visible: true
+            });
+        }
+
+        return;
     },
 
     /**
@@ -590,6 +737,7 @@ EDITOR.prototype = {
             commentcolourbutton,
             annotationcolourbutton,
             searchcommentsbutton,
+            expcolcommentsbutton,
             currentstampbutton,
             stampfiles,
             picker,
@@ -599,9 +747,15 @@ EDITOR.prototype = {
         searchcommentsbutton.on('click', this.open_search_comments, this);
         searchcommentsbutton.on('key', this.open_search_comments, 'down:13', this);
 
+        expcolcommentsbutton = this.get_dialogue_element(SELECTOR.EXPCOLCOMMENTSBUTTON);
+        expcolcommentsbutton.on('click', this.expandCollapseComments, this);
+        expcolcommentsbutton.on('key', this.expandCollapseComments, 'down:13', this);
+
         if (this.get('readonly')) {
             return;
         }
+        this.disable_touch_scroll();
+
         // Setup the tool buttons.
         Y.each(TOOLSELECTOR, function(selector, tool) {
             toolnode = this.get_dialogue_element(selector);
@@ -695,6 +849,7 @@ EDITOR.prototype = {
         if (tool !== "comment" && tool !== "select" && tool !== "drag" && tool !== "stamp") {
             this.lastannotationtool = tool;
         }
+
         this.refresh_button_state();
     },
 
@@ -781,7 +936,6 @@ EDITOR.prototype = {
      * @method edit_start
      */
     edit_start: function(e) {
-        e.preventDefault();
         var canvas = this.get_dialogue_element(SELECTOR.DRAWINGCANVAS),
             offset = canvas.getXY(),
             scrolltop = canvas.get('docScrollY'),
@@ -1008,6 +1162,9 @@ EDITOR.prototype = {
      * @method save_current_page
      */
     save_current_page: function() {
+        if (this.get('destroyed')) {
+            return;
+        }
         var ajaxurl = AJAXBASE,
             config;
 
@@ -1053,7 +1210,6 @@ EDITOR.prototype = {
         };
 
         Y.io(ajaxurl, config);
-
     },
 
     /**
@@ -1072,6 +1228,24 @@ EDITOR.prototype = {
 
         this.searchcommentswindow.show();
         e.preventDefault();
+    },
+
+    /**
+     * Toggle function to expand/collapse all comments on page.
+     *
+     * @protected
+     * @method expandCollapseComments
+     */
+    expandCollapseComments: function() {
+        var comments = Y.all('.commentdrawable');
+
+        if (this.collapsecomments) {
+            this.collapsecomments = false;
+            comments.removeClass('commentcollapsed');
+        } else {
+            this.collapsecomments = true;
+            comments.addClass('commentcollapsed');
+        }
     },
 
     /**
@@ -1220,6 +1394,54 @@ EDITOR.prototype = {
         for (i = 0; i < this.drawables.length; i++) {
             this.drawables[i].scroll_update(x, y);
         }
+    },
+
+    /**
+     * Test the browser support for options objects on event listeners.
+     * @return Boolean
+     */
+    event_listener_options_supported: function() {
+        var passivesupported = false,
+            options,
+            testeventname = "testpassiveeventoptions";
+
+        // Options support testing example from:
+        // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+        try {
+            options = Object.defineProperty({}, "passive", {
+                get: function() {
+                    passivesupported = true;
+                }
+            });
+
+            // We use an event name that is not likely to conflict with any real event.
+            document.addEventListener(testeventname, options, options);
+            // We remove the event listener as we have tested the options already.
+            document.removeEventListener(testeventname, options, options);
+        } catch(err) {
+            // It's already false.
+            passivesupported = false;
+        }
+        return passivesupported;
+    },
+
+    /**
+     * Disable Touch Move scrolling
+     */
+    disable_touch_scroll: function() {
+        if (this.event_listener_options_supported()) {
+            document.addEventListener('touchmove', this.stop_touch_scroll, {passive: false});
+        }
+    },
+
+    /**
+     * Stop Touch Scrolling
+     * @param {Object} e
+     */
+    stop_touch_scroll: function(e) {
+        e.stopPropagation();
+        e.preventDefault();
     }
 
 };
@@ -1266,10 +1488,6 @@ Y.extend(EDITOR, Y.Base, EDITOR.prototype, {
         stampfiles: {
             validator: Y.Lang.isArray,
             value: ''
-        },
-        pagetotal: {
-            validator: Y.Lang.isInteger,
-            value: 0
         }
     }
 });
@@ -1284,6 +1502,10 @@ M.assignfeedback_editpdf.editor = M.assignfeedback_editpdf.editor || {};
  * @param {Object} params
  */
 M.assignfeedback_editpdf.editor.init = M.assignfeedback_editpdf.editor.init || function(params) {
+    if (typeof M.assignfeedback_editpdf.instance !== 'undefined') {
+        M.assignfeedback_editpdf.instance.destroy();
+    }
+
     M.assignfeedback_editpdf.instance = new EDITOR(params);
     return M.assignfeedback_editpdf.instance;
 };

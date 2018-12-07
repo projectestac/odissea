@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assign', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,16 +39,30 @@ $string['alwaysshowdescription'] = 'Εμφάνιση περιγραφής πάν
 $string['assign:addinstance'] = 'Προσθήκη νέας εργασίας';
 $string['assign:editothersubmission'] = 'Επεξεργασία καταχώρισης κάποιου άλλου μαθητή';
 $string['assign:exportownsubmission'] = 'Εξαγωγή ιδίας υποβολής';
+$string['assignfeedback'] = 'Πρόσθετο ανατροφοδότησης';
+$string['assignfeedbackpluginname'] = 'Πρόσθετο ανατροφοδότησης';
 $string['assign:grade'] = 'Βαθμός εργασίας';
 $string['assign:grantextension'] = 'Χορήγηση παράτασης';
 $string['assign:managegrades'] = 'Επανεξέταση και εμφάνιση βαθμολογιών';
 $string['assign:manageoverrides'] = 'Διαχείριση παρακάμψεων εργασίας';
 $string['assignmentisdue'] = 'Η προθεσμία έχει λήξει';
+$string['assignmentmail'] = 'Ο διδάσκων, {$a->grader}, έχει προσθέσει κάποιες πληροφορίες στην υποβολή σας για την εργασία \'{$a->assignment}\'
+
+Μπορείτε να τις δείτε:
+
+  {$a->url}';
+$string['assignmentmailhtml'] = '<p>Ο διδάσκων, {$a->grader}, έχει προσθέσει κάποιες πληροφορίες στην υποβολή σας για την εργασία \'<i>{$a->assignment}</i>\'.</p>
+
+<p>Μπορείτε να τις δείτε:  <a href="{$a->url}">Υποβληθείσα εργασία</a>.</p>';
+$string['assignmentmailsmall'] = 'Ο διδάσκων, {$a->grader}, έχει προσθέσει κάποιες πληροφορίες στην υποβολή σας για την εργασία \'{$a->assignment}\' Μπορείτε να τις δείτε';
 $string['assignmentname'] = 'Όνομα εργασίας';
+$string['assignmentplugins'] = 'Πρόσθετα εργασιών';
 $string['assignmentsperpage'] = 'Εργασίες ανά σελίδα';
 $string['assign:releasegrades'] = 'Εμφάνιση βαθμολογιών';
 $string['assign:revealidentities'] = 'Εμφάνιση ταυτότητας μαθητών';
 $string['assign:reviewgrades'] = 'Επανεξέταση βαθμολογιών';
+$string['assignsubmission'] = 'Πρόσθετο υποβολής';
+$string['assignsubmissionpluginname'] = 'Πρόσθετο υποβολής';
 $string['assign:submit'] = 'Υποβολή εργασίας';
 $string['assign:view'] = 'Προβολή εργασίας';
 $string['assign:viewgrades'] = 'Προβολή Βαθμών';
@@ -60,14 +74,14 @@ $string['attemptreopenmethod_manual'] = 'Χειροκίνητα';
 $string['attemptreopenmethod_none'] = 'Ποτέ';
 $string['attemptsettings'] = 'Ρυθμίσεις προσπάθειας';
 $string['availability'] = 'Διαθεσιμότητα';
-$string['backtoassignment'] = 'Επιστροφή στην εργασία';
+$string['backtoassignment'] = 'Πίσω στην εργασία';
 $string['batchoperationconfirmaddattempt'] = 'Να επιτραπεί νέα προσπάθεια για τις επιλεγμένες υποβολές;';
 $string['batchoperationconfirmdownloadselected'] = 'Λήψη επιλεγμένων υποβολών;';
 $string['batchoperationconfirmlock'] = 'Κλείδωμα όλων των επιλεγμένων καταχωρίσεων;';
 $string['batchoperationconfirmunlock'] = 'Ξεκλείδωμα όλων των επιλεγμένων καταχωρίσεων;';
 $string['batchoperationlock'] = 'κλείδωμα καταχωρίσεων';
 $string['batchoperationsdescription'] = 'Με τα επιλεγμένα...';
-$string['batchoperationunlock'] = 'ξεκλείδωμα υποβολών';
+$string['batchoperationunlock'] = 'ξεκλείδωμα καταχωρίσεων';
 $string['changeuser'] = 'Αλλαγή χρήστη';
 $string['choosegradingaction'] = 'Βαθμολόγηση';
 $string['choosemarker'] = 'Επέλεξε....';
@@ -88,7 +102,7 @@ $string['defaultteam'] = 'Προεπιλεγμένη ομάδα';
 $string['deleteallsubmissions'] = 'Διαγραφή όλων των καταχωρίσεων';
 $string['description'] = 'Περιγραφή';
 $string['disabled'] = 'Ανενεργό';
-$string['downloadall'] = 'Κατέβασμα όλων των καταχωρίσεων';
+$string['downloadall'] = 'Λήψη όλων των καταχωρίσεων';
 $string['downloadasfolders'] = 'Λήψη υποβολών σε φακέλους';
 $string['downloadasfolders_help'] = 'Αν η υποβολή της εργασίας αποτελείται από παραπάνω από ένα αρχείο, τότε η λήψη των υποβολών μπορεί να γίνει σε φακέλους. Κάθε υποβολή τοποθετείται σε ξεχωριστό φάκελο, ενώ διατηρείται η δομή των υποφακέλων (αν υπάρχουν) και η ονομασία των αρχείων (δεν μετονομάζονται).';
 $string['downloadselectedsubmissions'] = 'Λήψη επιλεγμένων υποβολών';
@@ -98,13 +112,14 @@ $string['duedateno'] = 'Χωρίς καταληκτική ημερομηνία';
 $string['duplicateoverride'] = 'Παράκαμψη διπλότυπων';
 $string['editaction'] = 'Ενέργειες...';
 $string['editingstatus'] = 'Επεξεργασία κατάστασης';
+$string['editonline'] = 'Επεξεργασία online';
 $string['editoverride'] = 'Παράκαμψη επεξεργασίας';
-$string['editsubmission'] = 'Επεξεργασία υποβολής';
+$string['editsubmission'] = 'Τροποποίηση της υποβολής μου';
 $string['editsubmission_help'] = 'Τροποποίηση της καταχώρισης σας';
-$string['editsubmissionother'] = 'Επεξεργασία υποβολής για {$a}';
-$string['enabled'] = 'Ενεργοποιημένο';
-$string['errornosubmissions'] = 'Δεν υπάρχουν καταχωρίσεις για κατέβασμα';
-$string['eventallsubmissionsdownloaded'] = 'Όλες οι καταχωρίσεις κατεβαίνουν.';
+$string['editsubmissionother'] = 'Επεξεργασία καταχώρισης για {$a}';
+$string['enabled'] = 'Ενεργοποίηση';
+$string['errornosubmissions'] = 'Δεν υπάρχουν καταχωρίσεις για λήψη';
+$string['eventallsubmissionsdownloaded'] = 'Γίνεται λήψη όλων των καταχωρίσεων.';
 $string['eventassessablesubmitted'] = 'Έχει γίνει υποβολή εργασίας.';
 $string['eventextensiongranted'] = 'Έχει χορηγηθεί παράταση.';
 $string['eventidentitiesrevealed'] = 'Οι ταυτότητες έχουν αποκαλυφθεί.';
@@ -115,10 +130,16 @@ $string['eventsubmissioncreated'] = 'Η υποβολή δημιουργήθηκ�
 $string['eventsubmissiongraded'] = 'Η υποβολή έχει βαθμολογηθεί.';
 $string['eventsubmissionstatusupdated'] = 'Η κατάσταση της υποβολής έχει ενημερωθεί.';
 $string['eventsubmissionupdated'] = 'Η υποβολή ενημερώθηκε.';
-$string['feedback'] = 'Ανατροφοδότηση';
+$string['feedback'] = 'Επανατροφοδότηση';
+$string['feedbackavailablesmall'] = 'Ο/Η {$a->username} έχει δώσει πληροφορίες/σχόλιο για την εργασία {$a->assignment}';
+$string['feedbackplugin'] = 'Πρόσθετο ανατροφοδότησης';
+$string['feedbackpluginforgradebook'] = 'Πρόσθετο ανατροφοδότησης που προωθεί σχόλια στο βαθμολόγιο';
+$string['feedbackpluginforgradebook_help'] = 'Μόνο ένα πρόσθετο ανατροφοδότησης να μπορεί να προωθεί σχόλια στο βαθμολόγιο.';
+$string['feedbackplugins'] = 'Πρόσθετα ανατροφοδότησης';
 $string['feedbacktypes'] = 'Τύποι ανατροφοδότησης';
 $string['filesubmissions'] = 'Υποβολές αρχείων';
 $string['filter'] = 'Φίλτρο';
+$string['filtergrantedextension'] = 'Χορηγήθηκε παράταση';
 $string['filternone'] = 'Κανένα φίλτρο';
 $string['filternotsubmitted'] = 'Δεν υποβλήθηκαν';
 $string['filterrequiregrading'] = 'Χρειάζεται βαθμολόγηση';
@@ -139,6 +160,9 @@ $string['gradersubmissionupdatedtext'] = 'Ο/Η φοιτητής/τρια {$a->u
 $string['gradeuser'] = 'Βαθμολόγησε {$a}';
 $string['grading'] = 'Βαθμολόγηση';
 $string['gradingchangessaved'] = 'Οι αλλαγές στη βαθμολογία αποθηκεύτηκαν';
+$string['gradingduedate'] = 'Υπενθύμιση βαθμολόγησης μέχρι';
+$string['gradingdueduedatevalidation'] = 'Η ημερομηνία "βαθμολόγηση μέχρι" δεν μπορεί να είναι προγενέστερη από την καταληκτική ημερομηνία.';
+$string['gradingduefromdatevalidation'] = 'Η ημερομηνία "βαθμολόγηση μέχρι" δεν μπορεί να είναι προγενέστερη από την ημερομηνία "έναρξη υποβολών".';
 $string['gradingmethodpreview'] = 'Κριτήρια βαθμολόγησης';
 $string['gradingoptions'] = 'Επιλογές';
 $string['gradingstatus'] = 'Κατάσταση Βαθμολόγησης';
@@ -155,6 +179,17 @@ $string['lastmodifiedsubmission'] = 'Τελευταία Τροποποίηση (
 $string['latesubmissions'] = 'Εκπρόθεσμες υποβολές';
 $string['loading'] = 'Φορτώνει....';
 $string['locksubmissions'] = 'Κλείδωμα υποβολών';
+$string['manageassignfeedbackplugins'] = 'Διαχείριση πρόσθετων ανατροφοδότησης για εργασίες';
+$string['manageassignsubmissionplugins'] = 'Διαχείριση πρόσθετων υποβολής για εργασίες';
+$string['markingworkflowstate_help'] = 'Οι πιθανές καταστάσεις (στάδια) της ροής επεξεργασίας μπορεί να περιλαμβάνουν (ανάλογα με τα δικαιώματά σας):
+
+* Χωρίς βαθμολογία - ο βαθμολογητής δεν ξεκίνησε ακόμη
+* Βαθμολογείται - ο βαθμολογητής ξεκίνησε αλλά δεν ολοκλήρωσε ακόμη
+* Ολοκληρωμένη βαθμολόγηση - ο βαθμολογητής ολοκλήρωσε αλλά ίσως χρειαστεί να επανέλθει για έλεγχο/διορθώσεις
+* Επανεξέταση - η βαθμολόγηση είναι τώρα στη διάθεση του δασκάλου που είναι υπεύθυνος για τον έλεγχο ποιότητας
+* Έτοιμη προς ανακοίνωση - ο υπεύθυνος δάσκαλος είναι ικανοποιημένος με την βαθμολόγηση αλλά περιμένει πριν δώσει στους μαθητές πρόσβαση στη βαθμολόγηση
+* Ανακοινώθηκε - ο μαθητής έχει πρόσβαση στη βαθμολογία/ανατροφοδότηση';
+$string['markingworkflowstateinreview'] = 'Επανεξέταση';
 $string['maxattempts'] = 'Μέγιστος αριθμός προσπαθειών';
 $string['maxgrade'] = 'Μέγιστος Βαθμός';
 $string['modulename'] = 'Ανάθεση εργασίας';
@@ -218,6 +253,7 @@ $string['submissiondrafts'] = 'Απαιτείται οι φοιτητές να �
 $string['submissionempty'] = 'Τίποτα δεν υποβλήθηκε';
 $string['submissionlog'] = 'Μαθητής: {$a->fullname}, Κατάσταση: {$a->status}';
 $string['submissionnoteditable'] = 'Δε μπορεί να γίνει επεξεργασία της υποβολής';
+$string['submissionplugins'] = 'Πρόσθετα υποβολής';
 $string['submissionreceipthtml'] = '<p>Έχετε υποβάλλει την εργασίας σας για \'<i>{$a->assignment}</i>\'.</p>
 <p>Μπορείτε να δείτε την κατάσταση της <a href="{$a->url}">υποβολής σας</a>.</p>';
 $string['submissionreceiptsmall'] = 'Έχετε υποβάλει την εργασία σας για το {$a->assignment}';
@@ -241,6 +277,10 @@ $string['submitted'] = 'Υποβλήθηκε';
 $string['submittedearly'] = 'Η εργασία υποβλήθηκε νωρίτερα κατά {$a}';
 $string['submittedlate'] = 'Η εργασία υποβλήθηκε {$a} αργότερα';
 $string['submittedlateshort'] = '{$a} αργά';
+$string['subplugintype_assignfeedback'] = 'Πρόσθετο ανατροφοδότησης';
+$string['subplugintype_assignfeedback_plural'] = 'Πρόσθετα ανατροφοδότησης';
+$string['subplugintype_assignsubmission'] = 'Πρόσθετο υποβολής';
+$string['subplugintype_assignsubmission_plural'] = 'Πρόσθετα υποβολής';
 $string['teamname'] = 'Ομάδα: {$a}';
 $string['teamsubmission'] = 'Οι εκπαιδευόμενοι υποβάλουν εργασίες σε ομάδες';
 $string['timemodified'] = 'Τελευταία Τροποποίηση';
@@ -249,7 +289,9 @@ $string['timeremainingcolon'] = 'Υπολειπόμενος χρόνος: {$a}';
 $string['unlimitedattemptsallowed'] = 'Επιτρέπεται απεριόριστος αριθμός προσπαθειών.';
 $string['unlocksubmissions'] = 'Ξεκλείδωμα υποβολών';
 $string['unsavedchanges'] = 'Μη αποθηκευμένες αλλαγές';
+$string['unsavedchangesquestion'] = 'Υπάρχουν αλλαγές στους βαθμούς ή την ανατροφοδότηση που δεν έχουν αποθηκευτεί. Θέλετε να αποθηκεύσετε τις αλλαγές και να συνεχίσετε;';
 $string['updategrade'] = 'Ανανέωση βαθμού';
+$string['upgradenotimplemented'] = 'Η αναβάθμιση δεν υλοποιήθηκε για το πρόσθετο ({$a->type} {$a->subtype})';
 $string['viewgradebook'] = 'Προβολή βαθμολογίου';
 $string['viewgrading'] = 'Προβολή όλων των υποβολών';
 $string['viewsubmission'] = 'Προβολή υποβολής';

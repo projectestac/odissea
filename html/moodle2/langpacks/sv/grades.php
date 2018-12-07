@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -148,7 +148,6 @@ $string['calculationsaved'] = 'Beräkningen har sparats';
 $string['calculationview'] = 'Visa beräkning';
 $string['cannotaccessgroup'] = 'Det går tyvärr inte att få tillgång till betyg/omdömen för den valda gruppen.';
 $string['categories'] = 'Kategorier';
-$string['categoriesanditems'] = 'Kategorier och komponenter';
 $string['category'] = 'Kategori';
 $string['categoryedit'] = 'Redigera kategori';
 $string['categoryname'] = 'Namn på kategori';

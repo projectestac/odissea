@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'rating', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   rating
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,11 @@ $string['norate'] = 'Bewertung von Beiträgen nicht erlaubt!';
 $string['noratings'] = 'Keine Wertungen abgegeben';
 $string['noviewanyrate'] = 'Sie dürfen ausschließlich Ergebnisse für eigene Beiträge sehen';
 $string['noviewrate'] = 'Sie haben kein Recht, Bewertungen zu sehen';
+$string['privacy:metadata:rating'] = 'Die vom Personen eingegebene Bewertung wird zusammen mit einem Verweis auf das bewertete Element gespeichert.';
+$string['privacy:metadata:rating:rating'] = 'Numerische Bewertung, die die Person eingegeben hat.';
+$string['privacy:metadata:rating:timecreated'] = 'Zeitpunkt, an dem die Bewertung erstmals gemacht wurde';
+$string['privacy:metadata:rating:timemodified'] = 'Zeitpunkt, an dem die Bewertung zuletzt geändert wurde';
+$string['privacy:metadata:rating:userid'] = 'Nutzer/in, die die Bewertung gemacht hat';
 $string['rate'] = 'Bewerten';
 $string['ratepermissiondenied'] = 'Sie haben kein Recht, den Beitrag zu bewerten';
 $string['rating'] = 'Bewertung';

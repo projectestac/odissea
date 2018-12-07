@@ -22,7 +22,7 @@ else if(_ie==false){
   _mac = _info.indexOf("Mac_PowerPC") > 0;
 }
 
-var jarBase='http://clic.xtec.cat/dist/jclic';
+var jarBase='https://clic.xtec.cat/dist/jclic';
 function setJarBase(base){
    jarBase=base;
 }
@@ -305,7 +305,7 @@ function getParams(project, p){
 function getDownloadPageInfo(){
   var htmlcode = '';
 
-  var pluginBase="http://clic.xtec.cat/";
+  var pluginBase="https://clic.xtec.cat/";
   var pluginCat=pluginBase+"ca/jclic/instjava.htm";
   var pluginEsp=pluginBase+"es/jclic/instjava.htm";
   var pluginEng=pluginBase+"en/jclic/instjava.htm";

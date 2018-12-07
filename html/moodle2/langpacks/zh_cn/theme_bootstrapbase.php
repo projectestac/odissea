@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_bootstrapbase', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_bootstrapbase', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_bootstrapbase
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

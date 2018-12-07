@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_recyclebin', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'Contexte non valide spécifié.';
 $string['noitemsinbin'] = 'Il n\'y a pas d\'éléments dans la corbeille.';
 $string['notenabled'] = 'La corbeille a été désactivée par l\'administrateur de la plateforme.';
 $string['pluginname'] = 'Corbeille';
+$string['privacy:metadata'] = 'Le plugin Corbeille n\'enregistre aucune donnée personnelle.';
 $string['recyclebin:deleteitems'] = 'Supprimer les éléments de la corbeille';
 $string['recyclebin:restoreitems'] = 'Restaurer les éléments de la corbeille';
 $string['recyclebin:viewitems'] = 'Afficher les éléments de la corbeille';

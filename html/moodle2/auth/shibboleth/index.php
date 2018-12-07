@@ -28,7 +28,7 @@
 
     }
 
-    $pluginconfig   = get_config('auth/shibboleth');
+    $pluginconfig   = get_config('auth_shibboleth');
     $shibbolethauth = get_auth_plugin('shibboleth');
 
     // Check whether Shibboleth is configured properly
@@ -49,9 +49,10 @@
         $frm->password = generate_password(8);
 
     /// Check if the user has actually submitted login data to us
+        $reason = null;
 
         if ($shibbolethauth->user_login($frm->username, $frm->password)
-                && $user = authenticate_user_login($frm->username, $frm->password)) {
+                && $user = authenticate_user_login($frm->username, $frm->password, false, $reason, false)) {
             complete_user_login($user);
 
             if (user_not_fully_set_up($USER, true)) {

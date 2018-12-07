@@ -1,0 +1,32 @@
+<?php
+
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'editor_atto', language 'el', branch 'MOODLE_34_STABLE'
+ *
+ * @package   editor_atto
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['errornopluginsorgroupsfound'] = 'Δεν βρέθηκαν πρόσθετα ή ομάδες συμμετεχόντων· παρακαλούμε προσθέστε μερικά πρόσθετα και ομάδες συμμετεχόντων.';
+$string['errorpluginisusedtwice'] = 'Το πρόσθετο \'{$a}\' χρησιμοποιείται δύο φορές· τα πρόσθετα μπορούν να οριστούν μόνο μία φορά.';
+$string['errorpluginnotfound'] = 'Το πρόσθετο \'{$a}\' δεν μπορεί να χρησιμοποιηθεί· δεν φαίνεται να έχει εγκατασταθεί.';
+$string['subplugintype_atto'] = 'Πρόσθετο Atto';
+$string['subplugintype_atto_plural'] = 'Πρόσθετα Atto';

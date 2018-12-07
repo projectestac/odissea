@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'アクセスパスワードが正しくありま�
 $string['passwordinvalidhint'] = 'アクセスパスワードが正しくありません、再度お試しください。<br />(ヒント - 「 {$a} 」で始まります)';
 $string['pluginname'] = 'ゲストアクセス';
 $string['pluginname_desc'] = 'ゲストアクセスプラグインでは一時的にコースアクセスできるようにします。実際にユーザが登録されることはありません。';
+$string['privacy:metadata'] = 'ゲストアクセス登録プラグインはどのような個人データも保存しません。';
 $string['requirepassword'] = 'ゲストアクセスにパスワードを要求する';
 $string['requirepassword_desc'] = '新しいコースへのパスワードアクセスを要求します。同時に既存のコースからのアクセスパスワードの削除を防ぎます。';
 $string['showhint'] = 'ヒントを表示する';

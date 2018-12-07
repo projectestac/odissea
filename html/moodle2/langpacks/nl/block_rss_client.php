@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,6 +48,8 @@ $string['editnewsfeeds'] = 'Bewerk nieuwe RSS-feeds';
 $string['editrssblock'] = 'Bewerk RSS-hoofdpuntenblok';
 $string['enableautodiscovery'] = 'Automatisch vinden van feeds inschakelen?';
 $string['enableautodiscovery_help'] = 'Indien ingeschakeld, worden feeds automatisch gevonden op webpagina\'s. Bijvoorbeeld als je http://docs.moodle.org ingeeft, dan zou http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss gevonden worden.';
+$string['failedfeed'] = 'Dowloaden feed mislukt - er wordt opnieuw geprobeerd na {$a}';
+$string['failedfeeds'] = 'Eén of meer RSS-feeds mislukt';
 $string['feed'] = 'Nieuws-feed';
 $string['feedadded'] = 'Nieuws-feed toegevoegd';
 $string['feeddeleted'] = 'Nieuws-feed verwijderd';
@@ -63,6 +65,15 @@ $string['nofeeds'] = 'Er zijn geen RSS-feeds gedefinieerd voor deze site';
 $string['numentries'] = 'Aantal items per feed';
 $string['pickfeed'] = 'Kies een RSS nieuws-feed';
 $string['pluginname'] = 'Externe RSS-feeds';
+$string['privacy:metadata:block_rss_client:description'] = 'De beschrijving van de RSS-feed.';
+$string['privacy:metadata:block_rss_client:preferredtitle'] = 'De voorkeurstitel (aangepaste titel) van de RSS-feed.';
+$string['privacy:metadata:block_rss_client:shared'] = 'Of de RSS-feed beschikbaar is voor alle cursussen.';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'De tijd in seconden dat cron zal wachten tussen pogingen om mislukte RSS-feeds opnieuw te proberen.';
+$string['privacy:metadata:block_rss_client:skipuntil'] = 'De maximale tijd dat cron zal proberen om een falende RSS-feed te openen.';
+$string['privacy:metadata:block_rss_client:tableexplanation'] = 'Informatie van het RSS-blok wordt hier bewaard.';
+$string['privacy:metadata:block_rss_client:title'] = 'De titel van de RSS-feed.';
+$string['privacy:metadata:block_rss_client:url'] = 'De URL van de RSS-feed.';
+$string['privacy:metadata:block_rss_client:userid'] = 'De ID van de gebruiker die de RSS-feed toegevoegd heeft.';
 $string['remotenewsfeed'] = 'In het nieuws';
 $string['rss_client:addinstance'] = 'Voeg een nieuw RSS-feedblok toe';
 $string['rss_client:createprivatefeeds'] = 'Maak private RSS-feeds';

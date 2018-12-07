@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_accessibilitychecker', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_accessibilitychecker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['needsmorecontrast'] = 'Les couleurs du texte et du fond du texte ne son
 $string['needsmoreheadings'] = 'Ce long texte ne comporte ni titre, ni sous-titre. Des titres intermédiaires permettent aux personnes utilisant des lecteurs d\'écran de parcourir la page plus facilement et à tout le monde de la lire plus aisément.';
 $string['nowarnings'] = 'Bravo ! Aucun problème d\'accessibilité détecté.';
 $string['pluginname'] = 'Contrôle d\'accessibilité';
+$string['privacy:metadata'] = 'Le plugin atto_accessibilitychecker n\'enregistre aucune donnée personnelle.';
 $string['report'] = 'Rapport d\'accessibilité :';
 $string['tablesmissingcaption'] = 'Les tables devraient avoir une légende. Bien qu\'il ne soit pas nécessaire à chaque table d\'avoir une légende, celle-ci est en général très utile.';
 $string['tablesmissingheaders'] = 'Les tables devraient avoir une rangée et/ou une colonne d\'entête.';

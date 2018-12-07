@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_social', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   format_social
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Número de discussões';
 $string['numberdiscussions_help'] = 'Esta configuração especifica quantas discussões devem ser exibidas.';
 $string['pluginname'] = 'Formato Social';
+$string['privacy:metadata'] = 'O módulo formato social não armazena nenhum dado pessoal.';
 $string['sectionname'] = 'secção';

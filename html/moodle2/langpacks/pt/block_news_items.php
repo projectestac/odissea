@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_news_items', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   block_news_items
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['news_items:addinstance'] = 'Adicionar um novo bloco Últimos anúncios';
 $string['news_items:myaddinstance'] = 'Adicionar um novo bloco Últimos anúncios ao Painel do utilizador';
 $string['pluginname'] = 'Últimos anúncios';
+$string['privacy:metadata'] = 'O bloco Últimos anúncios não armazena dados e apenas mostra dados armazenados no fórum.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,8 @@ $string['browsed'] = 'Consulté';
 $string['browsemode'] = 'Mode prévisualisation';
 $string['browserepository'] = 'Consulter le dépôt';
 $string['calculatedweight'] = 'Pondération calculée';
+$string['calendarend'] = '{$a} se termine';
+$string['calendarstart'] = '{$a} s\'ouvre';
 $string['cannotaccess'] = 'Il n\'est pas permis de lancer ce script de cette manière';
 $string['cannotfindsco'] = 'Objet d\'apprentissage introuvable';
 $string['chooseapacket'] = 'Sélectionner ou mettre à jour un paquetage';
@@ -83,17 +85,20 @@ $string['collapsetocwinsizedesc'] = 'Ce réglage vous permet de spécifier la ta
 $string['compatibilitysettings'] = 'Réglages de compatibilité';
 $string['completed'] = 'Terminé';
 $string['completionscorerequired'] = 'Requiert un score minimal';
+$string['completionscorerequireddesc'] = 'Un score minimum de {$a} est requis pour l\'achèvement';
 $string['completionscorerequired_help'] = 'Si ce réglage est activé, le participant devra obtenir au moins le score indiqué pour que cette activité SCORM soit marquée comme terminée, en plus des autres conditions de complétion.';
 $string['completionstatusallscos'] = 'Imposer que tous les SCOs retournent le statut d\'achèvement.';
 $string['completionstatusallscos_help'] = 'Certains paquets SCORM contiennent plusieurs composants ou « SCOs ». Si ce réglage est activé, tous les SCOs doivent retourner l\'état lesson_status approprié pour que l\'activité soit marquée comme achevée.';
 $string['completionstatus_completed'] = 'Terminé';
 $string['completionstatus_passed'] = 'Réussi';
 $string['completionstatusrequired'] = 'Requiert un statut';
+$string['completionstatusrequireddesc'] = 'L\'étudiant doit atteindre au moins l\'un des statuts suivants : {$a}';
 $string['completionstatusrequired_help'] = 'En cochant un ou plusieurs statuts, vous requérez que les participants obtiennent au moins l\'un d\'entre eux pour que cette activité SCORM soit marquée comme terminée, en plus des autres conditions de complétion.';
 $string['confirmloosetracks'] = 'Attention ! Le paquetage semble avoir été modifié. Si sa structure a été modifiée, les historiques de certains utilisateurs (progressions) seront perdus lors du processus de mise à jour.';
 $string['contents'] = 'Contenus';
 $string['coursepacket'] = 'Paquetage du cours';
 $string['coursestruct'] = 'Structure du cours';
+$string['crontask'] = 'Processus en tâche de fond pour SCORM';
 $string['currentwindow'] = 'Fenêtre courante';
 $string['datadir'] = 'Erreur du système de fichier : impossible de créer le dossier de données du cours';
 $string['defaultdisplaysettings'] = 'Réglages par défaut de l\'affichage';
@@ -193,6 +198,10 @@ $string['hidetoc_help'] = 'Affichage de la table des matières dans le lecteur S
 $string['highestattempt'] = 'Meilleure tentative';
 $string['identifier'] = 'Identifiant de question';
 $string['incomplete'] = 'Incomplet';
+$string['indicator:cognitivedepth'] = 'SCORM : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité SCORM.';
+$string['indicator:socialbreadth'] = 'SCORM : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité SCORM.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interactions';
 $string['invalidactivity'] = 'L\'activité SCORM n\'est pas correcte';
@@ -294,6 +303,7 @@ $string['position_error'] = 'La balise {$a->tag} ne peut pas être un descendant
 $string['preferencespage'] = 'Préférences de cette seule page';
 $string['preferencesuser'] = 'Préférences de ce rapport';
 $string['prev'] = 'Précédent';
+$string['privacy:metadata:aicc:externalpurpose'] = 'Ce plugin transmet des données à l\'aide de AICC HACP.';
 $string['protectpackagedownloads'] = 'Protéger le téléchargement des paquetages';
 $string['protectpackagedownloads_desc'] = 'Si ce réglage est activé, les paquetages SCORM ne peuvent être téléchargés que par les utilisateurs possédant la capacité course:manageactivities. Dans le cas contraire, les paquetages SCORM peuvent être toujours téléchargés.';
 $string['raw'] = 'Score brut';

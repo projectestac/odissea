@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_installaddon', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['acknowledgement'] = 'Accettazione';
 $string['acknowledgementtext'] = 'Sono consapevole che è mia responsabilità disporre di backup completi del sito effettuati prima di installare plugin aggiuntivi. Accetto e comprendo che i plugin aggiuntivi (ivi inclusi quelli provenienti da siti non ufficiali) possono contenere problemi di sicurezza, rendere il sito non funzionante nonché provocare la perdita di dati o la diffusione di dati sensibili.';
 $string['featuredisabled'] = 'L\'installazione di plugin è disabilitata';
 $string['installaddon'] = 'Installa plugin!';
-$string['installaddons'] = 'Installa plugin';
+$string['installaddons'] = 'Installazione plugin';
 $string['installfromrepo'] = 'Installazione dal Moodle plugins directory';
 $string['installfromrepo_help'] = 'Sarai reindirizzato sul Moodle plugins directory per cercare il plugin da installare. Per facilitare l\'installazione del plugin, verranno anche trasmessi Il nome del sito, l\'URL e la versione di Moodle utilizzata.';
 $string['installfromzip'] = 'Installa plugin da file ZIP';

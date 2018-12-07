@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_manual', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,5 @@ $string['allocationexists'] = 'すでに割り当てが存在します。';
 $string['areyousuretodeallocate'] = '本当に選択した評価の割り当てを解除してもよろしいですか?';
 $string['areyousuretodeallocategraded'] = 'あなたはすでに評価された提出を削除しようとしています。本当に削除してもよろしいですか?';
 $string['pluginname'] = '手動割り当て';
+$string['privacy:metadata:preference:perpage'] = 'ユーザが1ページあたりに表示したい割り当て済み評価数です。';
 $string['showallparticipants'] = 'すべての参加者を表示する';

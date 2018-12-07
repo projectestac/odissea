@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,23 @@ $string['page-mod-assignment-view'] = 'Zeregin moduluaren hasiera-orria';
 $string['page-mod-assignment-x'] = 'Zereginaren edozein orri';
 $string['pluginadministration'] = 'Zeregina  2.2 (Desgaituta) moduluaren kudeaketa';
 $string['pluginname'] = 'Zeregina 2.2 (Desgaituta)';
+$string['privacy:markedsubmissionspath'] = 'kalifikatutakobidalketak';
+$string['privacy:metadata:assignmentfilter'] = 'Zeregin-bidalketen iragazkiaren hobespena.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Zeregin-bidalketen e-posta informazioaren hobespena.';
+$string['privacy:metadata:assignmentperpage'] = 'Orri bakoitzean erakutsi beharreko zeregin-bidalketa kopuruaren hobespena.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Zereginetako kalifikazio azkarraren hobespena.';
+$string['privacy:metadata:assignment_submissions'] = 'Zereginaren lotutako zeregin-bidalketak.';
+$string['privacy:metadata:assignment_submissions:data1'] = 'Zereginean bidalitako online testua.';
+$string['privacy:metadata:assignment_submissions:data2'] = 'Zeregin-bidalketaren jarraipenaren egoera.';
+$string['privacy:metadata:assignment_submissions:grade'] = 'Zeregin-bidalketak eskuratutako kalifikazioaren balioa.';
+$string['privacy:metadata:assignment_submissions:mailed'] = 'Zeregin-bidalketaren e-posta jakinarazpenaren egoera.';
+$string['privacy:metadata:assignment_submissions:numfiles'] = 'Zeregin-bidalketan baimendutako gehienezko fitxategi kopurua.';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'Zeregin-bidalketarekin batera bidalketa-iruzkina.';
+$string['privacy:metadata:assignment_submissions:teacher'] = 'Zeregin-bidalketa kalifikatzen duen irakaslearen erabiltzaile-IDa.';
+$string['privacy:metadata:assignment_submissions:timecreated'] = 'Zeregin-bidalketa sortu zeneko unea.';
+$string['privacy:metadata:assignment_submissions:timemarked'] = 'Zeregin-bidalketa kalifikatu zeneko unea.';
+$string['privacy:metadata:assignment_submissions:timemodified'] = 'Zeregin-bidalketa aldatu zeneko unea.';
+$string['privacy:metadata:assignment_submissions:userid'] = 'Zeregin-bidalketa egin duen erabiltzailearen IDa.';
+$string['privacy:submissionpath'] = 'bidalketa';
 $string['upgradenotification'] = 'Jarduera hau zeregin modulu zaharrarekin eginda dago.';
 $string['viewassignmentupgradetool'] = 'Ikusi zeregina eguneratzeko tresna';

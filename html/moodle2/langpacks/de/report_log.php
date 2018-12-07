@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_log', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   report_log
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,7 @@ $string['page-report-log-index'] = 'Kurs-Logbericht';
 $string['page-report-log-user'] = 'Nutzer-Kurs-Logbericht';
 $string['page-report-log-x'] = 'Alle Logberichte';
 $string['pluginname'] = 'Logdaten';
+$string['privacy:metadata'] = 'Das Log-Daten-Plugin speichert keine persönlichen Daten';
 $string['restore'] = 'Wiederherstellen';
 $string['selectlogreader'] = 'Anzeige für Logdaten wählen';
 $string['web'] = 'Web';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_gift', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_gift
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,4 +35,5 @@ $string['giftrightbraceerror'] = '} が見つかりませんでした。';
 $string['importminerror'] = '問題にエラーがあります。この問題タイプに十分な答えがありません。';
 $string['nohandler'] = '問題タイプ {$a} のハンドラがありません。';
 $string['pluginname'] = 'Giftフォーマット';
-$string['pluginname_help'] = 'Giftフォーマットではテキストファイルを使用して多肢選択問題、○/×問題、記述問題、組み合わせ問題、穴埋め問題、数値問題および作文問題をインポートまたはエクスポートすることができます。';
+$string['pluginname_help'] = 'Giftフォーマットではテキストファイルを使用して多肢選択問題、○/×問題、記述問題、組み合わせ問題、ミッシングワード問題、数値問題および作文問題をインポートまたはエクスポートすることができます。';
+$string['privacy:metadata'] = 'Gift問題フォーマットプラグインはどのような個人データも保存しません。';

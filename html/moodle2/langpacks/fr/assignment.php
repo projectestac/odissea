@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,5 +42,23 @@ $string['page-mod-assignment-view'] = 'Page principale du module devoir';
 $string['page-mod-assignment-x'] = 'Toute page du module devoir';
 $string['pluginadministration'] = 'Administration devoir 2.2 (désactivé)';
 $string['pluginname'] = 'Devoir 2.2 (désactivé)';
+$string['privacy:markedsubmissionspath'] = 'Travaux évalués';
+$string['privacy:metadata:assignmentfilter'] = 'Préférence de filtre des devoirs remis.';
+$string['privacy:metadata:assignmentmailinfo'] = 'Préférence d\'information de courriel pour les devoirs remis.';
+$string['privacy:metadata:assignmentperpage'] = 'Préférence du nombre de devoirs remis affiché par page.';
+$string['privacy:metadata:assignmentquickgrade'] = 'Préférence d\'évaluation rapide pour les devoirs remis.';
+$string['privacy:metadata:assignment_submissions'] = 'Travaux remis associés à un devoir.';
+$string['privacy:metadata:assignment_submissions:data1'] = 'Le texte en ligne remis pour un devoir.';
+$string['privacy:metadata:assignment_submissions:data2'] = 'Le statut de suivi pour un travail le devoir remis.';
+$string['privacy:metadata:assignment_submissions:grade'] = 'La valeur de la note donnée pour le devoir remis.';
+$string['privacy:metadata:assignment_submissions:mailed'] = 'Le statut de notification de courriel du devoir remis.';
+$string['privacy:metadata:assignment_submissions:numfiles'] = 'Le nombre maximal de fichiers permis pour le devoir.';
+$string['privacy:metadata:assignment_submissions:submissioncomment'] = 'Le commentaire accompagnant le devoir remis.';
+$string['privacy:metadata:assignment_submissions:teacher'] = 'L\'identifiant de l\'utilisateur évaluant le devoir remis.';
+$string['privacy:metadata:assignment_submissions:timecreated'] = 'La date et l\'heure de création du devoir remis.';
+$string['privacy:metadata:assignment_submissions:timemarked'] = 'La date et l\'heure de l\'évaluation du devoir remis.';
+$string['privacy:metadata:assignment_submissions:timemodified'] = 'La date et l\'heure de modification du devoir remis.';
+$string['privacy:metadata:assignment_submissions:userid'] = 'L\'identifiant de l\'utilisateur remettant le devoir.';
+$string['privacy:submissionpath'] = 'Travail remis';
 $string['upgradenotification'] = 'Cette activité est basée sur un ancien module de devoir.';
 $string['viewassignmentupgradetool'] = 'Afficher l\'outil de mise à jour des devoirs';

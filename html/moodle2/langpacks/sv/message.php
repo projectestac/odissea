@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,7 +44,8 @@ $string['disabled'] = 'Funktionen meddelanden är avaktiverad på den här webbp
 $string['disallowed'] = 'Otillåten';
 $string['discussion'] = 'Diskussion';
 $string['editmessages'] = 'Redigera meddelanden';
-$string['emailtagline'] = 'Det här e-postmeddelandet är en kopia av ett meddelande som har skickats till Dig på "{$a->sitename}". Gå till  {$a->url} för att svara.';
+$string['emailtagline'] = 'Det här e-postmeddelandet är en kopia av ett meddelande som har skickats till Dig på "{$a>sitename}". Gå till  {$a->url} för att svara.
+';
 $string['emptysearchstring'] = 'Du måste söka efter någonting';
 $string['enabled'] = 'Aktiverat';
 $string['errorcallingprocessor'] = 'Fel i sb m anrop till den definierade processorn';

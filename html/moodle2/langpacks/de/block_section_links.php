@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_section_links', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_section_links
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['numsections1_help'] = 'Wenn die Anzahl der Abschnitte im Kurs größer 
 $string['numsections2'] = 'Untere Grenze2';
 $string['numsections2_help'] = 'Wenn die Anzahl der Abschnitte im Kurs größer ist, erfolgt die Erhöhung in Schritten mit jeweils diesem alternativen Wert.';
 $string['pluginname'] = 'Kursabschnitte';
+$string['privacy:metadata'] = 'Der Block Abschnitte zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['section_links:addinstance'] = 'Block \'Kursabschnitte\' hinzufügen';
 $string['topics'] = 'Abschnitte';
 $string['weeks'] = 'Wochen';

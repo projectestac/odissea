@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_offline
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['invalidgradeimport'] = 'Moodle kon het geüploade werkblad niet lezen. 
 $string['nochanges'] = 'Er werden geen gewijzigde cijfers gevonden in het geüploade werkblad.';
 $string['offlinegradingworksheet'] = 'Cijfers';
 $string['pluginname'] = 'Offline beoordelingswerkblad';
+$string['privacy:nullproviderreason'] = 'Deze plugin heeft geen databank om gebruikersinformatie te bewaren. Er worden enkel API\'s gebruikt in mod_assign om te helpen met het tonen van de beoordelingsinterface.';
 $string['processgrades'] = 'Importeer cijfers';
 $string['skiprecord'] = 'Record overslaan';
 $string['updatedgrades'] = '{$a} cijfers en feedback aangepast';

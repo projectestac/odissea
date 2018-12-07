@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_superscript', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_superscript', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_superscript
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Apice';
+$string['privacy:metadata'] = 'Il plugin atto_superscript non memorizza dati personali.';

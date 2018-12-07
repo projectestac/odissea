@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,8 @@ $string['notarget'] = 'Vous devez indiquer soit un dossier existant soit un doss
 $string['noticket'] = 'Impossible de récupérer un ticket sur Box pour initier la session d\'authentification';
 $string['password'] = 'Votre mot de passe Box (ne sera pas enregistré)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'Ce plugin transmet des données vers un compte Box lié. Il n\'enregistre aucune donnée localement.';
+$string['privacy:metadata:data'] = 'Données personnelles transmises à partir du sous-système portfolio.';
 $string['sendfailed'] = 'Échec de l\'envoi de contenu vers Box : {$a}';
 $string['setupinfo'] = 'Instructions';
 $string['setupinfodetails'] = 'Pour obtenir un ID client et un secret, connectez-vous sur Box et rendez-vous sur la <a href="{$a->servicesurl}">page de développement de Box</a>. Suivez le lien « Create new application » et créez une nouvelle application pour votre site Moodle. L\'ID client et le secret sont affichés dans la section « OAuth2 parameters » du formulaire d\'édition de l\'application.

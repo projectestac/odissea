@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['pluginnameadding'] = '数値問題の追加';
 $string['pluginnameediting'] = '数値問題の編集';
 $string['pluginname_help'] = '数値問題は学生からは記述問題のように見えます。記述問題と異なる点は数値問題では間違いを受け入れるようにすることができることです。このことにより連続した範囲の答えを設定することができます。例えば正解が10で受け入れることのできるエラー範囲が2の場合、8から12までの間の答えが正解とされます。';
 $string['pluginnamesummary'] = '単位を使って数値で解答することができます。また、さまざまな解答モデルに対して許容範囲を設定して評定することができます。';
+$string['privacy:metadata'] = '数字問題タイププラグインはどのような個人データも保存しません。';
 $string['relative'] = '相対';
 $string['rightexample'] = '1.00cmまたは1.00kmのように右側';
 $string['selectunit'] = '単位を選択してください。';

@@ -34,3 +34,4 @@ $string['pluginname_help'] = 'Semblable à la réponse vraie/fausse standard, av
 $string['pluginnamesummary'] = 'Semblable à la réponse vraie/fausse standard, avec la possibilité de poser une question avec des nombres, des formules ou des courbes aléatoires. Vous pouvez définir de manière dynamique si la bonne réponse est Vrai ou Faux. Les commentaires peuvent également utiliser les valeurs aléatoires.';
 $string['pluginnameediting'] = 'Modification d\'une réponse vraie/fausse - Question de maths et sciences par WIRIS';
 $string['pluginnameadding'] = 'Ajout d\'une réponse vraie/fausse - Question de maths et sciences par WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes True/False question type does not effect or store any data itself.';

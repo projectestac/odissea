@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_rubric', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,3 +39,4 @@ $string['mustbeunique'] = 'Bewertungsstufen müssen innerhalb eines Kriteriums e
 $string['mustchooseone'] = 'Sie müssen eins dieser Elemente auswählen';
 $string['mustdefinelevel'] = 'Es ist mindestens ein Level erforderlich';
 $string['pluginname'] = 'Bewertungskriterien';
+$string['privacy:metadata'] = 'Das Rubrik-Plugin speichert nur Details des Aufgabenformulars. Die aktuellen Daten darüber, wie das Formular ausgefüllt wurde, werden in der Aktivität \'gegenseitige Beurteilung\' gespeichert und an die exportierten Aufgaben angehängt.';

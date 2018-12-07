@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'completion', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,15 +29,21 @@ $string['achievinggrade'] = '完成的成绩';
 $string['activities'] = '活动';
 $string['activitiescompleted'] = '活动完成情况';
 $string['activitiescompletednote'] = '提醒：只有启用进度跟踪的活动才会出现在上面的列表之中。';
+$string['activitieslabel'] = '活动/资源';
 $string['activityaggregation'] = '条件满足情形';
 $string['activityaggregation_all'] = '所有选中的活动都必须完成。';
 $string['activityaggregation_any'] = '至少完成一个选中的活动。';
 $string['activitycompletion'] = '活动进度';
+$string['activitycompletionupdated'] = '修改已经保存';
+$string['affectedactivities'] = '这些修改将影响以下<b>{$a}</b>活动或资源:';
 $string['aggregationmethod'] = '汇总方法';
 $string['all'] = '全部';
 $string['any'] = '任意';
 $string['approval'] = '认可';
 $string['badautocompletion'] = '当您选择了自动完成时，您还必须激活至少一个前提（在下面）。';
+$string['bulkactivitycompletion'] = '批量编辑活动完成设置';
+$string['bulkactivitydetail'] = '选择您希望批量编辑的活动。';
+$string['bulkcompletiontracking_help'] = '<strong>没有:</strong>不标示活动完成状态<br><strong>手工标记:</strong>学生可以手工标记此活动为完成状态<br><strong>有条件:</strong>当条件都满足时标记活动为完成状态';
 $string['completed'] = '已完成';
 $string['completedunlocked'] = '完成选项已解锁';
 $string['completedunlockedtext'] = '保存修改后，所有学生的完成状态都会被删除。如果您改变了主意，就不要保存此表单。';
@@ -110,6 +116,8 @@ $string['csvdownload'] = '以电子表格格式（UTF-8.csv）下载';
 $string['datepassed'] = '通过日期';
 $string['days'] = '天数';
 $string['daysoftotal'] = '{$a->days}天，总共有 {$a->total}天';
+$string['defaultcompletion'] = '默认的活动完成设置';
+$string['defaultcompletionupdated'] = '修改已经保存';
 $string['deletecompletiondata'] = '删除已完成数据';
 $string['dependencies'] = '依赖条件';
 $string['dependenciescompleted'] = '完成其它课程';
@@ -132,7 +140,9 @@ $string['excelcsvdownload'] = '用Excel兼容格式（.csv）下载';
 $string['fraction'] = '分数';
 $string['graderequired'] = '需要课程分数';
 $string['gradexrequired'] = '至少得 {$a}';
+$string['hiddenrules'] = '一些特定于 <b>{$a}</b>的设置被隐藏。查看未选择的其他活动';
 $string['inprogress'] = '处理中';
+$string['manual'] = '手工标记';
 $string['manualcompletionby'] = '由他人手动完成';
 $string['manualcompletionbynote'] = '提醒：只有具备 moodle/course:markcomplete 权限的角色才会出现在此列表中。';
 $string['manualselfcompletion'] = '手动自设完成';
@@ -140,6 +150,7 @@ $string['manualselfcompletionnote'] = '提醒：如果启用手动自设完成�
 $string['markcomplete'] = '标为完成';
 $string['markedcompleteby'] = '由{$a}标记为完成';
 $string['markingyourselfcomplete'] = '标记您自己为完成';
+$string['modifybulkactions'] = '修改您希望批量编辑的活动';
 $string['moredetails'] = '更多细节';
 $string['nocriteriaset'] = '本课程未设置完成条件';
 $string['notcompleted'] = '未完成';

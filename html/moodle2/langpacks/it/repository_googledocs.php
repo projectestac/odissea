@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_googledocs', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_googledocs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,11 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['both'] = 'Interno ed esterno';
 $string['clientid'] = 'Client ID';
 $string['configplugin'] = 'Configurazione plugin Google Drive';
 $string['googledocs:view'] = 'Visualizzare repository Google Drive';
-$string['oauthinfo'] = '<p>Per usare questo plugin, devi essere registrato su Google. Trovi le istruzioni per la registrazione nella documentazione <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Durante il processo di registrazione dovrai inserire il seguente URL quale \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Al termine della registrazione riceverai un Client ID ed un secret che possono essere utilizzati per configurare sia i plugin Google Drive sia i plugin Picasa.</p>
+$string['internal'] = 'Interno (file memorizzati in Moodle)';
+$string['issuer'] = 'Servizio Oauth 2';
+$string['oauth2serviceslink'] = '<a href="{$a}" title="Collegamento alla configurazione dei servizi OAuth 2">Configurazione servizi OAuth 2</a>';
+$string['oauthinfo'] = '<p>Per usare questo plugin devi essere registrato su Google, come descritto nella documentazione <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Durante il processo di registrazione dovrai inserire il seguente URL quale \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Al termine della registrazione riceverai un Client ID ed un secret che possono essere utilizzati per configurare sia i plugin Google Drive sia i plugin Picasa.</p>
 </p><p>Da notare che dovrai anche abilitare il servizio \'Drive API\'.</p>';
+$string['owner'] = 'Proprietario: {$a}';
 $string['pluginname'] = 'Google Drive';
+$string['presentationformat'] = 'Formato di default per l\'importazione di presentazioni';
+$string['searchfor'] = 'Cerca {$a}';
 $string['secret'] = 'Secret';
 $string['servicenotenabled'] = 'Accesso non configurato. Accertati che il servizio  \'Drive API\' sia abilitato.';
+$string['spreadsheetformat'] = 'Formato di default per l\'importazione di fogli elettronici';
+$string['supportedreturntypes'] = 'File supportati';

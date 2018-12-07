@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_activity_results', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_activity_results
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -63,6 +63,7 @@ $string['error_nogroupsexist'] = 'Fout: het blok is ingesteld om cijfers te tone
 $string['error_unsupportedgradetype'] = 'Fout: de geselecteerde activiteit gebruikt een beoordelingsmethode die niet ondersteund wordt door dit blok.';
 $string['notyetgraded'] = 'Nog niet beoordeeld';
 $string['pluginname'] = 'Activiteitsresultaten';
+$string['privacy:metadata'] = 'Het activiteitenresultatenblok toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['unknown'] = 'Onbekende schaal';
 $string['worstgrade'] = 'Het laagste cijfer:';
 $string['worstgrades'] = 'De {$a} laagste cijfers:';

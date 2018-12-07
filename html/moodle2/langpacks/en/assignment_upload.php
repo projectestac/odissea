@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignment_upload', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   assignment_upload
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'An upload submission has been submitted.';
 $string['event_assessable_uploaded'] = 'A file has been uploaded.';
 $string['pluginname'] = 'Upload';
+$string['privacy:metadata'] = 'The Upload assignment plugin does not store any personal data.';

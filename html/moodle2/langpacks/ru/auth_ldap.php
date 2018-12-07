@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_ldap', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['auth_ldap_create_error'] = 'Ошибка при создании пол
 $string['auth_ldap_creators'] = 'Список групп или контейнеров, членам которых разрешается создавать новые курсы. Чтобы указать несколько групп, используйте разделитель «;». Например,«cn=teachers,ou=staff,o=myorg».';
 $string['auth_ldap_creators_key'] = 'Создатели курсов';
 $string['auth_ldapdescription'] = 'Этот метод используется для аутентификации пользователя на сервере LDAP. Если пользователем указаны корректные логин и пароль, в базе данных Moodle создается новая пользовательская учетная запись. Этот модуль может считывать атрибуты пользователя из cервера LDAP и заполнять поля в Moodle. При дальнейших входах в систему на LDAP сервере будут проверяться только логин и пароль.';
-$string['auth_ldap_expiration_desc'] = 'Выберите «no» для отключения проверки срока действия пароля или «LDAP» для получения срока действия пароля с сервера LDAP';
+$string['auth_ldap_expiration_desc'] = 'Выберите «{$a->no}» для отключения проверки срока действия пароля или «{$a->ldapserver}» для получения срока действия пароля с сервера LDAP';
 $string['auth_ldap_expiration_key'] = 'Срок действия пароля';
 $string['auth_ldap_expiration_warning_desc'] = 'За сколько дней предупреждать об окончании срока действия пароля.';
 $string['auth_ldap_expiration_warning_key'] = 'Предупреждение об окончании срока действия пароля';
@@ -114,10 +114,12 @@ $string['auth_ntlmsso_subnet_key'] = 'Подсеть';
 $string['auth_ntlmsso_type'] = 'Тип аутентификации, настроенный на веб-сервере (если есть сомнения, выберите NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Тип аутентификации';
 $string['connectingldap'] = 'Подключение к серверу LDAP ...';
+$string['connectingldapsuccess'] = 'Соединение с LDAP-сервером прошло успешно';
 $string['creatingtemptable'] = 'Создание временной таблицы {$a}';
 $string['didntfindexpiretime'] = 'Функция password_expire() не смогла определить срок действия пароля.';
 $string['didntgetusersfromldap'] = 'Ошибка - не удалось получить ни одного пользователя с сервера LDAP - выход.';
 $string['gotcountrecordsfromldap'] = 'Получено записей из LDAP - {$a}';
+$string['ldapnotconfigured'] = 'URL-адрес хоста LDAP в настоящее время не настроен';
 $string['morethanoneuser'] = 'Странно! В LDAP найдено более одной учетной записи пользователя. Используется только первая.';
 $string['needbcmath'] = 'Для расчета срока действия пароля в Active Directory необходимо установленное расширение BCMath языка PHP';
 $string['needmbstring'] = 'Для смены паролей в Active Directory необходимо расширение mbstring языка PHP';
@@ -132,7 +134,7 @@ $string['ntlmsso_attempting'] = 'Попытка входа по технолог
 $string['ntlmsso_failed'] = 'Автоматический вход не удался, попробуйте использовать обычную страницу входа ...';
 $string['ntlmsso_isdisabled'] = 'Технология NTLM SSO отключена.';
 $string['ntlmsso_unknowntype'] = 'Неизвестный тип NTLM SSO!';
-$string['pagedresultsnotsupp'] = 'Постраничный вывод результатов LDAP не поддерживаются (либо эта функция не поддерживается Вашей версией PHP, либо Вы настроили Moodle на использование протокола LDAP версии 2)';
+$string['pagedresultsnotsupp'] = 'Постраничный вывод результатов LDAP не поддерживаются (либо эта функция не поддерживается Вашей версией PHP, либо Вы настроили Moodle на использование протокола LDAP версии 2, либо Moodle не может связаться с вашим сервером LDAP)';
 $string['pagesize'] = 'Убедитесь, что это значение меньше, чем предельный размер результирующего набора сервера LDAP (максимальное количество записей, которые могут быть возвращены в одном запросе).';
 $string['pagesize_key'] = 'Размер страницы';
 $string['pluginname'] = 'Сервер LDAP';

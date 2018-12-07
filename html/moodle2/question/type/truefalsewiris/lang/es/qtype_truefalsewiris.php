@@ -34,3 +34,4 @@ $string['pluginname_help'] = 'Igual que la pregunta estándar de Verdadero/Falso
 $string['pluginnamesummary'] = 'Igual que la pregunta estándar de Verdadero/Falso, pero se pueden crear enunciados y retroalimentaciones múltiples insertando variables con números, fórmulas o gráficas. También puede definir dinámicamente la Respuesta correcta.';
 $string['pluginnameediting'] = 'Editando una pregunta de verdadero/falso - Matemáticas y Ciencias por WIRIS';
 $string['pluginnameadding'] = 'Agregando una pregunta de verdadero/falso - Matemáticas y Ciencias por WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes True/False question type does not effect or store any data itself.';

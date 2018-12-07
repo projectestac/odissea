@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,8 +30,8 @@ $string['allowmultiple'] = 'Permitir selecionar mais do que uma opção';
 $string['allowupdate'] = 'Permitir mudar a resposta';
 $string['answered'] = 'Respondido';
 $string['atleastoneoption'] = 'Tem de inserir pelo menos uma opção de resposta';
-$string['calendarend'] = 'Sondagem fecha a {$a}';
-$string['calendarstart'] = 'Sondagem abre a {$a}';
+$string['calendarend'] = 'Fecha a {$a}';
+$string['calendarstart'] = 'Abre a {$a}';
 $string['cannotsubmit'] = 'Desculpe, surgiu um problema ao submeter a sua escolha. Por favor, tente novamente.';
 $string['choice'] = 'Opção de resposta';
 $string['choiceactivityname'] = 'Sondagem: {$a}';
@@ -70,6 +70,10 @@ $string['expired'] = 'Esta atividade terminou em {$a} e já não está disponív
 $string['full'] = 'Completa';
 $string['havetologin'] = 'Tem que estar autenticado antes de submeter a sua resposta';
 $string['includeinactive'] = 'Inclui respostas de utilizadores inativos e/ou suspensos';
+$string['indicator:cognitivedepth'] = 'Compreensão da sondagem';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Sondagem.';
+$string['indicator:socialbreadth'] = 'Socialização da Sondagem';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Sondagem.';
 $string['limit'] = 'Limite máximo de respostas';
 $string['limitanswers'] = 'Limitar o número de respostas permitidas';
 $string['limitanswers_help'] = 'Esta opção permite limitar o número máximo de participantes que podem escolher cada opção de resposta da sondagem. Uma vez definido o limite máximo de escolhas, quando o mesmo for alcançado numa opção de escolha, mais ninguém poderá escolher essa opção.
@@ -89,7 +93,7 @@ $string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Sondagens';
 $string['moveselectedusersto'] = 'Mover os utilizadores selecionados para...';
 $string['multiplenotallowederror'] = 'Múltiplas respostas não são permitidas nesta sondagem';
-$string['mustchooseone'] = 'Deve selecionar uma opção de resposta antes de gravar.';
+$string['mustchooseone'] = 'Tem de selecionar uma opção de resposta antes de guardar.';
 $string['noguestchoose'] = 'Lamentamos, mas os visitantes não podem responder à sondagem';
 $string['noresultsviewable'] = 'Os resultados da sondagem ainda não estão disponíveis.';
 $string['notanswered'] = 'Ainda não respondeu';
@@ -97,6 +101,7 @@ $string['notenrolledchoose'] = 'Apenas utilizadores autenticados estão autoriza
 $string['notopenyet'] = 'Lamentamos mas esta atividade só estará disponível em {$a}';
 $string['numberofuser'] = 'Número de respostas';
 $string['numberofuserinpercentage'] = 'Percentagem de respostas';
+$string['openafterclose'] = 'Indicou uma data de abertura posterior à data de fecho';
 $string['option'] = 'Opção de resposta';
 $string['optionno'] = 'Opção {no}';
 $string['options'] = 'Opções';
@@ -105,6 +110,11 @@ $string['pluginadministration'] = 'Administração da Sondagem';
 $string['pluginname'] = 'Sondagem';
 $string['previewonly'] = 'Esta é apenas uma pré-visualização das opções disponíveis para esta atividade. Não poderá submeter a sua escolha até {$a}.';
 $string['privacy'] = 'Privacidade dos resultados';
+$string['privacy:metadata:choice_answers'] = 'Informações sobre as respostas escolhidas pelo utilizador para uma determinada atividade Sondagem';
+$string['privacy:metadata:choice_answers:choiceid'] = 'O ID da atividade Sondagem à qual o utilizador está a responder';
+$string['privacy:metadata:choice_answers:optionid'] = 'O ID da opção selecionada pelo utilizador';
+$string['privacy:metadata:choice_answers:timemodified'] = 'O registo de data/hora a indicar quando a Sondagem foi modificada pelo utilizador';
+$string['privacy:metadata:choice_answers:userid'] = 'O ID do utilizador que responde a esta atividade de Sondagem';
 $string['publish'] = 'Mostrar resultados';
 $string['publishafteranswer'] = 'Mostrar resultados aos alunos após enviarem a sua resposta';
 $string['publishafterclose'] = 'Mostrar resultados aos alunos só após o fim da sondagem';
@@ -118,7 +128,7 @@ $string['responses'] = 'Respostas';
 $string['responsesresultgraphheader'] = 'Gráfico';
 $string['responsesto'] = 'Respostas para {$a}';
 $string['results'] = 'Resultados';
-$string['savemychoice'] = 'Gravar a minha resposta';
+$string['savemychoice'] = 'Guardar a minha resposta';
 $string['search:activity'] = 'Sondagem - informações da atividade';
 $string['showpreview'] = 'Mostrar pré-visualização';
 $string['showpreview_help'] = 'Permitir que os alunos pré-visualizem as opções disponíveis antes da Sondagem estar disponível para submissão.';
@@ -129,5 +139,6 @@ $string['spacesleft'] = 'Número de respostas disponíveis';
 $string['taken'] = 'Completa';
 $string['userchoosethisoption'] = 'Utilizadores que escolheram esta opção';
 $string['viewallresponses'] = 'Ver {$a} respostas';
+$string['viewchoices'] = 'Visualizar opções';
 $string['withselected'] = 'Com os selecionados';
 $string['yourselection'] = 'A sua resposta';

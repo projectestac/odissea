@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'langconfig', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   langconfig
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,7 +43,7 @@ $string['strftimedatefullshort'] = '%d/%m/%y';
 $string['strftimedateshort'] = '%d %B';
 $string['strftimedatetime'] = '%d %B %Y, %H:%M';
 $string['strftimedatetimeshort'] = '%d/%m/%Y %H:%M';
-$string['strftimedaydate'] = '%A, %d %B %Y';
+$string['strftimedaydate'] = '%A, %d de %B de %Y';
 $string['strftimedaydatetime'] = '%A, %d %B %Y, %H:%M';
 $string['strftimedayshort'] = '%A %B %d';
 $string['strftimedaytime'] = '%a, %H:%M';
@@ -51,6 +51,8 @@ $string['strftimemonthyear'] = '%B %Y';
 $string['strftimerecent'] = '%d %b, %H:%M';
 $string['strftimerecentfull'] = '%a, %d %b %Y, %H:%M';
 $string['strftimetime'] = '%H:%M';
+$string['strftimetime12'] = '%I:%M %p';
+$string['strftimetime24'] = '%H:%M';
 $string['thisdirection'] = 'ltr';
 $string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = 'Català';

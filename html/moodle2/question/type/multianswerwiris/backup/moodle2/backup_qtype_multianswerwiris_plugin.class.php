@@ -17,7 +17,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Provides the information to backup multianswerwiris questions
+ * Provides the information to backup multianswerwiris qtypes
  */
 
 class backup_qtype_multianswerwiris_plugin extends backup_qtype_multianswer_plugin {

@@ -15,12 +15,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This class implements WIRIS Quizzes LockProvider interface
- * in order to manage concurrent calls to WIRIS Quizzes services
+ * This class implements Wiris Quizzes LockProvider interface
+ * in order to manage concurrent calls to Wiris Quizzes services
  *
  * @package    qtype
  * @subpackage wq
- * @copyright  Maths for More S.L. <info@wiris.com>
+ * @copyright  WIRIS Europe (Maths for more S.L)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

@@ -93,7 +93,6 @@ if (($edulevel != -1)) {
 if ($origin !== '') {
     $params['origin'] = $origin;
 }
-
 // Legacy store hack, as edulevel is not supported.
 if ($logreader == 'logstore_legacy') {
     $params['edulevel'] = -1;

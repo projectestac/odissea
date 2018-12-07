@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -95,7 +95,7 @@ $string['filenotuploadederror'] = 'El archivo \'{$a}\' no se pudo subir correcta
 $string['files'] = 'Ficheros';
 $string['filtername'] = 'Auto-enlace de página Wiki';
 $string['firstpagetitle'] = 'Nombre de la primera página';
-$string['firstpagetitle_help'] = 'Título de la primera página del wiki.';
+$string['firstpagetitle_help'] = 'Título de la primera página del wiki. Una vez que el wiki es creado, el título ya no podrá ser cambiado.';
 $string['forceformat'] = 'Forzar formato';
 $string['forceformat_help'] = 'Si se fuerza el formato (casilla marcada), no hay opción para elegir un formato cuando se edite la página wiki.';
 $string['format'] = 'Formato';
@@ -119,6 +119,10 @@ $string['incorrectdeleteversions'] = 'Las versiones de página indicadas para el
 $string['incorrectpageid'] = 'El ID de página es incorrecto.';
 $string['incorrectsubwikiid'] = 'El ID de subwiki es incorrecto';
 $string['incorrectwikiid'] = 'El ID de la wiki es incorrecto.';
+$string['indicator:cognitivedepth'] = 'Wiki cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Wiki.';
+$string['indicator:socialbreadth'] = 'Wiki social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Wiki.';
 $string['individualpagedoesnotexist'] = 'La página individual wiki no existe';
 $string['insertcomment'] = 'Insertar comentario';
 $string['insertimage'] = 'Inserta una imagen...';
@@ -126,7 +130,7 @@ $string['insertimage_help'] = 'Este menú desplegable insertará una imagen en e
 $string['invalidlock'] = 'Esta página ya está bloqueada por otro usuario.';
 $string['invalidparameters'] = 'Se han suministrado parámetros no válidos.';
 $string['invalidsection'] = 'Sección no válida.';
-$string['invalidsesskey'] = 'La Sesskey suministrada no es válida. Por favor, vuelva a enviar los datos.';
+$string['invalidsesskey'] = 'Su sesión muy probablemente ha caducado. Por favor tome nota de sus ediciones e inicie sesión de nuevo.';
 $string['javascriptdisabledlocks'] = 'Javascript está desactivado en su navegador y los cierres no están funcionando. Los cambios que realice pueden no guardarse correctamente.';
 $string['links'] = 'Enlaces';
 $string['listall'] = 'Mostrar todo';
@@ -234,7 +238,6 @@ $string['special'] = 'Especial';
 $string['tableofcontents'] = 'Tabla de contenidos';
 $string['tagarea_wiki_pages'] = 'Páginas Wiki';
 $string['tagsdeleted'] = 'Las marcas wiki se han eliminado';
-$string['tagtitle'] = 'Ver la etiqueta "{$a}"';
 $string['teacherrating'] = 'Clasificación por profesor';
 $string['timesrating'] = 'Esta página ha sido clasificada  {$a->c} veces con un promedio de: {$a->s}';
 $string['updatedpages'] = 'Páginas actualizadas';

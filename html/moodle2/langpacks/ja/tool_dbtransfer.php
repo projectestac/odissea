@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_dbtransfer', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_dbtransfer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['exportdata'] = 'データをエクスポートする';
 $string['notargetconectexception'] = '申し訳ございません、ターゲットデータベースに接続できません。';
 $string['options'] = 'オプション';
 $string['pluginname'] = 'データベースの転送';
+$string['privacy:metadata'] = 'データ転送プラグインはどのような個人データも保存しません。';
 $string['targetdatabase'] = 'ターゲットデータベース';
 $string['targetdatabasenotempty'] = 'ターゲットデータベースには指定された接頭辞のテーブルを含むことはできません!';
 $string['transferdata'] = 'データを転送する';

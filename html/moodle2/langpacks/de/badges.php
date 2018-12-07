@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'badges', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,7 +56,7 @@ $string['anymethodcourseset'] = 'Einer der gewählten Kurse abgeschlossen ist';
 $string['anymethodmanual'] = 'Eine der gewählten Rollen die Auszeichnung verleiht';
 $string['anymethodprofile'] = 'Eines der gewählten Nutzerprofilfelder vollständig ist';
 $string['archivebadge'] = 'Möchten Sie die Auszeichnung \'{$a}\' löschen, aber bestehende Auszeichnungen behalten?';
-$string['archiveconfirm'] = 'Löschen und vorhandene Auszeichenungen behalten';
+$string['archiveconfirm'] = 'Löschen und vorhandene Auszeichnungen behalten';
 $string['archivehelp'] = '<p>Diese Option meint, dass die Auszeichnung \'deaktiviert\' wird. Sie erscheint nicht mehr in der Liste der aktiven Auszeichnungen. Nutzer/innen können die Auszeichnung nicht mehr neu erhalten.Bereits früher vergebene Auszeichnungen belieben weiterhin gültig und sichtbar. Sie sind auf der Profilseite sichtbar und können auch exportiert werden.</p><p>Wenn Nutzer/innen ihre Auszeichnungen behalten sollen, muss diese Option gewählt werden. Die Auszeichnung darf nicht gelöscht werden. </p>';
 $string['attachment'] = 'Auszeichnung an Mitteilung anhängen';
 $string['attachment_help'] = 'Wenn Sie diese Checkbox markieren, dann wird die Auszeichnung als Anhang zur E-Mail hinzugefügt, die an den Ausgezeichneten versendet wird. E-Mail-Dateianhänge müssen systemweit aktiviert werden, um diese Option zu nutzen. Website-Administration -> Plugins -> Mitteilungen -> E-Mail.';
@@ -298,7 +298,7 @@ $string['externalbadgesp'] = 'Auszeichnungen von anderen Websites';
 $string['externalconnectto'] = 'Wenn Sie Ihre externen Auszeichnungen anzeigen möchten, müssen Sie eine <a href="{$a}">Verbindung zu einem geeigneten Backpack</a> herstellen.';
 $string['fixed'] = 'Festes Datum';
 $string['hiddenbadge'] = 'Diese Information ist zur Auszeichnung nicht verfügbar.';
-$string['issuancedetails'] = 'Ablauf festlegen';
+$string['issuancedetails'] = 'Ablaufdatum';
 $string['issuedbadge'] = 'Auszeichnungsinformationen';
 $string['issuerdetails'] = 'Verleiher';
 $string['issuername'] = 'Verleiher';
@@ -368,6 +368,34 @@ $string['personaconnection_help'] = 'Persona ist ein System, um Personen über W
 Weitere Information: <a href="https://login.persona.org/about">https://login.persona.org/about</a>.';
 $string['potentialrecipients'] = 'Mögliche Empfänger/innen';
 $string['preferences'] = 'Auszeichnungen konfigurieren';
+$string['privacy:metadata:backpack'] = 'Datensatz des Backpacks des Nutzers (Auszeichnungen)';
+$string['privacy:metadata:backpack:backpackuid'] = 'Eindeutiger Identifier des Backpacks';
+$string['privacy:metadata:backpack:backpackurl'] = 'Backpack-URL';
+$string['privacy:metadata:backpack:email'] = 'E-Mail-Adresse, die mit dem Backpack verbunden ist.';
+$string['privacy:metadata:backpack:userid'] = 'ID-des Nutzers zum Backpack';
+$string['privacy:metadata:badge'] = 'Eine Sammlung von Auszeichnungen';
+$string['privacy:metadata:badge:timecreated'] = 'Erstellungsdatum der Auszeichnung';
+$string['privacy:metadata:badge:timemodified'] = 'Zeit der letzten Bearbeitung der Auszeichnung';
+$string['privacy:metadata:badge:usercreated'] = 'ID des Nutzers, der die Auszeichnung erstellt hat.';
+$string['privacy:metadata:badge:usermodified'] = 'ID des Nutzers, der die Auszeichnung bearbeitet hat.';
+$string['privacy:metadata:criteriamet'] = 'Sammlung von Kriterien, die erreicht wurden';
+$string['privacy:metadata:criteriamet:datemet'] = 'Das Datum, an dem das Kriterium erfüllt wurde';
+$string['privacy:metadata:criteriamet:userid'] = 'ID des Nutzers, der die Kriterien erfüllt hat';
+$string['privacy:metadata:external:backpacks'] = 'Übertragene Informationen als ein Nutzer Daten an Backpack übergab';
+$string['privacy:metadata:external:backpacks:badge'] = 'Name der Auszeichnung';
+$string['privacy:metadata:external:backpacks:description'] = 'Beschreibung der Auszeichnung';
+$string['privacy:metadata:external:backpacks:image'] = 'Bild der Auszeichnung';
+$string['privacy:metadata:external:backpacks:issuer'] = 'Einige Informationen über den Aussteller der Auszeichnung';
+$string['privacy:metadata:external:backpacks:url'] = 'Die Moodle-URL, unter der ausgestellte Auszeichnungen angezeigt werden.';
+$string['privacy:metadata:issued'] = 'Liste der ausgestellten Auszeichnungen';
+$string['privacy:metadata:issued:dateexpire'] = 'Ablaufdatum der Auszeichnung';
+$string['privacy:metadata:issued:dateissued'] = 'Datum der Auszeichnung';
+$string['privacy:metadata:issued:userid'] = 'ID der Nutzers, der eine Auszeichnung erhalten hat';
+$string['privacy:metadata:manualaward'] = 'Liste manueller Auszeichnungen';
+$string['privacy:metadata:manualaward:datemet'] = 'Das Datum, an dem die Auszeichnung vergeben wurde';
+$string['privacy:metadata:manualaward:issuerid'] = 'ID des Nutzers, der die Auszeichnung ausstellt';
+$string['privacy:metadata:manualaward:issuerrole'] = 'Rolle des Nutzers, der die Auszeichnung ausstellt';
+$string['privacy:metadata:manualaward:recipientid'] = 'ID des Nutzers, der die manuelle Auszeichnung erhält';
 $string['recipientdetails'] = 'Empfängerdetails';
 $string['recipientidentificationproblem'] = 'Empfänger/in dieser Auszeichnung kann unter den vorhandenen Nutzer/innen nicht gefunden werden';
 $string['recipients'] = 'Auszeichnungsempfänger/innen';

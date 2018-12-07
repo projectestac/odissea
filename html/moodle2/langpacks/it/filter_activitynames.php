@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_activitynames', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_activitynames', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_activitynames
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Auto link ai nomi delle attività';
+$string['filtername'] = 'Collegamento automatico ai nomi delle attività';
+$string['privacy:metadata'] = 'Il plugin "Collegamento automatico ai nomi delle attività" non memorizza dati personali.';

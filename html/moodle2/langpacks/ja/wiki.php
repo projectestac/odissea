@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,6 +121,10 @@ $string['incorrectdeleteversions'] = '削除するために提供されたペー
 $string['incorrectpageid'] = 'ページIDが正しくありません。';
 $string['incorrectsubwikiid'] = 'Subwiki IDが正しくありません。';
 $string['incorrectwikiid'] = 'Wiki IDが正しくありません。';
+$string['indicator:cognitivedepth'] = 'Wiki認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はWiki活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'Wiki社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はWiki活動で学生が到達した社会的広がりに基づきます。';
 $string['individualpagedoesnotexist'] = '個人Wikiページは存在していません。';
 $string['insertcomment'] = 'コメントを追加する';
 $string['insertimage'] = 'イメージを挿入する ...';
@@ -128,7 +132,7 @@ $string['insertimage_help'] = 'ドロップダウンリストによりイメー�
 $string['invalidlock'] = 'このページは別のユーザにすでにロックされています。';
 $string['invalidparameters'] = '無効なパラメータが渡されました。';
 $string['invalidsection'] = 'セクションが正しくありません。';
-$string['invalidsesskey'] = '送信されたセッションキーが有効ではありません。データを再度送信してください。';
+$string['invalidsesskey'] = '恐らく、あなたのセッションはタイムアウトしたようです。あなたの編集を書き留めて再度ログインしてください。';
 $string['javascriptdisabledlocks'] = 'あなたのブラウザのJavaScriptが無効にされているためロックが動作していません。あなたの変更は正常に保存されない可能性があります。';
 $string['links'] = 'リンク';
 $string['listall'] = 'すべてを一覧表示する';
@@ -209,6 +213,31 @@ $string['pluginname'] = 'Wiki';
 $string['prettyprint'] = 'プリンタフレンドリーバージョン';
 $string['previewwarning'] = 'これはプレビューページです。まだ変更は保存されていません。';
 $string['print'] = '印刷';
+$string['privacy:metadata:core_comment'] = 'Wikiページのコメントです。';
+$string['privacy:metadata:core_files'] = 'サブWikiに添付されたファイルです。';
+$string['privacy:metadata:core_tag'] = 'Wikiページに関連するタグです。';
+$string['privacy:metadata:wiki_locks'] = 'Wiki編集ロックの一時保存です。';
+$string['privacy:metadata:wiki_locks:lockedat'] = 'ロックされた日時です。';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'ロックされたーページセクション名です。';
+$string['privacy:metadata:wiki_locks:userid'] = 'ページをロックしたユーザです。';
+$string['privacy:metadata:wiki_pages'] = 'Wikiページに関する情報です。';
+$string['privacy:metadata:wiki_pages:cachedcontent'] = 'HTMLフォーマットのキャッシュコンテンツです。';
+$string['privacy:metadata:wiki_pages:pageviews'] = 'ページが閲覧された回数です。';
+$string['privacy:metadata:wiki_pages:readonly'] = 'ページがリードオンリーであるか示します';
+$string['privacy:metadata:wiki_pages:timecreated'] = 'ページの初回作成日時です。';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'ページの最終更新日時です。';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'ページの最終表示日時です。';
+$string['privacy:metadata:wiki_pages:title'] = 'ページ名です。';
+$string['privacy:metadata:wiki_pages:userid'] = '最後にページを修正したユーザです。';
+$string['privacy:metadata:wiki_subwikis'] = 'サブWikiに関する情報です (グループまたは個人モードの場合)。';
+$string['privacy:metadata:wiki_subwikis:groupid'] = 'サブWikiを所有するグループです。';
+$string['privacy:metadata:wiki_subwikis:userid'] = 'サブWikiを所有するユーザです (個人Wiki)。';
+$string['privacy:metadata:wiki_versions'] = 'Wikiページ履歴に関する情報です。';
+$string['privacy:metadata:wiki_versions:content'] = '改訂版コンテンツ';
+$string['privacy:metadata:wiki_versions:contentformat'] = '改訂版コンテンツフォーマット';
+$string['privacy:metadata:wiki_versions:timecreated'] = '改訂版が作成された日時です。';
+$string['privacy:metadata:wiki_versions:userid'] = '改訂版を作成したユーザです。';
+$string['privacy:metadata:wiki_versions:version'] = 'バージョンナンバーです。';
 $string['rated'] = 'このページに対するあなたの評価: {$a}';
 $string['rating'] = '評価';
 $string['ratingmode'] = '評価モード';
@@ -236,7 +265,6 @@ $string['special'] = '特別';
 $string['tableofcontents'] = '目次';
 $string['tagarea_wiki_pages'] = 'Wikiページ';
 $string['tagsdeleted'] = 'Wikiタグが削除されました。';
-$string['tagtitle'] = '{$a} タグを表示する';
 $string['teacherrating'] = '教師の評価';
 $string['timesrating'] = 'このページは {$a->c} 回評価されました。評価平均は {$a->s} です。';
 $string['updatedpages'] = '更新されたページ';

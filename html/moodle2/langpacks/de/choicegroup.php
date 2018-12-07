@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choicegroup', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   choicegroup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -118,6 +118,7 @@ $string['pleasesetonegroup'] = 'Mindestens eine Gruppe in diesem Kurs anlegen';
 $string['pluginadministration'] = 'Wahladministration';
 $string['pluginname'] = 'Gruppenwahl';
 $string['privacy'] = 'Anonymität';
+$string['privacy:metadata'] = 'Das Gruppenwahl Plugin speichert keine personenbezogenen Daten. Alle Nutzerdaten sind im Gruppen-Subsystem von Moodle gespeichert (core_group).';
 $string['publish'] = 'Ergebnisse veröffentlichen';
 $string['publishafteranswer'] = 'Nach der eigenen Stimmabgabe';
 $string['publishafterclose'] = 'Ergebnisse erst anzeigen, nachdem die Wahl beendet ist';

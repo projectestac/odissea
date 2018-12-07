@@ -19,8 +19,7 @@ Feature: Calculated grade items can be used in the gradebook
       | student1 | C1     | student        |
       | student2 | C1     | student        |
     And I log in as "admin"
-    And I am on site homepage
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to "Setup > Gradebook setup" in the course gradebook
 
   @javascript
@@ -52,7 +51,7 @@ Feature: Calculated grade items can be used in the gradebook
 
   @javascript
   Scenario: Changing max grade for a category item with a calculation that has existing grades will display the same points with the new max grade values immediately.
-  Given I press "Add category"
+    Given I press "Add category"
     And I set the following fields to these values:
       | Category name | Calc cat |
     And I press "Save changes"

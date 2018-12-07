@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_basic', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scormreport_basic', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   scormreport_basic
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '基本レポート';
+$string['privacy:metadata:preference:scorm_report_detailed'] = 'SCORM基本レポートの詳細を追跡するかどうか指定します。';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'SCORMレポートに表示されるユーザ数です。';

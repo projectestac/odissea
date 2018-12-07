@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hotpot', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   hotpot
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abandoned'] = 'Abgebrochen';
+$string['abandonhotpot'] = 'Ihre bisherigen Ergebnisse werden gespeichert, Sie können diese Aktivität jedoch nicht später fortsetzen oder neu starten.';
 $string['activitycloses'] = 'Aktivität endet';
 $string['activitygrade'] = 'Aktivitätsbewertung';
 $string['activityopens'] = 'Aktivität startet';
@@ -42,9 +43,12 @@ $string['addquizchain_help'] = 'Sollen alle HotPots aus der Quizreihe hinzugefü
 Falls die Quelle ein **Verzeichnis** ist, werden alle erkennbaren HotPots aus dem Verzeichnis als Quizreihe mit gleichen Einstellungen zum Kurs hinzugefügt.
 
 Falls die Quelle eine **Unitdatei** ist, z.B. HotPot Masher oder eine Datei index.html, werden alle HotPots aus der Unitdatei als Quizreihe mit gleichen Einstellungen zum Kurs hinzugefügt.';
+$string['allowpaste'] = 'Einfügen erlauben';
+$string['allowpaste_help'] = 'Wenn diese Einstellung aktiviert ist, können Teilnehmer/innen kopieren, einfügen und Text in Texteingabefelder ziehen.';
 $string['allowreview'] = 'Rückblick';
 $string['allowreview_help'] = 'Diese Einstellung legt fest, dass Teilnehmer/innen eigene Versuche erneut anschauen dürfen, nachdem das Quiz beendet wurde.';
 $string['analysisreport'] = 'Auswertung';
+$string['attempted'] = 'Versucht';
 $string['attemptlimit'] = 'Limit für Versuche';
 $string['attemptlimit_help'] = 'Diese Einstellung legt die maximale Anzahl von Versuchen für die Durchführung dieser HotPot-Aktivität fest.';
 $string['attemptnumber'] = 'Versuch Nr.';
@@ -59,6 +63,8 @@ $string['bodystylescolor'] = 'Textfarbe';
 $string['bodystylesfont'] = 'Schriftart und -größe';
 $string['bodystylesmargin'] = 'Linker und rechter Rand';
 $string['cacherecords'] = 'Datensätze im HotPot-Cache';
+$string['canrestarthotpot'] = 'Ihre bisherigen Ergebnisse werden gespeichert und Sie können "{$a}" später wiederholen';
+$string['canresumehotpot'] = 'Ihre bisherigen Ergebnisse werden gespeichert und Sie können "{$a}" später fortsetzen';
 $string['checks'] = 'Kontrolle';
 $string['checksomeboxes'] = 'Bitte wählen Sie etwas aus';
 $string['clearcache'] = 'HotPot-Cache löschen';
@@ -71,6 +77,7 @@ $string['clicktrailreport'] = 'Klickpfade';
 $string['closed'] = 'Diese Aktivität ist beendet.';
 $string['clues'] = 'Spurensuche';
 $string['completed'] = 'Beendet';
+$string['completioncompleted'] = 'Erfordert Status "beendet"';
 $string['configbodystyles'] = 'Standardmäßig werden die Designeinstellungen von HotPot durch die Designeinstellungen von Moodle überschrieben. Alternativ können Sie hier auswählen, welche Designeinstellungen aus HotPot vorrangig behandelt werden sollen.';
 $string['configenablecache'] = 'Die Nutzung des HotPot-Caches kann die Quizbereitstellung entscheidend beschleunigen.';
 $string['configenablecron'] = 'Zu welchen Zeiten soll das HotPot-Cron-Script ausgeführt werden?';
@@ -170,6 +177,21 @@ $string['entrypage_help'] = 'Soll den Teilnehmer/innen eine Anfangsseite gezeigt
 Trainer/innen bekommen die Anfangsseite immer angezeigt, wenn sie auf die Übersicht zugreifen oder die Quizseite bearbeiten.';
 $string['entrytext'] = 'Text der Anfangsseite';
 $string['entry_title'] = 'Kapitelname als Titel';
+$string['event_attempt_reviewed'] = 'HotPot Versuch überprüft';
+$string['event_attempt_reviewed_description'] = 'Nutzer/in mit der ID "{$a->userid}" hat einen Versuch in der HotPot-Aktivität mit der Kursmodul-ID "{$a->cmid}" überprüft';
+$string['event_attempt_reviewed_explanation'] = 'Nutzer/in hat gerade einen Versuch in einer HotPot-Aktivität überprüft';
+$string['event_attempt_started'] = 'HotPot Versuch gestartet';
+$string['event_attempt_started_description'] = 'Nutzer/in mit der ID "{$a->userid}" hat einen Versuch in der HotPot-Aktivität mit der Kursmodul-ID "{$a->cmid}" gestartet';
+$string['event_attempt_started_explanation'] = 'Nutzer/in hat gerade einen Versuch in einer HotPot-Aktivität gestartet';
+$string['event_attempt_submitted'] = 'HotPot Versuch abgegeben';
+$string['event_attempt_submitted_description'] = 'Nutzer/in mit der ID "{$a->userid}" hat einen Versuch in der HotPot-Aktivität mit der Kursmodul-ID "{$a->cmid}" abgegeben';
+$string['event_attempt_submitted_explanation'] = 'Nutzer/in hat gerade einen Versuch in einer HotPot-Aktivität abgegeben';
+$string['event_base'] = 'HotPot Ereignis erkannt';
+$string['event_base_description'] = 'Nutzer/in mit der ID "{$a->userid}" hat ein Ereignis in der HotPot-Aktivität mit der Kursmodul-ID "{$a->cmid}" gestartet';
+$string['event_base_explanation'] = 'Ein Ereignis wurde vom HotPot Modul erkannt';
+$string['event_report_viewed'] = 'HotPot Bericht angesehen';
+$string['event_report_viewed_description'] = 'Nutzer/in mit der ID "{$a->userid}" hat einen Bericht zu Versuchen in der HotPot-Aktivität mit der Kursmodul-ID "{$a->cmid}" angesehen';
+$string['event_report_viewed_explanation'] = 'Nutzer/in hat gerade einen Bericht zu Versuchen in einer HotPot-Aktivität angesehen';
 $string['exit_areyouok'] = 'Hallo, sind Sie noch da?';
 $string['exit_attemptscore'] = 'Ihre Wertung für diesen Versuch ist {$a}';
 $string['exitcm'] = 'Nächste Aktivität';
@@ -309,6 +331,7 @@ $string['maxeventlength'] = 'Maximalzahl von Tagen pro Kalendereintrag';
 $string['mediafilter_hotpot'] = 'HotPot Mediafilter';
 $string['mediafilter_moodle'] = 'Moodle Mediafilter';
 $string['migratingfiles'] = 'HotPot-Dateien umwandeln';
+$string['migratinglogs'] = 'Hot Potatoes Logs migrieren';
 $string['missingsourcetype'] = 'Im HotPot-Datensatz fehlt der Quelltyp';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'Das Modul \'Hotpot\' ermöglicht es, interaktive Lernmaterialien einzubinden und die Übungsergebnisse in Moodle zu übernehmen.
@@ -373,6 +396,7 @@ $string['noreview'] = 'Sie dürfen keine Details zu diesem Versuch ansehen.';
 $string['noreviewafterclose'] = 'Dieses Quiz wurde beendet. Sie dürfen zukünftig keine Details mehr zu diesem Versuch ansehen.';
 $string['noreviewbeforeclose'] = 'Sie dürfen bis {$a} keine Details zu diesem Versuch ansehen.';
 $string['nosourcefilesettings'] = 'Im HotPot-Datensatz fehlt die Angabe zur Quelldatei';
+$string['notattemptedyet'] = 'Bis jetzt nicht versucht';
 $string['notavailable'] = 'Diese Aktivität ist aktuell für Sie nicht verfügbar.';
 $string['outputformat'] = 'Format';
 $string['outputformat_best'] = 'Optimal';
@@ -382,6 +406,8 @@ Die verfügbaren Ausgabeformate sind abhängig vom Typ der Quelldatei. Manche Da
 
 Die Einstellung "Optimal" zeigt den Inhalt jeweils angepasst für den verwendeten Browser an.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze (v6) html';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) aus html';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) aus html';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze HP6 xml: ANCT-Scan';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze HP6 xml: DropDown';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze HP6 xml: FindIt (a)';
@@ -424,7 +450,12 @@ $string['pressoktocontinue'] = 'Drücken Sie \'OK\', um weiterzumachen, oder \'A
 $string['questionshort'] = 'Frage {$a}';
 $string['quizname_help'] = 'Hilfetext für den Quiznamen';
 $string['quizzes'] = 'Quizes';
+$string['responses'] = 'Antworten';
 $string['responsesreport'] = 'Antworten';
+$string['reviewafterattempt'] = 'Überprüfung nach Versuch erlauben';
+$string['reviewafterclose'] = 'Überprüfung nach HotPot-Abschluss erlauben';
+$string['reviewduringattempt'] = 'Überprüfung während des Versuchs erlauben';
+$string['reviewoptions'] = 'Prüfoptionen';
 $string['score'] = 'Bewertung';
 $string['scoresreport'] = 'Bewertungsübersicht';
 $string['selectattempts'] = 'Versuche auswählen';
@@ -513,8 +544,11 @@ $string['title_help'] = 'Diese Option legt den Titel fest, der auf der Webseite 
 
 **Pfad der Quelldatei**
 : Der Pfad der Quelldatei wird vollständig (mit allen Verzeichnisnamen) als Titel der Webseite verwendet.';
+$string['toolsindex'] = 'HotPot Tools Index';
 $string['unitname_help'] = 'Hilfetext für den Abschnittsnamen';
+$string['unrecognizedsourcefile'] = 'Sorry, das HotPot Modul konnte den Typ der Quelldatei nicht erkennen: {$a}';
 $string['updated'] = 'Aktualisiert';
+$string['updatinggrades'] = 'HotPot Bewertungen werden aktualisiert';
 $string['usefilters'] = 'Filter nutzen';
 $string['usefilters_help'] = 'Wenn diese Option aktiviert ist, werden Inhalte von den Moodlefiltern verarbeitet, bevor sie angezeigt werden.';
 $string['useglossary'] = 'Glossar';

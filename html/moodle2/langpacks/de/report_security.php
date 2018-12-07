@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_security', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -78,7 +78,7 @@ $string['check_noauth_details'] = '<p>Das Plugin "Ohne Authentifizierung" ist ni
 $string['check_noauth_error'] = 'Das Plugin "Ohne Authentifizierung" darf auf produktiven Seiten nicht verwendet werden';
 $string['check_noauth_name'] = 'Ohne Authentifizierung';
 $string['check_noauth_ok'] = 'Das Plugin "Ohne Authentifizierung" ist ausgeschaltet.';
-$string['check_nodemodules_details'] = '<p>Das Verzeichnis <em>{$a->path}</em> enthält node.js Module und weitere Elemente, typischerweise durch das NPM Utility installiert. Diese Module können für die Entwicklung von Moodle erforderlich sein. Sie sind für den Betrieb von Moodle nicht erforderlich und können sogar gefährlich sein.</p><p>Wir empfhlen dringlich das Verzeichnis zu entfernen wenn die Site über URL erreichbar ist. Zumindest sollte der Webzugriff verboten werden.</p>';
+$string['check_nodemodules_details'] = '<p> Das Verzeichnis <em>{$a- path}</em> enthält Node.js-Module und deren Abhängigkeiten, die normalerweise vom NPM-Dienstprogramm installiert werden. Diese Module werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Verwendung des Grunt-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen, und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten. </p>';
 $string['check_nodemodules_info'] = 'Das Verzeichnis node_modules sollte nicht auf öffentlichen Websites vorhanden sein.';
 $string['check_nodemodules_name'] = 'Node.js-Modulverzeichnis';
 $string['check_openprofiles_details'] = 'Öffentlich sichtbare Nutzerprofile können von Spammern missbraucht werden. Aktivieren Sie am besten die Einstellung \'Anmeldung notwendig\'  bzw. \'Anmeldung notwendig, um Profile zu sehen\'.';
@@ -89,6 +89,10 @@ $string['check_passwordpolicy_details'] = '<p>Kennwortregeln sollten unbedingt f
 $string['check_passwordpolicy_error'] = 'Die Kennwortregeln sind nicht eingerichtet.';
 $string['check_passwordpolicy_name'] = 'Kennwortregeln';
 $string['check_passwordpolicy_ok'] = 'Die Kennwortregeln sind aktiviert.';
+$string['check_preventexecpath_details'] = '<p> Wenn Sie zulassen, dass ausführbare Verzeichnisse über die Admin-Oberfläche angepasst werden können, handelt es sich um ein Risiko. </p>';
+$string['check_preventexecpath_name'] = 'Pfade zu ausführbaren Programmen';
+$string['check_preventexecpath_ok'] = 'Pfade zu ausführbaren Programmen einstellbar über config.php';
+$string['check_preventexecpath_warning'] = 'Pfade zu ausführbaren Programmen einstellbar über Admin GUI';
 $string['check_riskadmin_detailsok'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator(en):</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator(en):</p>{$a->admins}
 <p>Es wird empfohlen, die Administratorenrolle nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Administratorrolle:</p>{$a->unsupported}';
@@ -116,7 +120,7 @@ $string['check_unsecuredataroot_error'] = 'Ihr Verzeichnis \'dataroot\'  liegt a
 $string['check_unsecuredataroot_name'] = 'dataroot';
 $string['check_unsecuredataroot_ok'] = 'Das Verzeichnis \'dataroot\' ist nicht aus dem Web erreichbar.';
 $string['check_unsecuredataroot_warning'] = 'Ihr moodledata-Verzeichnis <code>{$a}</code> liegt an der falschen Stelle. Es sollte nicht aus dem Web aufrufbar sein.';
-$string['check_vendordir_details'] = '<p>Das Vendor Verzeichnis <em>{$a->path}</em> enthält verschiedene Third-Party-Module und weitere Elemente, typischerweise durch den PHP Composer installiert. Diese Module können für die Entwicklung von Moodle erforderlich sein, z.B. für PHP unit framework. Sie sind für den Betrieb von Moodle nicht erforderlich und können sogar gefährlich sein.</p><p>Wir empfhlen dringlich das Verzeichnis zu entfernen wenn die Site über URL erreichbar ist. Zumindest sollte der Webzugriff verboten werden.</p>';
+$string['check_vendordir_details'] = '<p> Das Verzeichnis <em>{$a->path}</em> enthält verschiedene Bibliotheken von Drittanbietern und deren Abhängigkeiten, die normalerweise vom PHP Composer installiert werden. Diese Bibliotheken werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Installation des PHPUnit-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten. </p>';
 $string['check_vendordir_info'] = 'Das externe Verzeichnis darf nicht auf öffentlichen Seiten vertreten sein.';
 $string['check_vendordir_name'] = 'Externes Verzeichnis';
 $string['check_webcron_details'] = '<p>Die Ausführung von Cron im Webbrowser könnte vertrauliche Informationen anzeigen. Die Ausführung von Cron im Webbrowser könnte vertrauliche Informationen anzeigen. Sie sollten deswegen Cron ausschließlich über die Befehlszeile erlauben oder im Webbrowser zusätzlich ein Cron-Kennwort zu verlangen.</p>';
@@ -128,6 +132,7 @@ $string['description'] = 'Beschreibung';
 $string['details'] = 'Details';
 $string['issue'] = 'Ausgabe';
 $string['pluginname'] = 'Sicherheitsbericht';
+$string['privacy:metadata'] = 'Das Sicherheits-Übersichts-Plugin speichert keine persönlichen Daten';
 $string['security:view'] = 'Sicherheitsbericht ansehen';
 $string['status'] = 'Status';
 $string['statuscritical'] = 'Kritisch';

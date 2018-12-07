@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filters', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,7 @@ $string['nofiltersenabled'] = 'Nenhum módulo de filtro está ativo neste site.'
 $string['off'] = 'Desligado';
 $string['offbutavailable'] = 'Desligado, mas disponível';
 $string['on'] = 'Ligado';
+$string['privacy:reason'] = 'O subsistema Filtros não armazena dados pessoais.';
 $string['profilefilterfield'] = 'Nome do campo de perfil';
 $string['profilefilterlimiter'] = 'Condição do campo de perfil';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';

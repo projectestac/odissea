@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filters', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   filters
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,7 +49,7 @@ $string['defaultx'] = 'Berezkoa ({$a})';
 $string['disabled'] = 'Desgaituta';
 $string['doesnotcontain'] = 'ez daukana';
 $string['endswith'] = 'honela bukatzen da';
-$string['filterallwarning'] = 'Iragazkiak goiburuei aplikatzeak, edukiak gehitzeak bezalaxe, handitu egiten du zure zerbitzariak egin beharreko lana. Mesedez "Aplikatu" aukera tentuz erabili. Erabilera ohikoena multilang iragazkiarena da.';
+$string['filterallwarning'] = 'Iragazkiak edukiez gain goiburuei ere aplikatzeak zure zerbitzariak egin beharreko lana handitu egiten du. Mesedez "Aplikatu" aukera tentuz erabili. Erabilera ohikoena iragazki eleanitzarena da.';
 $string['filtersettings'] = 'Iragazkien ezarpenak';
 $string['filtersettingsforin'] = 'Iragazkien ezarpenak honentzat: {$a->filter} eta hemen: {$a->context}';
 $string['filtersettings_help'] = 'Orri honek gunearen toki jakin batean iragazkiak gaitu edo desgaitzeko modua emango dizu.
@@ -75,6 +75,7 @@ $string['nofiltersenabled'] = 'Gune honetan ez da iragazki-pluginik gaitu';
 $string['off'] = 'Itzalita';
 $string['offbutavailable'] = 'Itzalita, baina eskuragarri';
 $string['on'] = 'Piztuta';
+$string['privacy:reason'] = 'Iragazkien azpisistemak ez du datu pertsonalik biltzen.';
 $string['profilefilterfield'] = 'Profil-eremuaren izena';
 $string['profilefilterlimiter'] = 'Profil-eremuko operadorea';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';

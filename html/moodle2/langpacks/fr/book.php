@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,10 @@ $string['eventchapterdeleted'] = 'Chapitre supprimé';
 $string['eventchapterupdated'] = 'Chapitre modifié';
 $string['eventchapterviewed'] = 'Chapitre consulté';
 $string['hidechapter'] = 'Cacher le chapitre « {$a} »';
+$string['indicator:cognitivedepth'] = 'Livre : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Livre.';
+$string['indicator:socialbreadth'] = 'Livre : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Livre.';
 $string['modulename'] = 'Livre';
 $string['modulename_help'] = 'Le module livre permet à l\'enseignant de créer une ressource composée de plusieurs pages, comme un livre, avec des chapitres et des sous-chapitres. Les livres peuvent contenir du texte ainsi que des fichiers médias et sont utiles pour afficher des contenus longs à couper en sections.
 
@@ -89,6 +93,8 @@ $string['numberingoptions_desc'] = 'Sélectionnez les options de numérotation q
 $string['page-mod-book-x'] = 'Toute page d\'un livre';
 $string['pluginadministration'] = 'Administration du livre';
 $string['pluginname'] = 'Livre';
+$string['privacy:metadata'] = 'Le module d\'activité Livre n\'enregistre aucune donnée personnelle.';
+$string['removeallbooktags'] = 'Retirer tous les tags du livre';
 $string['search:activity'] = 'Livre – information sur la ressource';
 $string['search:chapter'] = 'Livre – chapitres';
 $string['showchapter'] = 'Afficher le chapitre « {$a} »';
@@ -96,5 +102,7 @@ $string['subchapter'] = 'Sous-chapitre';
 $string['subchapternotice'] = '(disponible après la création du premier chapitre)';
 $string['subplugintype_booktool'] = 'Outil du livre';
 $string['subplugintype_booktool_plural'] = 'Outils du livre';
+$string['tagarea_book_chapters'] = 'Chapitres du livre';
+$string['tagsdeleted'] = 'Les tags du livre ont été supprimés';
 $string['toc'] = 'Table des matières';
 $string['top'] = 'Haut';

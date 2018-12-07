@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multianswer', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['pluginnameadding'] = 'Ajout d\'une question Cloze';
 $string['pluginnameediting'] = 'Modification d\'une question Cloze';
 $string['pluginname_help'] = 'Les questions à réponses intégrées (Cloze) sont formées d\'un texte au sein duquel dont inclues des questions à choix multiple et des questions à réponse courte.';
 $string['pluginnamesummary'] = 'Les questions de ce type sont très flexibles, mais ne peuvent être créées qu\'en tapant du texte suivant un format particulier avec des codes spécifiques qui crééent des questions à choix multiple, des questions à réponses courtes et des questions numériques intégrées.';
+$string['privacy:metadata'] = 'Le plugin de type de question Cloze (réponses intégrées) n\'enregistre aucune donnée personnelle.';
 $string['qtypenotrecognized'] = 'Le type de question {$a} est inconnu';
 $string['questiondefinition'] = 'Définition de question';
 $string['questiondeleted'] = 'Question supprimée';

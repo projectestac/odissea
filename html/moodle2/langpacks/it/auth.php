@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   auth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,8 +41,10 @@ $string['auth_data_mapping'] = 'Mappatura dei dati';
 $string['authenticationoptions'] = 'Opzioni di autenticazione';
 $string['auth_fieldlock'] = 'Campi bloccati nel profilo utente';
 $string['auth_fieldlock_expl'] = '<p><b>Blocco del campo:</b> gli utenti e agli amministratori di Moodle non potranno modificare il campo. L\'impostazione è utile se si mappano i campi del profilo utente da una fonte di autenticazione esterna.</p>';
+$string['auth_fieldlockfield'] = 'Blocco del campo ({$a})';
 $string['auth_fieldlocks'] = 'Campi bloccati nel profilo utente';
 $string['auth_fieldlocks_help'] = '<p>È possibile bloccare uno o più campi del profilo utente. La funzione può risultare particolarmente utile in quei siti dove i dati dei profili utente sono gestiti a mano dagli amministratori, i quali possono modificare i record degli utenti oppure caricarli utilizzando la funzione \'Importa utenti\'.</p><p>Se si bloccano campi che Moodle considera obbligatori, accertarsi di fornire tali dati durante la creazione di account, altrimenti gli account incompleti non saranno utilizzabili.</p><p>Per evitare questo problema, è possibile utilizzare l\'opzione \'Libero se vuoto\'.</p>';
+$string['auth_fieldmapping'] = 'Mappatura dati ({$a})';
 $string['authinstructions'] = 'In questo campo è possibile inserire istruzioni per il login specifiche per i vostri utenti. Lasciando vuoto il campo verranno visualizzate le istruzioni di default.';
 $string['auth_invalidnewemailkey'] = 'Errore: se stai cercando di confermare un cambio di indirizzo email, puoi aver fatto un errore nel copiare il link che ti abbiamo inviato per email. Prova ancora, copiando correttamente l\'indirizzo.';
 $string['authloginviaemail'] = 'Consenti autenticazione usando l\'email';
@@ -62,13 +64,16 @@ $string['auth_sync_suspended'] = 'Consente di sincronizzare lo stato di sospensi
 $string['auth_sync_suspended_key'] = 'Sincronizza localmente la sospensione dell\'utente';
 $string['auth_updatelocal'] = 'Aggiornamento dati locali';
 $string['auth_updatelocal_expl'] = '<p><b>Aggiornameno dati locali:</b> Il campo sarà aggiornato con i dati provenienti dall\'autenticazione esterna tutte le volte che l\'utente si autenticherà o verrà effettuata una sincronizzazione degli utenti. Si consiglia di bloccare I campi locali impostati per essere aggiornati.</p>';
+$string['auth_updatelocalfield'] = 'Aggiornamento dati locali ({$a})';
 $string['auth_updateremote'] = 'Aggiornamento dati esterni';
 $string['auth_updateremote_expl'] = '<p><b>Aggiornamento dati esterni:</b> Il campo presenti nell\'autenticazione esterna sarà  aggiornato se i dati locali dell\'utente saranno modificati. In questo caso i campi del profilo utente non devono essere bloccati affinché sia possibile la modifica.</p>';
+$string['auth_updateremotefield'] = 'Aggiornamento dati esterni ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Nota:</b> Aggiornando i dati esterni LDAP è richiesta l\'impostazione di binddn e di bindpw a un utente di bind con privilegi di modifica per tutti i dati degli utenti. Questo attualmente non preserva gli attributi multivalore, e rimuoverà  i valori aggiuntivi durante l\'aggiornamento.</p>';
 $string['auth_user_create'] = 'Creazione utenti';
 $string['auth_user_creation'] = 'I nuovi utenti (anonimi) possono iscriversi alla sorgente di autenticazione esterna e confermare tramite email. Se abiliti questo, ricorda anche di configurare le opzioni specifiche del modulo per la creazione degli utenti';
 $string['auth_usernameexists'] = 'Il nome utente scelto è già  utilizzato. Sceglierne uno nuovo.';
 $string['auto_add_remote_users'] = 'Aggiungi automaticamente gli utenti remoti';
+$string['cannotmapfield'] = 'Non è possibile mappare Il campo "{$a->fieldname}" poiché è troppo lungo il suo nome abbreviato "{$a->shortname}". Per poterlo mappare, è necessario ridurre la lunghezza a {$a->charlimit} caratteri. <a href="{$a->link}">Modifica i campi del profilo utente.</a>';
 $string['changepassword'] = 'Cambia URL delle password';
 $string['changepasswordhelp'] = 'L\'URL della pagina dove recuperare la propria password che sarà inviata via email. Da notare che l\'impostazione sarà priva di effetto se viene impostato un URL di password dimenticata nelle impostazioni comuni dell\'autenticazione.';
 $string['chooseauthmethod'] = 'Metodo di autenticazione';
@@ -109,6 +114,7 @@ $string['forgottenpasswordurl'] = 'URL pagina recupero password';
 $string['getanaudiocaptcha'] = 'Chiedi un audio CAPTCHA';
 $string['getanimagecaptcha'] = 'Chiedi un\'immagine CAPTCHA';
 $string['getanothercaptcha'] = 'Chiedi un altro CAPTCHA';
+$string['getrecaptchaapi'] = 'Per utilizzare reCAPTCHA devi prima ottenere una chiave API su <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Pulsante login ospite';
 $string['incorrectpleasetryagain'] = 'Sbagliato. Prova ancora.';
 $string['infilefield'] = 'Il campo è presente nel file';
@@ -137,12 +143,13 @@ $string['pluginnotenabled'] = 'Il plugin \'{$a}\' per l\'autenticazione non è a
 $string['pluginnotinstalled'] = 'Il plugin \'{$a}\' per l\'autenticazione non è installato.';
 $string['potentialidps'] = 'Autenticati su:';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. E\' sufficiente inserire le parole nel campo, con lo stesso ordine e separati da uno spazio.
+$string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. per verificare che sei un persona reale, segui le istruzioni. Possono essere essere visualizzati una casella di spunta, immagini con parole da inserire, oppure una serie di immagini sa selezionare.
 
-Se non riesci a leggere le parole, chiedi un altro CAPTCHA oppure chiedi un CAPTCHA audio.';
+Se non è chiaro cosa contengano le immagini, chiedi un altro CAPTCHA oppure chiedi un CAPTCHA audio.';
 $string['security_question'] = 'Domanda di sicurezza';
 $string['selfregistration'] = 'Auto creazione account';
 $string['selfregistration_help'] = 'Impostando un plugin per l\'auto creazione di account, come ad esempio il plugin per la creazione di account via email, qualsiasi visitatore del sito potrà crearsi un account. Tale funzione espone il sito al rischio che spammer possano creare account per inviare post indesiderati attraverso forum, blog od altre funzioni. Per evitare questo rischio è bene disabilitare l\' Auto creazione di account  oppure limitarla attraverso l\'impostazione <em>Domini di posta autorizzati</em> oppure ancora attivando il reCAPTCHA.';
+$string['settingmigrationmismatch'] = 'E\' stato riscontrato un valore discordante durante la correzione dei nomi delle impostazioni del plugin. Il plugin di autenticazione \'{$a->plugin}\' aveva l\'impostazione \'{$a->setting}\' configurata a to \'{$a->legacy}\' con il nome obsoleto ed a \'{$a->current}\'  con il nome attuale. E\' stato considerato valido il valore \'{$a->current}\', si consiglia tuttavia di controllare e verificare la correttezza della scelta';
 $string['sha1'] = 'Hash SHA-1';
 $string['showguestlogin'] = 'E\' possibile visualizzare o nascondere  il pulsante \'login come ospite\' nella pagina di login standard';
 $string['stdchangepassword'] = 'Utilizza la pagina standard per il cambiamento della password';

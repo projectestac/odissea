@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,8 @@ $string['allowroletooverride'] = 'Autoriser les utilisateurs ayant le rôle {$a-
 $string['allowroletoswitch'] = 'Autoriser les utilisateurs ayant le rôle {$a->fromrole} à changer de rôle vers le rôle {$a->targetrole}';
 $string['allowswitch'] = 'Autoriser le changement de rôle';
 $string['allsiteusers'] = 'Tous les utilisateurs du site';
+$string['analytics:listinsights'] = 'Lister les indications';
+$string['analytics:managemodels'] = 'Gérer les modèles';
 $string['archetype'] = 'Modèle de rôle';
 $string['archetypecoursecreator'] = 'MODÈLE : Créateur de cours';
 $string['archetypeeditingteacher'] = 'MODÈLE : Enseignant';
@@ -64,7 +66,7 @@ $string['backup:anonymise'] = 'Anonymiser les données utilisateur des sauvegard
 $string['backup:backupactivity'] = 'Sauvegarder des activités';
 $string['backup:backupcourse'] = 'Sauvegarder des cours';
 $string['backup:backupsection'] = 'Sauvegarder des sections';
-$string['backup:backuptargethub'] = 'Sauvegarder pour serveur d\'échanges';
+$string['backup:backuptargethub'] = 'Sauvegarder pour publication sur Moodle.net';
 $string['backup:backuptargetimport'] = 'Sauvegarder pour importation';
 $string['backup:configure'] = 'Configurer les réglages de sauvegarde';
 $string['backup:downloadfile'] = 'Télécharger des fichiers des zones de sauvegarde';
@@ -113,7 +115,7 @@ $string['cohort:view'] = 'Voir les cohortes du site';
 $string['comment:delete'] = 'Supprimer des commentaires';
 $string['comment:post'] = 'Écrire des commentaires';
 $string['comment:view'] = 'Consulter les commentaires';
-$string['community:add'] = 'Utiliser le bloc Communauté pour rechercher des cours dans des serveurs d\'échanges';
+$string['community:add'] = 'Utiliser le bloc Communauté pour rechercher des cours sur Moodle.net';
 $string['community:download'] = 'Télécharger des cours depuis le bloc Communauté';
 $string['competency:competencygrade'] = 'Évaluer une compétence';
 $string['competency:competencymanage'] = 'Gérer les référentiels de compétences';
@@ -167,6 +169,7 @@ $string['course:create'] = 'Créer des cours';
 $string['course:delete'] = 'Supprimer des cours';
 $string['course:enrolconfig'] = 'Configurer les instances d\'inscription dans les cours';
 $string['course:enrolreview'] = 'Vérifier les inscriptions aux cours';
+$string['course:ignoreavailabilityrestrictions'] = 'Ignorer les restrictions de disponibilité';
 $string['course:ignorefilesizelimits'] = 'Utiliser des fichiers de taille dépassant toutes les restrictions de taille';
 $string['course:isincompletionreports'] = 'À afficher dans les rapports d\'achèvement';
 $string['course:manageactivities'] = 'Gérer les activités';
@@ -176,7 +179,8 @@ $string['course:managegroups'] = 'Gérer les groupes';
 $string['course:managescales'] = 'Gérer les barêmes';
 $string['course:markcomplete'] = 'Marquer les utilisateurs comme ayant terminé un cours';
 $string['course:movesections'] = 'Déplacer les sections';
-$string['course:publish'] = 'Publier un cours vers un serveur d\'échanges';
+$string['course:overridecompletion'] = 'Écraser le statut d\'achèvement de l\'activité';
+$string['course:publish'] = 'Publier un cours';
 $string['course:renameroles'] = 'Renommer les rôles';
 $string['course:request'] = 'Demander de nouveaux cours';
 $string['course:reset'] = 'Réinitialiser les cours';
@@ -220,6 +224,7 @@ $string['errorbadrolename'] = 'Nom de rôle incorrect';
 $string['errorbadroleshortname'] = 'Nom abrégé du rôle incorrect';
 $string['errorexistsrolename'] = 'Ce nom de rôle existe déjà';
 $string['errorexistsroleshortname'] = 'Ce nom de rôle abrégé existe déjà';
+$string['errorroleshortnametoolong'] = 'Le nom abrégé ne peut pas dépasser 100 caractères';
 $string['eventroleallowassignupdated'] = 'Attribution de rôle autorisée';
 $string['eventroleallowoverrideupdated'] = 'Dérogation de rôle autorisée';
 $string['eventroleallowswitchupdated'] = 'Changement de rôle autorisé';
@@ -345,7 +350,7 @@ $string['restore:createuser'] = 'Créer des utilisateurs lors des restaurations'
 $string['restore:restoreactivity'] = 'Restaurer des activités';
 $string['restore:restorecourse'] = 'Restaurer des cours';
 $string['restore:restoresection'] = 'Restaurer des sections';
-$string['restore:restoretargethub'] = 'Restaurer à partir de fichiers pour serveurs d\'échanges';
+$string['restore:restoretargethub'] = 'Restaurer des cours téléchargés de Moodle.net';
 $string['restore:restoretargetimport'] = 'Restaurer à partir de fichiers pour importation';
 $string['restore:rolldates'] = 'Autoriser la modification des dates des activités lors des restaurations';
 $string['restore:uploadfile'] = 'Déposer des fichiers dans les zones de sauvegarde';
@@ -411,7 +416,6 @@ $string['site:viewfullnames'] = 'Toujours voir les noms complets des utilisateur
 $string['site:viewparticipants'] = 'Voir les participants';
 $string['site:viewreports'] = 'Consulter les rapports';
 $string['site:viewuseridentity'] = 'Voir l\'identité complète des utilisateurs dans les listes';
-$string['tag:create'] = 'Créer de nouveaux tags';
 $string['tag:edit'] = 'Modifier les tags existants';
 $string['tag:editblocks'] = 'Modifier les blocs sur les pages de tags';
 $string['tag:flag'] = 'Signaler les tags comme inappropriés';
@@ -454,6 +458,7 @@ $string['viewingdefinitionofrolex'] = 'Affichage de la définition du rôle « 
 $string['viewrole'] = 'Afficher les détails du rôle';
 $string['webservice:createmobiletoken'] = 'Créer un jeton de service web pour accès mobile';
 $string['webservice:createtoken'] = 'Créer un jeton de service web';
+$string['webservice:managealltokens'] = 'Gérer les jetons de service web de tous les utilisateurs';
 $string['whydoesuserhavecap'] = 'Pourquoi {$a->fullname} a la capacité {$a->capability} dans le contexte {$a->context} ?';
 $string['whydoesusernothavecap'] = 'Pourquoi {$a->fullname} n\'a pas la capacité {$a->capability} dans le contexte {$a->context} ?';
 $string['xroleassignments'] = 'Attributions de rôles de {$a}';

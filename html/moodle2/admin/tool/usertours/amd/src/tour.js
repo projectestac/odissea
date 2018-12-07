@@ -5,13 +5,13 @@
     define(["jquery","./popper"], function (a0,b1) {
       return (root['Tour'] = factory(a0,b1));
     });
-  } else if (typeof exports === 'object') {
+  } else if (typeof module === 'object' && module.exports) {
     // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
     module.exports = factory(require("jquery"),require("popper.js"));
   } else {
-    root['Tour'] = factory($,Popper);
+    root['Tour'] = factory(root["$"],root["Popper"]);
   }
 }(this, function ($, Popper) {
 
@@ -24,7 +24,7 @@
  * @param   {object}    config  The configuration object.
  */
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 function Tour(config) {
     this.init(config);
@@ -634,6 +634,24 @@ Tour.prototype.processStepListeners = function (stepConfig) {
         args: ['click', '[data-role="end"]', $.proxy(this.endTour, this)]
     },
 
+    // Click backdrop and hide tour.
+    {
+        node: $('[data-flexitour="backdrop"]'),
+        args: ['click', $.proxy(this.hide, this)]
+    },
+
+    // Click out and hide tour without backdrop.
+    {
+        node: $('body'),
+        args: ['click', $.proxy(function (e) {
+            // Handle click in or click out tour content,
+            // if click out, hide tour.
+            if (!this.currentStepNode.is(e.target) && $(e.target).closest('[data-role="flexitour-step"]').length === 0) {
+                this.hide();
+            }
+        }, this)]
+    },
+
     // Keypresses.
     {
         node: $('body'),
@@ -773,12 +791,8 @@ Tour.prototype.addStepToPage = function (stepConfig) {
         // Add the backdrop.
         this.positionBackdrop(stepConfig);
 
-        if (stepConfig.attachPoint === 'append') {
-            stepConfig.attachTo.append(currentStepNode);
-            this.currentStepNode = currentStepNode;
-        } else {
-            this.currentStepNode = currentStepNode.insertAfter(stepConfig.attachTo);
-        }
+        $(document.body).append(currentStepNode);
+        this.currentStepNode = currentStepNode;
 
         // Ensure that the step node is positioned.
         // Some situations mean that the value is not properly calculated without this step.
@@ -807,7 +821,7 @@ Tour.prototype.addStepToPage = function (stepConfig) {
         currentStepNode.addClass('orphan');
 
         // It lives in the body.
-        stepConfig.attachTo.append(currentStepNode);
+        $(document.body).append(currentStepNode);
         this.currentStepNode = currentStepNode;
 
         this.currentStepNode.offset(this.calculateStepPositionInPage());
@@ -908,7 +922,7 @@ Tour.prototype.announceStep = function (stepConfig) {
  * @param   {EventFacade} e
  */
 Tour.prototype.handleKeyDown = function (e) {
-    var tabbableSelector = 'a[href], link[href], [draggable=true], [contenteditable=true], :input:enabled, [tabindex], button';
+    var tabbableSelector = 'a[href], link[href], [draggable=true], [contenteditable=true], :input:enabled, [tabindex], button:enabled';
     switch (e.keyCode) {
         case 27:
             this.endTour();
@@ -927,8 +941,17 @@ Tour.prototype.handleKeyDown = function (e) {
                 var activeElement = $(document.activeElement);
                 var stepTarget = this.getStepTarget(this.currentStepConfig);
                 var tabbableNodes = $(tabbableSelector);
+                var dialogContainer = $('span[data-flexitour="container"]');
                 var currentIndex = void 0;
-                tabbableNodes.filter(function (index, element) {
+                // Filter out element which is not belong to target section or dialogue.
+                if (stepTarget) {
+                    tabbableNodes = tabbableNodes.filter(function (index, element) {
+                        return stepTarget != null && (stepTarget.has(element).length || dialogContainer.has(element).length || stepTarget.is(element) || dialogContainer.is(element));
+                    });
+                }
+
+                // Find index of focusing element.
+                tabbableNodes.each(function (index, element) {
                     if (activeElement.is(element)) {
                         currentIndex = index;
                         return false;
@@ -938,7 +961,7 @@ Tour.prototype.handleKeyDown = function (e) {
                 var nextIndex = void 0;
                 var nextNode = void 0;
                 var focusRelevant = void 0;
-                if (currentIndex) {
+                if (currentIndex != void 0) {
                     var direction = 1;
                     if (e.shiftKey) {
                         direction = -1;
@@ -1094,6 +1117,16 @@ Tour.prototype.hide = function (transition) {
         $(this).remove();
     });
 
+    // Remove aria-describedby and tabindex attributes.
+    if (this.currentStepNode && this.currentStepNode.length) {
+        var stepId = this.currentStepNode.attr('id');
+        if (stepId) {
+            var currentStepElement = '[aria-describedby="' + stepId + '-body"]';
+            $(currentStepElement).removeAttr('tabindex');
+            $(currentStepElement).removeAttr('aria-describedby');
+        }
+    }
+
     // Reset the listeners.
     this.resetStepListeners();
 
@@ -1228,13 +1261,60 @@ Tour.prototype.positionStep = function (stepConfig) {
             arrow: {
                 element: '[data-role="arrow"]'
             }
+        },
+        onCreate: function onCreate(data) {
+            recalculateArrowPosition(data);
+        },
+        onUpdate: function onUpdate(data) {
+            recalculateArrowPosition(data);
         }
     };
 
-    var boundaryElement = target.closest('section');
-    if (boundaryElement.length) {
-        config.boundariesElement = boundaryElement[0];
-    }
+    var recalculateArrowPosition = function recalculateArrowPosition(data) {
+        var placement = data.placement.split('-')[0];
+        var isVertical = ['left', 'right'].indexOf(placement) !== -1;
+        var arrowElement = data.instance.popper.querySelector('[data-role="arrow"]');
+        var stepElement = $(data.instance.popper.querySelector('[data-role="flexitour-step"]'));
+        if (isVertical) {
+            var arrowHeight = parseFloat(window.getComputedStyle(arrowElement).height);
+            var arrowOffset = parseFloat(window.getComputedStyle(arrowElement).top);
+            var popperHeight = parseFloat(window.getComputedStyle(data.instance.popper).height);
+            var popperOffset = parseFloat(window.getComputedStyle(data.instance.popper).top);
+            var popperBorderWidth = parseFloat(stepElement.css('borderTopWidth'));
+            var popperBorderRadiusWidth = parseFloat(stepElement.css('borderTopLeftRadius')) * 2;
+            var arrowPos = arrowOffset + arrowHeight / 2;
+            var maxPos = popperHeight + popperOffset - popperBorderWidth - popperBorderRadiusWidth;
+            var minPos = popperOffset + popperBorderWidth + popperBorderRadiusWidth;
+            if (arrowPos >= maxPos || arrowPos <= minPos) {
+                var newArrowPos = 0;
+                if (arrowPos > popperHeight / 2) {
+                    newArrowPos = maxPos - arrowHeight;
+                } else {
+                    newArrowPos = minPos + arrowHeight;
+                }
+                $(arrowElement).css('top', newArrowPos);
+            }
+        } else {
+            var arrowWidth = parseFloat(window.getComputedStyle(arrowElement).width);
+            var _arrowOffset = parseFloat(window.getComputedStyle(arrowElement).left);
+            var popperWidth = parseFloat(window.getComputedStyle(data.instance.popper).width);
+            var _popperOffset = parseFloat(window.getComputedStyle(data.instance.popper).left);
+            var _popperBorderWidth = parseFloat(stepElement.css('borderTopWidth'));
+            var _popperBorderRadiusWidth = parseFloat(stepElement.css('borderTopLeftRadius')) * 2;
+            var _arrowPos = _arrowOffset + arrowWidth / 2;
+            var _maxPos = popperWidth + _popperOffset - _popperBorderWidth - _popperBorderRadiusWidth;
+            var _minPos = _popperOffset + _popperBorderWidth + _popperBorderRadiusWidth;
+            if (_arrowPos >= _maxPos || _arrowPos <= _minPos) {
+                var _newArrowPos = 0;
+                if (_arrowPos > popperWidth / 2) {
+                    _newArrowPos = _maxPos - arrowWidth;
+                } else {
+                    _newArrowPos = _minPos + arrowWidth;
+                }
+                $(arrowElement).css('left', _newArrowPos);
+            }
+        }
+    };
 
     var background = $('[data-flexitour="step-background"]');
     if (background.length) {
@@ -1311,6 +1391,8 @@ Tour.prototype.positionBackdrop = function (stepConfig) {
             var targetPosition = this.calculatePosition(targetNode);
             if (targetPosition === 'fixed') {
                 background.css('top', 0);
+            } else if (targetPosition === 'absolute') {
+                background.css('position', 'fixed');
             }
 
             var fader = background.clone();

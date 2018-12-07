@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -52,7 +52,7 @@ $string['checkbox'] = 'Elección múltiple (se permiten varias respuestas - casi
 $string['check_values'] = 'Respuestas posibles';
 $string['choosefile'] = 'Seleccione un archivo';
 $string['chosen_feedback_response'] = 'respuesta elegida';
-$string['completed'] = 'Completada';
+$string['completed'] = 'completada';
 $string['completed_feedbacks'] = 'Respuestas enviadas';
 $string['completedon'] = 'Completada en {$a}';
 $string['complete_the_form'] = 'Responda a las preguntas...';
@@ -137,6 +137,10 @@ $string['horizontal'] = 'horizontal';
 $string['importfromthisfile'] = 'Importar de este archivo';
 $string['import_questions'] = 'Importar preguntas';
 $string['import_successfully'] = 'Importación exitosa';
+$string['indicator:cognitivedepth'] = 'Retroalimentación cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Retroalimentación.';
+$string['indicator:socialbreadth'] = 'Retroalimentación social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Retroalimentación.';
 $string['info'] = 'Información';
 $string['infotype'] = 'Información Tipo';
 $string['insufficient_responses'] = 'Respuestas insuficientes';
@@ -256,7 +260,7 @@ $string['send_message'] = 'enviar mensaje';
 $string['separator_decimal'] = '.';
 $string['separator_thousand'] = ',';
 $string['show_all'] = 'Mostrar todo';
-$string['show_analysepage_after_submit'] = 'Mostrar página de análisis tras el envío';
+$string['show_analysepage_after_submit'] = 'Mostrar página de análisis';
 $string['show_entries'] = 'Mostrar respuestas';
 $string['show_entry'] = 'Mostrar respuesta';
 $string['show_nonrespondents'] = 'Mostrar no respondientes';
@@ -271,7 +275,7 @@ $string['switch_group'] = 'Cambiar grupo';
 $string['switch_item_to_not_required'] = 'cambiar a: respuesta no obligatoria';
 $string['switch_item_to_required'] = 'cambiar a: respuesta obligatoria';
 $string['template'] = 'Plantilla';
-$string['template_deleted'] = 'Plantilla eliminada';
+$string['template_deleted'] = 'Plantilla borrada';
 $string['templates'] = 'Plantillas';
 $string['template_saved'] = 'Plantilla guardada';
 $string['textarea'] = 'Respuesta de texto larga';

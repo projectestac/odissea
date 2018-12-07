@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_phpunit', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_phpunit', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_phpunit
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tests für PHP';
+$string['privacy:metadata'] = 'Das PHP-Unit-Testplugin speichert keine persönlichen Daten';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_examview', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_examview', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_examview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
 $string['pluginname_help'] = 'Examview format enables the import of questions from Examview 4 XML files. For newer versions of Examview, Blackboard format may be used.';
+$string['privacy:metadata'] = 'The Examview question format plugin does not store any personal data.';

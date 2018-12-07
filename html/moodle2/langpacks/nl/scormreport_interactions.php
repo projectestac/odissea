@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scormreport_interactions', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   scormreport_interactions
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interactierapport';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Aantal te tonen gebruikers in SCORM-rapporten';
 $string['questionx'] = 'Vraag {$a}';
 $string['responsex'] = 'Antwoord {$a}';
 $string['resultx'] = 'Reslutaat {$a}';

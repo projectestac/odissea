@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_filesystem', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blockedpath'] = 'Φραγμένη στη ρίζα διαδρομή αρχείων';
-$string['configplugin'] = 'Ρύθμιση του χώρου αποθήκευσης στο σύστημα αρχείων';
-$string['donotusesysdir'] = 'Μην χρησιμοποιείται καταλόγους συστήματος σαν χώρο αποθήκευσης, περιλαμβάνοντας';
-$string['enablecourseinstances'] = 'Επιτρέπεται στους χρήστες να προσθέσουν μία περίπτωση χώρου αποθήκευσης στο μάθημα (μπορεί να ρυθμιστεί μόνο από διαχειριστές)';
-$string['enableuserinstances'] = 'Επιτρέπεται στους χρήστες να προσθέσουν μία περίπτωση χώρου αποθήκευσης στο περιβάλλον χρήστη (μπορεί να ρυθμιστεί μόνο από διαχειριστές)';
-$string['filesystem:view'] = 'Εμφάνιση του repository συστήματος αρχείων (file system)';
+$string['configplugin'] = 'Ρύθμιση του αποθετηρίου συστήματος αρχείων';
+$string['donotusesysdir'] = 'Μην χρησιμοποιείται καταλόγους συστήματος ως αποθετήρια, περιλαμβάνοντας';
+$string['enablecourseinstances'] = 'Να επιτρέπεται στους διαχειριστές να προσθέτουν στιγμιότυπο αποθετηρίου σε μάθημα (μπορεί να ρυθμιστεί μόνο από διαχειριστές)';
+$string['enableuserinstances'] = 'Να επιτρέπεται στους διαχειριστές να προσθέτουν στιγμιότυπο αποθετηρίου στο πλαίσιο χρήστη (μπορεί να ρυθμιστεί μόνο από διαχειριστές)';
+$string['filesystem:view'] = 'Εμφάνιση αποθετηρίου συστήματος αρχείων';
 $string['invalidpath'] = 'Μη έγκυρη διαδρομή ρίζας αρχείων';
 $string['path'] = 'Διαδρομή';
 $string['pluginname'] = 'Σύστημα Αρχείων';
-$string['pluginname_help'] = 'Δημιουργία χώρου αποθήκευσης από τοπικό κατάλογο';
+$string['pluginname_help'] = 'Δημιουργία αποθετηρίου από τοπικό κατάλογο';

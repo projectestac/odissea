@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,6 +50,10 @@ $string['eventchapterdeleted'] = '章が削除されました。';
 $string['eventchapterupdated'] = '章が更新されました。';
 $string['eventchapterviewed'] = '章が閲覧されました。';
 $string['hidechapter'] = '章「 {$a} 」を隠す';
+$string['indicator:cognitivedepth'] = 'ブック認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はブックリソースで学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = 'ブック社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はブックリソースで学生が到達した社会的広がりに基づきます。';
 $string['modulename'] = 'ブック';
 $string['modulename_help'] = 'ブックモジュールにおいて教師は章および節のある本のような複数ページのリソースを作成することができます。ブックにはテキストおよびメディアファイルを含むことができます。ブックはセクションに分けた長い情報を表示するために有用です。
 
@@ -89,6 +93,8 @@ $string['numberingoptions_desc'] = '目次内の章および節の表示オプ�
 $string['page-mod-book-x'] = 'すべてのブックモジュールページ';
 $string['pluginadministration'] = 'ブック管理';
 $string['pluginname'] = 'ブック';
+$string['privacy:metadata'] = 'ブック活動モジュールはどのような個人データも保存しません。';
+$string['removeallbooktags'] = 'すべてのブックタグを削除する';
 $string['search:activity'] = 'ブック - リソース情報';
 $string['search:chapter'] = 'ブック - 章';
 $string['showchapter'] = '章「 {$a} 」を表示する';
@@ -96,5 +102,7 @@ $string['subchapter'] = '節';
 $string['subchapternotice'] = '(最初の章が作成された時点でのみ利用可能)';
 $string['subplugintype_booktool'] = 'ブックツール';
 $string['subplugintype_booktool_plural'] = 'ブックツール';
+$string['tagarea_book_chapters'] = 'ブックの章';
+$string['tagsdeleted'] = 'ブックタグが削除されました。';
 $string['toc'] = '目次';
 $string['top'] = 'トップ';

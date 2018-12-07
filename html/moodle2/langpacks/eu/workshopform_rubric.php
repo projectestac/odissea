@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_rubric', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,3 +39,4 @@ $string['mustbeunique'] = 'Mailarako kalifikazioek bakarrak izan behar dute iriz
 $string['mustchooseone'] = 'Elementu hauetako bat aukeratu behar duzu';
 $string['mustdefinelevel'] = 'Gutxienez maila bat beharrezkoa da';
 $string['pluginname'] = 'Errubrika';
+$string['privacy:metadata'] = 'Errubrika';

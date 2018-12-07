@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -136,7 +136,7 @@ $string['disallowsubscribeteacher'] = 'No se permiten suscripciones (excepto par
 $string['disallowsubscription'] = 'Suscripción';
 $string['disallowsubscription_help'] = 'Este foro ha sido configurado de tal forma que usted no puede suscribirse a los debates.';
 $string['discussion'] = 'Tema';
-$string['discussionlocked'] = 'Este hilo de discusión ha sido cerrado por lo que no admite respuestas.';
+$string['discussionlocked'] = 'Este tema ha sido bloqueado así que no podrás responder en el.';
 $string['discussionlockingdisabled'] = 'No bloquear discusiones';
 $string['discussionlockingheader'] = 'Bloqueando discusión';
 $string['discussionmoved'] = 'Este tema se ha movido a \'{$a}\'.';
@@ -276,6 +276,10 @@ $string['forum:viewsubscribers'] = 'Ver suscriptores';
 $string['generalforum'] = 'Foro para uso general';
 $string['generalforums'] = 'Foros generales';
 $string['hiddenforumpost'] = 'Publicación del foro oculta';
+$string['indicator:cognitivedepth'] = 'Foro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Foro.';
+$string['indicator:socialbreadth'] = 'Foro social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Foro.';
 $string['inforum'] = 'en {$a}';
 $string['introblog'] = 'Los mensajes de este foro fueron copiados aquí de forma automática a partir de los blogs de los usuarios de este curso debido a que esas entradas de blog ya no están disponibles';
 $string['intronews'] = 'Avisos y novedades generales';
@@ -296,6 +300,7 @@ $string['mailnow'] = 'Enviar notificaciones del tema sin tiempo de espera para e
 $string['manydiscussions'] = 'Debates por página';
 $string['markalldread'] = 'Marcar como leídos todos los mensajes de este debate.';
 $string['markallread'] = 'Marcar como leídos todos los mensajes de este foro.';
+$string['markasreadonnotification'] = 'Cuando se envía la notificación de un mensaje del foro';
 $string['markasreadonnotificationno'] = 'No marcar el hilo como leído';
 $string['markasreadonnotificationyes'] = 'Marcar el hilo como leído';
 $string['markread'] = 'Marcar como leído';
@@ -497,7 +502,6 @@ $string['subscribediscussion'] = 'Suscribirse a este tema';
 $string['subscribeenrolledonly'] = 'Lo siento, sólo los usuarios registrados pueden suscribirse a las notificaciones de aportaciones en los foros';
 $string['subscribenone'] = 'Dar de baja a todos de este foro';
 $string['subscribers'] = 'Suscriptores';
-$string['subscribersto'] = 'Suscriptores de "{$a->name}"';
 $string['subscriberstowithcount'] = 'Suscriptores de \'{$a->name}\'  ({$a->count})';
 $string['subscribestart'] = 'Deseo recibir notificaciones por correo de nuevos mensajes en este foro';
 $string['subscribestop'] = 'No deseo recibir notificaciones por correo de nuevos mensajes en este foro';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,15 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['areyousure'] = 'Ziur al zaude?';
-$string['areyousuremessage'] = 'Ziur al zaude  "{$a->name}" zeregina eguneratu nahi duzula?';
+$string['areyousure'] = 'Ziur zaude?';
+$string['areyousuremessage'] = 'Ziur zaude  "{$a->name}" zeregina eguneratu nahi duzula?';
 $string['assignmentid'] = 'Zereginaren IDa';
-$string['assignmentnotfound'] = 'Ez da (id={$a}) zeregina aurkitu';
+$string['assignmentnotfound'] = 'Ez da zeregina aurkitu (id={$a})';
 $string['assignmentsperpage'] = 'Zereginak orriko';
 $string['assignmenttype'] = 'Zeregin-mota';
 $string['backtoindex'] = 'Itzuli aurkibidera';
+$string['batchoperations'] = 'Eragiketa-sortak';
 $string['batchupgrade'] = 'Eguneratu hainbat zeregin';
-$string['conversioncomplete'] = 'Zeregina bihurtuta';
+$string['confirmbatchupgrade'] = 'Baieztatu zereginen eguneratze-sorta';
+$string['conversioncomplete'] = 'Zeregina bihurtu da';
+$string['conversionfailed'] = 'Zeregin-bihurketa ez da ondo egin. Eguneratze-erregistroa hurrengoa da: <br />{$a}';
 $string['listnotupgraded'] = 'Eguneratu gabe dauden zereginen zerrenda';
 $string['listnotupgraded_desc'] = 'Hemen zereginak banan-banan eguneratu ahal dituzu';
 $string['noassignmentsselected'] = 'Ez da zereginik aukeratu';
@@ -41,6 +44,7 @@ $string['noassignmentstoupgrade'] = 'Ez dago eguneratu beharreko zereginik';
 $string['notupgradedintro'] = 'Orri honek Moodle 2.3ko zeregin modulu berrira eguneratu gabeko Moodle-ren bertsio zaharrago batekin sortutako zereginak zerrendatzen ditu. Zeregin guztiak ezin dira eguneratu -pertsonalizatutako zeregin azpimota batekin sortutakoak badira, azpimota hori eguneratu egin beharkoda zeregin berriaren pluginaren formatura eguneraketa osatzeko.';
 $string['notupgradedtitle'] = 'Eguneratu gabeko zereginak';
 $string['pluginname'] = 'Zereginak eguneratzeko tresna';
+$string['privacy:metadata:preference:perpage'] = 'Zereginak eguneratzeko tresnak orriko erregistro kopuruaren erabiltzaile-hobespena gordetzen du.';
 $string['select'] = 'Aukeratu';
 $string['submissions'] = 'Bidalketak';
 $string['supported'] = 'Eguneratu';
@@ -49,6 +53,7 @@ $string['updatetable'] = 'Eguneratu taula';
 $string['upgradable'] = 'Egunera daiteke';
 $string['upgradeall'] = 'Eguneratu zeregin guztiak';
 $string['upgradeallconfirm'] = 'Zeregin guztiak eguneratu nahi dituzu?';
+$string['upgradeassignmentfailed'] = 'Emaitza: Eguneratzeak huts egin du. Eguneratze-erregistroa hurrengoa da: <br/><div class="tool_assignmentupgrade_upgradelog">{$a->log}</div>';
 $string['upgradeassignmentsuccess'] = 'Emaitza: ondo eguneratu da';
 $string['upgradeassignmentsummary'] = 'Eguneratzeko zeregina: {$a->name} (Ikastaroa: {$a->shortname})';
 $string['upgradeprogress'] = 'Eguneratu zeregina {$a->current}  {$a->total}tik';

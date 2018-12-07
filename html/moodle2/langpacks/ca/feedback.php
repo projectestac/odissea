@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['anonymous'] = 'Les respostes seran anònimes';
 $string['anonymous_edit'] = 'Enregistrament dels noms d\'usuari';
 $string['anonymous_entries'] = 'Entrades anònimes ({$a})';
 $string['anonymous_user'] = 'Usuari anònim';
+$string['answerquestions'] = 'Respon les preguntes';
 $string['append_new_items'] = 'Afegeix elements nous';
 $string['autonumbering'] = 'Numeració automàtica de les preguntes';
 $string['autonumbering_help'] = 'Habilita o inhabilita la numeració automàtica per a cada pregunta';
@@ -249,7 +250,7 @@ $string['save_entries'] = 'Envia les respostes';
 $string['save_item'] = 'Desa la pregunta';
 $string['saving_failed'] = 'No s\'ha pogut desar';
 $string['saving_failed_because_missing_or_false_values'] = 'No s\'ha pogut desar perquè s\'han perdut valors o se n\'han trobat de falsos.';
-$string['search:activity'] = 'Retroacció - informació de l\'activitat';
+$string['search:activity'] = 'Retroacció: informació de l\'activitat';
 $string['search_course'] = 'Cerca curs';
 $string['searchcourses'] = 'Cerca cursos';
 $string['searchcourses_help'] = 'Cerqueu el codi o el nom del/s curs/os que voleu associar amb aquesta retroacció.';

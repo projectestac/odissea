@@ -135,9 +135,9 @@ abstract class advanced_testcase extends base_testcase {
         // make sure test did not forget to close transaction
         if ($DB->is_transaction_started()) {
             self::resetAllData();
-            if ($this->getStatus() == PHPUnit_Runner_BaseTestRunner::STATUS_PASSED
-                or $this->getStatus() == PHPUnit_Runner_BaseTestRunner::STATUS_SKIPPED
-                or $this->getStatus() == PHPUnit_Runner_BaseTestRunner::STATUS_INCOMPLETE) {
+            if ($this->getStatus() == PHPUnit\Runner\BaseTestRunner::STATUS_PASSED
+                or $this->getStatus() == PHPUnit\Runner\BaseTestRunner::STATUS_SKIPPED
+                or $this->getStatus() == PHPUnit\Runner\BaseTestRunner::STATUS_INCOMPLETE) {
                 throw new coding_exception('Test '.$this->getName().' did not close database transaction');
             }
         }
@@ -147,20 +147,20 @@ abstract class advanced_testcase extends base_testcase {
      * Creates a new FlatXmlDataSet with the given $xmlFile. (absolute path.)
      *
      * @param string $xmlFile
-     * @return PHPUnit_Extensions_Database_DataSet_FlatXmlDataSet
+     * @return PHPUnit\DbUnit\DataSet\FlatXmlDataSet
      */
     protected function createFlatXMLDataSet($xmlFile) {
-        return new PHPUnit_Extensions_Database_DataSet_FlatXmlDataSet($xmlFile);
+        return new PHPUnit\DbUnit\DataSet\FlatXmlDataSet($xmlFile);
     }
 
     /**
      * Creates a new XMLDataSet with the given $xmlFile. (absolute path.)
      *
      * @param string $xmlFile
-     * @return PHPUnit_Extensions_Database_DataSet_XmlDataSet
+     * @return PHPUnit\DbUnit\DataSet\XmlDataSet
      */
     protected function createXMLDataSet($xmlFile) {
-        return new PHPUnit_Extensions_Database_DataSet_XmlDataSet($xmlFile);
+        return new PHPUnit\DbUnit\DataSet\XmlDataSet($xmlFile);
     }
 
     /**
@@ -170,10 +170,10 @@ abstract class advanced_testcase extends base_testcase {
      * @param string $delimiter
      * @param string $enclosure
      * @param string $escape
-     * @return PHPUnit_Extensions_Database_DataSet_CsvDataSet
+     * @return PHPUnit\DbUnit\DataSet\CsvDataSet
      */
     protected function createCsvDataSet($files, $delimiter = ',', $enclosure = '"', $escape = '"') {
-        $dataSet = new PHPUnit_Extensions_Database_DataSet_CsvDataSet($delimiter, $enclosure, $escape);
+        $dataSet = new PHPUnit\DbUnit\DataSet\CsvDataSet($delimiter, $enclosure, $escape);
         foreach($files as $table=>$file) {
             $dataSet->addTable($table, $file);
         }
@@ -195,10 +195,10 @@ abstract class advanced_testcase extends base_testcase {
      *
      * Note: it is usually better to use data generators
      *
-     * @param PHPUnit_Extensions_Database_DataSet_IDataSet $dataset
+     * @param PHPUnit\DbUnit\DataSet\IDataSet $dataset
      * @return void
      */
-    protected function loadDataSet(PHPUnit_Extensions_Database_DataSet_IDataSet $dataset) {
+    protected function loadDataSet(PHPUnit\DbUnit\DataSet\IDataSet $dataset) {
         global $DB;
 
         $structure = phpunit_util::get_tablestructure();
@@ -662,5 +662,63 @@ abstract class advanced_testcase extends base_testcase {
         while (time() == $starttime) {
             usleep(50000);
         }
+    }
+
+    /**
+     * Run adhoc tasks, optionally matching the specified classname.
+     *
+     * @param   string  $matchclass The name of the class to match on.
+     * @param   int     $matchuserid The userid to match.
+     */
+    protected function runAdhocTasks($matchclass = '', $matchuserid = null) {
+        global $CFG, $DB;
+        require_once($CFG->libdir.'/cronlib.php');
+
+        $params = [];
+        if (!empty($matchclass)) {
+            if (strpos($matchclass, '\\') !== 0) {
+                $matchclass = '\\' . $matchclass;
+            }
+            $params['classname'] = $matchclass;
+        }
+
+        if (!empty($matchuserid)) {
+            $params['userid'] = $matchuserid;
+        }
+
+        $lock = $this->createMock(\core\lock\lock::class);
+        $cronlock = $this->createMock(\core\lock\lock::class);
+
+        $tasks = $DB->get_recordset('task_adhoc', $params);
+        foreach ($tasks as $record) {
+            // Note: This is for cron only.
+            // We do not lock the tasks.
+            $task = \core\task\manager::adhoc_task_from_record($record);
+
+            $user = null;
+            if ($userid = $task->get_userid()) {
+                // This task has a userid specified.
+                $user = \core_user::get_user($userid);
+
+                // User found. Check that they are suitable.
+                \core_user::require_active_user($user, true, true);
+            }
+
+            $task->set_lock($lock);
+            if (!$task->is_blocking()) {
+                $cronlock->release();
+            } else {
+                $task->set_cron_lock($cronlock);
+            }
+
+            cron_prepare_core_renderer();
+            $this->setUser($user);
+
+            $task->execute();
+            \core\task\manager::adhoc_task_complete($task);
+
+            unset($task);
+        }
+        $tasks->close();
     }
 }

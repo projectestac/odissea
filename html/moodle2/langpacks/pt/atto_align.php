@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_align', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_align', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_align
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = 'Centrado';
 $string['leftalign'] = 'Alinhado à esquerda';
 $string['pluginname'] = 'Alinhamento de texto';
+$string['privacy:metadata'] = 'O módulo atto_align não armazena nenhum dado pessoal.';
 $string['rightalign'] = 'Alinhado à direita';

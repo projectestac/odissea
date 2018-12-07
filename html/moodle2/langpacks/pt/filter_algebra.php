@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_algebra', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_algebra', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_algebra
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Expressão algébrica';
 $string['filtername'] = 'Notação algébrica';
+$string['privacy:metadata'] = 'O módulo Notação algébrica não armazena dados pessoais.';

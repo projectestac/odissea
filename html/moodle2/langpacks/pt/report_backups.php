@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_backups', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   report_backups
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['logsofbackupexecutedon'] = 'Registos de atividade da cópia de seguran�
 $string['nobackupsfound'] = 'Não foram encontradas cópias de segurança.';
 $string['nologsfound'] = 'Não foram encontrados registos de atividade para esta cópia de segurança.';
 $string['pluginname'] = 'Relatório de cópias de segurança';
+$string['privacy:metadata'] = 'O módulo Relatório de cópias de segurança não armazena dados pessoais.';
 $string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Ver registos';

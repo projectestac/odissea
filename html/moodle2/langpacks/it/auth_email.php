@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_email', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_email
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['auth_emailrecaptcha'] = 'Nella pagina di creazione account è possibile
 $string['auth_emailrecaptcha_key'] = 'Abilita reCAPTCHA';
 $string['auth_emailsettings'] = 'Impostazioni';
 $string['pluginname'] = 'Account via email';
+$string['privacy:metadata'] = 'Il plugin di autenticazione "Account via email" non memorizza dati personali.';

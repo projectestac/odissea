@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,13 +68,15 @@ $string['autocontinuedesc'] = 'Diese Einstellung setzt für diese Aktivität die
 $string['autocontinue_help'] = 'Wenn die Option aktiviert ist, wird nach dem Bearbeiten eines Lernobjekts automatisch das nächste verfügbare Lernobjekt aufgerufen. Andernfalls muss eine Taste \'Weiter\' benutzt werden.';
 $string['averageattempt'] = 'Durchschnitt';
 $string['badarchive'] = 'Sie müssen eine gültige ZIP-Datei bereitstellen';
-$string['badimsmanifestlocation'] = 'Eine imsmanisfest.xml Datei wurde gefunden. Sie liegt jedoch nicht im Root-Verzeichnis der zip-Datei. Bitte packen Sie das SCORM-Paket erneut.';
+$string['badimsmanifestlocation'] = 'Eine Datei imsmanifest.xml wurde gefunden. Sie liegt jedoch nicht im Root-Verzeichnis der ZIP-Datei. Packen Sie das SCORM-Paket neu zusammen.';
 $string['badmanifest'] = 'Einige Fehler im Manifest gefunden: siehe Fehlerprotokoll';
 $string['browse'] = 'Vorschau';
 $string['browsed'] = 'Durchsucht';
 $string['browsemode'] = 'Vorschaumodus';
 $string['browserepository'] = 'Repository durchsuchen';
 $string['calculatedweight'] = 'Berechnete Gewichtung';
+$string['calendarend'] = '\'{$a}\' endet.';
+$string['calendarstart'] = '{$a} beginnt';
 $string['cannotaccess'] = 'Dieses Skript kann so nicht aufgerufen werden.';
 $string['cannotfindsco'] = 'SCO konnte nicht gefunden werden';
 $string['chooseapacket'] = 'Auswählen/aktualisieren eines Pakets';
@@ -84,17 +86,20 @@ $string['collapsetocwinsizedesc'] = 'Die Einstellung ermöglicht Ihnen festzuleg
 $string['compatibilitysettings'] = 'Kompatibilität';
 $string['completed'] = 'Abgeschlossen';
 $string['completionscorerequired'] = 'Mindestpunkte notwendig';
+$string['completionscorerequireddesc'] = 'Die Mindestpunktzahl {$a} ist zum Abschluss erforderlich.';
 $string['completionscorerequired_help'] = 'Wenn diese Option aktiviert ist, müssen Teilnehmer/innen neben anderen Anforderungen auch die angegebene Mindestpunkte erreichen, um dieses Lernpaket als \'abgeschlossen\' markieren zu können.';
 $string['completionstatusallscos'] = 'Alle Scos sind erforderlich, um den Abschlussstatus zurückzugeben';
 $string['completionstatusallscos_help'] = 'Einige SCORM Pakete enthalten mehrere Komponenten oder "scos" - bei Aktivierung müssen alle scos innerhalb des Pakets den entsprechenden lesson_status für diese Aktivität zurücksenden um als abgeschlossen markiert zu werden.';
 $string['completionstatus_completed'] = 'Erledigt';
 $string['completionstatus_passed'] = 'Durchlaufen';
 $string['completionstatusrequired'] = 'Status erforderlich';
+$string['completionstatusrequireddesc'] = 'Teilnehmer/in muss mindestens einen der folgenden Status erreichen: {$a}';
 $string['completionstatusrequired_help'] = 'Wenn Sie einen oder mehrere Punkte anwählen, müssen Teilnehmer/innen neben anderen Anforderungen auch mindestens einen dieser Punkte erledigen, um dieses Lernpaket als \'abgeschlossen\' markieren zu können.';
 $string['confirmloosetracks'] = 'Warnung: Das Lernpaket scheint verändert worden zu sein. Evtl. ist die Paketstruktur geändert worden. Beim Update könnten Protokolldaten der Nutzer/innen verloren gehen.';
 $string['contents'] = 'Inhalte';
 $string['coursepacket'] = 'Lernpaket';
 $string['coursestruct'] = 'Kursstruktur';
+$string['crontask'] = 'Hintergrundprozess für Lernpakete';
 $string['currentwindow'] = 'Aktuelles Fenster';
 $string['datadir'] = 'Dateisystemfehler: Das Verzeichnis für Kursdaten konnte nicht erstellt werden';
 $string['defaultdisplaysettings'] = 'Standardmäßige Anzeigeeinstellungen';
@@ -192,6 +197,10 @@ $string['hidetoc_help'] = 'Diese Einstellung legt fest, wie die Kursstruktur im 
 $string['highestattempt'] = 'Bester Versuch';
 $string['identifier'] = 'Fragen-ID';
 $string['incomplete'] = 'Unvollständig';
+$string['indicator:cognitivedepth'] = 'Lernpaket kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer SCORM-Aktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Lernpaket sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer SCORM-Aktivität erreicht hat.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interaktionen';
 $string['invalidactivity'] = 'Aktivität im Lernpaket ist falsch';
@@ -288,6 +297,20 @@ $string['position_error'] = 'Das Tag {$a-tag} kann nicht Kind (Child) des Tags {
 $string['preferencespage'] = 'Einstellungen für diese Seite';
 $string['preferencesuser'] = 'Einstellungen für diese Übersicht';
 $string['prev'] = 'Zurück';
+$string['privacy:metadata:aicc:data'] = 'Persönliche Daten, die vom SCORM/AICC-System übergeben wurden';
+$string['privacy:metadata:aicc:externalpurpose'] = 'Dieses Plugin sendet Daten weiter zur Nutzung von AICC HACP';
+$string['privacy:metadata:aicc_session:lessonstatus'] = 'Der gespeicherte Status in der Lektion';
+$string['privacy:metadata:aicc_session:scormmode'] = 'Modus des gespeicherten Elements';
+$string['privacy:metadata:aicc_session:scormstatus'] = 'Status des gespeicherten Elements';
+$string['privacy:metadata:aicc_session:sessiontime'] = 'Gespeicherte Session-Zeit';
+$string['privacy:metadata:aicc_session:timecreated'] = 'Zeitpunkt zu dem das gespeicherte Element erstellt wurde';
+$string['privacy:metadata:attempt'] = 'Versuchsanzahl';
+$string['privacy:metadata:scoes_track:element'] = 'Name des getrackten Elements';
+$string['privacy:metadata:scoes_track:value'] = 'Wert des gegebenen Elements';
+$string['privacy:metadata:scorm_aicc_session'] = 'Session Information von AICC HACP';
+$string['privacy:metadata:scorm_scoes_track'] = 'Gespeicherte Daten der SCOs für die Aktivität';
+$string['privacy:metadata:timemodified'] = 'Zeitpunkt zu dem das gespeicherte Element zuletzt geändert wurde';
+$string['privacy:metadata:userid'] = 'ID des Nutzers der die SCORM Aktivität nutzte';
 $string['protectpackagedownloads'] = 'Herunterladen des Lernpakets verhindern';
 $string['protectpackagedownloads_desc'] = 'Wenn diese Option aktiviert ist, können Lernpakete nur mit dem Recht course:manageactivities heruntergeladen werden. Wenn die Option deaktiviert ist, kann das Lernpaket immer heruntergeladen werden (z.B. von mobilen Endgeräten).';
 $string['raw'] = 'Rohpunktwert';

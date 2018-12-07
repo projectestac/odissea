@@ -17,9 +17,7 @@ Feature: In a lesson activity, teacher can import embedded images in questions a
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
     And I log in as "teacher1"
-    When I am on homepage
-    And I follow "Course 1"
-    And I turn editing mode on
+    When I am on "Course 1" course homepage with editing mode on
     And I add a "Lesson" to section "1" and I fill the form with:
       | Name | Test lesson name |
       | Description | Test lesson description |
@@ -36,4 +34,3 @@ Feature: In a lesson activity, teacher can import embedded images in questions a
     And "//audio[contains(@title, 'Listen to this greeting:')]/source[contains(@src, 'bonjour.mp3')]" "xpath_element" should exist
     And "//*[contains(@class, 'answeroption')]//img[contains(@src, 'pluginfile.php')]" "xpath_element" should exist
     And "//*[contains(@class, 'answeroption')]//img[contains(@src, 'flag-france.jpg')]" "xpath_element" should exist
-

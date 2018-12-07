@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,6 +121,10 @@ $string['incorrectdeleteversions'] = '指定要删除的页面版本不正确。
 $string['incorrectpageid'] = '页面的ID不正确';
 $string['incorrectsubwikiid'] = '下层wiki的ID不正确';
 $string['incorrectwikiid'] = 'wiki的ID不正确';
+$string['indicator:cognitivedepth'] = 'Wiki协作活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 Wiki协作活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = 'Wiki协作活动社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在Wiki协作活动中所达到的社会宽度。';
 $string['individualpagedoesnotexist'] = '个人wiki页面不存在';
 $string['insertcomment'] = '插入评论';
 $string['insertimage'] = '插入一个图片...';
@@ -237,7 +241,6 @@ $string['special'] = '特例';
 $string['tableofcontents'] = '目录';
 $string['tagarea_wiki_pages'] = '维基页面';
 $string['tagsdeleted'] = 'Wiki标签已被删除';
-$string['tagtitle'] = '查看 "{$a}" 标签';
 $string['teacherrating'] = '教师评分';
 $string['timesrating'] = '此页已评分 {$a->c} 次，平均分：{$a->s}';
 $string['updatedpages'] = '更新的页面';

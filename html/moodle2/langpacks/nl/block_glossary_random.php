@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_glossary_random', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['noentriesyet'] = 'Er zijn nog geen items in de gekozen woordenlijst.';
 $string['notyetconfigured'] = 'Configureer dit blok door op het wijzigen-pictogram te klikken.';
 $string['notyetglossary'] = 'Je hebt minstens één woordenlijst nodig om uit te kunnen kiezen';
 $string['pluginname'] = 'Willekeurig woordenlijstitem';
+$string['privacy:metadata'] = 'Het blok Willekeurige woordenlijst toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['random'] = 'Willekeurig item';
 $string['refresh'] = 'Aantal dagen voor een nieuw item wordt gekozen';
 $string['select_glossary'] = 'Neem items uit deze woordenlijst';

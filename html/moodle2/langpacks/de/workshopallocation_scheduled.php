@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['currentstatusresult'] = 'Ergebnis der früheren Ausführung';
 $string['enablescheduled'] = 'Zeitgesteuerte Aufteilung aktivieren';
 $string['enablescheduledinfo'] = 'Am Ende der Abgabephase Aufteilung der Einreichungen automatisch durchführen';
 $string['pluginname'] = 'Zeitgesteuerte Aufteilung';
+$string['privacy:metadata'] = 'Das Plugin für terminierte Zuordnungen speichert keine persönlichen Daten. Die aktuellen Daten darüber, wer wem zugewiesen wird, um Lösungen zu bewerten, werden in der Aktivität \'gegenseitige Beurteilung\' gespeichert und bilden die Grundlage für die Aufgabendetails.';
 $string['randomallocationsettings'] = 'Einstellungen Zuordnungen';
 $string['randomallocationsettings_help'] = 'Hier werden die Parameter der zufälligen Aufteilung festgelegt. Es kommt das Plugin zur zufälligen Zuteiliung der eingereichten Lösungen zum Einsatz.';
 $string['resultdisabled'] = 'Zeitgesteuerte Aufteilung deaktiviert';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_behat', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_behat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ $string['newstepsinfo'] = 'Leia {$a} para obter informações sobre como adicion
 $string['newtestsinfo'] = 'Leia {$a} para obter informações sobre como executar novos testes';
 $string['nostepsdefinitions'] = 'Não existem definições de etapas que correspondam a estes filtros';
 $string['pluginname'] = 'Teste de aceitação';
+$string['privacy:metadata'] = 'O módulo Teste de aceitação não armazena dados pessoais.';
 $string['stepsdefinitionscomponent'] = 'Área';
 $string['stepsdefinitionscontains'] = 'Contém';
 $string['stepsdefinitionsfilters'] = 'Definições de etapas';

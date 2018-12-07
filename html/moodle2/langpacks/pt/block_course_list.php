@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_list', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['course_list:myaddinstance'] = 'Adicionar um novo bloco Disciplinas ao P
 $string['hideallcourseslink'] = 'Ocultar a hiperligação "Todas as disciplinas"';
 $string['owncourses'] = 'O administrador vê apenas as suas disciplinas';
 $string['pluginname'] = 'Disciplinas';
+$string['privacy:metadata'] = 'O bloco Disciplinas apenas mostra informações sobre as disciplinas e não armazenam dados.';

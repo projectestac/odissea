@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = 'Gli utenti devono possedere il privileg
 $string['mnet_hosts:addinstance'] = 'Aggiungere blocco Network server';
 $string['mnet_hosts:myaddinstance'] = 'Aggiungere blocco Network server nella Dashboard';
 $string['pluginname'] = 'Network server';
+$string['privacy:metadata'] = 'Il blocco Network server fornisce un metodo per interagire con server nella rete e non memorizza nè esporta dati.';
 $string['server'] = 'Server';

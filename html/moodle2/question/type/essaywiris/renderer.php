@@ -26,7 +26,7 @@ class qtype_essaywiris_renderer extends qtype_wq_renderer  {
 
     public function formulation_and_controls(question_attempt $qa, question_display_options $options) {
         $result = $this->base->formulation_and_controls($qa, $options);
-        // Add hidden WIRIS quizzes fields.
+        // Add hidden Wiris Quizzes fields.
         $result .= $this->lang();
         $result .= $this->question($qa);
         $result .= $this->question_instance($qa);

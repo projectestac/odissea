@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'admin', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,7 @@ $string['allowemailaddresses'] = 'Dominis de correu permesos';
 $string['allowframembedding'] = 'Permet la incrustació dins el marc';
 $string['allowframembedding_help'] = 'Si està habilitada, permet la incrustació d\'aquest lloc en un marc d\'un lloc extern, tal i com es recomana quan s\'utilitza el connector d\'inscripció «Publica com una eina LTI». Altrament, habilitar aquesta funcionalitat no és recomanable per raons de seguretat.';
 $string['allowguestmymoodle'] = 'Permet l\'accés de visitants al Tauler';
+$string['allowindexingnowhere'] = 'Enlloc';
 $string['allowobjectembed'] = 'Permet etiquetes EMBED i OBJECT';
 $string['allowthemechangeonurl'] = 'Permet canvis de tema des de l\'URL';
 $string['allowuserblockhiding'] = 'Permet que els usuaris ocultin blocs';
@@ -67,9 +68,9 @@ $string['always'] = 'Sempre';
 $string['appearance'] = 'Aparença';
 $string['aspellpath'] = 'Camí d\'aspell';
 $string['authentication'] = 'Autenticació';
-$string['authpreventaccountcreation'] = 'Evita la creació de nous comptes durant el procediment d\'autenticació';
-$string['authpreventaccountcreation_help'] = 'Quan un usuari s\'autentica, es crea automàticament un compte si encara no existeix. Si s\'utilitza una base de dades externa, com el LDAP, però voleu restringir l\'accés al lloc només pels usuaris que disposen d\'un compte, aleshores heu d\'activar aquesta opció.
-Els nous comptes s\'hauran de crear manualment o bé mitjançant la càrrega d\'usuaris. Tingueu en compte que aquest ajust no s\'aplica a l\'autenticació MNet.';
+$string['authpreventaccountcreation'] = 'Evita la creació de comptes nous durant el procediment d\'autenticació';
+$string['authpreventaccountcreation_help'] = 'Quan un usuari s\'autentica, es crea automàticament un compte si encara no existeix. Si s\'utilitza una base de dades externa, com el LDAP, però voleu restringir l\'accés al lloc només per als usuaris que disposen d\'un compte, aleshores heu d\'activar aquesta opció.
+Els comptes nous s\'hauran de crear manualment o bé mitjançant la càrrega d\'usuaris. Tingueu en compte que aquest ajust no s\'aplica a l\'autenticació MNet.';
 $string['authsettings'] = 'Gestió de l\'autenticació';
 $string['autolang'] = 'Detecció automàtica d\'idioma';
 $string['autologinguests'] = 'Inici de sessió automàtic dels visitants';
@@ -86,9 +87,9 @@ $string['blockediplist'] = 'Llista d\'adreces IP blocades';
 $string['blockinstances'] = 'Instàncies';
 $string['blockmultiple'] = 'Múltiple';
 $string['blockprotect'] = 'Protegeix instàncies';
-$string['blockprotect_help'] = 'Si bloquegeu un tipus particular de bloc ningú no podrà afegir-ne o esborrar-ne instàncies. (Podeu, naturalment, desbloquejar-lo de nou si us cal editar instàncies.)
+$string['blockprotect_help'] = 'Si bloquegeu un tipus particular de bloc ningú no podrà afegir-hi instàncies o esborrar-n\'hi. (Podeu, naturalment, desbloquejar-lo de nou si us cal editar instàncies.)
 
-Això es fa amb l\'objectiu de protegir blocs com ara els de configuració i de navegació que serien molt difícils de recuperar si s\'esborren per accident.';
+Això es fa amb l\'objectiu de protegir blocs, com ara els de configuració i de navegació, que serien molt difícils de recuperar si s\'esborren per accident.';
 $string['blocksettings'] = 'Gestió de blocs';
 $string['blockunprotect'] = 'Desprotegeix';
 $string['bloglevel'] = 'Visibilitat dels blogs';
@@ -144,7 +145,7 @@ $string['componentinstalled'] = 'S\'ha instal·lat el component';
 $string['computedfromlogs'] = 'Comprovats els registres des de {$a}.';
 $string['condifmodeditdefaults'] = 'Els valors per defecte s\'utilitzaran en el formulari de paràmetres quan creeu una nova activitat o recurs.';
 $string['confeditorhidebuttons'] = 'Seleccioneu els botons que voleu ocultar en l\'editor HTML.';
-$string['configallcountrycodes'] = 'Aquesta és la llista de països que es pot seleccionar en alguns punts, per exemple en un perfil d\'usuari. Si es deixa en blanc (per defecte) s\'utilitza la llista del fitxer <i>countries.php</i> que hi ha al paquet d\'idioma anglès estàndard. Aquesta llista és la que hi ha a l\'ISO 3166-1.<br />
+$string['configallcountrycodes'] = 'Aquesta és la llista de països que es pot seleccionar en alguns punts; per exemple, en un perfil d\'usuari. Si es deixa en blanc (per defecte) s\'utilitza la llista del fitxer <i>countries.php</i> que hi ha al paquet d\'idioma anglès estàndard. Aquesta llista és la que hi ha a l\'ISO 3166-1.<br />
 Podeu escriure una llista de codis separats amb comes, per exemple \'CT, FR_ES\'. Si n\'hi afegiu de nous, que no són estàndards, els haureu d\'afegir a la llista <i>countries.php</i> del vostre paquet d\'idioma i al paquet \'en\' (és el cas de l\'exemple CT, que no està inclòs a les llistes de països).';
 $string['configallowassign'] = 'Permet a la gent que té els rols de l\'esquerra assignar a altra gent alguns dels rols de les columnes';
 $string['configallowattachments'] = 'Si s\'habilita, els correus electrònics enviats des del lloc podran dur adjunts com ara insígnies.';
@@ -467,7 +468,6 @@ $string['devicedetectregex_desc'] = '<p>Per defecte, Moodle pot detectar disposi
 $string['devicedetectregexexpression'] = 'Expressió regular';
 $string['devicedetectregexvalue'] = 'Valor de retorn';
 $string['devicetype'] = 'Tipus de dispositiu';
-$string['devlibdirpresent'] = 'Els directoris amb biblioteques de desenvolupament com <em>vendor</em> o <em>node_modules</em> no haurien d\'estar presents en llocs públics. Per obtenir més informació, consulteu l\'<a href="{$a->moreinfourl}">informe general de seguretat </a>.';
 $string['disableuserimages'] = 'Inhabilita imatges en els perfils d\'usuari';
 $string['displayerrorswarning'] = 'Es recomana no habilitar el paràmetre de PHP <em>display_errors</em> en llocs en producció perquè alguns missatges d\'error poden revelar informació delicada sobre el vostre servidor.';
 $string['displayloginfailures'] = 'Mostra els inicis de sessió erronis';
@@ -555,6 +555,7 @@ $string['experimentalsettings'] = 'Paràmetres experimentals';
 $string['extendedusernamechars'] = 'Permet caràcters estesos en els noms d\'usuari';
 $string['extramemorylimit'] = 'Memòria límit extra PHP';
 $string['fatalsessionautostart'] = '<p>S\'ha detectat un error greu de configuració, notifiqueu-ho a l\'administrador del servidor.</p><p> Per poder funcionar correctament, Moodle necessita que l\'administrador canviï la configuració del PHP.</p><p>Cal que el paràmetre <code>session.auto_start</code> estigui establert en <code>off</code>.</p><p>Aquest paràmetre es controla editant el fitxer <code>php.ini</code>, la configuració <br />de l\'Apache/IIS o el fitxer <code>.htaccess</code> del servidor.</p>';
+$string['fileconversioncleanuptask'] = 'Neteja de registres temporals per a conversions de fitxers.';
 $string['filecreated'] = 'S\'ha creat un nou fitxer';
 $string['filestoredin'] = 'Desa el fitxer a la carpeta:';
 $string['filestoredinhelp'] = 'On s\'emmagatzemarà el fitxer';
@@ -760,6 +761,7 @@ $string['mnetrestore_extusers_mismatch'] = '<strong>Nota:</strong> aparentment a
 $string['mnetrestore_extusers_noadmin'] = '<strong>Avís:</strong> Aquesta còpia de seguretat sembla provenir d\'una instal·lació diferent de Moodle i conté comptes d\'usuaris d\'un Moodle remot. No esteu habilitat per executar aquest tipus de restauració. Contacteu amb l\'administrador del lloc o, de forma alternativa, restaureu aquest curs sense informació d\'usuaris (mòduls, fitxers...)';
 $string['mnetrestore_extusers_switchuserauth'] = 'Usuaris remots de Moodle {$a->username} (que vénen de {$a->mnethosturl} ) canviats a usuaris locals {$a->auth} autenticats.';
 $string['mobile'] = 'Mòbil';
+$string['mobilenotconfiguredwarning'] = 'Moodle Mobile no està habilitat.';
 $string['modchooserdefault'] = 'Selector d\'activitat per defecte';
 $string['modeditdefaults'] = 'Paràmetres per defecte per a la configuració d\'activitats.';
 $string['modsettings'] = 'Gestió d\'activitats';
@@ -810,6 +812,8 @@ $string['notifyloginthreshold'] = 'Llindar de les notificacions per correu';
 $string['notloggedinroleid'] = 'Rol per a usuaris que no hagin iniciat una sessió';
 $string['numberofmissingstrings'] = 'Nombre de cadenes per traduir: {$a}';
 $string['numberofstrings'] = 'Nombre total de cadenes: {$a->strings}<br />Per traduir: {$a->missing} ({$a->missingpercent} %)';
+$string['oauthrefreshtokenexpired'] = 'El testimoni d\'actualització d\'un dels serveis d\'OAuth {$a->issuer}  al vostre lloc {$a->siteurl} ha caducat. Això limitarà la funcionalitat de qualsevol connector que utilitzi aquest servei. Per solucionar aquest problema, visiteu la pàgina de configuració de Serveis OAuth 2 i feu clic a la icona «Connect system account» de la fila de la taula d\'aquest servei. Assegureu-vos d\'iniciar sessió utilitzant el mateix compte del servei per al sistema OAuth cada vegada.';
+$string['oauthrefreshtokenexpiredshort'] = 'El testimoni d\'actualització ha caducat per  {$a->issuer} al vostre lloc web {$a->siteurl}.';
 $string['onlynoreply'] = 'Només si prové d\'una adreça sense resposta';
 $string['opcacherecommended'] = 'El sistema de memòria cau de PHP opcode millora el rendiment i redueix els requisits de memòria. L\'extensió OPcache es recomana i és totalment compatible.';
 $string['opensslrecommended'] = 'Es recomana instal·lar la biblioteca OpenSSL per habilitar la funcionalitat de Moodle en Xarxa.';
@@ -840,8 +844,6 @@ $string['pathtopgdumpinvalid'] = 'El camí de pg_dump no és vàlid. El fitxer n
 $string['pathtopsql'] = 'Camí de psql';
 $string['pathtopsqldesc'] = 'Només cal definir aquest paràmetre en cas que tingueu diferents psql en el vostre sistema (per exemple, si teniu instal·lades diferents versions de postgresql)';
 $string['pathtopsqlinvalid'] = 'El camí de psql no és vàlid. El fitxer no es troba en aquest camí o no és executable.';
-$string['pathtounoconv'] = 'Ruta al convertidor de documents «unoconv»';
-$string['pathtounoconv_help'] = 'Ruta al convertidor de documents «unoconv». És un executable que és capaç de convertir entre diferents formats suportats pel LibreOffice. És opcional però, si l\'especifiqueu, el Moodle l\'utilitzarà per convertir automàticament d\'un format a un altre. Això s\'utilitza per';
 $string['pcreunicodewarning'] = 'És molt recomanable utilitzar l\'extensió PCRE de PHP que és compatible amb caràcters Unicode.';
 $string['perfdebug'] = 'Informació d\'execució';
 $string['performance'] = 'Execució';
@@ -1003,6 +1005,7 @@ $string['searchindexupdated'] = 'S\'han actualitzat els continguts del motor de 
 $string['searchinsettings'] = 'Cerca en paràmetres';
 $string['searchlastrun'] = 'Darrera execució (data, # docs, # registres, # ignora)';
 $string['searchnotavailable'] = 'La cerca no està disponible';
+$string['searchoptions'] = 'Opcions de cerca';
 $string['searchreindexed'] = 'Tots els continguts del lloc s\'han reindexat.';
 $string['searchreindexindex'] = 'Reindexa tots els continguts del lloc';
 $string['searchresults'] = 'Resultats de la cerca';
@@ -1116,6 +1119,7 @@ $string['taskpasswordresetcleanup'] = 'Neteja els registres d\'intents de restab
 $string['taskplagiarismcron'] = 'Processament en segon pla del cron heretat en els connectors de detecció de plagi';
 $string['taskportfoliocron'] = 'Processament en segon pla dels connectors de portafolis';
 $string['taskquestioncron'] = 'Processament en segon pla del motor de preguntes';
+$string['taskrefreshsystemtokens'] = 'Actualitza els testimonis OAuth per al servei dels comptes';
 $string['taskregistrationcron'] = 'Registre del lloc';
 $string['tasksendfailedloginnotifications'] = 'Envia notificacions d\'intents d\'inici de sessió erronis';
 $string['tasksendnewuserpasswords'] = 'Envia contrasenyes dels nous usuaris';
@@ -1182,7 +1186,7 @@ $string['updateavailable_version'] = 'Versió {$a}';
 $string['updatecomponent'] = 'Actualitza el component';
 $string['updateminmaturity'] = 'Maduresa del codi requerida';
 $string['updateminmaturity_desc'] = 'Notifica les actualitzacions disponibles només si el codi disponible té el nivell de maduresa seleccionat com a mínim. Les actualitzacions per als connectors que no declaren el seu nivell de maduresa de codi es comuniquen sempre sense tenir en compte aquest paràmetre.';
-$string['updatenotificationfooter'] = 'El vostre lloc Moodle {$a->siteurl} està configurat per a comprovar automàticament si hi ha actualitzacions disponibles. Rebeu aquest missatge com a administrador del lloc. Podeu desactivar la comprovació automàtica d\'actualitzacions disponibles a l\'apartat d\'Administració del lloc, del bloc de Configuració. Podeu personalitzar el lliurament d\'aquest missatge des de la vostra pàgina de preferències.';
+$string['updatenotificationfooter'] = 'El vostre lloc Moodle {$a->siteurl} està configurat per comprovar automàticament si hi ha actualitzacions disponibles. Rebeu aquest missatge com a administrador del lloc. Podeu desactivar la comprovació automàtica d\'actualitzacions disponibles a l\'apartat d\'Administració del lloc, del bloc de Configuració. Podeu personalitzar el lliurament d\'aquest missatge des de la vostra pàgina de preferències.';
 $string['updatenotifications'] = 'Notificacions d\'actualització';
 $string['updatenotificationsubject'] = 'Hi ha actualitzacions de Moodle disponibles ({$a->siteurl})';
 $string['updatenotifybuilds'] = 'Notifica\'m l\'aparició de noves compilacions';

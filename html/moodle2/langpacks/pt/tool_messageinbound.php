@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_messageinbound', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -98,6 +98,12 @@ $string['onehour'] = 'Uma hora';
 $string['oneweek'] = 'Uma semana';
 $string['oneyear'] = 'Um ano';
 $string['pluginname'] = 'Configuração de mensagem de entrada';
+$string['privacy:metadata:coreuserkey'] = 'Chaves de utilizador para validar email recebido';
+$string['privacy:metadata:messagelist'] = 'Um lista de identificadores de mensagem que falharam na validação e exigem autorização';
+$string['privacy:metadata:messagelist:address'] = 'O endereço para o qual foi enviado o email';
+$string['privacy:metadata:messagelist:messageid'] = 'O ID da mensagem';
+$string['privacy:metadata:messagelist:timecreated'] = 'A hora em que o registo foi feito';
+$string['privacy:metadata:messagelist:userid'] = 'O ID do utilizador que precisa de aprovar a mensagem';
 $string['replysubjectprefix'] = 'Re:';
 $string['requirevalidation'] = 'Validar endereço do remetente';
 $string['ssl'] = 'SSL (Autodetetar versão de SSL)';

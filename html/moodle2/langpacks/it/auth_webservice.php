@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_webservice', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_webservice', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = 'Questo metodo di autenticazione va usato solamente per gli account dei client web service.';
 $string['pluginname'] = 'Web service';
+$string['privacy:metadata'] = 'Il plugin autenticazione "Web service" non memorizza dati personali.';

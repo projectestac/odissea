@@ -22,8 +22,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      3.0
  */
-define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str'],
-        function($, ajax, templates, notification, str) {
+define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str', 'core/yui'],
+        function($, ajax, templates, notification, str, Y) {
     return /** @alias module:core/tag */ {
 
         /**
@@ -67,6 +67,11 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str'
 
             // Set cell 'time modified' to 'now' when any of the element is updated in this row.
             $('body').on('updated', '[data-inplaceeditable]', function(e) {
+                str.get_string('selecttag', 'core_tag', e.ajaxreturn.value)
+                    .then(function(s) {
+                        return $('label[for="tagselect' + e.ajaxreturn.itemid + '"]').html(s);
+                    })
+                    .fail(notification.exception);
                 str.get_string('now').done(function(s) {
                     $(e.target).closest('tr').find('td.col-timemodified').html(s);
                 });
@@ -143,10 +148,12 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str'
                     {key: 'continue'},
                     {key: 'cancel'},
                 ]).done(function(s) {
-                    var el = $('<div><form id="combinetags_form" class="form-inline">' +
-                        '<p class="description"></p><p class="options"></p>' +
-                        '<p class="mdl-align"><input type="submit" id="combinetags_submit"/>' +
-                        '<input type="button" id="combinetags_cancel"/></p>' +
+                    var el = $('<div><form id="combinetags_form">' +
+                        '<div class="description"></div><div class="form-group options"></div>' +
+                        '<div class="form-group">' +
+                        '   <input type="submit" class="btn btn-primary" id="combinetags_submit"/>' +
+                        '   <input type="button" class="btn btn-secondary" id="combinetags_cancel"/>' +
+                        '</div>' +
                         '</form></div>');
                     el.find('.description').html(s[1]);
                     el.find('#combinetags_submit').attr('value', s[2]);
@@ -155,27 +162,33 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str'
                     tags.each(function() {
                         var tagid = $(this).val(),
                             tagname = $('.inplaceeditable[data-itemtype=tagname][data-itemid=' + tagid + ']').attr('data-value');
-                        fldset.append($('<input type="radio" name="maintag" id="combinetags_maintag_' + tagid + '" value="' +
-                            tagid + '"/><label for="combinetags_maintag_' + tagid + '">' + tagname + '</label><br>'));
+                        var option = '<div class="form-check">' +
+                            '   <input type="radio" name="maintag" id="combinetags_maintag_' + tagid + '" value="' + tagid + '"/>' +
+                            '   <label for="combinetags_maintag_' + tagid + '">' + tagname + '</label>' +
+                            '</div>';
+                        fldset.append($(option));
                     });
-                    var panel = new M.core.dialogue({
-                        draggable: true,
-                        modal: true,
-                        closeButton: true,
-                        headerContent: s[0],
-                        bodyContent: el.html()
-                    });
-                    panel.show();
-                    $('#combinetags_form input[type=radio]').first().focus().prop('checked', true);
-                    $('#combinetags_form #combinetags_cancel').on('click', function() {
-                        panel.destroy();
-                    });
-                    $('#combinetags_form').on('submit', function() {
-                        tempElement.appendTo(form);
-                        var maintag = $('input[name=maintag]:checked', '#combinetags_form').val();
-                        $("<input type='hidden'/>").attr('name', 'maintag').attr('value', maintag).appendTo(form);
-                        form.submit();
-                        return false;
+                    // TODO: MDL-57778 Convert to core/modal.
+                    Y.use('moodle-core-notification-dialogue', function() {
+                        var panel = new M.core.dialogue({
+                            draggable: true,
+                            modal: true,
+                            closeButton: true,
+                            headerContent: s[0],
+                            bodyContent: el.html()
+                        });
+                        panel.show();
+                        $('#combinetags_form input[type=radio]').first().focus().prop('checked', true);
+                        $('#combinetags_form #combinetags_cancel').on('click', function() {
+                            panel.destroy();
+                        });
+                        $('#combinetags_form').on('submit', function() {
+                            tempElement.appendTo(form);
+                            var maintag = $('input[name=maintag]:checked', '#combinetags_form').val();
+                            $("<input type='hidden'/>").attr('name', 'maintag').attr('value', maintag).appendTo(form);
+                            form.submit();
+                            return false;
+                        });
                     });
                 });
             });
@@ -210,28 +223,35 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str'
                     {key: 'continue'},
                     {key: 'cancel'},
                 ]).done(function(s) {
-                    var el = $('<div><form id="addtags_form" class="form-inline" method="POST">' +
+                    var el = $('<div><form id="addtags_form" method="POST">' +
                         '<input type="hidden" name="action" value="addstandardtag"/>' +
                         '<input type="hidden" name="sesskey" value="' + M.cfg.sesskey + '"/>' +
-                        '<p><label for="id_tagslist">' + s[1] + '</label>' +
-                        '<input type="text" id="id_tagslist" name="tagslist"/></p>' +
-                        '<p class="mdl-align"><input type="submit" id="addtags_submit"/>' +
-                        '<input type="button" id="addtags_cancel"/></p>' +
+                        '<div class="form-group">' +
+                        '   <label for="id_tagslist">' + s[1] + '</label>' +
+                        '   <input type="text" id="id_tagslist" class="form-control" name="tagslist"/>' +
+                        '</div>' +
+                        '<div class="form-group">' +
+                        '   <input type="submit" class="btn btn-primary" id="addtags_submit"/>' +
+                        '   <input type="button" class="btn btn-secondary" id="addtags_cancel"/>' +
+                        '</div>' +
                         '</form></div>');
                     el.find('#addtags_form').attr('action', window.location.href);
                     el.find('#addtags_submit').attr('value', s[2]);
                     el.find('#addtags_cancel').attr('value', s[3]);
-                    var panel = new M.core.dialogue({
-                        draggable: true,
-                        modal: true,
-                        closeButton: true,
-                        headerContent: s[0],
-                        bodyContent: el.html()
-                    });
-                    panel.show();
-                    $('#addtags_form input[type=text]').focus();
-                    $('#addtags_form #addtags_cancel').on('click', function() {
-                        panel.destroy();
+                    // TODO: MDL-57778 Convert to core/modal.
+                    Y.use('moodle-core-notification-dialogue', function() {
+                        var panel = new M.core.dialogue({
+                            draggable: true,
+                            modal: true,
+                            closeButton: true,
+                            headerContent: s[0],
+                            bodyContent: el.html()
+                        });
+                        panel.show();
+                        $('#addtags_form input[type=text]').focus();
+                        $('#addtags_form #addtags_cancel').on('click', function() {
+                            panel.destroy();
+                        });
                     });
                 });
             });
@@ -279,37 +299,46 @@ define(['jquery', 'core/ajax', 'core/templates', 'core/notification', 'core/str'
                         {key: 'create'},
                         {key: 'cancel'},
                     ]).done(function(s) {
-                        var el = $('<div><form id="addtagcoll_form" class="form-inline">' +
-                            '<p><label for="addtagcoll_name"></label>: ' +
-                            '<input id="addtagcoll_name" type="text"/></p>' +
-                            '<p><label for="addtagcoll_searchable"></label>: ' +
-                            '<input id="addtagcoll_searchable" type="checkbox" value="1" checked/></p>' +
-                            '<p class="mdl-align"><input type="submit" id="addtagcoll_submit"/>' +
-                            '<input type="button" id="addtagcoll_cancel"/></p>' +
+                        var el = $('<div><form id="addtagcoll_form">' +
+                            '<div class="form-group">' +
+                            '   <label for="addtagcoll_name"></label> ' +
+                            '   <input id="addtagcoll_name" type="text" class="form-control"/>  ' +
+                            '</div>' +
+                            '<div class="form-check">' +
+                            '   <input id="addtagcoll_searchable" type="checkbox" value="1" checked/>' +
+                            '   <label for="addtagcoll_searchable"></label>' +
+                            '</div>' +
+                            '<div class="form-group">' +
+                            '   <input type="submit" class="btn btn-primary" id="addtagcoll_submit"/>' +
+                            '   <input type="button" class="btn btn-secondary" id="addtagcoll_cancel"/>' +
+                            '</div>' +
                             '</form></div>');
                         el.find('label[for="addtagcoll_name"]').html(s[1]);
                         el.find('label[for="addtagcoll_searchable"]').html(s[2]);
                         el.find('#addtagcoll_submit').attr('value', s[3]);
                         el.find('#addtagcoll_cancel').attr('value', s[4]);
-                        var panel = new M.core.dialogue({
-                            draggable: true,
-                            modal: true,
-                            closeButton: true,
-                            headerContent: s[0],
-                            bodyContent: el.html()
-                        });
-                        panel.show();
-                        $('#addtagcoll_form #addtagcoll_name').focus();
-                        $('#addtagcoll_form #addtagcoll_cancel').on('click', function() {
-                            panel.destroy();
-                        });
-                        $('#addtagcoll_form').on('submit', function() {
-                            var name = $('#addtagcoll_form #addtagcoll_name').val();
-                            var searchable = $('#addtagcoll_form #addtagcoll_searchable').prop('checked') ? 1 : 0;
-                            if (String(name).length > 0) {
-                                window.location.href = href + "&name=" + encodeURIComponent(name) + "&searchable=" + searchable;
-                            }
-                            return false;
+                        // TODO: MDL-57778 Convert to core/modal.
+                        Y.use('moodle-core-notification-dialogue', function() {
+                            var panel = new M.core.dialogue({
+                                draggable: true,
+                                modal: true,
+                                closeButton: true,
+                                headerContent: s[0],
+                                bodyContent: el.html()
+                            });
+                            panel.show();
+                            $('#addtagcoll_form #addtagcoll_name').focus();
+                            $('#addtagcoll_form #addtagcoll_cancel').on('click', function() {
+                                panel.destroy();
+                            });
+                            $('#addtagcoll_form').on('submit', function() {
+                                var name = $('#addtagcoll_form #addtagcoll_name').val();
+                                var searchable = $('#addtagcoll_form #addtagcoll_searchable').prop('checked') ? 1 : 0;
+                                if (String(name).length > 0) {
+                                    window.location.href = href + "&name=" + encodeURIComponent(name) + "&searchable=" + searchable;
+                                }
+                                return false;
+                            });
                         });
                     }
                 );

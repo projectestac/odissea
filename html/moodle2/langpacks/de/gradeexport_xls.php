@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xls', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeexport_xls', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeexport_xls
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Bewertung als XLS exportiert';
 $string['pluginname'] = 'Excel-Datei';
+$string['privacy:metadata'] = 'Das EXCEL-Tabellenformat Exportplugin speichert keine persönlichen Daten.';
 $string['timeexported'] = 'Zuletzt aus diesem Kurs geladen';
 $string['xls:publish'] = 'Bewertungen als Excel-Datei veröffentlichen';
 $string['xls:view'] = 'Bewertungen als Excel-Datei exportieren';

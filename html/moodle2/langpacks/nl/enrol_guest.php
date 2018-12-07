@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'Wachtwoord fout -probeer nogmaals';
 $string['passwordinvalidhint'] = 'Dat toegangswachtwoord was fout, probeer nogmaals<br />(Tip - het wachtwoord begint met \'{$a}\'';
 $string['pluginname'] = 'Gasttoegang';
 $string['pluginname_desc'] = 'De plugin voor gasttoegang geeft slechts tijdelijk toegang tot cursussen. De plugin gaat geen gebruikers bij een cursus aanmelden.';
+$string['privacy:metadata'] = 'De gast-toegang aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['requirepassword'] = 'Gastwachtwoord nodig';
 $string['requirepassword_desc'] = 'Vereis toegangswachtwoord in nieuwe cursussen en verhinder het verwijderen van toegangswachtwoorden bij bestaande cursussen.';
 $string['showhint'] = 'Toon tip';

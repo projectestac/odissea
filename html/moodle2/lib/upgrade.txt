@@ -1,22 +1,183 @@
 This files describes API changes in core libraries and APIs,
 information provided here is intended especially for developers.
 
-=== 3.2.4 ===
+=== 3.4.5 ===
 
-* The caching option 'immutable' has been added to send_stored_file() and send_file().
+* Custom AJAX handlers for the form autocomplete fields can now optionally return string in their processResults()
+  callback. If a string is returned, it is displayed instead of the list if suggested items. This can be used, for
+  example, to inform the user that there are too many items matching the current search criteria.
+* coursecat::get() now has optional $user parameter.
+* coursecat::is_uservisible() now has optional $user parameter.
+
+=== 3.4.3 ===
+
+* There is a new privacy API that every subsystem and plugin has to implement so that the site can become GDPR
+  compliant. Plugins use this API to report what information they store or process regarding users, and provide ability
+  to export and delete personal data. See https://docs.moodle.org/dev/Privacy_API for guidelines on how to implement the
+  privacy API in your plugin.
+* The following have been removed from the list of core subsystems:
+   - core_register
+   - core_publish
+  Following this change, \core_register_renderer and \core_publish_renderer have been removed and their methods have been
+  moved to \core_admin_renderer and \core_course_renderer respectively.
+* The cron runner now sets up a fresh PAGE and OUTPUT between each task.
+
+=== 3.4.2 ===
+
+* Plugins can define class 'PLUGINNAME\privacy\local\sitepolicy\handler' if they implement an alternative mechanisms for
+  site policies managements and agreements. Administrators can define which component is to be used for handling site
+  policies and agreements. See https://docs.moodle.org/dev/Site_policy_handler
+* Scripts can define a constant NO_SITEPOLICY_CHECK and set it to true before requiring the main config.php file. It
+  will make the require_login() skipping the test for the user's policyagreed status. This is useful for plugins that
+  act as a site policy handler.
+
+=== 3.4 ===
+* oauth2_client::request method has an extra parameter to specify the accept header for the response (MDL-60733)
+* The following functions, previously used (exclusively) by upgrade steps are not available
+  anymore because of the upgrade cleanup performed for this version. See MDL-57432 for more info:
+    - upgrade_mimetypes()
+    - upgrade_fix_missing_root_folders_draft()
+    - upgrade_minmaxgrade()
+    - upgrade_course_tags()
+
+* Added new moodleform element 'filetypes' and new admin setting widget 'admin_setting_filetypes'. These new widgets
+  allow users to define a list of file types; either by typing them manually or selecting them from a list. The widgets
+  directly support the syntax used to feed the 'accepted_types' option of the filemanager and filepicker elements. File
+  types can be specified as extensions (.jpg or just jpg), mime types (text/plain) or groups (image).
+* Removed accesslib private functions: load_course_context(), load_role_access_by_context(), dedupe_user_access() (MDL-49398).
+* Internal "accessdata" structure format has changed to improve ability to perform role definition caching (MDL-49398).
+* Role definitions are no longer cached in user session (MDL-49398).
+* External function core_group_external::get_activity_allowed_groups now returns an additional field: canaccessallgroups.
+  It indicates whether the user will be able to access all the activity groups.
+* file_get_draft_area_info does not sum the root folder anymore when calculating the foldercount.
+* The moodleform element classes can now optionally provide a public function validateSubmitValue(). This method can be
+  used to perform implicit validation of submitted values - without the need to explicitly add the validation rules to
+  every form. The method should accept a single parameter with the submitted value. It should return a string with the
+  eventual validation error, or an empty value if the validation passes.
+* New user_picture attribute $includefullname to determine whether to include the user's full name with the user's picture.
+* Enrol plugins which provide enrolment actions can now declare the following "data-action" attributes in their implementation of
+  enrol_plugin::get_user_enrolment_actions() whenever applicable:
+  * "editenrolment" - For editing a user'e enrolment details. Defined by constant ENROL_ACTION_EDIT.
+  * "unenrol" - For unenrolling a student. Defined by constant ENROL_ACTION_UNENROL.
+  These attributes enable enrol actions to be rendered via modals. If not added, clicking on the enrolment action buttons will still
+  redirect the user to the appropriate enrolment action page. Though optional, it is recommended to add these attributes for a
+  better user experience when performing enrol actions.
+* The enrol_plugin::get_user_enrolment_actions() implementations for core enrol plugins have been removed and moved to
+  the parent method itself. New enrol plugins don't have to implement get_user_enrolment_actions(), but just need to
+  make sure that they override:
+  - enrol_plugin::allow_manage(), and/or
+  - enrol_plugin::allow_unenrol_user() or enrol_plugin::allow_unenrol()
+  Existing enrol plugins that override enrol_plugin::get_user_enrolment_actions() don't have to do anything, but can
+  also opt to remove their own implementation of the method if they basically have the same logic as the parent method.
+* New optional parameter $enrolid for the following functions:
+  - get_enrolled_join()
+  - get_enrolled_sql()
+  - get_enrolled_with_capabilities_join()
+  Setting this parameter to a non-zero value will add a condition to the query such that only users that were enrolled
+  with this enrolment method will be returned.
+* New optional parameter 'closeSuggestionsOnSelect' for the enhance() function for form-autocomplete. Setting this to true will
+  close the suggestions popup immediately after an option has been selected. If not specified, it defaults to true for single-select
+  elements and false for multiple-select elements.
 * user_can_view_profile() now also checks the moodle/user:viewalldetails capability.
+* The core/modal_confirm dialogue has been deprecated. Please use the core/modal_save_cancel dialogue instead. Please ensure you
+  update to use the ModalEvents.save and ModalEvents.cancel events instead of their yes/no counterparts.
+* Instead of checking the 'moodle/course:viewparticipants' and 'moodle/site:viewparticipants' capabilities use the
+  new functions course_can_view_participants() and course_require_view_participants().
+* $stored_file->add_to_curl_request() now adds the filename to the curl request.
+* The option for Login HTTPS (authentication-only SSL) has been removed
+* $CFG->loginhttps is now deprecated, do not use it.
+* $PAGE->https_required and $PAGE->verify_https_required() are now deprecated. They are no longer used and will throw a coding_exception.
+* $CFG->httpswwwroot is now deprecated and will always result in the same value as wwwroot.
 
-=== 3.2.3 ===
+=== 3.3.1 ===
 
-* Behat compatibility changes are now being documented at
-  https://docs.moodle.org/dev/Acceptance_testing/Compatibility_changes
 * ldap_get_entries_moodle() now always returns lower-cased attribute names in the returned entries.
   It was suppposed to do so before, but it actually didn't.
 
-=== 3.2.2 ===
+=== 3.3 ===
 
+* Behat compatibility changes are now being documented at
+  https://docs.moodle.org/dev/Acceptance_testing/Compatibility_changes
+* PHPUnit's bootstrap has been changed to use HTTPS wwwroot (https://www.example.com/moodle) from previous HTTP version. Any
+  existing test expecting the old HTTP URLs will need to be switched to the new HTTPS value (reference: MDL-54901).
+* The information returned by the idp list has changed. This is usually only rendered by the login page and login block.
+  The icon attribute is removed and an iconurl attribute has been added.
+* Support added for a new type of external file: FILE_CONTROLLED_LINK. This is an external file that Moodle can control
+  the permissions. Moodle makes files read-only but can grant temporary write access.
+    When accessing a URL, the info from file_browser::get_file_info will be checked to determine if the user has write access,
+    if they do - the remote file will have access controls set to allow editing.
+* The method moodleform::after_definition() has been added and can now be used to add some logic
+  to be performed after the form's definition was set. This is useful for intermediate subclasses.
+* Moodle has support for font-awesome icons. Plugins should use the xxx_get_fontawesome_icon_map callback
+  to map their custom icons to one from font-awesome.
+* $OUTPUT->pix_url() has been deprecated because it is was used mostly to manually generate image tags for icons.
+  We now distinguish between icons and "small images". The difference is that an icon does not have to be rendered as an image tag
+  with a source. It is OK to still have "small images" - if this desired use $OUTPUT->image_icon() and $OUTPUT->image_url(). For
+  other uses - use $OUTPUT->pix_icon() or the pix helper in mustache templates {{#pix}}...{{/pix}}
+  For other valid use cases use $OUTPUT->image_url().
+* Activity icons have been split from standard icons. Use $OUTPUT->image_icon instead of $OUTPUT->pix_icon for these
+  type of icons (the coloured main icon for each activity).
+* YUI module moodle-core-formautosubmit has been removed, use jquery .change() instead (see lib/templates/url_select.mustache for
+  an example)
+* $mform->init_javascript_enhancement() is deprecated and no longer does anything. Existing uses of smartselect enhancement
+  should be switched to the searchableselector form element or other solutions.
+* Return value of the validate_email() is now proper boolean as documented. Previously the function could return 1, 0 or false.
+* The mcore YUI rollup which included various YUI modules such as moodle-core-notification is no longer included on every
+  page. Missing YUI depdencies may be exposed by this change (e.g. missing a requirement on moodle-core-notification when
+  using M.core.dialogue).
+* Various legacy javascript functions have been removed:
+    * M.util.focus_login_form and M.util.focus_login_error no longer do anything. Please use jquery instead. See
+      lib/templates/login.mustache for an example.
+    * Some outdated global JS functions have been removed and should be replaced with calls to jquery
+      or alternative approaches:
+        checkall, checknone, select_all_in_element_with_id, select_all_in, deselect_all_in, confirm_if, findParentNode,
+        filterByParent, stripHTML
+    * M.util.init_toggle_class_on_click has been removed.
+* The following functions have been deprecated and should not be used any more:
+  - file_storage::try_content_recovery  - See MDL-46375 for more information
+  - file_storage::content_exists        - See MDL-46375 for more information
+  - file_storage::deleted_file_cleanup  - See MDL-46375 for more information
+  - file_storage::get_converted_document
+  - file_storage::is_format_supported_by_unoconv
+  - file_storage::can_convert_documents
+  - file_storage::send_test_pdf
+  - file_storage::test_unoconv_path
+* Following behat steps have been removed from core:
+    - I click on "<element_string>" "<selector_string>" in the "<row_text_string>" table row
+    - I go to notifications page
+    - I add "<filename_string>" file from recent files to "<filepicker_field_string>" filepicker
+    - I upload "<filepath_string>" file to "<filepicker_field_string>" filepicker
+    - I create "<foldername_string>" folder in "<filepicker_field_string>" filepicker
+    - I open "<foldername_string>" folder from "<filepicker_field_string>" filepicker
+    - I unzip "<filename_string>" file from "<filepicker_field_string>" filepicker
+    - I zip "<filename_string>" folder from "<filepicker_field_string>" filepicker
+    - I delete "<file_or_folder_name_string>" from "<filepicker_field_string>" filepicker
+    - I send "<message_contents_string>" message to "<username_string>"
+    - I add "<user_username_string>" user to "<cohort_idnumber_string>" cohort
+    - I add "<username_string>" user to "<group_name_string>" group
+    - I fill in "<field_string>" with "<value_string>"
+    - I select "<option_string>" from "<select_string>"
+    - I select "<radio_button_string>" radio button
+    - I check "<option_string>"
+    - I uncheck "<option_string>"
+    - the "<field_string>" field should match "<value_string>" value
+    - the "<checkbox_string>" checkbox should be checked
+    - the "<checkbox_string>" checkbox should not be checked
+    - I fill the moodle form with:
+    - "<element_string>" "<selector_string>" should exists
+    - "<element_string>" "<selector_string>" should not exists
+    - the following "<element_string>" exists:
 * get_user_capability_course() now has an additional parameter 'limit'. This can be used to return a set number of records with
   the submitted capability. The parameter 'fieldsexceptid' will now accept context fields which can be used for preloading.
+* The caching option 'immutable' has been added to send_stored_file() and send_file().
+* New adhoc task refresh_mod_calendar_events_task that updates existing calendar events of modules.
+* New 'priority' column for the event table to determine which event to show in case of events with user and group overrides.
+* Webservices core_course_search_courses and core_course_get_courses_by_field will always return the sortorder field.
+* core_course_external::get_activities_overview has been deprecated. Please do not call this function any more.
+* Changed the pix mustache template helper to accept context variables for the key, component and alt text.
+* New auth_plugin_base helper methods:
+  - get_identity_providers() - Retrieves available auth identity providers.
+  - prepare_identity_providers_for_output() - Prepares auth identity provider data for output (e.g. to templates, WS, etc.).
 
 === 3.2 ===
 

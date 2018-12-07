@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_random', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['includingsubcategories'] = 'Including subcategories';
 $string['pluginname'] = 'Random';
 $string['pluginnameediting'] = 'Editing a random question';
 $string['pluginname_help'] = 'A random question is not a question type as such, but is a way of inserting a randomly-chosen question from a specified category into an activity.';
+$string['privacy:metadata'] = 'The Random question type plugin does not store any personal data.';
 $string['randomqname'] = 'Random ({$a})';
 $string['randomqplusname'] = 'Random ({$a} and subcategories)';
 $string['selectedby'] = '{$a->questionname} selected by {$a->randomname}';

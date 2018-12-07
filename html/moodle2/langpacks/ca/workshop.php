@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,7 +36,6 @@ $string['allocationerror'] = 'Error en l\'assignació';
 $string['allowedfiletypesforoverallfeedback'] = 'Tipus de fitxer permesos a les adjuncions de la retroacció';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Es poden restringir els tipus de fitxer permesos a les adjuncions de la retroacció introduint una llista d\'extensions de fitxer separada per comes; per exemple, «mp4, mp3, png, jpg». Si es deixa el camp en blanc, aleshores s\'hi permetran tots els tipus de fitxer.';
 $string['allowedfiletypesforsubmission'] = 'Tipus de fitxers permesos com a adjuncions a la tramesa';
-$string['allowedfiletypesforsubmission_help'] = 'Els tipus de fitxers permesos com a adjuncions a la tramesa es poden restringuir escrivint una llista separada per comes d’extensions de fitxers; per exemple: «mp4, mp3, png, jpg». Si es deixa el camp buit, aleshores es permeten tots els tipus de fitxers.';
 $string['allsubmissions'] = 'Totes les trameses ({$a})';
 $string['alreadygraded'] = 'Ja qualificat';
 $string['areaconclusion'] = 'Text d\'acabament';
@@ -292,12 +291,18 @@ $string['subplugintype_workshopform'] = 'Estratègia de qualificació';
 $string['subplugintype_workshopform_plural'] = 'Estratègies de qualificació';
 $string['switchingphase'] = 'S\'està canviant de fase';
 $string['switchphase'] = 'Canvia de fase';
+$string['switchphase10'] = 'Canvia a la fase de configuració';
 $string['switchphase10info'] = 'Ara canviareu el taller a la <strong>Fase de configuració</strong>. En aquesta fase, els usuaris no poden modificar les seves trameses ni avaluacions. El professorat pot utilitzar aquesta fase per canviar els paràmetres del taller, modificar l\'estratègia de qualificació o retocar els formularis d\'avaluació.';
-$string['switchphase20info'] = 'Ara canviareu el taller a la  <strong>Fase de tramesa</strong>. Els estudiants poden trametre la seva feina durant aquesta fase (entre les dates d\'inici i final de tramesa, si estan establertes). El professorat pot assignar trameses per tal que siguin revisades per companys.';
+$string['switchphase20'] = 'Canvia a la fase de tramesa';
+$string['switchphase20info'] = 'Ara canviareu el taller a la <strong>Fase de tramesa</strong>. Els estudiants poden trametre la seva feina durant aquesta fase (entre les dates d\'inici i final de tramesa, si estan establertes). Els professors poden assignar trameses per tal que siguin revisades per companys.';
+$string['switchphase30'] = 'Canvia a la fase d\'avaluació';
 $string['switchphase30auto'] = 'El taller canviarà automàticament a la fase d\'avaluació després de {$a->daydatetime} ({$a->distanceday})';
-$string['switchphase30info'] = 'Ara canviareu el taller a la  <strong>Fase d\'avaluació</strong>. En aquesta fase, els revisors poden avaluar les trameses que els han estat assignades (entre les dates d\'inici i final d\'avaluació, si estan establertes).';
+$string['switchphase30info'] = 'Ara canviareu el taller a la <strong>Fase d\'avaluació</strong>. En aquesta fase, els revisors poden avaluar les trameses que els han estat assignades (entre les dates d\'inici i final d\'avaluació, si estan establertes).';
+$string['switchphase40'] = 'Canvia a la fase d\'avaluació de les qualificacions';
 $string['switchphase40info'] = 'Ara canviareu el taller a la <strong>Fase d\'avaluació de les qualificacions</strong>. En aquesta fase, els usuaris no poden modificar les seves trameses ni les seves avaluacions. Els professors poden usar les eines d\'avaluació de qualificacions per a calcular les qualificacions finals i oferir retroacció als revisors.';
+$string['switchphase50'] = 'Tanca el taller';
 $string['switchphase50info'] = 'Ara tancareu el taller. Això farà que les qualificacions calculades apareguin al llibre de qualificacions. Els estudiants podran veure les seves trameses i l\'avaluació d\'aquestes.';
+$string['switchphaseauto'] = 'L\'acció de canviar s\'ha programat';
 $string['switchphasenext'] = 'Canvia a la fase següent';
 $string['taskassesspeers'] = 'Avalueu els companys';
 $string['taskassesspeersdetails'] = 'total: {$a->total}<br />pendents: {$a->todo}';
@@ -324,6 +329,7 @@ $string['userplan_help'] = 'El planificador del taller mostra totes les fases de
 $string['useselfassessment'] = 'Usa l\'autoavaluació';
 $string['useselfassessment_desc'] = 'Els estudiants poden avaluar les seves pròpies trameses';
 $string['useselfassessment_help'] = 'Si s\'habilita, a un usuari se li podrà assignar la seva pròpia tramesa per tal d\'avaluar-la, i rebrà una qualificació per aquesta avaluació a més de la qualificació de la seva pròpia tramesa.';
+$string['viewworkshopsummary'] = 'Mostra un resum del taller';
 $string['weightinfo'] = 'Pes: {$a}';
 $string['withoutsubmission'] = 'Revisor sense tramesa pròpia';
 $string['workshop:addinstance'] = 'Afegeix un taller nou';

@@ -102,7 +102,7 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_configtext('alternateloginurl', new lang_string('alternateloginurl', 'auth'),
                                             new lang_string('alternatelogin', 'auth', htmlspecialchars(get_login_url())), ''));
     $temp->add(new admin_setting_configtext('forgottenpasswordurl', new lang_string('forgottenpasswordurl', 'auth'),
-                                            new lang_string('forgottenpassword', 'auth'), ''));
+                                            new lang_string('forgottenpassword', 'auth'), '', PARAM_URL));
     $temp->add(new admin_setting_confightmleditor('auth_instructions', new lang_string('instructions', 'auth'),
                                                 new lang_string('authinstructions', 'auth'), ''));
     $setting = new admin_setting_configtext('allowemailaddresses', new lang_string('allowemailaddresses', 'admin'),
@@ -237,6 +237,19 @@ if ($hassiteconfig) {
         new lang_string('defaultheight', 'core_media'), new lang_string('defaultheightdesc', 'core_media'),
         300, PARAM_INT, 10));
     $ADMIN->add('mediaplayers', $temp);
+
+    // Convert plugins.
+    $ADMIN->add('modules', new admin_category('fileconverterplugins', new lang_string('type_fileconverter_plural', 'plugin')));
+    $temp = new admin_settingpage('managefileconverterplugins', new lang_string('type_fileconvertermanage', 'plugin'));
+    $temp->add(new admin_setting_manage_fileconverter_plugins());
+    $ADMIN->add('fileconverterplugins', $temp);
+
+    $plugins = core_plugin_manager::instance()->get_plugins_of_type('fileconverter');
+    core_collator::asort_objects_by_property($plugins, 'displayname');
+    foreach ($plugins as $plugin) {
+        /** @var \core\plugininfo\media $plugin */
+        $plugin->load_settings($ADMIN, 'fileconverterplugins', $hassiteconfig);
+    }
 
     $plugins = core_plugin_manager::instance()->get_plugins_of_type('media');
     core_collator::asort_objects_by_property($plugins, 'displayname');
@@ -576,6 +589,21 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_heading('searchengineheading', new lang_string('searchengine', 'admin'), ''));
     $temp->add(new admin_setting_configselect('searchengine',
                                 new lang_string('selectsearchengine', 'admin'), '', 'solr', $engines));
+    $temp->add(new admin_setting_heading('searchoptionsheading', new lang_string('searchoptions', 'admin'), ''));
+    $temp->add(new admin_setting_configcheckbox('searchindexwhendisabled',
+            new lang_string('searchindexwhendisabled', 'admin'), new lang_string('searchindexwhendisabled_desc', 'admin'),
+            0));
+    $temp->add(new admin_setting_configduration('searchindextime',
+            new lang_string('searchindextime', 'admin'), new lang_string('searchindextime_desc', 'admin'),
+            600));
+    $options = [
+        0 => new lang_string('searchallavailablecourses_off', 'admin'),
+        1 => new lang_string('searchallavailablecourses_on', 'admin')
+    ];
+    $temp->add(new admin_setting_configselect('searchallavailablecourses',
+            new lang_string('searchallavailablecourses', 'admin'),
+            new lang_string('searchallavailablecourses_desc', 'admin'),
+            0, $options));
 
     $ADMIN->add('searchplugins', $temp);
     $ADMIN->add('searchplugins', new admin_externalpage('searchareas', new lang_string('searchareas', 'admin'),

@@ -107,7 +107,7 @@ function rcommon_get_wsdl_namespace($urlwdsl) {
         $wsdlcontents = rcommon_get_wsdl($urlwdsl);
         $xml = simplexml_load_string($wsdlcontents);
         return (string)$xml['targetNamespace'];
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         return false;
     }
 }
@@ -158,7 +158,7 @@ function test_ws_url($url) {
         if ($urlok) {
             return $url;
         }
-    } catch(Exception $e){
+    } catch(Throwable $e){
         return false;
     }
     return false;
@@ -179,7 +179,7 @@ function log_to_file($info, $notused = null) {
                 @fclose($handle);
             }
         }
-    } catch(Exception $e){
+    } catch(Throwable $e){
         return;
     }
 
@@ -204,7 +204,7 @@ function rcommon_ws_error($function, $message, $module = 'rcommon', $cmid = 0, $
         $record->url       =  $_SERVER['REQUEST_URI'];
         $record->info      =  $error_message;
         $DB->insert_record('rcommon_errors_log', $record);
-    } catch(Exception $e){
+    } catch(Throwable $e){
         log_to_file("function rcommon_ws_error - Exception = " . $e->getMessage());
     }
 

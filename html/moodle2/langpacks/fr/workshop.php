@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,9 +34,9 @@ $string['allocationconfigured'] = 'Attribution configurée';
 $string['allocationdone'] = 'Attribution effectuée';
 $string['allocationerror'] = 'Erreur d\'attribution';
 $string['allowedfiletypesforoverallfeedback'] = 'Types de fichier autorisés en annexe du feedback';
-$string['allowedfiletypesforoverallfeedback_help'] = 'Les types de fichier autorisés en annexe du feedback peuvent être restreints en indiquant une liste d\'extensions de fichiers, séparées par des virgules, par exemple « png, jpg, jpeg, gif ». Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
+$string['allowedfiletypesforoverallfeedback_help'] = 'Les types de fichiers annexés aux feedbacks peuvent être limités en indiquant une liste d\'extensions des types de fichiers autorisés. Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
 $string['allowedfiletypesforsubmission'] = 'Types de fichier autorisés pour le travail à remettre';
-$string['allowedfiletypesforsubmission_help'] = 'Les types de fichier autorisés pour le travail à remettre peuvent être restreints en indiquant une liste d\'extensions de fichiers, séparées par des virgules, par exemple « png, jpg, jpeg, gif ». Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
+$string['allowedfiletypesforsubmission_help'] = 'Les types de fichiers remis peuvent être limités en indiquant une liste d\'extensions des types de fichiers autorisés. Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
 $string['allsubmissions'] = 'Tous les travaux remis ({$a})';
 $string['alreadygraded'] = 'Déjà noté';
 $string['areaconclusion'] = 'Texte de conclusion';
@@ -59,7 +59,7 @@ $string['assessmentdeleted'] = 'Retrait de l\'attribution';
 $string['assessmentend'] = 'Fin des évaluations';
 $string['assessmentendbeforestart'] = 'Le délai pour l\'évaluation ne peut pas être antérieur à la date d\'ouverture des évaluations';
 $string['assessmentenddatetime'] = 'Délai d\'évaluation : {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentendevent'] = '{$a} (délai d\'évaluation)';
+$string['assessmentendevent'] = '{$a} délai pour l\'évaluation';
 $string['assessmentform'] = 'Formulaire d\'évaluation';
 $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Évaluation</a> de <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
 $string['assessmentreference'] = 'Évaluation de référence';
@@ -68,7 +68,7 @@ $string['assessmentreferenceneeded'] = 'Vous devez évaluer ce travail exemplair
 $string['assessmentsettings'] = 'Modalités d\'évaluation';
 $string['assessmentstart'] = 'Début des évaluations';
 $string['assessmentstartdatetime'] = 'Ouvert pour évaluation dès le {$a->daydatetime} ({$a->distanceday})';
-$string['assessmentstartevent'] = '{$a} (ouverture de l\'évaluation)';
+$string['assessmentstartevent'] = '{$a} ouverture de l\'évaluation';
 $string['assessmentweight'] = 'Pondération de l\'évaluation';
 $string['assignedassessments'] = 'Travaux à évaluer';
 $string['assignedassessmentsnone'] = 'Vous n\'avez pas de travail à évaluer';
@@ -178,6 +178,10 @@ $string['gradinggradeover'] = 'Modifier la note de l\'évaluation';
 $string['gradingsettings'] = 'Réglages d\'évaluation';
 $string['groupnoallowed'] = 'Vous n\'êtes autorisé à accéder à aucun groupe de cet atelier';
 $string['iamsure'] = 'Oui, vraiment';
+$string['indicator:cognitivedepth'] = 'Atelier : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Atelier.';
+$string['indicator:socialbreadth'] = 'Atelier : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Atelier.';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instructions pour la remise du travail';
 $string['instructreviewers'] = 'Instructions pour l\'évaluation';
@@ -273,7 +277,7 @@ $string['submissiondeleteconfirmassess'] = 'Voulez-vous vraiment supprimer le tr
 $string['submissionend'] = 'Fin de la remise des travaux';
 $string['submissionendbeforestart'] = 'Le délai pour la remise des travaux ne peut pas être antérieur à la date d\'ouverture de ces remises';
 $string['submissionenddatetime'] = 'Délai de remise des travaux : {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (délai de remise)';
+$string['submissionendevent'] = '{$a} délai de remise';
 $string['submissionendswitch'] = 'Passer à la phase suivante après le délai de remise des travaux';
 $string['submissionendswitch_help'] = 'Si un délai de remise des travaux est spécifié et si cette option est activée, l\'atelier passera automatiquement à la phase d\'évaluation après le délai de remise des travaux.
 
@@ -288,7 +292,7 @@ $string['submissionsettings'] = 'Réglages de remise des travaux';
 $string['submissionsreport'] = 'Rapport de remise de l\'atelier';
 $string['submissionstart'] = 'Début de la remise des travaux';
 $string['submissionstartdatetime'] = 'Ouvert pour la remise des travaux dès le {$a->daydatetime} ({$a->distanceday})';
-$string['submissionstartevent'] = '{$a} (ouverture de la remise)';
+$string['submissionstartevent'] = '{$a} ouverture des remises';
 $string['submissiontitle'] = 'Titre';
 $string['submittednotsubmitted'] = 'Remis ({$a->submitted}) / non remis ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Méthode d\'attribution des travaux';
@@ -299,12 +303,18 @@ $string['subplugintype_workshopform'] = 'Stratégie d\'évaluation';
 $string['subplugintype_workshopform_plural'] = 'Stratégies d\'évaluation';
 $string['switchingphase'] = 'Changement de phase';
 $string['switchphase'] = 'Changer de phase';
+$string['switchphase10'] = 'Passer à la phase de configuration';
 $string['switchphase10info'] = 'Vous allez passer cet atelier à la <strong>phase de mise en place</strong>. Durant cette phase, les participants ne peuvent pas modifier leur travail remis, ni leurs évaluations. Les enseignants peuvent mettre à profit cette phase pour modifier les réglages de l\'atelier, la stratégie de notation et peaufiner les formulaires d\'évaluation.';
+$string['switchphase20'] = 'Passer à la phase de remise des travaux';
 $string['switchphase20info'] = 'Vous allez passer cet atelier à la <strong>phase de remise</strong>. Durant cette phase, les étudiants peuvent remettre leur travail (dans l\'intervalle de temps défini pour la remise des travaux, le cas échéant). Les enseignants peuvent attribuer des travaux pour évaluation par les pairs.';
+$string['switchphase30'] = 'Passer à la phase d\'évaluation';
 $string['switchphase30auto'] = 'L\'atelier passera automatiquement dans la phase d\'évaluation après {$a->daydatetime} ({$a->distanceday})';
 $string['switchphase30info'] = 'Vous allez passer cet atelier à la <strong>phase d\'évaluation</strong>. Durant cette phase, les évaluateurs peuvent évaluer les travaux qui leur ont été attribués (dans l\'intervalle de temps défini pour l\'évaluation des travaux, le cas échéant).';
+$string['switchphase40'] = 'Passer à la phase de notation des évaluations';
 $string['switchphase40info'] = 'Vous allez passer cet atelier à la <strong>phase de notation</strong>. Durant cette phase, les participants ne peuvent pas modifier leur travail remis, ni leurs évaluations. Les enseignants peuvent utiliser les outils de notation pour calculer les notes finales et fournir un feedback aux évaluateurs.';
+$string['switchphase50'] = 'Terminer l\'atelier';
 $string['switchphase50info'] = 'Vous allez fermer cet atelier. Ceci permettra aux notes calculées d\'apparaître dans le carnet de notes. Les étudiants pourront voir leur travail et les évaluations qu\'ils ont reçues.';
+$string['switchphaseauto'] = 'Le passage à une phase suivante a été programmé';
 $string['switchphasenext'] = 'Passer à la phase suivante';
 $string['taskassesspeers'] = 'Évaluer vos pairs';
 $string['taskassesspeersdetails'] = 'total : {$a->total}<br />restant : {$a->todo}';
@@ -336,6 +346,7 @@ $string['userplan_help'] = 'La ligne de temps de l\'atelier affiche les différe
 $string['useselfassessment'] = 'Utiliser les auto-évaluations';
 $string['useselfassessment_desc'] = 'Les étudiants peuvent évaluer leur propre travail';
 $string['useselfassessment_help'] = 'Si ce réglage est activé, les participants auront la possibilité d\'évaluer leur propre travail. Ils recevront une note pour leur évaluation en plus de la note pour leur propre travail.';
+$string['viewworkshopsummary'] = 'Consulter le résumé de l\'atelier';
 $string['weightinfo'] = 'Pondération : {$a}';
 $string['withoutsubmission'] = 'Évaluateur sans travail remis';
 $string['workshop:addinstance'] = 'Ajouter un atelier';

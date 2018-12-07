@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_number', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_number', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_number
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '数値フィールド';
 $string['pluginname'] = '数値';
+$string['privacy:metadata'] = '数字フィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

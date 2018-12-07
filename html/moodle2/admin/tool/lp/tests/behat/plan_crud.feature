@@ -28,8 +28,9 @@ Feature: Manage plearning plan
     And I follow "Home"
     And I navigate to "Competencies > Learning plan templates" in site administration
     And I click on ".template-userplans" "css_element" in the "Science template" "table_row"
-    And I click on ".form-autocomplete-downarrow" "css_element"
-    And I click on "Admin" item in the autocomplete list
+    And I open the autocomplete suggestions list
+    And I click on "Admin User" item in the autocomplete list
+    And I press key "27" in the field "Select users to create learning plans for"
     When I click on "Create learning plans" "button"
     Then I should see "A learning plan was created"
     And I should see "Admin User" in the "Science template" "table_row"
@@ -54,6 +55,7 @@ Feature: Manage plearning plan
     And I click on ".template-cohorts" "css_element" in the "Science template cohort" "table_row"
     And I click on ".form-autocomplete-downarrow" "css_element"
     And I click on "cohort plan" item in the autocomplete list
+    And I press key "27" in the field "Select cohorts to sync"
     When I click on "Add cohorts" "button"
     Then I should see "2 learning plans were created."
     And I follow "Learning plan templates"
@@ -94,6 +96,7 @@ Feature: Manage plearning plan
     And I click on "Delete" of edit menu in the "comp1" row
     And "Confirm" "dialogue" should be visible
     And I click on "Confirm" "button"
+    And I wait until the page is ready
     And "comp1" "table_row" should not exist
 
   Scenario: Edit a learning plan
@@ -125,4 +128,5 @@ Feature: Manage plearning plan
     And I click on "Delete" of edit menu in the "Science plan Year-4" row
     And "Confirm" "dialogue" should be visible
     When I click on "Delete" "button"
+    And I wait until the page is ready
     Then I should not see "Science plan Year-4"

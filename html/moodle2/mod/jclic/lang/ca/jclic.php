@@ -100,9 +100,9 @@ $string['jclicfile'] = 'Fitxer JClic';
 $string['jclicfile_help'] = 'El fitxer ".jclic" que conté el paquet JClic.';
 $string['lap'] = 'Temps entre voltes';
 $string['lap_help'] = 'Temps que es deixa entre les transaccions client-servidor (expressat en segons)';
-$string['modulename_help'] = 'El <a href="http://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya
+$string['modulename_help'] = 'El <a href="https://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya
     que està format per un conjunt d\'aplicacions de programari lliure que permeten crear diversos tipus d\'activitats educatives multimèdia: puzles, associacions,
-    exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> disposa
+    exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="https://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> disposa
     d\'una biblioteca d\'activitats que compta amb uns mil projectes que han creat professors i persones d\'altres col·lectius que han volgut compartir solidàriament
     el seu treball.
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['filterfilesexplain'] = 'Выберите к файлам каких т�
 $string['filtername'] = 'Автосвязывание названия ресурса';
 $string['forcedownload'] = 'Принудительное скачивание';
 $string['framesize'] = 'Размер фрейма';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Файл.';
 $string['legacyfiles'] = 'Миграция файла из старого курса';
 $string['legacyfilesactive'] = 'Активно';
 $string['legacyfilesdone'] = 'Завершено';

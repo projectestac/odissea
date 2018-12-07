@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactive', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_interactive', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_interactive
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interaktiboa hainbat saiakerarekin';
+$string['privacy:metadata'] = 'Interaktiboa hainbat saiakerarekin galdera-jokaera pluginak ez du datu pertsonalik biltzen.';
 $string['triesremaining'] = 'Falta diren saiakerak: {$a}';
 $string['tryagain'] = 'Saiatu berriz';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_group', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['anygroup'] = '(Οποιαδήποτε ομάδα συμμετεχόντων μαθήματος)';
+$string['description'] = 'Επιτρέψτε μόνο σε μαθητές που ανήκουν σε συγκεκριμένη ομάδα συμμετεχόντων μαθήματος ή σε οποιαδήποτε ομάδα συμμετεχόντων.';
 $string['requires_anygroup'] = 'Ανήκεις σε οποιοδήποτε group';
 $string['requires_group'] = 'Ανήκεις στο <strong>{$a}</strong>';

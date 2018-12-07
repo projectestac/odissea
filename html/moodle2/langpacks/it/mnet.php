@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,7 +115,7 @@ $string['issubscribed'] = '{$a} ha sottoscritto questo servizio sul tuo host.';
 $string['keydeleted'] = 'La chiave è stata eliminata e sostituita con una nuova.';
 $string['keymismatch'] = 'La chiave pubblica che hai per questo host è diversa dalla chiave pubblicata. La chiave pubblica attuale è:';
 $string['last_connect_time'] = 'Ora ultima connessione';
-$string['last_connect_time_help'] = 'L\'ora della tua ultima connessione a questo host.';
+$string['last_connect_time_help'] = 'L\'orario della tua ultima connessione a questo host.';
 $string['last_transport_help'] = 'Il trasporto usato nella tua ultima connessione a tale host.';
 $string['leavedefault'] = 'Utilizza le impostazioni di default';
 $string['listservices'] = 'Elenca servizi';

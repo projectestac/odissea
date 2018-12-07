@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactivecountback', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_interactivecountback', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_interactivecountback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interactif avec essais multiples (en comptant les essais précédents)';
+$string['privacy:metadata'] = 'Le plugin de comportement de question Interactif avec essais multiples (en comptant les essais précédents) n\'enregistre aucune donnée personnelle.';

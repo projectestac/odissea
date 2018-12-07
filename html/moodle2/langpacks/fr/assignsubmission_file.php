@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Types de fichiers acceptés';
-$string['acceptedfiletypes_help'] = 'Les types de fichier acceptés peuvent être restreints en saisissant une liste de types MIME, par exemple video/mp4, audio/mp3, image/png, image/jpeg, ou des extensions de fichiers avec un point, par exemple .png, .jpg. Si le champ est laissé vide, tous les types de fichier seront acceptés.';
+$string['acceptedfiletypes_help'] = 'Les types de fichier acceptés peuvent être restreints en saisissant une liste d\'extensions de fichiers. Si le champ est laissé vide, tous les types de fichier seront acceptés.';
 $string['configmaxbytes'] = 'Taille maximale des fichiers';
 $string['countfiles'] = '{$a} fichiers';
 $string['default'] = 'Activé par défaut';
+$string['defaultacceptedfiletypes'] = 'Types de fichiers acceptés par défaut';
 $string['default_help'] = 'Si ce réglage est activé, cette méthode de remise de travaux sera activée par défaut pour tous les nouveaux devoirs';
 $string['enabled'] = 'Remises de fichiers';
 $string['enabled_help'] = 'Si ce réglage est activé, les participants pourront déposer un ou plusieurs fichiers pour leur devoir.';
@@ -47,5 +48,6 @@ $string['maximumsubmissionsize_help'] = 'La taille maximale des fichiers dépos�
 $string['nonexistentfiletypes'] = 'Les types de fichier suivants n\'ont pas été reconnus : {$a}';
 $string['numfilesforlog'] = 'Nombre de fichiers : {$a} fichier(s)';
 $string['pluginname'] = 'Remises de fichiers';
+$string['privacy:metadata:filepurpose'] = 'Les fichiers déposés pour cette remise de devoir';
 $string['siteuploadlimit'] = 'Taille maximale du site';
 $string['submissionfilearea'] = 'Fichiers déposés';

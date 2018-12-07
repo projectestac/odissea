@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_shibboleth', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_shibboleth
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['auth_shib_idp_list_description'] = 'Stellen Sie eine Liste der Identity
 Als optionaler dritter Parameter kann der Ort des Shibboleth Session Initators eingetragen werden falls die Moodle-Installation im Verbund genutzt wird.';
 $string['auth_shib_instructions'] = 'Nutzen Sie den <a href="{$a}">Shibboleth Login</a>, um Zugang über Shibboleth zu erhalten, wenn Ihr Unternehmen dies unterstützt. <br />Sonst verwenden Sie das normale hier angezeigte Loginformular.';
 $string['auth_shib_instructions_help'] = 'Tragen Sie hier Informationen für Ihre Nutzer/innen ein, die ihnen den Zugang mit Hilfe von Shibboleth erklären. Diese werden auf der Loginseite angzeigt. Der Text sollte einen Link "<b>{$a}</b>" enthalten, damit ein einfachere Login möglich ist. Wenn Sie das Feld leer lassen, werden die Standard-Texte angezeigt und keine Hinweise auf den Shibboleth Login.';
+$string['auth_shib_instructions_key'] = 'Login-Anweisungen';
 $string['auth_shib_integrated_wayf'] = 'Moodle WAYF Service';
 $string['auth_shib_integrated_wayf_description'] = 'Nach der Aktivierung verwendet Moodle den eigenen WAYF Service an Stelle des für Shibboleth konfigurierten. Moodle zeigt dann eine Dropdownliste der verfügbaren alternativen Login-Seiten wo der Nutzer seinen Identity Provider auszuwählen hat.';
 $string['auth_shib_logout_return_url'] = 'Alternative URL nach Logout';
@@ -55,6 +56,7 @@ $string['auth_shib_only'] = 'nur Shibboleth';
 $string['auth_shib_only_description'] = 'Diese Option legt fest, dass eine Shibboleth-Authentifizierung bevorzugt wird.';
 $string['auth_shib_username_description'] = 'Name der Shibboleth Umgebungsvariable, die als Moodle-Nutzername verwandt werden soll';
 $string['pluginname'] = 'Shibboleth';
+$string['privacy:metadata'] = 'Das Plugin \'Shibboleth-Authentifizierung\' speichert keine personenbezogenen Daten.';
 $string['shib_invalid_account_error'] = 'Sie scheinen über Shibboleth authentifiziert zu sein, aber Moodle findet keinen gültiges Nutzerkonto zu Ihrem Anmeldenamen. Ihr Nutzerkonto könnte ungültig geworden sein oder es existiert gar nicht.';
 $string['shib_no_attributes_error'] = 'Sie versuchen vermutlich, die Shibboleth Authentifizierung zu verwenden. Moodle hat jedoch keine Attribute für die Nutzer/innen erhalten. Prüfen Sie bitte, ob der Identity Provider die erforderlichen Attribute ({$a}) dem Moodle-Serviceprovider zur Verfügung stellt oder informieren Sie den Webmaster des Servers.';
 $string['shib_not_all_attributes_error'] = 'Moodle benötigt einige Shibboleth-Attribute, die derzeit nicht bereitgestellt werden. Es handelt sich um die Attribute: {$a}<br />Benachrichtigen Sie bitte den Webmaster des Servers oder Ihren Identity Provider.';

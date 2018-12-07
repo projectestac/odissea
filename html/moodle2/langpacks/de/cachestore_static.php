@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_static', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_static', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_static
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Statischer Abfrage-Cache';
+$string['privacy:metadata'] = 'Das Static Request Cachestore-Plugin speichert einige Daten, die  direkt nach der HTTP-Abfrage gelöscht werden.';

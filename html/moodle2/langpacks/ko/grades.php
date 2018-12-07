@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,7 +101,6 @@ $string['calculationsaved'] = '계산결과 저장됨';
 $string['calculationview'] = '계산 보기';
 $string['cannotaccessgroup'] = '선택한 모둠의 성적에 접근할 수 없습니다.';
 $string['categories'] = '범주들';
-$string['categoriesanditems'] = '범주와 항목';
 $string['category'] = '범주';
 $string['categoryedit'] = '범주 편집';
 $string['categoryname'] = '범주명';

@@ -57,7 +57,7 @@ function useredit_setup_preference_page($userid, $courseid) {
         require_login($course);
     } else if (!isloggedin()) {
         if (empty($SESSION->wantsurl)) {
-            $SESSION->wantsurl = $CFG->httpswwwroot.'/user/preferences.php';
+            $SESSION->wantsurl = $CFG->wwwroot.'/user/preferences.php';
         }
         redirect(get_login_url());
     } else {
@@ -326,6 +326,12 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
         $mform->addElement('select', 'timezone', get_string('timezone'), $choices);
     }
 
+    if ($user->id < 0) {
+        $mform->addElement('select', 'lang', get_string('preferredlanguage'), get_string_manager()->get_list_of_translations());
+        $lang = empty($user->lang) ? $CFG->lang : $user->lang;
+        $mform->setDefault('lang', $lang);
+    }
+
     if (!empty($CFG->allowuserthemes)) {
         $choices = array();
         $choices[''] = get_string('default');
@@ -339,7 +345,7 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
     }
 
     $mform->addElement('editor', 'description_editor', get_string('userdescription'), null, $editoroptions);
-    $mform->setType('description_editor', PARAM_CLEANHTML);
+    $mform->setType('description_editor', PARAM_RAW);
     $mform->addHelpButton('description_editor', 'userdescription');
 
     if (empty($USER->newadminuser)) {
@@ -352,7 +358,7 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
 
         $mform->addElement('static', 'currentpicture', get_string('currentpicture'));
 
-        $mform->addElement('checkbox', 'deletepicture', get_string('delete'));
+        $mform->addElement('checkbox', 'deletepicture', get_string('deletepicture'));
         $mform->setDefault('deletepicture', 0);
 
         $mform->addElement('filemanager', 'imagefile', get_string('newpicture'), '', $filemanageroptions);

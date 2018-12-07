@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,10 @@ $string['filterfilesexplain'] = 'Select type of file content filtering, please n
 $string['filtername'] = 'Resource names auto-linking';
 $string['forcedownload'] = 'Force download';
 $string['framesize'] = 'Frame height';
+$string['indicator:cognitivedepth'] = 'File cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a File resource.';
+$string['indicator:socialbreadth'] = 'File social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a File resource.';
 $string['legacyfiles'] = 'Migration of old course file';
 $string['legacyfilesactive'] = 'Active';
 $string['legacyfilesdone'] = 'Finished';
@@ -91,6 +95,7 @@ $string['popupwidth'] = 'Pop-up width (in pixels)';
 $string['popupwidthexplain'] = 'Specifies default width of popup windows.';
 $string['printintro'] = 'Display resource description';
 $string['printintroexplain'] = 'Display resource description below content? Some display types may not display description even if enabled.';
+$string['privacy:metadata'] = 'The mod_resource plugin does not store any personal data.';
 $string['resource:addinstance'] = 'Add a new resource';
 $string['resourcecontent'] = 'Files and subfolders';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

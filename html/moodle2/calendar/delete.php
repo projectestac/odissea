@@ -57,11 +57,9 @@ require_login($course);
 if (!$course) {
     $PAGE->set_context(context_system::instance()); //TODO: wrong
 }
-
 $title = get_string('deleteevent', 'calendar');
-
-// Check the user has the required capabilities to edit an event
-if (!calendar_edit_event_allowed($event) || !empty($event->modulename)) {
+// Check the user has the required capabilities to delete an event
+if (!calendar_delete_event_allowed($event)) {
     print_error('nopermissions', 'error', $PAGE->url, $title);
 }
 

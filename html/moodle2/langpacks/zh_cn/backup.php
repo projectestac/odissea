@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'backup', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -101,6 +101,18 @@ $string['configgeneralroleassignments'] = '如果激活，会默认备份角色�
 $string['configgeneralusers'] = '缺省情况下，备份是否包含用户。';
 $string['configgeneraluserscompletion'] = '如果启用，会默认在备份中包含用户的课程完成信息。';
 $string['configloglifetime'] = '这里设置将备份的日志信息保留多久。超过此期限的日志会被自动删除。建议把此值设得小一些，因为备份的日志可能会很大。';
+$string['configrestoreactivities'] = '设置恢复活动的默认值。';
+$string['configrestorebadges'] = '设置恢复奖章的默认值。';
+$string['configrestoreblocks'] = '设置恢复版块的默认值。';
+$string['configrestorecalendarevents'] = '设置恢复日历事件的默认值。';
+$string['configrestorecomments'] = '设置恢复评论的默认值。';
+$string['configrestorecompetencies'] = '设置恢复能力的默认值。';
+$string['configrestoreenrolments'] = '设置恢复选课方法的默认值。';
+$string['configrestorefilters'] = '设置恢复过滤器的默认值。';
+$string['configrestorelogs'] = '如果启用，如果在备份中包含了日志，则默认恢复日志。';
+$string['configrestoreroleassignments'] = '如果启用，默认情况下包含在备份中的角色分配将被恢复。';
+$string['configrestoreusers'] = '设置默认值，是否恢复包含在备份中的用户。';
+$string['configrestoreuserscompletion'] = '如果启用，如果在备份中包含了用户课程完成信息，那么默认情况下将会恢复。';
 $string['confirmcancel'] = '放弃备份';
 $string['confirmcancelno'] = '不放弃';
 $string['confirmcancelquestion'] = '您确定要放弃吗？
@@ -145,12 +157,15 @@ $string['generalblocks'] = '包括版块';
 $string['generalcalendarevents'] = '包括日历事件';
 $string['generalcomments'] = '包括评论';
 $string['generalcompetencies'] = '包括能力';
+$string['generalenrolments'] = '包括选课方法';
 $string['generalfilters'] = '包括过滤器';
 $string['generalgradehistories'] = '包括历史';
 $string['generalgroups'] = '包含小组和大组';
 $string['generalhistories'] = '包括历史';
 $string['generallogs'] = '包括日志';
 $string['generalquestionbank'] = '包含题库';
+$string['generalrestoredefaults'] = '常规恢复默认值';
+$string['generalrestoresettings'] = '常规恢复设置';
 $string['generalroleassignments'] = '包括角色分配';
 $string['generalsettings'] = '一般备份设置';
 $string['generalusers'] = '包括用户';
@@ -187,6 +202,7 @@ $string['lockedbyhierarchy'] = '因依赖关系而锁定';
 $string['lockedbypermission'] = '您没有更改此设置的权限';
 $string['loglifetime'] = '保留日志多久';
 $string['managefiles'] = '管理备份文件';
+$string['mergerestoredefaults'] = '在合并到另一个课程时恢复的默认值';
 $string['missingfilesinpool'] = '在备份过程中某些文件不能保存，因此也不可能恢复它们。';
 $string['module'] = '模块';
 $string['moodleversion'] = 'Moodle版本';
@@ -202,6 +218,7 @@ $string['qcategory2coursefallback'] = '备份文件中的题目类别“{$a->nam
 $string['qcategorycannotberestored'] = '恢复过程中不能创建题目类别“{$a->name}”';
 $string['question2coursefallback'] = '备份文件中的题目类别“{$a->name}”原来是在系统/课程级类别中，恢复后将建立在课程级类别';
 $string['questionegorycannotberestored'] = '这些题目“{$a->name}”不能用还原来创建';
+$string['replacerestoredefaults'] = '当恢复到另一个删除内容的课程时，恢复的默认值';
 $string['restoreactivity'] = '恢复活动';
 $string['restorecourse'] = '恢复课程';
 $string['restorecoursesettings'] = '课程设置';
@@ -246,6 +263,10 @@ $string['rootsettingblocks'] = '包括版块';
 $string['rootsettingcalendarevents'] = '包括日历事件';
 $string['rootsettingcomments'] = '包括评论';
 $string['rootsettingcompetencies'] = '包含能力';
+$string['rootsettingenrolments'] = '包括选课方法';
+$string['rootsettingenrolments_always'] = '是的，总是这样';
+$string['rootsettingenrolments_never'] = '不，将用户恢复为人工选课';
+$string['rootsettingenrolments_withusers'] = '是的，但是仅仅包括选课的用户';
 $string['rootsettingfilters'] = '包括过滤器';
 $string['rootsettinggradehistories'] = '包括成绩历史';
 $string['rootsettinggroups'] = '包含小组和大组';
@@ -267,7 +288,10 @@ $string['setting_course_shortname'] = '课程简称';
 $string['setting_course_startdate'] = '课程开始日期';
 $string['setting_keep_groups_and_groupings'] = '保留当前的小组和大组';
 $string['setting_keep_roles_and_enrolments'] = '保留当前角色和选课';
-$string['setting_overwriteconf'] = '覆盖课程配置';
+$string['setting_overwrite_conf'] = '覆盖课程配置';
+$string['setting_overwrite_course_fullname'] = '覆盖课程的全名';
+$string['setting_overwrite_course_shortname'] = '覆盖课程简称';
+$string['setting_overwrite_course_startdate'] = '覆盖课程开始日期';
 $string['showtypes'] = '显示类型选项';
 $string['sitecourseformatwarning'] = '这是一个首页备份，注意你只能在首页上恢复。';
 $string['skiphidden'] = '忽略隐藏课程';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_replace', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['notimplemented'] = '申し訳ございません、この機能はあな
 $string['notsupported'] = 'このスクリプトは実験用です。変更を元に戻すことができないため、スクリプトを実行する前に完全なバックアップを作成してください!';
 $string['pageheader'] = 'データベース全体のテキスト検索および置換';
 $string['pluginname'] = 'DB検索および置換';
+$string['privacy:metadata'] = 'DB検索および置換プラグインはどのような個人データも保存しません。';
 $string['replacewith'] = 'このストリングで置換する';
 $string['replacewithhelp'] = '通常、新しいサーバのURLです。';
 $string['searchwholedb'] = 'このストリングでデータベース全体を検索する';

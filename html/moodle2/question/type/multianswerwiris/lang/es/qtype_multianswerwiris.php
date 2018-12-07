@@ -29,3 +29,4 @@ $string['pluginnamesummary'] = 'Igual que la pregunta estándar de respuestas an
 $string['pluginnameadding'] = 'Agregando una pregunta de respuestas anidadas (Cloze) - Matemáticas y Ciencias por WIRIS';
 $string['pluginnameediting'] = 'Editando una pregunta de respuestas anidadas (Cloze) - Matemáticas y Ciencias por WIRIS';
 $string['contentnotviewable'] = 'Contenido no visualizable.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Cloze question type does not effect or store any data itself.';

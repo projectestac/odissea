@@ -4,7 +4,7 @@
     xsi:noNamespaceSchemaLocation="../../../../lib/xmldb/xmldb.xsd"
 >
   <TABLES>
-    <TABLE NAME="qtype_wq" COMMENT="General table for all wiris questions" NEXT="qtype_essaywiris_backup">
+    <TABLE NAME="qtype_wq" COMMENT="General table for all Wiris Quizzes questions" NEXT="qtype_essaywiris_backup">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="question"/>
         <FIELD NAME="question" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Foreign key references question.id." PREVIOUS="id" NEXT="xml"/>
@@ -31,7 +31,7 @@
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
       </KEYS>
     </TABLE>
-    <TABLE NAME="qtype_wq_variables" COMMENT="WIRIS Quizzes persistent variables." PREVIOUS="qtype_essaywiris_backup">
+    <TABLE NAME="qtype_wq_variables" COMMENT="Wiris Quizzes persistent variables." PREVIOUS="qtype_essaywiris_backup">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="identifier"/>
         <FIELD NAME="identifier" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="value"/>

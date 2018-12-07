@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hvp', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -208,6 +208,7 @@ As interações e pontuações do utilizador são rastreadas usando o xAPI e est
 Pode adicionar conteúdo H5P interativo criando conteúdo usando a ferramenta de autoria incorporada ou carregando arquivos H5P encontrados em outros sites habilitados para H5P.';
 $string['modulenameplural'] = 'Conteúdo interativi';
 $string['nextpage'] = 'Próxima página';
+$string['noanswersubmitted'] = 'Este utilizador ainda não enviou uma resposta para este H5P';
 $string['nocontent'] = 'Não foi possível encontrar ou analisar o arquivo content.json';
 $string['nocontenttype'] = 'Tipo de conteúdo não foi especificado.';
 $string['nocopyright'] = 'Não existe informação sobre direitos autorais para este conteúdo.';
@@ -246,13 +247,48 @@ $string['pluginadministration'] = 'H5P';
 $string['pluginname'] = 'H5P';
 $string['postmessagerequired'] = 'É necessária uma mensagem de publicação para aceder ao ponto final fornecido';
 $string['previouspage'] = 'Página anterior';
+$string['privacy:metadata:core_files'] = 'A atividade do H5P armazena ficheiros que foram carregados como parte do conteúdo do H5P.';
+$string['privacy:metadata:core_grades'] = 'A atividade do H5P armazena notas de utilizadores que responderam ao conteúdo do H5P.';
+$string['privacy:metadata:hvp_content_user_data'] = 'Descreve o estado atual do conteúdo para o utilizador. Usado para restaurar o conteúdo para um estado anterior.';
+$string['privacy:metadata:hvp_content_user_data:data'] = 'Dados do utilizador que foram armazenados.';
+$string['privacy:metadata:hvp_content_user_data:data_id'] = 'Identificador de tipo de dados.';
+$string['privacy:metadata:hvp_content_user_data:delete_on_content_change'] = 'Sinalizador que determina se os dados devem ser apagados quando o conteúdo for alterado.';
+$string['privacy:metadata:hvp_content_user_data:hvp_id'] = 'ID do conteúdo H5P ao qual os dados pertencem.';
+$string['privacy:metadata:hvp_content_user_data:id'] = 'ID da relação de dados do usuário com o conteúdo.';
+$string['privacy:metadata:hvp_content_user_data:preloaded'] = 'Sinalizador que determina se os dados devem ser pré-carregados no conteúdo.';
+$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Sub-conteúdo do H5P, 0 se não for sub-conteúdo.';
+$string['privacy:metadata:hvp_content_user_data:user_id'] = 'ID do utilizador ao qual os dados pertencem.';
+$string['privacy:metadata:hvp_events'] = 'Mantém o controlo do registo de eventos H5P.';
+$string['privacy:metadata:hvp_events:content_id'] = 'ID do conteúdo em que a ação foi executada, 0 se novo ou nenhum conteúdo.';
+$string['privacy:metadata:hvp_events:content_title'] = 'Título do conteúdo';
+$string['privacy:metadata:hvp_events:created_at'] = 'Data/hora em que o evento foi criado.';
+$string['privacy:metadata:hvp_events:id'] = 'ID exclusivo do evento.';
+$string['privacy:metadata:hvp_events:library_name'] = 'A biblioteca do evento afetado.';
+$string['privacy:metadata:hvp_events:library_version'] = 'A versão da biblioteca do evento afetado.';
+$string['privacy:metadata:hvp_events:sub_type'] = 'Subtipo do evento ou ação do evento.';
+$string['privacy:metadata:hvp_events:type'] = 'Tipo de evento.';
+$string['privacy:metadata:hvp_events:user_id'] = 'ID do utilizador que executou a ação.';
+$string['privacy:metadata:hvp_xapi_results'] = 'Armazena eventos xAPI no conteúdo H5P.';
+$string['privacy:metadata:hvp_xapi_results:additionals'] = 'Informações adicionais que o H5P pode enviar.';
+$string['privacy:metadata:hvp_xapi_results:content_id'] = 'ID do conteúdo em que o evento foi realizado.';
+$string['privacy:metadata:hvp_xapi_results:correct_responses_pattern'] = 'O padrão de resposta correta.';
+$string['privacy:metadata:hvp_xapi_results:description'] = 'A descrição, tarefa ou pergunta do conteúdo em que a ação foi executada.';
+$string['privacy:metadata:hvp_xapi_results:id'] = 'ID exclusivo do evento xAPI.';
+$string['privacy:metadata:hvp_xapi_results:interaction_type'] = 'Tipo de interação';
+$string['privacy:metadata:hvp_xapi_results:max_score'] = 'Pontuação máxima possível para o evento.';
+$string['privacy:metadata:hvp_xapi_results:parent_id'] = 'O ID do ascendente do conteúdo em que este evento foi realizado. Nulo se não tiver ascendente.';
+$string['privacy:metadata:hvp_xapi_results:raw_score'] = 'Pontuação obtida no evento.';
+$string['privacy:metadata:hvp_xapi_results:response'] = 'Resposta enviada pelo utilizador.';
+$string['privacy:metadata:hvp_xapi_results:user_id'] = 'Id do utilizador que executou a ação.';
 $string['removeoldlogentries'] = 'Remover as entradas de log H5P antigas';
 $string['removetmpfiles'] = 'Remover ficheiros temporários H5P antigos';
+$string['reportingquestionsremaininglabel'] = 'perguntas por avaliar';
 $string['reportingscaledscoredelimiter'] = ',';
 $string['reportingscaledscorelabel'] = 'Nota na pauta:';
 $string['reportingscoredelimiter'] = 'de';
 $string['reportingscorelabel'] = 'Pontuação';
 $string['reportnotsupported'] = 'Não é suportado';
+$string['reportsubmitgradelabel'] = 'Submeter nota';
 $string['resizescript'] = 'Incluir este script no seu site se quiser dimensionamento dinâmico do conteúdo incorporado:';
 $string['reveal'] = 'Revelar';
 $string['reviseserversetupandretry'] = 'Quando revisou a configuração do seu servidor, pode reativar a comunicação do hub H5P nas configurações do H5P.';

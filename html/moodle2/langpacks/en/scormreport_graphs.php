@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_graphs', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scormreport_graphs', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   scormreport_graphs
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['invaliddata'] = 'Not enough data';
 $string['participants'] = 'Number of participants';
 $string['percent'] = 'Percent(%) secured';
 $string['pluginname'] = 'Graph report';
+$string['privacy:metadata'] = 'The Graph report only shows data stored in other locations.';

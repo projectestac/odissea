@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,6 +107,12 @@ $string['outputnotconfigured'] = 'Non configuré';
 $string['page-message-x'] = 'Toute page de messagerie personnelle';
 $string['pagerefreshes'] = 'Cette page s\'actualise automatiquement toutes les {$a} secondes';
 $string['permitted'] = 'Autorisé';
+$string['privacy:metadata:message_contacts'] = 'La liste des contacts';
+$string['privacy:metadata:message_contacts:blocked'] = 'Si l\'utilisateur est bloqué ou non';
+$string['privacy:metadata:message_contacts:contactid'] = 'L\'identifiant de l\'utilisateur qui est un contact';
+$string['privacy:metadata:message_contacts:userid'] = 'L\'identifiant de l\'utilisateur dont c\'est la liste de contacts';
+$string['privacy:metadata:preference:core_message_settings'] = 'Réglages en lien avec la messagerie';
+$string['privacy:request:preference:set'] = 'La valeur du réglage « {$a->name} » est « {$a->value} »';
 $string['processorsettings'] = 'Réglage du processus d\'envoi de messages';
 $string['recent'] = 'Récent';
 $string['removecontact'] = 'Supprimer ce contact';
@@ -123,6 +129,10 @@ $string['seeall'] = 'Tout afficher';
 $string['selectmessagestodelete'] = 'Sélectionner les messages à supprimer';
 $string['selectnotificationtoview'] = 'Sélectionner une notification dans la liste de côté pour afficher plus de détails';
 $string['send'] = 'Envoyer';
+$string['sendbulkmessage'] = 'Envoyer le message à {$a} personnes';
+$string['sendbulkmessagesent'] = 'Message envoyé à {$a} personnes';
+$string['sendbulkmessagesentsingle'] = 'Message envoyé à 1 personne';
+$string['sendbulkmessagesingle'] = 'Envoyer le message à 1 personne';
 $string['sendingvia'] = 'Envoi de « {$a->provider} » via « {$a->processor} »';
 $string['sendingviawhen'] = 'Envoi de « {$a->provider} » via « {$a->processor} » quand {$a->state}';
 $string['sendmessage'] = 'Envoyer message personnel';
@@ -141,6 +151,7 @@ $string['togglemessagemenu'] = 'Ouvrir/fermer le menu messages';
 $string['togglenotificationmenu'] = 'Ouvrir/fermer le menu notifications';
 $string['touserdoesntexist'] = 'Vous ne pouvez pas envoyer de message à un utilisateur ({$a}) qui n\'existe pas';
 $string['unblockcontact'] = 'Débloquer ce contact';
+$string['unknownuser'] = 'Utilisateur inconnu';
 $string['unreadnewmessage'] = 'Nouveau message de {$a}';
 $string['unreadnotification'] = 'Notifications non lues : {$a}';
 $string['userisblockingyou'] = 'Cet utilisateur vous a retiré le droit de lui envoyer des messages personnels';

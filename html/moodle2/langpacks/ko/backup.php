@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'backup', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   backup
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -235,7 +235,6 @@ $string['setting_course_shortname'] = '강좌 단축명';
 $string['setting_course_startdate'] = '강좌 개설 날짜';
 $string['setting_keep_groups_and_groupings'] = '현재 모둠과 모둠 무리 보관';
 $string['setting_keep_roles_and_enrolments'] = '현재 역할과 등록 보관';
-$string['setting_overwriteconf'] = '강좌 설정을 덮어씀';
 $string['showtypes'] = '유형 옵션 보기';
 $string['skiphidden'] = '숨긴 강좌 생략';
 $string['skiphiddenhelp'] = '감춰진 강좌들을 건너뛸 것인지 선택하세요.';

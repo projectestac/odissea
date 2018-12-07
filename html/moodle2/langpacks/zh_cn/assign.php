@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assign', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -230,6 +230,10 @@ $string['gradestudent'] = '学生：（id={$a->id}，姓名={$a->fullname}）。
 $string['gradeuser'] = '成绩 {$a}';
 $string['grading'] = '作业评分';
 $string['gradingchangessaved'] = '评分结果已经被保存';
+$string['gradingduedate'] = '提醒我要评分';
+$string['gradingduedate_help'] = '这个日期应该设置于提交截止日期之后。这个日期用来在通知面板提醒教师。';
+$string['gradingdueduedatevalidation'] = '提醒我按不能早于截止日期的日期评分。';
+$string['gradingduefromdatevalidation'] = '提醒我按不能早于允许提交日期的日期评分。';
 $string['gradingmethodpreview'] = '评分标准';
 $string['gradingoptions'] = '选项';
 $string['gradingstatus'] = '评分状态';
@@ -240,6 +244,10 @@ $string['grantextensionforusers'] = '准许学生{$a}延期';
 $string['groupsubmissionsettings'] = '分组提交设置';
 $string['hiddenuser'] = '参与者';
 $string['hideshow'] = '隐藏 / 显示';
+$string['indicator:cognitivedepth'] = '作业活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在作业活动中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '作业活动社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在作业活动中所达到的社会广度。';
 $string['instructionfiles'] = '说明文件';
 $string['introattachments'] = '额外文件';
 $string['introattachments_help'] = '添加作业附加文件，例如答案模版等。这些文件链接会显示在作业页面描述内容下方。';

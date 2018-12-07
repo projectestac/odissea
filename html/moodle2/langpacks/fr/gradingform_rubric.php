@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_rubric', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,7 @@ $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La définition de la grille d\'évaluation a été modifiée après que ce participant a été évalué. Le participant ne pourra voir cette grille d\'évaluation avant que vous mettiez à jour la note.';
 $string['pluginname'] = 'Grille d\'évaluation';
 $string['previewrubric'] = 'Prévisualiser la grille d\'évaluation';
+$string['privacy:metadata'] = 'Le plugin formulaire de grille d\'évaluation n\'enregistre aucune donnée personnelle.';
 $string['regrademessage1'] = 'Vous êtes sur le point d\'enregistrer des modifications à une grille d\'évaluation déjà utilisée pour une évaluation. Veuillez indiquer si les évaluations existantes doivent être revues. Dans ce cas, la grille d\'évaluation ne sera pas visible pour les participants, tant que leur élément n\'est pas réévalué.';
 $string['regrademessage5'] = 'Vous êtes sur le point d\'enregistrer des modifications importantes à une grille d\'évaluation déjà utilisée pour une évaluation. La valeur dans le carnet de notes ne sera pas modifiée, mais la grille d\'évaluation ne sera pas visible pour les participants, tant que leur élément n\'est pas réévalué.';
 $string['regradeoption0'] = 'Ne pas marquer pour réévaluation';

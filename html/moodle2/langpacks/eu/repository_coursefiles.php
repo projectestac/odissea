@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_coursefiles', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_coursefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
 $string['notitle'] = 'Izenbururik gabe';
 $string['pluginname'] = 'Heredatutako ikastaroko fitxategiak';
 $string['pluginname_help'] = 'Heredatutako ikastaroko fitxategiak';
+$string['privacy:metadata'] = 'Heredatutako ikastaroko fitxategiak biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['remember'] = 'Gogoratu';

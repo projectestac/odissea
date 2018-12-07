@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_picasa', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,5 +31,7 @@ $string['nooauthcredentials'] = 'OAuth credentials vereist';
 $string['nooauthcredentials_help'] = 'Om de Picasa portfolio plugin te gebruiken, moet je de OAuth credentials configureren in de portfolio instellingen.';
 $string['oauthinfo'] = '<p>Om deze plugin te kunnen gebruiken, moet je je site registreren bij Google, zoals beschreven in de documentatie <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Als deel van het registratieproces zul je volgende URL moeten ingeven als \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Als je geregistreerd bent, zul je een client ID en geheim krijgen die je dan kunt gebruiken om alle Google Drive en Picasa plugins te configureren.</p>';
 $string['pluginname'] = 'Picasa';
+$string['privacy:metadata'] = 'Deze plugin stuurt gegevens extern door naar een gelinkte Picasa-account en bewaart geen gegevens lokaal.';
+$string['privacy:metadata:data'] = 'Persoonlijke gegevens, binnengekomen via het portfolio subsysteem.';
 $string['secret'] = 'Geheim';
 $string['sendfailed'] = 'Het is niet gelukt om bestand {$a} naar Picasa over te brengen';

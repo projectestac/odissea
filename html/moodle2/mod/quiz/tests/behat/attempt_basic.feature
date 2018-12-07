@@ -1,5 +1,5 @@
 @mod @mod_quiz
-Feature: Attemp a quiz where some questions require that the previous question has been answered.
+Feature: Attempt a quiz
   As a student
   In order to demonstrate what I know
   I need to be able to attempt quizzes
@@ -32,7 +32,7 @@ Feature: Attemp a quiz where some questions require that the previous question h
       | TF1      | 1    |         |
       | TF2      | 1    | 3.0     |
     When I log in as "student"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Quiz 1"
     And I press "Attempt quiz now"
     And I click on "True" "radio" in the "First question" "question"
@@ -68,7 +68,7 @@ Feature: Attemp a quiz where some questions require that the previous question h
       | Section 3 | 5         | 0       |
 
     When I log in as "student"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Quiz 1"
     And I press "Attempt quiz now"
 
@@ -111,7 +111,7 @@ Feature: Attemp a quiz where some questions require that the previous question h
       | TF1      | 1    |
       | TF2      | 2    |
     When I log in as "student"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Quiz 1"
     And I press "Attempt quiz now"
     Then I should see "Text of the first question"

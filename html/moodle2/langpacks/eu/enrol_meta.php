@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_meta', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['meta:unenrol'] = 'Desmatrikulatu kontua etenda duten erabiltzaileak';
 $string['nosyncroleids'] = 'Sinkronizatu gabeko rolak';
 $string['nosyncroleids_desc'] = 'Berez ikastaro-mailako rolen esleipenak goragoko ikastaroetatik beheragoko ikastaroetara sinkronizatzen dira. Hemen aukeratzen diren rolak ez dira sinkronizazio-prozesuan kontuan izango. Sinkronizatzeko eskuragarri dauden rolak cron-aren hurrengo exekuzioan eguneratuko dira.';
 $string['pluginname'] = 'Ikastaroaren meta-esteka';
-$string['pluginname_desc'] = 'Ikastaroaren meta-esteka izeneko matrikulazio-pliginak bi ikastaro ezberdinetan matrikulazioak eta rolak sinkroninzatzen ditu.';
+$string['pluginname_desc'] = 'Ikastaroaren meta-esteka izeneko matrikulazio-pluginak bi ikastaro ezberdinetan matrikulazioak eta rolak sinkronizatzen ditu.';
+$string['privacy:metadata:core_group'] = 'Ikastaroaren meta-esteka pluginak talde berri bat sortu edo existitzen den talde bat erabil dezake lotutako ikastaroko partaideak bertara sartzeko.';
 $string['syncall'] = 'Sinkronizatu matrikulatutako erabiltzaile guztiak';
 $string['syncall_desc'] = 'Gaituz gero matrikulatutako erabiltzaile guztiak sinkronizatuko dira, goragok ikastaroan inolako rolik ez izanda ere, desgaituz gero soilik goragok ikastaroan rolen bat esleituta duten erabiltzaileak sinkronizatuko dira beheragoko ikastaroetan.';

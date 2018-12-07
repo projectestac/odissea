@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -77,10 +77,10 @@ $string['attachment_help'] = '<p align="center"><b>Επισυναπτόμενα 
 <p> Εάν γίνει επεξεργασία εκ νέου ενός επισυναπτομένου αρχείου και μείνει κενό, τότε το αυθεντικό αρχείο παραμένει.</p>';
 $string['author'] = 'συγγραφέας';
 $string['authorview'] = 'Προβολή ανά συγγραφέα';
-$string['back'] = 'Επιστροφή';
-$string['cantinsertcat'] = 'Αδυναμία εισαγωγής κατηγορίας';
-$string['cantinsertrec'] = 'Αδυναμία εισαγωγής εγγραφής';
-$string['cantinsertrel'] = 'Αδυναμία εισαγωγής σχέσης κατηγορίας-εγγραφής';
+$string['back'] = 'Πίσω';
+$string['cantinsertcat'] = 'Δεν είναι δυνατή η εισαγωγή κατηγορίας';
+$string['cantinsertrec'] = 'Δεν είναι δυνατή η εισαγωγή εγγραφής';
+$string['cantinsertrel'] = 'Δεν είναι δυνατή η εισαγωγή σχέσης κατηγορίας-εγγραφής';
 $string['casesensitive'] = 'Αυτή η εγγραφή είναι ευαίσθητη σε μικρά/κεφαλαία';
 $string['casesensitive_help'] = '<p align="center"><b>Ευαισθησία κατά το ταίριασμα χαρακτήρων</b></p>
 
@@ -276,7 +276,7 @@ $string['importedentries'] = 'Εισαγόμενες εγγραφές';
 $string['importentries'] = 'Εισαγωγή εγγραφών';
 $string['importentriesfromxml'] = 'Εισαγωγή καταχωρλησεων από αρχείο XML';
 $string['includegroupbreaks'] = 'Περιλαμβάνονται οι διαχωριστές ομάδων';
-$string['isglobal'] = 'Είναι αυτό το λεξικό καθολικό;';
+$string['isglobal'] = 'Είναι αυτό το λεξικό παγκόσμιο;';
 $string['isglobal_help'] = '<p align="center"><b>Ορισμός γενικού λεξιλογίου όρων</b></p>
 
 <p>Οι Γενικοί Διαχειριστές (administrators) μπορούν να ορίσουν ένα λεξιλόγιο όρων ως γενικό.</p>

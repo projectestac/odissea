@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_table', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_table
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -59,6 +59,7 @@ $string['numberofcolumns'] = 'Número de colunas';
 $string['numberofrows'] = 'Número de linhas';
 $string['outer'] = 'Para toda a tabela';
 $string['pluginname'] = 'Tabela';
+$string['privacy:metadata'] = 'O módulo atto_table não armazena nenhum dado pessoal.';
 $string['rows'] = 'Linhas';
 $string['settings'] = 'Definições da tabela';
 $string['solid'] = 'Contínuo';

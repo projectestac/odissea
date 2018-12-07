@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lesson', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -85,7 +85,6 @@ $string['description'] = 'وصف';
 $string['detailedstats'] = 'إحصائيات تفصيلية';
 $string['didnotanswerquestion'] = 'لم تتم أجابة هذا السؤال';
 $string['disabled'] = 'مُعطِّل';
-$string['displayhighscores'] = 'أعرض أعلى درجة';
 $string['displayinleftmenu'] = 'أعرض في القائمة اليسرى';
 $string['displayleftmenu'] = 'أعرض القائمة اليسرى';
 $string['displayofgrade'] = 'أعرض الدرجة (للطلاب فقط)';
@@ -128,6 +127,7 @@ $string['full'] = 'وسع';
 $string['general'] = 'عام';
 $string['grade'] = 'درجة';
 $string['gradebetterthan'] = 'درجة أفضل من (&#37;)';
+$string['graded'] = 'تم رصد درجة';
 $string['gradeessay'] = 'صحح الاسءلة المقالية';
 $string['gradeis'] = 'الدرجة هي {$a}';
 $string['gradeoptions'] = 'نقاط الدرجة';
@@ -136,7 +136,6 @@ $string['handlingofretakes'] = 'التعامل مع إعاد الأخذ';
 $string['havenotgradedyet'] = 'لم تصحح بعد';
 $string['here'] = 'هناء';
 $string['highscore'] = 'الدرجة القصوى';
-$string['highscores'] = 'الدرجة القصوى';
 $string['hightime'] = 'الوقت الاقصى';
 $string['importcount'] = 'يتم استيراد {$a} الأسئله';
 $string['importquestions'] = 'استيراد اسئلة';
@@ -161,7 +160,6 @@ $string['matchesanswer'] = 'طابق مع الاجابة';
 $string['matching'] = 'مطابقة';
 $string['matchingpair'] = 'مطابقة أزواج {$a}';
 $string['maxgrade'] = 'الدرجة القصوى';
-$string['maxhighscores'] = 'عدد أعلى درجات معروض';
 $string['maximumnumberofanswersbranches'] = 'الحد الأقصى لعدد الاجابات / التفريعات';
 $string['maximumnumberofattempts'] = 'الحد الأقصى لعدد المحاولات';
 $string['mediaclose'] = 'أظهار أزرار الأغلاق';
@@ -196,6 +194,7 @@ $string['normal'] = 'عادي - تابع مسار الدرس';
 $string['notcompleted'] = 'لم يتم انهائه';
 $string['notdefined'] = 'لم يعرف';
 $string['notenoughsubquestions'] = 'عدد الاسئلة الفرعية غير كافي!<br /> هل ترغب في العودة لتعديل هذا السؤال.';
+$string['notgraded'] = 'لم يتم التقييم';
 $string['notitle'] = 'لا يوجد عنوان';
 $string['numberofcorrectanswers'] = 'عدد الاجابات الصحيحة: {$a}';
 $string['numberofcorrectmatches'] = 'عدد الاجابات الصحيصة المتطابقة: {$a}';
@@ -273,7 +272,6 @@ $string['usemaximum'] = 'استخدم الحد الأقصى';
 $string['usemean'] = 'استخدم المتوسط الحسابي';
 $string['usepassword'] = 'درس محمي بكلمة مرور';
 $string['viewgrades'] = 'عرض الدرجات';
-$string['viewhighscores'] = 'عرض قائمة الدرجات العليا';
 $string['welldone'] = 'أحسنت!';
 $string['whatdofirst'] = 'ماذا تفضل أن تفعل أولاً؟';
 $string['wronganswerjump'] = 'أقفز اجابة خاطئة';

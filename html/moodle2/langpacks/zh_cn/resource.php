@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,10 @@ $string['filterfilesexplain'] = '选择文件内容过滤的类型。请注意�
 $string['filtername'] = '资源名称自动链接';
 $string['forcedownload'] = '强制下载';
 $string['framesize'] = '页框高度';
+$string['indicator:cognitivedepth'] = '文件资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 文件资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = '文件资源社会宽度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在文件资源中所达到的社会宽度。';
 $string['legacyfiles'] = '移植的旧课程文件';
 $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,10 @@ $string['displayselect_help'] = 'Deze instelling, samen met het bestandstype van
 * Nieuw venster - De URL wordt weergegeven in een nieuw browservenster met menu\'s en een adresbalk';
 $string['externalurl'] = 'Externe URL';
 $string['framesize'] = 'Frame hoogte';
+$string['indicator:cognitivedepth'] = 'URL cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een URL bron.';
+$string['indicator:socialbreadth'] = 'URL sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een URL bron.';
 $string['invalidstoredurl'] = 'Kan deze bron niet tonen, URL is niet geldig.';
 $string['invalidurl'] = 'Externe URL is niet geldig';
 $string['modulename'] = 'URL';

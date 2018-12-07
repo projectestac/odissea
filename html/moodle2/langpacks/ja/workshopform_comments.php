@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_comments', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['dimensioncommentfor'] = '{$a} のコメント';
 $string['dimensiondescription'] = '説明';
 $string['dimensionnumber'] = 'アスペクト {$a}';
 $string['pluginname'] = 'コメント';
+$string['privacy:metadata'] = 'コメント評価プラグインは評価フォームの詳細のみ保存します。フォームがどのように入力されたかという実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出に添付されます。';

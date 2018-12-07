@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,8 +39,6 @@ $string['missinglangparent'] = 'Saknat föräldraspråk  <em>{$a->parent}</em> a
 $string['nolangupdateneeded'] = 'Alla Dina språkpaket är av senaste version, Du behöver inte uppdatera dem.';
 $string['pluginname'] = 'Språkpaket';
 $string['purgestringcaches'] = 'Rensa sträng cache';
-$string['remotelangnotavailable'] = 'Eftersom Moodle inte kan koppla upp till download.moodle.org så kan vi inte genomföra automatisk installation av spåkpaket. Var snäll och ladda ner de aktuella zippade filerna från den nedanstående listan, kopiera den till Din {$a} katalog
-och packa upp dem manuellt.';
 $string['uninstall'] = 'Avinstallera det valda språkpaketet';
 $string['uninstallconfirm'] = 'Du håller på att fullständigt avinstallera språkpaketet {$a}, är Du säker?';
 $string['updatelangs'] = 'Uppdatera alla installerade språkpaket';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_recyclebin', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_recyclebin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'Invalid context supplied.';
 $string['noitemsinbin'] = 'There are no items in the recycle bin.';
 $string['notenabled'] = 'Sorry, but the recycle bin has been disabled by the administrator.';
 $string['pluginname'] = 'Recycle bin';
+$string['privacy:metadata'] = 'The Recycle bin plugin does not store any personal data.';
 $string['recyclebin:deleteitems'] = 'Delete recycle bin items';
 $string['recyclebin:restoreitems'] = 'Restore recycle bin items';
 $string['recyclebin:viewitems'] = 'View recycle bin items';

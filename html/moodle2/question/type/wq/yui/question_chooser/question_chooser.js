@@ -6,12 +6,12 @@
  * display.js file.
  * **/
 YUI.add('moodle-qtype_wq-question_chooser', function(Y) {
-    // Namespace for WIRIS quizzes.
+    // Namespace for Wiris Quizzes.
     M.qtype_wq = M.qtype_wq || {};
     // Question chooser class.
     M.qtype_wq.question_chooser = {
         /**
-         * Array with all the real WIRIS quizzes questions.
+         * Array with all the real Wiris Quizzes questions.
          * */
         wirisquestions: null,
         /**
@@ -21,7 +21,7 @@ YUI.add('moodle-qtype_wq-question_chooser', function(Y) {
             this.wiris_section();
         },
         /**
-         * Moves all wiris questions under node_before and populates the array
+         * Moves all Wiris Quizzes questions under node_before and populates the array
          * this.wirisquestions.
          */
         move_wiris_questions: function(node_before) {
@@ -38,7 +38,7 @@ YUI.add('moodle-qtype_wq-question_chooser', function(Y) {
             this.wirisquestions = wirisdivs;
         },
         /**
-         * Unused function. Join all WIRIS questions in a section after
+         * Unused function. Join all Wiris Quizzes questions in a section after
          * QUESTIONS and before OTHER.
          * */
         wiris_section: function() {
@@ -55,7 +55,7 @@ YUI.add('moodle-qtype_wq-question_chooser', function(Y) {
                 wq.remove();
                 container.insertBefore(wq, container.one('div.separator'));
                 container.insertBefore(Y.Node.create('<div class="separator"/>'),wq);
-                // Move all WIRIS qtypes under title.
+                // Move all Wiris qtypes under title.
                 this.move_wiris_questions(wq);
             }
         },

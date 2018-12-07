@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,16 +45,19 @@ $string['deleteinstancenousersconfirm'] = 'あなたは登録方法「 {$a->name
 $string['disableinstanceconfirmself'] = 'あなたがこのコースにアクセスできるインスタンス「 {$a->name} 」を本当に無効にしてもよろしいですか? 続ける場合、あなたはこのコースにアクセスできなくなります。';
 $string['durationdays'] = '{$a} 日';
 $string['editenrolment'] = '登録を編集する';
+$string['edituserenrolment'] = '{$a} の登録を編集する';
 $string['enrol'] = '登録';
 $string['enrolcandidates'] = '受講未登録ユーザ';
 $string['enrolcandidatesmatching'] = '合致する受講未登録ユーザ';
 $string['enrolcohort'] = 'コーホートを登録する';
 $string['enrolcohortusers'] = 'ユーザを登録する';
+$string['enroldetails'] = '登録詳細';
 $string['enrollednewusers'] = '新しい {$a} 名のユーザが正常に登録されました。';
 $string['enrolledusers'] = '登録済みユーザ';
 $string['enrolledusersmatching'] = '合致する登録済みユーザ';
 $string['enrolme'] = 'このコースに私を登録する';
 $string['enrolmentinstances'] = '登録方法';
+$string['enrolmentmethod'] = '登録方法';
 $string['enrolmentnew'] = '{$a} の新しい登録';
 $string['enrolmentnewuser'] = '{$a->user} がコース 「 {$a->course} 」に登録しました。';
 $string['enrolmentoptions'] = '登録オプション';
@@ -63,6 +66,7 @@ $string['enrolnotpermitted'] = 'あなたにはこのコースにユーザを登
 $string['enrolperiod'] = '登録期間';
 $string['enroltimecreated'] = '登録作成日時';
 $string['enroltimeend'] = '登録終了';
+$string['enroltimeendinvalid'] = '登録終了日は登録開始日の後にする必要があります。';
 $string['enroltimestart'] = '登録開始';
 $string['enrolusage'] = 'インスタンス / 登録';
 $string['enrolusers'] = 'ユーザを登録する';
@@ -99,6 +103,7 @@ $string['instanceadded'] = '登録方法が追加されました。';
 $string['instanceeditselfwarning'] = '警告:';
 $string['instanceeditselfwarningtext'] = 'あなたはこの登録方法により、このコースに登録されています。変更することにより、このコースに対するあなたのアクセスに影響する場合があります。';
 $string['invalidenrolinstance'] = '無効な登録インスタンスです。';
+$string['invalidrequest'] = '無効なリクエスト';
 $string['invalidrole'] = '無効なロール';
 $string['manageenrols'] = '登録プラグイン管理';
 $string['manageinstance'] = '管理';
@@ -112,12 +117,23 @@ $string['notenrollable'] = 'あなたはこのコースに登録できません�
 $string['notenrolledusers'] = '他のユーザ';
 $string['otheruserdesc'] = '以下のユーザはこのコースに登録されていませんが、コース内でのロールが継承または割り当てられています。';
 $string['participationactive'] = 'アクティブ';
+$string['participationnotcurrent'] = '現在なし';
 $string['participationstatus'] = 'ステータス';
 $string['participationsuspended'] = '一時停止';
 $string['periodend'] = '-> {$a}';
 $string['periodnone'] = '登録日時 {$a}';
 $string['periodstart'] = '{$a}';
 $string['periodstartend'] = '{$a->start} -> {$a->end}';
+$string['privacy:metadata:user_enrolments'] = '登録です。';
+$string['privacy:metadata:user_enrolments:enrolid'] = '登録プラグインのインスタンスです。';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'ユーザ登録を最後に更新したユーザのIDです。';
+$string['privacy:metadata:user_enrolments:status'] = 'コースのユーザ登録のステータスです。';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = '登録済みユーザを保存する登録管理です。';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'ユーザ登録が作成された日時です。';
+$string['privacy:metadata:user_enrolments:timeend'] = 'ユーザ登録が終了する日時です。';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'ユーザ登録が修正された日時です。';
+$string['privacy:metadata:user_enrolments:timestart'] = 'ユーザ登録が開始する日時です。';
+$string['privacy:metadata:user_enrolments:userid'] = 'ユーザのIDです。';
 $string['proceedtocourse'] = 'コースコンテンツに移動する';
 $string['recovergrades'] = '可能であればユーザの古い評点を回復する';
 $string['rolefromcategory'] = '{$a->role} (コースカテゴリより継承)';
@@ -135,12 +151,13 @@ $string['totalenrolledusers'] = '登録済みユーザ数: {$a}';
 $string['totalotherusers'] = '他のユーザ数: {$a} ';
 $string['unassignnotpermitted'] = 'あなたにはこのコース内のロール割り当てを解除するパーミッションがありません。';
 $string['unenrol'] = '登録解除';
-$string['unenrolconfirm'] = '本当にユーザ「 {$a->user} 」をコース「 {$a->course} 」から登録解除してもよろしいですか?';
+$string['unenrolconfirm'] = '本当に「 {$a->user} 」 (「 {$a->enrolinstancename} 」経由で登録済み) を「 {$a->course} 」から登録解除してもよろしいですか?';
 $string['unenrolme'] = '{$a} から私を登録解除する';
 $string['unenrolnotpermitted'] = 'あなたにはこのユーザをこのコースから登録解除するパーミッションがない、または登録解除することができません。';
 $string['unenrolroleusers'] = '次のユーザを登録解除する';
 $string['uninstallmigrating'] = '「 {$a} 」登録の移行';
 $string['unknowajaxaction'] = '不明な操作がリクエストされました。';
 $string['unlimitedduration'] = '無制限';
+$string['userremovedfromselectiona'] = '選択したものからユーザ「 {$a} 」が削除されました。';
 $string['usersearch'] = '検索';
 $string['withselectedusers'] = '選択したユーザに対して';

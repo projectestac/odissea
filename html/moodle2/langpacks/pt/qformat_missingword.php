@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_missingword', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_missingword
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['noanswerfound'] = 'Não foram encontradas respostas à pergunta';
 $string['pluginname'] = 'Formato palavra em falta';
 $string['pluginname_help'] = 'O formato Palavra em falta permite importar perguntas via ficheiro de texto.';
 $string['pluginname_link'] = 'Formato palavra em falta';
+$string['privacy:metadata'] = 'O módulo Pergunta em formato Palavras em falta não armazena dados pessoais.';

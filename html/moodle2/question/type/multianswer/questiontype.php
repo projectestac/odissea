@@ -46,14 +46,16 @@ class qtype_multianswer extends question_type {
 
         // Get relevant data indexed by positionkey from the multianswers table.
         $sequence = $DB->get_field('question_multianswer', 'sequence',
-                array('question' => $question->id), '*', MUST_EXIST);
+                array('question' => $question->id), MUST_EXIST);
 
         $wrappedquestions = $DB->get_records_list('question', 'id',
                 explode(',', $sequence), 'id ASC');
 
         // We want an array with question ids as index and the positions as values.
         $sequence = array_flip(explode(',', $sequence));
-        array_walk($sequence, create_function('&$val', '$val++;'));
+        array_walk($sequence, function(&$val) {
+            $val++;
+        });
 
         // If a question is lost, the corresponding index is null
         // so this null convention is used to test $question->options->questions

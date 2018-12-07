@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_dropbox', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_dropbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,5 +36,7 @@ $string['logoutdesc'] = '(Amaitu saioa Dropbox erabiltzen amaitzen duzunean)';
 $string['notitle'] = 'Izenbururik gabe';
 $string['oauth2redirecturi'] = 'OAuth 2 Redirect URI';
 $string['pluginname'] = 'Dropbox';
+$string['privacy:metadata:repository_dropbox'] = 'Dropbox biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_dropbox:query'] = 'Dropbox biltegiko erabiltzailearen bilaketaren testua.';
 $string['remember'] = 'Gogoratu';
 $string['secret'] = 'Dropbox-en sekretua';

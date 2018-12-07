@@ -20,7 +20,7 @@ require_once($CFG->dirroot . '/question/type/wq/quizzes/quizzes.php');
 require_once($CFG->dirroot . '/question/type/wq/lib.php');
 
 /**
- * Matching WIRIS question type conversion handler
+ * Matching Wiris Quizzes question type conversion handler
  */
 class moodle1_qtype_matchwiris_handler extends moodle1_qtype_match_handler {
 
@@ -31,8 +31,8 @@ class moodle1_qtype_matchwiris_handler extends moodle1_qtype_match_handler {
         return array(
             'MATCHOPTIONS',
             'MATCHS/MATCH',
-            'MATCHWIRIS',
-            'MATCHWIRIS/WIRISOPTIONS'
+            'MATCHWiris',
+            'MATCHWiris/WirisOPTIONS'
         );
     }
 

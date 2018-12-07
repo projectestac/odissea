@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,17 +44,20 @@ $string['deleteinstanceconfirmself'] = '¿Estás seguro de que quieres eliminar 
 $string['deleteinstancenousersconfirm'] = 'Está a punto de eliminar el método de matriculación "{$a->name}". ¿Está seguro que quiere continuar?';
 $string['disableinstanceconfirmself'] = '¿Estás seguro de que quieres eliminar el elemento "{$a->name}" que le da acceso a este curso? Es posible que usted luego no pueda acceder a este curso si continúa.';
 $string['durationdays'] = '{$a} días';
-$string['editenrolment'] = 'Editar matricula';
+$string['editenrolment'] = 'Editar matrícula';
+$string['edituserenrolment'] = 'Editar {$a}\'s matriculación';
 $string['enrol'] = 'Matricular';
 $string['enrolcandidates'] = 'Usuarios no matriculados';
 $string['enrolcandidatesmatching'] = 'Emparejar usuarios no matriculados';
 $string['enrolcohort'] = 'Matricular cohorte';
 $string['enrolcohortusers'] = 'Matricular usuarios';
+$string['enroldetails'] = 'Detalles de matriculación';
 $string['enrollednewusers'] = 'Nuevos usuarios {$a} matriculados con éxito';
 $string['enrolledusers'] = 'Usuarios matriculados';
 $string['enrolledusersmatching'] = 'Emparejar usuarios matriculados';
 $string['enrolme'] = 'Matricularme en este curso';
 $string['enrolmentinstances'] = 'Métodos de matriculación';
+$string['enrolmentmethod'] = 'Método de matriculación';
 $string['enrolmentnew'] = 'Nueva matriculación en {$a}';
 $string['enrolmentnewuser'] = '{$a->user} se ha matriculado en el curso "{$a->course}"';
 $string['enrolmentoptions'] = 'Opciones de matriculación';
@@ -99,6 +102,7 @@ $string['instanceadded'] = 'Método añadido';
 $string['instanceeditselfwarning'] = 'Advertencia:';
 $string['instanceeditselfwarningtext'] = 'Usted está inscrito en este curso a través de este método de matriculación, los cambios pueden afectar a su acceso a este curso.';
 $string['invalidenrolinstance'] = 'Ejemplo de matriculación no válido';
+$string['invalidrequest'] = 'Solicitud inválida';
 $string['invalidrole'] = 'Rol no válido';
 $string['manageenrols'] = 'Gestionar plugins de matriculación';
 $string['manageinstance'] = 'Gestionar';

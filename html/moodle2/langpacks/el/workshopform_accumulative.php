@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['dimensiondescription'] = 'Περιγραφή';
 $string['dimensiongrade'] = 'Βαθμός';
 $string['dimensiongradefor'] = 'Βαθμός για {$a}';
 $string['dimensionmaxgrade'] = 'Ο καλύτερός δυνατός βαθμός / Κλίμακα για χρήση';
-$string['dimensionweight'] = 'Βαρύτητα';
+$string['dimensionweight'] = 'Βάρος';
 $string['excellent'] = 'Άριστα';
 $string['good'] = 'Καλά';
 $string['incorrect'] = 'Λάθος';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_tex', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,4 +36,5 @@ $string['pathdvisvgm'] = 'Path of <i>dvisvgm</i> binary';
 $string['pathlatex'] = 'Path of <i>latex</i> binary';
 $string['pathmimetex'] = 'Path of <i>mimetex</i> binary';
 $string['pathmimetexdesc'] = 'Moodle will use its own mimetex binary unless another valid path is specified.';
+$string['privacy:metadata'] = 'The TeX notation plugin does not store any personal data.';
 $string['source'] = 'TeX source';

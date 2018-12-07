@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'blog', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   blog
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -135,6 +135,29 @@ $string['pagesize'] = 'Número de entradas do blogue por página';
 $string['permalink'] = 'Permalink';
 $string['personalblogs'] = 'Os utilizadores só podem ver os seus blogues';
 $string['preferences'] = 'Preferências do blogue';
+$string['privacy:metadata:core_comments'] = 'Comentários associados a entradas no blog';
+$string['privacy:metadata:core_files'] = 'Ficheiros anexados a entradas de blog';
+$string['privacy:metadata:core_tag'] = 'Palavras-chave associadas a entradas de blog';
+$string['privacy:metadata:external'] = 'Uma hiperligacão para uma lista RSS externa';
+$string['privacy:metadata:external:description'] = 'Descrição da lista';
+$string['privacy:metadata:external:filtertags'] = 'A lista de palavras-chave para filtrar as entradas';
+$string['privacy:metadata:external:name'] = 'Nome da lista';
+$string['privacy:metadata:external:timefetched'] = 'Data em que a lista foi recuperada pela última vez';
+$string['privacy:metadata:external:timemodified'] = '';
+$string['privacy:metadata:external:url'] = 'O URL da lista';
+$string['privacy:metadata:external:userid'] = 'O ID do utilizador que adicionou uma entrada de blog externa.';
+$string['privacy:metadata:post'] = 'Informação relacionada com entradas no blog';
+$string['privacy:metadata:post:content'] = 'Conteúdo de uma entrada de blog externa';
+$string['privacy:metadata:post:created'] = 'Data de quando a entrada foi criada.';
+$string['privacy:metadata:post:lastmodified'] = 'Data em que a entrada foi modificada pela última vez.';
+$string['privacy:metadata:post:publishstate'] = 'Se a entrada é visível para os outros ou não';
+$string['privacy:metadata:post:subject'] = 'Título da entrada do blog';
+$string['privacy:metadata:post:summary'] = 'Entrada de blog.';
+$string['privacy:metadata:post:uniquehash'] = 'Identificador único para uma entrada externa, geralmente um URL.';
+$string['privacy:metadata:post:userid'] = 'O ID do utilizador que adicionou a entrada de blog.';
+$string['privacy:metadata:post:usermodified'] = 'O utilizador que modificou a entrada pela última vez';
+$string['privacy:path:blogassociations'] = 'Tópicos de blog associados';
+$string['privacy:unknown'] = 'Desconhecido';
 $string['publishto'] = 'Publicar para';
 $string['publishtocourse'] = 'Os utilizadores partilham uma disciplina consigo';
 $string['publishtocourseassoc'] = 'Membros da disciplina associada';

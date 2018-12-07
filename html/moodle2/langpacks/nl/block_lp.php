@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_lp', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_lp', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_lp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,12 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Na te kijken competenties';
-$string['lp:addinstance'] = 'Voeg een nieuw studieplanblok toe';
-$string['lp:myaddinstance'] = 'Voeg een nieuw studieplanblok toe aan de startpagina van de gebruikers';
-$string['lp:view'] = 'Bekijk studieplanblok';
+$string['lp:addinstance'] = 'Voeg een nieuw leerplanblok toe';
+$string['lp:myaddinstance'] = 'Voeg een nieuw leerplanblok toe aan de startpagina van de gebruikers';
+$string['lp:view'] = 'Bekijk leerplanblok';
 $string['myplans'] = 'Mijn plannen';
 $string['noactiveplans'] = 'Op dit moment geen actieve plannen';
 $string['planstoreview'] = 'Na te kijken plannen';
-$string['pluginname'] = 'Studieplannen';
+$string['pluginname'] = 'Leerplannen';
+$string['privacy:metadata'] = 'Het blok Leerplannen bevat alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['viewmore'] = 'Bekijk meer...';
 $string['viewotherplans'] = 'Bekijk andere plannen...';

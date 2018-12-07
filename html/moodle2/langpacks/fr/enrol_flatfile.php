@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_flatfile', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_flatfile
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,7 @@ $string['expiredaction'] = 'Action à l\'échéance de l\'inscription';
 $string['expiredaction_help'] = 'Sélectionnez une action à effectuer lorsque l\'inscription du participant arrive à échéance. Veuillez noter que certaines données et réglages de l\'utilisateur sont supprimées lors de la désinscription d\'un cours.';
 $string['filelockedmail'] = 'Le fichier texte que vous utilisez pour l\'inscription ({$a}) ne pourra pas être effacé par le cron. Cela signifie la plupart du temps que ses droits d\'accès ne sont pas correctement réglés. Veuillez corriger ces droits d\'accès, de sorte que Moodle puisse effacer le fichier. Sans cela les inscriptions pourraient être effectuées à plusieurs reprises.';
 $string['filelockedmailsubject'] = 'Erreur importante : fichier d\'inscriptions';
+$string['flatfileenrolments'] = 'Inscriptions par fichier plat (CSV)';
 $string['flatfile:manage'] = 'Gérer manuellement les inscriptions des utilisateurs';
 $string['flatfilesync'] = 'Synchronisation des inscriptions par fichier plat';
 $string['flatfile:unenrol'] = 'Désinscrire manuellement du cours des utilisateurs';
@@ -63,3 +64,11 @@ Cela pourrait par exemple ressembler à ceci :
     del, student, 17, CF101
     add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'Le plugin d\'inscriptions par fichier plat (CSV) enregistre des données personnelles en lien avec de futures inscriptions, dans la table enrol_flatfile.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'L\'action d\'inscription attendue à la date donnée.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'L\'identifiant du cours associé à l\'inscription.';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'L\'identifiant du rôle à attribuer ou à retirer.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'La date et l\'heure de la fin du changement d\'inscription.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'La date et l\'heure de modification du changement d\'inscription.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'La date et l\'heure du début du changement d\'inscription.';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'L\'identifiant de l\'utilisateur associé à l\'attribution du rôle.';

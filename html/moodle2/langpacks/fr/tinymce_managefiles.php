@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_managefiles', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_managefiles', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_managefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['hasmissingfiles'] = 'Attention ! Les fichiers suivants qui sont référ
 $string['manageareafiles'] = 'Gérer les fichiers intégrés dans l\'éditeur de texte';
 $string['managefiles:desc'] = 'Gérer les fichiers intégrés';
 $string['pluginname'] = 'Gérer les fichiers intégrés';
+$string['privacy:metadata'] = 'Le plugin TinyMCE Gérer les fichiers intégrés n\'enregistre aucune donnée personnelle.';
 $string['refreshfiles'] = 'Actualiser la liste des fichiers manquants ou inutilisés';
 $string['unusedfilesdesc'] = 'Les fichiers suivants ne sont pas utilisés dans l\'éditeur de texte';
 $string['unusedfilesheader'] = 'Fichiers inutilisés';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'admin', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,7 +54,7 @@ $string['allowediplist'] = '허용된 IP 목록';
 $string['allowemailaddresses'] = '허용된 이메일 도메인';
 $string['allowframembedding'] = '프레임 임베딩 허용';
 $string['allowframembedding_help'] = '이 사이트를 외부 사이트 프레임 안으로 탑재 가능하게 허용. 이 기능을 활성화시키는 것은 보안상 권장하지 않습니다.';
-$string['allowguestmymoodle'] = '내 대시보드에 손님 접근 허용';
+$string['allowguestmymoodle'] = '내 공부방에 손님 접근 허용';
 $string['allowobjectembed'] = 'Embed 와 Object 태그 허용';
 $string['allowthemechangeonurl'] = '주소지에 있는 테마로 변경 허용';
 $string['allowuserblockhiding'] = '블록 감추기 허용';
@@ -313,7 +313,7 @@ $string['configsectionmaintenance'] = '유지보수';
 $string['configsectionmisc'] = '기타';
 $string['configsectionoperatingsystem'] = '운영체제';
 $string['configsectionpermissions'] = '사용권한';
-$string['configsectionrequestedcourse'] = '수강 신청';
+$string['configsectionrequestedcourse'] = '강좌 개설 요청';
 $string['configsectionsecurity'] = '보안';
 $string['configsectionstats'] = '통계';
 $string['configsectionuser'] = '사용자';
@@ -376,7 +376,7 @@ $string['coursecontact'] = '강좌 관리자';
 $string['coursecontact_desc'] = '여기에서는 강좌 소개에 표시하고 싶은 사람을 설정할 수 있게 한다. 기표된 역할이 주어진 사용자는 강좌 설명에 이름이 제시됩니다.';
 $string['courselistshortnames'] = '확장된 강좌 이름 표시';
 $string['courselistshortnames_desc'] = '이 기능이 활성화 되면, 강좌의 짧은 이름이 강좌 목록의 전체이름과 함께 표시됩니다. 필요하다면, 맞춤 언어(language customisation)기능을 통해 \'courseextendednamedisplay\' 값을 수정함으로써 확장된 강좌명을 수정할 수도 있습니다.';
-$string['coursemgmt'] = '코스 및 카테고리 관리';
+$string['coursemgmt'] = '추가/편집';
 $string['courseoverview'] = '강좌 개요';
 $string['courserequestnotify'] = '개설 요청 알림';
 $string['courserequestnotifyemail'] = '{$a->link} 에서 {$a->user} 가 새 강좌 개설 요청';
@@ -393,7 +393,7 @@ $string['cronerrorclionly'] = '죄송합니다. 이  페이지는 관리자에 �
 $string['cronerrorpassword'] = '죄송합니다. 이  페이지에 접속하려면 적절한 암호가 있어야 합니다.';
 $string['cron_help'] = 'cron.php 유지 스크립트는 새롭게 작성된 포럼 게시글을 이메일로 보내는 것처럼 무들 모듈이 정해진 시간마다 작업을 수행하는 것을 도와줍니다. 스크립트를 예를 들어 5분마다 실행시키는 메카니즘이 필요합니다.';
 $string['cronremotepassword'] = '크론 비밀번호';
-$string['cronwarning'] = '<a href="{$a}">cron.php 관리 스크립트</a>가 최소 24시간 동안 작동되지 않았습니다.';
+$string['cronwarning'] = '<a href="cron.php">cron.php 관리 스크립트</a>가 최소 24시간 동안 작동되지 않았습니다.';
 $string['cronwarningcli'] = 'cli/cron.php 유지 관리 스크립트가 최소 24 시간 동안 실행되지 않았습니다.';
 $string['ctyperequired'] = '다국어 호환 기능 및 사이트의 성능 향상을 위해 이제부터 무들은 ctype의 PHP 확장자를 요구합니다.';
 $string['curlcache'] = 'cURL cache TTL';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_boost', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_boost
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsettings'] = 'Geavanceerde instellingen';
+$string['backgroundimage'] = 'Achtergrondafbeelding';
+$string['backgroundimage_desc'] = 'De afbeelding om te tonen als achtergrond voor de site. De achtergrond die je hier upload zal de achtergrond in je thema preset-bestand overschrijven.';
 $string['brandcolor'] = 'Hoofdkleur';
 $string['brandcolor_desc'] = 'Accentkleur';
 $string['choosereadme'] = 'Boost is een modern zeer aanpasbar thema. Dit thema is bedoeld om direct te worden gebruikt, of als basis thema bij het maken van nieuwe thema\'s gebaseerd op Bootstrap 4.';

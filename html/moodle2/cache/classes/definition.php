@@ -247,14 +247,6 @@ class cache_definition {
     protected $datasourcefile = null;
 
     /**
-     * Deprecated - this is completely unused.
-     * @deprecated since 2.9
-     * @todo MDL-55267 This will be deleted in Moodle 3.3.
-     * @var string
-     */
-    protected $datasourceaggregate = null;
-
-    /**
      * Set to true if the cache should hold onto items passing through it to speed up subsequent requests.
      * @var bool
      */
@@ -796,10 +788,12 @@ class cache_definition {
      * @throws coding_exception
      */
     public function set_identifiers(array $identifiers = array()) {
-        // If we are setting the exact same identifiers then just return as nothing really changed.
-        // We don't care about order as cache::make will use the same definition order all the time.
-        if ($identifiers === $this->identifiers) {
-            return false;
+        if ($this->identifiers !== null) {
+            throw new coding_exception("You can only set identifiers on initial definition creation." .
+                " Define a new cache to set different identifiers.");
+        }
+        if (!empty($identifiers) && !empty($this->invalidationevents)) {
+            throw new coding_exception("You cannot use event invalidation and identifiers at the same time.");
         }
 
         foreach ($this->requireidentifiers as $identifier) {

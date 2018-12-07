@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = '許可されるファイルタイプ';
-$string['acceptedfiletypes_help'] = '許可されるファイルタイプはカンマ区切りの「video/mp4, audio/mp3, image/png, image/jpeg」のようなMIMEタイプ一覧またはドットを含む「.png, .jpg」のようなファイル拡張子を入力して制限することができます。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
+$string['acceptedfiletypes_help'] = '許可されるファイルタイプは一連のファイル拡張子を入力して制限することができます。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
 $string['configmaxbytes'] = '最大ファイルサイズ';
 $string['countfiles'] = '{$a} ファイル';
 $string['default'] = 'デフォルトで有効にする';
+$string['defaultacceptedfiletypes'] = 'デフォルトで許可されるファイルタイプ';
 $string['default_help'] = 'この設定を有効にした場合、すべての新しい課題において、この提出方法がデフォルトで有効にされます。';
 $string['enabled'] = 'ファイル提出';
 $string['enabled_help'] = 'この設定を有効にした場合、学生は1つまたはそれ以上のファイルを提出物としてアップロードすることができます。';
@@ -47,5 +48,6 @@ $string['maximumsubmissionsize_help'] = '学生は最大このサイズまでフ
 $string['nonexistentfiletypes'] = '次のファイルタイプは認識されませんでした: {$a}';
 $string['numfilesforlog'] = 'ファイル数 : {$a} ファイル';
 $string['pluginname'] = 'ファイル提出';
+$string['privacy:metadata:filepurpose'] = 'この課題提出に読み込まれるファイルです。';
 $string['siteuploadlimit'] = 'サイトアップロード上限';
 $string['submissionfilearea'] = 'アップロード済み提出ファイル';

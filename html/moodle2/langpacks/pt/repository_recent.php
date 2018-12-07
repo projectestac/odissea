@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_recent', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['emptyfilelist'] = 'O repositório está vazio';
 $string['notitle'] = 'Sem título';
 $string['pluginname'] = 'Ficheiros recentes';
 $string['pluginname_help'] = 'Ficheiros usados recentemente pelo utilizador atual';
+$string['privacy:metadata'] = 'O módulo Ficheiros recentes não armazena ou transmite dados pessoais.';
 $string['recentfilesnumber'] = 'Número de ficheiros recentes';
 $string['recent:view'] = 'Ver módulo do repositório de ficheiros recentes';

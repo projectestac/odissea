@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_templatelibrary', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_templatelibrary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,10 @@ $string['documentation'] = 'Dokumentazioa';
 $string['example'] = 'Adibidea';
 $string['noresults'] = 'Ez dago emaitzarik';
 $string['notemplateselected'] = 'Ez da txantiloirik aukeratu';
-$string['pluginname'] = 'Txantiloi liburutegia';
+$string['pluginname'] = 'Txantiloien liburutegia';
+$string['privacy:metadata'] = 'Txantiloien liburutegia pluginak ez du datu pertsonalik biltzen.';
 $string['search'] = 'Bilatu';
 $string['searchtemplates'] = 'Bilatu txantiloiak';
+$string['templatehasnoexample'] = 'Txantiloi honek ez du adibidezko testuingururik, eta beraz ezin da hemen erakutsi. Txantiloi honi adibidezko testuingurua  gehitzeko sartu "Example context (json):" Mustache iruzkin batean, eta ondoren json-en kodeatutako txantiloiarentzako adibidezko testuingurua.';
 $string['templates'] = 'Txantiloiak';
 $string['templateselected'] = 'Txantiloia: {$a}';

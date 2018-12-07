@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cache', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,7 @@ $string['cachedef_calendar_subscriptions'] = 'Suscripciones al calendario';
 $string['cachedef_capabilities'] = 'Listado de prestaciones del sistema';
 $string['cachedef_completion'] = 'Estado de finalización de la actividad';
 $string['cachedef_config'] = 'Ajustes de configuración';
+$string['cachedef_contextwithinsights'] = 'Contexto con intuiciones (predicciones)';
 $string['cachedef_coursecat'] = 'Listas de categorías de cursos para un usuario en particular';
 $string['cachedef_coursecatrecords'] = 'Registros de categorías de cursos';
 $string['cachedef_coursecattree'] = 'Árbol de categorías de cursos';

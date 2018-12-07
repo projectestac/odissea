@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,7 +34,7 @@ $string['addgradeletter'] = 'Afegeix una lletra de qualificació';
 $string['addidnumbers'] = 'Afegeix números ID';
 $string['additem'] = 'Afegeix un element de qualificació';
 $string['addoutcome'] = 'Afegeix una competència';
-$string['addoutcomeitem'] = 'Afegeix un element de competència';
+$string['addoutcomeitem'] = 'Afegeix un element de resultat';
 $string['addscale'] = 'Afegeix una escala';
 $string['adjustedweight'] = 'Pes ajustat';
 $string['aggregateextracreditmean'] = 'Mitjana de les qualificacions (amb crèdits extra)';
@@ -129,7 +129,6 @@ $string['calculationsaved'] = 'S\'ha desat el càlcul';
 $string['calculationview'] = 'Visualitza el càlcul';
 $string['cannotaccessgroup'] = 'No es pot accedir a les qualificacions del grup seleccionat.';
 $string['categories'] = 'Categories';
-$string['categoriesanditems'] = 'Categories i elements';
 $string['category'] = 'Categoria';
 $string['categoryedit'] = 'Edita la categoria';
 $string['categoryname'] = 'Nom de la categoria';
@@ -191,7 +190,7 @@ $string['editfeedback'] = 'Edita retroacció';
 $string['editgrade'] = 'Edita qualificació';
 $string['editgradeletters'] = 'Edita quaificacions alfabètiques';
 $string['editoutcome'] = 'Edita competència';
-$string['editoutcomes'] = 'Edita competències';
+$string['editoutcomes'] = 'Edita els resultats';
 $string['editscale'] = 'Edita l\'escala';
 $string['edittree'] = 'Categories i elements';
 $string['editverbose'] = 'Edita {$a->category} {$a->itemmodule} {$a->itemname}';
@@ -410,7 +409,7 @@ $string['importfile'] = 'Importa un fitxer';
 $string['importfilemissing'] = 'No s\'ha rebut cap fitxer. Torneu enrere al formulari i assegureu-vos de penjar un fitxer vàlid.';
 $string['importfrom'] = 'Importa de';
 $string['importoutcomenofile'] = 'El fitxer que heu penjat està buit o corrupte. Comproveu que sigui un fitxer vàlid. El problema s\'ha detectat a la línia {$a}. Això passa quan una línia de dades no té el mateix nombre de columnes que la primera línia del fitxer (la línia de capçalera) o quan falten les capçaleres. Com a exemple de fitxer amb una capçalera vàlida, podeu examinar el fitxer exportat.';
-$string['importoutcomes'] = 'Importa competències';
+$string['importoutcomes'] = 'Importa resultats';
 $string['importoutcomes_help'] = 'Es poden importar competències mitjançant un fitxer csv amb format o un fitxer csv d\'exportació de competències.';
 $string['importoutcomesuccess'] = 'S\'ha importat la competència "{$a->name}" amb el núm. ID {$a->id}';
 $string['importplugins'] = 'Connectors d\'importació';
@@ -572,8 +571,8 @@ $string['outcome_help'] = 'Especifica quina competència representarà al butlle
 $string['outcomeitem'] = 'Element de competència';
 $string['outcomeitemsedit'] = 'Edita element de competència';
 $string['outcomereport'] = 'Informe de competència';
-$string['outcomes'] = 'Competències';
-$string['outcomescourse'] = 'Competències utilitzades al curs';
+$string['outcomes'] = 'Resultats';
+$string['outcomescourse'] = 'Resultats utilitzats al curs';
 $string['outcomescoursecustom'] = 'Competències personalitzades utilitzades (no les suprimiu)';
 $string['outcomescoursenotused'] = 'Competències estàndard no utilitzades';
 $string['outcomescourseused'] = 'Competències estàndard utilitzades (no les suprimiu)';

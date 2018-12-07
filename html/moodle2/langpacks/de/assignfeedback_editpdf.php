@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'Befehl:';
 $string['comment'] = 'Kommentar';
 $string['commentcolour'] = 'Kommentarfarbe';
 $string['commentcontextmenu'] = 'Kontextmenü für Kommentare';
+$string['commentindex'] = 'Index der Kommentare';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Seite konnte nicht gespeichert werden {$a}';
 $string['currentstamp'] = 'Stempel';
 $string['deleteannotation'] = 'Anmerkung löschen';
@@ -51,6 +53,7 @@ $string['enabled'] = 'Anmerkungen im PDF';
 $string['enabled_help'] = 'Nach der Aktivierung können Trainer/innen bei der Bewertung kommentierte PDF-Dateien für die eingereichten Lösungen erstellen. Kommentare, Korrekturen, Kennzeichnungen und \'Stempel\' können direkt in der Lösung des Teilnehmenden erstellt werden. Dies erfolgt direkt im Browser ohne Zusatzssoftware.';
 $string['errorgenerateimage'] = 'Fehler beim Erstellen des Bildes mit Ghostscript. Fehlerinformation: {$a}';
 $string['errorpdfpage'] = 'Fehler beim Erstellen dieser Seite';
+$string['expcolcomments'] = 'Alle Kommentare auf-/zuklappen';
 $string['filter'] = 'Kommentare filtern...';
 $string['generatefeedback'] = 'Feedback.pdf erzeugen';
 $string['generatingpdf'] = 'PDF erstellen ...';
@@ -69,10 +72,16 @@ $string['oval'] = 'Oval';
 $string['pagenumber'] = 'Seite {$a}';
 $string['pagexofy'] = 'Seite {$a->page} von {$a->total}';
 $string['pathtogspathdesc'] = 'Beachten Sie, dass für ein beschreibbares PDF der Pfad zu Ghostscript in {$a} eingetragen sein muss.';
-$string['pathtounoconvpathdesc'] = 'Die Annotierung von PDF erfordert, dass der unoconv-Pfad in {$a} angegeben wird.';
 $string['pen'] = 'Stift';
 $string['pluginname'] = 'Anmerkungen im PDF';
 $string['preparesubmissionsforannotation'] = 'Abgaben für Anmerkungen vorbereiten';
+$string['privacy:metadata:colourpurpose'] = 'Dies ist die Farbe des Kommentars oder der Anmerkung';
+$string['privacy:metadata:conversionpurpose'] = 'Die Dateien werden zu PDFs konvertiert, damit Anmerkungen gemacht werden können.';
+$string['privacy:metadata:filepurpose'] = 'Speichert PDF mit Feedback-Anmerkungen für den Teilnehmenden';
+$string['privacy:metadata:rawtextpurpose'] = 'Speichert Rohdaten der schnellen Dateneingabe in Tabelle';
+$string['privacy:metadata:tablepurpose'] = 'Speichert Kommentare in der Schnelleingabe in der Tabelle';
+$string['privacy:metadata:userid'] = 'ID des Nutzers';
+$string['privacy:path'] = 'Feedback als PDF';
 $string['rectangle'] = 'Rechteck';
 $string['red'] = 'Rot';
 $string['result'] = 'Ergebnis:';
@@ -90,14 +99,6 @@ $string['test_notestfile'] = 'Die Test-PDF fehlt';
 $string['test_notexecutable'] = 'Der Ghostscript-Pfad zeigt auf eine nicht ausführbare Datei.';
 $string['test_ok'] = 'Der Ghostscript-Pfad scheint in Ordnung zu sein.
 Sie sollten nachfolgend ein Bild und eine Mitteilung sehen können.';
-$string['test_unoconv'] = 'unoconv-Pfad testen';
-$string['test_unoconvdoesnotexist'] = 'Der unoconv-Pfad zeigt nicht auf das ausführbare Programm. Prüfen Sie die Pfadeinstellungen.';
-$string['test_unoconvdownload'] = 'Konvertierte PDF-Testdatei herunterladen';
-$string['test_unoconvisdir'] = 'Der unoconv-Pfad zeigt auf ein Verzeichnis. Beziehen Sie das unoconv-Programm im angegebenen Pfad mit ein.';
-$string['test_unoconvnotestfile'] = 'Die Testdatei fehlt, die als PDF konvertiert werden soll.';
-$string['test_unoconvnotexecutable'] = 'Der unoconv-Pfad zeigt auf eine ausführbare Datei.';
-$string['test_unoconvok'] = 'Der unoconv-Pfad scheint richtig konfiguriert zu sein.';
-$string['test_unoconvversionnotsupported'] = 'Die bei Ihnen installierte Version von unoconv wird nicht unterstützt. Die Aufgabenbewertung erfordert die Version 0.7 oder höher.';
 $string['tool'] = 'Werkzeug';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Kommentierte PDF anzeigen...';

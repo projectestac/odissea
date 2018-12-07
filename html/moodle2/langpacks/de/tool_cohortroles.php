@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_cohortroles', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_cohortroles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,14 @@ $string['noassignableroles'] = 'Es gibt noch keine Rollen, die im Nutzerkontext 
 $string['nocohortroleassignmentssaved'] = 'Keine Rollenzuweisung \'Globale Gruppe\' wurde gesichert.';
 $string['onecohortroleassignmentsaved'] = 'Eine Rollenzuweisung \'Globale Gruppe\' wurde gesichert.';
 $string['pluginname'] = 'Rollen \'Globale Gruppe\' verwalten';
+$string['privacy:metadata:tool_cohortroles'] = 'Das Verwaltungsplugin für Globale Gruppen speichert Zuordnungen von Nutzern zu Globalen Gruppen';
+$string['privacy:metadata:tool_cohortroles:cohortid'] = 'ID der Globalen Gruppe';
+$string['privacy:metadata:tool_cohortroles:id'] = 'ID der Zuordnung in eine Globale Gruppe';
+$string['privacy:metadata:tool_cohortroles:roleid'] = 'ID der Rolle';
+$string['privacy:metadata:tool_cohortroles:timecreated'] = 'Datum/Zeitpunkt  an dem die Zuordnung zu einer Globalen Gruppe erfolgte';
+$string['privacy:metadata:tool_cohortroles:timemodified'] = 'Datum/Zeitpunkt, an dem die Zuordnung zu einer Globalen Gruppe geändert wurde';
+$string['privacy:metadata:tool_cohortroles:userid'] = 'ID des Nutzers';
+$string['privacy:metadata:tool_cohortroles:usermodified'] = 'ID des Nutzers, der zuletzt die Zuordnung zu einer Globalen Gruppe geändert hat';
 $string['removecohortroleassignment'] = 'Rollenzuweisung \'Globale Gruppe\' entfernen';
 $string['removecohortroleassignmentconfirm'] = 'Möchten Sie wirklich diese Rollenzuweisung \'Globale Gruppe\' entfernen? Diese Rolle wird für dieses Nutzerkonto in allen anderen Nutzerkontexten entfernt.';
 $string['selectcohorts'] = 'Globale Gruppen auswählen';

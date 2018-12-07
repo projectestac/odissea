@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = 'MNetネットワークサーバ一覧�
 $string['mnet_hosts:addinstance'] = '新しいネットワークサーバブロックを追加する';
 $string['mnet_hosts:myaddinstance'] = '新しいネットワークサーバブロックをダッシュボードに追加する';
 $string['pluginname'] = 'ネットワークサーバ';
+$string['privacy:metadata'] = 'ネットワークサーバブロックはネットワークサーバ間の相互作用のみ許可します。データ自体を保存またはエクスポートすることはありません。';
 $string['server'] = 'サーバ';

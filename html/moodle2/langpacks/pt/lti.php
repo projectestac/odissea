@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,6 @@ $string['addnewapp'] = 'Ativar aplicação externa';
 $string['addserver'] = 'Adicionar novo servidor seguro';
 $string['addtype'] = 'Adicionar ferramenta pré-configurada';
 $string['allow'] = 'Permitir';
-$string['allowinstructorcustom'] = 'Permitir aos professores adicionar parâmetros personalizados';
 $string['allowsetting'] = 'Permitir que a ferramenta guarde 8K de configurações no Moodle.';
 $string['always'] = 'Sempre';
 $string['autoaddtype'] = 'Adicionar ferramenta';
@@ -90,7 +89,7 @@ $string['courselink'] = 'Ir para a disciplina';
 $string['coursemisconf'] = 'A disciplina está mal configurada';
 $string['course_tool_types'] = 'Ferramentas da disciplina';
 $string['createdon'] = 'Criado em';
-$string['curllibrarymissing'] = 'A biblioteca Curl Php deve ser instalada para usar LTI';
+$string['curllibrarymissing'] = 'A biblioteca cURL do PHP é necessária para a ferramenta externa.';
 $string['custom'] = 'Parâmetros personalizados';
 $string['custom_config'] = 'A usar configurações personalizadas';
 $string['custom_help'] = 'Os parâmetros personalizados são configurações utilizadas pelo fornecedor da ferramenta. Por exemplo, um parâmetro personalizado pode ser usado para exibir um recurso específico do fornecedor.
@@ -188,6 +187,10 @@ $string['grading'] = 'Encaminhamento de notas';
 $string['icon_url'] = 'URL do Ícone';
 $string['icon_url_help'] = 'O URL do ícone  permite que o ícone que aparece na lista de disciplinas para essa atividade seja alterado. Em vez de usar o ícone LTI predefinido, o ícone que representa este tipo de atividade pode ser especificado.';
 $string['id'] = 'ID';
+$string['indicator:cognitivedepth'] = 'Compreensão LTI';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade LTI.';
+$string['indicator:socialbreadth'] = 'Socialização LTI';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade LTI.';
 $string['invalidid'] = 'O ID do LTI está incorreto';
 $string['launch_in_moodle'] = 'Arrancar ferramenta no Moodle';
 $string['launchinpopup'] = 'Recipiente de arranque';
@@ -214,6 +217,7 @@ $string['leaveblank'] = 'Deixe em branco se não necessitar';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Adicionar configurações específicas da Ferramenta LTI';
 $string['lti:addinstance'] = 'Adicionar nova atividade Ferramenta LTI';
+$string['lti:admin'] = 'Tornar-se um administrador quando a ferramenta for iniciada';
 $string['lti_administration'] = 'Editar ferramenta pré-configurada';
 $string['lti_errormsg'] = 'A ferramenta deu a seguinte mensagem de erro: "{$a}"';
 $string['lti:grade'] = 'Ver notas devolvidas pela Ferramenta LTI';
@@ -322,6 +326,32 @@ $string['preferwidget'] = 'Widget de arranque preferido';
 $string['preferwidth'] = 'Largura preferida';
 $string['press_to_submit'] = 'Prima para iniciar esta atividade';
 $string['privacy'] = 'Privacidade';
+$string['privacy:metadata:coursefullname'] = 'O fullname da disciplina a que o utilizador está a aceder através do sistema LTI';
+$string['privacy:metadata:courseid'] = 'O ID da disciplina a que o utilizador está a aceder através do sistema LTI';
+$string['privacy:metadata:courseidnumber'] = 'O ID do número da disciplina a que o utilizador está a aceder através do sistema LTI';
+$string['privacy:metadata:courseshortname'] = 'O shortname da disciplina a que o utilizador está a aceder através do sistema LTI';
+$string['privacy:metadata:createdby'] = 'O utilizador que criou o registo';
+$string['privacy:metadata:email'] = 'O endereço de email do utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:externalpurpose'] = 'O sistema LTI fornece informação de utilizador e contexto à ferramenta LTI.';
+$string['privacy:metadata:firstname'] = 'firstname do utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:fullname'] = 'O fullname do utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:lastname'] = 'lastname do utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:lti_submission'] = 'Submissão LTI';
+$string['privacy:metadata:lti_submission:datesubmitted'] = 'A hora exata a indicar quando é que a submissão foi feita';
+$string['privacy:metadata:lti_submission:dateupdated'] = 'A hora exata a indicar quando é que a submissão foi modificada';
+$string['privacy:metadata:lti_submission:gradepercent'] = 'A avaliação do utilizador como percentagem';
+$string['privacy:metadata:lti_submission:originalgrade'] = 'A avaliação original para o utilizador';
+$string['privacy:metadata:lti_submission:userid'] = 'O ID do utilizador que submeteu para a atividade LTI';
+$string['privacy:metadata:lti_tool_proxies'] = 'proxies LTI';
+$string['privacy:metadata:lti_tool_proxies:name'] = 'Nome da proxies LTI';
+$string['privacy:metadata:lti_types'] = 'Tipos LTI';
+$string['privacy:metadata:lti_types:name'] = 'Mome do tipo LTI';
+$string['privacy:metadata:role'] = 'O papel na disciplina para aceder ao sistema LTI';
+$string['privacy:metadata:timecreated'] = 'A data em que o registo foi criado';
+$string['privacy:metadata:timemodified'] = 'A data em que o registo foi modificado';
+$string['privacy:metadata:userid'] = 'O ID do utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:useridnumber'] = 'O ID do número de utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:username'] = 'O nome de utilizador do utilizador a aceder ao sistema LTI';
 $string['quickgrade'] = 'Permitir avaliação rápida';
 $string['quickgrade_help'] = 'Se ativar esta opção, várias ferramentas podem ser avaliadas apenas numa página. Adicione notas e comentários e clique no botão "Guardar todas as alterações" para guardar as alterações.';
 $string['redirect'] = 'Será redirecionado dentro de instantes. Se tal não ocorrer prima o botão.';

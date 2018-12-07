@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_security', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,7 +79,6 @@ $string['check_noauth_details'] = '<p>Il plugin <em>Senza autenticazione</em> no
 $string['check_noauth_error'] = 'Il plugin Senza autenticazione non deve essere usato su siti in produzione.';
 $string['check_noauth_name'] = 'Senza autenticazione';
 $string['check_noauth_ok'] = 'Il plugin Senza autenticazione è disabilitato.';
-$string['check_nodemodules_details'] = '<p>La cartella <em>{$a->path}</em> contiene i moduli Node.js e le relative dipendenze, generalmente installate dall\'utilià NPM. Possono essere essere necessari per lo sviluppo. La cartella non è necessario per siti in produzione e può anche contenere codice potenzialmente pericoloso esponendo il sito ad attacchi da remoto.</p><p>Si raccomanda caldamente di rimuovere la cartella qualora il sito sia accessibile pubblicamente oppure di impedirne l\'accesso pubblico.</p>';
 $string['check_nodemodules_info'] = 'La cartella node_modules non deve essere presente siti pubblici.';
 $string['check_nodemodules_name'] = 'Cartella del modulo Node.js';
 $string['check_openprofiles_details'] = '<p>I profili utente visibili senza login possono essere utilizzati dagli spammer. Si raccomanda di abilitare <code>Imponi il login per i profili</code> oppure <code>Imponi il login</code>.</p>';
@@ -90,6 +89,10 @@ $string['check_passwordpolicy_details'] = '<p>Si raccomanda di attivare le regol
 $string['check_passwordpolicy_error'] = 'Le regole per le password non sono attive.';
 $string['check_passwordpolicy_name'] = 'Regole password';
 $string['check_passwordpolicy_ok'] = 'Le regole per le password sono attive.';
+$string['check_preventexecpath_details'] = '<p>Consentire la configurazione degli eseguibili tramite GUI amministrative facilita il <i>privilege escalation</i>.</p>';
+$string['check_preventexecpath_name'] = 'Percorsi degli eseguibili';
+$string['check_preventexecpath_ok'] = 'I percorsi degli eseguibili sono configurabili solamente nel file config.php';
+$string['check_preventexecpath_warning'] = 'I percorsi degli eseguibili sono configurabili tramite GUI amministrata.';
 $string['check_riskadmin_detailsok'] = '<p>Per favore verifica il seguente elenco di amministratori:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Per favore verifica il seguente elenco di amministratori:
 </p>{$a->admins}
@@ -107,7 +110,7 @@ $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Backup di dati utente';
 $string['check_riskbackup_ok'] = 'Non ci sono ruoli con il privilegio di eseguire backup di dati utente';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) in {$a->contextname}</a>';
-$string['check_riskbackup_warning'] = 'Sono stati individuati {$a->rolecount} ruoli,{$a->overridecount} modifiche ai ruoli e {$a->usercount} utenti con il privilegio di eseguire backup di dati utente';
+$string['check_riskbackup_warning'] = 'Sono stati individuati {$a->rolecount} ruoli, {$a->overridecount} modifiche ai ruoli e {$a->usercount} utenti con il privilegio di eseguire backup di dati utente';
 $string['check_riskxss_details'] = '<p>RISK_XSS indica privilegi che devono essere dati solamente ad utenti affidabili.</p>
 <p>Per favore verificate la seguente lista di utenti e accertatevi che tutti gli utenti elencati meritano la vostra fiducia:<br/>{$a}</p>';
 $string['check_riskxss_name'] = 'Utenti affidabili per XSS';
@@ -118,7 +121,6 @@ $string['check_unsecuredataroot_error'] = 'La cartella dataroot <code>{$a}</code
 $string['check_unsecuredataroot_name'] = 'Dataroot non sicura';
 $string['check_unsecuredataroot_ok'] = 'La Dataroot non deve essere accessibile via web.';
 $string['check_unsecuredataroot_warning'] = 'La cartella dataroot <code>{$a}</code> si trova in una posizione errata e potrebbe essere esposta pubblicamente sul web!';
-$string['check_vendordir_details'] = '<p>La cartella fornitori <em>{$a->path}</em> contiene diverse librerie di terze parti e le relative dipendenze, generalmente installate da PHP Composer. Può essere necessaria per lo sviluppo locale oppure per la installazione di framework PHPUnit. La cartella può anche contenere codice potenzialmente pericoloso esponendo il sito ad attacchi da remoto.</p><p>Si raccomanda caldamente di rimuovere la cartella qualora il sito sia accessibile pubblicamente oppure di impedirne l\'accesso pubblico.</p>';
 $string['check_vendordir_info'] = 'La cartella fornitori non deve essere presente in siti pubblici';
 $string['check_vendordir_name'] = 'Cartella fornitori';
 $string['check_webcron_details'] = '<p>Lanciare il cron via web può rivelare informazioni sensibili ad utenti anonimi. Si raccomanda di lanciare il corn solo via linea di comando oppure di impostare una password per l\'elaborazione del cron via web</p>';

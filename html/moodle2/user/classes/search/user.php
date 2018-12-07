@@ -41,12 +41,42 @@ class user extends \core_search\base {
      * Returns recordset containing required data attributes for indexing.
      *
      * @param number $modifiedfrom
-     * @return \moodle_recordset
+     * @param \context|null $context Optional context to restrict scope of returned results
+     * @return \moodle_recordset|null Recordset (or null if no results)
      */
-    public function get_recordset_by_timestamp($modifiedfrom = 0) {
+    public function get_document_recordset($modifiedfrom = 0, \context $context = null) {
         global $DB;
-        return $DB->get_recordset_select('user', 'timemodified >= ? AND deleted = ? AND
-                confirmed = ?', array($modifiedfrom, 0, 1));
+
+        // Prepare query conditions.
+        $where = 'timemodified >= ? AND deleted = ? AND confirmed = ?';
+        $params = [$modifiedfrom, 0, 1];
+
+        // Handle context types.
+        if (!$context) {
+            $context = \context_system::instance();
+        }
+        switch ($context->contextlevel) {
+            case CONTEXT_MODULE:
+            case CONTEXT_BLOCK:
+            case CONTEXT_COURSE:
+            case CONTEXT_COURSECAT:
+                // These contexts cannot contain any users.
+                return null;
+
+            case CONTEXT_USER:
+                // Restrict to specific user.
+                $where .= ' AND id = ?';
+                $params[] = $context->instanceid;
+                break;
+
+            case CONTEXT_SYSTEM:
+                break;
+
+            default:
+                throw new \coding_exception('Unexpected contextlevel: ' . $context->contextlevel);
+        }
+
+        return $DB->get_recordset_select('user', $where, $params);
     }
 
     /**
@@ -62,8 +92,14 @@ class user extends \core_search\base {
 
         // Prepare associative array with data from DB.
         $doc = \core_search\document_factory::instance($record->id, $this->componentname, $this->areaname);
+        // Include all alternate names in title.
+        $array = [];
+        foreach (get_all_user_name_fields(false, null, null, null, true) as $field) {
+            $array[$field] = $record->$field;
+        }
+        $fullusername = join(' ', $array);
         // Assigning properties to our document.
-        $doc->set('title', content_to_text(fullname($record), false));
+        $doc->set('title', content_to_text($fullusername, false));
         $doc->set('contextid', $context->id);
         $doc->set('courseid', SITEID);
         $doc->set('itemid', $record->id);
@@ -78,6 +114,18 @@ class user extends \core_search\base {
         }
 
         return $doc;
+    }
+
+    /**
+     * Returns the user fullname to display as document title
+     *
+     * @param \core_search\document $doc
+     * @return string User fullname
+     */
+    public function get_document_display_title(\core_search\document $doc) {
+
+        $user = \core_user::get_user($doc->get('itemid'));
+        return fullname($user);
     }
 
     /**
@@ -120,4 +168,41 @@ class user extends \core_search\base {
     public function get_context_url(\core_search\document $doc) {
         return new \moodle_url('/user/profile.php', array('id' => $doc->get('itemid')));
     }
+
+    /**
+     * Returns true if this area uses file indexing.
+     *
+     * @return bool
+     */
+    public function uses_file_indexing() {
+        return true;
+    }
+
+    /**
+     * Return the context info required to index files for
+     * this search area.
+     *
+     * Should be onerridden by each search area.
+     *
+     * @return array
+     */
+    public function get_search_fileareas() {
+        $fileareas = array(
+                'profile' // Fileareas.
+        );
+
+        return $fileareas;
+    }
+
+    /**
+     * Returns the moodle component name.
+     *
+     * It might be the plugin name (whole frankenstyle name) or the core subsystem name.
+     *
+     * @return string
+     */
+    public function get_component_name() {
+        return 'user';
+    }
+
 }

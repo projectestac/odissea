@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aftersaving...'] = 'Depois de gravar as suas configurações poderá querer';
+$string['aftersaving...'] = 'Depois de guardar as suas configurações poderá querer';
 $string['allowunenrol'] = 'Permitir que os dados IMS <strong>removam inscrições</strong> de alunos e professores';
 $string['allowunenrol_desc'] = 'Se ativar esta configuração as inscrições nas disciplinas serão removidas quando isso for especificado nos dados Enterprise.';
 $string['basicsettings'] = 'Configurações básicas';
@@ -69,6 +69,7 @@ $string['nestedcategories'] = 'Permitir grupos de categorias';
 $string['nestedcategories_desc'] = 'Se esta configuração estiver ativa, o IMS Enterprise irá criar grupos de categorias';
 $string['pluginname'] = 'Ficheiro IMS Enterprise';
 $string['pluginname_desc'] = 'Este módulo de inscrição irá verificar de forma contínua a existência de um ficheiro para processamento na localização que for especificada. O ficheiro deve estar no formato IMS Enterprise e conter os seguintes elementos XML: person, group, and membership.';
+$string['privacy:metadata'] = 'O módulo Ficheiro IMS Enterprise não armazena quaisquer dados pessoais.';
 $string['processphoto'] = 'Adicionar dados da fotografia do utilizador ao perfil';
 $string['processphotowarning'] = 'Aviso: o processamento de imagens tende a aumentar significativamente a carga no servidor. Não é recomendável ativar esta opção se o número de alunos a processar for muito elevado.';
 $string['restricttarget'] = 'Os dados apenas devem ser processados se for especificado';

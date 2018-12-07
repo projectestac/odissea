@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_self', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,6 +91,7 @@ $string['passwordinvalid'] = 'A senha de inscrição que indicou não é a corre
 $string['passwordinvalidhint'] = 'A senha de inscrição que indicou não é a correta. Por favor, tente novamente. Sugestão: A primeira letra é "{$a}"';
 $string['pluginname'] = 'Autoinscrição';
 $string['pluginname_desc'] = 'Este módulo permite aos utilizadores decidir em que disciplinas se pretendem inscrever. As disciplinas podem ser protegidas por uma senha de inscrição. Internamente a inscrição é feita através do módulo de inscrições manuais, pelo que este módulo tem que estar igualmente ativo na disciplina.';
+$string['privacy:metadata'] = 'O módulo Autoinscrição não armazena quaisquer dados pessoais.';
 $string['requirepassword'] = 'Pedir senha de inscrição';
 $string['requirepassword_desc'] = 'Esta configuração faz com que as novas disciplinas criadas peçam sempre senha de inscrição e evita que as disciplinas que já existem possam deixar de pedir a senha.';
 $string['role'] = 'Atribuir papel';

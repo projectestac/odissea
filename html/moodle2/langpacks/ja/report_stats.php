@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_stats', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   report_stats
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,4 +32,16 @@ $string['page-report-stats-index'] = 'コース統計レポート';
 $string['page-report-stats-user'] = 'ユーザコース統計レポート';
 $string['page-report-stats-x'] = 'すべての統計レポート';
 $string['pluginname'] = '統計';
+$string['privacy:dailypath'] = '日ごとの統計です。';
+$string['privacy:metadata'] = '統計プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata:courseid'] = 'コースのIDです。';
+$string['privacy:metadata:roleid'] = 'ユーザのロールIDです。';
+$string['privacy:metadata:statsreads'] = 'コンテンツの閲覧数です。';
+$string['privacy:metadata:statssummary'] = 'コース内でのユーザの交流に関する基本統計レコードです。';
+$string['privacy:metadata:statswrites'] = 'コースで作成されたコンテンツ数です。';
+$string['privacy:metadata:stattype'] = '記録された統計のタイプです。';
+$string['privacy:metadata:timeend'] = 'ログビューの終了日時です。';
+$string['privacy:metadata:userid'] = 'このテーブルにリンクされたユーザIDです。';
+$string['privacy:monthlypath'] = '月ごとの統計です。';
+$string['privacy:weeklypath'] = '週ごとの統計です。';
 $string['stats:view'] = 'コース統計レポートを表示する';

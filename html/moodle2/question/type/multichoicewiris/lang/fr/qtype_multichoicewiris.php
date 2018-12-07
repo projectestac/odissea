@@ -29,3 +29,4 @@ $string['pluginname_help'] = 'Semblable au choix multiple standard, avec la poss
 $string['pluginnamesummary'] = 'Semblable au choix multiple standard, avec la possibilité de poser une question et proposer des choix différents, avec des nombres, des formules ou des courbes aléatoires. Les commentaires peuvent également utiliser les valeurs aléatoires.';
 $string['pluginnameadding'] = 'Ajout d\'un choix multiple - Question de maths et sciences par WIRIS';
 $string['pluginnameediting'] = 'Modification d\'un choix multiple - Question de maths et sciences par WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Multi Choice question type does not effect or store any data itself.';

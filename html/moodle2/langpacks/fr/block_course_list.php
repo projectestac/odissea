@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_list', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['course_list:myaddinstance'] = 'Ajouter un bloc cours au tableau de bord
 $string['hideallcourseslink'] = 'Cacher le lien « Tous les cours »';
 $string['owncourses'] = 'L\'administrateur ne voit que ses propres cours';
 $string['pluginname'] = 'Cours';
+$string['privacy:metadata'] = 'Le bloc Cours affiche seulement des données enregistrées à d\'autres endroits.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeimport_xml', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['fileurl_help'] = 'Het URL-veld van het externe bestand is om gegevens o
 $string['importxml'] = 'XML-import';
 $string['importxml_help'] = 'Cijfers kunnen geïmporteerd worden via een XML-bestand dat de gebruikers ID-nummers en de activiteit ID-nummers bevat. Om de juiste opmaak te vinden, kun je eerst wat cijfers exporteren naar XML en dat bestand bekijken.';
 $string['pluginname'] = 'XML-bestand';
+$string['privacy:metadata'] = 'De importeer cijfers van XML-plugin bewaart geen persoonlijke gegevens.';
 $string['xml:publish'] = 'Publiceer importcijfers uit XML';
 $string['xml:view'] = 'Importeer cijfers uit XML-bestand';

@@ -83,28 +83,6 @@ class enrol_database_plugin extends enrol_plugin {
     }
 
     /**
-     * Gets an array of the user enrolment actions.
-     *
-     * @param course_enrolment_manager $manager
-     * @param stdClass $ue A user enrolment object
-     * @return array An array of user_enrolment_actions
-     */
-    public function get_user_enrolment_actions(course_enrolment_manager $manager, $ue) {
-        $actions = array();
-        $context = $manager->get_context();
-        $instance = $ue->enrolmentinstance;
-        $params = $manager->get_moodlepage()->url->params();
-        $params['ue'] = $ue->id;
-        if ($this->allow_unenrol_user($instance, $ue) && has_capability('enrol/database:unenrol', $context)) {
-            $url = new moodle_url('/enrol/unenroluser.php', $params);
-            $strunenrol = get_string('unenrol', 'enrol');
-            $actions[] = new user_enrolment_action(new pix_icon('t/delete', $strunenrol),
-                $strunenrol, $url, array('class' => 'unenrollink', 'rel' => $ue->id));
-        }
-        return $actions;
-    }
-
-    /**
      * Forces synchronisation of user enrolments with external database,
      * does not create new courses.
      *
@@ -779,6 +757,9 @@ class enrol_database_plugin extends enrol_plugin {
             if ($templatecourse) {
                 if ($template = $DB->get_record('course', array('shortname'=>$templatecourse))) {
                     $template = fullclone(course_get_format($template)->get_course());
+                    if (!isset($template->numsections)) {
+                        $template->numsections = course_get_format($template)->get_last_section_number();
+                    }
                     unset($template->id);
                     unset($template->fullname);
                     unset($template->shortname);
@@ -793,6 +774,7 @@ class enrol_database_plugin extends enrol_plugin {
                 $template->summary        = '';
                 $template->summaryformat  = FORMAT_HTML;
                 $template->format         = $courseconfig->format;
+                $template->numsections    = $courseconfig->numsections;
                 $template->newsitems      = $courseconfig->newsitems;
                 $template->showgrades     = $courseconfig->showgrades;
                 $template->showreports    = $courseconfig->showreports;
@@ -801,7 +783,12 @@ class enrol_database_plugin extends enrol_plugin {
                 $template->groupmodeforce = $courseconfig->groupmodeforce;
                 $template->visible        = $courseconfig->visible;
                 $template->lang           = $courseconfig->lang;
+                $template->enablecompletion = $courseconfig->enablecompletion;
                 $template->groupmodeforce = $courseconfig->groupmodeforce;
+                $template->startdate      = usergetmidnight(time());
+                if ($courseconfig->courseenddateenabled) {
+                    $template->enddate    = usergetmidnight(time()) + $courseconfig->courseduration;
+                }
             }
 
             foreach ($createcourses as $fields) {

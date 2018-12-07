@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_self', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_self
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,7 +90,8 @@ Si une clef d\'inscription est spécifiée, les utilisateurs tentant de s\'inscr
 $string['passwordinvalid'] = 'Clef d\'inscription incorrecte. Veuillez réessayer';
 $string['passwordinvalidhint'] = 'Cette clef d\'inscription est incorrecte, veuillez réessayer<br />(La clef commence par « {$a} ».)';
 $string['pluginname'] = 'Auto-inscription';
-$string['pluginname_desc'] = 'Le plugin d\'auto-inscription permet aux utilisateurs de choisir les cours qu\'ils veulent suivre. Les cours peuvent être protégés par une clef d\'inscription. À l\'interne, l\'inscription est effectuée au moyen du plugin inscription manuelle, qui doit être activé pour le même cours.';
+$string['pluginname_desc'] = 'Le plugin d\'auto-inscription permet aux utilisateurs de choisir les cours qu\'ils veulent suivre. Les cours peuvent être protégés par une clef d\'inscription. À l\'interne, l\'inscription est effectuée au moyen du plugin Inscription manuelles, qui doit être activé pour le même cours.';
+$string['privacy:metadata'] = 'Le plugin Auto-inscription n\'enregistre aucune donnée personnelle.';
 $string['requirepassword'] = 'Exiger la clef d\'inscription';
 $string['requirepassword_desc'] = 'Exiger la clef d\'inscription dans les nouveaux cours et empêcher la suppression de la clef d\'inscription des cours existants.';
 $string['role'] = 'Rôle attribué par défaut';
@@ -109,8 +110,8 @@ $string['status_help'] = 'Si ce réglage est activé et que le réglage « Perm
 $string['unenrol'] = 'Désinscrire l\'utilisateur';
 $string['unenrolselfconfirm'] = 'Voulez-vous vraiment vous désinscrire du cours « {$a} » ?';
 $string['unenroluser'] = 'Voulez vous vraiment désinscrire « {$a->user} » du cours « {$a->course} » ?';
-$string['usepasswordpolicy'] = 'Utiliser les règles de mots de passe';
-$string['usepasswordpolicy_desc'] = 'Utiliser pour les mots de passe d\'accès anonyme les règles de mots de passe standard.';
+$string['usepasswordpolicy'] = 'Utiliser la politique de mots de passe';
+$string['usepasswordpolicy_desc'] = 'Utiliser la politique de mots de passe standard pour les clefs d\'inscription.';
 $string['welcometocourse'] = 'Bienvenue sur {$a}';
 $string['welcometocoursetext'] = 'Bienvenue au cours « {$a->coursename} » !
 

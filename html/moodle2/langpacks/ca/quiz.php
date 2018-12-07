@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -818,7 +818,7 @@ $string['savingnewgradeforquestion'] = 'Es desa el valor de puntació per a la p
 $string['savingnewmaximumgrade'] = 'Es desa la puntuació màxima nova.';
 $string['score'] = 'Puntuació bruta';
 $string['scores'] = 'Puntuacions';
-$string['search:activity'] = 'Qüestionari: informació de les activitats';
+$string['search:activity'] = 'Qüestionari: informació de l\'activitat';
 $string['sectionheadingedit'] = 'Edita la capçalera «{$a}»';
 $string['sectionheadingremove'] = 'Suprimeix la capçalera «{$a}»';
 $string['seequestions'] = '(Veure preguntes)';
@@ -826,6 +826,7 @@ $string['select'] = 'Selecciona';
 $string['selectall'] = 'Selecciona tot';
 $string['selectcategory'] = 'Selecciona una categoria';
 $string['selectedattempts'] = 'Intents seleccionats';
+$string['selectmultipleitems'] = 'Seleccioneu diversos elements';
 $string['selectnone'] = 'Desselecciona tot';
 $string['selectquestiontype'] = '-- Selecciona un tipus de pregunta --';
 $string['serveradded'] = 'S\'ha afegit el servidor';

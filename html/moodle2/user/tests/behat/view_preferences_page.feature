@@ -21,34 +21,32 @@ Feature: Access to preferences page
       | student1 | C1 | student |
       | student2 | C1 | student |
       | teacher1 | C1 | editingteacher |
-   And the following "system role assigns" exist:
+    And the following "system role assigns" exist:
       | user | course | role |
       | manager1 | Acceptance test site | manager |
 
   Scenario: A student and teacher with normal permissions can not view another user's permissions page.
     Given I log in as "student1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to course participants
     And I follow "Student 2"
     And I should not see "Preferences" in the "region-main" "region"
     And I log out
     And I log in as "teacher1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     When I navigate to course participants
     And I follow "Student 2"
     Then I should not see "Preferences" in the "region-main" "region"
 
   Scenario: Administrators and Managers can view another user's permissions page.
     Given I log in as "admin"
-    And I am on site homepage
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I navigate to course participants
     And I follow "Student 2"
     And I should see "Preferences" in the "region-main" "region"
     And I log out
     And I log in as "manager1"
-    And I am on site homepage
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     When I navigate to course participants
     And I follow "Student 2"
     Then I should see "Preferences" in the "region-main" "region"

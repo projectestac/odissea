@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,11 +62,11 @@ $string['duplicate_usernames'] = 'Er kon geen index gemaakt worden op de kolomme
 $string['enabled_for_all'] = '(Deze service is ingeschakeld voor alle hosts)';
 $string['enterausername'] = 'Geef een gebruikersnaam of een door komma\'s gescheiden lijst van gebruikersnamen.';
 $string['error7020'] = 'Je ziet deze foutmelding als de site op afstand een record voor jou gemaakt heeft met de verkeerde wwwroot, bijvoorbeeld http://jouwsite.com in de plaats van http://www.jouwsite.com. Je moet de beheerder van die site contacteren om te vragen de record voor jouw host aan te passen met de waarde die je voor wwwroot vindt in config.php.';
-$string['error7022'] = 'Het bericht dat je naar de server op afstand stuurde, was juist geëncrypteerd, maar niet ondertekend. Dit is heel ongewoon. Je kunt best een foutmelding maken, waarbij je zoveel mogelijk informatie geeft over de betreffende applicatieversies enz.';
+$string['error7022'] = 'Het bericht dat je naar de externe server, was juist geëncrypteerd, maar niet ondertekend. Dit is heel ongewoon. Je kunt best een foutmelding maken, waarbij je zoveel mogelijk informatie geeft over de betreffende applicatieversies enz.';
 $string['error7023'] = 'De site op afstand heeft geprobeerd he bericht te ontcijferen met de sleutels die daar voor jouw site beschikbaar zijn. Dit is mislukt. Je kunt dit waarschijnlijk oplossen door manueel de sleutel opnieuw uit te wisselen met de site op afstand. Deze fout zou normaal gezien niet mogen gebeuren, tenzij je geen communicatie meer had met die site gedurende enkele maanden.';
 $string['error7024'] = 'Je hebt een onversleuteld bericht gestuurd naar de site op afstand, maar deze site accepteert geen onversleutelde boodschappen van jouw site. Dit is heel ongewoon. Je kunt best een foutmelding maken, waarbij je zoveel mogelijk informatie geeft over de betreffende applicatieversie enz.';
-$string['error7026'] = 'De sleutel waarmee je boodschap is ondertekend, is verschillend van de sleutel waarover de host op afstand over beschikt voor jouw server. Bovendien heeft die host geprobeerd je huidige sleutel te bekomen en is daar niet in gelukt. Geef de sleutel opnieuw manueel door en probeer nog eens.';
-$string['error709'] = 'De site op afstand kon van jouw site geen SSL key bekomen.';
+$string['error7026'] = 'De sleutel waarmee je boodschap is ondertekend, is verschillend van de sleutel waarover de host op afstand over beschikt voor jouw server. Bovendien heeft die host geprobeerd je huidige sleutel te verkrijgen en is daar niet in geslaagd. Geef de sleutel opnieuw manueel door en probeer nog eens.';
+$string['error709'] = 'De site op afstand kon van jouw site geen SSL key verkrijgen.';
 $string['eventaccesscontrolcreated'] = 'Toegangscontrole aangemaakt';
 $string['eventaccesscontrolupdated'] = 'Toeganscontrole aangepast';
 $string['expired'] = 'Deze sleutel verloopt op';
@@ -131,7 +131,7 @@ $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Voeg (tot maximaal) 3 strings samen en geef het resultaat.';
 $string['mnetdisabled'] = 'MNet is <strong>uitgeschakeld</strong>.';
 $string['mnetidprovider'] = 'MNET ID-Provider';
-$string['mnetidproviderdesc'] = 'Je kunt dit gebruiken om een link te bekomen waar je kunt inloggen als je het juiste e-mailadres kunt geven dat overeen komt met de gebruikersnaam waarmee je net probeerde in te loggen';
+$string['mnetidproviderdesc'] = 'Je kunt dit gebruiken om een link te verkrijgen waar je kunt inloggen als je het juiste e-mailadres kunt geven dat overeen komt met de gebruikersnaam waarmee je net probeerde in te loggen';
 $string['mnetidprovidermsg'] = 'Je zou moeten kunnen aanmelden bij je {$a} provider.';
 $string['mnetidprovidernotfound'] = 'Er kon niet meer informatie gevonden worden.';
 $string['mnetpeers'] = 'Peer servers';

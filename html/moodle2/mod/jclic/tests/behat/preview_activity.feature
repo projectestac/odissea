@@ -21,7 +21,7 @@ Feature: Preview JClic activity
       | Name | Test JClic |
       | Description | A testing JClic activity |
       | Type | External URL |
-      | URL | http://clic.xtec.cat/projects/bombers/jclic/bombers.jclic.zip |
+      | URL | https://clic.xtec.cat/projects/bombers/jclic/bombers.jclic.zip |
 
   Scenario: Preview JClic
     Given I follow "Test JClic"

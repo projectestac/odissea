@@ -4,6 +4,7 @@
 
 $ADMIN->add('users', new admin_category('accounts', new lang_string('accounts', 'admin')));
 $ADMIN->add('users', new admin_category('roles', new lang_string('permissions', 'role')));
+$ADMIN->add('users', new admin_category('privacy', new lang_string('privacyandpolicies', 'admin')));
 
 if ($hassiteconfig
  or has_capability('moodle/user:create', $systemcontext)
@@ -15,15 +16,10 @@ if ($hassiteconfig
  or has_capability('moodle/cohort:view', $systemcontext)) { // speedup for non-admins, add all caps used on this page
 
 
-    if (empty($CFG->loginhttps)) {
-        $securewwwroot = $CFG->wwwroot;
-    } else {
-        $securewwwroot = str_replace('http:','https:',$CFG->wwwroot);
-    }
     // stuff under the "accounts" subcategory
     $ADMIN->add('accounts', new admin_externalpage('editusers', new lang_string('userlist','admin'), "$CFG->wwwroot/$CFG->admin/user.php", array('moodle/user:update', 'moodle/user:delete')));
     $ADMIN->add('accounts', new admin_externalpage('userbulk', new lang_string('userbulk','admin'), "$CFG->wwwroot/$CFG->admin/user/user_bulk.php", array('moodle/user:update', 'moodle/user:delete')));
-    $ADMIN->add('accounts', new admin_externalpage('addnewuser', new lang_string('addnewuser'), "$securewwwroot/user/editadvanced.php?id=-1", 'moodle/user:create'));
+    $ADMIN->add('accounts', new admin_externalpage('addnewuser', new lang_string('addnewuser'), "$CFG->wwwroot/user/editadvanced.php?id=-1", 'moodle/user:create'));
 
     // "User default preferences" settingpage.
     $temp = new admin_settingpage('userdefaultpreferences', new lang_string('userdefaultpreferences', 'admin'));
@@ -189,6 +185,8 @@ if ($hassiteconfig
                     'phone2'      => new lang_string('phone2'),
                     'department'  => new lang_string('department'),
                     'institution' => new lang_string('institution'),
+                    'city'        => new lang_string('city'),
+                    'country'     => new lang_string('country'),
                 )));
         $setting = new admin_setting_configtext('fullnamedisplay', new lang_string('fullnamedisplay', 'admin'),
             new lang_string('configfullnamedisplay', 'admin'), 'language', PARAM_TEXT, 50);
@@ -219,3 +217,48 @@ if ($hassiteconfig
     $ADMIN->add('roles', new admin_externalpage('checkpermissions', new lang_string('checkglobalpermissions', 'role'), "$CFG->wwwroot/$CFG->admin/roles/check.php?contextid=".$systemcontext->id, array('moodle/role:assign', 'moodle/role:safeoverride', 'moodle/role:override', 'moodle/role:manage')));
 
 } // end of speedup
+
+// Privacy settings.
+if ($hassiteconfig) {
+    $temp = new admin_settingpage('privacysettings', new lang_string('privacysettings', 'admin'));
+
+    $options = array(
+        0 => get_string('no'),
+        1 => get_string('yes')
+    );
+    $url = new moodle_url('/admin/settings.php?section=supportcontact');
+    $url = $url->out();
+    $setting = new admin_setting_configselect('agedigitalconsentverification',
+        new lang_string('agedigitalconsentverification', 'admin'),
+        new lang_string('agedigitalconsentverification_desc', 'admin', $url), 0, $options);
+    $setting->set_force_ltr(true);
+    $temp->add($setting);
+
+    // See {@link https://gdpr-info.eu/art-8-gdpr/}.
+    $ageofdigitalconsentmap = implode(PHP_EOL, [
+        '*, 16',
+        'AT, 14',
+        'ES, 14',
+        'US, 13'
+    ]);
+    $setting = new admin_setting_agedigitalconsentmap('agedigitalconsentmap',
+        new lang_string('ageofdigitalconsentmap', 'admin'),
+        new lang_string('ageofdigitalconsentmap_desc', 'admin'),
+        $ageofdigitalconsentmap,
+        PARAM_RAW
+    );
+    $temp->add($setting);
+
+    $ADMIN->add('privacy', $temp);
+
+    // Policy settings.
+    $temp = new admin_settingpage('policysettings', new lang_string('policysettings', 'admin'));
+    $temp->add(new admin_settings_sitepolicy_handler_select('sitepolicyhandler', new lang_string('sitepolicyhandler', 'core_admin'),
+        new lang_string('sitepolicyhandler_desc', 'core_admin')));
+    $temp->add(new admin_setting_configtext('sitepolicy', new lang_string('sitepolicy', 'core_admin'),
+        new lang_string('sitepolicy_help', 'core_admin'), '', PARAM_RAW));
+    $temp->add(new admin_setting_configtext('sitepolicyguest', new lang_string('sitepolicyguest', 'core_admin'),
+        new lang_string('sitepolicyguest_help', 'core_admin'), (isset($CFG->sitepolicy) ? $CFG->sitepolicy : ''), PARAM_RAW));
+
+    $ADMIN->add('privacy', $temp);
+}

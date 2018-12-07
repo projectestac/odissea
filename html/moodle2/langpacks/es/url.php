@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,10 @@ Las opciones pueden incluir:
 * En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones';
 $string['externalurl'] = 'URL externa';
 $string['framesize'] = 'Altura del marco';
+$string['indicator:cognitivedepth'] = 'URL cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso URL.';
+$string['indicator:socialbreadth'] = 'URL social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso URL.';
 $string['invalidstoredurl'] = 'No se puede mostrar el recurso, la URL no es válida.';
 $string['invalidurl'] = 'La URL introducida no es válida';
 $string['modulename'] = 'URL';

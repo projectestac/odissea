@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plagiarism', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plagiarism', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   plagiarism
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configenableplagiarism'] = 'Αυτό θα επιτρέψει στους διαχειριστές να διαμορφώσουν τα πρόσθετα λογοκλοπής (αν εγκατασταθούν)';
+$string['configenableplagiarism'] = 'Αυτό θα επιτρέψει στους διαχειριστές να ρυθμίσουν τα πρόσθετα λογοκλοπής (αν έχουν εγκατασταθεί)';
 $string['enableplagiarism'] = 'Ενεργοποίηση πρόσθετων λογοκλοπής';

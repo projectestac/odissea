@@ -69,6 +69,45 @@ class rate extends base {
     }
 
     /**
+     * True if question type supports feedback options. False by default.
+     */
+    public function supports_feedback() {
+        return true;
+    }
+
+    /**
+     * True if the question supports feedback and has valid settings for feedback. Override if the default logic is not enough.
+     */
+    public function valid_feedback() {
+        return parent::valid_feedback() && (($this->precise == 0) || ($this->precise == 3));
+    }
+
+    /**
+     * Get the maximum score possible for feedback if appropriate. Override if default behaviour is not correct.
+     * @return int | boolean
+     */
+    public function get_feedback_maxscore() {
+        if ($this->valid_feedback()) {
+            $maxscore = 0;
+            $nbchoices = 0;
+            foreach ($this->choices as $choice) {
+                if (isset($choice->value) && ($choice->value != null)) {
+                    if ($choice->value > $maxscore) {
+                        $maxscore = $choice->value;
+                    }
+                } else {
+                    $nbchoices++;
+                }
+            }
+            // The maximum score needs to be multiplied by the number of items to rate.
+            $maxscore = $maxscore * $nbchoices;
+        } else {
+            $maxscore = false;
+        }
+        return $maxscore;
+    }
+
+    /**
      * Return the context tags for the check question template.
      * @param object $data
      * @param string $descendantdata
@@ -105,7 +144,7 @@ class rate extends base {
             }
             // Check for number from 1 to 3 digits, followed by the equal sign = (to accomodate named degrees).
             if (preg_match("/^([0-9]{1,3})=(.*)$/", $content, $ndd)) {
-                $n[$nameddegrees] = format_text($ndd[2], FORMAT_HTML);
+                $n[$nameddegrees] = format_text($ndd[2], FORMAT_HTML, ['noclean' => true]);
                 if (strlen($n[$nameddegrees]) > $maxndlen) {
                     $maxndlen = strlen($n[$nameddegrees]);
                 }
@@ -173,6 +212,7 @@ class rate extends base {
             $choicetags->qelements['headerrow']['colnya'] = true;
         }
 
+        $collabel = [];
         for ($j = 0; $j < $this->length; $j++) {
             $col = [];
             if (isset($n[$j])) {
@@ -189,10 +229,12 @@ class rate extends base {
             }
             $col['colwidth'] = $colwidth;
             $col['coltext'] = $str.$val;
+            $collabel[$j] = $col['coltext'];
             $choicetags->qelements['headerrow']['cols'][] = $col;
         }
         if ($na) {
             $choicetags->qelements['headerrow']['cols'][] = ['colwidth' => $colwidth, 'coltext' => $na];
+            $collabel[$j] = $na;
         }
 
         $num = 0;
@@ -218,7 +260,8 @@ class rate extends base {
                 if ($osgood) {
                     list($content, $contentright) = array_merge(preg_split('/[|]/', $content), array(' '));
                 }
-                $cols[] = ['colstyle' => 'text-align: '.$textalign.';', 'coltext' => format_text($content, FORMAT_HTML).'&nbsp;'];
+                $cols[] = ['colstyle' => 'text-align: '.$textalign.';',
+                           'coltext' => format_text($content, FORMAT_HTML, ['noclean' => true]).'&nbsp;'];
 
                 $bg = 'c0 raterow';
                 if ($nbchoices > 1 && $this->precise != 2  && !$blankquestionnaire) {
@@ -266,7 +309,7 @@ class rate extends base {
                     if (!empty($order)) {
                         $col['colinput']['onclick'] = $order;
                     }
-                    $col['colinput']['label'] = 'Choice '.$i.' for row '.$row;
+                    $col['colinput']['label'] = 'Choice '.$collabel[$j].' for row '.format_text($content, FORMAT_PLAIN);
                     if ($bg == 'c0 raterow') {
                         $bg = 'c1 raterow';
                     } else {
@@ -275,7 +318,7 @@ class rate extends base {
                     $cols[] = $col;
                 }
                 if ($osgood) {
-                    $cols[] = ['coltext' => '&nbsp;'.format_text($contentright, FORMAT_HTML)];
+                    $cols[] = ['coltext' => '&nbsp;'.format_text($contentright, FORMAT_HTML, ['noclean' => true])];
                 }
                 $choicetags->qelements['rows'][] = ['cols' => $cols];
             }
@@ -321,7 +364,7 @@ class rate extends base {
         foreach ($this->choices as $cid => $choice) {
             $content = $choice->content;
             if (preg_match("/^[0-9]{1,3}=/", $content, $ndd)) {
-                $ndd = format_text(substr($content, strlen($ndd[0])), FORMAT_HTML);
+                $ndd = format_text(substr($content, strlen($ndd[0])), FORMAT_HTML, ['noclean' => true]);
                 $n[$nameddegrees] = $ndd;
                 if (strlen($ndd) > $maxndlen) {
                     $maxndlen = strlen($ndd);
@@ -383,7 +426,7 @@ class rate extends base {
                 if ($osgood) {
                     list($content, $contentright) = array_merge(preg_split('/[|]/', $content), array(' '));
                 }
-                $rowobj->content = format_text($content, FORMAT_HTML).'&nbsp;';
+                $rowobj->content = format_text($content, FORMAT_HTML, ['noclean' => true]).'&nbsp;';
                 $bg = 'c0';
                 $cols = [];
                 for ($j = 0; $j < $this->length; $j++) {
@@ -413,7 +456,7 @@ class rate extends base {
                 }
                 $rowobj->cols = $cols;
                 if ($osgood) {
-                    $rowobj->osgoodstr = '&nbsp;'.format_text($contentright, FORMAT_HTML);
+                    $rowobj->osgoodstr = '&nbsp;'.format_text($contentright, FORMAT_HTML, ['noclean' => true]);
                 }
                 $resptags->rows[] = $rowobj;
             }
@@ -451,13 +494,8 @@ class rate extends base {
         }
 
         if ($num == 0) {
-            if ($this->dependquestion == 0) {
-                if ($this->required == 'y') {
-                    $complete = false;
-                }
-            } else {
-                if (isset($responsedata->{'q'.$this->dependquestion})
-                        && $responsedata->{'q'.$this->dependquestion} == $this->dependchoice) {
+            if (!$this->has_dependencies()) {
+                if ($this->required()) {
                     $complete = false;
                 }
             }

@@ -39,7 +39,7 @@ defined('MOODLE_INTERNAL') || die();
  * @author    2011 The Open University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class core_media_manager {
+final class core_media_manager {
     /**
      * Option: Disable text link fallback.
      *
@@ -95,15 +95,15 @@ class core_media_manager {
     private $embeddablemarkers;
 
     /** @var core_media_manager caches a singleton instance */
-    static protected $instance;
+    static private $instance;
 
     /** @var moodle_page page this instance was initialised for */
-    protected $page;
+    private $page;
 
     /**
      * Returns a singleton instance of a manager
      *
-     * Note as of Moodle 3.2.2, this will call setup for you.
+     * Note as of Moodle 3.3, this will call setup for you.
      *
      * @return core_media_manager
      */
@@ -125,7 +125,7 @@ class core_media_manager {
      * @param moodle_page $page The page we are going to add requirements to.
      * @see core_media_manager::instance()
      */
-    protected function __construct($page) {
+    private function __construct($page) {
         if ($page) {
             $this->page = $page;
             $players = $this->get_players();
@@ -142,11 +142,14 @@ class core_media_manager {
      *
      * This should must only be called once per page request.
      *
-     * This function will be deprecated in Moodle 3.3, The setup is now done in ::instance() so there is no need to call this.
+     * @deprecated Moodle 3.3, The setup is now done in ::instance() so there is no need to call this
      * @param moodle_page $page The page we are going to add requirements to.
      * @see core_media_manager::instance()
+     * @todo MDL-57632 final deprecation
      */
     public function setup($page) {
+        debugging('core_media_manager::setup() is deprecated.' .
+                  'You only need to call core_media_manager::instance() now', DEBUG_DEVELOPER);
         // No need to call ::instance from here, because the instance has already be set up.
     }
 
@@ -166,7 +169,7 @@ class core_media_manager {
      *
      * @return core_media_player[] Array of core_media_player objects in rank order
      */
-    protected function get_players() {
+    private function get_players() {
         // Save time by only building the list once.
         if (!$this->players) {
             $sortorder = \core\plugininfo\media::get_enabled_plugins();
@@ -295,7 +298,7 @@ class core_media_manager {
      * @param array $options Options array
      * @return string HTML code for embed
      */
-    protected function fallback_to_link($urls, $name, $options) {
+    private function fallback_to_link($urls, $name, $options) {
         // If link is turned off, return empty.
         if (!empty($options[self::OPTION_NO_LINK])) {
             return '';
@@ -396,6 +399,7 @@ class core_media_manager {
      * @return array Array of 1 or more moodle_url objects
      */
     public function split_alternatives($combinedurl, &$width, &$height) {
+        global $CFG;
         $urls = explode('#', $combinedurl);
         $width = 0;
         $height = 0;
@@ -422,16 +426,11 @@ class core_media_manager {
                 $url = str_replace($matches[0], '', $url);
             }
 
-            // Clean up url. Allow rtmp:// protocol even though it's not allowed by clean_param(..., PARAM_URL).
-            if ($isrtmp = preg_match('|^(rtmp://)(.*)$|i', trim($url), $matches)) {
-                $url = "http://" . $matches[2];
-            }
-            $url = clean_param($url, PARAM_URL);
-            if (empty($url)) {
+            // Clean up url.
+            $url = fix_utf8($url);
+            include_once($CFG->dirroot . '/lib/validateurlsyntax.php');
+            if (!validateUrlSyntax($url, 's?H?S?F?R?E?u-P-a?I?p?f?q?r?')) {
                 continue;
-            }
-            if ($isrtmp) {
-                $url = preg_replace('|^http://|', $matches[1], $url);
             }
 
             // Turn it into moodle_url object.

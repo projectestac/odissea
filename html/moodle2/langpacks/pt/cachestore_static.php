@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_static', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_static', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_static
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Pedido estático de cache';
+$string['privacy:metadata'] = 'O armazenamento de cache do módulo Pedido estático armazena alguns dados, apenas durante o tempo de vida de uma única solicitação HTTP.';

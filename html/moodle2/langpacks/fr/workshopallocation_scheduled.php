@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['currentstatusresult'] = 'Résultat récent de l\'exécution';
 $string['enablescheduled'] = 'Activer l\'attribution programmée';
 $string['enablescheduledinfo'] = 'Attribuer automatiquement les travaux à la fin de la phase de remise';
 $string['pluginname'] = 'Attribution programmée';
+$string['privacy:metadata'] = 'Le plugin Attribution programmée n\'enregistre aucune donnée personnelle. Les données personnelles indiquant qui évalue qui sont enregistrées par le module Atelier ; elles forment la base pour exporter les informations de l\'évaluation.';
 $string['randomallocationsettings'] = 'Réglages des attributions aléatoires';
 $string['randomallocationsettings_help'] = 'Les paramètres pour la méthode d\'attribution aléatoire sont définis ici. Ils seront utilisés par le plugin d\'attribution aléatoire pour l\'attribution des travaux.';
 $string['resultdisabled'] = 'Attribution programmée désactivée';

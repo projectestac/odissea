@@ -70,12 +70,16 @@ class popup_notification implements templatable, renderable {
         $context->timecreatedpretty = get_string('ago', 'message', format_time(time() - $context->timecreated));
         $context->text = message_format_message_text($context);
         $context->read = $context->timeread ? true : false;
+
+        // Need to strip any HTML from these.
+        $context->subject = clean_param($context->subject, PARAM_TEXT);
+        $context->contexturlname = clean_param($context->contexturlname, PARAM_TEXT);
         $context->shortenedsubject = shorten_text($context->subject, 125);
 
         if (!empty($context->component) && substr($context->component, 0, 4) == 'mod_') {
-            $iconurl = $output->pix_url('icon', $context->component);
+            $iconurl = $output->image_url('icon', $context->component);
         } else {
-            $iconurl = $output->pix_url('i/marker', 'core');
+            $iconurl = $output->image_url('i/marker', 'core');
         }
 
         $context->iconurl = $iconurl->out();

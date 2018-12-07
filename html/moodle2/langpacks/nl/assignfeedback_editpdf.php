@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,8 @@ $string['command'] = 'Commando:';
 $string['comment'] = 'Opmerkingen';
 $string['commentcolour'] = 'Commentaarkleur';
 $string['commentcontextmenu'] = 'Contextmenu opmerkingen';
+$string['commentindex'] = 'Index van opmerkingen';
+$string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Kon pagina {$a} niet bewaren';
 $string['currentstamp'] = 'Stempel';
 $string['deleteannotation'] = 'Verwijder annotatie';
@@ -51,6 +53,7 @@ $string['enabled'] = 'Annoteer PDF';
 $string['enabled_help'] = 'Indien ingeschakeld zal de leraar annoteerbare PDF-bestanden kunnen maken tijdens het beoordelen van de opdrachten. Hiermee kan de leraar opmerkingen toevoegen, tekeningen en stempels, rechtstreeks op het werk van de leerling. Het annoteren gebeurt in de browser - er is geen extra software vereist.';
 $string['errorgenerateimage'] = 'Fout bij het genereren van een afbeelding met ghostscript, foutopsporingsinformatie: {$a}';
 $string['errorpdfpage'] = 'Er is een fout opgetreden bij het genereren van deze pagina.';
+$string['expcolcomments'] = 'Open / sluit alle opmerkingen';
 $string['filter'] = 'Filter opmerkingen...';
 $string['generatefeedback'] = 'Genereer feedback PDF';
 $string['generatingpdf'] = 'PDF aan het genereren...';
@@ -69,10 +72,16 @@ $string['oval'] = 'Ovaal';
 $string['pagenumber'] = 'pagina {$a}';
 $string['pagexofy'] = 'Pagina {$a->page} van {$a->total}';
 $string['pathtogspathdesc'] = 'Opgelet: om PDF te kunnen annoteren moet het pad naar ghostscript ingesteld zijn in {$a}.';
-$string['pathtounoconvpathdesc'] = 'Merk op dat PDF-annotaties verwacht dat het pad naar unovonv is ingesteld in {$a}';
 $string['pen'] = 'Pen';
 $string['pluginname'] = 'Annoteer PDF';
 $string['preparesubmissionsforannotation'] = 'Inzendingen voorbereiden voor annotatie.';
+$string['privacy:metadata:colourpurpose'] = 'Kleur van de opmerking of annotatie';
+$string['privacy:metadata:conversionpurpose'] = 'Bestanden worden naar PDF geconverteerd om annotaties mogelijk te maken.';
+$string['privacy:metadata:filepurpose'] = 'Bewaart een geannoteerde PDF met feedback voor de gebruiker.';
+$string['privacy:metadata:rawtextpurpose'] = 'Bewaart ruwe tekst voor snelle data.';
+$string['privacy:metadata:tablepurpose'] = 'Bewaart door leraar gespecificeerde snellijst opmerkingen';
+$string['privacy:metadata:userid'] = 'Een identificatie van de gebruiker.';
+$string['privacy:path'] = 'PDF Feedback';
 $string['rectangle'] = 'Rechthoek';
 $string['red'] = 'Rood';
 $string['result'] = 'Resultaat:';
@@ -89,14 +98,6 @@ $string['test_isdir'] = 'Het Ghostscript-pad wijst naar een map. Zet ook het pro
 $string['test_notestfile'] = 'De test-PDF ontbreekt';
 $string['test_notexecutable'] = 'Het Gostscript-pad verwijst naar een bestand dat niet uitvoerbaar is.';
 $string['test_ok'] = 'Het Ghostscript-pad lijkt in orde - controleer of je de boodschap in onderstaand bericht kunt zien.';
-$string['test_unoconv'] = 'Test pad naar  unoconv';
-$string['test_unoconvdoesnotexist'] = 'Het pad naar unoconv verwijst niet naar het unoconv programma. Kijk je padinstellingen na.';
-$string['test_unoconvdownload'] = 'Download het geconverteerde pdf testbestand.';
-$string['test_unoconvisdir'] = 'Het unoconv pad verwijst naar een map. Geef ook de naam van het unoconv programma in het opgegeven pad.';
-$string['test_unoconvnotestfile'] = 'Het testdocument om te converteren naar PDF ontbreekt';
-$string['test_unoconvnotexecutable'] = 'Het unoconv pad verwijst naar een bestand dat niet uitvoerbaar is';
-$string['test_unoconvok'] = 'Het unoconv pad is juist geconfigureerd.';
-$string['test_unoconvversionnotsupported'] = 'De unoconv versie die je hebt geïnstalleerd wordt niet ondersteund. De beoordelingsfunctie vereist versie 0.7 of hoger.';
 $string['tool'] = 'Gereedschap';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Bekijk verbeterde opdracht...';

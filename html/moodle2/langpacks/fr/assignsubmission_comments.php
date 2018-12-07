@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_comments', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['default_help'] = 'Si ce réglage est activé, cette méthode de remise 
 $string['enabled'] = 'Commentaires de remise du travail';
 $string['enabled_help'] = 'Si ce réglage est activé, les participants peuvent laisser un commentaire sur leur propre travail. Ceci peut être utilisé par exemple pour indiquer parmi plusieurs fichiers remis le fichier principal.';
 $string['pluginname'] = 'Commentaires';
+$string['privacy:metadata:commentpurpose'] = 'Commentaires échangés entre étudiant et enseignants sur un devoir remis.';

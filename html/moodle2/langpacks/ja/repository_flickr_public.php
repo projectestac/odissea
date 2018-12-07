@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_flickr_public', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,11 @@ $string['notitle'] = 'タイトルなし';
 $string['nullphotolist'] = 'このアカウントに関連する写真はありません。';
 $string['pluginname'] = 'Flickrパブリック';
 $string['pluginname_help'] = 'flickr.comのリポジトリ';
+$string['privacy:metadata:repository_flickr_public'] = 'Flickrパブリックリポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata:repository_flickr_public:author'] = 'Flickrパブリックリポジトリコンテンツ作成者です。';
+$string['privacy:metadata:repository_flickr_public:email_address'] = 'Flickrパブリックリポジトリユーザメールアドレスです。';
+$string['privacy:metadata:repository_flickr_public:text'] = 'Flickrパブリックリポジトリユーザ検索テキストです。';
+$string['privacy:metadata:repository_flickr_public:user_id'] = 'FlickrパブリックリポジトリのユーザIDです。';
 $string['remember'] = '次回から入力を省略する';
 $string['secret'] = '秘密鍵';
 $string['sharealike'] = 'はい、他のユーザが同様に共有する限り';

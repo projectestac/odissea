@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,6 +76,8 @@ $string['name'] = 'Name';
 $string['needregrademessage'] = 'Die Richtlinie für die Bewertung wurde geändert nachdem diese/r Teilnehmer/in bewertet wurde. Teilnehmer/innen werden die Einstellungen so lange nicht sehen bis Sie den Bewertungsbereich geprüft und die Bewertung aktualisiert haben.';
 $string['pluginname'] = 'Bewertungsrichtlinie';
 $string['previewmarkingguide'] = 'Vorschau für Bewertungsrichtlinie';
+$string['privacy:metadata:preference:showmarkerdesc'] = 'Ob Beschreibungen für Kriterien gekennzeichnet werden';
+$string['privacy:metadata:preference:showstudentdesc'] = 'Ob Teilnehmende Kriterienbeschreibungen sehen';
 $string['regrademessage1'] = 'Sie nehmen nun Änderungen im Bewertungsschema vor. Dieses wurde bereits zuvor für die Bewertung von Teilnehmer/innen verwandt. Prüfen Sie bitte, ob die zuvor vorgenommenen Bewertungen angepasst werden müssen. Diese Bewertungen werden für Teilnehmer/innen unsichtbar gesetzt bis sie die Prüfung vorgenommen haben.';
 $string['regrademessage5'] = 'Sie nehmen nun wesentliche Änderungen des Bewertungsschema vor, das bereits zuvor verwandt worden ist. Die Einträge im Kurs-Bewertungsbereich bleiben zunächst unverändert. Die Detailbewertungen der Aktivität werden für Teilnehmer/innen jedoch verborgen, bis Sie die Bewertungen überprüft und ggfs. bestätigt oder angepasst haben.';
 $string['regradeoption0'] = 'Nicht zur Neubewertung markieren';

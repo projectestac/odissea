@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Like the standard Matching, but you can deliver di
 $string['pluginnamesummary'] = 'Like the standard Matching, but you can deliver different question text and choices by inserting random numbers, formulas or plots. The feedback can also use the random values.';
 $string['pluginnameadding'] = 'Adding a matching - math & science question by WIRIS';
 $string['pluginnameediting'] = 'Editing a matching - math & science question by WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Match question type does not effect or store any data itself.';

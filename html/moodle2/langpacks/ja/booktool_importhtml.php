@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'booktool_importhtml', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   booktool_importhtml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['importhtml:import'] = '章をインポートする';
 $string['importing'] = 'インポート中';
 $string['importingchapters'] = '章をブックにインポートする';
 $string['pluginname'] = 'ブック章インポート';
+$string['privacy:metadata'] = 'ブック章インポートプラグインはどのような個人データも保存しません。';
 $string['relinking'] = 'リンクの再作成中';
 $string['type'] = 'タイプ';
 $string['typeonefile'] = '見出しを含む1つのHTMLファイルを章として扱う';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = 'Crear nuevo recurso de página';
 $string['displayoptions'] = 'Opciones de visualización disponibles';
 $string['displayselect'] = 'Mostrar';
 $string['displayselectexplain'] = 'Seleccione el tipo de pantalla';
+$string['indicator:cognitivedepth'] = 'Página cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Página.';
+$string['indicator:socialbreadth'] = 'Página social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Página.';
 $string['legacyfiles'] = 'Migración de ficheros de curso antiguos';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizado';

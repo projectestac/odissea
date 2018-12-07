@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_checkbox', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_checkbox
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Case à cocher';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Les données utilisateurs enregistrées.';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Le format des données utilisateurs enregistrées.';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'L\'identifiant du champ de profil.';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Des informations utilisateur additionnelles sont enregistrées ici.';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'L\'identifiant de l\'utilisateur dont les données sont enregistrées par le plugin Case à cocher.';

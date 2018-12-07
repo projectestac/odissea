@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_mnet_hosts
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = 'Users need the capability \'Roam to a r
 $string['mnet_hosts:addinstance'] = 'Add a new network servers block';
 $string['mnet_hosts:myaddinstance'] = 'Add a new network servers block to Dashboard';
 $string['pluginname'] = 'Network servers';
+$string['privacy:metadata'] = 'The Network servers block only allows interaction with Network servers and neither stores or exports data itself.';
 $string['server'] = 'Server';

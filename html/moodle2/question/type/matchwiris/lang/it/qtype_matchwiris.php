@@ -28,3 +28,4 @@ $string['pluginname_help'] = 'Questo tipo di corrispondenza è simile alla tipol
 $string['pluginnamesummary'] = 'Questo tipo di corrispondenza è simile alla tipologia standard, ma qui puoi creare diversi enunciati e alternative inserendo numeri casuali, formule o diagrammi. Il feedback può anche contenere valori casuali.';
 $string['pluginnameadding'] = 'Aggiungere una corrispondenza - domanda di matematica e scienza WIRIS';
 $string['pluginnameediting'] = 'Modificare una corrispondenza - domanda di matematica e scienza WIRIS';
+$string['privacy:null_reason'] = 'Wiris Quizzes Match question type does not effect or store any data itself.';

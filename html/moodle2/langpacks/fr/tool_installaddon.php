@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_installaddon', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_installaddon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,6 +49,7 @@ $string['permcheckrepeat'] = 'Veuillez vérifier à nouveau';
 $string['permcheckresultno'] = 'L\'emplacement pour le type de plugin <em>{$a->path}</em> n\'est pas accessible en écriture';
 $string['permcheckresultyes'] = 'L\'emplacement pour le type de plugin <em>{$a->path}</em> est accessible en écriture';
 $string['pluginname'] = 'Installeur de plugin';
+$string['privacy:metadata'] = 'Le plugin Installeur de plugin n\'enregistre aucune donnée personnelle.';
 $string['remoterequestalreadyinstalled'] = 'Une demande d\'installation sur ce site du plugin {$a->name} ({$a->component}), version {$a->version} du répertoire de plugins Moodle a été détectée. Ce plugin est <strong>déjà installé</strong> sur ce site.';
 $string['remoterequestconfirm'] = 'Une demande d\'installation sur ce site du plugin {$a->name} ({$a->component}), version {$a->version} du répertoire de plugins Moodle a été détectée. Si vous continuez, le paquetage ZIP de ce plugin sera téléchargé pour validation. Rien ne sera encore installé durant cette étape.';
 $string['remoterequestinvalid'] = 'Une demande d\'installation d\'un plugin du répertoire de plugins Moodle a été détectée. La requête n\'est cependant pas valide et le plugin ne peut donc pas être installé.';

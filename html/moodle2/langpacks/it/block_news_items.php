@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_news_items', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_news_items
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['news_items:addinstance'] = 'Aggiungere blocco Annunci recenti';
 $string['news_items:myaddinstance'] = 'Aggiungere blocco Annunci recenti nella Dashboard';
 $string['pluginname'] = 'Annunci recenti';
+$string['privacy:metadata'] = 'Il blocco Annunci recenti visualizza solamente dati provenienti dai forum e non memorizza dati.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_managefiles', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_managefiles', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_managefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['hasmissingfiles'] = 'Kontuz! Testu-eremuan erreferentzia egiten zaien o
 $string['manageareafiles'] = 'Kudeatu enbotatutako fitxategiak testu-editorean';
 $string['managefiles:desc'] = 'Kudeatu enbotatutako fitxategiak';
 $string['pluginname'] = 'Kudeatu enbotatutako fitxategiak';
+$string['privacy:metadata'] = 'TinyMCEko Kudeatu enbotatutako fitxategiak pluginak ez du datu pertsonalik biltzen.';
 $string['refreshfiles'] = 'Freskatu falta eta erabili gabeko fitxategi-zerrenda';
 $string['unusedfilesdesc'] = 'Ondoko fitxategi enbotatuak ez dira testu-eremuan erabiltzen:';
 $string['unusedfilesheader'] = 'Erabili gabeko fitxategiak';

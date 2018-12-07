@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_wiris', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_wiris
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,8 +31,6 @@ $string['filtername'] = 'Matematik & naturvetenskap med WIRIS';
 $string['filter_standalone'] = 'Endast WIRIS-filter';
 $string['filter_standalonedesc'] = 'Du kommer ha möjlighet att visa existerande formler men inte skapa nya formler. Detta tar även bort varningsmeddelanden.';
 $string['pluginname'] = 'WIRIS-filter';
-$string['uninstallmode'] = 'Läge för avinstallering';
-$string['uninstallmodedesc'] = 'Tillåter att WIRIS-plugin kan avinstalleras';
 $string['wiriscas'] = 'Miniräknare';
 $string['wirischemeditor'] = 'Redigerare för kemi';
 $string['wirismatheditor'] = 'Redigerare för matematik';

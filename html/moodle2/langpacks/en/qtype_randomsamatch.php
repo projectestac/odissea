@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_randomsamatch
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['pluginnameediting'] = 'Editing a Random short-answer matching question'
 $string['pluginname_help'] = 'From the student perspective, this looks just like a matching question. The difference is that the list of names or statements (questions) for matching are drawn randomly from the short answer questions in the current category. There should be sufficient unused short answer questions in the category, otherwise an error message will be displayed.';
 $string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnamesummary'] = 'Like a Matching question, but created randomly from the short answer questions in a particular category.';
+$string['privacy:metadata'] = 'The Random short-answer matching question type plugin does not store any personal data.';
 $string['randomsamatch'] = 'Random short-answer matching';
 $string['randomsamatchintro'] = 'For each of the following questions, select the matching answer from the menu.';
 $string['randomsamatchnumber'] = 'Number of questions to select';

@@ -96,6 +96,14 @@
                 }
             }
         }
+
+        .stealth {
+            @extend .text-muted;
+        }
+        a.stealth,
+        a.stealth:hover {
+            color: lighten($link-color, 25%) !important; /* stylelint-disable-line declaration-no-important */
+        }
     }
 
     .label {
@@ -305,15 +313,9 @@
 
 .course-content ul li.section.hidden {
     .sectionname > span,
-    .content > div,
+    .content > div.summary,
     .activity .activityinstance {
-        opacity: .5;
-    }
-
-    .sectionname > span,
-    .activity .activityinstance {
-        margin-left: 10px;
-        margin-right: 10px;
+        @extend .text-muted;
     }
 }
 
@@ -322,12 +324,17 @@
     padding: 0;
 
     li.section {
-        padding-top: $spacer;
+        margin-top: $spacer;
         padding-bottom: $spacer;
 
         .content {
             margin: 0;
             padding: 0;
+        }
+
+        .summary,
+        .content > .availabilityinfo {
+            margin-left: 25px;
         }
 
         .left {
@@ -339,10 +346,6 @@
 
 .course-content {
     margin-top: 0;
-}
-
-.course-content ul.topics li.section .summary {
-    margin-left: 25px;
 }
 
 .course-content .hidden {
@@ -446,9 +449,12 @@
 
 .path-course-view li.activity span.autocompletion img {
     vertical-align: text-bottom;
-    margin-right: 0;
+    margin-left: 0;
 }
 
+.path-course-view li.activity form.togglecompletion .btn {
+    padding: 0;
+}
 .path-course-view li.activity form.togglecompletion img {
     max-width: none; /* The width is 0 so ensure we don't end up with a relative max-width */
 }
@@ -697,10 +703,6 @@ span.editinstructions {
 
     &.even {
         background-color: $table-bg-accent;
-    }
-
-    &:hover {
-        background-color: $table-bg-hover;
     }
 }
 
@@ -1197,4 +1199,5 @@ span.editinstructions {
 .page-settings-menu .menubar > a > .icon {
     width: auto;
     height: 32px;
+    font-size: 32px;
 }

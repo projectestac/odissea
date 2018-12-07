@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,7 +110,6 @@ $string['calculationsaved'] = 'Calcul enregistré';
 $string['calculationview'] = 'Afficher calcul';
 $string['cannotaccessgroup'] = 'Impossible d\'accéder aux notes du groupe sélectionné.';
 $string['categories'] = 'Catégories';
-$string['categoriesanditems'] = 'Catégories et éléments';
 $string['category'] = 'Catégorie';
 $string['categoryedit'] = 'Modifier catégorie';
 $string['categoryname'] = 'Nom de la catégorie';
@@ -602,6 +601,44 @@ $string['prefletters'] = 'Notes lettres et limites';
 $string['prefrows'] = 'Rangées spéciales';
 $string['prefshow'] = 'Cacher/afficher';
 $string['previewrows'] = 'Prévisualiser les rangées';
+$string['privacy:metadata:categorieshistory'] = 'Un enregistrement des versions antérieures des catégories de notes';
+$string['privacy:metadata:grade_import_newitem'] = 'Table temporaire enregistrant les nouveaux noms grade_items provenant d\'importations de notes';
+$string['privacy:metadata:grade_import_newitem:importcode'] = 'Un identifiant unique de chaque lot d\'importations';
+$string['privacy:metadata:grade_import_newitem:importer'] = 'Utilisateur qui importe les données';
+$string['privacy:metadata:grade_import_newitem:itemname'] = 'Nouveau nom de l\'élément d\'évaluation';
+$string['privacy:metadata:grade_import_values'] = 'Table temporaire pour l\'importation des notes';
+$string['privacy:metadata:grade_import_values:feedback'] = 'Feedback de note';
+$string['privacy:metadata:grade_import_values:finalgrade'] = 'Valeur brute de la note';
+$string['privacy:metadata:grade_import_values:importcode'] = 'Un identifiant unique de chaque lot d\'importation';
+$string['privacy:metadata:grade_import_values:importer'] = 'Utilisateur qui importe les données';
+$string['privacy:metadata:grade_import_values:importonlyfeedback'] = 'Marque si seul le feedback a été importé';
+$string['privacy:metadata:grade_import_values:userid'] = 'Utilisateur dont la note a été importé';
+$string['privacy:metadata:grades'] = 'Un enregistrement des notes';
+$string['privacy:metadata:grades:aggregationstatus'] = 'Le statut d\'agrégation';
+$string['privacy:metadata:grades:aggregationweight'] = 'La pondération dans l\'agrégation';
+$string['privacy:metadata:grades:feedback'] = 'Le feedback';
+$string['privacy:metadata:grades:finalgrade'] = 'La note';
+$string['privacy:metadata:gradeshistory'] = 'Un enregistrement des notes antérieures';
+$string['privacy:metadata:grades:information'] = 'Informations complémentaires';
+$string['privacy:metadata:grades:timemodified'] = 'Date et heure de la dernière modification de la note';
+$string['privacy:metadata:grades:userid'] = 'L\'identifiant de l\'utilisateur dont c\'est la note';
+$string['privacy:metadata:grades:usermodified'] = 'L\'identifiant de l\'utilisateur qui a modifié l\'enregistrement pour la dernière fois';
+$string['privacy:metadata:history:loggeduser'] = 'L\'identifiant de l\'utilisateur qui était connecté lorsque le changement de version a eu lieu';
+$string['privacy:metadata:history:timemodified'] = 'Date et heure du changement de version';
+$string['privacy:metadata:itemshistory'] = 'Un enregistrement des versions antérieures des éléments d\'évaluation';
+$string['privacy:metadata:outcomes'] = 'Un enregistrement des objectifs';
+$string['privacy:metadata:outcomeshistory'] = 'Un enregistrement des versions antérieures des objectifs';
+$string['privacy:metadata:outcomes:timemodified'] = 'Date et heure de la modification de l\'enregistrement';
+$string['privacy:metadata:outcomes:usermodified'] = 'L\'utilisateur qui a modifié l\'enregistrement pour la dernière fois';
+$string['privacy:metadata:scale'] = 'Un enregistrement des barèmes';
+$string['privacy:metadata:scalehistory'] = 'Un enregistrement des versions antérieures des barèmes';
+$string['privacy:metadata:scale:timemodified'] = 'Date et heure de la dernière modification de l\'enregistrement';
+$string['privacy:metadata:scale:userid'] = 'L\'utilisateur qui a modifié l\'enregistrement pour la dernière fois';
+$string['privacy:path:relatedtome'] = 'En lien avec moi';
+$string['privacy:request:historyactiondelete'] = 'Suppression';
+$string['privacy:request:historyactioninsert'] = 'Insertion';
+$string['privacy:request:historyactionupdate'] = 'Mise à jour';
+$string['privacy:request:unknowndeletedgradeitem'] = 'Inconnu (l\'élément d\'évaluation a été supprimé)';
 $string['profilereport'] = 'Rapport du profil utilisateur';
 $string['profilereport_help'] = 'Rapport d\'évaluation présenté dans les profils utilisateur.';
 $string['publishing'] = 'Publication en cours';

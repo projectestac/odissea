@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_responses', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_responses
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,8 +28,15 @@ defined('MOODLE_INTERNAL') || die();
 $string['cannotloadoptions'] = '問題オプションを読み込めませんでした。';
 $string['include'] = '含む';
 $string['mustselectcols'] = 'あなたは何かを含める必要があります。';
-$string['pagesize'] = '1ページあたりの受験数:';
+$string['pagesize'] = 'ページサイズ';
 $string['pluginname'] = '解答';
+$string['privacy:preference:qtext'] = '問題テキストカラムを表示するか示します。';
+$string['privacy:preference:resp'] = '学生の解答カラムを表示するか示します。';
+$string['privacy:preference:right'] = '正解カラムを表示するか示します。';
+$string['privacy:preference:which_tries'] = 'どの解答を表示するか示します。';
+$string['privacy:preference:which_tries:all'] = 'ユーザの受験中の問題のすべての受験です。';
+$string['privacy:preference:which_tries:first'] = 'ユーザの受験中の問題の最初の受験です。';
+$string['privacy:preference:which_tries:last'] = 'ユーザの受験中の問題の最後の受験です。';
 $string['questiontext'] = '問題テキスト';
 $string['reportresponses'] = '解答';
 $string['response'] = '解答';
@@ -46,4 +53,4 @@ $string['showattempts'] = '表示のみ / 受験のダウンロード';
 $string['showthe'] = '表示';
 $string['summaryofquestiontext'] = '問題概要';
 $string['summaryofresponse'] = '解答概要';
-$string['summaryofrightanswer'] = '正解の概要';
+$string['summaryofrightanswer'] = '正解概要';

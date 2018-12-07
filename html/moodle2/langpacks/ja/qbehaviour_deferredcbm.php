@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['judgementsummary'] = '解答数: {$a->responses} / 正確性: {$a->frac
 $string['noquestions'] = 'レスポンスなし';
 $string['overconfident'] = '自信過剰';
 $string['pluginname'] = '遅延フィードバック (CBM)';
+$string['privacy:metadata'] = '遅延フィードバック (CBM) 問題動作プラグインはどのような個人データも保存しません。';
 $string['slightlyoverconfident'] = '若干自信過剰';
 $string['slightlyunderconfident'] = '若干自信不足';
 $string['underconfident'] = '自信不足';

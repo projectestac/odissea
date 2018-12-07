@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_rubric', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,7 +48,7 @@ $string['err_totalscore'] = 'El número máximo de puntos posibles cuando se cal
 $string['gradingof'] = 'Calificando {$a}';
 $string['level'] = 'Nivel {$a->definition}, {$a->score} puntos.';
 $string['leveldefinition'] = 'Nivel {$a} de definición';
-$string['leveldelete'] = 'Eliminar nivel {$a}';
+$string['leveldelete'] = 'Eliminar nivel';
 $string['levelempty'] = 'Clic para editar el nivel';
 $string['name'] = 'Nombre';
 $string['needregrademessage'] = 'La definición de la rúbrica fue cambiada después de que este estudiante hubiera sido calificado. El estudiante no puede ver esta rúbrica hasta que usted la verifique y  actualice la calificación.';

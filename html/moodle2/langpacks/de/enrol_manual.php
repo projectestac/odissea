@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Erweitert';
 $string['alterstatus'] = 'Status ändern';
 $string['altertimeend'] = 'Endzeit ändern';
 $string['altertimestart'] = 'Startzeit ändern';
 $string['assignrole'] = 'Kursrolle zuweisen ';
+$string['assignroles'] = 'Rollen zuweisen';
 $string['browsecohorts'] = 'Globale Gruppen anzeigen';
 $string['browseusers'] = 'Nutzer/innen anzeigen';
 $string['confirmbulkdeleteenrolment'] = 'Möchten Sie diese Einschreibungen wirklich löschen?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Ausgewählte Nutzereinschreibungen löschen';
 $string['editselectedusers'] = 'Ausgewählte Nutzereinschreibungen bearbeiten';
 $string['enrolledincourserole'] = 'In \'{$a->course}\' als \'{$a->role}\' eingeschrieben';
 $string['enrolusers'] = 'Nutzer/innen einschreiben';
+$string['enroluserscohorts'] = 'Ausgewählte Nutzer/innen und globale Gruppen einschreiben';
 $string['expiredaction'] = 'Aktion bei Einschreibungsablauf';
 $string['expiredaction_help'] = 'Legen Sie fest was nach dem Ablauf der Einschreibung in einem Kurs erfolgt. Denken Sie daran, dass bei der Austragung des Nutzers aus dem Kurs einige Daten nicht mehr verfügbar sind.';
 $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
@@ -70,6 +73,10 @@ $string['messageprovider:expiry_notification'] = 'Mitteilung beim Ablauf einer m
 $string['now'] = 'Jetzt';
 $string['pluginname'] = 'Manuelle Einschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Manuelle Einschreibung\' erlaubt es, Nutzer/innen manuell in einen Kurs einzuschreiben. Die Einschreibung in einen Kurs kann von den Trainer/innen (oder jemandem mit passenden Rechten) durchgeführt werden. Das Plugin sollte normalerweise aktiviert sein, da andere Einschreibeplugins (z.B. Selbsteinschreibung) darauf zugreifen.';
+$string['privacy:metadata'] = 'Das Manuelle-Einschreibungplugin speichert keine persönlichen Daten.';
+$string['selectcohorts'] = 'Globale Gruppen auswählen';
+$string['selection'] = 'Auswahl';
+$string['selectusers'] = 'Nutzer/innen auswählen';
 $string['status'] = 'Manuelle Einschreibung';
 $string['status_desc'] = 'Kurszugriff für intern eingeschriebene Nutzer/innen erlauben. Dieses Plugin sollte in den meisten Fällen aktiviert bleiben.';
 $string['statusdisabled'] = 'Deaktiviert';

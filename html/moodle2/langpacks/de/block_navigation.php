@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_navigation', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_navigation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['linkcategoriesdesc'] = 'Kursbereiche als Links anzeigen';
 $string['navigation:addinstance'] = 'Block \'Navigation\' hinzufügen';
 $string['navigation:myaddinstance'] = 'Block \'Navigation\' zum Dashboard hinzufügen';
 $string['pluginname'] = 'Navigation';
+$string['privacy:metadata'] = 'Der Block Navigation zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['trimlength'] = 'Zahl der gezeigten Zeichen';
 $string['trimmode'] = 'Kürzungsmodus';
 $string['trimmodecenter'] = 'Zeichen mittig entfernen';

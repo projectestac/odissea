@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mediaplugin', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_mediaplugin', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_mediaplugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['linktomedia'] = 'De multimedia plugin-filter zoekt naar links in tekst 
 
 
 <a href="{$a}">Beheer media-spelers</a>';
+$string['privacy:metadata'] = 'De Multimediaplugin bewaart geen persoonlijke gegevens.';

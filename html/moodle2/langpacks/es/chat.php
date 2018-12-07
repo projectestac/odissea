@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,10 @@ $string['explainmethoddaemon'] = 'Estos ajustes actúan <strong>solamente</stron
 $string['explainmethodnormal'] = 'Estos ajustes actúan <strong>solamente</strong> si ha seleccionado "Método normal" en \'Método de chat\'';
 $string['generalconfig'] = 'Configuración general';
 $string['idle'] = 'Inactivo';
+$string['indicator:cognitivedepth'] = 'Chat cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Chat.';
+$string['indicator:socialbreadth'] = 'Chat social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Chat.';
 $string['inputarea'] = 'Área de entrada';
 $string['invalidid'] = 'No se encontró esa sala de chat';
 $string['list_all_sessions'] = 'Listar todas las sesiones.';

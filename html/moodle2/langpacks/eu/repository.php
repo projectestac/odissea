@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,7 @@ $string['areauserprofile'] = 'Profila';
 $string['attachedfiles'] = 'Erantsitako fitxategiak';
 $string['attachment'] = 'Eranskina';
 $string['author'] = 'Egilea';
-$string['automatedbackup'] = 'Segurtasun-kopia automatikoak';
+$string['automatedbackup'] = 'Segurtasun-kopia automatizatua';
 $string['back'] = '« Atzera';
 $string['backtodraftfiles'] = '« Itzuli zirriborro-fitxategien kudeatzailera';
 $string['cachecleared'] = 'Cacheatutako fitxategiak ezabatuak izan dira';
@@ -67,7 +67,7 @@ $string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodle-ra jaistean erab
 $string['configsaved'] = 'Ezarpenak gordeta!';
 $string['configsyncfiletimeout'] = 'Kanpoko fitxategi baten tamaina sinkronizatzeko gehienezko denbora segundutan.';
 $string['configsyncimagetimeout'] = 'Kanpoko fitxategi baten irudia kanpo-biltegitik jaisteko gehienezko denbora segundutan sinkronizazioa egiten denean.';
-$string['confirmdelete'] = 'Ziur al zaude biltegi hau ezabatu nahi duzula - {$a}? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
+$string['confirmdelete'] = 'Ziur al zaude {$a} biltegia ezabatu nahi duzula? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodle-ra jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
 $string['confirmdeletefile'] = 'Ziur al zaude fitxategi hau ezabatu nahi duzula?';
 $string['confirmdeletefilewithhref'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula? {$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak. Jarraituz gero esteka horiek benetako kopiak bihurtuko dira.';
 $string['confirmdeletefolder'] = 'Ziur al zaude karpeta hau ezabatu nahi duzula? Fitxategi eta azpikarpeta guztiak ere ezabatuko dira.';
@@ -156,8 +156,10 @@ $string['linkexternal'] = 'Kanpoko esteka';
 $string['listview'] = 'Ikusi zerrenda gisa';
 $string['loading'] = 'Kargatzen...';
 $string['login'] = 'Sartu zure kontuan';
+$string['logintoaccount'] = 'Sartu zure kontuan ({$a} )';
 $string['logout'] = 'Saioa amaitu';
 $string['lostsource'] = 'Errorea. Iturria falta da. {$a}';
+$string['makefilecontrolledlink'] = 'Sortu kontrolatutako sarbide-esteka fitxategira';
 $string['makefileinternal'] = 'Fitxategiaren kopia egin';
 $string['makefilelink'] = 'Lotu fitxategia zuzenean';
 $string['makefilereference'] = 'Sortu fitxategiaren ezizen/esteka bat';
@@ -192,9 +194,18 @@ $string['plugin'] = 'Biltegi-pluginak';
 $string['pluginerror'] = 'Erroreak biltegi-pluginean';
 $string['pluginname'] = 'Biltegi-pluginaren izena';
 $string['pluginnamehelp'] = 'Hau hutsik utziz gero, berezko izena erabiliko da.';
-$string['popup'] = 'Saioa  hasteko, sakatu "Sartu" botoiari';
+$string['popup'] = 'Klik egin "Sartu" botoian saioa hasteko';
 $string['popupblockeddownload'] = 'Deskargarako leihoa blokeatuta dago, mesedez baimendu popup leihoa eta saiatu berriz ere.';
 $string['preview'] = 'Aurreikusi';
+$string['privacy:metadata:repository'] = 'Biltegien osagaiak sistemako biltegi-motak gordetzen ditu.';
+$string['privacy:metadata:repository_instances'] = 'Biltegien pluginen osagaiak sistemako erabiltzaileen biltegien instantziak gordetzen ditu.';
+$string['privacy:metadata:repository_instances:name'] = 'Biltegi-instantziaren izen pertsonalitzatua.';
+$string['privacy:metadata:repository_instances:password'] = 'Biltegi-instantziarentzako konfiguratutako pasahitza (aukerazkoa).';
+$string['privacy:metadata:repository_instances:timecreated'] = 'Biltegi-instantzia sortu zeneko data/ordua.';
+$string['privacy:metadata:repository_instances:timemodified'] = 'Biltegi-instantzia aldatu zeneko data/ordua.';
+$string['privacy:metadata:repository_instances:typeid'] = 'Biltegi-instantzia motaren IDa.';
+$string['privacy:metadata:repository_instances:userid'] = 'Biltegi-instantziaren jabea den erabiltzailearen IDa.';
+$string['privacy:metadata:repository_instances:username'] = 'Biltegi-instantziarentzako konfiguratutako erabiltzaile-izena (aukerazkoa).';
 $string['privatefilesof'] = 'Fitxategi pribatuak {$a}';
 $string['readonlyinstance'] = 'Ezin duzu editatu/ezabatu irakurtzeko-bakarrik (read-only) den instantzia bat';
 $string['referencesexist'] = '{$a} ezizen/esteka daude fitxategi hau jatorritzat dutenak.';
@@ -221,10 +232,10 @@ $string['select'] = 'Aukeratu';
 $string['setmainfile'] = 'Konfiguratu fitxategi nagusia';
 $string['setmainfile_help'] = 'Karpetan fitxategi bat baino gehiago badago, fitxategi nagusia izango da orrian erakutsiko dena. Bestelako fitxategiak bertan txerta daitezke, hala nola irudiak edota bideoak. Fitxategi-kudeatzailean fitxategi nagusia letra lodiz erakutsiko da.';
 $string['settings'] = 'Ezarpenak';
-$string['setupdefaultplugins'] = 'Berezko biltegi-gehigarriak konfiguratzen';
+$string['setupdefaultplugins'] = 'Berezko biltegi-pluginak konfiguratzen';
 $string['siteinstances'] = 'Gune honen biltegi-instantziak';
 $string['size'] = 'Tamaina';
-$string['sourcekeymismatch'] = 'Jatorrizko URLa ez dator bat jatorrizko gakoarekin. (sourcekey)';
+$string['sourcekeymismatch'] = 'Jatorrizko URLa ez dator bat jatorrizko gakoarekin.';
 $string['submit'] = 'Bidali';
 $string['sync'] = 'Sync';
 $string['syncfiletimeout'] = 'Fitxategi-sinkronizazioaren gehienezko denbora';
@@ -236,6 +247,7 @@ $string['typenotvisible'] = 'Mota ezin da ikusi';
 $string['undisclosedreference'] = '(Ez da ezagutarazi)';
 $string['undisclosedsource'] = '(Ez da ezagutarazi)';
 $string['unknownoriginal'] = 'Ezezaguna';
+$string['unknownsource'] = 'Iturburu ezezaguna';
 $string['unzipped'] = 'Ondo deskonprimatu da';
 $string['upload'] = 'Igo fitxategi hau';
 $string['uploading'] = 'Igotzen...';

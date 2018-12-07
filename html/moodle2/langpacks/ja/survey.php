@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,10 @@ $string['guestsnotallowed'] = '登録済みユーザのみ調査を送信する�
 $string['howlong'] = 'この調査を終えるのにどのくらい時間がかかりましたか?';
 $string['howlongoptions'] = '1分以下,1-2分,2-3分,3-4分,4-5分,5-10分,10分以上';
 $string['ifoundthat'] = '私は次のことを発見しました:';
+$string['indicator:cognitivedepth'] = '調査認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標は調査活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = '調査社会的';
+$string['indicator:socialbreadth_help'] = 'この指標は調査活動で学生が到達した社会的広がりに基づきます。';
 $string['introtext'] = 'イントロダクションテキスト';
 $string['invalidsurveyid'] = '調査IDが正しくありません。';
 $string['invalidtmptid'] = '無効なテンプレートIDです。';
@@ -232,6 +236,15 @@ $string['pluginname'] = '調査';
 $string['preferred'] = '要望';
 $string['preferredclass'] = 'クラスの要望';
 $string['preferredstudent'] = '{$a} の要望';
+$string['privacy:metadata:analysis'] = '調査回答分析のレコードです。';
+$string['privacy:metadata:analysis:notes'] = 'ユーザの回答に保存されたノートです。';
+$string['privacy:metadata:analysis:userid'] = '調査に回答したユーザのIDです。';
+$string['privacy:metadata:answers'] = '調査の一連の回答です。';
+$string['privacy:metadata:answers:answer1'] = '質問の回答を保存するフィールドです。';
+$string['privacy:metadata:answers:answer2'] = '質問の回答を保存する追加フィールドです。';
+$string['privacy:metadata:answers:question'] = '質問です。';
+$string['privacy:metadata:answers:time'] = '回答が投稿された時間です。';
+$string['privacy:metadata:answers:userid'] = '回答を送信したユーザのIDです。';
 $string['question'] = '質問';
 $string['questions'] = '質問';
 $string['questionsnotanswered'] = 'いくつかの多肢選択質問が回答されていません。';

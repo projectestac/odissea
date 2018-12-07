@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_url', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_url', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'URLリポジトリタイプ設定';
 $string['download'] = 'ダウンロード';
 $string['pluginname'] = 'URLダウンローダ';
+$string['privacy:metadata'] = 'URLダウンローダリポジトリプラグインはどのような個人データも保存または転送しません。';
 $string['rename'] = '名称';
 $string['url'] = 'URL';
 $string['url:view'] = 'ファイルピッカ内のURLダウンローダを使用する';

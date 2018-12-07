@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = 'Crea una risorsa pagina';
 $string['displayoptions'] = 'Opzioni di visualizzazione disponibili';
 $string['displayselect'] = 'Visualizzazione';
 $string['displayselectexplain'] = 'Tipo di visualizzazione';
+$string['indicator:cognitivedepth'] = 'Pagina cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse \'pagina\'.';
+$string['indicator:socialbreadth'] = 'Pagina sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'pagina\'.';
 $string['legacyfiles'] = 'Migrazione dei file di corsi precedenti';
 $string['legacyfilesactive'] = 'Attivo';
 $string['legacyfilesdone'] = 'Completato';
@@ -61,4 +65,5 @@ $string['printheading'] = 'Visualizza il nome della pagina';
 $string['printheadingexplain'] = 'Consente di visualizzare il nome della pagina sopra il testo del contenuto.';
 $string['printintro'] = 'Visualizza la descrizione della pagina';
 $string['printintroexplain'] = 'Consente di visualizzare la descrizione della pagina prima del contenuto.';
+$string['privacy:metadata'] = 'Il plugin mod_page non memorizza dati personali.';
 $string['search:activity'] = 'Pagina';

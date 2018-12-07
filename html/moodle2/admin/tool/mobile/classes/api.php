@@ -29,9 +29,11 @@ use core_plugin_manager;
 use context_system;
 use moodle_url;
 use moodle_exception;
+use lang_string;
+use curl;
 
 /**
- * API exposed by tool_mobile, to be used mostly by external functions.
+ * API exposed by tool_mobile, to be used mostly by external functions and the plugin settings.
  *
  * @copyright  2016 Juan Leyva
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -57,15 +59,26 @@ class api {
         global $CFG;
         require_once($CFG->libdir . '/adminlib.php');
 
+        $cachekey = 'mobileplugins';
+        if (!isloggedin()) {
+            $cachekey = 'authmobileplugins';    // Use a different cache for not logged users.
+        }
+
         // Check if we can return this from cache.
         $cache = \cache::make('tool_mobile', 'plugininfo');
-        $pluginsinfo = $cache->get('mobileplugins');
+        $pluginsinfo = $cache->get($cachekey);
         if ($pluginsinfo !== false) {
             return (array)$pluginsinfo;
         }
 
         $pluginsinfo = [];
-        $plugintypes = core_component::get_plugin_types();
+        // For not logged users return only auth plugins.
+        // This is to avoid anyone (not being a registered user) to obtain and download all the site remote add-ons.
+        if (!isloggedin()) {
+            $plugintypes = array('auth' => $CFG->dirroot.'/auth');
+        } else {
+            $plugintypes = core_component::get_plugin_types();
+        }
 
         foreach ($plugintypes as $plugintype => $unused) {
             // We need to include files here.
@@ -99,7 +112,7 @@ class api {
             }
         }
 
-        $cache->set('mobileplugins', $pluginsinfo);
+        $cache->set($cachekey, $pluginsinfo);
 
         return $pluginsinfo;
     }
@@ -121,7 +134,7 @@ class api {
         list($maintenancemessage, $notusedformat) = external_format_text($CFG->maintenance_message, FORMAT_MOODLE, $context->id);
         $settings = array(
             'wwwroot' => $CFG->wwwroot,
-            'httpswwwroot' => $CFG->httpswwwroot,
+            'httpswwwroot' => $CFG->wwwroot,
             'sitename' => external_format_string($SITE->fullname, $context->id, true),
             'guestlogin' => $CFG->guestloginbutton,
             'rememberusername' => $CFG->rememberusername,
@@ -134,6 +147,8 @@ class api {
             'enablemobilewebservice' => $CFG->enablemobilewebservice,
             'maintenanceenabled' => $CFG->maintenance_enabled,
             'maintenancemessage' => $maintenancemessage,
+            'mobilecssurl' => !empty($CFG->mobilecssurl) ? $CFG->mobilecssurl : '',
+            'tool_mobile_disabledfeatures' => get_config('tool_mobile', 'disabledfeatures'),
         );
 
         $typeoflogin = get_config('tool_mobile', 'typeoflogin');
@@ -146,19 +161,23 @@ class api {
         // Check if the user can sign-up to return the launch URL in that case.
         $cansignup = signup_is_enabled();
 
-        if ($typeoflogin == self::LOGIN_VIA_BROWSER or
-                $typeoflogin == self::LOGIN_VIA_EMBEDDED_BROWSER or
-                $cansignup) {
-            $url = new moodle_url("/$CFG->admin/tool/mobile/launch.php");
-            $settings['launchurl'] = $url->out(false);
-        }
+        $url = new moodle_url("/$CFG->admin/tool/mobile/launch.php");
+        $settings['launchurl'] = $url->out(false);
 
         // Check that we are receiving a moodle_url object, themes can override get_logo_url and may return incorrect values.
         if (($logourl = $OUTPUT->get_logo_url()) && $logourl instanceof moodle_url) {
-            $settings['logourl'] = $logourl->out(false);
+            $settings['logourl'] = clean_param($logourl->out(false), PARAM_URL);
         }
         if (($compactlogourl = $OUTPUT->get_compact_logo_url()) && $compactlogourl instanceof moodle_url) {
-            $settings['compactlogourl'] = $compactlogourl->out(false);
+            $settings['compactlogourl'] = clean_param($compactlogourl->out(false), PARAM_URL);
+        }
+
+        // Identity providers.
+        $authsequence = get_enabled_auth_plugins(true);
+        $identityproviders = \auth_plugin_base::get_identity_providers($authsequence);
+        $identityprovidersdata = \auth_plugin_base::prepare_identity_providers_for_output($identityproviders, $OUTPUT);
+        if (!empty($identityprovidersdata)) {
+            $settings['identityproviders'] = $identityprovidersdata;
         }
 
         return $settings;
@@ -193,7 +212,7 @@ class api {
             $settings->frontpageloggedin = $CFG->frontpageloggedin;
             $settings->maxcategorydepth = $CFG->maxcategorydepth;
             $settings->frontpagecourselimit = $CFG->frontpagecourselimit;
-            $settings->numsections = course_get_format($SITE)->get_course()->numsections;
+            $settings->numsections = course_get_format($SITE)->get_last_section_number();
             $settings->newsitems = $SITE->newsitems;
             $settings->commentsperpage = $CFG->commentsperpage;
 
@@ -204,7 +223,9 @@ class api {
         }
 
         if (empty($section) or $section == 'sitepolicies') {
-            $settings->sitepolicy = $CFG->sitepolicy;
+            $manager = new \core_privacy\local\sitepolicy\manager();
+            $settings->sitepolicy = ($sitepolicy = $manager->get_embed_url()) ? $sitepolicy->out(false) : '';
+            $settings->sitepolicyhandler = $CFG->sitepolicyhandler;
             $settings->disableuserimages = $CFG->disableuserimages;
         }
 
@@ -215,6 +236,13 @@ class api {
             if ($settings->mygradesurl instanceof moodle_url) {
                 $settings->mygradesurl = $settings->mygradesurl->out(false);
             }
+        }
+
+        if (empty($section) or $section == 'mobileapp') {
+            $settings->tool_mobile_forcelogout = get_config('tool_mobile', 'forcelogout');
+            $settings->tool_mobile_customlangstrings = get_config('tool_mobile', 'customlangstrings');
+            $settings->tool_mobile_disabledfeatures = get_config('tool_mobile', 'disabledfeatures');
+            $settings->tool_mobile_custommenuitems = get_config('tool_mobile', 'custommenuitems');
         }
 
         return $settings;
@@ -258,5 +286,172 @@ class api {
         $iprestriction = getremoteaddr();
         $validuntil = time() + self::LOGIN_KEY_TTL;
         return create_user_key('tool_mobile', $USER->id, null, $iprestriction, $validuntil);
+    }
+
+    /**
+     * Get a list of the Mobile app features.
+     *
+     * @return array array with the features grouped by theirs ubication in the app.
+     * @since Moodle 3.3
+     */
+    public static function get_features_list() {
+        global $CFG;
+
+        $general = new lang_string('general');
+        $mainmenu = new lang_string('mainmenu', 'tool_mobile');
+        $course = new lang_string('course');
+        $modules = new lang_string('managemodules');
+        $user = new lang_string('user');
+        $files = new lang_string('files');
+        $remoteaddons = new lang_string('remoteaddons', 'tool_mobile');
+
+        $availablemods = core_plugin_manager::instance()->get_plugins_of_type('mod');
+        $coursemodules = array();
+        $appsupportedmodules = array('assign', 'book', 'chat', 'choice', 'data', 'feedback', 'folder', 'forum', 'glossary', 'imscp',
+            'label', 'lesson', 'lti', 'page', 'quiz', 'resource', 'scorm', 'survey', 'url', 'wiki', 'workshop');
+
+        foreach ($availablemods as $mod) {
+            if (in_array($mod->name, $appsupportedmodules)) {
+                $coursemodules['$mmCourseDelegate_mmaMod' . ucfirst($mod->name)] = $mod->displayname;
+            }
+        }
+
+        $remoteaddonslist = array();
+        $mobileplugins = self::get_plugins_supporting_mobile();
+        foreach ($mobileplugins as $plugin) {
+            $displayname = core_plugin_manager::instance()->plugin_name($plugin['component']) . " - " . $plugin['addon'];
+            $remoteaddonslist['remoteAddOn_' . $plugin['component'] . '_' . $plugin['addon']] = $displayname;
+
+        }
+
+        $features = array(
+            '$mmLoginEmailSignup' => new lang_string('startsignup'),
+            "$mainmenu" => array(
+                '$mmSideMenuDelegate_mmCourses' => new lang_string('mycourses'),
+                '$mmSideMenuDelegate_mmaFrontpage' => new lang_string('sitehome'),
+                '$mmSideMenuDelegate_mmaGrades' => new lang_string('grades', 'grades'),
+                '$mmSideMenuDelegate_mmaCompetency' => new lang_string('myplans', 'tool_lp'),
+                '$mmSideMenuDelegate_mmaNotifications' => new lang_string('notifications', 'message'),
+                '$mmSideMenuDelegate_mmaMessages' => new lang_string('messages', 'message'),
+                '$mmSideMenuDelegate_mmaCalendar' => new lang_string('calendar', 'calendar'),
+                '$mmSideMenuDelegate_mmaFiles' => new lang_string('files'),
+                '$mmSideMenuDelegate_website' => new lang_string('webpage'),
+                '$mmSideMenuDelegate_help' => new lang_string('help'),
+            ),
+            "$course" => array(
+                '$mmCoursesDelegate_search' => new lang_string('search'),
+                '$mmCoursesDelegate_mmaCompetency' => new lang_string('competencies', 'competency'),
+                '$mmCoursesDelegate_mmaParticipants' => new lang_string('participants'),
+                '$mmCoursesDelegate_mmaGrades' => new lang_string('grades', 'grades'),
+                '$mmCoursesDelegate_mmaCourseCompletion' => new lang_string('coursecompletion', 'completion'),
+                '$mmCoursesDelegate_mmaNotes' => new lang_string('notes', 'notes'),
+            ),
+            "$user" => array(
+                '$mmUserDelegate_mmaBadges' => new lang_string('badges', 'badges'),
+                '$mmUserDelegate_mmaCompetency:learningPlan' => new lang_string('competencies', 'competency'),
+                '$mmUserDelegate_mmaCourseCompletion:viewCompletion' => new lang_string('coursecompletion', 'completion'),
+                '$mmUserDelegate_mmaGrades:viewGrades' => new lang_string('grades', 'grades'),
+                '$mmUserDelegate_mmaMessages:sendMessage' => new lang_string('sendmessage', 'message'),
+                '$mmUserDelegate_mmaMessages:addContact' => new lang_string('addcontact', 'message'),
+                '$mmUserDelegate_mmaMessages:blockContact' => new lang_string('blockcontact', 'message'),
+                '$mmUserDelegate_mmaNotes:addNote' => new lang_string('addnewnote', 'notes'),
+                '$mmUserDelegate_picture' => new lang_string('userpic'),
+            ),
+            "$files" => array(
+                'files_privatefiles' => new lang_string('privatefiles'),
+                'files_sitefiles' => new lang_string('sitefiles'),
+                'files_upload' => new lang_string('upload'),
+            ),
+            "$modules" => $coursemodules,
+        );
+
+        if (!empty($remoteaddonslist)) {
+            $features["$remoteaddons"] = $remoteaddonslist;
+        }
+
+        return $features;
+    }
+
+    /**
+     * This function check the current site for potential configuration issues that may prevent the mobile app to work.
+     *
+     * @return array list of potential issues
+     * @since  Moodle 3.4
+     */
+    public static function get_potential_config_issues() {
+        global $CFG;
+        require_once($CFG->dirroot . "/lib/filelib.php");
+        require_once($CFG->dirroot . '/message/lib.php');
+
+        $warnings = array();
+
+        $curl = new curl();
+        // Return certificate information and verify the certificate.
+        $curl->setopt(array('CURLOPT_CERTINFO' => 1, 'CURLOPT_SSL_VERIFYPEER' => true));
+        $httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot); // Force https url.
+        // Check https using a page not redirecting or returning exceptions.
+        $curl->head($httpswwwroot . "/$CFG->admin/tool/mobile/mobile.webmanifest.php");
+        $info = $curl->get_info();
+
+        // First of all, check the server certificate (if any).
+        if (empty($info['http_code']) or ($info['http_code'] >= 400)) {
+            $warnings[] = ['nohttpsformobilewarning', 'admin'];
+        } else {
+            // Check the certificate is not self-signed or has an untrusted-root.
+            // This may be weak in some scenarios (when the curl SSL verifier is outdated).
+            if (empty($info['certinfo'])) {
+                $warnings[] = ['selfsignedoruntrustedcertificatewarning', 'tool_mobile'];
+            } else {
+                $timenow = time();
+                $expectedissuer = null;
+                foreach ($info['certinfo'] as $cert) {
+                    // Check if the signature algorithm is weak (Android won't work with SHA-1).
+                    if ($cert['Signature Algorithm'] == 'sha1WithRSAEncryption' || $cert['Signature Algorithm'] == 'sha1WithRSA') {
+                        $warnings[] = ['insecurealgorithmwarning', 'tool_mobile'];
+                    }
+                    // Check certificate start date.
+                    if (strtotime($cert['Start date']) > $timenow) {
+                        $warnings[] = ['invalidcertificatestartdatewarning', 'tool_mobile'];
+                    }
+                    // Check certificate end date.
+                    if (strtotime($cert['Expire date']) < $timenow) {
+                        $warnings[] = ['invalidcertificateexpiredatewarning', 'tool_mobile'];
+                    }
+                    // Check the chain.
+                    if ($expectedissuer !== null) {
+                        if ($expectedissuer !== $cert['Subject'] || $cert['Subject'] === $cert['Issuer']) {
+                            $warnings[] = ['invalidcertificatechainwarning', 'tool_mobile'];
+                        }
+                    }
+                    $expectedissuer = $cert['Issuer'];
+                }
+            }
+        }
+        // Now check typical configuration problems.
+        if ((int) $CFG->userquota === PHP_INT_MAX) {
+            // In old Moodle version was a text so was possible to have numeric values > PHP_INT_MAX.
+            $warnings[] = ['invaliduserquotawarning', 'tool_mobile'];
+        }
+        // Check ADOdb debug enabled.
+        if (get_config('auth_db', 'debugauthdb') || get_config('enrol_database', 'debugdb')) {
+            $warnings[] = ['adodbdebugwarning', 'tool_mobile'];
+        }
+        // Check display errors on.
+        if (!empty($CFG->debugdisplay)) {
+            $warnings[] = ['displayerrorswarning', 'tool_mobile'];
+        }
+        // Check mobile notifications.
+        $processors = get_message_processors();
+        $enabled = false;
+        foreach ($processors as $processor => $status) {
+            if ($processor == 'airnotifier' && $status->enabled) {
+                $enabled = true;
+            }
+        }
+        if (!$enabled) {
+            $warnings[] = ['mobilenotificationsdisabledwarning', 'tool_mobile'];
+        }
+
+        return $warnings;
     }
 }

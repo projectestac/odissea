@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -90,6 +90,7 @@ $string['comments'] = 'コメント';
 $string['commentson'] = 'コメント';
 $string['commentupdated'] = 'コメントが更新されました。';
 $string['completionentries'] = '学生はエントリを作成する必要がある:';
+$string['completionentriesdesc'] = '学生は少なくとも {$a} 件のエントリを作成する必要があります。';
 $string['completionentriesgroup'] = '必須エントリ';
 $string['concept'] = '用語';
 $string['concepts'] = '用語';
@@ -107,6 +108,7 @@ $string['defaultsortorder'] = 'デフォルトの並べ替え順';
 $string['definition'] = '定義';
 $string['definitions'] = '定義';
 $string['deleteentry'] = 'エントリを削除する';
+$string['deleteentrya'] = 'エントリを削除する: {$a}';
 $string['deletenotenrolled'] = '登録されていないユーザのエントリを削除する';
 $string['deletingcomment'] = 'コメントの削除';
 $string['deletingnoneemptycategory'] = 'このカテゴリを削除する削除することにより、含まれるエントリは削除されずにカテゴリなしとマークされます。';
@@ -140,6 +142,7 @@ $string['editalways'] = '常に編集を許可する';
 $string['editalways_help'] = 'ここでは学生が常にエントリを編集できるか、または設定された時間内 (通常30分) 編集することができるか指定することができます。';
 $string['editcategories'] = 'カテゴリを編集する';
 $string['editentry'] = 'エントリを編集する';
+$string['editentrya'] = 'エントリを編集する: {$a}';
 $string['editingcomment'] = 'コメントの編集';
 $string['entbypage'] = '1ページあたりのエントリ数';
 $string['entries'] = 'エントリ';
@@ -213,6 +216,10 @@ $string['importedentries'] = 'インポート済みエントリ';
 $string['importentries'] = 'エントリをインポートする';
 $string['importentriesfromxml'] = 'エントリをXMLファイルからインポートする';
 $string['includegroupbreaks'] = 'グループ区切りを含む';
+$string['indicator:cognitivedepth'] = '用語集認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標は用語集活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = '用語集社会的';
+$string['indicator:socialbreadth_help'] = 'この指標は用語集活動で学生が到達した社会的広がりに基づきます。';
 $string['isglobal'] = 'これはグローバル用語集ですか?';
 $string['isglobal_help'] = '用語集エントリがコース内でのみリンクされるのに対してグローバル用語集はサイト全体からリンクされるエントリを持つことができます。管理者のみ用語集をグローバルに設定することができます。';
 $string['letter'] = 'アルファベット';
@@ -263,9 +270,22 @@ $string['popupformat'] = 'ポップアップフォーマット';
 $string['print'] = '印刷';
 $string['printerfriendly'] = '印刷モード';
 $string['printviewnotallowed'] = '印刷モードは許可されていません。';
+$string['privacy'] = '結果のプライバシーです。';
+$string['privacy:metadata:core_comments'] = '用語集定義のコメントはcore_commentシステムを使用して保存されます。';
+$string['privacy:metadata:core_files'] = '用語集定義にリンクされたファイルはcore_filesシステムを使用して保存されます。';
+$string['privacy:metadata:core_rating'] = '用語集エントリに追加された評価はcore_ratingシステムを使用して保存されます。';
+$string['privacy:metadata:core_tag'] = '用語集定義に追加されたタグはcore_tagシステムを使用して保存されます。';
+$string['privacy:metadata:glossary_entries'] = '所与の用語集活動のユーザのエントリに関する情報です。';
+$string['privacy:metadata:glossary_entries:attachment'] = 'ユーザが追加したエントリの添付です。';
+$string['privacy:metadata:glossary_entries:concept'] = 'ユーザが追加したエントリの用語です。';
+$string['privacy:metadata:glossary_entries:definition'] = 'ユーザが追加したエントリの定義です。';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'ユーザがエントリを提供した用語集活動のIDです。';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'タイムスタンプは用語集エントリがユーザによって修正された日時を示します。';
+$string['privacy:metadata:glossary_entries:userid'] = 'この用語集エントリを追加するユーザのIDです。';
 $string['question'] = '質問';
 $string['rejectedentries'] = '拒否されたエントリ';
 $string['rejectionrpt'] = '拒否レポート';
+$string['removeallglossarytags'] = 'すべての用語集タグを削除する';
 $string['resetglossaries'] = 'エントリ削除対象';
 $string['resetglossariesall'] = 'すべての用語集からエントリを削除する';
 $string['rssarticles'] = '最近の記事のRSS数';
@@ -290,6 +310,8 @@ $string['sortchronogically'] = '日付順の並べ替え';
 $string['special'] = '特別';
 $string['standardview'] = 'アルファベット順';
 $string['studentcanpost'] = '学生のエントリ追加を許可する';
+$string['tagarea_glossary_entries'] = '用語集エントリ';
+$string['tagsdeleted'] = '用語集タグが削除されました。';
 $string['totalentries'] = 'エントリ合計';
 $string['usedynalink'] = 'エントリを自動的にリンクする';
 $string['usedynalink_help'] = '管理者によって用語集オートリンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはコース全体で出現した用語またはフレーズにエントリを自動的にリンクするためのオプションを含みます。';

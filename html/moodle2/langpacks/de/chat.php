@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,6 +72,10 @@ $string['explainmethoddaemon'] = 'Diese Einstellungen sind <strong>nur erforderl
 $string['explainmethodnormal'] = 'Diese Einstellungen sind <strong>nur erforderlich</strong>, wenn Sie die Methode \'Standard-Chat\' gewählt haben.';
 $string['generalconfig'] = 'Allgemeines';
 $string['idle'] = 'Leerlauf';
+$string['indicator:cognitivedepth'] = 'Chat kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Chat-Aktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Chat sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Chat-Aktivität erreicht hat.';
 $string['inputarea'] = 'Eingabefeld';
 $string['invalidid'] = 'Chat-Raum wurde nicht gefunden!';
 $string['list_all_sessions'] = 'Alle Sitzungen auflisten';
@@ -111,6 +115,20 @@ $string['page-mod-chat-x'] = 'Jede Chat-Seite';
 $string['pastchats'] = 'Vorherige Chat-Sitzungen';
 $string['pluginadministration'] = 'Chat-Administration';
 $string['pluginname'] = 'Chat';
+$string['privacy:metadata:chat_messages_current'] = 'Derzeitige Chat-Session. Temporäre Daten, die kurz nach der Session gelöscht werden.';
+$string['privacy:metadata:chat_users'] = 'Zeichnet auf, welche Nutzer gerade in welchem Chat-Raum sind';
+$string['privacy:metadata:chat_users:firstping'] = 'Zeitpunkt des ersten Zugriffs auf den Chatraum';
+$string['privacy:metadata:chat_users:ip'] = 'Nutzer-IP';
+$string['privacy:metadata:chat_users:lang'] = 'Nutzersprache';
+$string['privacy:metadata:chat_users:lastmessageping'] = 'Zeitpunkt des letzten Beitrags im Chatraum';
+$string['privacy:metadata:chat_users:lastping'] = 'Zeitpunkt des letzten Zugriffs auf den Chatraum';
+$string['privacy:metadata:chat_users:userid'] = 'Nutzer-ID';
+$string['privacy:metadata:chat_users:version'] = 'Wie der Nutzer auf den Chatraum zugriff (sockets/basic/ajax/header_js)';
+$string['privacy:metadata:messages'] = 'Datensatz von gesendeten Mitteilungen während einer Chat-Session';
+$string['privacy:metadata:messages:issystem'] = 'Ob die Mitteilung eine systemgenerierte Mitteilung ist';
+$string['privacy:metadata:messages:message'] = 'Mitteilung';
+$string['privacy:metadata:messages:timestamp'] = 'Zeit, zu der die Mitteilung gesendet wurde';
+$string['privacy:metadata:messages:userid'] = 'Nutzer-ID, mit der die Mitteilung verfasst wurde';
 $string['refreshroom'] = 'Aktualisierung Chat';
 $string['refreshuserlist'] = 'Aktualisierung Nutzerliste';
 $string['removemessages'] = 'Alle Mitteilungen entfernen';

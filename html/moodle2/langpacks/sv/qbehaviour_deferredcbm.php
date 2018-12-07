@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,7 @@ $string['certainty2'] = 'Ganska (mer än 67%)';
 $string['certainty3'] = 'Mycket (mer än 80%)';
 $string['certaintyshort-1'] = 'Ingen aning';
 $string['dontknow'] = 'Ingen aning';
-$string['howcertainareyou'] = 'Hur säker är du? {$a}';
+$string['howcertainareyou'] = 'Säker på rätt svar{$a->help}: {$a->choices}';
 $string['noquestions'] = 'Inget svar';
 $string['overconfident'] = 'Alltför självsäker';
 $string['pluginname'] = 'Uppskjuten återkoppling med CBM (Curriculum-Based Measurement)';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,10 @@ $string['filterfilesexplain'] = 'Aukeratu fitxategien edukiko iragazki mota; kon
 $string['filtername'] = 'Automatikoki lotutako baliabideak';
 $string['forcedownload'] = 'Jaistera behartu';
 $string['framesize'] = 'Markoaren altuera';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa fitxategietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Fitxategia motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala fitxategietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Fitxategia motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['legacyfiles'] = 'Ikastaro-fitxategi zaharraren migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
@@ -89,6 +93,7 @@ $string['popupwidth'] = 'Pop-up-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren berezko zabalera.';
 $string['printintro'] = 'Baliabidearen deskribapena erakutsi';
 $string['printintroexplain'] = 'Erakutsi baliabidearen deskribapena edukiaren azpian? Mota batzuek agian ez dute deskribapena erakutsiko, nahiz aukera hori ezarrita egon.';
+$string['privacy:metadata'] = 'mod_resource pluginak ez du datu pertsonalik biltzen.';
 $string['resource:addinstance'] = 'Gehitu beste baliabide bat';
 $string['resourcecontent'] = 'Fitxategiak eta azpikarpetak';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

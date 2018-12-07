@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,6 +76,8 @@ $string['name'] = 'Name';
 $string['needregrademessage'] = 'The marking guide definition was changed after this student had been graded. The student can not see this marking guide until you check the marking guide and update the grade.';
 $string['pluginname'] = 'Marking guide';
 $string['previewmarkingguide'] = 'Preview marking guide';
+$string['privacy:metadata:preference:showmarkerdesc'] = 'Whether to show marker criterion descriptions';
+$string['privacy:metadata:preference:showstudentdesc'] = 'Whether to show student criterion descriptions';
 $string['regrademessage1'] = 'You are about to save changes to a marking guide that has already been used for grading. Please indicate if existing grades need to be reviewed. If you set this then the marking guide will be hidden from students until their item is regraded.';
 $string['regrademessage5'] = 'You are about to save significant changes to a marking guide that has already been used for grading. The gradebook value will be unchanged, but the marking guide will be hidden from students until their item is regraded.';
 $string['regradeoption0'] = 'Do not mark for regrade';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,7 @@ $string['deletegroupsconfirm'] = 'Sei sicuro di eliminare i gruppi elencati?';
 $string['deleteselectedgroup'] = 'Elimina il gruppo selezionato';
 $string['editgroupingsettings'] = 'Modifica impostazioni raggruppamento';
 $string['editgroupsettings'] = 'Modifica impostazioni gruppo';
+$string['editusersgroupsa'] = 'Modifica i gruppi di "{$a}"';
 $string['enrolmentkey'] = 'Chiave di iscrizione';
 $string['enrolmentkeyalreadyinuse'] = 'Questa chiave di iscrizione è già stata usata per un altro gruppo.';
 $string['enrolmentkey_help'] = 'Una chiave d\'iscrizione consente l\'accesso al gruppo alle sole persone che ne sono in possesso. Specificando una chiave di iscrizione al gruppo, questa non solo consentirà l\'accesso al corso, ma aggiungerà la persona tra i membri del gruppo.
@@ -111,10 +112,8 @@ $string['groupmodeforce'] = 'Forza modalità gruppo';
 $string['groupmodeforce_help'] = 'Forzando la modalità gruppo, tale modalità sarà applicata a tutte le attività del corso. Eventuali modalità gruppo diverse non saranno prese in considerazione.';
 $string['groupmode_help'] = 'L\'impostazione ha 3 opzioni:
 
-* Senza gruppi - la modalità gruppi non è attiva, ogni partecipante fa parte della stessa comunità
-
+* Senza gruppi
 * Gruppi separati - ciascun partecipante è membro del gruppo al quale è stato assegnato e non ha facoltà di vedere i lavoro svolto dai membri degli altri gruppi
-
 * Gruppi visibili - ciascun partecipante è membro del gruppo al quale è stato assegnato ma può vedere il lavoro svolto dagli altri gruppi.
 
 La modalità gruppo definita nelle impostazioni del corso è la modalità di default per le attività del corso. La modalità gruppo può essere gestita per ciascuna attività del corso purché l\'attività supporti i gruppi e la modalità gruppo non sia stata forzata a livello di corso.';

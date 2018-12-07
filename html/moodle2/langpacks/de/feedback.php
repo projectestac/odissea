@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,13 +35,14 @@ $string['anonymous'] = 'Anonym';
 $string['anonymous_edit'] = 'Anonym ausfüllen';
 $string['anonymous_entries'] = 'Anonyme Einträge ({$a})';
 $string['anonymous_user'] = 'Anonyme Person';
+$string['answerquestions'] = 'Frage beantworten';
 $string['append_new_items'] = 'Neue Elemente anfügen';
 $string['autonumbering'] = 'Automatische Nummerierung';
 $string['autonumbering_help'] = 'Diese Option aktiviert die automatische Nummerierung aller Fragen.';
 $string['average'] = 'Mittelwert';
 $string['bold'] = 'Fett';
-$string['calendarend'] = 'Feedback {$a} endet';
-$string['calendarstart'] = 'Feedback {$a} beginnt';
+$string['calendarend'] = '{$a} endet';
+$string['calendarstart'] = '{$a} beginnt';
 $string['cancel_moving'] = 'Bewegen abbrechen';
 $string['cannotaccess'] = 'Sie können auf dieses Feedback nur aus einem Kurs zugreifen.';
 $string['cannotmapfeedback'] = 'Datenbank-Problem, eine Zuordnung des Feedbacks zum Kurs ist nicht möglich';
@@ -146,6 +147,10 @@ $string['horizontal'] = 'nebeneinander';
 $string['importfromthisfile'] = 'Von ausgewählter Datei importieren';
 $string['import_questions'] = 'Fragen importieren';
 $string['import_successfully'] = 'Erfolgreich importiert';
+$string['indicator:cognitivedepth'] = 'Feedback kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Feedback-Aktivität erreicht hat.';
+$string['indicator:socialbreadth'] = 'Feedback sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in in einer Feedback-Aktivität erreicht hat.';
 $string['info'] = 'Information';
 $string['infotype'] = 'Information';
 $string['insufficient_responses'] = 'Unzulängliche Antworten';
@@ -214,6 +219,7 @@ $string['of'] = 'von';
 $string['oldvaluespreserved'] = 'Alle alten Fragen und eingegebenen Werte werden aufbewahrt';
 $string['oldvalueswillbedeleted'] = 'Die aktuellen Fragen und alle Antworten werden gelöscht.';
 $string['only_one_captcha_allowed'] = 'Im Feedback ist nur ein Captcha erlaubt';
+$string['openafterclose'] = 'Sie haben ein Startdatum angelegt, das nach dem Enddatum liegt.';
 $string['overview'] = 'Überblick';
 $string['page'] = 'Seite';
 $string['page_after_submit'] = 'Abschlussmitteilung';
@@ -229,6 +235,14 @@ $string['position'] = 'Position';
 $string['preview'] = 'Vorschau';
 $string['preview_help'] = 'In der Vorschau können Sie die Reihenfolge der Fragen ändern.';
 $string['previous_page'] = 'Vorherige Seite';
+$string['privacy:metadata:completed'] = 'Datensatz über beantwortete Feedback-Fragebögen';
+$string['privacy:metadata:completed:anonymousresponse'] = 'Hier wird festgelegt, ob die Abgabe anonymisiert stattfinden soll.';
+$string['privacy:metadata:completed:timemodified'] = 'Zeitpunkt der letzten Bearbeitung der Abgabe.';
+$string['privacy:metadata:completedtmp'] = 'Datensatz über Beantwortungen im Feedback, die noch nicht abgeschlossen sind';
+$string['privacy:metadata:completed:userid'] = 'ID des Nutzers, der die Feedback Aktivität abgeschlossen hat.';
+$string['privacy:metadata:value'] = 'Datensatz mit Antworten auf Fragen';
+$string['privacy:metadata:valuetmp'] = 'Datensatz mit Antworten auf Fragen wenn Feedback noch nicht abgeschlossen';
+$string['privacy:metadata:value:value'] = 'Gewählte Antwort';
 $string['public'] = 'öffentlich';
 $string['question'] = 'Frage';
 $string['questionandsubmission'] = 'Einstellungen für Fragen und Einträge';

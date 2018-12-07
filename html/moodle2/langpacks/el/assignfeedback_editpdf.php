@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,17 +39,20 @@ $string['currentstamp'] = 'Στάμπα';
 $string['deleteannotation'] = 'Διαγραφή σχολιασμού';
 $string['deletecomment'] = 'Διαγραφή σχολίου';
 $string['deletefeedback'] = 'Διαγραφή PDF ανατροφοδότησης';
-$string['downloadfeedback'] = 'Μεταφόρτωση PDF ανατροφοδότησης';
+$string['downloadfeedback'] = 'Λήψη PDF ανατροφοδότησης';
 $string['draftchangessaved'] = 'Οι προσωρινοί σχολιασμοί αποθηκεύτηκαν';
 $string['drag'] = 'Σύρε';
-$string['editpdf'] = 'Σχολίασε το PDF';
-$string['editpdf_help'] = 'Σχολίασε τις υποβολές των φοιτητών κατευθείαν στον περιηγητή ίντερνετ και παρήγαγε ένα επεξεργασμένο PDF το οποίο μπορεί να κατέβει στον τοπικό υπολογιστή.';
-$string['enabled'] = 'Σχολίασε το PDF';
+$string['editpdf'] = 'Επισημειώσεις πάνω στο PDF';
+$string['editpdf_help'] = 'Προσθήκη επισημειώσεων πάνω από τις υποβολές των μαθητών κατευθείαν στον περιηγητή και παραγωγή ενός επεξεργασμένου PDF προς λήψη.';
+$string['enabled'] = 'Επισημειώσεις πάνω στο PDF';
+$string['enabled_help'] = 'Αν ενεργοποιηθεί, ο δάσκαλος μπορεί να δημιουργήσει PDF αρχεία με επισημειώσεις όταν βαθμολογεί τις εργασίες. Αυτό επιτρέπει στον δάσκαλο να προσθέτει σχολιασμό, σχήματα και σφραγίδες ακριβώς πάνω στην εργασία των μαθητών. Οι επισημειώσεις γίνονται στον περιηγητή και δεν απαιτείται επιπλέον λογισμικό.';
+$string['expcolcomments'] = 'Ανάπτυξη / σύμπυξη όλων των σχολίων';
 $string['filter'] = 'Φίλτραρε τα σχόλια....';
 $string['generatefeedback'] = 'Δημιουργία PDF ανατροφοδότησης';
 $string['generatingpdf'] = 'Δημιουργία του PDF';
 $string['gotopage'] = 'Πήγαινε στην σελίδα';
 $string['green'] = 'Πράσινο';
+$string['jsrequired'] = 'Απαιτείται ενεργοποίηση της JavaScript για την επισημείωση των PDF. Παρακαλούμε ενεργοποιήστε την JavaScript στον περιηγητή σας για να χρησιμοποιήσετε αυτό το χαρακτηριστικό/δυνατότητα.';
 $string['launcheditor'] = 'Έναρξη επεξεργαστή PDF...';
 $string['line'] = 'Γραμμή';
 $string['loadingeditor'] = 'Ο επεξεργαστής PDF φορτώνεται';
@@ -57,8 +60,9 @@ $string['navigatenext'] = 'Επόμενη σελίδα';
 $string['navigateprevious'] = 'Προηγούμενη σελίδα';
 $string['pagenumber'] = 'Σελίδα {$a}';
 $string['pagexofy'] = 'Σελίδα {$a->page} από {$a->total}';
+$string['pathtogspathdesc'] = 'Παρακαλούμε προσέξτε ότι η επισημείωση των PDF απαιτεί τη διαδρομή μέχρι το ghostscript ορισμένη στο {$a}.';
 $string['pen'] = 'Στυλός';
-$string['pluginname'] = 'Σχολιασμός PDF';
+$string['pluginname'] = 'Επισημειώσεις πάνω στο PDF';
 $string['preparesubmissionsforannotation'] = 'Προετοιμασία υποβολής για σχολιασμό';
 $string['rectangle'] = 'Παραλληλόγραμμο';
 $string['red'] = 'Κόκκινο';
@@ -68,8 +72,9 @@ $string['select'] = 'Επέλεξε';
 $string['stamp'] = 'Στάμπα';
 $string['stamppicker'] = 'Επιλογέας στάμπας';
 $string['stamps'] = 'Στάμπες';
+$string['stampsdesc'] = 'Οι σφραγίδες πρέπει να είναι αρχεία εικόνας (προτεινόμενο μέγεθος: 40x40). Αυτές οι εικόνες μπορούν να χρησιμοποιηθούν';
 $string['test_notestfile'] = 'Το δοκιμαστικό PDF λείπει';
 $string['tool'] = 'Εργαλείο';
-$string['viewfeedbackonline'] = 'Προβολή σχολιασμένου PDF...';
+$string['viewfeedbackonline'] = 'Προβολή επισημειωμένου PDF...';
 $string['white'] = 'Άσπρο';
 $string['yellow'] = 'Κίτρινο';

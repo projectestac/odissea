@@ -1172,13 +1172,19 @@ function get_my_remotehosts() {
 function get_scales_menu($courseid=0) {
     global $DB;
 
-    $sql = "SELECT id, name
+    $sql = "SELECT id, name, courseid
               FROM {scale}
              WHERE courseid = 0 or courseid = ?
           ORDER BY courseid ASC, name ASC";
     $params = array($courseid);
-
-    return $scales = $DB->get_records_sql_menu($sql, $params);
+    $scales = array();
+    $results = $DB->get_records_sql($sql, $params);
+    foreach ($results as $index => $record) {
+        $context = empty($record->courseid) ? context_system::instance() : context_course::instance($record->courseid);
+        $scales[$index] = format_string($record->name, false, ["context" => $context]);
+    }
+    // Format: [id => 'scale name'].
+    return $scales;
 }
 
 /**
@@ -1573,13 +1579,28 @@ function add_to_config_log($name, $oldvalue, $value, $plugin) {
     global $USER, $DB;
 
     $log = new stdClass();
-    $log->userid       = during_initial_install() ? 0 :$USER->id; // 0 as user id during install
+    // Use 0 as user id during install.
+    $log->userid       = during_initial_install() ? 0 : $USER->id;
     $log->timemodified = time();
     $log->name         = $name;
     $log->oldvalue  = $oldvalue;
     $log->value     = $value;
     $log->plugin    = $plugin;
-    $DB->insert_record('config_log', $log);
+
+    $id = $DB->insert_record('config_log', $log);
+
+    $event = core\event\config_log_created::create(array(
+            'objectid' => $id,
+            'userid' => $log->userid,
+            'context' => \context_system::instance(),
+            'other' => array(
+                'name' => $log->name,
+                'oldvalue' => $log->oldvalue,
+                'value' => $log->value,
+                'plugin' => $log->plugin
+            )
+        ));
+    $event->trigger();
 }
 
 /**

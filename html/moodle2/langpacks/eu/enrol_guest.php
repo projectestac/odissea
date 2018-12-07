@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'Sartzeko pasahitza ez da zuzena, mesedez saiatu be
 $string['passwordinvalidhint'] = 'Sartzeko pasahitza ez da zuzena, mesedez saiatu berriz <br /> (Pista bat - honela hasten da \'{$a}\')';
 $string['pluginname'] = 'Bisitarien sarbidea';
 $string['pluginname_desc'] = 'Bisitarien sarbide pluginak ikastaroetara aldi baterako sarbidea ematen du, ez ditu erabiltzaileak matrikulatuko.';
+$string['privacy:metadata'] = 'Bisitarien sarbidea matrikulazio-pluginak ez du datu pertsonalik biltzen.';
 $string['requirepassword'] = 'Eskatu gonbidatuei sarbide-pasahitza';
 $string['requirepassword_desc'] = 'Ikastaro berrietan sarbide-pasahitza eskatu eta oraingo ikastaroetatik pasahitza kentzea debekatu.';
 $string['showhint'] = 'Erakutsi argibidea';

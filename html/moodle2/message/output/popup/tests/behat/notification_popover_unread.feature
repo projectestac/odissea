@@ -1,4 +1,4 @@
-@message @message_popup @javascript
+@core_message @message_popup @javascript
 Feature: Notification popover unread notifications
   In order to be kept informed
   As a user
@@ -25,8 +25,7 @@ Feature: Notification popover unread notifications
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
     And I log in as "teacher1"
-    And I follow "Course 1"
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a "Assignment" to section "1" and I fill the form with:
       | Assignment name | Test assignment name |
       | Description | Submit your online text |
@@ -34,7 +33,7 @@ Feature: Notification popover unread notifications
       | assignsubmission_file_enabled | 0 |
     And I log out
     And I log in as "student1"
-    And I follow "Course 1"
+    And I am on "Course 1" course homepage
     And I follow "Test assignment name"
     And I press "Add submission"
     # This should generate a notification.

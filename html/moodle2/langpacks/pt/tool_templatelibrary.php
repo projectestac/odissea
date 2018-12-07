@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_templatelibrary', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_templatelibrary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['example'] = 'Exemplo';
 $string['noresults'] = 'Sem resultados';
 $string['notemplateselected'] = 'Nenhum modelo selecionado';
 $string['pluginname'] = 'Biblioteca de modelos';
+$string['privacy:metadata'] = 'O módulo Biblioteca de modelos não armazena dados pessoais.';
 $string['search'] = 'Pesquisa';
 $string['searchtemplates'] = 'Pesquisa de modelos';
 $string['templatehasnoexample'] = 'Este modelo não possui contexto de exemplo, portanto, ele não pode ser processado aqui. Para adicionar um contexto de exemplo para este modelo, insira em um comentário Mustache "Exemplo de contexto (json):", seguido da amostra contexto do json codificado para o modelo.';

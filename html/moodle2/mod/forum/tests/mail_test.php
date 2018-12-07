@@ -932,8 +932,8 @@ class mod_forum_mail_testcase extends advanced_testcase {
                     'contents' => array(
                         '~{$a',
                         '~&(amp|lt|gt|quot|\#039);(?!course)',
-                        'Attachment example.txt:\n' .
-                            'http://www.example.com/moodle/pluginfile.php/\d*/mod_forum/attachment/\d*/example.txt\n',
+                        'Attachment example.txt:' . PHP_EOL .
+                            'https://www.example.com/moodle/pluginfile.php/\d*/mod_forum/attachment/\d*/example.txt' . PHP_EOL,
                         'Hello Moodle', 'Moodle Forum', 'Welcome.*Moodle', 'Love Moodle', '1\d1'
                     ),
                 ),
@@ -991,12 +991,12 @@ class mod_forum_mail_testcase extends advanced_testcase {
         $newcase['expectations'][0]['contents'] = array(
             '~{$a',
             '~&(amp|lt|gt|quot|\#039);(?!course)',
-            'Attachment example.txt:\n' .
-            'http://www.example.com/moodle/pluginfile.php/\d*/mod_forum/attachment/\d*/example.txt\n',
+            'Attachment example.txt:' . PHP_EOL .
+            'https://www.example.com/moodle/pluginfile.php/\d*/mod_forum/attachment/\d*/example.txt' .  PHP_EOL ,
             'Text and image', 'Moodle Forum',
-            'Welcome to Moodle, *\n.*'
-                .'http://www.example.com/moodle/pluginfile.php/\d+/mod_forum/post/\d+/'
-                .'Screen%20Shot%202016-03-22%20at%205\.54\.36%20AM%20%281%29\.png *\n.*!',
+            'Welcome to Moodle, *' . PHP_EOL . '.*'
+                .'https://www.example.com/moodle/pluginfile.php/\d+/mod_forum/post/\d+/'
+                .'Screen%20Shot%202016-03-22%20at%205\.54\.36%20AM%20%281%29\.png *' . PHP_EOL . '.*!',
             'Love Moodle', '1\d1');
         $textcases['Text mail with text+image message i.e. @@PLUGINFILE@@ token handling'] = array('data' => $newcase);
 
@@ -1041,7 +1041,7 @@ class mod_forum_mail_testcase extends advanced_testcase {
             '<div class="attachments">( *\n *)?<a href',
             '<div class="subject">\n.*HTML text and image', '>Moodle Forum',
             '<p>Welcome to Moodle, '
-                .'<img src="http://www.example.com/moodle/pluginfile.php/\d+/mod_forum/post/\d+/'
+                .'<img src="https://www.example.com/moodle/pluginfile.php/\d+/mod_forum/post/\d+/'
                 .'Screen%20Shot%202016-03-22%20at%205\.54\.36%20AM%20%281%29\.png"'
                 .' alt="" width="200" height="393" class="img-responsive" />!</p>',
             '>Love Moodle', '>1\d1');

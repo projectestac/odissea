@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_tags', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_blog_tags', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_blog_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = 'Ajouter un bloc tags de blog';
 $string['pluginname'] = 'Tags de blog';
+$string['privacy:metadata'] = 'Le bloc Tags de blog affiche seulement des données enregistrées à d\'autres endroits.';

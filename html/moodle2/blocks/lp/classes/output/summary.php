@@ -29,12 +29,13 @@ use core_competency\api;
 use core_competency\external\competency_exporter;
 use core_competency\external\plan_exporter;
 use core_competency\external\user_competency_exporter;
-use core_competency\external\user_summary_exporter;
+use core_user\external\user_summary_exporter;
 use core_competency\plan;
 use core_competency\url;
 use renderable;
 use renderer_base;
 use templatable;
+use required_capability_exception;
 
 /**
  * Summary renderable class.
@@ -68,7 +69,11 @@ class summary implements renderable, templatable {
         $this->user = $user;
 
         // Get the plans.
-        $this->plans = api::list_user_plans($this->user->id);
+        try {
+            $this->plans = api::list_user_plans($this->user->id);
+        } catch (required_capability_exception $e) {
+            $this->plans = [];
+        }
 
         // Get the competencies to review.
         $this->compstoreview = api::list_user_competencies_to_review(0, 3);
@@ -83,7 +88,7 @@ class summary implements renderable, templatable {
             if (count($plans) >= 3) {
                 break;
             }
-            if ($plan->get_status() == plan::STATUS_ACTIVE) {
+            if ($plan->get('status') == plan::STATUS_ACTIVE) {
                 $plans[] = $plan;
             }
         }

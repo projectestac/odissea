@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = '增加 {$a} 个选项';
 $string['advancedelement'] = '高级选项';
 $string['close'] = '关闭';
+$string['custom'] = '自定义';
 $string['day'] = '日期';
 $string['display'] = '显示';
 $string['err_alphanumeric'] = '您必须在这里键入一个字母或数字。';
@@ -41,6 +42,8 @@ $string['err_nopunctuation'] = '您必须键入一个非标点的字符。';
 $string['err_numeric'] = '您必须键入一个数字。';
 $string['err_rangelength'] = '您必须键入 {$a->format[0]} 和 {$a->format[1]} 之间的字符。';
 $string['err_required'] = '您必须提供一个有效的值。';
+$string['err_wrongfileextension'] = '有些文件 ({$a->wrongfiles})无法上传。只有文件类型{$a->whitelist}才被允许。';
+$string['filesofthesetypes'] = '可接受的文件类型：';
 $string['general'] = '概要';
 $string['hideadvanced'] = '隐藏高级选项';
 $string['hour'] = '小时';

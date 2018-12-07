@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_link', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_link
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,4 +30,5 @@ $string['createlink'] = 'Crea collegamento';
 $string['enterurl'] = 'Inserisci un URL';
 $string['openinnewwindow'] = 'Apri in una nuova finestra';
 $string['pluginname'] = 'Collegamento';
+$string['privacy:metadata'] = 'Il plugin  atto_link non memorizza dati personali.';
 $string['unlink'] = 'Elimina collegamento';

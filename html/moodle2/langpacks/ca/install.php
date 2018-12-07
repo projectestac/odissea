@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'install', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -156,7 +156,6 @@ $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Ara cal configurar els paràmetres de la base de dades on s\'emmagatzemarà la majoria de dades de Moodle.
 La base de dades i un nom d\'usuari i contrasenya amb accés s\'han de crear abans. El prefix de les taules és obligatori.';
 $string['nativesqlsrvnodriver'] = 'Els controladors Microsoft del SQL Server per a PHP no estan instal·lats o no s\'han configurat correctament.';
-$string['nativesqlsrvnonwindows'] = 'Els controladors Microsoft del SQL Server per a PHP només estan disponibles per a sistemes operatius Windows.';
 $string['ociextensionisnotpresentinphp'] = 'El PHP no s\'ha configurat correctament amb l\'extensió OCI8 de manera que pugui comunicar-se amb Oracle. Reviseu el fitxer php.ini o recompileu el PHP.';
 $string['pass'] = 'Correcte';
 $string['paths'] = 'Camins';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   repository
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -114,7 +114,7 @@ $string['enternewname'] = 'Geef de nieuwe bestandsnaam';
 $string['error'] = 'Onbekende fout!';
 $string['errordoublereference'] = 'Kan bestand niet overschrijven met een snelkoppeling/alias omdat er al een snelkoppeling naar dit bestand bestaat.';
 $string['errornotyourfile'] = 'Je kan geen bestand kiezen dat niet is toegevoegd door jou';
-$string['errorpostmaxsize'] = 'Het bestand dat je probeerde te uploaden is te groot om door deze server te laten verwerken.';
+$string['errorpostmaxsize'] = 'Het bestand dat je probeerde te uploaden is groter dan deze server kan verwerken.';
 $string['erroruniquename'] = 'De naam van de opslagruimte moet uniek zijn';
 $string['errorwhilecommunicatingwith'] = 'Fout bij het communiceren met de opslagruimte \'{$a}\'.';
 $string['errorwhiledownload'] = 'Er is een fout opgetreden bij het downloaden van bestand: {$a}';
@@ -156,8 +156,10 @@ $string['linkexternal'] = 'Link extern';
 $string['listview'] = 'Bekijk als lijst';
 $string['loading'] = 'Laden...';
 $string['login'] = 'Login met je account';
+$string['logintoaccount'] = 'Inloggen voor jouw {$a} account';
 $string['logout'] = 'Uitloggen';
 $string['lostsource'] = 'Fout; Bron ontbreekt. {$a}';
+$string['makefilecontrolledlink'] = 'Maak een link met toegangscontrole naar het bestand';
 $string['makefileinternal'] = 'Maak een kopie van het bestand';
 $string['makefilelink'] = 'Link rechtstreeks naar het bestand';
 $string['makefilereference'] = 'Maak een alias/koppeling naar het bestand';
@@ -234,6 +236,7 @@ $string['typenotvisible'] = 'Type niet zichtbaar';
 $string['undisclosedreference'] = '(Niet openbaar te maken)';
 $string['undisclosedsource'] = '(Niet openbaar te maken)';
 $string['unknownoriginal'] = 'Onbekend';
+$string['unknownsource'] = 'Onbekende bron';
 $string['unzipped'] = 'Uitpakken gelukt';
 $string['upload'] = 'Upload dit bestand';
 $string['uploading'] = 'Uploaden...';

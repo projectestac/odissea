@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'book', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,22 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Προσθήκη νέου κεφαλαίου';
 $string['book:addinstance'] = 'Προσθήκη νέου βιβλίου';
+$string['book:edit'] = 'Επεξεργασία κεφαλαίων βιβλίου';
+$string['book:read'] = 'Εμφάνιση βιβλίου';
+$string['book:viewhiddenchapters'] = 'Εμφάνιση κρυφών κεφαλαίων βιβλίου';
+$string['errorchapter'] = 'Σφάλμα ανάγνωσης κεφαλαίου βιβλίου';
+$string['modulename'] = 'Βιβλίο';
+$string['modulenameplural'] = 'Βιβλίο';
+$string['navexit'] = 'Έξοδος από το βιβλίο';
+$string['navoptions_desc'] = 'Ρυθμίσεις για την εμφάνιση πλοήγησης στις σελίδες του βιβλίου';
+$string['nocontent'] = 'Δεν έχει ακόμη προστεθεί περιεχόμενο σε αυτό το βιβλίο.';
 $string['numbering0'] = 'Κανένα';
+$string['pluginadministration'] = 'Διαχείριση βιβλίου';
+$string['pluginname'] = 'Βιβλίο';
+$string['removeallbooktags'] = 'Διαγραφή όλων των εττικετών βιβλίου';
+$string['search:activity'] = 'Βιβλίο - πληροφορίες πόρου';
+$string['search:chapter'] = 'Βιβλίο - κεφάλαια';
+$string['subplugintype_booktool'] = 'Εργαλείο βιβλίου';
+$string['subplugintype_booktool_plural'] = 'Εργαλεία βιβλίου';
+$string['tagarea_book_chapters'] = 'Κεφάλαια βιβλίου';
+$string['tagsdeleted'] = 'Οι εττικέτες βιβλίου διαγράφηκαν';

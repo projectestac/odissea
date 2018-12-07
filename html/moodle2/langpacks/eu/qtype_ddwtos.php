@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddwtos
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,14 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = '{no} zuriuneak  gehiago aukeretarako';
+$string['addmorechoiceblanks'] = 'Zuriuneak {no} aukera gehiagotarako';
 $string['answer'] = 'Erantzuna';
 $string['blank'] = 'hutsik';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
-$string['infinite'] = 'Mugarik gabe';
+$string['infinite'] = 'Mugarik gabea';
 $string['pleaseputananswerineachbox'] = 'Mesedez, eman erantzuna lauki bakoitzean';
 $string['pluginname'] = 'Hartu eta eraman testura';
 $string['pluginnameadding'] = 'Hartu eta eraman testura motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman testura motako galdera editatzen';
 $string['pluginname_help'] = 'Hartu eta eraman testura motako galderek ikasleei hitz edo esaldiak hartu eta galderaren testuan zehaztutako hutsuneetara eramatea eskatzen diete. [[1]], [[2]], [[3]], ... dira galderaren testuan hutsunean kokatzeko erabiltzen diren leku-markak, hurrenez hurren 1, 2, 3... erantzunekin bat datozenak. Erantzun posibleak taldekatu daitezke talde bakoitzeko erantzunak horien galderaren testuko hutsuneen kolore bera izan dezaten. \'Mugarik gabe\' gisa markatutako erantzunak hutsune baten baino gehiagotan erabili daitezke.';
 $string['pluginnamesummary'] = 'Galderaren testuko hutsuneak hartu eta eramanda betetzen dira.';
+$string['privacy:metadata'] = 'Hartu eta eraman testura galdera-mota pluginak ez du datu pertsonalik biltzen.';

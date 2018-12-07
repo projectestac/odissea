@@ -87,7 +87,8 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
         $oldid = $data->id;
         $data->course = $this->get_courseid();
 
-        $data->timemodified = $this->apply_date_offset($data->timemodified);
+        // Any changes to the list of dates that needs to be rolled should be same during course restore and course reset.
+        // See MDL-9367.
         $data->allowsubmissionsfromdate = $this->apply_date_offset($data->allowsubmissionsfromdate);
         $data->duedate = $this->apply_date_offset($data->duedate);
 
@@ -113,6 +114,11 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
 
         if (!isset($data->cutoffdate)) {
             $data->cutoffdate = 0;
+        }
+        if (!isset($data->gradingduedate)) {
+            $data->gradingduedate = 0;
+        } else {
+            $data->gradingduedate = $this->apply_date_offset($data->gradingduedate);
         }
         if (!isset($data->markingworkflow)) {
             $data->markingworkflow = 0;
@@ -156,8 +162,6 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
 
         $data->assignment = $this->get_new_parentid('assign');
 
-        $data->timemodified = $this->apply_date_offset($data->timemodified);
-        $data->timecreated = $this->apply_date_offset($data->timecreated);
         if ($data->userid > 0) {
             $data->userid = $this->get_mappingid('user', $data->userid);
         }
@@ -217,8 +221,6 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
 
         $data->assignment = $this->get_new_parentid('assign');
 
-        $data->timemodified = $this->apply_date_offset($data->timemodified);
-        $data->timecreated = $this->apply_date_offset($data->timecreated);
         $data->userid = $this->get_mappingid('user', $data->userid);
         $data->grader = $this->get_mappingid('user', $data->grader);
 
@@ -241,8 +243,8 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
             $DB->insert_record('assign_user_flags', $flags);
         }
         // Fix null grades that were rescaled.
-        if ($data->grade < 0 && $data->grade != -1) {
-            $data->grade = -1;
+        if ($data->grade < 0 && $data->grade != ASSIGN_GRADE_NOT_SET) {
+            $data->grade = ASSIGN_GRADE_NOT_SET;
         }
         $newitemid = $DB->insert_record('assign_grades', $data);
 
@@ -382,6 +384,12 @@ class restore_assign_activity_structure_step extends restore_activity_structure_
 
         // Skip user overrides if we are not restoring userinfo.
         if (!$userinfo && !is_null($data->userid)) {
+            return;
+        }
+
+        // Skip group overrides if we are not restoring groupinfo.
+        $groupinfo = $this->get_setting_value('groups');
+        if (!$groupinfo && !is_null($data->groupid)) {
             return;
         }
 

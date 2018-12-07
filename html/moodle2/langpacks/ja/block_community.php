@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_community', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -96,6 +96,12 @@ $string['orderbypublisher'] = '公開者順';
 $string['orderbyratingaverage'] = '評価順';
 $string['outcomes'] = 'アウトカム: {$a}';
 $string['pluginname'] = 'コミュニティファインダ';
+$string['privacy:metadata:block_community'] = 'コミュニティブロックはユーザが登録できる共有コミュニティコースへのリンクを保存します。';
+$string['privacy:metadata:block_community:coursedescription'] = 'リンク済みコミュニティコースの説明です。';
+$string['privacy:metadata:block_community:coursename'] = 'リンク済みコミュニティコース名です。';
+$string['privacy:metadata:block_community:courseurl'] = 'リンク済みコミュニティコースのコースURLです。';
+$string['privacy:metadata:block_community:imageurl'] = 'リンク済みコミュニティコースのイメージURLです。';
+$string['privacy:metadata:block_community:userid'] = 'リンク済みコミュニティコースを作成したユーザのIDです。';
 $string['rateandcomment'] = '評価およびコメント';
 $string['rating'] = '評価';
 $string['removecommunitycourse'] = 'コミュニティコースを削除する';

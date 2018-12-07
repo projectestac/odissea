@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Neuen Hinweis für {$a} Personen hinzufügen';
+$string['addbulknotedone'] = 'Neuen Hinweis für {$a} Personen hinzugefügt';
+$string['addbulknotedonesingle'] = 'Neuen Hinweis für 1 Person hinzugefügt';
+$string['addbulknotesingle'] = 'Neuen Hinweis für 1 Person hinzufügen';
 $string['addnewnote'] = 'Neue Anmerkung hinzufügen';
 $string['addnewnoteselect'] = 'Wählen Sie Nutzer/innen aus, um Anmerkungen über sie zu schreiben.';
 $string['bynameondate'] = 'von {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Fehler beim Löschen aufgetreten';
 $string['configenablenotes'] = 'Speichern von Anmerkungen zu einzelnen Nutzer/innen erlauben';
 $string['content'] = 'Inhalt';
 $string['course'] = 'Kurs';
@@ -58,13 +61,19 @@ $string['page-notes-index'] = 'Jede Notizenhauptseite';
 $string['page-notes-x'] = 'Jede Notizenseite';
 $string['personal'] = 'Persönlich';
 $string['personalnotes'] = 'Persönliche Anmerkungen';
+$string['privacy:metadata:core_notes'] = 'Die Notizen-Komponente speichert Notizen zum Nutzer im Core-System';
+$string['privacy:metadata:core_notes:content'] = 'Inhalt der Notiz';
+$string['privacy:metadata:core_notes:courseid'] = 'ID des Kurses, dermit der Notiz verbunden ist.';
+$string['privacy:metadata:core_notes:created'] = 'Erstelldatum/-zeit der Notiz';
+$string['privacy:metadata:core_notes:lastmodified'] = 'Letztes Änderungsdatum/-zeit der Notiz';
+$string['privacy:metadata:core_notes:publishstate'] = 'Sichtbarkeitsstatus der Notiz';
+$string['privacy:metadata:core_notes:userid'] = 'ID des Nutzers  in Verbindung mit Notiz';
 $string['publishstate'] = 'Kontext';
-$string['publishstate_help'] = 'Der Kontext für eine Anmerkung bestimmt, wer die Anmerkung sehen darf.
+$string['publishstate_help'] = 'Der Kontext für eine Anmerkung bestimmt, wer die Anmerkung sehen darf. Nutzer sollten wissen, dass alle Anmerkungen, einschließlich persönlicher unter die rechtlichen Rahmenbedingungen vor Ort fallen.
 
  * Persönlich - die Anmerkung ist nur für Sie alleine sichtbar
  * Kurs - die Anmerkung ist für die Trainer/innen dieses Kurses sichtbar
- * Website - die Anmerkung ist für alle Trainer/innen aller Kursen sichtbar
- ';
+ * Website - die Anmerkung ist für alle Trainer/innen aller Kursen sichtbar';
 $string['selectnotestate'] = 'Anmerkungsstatus auswählen';
 $string['site'] = 'Website';
 $string['sitenotes'] = 'Anmerkungen für alle Trainer/innen sichtbar (kursübergreifend)';

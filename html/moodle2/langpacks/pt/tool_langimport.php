@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Não é possível fazer a ligação ao servidor de descargas e por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Faça a descarga do(s) ficheiro(s) ZIP apropriado(s) desde <a href="{$a->src}">{$a->src}</a> e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
 $string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
 $string['langimport'] = 'Importação de pacote linguístico';
@@ -44,8 +45,8 @@ $string['missinglangparent'] = 'Falta o idioma ascendente <em>{$a->parent}</em> 
 $string['noenglishuninstall'] = 'O pacote linguístico Inglês não pode ser instalado.';
 $string['nolangupdateneeded'] = 'Todos os pacotes linguísticos instalados estão atualizados, não é necessária qualquer atualização';
 $string['pluginname'] = 'Pacotes linguísticos';
+$string['privacy:metadata'] = 'O módulo Pacotes linguísticos não armazena dados pessoais.';
 $string['purgestringcaches'] = 'Limpar caches das strings';
-$string['remotelangnotavailable'] = 'O Moodle não consegue ligar a download.moodle.org e, por isso, não é possível fazer a instalação automática do pacote linguístico. Descarregue o ficheiro ZIP a partir de <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> copie-o para a diretoria {$a} e descompacte-o manualmente.';
 $string['selectlangs'] = 'Selecione os pacotes linguísticos a desinstalar';
 $string['uninstall'] = 'Desinstalar o(s) pacote(s) linguístico(s) selecionado(s)';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o(s) pacote(s) linguístico(s): {$a}. Tem a certeza?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -208,6 +208,10 @@ $string['guestsnotallowed'] = 'Soilik matrikulatutako erabiltzaileak bidali ditz
 $string['howlong'] = 'Zenbat denbora behar izan duzu inkesta hau betetzeko?';
 $string['howlongoptions'] = '<1 min, 1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,>10 min';
 $string['ifoundthat'] = 'Hau aurkitu dut';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa hausnarketetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Hausnarketa motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala hausnarketetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Hausnarketa motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['introtext'] = 'Sarrera-testua';
 $string['invalidsurveyid'] = 'HAusnarketaren IDa ez zen zuzena';
 $string['invalidtmptid'] = 'Txantiloiaren IDa ez da baliozkoa';
@@ -231,6 +235,15 @@ $string['pluginname'] = 'Hausnarketa';
 $string['preferred'] = 'Lehenetsia';
 $string['preferredclass'] = 'Lehenetsitako klasea';
 $string['preferredstudent'] = '{$a} lehenetsia';
+$string['privacy:metadata:analysis'] = 'Banakako erantzunen analisiaren erregistro bat';
+$string['privacy:metadata:analysis:notes'] = 'Banakako erantzunekin batera gordetako oharrak.';
+$string['privacy:metadata:analysis:userid'] = 'Erantzuna zein erabiltzailerena den';
+$string['privacy:metadata:answers'] = 'Hausnarketei emandako erantzunen bilduma bat.';
+$string['privacy:metadata:answers:answer1'] = 'Galderaren erantzuna gordetzeko eremua.';
+$string['privacy:metadata:answers:answer2'] = 'Galderaren erantzuna gordetzeko eremua gehigarria.';
+$string['privacy:metadata:answers:question'] = 'Galdera';
+$string['privacy:metadata:answers:time'] = 'Erantzuna eman zeneko unea.';
+$string['privacy:metadata:answers:userid'] = 'Erantzuna eman zuen erabiltzailea.';
 $string['question'] = 'Galdera';
 $string['questions'] = 'Galderak';
 $string['questionsnotanswered'] = 'Aukera anitzeko galderaren batek ez du erantzunik.';

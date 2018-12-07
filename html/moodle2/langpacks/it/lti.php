@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,7 +46,6 @@ $string['addnewapp'] = 'Abilita applicazioni esterna';
 $string['addserver'] = 'Aggiungi nuovo server affidabile';
 $string['addtype'] = 'Aggiungi tool preconfigurato';
 $string['allow'] = 'Consenti';
-$string['allowinstructorcustom'] = 'Consenti ai docenti di aggiungere parametri personalizzati';
 $string['allowsetting'] = 'Consenti al tool di memorizzare 8K di impostazioni in Moodle';
 $string['always'] = 'Sempre';
 $string['autoaddtype'] = 'Aggiungi tool';
@@ -90,7 +89,7 @@ $string['courselink'] = 'Vai al corso';
 $string['coursemisconf'] = 'Il corso è mal configurato';
 $string['course_tool_types'] = 'Tool del corso';
 $string['createdon'] = 'Data di creazione';
-$string['curllibrarymissing'] = 'Per usare LTI deve essere installata la libreria PHP Curl';
+$string['curllibrarymissing'] = 'Per usare il Tool esterno deve essere installata la libreria PHP Curl';
 $string['custom'] = 'Parametri personalizzati';
 $string['custom_config'] = 'Utilizzo del tool personalizzato di configurazione';
 $string['custom_help'] = 'I parametri personalizzati sono impostazioni usate dal provider del tool. Ad esempio, è possibile usare un parametro personalizzato per visualizzare una specifica risorsa dal provider. I parametri devono essere inseriti uno per linea con il formato "nome=valore", ad esempio "capitolo=3".
@@ -183,6 +182,10 @@ $string['grading'] = 'Instradamento valutazioni';
 $string['icon_url'] = 'URL dell\'icona';
 $string['icon_url_help'] = 'L\'URL dell\'icona consente di visualizzare nella home page del corso l\'icona specifica del tool al posto dell\'icona LTI default';
 $string['id'] = 'ID';
+$string['indicator:cognitivedepth'] = 'LTI cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'LTI\'.';
+$string['indicator:socialbreadth'] = 'LTI sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'LTI\'.';
 $string['invalidid'] = 'L\'ID LTI non era corretta';
 $string['launch_in_moodle'] = 'Lancia il tool in Moodle';
 $string['launchinpopup'] = 'Contenitore di lancio';
@@ -205,6 +208,7 @@ $string['leaveblank'] = 'Lascia vuoto se non ti servono';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Aggiungere configurazioni Tool esterno a livello di corso';
 $string['lti:addinstance'] = 'Aggiungere attività Tool esterno';
+$string['lti:admin'] = 'Diventa amministratore al lancio del tool';
 $string['lti_administration'] = 'Modifica tool preconfigurato';
 $string['lti_errormsg'] = 'Il tool ha restituito il messaggio di errore seguente: "{$a}"';
 $string['lti:grade'] = 'Visualizzare valutazioni riportate da Tool esterni';

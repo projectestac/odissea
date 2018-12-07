@@ -54,7 +54,7 @@ class qtype_wq extends question_type {
             }
         }
         // Save question type options after wiris XML becaus if it fails we at
-        // least have saved the WIRIS part (relevant in multianswer case).
+        // least have saved the Wiris part (relevant in multianswer case).
         return $this->base->save_question_options($question);
     }
 
@@ -117,7 +117,7 @@ class qtype_wq extends question_type {
         $question->modifiedby = &$question->base->modifiedby;
         $question->hints = &$question->base->hints;
 
-        // Load question xml into WIRIS quizzes API question object.
+        // Load question xml into Wiris Quizzes API question object.
         if (empty($question->parent)) {
             $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
             $question->wirisquestion = $builder->readQuestion($questiondata->options->wirisquestion);

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'competency', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   competency
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,55 @@ $string['planstatusdraft'] = 'Zirriborroa';
 $string['planstatusinreview'] = 'Berrikusten';
 $string['planstatuswaitingforreview'] = 'Berrikusketaren zain';
 $string['pointsrequiredaremet'] = 'Beharreko puntuazioa lortu da';
+$string['privacy:evidence:action:complete'] = 'Osatutako gaitasuna kalifikatu gabe badago';
+$string['privacy:evidence:action:log'] = 'Ekintzaren erregistroa';
+$string['privacy:evidence:action:override'] = 'Gaitasun-kalifikazioen baliogabetzea';
+$string['privacy:metadata:competency'] = 'Gaitasunen erregistroa';
+$string['privacy:metadata:competency_coursecomp'] = 'Ikastaroekin lotutako gaitasunen erregistroa';
+$string['privacy:metadata:competency_coursecompsetting'] = 'Ikastaro bateko gaitasunen ezarpenen erregistroa';
+$string['privacy:metadata:competency_evidence'] = 'Gaitasunaren egoeran eragina duten ebidentzien erregistroa';
+$string['privacy:metadata:competency_framework'] = 'Gaitasun-markoen erregistroa';
+$string['privacy:metadata:competency_modulecomp'] = 'Moduluekin lotutako gaitasunen erregistroa';
+$string['privacy:metadata:competency_plan'] = 'Ikasketa-planen erregistroa';
+$string['privacy:metadata:competency_plancomp'] = 'Ikasketa-plan bateko gaitasunen erregistroa';
+$string['privacy:metadata:competency_relatedcomp'] = 'Gaitasunen arteko erlazioen erregistroa';
+$string['privacy:metadata:competency_template'] = 'Ikasketa-planen txantiloien erregistroa';
+$string['privacy:metadata:competency_templatecohort'] = 'Ikasketa-planen txantiloiekin lotutako kohorteen erregistroa';
+$string['privacy:metadata:competency_templatecomp'] = 'Ikasketa-plan bateko gaitasunen erregistroa';
+$string['privacy:metadata:competency_usercomp'] = 'Gaitasunetako erabiltzaile-egoeren erregistroa';
+$string['privacy:metadata:competency_usercompcourse'] = 'Ikastaro bateko gaitasunetako erabiltzaile-egoeren erregistroa';
+$string['privacy:metadata:competency_usercompplan'] = 'Ikasketa-plan bateko gaitasunen egoeraren erregistroa';
+$string['privacy:metadata:competency_userevidence'] = 'Aurretik ikasitakoaren ebidentzien erregistroa';
+$string['privacy:metadata:competency_userevidencecomp'] = 'Aurretik ikasitakoaren ebidentziekin lotutako gaitasunen erregistroa';
+$string['privacy:metadata:core_comments'] = 'Ikasketa-planetan eta gaitasunetan egindako iruzkinak';
+$string['privacy:metadata:evidence:action'] = 'Ebidentziekin hartutako ekintza-mota';
+$string['privacy:metadata:evidence:actionuserid'] = 'Ekintza egiten duen erabiltzailea';
+$string['privacy:metadata:evidence:desca'] = 'Estrapolatu daitekeen ebidentziaren deskribapenaren aukerazko parametroak';
+$string['privacy:metadata:evidence:desccomponent'] = 'Estrapolatu daitekeen ebidentziaren osagaia';
+$string['privacy:metadata:evidence:descidentifier'] = 'Estrapolatu daitekeen ebidentziaren identifikatzailea';
+$string['privacy:metadata:evidence:grade'] = 'Ebidentziarekin lotutako kalifikazioa';
+$string['privacy:metadata:evidence:note'] = 'Ebidentziarekin lotutako kokatu gabeko oharra';
+$string['privacy:metadata:evidence:url'] = 'Ebidentziarekin lotutako URLa';
+$string['privacy:metadata:plan:description'] = 'Ikasketa-planaren deskribapena';
+$string['privacy:metadata:plan:duedate'] = 'Ikasketa-planaren entregatze-data';
+$string['privacy:metadata:plan:name'] = 'Ikasketa-planaren izena';
+$string['privacy:metadata:plan:reviewerid'] = 'Ikasketa-planaren berrikuslearen IDa';
+$string['privacy:metadata:plan:status'] = 'Ikasketa-planaren egoera';
+$string['privacy:metadata:plan:userid'] = 'Ikasketa-planaren jabea den erabiltzailearen IDa';
+$string['privacy:metadata:timecreated'] = 'Erregistroa sortu zeneko data';
+$string['privacy:metadata:timemodified'] = 'Erregistroa editatu ºzeneko data';
+$string['privacy:metadata:usercomp:grade'] = 'Gaitasunari emandako kalifikazioa';
+$string['privacy:metadata:usercomp:proficiency'] = 'Trebezia lortu den edo ez';
+$string['privacy:metadata:usercomp:reviewerid'] = 'Berrikuslearen IDa';
+$string['privacy:metadata:usercomp:status'] = 'Gaitasunaren egoera';
+$string['privacy:metadata:usercomp:userid'] = 'Gaitasunaren jabea den erabiltzailearen IDa';
+$string['privacy:metadata:userevidence:description'] = 'Ebidentziaren deskribapena';
+$string['privacy:metadata:userevidence:name'] = 'Aurretik ikasitakoaren ebidentziaren izena';
+$string['privacy:metadata:userevidence:url'] = 'Ebidentziarekin lotutako URLa';
+$string['privacy:metadata:usermodified'] = 'Erregistroa sortu edo aldatu zuen erabiltzailea';
+$string['privacy:path:plans'] = 'Ikasketa-planak';
+$string['privacy:path:relatedtome'] = 'Nirekin lotutakoak';
+$string['privacy:path:userevidence'] = 'Aurretik ikasitakoaren ebidentzia';
 $string['pushcourseratingstouserplans'] = 'Eraman ikastaroko puntuazioak ikasketa-plan bakoitzera';
 $string['pushcourseratingstouserplans_desc'] = 'Berezko balioa ikastaro ezarpenetarako ikasketa-plan bakoitza eguneratzeko ikastaro-gaitasunak kalifikatzen direnean.';
 $string['syncplanscohorts'] = 'Sinkronizatu planak ikasketa-plan txantiloietako kohorteetatik';

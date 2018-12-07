@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,6 +65,7 @@ $string['judgementsummary'] = 'Respostas: {$a->responses}. Precisão: {$a->fract
 $string['noquestions'] = 'Sem respostas';
 $string['overconfident'] = 'excesso de confiança';
 $string['pluginname'] = 'Feedback diferido com ABGC';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback diferido com ABGC não armazena dados pessoais.';
 $string['slightlyoverconfident'] = 'um pouco de confiança a mais';
 $string['slightlyunderconfident'] = 'um pouco de confiança a menos';
 $string['underconfident'] = 'sub-confiante';

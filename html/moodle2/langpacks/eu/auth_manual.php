@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_manual', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Pasahitzaren iraungitzerako ezarpenak';
 $string['passwdexpiretime'] = 'Pasahitzaren iraupena';
 $string['passwdexpiretime_desc'] = 'Pasahitza baliozkoa den denbora-tartea.';
 $string['pluginname'] = 'Eskuzko kontuak';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'Pasahitza aldatu zen azken aldiaren data.';

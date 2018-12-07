@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_overview', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -56,6 +56,9 @@ $string['pluginname'] = 'Bewertungen';
 $string['preferencespage'] = 'Einstellungen für diese Seite';
 $string['preferencessave'] = 'Bericht anzeigen';
 $string['preferencesuser'] = 'Ihre Einstellungen für diesen Bericht';
+$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Ob Kennzeichen für jeden Fragenslot gezeigt werden.';
+$string['privacy:preference:slotmarks:no'] = 'Kennzeichen werden nicht beim Fragenslot gezeigt';
+$string['privacy:preference:slotmarks:yes'] = 'Kennzeichen werden beim Fragenslot angezeigt';
 $string['regrade'] = 'Neu bewerten';
 $string['regradeall'] = 'Alle neu bewerten';
 $string['regradealldry'] = 'Probelauf einer vollständigen Neubewertung';

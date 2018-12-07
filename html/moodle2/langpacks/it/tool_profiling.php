@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_profiling', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_profiling
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['lastrunof'] = 'Riassunto dell\'ultimo run di {$a}';
 $string['markreferencerun'] = 'Contrassegna come run di riferimento/commento';
 $string['memory'] = 'Memoria utilizzata';
 $string['pluginname'] = 'Profiling run';
+$string['privacy:metadata'] = 'Il plugin "Ricerca e sostituzione nel DB" non memorizza dati personali.';
 $string['profilingfocusscript'] = 'Focus sul profiling run per lo script: {$a}';
 $string['profilingruns'] = 'Run di profilazione';
 $string['profilingrunsfor'] = 'Run di profilazione per {$a}';

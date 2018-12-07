@@ -75,7 +75,8 @@ class jclic {
         if ($coursemodule) {
             $this->coursemodule = $coursemodule;
         } else if ($this->context && $this->context->contextlevel == CONTEXT_MODULE) {
-            $this->coursemodule = get_coursemodule_from_instance('jclic', $this->context->instanceid);
+            // Get coursemodule instance ID from $instance instead of $coursemodulecontext (actually filled with course data by 'jclic_display')
+            $this->coursemodule = get_coursemodule_from_instance('jclic', $instance ? $instance->id : $this->context->instanceid);
         }
 
         if ($course) {
@@ -240,8 +241,8 @@ class jclic {
             $update->url = $formdata->url;
         }
         $update->skin = empty($formdata->skin) ? 'default' : $formdata->skin;
-        $update->width = empty($formdata->width) ? '600' : $formdata->width;
-        $update->height = empty($formdata->height) ? '400' : $formdata->height;
+        $update->width = empty($formdata->width) ? '800' : $formdata->width;
+        $update->height = empty($formdata->height) ? '600' : $formdata->height;
         $update->avaluation = $formdata->avaluation;
         $update->grade = $formdata->grade;
         if ($update->grade >= 0 ) {
@@ -689,7 +690,7 @@ function jclic_view_activity($jclic, $context, $ispreview = false) {
     $sessions = jclic_get_sessions($jclic->id, $USER->id);
     $attempts = count($sessions);
     if (!$ispreview && ($attempts > 0 || $isopen)) {
-        echo '<br><A href="#" onclick="window.open(\'action/student_results.php?id='.$context->instanceid.'\',\'JClic\',\'navigation=0,toolbar=0,resizable=1,scrollbars=1,width=700,height=400\');" >'.get_string('show_my_results', 'jclic').'</A>';
+        echo '<br><a href="#" onclick="window.open(\'action/student_results.php?id='.$context->instanceid.'\',\'JClic\',\'navigation=0,toolbar=0,resizable=1,scrollbars=1,width=900,height=600\');" >'.get_string('show_my_results', 'jclic').'</a>';
     }
 
     $config = get_config('jclic');

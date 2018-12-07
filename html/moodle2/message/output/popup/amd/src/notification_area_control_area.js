@@ -249,7 +249,7 @@ define(['jquery', 'core/templates', 'core/notification', 'core/custom_interactio
         // If the element isn't in the view window.
         if (relativeTop > container.innerHeight()) {
             var height = notificationElement.outerHeight();
-            // offset enough to make sure the notification will be in view.
+            // Offset enough to make sure the notification will be in view.
             height = height * 4;
             var scrollTo = position.top - height;
             container.scrollTop(scrollTo);
@@ -307,38 +307,34 @@ define(['jquery', 'core/templates', 'core/notification', 'core/custom_interactio
      */
     ControlArea.prototype.renderNotifications = function(notifications) {
         var promises = [];
-        var allhtml = [];
-        var alljs = [];
         var container = this.getContent();
 
-        if (notifications.length) {
-            $.each(notifications, function(index, notification) {
-                // Need to remove the contexturl so the item isn't rendered
-                // as a link.
-                var contextUrl = notification.contexturl;
-                delete notification.contexturl;
+        $.each(notifications, function(index, notification) {
+            // Need to remove the contexturl so the item isn't rendered
+            // as a link.
+            var contextUrl = notification.contexturl;
+            delete notification.contexturl;
 
-                var promise = Templates.render(TEMPLATES.NOTIFICATION, notification);
-
-                promises.push(promise);
-                promise.then(function(html, js) {
-                    allhtml[index] = html;
-                    alljs[index] = js;
-                    // Restore it for the cache.
-                    notification.contexturl = contextUrl;
-                    this.setCacheNotification(notification);
-                }.bind(this))
-                .fail(DebugNotification.exception);
+            var promise = Templates.render(TEMPLATES.NOTIFICATION, notification)
+            .then(function(html, js) {
+                // Restore it for the cache.
+                notification.contexturl = contextUrl;
+                this.setCacheNotification(notification);
+                // Pass the Rendered content out.
+                return {html: html, js: js};
             }.bind(this));
-        }
+            promises.push(promise);
+        }.bind(this));
 
-        return $.when.apply($.when, promises).then(function() {
-            if (notifications.length) {
-                $.each(notifications, function(index) {
-                    container.append(allhtml[index]);
-                    Templates.runTemplateJS(alljs[index]);
-                });
-            }
+        return $.when.apply($, promises).then(function() {
+            // Each of the promises in the when will pass its results as an argument to the function.
+            // The order of the arguments will be the order that the promises are passed to when()
+            // i.e. the first promise's results will be in the first argument.
+            $.each(arguments, function(index, argument) {
+                container.append(argument.html);
+                Templates.runTemplateJS(argument.js);
+            });
+            return;
         });
     };
 

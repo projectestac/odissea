@@ -15,12 +15,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This class implements WIRIS Quizzes Lock interface
+ * This class implements Wiris Quizzes Lock interface
  * for locking resources identified by an String.
  *
  * @package    qtype
  * @subpackage wq
- * @copyright  Maths for More S.L. <info@wiris.com>
+ * @copyright  WIRIS Europe (Maths for more S.L)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

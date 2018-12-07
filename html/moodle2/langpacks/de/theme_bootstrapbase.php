@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_bootstrapbase', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_bootstrapbase', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_bootstrapbase
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -53,5 +53,6 @@ Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a><br /></p>
 </div>
 </div>';
 $string['pluginname'] = 'Bootstrap Base';
+$string['privacy:metadata'] = 'Das Design Bootstrapbase speichert keine personenbezogenen Nutzerdaten.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = 'При первой же возможности';
+$string['backtoscheduledtasks'] = 'Назад к запланированным задачам';
 $string['blocking'] = 'Блокирующая задача';
 $string['component'] = 'Компонент';
 $string['corecomponent'] = 'Ядро';
@@ -33,6 +34,8 @@ $string['default'] = 'По умолчанию';
 $string['disabled'] = 'Задача отключена';
 $string['disabled_help'] = 'Отключенные задачи не будут запускаться при вызове cron. Тем не менее, вы можете запустить их выполнение вручную с помощью инструмента командной строки.';
 $string['edittaskschedule'] = 'Изменение расписания задачи «{$a}»';
+$string['enablerunnow'] = 'Разрешить команду «Запустить сейчас» в планировщике задач';
+$string['enablerunnow_desc'] = 'Позволяет администраторам запустить любую из задач в любой момент, а не ждать, пока она будет запущена по расписанию. Задачи выполняются на веб-сервере, поэтому на некоторых сайтах эта функция может быть отключена, чтобы избежать возможного снижения производительности.';
 $string['faildelay'] = 'Задержка после неудачного запуска';
 $string['lastruntime'] = 'Последний запуск';
 $string['nextruntime'] = 'Следующий запуск';
@@ -40,6 +43,8 @@ $string['plugindisabled'] = 'Плагин отключен';
 $string['pluginname'] = 'Планировщик задач';
 $string['resettasktodefaults'] = 'Установить расписание по умолчанию';
 $string['resettasktodefaults_help'] = 'При включении этого параметра расписание задачи будет сброшено к настройкам по умолчанию.';
+$string['runnow'] = 'Запустить сейчас';
+$string['runnow_confirm'] = 'Вы действительно хотите запустить эту задачу «{$a}» сейчас? Задача будет выполняться на веб-сервере и может занять некоторое время.';
 $string['scheduledtaskchangesdisabled'] = 'Изменения в списке запланированных задач не разрешены в настройках Moodle';
 $string['scheduledtasks'] = 'Планировщик задач';
 $string['taskdisabled'] = 'Задача отключена';

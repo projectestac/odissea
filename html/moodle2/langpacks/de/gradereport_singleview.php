@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Bewertung für {$a}';
 $string['gradeitem'] = 'Element bewerten: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Diese Bewertung kann nicht überschrieben werden.';
 $string['gradeuser'] = 'Nutzer/in bewerten: {$a}';
+$string['itemsperpage'] = 'Elemente pro Seite';
 $string['noscreens'] = 'Es konnte keine passende Einzelansicht gefunden werden.';
 $string['notvalid'] = 'Keine gültige Einzelbildansicht: {$a}';
 $string['override'] = 'Überschreiben';
@@ -52,6 +53,7 @@ $string['overrideall'] = 'Alle Bewertungen überschreiben';
 $string['overridefor'] = 'Überschreiben für {$a}';
 $string['overridenone'] = 'Keine Bewertungen überschreiben';
 $string['pluginname'] = 'Einzelansicht';
+$string['privacy:metadata'] = 'Der Bericht zu Einzelbewertungen zeigt nur Daten, die an anderer Stelle gespeichert sind.';
 $string['save'] = 'Sichern';
 $string['savegrades'] = 'Bewertungen werden gesichert';
 $string['savegradessuccess'] = 'Bewertungen werden für {$a} Werte gesetzt.';

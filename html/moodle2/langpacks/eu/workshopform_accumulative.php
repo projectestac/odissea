@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_accumulative', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_accumulative
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'Kalifikazio bat aukeratu behar duzu alderdi honeta
 $string['pluginname'] = 'Metatutako kalifikazioa';
 $string['poor'] = 'Txarto';
 $string['present'] = 'Badago';
+$string['privacy:metadata'] = 'Metatutako kalifikazioa pluginak ebaluazio-formularioaren xehetasunak baino ez ditu gordetzen. Formularioa nola osatu deneko datu pertsonalak Tailerra moduluak berak gordetzen ditu eta esportatutako ebaluazioetara txertatzen dira.';
 $string['scalename0'] = 'Bai/Ez (2 puntu)';
 $string['scalename1'] = 'Badago/Ez dago (2 puntu)';
 $string['scalename2'] = 'Zuzena/Okerra (2 puntu)';

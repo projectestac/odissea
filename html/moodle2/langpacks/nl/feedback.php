@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,15 +33,16 @@ $string['allowfullanonymous'] = 'Volledig anoniem toestaan';
 $string['analysis'] = 'Analyse';
 $string['anonymous'] = 'Anoniem';
 $string['anonymous_edit'] = 'Gebruikersnamen bijhouden';
-$string['anonymous_entries'] = 'Anoniem ingevulde antwoorden  ({$a})';
+$string['anonymous_entries'] = 'Anoniem ingevulde formulieren ({$a})';
 $string['anonymous_user'] = 'Anonieme gebruiker';
+$string['answerquestions'] = 'Beantwoord de vragen';
 $string['append_new_items'] = 'Nieuwe items toevoegen';
 $string['autonumbering'] = 'Nummer vragen automatisch';
 $string['autonumbering_help'] = 'Automatisch nummeren van vragen inschakelen of uitschakelen';
 $string['average'] = 'Gemiddelde';
 $string['bold'] = 'Vet';
-$string['calendarend'] = 'Feedback {$a} sluit';
-$string['calendarstart'] = 'Feedback {$a} opent';
+$string['calendarend'] = '{$a} sluit';
+$string['calendarstart'] = '{$a} opent';
 $string['cancel_moving'] = 'Annuleer verplaatsen';
 $string['cannotaccess'] = 'Je hebt alleen toegang tot deze feedback vanuit een cursus';
 $string['cannotmapfeedback'] = 'Databankprobleem, kan feedback niet aan cursus koppelen';
@@ -141,6 +142,10 @@ $string['horizontal'] = 'horizontaal';
 $string['importfromthisfile'] = 'Importeer van dit bestand';
 $string['import_questions'] = 'Importeer vragen';
 $string['import_successfully'] = 'Import gelukt';
+$string['indicator:cognitivedepth'] = 'Feedbackformulier cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Feedbackformulier activiteit.';
+$string['indicator:socialbreadth'] = 'Feedbackformulier sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Feedbackformulier activiteit.';
 $string['info'] = 'Informatie';
 $string['infotype'] = 'Informatietype';
 $string['insufficient_responses'] = 'Onvoldoende antwoorden';
@@ -195,8 +200,8 @@ $string['no_itemlabel'] = 'Geen label';
 $string['no_itemname'] = 'Geen itemnaam';
 $string['no_items_available_yet'] = 'Er zijn nog geen vragen toegevoegd';
 $string['non_anonymous'] = 'De gebruikersnamen zullen bewaard worden en samen met de antwoorden getoond worden';
-$string['non_anonymous_entries'] = 'Niet-anonieme antwoorden  ({$a})';
-$string['non_respondents_students'] = 'Leerlingen die nog niet geantwoord hebben  ({$a})';
+$string['non_anonymous_entries'] = 'Niet-anonieme items  ({$a})';
+$string['non_respondents_students'] = 'Leerlingen die niet ingestuurd hebben ({$a})';
 $string['notavailable'] = 'deze feedback is niet beschikbaar';
 $string['not_completed_yet'] = 'Nog niet ingevuld';
 $string['no_templates_available_yet'] = 'Nog geen sjablonen beschikbaar';
@@ -210,6 +215,7 @@ $string['of'] = 'van';
 $string['oldvaluespreserved'] = 'Alle oude vragen en antwoorden zullen bewaard worden';
 $string['oldvalueswillbedeleted'] = 'De huidige vragen en alle antwoorden van je gebruikers zullen verwijderd worden.';
 $string['only_one_captcha_allowed'] = 'Slechts één captcha is toegelaten in een feedback';
+$string['openafterclose'] = 'Je hebt een startdatum opgegeven na de sluitdatum';
 $string['overview'] = 'Overzicht';
 $string['page'] = 'Pagina';
 $string['page_after_submit'] = 'Bericht na voltooien';
@@ -225,6 +231,14 @@ $string['position'] = 'Positie';
 $string['preview'] = 'Voorbeeld';
 $string['preview_help'] = 'In het voorbeeld kun je de volgorde van de vragen wijzigen';
 $string['previous_page'] = 'Vorige pagina';
+$string['privacy:metadata:completed'] = 'Gegevens over de inzendingen voor de feedback';
+$string['privacy:metadata:completed:anonymousresponse'] = 'Of de inzending anoniem gebruikt moet worden.';
+$string['privacy:metadata:completed:timemodified'] = 'De laatste wijzigingstijd van de inzending.';
+$string['privacy:metadata:completedtmp'] = 'Gegevens over de inzendingen die nog bezig zijn.';
+$string['privacy:metadata:completed:userid'] = 'De ID van de gebruiker die de feedbackactiviteit ingevuld heeft.';
+$string['privacy:metadata:value'] = 'Gegevens over het antwoord op een vraag.';
+$string['privacy:metadata:valuetmp'] = 'Gegevens over het antwoord op een vraag in een inzending die nog bezig is.';
+$string['privacy:metadata:value:value'] = 'Het gekozen antwoord.';
 $string['public'] = 'Publiek';
 $string['question'] = 'Vraag';
 $string['questionandsubmission'] = 'Vraag- en instuuropties';

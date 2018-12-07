@@ -35,7 +35,7 @@ use mod_questionnaire\db\bulk_sql_config;
  */
 
 class text extends base {
-    public function response_table() {
+    static public function response_table() {
         return 'questionnaire_response_text';
     }
 
@@ -51,13 +51,13 @@ class text extends base {
             $record->response_id = $rid;
             $record->question_id = $this->question->id;
             $record->response = $val;
-            return $DB->insert_record($this->response_table(), $record);
+            return $DB->insert_record(self::response_table(), $record);
         } else {
             return false;
         }
     }
 
-    protected function get_results($rids=false, $anonymous=false) {
+    public function get_results($rids=false, $anonymous=false) {
         global $DB;
 
         $rsql = '';
@@ -69,21 +69,21 @@ class text extends base {
         if ($anonymous) {
             $sql = 'SELECT t.id, t.response, r.submitted AS submitted, ' .
                     'r.survey_id, r.id AS rid ' .
-                    'FROM {'.$this->response_table().'} t, ' .
+                    'FROM {'.self::response_table().'} t, ' .
                     '{questionnaire_response} r ' .
                     'WHERE question_id=' . $this->question->id . $rsql .
                     ' AND t.response_id = r.id ' .
                     'ORDER BY r.submitted DESC';
         } else {
-            $sql = 'SELECT t.id, t.response, r.submitted AS submitted, r.username, u.username AS username, ' .
-                    'u.id as userid, ' .
+            $sql = 'SELECT t.id, t.response, r.submitted AS submitted, r.userid, u.username AS username, ' .
+                    'u.id as usrid, ' .
                     'r.survey_id, r.id AS rid ' .
-                    'FROM {'.$this->response_table().'} t, ' .
+                    'FROM {'.self::response_table().'} t, ' .
                     '{questionnaire_response} r, ' .
                     '{user} u ' .
                     'WHERE question_id=' . $this->question->id . $rsql .
                     ' AND t.response_id = r.id' .
-                    ' AND u.id = ' . $DB->sql_cast_char2int('r.username') .
+                    ' AND u.id = r.userid ' .
                     'ORDER BY u.lastname, u.firstname, r.submitted';
         }
         return $DB->get_records_sql($sql, $params);
@@ -120,11 +120,46 @@ class text extends base {
     }
 
     /**
+     * Return an array of answers by question/choice for the given response. Must be implemented by the subclass.
+     *
+     * @param int $rid The response id.
+     * @param null $col Other data columns to return.
+     * @param bool $csvexport Using for CSV export.
+     * @param int $choicecodes CSV choicecodes are required.
+     * @param int $choicetext CSV choicetext is required.
+     * @return array
+     */
+    static public function response_select($rid, $col = null, $csvexport = false, $choicecodes = 0, $choicetext = 1) {
+        global $DB;
+
+        $values = [];
+        $sql = 'SELECT q.id '.$col.', a.response as aresponse '.
+            'FROM {'.self::response_table().'} a, {questionnaire_question} q '.
+            'WHERE a.response_id=? AND a.question_id=q.id ';
+        $records = $DB->get_records_sql($sql, [$rid]);
+        foreach ($records as $qid => $row) {
+            unset($row->id);
+            $row = (array)$row;
+            $newrow = [];
+            foreach ($row as $key => $val) {
+                if (!is_numeric($key)) {
+                    $newrow[] = $val;
+                }
+            }
+            $values[$qid] = $newrow;
+            $val = array_pop($values[$qid]);
+            array_push($values[$qid], $val, $val);
+        }
+
+        return $values;
+    }
+
+    /**
      * Configure bulk sql
      * @return bulk_sql_config
      */
     protected function bulk_sql_config() {
-        return new bulk_sql_config($this->response_table(), 'qrt', false, true, false);
+        return new bulk_sql_config(self::response_table(), 'qrt', false, true, false);
     }
 }
 

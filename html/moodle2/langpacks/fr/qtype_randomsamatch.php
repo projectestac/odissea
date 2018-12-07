@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_randomsamatch
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,6 +33,7 @@ $string['pluginnameadding'] = 'Ajout d\'une question d\'appariement aléatoire �
 $string['pluginnameediting'] = 'Modification d\'une question d\'appariement aléatoire à réponse courte';
 $string['pluginname_help'] = 'Du point de vue du participant, une telle question est identique à une question d\'appariement. La différence est que la liste des termes à apparier est tirée aléatoirement dans les questions à réponse courte de la catégorie de questions actuelle. La catégorie doit comporter suffisamment de questions à réponse courte non utilisées, sans quoi un message d\'erreur sera affiché.';
 $string['pluginnamesummary'] = 'Une question d\'appariement créée aléatoirement à partir des questions à réponse courte d\'une catégorie';
+$string['privacy:metadata'] = 'Le plugin de type de question Appariement aléatoire à réponse courte n\'enregistre aucune donnée personnelle.';
 $string['randomsamatch'] = 'Appariement aléatoire à réponse courte';
 $string['randomsamatchintro'] = 'Pour chacune des questions suivantes, veuillez choisir une réponse correspondante dans le menu.';
 $string['randomsamatchnumber'] = 'Nombre des questions à sélectionner';

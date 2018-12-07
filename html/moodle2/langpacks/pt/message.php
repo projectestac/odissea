@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -95,9 +95,9 @@ $string['notificationpreferences'] = 'Preferências das notificações';
 $string['notifications'] = 'Notificações';
 $string['notificationwindow'] = 'Janela de notificação';
 $string['off'] = 'Off';
-$string['offline'] = 'Inativo';
+$string['offline'] = 'Offline';
 $string['on'] = 'On';
-$string['online'] = 'Inativo';
+$string['online'] = 'Online';
 $string['onlymycourses'] = 'Apenas nas minhas disciplinas';
 $string['outputdisabled'] = 'Método de envio desativado';
 $string['outputdoesnotexist'] = 'Método de envio de mensagens não existe';
@@ -107,6 +107,29 @@ $string['outputnotconfigured'] = 'Não está configurado';
 $string['page-message-x'] = 'Qualquer página de mensagens';
 $string['pagerefreshes'] = 'Esta página é atualizada automaticamente a cada {$a} segundos';
 $string['permitted'] = 'Permitido';
+$string['privacy:metadata:message_contacts'] = 'A lista de contactos';
+$string['privacy:metadata:message_contacts:blocked'] = 'Marcar se está ou não bloqueado';
+$string['privacy:metadata:message_contacts:contactid'] = 'O ID do utilizador que é o cantacto';
+$string['privacy:metadata:message_contacts:userid'] = 'O ID do utilizador cuja lista de contacto estamos a visualizar';
+$string['privacy:metadata:messages'] = 'Mensagem/notificações';
+$string['privacy:metadata:messages:component'] = 'A componente responsável por enviar a mensagem/notificação';
+$string['privacy:metadata:messages:contexturl'] = 'O URL relacionado com a notificação';
+$string['privacy:metadata:messages:contexturlname'] = 'O nome do contexto';
+$string['privacy:metadata:messages:eventtype'] = 'O tipo de evento';
+$string['privacy:metadata:messages:fullmessage'] = 'A mensagem/notificação completa';
+$string['privacy:metadata:messages:fullmessageformat'] = 'O formato da mensagem/notificação';
+$string['privacy:metadata:messages:fullmessagehtml'] = 'O HTML da mensagem/notificação';
+$string['privacy:metadata:messages:notification'] = 'Marcar se é ou não uma notificação';
+$string['privacy:metadata:messages:smallmessage'] = 'Mensagem/notificação pequena';
+$string['privacy:metadata:messages:subject'] = 'O assunto da mensagem/notificação';
+$string['privacy:metadata:messages:timecreated'] = 'A data em que a mensagem/notificação foi criada';
+$string['privacy:metadata:messages:timeread'] = 'A data em que a mensagem/notificação foi lida';
+$string['privacy:metadata:messages:timeuserfromdeleted'] = 'A data em que a mensagem/notificação foi apagada pelo emissor';
+$string['privacy:metadata:messages:timeusertodeleted'] = 'A data em que a mensagem/notificação foi apagada pelo recetor';
+$string['privacy:metadata:messages:useridfrom'] = 'O ID do utilizador que enviou a notificação';
+$string['privacy:metadata:messages:useridto'] = 'O ID do utilizador que recebeu a notificação';
+$string['privacy:metadata:preference:core_message_settings'] = 'Configurações relacionadas com troca de mensagens';
+$string['privacy:request:preference:set'] = 'O valor da configuração \'{$a->name}\' era \'{$a->value}\'';
 $string['processorsettings'] = 'Configurações do processador';
 $string['recent'] = 'Recentes';
 $string['removecontact'] = 'Remover contacto';
@@ -123,6 +146,10 @@ $string['seeall'] = 'Ver todas';
 $string['selectmessagestodelete'] = 'Selecione as mensagens a apagar';
 $string['selectnotificationtoview'] = 'Selecione da lista de notificações ao lado para ver mais detalhes';
 $string['send'] = 'Enviar';
+$string['sendbulkmessage'] = 'Enviar mensagem para {$a} pessoas';
+$string['sendbulkmessagesent'] = 'Mensagem enviada para {$a} pessoas';
+$string['sendbulkmessagesentsingle'] = 'Mensagem enviada para 1 pessoa';
+$string['sendbulkmessagesingle'] = 'Enviar mensagem para 1 pessoa';
 $string['sendingvia'] = 'A enviar "{$a->provider}" via "{$a->processor}"';
 $string['sendingviawhen'] = 'A enviar "{$a->provider}" via "{$a->processor}" em {$a->state}';
 $string['sendmessage'] = 'Enviar mensagem';
@@ -141,6 +168,7 @@ $string['togglemessagemenu'] = 'Alternar o menu de mensagens';
 $string['togglenotificationmenu'] = 'Alternar o menu de notificações';
 $string['touserdoesntexist'] = 'Não pode enviar uma mensagem ao utilizador com id ({$a}) que não existe';
 $string['unblockcontact'] = 'Desbloquear contacto';
+$string['unknownuser'] = 'Utilizador desconhecido';
 $string['unreadnewmessage'] = 'Nova mensagem de {$a}';
 $string['unreadnotification'] = 'Notificação não lida: {$a}';
 $string['userisblockingyou'] = 'Este utilizador bloqueou-te para não enviares mensagens para ele';

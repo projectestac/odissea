@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_manual', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Instellingen verlopen van het wachtwoord';
 $string['passwdexpiretime'] = 'Wachtwoord geldigheidsduur';
 $string['passwdexpiretime_desc'] = 'Tijd dat een wachtwoord geldig blijft.';
 $string['pluginname'] = 'Manuele accounts';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'Datum van laatste wachtwoordwijziging.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -201,7 +201,6 @@ $string['searchwikis'] = 'Sök wikis';
 $string['special'] = 'Special';
 $string['tableofcontents'] = 'Innehållstabell';
 $string['tagsdeleted'] = 'Wiki-taggarna har tagits bort';
-$string['tagtitle'] = 'Se taggen "{$a}"';
 $string['timesrating'] = 'Den här sidan har värderats {$a->c} gånger med ett medel av: {$a->s}';
 $string['updatedpages'] = 'Uppdaterade sidor';
 $string['updatedpages_help'] = 'Nyligen uppdaterade wikisidor';

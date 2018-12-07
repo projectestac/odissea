@@ -17,4 +17,3 @@ Feature: Atto underline button
     And I press "Save changes"
     And I click on "Edit profile" "link" in the "region-main" "region"
     Then I should see "<u>Deprecated HTML Tag</u>"
-

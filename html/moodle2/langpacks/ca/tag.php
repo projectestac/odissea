@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'S\'ha afegit l\'etiqueta/es estàndard';
-$string['addedotag'] = 'S\'ha afegit "{$a}" com a etiqueta oficial';
 $string['addotags'] = 'Afegeix etiquetes oficials';
 $string['addtagcoll'] = 'Afegeix una col·lecció d\'etiquetes';
 $string['addtagtomyinterests'] = 'Afegeix "{$a}" als meus interessos';
@@ -90,7 +89,6 @@ $string['name'] = 'Nom de l\'etiqueta';
 $string['namesalreadybeeingused'] = 'Noms d\'etiquetes ja utilitzats';
 $string['nameuseddocombine'] = 'Aquest nom d\'etiqueta ja s\'està fent servir. Voleu combinar aquestes etiquetes?';
 $string['newcollnamefor'] = 'Nou nom per a la col·lecció d\'etiquetes {$a}';
-$string['newname'] = 'Nou nom d\'etiqueta';
 $string['newnamefor'] = 'Nom nou per a l\'etiqueta {$a}';
 $string['nextpage'] = 'Més';
 $string['noresultsfor'] = 'Cap resultat per a "{$a}"';
@@ -154,13 +152,8 @@ $string['taggedwith'] = 'etiquetat amb "{$a}"';
 $string['tags'] = 'Etiquetes';
 $string['tagsaredisabled'] = 'Les etiquetes estan inhabilitades';
 $string['tagtype'] = 'Tipus d\'etiqueta';
-$string['tagtype_default'] = 'Per defecte';
-$string['tagtype_official'] = 'Oficial';
 $string['thingstaggedwith'] = '{$a->count} elements amb l\'etiqueta "{$a->name}"';
 $string['thingtaggedwith'] = '"{$a->name}" s\'ha utilitzat una vegada';
-$string['thistaghasnodesc'] = 'Aquesta etiqueta no té descripció.';
 $string['timemodified'] = 'Modificat';
 $string['typechanged'] = 'S\'ha canviat el tipus d\'etiqueta';
-$string['updated'] = 'Actualitzat';
 $string['updatetag'] = 'Actualitza';
-$string['withselectedtags'] = 'Amb les etiquetes seleccionades...';

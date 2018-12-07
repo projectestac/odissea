@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_random', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['numofselfallocatedsubmissions'] = 'Self-allocating {$a} submission(s)';
 $string['numperauthor'] = 'per submission';
 $string['numperreviewer'] = 'per reviewer';
 $string['pluginname'] = 'Random allocation';
+$string['privacy:metadata'] = 'The Random allocation plugin does not store any personal data. Actual personal data about who is going to assess whom are stored by the Workshop module itself and they form basis for exporting the assessments details.';
 $string['randomallocationdone'] = 'Random allocation done';
 $string['removecurrentallocations'] = 'Remove current allocations';
 $string['resultnomorepeers'] = 'No more peers available';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_file', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Accepted file types';
-$string['acceptedfiletypes_help'] = 'Accepted file types can be restricted by entering a comma-separated list of mimetypes, e.g. video/mp4, audio/mp3, image/png, image/jpeg, or file extensions including a dot, e.g. .png, .jpg. If the field is left empty, then all file types are allowed.';
+$string['acceptedfiletypes_help'] = 'Accepted file types can be restricted by entering a list of file extensions. If the field is left empty, then all file types are allowed.';
 $string['configmaxbytes'] = 'Maximum file size';
 $string['countfiles'] = '{$a} files';
 $string['default'] = 'Enabled by default';
+$string['defaultacceptedfiletypes'] = 'Default accepted file types';
 $string['default_help'] = 'If set, this submission method will be enabled by default for all new assignments.';
 $string['enabled'] = 'File submissions';
 $string['enabled_help'] = 'If enabled, students are able to upload one or more files as their submission.';
@@ -47,5 +48,6 @@ $string['maximumsubmissionsize_help'] = 'Files uploaded by students may be up to
 $string['nonexistentfiletypes'] = 'The following file types were not recognised: {$a}';
 $string['numfilesforlog'] = 'The number of file(s) : {$a} file(s).';
 $string['pluginname'] = 'File submissions';
+$string['privacy:metadata:filepurpose'] = 'The files loaded for this assignment submission';
 $string['siteuploadlimit'] = 'Site upload limit';
 $string['submissionfilearea'] = 'Uploaded submission files';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_mnet', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,6 +42,7 @@ En vous abonnant à ce service, vous pourrez inscrire vos étudiants aux cours s
 $string['mnet_enrol_name'] = 'Service d\'inscription à distance';
 $string['pluginname'] = 'Inscriptions MNet';
 $string['pluginname_desc'] = 'Permet à un serveur MNet distant d\'inscrire ses utilisateurs dans nos cours.';
+$string['privacy:metadata'] = 'Le plugin Inscriptions MNet n\'enregistre aucune donnée personnelle.';
 $string['remotesubscriber'] = 'Serveur distant';
 $string['remotesubscriber_help'] = 'Sélectionnez « Tous les serveurs » pour ouvrir ce cours à tous les serveurs MNet auxquels nous offrons le service d\'inscription à distance. Alternativement, un seul serveur peut être sélectionné pour ne donner accès à ce cours qu\'à ses utilisateurs.';
 $string['remotesubscribersall'] = 'Tous les serveurs';

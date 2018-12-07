@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_meta', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['nosyncroleids'] = 'Nichtsynchronisierte Rollen';
 $string['nosyncroleids_desc'] = 'Standardmäßig werden alle kursbezogenen Rollenzuweisungen auf verbundene Kurse übertragen (from parent to child). Die ausgewählten Rollen werden nicht in die Synchronisation einbezogen. Die zur Synchronisation vorgesehenen Rollen werden mit der nächsten Ausführung des Cronjobs aktualisiert.';
 $string['pluginname'] = 'Meta-Einschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Meta-Einschreibung\' synchronisiert die Einschreibungen und Rollen in zwei unterschiedlichen Kursen.';
+$string['privacy:metadata:core_group'] = 'Das Plugin zur Meta-Einschreibung kann eine neue Gruppe anlegen oder eine bereits vorhandene Gruppe verwenden, um alle Mitglieder der globalen Gruppe hinzuzufügen.';
 $string['syncall'] = 'Eingeschriebene Nutzer/innen synchronisieren';
 $string['syncall_desc'] = 'Wenn diese Option aktiviert ist, werden alle Nutzer/innen synchronisiert, auch wenn sie im Hauptkurs keine Rolle haben. Wenn diese Option deaktiviert ist, werden nur Nutzer/innen in Metakurse synchronisiert, die im Hauptkurs mindestens eine Rolle besitzen.';

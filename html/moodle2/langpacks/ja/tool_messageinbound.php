@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_messageinbound', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_messageinbound
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'クラス名';
 $string['component'] = 'コンポーネント';
-$string['configmessageinboundhost'] = 'Moodleがメールをチェックするサーバのアドレスです。デフォルトポート以外のポートを指定する場合、あなたは[server]:[port]のフォーマットを使用することができます。例えば次のようになります: mail.example.com:587 このフィールドを空白にした場合、Moodleはあなたが指定したメールのタイプのデフォルトポートを使用します。';
+$string['configmessageinboundhost'] = 'Moodleがメールをチェックするサーバのアドレスです。デフォルトポート以外のポートを指定する場合、[server]:[port]を使用してください。例えば次のようになります: mail.example.com:587 ポートが指定されない場合、メールサーバタイプのデフォルトポートが使用されます。';
 $string['defaultexpiration'] = 'デフォルトアドレス有効期限';
 $string['defaultexpiration_help'] = 'ハンドラによってメールアドレスが生成された場合、使用できなくなるよう自動的に期限切れとなる期間を設定することができます。有効期限の設定をお勧めします。';
 $string['description'] = '説明';
@@ -99,6 +99,12 @@ $string['onehour'] = '1時間';
 $string['oneweek'] = '1週間';
 $string['oneyear'] = '1年';
 $string['pluginname'] = '受信メッセージ設定';
+$string['privacy:metadata:coreuserkey'] = '受信したメールを認証するユーザキーです。';
+$string['privacy:metadata:messagelist'] = '妥当性確認に失敗してさらなる承認が必要なメッセージIDの一覧です。';
+$string['privacy:metadata:messagelist:address'] = 'メールが送信されたアドレスです。';
+$string['privacy:metadata:messagelist:messageid'] = 'メッセージIDです。';
+$string['privacy:metadata:messagelist:timecreated'] = 'レコードが作成された日時です。';
+$string['privacy:metadata:messagelist:userid'] = 'メッセージを承認する必要のあるユーザのIDです。';
 $string['replysubjectprefix'] = 'Re:';
 $string['requirevalidation'] = '送信者アドレスを確認する';
 $string['ssl'] = 'SSL (SSLバージョン自動判別)';

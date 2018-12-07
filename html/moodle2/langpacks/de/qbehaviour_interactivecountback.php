@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactivecountback', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_interactivecountback', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_interactivecountback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mehrfachbeantwortung (mit Hinweis und Guthaben für frühere Versuche)';
+$string['privacy:metadata'] = 'Der Interaktiv-Modus mit mehreren Versuchen (Anzeige früherer Versuche ) des Frageverhalten-Plugins speichert keine persönlichen Daten.';

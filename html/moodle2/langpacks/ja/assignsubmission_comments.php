@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_comments', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['default_help'] = 'この設定を有効にした場合、すべての�
 $string['enabled'] = '提出コメント';
 $string['enabled_help'] = 'この設定を有効にした場合、学生は自分の提出にコメントを付けることができます。これにより、例えばファイルが内部リンクの場合、どれがマスターファイルなのか学生が評定者に伝えることができます。';
 $string['pluginname'] = '提出コメント';
+$string['privacy:metadata:commentpurpose'] = '提出に関する学生および教師間のコメントです。';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_questioninstances', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   report_questioninstances
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['getreport'] = 'Toon het rapport';
 $string['hiddenquestions'] = 'Verborgen';
 $string['intro'] = 'Dit rapport toont een lijst van alle contexten in het systeem waar vragen van een bepaald type zijn.';
 $string['pluginname'] = 'Vragen';
+$string['privacy:metadata'] = 'De vraaginstanties-plugin bewaart geen persoonlijke gegevens.';
 $string['questioninstances:view'] = 'Bekijk het vragenrapport';
 $string['reportforallqtypes'] = 'Rapport voor alle vraagtypes';
 $string['reportformissingqtypes'] = 'Rapport voor vragen van een onbekend type';

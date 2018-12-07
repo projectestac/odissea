@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Gehitu ohar berria {$a} pertsonari';
+$string['addbulknotedone'] = 'Oharra {$a} pertsonari gehitu zaie';
+$string['addbulknotedonesingle'] = 'Oharra pertsona bati gehitu zaio';
+$string['addbulknotesingle'] = 'Gehitu ohar berria pertsona bati';
 $string['addnewnote'] = 'Gehitu beste ohar bat';
 $string['addnewnoteselect'] = 'Aukeratu ikasleak beraiei buruzko oharrak idazteko';
 $string['bynameondate'] = '{$a->name} -k - {$a->date}';
-$string['cannotdeletepost'] = 'Errorea gertatu da mezua ezabatzean';
 $string['configenablenotes'] = 'Gaitu erabiltzaile bakoitzari buruzko oharrak biltzea';
 $string['content'] = 'Edukia';
 $string['course'] = 'Ikastaroa';
@@ -58,12 +61,19 @@ $string['page-notes-index'] = 'Oharren orri nagusia';
 $string['page-notes-x'] = 'Oharren edozein orri';
 $string['personal'] = 'pertsonala';
 $string['personalnotes'] = 'Norberaren oharrak';
+$string['privacy:metadata:core_notes'] = 'Oharrak osagaiak sistemako erabiltzaileen oharrak gordetzen ditu.';
+$string['privacy:metadata:core_notes:content'] = 'Oharraren edukia.';
+$string['privacy:metadata:core_notes:courseid'] = 'Oharrarekin lotutako ikastaroaren IDa.';
+$string['privacy:metadata:core_notes:created'] = 'Oharra sortu zeneko unea.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'Oharra azkenengoz aldatu zeneko unea.';
+$string['privacy:metadata:core_notes:publishstate'] = 'Oharraren publikatze-egoera.';
+$string['privacy:metadata:core_notes:userid'] = 'Oharrarekin lotutako erabiltzailearen IDa.';
 $string['publishstate'] = 'Testuingurua';
-$string['publishstate_help'] = 'Oharren estatusak zeinek ikus ditzakeen zehazten du:
+$string['publishstate_help'] = 'Oharren testuinguruak egunerokotasunean oharra zeinek ikus dezakeen zehazten du. Erabiltzaileek jakin beharko lukete ohar guztiak, baita pertsonalak ere, jakinaraziak izan daitezkela bertako jurisdikzioko legearen arabera.
 
-* Pertsonalak - Ohar hauek zeuk baino ezin dituzu ikusi
-* Ikastaroa - Ohar hauek ikastaroko irakasleek ikus ditzakete
-* Gunea - Ohar hauek guneko ikastaro guztietako irakasleek ikus ditzakete';
+* Pertsonala - Oharra zuk baino ezin duzu ikusi
+* Ikastaroa - Oharra ikastaroko irakasleek ikus dezakete
+* Gunea - Oharra guneko ikastaro guztietako irakasleek ikus dezakete';
 $string['selectnotestate'] = 'Aukera ezazu oharraren egoera';
 $string['site'] = 'gunea';
 $string['sitenotes'] = 'Guneko oharrak';

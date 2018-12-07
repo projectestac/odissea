@@ -44,9 +44,19 @@ class cachestore_redis_addinstance_form extends cachestore_addinstance_form {
         $form->addHelpButton('server', 'server', 'cachestore_redis');
         $form->addRule('server', get_string('required'), 'required');
 
+        $form->addElement('passwordunmask', 'password', get_string('password', 'cachestore_redis'));
+        $form->setType('password', PARAM_RAW);
+        $form->addHelpButton('password', 'password', 'cachestore_redis');
+
         $form->addElement('text', 'prefix', get_string('prefix', 'cachestore_redis'), array('size' => 16));
         $form->setType('prefix', PARAM_TEXT); // We set to text but we have a rule to limit to alphanumext.
         $form->addHelpButton('prefix', 'prefix', 'cachestore_redis');
         $form->addRule('prefix', get_string('prefixinvalid', 'cachestore_redis'), 'regex', '#^[a-zA-Z0-9\-_]+$#');
+
+        $serializeroptions = cachestore_redis::config_get_serializer_options();
+        $form->addElement('select', 'serializer', get_string('useserializer', 'cachestore_redis'), $serializeroptions);
+        $form->addHelpButton('serializer', 'useserializer', 'cachestore_redis');
+        $form->setDefault('serializer', Redis::SERIALIZER_PHP);
+        $form->setType('serializer', PARAM_INT);
     }
 }

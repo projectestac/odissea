@@ -33,3 +33,4 @@ $string['pluginnamesummary'] = 'Igual que la pregunta estàndard de Resposta bre
 $string['pluginnameediting'] = 'S\'està editant una pregunta de resposta breu - Matemàtiques i Ciències per WIRIS';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de resposta breu - Matemàtiques i Ciències per WIRIS';
 $string['contentnotviewable'] = 'Contingut no visualitzable.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Short-Answer question type does not effect or store any data itself.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_imsenterprise
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['nestedcategories'] = 'ネストカテゴリを許可する';
 $string['nestedcategories_desc'] = 'この設定を有効にした場合、IMS Enterpriseはネストカテゴリを作成します。';
 $string['pluginname'] = 'IMSエンタープライズファイル';
 $string['pluginname_desc'] = 'このメソッドではあなたが指定した場所にある特別にフォーマットされたテキストファイルを繰り返しチェックおよび処理します。IMSエンタープライズ仕様に基づき、ファイルにはperson、groupおよびmembershipをXML要素に含む必要があります。';
+$string['privacy:metadata'] = 'IMSエンタープライズファイル登録プラグインはどのような個人データも保存しません。';
 $string['processphoto'] = 'ユーザ写真データをプロファイルに追加する';
 $string['processphotowarning'] = '警告: イメージ処理はサーバに深刻な負荷を与えます。多くの学生の処理が予想される場合、このオプションを有効にしないことをお勧めします。';
 $string['restricttarget'] = '次のターゲットが指定されている場合のみ処理する';
@@ -86,7 +87,7 @@ $string['sourcedidfallback_desc'] = 'IMSデータでは<sourcedid>フィール�
 
 いくつかの学生情報が<userid>フィールドに出力されない場合、この設定を有効にして<sourcedid>をMoodleのユーザIDに使用してください。そうでない場合、この設定を無効のままにしてください。';
 $string['truncatecoursecodes'] = 'この長さにコースコードを切り詰める';
-$string['truncatecoursecodes_desc'] = 'ここでは処理する前に、コースコードを指定した長さに切り詰めることができます。コースコードを切り詰めたい場合、このボックスに文字長を入力してください。そうでない場合、このボックスを<strong>空白</strong>のままにすることによりコースコードは切り詰められません。';
+$string['truncatecoursecodes_desc'] = 'ここでは処理する前にコースコードを指定した長さに切り詰めることができます。コースコードを切り詰めたい場合、このボックスに文字長を入力してください。そうでない場合、このボックスを空白のままにすることによりコースコードは切り詰められません。';
 $string['updatecourses'] = 'コースを更新する';
 $string['updatecourses_desc'] = 'この設定を有効にした場合、IMS Enterprise登録プラグインは長いコース名およびコース省略名を更新することができます (「recstatus」フラグに「2」が設定された場合、更新を意味します)。';
 $string['updateusers'] = 'IMSデータで指定された場合、ユーザアカウントを更新する';

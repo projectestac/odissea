@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_guest', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_guest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,7 @@ $string['passwordinvalid'] = 'Chiave errata, per favore riprova';
 $string['passwordinvalidhint'] = 'La chiave di accesso è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
 $string['pluginname'] = 'Accesso ospiti';
 $string['pluginname_desc'] = 'Il plugin Acesso ospiti consente l\'accesso temporaneo ai corsi senza effettuare iscrizioni reali.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "Accesso ospiti" non memorizza dati personali.';
 $string['requirepassword'] = 'Chiave di accesso ospiti obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave di accesso per gli ospiti nei nuovi corsi ed evita l\'eliminazione di chiavi d\'accesso già esistenti.';
 $string['showhint'] = 'Visualizza suggerimento';

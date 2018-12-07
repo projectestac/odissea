@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -76,6 +76,8 @@ $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Ebaluazio-gidaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi kalifikazio-gida, zuk gida egiaztatu eta kalifikazioa eguneratu arte.';
 $string['pluginname'] = 'Ebaluazio-gida';
 $string['previewmarkingguide'] = 'Aurreikusi ebaluazio-gida';
+$string['privacy:metadata:preference:showmarkerdesc'] = 'Kalifikatzailearen irizpideen deskribapenak erakustea edo ez';
+$string['privacy:metadata:preference:showstudentdesc'] = 'Ikaslearen irizpideen deskribapenak erakustea edo ez';
 $string['regrademessage1'] = 'Aldaketak egin behar dituzu kalifikatzeko erabili den ebaluazio-gida batean. Mesedez, adierazi orain arteko kalifikazioak berrikusi behar diren. Ezarpen hau gaitzen baduzu, kalifikazio gida ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regrademessage5'] = 'Kalifikatzeko erabilia izan den ebaluazio-gida batean aldaketa nabarmenak egin behar dituzu. Kalifikazio liburuaren balioa ez da aldatuko, baina kalifikazio-gida ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regradeoption0'] = 'Ez markatu berriz kalifikatzeko';

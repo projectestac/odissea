@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz_grading', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,7 @@ $string['nothingfound'] = 'Ez dago erakusteko ezer';
 $string['options'] = 'Aukerak';
 $string['orderattempts'] = 'Ordenatu saiakerak';
 $string['pluginname'] = 'Eskuzko kalifikazioa';
+$string['privacy:metadata'] = 'Galdetegien Eskuzko kalifikazioa pluginak ez du datu pertsonalik biltzen. Erabiltzaileek datuak gordetzeko interfazea eskaintzen du baina berezko daturik gorde gabe.';
 $string['qno'] = 'G #';
 $string['questionname'] = 'Galderaren izena';
 $string['questionsperpage'] = 'Galderak orriko';

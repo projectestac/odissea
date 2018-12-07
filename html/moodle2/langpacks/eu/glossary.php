@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -92,6 +92,7 @@ $string['comments'] = 'Iruzkinak';
 $string['commentson'] = 'Honen inguruko iruzkinak';
 $string['commentupdated'] = 'Iruzkina eguneratu da.';
 $string['completionentries'] = 'Ikasleak sarrerak sortu behar ditu:';
+$string['completionentriesdesc'] = 'Erabiltzaileak gutxienez {$a} sarrera sortu behar ditu';
 $string['completionentriesgroup'] = 'Sarrerak behar dira';
 $string['concept'] = 'Kontzeptua';
 $string['concepts'] = 'Kontzeptuak';
@@ -109,6 +110,7 @@ $string['defaultsortorder'] = 'Berezko orden-mota';
 $string['definition'] = 'Definizoa';
 $string['definitions'] = 'Definizioak';
 $string['deleteentry'] = 'Ezabatu sarrera';
+$string['deleteentrya'] = 'Ezabatu sarrera: {$a}';
 $string['deletenotenrolled'] = 'Matrikulatu gabeko erabiltzaileen sarrerak ezabatu';
 $string['deletingcomment'] = 'Iruzkina ezabatzen';
 $string['deletingnoneemptycategory'] = 'Kategoria hau ezabatuta ez dira ezabatuko dituen sarrerak. Besterik gabe, kategoria gabeko bezala agertuko dira.';
@@ -142,6 +144,7 @@ $string['editalways'] = 'Baimendu beti editatzea';
 $string['editalways_help'] = 'Aukera honi esker erabaki dezakezu ikasleek sarrerak edozein momentutan edita ditzaketen ala epe jakin baten barruan (oro har, 30 minutuz).';
 $string['editcategories'] = 'Editatu kategoriak';
 $string['editentry'] = 'Editatu sarrera';
+$string['editentrya'] = 'Editatu sarrera: {$a}';
 $string['editingcomment'] = 'Iruzkina editatu';
 $string['entbypage'] = 'Zenbat sarrera orriko';
 $string['entries'] = 'Sarrerak';
@@ -202,7 +205,7 @@ $string['glossary:managecomments'] = 'Kudeatu iruzkinak';
 $string['glossary:manageentries'] = 'Kudeatu sarrerak';
 $string['glossary:rate'] = 'Kalifikatu sarrerak';
 $string['glossarytype'] = 'Glosategi-mota';
-$string['glossarytype_help'] = 'Glosategi nagusira bigarren mailako edozein glosategiren sarrerak inporta daitezke. Ikastaroak glosategi nagusi bakarra izan dezake. Glosategietako sarrerak inportatzea beharrezkoa ez bada, glosategi guztiak izan daitezke bigarren mailakoak.';
+$string['glossarytype_help'] = 'Glosategi nagusia bigarren mailako edozein glosategiren sarrerak inporta ditzakeen glosategia da. Ikastaro batek glosategi nagusi bakarra izan dezake. Glosategietako sarrerak inportatzea beharrezkoa ez bada, glosategi guztiak izan daitezke bigarren mailakoak.';
 $string['glossary:view'] = 'Ikusi glosategia';
 $string['glossary:viewallratings'] = 'Erabiltzaileek emandako kalifikazio guztiak ikusi';
 $string['glossary:viewanyrating'] = 'Besteren batek denera jasotako kalifikazioak ikusi';
@@ -215,6 +218,10 @@ $string['importedentries'] = 'Inportatutako sarrerak';
 $string['importentries'] = 'Sarrerak inportatu';
 $string['importentriesfromxml'] = 'Sarrerak inportatu XML fitxategi batetik';
 $string['includegroupbreaks'] = 'Sartu banatutako taldeak';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa glosategietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Glosategia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala glosategietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Glosategia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['isglobal'] = 'Glosategi orokorra al da hau?';
 $string['isglobal_help'] = 'Glosategi orokorrak dituen sarrerak guneko edozein tokitatik estekatuak izan daitezke, ez bakarrik glosategia duen ikastarotik. Kudeatzaileek bakarrik ezar dezakete glosategi bat orokor gisa.';
 $string['letter'] = 'letra';
@@ -265,9 +272,22 @@ $string['popupformat'] = 'Popup formatua';
 $string['print'] = 'Inprimatu';
 $string['printerfriendly'] = 'Inprimatzeko bertsioa';
 $string['printviewnotallowed'] = 'Ezin inprimatzeko bertsioa aurkeztu';
+$string['privacy'] = 'Emaitzen pribatutasuna';
+$string['privacy:metadata:core_comments'] = 'Glosategi-definizioetan egindako iruzkinak core_comment sisteman gordetzen dira';
+$string['privacy:metadata:core_files'] = 'Glosategi-definizioetara lotutako fitxategiak core_file sisteman gordetzen dira';
+$string['privacy:metadata:core_rating'] = 'Glosategi-sarrerei emandako kalifikazioak core_rating sisteman gordetzen dira';
+$string['privacy:metadata:core_tag'] = 'Glosategi-sarrerei gehitutako etiketak core_tag sisteman gordetzen dira';
+$string['privacy:metadata:glossary_entries'] = 'Glosategi-jarduera bateko erabiltzailearen sarreren inguruko informazioa';
+$string['privacy:metadata:glossary_entries:attachment'] = 'Erabiltzaileak gehitutako sarreraren eranskinak';
+$string['privacy:metadata:glossary_entries:concept'] = 'Erabiltzaileak gehitutako sarreraren kontzeptua';
+$string['privacy:metadata:glossary_entries:definition'] = 'Erabiltzaileak gehitutako sarreraren definizioa';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'Erabiltzaileak gehitutako sarrerari dagokion glosategi-jardueraren IDa';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'Erabiltzaileak glosategi-sarrera aldatu zuen unea';
+$string['privacy:metadata:glossary_entries:userid'] = 'Glosategi-sarrera gehitu zuen erabiltzailearen IDa';
 $string['question'] = 'Galdera';
 $string['rejectedentries'] = 'Onartu gabeko sarrerak';
 $string['rejectionrpt'] = 'Onartu gabeko txostena';
+$string['removeallglossarytags'] = 'Ezabatu glosategiko etiketa guztiak';
 $string['resetglossaries'] = 'Sarrerak ezabatu ondokotik';
 $string['resetglossariesall'] = 'Glosategi guztietako sarrerak ezabatu';
 $string['rssarticles'] = 'RSS jario berrien kopurua';
@@ -292,6 +312,8 @@ $string['sortchronogically'] = 'Kronologikoki ordenatu';
 $string['special'] = 'Berezia';
 $string['standardview'] = 'Alfabetikoki';
 $string['studentcanpost'] = 'Ikasleek sarrerak gehitzea daukate';
+$string['tagarea_glossary_entries'] = 'Glosategiko sarrerak';
+$string['tagsdeleted'] = 'Glosategiko etiketak ezabatu dira';
 $string['totalentries'] = 'Sarrerak guztira';
 $string['usedynalink'] = 'Estekatu automatikoki glosategiko sarrerak';
 $string['usedynalink_help'] = 'Glosategirako esteka automatikoa kudeatzaileak gaitu badu eta ezarpen hau gaituta badago, "Gehitu sarrera berria" aukerari esker sarrerak automatikoki estekatuko dira kontzeptuen hitz  eta esaldiekin, ikastaroan zehar agertzen direnean.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_completion_progress', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   block_completion_progress
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}

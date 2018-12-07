@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'userkey', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   userkey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,14 @@ $string['keyvaliduntil'] = 'キーの有効期限';
 $string['keyvaliduntil_help'] = 'それ以後、キーが無効になる任意の日時を選択してください (セキュリティ向上のためお勧めします)。';
 $string['keyvalue'] = 'キー値';
 $string['newuserkey'] = '新しいユーザキー';
+$string['privacy:metadata:user_private_key'] = 'ユーザの秘密鍵です。';
+$string['privacy:metadata:user_private_key:instance'] = 'スクリプトのインスタンスです。';
+$string['privacy:metadata:user_private_key:iprestriction'] = 'このキーを使用することのできるIPアドレスの範囲です。';
+$string['privacy:metadata:user_private_key:script'] = 'ユーザキーに関するスクリプトです。';
+$string['privacy:metadata:user_private_key:timecreated'] = 'キーが作成された日時です。';
+$string['privacy:metadata:user_private_key:userid'] = 'キーに関連するユーザです。';
+$string['privacy:metadata:user_private_key:validuntil'] = '秘密鍵の有効期限 (日時) です。';
+$string['privacy:metadata:user_private_key:value'] = 'キーの値です。';
 $string['userkey'] = 'ユーザキー';
 $string['userkey_help'] = 'このエクスポートプラグインにより公開されるデータに対して、ユーザがMoodleへのログインなしでアクセスするために必要な保存キーを選択してください。「新しいユーザキーを作成する」を選択することで、このフォームの送信時に新しいキーを作成することができます。';
 $string['userkeys'] = 'ユーザキー';

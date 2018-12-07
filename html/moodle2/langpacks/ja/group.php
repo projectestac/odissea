@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,7 @@ $string['deletegroupsconfirm'] = '本当に次のグループを削除しても�
 $string['deleteselectedgroup'] = '選択したグループを削除する';
 $string['editgroupingsettings'] = 'グルーピング設定を編集する';
 $string['editgroupsettings'] = 'グループ設定を編集する';
+$string['editusersgroupsa'] = '「 {$a} 」のグループを編集する';
 $string['enrolmentkey'] = '登録キー';
 $string['enrolmentkeyalreadyinuse'] = 'この登録キーはすでに別のグループで使用されています。';
 $string['enrolmentkey_help'] = '登録キーによりキーを知っているユーザにのみ限定してコースへのアクセスを許可することができます。グループ登録キーが指定された場合、そのキーによりユーザがコースに入ることができるようになるだけではなく、自動的にこのグループのメンバーとして登録されます。
@@ -111,11 +112,11 @@ $string['groupmodeforce'] = 'グループモードを強制する';
 $string['groupmodeforce_help'] = 'グループモードが強制された場合、コース内すべての活動にコースグループモードが適用されます。そのため、それぞれの活動のグループモード設定は無視されます。';
 $string['groupmode_help'] = 'この設定には下記3つのオプションがあります:
 
-* グループなし - サブグループはありません。全員が1つの大きなコミュニティの一員です。
+* グループなし
 * 分離グループ - それぞれのグループメンバーはそのグループ内のみ閲覧できます。他のグループを閲覧することはできません。
 * 可視グループ - それぞれのグループメンバーはそのグループ内で作業しますが、他のグループを閲覧することもできます。
 
-コースレベルで設定されたグループモードはコース内活動すべてのデフォルトモードとなります。グループに対応している活動では、それぞれ独自のグループモードを設定することもできます。しかし、コースレベルで強制グループモードが設定された場合、活動ごとに設定したグループモードは無視されます。';
+コースレベルで設定されたグループモードはコース内活動すべてのデフォルトモードとなります。グループに対応している活動ではそれぞれ独自のグループモードを設定することもできます。しかし、コースレベルで強制グループモードが設定された場合、活動ごとに設定したグループモードは無視されます。';
 $string['groupmy'] = 'マイグループ';
 $string['groupname'] = 'グループ名';
 $string['groupnameexists'] = 'グループ名「 {$a} 」はすでにこのコースで使用されています。他のグループ名を使用してください。';
@@ -172,6 +173,10 @@ $string['overview'] = '概要';
 $string['potentialmembers'] = '潜在的メンバー: {$a}';
 $string['potentialmembs'] = '潜在的メンバー';
 $string['printerfriendly'] = 'プリンタフレンドリ表示';
+$string['privacy:metadata:groups'] = 'グループメンバーシップのレコードです。';
+$string['privacy:metadata:groups:groupid'] = 'グループのIDです。';
+$string['privacy:metadata:groups:timeadded'] = 'タイムスタンプはユーザがグループに追加された日時を示します。';
+$string['privacy:metadata:groups:userid'] = 'グループに関連するユーザのIDです。';
 $string['random'] = 'ランダム';
 $string['removefromgroup'] = 'グループ {$a} からユーザを削除する';
 $string['removefromgroupconfirm'] = '本当にユーザ「 {$a->user} 」をグループ「 {$a->group} 」から削除してもよろしいですか?';

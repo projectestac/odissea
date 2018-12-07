@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_missingword', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_missingword
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['noanswerfound'] = 'No answers found in question';
 $string['pluginname'] = 'Missing word format';
 $string['pluginname_help'] = 'Missing word format enables questions to be imported via text file.';
 $string['pluginname_link'] = 'Missing word format';
+$string['privacy:metadata'] = 'The Missing word question format plugin does not store any personal data.';

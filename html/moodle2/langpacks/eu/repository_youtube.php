@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_youtube', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_youtube', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_youtube
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,6 +30,8 @@ $string['apikey'] = 'API giltza';
 $string['configplugin'] = 'YouTube biltegi-motaren ezarpenak';
 $string['information'] = 'Lortu <a href="https://developers.google.com/youtube/v3/getting-started">Google-ren API giltza</a> zure  Moodle gunerako.';
 $string['pluginname'] = 'YouTube bideoak';
+$string['privacy:metadata:repository_youtube'] = 'YouTube bideoak biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'Youtube-ko bideoak biltegiko erabiltzailearen bilaketaren testua.';
 $string['search'] = 'Bilatu bideoak';
 $string['sortby'] = 'Ordenatu honela';
 $string['sortpublished'] = 'Argitaratze-data';

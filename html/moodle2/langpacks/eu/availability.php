@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = 'Ez eskuragarri (bestela ezkutuan) hurrengoetak
 $string['manageplugins'] = 'Kudeatu baldintzak';
 $string['missingplugin'] = 'Baldintza-plugina falta da';
 $string['or'] = 'edo';
+$string['privacy:metadata'] = 'Eskuragarritasun-baldintzen azpisistemak ez du datu pertsonalik biltzen.';
 $string['restrictaccess'] = 'Mugatu eskuragarritasuna';
 $string['restrictbygroup'] = 'Gehitu talde/taldekatze eskuragarritasun-baldintza';
 $string['setheading'] = '{$a->number} {$a->count} sortako baldintza(k)';

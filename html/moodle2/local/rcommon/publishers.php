@@ -156,7 +156,7 @@ switch($action){
 			}
 			echo html_writer::table($table);
 
-			echo '<a onclick="M.local_rcommon.check_publishers();">'.get_string('check_publishers', 'local_rcommon').'</a> <span style="font-size:small">('.get_string('wait_please', 'local_rcommon').')</span> <img id="loading_small" style="visibility:hidden" src="'.$OUTPUT->pix_url('i/loading_small').'" alt="" />';
+			echo '<a onclick="M.local_rcommon.check_publishers();">'.get_string('check_publishers', 'local_rcommon').'</a> <span style="font-size:small">('.get_string('wait_please', 'local_rcommon').')</span> <img id="loading_small" style="visibility:hidden" src="'.$OUTPUT->image_url('i/loading_small').'" alt="" />';
 			$jsmodule = array(
 				'name'     => 'local_rcommon',
 				'fullpath' => '/local/rcommon/javascript.js',

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -139,6 +139,7 @@ $string['norequiredcapability'] = 'Geen vereiste mogelijkheid';
 $string['notoken'] = 'De tokenlijst is leeg';
 $string['onesystemcontrolling'] = 'Een extern systeem toestaan Moodle te controleren';
 $string['onesystemcontrollingdescription'] = 'Onderstaande stappen helpen je om de Moodle webservice te configureren voor een systeem dat interageert met Moodle controleert (vb een leerlinginformatiesysteem). Deze stappen helpen je om de aangeraden tokenauthenticatiemethode (met beveiligingssleutels) te configureren.';
+$string['onlyseecreatedtokens'] = 'Elk token kan verwijderd worden, maar je kunt enkel tokens zien die jij gemaakt hebt.';
 $string['operation'] = 'Operatie';
 $string['optional'] = 'Optioneel';
 $string['passwordisexpired'] = 'Wachtwoord is verlopen';
@@ -189,7 +190,7 @@ $string['step'] = 'Stap';
 $string['supplyinfo'] = 'Meer details';
 $string['testauserwithtestclientdescription'] = 'Simuleer externe toegang tot de service door de webservice test client te gebruiken. Voor je dat kunt doen, moet je aanmelden met de gebruiker die de "moodle/webservice:createtoken"-mogelijkheid heeft en moet je zijn veiligheidssleutel (token) via de voorkeuren-pagina van de gebruiker halen. Je zult dit token gebruiken in de testclient. In de testclient kies je ook een ingeschakeld protocol met tokenauthenticatie. <strong>Waarschuwing: de functies die je test WORDEN UITGEVOERD voor deze gebruiker. Wees voorzichtig wat je kiest om te testen!!!</strong>';
 $string['testclient'] = 'Webservice testclient';
-$string['testclientdescription'] = '* De webservice testcliënt <strong>voert de functies ECHT uit</strong>. Test geen functies die je niet ken.<br />* Alle bestaande webservice functies zijn nog niet geïmplementeerd in de testcliënt<br />* Om te controleren of een gebruiker geen toegang heeft tot sommige functies, kun je sommige functies testen die je niet toestaat. <br />* Om duidelijke foutmeldingen te krijgen kun debugging inschakelen naar {$a->mode} in {$a->atag}.';
+$string['testclientdescription'] = '* De webservice testclient <strong>voert de functies ECHT uit</strong>. Test geen functies die je niet ken.<br />* Alle bestaande webservice functies zijn nog niet geïmplementeerd in de testclient<br />* Om te controleren of een gebruiker geen toegang heeft tot sommige functies, kun je sommige functies testen die je niet toestaat. <br />* Om duidelijlke foutmeldingen te krijgen kun debugging inschakelen naar {$a->mode} in {$a->atag}.';
 $string['testwithtestclient'] = 'Test de service';
 $string['testwithtestclientdescription'] = 'Simuleer externe toegang tot de service met de webservice testclient. Gebruik een ingeschakeld protocol met tokenauthenticatie.<strong>Waarschuwing: de functies die je test ZULLEN UITGEVOERD WORDEN. Wees voorzichtig met wat je kiest om te testen</strong>';
 $string['token'] = 'Token';

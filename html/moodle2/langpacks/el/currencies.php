@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'currencies', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   currencies
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['AED'] = 'Dirham Ηνωμένων Αραβικών Εμιράτων';
 $string['ALL'] = 'Lek Αλβανίας';
 $string['ANG'] = 'Netherlands Antillian Guilder';
-$string['AUD'] = 'Δολάριο Αυστραλίας';
+$string['AUD'] = 'Dollar Αυστραλίας';
 $string['AWG'] = 'Φλορίνι Αρούμπας';
 $string['BAM'] = 'Μάρκο Βοσνίας-Ερζεγοβίνης';
 $string['BBD'] = 'Δολάριο Μπαρμπάντος';

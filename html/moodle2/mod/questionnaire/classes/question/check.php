@@ -60,14 +60,22 @@ class check extends base {
     }
 
     /**
+     * Override this and return true if the question type allows dependent questions.
+     * @return boolean
+     */
+    public function allows_dependents() {
+        return true;
+    }
+
+    /**
      * Return the context tags for the check question template.
      * @param object $data
-     * @param string $descendantdata
+     * @param array $dependants Array of all questions/choices depending on this question.
      * @param boolean $blankquestionnaire
      * @return object The check question context tags.
      *
      */
-    protected function question_survey_display($data, $descendantsdata, $blankquestionnaire=false) {
+    protected function question_survey_display($data, $dependants, $blankquestionnaire=false) {
         // Check boxes.
         $otherempty = false;
         if (!empty($data) ) {
@@ -82,9 +90,8 @@ class check extends base {
                 foreach ($boxes as $box) {
                     $pos = strpos($box, 'other_');
                     if (is_int($pos) == true) {
-                        $otherchoice = substr($box, 6);
                         $resp = 'q'.$this->id.''.substr($box, 5);
-                        if (!$data->$resp) {
+                        if (isset($data->$resp) && (trim($data->$resp) == false)) {
                             $otherempty = true;
                         }
                     }
@@ -99,7 +106,6 @@ class check extends base {
                     $min = $max; // Sanity check.
                 }
                 $min = min($nbchoices, $min);
-                $msg = '';
                 if ($nbboxes < $min || $nbboxes > $max) {
                     $msg = get_string('boxesnbreq', 'questionnaire');
                     if ($min == $max) {
@@ -136,7 +142,7 @@ class check extends base {
                 $checkbox->name = 'q'.$this->id.'[]';
                 $checkbox->value = $id;
                 $checkbox->id = 'checkbox_'.$id;
-                $checkbox->label = format_text($contents->text, FORMAT_HTML).$contents->image;
+                $checkbox->label = format_text($contents->text, FORMAT_HTML, ['noclean' => true]).$contents->image;
                 if ($checked) {
                     $checkbox->checked = $checked;
                 }
@@ -147,7 +153,7 @@ class check extends base {
                         array('', get_string('other', 'questionnaire')),
                         $choice->content);
                 $cid = 'q'.$this->id.'_'.$id;
-                if (!empty($data) && !empty($data->$cid)) {
+                if (!empty($data) && isset($data->$cid) && (trim($data->$cid) != false)) {
                     $checked = true;
                 } else {
                     $checked = false;
@@ -158,9 +164,9 @@ class check extends base {
                 $checkbox->name = $name;
                 $checkbox->oname = $cid;
                 $checkbox->value = $value;
-                $checkbox->ovalue = (!empty($data->$cid) ? stripslashes($data->$cid) : '');
+                $checkbox->ovalue = (isset($data->$cid) && !empty($data->$cid) ? stripslashes($data->$cid) : '');
                 $checkbox->id = 'checkbox_'.$id;
-                $checkbox->label = format_text($othertext.'', FORMAT_HTML);
+                $checkbox->label = format_text($othertext.'', FORMAT_HTML, ['noclean' => true]);
                 if ($checked) {
                     $checkbox->checked = $checked;
                 }
@@ -199,7 +205,8 @@ class check extends base {
                     $chobj->selected = 1;
                 }
                 $chobj->name = $id.$uniquetag++;
-                $chobj->content = (($choice->content === '') ? $id : format_text($choice->content, FORMAT_HTML));
+                $chobj->content = (($choice->content === '') ? $id : format_text($choice->content, FORMAT_HTML,
+                    ['noclean' => true]));
             } else {
                 $othertext = preg_replace(
                         array("/^!other=/", "/^!other/"),
@@ -233,7 +240,7 @@ class check extends base {
                 if (strpos($resp, 'other_') !== false) {
                     // ..."other" choice is checked but text box is empty.
                     $othercontent = "q".$this->id.substr($resp, 5);
-                    if (empty($responsedata->$othercontent)) {
+                    if (trim($responsedata->$othercontent) == false) {
                         $valid = false;
                         break;
                     }
@@ -252,7 +259,7 @@ class check extends base {
                 $min = $max;     // Sanity check.
             }
             $min = min($nbquestchoices, $min);
-            if ( $nbrespchoices && ($nbrespchoices < $min || $nbrespchoices > $max) ) {
+            if ($nbrespchoices && (($nbrespchoices < $min) || ($nbrespchoices > $max))) {
                 // Number of ticked boxes is not within min and max set limits.
                 $valid = false;
             }

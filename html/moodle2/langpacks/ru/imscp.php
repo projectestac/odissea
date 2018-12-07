@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'ru', branch 'MOODLE_32_STABLE'
+ * Strings for component 'imscp', language 'ru', branch 'MOODLE_34_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['contentheader'] = 'Содержимое';
 $string['deploymenterror'] = 'Пакет содержимого IMS с ошибкой!';
 $string['imscp:addinstance'] = 'Добавлять новый пакет содержимого IMS';
 $string['imscp:view'] = 'Просматривать содержимое IMS';
+$string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Пакет контента IMS.';
 $string['keepold'] = 'Архив пакетов';
 $string['keepoldexplain'] = 'Сколько пакетов следует архивировать?';
 $string['modulename'] = 'Пакет IMS содержимого';

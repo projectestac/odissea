@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'admin', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   admin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -210,7 +210,7 @@ $string['configenablecalendarexport'] = 'Aktivera export av och prenumeration p�
 $string['configenablecomments'] = 'Aktivera kommentarer';
 $string['configenablecourserequests'] = 'Det här kommer att tillåta alla användare att begära att en kurs ska skapas.';
 $string['configenabledevicedetection'] = 'Möjliggör upptäckt av mobiler, smartphones, plattor eller standard (stationära datorer, bärbara datorer, etc.) för tillämpning av teman och andra funktioner.';
-$string['configenablemobilewebservice'] = 'Aktivera mobiltjänst för den officiella Moodle app-en eller annan app som begär det. För mer information, läs {$a}';
+$string['configenablemobilewebservice'] = 'Aktivera mobiltjänst för den officiella Moodle-appen eller annan app som begär det. För mer information, läs {$a}';
 $string['configenablerssfeeds'] = 'Den här omkopplaren kommer att aktivera RSS-inmatningar från hela webbplatsen. För att faktiskt se några förändringar så behöver Du aktivera RSS-inmatningar i de individuella modulerna också - gå till inställningar för moduler i Administration->konfiguration';
 $string['configenablerssfeedsdisabled'] = 'Detta är inte tillgängligt eftersom RSS-inmatningar är avaktiverade på hela webbplatsen. För att aktivera dem behöver Du gå till inställning av variabler i Administration->konfiguration';
 $string['configenablerssfeedsdisabled2'] = 'RSS-matningar är avaktiverade på servernivå. Du måste först aktivera dem i Server/RSS.';
@@ -700,6 +700,7 @@ $string['mnetrestore_extusers_admin'] = '<strong>OBS:</strong> Denna säkerhetsk
 $string['mnetrestore_extusers_mismatch'] = '<strong>OBS!</strong> Den här säkerhetskopian kommer uppenbarligen från en annan installation av Moodle och innehåller fjärranvändarkonton i ett nätverk för Moodle som kanske inte går att återställa. Den här operationen stödjs inte. Om Du är säker på att den var skapad på den här installationen av Moodle, eller    om Du kan säkerställa att alla de nödvändiga värdarna i nätverket för Moodle är konfigurerade så kan Du ändå försöka fullfölja återställandet.';
 $string['mnetrestore_extusers_noadmin'] = '<strong>OBS:</strong> Denna säkerhetskopia verkar komma från en annan Moodle installation och innehåller användarkonton från  utanförliggande Moodlenätverk. Det är inte tillåtet att utföra denna typ av återställning. Kontakta administratören av webbplatsen eller,alternativt, återställa denna kurs utan någon användarinformation (moduler, filer ...)';
 $string['mobile'] = 'Mobil';
+$string['mobilenotconfiguredwarning'] = 'Moodle Mobile är inte aktiverat.';
 $string['modchooserdefault'] = 'Aktivitetsväljaren standard';
 $string['modeditdefaults'] = 'Standardvärden för inställningar för aktiviteter';
 $string['modsettings'] = 'Administrera aktiviteter';
@@ -772,6 +773,7 @@ $string['pluginscheckfailed'] = 'Beroenden kontrollen misslyckades för {$a->plu
 $string['pluginschecktodo'] = 'Du måste lösa alla plugin-krav innan du fortsätter att installera denna Moodle version!';
 $string['pluginsoverview'] = 'Plugins översikt';
 $string['pluginsoverviewsee'] = 'Se <a href="{$a->url}">plugins översikt</a> sida för mer information.';
+$string['privacyandpolicies'] = 'Integritet och policyer';
 $string['profilecategory'] = 'Kategori';
 $string['profilecategoryname'] = 'Namn på kategori (måste vara unikt)';
 $string['profilecategorynamenotunique'] = 'Det här kategorinamnet används redan';
@@ -905,7 +907,7 @@ $string['sitemaintenancewarning'] = 'Din webbplats är f.n. i ett läge för und
 $string['sitepolicies'] = 'Regler för användning av webbplatsen';
 $string['sitepolicy'] = 'URL till regler för användning av webbplatsen';
 $string['sitepolicyguest'] = 'URL till webbplatsens policy för gäster';
-$string['sitepolicy_help'] = 'Har Du en policy för webbplatsen som alla användare måste se och godkänna innan de får tillträde till den här webbplatsen? Då ska Du ange URL-en till den här. URL-en kan peka vart som helst - en lämplig plats kunde vara en fil i katalogen för webbplatsens filer t.ex. http://dinwebbplats/file.php/1/policy.html';
+$string['sitepolicy_help'] = 'Har du en policy för webbplatsen som alla användare måste se och godkänna innan de får tillträde till den här webbplatsen? Då ska du ange URL-en till den här. URL-en kan peka vart som helst - en lämplig plats kunde vara en fil i katalogen för webbplatsens filer t.ex. http://dinwebbplats/file.php/1/policy.html';
 $string['sitesectionhelp'] = 'Om detta är valt så kommer en sektion för ämnen att visas på webbplatsens ingångssida (hem/första).';
 $string['slasharguments'] = 'Använd \'snedstrecks\'-argument';
 $string['smartpix'] = 'Smart sökning av bilder';

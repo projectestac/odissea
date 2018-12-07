@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_overview', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,16 +32,8 @@ $string['configotherexpanded'] = '若启用，默认其他课程将会展开，�
 $string['configpreservestates'] = '若启用，会保存用户所设定的折叠/展开状态，并在每次打开时自动载入。';
 $string['course_overview:addinstance'] = '添加一个课程概览版块';
 $string['course_overview:myaddinstance'] = '在个人主页新增一个课程概览版块';
-$string['defaultmaxcourses'] = '默认最大课程数';
-$string['defaultmaxcoursesdesc'] = '在课程概览版块中最多可显示几门课程，0代表显示全部课程';
 $string['expandall'] = '展开全部的课程列表';
-$string['forcedefaultmaxcourses'] = '强制使用最大课程数';
-$string['forcedefaultmaxcoursesdesc'] = '设了后用户将不能更改个人设定';
 $string['fullpath'] = '完整的类和子类名称';
-$string['hiddencoursecount'] = '你有{$a}门隐藏课程';
-$string['hiddencoursecountplural'] = '你有{$a}门隐藏课程';
-$string['hiddencoursecountwithshowall'] = '你有{$a->coursecount} 门隐藏的课程({$a->showalllink})';
-$string['hiddencoursecountwithshowallplural'] = '你有{$a->coursecount} 门隐藏的课程({$a->showalllink})';
 $string['message'] = '消息';
 $string['messages'] = '消息';
 $string['moveafterhere'] = '移动{$a->movingcoursename} 课程到 {$a->currentcoursename}之后';
@@ -53,17 +45,14 @@ $string['none'] = '无';
 $string['numtodisplay'] = '显示课程的数量：';
 $string['onlyparentname'] = '仅显示上级类名';
 $string['otherexpanded'] = '其他展开的课程';
-$string['pluginname'] = '课程概览';
+$string['pluginname'] = '课程概览（旧版）';
 $string['preservestates'] = '保留展开状态';
 $string['shortnameprefix'] = '包含{$a}';
 $string['shortnamesufixprural'] = '(和{$a}个其他)';
 $string['shortnamesufixsingular'] = '(和{$a}个其他)';
 $string['showcategories'] = '显示类名';
 $string['showcategoriesdesc'] = '在每一个课程下是否显示课程类别？';
-$string['showchildren'] = '显示子课程';
-$string['showchildrendesc'] = '是否在主课程标题下显示子课程？';
-$string['showwelcomearea'] = '显示欢迎版块';
-$string['showwelcomeareadesc'] = '显示在课程列表上方？';
+$string['title'] = '课程概览';
 $string['view_edit_profile'] = '（浏览并编辑你的个人资料）';
 $string['welcome'] = '{$a}，欢迎您！';
 $string['youhavemessages'] = '您有{$a}条未读';

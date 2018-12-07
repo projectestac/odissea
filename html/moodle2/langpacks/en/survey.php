@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,10 @@ $string['guestsnotallowed'] = 'Only enrolled users are able to submit surveys';
 $string['howlong'] = 'How long did this survey take you to complete?';
 $string['howlongoptions'] = 'under 1 min,1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,more than 10';
 $string['ifoundthat'] = 'I found that';
+$string['indicator:cognitivedepth'] = 'Survey cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Survey activity.';
+$string['indicator:socialbreadth'] = 'Survey social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Survey activity.';
 $string['introtext'] = 'Introduction text';
 $string['invalidsurveyid'] = 'Survey ID was incorrect';
 $string['invalidtmptid'] = 'Invalid template id';
@@ -233,6 +237,15 @@ $string['pluginname'] = 'Survey';
 $string['preferred'] = 'Preferred';
 $string['preferredclass'] = 'Class preferred';
 $string['preferredstudent'] = '{$a} preferred';
+$string['privacy:metadata:analysis'] = 'A record of survey answers analysis.';
+$string['privacy:metadata:analysis:notes'] = 'Notes saved against a user\'s answers.';
+$string['privacy:metadata:analysis:userid'] = 'The ID of the user answering the survey.';
+$string['privacy:metadata:answers'] = 'A collection of answers to surveys.';
+$string['privacy:metadata:answers:answer1'] = 'Field to store the answer to a question.';
+$string['privacy:metadata:answers:answer2'] = 'Additional field to store the answer to a question.';
+$string['privacy:metadata:answers:question'] = 'The question.';
+$string['privacy:metadata:answers:time'] = 'The time when the answer was posted.';
+$string['privacy:metadata:answers:userid'] = 'The ID of the user who submitted their answer.';
 $string['question'] = 'Question';
 $string['questions'] = 'Questions';
 $string['questionsnotanswered'] = 'Some of the multiple choice questions have not been answered.';

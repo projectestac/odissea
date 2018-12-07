@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,10 @@ $string['folder:addinstance'] = 'Verzeichnis hinzufügen';
 $string['foldercontent'] = 'Dateien und Verzeichnisse';
 $string['folder:managefiles'] = 'Dateien im Verzeichnis verwalten';
 $string['folder:view'] = 'Verzeichnisinhalt sehen';
+$string['indicator:cognitivedepth'] = 'Verzeichnis kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in bei einem Verzeichnis erreicht hat.';
+$string['indicator:socialbreadth'] = 'Verzeichnis sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die ein/e Teilnehmer/in bei einem Verzeichnis erreicht hat.';
 $string['maxsizetodownload'] = 'Max. Verzeichnisgröße (MB) zum Herunterladen';
 $string['maxsizetodownload_help'] = 'Die Option legt die maximale Verzeichnisgröße fest, die als ZIP-Archiv heruntergeladen werden kann. Wenn der Wert Null ist, ist die Verzeichnisgröße nicht beschränkt.';
 $string['modulename'] = 'Verzeichnis';
@@ -54,6 +58,7 @@ $string['page-mod-folder-view'] = 'Verzeichnishauptseite';
 $string['page-mod-folder-x'] = 'Jede Verzeichnisseite';
 $string['pluginadministration'] = 'Verzeichnis-Administration';
 $string['pluginname'] = 'Verzeichnis';
+$string['privacy:metadata'] = 'Das Plugin Verzeichnis speichert keine personenbezogenen Daten.';
 $string['search:activity'] = 'Verzeichnis';
 $string['showdownloadfolder'] = 'Taste \'Verzeichnis herunterladen\' anzeigen';
 $string['showdownloadfolder_help'] = 'Wenn Sie für diese Option \'Ja\' wählen, wird eine Taste zum Herunterladen des Verzeichnisinhalts als ZIP-Archiv angezeigt.';

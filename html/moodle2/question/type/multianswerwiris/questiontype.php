@@ -67,7 +67,7 @@ class qtype_multianswerwiris extends qtype_wq {
         parent::initialise_question_instance($question, $questiondata);
 
         $question->subquestions = $question->base->subquestions;
-        // Add WIRIS quizzes question to subquestions.
+        // Add Wiris Quizzes question to subquestions.
         foreach ($question->subquestions as $key => $subquestion) {
             if (substr($subquestion->get_type_name(), -5) == 'wiris') {
                 $question->subquestions[$key]->wirisquestion = $question->wirisquestion;

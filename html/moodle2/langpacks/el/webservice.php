@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'webservice', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,12 +41,13 @@ $string['iprestriction'] = 'Περιορισμοί IP';
 $string['key'] = 'Κλειδί';
 $string['manageprotocols'] = 'Διαχείριση πρωτοκόλλων';
 $string['managetokens'] = 'Διαχείριση οντοτήτων (tokens)';
+$string['missingversionfile'] = 'Σφάλμα στον κώδικα: το αρχείο version.php λείπει από το στοιχείο λογισμικού {$a}';
 $string['notoken'] = 'Η λίστα οντοτήτων (tokens) είναι άδεια.';
 $string['operation'] = 'Λειτουργία';
 $string['protocol'] = 'Πρωτόκολλο';
 $string['restrictedusers'] = 'Εξουσιοδοτημένοι χρήστες μόνο';
 $string['restrictedusers_help'] = 'Αυτή η ρύθμιση καθορίζει αν όλοι οι χρήστες με άδεια να δημιουργήσουν μια οντότητα (token) διαδικτυακής υπηρεσίας μπορούν να δημιουργήσουν μια οντότητα (token) για αυτή την υπηρεσία μέσω της σελίδας κλειδιών ασφαλείας ή μόνο εξουσιοδοτημένοι χρήστες μπορούν να το κάνουν.';
-$string['securitykeys'] = 'Κλειδία ασφαλείας';
+$string['securitykeys'] = 'Κλειδιά ασφαλείας';
 $string['service'] = 'Υπηρεσία';
 $string['servicehelpexplanation'] = 'Μια υπηρεσία είναι ένα σύνολο λειτουργιών. Μια υπηρεσία μπορεί να προσπελαστεί από όλους τους χρήστες ή μόνο από ορισμένους χρήστες.';
 $string['servicesbuiltin'] = 'Κατασκευασμένο με υπηρεσίες';

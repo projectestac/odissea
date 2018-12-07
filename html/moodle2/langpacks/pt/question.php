@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -178,7 +178,7 @@ $string['exportquestions_help'] = 'Esta função permite a exportação de uma c
 $string['exportquestions_link'] = 'pergunta/exportar';
 $string['feedback'] = 'Feedback';
 $string['filecantmovefrom'] = 'Os ficheiros das perguntas não podem ser movidos porque não tem permissões para apagar ficheiros do local para onde deseja mover as perguntas.';
-$string['filecantmoveto'] = 'Os ficheiros das perguntas não podem ser movidos porque não tem permissões para adicionar ficheiros no local para onde deseja mover as perguntas.';
+$string['filecantmoveto'] = 'Os ficheiros das perguntas não podem ser movidos porque não tem permissão para adicionar ficheiros no local para onde deseja mover as perguntas.';
 $string['fileformat'] = 'Formato do ficheiro';
 $string['filesareacourse'] = 'área de ficheiros da disciplina';
 $string['filesareasite'] = 'área de ficheiros do site';
@@ -235,7 +235,7 @@ $string['lastmodifiedby'] = 'Última modificação por';
 $string['lasttry'] = 'Última tentativa';
 $string['linkedfiledoesntexist'] = 'O ficheiro, convertido em hiperligação {$a}, não existe.';
 $string['makechildof'] = 'Tornar subcategoria de \'{$a}';
-$string['makecopy'] = 'Gravar como nova pergunta';
+$string['makecopy'] = 'Guardar como nova pergunta';
 $string['maketoplevelitem'] = 'Tornar categoria de topo';
 $string['manualgradeinvalidformat'] = 'Esse número não é válido.';
 $string['manualgradeoutofrange'] = 'Esta nota está fora do intervalo válido.';
@@ -320,11 +320,34 @@ $string['penaltyforeachincorrecttry_help'] = 'Esta opção configura qual a pena
 A penalização é uma proporção da nota da pergunta, logo, se a pergunta vale 3 pontos, e o fator de penalização é de 0.3333333, então o aluno tem a nota 3 se acertar à primeira, 2 se acertar à segunda e 1 se apenas acertar à terceira.';
 $string['permissionedit'] = 'Editar esta pergunta';
 $string['permissionmove'] = 'Mover esta pergunta';
-$string['permissionsaveasnew'] = 'Gravar como nova pergunta';
+$string['permissionsaveasnew'] = 'Guardar como nova pergunta';
 $string['permissionto'] = 'Tem permissão para:';
 $string['previewquestion'] = 'Pré-visualizar a pergunta: {$a}';
+$string['privacy:metadata:database:question'] = 'Detalhes sobre uma expressão específica.';
+$string['privacy:metadata:database:question_attempts'] = 'Informação sobre tentativas de uma questão específica.';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'Uma indicação de que o utilizador marcou esta questão durante uma tentativa.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Resumo da resposta à questão.';
+$string['privacy:metadata:database:question_attempt_step_data'] = 'Etapas da tentativa podem ter informação adicional sobre aquela etapa específica. Os dados são armazenados na tabela step_data.';
+$string['privacy:metadata:database:question_attempt_step_data:name'] = 'O nome dos dados do item.';
+$string['privacy:metadata:database:question_attempt_step_data:value'] = 'O valor dos dados do item.';
+$string['privacy:metadata:database:question_attempt_steps'] = 'Cada tentativa tem um número de etapas a indicar diferentes fases, desde o início ao marcar como concluído. Esta tabela armazena a informação sobre cada uma desses etapas.';
+$string['privacy:metadata:database:question_attempt_steps:fraction'] = 'A avaliação atribuída a esta tentativa configurado para um valor fora de 1.';
+$string['privacy:metadata:database:question_attempt_steps:state'] = 'O estado da tentativa no final da transição.';
+$string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'A data e hora em que a transição começou.';
+$string['privacy:metadata:database:question_attempt_steps:userid'] = 'O utilizador que realizou a transição.';
+$string['privacy:metadata:database:question_attempts:timemodified'] = 'A hora em que a tentativa foi atualizada.';
+$string['privacy:metadata:database:question:createdby'] = 'A pessoa que criou a questão.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'O feedback geral para esta questão.';
+$string['privacy:metadata:database:question:modifiedby'] = 'A pessoa que atualizou a pergunta pela última vez.';
+$string['privacy:metadata:database:question:name'] = 'O nome da pergunta';
+$string['privacy:metadata:database:question:questiontext'] = 'O texto da pergunta';
+$string['privacy:metadata:database:question:timecreated'] = 'A data e hora de quando esta questão foi criada';
+$string['privacy:metadata:database:question:timemodified'] = 'A data e hora que quando este teste foi atualizado.';
+$string['privacy:metadata:link:qbehaviour'] = 'O subsistema Pergunta utiliza o módulo Pomportamento das perguntas.';
+$string['privacy:metadata:link:qformat'] = 'O subsistema Pergunta utiliza lo módulo Formato da questão com a finalidade de importar e exportar perguntas em formatos diferentes.';
+$string['privacy:metadata:link:qtype'] = 'O subsistema Pergunta interage com o módulo Tipo de pergunta, que contém os diferentes tipos de pergunta.';
 $string['published'] = 'partilhada';
-$string['qtypeveryshort'] = 'Tipo de pergunta';
+$string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = 'A <a href="{$a->qurl}">pergunta "{$a->name}" ({$a->qtype})</a> encontra-se nesta categoria, mas também está a ser usada no <a href="{$a->qurl}">teste "{$a->quizname}"</a> em outra disciplina "{$a->coursename}".';
 $string['questionbank'] = 'Base de dados de perguntas';
 $string['questionbehaviouradminsetting'] = 'Configurações do comportamento das perguntas';
@@ -342,7 +365,7 @@ $string['questionno'] = 'Pergunta {$a}';
 $string['questionpreviewdefaults'] = 'Predefinições da pré-visualização da pergunta';
 $string['questionpreviewdefaults_desc'] = 'Estas configurações predefinidas são usadas quando o utilizador pré-visualiza pela primeira vez uma pergunta na Base de dados de perguntas. Assim que o utilizador tiver pré-visualizado a pergunta, as suas preferências pessoais serão guardadas como preferências do utilizador.';
 $string['questions'] = 'Perguntas';
-$string['questionsaveerror'] = 'Ocorreram erros ao gravar a pergunta - ({$a})';
+$string['questionsaveerror'] = 'Ocorreram erros ao guardar a pergunta - ({$a})';
 $string['questionsinuse'] = '(*) As perguntas assinaladas com asterisco ainda estão em uso em alguns testes. Estas perguntas não serão apagadas dos testes mas apenas da categoria.';
 $string['questionsmovedto'] = 'As perguntas que ainda se encontram em uso foram movidas para "{$a}" na categoria ascendente da disciplina.';
 $string['questionsrescuedfrom'] = 'Perguntas guardadas do contexto {$a}.';
@@ -381,6 +404,7 @@ $string['specificfeedback_help'] = 'Feedback correspondente à resposta que o al
 $string['started'] = 'Iniciado';
 $string['state'] = 'Estado';
 $string['step'] = 'Passo';
+$string['steps'] = 'Passos';
 $string['stoponerror'] = 'Parar se ocorrer um erro';
 $string['stoponerror_help'] = 'Esta configuração determina se o processo de importação é interrompido quando um erro é detetado parando assim a importação, ou se as perguntas com erros são ignoradas sendo apenas importadas as válidas.';
 $string['submissionoutofsequence'] = 'Acesso fora da sequência. Por favor, não clique no botão Retroceder enquanto trabalha nas perguntas do teste.';
@@ -398,8 +422,8 @@ $string['technicalinforesponsesummary'] = 'Sumário da resposta: {$a}';
 $string['technicalinforightsummary'] = 'Resumo da resposta correta: {$a}';
 $string['technicalinfostate'] = 'Estado da pergunta: {$a}';
 $string['technicalinfovariant'] = 'Variante da pergunta: {$a}';
-$string['tofilecategory'] = 'Gravar categoria em ficheiro';
-$string['tofilecontext'] = 'Gravar contexto em ficheiro';
+$string['tofilecategory'] = 'Guardar categoria em ficheiro';
+$string['tofilecontext'] = 'Guardar contexto em ficheiro';
 $string['uninstallbehaviour'] = 'Desinstalar este comportamento da pergunta.';
 $string['uninstallqtype'] = 'Desinstalar este tipo de pergunta.';
 $string['unknown'] = 'Desconhecido(a)';

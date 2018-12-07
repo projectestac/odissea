@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddimageortext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,6 +39,7 @@ $string['dropbackground'] = 'Imagen de fondo para arrastrar los marcadores dentr
 $string['dropzone'] = 'Dejar caer la zona {$a}';
 $string['dropzoneheader'] = 'Dejar caer las zonas';
 $string['formerror_disallowedtags'] = 'Lo sentimos, las etiquetas HTML no están permitidas en el texto arrastrable.';
+$string['formerror_nobgimage'] = 'Tiene que seleccionar una imagen para usarla como el fondo para el área de arrastrar y soltar.';
 $string['formerror_nofile'] = 'Necesita subir o seleccionar un archivo para usarlo aquí.';
 $string['formerror_notintxleft'] = 'La coordenada x debe ser un entero';
 $string['formerror_notintytop'] = 'La coordenada y debe ser un entero';
@@ -47,6 +48,8 @@ $string['label'] = 'Texto';
 $string['pluginname'] = 'Arrastrar y soltar sobre una imagen';
 $string['pluginnameadding'] = 'Añadir arrastrar y soltar sobre una imagen';
 $string['pluginnameediting'] = 'Editar arrastrar y soltar sobre una imagen';
+$string['pluginname_help'] = 'Las preguntas de arrastrar y soltar en imagen requieren que el usuario arrastre imágenes o etiquetas de texto y las suelte dentro de zonas para soltar definidas sobre de una imagen de fondo. Los ítems arrastrables pueden agruparse de forma tal que todos los ítems en un grupo particular estén coloreados igual que las zonas para soltarlos. Los ítem arrastrables marcados como ilimitados pueden soltarse adentro de más de una zona.';
+$string['pluginnamesummary'] = 'Las imágenes o etiquetas de texto son arrastradas y soltadas dentro de zonas para soltar sobre una imagen de fondo.';
 $string['previewareaheader'] = 'Vista Previa';
 $string['previewareamessage'] = 'Seleccione una imagen de fondo, especifique los elementos que se pueden arrastrar y defina las zonas de colocación sobre las que deben ser arrastrados.';
 $string['refresh'] = 'Refrescar vista previa';

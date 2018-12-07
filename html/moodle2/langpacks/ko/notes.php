@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewnote'] = '새 학습관찰 추가';
 $string['addnewnoteselect'] = '학습관찰 대상자를 선택하세요.';
 $string['bynameondate'] = '{$a->name} - {$a->date}';
-$string['cannotdeletepost'] = '게시물 삭제 중 오류 발생';
 $string['configenablenotes'] = '사용자의 학습관찰 내용을 저장할 수 있게 함';
 $string['content'] = '내용';
 $string['course'] = '강좌';

@@ -71,9 +71,10 @@ class feedback_item_multichoice extends feedback_item_base {
     public function save_item() {
         global $DB;
 
-        if (!$item = $this->item_form->get_data()) {
+        if (!$this->get_data()) {
             return false;
         }
+        $item = $this->item;
 
         if (isset($item->clone_item) AND $item->clone_item) {
             $item->id = ''; //to clone this item
@@ -315,14 +316,19 @@ class feedback_item_multichoice extends feedback_item_base {
         $inputname = $item->typ . '_' . $item->id;
         $options = $this->get_options($item);
         $separator = !empty($info->horizontal) ? ' ' : '<br>';
-        $tmpvalue = $form->get_item_value($item);
+        $tmpvalue = $form->get_item_value($item) ?? 0; // Used for element defaults, so must be a valid value (not null).
 
+        // Subtypes:
+        // r = radio
+        // c = checkbox
+        // d = dropdown.
         if ($info->subtype === 'd' || ($info->subtype === 'r' && $form->is_frozen())) {
             // Display as a dropdown in the complete form or a single value in the response view.
             $element = $form->add_form_element($item,
-                    ['select', $inputname.'[0]', $name, array(0 => '') + $options, array('class' => $class)],
+                    ['select', $inputname, $name, array(0 => '') + $options, array('class' => $class)],
                     false, false);
-            $form->set_element_default($inputname.'[0]', $tmpvalue);
+            $form->set_element_default($inputname, $tmpvalue);
+            $form->set_element_type($inputname, PARAM_INT);
         } else if ($info->subtype === 'c' && $form->is_frozen()) {
             // Display list of checkbox values in the response view.
             $objs = [];
@@ -353,26 +359,26 @@ class feedback_item_multichoice extends feedback_item_base {
             } else {
                 // Radio.
                 if (!array_key_exists(0, $options)) {
-                    // Always add '0' as hidden element, otherwise form submit data may not have this element.
-                    $objs[] = ['hidden', $inputname.'[0]'];
+                    // Always add a hidden element to the group to guarantee we get a value in the submit data.
+                    $objs[] = ['hidden', $inputname, 0];
                 }
                 foreach ($options as $idx => $label) {
-                    $objs[] = ['radio', $inputname.'[0]', '', $label, $idx];
+                    $objs[] = ['radio', $inputname, '', $label, $idx];
                 }
                 // Span to hold the element id. The id is used for drag and drop reordering.
                 $objs[] = ['static', '', '', html_writer::span('', '', ['id' => 'feedback_item_' . $item->id])];
                 $element = $form->add_form_group_element($item, 'group_'.$inputname, $name, $objs, $separator, $class);
-                $form->set_element_default($inputname.'[0]', $tmpvalue);
-                $form->set_element_type($inputname.'[0]', PARAM_INT);
+                $form->set_element_default($inputname, $tmpvalue);
+                $form->set_element_type($inputname, PARAM_INT);
             }
         }
 
         // Process 'required' rule.
         if ($item->required) {
             $elementname = $element->getName();
-            $form->add_validation_rule(function($values, $files) use ($elementname, $item) {
+            $form->add_validation_rule(function($values) use ($elementname, $item) {
                 $inputname = $item->typ . '_' . $item->id;
-                return empty($values[$inputname]) || !array_filter($values[$inputname]) ?
+                return empty($values[$inputname]) || (is_array($values[$inputname]) && !array_filter($values[$inputname])) ?
                     array($elementname => get_string('required')) : true;
             });
         }
@@ -384,6 +390,9 @@ class feedback_item_multichoice extends feedback_item_base {
      * @return string
      */
     public function create_value($value) {
+        // Could be an array (multichoice checkbox) or single value (multichoice radio or dropdown).
+        $value = is_array($value) ? $value : [$value];
+
         $value = array_unique(array_filter($value));
         return join(FEEDBACK_MULTICHOICE_LINE_SEP, $value);
     }
@@ -471,5 +480,27 @@ class feedback_item_multichoice extends feedback_item_base {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Return the analysis data ready for external functions.
+     *
+     * @param stdClass $item     the item (question) information
+     * @param int      $groupid  the group id to filter data (optional)
+     * @param int      $courseid the course id (optional)
+     * @return array an array of data with non scalar types json encoded
+     * @since  Moodle 3.3
+     */
+    public function get_analysed_for_external($item, $groupid = false, $courseid = false) {
+
+        $externaldata = array();
+        $data = $this->get_analysed($item, $groupid, $courseid);
+
+        if (!empty($data[2]) && is_array($data[2])) {
+            foreach ($data[2] as $d) {
+                $externaldata[] = json_encode($d);
+            }
+        }
+        return $externaldata;
     }
 }

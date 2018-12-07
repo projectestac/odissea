@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopform_numerrors', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopform_numerrors
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,3 +43,5 @@ $string['maperror'] = 'Garrantzia duten errore kopurua berdina edo txikiagoa da'
 $string['mapgrade'] = 'Bidalketaren kalifikazioa';
 $string['percents'] = '% {$a}';
 $string['pluginname'] = 'Errore-kopurua';
+$string['privacy:export:metadata:map'] = 'Garrantzia duten errore kopurua {$a->nonegative}-(e)ra heltzen bada kalifikazioaren ehunekoa {$a->grade} da.';
+$string['privacy:metadata'] = 'Errore-kopurua';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'resource', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,10 @@ $string['filterfilesexplain'] = 'Sélectionner le type des fichiers dont le cont
 $string['filtername'] = 'Liens automatiques des noms des ressources';
 $string['forcedownload'] = 'Forcer le téléchargement';
 $string['framesize'] = 'Hauteur du cadre';
+$string['indicator:cognitivedepth'] = 'Fichier : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Fichier.';
+$string['indicator:socialbreadth'] = 'Fichier : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Fichier.';
 $string['legacyfiles'] = 'Migration des anciens fichiers du cours';
 $string['legacyfilesactive'] = 'Activée';
 $string['legacyfilesdone'] = 'Terminée';
@@ -89,6 +93,7 @@ $string['popupwidth'] = 'Largeur de la fenêtre (en pixels)';
 $string['popupwidthexplain'] = 'Indique la largeur par défaut des fenêtres surgissantes.';
 $string['printintro'] = 'Afficher la description de la ressource';
 $string['printintroexplain'] = 'Indique s\'il faut afficher la description de la ressource au-dessus du contenu. Certains types d\'affichage n\'afficheront toutefois pas cette description, même lorsque l\'option est activée.';
+$string['privacy:metadata'] = 'Le plugin mod_resource n\'enregistre aucune donnée personnelle.';
 $string['resource:addinstance'] = 'Ajouter une ressource';
 $string['resourcecontent'] = 'Fichiers et sous-dossiers';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';

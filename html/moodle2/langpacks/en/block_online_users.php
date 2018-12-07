@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_online_users', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   block_online_users
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['online_users:myaddinstance'] = 'Add a new online users block to Dashboa
 $string['online_users:viewlist'] = 'View list of online users';
 $string['periodnminutes'] = 'last {$a} minutes';
 $string['pluginname'] = 'Online users';
+$string['privacy:metadata'] = 'The Online users block only shows data stored in other locations.';
 $string['timetosee'] = 'Remove after inactivity (minutes)';

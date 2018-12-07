@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_title', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_title
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,4 +31,5 @@ $string['h5'] = 'ヘッディング  (小)';
 $string['p'] = '段落';
 $string['pluginname'] = '段落スタイル';
 $string['pre'] = 'フォーマット済み';
+$string['privacy:metadata'] = 'atto_titleプラグインはどのような個人データも保存しません。';
 $string['title'] = '段落スタイル';

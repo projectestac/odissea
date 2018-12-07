@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'sv', branch 'MOODLE_32_STABLE'
+ * Strings for component 'lti', language 'sv', branch 'MOODLE_34_STABLE'
  *
  * @package   lti
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,7 +42,7 @@ $string['donotallow'] = 'Tillåt inte';
 $string['edittype'] = 'Ändra konfiguration för external tool';
 $string['embed'] = 'Bädda in';
 $string['embed_no_blocks'] = 'Bädda in utan block';
-$string['enableemailnotification'] = 'Skicka notiser med e-post';
+$string['enableemailnotification'] = 'Skicka notifieringar med e-post';
 $string['enableemailnotification_help'] = 'Om aktiverat kommer elever motta meddelanden med e-post när deras verktygsinlämningar har betygsats.';
 $string['errormisconfig'] = 'Felkonfigurerat verktyg. Be din Moodleadministratör att rätta till konfigurationen av verktyget.';
 $string['failedtoconnect'] = 'Moodle kunde inte kommunicera med "{$a}" systemet';

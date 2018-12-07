@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mediaplugin', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_mediaplugin', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_mediaplugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,3 +31,4 @@ $string['filtername'] = 'Plugin multimediali';
 $string['linktomedia'] = 'Il filtro plugin multimedili individua nel testo i link che puntano a risorse multimediali e li sostituisce con l\'appropriato riproduttore multimediale. Il filtro sostituisce anche i tag &lt;video&gt; e &lt;audio&gt; con i riproduttori audio e video selezionati.
 
 <a href="{$a}">Manage media players</a>';
+$string['privacy:metadata'] = 'Il plugin "Plugin multimediali" non memorizza dati personali.';

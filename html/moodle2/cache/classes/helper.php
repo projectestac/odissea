@@ -229,7 +229,8 @@ class cache_helper {
     /**
      * Invalidates a given set of keys by means of an event.
      *
-     * @todo add support for identifiers to be supplied and utilised.
+     * Events cannot determine what identifiers might need to be cleared. Event based purge and invalidation
+     * are only supported on caches without identifiers.
      *
      * @param string $event
      * @param array $keys
@@ -239,6 +240,7 @@ class cache_helper {
         $invalidationeventset = false;
         $factory = cache_factory::instance();
         $inuse = $factory->get_caches_in_use();
+        $purgetoken = null;
         foreach ($instance->get_definitions() as $name => $definitionarr) {
             $definition = cache_definition::load($name, $definitionarr);
             if ($definition->invalidates_on_event($event)) {
@@ -265,8 +267,11 @@ class cache_helper {
                         $data = array();
                     }
                     // Add our keys to them with the current cache timestamp.
+                    if (null === $purgetoken) {
+                        $purgetoken = cache::get_purge_token(true);
+                    }
                     foreach ($keys as $key) {
-                        $data[$key] = cache::now();
+                        $data[$key] = $purgetoken;
                     }
                     // Set that data back to the cache.
                     $cache->set($event, $data);
@@ -292,8 +297,9 @@ class cache_helper {
         if ($cache instanceof cache_store) {
             $factory = cache_factory::instance();
             $definition = $factory->create_definition($component, $area, null);
-            $definition->set_identifiers($identifiers);
-            $cache->initialise($definition);
+            $cacheddefinition = clone $definition;
+            $cacheddefinition->set_identifiers($identifiers);
+            $cache->initialise($cacheddefinition);
         }
         // Purge baby, purge.
         $cache->purge();
@@ -303,6 +309,9 @@ class cache_helper {
     /**
      * Purges a cache of all information on a given event.
      *
+     * Events cannot determine what identifiers might need to be cleared. Event based purge and invalidation
+     * are only supported on caches without identifiers.
+     *
      * @param string $event
      */
     public static function purge_by_event($event) {
@@ -310,6 +319,7 @@ class cache_helper {
         $invalidationeventset = false;
         $factory = cache_factory::instance();
         $inuse = $factory->get_caches_in_use();
+        $purgetoken = null;
         foreach ($instance->get_definitions() as $name => $definitionarr) {
             $definition = cache_definition::load($name, $definitionarr);
             if ($definition->invalidates_on_event($event)) {
@@ -333,8 +343,11 @@ class cache_helper {
                     // Get the event invalidation cache.
                     $cache = cache::make('core', 'eventinvalidation');
                     // Create a key to invalidate all.
+                    if (null === $purgetoken) {
+                        $purgetoken = cache::get_purge_token(true);
+                    }
                     $data = array(
-                        'purged' => cache::now()
+                        'purged' => $purgetoken,
                     );
                     // Set that data back to the cache.
                     $cache->set($event, $data);
@@ -478,6 +491,9 @@ class cache_helper {
         $config = $factory->create_config_instance($usewriter);
         foreach ($config->get_all_stores() as $store) {
             self::purge_store($store['name'], $config);
+        }
+        foreach ($factory->get_adhoc_caches_in_use() as $cache) {
+            $cache->purge();
         }
     }
 

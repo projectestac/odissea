@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_tex', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_tex
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,4 +36,5 @@ $string['pathdvisvgm'] = 'dvisvgmバイナリのパス';
 $string['pathlatex'] = 'latexバイナリのパス';
 $string['pathmimetex'] = 'mimetexバイナリのパス';
 $string['pathmimetexdesc'] = '別の有効なパスが指定されない場合、Moodleは独自のmimetexバイナリを使用します。';
+$string['privacy:metadata'] = 'TeX表記法プラグインはどのような個人データも保存しません。';
 $string['source'] = 'TeXソース';

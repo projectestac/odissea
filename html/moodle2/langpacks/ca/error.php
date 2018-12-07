@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'error', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   error
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -561,6 +561,7 @@ $string['usernotaddederror'] = 'No s\'ha afegit l\'usuari. Error desconegut';
 $string['usernotaddedregistered'] = 'No s\'ha afegit l\'usuari. Ja està registrat';
 $string['usernotavailable'] = 'No podeu disposar dels detalls d\'aquest usuari.';
 $string['usernotdeletedadmin'] = 'No s\'ha eliminat l\'usuari: no es poden eliminar els comptes dels administradors';
+$string['usernotdeleteddeleted'] = 'Aquest usuari ja ha estat eliminat.';
 $string['usernotdeletederror'] = 'L\'usuari no s\'ha suprimit - s\'ha produït un error';
 $string['usernotdeletedmissing'] = 'L\'usuari no s\'ha suprimit - no s\'ha pogut trobat el nom d\'usuari';
 $string['usernotdeletedoff'] = 'L\'usuari no s\'ha suprimit - no és permès de suprimir';

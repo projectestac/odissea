@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = 'Kalifikatu hauek: {$a}';
 $string['gradeitem'] = 'Kalifikazio-elementua: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Kalifikazio-elementu hau ezin da baliogabetu.';
 $string['gradeuser'] = 'Kalifikatu erabiltzailea: {$a}';
+$string['itemsperpage'] = 'Elementuak orriko';
 $string['noscreens'] = 'Ez da aurkitu ikuspegi sinpleko pantaila egokirik.';
 $string['notvalid'] = 'Ez da Ikuspegi sinpleko pantaila baliagarria: {$a}';
 $string['override'] = 'Baliogabetu';
@@ -52,6 +53,7 @@ $string['overrideall'] = 'Baliogabetu kalifikazio guztiak';
 $string['overridefor'] = 'Salbuespena ondokoarentzat: {$a}';
 $string['overridenone'] = 'Ez baliogabetu kalifikaziorik';
 $string['pluginname'] = 'Ikuspegi sinplea';
+$string['privacy:metadata'] = 'Kalifikazio-elementua txostenak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['save'] = 'Gorde';
 $string['savegrades'] = 'Kalifikazioak gordetzen';
 $string['savegradessuccess'] = 'Kalifikazioak ezarri dira {$a} elementuentzat';

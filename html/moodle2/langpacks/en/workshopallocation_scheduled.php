@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['currentstatusresult'] = 'Recent execution result';
 $string['enablescheduled'] = 'Enable scheduled allocation';
 $string['enablescheduledinfo'] = 'Automatically allocate submissions at the end of the submission phase';
 $string['pluginname'] = 'Scheduled allocation';
+$string['privacy:metadata'] = 'The Scheduled allocation plugin does not store any personal data. Actual personal data about who is going to assess whom are stored by the Workshop module itself and they form basis for exporting the assessments details.';
 $string['randomallocationsettings'] = 'Allocation settings';
 $string['randomallocationsettings_help'] = 'Parameters for the random allocation method are defined here. They will be used by the random allocation plugin for the actual allocation of submissions.';
 $string['resultdisabled'] = 'Scheduled allocation disabled';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_monitor', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -99,5 +99,5 @@ $string['subhelp'] = 'Inschrijvingsdetails';
 $string['subhelp_help'] = 'De inschrijving luistert naar gebeurtenis  \'{$a->eventname}\', wanneer die in \'{$a->moduleinstance}\' {$a->frequency} keer in {$a->minutes} minuten gebeurt.';
 $string['subscribeto'] = 'Inschrijven voor regel "{$a}"';
 $string['taskchecksubscriptions'] = 'Activeer/deactiveer ongeldige rolinschrijvingen';
-$string['taskcleanevents'] = 'Verwijder onnodige gebeurtenismonitors';
+$string['taskcleanevents'] = 'Gebeurtenismonitors opruimen';
 $string['unsubscribe'] = 'Uitschrijven';

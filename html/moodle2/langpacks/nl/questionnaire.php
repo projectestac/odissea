@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'questionnaire', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,8 @@ $string['all'] = 'Alles';
 $string['alreadyfilled'] = 'Deze vragenlijst heb je voor ons al ingevuld {$a}. Bedankt!';
 $string['andaveragevalues'] = 'en gemiddelde waardes';
 $string['anonymous'] = 'Anoniem';
+$string['answergiven'] = 'Dit antwoord gegeven';
+$string['answernotgiven'] = 'Dit antwoord niet gegeven';
 $string['answerquestions'] = 'Beantwoord de vragen...';
 $string['attempted'] = 'Deze vragenlijst is ingeleverd.';
 $string['attemptstillinprogress'] = 'Deels voltooid. Opgeslagen op:';
@@ -79,6 +81,7 @@ $string['closedate_help'] = 'Je kunt hier een datum specificeren waarop de enqu�
 Gebruikers zullen de enquête na deze datum niet kunnen invullen. Als dit niet geselecteerd is, zal de enquête nooit sluiten.';
 $string['closeson'] = 'Vragenlijst sluit op {$a}';
 $string['completionsubmit'] = 'Leerling moet deze enquête insturen om hem te voltooien';
+$string['condition'] = 'Voorwaarde';
 $string['confalts'] = '- OF - <br />Bevestigingspagina';
 $string['configmaxsections'] = 'Maximum aantal feedback-secties';
 $string['configusergraph'] = 'Toon grafieken voor feedback "Persoonlijkheidstest"';
@@ -111,8 +114,10 @@ $string['deletedisabled'] = 'Dit item kan niet worden verwijderd';
 $string['deletedresp'] = 'Verwijderd antwoord';
 $string['deleteresp'] = 'Verwijder dit antwoord';
 $string['deletingresp'] = 'Dit antwoord verwijderen';
+$string['dependencies'] = 'Afhankelijkheden';
 $string['dependquestion'] = 'Bovenliggende vraag';
 $string['dependquestion_help'] = 'Je kunt een bovenliggende vraag en keuzeoptie voor deze vraag selecteren. Een onderliggende vraag wordt alleen aan de leerling getoond wanneer de bovenliggende vraag en bovenliggende keuze eerder zijn geselecteerd.';
+$string['directwarnings'] = 'Directe afhankelijkheden naar deze vraag zullen worden verwijderd. Dit beïnvloedt:';
 $string['displaymethod'] = 'Vertoningsmethode is niet gedefinieerd voor deze vraag.';
 $string['download'] = 'Downloaden';
 $string['downloadtextformat'] = 'Downloaden in tekstformat';
@@ -207,6 +212,7 @@ $string['includechoicetext'] = 'Keuzetekst opnemen';
 $string['incorrectcourseid'] = 'Incorrecte Cursus ID';
 $string['incorrectmodule'] = 'Cursusmodule ID was onjuist';
 $string['incorrectquestionnaire'] = 'Enquête is onjuist';
+$string['indirectwarnings'] = 'Deze lijst toont de indirect afhankelijke vragen en de resterende afhankelijkheden voor direct afhankelijke vragen:';
 $string['invalidresponse'] = 'Ongeldig antwoord gespecificeerd.';
 $string['invalidresponserecord'] = 'Ongeldig antwoordrecord gespecificeerd.';
 $string['invalidsurveyid'] = 'Ongeldige enquête ID';
@@ -216,6 +222,7 @@ $string['lastrespondent'] = 'Laatste respondent';
 $string['length'] = 'Lengte';
 $string['managequestions'] = 'Beheer de vragen';
 $string['managequestions_help'] = 'In de sectie Beheer vragen van de pagina Bewerk vragen kun je een aantal handelingen uitvoeren op de vragen in de Enquête.';
+$string['mandatory'] = 'Verplicht - Al deze afhankelijkheden moeten worden voldaan.';
 $string['maxdigitsallowed'] = 'Max. aantal tekens toegestaan';
 $string['maxdigitsallowed_help'] = 'Gebruik **Max. aantal tekens toegestaan** om een limiet in te stellen op het aantal tekens dat kan worden ingevoerd bij een Numerieke vraag. Let op dat het decimaalpunt ook telt als een teken!';
 $string['maxforcedresponses'] = 'Max. geforceerde antwoorden';
@@ -270,6 +277,7 @@ $string['notifications'] = 'Stuur een melding bij inzending';
 $string['notifications_help'] = 'Stuur een melding van inzending naar de rollen met het recht "mod/questionnair:submissionnotification"';
 $string['notopen'] = 'Deze enquête start pas op {$a}.';
 $string['notrequired'] = 'Antwoord is niet vereist';
+$string['notset'] = 'niet ingesteld';
 $string['not_started'] = 'niet begonnen';
 $string['nousersselected'] = 'Geen gebruikers geselecteerd';
 $string['num'] = '#';
@@ -286,6 +294,7 @@ $string['opendate'] = 'Gebruik startdatum';
 $string['opendate_help'] = 'Je kunt hier een datum specificeren om de enquête te openen. Vink dit aan en selecteer de datum en tijd die je wilt.
 Gebruikers zullen niet in staat zijn de enquête voor die datum in te vullen. Als dit niet geselecteerd is, zal de enquête direct open zijn.';
 $string['option'] = 'optie  {$a}';
+$string['optional'] = 'Optioneel - Ten minste één van deze afhankelijkheden moet worden voldaan.';
 $string['optionalname'] = 'Vraagnaam';
 $string['optionalname_help'] = 'De vraagnaam wordt alleen gebruikt wanneer je antwoorden exporteert naar CSV/Excel format. Als je nooit naar CSV exporteert, hoef je je geen zorgen te maken om vraagnamen. Als je regelmatig gegevens van enquêtes wilt exporteren naar CSV, kun je de vragen op twee manieren namen geven.';
 $string['or'] = '- OF -';
@@ -312,6 +321,7 @@ $string['overviewnumrespvw1'] = 'antwoord';
 $string['owner'] = 'Eigenaar';
 $string['page'] = 'Pagina';
 $string['pageof'] = 'Pagina {$a->page} van {$a->totpages}';
+$string['parent'] = 'Bovenliggende';
 $string['participant'] = 'Deelnemer';
 $string['pleasecomplete'] = 'Gelieve deze keuze in te vullen.';
 $string['pluginadministration'] = 'Enquêtebeheer';
@@ -432,6 +442,7 @@ $string['sendemail_help'] = 'Dit verstuurt een kopie van elke inzending naar ges
 Leeg laten';
 $string['send_message'] = 'Bericht verzenden aan geselecteerde gebruikers';
 $string['send_message_to'] = 'Bericht verzenden aan:';
+$string['set'] = 'ingesteld';
 $string['settings'] = 'Instellingen';
 $string['settingssaved'] = 'Instellingen opgeslagen';
 $string['show_nonrespondents'] = 'Non-respondenten';

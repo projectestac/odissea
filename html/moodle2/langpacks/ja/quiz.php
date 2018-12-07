@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quiz', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -91,6 +91,9 @@ $string['attemptclosed'] = '受験はまだ終了していません。';
 $string['attemptduration'] = '所要時間';
 $string['attemptedon'] = '受験日時';
 $string['attempterror'] = '現在、あなたは次の理由でこの小テストを受験することができません: {$a}';
+$string['attempterrorcontentchange'] = 'この小テストプレビューは存在しません (小テストが編集された場合、進行中のすべてのプレビューは自動的に削除されます)。';
+$string['attempterrorcontentchangeforuser'] = 'この小テスト受験は存在しません。';
+$string['attempterrorinvalid'] = '無効な小テストIDです。';
 $string['attemptfirst'] = '最初の受験';
 $string['attemptincomplete'] = '{$a} による受験はまだ完了していません。';
 $string['attemptlast'] = '最新の受験';
@@ -170,8 +173,10 @@ $string['commentorgrade'] = 'コメントを作成または評点を上書きす
 $string['comments'] = 'コメント';
 $string['completedon'] = '完了日時';
 $string['completionattemptsexhausted'] = 'または利用可能な受験すべてが完了した場合';
+$string['completionattemptsexhausteddesc'] = 'すべての利用可能な受験を利用した場合、完了にする';
 $string['completionattemptsexhausted_help'] = '学生が最大受験数を満たした場合、小テストを完了したとマークします。';
 $string['completionpass'] = '合格点を必要とする';
+$string['completionpassdesc'] = 'この活動を完了するには学生は合格点に到達する必要があります。';
 $string['completionpass_help'] = 'この設定を有効にした場合、評定表に合格点が設定され学生が合格点を取得することによりこの活動は完了したとみなされます。';
 $string['configadaptive'] = 'あなたがこのオプションを有効にした場合、同じ小テスト内の受験であっても学生は問題の複数回解答を許可されます。';
 $string['configattemptsallowed'] = '小テストで学生が許可される受験回数の制限です。';
@@ -286,15 +291,11 @@ $string['editquiz'] = '小テストを編集する';
 $string['editquizquestions'] = '小テスト問題を編集する';
 $string['emailconfirmbody'] = '{$a->username} さん
 
-以下の解答をお送りいただきまして、ありがとうございます。
+あなたの回答をコース「 {$a->coursename} 」の小テスト「 {$a->quizname} 」へ {$a->submissiontime} に送信してくださいましてありがうございます。
 
-小テスト名: {$a->quizname}
-コース名: {$a->coursename}
-送信日時: {$a->submissiontime}
+このメッセージはあなたの解答が確かに保存されたことをお伝えするものです。
 
-私たちがあなたの解答を正常に受信しましたので、この確認メールをお送りします。
-
-あなたは {$a->quizurl} でこの小テストにアクセスすることができます。';
+あなたはこの小テストに {$a->quizurl} でアクセスすることができます。';
 $string['emailconfirmsmall'] = '「 {$a->quizname} 」へのあなたの解答送信ありがとうございます。';
 $string['emailconfirmsubject'] = '送信確認: {$a->quizname}';
 $string['emailnotifybody'] = '{$a->username} さん
@@ -306,7 +307,7 @@ $string['emailnotifysmall'] = '{$a->studentname} が {$a->quizname} を完了し
 $string['emailnotifysubject'] = '{$a->studentname} が {$a->quizname} を完了しました。';
 $string['emailoverduebody'] = '{$a->studentname} さん
 
-あなたはコース「 {$a->coursename} 」の小テスト「 {$a->quizname} 」の受験を開始しましたが、一度も送信していないようです。あなたの受験は {$a->attemptduedate} までに送信される必要があります。
+あなたはコース「 {$a->coursename} 」の小テスト「 {$a->quizname} 」の受験を開始しましたが一度も送信していないようです。あなたの受験は {$a->attemptduedate} までに送信される必要があります。
 
 あなたがこの受験をまだ送信したいと思う場合、{$a->attemptsummaryurl} にアクセスして送信ボタンをクリックしてください。この作業は {$a->attemptgraceend} までに実施してください。そうでない場合、あなたの受験はカウントされないことになります。';
 $string['emailoverduesmall'] = 'あなたは {$a->quizname} の受験を送信していないようです。あなたがまだ受験を送信したいと思う場合、{$a->attemptgraceend} までに {$a->attemptsummaryurl} にアクセスしてください。';
@@ -423,6 +424,10 @@ $string['importmaxerror'] = '問題にエラーがあります。答えが多す
 $string['importquestions'] = 'ファイルから問題をインポートする';
 $string['inactiveoverridehelp'] = '* 学生に小テストを受験するための正しいグループまたはロールがありません。';
 $string['incorrect'] = '不正解';
+$string['indicator:cognitivedepth'] = '小テスト認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標は小テスト活動で学生が到達した認識深度に基づきます。';
+$string['indicator:socialbreadth'] = '小テスト社会的';
+$string['indicator:socialbreadth_help'] = 'この指標は小テスト活動で学生が到達した社会的広がりに基づきます。';
 $string['indivresp'] = '各問題に対する解答内容';
 $string['info'] = 'インフォメーション';
 $string['infoshort'] = 'i';
@@ -552,6 +557,7 @@ $string['onlyteachersexport'] = '教師のみ問題をエクスポートでき�
 $string['onlyteachersimport'] = '編集権限のある教師のみ問題をインポートできます。';
 $string['onthispage'] = 'このページ';
 $string['open'] = '未解答';
+$string['openafterclose'] = '小テストを更新できませんでした。あなたは終了日の後に開始日を指定しました。';
 $string['openclosedatesupdated'] = '小テスト公開日時および終了日時が更新されました。';
 $string['optional'] = 'オプション';
 $string['orderandpaging'] = '問題順およびページング';
@@ -613,6 +619,31 @@ $string['previewquestion'] = '問題のプレビュー';
 $string['previewquiz'] = '{$a} のプレビュー';
 $string['previewquiznow'] = '小テストをプレビューする';
 $string['previous'] = '前の状態';
+$string['privacy:metadata:core_question'] = '小テスト活動はcore_questionサブシステムの問題情報を保存します。';
+$string['privacy:metadata:quiz'] = '小テスト活動は小テストレポートを使用します。';
+$string['privacy:metadata:quizaccess'] = '小テスト活動は小テスアクセスルールを使用します。';
+$string['privacy:metadata:quiz_attempts'] = '小テストのそれぞれの受験に関する詳細です。';
+$string['privacy:metadata:quiz_attempts:attempt'] = '受験番号です。';
+$string['privacy:metadata:quiz_attempts:currentpage'] = 'ユーザがいる現在のページです。';
+$string['privacy:metadata:quiz_attempts:preview'] = '小テストがプレビューされたか示します。';
+$string['privacy:metadata:quiz_attempts:state'] = '現在の受験の状態です。';
+$string['privacy:metadata:quiz_attempts:sumgrades'] = '受験の評点合計です。';
+$string['privacy:metadata:quiz_attempts:timecheckstate'] = '状態がチェックされた日時です。';
+$string['privacy:metadata:quiz_attempts:timefinish'] = '受験が完了した日時です。';
+$string['privacy:metadata:quiz_attempts:timemodified'] = '受験が更新された日時です。';
+$string['privacy:metadata:quiz_attempts:timemodifiedoffline'] = 'オフライン更新で受験が更新された日時です。';
+$string['privacy:metadata:quiz_attempts:timestart'] = '受験が開始した日時です。';
+$string['privacy:metadata:quiz_grades'] = 'この小テストの全体の評点に関する詳細です。';
+$string['privacy:metadata:quiz_grades:grade'] = 'この小テストの全体の評点です。';
+$string['privacy:metadata:quiz_grades:quiz'] = '評定された小テストです。';
+$string['privacy:metadata:quiz_grades:timemodified'] = '評点が更新された日時です。';
+$string['privacy:metadata:quiz_grades:userid'] = '評定されたユーザです。';
+$string['privacy:metadata:quiz_overrides'] = 'この小テストのオーバーライド詳細です。';
+$string['privacy:metadata:quiz_overrides:quiz'] = '小テストのオーバーライド情報です。';
+$string['privacy:metadata:quiz_overrides:timeclose'] = '小テストの新しい終了日時です。';
+$string['privacy:metadata:quiz_overrides:timelimit'] = '小テストの時間制限です。';
+$string['privacy:metadata:quiz_overrides:timeopen'] = '小テストの新しい開始時間です。';
+$string['privacy:metadata:quiz_overrides:userid'] = 'オーバーライドされているユーザです。';
 $string['publish'] = '公開';
 $string['publishedit'] = 'このカテゴリへ問題を追加または編集するにはあなたにはコース公開に関するパーミッションが割り当てられている必要があります。';
 $string['qbrief'] = 'Q. {$a}';
@@ -658,6 +689,8 @@ $string['quiz:deleteattempts'] = '小テストの受験結果を削除する';
 $string['quiz:emailconfirmsubmission'] = '解答を送信した旨の確認メールを受信する';
 $string['quiz:emailnotifysubmission'] = '解答が送信された旨の通知メールを受信する';
 $string['quiz:emailwarnoverdue'] = '受験が制限時間に達して送信する必要がある場合、通知メッセージを取得します。';
+$string['quizeventcloses'] = '{$a} 終了';
+$string['quizeventopens'] = '{$a} 開始';
 $string['quiz:grade'] = '小テストを手動評定する';
 $string['quiz:ignoretimelimits'] = '小テストの制限時間を無視する';
 $string['quizisclosed'] = 'この小テストは終了しています。';
@@ -718,7 +751,7 @@ $string['reorderquestions'] = '問題を並べ替える';
 $string['reordertool'] = '再並べ替えツールを表示する';
 $string['repaginate'] = '1ページあたりの問題数: {$a}';
 $string['repaginatecommand'] = '改ページ調整';
-$string['repaginatenow'] = 'すぐに改ページ調整する';
+$string['repaginatenow'] = '今から改ページ調整する';
 $string['replace'] = '置換';
 $string['replacementoptions'] = '置換オプション';
 $string['report'] = 'レポート';
@@ -808,6 +841,8 @@ $string['select'] = '選択';
 $string['selectall'] = 'すべてを選択する';
 $string['selectcategory'] = 'カテゴリを選択する';
 $string['selectedattempts'] = '選択された受験 ...';
+$string['selectmultipleitems'] = '複数のアイテムを選択する';
+$string['selectmultipletoolbar'] = '複数のツールバーを選択する';
 $string['selectnone'] = 'すべての選択を解除する';
 $string['selectquestiontype'] = '-- 問題タイプを選択してください --';
 $string['serveradded'] = 'サーバ追加';

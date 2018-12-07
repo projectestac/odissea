@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hvp', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -259,7 +259,7 @@ $string['reviseserversetupandretry'] = 'Wanneer je je serverinstellingen hebt aa
 $string['score'] = 'Score';
 $string['search'] = 'Zoeken';
 $string['sendusagestatistics'] = 'Gebruiksstatistieken bijdragen';
-$string['sendusagestatistics_help'] = 'Gebruiksstatistieken worden automatisch gerapporteerd om de ontwikkelaars te helpen beter te begrijpen hoe H5P wordt gebruikt en om mogelijke verbeterpunten te bepalen.';
+$string['sendusagestatistics_help'] = 'Gebruiksstatistieken worden automatisch gerapporteerd om de ontwikkelaars te helpen beter te begrijpen hoe H5P wordt gebruikt en om mogelijke verbeterpunten te bepalen. Lees meer over welke <a {$a}>data verzameld wordt op h5p.org</a>.';
 $string['settings'] = 'H5P Instellingen';
 $string['showadvanced'] = 'Toon geavanceerd';
 $string['showless'] = 'Toon minder';

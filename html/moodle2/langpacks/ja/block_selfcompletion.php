@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_selfcompletion', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_selfcompletion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'あなたはこのコースですでに自分自身で完了したとマークしています。';
 $string['completecourse'] = 'コースを完了する';
 $string['pluginname'] = '自己完了';
+$string['privacy:metadata'] = '自己完了ブロックは他の場所で保存されたデータのみ表示します。';
 $string['selfcompletion:addinstance'] = '新しい自己完了ブロックを追加する';
 $string['selfcompletionnotenabled'] = 'このコースの自己完了クライテリアは有効にされていません。';

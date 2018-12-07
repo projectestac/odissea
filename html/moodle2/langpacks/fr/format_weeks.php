@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'format_weeks', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   format_weeks
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Ajouter des semaines';
+$string['automaticenddate'] = 'Calculer la date de fin à partir du nombre de sections';
+$string['automaticenddate_help'] = 'Si ce réglage est activé, la date de fin du cours sera calculée automatiquement en fonction du nombre de sections et de la date de début du cours.';
 $string['currentsection'] = 'Cette semaine';
 $string['deletesection'] = 'Supprimer la semaine';
 $string['editsection'] = 'Modifier la section';
@@ -34,6 +37,7 @@ $string['newsectionname'] = 'Nouveau nom pour la semaine {$a}';
 $string['page-course-view-weeks'] = 'Toutes les pages principales de cours au format hebdomadaire';
 $string['page-course-view-weeks-x'] = 'Toutes les pages de cours au format hebdomadaire';
 $string['pluginname'] = 'Hebdomadaire';
+$string['privacy:metadata'] = 'Le plugin format hebdomadaire n\'enregistre aucune donnée personnelle.';
 $string['section0name'] = 'Généralités';
 $string['sectionname'] = 'Semaine';
 $string['showfromothers'] = 'Afficher la semaine';

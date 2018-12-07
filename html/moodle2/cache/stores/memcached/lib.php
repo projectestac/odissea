@@ -116,6 +116,10 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
      */
     protected $prefix = '';
 
+    //XTEC ************ AFEGIT - To have an instance non dependant purge action - 2018.09.07 @svallde2
+    private $originalprefix = 0;
+    private $purgenumber_name = '';
+
     /**
      * True if Memcached::deleteMulti can be used, false otherwise.
      * This required extension version 2.0.0 or greater.
@@ -149,13 +153,27 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
             $configuration['servers'] = array($configuration['servers']);
         }
 
+        //XTEC ************ AFEGIT - To have MUC configured. To have different prefixes, memcache_prefix must be in settings.php
+        //18.09.07 @svallde2
+        global $CFG;
+        if (isset($CFG->memcache_servers)) {
+            $configuration['servers'] = explode("\n", $CFG->memcache_servers);
+        }
+
         $compression = array_key_exists('compression', $configuration) ? (bool)$configuration['compression'] : true;
         if (array_key_exists('serialiser', $configuration)) {
             $serialiser = (int)$configuration['serialiser'];
         } else {
             $serialiser = Memcached::SERIALIZER_PHP;
         }
+
         $prefix = (!empty($configuration['prefix'])) ? (string)$configuration['prefix'] : crc32($name);
+        //XTEC ************ AFEGIT - To have MUC configured. To have different prefixes, memcache_prefix must be in settings.php
+        // 18.09.07 @svallde2
+        if (isset($CFG->memcache_prefix)) {
+            $prefix = $CFG->memcache_prefix;
+        }
+
         $hashmethod = (array_key_exists('hash', $configuration)) ? (int)$configuration['hash'] : Memcached::HASH_DEFAULT;
         $bufferwrites = array_key_exists('bufferwrites', $configuration) ? (bool)$configuration['bufferwrites'] : false;
 
@@ -230,6 +248,16 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
         $this->candeletemulti = ($version && version_compare($version, self::REQUIRED_VERSION, '>='));
 
         $this->isready = $this->is_connection_ready();
+
+        //XTEC ************ AFEGIT - To have an instance non dependant purge action 2018.09.07 @svallde2
+        if ($this->definition) {
+            $key = $this->definition->generate_single_key_prefix();
+        } else {
+            $key = 'nodef';
+        }
+        $this->originalprefix = $this->prefix.'_'.$key;
+        $this->purgenumber_name = $this->originalprefix.'_purgenumber';
+        $this->prefix = $this->originalprefix.$this->get_purgenumber();
     }
 
     /**
@@ -299,6 +327,9 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
         }
         $this->definition = $definition;
         $this->isinitialised = true;
+        //XTEC ************ AFEGIT - To have an instance non dependant purge action - 18.09.07 @svallde2
+        $this->set_purgenumber($this->get_purgenumber());
+
     }
 
     /**
@@ -366,6 +397,48 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
      */
     public static function get_supported_modes(array $configuration = array()) {
         return self::MODE_APPLICATION;
+    }
+
+    //XTEC ************ AFEGIT - To have an instance non dependant purge action - 18.09.07 @svallde2
+    public function get_purgenumber() {
+        $purgenumber = $this->connection->get($this->purgenumber_name);
+        if (!$purgenumber) {
+            return 0;
+        }
+        return $purgenumber;
+    }
+
+    public function get_connections() {
+        if ($this->isready) {
+            if ($this->clustered) {
+                return $this->setconnections;
+            }
+
+            return array($this->connection);
+        }
+        return false;
+    }
+
+    private function increment_purgenumber() {
+        $purgenumber = $this->get_purgenumber();
+        $purgenumber++;
+        if ($purgenumber >= 1000000) {
+            $purgenumber = 0;
+        }
+        $this->set_purgenumber($purgenumber);
+    }
+
+    private function set_purgenumber($number) {
+        if ($this->isready) {
+            if ($this->clustered) {
+                foreach ($this->setconnections as $connection) {
+                    $connection->set($this->purgenumber_name, $number, 0);
+                }
+            }
+
+            $this->connection->set($this->purgenumber_name, $number, 0);
+        }
+        $this->prefix = $this->originalprefix.$number;
     }
 
     /**
@@ -524,6 +597,10 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
      */
     public function purge() {
         if ($this->isready) {
+            //XTEC ************ AFEGIT - To have an instance non dependant purge action 18.09.07 @svallde2
+            $this->increment_purgenumber();
+            return true;
+
             // Only use delete multi if we have the correct extension installed and if the memcached
             // server is shared (flushing the cache is quicker otherwise).
             $candeletemulti = ($this->candeletemulti && $this->isshared);
@@ -618,6 +695,15 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
      * @return array
      */
     public static function config_get_configuration_array($data) {
+        //XTEC ************ AFEGIT - To have MUC configured. To have different prefixes and servers configured - 18.09.07 @svallde2
+        global $CFG;
+        if (isset($CFG->memcache_prefix)) {
+            $data->prefix = 'notused';
+        }
+        if (isset($CFG->memcache_servers)) {
+            $data->servers = $CFG->memcache_servers;
+        }
+
         $lines = explode("\n", $data->servers);
         $servers = array();
         foreach ($lines as $line) {
@@ -712,6 +798,16 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
         if (isset($config['isshared'])) {
             $data['isshared'] = $config['isshared'];
         }
+
+        //XTEC ************ AFEGIT - To have MUC configured. To have different prefixes and servers configured - 18.09.07 @svallde2
+        global $CFG;
+        if (isset($CFG->memcache_prefix)) {
+            $data['prefix']  = $CFG->memcache_prefix;
+        }
+        if (isset($CFG->memcache_servers)) {
+            $data['servers'] = $CFG->memcache_servers;
+        }
+
         $editform->set_data($data);
     }
 

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_dbtransfer', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_dbtransfer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['dbexport'] = 'Εξαγωγή βάσης δεδομεων';
 $string['dbtransfer'] = 'Μεταφορά βάσης δεδομένων';
 $string['exportdata'] = 'Εξαγωγή δεδομένων';
-$string['notargetconectexception'] = 'Λυπούμαστε, αδυναμία σύνδεσης στη βάση-προορισμό.';
+$string['notargetconectexception'] = 'Λυπούμαστε, δεν είναι δυνατή η σύνδεση στη βάση-προορισμό.';
 $string['pluginname'] = 'Εξαγωγή βάσης δεδομεων';
 $string['transferdata'] = 'Μεταφορά δεδομένων';
 $string['transferdbintro'] = 'Αυτό το σενάριο θα μεταφέρει όλα τα περιεχόμενα της βάσης σε έναν άλλο διακομιστή βάσης.';

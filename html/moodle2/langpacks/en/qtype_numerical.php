@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -69,6 +69,7 @@ $string['pluginnameediting'] = 'Editing a Numerical question';
 $string['pluginname_help'] = 'From the student perspective, a numerical question looks just like a short-answer question. The difference is that numerical answers are allowed to have an accepted error. This allows a fixed range of answers to be evaluated as one answer. For example, if the answer is 10 with an accepted error of 2, then any number between 8 and 12 will be accepted as correct.';
 $string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnamesummary'] = 'Allows a numerical response, possibly with units, that is graded by comparing against various model answers, possibly with tolerances.';
+$string['privacy:metadata'] = 'The Numerical question type plugin does not store any personal data.';
 $string['relative'] = 'Relative';
 $string['rightexample'] = 'on the right, for example 1.00cm or 1.00km';
 $string['selectunit'] = 'Select one unit';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = '単一または複数解答?';
+$string['answerhowmany_desc'] = 'デフォルトで単一解答 (例 ラジオボタン) にするか複数解答 (例 チェックボックス) にするか指定します。';
 $string['answernumbering'] = '選択肢に番号付けしますか?';
 $string['answernumbering123'] = '1.  2.  3. ...';
 $string['answernumberingabc'] = 'a.  b.  c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
+$string['answernumbering_desc'] = 'デフォルトの番号付けスタイルです。';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = '番号付けなし';
@@ -37,7 +39,7 @@ $string['answersingleno'] = '複数解答を許可する';
 $string['answersingleyes'] = '単一解答のみ';
 $string['choiceno'] = '選択肢 {$a}';
 $string['choices'] = '利用可能な選択肢';
-$string['clozeaid'] = 'テキストを入力してください。';
+$string['clozeaid'] = '足りない言葉を入力してください。';
 $string['correctansweris'] = '正答: {$a}';
 $string['correctanswersare'] = '正解は次のとおりです: {$a}';
 $string['correctfeedback'] = '正解すべてに対するフィードバック';
@@ -63,9 +65,11 @@ $string['pluginnameadding'] = '多肢選択問題の追加';
 $string['pluginnameediting'] = '多肢選択問題の編集';
 $string['pluginname_help'] = '問題 (イメージを含む) に対して解答者が複数の答えを選択します。2種類の多肢選択問題 (単一解答、複数解答) があります。';
 $string['pluginnamesummary'] = '所定の一覧より単一または複数の解答を選択することができます。';
+$string['privacy:metadata'] = '多肢選択問題タイププラグインはどのような個人データも保存しません。';
 $string['selectmulti'] = '1つまたはそれ以上選択してください:';
 $string['selectone'] = '1つ選択してください:';
 $string['shuffleanswers'] = '選択肢をシャッフルしますか?';
+$string['shuffleanswers_desc'] = 'それぞれの受験時にデフォルトで答えをランダムにシャッフルするかどうか指定します。';
 $string['shuffleanswers_help'] = 'この設定を有効にした場合、それぞれの受験で答えの順番がランダムにシャッフルされます。小テスト設定の「問題内部をシャッフルする」を「Yes」にする必要があります。';
 $string['singleanswer'] = '1つの答えを選択してください。';
 $string['toomanyselected'] = 'あなたはオプションを選択しすぎました。';

@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2017032000;
-$plugin->requires  = 2016112900;
+$plugin->version   = 2017111300;
+$plugin->requires  = 2017110800;
 $plugin->component = 'assignsubmission_file';

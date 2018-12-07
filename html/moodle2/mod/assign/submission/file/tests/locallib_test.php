@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
-require_once($CFG->dirroot . '/mod/assign/tests/base_test.php');
+require_once($CFG->dirroot . '/mod/assign/tests/generator.php');
 
 /**
  * Unit tests for mod/assign/submission/file/locallib.php
@@ -35,40 +35,8 @@ require_once($CFG->dirroot . '/mod/assign/tests/base_test.php');
  */
 class assignsubmission_file_locallib_testcase extends advanced_testcase {
 
-    /** @var stdClass $user A user to submit an assignment. */
-    protected $user;
-
-    /** @var stdClass $course New course created to hold the assignment activity. */
-    protected $course;
-
-    /** @var stdClass $cm A context module object. */
-    protected $cm;
-
-    /** @var stdClass $context Context of the assignment activity. */
-    protected $context;
-
-    /** @var stdClass $assign The assignment object. */
-    protected $assign;
-
-    /**
-     * Setup all the various parts of an assignment activity including creating an onlinetext submission.
-     */
-    protected function setUp() {
-        $this->user = $this->getDataGenerator()->create_user();
-        $this->course = $this->getDataGenerator()->create_course();
-        $generator = $this->getDataGenerator()->get_plugin_generator('mod_assign');
-        $params = [
-            'course' => $this->course->id,
-            'assignsubmission_file_enabled' => 1,
-            'assignsubmission_file_maxfiles' => 12,
-            'assignsubmission_file_maxsizebytes' => 10,
-        ];
-        $instance = $generator->create_instance($params);
-        $this->cm = get_coursemodule_from_instance('assign', $instance->id);
-        $this->context = context_module::instance($this->cm->id);
-        $this->assign = new testable_assign($this->context, $this->cm, $this->course);
-        $this->setUser($this->user->id);
-    }
+    // Use the generator helper.
+    use mod_assign_test_generator;
 
     /**
      * Test submission_is_empty
@@ -80,18 +48,56 @@ class assignsubmission_file_locallib_testcase extends advanced_testcase {
     public function test_submission_is_empty($data, $expected) {
         $this->resetAfterTest();
 
+        $course = $this->getDataGenerator()->create_course();
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $assign = $this->create_instance($course, [
+                'assignsubmission_file_enabled' => 1,
+                'assignsubmission_file_maxfiles' => 12,
+                'assignsubmission_file_maxsizebytes' => 10,
+            ]);
+
+        $this->setUser($student->id);
+
         $itemid = file_get_unused_draft_itemid();
         $submission = (object)['files_filemanager' => $itemid];
-        $plugin = $this->assign->get_submission_plugin_by_type('file');
+        $plugin = $assign->get_submission_plugin_by_type('file');
 
         if ($data) {
-            $data += ['contextid' => context_user::instance($this->user->id)->id, 'itemid' => $itemid];
+            $data += ['contextid' => context_user::instance($student->id)->id, 'itemid' => $itemid];
             $fs = get_file_storage();
             $fs->create_file_from_string((object)$data, 'Content of ' . $data['filename']);
         }
 
         $result = $plugin->submission_is_empty($submission);
         $this->assertTrue($result === $expected);
+    }
+
+    /**
+     * Test that an empty directory is is not detected as a valid submission by submission_is_empty.
+     */
+    public function test_submission_is_empty_directory_only() {
+        $this->resetAfterTest();
+        $course = $this->getDataGenerator()->create_course();
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $assign = $this->create_instance($course, [
+                'assignsubmission_file_enabled' => 1,
+                'assignsubmission_file_maxfiles' => 12,
+                'assignsubmission_file_maxsizebytes' => 10,
+            ]);
+        $this->setUser($student->id);
+        $itemid = file_get_unused_draft_itemid();
+        $submission = (object)['files_filemanager' => $itemid];
+        $plugin = $assign->get_submission_plugin_by_type('file');
+        $fs = get_file_storage();
+        $fs->create_directory(
+                context_user::instance($student->id)->id,
+                'user',
+                'draft',
+                $itemid,
+                '/subdirectory/'
+        );
+
+        $this->assertTrue($plugin->submission_is_empty($submission));
     }
 
     /**
@@ -104,17 +110,55 @@ class assignsubmission_file_locallib_testcase extends advanced_testcase {
     public function test_new_submission_empty($data, $expected) {
         $this->resetAfterTest();
 
+        $course = $this->getDataGenerator()->create_course();
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $assign = $this->create_instance($course, [
+                'assignsubmission_file_enabled' => 1,
+                'assignsubmission_file_maxfiles' => 12,
+                'assignsubmission_file_maxsizebytes' => 10,
+            ]);
+
+        $this->setUser($student);
+
         $itemid = file_get_unused_draft_itemid();
-        $submission = (object)['files_filemanager' => $itemid];
+        $submission = (object) ['files_filemanager' => $itemid];
 
         if ($data) {
-            $data += ['contextid' => context_user::instance($this->user->id)->id, 'itemid' => $itemid];
+            $data += ['contextid' => context_user::instance($student->id)->id, 'itemid' => $itemid];
             $fs = get_file_storage();
             $fs->create_file_from_string((object)$data, 'Content of ' . $data['filename']);
         }
 
-        $result = $this->assign->new_submission_empty($submission);
+        $result = $assign->new_submission_empty($submission);
         $this->assertTrue($result === $expected);
+    }
+
+    /**
+     * Test that an empty directory is is not detected as a valid submission by new_submission_is_empty.
+     */
+    public function test_new_submission_empty_directory_only() {
+        $this->resetAfterTest();
+        $course = $this->getDataGenerator()->create_course();
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $assign = $this->create_instance($course, [
+                'assignsubmission_file_enabled' => 1,
+                'assignsubmission_file_maxfiles' => 12,
+                'assignsubmission_file_maxsizebytes' => 10,
+            ]);
+        $this->setUser($student->id);
+        $itemid = file_get_unused_draft_itemid();
+        $submission = (object)['files_filemanager' => $itemid];
+        $plugin = $assign->get_submission_plugin_by_type('file');
+        $fs = get_file_storage();
+        $fs->create_directory(
+                context_user::instance($student->id)->id,
+                'user',
+                'draft',
+                $itemid,
+                '/subdirectory/'
+        );
+
+        $this->assertTrue($assign->new_submission_empty($submission));
     }
 
     /**
@@ -133,73 +177,16 @@ class assignsubmission_file_locallib_testcase extends advanced_testcase {
                 ],
                 false
             ],
+            'With file in directory' => [
+                [
+                    'component' => 'user',
+                    'filearea' => 'draft',
+                    'filepath' => '/subdir/',
+                    'filename' => 'not_a_virus.exe'
+                ],
+                false
+            ],
             'Without file' => [null, true]
         ];
     }
-
-    /**
-     * Data provider for testing test_get_nonexistent_file_types.
-     *
-     * @return array
-     */
-    public function get_nonexistent_file_types_provider() {
-        return [
-            'Nonexistent extensions are not allowed' => [
-                'filetypes' => '.rat',
-                'expected' => ['.rat']
-            ],
-            'Multiple nonexistent extensions are not allowed' => [
-                'filetypes' => '.ricefield .rat',
-                'expected' => ['.ricefield', '.rat']
-            ],
-            'Existent extension is allowed' => [
-                'filetypes' => '.xml',
-                'expected' => []
-            ],
-            'Existent group is allowed' => [
-                'filetypes' => 'web_file',
-                'expected' => []
-            ],
-            'Nonexistent group is not allowed' => [
-                'filetypes' => '©ç√√ß∂å√©åß©√',
-                'expected' => ['©ç√√ß∂å√©åß©√']
-            ],
-            'Existent mimetype is allowed' => [
-                'filetypes' => 'application/xml',
-                'expected' => []
-            ],
-            'Nonexistent mimetype is not allowed' => [
-                'filetypes' => 'ricefield/rat',
-                'expected' => ['ricefield/rat']
-            ],
-            'Multiple nonexistent mimetypes are not allowed' => [
-                'filetypes' => 'ricefield/rat cam/ball',
-                'expected' => ['ricefield/rat', 'cam/ball']
-            ],
-            'Missing dot in extension is not allowed' => [
-                'filetypes' => 'png',
-                'expected' => ['png']
-            ],
-            'Some existent some not' => [
-                'filetypes' => '.txt application/xml web_file ©ç√√ß∂å√©åß©√ .png ricefield/rat document png',
-                'expected' => ['©ç√√ß∂å√©åß©√', 'ricefield/rat', 'png']
-            ]
-        ];
-    }
-
-    /**
-     * Test get_nonexistent_file_types().
-     * @dataProvider get_nonexistent_file_types_provider
-     * @param string $filetypes The filetypes to check
-     * @param array $expected The expected result. The list of non existent file types.
-     */
-    public function test_get_nonexistent_file_types($filetypes, $expected) {
-        $this->resetAfterTest();
-        $method = new ReflectionMethod(assign_submission_file::class, 'get_nonexistent_file_types');
-        $method->setAccessible(true);
-        $plugin = $this->assign->get_submission_plugin_by_type('file');
-        $nonexistentfiletypes = $method->invokeArgs($plugin, [$filetypes]);
-        $this->assertSame($expected, $nonexistentfiletypes);
-    }
-
 }

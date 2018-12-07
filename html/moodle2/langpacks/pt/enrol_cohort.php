@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_cohort', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,5 @@ $string['defaultgroupnametext'] = '{$a->increment} grupo global {$a->name}';
 $string['instanceexists'] = 'O grupo global já está sincronizado com o papel selecionado';
 $string['pluginname'] = 'Sincronização com Grupos globais';
 $string['pluginname_desc'] = 'Este módulo de inscrição sincroniza os membros de grupos globais com os participantes da disciplina.';
+$string['privacy:metadata:core_group'] = 'O módulo de inscrioção de grupos globais pode criar um novo grupo ou usar um grupo existente para adicionar todos os membros do grupo global.';
 $string['status'] = 'Ativo';

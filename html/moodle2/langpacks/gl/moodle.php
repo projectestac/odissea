@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'gl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'moodle', language 'gl', branch 'MOODLE_34_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,10 +32,10 @@ $string['actions'] = 'Accións';
 $string['active'] = 'Activo';
 $string['activeusers'] = 'Usuarios activos';
 $string['activities'] = 'Actividades';
-$string['activities_help'] = 'As actividades (tales como foros, probas e wikis) permiten engadir contidos interactivos ao curso';
+$string['activities_help'] = 'As actividades (tales como foros, cuestionarios e wikis) posibilitan engadir contidos interactivos ao curso';
 $string['activity'] = 'Actividade';
 $string['activityclipboard'] = 'Movendo a actividade: {$a}';
-$string['activityiscurrentlyhidden'] = 'Actualmente, esta actividade está agochada';
+$string['activityiscurrentlyhidden'] = 'Esta actividade actualmente está agochada';
 $string['activitymodule'] = 'Módulo de actividade';
 $string['activitymodules'] = 'Módulos de actividade';
 $string['activityreport'] = 'Informe de actividade';
@@ -75,11 +75,11 @@ $string['addresourceoractivity'] = 'Engadir unha actividade ou un recurso';
 $string['addresourcetosection'] = 'Engadir un recurso á sección «{$a}»';
 $string['address'] = 'Enderezo';
 $string['addstudent'] = 'Engadir un alumno';
-$string['addsubcategory'] = 'Engadir unha subcategoría';
+$string['addsubcategory'] = 'Engadir unha sub-categoría';
 $string['addteacher'] = 'Engadir un profesor';
 $string['admin'] = 'Administrador';
 $string['adminhelpaddnewuser'] = 'Crear manualmente unha nova conta de usuario';
-$string['adminhelpassignadmins'] = 'Os administradores poden facer calquera cousa e moverse por calquera parte do sitio';
+$string['adminhelpassignadmins'] = 'Os administradores poden facer calquera cousa en calquera parte do sitio';
 $string['adminhelpassigncreators'] = 'Os creadores de cursos poden crear novos cursos.';
 $string['adminhelpassignsiteroles'] = 'Aplicar roles definidos do sitio a usuarios específicos';
 $string['adminhelpassignstudents'] = 'Ir a un curso e engadir alumnos desde o menú Administración';
@@ -505,6 +505,7 @@ $string['deleted'] = 'Eliminado';
 $string['deletedactivity'] = 'Eliminado {$a}';
 $string['deletedcourse'] = '{$a} foi eliminado definitivamente';
 $string['deletednot'] = 'Non foi posíbel eliminar {$a}.';
+$string['deletepicture'] = 'Eliminar';
 $string['deletesection'] = 'Eliminar sección';
 $string['deleteselected'] = 'Eliminar o seleccionado';
 $string['deleteselectedkey'] = 'Eliminar a clave seleccionada';
@@ -589,7 +590,7 @@ $string['editthiscategory'] = 'Editar esta categoría';
 $string['edittitle'] = 'Editar o título';
 $string['edittitleinstructions'] = 'Escape para cancelar, Intro para finalizar';
 $string['edituser'] = 'Editar as contas de usuario';
-$string['edulevel'] = 'Todos os eventos';
+$string['edulevel'] = 'Nivel educativo';
 $string['edulevel_help'] = '* Ensinando - accións realizadas por un profesor, como por exemplo, actualizar un recurso.
 * Participando - accións realizadas por un alumno como por exemplo, publicar nun foro.
 * Outra - accións realizadas por un usuario cun rol diferente ao de profesor ou alumno.';
@@ -670,13 +671,17 @@ $string['emailpasswordchangeinfodisabled'] = 'Ola, {$a->firstname}.
 Alguén (seguramente vostede) solicitou un novo contrasinal para
 a súa conta en «{$a->sitename}».
 
-Lamentabelmente a súa conta neste sitio está desactivada e non é posíbel restabelecela. Por favor, contacte co administrador do sitio: {$a->admin}.';
+Lamentabelmente a súa conta neste sitio está desactivada e non é posíbel restabelecela,
+contacte co administrador do sitio,
+{$a->admin}';
 $string['emailpasswordchangeinfofail'] = 'Ola, {$a->firstname}.
 
 Alguén (seguramente vostede) solicitou un novo contrasinal para
 a súa conta en «{$a->sitename}».
 
-Lamentabelmente non é posíbel restabelecer os contrasinais neste sitio. Por favor, contacte co administrador do sitio: {$a->admin}.';
+Lamentabelmente non é posíbel restabelecer os contrasinais neste sitio,
+contacte co administrador do sitio,
+{$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: información sobre o cambio de contrasinal';
 $string['emailpasswordconfirmation'] = 'Ola, {$a->firstname}.
 
@@ -870,7 +875,7 @@ $string['frontpagedescriptionhelp'] = 'Este resumo pode amosarse na páxina prin
 $string['frontpageenrolledcourselist'] = 'Cursos nos que se matriculou';
 $string['frontpageformat'] = 'Formato da páxina de portada';
 $string['frontpageformatloggedin'] = 'Formato da páxina de portada ao acceder';
-$string['frontpagenews'] = 'Anuncios';
+$string['frontpagenews'] = 'Novos elementos';
 $string['frontpagesettings'] = 'Configuración da páxina de portada';
 $string['fulllistofcourses'] = 'Todos os cursos';
 $string['fullname'] = 'Nome completo';
@@ -1022,10 +1027,10 @@ $string['institution'] = 'Institución';
 $string['instudentview'] = 'en modo de vista previa de alumno';
 $string['interests'] = 'Intereses';
 $string['interestslist'] = 'Lista de intereses';
-$string['interestslist_help'] = 'Escriba os seus intereses separados por comas, os cales serán amosados como etiquetas na súa páxina de perfil.';
+$string['interestslist_help'] = 'Escriba os seus intereses separados por comas. Presentarase como etiquetas na súa páxina de perfil.';
 $string['invalidemail'] = 'Enderezo de correo incorrecto';
 $string['invalidlogin'] = 'Acceso incorrecto, tenteo de novo';
-$string['invalidusername'] = 'O nome de usuario só pode conter caracteres alfanuméricos (letras minúsculas e números, subliñado (_), guión (-), punto (.) ou o símbolo «en» (@)';
+$string['invalidusername'] = 'O nome de usuario só pode conter caracteres alfanuméricos, subliñado (_), guión (-), punto (.) ou o símbolo «en» (@)';
 $string['invalidusernameupload'] = 'Nome de usuario incorrecto';
 $string['ip_address'] = 'Enderezo IP';
 $string['jump'] = 'Ir';
@@ -1078,7 +1083,22 @@ $string['loginaspasswordexplain'] = '<p>Debe introducir o «loginas password» e
 $string['login_failure_logs'] = 'Rexistro de accesos fallados';
 $string['loginguest'] = 'Acceder como convidado';
 $string['loginsite'] = 'Acceder ao sitio';
-$string['loginsteps'] = 'Para ter acceso completo a este sitio, primeiro debe crear unha conta.';
+$string['loginsteps'] = 'Ola! Para ter acceso completo a los cursos terá que adicar
+    un minuto para crear unha nova conta para vostede neste sitio web.
+    Cada un dos cursos pode dispor dunha «chave de matriculación» que
+    terá que usar máis adiante. Estes son os pasos:
+    <ol>
+    <li>Cubra o formulario <a href="{$a}">Nova conta</a> cos seus datos.</li>
+    <li>Enviaráselle inmediatamente un correo ao seu enderezo.</li>
+    <li>Lea o seu correo e prema na ligazón web que conten.</li>
+    <li>O seu rexistro será confirmado e vostede xa poderá acceder.</li>
+    <li>Seleccione agora o curso no que quere participar.</li>
+    <li> Se se lle solicita unha «chave de matriculación», empregue a que lle
+    forneceu o seu profesor, Con isto estará «matriculado» no curso.</li>
+    <li>Agora pode acceder ao curso completo. A partires de agora só terá que
+    introducir o seu nome de usuario e o contrasinal (no formulario da páxina)
+    para acceder a calquera curso no que se teña matriculado.</li>
+    </ol>';
 $string['loginstepsnone'] = '<p>Ola!</p>
 <p>Para acceder a todos os cursos precisa crear unha conta de seu.</p>
 <p>Só terá que definir un nome de usuario e un contrasinal e escribilos no formulario desta páxina.</p>
@@ -1182,11 +1202,16 @@ $string['missingusername'] = 'Falta o nome de usuario';
 $string['modchooserdisable'] = 'Desactivar o Selector de actividades';
 $string['modchooserenable'] = 'Activar o Selector de actividades';
 $string['moddoesnotsupporttype'] = 'O módulo {$a->modname} non admite o envío de ficheiros do tipo {$a->type}';
+$string['modhide'] = 'Agochar';
 $string['modified'] = 'Modificado';
+$string['modshow'] = 'Amosar';
 $string['moduleintro'] = 'Descrición';
 $string['modulesetup'] = 'Axustando as táboas de módulos';
 $string['modulesuccess'] = 'As táboas de {$a} foron estabelecidas correctamente';
 $string['modulesused'] = 'Módulos usados';
+$string['modvisible'] = 'Dispoñibilidade';
+$string['modvisiblehiddensection'] = 'Dispoñibilidade';
+$string['modvisiblewithstealth'] = 'Dispoñibilidade';
 $string['month'] = 'Mes';
 $string['months'] = 'Meses';
 $string['moodledocs'] = 'Moodle Docs';
@@ -1274,8 +1299,8 @@ $string['newpicture_help'] = 'Para engadir unha nova imaxe, busque e seleccione 
 $string['newpictureusernotsetup'] = 'A foto de perfil só se pode engadir unha vez gardada toda a información obrigatoria do perfil.';
 $string['newsectionname'] = 'Nome novo para a sección «{$a}»';
 $string['newsitem'] = 'elemento de novas';
-$string['newsitems'] = 'anuncios';
-$string['newsitemsnumber'] = 'Número de anuncios';
+$string['newsitems'] = 'elementos de novas';
+$string['newsitemsnumber'] = 'Elementos de novas que amosar';
 $string['newsitemsnumber_help'] = 'Este axuste determina cantas das últimas mensaxes aparecerán no bloque de últimas novas na páxina do curso. Si se pon a «0 elementos novos», non se presentara o bloque de últimas novas.';
 $string['newuser'] = 'Novo usuario';
 $string['newusernewpasswordsubj'] = 'Conta de usuario novo';
@@ -1358,7 +1383,7 @@ $string['nothingtodisplay'] = 'Nada que amosar';
 $string['notice'] = 'Aviso';
 $string['noticenewerbackup'] = 'Esta copia de seguranza foi creada con Moodle {$a->backuprelease} ({$a->backupversion}) que é máis recente que a versión aquí instalada de Moodle {$a->serverrelease} ({$a->serverversion}). Isto podería ocasionar algunhas inconsistencias debido a que non se pode garantir a compatibilidade cara atrás das copias de seguranza.';
 $string['notifications'] = 'Notificacións';
-$string['notifyloginfailuresmessage'] = '{$a->time}, IP: {$a->ip}, Usuario: {$a->info}, Nome completo do usuario: {$a->name}';
+$string['notifyloginfailuresmessage'] = '{$a->time}, IP: {$a->ip}, Usuario: {$a->info}';
 $string['notifyloginfailuresmessageend'] = 'Pode ver estes rexistros en {$a}/course/log.php?id=1&chooselog=1&amp;modid=site_errors.';
 $string['notifyloginfailuresmessagestart'] = 'Listado de intentos fallados de acceso a {$a} desde que se lle enviou a última notificación';
 $string['notifyloginfailuressubject'] = '{$a} :: Notificación de intentos de acceso fallados';
@@ -1387,7 +1412,7 @@ $string['numweeks'] = '{$a} semanas';
 $string['numwords'] = '{$a} palabras';
 $string['numyear'] = '{$a} ano';
 $string['numyears'] = '{$a} anos';
-$string['ok'] = 'Aceptar';
+$string['ok'] = 'Correcto';
 $string['oldpassword'] = 'Contrasinal actual';
 $string['olduserdirectory'] = 'Este é o ANTIGO directorio de usuarios, e xa non é necesario. Pode eliminalo con seguridade. Os ficheiros que contén foron copiados ao NOVO directorio de usuarios.';
 $string['optional'] = 'opcional';
@@ -1690,7 +1715,7 @@ $string['servererror'] = 'Produciuse un erro mentres se comunicaba co servidor';
 $string['serverlocaltime'] = 'Hora local do servidor';
 $string['setcategorytheme'] = 'Configurar o tema da categoría';
 $string['setpassword'] = 'Estabelecer o contrasinal';
-$string['setpasswordinstructions'] = 'Por favor, introduza abaixo o novo contrasinal, e garde os cambios.';
+$string['setpasswordinstructions'] = 'Introduza e repita a seguir o novo contrasinal, prema en «Establecer o contrasinal». <br />Gardarase o seu novo contrasinal, e vostede será identificado';
 $string['settings'] = 'Configuración';
 $string['shortname'] = 'Nome curto';
 $string['shortnamecollisionwarning'] = '[*] = este nome curto xa está a ser empregado por outro curso, e terá que ser cambiado despois da aprobación';
@@ -1740,7 +1765,7 @@ $string['sitehome'] = 'Inicio do sitio';
 $string['sitelegacyfiles'] = 'Ficheiros legados do sitio';
 $string['sitelogs'] = 'Rexistros do sitio';
 $string['sitemessage'] = 'Usuarios da mensaxe';
-$string['sitenews'] = 'Anuncios do sitio';
+$string['sitenews'] = 'Novas do sitio';
 $string['sitepages'] = 'Páxinas do sitio';
 $string['sitepartlist'] = 'Non ten os permisos requiridos permisos para ver a lista de participantes';
 $string['sitepartlist0'] = 'Para poder ver a lista de participantes, vostede debe ser profesor do sitio';

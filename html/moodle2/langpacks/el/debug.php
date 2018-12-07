@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'debug', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   debug
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['authpluginnotfound'] = 'Δε βρέθηκα η υπομονάδα αυθεντικοποίησης {$a}.';
+$string['authpluginnotfound'] = 'Δε βρέθηκε το πρόσθετο αυθεντικοποίησης {$a}.';
 $string['blocknotexist'] = 'Το μπλοκ {$a} δεν υπάρχει';
 $string['cannotbenull'] = 'Το {$a} δε γίνεται να είναι null!';
-$string['cannotdowngrade'] = 'Αδυναμία υποβάθμισης {$a->plugin} από {$a->oldversion} σε {$a->newversion}.';
+$string['cannotdowngrade'] = 'Δεν είναι δυνατή η υποβάθμιση του πρόσθετου {$a->plugin} από {$a->oldversion} σε {$a->newversion}.';
 $string['cannotfindadmin'] = 'Δε βρέθηκε διαχειριστής!';
-$string['cannotinitpage'] = 'Αδυναμία πλήρους αρχικοποίησης σελίδας: μη έγκυρο {$a->name} id {$a->id}';
+$string['cannotinitpage'] = 'Δεν είναι δυνατή η πλήρης αρχικοποίησης της σελίδας: μη έγκυρο {$a->name} id {$a->id}';
 $string['cannotsetuptable'] = 'Οι πίνακες {$a} δεν έχουν στηθεί με επιτυχία!';
 $string['codingerror'] = 'Εντοπίστηκε λάθος κώδικα, πρέπει να φτιαχτεί από προγραμματιστή: {$a}';
 $string['configmoodle'] = 'Το Moodle δεν έχει παραμετροποιηθεί ακόμη. Πρέπει να επεξεργαστείτε το config.php πρώτα.';

@@ -28,11 +28,13 @@ define([], function() {
         shown: 'modal:shown',
         hidden: 'modal:hidden',
         destroyed: 'modal:destroyed',
+        bodyRendered: 'modal:bodyRendered',
         // ModalSaveCancel events.
         save: 'modal-save-cancel:save',
         cancel: 'modal-save-cancel:cancel',
-        // ModalConfirm events.
-        yes: 'modal-confirm:yes',
-        no: 'modal-confirm:no',
+        // ModalConfirm events. Deprecated since Moodle 3.4. See MDL-59759.
+        // Point core/modal_confirm events to save/cancel events of core/modal_save_cancel.
+        yes: 'modal-save-cancel:save',
+        no: 'modal-save-cancel:cancel',
     };
 });

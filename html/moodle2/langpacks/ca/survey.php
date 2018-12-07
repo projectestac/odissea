@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'survey', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,8 +74,9 @@ $string['attls8'] = 'Estic sempre interessat en conèixer per què la gent diu i
 $string['attls8short'] = 'Saber per què';
 $string['attls9'] = 'Sovint em trobo a mi mateix discutint amb els autors dels llibres que llegeixo, intentant entendre per què estan equivocats.';
 $string['attls9short'] = 'Discutir amb autors';
-$string['attlsintro'] = 'El propòsit d’aquest qüestionari es ajudar-nos a avaluar les vostres actituds envers el pensament i l’aprenentatge.
-No hi ha respostes \'correctes\' o \'equivocades\', ens interessa sols la teva opinió. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.';
+$string['attlsintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a avaluar les vostres actituds envers el pensament i l’aprenentatge.
+
+No hi ha respostes «correctes» o «incorrectes»; ens interessa sols la vostra opinió. Les vostres respostes es tractaran amb un grau de confidencialitat alt, i no afectaran la vostra avaluació.';
 $string['attlsm1'] = 'Actituds cap al pensament i l’aprenentatge';
 $string['attlsm2'] = 'Aprenentatge col·laboratiu';
 $string['attlsm3'] = 'Aprenentatge individualitzat';
@@ -152,10 +153,15 @@ No hi ha respostes \'correctes\' o \'equivocades\', estem interessats sols en la
 Les teves respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
 Moltes gràcies.';
 $string['collesaname'] = 'COLLES (Real)';
-$string['collesapintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a entendre fins a quin punt la presentació en línia d’aquesta unitat et va facilitar l’aprenentatge.
-Cada una de les declaracions següents et demanaran que comparis la teva experiència <b>favorita</b> (ideal) i la teva experiència <b>real</b> en aquesta unitat. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
-Les teves respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
-Moltes gràcies per la teva col·laboració.';
+$string['collesapintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a entendre fins a quin punt la presentació en línia d’aquesta unitat us va facilitar l’aprenentatge.
+
+Cada una de les parelles de declaracions següents us demanarà que compareu la vostra experiència <b>favorita</b> (ideal) i la vostra experiència <b>real</b> en aquesta unitat.
+
+No hi ha respostes «correctes» o «incorrectes»; ens interessa sols la vostra opinió. Les vostres respostes es tractaran amb un grau de confidencialitat alt, i no afectaran la vostra avaluació.
+
+Les vostres respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
+
+Moltes gràcies per la vostra col·laboració.';
 $string['collesapname'] = 'COLLES (preferit i real)';
 $string['collesm1'] = 'Rellevància';
 $string['collesm1short'] = 'Rellevància';

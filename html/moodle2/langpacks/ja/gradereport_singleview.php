@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradereport_singleview', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   gradereport_singleview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['gradefor'] = '{$a} の評点';
 $string['gradeitem'] = '評定項目: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'この評定項目はオーバーライドできません。';
 $string['gradeuser'] = '評定ユーザ: {$a}';
+$string['itemsperpage'] = '1ページあたりのアイテム数';
 $string['noscreens'] = '適切なシングルビュースクリーンが見つかりませんでした。';
 $string['notvalid'] = '有効ではないシングルビュースクリーン: {$a}';
 $string['override'] = 'オーバーライド';
@@ -52,6 +53,7 @@ $string['overrideall'] = 'すべての評点をオーバーライドする';
 $string['overridefor'] = '{$a} のオーバーライド';
 $string['overridenone'] = 'どの評点もオーバーライドしない';
 $string['pluginname'] = 'シングルビュー';
+$string['privacy:metadata'] = '評定シングルビューレポートは他の場所に保存されたデータのみ表示します。';
 $string['save'] = '保存';
 $string['savegrades'] = '評点保存';
 $string['savegradessuccess'] = '{$a} アイテムに評点が設定されました。';

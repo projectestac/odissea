@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_guide', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_guide
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['clicktocopy'] = 'Fes clic per a copiar aquest text en la retroacció de
 $string['clicktoedit'] = 'Fes clic per a editar';
 $string['clicktoeditname'] = 'Fes clic per a editar el nom del criteri';
 $string['comment'] = 'Comentari';
-$string['comments'] = 'Comentaris utilitzats freqüentment';
+$string['comments'] = 'Comentaris freqüents';
 $string['commentsdelete'] = 'Suprimeix comentari';
 $string['commentsempty'] = 'Fes clic per a editar el comentari';
 $string['commentsmovedown'] = 'Mou baix';

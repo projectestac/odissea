@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_list', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_list
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminview'] = 'Προβολή διαχειριστή';
+$string['adminview'] = 'Διαχειριστική προβολή';
 $string['allcourses'] = 'Οι διαχειριστές βλέπουν όλα τα μαθήματα';
-$string['configadminview'] = 'Τι να βλέπει ο διαχειριστής στο μπλοκ λίστας μαθημάτων;';
-$string['confighideallcourseslink'] = 'Απόκρυψη του συνδέσμου "όλα τα μαθήματα" κάτω από τη λίστα μαθημάτων. (Αυτή η ρύθμιση δεν επηρεάζει την προβολή διαχειριστή.)';
+$string['configadminview'] = 'Τι να βλέπει ο διαχειριστής στο μπλοκ της λίστας των μαθημάτων;';
+$string['confighideallcourseslink'] = 'Απόκρυψη του συνδέσμου "όλα τα μαθήματα" στο κάτω μέρος του μπλοκ. Αυτό δεν επηρεάζει τη διαχειριστική προβολή';
 $string['course_list:addinstance'] = 'Προσθήκη νέου μπλοκ νέα μαθήματα';
 $string['course_list:myaddinstance'] = 'Προσθήκη νέου μπλοκ νέα μαθήματα στη σελίδα Η αρχική μου';
 $string['hideallcourseslink'] = 'Απόκρυψη του συνδέσμου "όλα τα μαθήματα"';

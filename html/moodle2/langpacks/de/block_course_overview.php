@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_course_overview', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,22 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = '{$a}-Aktivität(en) erfordern Ihre Aufmerksamkeit';
+$string['addfavourite'] = 'Favoriten hinzufügen';
 $string['alwaysshowall'] = 'Immer alle anzeigen';
 $string['collapseall'] = 'Kursliste einklappen';
 $string['configotherexpanded'] = 'Wenn diese Option aktiviert ist, werden \'Weitere Kurse\' aufgeklappt. In den Nutzereinstellungen kann die Einstellung geändert werden.';
 $string['configpreservestates'] = 'Wenn aktiviert wird der auf-/zugeklappt Status, den der/die Nutzer/in gesetzt hat, gespeichert und beim Laden der Seite verwandt.';
-$string['course_overview:addinstance'] = 'Block \'Kursübersicht\' hinzufügen';
-$string['course_overview:myaddinstance'] = 'Block \'Kursübersicht\' zum Dashboard hinzufügen';
-$string['defaultmaxcourses'] = 'Standardmäßige Höchstzahl der Kurse';
-$string['defaultmaxcoursesdesc'] = 'Maximalzahl der Kurse, die im Block \'Kursübersicht\' angezeigt wird. \'0\' zeigt alle Kurse an.';
+$string['course_overview:addinstance'] = 'Block \'Kursübersicht (alt)\' hinzufügen';
+$string['course_overview:myaddinstance'] = 'Block \'Kursübersicht (alt)\' zum Dashboard hinzufügen';
 $string['expandall'] = 'Kursliste aufklappen';
-$string['forcedefaultmaxcourses'] = 'Höchstzahl von Kurse festlegen';
-$string['forcedefaultmaxcoursesdesc'] = 'Wenn diese Option aktiviert wird, können Nutzer/innen keine individuellen Einstellungen vornehmen';
+$string['favourites'] = 'Favoriten';
 $string['fullpath'] = 'Alle Kursbereiche und Kursunterbereiche';
-$string['hiddencoursecount'] = 'Sie haben {$a} verborgene Kurse';
-$string['hiddencoursecountplural'] = 'Sie haben {$a} verborgene Kurse';
-$string['hiddencoursecountwithshowall'] = 'Sie haben {$a->coursecount} verborgenen Kurs ({$a->showalllink})';
-$string['hiddencoursecountwithshowallplural'] = 'Sie haben {$a->coursecount} verborgene Kurse ({$a->showalllink})';
+$string['help'] = 'Hilfe';
+$string['help_help'] = 'Tippen Sie auf \'Dashboard bearbeiten\' und ordnen Sie die Kurse durch Drag and Drop neu an. Tippen Sie für den Überblick auf die Aktivitätenicons.';
+$string['keepfavourites'] = 'Favoriten in der Kursliste behalten';
+$string['keepfavouritesdesc'] = 'Kurse in der Hauptliste anzeigen, auch wenn sie in der Favoritenliste gelistet sind.';
+$string['makefavourite'] = 'Als Favorit markieren';
 $string['message'] = 'Mitteilung';
 $string['messages'] = 'Mitteilungen';
 $string['moveafterhere'] = 'Verschiebe den Kurs {$a->movingcoursename} hinter {$a->currentcoursename}';
@@ -49,21 +48,31 @@ $string['movecourse'] = 'Kurs bewegen: {$a}';
 $string['movecoursehere'] = 'Kurs hierhin verschieben';
 $string['movetofirst'] = 'Kurs {$a} nach oben bewegen';
 $string['movingcourse'] = 'Sie verschieben: {$a->fullname} ({$a->cancellink})';
+$string['nocourses'] = 'Keine Kurse zum Anzeigen';
 $string['none'] = 'Keine';
 $string['numtodisplay'] = 'Zahl der anzuzeigenden Kurse:';
 $string['onlyparentname'] = 'Nur übergeordneter Kursbereich';
 $string['otherexpanded'] = 'Weitere Kurse aufklappen';
-$string['pluginname'] = 'Kursübersicht';
+$string['pluginname'] = 'Kursübersicht (alt)';
 $string['preservestates'] = 'Aufgeklappten Status beibehalten';
+$string['privacy:metadata:courseorder'] = 'Geordnete Liste angezeigter Kurse';
+$string['privacy:metadata:coursesortorder'] = 'Kurs Sortierreihenfolge (alte Version)';
+$string['privacy:metadata:favourites'] = 'Geordnete Liste beliebtester Kurse';
+$string['privacy:metadata:numberofcourses'] = 'Anzahl angezeigter Kurse';
+$string['privacy:metadata:sortorder'] = 'Sortierreihenfolge';
+$string['removefavourite'] = 'Als Favorit löschen';
+$string['reorderfullname'] = 'Vollständiger Kursname';
+$string['reorderid'] = 'Kurs-ID';
+$string['reordernone'] = 'Sortierung per Drag-und-Drop';
+$string['reordershortname'] = 'Kurzer Kursname';
 $string['shortnameprefix'] = 'Enthält {$a}';
 $string['shortnamesufixprural'] = '(und {$a} weitere)';
 $string['shortnamesufixsingular'] = '(und {$a} weiterer)';
 $string['showcategories'] = 'Kursbereiche zum Anzeigen';
 $string['showcategoriesdesc'] = 'Sollen die Kursbereiche zusammen mit jedem Kurs angezeigt werden?';
-$string['showchildren'] = 'Metakurse anzeigen';
-$string['showchildrendesc'] = 'Sollen Metakurse unter dem Hauptkurs angezeigt werden';
-$string['showwelcomearea'] = 'Begrüßung anzeigen';
-$string['showwelcomeareadesc'] = 'Soll Begrüßung über der Kursliste angezeigt werden?';
+$string['sortorder'] = 'Sortierung';
+$string['title'] = 'Kursübersicht (alt)';
+$string['unfavourite'] = 'Als Favorit löschen';
 $string['view_edit_profile'] = '(Ihr Profil anzeigen und bearbeiten)';
 $string['welcome'] = 'Willkommen {$a}';
 $string['youhavemessages'] = 'Sie haben {$a} ungelesene ';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_deferredcbm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,6 +67,7 @@ $string['judgementsummary'] = 'Responses: {$a->responses}. Accuracy: {$a->fracti
 $string['noquestions'] = 'No responses';
 $string['overconfident'] = 'over-confident';
 $string['pluginname'] = 'Deferred feedback with CBM';
+$string['privacy:metadata'] = 'The Deferred feedback with CBM question behaviour plugin does not store any personal data.';
 $string['slightlyoverconfident'] = 'a bit over-confident';
 $string['slightlyunderconfident'] = 'a bit under-confident';
 $string['underconfident'] = 'under-confident';

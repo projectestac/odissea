@@ -37,6 +37,7 @@ define('ASSIGN_FILTER_SUBMITTED', 'submitted');
 define('ASSIGN_FILTER_NOT_SUBMITTED', 'notsubmitted');
 define('ASSIGN_FILTER_SINGLE_USER', 'singleuser');
 define('ASSIGN_FILTER_REQUIRE_GRADING', 'require_grading');
+define('ASSIGN_FILTER_GRANTED_EXTENSION', 'granted_extension');
 
 // Marker filter for grading page.
 define('ASSIGN_MARKER_FILTER_NO_MARKER', -1);
@@ -48,6 +49,9 @@ define('ASSIGN_ATTEMPT_REOPEN_METHOD_UNTILPASS', 'untilpass');
 
 // Special value means allow unlimited attempts.
 define('ASSIGN_UNLIMITED_ATTEMPTS', -1);
+
+// Special value means no grade has been set.
+define('ASSIGN_GRADE_NOT_SET', -1);
 
 // Grading states.
 define('ASSIGN_GRADING_STATUS_GRADED', 'graded');
@@ -66,6 +70,12 @@ define("ASSIGN_MAX_EVENT_LENGTH", "432000");
 
 // Name of file area for intro attachments.
 define('ASSIGN_INTROATTACHMENT_FILEAREA', 'introattachment');
+
+// Event types.
+define('ASSIGN_EVENT_TYPE_DUE', 'due');
+define('ASSIGN_EVENT_TYPE_GRADINGDUE', 'gradingdue');
+define('ASSIGN_EVENT_TYPE_OPEN', 'open');
+define('ASSIGN_EVENT_TYPE_CLOSE', 'close');
 
 require_once($CFG->libdir . '/accesslib.php');
 require_once($CFG->libdir . '/formslib.php');
@@ -265,7 +275,10 @@ class assign {
     public function get_return_params() {
         global $PAGE;
 
-        $params = $PAGE->url->params();
+        $params = array();
+        if (!WS_SERVER) {
+            $params = $PAGE->url->params();
+        }
         unset($params['id']);
         unset($params['action']);
         return $params;
@@ -642,6 +655,7 @@ class assign {
         }
         $update->duedate = $formdata->duedate;
         $update->cutoffdate = $formdata->cutoffdate;
+        $update->gradingduedate = $formdata->gradingduedate;
         $update->allowsubmissionsfromdate = $formdata->allowsubmissionsfromdate;
         $update->grade = $formdata->grade;
         $update->completionsubmit = !empty($formdata->completionsubmit);
@@ -692,6 +706,10 @@ class assign {
             // In the case of upgrades the coursemodule has not been set,
             // so we need to wait before calling these two.
             $this->update_calendar($formdata->coursemodule);
+            if (!empty($formdata->completionexpected)) {
+                \core_completion\api::update_completion_date_event($formdata->coursemodule, 'assign', $this->instance,
+                        $formdata->completionexpected);
+            }
             $this->update_gradebook(false, $formdata->coursemodule);
 
         }
@@ -929,6 +947,132 @@ class assign {
     }
 
     /**
+     * Check if the given calendar_event is either a user or group override
+     * event.
+     *
+     * @return bool
+     */
+    public function is_override_calendar_event(\calendar_event $event) {
+        global $DB;
+
+        if (!isset($event->modulename)) {
+            return false;
+        }
+
+        if ($event->modulename != 'assign') {
+            return false;
+        }
+
+        if (!isset($event->instance)) {
+            return false;
+        }
+
+        if (!isset($event->userid) && !isset($event->groupid)) {
+            return false;
+        }
+
+        $overrideparams = [
+            'assignid' => $event->instance
+        ];
+
+        if (isset($event->groupid)) {
+            $overrideparams['groupid'] = $event->groupid;
+        } else if (isset($event->userid)) {
+            $overrideparams['userid'] = $event->userid;
+        }
+
+        if ($DB->get_record('assign_overrides', $overrideparams)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * This function calculates the minimum and maximum cutoff values for the timestart of
+     * the given event.
+     *
+     * It will return an array with two values, the first being the minimum cutoff value and
+     * the second being the maximum cutoff value. Either or both values can be null, which
+     * indicates there is no minimum or maximum, respectively.
+     *
+     * If a cutoff is required then the function must return an array containing the cutoff
+     * timestamp and error string to display to the user if the cutoff value is violated.
+     *
+     * A minimum and maximum cutoff return value will look like:
+     * [
+     *     [1505704373, 'The due date must be after the sbumission start date'],
+     *     [1506741172, 'The due date must be before the cutoff date']
+     * ]
+     *
+     * If the event does not have a valid timestart range then [false, false] will
+     * be returned.
+     *
+     * @param calendar_event $event The calendar event to get the time range for
+     * @return array
+     */
+    function get_valid_calendar_event_timestart_range(\calendar_event $event) {
+        $instance = $this->get_instance();
+        $submissionsfromdate = $instance->allowsubmissionsfromdate;
+        $cutoffdate = $instance->cutoffdate;
+        $duedate = $instance->duedate;
+        $gradingduedate = $instance->gradingduedate;
+        $mindate = null;
+        $maxdate = null;
+
+        if ($event->eventtype == ASSIGN_EVENT_TYPE_DUE) {
+            // This check is in here because due date events are currently
+            // the only events that can be overridden, so we can save a DB
+            // query if we don't bother checking other events.
+            if ($this->is_override_calendar_event($event)) {
+                // This is an override event so there is no valid timestart
+                // range to set it to.
+                return [false, false];
+            }
+
+            if ($submissionsfromdate) {
+                $mindate = [
+                    $submissionsfromdate,
+                    get_string('duedatevalidation', 'assign'),
+                ];
+            }
+
+            if ($cutoffdate) {
+                $maxdate = [
+                    $cutoffdate,
+                    get_string('cutoffdatevalidation', 'assign'),
+                ];
+            }
+
+            if ($gradingduedate) {
+                // If we don't have a cutoff date or we've got a grading due date
+                // that is earlier than the cutoff then we should use that as the
+                // upper limit for the due date.
+                if (!$cutoffdate || $gradingduedate < $cutoffdate) {
+                    $maxdate = [
+                        $gradingduedate,
+                        get_string('gradingdueduedatevalidation', 'assign'),
+                    ];
+                }
+            }
+        } else if ($event->eventtype == ASSIGN_EVENT_TYPE_GRADINGDUE) {
+            if ($duedate) {
+                $mindate = [
+                    $duedate,
+                    get_string('gradingdueduedatevalidation', 'assign'),
+                ];
+            } else if ($submissionsfromdate) {
+                $mindate = [
+                    $submissionsfromdate,
+                    get_string('gradingduefromdatevalidation', 'assign'),
+                ];
+            }
+        }
+
+        return [$mindate, $maxdate];
+    }
+
+    /**
      * Actual implementation of the reset course functionality, delete all the
      * assignment submissions for course $data->courseid.
      *
@@ -989,11 +1133,11 @@ class assign {
                 // Remove all grades from gradebook.
                 require_once($CFG->dirroot.'/mod/assign/lib.php');
                 assign_reset_gradebook($data->courseid);
+            }
 
-                // Reset revealidentities if both submissions and grades have been reset.
-                if ($this->get_instance()->blindmarking && $this->get_instance()->revealidentities) {
-                    $DB->set_field('assign', 'revealidentities', 0, array('id' => $this->get_instance()->id));
-                }
+            // Reset revealidentities for assign if blindmarking is enabled.
+            if ($this->get_instance()->blindmarking) {
+                $DB->set_field('assign', 'revealidentities', 0, array('id' => $this->get_instance()->id));
             }
         }
 
@@ -1031,6 +1175,8 @@ class assign {
                        WHERE assignid =? AND cutoffdate <> 0",
                 array($data->timeshift, $this->get_instance()->id));
 
+            // Any changes to the list of dates that needs to be rolled should be same during course restore and course reset.
+            // See MDL-9367.
             shift_course_mod_dates('assign',
                                     array('duedate', 'allowsubmissionsfromdate', 'cutoffdate'),
                                     $data->timeshift,
@@ -1138,57 +1284,86 @@ class assign {
         // Special case for add_instance as the coursemodule has not been set yet.
         $instance = $this->get_instance();
 
-        $eventtype = 'due';
+        // Start with creating the event.
+        $event = new stdClass();
+        $event->modulename  = 'assign';
+        $event->courseid = $instance->course;
+        $event->groupid = 0;
+        $event->userid  = 0;
+        $event->instance  = $instance->id;
+        $event->type = CALENDAR_EVENT_TYPE_ACTION;
 
+        // Convert the links to pluginfile. It is a bit hacky but at this stage the files
+        // might not have been saved in the module area yet.
+        $intro = $instance->intro;
+        if ($draftid = file_get_submitted_draft_itemid('introeditor')) {
+            $intro = file_rewrite_urls_to_pluginfile($intro, $draftid);
+        }
+
+        // We need to remove the links to files as the calendar is not ready
+        // to support module events with file areas.
+        $intro = strip_pluginfile_content($intro);
+        if ($this->show_intro()) {
+            $event->description = array(
+                'text' => $intro,
+                'format' => $instance->introformat
+            );
+        } else {
+            $event->description = array(
+                'text' => '',
+                'format' => $instance->introformat
+            );
+        }
+
+        $eventtype = ASSIGN_EVENT_TYPE_DUE;
         if ($instance->duedate) {
-            $event = new stdClass();
-
-            $params = array('modulename' => 'assign', 'instance' => $instance->id, 'eventtype' => $eventtype);
-            $event->id = $DB->get_field('event', 'id', $params);
-            $event->name = $instance->name;
+            $event->name = get_string('calendardue', 'assign', $instance->name);
+            $event->eventtype = $eventtype;
             $event->timestart = $instance->duedate;
+            $event->timesort = $instance->duedate;
+            $select = "modulename = :modulename
+                       AND instance = :instance
+                       AND eventtype = :eventtype
+                       AND groupid = 0
+                       AND courseid <> 0";
+            $params = array('modulename' => 'assign', 'instance' => $instance->id, 'eventtype' => $eventtype);
+            $event->id = $DB->get_field_select('event', 'id', $select, $params);
 
-            // Convert the links to pluginfile. It is a bit hacky but at this stage the files
-            // might not have been saved in the module area yet.
-            $intro = $instance->intro;
-            if ($draftid = file_get_submitted_draft_itemid('introeditor')) {
-                $intro = file_rewrite_urls_to_pluginfile($intro, $draftid);
-            }
-
-            // We need to remove the links to files as the calendar is not ready
-            // to support module events with file areas.
-            $intro = strip_pluginfile_content($intro);
-            if ($this->show_intro()) {
-                $event->description = array(
-                    'text' => $intro,
-                    'format' => $instance->introformat
-                );
-            } else {
-                $event->description = array(
-                    'text' => '',
-                    'format' => $instance->introformat
-                );
-            }
-
+            // Now process the event.
             if ($event->id) {
                 $calendarevent = calendar_event::load($event->id);
-                $calendarevent->update($event);
+                $calendarevent->update($event, false);
             } else {
-                unset($event->id);
-                $event->courseid    = $instance->course;
-                $event->groupid     = 0;
-                $event->userid      = 0;
-                $event->modulename  = 'assign';
-                $event->instance    = $instance->id;
-                $event->eventtype   = $eventtype;
-                $event->timeduration = 0;
-                calendar_event::create($event);
+                calendar_event::create($event, false);
             }
         } else {
-            $DB->delete_records('event', array('modulename' => 'assign', 'instance' => $instance->id, 'eventtype' => $eventtype));
+            $DB->delete_records('event', array('modulename' => 'assign', 'instance' => $instance->id,
+                'eventtype' => $eventtype));
         }
-    }
 
+        $eventtype = ASSIGN_EVENT_TYPE_GRADINGDUE;
+        if ($instance->gradingduedate) {
+            $event->name = get_string('calendargradingdue', 'assign', $instance->name);
+            $event->eventtype = $eventtype;
+            $event->timestart = $instance->gradingduedate;
+            $event->timesort = $instance->gradingduedate;
+            $event->id = $DB->get_field('event', 'id', array('modulename' => 'assign',
+                'instance' => $instance->id, 'eventtype' => $event->eventtype));
+
+            // Now process the event.
+            if ($event->id) {
+                $calendarevent = calendar_event::load($event->id);
+                $calendarevent->update($event, false);
+            } else {
+                calendar_event::create($event, false);
+            }
+        } else {
+            $DB->delete_records('event', array('modulename' => 'assign', 'instance' => $instance->id,
+                'eventtype' => $eventtype));
+        }
+
+        return true;
+    }
 
     /**
      * Update this instance in the database.
@@ -1218,6 +1393,7 @@ class assign {
         }
         $update->duedate = $formdata->duedate;
         $update->cutoffdate = $formdata->cutoffdate;
+        $update->gradingduedate = $formdata->gradingduedate;
         $update->allowsubmissionsfromdate = $formdata->allowsubmissionsfromdate;
         $update->grade = $formdata->grade;
         if (!empty($formdata->completionunlocked)) {
@@ -1267,6 +1443,9 @@ class assign {
         }
 
         $this->update_calendar($this->get_course_module()->id);
+        $completionexpected = (!empty($formdata->completionexpected)) ? $formdata->completionexpected : null;
+        \core_completion\api::update_completion_date_event($this->get_course_module()->id, 'assign', $this->instance,
+                $completionexpected);
         $this->update_gradebook(false, $this->get_course_module()->id);
 
         $update = new stdClass();
@@ -1328,8 +1507,9 @@ class assign {
         } else if ($plugin->is_visible() && $plugin->is_configurable()) {
             $name = $plugin->get_subtype() . '_' . $plugin->get_type() . '_enabled';
             $label = $plugin->get_name();
-            $label .= ' ' . $this->get_renderer()->help_icon('enabled', $plugin->get_subtype() . '_' . $plugin->get_type());
             $pluginsenabled[] = $mform->createElement('checkbox', $name, '', $label);
+            $helpicon = $this->get_renderer()->help_icon('enabled', $plugin->get_subtype() . '_' . $plugin->get_type());
+            $pluginsenabled[] = $mform->createElement('static', '', '', $helpicon);
 
             $default = get_config($plugin->get_subtype() . '_' . $plugin->get_type(), 'default');
             if ($plugin->get_config('enabled') !== false) {
@@ -1652,7 +1832,7 @@ class assign {
      * Get the submission status/grading status for all submissions in this assignment for the
      * given paticipants.
      *
-     * These statuses match the available filters (requiregrading, submitted, notsubmitted).
+     * These statuses match the available filters (requiregrading, submitted, notsubmitted, grantedextension).
      * If this is a group assignment, group info is also returned.
      *
      * @param array $participants an associative array where the key is the participant id and
@@ -1672,8 +1852,9 @@ class assign {
         $assignid = $this->get_instance()->id;
         $params['assignmentid1'] = $assignid;
         $params['assignmentid2'] = $assignid;
+        $params['assignmentid3'] = $assignid;
 
-        $fields = 'SELECT u.id, s.status, s.timemodified AS stime, g.timemodified AS gtime, g.grade';
+        $fields = 'SELECT u.id, s.status, s.timemodified AS stime, g.timemodified AS gtime, g.grade, uf.extensionduedate';
         $from = ' FROM {user} u
                          LEFT JOIN {assign_submission} s
                                 ON u.id = s.userid
@@ -1683,14 +1864,17 @@ class assign {
                                 ON u.id = g.userid
                                AND g.assignment = :assignmentid2
                                AND g.attemptnumber = s.attemptnumber
+                         LEFT JOIN {assign_user_flags} uf
+                                ON u.id = uf.userid
+                               AND uf.assignment = :assignmentid3
             ';
         $where = ' WHERE u.id ' . $insql;
 
         if (!empty($this->get_instance()->blindmarking)) {
             $from .= 'LEFT JOIN {assign_user_mapping} um
                              ON u.id = um.userid
-                            AND um.assignment = :assignmentid3 ';
-            $params['assignmentid3'] = $assignid;
+                            AND um.assignment = :assignmentid4 ';
+            $params['assignmentid4'] = $assignid;
             $fields .= ', um.id as recordid ';
         }
 
@@ -1710,12 +1894,14 @@ class assign {
             $participants[$userid]->fullname = $this->fullname($participant);
             $participants[$userid]->submitted = false;
             $participants[$userid]->requiregrading = false;
+            $participants[$userid]->grantedextension = false;
         }
 
         foreach ($records as $userid => $submissioninfo) {
             // These filters are 100% the same as the ones in the grading table SQL.
             $submitted = false;
             $requiregrading = false;
+            $grantedextension = false;
 
             if (!empty($submissioninfo->stime) && $submissioninfo->status == ASSIGN_SUBMISSION_STATUS_SUBMITTED) {
                 $submitted = true;
@@ -1727,8 +1913,13 @@ class assign {
                 $requiregrading = true;
             }
 
+            if (!empty($submissioninfo->extensionduedate)) {
+                $grantedextension = true;
+            }
+
             $participants[$userid]->submitted = $submitted;
             $participants[$userid]->requiregrading = $requiregrading;
+            $participants[$userid]->grantedextension = $grantedextension;
             if ($this->get_instance()->teamsubmission) {
                 $group = $this->get_submission_group($userid);
                 if ($group) {
@@ -1742,11 +1933,12 @@ class assign {
 
     /**
      * Get the submission status/grading status for all submissions in this assignment.
-     * These statuses match the available filters (requiregrading, submitted, notsubmitted).
+     * These statuses match the available filters (requiregrading, submitted, notsubmitted, grantedextension).
      * If this is a group assignment, group info is also returned.
      *
      * @param int $currentgroup
-     * @return array List of user records with extra fields 'submitted', 'notsubmitted', 'requiregrading', 'groupid', 'groupname'
+     * @return array List of user records with extra fields 'submitted', 'notsubmitted', 'requiregrading', 'grantedextension',
+     *               'groupid', 'groupname'
      */
     public function list_participants_with_filter_status_and_group($currentgroup) {
         $participants = $this->list_participants($currentgroup, false);
@@ -1854,9 +2046,13 @@ class assign {
      * @return null|stdClass user record
      */
     public function get_participant($userid) {
-        global $DB;
+        global $DB, $USER;
 
-        $participant = $DB->get_record('user', array('id' => $userid));
+        if ($userid == $USER->id) {
+            $participant = clone ($USER);
+        } else {
+            $participant = $DB->get_record('user', array('id' => $userid));
+        }
         if (!$participant) {
             return null;
         }
@@ -2170,6 +2366,7 @@ class assign {
         // Submissions are included if all are true:
         //   - The assignment is visible in the gradebook.
         //   - No previous notification has been sent.
+        //   - The grader was a real user, not an automated process.
         //   - If marking workflow is not enabled, the grade was updated in the past 24 hours, or
         //     if marking workflow is enabled, the workflow state is at 'released'.
         $sql = "SELECT g.id as gradeid, a.course, a.name, a.blindmarking, a.revealidentities,
@@ -2183,7 +2380,7 @@ class assign {
             LEFT JOIN {assign_user_mapping} um ON g.id = um.userid AND um.assignment = a.id
                  WHERE ((a.markingworkflow = 0 AND g.timemodified >= :yesterday AND g.timemodified <= :today) OR
                         (a.markingworkflow = 1 AND uf.workflowstate = :wfreleased)) AND
-                       uf.mailed = 0 AND gri.hidden = 0
+                       g.grader > 0 AND uf.mailed = 0 AND gri.hidden = 0
               ORDER BY a.course, cm.id";
 
         $params = array(
@@ -2942,13 +3139,14 @@ class assign {
      * Render the content in editor that is often used by plugin.
      *
      * @param string $filearea
-     * @param int  $submissionid
+     * @param int $submissionid
      * @param string $plugintype
      * @param string $editor
      * @param string $component
+     * @param bool $shortentext Whether to shorten the text content.
      * @return string
      */
-    public function render_editor_content($filearea, $submissionid, $plugintype, $editor, $component) {
+    public function render_editor_content($filearea, $submissionid, $plugintype, $editor, $component, $shortentext = false) {
         global $CFG;
 
         $result = '';
@@ -2956,6 +3154,9 @@ class assign {
         $plugin = $this->get_submission_plugin_by_type($plugintype);
 
         $text = $plugin->get_editor_text($editor, $submissionid);
+        if ($shortentext) {
+            $text = shorten_text($text, 140);
+        }
         $format = $plugin->get_editor_format($editor, $submissionid);
 
         $finaltext = file_rewrite_pluginfile_urls($text,
@@ -2989,7 +3190,7 @@ class assign {
             } else {
                 $button->set_formats(PORTFOLIO_FORMAT_PLAINHTML);
             }
-            $result .= $button->to_html();
+            $result .= $button->to_html(PORTFOLIO_ADD_TEXT_LINK);
         }
         return $result;
     }
@@ -3068,7 +3269,7 @@ class assign {
      * Throw an error if the permissions to view this users submission are missing.
      *
      * @throws required_capability_exception
-     * @return void
+     * @return none
      */
     public function require_view_submission($userid) {
         if (!$this->can_view_submission($userid)) {
@@ -3080,7 +3281,7 @@ class assign {
      * Throw an error if the permissions to view grades in this assignment are missing.
      *
      * @throws required_capability_exception
-     * @return void
+     * @return none
      */
     public function require_view_grades() {
         if (!$this->can_view_grades()) {
@@ -3110,11 +3311,12 @@ class assign {
     /**
      * Does this user have grade permission for this assignment?
      *
+     * @param int|stdClass $user The object or id of the user who will do the editing (default to current user).
      * @return bool
      */
-    public function can_grade() {
+    public function can_grade($user = null) {
         // Permissions check.
-        if (!has_capability('mod/assign:grade', $this->context)) {
+        if (!has_capability('mod/assign:grade', $this->context, $user)) {
             return false;
         }
 
@@ -3504,7 +3706,8 @@ class assign {
                 $grade->timemodified = $grade->timecreated;
             }
             $grade->grade = -1;
-            $grade->grader = $USER->id;
+            // Do not set the grader id here as it would be the admin users which is incorrect.
+            $grade->grader = -1;
             if ($attemptnumber >= 0) {
                 $grade->attemptnumber = $attemptnumber;
             }
@@ -3582,7 +3785,7 @@ class assign {
         $grade = $this->get_user_grade($userid, false, $attemptnumber);
         $flags = $this->get_user_flags($userid, false);
         if ($this->can_view_submission($userid)) {
-            $gradelocked = ($flags && $flags->locked) || $this->grading_disabled($userid);
+            $submissionlocked = ($flags && $flags->locked);
             $extensionduedate = null;
             if ($flags) {
                 $extensionduedate = $flags->extensionduedate;
@@ -3599,7 +3802,7 @@ class assign {
                                                                      $submissiongroup,
                                                                      $notsubmitted,
                                                                      $this->is_any_submission_plugin_enabled(),
-                                                                     $gradelocked,
+                                                                     $submissionlocked,
                                                                      $this->is_graded($userid),
                                                                      $instance->duedate,
                                                                      $instance->cutoffdate,
@@ -3780,7 +3983,7 @@ class assign {
         $grade = $this->get_user_grade($userid, false, $attemptnumber);
         $flags = $this->get_user_flags($userid, false);
         if ($this->can_view_submission($userid)) {
-            $gradelocked = ($flags && $flags->locked) || $this->grading_disabled($userid);
+            $submissionlocked = ($flags && $flags->locked);
             $extensionduedate = null;
             if ($flags) {
                 $extensionduedate = $flags->extensionduedate;
@@ -3797,7 +4000,7 @@ class assign {
                                                              $submissiongroup,
                                                              $notsubmitted,
                                                              $this->is_any_submission_plugin_enabled(),
-                                                             $gradelocked,
+                                                             $submissionlocked,
                                                              $this->is_graded($userid),
                                                              $instance->duedate,
                                                              $instance->cutoffdate,
@@ -4317,15 +4520,19 @@ class assign {
             return $this->view_notices($title, $message);
         }
 
+        $postfix = '';
+        if ($this->has_visible_attachments()) {
+            $postfix = $this->render_area_files('mod_assign', ASSIGN_INTROATTACHMENT_FILEAREA, 0);
+        }
         $o .= $this->get_renderer()->render(new assign_header($this->get_instance(),
                                                       $this->get_context(),
                                                       $this->show_intro(),
                                                       $this->get_course_module()->id,
-                                                      $title));
-        if ($userid == $USER->id) {
-            // We only show this if it their submission.
-            $o .= $this->plagiarism_print_disclosure();
-        }
+                                                      $title, '', $postfix));
+
+        // Show plagiarism disclosure for any user submitter.
+        $o .= $this->plagiarism_print_disclosure();
+
         $data = new stdClass();
         $data->userid = $userid;
         if (!$mform) {
@@ -4355,6 +4562,25 @@ class assign {
         $grade = $this->get_user_grade($userid, false);
         if ($grade) {
             return ($grade->grade !== null && $grade->grade >= 0);
+        }
+        return false;
+    }
+
+    /**
+     * Perform an access check to see if the current $USER can edit this group submission.
+     *
+     * @param int $groupid
+     * @return bool
+     */
+    public function can_edit_group_submission($groupid) {
+        global $USER;
+
+        $members = $this->get_submission_group_members($groupid, true);
+        foreach ($members as $member) {
+            // If we can edit any members submission, we can edit the submission for the group.
+            if ($this->can_edit_submission($member->id)) {
+                return true;
+            }
         }
         return false;
     }
@@ -4692,7 +4918,11 @@ class assign {
                                                                         $data));
         }
         $o = '';
-        $o .= $this->get_renderer()->header();
+        $o .= $this->get_renderer()->render(new assign_header($this->get_instance(),
+                                                              $this->get_context(),
+                                                              $this->show_intro(),
+                                                              $this->get_course_module()->id,
+                                                              get_string('confirmsubmissionheading', 'assign')));
         $submitforgradingpage = new assign_submit_for_grading_page($notifications,
                                                                    $this->get_course_module()->id,
                                                                    $mform);
@@ -4735,7 +4965,7 @@ class assign {
                     ($this->is_any_submission_plugin_enabled()) &&
                     $this->can_edit_submission($user->id);
 
-        $gradelocked = ($flags && $flags->locked) || $this->grading_disabled($user->id, false);
+        $submissionlocked = ($flags && $flags->locked);
 
         // Grading criteria preview.
         $gradingmanager = get_grading_manager($this->context, 'mod_assign', 'submissions');
@@ -4766,7 +4996,7 @@ class assign {
                                                           $submissiongroup,
                                                           $notsubmitted,
                                                           $this->is_any_submission_plugin_enabled(),
-                                                          $gradelocked,
+                                                          $submissionlocked,
                                                           $this->is_graded($user->id),
                                                           $instance->duedate,
                                                           $instance->cutoffdate,
@@ -4863,8 +5093,10 @@ class assign {
                     $gradefordisplay = $this->display_grade($gradebookgrade->grade, false);
                 }
                 $gradeddate = $gradebookgrade->dategraded;
-                if (isset($grade->grader)) {
+                if (isset($grade->grader) && $grade->grader > 0) {
                     $grader = $DB->get_record('user', array('id' => $grade->grader));
+                } else if (isset($gradebookgrade->usermodified) && $gradebookgrade->usermodified > 0) {
+                    $grader = $DB->get_record('user', array('id' => $gradebookgrade->usermodified));
                 }
             }
 
@@ -5025,10 +5257,12 @@ class assign {
             // First lookup the grader info.
             if (isset($gradercache[$grade->grader])) {
                 $grade->grader = $gradercache[$grade->grader];
-            } else {
+            } else if ($grade->grader > 0) {
                 // Not in cache - need to load the grader record.
                 $grade->grader = $DB->get_record('user', array('id'=>$grade->grader));
-                $gradercache[$grade->grader->id] = $grade->grader;
+                if ($grade->grader) {
+                    $gradercache[$grade->grader->id] = $grade->grader;
+                }
             }
 
             // Now get the gradefordisplay.
@@ -5054,7 +5288,7 @@ class assign {
      * @param int $userid If not set, $USER->id will be used.
      * @return array $submissions All submission records for this user (or group).
      */
-    protected function get_all_submissions($userid) {
+    public function get_all_submissions($userid) {
         global $DB, $USER;
 
         // If the userid is not null then use userid.
@@ -5112,7 +5346,8 @@ class assign {
                                                   $this->get_course_module()->id,
                                                   $this->count_submissions_need_grading(),
                                                   $instance->teamsubmission,
-                                                  $warnofungroupedusers);
+                                                  $warnofungroupedusers,
+                                                  $this->can_grade());
         } else {
             // The active group has already been updated in groups_print_activity_menu().
             $countparticipants = $this->count_participants($activitygroup);
@@ -5126,7 +5361,8 @@ class assign {
                                                   $this->get_course_module()->id,
                                                   $this->count_submissions_need_grading(),
                                                   $instance->teamsubmission,
-                                                  false);
+                                                  false,
+                                                  $this->can_grade());
 
         }
 
@@ -5518,11 +5754,15 @@ class assign {
             return false;
         }
 
-        if ($userid == $graderid &&
-                $this->submissions_open($userid) &&
-                has_capability('mod/assign:submit', $this->context, $graderid)) {
-            // User can edit their own submission.
-            return true;
+        if ($userid == $graderid) {
+            if ($this->submissions_open($userid) &&
+                    has_capability('mod/assign:submit', $this->context, $graderid)) {
+                // User can edit their own submission.
+                return true;
+            } else {
+                // We need to return here because editothersubmission should never apply to a users own submission.
+                return false;
+            }
         }
 
         if (!has_capability('mod/assign:editothersubmission', $this->context, $graderid)) {
@@ -5547,10 +5787,8 @@ class assign {
     public function get_shared_group_members($cm, $userid) {
         if (!isset($this->sharedgroupmembers[$userid])) {
             $this->sharedgroupmembers[$userid] = array();
-            $groupsids = array_keys(groups_get_activity_allowed_groups($cm, $userid));
-            foreach ($groupsids as $groupid) {
-                $members = array_keys(groups_get_members($groupid, 'u.id'));
-                $this->sharedgroupmembers[$userid] = array_merge($this->sharedgroupmembers[$userid], $members);
+            if ($members = groups_get_activity_shared_group_members($cm, $userid)) {
+                $this->sharedgroupmembers[$userid] = array_keys($members);
             }
         }
 
@@ -7067,9 +7305,6 @@ class assign {
                     $mform->addHelpButton('grade', 'gradeoutofhelp', 'assign');
                     $mform->setType('grade', PARAM_RAW);
                 } else {
-                    $mform->addElement('hidden', 'grade', $name);
-                    $mform->hardFreeze('grade');
-                    $mform->setType('grade', PARAM_RAW);
                     $strgradelocked = get_string('gradelocked', 'assign');
                     $mform->addElement('static', 'gradedisabled', $name, $strgradelocked);
                     $mform->addHelpButton('gradedisabled', 'gradeoutofhelp', 'assign');
@@ -7420,7 +7655,7 @@ class assign {
             return false;
         }
         $submission->status = ASSIGN_SUBMISSION_STATUS_DRAFT;
-        $this->update_submission($submission, $userid, true, $this->get_instance()->teamsubmission);
+        $this->update_submission($submission, $userid, false, $this->get_instance()->teamsubmission);
 
         // Give each submission plugin a chance to process the reverting to draft.
         $plugins = $this->get_submission_plugins();
@@ -8527,9 +8762,9 @@ class assign {
         $result = $DB->set_field_select(
             'assign_grades',
             'grade',
-            -1,
+            ASSIGN_GRADE_NOT_SET,
             'grade <> ? AND grade < 0',
-            [-1]
+            [ASSIGN_GRADE_NOT_SET]
         );
         $assign = clone $this->get_instance();
         $assign->cmidnumber = $this->get_course_module()->idnumber;
@@ -8596,7 +8831,7 @@ class assign {
      * The most recent team submission is used to determine if another attempt should be created when allowing another
      * attempt on a group assignment, and whether the gradebook should be updated.
      *
-     * @since Moodle 3.2.6
+     * @since Moodle 3.4
      * @param stdClass $submission The most recent submission of the group.
      */
     public function set_most_recent_team_submission($submission) {
@@ -8670,6 +8905,7 @@ class assign_portfolio_caller extends portfolio_module_caller_base {
      * @throws     portfolio_caller_exception
      */
     public function load_data() {
+        global $DB;
 
         $context = context_module::instance($this->cmid);
 
@@ -8678,6 +8914,23 @@ class assign_portfolio_caller extends portfolio_module_caller_base {
                 throw new portfolio_caller_exception('invalidfileandsubmissionid', 'mod_assign');
             }
 
+            $submission = $DB->get_record('assign_submission', array('id' => $this->sid));
+        } else {
+            $submissionid = $DB->get_field('files', 'itemid', array('id' => $this->fileid, 'contextid' => $context->id));
+            if ($submissionid) {
+                $submission = $DB->get_record('assign_submission', array('id' => $submissionid));
+            }
+        }
+
+        if (empty($submission)) {
+            throw new portfolio_caller_exception('filenotfound');
+        } else if ($submission->userid == 0) {
+            // This must be a group submission.
+            if (!groups_is_member($submission->groupid, $this->user->id)) {
+                throw new portfolio_caller_exception('filenotfound');
+            }
+        } else if ($this->user->id != $submission->userid) {
+            throw new portfolio_caller_exception('filenotfound');
         }
 
         // Export either an area of files or a single file (see function for more detail).
@@ -8972,6 +9225,14 @@ function reorder_group_overrides($assignid) {
             $f->id = $override->id;
             $f->sortorder = $i++;
             $DB->update_record('assign_overrides', $f);
+
+            // Update priorities of group overrides.
+            $params = [
+                'modulename' => 'assign',
+                'instance' => $override->assignid,
+                'groupid' => $override->groupid
+            ];
+            $DB->set_field('event', 'priority', $f->sortorder, $params);
         }
     }
 }

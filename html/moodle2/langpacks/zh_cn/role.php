@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'role', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   role
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,8 @@ $string['allowroletooverride'] = '允许属于角色{$a->fromrole}的用户修�
 $string['allowroletoswitch'] = '允许属于角色{$a->fromrole}的用户切换到角色{$a->targetrole}';
 $string['allowswitch'] = '允许角色切换';
 $string['allsiteusers'] = '所有用户';
+$string['analytics:listinsights'] = '列出洞察力';
+$string['analytics:managemodels'] = '管理模型';
 $string['archetype'] = '角色原型';
 $string['archetypecoursecreator'] = '原型：课程创建者';
 $string['archetypeeditingteacher'] = '原型：有编辑权教师';
@@ -166,6 +168,7 @@ $string['course:create'] = '创建课程';
 $string['course:delete'] = '删除课程';
 $string['course:enrolconfig'] = '配置课程中的选课实例';
 $string['course:enrolreview'] = '审查选课';
+$string['course:ignoreavailabilityrestrictions'] = '忽视可用性的限制';
 $string['course:ignorefilesizelimits'] = '使用超过任何文件大小限制的文件';
 $string['course:isincompletionreports'] = '在进度报告中显示';
 $string['course:manageactivities'] = '管理活动';
@@ -407,7 +410,6 @@ $string['site:viewfullnames'] = '始终可看用户的全名';
 $string['site:viewparticipants'] = '浏览成员';
 $string['site:viewreports'] = '浏览报表';
 $string['site:viewuseridentity'] = '在列表中查看全部用户身份';
-$string['tag:create'] = '创建新标签';
 $string['tag:edit'] = '编辑标签';
 $string['tag:editblocks'] = '在标签页中编辑版块';
 $string['tag:flag'] = '标记为不恰当';

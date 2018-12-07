@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multichoice', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Resposta única ou múltiplas respostas';
+$string['answerhowmany_desc'] = 'Se, por predefinição, deve ser uma resposta única (botões de rádio) ou respostas múltiplas (caixas de verificação).';
 $string['answernumbering'] = 'Numerar as opções?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
+$string['answernumbering_desc'] = 'O estilo de numeração predefinido.';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'Sem numeração';
@@ -64,9 +66,11 @@ $string['pluginnameediting'] = 'A editar pergunta de escolha múltipla';
 $string['pluginname_help'] = 'Ao responder a uma pergunta (que pode incluir imagens) o aluno escolhe a resposta correta entre uma série de opções. Existem dois tipos de perguntas possíveis - apenas uma opção de resposta correta ou múltiplas respostas.';
 $string['pluginname_link'] = 'pergunta/tipo/escolhamúltipla';
 $string['pluginnamesummary'] = 'Permite a seleção de uma ou mais respostas a partir de uma lista de respostas predefinida.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Escolha múltipla não armazena quaisquer dados pessoais.';
 $string['selectmulti'] = 'Selecione uma ou mais opções de resposta:';
 $string['selectone'] = 'Selecione uma opção de resposta:';
 $string['shuffleanswers'] = 'Baralhar opções de resposta';
+$string['shuffleanswers_desc'] = 'Se, por definição, as opções devem ser aleatoriamente baralhadas em cada tentativa.';
 $string['shuffleanswers_help'] = 'Se ativado, a ordem das opções de resposta é definida aleatoriamente em cada nova tentativa, desde que a opção "Baralhar perguntas" nas opções de configuração do teste também se encontre ativa.';
 $string['singleanswer'] = 'Escolha uma resposta.';
 $string['toomanyselected'] = 'Selecionou demasiadas opções';

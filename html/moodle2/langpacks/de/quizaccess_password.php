@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_password', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_password', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_password
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'Das eingegebene Kennwort war falsch.';
 $string['pluginname'] = 'Kennwort';
+$string['privacy:metadata'] = 'Das Plugin für Passwörter zum Testzugriff speichert keine persönlichen Daten';
 $string['quizpassword'] = 'Testkennwort';
 $string['requirepasswordmessage'] = 'Zur Teilnahme am Test benötigen Sie ein Kennwort.';

@@ -62,6 +62,7 @@ class core_course_modlib_testcase extends advanced_testcase {
         $expecteddata->instance         = '';
         $expecteddata->coursemodule     = '';
         $expecteddata->advancedgradingmethod_submissions = ''; // Not grading methods enabled by default.
+        $expecteddata->completion       = 0;
         // Unset untestable.
         unset($data->introeditor);
         unset($data->_advancedgradingdata);
@@ -99,6 +100,7 @@ class core_course_modlib_testcase extends advanced_testcase {
         $expecteddata->coursemodule       = $assigncm->id;
         $expecteddata->section            = $cw->section;
         $expecteddata->visible            = $assigncm->visible;
+        $expecteddata->visibleoncoursepage = $assigncm->visibleoncoursepage;
         $expecteddata->cmidnumber         = $assigncm->idnumber;
         $expecteddata->groupmode          = groups_get_activity_groupmode($cm);
         $expecteddata->groupingid         = $assigncm->groupingid;

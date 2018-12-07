@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_image', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_image
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['pluginname'] = 'Imagen';
 $string['presentation'] = 'La descripción no es necesaria';
 $string['presentationoraltrequired'] = 'Las imágenes deben tener una descripción, excepto que se haya indicado que no es necesaria.';
 $string['preview'] = 'Previsualizar';
+$string['privacy:metadata'] = 'El plugin atto_image no guarda ningún dato personal.';
 $string['saveimage'] = 'Guardar imagen';
 $string['size'] = 'Tamaño';
 $string['uploading'] = 'Subiendo, espere por favor...';

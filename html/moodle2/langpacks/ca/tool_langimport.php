@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_langimport', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_langimport
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,7 +45,6 @@ $string['noenglishuninstall'] = 'L\'idioma anglès no es pot desinstal·lar.';
 $string['nolangupdateneeded'] = 'Tots els vostres paquets d\'idioma són al dia. No cal actualitzar-los.';
 $string['pluginname'] = 'Paquets d\'idioma';
 $string['purgestringcaches'] = 'Purga la memòria cau de cadenes.';
-$string['remotelangnotavailable'] = 'Moodle no s\'ha pogut connectar a download.moodle.org i no ha pogut fer la instal·lació automàtica del paquet d\'idioma. Baixeu el fitxer o fitxers zip de <a href="https://download.moodle.org/langpack/">download.moodle.org/langpack</a> , copieu-los al directori {$a} i descomprimiu-los manualment.';
 $string['selectlangs'] = 'Selecciona els idiomes a desinstal·lar';
 $string['uninstall'] = 'Desinstal·la el paquet d\'idioma seleccionat';
 $string['uninstallconfirm'] = 'Ara desinstal·lareu completament el paquet d\'idioma {$a}. N\'esteu segur?';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_badges', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_badges
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,3 +30,4 @@ $string['badges:myaddinstance'] = 'Ajouter un bloc Mes derniers badges au tablea
 $string['nothingtodisplay'] = 'Vous n\'avez pas de badge à afficher';
 $string['numbadgestodisplay'] = 'Nombre de derniers badges à afficher';
 $string['pluginname'] = 'Derniers badges';
+$string['privacy:metadata'] = 'Le bloc Dernier badges affiche seulement des données enregistrées à d\'autres endroits.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_securewindow', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_securewindow', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_securewindow
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'JavaScript security quiz access rule';
 $string['popupwithjavascriptsupport'] = 'Full screen pop-up with some JavaScript security';
+$string['privacy:metadata'] = 'The JavaScript security quiz access rule plugin does not store any personal data.';

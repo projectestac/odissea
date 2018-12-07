@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_xml', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'Ungültige XML-Datei - String erwartet (CDATA wenden?)';
 $string['pluginname'] = 'Moodle-XML-Format';
 $string['pluginname_help'] = 'Dies ist ein moodle-spezifisches Format für den Import und Export von Fragen.';
+$string['privacy:metadata'] = 'Das XML Frageformat Plugin speichert keine persönlichen Daten.';
 $string['truefalseimporterror'] = '<b>Warnung</b>: Die Wahr/Falsch-Frage \'{$a->questiontext}\' konnte nicht richtig importiert werden, da nicht klar war, ob die richtige Antwort "wahr" oder "falsch" ist. Die Frage wurde unter der Annahme importiert, dass die Antwort \'{$a->answer}\' gewünscht wird. Sollte dieses nicht korrekt sein so müssen Sie die Frage entsprechend überarbeiten.';
 $string['unsupportedexport'] = 'Der Fragetyp {$a} wird im XML-Export nicht unterstützt';
 $string['xmlimportnoname'] = 'Fehlender Fragename in der XML-Datei';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   availability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = 'Nicht verfügbar (verborgen), außer mindesten
 $string['manageplugins'] = 'Voraussetzungen verwalten';
 $string['missingplugin'] = 'Fehlendes Plugin';
 $string['or'] = 'oder';
+$string['privacy:metadata'] = 'Das Zugriffsberechtigungssystem speichert keine persönlichen Daten.';
 $string['restrictaccess'] = 'Voraussetzungen';
 $string['restrictbygroup'] = 'Voraussetzung für Gruppe/Gruppierung hinzufügen';
 $string['setheading'] = '{$a->number} Liste von {$a->count} Voraussetzung(en)';

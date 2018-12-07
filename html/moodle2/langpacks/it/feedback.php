@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,13 +35,14 @@ $string['anonymous'] = 'Anonimo';
 $string['anonymous_edit'] = 'Privacy';
 $string['anonymous_entries'] = 'Compilazioni anonime ({$a})';
 $string['anonymous_user'] = 'Utente anonimo';
+$string['answerquestions'] = 'Rispondi alla domanda';
 $string['append_new_items'] = 'Aggiungi nuove domande';
 $string['autonumbering'] = 'Numera le domande automaticamente';
 $string['autonumbering_help'] = 'Abilita o disabilita la numerazione automatica delle domande';
 $string['average'] = 'Media';
 $string['bold'] = 'Grassetto';
-$string['calendarend'] = 'Il feedback {$a} chiude';
-$string['calendarstart'] = 'Il feedback {$a} apre';
+$string['calendarend'] = '{$a} chiude';
+$string['calendarstart'] = '{$a} apre';
 $string['cancel_moving'] = 'Annulla lo spostamento';
 $string['cannotaccess'] = 'Puoi accedere al feedback solamente da un corso.';
 $string['cannotmapfeedback'] = 'Si è verificato un problema nel database, non è stato possibile associare il feedback al corso';
@@ -137,6 +138,10 @@ $string['horizontal'] = 'orizzontale';
 $string['importfromthisfile'] = 'Importa da questo file';
 $string['import_questions'] = 'Importa domande';
 $string['import_successfully'] = 'Importazione completata';
+$string['indicator:cognitivedepth'] = 'Feedback cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'feedback\'.';
+$string['indicator:socialbreadth'] = 'Feedback sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'feedback\'.';
 $string['info'] = 'Informazione';
 $string['infotype'] = 'Tipo di informazione';
 $string['insufficient_responses'] = 'risposte insufficienti';
@@ -206,6 +211,7 @@ $string['of'] = 'di';
 $string['oldvaluespreserved'] = 'Tutte le vecchie domande e i valori assegnati saranno conservati';
 $string['oldvalueswillbedeleted'] = 'Le domande e tutte le risposte degli utenti saranno eliminate';
 $string['only_one_captcha_allowed'] = 'E\' possibile inserire un solo captcha per ciascun feedback.';
+$string['openafterclose'] = 'Hai specificato una data di apertura successiva alla data di chiusura';
 $string['overview'] = 'Panoramica';
 $string['page'] = 'Pagina';
 $string['page_after_submit'] = 'Messaggio da visualizzare dopo la compilazione';

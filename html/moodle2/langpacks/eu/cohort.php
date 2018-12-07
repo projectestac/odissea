@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cohort', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   cohort
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -71,6 +71,10 @@ $string['nocomponent'] = 'Eskuz sortua';
 $string['potusers'] = 'Balizko erabiltzaileak';
 $string['potusersmatching'] = 'Bat datozen balizko erabiltzaileak';
 $string['preview'] = 'Aurreikusi';
+$string['privacy:metadata:cohort_members'] = 'Erabiltzailearen kohorteen inguruko informazioa.';
+$string['privacy:metadata:cohort_members:cohortid'] = 'Kohortearen IDa';
+$string['privacy:metadata:cohort_members:timeadded'] = 'Erabiltzailea kohortera gehitu zeneko unea';
+$string['privacy:metadata:cohort_members:userid'] = 'Kohortearekin lotutako erabiltzailearen IDa';
 $string['removeuserwarning'] = 'Kohorte batetik erabiltzaileak kentzeak  hainbat ikastarotan erabiltzaileak desmatrikulatzea ekar dezake, erabiltzaile-ezarpenak, taldetako partaidetza edo ikastaro horietako beste hainbat informazio ezabatuz.';
 $string['search'] = 'Bilatu';
 $string['searchcohort'] = 'Bilatu kohortea';

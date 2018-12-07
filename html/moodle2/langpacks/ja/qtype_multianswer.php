@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['pluginnameadding'] = '穴埋め問題 (Cloze) の追加';
 $string['pluginnameediting'] = 'Cloze (穴埋め問題) の編集';
 $string['pluginname_help'] = '穴埋め問題 (Cloze) では多肢選択問題および記述問題のような問題を一連のテキストの中に埋め込むことができます。';
 $string['pluginnamesummary'] = 'このタイプの問題は非常に柔軟性がありますが埋め込み式の多肢選択問題、記述問題および数値時問題を作成することのできる特別なコードを含んだテキストを入力する必要があります。';
+$string['privacy:metadata'] = '穴埋め問題 (Cloze) 問題タイププラグインはどのような個人データも保存しません。';
 $string['qtypenotrecognized'] = '不明な問題タイプ {$a} です。';
 $string['questiondefinition'] = '問題定義';
 $string['questiondeleted'] = '問題削除';

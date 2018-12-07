@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_calendar_upcoming', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   block_calendar_upcoming
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Προσθήκη νέου μπλοκ επικείμενα γεγονότα';
 $string['calendar_upcoming:myaddinstance'] = 'Προσθήκη νέου μπλοκ επικείμενα γεγονότα στη σελίδα Η αρχική μου';
+$string['gotocalendar'] = 'Μετάβαση στο ημερολόγιο...';
 $string['pluginname'] = 'Επικείμενα γεγονότα';

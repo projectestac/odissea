@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'question', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   question
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,28 +42,28 @@ $string['broken'] = 'Αυτός είναι ένας "χαλασμένος σύν
 $string['byandon'] = 'από <em>{$a->user}</em> στις <em>{$a->time}</em>';
 $string['cannotcopybackup'] = 'Αποτυχία αντιγραφής αρχείου αντιγράφου ασφαλείας';
 $string['cannotcreate'] = 'Αποτυχία δημιουργίας νέας καταχώρησης στον πίνακα question_attempts';
-$string['cannotcreatepath'] = 'Αδυναμία δημιουργίας διαδρομής: {$a}';
+$string['cannotcreatepath'] = 'Αποτυχία δημιουργίας διαδρομής: {$a}';
 $string['cannotdeletecate'] = 'Δεν μπορείτε να διαγράψετε αυτή την κατηγορία καθώς είναι η προεπιλεγμένη κατηγορία για αυτό το πλαίσιο.';
 $string['cannotdeleteqtypeinuse'] = 'Δεν μπορείτε να διαγράψετε τον τύπο ερώτησης \'{$a}\'. Υπάρχουν ερωτήσεις ίδιου τύπου στην τράπεζα ερωτήσεων.';
 $string['cannotdeleteqtypeneeded'] = 'Δεν μπορείτε να διαγράψετε τον τύπο ερώτησης \'{$a}\'. Υπάρχουν εγκατεστημένοι τύποι ερωτήσεων που βασίζονται σε αυτόν.';
 $string['cannotenable'] = 'Ο τύπος ερώτησης {$a} δεν μπορεί να δημιουργηθεί απευθείας.';
 $string['cannotfindcate'] = 'Αποτυχία εύρεσης εγγραφής κατηγορίας';
 $string['cannotfindquestionfile'] = 'Αποτυχία εύρεσης αρχείου δεδομένων ερώτησης στο zip';
-$string['cannotgetdsfordependent'] = 'Αδυναμία λήψης του ορισμένου σετ δεδομένων για μια ερώτηση εξαρτώμενη από σετ δεδομένων! (ερώτηση: {$a[0]}, στοιχείο σετ δεδομένων: {a[1]})';
-$string['cannotgetdsforquestion'] = 'Αδυναμία λήψης του ορισμένου σετ δεδομένων για μια υπολογισμένη ερώτηση! (ερώτηση: {$a})';
+$string['cannotgetdsfordependent'] = 'Αποτυχία λήψης του ορισμένου σετ δεδομένων για μια ερώτηση εξαρτώμενη από σετ δεδομένων! (ερώτηση: {$a[0]}, στοιχείο σετ δεδομένων: {a[1]})';
+$string['cannotgetdsforquestion'] = 'Αποτυχία λήψης του ορισμένου σετ δεδομένων για μια υπολογισμένη ερώτηση! (ερώτηση: {$a})';
 $string['cannothidequestion'] = 'Αποτυχία απόκρυψης της ερώτησης';
 $string['cannotimportformat'] = 'Λυπόμαστε, η εισαγωγή αυτής της μορφής δεν είναι ακόμα υλοποιημένη!';
 $string['cannotinsertquestion'] = 'Αποτυχία εισαγωγής νέας ερώτησης!';
 $string['cannotinsertquestioncatecontext'] = 'Αποτυχία εισαγωγής της κατηγορίας νέας ερώτησης {$a}[0] λανθασμένο αναγνωριστικό πλαισίου {$a}[1]';
 $string['cannotloadquestion'] = 'Αποτυχία φόρτωσης ερώτησης';
 $string['cannotmovequestion'] = 'Δεν μπορείτε να χρησιμοποιήσετε αυτό το σενάριο για να μετακινήσετε ερωτήσεις που έχουν αρχεία συσχετισμένα με αυτές από διαφορετικές περιοχές.';
-$string['cannotopenforwriting'] = 'Αδυναμία ανοίγματος για εγγραφή: {$a}';
+$string['cannotopenforwriting'] = 'Αποτυχία ανοίγματος για εγγραφή: {$a}';
 $string['cannotpreview'] = 'Δεν μπορείτε να δείτε την προεπισκόπηση για αυτές τις ερωτήσεις!';
-$string['cannotread'] = 'Αδυναμία ανάγνωσης εισαγόμενου αρχείου (ή το αρχείο είναι κενό)';
+$string['cannotread'] = 'Δεν είναι δυνατή η ανάγνωση του εισαγόμενου αρχείου (ή το αρχείο είναι άδειο)';
 $string['cannotretrieveqcat'] = 'Αποτυχία εύρεσης της κατηγορίας ερώτησης';
 $string['cannotunhidequestion'] = 'Αποτυχία επανεμφάνισης της ερώτησης.';
 $string['cannotunzip'] = 'Αποτυχία αποσυμπίεσης του αρχείου.';
-$string['cannotwriteto'] = 'Αδυναμία εγγραφής των εξαγώμενων ερωτήσεων στο {$a}';
+$string['cannotwriteto'] = 'Αποτυχία εγγραφής των εξαγώμενων ερωτήσεων στο {$a}';
 $string['categories'] = 'Κατηγορίες';
 $string['category'] = 'Κατηγορία';
 $string['categorycurrent'] = 'Τρέχουσα κατηγορία';
@@ -123,9 +123,9 @@ $string['editingquestion'] = 'Επεξεργασία μιας ερώτησης';
 $string['editquestion'] = 'Επεξεργασία ερώτησης';
 $string['editquestions'] = 'Επεξεργασία ερωτήσεων';
 $string['editthiscategory'] = 'Επεξεργασία κατηγορίας';
-$string['emptyxml'] = 'Άγνωστο σφάλμα - κενό imsmanifest.xml';
+$string['emptyxml'] = 'Άγνωστο σφάλμα - άδειο imsmanifest.xml';
 $string['enabled'] = 'Ενεργοποιημένο';
-$string['erroraccessingcontext'] = 'Αδυναμία πρόσβασης στο πλαίσιο';
+$string['erroraccessingcontext'] = 'Δεν είναι δυνατή η πρόσβαση στο πλαίσιο';
 $string['errordeletingquestionsfromcategory'] = 'Σφάλμα κατά τη διαγραφή των ερωτήσεων από την κατηγορία {$a}.';
 $string['errorduringpost'] = 'Σφάλμα κατά την μετά-επεξεργασία!';
 $string['errorduringpre'] = 'Σφάλμα κατά την προεπεξεργασία!';
@@ -167,7 +167,7 @@ $string['exportquestions_help'] = '<p>Αυτή η λειτουργία επιτ�
    τέτοια στη βάση δεδομένων Modules and Plugins.</p>';
 $string['feedback'] = 'Ανατροφοδότηση';
 $string['filesareacourse'] = 'η περιοχή αρχείων μαθήματος';
-$string['filesareasite'] = 'η περιοχή αρχείων ιστοχώρου';
+$string['filesareasite'] = 'η περιοχή αρχείων του ιστοτόπου';
 $string['filestomove'] = 'Μετακίνηση / αντιγραφή αρχείων σε {$a}?';
 $string['flagged'] = 'Μαρκαρισμένο';
 $string['flagthisquestion'] = 'Μαρκάρισμα αυτής της ερώτησης';
@@ -188,7 +188,7 @@ $string['invalidanswer'] = 'Ημιτελής απάντηση';
 $string['invalidarg'] = 'Δόθηκαν μη έγκυρα ορίσματα ή ο εξυπηρετητής έχει λανθασμένη διαμόρφωση';
 $string['invalidcategoryidforparent'] = 'Μη έγκυρο αναγνωριστικό κατηγορίας για γονέα!';
 $string['invalidcategoryidtomove'] = 'Μη έγκυρο αναγνωριστικό κατηγορίας για μετακίνση!';
-$string['invalidconfirm'] = 'Το αλφαριθμητικό επιβεβαίωσης ήταν λανθασμένο';
+$string['invalidconfirm'] = 'Η συμβολοσειρά  επιβεβαίωσης ήταν λανθασμένη';
 $string['invalidcontextinhasanyquestions'] = 'Μη έγκυρο πλαίσιο περάστηκε στο question_context_has_any_questions.';
 $string['invalidwizardpage'] = 'Ορίστηκε λανθασμένη ή καθόλου σελίδα αυτόματου οδηγού!';
 $string['lastmodifiedby'] = 'Τελευταία τροποποίηση από';

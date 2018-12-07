@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'scorm', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   scorm
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,8 @@ $string['browsed'] = 'Consultado';
 $string['browsemode'] = 'Modo de pré-visualização';
 $string['browserepository'] = 'Pesquisar repositório';
 $string['calculatedweight'] = 'Peso calculado';
+$string['calendarend'] = '{$a} termina';
+$string['calendarstart'] = '{$a} inicia';
 $string['cannotaccess'] = 'Não pode chamar este script dessa forma';
 $string['cannotfindsco'] = 'Não foi possível encontrar o SCO';
 $string['chooseapacket'] = 'Selecionar ou atualizar um pacote de conteúdos';
@@ -83,17 +85,20 @@ $string['collapsetocwinsizedesc'] = 'Esta configuração permite especificar o t
 $string['compatibilitysettings'] = 'Configurações de compatibilidade';
 $string['completed'] = 'Concluído';
 $string['completionscorerequired'] = 'Exigir nota mínima';
+$string['completionscorerequireddesc'] = 'É necessária uma nota mínima de {$a} para concluir';
 $string['completionscorerequired_help'] = 'Ativar esta configuração vai exigir que o utilizador tenha pelo menos a pontuação mínima inserida para marcar como concluída atividade SCORM, bem como quaisquer outros requisitos de conclusão de atividade.';
 $string['completionstatusallscos'] = 'Exigir que todos os scos devolvam o estado de conclusão exigido';
 $string['completionstatusallscos_help'] = 'Alguns pacotes SCORM contêm vários componentes ou "scos" - quando esta opção  está ativa, todos os scos dentro do pacote devem devolver o lesson_status relevante desta atividade para poder ser sinalizada como concluída.';
 $string['completionstatus_completed'] = 'Concluído';
 $string['completionstatus_passed'] = 'Aprovado';
 $string['completionstatusrequired'] = 'Exigir estado';
+$string['completionstatusrequireddesc'] = 'O aluno deve atingir pelo menos um dos seguintes estados: {$a}';
 $string['completionstatusrequired_help'] = 'Verificar um ou mais estados exigirá que o utilizador fique com pelo menos um estado, para se marcar como concluída a atividade SCORM, bem como quaisquer outros requisitos de conclusão de atividade.';
 $string['confirmloosetracks'] = 'AVISO: O pacote de conteúdos parece ter sido alterado. Caso a estrutura do pacote tenha sido alterada, alguns dados de utilizador poderão perder-se durante a atualização.';
 $string['contents'] = 'Conteúdos';
 $string['coursepacket'] = 'Pacote de Conteúdos';
 $string['coursestruct'] = 'Índice do conteúdo';
+$string['crontask'] = 'Processamento em segundo plano de SCORM';
 $string['currentwindow'] = 'Janela atual';
 $string['datadir'] = 'Erro no sistema de ficheiros: não é possível criar a pasta para os dados';
 $string['defaultdisplaysettings'] = 'Configurações de exibição predefinidas';
@@ -193,6 +198,10 @@ $string['hidetoc_help'] = 'Como o índice é exibido na janela de reprodução d
 $string['highestattempt'] = 'Tentativa com melhor nota';
 $string['identifier'] = 'Identificador de pergunta';
 $string['incomplete'] = 'Incompleto';
+$string['indicator:cognitivedepth'] = 'Compreensão do SCORM';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade SCORM.';
+$string['indicator:socialbreadth'] = 'Socialização do SCORM';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade SCORM.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interações';
 $string['invalidactivity'] = 'A atividade SCORM está incorreta';
@@ -297,6 +306,20 @@ $string['position_error'] = 'A tag {$a->tag} não pode ser descendente da tag {$
 $string['preferencespage'] = 'Preferências apenas para esta página';
 $string['preferencesuser'] = 'Preferências para este relatório';
 $string['prev'] = 'Anterior';
+$string['privacy:metadata:aicc:data'] = 'Dados pessoais transmitidos através do subsistema AICC/SCORM.';
+$string['privacy:metadata:aicc:externalpurpose'] = 'Este módulo envia dados externamente usando o HACP AICC.';
+$string['privacy:metadata:aicc_session:lessonstatus'] = 'Estado da lição a ser localizada';
+$string['privacy:metadata:aicc_session:scormmode'] = 'O modo do elemento a ser localizado';
+$string['privacy:metadata:aicc_session:scormstatus'] = 'O estado do elemento a ser localizado';
+$string['privacy:metadata:aicc_session:sessiontime'] = 'A hora da sessão a ser localizada';
+$string['privacy:metadata:aicc_session:timecreated'] = 'A hora de quando o elemento localizado foi criado';
+$string['privacy:metadata:attempt'] = 'O número da tentativa';
+$string['privacy:metadata:scoes_track:element'] = 'O nome do elemento a ser localizado';
+$string['privacy:metadata:scoes_track:value'] = 'O valor do elemento atribuído';
+$string['privacy:metadata:scorm_aicc_session'] = 'A informação de sessão do HACP AICC';
+$string['privacy:metadata:scorm_scoes_track'] = 'Os dados localizados dos SCOes que pertencem à atividade';
+$string['privacy:metadata:timemodified'] = 'A hora de quando o elemento localizado foi modificado pela última vez';
+$string['privacy:metadata:userid'] = 'O ID do utilizador que acedeu à atividade SCORM';
 $string['protectpackagedownloads'] = 'Impedir que os pacotes SCORM sejam descarregados';
 $string['protectpackagedownloads_desc'] = 'Se ativar esta configuração, os pacotes SCORM poderão apenas ser descarregados por utilizadores que possuam a permissão "Gerir atividades" na disciplina. Se a desativar, os pacotes SCORM poderão ser sempre descarregados (através de dispositivos móveis ou de outros dispositivos).';
 $string['raw'] = 'Nota bruta';
@@ -325,7 +348,7 @@ $string['scormloggingoff'] = 'Autenticação do API está inativo';
 $string['scormloggingon'] = 'Autenticação do API está ativo';
 $string['scormopen'] = 'Disponível a partir de';
 $string['scormresponsedeleted'] = 'Apagar tentativas dos utilizadores';
-$string['scorm:savetrack'] = 'Gravar dados de percurso';
+$string['scorm:savetrack'] = 'Guardar dados de percurso';
 $string['scorm:skipview'] = 'Saltar vista global';
 $string['scormtype'] = 'Tipo';
 $string['scormtype_help'] = 'Esta configuração define como o Pacote SCORM será inserido na disciplina. Existem 4 opções:

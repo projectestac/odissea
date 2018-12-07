@@ -100,7 +100,7 @@ if ($course !== NULL) {
 $PAGE->set_url($url);
 
 $calendar = new calendar_information(0, 0, 0, $time);
-$calendar->prepare_for_view($course, $courses);
+$calendar->set_sources($course, $courses);
 
 $pagetitle = get_string('export', 'calendar');
 
@@ -170,4 +170,5 @@ if ($action != 'advanced') {
 echo $calendarurl;
 
 echo $renderer->complete_layout();
+
 echo $OUTPUT->footer();

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'hvp', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   hvp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -209,6 +209,7 @@ You add interactive H5P content by creating content using the built-in authoring
 $string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'Interactive Content';
 $string['nextpage'] = 'Next page';
+$string['noanswersubmitted'] = 'This user hasn\'t submitted an answer to the H5P yet';
 $string['nocontent'] = 'Could not find or parse the content.json file';
 $string['nocontenttype'] = 'No content type was specified.';
 $string['nocopyright'] = 'No copyright information available for this content.';
@@ -247,13 +248,48 @@ $string['pluginadministration'] = 'H5P';
 $string['pluginname'] = 'H5P';
 $string['postmessagerequired'] = 'A post message is required to access the given endpoint';
 $string['previouspage'] = 'Previous page';
+$string['privacy:metadata:core_files'] = 'The H5P activity stores files which have been uploaded as part of H5P content.';
+$string['privacy:metadata:core_grades'] = 'The H5P activity stores grades of users that have answered H5P content.';
+$string['privacy:metadata:hvp_content_user_data'] = 'Describes the current state that content is in for a user. Used to restore content to a previous state.';
+$string['privacy:metadata:hvp_content_user_data:data'] = 'User data that was stored.';
+$string['privacy:metadata:hvp_content_user_data:data_id'] = 'Data type identifier.';
+$string['privacy:metadata:hvp_content_user_data:delete_on_content_change'] = 'Flag determining if data should be deleted when content changes.';
+$string['privacy:metadata:hvp_content_user_data:hvp_id'] = 'The ID of the H5P content that the data belongs to.';
+$string['privacy:metadata:hvp_content_user_data:id'] = 'The ID of the content user data relationship.';
+$string['privacy:metadata:hvp_content_user_data:preloaded'] = 'Flag determining if data should be pre-loaded into content.';
+$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Sub-content of H5P, 0 if this is not sub-content.';
+$string['privacy:metadata:hvp_content_user_data:user_id'] = 'The ID of the user that the data belongs to.';
+$string['privacy:metadata:hvp_events'] = 'Keeps track of logged H5P events.';
+$string['privacy:metadata:hvp_events:content_id'] = 'The content ID that the action was performed on, 0 if new or no content.';
+$string['privacy:metadata:hvp_events:content_title'] = 'Title of the content.';
+$string['privacy:metadata:hvp_events:created_at'] = 'The time that the event was created.';
+$string['privacy:metadata:hvp_events:id'] = 'The unique ID of the event.';
+$string['privacy:metadata:hvp_events:library_name'] = 'The library the event affected.';
+$string['privacy:metadata:hvp_events:library_version'] = 'The library version the event affected.';
+$string['privacy:metadata:hvp_events:sub_type'] = 'The sub-type of event, or action of event.';
+$string['privacy:metadata:hvp_events:type'] = 'The type of event.';
+$string['privacy:metadata:hvp_events:user_id'] = 'The ID of the user that performed the action.';
+$string['privacy:metadata:hvp_xapi_results'] = 'Stores xAPI events in H5P content.';
+$string['privacy:metadata:hvp_xapi_results:additionals'] = 'Additional information that the H5P can send in.';
+$string['privacy:metadata:hvp_xapi_results:content_id'] = 'The ID of the content the event was performed on.';
+$string['privacy:metadata:hvp_xapi_results:correct_responses_pattern'] = 'The correct answer pattern.';
+$string['privacy:metadata:hvp_xapi_results:description'] = 'The description, task or question of the content that action was performed on.';
+$string['privacy:metadata:hvp_xapi_results:id'] = 'The unique ID of the xAPI event.';
+$string['privacy:metadata:hvp_xapi_results:interaction_type'] = 'The type of interaction.';
+$string['privacy:metadata:hvp_xapi_results:max_score'] = 'Max achievable score for the event.';
+$string['privacy:metadata:hvp_xapi_results:parent_id'] = 'The ID of the parent of the content that this event was performed on. Null if it has no parent.';
+$string['privacy:metadata:hvp_xapi_results:raw_score'] = 'Achieved score for the event.';
+$string['privacy:metadata:hvp_xapi_results:response'] = 'The response the user sent in.';
+$string['privacy:metadata:hvp_xapi_results:user_id'] = 'The ID of the user that performed the action.';
 $string['removeoldlogentries'] = 'Remove old H5P log entries';
 $string['removetmpfiles'] = 'Remove old H5P temporary files';
+$string['reportingquestionsremaininglabel'] = 'questions remaining to grade';
 $string['reportingscaledscoredelimiter'] = ',';
 $string['reportingscaledscorelabel'] = 'Gradebook score:';
 $string['reportingscoredelimiter'] = 'out of';
 $string['reportingscorelabel'] = 'Score:';
 $string['reportnotsupported'] = 'Not supported';
+$string['reportsubmitgradelabel'] = 'Submit grade';
 $string['resizescript'] = 'Include this script on your website if you want dynamic sizing of the embedded content:';
 $string['reveal'] = 'Reveal';
 $string['reviseserversetupandretry'] = 'When you have revised your server setup you may re-enable H5P hub communication in H5P Settings.';

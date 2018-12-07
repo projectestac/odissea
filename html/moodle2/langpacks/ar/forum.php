@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'forum', language 'ar', branch 'MOODLE_34_STABLE'
  *
  * @package   forum
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -291,7 +291,6 @@ $string['subscribeall'] = 'اشرك الكل في هذا المنتدى';
 $string['subscribed'] = 'تم الاشتراك';
 $string['subscribenone'] = 'الغى اشتراك الكل من هذا المنتدى';
 $string['subscribers'] = 'المشتركون';
-$string['subscribersto'] = 'المشتركون في  \' {$a}\'';
 $string['subscribestart'] = 'تزويدي بنسخ المشاركات من هذا المنتدى عبر البريد الالكتروني';
 $string['subscribestop'] = 'لا ارغب في الحصول على نسخ المشاركات من هذا المنتدى عبر البريد الالكتروني';
 $string['subscription'] = 'اشتراك';

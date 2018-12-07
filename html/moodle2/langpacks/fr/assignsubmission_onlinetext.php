@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,12 @@ $string['onlinetext'] = 'Texte en ligne';
 $string['onlinetextfilename'] = 'texteenligne.html';
 $string['onlinetextsubmission'] = 'Permettre la remise de texte en ligne';
 $string['pluginname'] = 'Remise de textes en ligne';
+$string['privacy:metadata:assignmentid'] = 'Identifiant du devoir';
+$string['privacy:metadata:filepurpose'] = 'Les fichiers annexés au texte remis.';
+$string['privacy:metadata:submissionpurpose'] = 'L\'identifiant de remise qui relie aux travaux de l\'utilisateur.';
+$string['privacy:metadata:tablepurpose'] = 'Enregistre le texte remis pour chaque remise.';
+$string['privacy:metadata:textpurpose'] = 'Le texte remis pour cette remise du devoir.';
+$string['privacy:path'] = 'Texte remis';
 $string['wordlimit'] = 'Nombre maximal de mots';
 $string['wordlimitexceeded'] = 'Le nombre maximal de mots pour ce devoir est de {$a->limit} mots, alors que vous essayez de remettre un devoir de {$a->count} mots. Veuillez retravailler votre devoir et essayer à nouveau.';
 $string['wordlimit_help'] = 'Si les travaux en format texte sont activés, ce réglage indique le nombre maximal de mots que les étudiants sont autorisés à remettre.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Inserisci nota a {$a} persone';
+$string['addbulknotedone'] = 'Nota inserita a {$a} persone';
+$string['addbulknotedonesingle'] = 'Nota inserita ad 1 persona';
+$string['addbulknotesingle'] = 'Inserisci nota ad 1 person1';
 $string['addnewnote'] = 'Aggiungi una annotazione';
 $string['addnewnoteselect'] = 'Seleziona gli utenti sui quali scrivere l\'annotazione';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Si è verificato un errore durante l\'eliminazione dell\'annotazione.';
 $string['configenablenotes'] = 'Consente di scrivere annotazioni sugli utenti';
 $string['content'] = 'Contenuto';
 $string['course'] = 'corso';

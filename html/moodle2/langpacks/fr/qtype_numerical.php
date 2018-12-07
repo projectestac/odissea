@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_numerical', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_numerical
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -70,6 +70,7 @@ $string['pluginnameadding'] = 'Ajout d\'une question numérique';
 $string['pluginnameediting'] = 'Modification d\'une question numérique';
 $string['pluginname_help'] = 'Du point de vue du participant, une question numérique est comme une question à réponse courte. La différence est que la réponse numérique accepte une marge d\'erreur dans la réponse. Cela permet d\'utiliser une fourchette de valeurs comme réponse attendue. Par exemple, si la réponse est 10 avec une marge d\'erreur de 2, Alors, n\'importe quel nombre entre 8 et 12 sera considéré comme correct.';
 $string['pluginnamesummary'] = 'Permet une réponse numérique, le cas échéant avec des unités, qui est évaluée en comparant divers modèles de réponses, comprenant une tolérance.';
+$string['privacy:metadata'] = 'Le plugin de type de question Numérique n\'enregistre aucune donnée personnelle.';
 $string['relative'] = 'Relatif';
 $string['rightexample'] = 'À droite, comme 2.5 cm ou 12.5 km';
 $string['selectunit'] = 'Sélectionnez une unité';

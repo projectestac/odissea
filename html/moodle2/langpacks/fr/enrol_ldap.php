@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_ldap', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -110,6 +110,7 @@ $string['pluginname_desc'] = '<p>Vous pouvez utiliser un serveur LDAP pour contr
 <p>Les inscriptions sont mises à jour lors de la connexion de l\'utilisateur. Il est aussi possible de lancer un script pour synchroniser les inscriptions. Voyez pour cela le fichier <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Cette extension peut également servir à la création automatique de nouveaux cours lorsque de nouveaux groupes apparaissent dans LDAP.</p>';
 $string['pluginnotenabled'] = 'Plugin pas activé !';
+$string['privacy:metadata'] = 'Le plugin Inscriptions LDAP n\'enregistre aucune donnée personnelle.';
 $string['role_mapping'] = '<p> Pour chaque rôle que vous souhaitez attribuer à partir de LDAP, vous devez spécifier la liste des contextes où les groupes des rôles du cours sont situés. Séparez les différents contextes avec un point-virgule (;).</p><p> Vous devez également spécifier l\'attribut que votre serveur LDAP utilise pour les membres d\'un groupe. Habituellement « member » ou « memberUid »</p>';
 $string['role_mapping_attribute'] = 'Attribut de membre LDAP pour {$a}';
 $string['role_mapping_context'] = 'Contextes LDAP pour {$a}';
@@ -117,6 +118,7 @@ $string['role_mapping_key'] = 'Faire correspondre les rôles LDAP';
 $string['roles'] = 'Correspondance des rôles';
 $string['server_settings'] = 'Réglages du serveur LDAP';
 $string['synccourserole'] = '== synchronisation du cours « {$a->idnumber} » pour le rôle « {$a->role_shortname} »';
+$string['syncenrolmentstask'] = 'Tâche de synchronisation des inscriptions';
 $string['template'] = 'Facultatif : les cours créés automatiquement peuvent copier leurs réglages sur un cours modèle.';
 $string['template_key'] = 'Modèle';
 $string['unassignrole'] = 'Retrait de l\'attribution du rôle « {$a->role_shortname} » de l\'utilisateur « {$a->user_username} » du cours « {$a->course_shortname} » (id {$a->course_id})';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'choice', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   choice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -121,7 +121,7 @@ $string['responsesresultgraphheader'] = 'Mostra la gràfica';
 $string['responsesto'] = 'Respostes per a {$a}';
 $string['results'] = 'Resultats';
 $string['savemychoice'] = 'Desa la meva resposta';
-$string['search:activity'] = 'Consulta - Informació de l\'activitat';
+$string['search:activity'] = 'Consulta: informació de l\'activitat';
 $string['showpreview'] = 'Mostra la vista prèvia';
 $string['showpreview_help'] = 'Permet als estudiants veure de forma prèvia les opcions disponibles abans que la consulta sigui oberta per rebre enviaments.';
 $string['showunanswered'] = 'Mostra columna de no contestades';
@@ -131,5 +131,6 @@ $string['spacesleft'] = 'Espais disponibles';
 $string['taken'] = 'Ocupat';
 $string['userchoosethisoption'] = 'Usuaris que han escollit aquesta opció';
 $string['viewallresponses'] = 'Visualitza respostes ({$a})';
+$string['viewchoices'] = 'Visualitza les seleccions';
 $string['withselected'] = 'Amb la selecció';
 $string['yourselection'] = 'La vostra selecció';

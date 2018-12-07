@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradingform_rubric', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   gradingform_rubric
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -60,6 +60,7 @@ $string['name'] = 'Name';
 $string['needregrademessage'] = 'Die Rubrik wurde geändert nachdem ein/e Teilnehmer/in bewertet wurde. Teilnehmer/innen sehen diese Bewertung solange nicht bis Sie die Rubrik geprüft und die Bewertung aktualisiert haben.';
 $string['pluginname'] = 'Rubrik';
 $string['previewrubric'] = 'Rubrik-Vorschau';
+$string['privacy:metadata'] = 'Das Rubrik-Bewertungsplugin speichert keine persönlichen Daten.';
 $string['regrademessage1'] = 'Sie ändern eine Rubrik, die bereits zur Bewertung verwendet wurde. Existierende Bewertungen müssen nun noch einmal kontrolliert werden. Bis dahin werden diese Bewertungen vor den Teilnehmer/innen verborgen.';
 $string['regrademessage5'] = 'Sie nehmen wesentliche Änderungen an der Rubrik vor. Diese wurde bereits für Bewertungen verwendet. Der Wert im Bewertungssystem bleibt unverändert, aber die Rubrik wird vor den Teilnehmer/innen verborgen, bis Sie deren Abgaben neu bewertet haben.';
 $string['regradeoption0'] = 'Nicht für Neubewertung markieren';

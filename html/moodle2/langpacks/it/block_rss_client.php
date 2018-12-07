@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_rss_client', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_rss_client
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,8 @@ L\'opzione consente a Moodle di individuare automaticamente un feed senza dovern
 Moodle individuerà automaticamente il feed da usare:
 <pre>http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss</pre>
 </p>';
+$string['failedfeed'] = 'Non è stato possibile scaricare il feed. Verrà effettuato un nuovo tentativo dopo {$a}';
+$string['failedfeeds'] = 'Non è stato possibile scaricare uno o più feed RSS.';
 $string['feed'] = 'Feed';
 $string['feedadded'] = 'Feed News aggiunto';
 $string['feeddeleted'] = 'Feed News eliminato';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_xmldb', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_xmldb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -103,13 +103,13 @@ $string['duplicatekeyname'] = 'Existe outra chave com esse nome';
 $string['duplicatetablename'] = 'Existe outra tabela com esse nome';
 $string['edit'] = 'Editar';
 $string['edit_field'] = 'Editar campo';
-$string['edit_field_save'] = 'Gravar campo';
+$string['edit_field_save'] = 'Guardar campo';
 $string['edit_index'] = 'Editar índice';
-$string['edit_index_save'] = 'Gravar índice';
+$string['edit_index_save'] = 'Guardar índice';
 $string['edit_key'] = 'Editar chave';
-$string['edit_key_save'] = 'Gravar chave';
+$string['edit_key_save'] = 'Guardar chave';
 $string['edit_table'] = 'Editar tabela';
-$string['edit_table_save'] = 'Gravar tabela';
+$string['edit_table_save'] = 'Guardar tabela';
 $string['edit_xml_file'] = 'Editar ficheiro XML';
 $string['enumvaluesincorrect'] = 'Valores incorretos para o campo enum';
 $string['expected'] = 'Esperado';
@@ -170,14 +170,15 @@ $string['numberincorrectdecimals'] = 'Número incorreto de decimais para campo n
 $string['numberincorrectlength'] = 'Tamanho incorreto para campo numérico';
 $string['pendingchanges'] = 'Nota: Fez alterações a este ficheiro. Estas podem ser gravadas a qualquer momento.';
 $string['pendingchangescannotbesaved'] = 'Há alterações a este ficheiro mas não podem ser gravadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web.';
-$string['pendingchangescannotbesavedreload'] = 'Há alterações a este ficheiro mas não podem ser gravadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web. Em seguida carrege novamente esta página e deverá estar em condições de poder gravar as alterações.';
+$string['pendingchangescannotbesavedreload'] = 'Existem alterações a este ficheiro mas não podem ser guardadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web. Em seguida, carregue novamente esta página e deverá estar em condições de poder guardar as alterações.';
 $string['pluginname'] = 'Editor XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'As chaves primárias não podem ser nulas';
+$string['privacy:metadata'] = 'O módulo Editor XMLDB não armazena dados pessoais.';
 $string['reserved'] = 'Reservada';
 $string['reservedwords'] = 'Palavras reservadas';
 $string['revert'] = 'Reverter';
 $string['revert_changes'] = 'Reverter alterações';
-$string['save'] = 'Gravar';
+$string['save'] = 'Guardar';
 $string['searchresults'] = 'Pesquisar resultados';
 $string['selectaction'] = 'Selcionar ações:';
 $string['selectdb'] = 'Selecionar base de dados:';

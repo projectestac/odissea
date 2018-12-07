@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeimport_direct', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeimport_direct
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Import grades from CSV';
 $string['pluginname'] = 'Paste from spreadsheet';
+$string['privacy:metadata'] = 'The import grades from copied spreadsheed plugin does not store any personal data.';
 $string['userdata'] = 'Help copying data into this form.';
 $string['userdata_help'] = 'Grades may be copied and pasted from a spreadsheet into the gradebook. The spreadsheet should have a column containing user identity data - either username or ID number or email address. Each column for import should have a column header.';
 $string['userdata_link'] = 'grade/import/direct/index';

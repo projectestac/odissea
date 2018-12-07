@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatefeedback', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qbehaviour_immediatefeedback', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qbehaviour_immediatefeedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Unvollständig';
 $string['pluginname'] = 'Direkte Auswertung';
+$string['privacy:metadata'] = 'Der Sofortiges Feedback Modus des Frageverhalten-Plugins speichert keine persönlichen Daten.';

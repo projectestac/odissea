@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_file', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_file
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['path_help'] = 'Das Verzeichnis wird zur Ablage von Dateien des Cache-Sp
 $string['pluginname'] = 'Datei-Cache';
 $string['prescan'] = 'Verzeichnis vorher durchsuchen';
 $string['prescan_help'] = 'Nach der Aktivierung wird das Verzeichnis bei der Nutzung von Dateien oder Abfragen zuerst durchgescannt. Das kann den Zugriff beschleunigen wenn der Datenspeicher sonst langsam erscheint.';
+$string['privacy:metadata'] = 'Das Dateicache-Cachestoreplugin speichert kurzfristig Daten im Rahmen des Cachings und wird dann wieder gelöscht.';
 $string['singledirectory'] = 'Speichern in einem einzigen Verzeichnis';
 $string['singledirectory_help'] = 'Nach der Aktivierung werden Dateien (gecachte Werte) in einem einzlenen Verzeichnis abgelegt und nicht in vielen Unterverzeichnissen gespeichert. <br />
 Dateitransaktionen können dadurch beschleunigt werden. Es kann jedoch auch an die Grenzen des Dateisystems stossen.<br />

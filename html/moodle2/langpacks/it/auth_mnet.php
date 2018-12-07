@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_mnet', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,15 @@ $string['auth_mnet_roamout'] = 'I propri utenti possono essere instradati sugli 
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Timeout in secondi per l\'autenticazione basata su XMLRPC';
 $string['auto_add_remote_users'] = 'Aggiungi automaticamente utenti remoti';
 $string['pluginname'] = 'Autenticazione MNet';
+$string['privacy:metadata:external:mahara'] = 'Il plugin può inviare dati ad una applicazione Mahara collegata.';
+$string['privacy:metadata:external:moodle'] = 'Il plugin può inviare dati ad una applicazione Moodle collegata.';
+$string['privacy:metadata:mnet_external:city'] = 'La città dell\'utente.';
+$string['privacy:metadata:mnet_external:country'] = 'La nazione dell\'utente.';
+$string['privacy:metadata:mnet_external:firstaccess'] = 'La data del primo accesso dell\'utente.';
+$string['privacy:metadata:mnet_external:firstname'] = 'Il nome dell\'utente.';
+$string['privacy:metadata:mnet_external:firstnamephonetic'] = 'Il nome fonetico dell\'utente.';
+$string['privacy:metadata:mnet_external:icq'] = 'Il numero ICQ dell\'utente.';
+$string['privacy:metadata:mnet_external:id'] = 'L\'identificativo dell\'utente.';
 $string['rpc_negotiation_timeout'] = 'Timeout negoziazione RPC';
 $string['sso_idp_description'] = 'Per consentire ai tuoi utenti di navigare verso il sito {$a} senza effettuare nuovamente il login, devi offrire questo servizio<ul><li><em>Requisito</em>: è necessario <strong>sottoscrivere</strong> il servizio SSO (Service Provider) offerto dal sito {$a}.</li></ul><br />Per consentire agli utenti autenticati sul sito {$a} di accedere a questo sito senza effettuare nuovamente il login, devi sottoscrivere questo servizio. <ul><li><em>Requisito</em>: è necessario <strong>offrire</strong> il servizio SSO (Service Provider) al sito {$a}. </li></ul><br />';
 $string['sso_idp_name'] = 'Servizio SSO (Identity Provider)';

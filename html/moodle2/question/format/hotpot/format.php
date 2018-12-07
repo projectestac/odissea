@@ -183,8 +183,9 @@ class qformat_hotpot extends qformat_default {
             $looping = true;
             while ($looping) {
 
-                // get next bit of text
-                $questiontext = $source->xml_value($tags, $exercise."[$q]");
+                // get next fragment of open text
+                $open_text = $exercise."['open-text'][$q]['#']";
+                $questiontext = $source->xml_value($tags, $open_text);
                 $questiontext = $this->hotpot_prepare_str($questiontext);
 
                 // get next gap

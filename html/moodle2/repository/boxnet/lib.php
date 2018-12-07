@@ -252,7 +252,7 @@ class repository_boxnet extends repository {
                     'title' => $item->name,
                     'path' => $fullpath . '/' . $this->build_part('folder', $item->id, $item->name),
                     'date' => strtotime($item->modified_at),
-                    'thumbnail' => $OUTPUT->pix_url(file_folder_icon(64))->out(false),
+                    'thumbnail' => $OUTPUT->image_url(file_folder_icon(64))->out(false),
                     'thumbnail_height' => 64,
                     'thumbnail_width' => 64,
                     'children' => array(),
@@ -264,7 +264,7 @@ class repository_boxnet extends repository {
                     'source' => $this->build_part('file', $item->id, $item->name),
                     'size' => $item->size,
                     'date' => strtotime($item->modified_at),
-                    'thumbnail' => $OUTPUT->pix_url(file_extension_icon($item->name, 64))->out(false),
+                    'thumbnail' => $OUTPUT->image_url(file_extension_icon($item->name, 64))->out(false),
                     'thumbnail_height' => 64,
                     'thumbnail_width' => 64,
                     'author' => $item->owned_by->name,
@@ -437,9 +437,7 @@ class repository_boxnet extends repository {
             $result = $c->download_one($url, null, array('filepath' => $path, 'timeout' => $CFG->repositorysyncimagetimeout));
             $info = $c->get_info();
             if ($result === true && isset($info['http_code']) && $info['http_code'] == 200) {
-                $fs = get_file_storage();
-                list($contenthash, $filesize, $newfile) = $fs->add_file_to_pool($path);
-                $file->set_synchronized($contenthash, $filesize);
+                $file->set_synchronised_content_from_file($path);
                 return true;
             }
         }

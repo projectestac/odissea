@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_monitor', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_monitor
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -79,6 +79,28 @@ $string['monitor:managetool'] = 'イベントモニタリングを有効/無効�
 $string['monitor:subscribe'] = 'イベントモニタルールを購読する';
 $string['norules'] = '購読できるモニタリングルールはありません。';
 $string['pluginname'] = 'イベントモニタ';
+$string['privacy:createdrules'] = '私が作成したイベントモニタ';
+$string['privacy:metadata:description'] = 'ルール説明';
+$string['privacy:metadata:eventname'] = '省略していないイベント名';
+$string['privacy:metadata:frequency'] = '通知頻度';
+$string['privacy:metadata:historysummary'] = '送信されたメッセージ通知の履歴を保存します。';
+$string['privacy:metadata:inactivedate'] = '休止中の購読が完全に削除されるまでの期間 (日) です。';
+$string['privacy:metadata:lastnotificationsent'] = 'このサブシステムから最後に通知が送信された日時です。';
+$string['privacy:metadata:messagesummary'] = '通知はメッセージシステムに送信されます。';
+$string['privacy:metadata:name'] = 'ルール名';
+$string['privacy:metadata:plugin'] = 'プラグインのフランケンスタイル名';
+$string['privacy:metadata:rulessummary'] = 'これはモニタルールを保存します。';
+$string['privacy:metadata:subscriptionssummary'] = '様々なルールのユーザ購読を保存します。';
+$string['privacy:metadata:template'] = 'メッセージテンプレート';
+$string['privacy:metadata:timecreatedrule'] = 'このルールの作成日時です。';
+$string['privacy:metadata:timecreatedsub'] = 'この購読の作成日時です。';
+$string['privacy:metadata:timemodifiedrule'] = 'このルールの最終更新日時です。';
+$string['privacy:metadata:timesent'] = 'メッセージの送信日時です。';
+$string['privacy:metadata:timewindow'] = '時間枠 (秒)';
+$string['privacy:metadata:userid'] = 'ルールを作成したユーザのIDです。';
+$string['privacy:metadata:useridhistory'] = 'この通知が送信されたユーザのIDです。';
+$string['privacy:metadata:useridsub'] = '購読者のIDです。';
+$string['privacy:subscriptions'] = '私のイベントモニタ購読';
 $string['processevents'] = 'イベント処理';
 $string['ruleareyousure'] = '本当にルール「 {$a} 」を削除してもよろしいですか?';
 $string['ruleareyousureextra'] = 'このルールに関して同様に削除される購読が {$a} 件あります。';

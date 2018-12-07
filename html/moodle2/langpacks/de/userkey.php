@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'userkey', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   userkey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,14 @@ $string['keyvaliduntil_help'] = '<h2>Schlüssel gültig bis</h2>
 <p>Tragen Sie ein Datum ein nach dem der gewählte Schlüssel nicht mehr gültig sein soll. Damit kann die Sicherheit erhöht werden.</p>';
 $string['keyvalue'] = 'Schlüsselwert';
 $string['newuserkey'] = 'Neuer Nutzerschlüssel';
+$string['privacy:metadata:user_private_key'] = 'Privater Schlüssel für den Nutzer';
+$string['privacy:metadata:user_private_key:instance'] = 'Instanz des Skripts.';
+$string['privacy:metadata:user_private_key:iprestriction'] = 'Der IP-Adressbereich von dem dieser Schlüssel genutzt werden kann.';
+$string['privacy:metadata:user_private_key:script'] = 'Das Script, das für den Nutzerschlüssel verantwortlich ist.';
+$string['privacy:metadata:user_private_key:timecreated'] = 'Datum und Uhrzeit an dem der Schlüssel erzeugt wurde.';
+$string['privacy:metadata:user_private_key:userid'] = 'Nutzer mit der Schlüssel verbunden ist.';
+$string['privacy:metadata:user_private_key:validuntil'] = 'Datum und Uhrzeit bis zu der der Schlüssel gültig ist.';
+$string['privacy:metadata:user_private_key:value'] = 'Der Wert des Schlüssels';
 $string['userkey'] = 'Nutzerschlüssel';
 $string['userkey_help'] = 'Wählen Sie einen gespeicherten Schlüssel aus, der die Nutzer/innen auf die von diesem Export-Plugin veröffentlichten Daten zugreifen lässt, ohne sich in Moodle einzuloggen. Wählen Sie "Neuen Nutzerschlüssel anlegen", um einen neuen Schlüssel bei der Übertragung dieses Formulars zu erzeugen.';
 $string['userkeys'] = 'Nutzerschlüssel';

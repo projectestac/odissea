@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_site_main_menu', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_site_main_menu', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_site_main_menu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'メインメニュー';
+$string['privacy:metadata'] = 'メインメニューブロックは他の場所で保存されたデータのみ表示します。';
 $string['site_main_menu:addinstance'] = '新しいメインメニューブロックを追加する';

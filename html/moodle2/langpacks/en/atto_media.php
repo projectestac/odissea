@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_media', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_media
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -68,6 +68,7 @@ $string['metadatasourcelabel'] = 'Metadata track URL';
 $string['mute'] = 'Muted';
 $string['pluginname'] = 'Media';
 $string['poster'] = 'Thumbnail URL';
+$string['privacy:metadata'] = 'The atto_media plugin does not store any personal data.';
 $string['remove'] = 'Remove';
 $string['size'] = 'Size';
 $string['srclang'] = 'Language';

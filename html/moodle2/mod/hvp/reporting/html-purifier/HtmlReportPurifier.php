@@ -35,13 +35,25 @@ class HtmlReportPurifier {
    * valid UTF-8.
    * @ingroup sanitation
    */
-  public static function filter_xss($string, $allowed_tags =  array(
+  public static function filter_xss($string, $allowed_tags = array(
       'a', 'b', 'br', 'code', 'col', 'colgroup', 'dd', 'div', 'dl',
       'dt', 'em', 'figcaption', 'figure', 'footer', 'h1', 'h2', 'h3',
       'h4', 'h5', 'h6', 'header', 'hgroup', 'i', 'img', 'ins', 'li',
-      'menu', 'meter', 'nav', 'ol', 'p', 'section', 'span', 'strong',
+      'menu', 'meter', 'nav', 'ol', 'p', 's', 'section', 'span', 'strong',
       'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th',
       'thead', 'time', 'tr', 'tt', 'u', 'ul'), $allowedStyles = FALSE) {
+
+    $stylePatterns = false;
+    if ($allowedStyles) {
+      $stylePatterns = array();
+      $stylePatterns[] = '/^color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)) *;?$/i';
+      $stylePatterns[] = '/^background-color: *(#[a-f0-9]{3}[a-f0-9]{3}?|rgba?\([0-9, ]+\)) *;?$/i';
+      $stylePatterns[] = '/^(height:\:?[0-9]{1,8}px; width:\:?[0-9]{1,8}px|width\:?[0-9]{1,8}px|height:500px)?$/i';
+      $stylePatterns[] = '/^width\:?[0-9]{1,8}%?$/i';
+      $stylePatterns[] = '/^height\:?[0-9]{1,8}%?$/i';
+      $stylePatterns[] = '/^font-size:\:?[0-9]{1,8}px$/i';
+    }
+
     if (strlen($string) == 0) {
       return $string;
     }
@@ -52,9 +64,8 @@ class HtmlReportPurifier {
       return '';
     }
 
-
     // Store the text format.
-    self::_filter_xss_split($allowed_tags, TRUE, $allowedStyles);
+    self::_filter_xss_split($allowed_tags, TRUE, $stylePatterns);
     // Remove NULL characters (ignored by some browsers).
     $string = str_replace(chr(0), '', $string);
     // Remove Netscape 4 JS entities.
@@ -96,11 +107,13 @@ class HtmlReportPurifier {
    * If the element isn't allowed, an empty string. Otherwise, the cleaned up
    * version of the HTML element.
    */
-  private static function _filter_xss_split($m, $store = FALSE, $allowedStyles = FALSE) {
+  private static function _filter_xss_split($m, $store = FALSE, $n = FALSE) {
     static $allowed_html;
+    static $allowed_styles;
 
     if ($store) {
       $allowed_html = array_flip($m);
+      $allowed_styles = $n;
       return $allowed_html;
     }
 
@@ -148,7 +161,7 @@ class HtmlReportPurifier {
 
     // Clean up attributes.
 
-    $attr2 = implode(' ', self::_filter_xss_attributes($attrList, $allowedStyles ? $allowedStyles : FALSE));
+    $attr2 = implode(' ', self::_filter_xss_attributes($attrList, $allowed_styles));
     $attr2 = preg_replace('/[<>]/', '', $attr2);
     $attr2 = strlen($attr2) ? ' ' . $attr2 : '';
 

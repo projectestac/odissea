@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'imscp', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   imscp
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,10 @@ $string['contentheader'] = '内容';
 $string['deploymenterror'] = '内容包有错！';
 $string['imscp:addinstance'] = '添加新的 IMS 内容包';
 $string['imscp:view'] = '查看 IMS 内容';
+$string['indicator:cognitivedepth'] = 'IMS内容包资源认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在IMS内容包资源中所达到的认知深度。';
+$string['indicator:socialbreadth'] = 'IMS内容包资源社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在IMS内容包资源中所达到的社会宽度。';
 $string['keepold'] = '归档包';
 $string['keepoldexplain'] = '要归档多少包？';
 $string['modulename'] = 'IMS 内容包';

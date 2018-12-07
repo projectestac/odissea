@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio_mahara', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio_mahara
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,5 +45,7 @@ $string['mnet_wronghost'] = 'De andere server kwam niet overeen met het transfer
 $string['pf_description'] = 'Laat gebruikers toe Moodle-inhoud naar deze server te sturen<br />Schrijf in op deze service om geauthenticeerde gebruikers van jouw site toe te laten om inhoud te sturen naar {$a}<br /><ul><li><em>Noodzakelijk</em>: je moet ook de SSO (Identiteitsprovider) service <strong>publiceren</strong> aan {$a} </li><li><em>Noodzakelijk</em>: je moet <strong>inschrijven</strong> op de SSO (Service provider) service op {$a}</li><li><em>Noodzakelijk</em>: je moet de MNet authenticatieplugin inschakelen</li></ul><br />';
 $string['pf_name'] = 'Portfolio diensten';
 $string['pluginname'] = 'Mahara ePortfolio';
+$string['privacy:metadata'] = 'Deze plugin stuurt gegevens extern door naar een gelinkte Mahara-applicatie en bewaart geen gegevens lokaal.';
+$string['privacy:metadata:data'] = 'Persoonlijke gegevens, binnengekomen via het portfolio subsysteem.';
 $string['senddisallowed'] = 'Je kunt nu geen bestanden naar Mahara overzetten';
 $string['url'] = 'URL';

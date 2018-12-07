@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'group', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   group
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -58,6 +58,7 @@ $string['deletegroupsconfirm'] = 'Möchten Sie die folgenden Gruppen wirklich l�
 $string['deleteselectedgroup'] = 'Gruppe löschen';
 $string['editgroupingsettings'] = 'Gruppierung bearbeiten';
 $string['editgroupsettings'] = 'Gruppe bearbeiten';
+$string['editusersgroupsa'] = 'Gruppen für \'{$a}\' bearbeiten';
 $string['enrolmentkey'] = 'Einschreibeschlüssel';
 $string['enrolmentkeyalreadyinuse'] = 'Dieser Einschreibeschlüssel wird bereits für eine andere Gruppe benutzt.';
 $string['enrolmentkey_help'] = 'Ein Einschreibeschlüssel erlaubt die Einschränkung von Kurszugängen auf diejenigen, die den Einschreibeschlüssel kennen. Falls zusätzlich ein Einschreibeschlüssel für eine Gruppe angegeben ist, dann dient dieser Schlüssel dem Kurszugang, aber auch der automatischen Zuweisung der Nutzer zur richtigen Gruppe.';
@@ -110,10 +111,10 @@ $string['groupmodeforce_help'] = 'Wenn der Gruppenmodus erzwungen wird, dann wir
 $string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verfügung:
 
 * Keine Gruppen - Im Kurs gibt es keine Gruppen und alle nutzen alles zusammen.
-* Getrennte Gruppen - Im Kurs gibt es getrennte Gruppen, d.h. jedes Gruppenmitglied kann nur Mitglieder der eigenen Gruppe sehen, alle andern sind unsichtbar.
+* Getrennte Gruppen - Im Kurs gibt es getrennte Gruppen, d.h. jedes Gruppenmitglied kann nur Mitglieder der eigenen Gruppe sehen, alle anderen sind unsichtbar.
 * Sichtbare Gruppen - Im Kurs gibt es sichtbare Gruppen, d.h. jedes Gruppenmitglied arbeitet in der eigenen Gruppe, kann aber die anderen Gruppen sehen.
 
-Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls der Gruppenmodus auf Kursebene festgelegt wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
+Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls allerdings der Gruppenmodus auf Kursebene festgelegt wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
 $string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits.';
@@ -171,6 +172,10 @@ $string['overview'] = 'Überblick';
 $string['potentialmembers'] = 'Mögliche Mitglieder: {$a}';
 $string['potentialmembs'] = 'Mögliche Mitglieder';
 $string['printerfriendly'] = 'Druckansicht';
+$string['privacy:metadata:groups'] = 'Aufzeichnung der Gruppenmitgliedschaft';
+$string['privacy:metadata:groups:groupid'] = 'ID der Gruppe';
+$string['privacy:metadata:groups:timeadded'] = 'Zeitpunkt zu dem der Nutzer der Gruppe zugeordnet wurde';
+$string['privacy:metadata:groups:userid'] = 'ID des Nutzers, der der Gruppe zugeordnet wurde';
 $string['random'] = 'Zufällig';
 $string['removefromgroup'] = 'Nutzer/in aus der Gruppe {$a} löschen';
 $string['removefromgroupconfirm'] = 'Möchten Sie \'{$a->user}\' wirklich aus der Gruppe \'{$a->group}\' löschen?';

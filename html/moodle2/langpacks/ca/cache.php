@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cache', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   cache
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,7 @@ $string['cachedef_calendar_subscriptions'] = 'Subscripcions al calendari';
 $string['cachedef_capabilities'] = 'Llista de capacitats del sistema';
 $string['cachedef_completion'] = 'Estat de compleció de la tasca';
 $string['cachedef_config'] = 'Paràmetres de configuració';
+$string['cachedef_contextwithinsights'] = 'Context amb prediccions';
 $string['cachedef_coursecat'] = 'Llistat de categories del curs per a l\'usuari particular';
 $string['cachedef_coursecatrecords'] = 'Registres de les categories del curs';
 $string['cachedef_coursecattree'] = 'Arbre de les categories del curs';
@@ -47,6 +48,7 @@ $string['cachedef_coursemodinfo'] = 'Informació acumulada sobre mòduls i secci
 $string['cachedef_databasemeta'] = 'Metainformació de la base de dades';
 $string['cachedef_eventinvalidation'] = 'Invalidació d\'esdeveniment';
 $string['cachedef_externalbadges'] = 'Insígnies externes per a un usuari particular';
+$string['cachedef_fontawesomeiconmapping'] = 'Mapatge d\'icones per a font awesome';
 $string['cachedef_grade_categories'] = 'Qualifica les consultes de categoria';
 $string['cachedef_groupdata'] = 'Informació del grup del curs';
 $string['cachedef_htmlpurifier'] = 'Purificador HTML - contingut netejat';
@@ -66,6 +68,7 @@ $string['cachedef_suspended_userids'] = 'Llista d\'usuaris amb la inscripció su
 $string['cachedef_tagindexbuilder'] = 'Resultats de la cerca pels ítems etiquetats';
 $string['cachedef_tags'] = 'Col·leccions i zones d\'etiquetes';
 $string['cachedef_temp_tables'] = 'Memòria cau de taules temporals';
+$string['cachedef_user_group_groupings'] = 'Agrupaments i grups d\'usuaris per curs';
 $string['cachedef_userselections'] = 'Dades utilitzades per a persistència de les seleccions dels usuaris a través de Moodle';
 $string['cachedef_yuimodules'] = 'Definicions del mòdul YUI';
 $string['cachelock_file_default'] = 'Blocatge de fitxers per defecte';

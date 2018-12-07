@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_picasa', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_picasa
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,4 +30,6 @@ $string['configplugin'] = 'Picasaリポジトリ設定';
 $string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環として、あなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインに使用することのできるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['picasa:view'] = 'Picasaリポジトリを表示する';
 $string['pluginname'] = 'Picasaウェブアルバム';
+$string['privacy:metadata:repository_picasa'] = 'Picasaウェブアルバムリポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'Picasaリポジトリユーザ検索テキストクエリです。';
 $string['secret'] = '秘密鍵';

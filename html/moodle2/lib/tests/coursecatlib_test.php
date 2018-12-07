@@ -382,6 +382,37 @@ class core_coursecatlib_testcase extends advanced_testcase {
     }
 
     /**
+     * Test the get_all_children_ids function.
+     */
+    public function test_get_all_children_ids() {
+        $category1 = coursecat::create(array('name' => 'Cat1'));
+        $category2 = coursecat::create(array('name' => 'Cat2'));
+        $category11 = coursecat::create(array('name' => 'Cat11', 'parent' => $category1->id));
+        $category12 = coursecat::create(array('name' => 'Cat12', 'parent' => $category1->id));
+        $category13 = coursecat::create(array('name' => 'Cat13', 'parent' => $category1->id));
+        $category111 = coursecat::create(array('name' => 'Cat111', 'parent' => $category11->id));
+        $category112 = coursecat::create(array('name' => 'Cat112', 'parent' => $category11->id));
+        $category1121 = coursecat::create(array('name' => 'Cat1121', 'parent' => $category112->id));
+
+        $this->assertCount(0, $category2->get_all_children_ids());
+        $this->assertCount(6, $category1->get_all_children_ids());
+
+        $cmpchildrencat1 = array($category11->id, $category12->id, $category13->id, $category111->id, $category112->id,
+                $category1121->id);
+        $childrencat1 = $category1->get_all_children_ids();
+        // Order of values does not matter. Compare sorted arrays.
+        sort($cmpchildrencat1);
+        sort($childrencat1);
+        $this->assertEquals($cmpchildrencat1, $childrencat1);
+
+        $this->assertCount(3, $category11->get_all_children_ids());
+        $this->assertCount(0, $category111->get_all_children_ids());
+        $this->assertCount(1, $category112->get_all_children_ids());
+
+        $this->assertEquals(array($category1121->id), $category112->get_all_children_ids());
+    }
+
+    /**
      * Test the countall function
      */
     public function test_count_all() {
@@ -748,6 +779,99 @@ class core_coursecatlib_testcase extends advanced_testcase {
         $this->assertEquals(0, count($courses[$c3->id]->get_course_overviewfiles()));
         $this->assertEquals(2, count($courses[$c4->id]->get_course_overviewfiles()));
         $this->assertEquals(1, count($courses[$c5->id]->get_course_overviewfiles()));
+    }
+
+    public function test_get_nested_name() {
+        $cat1name = 'Cat1';
+        $cat2name = 'Cat2';
+        $cat3name = 'Cat3';
+        $cat4name = 'Cat4';
+        $category1 = coursecat::create(array('name' => $cat1name));
+        $category2 = coursecat::create(array('name' => $cat2name, 'parent' => $category1->id));
+        $category3 = coursecat::create(array('name' => $cat3name, 'parent' => $category2->id));
+        $category4 = coursecat::create(array('name' => $cat4name, 'parent' => $category2->id));
+
+        $this->assertEquals($cat1name, $category1->get_nested_name(false));
+        $this->assertEquals("{$cat1name} / {$cat2name}", $category2->get_nested_name(false));
+        $this->assertEquals("{$cat1name} / {$cat2name} / {$cat3name}", $category3->get_nested_name(false));
+        $this->assertEquals("{$cat1name} / {$cat2name} / {$cat4name}", $category4->get_nested_name(false));
+    }
+
+    public function test_coursecat_is_uservisible() {
+        global $USER;
+
+        // Create category 1 as visible.
+        $category1 = coursecat::create(array('name' => 'Cat1', 'visible' => 1));
+        // Create category 2 as hidden.
+        $category2 = coursecat::create(array('name' => 'Cat2', 'visible' => 0));
+
+        $this->assertTrue($category1->is_uservisible());
+        $this->assertFalse($category2->is_uservisible());
+
+        $this->assign_capability('moodle/category:viewhiddencategories');
+
+        $this->assertTrue($category1->is_uservisible());
+        $this->assertTrue($category2->is_uservisible());
+
+        // First, store current user's id, then login as another user.
+        $userid = $USER->id;
+        $this->setUser($this->getDataGenerator()->create_user());
+
+        // User $user should still have the moodle/category:viewhiddencategories capability.
+        $this->assertTrue($category1->is_uservisible($userid));
+        $this->assertTrue($category2->is_uservisible($userid));
+
+        $this->assign_capability('moodle/category:viewhiddencategories', CAP_INHERIT);
+
+        $this->assertTrue($category1->is_uservisible());
+        $this->assertFalse($category2->is_uservisible());
+    }
+
+    public function test_current_user_coursecat_get() {
+        $this->assign_capability('moodle/category:viewhiddencategories');
+
+        // Create category 1 as visible.
+        $category1 = coursecat::create(array('name' => 'Cat1', 'visible' => 1));
+        // Create category 2 as hidden.
+        $category2 = coursecat::create(array('name' => 'Cat2', 'visible' => 0));
+
+        $this->assertEquals($category1->id, coursecat::get($category1->id)->id);
+        $this->assertEquals($category2->id, coursecat::get($category2->id)->id);
+
+        // Login as another user to test coursecat::get.
+        $this->setUser($this->getDataGenerator()->create_user());
+        $this->assertEquals($category1->id, coursecat::get($category1->id)->id);
+
+        // Expecting to get an exception as this new user does not have the moodle/category:viewhiddencategories capability.
+        $this->expectException('moodle_exception');
+        $this->expectExceptionMessage('unknowncategory');
+        coursecat::get($category2->id);
+    }
+
+    public function test_another_user_coursecat_get() {
+        global $USER;
+
+        $this->assign_capability('moodle/category:viewhiddencategories');
+
+        // Create category 1 as visible.
+        $category1 = coursecat::create(array('name' => 'Cat1', 'visible' => 1));
+        // Create category 2 as hidden.
+        $category2 = coursecat::create(array('name' => 'Cat2', 'visible' => 0));
+
+        // First, store current user's object, then login as another user.
+        $user1 = $USER;
+        $user2 = $this->getDataGenerator()->create_user();
+        $this->setUser($user2);
+
+        $this->assertEquals($category1->id, coursecat::get($category1->id, MUST_EXIST, false, $user1)->id);
+        $this->assertEquals($category2->id, coursecat::get($category2->id, MUST_EXIST, false, $user1)->id);
+
+        $this->setUser($user1);
+
+        $this->assertEquals($category1->id, coursecat::get($category1->id, MUST_EXIST, false, $user2)->id);
+        $this->expectException('moodle_exception');
+        $this->expectExceptionMessage('unknowncategory');
+        coursecat::get($category2->id, MUST_EXIST, false, $user2);
     }
 
     /**

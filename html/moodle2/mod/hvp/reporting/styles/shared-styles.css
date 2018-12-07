@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'h5p-reporting-icons';
+  src:  url('../fonts/h5p-reporting-icons.eot?xscgrg');
+  src:  url('../fonts/h5p-reporting-icons.eot?xscgrg#iefix') format('embedded-opentype'),
+  url('../fonts/h5p-reporting-icons.ttf?xscgrg') format('truetype'),
+  url('../fonts/h5p-reporting-icons.woff?xscgrg') format('woff'),
+  url('../fonts/h5p-reporting-icons.svg?xscgrg#h5p-reporting-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .h5p-reporting-container {
   height: auto;
   border: solid 1px #C9C9C9;

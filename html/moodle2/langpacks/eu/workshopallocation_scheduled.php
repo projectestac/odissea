@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_scheduled', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_scheduled
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['currentstatusresult'] = 'Duela gutxiko exekuzioaren emaitza';
 $string['enablescheduled'] = 'Gaitu esleipen automatikoa.';
 $string['enablescheduledinfo'] = 'Bidalketak automatikoki esleitu bidalketa-aldia amaitzean';
 $string['pluginname'] = 'Esleipen automatikoa';
+$string['privacy:metadata'] = 'Esleipen automatikoa pluginak ez du datu pertsonalik biltzen. Ebaluatuko duen pertsonaren datuak Tailerra moduluak berak gordetzen du eta horiek dira ebaluaziorako xehetasunak esportatzeko oinarria.';
 $string['randomallocationsettings'] = 'Esleipenaren ezarpenak';
 $string['randomallocationsettings_help'] = 'Hemen ausazko esleipenerako parametroak aukeratzen dira. Esleipen automatikorako gehigarriak parametro hauek oraingo bidalketen esleipenerako erabiliko ditu.';
 $string['resultdisabled'] = 'Esleipen automatikoa desgaituta';

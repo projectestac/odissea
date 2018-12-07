@@ -13,7 +13,7 @@ html {
 }
 
 #rgrade_search label span,#layer-grades .simplemodal-close,#layer-grades .grades-header div.code,#layer-grades .grades-header em,#layer-grades .blocks-rgrade td.attempt,#layer-grades .user-info .aggregate em,.blocks-rgrade .grades-header em,.blocks-rgrade #combo .subtitle,.blocks-rgrade .code2,.blocks-rgrade .aggregate em,.blocks-rgrade #combo .activity-template .code,#rgrade_table .book-template em,.student-template .unit-activity .code
-	{
+{
 	font-size: 12px;
 }
 
@@ -30,12 +30,12 @@ html {
 }
 
 #layer-grades .grades-header .content span,.blocks-rgrade #rgrade_table tr.unit.main td,.blocks-rgrade .grades-header .title,#rgrade_table .book-template .unit-info .title
-	{
+{
 	font-size: 18px;
 }
 
 #layer-grades .grades-header .unit-book span.book,.blocks-rgrade .grades-header .unit-book,#rgrade_table .student-template .user-info h2.name
-	{
+{
 	font-size: 20px;
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 .blocks-rgrade .grades-header .unit-book,#rgrade_table .student-template .user-info h2.name
-	{
+{
 	font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ h1.headermain {
 }
 
 .blocks-rgrade #combo .grades-header,#rgrade_table .book-template tr.book-info
-	{
+{
 	border-bottom: 2px solid black;
 }
 
@@ -116,7 +116,7 @@ h1.headermain {
 }
 
 .blocks-rgrade #rgrade_table tr.unit.main td,.blocks-rgrade .grades-header .unit-book,#rgrade_table .student-template .user-info h2.name
-	{
+{
 	color: black;
 }
 
@@ -125,7 +125,7 @@ h1.headermain {
 }
 
 .blocks-rgrade .grades-header .title,#rgrade_table .book-template .unit-info .title
-	{
+{
 	color: #AC1F13;
 	font-weight: bold;
 }
@@ -136,22 +136,22 @@ div.code,.user-info {
 }
 
 .blocks-rgrade .grades-header .content,.blocks-rgrade .unit-activity .titol-code h2,.blocks-rgrade .unit-grades.titol-code h2
-	{
+{
 	float: left;
 }
 
 .blocks-rgrade .unit-activity .titol-code h2,.blocks-rgrade .unit-grades.titol-code h2
-	{
+{
 	width: 60%
 }
 
 .blocks-rgrade .unit-activity div.code2,.blocks-rgrade .student-template div.code2
-	{
+{
 	float: right;
 }
 
 .blocks-rgrade .grades-header .unit-book,.blocks-rgrade .user-info .aggregate,.blocks-rgrade .student-template .aggregate
-	{
+{
 	float: right;
 	text-align: right;
 }
@@ -161,7 +161,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade .unit-activity div.code2,.blocks-rgrade .unit-activity div.code2,.blocks-rgrade .unit-grades.titol-code div.code2
-	{
+{
 	text-align: right;
 }
 
@@ -185,7 +185,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade #combo .grades-content,.blocks-rgrade .unit-activity .titol-code
-	{
+{
 	margin-left: 36px;
 }
 
@@ -262,7 +262,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade #rgrade_table td.url a,.blocks-rgrade #layer-grades td.url a
-	{
+{
 	color: #C00;
 	text-decoration: underline;
 }
@@ -367,7 +367,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade #rgrade_search,.blocks-rgrade .filter_export_print_wrapper
-	{
+{
 	margin: 0 auto;
 	width: 980px;
 	position: relative;
@@ -378,7 +378,7 @@ div.code,.user-info {
 }
 
 #layer-grades .simplemodal-close
-	{
+{
 	border-radius: 4px;
 	padding: 4px 8px;
 	text-transform: uppercase;
@@ -387,8 +387,8 @@ div.code,.user-info {
 
 #layer-grades .simplemodal-close {
 	position: absolute;
-	right: -8px;
-	top: -8px;
+	right: -260px;
+	top: 0;
 	text-decoration: none;
 }
 
@@ -495,24 +495,20 @@ div.code,.user-info {
 }
 
 /* Simplemodal */
+.noTitleStuff .ui-dialog-titlebar {
+	display:none
+}
+
 #layer-grades,#layer-unit_message {
 	display: none;
-}
-
-#simplemodal-overlay {
-	background-color: #000;
-}
-
-#simplemodal-container {
-	padding: 12px;
-	background-color: white;
-	box-shadow: 0px 0px 20px black;
-	border-radius: 3px;
 }
 
 #layer-grades {
 	height: 400px;
 	width: 800px;
+	min-width: 600px;
+	padding: 30px;
+	border: 0;
 }
 
 #simplemodal-container .grades {
@@ -602,7 +598,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade .grades-content input[type="text"],#layer-grades .grades table td.comments textarea
-	{
+{
 	border: 1px solid #ccc;
 	width: 60px;
 }
@@ -612,7 +608,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade .grades-content input[type="text"]:hover,.blocks-rgrade .grades-content input[type="text"]:focus
-	{
+{
 	background: #FFFFC0;
 	box-shadow: inset 1px 1px 3px #DDDDA6, inset -1px -1px 3px #DDDDA6;
 }
@@ -625,7 +621,7 @@ div.code,.user-info {
 }
 
 #layer-grades .grades table td.comments textarea:hover,#layer-grades .grades table td.comments textarea:focus
-	{
+{
 	background: #FFFFC0;
 	box-shadow: inset 3px 3px 3px #DDDDA6, inset -3px -3px 3px #DDDDA6;
 }
@@ -683,7 +679,7 @@ div.code,.user-info {
 
 /* tipus activitats */
 .blocks-rgrade tr.activity a,.blocks-rgrade .grades-header em span.activity
-	{
+{
 	background: url(sprite.png) no-repeat left -61px;
 	padding: 0 0 0 17px;
 }
@@ -698,27 +694,27 @@ div.code,.user-info {
 }
 
 .blocks-rgrade tr.A a,.blocks-rgrade tr.AV a,.blocks-rgrade .grades-header em span.activity.A,.blocks-rgrade .grades-header em span.activity.AV
-	{
+{
 	background-position: left -525px;
 }
 
 #layer-grades .grades-header em span.activity.A,#layer-grades .grades-header em span.activity.AV
-	{
+{
 	background-position: left -522px;
 }
 
 .blocks-rgrade tr.I a,.blocks-rgrade tr.AU a,.blocks-rgrade .grades-header em span.activity.I,.blocks-rgrade .grades-header em span.activity.AU
-	{
+{
 	background-position: left -461px;
 }
 
 #layer-grades .grades-header em span.activity.I,#layer-grades .grades-header em span.activity.AU
-	{
+{
 	background-position: left -458px;
 }
 
 .blocks-rgrade tr.P a,.blocks-rgrade .grades-header em span.activity.P,.blocks-rgrade .grades-header em span.activity.P
-	{
+{
 	background-position: left -494px;
 }
 
@@ -754,7 +750,7 @@ div.code,.user-info {
 }
 
 .blocks-rgrade #column-header tr.unit.average td,.blocks-rgrade #column-header tr.unit.coverage td
-	{
+{
 	padding-left: 24px;
 }
 
@@ -764,7 +760,7 @@ a.button.disabled {
 }
 
 .blocks-rgrade.student #report_extended_users_fs1,.blocks-rgrade.student #report_extended_users_fs2,.blocks-rgrade.student #report_extended_date_fs,.blocks-rgrade.student #report_extended_state_fs label
-	{
+{
 	display: none;
 }
 
@@ -872,7 +868,7 @@ a.button.disabled {
 }
 
 .blocks-rgrade .unit-activity .titol-code .expand,.blocks-rgrade .unit-grades.titol-code .expand
-	{
+{
 	float: left;
 	margin-left: 10px;
 }
@@ -918,7 +914,7 @@ a.button.disabled {
 	margin-top: 10px;
 }
 
-#layer-unit_message	.container-button {
+.noTitleStuff .ui-dialog-buttonset {
 	text-align: center;
 	display: block;
 	padding-top: 10px;
@@ -932,4 +928,43 @@ table#row-header{
 #rgrade_table td.attempt {
 	text-overflow:clip;
 	white-space:nowrap;
+}
+
+/* Nuevos css */
+.blocks-rgrade .grades-content input[type="text"], #layer-grades .grades table td.comments textarea {
+	margin-left: 10px;
+}
+
+.blocks-rgrade .user-info{
+	margin-left:0.1em;
+}
+
+.blocks-rgrade .grades-content a.button{
+	color:#fff;
+	text-shadow:0 -1px 0 rgba(0,0,0,.25);
+	background-color: #49afcd;
+	background-image: linear-gradient(to bottom,#5bc0de,#2f96b4);
+	background-repeat: repeat-x;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1), rgba(0,0,0,.25);
+	padding: 4px 12px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align:center;
+	vertical-align:middle;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-decoration:none;
+}
+
+.blocks-rgrade .grades-content a.button:hover{
+	background:#2f96b4;
+}
+
+#layer-grades .grades-header .unit-book{
+	height:auto;
+	padding-bottom: 0.5em;
+}
+
+#layer-grades .grades-header .content{
+	padding-bottom:0.5em;
 }

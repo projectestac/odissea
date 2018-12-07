@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_clean', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_clean
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -49,13 +49,14 @@ Webgunea: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
 $string['configtitle'] = 'Clean';
 $string['customcss'] = 'Pertsonalizatu CSSa';
 $string['customcssdesc'] = 'Testu-eremu honetan gehitzen duzun edozein CSS arau orri guztietan islatuko da, itxura honen pertsonalizazioa errazte aldera.';
-$string['footnote'] = 'Orripekoaren oharra';
+$string['footnote'] = 'Orri-oinaren oharra';
 $string['footnotedesc'] = 'Testu-eremu honetan gehitzen duzuna zure Moodle gune osoan zeharreko orri-oinetan erakutsiko da.';
 $string['invert'] = 'Nabigazio-barra alderantzikatu';
 $string['invertdesc'] = 'Orriaren goikaldeko nabigazio-barraren testua eta atzekaldea txuri eta beltzaren artean trukatzen ditu.';
 $string['logo'] = 'Logoa';
 $string['logodesc'] = 'Logoa soilik hasiera-orriaren eta sarbide-orriaren goikaldean erakusten da.<br /> Zure logoaren altuera 75px baino gehiagokoa bada gehitu div.logo {height: 100px;} behekaldeko CSS pertsonalizatuaren eremuan, altuera 100px ez den kasuak konpontzeko. Hemen logo bat gehitzen ez bada, Itxura > Logoak atalekoa erabiliko da.';
 $string['pluginname'] = 'Clean';
+$string['privacy:metadata'] = 'Clean itxurak ez du datu pertsonalik biltzen.';
 $string['region-side-post'] = 'Eskuina';
 $string['region-side-pre'] = 'Ezkerra';
 $string['sitelogo'] = 'Gunearen logoa';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Gehitu {$a} eremu formularioari';
 $string['advancedelement'] = 'Elementu aurreratua';
 $string['close'] = 'Itxi';
+$string['custom'] = 'Pertsonalizatua';
 $string['day'] = 'Eguna';
+$string['default'] = 'Berezkoa';
 $string['display'] = 'Erakutsi';
 $string['err_alphanumeric'] = 'Hemen letrak eta zenbakiak baino ezin dituzu idatzi';
 $string['err_email'] = 'Hemen benetako e-posta helbide bat idatzi behar duzu';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'Hemen ezin duzu inongo puntuazio-markarik idatzi
 $string['err_numeric'] = 'Hemen zenbaki bat idatzi behar duzu.';
 $string['err_rangelength'] = 'Hemen {$a->format[0]} eta {$a->format[1]}-ren arteko karaktere-kopurua idatzi behar duzu';
 $string['err_required'] = 'Hemen balore bat eman behar duzu';
+$string['err_wrongfileextension'] = 'Fitxategi batzuk ({$a->wrongfiles}) ezin dira igo. Soilik {$a->whitelist} fitxategi-luzapenak onartzen dira.';
+$string['filesofthesetypes'] = 'Onartutako fitxategi-motak:';
+$string['filetypesany'] = 'Fitxategi-mota guztiak';
+$string['filetypesnotall'] = 'Hemen ezin da \'Fitxategi-mota guztiak\' aukeratu';
+$string['filetypesnotwhitelisted'] = 'Hauek dira hemen onartzen ez diren fitxategi-motak: {$a}';
+$string['filetypesothers'] = 'Bestelako fitxategiak';
+$string['filetypesunknown'] = 'Fitxategi-mota ezezagunak: {$a}';
 $string['general'] = 'Orokorra';
 $string['hideadvanced'] = 'Ezkutatu aurreratuak';
 $string['hour'] = 'Ordua';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'Beste hainbat ezarpen';
 $string['modstandardels'] = 'Moduluaren ezarpen bateratuak';
 $string['month'] = 'Hilabetea';
 $string['mustbeoverriden'] = '{$a} klaseko Abstract form_definition() metodoak baimenduta egon behar du; mesedez, konpondu kodea.';
+$string['newvaluefor'] = 'Balio berria {$a}-(r)entzat';
 $string['nomethodforaddinghelpbutton'] = '{$a->name} (class {$a->classname}) formularioaren elementuari laguntza botoia gehitzeko metodorik ez dago';
 $string['nonexistentformelements'] = '{$a} formularioaren elementua ez dago eta ezin zaio laguntza-botoirik gehitu';
 $string['noselection'] = 'Aukeratu gabe';
@@ -60,6 +70,8 @@ $string['othersettings'] = 'Beste ezarpen batzuk';
 $string['passwordunmaskedithint'] = 'Aldatu pasahitza';
 $string['passwordunmaskinstructions'] = 'Sakatu Enter aldaketak gordetzeko';
 $string['passwordunmaskrevealhint'] = 'Azaldu';
+$string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Orain dela gutxi aukeratutako fitxategi-hautatzaile elementuaren erakuste-modua.';
+$string['privacy:preference:filemanager_recentviewmode'] = 'Fitxategi-hautatzailean fitxategiak erakusteko zure hobetsitako modua hau da: {$a}';
 $string['requiredelement'] = 'Beharrezko eremua';
 $string['revealpassword'] = 'Azaldu';
 $string['security'] = 'Segurtasuna';

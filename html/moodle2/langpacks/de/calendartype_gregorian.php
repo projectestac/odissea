@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendartype_gregorian', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'calendartype_gregorian', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   calendartype_gregorian
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Gregorianisch';
 $string['pluginname'] = 'Gregorianischer Kalender';
+$string['privacy:metadata'] = 'Das Plugin \'Kalenderformat gregorianisch\' speichert keine personenbezogenen Daten.';

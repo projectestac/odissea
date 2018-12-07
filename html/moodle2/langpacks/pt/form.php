@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'form', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   form
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,7 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfields'] = 'Adicionar {$a} campo(s) ao formulário';
 $string['advancedelement'] = 'Item avançado';
 $string['close'] = 'Fechar';
+$string['custom'] = 'Personalizado';
 $string['day'] = 'Dia';
+$string['default'] = 'Predefinido';
 $string['display'] = 'Mostrar';
 $string['err_alphanumeric'] = 'Deve introduzir apenas letras e números neste campo';
 $string['err_email'] = 'Deve introduzir um e-mail válido neste campo';
@@ -41,6 +43,13 @@ $string['err_nopunctuation'] = 'Não deve introduzir pontuação neste campo.';
 $string['err_numeric'] = 'Deve introduzir um número neste campo.';
 $string['err_rangelength'] = 'Deve introduzir entre {$a->format[0]} e {$a->format[1]} caracteres neste campo.';
 $string['err_required'] = 'Deve introduzir um valor neste campo';
+$string['err_wrongfileextension'] = 'Alguns ficheiros ({$a->wrongfiles}) não puderam ser carregados. Apenas são permitidos ficheiros do tipo {$a->whitelist}.';
+$string['filesofthesetypes'] = 'Tipos de ficheiro permitidos:';
+$string['filetypesany'] = 'Todos os tipos de ficheiros';
+$string['filetypesnotall'] = 'Não é permitido selecionar aqui \'Todos os tipos de ficheiros\'';
+$string['filetypesnotwhitelisted'] = 'Esses tipos de ficheiros não são permitidos aqui: {$a}';
+$string['filetypesothers'] = 'Outros ficheiros';
+$string['filetypesunknown'] = 'Tipos de ficheiros desconhecidos: {$a}';
 $string['general'] = 'Geral';
 $string['hideadvanced'] = 'Ocultar opções avançadas';
 $string['hour'] = 'Hora';
@@ -49,6 +58,7 @@ $string['miscellaneoussettings'] = 'Outras opções';
 $string['modstandardels'] = 'Opções gerais do módulo';
 $string['month'] = 'Mês';
 $string['mustbeoverriden'] = 'Abstract form_definition() método na classe {$a} deve ser substituído, por favor corrija o código.';
+$string['newvaluefor'] = 'Novo valor para {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Não existe nenhum método para adicionar um botão de ajuda ao elemento de formulário {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Tentativa de adicionar botões de ajuda a elementos de formulário não existentes: {$a}';
 $string['noselection'] = 'Sem seleção';
@@ -58,8 +68,10 @@ $string['novalueclicktoset'] = 'Clique para inserir texto';
 $string['optional'] = 'Opcional';
 $string['othersettings'] = 'Outras configurações';
 $string['passwordunmaskedithint'] = 'Editar senha';
-$string['passwordunmaskinstructions'] = 'Pressione a tecla Enter para gravar as alterações';
+$string['passwordunmaskinstructions'] = '\'Enter\' para guardar as alterações';
 $string['passwordunmaskrevealhint'] = 'Revelar';
+$string['privacy:metadata:preference:filemanager_recentviewmode'] = 'Modo de visualização recentemente selecionado no selecionador de ficheiros.';
+$string['privacy:preference:filemanager_recentviewmode'] = 'As suas preferências de exibição de ficheiros no selecionador de ficheiro é: {$a}';
 $string['requiredelement'] = 'Campo obrigatório';
 $string['revealpassword'] = 'Revelar';
 $string['security'] = 'Segurança';

@@ -59,12 +59,15 @@ class core_files_file_storage_testcase extends advanced_testcase {
         $file = $fs->create_file_from_string($filerecord, $content);
 
         $this->assertInstanceOf('stored_file', $file);
-        $this->assertSame(sha1($content), $file->get_contenthash());
+        $this->assertTrue($file->compare_to_string($content));
         $this->assertSame($pathhash, $file->get_pathnamehash());
 
         $this->assertTrue($DB->record_exists('files', array('pathnamehash'=>$pathhash)));
 
-        $location = test_stored_file_inspection::get_pretected_pathname($file);
+        $method = new ReflectionMethod('file_system', 'get_local_path_from_storedfile');
+        $method->setAccessible(true);
+        $filesystem = $fs->get_file_system();
+        $location = $method->invokeArgs($filesystem, array($file, true));
 
         $this->assertFileExists($location);
 
@@ -129,11 +132,14 @@ class core_files_file_storage_testcase extends advanced_testcase {
         $file = $fs->create_file_from_pathname($filerecord, $filepath);
 
         $this->assertInstanceOf('stored_file', $file);
-        $this->assertSame(sha1_file($filepath), $file->get_contenthash());
+        $this->assertTrue($file->compare_to_path($filepath));
 
         $this->assertTrue($DB->record_exists('files', array('pathnamehash'=>$pathhash)));
 
-        $location = test_stored_file_inspection::get_pretected_pathname($file);
+        $method = new ReflectionMethod('file_system', 'get_local_path_from_storedfile');
+        $method->setAccessible(true);
+        $filesystem = $fs->get_file_system();
+        $location = $method->invokeArgs($filesystem, array($file, true));
 
         $this->assertFileExists($location);
 
@@ -391,6 +397,78 @@ class core_files_file_storage_testcase extends advanced_testcase {
         $this->assertEquals($content, $importedfile->get_content());
     }
 
+    /**
+     * Create file from reference tests
+     *
+     * @copyright 2012 Dongsheng Cai {@link http://dongsheng.org}
+     */
+    public function test_create_file_from_reference_with_content_hash() {
+        global $CFG, $DB;
+
+        $this->resetAfterTest();
+        // Create user.
+        $generator = $this->getDataGenerator();
+        $user = $generator->create_user();
+        $this->setUser($user);
+        $usercontext = context_user::instance($user->id);
+        $syscontext = context_system::instance();
+
+        $fs = get_file_storage();
+
+        $repositorypluginname = 'user';
+        // Override repository permission.
+        $capability = 'repository/' . $repositorypluginname . ':view';
+        $guestroleid = $DB->get_field('role', 'id', array('shortname' => 'guest'));
+        assign_capability($capability, CAP_ALLOW, $guestroleid, $syscontext->id, true);
+
+        $args = array();
+        $args['type'] = $repositorypluginname;
+        $repos = repository::get_instances($args);
+        $userrepository = reset($repos);
+        $this->assertInstanceOf('repository', $userrepository);
+
+        $component = 'user';
+        $filearea = 'private';
+        $itemid = 0;
+        $filepath = '/';
+        $filename = 'userfile.txt';
+
+        $filerecord = array(
+                'contextid' => $usercontext->id,
+                'component' => $component,
+                'filearea' => $filearea,
+                'itemid' => $itemid,
+                'filepath' => $filepath,
+                'filename' => $filename,
+        );
+
+        $content = 'Test content';
+        $originalfile = $fs->create_file_from_string($filerecord, $content);
+        $this->assertInstanceOf('stored_file', $originalfile);
+
+        $otherfilerecord = $filerecord;
+        $otherfilerecord['filename'] = 'other-filename.txt';
+        $otherfilewithsamecontents = $fs->create_file_from_string($otherfilerecord, $content);
+        $this->assertInstanceOf('stored_file', $otherfilewithsamecontents);
+
+        $newfilerecord = array(
+                'contextid' => $syscontext->id,
+                'component' => 'core',
+                'filearea' => 'phpunit',
+                'itemid' => 0,
+                'filepath' => $filepath,
+                'filename' => $filename,
+                'contenthash' => $originalfile->get_contenthash(),
+        );
+        $ref = $fs->pack_reference($filerecord);
+        $newstoredfile = $fs->create_file_from_reference($newfilerecord, $userrepository->id, $ref);
+        $this->assertInstanceOf('stored_file', $newstoredfile);
+        $this->assertEquals($userrepository->id, $newstoredfile->get_repository_id());
+        $this->assertEquals($originalfile->get_contenthash(), $newstoredfile->get_contenthash());
+        $this->assertEquals($originalfile->get_filesize(), $newstoredfile->get_filesize());
+        $this->assertRegExp('#' . $filename . '$#', $newstoredfile->get_reference_details());
+    }
+
     private function setup_three_private_files() {
 
         $this->resetAfterTest();
@@ -465,6 +543,17 @@ class core_files_file_storage_testcase extends advanced_testcase {
             $this->assertInstanceOf('stored_file', $file);
             $this->assertEquals($key, $file->get_pathnamehash());
         }
+
+        // Test the limit feature to retrieve each individual file.
+        $limited = $fs->get_area_files($user->ctxid, 'user', 'private', false, 'filename', false,
+                0, 0, 1);
+        $mapfunc = function($f) {
+            return $f->get_filename();
+        };
+        $this->assertEquals(array('1.txt'), array_values(array_map($mapfunc, $limited)));
+        $limited = $fs->get_area_files($user->ctxid, 'user', 'private', false, 'filename', false,
+                0, 1, 50);
+        $this->assertEquals(array('2.txt', '3.txt'), array_values(array_map($mapfunc, $limited)));
 
         // Test with an itemid with no files.
         $areafiles = $fs->get_area_files($user->ctxid, 'user', 'private', 666, 'sortorder', false);
@@ -1831,6 +1920,53 @@ class core_files_file_storage_testcase extends advanced_testcase {
         $this->expectException('coding_exception');
         $fs->get_unused_filename($contextid, $component, $filearea, $itemid, $filepath, '');
     }
+
+    /**
+     * Test that mimetype_from_file returns appropriate output when the
+     * file could not be found.
+     */
+    public function test_mimetype_not_found() {
+        $mimetype = file_storage::mimetype('/path/to/nonexistent/file');
+        $this->assertEquals('document/unknown', $mimetype);
+    }
+
+    /**
+     * Test that mimetype_from_file returns appropriate output for a known
+     * file.
+     *
+     * Note: this is not intended to check that functions outside of this
+     * file works. It is intended to validate the codepath contains no
+     * errors and behaves as expected.
+     */
+    public function test_mimetype_known() {
+        $filepath = __DIR__ . '/fixtures/testimage.jpg';
+        $mimetype = file_storage::mimetype_from_file($filepath);
+        $this->assertEquals('image/jpeg', $mimetype);
+    }
+
+    /**
+     * Test that mimetype_from_file returns appropriate output when the
+     * file could not be found.
+     */
+    public function test_mimetype_from_file_not_found() {
+        $mimetype = file_storage::mimetype_from_file('/path/to/nonexistent/file');
+        $this->assertEquals('document/unknown', $mimetype);
+    }
+
+    /**
+     * Test that mimetype_from_file returns appropriate output for a known
+     * file.
+     *
+     * Note: this is not intended to check that functions outside of this
+     * file works. It is intended to validate the codepath contains no
+     * errors and behaves as expected.
+     */
+    public function test_mimetype_from_file_known() {
+        $filepath = __DIR__ . '/fixtures/testimage.jpg';
+        $mimetype = file_storage::mimetype_from_file($filepath);
+        $this->assertEquals('image/jpeg', $mimetype);
+    }
+
 }
 
 class test_stored_file_inspection extends stored_file {

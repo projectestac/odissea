@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_meta', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_meta
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,5 +38,6 @@ $string['nosyncroleids'] = '同期しないロール';
 $string['nosyncroleids_desc'] = 'デフォルトではすべてのコースレベルのロールは親コースから子コースに同期されます。ここで選択されたロールは同期処理に含まれることはありません。同期に使用できるロールは次のcron実行時に更新されます。';
 $string['pluginname'] = 'コースメタリンク';
 $string['pluginname_desc'] = 'コースメタリンク登録プラグインでは2つの異なるコース間で登録およびロールを同期します。';
+$string['privacy:metadata:core_group'] = 'コースメタリンクプラグインは新しいグループを作成または既存のグループを使用してコースにリンクされた参加者すべてを追加することができます。';
 $string['syncall'] = 'すべての登録済みユーザを同期する';
 $string['syncall_desc'] = 'この設定を有効にした場合、親コースにロールがない場合でも登録済みユーザすべてが同期されます。この設定を無効にした場合、少なくとも1つの同期ロールが割り当てられているユーザのみが子コースに登録されます。';

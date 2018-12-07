@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'datafield_picture', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   datafield_picture
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '画像フィールド';
 $string['pluginname'] = '画像';
+$string['privacy:metadata'] = '写真フィールドコンポーネントはどのような個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

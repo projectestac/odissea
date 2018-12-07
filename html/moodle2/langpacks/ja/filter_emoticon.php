@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emoticon', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_emoticon', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_emoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'エモーティコンをイメージとして表示する';
+$string['privacy:metadata'] = 'エモーティコンをイメージとして表示するプラグインはどのような個人データも保存しません。';
 $string['settingformats'] = '適用対象フォーマット';
 $string['settingformats_desc'] = '選択されたフォーマットの1つがオリジナルテキストに入力された場合のみ、フィルタが適用されます。';

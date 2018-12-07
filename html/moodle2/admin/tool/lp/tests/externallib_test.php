@@ -423,19 +423,19 @@ class tool_lp_external_testcase extends externallib_advanced_testcase {
 
         $f1 = $lpg->create_framework();
 
-        $c1 = $lpg->create_competency(array('competencyframeworkid' => $f1->get_id()));
+        $c1 = $lpg->create_competency(array('competencyframeworkid' => $f1->get('id')));
 
         $tpl = $lpg->create_template();
-        $lpg->create_template_competency(array('templateid' => $tpl->get_id(), 'competencyid' => $c1->get_id()));
+        $lpg->create_template_competency(array('templateid' => $tpl->get('id'), 'competencyid' => $c1->get('id')));
 
-        $plan = $lpg->create_plan(array('userid' => $this->user->id, 'templateid' => $tpl->get_id(), 'name' => 'Evil'));
+        $plan = $lpg->create_plan(array('userid' => $this->user->id, 'templateid' => $tpl->get('id'), 'name' => 'Evil'));
 
-        $uc = $lpg->create_user_competency(array('userid' => $this->user->id, 'competencyid' => $c1->get_id()));
+        $uc = $lpg->create_user_competency(array('userid' => $this->user->id, 'competencyid' => $c1->get('id')));
 
-        $evidence = \core_competency\external::grade_competency_in_plan($plan->get_id(), $c1->get_id(), 1, true);
-        $evidence = \core_competency\external::grade_competency_in_plan($plan->get_id(), $c1->get_id(), 2, true);
+        $evidence = \core_competency\external::grade_competency_in_plan($plan->get('id'), $c1->get('id'), 1, true);
+        $evidence = \core_competency\external::grade_competency_in_plan($plan->get('id'), $c1->get('id'), 2, true);
 
-        $summary = external::data_for_user_competency_summary_in_plan($c1->get_id(), $plan->get_id());
+        $summary = external::data_for_user_competency_summary_in_plan($c1->get('id'), $plan->get('id'));
         $this->assertTrue($summary->usercompetencysummary->cangrade);
         $this->assertEquals('Evil', $summary->plan->name);
         $this->assertEquals('B', $summary->usercompetencysummary->usercompetency->gradename);
@@ -443,76 +443,22 @@ class tool_lp_external_testcase extends externallib_advanced_testcase {
         $this->assertEquals('A', $summary->usercompetencysummary->evidence[1]->gradename);
     }
 
-    /**
-     * Search cohorts.
-     */
-    public function test_search_cohorts() {
-        $this->resetAfterTest(true);
-
-        $syscontext = array('contextid' => context_system::instance()->id);
-        $catcontext = array('contextid' => context_coursecat::instance($this->category->id)->id);
-        $othercatcontext = array('contextid' => context_coursecat::instance($this->othercategory->id)->id);
-
-        $cohort1 = $this->getDataGenerator()->create_cohort(array_merge($syscontext, array('name' => 'Cohortsearch 1')));
-        $cohort2 = $this->getDataGenerator()->create_cohort(array_merge($catcontext, array('name' => 'Cohortsearch 2')));
-        $cohort3 = $this->getDataGenerator()->create_cohort(array_merge($othercatcontext, array('name' => 'Cohortsearch 3')));
-
-        // Check for parameter $includes = 'parents'.
-
-        // A user without permission in the system.
-        $this->setUser($this->user);
-        try {
-            $result = external::search_cohorts("Cohortsearch", $syscontext, 'parents');
-            $this->fail('Invalid permissions in system');
-        } catch (required_capability_exception $e) {
-            // All good.
-        }
-
-        // A user without permission in a category.
-        $this->setUser($this->catuser);
-        try {
-            $result = external::search_cohorts("Cohortsearch", $catcontext, 'parents');
-            $this->fail('Invalid permissions in category');
-        } catch (required_capability_exception $e) {
-            // All good.
-        }
-
-        // A user with permissions in the system.
+    public function test_data_for_user_competency_summary() {
         $this->setUser($this->creator);
-        $result = external::search_cohorts("Cohortsearch", $syscontext, 'parents');
-        $this->assertEquals(1, count($result['cohorts']));
-        $this->assertEquals('Cohortsearch 1', $result['cohorts'][$cohort1->id]->name);
 
-        // A user with permissions in the category.
-        $this->setUser($this->catcreator);
-        $result = external::search_cohorts("Cohortsearch", $catcontext, 'parents');
-        $this->assertEquals(2, count($result['cohorts']));
-        $cohorts = array();
-        foreach ($result['cohorts'] as $cohort) {
-            $cohorts[] = $cohort->name;
-        }
-        $this->assertTrue(in_array('Cohortsearch 1', $cohorts));
-        $this->assertTrue(in_array('Cohortsearch 2', $cohorts));
+        $dg = $this->getDataGenerator();
+        $lpg = $dg->get_plugin_generator('core_competency');
+        $f1 = $lpg->create_framework();
+        $c1 = $lpg->create_competency(array('competencyframeworkid' => $f1->get('id')));
 
-        // Check for parameter $includes = 'self'.
-        $this->setUser($this->creator);
-        $result = external::search_cohorts("Cohortsearch", $othercatcontext, 'self');
-        $this->assertEquals(1, count($result['cohorts']));
-        $this->assertEquals('Cohortsearch 3', $result['cohorts'][$cohort3->id]->name);
+        $evidence = \core_competency\external::grade_competency($this->user->id, $c1->get('id'), 1, true);
+        $evidence = \core_competency\external::grade_competency($this->user->id, $c1->get('id'), 2, true);
 
-        // Check for parameter $includes = 'all'.
-        $this->setUser($this->creator);
-        $result = external::search_cohorts("Cohortsearch", $syscontext, 'all');
-        $this->assertEquals(3, count($result['cohorts']));
-
-        // Detect invalid parameter $includes.
-        $this->setUser($this->creator);
-        try {
-            $result = external::search_cohorts("Cohortsearch", $syscontext, 'invalid');
-            $this->fail('Invalid parameter includes');
-        } catch (coding_exception $e) {
-            // All good.
-        }
+        $summary = external::data_for_user_competency_summary($this->user->id, $c1->get('id'));
+        $this->assertTrue($summary->cangrade);
+        $this->assertEquals('B', $summary->usercompetency->gradename);
+        $this->assertEquals('B', $summary->evidence[0]->gradename);
+        $this->assertEquals('A', $summary->evidence[1]->gradename);
     }
 
 }

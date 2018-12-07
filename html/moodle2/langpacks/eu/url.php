@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'url', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   url
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,6 +46,10 @@ $string['displayselect_help'] = 'Ezarpen honek, URL fitxategi-mota kontuan hartu
 * Leiho berria - URL-a menuak eta helbide-barra dituen web-nagibatzailearen leiho berri batean erakusten da.';
 $string['externalurl'] = 'Kanpoko URLa';
 $string['framesize'] = 'Markoaren altuera';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa URLetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak URLa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala URLetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak URLa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['invalidstoredurl'] = 'Ezin da baliabide hau erakutsi. URLak ez du balio.';
 $string['invalidurl'] = 'Gehitutako URLak ez du balio';
 $string['modulename'] = 'URLa';
@@ -67,6 +71,7 @@ $string['popupwidth'] = 'Pop-up-aren zabalera (pixeletan)';
 $string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren berezko zabalera.';
 $string['printintro'] = 'Erakutsi URLaren deskribapena';
 $string['printintroexplain'] = 'Erakutsi URL deskribapena edukiaren azpian? Erakusteko hainbat motak ez dute erakusten URL izena nahiz eta gaituta egon.';
+$string['privacy:metadata'] = 'mod_url pluginak ez du datu pertsonalik biltzen.';
 $string['rolesinparams'] = 'Sartu rol-izenak parametroetan';
 $string['search:activity'] = 'URLa';
 $string['serverurl'] = 'Zerbitzariaren URLa';

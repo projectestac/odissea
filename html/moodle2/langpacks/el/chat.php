@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'chat', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   chat
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['ajax'] = 'Χρήση AJAX';
-$string['autoscroll'] = 'Αυτόματη Κύλιση';
+$string['ajax'] = 'Έκδοση με χρήση AJAX';
+$string['autoscroll'] = 'Αυτόματη κύλιση';
 $string['beep'] = 'Ηχητικό σήμα';
 $string['cantlogin'] = 'Σφάλμα κατά την είσοδο στη συζήτηση!';
 $string['chat:addinstance'] = 'Προσθέστε ένα νέο τσάτ';
@@ -65,14 +65,14 @@ $string['explainmethoddaemon'] = 'Αυτές οι ρυθμίσεις έχουν 
 $string['explainmethodnormal'] = 'Αυτές οι ρυθμίσεις έχουν σημασία <strong>μόνο</strong> εάν έχετε επιλέξει "Κανονική μέθοδο" για μέθοδο συζήτησης';
 $string['generalconfig'] = 'Γενικές ρυθμίσεις';
 $string['idle'] = 'Αδρανής';
-$string['inputarea'] = 'Εισαγωγή κειμένου';
+$string['inputarea'] = 'Περιοχή εισαγωγής κειμένου';
 $string['invalidid'] = 'Σφάλμα κατά την εύρεση συζήτησης!';
 $string['list_all_sessions'] = 'Προβολή όλων των συνεδριών.';
 $string['listing_all_sessions'] = 'Αναγράφονται όλα συνεδρίες.';
 $string['messagebeepseveryone'] = '{$a} ειδοποιεί όλους!';
 $string['messagebeepsyou'] = '{$a} μόλις σας ειδοποίησε!';
-$string['messageenter'] = '{$a} έχει μπει σ\' αυτή το συζήτηση';
-$string['messageexit'] = '{$a} έχει φύγει από αυτή το συζήτηση';
+$string['messageenter'] = '{$a} έχει μπει σ\' αυτή τη συνομιλία';
+$string['messageexit'] = '{$a} έχει φύγει από αυτή τη συνομιλία';
 $string['messages'] = 'Μηνύματα';
 $string['method'] = 'Μέδοθος συζήτησης';
 $string['methodajax'] = 'Ajax μέθοδος';
@@ -99,9 +99,9 @@ $string['refreshuserlist'] = 'Ανανέωση χρηστών';
 $string['removemessages'] = 'Διαγραφή όλων των μηνυμάτων';
 $string['repeatdaily'] = 'Την ίδια ώρα κάθε μέρα';
 $string['repeatnone'] = 'Χωρίς επαναλήψεις';
-$string['repeattimes'] = 'Επανάληψη/δημοσίευση συζήτησης';
+$string['repeattimes'] = 'Επαναλαμβανόμενη συζήτηση';
 $string['repeatweekly'] = 'Την ίδια ώρα κάθε εβδομάδα';
-$string['saidto'] = 'είπε στον/στην';
+$string['saidto'] = '<b>είπε στον/στην</b>';
 $string['savemessages'] = 'Αποθήκευση προηγούμενων συζητήσεων';
 $string['seesession'] = 'Προβολή συζήτησης';
 $string['send'] = 'Αποστολή';

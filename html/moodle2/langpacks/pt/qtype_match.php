@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_match', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,5 +43,6 @@ $string['pluginnameediting'] = 'A editar pergunta de correspondência';
 $string['pluginname_help'] = 'Nas perguntas de correspondência o aluno tem de realizar a ligação correta entre uma lista de nomes ou frases (perguntas) e outra listagem (respostas).';
 $string['pluginname_link'] = 'pergunta/tipo/correspondência';
 $string['pluginnamesummary'] = 'A resposta consiste na correspondência entre termos.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Correspondência não armazena quaisquer dados pessoais.';
 $string['shuffle'] = 'Baralhar';
 $string['shuffle_help'] = 'Se ativar esta opção, a ordem das opções de resposta é definida aleatoriamente a cada nova tentativa, tendo em conta que a opção "Baralhar perguntas" nas opções de edição do teste também se encontra ativa.';

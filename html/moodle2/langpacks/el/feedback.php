@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'feedback', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Προσθήκη ερώτησης';
+$string['add_item'] = 'Προσθήκη ερώτησης στην δραστηριότητα';
 $string['add_pagebreak'] = 'Προσθήκη ενός διαχωριστή σελίδας';
 $string['adjustment'] = 'Διευθέτηση';
 $string['after_submit'] = 'Μετά την υποβολή';
@@ -54,7 +54,7 @@ $string['chosen_feedback_response'] = 'επιλεγμένη απάντηση σ�
 $string['completed'] = 'ολοκληρώθηκε';
 $string['completed_feedbacks'] = 'Απαντήσεις που έχουν υποβληθεί';
 $string['complete_the_form'] = 'Απαντήστε τις ερωτήσεις...';
-$string['configallowfullanonymous'] = 'Αν αυτή η επιλογή έχει ορισθεί ως ναι, οι χρήστες μπορούν να συμπληρώσουν μια ανατροφοδότηση στην πρώτη σελίδα χωρίς να χρειάζεται να συνδεθούν.';
+$string['configallowfullanonymous'] = 'Αν αυτή η επιλογή έχει ορισθεί ναι, τότε η ανατροφοδότηση μπορεί να ολοκληρωθεί χωρίς καμία προηγούμενη σύνδεση του χρήστη στο σύστημα. Επηρεάζει μόνο τις ανατροφοδοτήσεις στην αρχική σελίδα.';
 $string['confirmdeleteentry'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτή την καταχώρηση?';
 $string['confirmdeleteitem'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτό το στοιχείο?';
 $string['confirmdeletetemplate'] = 'Είστε σίγουροι οτι θέλετε να διαγράψετε αυτό το πρότυπο?';
@@ -98,7 +98,7 @@ $string['feedback:deletetemplate'] = 'Διαγραφή πρότυπου';
 $string['feedback:edititems'] = 'Επεξεργασία στοιχείων';
 $string['feedback_is_not_for_anonymous'] = 'το σχόλιο δεν είναι για τους ανώνυμους';
 $string['feedback_is_not_open'] = 'Το σχόλιο δεν είναι ανοιχτό';
-$string['feedback:mapcourse'] = 'Αντιστοίχηση μαθημάτων σε σχόλια εύρους ιστοχώρου';
+$string['feedback:mapcourse'] = 'Αντιστοίχηση μαθημάτων σε σχόλια εύρους ιστοτόπου';
 $string['feedbackopen'] = 'Άνοιξε το σχόλιο στις';
 $string['feedback:receivemail'] = 'Λήψη ειδοποιήσεων ηλεκτρονικού ταχυδρομείου';
 $string['feedback:view'] = 'Εμφάνιση ενός σχόλιου';
@@ -119,7 +119,7 @@ $string['item_name'] = 'Ερώτηση';
 $string['label'] = 'Ετικέτα';
 $string['line_values'] = 'Αξιολόγηση';
 $string['mapcourse'] = 'Αντιστοίχηση μαθήματος';
-$string['mapcourseinfo'] = 'Αυτό είναι ένα σχόλιο με εύρος σε όλο τον ιστοχώρο που είναι διαθέσιμο σε όλα τα μαθήματα με τη χρήση του μπλοκ σχόλιου. Μπορείτε πάραυτα να περιορίσετε τα μαθήματα στα οποία θα εμφανίζεται αντιστοιχιζοντάς τα. Αναζητήστε το μάθημα και αντιστοιχήστε το σε αυτό το σχόλιο.';
+$string['mapcourseinfo'] = 'Αυτό είναι ένα σχόλιο με εύρος σε όλο τον ιστότοπο που είναι διαθέσιμο σε όλα τα μαθήματα με τη χρήση του μπλοκ σχόλιου. Μπορείτε πάραυτα να περιορίσετε τα μαθήματα στα οποία θα εμφανίζεται αντιστοιχιζοντάς τα. Αναζητήστε το μάθημα και αντιστοιχήστε το σε αυτό το σχόλιο.';
 $string['mapcoursenone'] = 'Δεν αντιστοιχήθηκαν μαθήματα. Το σχόλιο είναι διαθέσιμο σε όλα τα μαθήματα';
 $string['mapcourses'] = 'Αντιστοίχηση σχόλιου σε μαθήματα';
 $string['mappedcourses'] = 'Μαθήματα που αντιστοιχήθηκαν';
@@ -203,7 +203,7 @@ $string['show_all'] = 'Έμφάνιση όλων';
 $string['show_analysepage_after_submit'] = 'Εμφάνιση σελίδας ανάλυσης μετά την υποβολή';
 $string['show_entries'] = 'Εμφάνιση απαντήσεων';
 $string['show_entry'] = 'Εμφάνιση απάντησης';
-$string['site_after_submit'] = 'Ο ιστοχώρος μετά την υποβολή';
+$string['site_after_submit'] = 'Ο ιστότοπος μετά την υποβολή';
 $string['sort_by_course'] = 'Ταξινόμηση βάσει μαθήματος';
 $string['start'] = 'Αρχή';
 $string['stop'] = 'Τέλος';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,3 +42,4 @@ $string['pluginnameadding'] = 'Gehitu erantzun laburreko galdera';
 $string['pluginnameediting'] = 'Editatu Erantzun laburreko galdera';
 $string['pluginname_help'] = '(Irudi bat izan dezakeen) galderaren erantzuna emateko ikasleak hitz bat edo esaldi motz bat idatzi behar du. Erantzun zuzen bat baino gehiago egon daiteke, bakoitzak kalifikazio ezberdin batekin. "Maiuskulak/minuskulak" bereiztea aukeratuz gero kalifikazio ezberdinak izan ditzakete "Hitza" eta "hitza" erantzunek.';
 $string['pluginnamesummary'] = 'Hitz bat edo hitz gutxiko erantzunak onartzen ditu eta komodinak izan ditzaketen hainbat erantzun-eredurekin alderatuta kalifikatzen da.';
+$string['privacy:metadata'] = 'Erantzun laburreko galdera galdera-mota pluginak ez du datu pertsonalik biltzen.';

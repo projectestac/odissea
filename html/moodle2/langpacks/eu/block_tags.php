@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_tags', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   block_tags
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,63 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add'] = 'Gehitu';
-$string['alltags'] = 'Etiketa guztiak:';
 $string['anycollection'] = 'Edozein';
 $string['anytype'] = 'Guztiak';
-$string['arrowtitle'] = 'Sakatu honi iradokizunak gehitzeko (berdez).';
 $string['configtitle'] = 'Blokearen izenburua';
-$string['coursetags'] = 'Ikastaroko etiketak:';
 $string['defaultdisplay'] = 'Erakutsi etiketak';
 $string['disabledtags'] = 'Etiketak gaitu gabe daude';
-$string['edit'] = 'editatu...';
-$string['editdeletemytag'] = 'Etiketa ezabatu ikastaro honetatik:';
-$string['editmytags'] = 'Nire etiketak - zure etiketatutako ikastaro guztietarako lasterbideak.';
-$string['editmytagsfor'] = 'Editatu nire etiketak  {$a}-(r)entzat';
-$string['editnopersonaltags'] = 'Ez da oraindik sortu etiketa pertsonalik.';
-$string['edittags'] = 'Editatu nire etiketak...';
-$string['edittagthisunit'] = 'Etiketa gehitu ikastaro honetara:';
-$string['editthiscoursetags'] = 'Ikastaro honetarako nire etiketak {$a} dira';
-$string['edittitle'] = 'Nire etiketak';
-$string['entries'] = 'sarrerak';
-$string['entry'] = 'sarrera';
-$string['jserror1'] = 'Etiketak karektere bat baino gehiago eta 50 baino gutxiago izan behar ditu. Mesedez, egokitu.';
-$string['jserror2'] = 'Etiketek ezin dute karaktere berezirik izan (, <, >). Zuzendu etiketa, mesedez.';
-$string['login'] = 'saioa hasi';
-$string['more'] = 'gehiago...';
-$string['moreorder'] = 'Ordena:';
-$string['moreorderalpha'] = 'Alfabetikoki';
-$string['moreorderdate'] = 'Sortutako data';
-$string['moreorderpop'] = 'Ospea';
-$string['moreshow'] = 'Erakutsi:';
-$string['moreshowalltags'] = 'Etiketa guztiak';
-$string['moreshowcommtags'] = 'Etiketa ez-ofizialak';
-$string['moreshowcoursetags'] = '{$a}\'-(r)entzako etiketak';
-$string['moreshowmytags'] = 'Nire etiketak';
-$string['moreshowofficialtags'] = 'Etiketa ofizialak';
-$string['moretags'] = 'Erakutsi eta iragazi etiketa gehiago';
-$string['moretitle'] = 'Etiketa gehiago';
-$string['morewelcome'] = 'Ongi etorri \'Etiketa gehiago\' lainora.
-Etiketak erabiltzaileak kontzeptuetara sortutako estekak dira. Etiketek kategorizatzen lagunduko dizute eta zure ikastaroak, blogak edota zure profila zeure hitzekin estekatzen.
-Hainbat etiketa-multzo erakuts daiteke estekekin \'Erakutsi\' lerroan, eta berriz ordena daitezke \'Ordenatu\' lerroko estekekin.';
-$string['mycoursetags'] = 'Nire ikastaro-etiketak';
-$string['mytags'] = 'Nire etiketak:';
-$string['notagsyet'] = 'Ez dago etiketarik oraindik';
-$string['please'] = 'Mesedez';
 $string['pluginname'] = 'Etiketak';
+$string['privacy:metadata'] = 'Etiketak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
 $string['recursivecontext'] = 'Sartu testuinguru seme-alabak';
 $string['recursivecontext_help'] = 'Ez aukeratuz gero, zehaztutako testuinguruko etiketak erakutsiko dira baina ez beheragoko testuinguruetako etiketak. Esaterako, ikastaroko etiketak erakutsiko dira, baina ez ikastaroko jardueretako etiketak.';
-$string['select'] = 'Aukeratu...';
-$string['showcoursetags'] = 'Erakutsi ikastaroko etiketak';
-$string['showcoursetagsdef'] = 'Erakutsi ikastaroko etiketa funtzioa etiketa-blokean, ikasleei ikastaroak etiketatzeko aukera emanez.';
 $string['standardonly'] = 'Estandarra baino ez';
-$string['suggestedtagthisunit'] = 'Ikastaro honetarako gomendatutako etiketak:';
 $string['tagcollection'] = 'Etiketa-bilduma';
 $string['tagcollection_help'] = 'Aukeratu nongo etiketa-bilduma erakutsi. "Edozein" aukeratuz gero bilduma guztietako etiketak erakutsiko dira * ikurrarekin markatuta daudenak izan ezik.';
 $string['taggeditemscontext'] = 'Etiketatutako elementuen testuingurua';
 $string['taggeditemscontext_help'] = 'Etiketa-lainoan erakutsiko diren etiketak mugatu ditzakezu ikastaro-kategorian, ikastaroan edo moduluan daudenetara';
-$string['tags'] = 'etiketak';
 $string['tags:addinstance'] = 'Gehitu etiketa bloke berria';
 $string['tags:myaddinstance'] = 'Gehitu etiketa bloke berria aginte-panelean';
-$string['tagthisunit'] = 'Ikastaro honen etiketak:';
-$string['tagunits'] = 'zure gogoko ikastaroak etiketatzeko';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_essay', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_essay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['formateditorfilepicker'] = 'Επεξεργαστής κειμένου H
 $string['formatmonospaced'] = 'Απλό κείμενο, σταθερού πλάτους γραμματοσειρά';
 $string['formatplain'] = 'Απλό κείμενο';
 $string['graderinfo'] = 'Πληροφορίες για βαθμολογητές';
+$string['mustattach'] = 'Όταν έχει επιλεγεί "Όχι online κείμενο" ή οι απαντήσεις είναι προαιρετικές, πρέπει να επιτρέπεται τουλάχιστον ένα συνημμένο.';
+$string['mustrequire'] = 'Όταν έχει επιλεγεί "Όχι online κείμενο" ή οι απαντήσεις είναι προαιρετικές, θα πρέπει να απαιτείται τουλάχιστον ένα συνημμένο.';
 $string['mustrequirefewer'] = 'Δεν μπορείτε να απαιτήσετε περισσότερα συνημμένα από αυτά που επιτρέπετε.';
 $string['nlines'] = '{$a} γραμμές';
 $string['pluginname'] = 'Έκθεση';

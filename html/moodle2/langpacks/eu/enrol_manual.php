@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_manual
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Aurreratua';
 $string['alterstatus'] = 'Aldatu egoera';
 $string['altertimeend'] = 'Aldatu amaiera-unea';
 $string['altertimestart'] = 'Aldatu hasiera-unea';
 $string['assignrole'] = 'Esleitu rola';
+$string['assignroles'] = 'Esleitu rolak';
 $string['browsecohorts'] = 'Arakatu kohorteak';
 $string['browseusers'] = 'Arakatu erabiltzaileak';
 $string['confirmbulkdeleteenrolment'] = 'Ziur al zaude erabiltzaile hauen matrikula ezabatu nahi duzula?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaileen matrikulak
 $string['editselectedusers'] = 'Editatu aukeratutako erabiltzaileen matrikulak';
 $string['enrolledincourserole'] = '"{$a->course}" ikastaroan "{$a->role}" rola ezarrita';
 $string['enrolusers'] = 'Matrikulatu erabiltzaileak ';
+$string['enroluserscohorts'] = 'Matrikulatu aukeratutako erabiltzaile eta kohorteak';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
 $string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
 $string['expirymessageenrolledbody'] = 'Kaixo {$a->user},
@@ -57,13 +60,17 @@ $string['expirymessageenrollersubject'] = 'Matrikulazio-amaieraren jakinarazpena
 $string['manual:config'] = 'Konfiguratu eskuzko matrikulaziorako instantziak';
 $string['manual:enrol'] = 'Matrikulatu erabiltzaileak ';
 $string['manual:manage'] = 'Erabiltzaileen matrikulak kudeatu';
-$string['manualpluginnotinstalled'] = '"Manual" gehigarria ez da oraindik instalatu';
+$string['manualpluginnotinstalled'] = '"Manual" plugina ez da oraindik instalatu';
 $string['manual:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['manual:unenrolself'] = 'Norbera ikastararotik desmatrikulatu';
 $string['messageprovider:expiry_notification'] = 'Eskuzko matrikulazio-amaieraren jakinarazpenak';
 $string['now'] = 'Orain';
 $string['pluginname'] = 'Eskuzko matrikulazioa';
-$string['pluginname_desc'] = 'Eskuzko matrikulazio gehigarriak erabiltzaileak eskuz matrikulatzea ahalbidetzen dio baimenak dituen erabiltzaile bati (irakaslea adibidez) ikastaroaren kudeaketa ezarpenetako esteka baten bitartez. Gehigarria normalean gaituta egon beharko litzateke, kontuan izanda beste matrikulazio-gehigarri batzuk (matrikulazio automatikoa adibidez) horren beharra dutela.';
+$string['pluginname_desc'] = 'Eskuzko matrikulazio pluginak erabiltzaileak eskuz matrikulatzea ahalbidetzen dio baimenak dituen erabiltzaile bati (irakaslea adibidez) ikastaroaren kudeaketa ezarpenetako esteka baten bitartez. Gehigarria normalean gaituta egon beharko litzateke, kontuan izanda beste matrikulazio-gehigarri batzuk (matrikulazio automatikoa adibidez) horren beharra dutela.';
+$string['privacy:metadata'] = 'Eskuzko matrikulazio-pluginak ez du datu pertsonalik biltzen.';
+$string['selectcohorts'] = 'Aukeratu kohorteak';
+$string['selection'] = 'Aukeraketa';
+$string['selectusers'] = 'Aukeratu erabiltzaileak';
 $string['status'] = 'Gaitu eskuzko matrikulazioa';
 $string['status_desc'] = 'Baimendu ikastarorako sarbidea barruan matrikulatutako erabiltzaileei. Hau gaituta mantendu beharko litzateke kasu gehienetan.';
 $string['statusdisabled'] = 'Desgaituta';
@@ -74,6 +81,6 @@ $string['unenrolselectedusers'] = 'Desmatrikulatu aukeratutako erabiltzaileak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';
 $string['unenroluser'] = 'Ziur al zaude  "{$a->user}" desmatrikulatu nahi duzula "{$a}" ikastarotik?';
 $string['unenrolusers'] = 'Desmatrikulatu erabiltzaileak';
-$string['wscannotenrol'] = 'Gehigarriaren instantziak ezin du erabiltzailea id = {$a->courseid} duen ikastaroan eskuz matrikulatu.';
-$string['wsnoinstance'] = 'Eskuzko matrikulazio gehigarriaren instantzia ez da existitzen edo ikastaro honentzako (id = {$a->courseid}) desgaituta dago';
+$string['wscannotenrol'] = 'Pluginaren instantziak ezin du erabiltzailea id = {$a->courseid} duen ikastaroan eskuz matrikulatu.';
+$string['wsnoinstance'] = 'Eskuzko matrikulazio-pluginaren instantzia ez da existitzen edo ikastaro honentzako (id = {$a->courseid}) desgaituta dago';
 $string['wsusercannotassign'] = 'Ez duzu baimenik ({$a->roleid}) rola ({$a->userid}) erabiltzaileari ({$a->courseid}) ikastaroan esleitzeko.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,16 +43,19 @@ $string['deleteinstancenousersconfirm'] = 'Está prestes a apagar o método de i
 $string['disableinstanceconfirmself'] = 'Tem a certeza absoluta de que pretende desativar a instância "{$a->name}" que lhe dá acesso a esta disciplina? Se continuar, é possível que deixe de poder aceder a esta disciplina.';
 $string['durationdays'] = '{$a} dias';
 $string['editenrolment'] = 'Editar papel';
+$string['edituserenrolment'] = 'Editar a inscrição de {$a}';
 $string['enrol'] = 'Inscrever';
 $string['enrolcandidates'] = 'Utilizadores não inscritos';
 $string['enrolcandidatesmatching'] = 'A procurar utilizadores não inscritos';
 $string['enrolcohort'] = 'Inscrever grupo global';
 $string['enrolcohortusers'] = 'Inscrever utilizadores';
+$string['enroldetails'] = 'Detalhes da inscrição';
 $string['enrollednewusers'] = 'Foram inscritos {$a} novos utilizadores';
 $string['enrolledusers'] = 'Utilizadores inscritos';
 $string['enrolledusersmatching'] = 'A procurar utilizadores inscritos';
 $string['enrolme'] = 'Inscrever-me nesta disciplina';
 $string['enrolmentinstances'] = 'Métodos de inscrição';
+$string['enrolmentmethod'] = 'Método de inscrição';
 $string['enrolmentnew'] = 'Nova inscrição em {$a}';
 $string['enrolmentnewuser'] = 'O utilizador "{$a->user}" inscreveu-se na disciplina "{$a->course}"';
 $string['enrolmentoptions'] = 'Opções de inscrição';
@@ -61,6 +64,7 @@ $string['enrolnotpermitted'] = 'Não tem permissões para inscrever utilizadores
 $string['enrolperiod'] = 'Duração da inscrição';
 $string['enroltimecreated'] = 'Inscrição criada';
 $string['enroltimeend'] = 'A inscrição termina em';
+$string['enroltimeendinvalid'] = 'A data final de inscrição deve ser após a data de início de inscrição';
 $string['enroltimestart'] = 'A inscrição começa em';
 $string['enrolusage'] = 'Instâncias / inscrições';
 $string['enrolusers'] = 'Inscrever utilizadores';
@@ -97,6 +101,7 @@ $string['instanceadded'] = 'Método adicionado';
 $string['instanceeditselfwarning'] = 'Aviso:';
 $string['instanceeditselfwarningtext'] = 'Está inscrito nesta disciplina através deste método de inscrição, as alterações podem afetar o seu acesso a esta disciplina.';
 $string['invalidenrolinstance'] = 'Instância de inscrição inválida';
+$string['invalidrequest'] = 'Pedido inválido';
 $string['invalidrole'] = 'Papel inválido';
 $string['manageenrols'] = 'Gerir módulos de inscrição';
 $string['manageinstance'] = 'Gerir';
@@ -110,12 +115,23 @@ $string['notenrollable'] = 'Esta disciplina não aceita inscrições neste momen
 $string['notenrolledusers'] = 'Outros utilizadores';
 $string['otheruserdesc'] = 'Estes utilizadores não estão inscritos nesta disciplina mas têm papéis atribuídos (herdados ou atribuídos diretamente).';
 $string['participationactive'] = 'Ativo(a)';
+$string['participationnotcurrent'] = 'Não atual';
 $string['participationstatus'] = 'Estado';
 $string['participationsuspended'] = 'Suspenso(a)';
 $string['periodend'] = 'até {$a}';
 $string['periodnone'] = '{$a} inscrito(s)';
 $string['periodstart'] = 'desde {$a}';
 $string['periodstartend'] = 'desde {$a->start} até {$a->end}';
+$string['privacy:metadata:user_enrolments'] = 'Inscrições';
+$string['privacy:metadata:user_enrolments:enrolid'] = 'Instância do módulo de inscrição.';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'O ID de utilizador que modificou pela última vez a inscrição do utilizador.';
+$string['privacy:metadata:user_enrolments:status'] = 'O estado da inscrição do utilizador numa disciplina.';
+$string['privacy:metadata:user_enrolments:tableexplanation'] = 'Onde o gestor de inscrições armazena os utilizadores inscritos.';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'A data/hora em que a inscrição do utilizador foi criada.';
+$string['privacy:metadata:user_enrolments:timeend'] = 'A data/hora em que a inscrição do utilizador termina.';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'A data/hora em que a inscrição do utilizador foi modificada.';
+$string['privacy:metadata:user_enrolments:timestart'] = 'A data/hora em que a inscrição do utilizador inicia.';
+$string['privacy:metadata:user_enrolments:userid'] = 'ID do utilizador.';
 $string['proceedtocourse'] = 'Avançar para o conteúdo da disciplina';
 $string['recovergrades'] = 'Recuperar, se possível, as notas antigas do utilizador';
 $string['rolefromcategory'] = 'Papel "{$a->role}" herdado da categoria da disciplina';
@@ -133,12 +149,13 @@ $string['totalenrolledusers'] = '{$a} utilizadores inscritos';
 $string['totalotherusers'] = '{$a} outros utilizadores';
 $string['unassignnotpermitted'] = 'Não tem permissões para remover atribuições de papéis nesta disciplina';
 $string['unenrol'] = 'Cancelar inscrição';
-$string['unenrolconfirm'] = 'Tem a certeza de que pretende cancelar a inscrição do utilizador "{$a->user}" da disciplina "{$a->course}"?';
+$string['unenrolconfirm'] = 'Tem a certeza de que pretende cancelar a inscrição do utilizador "{$a->user}" (anteriormente inscrito pelo método "{$a->enrolinstancename}") da disciplina "{$a->course}"?';
 $string['unenrolme'] = 'Cancelar a minha inscrição em {$a}';
 $string['unenrolnotpermitted'] = 'Não tem permissões para cancelar a inscrição deste utilizador nesta disciplina';
 $string['unenrolroleusers'] = 'Cancelar a inscrição de utilizadores';
 $string['uninstallmigrating'] = 'Migrar "{$a}" inscrições';
 $string['unknowajaxaction'] = 'A ação pedida é desconhecida';
 $string['unlimitedduration'] = 'Ilimitado(a)';
+$string['userremovedfromselectiona'] = 'O utilizador "{$a}" foi removido da seleção.';
 $string['usersearch'] = 'Procurar';
 $string['withselectedusers'] = 'Com os utilizadores selecionados';

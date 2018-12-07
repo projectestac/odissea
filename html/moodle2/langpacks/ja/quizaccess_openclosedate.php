@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'quizaccess_openclosedate', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   quizaccess_openclosedate
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = '申し訳ございません、この小テストはまだ利用できません。';
+$string['notavailable'] = '現在、この小テストは利用できません。';
 $string['pluginname'] = '開始および終了日 - 小テストアクセスルール';
+$string['privacy:metadata'] = '公開および終了日時小テストアクセスルールプラグインはどのような個人データも保存しません。';
 $string['quiznotavailable'] = '小テストは {$a} まで利用できません。';

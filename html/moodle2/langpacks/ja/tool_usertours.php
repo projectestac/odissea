@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_usertours', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_usertours
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,12 @@ $string['event_tour_ended'] = 'ツアー終了';
 $string['event_tour_reset'] = 'ツアーリセット';
 $string['event_tour_started'] = 'ツアー開始';
 $string['exporttour'] = 'ツアーをエクスポートする';
+$string['filter_category'] = 'カテゴリ';
+$string['filter_category_help'] = '選択されたカテゴリ内のコースに関連するページにツアーを表示します。';
+$string['filter_course'] = 'コース';
+$string['filter_courseformat'] = 'コースフォーマット';
+$string['filter_courseformat_help'] = '選択されたコースフォーマットを使用しているコースに関連するページにツアーを表示します。';
+$string['filter_course_help'] = '選択されたコースに関連するページにツアーを表示します。';
 $string['filter_header'] = 'ツアーフィルタ';
 $string['filter_help'] = 'ツアーが表示されるコンディションを選択してください。ツアーをユーザに表示するためにはフィルタすべてに合致する必要があります。';
 $string['filter_role'] = 'ロール';
@@ -100,6 +106,10 @@ $string['placement_help'] = 'ステップはターゲットの上下左右に配
 
 指定された場所の特定のページにステップが適合しない場合、自動的に他の場所に配置されます。';
 $string['pluginname'] = 'ユーザツアー';
+$string['privacy:metadata:preference:completed'] = 'ユーザがユーザツアーを完了した時間です。';
+$string['privacy:metadata:preference:requested'] = 'ユーザが手動でユーザツアーをリクエストした時間です。';
+$string['privacy:request:preference:completed'] = 'あなたは「 {$a->name} 」ユーザツアーを {$a->time} に完了したとマークしました。';
+$string['privacy:request:preference:requested'] = 'あなたは「 {$a->name} 」ユーザツアーを {$a->time} にリクエストしました。';
 $string['reflex'] = 'クリックで進む';
 $string['reflex_help'] = 'ターゲットがクリックされた場合、次のステップに進みます。';
 $string['resettouronpage'] = 'このページのユーザツアーをリセットする';
@@ -131,9 +141,9 @@ $string['title_help'] = 'ステップのタイトルは必要であればマル�
 $string['tour1_content_addingblocks'] = '実際、あなたのページにブロックを追加する場合、慎重に考えてください。ブロックはMoodleモバイルアプリで表示されないため、一般的にあなたのサイトがブロックなしでも正常に動作することを確認した方が良いでしょう。';
 $string['tour1_content_blockregion'] = 'ここにまだブロック領域があります。すべての機能がBoostテーマの他の場所にあるため、ナビゲーションを削除して管理ブロックを完全に設定することをお勧めします。';
 $string['tour1_content_customisation'] = 'あなたのサイトの概観をカスタマイズする場合、このヘッダの角にある設定メニューを使用してください。編集モードを開始してください。';
-$string['tour1_content_end'] = 'これはMoodle 3.2の新たな機能、ユーザツアーです。あなたがフッタ内のリンクをクリックしてリセットしない限り、再度表示されることはありません。あなたは管理者としてこのような独自のツアーを作成することもできます!';
+$string['tour1_content_end'] = 'あなたのユーザツアーの最後です。あなたがフッタ内のリンクをクリックしてリセットしない限り、再度表示されることはありません。あなたは管理者としてこのような独自のツアーを作成することもできます!';
 $string['tour1_content_navigation'] = '主ナビゲーションはこのナビゲーションドロワを使用します。サイト内でのあなたの場所に応じてコンテンツが更新されます。ナビゲーションドロワを表示または非表示にするには最上部のボタンを使用してください。';
-$string['tour1_content_welcome'] = 'Moodle 3.2 Boostテーマにようこそ。あなたが以前Moodleを使用していた場合、少しだけ違う点に気付くことでしょう。';
+$string['tour1_content_welcome'] = 'Boostテーマにようこそ。あなたが前のバージョンからアップグレードした場合、このテーマが少しだけ違う点に気付くことでしょう。';
 $string['tour1_title_addingblocks'] = 'ブロック追加';
 $string['tour1_title_blockregion'] = 'ブロック領域';
 $string['tour1_title_customisation'] = 'カスタマイゼーション';
@@ -143,11 +153,11 @@ $string['tour1_title_welcome'] = 'ようこそ';
 $string['tour2_content_addblock'] = '編集モードを開始した場合、あなたはナビゲーションドロワよりブロックを追加することができます。しかし、あなたのページにブロックを設置する場合、慎重に考えてください。ブロックはMoodleモバイルアプリで表示されないため、学生の最良の経験のためにあなたのコースワークがブロックなしでも正常に動作することを確認した方が良いでしょう。';
 $string['tour2_content_addingblocks'] = 'このボタンを使用することにより、あなたはこのページにブロックを追加することができます。しかし、あなたのページにブロックを設置する場合、慎重に考えてください。ブロックはMoodleモバイルアプリで表示されないため、学生の最良の経験のためにあなたのコースワークがブロックなしでも正常に動作することを確認した方が良いでしょう。';
 $string['tour2_content_customisation'] = 'コース設定を変更する場合、このヘッダの角にある設定メニューを使用してください。すべての活動のホームページにも似たような設定メニューがあります。編集モードを開始してください。';
-$string['tour2_content_end'] = 'これはMoodle 3.2の新たな機能、ユーザツアーです。あなたがフッタ内のリンクをクリックしてリセットしない限り、再度表示されることはありません。必要であればサイト管理者はこのサイトのツアーをさらに作成することができます。';
+$string['tour2_content_end'] = 'あなたのユーザツアーの最後です。あなたがフッタ内のリンクをクリックしてリセットしない限り、再度表示されることはありません。必要であればサイト管理者はこのサイトのツアーをさらに作成することができます。';
 $string['tour2_content_navigation'] = 'ナビゲーションはこのナビゲーションドロワを使用します。ナビゲーションドロワを表示または非表示にするには最上部のボタンを使用してください。あなたのコースセクションへのリンクが表示されます。';
 $string['tour2_content_opendrawer'] = 'ナビゲーションドロワを開いてみます。';
 $string['tour2_content_participants'] = 'ここで参加者を表示します。あなたがアクセスして学生を追加または削除する場所でもあります。';
-$string['tour2_content_welcome'] = 'Moodle 3.2 Boostテーマにようこそ。あなたが以前Moodleを使用していた場合、このコースページが少しだけ違う点に気付くことでしょう。';
+$string['tour2_content_welcome'] = 'Boostテーマにようこそ。あなたのサイトが前のバージョンからアップグレードされた場合、このコースページが少しだけ違う点に気付くことでしょう。';
 $string['tour2_title_addblock'] = 'ブロックを追加する';
 $string['tour2_title_addingblocks'] = 'ブロック追加';
 $string['tour2_title_customisation'] = 'カスタマイゼーション';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_database', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_database
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['database:config'] = 'Datenbankeinschreibung konfigurieren';
 $string['database:unenrol'] = 'Gesperrte Nutzer/innen abmelden';
 $string['dbencoding'] = 'Datenbankkodierung';
 $string['dbhost'] = 'Datenbankserver';
-$string['dbhost_desc'] = 'IP-Adresse oder URL des Datenbankservers eintragen. Verwenden Sie bei ODBC einen DSN-Namen.';
+$string['dbhost_desc'] = 'IP-Adresse oder URL des Datenbankservers eintragen. Verwenden Sie bei ODBC einen DSN-Namen. Bei PDO benutzen Sie bitte einen PDO DSN.';
 $string['dbname'] = 'Datenbankname';
 $string['dbname_desc'] = 'Lassen Sie das Feld leer, wenn Sie als Datenbank-Host einen DSN-Namen verwenden.';
 $string['dbpass'] = 'Datenbankkennwort';
@@ -60,6 +60,7 @@ $string['newcoursetable'] = 'Externe neue Kurstabelle';
 $string['newcoursetable_desc'] = 'Name der Tabelle mit der Liste der Kurse, die automatisch erstellt werden sollen. Leer bedeutet: es werden keine neuen Kurse angelegt.';
 $string['pluginname'] = 'Externe Datenbank';
 $string['pluginname_desc'] = 'Sie können eine externe Datenbank (nahe jeden Typs) zur Kontrolle der Einschreibungen verwenden. Diese muss zumindest ein Feld für eien Kurs-ID und die User-ID enthalten. Diese werden mit den Inhalten in der Moodle-Datenbank abgeglichen.';
+$string['privacy:metadata'] = 'Das Externe-Datenbank-Einschreibungsplugin speichert keine persönlichen Daten.';
 $string['remotecoursefield'] = 'Kursfeld (Remote)';
 $string['remotecoursefield_desc'] = 'Der Feldname in der Remotetabelle, das für Einträge in der Kurstabelle zugeordnet wird.';
 $string['remoteenroltable'] = 'Externe Nutzertabelle';

@@ -120,6 +120,36 @@ class tool_uploadcourse_course_testcase extends advanced_testcase {
         $this->assertTrue($DB->record_exists('course', array('shortname' => 'c2')));
     }
 
+    public function test_create_with_sections() {
+        global $DB;
+        $this->resetAfterTest(true);
+        $updatemode = tool_uploadcourse_processor::UPDATE_NOTHING;
+        $defaultnumsections = get_config('moodlecourse', 'numsections');
+
+        // Add new course, make sure default number of sections is created.
+        $mode = tool_uploadcourse_processor::MODE_CREATE_NEW;
+        $data = array('shortname' => 'newcourse1', 'fullname' => 'New course1', 'format' => 'topics', 'category' => 1);
+        $co = new tool_uploadcourse_course($mode, $updatemode, $data);
+        $this->assertTrue($co->prepare());
+        $co->proceed();
+        $courseid = $DB->get_field('course', 'id', array('shortname' => 'newcourse1'));
+        $this->assertNotEmpty($courseid);
+        $this->assertEquals($defaultnumsections + 1,
+            $DB->count_records('course_sections', ['course' => $courseid]));
+
+        // Add new course specifying number of sections.
+        $mode = tool_uploadcourse_processor::MODE_CREATE_NEW;
+        $data = array('shortname' => 'newcourse2', 'fullname' => 'New course2', 'format' => 'topics', 'category' => 1,
+            'numsections' => 15);
+        $co = new tool_uploadcourse_course($mode, $updatemode, $data);
+        $this->assertTrue($co->prepare());
+        $co->proceed();
+        $courseid = $DB->get_field('course', 'id', array('shortname' => 'newcourse2'));
+        $this->assertNotEmpty($courseid);
+        $this->assertEquals(15 + 1,
+            $DB->count_records('course_sections', ['course' => $courseid]));
+    }
+
     public function test_delete() {
         global $DB;
         $this->resetAfterTest(true);
@@ -246,7 +276,7 @@ class tool_uploadcourse_course_testcase extends advanced_testcase {
             'visible' => '0',
             'idnumber' => '123abc',
             'summary' => 'Summary',
-            'format' => 'weeks',
+            'format' => 'topics',
             'theme' => 'afterburner',
             'lang' => 'en',
             'newsitems' => '7',
@@ -457,7 +487,7 @@ class tool_uploadcourse_course_testcase extends advanced_testcase {
             'enddate' => 645667200,
             'idnumber' => '123abc',
             'summary' => 'Summary',
-            'format' => 'weeks',
+            'format' => 'topics',
             'theme' => 'afterburner',
             'lang' => 'en',
             'newsitems' => '7',
@@ -739,6 +769,33 @@ class tool_uploadcourse_course_testcase extends advanced_testcase {
             }
         }
         $this->assertTrue($found);
+    }
+
+    /**
+     * Test that specifying course template respects default restore settings
+     */
+    public function test_restore_file_settings() {
+        global $DB;
+        $this->resetAfterTest(true);
+        $this->setAdminUser();
+
+        // Set admin config setting so that activities are not restored by default.
+        set_config('restore_general_activities', 0, 'restore');
+
+        $c1 = $this->getDataGenerator()->create_course();
+
+        $mode = tool_uploadcourse_processor::MODE_CREATE_NEW;
+        $updatemode = tool_uploadcourse_processor::UPDATE_ALL_WITH_DATA_ONLY;
+        $data = array('shortname' => 'A1', 'backupfile' => __DIR__ . '/fixtures/backup.mbz',
+            'summary' => 'A', 'category' => 1, 'fullname' => 'A1', 'templatecourse' => $c1->shortname);
+        $co = new tool_uploadcourse_course($mode, $updatemode, $data);
+        $this->assertTrue($co->prepare());
+        $co->proceed();
+        $course = $DB->get_record('course', array('shortname' => 'A1'));
+
+        // Make sure the glossary is not restored.
+        $modinfo = get_fast_modinfo($course);
+        $this->assertEmpty($modinfo->get_instances_of('glossary'));
     }
 
     public function test_restore_invalid_file() {

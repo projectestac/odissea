@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_replace', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_replace
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['disclaimer'] = 'Entiendo los riesgos de esta operación';
 $string['doit'] = '¡Sí, hazlo!';
-$string['invalidcharacter'] = 'Se han encontrado carácteres inválidos en la búsqueda o en el reemplazo de texto.';
+$string['invalidcharacter'] = 'Se encontraron caracteres no válidos en el texto de búsqueda o reemplazo.';
 $string['notifyfinished'] = '...finalizado';
 $string['notifyrebuilding'] = 'Reconstruyendo la caché del curso...';
 $string['notimplemented'] = 'Lo sentimos, esta característica no está implementada en el controlador de tu base de datos.';

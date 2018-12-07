@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -65,7 +65,7 @@ $string['courseshortnamegenerated'] = 'コース省略名が生成されまし�
 $string['courseshortnameincremented'] = 'コース省略名がインクリメントされました {$a->from} -> {$a->to}';
 $string['coursestotal'] = 'コース合計: {$a}';
 $string['coursesupdated'] = 'コースが更新されました: {$a}';
-$string['coursetemplatename'] = 'アップロード後にこのコースをリストアする';
+$string['coursetemplatename'] = 'アップロード後、このコースをリストアする';
 $string['coursetemplatename_help'] = 'すべてのコース作成時にテンプレートとして使用するため、既存のコース省略名を入力してください。';
 $string['coursetorestorefromdoesnotexist'] = 'リストア元のコースがありません。';
 $string['courseupdated'] = 'コースが更新されました。';
@@ -101,8 +101,9 @@ $string['mode_help'] = 'ここであなたはコースを作成するのか、�
 $string['nochanges'] = '変更なし';
 $string['pluginname'] = 'コースアップロード';
 $string['preview'] = 'プレビュー';
-$string['reset'] = 'アップロード後にコースをリセットする';
-$string['reset_help'] = '作成/アップロード後にコースをリセットするかどうか指定します。';
+$string['privacy:metadata'] = 'コースアップロードプラグインはどのような個人データも保存しません。';
+$string['reset'] = 'アップロード後、コースをリセットする';
+$string['reset_help'] = '作成/アップロード後、コースをリセットするかどうか指定します。';
 $string['restoreafterimport'] = 'インポート後にリストアする';
 $string['result'] = '結果';
 $string['rowpreviewnum'] = 'プレビュー行';

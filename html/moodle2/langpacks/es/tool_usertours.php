@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_usertours', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_usertours
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,12 @@ $string['event_tour_ended'] = 'Tour terminado';
 $string['event_tour_reset'] = 'Tour reiniciado';
 $string['event_tour_started'] = 'Tour iniciado';
 $string['exporttour'] = 'Exportar tour';
+$string['filter_category'] = 'Categoría';
+$string['filter_category_help'] = 'Mostrar el tour en una página que está asociada con un curso en la categoría seleccionada.';
+$string['filter_course'] = 'Cursos';
+$string['filter_courseformat'] = 'Formato del curso';
+$string['filter_courseformat_help'] = 'Mostrar el tour en una página que está asociada con un curso usando el formato de curso seleccionado.';
+$string['filter_course_help'] = 'Mostrar el tour en una página que está asociada con el curso seleccionado.';
 $string['filter_header'] = 'Filtros del tour';
 $string['filter_help'] = 'Selecione las condiciones bajo las que se mostrará el tour. Todos los filtros deben de coincidir para que un tour se le muestre a un usuario.';
 $string['filter_role'] = 'Rol';
@@ -99,6 +105,10 @@ $string['placement_help'] = 'Un paso puede colocarse, ya sea arriba, debajo, a l
 
 Si el paso no cupiera en una página particular en el sitio especificado, será colocado automáticamente en otra parte.';
 $string['pluginname'] = 'Tours para usuarios';
+$string['privacy:metadata:preference:completed'] = 'La hora en la que un usuario completó por vez última un tour para usuario.';
+$string['privacy:metadata:preference:requested'] = 'La hora en la que un usuario solicitó manualmente por última vez un tour para usuario.';
+$string['privacy:request:preference:completed'] = 'Marcó por última vez el tour para usuario "{$a->name}" como completado en {$a->time}';
+$string['privacy:request:preference:requested'] = 'Solicitó por última vez el tour para usuario  "{$a->name}" en {$a->time}';
 $string['reflex'] = 'Proceder al hacer click';
 $string['reflex_help'] = 'Proceder al siguiente paso cuando se hace click sobre el destino.';
 $string['resettouronpage'] = 'Reiniciar tour para usuario en esta página';
@@ -130,8 +140,9 @@ Alternativamente, puede ingresarse una ID de cadena-de-caracteres del idioma en 
 $string['tour1_content_addingblocks'] = 'De hecho, piense cuidadosamente si incluir algun bloque en sus páginas. Los bloques no se muestran en la App de Moodle Mobile, por lo que, de forma general, es mucho mejor asegurarse de que el sitio funciona bien sin bloques.';
 $string['tour1_content_blockregion'] = 'Todavía hay una región de bloque aquí. Nosotros recomendamos quitar los bloques de Navegación y Administración completamente, porque toda la funcionalidad está en otra parte en el tema Boost (Impulso).';
 $string['tour1_content_customisation'] = 'Para personalizar  la apariencia de su sitio y de la Portada, use el menú de configuraciones en la esquina de este encabezado. Intente activar la edición ahora mismo.';
-$string['tour1_content_end'] = 'Este ha sido un tour para usuario, una característica nueva de Moodle 3.2. No volverá a mostrarse a menos de que lo reinicie usando el enlace en el pie de página. ¡Cómo administrador también puede crear sus propios tours como éste!';
+$string['tour1_content_end'] = 'Este ha sido un tour para usuario, No volverá a mostrarse a menos de que lo reinicie usando el enlace en el pie de página. ¡Cómo administrador también puede crear sus propios tours como éste!';
 $string['tour1_content_navigation'] = 'La navegación principal es ahora a través de este bloque de navegación. La actualización de los contenidos depende de dónde se encuentre en el sitio. Utilice el botón en la parte superior para ocultarlo o mostrarlo.';
+$string['tour1_content_welcome'] = 'Bienvenido al tema Boost. Si ha actualizado desde una versión anterior, es posible que algunas cosas se vean un poco diferentes con este tema.';
 $string['tour1_title_addingblocks'] = 'Añadiendo bloques';
 $string['tour1_title_blockregion'] = 'Región del bloque';
 $string['tour1_title_customisation'] = 'Personalización';
@@ -145,6 +156,7 @@ $string['tour2_content_end'] = 'Este ha sido un tour para usuario, una caracter�
 $string['tour2_content_navigation'] = 'La navegación es ahora a través de este bloque de navegación. Utilice el botón en la parte superior para ocultarlo o mostrarlo. Verá que hay enlaces para secciones de su curso.';
 $string['tour2_content_opendrawer'] = 'Intentar abrir el cajón de navegación ahora.';
 $string['tour2_content_participants'] = 'Ver los participantes aquí. Aquí además es donde podrás añadir o quitar estudiantes.';
+$string['tour2_content_welcome'] = 'Bienvenido al tema Boost. Si su sitio ha sido actualizado desde una versión anterior, es posible que las cosas se vean un poco diferentes en la página del curso.';
 $string['tour2_title_addblock'] = 'Añadir un bloque';
 $string['tour2_title_addingblocks'] = 'Añadiendo bloques';
 $string['tour2_title_customisation'] = 'Personalización';

@@ -351,7 +351,7 @@ class portfolio_add_button {
             break;
             case PORTFOLIO_ADD_ICON_FORM:
                 $formoutput .= $selectoutput;
-                $formoutput .= "\n" . '<input class="portfolio-add-icon" type="image" src="' . $OUTPUT->pix_url('t/portfolioadd') . '" alt=' . $addstr .'" />';
+                $formoutput .= "\n" . '<button class="portfolio-add-icon">' . $OUTPUT->pix_icon('t/portfolioadd', $addstr) . '</button>';
                 $formoutput .= "\n" . '</form>';
             break;
             case PORTFOLIO_ADD_ICON_LINK:
@@ -1358,8 +1358,11 @@ function portfolio_include_callback_file($component, $class = null) {
         throw new portfolio_button_exception('nocallbackfile', 'portfolio', '', $component);
     }
 
-    if (!is_null($class) && !class_exists($class)) {
-        throw new portfolio_button_exception('nocallbackclass', 'portfolio', '', $class);
+    if (!is_null($class)) {
+        // If class is specified, check it exists and extends portfolio_caller_base.
+        if (!class_exists($class) || !is_subclass_of($class, 'portfolio_caller_base')) {
+            throw new portfolio_button_exception('nocallbackclass', 'portfolio', '', $class);
+        }
     }
 }
 

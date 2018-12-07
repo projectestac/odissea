@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'wiki', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   wiki
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -206,7 +206,6 @@ $string['searchwikis'] = '위키 검색';
 $string['special'] = '특수';
 $string['tableofcontents'] = '목차';
 $string['tagsdeleted'] = '위키 태그가 삭제되었습니다.';
-$string['tagtitle'] = '"{$a}"태그 보기';
 $string['teacherrating'] = '선생님의 평가한 등급';
 $string['timesrating'] = '이 페이지는 {$a->c} 번 등급을 받았으며 평균은 {$a->s} 입니다.';
 $string['updatedpages'] = '고쳐진 페이지';

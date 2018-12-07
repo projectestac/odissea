@@ -3,6 +3,34 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 18.11.23
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.4.6
+- Fix presentation in rgrade
+- Fix the mod_jclic problem set as the first activity and improve some parts
+- Update auth odissea
+
+Changes 18.11.05
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.4.5
+- Fix deprecated js functions in rgrade
+- Improve the use of memcached
+- Add recordRTC to atto editor
+
+Changes 18.08.13
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.4.4
+- Odissea only works in https
+- Set env-config-dist to https
+- Updated local/agora
+- Updated LangPacks
+- Check if competencies have been enabled by xtecadmin or let acces to xtecadmin to the competencies submenu
+- Remove wwwsecureroot from advancededit button and ad second parametres to pix_icon
+- Core: Hide some of the new settings for non xtecamdins and remove the obsoletes
+- Marsupial: Compatibility update for php7 and Moodle 3.4
+- Remove hub configuration
+- Add GLPR support
+
 Changes 18.04.20
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.2.8

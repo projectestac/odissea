@@ -60,6 +60,8 @@ class tool_recyclebin_events_testcase extends advanced_testcase {
         delete_course($course, false);
         $events = $sink->get_events();
         $event = reset($events);
+        // Need the second event here, the first is backup created.
+        $event = next($events);
 
         // Get the item from the recycle bin.
         $rb = new \tool_recyclebin\category_bin($course->category);
@@ -121,7 +123,7 @@ class tool_recyclebin_events_testcase extends advanced_testcase {
         $sink = $this->redirectEvents();
         $rb->restore_item($item);
         $events = $sink->get_events();
-        $event = $events[6];
+        $event = $events[count($events) - 2];
 
         // Check that the event contains the expected values.
         $this->assertInstanceOf('\tooL_recyclebin\event\category_bin_item_restored', $event);

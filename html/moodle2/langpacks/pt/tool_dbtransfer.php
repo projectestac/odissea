@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_dbtransfer', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_dbtransfer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['exportdata'] = 'Exportar dados';
 $string['notargetconectexception'] = 'Não é possível ligar à base de dados.';
 $string['options'] = 'Opções';
 $string['pluginname'] = 'Transferir da base de dados';
+$string['privacy:metadata'] = 'O módulo Transferência da base de dados não armazena dados pessoais.';
 $string['targetdatabase'] = 'Base de dados alvo';
 $string['targetdatabasenotempty'] = 'A base de dados alvo não pode conter nenhuma tabela com o prefixo definido';
 $string['transferdata'] = 'Transferir dados';

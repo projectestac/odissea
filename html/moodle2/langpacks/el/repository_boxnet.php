@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_boxnet', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_boxnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Κλειδί API';
-$string['boxnet:view'] = 'Εμφάνιση του repository box.net';
+$string['boxnet:view'] = 'Εμφάνιση του αποθετηρίου box.net';
 $string['configplugin'] = 'Ρύθμιση Box.net';
-$string['information'] = '<div>Λάβετε ένα <a href="http://enabled.box.net/">Κλειδί API Box.net</a> για τον ιστοχώρο Moodle. </div>';
+$string['information'] = 'Λάβετε ένα αναγνωριστικό πελάτη και μυστικό κωδικό από την<a href="https://app.box.com/developers/services">σελίδα ανάπτυξης του Box</a> για τον Moodle ιστότοπό σας.';
 $string['invalidpassword'] = 'Μή έγκυρο συνθηματικό';
-$string['nullfilelist'] = 'Δεν υπάρχουν αρχεία σε αυτό το χώρο αποθήκευσης';
+$string['nullfilelist'] = 'Δεν υπάρχουν αρχεία σε αυτό το αποθετήριο';
 $string['password'] = 'Συνθηματικό';
 $string['pluginname'] = 'Box.net';
 $string['pluginname_help'] = 'Χώρος αποθήκευσης στο Box.net';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_profiling', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_profiling
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,6 +43,7 @@ $string['lastrunof'] = 'Bericht zum letzten Durchlauf von {$a} ';
 $string['markreferencerun'] = 'Als Referenz markieren';
 $string['memory'] = 'Speicherbelegung';
 $string['pluginname'] = 'Analysedurchläufe';
+$string['privacy:metadata'] = 'Das Profiling-Plugin speichert keine persönlichen Daten';
 $string['profilingfocusscript'] = 'Die Analyse läuft für das Script {$a}';
 $string['profilingruns'] = 'Analysedurchläufe';
 $string['profilingrunsfor'] = 'Analysedurchläufe für {$a}';

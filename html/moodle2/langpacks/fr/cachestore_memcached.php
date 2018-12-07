@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_memcached', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_memcached
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -55,6 +55,8 @@ $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Préfixe de clef';
 $string['prefix_help'] = 'Ce réglage peut être utilisé pour créer un « domaine » pour vos clefs, permettant de disposer de plusieurs dépôts memcached sur une unique installation memcached. La chaîne indiquée ne doit pas dépasser 16 caractères.';
 $string['prefixinvalid'] = 'Préfixe non valide. Vous ne pouvez utiliser que les caractères a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcached'] = 'Le plugin de stockage de cache Memcached enregistre des données brièvement, de par sa fonction de mise en cache. Ces données sont enregistrées sur un serveur Memcached, où les données sont supprimées régulièrement.';
+$string['privacy:metadata:memcached:data'] = 'Les diverses données enregistrées en cache';
 $string['serialiser_igbinary'] = 'Le serialiseur igbinary';
 $string['serialiser_json'] = 'Le serialiseur JSON';
 $string['serialiser_php'] = 'Le serialiseur par défaut PHP';

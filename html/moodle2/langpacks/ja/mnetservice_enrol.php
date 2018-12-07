@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnetservice_enrol', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   mnetservice_enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,4 +37,12 @@ $string['nopublishers'] = '利用できるリモートピアはありません�
 $string['noroamingusers'] = 'リモートコースに登録するにはユーザはシステムコンテクスト内にケイパビリティ「 {$a} 」を必要とします。現在、このケイパビリティを持ったユーザ存在しません。あなたのサイトの1つまたはそれ以上のロールに必要なケイパビリティを割り当てるには「続ける」ボタンをクリックしてください。';
 $string['otherenrolledusers'] = '他の登録済みユーザ';
 $string['pluginname'] = 'リモート登録サービス';
+$string['privacy:metadata:mnetservice_enrol_enrolments'] = 'リモート登録サービスです。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = '登録の最終更新日時です。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = '私たちの学生をコースに登録するため使用されるリモートサーバの登録プラグイン名です。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'リモートMNetホストのIDです。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'リモートサーバのコースIDです。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'リモートサーバのロール名です。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'このテーブルは私たちのローカルユーザのリモートホストのコースへの登録に関する情報を保存します。';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'このサーバの私たちのローカルユーザのIDです。';
 $string['refetch'] = 'リモートホストから最新情報を再取得する';

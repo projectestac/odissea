@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_capability', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_capability
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,7 @@ $string['forroles'] = 'For roles {$a}';
 $string['getreport'] = 'Get the overview';
 $string['intro'] = 'This report shows, for a particular capability, what permission that capability has in the definition of every role (or a selection of roles), and everywhere in the site where that capability is overridden.';
 $string['pluginname'] = 'Capability overview';
+$string['privacy:metadata'] = 'The Capability overview plugin does not store any personal data.';
 $string['reportforcapability'] = 'Report for capability \'{$a}\'';
 $string['reportsettings'] = 'Report settings';
 $string['roleslabel'] = 'Roles:';

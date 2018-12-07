@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -114,7 +114,6 @@ $string['calculationsaved'] = 'Kalkulua gordeta';
 $string['calculationview'] = 'Ikusi kalkulua';
 $string['cannotaccessgroup'] = 'Ezin dira eskuratu aukeratutako taldearen kalifikazioa, sentitzen dugu.';
 $string['categories'] = 'Kategoriak';
-$string['categoriesanditems'] = 'Kategoriak eta elementuak';
 $string['category'] = 'Kategoria';
 $string['categoryedit'] = 'Editatu kategoria';
 $string['categoryname'] = 'Kategoriaren izena';
@@ -183,7 +182,7 @@ $string['editverbose'] = 'Editatu: {$a->category} {$a->itemmodule} {$a->itemname
 $string['enableajax'] = 'Gaitu AJAX';
 $string['enableajax_help'] = 'Kalifikatzailearen txostenari AJAX funtzionalitate geruza bat gehitzen dio, ohiko eragiketak arinduz. Erabiltzailearen nabigatzaileak Javascript-a aktibatuta izan behar du.';
 $string['enableoutcomes'] = 'Ikas-emaitzak gaitu';
-$string['enableoutcomes_help'] = 'Gaituz gero, kalifikazio-elementuak helburuekin lotutako eskala bat edo gehiago erabilita kalifikatu ahal izango dira.';
+$string['enableoutcomes_help'] = 'Gaituz gero, kalifikazio-elementuak ikas-emaitzei  lotutako eskala bat edo gehiago erabilita kalifikatu ahal izango dira.';
 $string['encoding'] = 'Kodifikazioa';
 $string['encoding_help'] = 'Aukeratu datuetarako karaktere-kodifikazioa. (Kodifikazio estandarra UTF-8 da.) Nahastu eta kodifikazio okerra aukeratzen bada, datuen inportazioa aurreikustean ohartuko zara.';
 $string['errorcalculationbroken'] = 'Ziur aski erreferentzia zirkularra edo kalkulu-formula okerra';
@@ -604,6 +603,44 @@ $string['prefletters'] = 'Kalifikazio-letrak eta mugak';
 $string['prefrows'] = 'Zutabe bereziak';
 $string['prefshow'] = 'Erakutsi/ezkutatu kontrolak';
 $string['previewrows'] = 'Zutabeak aurreikusi';
+$string['privacy:metadata:categorieshistory'] = 'Kalifikazio-kategorien aurretiko bertsioen erregistroa';
+$string['privacy:metadata:grade_import_newitem'] = 'Kalifikazioak inportatzean kalifikazio-elementu berriak behin behinean gordetzeko taula.';
+$string['privacy:metadata:grade_import_newitem:importcode'] = 'Inportatze-sorta bakoitza identifikatzeko sorta-bakar bakoitzarentzako kodea';
+$string['privacy:metadata:grade_import_newitem:importer'] = 'Datuak inportatzen dituen erabiltzailea';
+$string['privacy:metadata:grade_import_newitem:itemname'] = 'Kalifikazio-elementu berriaren izena';
+$string['privacy:metadata:grade_import_values'] = 'Kalifikazioak inportatzeko behin behineko taula';
+$string['privacy:metadata:grade_import_values:feedback'] = 'Kalifikazioaren feedbacka';
+$string['privacy:metadata:grade_import_values:finalgrade'] = 'Puntuazio gordinaren balioa';
+$string['privacy:metadata:grade_import_values:importcode'] = 'Inportatze-sorta bakoitza identifikatzeko sorta-bakar bakoitzarentzako kodea';
+$string['privacy:metadata:grade_import_values:importer'] = 'Datuak inportatzen dituen erabiltzailea';
+$string['privacy:metadata:grade_import_values:importonlyfeedback'] = 'Feedbacka inportatu den adierazteko marka';
+$string['privacy:metadata:grade_import_values:userid'] = 'Inportatu den kalifikazioaren zein erabiltzailearena den';
+$string['privacy:metadata:grades'] = 'Kalifikazioen erregistroa';
+$string['privacy:metadata:grades:aggregationstatus'] = 'Agregazioaren egoera';
+$string['privacy:metadata:grades:aggregationweight'] = 'Pisua agregazioan';
+$string['privacy:metadata:grades:feedback'] = 'Feedbacka';
+$string['privacy:metadata:grades:finalgrade'] = 'Kalifikazioa';
+$string['privacy:metadata:gradeshistory'] = 'Aurretiko kalifikazioen erregistroa';
+$string['privacy:metadata:grades:information'] = 'Informazio gehigarria';
+$string['privacy:metadata:grades:timemodified'] = 'Kalifikazioa azkenengoz aldatu zeneko unea';
+$string['privacy:metadata:grades:userid'] = 'Kalifikazioaren erabiltzailea denaren IDa';
+$string['privacy:metadata:grades:usermodified'] = 'Erregistroa azkenengoz aldatu zuen erabiltzailearen IDa';
+$string['privacy:metadata:history:loggeduser'] = 'Aldaketa egin zenean saioa hasita zegoen erabiltzailea';
+$string['privacy:metadata:history:timemodified'] = 'Aldaketa egin zeneko unea';
+$string['privacy:metadata:itemshistory'] = 'Kalifikazio-elementuen aurretiko bertsioen erregistroa';
+$string['privacy:metadata:outcomes'] = 'Ikas-emaitzen erregistroa';
+$string['privacy:metadata:outcomeshistory'] = 'Ikas-emaitzen aurretirko bertsioen erregistroa';
+$string['privacy:metadata:outcomes:timemodified'] = 'Erregistroa aldatu zeneko unea';
+$string['privacy:metadata:outcomes:usermodified'] = 'Erregistroa aldatu zuen erabiltzailea';
+$string['privacy:metadata:scale'] = 'Eskalen erregistroa';
+$string['privacy:metadata:scalehistory'] = 'Eskalen aurretiko bertsioen erregistroa';
+$string['privacy:metadata:scale:timemodified'] = 'Erregistroa azkenengoz aldatu zen unea';
+$string['privacy:metadata:scale:userid'] = 'Erregistroa azkenengoz aldatu zuen erabiltzailea';
+$string['privacy:path:relatedtome'] = 'Nirekin lotutakoak';
+$string['privacy:request:historyactiondelete'] = 'Ezabatu';
+$string['privacy:request:historyactioninsert'] = 'Sartu';
+$string['privacy:request:historyactionupdate'] = 'Eguneratu';
+$string['privacy:request:unknowndeletedgradeitem'] = 'Ezezaguna (kalifikazio-elementua ezabatua izan da)';
 $string['profilereport'] = 'Erabiltzaile-profilaren txostena';
 $string['profilereport_help'] = 'Erabiltzailearen profil-orrian erabilitako kalifikazio-txostena.';
 $string['publishing'] = 'Argitaratzen';

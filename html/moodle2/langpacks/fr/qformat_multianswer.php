@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_multianswer', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_multianswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Questions Cloze à réponses intégrées';
 $string['pluginname_help'] = 'Les questions Cloze à réponses intégrées permettent l\'importation d\'un passage de texte dans lequel sont intégrées des questions, par exemple à choix multiple ou à réponse courte.';
+$string['privacy:metadata'] = 'Le plugin de format de question Cloze à réponses intégrées n\'enregistre aucune donnée personnelle.';

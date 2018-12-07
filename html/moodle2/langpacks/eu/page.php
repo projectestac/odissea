@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'page', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   page
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,10 @@ $string['createpage'] = 'Sortu beste orri bat';
 $string['displayoptions'] = 'Eskura dauden erakusteko aukerak';
 $string['displayselect'] = 'Erakutsi';
 $string['displayselectexplain'] = 'Aukeratu pantaila-mota';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa orrietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Orria motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala orrietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Orria motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['legacyfiles'] = 'Ikastaro zaharren fitxategi-migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
@@ -61,4 +65,5 @@ $string['printheading'] = 'Erakutsi orriaren izena';
 $string['printheadingexplain'] = 'Orriaren izena edukiaren gainean erakutsi?';
 $string['printintro'] = 'Erakutsi orriaren deskribapena';
 $string['printintroexplain'] = 'Orriaren deskribapena edukiaren gainean erakutsi?';
+$string['privacy:metadata'] = 'mod_page pluginak ez du datu pertsonalik biltzen.';
 $string['search:activity'] = 'Orria';

@@ -29,3 +29,4 @@ $string['pluginnamesummary'] = 'Like the standard Embedded answers (Cloze) quest
 $string['pluginnameadding'] = 'Adding a Embedded answers (Cloze) - math & science question by WIRIS';
 $string['pluginnameediting'] = 'Editing a Embedded answers (Cloze) - math & science question by WIRIS';
 $string['contentnotviewable'] = 'The content can not be displayed.';
+$string['privacy:null_reason'] = 'Wiris Quizzes Cloze question type does not effect or store any data itself.';

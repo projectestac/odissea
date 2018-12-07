@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_ldap', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -113,6 +113,7 @@ Dies funktioniert normalerweise sehr gut, wenn Sie LDAP auch zur Nutzerauthentif
 <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Sie können das LDAP-Anmeldeverfahren auch so konfigurieren, dass automatisch neue Kurse angelegt werden, wenn neue Gruppen in LDAP eingerichtet werden.</p>';
 $string['pluginnotenabled'] = 'Plugin nicht aktiviert!';
+$string['privacy:metadata'] = 'Das LDAP-Einschreibungsplugin speichert keine persönlichen Daten.';
 $string['role_mapping'] = '<p>Für jede Rolle, die Sie über LDAP zuweisen möchten, müssen Sie eine Kontextliste angeben, in der die Kursrollen festgelegt sind. Trennen Sie unterschiedliche Kontexte mit einem Semikolon \';\'.</p><p>Zusätzlich müssen Sie das Attribut Ihres LDAP-Servers festlegen, das für Gruppenmitglieder benutzt wird (normalerweise \'member\' or \'memberUid\')</p>';
 $string['role_mapping_attribute'] = 'LDAP Member Attribut für {$a}';
 $string['role_mapping_context'] = 'LDAP Kontexte für {$a}';
@@ -120,6 +121,7 @@ $string['role_mapping_key'] = 'Rollen über LDAP zuweisen';
 $string['roles'] = 'Rollenabbildung';
 $string['server_settings'] = 'Einstellungen für LDAP-Server';
 $string['synccourserole'] = '== Synching Kurs \'{$a->idnumber}\' für Rolle \'{$a->role_shortname}\'';
+$string['syncenrolmentstask'] = 'Einschreibeprozess synchronisieren';
 $string['template'] = 'Optional: Automatisch angelegte Kurse können ihre Kurseinstellungen aus einer Kursvorlage kopieren. Tragen Sie hier die Kurzbezeichnung dieser Kursvorlage ein.';
 $string['template_key'] = 'Vorlage';
 $string['unassignrole'] = 'Rollenzuordnung \'{$a->role_shortname}\' für Nutzer \'{$a->user_username}\' im Kurs \'{$a->course_shortname}\' (id {$a->course_id}) aufheben';

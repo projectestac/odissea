@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'report_security', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   report_security
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,7 +40,7 @@ $string['check_defaultuserrole_error'] = 'Ο προεπιλεγμένος ρόλ
 $string['check_defaultuserrole_name'] = 'Προεπιλεγμένος ρόλος για όλους τους χρήστες';
 $string['check_defaultuserrole_notset'] = 'Ο προεπιλεγμένος ρόλος δεν έχει οριστεί.';
 $string['check_defaultuserrole_ok'] = 'Ο ορισμός του προεπιλεγμένου ρόλου για όλους τους χρήστες είναι εντάξει.';
-$string['check_displayerrors_details'] = '<p>Ενεργοποιώντας την ρύθμιση της PHP <code>display_errors</code> δεν συνίσταται σε ιστοχώρους παραγωγής γιατί τα μηνύματα λάθους μπορούν να αποκαλύψουν ευαίσθητες πληροφορίες σχετικά με τον εξυπηρετητή σας.</p>';
+$string['check_displayerrors_details'] = '<p>Η εΕνεργοποίηση της ρύθμισης της PHP <code>display_errors</code> δεν συνίσταται σε ιστοτόπους παραγωγής γιατί τα μηνύματα λάθους μπορούν να αποκαλύψουν ευαίσθητες πληροφορίες σχετικά με τον εξυπηρετητή σας.</p>';
 $string['check_displayerrors_error'] = 'Η ρύθμιση της PHP για την εμφάνιση μηνυμάτων σφάλματος είναι ενεργοποιημένη. Συνίσταται να την απενεργοποιήσετε.';
 $string['check_displayerrors_name'] = 'Εμφάνιση των σφαλμάτων PHP';
 $string['check_displayerrors_ok'] = 'Η εμφάνιση των σφαλμάτων PHP είναι απενεργοποιημένη.';
@@ -75,8 +75,8 @@ $string['check_mediafilterswf_details'] = '<p>Η αυτόματη ενσωματ
 $string['check_mediafilterswf_error'] = 'Το φίλτρο πολυμέσων Flash είναι ενεργοποιημένο - αυτό είναι πολύ επικίνδυνο για τη πλειονότητα των εξυπηρετητών.';
 $string['check_mediafilterswf_name'] = 'Το φίλτρο πολυμέσων .swf είναι ενεργοποιημένο';
 $string['check_mediafilterswf_ok'] = 'Το φίλτρο πολυμέσων Flash δεν είναι ενεργοποιημένο.';
-$string['check_noauth_details'] = '<p>Η υπομονάδα λογισμικού <em>Χωρίς Πιστοποίηση</em> δεν προορίζεται για ιστοχώρους παραγωγής. Παρακαλούμε απενεργοποιήστε το εκτός και εάν αυτός είναι ένας δοκιμαστικός ιστοχώρος.</p>';
-$string['check_noauth_error'] = 'Η υπομονάδα λογισμικού Χωρίς Πιστοποίηση δεν μπορεί να χρησιμοποιείται σε ιστοχώρους παραγωγής.';
+$string['check_noauth_details'] = '<p>Το πρόσθετο <em>Χωρίς Πιστοποίηση</em> δεν προορίζεται για ιστοτόπους παραγωγής. Παρακαλούμε απενεργοποιήστε το εκτός και εάν αυτός είναι ένας δοκιμαστικός ιστότοπος .</p>';
+$string['check_noauth_error'] = 'Το πρόσθετο Χωρίς Πιστοποίηση δεν μπορεί να χρησιμοποιείται σε ιστοτόπους παραγωγής.';
 $string['check_noauth_name'] = 'Χωρίς Πιστοποίηση';
 $string['check_noauth_ok'] = 'Η υπομονάδα λογισμικού Χωρίς Πιστοποίηση είναι απεργοποιημένη.';
 $string['check_openprofiles_details'] = '<p>Τα ανοιχτά προφίλ χρηστών μπορούν να γίνουν αντικείμενο εκμετάλευσης από κακόβουλους χρήστες. Συνίσταται να ενεργοποιείτε τη ρύθμιση <code>Υποχρεώτική σύνδεση χρηστών για προφίλ</code> ή τη ρύθμιση <code>Υποχρεωτική σύνδεση χρηστών</code>.</p>';
@@ -105,6 +105,7 @@ $string['check_unsecuredataroot_error'] = 'Ο αρχικός κατάλογος 
 $string['check_unsecuredataroot_name'] = 'Μη ασφαλής αρχικός κατάλογος δεδομένων (dataroot)';
 $string['check_unsecuredataroot_ok'] = 'Ο αρχικός κατάλογος των δεδομένων (dataroot) δεν πρέπει να είναι προσβάσιμος μέσω του ιστού.';
 $string['check_unsecuredataroot_warning'] = 'Ο αρχικός κατάλογος των δεδομένων (dataroot) <code>{$a}</code> είναι σε λάθος τοποθεσία και είναι πιθανώς εκτεθιμένος μέσω πρόσβασης ιστού.';
+$string['check_webcron_details'] = '<p>Η εκτέλεση της cron από περιηγητή μπορεί να εκθέσει ευαίσθητη πληροφορία σε ανώνυμους χρήστες. Προτείνεται η εκτέλεση της cron μόνο μέσω γραμμής εντολών ή μέσω κωδικού πρόσβασης της cron για απομακρυσμένη πρόσβαση.</p>';
 $string['configuration'] = 'Ρύθμιση';
 $string['description'] = 'Περιγραφή';
 $string['details'] = 'Λεπτομέρειες';

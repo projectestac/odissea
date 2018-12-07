@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_uploadcourse
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,63 +26,106 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowdeletes'] = 'Baimendu ezabatzea';
+$string['allowdeletes_help'] = '\'delete\' eremua onartuko den edo ez.';
 $string['allowrenames'] = 'Baimendu berrizendatzea';
+$string['allowrenames_help'] = '\'rename\' eremua onartuko den edo ez.';
 $string['allowresets'] = 'Baimendu berrabiaraztea';
+$string['allowresets_help'] = '\'reset\' eremua onartuko den edo ez.';
+$string['cachedef_helper'] = 'Laguntzailearen cachea';
 $string['cannotdeletecoursenotexist'] = 'Ezin da ezabatu existitzen ez den ikastaroa';
+$string['cannotgenerateshortnameupdatemode'] = 'Ezin da izen laburra sortu eguneratzeak baimenduta daudenean';
 $string['cannotreadbackupfile'] = 'Ezin da segurtasun-kopiaren fitxategia irakurri';
 $string['cannotrenamecoursenotexist'] = 'Ezin da berrizendatu existitzen ez den ikastaroa';
+$string['cannotrenameidnumberconflict'] = 'Ezin da ikastaroa berrizendatu, ID zenbakiak gatazka sortzen du existitzen den beste ikastaro batenarekin';
 $string['cannotrenameshortnamealreadyinuse'] = 'Ezin zaio ikastaroari izena aldatu, dagoeneko izen laburra erabilita baitago';
 $string['cannotupdatefrontpage'] = 'Debekatuta dago hasiera-orria aldatzea';
+$string['canonlyrenameinupdatemode'] = 'Ikastaroa soilik eguneratzea baimenduta dagoenean berrizenda daiteke';
+$string['canonlyresetcourseinupdatemode'] = 'Ikastaro bat soilik eguneratze-moduan berrabiaraz daiteke';
+$string['couldnotresolvecatgorybyid'] = 'Ezin izan da ID hori duen kategoriarik aurkitu';
+$string['couldnotresolvecatgorybyidnumber'] = 'Ezin izan da ID zenbaki hori duen kategoriarik aurkitu';
+$string['couldnotresolvecatgorybypath'] = 'Ezin izan da bide hori duen kategoriarik aurkitu';
 $string['coursecreated'] = 'Ikastaroa sortu da';
 $string['coursedeleted'] = 'Ikastaroa ezabatu da';
 $string['coursedeletionnotallowed'] = 'Ikastaroak ezabatzea ez dago baimenduta';
-$string['courseexistsanduploadnotallowed'] = 'Ikastaroa existitzen da eta ez dago baimenduta eguneratzea';
+$string['coursedoesnotexistandcreatenotallowed'] = 'Ikastaroa ez da existitzen eta ikastaroak sortzea ez dago baimenduta';
+$string['courseexistsanduploadnotallowed'] = 'Ikastaroa existitzen da eta eguneratzea ez dago baimenduta';
 $string['coursefile'] = 'Fitxategia';
-$string['coursefile_help'] = 'Fitxategiak CSV fitxategia izan behar du.';
+$string['coursefile_help'] = 'Fitxategiak CSV formatua izan behar du.';
+$string['courseidnumberincremented'] = 'Ikastaroen ID zenbakia handitu da {$a->from} -> {$a->to}';
+$string['courseprocess'] = 'Ikastaro-prozesatzea';
 $string['courserenamed'] = 'Ikastaroa berrizendatu da';
 $string['courserenamingnotallowed'] = 'Ikastaroak berrizendatzea ez dago baimenduta';
 $string['coursereset'] = 'Berrabiarazi ikastaroa';
-$string['courseresetnotallowed'] = 'Ikastaroa berrabiaraztea baimendu da orain';
+$string['courseresetnotallowed'] = 'Ikastaroa berrabiaraztea baimenduta dago orain';
 $string['courserestored'] = 'Ikastaroa berreskuratu da';
 $string['coursescreated'] = 'Ikastaroak sortu dira: {$a}';
 $string['coursesdeleted'] = 'Ikastaroak ezabatu dira: {$a}';
 $string['courseserrors'] = 'Ikastaro-erroreak: {$a}';
 $string['courseshortnamegenerated'] = 'Ikastaroaren izen laburra sortu da: {$a}';
+$string['courseshortnameincremented'] = 'Ikastaroaren izen laburra handitu da {$a->from} -> {$a->to}';
 $string['coursestotal'] = 'Ikastaroak denera: {$a}';
 $string['coursesupdated'] = 'Ikastaroak eguneratu dira: {$a}';
+$string['coursetemplatename'] = 'Berreskuratu ikastaro honetatik igo ondoren';
+$string['coursetemplatename_help'] = 'Sartu hemen existitzen den ikastaro bat ikastaro guztiak sortzeko txantiloi gisa erabiltzeko.';
+$string['coursetorestorefromdoesnotexist'] = 'Berreskuratzeko erabili beharreko ikastaroa ez da existitzen';
 $string['courseupdated'] = 'Ikastaroa eguneratu da';
-$string['createnew'] = 'Sortu ikastaro berriak bakarrik, existitzen direnak aparte utziz';
-$string['createorupdate'] = 'Sortu ikastaro berriak, edo eguneratu existitzen direnak';
+$string['createall'] = 'Guztiak sortu, handitu izen laburra behar izanez gero';
+$string['createnew'] = 'Ikastaro berriak bakarrik sortu, existitzen direnak aparte utziz';
+$string['createorupdate'] = 'Ikastaro berriak sortu, edo eguneratu existitzen direnak';
 $string['csvdelimiter'] = 'CSV bereizlea';
 $string['csvdelimiter_help'] = 'CSV fitxategiaren CSV bereizlea';
+$string['csvfileerror'] = 'CSV fitxategiaren formatuan zerbait gaizki dago. Mesedez egiaztatu zutabe-izenburu eta zutabe kopurua bat datozela, eta bereizlea zein fitxategiaren kodifikazioa egokiak direla: {$a}';
 $string['csvline'] = 'Lerroa';
 $string['defaultvalues'] = 'Berezko ikastaro-baloreak';
 $string['encoding'] = 'Kodifikazioa';
 $string['encoding_help'] = 'CSV fitxategiaren kodifikazioa';
-$string['errorwhiledeletingcourse'] = 'Errorea ikastaroa ezabatu bitartean';
-$string['errorwhilerestoringcourse'] = 'Errorea ikastaroa berreskuratu bitartean';
+$string['errorwhiledeletingcourse'] = 'Errorea gertatu da ikastaroa ezabatu bitartean';
+$string['errorwhilerestoringcourse'] = 'Errorea gertatu da ikastaroa berreskuratu bitartean';
 $string['generatedshortnamealreadyinuse'] = 'Sortutako izen laburra dagoeneko erabiltzen ari da';
 $string['generatedshortnameinvalid'] = 'Sortutako izen laburra baliogabea da';
-$string['id'] = 'ID';
-$string['idnumberalreadyinuse'] = 'ID zenbakia dagoeneko beste ikastaro batean erabili da';
-$string['importoptions'] = 'Inportatzeko aukerak';
+$string['id'] = 'IDa';
+$string['idnumberalreadyinuse'] = 'ID zenbakia dagoeneko beste ikastaro batean erabiltzen ari da';
+$string['importoptions'] = 'Inportatze-aukerak';
 $string['invalidbackupfile'] = 'Segurtasun-kopiaren fitxategi baliogabea';
 $string['invalidcourseformat'] = 'Ikastaro-formatu baliogabea';
+$string['invalidcsvfile'] = 'CSV fitxategi baliogabea';
 $string['invalidencoding'] = 'Kodifikazioa ez da baliagarria';
+$string['invalideupdatemode'] = 'Eguneratze-modu baliogabea aukeratu da';
+$string['invalidmode'] = 'Modu baliogabea aukeratu da';
 $string['invalidroles'] = 'Rol izen baliogabeak: {$a}';
 $string['invalidshortname'] = 'Izen labur baliogabea';
-$string['mode'] = 'Kargatze-modua';
+$string['missingmandatoryfields'] = 'Derrigorrezko eremuetan balioak falta dira: {$a}';
+$string['missingshortnamenotemplate'] = 'Izen laburra falta da eta ez da zehaztu izen-laburraren txantiloirik';
+$string['mode'] = 'Igotze-modua';
 $string['mode_help'] = 'Honek aukera ematen dizu ikastaroak sortu edota eguneratu ahal diren zehazteko.';
 $string['nochanges'] = 'Aldaketarik ez';
 $string['pluginname'] = 'Igo ikastaroa';
 $string['preview'] = 'Aurreikusi';
+$string['privacy:metadata'] = 'Igo ikastaroa pluginak ez du datu pertsonalik biltzen.';
 $string['reset'] = 'Berrabiarazi ikastaroa igo ondoren';
+$string['reset_help'] = 'Ikastaroa sortu/eguneratu ondoren berrabiarazi edo ez';
 $string['restoreafterimport'] = 'Berreskuratu inportatu ondoren';
 $string['result'] = 'Emaitza';
 $string['rowpreviewnum'] = 'Aurreikusi errenkadak';
+$string['rowpreviewnum_help'] = 'Hurrengo orrian aurreikusiko den CSV fitxategiko errenkada-kopurua. Aukera hau hurrengo orriaren tamaina mugatzeko erabiltzen da.';
+$string['shortnametemplate'] = 'Izen laburra sortzeko txantiloia';
+$string['shortnametemplate_help'] = 'Ikastaroaren izen laburra nabigazioan erakusten da. Txantiloien sintaxia erabil dezakezu hemen  (%f = izen osoa, %i = ID zenbakia), edo handitzen doan hasierako balio bat sartu.';
+$string['templatefile'] = 'Igo ondoren fitxategi honetatik berreskuratu';
+$string['templatefile_help'] = 'Aukeratu fitxategi bat ikastaro guztiak sortzeko txantiloi gisa erabiltzeko.';
 $string['unknownimportmode'] = 'Inportatzeko modu ezezaguna';
+$string['updatemissing'] = 'Osatu CSVko datuetan falta diren elementuak eta berezko balioak';
 $string['updatemode'] = 'Eguneratze-modua';
-$string['updateonly'] = 'Eguneratu bakarrik existitzen diren ikastaroak';
-$string['updatewithdataonly'] = 'Eguneratu CSV datuekin bakarrik';
-$string['updatewithdataordefaults'] = 'Eguneratu CSV datuekin eta berezkoekin';
-$string['uploadcourses'] = 'Eguneratutako ikastaroak';
+$string['updatemodedoessettonothing'] = 'Eguneratze-modua ez du ezer eguneratzea baimentzen';
+$string['updatemode_help'] = 'Ikastaroak eguneratzea baimentzen baduzu, ikastaroak zerekin eguneratuko dituzun zehaztu behar diozu tresnari.';
+$string['updateonly'] = 'Existitzen diren ikastaroak bakarrik eguneratu';
+$string['updatewithdataonly'] = 'Eguneratu CSVko datuekin bakarrik';
+$string['updatewithdataordefaults'] = 'Eguneratu CSVko datuekin eta berezko balioekin';
+$string['uploadcourses'] = 'Igo ikastaroak';
+$string['uploadcourses_help'] = 'Ikastaroako testu-fitxategi bat erabiliz igo daitezke. Fitxategiak hurrengo formatua izan behar du:
+
+* Fitxategiko errenkada bakoitzak erregistro bat du
+* Erregistro bakoitza komaz (edo bestelako bereizleak) banatutako datu-multzo bat da
+* Fitxategiko lehen erregistroak fitxategiaren formatua definitzen duten eremuen zerrenda du.
+* Derrigorrezko eremuen izenak: \'shortname\' (izen laburra), \'fullname\' (izen osoa), eta \'category\' (kategoria)';
+$string['uploadcoursespreview'] = 'Igotako ikastaroen aurrebista';
+$string['uploadcoursesresult'] = 'Igotako ikastaroen emaitzak';

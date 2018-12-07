@@ -106,9 +106,8 @@ class core_group_externallib_testcase extends externallib_advanced_testcase {
             $froups = core_group_external::create_groups(array($group3));
             $this->fail('Exception expected due to already existing idnumber.');
         } catch (moodle_exception $e) {
-            $this->assertInstanceOf('invalid_parameter_exception', $e);
-            $this->assertEquals('Invalid parameter value detected (Group with the same idnumber already exists)',
-                $e->getMessage());
+            $this->assertInstanceOf('moodle_exception', $e);
+            $this->assertEquals(get_string('idnumbertaken', 'error'), $e->getMessage());
         }
 
         // Call without required capability
@@ -258,9 +257,8 @@ class core_group_externallib_testcase extends externallib_advanced_testcase {
             $groupings = core_group_external::create_groupings(array($grouping1data));
             $this->fail('Exception expected due to already existing idnumber.');
         } catch (moodle_exception $e) {
-            $this->assertInstanceOf('invalid_parameter_exception', $e);
-            $this->assertEquals('Invalid parameter value detected (Grouping with the same idnumber already exists)',
-                $e->getMessage());
+            $this->assertInstanceOf('moodle_exception', $e);
+            $this->assertEquals(get_string('idnumbertaken', 'error'), $e->getMessage());
         }
 
         // No exception should be triggered.
@@ -285,9 +283,8 @@ class core_group_externallib_testcase extends externallib_advanced_testcase {
             $groupings = core_group_external::update_groupings(array($grouping2data));
             $this->fail('Exception expected due to already existing idnumber.');
         } catch (moodle_exception $e) {
-            $this->assertInstanceOf('invalid_parameter_exception', $e);
-            $this->assertEquals('Invalid parameter value detected (A different grouping with the same idnumber already exists)',
-                $e->getMessage());
+            $this->assertInstanceOf('moodle_exception', $e);
+            $this->assertEquals(get_string('idnumbertaken', 'error'), $e->getMessage());
         }
     }
 
@@ -523,6 +520,7 @@ class core_group_externallib_testcase extends externallib_advanced_testcase {
         $groups = core_group_external::get_activity_allowed_groups($cm1->id);
         $groups = external_api::clean_returnvalue(core_group_external::get_activity_allowed_groups_returns(), $groups);
         $this->assertCount(2, $groups['groups']);
+        $this->assertFalse($groups['canaccessallgroups']);
 
         foreach ($groups['groups'] as $group) {
             if ($group['name'] == $group1data['name']) {
@@ -539,12 +537,21 @@ class core_group_externallib_testcase extends externallib_advanced_testcase {
         $groups = core_group_external::get_activity_allowed_groups($cm1->id, $student->id);
         $groups = external_api::clean_returnvalue(core_group_external::get_activity_allowed_groups_returns(), $groups);
         $this->assertCount(2, $groups['groups']);
+        // We are checking the $student passed as parameter so this will return false.
+        $this->assertFalse($groups['canaccessallgroups']);
 
         // Check warnings. Trying to get groups for a user not enrolled in course.
         $groups = core_group_external::get_activity_allowed_groups($cm1->id, $otherstudent->id);
         $groups = external_api::clean_returnvalue(core_group_external::get_activity_allowed_groups_returns(), $groups);
         $this->assertCount(1, $groups['warnings']);
+        $this->assertFalse($groups['canaccessallgroups']);
 
+        // Checking teacher groups.
+        $groups = core_group_external::get_activity_allowed_groups($cm1->id);
+        $groups = external_api::clean_returnvalue(core_group_external::get_activity_allowed_groups_returns(), $groups);
+        $this->assertCount(2, $groups['groups']);
+        // Teachers by default can access all groups.
+        $this->assertTrue($groups['canaccessallgroups']);
     }
 
     /**

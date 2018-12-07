@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'data', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,8 @@ $string['comments'] = 'Comentaris';
 $string['commentsaved'] = 'S\'ha desat el comentari';
 $string['commentsn'] = '{$a} comentari(s)';
 $string['commentsoff'] = 'No està habilitada la funció de comentaris';
+$string['completionentries'] = 'Requereix entrades';
+$string['completionentriescount'] = 'Nombre d\'entrades';
 $string['configenablerssfeeds'] = 'Aquest commutador habilita la possibilitat de canals RSS de les bases de dades. Però cal activar manualment els canals en els paràmetres de cada base de dades.';
 $string['confirmdeletefield'] = 'Segur que voleu suprimir aquest camp?';
 $string['confirmdeleterecord'] = 'Segur que voleu suprimir aquesta entrada?';
@@ -334,17 +336,17 @@ $string['requireapproval'] = 'Requereix aprovació';
 $string['requireapproval_help'] = 'Si s\'habilita, caldrà que el professor aprovi les entrades abans que tothom pugui visualitzar-les.';
 $string['required'] = 'Requerit';
 $string['requiredentries'] = 'Entrades requerides per a la compleció';
-$string['requiredentries_help'] = '<p align="center"><strong>Entrades requerides</strong></p>
+$string['requiredentries_help'] = 'Si s\'estableix, es mostra un missatge que indica la quantitat d\'entrades necessàries per finalitzar l\'activitat. Tingueu en compte que aquest paràmetre no està connectat a la compleció de l\'activitat.
 
-<p>El nombre d\'entrades que cal que trameti cada participant. Als usuaris que no hagin tramès aquest nombre d\'entrades se\'ls mostrarà un recordatori quan visualitzin la base de dades.</p>
-
-<p>A més a més, no es considerarà que hagin completat aquesta activitat fins que no hagin tramès el nombre d\'entrades requerit.</p>';
+Si calen algunes entrades per a la compleció d\'activitats, s\'hauria d\'utilitzar el nou paràmetre de compleció d\'activitat «Requereix entrades». Per tal d\'eliminar completament aquest paràmetre, configureu-lo com a «cap», i després deseu els canvis.
+Si us plau, utilitzeu els camps Entrades requerides a la secció de compleció d\'activitats en lloc d\'això.';
 $string['requiredentriestoview'] = 'Entrades requerides per visualitzar';
 $string['requiredentriestoview_help'] = '<p align="center"><strong>Entrades requerides per visualitzar</strong></p>
 
 <p>El nombre d\'entrades que cal que un estudiant trameti abans que pugui visualitzar entrades d\'altres estudiants.</p>
 
 Nota: Si es requereix que es trametin entrades abans de visualitzar-ne d\'altres, és recomanable inhabilitar el filtre d\'enllaços automàtics a la base de dades. Això és perquè el filtre d\'enllaços automàtics a la base de dades no pot determinar si un usuari ha tramès el nombre requerit d\'entrades.';
+$string['requiredentrieswarning'] = 'Aquest paràmetre s\'ha substituït pel paràmetre «Requereix entrades» a la compleció d\'activitat.';
 $string['requiredfield'] = 'Camp requerit';
 $string['resetsettings'] = 'Reinicialitza els filtres';
 $string['resettemplate'] = 'Reinicia la plantilla';
@@ -362,7 +364,7 @@ $string['savesettings'] = 'Desa els paràmetres';
 $string['savesuccess'] = 'S\'ha desat amb èxit. El vostre predefinit estarà disponible per a tot el lloc.';
 $string['savetemplate'] = 'Desa la plantilla';
 $string['search'] = 'Cerca';
-$string['search:activity'] = 'Base de dades - Informació de l\'activitat';
+$string['search:activity'] = 'Base de dades: informació de l\'activitat';
 $string['selectedrequired'] = 'Cal que estigui tot seleccionat';
 $string['showall'] = 'Mostra totes les entrades';
 $string['single'] = 'Visualitza una entrada';
@@ -371,6 +373,7 @@ $string['subplugintype_datafield'] = 'Tipus de camp de la base de dades';
 $string['subplugintype_datafield_plural'] = 'Els tipus de camp de la base de dades';
 $string['subplugintype_datapreset'] = 'Predefinit';
 $string['subplugintype_datapreset_plural'] = 'Predefinits';
+$string['tags'] = 'Etiquetes';
 $string['teachersandstudents'] = '{$a->teachers} i {$a->students}';
 $string['templates'] = 'Plantilles';
 $string['templatesaved'] = 'S\'ha desat la plantilla';

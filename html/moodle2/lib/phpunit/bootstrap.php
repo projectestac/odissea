@@ -72,17 +72,13 @@ if (defined('CLI_SCRIPT')) {
 }
 define('CLI_SCRIPT', true);
 
-$phpunitversion = PHPUnit_Runner_Version::id();
+$phpunitversion = PHPUnit\Runner\Version::id();
 if ($phpunitversion === '@package_version@') {
     // library checked out from git, let's hope dev knows that 3.6.0 is required
 } else if (version_compare($phpunitversion, '3.6.0', 'lt')) {
     phpunit_bootstrap_error(PHPUNIT_EXITCODE_PHPUNITWRONG, $phpunitversion);
 }
 unset($phpunitversion);
-
-if (!include_once('PHPUnit/Extensions/Database/Autoload.php')) {
-    phpunit_bootstrap_error(PHPUNIT_EXITCODE_PHPUNITEXTMISSING, 'phpunit/DbUnit');
-}
 
 define('NO_OUTPUT_BUFFERING', true);
 
@@ -170,7 +166,7 @@ if (isset($CFG->prefix) and $CFG->prefix === $CFG->phpunit_prefix) {
 }
 
 // override CFG settings if necessary and throw away extra CFG settings
-$CFG->wwwroot   = 'http://www.example.com/moodle';
+$CFG->wwwroot   = 'https://www.example.com/moodle';
 $CFG->dataroot  = $CFG->phpunit_dataroot;
 $CFG->prefix    = $CFG->phpunit_prefix;
 $CFG->dbtype    = isset($CFG->phpunit_dbtype) ? $CFG->phpunit_dbtype : $CFG->dbtype;
@@ -186,7 +182,7 @@ $allowed = array('wwwroot', 'dataroot', 'dirroot', 'admin', 'directorypermission
                  'dbtype', 'dblibrary', 'dbhost', 'dbname', 'dbuser', 'dbpass', 'prefix', 'dboptions',
                  'proxyhost', 'proxyport', 'proxytype', 'proxyuser', 'proxypassword', 'proxybypass', // keep proxy settings from config.php
                  'altcacheconfigpath', 'pathtogs', 'pathtodu', 'aspellpath', 'pathtodot',
-                 'pathtounoconv'
+                 'pathtounoconv', 'alternative_file_system_class', 'pathtopython'
                 );
 $productioncfg = (array)$CFG;
 $CFG = new stdClass();

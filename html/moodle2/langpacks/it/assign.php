@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assign', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   assign
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,6 +107,8 @@ $string['batchsetmarkingworkflowstateforusers'] = 'Stato del flusso di lavoro de
 $string['blindmarking'] = 'Valutazione cieca';
 $string['blindmarkingenabledwarning'] = 'In questa attività è attiva la valutazione cieca.';
 $string['blindmarking_help'] = 'La valutazione cieca nasconde l\'identità degli studenti ai valutatori. L\'impostazione Valutazione cieca sarà bloccata non appena sarà presente una consegna o una valutazione del compito.';
+$string['calendardue'] = '{$a} è in scadenza';
+$string['calendargradingdue'] = '{$a} deve essere valutato';
 $string['changefilters'] = 'Modifica filtri';
 $string['changegradewarning'] = 'In questo compito ci sono consegne che sono già state valutate, la modifica della valutazione del compito non ricalcolerà le valutazioni date. Se vuoi modificare la valutazione del compito, dovrai anche rivalutare tutte le consegne già valutate.';
 $string['changeuser'] = 'Modifica utente';
@@ -121,6 +123,7 @@ $string['completionsubmit'] = 'Lo studente deve consegnare per completare l\'att
 $string['configshowrecentsubmissions'] = 'Consente a tutti di visualizzare la notifica delle consegne nei report dell\'attività recente.';
 $string['confirmbatchgradingoperation'] = 'Sei sicuro di eseguire {$a->operation} per {$a->count} studenti?';
 $string['confirmsubmission'] = 'Sei sicuro di voler consegnare il tuo lavoro per farlo valutare? La consegna non potrà più essere modificata.';
+$string['confirmsubmissionheading'] = 'Conferma consegna';
 $string['conversionexception'] = 'Non è stato possibile convertire il compito. Eccezione verificatasi:{$a}.';
 $string['couldnotconvertgrade'] = 'Non è stato possibile convertire la valutazione del compito per l\'utente {$a}.';
 $string['couldnotconvertsubmission'] = 'Non è stato possibile convertire la consegna del compito per l\'utente {$a}.';
@@ -157,6 +160,7 @@ $string['editaction'] = 'Azioni...';
 $string['editattemptfeedback'] = 'Modifica della valutazione e del feedback per il tentativo {$a}.';
 $string['editingpreviousfeedbackwarning'] = 'Stai modificando il feedback di un tentativo precedente. Questo è il tentativo {$a->attemptnumber} di {$a->totalattempts}.';
 $string['editingstatus'] = 'Possibilità di modifica';
+$string['editonline'] = 'Modifica online';
 $string['editoverride'] = 'Modifica personalizzazione';
 $string['editsubmission'] = 'Modifica consegna';
 $string['editsubmission_help'] = 'Modifica la tua consegna';
@@ -165,7 +169,7 @@ $string['enabled'] = 'Abilitato';
 $string['errornosubmissions'] = 'Non ci sono consegne da scaricare';
 $string['errorquickgradingvsadvancedgrading'] = 'La valutazione non è stata salvata poiché il compito sta usando la valutazione avanzata.';
 $string['errorrecordmodified'] = 'La valutazione non è stata salvata poiché uno o più record sono stati modificati da qualcuno più recentemente del tuo caricamento della pagina.';
-$string['eventallsubmissionsdownloaded'] = 'Download di tutte le consegne';
+$string['eventallsubmissionsdownloaded'] = 'Scarica tutte le consegne';
 $string['eventassessablesubmitted'] = 'Effettuata una consegna';
 $string['eventbatchsetmarkerallocationviewed'] = 'Visualizzata assegnazione valutatori';
 $string['eventbatchsetworkflowstateviewed'] = 'Visualizzati stati del flusso di lavoro';
@@ -215,6 +219,7 @@ $string['feedbacksettings'] = 'Impostazioni commento';
 $string['feedbacktypes'] = 'Tipi di feedback';
 $string['filesubmissions'] = 'File consegnati';
 $string['filter'] = 'Filtro';
+$string['filtergrantedextension'] = 'Proroghe concesse';
 $string['filternone'] = 'Senza filtro';
 $string['filternotsubmitted'] = 'Non consegnato';
 $string['filterrequiregrading'] = 'In attesa di valutazione';
@@ -245,6 +250,10 @@ $string['gradestudent'] = 'Valutazione studente: (id={$a->id}, Nome={$a->fullnam
 $string['gradeuser'] = 'Valutazione {$a}';
 $string['grading'] = 'Valutazione';
 $string['gradingchangessaved'] = 'Le modifiche alle valutazioni sono state salvate';
+$string['gradingduedate'] = 'Ricordami di valutare entro';
+$string['gradingduedate_help'] = 'La data entro al quale completare la valutazione delle consegne. La data viene utilizzata nella dashboard per dare priorità alle notifiche ai docenti.';
+$string['gradingdueduedatevalidation'] = 'Ricordami che la data entro la quale valutare non può precedere la data di consegna.';
+$string['gradingduefromdatevalidation'] = 'Ricordami che la data entro la quale valutare non può precedere la data di inizio consegne.';
 $string['gradingmethodpreview'] = 'Criterio di valutazione';
 $string['gradingoptions'] = 'Opzioni';
 $string['gradingstatus'] = 'Stato valutazione';
@@ -259,6 +268,10 @@ $string['groupsubmissionsettings'] = 'Impostazioni consegna di gruppo';
 $string['hiddenuser'] = 'Partecipante';
 $string['hideshow'] = 'Nascondi/Visualizza';
 $string['inactiveoverridehelp'] = '* Gli studenti non appartengono al gruppo corretto o non hanno un ruolo idoneo per consegnare il compito.';
+$string['indicator:cognitivedepth'] = 'Compito cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività \'compito\'.';
+$string['indicator:socialbreadth'] = 'Compito sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività \'compito\'.';
 $string['instructionfiles'] = 'File delle istruzioni';
 $string['introattachments'] = 'File aggiuntivi';
 $string['introattachments_help'] = 'Nei compiti è possibile utilizzare file aggiuntivi, come ad esempio modelli di risposte. I link per scaricare i file aggiuntivi saranno visualizzati sotto la descrizione presente nella pagina del compito.';
@@ -311,6 +324,7 @@ I docenti possono commentare le consegne degli studenti e caricare file a loro v
 $string['modulenameplural'] = 'Compiti';
 $string['moreusers'] = '{$a} ulteriori...';
 $string['multipleteams'] = 'Appartieni a più gruppi';
+$string['multipleteams_desc'] = 'Il compito prevede la consegna di gruppo ma tu sei membro di più di un gruppo. Per poter consegnare, devi essere membro di un solo gruppo. Per favore contatta il docente per modificare la tua appartenenza ai gruppi.';
 $string['multipleteamsgrader'] = 'Appartieni a più gruppi, non puoi effettuare consegne';
 $string['mysubmission'] = 'La mia consegna:';
 $string['newsubmissions'] = 'Compiti consegnati';
@@ -329,6 +343,7 @@ $string['nosavebutnext'] = 'Successivo';
 $string['nosubmission'] = 'Non sono presenti consegne da valutare';
 $string['nosubmissionsacceptedafter'] = 'Non sono consentite consegne successive a';
 $string['noteam'] = 'Non appartieni a nessun gruppo';
+$string['noteam_desc'] = 'Il compito prevede la consegna di gruppo ma tu non sei membro di nessun gruppo e non puoi effettuare consegne. Per favore contatta il docente affinché ti inserisca in un gruppo.';
 $string['noteamgrader'] = 'Non appartieni a nessun gruppo, non puoi effettuare consegne';
 $string['notgraded'] = 'Non valutata';
 $string['notgradedyet'] = 'Non ancora valutata';
@@ -365,6 +380,11 @@ $string['preventsubmissionnotingroup_help'] = 'Abilitando l\'impostazione, gli u
 $string['preventsubmissions'] = 'Impedisce qualsiasi ulteriore modifica da parte dell\'utente della consegna effettuata';
 $string['preventsubmissionsshort'] = 'Blocca modifiche della consegna';
 $string['previous'] = 'Precedente';
+$string['privacy:attemptpath'] = 'tentativo {$a}';
+$string['privacy:gradepath'] = 'valutazione';
+$string['privacy:metadata:groupid'] = 'ID del gruppo al quale l\'utente appartiene.';
+$string['privacy:metadata:timecreated'] = 'Data di creazione';
+$string['privacy:metadata:userid'] = 'Identificativo dell\'utente.';
 $string['quickgrading'] = 'Valutazione rapida';
 $string['quickgradingchangessaved'] = 'Le modiche alle valutazioni sono state salvate';
 $string['quickgrading_help'] = 'La valutazione rapida consente di valutare i compiti direttamente nella tabella delle consegne. La valutazione rapida non è compatibile con la valutazione avanzata ed è sconsigliata in presenza di più valutatori.';

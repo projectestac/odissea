@@ -349,7 +349,10 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             });
             // If we found any matches, show the list.
             inputElement.attr('aria-expanded', true);
-            if (matchingElements) {
+            if (originalSelect.attr('data-notice')) {
+                // Display a notice rather than actual suggestions.
+                suggestionsElement.html(originalSelect.attr('data-notice'));
+            } else if (matchingElements) {
                 // We only activate the first item in the list if tags is false,
                 // because otherwise "Enter" would select the first item, instead of
                 // creating a new tag.
@@ -400,7 +403,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 // Only create the item if it's new.
                 if (!found) {
                     var option = $('<option>');
-                    option.append(tag);
+                    option.append(document.createTextNode(tag));
                     option.attr('value', tag);
                     originalSelect.append(option);
                     option.prop('selected', true);
@@ -448,14 +451,23 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 $(ele).prop('selected', true);
             }
         });
+
         // Rerender the selection list.
         updateSelectionList(options, state, originalSelect);
         // Notifiy that the selection changed.
         notifyChange(originalSelect);
-        // Clear the input element.
-        inputElement.val('');
-        // Close the list of suggestions.
-        closeSuggestions(state);
+
+        if (options.closeSuggestionsOnSelect) {
+            // Clear the input element.
+            inputElement.val('');
+            // Close the list of suggestions.
+            closeSuggestions(state);
+        } else {
+            // Focus on the input element so the suggestions does not auto-close.
+            inputElement.focus();
+            // Remove the last selected item from the suggestions list.
+            updateSuggestions(options, state, inputElement.val(), originalSelect);
+        }
     };
 
     /**
@@ -470,6 +482,8 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
      * @param {Object} ajaxHandler This is a module that does the ajax fetch and translates the results.
      */
     var updateAjax = function(e, options, state, originalSelect, ajaxHandler) {
+        var pendingKey = 'form-autocomplete-updateajax';
+        M.util.js_pending(pendingKey);
         // Get the query to pass to the ajax function.
         var query = $(e.currentTarget).val();
         // Call the transport function to do the ajax (name taken from Select2).
@@ -495,18 +509,28 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 var option = $('<option>');
                 originalSelect.append(option);
             }
-            // And add all the new ones returned from ajax.
-            $.each(processedResults, function(resultIndex, result) {
-                if (existingValues.indexOf(String(result.value)) === -1) {
-                    var option = $('<option>');
-                    option.append(result.label);
-                    option.attr('value', result.value);
-                    originalSelect.append(option);
-                }
-            });
+            if ($.isArray(processedResults)) {
+                // Add all the new ones returned from ajax.
+                $.each(processedResults, function(resultIndex, result) {
+                    if (existingValues.indexOf(String(result.value)) === -1) {
+                        var option = $('<option>');
+                        option.append(result.label);
+                        option.attr('value', result.value);
+                        originalSelect.append(option);
+                    }
+                });
+                originalSelect.attr('data-notice', '');
+            } else {
+                // The AJAX handler returned a string instead of the array.
+                originalSelect.attr('data-notice', processedResults);
+            }
             // Update the list of suggestions now from the new values in the select list.
             updateSuggestions(options, state, '', originalSelect);
-        }, notification.exception);
+            M.util.js_complete(pendingKey);
+        }, function(error) {
+            M.util.js_complete(pendingKey);
+            notification.exception(error);
+        });
     };
 
     /**
@@ -523,11 +547,15 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
         var inputElement = $(document.getElementById(state.inputId));
         // Add keyboard nav with keydown.
         inputElement.on('keydown', function(e) {
+            var pendingKey = 'form-autocomplete-addnav-' + state.inputId + '-' + e.keyCode;
+            M.util.js_pending(pendingKey);
+
             switch (e.keyCode) {
                 case KEYS.DOWN:
                     // If the suggestion list is open, move to the next item.
                     if (!options.showSuggestions) {
                         // Do not consume this event.
+                        M.util.js_complete(pendingKey);
                         return true;
                     } else if (inputElement.attr('aria-expanded') === "true") {
                         activateNextItem(state);
@@ -544,12 +572,14 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                     }
                     // We handled this event, so prevent it.
                     e.preventDefault();
+                    M.util.js_complete(pendingKey);
                     return false;
                 case KEYS.UP:
                     // Choose the previous active item.
                     activatePreviousItem(state);
                     // We handled this event, so prevent it.
                     e.preventDefault();
+                    M.util.js_complete(pendingKey);
                     return false;
                 case KEYS.ENTER:
                     var suggestionsElement = $(document.getElementById(state.suggestionsId));
@@ -563,6 +593,7 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                     }
                     // We handled this event, so prevent it.
                     e.preventDefault();
+                    M.util.js_complete(pendingKey);
                     return false;
                 case KEYS.ESCAPE:
                     if (inputElement.attr('aria-expanded') === "true") {
@@ -571,12 +602,16 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                     }
                     // We handled this event, so prevent it.
                     e.preventDefault();
+                    M.util.js_complete(pendingKey);
                     return false;
             }
+            M.util.js_complete(pendingKey);
             return true;
         });
         // Support multi lingual COMMA keycode (44).
         inputElement.on('keypress', function(e) {
+            var pendingKey = 'form-autocomplete-keypress-' + e.keyCode;
+            M.util.js_pending(pendingKey);
             if (e.keyCode === KEYS.COMMA) {
                 if (options.tags) {
                     // If we are allowing tags, comma should create a tag (or enter).
@@ -584,13 +619,17 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 }
                 // We handled this event, so prevent it.
                 e.preventDefault();
+                M.util.js_complete(pendingKey);
                 return false;
             }
+            M.util.js_complete(pendingKey);
             return true;
         });
         // Handler used to force set the value from behat.
         inputElement.on('behat:set-value', function() {
             var suggestionsElement = $(document.getElementById(state.suggestionsId));
+            var pendingKey = 'form-autocomplete-behat';
+            M.util.js_pending(pendingKey);
             if ((inputElement.attr('aria-expanded') === "true") &&
                     (suggestionsElement.children('[aria-selected=true]').length > 0)) {
                 // If the suggestion list has an active item, select it.
@@ -599,8 +638,11 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 // If tags are enabled, create a tag.
                 createItem(options, state, originalSelect);
             }
+            M.util.js_complete(pendingKey);
         });
         inputElement.on('blur', function() {
+            var pendingKey = 'form-autocomplete-blur';
+            M.util.js_pending(pendingKey);
             window.setTimeout(function() {
                 // Get the current element with focus.
                 var focusElement = $(document.activeElement);
@@ -611,11 +653,14 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                     }
                     closeSuggestions(state);
                 }
+                M.util.js_complete(pendingKey);
             }, 500);
         });
         if (options.showSuggestions) {
             var arrowElement = $(document.getElementById(state.downArrowId));
             arrowElement.on('click', function(e) {
+                var pendingKey = 'form-autocomplete-show-suggestions';
+                M.util.js_pending(pendingKey);
                 // Prevent the close timer, or we will open, then close the suggestions.
                 inputElement.focus();
                 // Handle ajax population of suggestions.
@@ -627,11 +672,14 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                     // Else - open the suggestions list.
                     updateSuggestions(options, state, inputElement.val(), originalSelect);
                 }
+                M.util.js_complete(pendingKey);
             });
         }
 
         var suggestionsElement = $(document.getElementById(state.suggestionsId));
         suggestionsElement.parent().on('click', '[role=option]', function(e) {
+            var pendingKey = 'form-autocomplete-parent';
+            M.util.js_pending(pendingKey);
             // Handle clicks on suggestions.
             var element = $(e.currentTarget).closest('[role=option]');
             var suggestionsElement = $(document.getElementById(state.suggestionsId));
@@ -641,29 +689,37 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             activateItem(current, state);
             // And select it.
             selectCurrentItem(options, state, originalSelect);
+            M.util.js_complete(pendingKey);
         });
         var selectionElement = $(document.getElementById(state.selectionId));
         // Handle clicks on the selected items (will unselect an item).
         selectionElement.on('click', '[role=listitem]', function(e) {
+            var pendingKey = 'form-autocomplete-clicks';
+            M.util.js_pending(pendingKey);
             // Get the item that was clicked.
             var item = $(e.currentTarget);
             // Remove it from the selection.
             deselectItem(options, state, item, originalSelect);
+            M.util.js_complete(pendingKey);
         });
         // Keyboard navigation for the selection list.
         selectionElement.on('keydown', function(e) {
+            var pendingKey = 'form-autocomplete-keydown-' + e.keyCode;
+            M.util.js_pending(pendingKey);
             switch (e.keyCode) {
                 case KEYS.DOWN:
                     // Choose the next selection item.
                     activateNextSelection(state);
                     // We handled this event, so prevent it.
                     e.preventDefault();
+                    M.util.js_complete(pendingKey);
                     return false;
                 case KEYS.UP:
                     // Choose the previous selection item.
                     activatePreviousSelection(state);
                     // We handled this event, so prevent it.
                     e.preventDefault();
+                    M.util.js_complete(pendingKey);
                     return false;
                 case KEYS.SPACE:
                 case KEYS.ENTER:
@@ -675,8 +731,10 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                         // We handled this event, so prevent it.
                         e.preventDefault();
                     }
+                    M.util.js_complete(pendingKey);
                     return false;
             }
+            M.util.js_complete(pendingKey);
             return true;
         });
         // Whenever the input field changes, update the suggestion list.
@@ -685,8 +743,10 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             if (options.ajax) {
                 require([options.ajax], function(ajaxHandler) {
                     var throttleTimeout = null;
+                    var pendingKey = 'autocomplete-throttledhandler';
                     var handler = function(e) {
                         updateAjax(e, options, state, originalSelect, ajaxHandler);
+                        M.util.js_complete(pendingKey);
                     };
 
                     // For input events, we do not want to trigger many, many updates.
@@ -694,6 +754,9 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                         if (throttleTimeout !== null) {
                             window.clearTimeout(throttleTimeout);
                             throttleTimeout = null;
+                        } else {
+                            // No existing timeout handler, so this is the start of a throttling check.
+                            M.util.js_pending(pendingKey);
                         }
                         throttleTimeout = window.setTimeout(handler.bind(this, e), 300);
                     };
@@ -733,8 +796,11 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
          * @param {Boolean} caseSensitive - If search has to be made case sensitive.
          * @param {Boolean} showSuggestions - If suggestions should be shown
          * @param {String} noSelectionString - Text to display when there is no selection
+         * @param {Boolean} closeSuggestionsOnSelect - Whether to close the suggestions immediately after making a selection.
+         * @return {Promise}
          */
-        enhance: function(selector, tags, ajax, placeholder, caseSensitive, showSuggestions, noSelectionString) {
+        enhance: function(selector, tags, ajax, placeholder, caseSensitive, showSuggestions, noSelectionString,
+                          closeSuggestionsOnSelect) {
             // Set some default values.
             var options = {
                 selector: selector,
@@ -745,6 +811,8 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
                 showSuggestions: true,
                 noSelectionString: noSelectionString
             };
+            var pendingKey = 'autocomplete-setup-' + selector;
+            M.util.js_pending(pendingKey);
             if (typeof tags !== "undefined") {
                 options.tags = tags;
             }
@@ -767,11 +835,13 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             var originalSelect = $(selector);
             if (!originalSelect) {
                 log.debug('Selector not found: ' + selector);
-                return;
+                M.util.js_complete(pendingKey);
+                return false;
             }
 
+            originalSelect.css('visibility', 'hidden').attr('aria-hidden', true);
+
             // Hide the original select.
-            originalSelect.hide().attr('aria-hidden', true);
 
             // Find or generate some ids.
             var state = {
@@ -787,6 +857,13 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
 
             options.multiple = originalSelect.attr('multiple');
 
+            if (typeof closeSuggestionsOnSelect !== "undefined") {
+                options.closeSuggestionsOnSelect = closeSuggestionsOnSelect;
+            } else {
+                // If not specified, this will close suggestions by default for single-select elements only.
+                options.closeSuggestionsOnSelect = !options.multiple;
+            }
+
             var originalLabel = $('[for=' + state.selectId + ']');
             // Create the new markup and insert it after the select.
             var suggestions = [];
@@ -799,15 +876,32 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
             context.options = suggestions;
             context.items = [];
 
-            var renderInput = templates.render('core/form_autocomplete_input', context);
-            var renderDatalist = templates.render('core/form_autocomplete_suggestions', context);
-            var renderSelection = templates.render('core/form_autocomplete_selection', context);
+            // Collect rendered inline JS to be executed once the HTML is shown.
+            var collectedjs = '';
 
-            $.when(renderInput, renderDatalist, renderSelection).done(function(input, suggestions, selection) {
-                // Add our new UI elements to the page.
+            var renderInput = templates.render('core/form_autocomplete_input', context).then(function(html, js) {
+                collectedjs += js;
+                return html;
+            });
+
+            var renderDatalist = templates.render('core/form_autocomplete_suggestions', context).then(function(html, js) {
+                collectedjs += js;
+                return html;
+            });
+
+            var renderSelection = templates.render('core/form_autocomplete_selection', context).then(function(html, js) {
+                collectedjs += js;
+                return html;
+            });
+
+            return $.when(renderInput, renderDatalist, renderSelection).then(function(input, suggestions, selection) {
+                originalSelect.hide();
                 originalSelect.after(suggestions);
                 originalSelect.after(input);
                 originalSelect.after(selection);
+
+                templates.runTemplateJS(collectedjs);
+
                 // Update the form label to point to the text input.
                 originalLabel.attr('for', state.inputId);
                 // Add the event handlers.
@@ -819,6 +913,11 @@ define(['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification']
 
                 // Show the current values in the selection list.
                 updateSelectionList(options, state, originalSelect);
+                M.util.js_complete(pendingKey);
+                return true;
+            }).fail(function(error) {
+                M.util.js_complete(pendingKey);
+                notification.exception(error);
             });
         }
     };

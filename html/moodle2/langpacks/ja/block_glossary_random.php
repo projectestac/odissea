@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_glossary_random', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   block_glossary_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,7 @@ $string['noentriesyet'] = '選択された用語集にはエントリが登録�
 $string['notyetconfigured'] = '編集アイコンを使用してこのブロックを設定してください。';
 $string['notyetglossary'] = 'あなたは少なくとも1つの用語集を選択する必要があります。';
 $string['pluginname'] = 'ランダム用語集エントリ';
+$string['privacy:metadata'] = 'ランダム用語集エントリブロックは他の場所で保存されたデータのみ表示します。';
 $string['random'] = 'ランダムエントリ';
 $string['refresh'] = '新しいエントリとみなされる日数';
 $string['select_glossary'] = 'この用語集からエントリを取得する';

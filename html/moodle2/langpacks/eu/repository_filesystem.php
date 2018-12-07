@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_filesystem', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_filesystem
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['nosubdir'] = 'Gutxienez karpeta bat sortu behar duzu <b>{$a}</b> direkt
 $string['path'] = 'Aukera ezazu azpidirektorio bat';
 $string['pluginname'] = 'Fitxategi-sistema';
 $string['pluginname_help'] = 'Direktorio lokaletik biltegia sortu ';
+$string['privacy:metadata'] = 'Fitxategi-sistema biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['relativefiles'] = 'Baimendu fitxategi erlatiboak';
 $string['relativefiles_desc'] = 'Ezarpen honek biltegiko fitxategi guztiak esteka erlatiboen bidez eskuragarri egotea ahalbidetzen du.';
 $string['root'] = 'Root-a';

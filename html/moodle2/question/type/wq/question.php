@@ -41,7 +41,7 @@ class qtype_wq_question extends question_with_responses {
         $this->base = $base;
     }
     /**
-     * Initializes WIRIS question calling the service in order to get the value
+     * Initializes Wiris Quizzes question calling the service in order to get the value
      * of the variables to render the question.
      *
      * @param question_attempt_step $step
@@ -53,7 +53,7 @@ class qtype_wq_question extends question_with_responses {
         global $USER;
         $this->base->start_attempt($step, $variant);
 
-        // Get variables from WIRIS quizzes service.
+        // Get variables from Wiris Quizzes service.
         $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
         $text = $this->join_all_text();
         $this->wirisquestioninstance = $builder->newQuestionInstance($this->wirisquestion);
@@ -268,7 +268,7 @@ class qtype_wq_question extends question_with_responses {
      * **/
 
     /**
-     * @return All the text of the question in a single string so WIRIS quizzes
+     * @return All the text of the question in a single string so Wiris Quizzes
      * can extract the variable placeholders.
      */
     public function join_all_text() {
@@ -295,7 +295,7 @@ class qtype_wq_question extends question_with_responses {
 
     /**
      *
-     * @return String Return the general feedback text in a single string so WIRIS
+     * @return String Return the general feedback text in a single string so Wiris
      * quizzes can extract the variable placeholders.
      */
     public function join_feedback_text() {

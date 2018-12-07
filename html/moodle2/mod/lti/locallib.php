@@ -103,7 +103,12 @@ function lti_get_launch_data($instance) {
         if ($tool) {
             $typeid = $tool->id;
         } else {
-            $typeid = null;
+            $tool = lti_get_tool_by_url_match($instance->securetoolurl,  $instance->course);
+            if ($tool) {
+                $typeid = $tool->id;
+            } else {
+                $typeid = null;
+            }
         }
     } else {
         $typeid = $instance->typeid;
@@ -445,7 +450,7 @@ function lti_build_request($instance, $typeconfig, $course, $typeid = null, $isl
     ) {
         $requestparams['lis_person_name_given'] = $USER->firstname;
         $requestparams['lis_person_name_family'] = $USER->lastname;
-        $requestparams['lis_person_name_full'] = $USER->firstname . ' ' . $USER->lastname;
+        $requestparams['lis_person_name_full'] = fullname($USER);
         $requestparams['ext_user_username'] = $USER->username;
     }
 
@@ -562,11 +567,9 @@ function lti_build_custom_parameters($toolproxy, $tool, $instance, $params, $cus
     if ($customstr) {
         $custom = lti_split_custom_parameters($toolproxy, $tool, $params, $customstr, $islti2);
     }
-    if (!isset($typeconfig['allowinstructorcustom']) || $typeconfig['allowinstructorcustom'] != LTI_SETTING_NEVER) {
-        if ($instructorcustomstr) {
-            $custom = array_merge(lti_split_custom_parameters($toolproxy, $tool, $params,
-                $instructorcustomstr, $islti2), $custom);
-        }
+    if ($instructorcustomstr) {
+        $custom = array_merge(lti_split_custom_parameters($toolproxy, $tool, $params,
+            $instructorcustomstr, $islti2), $custom);
     }
     if ($islti2) {
         $custom = array_merge(lti_split_custom_parameters($toolproxy, $tool, $params,
@@ -1126,6 +1129,9 @@ EOD;
  * @return Array of enabled capabilities
  */
 function lti_get_enabled_capabilities($tool) {
+    if (!isset($tool)) {
+        return array();
+    }
     if (!empty($tool->enabledcapability)) {
         $enabledcapabilities = explode("\n", $tool->enabledcapability);
     } else {
@@ -1243,6 +1249,8 @@ function lti_parse_custom_parameter($toolproxy, $tool, $params, $value, $islti2)
                             $value = str_replace('<br>' , ' ', $value);
                             $value = format_string($value);
                         }
+                    } else {
+                        $value = lti_calculate_custom_parameter($value1);
                     }
                 } else if ($islti2) {
                     $val = $value;
@@ -1259,6 +1267,23 @@ function lti_parse_custom_parameter($toolproxy, $tool, $params, $value, $islti2)
         }
     }
     return $value;
+}
+
+/**
+ * Calculates the value of a custom parameter that has not been specified earlier
+ *
+ * @param string    $value          Custom parameter value
+ *
+ * @return string Calculated value of custom parameter
+ */
+function lti_calculate_custom_parameter($value) {
+    global $USER, $COURSE;
+
+    switch ($value) {
+        case 'Moodle.Person.userGroupIds':
+            return implode(",", groups_get_user_groups($COURSE->id, $USER->id)[0]);
+    }
+    return null;
 }
 
 /**
@@ -1300,9 +1325,9 @@ function lti_get_ims_role($user, $cmid, $courseid, $islti2) {
         // If no cmid is passed, check if the user is a teacher in the course
         // This allows other modules to programmatically "fake" a launch without
         // a real LTI instance.
-        $coursecontext = context_course::instance($courseid);
+        $context = context_course::instance($courseid);
 
-        if (has_capability('moodle/course:manageactivities', $coursecontext, $user)) {
+        if (has_capability('moodle/course:manageactivities', $context, $user)) {
             array_push($roles, 'Instructor');
         } else {
             array_push($roles, 'Learner');
@@ -1317,7 +1342,9 @@ function lti_get_ims_role($user, $cmid, $courseid, $islti2) {
         }
     }
 
-    if (is_siteadmin($user)) {
+    if (is_siteadmin($user) || has_capability('mod/lti:admin', $context)) {
+        // Make sure admins do not have the Learner role, then set admin role.
+        $roles = array_diff($roles, array('Learner'));
         if (!$islti2) {
             array_push($roles, 'urn:lti:sysrole:ims/lis/Administrator', 'urn:lti:instrole:ims/lis/Administrator');
         } else {
@@ -2357,7 +2384,7 @@ function lti_get_launch_container($lti, $toolconfig) {
 
 function lti_request_is_using_ssl() {
     global $CFG;
-    return (stripos($CFG->httpswwwroot, 'https://') === 0);
+    return (stripos($CFG->wwwroot, 'https://') === 0);
 }
 
 function lti_ensure_url_is_https($url) {
@@ -2550,7 +2577,8 @@ function lti_get_capabilities() {
        'Person.webaddress' => '$USER->url',
        'Membership.role' => 'roles',
        'Result.sourcedId' => 'lis_result_sourcedid',
-       'Result.autocreate' => 'lis_outcome_service_url');
+       'Result.autocreate' => 'lis_outcome_service_url',
+       'Moodle.Person.userGroupIds' => null);
 
     return $capabilities;
 
@@ -2677,7 +2705,7 @@ function get_tool_type_icon_url(stdClass $type) {
     }
 
     if (empty($iconurl)) {
-        $iconurl = $OUTPUT->pix_url('icon', 'lti')->out();
+        $iconurl = $OUTPUT->image_url('icon', 'lti')->out();
     }
 
     return $iconurl;
@@ -2758,7 +2786,7 @@ function get_tool_proxy_urls(stdClass $proxy) {
     global $OUTPUT;
 
     $urls = array(
-        'icon' => $OUTPUT->pix_url('icon', 'lti')->out(),
+        'icon' => $OUTPUT->image_url('icon', 'lti')->out(),
         'edit' => get_tool_proxy_edit_url($proxy),
     );
 
@@ -3014,6 +3042,15 @@ function lti_load_type_from_cartridge($url, $type) {
         $toolinfo['lti_secureicon'] = $toolinfo['lti_extension_secureicon'];
     }
     unset($toolinfo['lti_extension_secureicon']);
+
+    // Ensure Custom icons aren't overridden by cartridge params.
+    if (!empty($type->lti_icon)) {
+        unset($toolinfo['lti_icon']);
+    }
+
+    if (!empty($type->lti_secureicon)) {
+        unset($toolinfo['lti_secureicon']);
+    }
 
     foreach ($toolinfo as $property => $value) {
         $type->$property = $value;

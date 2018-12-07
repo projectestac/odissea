@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emoticon', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'filter_emoticon', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   filter_emoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Aurpegierak irudi gisa erakutsi';
+$string['privacy:metadata'] = 'Aurpegierak irudi gisa erakutsi pluginak ez du datu pertsonalik biltzen.';
 $string['settingformats'] = 'Formatuei aplikatu';
 $string['settingformats_desc'] = 'Iragazkia bakarrik aplikatuko da jatorrizko testua aukeratutako formatuetako batean txertatu bada.';

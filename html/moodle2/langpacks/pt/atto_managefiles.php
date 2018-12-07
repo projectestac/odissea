@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_managefiles', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_managefiles', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_managefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,5 +31,7 @@ $string['hasmissingfiles'] = 'Atenção! Os seguintes ficheiros que são referen
 $string['managefiles'] = 'Gerir ficheiros';
 $string['missingfiles'] = 'Ficheiros em falta';
 $string['pluginname'] = 'Gerir ficheiros';
+$string['privacy:metadata'] = 'O módulo atto_managefiles não armazena nenhum dado pessoal.';
 $string['unusedfilesdesc'] = 'Os seguintes ficheiros incorporados não são utilizados na área de texto:';
 $string['unusedfilesheader'] = 'Ficheiros não utilizados';
+$string['unusedfilesremovalnotice'] = 'Todos os ficheiros não utilizados serão automaticamente apagados ao guardar as alterações.';

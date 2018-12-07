@@ -3,6 +3,13 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
+Changes in 3.0.3 - 2018112000 (2018/11/19)
+---------------------------------------------------------------------------------------
+- Fixed incorrect assignement of coursemodule identifiers in locallib.php
+- Removed unused dependence of 'eventslib.php' (deprecated in 3.6)
+- Changed default size of embedded activities to 800x600 (instead of 600x400)
+- All references to 'clic.xtec.cat' are now based on https
+
 Changes in 3.0.2 - 2017051200 (2017/05/12)
 ---------------------------------------------------------------------------------------
 - Changed default report to detailed

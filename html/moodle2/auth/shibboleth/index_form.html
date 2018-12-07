@@ -1,5 +1,5 @@
 <?php
-$config = get_config('auth/shibboleth');
+$config = get_config('auth_shibboleth');
 
 if ($show_instructions) {
     $columns = 'twocolumns';
@@ -54,6 +54,7 @@ if ($show_instructions) {
         </div>
         <form action="../../login/index.php" method="post" id="guestlogin">
           <div class="guestform">
+            <input type="hidden" name="logintoken" value="<?php echo s(\core\session\manager::get_login_token()); ?>" />
             <input type="hidden" name="username" value="guest" />
             <input type="hidden" name="password" value="guest" />
             <input type="submit" value="<?php print_string("loginguest") ?>" />
@@ -71,8 +72,8 @@ if ($show_instructions) {
 <?php     if (is_enabled_auth('none')) { // instructions override the rest for security reasons
               print_string("loginstepsnone");
           } else if ($CFG->registerauth == 'email') {
-              if (!empty($CFG->auth_instructions)) {
-                  echo format_text($CFG->auth_instructions);
+              if (!empty($config->auth_instructions)) {
+                  echo format_text($config->auth_instructions);
               } else {
                   print_string("loginsteps", "", "signup.php");
               } ?>
@@ -82,14 +83,14 @@ if ($show_instructions) {
                    </form>
                  </div>
 <?php     } else if (!empty($CFG->registerauth)) {
-              echo format_text($CFG->auth_instructions); ?>
+              echo format_text($config->auth_instructions); ?>
               <div class="signupform">
                 <form action="../../login/signup.php" method="get" id="signup">
                 <div><input type="submit" value="<?php print_string("startsignup") ?>" /></div>
                 </form>
               </div>
 <?php     } else {
-              echo format_text($CFG->auth_instructions);
+              echo format_text($config->auth_instructions);
           } ?>
       </div>
     </div>

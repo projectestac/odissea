@@ -22,33 +22,36 @@
  * @copyright  2016 Ryan Wyllie <ryan@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', 'core/modal_confirm', 'core/modal_cancel',
+define(['jquery', 'core/modal_events', 'core/modal_registry', 'core/modal',
+        'core/modal_save_cancel', 'core/modal_confirm', 'core/modal_cancel',
         'core/templates', 'core/notification', 'core/custom_interaction_events'],
-    function($, ModalEvents, Modal, ModalSaveCancel, ModalConfirm, ModalCancel, Templates, Notification, CustomEvents) {
+    function($, ModalEvents, ModalRegistry, Modal, ModalSaveCancel, ModalConfirm,
+        ModalCancel, Templates, Notification, CustomEvents) {
 
     // The templates for each type of modal.
     var TEMPLATES = {
         DEFAULT: 'core/modal',
         SAVE_CANCEL: 'core/modal_save_cancel',
-        CONFIRM: 'core/modal_confirm',
+        // Deprecated since Moodle 3.4. Point template to core/modal_save_cancel instead. See MDL-59759.
+        CONFIRM: 'core/modal_save_cancel',
         CANCEL: 'core/modal_cancel',
-    };
-
-    // The JS classes for each type of modal.
-    var CLASSES = {
-        DEFAULT: Modal,
-        SAVE_CANCEL: ModalSaveCancel,
-        CONFIRM: ModalConfirm,
-        CANCEL: ModalCancel,
     };
 
     // The available types of modals.
     var TYPES = {
         DEFAULT: 'DEFAULT',
         SAVE_CANCEL: 'SAVE_CANCEL',
+        // Deprecated since Moodle 3.4. See MDL-59759.
         CONFIRM: 'CONFIRM',
         CANCEL: 'CANCEL',
     };
+
+    // Register the common set of modals.
+    ModalRegistry.register(TYPES.DEFAULT, Modal, TEMPLATES.DEFAULT);
+    ModalRegistry.register(TYPES.SAVE_CANCEL, ModalSaveCancel, TEMPLATES.SAVE_CANCEL);
+    // Deprecated since Moodle 3.4. See MDL-59759.
+    ModalRegistry.register(TYPES.CONFIRM, ModalConfirm, TEMPLATES.CONFIRM);
+    ModalRegistry.register(TYPES.CANCEL, ModalCancel, TEMPLATES.CANCEL);
 
     /**
      * Set up the events required to show the modal and return focus when the modal
@@ -62,16 +65,32 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
         if (typeof triggerElement != 'undefined') {
             // The element that actually shows the modal.
             var actualTriggerElement = null;
-            CustomEvents.define(triggerElement, [CustomEvents.events.activate]);
-            triggerElement.on(CustomEvents.events.activate, function(e, data) {
-                actualTriggerElement = e.currentTarget;
-                modalPromise.then(function(modal) {
-                    modal.show();
+            if (Array.isArray(triggerElement)) {
+                var selector = triggerElement[1];
+                triggerElement = triggerElement[0];
 
-                    return modal;
+                CustomEvents.define(triggerElement, [CustomEvents.events.activate]);
+                triggerElement.on(CustomEvents.events.activate, selector, function(e, data) {
+                    actualTriggerElement = e.currentTarget;
+                    modalPromise.then(function(modal) {
+                        modal.show();
+
+                        return modal;
+                    });
+                    data.originalEvent.preventDefault();
                 });
-                data.originalEvent.preventDefault();
-            });
+            } else {
+                CustomEvents.define(triggerElement, [CustomEvents.events.activate]);
+                triggerElement.on(CustomEvents.events.activate, function(e, data) {
+                    actualTriggerElement = e.currentTarget;
+                    modalPromise.then(function(modal) {
+                        modal.show();
+
+                        return modal;
+                    });
+                    data.originalEvent.preventDefault();
+                });
+            }
 
             modalPromise.then(function(modal) {
                 modal.getRoot().on(ModalEvents.hidden, function() {
@@ -91,15 +110,15 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
      * the trigger between the modal and the trigger element.
      *
      * @method createFromElement
-     * @param {string} type A modal type (see TYPES)
+     * @param {object} registryConf A config from the ModalRegistry
      * @param {object} modalElement The modal HTML jQuery object
      * @param {object} triggerElement The trigger HTML jQuery object
      * @return {object} Modal instance
      */
-    var createFromElement = function(type, modalElement) {
+    var createFromElement = function(registryConf, modalElement) {
         modalElement = $(modalElement);
-        var ClassName = CLASSES[type];
-        var modal = new ClassName(modalElement);
+        var module = registryConf.module;
+        var modal = new module(modalElement);
 
         return modal;
     };
@@ -110,17 +129,17 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
      * trigger element.
      *
      * @method createFromType
-     * @param {string} type A modal type (see TYPES)
+     * @param {object} registryConf A config from the ModalRegistry
      * @param {object} triggerElement The trigger HTML jQuery object
      * @return {promise} Resolved with a Modal instance
      */
-    var createFromType = function(type, triggerElement) {
-        var templateName = TEMPLATES[type];
+    var createFromType = function(registryConf, templateContext, triggerElement) {
+        var templateName = registryConf.template;
 
-        var modalPromise = Templates.render(templateName, {})
+        var modalPromise = Templates.render(templateName, templateContext)
             .then(function(html) {
                 var modalElement = $(html);
-                return createFromElement(type, modalElement);
+                return createFromElement(registryConf, modalElement);
             })
             .fail(Notification.exception);
 
@@ -140,12 +159,20 @@ define(['jquery', 'core/modal_events', 'core/modal', 'core/modal_save_cancel', '
     var create = function(modalConfig, triggerElement) {
         var type = modalConfig.type || TYPES.DEFAULT;
         var isLarge = modalConfig.large ? true : false;
+        var registryConf = null;
+        var templateContext = {};
 
-        if (!TYPES[type]) {
-            type = TYPES.DEFAULT;
+        registryConf = ModalRegistry.get(type);
+
+        if (!registryConf) {
+            Notification.exception({message: 'Unable to find modal of type: ' + type});
         }
 
-        return createFromType(type, triggerElement)
+        if (typeof modalConfig.templateContext != 'undefined') {
+            templateContext = modalConfig.templateContext;
+        }
+
+        return createFromType(registryConf, templateContext, triggerElement)
             .then(function(modal) {
                 if (typeof modalConfig.title != 'undefined') {
                     modal.setTitle(modalConfig.title);

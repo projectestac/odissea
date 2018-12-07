@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'gradeexport_ods', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   gradeexport_ods
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,4 +29,5 @@ $string['eventgradeexported'] = 'OpenDocument評定がエクスポートされ�
 $string['ods:publish'] = 'ODS評定エクスポートを公開する';
 $string['ods:view'] = 'OpenDocument評定エクスポートを使用する';
 $string['pluginname'] = 'OpenDocumentスプレッドシート';
+$string['privacy:metadata'] = 'OpenDocumentスプレッドシート評定エクスポートプラグインはどのような個人データも保存しません。';
 $string['timeexported'] = 'このコースからの最新ダウンロード';

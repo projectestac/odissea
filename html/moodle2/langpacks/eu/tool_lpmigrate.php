@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_lpmigrate', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_lpmigrate
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ $string['migratingcourses'] = 'Ikastaroak migratzen';
 $string['missingmappings'] = 'Parekatzeak falta dira';
 $string['performmigration'] = 'Egin migrazioa';
 $string['pluginname'] = 'Gaitasunen migraziorako tresna';
+$string['privacy:metadata'] = 'Gaitasunen migraziorako tresna pluginak ez du datu pertsonalik biltzen.';
 $string['results'] = 'Emaitzak';
 $string['startdatefrom'] = 'Hasiera-data honetatik aurrera';
 $string['unmappedin'] = 'Parekatu gabekoa hemen: {$a}';

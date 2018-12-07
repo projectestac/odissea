@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'glossary', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   glossary
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -88,6 +88,7 @@ $string['comments'] = 'Commentaires';
 $string['commentson'] = 'Commentaires activés';
 $string['commentupdated'] = 'Le commentaire a été modifié.';
 $string['completionentries'] = 'L\'étudiant doit créer des articles :';
+$string['completionentriesdesc'] = 'L\'étudiant doit créer au moins {$a} articles';
 $string['completionentriesgroup'] = 'Requiert des articles';
 $string['concept'] = 'Concept';
 $string['concepts'] = 'Concepts';
@@ -105,6 +106,7 @@ $string['defaultsortorder'] = 'Ordre de tri par défaut';
 $string['definition'] = 'Définition';
 $string['definitions'] = 'Définitions';
 $string['deleteentry'] = 'Supprimer l\'article';
+$string['deleteentrya'] = 'Supprimer l\'article : {$a}';
 $string['deletenotenrolled'] = 'Supprimer les articles des utilisateurs non inscrits';
 $string['deletingcomment'] = 'Suppression du commentaire';
 $string['deletingnoneemptycategory'] = 'La suppression de cette catégorie ne supprimera pas les articles qu\'elle contient. Ceux-ci seront marquées comme sans catégorie.';
@@ -138,6 +140,7 @@ $string['editalways'] = 'Toujours autoriser la modification';
 $string['editalways_help'] = 'Ce réglage détermine si les articles sont toujours modifiables ou si les étudiants ne peuvent modifier leurs articles que durant une période définie (habituellement de 30 minutes).';
 $string['editcategories'] = 'Modifier les catégories';
 $string['editentry'] = 'Modifier l\'article';
+$string['editentrya'] = 'Modifier l\'article : {$a}';
 $string['editingcomment'] = 'Modification commentaire';
 $string['entbypage'] = 'Articles affichés sur une page';
 $string['entries'] = 'Articles';
@@ -211,6 +214,10 @@ $string['importedentries'] = 'Articles importés';
 $string['importentries'] = 'Importer des articles';
 $string['importentriesfromxml'] = 'Importer des articles d\'un fichier XML';
 $string['includegroupbreaks'] = 'Inclure les séparations entre groupes';
+$string['indicator:cognitivedepth'] = 'Glossaire : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Glossaire.';
+$string['indicator:socialbreadth'] = 'Glossaire : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Glossaire.';
 $string['isglobal'] = 'Glossaire global';
 $string['isglobal_help'] = 'Les articles d\'un glossaire global sont utilisés dans tout le site pour la création automatique des liens, et pas seulement dans le cours auquel il appartient. Seuls les administrateurs peuvent définir un glossaire comme étant global.';
 $string['letter'] = 'lettre';
@@ -261,9 +268,22 @@ $string['popupformat'] = 'Format des fenêtres surgissantes';
 $string['print'] = 'Imprimer';
 $string['printerfriendly'] = 'Version pour impression';
 $string['printviewnotallowed'] = 'L\'affichage pour impression n\'est pas autorisé';
+$string['privacy'] = 'Confidentialité des résultats';
+$string['privacy:metadata:core_comments'] = 'Les commentaires sur les articles de glossaire sont enregistrés à l\'aide du système core_comment';
+$string['privacy:metadata:core_files'] = 'Les fichiers liés aux articles de glossaire sont enregistrés à l\'aide du système core_files';
+$string['privacy:metadata:core_rating'] = 'Les évaluations des articles de glossaire sont enregistrés à l\'aide du système core_rating';
+$string['privacy:metadata:core_tag'] = 'Les tags ajoutés aux articles de glossaire sont enregistrés à l\'aide du système core_tag';
+$string['privacy:metadata:glossary_entries'] = 'Informations sur les articles de l\'utilisateur dans un glossaire';
+$string['privacy:metadata:glossary_entries:attachment'] = 'L\'annexe à un article ajoutée par l\'utilisateur';
+$string['privacy:metadata:glossary_entries:concept'] = 'Le concept de l\'article ajouté par l\'utilisateur';
+$string['privacy:metadata:glossary_entries:definition'] = 'La définition de l\'article ajoutée par l\'utilisateur';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'L\'identifiant de l\'activité glossaire dans laquelle l\'utilisateur a ajouté un article';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'L\'horodatage de la modification de l\'article de glossaire par l\'utilisateur';
+$string['privacy:metadata:glossary_entries:userid'] = 'L\'identifiant de l\'utilisateur qui a ajouté cet article de glossaire';
 $string['question'] = 'Question';
 $string['rejectedentries'] = 'Articles rejetés';
 $string['rejectionrpt'] = 'Rapport de rejet';
+$string['removeallglossarytags'] = 'Supprimer tous les tags du glossaire';
 $string['resetglossaries'] = 'Supprimer les articles depuis le';
 $string['resetglossariesall'] = 'Supprimer les articles de tous les glossaires';
 $string['rssarticles'] = 'Nombres d\'articles RSS récents';
@@ -300,6 +320,8 @@ $string['sortchronogically'] = 'Trier chronologiquement';
 $string['special'] = 'Spécial';
 $string['standardview'] = 'Consulter alphabétiquement';
 $string['studentcanpost'] = 'Les étudiants peuvent ajouter des articles';
+$string['tagarea_glossary_entries'] = 'Articles de glossaire';
+$string['tagsdeleted'] = 'Les tags de glossaire ont été supprimés';
 $string['totalentries'] = 'Nombre total d\'articles';
 $string['usedynalink'] = 'Activer les liens automatiques';
 $string['usedynalink_help'] = 'Si la liaison automatique des glossaires a été activée par un administrateur au niveau de la plateforme et que cette option est activée, il est possible d\'activer la liaison automatique d\'un article, lorsque son intitulé apparaît dans le reste du cours.';

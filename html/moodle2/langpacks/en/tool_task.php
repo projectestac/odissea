@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_task', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_task
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['asap'] = 'ASAP';
+$string['backtoscheduledtasks'] = 'Back to scheduled tasks';
 $string['blocking'] = 'Blocking';
 $string['component'] = 'Component';
 $string['corecomponent'] = 'Core';
@@ -33,13 +34,18 @@ $string['default'] = 'Default';
 $string['disabled'] = 'Disabled';
 $string['disabled_help'] = 'Disabled scheduled tasks are not executed from cron, however they can still be executed manually via the CLI tool.';
 $string['edittaskschedule'] = 'Edit task schedule: {$a}';
+$string['enablerunnow'] = 'Allow \'Run now\' for scheduled tasks';
+$string['enablerunnow_desc'] = 'Allows administrators to run a single scheduled task immediately, rather than waiting for it to run as scheduled. The task runs on the web server, so some sites may wish to disable this feature to avoid potential performance issues.';
 $string['faildelay'] = 'Fail delay';
 $string['lastruntime'] = 'Last run';
 $string['nextruntime'] = 'Next run';
 $string['plugindisabled'] = 'Plugin disabled';
 $string['pluginname'] = 'Scheduled task configuration';
+$string['privacy:metadata'] = 'The Scheduled task configuration plugin does not store any personal data.';
 $string['resettasktodefaults'] = 'Reset task schedule to defaults';
 $string['resettasktodefaults_help'] = 'This will discard any local changes and revert the schedule for this task back to its original settings.';
+$string['runnow'] = 'Run now';
+$string['runnow_confirm'] = 'Are you sure you want to run this task \'{$a}\' now? The task will run on the web server and may take some time to complete.';
 $string['scheduledtaskchangesdisabled'] = 'Modifications to the list of scheduled tasks have been prevented in Moodle configuration';
 $string['scheduledtasks'] = 'Scheduled tasks';
 $string['taskdisabled'] = 'Task disabled';

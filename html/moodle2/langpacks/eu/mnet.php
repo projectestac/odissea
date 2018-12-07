@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'mnet', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   mnet
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -109,7 +109,7 @@ $string['invalidhost'] = 'Zure ostalari-identifikatzaileak baliagarria izan beha
 $string['invalidpubkey'] = 'Giltza ez da SSL giltza baliagarria. ({$a})';
 $string['invalidurl'] = 'URL parametroak ez du balio.';
 $string['ipaddress'] = 'IP helbidea';
-$string['is_in_range'] = '<code>{$a}</code> IP helbideak ostalari fidagarri eta baliozkoa erakusten du.';
+$string['is_in_range'] = '<code>{$a}</code> IP helbideak konfiantzazko ostalari baliozkoa erakusten du.';
 $string['ispublished'] = '{$a}-k zerbitzu hau gaitu du zuretzat.';
 $string['issubscribed'] = '{$a} zerbitzu honetara harpidetzen ari da zure ostalarian.';
 $string['keydeleted'] = 'Zure giltza ondo ezabatu eta ordezkatu da.';
@@ -147,7 +147,7 @@ $string['noaclentries'] = 'Ez dago sarrerarik SSO sarbidearen kontrol-zerrendan'
 $string['noaddressforhost'] = 'Sentitzen dugu, baina ({$a}) ostalariaren izena ezin izan da ebatzi.';
 $string['nocurl'] = 'PHP cURL liburutegia ez dago instalatuta';
 $string['nolocaluser'] = 'Ez da erregistro lokalik existitzen urrutiko erabiltzailearentzat, eta ezin izan da sortu ostalari honek ez duelako erabiltzaileen sorrera automatikoa baimentzen. Mesedez jarri harremanetan zure kudeatzailearekin!';
-$string['nomodifyacl'] = 'Ez duzu MNet sarbiderako kontrol-zerrenda aldatzeko baimenik.';
+$string['nomodifyacl'] = 'Ez duzu MNET sarbiderako kontrol-zerrenda aldatzeko baimenik.';
 $string['nonmatchingcert'] = 'Ziurtagiriaren subjektua: <br /><em>{$a->subject}</em><br /> ez dator bat datorren ostalariarekin:<br /><em>{$a->host}</em>.';
 $string['nopubkey'] = 'Arazo bat egon da gako publikoa eskuratzean.<br />Baliteke ostalariak MNet ez onartzea edo gakoa baliogabea izatea.';
 $string['nosite'] = 'Ezin izan da ikastarorik aurkitu gunearen mailan';
@@ -159,7 +159,7 @@ $string['nosuchservice'] = 'RPC zerbitzua ez dabil ostalari honetan.';
 $string['nosuchtransport'] = 'Ez dago ID hori duen garraiorik.';
 $string['notBASE64'] = 'Karaktere-kate hau ez dago base64 formatuan kodetuta. Ezin da baliozko gakoa izan.';
 $string['notenoughidpinfo'] = 'Zure identitate-hornitzailea ez da zure kontua lokalki sortzeko adina informazio ematen ari. Sentitzen dugu!';
-$string['not_in_range'] = '<code>{$a}</code> IP helbideak ez du ostalari fidagarri eta baliozko bat erakusten.';
+$string['not_in_range'] = '<code>{$a}</code> IP helbideak ez du konfiantzazko ostalari baliozkoa bat erakusten.';
 $string['notinxmlrpcserver'] = 'MNet-eko urruneko klientea sartzeko saiakera, ez zerbitzariko XMLRPC exekuzioak iraun bitartean';
 $string['notmoodleapplication'] = 'KONTUZ: hau ez da Moodle aplikazioa, eta horregatik metodo batzuk ez ibiltzea gerta daiteke.';
 $string['notPEM'] = 'Giltza hau ez dago PEM formatuan. Ez du funtzionatuko.';
@@ -174,6 +174,7 @@ $string['permittedtransports'] = 'Baimendutako garraioak';
 $string['phperror'] = 'PHP barruko errore batek zure eskaera ondo egitea saihestu du.';
 $string['position'] = 'Kokalekua';
 $string['postrequired'] = 'delete funtzioak POST eskaera bat behar du.';
+$string['privacy:metadata'] = 'Moodle sarea pluginak ez du datu pertsonalik biltzen.';
 $string['profileexportfields'] = 'Bidaltzeko eremuak';
 $string['profilefielddesc'] = 'Hemen MNet bitartez erabiltzaile-kontu berriak sortzean edo eguneratzean bidaliko diren profil-eremuen zerrenda konfigura dezakezu. Hau MNet kide bakoitzarentzat ere baliogabe dezakezu. Kontuan izan eremu hauek beti bidaltzen direla eta ez direla aukerazkoak: {$a}';
 $string['profilefields'] = 'Profil-eremuak';
@@ -226,18 +227,18 @@ $string['sslverification_help'] = 'Aukera honek kide batera HTTPS bidez konektat
 * Egiaztatu ostalaria eta kidea (gomendatua): domeinua eta SSL ziurtagiriaren jaulkitzailea egiaztatzen ditu';
 $string['ssoaccesscontrol'] = 'SSO sarbide-kontrola';
 $string['ssoacldescr'] = 'Erabili orri hau urruneko MNet ostalariko erabiltzaile konkretuei sarbidea eman edota ukatzeko. Hau erabilgarria da urruneko erabiltzaileei SSO zerbitzua eskaintzen ari zarenean. Zure erabiltzaile <em>lokalek</em> beste MNet ostalarietan ibiltzeko gaitasuna kontrolatzeko, erabili rol-sistema erabiltzaileei <em>mnetlogintoremote</em> baimena emateko.';
-$string['ssoaclneeds'] = 'Funtzionalitate hau martxan jartzeko, Sarea gaituta eta MNet autentifikazio-gehigarria gaituta egon behar dira.';
+$string['ssoaclneeds'] = 'Funtzionalitate hau martxan jartzeko, Sarea gaituta eta MNet autentifikazio-plugina gaituta egon behar dira.';
 $string['strict'] = 'Zorrotza';
 $string['subscribe'] = 'Harpidetu';
 $string['system'] = 'Sistema';
 $string['testclient'] = 'Moodle Sarerako proba-bezeroa';
 $string['testtrustedhosts'] = 'Testatu helbide bat';
-$string['testtrustedhostsexplain'] = 'Idatz ezazu IP helbide bat konfidantzazko ostalaria den ziurtatzeko';
+$string['testtrustedhostsexplain'] = 'Idatzi IP helbide bat konfiantzazko ostalaria den ziurtatzeko.';
 $string['theypublish'] = 'Haiek argitaratu';
 $string['theysubscribe'] = 'Haiek harpidetu';
 $string['transport_help'] = 'Aukera hauek bi norabidetakoak dira, eta beraz, urruneko ostalari batek sinatutako SSL ziurtagiria erabiltzera behartu ahal izateko zure zerbitzariak ere sinatutako SSL ziurtagiria izan behar du.';
 $string['trustedhosts'] = 'XML-RPC ostalariak';
-$string['trustedhostsexplain'] = '<p>Ostalari fidagarrien mekanismoak makina konkretu batzuk XML-RPC bitartez Moodle API-ko edozein dei exekutatzeko aukera ematen du. Honek Moodle-ko jokaera script bidez kontrolatzea ahalbidetzen du eta gaitzeak arrisku handia suposa lezake. Zalantzak badituzu, desgaituta utzi.</p>
+$string['trustedhostsexplain'] = '<p>Konfiantzazko ostalarien mekanismoak makina konkretu batzuk XML-RPC bitartez Moodle API-ko edozein dei exekutatzeko aukera ematen du. Honek Moodle-ko jokaera script bidez kontrolatzea ahalbidetzen du eta gaitzeak arrisku handia suposa lezake. Zalantzak badituzu, desgaituta utzi.</p>
 <p><strong>Hau ez da beharrezkoa ohiko MNet funtzioentzat!</strong> Soilik gaitu zer egiten ari zaren badakizu.</p>
 <p>Aukera hau gaitzeko, sartu IP helbideen edo sareen zerrenda, bat errenkada bakoitzean. Adibide batzuk:</p>
 Zure ostalari lokala:<br />127.0.0.1<br />Zur eostalari lokala (sareko blokearekin):<br />127.0.0.1/32<br />Soilik  192.168.0.7 IP helbidea duen ostalaria:<br />192.168.0.7/32<br />192.168.0.1 eta 192.168.0.255 IP helbideen arteko edozein ostalari:<br />192.168.0.0/24<br />Edozein ostalari:<br />192.168.0.0/0<br />Jakina, azken adibidea <strong>ez</strong> da gomendatutako konfigurazio bat.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_community', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   block_community
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,8 +54,8 @@ $string['downloadable'] = 'Corsi da scaricare';
 $string['downloadablecourses'] = 'Corsi scaricabili';
 $string['downloadconfirmed'] = 'Il backup è stato salvato nei tuoi file personali {$a}';
 $string['downloaded'] = '...completato.';
-$string['downloadingcourse'] = 'Download del corso';
-$string['downloadingsize'] = 'Attendere, download del file in corso ({$a->total}Mb)...';
+$string['downloadingcourse'] = 'Scaricamento del corso';
+$string['downloadingsize'] = 'Attendere, scaricamento del file in corso ({$a->total}Mb)...';
 $string['downloadtemplate'] = 'Crea corso da un template';
 $string['educationallevel'] = 'Livello formativo';
 $string['educationallevel_help'] = 'Il livello formativo che stai cercando. Nel caso di comunità di formatori indica il livello insegnato.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'message', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   message
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -107,6 +107,29 @@ $string['outputnotconfigured'] = 'Not configured';
 $string['page-message-x'] = 'Any message pages';
 $string['pagerefreshes'] = 'This page refreshes automatically every {$a} seconds';
 $string['permitted'] = 'Permitted';
+$string['privacy:metadata:message_contacts'] = 'The list of contacts';
+$string['privacy:metadata:message_contacts:blocked'] = 'Flag whether or not the user is blocked';
+$string['privacy:metadata:message_contacts:contactid'] = 'The ID of the user who is a contact';
+$string['privacy:metadata:message_contacts:userid'] = 'The ID of the user whose contact list we are viewing';
+$string['privacy:metadata:messages'] = 'Message/notifications';
+$string['privacy:metadata:messages:component'] = 'The component responsible for sending the message/notification';
+$string['privacy:metadata:messages:contexturl'] = 'The URL related to a notification';
+$string['privacy:metadata:messages:contexturlname'] = 'The name of the context';
+$string['privacy:metadata:messages:eventtype'] = 'The event type';
+$string['privacy:metadata:messages:fullmessage'] = 'The full message/notification';
+$string['privacy:metadata:messages:fullmessageformat'] = 'The message/notification format';
+$string['privacy:metadata:messages:fullmessagehtml'] = 'The HTML of the message/notification';
+$string['privacy:metadata:messages:notification'] = 'Flag whether or not this is a notification';
+$string['privacy:metadata:messages:smallmessage'] = 'The small message/notification';
+$string['privacy:metadata:messages:subject'] = 'The subject of the message/notification';
+$string['privacy:metadata:messages:timecreated'] = 'The date at which the message/notification was created';
+$string['privacy:metadata:messages:timeread'] = 'The date at which the message/notification was read';
+$string['privacy:metadata:messages:timeuserfromdeleted'] = 'The date at which the message/notification was deleted by the sender';
+$string['privacy:metadata:messages:timeusertodeleted'] = 'The date at which the message/notification was deleted by the receiver';
+$string['privacy:metadata:messages:useridfrom'] = 'The ID of the user who sent the notification';
+$string['privacy:metadata:messages:useridto'] = 'The ID of the user who received the notification';
+$string['privacy:metadata:preference:core_message_settings'] = 'Settings related to messaging';
+$string['privacy:request:preference:set'] = 'The value of the setting \'{$a->name}\' was \'{$a->value}\'';
 $string['processorsettings'] = 'Processor settings';
 $string['recent'] = 'Recent';
 $string['removecontact'] = 'Remove contact';
@@ -123,6 +146,10 @@ $string['seeall'] = 'See all';
 $string['selectmessagestodelete'] = 'Select messages to delete';
 $string['selectnotificationtoview'] = 'Select from the list of notifications on the side to view more details';
 $string['send'] = 'Send';
+$string['sendbulkmessage'] = 'Send message to {$a} people';
+$string['sendbulkmessagesent'] = 'Message sent to {$a} people';
+$string['sendbulkmessagesentsingle'] = 'Message sent to 1 person';
+$string['sendbulkmessagesingle'] = 'Send message to 1 person';
 $string['sendingvia'] = 'Sending "{$a->provider}" via "{$a->processor}"';
 $string['sendingviawhen'] = 'Sending "{$a->provider}" via "{$a->processor}" when {$a->state}';
 $string['sendmessage'] = 'Send message';
@@ -141,6 +168,7 @@ $string['togglemessagemenu'] = 'Toggle messages menu';
 $string['togglenotificationmenu'] = 'Toggle notifications menu';
 $string['touserdoesntexist'] = 'You can not send a message to a user id ({$a}) that doesn\'t exist';
 $string['unblockcontact'] = 'Unblock contact';
+$string['unknownuser'] = 'Unknown user';
 $string['unreadnewmessage'] = 'New message from {$a}';
 $string['unreadnotification'] = 'Unread notification: {$a}';
 $string['userisblockingyou'] = 'This user has blocked you from sending messages to them';

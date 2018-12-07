@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_multichoice', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_multichoice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Eine oder mehrere Antworten?';
+$string['answerhowmany_desc'] = 'Sollen neue Multiple-Choice-Fragen standardmäßig eine Antwort (mit Radiobuttons) oder mehrere Antworten (mit Checkboxen) haben?';
 $string['answernumbering'] = 'Antworten nummerieren?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
+$string['answernumbering_desc'] = 'Legen SIe die standardmäßige Nummerierung neuer Multiple-Choice-Fragen fest.';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'Keine Nummerierung';
@@ -63,9 +65,11 @@ $string['pluginnameadding'] = 'Multiple-Choice-Frage hinzufügen';
 $string['pluginnameediting'] = 'Multiple-Choice-Frage bearbeiten';
 $string['pluginname_help'] = 'Teilnehmer/inen wählen zur Beantwortung eine oder mehrere Antwortvorgaben aus einer Liste aus. Legen Sie fest,ob eine oder mehrere Antworten angeklickt werden können. ';
 $string['pluginnamesummary'] = 'Erlaubt eine Auswahl einer oder mehrerer Antworten aus einer vordefinierten Liste.';
+$string['privacy:metadata'] = 'Der Multiple-Choice Fragentyp speichert keine persönlichen Daten';
 $string['selectmulti'] = 'Wählen Sie eine oder mehrere Antworten:';
 $string['selectone'] = 'Wählen Sie eine Antwort:';
 $string['shuffleanswers'] = 'Antworten mischen?';
+$string['shuffleanswers_desc'] = 'Sollen die Antwortmöglichkeiten neuer Multiple-Choice-Fragen standardmäßig gemischt werden?';
 $string['shuffleanswers_help'] = 'Wenn aktiviert ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" aktiviert ist.';
 $string['singleanswer'] = 'Antwort wählen:';
 $string['toomanyselected'] = 'Sie haben zu viele Optionen gewählt.';

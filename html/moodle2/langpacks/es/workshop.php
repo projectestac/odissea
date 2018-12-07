@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshop', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -178,6 +178,10 @@ $string['gradinggradeover'] = 'Pasar por alto calificación de la evaluación';
 $string['gradingsettings'] = 'Ajustes de calificación';
 $string['groupnoallowed'] = 'No se le permite acceder a ningún grupo en este taller';
 $string['iamsure'] = 'Sí, estoy seguro';
+$string['indicator:cognitivedepth'] = 'Taller cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Taller.';
+$string['indicator:socialbreadth'] = 'Taller social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Taller.';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instrucciones para el envío';
 $string['instructreviewers'] = 'Instrucciones para la evaluación';

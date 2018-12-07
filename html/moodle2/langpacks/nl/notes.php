@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'notes', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   notes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Voeg een nieuwe notitie toe aan {$a} personen';
+$string['addbulknotedone'] = 'Notitie toegevoegd aan {$a}  personen';
+$string['addbulknotedonesingle'] = 'Notitie toegevoegd aan 1 persoon';
+$string['addbulknotesingle'] = 'Voeg een nieuwe notitie toe aan 1 persoon';
 $string['addnewnote'] = 'Nieuwe notitie toevoegen';
 $string['addnewnoteselect'] = 'Selecteer leerlingen om een notitie over te schrijven';
 $string['bynameondate'] = 'op {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Fout opgetreden tijdens het verwijderen van het bericht';
 $string['configenablenotes'] = 'Bewaren van notities over individuele gebruikers inschakelen';
 $string['content'] = 'Inhoud notitie';
 $string['course'] = 'cursus';
@@ -58,6 +61,13 @@ $string['page-notes-index'] = 'Hoofdpagina notities';
 $string['page-notes-x'] = 'Elke notitiepagina';
 $string['personal'] = 'persoonlijk';
 $string['personalnotes'] = 'Persoonlijke notities';
+$string['privacy:metadata:core_notes'] = 'De notitiescomponent bewaart notities van e gebruiker binnen het core subsysteem.';
+$string['privacy:metadata:core_notes:content'] = 'De inhoud van de notitie.';
+$string['privacy:metadata:core_notes:courseid'] = 'De id van de cursus die geassocieerd is met de notitie.';
+$string['privacy:metadata:core_notes:created'] = 'De aanmaakdatum en tijd van de notitie.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'De datum van de laatste wijziging van de notitie.';
+$string['privacy:metadata:core_notes:publishstate'] = 'Publiceer de status van de notitie.';
+$string['privacy:metadata:core_notes:userid'] = 'De id van de gebruiker die met de notitie geassocieerd is.';
 $string['publishstate'] = 'Context';
 $string['publishstate_help'] = 'De context van een notitie bepaalt wie de notitie kan zien.
 

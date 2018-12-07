@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_health', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_health', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_health
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['healthnoproblemsfound'] = 'Er zijn geen problemen gevonden!';
+$string['healthnoproblemsfound'] = 'Er zijn geen gezondheidsproblemen gevonden!';
 $string['healthproblemsdetected'] = 'Gezondheidsproblemen ontdekt!';
 $string['healthproblemsolution'] = 'Oplossing';
 $string['healthreturntomain'] = 'Ga verder';

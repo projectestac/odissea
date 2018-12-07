@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Impossible de récupérer les données de m
 $string['filterall'] = 'Tout afficher';
 $string['filtercontribonly'] = 'N\'afficher que les plugins additionnels';
 $string['filterupdatesonly'] = 'Afficher seulement les éléments susceptibles de mise à jour';
+$string['isenabled'] = 'Activé ?';
 $string['misdepinfoplugin'] = 'Infos du plugin';
 $string['misdepinfoversion'] = 'Infos de version';
 $string['misdepsavail'] = 'Dépendances manquantes disponibles';
@@ -102,6 +103,7 @@ $string['status_new'] = 'À installer';
 $string['status_nodb'] = 'Pas de base de données';
 $string['status_upgrade'] = 'À mettre à jour';
 $string['status_uptodate'] = 'Installé';
+$string['supportedconversions'] = 'Conversions de documents supportées';
 $string['supportedmoodleversions'] = 'Versions de Moodle supportées';
 $string['systemname'] = 'Identifiant';
 $string['type_antivirus'] = 'Plugin antivirus';
@@ -126,6 +128,9 @@ $string['type_editor'] = 'Éditeur';
 $string['type_editor_plural'] = 'Éditeurs';
 $string['type_enrol'] = 'Méthode d\'inscription';
 $string['type_enrol_plural'] = 'Méthodes d\'inscription';
+$string['type_fileconverter'] = 'Convertisseur de documents';
+$string['type_fileconvertermanage'] = 'Gérer les convertisseurs de documents';
+$string['type_fileconverter_plural'] = 'Convertisseurs de documents';
 $string['type_filter'] = 'Filtre de texte';
 $string['type_filter_plural'] = 'Filtres de texte';
 $string['type_format'] = 'Format de cours';
@@ -144,6 +149,8 @@ $string['type_media'] = 'Lecteur de média';
 $string['type_media_plural'] = 'Lecteurs de média';
 $string['type_message'] = 'Notification de messagerie';
 $string['type_message_plural'] = 'Notifications de messagerie';
+$string['type_mlbackend'] = 'Programme d\'apprentissage automatique';
+$string['type_mlbackend_plural'] = 'Programmes d\'apprentissage automatique';
 $string['type_mnetservice'] = 'Service MNet';
 $string['type_mnetservice_plural'] = 'Services MNet';
 $string['type_mod'] = 'Module d\'activité';

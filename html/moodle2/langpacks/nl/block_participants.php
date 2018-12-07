@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_participants', language 'nl', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_participants', language 'nl', branch 'MOODLE_34_STABLE'
  *
  * @package   block_participants
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Voeg een nieuw gebruikersblok toe';
 $string['pluginname'] = 'Mensen';
+$string['privacy:metadata'] = 'Het mensen-blok toont alleen gegevens die op andere locaties zijn opgeslagen.';

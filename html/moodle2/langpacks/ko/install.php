@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'install', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   install
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -147,7 +147,6 @@ $string['nativepgsqlhelp'] = '이제 대부분의 무들 자료가 저장될 데
 $string['nativesqlsrv'] = '마이크로소프트 SQL* 서버(원본/sqlsrv)';
 $string['nativesqlsrvhelp'] = '이제 대부분의 무들 자료가 저장될 데이터베이스를 설정해야 합니다. 이 데이터베이스는 미리 생성되어 있어야 하며 사용자명과 비밀번호는 데이터베이스에 접속하는데 이용될 것입니다. 테이블 접두어는 필수입니다.';
 $string['nativesqlsrvnodriver'] = 'PHP를 위한 SQL서버 지원 마이크로소프트 드라이버가 설치되지 않았거나 제대로 설정되지 않았습니다.';
-$string['nativesqlsrvnonwindows'] = 'PHP를 위한 SQL서버 지원 마이크로소프트 드라이버는 윈도우즈 운영체제에만 쓸 수 있습니다.';
 $string['ociextensionisnotpresentinphp'] = 'OCI8 익스텐션으로 PHP가 오라클서버와 통신하도록 적절히 설정되지 않았습니다. php.ini 파일을 점검하거나 PHP를 다시 컴파일 하십시오.';
 $string['pass'] = '통과';
 $string['paths'] = '경로';

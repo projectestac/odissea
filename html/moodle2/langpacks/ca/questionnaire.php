@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_32_STABLE'
+ * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   questionnaire
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,11 +35,11 @@ $string['addselqtype'] = 'Afegeix-hi una pregunta del tipus seleccionat';
 $string['alignment'] = 'Alineació dels botons d\'opció';
 $string['alignment_help'] = 'Alineació dels botons d\'opció: vertical (per defecte) o horitzontal.';
 $string['all'] = 'Tot';
-$string['alreadyfilled'] = 'Ja heu respost l\'enquesta anteriorment {$a}. Gràcies.';
+$string['alreadyfilled'] = 'Ja heu respost aquesta enquesta {$a}. Gràcies.';
 $string['andaveragevalues'] = 'i les mitjanes';
 $string['anonymous'] = 'Anònim';
 $string['answerquestions'] = 'Responeu les preguntes...';
-$string['attempted'] = 'El qüestionari s\'ha enviat.';
+$string['attempted'] = 'Aquest qüestionari s\'ha enviat.';
 $string['attemptstillinprogress'] = 'En curs. Desat el:';
 $string['autonumbering'] = 'Autonumeració';
 $string['autonumbering_help'] = 'Numeració automàtica de preguntes i de pàgines. És possible que vulgueu desactivar la numeració automàtica
@@ -124,7 +124,7 @@ $string['editingquestionnaire'] = 'S\'estan editant els paràmetres de l\'enques
 $string['editquestion'] = 'S\'està editant la pregunta {$a}';
 $string['email'] = 'Correu electrònic';
 $string['errnewname'] = 'Aquest nom ja es fa servir; trieu-ne un altre.';
-$string['erroropening'] = 'Error d\'obertura del qüestionari.';
+$string['erroropening'] = 'S\'ha produït un error en obrir el qüestionari.';
 $string['errortable'] = 'Error de corrupció de la taula.';
 $string['essaybox'] = 'Quadre d\'edició llarg';
 $string['essaybox_help'] = 'Aquesta pregunta presentarà un quadre d\'edició de text net amb x columnes de text (amplària) i y files de text (nombre de línies de text).
@@ -261,8 +261,8 @@ $string['notanumber'] = '<strong>{$a}</strong> no s\'accepta com a  format de n�
 $string['notapplicable'] = 'N/D';
 $string['notapplicablecolumn'] = 'Columna N/D';
 $string['notavail'] = 'Aquesta enquesta encara no està disponible. Proveu-ho més tard.';
-$string['noteligible'] = 'No podeu fer aquesta enquesta';
-$string['notemplatesurveys'] = 'No hi ha cap plantilla d\'enquesta';
+$string['noteligible'] = 'No podeu fer aquesta enquesta.';
+$string['notemplatesurveys'] = 'No hi ha cap plantilla d\'enquesta.';
 $string['notenoughscaleitems'] = 'Heu d\'introduir un valor mínim de 2 elements de l\'escala';
 $string['notifications'] = 'Envia notificacions de la tramesa';
 $string['notifications_help'] = 'Envia una notificació als rols amb la capacitat «mod/questionnaire:submissionnotification» quan es fa una tramesa.';
@@ -281,7 +281,7 @@ $string['numeric'] = 'Numèric';
 $string['numeric_help'] = 'Utilitzeu aquest tipus de pregunta si espereu un número amb un format determinat com a resposta.';
 $string['of'] = 'de';
 $string['opendate'] = 'Data d\'obertura';
-$string['opendate_help'] = 'Podeu indicar una data per obrir l\'enquesta. Marqueu el quadre selecció i trieu la data i l\'hora. Els usuaris no podran emplenar l\'enquesta abans de la data. Si aquesta opció no està marcada, de seguida quedarà oberta per respondre-la.';
+$string['opendate_help'] = 'Podeu indicar una data per obrir l\'enquesta. Marqueu la casella de selecció, i trieu la data i l\'hora. Els usuaris no podran emplenar l\'enquesta abans de la data. Si aquesta opció no està marcada, de seguida quedarà oberta per respondre-la.';
 $string['option'] = 'opció {$a}';
 $string['optionalname'] = 'Nom de la pregunta';
 $string['optionalname_help'] = 'El nom de la pregunta només s\'utilitza en exportar els resultats a format CSV o full de càlcul. Si sabeu que no fareu mai aquesta exportació, no cal que l\'escriviu.
@@ -292,14 +292,14 @@ $string['order_ascending'] = 'Ordre ascendent';
 $string['order_default'] = 'Mostra l\'ordre predefinit';
 $string['order_descending'] = 'Ordre descendent';
 $string['orderresponses'] = 'Ordena les respostes';
-$string['orderresponses_help'] = 'En mostrar totes les respostes podeu ordenar-les pel nombre de respostes (la columna Mitjana) amb aquests 4 tipus de preguntes següents:
+$string['orderresponses_help'] = 'En mostrar totes les respostes, podeu ordenar-les pel nombre de respostes (la columna Mitjana) amb aquests 4 tipus de preguntes següents:
 
-* Quadres de selecció
-* Menús desplegables
-* Quadres de selecció múltiple
-* Preguntes de qualificació (incloses les escales Likert).
+* quadres de selecció
+* menús desplegables
+* quadres de selecció múltiple
+* preguntes de qualificació (incloses les escales Likert)
 
-Quan arribeu a la pàgina de totes les respostes, les trobareu de manera predefinida segons l\'ordre de creació. Les podreu ordenar en ordre ascendent o descendent.';
+Quan arribeu a la pàgina de totes les respostes, per defecte, les trobareu de manera predefinida segons l\'ordre de creació. Les podreu ordenar per ordre ascendent o descendent.';
 $string['osgood'] = 'Osgood';
 $string['other'] = 'Altres:';
 $string['otherempty'] = 'Si marqueu aquesta opció heu d\'escriure alguna cosa al quadre de text!';
@@ -414,13 +414,15 @@ $string['savedbutnotsubmitted'] = 'Aquesta enquesta s\'ha desat, però encara no
 $string['savedprogress'] = 'Les vostres respostes s\'han desat. Podeu tornar en qualsevol moment per completar aquesta enquesta.';
 $string['saveeditedquestion'] = 'Desa la pregunta {$a}';
 $string['savesettings'] = 'Desa els paràmetres';
+$string['search:activity'] = 'Enquesta: informació de l\'activitat';
+$string['search:question'] = 'Enquesta: preguntes';
 $string['section'] = 'Descripció';
 $string['sectionbreak'] = '----- Salt de pàgina -----';
 $string['sectionbreak_help'] = '----- Salt de pàgina -----';
 $string['sectionsnotset'] = 'Heu de seleccionar almenys UNA pregunta per secció. <br />Seccions no seleccionades: {$a}';
 $string['sectiontext'] = 'Etiqueta';
 $string['sectiontext_help'] = 'Això no és una pregunta sinó un text (curt) que es mostrarà per introduir una sèrie de preguntes.';
-$string['selecttheme'] = 'Seleccioneu un tema (css) per usar-lo amb aquesta enquesta.';
+$string['selecttheme'] = 'Seleccioneu un tema (CSS) per usar-lo amb aquesta enquesta.';
 $string['send'] = 'Envia';
 $string['sendemail'] = 'Envia un missatge de correu electrònic';
 $string['sendemail_help'] = 'Envia una còpia de cada tramesa a les adreces de correu electrònic especificades.
@@ -434,6 +436,11 @@ $string['show_nonrespondents'] = 'Els que no han respost';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['subject'] = 'Assumpte';
+$string['submissionnotificationhtmlanon'] = 'Hi ha una <a href="{$a->submissionurl}">tramesa</a> nova a l’enquesta «{$a->name}».';
+$string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> té una <a href="{$a->submissionurl}">tramesa</a> nova a l\'enquesta «{$a->name}» del curs «{$a->coursename}».';
+$string['submissionnotificationsubject'] = 'Tramesa d\'enquesta nova';
+$string['submissionnotificationtextanon'] = 'Hi ha una tramesa nova ({$a->submissionurl}) a l’enquesta «{$a->name}».';
+$string['submissionnotificationtextuser'] = '{$a->username} ({$a->profileurl}) té una tramesa nova ({$a->submissionurl}) a l’enquesta «{$a->name}» al curs «{$a->coursename}».';
 $string['submitoptions'] = 'Opcions de tramesa';
 $string['submitpreview'] = 'Tramet la previsualització';
 $string['submitpreviewcorrect'] = 'Aquesta tramesa seria acceptada com a emplenada correctament.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,12 @@ $string['onlinetext'] = 'Texto online';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Permitir submissões de texto online';
 $string['pluginname'] = 'Submissões de texto online';
+$string['privacy:metadata:assignmentid'] = 'Identificador do trabalho.';
+$string['privacy:metadata:filepurpose'] = 'Ficheiros incorporados no texto de submissão.';
+$string['privacy:metadata:submissionpurpose'] = 'O ID the submissão que hiperliga à submissão do utilizador.';
+$string['privacy:metadata:tablepurpose'] = 'Armazenar texto de submissão para cada tentativa.';
+$string['privacy:metadata:textpurpose'] = 'O texto atual submetido para esta tentativa do trabalho.';
+$string['privacy:path'] = 'Texto de submissão';
 $string['wordlimit'] = 'Limite de palavras';
 $string['wordlimitexceeded'] = 'O limite de palavras para este trabalho é de {$a->limit} palavras e você está a tentar submeter {$a->count} palavras. Por favor, reveja a sua submissão e tente novamente.';
 $string['wordlimit_help'] = 'Se as submissões de texto online estiverem ativadas, este é o número máximo de palavras que cada aluno será autorizado a submeter.';

@@ -1090,6 +1090,8 @@ function quiz_update_open_attempts(array $conditions) {
 
 /**
  * Returns SQL to compute timeclose and timelimit for every attempt, taking into account user and group overrides.
+ * The query used herein is very similar to the one in function quiz_get_user_timeclose, so, in case you
+ * would change either one of them, make sure to apply your changes to both.
  *
  * @param string $redundantwhereclauses extra where clauses to add to the subquery
  *      for performance. These can use the table alias iquiza for the quiz attempts table.
@@ -1206,6 +1208,44 @@ function quiz_get_user_image_options() {
 }
 
 /**
+ * Return an user's timeclose for all quizzes in a course, hereby taking into account group and user overrides.
+ *
+ * @param int $courseid the course id.
+ * @return object An object with of all quizids and close unixdates in this course, taking into account the most lenient
+ * overrides, if existing and 0 if no close date is set.
+ */
+function quiz_get_user_timeclose($courseid) {
+    global $DB, $USER;
+
+    // For teacher and manager/admins return timeclose.
+    if (has_capability('moodle/course:update', context_course::instance($courseid))) {
+        $sql = "SELECT quiz.id, quiz.timeclose AS usertimeclose
+                  FROM {quiz} quiz
+                 WHERE quiz.course = :courseid";
+
+        $results = $DB->get_records_sql($sql, array('courseid' => $courseid));
+        return $results;
+    }
+
+    $sql = "SELECT q.id,
+  COALESCE(v.userclose, v.groupclose, q.timeclose, 0) AS usertimeclose
+  FROM (
+      SELECT quiz.id as quizid,
+             MAX(quo.timeclose) AS userclose, MAX(qgo.timeclose) AS groupclose
+       FROM {quiz} quiz
+  LEFT JOIN {quiz_overrides} quo on quiz.id = quo.quiz AND quo.userid = :userid
+  LEFT JOIN {groups_members} gm ON gm.userid = :useringroupid
+  LEFT JOIN {quiz_overrides} qgo on quiz.id = qgo.quiz AND qgo.groupid = gm.groupid
+      WHERE quiz.course = :courseid
+   GROUP BY quiz.id) v
+       JOIN {quiz} q ON q.id = v.quizid";
+
+    $results = $DB->get_records_sql($sql, array('userid' => $USER->id, 'useringroupid' => $USER->id, 'courseid' => $courseid));
+    return $results;
+
+}
+
+/**
  * Get the choices to offer for the 'Questions per page' option.
  * @return array int => string.
  */
@@ -1281,11 +1321,11 @@ function quiz_question_edit_button($cmid, $question, $returnurl, $contentafteric
             (question_has_capability_on($question, 'edit', $question->category) ||
                     question_has_capability_on($question, 'move', $question->category))) {
         $action = $stredit;
-        $icon = '/t/edit';
+        $icon = 't/edit';
     } else if (!empty($question->id) &&
             question_has_capability_on($question, 'view', $question->category)) {
         $action = $strview;
-        $icon = '/i/info';
+        $icon = 'i/info';
     }
 
     // Build the icon.
@@ -1295,8 +1335,8 @@ function quiz_question_edit_button($cmid, $question, $returnurl, $contentafteric
         }
         $questionparams = array('returnurl' => $returnurl, 'cmid' => $cmid, 'id' => $question->id);
         $questionurl = new moodle_url("$CFG->wwwroot/question/question.php", $questionparams);
-        return '<a title="' . $action . '" href="' . $questionurl->out() . '" class="questioneditbutton"><img src="' .
-                $OUTPUT->pix_url($icon) . '" alt="' . $action . '" />' . $contentaftericon .
+        return '<a title="' . $action . '" href="' . $questionurl->out() . '" class="questioneditbutton">' .
+                $OUTPUT->pix_icon($icon, $action) . $contentaftericon .
                 '</a>';
     } else if ($contentaftericon) {
         return '<span class="questioneditbutton">' . $contentaftericon . '</span>';
@@ -1917,7 +1957,6 @@ class mod_quiz_display_options extends question_display_options {
     }
 }
 
-
 /**
  * A {@link qubaid_condition} for finding all the question usages belonging to
  * a particular quiz.
@@ -1929,6 +1968,41 @@ class qubaids_for_quiz extends qubaid_join {
     public function __construct($quizid, $includepreviews = true, $onlyfinished = false) {
         $where = 'quiza.quiz = :quizaquiz';
         $params = array('quizaquiz' => $quizid);
+
+        if (!$includepreviews) {
+            $where .= ' AND preview = 0';
+        }
+
+        if ($onlyfinished) {
+            $where .= ' AND state = :statefinished';
+            $params['statefinished'] = quiz_attempt::FINISHED;
+        }
+
+        parent::__construct('{quiz_attempts} quiza', 'quiza.uniqueid', $where, $params);
+    }
+}
+
+/**
+ * A {@link qubaid_condition} for finding all the question usages belonging to a particular user and quiz combination.
+ *
+ * @copyright  2018 Andrew Nicols <andrwe@nicols.co.uk>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class qubaids_for_quiz_user extends qubaid_join {
+    /**
+     * Constructor for this qubaid.
+     *
+     * @param   int     $quizid The quiz to search.
+     * @param   int     $userid The user to filter on
+     * @param   bool    $includepreviews Whether to include preview attempts
+     * @param   bool    $onlyfinished Whether to only include finished attempts or not
+     */
+    public function __construct($quizid, $userid, $includepreviews = true, $onlyfinished = false) {
+        $where = 'quiza.quiz = :quizaquiz AND quiza.userid = :quizauserid';
+        $params = [
+            'quizaquiz' => $quizid,
+            'quizauserid' => $userid,
+        ];
 
         if (!$includepreviews) {
             $where .= ' AND preview = 0';
@@ -2136,7 +2210,7 @@ function quiz_add_random_questions($quiz, $addonpage, $categoryid, $number,
                           FROM {quiz_slots}
                          WHERE questionid = q.id)
             ORDER BY id", array($category->id, ($includesubcategories ? '1' : '0')))) {
-            // Take as many of these as needed.
+        // Take as many of these as needed.
         while (($existingquestion = array_shift($existingquestions)) && $number > 0) {
             quiz_add_quiz_question($existingquestion->id, $quiz, $addonpage);
             $number -= 1;
@@ -2315,4 +2389,75 @@ function quiz_prepare_and_start_new_attempt(quiz $quizobj, $attemptnumber, $last
     $transaction->allow_commit();
 
     return $attempt;
+}
+
+/**
+ * Check if the given calendar_event is either a user or group override
+ * event for quiz.
+ *
+ * @param calendar_event $event The calendar event to check
+ * @return bool
+ */
+function quiz_is_overriden_calendar_event(\calendar_event $event) {
+    global $DB;
+
+    if (!isset($event->modulename)) {
+        return false;
+    }
+
+    if ($event->modulename != 'quiz') {
+        return false;
+    }
+
+    if (!isset($event->instance)) {
+        return false;
+    }
+
+    if (!isset($event->userid) && !isset($event->groupid)) {
+        return false;
+    }
+
+    $overrideparams = [
+        'quiz' => $event->instance
+    ];
+
+    if (isset($event->groupid)) {
+        $overrideparams['groupid'] = $event->groupid;
+    } else if (isset($event->userid)) {
+        $overrideparams['userid'] = $event->userid;
+    }
+
+    return $DB->record_exists('quiz_overrides', $overrideparams);
+}
+
+/**
+ * Get quiz attempt and handling error.
+ *
+ * @param int $attemptid the id of the current attempt.
+ * @param int|null $cmid the course_module id for this quiz.
+ * @return quiz_attempt $attemptobj all the data about the quiz attempt.
+ * @throws moodle_exception
+ */
+function quiz_create_attempt_handling_errors($attemptid, $cmid = null) {
+    try {
+        $attempobj = quiz_attempt::create($attemptid);
+    } catch (moodle_exception $e) {
+        if (!empty($cmid)) {
+            list($course, $cm) = get_course_and_cm_from_cmid($cmid, 'quiz');
+            $continuelink = new moodle_url('/mod/quiz/view.php', array('id' => $cmid));
+            $context = context_module::instance($cm->id);
+            if (has_capability('mod/quiz:preview', $context)) {
+                throw new moodle_exception('attempterrorcontentchange', 'quiz', $continuelink);
+            } else {
+                throw new moodle_exception('attempterrorcontentchangeforuser', 'quiz', $continuelink);
+            }
+        } else {
+            throw new moodle_exception('attempterrorinvalid', 'quiz');
+        }
+    }
+    if (!empty($cmid) && $attempobj->get_cmid() != $cmid) {
+        throw new moodle_exception('invalidcoursemodule');
+    } else {
+        return $attempobj;
+    }
 }

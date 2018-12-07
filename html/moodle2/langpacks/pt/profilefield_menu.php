@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'profilefield_menu', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   profilefield_menu
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lista pendente';
+$string['privacy:metadata:profilefield_menu:data'] = 'Os dados de utilizador armazenados.';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'O formato dos dados de utilizador.';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'O ID do campo de perfil';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Informação adicional do utilizador é armazenada aqui.';
+$string['privacy:metadata:profilefield_menu:userid'] = 'O ID do utilizador cujos dados são armazenados pelo módulo Lista pendente.';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_random', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -44,6 +44,7 @@ $string['numofselfallocatedsubmissions'] = 'Auto-attribution de {$a} travaux rem
 $string['numperauthor'] = 'par travail remis';
 $string['numperreviewer'] = 'par évaluateur';
 $string['pluginname'] = 'Attribution aléatoire';
+$string['privacy:metadata'] = 'Le plugin Attribution aléatoire n\'enregistre aucune donnée personnelle. Les données personnelles indiquant qui évalue qui sont enregistrées par le module Atelier ; elles forment la base pour exporter les informations de l\'évaluation.';
 $string['randomallocationdone'] = 'Attribution aléatoire effectuée';
 $string['removecurrentallocations'] = 'Supprimer les attributions actuelles';
 $string['resultnomorepeers'] = 'Il n\'y a plus de pair disponible';

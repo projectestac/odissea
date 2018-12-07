@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'pt', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_atto', language 'pt', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'Não foi possível ligar ao servidor. Se submeter esta página agora, as alterações podem ser perdidas.';
 $string['autosavefrequency'] = 'Frequência da gravação automática';
 $string['autosavefrequency_desc'] = 'Este é o número de segundos entre as tentativas de gravação automática. O Atto irá guardar automaticamente o texto no editor de acordo com esta definição, para que o texto possa ser recuperado automaticamente quando o mesmo utilizador voltar ao mesmo formulário.';
+$string['autosaves'] = 'Informações sobre Guardar automático do editor';
 $string['autosavesucceeded'] = 'Rascunho guardado';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -40,6 +41,10 @@ $string['errortextrecovery'] = 'Infelizmente a versão de rascunho não pôde se
 $string['infostatus'] = 'Informação';
 $string['pluginname'] = 'Editor HTML Atto';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['privacy:metadata:database:atto_autosave'] = 'Rascunhos do editor de texto guardados automaticamente.';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'O texto guardado.';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'Data/hora de modificação do conteúdo';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'ID do utilizador dos dados guardados.';
 $string['recover'] = 'Recuperar';
 $string['settings'] = 'Configurações da barra de ferramentas Atto';
 $string['subplugintype_atto'] = 'Módulo Atto';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'block_blog_recent', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   block_blog_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Τελευταίες καταχωρήσεις ιστολογίου';
+$string['blog_recent:addinstance'] = 'Προσθήκη ενός νέου μπλοκ: πρόσφατες αναρτήσεις (ιστολογίου)';
+$string['pluginname'] = 'Πρόσφατες αναρτήσεις (ιστολογίου)';
+$string['privacy:metadata'] = 'Το μπλοκ πρόσφατες αναρτήσεις (ιστολογίου) εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';

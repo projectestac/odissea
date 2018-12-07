@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_match', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_match
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -43,5 +43,6 @@ $string['pluginnameediting'] = 'Editing a Matching question';
 $string['pluginname_help'] = 'Matching questions require the respondent to correctly match a list of names or statements (questions) to another list of names or statements (answers).';
 $string['pluginname_link'] = 'question/type/match';
 $string['pluginnamesummary'] = 'The answer to each of a number of sub-question must be selected from a list of possibilities.';
+$string['privacy:metadata'] = 'The Matching question type plugin does not store any personal data.';
 $string['shuffle'] = 'Shuffle';
 $string['shuffle_help'] = 'If enabled, the order of the statements (answers) is randomly shuffled for each attempt, provided that "Shuffle within questions" in the activity settings is also enabled.';

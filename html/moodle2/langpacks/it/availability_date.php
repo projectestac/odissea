@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_date', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_date
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['full_from_date'] = 'Accedere a partire dal <strong>{$a}</strong>';
 $string['full_until'] = 'Accedere prima del <strong>{$a}</strong>';
 $string['full_until_date'] = 'Accedere prima della fine del <strong>{$a}</strong>';
 $string['pluginname'] = 'Criterio basato sulla data';
+$string['privacy:metadata'] = 'l plugin "criterio di accesso basato sulla data" non memorizza dati personali.';
 $string['short_from'] = 'Accesso consentito dal <strong>{$a}</strong>';
 $string['short_from_date'] = 'Accesso consentito dal <strong>{$a}</strong>';
 $string['short_until'] = 'Accesso consentito fino al <strong>{$a}</strong>';

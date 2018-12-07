@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_webservice', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_webservice', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_webservice
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = 'この認証方法はウェブサービスクライアントによる排他利用アカウントのため使用されるべきです。';
 $string['pluginname'] = 'ウェブサービス認証';
+$string['privacy:metadata'] = 'ウェブサービス認証プラグインはどのような個人データも保存しません。';

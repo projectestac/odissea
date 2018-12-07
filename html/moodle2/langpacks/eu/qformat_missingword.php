@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qformat_missingword', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   qformat_missingword
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,3 +30,4 @@ $string['endanswernotfound'] = 'Ezin izan da beharrezkoa den "}" karakterea aurk
 $string['noanswerfound'] = 'Ez da erantzunik aurkitu galderan';
 $string['pluginname'] = 'Hitz galdua formatua';
 $string['pluginname_help'] = 'Hitz galdua motako galdera-formatua testu-fitxategi gisa inporta daiteke.';
+$string['privacy:metadata'] = 'Hitz galdua formatua galdera-formatu pluginak ez du datu pertsonalik biltzen.';

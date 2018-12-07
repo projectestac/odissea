@@ -314,7 +314,7 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
 
     /**
      *
-     * @return String Return the general feedback text in a single string so WIRIS
+     * @return String Return the general feedback text in a single string so Wiris
      * quizzes can extract the variable placeholders.
      */
     public function join_feedback_text() {

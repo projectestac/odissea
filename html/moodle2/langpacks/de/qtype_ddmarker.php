@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -73,6 +73,7 @@ $string['pluginname_help'] = '"Drag-and-drop- Markierungen" benötigen Platzhalt
 $string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hintergrundbild gezogen.';
 $string['previewareaheader'] = 'Vorschau';
 $string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Beschriftungstexte für die Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
+$string['privacy:metadata'] = 'Das Drag-and-Drop Markierungen Frageformat Plugin speichert keine persönlichen Daten.';
 $string['refresh'] = 'Vorschau erneuern';
 $string['shape'] = 'Umriss';
 $string['shape_circle'] = 'Kreis';

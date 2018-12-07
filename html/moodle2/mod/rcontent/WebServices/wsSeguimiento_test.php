@@ -151,7 +151,7 @@ if($params->idUsuario && $params->idContenidoLMS && $params->idCentro){
 			$return = get_ResultadoDetalleExtendido($params);
 		}
 		print_object($return);
-	} catch (Exception $e){
+	} catch (Throwable $e){
 		print_object($e);
 	}
 }

@@ -200,7 +200,7 @@ if (!$paged) {
 $formattributes = array('action' => $CFG->wwwroot.'/user/action_redir.php', 'method' => 'post', 'id' => 'participantsform');
 echo html_writer::start_tag('form', $formattributes);
 echo html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'sesskey', 'value' => sesskey()));
-echo html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'returnto', 'value' => s($PAGE->url->out(false))));
+echo html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'returnto', 'value' => s(format_string($PAGE->url->out(false)))));
 
 // Setup submissions table.
 $table = new flexible_table('mod-block-completion-progress-overview');
@@ -253,6 +253,7 @@ if ($sortbyprogress) {
 
 // Build array of user information.
 $rows = array();
+$exclusions = block_completion_progress_exclusions($course->id);
 for ($i = $startuser; $i < $enduser; $i++) {
     $picture = $OUTPUT->user_picture($users[$i], array('course' => $course->id));
     $namelink = html_writer::link($CFG->wwwroot.'/user/view.php?id='.$users[$i]->id.'&course='.$course->id, fullname($users[$i]));
@@ -261,7 +262,7 @@ for ($i = $startuser; $i < $enduser; $i++) {
     } else {
         $lastonline = userdate($users[$i]->lastonlinetime);
     }
-    $useractivities = block_completion_progress_filter_visibility($activities, $users[$i]->id, $course->id);
+    $useractivities = block_completion_progress_filter_visibility($activities, $users[$i]->id, $course->id, $exclusions);
     if (!empty($useractivities)) {
         $completions = block_completion_progress_completions($useractivities, $users[$i]->id, $course, $users[$i]->submissions);
         $progressbar = block_completion_progress_bar($useractivities, $completions, $config, $users[$i]->id, $course->id,

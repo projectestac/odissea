@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_db', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   auth_db
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -39,16 +39,16 @@ $string['auth_dbfieldpass'] = 'Nom du champ contenant les mots de passe';
 $string['auth_dbfieldpass_key'] = 'Champ mot de passe';
 $string['auth_dbfielduser'] = 'Nom du champ contenant les noms d\'utilisateurs';
 $string['auth_dbfielduser_key'] = 'Champ nom d\'utilisateur';
-$string['auth_dbhost'] = 'Ordinateur hébergeant la base de données. Si vous utilisez ODBC, veuillez utiliser un entrée système DSN.';
+$string['auth_dbhost'] = 'Ordinateur hébergeant le serveur de base de données. Si vous utilisez ODBC, indiquez un entrée système DSN. Si vous utilisez PDO, indiquez une entrée PDO DSN.';
 $string['auth_dbhost_key'] = 'Serveur';
 $string['auth_dbinsertuser'] = 'Utilisateur {$a->name} id {$a->id} inséré';
 $string['auth_dbinsertuserduplicate'] = 'Erreur lors de l\'insertion de l\'utilisateur {$a->username}. Cet utilisateur a déjà été créé via le plugin « {$a->auth} ».';
 $string['auth_dbinsertusererror'] = 'Erreur lors de l\'insertion de l\'utilisateur {$a}';
-$string['auth_dbname'] = 'Nom de la base de données. À ne pas renseigner si vous utiliser un DSN ODBC.';
+$string['auth_dbname'] = 'Nom de la base de données. À ne pas renseigner si vous utiliser un DSN ODBC. Ne pas renseigner non plus si votre PDO DSN contient déjà le nom de la base de données.';
 $string['auth_dbname_key'] = 'Nom de la base de données';
 $string['auth_dbpass'] = 'Mot de passe pour ce compte';
 $string['auth_dbpass_key'] = 'Mot de passe';
-$string['auth_dbpasstype'] = '<p>Indiquez le type de hachage utilisé pour le champ mot de passe. L\'algorithme MD5 est utile pour une utilisation conjointe avec d\'autres applications Web telles que PostNuke.</p> <p>Utilisez « Interne » si vous voulez que la base de données externe gère les noms d\'utilisateur et les adresses de courriel, mais que Moodle gère les mots de passe. Dans ce cas, la base de données externe <i>doit</i> comprendre un champ contenant une adresse de courriel, et vous devez lancer régulièrement les scripts admin/cron.php et auth/db/cli/sync_users.php. Moodle enverra alors par courriel un mot de passe temporaire aux nouveaux utilisateurs.</p>';
+$string['auth_dbpasstype'] = '<p>Indiquez le type de hachage utilisé pour le champ mot de passe.</p> <p>Utilisez « Interne » si vous voulez que la base de données externe gère les noms d\'utilisateur et les adresses de courriel, mais que Moodle gère les mots de passe. Dans ce cas, la base de données externe <i>doit</i> comprendre un champ contenant une adresse de courriel, et vous devez lancer régulièrement les scripts admin/cron.php et auth/db/cli/sync_users.php. Moodle enverra alors par courriel un mot de passe temporaire aux nouveaux utilisateurs.</p>';
 $string['auth_dbpasstype_key'] = 'Format du mot de passe';
 $string['auth_dbreviveduser'] = 'Utilisateur {$a->name} id {$a->id} réactivé';
 $string['auth_dbrevivedusererror'] = 'Erreur lors de la réactivation de l\'utilisateur {$a}';
@@ -59,10 +59,13 @@ $string['auth_dbsuspenduser'] = 'Utilisateur {$a->name} id {$a->id} désactivé'
 $string['auth_dbsuspendusererror'] = 'Erreur lors de la désactivation de l\'utilisateur {$a}';
 $string['auth_dbsybasequoting'] = 'Utiliser le mode Sybase pour les apostrophes';
 $string['auth_dbsybasequotinghelp'] = 'Style Sybase pour l\'échappement des apostrophes. Ce réglage est nécessaire pour les bases de données Oracle, MS SQL et d\'autres types. Ne pas utiliser avec MySQL !';
+$string['auth_dbsyncuserstask'] = 'Synchroniser les tâches utilisateur';
 $string['auth_dbtable'] = 'Nom de la table dans la base de données';
 $string['auth_dbtable_key'] = 'Table';
 $string['auth_dbtype'] = 'Type de la base de données (pour plus de détails, voir la <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">documentation de ADOdb</a>)';
 $string['auth_dbtype_key'] = 'Base de données';
+$string['auth_dbupdateusers'] = 'Modifier les utilisateurs';
+$string['auth_dbupdateusers_description'] = 'Insérer les nouveaux utilisateurs et modifier les utilisateurs existants.';
 $string['auth_dbupdatinguser'] = 'Modification de l\'utilisateur {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Compte avec accès en lecture à la base de données';
 $string['auth_dbuser_key'] = 'Utilisateur de la base de données';
@@ -70,3 +73,4 @@ $string['auth_dbusernotexist'] = 'Impossible de modifier l\'utilisateur {$a}, qu
 $string['auth_dbuserstoadd'] = 'Enregistrements utilisateurs à ajouter : {$a}';
 $string['auth_dbuserstoremove'] = 'Enregistrements utilisateurs à supprimer : {$a}';
 $string['pluginname'] = 'Base de données externe';
+$string['privacy:metadata'] = 'Le plugin d\'authentification Base de données externe n\'enregistre aucune donnée personnelle.';

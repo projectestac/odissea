@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_comments', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_comments', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_comments
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['default_help'] = 'Die gewählte Methode für die Abgabe von Lösungen w
 $string['enabled'] = 'Kommentare zur Lösung';
 $string['enabled_help'] = 'Teilnehmer/innen können nach der Aktivierung zur abgegebenen Lösung einen Kommentar hinterlegen, um z.B. ergänzende Hinweise zu den als Lösung abgegenen Dateien erstellen zu können.';
 $string['pluginname'] = 'Abgabekommentare';
+$string['privacy:metadata:commentpurpose'] = '';

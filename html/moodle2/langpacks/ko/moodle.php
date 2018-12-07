@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ko', branch 'MOODLE_32_STABLE'
+ * Strings for component 'moodle', language 'ko', branch 'MOODLE_34_STABLE'
  *
  * @package   moodle
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -494,6 +494,7 @@ $string['deleted'] = '지워짐';
 $string['deletedactivity'] = '{$a} 지워짐';
 $string['deletedcourse'] = '{$a} 이 완전히 삭제됨';
 $string['deletednot'] = '{$a} 를 지울 수 없습니다!';
+$string['deletepicture'] = '삭제';
 $string['deletesection'] = '부문 삭제';
 $string['deleteselected'] = '선택 사항 삭제';
 $string['deleteselectedkey'] = '선택된 키 삭제';
@@ -1116,11 +1117,16 @@ $string['missingusername'] = '빠짐: 사용자 아이디';
 $string['modchooserdisable'] = '활동 선택 끔';
 $string['modchooserenable'] = '활동 선택 켬';
 $string['moddoesnotsupporttype'] = '{$a->modname} 모듈은 {a->type} 유형의 업로드를 지원하지 않음';
+$string['modhide'] = '감추기';
 $string['modified'] = '수정됨';
+$string['modshow'] = '보기';
 $string['moduleintro'] = '모듈 소개';
 $string['modulesetup'] = '설정하기 : 모듈 테이블';
 $string['modulesuccess'] = '{$a} 테이블이 바르게 설정되었습니다.';
 $string['modulesused'] = '사용된 모듈';
+$string['modvisible'] = '이용가능 상태';
+$string['modvisiblehiddensection'] = '이용가능 상태';
+$string['modvisiblewithstealth'] = '이용가능 상태';
 $string['month'] = '개월';
 $string['months'] = '개월';
 $string['moodledocs'] = '문서 창고';

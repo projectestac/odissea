@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'el', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol', language 'el', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,26 +26,26 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Διαθέσιμα πρόσθετα εγγραφής μαθήματος';
-$string['addinstance'] = 'Προσθήκη μεθόδου';
+$string['addinstance'] = 'Πρόσθεσε μέθοδο';
 $string['addinstanceanother'] = 'Προσθήκη μεθόδου και δημιουργία μιας άλλης';
 $string['ajaxnext25'] = 'Επόμενοι 25 ...';
 $string['ajaxoneuserfound'] = 'Βρέθηκε ένας χρήστης';
 $string['ajaxxusersfound'] = 'Βρέθηκαν {$a} χρήστες';
 $string['assignnotpermitted'] = 'Δεν έχετε δικαίωμα ή δεν μπορείτε να αναθέσετε ρόλους σε αυτό το μάθημα.';
-$string['bulkuseroperation'] = 'Μαζικές λειτουργίες χρήστη';
+$string['bulkuseroperation'] = 'Χονδρικές λειτουργίες χρήστη';
 $string['configenrolplugins'] = 'Παρακαλώ επιλέξτε όλα τα απαιτούμενα πρόσθετα και έπειτα ταξινομείστε τα στην κατάλληλη σειρά.';
 $string['custominstancename'] = 'Όνομα προσαρμοσμένου στιγμιότυπου';
-$string['defaultenrol'] = 'Προσθήκη στιγμιότυπου στα νέα μαθήματα';
+$string['defaultenrol'] = 'Προσθήκη παραδείγματος στα νέα μαθήματα';
 $string['defaultenrol_desc'] = 'Είναι δυνατό να προσθέσετε αυτό το πρόσθετο σε όλα τα νέα μαθήματα από προεπιλογή.';
-$string['deleteinstanceconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής "{$a->name}". Και οι {$a->users} χρήστες που έκαναν εγγραφή στο μάθημα χρησιμοποιώντας αυτή την μέθοδο θα ακυρωθεί η εγγραφή τους και θα διαγραφούν όλα τα δεδομένα τους που σχετίζονται με το μάθημα όπως βαθμοί χρήστη, συμμετοχή σε ομάδες ή συνδρομές σε ομάδες συζητήσεων .
+$string['deleteinstanceconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής "{$a->name}". Και οι {$a->users} χρήστες που είναι τώρα εγγεγραμμένοι στο μάθημα χρησιμοποιώντας αυτή την μέθοδο εγγραφής θα αποεγγραφούν και όλα τα δεδομένα τους που σχετίζονται με το μάθημα όπως οι βαθμοί του χρήστη, η συμμετοχή σε ομάδες, τα forum subscriptions κλπ θα διαγραφούν επίσης.
 
-Είστε βεβαιοι ότι θέλετε να συνεχίσετε;';
-$string['deleteinstancenousersconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής "{$a->name}". Είστε βεβαιοι  ότι θέλετε να συνεχίσετε;';
+Είστε σίγουρος/η ότι θέλετε να συνεχίσετε;';
+$string['deleteinstancenousersconfirm'] = 'Πρόκειται να διαγράψετε την μέθοδο εγγραφής "{$a->name}". Είστε σίγουρος/η ότι θέλετε να συνεχίσετε;';
 $string['durationdays'] = '{$a} ημέρες';
 $string['editenrolment'] = 'Επεξεργασία εγγραφής';
 $string['enrol'] = 'Εγγραφή';
 $string['enrolcandidates'] = 'Μη εγγεγραμμένοι χρήστες';
-$string['enrolcohort'] = 'Εγγραφή ομάδας χρηστών';
+$string['enrolcohort'] = 'Εγγραφή συνόλων χρηστών';
 $string['enrolcohortusers'] = 'Εγγραφή χρηστών';
 $string['enrollednewusers'] = 'Εγγράφηκαν επιτυχώς {$a} νέοι χρήστες';
 $string['enrolledusers'] = 'Εγγεγραμμένοι χρήστες';
@@ -55,36 +55,36 @@ $string['enrolmentnew'] = 'Νέα εγγραφή στο {$a}';
 $string['enrolmentnewuser'] = 'Ο σπουδαστής {$a->user} έκανε εγγραφή στο μάθημα {$a->course}';
 $string['enrolmentoptions'] = 'Επιλογές εγγραφής';
 $string['enrolments'] = 'Εγγραφές';
-$string['enrolnotpermitted'] = 'Δεν έχετε δικαίωμα ή δεν επιτρέπεται να εγγράψετε κάποιον σε αυτό το μάθημα';
-$string['enrolperiod'] = 'Διάρκεια εγγραφής';
+$string['enrolnotpermitted'] = 'Δεν έχετε άδεια ή δεν επιτρέπεται να εγγράψετε κάποιον σε αυτό το μάθημα';
+$string['enrolperiod'] = 'Διάρκεια Εγγραφών';
 $string['enroltimecreated'] = 'Δημιουργία εγγραφής';
 $string['enroltimeend'] = 'Λήξη εγγραφής';
-$string['enroltimestart'] = 'Έναρξη εγγραφής';
+$string['enroltimestart'] = 'Η εγγραφή ξεκινά';
 $string['enrolusage'] = 'Στιγμιότυπα / εγγραφές';
 $string['enrolusers'] = 'Εγγραφή χρηστών';
-$string['enrolxusers'] = 'Εγγραφή {$a} χρηστών';
+$string['enrolxusers'] = 'Εγγραφή  {$a} χρηστών';
 $string['errajaxfailedenrol'] = 'Αποτυχία εγγραφής χρήστη';
-$string['errajaxsearch'] = 'Σφάλμα κατά την αναζήτηση χρηστών';
+$string['errajaxsearch'] = 'Σφάλμα κατά την αναζήτηση των χρηστών';
 $string['erroreditenrolment'] = 'Προέκυψε σφάλμα κατά την επεξεργασία εγγραφής κάποιου χρήστη';
-$string['errorenrolcohort'] = 'Σφάλμα κατά τη δημιουργία στιγμιότυπου συγχρονισμού εγγραφής ομάδας χρηστών σε αυτό το μάθημα.';
+$string['errorenrolcohort'] = 'Σφάλμα κατά τη εγγραφή, μέσω συγχρονισμού τρεχόντων μελών συνόλου χρηστών προς συμμετέχοντες, σε αυτό το μάθημα.';
 $string['errorenrolcohortusers'] = 'Σφάλμα κατά την εγγραφή μέλων ομάδας χρηστών σε αυτό το μάθημα.';
 $string['eventuserenrolmentcreated'] = 'Ο χρήστης γράφτηκε στο μάθημα';
-$string['eventuserenrolmentdeleted'] = 'Ακύρωση εγγραφής χρήστη στο μάθημα';
+$string['eventuserenrolmentdeleted'] = 'Ο χρήστης ξεγράφτηκε από το μάθημα';
 $string['eventuserenrolmentupdated'] = 'Ενημέρωση ακύρωσης εγγραφής χρήστη';
 $string['expirynotify'] = 'Ειδοποίηση πριν από τη λήξη της εγγραφής';
 $string['expirythreshold_help'] = 'Πόσο καιρό πριν από την λήξης της εγγραφής θα πρέπει να ενημερώνονται χρήστες;';
-$string['extremovedaction'] = 'Ενέργεια εξωτερικής ακύρωσης εγγραφής';
-$string['extremovedaction_help'] = 'Επιλέξτε ενέργεια που θα εκτελεστεί όταν η εγγραφή χρήστη δεν υπάρχει στην εξωτερική πηγή εγγραφής. Παρακαλώ σημειώστε ότι ορισμένα δεδομένα χρήστη και ρυθμίσεις εκκαθαρίζονται από το μάθημα κατά την ακύρωση εγγραφής στο μάθημα.';
+$string['extremovedaction'] = 'Ενέργεια εξωτερικής απεγγραφής';
+$string['extremovedaction_help'] = 'Επιλέξτε ενέργεια για εκτέλεση όταν η εγγραφή χρήστη εξαφανίζεται από την εξωτερική πηγή εγγραφής. Παρακαλώ σημειώστε ότι ορισμένα δεδομένα χρήστη και οι ρυθμίσεις εκκαθαρίζονται από το μάθημα κατά τη διάρκεια απεγγραφής από το μάθημα.';
 $string['extremovedkeep'] = 'Κρατήστε τον χρήστη εγγεγραμμένο';
 $string['extremovedsuspend'] = 'Απενεργοποίηση εγγραφής χρήστών στο μάθημα';
 $string['extremovedsuspendnoroles'] = 'Απενεργοποίηση εγγραφής χρήστών στο μάθημα και αφαίρεση ρόλων';
-$string['extremovedunenrol'] = 'Ακύρωση εγγραφής χρήστη στο μάθημα';
+$string['extremovedunenrol'] = 'Απεγγραφή χρήστη από το μάθημα';
 $string['finishenrollingusers'] = 'Τέλος εγγραφής χρηστών';
 $string['foundxcohorts'] = 'Βράθηκαν {$a} ομάδες χρηστών';
 $string['instanceadded'] = 'Η μέθοδος προστέθηκε';
 $string['instanceeditselfwarning'] = 'Προειδοποίηση:';
 $string['invalidrole'] = 'Μη επιτρεπτός ρόλος';
-$string['manageenrols'] = 'Διαχείριση πρόσθετων εγγραφών';
+$string['manageenrols'] = 'Διαχείριση πρόσθετων για εγγραφές';
 $string['manageinstance'] = 'Διαχείριση';
 $string['nochange'] = 'Καμία αλλαγή';
 $string['noexistingparticipants'] = 'Δεν υπάρχουν συμμετέχοντες';
@@ -92,6 +92,7 @@ $string['noguestaccess'] = 'Οι επισκέπτες δεν έχουν πρόσ
 $string['none'] = 'Κανένας';
 $string['notenrollable'] = 'Δεν μπορείτε να εγγραφείτε σε αυτό το μάθημα προς το παρόν';
 $string['notenrolledusers'] = 'Άλλοι χρήστες';
+$string['otheruserdesc'] = 'Οι παρακάτω χρήστες δεν είναι εγγεγραμένοι στο μάθημα αλλά έχουν ρόλους, κληρονομημένους ή από ανάθεση σε αυτό.';
 $string['participationactive'] = 'Ενεργός';
 $string['participationstatus'] = 'Κατάσταση';
 $string['participationsuspended'] = 'Ανεστάλη';
@@ -108,10 +109,10 @@ $string['testsettings'] = 'Δοκιμαστικές ρυθμίσεις';
 $string['totalenrolledusers'] = '{$a} εγγεγραμμένοι χρήστες';
 $string['totalotherusers'] = '{$a} άλλοι χρήστες';
 $string['unenrol'] = 'Ακύρωση εγγραφής';
-$string['unenrolconfirm'] = 'Είστε βεβαιοι οτι θεέλετε να ακυρώσετε την εγγραφή του χρήστη "{$a->user}" στο μάθημα "{$a->course}";';
-$string['unenrolme'] = 'Ακύρωση της εγγραφής μου στο μάθημα {$a}';
-$string['unenrolnotpermitted'] = 'Δεν έχετε δικαίωμα ή δεν μπορείτε να ακυρώσετε την εγγραφή αυτού του χρήστη σε αυτό το μάθημα.';
-$string['unenrolroleusers'] = 'Ακύρωση εγγραφής χρηστών';
+$string['unenrolconfirm'] = 'Θέλετε σίγουρα να διαγράψετε τον χρήστη  "{$a->user}" από το μάθημα "{$a->course}";';
+$string['unenrolme'] = '{$a} - ακύρωση της εγγραφής μου';
+$string['unenrolnotpermitted'] = 'Δεν έχετε άδεια ή δεν μπορείτε να ξεγράψετε αυτόν το χρήστη από αυτό το μάθημα.';
+$string['unenrolroleusers'] = 'Ακύρωση εγγραφής φοιτητών';
 $string['unlimitedduration'] = 'Απεριόριστος';
 $string['usersearch'] = 'Αναζήτηση';
 $string['withselectedusers'] = 'Με επιλεγμένους χρήστες';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_assignmentupgrade', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_assignmentupgrade
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -45,6 +45,7 @@ $string['notsupported'] = '';
 $string['notupgradedintro'] = 'This page lists the assignments created with an older version of Moodle that have not been upgraded to the new assignment module in Moodle 2.3. Not all assignments can be upgraded - if they were created with a custom assignment subtype, then that subtype will need to be upgraded to the new assignment plugin format in order to complete the upgrade.';
 $string['notupgradedtitle'] = 'Assignments not upgraded';
 $string['pluginname'] = 'Assignment upgrade helper';
+$string['privacy:metadata:preference:perpage'] = 'The assignment upgrade records per page preference set for the user.';
 $string['select'] = 'Select';
 $string['submissions'] = 'Submissions';
 $string['supported'] = 'Upgrade';

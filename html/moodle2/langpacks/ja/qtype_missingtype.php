@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_missingtype', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_missingtype
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,4 +34,5 @@ $string['missingqtypewarning'] = '現在、この問題タイプはシステム�
 $string['pluginname'] = 'タイプ不明';
 $string['pluginnameadding'] = 'このシステムにインストールされていない問題タイプの追加';
 $string['pluginnameediting'] = 'このシステムにインストールされていない問題タイプの編集';
+$string['privacy:metadata'] = 'ミッシングタイプ問題タイププラグインはどのような個人データも保存しません。';
 $string['warningmissingtype'] = '<b>この問題タイプはあなたのMoodleにまだインストールされていません。<br />Moodle管理者にご連絡ください。</b>';

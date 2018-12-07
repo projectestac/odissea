@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodleemoticon', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tinymce_moodleemoticon', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tinymce_moodleemoticon
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'Insérer binette';
 $string['pluginname'] = 'Insérer binette';
+$string['privacy:metadata'] = 'Le plugin TinyMCE Insérer binette n\'enregistre aucune donnée personnelle.';
 $string['requireemoticon'] = 'Nécessite le filtre de binettes';
 $string['requireemoticon_desc'] = 'Si ce réglage est activé, le bouton des binettes n\'est visible que si le filtre de binettes est activé dans le contexte de l\'éditeur.';

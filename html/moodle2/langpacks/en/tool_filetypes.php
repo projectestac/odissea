@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_filetypes', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_filetypes
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,7 @@ The list of icons is taken from the /pix/f directory inside your Moodle installa
 $string['mimetype'] = 'MIME type';
 $string['mimetype_help'] = 'MIME type associated with this file type, e.g. \'application/x-mobipocket-ebook\'';
 $string['pluginname'] = 'File types';
+$string['privacy:metadata'] = 'The File types plugin does not store any personal data.';
 $string['revert'] = 'Restore {$a} to Moodle defaults';
 $string['revert_confirmation'] = 'Are you sure you want to restore <strong>.{$a}</strong> to Moodle defaults, discarding your changes?';
 $string['revertfiletype'] = 'Restore a file type';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'repository_recent', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   repository_recent
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,5 +30,6 @@ $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
 $string['notitle'] = 'Izenbururik gabe';
 $string['pluginname'] = 'Azken fitxategiak';
 $string['pluginname_help'] = 'Oraingo erabiltzaileak duela gutxi erabilitako fitxategiak';
+$string['privacy:metadata'] = 'Azken fitxategiak biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['recentfilesnumber'] = 'Azken fitxategi-kopurua';
 $string['recent:view'] = 'Ikusi azken fitxategien biltegi-plugina';

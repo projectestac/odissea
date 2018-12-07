@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tag', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   tag
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'Offizielle Schlagwörter hinzugefügt';
-$string['addedotag'] = '\'{$a}\' wurde als offizielles Schlagwort hinzugefügt.';
 $string['addotags'] = 'Offizielle Schlagwörter hinzufügen';
 $string['addtagcoll'] = 'Schlagwortgruppe hinzufügen';
 $string['addtagtomyinterests'] = '\'{$a}\' zu meinen Interessen hinzufügen';
@@ -90,7 +89,6 @@ $string['name'] = 'Schlagwort';
 $string['namesalreadybeeingused'] = 'Schlagwörter bereits benutzt';
 $string['nameuseddocombine'] = 'Dieses Schlagwort wird bereits verwendet. Möchten Sie die Schlagwörter verbinden?';
 $string['newcollnamefor'] = 'Neuer Name für Schlagwortgruppe {$a}';
-$string['newname'] = 'Neues Schlagwort';
 $string['newnamefor'] = 'Neuer Name für Schlagwort {$a}';
 $string['nextpage'] = 'Mehr';
 $string['noresultsfor'] = 'Kein Suchergebnis für \'{$a}\'';
@@ -106,6 +104,19 @@ $string['page-tag-manage'] = 'Schlagwortverwaltungsseite';
 $string['page-tag-search'] = 'Schlagwortsuchseite';
 $string['page-tag-x'] = 'Alle Schlagwortseiten';
 $string['prevpage'] = 'Zurück';
+$string['privacy:metadata:tag'] = 'Die Details jedes eindeutigen Schlagworts werden zusammen mit dessen Beschreibung und anderen verwandten Informationen gespeichert.';
+$string['privacy:metadata:tag:description'] = 'Beschreibung zum Schlagwort';
+$string['privacy:metadata:tag:flag'] = 'Ob ein Schlagwort als unangemessen gekennzeichnet wurde.';
+$string['privacy:metadata:taginstance'] = 'Verknüpfung zwischen jedem Schlagwort und dem Verwendungsort';
+$string['privacy:metadata:taginstance:ordering'] = 'Relativer Rang dieses Schlagworts';
+$string['privacy:metadata:taginstance:tagid'] = 'Link zum Schlagwort';
+$string['privacy:metadata:taginstance:timecreated'] = 'Zeitpunkt, an dem das Ziel mit dem Schlagwort verlinkt wurde';
+$string['privacy:metadata:taginstance:timemodified'] = 'Zeitpunkt, an dem dieses Schlagwort für das Ziel verändert wurde';
+$string['privacy:metadata:taginstance:tiuserid'] = 'Wo gemeinsam genutzter Inhalt von Personen individuell gekennzeichnet werden kann, wird der Besitzer der Schlagwort-Instanz gespeichert.';
+$string['privacy:metadata:tag:name'] = 'Name des Tags - normalisierte Version des Tags';
+$string['privacy:metadata:tag:rawname'] = 'Name des Schlagworts - dies ist der Anzeigename';
+$string['privacy:metadata:tag:timemodified'] = 'Zeitpunkt, an dem das Schlagwort zuletzt verändert wurde';
+$string['privacy:metadata:tag:userid'] = 'Person, die das Schlagwort angelegt hat';
 $string['ptags'] = 'Nutzerdefinierte Schlagwörter (kommagetrennt)';
 $string['relatedblogs'] = 'Neue Blogeinträge';
 $string['relatedtags'] = 'Verwandte Schlagwörter';
@@ -155,13 +166,8 @@ $string['taggedwith'] = 'verschlagwortet mit \'{$a}\'';
 $string['tags'] = 'Schlagwörter';
 $string['tagsaredisabled'] = 'Schlagwörter sind nicht erlaubt';
 $string['tagtype'] = 'Schlagworttyp';
-$string['tagtype_default'] = 'Voreinstellung';
-$string['tagtype_official'] = 'Offiziell';
 $string['thingstaggedwith'] = '"{$a->name}" ist {$a->count} Mal benutzt';
 $string['thingtaggedwith'] = '"{$a->name}" wird bereits benutzt';
-$string['thistaghasnodesc'] = 'Das Schlagwort hat noch keine Beschreibung';
 $string['timemodified'] = 'Verändert';
 $string['typechanged'] = 'Schlagworttyp geändert';
-$string['updated'] = 'Aktualisiert';
 $string['updatetag'] = 'Aktualisieren';
-$string['withselectedtags'] = 'Mit ausgewählten Schlagwörtern...';

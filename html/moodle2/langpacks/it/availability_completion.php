@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'availability_completion', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   availability_completion
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -36,6 +36,7 @@ $string['option_fail'] = 'deve risultare completata senza la sufficienza';
 $string['option_incomplete'] = 'non deve essere spuntata come completata';
 $string['option_pass'] = 'deve risultare completata con la sufficienza';
 $string['pluginname'] = 'Criterio basato sul completamento di attività';
+$string['privacy:metadata'] = 'Il plugin "criterio di accesso basato sul completamento di attività" non memorizza dati personali.';
 $string['requires_complete'] = 'L\'attività <strong>{$a}</strong> deve risultare spuntata come completata';
 $string['requires_complete_fail'] = 'L\'attività <strong>{$a}</strong> deve risultare completata senza la sufficienza';
 $string['requires_complete_pass'] = 'L\'attività <strong>{$a}</strong> deve risultare completata con la sufficienza';

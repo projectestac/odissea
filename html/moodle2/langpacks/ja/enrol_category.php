@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'ja', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_category', language 'ja', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_category
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['category:config'] = 'カテゴリ登録インスタンスを設定する';
 $string['category:synchronised'] = 'ロール割り当てをコース登録に同期する';
 $string['pluginname'] = 'カテゴリ登録';
-$string['pluginname_desc'] = 'カテゴリ登録はロール割り当てによりコースカテゴリレベルで登録する旧式の方法です。代わりにコーホート同期の使用をお勧めします。';
+$string['pluginname_desc'] = 'カテゴリ登録プラグインはカテゴリコンテクスト内でケイパビリティ「enrol/category:synchronised」が許可されるロールすべてのロール割り当てを同期します。';
+$string['privacy:metadata'] = 'カテゴリ登録プラグインはどのような個人データも保存しません。';

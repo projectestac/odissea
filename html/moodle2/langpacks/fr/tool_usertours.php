@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_usertours', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_usertours
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -62,6 +62,12 @@ $string['event_tour_ended'] = 'Visite guidée terminée';
 $string['event_tour_reset'] = 'Visite guidée relancée';
 $string['event_tour_started'] = 'Visite guidée commencée';
 $string['exporttour'] = 'Exporter la visite guidée';
+$string['filter_category'] = 'Catégorie';
+$string['filter_category_help'] = 'Affiche la visite guidée sur une page d\'un cours de la catégorie sélectionnée.';
+$string['filter_course'] = 'Cours';
+$string['filter_courseformat'] = 'Format de cours';
+$string['filter_courseformat_help'] = 'Affiche la visite guidée sur une page d\'un cours utilisant le format de cours sélectionné.';
+$string['filter_course_help'] = 'Affiche la visite guidée sur une page du cours sélectionné.';
 $string['filter_header'] = 'Filtres les visites guidées';
 $string['filter_help'] = 'Il est possible de choisir à quelles conditions la visite guidée sera affichée. Tous les filtres doivent correspondre à une visite guidée à afficher à l\'utilisateur concerné.';
 $string['filter_role'] = 'Rôle';
@@ -99,6 +105,10 @@ $string['placement_help'] = 'Une étape peut être affichée au-dessus, au-desso
 
 Si l\'étape ne tient pas dans la page à l\'emplacement choisi, elle sera automatiquement déplacée.';
 $string['pluginname'] = 'Visites guidées';
+$string['privacy:metadata:preference:completed'] = 'Date et heure du dernier achèvement d\'une visite guidée par un utilisateur.';
+$string['privacy:metadata:preference:requested'] = 'Date et heure du dernier lancement de visite guidée par un utilisateur.';
+$string['privacy:request:preference:completed'] = 'Vous avez marqué la visite guidée « {$a->name} » comme terminée le {$a->time}';
+$string['privacy:request:preference:requested'] = 'Vous avez lancé la visite guidée « {$a->name} » le {$a->time}';
 $string['reflex'] = 'Continuer au clic';
 $string['reflex_help'] = 'Passer à la prochaine étape lors d\'un clic sur la cible.';
 $string['resettouronpage'] = 'Relancer la visite guidée sur cette page';
@@ -130,9 +140,9 @@ Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous
 $string['tour1_content_addingblocks'] = 'En fait, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'App mobile Moodle, donc de façon générale, il est beaucoup mieux de s\'assurer que votre plateforme fonctionne bien sans aucun bloc.';
 $string['tour1_content_blockregion'] = 'Il reste encore une région pour les blocs à cet endroit. Nous vous recommandons de retirer complètement les blocs Navigation et Administration, puisque toutes leurs fonctionnalités sont disponibles ailleurs dans le thème Boost.';
 $string['tour1_content_customisation'] = 'Pour personnaliser l\'apparence de votre plateforme et de sa page d\'accueil, utilisez le menu des réglages au coin de cette entête. Activez le mode édition maintenant.';
-$string['tour1_content_end'] = 'Vous venez de faire une visite guidée, une nouvelle fonctionnalité de Moodle 3.2. Cette visite ne s\'affichera plus, à moins que vous ne la relanciez au moyen du lien dans le pied de page. En tant qu\'administrateur, vous pouvez bien sûr créer vos propres visites guidées comme celle-ci !';
+$string['tour1_content_end'] = 'Vous venez de terminer une visite guidée. Cette visite ne s\'affichera plus, à moins que vous ne la relanciez au moyen du lien dans le pied de page. En tant qu\'administrateur, vous pouvez aussi créer vos propres visites guidées comme celle-ci !';
 $string['tour1_content_navigation'] = 'La navigation principale s\'effectue maintenant au moyen de ce tiroir de navigation. Son contenu s\'adapte au contexte dans lequel vous êtes sur la plateforme. Le bouton en haut permet de l\'afficher ou de le cacher.';
-$string['tour1_content_welcome'] = 'Bienvenue au thème Boost pour Moodle 3.2. Si vous connaissez Moodle, vous trouverez que certaines choses paraissent différentes.';
+$string['tour1_content_welcome'] = 'Bienvenue au thème Boost. Si vous avez mis à jour Moodle à partir d\'une version antérieure, vous trouverez certaines choses changées.';
 $string['tour1_title_addingblocks'] = 'Ajout de blocs';
 $string['tour1_title_blockregion'] = 'Région des blocs';
 $string['tour1_title_customisation'] = 'Personnalisation';
@@ -142,11 +152,11 @@ $string['tour1_title_welcome'] = 'Bienvenue';
 $string['tour2_content_addblock'] = 'En activant le mode édition, vous pouvez ajouter des blocs à partir du tiroir de navigation. Cependant, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'App mobile Moodle, et pour une meilleure expérience utilisateur de vos étudiants, il est beaucoup mieux de vous assurer que votre cours se passe bien sans aucun bloc.';
 $string['tour2_content_addingblocks'] = 'Vous pouvez ajouter des blocs à cette page au moyen de ce bouton. Cependant, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'App mobile Moodle, et pour une meilleure expérience utilisateur de vos étudiants, il est beaucoup mieux de vous assurer que votre cours se passe bien sans aucun bloc.';
 $string['tour2_content_customisation'] = 'Pour modifier les réglages du cours, utilisez le menu des réglages dans le coin de cette entête. Vous trouverez d\'autres menus de réglages similaires sur la page de chaque activité. Activez maintenant le mode édition.';
-$string['tour2_content_end'] = 'Vous venez de faire une visite guidée, une nouvelle fonctionnalité de Moodle 3.2. Cette visite ne s\'affichera plus, à moins que vous ne la relanciez au moyen du lien dans le pied de page. L\'administrateur du site peut créer d\'autres visites guidées pour cette plateforme.';
+$string['tour2_content_end'] = 'Vous venez de faire une visite guidée. Cette visite ne s\'affichera plus, à moins que vous ne la relanciez au moyen du lien dans le pied de page. L\'administrateur du site peut créer d\'autres visites guidées pour cette plateforme.';
 $string['tour2_content_navigation'] = 'La navigation s\'effectue maintenant au moyen de ce tiroir de navigation. Le bouton en haut permet de l\'afficher ou de le cacher. Vous constaterez qu\'il s\'y trouver des liens vers les sections de votre cours.';
 $string['tour2_content_opendrawer'] = 'Ouvrez maintenant le tiroir de navigation.';
 $string['tour2_content_participants'] = 'Consultez la liste des participants ici. C\'est également ici que vous ajoutez ou retirez des étudiants.';
-$string['tour2_content_welcome'] = 'Bienvenue au thème Boost pour Moodle 3.2. Si vous connaissez Moodle, vous trouverez que certaines choses paraissent différentes sur la page principale d\'un cours.';
+$string['tour2_content_welcome'] = 'Bienvenue au thème Boost. Si votre plateforme a été mise à jour à partir d\'une version antérieure, vous trouverez certaines choses changées ici, sur la page d\'un cours.';
 $string['tour2_title_addblock'] = 'Ajouter un bloc';
 $string['tour2_title_addingblocks'] = 'Ajout de blocs';
 $string['tour2_title_customisation'] = 'Personnalisation';

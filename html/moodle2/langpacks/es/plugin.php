@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plugin', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   plugin
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -109,7 +109,7 @@ $string['type_antivirus_plural'] = 'Extensiones de antivirus';
 $string['type_auth'] = 'Método de identificación';
 $string['type_auth_plural'] = 'Extensiones de identificación';
 $string['type_availability'] = 'Restricciones disponibles';
-$string['type_availability_plural'] = 'Restricciones disponibles';
+$string['type_availability_plural'] = 'Restricciones de acceso';
 $string['type_block'] = 'Bloque';
 $string['type_block_plural'] = 'Bloques';
 $string['type_cachelock'] = 'Manejador de bloqueo de caché';
@@ -126,6 +126,8 @@ $string['type_editor'] = 'Editor';
 $string['type_editor_plural'] = 'Editores';
 $string['type_enrol'] = 'Método de matriculación';
 $string['type_enrol_plural'] = 'Métodos de matriculación';
+$string['type_fileconvertermanage'] = 'Gestionar convertidores de documentos';
+$string['type_fileconverter_plural'] = 'Convertidores de documentos';
 $string['type_filter'] = 'Filtro';
 $string['type_filter_plural'] = 'Filtros de texto';
 $string['type_format'] = 'Formato de curso';

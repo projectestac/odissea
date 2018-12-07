@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_34_STABLE'
  *
  * @package   assignfeedback_editpdf
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -67,7 +67,6 @@ $string['oval'] = '椭圆形';
 $string['pagenumber'] = '第 {$a} 页';
 $string['pagexofy'] = '第 {$a->page} 页，共 {$a->total} 页';
 $string['pathtogspathdesc'] = '请注意，这个说明的pdf文件要在{$a}设定到ghostscript的目录。';
-$string['pathtounoconvpathdesc'] = '请注意，批注的pdf需要转换软件 unoconv 的路径，它必须在{$a}设置';
 $string['pen'] = '笔';
 $string['pluginname'] = '批注的PDF文件';
 $string['preparesubmissionsforannotation'] = '准备要批注的作业';
@@ -87,14 +86,6 @@ $string['test_isdir'] = '这个ghostscript路径指向一个文件夹，请在�
 $string['test_notestfile'] = '缺少测试的PDF文件';
 $string['test_notexecutable'] = 'ghostscript指向一个不能执行的文件';
 $string['test_ok'] = 'ghostscript路径似乎没有问题，请查看一下这图下方的信息。';
-$string['test_unoconv'] = '测试  unoconv 路径';
-$string['test_unoconvdoesnotexist'] = '这 unoconv 路径没有指向 unoconv 软件。请检查你的路径设置。';
-$string['test_unoconvdownload'] = '下载已转换的PDF测试文件';
-$string['test_unoconvisdir'] = '这 unoconv 路径是指向一个文件夹，请在你指定的路径里包含unoconv 软件。';
-$string['test_unoconvnotestfile'] = '找不到要转换成PDF文件的测试文件';
-$string['test_unoconvnotexecutable'] = '这 unoconv 路径指向一个不能执行的文件';
-$string['test_unoconvok'] = '这 unoconv 路径看起来已经配置妥当';
-$string['test_unoconvversionnotsupported'] = '本系统不支持你所安装的 unoconv 版本，Moodle的作业评分功能需要用到0.7或发上的版本。';
 $string['tool'] = '工具';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = '浏览有批注的PDF文件';

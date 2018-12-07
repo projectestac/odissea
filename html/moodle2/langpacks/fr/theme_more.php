@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'theme_more', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   theme_more
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -64,6 +64,7 @@ $string['linkcolor_desc'] = 'La couleur des liens.';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Le logo n\'est affiché que dans l\'entête de la page d\'accueil et de la page de connexion.<br />Si la hauteur de votre logo dépasse 75px, ajoutez la règle CSS div.logo {height: 100px;} dans la zone CSS personnalisée ci-dessous, en adaptant la hauteur en pixels à la taille de votre logo. Si un logo n\'est pas défini ici, le logo défini dans Présentation > Logos sera utilisé.';
 $string['pluginname'] = 'More';
+$string['privacy:metadata'] = 'Le thème More n\'enregistre aucune donnée personnelle.';
 $string['region-side-post'] = 'Droite';
 $string['region-side-pre'] = 'Gauche';
 $string['secondarybackground'] = 'Couleur de fond du contenu secondaire';

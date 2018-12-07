@@ -79,7 +79,7 @@ switch ($action) {
                     }
                     $actions[] = '<a onclick="M.local_rcommon.exec_test(' . $credential->id . ');" title="' . get_string('keymanager_test', 'local_rcommon') . '">' . get_string('keymanager_test', 'local_rcommon') . '</a>';
                     $row[] = implode(' | ', $actions);
-                    $row[] = '<img id="loading_small_' . $credential->id.'" style="visibility:hidden" src="'.$OUTPUT->pix_url('i/loading_small').'" alt="" /><span id="desc_' . $credential->id . '"></span>';
+                    $row[] = '<img id="loading_small_' . $credential->id.'" style="visibility:hidden" src="'.$OUTPUT->image_url('i/loading_small').'" alt="" /><span id="desc_' . $credential->id . '"></span>';
                     $table->data[] = $row;
                 }
                 echo html_writer::table($table);
@@ -194,7 +194,7 @@ switch ($action) {
                 } else {
                     $columndir = $dir == "ASC" ? "DESC" : "ASC";
                     $columnicon = ($dir == "ASC") ? "sort_asc" : "sort_desc";
-                    $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->pix_url('t/' . $columnicon) . "\" alt=\"\" />";
+                    $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->image_url('t/' . $columnicon) . "\" alt=\"\" />";
                 }
                 $columns[$column] = "<a href=\"users.php?sort=$column&dir=$columndir&show=$show\">".$columtext."</a>$columnicon";
             }

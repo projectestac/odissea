@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grades', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   grades
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -139,7 +139,6 @@ $string['calculationsaved'] = 'Cálculo guardado';
 $string['calculationview'] = 'Ver cálculo';
 $string['cannotaccessgroup'] = 'Lo sentimos, no se puede acceder a las calificaciones del grupo seleccionado.';
 $string['categories'] = 'Categorías';
-$string['categoriesanditems'] = 'Categorías e ítems';
 $string['category'] = 'Categoría';
 $string['categoryedit'] = 'Editar categoría';
 $string['categoryname'] = 'Nombre de la categoría';
@@ -354,6 +353,7 @@ $string['gradereport'] = 'Informe de calificaciones';
 $string['graderreport'] = 'Informe del calificador';
 $string['grades'] = 'Calificaciones';
 $string['gradesforuser'] = 'Calificaciones de {$a->user}';
+$string['gradesmoduledeletionpendingwarning'] = 'Advertencia: ¡Borrado de actividad en curso! Algunas calificaciones están a punto de ser eliminadas.';
 $string['gradesmoduledeletionprefix'] = '[Borrado en progreso]';
 $string['gradesonly'] = 'Cambiar a sólo calificaciones';
 $string['gradessettings'] = 'Ajustes';
@@ -403,6 +403,14 @@ $string['idnumbers'] = 'Números ID';
 $string['ignore'] = 'Ignorar';
 $string['import'] = 'Importar';
 $string['importcsv'] = 'Importar CSV';
+$string['importcsv_help'] = 'Es posible importar calificaciones desde un archivo CSV con el siguiente formato:
+
+* Cada línea del archivo contiene un registro
+* Cada registro es una serie de datos separados por comas o un separador alternativo
+* El primer registro contiene una lista de nombres de campo definiendo el formato del resto del archivo
+* Es necesario que uno de los campos identifique al usuario - nombre de usuario o número de ID o dirección de correo
+
+Se puede obtener un archivo con el formato correcto exportando previamente alguna calificación. El archivo puede ser editado y guardado como CSV.';
 $string['importcustom'] = 'Importar como resultados personalizados (sólo este curso)';
 $string['importerror'] = 'Ha ocurrido un error: este script no se ha invocado con los parámetros correctos.';
 $string['importfailed'] = 'Importación fallida. No se han importado datos.';

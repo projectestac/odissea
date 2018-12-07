@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'tool_unsuproles', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   tool_unsuproles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,3 +30,4 @@ $string['contextlevel'] = 'Testuinguru-maila';
 $string['count'] = 'Kontua';
 $string['noprolbems'] = 'Ez da onartu gabeko rolen zereginik aurkitu';
 $string['pluginname'] = 'Onartu gabeko rolen zereginak';
+$string['privacy:metadata'] = 'Onartu gabeko rolen zereginak pluginak ez du datu pertsonalik biltzen.';

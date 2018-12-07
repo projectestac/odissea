@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'it', branch 'MOODLE_32_STABLE'
+ * Strings for component 'enrol_ldap', language 'it', branch 'MOODLE_34_STABLE'
  *
  * @package   enrol_ldap
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -115,6 +115,7 @@ avere un campo \'idnumber\' valido. I gruppi LDAP devono avere questo idnumber n
 <em>enrol/ldap/cli/enrol_ldap_sync.php</em>.</p>
 <p>Questo plugin può anche creare  automaticamente nuovi corsi in presenza di nuovi gruppi in LDAP.</p>';
 $string['pluginnotenabled'] = 'Il plugin non è abilitato!';
+$string['privacy:metadata'] = 'Il plugin di iscrizione "iscrizioni LDAP" non memorizza dati personali.';
 $string['role_mapping'] = '<p>Per ciascun ruolo che desideri assegnare tramite LDAP, devi specificare l\'elenco dei contesti dove si trovano i gruppi di corsi. Puoi separare contesti diversi con \';\'.</p><p>Devi anche specificare l\'attributo LDAP contenente i membri del gruppo, ad esempio \'member\' oppure \'memberUid\'</p>';
 $string['role_mapping_attribute'] = 'Attributo LDAP member per {$a}';
 $string['role_mapping_context'] = 'Contesti LDAP per {$a}';
@@ -122,6 +123,7 @@ $string['role_mapping_key'] = 'Mappa ruoli da LDAP';
 $string['roles'] = 'Mappatura ruoli';
 $string['server_settings'] = 'Impostazioni server LDAP';
 $string['synccourserole'] = '== Sincronizzazione del corso \'{$a->idnumber}\' per il ruolo \'{$a->role_shortname}\'';
+$string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni';
 $string['template'] = 'Opzionale: i corsi creati automaticamente possono ereditare le impostazioni da un corso modello. Inserisci qui il titolo del corso da usare come modello.';
 $string['template_key'] = 'Modello';
 $string['unassignrole'] = 'Rimozione del ruolo {$a->role_shortname}\' dell\'utente user \'{$a->user_username}\' nel corso \'{$a->course_shortname}\' (id {$a->course_id})';

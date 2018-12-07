@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_ddmarker
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -74,6 +74,7 @@ $string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnamesummary'] = 'Markers are dragged and dropped onto a background image.';
 $string['previewareaheader'] = 'Preview';
 $string['previewareamessage'] = 'Select a background image file, enter text labels for markers and define the drop zones on the background image to which they must be dragged.';
+$string['privacy:metadata'] = 'The Drag and drop markers question type plugin does not store any personal data.';
 $string['refresh'] = 'Refresh preview';
 $string['shape'] = 'Shape';
 $string['shape_circle'] = 'Circle';

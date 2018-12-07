@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'portfolio', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   portfolio
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,9 +35,9 @@ $string['alreadyexporting'] = 'Dagoeneko martxan dagoen portfolio esportatze bat
 $string['availableformats'] = 'Esportatzeko formatu erabilgarriak';
 $string['callbackclassinvalid'] = 'Zehaztutako callback klasea baliogabea da edo ez da portfolio_caller jerarkiaren parte';
 $string['callercouldnotpackage'] = 'Errorea datuak esportatzeko paketea egitean: jatorrizko errorea {$a} izan da';
-$string['cannotsetvisible'] = 'Ezin da ikusgai jarri - gehigarria erabat desgaitu da konfigurazio ezegokia dela-eta';
+$string['cannotsetvisible'] = 'Ezin da ikusgai jarri - plugina erabat desgaitu da konfigurazio ezegokia dela-eta';
 $string['commonportfoliosettings'] = 'Portfolioen ezarpen komunak';
-$string['commonsettingsdesc'] = '<p>Transferentzia egiteko behar den denbora \'Moderatua\' edo \'Altua\' izateak erabiltzaileak transferentzia bukatu arte itxarotea aukera aldatzen du.</p><p>\'Moderatua\' atalasera arteko tamainek erabiltzaileari galdetu gabe egiten dira, eta tamaina \'Moderatua\' eta \'Altua\' denean erabiltzaileari aukera ematen zaio denbora-tarte bat hartu dezakeela ohartuta.</p><p>Hala ere, baliteke portfolio-gehigarri batzuetan aukera honi kasurik ez egitea eta transferentzia guztiak ilaran jartzea behartzea.</p>';
+$string['commonsettingsdesc'] = '<p>Transferentzia egiteko behar den denbora \'Moderatua\' edo \'Altua\' izateak erabiltzaileak transferentzia bukatu arte itxarotea aukera aldatzen du.</p><p>\'Moderatua\' atalasera arteko tamainek erabiltzaileari galdetu gabe egiten dira, eta tamaina \'Moderatua\' eta \'Altua\' denean erabiltzaileari aukera ematen zaio denbora-tarte bat hartu dezakeela ohartuta.</p><p>Hala ere, baliteke portfolio-plugin batzuetan aukera honi kasurik ez egitea eta transferentzia guztiak ilaran jartzea behartzea.</p>';
 $string['configexport'] = 'Konfiguratu esportatutako datuak';
 $string['configplugin'] = 'Konfiguratu portfolio-plugina';
 $string['configure'] = 'Konfiguratu';
@@ -91,7 +91,7 @@ $string['highfilesizethreshold'] = 'Transferentzia altuko fitxategiaren tamaina'
 $string['highfilesizethresholddesc'] = 'Atalase honetatik goragoko fitxategi-tamainen trasnferentziek denbora-tarte handia hartuko dutela suposatuko da';
 $string['insanebody'] = 'Kaixo! Mezu hau {$a->sitename} guneko kudeatzaile gisa jaso duzu.
 
-Portfolio-gehigarrien instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du.
+Portfolio-pluginen instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du.
 
 Desgaitutako portfolio-gehigarrien instantzien zerrenda hau da:
 
@@ -99,11 +99,11 @@ Desgaitutako portfolio-gehigarrien instantzien zerrenda hau da:
 
 Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.';
 $string['insanebodyhtml'] = '<p>Kaixo! Mezu hau {$a->sitename} guenko kudeatzaile gisa jaso duzu.</p>
-<p>Portfolio-gehigarrien instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du.</p>
+<p>Portfolio-pluginen instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du.</p>
 <p>Desgaitutako portfolio-gehigarrien instantzien zerrenda hau da:</p>
 {$a->htmllist}
 <p>Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.</a></p>';
-$string['insanebodysmall'] = 'Kaixo! Mezu hau {$a->sitename} guneko kudeatzaile gisa jaso duzu. Portfolio-gehigarrien instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du. Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.';
+$string['insanebodysmall'] = 'Kaixo! Mezu hau {$a->sitename} guneko kudeatzaile gisa jaso duzu. Portfolio-pluginen instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du. Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.';
 $string['insanesubject'] = 'Portfolio-instantzia batzuk automatikoki desgaituta daude';
 $string['instancedeleted'] = 'Portfolioa ondo ezabatu da';
 $string['instanceismisconfigured'] = 'Portfolioaren instantzia gaizki konfiguratuta dago, albo batera uzten. Errorea ondokoa da:  {$a}';
@@ -138,20 +138,20 @@ $string['logs'] = 'Transferitu erregistroak';
 $string['logsummary'] = 'Aurreko transferentziak ondo egin dira';
 $string['manageportfolios'] = 'Portfolioak kudeatu';
 $string['manageyourportfolios'] = 'Zure portfolioak kudeatu';
-$string['mimecheckfail'] = '{$a->plugin} portfolio-gehigarriak ez du {$a->mimetype} mimetype-a onartzen';
+$string['mimecheckfail'] = '{$a->plugin} portfolio-pluginak ez du {$a->mimetype} mimetype-a onartzen';
 $string['missingcallbackarg'] = '{$a->class} klasearentzako {$a->arg} callback argumentua falta da';
 $string['moderatedbsizethreshold'] = 'Transferentzia moderatuko dbsize-a';
 $string['moderatedbsizethresholddesc'] = 'Datu-base erregistro kopurua transferentziak denbora-tarte moderatua hartuko duela suposatzeko';
 $string['moderatefilesizethreshold'] = 'Fitxategi-transferentzia moderatua';
 $string['moderatefilesizethresholddesc'] = 'Atalase honetatik goragoko fitxategi-tamainen trasnferentziek denbora-tarte moderatua hartuko dutela suposatuko da';
-$string['multipleinstancesdisallowed'] = 'Instantzia anitzak onartzen ez dituen gehigarri batean beste instantzia bat sortzen saiatzen ari zara ({$a})';
+$string['multipleinstancesdisallowed'] = 'Instantzia anitzak onartzen ez dituen plugin batean beste instantzia bat sortzen saiatzen ari zara ({$a})';
 $string['mustsetcallbackoptions'] = 'callback aukerak zehaztu behar dituzu portfolio_add_button constructor-a edo set_callback_options metodoa erabiliz';
 $string['noavailableplugins'] = 'Sentitzen dugu, baina ez dago esportatzeko portfolio eskuragarririk';
 $string['nocallbackclass'] = 'Ezin izan da erabili beharreko callback klasea aurkitu ({$a})';
 $string['nocallbackcomponent'] = 'Ezin izan da zehaztutako {$a} osagaia aurkitu.';
 $string['nocallbackfile'] = 'Esportatzen saiatzen ari zaren moduluan zerbait apurtuta dago - ezin izan da beharrezko portfolio-fitxategia aurkitu';
 $string['noclassbeforeformats'] = 'callback klasea zehaztu behar duzu portfolio_button-en set_formats deitu baino lehen';
-$string['nocommonformats'] = 'Ez dago formatu komunik eskuragarri dauden portfolio-gehigarrien eta deitutako {$a->location} kokapenaren artean (deitutakoak {$a->formats} onartzen ditu)';
+$string['nocommonformats'] = 'Ez dago formatu komunik eskuragarri dauden portfolio-pluginen eta deitutako {$a->location} kokapenaren artean (deitutakoak {$a->formats} onartzen ditu)';
 $string['noinstanceyet'] = 'Aukeratu gabe';
 $string['nologs'] = 'Ez dago erakusteko erregistrorik!';
 $string['nomultipleexports'] = 'Sentitzen dugu, baina portfolioaren helmugak ({$a->plugin}) ez ditu aldi bereko esportazioak onartzen. Mesedez <a href="{$a->link}">amaitu martxan dagoena</a> eta ondoren saiatu berriz ere';
@@ -169,6 +169,23 @@ $string['plugincouldnotpackage'] = 'Zure datuak esportatzeko paketea sortzeak hu
 $string['pluginismisconfigured'] = 'Portfolioaren instantzia gaizki konfiguratuta dago, albo batera uzten. Errorea ondokoa da:  {$a}';
 $string['portfolio'] = 'Portfolioa';
 $string['portfolios'] = 'Portfolioak';
+$string['privacy:metadata'] = 'Portfolioaren azpisistemak kanal gisa funtzionatzen du, pluginetako eskaerak portfolio-pluginetara bideratuz.';
+$string['privacy:metadata:instance'] = 'Portfolioaren identifikatzailea.';
+$string['privacy:metadata:instancesummary'] = 'Hemen erabiltzaileak erabiltzen dituen portfolioen instantzia eta hobespenak gordetzen dira.';
+$string['privacy:metadata:name'] = 'Hobespenaren izena.';
+$string['privacy:metadata:portfolio_log'] = 'Portfolio-transferentzien erregistroa (beranduagoko bikoiztutakoen egiaztatzeetarako erabilia)';
+$string['privacy:metadata:portfolio_log:caller_class'] = 'Transferentzia sortzeko erabilitako klasearen izena';
+$string['privacy:metadata:portfolio_log:caller_component'] = 'Esportatzeaz arduratzen den osagaiaren izena';
+$string['privacy:metadata:portfolio_log:time'] = 'Transferentziaren unea (ilaratutako transferentzien kasuan hau transferentzia exekutatu zeneko unea da, eta ez erabiltzaileak programatu zuenekoa)';
+$string['privacy:metadata:portfolio_log:userid'] = 'Edukia esportatu zuen erabiltzailea';
+$string['privacy:metadata:portfolio_tempdata'] = 'Portfolio-esportazioen datuak behin behinean gordetzen ditu, cron-ak egun bat igarotzean garbitzen duena';
+$string['privacy:metadata:portfolio_tempdata:data'] = 'Esportatu datuak';
+$string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Erregistro hau iraungituko den unea';
+$string['privacy:metadata:portfolio_tempdata:instance'] = 'Erabiltzen ari den portfolio-plugin instantzia';
+$string['privacy:metadata:portfolio_tempdata:userid'] = 'Esportazioa egin zuen erabiltzailea';
+$string['privacy:metadata:userid'] = 'Erabiltzailearen identifikatzailea.';
+$string['privacy:metadata:value'] = 'Hobespenaren balioa.';
+$string['privacy:path'] = 'Portfolio-instantziak';
 $string['queuesummary'] = 'Une honetan ilaran dauden transferentziak';
 $string['returntowhereyouwere'] = 'Itzuli aurreko tokira';
 $string['save'] = 'Gorde';
@@ -176,8 +193,8 @@ $string['selectedformat'] = 'Aukeratutako esportazio-formatua';
 $string['selectedwait'] = 'Itxaroteko aukeratua?';
 $string['selectplugin'] = 'Aukeratu helburua';
 $string['showhide'] = 'Erakutsi / ezkutatu';
-$string['singleinstancenomultiallowed'] = 'Portfolio-gehigarri bakarra dago eskuragarri, ez ditu saio beraren aldi bereko esportatze anitzak onartzen, eta gehigarri hori erabiliz saio honetan dagoeneko aktibo dagoen esportatze bat dago!';
-$string['somepluginsdisabled'] = 'Portfolio-gehigarri batzuk desgaitu dira konfigurazio okerra dutelako edo beste zerbaiten menpe daudelako:';
+$string['singleinstancenomultiallowed'] = 'Portfolio-plugin bakarra dago eskuragarri, ez ditu saio beraren aldi bereko esportatze anitzak onartzen, eta gehigarri hori erabiliz saio honetan dagoeneko aktibo dagoen esportatze bat dago!';
+$string['somepluginsdisabled'] = 'Portfolio-plugin batzuk desgaitu dira konfigurazio okerra dutelako edo beste zerbaiten menpe daudelako:';
 $string['sure'] = 'Ziur al zaude \'{$a}\' ezabatu egin nahi duzula? Ezin izango duzu desegin.';
 $string['thirdpartyexception'] = 'Bitarteko batek salbuespena igorri du portfolio-esportatzea egin bitartean ({$a}). Harrapatu eta berriz bidali da baina hau konpondu beharko litzateke';
 $string['transfertime'] = 'Transferentzia-denbora';

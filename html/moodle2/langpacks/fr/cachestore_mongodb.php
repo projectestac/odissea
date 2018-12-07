@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   cachestore_mongodb
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -34,6 +34,8 @@ $string['password'] = 'Mot de passe';
 $string['password_help'] = 'Le mot de passe du compte utilisé pour la connexion.';
 $string['pleaseupgrademongo'] = 'Vous utilisez une ancienne version de l\'extension PHP Mongo (antérieure à 1.3). D\'anciennes versions de cette extension ne seront plus supportées à l\'avenir. Veuillez penser à faire une mise à jour.';
 $string['pluginname'] = 'MongoDB';
+$string['privacy:metadata:mongodb'] = 'Le plugin de stockage de cache MongoDB enregistre des données brièvement, de par sa fonction de mise en cache. Ces données sont enregistrées sur un serveur Memcached, où les données sont supprimées régulièrement.';
+$string['privacy:metadata:mongodb:data'] = 'Les diverses données enregistrées en cache';
 $string['replicaset'] = 'Ensemble réplicat';
 $string['replicaset_help'] = 'L\'ensemble réplicat auquel se connecter. Si renseigné, le maître sera déterminé au moyen de la commande de base de donnée ismaster. Il pourrait arriver que la connexion soit faite vers un serveur qui n\'est même pas indiqué.';
 $string['server'] = 'Serveur';

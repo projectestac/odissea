@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'editor_atto', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   editor_atto
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autosavefailed'] = 'Connexion au serveur impossible. Si vous envoyez cette page maintenant, vos modifications seront perdues.';
 $string['autosavefrequency'] = 'Fréquence de l\'enregistrement automatique';
 $string['autosavefrequency_desc'] = 'La durée entre deux tentatives d\'enregistrement automatique d\'un champ de texte. Atto enregistre automatiquement à la fréquence spécifiée le texte saisi, afin de pouvoir le récupérer lorsqu\'un utilisateur revient au même formulaire.';
+$string['autosaves'] = 'Informations d\'enregistrement automatique de l\'éditeur';
 $string['autosavesucceeded'] = 'Brouillon enregistré';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -40,6 +41,10 @@ $string['errortextrecovery'] = 'Le texte brouillon n\'a malheureusement pas pu �
 $string['infostatus'] = 'Information';
 $string['pluginname'] = 'Éditeur HTML Atto';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['privacy:metadata:database:atto_autosave'] = 'Brouillons enregistrés automatiquement par l\'éditeur.';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'Le texte enregistré.';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'L\'heure et la date à laquelle le contenu a été modifié.';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'L\'identifiant de l\'utilisateur dont les données ont été enregistrées.';
 $string['recover'] = 'Récupérer';
 $string['settings'] = 'Réglages barres Atto';
 $string['subplugintype_atto'] = 'Plugin Atto';

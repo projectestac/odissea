@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   qtype_shortanswer
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -42,3 +42,4 @@ $string['pluginnameadding'] = 'Ajout d\'une question à réponse courte';
 $string['pluginnameediting'] = 'Modification d\'une question à réponse courte';
 $string['pluginname_help'] = 'Pour répondre à la question (qui peut contenir des médias), les participants doivent écrire un mot ou une phrase courte. Il peut y avoir plusieurs réponses correctes, chacune avec une note différente. Si l\'option « Sensible à la casse » est activée, vous pourrez alors avoir des notes différentes pour « Cheval » et « cheval ».';
 $string['pluginnamesummary'] = 'Permet une réponse d\'un ou quelques mots, évaluée en comparant divers modèles de réponses, pouvant contenir des jokers.';
+$string['privacy:metadata'] = 'Le plugin de type de question Réponse courte n\'enregistre aucune donnée personnelle.';

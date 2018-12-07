@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'es', branch 'MOODLE_32_STABLE'
+ * Strings for component 'folder', language 'es', branch 'MOODLE_34_STABLE'
  *
  * @package   folder
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -41,6 +41,10 @@ $string['folder:addinstance'] = 'Añadir una nueva carpeta';
 $string['foldercontent'] = 'Archivos y subcarpetas';
 $string['folder:managefiles'] = 'Gestionar archivos en el recurso carpeta';
 $string['folder:view'] = 'Ver el contenido de la carpeta';
+$string['indicator:cognitivedepth'] = 'Carpeta cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Carpeta.';
+$string['indicator:socialbreadth'] = 'Carpeta social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Carpeta.';
 $string['maxsizetodownload'] = 'Tamaño máximo de descarga del directorio (MB)';
 $string['maxsizetodownload_help'] = 'El tamaño máximo del directorio para su descarga. Si está establecido a cero, el tamaño del directorio es ilimitado.';
 $string['modulename'] = 'Carpeta';

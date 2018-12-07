@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   assignsubmission_onlinetext
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -38,6 +38,12 @@ $string['onlinetext'] = 'Texteingabe online';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Texteingabe online erlauben';
 $string['pluginname'] = 'Texteingabe online';
+$string['privacy:metadata:assignmentid'] = 'ID der Aufgabe';
+$string['privacy:metadata:filepurpose'] = 'Dateien, die in den Text der Aufgabenlösung eingebettet wurden (mit Editor)';
+$string['privacy:metadata:submissionpurpose'] = 'Abgabe ID, die die Abgabe mit dem Nutzer verbindet.';
+$string['privacy:metadata:tablepurpose'] = 'Speichert den Text bei jeder Abgabe';
+$string['privacy:metadata:textpurpose'] = 'Übermittelter Text für diesen Versuch der Aufgabe.';
+$string['privacy:path'] = 'Abgabetext';
 $string['wordlimit'] = 'Wortbegrenzung';
 $string['wordlimitexceeded'] = 'Die Höchstgrenze der Wörter für diese Aufgabenlösung ist {$a->limit}. Ihre Antwort enthält {$a->count} Wörter. Überarbeiten Sie bitte Ihre Lösung und speichern Sie sie dann erneut.';
 $string['wordlimit_help'] = 'Wenn Online-Texteingabe aktiviert wurde, legen Sie hier die Höchstzahl der Wörter fest, die eine Lösung enthalten darf.';

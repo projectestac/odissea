@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'grading', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -57,6 +57,27 @@ $string['manageactionshareconfirm'] = 'Vous êtes sur le point d\'enregistrer un
 $string['manageactionsharedone'] = 'Le formulaire a été enregistré comme modèle';
 $string['noitemid'] = 'Évaluation impossible. L\'élément d\'évaluation n\'existe pas.';
 $string['nosharedformfound'] = 'Aucun modèle trouvé';
+$string['privacy:metadata:grading_definitions'] = 'Informations de base sur un formulaire d\'évaluation avancé défini dans une zone évaluable.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'L\'identifiant de la zone où le formulaire d\'évaluation est défini.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'L\'identifiant de définition d\'évaluation d\'où ceci a été copié.';
+$string['privacy:metadata:grading_definitions:description'] = 'La description de la méthode d\'évaluation avancée.';
+$string['privacy:metadata:grading_definitions:method'] = 'La méthode d\'évaluation responsable de la définition.';
+$string['privacy:metadata:grading_definitions:name'] = 'Le nom de la définition de l\'évaluation avancée.';
+$string['privacy:metadata:grading_definitions:options'] = 'Certains réglages de cette définition d\'évaluation.';
+$string['privacy:metadata:grading_definitions:status'] = 'Le statut de cette définition d\'évaluation avancée.';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'La date et l\'heure de la copie de la définition d\'évaluation.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'La date et l\'heure de la création de la définition d\'évaluation.';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'La date et l\'heure de la dernière modification de la définition d\'évaluation.';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'L\'identifiant de l\'utilisateur qui a créé la définition d\'évaluation.';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'L\'identifiant de l\'utilisateur qui a modifié la définition d\'évaluation pour la dernière fois.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Données de la méthode d\'évaluation.';
+$string['privacy:metadata:grading_instances'] = 'Enregistrement d\'évaluation pour un élément évaluable, évalué par un évaluateur.';
+$string['privacy:metadata:grading_instances:feedback'] = 'Le feedback de l\'utilisateur.';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'Le format de texte du feedback de l\'utilisateur.';
+$string['privacy:metadata:grading_instances:raterid'] = 'L\'identifiant de l\'utilisateur qui a évalué l\'instance d\'évaluation.';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'La note de l\'instance d\'évaluation.';
+$string['privacy:metadata:grading_instances:status'] = 'Le statut de cette instance d\'évaluation.';
+$string['privacy:metadata:grading_instances:timemodified'] = 'La date et l\'heure de la dernière modification de cette instance d\'évaluation.';
 $string['searchownforms'] = 'Inclure mes propres formulaires';
 $string['searchtemplate'] = 'Recherche de formulaires d\'évaluation';
 $string['searchtemplate_help'] = 'Vous pouvez rechercher un formulaire d\'évaluation et l\'utiliser comme modèle pour créer un nouveau formulaire. Tapez de simples mots sensés apparaître dans le formulaire cherché ou dans sa description. Pour rechercher une phrase, tapez le texte entre des guillemets droits.

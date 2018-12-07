@@ -51,27 +51,6 @@ define('MEMORY_EXTRA', -3);
 /** Extremely large memory limit - not recommended for standard scripts */
 define('MEMORY_HUGE', -4);
 
-
-/**
- * Simple class. It is usually used instead of stdClass because it looks
- * more familiar to Java developers ;-) Do not use for type checking of
- * function parameters. Please use stdClass instead.
- *
- * @package    core
- * @subpackage lib
- * @copyright  2009 Petr Skoda  {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since 2.0
- */
-class object extends stdClass {
-    /**
-     * Constructor.
-     */
-    public function __construct() {
-        debugging("'object' class has been deprecated, please use stdClass instead.", DEBUG_DEVELOPER);
-    }
-};
-
 /**
  * Base Moodle Exception class
  *
@@ -387,7 +366,7 @@ function default_exception_handler($ex) {
             if (AJAX_SCRIPT) {
                 // If we are in an AJAX script we don't want to use PREFERRED_RENDERER_TARGET.
                 // Because we know we will want to use ajax format.
-                $renderer = $PAGE->get_renderer('core', null, 'ajax');
+                $renderer = new core_renderer_ajax($PAGE, 'ajax');
             } else {
                 $renderer = $OUTPUT;
             }
@@ -599,11 +578,8 @@ function get_exception_info($ex) {
 
     // When printing an error the continue button should never link offsite.
     // We cannot use clean_param() here as it is not guaranteed that it has been loaded yet.
-    $httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot);
     if (stripos($link, $CFG->wwwroot) === 0) {
         // Internal HTTP, all good.
-    } else if (!empty($CFG->loginhttps) && stripos($link, $httpswwwroot) === 0) {
-        // Internal HTTPS, all good.
     } else {
         // External link spotted!
         $link = $CFG->wwwroot . '/';
@@ -851,6 +827,13 @@ function initialise_fullme() {
     if (CLI_SCRIPT) {
         initialise_fullme_cli();
         return;
+    }
+    if (!empty($CFG->overridetossl)) {
+        if (strpos($CFG->wwwroot, 'http://') === 0) {
+            $CFG->wwwroot = str_replace('http:', 'https:', $CFG->wwwroot);
+        } else {
+            unset_config('overridetossl');
+        }
     }
 
     $rurl = setup_get_remote_url();
@@ -1156,7 +1139,9 @@ function workaround_max_input_vars() {
     }
 
     $delim = '&';
-    $fun = create_function('$p', 'return implode("'.$delim.'", $p);');
+    $fun = function($p) use ($delim) {
+        return implode($delim, $p);
+    };
     $chunks = array_map($fun, array_chunk(explode($delim, $str), $max));
 
     // Clear everything from existing $_POST array, otherwise it might be included
@@ -1433,16 +1418,34 @@ function disable_output_buffering() {
 }
 
 /**
- * Check whether a major upgrade is needed. That is defined as an upgrade that
- * changes something really fundamental in the database, so nothing can possibly
- * work until the database has been updated, and that is defined by the hard-coded
- * version number in this function.
+ * Check whether a major upgrade is needed.
+ *
+ * That is defined as an upgrade that changes something really fundamental
+ * in the database, so nothing can possibly work until the database has
+ * been updated, and that is defined by the hard-coded version number in
+ * this function.
+ *
+ * @return bool
+ */
+function is_major_upgrade_required() {
+    global $CFG;
+    $lastmajordbchanges = 2017092900.00;
+
+    $required = empty($CFG->version);
+    $required = $required || (float)$CFG->version < $lastmajordbchanges;
+    $required = $required || during_initial_install();
+    $required = $required || !empty($CFG->adminsetuppending);
+
+    return $required;
+}
+
+/**
+ * Redirect to the Notifications page if a major upgrade is required, and
+ * terminate the current user session.
  */
 function redirect_if_major_upgrade_required() {
     global $CFG;
-    $lastmajordbchanges = 2016112200.03;
-    if (empty($CFG->version) or (float)$CFG->version < $lastmajordbchanges or
-            during_initial_install() or !empty($CFG->adminsetuppending)) {
+    if (is_major_upgrade_required()) {
         try {
             @\core\session\manager::terminate_current();
         } catch (Exception $e) {

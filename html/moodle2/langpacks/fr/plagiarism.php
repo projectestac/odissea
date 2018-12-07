@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plagiarism', language 'fr', branch 'MOODLE_32_STABLE'
+ * Strings for component 'plagiarism', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   plagiarism
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,3 +32,4 @@ $string['enableplagiarism'] = 'Activer les plugins de détection de plagiat';
 $string['manageplagiarism'] = 'Gérer les plugins de détection de plagiat';
 $string['nopluginsinstalled'] = 'Il n\'y a aucun plugin de détection de plagiat installé';
 $string['plagiarism'] = 'Plagiat';
+$string['privacy:metadata:plagiarism'] = 'Le sous-système de détection de plagiat agit comme un canal, passant des requêtes de plugins aux divers plugins de détection de plagiat.';

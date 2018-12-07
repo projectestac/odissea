@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'workshopallocation_random', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Selbstbeurteilung hinzufügen';
-$string['allocationaddeddetail'] = 'Eine neue Beurteilung ist vorzunehmen: <strong>($ a-> reviewername) </ strong> beurteilt <strong> ($ a-> Autorname) </ strong>';
+$string['allocationaddeddetail'] = 'Eine neue Beurteilung ist vorzunehmen: <strong>{$a->reviewername}</strong> beurteilt <strong>{$a->authorname}</strong>';
 $string['allocationdeallocategraded'] = 'Neuzuordnung kann nicht durchgeführt werden. <strong>{$a->reviewername}</strong>, hat bereits die Einreichung von: <strong>{$a->authorname}</strong> beurteilt.';
 $string['allocationreuseddetail'] = 'Wiederverwendete Beurteilung: <strong>{$a->reviewername}</strong> wurde bei der Bewertung von <strong>{$a->authorname}</strong> behalten';
 $string['allocationsettings'] = 'Einstellungen Zuordnungen';
@@ -44,6 +44,7 @@ $string['numofselfallocatedsubmissions'] = 'Automatisiere Zuordnung von {$a} Ein
 $string['numperauthor'] = 'pro Einreichung';
 $string['numperreviewer'] = 'pro Beurteiler/in';
 $string['pluginname'] = 'Zufällige Zuordnung';
+$string['privacy:metadata'] = 'Das Plugin für zufällige Zuordnungen speichert keine persönlichen Daten. Die aktuellen Daten darüber, wer wem zugewiesen wird, um Lösungen zu bewerten, werden in der Aktivität \'gegenseitige Beurteilung\' gespeichert und bilden die Grundlage für die Aufgabendetails.';
 $string['randomallocationdone'] = 'Zufällige Zuordnung abgeschlossen';
 $string['removecurrentallocations'] = 'Aktuelle Zuordnung zurücksetzen';
 $string['resultnomorepeers'] = 'Keine weiteren Beurteilungen verfügbar';

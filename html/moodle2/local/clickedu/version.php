@@ -15,5 +15,5 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 $plugin->component = 'local_clickedu';
-$plugin->version = 20170405000; // Té un dígit de més per error, el mantenim per compatibilitat.
-$plugin->requires = 2016120500; // Moodle 3.2
+$plugin->version = 20170920000; // Té un dígit de més per error, el mantenim per compatibilitat.
+$plugin->requires = 2017051500; // Moodle 3.3

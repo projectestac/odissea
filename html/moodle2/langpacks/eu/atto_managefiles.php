@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_managefiles', language 'eu', branch 'MOODLE_32_STABLE'
+ * Strings for component 'atto_managefiles', language 'eu', branch 'MOODLE_34_STABLE'
  *
  * @package   atto_managefiles
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,5 +31,7 @@ $string['hasmissingfiles'] = 'Kontuz! Badirudi testu-eremuan aipatzen diren ondo
 $string['managefiles'] = 'Kudeatu fitxategiak';
 $string['missingfiles'] = 'Fitxategiak falta dira';
 $string['pluginname'] = 'Kudeatu fitxategiak';
+$string['privacy:metadata'] = 'atto_managefiles pluginak ez du datu pertsonalik biltzen.';
 $string['unusedfilesdesc'] = 'Enbotatutako ondorengo fitxategiak ez dira erabili testu-eremuan:';
 $string['unusedfilesheader'] = 'Erabili gabeko fitxategiak';
+$string['unusedfilesremovalnotice'] = 'Aldaketak gordetzean erabiltzen ez den edozein fitxategi automatikoki ezabatuko da.';

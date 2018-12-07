@@ -104,10 +104,10 @@ $string['jclicfile'] = 'Fichero JClic';
 $string['jclicfile_help'] = 'El fichero ".jclic" que contiene el paquete JClic.';
 $string['lap'] = 'Tiempo entre vueltas';
 $string['lap_help'] = 'Tiempo que se deja entre las transacciones cliente-servidor (expresado en segundos)';
-$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> es un proyecto del Departament de Ensenyament de la
+$string['modulename_help'] = '<a href="https://clic.xtec.cat" target="_blank">JClic</a> es un proyecto del Departament de Ensenyament de la
     Generalitat de Cataluña que está formado por un conjunto de aplicaciones de software libre que permiten crear diversos tipos de actividades
     educativas multimedia: puzzles, asociaciones, ejercicios de texto, crucigramas, sopas de letras y otros. Además, la
-    <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> dispone de una biblioteca de actividades que cuenta con unos 1000
+    <a href="https://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> dispone de una biblioteca de actividades que cuenta con unos 1000
     proyectos que han creado profesores y personas de otros colectivos que han querido compartir solidariamente su trabajo.
 
 Este módulo permite al profesorado añadir a un curso cualquier actividad de tipo JClic y recopilar los resultados obtenidos (tiempo utilizado para cada actividad, intentos, aciertos, etc.) para cada alumno/a.';
