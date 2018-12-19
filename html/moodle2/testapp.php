@@ -12,7 +12,7 @@ test_ldap();
 
 test_gicar('43549269b');
 
-test_memcache();
+test_memcached();
 
 test_session();
 
@@ -23,5 +23,3 @@ test_ftp($ftpconfig->ftphost, $ftpconfig->ftpusername, $ftpconfig->ftppassword, 
 test_cli(__DIR__.'/admin/cli/cron.php');
 
 test_server();
-
-
