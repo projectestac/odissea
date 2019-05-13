@@ -42,11 +42,11 @@ $string['folder:view'] = 'Visualitza el contingut de la carpeta';
 $string['maxsizetodownload'] = 'Mida màxima de la carpeta a descarregar (MB)';
 $string['maxsizetodownload_help'] = 'Mida màxima de la carpeta que es podrà descarregar com un fitxer comprimit. Si s\'estableix a zero, la mida de la carpeta serà il·limitada.';
 $string['modulename'] = 'Carpeta';
-$string['modulename_help'] = 'El mòdul de carpeta permet al professorat mostrar un nombre de fitxers relacionats dins d\'una sola carpeta, cosa que redueix el desplaçament per la pàgina del curs. Un fitxer comprimit es pot carregar i descomprimir per a la seva visualització, o crear una carpeta buida i enviar els fitxers a ella.
+$string['modulename_help'] = 'El mòdul de carpeta permet que el professor mostri un nombre de fitxers relacionats dins una sola carpeta, la qual cosa redueix el desplaçament per la pàgina del curs. Un fitxer comprimit es pot carregar i descomprimir per visualitzar-lo, o es pot crear una carpeta buida i enviar-hi els fitxers.
 
 Una carpeta pot utilitzar-se
-* Per a una sèrie de fitxers d\'un tema, per exemple, un conjunt d\'exàmens d\'anys anteriors en format pdf o una col·lecció de fitxers d\'imatge perquè l\'alumnat els empre en els seus projectes
-* Per a oferir un espai compartit de càrrega de fitxers per al professorat en la pàgina del curs (manteniment  la carpeta oculta perquè només el professorat ho pugui veure)';
+* Per a una sèrie de fitxers d\'un tema; per exemple, un conjunt d\'exàmens d\'anys anteriors en format .pdf o una col·lecció de fitxers d\'imatge, perquè els alumnes els emprin en els seus projectes
+* Per oferir un espai compartit de càrrega de fitxers per als professors en la pàgina del curs (en aquest cas, s\'ha de mantenir la carpeta oculta a fi que només els professors la puguin veure)';
 $string['modulenameplural'] = 'Carpetes';
 $string['noautocompletioninline'] = 'La compleció automàtica de la visualització de l\'activitat no és pot seleccionar al mateix temps que l\'opció «Mostra en línia»';
 $string['page-mod-folder-view'] = 'Pàgina principal del mòdul de fitxers';

@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'Zuriuneak {$a} baieztapen  gehiagotarako';
-$string['configgrade0'] = 'Baieztapen baten ebaluazio negatiboa deskribatzeko berezko hitza';
-$string['configgrade1'] = 'Baieztapen baten ebaluazio positiboa deskribatzeko berezko hitza';
+$string['addmoredimensions'] = 'Zuriuneak {$a} baieztapen gehiagotarako';
+$string['configgrade0'] = 'Baieztapen baten ebaluazio negatiboa deskribatzeko lehenetsitako hitza';
+$string['configgrade1'] = 'Baieztapen baten ebaluazio positiboa deskribatzeko lehenetsitako hitza';
 $string['dimensioncomment'] = 'Iruzkina';
-$string['dimensioncommentfor'] = 'Iruzkina {$a}-(e)rako';
+$string['dimensioncommentfor'] = 'Iruzkina {$a}rentzat';
 $string['dimensiondescription'] = 'Deskribapena';
 $string['dimensiongrade'] = 'Kalifikazioa';
-$string['dimensionnumber'] = '{$a} baieztapena';
+$string['dimensionnumber'] = '{$a}. baieztapena';
 $string['dimensionweight'] = 'Pisua';
 $string['grade0'] = 'Errorea izendatzeko hitza';
 $string['grade0default'] = 'Ez';
@@ -44,4 +44,4 @@ $string['mapgrade'] = 'Bidalketaren kalifikazioa';
 $string['percents'] = '% {$a}';
 $string['pluginname'] = 'Errore-kopurua';
 $string['privacy:export:metadata:map'] = 'Garrantzia duten errore kopurua {$a->nonegative}-(e)ra heltzen bada kalifikazioaren ehunekoa {$a->grade} da.';
-$string['privacy:metadata'] = 'Errore-kopurua';
+$string['privacy:metadata'] = 'Errore-kopurua pluginak ebaluazio-formularioko datuak baino ez ditu gordetzen. Formularioa betetzeko moduari buruzko informazio pertsonala Tailerra moduluak berak gordetzen du eta esportatutako ebaluazioetara txertatzen da.';

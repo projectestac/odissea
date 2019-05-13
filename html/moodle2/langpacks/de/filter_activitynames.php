@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Autoverlinkung zu Aktivitäten';
-$string['privacy:metadata'] = 'Der Aktivitätsnamenfilter speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Aktivitätsnamenfilter speichert keine personenbezogenen Daten.';

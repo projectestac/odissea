@@ -35,6 +35,7 @@ $string['linkcategoriesdesc'] = 'Отображать категории в ви
 $string['navigation:addinstance'] = 'Добавлять новый блок «Навигация»';
 $string['navigation:myaddinstance'] = 'Добавлять новый блок «Навигация» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Навигация';
+$string['privacy:metadata'] = 'Блок «Навигация» только показывает данные, хранящиеся в других местах.';
 $string['trimlength'] = 'До скольки символов обрезать строки';
 $string['trimmode'] = 'Режим обрезки строк';
 $string['trimmodecenter'] = 'Вырезать из середины строки';

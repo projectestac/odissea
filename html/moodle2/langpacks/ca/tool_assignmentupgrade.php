@@ -37,8 +37,8 @@ $string['batchupgrade'] = 'Actualitza la versió de múltiples tasques';
 $string['confirmbatchupgrade'] = 'Confirma el lot d\'actualitzacions de versió de les tasques';
 $string['conversioncomplete'] = 'Tasca convertida';
 $string['conversionfailed'] = 'La conversió de la tasca ha fallat.
-El registre de l\'actualització ha sigut: : <br />{$a}';
-$string['listnotupgraded'] = 'Llista de tasques que no han sigut actualitzades de versió.';
+El registre de l\'actualització ha estat: <br />{$a}';
+$string['listnotupgraded'] = 'Llista de tasques que no s\'han actualitzat de versió.';
 $string['listnotupgraded_desc'] = 'Podeu actualitzar tasques de forma individual des d\'aquí';
 $string['noassignmentsselected'] = 'No hi ha tasques seleccionades';
 $string['noassignmentstoupgrade'] = 'No hi ha tasques que calgui actualitzar';

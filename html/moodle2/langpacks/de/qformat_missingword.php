@@ -30,4 +30,4 @@ $string['endanswernotfound'] = 'Keine notwendige Klammer \'}\' im Dateiimport ge
 $string['noanswerfound'] = 'Keine Antworten zur Frage gefunden';
 $string['pluginname'] = 'Format \'Missing Word\'';
 $string['pluginname_help'] = 'Das Format \'Missing Word\' erlaubt den Import von Fragen als Textdatei.';
-$string['privacy:metadata'] = 'Das Lückentext Frageformat Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Lückentext Frageformat Plugin speichert keine personenbezogenen Daten.';

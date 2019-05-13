@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ltr'] = 'Слева направо';
 $string['pluginname'] = 'Справа налево/Слева направо';
+$string['privacy:metadata'] = 'Плагин atto_rtl не хранит никаких персональных данных.';
 $string['rtl'] = 'Справа налево';

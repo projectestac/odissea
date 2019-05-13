@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Envío simple';
+$string['privacy:metadata'] = 'O engadido de envío único de tarefas non almacena ningunha información persoal.';

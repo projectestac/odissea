@@ -33,6 +33,7 @@ $string['pluginnameadding'] = 'Aggiunta di domanda a Corrispondenze con domande 
 $string['pluginnameediting'] = 'Modifica di domanda a Corrispondenze con domande a Risposta breve casuale';
 $string['pluginname_help'] = 'Dal punto di vista dello studente questo tipo di domanda è analogo alla domanda a corrispondenza, tuttavia l\'elenco delle corrispondenze viene tratto casualmente dalle domande a risposta breve presenti nella categoria di domande in uso. Nella categoria di domande deve essere disponibile un numero sufficiente di domande a risposta breve, in caso contrario verrà visualizzato un messaggio di errore.';
 $string['pluginnamesummary'] = 'Simile ad una domanda a corrispondenza dove l\'elenco delle corrispondenze viene tratto casualmente dalle domande a risposta breve presenti in una specifica categoria di domande.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Corrispondenze con domande a Risposta breve casuale\' non memorizza dati personali.';
 $string['randomsamatch'] = 'Corrispondenze con domande a Risposta breve casuale';
 $string['randomsamatchintro'] = 'Per ciascuna delle seguenti domande, scegli la riposta corrispondete dal menu.';
 $string['randomsamatchnumber'] = 'Numero di domande da selezionare';

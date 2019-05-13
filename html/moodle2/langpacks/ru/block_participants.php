@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Добавлять новый блок «Люди»';
 $string['pluginname'] = 'Люди';
+$string['privacy:metadata'] = 'Блок «Люди» только показывает данные, хранящиеся в других местах.';

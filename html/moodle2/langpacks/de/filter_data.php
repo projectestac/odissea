@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Autoverlinkung zu Datenbanken';
-$string['privacy:metadata'] = 'Der Filter für Datenbankeinträge speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Filter für Datenbankeinträge speichert keine personenbezogenen Daten.';

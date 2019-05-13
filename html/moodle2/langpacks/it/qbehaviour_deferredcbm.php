@@ -66,6 +66,7 @@ $string['judgementsummary'] = 'Risposte: {$a->responses}. Accuratezza: {$a->frac
 $string['noquestions'] = 'Nessuna risposta';
 $string['overconfident'] = 'troppo confidente';
 $string['pluginname'] = 'Feedback differito con CBM';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Feedback differito con CBM\' non memorizza dati personali.';
 $string['slightlyoverconfident'] = 'leggermente confidente';
 $string['slightlyunderconfident'] = 'poco confidente';
 $string['underconfident'] = 'per nulla confidente';

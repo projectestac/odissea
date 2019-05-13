@@ -77,12 +77,12 @@ $string['privacy:metadata:grading_instances:feedbackformat'] = 'O formato de tex
 $string['privacy:metadata:grading_instances:raterid'] = 'O ID do utilizador que avaliou a instância de avaliação.';
 $string['privacy:metadata:grading_instances:rawgrade'] = 'A avaliação para a instância de avaliação.';
 $string['privacy:metadata:grading_instances:status'] = 'O estado desta instância de avaliação';
-$string['privacy:metadata:grading_instances:timemodified'] = 'A hora em que a instância de avaliação foi modificado pela última vez.';
+$string['privacy:metadata:grading_instances:timemodified'] = 'A hora em que a instância de avaliação foi modificada pela última vez.';
 $string['searchownforms'] = 'incluir as minhas grelhas';
 $string['searchtemplate'] = 'Pesquisar grelhas de avaliação';
 $string['searchtemplate_help'] = 'Pode pesquisar por uma grelha de avaliação e usá-la aqui como modelo a partir da nova grelha de avaliação. Basta inserir as palavras que devem aparecer em algum lugar no nome da grelha, na sua descrição ou no próprio corpo da grelha. Para pesquisar uma frase, insira a expressão inteira entre aspas.
 
-Por predefinição, apenas as grelhas de avaliação que foram guardados como modelos partilhados são incluídos nos resultados da pesquisa. Também pode incluir todas as suas grelhas nos resultados da pesquisa. Desta forma, pode simplesmente re-utilizar as suas grelhas de avaliação sem partilhá-los. Apenas as grelhas marcados como \'Pronto a usar\' podem ser usados desta forma.';
+Por predefinição, apenas as grelhas de avaliação que foram guardadas como modelos partilhados são incluídas nos resultados da pesquisa. Também pode incluir todas as suas grelhas nos resultados da pesquisa. Desta forma, pode simplesmente reutilizar as suas grelhas de avaliação sem partilhá-las. Apenas as grelhas marcados como \'Pronto a usar\' podem ser usadas desta forma.';
 $string['statusdraft'] = 'Rascunho';
 $string['statusready'] = 'Pronto a usar';
 $string['templatedelete'] = 'Apagar';

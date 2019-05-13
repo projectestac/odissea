@@ -36,3 +36,4 @@ $string['local_mobiledescription'] = 'Plugin qui étend les fonctionnalités du 
 $string['local_mobilesettings'] = 'Réglages';
 $string['pluginname'] = 'Fonctionnalités supplémentaires Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'Le plugin local Moodle Mobile doit être activé et configuré pour pouvoir lancer l\'app';
+$string['privacy:metadata'] = 'Le plugin fonctionnalités supplémentaires de Moodle Mobile n\'enregistre aucune donnée personnelle';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nologindescription'] = '辅助插件阻止用户登录到系统中，并忽略发送给这些用户的 Email。可以用来<em>暂停</em>用户帐号。';
 $string['pluginname'] = '禁止登录';
+$string['privacy:metadata'] = '免登录插件不存储任何个人数据。';

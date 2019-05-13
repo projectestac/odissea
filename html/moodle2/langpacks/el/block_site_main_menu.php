@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Κύριο μενού';
+$string['privacy:metadata'] = 'Το μπλοκ κεντρικού μενού εμφανίζει μόνο τα δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['site_main_menu:addinstance'] = 'Προσθέστε ένα νέο μπλοκ κύριου μενού';

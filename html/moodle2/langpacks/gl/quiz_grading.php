@@ -71,6 +71,7 @@ $string['nothingfound'] = 'Nada para presentar';
 $string['options'] = 'Opcións';
 $string['orderattempts'] = 'Ordenar intentos';
 $string['pluginname'] = 'Cualificación manual';
+$string['privacy:metadata'] = 'O complemento de cualificación manual de proba non almacena ningún dato persoal. Proporciona unha interface para que os usuarios almacenen datos sen almacenar datos.';
 $string['qno'] = 'Q núm.';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionsperpage'] = 'Preguntas por páxina';

@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'Visto o informe xeral de cualificación';
+$string['gradesoverview'] = 'Vista xeral das cualificacións';
 $string['overview:view'] = 'Ver a vista xeral do informe';
 $string['pluginname'] = 'Vista xeral do informe';
+$string['privacy:metadata'] = 'O informe de vista xeral de cualificacións só amosa datos almacenados noutros lugares.';

@@ -39,10 +39,14 @@ $string['importformat'] = 'Настройка по умолчанию форма
 $string['internal'] = 'Внутренние (файлы, хранящиеся в Moodle)';
 $string['issuer'] = 'Служба OAuth 2';
 $string['issuer_help'] = 'Выберите службу OAuth 2, настроенную для работы с API Google Drive. Если служба еще не существует, вам необходимо ее создать.';
+$string['oauth2serviceslink'] = '<a href="{$a}" title="Ссылка на конфигурацию служб OAuth 2"> Конфигурация служб OAuth 2 </a>';
 $string['oauthinfo'] = '<p>Для использования этого плагина Вы должны зарегистрировать свой сайт в Google, как описано в документации <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>В процессе регистрации Вам нужно будет ввести следующий URL в качестве «Authorized Redirect URIs»:</p><p>{$a->callbackurl} </p><p>После регистрации Вам будет предоставлен ID клиента и ключ, которые могут быть использованы для настройки всех плагинов Google Drive и Picasa.</p><p>Пожалуйста, обратите внимание, что Вам необходимо включить службу «Drive API».</p>';
 $string['owner'] = 'Владелец: {$a}';
 $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Формат импорта презентации по умолчанию';
+$string['privacy:metadata:repository_googledocs'] = 'Плагин хранилища Google Drive не хранит никаких личных данных, но передает данные пользователя из Moodle в удаленную систему.';
+$string['privacy:metadata:repository_googledocs:email'] = 'Электронная почта пользователя репозитория Google Drive.';
+$string['privacy:metadata:repository_googledocs:searchtext'] = 'Текстовый запрос поиска пользователя репозитория Google Drive.';
 $string['searchfor'] = 'Поиск {$a}';
 $string['secret'] = 'Ключ';
 $string['servicenotenabled'] = 'Доступ не настроен. Убедитесь, что служба «Drive API» включена.';

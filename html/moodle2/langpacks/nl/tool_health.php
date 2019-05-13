@@ -31,3 +31,4 @@ $string['healthproblemsolution'] = 'Oplossing';
 $string['healthreturntomain'] = 'Ga verder';
 $string['healthsolution'] = 'Oplossing';
 $string['pluginname'] = 'Gezondheidscentrum';
+$string['privacy:metadata'] = 'De gezondheidscentrum-plugin bewaart geen persoonlijke gegevens.';

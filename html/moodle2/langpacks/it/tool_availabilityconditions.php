@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Gestione criteri di accesso';
 $string['pluginname'] = 'Gestione condizioni per l\'accesso';
+$string['privacy:metadata'] = 'Il plugin \'Gestione condizioni per l\'accesso\' non memorizza dati personali.';

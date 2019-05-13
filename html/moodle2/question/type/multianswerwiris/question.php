@@ -189,7 +189,8 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
             $numsubans = 0;
             foreach ($indexes as $i) {
                 $subquestion = $this->subquestions[$i];
-
+                $substep = $this->get_substep(null, $i);
+                $subresp = $substep->filter_array($response);
                 // Compute matching answer for this subquestion.
                 $matching = null;
                 $maxgrade = 0.0;
@@ -211,8 +212,6 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
                         $subquestion->step->set_var('_matching_answer_grade', $maxgrade, true);
                     }
                 }
-                $substep = $this->get_substep(null, $i);
-                $subresp = $substep->filter_array($response);
                 $subresphash = md5($subresp['answer']);
                 $subquestion->step->set_var('_response_hash', $subresphash, true);
                 $subquestion->step->set_var('_matching_answer', $matchinganswerid, true);

@@ -87,7 +87,7 @@ $string['miscsettings'] = 'Diverse';
 $string['nestedcategories'] = 'Geneste categorieën toestaan';
 $string['nestedcategories_desc'] = 'Indien ingeschakeld zal IMS Enterprice geneste categorieën maken';
 $string['pluginname'] = 'IMS Enterprise bestand';
-$string['pluginname_desc'] = 'Via deze aanmeldingswijze zal er herhaaldelijk gezocht worden naar een speciaal opgemaakt tekstbestand op de plaats die je hier opgeeft. Het bestand moet voldoen aan de IMS Enterprise specificaties en moet personen, groep en lidmaadschap XML-elementen bevatten.';
+$string['pluginname_desc'] = 'Via deze aanmeldingswijze zal er herhaaldelijk gezocht worden naar een speciaal opgemaakt tekstbestand op de plaats die je hier opgeeft. Het bestand moet voldoen aan de IMS Enterprise specificaties en moet personen, groep en lidmaatschap XML-elementen bevatten.';
 $string['privacy:metadata'] = 'De IMS Enterprise bestand aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['processphoto'] = 'Voeg een gebruikersfoto toe aan het profiel';
 $string['processphotowarning'] = 'Waarschuwing: bewerken van afbeeldingen kan je server behoorlijk belasten. Aangeraden wordt om deze optie niet te gebruiken wanneer je grote aantallen leerlingen wil verwerken.';
@@ -104,7 +104,7 @@ $string['settingshortname'] = 'IMS beschrijvings-tag voor de korte cursusnaam';
 $string['settingshortnamedescription'] = 'De korte naam is een vereist cursusveld, dus je moet de geselecteerde beschrijvingstag definiëren in je IMS Enterprise-bestand';
 $string['settingsummary'] = 'IMS beschrijvingstag voor de cursussamenvatting';
 $string['settingsummarydescription'] = 'Dit is een optioneel veld. Selecteer \'laat dit leeg" als je geen cursussamenvatting wil geven.';
-$string['sourcedidfallback'] = 'Gebruik het "sourcedid" als gebruikersid als het "sourcedid"-veld niet gevonden kan worden';
+$string['sourcedidfallback'] = 'Gebruik het \'sourcedid\' als gebruikersid als het \'gebruikersID\'-veld niet gevonden kan worden';
 $string['sourcedidfallback_desc'] = 'IN IMS-gegevens stelt het veld  <sourcedid> de ID-code voor voor een persoon zoals gebruikt in het bronsysteem. Het veld <userid> is een apart veld dat de ID-code moet bevatten die de gebruiker nodig heeft om in te loggen. In veel gevallen zullen beide codes gelijk zijn, maar niet altijd.
 
 Sommige leerlinginformatiesystemen kunnen geen veld <userid> leveren. Als dit het geval is, dan moet je deze instelling inschakelen om het veld <sourcedid> te gebruiken als Moodle gebruikersnaam. Als dit niet nodig is, schakel deze instelling dan niet in.';
@@ -114,7 +114,7 @@ $string['updatecourses'] = 'Cursussen aanpassen';
 $string['updatecourses_desc'] = 'Indien ingeschakeld kan de IMS Enterprise aanmeldingsplugin de korte naam en de volledige naam van een cursus aanpassen (als de "recstatus"-vlag op 2 gezet is, wat staat voor een update).';
 $string['updateusers'] = 'Gebruikersaccounts met specifieke IMS-gegevens aanpassen';
 $string['updateusers_desc'] = 'Indien ingeschakeld kan IMS aanmeldgegevens wijzigingen uitvoeren aan gebruikersaccounts (als de "recstatus"-vlag op 2 gezet is, wat staat voor een update).';
-$string['usecapitafix'] = 'Zet hier een vinkje als je using "Capita" gebruikt (hun XML-formaat wijkt een klein beetje af)';
+$string['usecapitafix'] = 'Zet hier een vinkje als je Capita gebruikt (hun XML-formaat wijkt een klein beetje af)';
 $string['usecapitafix_desc'] = '<p>Het leerlinggegevenssysteem door Capita gemaakt, heeft een kleine fout in zijn XML output. Als je Capita gebruikt, zou je deze optie moeten activeren - anders plaats je geen vinkje.</p>';
 $string['usersettings'] = 'Opties voor gebruikersgegevens';
 $string['zeroisnotruncation'] = '0 betekent niet verkorten';

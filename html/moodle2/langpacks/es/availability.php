@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = 'No disponible (oculto) excepto cualquiera de:'
 $string['manageplugins'] = 'Administrar restricciones';
 $string['missingplugin'] = 'Falta plugin de restricción';
 $string['or'] = 'o';
+$string['privacy:metadata'] = 'El subsistema de Restricción del acceso no almacena ningún dato personal.';
 $string['restrictaccess'] = 'Restricciones de acceso';
 $string['restrictbygroup'] = 'Añadir restricción de acceso por grupo/agrupamiento';
 $string['setheading'] = '{$a->number} Conjunto de {$a->count} restricción(es)';

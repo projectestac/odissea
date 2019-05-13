@@ -31,5 +31,5 @@ $string['oauthinfo'] = '<p>Para utilizar este modulo será necessário registar 
 $string['picasa:view'] = 'Ver repositório Picasa';
 $string['pluginname'] = 'Picasa';
 $string['privacy:metadata:repository_picasa'] = 'O módulo repositório Picasa web album não armazena dados pessoais, mais transmite dados do utilizador do Moodle para o sistema remoto.';
-$string['privacy:metadata:repository_picasa:searchtext'] = 'Pesquisa de texto do utilizador no repositório Picasa.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'Pesquisa de texto no repositório Picasa do utilizador.';
 $string['secret'] = 'Senha';

@@ -35,3 +35,4 @@ $string['randomqname'] = 'ランダム ({$a})';
 $string['randomqplusname'] = 'ランダム ({$a} およびサブカテゴリ)';
 $string['selectedby'] = '{$a->randomname} に選択された {$a->questionname}';
 $string['selectmanualquestions'] = 'ランダム問題が手動評定問題を使用できる';
+$string['taskunusedrandomscleanup'] = '未使用のランダム問題を削除する';

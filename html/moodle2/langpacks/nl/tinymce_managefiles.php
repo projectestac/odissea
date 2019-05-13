@@ -31,6 +31,7 @@ $string['hasmissingfiles'] = 'Waarschuwing! Volgende bestanden waarnaar verwijzi
 $string['manageareafiles'] = 'Beheer bestanden die ingebed zijn in de teksteditor';
 $string['managefiles:desc'] = 'Beheer ingebedde bestanden';
 $string['pluginname'] = 'Beheer ingebedde bestanden';
+$string['privacy:metadata'] = 'De beheer ingebedde bestanden TinyMCE-plugin bewaart geen persoonlijke gegevens.';
 $string['refreshfiles'] = 'Ververs de lijst van ontbrekende en ongebruikte bestanden';
 $string['unusedfilesdesc'] = 'Volgende ingebedde bestanden worden niet gebruikt in de tekstzone:';
 $string['unusedfilesheader'] = 'Ongebruikte bestanden';

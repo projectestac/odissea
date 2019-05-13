@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pleaseselectacertainty'] = 'Si us plau, seleccioneu un nivell de certesa.';
+$string['pleaseselectacertainty'] = 'Seleccioneu un nivell de certesa.';
 $string['pluginname'] = 'Retroacció immediata amb QBC (CBM)';
+$string['privacy:metadata'] = 'El connector de comportament de la pregunta Retroacció immediata amb QBC no emmagatzema cap dada personal.';

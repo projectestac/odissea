@@ -38,6 +38,7 @@ $string['interestingness-desc'] = 'Interesse DISC';
 $string['numberofphotos'] = 'Numero di foto';
 $string['pluginname'] = 'Flickr';
 $string['privacy:metadata:block_tag_flickr'] = 'Il pluign blocco "Flickr" non memorizza dati personali.';
+$string['privacy:metadata:block_tag_flickr:tags'] = 'I valori dei tag inviati in formato CSV per cercare immagini di Flickr.';
 $string['relevance'] = 'Rilevanza';
 $string['sortby'] = 'Ordina per';
 $string['tag_flickr:addinstance'] = 'Aggiungere blocco Flickr';

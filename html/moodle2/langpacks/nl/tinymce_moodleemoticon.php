@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'Emoticon invoegen';
 $string['pluginname'] = 'Emoticon invoegen';
+$string['privacy:metadata'] = 'De Moodle Emoticon TinyMCE-plugin bewaart geen persoonlijke gegevens.';
 $string['requireemoticon'] = 'Emoticon filter vereist';
 $string['requireemoticon_desc'] = 'Indien ingeschakeld zal de emoticon-knop alleen zichtbaar zijn als de emoticon-filter is ingeschakeld in de tekst-editor-context.';

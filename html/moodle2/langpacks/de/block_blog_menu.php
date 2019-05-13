@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_menu:addinstance'] = 'Block \'Blogmenü\' hinzufügen';
+$string['blog_menu:addinstance'] = 'Neuen Block \'Blogmenü\' hinzufügen';
 $string['pluginname'] = 'Blogmenü';
 $string['privacy:metadata'] = 'Der Block Blogmenü zeigt nur Daten an, die an anderen Orten gespeichert sind.';

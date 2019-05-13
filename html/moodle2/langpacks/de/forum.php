@@ -129,7 +129,7 @@ $string['deletesure'] = 'Möchten Sie diesen Beitrag wirklich löschen?';
 $string['deletesureplural'] = 'Möchten Sie diesen Beitrag und alle Antworten wirklich löschen? ({$a} Beiträge)';
 $string['digestmailheader'] = 'Guten Tag,
 
-Diese E-Mail enthält die tägliche Zusammenfassung neuer Forenbeiträge von {$a->sitename}. Die Einstellungen zu den E-Mails aus Foren können Sie über {$a->userprefs} ändern.
+diese E-Mail enthält die tägliche Zusammenfassung neuer Forenbeiträge von {$a->sitename}. Die Einstellungen zu den E-Mails aus Foren können Sie über {$a->userprefs} ändern.
 
 Ihr E-Learning-Team';
 $string['digestmailpost'] = 'Einstellungen zur Zusammenfassung neuer Forenbeiträge ändern';
@@ -137,7 +137,7 @@ $string['digestmailpostlink'] = 'Einstellungen für die Forumszusammenfassung ä
 $string['digestmailprefs'] = 'Ihr Profil';
 $string['digestmailsubject'] = '{$a}: Zusammenfassung des Forums';
 $string['digestmailtime'] = 'Termin für Foren- Zusammenfassungen';
-$string['digestsentusers'] = 'Die E-Mail-Zusammenfassung wurde erfolgreich an {$a} Teilnehmer/innen versandt.';
+$string['digestsentusers'] = 'Die E-Mail-Zusammenfassung wurde erfolgreich an {$a} Teilnehmer/innen gesendet.';
 $string['disallowsubscribe'] = 'Das Forum kann nicht abonniert werden';
 $string['disallowsubscribeteacher'] = 'Das Forum kann nicht abonniert werden (nur Trainer/innen)';
 $string['disallowsubscription'] = 'Abonnement';
@@ -150,7 +150,7 @@ $string['discussionmoved'] = 'Dieses Thema wurde verschoben nach \'{$a}\'.';
 $string['discussionmovedpost'] = 'Dieses Thema wurde verschoben nach <a href="{$a->discusshref}">hier</a> ins Forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Thema';
 $string['discussionnownotsubscribed'] = '{$a->name} wird nicht benachrichtigt über neue Beiträge zu \'{$a->name}\' in \'{$a->forum}\'.';
-$string['discussionnowsubscribed'] = '{$a->name} wird benachrichtigt über neue Beiträge zu \'{$a->name}\' in \'{$a->forum}\'.';
+$string['discussionnowsubscribed'] = '{$a->name} wird benachrichtigt über neue Beiträge zu \'{$a->discussion}\' in \'{$a->forum}\'.';
 $string['discussionpin'] = 'Anpinnen';
 $string['discussionpinned'] = 'Angepinnt';
 $string['discussionpinned_help'] = 'Angepinnte Themen bleiben in der Themenliste des Forums immer exponiert am Anfang stehen.';
@@ -229,7 +229,7 @@ $string['forcedreadtracking_desc'] = 'Diese Option ermöglicht es in Foren, das 
 $string['forcesubscribed'] = 'Dieses Forum muss von allen abonniert werden';
 $string['forcesubscribed_help'] = 'Das Forum ist so eingestellt, dass Sie keine Themen abbestellen können.';
 $string['forum'] = 'Forum';
-$string['forum:addinstance'] = 'Forum hinzufügen';
+$string['forum:addinstance'] = 'Neues Forum hinzufügen';
 $string['forum:addnews'] = 'Ankündigungen hinzufügen';
 $string['forum:addquestion'] = 'Frage hinzufügen';
 $string['forum:allowforcesubscribe'] = 'Einschreibung erzwingen zulassen';
@@ -299,7 +299,7 @@ $string['invalidparentpostid'] = 'Vorgänger Beitrags-ID war ungültig.';
 $string['invalidpostid'] = 'Ungültige Beitrags-ID {$a}';
 $string['lastpost'] = 'Letzter Beitrag';
 $string['learningforums'] = 'Lernforen';
-$string['lockdiscussionafter'] = 'Themen bei längerer Inaktivität sperren';
+$string['lockdiscussionafter'] = 'Themen bei zu langer Inaktivität sperren';
 $string['lockdiscussionafter_help'] = 'Themen können automatisch gesperrt werden, wenn eine angegebene Zeit seit der letzten Antwort überschritten ist.
 
 Nutzer/innen mit dem Recht, in gesperrten Themen zu antworten, können ein Thema erneut öffnen und dort antworten.';
@@ -448,8 +448,8 @@ $string['prevdiscussiona'] = 'Vorheriges Thema: {$a}';
 $string['privacy:digesttypenone'] = 'Wir haben keine Daten zum bevorzugten Übersichtstyp für dieses Forum.';
 $string['privacy:digesttypepreference'] = 'Sie haben den folgenden Übersichtstyp für das Forum ausgewählt: "{$a->type}".';
 $string['privacy:discussionsubscriptionpreference'] = 'Sie haben die folgende Abonnementeinstellung für das Forum ausgewählt: "{$a->preference}"';
-$string['privacy:metadata:core_rating'] = 'Das Forum verwendet das Subsystem \'Bewertungen\', um die Bewertung von Beiträgen zu ermöglichen.';
-$string['privacy:metadata:core_tag'] = 'Das Forum verwendet das Subsystem \'Schlagwörter\', um die Verschlagwortung von Beiträgen zu ermöglichen.';
+$string['privacy:metadata:core_rating'] = 'Das Forum verwendet das Bewertungs-Subsystem, um eine Bewertung von Beiträgen zu ermöglichen.';
+$string['privacy:metadata:core_tag'] = 'Das Forum verwendet das Tag-Subsystem, um Beiträge zu markieren, zu verschlagworten und zu kategorisieren.';
 $string['privacy:metadata:forum_digests'] = 'Information zu den Übersichtseinstellungen für jedes Forum';
 $string['privacy:metadata:forum_digests:forum'] = 'Das abonnierte Forum';
 $string['privacy:metadata:forum_digests:maildigest'] = 'Die Übersichtseinstellungen';
@@ -458,7 +458,7 @@ $string['privacy:metadata:forum_discussions'] = 'Information zu den individuelle
 $string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - was speichert dieses Feld?';
 $string['privacy:metadata:forum_discussions:name'] = 'Das Thema, das für die Diskussion gewählt wurde';
 $string['privacy:metadata:forum_discussions:timemodified'] = 'Die Zeit, zu der die Diskussion zuletzt geändert wurde';
-$string['privacy:metadata:forum_discussion_subs'] = 'Information zu den Einschreibungen zu einzelnen Forendiskussionen';
+$string['privacy:metadata:forum_discussion_subs'] = 'Information zu den Einschreibungen in einzelnen Forendiskussionen';
 $string['privacy:metadata:forum_discussion_subs:discussionid'] = 'ID der Diskussion, in der Nutzer eingeschrieben ist';
 $string['privacy:metadata:forum_discussion_subs:preference'] = 'Startzeit der Einschreibung';
 $string['privacy:metadata:forum_discussion_subs:userid'] = 'ID des Nutzers, der in die Diskussion eingeschrieben ist';
@@ -474,8 +474,8 @@ $string['privacy:metadata:forum_posts:subject'] = 'Der Betreff des Forumsbeitrag
 $string['privacy:metadata:forum_posts:totalscore'] = 'Die Mitteilung des Forumsbeitrags.';
 $string['privacy:metadata:forum_posts:userid'] = 'Die ID der Person, die den Forumsbeitrag angelegt hat';
 $string['privacy:metadata:forum_queue'] = 'Temporärer Log für Beiträge, die mit der Tageszusammenfassung versandt werden.';
-$string['privacy:metadata:forum_queue:discussionid'] = 'ID der Forendiskussion';
-$string['privacy:metadata:forum_queue:postid'] = 'ID des Forenbeitrag';
+$string['privacy:metadata:forum_queue:discussionid'] = 'Forendiskussions-ID';
+$string['privacy:metadata:forum_queue:postid'] = 'Forenbeitrags-ID';
 $string['privacy:metadata:forum_queue:timemodified'] = 'Änderungszeitpunkt des Originalbeitrags';
 $string['privacy:metadata:forum_queue:userid'] = 'Nutzer, der über Beitrag informiert werden soll';
 $string['privacy:metadata:forum_read'] = 'Information über gelesene Beiträge des Nutzers';
@@ -491,7 +491,7 @@ $string['privacy:metadata:forum_track_prefs'] = 'Information welche Foren der Nu
 $string['privacy:metadata:forum_track_prefs:forumid'] = 'Forum, das Lesemarkierung aktiviert hat';
 $string['privacy:metadata:forum_track_prefs:userid'] = 'ID des Nutzers, dem Forum Lesemarkierung zugeordnet ist';
 $string['privacy:metadata:preference:autosubscribe'] = 'Ob Forum abonniert wird, wenn man dort einen Beitrag erstellt hat';
-$string['privacy:metadata:preference:maildigest'] = 'Systemweite E-Mail-Benachrichtigungseinstellung';
+$string['privacy:metadata:preference:maildigest'] = 'Systemweite Einstellung für E-Mail-Digests';
 $string['privacy:metadata:preference:markasreadonnotification'] = 'Ob Forenbeiträge als gelesen gekennzeichnet werden sollen, wenn Mitteilung versandt wird';
 $string['privacy:metadata:preference:trackforums'] = 'Ob Lesekennzeichnug markiert wird';
 $string['privacy:postwasread'] = 'Der Beitrag wurde erstmals am {$a->firstread} und zuletzt am  {$a->lastread} gelesen.';
@@ -533,7 +533,7 @@ $string['rsstype'] = 'RSS Feed für dieses Forum';
 $string['rsstypedefault'] = 'RSS Feed Typ';
 $string['rsstype_help'] = 'Um RSS Feeds für diese Aktivität zu aktivieren, wählen Sie entweder Themen oder Beiträge für diesen Feed aus.';
 $string['search'] = 'Suche';
-$string['search:activity'] = 'Forum - Aktivitätsinformation';
+$string['search:activity'] = 'Forum - Beschreibung';
 $string['searchdatefrom'] = 'Beiträge müssen neuer sein als';
 $string['searchdateto'] = 'Beiträge müssen älter sein als';
 $string['searchforumintro'] = 'Tragen Sie die Suchbegriffe in einem oder mehreren Feldern ein:';
@@ -588,7 +588,7 @@ $string['subscriptions'] = 'Abonnements';
 $string['tagarea_forum_posts'] = 'Forumsbeiträge';
 $string['tagsdeleted'] = 'Forumsschlagwörter wurden gelöscht';
 $string['thisforumisthrottled'] = 'Für dieses Forum ist eine Höchstzahl von Beiträgen innerhalb eines bestimmten Zeitraums festgelegt worden. Dies gilt nach {$a->blockafter} Beiträgen innerhalb von {$a->blockperiod}';
-$string['timedhidden'] = 'Zeitgesteuerter Status: Für Teilnehmer/innen verbergen';
+$string['timedhidden'] = 'Zeitgesteuerter Status: Für Teilnehmer/innen verborgen';
 $string['timedposts'] = 'Zeitgesteuerte Beiträge';
 $string['timedvisible'] = 'Zeitgesteuerter Status: Für Teilnehmer/innen sichtbar';
 $string['timestartenderror'] = 'Das Forumsende muss nach dem Forumsbeginn liegen.';
@@ -601,7 +601,6 @@ $string['trackingtype'] = 'Forumstracking';
 $string['trackingtype_help'] = 'Wenn diese Option aktiviert ist, sehen Teilnehmer/innen gelesene und ungelesene Beiträge unterschiedlich im Forum markiert.
 
 * Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür einen Eintrag in der Forumsadministration, wenn sie vorher das Forumstracking in ihren persönlichen Einstellungen aktiviert haben.
-* Verpflichtend - Die Markierung ist immer an, egal ob Teilnehmer/innen das Forumstracking in ihren persönlichen Einstellungen aktiviert haben oder nicht.
 * Aus - Die Markierung ist immer aus. Gelesene und ungelesene Beiträge werden gleich behandelt.';
 $string['trackreadposts_header'] = 'Forum verfolgen';
 $string['unread'] = 'Ungelesen';

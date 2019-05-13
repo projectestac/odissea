@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '用語集自動リンク';
+$string['glossarycategory'] = '{$a->glossary}: カテゴリ {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
 $string['privacy:metadata'] = '用語集自動リンクプラグインはどのような個人データも保存しません。';

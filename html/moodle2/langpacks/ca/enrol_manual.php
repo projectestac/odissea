@@ -45,9 +45,9 @@ $string['expiredaction'] = 'Acció de venciment de la inscripció';
 $string['expiredaction_help'] = 'Seleccioneu l\'acció a realitzar quan la inscripció venci. Tingueu en compte que algunes dades d\'usuari i configuracions es purguen del curs durant la desinscripció del curs.';
 $string['expirymessageenrolledbody'] = 'Apreciat / apreciada {$a->user},
 
-Aquesta és una notificació que la vostra inscripció al curs \'{$a->course}\' és a punt de vèncer el {$a->timeend}.
+Aquesta és una notificació que la vostra inscripció al curs «{$a->course}» és a punt de vèncer el {$a->timeend}.
 
-Si us cal ajuda, si us plau poseu-vos en contacte amb {$a->enroller}.';
+Si us cal ajuda, poseu-vos en contacte amb {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificació de venciment d\'inscripció';
 $string['expirymessageenrollerbody'] = 'La inscripció al curs \'{$a->course}\' vencerà en {$a->threshold} per als usuaris següents:
 

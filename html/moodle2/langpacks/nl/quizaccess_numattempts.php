@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Aantal toegestane pogingen: {$a}';
 $string['pluginname'] = 'Toegangsregel: aantal toegestane pogingen';
+$string['privacy:metadata'] = 'De aantal pogingen testtoegangsregel-plugin bewaart geen persoonlijke gegevens.';

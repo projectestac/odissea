@@ -27,9 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Beschikbare opslag voor logs';
 $string['configlogplugins'] = 'Schakel alle vereiste plugins in en schik ze in de juiste volgorde.';
+$string['exportlog'] = 'Logs mee opnemen tijdens export.';
+$string['exportlogdetail'] = 'Logs die verband houden met de gebruiker mee opnemen in de export.';
 $string['logging'] = 'Logging';
 $string['managelogging'] = 'Beheer opslag voor log';
 $string['pluginname'] = 'Log opslagbeheer';
+$string['privacy:metadata:logstore'] = 'De log opslagplaatsen';
+$string['privacy:path:logs'] = 'Logs';
+$string['privacy:request:origin:cli'] = 'Command line tool';
+$string['privacy:request:origin:restore'] = 'De backup die teruggezet wordt';
+$string['privacy:request:origin:web'] = 'Standaard webverzoek';
+$string['privacy:request:origin:ws'] = 'Mobiele app of web service';
 $string['reportssupported'] = 'Ondersteunde rapporten';
 $string['subplugintype_logstore'] = 'Log opslag';
 $string['subplugintype_logstore_plural'] = 'Log opslag';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Поле «Широта/Долгота»';
 $string['pluginname'] = 'Широта и долгота';
+$string['privacy:metadata'] = 'Компонент поля базы данных «Широта и долгота» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';

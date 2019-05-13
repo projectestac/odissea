@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Veld voor Meerkeuzemenu';
 $string['pluginname'] = 'Multimenu';
+$string['privacy:metadata'] = 'De meerdere keuze-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

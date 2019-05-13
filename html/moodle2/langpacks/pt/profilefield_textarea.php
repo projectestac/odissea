@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Área de texto';
-$string['privacy:metadata:profile_field_textarea:data'] = 'Os dados de utilizador armazenados.';
-$string['privacy:metadata:profile_field_textarea:dataformat'] = 'O formato dos dados de utilizador.';
-$string['privacy:metadata:profile_field_textarea:fieldid'] = 'O ID do campo de perfil';
-$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Informação adicional do utilizador é armazenada aqui.';
-$string['privacy:metadata:profile_field_textarea:userid'] = 'O ID do utilizador cujos dados são armazenados pelo módulo Área de texto.';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Os dados de utilizador armazenados no campo de perfil do tipo Área de texto';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'O formato dos dados de utilizador armazenados no campo de perfil do tipo Área de texto';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID do campo de perfil';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Informação adicional do perfil';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'O ID do utilizador cujos dados são armazenados no campo de perfil do tipo Área de texto';

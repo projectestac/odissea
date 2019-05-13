@@ -92,6 +92,7 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
         $search = '/for \(var i=0; i<DropTotal; i\+\+\)\{.*?\}/s';
         $replace = ''
             ."var myParentNode = null;\n"
+            ."var myNextNode = null;\n"
             ."if (navigator.appName=='Microsoft Internet Explorer' && (document.documentMode==null || document.documentMode<8)) {\n"
             ."	// IE8+ (compatible mode) IE7, IE6, IE5 ...\n"
             ."} else {\n"
@@ -99,6 +100,27 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
             ."	var obj = document.getElementsByTagName('div');\n"
             ."	if (obj && obj.length) {\n"
             ."		myParentNode = obj[obj.length - 1].parentNode;\n"
+                    // handle situation where script is running after page has loaded (e.g. Boost theme)
+            ."		if (myParentNode.tagName.toLowerCase()=='body') {\n"
+                        // locate Check Buttons of Feedback div
+            ."			myNextNode = document.getElementById('CheckButtonDiv');\n"
+            ."			if (myNextNode) {\n"
+            ."				myNextNode = myNextNode.nextSibling;\n"
+            ."			} else {\n"
+            ."				myNextNode = document.getElementById('FeedbackDiv');\n"
+            ."			}\n"
+            ."			if (myNextNode) {\n"
+            ."				myParentNode = myNextNode.parentNode;\n"
+            ."			} else {\n"
+                            // desperate search for other expected elements !!
+            ."				myParentNode = document.getElementById('InstructionsDiv');\n"
+            ."				if (myParentNode) {\n"
+            ."					myParentNode = myParentNode.parentNode;\n"
+            ."				} else {\n"
+            ."					myParentNode = document.querySelector('.Titles').parentNode;\n"
+            ."				}\n"
+            ."			}\n"
+            ."		}\n"
             ."		var css_prefix = new Array('webkit', 'khtml', 'moz', 'ms', 'o', '');\n"
             ."		for (var i=0; i<css_prefix.length; i++) {\n"
             ."			if (css_prefix[i]=='') {\n"
@@ -122,7 +144,7 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
             ."		div.setAttribute('class', 'DropLine');\n"
             ."		div.setAttribute('align', 'center');\n"
             ."		div.innerHTML = '&nbsp;<br />&nbsp;';\n"
-            ."		myParentNode.appendChild(div);\n"
+            ."		myParentNode.insertBefore(div, myNextNode);\n"
             ."	} else {\n"
             ."		document.write('".'<div id="'."Drop' + i + '".'" class="DropLine" align="center"'.">&nbsp;<br />&nbsp;</div>');\n"
             ."	}\n"
@@ -140,7 +162,7 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
                 ."	div.setAttribute('id', 'JMixPrefix');\n"
                 ."	div.setAttribute('class', 'CardStyle');\n"
                 ."	div.innerHTML = '$prefix';\n"
-                ."	myParentNode.appendChild(div);\n"
+                ."	myParentNode.insertBefore(div, myNextNode);\n"
                 ."} else {\n"
                 ."	document.write('".'<div id="JMixPrefix" class="CardStyle"'.">$prefix</div>');\n"
                 ."}\n"
@@ -152,7 +174,7 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
             ."		var div = document.createElement('div');\n"
             ."		div.setAttribute('id', 'D' + i);\n"
             ."		div.setAttribute('class', 'CardStyle');\n"
-            ."		div = myParentNode.appendChild(div);\n"
+            ."		div = myParentNode.insertBefore(div, myNextNode);\n"
             ."		HP_add_listener(div, 'mousedown', 'beginDrag(event, ' + i + ')');\n"
             ."	} else {\n"
             ."		document.write('".'<div id="'."D' + i + '".'" class="CardStyle" onmousedown="'."beginDrag(event, ' + i + ')".'"'."></div>');\n"
@@ -167,14 +189,14 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
                 ."	div.setAttribute('id', 'JMixSuffix');\n"
                 ."	div.setAttribute('class', 'CardStyle');\n"
                 ."	div.innerHTML = '$suffix';\n"
-                ."	myParentNode.appendChild(div);\n"
+                ."	myParentNode.insertBefore(div, myNextNode);\n"
                 ."} else {\n"
                 ."	document.write('".'<div id="JMixsuffix" class="CardStyle"'.">$suffix</div>');\n"
                 ."}\n"
             ;
         }
         $replace .= ''
-            ."myParentNode = div = null;"
+            ."myParentNode = myNextNode = div = null;"
         ;
         $this->bodycontent = preg_replace($search, $replace, $this->bodycontent, 1);
     }
@@ -218,7 +240,7 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
         $drag = 'beginDrag,doDrag,endDrag';
         // start list of function names
         $names = parent::get_js_functionnames();
-        $names .= ($names ? ',' : '')."CardSetHTML,$drag,CheckAnswer,TimesUp,WriteToGuess,$drag";
+        $names .= ($names ? ',' : '')."CardSetHTML,$drag,CheckAnswer,TimesUp,WriteToGuess,$drag,SetInitialPositions";
         return $names;
     }
 
@@ -422,6 +444,25 @@ class mod_hotpot_attempt_hp_6_jmix_renderer extends mod_hotpot_attempt_hp_6_rend
             ;
             //$substr = substr_replace($substr, $insert, $pos, 0);
         }
+    }
+
+    /**
+     * fix_js_SetInitialPositions
+     *
+     * @param xxx $str (passed by reference)
+     * @param xxx $start
+     * @param xxx $length
+     */
+    function fix_js_SetInitialPositions(&$str, $start, $length)  {
+        $substr = substr($str, $start, $length);
+
+        // prevent error on Boost-based themes
+        if ($pos = strpos($substr, '(RowWidth + Cds[i].GetW() + 5) < DivWidth')) {
+            $insert = 'RowWidth==0 || ';
+            $substr = substr_replace($substr, $insert, $pos, 0);
+        }
+
+        $str = substr_replace($str, $substr, $start, $length);
     }
 
     /**

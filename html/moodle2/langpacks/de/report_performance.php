@@ -50,5 +50,5 @@ $string['morehelp'] = 'weitere Hilfe';
 $string['performancereportdesc'] = 'Diese Übersicht zeigt Faktoren auf, die sich auf die Performance der Website {$a} auswirken könnten.';
 $string['performance:view'] = 'Performanceübersicht anzeigen';
 $string['pluginname'] = 'Performanceübersicht';
-$string['privacy:metadata'] = 'Das Performance-Übersichts-Plugink speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Performance-Übersichts-Plugink speichert keine personenbezogenen Daten.';
 $string['value'] = 'Wert';

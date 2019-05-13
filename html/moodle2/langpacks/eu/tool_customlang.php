@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['checkin'] = 'Gorde kateak hizkuntza-paketean';
-$string['checkout'] = 'ireki hizkuntza-paketea editatzeko';
+$string['checkout'] = 'Ireki hizkuntza-paketea editatzeko';
 $string['checkoutdone'] = 'Hizkuntza-paketea eguneratu da';
 $string['checkoutinprogress'] = 'Hizkuntza-paketea eguneratzen';
-$string['confirmcheckin'] = 'Aldatutako kateak zure hizkuntza-pakete lokalean gordetzekotan zara. Honela pertsonalizatutako kateak itzultzailearengandik datuen karpetara esportatuko dira eta Moodle aldatutako kateak erabiltzen hasiko da. Sakatu \'Jarraitu\' botoiari egiaztatzeko.';
-$string['customlang:edit'] = 'Itzulpen lokala editatu ';
-$string['customlang:view'] = 'Itzulpen lokala ikusi';
+$string['confirmcheckin'] = 'Aldatutako kateak zure hizkuntza-pakete lokalean gordetzekotan zara. Honela pertsonalizatutako kateak itzultzailearengandik zure guneko datuen karpetara esportatuko dira eta zure gunea aldatutako kateak erabiltzen hasiko da. Egin klik \'Jarraitu\' botoian egiaztatzeko.';
+$string['customlang:edit'] = 'Editatu itzulpen lokala';
+$string['customlang:view'] = 'Ikusi itzulpen lokala';
 $string['filter'] = 'Iragazi kateak';
 $string['filtercomponent'] = 'Erakutsi osagai hauek dituzten kateak';
 $string['filtercustomized'] = 'Pertsonalizatuak bakarrik';
@@ -50,11 +50,11 @@ $string['markuptodate'] = 'markatu eguneratu gisa';
 $string['modifiedno'] = 'Ez dago aldatutako katerik gordetzeko.';
 $string['modifiednum'] = '{$a} aldatutako kate daude. Aldaketa horiek zure hizkuntza-paketean gorde nahi dituzu?';
 $string['nostringsfound'] = 'Ez da katerik aurkitu. Mesedez, aldatu iragazkiaren ezarpenak.';
-$string['placeholder'] = 'Leku-markak';
-$string['placeholder_help'] = 'Leku-markak `{$a}` edo `{$a->something}` moduko sententzia bereziak dira. Katea erakusten denean balio batekin ordezkatzen dira.
+$string['placeholder'] = 'Gakoak';
+$string['placeholder_help'] = 'Gakoak `{$a}` edo `{$a->zerbait}` moduko sententzia bereziak dira. Katea erakusten denean balio batekin ordezkatzen dira.
 
-Garrantzitsua da leku-marka jatorrizko katean dagoen modu zehatzean kopiatzea. Ez ezazu euskaratu edo aldatu bere norabidea.';
-$string['placeholderwarning'] = 'kateak leku-marka du';
+Garrantzitsua da gakoa jatorrizko katean dagoen modu zehatzean kopiatzea. Ez ezazu euskaratu edo aldatu bere norabidea.';
+$string['placeholderwarning'] = 'kateak gakoren bat dauka';
 $string['pluginname'] = 'Hizkuntzen pertsonalizazioa';
 $string['privacy:metadata'] = 'Hizkuntzen pertsonalizazioa pluginak ez du datu pertsonalik biltzen.';
 $string['savecheckin'] = 'Gorde aldaketak hizkuntza-paketean';

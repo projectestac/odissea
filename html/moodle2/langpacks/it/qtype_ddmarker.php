@@ -73,6 +73,7 @@ $string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, inserisci le eti
 $string['pluginnamesummary'] = 'Gli indicatori sono trascinati e rilasciati su un\'immagine di sfondo.';
 $string['previewareaheader'] = 'Anteprima';
 $string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Trascina e rilascia indicatori\' non memorizza dati personali.';
 $string['refresh'] = 'Aggiorna anteprima';
 $string['shape'] = 'Forma';
 $string['shape_circle'] = 'Cerchio';

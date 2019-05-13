@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Курсив';
+$string['privacy:metadata'] = 'Плагин atto_italic не хранит никаких персональных данных.';

@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Φύλο εργασίας Excel';
+$string['eventgradeexported'] = 'Η εξαγωγή βαθμών σε XLS έγινε';
+$string['pluginname'] = 'Φύλλο εργασίας Excel';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εξαγωγή βαθμών σε υπολογιστικό φύλλο Excel» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['timeexported'] = 'Τελευταία λήψη από αυτό το μάθημα';
 $string['xls:publish'] = 'Δημοσίευση εξαγωγής βαθμών σε XLS';
 $string['xls:view'] = 'Χρήση εξαγωγής βαθμών σε Excel';

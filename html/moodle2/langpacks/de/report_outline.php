@@ -36,4 +36,4 @@ $string['page-report-outline-index'] = 'Kurs-Lernzielbericht';
 $string['page-report-outline-user'] = 'Nutzer-Lernzielbericht';
 $string['page-report-outline-x'] = 'Alle Lernzielberichte';
 $string['pluginname'] = 'Kursaktivität';
-$string['privacy:metadata'] = 'Das Aktivitätenberichts-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Aktivitätenberichts-Plugin speichert keine personenbezogenen Daten.';

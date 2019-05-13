@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subratllat';
+$string['privacy:metadata'] = 'El connector atto_underline no emmagatzema cap dada personal.';

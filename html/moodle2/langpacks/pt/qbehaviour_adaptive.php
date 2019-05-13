@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['disregardedwithoutpenalty'] = 'A submissão é inválida e não foi considerada sem penalização.';
-$string['gradingdetails'] = 'Nota desta submissão: {$a->raw}/{$a->max}.';
-$string['gradingdetailsadjustment'] = 'Com as penalizações anteriores dá <strong>{$a->cur}/{$a->max}</strong>.';
+$string['disregardedwithoutpenalty'] = 'A submissão é inválida, por isso, não foi considerada e não houve penalização.';
+$string['gradingdetails'] = 'Nota desta submissão: {$a->raw}/{$a->max}';
+$string['gradingdetailsadjustment'] = 'Considerando as tentativas anteriores, o resultado é <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Esta submissão teve uma penalização de {$a}.';
-$string['gradingdetailspenaltytotal'] = 'Total de penalizações até ao momento: {$a}.';
+$string['gradingdetailspenaltytotal'] = 'Total de penalizações (até ao momento): {$a}.';
 $string['gradingdetailswithadjustment'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Considerando as tentativas anteriores, o resultado é <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailswithadjustmentpenalty'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Considerando as tentativas anteriores, o resultado é <strong>{$a->cur}/{$a->max}</strong>. Esta submissão será sujeita a uma penalização de {$a->penalty}.';
-$string['gradingdetailswithadjustmenttotalpenalty'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Considerando as tentativas anteriores, o resultado é <strong>{$a->cur}/{$a->max}</strong>. Esta submissão será sujeita a uma penalização de {$a->penalty}. Total de penalizações até ao momento: {$a->totalpenalty}.';
+$string['gradingdetailswithadjustmenttotalpenalty'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Considerando as tentativas anteriores, o resultado é <strong>{$a->cur}/{$a->max}</strong>. Esta submissão será sujeita a uma penalização de {$a->penalty}. Total de penalizações (até ao momento): {$a->totalpenalty}.';
 $string['gradingdetailswithpenalty'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Esta submissão será sujeita a uma penalização de {$a->penalty}.';
-$string['gradingdetailswithtotalpenalty'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Esta submissão será sujeita a uma penalização de {$a->penalty}. Total de penalizações até ao momento: {$a->totalpenalty}.';
+$string['gradingdetailswithtotalpenalty'] = 'Nota para esta submissão: {$a->raw}/{$a->max}. Esta submissão será sujeita a uma penalização de {$a->penalty}. Total de penalizações (até ao momento): {$a->totalpenalty}.';
 $string['notcomplete'] = 'Por responder';
 $string['pluginname'] = 'Modo adaptável';
 $string['privacy:metadata'] = 'O módulo Comportamento das perguntas Modo adaptável não armazena dados pessoais.';

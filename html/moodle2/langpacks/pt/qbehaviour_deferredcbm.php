@@ -31,27 +31,28 @@ $string['assumingcertainty'] = 'Não selecionou um grau de certeza. Grau assumid
 $string['averagecbmmark'] = 'Nota média ABGC';
 $string['basemark'] = 'Nota base {$a}';
 $string['breakdownbycertainty'] = 'Decompor por grau de certeza';
-$string['cbmbonus'] = 'Bónus ABGC (avaliação com base no grau de certeza)';
-$string['cbmgradeexplanation'] = 'Para avaliação com base no grau de certeza,  a nota acima é mostrada em função do valor máximo para C=1 (totalmente correto).';
+$string['cbmbonus'] = 'Bónus ABGC (Avaliação com Base no Grau de Certeza)';
+$string['cbmgradeexplanation'] = 'Para avaliação com base no grau de certeza, a nota acima é mostrada em função do valor máximo para C=1 (totalmente correto).';
 $string['cbmgrades'] = 'Notas ABGC';
-$string['cbmgrades_help'] = 'Na Avaliação com Base no Grau de Certeza (ABCG) ter todas as questões corretas com C=1 (grau de certeza reduzido) equivale a uma pontuação de 100%. As notas podem ser tão altas quanto 300% se todas as questões estiverem corretas com C=3 (grau de certeza elevado). Equívocos (ou seja, respostas erradas dadas com elevado grau de certeza) diminuem muito mais as notas do que quando se reconhece que as respostas erradas foram dadas com reduzido grau de certeza. Isto poderá até resultar em notas globais negativas.
+$string['cbmgrades_help'] = 'Na Avaliação com Base no Grau de Certeza (ABCG) ter todas as questões corretas com C=1 (grau de certeza baixo) equivale a uma pontuação de 100%. As notas podem ser tão altas quanto 300%, se todas as questões estiverem corretas com C=3 (grau de certeza alto). Equívocos (ou seja, respostas erradas dadas com um grau de certeza alto) diminuem muito mais as notas do que quando se reconhece que as respostas erradas foram dadas com um grau de certeza baixo. Isto poderá até resultar em notas globais negativas.
 
-**Precisão** significa';
+**Precisão** é a % da resposta correta ignorando a certeza, mas ponderada para a nota máxima de cada pergunta. Distinguir com sucesso respostas mais e menos confiáveis dá uma nota melhor do que selecionar a mesma certeza para cada pergunta. Isso é refletido no **Bónus ABGC**.
+**Precisão** + **Bónus ABGC** é uma medida de conhecimento melhor que **Precisão**. Equívocos podem levar a um bónus negativo, um aviso para analisar cuidadosamente o que é e o que não é conhecido.';
 $string['cbmmark'] = 'Nota da ABGC {$a}';
 $string['certainty'] = 'Certeza';
-$string['certainty1'] = 'C=1 (Grau de certeza Reduzido: <67%)';
+$string['certainty1'] = 'C=1 (Grau de certeza Baixo: <67%)';
 $string['certainty-1'] = 'Não faço ideia';
 $string['certainty2'] = 'C=2 (Grau de certeza Médio: >67%)';
-$string['certainty3'] = 'C=3 (Grau de certeza Elevado: >80%)';
+$string['certainty3'] = 'C=3 (Grau de certeza Alto: >80%)';
 $string['certainty_help'] = 'A Avaliação com Base no Grau de Certeza (ABGC) requer que indique o quão certa acha que a sua resposta está. Os níveis disponíveis são:
 
-Grau de certeza | C=1 (Reduzido) | C=2 (Médio) | C=3 (Elevado)
+Grau de certeza | C=1 (Baixo) | C=2 (Médio) | C=3 (Alto)
 ------------------- | ------------ | --------- | ----------------
-Nota se correto | 1 | 2 | 3
-Nota se errado | 0 | -2 | -6
-Probabilidade | <67% | 67-80% | >80%
+Nota se correto |     1     |       2      |     3
+Nota se errado  |     0     |       -2     |    -6
+Probabilidade    | <67% | 67-80% | >80%
 
-As respostas sem certeza obterão melhores notas se for reconhecido um grau reduzido de certeza. Por exemplo, se houver mais do que 1 em 3 hipóteses de a resposta estar errada, deverá ser indicado C=1 e evitar o risco de ter uma nota negativa.';
+As respostas sem certeza obterão melhores notas se for reconhecido um grau de certeza baixo. Por exemplo, se houver mais do que 1 em 3 hipóteses da resposta estar errada, deverá ser indicado C=1 e evitar o risco de ter uma nota negativa.';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Não faço ideia';
 $string['certaintyshort2'] = 'C=2';

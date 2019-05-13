@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Einfachauswahl (Radiobutton)';
 $string['pluginname'] = 'Einfachauswahl';
-$string['privacy:metadata'] = 'Die Radiobuttonfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Radiobuttonfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

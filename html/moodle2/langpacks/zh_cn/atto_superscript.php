@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '上标';
+$string['privacy:metadata'] = 'atto_superscript 插件不储存任何私人数据。';

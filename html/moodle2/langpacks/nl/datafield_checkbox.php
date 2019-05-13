@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Veld met Selectievakje';
 $string['pluginname'] = 'Keuzevakje';
+$string['privacy:metadata'] = 'De selectievakje-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Engadir unha nota nova a {$a} persoas';
+$string['addbulknotedone'] = 'Nota engadida a {$a} persoas';
+$string['addbulknotedonesingle'] = 'Nota engadida a 1 persoa';
+$string['addbulknotesingle'] = 'Engadir unha nota nova a 1 persoa';
 $string['addnewnote'] = 'Engadir unha nova nota';
 $string['addnewnoteselect'] = 'Seleccione os usuarios para escribir notas sobre';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
@@ -57,6 +61,13 @@ $string['page-notes-index'] = 'Notas da páxina principal';
 $string['page-notes-x'] = 'Calquera páxina de notas';
 $string['personal'] = 'persoal';
 $string['personalnotes'] = 'Notas persoais';
+$string['privacy:metadata:core_notes'] = 'O compoñente Notes almacena notas de usuario dentro do subsistema central.';
+$string['privacy:metadata:core_notes:content'] = 'O contido da nota.';
+$string['privacy:metadata:core_notes:courseid'] = 'O ID do curso asociado coa nota';
+$string['privacy:metadata:core_notes:created'] = 'A data/hora de creación da nota.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'A data/hora da última modificación da nota.';
+$string['privacy:metadata:core_notes:publishstate'] = 'O estado de publicación da nota.';
+$string['privacy:metadata:core_notes:userid'] = 'O ID do usuario asociado coa nota';
 $string['publishstate'] = 'Contexto';
 $string['publishstate_help'] = 'O contexto dunha nota determina quen pode ver a nota.
 

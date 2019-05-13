@@ -30,5 +30,6 @@ $string['emptyfilelist'] = 'Er zijn geen bestanden om te tonen';
 $string['notitle'] = 'Geen titel';
 $string['pluginname'] = 'Recente bestanden';
 $string['pluginname_help'] = 'Bestanden, recent gebruikt door de huidige gebruiker';
+$string['privacy:metadata'] = 'De recente bestanden opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['recentfilesnumber'] = 'Aantal te tonen recente bestanden';
 $string['recent:view'] = 'Bekijk de recente bestanden opslagruimte-plugin';

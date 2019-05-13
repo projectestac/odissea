@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['algebraicexpression'] = 'Αλγεβρική παράσταση';
 $string['filtername'] = 'Σημειογραφία άλγεβρας';
+$string['privacy:metadata'] = 'Το πρόσθετο «Σημειογραφία άλγεβρας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

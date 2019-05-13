@@ -25,5 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ajaxerror'] = 'Σφάλμα κατά την δημιουργία σύνδεσης για μετατροπή χρονικών τιμών';
+$string['description'] = 'Αποτρέψτε την πρόσβαση μέχρι (ή από) μια καθορισμένη ημερομηνία και ώρα.';
+$string['direction_before'] = 'Ημερομηνία';
+$string['direction_from'] = 'από';
+$string['direction_label'] = 'Κατεύθυνση';
+$string['direction_until'] = 'εώς';
+$string['full_from'] = 'Είναι μετά από <strong>{$a}</strong>';
+$string['full_from_date'] = 'Είναι στις ή μετά από <strong>{$a}</strong>';
 $string['full_until'] = 'Η ημερομηνία είναι πριν από <strong>{$a}</strong>';
 $string['full_until_date'] = 'Η ημερομηνία είναι πριν από το τέλος <strong>{$a}</strong>';
+$string['pluginname'] = 'Περιορισμός με βάση την ημερομηνία';
+$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση την ημερομηνία» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['short_from'] = 'Διατίθεται από <strong>{$a}</strong>';
+$string['short_from_date'] = 'Διατίθεται από <strong>{$a}</strong>';
+$string['short_until'] = 'Διατίθεται μέχρι <strong>{$a}</strong>';
+$string['short_until_date'] = 'Διατίθεται μέχρι το τέλος του <strong>{$a}</strong>';
+$string['title'] = 'Ημερομηνία';

@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Αυτό-ολοκλήρωση';
+$string['alreadyselfcompleted'] = 'Έχετε ήδη σημειώσει τον εαυτό σας ως ολοκληρωμένο σε αυτό το μάθημα';
+$string['completecourse'] = 'Ολοκληρωμένο μάθημα';
+$string['pluginname'] = 'Αυτο-ολοκλήρωση';
+$string['privacy:metadata'] = 'Το μπλοκ αυτο-ολοκλήρωσης εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['selfcompletion:addinstance'] = 'Προσθήκη ενός νέου μπλοκ αυτο-ολοκλήρωσης';
+$string['selfcompletionnotenabled'] = 'Τα κριτήρια αυτο-ολοκλήρωσης δεν έχουν ενεργοποιηθεί για αυτό το μάθημα';

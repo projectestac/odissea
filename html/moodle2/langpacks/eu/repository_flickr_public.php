@@ -39,7 +39,7 @@ $string['commercialuse'] = 'Irudiak komertzialki erabili nahi ditut';
 $string['configplugin'] = 'Flickr Publikoaren ezarpenak';
 $string['creativecommonscommercial'] = 'creative commons commercial baino ez';
 $string['emailaddress'] = 'E-posta helbiea';
-$string['flickr_public:view'] = 'Flickr publikoa erabili fitxategi-hautatzailean';
+$string['flickr_public:view'] = 'Erabili Flickr publikoa fitxategi-hautatzailean';
 $string['fulltext'] = 'Testu osoa';
 $string['information'] = '<div>Lortu <a href="http://www.flickr.com/services/api/keys/">Flickr API Giltza</a> zure Moodle gunerako.</div>';
 $string['invalidemail'] = 'E-posta helbideak ez du balio flickr-erako';

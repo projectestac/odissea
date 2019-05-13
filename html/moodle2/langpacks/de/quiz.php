@@ -176,7 +176,7 @@ $string['completionattemptsexhausteddesc'] = 'Vollständig, wenn alle möglichen
 $string['completionattemptsexhausted_help'] = 'Der Test wird als abgeschlossen markiert, wenn Teilnehmer/innen die maximale Anzahl von Versuchen erreichen.';
 $string['completionpass'] = 'Bewertung für Bestehen notwendig';
 $string['completionpassdesc'] = 'Teilnehmer/in muss eine passende Bewertung erreichen, um diese Aktivität abzuschließen';
-$string['completionpass_help'] = 'Diese Option legt fest, dass diese Aktivität als abgeschlossen gilt, wenn Teilnehmer/innen eine Bewertung erhalten haben.';
+$string['completionpass_help'] = 'Diese Option legt fest, dass diese Aktivität als abgeschlossen gilt, wenn Teilnehmer/innen Bestehensgrenze erreicht haben. Diese wird auf der Übersichtsseite mit den Testfragen festgelegt.';
 $string['configadaptive'] = 'Wenn die Option \'Ja\' gewählt ist, besteht für die Teilnehmer/innen die Möglichkeit, während eines Testversuches mehrere Antworten auf eine Frage zu geben.';
 $string['configattemptsallowed'] = 'Beschränkung der Anzahl an Antwortversuchen  während des Tests.';
 $string['configdecimaldigits'] = 'Anzahl der Nachkommastellen, die bei der Anzeige der Testbewertung aufscheinen sollen.';
@@ -408,7 +408,7 @@ ignoriert)';
 $string['gradesdeleted'] = 'Testbewertungen wurden gelöscht';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'Die abgegebene Bewertung kann nicht Null sein, da dieser Test als Aktivitätsabschluss eine Bewertung verlangt. Setzen Sie die Bewertung auf einen Wert ungleich Null.';
-$string['gradetopassnotset'] = 'Dieses Quiz hat keine \'grade to pass\'-Einstellung, deshalb ist diese Option nicht nutzbar. Bitte nutzen Sie stattdessen die \'require grade\'-Einstellung.';
+$string['gradetopassnotset'] = 'Dieser Test hat keine Bestehensgrenze, Sie könnee diese auf der Seite für die Testfragenverwaltung festlegen.';
 $string['gradingdetails'] = 'Punkte: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Mit früheren Abzügen ergibt dies <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Die Arbeit berücksichtigt einen Abzug von {$a}.';
@@ -480,9 +480,9 @@ $string['matchanswer'] = 'Zugeordnete Antwort';
 $string['matchanswerno'] = 'Zutreffende Antworten {$a}';
 $string['max'] = 'Max';
 $string['maxmark'] = 'Höchstmarke';
-$string['messageprovider:attempt_overdue'] = 'Warnung, wenn die Zeitgrenze zur Testabgabe erreicht wird';
-$string['messageprovider:confirmation'] = 'Bestätigung einer eigenen Testabgabe';
-$string['messageprovider:submission'] = 'Mitteilung bei Testabgaben';
+$string['messageprovider:attempt_overdue'] = 'Systemnachricht zur Fälligkeit von Testabgaben';
+$string['messageprovider:confirmation'] = 'Systemnachricht bei eigener Testabgabe';
+$string['messageprovider:submission'] = 'Systemnachricht bei Testabgaben';
 $string['min'] = 'Min';
 $string['minutes'] = 'Minuten';
 $string['missingcorrectanswer'] = 'Die korrekte Antwort muss angegeben werden.';
@@ -637,7 +637,7 @@ $string['percentcorrect'] = 'Richtig in Prozent';
 $string['pleaseclose'] = 'Ihre Anfrage wurde bearbeitet. Sie können das Fenster jetzt schließen.';
 $string['pluginadministration'] = 'Test-Administration';
 $string['pluginname'] = 'Test';
-$string['popup'] = '"Sicheres" Fenster (nur wenige Browser)';
+$string['popup'] = '"Sicheres" Fenster für Testversuch nutzen';
 $string['popupblockerwarning'] = 'Dieser Bereich des Tests läuft im sicheren Modus ab, d.h. Sie müssen den Test in einem sicheren Fenster bearbeiten. Bitte schalten Sie den Popup-Blocker Ihres Browsers aus.';
 $string['popupnotice'] = 'Teilnehmer/innen sehen den Test in einem sicheren Fenster.';
 $string['preprocesserror'] = 'Fehler bei der Verarbeitung (pre-processing)!';
@@ -646,7 +646,7 @@ $string['previewquestion'] = 'Vorschau der Frage';
 $string['previewquiz'] = 'Vorschau {$a}';
 $string['previewquiznow'] = 'Vorschau ansehen';
 $string['previous'] = 'Letzter Zustand';
-$string['privacy:metadata:core_question'] = 'Die Testaktivität speichert die Nutzung von Testfragen im core_question-Subsystem';
+$string['privacy:metadata:core_question'] = 'Die Testaktivität speichert die Verwendung von Testfragen im Subsystem \'core_question\'.';
 $string['privacy:metadata:quiz'] = 'Die Testaktivität verwendet den Testbericht';
 $string['privacy:metadata:quizaccess'] = 'Die Testaktivität verwendet Testzugriffsregeln';
 $string['privacy:metadata:quiz_attempts'] = 'Details zu jedem Versuch des Tests';
@@ -705,7 +705,7 @@ $string['questiontext'] = 'Fragetext';
 $string['questiontextisempty'] = '[Leerer Fragetext]';
 $string['questiontype'] = 'Fragetyp {$a}';
 $string['questiontypesetupoptions'] = 'Setup-Optionen für Fragetypen';
-$string['quiz:addinstance'] = 'Test hinzufügen';
+$string['quiz:addinstance'] = 'Neuen Test hinzufügen';
 $string['quiz:attempt'] = 'Tests ausprobieren';
 $string['quizavailable'] = 'Der Test ist verfügbar bis {$a}';
 $string['quizclose'] = 'Testschließung';
@@ -831,15 +831,15 @@ $string['reviewofquestion'] = 'Prüfung der Frage {$a->question} in {$a->quiz} f
 $string['reviewopen'] = 'Später, während der Test noch geöffnet ist';
 $string['reviewoptions'] = 'Was sollen die Teilnehmer/innen zu welchem Zeitpunkt sehen';
 $string['reviewoptionsheading'] = 'Berichtsoptionen';
-$string['reviewoptionsheading_help'] = 'Mit diesen Optionen legen Sie fest, welche Informationen angezeigt werden, wenn Teilnehmer/innen einen Versuch wiederholen oder sich den Ergebnisbericht anschauen.
+$string['reviewoptionsheading_help'] = 'Mit diesen Optionen legen Sie fest, welche Informationen angezeigt werden, wenn Teilnehmer/innen einen Versuch erneut ansehen oder sich den Ergebnisbericht anschauen.
 
-**Während des Versuchs** steuert ein Feedback im direkten Zusammenhang mit der aktuell bearbeiteten Frage, also \'Interaktiv mit mehreren Versuchen\'.
+**Während des Versuchs** – Einstellungen sind nur mit gewissen Frageverhalten wie \'Mehrfachbeantwortung\' relevant, und steuern zum Beispiel das Feedback im direkten Zusammenhang mit der aktuell bearbeiteten Frage.
 
-**Direkt nach dem Versuch** bedeutet, dass ein Feedback innerhalb von zwei Minuten gezeigt wird, nachdem Test abgeschickt und beendet wurde.
+**Direkt nach dem Versuch** steuert, was während zwei Minuten, nachdem Test abgeschickt und beendet wurde, angezeigt wird.
 
-**Später, während der Test noch geöffnet ist** zeigt das Feedback, solange der Bearbeitungszeitraum läuft.
+**Später, während der Test noch geöffnet ist** steuert was danach, und vor dem Zeitpunkt der Testschließung angezeigt wird.
 
-**Wenn der Test abgeschlossen ist** meint das Feedback nach Ende des Bearbeitungszeitraums. Wenn kein solcher Termin definiert ist, ist diese Einstellung nicht sinnvoll.';
+**Wenn der Test abgeschlossen ist** – Einstellungen treten nach dem Zeitpunkt der Testschließung in Kraft. Wenn kein Termin für die Testschließung definiert ist, kommt diese Einstellung nie zur Anwendung.';
 $string['reviewoverallfeedback'] = 'Gesamtfeedback';
 $string['reviewoverallfeedback_help'] = 'Das Feedback wird am Ende des Versuchs gegeben und ist abhängig vom Gesamtergebnis.';
 $string['reviewresponse'] = 'Antwort erneut anzeigen';
@@ -862,7 +862,7 @@ $string['savingnewgradeforquestion'] = 'Neue Bewertung für Frage-ID {$a} wird g
 $string['savingnewmaximumgrade'] = 'Neue Maximalbewertung wird gesichert';
 $string['score'] = 'Punktzahl';
 $string['scores'] = 'Punkte';
-$string['search:activity'] = 'Test - Aktivitätsinformation';
+$string['search:activity'] = 'Test - Beschreibung';
 $string['sectionheadingedit'] = 'Überschrift \'{$a}\' bearbeiten';
 $string['sectionheadingremove'] = 'Überschrift \'{$a}\' löschen';
 $string['seequestions'] = '(Siehe Fragen)';

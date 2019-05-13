@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'A atribuir o papel "{$a->role_shortname}" ao utilizador "{$a->user_username}" na disciplina "{$a->course_shortname}" (identificador da disciplina {$a->course_id})';
 $string['assignrolefailed'] = 'A atribuição do papel "{$a->role_shortname}" ao utilizador "{$a->user_username}" na disciplina "{$a->course_shortname}" (identificados da disciplina {$a->course_id})';
-$string['autocreate'] = '<p>As disciplinas podem ser criadas automaticamente caso sejam detetadas inscrições em disciplinas que não existem no Moodle</p><p>Se estiver a usar a criação automática de disciplinas recomenda-se que sejam removidas as capacidades: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname and moodle/course:changesummary, dos papéis mais importantes para evitar alterações dos campos das disciplinas referidos nestas permissões (ID number, shortname, fullname and summary).</p>';
+$string['autocreate'] = '<p>As disciplinas podem ser criadas automaticamente caso sejam detetadas inscrições em disciplinas que não existem no Moodle</p><p>Se estiver a usar a criação automática de disciplinas recomenda-se que sejam removidas as permissões: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname and moodle/course:changesummary, dos papéis mais importantes para evitar alterações dos campos das disciplinas referidos nestas permissões (ID number, shortname, fullname and summary).</p>';
 $string['autocreate_key'] = 'Criação automática';
 $string['autocreation_settings'] = 'Configurações para criação automática de disciplinas';
 $string['autoupdate_settings'] = 'Atualização das definições automáticas da disciplina';
 $string['autoupdate_settings_desc'] = '<p>Selecione os ficheiros a atualizar quando o script de sincronização estiver a ser executado (enrol/ldap/cli/sync.php).</p><p> Uma atualização irá decorrer quando pelo menos um campo estiver selecionado.</p>';
-$string['bind_dn'] = 'Se desejar indique neste campo um nome de utilizador de <em>bind</em> para pesquisar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
+$string['bind_dn'] = 'Se desejar, indique neste campo um nome de utilizador de <em>bind</em> para pesquisar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
 $string['bind_dn_key'] = 'DN do utilizador de <em>bind</em>';
 $string['bind_pw'] = 'Senha do utilizador de <em>bind</em>';
 $string['bind_pw_key'] = 'Senha';
@@ -66,7 +66,7 @@ $string['courseupdated'] = 'A disciplina com o número de ID \'{$a->idnumber}\' 
 $string['courseupdateskipped'] = 'A disciplina com o número de ID \'{$a->idnumber}\' não requer atualização. A ignorar...';
 $string['createcourseextid'] = 'CRIAR Utilizador inscrito numa disciplina que não existe: \'{$a->courseextid}\'';
 $string['createnotcourseextid'] = 'Utilizador inscrito numa disciplina que não existe: \'{$a->courseextid}\'';
-$string['creatingcourse'] = 'A criar a disciplina "{$a}" ...';
+$string['creatingcourse'] = 'A criar a disciplina "{$a}"...';
 $string['duplicateshortname'] = 'A criação da disciplina falhou. Duplique o nome curto. A disciplina com o número ID \'{$a->idnumber}\' será ignorada.';
 $string['editlock'] = 'Bloquear valor';
 $string['emptyenrolment'] = 'Não existem utilizadores com o papel "{$a->role_shortname}" na disciplina "{$a->course_shortname}"';
@@ -96,7 +96,7 @@ $string['nested_groups'] = 'Pretender utilizar grupos de grupos (\'nested groups
 $string['nested_groups_key'] = 'Grupos de grupos';
 $string['nested_groups_settings'] = 'Configurações de grupos de grupos';
 $string['nosuchrole'] = 'O papel "{$a}" não existe';
-$string['objectclass'] = 'objectClass a usar na pesquisas de disciplinas. Nomalmente "group" ou "posixGroup".';
+$string['objectclass'] = 'objectClass a usar nas pesquisas de disciplinas. Nomalmente "group" ou "posixGroup".';
 $string['objectclass_key'] = 'Object class';
 $string['ok'] = 'OK!';
 $string['opt_deref'] = 'Se o <em>group membership</em> contém <em>distinguished names</em> indique como são tratados os <em>aliases</em> durante uma pesquisa. Selecione um dos seguintes valores: "Não" (LDAP_DEREF_NEVER) ou "Sim" (LDAP_DEREF_ALWAYS).';

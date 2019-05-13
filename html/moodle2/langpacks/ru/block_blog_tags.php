@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = 'Добавлять новый блок «Теги блога»';
 $string['pluginname'] = 'Теги блога';
+$string['privacy:metadata'] = 'Блок «Теги блога» только показывает данные, хранящиеся в других местах.';

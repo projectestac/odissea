@@ -49,7 +49,7 @@ if (! $course = $DB->get_record("course", array("id" => $cm->course))) {
 }
 
 require_login($course, false, $cm);
-
+$PAGE->requires->js_call_amd('mod_choicegroup/choicegroupdatadisplay', 'init');
 if (!$choicegroup = choicegroup_get_choicegroup($cm->instance)) {
     print_error('invalidcoursemodule');
 }
@@ -190,11 +190,13 @@ if ($choicegroup->intro) {
 //if user has already made a selection, and they are not allowed to update it, show their selected answer.
 if (isloggedin() && ($current !== false) ) {
     if ($choicegroup->multipleenrollmentspossible == 1) {
-        $currents = choicegroup_get_user_answer($choicegroup, $USER, TRUE);
+        $currents = choicegroup_get_user_answer($choicegroup, $USER, TRUE, true);
 
         $names = array();
-        foreach ($currents as $current) {
-            $names[] = format_string($current->name);
+        if (is_array($currents)) {
+            foreach ($currents as $current) {
+                $names[] = format_string($current->name);
+            }
         }
         $formatted_names = join(' '.get_string("and", "choicegroup").' ', array_filter(array_merge(array(join(', ', array_slice($names, 0, -1))), array_slice($names, -1))));
         echo $OUTPUT->box(get_string("yourselection", "choicegroup", userdate($choicegroup->timeopen)).": ".$formatted_names, 'generalbox', 'yourselection');

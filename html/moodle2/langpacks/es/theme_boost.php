@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['backgroundimage'] = 'Imagen del fondo';
 $string['backgroundimage_desc'] = 'La imagen que se muestra como un fondo del sitio. La imagen del fondo que suba aquí sustituirá a la imagen del fondo en sus archivos de configuración por defecto del tema.';
+$string['choosereadme'] = 'Boost (Impulso) es un tema moderno altamente configurable. Este tema está diseñado para usarse directamente, o como un tema paterno al crear temas nuevos usando Bootstrap 4.';

@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = 'Пользователям необхо
 $string['mnet_hosts:addinstance'] = 'Добавлять новый блок «Сайты сети MNet»';
 $string['mnet_hosts:myaddinstance'] = 'Добавлять новый блок «Сайты сети MNet» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Сайты сети MNet';
+$string['privacy:metadata'] = 'Блок «Сайты сети MNet» только позволяет взаимодействовать с серверами сети и сам по себе не хранит и не экспортирует никаких данных.';
 $string['server'] = 'Сайт';

@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['feedback'] = 'Comentarios';
 $string['feedback:addinstance'] = 'Engadir un novo bloque de comentarios';
 $string['pluginname'] = 'Comentarios';
+$string['privacy:metadata'] = 'O bloque de comentarios só amosa datos almacenados noutros lugares.';

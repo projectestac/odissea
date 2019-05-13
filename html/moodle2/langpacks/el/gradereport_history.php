@@ -25,9 +25,35 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allgradeitems'] = 'Όλα τα στοιχεία βαθμού';
+$string['allgraders'] = 'Όλοι οι βαθμολογητές';
+$string['datefrom'] = 'Ημερομηνία από';
+$string['datetime'] = 'Ημερομηνία και ώρα';
+$string['dateto'] = 'Ημερομηνία έως';
+$string['deleteditemid'] = 'Διαγραφή στοιχείου με αναγνωριστικό «{$a}»';
+$string['errajaxsearch'] = 'Σφάλμα κατά την αναζήτηση χρηστών';
+$string['eventgradereportviewed'] = 'Η αναφορά ιστορικού βαθμών προβλήθηκε';
+$string['excluded'] = 'Εξαιρούνται από τους υπολογισμούς';
+$string['exportfilename'] = 'ιστορικό_βαθμών';
+$string['feedbacktext'] = 'Κείμενο ανατροφοδότησης';
+$string['finishselectingusers'] = 'Ολοκλήρωση επιλογής χρηστών';
 $string['foundnusers'] = 'Βρέθηκαν {$a} χρήστες';
 $string['foundoneuser'] = 'Βρέθηκε 1 χρήστης';
+$string['gradenew'] = 'Αναθεωρημένος βαθμός';
+$string['gradeold'] = 'Αρχικός βαθμός';
 $string['grader'] = 'Βαθμολογητής';
+$string['historyperpage'] = 'Καταχωρήσεις ιστορικού ανά σελίδα';
+$string['historyperpage_help'] = 'Η ρύθμιση καθορίζει τον αριθμό των';
+$string['history:view'] = 'Προβολή ιστορικού βαθμολογίας';
+$string['loadmoreusers'] = 'Φόρτωση περισσότερων χρηστών...';
+$string['pluginname'] = 'Ιστορικό βαθμών';
 $string['preferences'] = 'Προτιμήσεις ιστορικού βαθμού';
+$string['privacy:metadata'] = 'Η αναφορά ιστορικού βαθμών εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['revisedonly'] = 'Μόνο αναθεωρημένοι βαθμοί';
+$string['revisedonly_help'] = 'Εμφάνιση μόνο βαθμών που έχουν αναθεωρηθεί. Αυτό σημαίνει ότι θα αναφέρονται μόνο καταχωρήσεις που οδήγησαν στην αλλαγή βαθμού.';
 $string['selectedusers'] = 'Επιλεγμένοι χρήστες';
+$string['selectuser'] = 'Επιλογή χρήστη';
+$string['selectusers'] = 'Επιλέξτε χρήστες';
 $string['source'] = 'Πηγή';
+$string['useractivityfeedback'] = '{$a} ανατροφοδότηση';
+$string['useractivitygrade'] = '{$a} βαθμός';

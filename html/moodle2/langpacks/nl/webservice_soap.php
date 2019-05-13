@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'SOAP protocol';
+$string['privacy:metadata'] = 'De SOAP protocol-plugin bewaart geen persoonlijke gegevens.';
 $string['soap:use'] = 'Gebruik SOAP protocol';

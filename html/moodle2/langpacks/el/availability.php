@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = 'Μη διαθέσιμο (κρυφό) εκτό�
 $string['manageplugins'] = 'Διαχειριστείτε τους περιορισμούς';
 $string['missingplugin'] = 'Το πρόσθετο περιορισμού δεν βρέθηκε';
 $string['or'] = 'ή';
+$string['privacy:metadata'] = 'Το υποσύστημα «Περιορισμός πρόσβασης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['restrictaccess'] = 'Περιορισμός διαθεσιμότητας';
 $string['restrictbygroup'] = 'Προσθέστε περιορισμό πρόσβασης ομάδας/ομαδοποίησης';
 $string['setheading'] = '{$a->number} Σετ από {$a->count} περιορισμό(ούς)';

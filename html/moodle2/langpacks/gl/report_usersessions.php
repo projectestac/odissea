@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'As miñas sesións activas';
 $string['navigationlink'] = 'Sesións do navegador';
 $string['pluginname'] = 'Informe de sesións do usuario';
+$string['privacy:metadata'] = 'O engadido de informe de sesións do usuario non almacena ningún dato persoal.';
 $string['thissession'] = 'Sesión actual';
 $string['usersessions:manageownsessions'] = 'Administrar as miñas sesións do navegador';

@@ -33,7 +33,7 @@ $string['errordataroot'] = '$CFG->behat_dataroot ist nicht gesetzt oder ungülti
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot müssen in der config.php definiert werden.';
 $string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot values müssen sich unterscheiden von den Werten für $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot und $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Argumente für Feldwert';
-$string['fieldvalueargument_help'] = 'Das Argument wird mit einem Feldwert abgeschlossen. Neben einfachen Feldwerten wie Checkboxen, gibt es Texteingabebereiche oder Auswahllisten. Unter <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a>  finden Sie erwartete Feldwerte für die Feldtypen.';
+$string['fieldvalueargument_help'] = 'Das Argument wird mit einem Feldwert abgeschlossen. Neben einfachen Feldwerten wie Checkboxen, gibt es Texteingabebereiche oder Auswahllisten. Unter <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> finden Sie Details zu den erwarteten Feldtypen.';
 $string['giveninfo'] = 'Vorgefunden (given). Prozesse zum Anlegen der Umgebung.';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lesen {$a} Information für Installation und Testdurchlauf';
@@ -41,7 +41,7 @@ $string['newstepsinfo'] = 'Lesen {$a} von Informationen wie neue Schritte defini
 $string['newtestsinfo'] = 'Lesen {$a} von Informationen zum Schreiben neuer Softwaretests.';
 $string['nostepsdefinitions'] = 'Es gibt keine Schritt-Definition, die zu diesen Filtern passt.';
 $string['pluginname'] = 'Akzeptanztest';
-$string['privacy:metadata'] = 'Das Behat-Akzeptanztest-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Behat-Akzeptanztest-Plugin speichert keine personenbezogenen Daten';
 $string['stepsdefinitionscomponent'] = 'Bereich';
 $string['stepsdefinitionscontains'] = 'Enthält';
 $string['stepsdefinitionsfilters'] = 'Definition der Schritte';

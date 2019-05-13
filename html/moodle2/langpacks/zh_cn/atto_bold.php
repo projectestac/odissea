@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '加粗';
+$string['privacy:metadata'] = 'atto_bold 插件不储存任何私人数据。';

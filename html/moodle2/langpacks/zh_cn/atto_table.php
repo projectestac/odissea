@@ -59,6 +59,7 @@ $string['numberofcolumns'] = '列数';
 $string['numberofrows'] = '行数';
 $string['outer'] = '围绕表格';
 $string['pluginname'] = '表格';
+$string['privacy:metadata'] = 'atto_table 插件不储存任何私人数据。';
 $string['rows'] = '行';
 $string['settings'] = '表格设置';
 $string['solid'] = '实线';

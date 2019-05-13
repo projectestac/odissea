@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mostra/amaga els botons avançats';
+$string['privacy:metadata'] = 'El connector atto_collapse no emmagatzema cap dada personal.';
 $string['settings'] = 'Configuració de la reducció de la barra d\'eines';
 $string['showfewer'] = 'Mostra menys botons';
 $string['showgroups'] = 'Mostra els primers (n) grups quan es redueix.';

@@ -72,11 +72,12 @@ $string['navnexttitle'] = 'Siguiente: {$a}';
 $string['navoptions'] = 'Opciones disponibles para links de navegación';
 $string['navoptions_desc'] = '';
 $string['navprev'] = 'Anterior';
+$string['navprevtitle'] = 'Anterior: {$a}';
 $string['navstyle'] = 'Diseño de navegación';
 $string['navstyle_help'] = '*Imágenes- Los iconos se utilizan para la navegación
 *Texto- Los títulos de capítulos se usan para la navegación';
 $string['navtext'] = 'Texto';
-$string['navtoc'] = 'Solo TOC';
+$string['navtoc'] = 'Solo tabla de contenidos';
 $string['nocontent'] = 'Aún no se ha añadido contenido a este libro.';
 $string['numbering'] = 'Numeración del capítulo';
 $string['numbering0'] = 'Nada';

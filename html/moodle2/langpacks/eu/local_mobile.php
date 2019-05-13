@@ -25,4 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'Eman baimenak autentifikatutako erabiltzaile-rolari';
+$string['allowpermissionsdescription'] = 'Editatu Autentifikatutako erabiltzaile-rola eta baimendu moodle/webservice:createtoken gaitasuna';
+$string['cannotcreatetoken'] = 'Tokenen sorrera automatikoa ez dago eskuragarri guneko kudeatzaileentzat (guneko token bat eskuz sortu behar dute)';
+$string['checkpluginconfiguration'] = 'Egiaztatu pluginaren konfigurazioa';
+$string['clickheretolaunchtheapp'] = 'Mesedez, klik egin hemen app-a ez bada automatikoki irekitzen.';
+$string['enableadditionalservice'] = 'Gaitu Moodle Mobile ezaugarri gehigarrien zerbitzua';
+$string['enableadditionalservicedescription'] = 'Zerbitzu hau gaituta egon behar da.';
+$string['local_mobiledescription'] = 'Mobile zerbitzuaren ezaugarriak hedatzen dituen plugina';
 $string['local_mobilesettings'] = 'Ezarpenak';
+$string['pluginname'] = 'Moodle Mobile ezaugarri gehigarriak';
+$string['pluginnotenabledorconfigured'] = 'Moodle Mobile plugin lokala gaituta eta konfiguratuta egon behar da app-a irekitzeko';
+$string['privacy:metadata'] = 'Moodle Mobile ezaugarri gehigarriak pluginak ez du datu pertsonalik biltzen';

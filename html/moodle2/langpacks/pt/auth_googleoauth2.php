@@ -38,8 +38,6 @@ $string['auth_googleoauth2description'] = 'Permitir que um utizador se ligue ao 
 A primeira vez que o utilizador se ligar ao fornecedor de autenticação, uma nova conta é criada.
 <b>Deve</b> desmarcar a opção Prevenir criação de conta (configuração de administrador: authpreventaccountcreation ) ao autenticar.';
 $string['auth_googlesettings'] = 'Configurações';
-$string['auth_googleuserprefix'] = 'O nome de utilizador criado iniciará com este prefixo. Num site Moodle comum não precisa de mudar esta configuração.';
-$string['auth_googleuserprefix_key'] = 'Prefixo do nome de utilizador';
 $string['auth_sign-in_with'] = 'Entrar com {$a->providername}';
 $string['couldnotauthenticate'] = 'A autenticação falhou - por favor tente entrar novamente.';
 $string['couldnotauthenticateuserlogin'] = 'Erro no método de autenticação.<br/>
@@ -52,7 +50,6 @@ $string['emailaddressmustbeverified'] = 'O seu endereço de e-mail não foi veri
 $string['faileduserdetails'] = 'O site ligou-se com sucesso ao fornecedor selecionado mas não conseguiu recuperar os seus dados de utilizador. Se estiver a usar o Google, verifique se o administrador do site ativou Google+API na consola de desenvolvimento do Google. É a razão mais comum para este erro.';
 $string['moreproviderlink'] = 'Entrar com outro serviço.';
 $string['noaccountyet'] = 'Ainda não tem permissão para usar o site. Entre em contacto com o administrador para ativar a sua conta.';
-$string['oauth2displaybuttons'] = 'Mostrar botões na página de login';
 $string['othermoodle'] = 'Outra autenticação Moodle';
 $string['pluginname'] = 'Oauth2';
 $string['signinwithanaccount'] = 'Entrar com {$a}';

@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regola di accesso quiz Indirizzo IP';
+$string['privacy:metadata'] = 'Il plugin \'Regola di accesso quiz Indirizzo IP\' non memorizza dati personali.';
 $string['subnetwrong'] = 'Il quiz è accessibile solo da specifici computer, e questo non è nella lista di quelli abilitati.';

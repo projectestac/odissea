@@ -31,6 +31,7 @@ $string['block_named'] = '版块命名为“{$a}”';
 $string['cachedef_tourdata'] = '在每个页面上获取的启用的用户导航信息列表';
 $string['description'] = '描述';
 $string['enabled'] = '启用';
+$string['endtour'] = '结束教程';
 $string['name'] = '名称';
 $string['pluginname'] = '用户导航';
 $string['resettouronpage'] = '在这个页面上重新开始用户导航';

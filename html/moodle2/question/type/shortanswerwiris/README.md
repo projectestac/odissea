@@ -1,8 +1,6 @@
 # Wiris Quizzes Short-Answer question type
 ### Master Build Status
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris)
-### Development Build Status
-[![Build Status](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris)
 
 The Wiris Short-Answer question type extends the Moodle Short-Answer type, adding mathematical functionality to it.
 

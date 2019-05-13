@@ -31,3 +31,4 @@ $string['page-report-participation-index'] = 'Informe de participación do curso
 $string['page-report-participation-x'] = 'Calquera informe de participación';
 $string['participation:view'] = 'Ver o informe de participación do curso';
 $string['pluginname'] = 'Participación do curso';
+$string['privacy:metadata'] = 'O engadido de participación no curso non almacena ningún dato persoal.';

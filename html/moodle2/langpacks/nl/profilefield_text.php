@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tekstinvoer';
+$string['privacy:metadata:profilefield_text:data'] = 'Tekstinvoer profielveld gebruikersgegevens';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'De format van de tekstinvoer voor profielveld gebruikersgegevens';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'De ID van het profielveld';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Bijkomende gebruikersgegevens';
+$string['privacy:metadata:profilefield_text:userid'] = 'De ID van de gebruiker van wie de gegevens bewaard worden door de Tekst input profielveld';

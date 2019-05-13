@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configurar repositório "URL"';
 $string['download'] = 'Descarregar';
 $string['pluginname'] = 'Descarregar de URL';
-$string['privacy:metadata'] = 'O módulo Descarregar url não armazena ou transmite dados pessoais.';
+$string['privacy:metadata'] = 'O módulo de repositório Descarregar URL não armazena ou transmite dados pessoais.';
 $string['rename'] = 'Nome';
 $string['url'] = 'URL';
 $string['url:view'] = 'Usar o repositório Descarregar de URL no explorador de ficheiros';

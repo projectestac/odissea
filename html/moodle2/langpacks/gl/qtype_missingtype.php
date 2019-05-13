@@ -34,4 +34,5 @@ $string['missingqtypewarning'] = 'Esta pregunta é dun tipo que non está actual
 $string['pluginname'] = 'Falta o tipo';
 $string['pluginnameadding'] = 'Engadindo unha pregunta dun tipo que non está instalado neste sistema';
 $string['pluginnameediting'] = 'Editando unha pregunta dun tipo que non está instalado neste sistema';
+$string['privacy:metadata'] = 'O engadido de escolla do tipo de pregunta das palabras que faltan non almacena ningún dato persoal.';
 $string['warningmissingtype'] = '<b>Esta pregunta é dun tipo que aínda non se instalou no seu Moodle.<br />Advírtallo ao seu administrador de Moodle.</b>';

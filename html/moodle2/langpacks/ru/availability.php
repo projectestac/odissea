@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = 'Не доступно (скрыто), пока
 $string['manageplugins'] = 'Управление ограничениями';
 $string['missingplugin'] = 'Плагин ограничения отсутствует';
 $string['or'] = 'или';
+$string['privacy:metadata'] = 'Подсистема ограничения доступа не хранит никаких персональных данных.';
 $string['restrictaccess'] = 'Ограничение доступа';
 $string['restrictbygroup'] = 'Добавить ограничение доступа по группе/потоку';
 $string['setheading'] = '{$a->number} Набор из {$a->count} ограничений';

@@ -37,6 +37,7 @@ $string['exportdata'] = 'Export data';
 $string['notargetconectexception'] = 'Kan geen verbinding maken met de doeldatabank';
 $string['options'] = 'Opties';
 $string['pluginname'] = 'Databank transfer';
+$string['privacy:metadata'] = 'De databank transfer-plugin bewaart geen persoonlijke gegevens.';
 $string['targetdatabase'] = 'Doeldatabank';
 $string['targetdatabasenotempty'] = 'Doeldatabank mag geen tabellen bevatten met het gegeven prefix!';
 $string['transferdata'] = 'Transfer gegevens';

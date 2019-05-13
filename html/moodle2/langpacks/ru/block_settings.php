@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'Разрешить перемещать этот блок в док';
 $string['pluginname'] = 'Настройки';
+$string['privacy:metadata'] = 'Блок «Настройки» только показывает данные, хранящиеся в других местах.';
 $string['settings:addinstance'] = 'Добавлять новый блок «Настройки»';
 $string['settings:myaddinstance'] = 'Добавлять новый блок «Настройки» на страницу «Личный кабинет»';

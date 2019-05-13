@@ -40,7 +40,7 @@ $string['chooselanguagesub'] = 'Trieu un idioma per a la instal·lació. S\'util
 $string['cliadminemail'] = 'Nova adreça de correu electrònic de l\'usuari administrador';
 $string['cliadminpassword'] = 'Contrasenya nova de l\'usuari d\'administració';
 $string['cliadminusername'] = 'Nom d\'usuari del compte d\'administració';
-$string['clialreadyconfigured'] = 'El fitxer config.php ja existeix, feu servir admin/cli/install_database.php si voleu instal·lar el Moodle en aquest lloc web.';
+$string['clialreadyconfigured'] = 'El fitxer config.php ja existeix; feu servir admin/cli/install_database.php si voleu instal·lar Moodle en aquest lloc web.';
 $string['clialreadyinstalled'] = 'El fitxer de configuració config.php ja existeix. Feu servir admin/cli/upgrade.php si voleu actualitzar Moodle per a aquest lloc web.';
 $string['cliinstallfinished'] = 'La instal·lació ha finalitzat amb èxit.';
 $string['cliinstallheader'] = 'Programa d\'instal·lació de línia d\'ordres de Moodle {$a}';
@@ -96,7 +96,7 @@ Especifiqueu el camí complet del directori d\'aquesta instal·lació. Assegureu
 <b>Directori de dades:</b>
 Necessiteu un lloc on Moodle pugui desar els fitxers que es pengin. L\'usuari del servidor web (generalment «nobody» o «apache») ha de tenir permisos de lectura i d\'ESCRIPTURA en aquest directori, però no hauria de ser accessible directament a través de la web. L\'instal·lador intentarà crear-lo si no existeix.</p>';
 $string['dirroot'] = 'Directori de Moodle';
-$string['dirrooterror'] = 'El paràmetre «Directori de Moodle» sembla incorrecte: no s\'hi ha pogut trobat cap instal·lació de Moodle. S\'ha reiniciat el valor del paràmetre.';
+$string['dirrooterror'] = 'El paràmetre «Directori de Moodle» sembla incorrecte: no s\'hi ha pogut trobar cap instal·lació de Moodle. S\'ha reiniciat el valor del paràmetre.';
 $string['download'] = 'Baixa';
 $string['downloadlanguagebutton'] = 'Baixa el paquet d\'idioma "{$a}"';
 $string['downloadlanguagehead'] = 'Baixa paquet d\'idioma';
@@ -115,7 +115,7 @@ $string['fileuploadshelp'] = '<p>Sembla que la càrrega de fitxers està inhabil
 
 <p>Moodle es pot instal·lar igualment, però sense aquesta capacitat no podreu penjar fitxers del curs ni imatges noves de perfil dels usuaris.</p>
 
-<p>Per habilitar la càrrega de fitxers cal editar el fitxer php.ini principal del sistema i posar el paràmetre <b>file_uploads</b> a «1».</p>';
+<p>Per habilitar la càrrega de fitxers cal editar el fitxer php.ini principal del sistema i establir el paràmetre <b>file_uploads</b> a «1».</p>';
 $string['inputdatadirectory'] = 'Directori de dades:';
 $string['inputwebadress'] = 'Adreça web:';
 $string['inputwebdirectory'] = 'Directori de Moodle';
@@ -126,15 +126,15 @@ $string['memorylimit'] = 'Límit de memòria';
 $string['memorylimiterror'] = 'El límit de memòria del PHP està definit una mica baix. Podeu tenir problemes més endavant.';
 $string['memorylimithelp'] = '<p>El límit de memòria del PHP del vostre servidor actualment està definit en {$a}.</p>
 
-<p>Això pot causar que Moodle tingui problemes de memòria més endavant, especialment si teniu molts mòduls habilitats i/o molts usuaris.</p>
+<p>Això pot causar que Moodle tingui problemes de memòria més endavant, especialment, si teniu molts mòduls habilitats i/o molts usuaris.</p>
 
 <p>És recomanable que configureu el PHP amb un límit superior, com ara 40 MB, sempre que sigui possible. Hi ha diverses maneres de fer això:</p>
 <ol>
 <li>Si podeu, recompileu el PHP amb <i>--enable-memory-limit</i>. Això permetrà que Moodle defineixi el límit de memòria per si mateix.</li>
-<li>Si teniu accés al fitxer php.ini, podeu canviar el paràmetre <b>memory_limit</b> a 40 MB. Si no hi teniu accés podeu demanar al vostre administrador que ho faci ell.</li>
-<li>En alguns servidors PHP podeu crear un fitxer .htaccess dins del directori de Moodle amb aquesta línia:
+<li>Si teniu accés al fitxer php.ini, podeu canviar el paràmetre <b>memory_limit</b> a 40 MB. Si no hi teniu accés, podeu demanar al vostre administrador que us ho faci.</li>
+<li>En alguns servidors PHP podeu crear un fitxer .htaccess dins el directori de Moodle amb aquesta línia:
 <p><blockquote>php_value memory_limit 40M</blockquote></p>
-<p>Tanmateix, en alguns servidors això farà que no funcioni <b>cap</b> pàgina PHP (es visualitzaran errors) en el qual cas hauríeu de suprimir el fitxer .htaccess.</p></li>
+<p>Tanmateix, en alguns servidors això farà que no funcioni <b>cap</b> pàgina PHP (es visualitzaran errors); en aquest cas, hauríeu de suprimir el fitxer .htaccess.</p></li>
 </ol>';
 $string['mssqlextensionisnotpresentinphp'] = 'El PHP no s\'ha configurat correctament amb l\'extensió MSSQL de manera que pugui comunicar-se amb SQL*Server. Reviseu el fitxer php.ini o recompileu PHP.';
 $string['mysqliextensionisnotpresentinphp'] = 'El PHP no ha estat configurat adequadament amb l\'extensió MySQLi de manera que pugui comunicar-se amb MySQL. Reviseu el fitxer php.ini o recompileu el PHP.';
@@ -164,8 +164,8 @@ $string['pathshead'] = 'Confirmeu els camins';
 $string['pathsrodataroot'] = 'No es pot escriure en el directori dataroot.';
 $string['pathsroparentdataroot'] = 'No es pot escriure en el directori pare ({$a->parent}). L\'instal·lador no pot crear el directori ({$a->dataroot}).';
 $string['pathssubadmindir'] = 'Alguns serveis d\'allotjament web (pocs) utilitzen /admin com a URL especial perquè accediu a un tauler de control o quelcom semblant. Malauradament, això entra en conflicte amb la ubicació estàndard de les pàgines d\'administració de Moodle. Podeu arreglar aquest problema canviant el nom del directori d\'administració de Moodle en la vostra instal·lació i posant el nou nom aquí. Per exemple: <em>moodleadmin</em>. Això arreglarà els enllaços d\'administració de Moodle.';
-$string['pathssubdataroot'] = '<p>Directori on el Moodle emmagatzemarà els materials pujats pels usuaris.</p>
-<p>Aquest directori hauria de tenir permisos de lectura i escriptura per a l\'usuari del servidor web (normalment \'www-data\', \'nobody\', or \'apache\').</p>
+$string['pathssubdataroot'] = '<p>Directori on Moodle emmagatzemarà els materials pujats pels usuaris.</p>
+<p>Aquest directori hauria de tenir permisos de lectura i escriptura per a l\'usuari del servidor web (normalment «www-data», «nobody», or «apache»).</p>
 <p>No ha de ser accessible directament via web.</p>
 <p>L\'instal·lador provarà de crear-lo si no existeix.</p>';
 $string['pathssubdirroot'] = 'Camí complet del directori d\'instal·lació de Moodle.';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Servizio Consumer Profile LTI';
+$string['privacy:metadata'] = 'Il plugin \'Servizio Consumer Profile LTI\' non memorizza dati personali';

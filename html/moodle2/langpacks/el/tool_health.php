@@ -26,8 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['healthnoproblemsfound'] = 'Δε βρέθηκε πρόβλημα υγείας!';
-$string['healthproblemsdetected'] = 'Ανιχνεύθηκαν Προβλήματα Υγείας!';
-$string['healthproblemsolution'] = 'Λύση Προβλήματος Υγείας';
+$string['healthproblemsdetected'] = 'Ανιχνεύθηκαν προβλήματα υγείας!';
+$string['healthproblemsolution'] = 'Λύση προβλήματος υγείας';
 $string['healthreturntomain'] = 'Συνέχεια';
 $string['healthsolution'] = 'Λύση';
-$string['pluginname'] = 'Κέντρο Υγείας';
+$string['pluginname'] = 'Κέντρο υγείας';
+$string['privacy:metadata'] = 'Το πρόσθετο «Κέντρο υγείας ιστοτόπου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

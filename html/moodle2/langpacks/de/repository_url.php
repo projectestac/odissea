@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Einstellungen für URL-Downloader';
 $string['download'] = 'Download';
 $string['pluginname'] = 'URL-Downloader';
-$string['privacy:metadata'] = 'Das URL-Download-Repository Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das URL-Download-Repository Plugin speichert keine personenbezogenen Daten und gibt keine Daten weiter.';
 $string['rename'] = 'Name';
 $string['url'] = 'URL';
 $string['url:view'] = 'URL-Downloader in der Dateiauswahl nutzen';

@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regra de acceso por IP á proba';
+$string['privacy:metadata'] = 'O engadido de regra de acceso por IP á proba non almacena ningún dato persoal.';
 $string['subnetwrong'] = 'Esta proba só é accesíbel desde certos lugares e este computador non está na lista de lugares admitidos.';

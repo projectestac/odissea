@@ -33,6 +33,7 @@ $string['pluginnameadding'] = 'Toevoegen van een willekeurig kort antwoord  kopp
 $string['pluginnameediting'] = 'Bewerken van een willekeurig kort antwoord  koppelen-vraag';
 $string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt deze vraag op een koppel vraag. Het verschil is dat lijst met namen of stellingen (de vragen) om te koppelen, willekeurig gehaald zijn uit de kort antwoordvragen van de geselecteerde categorie. Er moeten voldoende ongebruikte kort antwoordvragen in de categorie aanwezig zijn, anders zal er een foutmelding getoond worden.';
 $string['pluginnamesummary'] = 'Zoals een koppelvraag, maar willekeurig gemaakt uit de kort antwoordvragen van een bepaalde categorie.';
+$string['privacy:metadata'] = 'De kort antwoord koppelen vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['randomsamatch'] = 'Willekeurig kort antwoord koppelen';
 $string['randomsamatchintro'] = 'Selecteer voor elk van volgende vragen het juiste antwoord uit het menu.';
 $string['randomsamatchnumber'] = 'Aantal te selecteren vragen';

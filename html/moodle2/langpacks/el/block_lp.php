@@ -26,5 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Προσόντα για αναθεώρηση';
-$string['lp:addinstance'] = 'Προσθήκη νέου μπλοκ εκπαιδευτικά πλάνα';
-$string['lp:myaddinstance'] = 'Προσθήκη νέου μπλοκ εκπαιδευτικά πλάνα στη σελίδα Η αρχική μου';
+$string['lp:addinstance'] = 'Προσθήκη νέου μπλοκ σχεδίου μάθησης';
+$string['lp:myaddinstance'] = 'Προσθήκη νέου μπλοκ σχεδίου μάθησης στο Ταμπλό';
+$string['lp:view'] = 'Εμφάνιση μπλοκ σχεδίου μάθησης';
+$string['myplans'] = 'Τα σχεδιά μου';
+$string['noactiveplans'] = 'Δεν υπάρχουν ενεργά σχέδια προς το παρόν.';
+$string['planstoreview'] = 'Σχέδια προς αναθεώρηση';
+$string['pluginname'] = 'Σχέδια μάθησης';
+$string['privacy:metadata'] = 'Το μπλοκ «Σχέδια μάθησης» εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['viewmore'] = 'Δείτε περισσότερα...';
+$string['viewotherplans'] = 'Δείτε άλλα σχέδια ...';

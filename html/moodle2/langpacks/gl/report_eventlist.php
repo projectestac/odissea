@@ -52,6 +52,7 @@ $string['otherinformation'] = 'Outra información:';
 $string['parentevent'] = 'Actividade principal';
 $string['participating'] = 'Participando';
 $string['pluginname'] = 'Lista de actividades';
+$string['privacy:metadata'] = 'O engadido de lista de eventos non almacena ningún dato persoal.';
 $string['read'] = 'ler';
 $string['relatedobservers'] = 'Engadidos que observan esta actividade';
 $string['since'] = 'Desde';

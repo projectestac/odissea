@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Block \'Login\' hinzufügen';
+$string['login:addinstance'] = 'Neuen Block \'Login\' hinzufügen';
 $string['pluginname'] = 'Login';
 $string['privacy:metadata'] = 'Der Block \'Login\' verbindet zum Login, speichert selber aber keine Daten.';

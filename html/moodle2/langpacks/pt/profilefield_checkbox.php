@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Caixa de seleção';
-$string['privacy:metadata:profilefield_checkbox:data'] = 'Os dados de utilizador armazenados.';
-$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'O formato dos dados de utilizador armazenados.';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Os dados de utilizador armazenados no campo de perfil do tipo caixa de seleção';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'O formato dos dados de utilizador armazenados no campo de perfil do tipo caixa de seleção';
 $string['privacy:metadata:profilefield_checkbox:fieldid'] = 'O ID do campo de perfil';
-$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Informação adicional do utilizador é armazenada aqui.';
-$string['privacy:metadata:profilefield_checkbox:userid'] = 'O ID do utilizador cujos dados são armazenados pelo módulo Caixas de seleção.';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Dados de perfil adicionais';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'O ID do utilizador cujos dados são armazenados no campo de perfil do tipo Caixas de seleção.';

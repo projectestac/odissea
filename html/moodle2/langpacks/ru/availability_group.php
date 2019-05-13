@@ -30,6 +30,7 @@ $string['description'] = 'Разрешить только студентам, к
 $string['error_selectgroup'] = 'Вы должны выбрать группу.';
 $string['missing'] = '(Пропущенная группа)';
 $string['pluginname'] = 'Ограничение по группам';
+$string['privacy:metadata'] = 'Плагин ограничения доступности «Ограничение по группам» не хранит никаких персональных данных.';
 $string['requires_anygroup'] = 'Вы принадлежите к какой-либо группе';
 $string['requires_group'] = 'Вы принадлежите к группе <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'Вы не принадлежит ни к одной группе';

@@ -25,7 +25,7 @@ class qtype_multianswerwiris_renderer extends qtype_wq_renderer {
     }
 }
 class qtype_multianswerwiris_helper_renderer extends qtype_multianswer_renderer {
-    public function subquestion(question_attempt $qa, question_display_options $options, $index, $subq) {
+    public function subquestion(question_attempt $qa, question_display_options $options, $index, question_graded_automatically $subq) {
         if ($subq->get_type_name() == 'shortanswerwiris') {
             $subquestion = new qtype_multianswerwiris_shortanswer_helper_question($subq);
         } else if (substr($subq->get_type_name(), -5) == 'wiris') {
@@ -168,6 +168,7 @@ class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer
             'class' => 'wirisanswerfield wirisembedded wiriscopystyle',
         );
         if ($options->readonly) {
+            $inputattributes['class'] .= ' wirisreadonly';
             $inputattributes['readonly'] = 'readonly';
         }
 

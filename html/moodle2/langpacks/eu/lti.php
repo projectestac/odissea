@@ -46,7 +46,7 @@ $string['addnewapp'] = 'Gaitu kanpoko aplikazioa';
 $string['addserver'] = 'Gehitu konfiantzazko beste zerbitzari bat';
 $string['addtype'] = 'Gehitu aurretik konfiguratutako tresna';
 $string['allow'] = 'Baimendu';
-$string['allowsetting'] = 'Ahalbidetu tresnak ezarpenetarako 8K Moodle-n gordetzen.';
+$string['allowsetting'] = 'Baimendu tresnek Moodle-n ezarpenen 8K gordetzen.';
 $string['always'] = 'Beti';
 $string['autoaddtype'] = 'Gehitu tresna';
 $string['automatic'] = 'Automatikoa, erremintaren URLan oinarritua';
@@ -69,14 +69,14 @@ $string['cannot_edit'] = 'Ezin dituzu tresnaren ezarpenak editatu';
 $string['capabilities'] = 'Gaitasunak';
 $string['capabilities_help'] = 'Aukeratu tresna-hornitzaileari eskaini nahi zenizkiokeen gaitasunak. Gaitasun bat baino gehiago aukera daiteke.';
 $string['capabilitiesrequired'] = 'Tresna honek data hauetarako sarbidea eskatzen du gaitu ahal izateko:';
-$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Sakatu jarraitzeko</a>';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Egin klik jarraitzeko</a>';
 $string['comment'] = 'Iruzkina';
-$string['configpassword'] = 'Urrutiko tresnaren berezko pasahitza';
-$string['configpreferheight'] = 'Berezko altuera';
+$string['configpassword'] = 'Urrutiko tresnan lehenetsitako pasahitza';
+$string['configpreferheight'] = 'Lehenetsitako altuera';
 $string['configpreferwidget'] = 'Lehenetsi gailuaren abiaraztea';
-$string['configpreferwidth'] = 'Berezko zabalera';
-$string['configresourceurl'] = 'Baliabidearen berezko URLa';
-$string['configtoolurl'] = 'Urrutiko tresnaren berezko URLa';
+$string['configpreferwidth'] = 'Lehenetsitako zabalera';
+$string['configresourceurl'] = 'Baliabideen lehenetsitako URLa';
+$string['configtoolurl'] = 'Urrutiko tresnan lehenetsitako URLa';
 $string['configtypes'] = 'Gaitu LTI aplikazioak';
 $string['configured'] = 'Konfiguratua';
 $string['confirmtoolactivation'] = 'Ziur al zaude tresna hau aktibatu nahi duzula?';
@@ -99,8 +99,8 @@ $string['custominstr'] = 'Parametro pertsonalizatuak';
 $string['debuglaunch'] = 'Arazketa-aukera';
 $string['debuglaunchoff'] = 'Hasiera arrunta';
 $string['debuglaunchon'] = 'Araztu hasiera';
-$string['default'] = 'Berezkoa';
-$string['default_launch_container'] = 'Berezko hasierako edukiontzia';
+$string['default'] = 'Lehenetsitakoa';
+$string['default_launch_container'] = 'Lehenetsitako hasierako edukiontzia';
 $string['default_launch_container_help'] = 'Hasierako edukiontziak tresnaren itxurari eragiten dio ikastarotik abiarazten denean. Hasierako edukiontzi batzuek tresnari pantaila-espazio gehiago ematen diote, eta beste batzuek, integrazio hobea Moodle-ren ingurunearekin.
 
 * **Lehenetsi ** - Erabili tresnaren ezarpenek zehaztutako  hasierako edukiontzia.
@@ -130,7 +130,7 @@ $string['donot'] = 'Ez bidali';
 $string['donotaccept'] = 'Ez onartu';
 $string['donotallow'] = 'Ez baimendu';
 $string['duplicateregurl'] = 'Erregistro URL hau jadanik erabiltzen ari da';
-$string['editdescription'] = 'Klikatu hemen tresna deskribatzeko';
+$string['editdescription'] = 'Egin klik hemen tresna deskribatzeko';
 $string['edittype'] = 'Editatu aurretik konfiguratutako tresna';
 $string['embed'] = 'Enbotatu';
 $string['embed_no_blocks'] = 'Enbotatu, blokerik gabe';
@@ -139,7 +139,7 @@ $string['enableemailnotification_help'] = 'Gaituz gero, ikasleek e-posta bidezko
 $string['enterkeyandsecret'] = 'Sartu kontsumitzaile-gakoa eta partekatutako sekretua';
 $string['enterkeyandsecret_help'] = 'Kontsumiltzaile-gakoa edo/eta partekatutako sekretua eman bazaizu, sartu hemen';
 $string['errorbadurl'] = 'URLa ez da tresna edo kartutxo baliagarria';
-$string['errorincorrectconsumerkey'] = 'Kontsumitzaile-gakoa ez da zuzena.';
+$string['errorincorrectconsumerkey'] = 'Kontsumitzaile-gakoa ez da egokia.';
 $string['errorinvaliddata'] = 'Datu baliogabea: {$a}';
 $string['errorinvalidmediatype'] = 'Media-mota baliogabea: {$a}';
 $string['errorinvalidresponseformat'] = 'Eduki-Item baliogabeko erantzun-formatua.';
@@ -150,18 +150,18 @@ $string['extensions'] = 'LTI luzapenaren zerbitzuak';
 $string['external_tool_type'] = 'Aurretik konfiguratutako tresna';
 $string['external_tool_type_help'] = '* **Automatikoa, tresnaren URLan oinarritua** - Tresnaren konfigurazio egokiena automatikoki aukeratzen da. Tresnaren URLa ezagutzen ez bada, konfigurazioaren xehetasunak eskuz sartu beharko lirateke.
 * **Aurrez konfiguratutako tresna** - Zehaztutako tresnaren konfigurazioa kanpoko tresna-hornitzailearekin komunikatzean erabiliko da. Tresnaren URLa hornitzaileari ez dagokiola baldin badirudi, abisua erakutsiko da. Tresnaren URLa ematea ez da beti beharrezkoa.
-* **Konfigurazio pertsonala** - Kontsumitzaile-gakoa eta partekatutako sekretua eskuz sartu behar dira. Kontsumitzaile-gakoa eta partekatutako sekretua tresnaren hornitzailearengandik jaso behar dira. Hala ere, tresna guztiek ez dute kontsumitzaile-gakorik eskatzen, ezta partekatutako sekreturik ere. Kasu horretan, eremuak zuriz utzi behar dira.
+* **Konfigurazio pertsonala** - Kontsumitzaile-gakoa eta partekatutako sekretua eskuz sartu behar dira. Kontsumitzaile-gakoa eta partekatutako sekretua tresnaren hornitzailearengandik jaso behar dira. Hala ere, tresna guztiek ez dute kontsumitzaile-gakorik eskatzen, ezta partekatutako sekreturik ere. Kasu horretan, eremuak hutsik utzi behar dira.
 
 ### Aurrez konfiguratutako tresna editatzen
 Aurrez konfiguratutako tresnaren zerrenda zabalgarrian hiru ikono daude:
 
 * **Gehitu** - Sortu ikastaro mailako tresna-konfigurazioa. Ikastaro honetako tresnaren kanpoko instantzia guztiek tresnaren konfigurazioa erabil dezakete.
-* **Editatu** - Aukeratu ikastaro mailako tresna zerrenda zabalgarrian eta klikatu ikonoan. Tresnaren konfigurazioaren xehetasun guztiak edita daitezke.
+* **Editatu** - Aukeratu ikastaro mailako tresna zerrenda zabalgarrian eta egin klik ikonoan. Tresnaren konfigurazioaren xehetasun guztiak edita daitezke.
 * **Ezabatu** - Ezabatu aukeratutako ikastaro mailako tresna.';
 $string['external_tool_types'] = 'Aurretik konfiguratutako tresnak';
 $string['failedtoconnect'] = 'Moodle-k ezin izan du "{$a}" sistemarekin komunikatu';
-$string['failedtocreatetooltype'] = 'Kale egin du tresna berria sortzean. Berrikusi URLa eta saiatu berriro, mesedez.';
-$string['failedtodeletetoolproxy'] = 'Kale egin du tresnaren erregistroa ezabatzean. "Kudeatu kanpoko tresnen erregistroak" bisitatu eta eskuz ezabatu beharko duzu.';
+$string['failedtocreatetooltype'] = 'Tresna berria sortzeak huts egin du. Berrikusi URLa eta saiatu berriro, mesedez.';
+$string['failedtodeletetoolproxy'] = 'Tresnaren erregistroa ezabatzeak huts egin du. "Kudeatu kanpoko tresnen erregistroak" bisitatu eta eskuz ezabatu beharko duzu.';
 $string['filter_basiclti_configlink'] = 'Konfiguratu gogoko guneak eta pasahitzak';
 $string['filter_basiclti_password'] = 'Pasahitza beharrezkoa da';
 $string['filterconfig'] = 'LTIren kudeaketa';
@@ -187,7 +187,7 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa LTI jardueretan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak LTI motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala LTI jardueretan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak LTI motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
-$string['invalidid'] = 'LTIren IDa ez zen zuzena';
+$string['invalidid'] = 'LTIren IDa ez zen egokia';
 $string['launch_in_moodle'] = 'Abiarazi tresna Moodle-n';
 $string['launchinpopup'] = 'Abiarazi edukiontzia';
 $string['launch_in_popup'] = 'Abiarazi tresna pop-up-ean';
@@ -206,7 +206,7 @@ $string['launch_url_help'] = 'Tresnaren URLak kanpoko tresnaren web-helbidea adi
 Kartutxorik izanez gero, bere URLa sar dezakezu. Inprimakiaren beste xehetasunak automatikoki beteko dira.
 
 Aurrez konfiguratutako tresna aukeratu baduzu, ez duzu tresnaren URLa sartu beharko. Horixe izango da kasua, tresnaren esteka hornitzailearen sisteman abiarazteko erabiltzen bada, eta ez baliabide zehatz batera joateko.';
-$string['leaveblank'] = 'Utzi zuri behar ez badituzu';
+$string['leaveblank'] = 'Hutsik utzi behar ez badituzu';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Gehitu ikastaroaren araberako tresna ezarpenak';
 $string['lti:addinstance'] = 'Gehitu kanpoko beste tresna baten jarduerak';
@@ -216,7 +216,7 @@ $string['lti_errormsg'] = 'Tresnak ondoko errore-mezua itzuli du: "{$a}"';
 $string['lti:grade'] = 'Ikusi kanpoko tresnak itzuli dituen kalifikazioak';
 $string['lti_launch_error'] = 'Errorea gertatu da kanpoko tresna hastean:';
 $string['lti_launch_error_tool_request'] = '<p>
-Kudeatzaileari tresnaren ezarpena osa dezala eskatzeko sakatu <a href="{$a->admin_request_url}" target="_top">honi</a>.
+Kudeatzaileari tresnaren ezarpena osa dezala eskatzeko egin klik <a href="{$a->admin_request_url}" target="_top">hemen</a>.
 </p>';
 $string['lti_launch_error_unsigned_help'] = '<p>Errore hau tresna-hornitzailearentzako kontsumitzaile-gakoaren eta partekatutako sekretuaren faltagatik gerta liteke.</p>
 <p>Kontsumitzaile-gakoa eta partekatutako sekretua baldin badauzkazu, kanpoko tresnaren instantzia editatzean sar dezakezu (ziurtatu aukera aurreratuak ikusgai direla).</p>
@@ -273,15 +273,15 @@ $string['no_tp_cancelled'] = 'Ez da kanpoko tresnen erregistrorik ezeztatu.';
 $string['no_tp_configured'] = 'Ez da ezarri kanpoko tresnen erregistrorik.';
 $string['no_tp_pending'] = 'Ez dago zain kanpoko tresnaren erregistrorik.';
 $string['no_tp_rejected'] = 'Ez da kanpoko tresnen erregistrorik gaitzetsi.';
-$string['notypes'] = 'Une honetan Moodle-n ez da LTI tresnarik ezarri. Klikatu goiko instalazio-estekan bat gehitzeko.';
+$string['notypes'] = 'Une honetan Moodle-n ez da LTI tresnarik ezarri. Egin klik goiko instalazio-estekan bat gehitzeko.';
 $string['noviewusers'] = 'Ez da baimendutako erabiltzailerik aurkitu tresna hau erabiltzeko';
 $string['optionalsettings'] = 'Aukerako ezarpenak';
 $string['organization'] = 'Erakundearen xehetasunak';
 $string['organizationdescr'] = 'Erakundearen deskribapena';
 $string['organizationid'] = 'Erakundearen IDa';
-$string['organizationid_help'] = 'Moodle-instantzia honetarako identifikadore bakarra. Normalean, erankundearen DNSa erabiltzen da.
+$string['organizationid_help'] = 'Moodle instantzia honetarako identifikatzaile bakarra. Normalean, erakundearen DNSa erabiltzen da.
 
-Eremu hau zuriz utziz gero, lehenetsitako balorea Moodle-gune honen zerbitzariaren izena izango da.';
+Eremu hau hutsik utziz gero, lehenetsitako balioa Moodle gune honen zerbitzariaren izena izango da.';
 $string['organizationurl'] = 'Erakundearen URLa';
 $string['organizationurl_help'] = 'Moodle instantzia honen oinarrizko URLa.
 
@@ -309,7 +309,7 @@ $string['pluginname'] = 'Kanpoko tresna';
 $string['preferheight'] = 'Hobetsitako altuera';
 $string['preferwidget'] = 'Hobetsitako gailua abiarazi';
 $string['preferwidth'] = 'Hobetsitako zabalera';
-$string['press_to_submit'] = 'Sakatu jarduera hau abiarazteko';
+$string['press_to_submit'] = 'Egin klik jarduera hau abiarazteko';
 $string['privacy'] = 'Pribatutasuna';
 $string['privacy:metadata:coursefullname'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen jatorrizko ikastaroaren izen osoa';
 $string['privacy:metadata:courseid'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen jatorrizko ikastaroaren IDa';
@@ -338,10 +338,10 @@ $string['privacy:metadata:userid'] = 'LTI kontsumitzailera sartzen ari den erabi
 $string['privacy:metadata:useridnumber'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen ID zenbakia';
 $string['privacy:metadata:username'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen erabiltzaile-izena';
 $string['quickgrade'] = 'Baimendu kalifikazio azkarra';
-$string['quickgrade_help'] = 'Gaituz gero, tresna asko orri batean kalifika daitezke. Gehitu kalifikazio eta iruzkinak. Gero, klikatu "Gorde nire feedback guztiak" botoia orri horretarako aldaketa guztiak gordetzeko.';
-$string['redirect'] = 'Berbidalketa segundu gutxitan gertatuko da. Horren ezean, sakatu botoia.';
+$string['quickgrade_help'] = 'Gaituz gero, tresna asko orri batean kalifika daitezke. Gehitu kalifikazio eta iruzkinak. Gero, egin klik "Gorde nire feedback guztiak" botoian orri horretarako aldaketa guztiak gordetzeko.';
+$string['redirect'] = 'Berbidalketa segundu gutxitan gertatuko da. Horren ezean, egin klik botoian.';
 $string['register'] = 'Erregistratu';
-$string['registertype'] = 'Ezarri kanpoko tresna berri baten erregistroa.';
+$string['registertype'] = 'Konfiguratu kanpoko tresna berri baten erregistroa.';
 $string['register_warning'] = 'Erregistro-orria irekitzea luzeegi irauten ari dela dirudi. Erakusten ez bada, baieztatu konfigurazioan URL egokia sartu duzula. Moodle-k https erabiltzen badu, ziurtatu konfiguratzen ari zaren tresnak https onartzen duen eta URLan https erabiltzen ari zaren.';
 $string['registrationname'] = 'Tresna-hornitzailearen izena';
 $string['registrationname_help'] = 'Sartu erregistratzen ari den tresnaren hornitzailearen izena.';
@@ -369,7 +369,7 @@ Kontsumitzaile-gakoa tresna-hornitzaileak eman behar du. Kontsumitzaile-gakoa lo
 
 Moodle-rekin komunikazio segurua eskatzen ez duten zerbitzu gehigarririk ematen ez duten tresnek (kalifikazio-txostenek bezala) ez dute baliabide-gakorik behar izaten.';
 $string['resourceurl'] = 'Baliabidearen URLa';
-$string['return_to_course'] = 'Sakatu <a href="{$a->link}" target="_top">here</a>  ikastarora itzultzeko.';
+$string['return_to_course'] = 'Egin klik <a href="{$a->link}" target="_top">hemen</a> ikastarora itzultzeko.';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
 $string['search:activity'] = 'Kanpoko tresna - jardueraren informazioa';
 $string['secure_icon_url'] = 'Ikono seguruaren URLa';
@@ -377,7 +377,7 @@ $string['secure_icon_url_help'] = 'URL ikonoaren antzekoa, baina erabiltzailea M
 $string['secure_launch_url'] = 'Tresna seguruaren URLa';
 $string['secure_launch_url_help'] = 'URL tresnaren antzekoa, baina URL tresnaren ordez erabilia segurtasun-maila altua eskatzen denean. Moodle-k URL tresna segurua erabiliko du URL tresnaren odez, Moodle-ra SSLren bidez sartzen denean erabilia, edo konfigurazio-tresna ezarri bada beti SSLren bidez abiarazteko.
 
-URL tresnan https helbidea ezar daiteke SSLren bidez abiaraztea behartzeko, eta eremu hau zuriz utz daiteke.';
+URL tresnan https helbidea ezar daiteke SSLren bidez abiaraztea behartzeko, eta eremu hau hutsik utz daiteke.';
 $string['selectcontent'] = 'Aukeratu edukia';
 $string['send'] = 'Bidali';
 $string['services'] = 'Zerbitzuak';
@@ -400,7 +400,7 @@ $string['share_name_help'] = 'Zehaztu tresna abiarazten ari den  erabiltzaileare
 Baliteke tresna-hornitzaileak behar izatea tresnaren barruan abiarazleen izenek informazio esanguratsua erakustea.
 
 Ohar zaitez ezarpen honek tresnaren konfigurazioa gainidatz dezakeela.';
-$string['share_roster'] = 'Eman baimena tresna honi ikastaro-zerrendara sartzeko.';
+$string['share_roster'] = 'Baimendu tresna honi ikastaro-zerrendara sartzea';
 $string['share_roster_admin'] = 'Tresnak ikastaro-zerrendarako sarbidea izan dezake.';
 $string['share_roster_admin_help'] = 'Zehaztu tresnak abiarazten ari deneko ikastaroetan matrikulatutako erabiltzaileen zerrendara sarbidea izango ote duen.';
 $string['share_roster_help'] = 'Zehaztu tresnak abiarazten ari deneko ikastaroetan matrikulatutako erabiltzaileen zerrendara sarbidea izango ote duen.

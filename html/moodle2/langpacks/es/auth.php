@@ -139,6 +139,14 @@ $string['plaintext'] = 'Texto plano';
 $string['pluginnotenabled'] = 'El conector (\'plugin\') de identificación \'{$a}\' no está activado.';
 $string['pluginnotinstalled'] = 'El conector (plugin) de identificación \'{$a}\' no está instalado.';
 $string['potentialidps'] = 'Identifíquese usando su cuenta en:';
+$string['privacy:metadata:userpref:createpassword'] = 'Indica que debería generarse una contraseña para el usuario';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Indica si el usuario debería o no cambiar su contraseña al iniciar sesión';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'El número de veces que el usuario no pudo iniciar sesión';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'El número de veces que el usuario no pudo iniciar sesión en el sitio desde su último inicio de sesión exitoso';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'La fecha en la cual fue grabado el último intento fallido de iniciar sesión';
+$string['privacy:metadata:userpref:loginlockout'] = 'Si la cuenta del usuario está o no bloqueada debido a intentos fallidos para iniciar sesión, y la fecha en la cual la cuenta fue bloqueada';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica si una cuenta de usuario nunca debería de estar sujeta a bloqueos';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'Cuando se bloquea, la clave secreta que debe usar el usuario para desbloquear su cuenta';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'El CAPTCHA se utiliza para impedir abusos de programas automáticos. Simplemente escriba las palabras en la caja, en orden y separadas por un espacio.
 

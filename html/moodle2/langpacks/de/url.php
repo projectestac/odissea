@@ -80,5 +80,5 @@ $string['privacy:metadata'] = 'Das Plugin \'Link/URL\' speichert keine personenb
 $string['rolesinparams'] = 'Rollennamen als Parameter einbeziehen';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'Server-URL';
-$string['url:addinstance'] = 'URL hinzufügen';
+$string['url:addinstance'] = 'Neue URL hinzufügen';
 $string['url:view'] = 'URL sehen';

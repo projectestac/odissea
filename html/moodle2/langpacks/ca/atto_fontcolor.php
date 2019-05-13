@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Color de lletra';
+$string['privacy:metadata'] = 'El connector atto_fontcolor no emmagatzema cap dada personal.';

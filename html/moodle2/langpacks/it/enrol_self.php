@@ -32,7 +32,7 @@ $string['cohortnonmemberinfo'] = 'Possono iscriversi spontaneamente solo gli app
 $string['cohortonly'] = 'Gruppo globale';
 $string['cohortonly_help'] = 'L\'iscrizione spontanea può essere limitata agli  appartenenti ad un determinato gruppo globale. Da notare che modificare questa impostazione non altera le iscrizioni già esistenti.';
 $string['customwelcomemessage'] = 'Messaggio di benvenuto personalizzato';
-$string['customwelcomemessage_help'] = 'E\' possibile inserire un messaggio personalizzato di benvenuto, sia in formato testo semplice sia in formato Moodle, dove includere tag HTML e tag multi lingua.
+$string['customwelcomemessage_help'] = 'E\' possibile inserire un messaggio personalizzato di benvenuto, sia in formato testo semplice sia in formato Moodle, dove includere tag HTML e tag multilingua.
 
 E\' anche possibile utilizzare i seguenti segnaposto:
 
@@ -66,7 +66,7 @@ $string['expirymessageenrollerbody'] = 'L\'iscrizione spontanea al corso \'{$a->
 Per prorogare l\'iscrizione, recati su {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notifica scadenza iscrizione spontanea';
 $string['groupkey'] = 'Utilizza chiavi di iscrizione ai gruppi';
-$string['groupkey_desc'] = 'Utilizza per default le chiavi di iscrizione ai gruppi';
+$string['groupkey_desc'] = 'Utilizza di default le chiavi di iscrizione ai gruppi.';
 $string['groupkey_help'] = 'Oltre alla chiave di iscrizione al corso, è possibile usare chiavi di iscrizione ai gruppi per regolare sia l\'accesso al corso sia l\'inserimento automatico dell\'utente in un gruppo.
 
 Nota: per usare una chiave di iscrizione al gruppo è necessario specificare sia la chiave di iscrizione al corso sia la chiave di iscrizione al gruppo.';
@@ -78,7 +78,7 @@ $string['maxenrolled_help'] = 'Il numero massimo di utenti che potranno iscriver
 $string['maxenrolledreached'] = 'E\' stato già raggiunto il numero massimo di iscrizioni.';
 $string['messageprovider:expiry_notification'] = 'Notifica scadenza iscrizione spontanea';
 $string['newenrols'] = 'Consenti nuove iscrizioni';
-$string['newenrols_desc'] = 'Per default gli utenti possono iscriversi ai corsi spontaneamente';
+$string['newenrols_desc'] = 'Di default gli utenti possono iscriversi ai corsi spontaneamente.';
 $string['newenrols_help'] = 'L\'impostazione stabilisce se un utente può iscriversi spontaneamente al corso.';
 $string['nopassword'] = 'Non è necessaria una chiave di iscrizione';
 $string['password'] = 'Chiave di iscrizione';
@@ -94,14 +94,14 @@ $string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di de
 $string['privacy:metadata'] = 'Il plugin di iscrizione "Iscrizione spontanea" non memorizza dati personali.';
 $string['requirepassword'] = 'Chiave d\'iscrizione obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave d\'iscrizione nei nuovi corsi ed evita l\'eliminazione di chiavi d\'iscrizione già esistenti.';
-$string['role'] = 'Ruolo assegnato per default';
+$string['role'] = 'Ruolo assegnato di default';
 $string['self:config'] = 'Configurare istanze plugin Iscrizione spontanea';
 $string['self:holdkey'] = 'Risultare come gestore della chiave di iscrizione';
 $string['self:manage'] = 'Gestire utenti iscritti';
-$string['self:unenrol'] = 'Disiscrivere utenti dai corsi';
-$string['self:unenrolself'] = 'Disiscriversi dai corsi';
+$string['self:unenrol'] = 'Disiscrivere utenti dal corso';
+$string['self:unenrolself'] = 'Disiscriversi dal corso';
 $string['sendcoursewelcomemessage'] = 'Invia messaggio di benvenuto al corso';
-$string['sendcoursewelcomemessage_help'] = 'Gli utenti che si iscrivono spontaneamente in un corso riceveranno per email un messaggio di benvenuto. Se il messaggio verrà inviato dai contatti del corso (per default il docente), il nome dell\'utente nell\'email coinciderà con il primo utente al quale è stato assegnato il ruolo.';
+$string['sendcoursewelcomemessage_help'] = 'Gli utenti che si iscrivono spontaneamente in un corso riceveranno per email un messaggio di benvenuto. Se il messaggio verrà inviato dai contatti del corso (di default il docente), il nome dell\'utente nell\'email coinciderà con il primo utente al quale è stato assegnato il ruolo.';
 $string['showhint'] = 'Visualizza suggerimento';
 $string['showhint_desc'] = 'Visualizza la prima lettera della chiave d\'iscrizione.';
 $string['status'] = 'Abilita iscrizione spontanea';

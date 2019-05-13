@@ -31,6 +31,7 @@ $string['configplugin'] = 'Configuration YouTube';
 $string['information'] = 'Obtenir pour votre site une <a href="https://developers.google.com/youtube/v3/getting-started">clef API Google</a>.';
 $string['pluginname'] = 'Vidéos YouTube';
 $string['privacy:metadata:repository_youtube'] = 'Le plugin de dépôt Vidéos YouTube n\'enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'La requête de recherche utilisateur pour le dépôt Vidéo YouTube';
 $string['search'] = 'Recherche vidéos';
 $string['sortby'] = 'Trier par';
 $string['sortpublished'] = 'Date de publication';

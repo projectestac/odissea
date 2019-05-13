@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Toegangsregel: Javascriptbeveiliging';
 $string['popupwithjavascriptsupport'] = 'Pop-up over het volledige scherm met wat JavaScript-beveiliging';
+$string['privacy:metadata'] = 'De Javascript beveiligde testtoegangsregel-plugin bewaart geen persoonlijke gegevens.';

@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'Представлен ответ в виде файла.';
 $string['event_assessable_uploaded'] = 'Файл был загружен.';
 $string['pluginname'] = 'Загрузить';
+$string['privacy:metadata'] = 'Плагин задания «Загрузить» не хранит никаких персональных данных.';

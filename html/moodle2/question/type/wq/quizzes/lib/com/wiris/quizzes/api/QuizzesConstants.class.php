@@ -17,12 +17,26 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	static $OPTION_DIGIT_GROUP_SEPARATOR = "digit_group_separator";
 	static $OPTION_STUDENT_ANSWER_PARAMETER = "answer_parameter";
 	static $OPTION_STUDENT_ANSWER_PARAMETER_NAME = "answer_parameter_name";
+	static $PROPERTY_ANSWER_FIELD_TYPE = "inputField";
 	static $ANSWER_FIELD_TYPE_INLINE_EDITOR = "inlineEditor";
 	static $ANSWER_FIELD_TYPE_POPUP_EDITOR = "popupEditor";
 	static $ANSWER_FIELD_TYPE_TEXT = "textField";
 	static $META_PROPERTY_REFERER = "referer";
 	static $META_PROPERTY_QUESTION = "question";
 	static $META_PROPERTY_USER = "userref";
+	static $PROPERTY_COMPOUND_ANSWER = "inputCompound";
+	static $PROPERTY_VALUE_COMPOUND_ANSWER_TRUE = "true";
+	static $PROPERTY_VALUE_COMPOUND_ANSWER_FALSE = "false";
+	static $PROPERTY_COMPOUND_ANSWER_GRADE = "gradeCompound";
+	static $PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_AND = "and";
+	static $PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_DISTRIBUTE = "distribute";
+	static $PROPERTY_COMPOUND_ANSWER_GRADE_DISTRIBUTION = "gradeCompoundDistribution";
+	static $PROPERTY_SHOW_CAS = "cas";
+	static $PROPERTY_VALUE_SHOW_CAS_FALSE = "false";
+	static $PROPERTY_VALUE_SHOW_CAS_ADD = "add";
+	static $PROPERTY_VALUE_SHOW_CAS_REPLACE = "replace";
+	static $PROPERTY_CAS_INITIAL_SESSION = "casSession";
+	static $PROPERTY_CAS_SESSION = "casSession";
 	static $PARAMETER_USER_ID = "user_id";
 	function __toString() { return 'com.wiris.quizzes.api.QuizzesConstants'; }
 }

@@ -50,4 +50,4 @@ $string['privacy:metadata'] = 'O módulo Registos de atividade não armazena dad
 $string['restore'] = 'Restaurar';
 $string['selectlogreader'] = 'Selecione o tipo de registo';
 $string['web'] = 'Web';
-$string['ws'] = 'Serviço Web';
+$string['ws'] = 'Web service';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pdw:desc'] = 'Toolbar umschalten';
 $string['pluginname'] = 'Toolbar umschalten';
-$string['privacy:metadata'] = 'Das TinyMCE-Plugin \'Toolbar\' speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das TinyMCE-Plugin \'Toolbar\' speichert keine personenbezogenen Daten.';

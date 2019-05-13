@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Protección do correo';
+$string['privacy:metadata'] = 'O engadido de protección do correo non almacena ningún dato persoal.';

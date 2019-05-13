@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Riga di testo';
+$string['privacy:metadata:profilefield_text:data'] = 'Dati utente nel campo personalizzato \'Riga di testo\'';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'Formato dei dati utente nel campo personalizzato \'Riga di testo\'';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'ID del campo profilo';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Dati profilo aggiuntivi';
+$string['privacy:metadata:profilefield_text:userid'] = 'ID dell\'utente i cui dati sono memorizzati nel campo personalizzato \'Riga di testo\'';

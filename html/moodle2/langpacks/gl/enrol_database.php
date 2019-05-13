@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configurar as instancias de matriculación da base de datos';
 $string['database:unenrol'] = 'Desmatricular os usuarios suspensos';
 $string['dbencoding'] = 'Codificación da base de datos';
 $string['dbhost'] = 'Equipo da base de datos';
@@ -59,10 +60,13 @@ $string['newcoursetable'] = 'Táboa remota dos novos cursos';
 $string['newcoursetable_desc'] = 'Especifique o nome da táboa que contén a lista de cursos que se deberían crear automaticamente. De estar baleiro significa que non se crearon cursos.';
 $string['pluginname'] = 'Base de datos externa';
 $string['pluginname_desc'] = 'Pode usar unha base de datos externa (de case que calquera clase) para controlar a matrícula. Asúmese que a súa base de datos externa contén cando menso un campo que contén un ID de curso e un curso que contén un ID de usuario. Compáranse contra campos que vostede escolla no curso local e nas táboas de usuarios.';
+$string['privacy:metadata'] = 'O engadido de matriculación de base de datos externa non almacena ningún dato persoal.';
 $string['remotecoursefield'] = 'Campo do curso remoto';
 $string['remotecoursefield_desc'] = 'O nome do campo na táboa remota que estamos a usar para casar entradas na táboa do curso.';
 $string['remoteenroltable'] = 'Táboa de matrícula de usuarios remota';
 $string['remoteenroltable_desc'] = 'Especifique o nome da táboa que contén a lista de matrícula de usuarios. De estar baleira, significa que non se sincroniza a matrícula de usuarios.';
+$string['remoteotheruserfield'] = 'Campo de outro usuario remoto';
+$string['remoteotheruserfield_desc'] = 'O nome do campo na táboa remota que se está a usar para sinalar as asignacións de rol «doutro usuario».';
 $string['remoterolefield'] = 'Campo de rol remoto';
 $string['remoterolefield_desc'] = 'O nome do campo na táboa remota que se está a usar para casar entradas na táboa de roles.';
 $string['remoteuserfield'] = 'Campo de usuario remoto';

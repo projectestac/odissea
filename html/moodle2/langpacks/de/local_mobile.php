@@ -36,3 +36,4 @@ $string['local_mobiledescription'] = 'Das Plugin erweitert den mobilen Webservic
 $string['local_mobilesettings'] = 'Einstellungen';
 $string['pluginname'] = 'Moodle Mobile - Zusatzfeatures';
 $string['pluginnotenabledorconfigured'] = 'Das Plugin \'Moodle Mobile - Zusatzfeatures\' muss aktiviert und konfiguriert sein, um die mobile App automatisch zu starten.';
+$string['privacy:metadata'] = 'Das Plugin \'Moodle Mobile - Zusatzfeatures\' speichert keine personenbezogenen Daten.';

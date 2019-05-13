@@ -32,8 +32,8 @@ $string['correctanswerandfeedback'] = 'Erantzun zuzena eta feedbacka';
 $string['decodeverifyquestiontext'] = 'Galderaren testua deskodetu eta egiaztatu';
 $string['layout'] = 'Diseinua';
 $string['layouthorizontal'] = 'Erantzun-botoietarako lerro horizontala';
-$string['layoutmultiple_horizontal'] = 'Aukera laukitxoen errenkada horizontala';
-$string['layoutmultiple_vertical'] = 'Aukera laukitxoen zutabe bertikala';
+$string['layoutmultiple_horizontal'] = 'Aukera-laukitxoen errenkada horizontala';
+$string['layoutmultiple_vertical'] = 'Aukera-laukitxoen zutabe bertikala';
 $string['layoutselectinline'] = 'Zabaltzen den menua lerroa testuan';
 $string['layoutundefined'] = 'Definitu gabeko diseinua';
 $string['layoutvertical'] = 'Erantzun-botoietarako zutabe bertikala';
@@ -41,7 +41,7 @@ $string['nooptionsforsubquestion'] = 'Ezin da aukerarik lortu  # {$a->sub} galde
 $string['noquestions'] = 'Erantzun anitzeko "<strong>{$a}</strong>" galderak ez du galderarik';
 $string['pleaseananswerallparts'] = 'Mesedez, erantzun galderaren atal guztiei';
 $string['pluginname'] = 'Txertatutako erantzunak (Cloze)';
-$string['pluginnameadding'] = 'Gehitu txertatutako erantzuna (Cloze) motako galdera';
+$string['pluginnameadding'] = 'Txertatutako erantzuna (Cloze) motako galdera gehitzen';
 $string['pluginnameediting'] = 'Editatu txertatutako erantzuna (Cloze) motako galdera';
 $string['pluginname_help'] = 'Txertatutako erantzunak (Cloze) motako galderetan testu bat aurkezten da eta horretan aukera anitzeko erantzunak edo txertatutako erantzunak.';
 $string['pluginnamesummary'] = 'Mota honetako galderak oso malguak dira, baina aukera anitzeko, erantzun laburreko eta zenbakizko galdera enbotatuak sortzen dituzten kode bereziak dituen testua gehituta bakarrik sor daitezke.';
@@ -49,7 +49,10 @@ $string['privacy:metadata'] = 'Txertatutako erantzunak (Cloze) galdera-mota plug
 $string['qtypenotrecognized'] = '{$a} galdera-mota ezezaguna da';
 $string['questiondefinition'] = 'Galderaren definizioa';
 $string['questiondeleted'] = 'Galdera ezabatuta';
-$string['questioninquiz'] = '<ul><li> gehitu edo ezabatu galderak, </li> <li> aldatu galderen ordena testuan, </li> <li> aldatu galdera-mota (zenbakizkoa, erantzun laburrekoa, aukera anitzekoa). </li> </ul>';
+$string['questioninquiz'] = '<ul>
+  <li> gehitu edo ezabatu galderak, </li>
+  <li> aldatu galderen ordena testuan, </li>
+  <li> aldatu galdera-mota (zenbakizkoa, erantzun laburrekoa, aukera anitzekoa). </li></ul>';
 $string['questionnotfound'] = 'Ezin da aurkitu #{$a} galdera-zatiaren galdera';
 $string['questionsadded'] = 'Galdera gehitu da';
 $string['questionsaveasedited'] = 'Galdera editatutakoa bezala gordeko da';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Erlaubte Versuche: {$a}';
 $string['pluginname'] = 'Anzahl der Versuche';
-$string['privacy:metadata'] = 'Das Anzahl der Testversuche-Regelplugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Anzahl der Testversuche-Regelplugin speichert keine personenbezogenen Daten.';

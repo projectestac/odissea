@@ -26,6 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Actividade recente';
+$string['privacy:metadata'] = 'O bloque de actividades recentes contén unha caché de datos almacenados noutro lugar de Moodle.';
+$string['privacy:metadata:block_recent_activity'] = 'Rexistro temporal da actividade docente recente. Retirada após dous días';
+$string['privacy:metadata:block_recent_activity:action'] = 'Acción: creada, actualizada ou eliminada';
+$string['privacy:metadata:block_recent_activity:cmid'] = 'O ID da actividade do curso';
+$string['privacy:metadata:block_recent_activity:courseid'] = 'ID do curso';
+$string['privacy:metadata:block_recent_activity:modname'] = 'Nome do tipo de módulo (para eliminar a acción)';
+$string['privacy:metadata:block_recent_activity:timecreated'] = 'Momento no que se realizou a acción';
+$string['privacy:metadata:block_recent_activity:userid'] = 'Usuario que realiza a acción';
 $string['recent_activity:addinstance'] = 'Engadir un novo bloque de actividade recente';
 $string['recent_activity:viewaddupdatemodule'] = 'Ver os módulos engadidos e actualizados no bloque de actividade recente';
 $string['recent_activity:viewdeletemodule'] = 'Ver os módulos eliminados no bloque de actividade recente';

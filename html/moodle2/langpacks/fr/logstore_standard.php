@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Taille du tampon d\'écriture';
-$string['pluginname'] = 'Historiques standards';
-$string['pluginname_desc'] = 'Un plugin qui enregistre les historiques dans une table de la base de données de Moodle.';
+$string['pluginname'] = 'Journaux standards';
+$string['pluginname_desc'] = 'Un plugin qui enregistre les journaux dans une table de la base de données de Moodle.';
 $string['privacy:metadata:log'] = 'Une collection des événements passés';
 $string['privacy:metadata:log:anonymous'] = 'Si l\'événement a été marqué comme anonyme';
 $string['privacy:metadata:log:eventname'] = 'Le nom de l\'événement';
@@ -38,4 +38,4 @@ $string['privacy:metadata:log:realuserid'] = 'L\'identifiant de l\'utilisateur r
 $string['privacy:metadata:log:relateduserid'] = 'L\'identifiant d\'un utilisateur en lien avec cet événement';
 $string['privacy:metadata:log:timecreated'] = 'La date et l\'heure de la survenue de l\'événement';
 $string['privacy:metadata:log:userid'] = 'L\'identifiant de l\'utilisateur qui a déclenché cet événement';
-$string['taskcleanup'] = 'Nettoyage de la table d\'historiques';
+$string['taskcleanup'] = 'Nettoyage de la table des journaux';

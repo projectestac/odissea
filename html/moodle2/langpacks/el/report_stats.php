@@ -25,4 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Η αναφορά στατιστικών προβλήθηκε';
+$string['eventuserreportviewed'] = 'Η αναφορά στατιστικών χρήστη προβλήθηκε';
+$string['nocapability'] = 'Δεν είναι δυνατή η πρόσβαση στην αναφορά στατιστικών χρήστη';
+$string['page-report-stats-index'] = 'Αναφορά στατιστικών μαθήματος';
+$string['page-report-stats-user'] = 'Αναφορά στατιστικών μαθήματος χρήστη';
+$string['page-report-stats-x'] = 'Οποιαδήποτε αναφορά στατιστικών';
+$string['pluginname'] = 'Στατιστικά';
+$string['privacy:dailypath'] = 'Στατιστικά καθημερινά';
+$string['privacy:metadata'] = 'Το πρόσθετο «Στατιστικά» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata:courseid'] = 'Ένα αναγνωριστικό για ένα μάθημα';
+$string['privacy:metadata:roleid'] = 'Το αναγνωριστικό ρόλου του χρήστη.';
+$string['privacy:metadata:statsreads'] = 'Προβολές του περιεχομένου';
+$string['privacy:metadata:statssummary'] = 'Καταγράφει βασικά στατιστικά στοιχεία σχετικά με την αλληλεπίδραση του χρήστη στα μαθήματα.';
+$string['privacy:metadata:statswrites'] = 'Περιεχόμενο που έγινε στο μάθημα.';
+$string['privacy:metadata:stattype'] = 'Ο τύπος του στατιστικού δεδομένου που καταγράφεται';
+$string['privacy:metadata:timeend'] = 'Ώρα λήξης της προβολής των καταγραφών';
+$string['privacy:metadata:userid'] = 'Το αναγνωριστικό χρήστη που συνδέεται με αυτόν τον πίνακα.';
+$string['privacy:monthlypath'] = 'Στατιστικά μηνιαία';
+$string['privacy:weeklypath'] = 'Στατιστικά εβδομαδιαία';
 $string['stats:view'] = 'Προβολή αναφοράς στατιστικών μαθήματος';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = '已有在线文本上传';
 $string['pluginname'] = '在线';
+$string['privacy:metadata'] = '在线作业插件不储存任何私人数据。';

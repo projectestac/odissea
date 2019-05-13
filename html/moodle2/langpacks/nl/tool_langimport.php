@@ -45,6 +45,7 @@ $string['missinglangparent'] = 'Ontbrekende parent language <em>{$a->parent}</em
 $string['noenglishuninstall'] = 'Het Engels taalpakket kan niet verwijderd worden.';
 $string['nolangupdateneeded'] = 'Al je geïnstalleerde taalpakketten zijn up-to-date. Er is geen update nodig.';
 $string['pluginname'] = 'Pakketten';
+$string['privacy:metadata'] = 'De taalpakket-plugin bewaart geen persoonlijke gegevens.';
 $string['purgestringcaches'] = 'Taalcache leegmaken';
 $string['selectlangs'] = 'Selecteer te verwijderen taalpakketten';
 $string['uninstall'] = 'Verwijder geselecteerde taalpakketten';

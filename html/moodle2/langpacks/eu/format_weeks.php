@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsections'] = 'Gehitu asteak';
-$string['automaticenddate'] = 'Kalkulatu bukaera-data atal kopuruaren arabera';
-$string['automaticenddate_help'] = 'Gaituz gero ikastaroaren bukaera-data automatikoki kalkulatuko da atal-kopuruaren eta hasiera-dataren arabera.';
+$string['automaticenddate'] = 'Kalkulatu amaiera-data atal kopuruaren arabera';
+$string['automaticenddate_help'] = 'Gaituz gero ikastaroaren amaiera-data automatikoki kalkulatuko da atal-kopuruaren eta hasiera-dataren arabera.';
 $string['currentsection'] = 'Aste hau';
 $string['deletesection'] = 'Ezabatu astea';
 $string['editsection'] = 'Editatu astea';

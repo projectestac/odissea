@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Выбор из списка';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profilefield_menu:userid'] = 'ID пользователя, данные которого хранятся в поле «Выбор из списка» профиля пользователя';

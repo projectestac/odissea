@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '字体颜色';
+$string['privacy:metadata'] = 'atto_fontcolor 插件不储存任何私人数据。';

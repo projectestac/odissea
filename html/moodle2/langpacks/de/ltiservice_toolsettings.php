@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tool Einstellungsservice';
-$string['privacy:metadata'] = 'Das Einstellungs-Service-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Einstellungs-Service-Plugin speichert keine personenbezogenen Daten.';

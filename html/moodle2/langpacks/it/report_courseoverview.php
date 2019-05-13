@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'Visualizzare report delle attività del corso';
 $string['pluginname'] = 'Panoramica corsi';
+$string['privacy:metadata'] = 'Il plugin \'Panoramica corsi\' non memorizza dati personali.';

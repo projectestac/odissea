@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['conditiontitle'] = 'Erabiltzaile-profilaren eremua';
 $string['description'] = 'Sarbidea baimendu ikasleen profilaren eremuen arabera';
 $string['error_selectfield'] = 'Aukeratu behar duzu erabiltzaile-profilaren eremu bat.';
-$string['error_setvalue'] = 'Balore bat idatzi behar duzu.';
+$string['error_setvalue'] = 'Balio bat idatzi behar duzu.';
 $string['label_operator'] = 'Konparaketa metodoa';
 $string['label_value'] = 'Konparaketarako balioa';
 $string['missing'] = '(Eremua falta da: {$a})';

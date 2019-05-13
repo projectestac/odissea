@@ -31,4 +31,5 @@ $string['h5'] = '小标题';
 $string['p'] = '段落';
 $string['pluginname'] = '段落样式';
 $string['pre'] = '预格式化';
+$string['privacy:metadata'] = 'atto_title 插件不储存任何私人数据。';
 $string['title'] = '段落样式';

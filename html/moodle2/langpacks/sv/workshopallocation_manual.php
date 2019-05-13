@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addreviewer'] = 'Lägg till bedömare';
+$string['allocationadded'] = 'Inlämningen har framgångsrikt tilldelats';
+$string['allocationexists'] = 'Tilldelningen finns redan';
 $string['areyousuretodeallocate'] = 'Är du säker på att du vill ta bort tilldelningen av den valda bedömningen?';
+$string['areyousuretodeallocategraded'] = 'Du håller på att radera en utvärdering som redan har betygsatts. Är du säker på att du vill göra det?';
+$string['pluginname'] = 'Manuell tilldelning';

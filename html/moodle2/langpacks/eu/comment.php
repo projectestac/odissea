@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['commentsubcontext'] = 'Iruzkinak';
 $string['privacy:metadata:comment'] = 'Erabiltzaileen iruzkinak biltzen ditu.';
 $string['privacy:metadata:comment:content'] = 'Iruzkinaren testua biltzen du.';
-$string['privacy:metadata:comment:timecreated'] = 'Iruzkina sortu zeneko data';
+$string['privacy:metadata:comment:timecreated'] = 'Iruzkina sortu zeneko unea.';
 $string['privacy:metadata:comment:userid'] = 'Iruzkina egin duen erabiltzailea';

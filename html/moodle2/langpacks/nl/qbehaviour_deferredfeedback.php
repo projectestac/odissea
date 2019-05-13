@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Uitgestelde feedback';
+$string['privacy:metadata'] = 'De uitgestelde feedback vraaggedrag-plugin bewaart geen persoonlijke gegevens.';

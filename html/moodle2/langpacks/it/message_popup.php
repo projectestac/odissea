@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Web';
+$string['privacy:metadata'] = 'Il plugin per l\'instradamento messaggi \'Web\' non memorizza dati personali.';

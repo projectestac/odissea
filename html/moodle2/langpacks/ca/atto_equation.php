@@ -37,6 +37,7 @@ $string['librarygroup4'] = 'Avançat';
 $string['librarygroup4_desc'] = 'Ordres TeX que es llisten en la pestanya avançada.';
 $string['pluginname'] = 'Editor d\'equacions';
 $string['preview'] = 'Previsualització de l\'equació';
+$string['privacy:metadata'] = 'El connector atto_equation no emmagatzema cap dada personal.';
 $string['saveequation'] = 'Desa l\'equació';
 $string['settings'] = 'Paràmetres de l\'editor d\'equacions';
 $string['update'] = 'Actualitza';

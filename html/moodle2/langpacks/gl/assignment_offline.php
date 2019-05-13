@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Desconectado';
+$string['privacy:metadata'] = 'O engadido de tarefas sen conexión non almacena ningunha información persoal.';

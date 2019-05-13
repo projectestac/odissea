@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['competenciestoreview'] = 'Berrikusteko gaitasunak';
+$string['competenciestoreview'] = 'Berrikusteko konpetentziak';
 $string['lp:addinstance'] = 'Gehitu ikasketa-planak bloke berria';
 $string['lp:myaddinstance'] = 'Gehitu ikasketa-planak bloke berria aginte-panelean';
 $string['lp:view'] = 'Ikusi ikasketa-planak blokea';

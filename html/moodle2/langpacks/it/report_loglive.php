@@ -36,5 +36,6 @@ $string['loglive:view'] = 'Visualizzare live log';
 $string['nologreaderenabled'] = 'Nessun log reader abilitato';
 $string['pause'] = 'Interrompi aggiornamenti live';
 $string['pluginname'] = 'Live log';
+$string['privacy:metadata'] = 'Il plugin \'Live log\' non memorizza dati personali.';
 $string['resume'] = 'Riprendi aggiornamenti live';
 $string['selectlogreader'] = 'Seleziona log reader';

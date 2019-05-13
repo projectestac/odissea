@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Формат Aiken';
 $string['pluginname_help'] = 'Это - простой формат для импортирования вопросов множественного выбора из текстового файла.';
+$string['privacy:metadata'] = 'Плагин «Формат Aiken» не хранит никаких персональных данных.';

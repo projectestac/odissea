@@ -74,6 +74,6 @@ $string['show'] = 'Mostrar';
 $string['showattempts'] = 'Incluir tentativas';
 $string['showdetailedmarks'] = 'Notas de cada pergunta';
 $string['showinggraded'] = 'A mostrar apenas as tentativas que contam para a nota final de cada aluno';
-$string['showinggradedandungraded'] = 'A mostrar tentativas que contam ou não para a nota final de cada aluno. A tentativa do aluno que conta para a nota final está assinalada. O método de avaliação deste teste é {$a}.';
+$string['showinggradedandungraded'] = 'A mostrar tentativas que contam, ou não, para a nota final de cada aluno. A tentativa do aluno que conta para a nota final está assinalada. O método de avaliação deste Teste é {$a}.';
 $string['studentingroup'] = '\'{$a->coursestudent}\' no grupo \'{$a->groupname}';
 $string['studentingrouplong'] = '\'{$a->coursestudent}\' neste grupo';

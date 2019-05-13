@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlewrap:desc'] = 'Umbruch';
 $string['pluginname'] = 'Umbruch';
-$string['privacy:metadata'] = 'DasTinyMCE-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'DasTinyMCE-Plugin speichert keine personenbezogenen Daten';

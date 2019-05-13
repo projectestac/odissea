@@ -63,7 +63,8 @@ $string['external'] = 'Externe globale Gruppe';
 $string['idnumber'] = 'Globale Gruppen-ID';
 $string['memberscount'] = 'Größe';
 $string['name'] = 'Name';
-$string['namecolumnmissing'] = 'Das Format der CSV-Datei ist nicht richtig. Prüfen Sie, ob die Feldnamen in der ersten Zeile enthalten sind.';
+$string['namecolumnmissing'] = 'Das Format der CSV-Datei ist nicht richtig. Prüfen Sie, ob die Feldnamen in der ersten Zeile enthalten sind.
+Hinweis: Mit dem Globale Gruppen-Upload können Sie neue Nutzer in bestehende globale Gruppen hochladen. Das Hochladen erfolgt auf der Unterseite für den Nutzerupload.';
 $string['namefieldempty'] = 'Der Feldname darf nicht leer sein.';
 $string['newidnumberfor'] = 'Neue ID-Nummer für globale Gruppe {$a}';
 $string['newnamefor'] = 'Neuer Name für globale Gruppe {$a}';

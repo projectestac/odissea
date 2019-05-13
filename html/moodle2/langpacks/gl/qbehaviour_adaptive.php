@@ -37,3 +37,4 @@ $string['gradingdetailswithpenalty'] = 'Puntuacións para esta entrega: {$a->raw
 $string['gradingdetailswithtotalpenalty'] = 'Puntuacións para esta entrega: {$a->raw}/{$a->max}. Esta entrega recibiu unha penalización de {$a->penalty}. Total de penalizacións ata agora: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Non completa';
 $string['pluginname'] = 'Modo adaptativo';
+$string['privacy:metadata'] = 'O engadido de comportamento de preguntas do modo adaptativo non almacena ningún dato persoal.';

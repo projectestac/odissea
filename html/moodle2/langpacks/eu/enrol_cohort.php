@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Gehitu taldera';
 $string['assignrole'] = 'Esleitu rola';
-$string['cohort:config'] = 'Kohorteen instantziak konfiguratu';
+$string['cohort:config'] = 'Konfiguratu kohorteen instantziak';
 $string['cohort:unenrol'] = 'Desmatrikulatu kontua etenda duten erabiltzaileak';
 $string['creategroup'] = 'Sortu beste talde bat';
 $string['defaultgroupnametext'] = '{$a->name} kohortea {$a->increment}';

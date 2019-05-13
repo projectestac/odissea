@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Загрузить один';
+$string['privacy:metadata'] = 'Плагин задания «Загрузить один» не хранит никаких персональных данных.';

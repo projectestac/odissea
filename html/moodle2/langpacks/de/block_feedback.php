@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Feedback';
-$string['feedback:addinstance'] = 'Block \'Feedback\' hinzufügen';
+$string['feedback:addinstance'] = 'Neuen Block \'Feedback\' hinzufügen';
 $string['pluginname'] = 'Feedback';
 $string['privacy:metadata'] = 'Der Block Feedback zeigt nur Daten an, die an anderen Orten gespeichert sind.';

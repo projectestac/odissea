@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Soziale Aktivitäten';
 $string['privacy:metadata'] = 'Der Block \'Soziale Aktivitäten\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
-$string['social_activities:addinstance'] = 'Block \'Soziale Aktivitäten\' hinzufügen';
+$string['social_activities:addinstance'] = 'Neuen Block \'Soziale Aktivitäten\' hinzufügen';

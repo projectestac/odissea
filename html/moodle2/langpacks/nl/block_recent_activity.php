@@ -27,6 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Recente wijzigingen';
 $string['privacy:metadata'] = 'Het recente gebeurtenissenblok bevat een cache van gegevens die elders in Moodle bewaard worden.';
+$string['privacy:metadata:block_recent_activity'] = 'Tijdelijke log van lerarenactiviteit.  Wordt na twee dagen verwijderd';
+$string['privacy:metadata:block_recent_activity:action'] = 'Actie: gemaakt, aangepast of verwijderd';
+$string['privacy:metadata:block_recent_activity:cmid'] = 'Cursusactiviteits-ID';
+$string['privacy:metadata:block_recent_activity:courseid'] = 'Cursus-ID';
+$string['privacy:metadata:block_recent_activity:modname'] = 'Naam moduletype (voor actie verwijderen)';
+$string['privacy:metadata:block_recent_activity:timecreated'] = 'Tijdstip waarop de actie gebeurde';
+$string['privacy:metadata:block_recent_activity:userid'] = 'De gebruiker die de actie deed';
 $string['recent_activity:addinstance'] = 'Voeg een nieuw recent activiteitenblok toe';
 $string['recent_activity:viewaddupdatemodule'] = 'Bekijk toegevoegde en aangepaste modules in het recente activiteitenblok';
 $string['recent_activity:viewdeletemodule'] = 'Bekijk verwijderde modules in het recente activiteitenblok';

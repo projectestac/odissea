@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Поле «Переключатели»';
 $string['pluginname'] = 'Переключатель';
+$string['privacy:metadata'] = 'Компонент поля базы данных «Переключатель» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';

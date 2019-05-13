@@ -31,7 +31,7 @@ global $CFG;
 require_once($CFG->dirroot . '/lib/moodlelib.php');
 
 // Avoid redeclareding or AccessProvider interface.
-if (interface_exists('com_wiris_util_sys_AccessProvider')) {
+if (!interface_exists('com_wiris_util_sys_AccessProvider')) {
     require_once($CFG->dirroot . '/question/type/wq/quizzes/lib/com/wiris/util/sys/AccessProvider.interface.php');
 }
 

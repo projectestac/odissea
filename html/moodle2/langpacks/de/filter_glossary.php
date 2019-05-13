@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Autoverlinkung zu Glossaren';
-$string['privacy:metadata'] = 'Der Filter für Glossareinträge speichert keine persönlichen Daten.';
+$string['glossarycategory'] = '{$a->glossary}: Kategorie {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
+$string['privacy:metadata'] = 'Der Filter für Glossareinträge speichert keine personenbezogenen Daten.';

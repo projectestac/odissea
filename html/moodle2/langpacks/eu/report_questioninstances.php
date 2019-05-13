@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['editquestionshere'] = 'Editatu galderak testuinguru honetan';
 $string['eventreportviewed'] = 'Txostena ikusi da';
-$string['getreport'] = 'Lortu txostena';
+$string['getreport'] = 'Eskuratu txostena';
 $string['hiddenquestions'] = 'Ezkutuan';
 $string['intro'] = 'Txosten honek mota bereziko galderak dituzten sistemako testuinguru guztiak zerrendatzen ditu';
 $string['pluginname'] = 'Galdera-instantziak';
 $string['privacy:metadata'] = 'Galdera-instantziak pluginak ez du datu pertsonalik biltzen.';
-$string['questioninstances:view'] = 'Galdera-instantzien txostena ikusi';
+$string['questioninstances:view'] = 'Ikusi galdera-instantzien txostena';
 $string['reportforallqtypes'] = 'Galdera-mota guztietarako txostena';
 $string['reportformissingqtypes'] = 'Galdera-mota ezezagunetarako txostena';
 $string['reportforqtype'] = '\'{$a}\' motako galderetarako txostena';

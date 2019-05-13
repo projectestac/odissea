@@ -38,6 +38,7 @@ $string['prefix_help'] = 'Il prefisso da usare per tutti nomi delle chiavi nel s
 * se il server ospita una singola istanza Moodle, è possibile lasciare il nome al suo default
 * a causa di limitazioni sulla lunghezza delle chiavi, il prefisso può essere lungo al massimo 5 caratteri.';
 $string['prefixinvalid'] = 'Prefisso non valido. E\' possibile usare solamente a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcache:data'] = 'Dati memorizzati in cache';
 $string['servers'] = 'Server';
 $string['serversclusterinvalid'] = 'Con il clustering abilitato nell\'elenco deve essere presente un solo server.';
 $string['servers_help'] = 'Imposta i server utilizzati dall\'adapter memcached.

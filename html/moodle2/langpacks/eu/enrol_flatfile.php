@@ -52,9 +52,9 @@ eremuok balio hauek izan ditzakete:
 * operation - add | del
 * role - student | teacher | teacheredit
 * user idnumber - erabiltzaile taulako ID zenbakia
-* course idnumber - ierabiltzaile taulako ID zenbakia
-* starttime - hasiera data (Unix-eko epoch-etik igarotako segunduak) - aukeakoa
-* endtime - bukaera data (Unix-eko epoch-etik igarotako segunduak) - aukeakoa
+* course idnumber - erabiltzaile taulako ID zenbakia
+* starttime - hasiera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
+* endtime - bukaera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
 
 Honen moduko zerbait izan daiteke:
 <pre class="informationbox">

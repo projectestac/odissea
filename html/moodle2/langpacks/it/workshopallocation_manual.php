@@ -32,4 +32,5 @@ $string['allocationexists'] = 'La distribuzione è già esistente';
 $string['areyousuretodeallocate'] = 'Sei sicuro di rimuovere la distribuzione delle valutazioni selezionate?';
 $string['areyousuretodeallocategraded'] = 'Stai per eliminare valutazioni che hanno già voti. Sei sicuro?';
 $string['pluginname'] = 'Distribuzione manuale';
+$string['privacy:metadata:preference:perpage'] = 'Preferenza dell\'utente sul numero di valutazioni assegnate da visualizzare in una pagina.';
 $string['showallparticipants'] = 'Visualizza tutti partecipanti';

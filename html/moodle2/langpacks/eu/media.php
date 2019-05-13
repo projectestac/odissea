@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['audioextensions'] = 'Audioa: {$a}';
-$string['defaultheight'] = 'Berezko altuera';
+$string['defaultheight'] = 'Lehenetsitako altuera';
 $string['defaultheightdesc'] = 'Media erreproduzitzailearen altuera, luzera zehaztuta ez badago edo erreproduzitzaileak ezin badu uneko multimedia fitxategiaren altuera zehaztu.';
-$string['defaultwidth'] = 'Berezko zabalera';
+$string['defaultwidth'] = 'Lehenetsitako zabalera';
 $string['defaultwidthdesc'] = 'Media erreproduzitzailearen zabalera, zabalera zehaztuta ez badago edo erreproduzitzaileak ezin badu uneko multimedia fitxategiaren zabalera zehaztu.';
 $string['extensions'] = 'Luzapenak: {$a}';
 $string['legacyheading'] = 'Heredatutako erreproduzitzaileak';

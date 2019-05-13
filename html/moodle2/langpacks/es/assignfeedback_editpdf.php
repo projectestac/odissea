@@ -73,6 +73,7 @@ $string['pathtogspathdesc'] = 'Por favor tenga en cuenta que la anotación de PD
 $string['pen'] = 'Pluma';
 $string['pluginname'] = 'Anotación PDF';
 $string['preparesubmissionsforannotation'] = 'Preparar los envíos para la anotación';
+$string['privacy:metadata:userid'] = 'Identificador del usuario';
 $string['rectangle'] = 'Rectángulo';
 $string['red'] = 'Rojo';
 $string['result'] = 'Resultado:';

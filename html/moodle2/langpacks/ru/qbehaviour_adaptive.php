@@ -37,3 +37,4 @@ $string['gradingdetailswithpenalty'] = 'Оценка за этот ответ: {
 $string['gradingdetailswithtotalpenalty'] = 'Оценка за этот ответ: {$a->raw}/{$a->max}. Эта попытка повлекла штраф: {$a->penalty}. Итоговый штраф на текущий момент: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Не завершено';
 $string['pluginname'] = 'Адаптивный режим';
+$string['privacy:metadata'] = 'Плагин «Адаптивный режим поведения вопросов» не хранит никаких персональных данных.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Kontrol-laukia';
+$string['pluginname'] = 'Kontrol-laukitxoa';
 $string['privacy:metadata:profilefield_checkbox:data'] = 'Gordetako erabiltzaile-datuak.';
 $string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Gordetako erabiltzaile-datuen formatua.';
 $string['privacy:metadata:profilefield_checkbox:fieldid'] = 'Profil-eremuaren IDa.';

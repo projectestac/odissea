@@ -845,17 +845,21 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	}
 	static function syntacticAssertionToURL($a) {
 		$sb = new StringBuf();
-		if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_EXPRESSION) {
-			$sb->add("Expression");
+		if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_MATH) {
+			$sb->add("Math");
 		} else {
-			if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_QUANTITY) {
-				$sb->add("Quantity");
+			if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_EXPRESSION) {
+				$sb->add("Expression");
 			} else {
-				if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING) {
-					$sb->add("String");
+				if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_QUANTITY) {
+					$sb->add("Quantity");
 				} else {
-					if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_LIST) {
-						$sb->add("List");
+					if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING) {
+						$sb->add("String");
+					} else {
+						if($a->name === com_wiris_quizzes_impl_Assertion::$SYNTAX_LIST) {
+							$sb->add("List");
+						}
 					}
 				}
 			}

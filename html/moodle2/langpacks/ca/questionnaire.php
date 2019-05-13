@@ -456,8 +456,8 @@ $string['template'] = 'Plantilla';
 $string['templatenotviewable'] = 'Les plantilles d\'enquestes no es poden visualitzar.';
 $string['text'] = 'Text de la pregunta';
 $string['textareacolumns'] = 'Columnes d\'àrees de text';
-$string['textareacolumns_help'] = 'Aquesta pregunta mostrarà un quadre d\'edició de text simple amb **x** columnes (o una mida *width*) i **y** files.
-Si manteniu x i y amb els seus valors predefinits (o si el poseu a **0**), es mostrarà l\'editor HTML amb l\'amplada i l\'alçada estàndard (sempre i quan estigui disponible en el context d\'usuari o de curs).';
+$string['textareacolumns_help'] = 'Aquesta pregunta mostrarà un quadre d\'edició de text net amb **x** columnes (o una mida *width*) i **y** files.
+Si manteniu x i y amb els seus valors predefinits (o si els poseu a **0**), es mostrarà l\'editor HTML amb l\'amplària i l\'alçària estàndards (sempre que estigui disponible en el context d\'usuari o de curs).';
 $string['textarearows'] = 'Files del quadre d\'edició de text';
 $string['textbox'] = 'Quadre d\'edició del text';
 $string['textbox_help'] = 'Al tipus del quadre d\'edició de text, indiqueu la longitud del quadre i la longitud màxima del text que podrà escriure l\'enquestat.

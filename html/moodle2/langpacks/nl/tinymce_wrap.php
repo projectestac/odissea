@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlewrap:desc'] = 'Wikkelen';
 $string['pluginname'] = 'Wikkelen';
+$string['privacy:metadata'] = 'De TinyMCE Wrap-plugin bewaart geen persoonlijke gegevens.';

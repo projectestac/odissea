@@ -100,9 +100,9 @@ $string['forceformat'] = 'Forçar formato';
 $string['forceformat_help'] = 'Se ativar a opção forçar formato, não será possível escolher outro formato ao editar uma página wiki.';
 $string['format'] = 'Formato';
 $string['formatcreole'] = 'Formato Creole';
-$string['formatcreole_help'] = 'O Creole é uma linguagem de markup comum de wiki com uma barra de edição para inserir o markup adequado.
+$string['formatcreole_help'] = 'Creole é uma linguagem de markup comum de wiki com uma barra de edição para inserir o markup adequado.
 
-Para criar uma nova página, digite o nome da nova página entre parênteses retos, por exemplo [[Página 2]].';
+Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
 $string['formatcreole_link'] = 'mod/wiki/creole';
 $string['format_help'] = '* HTML - O editor HTML está disponível
 * Creole - Uma linguagem de markup comum de wiki para os quais uma barra de edição pequena está disponível
@@ -110,11 +110,11 @@ $string['format_help'] = '* HTML - O editor HTML está disponível
 $string['formathtml'] = 'Formato HTML';
 $string['formathtml_help'] = 'O editor de HTML é usado para formatar conteúdos.
 
-Para criar uma nova página, digite o nome da nova página entre parênteses retos, por exemplo [[Página 2]].';
+Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
 $string['formatnwiki'] = 'Formato NWiki';
 $string['formatnwiki_help'] = 'Nwiki é a linguagem de markup Mediawiki utilizada no módulo Nwiki
 
-Para criar uma nova página, digite o nome da nova página entre parênteses retos, por exemplo [[Página 2]].';
+Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
 $string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Histórico';
 $string['history_help'] = 'Histórico de ligações de versões anteriores da página';
@@ -130,12 +130,12 @@ $string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude
 $string['individualpagedoesnotexist'] = 'Não existem página de wiki individual';
 $string['insertcomment'] = 'Inserir comentário';
 $string['insertimage'] = 'Inserir uma imagem…';
-$string['insertimage_help'] = 'Esta lista drop-down irá inserir uma imagem no editor wiki. Se necessitar de adicionar mais imagens ao wiki, use o separador "Anexos".';
+$string['insertimage_help'] = 'Esta lista pendente irá inserir uma imagem no editor wiki. Se for necessário adicionar mais imagens ao wiki, use o separador "Anexos".';
 $string['invalidlock'] = 'Esta página já foi bloqueada por outro utilizador.';
 $string['invalidparameters'] = 'Foram inseridos parâmetros inválidos';
 $string['invalidsection'] = 'Secção inválida.';
 $string['invalidsesskey'] = 'É provável que a sua sessão tenha expirado. Tome nota da sua edição e autentique-se novamente.';
-$string['javascriptdisabledlocks'] = 'O Javascript está desativado no seu navegador e os bloqueios não estão a funcionar. As alterações feitas podem não ser guardadas corretamente.';
+$string['javascriptdisabledlocks'] = 'O JavaScript está desativado no seu navegador e os bloqueios não estão a funcionar. As alterações efetuadas podem não ser guardadas corretamente.';
 $string['links'] = 'Hiperligações';
 $string['listall'] = 'Listar todas';
 $string['listorphan'] = 'Listar páginas orfãs';
@@ -221,7 +221,7 @@ $string['privacy:metadata:core_files'] = 'Ficheiros anexados a subpáginas';
 $string['privacy:metadata:core_tag'] = 'Palavras-chave associadas a páginas wiki';
 $string['privacy:metadata:wiki_locks'] = 'Armazenamento temporário para bloqueios de edição wiki';
 $string['privacy:metadata:wiki_locks:lockedat'] = 'Data de bloqueio';
-$string['privacy:metadata:wiki_locks:sectionname'] = 'Nome da secção de página blcoqueada';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'Nome da secção de página bloqueada';
 $string['privacy:metadata:wiki_locks:userid'] = 'Utilizador que bloqueou uma página';
 $string['privacy:metadata:wiki_pages'] = 'Informação sobre páginas wiki';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'Conteúdo em cache em formato HTML';
@@ -249,7 +249,7 @@ $string['removepages'] = 'Apagar páginas';
 $string['reparsetimeout'] = 'Ajustar tempo limite predefinido';
 $string['repeatedsection'] = 'Erro: O nome da secção não pode ser repetido \'{$a}';
 $string['restore'] = 'Restaurar';
-$string['restoreconfirm'] = 'Tem a certeza que pretende restaurar a versão #{$a}?';
+$string['restoreconfirm'] = 'Tem a certeza de que pretende restaurar a versão #{$a}?';
 $string['restoreerror'] = 'A versão #{$a} não pôde ser restaurada';
 $string['restorethis'] = 'Restaurar esta versão';
 $string['restoreversion'] = 'Restaurar versão anterior';

@@ -311,13 +311,7 @@ class H5PDefaultStorage implements \H5PFileStorage {
     // Add filename to path
     $path .= '/' . $file->getName();
 
-    $fileData = $file->getData();
-    if ($fileData) {
-      file_put_contents($path, $fileData);
-    }
-    else {
-      copy($_FILES['file']['tmp_name'], $path);
-    }
+    copy($_FILES['file']['tmp_name'], $path);
 
     return $file;
   }
@@ -449,6 +443,19 @@ class H5PDefaultStorage implements \H5PFileStorage {
    */
   public function hasWriteAccess() {
     return self::dirReady($this->path);
+  }
+
+  /**
+   * Check if the file presave.js exists in the root of the library
+   *
+   * @param string $libraryFolder
+   * @param string $developmentPath
+   * @return bool
+   */
+  public function hasPresave($libraryFolder, $developmentPath = null) {
+      $path = is_null($developmentPath) ? 'libraries' . DIRECTORY_SEPARATOR . $libraryFolder : $developmentPath;
+      $filePath = realpath($this->path . DIRECTORY_SEPARATOR . $path . DIRECTORY_SEPARATOR . 'presave.js');
+    return file_exists($filePath);
   }
 
   /**

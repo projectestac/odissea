@@ -25,4 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['requires_grouping'] = 'Ανήκεις σε ένα γκρουπ σε <strong>{$a}</strong>';
+$string['description'] = 'Επιτρέψτε μόνο σε μαθητές που ανήκουν σε μια ομάδα μέσα σε μια καθορισμένη ομαδοποίηση.';
+$string['error_selectgrouping'] = 'Πρέπει να επιλέξετε μια ομαδοποίηση.';
+$string['missing'] = '(Λείπει ομαδοποίηση)';
+$string['pluginname'] = 'Περιορισμός με βάση την ομαδοποίηση';
+$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση την ομαδοποίηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['requires_grouping'] = 'Ανήκεις σε ένα γκρουπ στην ομαδοποίηση <strong>{$a}</strong>';
+$string['requires_notgrouping'] = 'Δεν ανήκεις σε ένα γκρουπ στην ομαδοποίηση <strong>{$a}</strong>';
+$string['title'] = 'Ομαδοποίηση';

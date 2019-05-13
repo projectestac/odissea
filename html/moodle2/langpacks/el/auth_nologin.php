@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nologindescription'] = 'Auxiliary plugin that prevents user to login into system and also discards any mail sent to the user. Can be used to <em>suspend</em> user accounts.';
-$string['pluginname'] = 'No login';
+$string['auth_nologindescription'] = 'Βοηθητικό πρόσθετο που εμποδίζει τον χρήστη να συνδεθεί στο σύστημα και επίσης απορρίπτει κάθε μήνυμα που αποστέλλεται στον χρήστη. Μπορεί να χρησιμοποιηθεί για λογαριασμούς χρηστών <em>σε αναστολή</em>.';
+$string['pluginname'] = 'Χωρίς σύνδεση';
+$string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση για απαγόρευση σύνδεσης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

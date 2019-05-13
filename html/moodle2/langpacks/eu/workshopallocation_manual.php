@@ -33,4 +33,4 @@ $string['areyousuretodeallocate'] = 'Ziur al zaude aukeratutako ebaluaketaren es
 $string['areyousuretodeallocategraded'] = 'Dagoeneko kalifikatu den ebaluazioa ezabatuko duzu. Ziur al zaude ezabatu nahi duzula?';
 $string['pluginname'] = 'Eskuzko esleipena';
 $string['privacy:metadata:preference:perpage'] = 'Erabiltzaeilak orri bakoitzean ikusi nahi duen esleitutako ebaluazio kopurua.';
-$string['showallparticipants'] = 'Partaide guztiak erakutsi';
+$string['showallparticipants'] = 'Erakutsi partaide guztiak';

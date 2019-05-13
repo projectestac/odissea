@@ -25,11 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dbcannotconnect'] = 'Ezin izan da kanpoko datu-basera konektatu.';
+$string['auth_dbcannotreadtable'] = 'Ezin izan da kanpoko datu-basea irakurri.';
 $string['auth_dbcantconnect'] = 'Ezin izan da zehaztutako autentifikaziorako datu-basearekin konektatu';
 $string['auth_dbchangepasswordurl_key'] = 'Pasahitza aldatzeko URLa';
+$string['auth_dbcolumnlist'] = 'Kanpoko taulak ondoko zutabe hauek ditu:<br />{$a}';
 $string['auth_dbdebugauthdb'] = 'ADOdb garbitu';
 $string['auth_dbdebugauthdbhelp'] = 'Araztu ADOdb konexioa kanpoko datu-basera - erabili orri hutsa jasotzen baduzu saioa hastean. Ez erabili lanean ari diren guneetan!';
-$string['auth_dbdeleteuser'] = '{$a->name} id {$a->id} erabiltzailea ezabatuta';
+$string['auth_dbdeleteuser'] = 'Ezabatutako {$a->name} id {$a->id} erabiltzailea';
 $string['auth_dbdeleteusererror'] = 'Eorrea {$a} erabiltzailea ezabatzean';
 $string['auth_dbdescription'] = 'Metodo honek kanpoko datu-base taula bat erabiltzen du emandako erabiltzaile-izen eta pasahitz bat baliozkoa den egiaztatzeko.  kontua berria bada, beste eremuetako informazioa ere zeharka kopiatu daiteke Moddlen.';
 $string['auth_dbextencoding'] = 'Kanpoko datu-basearen kodifikazioa';
@@ -46,6 +49,8 @@ $string['auth_dbinsertuserduplicate'] = 'Errorea {$a->username} erabiltzailea sa
 $string['auth_dbinsertusererror'] = 'Errorea {$a} erabiltzailea txertatzean';
 $string['auth_dbname'] = 'Datu-basearen izena. Hutsik utzi ODBC DSN bat erabiliz gero. Hutsik utzi zure PDO DSNak dagoeneko datu-basearen izena badauka.';
 $string['auth_dbname_key'] = 'Datu-basearen izena';
+$string['auth_dbnoexttable'] = 'Ez da zehaztu kanpoko taula.';
+$string['auth_dbnouserfield'] = 'Ez da zehaztu erabiltzaile-eremua.';
 $string['auth_dbpass'] = 'Goiko erabiltzaile-izenarekin bat datorren pasahitza';
 $string['auth_dbpass_key'] = 'Pasahitza';
 $string['auth_dbpasstype'] = '<p>Pasahitzaren eremuak erabiltzen duen formatua zehaztu.</p> <p>Erabili \'barrukoa\' kanpo datu-baseak erabiltzaile eta e-posta helbideak kudeatzea baina pasahitzak Moodle-k kudeatzea nahi baduzu. \'Barrukoa\' erabiliz gero kanpo datu-baseko e-posta helbidearen eremuan betetako e-posta helbidea eman <i>beharko</i> duzu, eta admin/cron.php eta auth/db/cli/sync_users.php maiz exekutatu beharko dituzu. Moodle-k erabiltzaile berriei e-posta bat bidaliko die behin-behineko pasahitz batekin.</p>';
@@ -61,6 +66,7 @@ $string['auth_dbsybasequoting'] = 'Erabili sybase kakotxak (quotes)';
 $string['auth_dbsybasequotinghelp'] = 'Sybase motako kakotx sinpleen ihesbdea - beharezkoa Oracle, MS SQL eta beste datu-base batzuetan. Ez erabil MySQL-rentzat!';
 $string['auth_dbsyncuserstask'] = 'Sinkronizatu erabiltzaileak zeregina';
 $string['auth_dbtable'] = 'Taularen izena datu-basean';
+$string['auth_dbtableempty'] = 'Kanpoko taula hutsik dago.';
 $string['auth_dbtable_key'] = 'Taula';
 $string['auth_dbtype'] = 'Datu-base mota (Ikus <a href="http://phplens.com/adodb/supported.databases.html">ADOdb documentation</a> xehetasun gahiagorako)';
 $string['auth_dbtype_key'] = 'Datu-basea';

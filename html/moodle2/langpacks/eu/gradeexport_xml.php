@@ -29,4 +29,4 @@ $string['eventgradeexported'] = 'Kalifikazioa XML gisa esportatu da';
 $string['pluginname'] = 'XML fitxategia';
 $string['privacy:metadata'] = 'XML fitxategia kalifikazioak esportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['xml:publish'] = 'XML kalifikazioen esportazioa argitaratu';
-$string['xml:view'] = 'Kalifikazioak esportatzeko XML  erabili';
+$string['xml:view'] = 'Erabili XML kalifikazioak esportatzeko';

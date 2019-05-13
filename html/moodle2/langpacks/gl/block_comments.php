@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['comments:addinstance'] = 'Engadir un novo bloque de comentarios';
 $string['comments:myaddinstance'] = 'Engadir un novo bloque de comentarios á miña páxina persoal';
 $string['pluginname'] = 'Comentarios';
+$string['privacy:metadata:core_comment'] = 'Engadiuse un rexistro de comentarios.';

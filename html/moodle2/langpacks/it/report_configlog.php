@@ -29,6 +29,7 @@ $string['configlog'] = 'Modifiche configurazione';
 $string['oldvalue'] = 'Valore precedente';
 $string['plugin'] = 'Plugin';
 $string['pluginname'] = 'Modifiche configurazione';
+$string['privacy:metadata'] = 'Il plugin \'Modifiche configurazione\' non memorizza dati personali.';
 $string['setting'] = 'Impostazione';
 $string['timemodified'] = 'Data';
 $string['value'] = 'Nuovo valore';

@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lista pendente';
-$string['privacy:metadata:profilefield_menu:data'] = 'Os dados de utilizador armazenados.';
-$string['privacy:metadata:profilefield_menu:dataformat'] = 'O formato dos dados de utilizador.';
+$string['privacy:metadata:profilefield_menu:data'] = 'Os dados de utilizador armazenados no campo de perfil do tipo Lista pendente';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'O formato dos dados de utilizador armazenados no campo de perfil do tipo Lista pendente';
 $string['privacy:metadata:profilefield_menu:fieldid'] = 'O ID do campo de perfil';
-$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Informação adicional do utilizador é armazenada aqui.';
-$string['privacy:metadata:profilefield_menu:userid'] = 'O ID do utilizador cujos dados são armazenados pelo módulo Lista pendente.';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Informação adicional do utilizador';
+$string['privacy:metadata:profilefield_menu:userid'] = 'O ID do utilizador cujos dados são armazenados no campo de perfil do tipo Lista pendente.';

@@ -26,9 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Permitir sólo a estudiantes que pertenezcan a un grupo asociado a un agrupamiento.';
-$string['error_selectgrouping'] = 'Debe seleccionar una agrupamiento.';
-$string['missing'] = '(Agrupamiento perdido)';
+$string['error_selectgrouping'] = 'Debe seleccionar un agrupamiento.';
+$string['missing'] = '(Agrupamiento faltante)';
 $string['pluginname'] = 'Restricción por agrupamiento';
+$string['privacy:metadata'] = 'La extensión de Restricción por agrupamiento no almacena ningún dato personal.';
 $string['requires_grouping'] = 'se pertenezca al agrupamiento <strong>{$a}</strong>';
 $string['requires_notgrouping'] = 'No pertenece a un grupo en <strong>{$a}</strong>';
 $string['title'] = 'Agrupamiento';

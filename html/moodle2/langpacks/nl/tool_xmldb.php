@@ -172,6 +172,7 @@ $string['pendingchangescannotbesaved'] = 'Er zijn wijzigingen in dit bestand, ma
 $string['pendingchangescannotbesavedreload'] = 'Er zijn wijzigingen in dit bestand, maar ze kunnen niet bewaard worden! Controleer dat de webserver schrijfrechten heeft, zowel op de map als op het bestand install.xml. Herlaad dan deze pagina en je zou de wijzigingen moeten kunnen bewaren.';
 $string['pluginname'] = 'XMLDB editor';
 $string['primarykeyonlyallownotnullfields'] = 'Primaire sleutel kan niet nul zijn';
+$string['privacy:metadata'] = 'De XMLDB editor-plugin bewaart geen persoonlijke gegevens.';
 $string['reserved'] = 'Gereserveerd';
 $string['reservedwords'] = 'Gereserveerde woorden';
 $string['revert'] = 'Maak ongedaan';

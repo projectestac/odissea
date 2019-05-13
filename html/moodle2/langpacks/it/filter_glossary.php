@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Collegamento automatico alle voci di glossario';
+$string['glossarycategory'] = '{$a->glossary}: Categoria {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
 $string['privacy:metadata'] = 'Il plugin "Collegamento automatico alle voci di glossario" non memorizza dati personali.';

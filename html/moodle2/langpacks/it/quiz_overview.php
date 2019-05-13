@@ -56,6 +56,7 @@ $string['pluginname'] = 'Voti';
 $string['preferencespage'] = 'Preferenze solo per questa pagina';
 $string['preferencessave'] = 'Visualizza report';
 $string['preferencesuser'] = 'Le tue preferenze per questo report';
+$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Scelta di visualizzare i punteggi per ogni domanda.';
 $string['regrade'] = 'Rivaluta';
 $string['regradeall'] = 'Rivaluta tutto';
 $string['regradealldry'] = 'Prova rivalutazione totale';

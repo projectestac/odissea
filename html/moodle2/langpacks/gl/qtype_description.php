@@ -33,3 +33,4 @@ $string['pluginname_help'] = 'Unha descrición non é realmente un tipo de pregu
 
 O texto da pregunta preséntase tanto durante o intento coma na páxina de revisión. Calquera comentario xeral se presenta unicamente na páxina de revisión.';
 $string['pluginnamesummary'] = 'Esta non é actualmente unha pregunta. En lugar diso é unha maneira de engadir algunhas instrucións, sinaturas ou outro contido á actividade. Isto é semellante á maneira en se poden utilizar as etiquetas para engadir contido á páxina do curso.';
+$string['privacy:metadata'] = 'O engadido de descrición de pregunta non almacena ningún dato persoal.';

@@ -32,9 +32,6 @@ $string['auth_googleoauth2description'] = 'Permettre à un utilisateur de se con
 La première fois que l\'utilisateur se connecte avec un fournisseur d\'identification, un nouveau compte est créé.
 Le blocage de la création de compte (paramètre administrateur authpreventaccountcreation) lors de l\'authentification <b> ne doit pas</b > être imposé.';
 $string['auth_googlesettings'] = 'Paramètres';
-$string['auth_googleuserprefix'] = 'Le nom d\'utilisateur de l\'utilisateur créé commencera par ce préfixe. Sur un site Moodle de base vous ne devez pas le changer.';
-$string['auth_googleuserprefix_key'] = 'Préfixe du nom d\'utilisateur';
-$string['auth_messengerclientid_key'] = 'ID Client Messenger';
 $string['couldnotauthenticate'] = 'L\'authentification a échoué - Veuillez essayer de vous connecter à nouveau.';
 $string['couldnotauthenticateuserlogin'] = 'La méthode d’authentification a échoué.<br/>
 Veuillez essayer de vous connecter à nouveau avec votre nom d\'utilisateur et votre mot de passe.<br/>
@@ -46,7 +43,6 @@ $string['emailaddressmustbeverified'] = 'Votre adresse courriel n\'a pas été v
 $string['faileduserdetails'] = 'Le site a réussi à se connecter au fournisseur sélectionné, mais n\'a pas réussi à récupérer vos données d\'utilisateur. Si vous utilisez Google, vérifiez que l\'administrateur du site a activé l\'API Google+ dans la console de Google développeur ; ceci est la cause la plus commune de cette erreur.';
 $string['moreproviderlink'] = 'Se connecter avec un autre service.';
 $string['noaccountyet'] = 'Vous n\'êtes pas encore autorisé à utiliser le site. Veuillez contacter votre administrateur et lui demander d\'activer votre compte.';
-$string['oauth2displaybuttons'] = 'Afficher les boutons sur la page d\'authentification.';
 $string['othermoodle'] = 'Antre authentification Moodle';
 $string['pluginname'] = 'Oauth2';
 $string['signinwithanaccount'] = 'Se connecter avec {$a}';

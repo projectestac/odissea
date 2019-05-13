@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata'] = 'El connector atto_html no emmagatzema cap dada personal.';

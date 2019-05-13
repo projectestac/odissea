@@ -105,7 +105,7 @@ $string['configmanydiscussions'] = 'Numero massimo di discussioni visualizzabili
 $string['configmaxattachments'] = 'Valore di default del numero massimo di allegati consentiti per ogni intervento.';
 $string['configmaxbytes'] = 'Dimensione massima degli allegati per tutti i forum del sito (il valore è anche soggetto a limitazioni imposte a livello di corso e ad altre impostazioni locali)';
 $string['configoldpostdays'] = 'Numero di giorni trascorsi i quali tutti i messaggi vecchi verranno considerati come letti.';
-$string['configreplytouser'] = 'Nelle email inviate dai forum, per default compare in chiaro l\'email del mittente. In questo modo sarà possibile rispondere direttamente anche senza intervenire nel forum. Indipendentemente da questa impostazione un utente può comunque mantenere riservato il proprio indirizzo email usando l\'apposita impostazione presente nel profilo utente.';
+$string['configreplytouser'] = 'Nelle email inviate dai forum, di default compare in chiaro l\'email del mittente. In questo modo sarà possibile rispondere direttamente anche senza intervenire nel forum. Indipendentemente da questa impostazione un utente può comunque mantenere riservato il proprio indirizzo email usando l\'apposita impostazione presente nel profilo utente.';
 $string['configrssarticlesdefault'] = 'Imposta il numero di default di articoli (interventi o discussioni) quando i feed RSS sono abilitati.';
 $string['configrsstypedefault'] = 'Imposta il tipo di attività di default quando i feed RSS sono abilitati.';
 $string['configshortpost'] = 'Gli interventi al di sotto del numero di caratteri specificato (escludendo i tag HTML) saranno considerati "brevi".';
@@ -120,7 +120,7 @@ $string['confirmunsubscribediscussion'] = 'Sei sicuro di revocare la sottoscrizi
 $string['couldnotadd'] = 'Non è possibile aggiungere l\'intervento a causa di un errore sconosciuto.';
 $string['couldnotdeletereplies'] = 'Spiacente, l\'intervento non può essere eliminato in quanto altri utenti hanno già risposto ad esso.';
 $string['couldnotupdate'] = 'Non è possibile aggiornare l\'intervento a causa di un errore sconosciuto.';
-$string['crontask'] = 'Mail dai forum e operazioni di manutenzione';
+$string['crontask'] = 'Invio mail dai forum e operazioni di manutenzione';
 $string['delete'] = 'Elimina';
 $string['deleteddiscussion'] = 'L\'argomento di discussione è stato eliminato.';
 $string['deletedpost'] = 'L\'intervento è stato eliminato.';
@@ -231,6 +231,7 @@ $string['forum:addquestion'] = 'Aggiungere domanda';
 $string['forum:allowforcesubscribe'] = 'Consentire sottoscrizione obbligatoria';
 $string['forumauthorhidden'] = 'Autore (nascosto)';
 $string['forumblockingalmosttoomanyposts'] = 'Stai per raggiungere il limite degli interventi permessi. Hai inviato {$a->numposts} interventi negli ultimi {$a->blockperiod} giorni. Il limite è di {$a->blockafter} interventi.';
+$string['forumbodydeleted'] = 'Il contenuto di questo forum è stato rimosso e non può più essere visualizzato.';
 $string['forumbodyhidden'] = 'Non puoi visualizzare questo intervento, probabilmente perché non hai ancora effettuato interventi nella discussione, non è ancora trascorso il tempo massimo per l\'editing dei messaggi,  la discussione non è ancora cominciata oppure è terminata.';
 $string['forum:canoverridediscussionlock'] = 'Intervenire in discussioni bloccate';
 $string['forum:canposttomygroups'] = 'Inserire interventi in tutti i gruppi dove si ha accesso';
@@ -254,16 +255,17 @@ $string['forum:replypost'] = 'Rispondere agli interventi';
 $string['forums'] = 'Forum';
 $string['forum:splitdiscussions'] = 'Dividere discussioni';
 $string['forum:startdiscussion'] = 'Iniziare una nuova discussione';
+$string['forumsubjectdeleted'] = 'L\'intervento è stato rimosso';
 $string['forumsubjecthidden'] = 'Oggetto (nascosto)';
 $string['forumtracked'] = 'Gli interventi non letti sono tracciati';
 $string['forumtrackednot'] = 'Gli interventi non letti non sono tracciati';
 $string['forumtype'] = 'Tipo di forum';
 $string['forumtype_help'] = 'Sono disponibili 5 tipi di forum:
 
-* Forum monotematico - Forum costituito da un solo argomento di discussione, tutti i partecipanti possono intervenire
-* Ciascuno avvia una sola discussione - Ogni partecipante può avviare un\'unica discussione su un argomento e gli altri partecipanti possono intervenire.
-* Domande e Risposte* - Il forum Domande e Risposte obbliga i partecipanti ad intervenire prima di poter visualizzare gli interventi degli altri.
-* Forum standard visualizzato in stile blog - Un forum aperto dove chiunque può avviare discussioni e visualizzato con link "Discuti questo argomento"
+* Forum monotematico - Forum costituito da un solo argomento di discussione, tutti i partecipanti possono intervenire.
+* Ciascun utente avvia una sola discussione - Ogni partecipante può avviare un\'unica discussione su un argomento e gli altri partecipanti possono intervenire.
+* Domande e Risposte - Il forum Domande e Risposte obbliga i partecipanti ad intervenire prima di poter visualizzare gli interventi degli altri.
+* Forum standard visualizzato in stile blog - Un forum aperto dove chiunque può avviare discussioni in qualsiasi momento e nel quale gli argomenti di discussione sono visualizzati su una pagina con link "Discuti questo argomento".
 * Forum standard per uso generale - Forum aperto dove tutti i partecipanti in qualsiasi momento possono avviare discussioni';
 $string['forum:viewallratings'] = 'Visualizzare voti grezzi dati da ciascuno';
 $string['forum:viewanyrating'] = 'Visualizzare voti totali ricevuti da ciascuno';
@@ -320,7 +322,7 @@ $string['maxtimehaspassed'] = 'Spiacente, il tempo massimo concesso per modifica
 $string['message'] = 'Messaggio';
 $string['messageinboundattachmentdisallowed'] = 'Non è stato possibile inserire la tua risposta nel forum poiché hai allegato un file ma il forum non consente gli allegati.';
 $string['messageinboundfilecountexceeded'] = 'Non è stato possibile inserire la tua risposta nel forum poiché hai allegato più file di quanti ne consenta il forum ({$a->forum->maxattachments}).';
-$string['messageinboundfilesizeexceeded'] = 'Non è stato possibile inserire la tua risposta nel forum poiché la dimensione totale degli allegati ({$a->filesize}) è superiore alla dimensione massima consentita nell forum ({$a->maxbytes}).';
+$string['messageinboundfilesizeexceeded'] = 'Non è stato possibile inserire la risposta nel forum poiché la dimensione totale degli allegati ({$a->filesize}) è superiore alla dimensione massima consentita nel forum ({$a->maxbytes}).';
 $string['messageinboundforumhidden'] = 'Non è stato possibile inserire la tua risposta nel forum poiché il forum non è al momento disponibile.';
 $string['messageinboundnopostforum'] = 'Non è stato possibile inserire la tua risposta nel forum poiché non sei autorizzato ad intervenire nel forum {$a->forum->name}.';
 $string['messageinboundthresholdhit'] = 'Non è stato possibile inserire la tua risposta nel forum poiché hai superato la soglia massima interventi impostata nel forum.';
@@ -332,13 +334,13 @@ $string['modeflatoldestfirst'] = 'Visualizza le repliche in formato lineare, con
 $string['modenested'] = 'Visualizza le repliche in formato nidificato';
 $string['modethreaded'] = 'Visualizza le repliche in formato per oggetto';
 $string['modulename'] = 'Forum';
-$string['modulename_help'] = 'Il modulo di attività forum consente di tenere discussioni asincrone tra i partecipanti, la cui durata è prolungata nel tempo.
+$string['modulename_help'] = 'Il modulo attività Forum consente di tenere discussioni asincrone tra i partecipanti, la cui durata è prolungata nel tempo.
 
 Sono disponibili diversi tipi di forum tra cui scegliere,  forum standard dove chiunque può avviare una discussione, forum dove ciascuno studente può avviare una sola discussioni, forum domande e risposte, dove lo studente deve intervenire prima di poter visualizzare gli interventi degli altri. E\' possibile consentire file allegati. Se gli allegati sono immagini saranno visualizzate direttamente nel corpo dell\'intervento.
 
 I partecipanti possono sottoscrivere il forum per ricevere notifiche di nuovi interventi. Il docente può impostare la sottoscrizione al forum come facoltativa, obbligatoria, automatica. oppure può non consentirne la sottoscrizione. In caso di necessità è anche possibile bloccare studenti che abbiano postato più di un certo numero di interventi in un dato intervallo di tempo, riducendo il rischio che qualcuno domini la discussione.
 
-Gli interventi nei forum possono essere valutati dal docente o dagli stessi studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro del valutatore.
+Gli interventi nei forum possono essere valutati dal docente o dagli stessi studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro valutatore.
 
 E\' possibile usare il forum per:
 
@@ -391,7 +393,7 @@ $string['notrackforum'] = 'Non evidenziare messaggi non letti';
 $string['notsubscribed'] = 'Sottoscrivi';
 $string['noviewdiscussionspermission'] = 'Non sei autorizzato a vedere le discussioni in questo forum';
 $string['nowallsubscribed'] = 'Hai sottoscritto tutti i forum presenti in {$a}.';
-$string['nowallunsubscribed'] = 'Sei stato rimosso da tutti in forum presenti in {$a}.';
+$string['nowallunsubscribed'] = 'Sei stato rimosso da tutti i forum presenti in {$a}.';
 $string['nownotsubscribed'] = 'L\'utente  {$a->name} NON riceverà più notifiche di nuovi interventi dal forum \'{$a->forum}\'.';
 $string['nownottracking'] = '{$a->name} non sta più evidenziando i messaggi in \'{$a->forum}\'.';
 $string['nowsubscribed'] = 'L\'utente {$a->name} riceverà notifiche di nuovi interventi dal forum \'{$a->forum}\'.';
@@ -437,6 +439,60 @@ $string['posttomygroups_help'] = 'L\'intervento sarà copiato in tutti i gruppi 
 $string['postupdated'] = 'Il tuo intervento è stato aggiornato';
 $string['potentialsubscribers'] = 'Utenti che non hanno sottoscritto il forum';
 $string['prevdiscussiona'] = 'Discussione precedente: {$a}';
+$string['privacy:digesttypenone'] = 'In questo forum n on vengono memorizzate informazioni relative alla preferenza sul tipo di raccolta email.';
+$string['privacy:digesttypepreference'] = 'Hai scelto di ricevere il seguente tipo di raccolta email: "{$a->type}".';
+$string['privacy:discussionsubscriptionpreference'] = 'Hai scelto le seguenti preferenze di sottoscrizione alla discussione per questo forum: "{$a->preference}"';
+$string['privacy:metadata:core_rating'] = 'Il forum utilizza il sottosistema di valutazione per supportare la valutazione degli interventi.';
+$string['privacy:metadata:core_tag'] = 'Il forum utilizza il sottosistema tag per supportare i tag negli interventi.';
+$string['privacy:metadata:forum_digests'] = 'Informazioni sulle preferenze per la raccolta emaild ei forum.';
+$string['privacy:metadata:forum_digests:forum'] = 'Sottoscrizioni ai forum.';
+$string['privacy:metadata:forum_digests:maildigest'] = 'Preferenza raccolta email.';
+$string['privacy:metadata:forum_digests:userid'] = 'ID dell\'utente con preferenza raccolta email.';
+$string['privacy:metadata:forum_discussions'] = 'Informazioni sulle singole discussioni create dall\'utente sul forum.';
+$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - cosa memorizza questo campo';
+$string['privacy:metadata:forum_discussions:name'] = 'Titolo della discussione scelto dall\'autore.';
+$string['privacy:metadata:forum_discussions:timemodified'] = 'Data e ora di ultima modifica della discussione.';
+$string['privacy:metadata:forum_discussion_subs'] = 'Informazioni sulle sottoscrizioni alle singole discussioni sul forum.';
+$string['privacy:metadata:forum_discussion_subs:discussionid'] = 'ID della discussione sottoscritta.';
+$string['privacy:metadata:forum_discussion_subs:preference'] = 'Data e ora di inizio della sottoscrizione.';
+$string['privacy:metadata:forum_discussion_subs:userid'] = 'ID dell\'utente che ha sottoscritto la discussione.';
+$string['privacy:metadata:forum_discussions:userid'] = 'ID dell\'utente che ha creato la discussione.';
+$string['privacy:metadata:forum_discussions:usermodified'] = 'ID dell\'utente che ha apportato le ultime modifiche alla discussione.';
+$string['privacy:metadata:forum_posts'] = 'Informazioni sulle preferenze per raccolta email di ogni forum.';
+$string['privacy:metadata:forum_posts:created'] = 'Orario di creazione dell\'intervento sul forum.';
+$string['privacy:metadata:forum_posts:discussion'] = 'Discussione di appartenenza dell\'intervento.';
+$string['privacy:metadata:forum_posts:message'] = 'Messaggio dell\'intervento sul forum.';
+$string['privacy:metadata:forum_posts:modified'] = 'Orario di modifica più recente dell\'intervento sul forum.';
+$string['privacy:metadata:forum_posts:parent'] = 'Intervento genitore che ha ricevuto una risposta.';
+$string['privacy:metadata:forum_posts:subject'] = 'Oggetto dell\'intervento sul forum.';
+$string['privacy:metadata:forum_posts:totalscore'] = 'Messaggio dell\'intervento sul forum.';
+$string['privacy:metadata:forum_posts:userid'] = 'ID dell\'utente che ha scritto l\'intervento.';
+$string['privacy:metadata:forum_queue'] = 'Log temporaneo degli interventi che saranno inviati come raccolta';
+$string['privacy:metadata:forum_queue:discussionid'] = 'ID della discussione sul forum';
+$string['privacy:metadata:forum_queue:postid'] = 'ID dell\'intervento sul forum';
+$string['privacy:metadata:forum_queue:timemodified'] = 'Orario di modifica dell\'intervento originale';
+$string['privacy:metadata:forum_queue:userid'] = 'Utente che deve essere avvertito sull\'intervento';
+$string['privacy:metadata:forum_read'] = 'Informazioni sugli interventi letti dall\'utente.';
+$string['privacy:metadata:forum_read:discussionid'] = 'Discussione di appartenenza dell\'intervento.';
+$string['privacy:metadata:forum_read:firstread'] = 'Orario in cui l\'intervento è stato letto per la prima volta.';
+$string['privacy:metadata:forum_read:lastread'] = 'Orario in cui l\'intervento è stato letto più recentemente.';
+$string['privacy:metadata:forum_read:postid'] = 'Intervento che è stato letto.';
+$string['privacy:metadata:forum_read:userid'] = 'ID dell\'utente a cui fa riferimento il record.';
+$string['privacy:metadata:forum_subscriptions'] = 'Informazioni su quali forum sono stati sottoscritti dall\'utente.';
+$string['privacy:metadata:forum_subscriptions:forum'] = 'Forum che sono stati sottoscritti.';
+$string['privacy:metadata:forum_subscriptions:userid'] = 'ID dell\'utente a cui fa riferimento la sottoscrizione al forum.';
+$string['privacy:metadata:forum_track_prefs'] = 'Informazioni sui forum dovel\'utente ha scelto di tracciare la lettura degli interventi.';
+$string['privacy:metadata:forum_track_prefs:forumid'] = 'Forum dove il tracciamento della lettura è abilitato.';
+$string['privacy:metadata:forum_track_prefs:userid'] = 'ID dell\'utente a cui fa riferimento la preferenza sul tracciamento del forum.';
+$string['privacy:metadata:preference:autosubscribe'] = 'Scelta di sottoscrivere le discussioni quando si risponde gli interventi.';
+$string['privacy:metadata:preference:maildigest'] = 'Preferenza raccolta email per l\'intero il sito.';
+$string['privacy:metadata:preference:markasreadonnotification'] = 'Scelta di contrassegnare i post sul forum come letti quando si ricevono come messaggi.';
+$string['privacy:metadata:preference:trackforums'] = 'Scelta di abilitare il tracciamento della lettura.';
+$string['privacy:postwasread'] = 'Questo intervento è stato letto la prima volta il {$a->firstread} e la lettura più recente è del {$a->lastread}';
+$string['privacy:request:delete:discussion:name'] = 'Elimina su richiesta dell\'autore';
+$string['privacy:request:delete:post:message'] = 'Il contenuto di questo intervento è stato eliminato su richiesta dell\'autore.';
+$string['privacy:request:delete:post:subject'] = 'Elimina su richiesta dell\'autore';
+$string['privacy:subscribedtoforum'] = 'Hai sottoscritto il forum.';
 $string['processingdigest'] = 'Elaborazione email di raccolta per l\'utente {$a}';
 $string['processingpost'] = 'Elaborazione intervento {$a}';
 $string['prune'] = 'Sposta altrove';

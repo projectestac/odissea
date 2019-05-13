@@ -82,7 +82,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 	}
 	public function fullMathML2TextImpl($e) {
 		$sb = new StringBuf();
-		if($e->getNodeName() === "mo" || $e->getNodeName() === "mn" || $e->getNodeName() === "mi") {
+		if($e->getNodeName() === "mo" || $e->getNodeName() === "mn" || $e->getNodeName() === "mi" || $e->getNodeName() === "mtext") {
 			$sb->add(com_wiris_util_xml_WXmlUtils::getNodeValue($e->firstChild()));
 		} else {
 			if($e->getNodeName() === "mfenced" || $e->getNodeName() === "mtr" || $e->getNodeName() === "mtable") {
@@ -275,7 +275,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 						$j = 0;
 						$l = 0;
 						while($this->isReservedWordPrefix($word, $words)) {
-							if($this->inArray($word, $words)) {
+							if(com_wiris_system_ArrayEx::contains($words, $word)) {
 								$lastReservedWord = $word;
 								$l = $j;
 							}
@@ -749,18 +749,12 @@ class com_wiris_quizzes_impl_HTMLTools {
 			$start++;
 			$end = _hx_index_of($mathml, "<", $start);
 			$content = _hx_substr($mathml, $start, $end - $start);
-			$i = null;
-			{
-				$_g1 = 0; $_g = strlen($content);
-				while($_g1 < $_g) {
-					$i1 = $_g1++;
-					$c = _hx_char_code_at($content, $i1);
-					if(!($c === 35 || $c >= 48 && $c <= 57 || $c >= 65 && $c <= 90 || $c >= 97 && $c <= 122)) {
-						return false;
-					}
-					unset($i1);
+			$i = com_wiris_system_Utf8::getIterator($content);
+			while($i->hasNext()) {
+				$c = $i->next();
+				if(!(com_wiris_util_xml_WCharacterBase::isDigit($c) || com_wiris_util_xml_WCharacterBase::isLetter($c) || $c === 35)) {
+					return false;
 				}
-				unset($_g1,$_g);
 			}
 			unset($tagname,$sb,$i,$end,$content,$c);
 		}
@@ -1488,7 +1482,12 @@ class com_wiris_quizzes_impl_HTMLTools {
 		return $mathml;
 	}
 	static function stripRootTag($xml, $tag) {
+		$s = com_wiris_quizzes_impl_HTMLTools::splitRootTag($xml, $tag);
+		return $s[1];
+	}
+	static function splitRootTag($xml, $tag) {
 		$xml = trim($xml);
+		$r = new _hx_array(array("", null, ""));
 		if(StringTools::startsWith($xml, "<" . $tag)) {
 			$depth = 1;
 			$lastOpen = _hx_last_index_of($xml, "<", null);
@@ -1521,14 +1520,22 @@ class com_wiris_quizzes_impl_HTMLTools {
 			}
 			if($j2 === $lastOpen) {
 				$ini = _hx_index_of($xml, ">", null) + 1;
-				$xml = _hx_substr($xml, $ini, $lastOpen - $ini);
+				$r[0] = _hx_substr($xml, 0, $ini);
+				$r[1] = _hx_substr($xml, $ini, $lastOpen - $ini);
+				$r[2] = _hx_substr($xml, $lastOpen, null);
 			} else {
 				if($j3 + 1 === $lastClose) {
-					$xml = "";
+					$r[0] = _hx_substr($xml, 0, strlen($xml) - 2) . ">";
+					$r[1] = "";
+					$r[2] = "</" . $tag . ">";
+				} else {
+					$r[1] = $xml;
 				}
 			}
+		} else {
+			$r[1] = $xml;
 		}
-		return $xml;
+		return $r;
 	}
 	static function ensureRootTag($xml, $tag) {
 		$xml = trim($xml);
@@ -1575,16 +1582,24 @@ class com_wiris_quizzes_impl_HTMLTools {
 		$newline = "<mspace linebreak=\"newline\"/>";
 		$equal = "<mo>=</mo>";
 		$mml = com_wiris_quizzes_impl_HTMLTools::convertEditor2Newlines($correctAnswer->content);
-		$mml = com_wiris_quizzes_impl_HTMLTools::stripRootTag($mml, "math");
-		$mml = com_wiris_quizzes_impl_HTMLTools::stripRootTag($mml, "mrow");
+		$s = com_wiris_quizzes_impl_HTMLTools::splitRootTag($mml, "math");
+		$mml = com_wiris_quizzes_impl_HTMLTools::stripRootTag($s[1], "mrow");
 		$lines = new _hx_array(array());
-		$end = 0;
 		$start = 0;
-		while(($end = _hx_index_of($mml, $newline, $start)) !== -1) {
-			$lines->push(_hx_substr($mml, $start, $end - $start));
+		$end = 0;
+		do {
+			$end = _hx_index_of($mml, $newline, $start);
+			$line = (($end > -1) ? _hx_substr($mml, $start, $end - $start) : _hx_substr($mml, $start, null));
+			if($lines->length > 0 && _hx_index_of($line, "<mo>=</mo>", null) === -1) {
+				$lastElem = $lines[$lines->length - 1] . $newline . $line;
+				$lines[$lines->length - 1] = $lastElem;
+				unset($lastElem);
+			} else {
+				$lines->push($line);
+			}
 			$start = $end + strlen($newline);
-		}
-		$lines->push(_hx_substr($mml, $start, null));
+			unset($line);
+		} while($end !== -1);
 		$i = null;
 		{
 			$_g1 = 0; $_g = $lines->length;
@@ -1594,7 +1609,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 				$equalIndex = _hx_index_of($line, $equal, null);
 				if($equalIndex !== -1) {
 					$equalIndex += strlen($equal);
-					$label = com_wiris_quizzes_impl_HTMLTools::ensureRootTag(_hx_substr($line, 0, $equalIndex), "math");
+					$label = $s[0] . _hx_substr($line, 0, $equalIndex) . $s[2];
 					$value = _hx_substr($line, $equalIndex, null);
 					$a = _hx_index_of($value, "<annotation encoding=\"text/plain\">", null);
 					if($a !== -1) {
@@ -1603,7 +1618,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 						$value = _hx_substr($value, $a, $b - $a);
 						unset($b);
 					} else {
-						$value = com_wiris_quizzes_impl_HTMLTools::ensureRootTag($value, "math");
+						$value = $s[0] . $value . $s[2];
 					}
 					$answer = new _hx_array(array($label, $value));
 					$answers->push($answer);
@@ -1620,6 +1635,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 		if($answers->length > 0) {
 			$mml = com_wiris_quizzes_impl_MathContent::getMathType($answers[0][0]) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML;
 			$m->type = com_wiris_quizzes_impl_HTMLTools_14($answers, $m, $mml, $sb);
+			$root = "<math>";
 			$i = null;
 			{
 				$_g1 = 0; $_g = $answers->length;
@@ -1629,19 +1645,50 @@ class com_wiris_quizzes_impl_HTMLTools {
 						$sb->add((($mml) ? "<mspace linebreak=\"newline\"/>" : "\x0A"));
 					}
 					$ans = $answers[$i1];
-					$sb->add(com_wiris_quizzes_impl_HTMLTools::stripRootTag($ans[0], "math"));
-					$sb->add(com_wiris_quizzes_impl_HTMLTools::stripRootTag($ans[1], "math"));
-					unset($i1,$ans);
+					$s = com_wiris_quizzes_impl_HTMLTools::splitRootTag($ans[0], "math");
+					$sb->add($s[1]);
+					$root = com_wiris_quizzes_impl_HTMLTools::combineTagAtts($root, $s[0]);
+					$s = com_wiris_quizzes_impl_HTMLTools::splitRootTag($ans[1], "math");
+					$sb->add($s[1]);
+					$root = com_wiris_quizzes_impl_HTMLTools::combineTagAtts($root, $s[0]);
+					unset($s,$i1,$ans);
 				}
 			}
 			$m->content = $sb->b;
 			if($mml) {
-				$m->content = com_wiris_quizzes_impl_HTMLTools::ensureRootTag($m->content, "math");
+				$m->content = $root . $m->content . "</math>";
 			}
 		} else {
 			$m->set("");
 		}
 		return $m;
+	}
+	static function combineTagAtts($t1, $t2) {
+		$p1 = _hx_index_of($t1, " ", null);
+		$p2 = _hx_index_of($t2, " ", null);
+		if($p1 === -1) {
+			return $t2;
+		}
+		if($p2 === -1) {
+			return $t1;
+		}
+		$t1 = _hx_substr($t1, 0, strlen($t1) - 1);
+		$t2 = _hx_substr($t2, 0, strlen($t2) - 1);
+		$t2 = _hx_substr($t2, $p2 + 1, null);
+		$atts = _hx_explode(" ", $t2);
+		$i = 0;
+		{
+			$_g1 = 0; $_g = $atts->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				if(_hx_index_of($t1, $atts[$i1], null) === -1) {
+					$t1 = $t1 . " " . $atts[$i1];
+				}
+				unset($i1);
+			}
+		}
+		$t1 = $t1 . ">";
+		return $t1;
 	}
 	static function tagName($xml, $n) {
 		$endtag = _hx_index_of($xml, ">", $n);
@@ -1709,6 +1756,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 		return $value === null || _hx_index_of($value, "<mo", null) === -1 && _hx_index_of($value, "<mi", null) === -1 && _hx_index_of($value, "<mn", null) === -1 && _hx_index_of($value, "<csymbol", null) === -1;
 	}
 	static function hasCasSessionParameter($session, $parameter, $name) {
+		$session = com_wiris_util_xml_WXmlUtils::resolveEntities($session);
 		$expr = com_wiris_quizzes_impl_HTMLTools::getParameterEReg($parameter, $name);
 		if($expr->match($session)) {
 			return true;
@@ -1722,7 +1770,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 		}
 	}
 	static function getParameterEReg($parameter, $name) {
-		return new EReg(".*<input>\\s*<math[^>]*>\\s*<mi>" . $parameter . "</mi>\\s*<mo>\\s*(&nbsp;|&#xA0;|\\s)\\s*</mo><mi>" . $name . "</mi>.*", "gmi");
+		return new EReg(".*<input>\\s*<math[^>]*>\\s*<mi>" . $parameter . "</mi>\\s*<mo>\\s*(" . com_wiris_quizzes_impl_HTMLTools_15($name, $parameter) . "|\\s)\\s*</mo><mi>" . $name . "\\d*</mi>.*", "gmi");
 	}
 	static function casSessionLang($value) {
 		$start = _hx_index_of($value, "<session", null);
@@ -1835,6 +1883,9 @@ class com_wiris_quizzes_impl_HTMLTools {
 		}
 		return null;
 	}
+	static function getEmptyCalcMeSession() {
+		return "<wiriscalc version=\"3.1\"><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>UntitledÂ calc</mtext></math></title><properties><property name=\"lang\">en</property><property name=\"precision\">4</property><property name=\"use_degrees\">false</property></properties><session version=\"3.0\" lang=\"en\"><task><title><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>SheetÂ 1</mtext></math></title><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"/></input></command></group></task></session></wiriscalc>";
+	}
 	function __toString() { return 'com.wiris.quizzes.impl.HTMLTools'; }
 }
 function com_wiris_quizzes_impl_HTMLTools_0(&$»this, &$_g, &$_g1, &$a, &$answer, &$answers, &$compound, &$h, &$i, &$i1, &$keyword, &$s) {
@@ -1847,7 +1898,7 @@ function com_wiris_quizzes_impl_HTMLTools_0(&$»this, &$_g, &$_g1, &$a, &$answer,
 function com_wiris_quizzes_impl_HTMLTools_1(&$»this, &$close, &$e, &$i, &$it, &$n, &$open, &$sb, &$separators) {
 	{
 		$s = new haxe_Utf8(null);
-		$s->addChar(haxe_Utf8::charCodeAt($separators, com_wiris_quizzes_impl_HTMLTools_15($close, $e, $i, $it, $n, $open, $s, $sb, $separators)));
+		$s->addChar(haxe_Utf8::charCodeAt($separators, com_wiris_quizzes_impl_HTMLTools_16($close, $e, $i, $it, $n, $open, $s, $sb, $separators)));
 		return $s->toString();
 	}
 }
@@ -1934,7 +1985,14 @@ function com_wiris_quizzes_impl_HTMLTools_14(&$answers, &$m, &$mml, &$sb) {
 		return com_wiris_quizzes_impl_MathContent::$TYPE_TEXT;
 	}
 }
-function com_wiris_quizzes_impl_HTMLTools_15(&$close, &$e, &$i, &$it, &$n, &$open, &$s, &$sb, &$separators) {
+function com_wiris_quizzes_impl_HTMLTools_15(&$name, &$parameter) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(160);
+		return $s->toString();
+	}
+}
+function com_wiris_quizzes_impl_HTMLTools_16(&$close, &$e, &$i, &$it, &$n, &$open, &$s, &$sb, &$separators) {
 	if($i < $n) {
 		return $i;
 	} else {

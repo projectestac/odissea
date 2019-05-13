@@ -46,11 +46,11 @@ $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
 $string['isshared'] = 'Cau compartit';
-$string['isshared_help'] = 'Hi han altres aplicacions que estigui utilitzant el vostre servidor memcauat («memcached»)?
+$string['isshared_help'] = 'Hi ha altres aplicacions que estiguin utilitzant el vostre servidor memcauat («memcached»)?
 
-Si el cau és compartit per altres aplicacions, cada clau s\'esborrarà individualment per tal d\'assegurar que només es purguin les dades propietat d\'aquesta aplicació (deixant intocades les dades encauades de les aplicacions externes). Aquest comportament pot comportar un alentiment durant la purga del cau, en funció de la configuració del vostre servidor.
+Si el cau és compartit per altres aplicacions, cada clau s\'esborrarà individualment, per tal d\'assegurar que només es purguin les dades propietat d\'aquesta aplicació (i que es deixin sense canvis les dades encauades de les aplicacions externes). Aquest comportament pot comportar un alentiment durant la purga del cau, en funció de la configuració del vostre servidor.
 
-Si, en canvi, heu configurat un cau dedicat per a aquesta aplicació, es pot buidar tot el cau de forma segura sense risc de destuir les dades encauades d\'altres aplicacions. Això farà que el purgat del cau vagi més depressa.';
+Si, en canvi, heu configurat un cau dedicat per a aquesta aplicació, es pot buidar tot el cau de forma segura sense risc de destruir les dades encauades d\'altres aplicacions. Això farà que el purgat del cau vagi més de pressa.';
 $string['pluginname'] = 'Memòria cau';
 $string['prefix'] = 'Prefix de la clau';
 $string['prefix_help'] = 'Això pot ser usat per crear un «domini» de les seues claus que li permetrà crear diversos magatzems de memòria cau en una sola instal·lació cau. No pot tenir més de 16 caràcters, a fi de garantir que no es tinguem problemes de longitud de clau.';
@@ -84,7 +84,7 @@ $string['testservers'] = 'Servidors de prova';
 $string['testservers_desc'] = 'Una o més cadenes de connexió per a servidors de memòria cau per posar-los a prova. Si un servidor de prova s\'ha especificat, llavors el rendiment de la memòria cau es pot provar fent servir la pàgina de rendiment de la memòria cau al bloc d\'administració.
 N\'és un exemple: 127.0.0.1:11211';
 $string['upgrade200recommended'] = 'Recomanem que actualitzeu l\'extensió «memcached» de PHP a la versió 2.0.0 com a mínim.
-La versió de l\'extensió «memcached» de PHP que eteu utilitzant actualment no admet la funcionalitat que necessita el Moodle per tal d\'assegurar un cau protegit. Fins que no actualitzeu us recomanem que no configureu cap altra aplicació que utilitzi els mateixos servidors memcauats que utilitza el Moodle.';
+La versió de l\'extensió «memcached» de PHP que esteu utilitzant actualment no admet la funcionalitat que necessita Moodle per tal d\'assegurar un cau protegit. Fins que no actualitzeu, us recomanem que no configureu cap altra aplicació que utilitzi els mateixos servidors memcauats que utilitza Moodle.';
 $string['usecompression'] = 'Utilitza compressió';
 $string['usecompression_help'] = 'Habilita o inhabilita la compressió de la càrrega útil. Quan està habilitat, els elements de valor de més d\'un cert llindar (actualment 100 bytes) es comprimeixen durant l\'emmagatzematge i es descomprimeixen durant la recuperació de manera transparent.';
 $string['useserialiser'] = 'Usa serialitzador';

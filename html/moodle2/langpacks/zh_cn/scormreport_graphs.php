@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['participants'] = '参与课程人数';
 $string['pluginname'] = '图表报表';

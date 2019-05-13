@@ -43,7 +43,7 @@ $string['password'] = 'Ihr Kennwort für box.net (wird nicht gespeichert)';
 $string['pluginname'] = 'Box.net
 ';
 $string['privacy:metadata'] = 'Dieses Plugin sendet Daten an einen extern verbundenen Box-Account. Es speichert lokal keine Daten.';
-$string['privacy:metadata:data'] = 'Persönliche Daten über das Portfolio-Subsystem weitergeleitet';
+$string['privacy:metadata:data'] = 'Personenbezogene Daten, die vom Portfolio-Subsystem übergeben wurden';
 $string['sendfailed'] = 'Fehler beim Senden von Daten an box.net: {$a}';
 $string['setupinfo'] = 'Einstellungsanleitung';
 $string['setupinfodetails'] = 'Sie erhalten Ihre Client-ID und den Schlüssel für Box.net über die <a href="{$a->servicesurl} "> Box-Entwicklerseite </ a>. Bei den \'Developer Tools\' gehen Sie zu \'Create new application\' und legen eine neue Anwendung für Ihre Moodle-Instanz an. Die Client-ID und der Schlüssel (secret) werden im Abschnitt \'OAuth2 parameters\' angezeigt. Optional können Sie weitere Informationen über Ihre Moodle-Instanz angeben.';

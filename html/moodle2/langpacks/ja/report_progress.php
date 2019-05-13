@@ -30,4 +30,4 @@ $string['page-report-progress-user'] = 'ユーザ活動完了レポート';
 $string['page-report-progress-x'] = 'すべての活動完了レポート';
 $string['pluginname'] = '活動完了';
 $string['privacy:metadata'] = '活動完了レポートは他の場所で保存されたデータのみ表示します。';
-$string['progress:view'] = 'コース完了レポートを表示する';
+$string['progress:view'] = '活動完了レポートを表示する';

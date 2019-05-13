@@ -29,4 +29,4 @@ $string['fieldtypelabel'] = 'Textbereichsfeld';
 $string['maxbytes'] = 'Maximale Größe eingebetteter Dateien (Bytes)';
 $string['maxbytes_desc'] = 'Der Wert Null bedeutet standardmäßig unbegrenzt';
 $string['pluginname'] = 'Textbereich';
-$string['privacy:metadata'] = 'Die Textbereichsfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Textbereichsfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

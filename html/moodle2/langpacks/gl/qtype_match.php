@@ -43,5 +43,6 @@ $string['pluginnameediting'] = 'Editando unha pregunta coincidentes';
 $string['pluginname_help'] = 'As preguntas coincidentes requiren que o que responde case correctamente unha lista de nome ou proposicións (preguntas) con outra lista de nomes ou proposicións (respostas).';
 $string['pluginname_link'] = 'pregunta/tipo/coincidencia';
 $string['pluginnamesummary'] = 'A resposta para cadanseu número de subpreguntas débese seleccionar dunha lista de posibilidades.';
+$string['privacy:metadata'] = 'O engadido de pregunta coincidente non almacena ningún dato persoal.';
 $string['shuffle'] = 'Barallar';
 $string['shuffle_help'] = 'De estar activado, a orde das proposicións (respostas) barallouse aleatoriamente para cadanseu intento, dado que «Barallar as preguntas internas» tamén está activado na configuración interna.';

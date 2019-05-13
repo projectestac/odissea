@@ -91,6 +91,7 @@ $string['partofquestion'] = 'Parte di domanda';
 $string['pluginname'] = 'Statisitche';
 $string['position'] = 'Posizione';
 $string['positions'] = 'Posizione/i';
+$string['privacy:metadata'] = 'Anche se il plugin Quiz \'Statistiche\' possiede tabelle nel database, i dati in questione sono dati aggregati e non riguardano un singolo utente.';
 $string['questioninformation'] = 'Informazioni domanda';
 $string['questionname'] = 'Nome domanda';
 $string['questionnumber'] = 'Q#';

@@ -86,11 +86,10 @@ $string['emailnowexists'] = 'Het e-mailadres dat je probeert te gebruiken, is al
 $string['emailupdate'] = 'E-mailadres aanpassen';
 $string['emailupdatemessage'] = 'Beste {$a->fullname},
 
-Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}. Open volgende URL in je browser om deze wijziging te bevestigen.
+Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}. Open volgende URL in je browser om deze wijziging te bevestigen:
+{$a->url}
 
-Als je hierover vragen hebt, contacteer dan de helpdesk via {$a->supportemail}
-
-{$a->url}';
+Als je hierover vragen hebt, contacteer dan de helpdesk via {$a->supportemail}';
 $string['emailupdatesuccess'] = 'Het e-mail adres van gebruiker <em>{$a->fullname}</em> is gewijzigd naar <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Bevestiging van wijziging e-mailadres op  {$a->site}';
 $string['enterthenumbersyouhear'] = 'Vul hier de cijfers in die je hoort';

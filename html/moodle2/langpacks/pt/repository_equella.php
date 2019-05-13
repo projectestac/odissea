@@ -33,9 +33,8 @@ $string['equellaurl'] = 'URL EQUELLA';
 $string['equella:view'] = 'Ver repositório EQUELLA';
 $string['group'] = 'Definições do papel de {$a}';
 $string['groupdefault'] = 'Predefinido';
-$string['pluginname'] = 'Repositório EQUELLA';
-$string['privacy:metadata'] = 'O módulo repositório EQUELLA não armazena dados pessoais, mais transmite dados do utilizador do
-Moodle para o sistema remoto.';
+$string['pluginname'] = 'EQUELLA';
+$string['privacy:metadata'] = 'O módulo repositório EQUELLA não armazena dados pessoais, mas transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['restrictionattachmentsonly'] = 'Anexar apenas recursos';
 $string['restrictionitemsonly'] = 'Apenas item do sumário';
 $string['restrictionnone'] = 'Sem restrição';

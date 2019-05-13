@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Seleccione unha certeza.';
 $string['pluginname'] = 'Comentario inmediato con CBM';
+$string['privacy:metadata'] = 'O engadido de comentario inmediato con PCB non almacena ningún dato persoal.';

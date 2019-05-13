@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tool instellingen dienst';
+$string['privacy:metadata'] = 'De Tool Settings Service plugin bewaart geen persoonlijke gegevens.';

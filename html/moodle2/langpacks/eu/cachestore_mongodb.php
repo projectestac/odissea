@@ -46,5 +46,5 @@ $string['username'] = 'Erabiltzaile-izena';
 $string['username_help'] = 'Konexioa egitean erabiliko den erabiltzaile-izena.';
 $string['usesafe'] = 'Erabili segurua';
 $string['usesafe_help'] = 'Gaituz gero insert, get eta remove eragiketak egin bitartean usesafe aukera erabiliko da. Erreplika-multzoa zehaztu baduzu aukera hau beharrezkoa izango da edonola ere.';
-$string['usesafevalue'] = 'Erabili balore segurua';
-$string['usesafevalue_help'] = 'Erabili segururako (use safe) balio zehatz bat ematea aukeratu dezakezu. Honek eragiketak osatutzat emateko hauek osatuta izan behar duten zerbitzari-kopurua zehaztuko du.';
+$string['usesafevalue'] = 'Erabili balio segurua';
+$string['usesafevalue_help'] = 'Erabili segururako (use safe) balio zehatz bat ematea aukeratu dezakezu. Honek zehaztuko du eragiketak osatutzat emateko hauek osatuta izan behar duten zerbitzari-kopurua.';

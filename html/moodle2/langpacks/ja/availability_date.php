@@ -40,5 +40,5 @@ $string['privacy:metadata'] = '日付による制限プラグインはどのよ�
 $string['short_from'] = '<strong>{$a}</strong> より利用可';
 $string['short_from_date'] = '<strong>{$a}</strong> より利用可';
 $string['short_until'] = '<strong>{$a}</strong> まで利用可';
-$string['short_until_date'] = '<strong>{$a}</strong> の終了まで利用可';
+$string['short_until_date'] = '<strong>{$a}</strong> の終わりまで利用可';
 $string['title'] = '日付';

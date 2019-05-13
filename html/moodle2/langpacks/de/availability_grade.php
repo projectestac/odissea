@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = 'Bewertungselement, das zur Prüfung des Zugriffskriteriums verwendet wird';
-$string['cachedef_scores'] = 'Nutzerbewertung, die zur Prüfung des Zugrifskriteriums verwendet wird';
-$string['description'] = 'Zugriff über eine vorgegebene Bewertung steuern';
+$string['cachedef_items'] = 'Bewertungselement, das zur Zugriffsprüfung verwendet wird';
+$string['cachedef_scores'] = 'Nutzerbewertung, die zur Zugriffsprüfung verwendet wird';
+$string['description'] = 'Zugriff über die erreichte Bewertung steuern';
 $string['error_backwardrange'] = 'Wenn ein Bewertungsbereich angegeben wird, muss der Mindestwert niedriger sein als der Höchstwert.';
 $string['error_invalidnumber'] = 'Der Bewertungsbereich darf sich nur innerhalb des zulässigen Wertebereichs bewegen.';
 $string['error_selectgradeid'] = 'Sie müssen eine Bewertung auswählen.';
@@ -37,7 +37,7 @@ $string['missing'] = '(Fehlende Aktivität)';
 $string['option_max'] = 'muss < sein';
 $string['option_min'] = 'muss ≥ sein';
 $string['pluginname'] = 'Voraussetzung: Bewertung';
-$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung Bewertung\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Bewertung\' speichert keine personenbezogenen Daten.';
 $string['requires_any'] = 'Sie haben eine Bewertung in <strong>{$a}</strong>';
 $string['requires_max'] = 'Sie haben eine angemessene Punktzahl in <strong>{$a}</strong>';
 $string['requires_min'] = 'Sie haben die erforderliche Punktzahl in <strong>{$a}</strong> erhalten';

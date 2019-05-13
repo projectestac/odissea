@@ -25,12 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Προσθήκη τμημάτων';
 $string['currentsection'] = 'Αυτό το θέμα';
 $string['deletesection'] = 'Διαγραφή θέματος';
 $string['editsection'] = 'Τροποποίηση θέματος';
 $string['editsectionname'] = 'Τροποποίηση ονομασίας θέματος';
 $string['hidefromothers'] = 'Απόκρυψη θέματος από τους υπολοίπους';
-$string['pluginname'] = 'Μορφή θεμάτων';
+$string['newsectionname'] = 'Νέο όνομα για το θέμα {$a}';
+$string['page-course-view-topics'] = 'Κάθε κύρια σελίδα του μαθήματος σε μορφή θεμάτων';
+$string['page-course-view-topics-x'] = 'Κάθε σελίδα μαθήματος σε μορφότυπο θεμάτων';
+$string['pluginname'] = 'Θεματικός μορφότυπος μαθήματος';
+$string['privacy:metadata'] = 'Το πρόσθετο «Θεματικός μορφότυπος μαθήματος» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['section0name'] = 'Γενικά';
-$string['sectionname'] = 'θέμα';
+$string['sectionname'] = 'Θέμα';
 $string['showfromothers'] = 'Εμφάνιση θεμάτων από άλλους';

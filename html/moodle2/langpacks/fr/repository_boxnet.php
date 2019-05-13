@@ -39,6 +39,7 @@ $string['password'] = 'Mot de passe';
 $string['pluginname'] = 'Box';
 $string['pluginname_help'] = 'Dépôt sur Box';
 $string['privacy:metadata:repository_boxnet'] = 'Le plugin de dépôt Box n\'enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
+$string['privacy:metadata:repository_boxnet:query'] = 'La requête de recherche utilisateur du dépôt Box.';
 $string['saved'] = 'Données Box enregistrées';
 $string['shareurl'] = 'Partager l\'URL';
 $string['username'] = 'Nom d\'utilisateur Box';

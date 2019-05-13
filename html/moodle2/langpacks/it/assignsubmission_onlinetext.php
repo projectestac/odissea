@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowonlinetextsubmissions'] = 'Abilitato';
-$string['default'] = 'Abilitato per default';
-$string['default_help'] = 'Questo metodo di consegna sarà abilitato per default per le nuove istanze di compito.';
+$string['default'] = 'Abilitato di default';
+$string['default_help'] = 'Questo metodo di consegna sarà abilitato di default per le nuove istanze di compito.';
 $string['enabled'] = 'Testo online';
 $string['enabled_help'] = 'Gli studenti potranno inserire testo direttamente tramite l\'editor e consegnarlo';
 $string['eventassessableuploaded'] = 'Effettuata consegna testo online';
@@ -38,7 +38,12 @@ $string['onlinetext'] = 'Testo online';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Consenti consegne testo online';
 $string['pluginname'] = 'Consegne testo online';
-$string['privacy:metadata:assignmentid'] = 'Identificativo del compito';
+$string['privacy:metadata:assignmentid'] = 'ID del compito';
+$string['privacy:metadata:filepurpose'] = 'File incorporati nel testo della consegna.';
+$string['privacy:metadata:submissionpurpose'] = 'ID della consegna collegata all\'utente.';
+$string['privacy:metadata:tablepurpose'] = 'Memorizza il testo della consegna per ciascun tentativo.';
+$string['privacy:metadata:textpurpose'] = 'Il testo effettivamente consegnato per lo specifico tentativo.';
+$string['privacy:path'] = 'Testo della consegna';
 $string['wordlimit'] = 'Limite parole';
 $string['wordlimitexceeded'] = 'Questo compito ha un limite di parole  pari a {$a->limit}, il tuo compito contiene {$a->count} parole. Per favore rivedi il compito prima di consegnarlo.';
 $string['wordlimit_help'] = 'Nel caso di consegne di testo online, consente di impostare il numero massimo di parole che compongono la consegna.';

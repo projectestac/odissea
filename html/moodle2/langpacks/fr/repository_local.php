@@ -32,4 +32,5 @@ $string['local:view'] = 'Consulter le dépôt fichiers disponibles';
 $string['notitle'] = 'sans titre';
 $string['pluginname'] = 'Fichiers disponibles';
 $string['pluginname_help'] = 'Fichiers déjà déposés sur le serveur Moodle';
+$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers disponibles n\'enregistre et ne transmet aucune donnée personnelle.';
 $string['remember'] = 'Enregistrer';

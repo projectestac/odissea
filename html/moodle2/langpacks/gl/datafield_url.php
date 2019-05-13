@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Campo de URL';
 $string['openlinkinnewwindow'] = 'Abrir a ligazón nunha nova xanela';
 $string['pluginname'] = 'URL';
+$string['privacy:metadata'] = 'O compoñente de campo de URL non almacena ningún dato persoal, usa táboas definidas en mod_data.';

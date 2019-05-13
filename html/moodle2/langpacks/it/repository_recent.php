@@ -30,5 +30,6 @@ $string['emptyfilelist'] = 'Non ci sono file da visualizzare';
 $string['notitle'] = 'senza titolo';
 $string['pluginname'] = 'File recenti';
 $string['pluginname_help'] = 'I file utilizzati più recentemente dall\'utente';
+$string['privacy:metadata'] = 'Il plugin Repository \'File recenti\' non memorizza né trasmette dati personali.';
 $string['recentfilesnumber'] = 'Numero di file recenti';
 $string['recent:view'] = 'Visualizzare repository File recenti';

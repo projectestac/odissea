@@ -48,14 +48,11 @@ class qtype_essaywiris_question extends qtype_wq_question implements question_ma
     }
 
     private function is_cas_replace_input() {
-        $wrap = com_wiris_system_CallWrapper::getInstance();
-        $wrap->start();
         //@codingStandardsIgnoreStart
-        $keyshowcas = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS);
-        $valueshowcasreplaceinput = com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT;
+        $keyshowcas = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS);
+        $valueshowcasreplaceinput = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_REPLACE;
         //@codingStandardsIgnoreEnd
         $replace = ($keyshowcas == $valueshowcasreplaceinput);
-        $wrap->stop();
         return $replace;
     }
 
@@ -64,11 +61,8 @@ class qtype_essaywiris_question extends qtype_wq_question implements question_ma
         if (!$complete && $this->is_cas_replace_input() && isset($response['_sqi'])) {
             $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
             $sqi = $builder->readQuestionInstance($response['_sqi']);
-            $wrap = com_wiris_system_CallWrapper::getInstance();
-            $wrap->start();
             //@codingStandardsIgnoreLine
-            $studentcas = $sqi->instance->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION);
-            $wrap->stop();
+            $studentcas = $sqi->instance->getLocalData(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_CAS_SESSION);
             // Note that the $studentcas is null if the student does not update
             // the CAS value even if the CAS has an initial session.
             $complete = !empty($studentcas);

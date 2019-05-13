@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = 'Os usuarios necesitan o permiso «Pasar
 $string['mnet_hosts:addinstance'] = 'Engadir un novo bloque de servidores de rede';
 $string['mnet_hosts:myaddinstance'] = 'Engadir un novo bloque de servidores de rede ao meu cartafol persoal';
 $string['pluginname'] = 'Servidores de rede';
+$string['privacy:metadata'] = 'O bloque de servidores de rede só permite a interacción cos servidores de rede e non almacena nin exporta datos propiamente ditos.';
 $string['server'] = 'Servidor';

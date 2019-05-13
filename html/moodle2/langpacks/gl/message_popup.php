@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Notificación emerxente';
+$string['privacy:metadata'] = 'O engadido de mensaxería web non almacena ningún dato persoal.';

@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['browserepositories'] = 'Περιήγηση στα αποθετήρια...';
+$string['createlink'] = 'Δημιουργία συνδέσμου';
+$string['enterurl'] = 'Εισαγωγή μιας διεύθυνσης URL';
 $string['openinnewwindow'] = 'Άνοιγμα σε νέο παράθυρο';
+$string['pluginname'] = 'Σύνδεσμος';
+$string['privacy:metadata'] = 'Το πρόσθετο «atto_link» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['unlink'] = 'Κατάργηση συνδέσμου';

@@ -183,8 +183,8 @@ class com_wiris_quizzes_impl_HTMLTableTools {
 		return $this->mathmllist->match($value);
 	}
 	public function initMathMLTabularERegs() {
-		$om = "(<math[^>]*>)?";
-		$cm = "(</math>)?";
+		$om = "(<math[^>]*>)?(<mrow[^>]*>)?";
+		$cm = "(</mrow>)?(</math>)?";
 		$ol = "<mfenced(\\s+open\\s*=\\s*\"[\\[\\{]\"|\\s+close\\s*=\\s*\"[\\]\\}]\"){2}\\s*><mrow>";
 		$cl = "</mrow></mfenced>";
 		$s = "<mo>\\" . $this->separator . "</mo>";

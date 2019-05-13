@@ -42,8 +42,8 @@ $string['auth_shib_convert_data_warning'] = 'Il file non esiste o non è leggibi
 $string['auth_shib_idp_list'] = 'Identity provider';
 $string['auth_shib_idp_list_description'] = 'Inserite un elenco di Identity Provider entityID tra cui l\'utente potrà scegliere nella pagina di login.<br />Su ogni riga dovrà essere presente una coppia separata da virgole composta da entityID dell\'IdP (verifica il medatadata file di Shibboleth) e dal Nome dell\'IdP (il nome comparirà nel menù a discesa).<br />E\' possibile aggiungere un terzo parametro opzionale dove specificare la posizione del session initiator di Shibboleth utile nel caso in cui l\'installazione di Moodle faccia parte di una multi fedrazione.';
 $string['auth_shib_instructions'] = 'Utilizzare <a href="{$a}">Shibboleth login</a> per avere accesso tramite Shibboleth, se la vostra istituzione lo supporta<br />Altrimenti, utilizzare il modulo di login standard visualizzato.';
-$string['auth_shib_instructions_help'] = 'Qui dovreste fornire istruzioni su Shibbolet per i vostri utenti. Verranno visualizzate nella pagina di login nella sezione delle istruzioni.
-Dovrebbe includere un collegamento a "<b>{$a}</b>"  in modo che gli utenti Shibboleth possano effettuare facilmente il login.';
+$string['auth_shib_instructions_help'] = 'E\' posisbile fornire  agli utenti istruzioni riguardanti Shibboleth, che verranno visualizzate nella pagina di login nella sezione delle istruzioni.
+E\' opportuno includere un collegamento a "<b>{$a}</b>"  in modo che gli utenti Shibboleth possano autenticarsi con maggiore facilità.';
 $string['auth_shib_instructions_key'] = 'Istruzioni per il login';
 $string['auth_shib_integrated_wayf'] = 'Servizio Moodle WAYF';
 $string['auth_shib_integrated_wayf_description'] = 'E\' possibile consentire a Moodle di usare i propri servizi WAYF al posto di quelli configurati per Shibboleth. In questo caso Moodle visualizzerà un menù a discesa dove l\'utente potrà scegliere il proprio Identity Provider.';

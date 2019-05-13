@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Нумерованный список';
+$string['privacy:metadata'] = 'Плагин atto_orderedlist не хранит никаких персональных данных.';

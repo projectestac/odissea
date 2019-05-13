@@ -29,6 +29,7 @@ $string['abouttobeinstalled'] = 'zal geïnstalleerd worden';
 $string['action'] = 'Actie';
 $string['actionchoice'] = 'Wat wil je doen met het bestand \'{$a}\'?';
 $string['actions'] = 'Acties';
+$string['actionsmenu'] = 'Menu Acties';
 $string['active'] = 'Actief';
 $string['activeusers'] = 'Actieve gebruikers';
 $string['activities'] = 'Activiteiten';
@@ -292,7 +293,7 @@ $string['confirmcoursemove'] = 'Weet je zeker dat je cursus ({$a->course}) naar 
 $string['confirmdeletesection'] = 'Weet je zeker dat je "{$a}" en alle activiteiten die het bevat volledig wil verwijderen?';
 $string['confirmed'] = 'Je registratie is bevestigd';
 $string['confirmednot'] = 'Je registratie is nog niet bevestigd !';
-$string['considereddigitalminor'] = 'Je wordt beschouwd als een digitale minderjarige.';
+$string['considereddigitalminor'] = 'Je bent te jong om een account te maken op deze site.';
 $string['content'] = 'Inhoud';
 $string['continue'] = 'Ga door';
 $string['continuetocourse'] = 'Klik hier om je cursus binnen te gaan';
@@ -490,7 +491,7 @@ $string['defaultcompetencescaleproficient'] = 'Competent';
 $string['defaultcoursestudent'] = 'Leerling';
 $string['defaultcoursestudentdescription'] = 'Leerlingen hebben gewoonlijk minder rechten in een cursus';
 $string['defaultcoursestudents'] = 'Leerlingen';
-$string['defaultcoursesummary'] = 'Schrijf hier een korte en interessante paragraaf waarin wordt uitgelegd waarover deze cursus gaat';
+$string['defaultcoursesummary'] = 'Schrijf hier een korte en interessante alinea waarin wordt uitgelegd waarover deze cursus gaat';
 $string['defaultcourseteacher'] = 'Leraar';
 $string['defaultcourseteacherdescription'] = 'Leraren kunnen alles doen binnen hun cursus, ook het wijzigen van de activiteiten en het beoordelen van leerlingen';
 $string['defaultcourseteachers'] = 'Leraren';
@@ -535,7 +536,7 @@ $string['deselectall'] = 'Niets selecteren';
 $string['detailedless'] = 'Minder gedetailleerd';
 $string['detailedmore'] = 'Meer gedetailleerd';
 $string['digitalminor'] = 'Digitale minderjarige.';
-$string['digitalminor_desc'] = 'Om een account aan te maken op deze site verzoeken wij je om je ouder / voogd de volgende persoon te laten contacteren.';
+$string['digitalminor_desc'] = 'Vraag je ouders / voogd om contact op te nemen met:';
 $string['directory'] = 'Map';
 $string['disable'] = 'Schakel uit';
 $string['disabledcomments'] = 'Notities zijn uitgeschakeld';
@@ -976,7 +977,7 @@ $string['highlightoff'] = 'Verwijder markering';
 $string['hits'] = 'Hits';
 $string['hitsoncourse'] = 'Hits voor {$a->coursename} door {$a->username}';
 $string['hitsoncoursetoday'] = 'Hits van vandaag voor {$a->coursename} door {$a->username}';
-$string['home'] = 'Home';
+$string['home'] = 'Startpagina';
 $string['hour'] = 'uur';
 $string['hours'] = 'uren';
 $string['howtomakethemes'] = 'Hoe je nieuwe thema\'s kunt maken';
@@ -999,9 +1000,9 @@ $string['idnumbergroup_help'] = 'Het ID nummer van een groep wordt alleen gebrui
 $string['idnumbergrouping'] = 'Groepering ID nummer';
 $string['idnumbergrouping_help'] = 'Het ID nummer van een groepering wordt alleen gebruikt wanneer de groep moet gekoppeld worden aan een extern systeem en wordt nergens getoond op de site. Als de groep een officiële codenama heeft, kan die hier gebruikt worden, anders mag het veld leeg gelaten worden.';
 $string['idnumbermod'] = 'ID-nummer';
-$string['idnumbermod_help'] = 'Een ID-nummer instellen geeft een manier om de activiteit te identificeren voor de berekening van cijfers. Als de activiteit niet in een cijferberekening opgenomen wordt, dan mag dit veld leeg gelaten worden.
+$string['idnumbermod_help'] = 'Een ID-nummer instellen geeft een manier om de activiteit of bron te identificeren voor de berekening van cijfers of aangepaste rapportering. Als de activiteit niet in een cijferberekening opgenomen wordt, dan mag dit veld leeg gelaten worden.
 
-Het ID-nummer kan ook ingesteld worden op de "Bewerk cijferberekening" -pagina in de cijferlijst - het kan echter alleen bewerkt worden op de instellingspagina van de activiteit.';
+Voor beoordeelbare activiteiten kan het ID-nummer kan ook ingesteld worden in het puntenboek - het kan echter alleen bewerkt worden op de instellingspagina van de activiteit.';
 $string['idnumbertaken'] = 'Dit ID-nummer is al in gebruik';
 $string['imagealt'] = 'Afbeeldingsbeschrijvingen';
 $string['import'] = 'Importeer';
@@ -1157,10 +1158,11 @@ via de instellingen in elke activiteitsmodule.';
 $string['maxnumberweeks'] = 'Maximaal aantal secties';
 $string['maxnumberweeks_desc'] = 'Dit controleert het maximaal aantal secties in het rolmenu (geldt slechts voor bepaalde cursusformaten).';
 $string['maxnumcoursesincombo'] = 'Blader in <a href="{$a->link}">{$a->numberofcourses} cursussen</a>.';
+$string['maxsectionslimit'] = 'Kan geen nieuwe sectie maken omdat deze het maximumaantal secties dat is toegestaan voor deze cursus ({$a}) overschrijdt.';
 $string['maxsize'] = 'Maximale grootte: {$a}';
 $string['maxsizeandareasize'] = 'Maximale grootte voor nieuwe bestanden: {$a->size}, algemene limiet: {$a->areasize}';
 $string['maxsizeandattachments'] = 'Maximale grootte voor nieuwe bestanden: {$a->size}, maximum aantal bijlagen: {$a->attachments}';
-$string['maxsizeandattachmentsandareasize'] = 'Maximale grootte voor nieuwe bestanden: {$a->size}, maximaal aantal bijlagen: {$a->attachements}, algemene limiet: {$a->areasize}';
+$string['maxsizeandattachmentsandareasize'] = 'Maximale grootte voor nieuwe bestanden: {$a->size}, maximaal aantal bijlagen: {$a->attachments}, algemene limiet: {$a->areasize}';
 $string['memberincourse'] = 'Mensen in de cursus';
 $string['messagebody'] = 'Inhoud van het bericht';
 $string['messagedselectedcountusersfailed'] = 'Er is een probleem opgetreden en {$a} berichten zijn niet verstuurd.';
@@ -1171,7 +1173,7 @@ $string['messageprovider:availableupdate'] = 'Beschikbare update meldingen';
 $string['messageprovider:backup'] = 'Back-upmeldingen';
 $string['messageprovider:badgecreatornotice'] = 'Meldingen voor wie badges maakt';
 $string['messageprovider:badgerecipientnotice'] = 'Meldingen voor wie badges ontvangt';
-$string['messageprovider:competencyplancomment'] = 'Opmerking bij een leerplan gepost';
+$string['messageprovider:competencyplancomment'] = 'Opmerking bij een studieplan gepost';
 $string['messageprovider:competencyusercompcomment'] = 'Opmerking bij een competentie gepost';
 $string['messageprovider:courserequestapproved'] = 'Melding voor goedkeuring nieuwe cursus';
 $string['messageprovider:courserequested'] = 'Melding voor aanvraag nieuwe cursus';
@@ -1265,7 +1267,7 @@ $string['movefilestohere'] = 'Verplaats de bestanden hier naar toe';
 $string['movefull'] = 'Verplaats {$a} naar deze locatie';
 $string['movehere'] = 'Verplaats naar hier';
 $string['moveleft'] = 'Verplaats naar links';
-$string['moveright'] = 'Verplaats naar rechts';
+$string['moveright'] = 'Inspringen naar rechts';
 $string['movesection'] = 'Verplaats sectie {$a}';
 $string['moveselectedcategoriesto'] = 'Verplaats geselecteerde categorieën naar';
 $string['moveselectedcoursesto'] = 'Verplaats geselecteerde cursussen naar...';
@@ -1540,7 +1542,7 @@ $string['privacy:metadata:events_queue'] = 'De wachtrij van gebruikersgebeurteni
 $string['privacy:metadata:events_queue:eventdata'] = 'De gegevens die zijn opgeslagen in de gebeurtenis.';
 $string['privacy:metadata:events_queue:stackdump'] = 'Elke stacktrace geassocieerd met deze gebeurtenis.';
 $string['privacy:metadata:events_queue:timecreated'] = 'De tijd dat deze gebeurtenis is gemaakt.';
-$string['privacy:metadata:events_queue:userid'] = 'De gebruikers-ID in verband met deze gebeurtenis.';
+$string['privacy:metadata:events_queue:userid'] = 'De gebruikers-ID geassocieerd met deze gebeurtenis';
 $string['privacy:metadata:log'] = 'Een verzameling van vorige gebeurtenissen';
 $string['privacy:metadata:log:action'] = 'Een beschrijving van de actie';
 $string['privacy:metadata:log:cmid'] = 'cmid';
@@ -1844,18 +1846,7 @@ $string['showperpage'] = 'Toon {$a} per pagina';
 $string['showpopoverwindow'] = 'Toon popover-venster';
 $string['showrecent'] = 'Laat recente wijzigingen zien';
 $string['showreports'] = 'Toon activiteitenrapporten';
-$string['showreports_help'] = '<p>Elke deelnemer van een cursus kan zijn activiteitenrapporten raadplegen. Zij tonen zijn activiteiten binnen
-de huidige cursus, net als lijsten van al zijn bijdragen. In deze rapporten zie je gedetailleerde logs.</p>
-
-<p>Leraren hebben altijd toegang tot die rapporten met de knop die te vinden is op de pagina met het gebruikersprofiel
-van elke deelnemer.</p>
-
-<p>De toegang van leerlingen tot hun eigen rapporten wordt gecontroleerd door de leraar via de cursusinstellingen. Voor
-sommige cursussen kunnen deze rapporten nuttig zijn om de leerlingen te laten terugblikken op hun eigen inzet en
-aanwezigheid binnen de elektronische leeromgeving, voor andere cursussen kan dit overbodig zijn.</p>
-
-<p>Een andere reden waarom je activiteitenrapporten zou af zetten, is dat het genereren van het rapport een grote serverbelasting kan
-veroorzaken. Voor grote klassen en langlopende cursussen kan het beter zijn om de optie te laten afstaan.<p>';
+$string['showreports_help'] = 'Activiteitenrapporten zijn beschikbaar voor iedere deelnemer en tonen de activiteit in de cursus. Deze rapporten bevatten informatie met betrekking tot toegang tot de cursus, evenals een overzicht van alle bijdragen zoals in forumberichten of ingestuurde opdrachten. Deze instelling bepaalt of een student zijn of haar eigen activiteitenrapporten kan bekijken via de profielpagina.';
 $string['showsettings'] = 'Toon instellingen';
 $string['showtheselogs'] = 'Toon deze logs';
 $string['showthishelpinlanguage'] = 'Toon dit helpbestand in het {$a}';
@@ -1979,7 +1970,7 @@ $string['supplyinfo'] = 'Meer details';
 $string['suspended'] = 'Geschorst';
 $string['suspendedusers'] = 'Geschorste gebruikers';
 $string['switchdevicedefault'] = 'Schakel over naar standaard thema';
-$string['switchdevicerecommended'] = 'Schakel over naar het aangewezen thema voor jou toestel';
+$string['switchdevicerecommended'] = 'Schakel over naar het aangewezen thema voor jouw toestel';
 $string['switchrolereturn'] = 'Terug naar mijn rol';
 $string['switchroleto'] = 'Wijzig rol naar ...';
 $string['switchroleto_help'] = 'Kies een rol om een beeld te krijgen van wat iemand met deze rol in deze cursus ziet.
@@ -2037,7 +2028,7 @@ $string['timesplitting:weeklyaccum_help'] = 'Deze tijdssplitsingsmethode splitst
 $string['timesplitting:weekly_help'] = 'Deze tijdssplitsingsmethode splitst de cursus op in weken (7 dagen), met elke voorspelling gebaseerd op de gegevens van uitsluitend de vorige week.';
 $string['timezone'] = 'Tijdzone';
 $string['to'] = 'Tot';
-$string['tocontent'] = 'Naar sectie "{$a}"';
+$string['tocontent'] = 'Voor "{$a}"';
 $string['tocreatenewaccount'] = 'Overslaan om een nieuwe account te maken';
 $string['today'] = 'Vandaag';
 $string['todaylogs'] = 'Logs van vandaag';

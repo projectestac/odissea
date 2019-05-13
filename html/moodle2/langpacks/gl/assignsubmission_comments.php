@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Participante {$a}';
+$string['blindmarkingviewfullname'] = 'Participante {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Activado de xeito predeterminado';
 $string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
 $string['enabled'] = 'Comentarios a entrega';
 $string['enabled_help'] = 'Se está activado, os alumnos poden deixar comentarios na súa propia entrega. Isto pode empregarse para permitir que os alumnos alertar ao corrector sobre que ficheiros do ficheiro mestre en que casos están interrelacionados, por exemplo.';
 $string['pluginname'] = 'Comentarios a entrega';
+$string['privacy:metadata:commentpurpose'] = 'Comentarios entre o alumno e o profesor sobre unha entrega.';

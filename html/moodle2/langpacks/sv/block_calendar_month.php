@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['calendar_month:addinstance'] = 'Lägg till ett nytt block för kalender';
 $string['calendar_month:myaddinstance'] = 'Lägg till ett nytt block för kalender till Mitt hem';
 $string['pluginname'] = 'Kalender';
+$string['privacy:metadata'] = 'Kalender-blocket visar enbart befintlig kalenderdata.';

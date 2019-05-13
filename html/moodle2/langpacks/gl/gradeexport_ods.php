@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Cualificación exportada a OpenDocument';
 $string['ods:publish'] = 'Publicar a exportación de cualificacións ODS';
 $string['ods:view'] = 'Empregar a exportación de cualificacións a OpenDocument';
 $string['pluginname'] = 'Folla de cálculo de OpenDocument';
+$string['privacy:metadata'] = 'O engadido de folla de cálculo OpenDocument non almacena ningún dato persoal.';
+$string['timeexported'] = 'Último descargado desde este curso';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Autoligado da base de datos';
+$string['privacy:metadata'] = 'O engadido de autoligado da base de datos non almacena ningún dato persoal.';

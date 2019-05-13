@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nonedescription'] = 'Els usuaris es poden registrar i crear comptes immediatament vàlids, sense cap mena d\'autenticació contra un servidor extern ni confirmar la identitat per correu electrònic. Teniu compte amb aquesta  opció - penseu en els problemes de seguretat i d\'administració que pot causar.';
+$string['auth_nonedescription'] = 'Els usuaris es poden registrar i poden crear comptes immediatament vàlids, sense cap mena d\'autenticació contra un servidor extern ni confirmació de la identitat per correu electrònic. Teniu compte amb aquesta  opció;  penseu en els problemes de seguretat i d\'administració que pot causar.';
 $string['pluginname'] = 'Sense autenticació';

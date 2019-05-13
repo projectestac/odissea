@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Количество обсуждений';
 $string['numberdiscussions_help'] = 'Этот параметр определяет сколько обсуждений должно быть показано.';
 $string['pluginname'] = 'Форум';
+$string['privacy:metadata'] = 'Плагин «формат Форум» не хранит никаких персональных данных.';
 $string['sectionname'] = 'раздел';

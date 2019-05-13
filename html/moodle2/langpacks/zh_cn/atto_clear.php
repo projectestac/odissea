@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '清除格式';
+$string['privacy:metadata'] = 'atto_clear 插件不储存任何私人数据。';

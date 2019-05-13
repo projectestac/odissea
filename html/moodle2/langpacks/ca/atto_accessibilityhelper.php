@@ -32,5 +32,6 @@ $string['noimages'] = 'Sense imatges';
 $string['nolinks'] = 'Sense enllaços';
 $string['nostyles'] = 'Sense estils';
 $string['pluginname'] = 'Lector de pantalla';
+$string['privacy:metadata'] = 'El connector atto_accessibilityhelper no emmagatzema cap dada personal.';
 $string['selectimage'] = 'Selecciona imatge';
 $string['selectlink'] = 'Selecciona enllaç';

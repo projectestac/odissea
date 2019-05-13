@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Формат XHTML';
 $string['pluginname_help'] = 'Формат XHTML позволяет экспортировать все вопросы из категории в одну XHTML-страницу для возможного использования в других приложениях.';
+$string['privacy:metadata'] = 'Плагин «Формат XHTML» не хранит никаких персональных данных.';

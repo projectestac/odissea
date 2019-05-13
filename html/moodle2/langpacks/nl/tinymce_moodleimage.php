@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'Zoek of upload een afbeelding...';
 $string['pluginname'] = 'Afbeelding invoegen';
+$string['privacy:metadata'] = 'De TinyMCE Moodle afbeeldings-plugin bewaart geen persoonlijke gegevens.';

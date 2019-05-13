@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Spätere Auswertung';
-$string['privacy:metadata'] = 'Der Verzögerte Feedback-Modus des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Verzögerte Feedback-Modus des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';

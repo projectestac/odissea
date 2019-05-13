@@ -26,11 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'Asignación de rol \'{$a->role_shortname}\' ao usuario/a \'{$a->user_username}\' no curso \'{$a->course_shortname}\' (id {$a->course_id})';
+$string['assignrolefailed'] = 'Non foi posíbel asignar o rol «{$a->role_shortname}» ao usuario «{$a->user_username}» no curso «{$a->course_shortname}» (id {$a->course_id})';
 $string['autocreate'] = 'Os cursos poden ser creados automaticamente se hai
                                     inscricións para un curso que aínda non exista
                                     en Moodle.';
 $string['autocreate_key'] = 'Creación automática';
 $string['autocreation_settings'] = 'Configuración automática para creación de cursos';
+$string['autoupdate_settings'] = 'Configuración automática para a actualización de cursos';
+$string['autoupdate_settings_desc'] = '<p>Seleccione campos a actualizar cando se execute o script de sincronización (enrol/ldap/cli/sync.php).</p><p>Cando estea seleccionado polo menos un campo, producirase unha actualización.</p>';
 $string['bind_dn'] = 'Se desexa utilizar Usuario de ligazón para buscar usuarios,
                                  especifíqueo aquí. Algo como
                                  cn=ldapusuarior,ou=público,o=org';
@@ -39,27 +42,39 @@ $string['bind_pw'] = 'Contrasinal para o usuario de ligazón.';
 $string['bind_pw_key'] = 'Contrasinal';
 $string['bind_settings'] = 'Configuración de conexión';
 $string['cannotcreatecourse'] = 'Non foi posíbel crear o curso: faltan datos requiridos do rexistro LDAP!';
+$string['cannotupdatecourse'] = 'Non foi posíbel crear o curso: faltan datos requiridos do rexistro LDAP! Número ID do curso: «{$a->idnumber}»';
+$string['cannotupdatecourse_duplicateshortname'] = 'Non é posíbel actualizar o curso: Nome curto duplicado. Ignorando o curso co número id «{$a-> idnumber}»...';
 $string['category'] = 'Categoría para cursos creados automaticamente.';
 $string['category_key'] = 'Categoría';
 $string['contexts'] = 'Contextos LDAP';
 $string['couldnotfinduser'] = 'Non foi posíbel atopar o usuario «{$a}», omitindo';
 $string['course_fullname'] = 'Opcional: Campo LDAP de onde se colle o nome completo.';
 $string['course_fullname_key'] = 'Nome completo';
+$string['course_fullname_updateonsync'] = 'Actualiza o nome completo durante o script de sincronización';
+$string['course_fullname_updateonsync_key'] = 'Actualizar o nome completo';
 $string['course_idnumber'] = 'Mapa para o único identificador no LDAP, normalmente
                                          <em>cn</em> ou <em>uid</em>. Recoméndase
                                          que bloquee o valor se está a utilizar
                                          a creación automática do curso.';
 $string['course_idnumber_key'] = 'Número de ID';
+$string['coursenotexistskip'] = 'Non existe o curso «{$a}» e a creación automática está desactivada, ignorase.';
 $string['course_search_sub'] = 'Buscar membros do grupo desde subcontextos';
 $string['course_search_sub_key'] = 'Buscar subcontextos';
 $string['course_settings'] = 'Configuración de inscrición nos cursos';
 $string['course_shortname'] = 'Opcional: Campo LDAP de onde se colle o nome curto.';
 $string['course_shortname_key'] = 'Nome curto';
+$string['course_shortname_updateonsync'] = 'Actualiza o nome curto durante o script de sincronización';
+$string['course_shortname_updateonsync_key'] = 'Actualizar o nome curto';
 $string['course_summary'] = 'Opcional: Campo LDAP de onde se colle o resumo.';
 $string['course_summary_key'] = 'Resumo';
+$string['course_summary_updateonsync'] = 'Actualiza o resumo durante o script de sincronización';
+$string['course_summary_updateonsync_key'] = 'Actualizar o resumo';
+$string['courseupdated'] = 'O curso co «idnumber» «{$a->idnumber}» foi actualizado correctamente.';
+$string['courseupdateskipped'] = 'O curso co «idnumber» «{$a->idnumber}» non require actualización. Ignorando...';
 $string['createcourseextid'] = 'CREAR o usuario matriculado no curso \'{$a->courseextid}\' que non existe';
 $string['createnotcourseextid'] = 'O usuario está matriculado nun curso que non existe «{$a->courseextid}»';
 $string['creatingcourse'] = 'Usuario matriculado no curso course \'{$a->courseextid}\' que non existe';
+$string['duplicateshortname'] = 'Fallou a creación do curso: Nome curto duplicado. Ignorando o curso co número id «{$a-> idnumber}»...';
 $string['editlock'] = 'Bloquear valor';
 $string['emptyenrolment'] = 'Matriculación baleira do rol \'{$a->role_shortname}\' no curso \'{$a->course_shortname}\'';
 $string['enrolname'] = 'LDAP';
@@ -89,6 +104,7 @@ $string['memberattribute_isdn_key'] = 'O atributo do membro utiliza dn';
 $string['nested_groups'] = 'Quere utilizar grupos aniñados (grupos de grupos) para a matriculación?';
 $string['nested_groups_key'] = 'Grupos aniñados';
 $string['nested_groups_settings'] = 'Configuración de grupos aniñados';
+$string['nosuchrole'] = 'Non existe ese rol: «{$a}»';
 $string['objectclass'] = 'objectClass utilizado para buscar cursos. Normalmente
                                      posixGroup.';
 $string['objectclass_key'] = 'Clase de obxecto';
@@ -117,6 +133,7 @@ $string['pluginname_desc'] = '<p>Pode utilizar un servidor LDAP para controlar a
                           <p>Este engadido tamén pode ser definido para crear automaticamente novos
                           cursos ao aparecer grupos novos en LDAP.</p>';
 $string['pluginnotenabled'] = 'Engadido non activado!';
+$string['privacy:metadata'] = 'O engadido de LDAP non almacena ningún dato persoal.';
 $string['role_mapping'] = '<p>Por cada rol que queira asignar desde  LDAP, debe especificar a lista de contextos onde se atopan os grupos de roles do curso. Separe os contextos diferentes con «;».</p><p>Tamén necesita especificar o atributo que os seus servidores LDAP utilizan para conter os membros dun grupo. Adoita ser «membro» ou «Uidmembro»</p>';
 $string['role_mapping_attribute'] = 'Atributo do membro LDAP para {$a}';
 $string['role_mapping_context'] = 'Contextos LDAP para {$a}';
@@ -124,16 +141,21 @@ $string['role_mapping_key'] = 'Mapear roles de LDAP';
 $string['roles'] = 'Asignación de papeis';
 $string['server_settings'] = 'Configuración do servidor LDAP';
 $string['synccourserole'] = '== Sincronización do curso «{$a->idnumber}» para o rol «{$a->role_shortname}»';
+$string['syncenrolmentstask'] = 'Sincronizar a tarefas de matriculación';
 $string['template'] = 'Opcional: os cursos creados automaticamente poden copiar
                                   as súas configuracións dun modelo de curso.';
 $string['template_key'] = 'Modelo';
 $string['unassignrole'] = 'Retirarlle o rol «{$a->role_shortname}» ao usuario «{$a->user_username}» do curso «{$a->course_shortname}» (id {$a->course_id})';
+$string['unassignrolefailed'] = 'Non foi posíbel asignar o rol «{$a->role_shortname}» ao usuario «{$a->user_username}» do curso «{$a->course_shortname}» (id {$a->course_id})';
+$string['unassignroleid'] = 'Desasignando rol co ID «{$a->role_id}« ao usuario co ID «{$a->user_id}»';
 $string['updatelocal'] = 'Actualizar datos locais';
 $string['user_attribute'] = 'Se os membros do grupo teñen nomes distintos, especifique o atributo utilizado para nomear/buscar usuarios. Se está a usar autenticación LDAP, este valor debería coincidir co atributo especificado no mapeamento do «Número ID» do engadido de autenticación';
+$string['user_attribute_key'] = 'ID de atributo de número';
 $string['user_contexts'] = 'Se os membros do grupo teñen nomes distintos, especifique a lista dos contextos nos que están situados os usuarios. Separe os diferentes contextos con «;». Por exemplo: «ou=users,o=org; ou=others,o=org»';
 $string['user_contexts_key'] = 'Contextos';
 $string['user_search_sub'] = 'Se os membros do grupo teñen nomes distintos, especifique se a busca de usuarios se fai en subcontextos tamén';
 $string['user_search_sub_key'] = 'Buscar subcontextos';
+$string['user_settings'] = 'Axustes de buscas do usuario';
 $string['user_type'] = 'Se os membros do grupo teñen nomes distintos, especifique como se gardan os usuarios en LDAP';
 $string['user_type_key'] = 'Tipo de usuario';
 $string['version'] = 'A versión do protocolo LDAP que está a utilizar o seu servidor.';

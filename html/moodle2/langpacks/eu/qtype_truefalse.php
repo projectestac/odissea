@@ -38,5 +38,5 @@ $string['pluginnameediting'] = 'Egia/Gezurra motako galdera bat editatzen';
 $string['pluginname_help'] = 'Galdera bati erantzuteko (irudia izan dezakeena) ikaselak egia ala gezurra den aukeratu behar du.';
 $string['pluginnamesummary'] = '\'Egia\' eta \'Gezurra\' aukera baino ez dituen Aukera anitzeko galdera baten formularioa';
 $string['privacy:metadata'] = 'Egia/Gezurra galdera-mota pluginak ez du datu pertsonalik biltzen.';
-$string['selectone'] = 'Aukera ezazu bat:';
+$string['selectone'] = 'Aukeratu bat:';
 $string['true'] = 'Egia';

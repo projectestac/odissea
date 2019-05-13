@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Afegeix un bloc d\'esdeveniments propers.';
-$string['calendar_upcoming:myaddinstance'] = 'Afegeix un bloc d\'esdeveniments pròxims a la pàgina del Tauler';
+$string['calendar_upcoming:myaddinstance'] = 'Afegeix un bloc nou d\'esdeveniments pròxims a la pàgina del Tauler';
 $string['gotocalendar'] = 'Ves al calendari...';
 $string['pluginname'] = 'Esdeveniments propers';
+$string['privacy:metadata'] = 'El bloc Esdeveniments propers només mostra les dades existents al calendari.';

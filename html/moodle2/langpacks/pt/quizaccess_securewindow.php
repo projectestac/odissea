@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Regra de acesso Javascript';
+$string['pluginname'] = 'Regra de acesso JavaScript';
 $string['popupwithjavascriptsupport'] = 'Janela pop-up com segurança JavaScript';
-$string['privacy:metadata'] = 'O módulo Regra de acesso Javascript não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Regra de acesso JavaScript não armazena dados pessoais.';

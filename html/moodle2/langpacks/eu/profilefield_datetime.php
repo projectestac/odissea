@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['currentdatedefault'] = 'Egiaztatu oraingo data berezko gisa erabiltzeko';
-$string['defaultdate'] = 'Berezko data';
+$string['currentdatedefault'] = 'Egiaztatu oraingo data lehenetsitako gisa erabiltzeko';
+$string['defaultdate'] = 'Lehenetsitako data';
 $string['endyear'] = 'Amaiera-urtea';
 $string['notset'] = 'Ezarri gabea';
 $string['pluginname'] = 'Data / Ordua';
@@ -37,5 +37,5 @@ $string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Hemen erab
 $string['privacy:metadata:profilefield_datetime:userid'] = 'Data / Ordua pluginak gordetzen duen datuen erabiltzailearen IDa.';
 $string['specifydatedefault'] = 'edo zehaztu data bat';
 $string['startyear'] = 'Hasiera-urtea';
-$string['startyearafterend'] = 'Hasiera-urtea ezin da amaiera-urtearen ondorengoa izan ';
+$string['startyearafterend'] = 'Hasiera-urtea ezin da amaiera-urtearen ondorengoa izan';
 $string['wanttime'] = 'Ordua ere sartu?';

@@ -28,4 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['buffersize'] = 'Размер буфера записи';
 $string['pluginname'] = 'Стандартный журнал событий';
 $string['pluginname_desc'] = 'Способ хранения журнала событий в таблице базы данных Moodle.';
+$string['privacy:metadata:log:realuserid'] = 'ID реального пользователя в случае, когда он действует от имени другого пользователя.';
+$string['privacy:metadata:log:userid'] = 'ID пользователя, который вызвал это событие';
 $string['taskcleanup'] = 'Очистка таблицы стандартного журнала событий';

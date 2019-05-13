@@ -46,7 +46,7 @@ $string['addnewapp'] = 'Activer l\'application externe';
 $string['addserver'] = 'Ajouter un serveur fiable';
 $string['addtype'] = 'Ajouter un outil préconfiguré';
 $string['allow'] = 'Autoriser';
-$string['allowsetting'] = 'Permettre à l\'outil de stocker 8 kO de réglages dans Moodle';
+$string['allowsetting'] = 'Permettre à l\'outil de stocker 8 ko de réglages dans Moodle';
 $string['always'] = 'Toujours';
 $string['autoaddtype'] = 'Ajouter un outil';
 $string['automatic'] = 'Automatique, basé sur l\'URL de l\'outil';
@@ -122,12 +122,12 @@ $string['display_name_help'] = 'Si ce réglage est activé, le nom de l\'activit
 
 Il est possible que ce dernier affiche également le titre. Cette option permet d\'éviter d\'afficher le titre à double.
 
-Le titre n\'est jamais affiché lorsque que l\'activité est lancée dans une nouvelle fenêtre.';
+Le titre n\'est jamais affiché lorsque l\'activité est lancée dans une nouvelle fenêtre.';
 $string['domain_mismatch'] = 'Le domaine de l\'URL de l\'outil ne correspond pas à la configuration de l\'outil.';
 $string['donot'] = 'Ne pas envoyer';
 $string['donotaccept'] = 'Ne pas accepter';
 $string['donotallow'] = 'Ne pas autoriser';
-$string['duplicateregurl'] = 'Cet URL d\'enregistrement est déjà utilisée';
+$string['duplicateregurl'] = 'Cette URL d\'enregistrement est déjà utilisée';
 $string['editdescription'] = 'Cliquer ici pour donner une description à cet outil';
 $string['edittype'] = 'Modifier l\'outil préconfiguré';
 $string['embed'] = 'Intégré';
@@ -140,7 +140,7 @@ $string['errorbadurl'] = 'L\'URL n\'est pas une URL d\'outil ou de paquet valide
 $string['errorincorrectconsumerkey'] = 'La clef client est incorrecte.';
 $string['errorinvaliddata'] = 'Donnée non valide : {$a}';
 $string['errorinvalidmediatype'] = 'Type de média non valide : {$a}';
-$string['errorinvalidresponseformat'] = 'format de réponse Content-Item non valide.';
+$string['errorinvalidresponseformat'] = 'Format de réponse Content-Item non valide.';
 $string['errormisconfig'] = 'Outil mal configuré. Veuillez demander à l\'administrateur de votre Moodle de corriger sa configuration.';
 $string['errortooltypenotfound'] = 'Type d\'outil LTI non trouvé.';
 $string['existing_window'] = 'Fenêtre existante';
@@ -216,7 +216,7 @@ $string['lti_launch_error_tool_request'] = '<p>Pour demander à un administrateu
 $string['lti_launch_error_unsigned_help'] = '<p>Cette erreur est vraisemblablement le résultat du manque de la clef client et du secret partagé pour ce fournisseur d\'outil.</p>
 <p>Si vous êtes en possession de la clef client et du secret partagé, veuillez les saisir lors de la mise en place de l\'instance de l\'outil externe (assurez-vous que les réglages avancés sont affichés).</p>
 <p>Ou alors, vous pouvez <a href="{$a->course_tool_editor}">créer une configuration</a> du fournisseur d\'outil au niveau du cours.</p>';
-$string['lti:manage'] = 'Être formateur lors qu\'un outil externe est lancé';
+$string['lti:manage'] = 'Être formateur lorsqu\'un outil externe est lancé';
 $string['lti:requesttooladd'] = 'Demander la configuration d\'outils externes pour tout le site';
 $string['ltisettings'] = 'Réglages LTI';
 $string['lti_tool_request_added'] = 'La demande de configuration a été envoyée correctement. Vous pouvez contacter un administrateur pour terminer la configuration de l\'outil.';
@@ -247,7 +247,7 @@ Pour configurer une instance d\'un outil externe, le fournisseur de l\'outil doi
 Les outils externes diffèrent des ressources de type URL de plusieurs façons.
 
 * **Contextualisation** - Les outils externes ont accès à des informations sur l\'utilisateur qui lancent l\'outil, par exemple le nom de l\'institution, l\'identifiant du cours, l\'identifiant de l\'utilisateur et d\'autres informations comme le nom d\'utilisateur ou son adresse de courriel.
-* **Intégration élevée** - Les outils externes supportent la lecture, la modification et la suppression des notes associées  à l\'activité. D\'autres points d\'intégration sont planifiés pour de prochaines versions.
+* **Intégration élevée** - Les outils externes supportent la lecture, la modification et la suppression des notes associées à l\'activité. D\'autres points d\'intégration sont planifiés pour de prochaines versions.
 * **Sécurité** - Les configurations d\'outils externes créent une liaison sécurisée entre Moodle et le fournisseur de l\'outil, permettant une communication sûre entre eux.';
 $string['modulenameplural'] = 'Outils externes';
 $string['modulenamepluralformatted'] = 'Instances LTI';
@@ -319,7 +319,7 @@ $string['privacy:metadata:lti_submission:dateupdated'] = 'L\'horodatage de la mo
 $string['privacy:metadata:lti_submission:gradepercent'] = 'La note de l\'utilisateur en pourcentage';
 $string['privacy:metadata:lti_submission:originalgrade'] = 'La note originale de l\'utilisateur';
 $string['privacy:metadata:lti_submission:userid'] = 'L\'identifiant de l\'utilisateur qui fait une remise pour l\'activité LTI';
-$string['privacy:metadata:lti_tool_proxies'] = 'Proxies LTI';
+$string['privacy:metadata:lti_tool_proxies'] = 'Proxys LTI';
 $string['privacy:metadata:lti_tool_proxies:name'] = 'Nom du proxy LTI';
 $string['privacy:metadata:lti_types'] = 'Types LTI';
 $string['privacy:metadata:lti_types:name'] = 'Nom du type LTI';
@@ -339,7 +339,7 @@ $string['registrationname'] = 'Nom du fournisseur de l\'outil';
 $string['registrationname_help'] = 'Saisir le nom du fournisseur de l\'outil en cours d\'enregistrement';
 $string['registration_options'] = 'Options d\'enregistrement';
 $string['registrationurl'] = 'URL d\'enregistrement';
-$string['registrationurl_help'] = 'L\'URL d\'enregistrement doit être mis à disposition par le fournisseur de l\'outil pour désigner l\'endroit où les demandes d\'enregistrement doivent être envoyées.';
+$string['registrationurl_help'] = 'L\'URL d\'enregistrement doit être mise à disposition par le fournisseur de l\'outil pour désigner l\'endroit où les demandes d\'enregistrement doivent être envoyées.';
 $string['reject'] = 'Rejeter';
 $string['rejected'] = 'Rejeté';
 $string['resource'] = 'Ressource';
@@ -364,7 +364,7 @@ $string['return_to_course'] = 'Cliquer <a href="{$a->link}" target="_top">ici</a
 $string['saveallfeedback'] = 'Enregistrer mes feedbacks';
 $string['search:activity'] = 'Outil externe – information sur l\'activité';
 $string['secure_icon_url'] = 'URL de l\'icône sécurisée';
-$string['secure_icon_url_help'] = 'Analogue à l\'URL de l’icône, mais utilisée lorsque le participant accède à Moodle au moyen du protocole sécurisé SSL. Le but de ce champ est d\'éviter que le navigateur avertisse l\'utilisateur s\'il accède à la page via SSL, tandis que l\'image elle-même provient d\'un site non sécurisé.';
+$string['secure_icon_url_help'] = 'Analogue à l\'URL de l’icône, mais utilisée lorsque le participant accède à Moodle au moyen du protocole sécurisé SSL. Ce champ permet d\'éviter que le navigateur affiche un avertissement sur une image non sécurisée.';
 $string['secure_launch_url'] = 'URL de l\'outil sécurisé';
 $string['secure_launch_url_help'] = 'Analogue à l\'URL de l\'outil, mais utilisée en lieu et place si une sécurité plus élevée est requise. Moodle utilisera cette URL sécurisée si l\'accès à Moodle a lieu via SSL, ou si l\'outil est configuré de façon à être toujours lancé via SSL.
 
@@ -404,7 +404,7 @@ $string['show_in_course_lti1_help'] = 'Cet outil peut être affiché dans le sé
 $string['show_in_course_lti2'] = 'Utilisation de la configuration de l\'outil';
 $string['show_in_course_lti2_help'] = 'Cet outil peut être affiché dans le sélecteur des activités qu\'un enseignant peut choisir d\'ajouter à un cours, ainsi que dans le menu déroulant des outils préconfigurés lors de l\'ajout d\'un outil externe à un cours.';
 $string['show_in_course_no'] = 'Ne pas afficher. N\'utiliser que lorsqu\'une URL d\'outil correspondante est saisie';
-$string['show_in_course_preconfigured'] = 'Afficher comme outil préconfiguré lors de l\'ajout comme outil externe.';
+$string['show_in_course_preconfigured'] = 'Afficher comme outil préconfiguré lors de l\'ajout comme outil externe';
 $string['size'] = 'Paramètres de taille';
 $string['submission'] = 'Remise';
 $string['submissions'] = 'Remises';
@@ -418,7 +418,7 @@ $string['subplugintype_ltisource_plural'] = 'Sources LTI';
 $string['successfullycreatedtooltype'] = 'Nouvel outil créé !';
 $string['successfullyfetchedtoolconfigurationfromcontent'] = 'La configuration de l\'outil a été récupérée correctement à partir du contenu sélectionné.';
 $string['toggle_debug_data'] = 'Activer/désactiver les données de débogage';
-$string['tool_config_not_found'] = 'Configuration de l\'outil introuvable avec cet URL';
+$string['tool_config_not_found'] = 'Configuration de l\'outil introuvable avec cette URL';
 $string['tooldescription'] = 'Description de l\'outil';
 $string['tooldescription_help'] = 'La description de l\'outil qui sera affichée aux enseignants, dans la liste des activités.
 

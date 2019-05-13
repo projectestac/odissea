@@ -81,6 +81,7 @@ $string['no_visible_activities_message'] = 'Aucune des activités surveillées n
 $string['now_indicator'] = 'MAINTENANT';
 $string['overview'] = 'Vue d\'ensemble des étudiants';
 $string['pluginname'] = 'Progression';
+$string['privacy:metadata'] = 'Le bloc progression affiche seulement des données d\'achèvement existantes.';
 $string['progress'] = 'Progression';
 $string['progressbar'] = 'Progression';
 $string['shortname'] = 'Nom abrégé du cours';

@@ -43,3 +43,5 @@ $string['maperror'] = 'Gewogen aantal fouten is kleiner dan of gelijk aan';
 $string['mapgrade'] = 'Cijfer voor inzending';
 $string['percents'] = '{$a} %';
 $string['pluginname'] = 'Aantal fouten';
+$string['privacy:export:metadata:map'] = 'Als het gewogen aantal fouten {$a->nonegative} bereikt, dan is het cijfer {$a->grade} percent.';
+$string['privacy:metadata'] = 'De aantal fouten-plugin bewaart geen persoonlijke gegevens. De persoonlijke gegevens van wie wat gaat beoordelen wordt bewaard door de Workshop-module zelf en dat vormt de basis voor het exporteren van beoordelingsdetails.';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['participants:addinstance'] = 'Block \'Personen\' hinzufügen';
+$string['participants:addinstance'] = 'Neuen Block \'Personen\' hinzufügen';
 $string['pluginname'] = 'Personen';
 $string['privacy:metadata'] = 'Der Block Personen zeigt nur Daten an, die an anderen Orten gespeichert sind.';

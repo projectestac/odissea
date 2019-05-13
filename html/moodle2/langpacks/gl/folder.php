@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['contentheader'] = 'Contido';
 $string['display'] = 'Presentar en pantalla o contido do cartafol';
 $string['display_help'] = 'Se escolle presentar os contidos do cartafol na páxina dun curso, non haberá unha ligazón a unha páxina separada e o título non se presentará.
@@ -40,6 +41,10 @@ $string['folder:addinstance'] = 'Engadir un novo cartafol';
 $string['foldercontent'] = 'Ficheiros e subcartafoles';
 $string['folder:managefiles'] = 'Xestionar ficheiros no módulo de cartafol';
 $string['folder:view'] = 'Ver o contido do cartafol';
+$string['indicator:cognitivedepth'] = 'Cartafol cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso cartafol.';
+$string['indicator:socialbreadth'] = 'Cartafol social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso cartafol.';
 $string['maxsizetodownload'] = 'Tamaño máximo (MB) do cartafol a descargar';
 $string['maxsizetodownload_help'] = 'O tamaño máximo do cartafol que é posíbel descargar como un arquivo ZIP. Se o estabelece a cero o tamaño do cartafol é ilimitado.';
 $string['modulename'] = 'Cartafol';
@@ -51,6 +56,7 @@ Un cartafol pódese usar
 * Para fornecer un espazo de envío compartido entre profesores na páxina do curso (permanecendo o cartafol agochado de modo que só os profesores o poidan ver)';
 $string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = 'Cartafoles';
+$string['newfoldercontent'] = 'Novo contido do cartafol';
 $string['noautocompletioninline'] = 'Completado automático na vista de actividade non se pode seleccionar xunto coa opción «Presentar en xunto»';
 $string['page-mod-folder-view'] = 'Páxina principal do módulo cartafol';
 $string['page-mod-folder-x'] = 'Calquera páxina do módulo de cartafol';

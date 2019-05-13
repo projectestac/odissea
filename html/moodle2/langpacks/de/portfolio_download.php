@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = 'Download Ihres Portfolio-Exports';
 $string['downloading'] = 'Wird heruntergeladen...';
 $string['pluginname'] = 'Datei-Download';
-$string['privacy:metadata'] = 'Dieses Plugin speichert keine persönlichen Daten und sendet sie auch nicht an einen externen Ort.';
+$string['privacy:metadata'] = 'Dieses Plugin speichert keine personenbezogenen Daten und sendet auch nichts an einen externen Ort.';

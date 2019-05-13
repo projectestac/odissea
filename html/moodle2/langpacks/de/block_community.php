@@ -40,8 +40,8 @@ $string['blocks'] = 'Blöcke';
 $string['cannotselecttopsubject'] = 'Es kann kein Top-Thema gewählt werden
 ';
 $string['comments'] = 'Kommentare ({$a})';
-$string['community:addinstance'] = 'Block \'Community-Suche\' hinzufügen';
-$string['community:myaddinstance'] = 'Block \'Community-Suche\' zum Dashboard hinzufügen';
+$string['community:addinstance'] = 'Neuen Block \'Community-Suche\' hinzufügen';
+$string['community:myaddinstance'] = 'Neuen Block \'Community-Suche\' zum Dashboard hinzufügen';
 $string['contentinfo'] = 'Betreff: {$a->subject} - Zielgruppe: {$a->audience} - Schulstufe: {$a->educationallevel}';
 $string['continue'] = 'Weiter';
 $string['contributors'] = '- Mitwirkende: {$a}';

@@ -29,3 +29,4 @@ $string['fieldtypelabel'] = 'Campo de área de texto';
 $string['maxbytes'] = 'Tamaño máximo de ficheiro incorporado (byte)';
 $string['maxbytes_desc'] = 'Se está a cero, será ilimitado de modo predeterminado';
 $string['pluginname'] = 'Área de texto';
+$string['privacy:metadata'] = 'O compoñente de campo de área de texto non almacena ningún dato persoal, usa táboas definidas en mod_data.';

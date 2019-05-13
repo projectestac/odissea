@@ -29,3 +29,4 @@ $string['moodlemedia:browsemedia'] = 'Cerca o carica un file sonoro, un video o 
 $string['moodlemedia:desc'] = 'Inserisci file multimediale Moodle';
 $string['nopreview'] = 'Anteprima non disponibile';
 $string['pluginname'] = 'Inserimento file multimediale';
+$string['privacy:metadata'] = 'Il plugin TinyMCE \'Inserimento file multimediale\' non memorizza dati personali.';

@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Desfer/refer';
+$string['privacy:metadata'] = 'El connector atto_undo no emmagatzema cap dada personal.';
 $string['redo'] = 'Refés';
 $string['undo'] = 'Desfés';

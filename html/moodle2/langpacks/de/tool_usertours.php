@@ -39,11 +39,11 @@ $string['cachedef_stepdata'] = 'Schritte der geführten Tour';
 $string['cachedef_tourdata'] = 'Die Liste von aktivierten Informationen für die geführte Tour wird auf jeder Seite gesammelt.';
 $string['confirmstepremovalquestion'] = 'Möchten Sie diesen Schritt wirklich entfernen?';
 $string['confirmstepremovaltitle'] = 'Entfernen von Schritten bestätigen';
-$string['confirmtourremovalquestion'] = 'Möchten Sie wirklich diese geführte Tour entferen?';
+$string['confirmtourremovalquestion'] = 'Möchten Sie wirklich diese geführte Tour entfernen?';
 $string['confirmtourremovaltitle'] = 'Entfernen einer Tour bestätigen';
 $string['content'] = 'Inhalt';
 $string['content_heading'] = 'Inhalt';
-$string['content_help'] = 'Der Inhalt, der den Schritt beschreibt, kann als Klartext hinzugefügt werden und, fals erforderlich, auch Multilang-Tags einschließen (für die Verwendung mit dem Filter \'Mehrsprachiger Inhalt\').
+$string['content_help'] = 'Der Inhalt, der den Schritt beschreibt, kann als Klartext hinzugefügt werden und falls erforderlich auch Multilang-Tags einschließen (für die Verwendung mit dem Filter \'Mehrsprachiger Inhalt\').
 
 Alternativ kann eine Text-ID in die Formatkennung angegeben werden  (u.z. Komponente ohne Klammern oder Leerzeichen nach dem Komma).';
 $string['cssselector'] = 'CSS-Selector';

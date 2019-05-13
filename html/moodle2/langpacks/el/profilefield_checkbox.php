@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Πεδίο επιλογής';
+$string['pluginname'] = 'Πλαίσιο ελέγχου';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Τα δεδομένα χρήστη του πεδίου πλαισίου ελέγχου του προφίλ χρήστη';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Ο μορφότυπος των δεδομένων χρήστη του πεδίου πλαισίου ελέγχου του προφίλ χρήστη.';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'Το αναγνωριστικό του πεδίου προφίλ';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Επιπρόσθετα δεδομένα προφίλ';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου τα δεδομένα αποθηκεύονται από το πεδίο προφίλ χρήστη Πλαίσιο ελέγχου.';

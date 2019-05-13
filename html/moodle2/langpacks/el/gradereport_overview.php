@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'Η αναφορά επισκόπησης βαθμών';
 $string['gradesoverview'] = 'Επισκόπηση βαθμών';
 $string['overview:view'] = 'Εμφάνιση της αναφοράς επισκόπησης';
-$string['pluginname'] = 'Αναφορά Επισκόπησης';
+$string['pluginname'] = 'Αναφορά επισκόπησης';
+$string['privacy:metadata'] = 'Η αναφορά επισκόπησης βαθμών εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';

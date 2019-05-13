@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'Chaves do usuario utilizadas para acceder a RSS desde un URL';
 $string['rss'] = 'RSS';

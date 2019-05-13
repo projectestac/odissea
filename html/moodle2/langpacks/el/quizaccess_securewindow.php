@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Κανόνας πρόσβασης σε κουίζ, που αφορά την ασφάλεια της JavaScript';
 $string['popupwithjavascriptsupport'] = 'Αναδυόμενο παράθυρο πλήρους οθόνης με κάποια ασφάλεια JavaScript';
+$string['privacy:metadata'] = 'Το πρόσθετο «Ρύθμιση χρήσης JavaScript για πρόσβαση σε κουίζ» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -49,5 +49,6 @@ $string['packagefile'] = 'File del pacchetto';
 $string['page-mod-imscp-x'] = 'Qualsiasi pagina con modulo IMS content package ';
 $string['pluginadministration'] = 'Gestione IMSCP';
 $string['pluginname'] = 'IMS Content Package';
+$string['privacy:metadata'] = 'Il plugin \'IMS content package\' non memorizza dati personali.';
 $string['search:activity'] = 'Pacchetto IMS - Informazioni sulla risorsa';
 $string['toc'] = 'TOC';

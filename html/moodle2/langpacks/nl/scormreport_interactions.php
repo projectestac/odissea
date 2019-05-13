@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interactierapport';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'Of er een samenvatting van vragen in het SCORM interactierapport getoond moet worden';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'Of er een samenvatting van antwoorden in het SCORM interactierapport getoond moet worden';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'Of er een samenvatting van resultaten in het SCORM interactierapport getoond moet worden';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Of er een samenvatting van juiste antwoorden in het SCORM interactierapport getoond moet worden';
 $string['privacy:metadata:preference:scorm_report_pagesize'] = 'Aantal te tonen gebruikers in SCORM-rapporten';
 $string['questionx'] = 'Vraag {$a}';
 $string['responsex'] = 'Antwoord {$a}';

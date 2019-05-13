@@ -99,7 +99,7 @@ $string['current'] = 'Ordinato per {$a}';
 $string['currentglossary'] = 'Glossario in uso';
 $string['date'] = 'data';
 $string['dateview'] = 'Visualizza per data';
-$string['defaultapproval'] = 'Voci approvate per default';
+$string['defaultapproval'] = 'Voci approvate di default';
 $string['defaultapproval_help'] = 'L\'impostazione definisce se le voci inserite debbano essere approvate prima di essere visualizzate.';
 $string['defaulthook'] = 'Visualizzazione default';
 $string['defaultmode'] = 'Modalità di default';
@@ -118,7 +118,7 @@ $string['destination_help'] = 'E\' possibile importare voci nel glossario in uso
 $string['disapprove'] = 'Disapprova';
 $string['displayformat'] = 'Formato di visualizzazione';
 $string['displayformatcontinuous'] = 'Continuo senza autore';
-$string['displayformatdefault'] = 'Per default uguale al formato di visualizzazione';
+$string['displayformatdefault'] = 'Di default uguale al formato di visualizzazione';
 $string['displayformatdictionary'] = 'Semplice, stile dizionario';
 $string['displayformatencyclopedia'] = 'Enciclopedia';
 $string['displayformatentrylist'] = 'Elenco di voci';
@@ -229,14 +229,14 @@ $string['linking'] = 'Link automatico';
 $string['mainglossary'] = 'Glossario primario';
 $string['maxtimehaspassed'] = 'Spiacente, il tempo massimo per modificare questo commento ({$a}) è trascorso!';
 $string['modulename'] = 'Glossario';
-$string['modulename_help'] = 'Il modulo di attività Glossario consente  ai partecipanti di creare e gestire elenchi di voci, come ad esempio un dizionario o una raccolta di risorse e informazioni.
+$string['modulename_help'] = 'Il modulo attività Glossario consente  ai partecipanti di creare e gestire elenchi di voci, come ad esempio un dizionario o una raccolta di risorse e informazioni.
 
 
-Un docente può consentire di allegare file alle definizioni delle voci. I file allegati di tipo immagine vengono visualizzati assieme alla definizione.  E\' possibile cercare voci oppure ordinarle alfabeticamente per categoria, data o autore. Per default le voci e le definizioni inserite sono considerati approvate, tuttavia,  prima di rendere la voce visibile a tutti i partecipanti. è anche possibile impostare l\'approvazione da parte di un docente
+Un docente può consentire di allegare file alle definizioni delle voci. I file allegati di tipo immagine vengono visualizzati assieme alla definizione.  E\' possibile cercare voci oppure ordinarle alfabeticamente per categoria, data o autore. Di default le voci e le definizioni inserite sono considerati approvate, tuttavia,  prima di rendere la voce visibile a tutti i partecipanti. è anche possibile impostare l\'approvazione da parte di un docente
 
 Tramite l\'attivazione del filtro \'Collegamento automatico alle voci di glossario\' le voci potranno essere collegate automaticamente quando la voce compare nei testi del corso.
 
-Un docente può anche consentire l\'inserimento di commenti alle voci. Le voci possono essere valutate sia dal docente sia dagli studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro del valutatore.
+Un docente può anche consentire l\'inserimento di commenti alle voci. Le voci possono essere valutate sia dal docente sia dagli studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro valutatore.
 
 E\' possibile usare i glossari per:
 
@@ -271,6 +271,18 @@ $string['popupformat'] = 'Formato visualizzazione';
 $string['print'] = 'Stampa';
 $string['printerfriendly'] = 'Versione stampabile';
 $string['printviewnotallowed'] = 'La visualizzazione per la stampa non è permessa';
+$string['privacy'] = 'Privacy dei risultati';
+$string['privacy:metadata:core_comments'] = 'I commenti lasciati sulle definizioni del glossario vengono memorizzati usando il sistema core_comment.';
+$string['privacy:metadata:core_files'] = 'I file collegati alle definizioni del glossario vengono memorizzati usando il sistema core_files.';
+$string['privacy:metadata:core_rating'] = 'Le valutazioni aggiunte alle voci di glossario vengono memorizzate usando il sistema core_rating.';
+$string['privacy:metadata:core_tag'] = 'I tag aggiunti alle definizioni del glossario vengono memorizzati usando il sistema core_tag.';
+$string['privacy:metadata:glossary_entries'] = 'Informazioni sulle voci dell\'utente per una data attività glossario.';
+$string['privacy:metadata:glossary_entries:attachment'] = 'Allegato alla voce aggiunta dall\'utente.';
+$string['privacy:metadata:glossary_entries:concept'] = 'Nozione della voce aggiunta dall\'utente.';
+$string['privacy:metadata:glossary_entries:definition'] = 'Definizione della voce aggiunta dall\'utente.';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'ID dell\'attività glossario';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'Data e ora dell\'ultima modifica della voce di glossario da parte dell\'utente.';
+$string['privacy:metadata:glossary_entries:userid'] = 'ID dell\'utente che sta aggiungendo la voce di glossario.';
 $string['question'] = 'Domanda';
 $string['rejectedentries'] = 'Voci rifiutate';
 $string['rejectionrpt'] = 'Report voci non approvate';

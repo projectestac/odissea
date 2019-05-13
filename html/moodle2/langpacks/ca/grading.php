@@ -42,11 +42,11 @@ $string['gradingmethodnone'] = 'Qualificació senzilla';
 $string['gradingmethods'] = 'Mètodes de qualificació';
 $string['manageactionclone'] = 'Crea un formulari de qualificació nou a partir d\'una plantilla';
 $string['manageactiondelete'] = 'Suprimeix el formulari actual';
-$string['manageactiondeleteconfirm'] = 'Esteu a punt de suprimir el formulari de qualificació \'{$a->formname}\' i tota la informació relacionada de \'{$a->component} ({$a->area})\'. Per favor, assegureu-vos que compreneu les següents conseqüències:
-* No hi ha manera de desfer aquesta operació.
-* Podeu canviar a un altre mètode de qualificació, inclosa la \'Qualificació directa senzilla\', sense suprimir aquest formulari.
-* Es perdrà tota la informació sobre com s\'omplin els formularis de qualificació.
-* Els resultats de qualificació calculats i emmagatzemats en el butlletí de qualificacions no es veuran afectats. Tanmateix l\'explicació de com foren calculats no estarà disponible.
+$string['manageactiondeleteconfirm'] = 'Ara suprimireu el formulari de qualificació «{$a->formname}» i tota la informació relacionada de «{$a->component} ({$a->area})». Assegureu-vos que compreneu les conseqüències següents:
+* No hi ha cap manera de desfer aquesta operació.
+* Podeu canviar a un altre mètode de qualificació, inclosa la «Qualificació directa senzilla», sense suprimir aquest formulari.
+* Es perdrà tota la informació sobre com s\'omplen els formularis de qualificació.
+* Els resultats de qualificació calculats i emmagatzemats al butlletí de qualificacions no es veuran afectats. Tanmateix, l\'explicació de com foren calculats no estarà disponible.
 * Aquesta operació no afecta les còpies eventuals del formulari en altres activitats.';
 $string['manageactiondeletedone'] = 'El formulari ha estat suprimit amb èxit';
 $string['manageactionedit'] = 'Edita el formulari actual';

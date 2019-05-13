@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventbookprinted'] = 'Το  βιβλίο εκτυπώθηκε';
+$string['eventchapterprinted'] = 'Το κεφάλαιο εκτυπώθηκε';
 $string['pluginname'] = 'Εκτύπωση βιβλίου';
 $string['printbook'] = 'Εκτύπωσε βιβλίο';
+$string['printchapter'] = 'Εκτύπωση αυτού του κεφαλαίου';
+$string['printdate'] = 'Ημερομηνία';
+$string['printedby'] = 'Εκτυπώθηκε από';
 $string['print:print'] = 'Εκτύπωσε βιβλίο';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εκτύπωση βιβλίων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

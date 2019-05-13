@@ -37,6 +37,7 @@ $string['nosubdir'] = 'Per poter scegliere una cartella, devi crearne almeno una
 $string['path'] = 'Scegli una sotto cartella';
 $string['pluginname'] = 'File system';
 $string['pluginname_help'] = 'Crea un repository usando una cartella locale';
+$string['privacy:metadata'] = 'Il plugin Repository \'File system\' non memorizza né trasmette dati personali.';
 $string['relativefiles'] = 'Consenti file relativi';
 $string['relativefiles_desc'] = 'Consente l\'accesso ai file presenti nel repository tramite l\'uso di link relativi.';
 $string['root'] = 'Root';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Gehitu beste atal bat';
-$string['book:addinstance'] = 'Gehitu beste liburu bat';
+$string['book:addinstance'] = 'Gehitu liburu berria';
 $string['book:edit'] = 'Editatu liburuaren atalak';
 $string['book:read'] = 'Ikusi liburua';
 $string['book:viewhiddenchapters'] = 'Ikusi liburuaren ezkutuko atalak';

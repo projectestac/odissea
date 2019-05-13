@@ -78,14 +78,23 @@ Du bör åtgärda det här problemet på alla produktionswebbplatser där ni pla
 Den enda URL som krävs för verifikation är [din-webbplats-url]/badges/assertion.php så om du kan konfigurera din brandvägg för extern åtkomst till den filen så kommer verifikation av märken fortfarande fungera.';
 $string['backpackbadges'] = 'Du har {$a->totalbadges} märke(n) visade av {$a->totalcollections} samling(ar). <a href="mybackpack.php">Ändra inställningar för ryggsäck</a>.';
 $string['backpackconnection'] = 'Anslutning till ryggsäck';
+$string['backpackconnectioncancelattempt'] = 'Anslut med en annan e-postadress';
+$string['backpackconnectionconnect'] = 'Anslut till ryggsäck';
 $string['backpackconnection_help'] = 'Den här sidan tillåter dig att ansluta en extern ryggsäcks-leverantör. Att ansluta till en ryggsäck låter dig visa externa märken inom den här webbplatsen och att trycka ut märken du tagit här till din externa ryggsäck.
 
 För nuvarande stöds endast <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Du behöver registrera dig hos en ryggsäcks-tjänst innan du försöker ansluta ryggsäcken via den här sidan.';
+$string['backpackconnectionresendemail'] = 'Skicka om bekräftelsemejlet';
+$string['backpackconnectionunexpectedresult'] = 'Anslutningen till din ryggsäck misslyckades. V.g. försök igen.
+<br><br>Om problemet kvarstår kontakta din administratör.';
 $string['backpackdetails'] = 'Inställningar för ryggsäck';
 $string['backpackemail'] = 'E-postadress';
 $string['backpackemail_help'] = 'E-postadress associerad med din ryggsäck.
 
 Om anslutning till ryggsäcken etableras kommer den här e-postadressen användas istället för din interna e-postadress för att trycka ut märken till din ryggsäck.';
+$string['backpackemailverificationpending'] = 'Väntar på bekräftelse';
+$string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges Backpack e-postbekräftelse';
+$string['backpackemailverifypending'] = 'Ett bekräftelsemejl har skickats till <strong>{$a}</strong>. Klicka på bekräftelselänken för att aktivera anslutningen till din ryggsäck.';
+$string['backpackemailverifysuccess'] = 'Tack för att du har bekräftat din e-postadress. Du är nu ansluten till din ryggsäck.';
 $string['backpackimport'] = 'Inställningar för import av märken';
 $string['backpackimport_help'] = 'Efter lyckad anslutning av ryggsäck så kan märken från din ryggsäck visas på din "Mina märken"-sida och din profilsida.
 
@@ -199,8 +208,12 @@ $string['disconnect'] = 'Koppla från';
 $string['donotaward'] = 'För nuvarande är det här märket inte aktivt så det kan inte tilldelas användare. Om du skulle vilja tilldela det här märket, var god att aktivera dess status.';
 $string['editsettings'] = 'Redigera inställningar';
 $string['enablebadges'] = 'Aktivera märken';
+$string['error:backpackemailnotfound'] = 'E-postadressen \'{$a}\' är inte ansluten till någon ryggsäck. Du behöver antingen i <a href="http://backpack.openbadges.org">skapa en ryggsäck </a> för detta e-postkonto eller logga in med en annan e-postadress.';
+$string['error:backpackloginfailed'] = 'Anslutningen till en extern ryggsäck misslyckades av denna anledning: {$a}';
 $string['error:backpacknotavailable'] = 'Din webbplats är inte tillgänlig via Internet så märken som utfärdats från den här webbplatsen kan inte verifieras av externa ryggsäcks-tjänster.';
+$string['error:backpackproblem'] = 'Anslutningen till din ryggsäcktjänst misslyckades. V.g. försök senare.';
 $string['error:badgeawardnotfound'] = 'Detta märke kan inte verifieras. Möjligtvis har det återkallats.';
+$string['error:badgenotfound'] = 'Inget märke hittades';
 $string['error:cannotact'] = 'Kan inte aktivera märket.';
 $string['error:cannotawardbadge'] = 'Kan inte tilldela märke till en användare.';
 $string['error:cannotrevokebadge'] = 'Kan inte återkalla märket från användaren.';
@@ -308,6 +321,7 @@ $string['notifyweekly'] = 'Veckovis';
 $string['numawards'] = 'Det här märket har tilldelats <a href="{$a->link}">{$a->count}</a> användare.';
 $string['numawardstat'] = 'Det här märket har tilldelats {$a} användare.';
 $string['overallcrit'] = 'av de valda kriterierna är slutförda.';
+$string['personaconnection'] = 'Logga in med din e-post.';
 $string['potentialrecipients'] = 'Potentiella mottagare av märket';
 $string['preferences'] = 'Välj inställningar för märken (badges)';
 $string['recipientidentificationproblem'] = 'Kan inte hitta någon mottagare av detta märke bland befintliga användare.';

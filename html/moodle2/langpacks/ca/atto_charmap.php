@@ -211,6 +211,7 @@ $string['pisymbol'] = 'ϖ (Símbol pi)';
 $string['pluginname'] = '挿 (Símbol insereix caràcter)';
 $string['plusminussign'] = '± (Símbol més menys)';
 $string['poundsign'] = '£ (Símbol lliura)';
+$string['privacy:metadata'] = 'El connector atto_charmap no emmagatzema cap dada personal.';
 $string['proportionalto'] = '∝ (Símbol proporcional)';
 $string['psi'] = 'ψ (Psi minúscula)';
 $string['psi_caps'] = 'Ψ (Psi majúscula)';

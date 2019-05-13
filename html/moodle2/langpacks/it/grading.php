@@ -57,11 +57,30 @@ $string['manageactionshareconfirm'] = 'Stai per salvare come modello pubblico un
 $string['manageactionsharedone'] = 'Lo schema è stato salvato come modello';
 $string['noitemid'] = 'Non è possibile valutare. L\'elemento di valutazione non esiste.';
 $string['nosharedformfound'] = 'Non sono stati trovati modelli';
-$string['searchownforms'] = 'includi i miei schemi';
+$string['privacy:metadata:grading_definitions'] = 'Informazioni di base su uno schema di valutazione avanzata definito in un\'area valutabile.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'ID dell\'area in cui viene definito lo schema di valutazione avanzata.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'ID della definizione della valutazione da cui questa è stata copiata.';
+$string['privacy:metadata:grading_definitions:description'] = 'Descrizione del metodo di valutazione avanzata.';
+$string['privacy:metadata:grading_definitions:method'] = 'Metodo di valutazione responsabile della definizione.';
+$string['privacy:metadata:grading_definitions:name'] = 'Nome della definizione della valutazione avanzata.';
+$string['privacy:metadata:grading_definitions:options'] = 'Impostazioni della definizione della valutazione.';
+$string['privacy:metadata:grading_definitions:status'] = 'Stato della definizione della valutazione avanzata.';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'Data e ora di copia della definizione della valutazione.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'Data e ora di creazione della definizione della valutazione.';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'Data e ora dell\'ultima modifica della definizione della valutazione.';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'ID dell\'utente che ha creato la definizione della valutazione.';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'ID dell\'utente che ha apportato l\'ultima modifica alla definizione della valutazione.';
+$string['privacy:metadata:grading_instances:feedback'] = 'Feedback dato dall\'utente.';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'Formato di testo del feedback dato dall\'utente.';
+$string['privacy:metadata:grading_instances:raterid'] = 'ID dell\'utente che ha valutato l\'istanza.';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'Valutazione per l\'istanza.';
+$string['privacy:metadata:grading_instances:status'] = 'Stato dell\'istanza di valutazione.';
+$string['privacy:metadata:grading_instances:timemodified'] = 'Data e ora dell\'ultima modifica dell\'istanza di valutazione.';
+$string['searchownforms'] = 'Includi i miei schemi';
 $string['searchtemplate'] = 'Ricerca schemi di valutazione';
 $string['searchtemplate_help'] = 'E\' possibile cercare uno schema di valutazione da usare come modello. Inserisci le parole da cercare nel nome degli schemi, nella descrizione o nel testo dello schema. Per cercare una frase, racchiudi le parole tra doppi apici.
 
-Per default i risultati della ricerca includeranno solo gli schemi salvati come modello. Se lo desideri, puoi includere nei risultati i tuoi schemi, in questo modo puoi riutilizzare facilmente i tuoi schemi senza doverli pubblicare. Possono essere riutilizzati solo gli schemi contrassegnati come "Pronto all\'uso" .';
+Di default i risultati della ricerca includeranno solo gli schemi salvati come modello. Se lo desideri, puoi includere nei risultati i tuoi schemi, in questo modo puoi riutilizzare facilmente i tuoi schemi senza doverli pubblicare. Possono essere riutilizzati solo gli schemi contrassegnati come "Pronto all\'uso" .';
 $string['statusdraft'] = 'Bozza';
 $string['statusready'] = 'Pronto all\'uso';
 $string['templatedelete'] = 'Elimina';

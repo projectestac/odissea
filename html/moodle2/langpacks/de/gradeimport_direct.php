@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Bewertungen aus CSV importieren';
 $string['pluginname'] = 'Aus Tabellenkalkulation einfügen';
-$string['privacy:metadata'] = 'Das Tabellenimport-Plugin für Bewertungen speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Tabellenimport-Plugin für Bewertungen speichert keine personenbezogenen Daten.';
 $string['userdata'] = 'Hilfe zum Kopieren von Daten in dieses Formular.';
 $string['userdata_help'] = 'Bewertungen können aus einem Tabellenblatt kopiert und eingefügt werden. Das Tabellenblatt benötigt eine Spalte zur Identifikation des Nutzers (user-ID oder user name). Jede Spalte für den Import von Bewertungen benötigt einen Titel.';

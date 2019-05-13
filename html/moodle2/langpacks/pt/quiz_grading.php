@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alldoneredirecting'] = 'Todas as tentativas selecionadas foram avaliadas. A voltar à lista de perguntas.';
-$string['alreadygraded'] = 'Já avaliado';
-$string['alsoshowautomaticallygraded'] = 'Mostrar também perguntas que foram avaliadas automaticamente';
+$string['alldoneredirecting'] = 'Todas as tentativas selecionadas foram avaliadas. A voltar à lista das perguntas.';
+$string['alreadygraded'] = 'Avaliadas';
+$string['alsoshowautomaticallygraded'] = 'Incluir perguntas que foram avaliadas automaticamente';
 $string['attemptstograde'] = 'Avaliar tentativas';
 $string['automaticallygraded'] = 'Avaliadas automaticamente';
-$string['backtothelistofquestions'] = 'Voltar à lista de perguntas';
+$string['backtothelistofquestions'] = 'Voltar à lista das perguntas';
 $string['bydate'] = 'Por data';
-$string['bystudentfirstname'] = 'Pelo primeiro nome do aluno';
+$string['bystudentfirstname'] = 'Pelo nome do aluno';
 $string['bystudentidnumber'] = 'Por ID do aluno';
-$string['bystudentlastname'] = 'Pelo último nome do aluno';
+$string['bystudentlastname'] = 'Pelo apelido do aluno';
 $string['cannotgradethisattempt'] = 'Não é possível avaliar esta tentativa';
 $string['cannotloadquestioninfo'] = 'Não é possível carregar as informações específicas deste tipo de pergunta';
 $string['changeoptions'] = 'Alterar opções';
@@ -65,7 +65,7 @@ $string['grading:viewstudentnames'] = 'Ver o nome dos alunos durante a avaliaç�
 $string['hideautomaticallygraded'] = 'Ocultar perguntas que foram avaliadas automaticamente';
 $string['inprogress'] = 'Em progresso';
 $string['invalidattemptid'] = 'Não existe a tentativa com esse ID';
-$string['invalidquestionid'] = 'pergunta com o ID {$a} não encontrada';
+$string['invalidquestionid'] = 'Pergunta com o ID {$a} não encontrada';
 $string['noquestionsfound'] = 'Não foi encontrada nenhuma pergunta avaliada manualmente';
 $string['nothingfound'] = 'Nada a mostrar';
 $string['options'] = 'Opções';

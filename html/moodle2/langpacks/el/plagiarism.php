@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configenableplagiarism'] = 'Αυτό θα επιτρέψει στους διαχειριστές να ρυθμίσουν τα πρόσθετα λογοκλοπής (αν έχουν εγκατασταθεί)';
+$string['availableplugins'] = 'Διαθέσιμα πρόσθετα';
+$string['configenableplagiarism'] = 'Αυτό θα επιτρέψει στους διαχειριστές να ρυθμίσουν τα πρόσθετα λογοκλοπής (αν έχουν εγκατασταθεί).';
+$string['configplagiarismplugins'] = 'Επιλέξτε το πρόσθετο λογοκλοπής που θέλετε να ρυθμίσετε';
 $string['enableplagiarism'] = 'Ενεργοποίηση πρόσθετων λογοκλοπής';
+$string['manageplagiarism'] = 'Διαχείριση πρόσθετων λογοκλοπής';
+$string['nopluginsinstalled'] = 'Δεν έχουν εγκατασταθεί καθόλου πρόσθετα λογοκλοπής.';
+$string['plagiarism'] = 'Λογοκλοπή';
+$string['privacy:metadata:plagiarism'] = 'Το υποσύστημα λογοκλοπής λειτουργεί ως κανάλι, μεταδίδοντας αιτήματα από (άλλα) πρόσθετα στα διάφορα πρόσθετα λογοκλοπής.';

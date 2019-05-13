@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseoverview:view'] = 'Εμφάνιση αναφοράς σύνοψης μαθήματος';
-$string['pluginname'] = 'Επισκόπηση μαθήματος';
+$string['courseoverview:view'] = 'Εμφάνιση αναφοράς επισκόπησης μαθημάτων';
+$string['pluginname'] = 'Επισκόπηση μαθημάτων';
+$string['privacy:metadata'] = 'Το πρόσθετο «Επισκόπηση μαθημάτων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

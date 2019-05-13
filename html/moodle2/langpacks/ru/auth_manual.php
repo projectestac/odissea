@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Настройки срока действи
 $string['passwdexpiretime'] = 'Срок действия пароля';
 $string['passwdexpiretime_desc'] = 'Продолжительность времени, в течение которого пароль действителен.';
 $string['pluginname'] = 'Ручная регистрация';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'Дата последнего изменения пароля.';

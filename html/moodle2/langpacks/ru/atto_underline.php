@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Подчеркивание';
+$string['privacy:metadata'] = 'Плагин atto_underline не хранит никаких персональных данных.';

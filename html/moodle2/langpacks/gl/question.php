@@ -47,11 +47,11 @@ $string['byandon'] = 'por <em>{$a->user}</em> en <em>{$a->time}</em>';
 $string['cannotcopybackup'] = 'Non se puido copiar o ficheiro da copia de seguranza';
 $string['cannotcreate'] = 'Non se puido crear unha nova entrada na táboa question_attempts';
 $string['cannotcreatepath'] = 'Non se puido crear a ruta: {$a}';
-$string['cannotdeletebehaviourinuse'] = 'Non pode eliminar o comportamento \'{$a}\'. Úsase para intentos de preguntas.';
+$string['cannotdeletebehaviourinuse'] = 'Non pode eliminar o comportamento «{$a}». Úsase para intentos de preguntas.';
 $string['cannotdeletecate'] = 'Non pode eliminar esa categoría porque é a categoría predeterminada para este contexto.';
-$string['cannotdeleteneededbehaviour'] = 'Non pode eliminar o comportamento da pregunta \'{$a}\'. Hai outros comportamentos instalados que dependen del.';
-$string['cannotdeleteqtypeinuse'] = 'Non pode eliminar o tipo de pregunta \'{$a}\'. Hai preguntas deste tipo no banco de preguntas.';
-$string['cannotdeleteqtypeneeded'] = 'Non pode eliminar o tipo de pregunta \'{$a}\'. Hai outros tipos de preguntas instalados que dependen del.';
+$string['cannotdeleteneededbehaviour'] = 'Non pode eliminar o comportamento da pregunta «{$a}». Hai outros comportamentos instalados que dependen del.';
+$string['cannotdeleteqtypeinuse'] = 'Non pode eliminar o tipo de pregunta «{$a}». Hai preguntas deste tipo no banco de preguntas.';
+$string['cannotdeleteqtypeneeded'] = 'Non pode eliminar o tipo de pregunta «{$a}». Hai outros tipos de preguntas instalados que dependen del.';
 $string['cannotenable'] = 'Non se pode crear directamente o tipo de pregunta {$a}.';
 $string['cannotenablebehaviour'] = 'Non se pode usar directamente o tipo de comportamento {$a}. Soamente para uso interno.';
 $string['cannotfindcate'] = 'Non se puido atopar o rexistro da categoría';
@@ -77,11 +77,11 @@ $string['categorycurrent'] = 'Categoría actual';
 $string['categorycurrentuse'] = 'Usar esta categoría';
 $string['categorydoesnotexist'] = 'Esta categoría non existe';
 $string['categoryinfo'] = 'Info da categoría';
-$string['categorymove'] = 'A categoría «{$a->name}» contén {$a->count} preguntas (algunhas das cales poden ser vellas, estaren agochadas ou seren preguntas que aínda están en uso nalgúns exames). Escolla outra categoría á cal movelas.';
+$string['categorymove'] = 'A categoría «{$a->name}» contén {$a->count} preguntas (algunhas das cales poden ser preguntas agochadas ou preguntas ao chou que aínda se usan nunha proba). Escolla outra categoría á cal movelas.';
 $string['categorymoveto'] = 'Gardar na categoría';
 $string['categorynamecantbeblank'] = 'O nome da categoría non se pode deixar en branco.';
 $string['changeoptions'] = 'Cambiar opcións';
-$string['changepublishstatuscat'] = '<a href="{$a->caturl}">A categoría "{$a->name}"</a> no curso "{$a->coursename}" cambiará o seu estado de compartición desde <strong>{$a->changefrom} a {$a->changeto}</strong>.';
+$string['changepublishstatuscat'] = '<a href="{$a->caturl}">A categoría «{$a->name}»</a> no curso «{$a->coursename}» cambiará o seu estado de compartición desde <strong>{$a->changefrom} a {$a->changeto}</strong>.';
 $string['check'] = 'Comprobar';
 $string['chooseqtypetoadd'] = 'Escolla o tipo de pregunta que engadir';
 $string['clearwrongparts'] = 'Despexar respostas incorrectas';
@@ -93,7 +93,7 @@ $string['closepreview'] = 'Pechar a previsualización';
 $string['combinedfeedback'] = 'Comentario combinado';
 $string['comment'] = 'Comentario';
 $string['commented'] = 'Comentado: {$a}';
-$string['commentormark'] = 'Facer comentario ou substituír marca';
+$string['commentormark'] = 'Facer comentario ou anular a marca';
 $string['comments'] = 'Comentarios';
 $string['commentx'] = 'Comentar: {$a}';
 $string['complete'] = 'Completa';
@@ -111,25 +111,25 @@ $string['cwrqpfsinfo'] = '<p>Durante a actualización a Moodle 1.9 separaremos c
 diferentes contextos. Nalgunhas categorías de preguntas do seu sitio terá que
 cambiarse o seu
 estado de compartición.
-Isto é necesario no caso raro de que unha ou máis preguntas \'aleatorias\' compartidas dunha proba estean configuradas para se seleccionar de entre unha mestura
-de categorías compartidas e non compartidas (como é o caso deste sitio). Isto sucede cando unha pregunta \'aleatoria\' está configurada para seleccionar
+Isto é necesario no caso raro de que unha ou máis preguntas «ao chou» compartidas dunha proba estean configuradas para se seleccionar de entre unha mestura
+de categorías compartidas e non compartidas (como é o caso deste sitio). Isto sucede cando unha pregunta «ao chou» está configurada para seleccionar
 de entre subcategorías e unha ou máis subcategorías teñen diferente estado de compartición respecto da categoría pai
 na cal a pregunta aleatoria se crea.</p>
-<p>As seguintes categorías de preguntas, de entre as que veñen as preguntas \'aleatorias\' nas categorías pai,
-cambiarán o seu estado de compartición ao mesmo estado de compartición que a categoría que teña a pregunta «aleatoria»
+<p>As seguintes categorías de preguntas, de entre as que veñen as preguntas «ao chou» nas categorías pai,
+cambiarán o seu estado de compartición ao mesmo estado de compartición que a categoría que teña a pregunta «ao chou»
 teña na actualización a Moodle 1.9. As seguintes categorías cambiarán o seu estado de compartición. As preguntas afectadas
 continuarán a funcionar en calquera das probas existentes ata que as retire desas probas.</p>';
-$string['cwrqpfsnoprob'] = 'Non hai categorías de preguntas afectadas no seu sitio polo problema de \'Preguntas aleatorias que seleccionan preguntas de subcategorías\'.';
-$string['decimalplacesingrades'] = 'Posicións decimais nas táboas';
+$string['cwrqpfsnoprob'] = 'Non hai categorías de preguntas afectadas no seu sitio polo problema de «Preguntas ao chou que seleccionan preguntas de subcategorías».';
+$string['decimalplacesingrades'] = 'Posicións decimais nas cualificacións';
 $string['defaultfor'] = 'Predeterminado/a para: {$a}';
-$string['defaultinfofor'] = 'A categoría predeterminada para preguntas compartidas no contexto \'{$a}\'.';
+$string['defaultinfofor'] = 'A categoría predeterminada para preguntas compartidas no contexto «{$a}».';
 $string['defaultmark'] = 'Puntuación predeterminada';
 $string['defaultmarkmustbepositive'] = 'A puntuación predeterminada debe ser positiva.';
 $string['deletecoursecategorywithquestions'] = 'Hai preguntas no banco de preguntas asociadas con esta categoría de curso. De proseguir, eliminaranse. Pode querer movelas primeiro, usando a interface do banco de preguntas.';
-$string['deletequestioncheck'] = 'Confirma definitivamente que quere eliminar \'{$a}\'?';
+$string['deletequestioncheck'] = 'Confirma definitivamente que quere eliminar «{$a}»?';
 $string['deletequestionscheck'] = 'Confirma definitivamente que quere eliminar as seguintes preguntas?<br /><br />{$a}';
-$string['deletingbehaviour'] = 'Eliminando o comportamento de pregunta \'{$a}';
-$string['deletingqtype'] = 'Eliminado o tipo de pregunta \'{$a}';
+$string['deletingbehaviour'] = 'Eliminando o comportamento de pregunta «{$a}»';
+$string['deletingqtype'] = 'Eliminado o tipo de pregunta «{$a}»';
 $string['didnotmatchanyanswer'] = '[Non coincide ningunha resposta]';
 $string['disabled'] = 'Desactivado';
 $string['displayoptions'] = 'Opcións de presentación:';
@@ -194,7 +194,7 @@ $string['filesareacourse'] = 'a área de ficheiros do curso';
 $string['filesareasite'] = 'a área de ficheiros do sitio';
 $string['filestomove'] = 'Mover / copiar ficheiros a {$a}?';
 $string['fillincorrect'] = 'Cubrir nas respostas correctas';
-$string['firsttry'] = 'primeiro intento';
+$string['firsttry'] = 'Primeiro intento';
 $string['flagged'] = 'Marcado';
 $string['flagthisquestion'] = 'Marcar esta pregunta';
 $string['formquestionnotinids'] = 'Formulario contido en pregunta que non está nos id de preguntas';
@@ -226,7 +226,7 @@ $string['importerrorquestion'] = 'Produciuse un erro ao importar a pregunta';
 $string['importfromcoursefiles'] = '... ou escolla un ficheiro de curso que importar.';
 $string['importfromupload'] = 'Seleccionar un ficheiro que enviar ...';
 $string['importingquestions'] = 'Importando {$a} preguntas do ficheiro';
-$string['importparseerror'] = 'Atopáronse erro(s) ao procesar o ficheiro de importación. Non se importou ningunha pregunta. Para importar algunhas preguntas boas inténteo outra vez co axuste \'Alto no erro\' como \'Non';
+$string['importparseerror'] = 'Atopáronse erro(s) ao procesar o ficheiro de importación. Non se importou ningunha pregunta. Para importar algunhas preguntas boas inténteo outra vez co axuste «Alto no erro» como «Non»';
 $string['importquestions'] = 'Importar preguntas do ficheiro';
 $string['importquestions_help'] = 'Esta función activa preguntas nunha variedade de formatos que importar mediante un ficheiro de texto. Note que o ficheiro debe de usar a codificación UTF-8.';
 $string['importquestions_link'] = 'pregunta/importar';
@@ -243,13 +243,13 @@ $string['invalidcategoryidforparent'] = 'O id da categoría é incorrecto para e
 $string['invalidcategoryidtomove'] = 'O id da categoría é incorrecto para movela!';
 $string['invalidconfirm'] = 'A cadea de confirmación era incorrecta';
 $string['invalidcontextinhasanyquestions'] = 'O contexto pasado a question_context_has_any_questions é incorrecto.';
-$string['invalidgrade'] = 'Grades ({$a}) do not match grade options - question skipped.';
+$string['invalidgrade'] = 'As cualificacións ({$a}) non coinciden coas opcións de cualificación; omítese a pregunta.';
 $string['invalidpenalty'] = 'Penalización incorrecta';
 $string['invalidwizardpage'] = 'Ou é incorrecta ou non se especificou un asistente de páxina!';
 $string['lastmodifiedby'] = 'Última modificación de';
 $string['lasttry'] = 'Último intento';
 $string['linkedfiledoesntexist'] = 'O ficheiro ligado {$a} non existe';
-$string['makechildof'] = 'Facer fillo de \'{$a}';
+$string['makechildof'] = 'Facer fillo de «{$a}»';
 $string['makecopy'] = 'Facer copia';
 $string['maketoplevelitem'] = 'Mover ao nivel superior';
 $string['manualgradeinvalidformat'] = 'Isto non é un número válido.';
@@ -262,15 +262,15 @@ $string['markoutofmax'] = 'Puntuación: {$a->mark} sobre {$a->max}';
 $string['marks'] = 'Puntuacións';
 $string['matchgrades'] = 'Coincidir cualificacións';
 $string['matchgradeserror'] = 'Prodúcese un erro se a cualificación non está listada';
-$string['matchgrades_help'] = 'Os graos importados teñen que coincidir cun da lista fixada de graos válidos - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (tamén valores negativos). Se non, hai dúas opcións:
+$string['matchgrades_help'] = 'As cualificacións importadas teñen que coincidir cun da lista fixada de cualificacións válidas - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (tamén valores negativos). Se non, hai dúas opcións:
 
-*  Prodúcese un erro se o grao non está listado - Se unha pregunta contén calquera grao non atopado na lista amósase un erro e infórmase de que a pregunta non se cualificará
+*  Prodúcese un erro se a cualificación non está listada - Se unha pregunta contén calquera cualificación non atopada na lista amósase un erro e infórmase de que a pregunta non se importará
 * A cualificación máis próxima non se lista - Se unha cualificación non coincide cun valor na lista, a cualificación cámbiase ao valor coincidente máis próximo da lista';
 $string['matchgradesnearest'] = 'Cualificación máis próxima se non está listada';
 $string['missingcourseorcmid'] = 'É necesario fornecer o id do curso ou cmid para imprimir a pregunta.';
 $string['missingcourseorcmidtolink'] = 'É necesario fornecer o id do curso ou cmig para get_question_edit_link.';
 $string['missingimportantcode'] = 'Este tipo de pregunta carece de código importante: {$a}.';
-$string['missingoption'] = 'Faltan as opcions da pregunta máis próxima {$a}';
+$string['missingoption'] = 'Faltan as opcións da pregunta máis próxima {$a}';
 $string['modified'] = 'Último gardado';
 $string['move'] = 'Mover desde {$a} e cambiar ligazóns.';
 $string['movecategory'] = 'Mover categoría';
@@ -336,28 +336,51 @@ $string['permissionmove'] = 'Mover esta pregunta';
 $string['permissionsaveasnew'] = 'Gardar isto como unha nova pregunta';
 $string['permissionto'] = 'Ten permiso para:';
 $string['previewquestion'] = 'Previsualizar a pregunta: {$a}';
+$string['privacy:metadata:database:question'] = 'Os detalles sobre unha pregunta específica.';
+$string['privacy:metadata:database:question_attempts'] = 'A información sobre un intento dunha pregunta específica.';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'Unha indicación de que o usuario sinalizou esta pregunta no intento.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Un resumo da resposta da pregunta.';
+$string['privacy:metadata:database:question_attempt_step_data'] = 'Os pasos do intento de pregunta poden ter datos adicionais específicos para ese paso. Os datos almacénanse na táboa step_data.';
+$string['privacy:metadata:database:question_attempt_step_data:name'] = 'O nome do elemento de datos.';
+$string['privacy:metadata:database:question_attempt_step_data:value'] = 'O valor do elemento de datos.';
+$string['privacy:metadata:database:question_attempt_steps'] = 'Cada intento de preguntas ten unha serie de pasos para indicar as distintas fases do principio ao final ao marcado. Esta táboa almacena a información de cada un destes pasos.';
+$string['privacy:metadata:database:question_attempt_steps:fraction'] = 'A cualificación asignada a este intento de pregunta escalou a un valor de 1.';
+$string['privacy:metadata:database:question_attempt_steps:state'] = 'O estado desta pregunta intenta paso ao final da transición paso.';
+$string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'A data e hora en que comezou esta transición de paso.';
+$string['privacy:metadata:database:question_attempt_steps:userid'] = 'O usuario que realizou a transición de paso.';
+$string['privacy:metadata:database:question_attempts:timemodified'] = 'O momento no que foi actualizado o intento da pregunta.';
+$string['privacy:metadata:database:question:createdby'] = 'A persoa que creou a pregunta.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'O comentario xeral para esta pregunta.';
+$string['privacy:metadata:database:question:modifiedby'] = 'A persoa que fixo a última actualización da pregunta.';
+$string['privacy:metadata:database:question:name'] = 'O nome da pregunta.';
+$string['privacy:metadata:database:question:questiontext'] = 'O texto da pregunta.';
+$string['privacy:metadata:database:question:timecreated'] = 'A data e a hora na que se creou esta pregunta.';
+$string['privacy:metadata:database:question:timemodified'] = 'A data e a hora na que se actualizou esta pregunta.';
+$string['privacy:metadata:link:qbehaviour'] = 'O subsistema de preguntas usa o tipo de engadido Question Behaviour (Comportamento de pregunta).';
+$string['privacy:metadata:link:qformat'] = 'O subsistema de preguntas fai uso do tipo de engadido Question Format (Formato de pregunta) para o propósito de importar e exportar preguntas en diferentes formatos.';
+$string['privacy:metadata:link:qtype'] = 'O subsistema de preguntas interactúa co tipo de engadido Question Type (Tipo de pregunta) que contén os diferentes tipos de preguntas.';
 $string['published'] = 'compartido';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">Pregunta "{$a->name}" ({$a->qtype})</a> está nesta categoría pero tamén se usa na <a href="{$a->qurl}">proba "{$a->quizname}"</a> destoutro curso "{$a->coursename}".';
 $string['questionbank'] = 'Banco da pregunta';
 $string['questionbehaviouradminsetting'] = 'Configuración do comportamento da pregunta';
 $string['questionbehavioursdisabled'] = 'Comportamentos da pregunta que desactivar';
-$string['questionbehavioursdisabledexplained'] = 'Introducir unha lista separada por comas de comportamentos que non que non queira que aparezan no menú despregábel';
+$string['questionbehavioursdisabledexplained'] = 'Introducir unha lista separada por comas de comportamentos que non queira que aparezan no menú despregábel';
 $string['questionbehavioursorder'] = 'Orde de comportamentos da pregunta';
 $string['questionbehavioursorderexplained'] = 'Introduza unha lista separada por comas de comportamentos na orde que os queira ver no menú despregábel';
 $string['questioncategory'] = 'Categoría de pregunta';
-$string['questioncatsfor'] = 'Categorías de pregunta para \'{$a}';
+$string['questioncatsfor'] = 'Categorías de pregunta para «{$a}»';
 $string['questiondoesnotexist'] = 'Esta pregunta non existe';
 $string['questionidmismatch'] = 'Os id da pregunta non coinciden';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionnamecopy'] = '{$a} (copia)';
 $string['questionno'] = 'Pregunta {$a}';
-$string['questionpreviewdefaults'] = 'Configuracións predeterminadas da vista previu da pregunta';
+$string['questionpreviewdefaults'] = 'Configuracións predeterminadas da vista previa da pregunta';
 $string['questionpreviewdefaults_desc'] = 'Estas configuracións predeterminadas úsanse cando un usuario fai unha vista previa por primeira vez dunha pregunta no banco de preguntas. Unha vez que un usuario teña feito a vista previa dunha pregunta, gárdanse a súas preferencias persoais como preferencias do usuario.';
 $string['questions'] = 'Preguntas';
 $string['questionsaveerror'] = 'Producíronse erros durante o proceso de gardar a pregunta - ({$a})';
 $string['questionsinuse'] = '(* As preguntas marcadas cun asterisco xa se usan nalgunhas probas. Estas preguntas non se eliminarán destas probas, soamente da lista da categoría.)';
-$string['questionsmovedto'] = 'As preguntas que aínda se usan que se moveron a "{$a}" na categoría pai do curso.';
+$string['questionsmovedto'] = 'As preguntas que aínda se usan que se moveron a «{$a}» na categoría pai do curso.';
 $string['questionsrescuedfrom'] = 'As preguntas gardadas desde o contexto {$a}.';
 $string['questionsrescuedfrominfo'] = 'Estas preguntas (algunha das cales poden estar agochadas) gardáronse cando se eliminou o contexto {$a} porque aínda se usan nalgunhas probas ou outras actividades.';
 $string['questiontext'] = 'Texto da pregunta';
@@ -378,7 +401,7 @@ $string['saved'] = 'Gardado: {$a}';
 $string['saveflags'] = 'Gardar o estado dos marcadores';
 $string['selectacategory'] = 'Seleccionar unha categoría:';
 $string['selectaqtypefordescription'] = 'Seleccionar un tipo de pregunta para ver a súa descrición.';
-$string['selectcategoryabove'] = 'Seleccionar unha categoria superior';
+$string['selectcategoryabove'] = 'Seleccionar unha categoría enriba';
 $string['selectquestionsforbulk'] = 'Seleccionar preguntas para accións globais';
 $string['settingsformultipletries'] = 'Intentos múltiples';
 $string['shareincontext'] = 'Compartir no contexto de {$a}';
@@ -394,6 +417,7 @@ $string['specificfeedback_help'] = 'Comentario que depende de que contestación 
 $string['started'] = 'Arrancada';
 $string['state'] = 'Estado';
 $string['step'] = 'Paso';
+$string['steps'] = 'Pasos';
 $string['stoponerror'] = 'Alto no erro';
 $string['stoponerror_help'] = 'Este axuste determina que o proceso de importación se deterá ao detectarse un erro, de modo que ningunha pregunta se importará ou que calquera pregunta que conteña erros se ignorará mentres que calquera pregunta correcta se importará.';
 $string['submissionoutofsequence'] = 'Acceso contrario á secuencia. Por favor, non prema no botón de volver atrás ao traballar nas preguntas da proba.';
@@ -429,7 +453,7 @@ $string['upgradeproblemcategoryloop'] = 'Detectouse un problema ao actualizar as
 $string['upgradeproblemcouldnotupdatecategory'] = 'Non foi posíbel actualizar a categoría da pregunta {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Detectouse un problema ao anovar as categorías de preguntas. A categoría {$a->id} refírese ao pai {$a->parent}, que non existe. Cambiouse o pai para arranxar este problema.';
 $string['whethercorrect'] = 'Cando correcto';
-$string['whethercorrect_help'] = 'Isto cobre ambas descricións, tanto a textual \'Correcta\', \'Parcialmente correcta\' ou \'Incorrecta\', e calquera realce de cor que transmita a mesma información.';
+$string['whethercorrect_help'] = 'Isto cobre ambas descricións, tanto a textual «Correcta», «Parcialmente correcta» ou «Incorrecta», e calquera realce de cor que transmita a mesma información.';
 $string['whichtries'] = 'Que intentos';
 $string['withselected'] = 'Co seleccionado';
 $string['wrongprefix'] = 'nameprefix {$a} erradamente formatado';

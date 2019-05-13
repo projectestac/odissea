@@ -29,3 +29,4 @@ $string['eventgradereportviewed'] = 'Cijferoverzicht bekeken';
 $string['gradesoverview'] = 'Cijferoverzicht';
 $string['overview:view'] = 'Overzichtsrapport bekijken';
 $string['pluginname'] = 'Overzichtsrapport';
+$string['privacy:metadata'] = 'Het rapport cijfer overzicht geeft alleen gegevens weer die op andere locaties zijn opgeslagen.';

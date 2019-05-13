@@ -45,6 +45,7 @@ $string['gradefor'] = 'Qualificació per {$a}';
 $string['gradeitem'] = 'Qualifica l\'element: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Aquest element de qualificació no es pot rectificar.';
 $string['gradeuser'] = 'Qualifica l\'usuari: {$a}';
+$string['itemsperpage'] = 'Elements per pàgina';
 $string['noscreens'] = 'No s\'ha pogut trobar una pantalla de vista única adient.';
 $string['notvalid'] = 'No és una pantalla de Vista única vàlida: {$a}';
 $string['override'] = 'Excepció';

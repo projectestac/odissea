@@ -29,3 +29,4 @@ $string['calendar_upcoming:addinstance'] = 'Lägg till en ny Kommande evenemang 
 $string['calendar_upcoming:myaddinstance'] = 'Lägg till en ny Kommande händelser block till mitt Moodle';
 $string['gotocalendar'] = 'Gå till Kalender';
 $string['pluginname'] = 'Kommande händelser';
+$string['privacy:metadata'] = 'Kommande händelser-blocket visar enbart befintlig kalenderdata.';

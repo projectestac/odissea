@@ -31,6 +31,7 @@ $string['hasmissingfiles'] = 'AVÍS. Els fitxers següents que són referenciats
 $string['manageareafiles'] = 'Gestiona els fitxers incrustats en l\'editor de text';
 $string['managefiles:desc'] = 'Gestionar fitxers incrustats';
 $string['pluginname'] = 'Gestiona els fitxers incrustats';
+$string['privacy:metadata'] = 'El connector de Gestió d\'incrustació de fitxers TinyMCE no emmagatzema cap dada personal.';
 $string['refreshfiles'] = 'Refresca la llista de fitxers perduts o no utilitzats.';
 $string['unusedfilesdesc'] = 'Els fitxers incrustats següents no s\'estan utilitzant en l\'àrea de text:';
 $string['unusedfilesheader'] = 'Fitxers no utilitzats';

@@ -32,3 +32,4 @@ $string['enableplagiarism'] = 'Abilita plugin prevenzione plagio';
 $string['manageplagiarism'] = 'Gestione plugin prevenzione plagio';
 $string['nopluginsinstalled'] = 'Non è installato nessun plugin di prevenzione plagio';
 $string['plagiarism'] = 'Prevenzione plagio';
+$string['privacy:metadata:plagiarism'] = 'Il sottosistema di prevenzione plagio funge da canale, passando le richieste dai plugin ai vari plugin prevenzione plagio.';

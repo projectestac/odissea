@@ -31,6 +31,7 @@ $string['ifemailleftempty'] = 'Laat leeg om notificaties te sturen naar {$a}';
 $string['pluginname'] = 'E-mail';
 $string['privacy:metadata:attachment'] = 'En bestand op het bestandssysteem.';
 $string['privacy:metadata:attachname'] = 'De naam van de bijlage (extensie geeft MIME aan).';
+$string['privacy:metadata:externalpurpose'] = 'Deze informatie is naar een externe SMTP-server gestuurd om uiteindelijk als een e-mail bij de ontvanger terecht te komen.';
 $string['privacy:metadata:fullmessage'] = 'Het volledige bericht in een gegeven opmaak.';
 $string['privacy:metadata:fullmessagehtml'] = 'De volledige versie van het bericht.';
 $string['privacy:metadata:recipient'] = 'De ontvanger van het bericht.';

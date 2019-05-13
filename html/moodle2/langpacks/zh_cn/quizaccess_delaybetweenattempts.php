@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '允许多次答题的测验的时间间隔规则';
+$string['privacy:metadata'] = '答题间隔访问规则不会保存任何个人信息。';
 $string['youcannotwait'] = '在您被允许开始新的尝试之前，该问题已经关闭。';
 $string['youmustwait'] = '在重新尝试该测验之前您必须等待。您可以在{$a}之后开始新的尝试。';

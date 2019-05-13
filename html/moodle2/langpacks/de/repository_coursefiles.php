@@ -31,5 +31,5 @@ $string['emptyfilelist'] = 'Es liegen keine Dateien vor';
 $string['notitle'] = 'Kein Titel';
 $string['pluginname'] = 'Alte Kursdateien';
 $string['pluginname_help'] = 'Alte Kursdateien';
-$string['privacy:metadata'] = 'Das Kursdatei-Repository speichert und überträgt keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Kursdatei-Repository speichert und überträgt keine personenbezogenen Daten';
 $string['remember'] = 'Eingeloggt bleiben';

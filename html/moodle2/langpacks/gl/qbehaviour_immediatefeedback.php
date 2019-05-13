@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Sen completar';
 $string['pluginname'] = 'Comentario inmediato';
+$string['privacy:metadata'] = 'O engadido de comentario inmediato non almacena ningún dato persoal.';

@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Glosategirako esteka automatikoa';
+$string['glossarycategory'] = '{$a->glosategia}: Kategoria {$a->kategoria}';
+$string['glossaryconcept'] = '{$a->glosategia}: {$a->terminoa}';
 $string['privacy:metadata'] = 'Glosategirako esteka automatikoa pluginak ez du datu pertsonalik biltzen.';

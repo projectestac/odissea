@@ -25,10 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['conditiontitle'] = 'Πεδίο προφίλ χρήστη';
+$string['description'] = 'Έλεγχος πρόσβασης με βάση τα πεδία μέσα στο προφίλ του μαθητή.';
+$string['error_selectfield'] = 'Πρέπει να επιλέξετε ένα πεδίο προφίλ.';
+$string['error_setvalue'] = 'Πρέπει να πληκτρολογήσετε μια τιμή.';
+$string['label_operator'] = 'Μέθοδος σύγκρισης';
+$string['label_value'] = 'Τιμή για σύγκριση με';
+$string['missing'] = '(Λείπει προσαρμοσμένο πεδίο: {$a})';
 $string['op_contains'] = 'περιέχει';
-$string['op_doesnotcontain'] = 'δεν περιέχει';
+$string['op_doesnotcontain'] = 'δεν  περιέχει';
 $string['op_endswith'] = 'τελειώνει με';
-$string['op_isempty'] = 'είναι άδειο';
+$string['op_isempty'] = 'είναι κενό';
 $string['op_isequalto'] = 'είναι ίσο με';
 $string['op_isnotempty'] = 'δεν είναι κενό';
 $string['op_startswith'] = 'ξεκινάει με';
+$string['pluginname'] = 'Περιορισμός με βάση το προφίλ';
+$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση το προφίλ» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['requires_contains'] = 'Το <strong>{$a->field}</strong> σας περιέχει <strong>{$a->value}</strong>';
+$string['requires_doesnotcontain'] = 'Το <strong>{$a->field}</strong> σας δεν περιέχει <strong>{$a->value}</strong>';
+$string['requires_endswith'] = 'Το <strong>{$a->field}</strong> σας τελειώνει σε <strong>{$a->value}</strong>';
+$string['requires_isempty'] = 'Το <strong>{$a->field}</strong> σας είναι άδειο';
+$string['requires_isequalto'] = 'Το <strong>{$a->field}</strong> σας είναι <strong>{$a->value}</strong>';
+$string['requires_isnotempty'] = 'Το <strong>{$a->field}</strong> σας δεν είναι άδειο';
+$string['requires_notendswith'] = 'Το <strong>{$a->field}</strong> σας δεν τελειώνει σε <strong>{$a->value}</strong>';
+$string['requires_notisequalto'] = 'Το <strong>{$a->field}</strong> σας δεν είναι <strong>{$a->value}</strong>';
+$string['requires_notstartswith'] = 'Το <strong>{$a->field}</strong> σας δεν αρχίζει από <strong>{$a->value}</strong>';
+$string['requires_startswith'] = 'Το <strong>{$a->field}</strong> σας αρχίζει από <strong>{$a->value}</strong>';
+$string['title'] = 'Προφίλ χρήστη';

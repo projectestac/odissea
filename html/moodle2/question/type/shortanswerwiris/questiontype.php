@@ -26,7 +26,11 @@ class qtype_shortanswerwiris extends qtype_wq {
     public function __construct() {
         parent::__construct(new qtype_shortanswer());
     }
-
+    
+    public function extra_question_fields() {
+        return array('qtype_shortanswer_options', 'usecase');
+    }
+    
     public function create_editing_form($submiturl, $question, $category, $contexts, $formeditable) {
         global $CFG;
         require_once($CFG->dirroot . '/question/type/shortanswerwiris/edit_shortanswerwiris_form.php');
@@ -152,39 +156,38 @@ class qtype_shortanswerwiris extends qtype_wq {
 
                     // Editor and compound answer.
                     $wirisquestion .= '<localData>';
-                    $wrap->start();
                     if (!$iscompound) {
                         if (isset($wiriseditor['editor']) && $wiriseditor['editor'] == true) {
                             // @codingStandardsIgnoreStart
-                            $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . '">';
-                            $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_INLINE_EDITOR;
+                            $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_ANSWER_FIELD_TYPE . '">';
+                            $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_INLINE_EDITOR;
                             // @codingStandardsIgnoreEnd
                             $wirisquestion .= '</data>';
                         } else {
                             // @codingStandardsIgnoreStart
-                            $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . '">';
-                            $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT;
+                            $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_ANSWER_FIELD_TYPE . '">';
+                            $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_TEXT;
                             // @codingStandardsIgnoreEnd
                             $wirisquestion .= '</data>';
                         }
                     } else {
                         // For compound answer set as default Popup editor.
                         // @codingStandardsIgnoreStart
-                        $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . '">';
-                        $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_POPUP_EDITOR;
+                        $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_ANSWER_FIELD_TYPE . '">';
+                        $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_POPUP_EDITOR;
                         // @codingStandardsIgnoreEnd
                         $wirisquestion .= '</data>';
 
                         // @codingStandardsIgnoreStart
-                        $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE . '">';
-                        $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE;
+                        $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER_GRADE . '">';
+                        $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_DISTRIBUTE;
                         // @codingStandardsIgnoreEnd
                         $wirisquestion .= '</data>';
 
                         $distribution = $this->wrsqz_get_distribution($originaltext);
                         // @codingStandardsIgnoreStart
                         $wirisquestion .= '<data name="' .
-                                com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION . '">';
+                                com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_DISTRIBUTION . '">';
                         // @codingStandardsIgnoreEnd
                         if ($distribution != '') {
                             $wirisquestion .= $distribution;
@@ -193,18 +196,17 @@ class qtype_shortanswerwiris extends qtype_wq {
                     }
                     if (isset($wiriseditor['multipleAnswers']) && $wiriseditor['multipleAnswers'] == true) {
                         // @codingStandardsIgnoreStart
-                        $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER . '">';
-                        $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE;
+                        $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER . '">';
+                        $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_TRUE;
                         // @codingStandardsIgnoreEnd
                         $wirisquestion .= '</data>';
                     } else {
                         // @codingStandardsIgnoreStart
-                        $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER . '">';
-                        $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_FALSE;
+                        $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER . '">';
+                        $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_FALSE;
                         // @codingStandardsIgnoreEnd
                         $wirisquestion .= '</data>';
                     }
-                    $wrap->stop();
                     if (isset($data['#']['wirisoptions']) && count($data['#']['wirisoptions'][0]['#']) > 0) {
                         $wirisquestion .= $this->wrsqz_get_cas_for_computations($data);
                         $wirisquestion .= $this->wrsqz_hidden_initial_cas_value($data);
@@ -217,13 +219,11 @@ class qtype_shortanswerwiris extends qtype_wq {
                         $wirisquestion .= $this->wrsqz_get_cas_for_computations($data);
                         $wirisquestion .= $this->wrsqz_hidden_initial_cas_value($data);
                     }
-                    $wrap->start();
                     // @codingStandardsIgnoreStart
-                    $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD . '">';
-                    $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT;
+                    $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_ANSWER_FIELD_TYPE . '">';
+                    $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_TEXT;
                     // @codingStandardsIgnoreEnd
                     $wirisquestion .= '</data>';
-                    $wrap->stop();
                     $wirisquestion .= '</localData>';
                 }
             }

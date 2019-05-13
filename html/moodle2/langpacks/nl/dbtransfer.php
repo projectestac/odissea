@@ -36,6 +36,6 @@ $string['done'] = 'Klaar';
 $string['exportschemaexception'] = 'De huidige databankstructuur komt niet overeen met alle install.xml-bestanden.<br />{$a}';
 $string['importschemaexception'] = 'De huidige databankstructuur komt niet overeen met alle install.xml-bestanden.<br />{$a}';
 $string['importversionmismatchexception'] = 'Huidige versie {$a->currentver} komt niet overeen met de geëxporteerde versie {$a->schemaver}.';
-$string['malformedxmlexception'] = 'Slecht gevormde XML gevonden. Kan niet verdergaan.';
+$string['malformedxmlexception'] = 'Slecht gevormde XML gevonden. Kan niet verder gaan.';
 $string['tablex'] = 'Tabel {$a}';
 $string['unknowntableexception'] = 'Onbekende tabel {$a} gevonden in exportbestand.';

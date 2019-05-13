@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_pamdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί το PAM για πρόσβαση στα native ονόματα των χρηστών του server. Πρέπει να εγκαταστήσετε το <a href="http://www.math.ohio-state.edu/~ccunning/pam_auth/" target="_blank">PHP4 PAM Authentication</a> για να χρησιμοποιήσετε αυτό το module.';
-$string['auth_passwordisexpired'] = 'Το συνθηματικό σας έχει λήξει. Θέλετε να αλλάξετε το συνθηματικό σας τώρα;';
-$string['auth_passwordwillexpire'] = 'Το συνθηματικό σας θα λήξει σε {$a} ημέρες. Θέλετε να αλλάξετε το συνθηματικό σας τώρα;';
+$string['auth_passwordisexpired'] = 'Ο κωδικός πρόσβασής σας έχει λήξει. Θέλετε να αλλάξετε τώρα τον κωδικό πρόσβασής σας;';
+$string['auth_passwordwillexpire'] = 'Ο κωδικός πρόσβασής σας θα λήξει στις {$a} ημέρες. Θέλετε να αλλάξετε τώρα τον κωδικό πρόσβασής σας;';
 $string['pluginname'] = 'PAM (Pluggable Authentication Modules)';

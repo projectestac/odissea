@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = '';
 $string['objectivex'] = 'Doel {$a}';
 $string['pluginname'] = 'Doelenrapport';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'Of de objectieve score in het SCORM-rapport getoond moet worden';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Aantal te tonen gebruikers in SCORM-rapporten';
 $string['score'] = 'score';
 $string['status'] = 'status';

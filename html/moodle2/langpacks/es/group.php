@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addedby'] = 'Agregado por {$a}';
 $string['addgroup'] = 'Agregar usuarios al grupo';
-$string['addgroupstogrouping'] = 'Agregar grupos al agrupamiento';
+$string['addgroupstogrouping'] = 'Agregar grupo al agrupamiento';
 $string['addgroupstogroupings'] = 'Agregar/quitar grupos';
 $string['adduserstogroup'] = 'Agregar/quitar usuarios';
 $string['allocateby'] = 'Asignar miembros';
@@ -53,7 +53,7 @@ $string['deleteallgroupings'] = 'Eliminar todos los agrupamientos';
 $string['deleteallgroups'] = 'Eliminar todos los grupos';
 $string['deletegroupconfirm'] = '¿Está seguro de que desea eliminar el grupo \'{$a}\'?';
 $string['deletegrouping'] = 'Eliminar agrupamiento';
-$string['deletegroupingconfirm'] = '¿Está seguro de que desea eliminar el conjunto \'{$a}\'? (Los grupos no se eliminarán).';
+$string['deletegroupingconfirm'] = '¿Está seguro de que desea eliminar el agrupamiento \'{$a}\'? (Los grupos dentro del agrupamiento no se eliminarán).';
 $string['deletegroupsconfirm'] = '¿Está seguro de que quiere eliminar a los grupos siguientes?';
 $string['deleteselectedgroup'] = 'Eliminar grupo seleccionado';
 $string['editgroupingsettings'] = 'Editar ajustes de agrupamiento';
@@ -71,10 +71,11 @@ $string['errorselectsome'] = 'Por favor, seleccione uno o más grupos antes de e
 $string['evenallocation'] = 'Nota: Para conservar constante la asignación de usuarios, el número real de miembros por grupo difiere del número que usted ha especificado.';
 $string['eventgroupcreated'] = 'Grupo creado';
 $string['eventgroupdeleted'] = 'Grupo eliminado';
-$string['eventgroupingcreated'] = 'Grupo creado';
-$string['eventgroupingdeleted'] = 'Grupo eliminado';
-$string['eventgroupinggroupassigned'] = 'Grupo asignado para agrupar';
-$string['eventgroupingupdated'] = 'Grupo actualizado';
+$string['eventgroupingcreated'] = 'Agrupamiento creado';
+$string['eventgroupingdeleted'] = 'Agrupamiento eliminado';
+$string['eventgroupinggroupassigned'] = 'Grupo asignado al agrupamiento';
+$string['eventgroupinggroupunassigned'] = 'Grupo desasignado del agrupamiento';
+$string['eventgroupingupdated'] = 'Agrupamiento actualizado';
 $string['eventgroupmemberadded'] = 'Miembro del grupo añadido';
 $string['eventgroupmemberremoved'] = 'Miembro del grupo eliminado';
 $string['eventgroupupdated'] = 'Grupo actualizado';
@@ -83,7 +84,7 @@ $string['filtergroups'] = 'Filtrar grupos por:';
 $string['group'] = 'Grupo';
 $string['groupaddedsuccesfully'] = 'Grupo {$a} agregado con éxito';
 $string['groupaddedtogroupingsuccesfully'] = 'El grupo {$a->groupname} se añadió al agrupamiento {$a->groupingname} con éxito';
-$string['groupby'] = 'Basado en creación automática';
+$string['groupby'] = 'Creación automática basada en';
 $string['groupdescription'] = 'Descripción del grupo';
 $string['groupinfo'] = 'Información sobre el grupo seleccionado';
 $string['groupinfomembers'] = 'Información sobre los miembros seleccionados';
@@ -156,7 +157,7 @@ $string['namingscheme'] = 'Esquema de denominación';
 $string['namingscheme_help'] = 'El símbolo arroba (@) puede usarse para crear grupos con nombres que contienen letras. Por ejemplo, Grupo @ puede generar grupos denominados Grupo A, Grupo B, Grupo C, etc.
 
 El símbolo almohadilla (#) puede usarse para crear grupos con nombres que contienen números. Por ejemplo, Grupo # puede generar grupos denominados Grupo 1, Grupo 2, Grupo 3, etc.';
-$string['newgrouping'] = 'Nueva agrupación';
+$string['newgrouping'] = 'Nuevo agrupamiento';
 $string['newpicture'] = 'Nueva imagen';
 $string['newpicture_help'] = '<P>Usted puede subir una imagen desde su ordenador al servidor, y esta imagen se
 utilizará en varios lugares para identificarlo.
@@ -189,7 +190,7 @@ es mayor a 100 x 100 píxeles se cortará.
 actualice la página (oprimiendo F5 o el botón actualizar).';
 $string['noallocation'] = 'No asignación';
 $string['nogroup'] = 'Sin grupo';
-$string['nogrouping'] = 'No agrupar';
+$string['nogrouping'] = 'Sin agrupamientos';
 $string['nogroups'] = 'Aún no se han formado grupos en este curso';
 $string['nogroupsassigned'] = 'No hay grupos asignados';
 $string['nopermissionforcreation'] = 'No se puede crear el grupo "{$a}": usted no dispone de los permisos requeridos';
@@ -211,14 +212,14 @@ $string['removefromgroup'] = 'Eliminar al usuario del grupo {$a}
 ';
 $string['removefromgroupconfirm'] = '¿Realmente desea eliminar al usuario "{$a->user}" del grupo "{$a->group}"?
 ';
-$string['removegroupfromselectedgrouping'] = 'Eliminar grupo del agrupamiento seleccionado';
+$string['removegroupfromselectedgrouping'] = 'Eliminar grupo del agrupamiento';
 $string['removegroupingsmembers'] = 'Quitar todos los grupos de los agrupamientos';
 $string['removegroupsmembers'] = 'Quitar todos los miembros de los grupos';
 $string['removeselectedusers'] = 'Eliminar usuarios seleccionados';
 $string['selectfromgroup'] = 'Seleccionar miembros del grupo';
 $string['selectfromgrouping'] = 'Seleccionar miembros del agrupamiento';
 $string['selectfromrole'] = 'Seleccionar los miembros con rol';
-$string['showgroupsingrouping'] = 'Mostrar grupos del conjunto';
+$string['showgroupsingrouping'] = 'Mostrar grupos en el agrupamiento';
 $string['showmembersforgroup'] = 'Mostrar miembros del grupo';
 $string['toomanygroups'] = 'Usuarios insuficientes para formar este número de grupos (sólo hay {$a} usuarios en el rol seleccionado).';
 $string['usercount'] = 'Número de usuarios';

@@ -29,4 +29,4 @@ $string['category:config'] = 'Kursbereichseinschreibung konfigurieren';
 $string['category:synchronised'] = 'Rollen werden für Kurseinschreibungen synchronisiert';
 $string['pluginname'] = 'Kursbereichseinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Kursbereichseinschreibung\' synchronisiert Rollenzuweisungen auf alle Kurse eines Kursbereichs, u.z. wenn für die jeweilige Rolle enrol/category:synchronised erlaubt ist.';
-$string['privacy:metadata'] = '';
+$string['privacy:metadata'] = 'Die Einschreibemethode \'Kursbereichseinschreibung\' speichert keine personenbezogenen Daten.';

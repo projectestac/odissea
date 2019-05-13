@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Després de desar els paràmetres, potser voldreu';
-$string['allowunenrol'] = 'Permet que les dades IMS <strong>cancel·lin les inscripcions</strong> d\'estudiantat i/o professorat';
+$string['allowunenrol'] = 'Permet que les dades IMS <strong>cancel·lin les inscripcions</strong> d\'estudiants i/o professors';
 $string['allowunenrol_desc'] = 'Si s\'habilita, la inscripció dels cursos s\'esborrarà quan s\'especifiqui a les dades del connector Enterprise.';
 $string['basicsettings'] = 'Paràmetres bàsics';
 $string['categoryidnumber'] = 'Permet codi (idnumber) de categoria';
@@ -92,6 +92,6 @@ $string['updatecourses_desc'] = 'Si s\'habilita, el connector IMS Enterprise pot
 $string['updateusers'] = 'Actualitza els comptes dels usuaris quan s\'especifiqui a les dades IMS';
 $string['updateusers_desc'] = 'Si s\'habilita, les dades d\'inscripció de l\'IMS Enterprise poden especificar canvis als comptes d\'usuari (si la bandera «recstatus» té el valor 2, la qual cosa significa una actualització).';
 $string['usecapitafix'] = 'Activeu aquest quadre si esteu utilitzant "Capita" (el seu format XML és lleugerament erroni)';
-$string['usecapitafix_desc'] = 'El sistema de dades de l\'estudiant produïdes per Capita ha trobat un error lleu en aquesta sortida XML. Si esteu utilitzant Capita hauríeu de habilitar aquest paràmetre - en cas contrari deixeu-ho deshabilitat.';
+$string['usecapitafix_desc'] = 'El sistema de dades de l\'estudiant produïdes per Capita ha trobat un error lleu en aquesta sortida XML. Si esteu utilitzant Capita hauríeu d\'habilitar aquest paràmetre; en cas contrari, deixeu-lo inhabilitat.';
 $string['usersettings'] = 'Opcions de les dades d\'usuari';
 $string['zeroisnotruncation'] = '0 indica no truncar';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Цвет шрифта';
+$string['privacy:metadata'] = 'Плагин atto_fontcolor не хранит никаких персональных данных.';

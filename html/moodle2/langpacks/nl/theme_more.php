@@ -65,6 +65,7 @@ $string['logodesc'] = 'Upload hier het logo dat je wil toevoegen aan de header v
 div.logo {height: 100px;} -> pas dit aan aan de hoogte van je logo.
 Als hier geen logo wordt toegevoegd, dan wordt het logo in Uiterlijk > Logo\'s gebruikt..';
 $string['pluginname'] = 'Clean';
+$string['privacy:metadata'] = 'Het thema More bewaart geen persoonlijke gegevens van gebruikers.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
 $string['secondarybackground'] = 'Secundaire achtergrondkleur';

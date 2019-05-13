@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Aukera anitzeko laukitxoa';
 $string['pluginname'] = 'Aukera anitzeko laukitxoa';
-$string['privacy:metadata'] = 'Aukera anitzeko laukitxoa eremu-sagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['privacy:metadata'] = 'Aukera anitzeko laukitxoa eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regola di accesso quiz Sicurezza JavaScript';
 $string['popupwithjavascriptsupport'] = 'Pop-up a schermo intero con sicurezza JavaScript';
+$string['privacy:metadata'] = 'Il plugin \'Regola di accesso quiz Sicurezza JavaScript\' non memorizza dati personali.';

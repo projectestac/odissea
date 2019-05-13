@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = 'Aldaketak ezarpenetan';
-$string['oldvalue'] = 'Jatorrizko balorea';
+$string['oldvalue'] = 'Jatorrizko balioa';
 $string['plugin'] = 'Plugina';
 $string['pluginname'] = 'Konfigurazio-aldaketak';
 $string['privacy:metadata'] = 'Konfigurazio-aldaketak pluginak ez du datu pertsonalik biltzen.';
 $string['setting'] = 'Ezarpenak';
 $string['timemodified'] = 'Data';
-$string['value'] = 'Balore berria';
+$string['value'] = 'Balio berria';

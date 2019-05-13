@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fallbackaudio'] = 'Ligação Audio';
-$string['fallbackvideo'] = 'Ligação Video';
+$string['fallbackaudio'] = 'Ligação Áudio';
+$string['fallbackvideo'] = 'Ligação Vídeo';
 $string['filtername'] = 'Módulos multimédia';
-$string['linktomedia'] = 'O filtro de módulos multimédia pesquisa uma hiperligação no texto que aponta para um recurso multimédia e substitui a hiperligação por um código apropriado de um leitor de multimédia que consiga reproduzir o recurso. Também substitui <video> e <audio>; palavras-chave com leitores de vídeo e áudio selecionados.
+$string['linktomedia'] = 'O filtro de módulos multimédia pesquisa uma hiperligação no texto que aponta para um recurso multimédia e substitui a hiperligação por um código apropriado de um leitor de multimédia que consiga reproduzir o recurso. Também substitui <vídeo> e <áudio>; palavras-chave com leitores de vídeo e áudio selecionados.
 
-<a href="{$a}">Gerir leitores de media</a>';
+<a href="{$a}">Gerir leitores de multimédia</a>';
 $string['privacy:metadata'] = 'O módulo Módulos multimédia não armazena dados pessoais.';

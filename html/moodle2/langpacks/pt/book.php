@@ -34,8 +34,8 @@ $string['chapterandsubchaptersdeleted'] = 'O capítulo "{$a->title}" e os seus s
 $string['chapterdeleted'] = 'O capítulo "{$a->title}" foram eliminados';
 $string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título do capítulo';
-$string['confchapterdelete'] = 'Tem a certeza que pretende apagar este capítulo?';
-$string['confchapterdeleteall'] = 'Tem a certeza que pretende apagar este capítulo e seus subcapítulos?';
+$string['confchapterdelete'] = 'Tem a certeza de que pretende apagar este capítulo?';
+$string['confchapterdeleteall'] = 'Tem a certeza de que pretende apagar este capítulo e seus subcapítulos?';
 $string['content'] = 'Conteúdo';
 $string['customtitles'] = 'Títulos personalizados';
 $string['customtitles_help'] = 'Normalmente o título do capítulo é mostrado no índice e como cabeçalho por cima do conteúdo.
@@ -67,7 +67,7 @@ $string['modulenameplural'] = 'Livros';
 $string['movechapterdown'] = 'Mover capítulo "{$a}" para baixo';
 $string['movechapterup'] = 'Mover capítulo "{$a}" para cima';
 $string['navexit'] = 'Sair do livro';
-$string['navimages'] = 'Imagens';
+$string['navimages'] = 'Botões';
 $string['navnext'] = 'Seguinte';
 $string['navnexttitle'] = 'Próximo: {$a}';
 $string['navoptions'] = 'Opções disponíveis para as hiperligações de navegação';
@@ -75,17 +75,17 @@ $string['navoptions_desc'] = 'Opções para exibir a navegação nas páginas do
 $string['navprev'] = 'Anterior';
 $string['navprevtitle'] = 'Anterior: {$a}';
 $string['navstyle'] = 'Estilo da navegação';
-$string['navstyle_help'] = '* Apenas TOC - Só é mostrado o índice do livro à esquerda
-* Imagens - Ícones  que são utilizados para navegar (►▲◄▼)
-* Texto - Títulos dos capítulos são utilizados para navegar';
-$string['navtext'] = 'Texto';
-$string['navtoc'] = 'Apenas TOC';
+$string['navstyle_help'] = '* Apenas Índice - Só é mostrado o índice do livro à esquerda
+* Botões - Ícones  que são utilizados para navegar (►▲◄▼)
+* Títulos - Títulos dos capítulos são utilizados para navegar';
+$string['navtext'] = 'Títulos';
+$string['navtoc'] = 'Apenas Índice';
 $string['nocontent'] = 'Ainda não foi adicionado conteúdo a este livro.';
 $string['numbering'] = 'Formatação dos capítulos';
 $string['numbering0'] = 'Nenhum';
-$string['numbering1'] = 'Números';
+$string['numbering1'] = 'Numeração';
 $string['numbering2'] = 'Marcadores';
-$string['numbering3'] = 'Avançado';
+$string['numbering3'] = 'Avanços';
 $string['numbering_help'] = '* Sem numeração - Os títulos dos capítulos e subcapítulos não serão numerados
 * Números - Os capítulos e subcapítulos são numerados (1, 1.1, 1.2, 2, ...)
 * Marcadores - Os subcapítulos são exibidos com marcadores (○) e com avanço no índice

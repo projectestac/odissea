@@ -62,6 +62,7 @@ $string['maketestcourse'] = 'Crea corso di test';
 $string['maketestplan'] = 'Crea test plan JMeter';
 $string['notenoughusers'] = 'Il corso selezionato non ha un numero sufficiente di utenti';
 $string['pluginname'] = 'Generatore di dati per sviluppo';
+$string['privacy:metadata'] = 'Il plugin "Generatore di dati per sviluppo" non memorizza dati personali.';
 $string['progress_checkaccounts'] = 'Verifica account utente ({$a})';
 $string['progress_coursecompleted'] = 'Corso completato ({$a}s)';
 $string['progress_createaccounts'] = 'Creazione account utente ({$a->from} - {$a->to})';

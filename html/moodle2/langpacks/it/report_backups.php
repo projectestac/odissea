@@ -30,5 +30,6 @@ $string['logsofbackupexecutedon'] = 'Log del backup effettuato il {$a}';
 $string['nobackupsfound'] = 'Non sono stati trovati backup.';
 $string['nologsfound'] = 'Non sono stati trovati log di questo backup.';
 $string['pluginname'] = 'Report dei backup';
+$string['privacy:metadata'] = 'Il plugin \'Report dei backup\' non memorizza dati personali.';
 $string['strftimetime'] = '%H:%M:%S';
 $string['viewlogs'] = 'Visualizza log';

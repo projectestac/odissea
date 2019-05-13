@@ -36,6 +36,7 @@ $string['notimplemented'] = 'Siamo spiacenti, questa funzionalità non è implem
 $string['notsupported'] = 'Questo script è sperimentale. Le modifiche che può operare non possono essere annullate, prima di lanciarlo, eseguire sempre un backup completo.';
 $string['pageheader'] = 'Ricerca e sostituzione nel database';
 $string['pluginname'] = 'Ricerca e sostituzione nel DB';
+$string['privacy:metadata'] = 'Il plugin "Ricerca e sostituzione nel DB" non memorizza dati personali.';
 $string['replacewith'] = 'Sostituisci con questa stringa';
 $string['replacewithhelp'] = 'in genere il precedente URL del server';
 $string['searchwholedb'] = 'Cerca in tutto il database la stringa';

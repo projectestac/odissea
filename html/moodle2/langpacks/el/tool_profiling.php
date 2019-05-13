@@ -25,7 +25,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['calls'] = 'Κλήσεις λειτουργιών';
+$string['cannotfindanyrunforrunid'] = 'Λυπούμαστε! Αδυναμία εύρεσης της εκτέλεσης δημιουργίας προφίλ «{$a}»';
+$string['cannotfindanyrunforurl'] = 'Λυπούμαστε! Αδυναμία εύρεσης οποιασδήποτε εκτέλεσης δημιουργίας προφίλ για τη διεύθυνση URL «{$a}»';
 $string['comment'] = 'Σχόλιο';
+$string['cputime'] = 'Χρόνος επεξεργαστή (CPU)';
+$string['differencesbetween2runsof'] = 'Διαφορές μεταξύ δύο εκτελέσεων {$a}';
+$string['executiontime'] = 'Χρόνος εκτέλεσης';
 $string['export'] = 'Εξαγωγή';
-$string['lastrunof'] = 'Σύνοψη τελευταίας εκτέλεσης {$a}';
-$string['summaryof'] = 'Σύνοψη {$a}';
+$string['exportproblem'] = 'Κάποιο πρόβλημα παρουσιάστηκε κατά την εξαγωγή του profile run "{$a->runid}" που αντιστοιχεί στο αίτημα "{$a->listurl}".';
+$string['exportthis'] = 'Εξαγωγή αυτής της εκτέλεσης δημιουργίας προφίλ';
+$string['import'] = 'Εισαγωγή';
+$string['importok'] = 'Η εισαγωγή του αρχείου "{$a}" έγινε με επιτυχία.';
+$string['importprefix'] = 'Πρόθεμα εισαγωγής';
+$string['importproblem'] = 'Κάποιο πρόβλημα παρουσιάστηκε κατά την εισαγωγή του αρχείου "{$a}".';
+$string['lastrunof'] = 'Περίληψη τελευταίας εκτέλεσης {$a}';
+$string['markreferencerun'] = 'Σημείωση ως «Εκτέλεση αναφοράς»/σχολιασμός';
+$string['memory'] = 'Μνήμη που χρησιμοποιήθηκε';
+$string['pluginname'] = 'Εκτελέσεις δημιουργίας προφίλ';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εκτελέσεις για δημιουργία προφίλ» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['profilingfocusscript'] = 'Εστίαση στις εκτελέσεις δημιουργίας προφίλ για το σενάριο: {$a}';
+$string['profilingruns'] = 'Εκτελέσεις δημιουργίας προφίλ';
+$string['profilingrunsfor'] = 'Εκτελέσεις δημιουργίας προφίλ για {$a}';
+$string['referencerun'] = '«Εκτέλεση αναφοράς»/σχολιασμός';
+$string['runid'] = 'Αναγνωριστικό εκτέλεσης';
+$string['summaryof'] = 'Περίληψη {$a}';
+$string['viewdetails'] = 'Δείτε λεπτομέρειες δημιουργίας προφίλ';
+$string['viewdiff'] = 'Προβολή διαφορών στις δημιουργίες προφίλ με:';
+$string['viewdiffdetails'] = 'Προβολή λεπτομερειών διαφορών στις δημιουργίες προφίλ';

@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dbcannotconnect'] = '外部データベースに接続できません。';
+$string['auth_dbcannotreadtable'] = '外部テーブルを読むことができません。';
 $string['auth_dbcantconnect'] = '指定された認証データベースに接続できませんでした ...';
 $string['auth_dbchangepasswordurl_key'] = 'パスワード変更URL';
+$string['auth_dbcolumnlist'] = '外部テーブルには次のカラムを含みます:<br />{$a}';
 $string['auth_dbdebugauthdb'] = 'ADOdbデバッグ';
 $string['auth_dbdebugauthdbhelp'] = '外部データベースへのADOdb接続のデバッグ - ログイン時に空白ページが表示される場合に使用してください。実運用サイトには適していません。';
 $string['auth_dbdeleteuser'] = '削除済みユーザ {$a->name} id {$a->id}';
@@ -46,6 +49,8 @@ $string['auth_dbinsertuserduplicate'] = 'ユーザ {$a->username} の追加中�
 $string['auth_dbinsertusererror'] = 'ユーザ登録エラー {$a}';
 $string['auth_dbname'] = 'データベース名です。ODBC DSNを使用している場合、空白のままにしてください。あなたのPDO DSNにすでにデータベース名が含まれている場合、空白のままにしてください。';
 $string['auth_dbname_key'] = 'データベース名';
+$string['auth_dbnoexttable'] = '外部テーブルが指定されていません。';
+$string['auth_dbnouserfield'] = '外部ユーザフィールドが指定されていません。';
 $string['auth_dbpass'] = '上記ユーザ名に合致するパスワード';
 $string['auth_dbpass_key'] = 'パスワード';
 $string['auth_dbpasstype'] = '<p>パスワードフィールドで使用するフォーマットを指定してください。</p>
@@ -62,8 +67,9 @@ $string['auth_dbsybasequoting'] = 'Sybaseクオートを使用する';
 $string['auth_dbsybasequotinghelp'] = 'Sybaseスタイルのシングルクオートエスケープです - Oracle、MS SQLおよび他のデータベースに必要です。MySQLには使用しないでください!';
 $string['auth_dbsyncuserstask'] = 'ユーザタスクを同期する';
 $string['auth_dbtable'] = 'データベースのテーブル名';
+$string['auth_dbtableempty'] = '外部テーブルが空です。';
 $string['auth_dbtable_key'] = 'テーブル';
-$string['auth_dbtype'] = 'データベースタイプ (詳細は<a href="http://phplens.com/adodb/supported.databases.html" target="_blank">ADOdbドキュメンテーション</a>をご覧ください)';
+$string['auth_dbtype'] = 'データベースタイプです (詳細はドキュメンテーション<a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - PHPのためのデータベース抽象化レイヤー</a>をご覧ください)。';
 $string['auth_dbtype_key'] = 'データベース';
 $string['auth_dbupdateusers'] = 'ユーザを更新する';
 $string['auth_dbupdateusers_description'] = '新しいユーザを追加および既存のユーザを更新します。';

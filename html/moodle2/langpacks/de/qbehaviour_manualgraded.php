@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Manuelle Bewertung';
-$string['privacy:metadata'] = 'Die manuelle Bewertung des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Die manuelle Bewertung des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';

@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Formato XHTML';
 $string['pluginname_help'] = 'O formato XHTML permite que todas as perguntas da categoria sejam exportadas para uma única página de strict XHTML para usar noutras aplicações.';
 $string['pluginname_link'] = 'qformat/xhtml';
-$string['privacy:metadata'] = 'O módulo Pergunta em formato XHML não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta em formato XHML não armazena quaisquer dados pessoais.';

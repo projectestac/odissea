@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['csv:view'] = 'Importare le valutazioni da file CSV';
+$string['csv:view'] = 'Importare valutazioni da file CSV';
 $string['pluginname'] = 'File CSV';
+$string['privacy:metadata'] = 'Il plugin per l\'importazione delle valutazioni \'File CSV\' non memorizza dati personali.';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Алгебраическое выражение';
 $string['filtername'] = 'Формулы в формате Algebra';
+$string['privacy:metadata'] = 'Плагин Нотация Algebra не хранит никаких персональных данных.';

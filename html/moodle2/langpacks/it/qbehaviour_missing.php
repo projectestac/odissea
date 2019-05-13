@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comportamento mancante';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Comportamento mancante\' non memorizza dati personali.';
 $string['questionusedunknownmodel'] = 'Questa domanda ha ricevuto risposte con un comportamento che non è al momento disponibile. Stiamo provando a visualizzare la domanda al meglio, tuttavia alcune parti potrebbero essere mancanti o errate.';

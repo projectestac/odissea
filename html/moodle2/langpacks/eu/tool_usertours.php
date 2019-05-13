@@ -47,7 +47,7 @@ $string['content_help'] = 'Urratsa deskribatzen duen edukia gehi daiteke testu-s
 
 Bestela, hizkuntza-kate baten IDa sar daiteke identifikatzaile, osagaia formatuan (komaren ostean parentesi edo tarterik gabe).';
 $string['cssselector'] = 'CSS hautatzailea';
-$string['defaultvalue'] = 'Berezkoa ({$a})';
+$string['defaultvalue'] = 'Lehenetsitakoa ({$a})';
 $string['delay'] = 'Atzerapen-tartea urratsa erakutsi aurretik';
 $string['delay_help'] = 'Nahi baduzu, urratsa erakutsi aurretiko atzerapen-tarte bat gehitu dezakezu.
 
@@ -173,5 +173,5 @@ $string['tour_resetforall'] = 'Erabiltzaile-ibilaldiaren egoera berrabiarazi da.
 $string['tours'] = 'Ibilaldiak';
 $string['usertours'] = 'Erabiltzaile-ibilaldiak';
 $string['usertours:managetours'] = 'Sortu, editatu eta ezabatu erabiltzaile-ibilaldiak';
-$string['viewtour_edit'] = '<a href="{$a->editlink}">Ibilaldiaren berezko balioak edita ditzakezu</a> eta erabiltzaile guztiak <a href="{$a->resetlink}">ibilaldia berriz erakustea behartu ahal dituzu</a>.';
+$string['viewtour_edit'] = '<a href="{$a->editlink}">Ibilaldiaren lehenetsitako balioak edita ditzakezu</a> eta erabiltzaile guztiak <a href="{$a->resetlink}">ibilaldia berriz erakustea behartu ahal dituzu</a>.';
 $string['viewtour_info'] = 'Hau \'{$a->tourname}\' ibilaldia da. \'{$a->path}\' bideari aplikatzen zaio.';

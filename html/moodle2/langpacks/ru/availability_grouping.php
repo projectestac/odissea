@@ -29,6 +29,7 @@ $string['description'] = 'Разрешить только студентам, к
 $string['error_selectgrouping'] = 'Вы должны выбрать поток.';
 $string['missing'] = '(Отсутствует поток)';
 $string['pluginname'] = 'Ограничение по потокам';
+$string['privacy:metadata'] = 'Плагин ограничения доступности «Ограничение по потокам» не хранит никаких персональных данных.';
 $string['requires_grouping'] = 'Вы принадлежите к группе в потоке <strong>{$a}</strong>';
 $string['requires_notgrouping'] = 'Вы не принадлежите к группе в потоке <strong>{$a}</strong>';
 $string['title'] = 'Поток';

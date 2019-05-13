@@ -164,6 +164,7 @@ $string['updateremfail'] = 'Fehler beim Aktualisieren des LDAP-Datensatzes {$a->
 <br/>Alter Moodle-Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Fehler beim Aktualisieren von LDAP mit mehrdeutigem Bereich {$a->key}.
 <br />Alter Moodle-Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';
+$string['updateremfailfield'] = 'Fehler beim Update von LDAP mit einem nicht existierenden Feld (\'{$a->ldapkey}\'). Schlüssel ({$a->key}) - alter Moodle Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Nutzereintrag konnte bei der externen Aktualisierung nicht gefunden werden.
 <br />Details: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
 $string['useracctctrlerror'] = 'Fehler beim Lesen von userAccountControl für {$a}';

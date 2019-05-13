@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Оценки экспортированы в формат XML';
 $string['pluginname'] = 'Файл XML';
+$string['privacy:metadata'] = 'Плагин «Экспорт оценок в XML-файл» не хранит никаких персональных данных.';
 $string['xml:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате XML';
 $string['xml:view'] = 'Использовать экспорт оценок в формате XML';

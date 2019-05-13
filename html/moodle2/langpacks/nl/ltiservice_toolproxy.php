@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tool proxy service';
+$string['privacy:metadata'] = 'De Tool Proxy Service-plugin bewaart geen persoonlijke gegevens.';

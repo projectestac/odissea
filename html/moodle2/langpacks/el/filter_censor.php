@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['badwords'] = 'shit,fucked,fucker,fuck,dickhead,dick,cockhead,cock,cunt,asshole,arsehole,prick,bitch,jism,whore,slut,wanker,wank,bastard,dildo,masturbate,orgasm,penis,nigger,pussy,vagina,σκατά,γαμημένο,γαμώ,μουνί,κωλο,μαλάκα,μαλακισμένο,οργασμός,πόρνη,πουτάνα,μαλακιστήρι,μπάσταρδο,αυνανισμός,πέος,πούτσα,πούτσος,μουνάκι,βυζιά';
 $string['filtername'] = 'Λογοκρισία του λόγου';
+$string['privacy:metadata'] = 'Το πρόσθετο «Λογοκρισία Word» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -39,5 +39,6 @@ $string['mediaformats_desc'] = 'Quan els reproductors estan habilitats, els fitx
 
 Quan dos reproductors admeten el mateix format, habilitar ambdós augmenta la compatibilitat amb diferents dispositius, com ara telèfons mòbils. És possible augmentar la compatibilitat més encara proporcionant diversos fitxers en diferents formats per a un únic àudio o videoclip.';
 $string['mediasettings'] = 'Incrustació de fitxers multimèdia';
+$string['privacy:metadata'] = 'La incrustació de multimèdia no emmagatzema cap dada personal.';
 $string['supports'] = 'Compatibilitat';
 $string['videoextensions'] = 'Vídeo: {$a}';

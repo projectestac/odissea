@@ -32,7 +32,7 @@ $string['filelockedmail'] = 'Il file di testo ({$a}) che stai utilizzando per le
 $string['filelockedmailsubject'] = 'Errore grave: file iscrizioni';
 $string['flatfile:manage'] = 'Gestire manualmente le iscrizioni degli utenti';
 $string['flatfilesync'] = 'Sincronizzazione iscrizioni da file CSV';
-$string['flatfile:unenrol'] = 'Disiscrivere manualmente gli utenti dai corsi';
+$string['flatfile:unenrol'] = 'Disiscrivere manualmente gli utenti dal corso';
 $string['location'] = 'Percorso del file';
 $string['location_desc'] = 'Il percorso completo del file delle iscrizioni. Il file verrà eliminato automaticamente al termine dell\'elaborazione';
 $string['mapping'] = 'Mappatura ruoli';
@@ -65,3 +65,11 @@ del, student, 8, CF101
 del, student, 17, CF101
 add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'Il plugin di iscrizione "File (CSV)" memorizzata nella tabella enrol_flatfile dati personali relativi alle iscrizioni.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'Azione di iscrizione da svolgere in una determinata data.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'ID del corso al quale fa riferimento l\'iscrizione.';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'ID del ruolo da assegnare o revocare.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'Data e ora di fine dell\'iscrizione.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'Data e ora di modifica dell\'iscrizione.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'Data e ora di inizio dell\'iscrizione.';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'ID dell\'utente al quale viene assegnato il ruolo.';

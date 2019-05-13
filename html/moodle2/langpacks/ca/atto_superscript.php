@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Superíndex';
+$string['privacy:metadata'] = 'El connector atto_superscript no emmagatzema cap dada personal.';

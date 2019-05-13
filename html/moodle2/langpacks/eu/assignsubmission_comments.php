@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blindmarkingname'] = '{$a} partaidea';
 $string['blindmarkingviewfullname'] = '{$a->participantnumber}. partaidea ({$a->participantfullname})';
-$string['default'] = 'Berez gaituta';
-$string['default_help'] = 'Ezarriz gero, bidalketa-metodo hau berez gaituko da zeregin berri guztietan';
+$string['default'] = 'Gaituta modu lehenetsian';
+$string['default_help'] = 'Ezarriz gero, bidalketa-metodo hau modu lehenetsian gaituko da zeregin berri guztietan.';
 $string['enabled'] = 'Bidalketaren iruzkinak';
-$string['enabled_help'] = 'Ezarriz gero, ikasleek iruzkinak jar ditzakete bere bidalketak egiterakoan. Adibidez, erabili daiteke ikasleek adierazteko bidalketan zein den fitxategi nagusia, fitxategi bat baino gehiago dagoenean.';
+$string['enabled_help'] = 'Gaituz gero, ikasleek iruzkinak jar ditzakete bere bidalketak egiterakoan. Adibidez, erabili daiteke ikasleek kalifikatzaileari bidalketako fitxategi nagusia zein den adierazteko, fitxategi bat baino gehiago dagoenean.';
 $string['pluginname'] = 'Bidalketaren iruzkinak';
 $string['privacy:metadata:commentpurpose'] = 'Ikasle eta irakasleen artean trukatutako bidalketaren inguruko iruzkinak.';

@@ -32,4 +32,5 @@ $string['allocationexists'] = 'L\'attribution existe déjà';
 $string['areyousuretodeallocate'] = 'Voulez-vous vraiment supprimer l\'attribution de l\'évaluation sélectionnée ?';
 $string['areyousuretodeallocategraded'] = 'Vous allez supprimer une évaluation qui a déjà été notée.';
 $string['pluginname'] = 'Attribution manuelle';
+$string['privacy:metadata:preference:perpage'] = 'Nombre d\'évaluations attribuées que l\'utilisateur préfère voir sur une page.';
 $string['showallparticipants'] = 'Afficher tous les participants';

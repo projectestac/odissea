@@ -29,4 +29,5 @@ $string['configplugin'] = 'Configuración do repositorio de ficheiros privados d
 $string['emptyfilelist'] = 'Non hai ficheiros que amosar.';
 $string['pluginname'] = 'Ficheiros privados';
 $string['pluginname_help'] = 'Ficheiros na área privada do usuario';
+$string['privacy:metadata'] = 'O engadido de repositorio de ficheiros privados non almacena ou transmite datos persoais.';
 $string['user:view'] = 'Ver os ficheiros privados do usuario';

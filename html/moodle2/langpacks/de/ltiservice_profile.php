@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tool Anwenderschlüssel LTI Service';
-$string['privacy:metadata'] = 'Das Consumer Profil für LTI-Service speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Consumer Profil für LTI-Service speichert keine personenbezogenen Daten.';

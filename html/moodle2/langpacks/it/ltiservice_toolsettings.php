@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Servizio impostazione tool';
+$string['privacy:metadata'] = 'Il plugin \'Servizio impostazione tool\' non memorizza dati personali.';

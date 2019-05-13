@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = 'Centre';
 $string['leftalign'] = 'Esquerra';
 $string['pluginname'] = 'Alineació del text';
+$string['privacy:metadata'] = 'El connector atto_align no emmagatzema cap dada personal.';
 $string['rightalign'] = 'Dreta';

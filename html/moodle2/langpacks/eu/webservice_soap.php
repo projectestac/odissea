@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'SOAP protokoloa';
 $string['privacy:metadata'] = 'SOAP protokoloa pluginak ez du datu pertsonalik biltzen.';
-$string['soap:use'] = 'SOAP protokoloa erabili';
+$string['soap:use'] = 'Erabili SOAP protokoloa';

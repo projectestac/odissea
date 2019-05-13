@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ctrlhelp:desc'] = 'Weitere Optionen per CTRL+Rechtsklick';
 $string['pluginname'] = 'Hilfe per CTRL+Rechtsklick';
-$string['privacy:metadata'] = 'Das Ctrl-rechts TinyMCE Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Ctrl-rechts TinyMCE Plugin speichert keine personenbezogenen Daten';

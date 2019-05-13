@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pdw:desc'] = 'Interruttore barra degli strumenti';
 $string['pluginname'] = 'Interruttore barra degli strumenti';
+$string['privacy:metadata'] = 'Il plugin TinyMCE \'Interruttore barra degli strumenti\' non memorizza dati personali.';

@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipos de ficheiro permitidos';
-$string['acceptedfiletypes_help'] = 'Os tipos de ficheiros aceites podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
+$string['acceptedfiletypes_help'] = 'Os tipos de ficheiro permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
 $string['configmaxbytes'] = 'Tamanho máximo do ficheiro';
 $string['countfiles'] = '{$a} ficheiros';
 $string['default'] = 'Ativo por predefinição';
-$string['defaultacceptedfiletypes'] = 'Tipos de ficheiros aceites por predefinição';
+$string['defaultacceptedfiletypes'] = 'Tipos de ficheiro permitidos por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método estará ativo por predefinição para todos os novos trabalhos.';
 $string['enabled'] = 'Submissão de ficheiros';
 $string['enabled_help'] = 'Se ativo, os alunos podem  submeter um ou mais ficheiros quando submetem o seu trabalho.';

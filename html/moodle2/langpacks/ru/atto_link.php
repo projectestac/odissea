@@ -30,4 +30,5 @@ $string['createlink'] = 'Создать гиперссылку';
 $string['enterurl'] = 'Введите URL';
 $string['openinnewwindow'] = 'Открывать в новом окне';
 $string['pluginname'] = 'Гиперссылка';
+$string['privacy:metadata'] = 'Плагин atto_link не хранит никаких персональных данных.';
 $string['unlink'] = 'Удалить гиперссылку';

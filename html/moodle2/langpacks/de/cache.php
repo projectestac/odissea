@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Aktivitäten';
-$string['addinstance'] = 'Instanz hinzufügen';
+$string['addinstance'] = 'Neue Instanz hinzufügen';
 $string['addlocksuccess'] = 'Neue Sperre wurde erfolgreich hinzugefügt';
 $string['addnewlockinstance'] = 'Neue Sperre hinzufügen';
 $string['addstore'] = 'Speicher {$a} hinzufügen';
@@ -136,7 +136,7 @@ $string['nativelocking'] = 'Dieses Plugin verwendet eigene Sperrungen.';
 $string['none'] = 'Kein';
 $string['plugin'] = 'Plugin';
 $string['pluginsummaries'] = 'Installierte Cache-Speicher';
-$string['privacy:metadata:cachestore'] = 'Das Cache-Subsystem';
+$string['privacy:metadata:cachestore'] = 'Das Cache-Subsystem speichert Daten vorübergehend für andere Teile von Moodle. Diese Daten sind im Cache nicht leicht zu identifizieren und sehr kurzlebig. Die Daten werden von anderen Moodle-Komponenten verarbeitet und gespeichert.';
 $string['purge'] = 'Verwerfen';
 $string['purgedefinitionsuccess'] = 'Die abgefragte Definition wurde erfolgreich ersetzte.';
 $string['purgestoresuccess'] = 'Gewählten Speicher erfolgreich gelöscht';

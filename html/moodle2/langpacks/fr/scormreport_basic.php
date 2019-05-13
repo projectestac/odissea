@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Rapport basique';
+$string['privacy:metadata:preference:scorm_report_detailed'] = 'S\'il faut enregistrer les informations détaillées dans le rapport de base SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Nombre d\'utilisateurs à afficher dans les rapports SCORM';

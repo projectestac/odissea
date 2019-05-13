@@ -32,5 +32,5 @@ $string['local:view'] = 'Server-Dateiverzeichnis anzeigen';
 $string['notitle'] = 'unbenannt';
 $string['pluginname'] = 'Dateien in Kursen';
 $string['pluginname_help'] = 'Repository für ein lokales Moodle';
-$string['privacy:metadata'] = 'Das Serverdateien-Repository-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Serverdateien-Repository-Plugin speichert keine personenbezogenen Daten.';
 $string['remember'] = 'Eingeloggt bleiben';

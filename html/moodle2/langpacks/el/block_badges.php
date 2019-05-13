@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Προσθήκη νέου μπλοκ «Τα πρόσφατα βραβεία μου»';
-$string['badges:myaddinstance'] = 'Προσθήκη νέου μπλοκ «Τα πρόσφατα βραβεία μου» στη σελίδα «Η αρχική μου»';
-$string['nothingtodisplay'] = 'Δεν έχετε κανένα βραβείο προς εμφάνιση';
-$string['numbadgestodisplay'] = 'Αριθμός πρόσφατων βραβείων προς εμφάνιση';
-$string['pluginname'] = 'Πρόσφατα βραβεία';
+$string['badges:addinstance'] = 'Προσθήκη νέου μπλοκ «Τα πρόσφατα διακριτικά μου»';
+$string['badges:myaddinstance'] = 'Προσθήκη νέου μπλοκ «Τα πρόσφατα διακριτικά μου» στο Ταμπλό';
+$string['nothingtodisplay'] = 'Δεν έχετε κανένα διακριτικό προς εμφάνιση';
+$string['numbadgestodisplay'] = 'Αριθμός πιο πρόσφατων διακριτικών προς εμφάνιση';
+$string['pluginname'] = 'Πρόσφατα διακριτικά';
+$string['privacy:metadata'] = 'Το μπλοκ "Τελευταία διακριτικά" εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';

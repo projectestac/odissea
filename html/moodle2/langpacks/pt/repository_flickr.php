@@ -41,7 +41,7 @@ $string['privacy:metadata:repository_flickr'] = 'O módulo repositório Flickr n
 Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'Preferência de token OAuth do repositório Flickr';
 $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'Preferência OAuth secreta do repositório Flickr; isto está excluído de dados de privacidade exportados.';
-$string['privacy:metadata:repository_flickr:text'] = 'Pesquisa de texto do utilizador no repositório Flickr';
+$string['privacy:metadata:repository_flickr:text'] = 'Pesquisa de texto no repositório Flickr do utilizador';
 $string['remember'] = 'Manter sessão';
 $string['secret'] = 'Senha';
 $string['username'] = 'E-mail da conta Flickr';

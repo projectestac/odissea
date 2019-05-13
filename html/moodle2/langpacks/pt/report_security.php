@@ -34,7 +34,7 @@ $string['check_cookiesecure_details'] = '<p>Se a comunicação HTTPS for ativada
 $string['check_cookiesecure_error'] = 'A utilização de cookies seguras não está ativa.';
 $string['check_cookiesecure_name'] = 'Cookies seguras';
 $string['check_cookiesecure_ok'] = 'A utilização de cookies seguras está ativa.';
-$string['check_defaultuserrole_details'] = '<p>As capacidades do papel predefinido são atribuídas a todos os utilizadores autenticados. Por isso, assegure-se que não são atribuídas capacidades com riscos a este papel.</p>
+$string['check_defaultuserrole_details'] = '<p>As permissões do papel predefinido são atribuídas a todos os utilizadores autenticados. Por isso, assegure-se que não são atribuídas permissões com riscos a este papel.</p>
 <p>O único papel retrocompatível (usado em versões anteriores do Moodle) que pode ser usado com o papel de utilizador predefinido é <strong>Utilizador autenticado</strong>. A permissão para ver disciplinas não deve ser concedida.</p>';
 $string['check_defaultuserrole_error'] = 'O papel "{$a}", a atribuir automaticamente a todos os utilizadores autenticados, não está configurado corretamente!';
 $string['check_defaultuserrole_name'] = 'Papel a atribuir a todos os utilizadores autenticados';
@@ -60,8 +60,8 @@ $string['check_frontpagerole_error'] = 'O papel "{$a}", definido para a página 
 $string['check_frontpagerole_name'] = 'Papel para a página de entrada';
 $string['check_frontpagerole_notset'] = 'Não foi definido nenhum papel para a página de entrada.';
 $string['check_frontpagerole_ok'] = 'O papel definido para a página de entrada está configurado corretamente.';
-$string['check_google_details'] = '<p>A configuração <strong>Permitir acesso Google</strong> disponibiliza aos motores de busca o acesso às disciplinas que dão acesso a visitantes. Não faz sentido ativar esta configuração se o site não permitir o acesso de visitantes.</p>';
-$string['check_google_error'] = 'É permitido o acesso pelos motores de busca mas o acesso de visitantes não está ativo. Com esta configuração, os motores não terão acesso a nenhuma disciplina no site.';
+$string['check_google_details'] = '<p>A configuração <strong>Permitir acesso Google</strong> disponibiliza aos motores de busca o acesso às disciplinas que dão acesso a visitantes. Não faz sentido ativar esta configuração se o site não permitir o acesso de visitante.</p>';
+$string['check_google_error'] = 'É permitido o acesso aos motores de busca mas o acesso de visitante não está ativo. Com esta configuração, os motores não terão acesso a nenhuma disciplina no site.';
 $string['check_google_info'] = 'Os motores de busca podem aceder como visitantes.';
 $string['check_google_name'] = 'Permitir acesso Google';
 $string['check_google_ok'] = 'O acesso ao site por motores de busca não deve ativo.';
@@ -102,7 +102,7 @@ $string['check_riskadmin_name'] = 'Administradores do site';
 $string['check_riskadmin_ok'] = 'Existe(m) {$a} administrador(es) de sistema.';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) verificar atribuição de papel</a>';
 $string['check_riskadmin_warning'] = 'Existe(m) {$a->admincount} administrador(es) de sistema e {$a->unsupcount} atribuições de papel de administrador noutros contextos (não aconselhado).';
-$string['check_riskbackup_detailsok'] = 'A configuração efetuada não permite que nenhum papel tenha permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas. Contudo, utilizadores que tenham o papel de administrador com a capacidade <strong>doanything</strong> poderão fazê-lo.';
+$string['check_riskbackup_detailsok'] = 'A configuração efetuada não permite que nenhum papel tenha permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas. Contudo, utilizadores que tenham o papel de administrador com a permissão <strong>doanything</strong> poderão fazê-lo.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Se esta configuração estiver ativa, os utilizadores poderão incluir os dados dos utilizadores nas cópias de segurança. Se esta permissão não for necessária deve ser desativada.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Os papéis indicados em seguida têm atualmente permissão para incluir informação dos utilizadores nas cópias de segurança.Se esta permissão não for necessária deve ser desativada.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Devido aos papéis indicados acima ou por causa de redefinições locais, os utilizadores indicados de seguida têm permissão para incluir a informação dos utilizadores nas cópias de segurança das disciplinas. Por questões de privacidade deve ser garantido que (a) são utilizadores de confiança e (b) as suas contas estão protegidas por senhas robustas:</p> {$a}';
@@ -112,7 +112,7 @@ $string['check_riskbackup_name'] = 'Cópias de segurança com dados dos utilizad
 $string['check_riskbackup_ok'] = 'A configuração efetuada não permite que nenhum papel tenha permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas.';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) no contexto {$a->contextname}</a>';
 $string['check_riskbackup_warning'] = 'Existe(m) {$a->rolecount} papéis, {$a->overridecount} redefinições e {$a->usercount} utilizadores com permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas.';
-$string['check_riskxss_details'] = '<p>A indicação <strong>RISK_XSS</strong> evidencia as capacidades perigosas que levantam questões de segurança e que apenas devem ser disponibilizadas a utilizadores de confiança.</p>
+$string['check_riskxss_details'] = '<p>A indicação <strong>RISK_XSS</strong> evidencia as permissões perigosas que levantam questões de segurança e que apenas devem ser disponibilizadas a utilizadores de confiança.</p>
 <p>Lista de utilizadores com estas permissões:</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'Utilizadores com permissões <strong>RISK_XSS</strong>';
 $string['check_riskxss_warning'] = 'Existe(m) {$a} utilizador(es) com permissões <strong>RISK_XSS</strong>. Por questões de segurança é importante verificar que estes utilizadores são de confiança.';
@@ -142,4 +142,4 @@ $string['statusinfo'] = 'Informação';
 $string['statusok'] = 'OK';
 $string['statusserious'] = 'Verificar';
 $string['statuswarning'] = 'Aviso';
-$string['timewarning'] = 'Em processamento, aguarde por favor…';
+$string['timewarning'] = 'Em processamento. Por favor, aguarde…';

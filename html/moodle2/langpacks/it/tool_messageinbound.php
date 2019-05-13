@@ -81,9 +81,9 @@ $string['messageprocessingfailed'] = 'Non è stato possibile elaborare l\'email 
 $string['messageprocessingfailedunknown'] = 'Non è stato possibile elaborare l\'email "{$a->subject}". Per maggiori informazioni contattare l\'amministratore del sito.';
 $string['messageprocessingsuccess'] = '{$a->plain}
 
-Se non desideri ricevere queste notifiche, puoi modificare le preferenze della messaggistica recandoti su {$a->messagepreferencesurl}.';
+Se non desideri ricevere queste notifiche, puoi modificare le preferenze della messaggistica aprendo {$a->messagepreferencesurl} con il browser.';
 $string['messageprocessingsuccesshtml'] = '{$a->html}
-<p>Se non desideri ricevere queste notifiche, puoi modificare le preferenze della messaggistica recandoti su {$a->messagepreferencesurl}.</p>';
+<p>Se non desideri ricevere queste notifiche, puoi modificare le preferenze della messaggistica aprendo {$a->messagepreferencesurl} con il browser.</p>';
 $string['messageprovider:invalidrecipienthandler'] = 'Messaggio per confermare di essere il mittente del messaggio in ingresso';
 $string['messageprovider:messageprocessingerror'] = 'Notifiche sulla mancata elaborazione di messaggi in arrivo';
 $string['messageprovider:messageprocessingsuccess'] = 'Conferme della corretta elaborazione di un messaggio';
@@ -96,6 +96,12 @@ $string['onehour'] = 'Un\'ora';
 $string['oneweek'] = 'Una settimana';
 $string['oneyear'] = 'Un anno';
 $string['pluginname'] = 'Configurazione messaggi in arrivo';
+$string['privacy:metadata:coreuserkey'] = 'Chiave dell\'utente per certificare l\'email ricevuta.';
+$string['privacy:metadata:messagelist'] = 'Elenco degli identificativi dei messaggi che hanno fallito la certificazione e necessitano di ulteriori autorizzazioni.';
+$string['privacy:metadata:messagelist:address'] = 'Indirizzo a cui è stata inviata l\'email.';
+$string['privacy:metadata:messagelist:messageid'] = 'ID del messaggio.';
+$string['privacy:metadata:messagelist:timecreated'] = 'Orario di creazione del record.';
+$string['privacy:metadata:messagelist:userid'] = 'ID dell\'utente che deve approvare il messaggio.';
 $string['replysubjectprefix'] = 'Re:';
 $string['requirevalidation'] = 'Verifica indirizzo del mittente';
 $string['ssl'] = 'SSL (Auto-detect versione SSL)';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Κοινωνικές Δραστηριότητες';
+$string['pluginname'] = 'Κοινωνικές δραστηριότητες';
+$string['privacy:metadata'] = 'Το μπλοκ κοινωνικών δραστηριοτήτων εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['social_activities:addinstance'] = 'Προσθήκη ενός μπλοκ «Κοινωνικές δραστηριότητες»';

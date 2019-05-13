@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p> Es recomana que canvieu els permisos del fitxer config.php després de la instal·lació per tal que el fitxer no pugui ser modificat pel servidor web. Si us plau fixeu-vos que aquesta mesura no millora de forma significativa la seguretat del servidor, encara que pot ajudar a disminuir els punts febles del sistema.</p>';
+$string['check_configrw_details'] = '<p> Es recomana que canvieu els permisos del fitxer config.php després de la instal·lació per tal que el fitxer no pugui ser modificat pel servidor web. Fixeu-vos que aquesta mesura no millora de manera significativa la seguretat del servidor, encara que pot ajudar a disminuir els punts febles del sistema.</p>';
 $string['check_configrw_name'] = 'config.php té permisos d\'escriptura';
 $string['check_configrw_ok'] = 'config.php no pot ser modificat pels scripts de PHP.';
 $string['check_configrw_warning'] = 'Els scripts de PHP poden modificar config.php.';
 $string['check_cookiesecure_details'] = '<p>Si habiliteu la comunicació https es recomana que habiliteu també les galetes segures. També hauríeu  d\'afegir una redirecció permanent des de http a https.</p>';
-$string['check_cookiesecure_error'] = 'Si us plau habiliteu les galetes segures';
+$string['check_cookiesecure_error'] = 'Habiliteu les galetes segures';
 $string['check_cookiesecure_name'] = 'Galetes segures';
 $string['check_cookiesecure_ok'] = 'Galetes segures habilitades.';
 $string['check_defaultuserrole_details'] = '<p>Tots els usuaris que han iniciat sessió tenen les capacitats del rol d\'usuari per defecte. Comproveu que aquest rol no té permesa cap capacitat arriscada.</p> <p>L\'únic tipus heretat admès pel rol d\'usuari per defecte és  <em>Usuari autenticat</em>. La capacitat de veure cursos no s\'ha d\'habilitar.</p>';
@@ -51,7 +51,7 @@ $string['check_embed_details'] = '<p>Incrustar un nombre il·limitat d\'objectes
 $string['check_embed_error'] = 'Hi ha habilitada la incrustació il·limitada d\'objectes - Això és molt perillós per la majoria de servidors.';
 $string['check_embed_name'] = 'Permet EMBED i OBJECT';
 $string['check_embed_ok'] = 'No es permet incrustar un nombre il·limitat d\'objectes.';
-$string['check_frontpagerole_details'] = '<p>El rol de la pàgina principal es dóna a tots els usuaris inscrits a les activitats de la pagina principal. Si us plau comproveu que aquest rol no té permesa cap capacitat arriscada.</p> <p>Es recomana que es cree un rol especial per aquest propòsit i que no s\'utilitzi cap rol de tipus heretat.</p>';
+$string['check_frontpagerole_details'] = '<p>El rol de la pàgina principal es dóna a tots els usuaris inscrits a les activitats de la pagina principal. Comproveu que aquest rol no té permesa cap capacitat arriscada.</p> <p>Es recomana que es creï un rol especial per a aquest propòsit i que no s\'utilitzi cap rol de tipus heretat.</p>';
 $string['check_frontpagerole_error'] = 'S\'ha detectat una definició incorrecta del rol de la pàgina principal «{$a}»!';
 $string['check_frontpagerole_name'] = 'Rol de la pàgina principal';
 $string['check_frontpagerole_notset'] = 'El rol de la pàgina principal no està definit.';
@@ -75,7 +75,7 @@ $string['check_noauth_details'] = '<p>El connector <em>Sense autenticació</em> 
 $string['check_noauth_error'] = 'El connector <em>Sense autenticació</em> no pot utilitzar-se en llocs en producció.';
 $string['check_noauth_name'] = 'Sense autenticació';
 $string['check_noauth_ok'] = 'S\'ha inhabilitat el connector <em>Sense autenticació</em>.';
-$string['check_openprofiles_details'] = 'Els perfils oberts dels usuaris poden ser usats abusivament pels que envien correu brossa. Es recomana que: o bé <code>Forceu els usuaris a iniciar la sessió per accedir als perfils</code>, o bé que <code>Forceu els usuaris a iniciar sessió</code> estiguin habilitats.';
+$string['check_openprofiles_details'] = 'Els perfils oberts dels usuaris poden ser usats abusivament pels que envien correu brossa. Es recomana que: <code>Forceu els usuaris a iniciar la sessió per accedir als perfils</code> o bé <code>Forceu els usuaris a iniciar sessió</code> estigui habilitat.';
 $string['check_openprofiles_error'] = 'Qualsevol pot visualitzar perfils d\'usuaris sense iniciar sessió.';
 $string['check_openprofiles_name'] = 'Perfils oberts dels usuaris';
 $string['check_openprofiles_ok'] = 'Cal iniciar sessió abans de veure els perfils dels usuaris.';
@@ -85,7 +85,7 @@ No poseu requeriments massa estrictes tampoc, ja que als usuaris no els serà f�
 $string['check_passwordpolicy_error'] = 'No s\'ha establert una política de contrasenyes.';
 $string['check_passwordpolicy_name'] = 'Política de contrasenyes';
 $string['check_passwordpolicy_ok'] = 'S\'ha habilitat la política de contrasenyes.';
-$string['check_riskadmin_detailsok'] = '<p>Si us plau comproveu la següent llista d\'administrador:</p>{$a}';
+$string['check_riskadmin_detailsok'] = '<p>Comproveu la llista d\'administrador següent:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Verifiqueu la següent llista d\'administradors del sistema:</p>{$a->admins}
 <p>Es recomana asignar funcions d\'administració sols en el context del sistema. Els usuaris següents tenen funcions d\'administració (sense suport) en altres contexts:</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administradors';
@@ -93,17 +93,17 @@ $string['check_riskadmin_ok'] = 'S\'han trobat {$a} administrador(s) dels servid
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}): revisa l\'assignació de rols</a>';
 $string['check_riskadmin_warning'] = 'S\'han trobat {$a->admincount} administradors del servidor i {$a->unsupcount} rols d\'administrador no suportats.';
 $string['check_riskbackup_detailsok'] = 'No hi ha cap rol que permeti explícitament fer una còpia de seguretat de les dades dels usuaris. Tanmateix fixeu-vos que els administrador que tinguin la capacitat «ferqualsevolcosa» poden segurament fer-ho.';
-$string['check_riskbackup_details_overriddenroles'] = '<p> Aquesta sobreescritura activa donarà als usuaris la capacitat d\'incloure dades d\'usuari a les copies de seguretat. Si us plau comproveu que aquest permís es necessari.</p> {$a}';
-$string['check_riskbackup_details_systemroles'] = '<p>Els rols de sistema següents permeten actualment als usuaris incloure dades d\'usuari a les copies de seguretat. Si us plau comproveu que aquest permís es necessari.</p> {$a}';
+$string['check_riskbackup_details_overriddenroles'] = '<p> Aquesta sobreescriptura activa donarà als usuaris la capacitat d\'incloure dades d\'usuari a les còpies de seguretat. Comproveu que aquest permís és necessari.</p> {$a}';
+$string['check_riskbackup_details_systemroles'] = '<p>Els rols de sistema següents permeten actualment als usuaris incloure dades d\'usuari a les còpies de seguretat. Comproveu que aquest permís és necessari.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Degut als rols anteriors o a les substitucions locals, els seguents comptes d\'usuaris tenen permís per fer còpies de seguretat amb dades privades de qualsevol usuari inscrit al seu curs. Comproveu que (a) són de confiança i (b) estan protegits amb contrasenyes fortes:</p> {$a}';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} en {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Còpia de seguretat de les dades d\'usuari';
 $string['check_riskbackup_ok'] = 'No hi ha rols que explícitament permetin fer una còpia de seguretat de les dades dels usuaris.';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) en {$a->contextname}</a>';
-$string['check_riskbackup_warning'] = 'Trobats els rols {$a->rolecount}, $a->overridecount} sobreescriptures i {$a->usercount} usuaris amb la capacitat de fer copies de seguretat de dades d\'usuari.';
+$string['check_riskbackup_warning'] = 'S\'han trobat {$a->rolecount} rols , {$a->overridecount} sobreescriptures i {$a->usercount} usuaris amb la capacitat de fer còpies de seguretat de dades d\'usuari.';
 $string['check_riskxss_details'] = '<p>RISK_XSS simbolitza totes les capacitats perilloses que sols els usuaris de confiança poden utilitzar. </p>
-<p>Si us plau verifiqueu la llista d\'usuaris següent i assegureu-vos que confieu en ells completament en aquest servidor:</p>
+<p>Verifiqueu la llista d\'usuaris següent i assegureu-vos que confieu en ells completament en aquest servidor:</p>
 <p>{$a}</p>';
 $string['check_riskxss_name'] = 'Usuaris de confiança XSS';
 $string['check_riskxss_warning'] = 'RISK_XSS - S\'han trobat {$a} usuaris que cal que siguin de confiança.';
@@ -128,4 +128,4 @@ $string['statusinfo'] = 'Informació';
 $string['statusok'] = 'D\'acord';
 $string['statusserious'] = 'Seriós';
 $string['statuswarning'] = 'Avís';
-$string['timewarning'] = 'El processat de dades pot trigar una temps llarg, si us plau tingueu paciència...';
+$string['timewarning'] = 'El processament de dades pot trigar una temps llarg; tingueu paciència...';

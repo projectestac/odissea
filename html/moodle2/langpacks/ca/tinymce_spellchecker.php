@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Corrector ortogràfic antic';
+$string['privacy:metadata'] = 'El connector Legacy de verificació ortogràfica de TinyMCE no emmagatzema cap dada personal.';

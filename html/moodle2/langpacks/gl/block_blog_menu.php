@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_menu:addinstance'] = 'Engadir un novo bloque de menú do blog';
 $string['pluginname'] = 'Menú do blog';
+$string['privacy:metadata'] = 'O bloque de menú do blog só amosa datos almacenados noutros lugares.';

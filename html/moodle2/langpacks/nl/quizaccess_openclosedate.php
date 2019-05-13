@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Sorry, deze test is niet beschikbaar';
 $string['pluginname'] = 'Toegangsregel: open en sluit datum';
+$string['privacy:metadata'] = 'De open en sluitdatum testtoegangsregel-plugin bewaart geen persoonlijke gegevens.';
 $string['quiznotavailable'] = 'De test zal nog niet beschikbaar zijn tot :  {$a}';

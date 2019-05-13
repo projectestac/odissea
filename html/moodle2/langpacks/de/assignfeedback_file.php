@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'Eine oder mehrere Feedbackdateien für alle ausgewählten Teilnehmer/innen hochladen?';
-$string['batchuploadfiles'] = 'Feedbackdateien für mehrere Teilnehmer/inenn';
+$string['batchuploadfiles'] = 'Feedbackdateien für mehrere Teilnehmer/innen';
 $string['batchuploadfilesforusers'] = 'Feedbackdateien für {$a} ausgewählte Nutzer/innen';
 $string['configmaxbytes'] = 'Maximale Dateigröße';
 $string['confirmuploadzip'] = 'Zip-Upload bestätigen';

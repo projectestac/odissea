@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['assignment:addinstance'] = 'Aufgabe hinzufügen';
+$string['assignment:addinstance'] = 'Neue Aufgabe hinzufügen';
 $string['assignmentdisabled'] = 'Die alte Aktivität "Aufgabe 2.2" ist deaktiviert.';
 $string['assignment:exportownsubmission'] = 'Eigene Abgabe exportieren';
 $string['assignment:exportsubmission'] = 'Abgabe exportieren';
@@ -33,7 +33,7 @@ $string['assignment:grade'] = 'Aufgabe bewerten';
 $string['assignmentneedsupgrade'] = 'Die alte Aktivität "Aufgabe 2.2" wurde deaktiviert. Bitte veranlassen Sie, dass der Administrator die Aufgabenaktualisierung für alle alten Aufgaben auf der Website durchführt.';
 $string['assignment:submit'] = 'Aufgabe abgeben';
 $string['assignment:view'] = 'Aufgabe anzeigen';
-$string['messageprovider:assignment_updates'] = 'Mitteilung zur Aufgabe (2.2)';
+$string['messageprovider:assignment_updates'] = 'Systemnachricht zur Aufgabe (2.2)';
 $string['modulename'] = 'Aufgabe 2.2 (deaktiviert)';
 $string['modulename_help'] = 'Veraltete Aktivität, die inzwischen aus Moodle entfernt wurde.';
 $string['modulenameplural'] = 'Aufgabe 2.2 (deaktiviert)';

@@ -36,5 +36,6 @@ $string['loglive:view'] = 'Ver os rexistros activos';
 $string['nologreaderenabled'] = 'Non hai un lector de rexistros activado';
 $string['pause'] = 'Pausar as actualizacións activas';
 $string['pluginname'] = 'Rexistros activos';
+$string['privacy:metadata'] = 'O engadido de rexistros activos non almacena ningún dato persoal.';
 $string['resume'] = 'Resumir as actualizacións activas';
 $string['selectlogreader'] = 'Seleccionar o lector de rexistros';

@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Instellingen voor uploadplugin';
 $string['pluginname'] = 'Upload een bestand';
 $string['pluginname_help'] = 'Upload een bestand naar Moodle';
+$string['privacy:metadata'] = 'De Upload een bestand opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['upload_error_cant_write'] = 'Kon bestand niet op schijf bewaren';
 $string['upload_error_extension'] = 'Een PHP-extentie heeft de bestandsupload gestopt.';
 $string['upload_error_form_size'] = 'Het geüploade bestand is groter dan de MAX_FILE_SIZE instelling die in het HTML-formulier was opgegeven.';

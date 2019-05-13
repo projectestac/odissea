@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['csv:view'] = 'Εισαγωγή βαθμών από αρχείο CSV';
-$string['pluginname'] = 'Αρχείο CSV';
+$string['pluginname'] = 'Αρχείο CSV (μορφότυπος τιμών διαχωρισμένων με κόμμα)';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εισαγωγή βαθμών από CSV» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

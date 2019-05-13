@@ -106,7 +106,7 @@ $string['dropdown_values'] = 'Erantzunak';
 $string['drop_feedback'] = 'Ezabatu ikastaro honetatik';
 $string['edit_item'] = 'Editatu galdera';
 $string['edit_items'] = 'Editatu galderak';
-$string['email_notification'] = 'Bidali bidalketen jakinarazpenak';
+$string['email_notification'] = 'Gaitu bidalketen jakinarazpenak';
 $string['email_notification_help'] = 'Gaituz gero, irakasleek bidalketen jakinarazapenak jasoko dituzte.';
 $string['emailteachermail'] = '{$a->username}(e)k inkesta hau bete du: \'{$a->feedback}\'
 
@@ -118,9 +118,9 @@ $string['emailteachermailhtml'] = '<p>{$a->username}(e)k inkesta hau bete du: <i
 $string['entries_saved'] = 'Zure erantzunak ondo gorde dira. Eskerrik asko';
 $string['eventresponsedeleted'] = 'Erantzuna ezabatu da';
 $string['eventresponsesubmitted'] = 'Erantzuna bidali da';
-$string['export_questions'] = 'Galderak esportatu';
+$string['export_questions'] = 'Esportatu galderak';
 $string['export_to_excel'] = 'Esportatu Excelera';
-$string['feedback:addinstance'] = 'Gehitu beste inkesta bat';
+$string['feedback:addinstance'] = 'Gehitu inkesta berria';
 $string['feedbackclose'] = 'Noiz arte baimendu erantzunak';
 $string['feedback:complete'] = 'Osatu inkesta bat';
 $string['feedbackcompleted'] = '{$a->username}-(e)k osatu du {$a->feedbackname}';
@@ -140,7 +140,7 @@ $string['feedback:viewreports'] = 'Ikusi txostenak';
 $string['file'] = 'Fitxategia';
 $string['filter_by_course'] = 'Iragazi ikastaroen arabera';
 $string['handling_error'] = 'Errorea sortu da eta feedback modulua ezin du ekintza kudeatu';
-$string['hide_no_select_option'] = '"Aukeratu gabea" aukera ezkutatu';
+$string['hide_no_select_option'] = 'Ezkutatu "Aukeratu gabea" aukera';
 $string['horizontal'] = 'horizontala';
 $string['importfromthisfile'] = 'Inportatu fitxategi honetatik';
 $string['import_questions'] = 'Inportatu galderak';
@@ -159,11 +159,11 @@ $string['item_name'] = 'Galdera';
 $string['label'] = 'Etiketa';
 $string['labelcontents'] = 'Edukiak';
 $string['line_values'] = 'Puntuazioa';
-$string['mapcourse'] = 'Esleitu feedback-a ikastaroetan';
-$string['mapcourse_help'] = 'Berez, zure hasiera-orrian sortutako inkestak gune osoan erabilgarri daude eta inkesta blokea erabiltzen duten ikastaro guztietan agertuko dira. Inkesta erakustea behartu daiteke bloke finkoa bihurtuta edo mugatu inkesta agertuko den ikastaro-zerrenda inkesta ikastaro zehatzekin lotuta.';
-$string['mapcourseinfo'] = 'Gune mailako feedback-a da hau eta feedback blokea erabiltzen duten ikastaro guztietarako dago erabilgarri. Hala ere, berau agertuko den ikastaroak mugatu ditzakezu horiek markatuta. Bilatu ikastaroa eta aukeratu feedback honetarako.';
+$string['mapcourse'] = 'Esleitu feedbacka ikastaroetan';
+$string['mapcourse_help'] = 'Modu lehenetsian, zure hasiera-orrian sortutako inkestak gune osoan erabilgarri daude eta inkesta blokea erabiltzen duten ikastaro guztietan agertuko dira. Inkesta erakustea behartu daiteke bloke finkoa bihurtuta edo mugatu inkesta agertuko den ikastaro-zerrenda inkesta ikastaro zehatzekin lotuta.';
+$string['mapcourseinfo'] = 'Gune mailako feedbacka da hau eta feedback blokea erabiltzen duten ikastaro guztietarako dago erabilgarri. Hala ere, berau agertuko den ikastaroak mugatu ditzakezu horiei esleituta. Bilatu ikastaroa eta aukeratu feedback honetarako.';
 $string['mapcoursenone'] = 'Ez dago ikastarorik esleituta. Feedbacka ikastaro guztietarako dago erabilgarri.';
-$string['mapcourses'] = 'Esleitu feedback-a ikastaroetarako';
+$string['mapcourses'] = 'Esleitu feedbacka ikastaroetarako';
 $string['mapcourses_help'] = 'Behin zure bilaketan ikastaro esanguratsuak aukeratuta inkesta honekin lotu ditzakezu. Ikastaro anitz aukeratu daitezke Ctrl edo Apple sakatuta mantenduz ikastaroen izenetan klik egitean. Ikastaro batek inkesta batetiko duen lotura edozein unetan kendu daiteke.';
 $string['mappedcourses'] = 'Esleitutako ikastaroak';
 $string['mappingchanged'] = 'Ikastaroen lotura aldatu da';
@@ -174,13 +174,13 @@ $string['messageprovider:submission'] = 'Inkestaren jakinarazpenak';
 $string['minimal'] = 'gutxienekoa';
 $string['mode'] = 'Modua';
 $string['modulename'] = 'Inkesta';
-$string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedback-ak jasotzeko hainbat galdera-mota erabilita, tartean aukera anitzekoak, Bai/Ez modukoak eta testua idaztekoak.
+$string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedbackak jasotzeko hainbat galdera-mota erabilita, tartean aukera anitzekoak, Bai/Ez modukoak eta testua idaztekoak.
 
 Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodle-ko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
 
 Inkesta jarduerak erabili daitezke
 
-* Ikastaroko ebaluazioarako, hurrengo parte-hartzaileentzat edukiak hobetzen laguntzeko
+* Ikastaroko ebaluaziorako, hurrengo parte-hartzaileentzat edukiak hobetzen laguntzeko
 * Parte-hartzaileek ikastaroko moduluetan, ebentoetan, e.a. izena eman dezaten.
 * Gonbidatuen ikastaro aukerak, e.a. zundatzeko
 * Bullying-aren kontrako ikuskapena egiteko, bertan ikasleek modu anonimoan gertakarien berri eman dezaten';
@@ -192,7 +192,7 @@ $string['moveup_item'] = 'Mugitu galdera hau gora';
 $string['multichoice'] = 'Aukera anitzak';
 $string['multichoicerated'] = 'Aukera anitzak (kalifikatua)';
 $string['multichoicetype'] = 'Aukera anitzen mota';
-$string['multichoice_values'] = 'Aukera anitzen baloreak';
+$string['multichoice_values'] = 'Aukera anitzen balioak';
 $string['multiplesubmit'] = 'Baimendu bidalketa anitzak';
 $string['multiplesubmit_help'] = 'Inkesta anonimoak gaituz gero, erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete.';
 $string['name'] = 'Izena';
@@ -215,7 +215,7 @@ $string['numeric'] = 'Zenbakizko erantzuna';
 $string['numeric_range_from'] = 'Kalifikazio txikiena:';
 $string['numeric_range_to'] = 'Kalifikazio handiena:';
 $string['of'] = 'zenbatetik';
-$string['oldvaluespreserved'] = 'Galdera eta horiekin lotutako balore zahar guztiak mantendu egingo dira.';
+$string['oldvaluespreserved'] = 'Galdera eta horiekin lotutako balio zahar guztiak mantendu egingo dira.';
 $string['oldvalueswillbedeleted'] = 'Oraingo galderak eta erantzun guztiak ezabatu egingo dira.';
 $string['only_one_captcha_allowed'] = 'Feedbackean captcha bat baino ez da baimentzen';
 $string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
@@ -255,7 +255,7 @@ $string['radio_values'] = 'Erantzunak';
 $string['ready_feedbacks'] = 'Prest dauden inkestak';
 $string['relateditemsdeleted'] = 'Galdera  honi emandako erantzun guztiak ere ezabatu egingo dira';
 $string['required'] = 'Ezinbestekoa';
-$string['resetting_data'] = 'Inkestaren erantzunak berrabiarazi ';
+$string['resetting_data'] = 'Berrabiarazi inkestaren erantzunak';
 $string['resetting_feedbacks'] = 'Inkestak berrabiarazten';
 $string['response_nr'] = 'Erantzun-kopurua';
 $string['responses'] = 'Erantzunak';
@@ -270,7 +270,7 @@ $string['search:activity'] = 'Inkesta - jardueraren informazioa';
 $string['search_course'] = 'Bilatu ikastaroa';
 $string['searchcourses'] = 'Bilatu ikastaroak';
 $string['searchcourses_help'] = 'Bilatu feedback honekin lotu nahi duzun kodea edo ikastaro(ar)en izena.';
-$string['selected_dump'] = '$SESSION saioko aldagai hauek jaitsi dira:';
+$string['selected_dump'] = 'Aukeratutako indizeen $SESSION saioko aldagai hauek jaitsi dira:';
 $string['send'] = 'bidali';
 $string['send_message'] = 'bidali mezua';
 $string['separator_decimal'] = ',';
@@ -307,8 +307,8 @@ $string['update_item'] = 'Gorde aldaketak galderan';
 $string['url_for_continue'] = 'Esteka hurrengo jarduerara';
 $string['url_for_continue_help'] = 'Inkesta bidali ondoren, \'Jarraitu\' botoia erakusten da ikastaroaren orrira eramaten duena. Bestela, hurrengo jarduerara eraman dezake, hemen jardueraren URLa sartuz gero.';
 $string['use_one_line_for_each_value'] = 'Erabil ezazu lerro bat erantzun bakoitzeko!';
-$string['use_this_template'] = 'Txantiloi hau erabili';
-$string['using_templates'] = 'Txantiloia erabili';
+$string['use_this_template'] = 'Erabili txantiloi hau';
+$string['using_templates'] = 'Erabili txantiloia';
 $string['vertical'] = 'bertikala';
 $string['viewcompleted'] = 'osatutako inkestak';
 $string['viewcompleted_help'] = 'Erantzundako inkesten formularioa ikus dezakezu, ikastaroaren arabera edota galderaren arabera bilatuz. Inkesten erantzunak Excel-era ere esporta daitezke.';

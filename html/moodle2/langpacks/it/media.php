@@ -39,5 +39,6 @@ $string['mediaformats_desc'] = 'Abilitando i riproduttori tramite le impostazion
 
 Se due riproduttori supportano lo stesso formato, abilitarli entrambi aumenta la compatibilità tra dispositivi diversi, come ad esempio i telefoni cellulari. E\' anche possibile aumentare ulteriormente la compatibilità fornendo più versioni in formati diversi dello stesso clip audio o video.';
 $string['mediasettings'] = 'Media incorporati';
+$string['privacy:metadata'] = 'L\'incorporazione di file non memorizza dati personali.';
 $string['supports'] = 'Supporta';
 $string['videoextensions'] = 'Video: {$a}';

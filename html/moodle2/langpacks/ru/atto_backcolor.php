@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Цвет фона';
+$string['privacy:metadata'] = 'Плагин atto_backcolor не хранит никаких персональных данных.';

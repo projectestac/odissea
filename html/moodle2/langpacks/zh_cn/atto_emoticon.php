@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insertemoticon'] = '插入表情符号';
 $string['pluginname'] = '表情符号';
+$string['privacy:metadata'] = 'atto_emoticon 插件不储存任何私人数据。';

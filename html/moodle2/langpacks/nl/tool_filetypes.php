@@ -62,6 +62,7 @@ De lijst met icoontjes is genomen uit de map /pix/f van je Moodle-installatie. J
 $string['mimetype'] = 'MIME-type';
 $string['mimetype_help'] = 'Het MIME-type geassocieerd met dit bestandstype, vb. \'application/x-mobipocket-ebook\'';
 $string['pluginname'] = 'Bestandstypes';
+$string['privacy:metadata'] = 'De bestandstypes-plugin bewaart geen persoonlijke gegevens.';
 $string['revert'] = 'Zet {$a} terug op Moodle-standaarden';
 $string['revert_confirmation'] = 'Weet je zeker dat je <strong>.{$a}</strong> terug naar Moodle-standaarden wil terugzetten en je eigen wijzigingen verwerpen?';
 $string['revertfiletype'] = 'Zet een bestandstype terug';

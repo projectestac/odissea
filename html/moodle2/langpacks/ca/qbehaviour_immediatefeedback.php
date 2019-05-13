@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Resposta incompleta o no comprovada';
 $string['pluginname'] = 'Retroacció immediata';
+$string['privacy:metadata'] = 'El connector de comportament de la pregunta Retroacció immediata no emmagatzema cap dada personal.';

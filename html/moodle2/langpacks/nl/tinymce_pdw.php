@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pdw:desc'] = 'Werkbalkschakelaar';
 $string['pluginname'] = 'Schakel werkblad';
+$string['privacy:metadata'] = 'De TinyMCE Toolbar schakelaar-plugin bewaart geen persoonlijke gegevens.';

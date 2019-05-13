@@ -27,11 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activitytype'] = 'Jarduera-mota';
 $string['activitytype_help'] = 'Aukeratu ikastaroan erabili nahi duzun baliabide edo jarduera-mota';
-$string['defactivitytype'] = 'Berezko jarduera-mota';
-$string['defactivitytypedesc'] = 'Zehaztu zein jarduera mota aukeratuko den berez ikastaro berria sortzean.';
+$string['defactivitytype'] = 'Lehenetsitako jarduera-mota';
+$string['defactivitytypedesc'] = 'Zehaztu ikastaro berria sortzean modu lehenetsian zein jarduera mota aukeratuko den.';
 $string['erroractivitytype'] = 'Jarduera mota ez da ezarri Ikastaroaren ezarpenetan';
 $string['orphaned'] = 'Umezurtza';
 $string['orphanedwarning'] = 'Erabiltzaileek ezin dituzte jarduera hauek aurkitu!';
 $string['pluginname'] = 'Jarduera bakarreko formatua';
 $string['privacy:metadata'] = 'Jarduera bakarreko formatua pluginak ez du datu pertsonalik biltzen.';
+$string['sectionname'] = '';
 $string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Berriak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';

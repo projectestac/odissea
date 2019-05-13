@@ -33,3 +33,4 @@ $string['pluginname_help'] = 'Een beschrijving is geen echt vraagtype. Het maakt
 
 De vraagtekst wordt getoond, zowel tijdens de testpoging als tijdens het nalezen. Algemene feedback wordt enkel tijdens het nalezen getoond.';
 $string['pluginnamesummary'] = 'Dit is geen echt vraagtype. Het is een manier om instructies, tekst of andere inhoud aan de test toe te voegen. Je kunt een beschrijving op dezelfde manier gebruiken zoals je labels gebruikt om inhoud aan de cursuspagina toe te voegen.';
+$string['privacy:metadata'] = 'De beschrijving vraagtype-plugin bewaart geen persoonlijke gegevens.';

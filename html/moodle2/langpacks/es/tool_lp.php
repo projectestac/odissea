@@ -222,6 +222,7 @@ $string['templatecompetencies'] = 'Plantilla de competencias del plan de aprendi
 $string['templatename'] = 'Nombre';
 $string['templates'] = 'Plantillas de planes de aprendizaje';
 $string['uponcoursecompletion'] = 'Al terminar el curso:';
+$string['uponcoursemodulecompletion'] = 'Al finalizar la actividad:';
 $string['userevidence'] = 'Evidencia de aprendizajes previos';
 $string['userevidencecreated'] = 'Se creó la evidencia de aprendizajes previos';
 $string['userevidencename'] = 'Nombre';

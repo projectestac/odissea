@@ -3,6 +3,12 @@
 class com_wiris_quizzes_api_QuizzesBuilder {
 	public function __construct() { 
 	}
+	public function newFeaturedAssertionsRequest($question) {
+		return null;
+	}
+	public function newFeaturedSyntaxAssertionsRequest($question) {
+		return null;
+	}
 	public function getResourceUrl($name) {
 		return null;
 	}

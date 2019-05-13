@@ -39,6 +39,7 @@ $string['choiceno'] = '选项 {$a}';
 $string['choices'] = '可选项';
 $string['clozeaid'] = '键入缺少的词';
 $string['correctansweris'] = '正确答案是：{$a}';
+$string['correctanswersare'] = '正确答案是：{$a}';
 $string['correctfeedback'] = '给任意正确答案';
 $string['errfractionsaddwrong'] = '您选择的正数成绩之和未达到100%<br />它们加起来是{$a}%';
 $string['errfractionsnomax'] = '要有一个选项的分数是100%，这样才可能<br />在这道题中得到满分。';

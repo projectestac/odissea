@@ -41,6 +41,7 @@ $string['lastruntime'] = 'Laatste keer uitgevoerd';
 $string['nextruntime'] = 'Volgende keer';
 $string['plugindisabled'] = 'Plugin uitgeschakeld';
 $string['pluginname'] = 'Configuratie geplande taken';
+$string['privacy:metadata'] = 'De taakplanner configuratie-plugin bewaart geen persoonlijke gegevens.';
 $string['resettasktodefaults'] = 'Zet geplande taken terug naar standaardwaarden';
 $string['resettasktodefaults_help'] = 'Hiermee zullen alle lokale wijzigingen verworpen worden en wordt de planning voor deze taak terug op de standaardinstellingen gezet.';
 $string['runnow'] = 'Nu starten';

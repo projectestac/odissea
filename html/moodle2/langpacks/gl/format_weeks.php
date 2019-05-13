@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Engadir semanas';
+$string['automaticenddate'] = 'Calcule a data de remate a partires do número de seccións';
+$string['automaticenddate_help'] = 'Se está activado, a data de remate do curso calcúlase automaticamente a partires do número de seccións e da data de inicio do curso.';
 $string['currentsection'] = 'Esta semana';
 $string['deletesection'] = 'Eliminar a semana';
 $string['editsection'] = 'Editar a semana';
@@ -34,6 +37,7 @@ $string['newsectionname'] = 'Novo nome para a semana {$a}';
 $string['page-course-view-weeks'] = 'Páxina principal de calquera curso en formato semanal';
 $string['page-course-view-weeks-x'] = 'Páxina de calquera curso en formato semanal';
 $string['pluginname'] = 'Formato semanal';
+$string['privacy:metadata'] = 'O engadido de formato semanal non almacena ningún dato persoal.';
 $string['section0name'] = 'Xeral';
 $string['sectionname'] = 'semana';
 $string['showfromothers'] = 'Amosar a semana';

@@ -25,25 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['chooseavariable'] = 'Aukera ezazu aldagai bat...';
-$string['clicktoopen'] = 'Sakatu {$a} estekari baliabidea irekitzeko.';
+$string['chooseavariable'] = 'Aukeratu aldagai bat...';
+$string['clicktoopen'] = 'Egin klik {$a} estekan baliabidea irekitzeko.';
 $string['configdisplayoptions'] = 'Aukeratu eskuragarri egon behar duten aukera guztiak, dauden ezarpenak ez dira aldatuko. CTRL tekla erabili hainbat eramu aukeratzeko.';
-$string['configframesize'] = 'Web-orri bat edo eguneratutako fitxategia markorik gabe erakusten denean, balore honek adierazten du markoaren gainaren (nabigazioa duena) altuera (pixeletan).';
+$string['configframesize'] = 'Web-orri bat edo eguneratutako fitxategia markorik gabe erakusten denean, balio honek adierazten du markoaren gainaren (nabigazioa duena) altuera (pixeletan).';
 $string['configrolesinparams'] = 'Gaitu eskuragarri dauden parametro-aldagaien zerrendan lokalizatutako rol-izenak sartu nahi badituzu.';
-$string['configsecretphrase'] = 'Hainbat zerbitzarira parametro gisa bidal daitekeen zifratutako kode-balorea sortzeko erabiltzen da ezkutuko esaldi hau. Zifratutako kodea oraingo erabiltzailearen IP helbidearen md5 balorearen bitartez sortzen da, atzetik zure ezkutuko esaldia duela. Hau da, kodea = md5(IP.secretphrase). Mesedez, ohartu ez dela fidagarria IP helbidea aldatu egin daitekeelako eta sarri hainbat ordenagailuk konpartitzen dutelako.';
+$string['configsecretphrase'] = 'Hainbat zerbitzarira parametro gisa bidal daitekeen zifratutako kode-balioa sortzeko erabiltzen da ezkutuko esaldi hau. Zifratutako kodea oraingo erabiltzailearen IP helbidearen md5 balioaren bitartez sortzen da, atzetik zure ezkutuko esaldia duela. Hau da, kodea = md5(IP.secretphrase). Mesedez, ohartu ez dela fidagarria IP helbidea aldatu egin daitekeelako eta sarri hainbat ordenagailuk konpartitzen dutelako.';
 $string['contentheader'] = 'Edukia';
 $string['createurl'] = 'Sortu URL bat';
 $string['displayoptions'] = 'Eskura dauden erakusteko aukerak';
 $string['displayselect'] = 'Erakutsi';
 $string['displayselectexplain'] = 'Aukeratu erakusteko modua; tamalez mota guztiak ezin dira URL-etarako erabili.';
-$string['displayselect_help'] = 'Ezarpen honek, URL fitxategi-mota kontuan hartuta eta web-nabigatzaileak edukiak txertatzea baimentzen badu, URL-a nola erakutsiko den zehazten du. Aukerak hurrengoak dira:
+$string['displayselect_help'] = 'Ezarpen honek, URL fitxategi-mota kontuan hartuta eta web-nabigatzaileak edukiak txertatzea baimentzen badu, URLa nola erakutsiko den zehazten du. Aukerak hurrengoak dira:
 
-* Automatikoa - URL-a erakusteko modurik onena automatikoki aukeratzea da
-* Txertatua - URL-a orriaren barruan erakutsiko da, nabigazio-barraren azpitik eta URL-aren deskribapenaren eta edozein blokeren ondoan
-* Zabaldu - URL-a soilik erakusten da web-nabigatzailearen leihoan
-* Pop-up-ean - URL-a web-nabigatzailearen leiho berri batean erakusten da, menu eta helbide-barrarik gabe
-* Markoan - URL-a marko baten barruan erakusten da, nabigazio-barraren eta URL-aren deskribapenaren azpian
-* Leiho berria - URL-a menuak eta helbide-barra dituen web-nagibatzailearen leiho berri batean erakusten da.';
+* Automatikoa - URLa erakusteko modurik onena automatikoki aukeratzea da
+* Txertatua - URLa orriaren barruan erakutsiko da, nabigazio-barraren azpitik eta URLaren deskribapenaren eta edozein blokeren ondoan
+* Zabaldu - URLa soilik erakusten da web-nabigatzailearen leihoan
+* Pop-up-ean - URLa web-nabigatzailearen leiho berri batean erakusten da, menu eta helbide-barrarik gabe
+* Markoan - URLa marko baten barruan erakusten da, nabigazio-barraren eta URLaren deskribapenaren azpian
+* Leiho berria - URLa menuak eta helbide-barra dituen web-nabigatzailearen leiho berri batean erakusten da.';
 $string['externalurl'] = 'Kanpoko URLa';
 $string['framesize'] = 'Markoaren altuera';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa URLetan';
@@ -66,14 +66,14 @@ $string['parametersheader_help'] = 'Moodle barruko aldagai batzuk URL-era automa
 $string['pluginadministration'] = 'URL-en kudeaketa';
 $string['pluginname'] = 'URLa';
 $string['popupheight'] = 'Pop-up-aren altuera (pixeletan)';
-$string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren berezko altuera.';
+$string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren altuera lehenetsia.';
 $string['popupwidth'] = 'Pop-up-aren zabalera (pixeletan)';
-$string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren berezko zabalera.';
+$string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren zabalera lehenetsia.';
 $string['printintro'] = 'Erakutsi URLaren deskribapena';
 $string['printintroexplain'] = 'Erakutsi URL deskribapena edukiaren azpian? Erakusteko hainbat motak ez dute erakusten URL izena nahiz eta gaituta egon.';
 $string['privacy:metadata'] = 'mod_url pluginak ez du datu pertsonalik biltzen.';
 $string['rolesinparams'] = 'Sartu rol-izenak parametroetan';
 $string['search:activity'] = 'URLa';
 $string['serverurl'] = 'Zerbitzariaren URLa';
-$string['url:addinstance'] = 'Gehitu beste URL baliabide bat';
+$string['url:addinstance'] = 'Gehitu URL berria';
 $string['url:view'] = 'Ikusi URLa';

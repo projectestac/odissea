@@ -25,7 +25,31 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confignumofreviews'] = 'Προεπιλεγμένος αριθμός υποβολών που κατανέμονται τυχαία';
+$string['addselfassessment'] = 'Προσθέστε αυτοαξιολογήσεις';
+$string['allocationaddeddetail'] = 'Νέα αξιολόγηση: Ο/Η <strong>{$a->reviewername}</strong> είναι εξεταστής του <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'Δεν είναι δυνατή η ακύρωση εκχώρησης ήδη βαθμολογημένης αξιολόγησης: εξεταστής: <strong>{$a->reviewername}</strong>, συγγραφέας υποβολής: <strong>{$a->authorname}</strong>';
+$string['allocationreuseddetail'] = 'Επαναχρησιμοποίηση αξιολόγησης: Ο/Η <strong>{$a->reviewername}</strong> διατηρήθηκε ως εξεταστής του <strong>{$a->authorname}</strong>';
+$string['allocationsettings'] = 'Ρυθμίσεις εκχώρησης';
+$string['assessmentdeleteddetail'] = 'Ακύρωση εκχώρησης αξιολόγησης: Ο/Η <strong>{$a->reviewername}</strong> δεν είναι πλέον εξεταστής του/της <strong>{$a->authorname}</strong>';
+$string['assesswosubmission'] = 'Οι συμμετέχοντες μπορούν να αξιολογήσουν χωρίς να έχουν υποβάλει τίποτα';
+$string['confignumofreviews'] = 'Προεπιλεγμένος αριθμός υποβολών που εκχωρούνται τυχαία';
+$string['excludesamegroup'] = 'Αποτρέψτε την εξέταση από ομότιμους (συναδέλφους) από την ίδια ομάδα';
+$string['noallocationtoadd'] = 'Καμία εκχώρηση για να προστεθεί';
+$string['nogroupusers'] = '<p>Προειδοποίηση: Εάν το εργαστήριο βρίσκεται σε λειτουργία «ορατές ομάδες» ή «ξεχωριστές ομάδες», τότε οι χρήστες ΠΡΕΠΕΙ να είναι μέρος τουλάχιστον μιας ομάδας για να τους εκχωρηθούν αξιολογήσεις από ομότιμους χρήστες με αυτό το εργαλείο. Οι χρήστες που δεν είναι μέλη ομάδας μπορούν πάντως να λάβουν νέες αυτο-αξιολογήσεις ή να καταργήσουν υπάρχουσες αξιολογήσεις.</p>
+<p>Αυτοί οι χρήστες δεν βρίσκονται αυτήν τη στιγμή σε ομάδα: {$a}</p>';
+$string['numofdeallocatedassessment'] = 'Ακύρωση εκχώρησης {$a} αξιολογήσεων (-ης)';
+$string['numofrandomlyallocatedsubmissions'] = 'Τυχαία ανάθεση {$a} εκχωρήσεων...';
 $string['numofreviews'] = 'Αριθμός αξιολογήσεων';
-$string['pluginname'] = 'Τυχαία κατανομή';
-$string['randomallocationdone'] = 'Τυχαία κατανομή';
+$string['numofselfallocatedsubmissions'] = 'Αυτο-εκχώρηση {$a} υποβολών (-ής)...';
+$string['numperauthor'] = 'ανά υποβολή';
+$string['numperreviewer'] = 'ανά εξεταστή';
+$string['pluginname'] = 'Τυχαία εκχώρηση';
+$string['privacy:metadata'] = 'Το πρόσθετο «Τυχαία εκχώρηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο. Τα πραγματικά προσωπικά δεδομένα σχετικά με το ποιος πρόκειται να αξιολογήσει ποιόν, αποθηκεύονται από από το ίδιο το άρθρωμα Εργαστηρίου και αποτελούν βάση για την εξαγωγή των λεπτομερειών αξιολόγησης.';
+$string['randomallocationdone'] = 'Η τυχαία εκχώρηση ολοκληρώθηκε';
+$string['removecurrentallocations'] = 'Ακύρωση τρεχουσών εκχωρήσεων';
+$string['resultnomorepeers'] = 'Δεν υπάρχουν άλλοι διαθέσιμοι ομότιμοι';
+$string['resultnomorepeersingroup'] = 'Δεν υπάρχουν άλλοι ομότιμοι χρήστες διαθέσιμοι σε αυτή τη χωριστή ομάδα';
+$string['resultnotenoughpeers'] = 'Δεν υπάρχουν αρκετοί διαθέσιμοι ομότιμοι';
+$string['resultnumperauthor'] = 'Προσπάθεια εκχώρησης {$a} αξιολογήσεων ανά συγγραφέα...';
+$string['resultnumperreviewer'] = 'Προσπάθεια εκχώρησης {$a} αξιολογήσεων ανά εξεταστή...';
+$string['stats'] = 'Στατιστικά τρεχουσών εκχωρήσεων';

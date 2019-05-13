@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XML-RPC protocol';
+$string['privacy:metadata'] = 'De XML-RPC protocol-plugin bewaart geen persoonlijke gegevens.';
 $string['xmlrpc:use'] = 'Gebruik XML-RPC protocol';

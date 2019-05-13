@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ltr'] = 'D\'esquerra a dreta';
 $string['pluginname'] = 'RTL/LTR';
+$string['privacy:metadata'] = 'El connector atto_rtl no emmagatzema cap dada personal.';
 $string['rtl'] = 'De dreta a esquerra';

@@ -40,6 +40,7 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer {
             'class' => 'wirisanswerfield',
         );
         if ($options->readonly) {
+            $inputattributes['class'] .= ' wirisreadonly';
             $inputattributes['readonly'] = 'readonly';
         }
 

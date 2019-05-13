@@ -272,11 +272,11 @@ $string['editcategory'] = 'Edita categoria';
 $string['editcatquestions'] = 'Edita preguntes de la categoria';
 $string['editingquestion'] = 'S\'està editant una pregunta';
 $string['editingquiz'] = 'S\'està editant el qüestionari';
-$string['editingquiz_help'] = 'Quan es crea un qüestionari, els conceptes fonamentals per tenir en compte són:
+$string['editingquiz_help'] = 'Quan es crea un qüestionari, els conceptes fonamentals per tenir en compte són els següents:
 
-* que pot tenir les preguntes en una o més pàgines;
-* el banc de preguntes, que emmagatzema les còpies de totes les preguntes organitzades en categories;
-* les preguntes aleatòries —cada estudiant té preguntes diferents cada vegada que intenta resoldre un qüestionari, i diferents estudiants poden tenir diferents preguntes.';
+* El qüestionari, que pot tenir les preguntes en una o més pàgines
+* El banc de preguntes, que emmagatzema les còpies de totes les preguntes organitzades en categories
+* Les preguntes aleatòries; cada estudiant té preguntes diferents cada vegada que intenta resoldre un qüestionari, i diferents estudiants poden tenir diferents preguntes';
 $string['editingquizx'] = 'S\'està editant el qüestionari: {$a}';
 $string['editmaxmark'] = 'Edita la puntuació màxima';
 $string['editoverride'] = 'Edita l\'excepció';
@@ -398,7 +398,7 @@ $string['gradesdeleted'] = 'S\'han suprimit les qualificacions del qüestionari'
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'La qualificació per aprovar no pot ser zero, ja que aquest qüestionari té el mètode de compleció configurat per demanar la qualificació mínima per aprovar. Poseu un valor diferent a zero.';
 $string['gradetopassnotset'] = 'Aquest qüestionari no té una qualificació per aprovar configurada, per això no podeu usar aquesta opció. Configureu la qualificació.';
-$string['gradingdetails'] = 'Punts d\'aquesta tramesa: {$a->raw}/{$a->max}.';
+$string['gradingdetails'] = 'Punts per a aquesta tramesa: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Amb les penalitzacions prèvies això dóna <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Aquesta tramesa ha rebut una penalització de {$a}.';
 $string['gradingdetailszeropenalty'] = 'Aquesta tramesa no ha estat penalitzada.';
@@ -489,7 +489,7 @@ Els qüestionaris es poden utilitzar:
 * Com a minitests després de tasques de lectura, o al final d\'un tema.
 * Com a examen de repàs si s\'utilitzen preguntes de qüestionaris anteriors.
 * Per oferir retroacció immediata sobre les capacitats de l\'alumne.
-* Per a autoavaluació.';
+* Per a l\'autoavaluació.';
 $string['modulenameplural'] = 'Qüestionaris';
 $string['moveselectedonpage'] = 'Mou les preguntes seleccionades a la pàgina: {$a}';
 $string['multichoice'] = 'Opcions múltiples';
@@ -515,7 +515,7 @@ $string['noattemptstoshow'] = 'No hi ha intents per mostrar';
 $string['nocategory'] = 'No heu especificat una categoria o la categoria és incorrecta';
 $string['noclose'] = 'No hi ha data de tancament';
 $string['nocommentsyet'] = 'Encara no hi ha comentaris';
-$string['noconnection'] = 'En aquest moment no hi ha connexió amb un servei web que pugui processar aquesta pregunta. Contacteu si us plau amb l\'administrador';
+$string['noconnection'] = 'En aquest moment no hi ha connexió amb un servei web que pugui processar aquesta pregunta. Contacteu amb l\'administrador';
 $string['nodataset'] = 'res: no és un comodí';
 $string['nodatasubmitted'] = 'No s\'han tramès dades.';
 $string['noessayquestionsfound'] = 'No s\'han trobat preguntes qualificades manualment';
@@ -542,7 +542,7 @@ $string['notavailabletostudents'] = 'Nota: aquest qüestionari no està disponib
 $string['notenoughrandomquestions'] = 'No hi ha prou preguntes a la categoria {$a->category} per crear la pregunta {$a->name} ({$a->id}).';
 $string['notenoughsubquestions'] = 'No heu definit prou subpreguntes!<br />
 Voleu tornar enrere i arreglar aquesta pregunta?';
-$string['notimedependentitems'] = 'A hores d\'ara els elements dependents del temps no funcionen amb el mòdul de qüestionaris. Provisionalment podeu definir un temps límit per a tot el qüestionari. Voleu triar un altre ítem diferent o malgrat tot preferiu utilitzar aquest?';
+$string['notimedependentitems'] = 'A hores d\'ara, els elements depenents del temps no funcionen amb el mòdul de qüestionaris. De manera provisional, podeu definir un límit de temps per a tot el qüestionari. Voleu triar un altre ítem diferent o, malgrat tot, preferiu utilitzar aquest?';
 $string['notyetgraded'] = 'Encara no s\'ha avaluat';
 $string['notyetviewed'] = 'Encara no s\'ha visualitzat';
 $string['notyourattempt'] = 'No és el vostre intent!';
@@ -580,7 +580,7 @@ $string['overduehandlingautosubmit'] = 'Els intents oberts s\'envien automàtica
 $string['overduehandling_desc'] = 'Què hauria de passar per defecte si un estudiant no envia el qüestionari abans que expiri el temps.';
 $string['overduehandlinggraceperiod'] = 'Hi ha un període de gràcia durant el qual els intents oberts es poden enviar, però no es poden contestar més preguntes';
 $string['overduehandling_help'] = 'Aquest paràmetre controla què ocorre si l\'estudiantat no envia el seu intent del qüestionari abans que el temps expiri. Si l\'estudiant està treballant activament en el qüestionari fins al moment, el temporitzador de compte enrere enviarà l\'intent per ell, però si ha tancat la sessió, aquest paràmetre controla què passa.';
-$string['overduemustbesubmittedby'] = 'Aquest intent ha arribat al termini de venciment. Ja s\'hauria d\'haver enviat. Si voleu que us sigui qualificat aquest qüestionari, heu d\'enviar-lo abans de {$a}. Si no ho envieu llavors, no es comptabilitzarà cap qualificació d\'aquest intent.';
+$string['overduemustbesubmittedby'] = 'Aquest intent ha arribat al termini de venciment. Ja s\'hauria d\'haver tramès. Si voleu que aquest qüestionari us sigui qualificat, l\'heu de trametre abans de {$a}. Si no el trameteu llavors, no es comptabilitzarà cap qualificació d\'aquest intent.';
 $string['override'] = 'Excepció';
 $string['overridedeletegroupsure'] = 'Segur que voleu sborrar l\'excepció pel grup {$a}?';
 $string['overridedeleteusersure'] = 'Segur que voleu esborrar l\'excepció per l\'usuari {$a}?';
@@ -665,6 +665,8 @@ $string['quiz:deleteattempts'] = 'Suprimeix intents del qüestionari';
 $string['quiz:emailconfirmsubmission'] = 'Rep un missatge de confirmació quan hi hagi enviaments';
 $string['quiz:emailnotifysubmission'] = 'Rep un missatge de notificació quan s\'hagi enviat un intent';
 $string['quiz:emailwarnoverdue'] = 'Rep un missatge de notificació quan un intent arribe al termini de venciment i necessiti enviar-se.';
+$string['quizeventcloses'] = '{$a} es tanca el';
+$string['quizeventopens'] = '{$a} s\'obre el';
 $string['quiz:grade'] = 'Qualifica els qüestionaris manualment';
 $string['quiz:ignoretimelimits'] = 'Ignora el límit de temps dels qüestionaris';
 $string['quizisclosed'] = 'El qüestionari està tancat';
@@ -854,7 +856,7 @@ $string['shownoimage'] = 'Sense imatge';
 $string['showreport'] = 'Mostra l\'informe';
 $string['showsmallimage'] = 'Imatge menuda';
 $string['showteacherattempts'] = 'Mostra els intents del professorat';
-$string['showuserpicture'] = 'Mostra la fotografia d\'usuari';
+$string['showuserpicture'] = 'Mostra la fotografia de l\'usuari';
 $string['showuserpicture_help'] = 'Si s\'activa, el nom i la fotografia de l\'estudiant apareixen a la pantalla mentre es realitza l\'intent, i a la pantalla de revisió, cosa que fa més fàcil comprovar que l\'alumne ha iniciat sessió com a si mateix en un entorn d\'examen supervisat.';
 $string['shuffle'] = 'Barreja';
 $string['shuffleanswers'] = 'Barreja respostes';
@@ -884,12 +886,12 @@ $string['startnewpreview'] = 'Comença una altra previsualització';
 $string['stateabandoned'] = 'Mai enviat';
 $string['statefinished'] = 'Acabat';
 $string['statefinisheddetails'] = 'Enviat {$a}';
-$string['stateinprogress'] = 'En progrés';
+$string['stateinprogress'] = 'En curs';
 $string['statenotloaded'] = 'L\'estat de la pregunta {$a} no s\'ha carregat de la base de dades';
 $string['stateoverdue'] = 'Venciment';
 $string['stateoverduedetails'] = 'Ha d\'enviar-se en {$a}';
 $string['status'] = 'Estat';
-$string['stoponerror'] = 'Atura\'t si es produeix un error';
+$string['stoponerror'] = 'Atura si es produeix un error';
 $string['submitallandfinish'] = 'Envia i acaba';
 $string['subneterror'] = 'Aquest qüestionari ha estat blocat i només és accessible des de certes ubicacions. A hores d\'ara el vostre ordinador no és un dels que han estat autoritzats.';
 $string['subnetnotice'] = 'Aquest qüestionari ha estat blocat de manera que només sigui accessible des de certes ubicacions. El vostre ordinador no es troba en una subxarxa autoritzada. Tanmateix com a professor podeu previsualitzar-lo.';
@@ -907,9 +909,9 @@ $string['time'] = 'Temps';
 $string['timecompleted'] = 'Completat';
 $string['timedelay'] = 'No us permès de tornar a contestar aquest qüestionari perquè no heu deixat passar el temps estipulat per a nous intents.';
 $string['timeleft'] = 'Temps restant';
-$string['timelimit'] = 'Temps màxim';
-$string['timelimitexeeded'] = 'Heu esgotat el temps';
-$string['timelimit_help'] = 'Si està activat, el límit de temps s\'indica a la pàgina inicial del qüestionari i en el bloc de navegació del qüestionari es mostra un temporitzador de compte enrere.';
+$string['timelimit'] = 'Límit de temps';
+$string['timelimitexeeded'] = 'S\'ha acabat el temps per fer el qüestionari';
+$string['timelimit_help'] = 'Si està activat, el límit de temps s\'indica a la pàgina inicial del qüestionari, i es mostra un temporitzador de compte enrere al bloc de navegació del qüestionari.';
 $string['timestr'] = '%d/%m/%y - %H:%M:%S';
 $string['timesup'] = 'Temps esgotat';
 $string['timetaken'] = 'Temps emprat';

@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['navigationlink'] = 'Συνεδρίες περιηγητή';
-$string['usersessions:manageownsessions'] = 'Διαχείρηση των συνεδριών του περιηγητή σας';
+$string['mysessions'] = 'Οι ενεργές σύνοδοί μου';
+$string['navigationlink'] = 'Σύνοδοι περιηγητή';
+$string['pluginname'] = 'Αναφορά συνόδων χρήστη';
+$string['privacy:metadata'] = 'Το πρόσθετο «Αναφορά συνόδων χρήστη» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['thissession'] = 'Τρέχουσα σύνοδος';
+$string['usersessions:manageownsessions'] = 'Διαχείριση των συνόδων του περιηγητή σας';

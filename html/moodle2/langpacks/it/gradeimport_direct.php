@@ -25,7 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['direct:view'] = 'Importa valutazioni da CSV';
+$string['direct:view'] = 'Importare valutazioni da foglio elettronico';
 $string['pluginname'] = 'Incolla da foglio elettronico';
+$string['privacy:metadata'] = 'Il plugin per l\'importazione delle valutazioni \'Incolla da foglio elettronico\' non memorizza dati personali.';
 $string['userdata'] = 'Aiuto su Incolla da foglio elettronico';
 $string['userdata_help'] = 'Le valutazioni possono essere copiate da un foglio elettronico e incollate all\'interno del registro valutatore. Il foglio elettronico deve avere una colonna contenente i dati riguardanti l\'identità dell\'utente (lo username, il codice identificativo oppure l\'indirizzo e-mail). Ogni colonna da importare deve avere un\'intestazione di colonna.';

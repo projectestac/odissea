@@ -27,9 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Eskura dauden erregistro-aukerak';
 $string['configlogplugins'] = 'Gaitu beharrezko pluginak eta antolatu ordena egokian.';
+$string['exportlog'] = 'Sartu agerraldiak esportatzean.';
+$string['exportlogdetail'] = 'Sartu erabiltzailearekin lotutako agerraldiak esportatzean.';
 $string['logging'] = 'Agerraldiak';
 $string['managelogging'] = 'Kudeatu agerraldi-biltegiak';
-$string['pluginname'] = 'Agerraldi-biltegiaren kudeatzaiea';
+$string['pluginname'] = 'Agerraldi-biltegiaren kudeatzailea';
 $string['privacy:metadata:logstore'] = 'Erregistro-biltegiak';
 $string['privacy:path:logs'] = 'Erregistroak';
 $string['privacy:request:origin:cli'] = 'Komando-lerro bidezko erreminta';

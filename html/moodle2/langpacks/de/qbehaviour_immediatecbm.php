@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Wie sicher sind Sie bei Ihrer Antwort?';
 $string['pluginname'] = 'Direkte Auswertung (mit Selbsteinschätzung)';
-$string['privacy:metadata'] = 'Der Direkte Feedback mit Bestimmtheit Modus des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Direkte Feedback mit Bestimmtheit Modus des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Rechtschreibung prüfen';
-$string['privacy:metadata'] = 'Das TinyMCE-Plugin \'Rechtschreibprüfung\' speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das TinyMCE-Plugin \'Rechtschreibprüfung\' speichert keine personenbezogenen Daten.';

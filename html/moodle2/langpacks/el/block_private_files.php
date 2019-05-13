@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Προσωπικά αρχεία';
+$string['privacy:metadata'] = 'Το μπλοκ Ιδιωτικά αρχεία παρέχει μόνο μια προβολή και ένα σύνδεσμο προς τα ιδιωτικά αρχεία του χρήστη.';
 $string['privatefiles'] = 'Προσωπικά αρχεία';
 $string['private_files:addinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία';
-$string['private_files:myaddinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία στη σελίδα Η αρχική μου';
+$string['private_files:myaddinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία στο Ταμπλό';

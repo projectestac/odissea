@@ -43,13 +43,14 @@ $string['atmaxentry'] = 'Onartutako sarrera kopuru handiena erantsi duzu!';
 $string['authorfirstname'] = 'Egilearen izena';
 $string['authorlastname'] = 'Egilearen deitura';
 $string['autogenallforms'] = 'Lehenetsitako txantiloi guztiak sortu';
-$string['autolinkurl'] = 'URL-a automatikoki estekatu';
+$string['autolinkurl'] = 'URLa automatikoki estekatu';
 $string['availablefromdate'] = 'Noiztik eskuragarri';
 $string['availabletags'] = 'Etiketa eskuragarriak';
-$string['availabletags_help'] = '<p>Markak txantiloian dauden edukigailuak dira. Sarrerak editatu edo ikusi ondoren eremu edo botoiek ordezkatuko dituzte.</p>
-<p>Eremuen formatua hauxe da : [[eremuaren izena]]</p>
-<p>Botoien formatua hauxe da: ##botoiren bat##</p>
-<p>Bakarrik &quot;Marka eskuragarriak&quot; izeneko zerrendan dauden markak erabil daitezke txantiloi honetan.</p>';
+$string['availabletags_help'] = 'Markak txantiloian dauden gakoak dira. Sarrerak editatu edo ikusi ondoren eremu edo botoiek ordezkatuko dituzte.
+
+Eremuen formatua [[eremuaren izena]] da. Bestelako etiketen formatua ##etiketa## da.
+
+Soilik "Eskuragarri dauden etiketak" zerrendan dauden etiketak erabil daitezke txantiloi honetan.';
 $string['availabletodate'] = 'Noiz arte eskuragarri';
 $string['availabletodatevalidation'] = 'Eskuragarri egoteko azken eguna ezin da hasiera baino lehenagokoa izan.';
 $string['blank'] = 'Hutsik';
@@ -99,7 +100,7 @@ $string['csvimport_help'] = '<p>CSVk zera esan nahi du: Comma-Separated-Values (
 </pre>
 <p>Kontuz! Baliteke eremu-formatu guztiak onargarriak ez izatea.</p>';
 $string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> testua eta aukeratutako banatzailea';
-$string['data:addinstance'] = 'Gehitu beste datu-base bat';
+$string['data:addinstance'] = 'Gehitu datu-base berria';
 $string['data:approve'] = 'Onartu eta bertan behera utzi onartutako sarrerak';
 $string['data:comment'] = 'Iruzkinak idatzi';
 $string['data:exportallentries'] = 'Datu-baseko sarrera guztiak esportatu ';
@@ -121,9 +122,9 @@ $string['data:viewrating'] = 'Denera jasotako kalifikazioak ikusi';
 $string['data:writeentry'] = 'Sarrerak idatzi';
 $string['date'] = 'Data';
 $string['dateentered'] = 'Sartutako dataren arabera';
-$string['defaultfielddelimiter'] = '(kakotxa da berezko karakterea)';
-$string['defaultfieldenclosure'] = '(ez dago berezkorik)';
-$string['defaultsortfield'] = 'Berezko eremu laburra';
+$string['defaultfielddelimiter'] = '(koma da lehenetsitako karakterea)';
+$string['defaultfieldenclosure'] = '(ez dago lehenetsitakorik)';
+$string['defaultsortfield'] = 'Lehenetsitako ordenatze-eremua';
 $string['delcheck'] = 'Ezabaketa masiborako laukitxoa';
 $string['delete'] = 'Ezabatu';
 $string['deleteallentries'] = 'Sarrera guztiak ezabatu';
@@ -151,7 +152,7 @@ $string['entry'] = 'Sarrera';
 $string['entrysaved'] = 'Zure sarrera gorde egin da';
 $string['errormustbeteacher'] = 'Orri hau erabiltzeko irakasle izan behar duzu!';
 $string['errormustsupplyvalue'] = 'Hemen balio bat eman behar duzu.';
-$string['errorpresetexists'] = 'Dagoeneko bada elementu bat  aukeratutako izena duena';
+$string['errorpresetexists'] = 'Dagoeneko bada aurretiko ezarpen bat aukeratutako izena duena';
 $string['eventfieldcreated'] = 'Eremua sortua';
 $string['eventfielddeleted'] = 'Eremua ezabatua';
 $string['eventfieldupdated'] = 'Eremua eguneratua';
@@ -181,16 +182,8 @@ $string['fieldheightlistview'] = 'Altuera zerrenda-ikuspegian';
 $string['fieldheightsingleview'] = 'Altuera ikuspegi xumean';
 $string['fieldids'] = 'Eremuak';
 $string['fieldmappings'] = 'Eremu-loturak';
-$string['fieldmappings_help'] = '<p>Menu honek datuak aldez aurretik dagoen datu-base batetik
-hartzeko aukera ematen dizu. Datua eremu batean mantentzeko, eremu berriarekin
-lotu behar duzu, eta bertan agertuko da datua. Zuri ere utzi ahal da eremu bat,
-bertan informaziorik ez kopiatuta. Beste batekin lotu gabeko eremu zaharrak
-galdu egingo dira eta beren datuak ezabatu.</p>
-
-<p>Mota bereko datuak bakarrik lotu ahal dituzu, zabaltzen den menu bakoitzak
-eremu ezberdinak baititu. Beraz, kontuz ibili behar duzu eremu zahar bat
-eremu berri bat baino gehiagorekin ez lotzeko.
-</p>';
+$string['fieldmappings_help'] = 'Menu honek datuak aldez aurretik dagoen datu-base bateko datuak mantentzeko aukera ematen dizu. Eremu bateko datuak mantentzeko, eremu hori eremu berriarekin lotu behar duzu, eta horrela datuak bertan agertuko dira. Hutsik ere utzi ahal da eremu bat, bertan informaziorik ez kopiatuta. Beste batekin lotu gabeko eremu zaharrak galdu egingo dira eta bertako datuak ezabatuko dira.
+Eremuak lotzeko mota berekoak izan behar dira, zabaltzen den menu bakoitzak eremu ezberdinak dituelako. Horretaz gain, kontuz ibili behar duzu eremu zahar bat eremu berri bat baino gehiagorekin ez lotzeko.';
 $string['fieldname'] = 'Eremuaren izena';
 $string['fieldnotmatched'] = 'Zure fitxategiaren ondoko eremuak ezezagunak dira datu-base honetan: {$a}';
 $string['fieldoptions'] = 'Aukerak (bat lerroko)';
@@ -231,13 +224,13 @@ $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Datu-basea motak
 $string['insufficiententries'] = 'datu-base hau ikusteko sarrera gehiago beharrezkoak dira';
 $string['intro'] = 'Deskribapena';
 $string['invalidaccess'] = 'Orri honetarako sarbidea ez da zuzena izan';
-$string['invalidfieldid'] = 'Eremuaren IDa ez da zuzena';
+$string['invalidfieldid'] = 'Eremuaren IDa ezegokia da';
 $string['invalidfieldname'] = 'Eremu honetarako beste izen bat aukeratu, mesedez';
-$string['invalidfieldtype'] = 'Eremu-mota ez da zuzena';
-$string['invalidid'] = 'Datuen IDa ez da zuzena';
+$string['invalidfieldtype'] = 'Eremu mota ezegokia da';
+$string['invalidid'] = 'Datuen IDa ezegokia da';
 $string['invalidpreset'] = '{$a} ez da aurretiko ezarpena.';
-$string['invalidrecord'] = 'Erregistroa ez da zuzena';
-$string['invalidurl'] = 'Sartu duzun URL-a ez da onargarria';
+$string['invalidrecord'] = 'Erregistroa ezegokia da';
+$string['invalidurl'] = 'Sartu duzun URLa ez da onargarria';
 $string['jstemplate'] = 'Javascript txantiloia';
 $string['latitude'] = 'Latitudea';
 $string['latlong'] = 'Latitudea/Longitudea';
@@ -262,17 +255,17 @@ $string['menuchoose'] = 'Aukeratu...';
 $string['missingdata'] = 'Objektuaren edo datuen IDa eman behar duzu eremu-motan';
 $string['missingfield'] = 'Programatze-errorea: zehaztu behar duzu eremua edota datua eremu-mota definitzerakoan.';
 $string['modulename'] = 'Datu-basea';
-$string['modulename_help'] = 'Datu-basea jarduera moduluak aukera ematen die irakasleei edota ikasleei edozein gairen inguruko sarreren bilduma bat sortu, erakutsi eta bilatzeko. Sarreren egitura irakasleek definitzen dituzten eremuen bidez eratzen da. Eremuak mota askotakoak izan daitezke, besteak beste kontrol-laukiak, aukera-botoiak, aukera-menuak, testu edo zenbaki eremuak, URLak, irudiak eta igotako fitxategiak.
+$string['modulename_help'] = 'Datu-basea jarduera moduluak irakasleei edo ikasleei edozein gairen inguruko sarreren bilduma bat sortu, erakutsi eta bilatzeko aukera ematen die. Sarreren egitura irakasleek definitzen dituzten eremuen bidez eratzen da. Eremuak mota askotakoak izan daitezke, besteak beste kontrol-laukitxoak, aukera-botoiak, aukera-menuak, testu edo zenbaki eremuak, URLak, irudiak eta igotako fitxategiak.
 
-Informazioa erakusteko diseinua (editatzean edo zerrenda zein sarrera bakarra ikustean) txantiloien bidez kontrolatu daiteke. Datu-base jarduerak ikastaroen artean aurrezarpen moduan elkarbana daitezke eta irakasleek datu-base sarrerak inporta eta esporta ditzakete.
+Datu-baseko sarrerak zerrendatu, ikusi edo editatzean informazioa erakusteko diseinua datu-baseen txantiloien bidez kontrolatu daiteke. Datu-base jarduerak ikastaroen artean aurrezarpen moduan partekatu daitezke eta irakasleek datu-base sarrerak inportatu eta esportatu ditzakete.
 
 Datu-baserako esteka automatikoak egiteko iragazkia piztuta badago, datu-basean dagoen edozein sarrera automatikoki estekatuko da ikastaroan hitz edo esaldi horiek agertzen direnean.
 
-Irakasleek sarreretan iruzkinak egitea ahalbide dezake. Irakasleek sarrerak kalifika ditzakete, baita ikasleek ere (berdinen ebaluazioa). Ebaluazioak pilatu daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikazio-liburuan gordeko dena.
+Irakasleek sarreretan iruzkinak egitea ahalbide dezake. Irakasleek sarrerak kalifika ditzakete, baita ikasleek ere (parekoen arteko ebaluazioa). Ebaluazioak batu daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikazio-liburuan gordeko dena.
 
 Datu-base jarduerak erabilera anitzak izan ditzake, hala nola
 
-* Elkarlanean egindako bildumak sortzeko (web-estekak, liburuak, liburu-ritikak, aldizkari-erreferentziak,...)
+* Elkarlanean egindako bildumak sortzeko (web-estekak, liburuak, liburu-kritikak, aldizkari-erreferentziak,...)
 * Ikasleek sortutako edukiak erakusteko (argazkiak, posterrak, web-guneak, olerkiak,...) eta beren iruzkinak eta kritikak jasotzeko.';
 $string['modulenameplural'] = 'Datu-baseak';
 $string['more'] = 'Gehiago';
@@ -334,16 +327,16 @@ $string['presets'] = 'Aurretiko ezarpenak';
 $string['privacy:metadata:commentpurpose'] = 'Datu-baseko sarrerez iruzkinak';
 $string['privacy:metadata:data_content'] = 'Datu-base jarduera-moduluko eremu baten erantzuna adierazten du.';
 $string['privacy:metadata:data_content:content'] = 'Edukia';
-$string['privacy:metadata:data_content:content1'] = '1 eduki gehigarria';
-$string['privacy:metadata:data_content:content2'] = '2 eduki gehigarria';
-$string['privacy:metadata:data_content:content3'] = '3 eduki gehigarria';
-$string['privacy:metadata:data_content:content4'] = '4 eduki gehigarria';
+$string['privacy:metadata:data_content:content1'] = 'Eduki gehigarria 1';
+$string['privacy:metadata:data_content:content2'] = 'Eduki gehigarria 2';
+$string['privacy:metadata:data_content:content3'] = 'Eduki gehigarria 3';
+$string['privacy:metadata:data_content:content4'] = 'Eduki gehigarria 4';
 $string['privacy:metadata:data_content:fieldid'] = 'Eremuaren definizioaren IDa';
 $string['privacy:metadata:datafieldnpluginsummary'] = 'Datu-base jarduera-modulurako eremuak';
 $string['privacy:metadata:data_records'] = 'Datu-base jarduera-moduluko sarrerak adierazten ditu.';
 $string['privacy:metadata:data_records:approved'] = 'Onespen-egoera';
 $string['privacy:metadata:data_records:groupid'] = 'Taldea';
-$string['privacy:metadata:data_records:timecreated'] = 'Sarrera noiz sortu zen';
+$string['privacy:metadata:data_records:timecreated'] = 'Erregistroa sortu zeneko unea';
 $string['privacy:metadata:data_records:timemodified'] = 'Sarrera noiz aldatu den';
 $string['privacy:metadata:data_records:userid'] = 'Sarrera nork sortu duen';
 $string['privacy:metadata:filepurpose'] = 'Datu-basearen sarrerari erantsitako fitxategia';
@@ -368,11 +361,11 @@ Mesedez horren ordez \'Sarrerak behar dira\' ezarpen berria erabili ezazu.';
 $string['requiredentriestoview'] = 'Ikusi aurretik behar diren sarrerak';
 $string['requiredentriestoview_help'] = 'Datu-basearen gainerako sarrerak ikusi baino lehen, partaideek bidali behar duten sarrera-kopurua zehaztu behar da hemen.
 
-Oharra: sarrera-kopuru bat derrigortzen bada, esteka automatikoak egiteko iragazkia ezgaitu beharko litzateke, honek ezin baitu jakin erabiltzaileak eskatutako sarrera kopurura iritsi den.';
+Oharra: sarrera-kopuru bat derrigortzen bada, esteka automatikoak egiteko iragazkia desgaitu beharko litzateke, honek ezin baitu jakin erabiltzaileak eskatutako sarrera kopurura iritsi den.';
 $string['requiredentrieswarning'] = 'Ezarpen hau jarduera-osaketako "Behartu sarrerak" ezarpenarekin ordezkatu da.';
 $string['requiredfield'] = 'Beharrezko eremua';
-$string['resetsettings'] = 'Berrabiarazi iragazkiak';
-$string['resettemplate'] = 'Berriabiarazi txantiloia';
+$string['resetsettings'] = 'Garbitu iragazkiak';
+$string['resettemplate'] = 'Berrabiarazi txantiloia';
 $string['resizingimages'] = 'Irudi txikien tamaina aldatzen';
 $string['rows'] = 'errenkadak';
 $string['rssglobaldisabled'] = 'Desgaituta. Gunearen konfigurazio-aldagaiak ikusi.';
@@ -407,8 +400,8 @@ $string['templates'] = 'Txantiloiak';
 $string['templatesaved'] = 'Txantiloia gordeta';
 $string['text'] = 'Testua';
 $string['textarea'] = 'Testu-eremua';
-$string['timeadded'] = 'Denbora gehituta';
-$string['timemodified'] = 'Denbora aldatuta';
+$string['timeadded'] = 'Gehitze-data';
+$string['timemodified'] = 'Aldatze-data';
 $string['todatabase'] = 'datu- base honetara.';
 $string['type'] = 'Fitxategi-mota';
 $string['undefinedprocessactionmethod'] = 'Data_Preset-en ez da ekintza-metodorik definitu "{$a}" ekintza kudeatzeko.';
@@ -418,11 +411,11 @@ $string['uploadfile'] = 'Igo fitxategia';
 $string['uploadrecords'] = 'Datuak fitxategi batetik igo';
 $string['uploadrecords_help'] = 'Sarrerak testu-fitxategien bitartez igo daitezke. Fitxategiaren formatuak honelakoa izan behar du:
 
-* Fitxategiaren lerro bakoitzak erregistro bat dauka
-* Erregistro bakoitza komaz (edo beste bereizle batez) bereizitako datu-serie bat da
-* Lehenengo erregistroak eremu-izenen zerrenda eduki behar du, eta fitxategiaren gainerakoaren formatua definituko du
+* Fitxategiko errenkada bakoitzak erregistro bana du
+* Erregistro bakoitza komaz (edo bestelako bereizle batez) banatutako datu-multzo bat da
+* Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 
-Eremu-itxitura da erregistro bakoitzaren eremu bakoitza inguratzen duen karaktere bat. Normalean ezarri gabe utzi daiteke.';
+Eremu-itxitura erregistro bakoitzaren eremu bakoitza inguratzen duen karaktere bat da. Normalean ezarri gabe utzi daiteke.';
 $string['url'] = 'Url';
 $string['usedate'] = 'Sartu bilaketan.';
 $string['usestandard'] = 'Erabili aurretiko ezarpena';

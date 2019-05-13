@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tekstzone';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Tekstzone voor profielveld gebruikersgegevens';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'De format van de tekstzone voor profielveld gebruikersgegevens';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'De ID van het profielveld';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Bijkomende gebruikersgegevens';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'De ID van de gebruiker wiens data bewaard worden door de Textzone profielveld';

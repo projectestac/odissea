@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['courseactivities'] = 'Kategoriak, ikastaroak eta ikastaroko jarduerak';
 $string['courses'] = 'Kategoriak eta ikastaroak';
 $string['coursestructures'] = 'Kategoriak, ikastaroak eta ikastaroen egiturak';
-$string['enabledockdesc'] = 'Utzi erabiltzaileari blokea ertzera eramaten';
+$string['enabledockdesc'] = 'Baimendu erabiltzaileari blokea ertzera eramaten';
 $string['everything'] = 'Guztia';
 $string['expansionlimit'] = 'Nabigazioa sortu hurrengorako';
 $string['linkcategoriesdesc'] = 'Kategoriak esteka gisa erakutsi';

@@ -65,10 +65,10 @@ Cela pourrait par exemple ressembler à ceci :
     add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
 $string['privacy:metadata:enrol_flatfile'] = 'Le plugin d\'inscriptions par fichier plat (CSV) enregistre des données personnelles en lien avec de futures inscriptions, dans la table enrol_flatfile.';
-$string['privacy:metadata:enrol_flatfile:action'] = 'L\'action d\'inscription attendue à la date donnée.';
-$string['privacy:metadata:enrol_flatfile:courseid'] = 'L\'identifiant du cours associé à l\'inscription.';
-$string['privacy:metadata:enrol_flatfile:roleid'] = 'L\'identifiant du rôle à attribuer ou à retirer.';
-$string['privacy:metadata:enrol_flatfile:timeend'] = 'La date et l\'heure de la fin du changement d\'inscription.';
-$string['privacy:metadata:enrol_flatfile:timemodified'] = 'La date et l\'heure de modification du changement d\'inscription.';
-$string['privacy:metadata:enrol_flatfile:timestart'] = 'La date et l\'heure du début du changement d\'inscription.';
-$string['privacy:metadata:enrol_flatfile:userid'] = 'L\'identifiant de l\'utilisateur associé à l\'attribution du rôle.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'L\'action d\'inscription attendue à la date donnée';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'L\'identifiant du cours associé à l\'inscription';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'L\'identifiant du rôle à attribuer ou à retirer';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'La date et l\'heure de la fin de l\'inscription';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'La date et l\'heure de la modification de l\'inscription';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'La date et l\'heure du début de l\'inscription';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'L\'identifiant de l\'utilisateur associé à l\'attribution du rôle';

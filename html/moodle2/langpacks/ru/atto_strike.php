@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Перечеркнутый';
+$string['privacy:metadata'] = 'Плагин atto_strike не хранит никаких персональных данных.';

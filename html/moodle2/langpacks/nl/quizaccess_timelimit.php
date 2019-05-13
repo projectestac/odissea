@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = 'De test heeft een tijdslimiet van {$a}. De tijd begint te lopen vanaf het moment dat je je poging start en je moet insturen voor de tijd afloopt. Weet je zeker dat je nu wil beginnen?';
 $string['confirmstartheader'] = 'Test met tijdslimiet';
 $string['pluginname'] = 'Toegangsregel: tijdslimiet';
+$string['privacy:metadata'] = 'De tijdsbeperking testtoegangsregel-plugin bewaart geen persoonlijke gegevens.';
 $string['quiztimelimit'] = 'Tijdslimiet: {$a}';

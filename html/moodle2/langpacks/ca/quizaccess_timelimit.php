@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'El qüestionari té un temps màxim de {$a}. El temps començarà a comptar des del moment en què inicieu l\'intent i s\'ha d\'enviar abans que el temps expiri. Confirmeu que voleu començar ara?';
+$string['confirmstart'] = 'El qüestionari té un límit de temps de {$a}. El temps començarà a comptar des del moment en què inicieu l\'intent i s\'ha d\'enviar abans que el temps acabi. Confirmeu que voleu començar ara?';
 $string['confirmstartheader'] = 'Qüestionari cronometrat';
-$string['pluginname'] = 'Temps límit per accedir a la pregunta';
-$string['quiztimelimit'] = 'Temps màxim: {$a}';
+$string['pluginname'] = 'Límit de temps per accedir a la pregunta';
+$string['quiztimelimit'] = 'Límit de temps: {$a}';

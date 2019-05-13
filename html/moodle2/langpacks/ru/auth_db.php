@@ -48,6 +48,7 @@ $string['auth_dbinsertusererror'] = 'Ошибка при добавлении п
 $string['auth_dbname'] = 'Название базы данных. Оставьте поле пустым при использовании ODBC DSN.
 Оставьте пустым, если ваш PDO DSN уже содержит имя базы данных.';
 $string['auth_dbname_key'] = 'Название базы данных';
+$string['auth_dbnoexttable'] = 'Внешняя таблица не указана.';
 $string['auth_dbpass'] = 'Пароль, соответствующий указанному логину';
 $string['auth_dbpass_key'] = 'Пароль';
 $string['auth_dbpasstype'] = '<p>Определяет формат используемого поля пароля. </p><p>Используйте режим «внутренний», если Вы хотите, чтобы во внешней базе данных хранились логины и адреса электронной почты, а паролями управляла система Moodle. При использовании режима «внутренний» <i>необходимо</i> обеспечить заполнение поля адреса электронной почты во внешней базе данных и регулярно запускать скрипты admin/cron.php и auth/db/cli/sync_users.php. Moodle по электронной почте будет отправлять новым пользователям сообщения с временным паролем.</p>';
@@ -63,8 +64,9 @@ $string['auth_dbsybasequoting'] = 'Кавычки как в Sybase';
 $string['auth_dbsybasequotinghelp'] = 'Экранирование апострофа в стиле Sybase - необходимо для Oracle, MS SQL и некоторых других баз данных. Не используйте для MySQL!';
 $string['auth_dbsyncuserstask'] = 'Синхронизация задач пользователей';
 $string['auth_dbtable'] = 'Название таблицы в базе данных';
+$string['auth_dbtableempty'] = 'Внешняя таблица пуста.';
 $string['auth_dbtable_key'] = 'Таблица';
-$string['auth_dbtype'] = 'Тип базы данных (Подробнее в <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">документации по ADOdb</a>)';
+$string['auth_dbtype'] = 'Тип базы данных (подробнее в <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer for PHP</a>).';
 $string['auth_dbtype_key'] = 'База данных';
 $string['auth_dbupdateusers'] = 'Обновить пользователей';
 $string['auth_dbupdateusers_description'] = 'Помимо добавления новых пользователей обновляются существующие пользователи.';
@@ -75,3 +77,4 @@ $string['auth_dbusernotexist'] = 'Невозможно обновить несу
 $string['auth_dbuserstoadd'] = 'Записи пользователей для добавления: {$a}';
 $string['auth_dbuserstoremove'] = 'Записи пользователей для удаления: {$a}';
 $string['pluginname'] = 'Внешняя база данных';
+$string['privacy:metadata'] = 'Плагин аутентификации «Внешняя база данных» не хранит никаких персональных данных.';

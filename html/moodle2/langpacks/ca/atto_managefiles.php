@@ -27,10 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['deleteselected'] = 'Suprimeix els fitxers seleccionats';
 $string['filemanager'] = 'Gestor de fitxers';
-$string['hasmissingfiles'] = 'AVÍS. Els fitxers següents que són referenciats en l\'àrea de text no pareix que existeixin:';
+$string['hasmissingfiles'] = 'AVÍS. Els fitxers següents que són referenciats a l\'àrea de text no sembla que existeixin:';
 $string['managefiles'] = 'Gestiona fitxers';
 $string['missingfiles'] = 'Fitxers perduts';
 $string['pluginname'] = 'Gestiona fitxers';
-$string['unusedfilesdesc'] = 'Els fitxers incrustats següents no s\'estan utilitzant en l\'àrea de text:';
+$string['privacy:metadata'] = 'El connector atto_managefiles no emmagatzema cap dada personal.';
+$string['unusedfilesdesc'] = 'Els fitxers incrustats següents no s\'utilitzen a l\'àrea de text:';
 $string['unusedfilesheader'] = 'Fitxers no utilitzats';
 $string['unusedfilesremovalnotice'] = 'Qualsevol fitxer no utilitzat s\'eliminarà automàticament quan deseu els canvis.';

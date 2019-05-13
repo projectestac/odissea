@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Formato Aiken';
 $string['pluginname_help'] = 'E\' un formato molto semplice utile per importare domande a risposta multipla tramite un file di testo.';
+$string['privacy:metadata'] = 'Il plugin Formato di importazione domande \'Formato Aiken\' non memorizza dati personali.';

@@ -37,3 +37,4 @@ $string['nohandler'] = 'Non hai un manexador para o tipo de pregunta {$a}';
 $string['pluginname'] = 'Formato Gift';
 $string['pluginname_help'] = 'O formato Gift permite a importación ou exportación, mediante ficheiro de texto, de preguntas tipo selección múltiple, verdadeiro-falso, resposta curta, emparellamento, palabras perdidas, numéricas e ensaio.';
 $string['pluginname_link'] = 'qformat/gift';
+$string['privacy:metadata'] = 'O engadido de formato de preguntas Gift non almacena ningún dato persoal.';

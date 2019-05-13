@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Voeg criterium toe';
-$string['alwaysshowdefinition'] = 'Sta toe dat de gebruikers een voorbeeld kunnen zien van de rubric die wordt gebruikt (zoniet is de rubric enkel zichtbaar na de beoordeling)';
+$string['alwaysshowdefinition'] = 'Toon de rubric aan de leerlingen (zoniet is de rubric enkel zichtbaar na de beoordeling)';
 $string['backtoediting'] = 'Terug naar bewerken';
 $string['confirmdeletecriterion'] = 'Weet je zeker dat je dit criterium wil wissen?';
 $string['confirmdeletelevel'] = 'Weet je zeker dat je dit niveau wil wissen?';
@@ -60,6 +60,11 @@ $string['name'] = 'Naam';
 $string['needregrademessage'] = 'De rubricdefinitie is gewijzigd nadat de leerling beoordeeld werd. De leerling kan zijn rubric niet zien tot je deze controleert en het cijfer aanpast.';
 $string['pluginname'] = 'Rubric';
 $string['previewrubric'] = 'Voorbeeld van rubric';
+$string['privacy:metadata:criterionid'] = 'Een identificatie voor een specifiek criterium dat wordt beoordeeld.';
+$string['privacy:metadata:fillingssummary'] = 'Slaat informatie op over het cijfer van de gebruiker dat door de rubric is gemaakt.';
+$string['privacy:metadata:instanceid'] = 'Een identificatie die betrekking heeft op een cijfer in een activiteit.';
+$string['privacy:metadata:levelid'] = 'Het niveau verkregen in de rubric.';
+$string['privacy:metadata:remark'] = 'Opmerkingen met betrekking tot het criterium in de rubric dat wordt beoordeeld.';
 $string['regrademessage1'] = 'Je gaat wijzigingen aanbrengen aan een rubric die al gebruikt is voor het beoordelen. Geef aan of bestaande cijfers moeten nagekeken worden. Als je dit aangeeft, dan zal de rubric verborgen blijven voor leerlingen tot hun item opnieuw beoordeeld is.';
 $string['regrademessage5'] = 'Je gaat belangrijke wijzigingen aan een rubric die al gebruikt is voor het beoordelen bewaren. Het cijfer in de cijferlijst zal niet aangepast worden, maar de rubric zal verborgen blijven voor leerlingen tot je hun item opnieuw hebt beoordeeld.';
 $string['regradeoption0'] = 'Niet markeren voor opnieuw beoordelen.';

@@ -68,6 +68,8 @@ $string['globalsearch'] = 'グローバル検索';
 $string['globalsearchdisabled'] = 'グローバル検索が有効にされていません。';
 $string['incourse'] = 'コース {$a}';
 $string['index'] = 'インデックス';
+$string['indexwhendisabledfullnotice'] = '検索が無効にされているため、現在、インデックス化することはできません。これを有効にするには<a href="{$a->url}">searchindexwhendisabled</a>設定をご覧ください。';
+$string['indexwhendisabledshortnotice'] = 'インデックス化は利用できません。';
 $string['invalidindexerror'] = 'インデックスディレクトリに無効なインデックスが含まれているか、インデックスがありません。';
 $string['ittook'] = '検索時間:';
 $string['matchingfile'] = 'ファイル<span class="filename">{$a}</span>に合致する';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add'] = '添加';
 $string['addcaptionstrack'] = '添加说明轨道网址';
 $string['addchapterstrack'] = '添加章节轨道网址';
 $string['adddescriptionstrack'] = '添加描述轨道网址';
@@ -32,6 +33,7 @@ $string['addmetadatatrack'] = '添加元数据轨道';
 $string['addsource'] = '添加替代来源';
 $string['addsource_help'] = '建议使用另一种媒体源，因为桌面和移动浏览器支持的文件格式各不相同。';
 $string['addsubtitlestrack'] = '添加字幕轨道';
+$string['addtrack'] = '添加跟踪';
 $string['advancedsettings'] = '高级设置';
 $string['audio'] = '音频';
 $string['audiosourcelabel'] = '音频源网址';
@@ -54,6 +56,7 @@ $string['entername'] = '输入名称';
 $string['entersource'] = '源网址';
 $string['enterurl'] = '输入网址';
 $string['height'] = '高度';
+$string['kind'] = '类型';
 $string['label'] = '标签';
 $string['languagesavailable'] = '可用的语言';
 $string['languagesinstalled'] = '安装的语言';
@@ -65,12 +68,14 @@ $string['metadatasourcelabel'] = '元数据轨道网址';
 $string['mute'] = '柔和的';
 $string['pluginname'] = '媒体';
 $string['poster'] = '缩略图URL';
+$string['privacy:metadata'] = 'atto_media 插件不储存任何私人数据。';
 $string['remove'] = '移除';
 $string['size'] = '大小';
 $string['srclang'] = '语言';
 $string['subtitles'] = '字幕';
 $string['subtitles_help'] = '字幕可用于提供对话的转录或翻译。';
 $string['subtitlessourcelabel'] = '字幕轨道网址';
+$string['track'] = '跟踪网址';
 $string['tracks'] = '字幕和说明';
 $string['tracks_help'] = '字幕、说明、章节和描述可以通过WebVTT(网络视频文字轨道)格式文件添加。在选择下拉菜单中会显示轨道标签。对于每一种类型的轨道，在视频开始的时候，任何设置为默认设置的轨道都将被预先选中。';
 $string['video'] = '视频';

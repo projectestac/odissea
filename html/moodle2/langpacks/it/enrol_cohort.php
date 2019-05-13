@@ -34,4 +34,5 @@ $string['defaultgroupnametext'] = '{$a->name} gruppo globale {$a->increment}';
 $string['instanceexists'] = 'Il gruppo globale è già sincronizzato con il ruolo selezionato';
 $string['pluginname'] = 'Sincronizzazione gruppi globali';
 $string['pluginname_desc'] = 'Il plugin Sincronizzazione gruppi globali sincronizza i membri del gruppo globale con gli iscritti al corso.';
+$string['privacy:metadata:core_group'] = 'Il plugin di iscrizione "Sincronizzazione gruppi globali" può creare un nuovo gruppo o utilizzare un gruppo esistente dove inserire i membri del gruppo globale.';
 $string['status'] = 'Attivo';

@@ -36,4 +36,4 @@ $string['pluginnameadding'] = '"Drag-and-drop auf Text" hinzufügen';
 $string['pluginnameediting'] = '"Drag-and-drop auf Text" bearbeiten';
 $string['pluginname_help'] = 'Fragetexte mit Drag-and-drop-Lücken benötigen Platzhalter, um die richtigen Antworten in die entsprechenden Lücken im Fragetext zuordnen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Antworten können gruppiert werden, um alle Antwortenmöglichkeiten für eine Lücke farblich zu markieren. Wenn Antwortmöglichkeiten als \'unbegrenzt\' markiert sind, können sie in mehr als einer Lücke verwendet werden.';
 $string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden per Drag-and-drop ausgefüllt.';
-$string['privacy:metadata'] = 'Das Drag-and-Drop in Text Frageformat Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Drag-and-Drop in Text Frageformat Plugin speichert keine personenbezogenen Daten.';

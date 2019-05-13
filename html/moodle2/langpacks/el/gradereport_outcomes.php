@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addoutcome'] = 'Προσθήκη μιας έκβασης';
-$string['courseoutcomes'] = 'Εκβάσεις μαθήματος';
-$string['coursespecoutcome'] = 'Εκβάσεις μαθήματος';
-$string['outcomes:view'] = 'Εμφάνιση της αναφοράς εκβάσεων';
-$string['pluginname'] = 'Αναφορά εκβάσεων';
+$string['addoutcome'] = 'Προσθήκη ενός μαθησιακού αποτελέσματος';
+$string['courseoutcomes'] = 'Μαθησιακά αποτελέσματα μαθήματος';
+$string['coursespecoutcome'] = 'Μαθησιακά αποτελέσματα μαθήματος';
+$string['eventgradereportviewed'] = 'Η αναφορά μαθησιακών αποτελεσμάτων βαθμού εμφανίστηκε';
+$string['outcomes:view'] = 'Εμφάνιση της αναφοράς μαθησιακών αποτελεσμάτων';
+$string['pluginname'] = 'Αναφορά μαθησιακών αποτελεσμάτων';
+$string['privacy:metadata'] = 'Η αναφορά (μαθησιακών) αποτελεσμάτων βαθμού εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
 $string['usedgradeitem'] = 'Αριθμός στοιχείων βαθμού';

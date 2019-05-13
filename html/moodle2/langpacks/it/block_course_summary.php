@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['coursesummary'] = 'Descrizione del corso';
 $string['course_summary:addinstance'] = 'Aggiungere blocco Descrizione del corso/sito alla pagina My home';
 $string['pluginname'] = 'Descrizione del corso/sito';
+$string['privacy:metadata'] = 'Il blocco Descrizione del corso/sito visualizza solamente informazioni sui corsi e non memorizza dati propri.';

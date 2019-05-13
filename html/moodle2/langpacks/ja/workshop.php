@@ -278,7 +278,7 @@ $string['privacy:metadata:workshopassessments'] = 'ワークショップモジ�
 $string['privacy:metadata:workshopgrades'] = '評価フォームにどのように評点およびコメントが入力されたかに関する情報を保持します。';
 $string['privacy:metadata:workshopid'] = 'ワークショップ活動のIDです。';
 $string['privacy:metadata:workshopsubmissions'] = 'ワークショップモジュール提出に関する情報を保持します。';
-$string['privacy:request:delete:content'] = 'ユーザのリクエストによりコンテンツが削除されました。';
+$string['privacy:request:delete:content'] = 'コンテクストが削除されました (ユーザのリクエストまたは有効期限切れ)。';
 $string['privacy:request:delete:title'] = '[削除済み]';
 $string['publishedsubmissions'] = '公開済み提出';
 $string['publishsubmission'] = '提出を公開する';
@@ -327,7 +327,7 @@ $string['submissionendswitch_help'] = '提出終了日時を指定した上で�
 
 あなたがこの機能を有効にした場合、同時にスケジュール割り当てのセットアップをお勧めします。送信が割り当てられていない場合、ワークショップ自体が評価フェーズにあったとしても評価を実施することはできません。';
 $string['submissiongrade'] = '提出に対する評点';
-$string['submissiongrade_help'] = 'この設定では提出されたワークが取得することのできる最大評点を指定します。';
+$string['submissiongrade_help'] = 'この設定では提出されたワークが取得できる最大評点を指定します。';
 $string['submissiongradeof'] = '提出に対する評点 (最大 {$a})';
 $string['submissionlastmodified'] = '最終更新日時';
 $string['submissionrequiredcontent'] = 'あなたはテキストを入力するかファイルを追加する必要があります。';

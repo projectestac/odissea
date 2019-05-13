@@ -63,11 +63,11 @@ $string['personal'] = 'personnelle';
 $string['personalnotes'] = 'Annotations personnelles';
 $string['privacy:metadata:core_notes'] = 'Le composant Annotations enregistre des annotations d\'utilisateurs dans le sous-système central.';
 $string['privacy:metadata:core_notes:content'] = 'Le contenu de l\'annotation.';
-$string['privacy:metadata:core_notes:courseid'] = 'L\'identifiant du cours associé à l\'annotation.';
+$string['privacy:metadata:core_notes:courseid'] = 'L\'identifiant du cours associé à l\'annotation';
 $string['privacy:metadata:core_notes:created'] = 'La date et l\'heure de la création de l\'annotation.';
 $string['privacy:metadata:core_notes:lastmodified'] = 'La date et l\'heure de la dernière modification de l\'annotation.';
 $string['privacy:metadata:core_notes:publishstate'] = 'Le statut de publication de l\'annotation.';
-$string['privacy:metadata:core_notes:userid'] = 'L\'identifiant de l\'utilisateur associé à l\'annotation.';
+$string['privacy:metadata:core_notes:userid'] = 'L\'identifiant de l\'utilisateur associé à l\'annotation';
 $string['publishstate'] = 'Contexte';
 $string['publishstate_help'] = 'Le contexte d\'une annotation détermine qui peut la consulter. Les utilisateurs doivent être conscients que toutes les annotations, y compris celles contenant des données personnelles, peuvent être communiquées selon les lois de leur juridiction.
 

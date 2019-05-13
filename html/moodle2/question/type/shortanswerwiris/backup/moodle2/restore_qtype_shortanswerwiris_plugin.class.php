@@ -28,12 +28,15 @@ class restore_qtype_shortanswerwiris_plugin extends restore_qtype_shortanswer_pl
 
         // Add own qtype stuff.
         $elename = 'shortanswer';
+        $shortanswerwiriselement = 'shortanswerwiris';
         $xmlname = 'qtype_wq_shortanswerwiris';
         // We used get_recommended_name() so this works.
         $elepath = $this->get_pathfor('/shortanswer');
+        $shortanswerwirispath = $this->get_pathfor('/shortanswerwiris');
         $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_shortanswerwiris_question/question_xml';
 
         $paths[] = new restore_path_element($elename, $elepath);
+        $paths[] = new restore_path_element($shortanswerwiriselement, $shortanswerwirispath);
         $paths[] = new restore_path_element($xmlname, $xmlpath);
         return $paths; // And we return the interesting paths.
     }
@@ -80,6 +83,10 @@ class restore_qtype_shortanswerwiris_plugin extends restore_qtype_shortanswer_pl
         $decodetable = array_flip($entitiestable);
         $xml = str_replace(array_keys($decodetable), array_values($decodetable), $xml);
         return $xml;
+    }
+    
+    public function process_shortanswerwiris($data) {
+               $this->really_process_extra_question_fields($data);
     }
 
 }

@@ -248,6 +248,8 @@ SCORM-activiteiten kunnen gebruikt worden
 * om multimedia-inhoud en animaties te tonen
 * als een beoordelingstool';
 $string['modulenameplural'] = 'SCORM-pakketten';
+$string['myaiccsessions'] = 'Mijn AICC-sessies';
+$string['myattempts'] = 'Mijn pogingen';
 $string['nav'] = 'Toon navigatie';
 $string['navdesc'] = 'Deze instelling bepaalt of de navigatieknoppen en hun positie getoond worden.';
 $string['nav_help'] = 'Deze instelling bepaalt of navigatieknoppen al dan niet getoond moeten worden en hun positie.
@@ -260,8 +262,8 @@ Er zijn 3 opties:
 $string['navigation'] = 'Navigatie';
 $string['navpositionleft'] = 'Positie van de navigatieknoppen in pixels van links';
 $string['navpositiontop'] = 'Positie van de navigatieknoppen in pixels van boven.';
-$string['networkdropped'] = 'De SCORM-speler heeft bepaalt dat je internetverbinding onbetrouwbaar is of onderbroken is. Als je verder gaat met deze SCORM-activiteit, dan zal je vooruitgang niet bewaard worden. <br />
-Je kunt best de activiteit nu verlaten en terugkeren wanneer je een betrouwbare verbinding hebt.';
+$string['networkdropped'] = 'De SCORM-speler heeft bepaald dat je internetverbinding onbetrouwbaar is of onderbroken is. Als je verder gaat met deze SCORM-activiteit, dan zal je vooruitgang niet bewaard worden. <br />
+Je kunt het beste de activiteit nu verlaten en terugkeren wanneer je een betrouwbare verbinding hebt.';
 $string['newattempt'] = 'Begin een nieuwe poging';
 $string['next'] = 'Volgende';
 $string['noactivity'] = 'Niets te melden';

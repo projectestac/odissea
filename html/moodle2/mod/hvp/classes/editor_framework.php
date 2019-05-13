@@ -119,7 +119,8 @@ class editor_framework implements \H5peditorStorage {
                         "SELECT title,
                                 runnable,
                                 restricted,
-                                tutorial_url
+                                tutorial_url,
+                                metadata_settings
                            FROM {hvp_libraries}
                           WHERE machine_name = ?
                             AND major_version = ?
@@ -137,6 +138,7 @@ class editor_framework implements \H5peditorStorage {
                     $library->title = $details->title;
                     $library->runnable = $details->runnable;
                     $library->restricted = $superuser ? false : ($details->restricted === '1' ? true : false);
+                    $library->metadataSettings = json_decode($details->metadata_settings);
                     $librarieswithdetails[] = $library;
                 }
             }
@@ -154,7 +156,8 @@ class editor_framework implements \H5peditorStorage {
                         major_version,
                         minor_version,
                         tutorial_url,
-                        restricted
+                        restricted,
+                        metadata_settings
                    FROM {hvp_libraries}
                   WHERE runnable = 1
                     AND semantics IS NOT NULL
@@ -170,9 +173,12 @@ class editor_framework implements \H5peditorStorage {
             $library->minorVersion = (int) $library->minor_version;
             unset($library->minor_version);
             if (!empty($library->tutorial_url)) {
-              $library->tutorialUrl = $library->tutorial_url;
+               $library->tutorialUrl = $library->tutorial_url;
             }
             unset($library->tutorial_url);
+
+            $library->metadataSettings = json_decode($library->metadata_settings);
+            unset($library->metadata_settings);
 
             // Make sure we only display the newest version of a library.
             foreach ($libraries as $key => $existinglibrary) {

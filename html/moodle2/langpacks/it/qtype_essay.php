@@ -45,6 +45,7 @@ $string['pluginnameadding'] = 'Creazione domanda Componimento';
 $string['pluginnameediting'] = 'Modifica domanda Componimento';
 $string['pluginname_help'] = 'In risposta a una domanda lo studente potrà caricare uno o più file e/o redigere un testo online. E\' possibile fornire un modello di risposta. Le risposte dovranno essere valutate manualmente.';
 $string['pluginnamesummary'] = 'Consente la creazione di domande la cui risposta  può essere il caricamento di o più file e/o la redazione di un testo online. La risposta dovrà essere valutata manualmente.';
+$string['privacy:metadata'] = 'Il plugin Tipi di domande \'Componimento\' non memorizza dati personali.';
 $string['responsefieldlines'] = 'Dimensione del riquadro di input';
 $string['responseformat'] = 'Formato risposta';
 $string['responseisrequired'] = 'L\'inserimento di testo è obbligatorio';

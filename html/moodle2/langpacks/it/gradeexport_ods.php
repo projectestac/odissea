@@ -29,4 +29,5 @@ $string['eventgradeexported'] = 'Esportate valutazioni OpenDcument';
 $string['ods:publish'] = 'Pubblicare le valutazioni in formato ODS';
 $string['ods:view'] = 'Esportare le valutazioni in formato OpenDocument';
 $string['pluginname'] = 'Formato OpenDocument';
+$string['privacy:metadata'] = 'Il plugin per l\'esportazione delle valutazioni \'Formato OpenDocument\' non memorizza dati personali.';
 $string['timeexported'] = 'Scaricamento più recente da questo corso';

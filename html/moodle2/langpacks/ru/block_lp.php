@@ -33,5 +33,6 @@ $string['myplans'] = 'Мои учебные планы';
 $string['noactiveplans'] = 'Нет активных учебных планов на текущий момент.';
 $string['planstoreview'] = 'Планы для пересмотра';
 $string['pluginname'] = 'Учебные планы';
+$string['privacy:metadata'] = 'Блок «Учебные планы» только показывает данные, хранящиеся в других местах.';
 $string['viewmore'] = 'Показать больше...';
 $string['viewotherplans'] = 'Показать другие планы...';

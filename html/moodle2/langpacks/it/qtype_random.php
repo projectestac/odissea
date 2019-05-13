@@ -30,6 +30,7 @@ $string['includingsubcategories'] = 'sotto categorie incluse';
 $string['pluginname'] = 'Casuale';
 $string['pluginnameediting'] = 'Modifica domanda casuale';
 $string['pluginname_help'] = 'Una domanda casuale, pur non essendo un vero e proprio tipo di domanda, consente di inserire in una attività una domanda scelta casualmente da una determinata categoria di domande.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Casuale\' non memorizza dati personali.';
 $string['randomqname'] = 'Casuale ({$a})';
 $string['randomqplusname'] = 'Casuale ({$a} e sotto categorie)';
 $string['selectedby'] = '{$a->questionname} scelte da {$a->randomname}';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Esportate valutazione in TXT';
 $string['pluginname'] = 'Formato testo';
+$string['privacy:metadata'] = 'Il plugin per l\'esportazione delle valutazioni \'Formato testo\' non memorizza dati personali.';
 $string['timeexported'] = 'Scaricamento più recente da questo corso';
 $string['txt:publish'] = 'Pubblicare le valutazioni in formato testo';
 $string['txt:view'] = 'Esportare le valutazioni in formato testo';

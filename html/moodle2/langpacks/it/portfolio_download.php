@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = 'Scarica il tuo file di esportazione nel portfolio';
 $string['downloading'] = 'Scaricamento in corso...';
 $string['pluginname'] = 'Scaricamento file';
+$string['privacy:metadata'] = 'Il plugin non memorizza né esporta dati personali.';

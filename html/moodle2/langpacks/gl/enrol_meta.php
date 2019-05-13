@@ -38,5 +38,6 @@ $string['nosyncroleids'] = 'Roles que non están sincronizados';
 $string['nosyncroleids_desc'] = 'De modo predeterminado, todas as tarefas de rol no nivel do curso están sincronizadas a partir de cursos pai a cursos fillo. Os roles que aquí están seleccionados non se incluirán no proceso de sincronización. Os roles dispoñíbeis para sincronización actualizaranse na vindeira execución do cron.';
 $string['pluginname'] = 'Meta ligazón sobre curso';
 $string['pluginname_desc'] = 'A metaligazón sobre curso do engadido de matriculación sincroniza as matriculacións e roles en dous cursos diferentes.';
+$string['privacy:metadata:core_group'] = 'O engadido de meta matriculación pode crear un novo grupo ou usar un grupo existente para engadir todos os membros do círculo.';
 $string['syncall'] = 'Sincronice todos os usuarios matriculados';
 $string['syncall_desc'] = 'De estar activado, todos os usuarios matriculados están sincronizados mesmo cando non teñan ningún rol do curso pai, no caso de estar desactivado soamente os usuarios que teñen cando menos un rol sincronizado serán matriculados no curso fillo.';

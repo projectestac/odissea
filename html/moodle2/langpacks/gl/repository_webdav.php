@@ -29,6 +29,7 @@ $string['configplugin'] = 'Configuración de WebDAV';
 $string['http'] = 'HTTP';
 $string['https'] = 'HTTPS';
 $string['pluginname'] = 'Repositorio WebDAV';
+$string['privacy:metadata'] = 'O engadido de repositorio WebDAV almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
 $string['webdav'] = 'WebDAV';
 $string['webdavbasicauth'] = 'Autenticación básica WebDAV';
 $string['webdavdigestauth'] = 'Autenticación implícita WebDAV';

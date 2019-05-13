@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Κρυφή μνήμη στατικού αιτήματος';
+$string['privacy:metadata'] = 'Το πρόσθετο αποθήκευσης κρυφής μνήμης (cachestore) Στατικού αιτήματος (Static request) αποθηκεύει κάποια δεδομένα, αλλά αυτά διαρκούν μόνο όσο διαρκεί ένα μόνο αίτημα HTTP.';

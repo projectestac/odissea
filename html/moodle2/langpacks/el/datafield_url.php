@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο URL';
+$string['openlinkinnewwindow'] = 'Άνοιγμα συνδέσμου σε νέο παράθυρο';
+$string['pluginname'] = 'Διεύθυνση URL';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο διεύθυνσης URL» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

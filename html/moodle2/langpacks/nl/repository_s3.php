@@ -30,5 +30,6 @@ $string['configplugin'] = 'Amazon S3 instellingen';
 $string['endpoint'] = 'Amazon S3 eindpunt';
 $string['needaccesskey'] = 'Je moet een toegangssleutel geven';
 $string['pluginname'] = 'Amazon S3';
+$string['privacy:metadata'] = 'De Amazon S3 opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
 $string['s3:view'] = 'Bekijk Amazon S3 opslagruimte';
 $string['secret_key'] = 'Geheime sleutel';

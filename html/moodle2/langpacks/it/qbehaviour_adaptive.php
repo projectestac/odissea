@@ -46,3 +46,4 @@ L\'invio ha ricevuto una penalità di {$a->penalty}.
 Penalità accumulate: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Risposta mancante';
 $string['pluginname'] = 'Modo adattativo';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Modo adattivo\' non memorizza dati personali.';

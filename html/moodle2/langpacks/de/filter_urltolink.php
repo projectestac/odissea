@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = 'Eingebettete Bilder';
 $string['embedimages_desc'] = 'Der Filter ersetzt URLs durch entsprechend verlinkte Bilder. Der Filter arbeitet nur in den ausgewählten Textformaten.';
 $string['filtername'] = 'URL als Link oder Bild anzeigen';
-$string['privacy:metadata'] = 'Der Filter zur Umwandlung von URLs in Verlinkungen  speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Filter zur Umwandlung von URLs in Verlinkungen  speichert keine personenbezogenen Daten.';
 $string['settingformats'] = 'Mögliche Formate';
 $string['settingformats_desc'] = 'Der Filter wird nur verwendet, wenn der ursprüngliche Text in einem der ausgewählten Formate eingegeben wurde.';

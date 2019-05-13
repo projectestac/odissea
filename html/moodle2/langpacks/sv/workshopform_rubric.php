@@ -26,5 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configuration'] = 'Inställningar för rubrik';
+$string['criteria'] = 'Kriterier';
 $string['layout'] = 'Upplägg för rubrik';
+$string['layoutlist'] = 'Lista';
+$string['mustbeunique'] = 'Betygen måste vara entydiga inom ett kriterium';
 $string['pluginname'] = 'Rubrik';

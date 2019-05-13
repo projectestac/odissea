@@ -32,6 +32,7 @@ $string['needsmorecontrast'] = 'Els colors del primer pla i de fons del text no 
 $string['needsmoreheadings'] = 'Hi ha molt de text sense encapçalament. Els encapçalaments permeten que els usuaris amb lector de pantalla naveguin per la pàgina fàcilment, i faran que la pàgina sigui més usable per a tothom.';
 $string['nowarnings'] = 'Felicitacions, no s\'han trobat problemes d\'accessibilitat.';
 $string['pluginname'] = 'Verificador d\'accessibilitat';
+$string['privacy:metadata'] = 'El connector atto_accessibilitychecker no emmagatzema cap dada personal.';
 $string['report'] = 'Informe d\'accessibilitat:';
 $string['tablesmissingcaption'] = 'És recomanable que les taules tinguin llegenda. Si bé no cal que cada taula en tingui, una llegenda, en general, és molt útil.';
 $string['tablesmissingheaders'] = 'És recomanable que les taules emprin capçaleres de fila i/o de columna.';

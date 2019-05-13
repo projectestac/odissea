@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Текстовое поле';
 $string['pluginname'] = 'Текст';
+$string['privacy:metadata'] = 'Компонент поля базы данных «Текст» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';

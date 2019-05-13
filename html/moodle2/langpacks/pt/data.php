@@ -38,7 +38,7 @@ $string['approve'] = 'Aprovar';
 $string['approved'] = 'Aprovado';
 $string['areacontent'] = 'Campos';
 $string['ascending'] = 'Ascendente';
-$string['asearchtemplate'] = 'Pesquisa avançada';
+$string['asearchtemplate'] = 'Modelo de pesquisa avançada';
 $string['atmaxentry'] = 'Já introduziu o número máximo de registos permitido!';
 $string['authorfirstname'] = 'Primeiro nome do autor';
 $string['authorlastname'] = 'Apelido do autor';
@@ -133,10 +133,10 @@ $string['editordisable'] = 'Desativar editor';
 $string['editorenable'] = 'Ativar editor';
 $string['emptyadd'] = 'O modelo <b>Adicionar</b> está vazio, a gerar o formulário predefinido';
 $string['emptyaddform'] = 'Não preencheu nenhum campo!';
-$string['enabletemplateeditorcheck'] = 'Tem a certeza que quer ativar o editor? Isto pode resultar numa alteração de conteúdo quando o modelo for gravado.';
+$string['enabletemplateeditorcheck'] = 'Tem a certeza de que pretende ativar o editor? Esta ação pode resultar numa alteração de conteúdo quando o modelo for gravado.';
 $string['entries'] = 'Registos';
 $string['entrieslefttoadd'] = 'Tem que adicionar mais {$a->entriesleft} registo(s) para concluir esta atividade';
-$string['entrieslefttoaddtoview'] = 'Tem que adicionar mais {$a->entrieslefttoview} registos para conseguir visualizar as entradas dos outros participantes.';
+$string['entrieslefttoaddtoview'] = 'Tem que adicionar mais {$a->entrieslefttoview} registo(s) para conseguir visualizar as entradas dos outros participantes.';
 $string['entry'] = 'Registo';
 $string['entrysaved'] = 'O seu registo foi gravado';
 $string['errormustbeteacher'] = 'Apenas os professores podem usar esta página!';
@@ -219,7 +219,7 @@ $string['invalidid'] = 'O ID da informação não está correto';
 $string['invalidpreset'] = '<b>{$a}</b> não é um protótipo.';
 $string['invalidrecord'] = 'Registo incorreto';
 $string['invalidurl'] = 'O URL que introduziu não é válido';
-$string['jstemplate'] = 'Javascript';
+$string['jstemplate'] = 'JavaScript';
 $string['latitude'] = 'Latitude';
 $string['latlong'] = 'Latitude/Longitude';
 $string['latlongboth'] = 'É necessário a latitude e a longitude.';
@@ -243,17 +243,17 @@ $string['menuchoose'] = 'Selecione...';
 $string['missingdata'] = 'Deve ser indicado um identificador de informação ou um objeto para a classe do campo';
 $string['missingfield'] = 'Erro de programação: Deve especificar um campo e/ou dados na definição da classe do campo.';
 $string['modulename'] = 'Base de dados';
-$string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e procurar informação num conjunto de entradas (registos). O formato e os campos que compoem os registos da base de dados são definido pelo professor, Os tipos de campos permitidos incluem caixas de seleção, listas pendentes, botões rádio, caixas de texto, URL, imagem e ficheiro.
+$string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e procurar informação num conjunto de entradas (registos). O tipo, o número e o formato dos campos que compõem a base de dados são definido pelo professor. Os tipos de campos permitidos incluem caixas de seleção, listas pendentes, botões de rádio, caixas de texto, URL, imagem e ficheiro.
 
-A aparência dos ecrãs de visualização, criação e edição da base de dados pode ser definidas através de modelos. As base de dados podem ser partilhadas entre disciplinas e um professor também pode importar e exportar registos da base de dados.
+A estrutura de visualização da informação quando cria, edita ou lista os registos da base de dados pode ser definida através de modelos de base de dados. As base de dados podem ser partilhadas entre disciplinas e o professor também pode importar e exportar registos da base de dados.
 
-Se a opção de hiperligação dos registos estiver ativa, é possível criar automaticamente hiperligações entre os termos inseridos e essas palavras, sempre que aparecerem noutros locais da disciplina.
+Se a opção de hiperligação dos registos estiver ativa, é possível criar automaticamente hiperligações entre os termos inseridos e essas palavras, sempre que apareçam noutros locais da disciplina.
 
-Um professor pode permitir comentários aos registos. Estes também podem ser avaliados por professores ou alunos (avaliação pelos pares). As avaliações são ajustadas a uma única nota final que é registada no relatório de avaliação.
+Um professor pode permitir comentários aos registos. Estes também podem ser avaliados por professores ou alunos (avaliação pelos pares). As avaliações são agrupadas numa única nota final que é registada na pauta.
 
 A base de dados pode ser usada para:
 
-* Criar um repositório colaborativo de hiperligações/ livros/ referências a jornais;
+* Criar um repositório colaborativo de hiperligações/livros/referências a jornais;
 * Para exibir trabalhos realizados pelos alunos (como fotos, cartazes, sites, poemas, etc.) e disponibilizá-los para que os colegas possam comentar.';
 $string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = 'Bases de dados';
@@ -293,14 +293,14 @@ $string['notapproved'] = 'O registo ainda não foi aprovado.';
 $string['notinjectivemap'] = 'Não é um mapa injetivo';
 $string['notopenyet'] = 'A atividade apenas será disponibilizada em <b>{$a}</b>';
 $string['number'] = 'Número';
-$string['numberrssarticles'] = 'Entradas na Listagem de RSS';
+$string['numberrssarticles'] = 'Entradas na lista RSS';
 $string['numnotapproved'] = 'Pendente(s)';
 $string['numrecords'] = '<b>{$a}</b> registos';
 $string['ods'] = 'Ficheiro <acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
 $string['optionaldescription'] = 'Descrição resumida (opcional)';
 $string['optionalfilename'] = 'Nome do ficheiro (opcional)';
 $string['other'] = 'Outro';
-$string['overrwritedesc'] = 'Se ativar esta opção este protótipo substituirá o existente (se existir).';
+$string['overrwritedesc'] = 'Se ativar esta opção, este protótipo substituirá o existente (se existir).';
 $string['overwrite'] = 'Substituir';
 $string['overwritesettings'] = 'Substituir configurações atuais';
 $string['page-mod-data-x'] = 'Qualquer página da atividade Base de Dados';
@@ -339,7 +339,7 @@ $string['recordsnotsaved'] = 'Não foram gravados registos. Verifique o formato 
 $string['recordssaved'] = 'os registos foram gravados';
 $string['removealldatatags'] = 'Apagar todas as tags da base de dados';
 $string['requireapproval'] = 'Requer aprovação';
-$string['requireapproval_help'] = 'Se ativar esta opção os registos necessitam de aprovação do professor antes de ficarem visíveis para todos os utilizadores.';
+$string['requireapproval_help'] = 'Se ativar esta opção, os registos necessitam de aprovação do professor antes de ficarem visíveis para todos os utilizadores.';
 $string['required'] = 'Obrigatório';
 $string['requiredentries'] = 'Registos requeridos para conclusão (antigo)';
 $string['requiredentries_help'] = 'Se ativar esta opção, uma mensagem será mostrada para informar o número de registos necessários para a conclusão. Tenha em atenção que esta configuração não está ligada à conclusão da atividade.
@@ -357,7 +357,7 @@ $string['resettemplate'] = 'Reiniciar modelo';
 $string['resizingimages'] = 'A redimensionar imagens...';
 $string['rows'] = 'linhas';
 $string['rssglobaldisabled'] = 'Desativado. Consulte as variáveis de configuração do site.';
-$string['rsstemplate'] = 'Modelo para Listas RSS';
+$string['rsstemplate'] = 'Modelo de lista RSS';
 $string['rsstitletemplate'] = 'Listas RSS';
 $string['save'] = 'Guardar';
 $string['saveandadd'] = 'Guardar e adicionar outro';

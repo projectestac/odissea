@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allattempts'] = 'すべての受験を表示する';
 $string['allattemptscontributetograde'] = 'すべての受験はユーザの最終評点に寄与します。';
-$string['allstudents'] = 'すべての {$a} を表示する';
+$string['allstudents'] = '{$a} すべてを表示する';
 $string['attemptsonly'] = '受験した {$a} のみ表示する';
 $string['attemptsprepage'] = '1ページあたりの受験数';
 $string['deleteselected'] = '選択した受験を削除する';

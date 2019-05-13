@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Formato XHTML';
 $string['pluginname_help'] = 'O formato XHTML permite exportar todas as preguntas da categoría a unha única páxina en XHTML estrito para a súa utilización noutra aplicación.';
 $string['pluginname_link'] = 'qformat/xhtml';
+$string['privacy:metadata'] = 'O engadido de formato de preguntas XHTML non almacena ningún dato persoal.';

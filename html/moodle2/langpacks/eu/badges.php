@@ -30,7 +30,7 @@ $string['activate'] = 'Gaitu sarbidea';
 $string['activatesuccess'] = 'Dominetarako sarbidea ondo gaitu da.';
 $string['addbadgecriteria'] = 'Gehitu dominarako irizpidea';
 $string['addcourse'] = 'Gehitu ikastaroak';
-$string['addcourse_help'] = 'Aukeratu dominarako baldintza honetara gehitu beharreko ikastaro guztiak. Sakatu CTRL teklari elementu bat baino gehiago aukeratzeko.';
+$string['addcourse_help'] = 'Aukeratu dominarako baldintza honetara gehitu beharreko ikastaro guztiak. Eutsi CTRL teklari hainbat elementu aukeratzeko.';
 $string['addcriteria'] = 'Gehitu irizpidea';
 $string['addcriteriatext'] = 'Irizpideak gehitzen hasteko, mesedez egin aukera zabaltzen den menutik';
 $string['addtobackpack'] = 'Gehitu motxilara';
@@ -38,15 +38,15 @@ $string['adminonly'] = 'Orri hau gunearen kudeatzaileentzat da bakarrik';
 $string['after'] = 'emate-dataren ondoren.';
 $string['aggregationmethod'] = 'Agregazio-metodoa';
 $string['all'] = 'Guztiak';
-$string['allmethod'] = 'Aukeratutako baldintza guztiak osatuta daude';
+$string['allmethod'] = 'Aukeratutako baldintza guztiak betetzen dira';
 $string['allmethodactivity'] = 'Aukeratutako jarduera guztiak osatuta daude';
 $string['allmethodcourseset'] = 'Aukeratutako ikastaro guztiak osatuta daude';
 $string['allmethodmanual'] = 'Aukeratutako rol guztiek ematen dute domina.';
 $string['allmethodprofile'] = 'Aukeratutako profileko eremu guztiak osatu dira';
 $string['allowcoursebadges'] = 'Gaitu ikastaroko dominak';
-$string['allowcoursebadges_desc'] = 'Baimena eman dominak sortu eta emateko ikastaro-testuinguruan.';
+$string['allowcoursebadges_desc'] = 'Baimendu dominak sortu eta emateko ikastaro-testuinguruan.';
 $string['allowexternalbackpack'] = 'Gaitu kanpoko motxiletarako konexioa';
-$string['allowexternalbackpack_desc'] = 'Utzi erabiltzaileei konexioak konfiguratzen eta euren konponko hornitzaileen motxiletako dominak erakusten.
+$string['allowexternalbackpack_desc'] = 'Baimendu erabiltzaileei konexioak konfiguratzen eta euren kanponko hornitzaileen motxiletako dominak erakusten.
 
 Oharra: gomendagarria da aukera hau desaktibatuta izatea gunera internetetik sartzerik ez badago (adibidez, firewall-a dela-eta)';
 $string['any'] = 'Edozein';
@@ -63,7 +63,7 @@ $string['attachment'] = 'Erantsi domina mezuari';
 $string['attachment_help'] = 'Gaituta, e-postari domina erantsiko zaio jaisteko moduan. (Eranskinek gaituta egon behar dute hemen aukera hau erabiltzeko: Gunearen kudeaketa > Pluginak > Irteerako mezuak > E-posta)';
 $string['award'] = 'Eman domina';
 $string['awardedtoyou'] = 'Niri emandakoa';
-$string['awardoncron'] = 'Dominetarako sarbidea egoki gaitu da. Erabiltzaile askok irabaz dezakete aldi berean domina hau. Gunea behar bezala ibiltzeko, ekintza hau prozesatzeko denbora-tartetxo bat beharko da.';
+$string['awardoncron'] = 'Dominetarako sarbidea modu egokian gaitu da. Erabiltzaile askok irabaz dezakete aldi berean domina hau. Gunea behar bezala ibiltzeko, ekintza hau prozesatzeko denbora-tartetxo bat beharko da.';
 $string['awards'] = 'Jasotzaileak';
 $string['backpackavailability'] = 'Dominaren kanpoko egiaztapena';
 $string['backpackavailability_help'] = 'Domina-jasotzaileek zeuk emandako dominak irabazi dituztela egiaztatu ahal izateko, kanpoko motxila-zerbitzuak zure gunerako sarbidea izan behar du eta hartara bertatik emandako dominak egiaztatu.
@@ -105,14 +105,14 @@ Konfirmatu eta zure motxilako konexioa aktibatzeko mesedez jo hona:
 
 {$a->link}
 
-E-posta programa gehienetan goiko helbidea lotura urdin bat gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan. Ez bada horrela, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsasi.
+E-posta programa gehienetan goiko helbidea esteka urdin bat gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan. Ez bada horrela, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi.
 
 Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin:
 {$a->admin}';
 $string['backpackemailverifyemailsubject'] = '{$a}: OpenBadges-en motxilarako e-posta bidezko egiaztapena';
-$string['backpackemailverifypending'] = 'e-posta helbidea konprobatzeko mezua bidali da <strong>{$a}</strong> helbidera. Klik egin bertan agertzen den estekan zure motxilako konexioa aktibatzeko.';
+$string['backpackemailverifypending'] = 'e-posta helbidea konprobatzeko mezua bidali da <strong>{$a}</strong> helbidera. Egin klik bertan agertzen den estekan zure motxilako konexioa aktibatzeko.';
 $string['backpackemailverifysuccess'] = 'Eskerrik asko zure e-posta helbidea konprobatzeagatik. Orain zure motxilarekin konektatuta zaude.';
-$string['backpackemailverifytokenmismatch'] = 'Klik egin duzun estekaren token-a ez dator bat gordetako token-arekin. Ziurta ezazu jasotako azken e-posta mezuko estekan klik egin duzula.';
+$string['backpackemailverifytokenmismatch'] = 'Klik egin duzun estekaren token-a ez dator bat gordetako token-arekin. Ziurtatu ezazu jasotako azken e-posta mezuko estekan klik egin duzula.';
 $string['backpackimport'] = 'Domina inportatzeko ezarpenak';
 $string['backpackimport_help'] = 'Motxilarako konexio egokia ezarri ondoren, zure motxilako dominak zure dominen orrian eta zure profil-orrian ikusi ahal izango dira.
 
@@ -121,7 +121,7 @@ $string['badgedetails'] = 'Dominaren xehetasunak';
 $string['badgeimage'] = 'Irudia';
 $string['badgeimage_help'] = 'Hau da domina hau ematean erabiliko den irudia.
 
-Irudi berria gehitzeko, bilatu eta aukeratu irudia (JPG edo PNG formatuan) eta ondoren sakatu "Aldaketak gorde" botoiari. Irudiaren tamaina aldatu egingo da dominiaren irudiaren baldintzetara egokitzeko.';
+Irudi berria gehitzeko, bilatu eta aukeratu irudia (JPG edo PNG formatuan) eta ondoren egin klik "Aldaketak gorde" botoian. Irudiaren tamaina aldatu egingo da dominaren irudiaren baldintzetara egokitzeko.';
 $string['badgeprivacysetting'] = 'Dominen pribatutasun-ezarpenak';
 $string['badgeprivacysetting_help'] = 'Irabazten dituzun dominak zure kontuaren profil-orrian erakutsi ahal dira. Ezarpen honek irabazitako azken dominak automatikoki erakusteko aukera ematen dizu.
 
@@ -158,7 +158,7 @@ $string['connect'] = 'Konektatu';
 $string['connected'] = 'Konektatuta';
 $string['connecting'] = 'Konektatzen...';
 $string['contact'] = 'Kontaktua';
-$string['contact_help'] = 'E-posta helbide bat lotu da domina-emailearekin';
+$string['contact_help'] = 'Domina-emailearekin lotutako e-posta helbide bat';
 $string['copyof'] = '{$a}-ren kopia';
 $string['coursebadges'] = 'Dominak';
 $string['coursebadgesdisabled'] = 'Ikastaroko dominak ez daude gaituta gune honetan.';
@@ -169,19 +169,19 @@ $string['creatorbody'] = '<p>{$a->user}-(e)k dominarako baldintzak bete ditu eta
 $string['creatorsubject'] = '\'{$a}\' -(e)k domina lortu du!';
 $string['criteria_0'] = 'Domina hau honela lortzen da:';
 $string['criteria_1'] = 'Jarduera-osaketa';
-$string['criteria_1_help'] = 'Ikastaro batean hainbat jarduera eginda erabiltzaileei domina emateko aukera eskaintzen du.';
+$string['criteria_1_help'] = 'Erabiltzaileei ikastaro batean hainbat jarduera osatu izanagatik domina bat emateko aukera eskaintzen du.';
 $string['criteria_2'] = 'Eskuz ematea rolaren arabera';
-$string['criteria_2_help'] = 'Gunean edo ikastaroan rol jakin bat dutenek erabiltzaileei domina eskuz emateko aukera eskaintzen du.';
+$string['criteria_2_help'] = 'Erabiltzaileei gunean edo ikastaroan rol jakin bat izateagatik domina bat eskuz emateko aukera eskaintzen du.';
 $string['criteria_3'] = 'Partaidetza soziala';
 $string['criteria_3_help'] = 'Soziala';
 $string['criteria_4'] = 'Ikastaro-osaketa';
-$string['criteria_4_help'] = 'Ikastaroa osatu duten erabiltzaileei domina emateko aukera eskaintzen du. Bestelako parametroak gehi dakizkioke irizpide honi, besteak beste, gutxienek okalifikazioa edo ikataroa bukatzeko data.';
+$string['criteria_4_help'] = 'Erabiltzaileei ikastaroa osatu izanagatik domina bat emateko aukera eskaintzen du. Bestelako parametroak gehi dakizkioke irizpide honi, besteak beste, gutxieneko kalifikazioa edo ikastaroa bukatzeko data.';
 $string['criteria_5'] = 'Ikastaro-multzoa osatzea';
-$string['criteria_5_help'] = 'Ikastaro-multzo bat osatu duten erabiltzaileei domina emateko aukera eskaintzen du. Ikastaro bakoitzak bestelako parametroak izan ditzake, besteak beste, gutxienek okalifikazioa edo ikataroa bukatzeko data.';
+$string['criteria_5_help'] = 'Erabiltzaileei ikastaro-multzo bat osatzeagatik domina bat emateko aukera eskaintzen du. Ikastaro bakoitzak bestelako parametroak izan ditzake, besteak beste, gutxieneko kalifikazioa edo ikastaroa bukatzeko data.';
 $string['criteria_6'] = 'Osatu profila';
-$string['criteria_6_help'] = 'Norberaren profileko hainbat eremu bete dituzten erabiltzaileei domina emateko aukera eskaintzen du. Pertsonalizatutako eta berezko eremuen artean aukera dezakezu.';
-$string['criteriacreated'] = 'Dominarako irizpidea egoki sortuta';
-$string['criteriadeleted'] = 'Dominarako irizpidea egoki ezabatuta';
+$string['criteria_6_help'] = 'Erabiltzaileei norberaren profileko hainbat eremu betetzeagatik domina bat emateko aukera eskaintzen du. Pertsonalizatutako eta lehenetsitako eremuen artean aukera dezakezu.';
+$string['criteriacreated'] = 'Dominarako irizpidea modu egokian sortu da';
+$string['criteriadeleted'] = 'Dominarako irizpidea modu egokian ezabatu da';
 $string['criteria_descr'] = 'Ondorengo baldintza betetzen dutenean emango zaie ikasleei domina hau:';
 $string['criteria_descr_0'] = 'Erabiltzaileei domina hau zerrendako <strong>{$a}</strong> baldintza betetzean emango zaie.';
 $string['criteria_descr_1'] = 'Ondorengo jardueretatik <strong>{$a}</strong> osatu dira:';
@@ -208,7 +208,7 @@ $string['criteria_descr_single_short4'] = 'Osatu ikastaroa';
 $string['criteria_descr_single_short5'] = 'Osatuta:';
 $string['criteria_descr_single_short6'] = 'Osatuta:';
 $string['criteriasummary'] = 'Irizpide-multzoa';
-$string['criteriaupdated'] = 'Dominarako irizpidea egoki eguneratuta';
+$string['criteriaupdated'] = 'Dominarako irizpidea modu egokian eguneratu da';
 $string['criterror'] = 'Oraingo parametroekiko arazoak';
 $string['criterror_help'] = 'Eremu-multzo honek erakusten du hasiera batean dominarako gehitu ziren baldintza guztiak baina dagoeneko eskura ez daudenak. Gomendagarria da parametro hauek desaktibatzea aurrerantzean ikasleek domina hau eskura dezaketela ziurtatzeko.';
 $string['currentimage'] = 'Oraingo irudia:';
@@ -218,10 +218,10 @@ $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Egun';
 $string['deactivate'] = 'Desgaitu sarbidea';
 $string['deactivatesuccess'] = 'Dominetarako sarbidea ondo desgaitu da.';
-$string['defaultissuercontact'] = 'Berezko domina-emailearekin kontaktuan jartzeko xehetasunak';
+$string['defaultissuercontact'] = 'Lehenetsitako domina-emailearekin kontaktuan jartzeko xehetasunak';
 $string['defaultissuercontact_desc'] = 'E-posta helbide bat lotu da domina-emailearekin';
-$string['defaultissuername'] = 'Berezko domina-emailearen izena';
-$string['defaultissuername_desc'] = 'Ematen duen erakundearen izena.';
+$string['defaultissuername'] = 'Lehenetsitako domina-emailearen izena';
+$string['defaultissuername_desc'] = 'Ematen duen erakundearen edo organoaren izena.';
 $string['delbadge'] = '\'{$a}\' domina eta jada emandako domina guztiak ezabatu nahi dituzu?';
 $string['delconfirm'] = 'Ezabatu domina eta kendu emandako guztiak';
 $string['delcritconfirm'] = 'Ziur al zaude irizpide hau ezabatu egin nahi duzula?';
@@ -229,11 +229,11 @@ $string['deletehelp'] = '<p>Domina bat guztiz ezabatzean domina horren xehetasun
 <p>Oharra: Domina hau eskuratu eta euren kanpo-motxilara eraman duten erabiltzaileek domina kanpo-motxilan mantenduko dute. Dena den, ez dute gune honetako irizpide eta ebidentzia-orrietara sarbiderik izango</p>';
 $string['delparamconfirm'] = 'Ziur al zaude parametro hau ezabatu nahi duzula?';
 $string['description'] = 'Deskribapena';
-$string['disconnect'] = 'Deskonektatuta';
+$string['disconnect'] = 'Deskonektatu';
 $string['donotaward'] = 'Une honetan domina hau ez dago aktibatuta eta beraz, ezin zaie erabiltzaileei eman. Domina hau eman nahi baduzu, aktiba ezazu.';
 $string['editsettings'] = 'Editatu ezarpenak';
 $string['enablebadges'] = 'Gaitu dominak';
-$string['error:backpackdatainvalid'] = 'Matxilak itzulitako datuak ez dira egokiak.';
+$string['error:backpackdatainvalid'] = 'Motxilak itzulitako datuak ez dira egokiak.';
 $string['error:backpackemailnotfound'] = '\'{$a}\' e-posta ez dago inongo motxilarekin lotuta. <a href="http://backpack.openbadges.org"> motxila bat sortu behar duzu</a> e-posta horretarako edo saioa beste e-posta helbide batekin hasi.';
 $string['error:backpackloginfailed'] = 'Ezin zara kanpoko motxila batera konektatu ondorengo arrazoia dela-eta: {$a}';
 $string['error:backpacknotavailable'] = 'Zure gunea ez dago internet bidez eskuragarri eta, beraz, gune honetan emandako edozein domina kanpoko motxila-zerbitzuek ezin izango dute egiaztatu.';
@@ -246,13 +246,13 @@ $string['error:cannotawardbadge'] = 'Ezin zaio domina erabiltzaile bati eman.';
 $string['error:cannotdeletecriterion'] = 'Irizpide hau ezin da ezabatu.';
 $string['error:cannotrevokebadge'] = 'Ezin zaio erabiltzaile bati domina bat kendu';
 $string['error:clone'] = 'Ezin da domina klonatu.';
-$string['error:connectionunknownreason'] = 'Konexioa ez da egoki burutu, baina arrazoia ez dakigu.';
+$string['error:connectionunknownreason'] = 'Konexioa ez da modu egokian burutu, baina arrazoia ez dakigu.';
 $string['error:duplicatename'] = 'Badago aldez aurretik izen hori duen domina sisteman.';
 $string['error:externalbadgedoesntexist'] = 'Ez da domina aurkitu.';
 $string['error:guestuseraccess'] = 'Bisitari gisa sartu zara. Dominak ikusteko erabiltzaile-kontua erabilita sartu behar duzu.';
 $string['error:invalidbadgeurl'] = 'Domina emalearen URL formatua ez da egokia.';
 $string['error:invalidcriteriatype'] = 'Irizpide-mota desegokia';
-$string['error:invalidexpiredate'] = '';
+$string['error:invalidexpiredate'] = 'Iraungitze-datak etorkizunekoa izan behar du.';
 $string['error:invalidexpireperiod'] = 'Iraungitze data ezin da negatiboa edo 0 izan.';
 $string['error:noactivities'] = 'Ikastaro honetan ez dago osaketa-irizpideak gaituta dituen jarduerarik.';
 $string['error:noassertion'] = 'Pertsonak ez du egiaztatu. Agian elkarrizketa-lauki itxi egingo zenuen saioa-hasteko prozesua osatu baino lehen.';
@@ -297,7 +297,7 @@ $string['expireperiodh'] = 'Domina, eman eta  {$a} ordutara iraungitzen da.';
 $string['expireperiodm'] = 'Domina, eman eta  {$a} minututara iraungitzen da.';
 $string['expireperiods'] = 'Domina, eman eta  {$a} segundutara iraungitzen da.';
 $string['expirydate'] = 'Epemugaren data';
-$string['expirydate_help'] = 'Aukeran, dominak data jakin batean iraungi daitezke, edo erabiltzaileari eman eta handik tarte jakin batera.';
+$string['expirydate_help'] = 'Aukeran, dominak data jakin batean iraungi daitezke, edo erabiltzaileari eman zitzaioneko dataren arabera kalkulatu daiteke.';
 $string['externalbadges'] = 'Nire dominak beste web-gune batzuetan';
 $string['externalbadges_help'] = 'Eremu honetan kanpoko motxilako dominak erakusten dira.';
 $string['externalbadgesp'] = 'Beste web-gune batzuetako dominak:';
@@ -308,7 +308,7 @@ $string['issuancedetails'] = 'Dominaren iraungitzea';
 $string['issuedbadge'] = 'Emandako dominaren informazioa';
 $string['issuerdetails'] = 'Emailearen xehetasunak';
 $string['issuername'] = 'Emailearen izena';
-$string['issuername_help'] = 'Ematen duen erakundearen izena.';
+$string['issuername_help'] = 'Ematen duen erakundearen edo organoaren izena.';
 $string['issuerurl'] = 'Emailearen URLa';
 $string['localbadges'] = 'Nire dominak {$a} web-gunean';
 $string['localbadgesh'] = 'Nire dominak web-gune honetan';
@@ -319,10 +319,10 @@ Hemen kude ditzakezu zure dominak zure profil-orrian publiko edo pribatu eginez.
 Zure domina guztiak batera edo banaka deskarga ditzakegu eta zure ordenagailuan gorde. Deskargatutako dominak zure kanpoko motxila-zerbitzura gehi daitezke.';
 $string['localbadgesp'] = 'Hemengo dominak: {$a}:';
 $string['localconnectto'] = 'Domina hauek web-gune honetatik kanpo konpartitzeko <a href="{$a}">motxila batera konektatu behar duzu</a>.';
-$string['makeprivate'] = 'Pribatu egin';
-$string['makepublic'] = 'Publiko egin';
+$string['makeprivate'] = 'Egin pribatu';
+$string['makepublic'] = 'Egin publiko';
 $string['managebadges'] = 'Kudeatu dominak';
-$string['message'] = 'Mezuren gurputza';
+$string['message'] = 'Mezuaren edukia';
 $string['messagebody'] = '<p>"%badgename%" domina lortu duzu!</p>
 <p>Domina honi buruzko informazio gehiago %badgelink% dominaren informazio orrian topatu dezakezu.</p>
 <p>Domina {$a}-tik deskarga eta kudeatu dezakezu.</p>';
@@ -333,7 +333,7 @@ $string['month'] = 'Hilabete';
 $string['mybackpack'] = 'Nire motxilaren ezarpenak';
 $string['mybadges'] = 'Nire dominak';
 $string['never'] = 'Inoiz ez';
-$string['newbadge'] = 'Gehitu beste domina bat';
+$string['newbadge'] = 'Gehitu domina berria';
 $string['newimage'] = 'Irudi berria';
 $string['noawards'] = 'Domina hau ez da oraindik irabazi.';
 $string['nobackpack'] = 'Ez dago kontu honekin lotutako motxila-zerbitzurik.<br/>';
@@ -380,8 +380,8 @@ $string['privacy:metadata:backpack:backpackurl'] = 'Motxilaren URLa';
 $string['privacy:metadata:backpack:email'] = 'Motxilarekin lotutako e-posta helbidea';
 $string['privacy:metadata:backpack:userid'] = 'Motxilaren jabea den erabiltzailearen IDa';
 $string['privacy:metadata:badge'] = 'Dominen bilduma bat';
-$string['privacy:metadata:badge:timecreated'] = 'Domina sortu zeneko data';
-$string['privacy:metadata:badge:timemodified'] = 'Domina azkenengoz aldatu zeneko data';
+$string['privacy:metadata:badge:timecreated'] = 'Domina sortu zeneko unea';
+$string['privacy:metadata:badge:timemodified'] = 'Domina azkenengoz aldatu zeneko unea';
 $string['privacy:metadata:badge:usercreated'] = 'Domina sortu zuenerabiltzailearen IDa';
 $string['privacy:metadata:badge:usermodified'] = 'Domina aldatu zuen erabiltzailearen IDa';
 $string['privacy:metadata:criteriamet'] = 'Bete diren irizpideen bilduma bat';
@@ -442,13 +442,13 @@ Domina bat gutxienez behin eman bada, automatikoki pasako da **BLOKEATUTA** egoe
 
 Domina bat irabazteko erabiltzaile guztiek baldintza berberak dituztela ziurtatzeko. Une honetan ezin da dominarik kendu. Dominen baldintzak edonoiz aldatzen uzten badugu, oso litekeena da azkenean domina bera duten erabiltzaileek baldintza erabat ezberdinak beteta lortu izana.';
 $string['statusmessage_0'] = 'Domina hau ez dago une honetan erabiltzaileek erabiltzeko moduan. Gaitu sarbidea erabiltzaileek domina hau irabazi ahal izatea nahi baduzu.';
-$string['statusmessage_1'] = 'Domina hau une honetan erabiltzaileek erabiltzeko moduan dago. Ezgaitu sarbidea edozein aldaketa egiteko.';
+$string['statusmessage_1'] = 'Domina hau une honetan erabiltzaileek erabiltzeko moduan dago. Desgaitu sarbidea edozein aldaketa egiteko.';
 $string['statusmessage_2'] = 'Domina hau ez dago une hontan erabiltzaileek erabiltzeko moduan eta irizpideak blokeatuta daude. Gaitu sarbidea erabiltzaileek domina hau irabazi ahal izatea nahi baduzu.';
 $string['statusmessage_3'] = 'Domina hau une honetan erabiltzaileek erabiltzeko moduan dago eta irizpideak blokeatuta daude.';
 $string['statusmessage_4'] = 'Domina hau une honetan artxibatuta dago.';
 $string['subject'] = 'Mezuaren gaia';
 $string['variablesubstitution'] = 'Aldagaien aldaketa mezuetan.';
-$string['variablesubstitution_help'] = 'Domina-mezu batean, hainbat aldagai txerta daitezke gaian edota mezuan eta hartara benetako baloreekin aldatu mezua bidaltzean. Aldagaiak ondoren adierazten den bezala txertatu behar dira testuan. Se pueden utilizar las siguientes variables:
+$string['variablesubstitution_help'] = 'Domina-mezu batean, hainbat aldagai txerta daitezke gaian edota mezuan eta hartara benetako balioekin aldatu mezua bidaltzean. Aldagaiak ondoren adierazten den bezala txertatu behar dira testuan. Hurrengo aldagaiak erabili daitezke:
 
 %badgename%
 : honen ordez dominaren izen osoa agertuko da.

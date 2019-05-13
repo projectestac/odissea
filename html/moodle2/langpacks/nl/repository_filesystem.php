@@ -37,6 +37,7 @@ $string['nosubdir'] = 'Je moet minstens één map maken in de <b>{$a}</b> map zo
 $string['path'] = 'Kies een map';
 $string['pluginname'] = 'Bestandssysteem';
 $string['pluginname_help'] = 'Maak een opslagruimte van een lokale map';
+$string['privacy:metadata'] = 'De bestandssysteem opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['relativefiles'] = 'Relatieve bestanden toestaan';
 $string['relativefiles_desc'] = 'Hiermee worden alle bestanden in de opslagruimte toegankelijk via relatieve links.';
 $string['root'] = 'Root';

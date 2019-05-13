@@ -32,5 +32,6 @@ $string['noimages'] = 'Нет изображений';
 $string['nolinks'] = 'Нет ссылок';
 $string['nostyles'] = 'Нет стилей';
 $string['pluginname'] = 'Помощник для слабовидящих';
+$string['privacy:metadata'] = 'Плагин atto_accessibilityhelper не хранит никаких персональных данных.';
 $string['selectimage'] = 'Выберите изображение';
 $string['selectlink'] = 'Выберите ссылку';

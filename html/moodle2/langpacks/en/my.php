@@ -42,3 +42,4 @@ $string['reseterror'] = 'There was an error resetting your page';
 $string['reseteveryonesdashboard'] = 'Reset Dashboard for all users';
 $string['reseteveryonesprofile'] = 'Reset profile for all users';
 $string['resetpage'] = 'Reset page to default';
+$string['unabletoaccess'] = 'As a security precaution, you may not access another user\'s dashboard';

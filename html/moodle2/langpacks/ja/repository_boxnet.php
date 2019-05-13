@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'APIキー';
 $string['boxnet:view'] = 'Boxリポジトリを表示する';
-$string['cannotcreatereference'] = 'Boxのファイルを共有する十分なパーミッションがないため、リファレンスを作成できません。';
+$string['cannotcreatereference'] = 'Boxのファイルを共有する十分なパーミッションがないためリファレンスを作成できません。';
 $string['clientid'] = 'クライアントID';
 $string['clientsecret'] = 'クライアント秘密鍵';
 $string['configplugin'] = 'Box設定';

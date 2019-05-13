@@ -3,6 +3,18 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 19.04.15
+---------------------------------------------------------------------------------------
+- Moodle upgraded to from 3.4.8
+- Align availability label next to the activity title
+- Add the temp configuration to the agora config file
+- Updated LangPacks
+- Updated auth/googleauth2
+- Updated mod/hvp
+- Updated them/xtec2
+- Updated mod/geogebra
+- Updated mod/jclic
+
 Changes 18.11.23
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.4.6

@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'Η αναφορά συμμετοχής προβλήθηκε';
+$string['nologreaderenabled'] = 'Δεν είναι ενεργοποιημένος κανένας αναγνώστης καταγραφών';
+$string['page-report-participation-index'] = 'Αναφορά συμμετοχής σε μάθημα';
+$string['page-report-participation-x'] = 'Οποιαδήποτε αναφορά συμμετοχής';
 $string['participation:view'] = 'Προβολή αναφοράς συμμετοχής μαθήματος';
+$string['pluginname'] = 'Συμμετοχή στο μάθημα';
+$string['privacy:metadata'] = 'Το πρόσθετο «Συμμετοχή στο μάθημα» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

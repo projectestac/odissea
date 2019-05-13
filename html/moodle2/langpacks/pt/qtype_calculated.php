@@ -135,7 +135,7 @@ $string['synchronize'] = 'Sincronizar os dados dos conjuntos de dados partilhado
 $string['synchronizeno'] = 'Não sincronizar';
 $string['synchronizeyes'] = 'Sincronizar';
 $string['synchronizeyesdisplay'] = 'Sincronizar e mostrar o nome dos conjuntos de dados partilhados tal como prefixo do nome da pergunta';
-$string['tolerance'] = 'Tolerância &plusmn;';
+$string['tolerance'] = 'Tolerância ±';
 $string['tolerancetype'] = 'Tipo';
 $string['trueanswerinsidelimits'] = 'Resposta correta : {$a->correct} dentro dos limites do valor aceite de {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">ERRO resposta correta : {$a->correct} fora dos limites do valor aceite {$a->true}</span>';

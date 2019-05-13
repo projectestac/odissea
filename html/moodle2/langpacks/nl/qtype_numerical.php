@@ -68,6 +68,7 @@ $string['pluginnameadding'] = 'Numerieke vraag toevoegen';
 $string['pluginnameediting'] = 'Numerieke vraag bewerken';
 $string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt een numerieke vraag hetzelfde als een kort antwoordvraag. Het verschil is dat numerieke vragen een foutentolerantie kunnen hebben. Dit maakt het mogelijk om een reeks antwoorden als juist antwoord te laten beoordelen. Als het juiste antwoord bijvoorbeeld 10 is met een foutenmarge van 2, dan zal elk getal tussen 8 en 12 juist gerekend worden.';
 $string['pluginnamesummary'] = 'Maakt het mogelijk een numeriek antwoord te laten geven, zelfs met eenheden en toleranties. Dat antwoord kan beoordeeld worden met verschillende modelantwoorden,';
+$string['privacy:metadata'] = 'De numerieke vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['relative'] = 'Relatief';
 $string['rightexample'] = 'rechts, bijvoorbeeld 1,00cm of 1,00km';
 $string['selectunit'] = 'Kies een eenheid';

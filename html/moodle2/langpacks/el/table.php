@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadas'] = 'Λήψη δεδομένων πίνακα';
-$string['downloadcsv'] = 'αρχείο κειμένου τιμών διαχωρισμένων με κόμμα (CSV)';
-$string['downloadexcel'] = 'λογιστικό φύλλο Microsoft Excel';
-$string['downloadods'] = 'λογιστικό φύλλο OpenDocument (ODS)';
-$string['downloadtsv'] = 'αρχείο κειμένου τιμών διαχωρισμένων με στηλοθέτες';
-$string['downloadxhtml'] = 'αρχείο XHTML';
+$string['downloadas'] = 'Λήψη δεδομένων πίνακα ως';
+$string['downloadcsv'] = 'Αρχείο κειμένου τιμών διαχωρισμένων με κόμμα (CSV)';
+$string['downloadexcel'] = 'Υπολογιστικό φύλλο Excel';
+$string['downloadods'] = 'Υπολογιστικό φύλλο OpenDocument (ODS)';
+$string['downloadoptions'] = 'Επιλέξτε επιλογές λήψης';
+$string['downloadtsv'] = 'Αρχείο κειμένου τιμών διαχωρισμένων με στηλοθέτες';
+$string['downloadxhtml'] = 'Unpaged XHTML έγγραφο';

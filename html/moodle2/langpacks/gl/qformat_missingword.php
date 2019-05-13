@@ -31,3 +31,4 @@ $string['noanswerfound'] = 'Non se atoparon respostas nesta pregunta';
 $string['pluginname'] = 'Formato de palabra perdida';
 $string['pluginname_help'] = 'O formato de pregunta «palabra perdida» permite a importación mediante ficheiro de texto';
 $string['pluginname_link'] = 'Formato de palabra perdida';
+$string['privacy:metadata'] = 'O engadido de formato de preguntas de palabra perdida non almacena ningún dato persoal.';

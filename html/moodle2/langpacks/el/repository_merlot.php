@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρύθμιση Merlot.org';
+$string['configplugin'] = 'Ρυθμίσεις Merlot.org';
 $string['licensekey'] = 'Κλειδί πρόσβασης';
 $string['merlot:view'] = 'Εμφάνιση του repository Merlot';
+$string['pluginname'] = 'Merlot.org';
+$string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'Το πρόσθετο «Αποθετήριο Merlot.org» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
+$string['privacy:metadata:repository_merlot:author'] = 'Ο συγγραφέας περιεχομένου του αποθετηρίου Merlot.org.';
+$string['privacy:metadata:repository_merlot:keywords'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Merlot.org.';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'Το κλειδί άδειας χρήσης του αποθετηρίου Merlot.org.';

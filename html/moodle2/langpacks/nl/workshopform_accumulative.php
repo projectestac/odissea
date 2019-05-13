@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'Je moet voor dit aspect een cijfer kiezen';
 $string['pluginname'] = 'Cumulatief cijfer';
 $string['poor'] = 'Slecht';
 $string['present'] = 'Aanwezig';
+$string['privacy:metadata'] = 'De accumulatief beoordelen-plugin bewaart geen persoonlijke gegevens. De persoonlijke gegevens van wie wat gaat beoordelen wordt bewaard door de Workshop-module zelf en dat vormt de basis voor het exporteren van beoordelingsdetails.';
 $string['scalename0'] = 'Ja/nee (2 punten)';
 $string['scalename1'] = 'Aanwezig/afwezig (2 punten)';
 $string['scalename2'] = 'Juist/niet juist (2 punten)';

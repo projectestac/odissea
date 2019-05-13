@@ -46,6 +46,10 @@ $string['displayselect_help'] = 'Este axuste, xunto co tipo de URL, e sempre que
 * Nova xanela - Presentase o URL nunha nova xanela do navegador con menús e a barra de enderezos';
 $string['externalurl'] = 'URL externo';
 $string['framesize'] = 'Altura do marco';
+$string['indicator:cognitivedepth'] = 'URL cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso URL.';
+$string['indicator:socialbreadth'] = 'URL social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso URL.';
 $string['invalidstoredurl'] = 'Non é posíbel presentar este recurso, o URL non é correcto.';
 $string['invalidurl'] = 'O URL introducido non é correcto';
 $string['modulename'] = 'URL';

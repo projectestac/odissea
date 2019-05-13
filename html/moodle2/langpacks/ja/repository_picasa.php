@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'クライアントID';
 $string['configplugin'] = 'Picasaリポジトリ設定';
-$string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環として、あなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインに使用することのできるクライアントIDおよび秘密鍵が提供されます。</p>';
+$string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環としてあなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインで使用できるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['picasa:view'] = 'Picasaリポジトリを表示する';
 $string['pluginname'] = 'Picasaウェブアルバム';
 $string['privacy:metadata:repository_picasa'] = 'Picasaウェブアルバムリポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';

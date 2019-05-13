@@ -37,4 +37,4 @@ $string['upload_error_invalid_file'] = '\'{$a}\' fitxategia hutsik dago edo karp
 $string['upload_error_no_file'] = 'Ez da fitxategirik igo.';
 $string['upload_error_no_tmp_dir'] = 'PHP falta da aldi baterako karpetan.';
 $string['upload_error_partial'] = 'Fitxategiaren zati bat baino ez da igo.';
-$string['upload:view'] = 'Igotzeko gailua erabili fitxategi-hautatzailean';
+$string['upload:view'] = 'Erabili igotzeko gailua fitxategi-hautatzailean';

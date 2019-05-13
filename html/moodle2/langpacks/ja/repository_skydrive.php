@@ -31,12 +31,12 @@ $string['configplugin'] = 'Microsoft OneDriveを設定する (レガシー)';
 $string['deprecatedwarning'] = '警告: このリポジトリプラグインに使用されているAPIはMicrosoftにより廃止されました。そのため、結果として動作しなくなります。新しい「Microsoft OneDrive」リポジトリに移行してください。';
 $string['oauthinfo'] = '<p>このプラグインを使用するためにはあなたのサイトを<a href="https://account.live.com/developers/applications">Microsoft</a>に登録する必要があります。</p>
 
-<p>登録処理の一環としてあなたは「リダイレクトドメイン」として次のURLを入力する必要があります:</p>
+<p>登録処理の一環としてあなたは「リダイレクトドメイン」に次のURLを入力する必要があります:</p>
 
 <p>{$a->callbackurl}</p>
 
-<p>登録した場合、あなたにはここで入力できるクライアントIDおよび秘密鍵が提供されます。</p>';
+<p>登録完了後、あなたにはここで入力できるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Microsoft OneDrive (レガシー)';
 $string['privacy:metadata'] = 'Microsoft OneDrive (レガシー) リポジトリプラグインはどのような個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['secret'] = '秘密鍵';
-$string['skydrive:view'] = 'OneDriveを表示する (レガシー)';
+$string['skydrive:view'] = 'OneDrive (レガシー) 表示する';

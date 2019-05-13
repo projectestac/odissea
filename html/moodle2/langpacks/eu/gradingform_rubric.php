@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Gehitu irizpidea';
-$string['alwaysshowdefinition'] = 'Utzi erabiltzaileei moduluan erabilitako errubrika aurreikusten (bestela, errubrika kalifikatu ondoren baino ez da ikusiko).';
+$string['alwaysshowdefinition'] = 'Baimendu erabiltzaileei moduluan erabilitako errubrika aurreikusten (bestela, errubrika kalifikatu ondoren baino ez da ikusiko).';
 $string['backtoediting'] = 'Itzuli ediziora';
 $string['confirmdeletecriterion'] = 'Ziur al zaude irizpidea ezabatu nahi duzula?';
 $string['confirmdeletelevel'] = 'Ziur al zaude maila hau ezabatu nahi duzula?';
@@ -34,7 +34,7 @@ $string['criterion'] = '{$a} irizpidea';
 $string['criterionaddlevel'] = 'Gehitu maila';
 $string['criteriondelete'] = 'Ezabatu irizpidea';
 $string['criterionduplicate'] = 'Bikoiztu irizpidea';
-$string['criterionempty'] = 'Sakatu irizpidea editatzeko';
+$string['criterionempty'] = 'Egin klik irizpidea editatzeko';
 $string['criterionmovedown'] = 'Mugitu behera';
 $string['criterionmoveup'] = 'Mugitu gora';
 $string['criterionremark'] = '{$a->description} irizpidearen iruzkina: {$a->remark}';
@@ -52,15 +52,19 @@ $string['gradingof'] = '{$a} kalifikatzen';
 $string['level'] = 'Maila {$a->definition}, {$a->score} puntuak.';
 $string['leveldefinition'] = '{$a} mailaren definizioa';
 $string['leveldelete'] = 'Ezabatu {$a} maila';
-$string['levelempty'] = 'Sakatu maila editatzeko';
+$string['levelempty'] = 'Egin klik maila editatzeko';
 $string['levelsgroup'] = 'Maila-taldeak';
 $string['lockzeropoints'] = 'Kalkulatu kalifikazioa errubrikan oinarrituta gutxieneko kalifikazioa zero izanda';
-$string['lockzeropoints_help'] = 'Ezarpen hau soilik aplikatzen da maila guztien gutxienezko puntuazioen batura zero baino handiagoa bada. Markatuz gero, errubrikan lordaitekeen gutxieneko puntuazioa zero baino handiagoa izango da. Markatu gabe utziz gero, errubrikaren gutxieneko puntuazioa aktibitatearen gutxieneko puntuazioa izango da (eta hau zero da eskala bat erabiltzen ez bada).';
+$string['lockzeropoints_help'] = 'Ezarpen hau soilik aplikatzen da irizpide guztien gutxienezko puntuazioen batura zero baino handiagoa bada. Markatuz gero, errubrikan lor daitekeen gutxieneko puntuazioa zero baino handiagoa izango da. Markatu gabe utziz gero, errubrikaren gutxieneko puntuazioa aktibitatearen gutxieneko puntuazioa izango da (zero eskala bat erabiltzen ez bada).';
 $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Errubrikaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi errubrika hau egiaztatu eta kalifikazioa eguneratu arte.';
 $string['pluginname'] = 'Errubrika';
 $string['previewrubric'] = 'Aurreikusi errubrika';
-$string['privacy:metadata'] = 'Errubrika kalifikazio-formulario pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata:criterionid'] = 'Kalifikatzen ari den irizpide zehatz batera identzifikatzaile bat.';
+$string['privacy:metadata:fillingssummary'] = 'Errubrikak sortutako erabiltzailearen kalifikazioari buruzko informazioa gordetzen du.';
+$string['privacy:metadata:instanceid'] = 'Jarduera bateko kalifikazioarekin erlazionatutako identifikatzaile bat.';
+$string['privacy:metadata:levelid'] = 'Errubrikan erdietsitako maila.';
+$string['privacy:metadata:remark'] = 'Ebaluatzen ari den errubrikaren irizpidearekin erlazionatutako iruzkinak.';
 $string['regrademessage1'] = 'Aldaketak egin behar dituzu kalifikatzeko erabili den errubrika batean. Mesedez, adierazi orain arteko kalifikazioak berrikusi behar diren. Ezarpen hau gaitzen baduzu, errubrika ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regrademessage5'] = 'Kalifikatzeko erabilia izan den errubrika batean aldaketa nabarmenak egin behar dituzu. Kalifikazio liburuaren balioa ez da aldatuko, baina errubrika ikasleei ezkutatuko zaie beren kalifikazioa berrikusi arte.';
 $string['regradeoption0'] = 'Ez markatu berriz kalifikatzeko';
@@ -68,7 +72,7 @@ $string['regradeoption1'] = 'Markatu berriz kalifikatzeko';
 $string['restoredfromdraft'] = 'OHARRA: pertsona hau kalifikatzeko azken saiakera ez da ondo gorde, beraz, zirriborro-kalifikazioak berreskuratu dira. Aldaketa hauek bertan behera utzi nahi badituzu, erabili azpiko \'Utzi\' botoia.';
 $string['rubric'] = 'Errubrika';
 $string['rubricmapping'] = 'Puntuazioetatik kalifikazioetara lotura egiteko arauak';
-$string['rubricmappingexplained'] = 'Errubrika honentzako gutxieneko puntuazioa  <b>{$a->minscore} puntu</b> da. Jardueraren gutxieneko kalifikaziora bihurtuko da (eskalarik erabiltzen ez bada, zero izango da). Gehieneko puntuazioa <b>{$a->maxscore} puntu</b> da, eta gehieneko kalifikaziora bihurtuko da. Erdiko puntuazioak era berean eraldatuko dira.
+$string['rubricmappingexplained'] = 'Errubrika honentzako gutxieneko puntuazioa  <b>{$a->minscore} puntu</b> da. Jardueraren gutxieneko kalifikaziora bihurtuko da (eskalarik erabiltzen ez bada, zero izango da). Gehienezko puntuazioa <b>{$a->maxscore} puntu</b> da, eta gehienezko kalifikaziora bihurtuko da. Erdiko puntuazioak era berean eraldatuko dira.
 
 Eskala bat erabiltzen bada kalifikazio baten ordez, puntuazioa bihurtuko da eskalaren elementuetako batean, jarraian doazen zenbaki osoak bailiran.
 
@@ -86,7 +90,7 @@ $string['showdescriptionteacher'] = 'Erakutsi errubrikaren deskribapena ebaluatu
 $string['showremarksstudent'] = 'Erakutsi iruzkinak ebaluatutako erabiltzaileei';
 $string['showscorestudent'] = 'Erakutsi maila bakoitzaren puntuak ebaluatutako erabiltzaileei';
 $string['showscoreteacher'] = 'Erakutsi maila bakoitzeko puntuak ebaluatu bitartean';
-$string['sortlevelsasc'] = 'Mailentzako orden-mota:';
+$string['sortlevelsasc'] = 'Mailentzako sailkatze-ordena:';
 $string['sortlevelsasc0'] = 'Goitik behera puntu-kopuruaren arabera';
 $string['sortlevelsasc1'] = 'Behetik gora puntu-kopuruaren arabera';
 $string['zerolevelsabsent'] = 'Kontuz: errubrikaren gutxieneko puntuazio posiblea ez da zero; honek aktibitatean ezusteko puntuazioak eragin ditzake. Hau ekiditeko, irizpide bakoitzak 0 puntuko maila bat izan behar du.<br>

@@ -30,6 +30,7 @@ $string['expiredaction'] = 'Actie bij verlopen van de aanmelding';
 $string['expiredaction_help'] = 'Kies een actie die moet gebeuren wanneer de aanmelding van een gebruiker verloopt. Merk op dat sommige gebruikersgegevens en instellingen worden verwijderd tijdens het afmelden uit een cursus.';
 $string['filelockedmail'] = 'Het tekstbestand dat je gebruikt voor bestandsgebaseerde inschrijvingen ({$a}) kan niet verwijderd worden door het cron-proces. Dit is gewoonlijk omdat de rechten op het bestand verkeerd ingesteld zijn. Zet aub de rechten zo dat Moodle het bestand kan verwijderen, anders wordt dat herhaaldelijk verwerkt.';
 $string['filelockedmailsubject'] = 'Belangrijke fout: aanmeldingsbestand';
+$string['flatfileenrolments'] = 'Aanmeldingen via platte tekst (CSV)';
 $string['flatfile:manage'] = 'Beheer aanmelding van gebruikers manueel';
 $string['flatfilesync'] = 'Synchronisatie aanmelding tekstbestand';
 $string['flatfile:unenrol'] = 'Gebruikers manueel uit de cursus halen';
@@ -62,3 +63,11 @@ Het zou er kunnen uitzien zoals dit:
    del, student, 17, CF101
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'De platte tekst aanmeldingsplugin kan persoonlijke gegevens van gebruikers bewaren die verband houden met hun toekomstige aanmeldingen in de enrol_flatfile-tabel.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'De aanmeldingsactie wordt verwacht op de gegeven datum.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'De cursusID waarmee de aanmelding verband houdt';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'De ID van de rol die toegewezen of verwijderd wordt.';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'Het tijdstip waarop de aanmeldingswijziging eindigt.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'Het wijzigingstijdstip van deze aanmeldingswijziging.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'Het tijdstip waarop de aanmeldingswijziging begint.';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'De ID van de gebruiker waarop de roltoewijzing betrekking heeft';

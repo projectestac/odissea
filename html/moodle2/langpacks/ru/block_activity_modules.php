@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'Добавлять новый блок «Элементы курса»';
 $string['pluginname'] = 'Элементы курса';
+$string['privacy:metadata'] = 'Блок «Элементы курса» только показывает данные, хранящиеся в других местах.';

@@ -29,3 +29,4 @@ $string['areafiles:view'] = 'Visualizzare repository File incorporati';
 $string['configplugin'] = 'Configurazione repository File incorporati';
 $string['pluginname'] = 'File incorporati';
 $string['pluginname_help'] = 'File incorporati nell\'editor di testo in uso';
+$string['privacy:metadata'] = 'Il plugin repository "File incorporati" non memorizza né trasmette file personali.';

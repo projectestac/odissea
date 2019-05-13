@@ -30,6 +30,7 @@ $string['includingsubcategories'] = 'Subcategorieën inbegrepen';
 $string['pluginname'] = 'Willekeurige vraag';
 $string['pluginnameediting'] = 'Willekeurige vraag bewerken';
 $string['pluginname_help'] = 'Een willekeurige vraag is geen vraagtype op zich, maar is een manier om willekeurig gekozen vragen uit een categorie in een activiteit (zoals een test) te plaatsen.';
+$string['privacy:metadata'] = 'De willekeurige vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['randomqname'] = 'Willekeurig ({$a})';
 $string['randomqplusname'] = 'Willekeurig ({$a} en subcategorieën)';
 $string['selectedby'] = '{$a->questionname} gekozen door  {$a->randomname}';

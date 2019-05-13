@@ -43,6 +43,7 @@ $string['pluginname'] = '图片';
 $string['presentation'] = '不需要描述';
 $string['presentationoraltrequired'] = '图片必须要有一个描述，除非标记了不需描述。';
 $string['preview'] = '预览';
+$string['privacy:metadata'] = 'atto_image 插件不储存任何私人数据。';
 $string['saveimage'] = '保存图片';
 $string['size'] = '大小';
 $string['uploading'] = '上传中，请稍候……';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Acceptació';
 $string['acknowledgementtext'] = 'Entenc que és responsabilitat meva fer còpies de seguretat completes d\'aquest lloc abans d\'instal·lar complements. Accepto i entenc que els complements (especialment els no oficials, però no sols els de fonts no oficials) poden contenir forats de seguretat, poden fer que el lloc estigui no disponible, o provocar filtracions o pèrdua de dades privades.';
-$string['featuredisabled'] = 'L\'instal·lador d\'aquest complement està deshabilitat en aquest lloc.';
+$string['featuredisabled'] = 'L\'instal·lador d\'aquest connector està inhabilitat en aquest lloc.';
 $string['installaddon'] = 'Instal·la un complement!';
 $string['installaddons'] = 'Instal·la complements!';
 $string['installfromrepo'] = 'Instal·la complements des del directori de connectors de Moodle';

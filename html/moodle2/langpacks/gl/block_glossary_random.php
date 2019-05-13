@@ -40,6 +40,7 @@ $string['noentriesyet'] = 'Aínda non hai entradas no glosario escollido.';
 $string['notyetconfigured'] = 'Configure este bloque empregando a icona de edición.';
 $string['notyetglossary'] = 'Necesita escoller polo menos un glosario.';
 $string['pluginname'] = 'Entrada á toa do glosario';
+$string['privacy:metadata'] = 'O bloque de entrada ao chou do glosario só amosa os datos almacenados noutros lugares';
 $string['random'] = 'Entrada á toa';
 $string['refresh'] = 'Días antes de escoller unha nova entrada';
 $string['select_glossary'] = 'Coller entradas deste glosario';

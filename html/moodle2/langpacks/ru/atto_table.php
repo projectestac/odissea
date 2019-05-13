@@ -59,6 +59,7 @@ $string['numberofcolumns'] = 'Количество столбцов';
 $string['numberofrows'] = 'Количество строк';
 $string['outer'] = 'Вокруг таблицы';
 $string['pluginname'] = 'Таблица';
+$string['privacy:metadata'] = 'Плагин atto_table не хранит никаких персональных данных.';
 $string['rows'] = 'Строки';
 $string['settings'] = 'Настройки таблиц';
 $string['solid'] = 'Сплошная линия';

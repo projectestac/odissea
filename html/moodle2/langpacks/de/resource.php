@@ -93,7 +93,7 @@ $string['popupwidthexplain'] = 'Standardbreite von Popup-Fenstern festlegen';
 $string['printintro'] = 'Beschreibung anzeigen';
 $string['printintroexplain'] = 'Beschreibung unterhalb des Inhalts anzeigen? Einige Anzeigetypen können die Beschreibung nicht anzeigen, selbst wenn diese Option aktiviert ist.';
 $string['privacy:metadata'] = 'Das Plugin Datei speichert keine personenbezogenen Daten.';
-$string['resource:addinstance'] = 'Datei hinzufügen';
+$string['resource:addinstance'] = 'Neue Datei hinzufügen';
 $string['resourcecontent'] = 'Dateien und Verzeichnisse';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
@@ -113,4 +113,4 @@ Wenn zu einem Arbeitsmaterial mehrere Dateien gehören wird die Gesamtgröße al
 $string['showtype'] = 'Typ anzeigen';
 $string['showtype_desc'] = 'Zeigt den Dateityp (z.B. Word-Datei) auf der Kursseite an.';
 $string['showtype_help'] = 'Zeigt den Dateityp neben dem Link zur Datei an (z.B. Word-Datei). Falls mehrere Dateien zu einem Arbeitsmaterial gehören wird der Typ der ersten Datei angezeigt. Ist der Dateityp nicht bekannt, wird nichts angezeigt.';
-$string['uploadeddate'] = 'Hochgeladen {$a}';
+$string['uploadeddate'] = 'hochgeladen {$a}';

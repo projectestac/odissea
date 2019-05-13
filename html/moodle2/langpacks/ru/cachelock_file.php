@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Блокировка созданием файла';
+$string['privacy:metadata'] = 'Плагин «Блокировка созданием файла» не хранит никаких персональных данных.';

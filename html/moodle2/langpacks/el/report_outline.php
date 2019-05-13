@@ -25,6 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventactivityreportviewed'] = 'Η αναφορά δραστηριότητας προβλήθηκε';
+$string['eventoutlinereportviewed'] = 'Η συνοπτική αναφορά προβλήθηκε';
 $string['neverseen'] = 'Ποτέ δεν εμφανίστηκαν';
+$string['nocapability'] = 'Δεν είναι δυνατή η πρόσβαση στην συνοπτική αναφορά χρήστη';
+$string['nologreaderenabled'] = 'Δεν είναι ενεργοποιημένος κανένας αναγνώστης καταγραφών';
+$string['numviews'] = '{$a->numviews} προβολές από {$a->distinctusers} χρήστες';
 $string['outline:view'] = 'Προβολή αναφοράς δραστηριότητας μαθήματος';
+$string['page-report-outline-index'] = 'Συνοπτική αναφορά μαθήματος';
+$string['page-report-outline-user'] = 'Συνοπτική αναφορά μαθήματος χρήστη';
+$string['page-report-outline-x'] = 'Οποιαδήποτε συνοπτική αναφορά';
 $string['pluginname'] = 'Αναφορά δραστηριοτήτων';
+$string['privacy:metadata'] = 'Το πρόσθετο «Αναφορά δραστηριότητας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

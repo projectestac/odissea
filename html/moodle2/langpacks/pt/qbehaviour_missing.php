@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comportamento desconhecido';
-$string['privacy:metadata'] = 'O módulo comportamento de questão em falta não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Em falta não armazena dados pessoais.';
 $string['questionusedunknownmodel'] = 'Realizou uma tentativa à pergunta com um tipo de comportamento que não se encontra disponível. Estamos a tentar exibir a pergunta, mas podem ocorrer problemas.';

@@ -40,6 +40,7 @@ $string['deleteselectedusers'] = 'Eliminar las matrículas de usuario selecciona
 $string['editselectedusers'] = 'Editar las matrículas de usuario seleccionadas';
 $string['enrolledincourserole'] = 'Matriculado en "{$a->course}" as "{$a->role}"';
 $string['enrolusers'] = 'Matricular usuarios';
+$string['enroluserscohorts'] = 'Matricular cohortes y usuarios seleccionados';
 $string['expiredaction'] = 'Acción a la expiración de la matrícula';
 $string['expiredaction_help'] = 'Seleccione la acción a llevar a cabo cuando la matriculación del usuario expire. Tenga en cuenta que hay información y datos de configuración relativos al usuario que serán eliminados en el proceso de baja.';
 $string['expirymessageenrolledbody'] = 'Apreciado  {$a->user},

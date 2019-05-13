@@ -29,6 +29,7 @@ $string['configlog'] = 'Cambios de configuración';
 $string['oldvalue'] = 'Valor orixinal';
 $string['plugin'] = 'Engadido';
 $string['pluginname'] = 'Cambios de configuración';
+$string['privacy:metadata'] = 'O engadido de cambios de configuración non almacena ningún dato persoal.';
 $string['setting'] = 'Axuste';
 $string['timemodified'] = 'Data';
 $string['value'] = 'Novo valor';

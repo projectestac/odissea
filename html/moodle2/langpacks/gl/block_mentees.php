@@ -32,3 +32,4 @@ $string['mentees:addinstance'] = 'Engadir un novo bloque de mentorizados';
 $string['mentees:myaddinstance'] = 'Engadir un novo bloque de mentorizados ao meu cartafol persoal';
 $string['newmenteesblock'] = '(novo bloque Mentorizados)';
 $string['pluginname'] = 'Mentorizados';
+$string['privacy:metadata'] = 'O bloque de mentorizados só amosa datos almacenados noutros lugares.';

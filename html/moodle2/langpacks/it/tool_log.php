@@ -27,9 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Log store disponibili';
 $string['configlogplugins'] = 'Abilitare tutti i plugin necessari ordinandoli in base alle esigenze.';
+$string['exportlog'] = 'Includi i log nelle esportazioni';
+$string['exportlogdetail'] = 'Nelle esportazioni saranno inclusi i logo relativi agli utenti.';
 $string['logging'] = 'Logging';
 $string['managelogging'] = 'Gestione log store';
 $string['pluginname'] = 'Gestore log store';
+$string['privacy:metadata:logstore'] = 'Log store';
+$string['privacy:path:logs'] = 'Log';
+$string['privacy:request:origin:cli'] = 'Strumento linea di comando';
+$string['privacy:request:origin:restore'] = 'Backup da ripristinare';
+$string['privacy:request:origin:web'] = 'Richiesta web standard';
+$string['privacy:request:origin:ws'] = 'App mobile o web service';
 $string['reportssupported'] = 'Report supportati';
 $string['subplugintype_logstore'] = 'Log store';
 $string['subplugintype_logstore_plural'] = 'Log store';

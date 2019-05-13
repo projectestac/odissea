@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo de data';
 $string['pluginname'] = 'Data';
+$string['privacy:metadata'] = 'O compoñente de campo de data non almacena ningún dato persoal, usa táboas definidas en mod_data.';

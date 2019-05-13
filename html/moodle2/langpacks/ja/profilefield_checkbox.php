@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'チェックボックス';
-$string['privacy:metadata:profilefield_checkbox:data'] = '保存されたユーザデータです。';
-$string['privacy:metadata:profilefield_checkbox:dataformat'] = '保存されたユーザデータのフォーマットです。';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'チェックボックスユーザプロファイルフィールドのユーザデータです。';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'チェックボックスユーザプロファイルフィールドのユーザデータのフォーマットです。';
 $string['privacy:metadata:profilefield_checkbox:fieldid'] = 'プロファイルフィールドのIDです。';
-$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'ここにユーザ追加情報が保存されます。';
-$string['privacy:metadata:profilefield_checkbox:userid'] = 'チェックボックスプラグインにデータが保存されるユーザのIDです。';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = '追加プロファイルデータです。';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'チェックボックスユーザプロファイルフィールドにデータが保存されるユーザのIDです。';

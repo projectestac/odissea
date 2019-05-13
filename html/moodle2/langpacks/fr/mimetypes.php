@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['application/epub_zip'] = 'Ebook EPUB';
+$string['application/json'] = 'Texte {$a->MIMETYPE2}';
 $string['application/msword'] = 'Document Word';
 $string['application/pdf'] = 'Document PDF';
 $string['application/vnd.moodle.backup'] = 'Sauvegarde Moodle';

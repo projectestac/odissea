@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Intentos permitidos: {$a}';
 $string['pluginname'] = 'Regra de acceso para número de intentos';
+$string['privacy:metadata'] = 'O engadido de regra de acceso para número de intentos non almacena ningún dato persoal.';

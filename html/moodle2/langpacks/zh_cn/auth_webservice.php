@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = '此身份认证方法用于那些只允许通过网络服务客户端访问的账号。';
 $string['pluginname'] = '网络服务身份认证';
+$string['privacy:metadata'] = '网络服务认证插件不储存任何私人数据。';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '离线';
+$string['privacy:metadata'] = '离线作业插件不储存任何私人数据。';

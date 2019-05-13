@@ -32,4 +32,5 @@ $string['allocationexists'] = 'De toewijzing bestaat al';
 $string['areyousuretodeallocate'] = 'Ben je er zeker van dat je de toewijzign van de geselecteerde evaluatie wil ongedaan maken?';
 $string['areyousuretodeallocategraded'] = 'Je gaat deze evaluatie met cijfers verwijderen. Ben je er zeker van dat je dit wil doen?';
 $string['pluginname'] = 'Handmatig toewijzen';
+$string['privacy:metadata:preference:perpage'] = 'Aantal toegewezen beoordelingen die de gebruiker wil zien op één pagina.';
 $string['showallparticipants'] = 'Toon alle deelnemers';

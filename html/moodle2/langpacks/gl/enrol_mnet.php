@@ -37,6 +37,7 @@ $string['mnet_enrol_description'] = 'Publicar este servizo para permitirlles aos
 $string['mnet_enrol_name'] = 'Inscrición da conexión Moodle';
 $string['pluginname'] = 'Matriculacións MNet remotas';
 $string['pluginname_desc'] = 'Permitir que o servidor remoto MNet matricules os seus usuarios nos cursos.';
+$string['privacy:metadata'] = 'O engadido de matriculacións MNet remotas non almacena ningún dato persoal.';
 $string['remotesubscriber'] = 'Servidor remoto';
 $string['remotesubscriber_help'] = 'Seleccione «Todos os servidores» para abrir este curso a todos os pares MNet aos que estamos a ofrecer a matriculación remota. Ou escolla un só servidor para facer este curso dispoñíbel só para os seus usuarios.';
 $string['remotesubscribersall'] = 'Todos os servidores';

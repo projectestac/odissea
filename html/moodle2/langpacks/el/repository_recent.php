@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρύθμιση για τον χώρο αποθήκευσης πρόσφατων αρχείων';
+$string['configplugin'] = 'Ρυθμίσεις αποθετηρίου πρόσφατων αρχείων';
+$string['emptyfilelist'] = 'Δεν υπάρχουν αρχεία για εμφάνιση';
+$string['notitle'] = 'ΧωρίςΤίτλο';
 $string['pluginname'] = 'Πρόσφατα αρχεία';
+$string['pluginname_help'] = 'Αρχεία που χρησιμοποιούνται πρόσφατα από τον τρέχοντα χρήστη';
+$string['privacy:metadata'] = 'Το πρόσθετο αποθετηρίου «Πρόσφατα αρχεία»  δεν αποθηκεύει ούτε μεταβιβάζει κανένα προσωπικό δεδομένο.';
 $string['recentfilesnumber'] = 'Αριθμός πρόσφατων αρχείων';
-$string['recent:view'] = 'Εμφάνιση του repository πρόσφατων αρχείων στο σύστημα επιλογής αρχείων (file picker)';
+$string['recent:view'] = 'Δείτε το πρόσθετο αποθετηρίου πρόσφατων αρχείων';

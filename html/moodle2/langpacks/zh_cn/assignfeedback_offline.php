@@ -46,6 +46,7 @@ $string['invalidgradeimport'] = 'Moodle无法阅读你上传的评价表。请�
 $string['nochanges'] = '在上传的计分评价表里没有发现更改过的分数';
 $string['offlinegradingworksheet'] = '分数';
 $string['pluginname'] = '离线评分表格';
+$string['privacy:nullproviderreason'] = '此插件没有存储用户信息的数据库。它只使用 mod_assign模块中的应用程序接帮助显示成绩界面。';
 $string['processgrades'] = '导入成绩';
 $string['skiprecord'] = '跳过记录';
 $string['updatedgrades'] = '更新{$a}的分数及反馈';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Web';
-$string['privacy:metadata'] = 'Das Web-Mitteilungs-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Web-Mitteilungs-Plugin speichert keine personenbezogenen Daten.';

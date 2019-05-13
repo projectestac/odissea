@@ -163,7 +163,7 @@ Es mostraran tres icones després del menú desplegable de Tipus d\'eina externa
 * **Suprimeix** — Suprimeix el tipus d\'eina del nivell del curs.';
 $string['external_tool_types'] = 'Tipus d\'eines externes';
 $string['failedtoconnect'] = 'Moodle no pot comunicar-se amb el sistema «{$a}»';
-$string['failedtocreatetooltype'] = 'No s\'ha pogut crear la nova eina. Comproveu l\'URL i proveu-ho de nou.';
+$string['failedtocreatetooltype'] = 'No s\'ha pogut crear la nova eina. Comproveu l\'URL i torneu a provar-ho.';
 $string['failedtodeletetoolproxy'] = 'No s\'ha pogut suprimir el registre de l\'eina. Cal que visiteu «Gestiona el registre d\'eines externes» i ho esborreu de forma manual.';
 $string['filter_basiclti_configlink'] = 'Configureu els vostres llocs favorits i les contrasenyes.';
 $string['filter_basiclti_password'] = 'La contrasenya és obligatòria';

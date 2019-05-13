@@ -49,7 +49,7 @@ $string['loadmoreusers'] = 'Weiter Nutzer/innen laden...';
 $string['pluginname'] = 'Bewertungsverlauf';
 $string['preferences'] = 'Einstellungen zum Bewertungsverlauf';
 $string['privacy:metadata'] = 'Der Bericht über die Bewertungshistorie zeigt nur Daten, die an anderer Stelle gespeichert sind.';
-$string['revisedonly'] = 'Nur überarbeite Bewertungen';
+$string['revisedonly'] = 'Nur überarbeitete Bewertungen';
 $string['revisedonly_help'] = 'Nur Bewertungen anzeigen, die bereinigt wurden.
 
 Dies meint nur Einträge, bei denen die Bewertung geändert wurde.';

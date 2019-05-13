@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Spam zoeker';
+$string['privacy:metadata'] = 'De Spam cleaner-plugin bewaart geen persoonlijke gegevens.';
 $string['spamauto'] = 'Detecteer automatisch veel voorkomende spampatronen';
 $string['spamcannotdelete'] = 'Kan deze gebruiker niet verwijderen';
 $string['spamcannotfinduser'] = 'Geen gebruikers voldoen aan je zoekopdracht';

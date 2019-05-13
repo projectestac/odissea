@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptederror'] = 'Error acceptat';
-$string['addmoreanswerblanks'] = 'Espais per a {no} preguntes més';
+$string['addmoreanswerblanks'] = 'Nombre d\'espais en blanc addicionals per a opcions de resposta: {no}';
 $string['addmoreunitblanks'] = 'Espais per a {no} unitats més';
 $string['answercolon'] = 'Resposta:';
 $string['answererror'] = 'Error';
@@ -54,11 +54,11 @@ $string['nounitdisplay'] = 'No es qualifiquen les unitats';
 $string['numericalmultiplier'] = 'Multiplicador';
 $string['numericalmultiplier_help'] = 'El multiplicador és el factor pel qual es multiplicarà la resposta numèrica correcta.
 
-La primera unitat (Unitat 1) té un multiplicador per omissió de 1. Així, si la resposta numèrica correcta és 5500 i establiu W com a unitat a la Unitat 1, que té l\'1 com a multiplicador per omissió, aleshores la resposta correcta és 5500 W.
+La primera unitat (Unitat 1) té un multiplicador per defecte d\'1. Així, si la resposta numèrica correcta és 5500 i establiu W com a unitat a la Unitat 1, que té l\'1 com a multiplicador per defecte, aleshores la resposta correcta és 5500 W.
 
 Si afegiu la unitat kW amb un multiplicador de 0.001, això afegirà una resposta correcta de 5.5 kW. Això significa que tant la resposta 5500W com la de 5.5kW es marcaran com a correctes.
 
-Noteu que també es multiplica l\'error acceptat, per la qual cosa un error acceptat de 100W esdevindrà un error de 0.1kW.';
+Fixeu-vos que també es multiplica l\'error acceptat, per la qual cosa un error acceptat de 100W esdevindrà un error de 0.1kW.';
 $string['oneunitshown'] = 'La unitat 1 és mostrarà de forma automàtica a la vora de la caixa de respostes';
 $string['onlynumerical'] = 'No s\'utilitzen per a res les unitats. Només es qualificarà la RESPOSTA NUMÈRICA';
 $string['pleaseenterananswer'] = 'Introduïu una resposta.';

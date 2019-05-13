@@ -33,10 +33,8 @@ class mod_hvp_mod_form extends moodleform_mod {
         $mform =& $this->_form;
 
         // Name.
-        $mform->addElement('text', 'name', get_string('name'));
+        $mform->addElement('hidden', 'name', '');
         $mform->setType('name', PARAM_TEXT);
-        $mform->addRule('name', null, 'required', null, 'client');
-        $mform->addRule('name', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
 
         // Intro.
         if (method_exists($this, 'standard_intro_elements')) {
@@ -72,6 +70,8 @@ class mod_hvp_mod_form extends moodleform_mod {
         $mform->setType('h5plibrary', PARAM_RAW);
         $mform->addElement('hidden', 'h5pparams', '');
         $mform->setType('h5pparams', PARAM_RAW);
+        $mform->addElement('hidden', 'h5pmaxscore', '');
+        $mform->setType('h5pmaxscore', PARAM_INT);
 
         $core = \mod_hvp\framework::instance();
         $displayoptions = $core->getDisplayOptionsForEdit();
@@ -199,7 +199,14 @@ class mod_hvp_mod_form extends moodleform_mod {
 
         // Set editor defaults.
         $defaultvalues['h5plibrary'] = ($content === null ? 0 : H5PCore::libraryToString($content['library']));
-        $defaultvalues['h5pparams'] = ($content === null ? '{}' : $core->filterParameters($content));
+
+        // Combine params and metadata in one JSON object.
+        $params = ($content === null ? '{}' : $core->filterParameters($content));
+        $maincontentdata = array('params' => json_decode($params));
+        if (isset($content['metadata'])) {
+            $maincontentdata['metadata'] = $content['metadata'];
+        }
+        $defaultvalues['h5pparams'] = json_encode($maincontentdata, true);
 
         // Add required editor assets.
         require_once('locallib.php');
@@ -305,19 +312,85 @@ class mod_hvp_mod_form extends moodleform_mod {
 
         if ($data['h5paction'] === 'upload') {
             // Validate uploaded H5P file.
+            unset($errors['name']); // Will be set in data_postprocessing().
             $this->validate_upload($data, $errors);
-
         } else {
             $this->validate_created($data, $errors);
-
         }
         return $errors;
     }
 
+    /**
+     * Allows modules to modify the data returned by form get_data().
+     * This method is also called in the bulk activity completion form.
+     *
+     * Only available on moodleform_mod.
+     *
+     * @param stdClass $data passed by reference
+     */
+    public function data_postprocessing($data) {
+        // Determine disabled content features.
+        $options = array(
+            \H5PCore::DISPLAY_OPTION_FRAME     => isset($data->frame) ? $data->frame : 0,
+            \H5PCore::DISPLAY_OPTION_DOWNLOAD  => isset($data->export) ? $data->export : 0,
+            \H5PCore::DISPLAY_OPTION_EMBED     => isset($data->embed) ? $data->embed : 0,
+            \H5PCore::DISPLAY_OPTION_COPYRIGHT => isset($data->copyright) ? $data->copyright : 0,
+        );
+        $core = \mod_hvp\framework::instance();
+        $data->disable = $core->getStorableDisplayOptions($options, 0);
+
+        // Remove metadata wrapper from form data
+        $params = json_decode($data->h5pparams);
+        if ($params !== null) {
+            $data->params = json_encode($params->params);
+            if (isset($params->metadata)) {
+                $data->metadata = $params->metadata;
+            }
+        }
+
+        // Cleanup
+        unset($data->h5pparams);
+
+        if ($data->h5paction === 'upload') {
+            if (empty($data->metadata) || empty($data->metadata->title)) {
+                // Fix for legacy content upload to work.
+                // Fetch title from h5p.json or use a default string if not available
+                $h5pvalidator = \mod_hvp\framework::instance('validator');
+                $data->metadata->title = empty($h5pvalidator->h5pC->mainJsonData['title']) ? 'Uploaded Content' : $h5pvalidator->h5pC->mainJsonData['title'];
+            }
+            $data->name = $data->metadata->title; // Sort of a hack, but there is no JavaScript that sets the value when there is no editor...
+        }
+    }
+
+    /**
+     * This should not be overridden, but we have to in order to support Moodle <3.2
+     * and older Totara sites.
+     *
+     * Moodle 3.1 LTS is supported until May 2019, after that this can be dropped.
+     * (could cause issues for new features if they add more to this in Core)
+     *
+     * @return object submitted data; NULL if not valid or not submitted or cancelled
+     */
     public function get_data() {
         $data = parent::get_data();
-        if (!$data) {
-            return false;
+
+        if ($data) {
+            // Check if moodleform_mod class has already taken care of the data for us.
+            // If not this is an older Moodle or Totara site that we need to treat differently.
+
+            $class = new ReflectionClass('moodleform_mod');
+            $method = $class->getMethod('get_data');
+            if ($method->class !== 'moodleform_mod') {
+                // Moodleform_mod class doesn't override get_data so we need to convert it ourselves.
+
+                // Convert the grade pass value - we may be using a language which uses commas,
+                // rather than decimal points, in numbers. These need to be converted so that
+                // they can be added to the DB.
+                if (isset($data->gradepass)) {
+                    $data->gradepass = unformat_float($data->gradepass);
+                }
+                $this->data_postprocessing($data);
+            }
         }
         return $data;
     }

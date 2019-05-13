@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcohort'] = 'Engadir un novo círculo';
-$string['allcohorts'] = 'Todos os circulos';
+$string['allcohorts'] = 'Todos os círculos';
 $string['anycohort'] = 'Calquera';
 $string['assign'] = 'Asignar';
 $string['assigncohorts'] = 'Asignar membros ao círculo';
@@ -71,6 +71,10 @@ $string['nocomponent'] = 'Creada manualmente';
 $string['potusers'] = 'Usuarios potenciais';
 $string['potusersmatching'] = 'Usuarios potenciais coincidentes';
 $string['preview'] = 'Vista previa';
+$string['privacy:metadata:cohort_members'] = 'Información sobre o círculo do usuario.';
+$string['privacy:metadata:cohort_members:cohortid'] = 'O ID do círculo';
+$string['privacy:metadata:cohort_members:timeadded'] = 'A marca de tempo que indica cando foi engadido o usuario ao círculo';
+$string['privacy:metadata:cohort_members:userid'] = 'O ID do usuario que está asociado ao círculo';
 $string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de múltiples cursos, o que inclúe a eliminación da configuración do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
 $string['search'] = 'Buscar';
 $string['searchcohort'] = 'Buscar un círculo';
@@ -88,5 +92,5 @@ $string['uploadcohorts_help'] = 'Pode enviarse círculos mediante ficheiros de t
 $string['uploadedcohorts'] = 'Enviados {$a} círculos';
 $string['useradded'] = 'Usuario «{$a}» engadido ao círculo';
 $string['visible'] = 'Visíbel';
-$string['visible_help'] = 'Calquera círculo pode ser visto polos usuarios que teñan o permiso «moodle/cohort:view» no contexto de círculo. <br/>
+$string['visible_help'] = 'Calquera círculo pode ser visto polos usuarios que teñan a funcionalidade «moodle/cohort:view» no contexto de círculo. <br/>
 Os círculos visíbeis poden ser vistos polos usuarios nos cursos subxacentes.';

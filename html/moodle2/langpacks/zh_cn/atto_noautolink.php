@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '阻止自动链接';
+$string['privacy:metadata'] = 'atto_noautolink 插件不储存任何私人数据。';

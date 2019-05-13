@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'Текст был загружен';
 $string['pluginname'] = 'Онлайн';
+$string['privacy:metadata'] = 'Плагин задания «Онлайн» не хранит никаких персональных данных.';

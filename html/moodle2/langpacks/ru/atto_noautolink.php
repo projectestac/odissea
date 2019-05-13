@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Не допускать автоссылки';
+$string['privacy:metadata'] = 'Плагин atto_noautolink не хранит никаких персональных данных.';

@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['informationtext'] = 'Informazio-testua';
 $string['pluginname'] = 'Deskribapena';
 $string['pluginnameadding'] = 'Deskribapena gehitzen';
-$string['pluginnameediting'] = 'Deskribapena editatzen ';
+$string['pluginnameediting'] = 'Deskribapena editatzen';
 $string['pluginname_help'] = 'Deskribapena ez da benetako galdera mota bat. Horren ordez galderarik gabeko testuak erakustea ahalbidetzen du, ikastaroetako etiketak bezala.
 
 Galderaren testua saiakera egitean eta berrikusketa orrian erakusten da. Feedback orokorra ordea berrikusketa orrian bakarrik erakusten da.';
-$string['pluginnamesummary'] = 'Gaur egun hau ez da galdera bat. Horren ordez, galdetegiari instrukzioak, izenburua edo beste edukiren bat gehitzeko era da. Ikastaroaren orriari edukia gehitzeko Etiketak erabiltzen dira, eta galdetegietan berriz hau.';
+$string['pluginnamesummary'] = 'Hau ez da benetako galdera bat. Horren ordez, galdetegiari argibideak, errubrikak edo beste edukiren bat gehitzeko modua da. Ikastaroaren orriari edukia gehitzeko Etiketak erabiltzen dira, eta galdetegietan berriz hau.';
 $string['privacy:metadata'] = 'Deskribapena galdera-mota pluginak ez du datu pertsonalik biltzen.';

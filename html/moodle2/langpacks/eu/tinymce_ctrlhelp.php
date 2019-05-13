@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['ctrlhelp:desc'] = 'Sakatu CTRL + right aukera gehiagotarako';
-$string['pluginname'] = 'Sakatu CTRL + right laguntzarako';
+$string['ctrlhelp:desc'] = 'Sakatu CTRL + egin klik eskuineko botoian aukera gehiagotarako';
+$string['pluginname'] = 'Sakatu CTRL + egin klik eskuineko botoian laguntzarako';
 $string['privacy:metadata'] = 'Ctrl+right TinyMCE pluginak ez du datu pertsonalik biltzen.';

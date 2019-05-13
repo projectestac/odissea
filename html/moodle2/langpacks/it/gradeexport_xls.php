@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Esportate valutazione in XLS';
 $string['pluginname'] = 'Formato Excel';
+$string['privacy:metadata'] = 'Il plugin per l\'esportazione delle valutazioni \'Formato Excel\' non memorizza dati personali.';
 $string['timeexported'] = 'Scaricamento più recente da questo corso';
 $string['xls:publish'] = 'Pubblicare le valutazioni in formato Excel';
 $string['xls:view'] = 'Esportare le valutazioni in formato Excel';

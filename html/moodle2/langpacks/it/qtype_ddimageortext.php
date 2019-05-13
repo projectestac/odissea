@@ -63,6 +63,7 @@ $string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, seleziona le imm
 $string['pluginnamesummary'] = 'Immagini e le etichette di testo vengono trascinate e rilasciate su aree definite su un\'immagine di sfondo.';
 $string['previewareaheader'] = 'Anteprima';
 $string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, seleziona gli elementi da trascinare e definisci nell\'immagine di sfondo le rispettive zone di rilascio.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Trascina e rilascia su un\'immagine\' non memorizza dati personali.';
 $string['refresh'] = 'Aggiorna anteprima';
 $string['shuffleimages'] = 'Rimescola gli elementi trascinabili ad ogni tentativo di risposta';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backupofcourselogs'] = 'Historique de sauvegarde de {$a}';
-$string['logsofbackupexecutedon'] = 'Historique de la sauvegarde effectuée le {$a}';
+$string['backupofcourselogs'] = 'Journaux de sauvegarde de {$a}';
+$string['logsofbackupexecutedon'] = 'Journal de la sauvegarde effectuée le {$a}';
 $string['nobackupsfound'] = 'Pas de sauvegarde trouvée.';
-$string['nologsfound'] = 'Il n\'y a pas d\'historique pour cette sauvegarde.';
+$string['nologsfound'] = 'Il n\'y a pas de journal pour cette sauvegarde.';
 $string['pluginname'] = 'Rapport des sauvegardes';
 $string['privacy:metadata'] = 'Le plugin Rapport des sauvegardes n\'enregistre aucune donnée personnelle.';
 $string['strftimetime'] = '%H:%M:%S';
-$string['viewlogs'] = 'Voir les historiques';
+$string['viewlogs'] = 'Voir les journaux';

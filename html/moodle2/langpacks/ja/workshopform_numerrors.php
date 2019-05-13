@@ -41,7 +41,7 @@ $string['grade1default'] = 'Yes';
 $string['grademapping'] = '評定マッピングテーブル';
 $string['maperror'] = 'エラーの加重数 <= ';
 $string['mapgrade'] = '提出の評価';
-$string['percents'] = '{$a} %';
+$string['percents'] = '{$a}%';
 $string['pluginname'] = 'エラー数';
 $string['privacy:export:metadata:map'] = 'エラーの加重値が {$a->nonegative} に達した場合、評点は {$a->grade} パーセントになります。';
 $string['privacy:metadata'] = 'エラー数プラグインは評価フォームの詳細のみ保存します。フォームがどのように入力されたかという実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出に添付されます。';

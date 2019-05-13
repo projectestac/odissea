@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Negreta';
+$string['privacy:metadata'] = 'El connector atto_bold no emmagatzema cap dada personal.';

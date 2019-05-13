@@ -36,4 +36,5 @@ $string['pathdvisvgm'] = 'Путь к исполняемому файлу <i>dvi
 $string['pathlatex'] = 'Путь к исполняемому файлу <i>latex</i>';
 $string['pathmimetex'] = 'Путь к исполняемому файлу <i>mimetex</i>';
 $string['pathmimetexdesc'] = 'Moodle будет использовать свой собственный исполняемый файл MimeTeX, если здесь не указан другой корректный путь в файлу.';
+$string['privacy:metadata'] = 'Плагин Нотация TeX не хранит никаких персональных данных.';
 $string['source'] = 'Источник TeX';

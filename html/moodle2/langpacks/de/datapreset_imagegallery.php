@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Bildergalerie';
 $string['pluginname'] = 'Bildergalerie';
-$string['privacy:metadata'] = 'Das Bildergalerie-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Plugin Bildergalerie speichert keine personenbezogenen Daten.';

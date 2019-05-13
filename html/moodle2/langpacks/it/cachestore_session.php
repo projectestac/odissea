@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Session cache';
+$string['privacy:metadata:core_user'] = 'Il plugin cachestore "Session cache" memorizza dati per breve tempo in quanto può fungere da cache. Tali dati sono memorizzati per la durata della sessione dell\'utente.';

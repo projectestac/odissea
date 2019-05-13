@@ -37,7 +37,7 @@ $string['layoutundefined'] = 'Aspecte no definit';
 $string['layoutvertical'] = 'Columna vertical de botons d\'opció';
 $string['nooptionsforsubquestion'] = 'No es poden obtenir les opcions per part de la pregunta # {$a->sub} (pregunta->id= {$a->id})';
 $string['noquestions'] = 'La pregunta de buits "<strong>{$a}</strong>" no conté cap buit';
-$string['pleaseananswerallparts'] = 'Si us plau, responeu totes les parts de la pregunta.';
+$string['pleaseananswerallparts'] = 'Responeu totes les parts de la pregunta.';
 $string['pluginname'] = 'Respostes incrustades (Cloze)';
 $string['pluginnameadding'] = 'S\'està afegint una resposta incrustada (activitat de buits)';
 $string['pluginnameediting'] = 'S\'està editant una resposta incrustada (activitat de buits)';

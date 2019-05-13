@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = '制限管理';
 $string['pluginname'] = '利用条件管理';
-$string['privacy:metadata'] = '利用コンディション管理プラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = '利用条件管理プラグインはどのような個人データも保存しません。';

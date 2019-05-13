@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addrule'] = 'Gehitu beste arau bat';
+$string['addrule'] = 'Gehitu arau berria';
 $string['allevents'] = 'Ekitaldi guztiak';
 $string['allmodules'] = 'Instantzia guztiak';
 $string['area'] = 'Eremua';

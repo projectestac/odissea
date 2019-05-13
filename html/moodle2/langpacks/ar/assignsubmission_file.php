@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptedfiletypes'] = 'أنواع الملفات المقبولة:';
 $string['configmaxbytes'] = 'تجاوز الحد الاعلى لحجم الملف';
 $string['countfiles'] = 'ملفات';
 $string['default'] = 'مسموح بالاصل';

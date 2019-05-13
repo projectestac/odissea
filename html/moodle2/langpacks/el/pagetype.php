@@ -25,5 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['page-my-index'] = 'Η αρχική μου σελίδα';
-$string['page-site-index'] = 'Η πρώτη σελίδα μόνο';
+$string['page-admin-current'] = 'Σελίδα διαχείρισης του τρέχοντος ιστοτόπου';
+$string['page-admin-x'] = 'Οποιαδήποτε σελίδα διαχείρισης ιστοτόπου';
+$string['page-course-index'] = 'Σελίδα προβολής ανώτατης κατηγορίας';
+$string['page-course-index-category'] = 'Σελίδα προβολής τρέχουσας κατηγορίας';
+$string['page-course-index-x'] = 'Σελίδα προβολής οποιασδήποτε κατηγορίας';
+$string['page-course-report-x'] = 'Αναφορά οποιουδήποτε μαθήματος';
+$string['page-course-search'] = 'Σελίδα αναζήτησης μαθημάτων';
+$string['page-course-view-x'] = 'Οποιοδήποτε είδος κύριας σελίδας μαθήματος';
+$string['page-course-x'] = 'Κάθε σελίδα μαθήματος';
+$string['page-mod-x'] = 'Οποιαδήποτε σελίδα αρθρώματος δραστηριότητας';
+$string['page-mod-x-view'] = 'Οποιαδήποτε κύρια σελίδα αρθρώματος δραστηριότητας';
+$string['page-my-index'] = 'Σελίδα Ταμπλό';
+$string['page-report-x'] = 'Οποιαδήποτε σελίδα αναφοράς';
+$string['page-site-index'] = 'Η αρχική σελίδα μόνο';
+$string['page-site-x'] = 'Οποιαδήποτε ανώτατου επιπέδου σελίδα ιστοτόπου';
+$string['page-user-profile'] = 'Μόνο σελίδες προφίλ χρήστη';
+$string['page-user-view'] = 'Μόνο σελίδες προφίλ χρήστη';
+$string['page-user-x'] = 'Όλες οι σελίδες χρηστών';
+$string['page-x'] = 'Οποιαδήποτε σελίδα';

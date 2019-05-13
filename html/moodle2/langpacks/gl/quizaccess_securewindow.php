@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regra de acceso para seguridade en JavaScript';
 $string['popupwithjavascriptsupport'] = 'Xanela emerxente a pantalla completa con algo de seguridade JavaScript';
+$string['privacy:metadata'] = 'O engadido de regra de acceso para seguridade en JavaScript non almacena ningún dato persoal.';

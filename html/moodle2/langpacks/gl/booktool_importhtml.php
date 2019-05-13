@@ -32,6 +32,7 @@ $string['importhtml:import'] = 'Importar os capítulos';
 $string['importing'] = 'Importando';
 $string['importingchapters'] = 'Importando capítulos no libro';
 $string['pluginname'] = 'Importar os capítulos do libro';
+$string['privacy:metadata'] = 'O engadido de importar os capítulos non almacena ningún dato persoal.';
 $string['relinking'] = 'Ligando de novo';
 $string['type'] = 'Tipo';
 $string['typeonefile'] = 'Un ficheiro HTML con cabeceiras como capítulos';

@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowonlinetextsubmissions'] = 'Gaituta';
-$string['default'] = 'Berez gaituta';
-$string['default_help'] = 'Ezarriz gero, bidalketa-metodo hau berez gaituko da zeregin berri guztietan';
+$string['default'] = 'Gaituta modu lehenetsian';
+$string['default_help'] = 'Ezarriz gero, bidalketa-metodo hau modu lehenetsian gaituko da zeregin berri guztietan';
 $string['enabled'] = 'On-line testua';
-$string['enabled_help'] = 'Ezarriz gero, ikasleek, bidalketa egiterakoan, testu aberastua idatzi ahal izango dute zuzenean editorean.';
+$string['enabled_help'] = 'Gaituz gero, ikasleek, bidalketa egiterakoan, testu aberastua idatzi ahal izango dute zuzenean editorean.';
 $string['eventassessableuploaded'] = 'On-line testua ondo igo da.';
 $string['nosubmission'] = 'Zeregin honetan ez da ezer bidali';
 $string['numwords'] = '({$a} hitz)';
@@ -40,7 +40,7 @@ $string['onlinetextsubmission'] = 'Baimendu on-line testuen bidalketa';
 $string['pluginname'] = 'Baimendu on-line testuen bidalketa';
 $string['privacy:metadata:assignmentid'] = 'Zereginaren identifikatzailea';
 $string['privacy:metadata:filepurpose'] = 'Bidalketaren testuan txertatutako fitxategiak';
-$string['privacy:metadata:submissionpurpose'] = 'Erabiltzaileren bidalketekin lotura duen bidalketaren IDa';
+$string['privacy:metadata:submissionpurpose'] = 'Erabiltzaileren bidalketekin esteka duen bidalketaren IDa';
 $string['privacy:metadata:tablepurpose'] = 'Saiakera bakoitzeko bidalketaren testua gordetzen da.';
 $string['privacy:metadata:textpurpose'] = 'Zereginaren saiakera honetan bidalitako testua';
 $string['privacy:path'] = 'Bidalketaren Testua';

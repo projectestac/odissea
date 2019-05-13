@@ -28,4 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Formato Aiken';
 $string['pluginname_help'] = 'Este é um formato simples para importar perguntas de escolha múltipla a partir de um ficheiro de texto.';
 $string['pluginname_link'] = 'qformat/aiken';
-$string['privacy:metadata'] = 'O módulo Pergunta em Formato AIken não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta em Formato AIken não armazena quaisquer dados pessoais.';
+$string['questionmissinganswers'] = 'A pergunta deve ter pelo menos duas respostas na linha {$a}';
+$string['questionnotcomplete'] = 'Pergunta não concluída antes da próxima pergunta começar na linha {$a}';
+$string['questionnotstarted'] = 'Pergunta não iniciada na linha {$a}';

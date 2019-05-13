@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Результаты теста (отключено)';
+$string['privacy:metadata'] = 'Блок «Результаты теста» только показывает данные, хранящиеся в других местах.';
 $string['quiz_results:addinstance'] = 'Добавлять новый блок «Результаты теста»';

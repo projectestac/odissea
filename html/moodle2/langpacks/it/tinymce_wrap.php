@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlewrap:desc'] = 'A capo automatico';
 $string['pluginname'] = 'A capo automatico';
+$string['privacy:metadata'] = 'Il plugin TinyMCE \'A capo automatico\' non memorizza dati personali.';

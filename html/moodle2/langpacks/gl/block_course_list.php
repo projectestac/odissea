@@ -34,3 +34,4 @@ $string['course_list:myaddinstance'] = 'Engadir un novo bloque de cursos ao cart
 $string['hideallcourseslink'] = 'Agochar a ligazón a Todos os cursos';
 $string['owncourses'] = 'O administrador ve os seus propios cursos';
 $string['pluginname'] = 'Cursos';
+$string['privacy:metadata'] = 'O bloque de cursos só amosa datos sobre cursos e non almacena ningún dato.';

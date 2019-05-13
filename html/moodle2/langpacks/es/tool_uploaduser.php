@@ -47,7 +47,7 @@ $string['uploadpicture_cannotprocessdir'] = 'No se pueden procesar ficheros desc
 $string['uploadpicture_cannotsave'] = 'No se puede guardar la imagen del usuario {$a}. Compruebe el archivo de imagen original.';
 $string['uploadpicture_cannotunzip'] = 'No se puede descomprimir el archivo de imágenes.';
 $string['uploadpicture_invalidfilename'] = 'El nombre del archivo de imagen {$a} tiene caracteres no válidos. Se ha omitido.';
-$string['uploadpicture_overwrite'] = '¿Sobreescribir las imágenes del usuario?';
+$string['uploadpicture_overwrite'] = '¿Sobrescribir las imágenes del usuario?';
 $string['uploadpictures'] = 'Subir imágenes de los usuarios';
 $string['uploadpictures_help'] = 'Las imágenes de los usuarios se pueden cargar masivamente mediante un archivo zip. Estos archivos debe ser nombrados en atención al "atributo del usuario" elegido (username, idnumber, id) por ejemplo user1234.jpg para un usuario con nombre de usuario (username) user1234.
 Tenga en cuenta que el tamaño del archivo zip no puede superar el límite establecido en la configuración "políticas de sitio" de su sitio Moodle. En cualquier caso, siempre podrá preparar varios paquetes de imágenes comprimidas y subirlas por partes.';
@@ -75,7 +75,7 @@ $string['usersrenamed'] = 'Usuarios renombrados';
 $string['usersskipped'] = 'Usuarios pasados por alto';
 $string['usersupdated'] = 'Usuarios actualizados';
 $string['usersweakpassword'] = 'Usuarios con contraseña débil';
-$string['uubulk'] = 'Seleccionar para operaciones masivas';
+$string['uubulk'] = 'Seleccionar para operaciones masivas con usuarios';
 $string['uubulkall'] = 'Todos los usuarios';
 $string['uubulknew'] = 'Nuevos usuarios';
 $string['uubulkupdated'] = 'Usuarios actualizados';

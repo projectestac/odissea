@@ -134,7 +134,7 @@ $string['synchronize'] = 'Synchroniser les valeurs du jeu de données partagé a
 $string['synchronizeno'] = 'Ne pas synchroniser';
 $string['synchronizeyes'] = 'Synchroniser';
 $string['synchronizeyesdisplay'] = 'Synchroniser et utiliser le nom des jeux de données partagés comme préfixe du nom de la question';
-$string['tolerance'] = 'Tolérance &plusmn;';
+$string['tolerance'] = 'Tolérance ±';
 $string['tolerancetype'] = 'Type';
 $string['trueanswerinsidelimits'] = 'Réponse correcte : {$a->correct} dans les limites de la valeur réelle {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">Erreur de réponse correcte : {$a->correct} en dehors des limites de la valeur réelle {$a->true}</span>';

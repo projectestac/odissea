@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Offline';
+$string['privacy:metadata'] = 'Il plugin "Consegna testo offline" non memorizza dati personali.';

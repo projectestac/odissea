@@ -46,7 +46,7 @@ $string['createnewusers_desc'] = 'I dati di iscrizione IMS Enterprise definiscon
 Gli utenti vengono cercati prima tramite il codice identificativo poi in base allo username. Le password non vengono importate, pertanto si suggerisce di affiancare l\'iscrizione con un plugin di autenticazione.';
 $string['cronfrequency'] = 'Frequenza di attivazione';
 $string['deleteusers'] = 'Elimina gli account se è specificato nei dati IMS';
-$string['deleteusers_desc'] = 'L\'impostazione consente l\'eliminazione di account utente se specificato nel file IMS (recstatus deve essere impostato a 3, che significa eliminazione di un account). Per default l\'account non viene fisicamente eliminato dalla tabella degli utenti di Moodle ma solo contrassegnato come eliminato.';
+$string['deleteusers_desc'] = 'L\'impostazione consente l\'eliminazione di account utente se specificato nel file IMS ("recstatus" deve essere impostato a 3, che significa eliminazione di un account). Di default l\'account non viene fisicamente eliminato dalla tabella degli utenti di Moodle ma solo contrassegnato come eliminato.';
 $string['doitnow'] = 'elaborare adesso il file IMS Enterprise';
 $string['emptyattribute'] = 'Lascia vuoto';
 $string['filelockedmail'] = 'Il processo cron non riesce ad eliminare il file ({$a}) usato per le iscrizioni IMS Enterprise. L\'errore in genre indica che i permessi non sono corretti. Controllare e impostare correttamente i permessi per consentire a Moodle di eliminare il file, che altrimenti verrà elaborato ripetutamente.';

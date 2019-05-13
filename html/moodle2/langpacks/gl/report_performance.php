@@ -50,4 +50,5 @@ $string['morehelp'] = 'máis axuda';
 $string['performancereportdesc'] = 'Este informe lista incidencias que poden afectar ao rendemento do sitio {$a}';
 $string['performance:view'] = 'Ver o informe de rendemento';
 $string['pluginname'] = 'Vista xeral do rendemento';
+$string['privacy:metadata'] = 'O engadido de vista xeral do rendemento non almacena ningún dato persoal.';
 $string['value'] = 'Valor';

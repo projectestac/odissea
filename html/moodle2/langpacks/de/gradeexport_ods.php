@@ -29,5 +29,5 @@ $string['eventgradeexported'] = 'Bewertung als ODS exportiert';
 $string['ods:publish'] = 'Bewertungen als OpenOffice-Datei veröffentlichen';
 $string['ods:view'] = 'Bewertungen als OpenOffice-Datei exportieren';
 $string['pluginname'] = 'OpenDocument-Datei';
-$string['privacy:metadata'] = 'Das Plugin zum Export in Tabellenkalkulatonsdateien OpenDocument  speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Plugin zum Export in Tabellenkalkulatonsdateien OpenDocument  speichert keine personenbezogenen Daten.';
 $string['timeexported'] = 'Zuletzt aus diesem Kurs geladen';

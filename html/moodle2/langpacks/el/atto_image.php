@@ -25,6 +25,26 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alignment'] = 'Στοίχιση';
+$string['alignment_bottom'] = 'Κάτω';
+$string['alignment_left'] = 'Αριστερά';
+$string['alignment_middle'] = 'Μέση';
+$string['alignment_right'] = 'Δεξιά';
+$string['alignment_top'] = 'Πάνω';
+$string['browserepositories'] = 'Περιήγηση στα αποθετήρια...';
+$string['constrain'] = 'Αυτόματο μέγεθος';
+$string['createimage'] = 'Εισαγωγή εικόνας';
+$string['customstyle'] = 'Προσαρμοσμένο στυλ';
+$string['enteralt'] = 'Περιγραφή εικόνας για κάποιον που δεν μπορεί να την δει';
+$string['enterurl'] = 'Εισαγωγή διεύθυνσης URL';
+$string['height'] = 'Ύψος';
+$string['imageproperties'] = 'Ιδιότητες εικόνας';
+$string['pluginname'] = 'Εικόνα';
+$string['presentation'] = 'Η περιγραφή δεν είναι απαραίτητη';
+$string['presentationoraltrequired'] = 'Οι εικόνες πρέπει να έχουν μια περιγραφή, εκτός κι αν η περιγραφή είναι σημειωμένη ως μη απαραίτητη.';
 $string['preview'] = 'Προεπισκόπηση';
+$string['privacy:metadata'] = 'Το πρόσθετο «atto_image» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['saveimage'] = 'Αποθήκευση εικόνας';
 $string['size'] = 'Μέγεθος';
+$string['uploading'] = 'Ανέβασμα, παρακαλούμε περιμένετε...';
+$string['width'] = 'Πλάτος';

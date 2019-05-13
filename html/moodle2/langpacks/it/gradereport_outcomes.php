@@ -31,4 +31,5 @@ $string['coursespecoutcome'] = 'Obiettivi corso';
 $string['eventgradereportviewed'] = 'Visualizzato report obiettivi';
 $string['outcomes:view'] = 'Visualizzare la scheda obiettivi';
 $string['pluginname'] = 'Scheda obiettivi';
+$string['privacy:metadata'] = 'Il report Obiettivi delle valutazioni visualizza solamente dati memorizzati da altri componenti.';
 $string['usedgradeitem'] = 'Numero elementi di valutazione';

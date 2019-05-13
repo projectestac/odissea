@@ -31,6 +31,7 @@ $string['getreport'] = 'Visualizza il report';
 $string['hiddenquestions'] = 'Nascoste';
 $string['intro'] = 'Questo report elenca tutti i contesti nel sistema nei quali ci sono domande di un tipo particolare.';
 $string['pluginname'] = 'Domande';
+$string['privacy:metadata'] = 'Il plugin \'Domande\' non memorizza dati personali.';
 $string['questioninstances:view'] = 'Visualizzare report delle domande istanziate';
 $string['reportforallqtypes'] = 'Report per tutti i tipi di domande';
 $string['reportformissingqtypes'] = 'Report per domande di tipo sconosciuto';

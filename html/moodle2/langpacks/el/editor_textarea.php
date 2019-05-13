@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Περιοχή απλού κειμένου';
+$string['privacy:metadata'] = 'Το πρόσθετο editor_textarea (επεξεργαστής περιοχής κειμένου) δεν αποθηκεύει καθόλου προσωπικά δεδομένα.';

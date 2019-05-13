@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Πεδίο κουμπιού επιλογής';
+$string['fieldtypelabel'] = 'Πεδίο πλαισίου ελέγχου';
+$string['pluginname'] = 'Πλαίσιο ελέγχου';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο πλαισίου ελέγχου» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['enabledock'] = 'Utzi erabiltzaileari blokea ertzera eramaten';
+$string['enabledock'] = 'Baimendu erabiltzaileari blokea ertzera eramaten';
 $string['pluginname'] = 'Kudeaketa';
 $string['privacy:metadata'] = 'Kudeaketa blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
 $string['settings:addinstance'] = 'Gehitu ezarpenak blokea';

@@ -31,4 +31,5 @@ $string['emptyfilelist'] = 'Non ci sono file da visualizzare';
 $string['notitle'] = 'senza titolo';
 $string['pluginname'] = 'File legacy del corso';
 $string['pluginname_help'] = 'File legacy del corso';
+$string['privacy:metadata'] = 'Il plugin Repository \'File legacy del corso\' non memorizza né trasmette dati personali.';
 $string['remember'] = 'Ricordami';

@@ -35,6 +35,7 @@ $string['pluginnameadding'] = 'Een eenvoudige berekende vraag toevoegen';
 $string['pluginnameediting'] = 'Een eenvoudige berekende vraag bewerken';
 $string['pluginname_help'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen. Eenvoudig numerieke vragen bieden de meeste mogelijkheden van berekende vragen, maar met een eenvoudiger interface om ze te maken.';
 $string['pluginnamesummary'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen.';
+$string['privacy:metadata'] = 'De eenvoudige plug-in Calculated simple question type  slaat geen persoonlijke gegevens op.';
 $string['setno'] = 'Set {$a}';
 $string['setwildcardvalues'] = 'set met joker waarden';
 $string['showitems'] = 'Toon';

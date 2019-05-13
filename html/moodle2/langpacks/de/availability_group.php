@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anygroup'] = '(Beliebige Gruppe)';
-$string['description'] = 'Zugriff für Mitglieder in einer ausgewählten Gruppe erlauben';
+$string['description'] = 'Zugriff für Mitglieder in einer Gruppe erlauben';
 $string['error_selectgroup'] = 'Sie müssen eine Gruppe auswählen.';
 $string['missing'] = '(Fehlende Gruppe)';
 $string['pluginname'] = 'Voraussetzung: Gruppe';
-$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung Gruppe\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Gruppe\' speichert keine personenbezogenen Daten.';
 $string['requires_anygroup'] = 'Sie gehören zu einer Gruppe';
 $string['requires_group'] = 'Sie gehören zu <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'Sie gehören zu keiner Gruppe';

@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Xa se marcou a si mesmo como co curso completado';
 $string['completecourse'] = 'Curso completado';
 $string['pluginname'] = 'Autocompletado';
+$string['privacy:metadata'] = 'O bloque de autocompletado só amosa datos almacenados noutros lugares.';
 $string['selfcompletion:addinstance'] = 'Engadir un novo bloque de autocompletado';
 $string['selfcompletionnotenabled'] = 'Os criterios de autocompletado non están estabelecidos neste curso';

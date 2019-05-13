@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
 $string['pluginname_help'] = 'O formato Examview permite importar preguntas de ficheiros Examview 4 XML. Para as novas versións de Examview debe utilizarse o formato Blackboard.';
+$string['privacy:metadata'] = 'O engadido de formato de preguntas Examview non almacena ningún dato persoal.';

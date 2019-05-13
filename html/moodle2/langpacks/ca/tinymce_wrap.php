@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlewrap:desc'] = 'Ajusta';
 $string['pluginname'] = 'Ajusta';
+$string['privacy:metadata'] = 'El connector Wrap de TinyMCE no emmagatzema cap dada personal.';

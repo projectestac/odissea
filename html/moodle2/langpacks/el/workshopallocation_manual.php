@@ -25,5 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Χειροκίνητη κατανομή';
+$string['addreviewee'] = 'Προσθήκη εξεταζόμενου';
+$string['addreviewer'] = 'Προσθήκη εξεταστή';
+$string['allocationadded'] = 'Η υποβολή εκχωρήθηκε με επιτυχία';
+$string['allocationexists'] = 'Η εκχώρηση υπάρχει ήδη';
+$string['areyousuretodeallocate'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εκχώρηση της επιλεγμένης αξιολόγησης;';
+$string['areyousuretodeallocategraded'] = 'Θα καταργήσετε την αξιολόγηση που έχει ήδη βαθμολογηθεί. Είστε πραγματικά βέβαιοι ότι θέλετε να το κάνετε;';
+$string['pluginname'] = 'Χειροκίνητη εκχώρηση';
+$string['privacy:metadata:preference:perpage'] = 'Αριθμός εκχωρήσεων αξιολογήσεων που προτιμά ο χρήστης να φαίνονται σε μια σελίδα.';
 $string['showallparticipants'] = 'Εμφάνιση όλων των συμμετεχόντων';

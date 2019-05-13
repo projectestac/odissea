@@ -30,3 +30,7 @@ $string['licensekey'] = 'Licentiesleutel';
 $string['merlot:view'] = 'Bekijk de Merlot opslagruimte';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'De Merlot.org opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
+$string['privacy:metadata:repository_merlot:author'] = 'De auteur van de inhoud van de Merlot.org opslagruimte.';
+$string['privacy:metadata:repository_merlot:keywords'] = 'De Merlot.org opslagruimte zoektekst van de gebruiker';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'De licentiesleutel van Merlot.org opslagruimte';

@@ -37,3 +37,4 @@ $string['page-report-completion-index'] = 'Informe de completado do curso';
 $string['page-report-completion-user'] = 'Informe de completado do usuario do curso';
 $string['page-report-completion-x'] = 'Calquera informe de completado';
 $string['pluginname'] = 'Completado do curso';
+$string['privacy:metadata'] = 'O informe de completado do curso só amosa datos almacenados noutros lugares.';

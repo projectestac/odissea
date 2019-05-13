@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mehrfachbeantwortung (mit Hinweis und Guthaben für frühere Versuche)';
-$string['privacy:metadata'] = 'Der Interaktiv-Modus mit mehreren Versuchen (Anzeige früherer Versuche ) des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Interaktiv-Modus mit mehreren Versuchen (Anzeige früherer Versuche ) des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';

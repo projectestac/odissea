@@ -39,7 +39,7 @@ $string['auth_dbfieldpass'] = 'Nom del camp que conté la contrasenya';
 $string['auth_dbfieldpass_key'] = 'Camp de la contrasenya';
 $string['auth_dbfielduser'] = 'Nom del camp que conté el nom d\'usuari';
 $string['auth_dbfielduser_key'] = 'Camp del nom d\'usuari';
-$string['auth_dbhost'] = 'L\'ordinador que allotja el servidor de la base de dades. Useu una entrada NFD (DSN) del sistema si esteu utilitzant ODBC.';
+$string['auth_dbhost'] = 'L\'ordinador que allotja el servidor de la base de dades. Useu una entrada NFD (DSN) del sistema si esteu utilitzant ODBC. Useu una entrada PDO DSN si utilitzeu PDO.';
 $string['auth_dbhost_key'] = 'Servidor';
 $string['auth_dbinsertuser'] = 'S\'ha inserit l\'usuari {$a->name} ID {$a->id}';
 $string['auth_dbinsertuserduplicate'] = 'Error en inserir l\'usuari {$a->username}: un usuari amb aquest nom d\'usuari ja s\'havia creat mitjançant el connector \'{$a->auth}\'.';
@@ -48,8 +48,8 @@ $string['auth_dbname'] = 'El nom de la base de dades. Deixeu-lo buit si esteu ut
 $string['auth_dbname_key'] = 'Nom de la base de dades';
 $string['auth_dbpass'] = 'Contrasenya corresponent al nom d\'usuari anterior';
 $string['auth_dbpass_key'] = 'Contrasenya';
-$string['auth_dbpasstype'] = '<p>Especifiqueu el format que utilitza el camp de la contrasenya. El xifratge MD5 és útil per connectar-se a altres aplicacions web comunes com ara PostNuke.</p>
-<p>Utilitzeu «interna» si voleu la base de dades externa per gestionar els noms d\'usuari i les adreces de correu, i Moodle per gestionar les contrasenyes. Si utilitzeu aquesta opció és <i>obligatori</i> proporcionar una adreça de correu en un camp de la base de dades externa, i haureu d\'executar regularment tant l\'admin/cron.php com l\'auth/db/cli/sync_users.php. Moodle enviarà un correu electrònic als nous usuaris amb una contrasenya temporal.</p>';
+$string['auth_dbpasstype'] = '<p>Especifiqueu el format que utilitza el camp de la contrasenya.</p>
+<p>Utilitzeu «interna» si voleu que la base de dades externa gestioni els noms d\'usuari i les adreces de correu, i Moodle per gestionar les contrasenyes. Si utilitzeu aquesta opció és <i>obligatori</i> proporcionar una adreça de correu en un camp de la base de dades externa, i haureu d\'executar regularment tant l\'admin/cron.php com l\'auth/db/cli/sync_users.php. Moodle enviarà un correu electrònic als usuaris nous amb una contrasenya temporal.</p>';
 $string['auth_dbpasstype_key'] = 'Format de la contrasenya';
 $string['auth_dbreviveduser'] = 'S\'ha restaurat l\'usuari {$a->name} amb ID  {$a->id}';
 $string['auth_dbrevivedusererror'] = 'S\'ha produït un error en restaurar l\'usuari {$a}';
@@ -63,7 +63,7 @@ $string['auth_dbsybasequotinghelp'] = 'Alteració de cometes estil Sybase: neces
 $string['auth_dbsyncuserstask'] = 'Tasca de sincronització dels usuaris';
 $string['auth_dbtable'] = 'Nom de la taula en la base de dades';
 $string['auth_dbtable_key'] = 'Taula';
-$string['auth_dbtype'] = 'El tipus de base de dades (per a més informació vegeu la <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">documentació sobre ADOdb</a>)';
+$string['auth_dbtype'] = 'El tipus de base de dades (per a més informació, vegeu la <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">documentació sobre ADOdb</a>)';
 $string['auth_dbtype_key'] = 'Base de dades';
 $string['auth_dbupdateusers'] = 'Actualitza els usuaris';
 $string['auth_dbupdateusers_description'] = 'A més d\'afegir usuaris nous, actualitza els ja existents.';

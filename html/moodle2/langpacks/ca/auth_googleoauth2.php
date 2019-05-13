@@ -40,10 +40,6 @@ $string['auth_googleipinfodbkey_key'] = 'Clau IPinfoDB';
 $string['auth_googleoauth2description'] = 'Permet als usuaris connectar-se al lloc a través d\'un proveïdor extern d\'autenticació: Google/Facebook/Windows Live.
 El primer cop que un usuari es connecta amb un proveïdor d\'autenticació, es crea un compte nou. Per aquest motiu <b>cal que desactiveu</b> el paràmetre <a href="\'.$CFG->wwwroot.\'/admin/search.php?query=authpreventaccountcreation">Evita la creació de comptes nous durant el procediment d\'autenticació</a>.';
 $string['auth_googlesettings'] = 'Configuració';
-$string['auth_googleuserprefix'] = 'Els noms d\'usuari dels usuaris nous creats començaran amb aquest prefix. Aquest és el prefix del nom d\'usuari que es farà servir per a cada usuari nou creat. En un Moodle per defecte no és necessari fer aquest canvi.';
-$string['auth_googleuserprefix_key'] = 'Prefix del nom d\'usuari';
-$string['auth_messengerclientid_key'] = 'ID de client de Messenger';
-$string['auth_messengerclientsecret_key'] = 'Secret de client de Messenger';
 $string['auth_sign-in_with'] = 'Inicia la sessió amb {$a->providername}';
 $string['couldnotauthenticate'] = 'L\'autenticació ha fallat - Proveu a iniciar la sessió de nou.';
 $string['couldnotauthenticateuserlogin'] = 'S\'ha produït un error en el mètode d\'autenticació.<br/>
@@ -54,9 +50,6 @@ Proveu a iniciar de nou la sessió amb el vostre nom d\'usuari i contrasenya.<br
 $string['couldnotgetgoogleaccesstoken'] = 'El proveïdor de l\'autenticació ha retornat un error de comunicació. Torneu a intentar-ho de nou.';
 $string['moreproviderlink'] = 'Registreu-vos amb un altre servei.';
 $string['noaccountyet'] = 'No teniu permís per fer servir aquest lloc. Contacteu amb el vostre administrador i demaneu-li que activi el vostre compte.';
-$string['oauth2displaybuttons'] = 'Mostra els botons a la pàgina d\'inici de sessió';
-$string['oauth2displaybuttonshelp'] = 'Mostra els botons amb els logotips de Google/Facebook/... a la part de dalt de la pàgina d\'inici de sessió. Si voleu posar els botons a un altre lloc, podeu deshabilitar aquesta opció i afegir el codi següent:
-{$a}';
 $string['pluginname'] = 'Oauth2';
 $string['signinwithanaccount'] = 'Entra amb {$a}';
 $string['unknownfirstname'] = 'Nom desconegut';

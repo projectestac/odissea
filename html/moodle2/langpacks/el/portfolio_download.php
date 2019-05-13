@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadfile'] = 'Μεταφόρτωση του αρχείου εξαγωγής του χαρτοφυλακίου σας';
-$string['downloading'] = 'Μεταφορτώνεται ...';
-$string['pluginname'] = 'Μεταφόρτωση αρχείου';
+$string['downloadfile'] = 'Λήψη του αρχείου εξαγωγής του χαρτοφυλακίου σας';
+$string['downloading'] = 'Λήψη...';
+$string['pluginname'] = 'Λήψη αρχείου';
+$string['privacy:metadata'] = 'Αυτό το πρόσθετο δεν αποθηκεύει προσωπικά δεδομένα ούτε εξάγει προσωπικά δεδομένα σε εξωτερική τοποθεσία.';

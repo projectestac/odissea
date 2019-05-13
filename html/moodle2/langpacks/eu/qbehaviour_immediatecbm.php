@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pleaseselectacertainty'] = 'Mesedez, aukera ezazu ziurtasun-maila.';
+$string['pleaseselectacertainty'] = 'Mesedez, aukertu ziurtasun-maila.';
 $string['pluginname'] = 'Berehalako feedbacka CBMrekin';
 $string['privacy:metadata'] = 'Berehalako feedbacka CBMrekin galdera-jokaera pluginak ez du datu pertsonalik biltzen.';

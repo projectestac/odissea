@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_authmnetneeded'] = 'MNet-en autentifikaziorako plugina gaituta egon behar da Moodle sarearen zerbitzari-zerrenda ikusteko';
-$string['error_localusersonly'] = 'Urrutiko erabiltzaileak ezin dira joan Moodle sarearen beste zerbitzari batzuetara ostalari honetatik';
-$string['error_roamcapabilityneeded'] = 'Erabiltzaileek \'Urrutiko Moodle batera joan\' gaitasunean baimena behar dute Moodle sarearen zerbitzari-zerrenda ikusteko.';
+$string['error_authmnetneeded'] = 'MNet autentifikazio-plugina gaituta egon behar da MNet sareko zerbitzari-zerrenda ikusteko';
+$string['error_localusersonly'] = 'Urrutiko erabiltzaileak ezin dira joan MNet sareko beste zerbitzari batzuetara ostalari honetatik';
+$string['error_roamcapabilityneeded'] = 'Erabiltzaileek \'Joan urrutiko aplikazio batera MNet bitartez\' gaitasuna behar dute MNet sareko zerbitzari-zerrenda ikusteko.';
 $string['mnet_hosts:addinstance'] = 'Gehitu sare-zerbitzariak bloke berria';
 $string['mnet_hosts:myaddinstance'] = 'Gehitu sare-zerbitzariak bloke berria aginte-panelean';
 $string['pluginname'] = 'Sare-zerbitzariak';

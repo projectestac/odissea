@@ -40,5 +40,6 @@ $string['pleaseenterananswer'] = 'Geef een antwoord';
 $string['pluginname'] = 'Kort antwoord';
 $string['pluginnameadding'] = 'Kort antwoordvraag toevoegen';
 $string['pluginnameediting'] = 'Kort antwoordvraag bewerken';
-$string['pluginname_help'] = 'Als antwoord op de vraag (waarin een afbeelding kan staan), antwoord de respondent met een woord of een korte zin. Er mogen verschillende juiste antwoorden zijn, elk eventuleel met een ander cijfer. Als "hoofdlettergevoelig" wordt geselecteerd, dan kun je een verschillend cijfer geven voor "Woord" of "woord".';
+$string['pluginname_help'] = 'Als antwoord op de vraag (waarin een afbeelding kan staan), antwoordt de respondent met een woord of een korte zin. Er mogen verschillende juiste antwoorden zijn, elk eventueel met een ander cijfer. Als "hoofdlettergevoelig" wordt geselecteerd, dan kun je een verschillend cijfer geven voor "Woord" of "woord".';
 $string['pluginnamesummary'] = 'Laat een antwoord toe dat bestaat uit één of enkele woorden en dat beoordeeld kan worden tegenover verschillende modelantwoorden waarin jokertekens kunnen voorkomen.';
+$string['privacy:metadata'] = 'De kort antwoord vraagtype-plugin bewaart geen persoonlijke gegevens.';

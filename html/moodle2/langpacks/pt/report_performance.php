@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_backup'] = 'Cópia de segurança automática';
-$string['check_backup_comment_disable'] = 'O desempenho pode ser afetado durante a execução das cópias de segurança. Se ativar esta opção, note que as cópias de segurança devem ser agendadas para os períodos de menor atividade do servidor.';
+$string['check_backup_comment_disable'] = 'O desempenho pode ser afetado durante a execução das cópias de segurança. Se ativar esta opção, tenha em atenção em agendar as cópias de segurança para os períodos de menor atividade do servidor.';
 $string['check_backup_comment_enable'] = 'O desempenho pode ser afetado durante a execução das cópias de segurança. As cópias de segurança devem ser agendadas para os períodos de menor atividade do servidor.';
 $string['check_backup_details'] = '<p>Ativar a realização de cópias de segurança automáticas irá criar automaticamente no servidor, e à hora que especificou, arquivos de todas as disciplinas. <p<Durante este processo, serão consumidos mais recursos e isto poderá afetar o desempenho.<p/>';
 $string['check_cachejs_comment_disable'] = 'Se ativar esta opção, o desempenho do carregamento das páginas será melhorado.';
 $string['check_cachejs_comment_enable'] = 'Se desativar esta opção, o carregamento das páginas poderá ser mais lento.';
-$string['check_cachejs_details'] = 'A caching e compressão de Javascript melhora muito o desempenho do carregamento da página. É altamente recomendável para sites de produção.';
-$string['check_debugmsg_comment_developer'] = 'Se for definido para outro, que não Programador, o desempenho pode ser melhorado ligeiramente.';
+$string['check_cachejs_details'] = 'A caching e compressão de JavaScript melhora muito o desempenho do carregamento da página. É altamente recomendável para sites de produção.';
+$string['check_debugmsg_comment_developer'] = 'Se for definido para outro que não Programador, o desempenho pode ser melhorado ligeiramente.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Se for definido para PROGRAMADOR, o desempenho pode ser ligeiramente afetado.';
 $string['check_debugmsg_details'] = 'Raramente existem vantagens em ativar o nível de \'PROGRAMADOR\', a menos que seja um programador. Depois de ter verificado a mensagem de erro é ALTAMENTE RECOMENDADO alterar novamente as mensagens de erro para \'Nada\'. As mensagens de erro podem dar pistas da configuração do seu site a um pirata informático e podem afetar o desempenho.';
 $string['check_enablestats_comment_disable'] = 'O desempenho pode ser afetado pelo processamento das estatísticas. Se ativar esta opção, as configurações das estatísticas devem ser definidas cuidadosamente.';

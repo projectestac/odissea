@@ -197,6 +197,7 @@ $string['filtersubmitted'] = 'Inskickad';
 $string['gradeabovemaximum'] = 'Betyg måste bli mindre än eller lika med {$a}.';
 $string['gradebelowzero'] = 'Betyg måste vara större än eller lika med noll.';
 $string['gradecanbechanged'] = 'Betyg kan ändras';
+$string['gradechangessaveddetail'] = 'Ändringar av betyg och återkoppling har sparats.';
 $string['graded'] = 'Betygssatt';
 $string['gradedby'] = 'Betygssatt av';
 $string['gradedon'] = 'Betygssatt den';
@@ -216,6 +217,8 @@ $string['gradestudent'] = 'Betygssätt elev: (id={$a->id}, fullt namn={$a->fulln
 $string['gradeuser'] = 'Betyg {$a}';
 $string['grading'] = 'Betygssättning';
 $string['gradingchangessaved'] = 'Ändringar i betygssättning sparades';
+$string['gradingduedate'] = 'Påminn mig att bedöma uppgiften senast';
+$string['gradingduefromdatevalidation'] = 'Datum för senaste bedömning kan inte ligga före tidigaste inlämningsdatum.';
 $string['gradingmethodpreview'] = 'Kriterium för betygssättning';
 $string['gradingoptions'] = 'Alternativ';
 $string['gradingstatus'] = 'Betygssättningsstatus';

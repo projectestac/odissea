@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρύθμιση της υπομονάδας λογισμικού ανεβάσματος αρχείων';
+$string['configplugin'] = 'Ρυθμίσεις πρόσθετου ανεβάσματος αρχείων';
 $string['pluginname'] = 'Ανέβασμα ενός αρχείου';
 $string['pluginname_help'] = 'Ανέβασμα ενός αρχείου στο Moodle';
-$string['upload:view'] = 'Χρήση της επιλογής ανεβάσματος στο σύστημα επιλογής αρχείων (file picker)';
+$string['privacy:metadata'] = 'Το πρόσθετο αποθετηρίου «Ανέβασμα ενός αρχείου»  δεν αποθηκεύει ούτε μεταβιβάζει κανένα προσωπικό δεδομένο.';
+$string['upload_error_cant_write'] = 'Αποτυχία εγγραφής αρχείου στο δίσκο.';
+$string['upload_error_extension'] = 'Μια επέκταση PHP σταμάτησε το ανέβασμα του αρχείου.';
+$string['upload_error_form_size'] = 'Το ανεβασμένο αρχείο υπερβαίνει το υποχρεωτικό μέγιστο MAX_FILE_SIZE που ορίστηκε στην HTML φόρμα.';
+$string['upload_error_ini_size'] = 'Το ανεβασμένο αρχείο υπερβαίνει το υποχρεωτικό μέγιστο upload_max_filesize που ορίστηκε στo php.ini.';
+$string['upload_error_invalid_file'] = 'Το αρχείο «{$a}» είναι κενό ή φάκελος. Για να ανεβάσετε φακέλους, συμπιέστε τους πρώτα σε zip.';
+$string['upload_error_no_file'] = 'Δεν ανέβηκε κανένα αρχείο.';
+$string['upload_error_no_tmp_dir'] = 'Από την PHP λείπει ένας προσωρινός φάκελος.';
+$string['upload_error_partial'] = 'Το ανέβασμα του αρχείου δεν ολοκληρώθηκε.';
+$string['upload:view'] = 'Χρήση ανεβάσματος στον επιλογέα αρχείων';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Algebraische Ausdrücke';
 $string['filtername'] = 'Algebraische Notation';
-$string['privacy:metadata'] = 'Der Algebra-Filter speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Algebra-Filter speichert keine personenbezogenen Daten.';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Подстрочный индекс';
+$string['privacy:metadata'] = 'Плагин atto_subscript не хранит никаких персональных данных.';

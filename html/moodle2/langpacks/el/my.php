@@ -26,18 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Προσθήκη σελίδας';
-$string['alldashboardswerereset'] = 'Όλες οι σελίδες στη σελίδα Η αρχική μου έχουν γίνει επαναφορά στην προεπιλογή.';
+$string['alldashboardswerereset'] = 'Όλες οι σελίδες στο Ταμπλό επανήλθαν στην προεπιλογή.';
 $string['allprofileswerereset'] = 'Όλες οι σελίδες προφίλ έχουν γίνει επαναφορά στην προεπιλογή.';
-$string['defaultpage'] = 'Προεπιλεγμένη σελίδα Το Moodle μου';
+$string['defaultpage'] = 'Προεπιλεγμένη σελίδα «Το Moodle μου»';
 $string['defaultprofilepage'] = 'Προεπιλεγμένη σελίδα προφίλ';
 $string['delpage'] = 'Διαγραφή σελίδας';
 $string['managepages'] = 'Διαχείριση σελίδων';
-$string['mymoodle'] = 'Προβολή των μαθημάτων μου';
+$string['mymoodle'] = 'Ταμπλό';
 $string['nocourses'] = 'Δεν υπάρχει πληροφορία του μαθήματος για προβολή.';
-$string['noguest'] = 'Η σελίδα \'Επισκόπιση Μαθήματος\' δεν είναι διαθέσιμη σε guest χρήστες';
-$string['pinblocks'] = 'Διαμόρφωση blocks με πινέζα για τη σελίδα my ΠΗΛΕΑΣ';
-$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του ΠΗΛΕΑΣ στη \'my ΠΗΛΕΑΣ\' σελίδα τους.';
+$string['noguest'] = 'Η σελίδα του Ταμπλό δεν είναι διαθέσιμη στους επισκέπτες';
+$string['pinblocks'] = 'Διαμόρφωση καρφιτσωμένων μπλοκ για «Το Moodle μου»';
+$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του Moodle στην επισκόπηση της σελίδας «Το Moodle μου».';
+$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Η προτίμηση αρχικής σελίδας χρήστη που ρυθμίζεται για τη σελίδα του Ταμπλό.';
 $string['reseterror'] = 'Προέκυψε σφάλμα κατά την επαναφορά της σελίδας';
-$string['reseteveryonesdashboard'] = 'Επαναφορά αρχικής σελίδας για όλους τους χρήστες';
+$string['reseteveryonesdashboard'] = 'Επαναφορά Ταμπλό για όλους τους χρήστες';
 $string['reseteveryonesprofile'] = 'Επαναφορά προφίλ για όλους τους χρήστες';
-$string['resetpage'] = 'Επαναφορά σελίδα σε προεπιλογή';
+$string['resetpage'] = 'Επαναφορά σελίδας σε προεπιλογή';
+$string['unabletoaccess'] = 'Ως προφύλαξη ασφαλείας, δεν επιτρέπεται πρόσβαση σε Ταμπλό άλλου χρήστη';

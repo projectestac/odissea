@@ -71,6 +71,7 @@ $string['nothingfound'] = 'Non ci sono elementi da visualizzare';
 $string['options'] = 'Opzioni';
 $string['orderattempts'] = 'Ordine tentativi';
 $string['pluginname'] = 'Valutazione manuale';
+$string['privacy:metadata'] = 'Il plugin Quiz/Report \'Valutazione manuale\' non memorizza dati personali. Fornisce agli utenti un\'interfaccia per memorizzare i dati, senza che li memorizzi il plugin stesso.';
 $string['qno'] = 'D #';
 $string['questionname'] = 'Nome domanda';
 $string['questionsperpage'] = 'Domande per pagina';

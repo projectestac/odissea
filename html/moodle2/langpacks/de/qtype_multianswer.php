@@ -40,12 +40,12 @@ $string['layoutvertical'] = 'Eine vertikale Spalte mit Einfach-Auswahl-Möglichk
 $string['nooptionsforsubquestion'] = 'Optionen für den Frageteil # {$a->sub} (question->id={$a->id}) konnten nicht gefunden werden';
 $string['noquestions'] = 'Die Lückentext-Frage "<strong>{$a}</strong>" enthält keine Frage.';
 $string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage.';
-$string['pluginname'] = 'Lückentext-Frage';
+$string['pluginname'] = 'Lückentext (Cloze)';
 $string['pluginnameadding'] = 'Lückentext-Frage hinzufügen';
 $string['pluginnameediting'] = 'Lückentext-Frage bearbeiten';
 $string['pluginname_help'] = 'Lückentext-Fragen bestehen aus Textpassagen, die z.B. Multiple-Choice- oder Kurztextfragen enthalten.';
 $string['pluginnamesummary'] = 'Fragen dieses Typs sind sehr flexibel. Der Text muss zur Erzeugung einer Lücke codiert werden, um Multiple-Choice-Fragen, Kurztextfragen oder numerische Fragen einzubinden.';
-$string['privacy:metadata'] = 'Der eingebettete Antworten Fragetyp speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Der eingebettete Antworten Fragetyp speichert keine personenbezogenen Daten';
 $string['qtypenotrecognized'] = 'Fragetyp {$a} nicht verstanden';
 $string['questiondefinition'] = 'Fragendefinition';
 $string['questiondeleted'] = 'Frage entfernt';

@@ -43,6 +43,7 @@ $string['mustchoosegrade'] = 'Devi scegliere una valutazione per questo aspetto'
 $string['pluginname'] = 'Voto cumulativo';
 $string['poor'] = 'Scarso';
 $string['present'] = 'Presente';
+$string['privacy:metadata'] = 'Il plugin ‘Voto cumulativo\' memorizza solo i dettagli dello schema di valutazione. I dati personali reali su come è stato compilato lo schema sono memorizzati nel modulo stesso del Workshop e vengono allegati alle valutazioni esportate.';
 $string['scalename0'] = 'Si/No (2 punti)';
 $string['scalename1'] = 'Presente/Assente (2 punti)';
 $string['scalename2'] = 'Giusto/Sbagliato (2 punti)';

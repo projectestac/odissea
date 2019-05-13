@@ -13,5 +13,24 @@ class com_wiris_util_type_StringUtils {
 	static function compareIgnoringAccents($a, $b) {
 		return com_wiris_util_type_StringUtils::stripAccents($a) === com_wiris_util_type_StringUtils::stripAccents($b);
 	}
+	static function slice($s, $beginIndex, $endIndex) {
+		$stringLength = strlen($s);
+		if($beginIndex < 0) {
+			$beginIndex = com_wiris_util_type_IntegerTools::max(0, $stringLength + $beginIndex);
+		} else {
+			if($beginIndex > $stringLength) {
+				$beginIndex = $stringLength;
+			}
+		}
+		if($endIndex < 0) {
+			$endIndex = com_wiris_util_type_IntegerTools::max(0, strlen($s) + $endIndex);
+		} else {
+			if($endIndex > $stringLength) {
+				$endIndex = $stringLength;
+			}
+		}
+		$span = com_wiris_util_type_IntegerTools::max(0, $endIndex - $beginIndex);
+		return _hx_substr($s, $beginIndex, $span);
+	}
 	function __toString() { return 'com.wiris.util.type.StringUtils'; }
 }

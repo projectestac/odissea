@@ -26,6 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventcomponent'] = 'Στοιχείο λογισμικού';
+$string['eventcontext'] = 'Πλαίσιο γεγονότος';
+$string['eventloggedas'] = '{$a->realusername} ως {$a->asusername}';
+$string['eventorigin'] = 'Προέλευση';
 $string['eventrelatedfullnameuser'] = 'Χρήστης που επηρεάζεται';
-$string['livelogs'] = 'Αρχεία καταγραφής της τελευταίας ώρας';
-$string['pluginname'] = 'Ενεργά αρχεία καταγραφής';
+$string['eventreportviewed'] = 'Απευθείας (live) αναφορά καταγραφής προβλήθηκε';
+$string['livelogs'] = 'Ενεργές καταγραφές της τελευταίας ώρας';
+$string['loglive:view'] = 'Εμφάνιση των ενεργών καταγραφών';
+$string['nologreaderenabled'] = 'Δεν είναι ενεργοποιημένος κανένας αναγνώστης καταγραφών';
+$string['pause'] = 'Παύση απευθείας (live) ενημερώσεων';
+$string['pluginname'] = 'Ενεργές καταγραφές';
+$string['privacy:metadata'] = 'Το πρόσθετο «Ζωντανές καταγραφές» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['resume'] = 'Να αρχίσουν πάλι οι απευθείας ενημερώσεις';
+$string['selectlogreader'] = 'Επιλογή αναγνώστη καταγραφών';

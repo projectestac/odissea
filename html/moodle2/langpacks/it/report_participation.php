@@ -31,3 +31,4 @@ $string['page-report-participation-index'] = 'Report partecipazione al corso';
 $string['page-report-participation-x'] = 'Qualsiasi report della partecipazione';
 $string['participation:view'] = 'Visualizzare il report della partecipazione al corso';
 $string['pluginname'] = 'Partecipazione al corso';
+$string['privacy:metadata'] = 'Il plugin \'Partecipazione al corso\' non memorizza dati personali.';

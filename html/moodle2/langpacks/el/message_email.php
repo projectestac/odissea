@@ -25,4 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['email'] = 'Αποστολη ειδοποιήσεων μέσω mail σε';
+$string['email'] = 'Αποστολη ειδοποιήσεων μέσω ηλ. ταχυδρομείου προς';
+$string['emailonlyfromnoreplyaddress'] = 'Πάντα αποστολή μηνυμάτων ηλ.ταχυδρομείου από την διεύθυνση μη-απάντησης;';
+$string['ifemailleftempty'] = 'Αφήστε κενό για αποστολή ειδοποιήσεων προς {$a}';
+$string['pluginname'] = 'Ηλεκτρονικό ταχυδρομείο';
+$string['privacy:metadata:attachment'] = 'Ένα αρχείο στο σύστημα αρχείων.';
+$string['privacy:metadata:attachname'] = 'Το όνομα του συνημμένου αρχείου (η επέκταση υποδηλώνει MIME).';
+$string['privacy:metadata:externalpurpose'] = 'Αυτές οι πληροφορίες αποστέλλονται σε έναν εξωτερικό εξυπηρετητή SMTP για να παραδοθούν τελικά ως μήνυμα ηλεκτρονικού ταχυδρομείου στον παραλήπτη.';
+$string['privacy:metadata:fullmessage'] = 'Το πλήρες μήνυμα σε ένα δεδομένο μορφότυπο.';
+$string['privacy:metadata:fullmessagehtml'] = 'Η πλήρης έκδοση του μηνύματος.';
+$string['privacy:metadata:recipient'] = 'Ο παραλήπτης του μηνύματος.';
+$string['privacy:metadata:replyto'] = 'Η διεύθυνση ηλ.ταχυδρομείου για να απαντήσετε.';
+$string['privacy:metadata:replytoname'] = 'Όνομα απάντησης στον παραλήπτη.';
+$string['privacy:metadata:subject'] = 'Η γραμμή θέματος του μηνύματος.';
+$string['privacy:metadata:userfrom'] = 'Ο χρήστης που αποστέλει το μήνυμα.';

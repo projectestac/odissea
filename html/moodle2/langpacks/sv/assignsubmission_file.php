@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Filtyper som accepteras';
+$string['acceptedfiletypes_help'] = 'Du kan begränsa vilja filtyper som kan lämnas in genom att skriva in respektive filtillägg (t.ex. ".doc"). Om detta fält lämnas tomt kommer alla filtyper att accepteras.';
 $string['configmaxbytes'] = 'Maximal filstorlek';
 $string['countfiles'] = '{$a} filer';
 $string['default'] = 'Aktiverad som förval';
+$string['defaultacceptedfiletypes'] = 'Filtyper som accepteras som standard.';
 $string['default_help'] = 'Om valt kommer denna inlämningsmetod vara aktiverad som förval för alla nya uppgifter.';
 $string['enabled'] = 'Filinlämningar';
 $string['enabled_help'] = 'Om aktiverad, kan studenter ladda upp en eller flera filer som sin inlämningsuppgift';

@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = 'Amosar a puntuación obxectivo';
 $string['objectivex'] = 'Obxectivo {$a}';
 $string['pluginname'] = 'Informe de obxecivos';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'Indica se se amosa a puntuación obxectivo no informe SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Número de usuarios a amosar nos informes de SCORM';
 $string['score'] = 'puntuación';
 $string['status'] = 'estado';

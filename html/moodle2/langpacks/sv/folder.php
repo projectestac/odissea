@@ -57,5 +57,6 @@ $string['pluginadministration'] = 'Administration av mapp';
 $string['pluginname'] = 'Mapp';
 $string['search:activity'] = 'Mapp';
 $string['showdownloadfolder'] = '';
+$string['showdownloadfolder_help'] = '"Ladda ned mapp" tillåter användaren att ladda ned allt innehåll i mappen som en zip-fil.';
 $string['showexpanded'] = 'Visa undermappar expanderade';
 $string['showexpanded_help'] = 'Om aktiverat så visas undermappar expanderade som standard. Om inte visas undermappar ihopfällda.';

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Emoticon als Bild zeigen';
-$string['privacy:metadata'] = 'Der Filter für Emoticons speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Filter für Emoticons speichert keine personenbezogenen Daten.';
 $string['settingformats'] = 'Mögliche Formate';
 $string['settingformats_desc'] = 'Der Filter wird nur angewandt, wenn der ursprüngliche Text in einem der ausgewählten Formate eingefügt wurde.';

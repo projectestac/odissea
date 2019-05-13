@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = '缩进';
 $string['outdent'] = '缩出';
 $string['pluginname'] = '缩进';
+$string['privacy:metadata'] = 'atto_indent 插件不储存任何私人数据。';

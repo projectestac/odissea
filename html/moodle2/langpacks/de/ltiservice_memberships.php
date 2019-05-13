@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mitgliedschaften LTI Services';
 $string['privacy:metadata:email'] = 'E-Mail des Nutzers, der LTI-Consumer nutzte';
-$string['privacy:metadata:externalpurpose'] = 'Diese Information wird an externen LTI Provider gesandt';
+$string['privacy:metadata:externalpurpose'] = 'Diese Information wird an externen LTI Provider gesendet.';
 $string['privacy:metadata:firstname'] = 'Vorname des Nutzers, der LTI-Consumer nutzt';
 $string['privacy:metadata:fullname'] = 'Vollständiger Name des Nutzers, der LTI-Consumer nutzt';
 $string['privacy:metadata:lastname'] = 'Nachname des Nutzers, der LTI-Consumer nutzt';
 $string['privacy:metadata:userid'] = 'ID des Nutzers, der LTI-Consumer nutzt';
-$string['privacy:metadata:useridnumber'] = 'ID-Nummer des Nutzers, der LTI-Consumer nutzt';
+$string['privacy:metadata:useridnumber'] = 'ID der Person, die den LTI-Consumer nutzt';
 $string['servicename'] = 'Mitgliedschaften';

@@ -25,6 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['contentsettings'] = 'Ρυθμίσεις εμφάνισης για περιοχή περιεχομένου';
 $string['display_address'] = 'Εμφάνιση διεύθυνσης';
+$string['display_aim'] = 'Εμφάνιση AIM';
+$string['display_city'] = 'Εμφάνιση πόλης';
+$string['display_country'] = 'Εμφάνιση χώρας';
+$string['display_currentlogin'] = 'Εμφάνιση τρέχουσας σύνδεσης';
+$string['display_email'] = 'Εμφάνιση διεύθυνσης ηλεκτρονικού ταχυδρομείου';
+$string['display_firstaccess'] = 'Εμφάνιση πρώτης πρόσβασης';
+$string['display_icq'] = 'Εμφάνιση ICQ';
+$string['display_institution'] = 'Εμφάνιση ιδρύματος';
+$string['display_lastaccess'] = 'Εμφάνιση τελευταίας πρόσβασης';
+$string['display_lastip'] = 'Εμφάνιση τελευταίας διεύθυνσης IP';
+$string['display_msn'] = 'Εμφάνιση MSN';
+$string['display_phone1'] = 'Εμφάνιση τηλεφώνου';
 $string['display_phone2'] = 'Εμφάνισε κινητό τηλέφωνο';
+$string['display_picture'] = 'Εμφάνιση εικόνας';
+$string['display_skype'] = 'Εμφάνιση Skype';
+$string['display_un'] = 'Εμφάνιση ονόματος';
+$string['display_yahoo'] = 'Εμφάνιση Yahoo';
+$string['myprofile:addinstance'] = 'Προσθήκη ενός νέου μπλοκ συνδεδεμένος χρήστης';
+$string['myprofile:myaddinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένος χρήστης στο Ταμπλό';
+$string['myprofile_settings'] = 'Ορατές πληροφορίες χρήστη';
 $string['pluginname'] = 'Συνδεδεμένος χρήστης';
+$string['privacy:metadata'] = 'Το μπλοκ Συνδεδεμένων χρηστών εμφανίζει μόνο πληροφορίες σχετικά με τον συνδεδεμένο χρήστη και το ίδιο δεν αποθηκεύει δεδομένα.';

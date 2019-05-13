@@ -25,7 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['anygroup'] = '(Οποιαδήποτε ομάδα συμμετεχόντων μαθήματος)';
-$string['description'] = 'Επιτρέψτε μόνο σε μαθητές που ανήκουν σε συγκεκριμένη ομάδα συμμετεχόντων μαθήματος ή σε οποιαδήποτε ομάδα συμμετεχόντων.';
-$string['requires_anygroup'] = 'Ανήκεις σε οποιοδήποτε group';
-$string['requires_group'] = 'Ανήκεις στο <strong>{$a}</strong>';
+$string['anygroup'] = '(Οποιαδήποτε Ομάδα Συμμετεχόντων Μαθήματος)';
+$string['description'] = 'Επιτρέψτε μόνο σε μαθητές που ανήκουν σε συγκεκριμένη Ομάδα Συμμετεχόντων Μαθήματος ή σε οποιαδήποτε Ομάδα Συμμετεχόντων.';
+$string['error_selectgroup'] = 'Πρέπει να επιλέξετε μια ομάδα.';
+$string['missing'] = '(Λείπει ομάδα)';
+$string['pluginname'] = 'Περιορισμός με βάση την ομάδα';
+$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση την ομάδα» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['requires_anygroup'] = 'Ανήκετε σε οποιαδήποτε ομάδα';
+$string['requires_group'] = 'Ανήκετε στην ομάδα <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'Δεν ανήκετε σε καμία ομάδα';
+$string['requires_notgroup'] = 'Δεν ανήκετε στην ομάδα <strong>{$a}</strong>';
+$string['title'] = 'Ομάδα';

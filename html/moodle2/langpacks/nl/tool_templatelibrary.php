@@ -33,6 +33,7 @@ $string['example'] = 'Voorbeeld';
 $string['noresults'] = 'Geen resultaten';
 $string['notemplateselected'] = 'Geen sjabloon geselecteerd';
 $string['pluginname'] = 'Sjablonenbibliotheek';
+$string['privacy:metadata'] = 'De sjabloonbibliotheek-plugin bewaart geen persoonlijke gegevens.';
 $string['search'] = 'Zoek';
 $string['searchtemplates'] = 'Zoeksjabloon';
 $string['templatehasnoexample'] = 'Dit sjabloon heeft geen voorbeeldcontext, het kan hier dus niet getoond worden. Om een voorbeeldcontext toe te voegen aan dit sjabloon, moet je een Mustache commentaar "Voorbeeld context (json):", gevolgd door de json geëncodeerde voorbeeldcontext voor het  sjabloon toevoegen.';

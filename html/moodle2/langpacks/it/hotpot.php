@@ -100,6 +100,7 @@ $string['questionshort'] = 'D-{$a}';
 $string['score'] = 'Punteggio';
 $string['scoresreport'] = 'Voti';
 $string['selectattempts'] = 'Seleziona tentativi';
+$string['sourcefilenotfound'] = 'File di origine non trovato (o vuoto): {$a}';
 $string['status'] = 'Stato';
 $string['studentfeedback'] = 'Commento dello studente';
 $string['textsourcefilename'] = 'Nome del file';

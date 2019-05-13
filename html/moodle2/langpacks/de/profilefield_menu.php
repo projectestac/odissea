@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Dropdown-Menü';
-$string['privacy:metadata:profilefield_menu:data'] = 'Gespeicherte Nutzerdaten';
-$string['privacy:metadata:profilefield_menu:dataformat'] = 'Format der gespeicherten Nutzerdaten';
+$string['privacy:metadata:profilefield_menu:data'] = 'Nutzerdaten im Drop-down-Feld';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'Format der gespeicherten Nutzerdaten im Drop-down-Feld';
 $string['privacy:metadata:profilefield_menu:fieldid'] = 'ID des Profilfelds';
 $string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Zusätzliche Nutzerinformationen werden hier gespeichert';
 $string['privacy:metadata:profilefield_menu:userid'] = 'ID des Nutzers dessen Daten im Dropdown-Menü-Plugin gespeichert werden';

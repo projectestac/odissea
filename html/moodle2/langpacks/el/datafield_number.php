@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο αριθμών';
+$string['pluginname'] = 'Αριθμός';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο αριθμού» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

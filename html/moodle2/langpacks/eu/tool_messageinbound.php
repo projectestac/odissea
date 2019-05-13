@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'Klasearen izena';
 $string['component'] = 'Osagaia';
-$string['configmessageinboundhost'] = 'Moodle-k e-postak bilatzera joan behar deneko zerbitzariaren helbidea. Berezkoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, mail.adibidea.eus:587 formatua adibidez. Atakarik zehazten ez baduzu, Moodle-k zehazten duzun e-posta zerbitzariko berezko ataka erabiliko da.';
-$string['defaultexpiration'] = 'Helbideen berezko iraungitze-epea';
+$string['configmessageinboundhost'] = 'Moodle-k e-postak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, mail.adibidea.eus:587 formatua adibidez. Atakarik zehazten ez baduzu, e-posta zerbitzari motaren lehenetsitako ataka erabiliko da.';
+$string['defaultexpiration'] = 'Helbideen iraungitze-epe lehenetsia';
 $string['defaultexpiration_help'] = 'Kudeatzaileak e-posta helbide bat sortzen duenean, automatikoki iraungitze-epe bat zehaztu dakioke epe hori igaro ondoren ezin erabiltzeko. Iraungitze-epea zehaztea gomendagarria da.';
 $string['description'] = 'Deskribapena';
 $string['domain'] = 'E-postaren domeinua';
@@ -50,7 +50,7 @@ $string['invalid_recipient_handler'] = 'Baliozkoa den mezu bat jasotzen denean b
 
 Kudeatzaile honek erantzun horiek kudeatzen ditu.
 
-Ezin da desgaitu kudeatzaile honen igorlearen egiaztapena erabiltzaileak e-posta helbide baliogabetik erantzun dezakeelako bere e-posta bezeroaren konfigurazioa egokia ez bada.';
+Ezin da desgaitu kudeatzaile honen igorlearen egiaztapena erabiltzaileak e-posta helbide ezegokitik erantzun dezakeelako bere e-posta bezeroaren konfigurazioa egokia ez bada.';
 $string['invalid_recipient_handler_name'] = 'Igorle baliogabeen kudeatzailea';
 $string['mailbox'] = 'Postontziaren izena';
 $string['mailboxconfiguration'] = 'Postontziaren ezarpenak';

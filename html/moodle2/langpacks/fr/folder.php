@@ -29,7 +29,7 @@ $string['bynameondate'] = 'par {$a->name} – {$a->date}';
 $string['contentheader'] = 'Contenu';
 $string['display'] = 'Afficher le contenu du dossier';
 $string['display_help'] = 'Si vous choisissez d\'afficher le contenu du dossier sur la page de cours, il n\'y aura pas de lien vers une page séparée.
-La description ne sera affichée que si l\'option « Afficher la description sur la page du cours » es cochée.<br />En outre, la consultation par les participants ne pourra pas être enregistrée dans l\'historique.';
+La description ne sera affichée que si l\'option « Afficher la description sur la page du cours » es cochée.<br />En outre, la consultation par les participants ne pourra pas être enregistrée dans le journal.';
 $string['displayinline'] = 'Sur la page du cours';
 $string['displaypage'] = 'Sur une page séparée';
 $string['dnduploadmakefolder'] = 'Décompresser les fichiers et créer un dossier';

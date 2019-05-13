@@ -33,6 +33,6 @@ $string['nosessiontoken'] = 'Ein Export zu Google wird wegen eines fehlenden Ses
 $string['oauthinfo'] = '<p>Um dieses Plugin nutzen zu können, ist eine Registrierung bei Google erforderlich. Entsprechende Informationen finden Sie auf <a href="{$a->docsurl}">Google OAuth 2.0 Setup</a>.</p><p>Während der Registrierung müssen Sie folgende URL als \'Authorized Redirect URIs\' eingeben: <br />{$a->callbackurl}</p>Sie erhalten eine Client ID und ein Secret, mit denen Sie alle Plugins für Google Drive und Picasa konfigurieren können.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Dieses Plugin sendet Daten an einen extern verbundenen Google-Account. Es speichert lokal keine Daten.';
-$string['privacy:metadata:data'] = 'Persönliche Daten über das Portfolio-Subsystem weitergeleitet';
+$string['privacy:metadata:data'] = 'Personenbezogene Daten, die vom Portfolio-Subsystem übergeben wurden';
 $string['secret'] = 'Secret';
 $string['sendfailed'] = 'Die Datei {$a} konnte nicht zu Google übertragen werden';

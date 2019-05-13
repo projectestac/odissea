@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Txosten orokorraren txostena ikusita';
 $string['gradesoverview'] = 'Kalifikazioen laburpena';
-$string['overview:view'] = 'Txosten orokorra ikusi';
+$string['overview:view'] = 'Ikusi txosten orokorra';
 $string['pluginname'] = 'Txosten orokorra';
 $string['privacy:metadata'] = 'Txosten orokorrak soilik beste kokapenetan gordetako datuak erakusten ditu.';

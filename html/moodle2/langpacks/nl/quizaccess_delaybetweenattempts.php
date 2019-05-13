@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Toegangsregel: tijd tussen twee pogingen van een test';
+$string['privacy:metadata'] = 'De pauze tussen testpogingen toegangsregel-plugin bewaart geen persoonlijke gegevens.';
 $string['youcannotwait'] = 'Deze test sluit voor je een nieuwe poging mag doen.';
 $string['youmustwait'] = 'Je moet wachten voor je de test opnieuw mag doen. Je mag pas een nieuwe poging doen na {$a}.';

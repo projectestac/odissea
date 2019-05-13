@@ -1,8 +1,5 @@
-/**
- * @namespace
- */
-var H5PEditor = (H5PEditor || {});
-var ns = H5PEditor;
+/* global ns */
+window.ns = window.H5PEditor = window.H5PEditor || {};
 
 /**
  * Construct the editor.
@@ -31,7 +28,9 @@ ns.Editor = function (library, defaultParams, replace, iframeLoaded) {
       left: 0
     },
     'class': 'h5p-editor-iframe',
-    'frameBorder': '0'
+    'frameBorder': '0',
+    'allowfullscreen': 'allowfullscreen',
+    'allow': "fullscreen"
   });
 
   // The DOM element is often used directly
@@ -43,6 +42,9 @@ ns.Editor = function (library, defaultParams, replace, iframeLoaded) {
    * @private
    */
   var populateIframe = function () {
+    if (!iframe.contentDocument) {
+      return; // Not possible, iframe 'load' hasn't been triggered yet
+    }
     iframe.contentDocument.open();
     iframe.contentDocument.write(
       '<!doctype html><html>' +
@@ -78,12 +80,15 @@ ns.Editor = function (library, defaultParams, replace, iframeLoaded) {
    * @private
    */
   var resize = function () {
-    if (!iframe.contentDocument.body) {
+    if (!iframe.contentDocument.body || self.preventResize) {
       return; // Prevent crashing when iframe is unloaded
     }
     if (iframe.clientHeight === iframe.contentDocument.body.scrollHeight &&
-      iframe.contentDocument.body.scrollHeight === iframe.contentWindow.document.body.clientHeight) {
+      (iframe.contentDocument.body.scrollHeight === iframe.contentWindow.document.body.clientHeight ||
+       iframe.contentDocument.body.scrollHeight - 1 === iframe.contentWindow.document.body.clientHeight ||
+       iframe.contentDocument.body.scrollHeight === iframe.contentWindow.document.body.clientHeight - 1)) {
       return; // Do not resize unless page and scrolling differs
+      // Note: ScrollHeight may be 1px larger in some cases(Edge) where the actual height is a fraction.
     }
 
     // Retain parent size to avoid jumping/scrolling
@@ -121,6 +126,20 @@ ns.Editor = function (library, defaultParams, replace, iframeLoaded) {
     var $container = $('body > .h5p-editor');
 
     this.contentWindow.H5P.$body = $(this.contentDocument.body);
+
+    /**
+     * Trigger semi-fullscreen for $element.
+     *
+     * @param {jQuery} $element Element to put in semi-fullscreen
+     * @param {function} before Callback that runs after entering semi-fullscreen
+     * @param {function} done Callback that runs after exiting semi-fullscreen
+     * @return {function} Exit trigger
+     */
+    this.contentWindow.H5PEditor.semiFullscreen = function ($element, after, done) {
+      const exit = self.semiFullscreen($iframe, $element, done);
+      after();
+      return exit;
+    };
 
     // Load libraries data
     $.ajax({
@@ -162,7 +181,7 @@ ns.Editor = function (library, defaultParams, replace, iframeLoaded) {
     if (iframe.contentWindow.MutationObserver !== undefined) {
       // If supported look for changes to DOM elements. This saves resources.
       var running;
-      var limitedResize = function (mutations) {
+      var limitedResize = function () {
         if (!running) {
           running = setTimeout(function () {
             resize();
@@ -211,6 +230,7 @@ ns.Editor = function (library, defaultParams, replace, iframeLoaded) {
   $iframe.load(load);
 
   // Populate iframe with the H5P Editor
+  // (should not really be done until 'load', but might be here in case the iframe is reloaded?)
   populateIframe();
 };
 
@@ -224,7 +244,7 @@ ns.Editor.prototype.getLibrary = function () {
   if (this.selector !== undefined) {
     return this.selector.getCurrentLibrary();
   }
-  else if(this.selectedContentTypeId) {
+  else if (this.selectedContentTypeId) {
     return this.selectedContentTypeId;
   }
   else {
@@ -243,15 +263,214 @@ ns.Editor.prototype.getParams = function (notFormSubmit) {
     this.formSubmitted = true;
   }
   if (this.selector !== undefined) {
-    return this.selector.getParams();
-  }
-  else if(this.form){
-    return this.form.params;
+    return {
+      params: this.selector.getParams(),
+      metadata: this.selector.getMetadata()
+    };
   }
   else {
     console.warn('no selector defined for "getParams"');
   }
 };
+
+/**
+ * Check if main title is set. If not, focus on it!
+ *
+ * @return {[type]}
+ */
+ns.Editor.prototype.isMainTitleSet = function () {
+  var mainTitleField = this.selector.form.metadataForm.getExtraTitleField();
+
+  // validate() actually doesn't return a boolean, but the trimmed value
+  // We know title is a mandatory field, so that's what we are checking here
+  var valid = mainTitleField.validate();
+  if (!valid) {
+    mainTitleField.$input.focus();
+  }
+  return valid;
+};
+
+/**
+ *
+ * @alias H5PEditor.Editor#presave
+ * @param content
+ * @return {H5PEditor.Presave}
+ */
+ns.Editor.prototype.getMaxScore = function (content) {
+  try {
+    var value = this.selector.presave(content, this.getLibrary());
+    return value.maxScore;
+  }
+  catch (e) {
+    // Deliberatly catching error
+    return 0;
+  }
+};
+
+/**
+ * Trigger semi-fullscreen for $iframe and $element.
+ *
+ * @param {jQuery} $iframe
+ * @param {jQuery} $element
+ * @param {function} done Callback that runs after semi-fullscreen exit
+ * @return {function} Exit trigger
+ */
+ns.Editor.prototype.semiFullscreen = function ($iframe, $element, done) {
+  const self = this;
+
+  // Add class for element to cover all of the page
+  const $classes = $iframe.add($element).addClass('h5peditor-semi-fullscreen');
+  // NOTE: Styling for this class is provided by Core
+
+  // Prevent the resizing loop from messing with the iframe while
+  // the semi-fullscreen is active.
+  self.preventResize = true;
+
+  // Prevent body overflow
+  const bodyOverflowValue = document.body.style.getPropertyValue('overflow');
+  const bodyOverflowPriority = document.body.style.getPropertyPriority('overflow');
+  document.body.style.setProperty('overflow', 'hidden', 'important');
+
+  // Reset the iframe's default CSS props
+  $iframe.css({
+    width: '',
+    height: '',
+    zIndex: '',
+    top: '',
+    left: ''
+  });
+  // NOTE: Style attribute has been used here since June 2014 since there are
+  // no CSS files in H5PEditor loaded outside the iframe.
+
+  // Hide all elements except the iframe and the fullscreen elements
+  // This is to avoid tabbing and readspeakers accessing these while
+  // the semi-fullscreen is active.
+  const iframeWindow = $iframe[0].contentWindow;
+  const restoreOutside = ns.hideAllButOne($iframe[0], iframeWindow);
+  const restoreInside = ns.hideAllButOne($element[0], window);
+
+  /**
+   * Trigger semi-fullscreen exit on ESC key
+   *
+   * @private
+   */
+  const handleKeyup = function (e) {
+    if (e.which === 27) {
+      restore();
+    }
+  }
+  iframeWindow.document.body.addEventListener('keyup', handleKeyup);
+
+  /**
+   * Exit/restore callback returned.
+   *
+   * @private
+   */
+  const restore = function () {
+    // Remove our special class
+    $classes.removeClass('h5peditor-semi-fullscreen');
+
+    // Allow the resizing loop to adjust the iframe
+    self.preventResize = false;
+
+    // Restore body overflow
+    document.body.style.setProperty('overflow', bodyOverflowValue, bodyOverflowPriority);
+
+    // Restore the default style attribute properties
+    $iframe.css({
+      width: '100%',
+      height: '3em',
+      zIndex: 101,
+      top: 0,
+      left: 0
+    });
+
+    // Return all of the elements hidden back to their original state
+    restoreOutside();
+    restoreInside();
+
+    iframeWindow.document.body.removeEventListener('keyup', handleKeyup);
+    done(); // Callback for UI
+  }
+
+  return restore;
+};
+
+/**
+ * Will hide all siblings and ancestor siblings(uncles and aunts) of element.
+ *
+ * @param {Element} element
+ * @param {Window} win Needed to get the correct computed style
+ * @return {function} Restore trigger
+ */
+ns.hideAllButOne = function (element, win) {
+  // Make it easy and quick to restore previous display values
+  const restore = [];
+
+  /**
+   * Check if the given element is visible.
+   *
+   * @private
+   * @param {Element} element
+   */
+  const isVisible = function (element) {
+    if (element.offsetParent === null) {
+      // Must check computed style to be sure in case of fixed element
+      if (win.getComputedStyle(element).display !== 'none') {
+        return true;
+      }
+    }
+    else {
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Recusive function going up the DOM tree.
+   * Will hide all siblings of given element.
+   *
+   * @private
+   * @param {Element} element
+   */
+  const recurse = function (element) {
+    // Loop through siblings
+    for (let i = 0; i < element.parentElement.children.length; i++) {
+      let sibling = element.parentElement.children[i];
+      if (sibling === element) {
+        continue; // Skip where we came from
+      }
+
+      // Only hide if sibling is visible
+      if (isVisible(sibling)) {
+        // Make it simple to restore original value
+        restore.push({
+          element: sibling,
+          display: sibling.style.getPropertyValue('display'),
+          priority: sibling.style.getPropertyPriority('display')
+        });
+        sibling.style.setProperty('display', 'none', 'important');
+      }
+    }
+
+    // Climb up the tree until we hit some body
+    if (element.parentElement.tagName !== 'BODY') {
+      recurse(element.parentElement);
+    }
+  }
+  recurse(element); // Start
+
+  /**
+   * Restore callback returned.
+   *
+   * @private
+   */
+  return function () {
+    for (let i = restore.length - 1; i > -1; i--) { // In opposite order
+      restore[i].element.style.setProperty('display', restore[i].display, restore[i].priority);
+    }
+  };
+}
 
 /**
  * Editor translations index by library name or "core".

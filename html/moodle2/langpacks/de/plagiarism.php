@@ -32,4 +32,4 @@ $string['enableplagiarism'] = 'Plagiatsuche aktivieren';
 $string['manageplagiarism'] = 'Plugins zur Plagiatsuche verwalten';
 $string['nopluginsinstalled'] = 'Keine Plugins zur Plagiatsuche installiert';
 $string['plagiarism'] = 'Plagiatsuche';
-$string['privacy:metadata:plagiarism'] = 'Das Plagiatsubsystem fungiert als ein Kanal, der Anfragen von Plugins an die verschiedenen Plagiat-Plugins weiterleitet.';
+$string['privacy:metadata:plagiarism'] = 'Das Plagiat-Subsystem fungiert als ein Kanal, der Anfragen von Plugins an die verschiedenen Plagiat-Plugins weiterleitet.';

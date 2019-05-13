@@ -30,5 +30,6 @@ $string['logsofbackupexecutedon'] = 'Rexistros de seguridade executado en {$a}';
 $string['nobackupsfound'] = 'Non se atoparon copias de seguridade';
 $string['nologsfound'] = 'Non se atoparon rexistros para esta copia de seguridade.';
 $string['pluginname'] = 'Informe de copias de seguridade';
+$string['privacy:metadata'] = 'O engadido de informe de copias de seguridade non almacena ningún dato persoal.';
 $string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Ver rexistros';

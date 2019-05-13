@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['enabledock'] = 'Permitir al usuario agregar este bloque';
+$string['enabledock'] = 'Permitir al usuario apartar este bloque';
 $string['pluginname'] = 'Administración';
 $string['settings:addinstance'] = 'Añadir un nuevo bloque de administración';
 $string['settings:myaddinstance'] = 'Añadir un nuevo bloque de administración al Área personal';

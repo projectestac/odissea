@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Engadir temas';
 $string['currentsection'] = 'Este tema';
 $string['deletesection'] = 'Eliminar o tema';
 $string['editsection'] = 'Editar o tema';
@@ -34,6 +35,7 @@ $string['newsectionname'] = 'Novo nome para o tema {$a}';
 $string['page-course-view-topics'] = 'Calquera páxina principal de curso en formato temas';
 $string['page-course-view-topics-x'] = 'Calquera páxina de curso en formato temas';
 $string['pluginname'] = 'Formato dos temas';
+$string['privacy:metadata'] = 'O engadido de formato dos temas non almacena ningún dato persoal.';
 $string['section0name'] = 'Xeral';
 $string['sectionname'] = 'Tema';
 $string['showfromothers'] = 'Amosar o tema';

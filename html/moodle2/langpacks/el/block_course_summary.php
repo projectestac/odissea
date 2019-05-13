@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['coursesummary'] = 'Περιγραφή μαθήματος';
-$string['course_summary:addinstance'] = 'Προσθήκη νέου μπλοκ σύνοψης μαθήματος/ιστοτόπου';
-$string['pluginname'] = 'Περιγραφή σελίδας';
+$string['coursesummary'] = 'Περίληψη μαθήματος';
+$string['course_summary:addinstance'] = 'Προσθήκη νέου μπλοκ «Περίληψη μαθήματος/ιστοτόπου»';
+$string['pluginname'] = 'Περίληψη μαθήματος/ιστοτόπου';
+$string['privacy:metadata'] = 'Το μπλοκ «Περίληψη μαθήματος/ιστοτόπου» εμφανίζει μόνο πληροφορίες σχετικά με τα μαθήματα και το ίδιο δεν αποθηκεύει δεδομένα.';

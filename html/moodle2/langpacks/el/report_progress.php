@@ -27,5 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['page-report-progress-index'] = 'Αναφορά ολοκλήρωσης δραστηριοτήτων';
 $string['page-report-progress-user'] = 'Αναφορά ολοκλήρωσης δραστηριοτήτων χρήστη';
+$string['page-report-progress-x'] = 'Οποιαδήποτε αναφορά ολοκλήρωσης δραστηριότητας';
 $string['pluginname'] = 'Ολοκλήρωση δραστηριότητας';
-$string['progress:view'] = 'Προβολή αναφοράς προόδου μαθήματος';
+$string['privacy:metadata'] = 'Η αναφορά ολοκλήρωσης δραστηριότητας εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['progress:view'] = 'Προβολή αναφοράς ολοκλήρωσης δραστηριοτήτων';

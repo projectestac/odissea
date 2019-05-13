@@ -33,13 +33,13 @@ $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'MathJax URL';
 $string['httpsurl_help'] = 'MathJax liburutegiaren URL osoa.';
 $string['localinstall'] = 'MathJax-en instalazio lokala';
-$string['localinstall_help'] = 'MathJax-en berezko konfigurazioak MathJax-en CDN bertsioa erabiltzen du, baina MathJax lokalki instala daitezke behar izanez gero.
+$string['localinstall_help'] = 'MathJax-en konfigurazio lehenetsiak MathJax-en CDN bertsioa erabiltzen du, baina MathJax lokalki instala daitezke behar izanez gero.
 
 Hau erabilgarria izan daiteke banda-zabalera aurrezteko edota proxy lokalen murrizketak saihesteko.
 
 MathJax-en instalazio lokala erabiltzeko, lehenik eta behin MathJax liburutegi osoa jaitsi http://www.mathjax.org/ helbidetik. Ondoren instala ezazu web-zerbitzari batean. Eta bukatzeko MathJax iragazkiaren httpurl edota httpsurl ezarpenetan MathJax.js lokalaren URLak konfigura itzazu.';
 $string['mathjaxsettings'] = 'MathJax-en ezarpenak';
-$string['mathjaxsettings_desc'] = 'MathJax-en berezko konfigurazioa egokia izan beharko litzateke erabiltzaile gehienentzat, baina MathJax oso konfiguragarria da eta hemen MathJax estandarraren edozein konfigurazio aukera gehi daitezke.';
+$string['mathjaxsettings_desc'] = 'MathJax-en konfigurazio lehenetsia egokia izan beharko litzateke erabiltzaile gehienentzat, baina MathJax oso konfiguragarria da eta hemen MathJax estandarraren edozein konfigurazio aukera gehi daitezke.';
 $string['privacy:metadata'] = 'MathJax pluginak ez du datu pertsonalik biltzen.';
 $string['texfiltercompatibility'] = 'TeX iragazkiaren bateragarritasuna';
 $string['texfiltercompatibility_help'] = 'MathJax iragazkia TeX idazketaren iragazkiaren ordezko gisa erabil daiteke.

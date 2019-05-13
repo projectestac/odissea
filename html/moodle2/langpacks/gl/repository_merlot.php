@@ -30,3 +30,7 @@ $string['licensekey'] = 'Chave da licenza';
 $string['merlot:view'] = 'Ver o repositorio de Merlot';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'O engadido de repositorio en Merlot.org almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
+$string['privacy:metadata:repository_merlot:author'] = 'O autor do contido do repositorio de Merlot.org.';
+$string['privacy:metadata:repository_merlot:keywords'] = 'A consulta de busca de texto de usuario do repositorio Merlot.org.';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'A chave da licenza do repositorio de Merlot.org.';

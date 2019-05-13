@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['answer'] = 'Respuesta';
 $string['choices'] = 'Opciones';
+$string['choicex'] = 'Opción {no}';
 $string['correctansweris'] = 'La respuesta correcta es: {$a}';
 $string['errorblankchoice'] = 'Por favor, comproba su opción: la opción {$a} está vacía.';
 $string['errormissingchoice'] = 'Compruebe el texto de la pregunta: {$a} no se ha encontrado en las opciones! Sólo los números con respuestas de elección especificadas se permiten utilizar como titulares de lugar (\'place holders\').';

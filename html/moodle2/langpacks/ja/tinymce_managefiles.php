@@ -33,5 +33,5 @@ $string['managefiles:desc'] = '埋め込みファイルを管理する';
 $string['pluginname'] = '埋め込みファイルを管理する';
 $string['privacy:metadata'] = '「埋め込みファイルを管理する」TinyMCEプラグインはどのような個人データも保存しません。';
 $string['refreshfiles'] = '不明および未使用ファイル一覧をリフレッシュする';
-$string['unusedfilesdesc'] = '以下の埋め込みファイルはテキストエリアで使用されていません:';
+$string['unusedfilesdesc'] = '次の埋め込みファイルはテキストエリアで使用されていません:';
 $string['unusedfilesheader'] = '未使用ファイル';

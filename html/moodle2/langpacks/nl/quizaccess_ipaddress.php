@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Toegangsregel: IP adres';
+$string['privacy:metadata'] = 'De IP-adres testtoegangsregel-plugin bewaart geen persoonlijke gegevens.';
 $string['subnetwrong'] = 'Deze test kan alleen bekeken worden vanaf bepaalde computers en dit toestel staat niet op de lijst.';

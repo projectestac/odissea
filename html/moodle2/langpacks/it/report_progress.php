@@ -29,4 +29,5 @@ $string['page-report-progress-index'] = 'Report completamento attività';
 $string['page-report-progress-user'] = 'Report completamento attività dell\'utente';
 $string['page-report-progress-x'] = 'Qualsiasi report di completamento attività';
 $string['pluginname'] = 'Completamento attività';
+$string['privacy:metadata'] = 'Il Report Completamento attività mostra solamente i dati memorizzati in altre posizioni.';
 $string['progress:view'] = 'Visualizzare completamento attività';

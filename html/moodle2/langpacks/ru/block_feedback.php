@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['feedback'] = 'Обратная связь';
 $string['feedback:addinstance'] = 'Добавлять новый блок «Обратная связь»';
 $string['pluginname'] = 'Обратная связь';
+$string['privacy:metadata'] = 'Блок «Обратная связь» только показывает данные, хранящиеся в других местах.';

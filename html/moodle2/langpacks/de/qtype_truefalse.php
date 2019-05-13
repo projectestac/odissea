@@ -37,6 +37,6 @@ $string['pluginnameadding'] = 'Wahr/Falsch-Frage hinzufügen';
 $string['pluginnameediting'] = 'Wahr/Falsch-Frage bearbeiten';
 $string['pluginname_help'] = 'Als Antwort auf eine Frage (die auch ein Bild enthalten könnte) wählt der Befragte zwischen "Wahr" und "Falsch".';
 $string['pluginnamesummary'] = 'Eine einfache Form der Multiple-Choice-Frage mit den zwei Auswahlmöglichkeiten "Wahr" und "Falsch".';
-$string['privacy:metadata'] = 'Der Wahr/Falsch Fragentyp speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Der Wahr/Falsch Fragentyp speichert keine personenbezogenen Daten.';
 $string['selectone'] = 'Eine auswählen:';
 $string['true'] = 'Wahr';

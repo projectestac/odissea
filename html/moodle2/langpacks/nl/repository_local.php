@@ -32,4 +32,5 @@ $string['local:view'] = 'Bekijk server opslagruimte';
 $string['notitle'] = 'Geen titel';
 $string['pluginname'] = 'Bestanden op server';
 $string['pluginname_help'] = 'Bestanden die vroeger naar de Moodle-server zijn geüpload';
+$string['privacy:metadata'] = 'De serverbestanden opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['remember'] = 'Onthoud mij';

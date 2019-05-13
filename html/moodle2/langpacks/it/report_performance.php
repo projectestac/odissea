@@ -51,4 +51,5 @@ $string['morehelp'] = 'aiuto ulteriore';
 $string['performancereportdesc'] = 'Elenco delle impostazioni che possono influenzare le prestazioni del sito {$a}';
 $string['performance:view'] = 'Visualizzare report delle prestazioni';
 $string['pluginname'] = 'Prestazioni';
+$string['privacy:metadata'] = 'Il plugin \'Prestazioni\' non memorizza dati personali.';
 $string['value'] = 'Valore';

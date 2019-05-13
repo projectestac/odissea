@@ -242,6 +242,8 @@ SCORM activities may be used
 * As an assessment tool';
 $string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'SCORM packages';
+$string['myaiccsessions'] = 'My AICC sessions';
+$string['myattempts'] = 'My attempts';
 $string['nav'] = 'Show Navigation';
 $string['navdesc'] = 'This setting specifies whether to show or hide navigation buttons and their position.';
 $string['nav_help'] = 'This setting specifies whether to show or hide the navigation buttons and their position.
@@ -388,7 +390,7 @@ $string['too_many_children'] = 'Tag {$a->tag} has too many children';
 $string['totaltime'] = 'Time';
 $string['trackcorrectcount'] = 'Correct count';
 $string['trackcorrectcount_help'] = 'Number of correct results for the question';
-$string['trackid'] = 'Id';
+$string['trackid'] = 'ID';
 $string['trackid_help'] = 'This is the identifier set by your SCORM package for this question, the SCORM specification doesn\'t allow the full question text to be provided.';
 $string['trackingloose'] = 'WARNING: The tracking data of this package will be lost!';
 $string['tracklatency'] = 'Latency';

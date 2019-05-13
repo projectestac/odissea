@@ -32,6 +32,7 @@ $string['importhtml:import'] = 'Импортировать главы';
 $string['importing'] = 'Идет импорт';
 $string['importingchapters'] = 'Идет импорт глав в книгу';
 $string['pluginname'] = 'Импорт главы книги';
+$string['privacy:metadata'] = 'Плагин «Импорт главы книги» не хранит никаких персональных данных.';
 $string['relinking'] = 'Преобразование ссылок';
 $string['type'] = 'Тип';
 $string['typeonefile'] = 'Одиночный HTML-файл с заголовками как главы';

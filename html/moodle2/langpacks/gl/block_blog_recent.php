@@ -29,4 +29,5 @@ $string['blog_recent:addinstance'] = 'Engadir un novo bloque de artigos recentes
 $string['norecentblogentries'] = 'Non hai artigos recentes';
 $string['numentriestodisplay'] = 'Número de artigos recentes que presentar';
 $string['pluginname'] = 'Artigos recentes do blog';
+$string['privacy:metadata'] = 'O bloque de artigos recentes do blog só amosa os datos almacenados noutros lugares';
 $string['recentinterval'] = 'Intervalo de tempo considerado «recente»';

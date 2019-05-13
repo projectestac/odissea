@@ -59,6 +59,7 @@ $string['numberofcolumns'] = 'Nombre de columnes';
 $string['numberofrows'] = 'Nombre de files';
 $string['outer'] = 'Al voltant de la taula';
 $string['pluginname'] = 'Taula';
+$string['privacy:metadata'] = 'El connector atto_table no emmagatzema cap dada personal.';
 $string['rows'] = 'Files';
 $string['settings'] = 'Configuració de la taula';
 $string['solid'] = 'Sòlid';

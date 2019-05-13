@@ -198,29 +198,23 @@ class qtype_wq extends question_type {
         $wirisquestion = '';
         if (isset($data['#']['wirisoptions'][0]['#']['wirisCASForComputations'])) {
             if ($data['#']['wirisoptions'][0]['#']['wirisCASForComputations'][0]['#'] == 1) {
-                $wrap->start();
                 // @codingStandardsIgnoreStart
-                $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . '">';
-                $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD;
+                $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS . '">';
+                $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_ADD;
                 // @codingStandardsIgnoreEnd
                 $wirisquestion .= '</data>';
-                $wrap->stop();
             } else if ($data['#']['wirisoptions'][0]['#']['wirisCASForComputations'][0]['#'] == 2) {
-                $wrap->start();
                 // @codingStandardsIgnoreStart
-                $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . '">';
-                $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT;
+                $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS . '">';
+                $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_REPLACE;
                 // @codingStandardsIgnoreEnd
-                $wrap->stop();
                 $wirisquestion .= '</data>';
             }
         } else {
-            $wrap->start();
             // @codingStandardsIgnoreStart
-            $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . '">';
-            $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_FALSE;
+            $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS . '">';
+            $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_FALSE;
             // @codingStandardsIgnoreEnd
-            $wrap->stop();
             $wirisquestion .= '</data>';
         }
         return $wirisquestion;
@@ -232,10 +226,8 @@ class qtype_wq extends question_type {
 
         $wirisquestion = '';
         if (isset($data['#']['wirisoptions'][0]['#']['hiddenInitialCASValue'])) {
-            $wrap->start();
             // @codingStandardsIgnoreLine
-            $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION . '">';
-            $wrap->stop();
+            $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_CAS_INITIAL_SESSION . '">';
             $initialcasvalue = $data['#']['wirisoptions'][0]['#']['hiddenInitialCASValue'][0]['#'];
             $wirisquestion .= htmlspecialchars($this->wrsqz_mathml_decode(trim($initialcasvalue)), ENT_COMPAT, "utf-8");
             $wirisquestion .= '</data>';

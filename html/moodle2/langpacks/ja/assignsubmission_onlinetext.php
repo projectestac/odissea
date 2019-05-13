@@ -45,5 +45,5 @@ $string['privacy:metadata:tablepurpose'] = 'それぞれの受験のテキスト
 $string['privacy:metadata:textpurpose'] = 'この課題の受験に提出された実テキストです。';
 $string['privacy:path'] = '提出テキストです。';
 $string['wordlimit'] = '語数制限';
-$string['wordlimitexceeded'] = 'この課題の語数制限は {$a->limit} 文字です。あなたは {$a->count} 語を提出しようとしています。あなたの提出をレビューした後、再度提出してください。';
-$string['wordlimit_help'] = 'オンラインテキスト提出が有効にされた場合、学生が提出することのできる最大語数です。';
+$string['wordlimitexceeded'] = 'この課題の語数制限は {$a->limit} 語です。あなたは {$a->count} 語を提出しようとしています。あなたの提出を見直して再度提出してください。';
+$string['wordlimit_help'] = 'オンラインテキスト提出が有効にされた場合、学生が提出できる最大語数です。';

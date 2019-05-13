@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['objectivescore'] = 'Εμφάνιση βαθμολογίας στόχο';
+$string['objectivescore'] = 'Εμφάνιση αντικειμενικού στόχου σκορ';
 $string['objectivex'] = 'Στόχος {$a}';
 $string['pluginname'] = 'Αναφορά στόχων';
-$string['score'] = 'βαθμολογία';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'Αν θα εμφανίζεται ο αντικειμενικός στόχος βαθμολογίας στην αναφορά SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Αριθμός χρηστών που θα εμφανίζονται στις αναφορές SCORM';
+$string['score'] = 'σκορ';
 $string['status'] = 'κατάσταση';

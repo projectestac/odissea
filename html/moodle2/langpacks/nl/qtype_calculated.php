@@ -115,6 +115,7 @@ $string['pluginnameediting'] = 'Berekende vraag bewerken';
 $string['pluginname_help'] = 'Met berekende vragen kun je unieke numerieke vragen maken door jokers tussen accolades te vervangen door getallen wanneer de test wordt afgenomen. Bijvoorbeeld de vraag: "Wat is de oppervlakte van een rechthoek met lengten {l} en breedte {b}?" heeft als juist antwoord de formule "{l}*{b}" (met * als vermenigvuldigingsteken).';
 $string['pluginnamesummary'] = 'Berekende vragen zijn als numerieke vragen, maar met de getallen tijdens de test willekeurig gekozen uit een vooraf opgestelde set.';
 $string['possiblehdr'] = 'Mogelijke jokertekens enkel in de vraagtekst aanwezig.';
+$string['privacy:metadata'] = 'De plug-in Calculated question type slaat geen persoonlijke gegevens op.';
 $string['questiondatasets'] = 'Vraag datasets';
 $string['questiondatasets_help'] = 'Vraag datasets met jokertekens die gebruikt zullen worden in elke individuele vraag';
 $string['questionstoredname'] = 'Opgeslagen vraagnaam';
@@ -132,7 +133,7 @@ $string['synchronize'] = 'Synchroniseer de gegevens van gedeelde datasets met an
 $string['synchronizeno'] = 'Niet synchroniseren';
 $string['synchronizeyes'] = 'Synchroniseer';
 $string['synchronizeyesdisplay'] = 'Synchroniseer en toon de gedeelde datasetsnaam als voorvoegsel van de vraagnaam';
-$string['tolerance'] = 'Tolerantie';
+$string['tolerance'] = 'Tolerantie ±';
 $string['tolerancetype'] = 'Type';
 $string['trueanswerinsidelimits'] = 'Juist antwoord: {$a->correct} binnen de limieten van waar-waarde {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">FOUT - Juist antwoord:{$a->correct} buiten limieten van waar-waarde {$a->true}</span';

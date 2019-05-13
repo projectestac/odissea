@@ -30,4 +30,5 @@ $string['createlink'] = 'Crea enllaç';
 $string['enterurl'] = 'Introdueix un URL';
 $string['openinnewwindow'] = 'Obre en una finestra nova';
 $string['pluginname'] = 'Enllaç';
+$string['privacy:metadata'] = 'El connector atto_link no emmagatzema cap dada personal.';
 $string['unlink'] = 'Suprimeix l\'enllaç';

@@ -34,4 +34,4 @@ $string['pluginname'] = 'Picasa';
 $string['privacy:metadata'] = 'Plugin honek datuak bidaltzen ditu lotutako kanpoko Picasa kontura. Ez du lokalki daturik biltzen.';
 $string['privacy:metadata:data'] = 'Portfolioaren azpisistemaren bitartez pasatako datu pertsonalak.';
 $string['secret'] = 'Sekretua';
-$string['sendfailed'] = '{$a} fitxategiak kale egiten du Picasa-ra eramatean';
+$string['sendfailed'] = '{$a} fitxategiak Picasa-ra bidaltzeak huts egin du';

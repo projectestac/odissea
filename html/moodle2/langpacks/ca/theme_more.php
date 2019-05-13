@@ -62,9 +62,9 @@ $string['invertdesc'] = 'Intercanvia el text i el fons de la barra de navegació
 $string['linkcolor'] = 'Color d\'enllaç';
 $string['linkcolor_desc'] = 'El color dels enllaços';
 $string['logo'] = 'Logotip';
-$string['logodesc'] = 'Si us plau carregueu el vostre logo personalitzat aquí si voleu afegir-lo a la capçalera.<br>
-Si l\'altura del del vostre logo és major que 75 píxels afegiu la següent regla CSS a la caixa de CSS personalitzat que hi ha a continuació.<br>
-a.logo {height: 100px;} o el que tingui d\'altura el logo.';
+$string['logodesc'] = 'Carregueu el vostre logotip personalitzat aquí si voleu afegir-lo a la capçalera.<br>
+Si l\'alçària del del vostre logotip és major que 75 píxels, afegiu la regla CSS següent a la caixa de CSS personalitzats que hi ha a continuació.<br>
+a.logo {height: 100px;} o el que faci d\'alçària el logotip.';
 $string['pluginname'] = 'More';
 $string['region-side-post'] = 'Dret';
 $string['region-side-pre'] = 'Esquerra';

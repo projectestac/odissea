@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configuración do tipo de repositorio URL';
 $string['download'] = 'Descargar';
 $string['pluginname'] = 'Descargador URL';
+$string['privacy:metadata'] = 'O engadido do repositorio de descargas de URL non almacena ou transmite datos persoais.';
 $string['rename'] = 'Nome';
 $string['url'] = 'URL';
 $string['url:view'] = 'Empregar o descargador URL no selector de ficheiros';

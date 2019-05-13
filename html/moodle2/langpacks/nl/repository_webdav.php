@@ -29,6 +29,7 @@ $string['configplugin'] = 'WebDAV configuratie';
 $string['http'] = 'HTTP';
 $string['https'] = 'HTTPS';
 $string['pluginname'] = 'WebDAV opslagruimte';
+$string['privacy:metadata'] = 'De WEBDAV opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
 $string['webdav'] = 'WebDAV';
 $string['webdavbasicauth'] = 'WebDAV basis authenticatie';
 $string['webdavdigestauth'] = 'WebDAV digest authenticatie';

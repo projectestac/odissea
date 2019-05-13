@@ -50,8 +50,14 @@ define('GEOGEBRA_UPDATE_STUDENT', 0);
 define('GEOGEBRA_UPDATE_TEACHER', 1);
 
 
-/** Include eventslib.php */
-require_once($CFG->libdir.'/eventslib.php');
+//
+// DEPRECATED IN MOODLE 3.6
+// See: https://docs.moodle.org/dev/Events_API
+//
+// /** Include eventslib.php */
+// require_once($CFG->libdir.'/eventslib.php');
+//
+
 /** Include formslib.php */
 require_once($CFG->libdir.'/formslib.php');
 /** Include calendar/lib.php */
@@ -398,7 +404,7 @@ function geogebra_grade_item_update(stdClass $geogebra, $grades=NULL) {
 
     $params = array();
     $params['itemname'] = clean_param($geogebra->name, PARAM_NOTAGS);
-    if (empty($jclic->cmidnumber)) {
+    if (empty($geogebra->cmidnumber)) {
         $cm = get_coursemodule_from_instance('geogebra', $geogebra->id, $geogebra->course, false, MUST_EXIST);
         $geogebra->cmidnumber = $cm->idnumber;
     }

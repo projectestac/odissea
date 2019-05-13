@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Надстрочный индекс';
+$string['privacy:metadata'] = 'Плагин atto_superscript не хранит никаких персональных данных.';

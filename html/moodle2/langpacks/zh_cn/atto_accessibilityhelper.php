@@ -32,5 +32,6 @@ $string['noimages'] = '无图片';
 $string['nolinks'] = '无链接';
 $string['nostyles'] = '无样式';
 $string['pluginname'] = '屏幕阅读器帮助';
+$string['privacy:metadata'] = 'atto_accessibilityhelper 插件不储存任何私人数据。';
 $string['selectimage'] = '选择图片';
 $string['selectlink'] = '选择链接';

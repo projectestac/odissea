@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regola di accesso quiz Safe Exam Browser';
+$string['privacy:metadata'] = 'Il plugin \'Regola di accesso quiz Safe Exam Browser\' non memorizza dati personali.';
 $string['requiresafeexambrowser'] = 'Safe Exam Browser';
 $string['safebrowsererror'] = 'Il quiz è stato configurato per essere eseguito solamente utilizzando Safe Exam Browser. Non è possibile eseguirlo con un browser web standard.';
 $string['safebrowsernotice'] = 'Il quiz è stato configurato affinché gli studenti possano eseguirlo solamente utilizzando Safe Exam Browser.';

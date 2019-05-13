@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Gedrag voor informatieve items';
+$string['privacy:metadata'] = 'De informatieve items vraaggedrag-plugin bewaart geen persoonlijke gegevens.';
 $string['seen'] = 'Gezien';

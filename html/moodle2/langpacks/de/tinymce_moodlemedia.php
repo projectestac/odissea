@@ -29,4 +29,4 @@ $string['moodlemedia:browsemedia'] = 'Audio, Video oder Applet wählen';
 $string['moodlemedia:desc'] = 'Medien einfügen';
 $string['nopreview'] = 'Keine Medienvorschau möglich';
 $string['pluginname'] = 'Medien einfügen';
-$string['privacy:metadata'] = 'Das Moodle Media TinyMCE-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Moodle Media TinyMCE-Plugin speichert keine personenbezogenen Daten';

@@ -52,8 +52,8 @@ $string['pluginname_help'] = 'Repositório em flickr.com';
 $string['privacy:metadata:repository_flickr_public'] = 'O módulo repositório publico Flickr não armazena dados pessoais, mais transmite dados do utilizador do
 Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_flickr_public:author'] = 'Conteúdo de autor do repositório público Flickr';
-$string['privacy:metadata:repository_flickr_public:email_address'] = 'Endereço de email do utilizador do repositório público Flickr.';
-$string['privacy:metadata:repository_flickr_public:text'] = 'Pesquisa de texto do utilizador no repositório Público Flickr.';
+$string['privacy:metadata:repository_flickr_public:email_address'] = 'Endereço de e-mail do utilizador do repositório público Flickr.';
+$string['privacy:metadata:repository_flickr_public:text'] = 'Pesquisa de texto no repositório Flickr público do utilizador.';
 $string['privacy:metadata:repository_flickr_public:user_id'] = 'O ID de utilizador do repositório público Flickr.';
 $string['remember'] = 'Manter sessão';
 $string['secret'] = 'Senha';

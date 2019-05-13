@@ -47,7 +47,7 @@ $string['certainty2'] = 'C=2 (Mitjana: > 67%)';
 $string['certainty3'] = 'C=3 (Força segur: > 80%)';
 $string['certainty_help'] = 'L\'avaluació basada en la certesa requereix que indiqueu el grau de confiança que teniu en la vostra resposta. Els nivells disponibles són:
 
-Nivell de Certesa         | C = 1 (Indecís)  | C = 2 (Mig)   | C = 3 (Força segur)
+Nivell de Certesa         | C = 1 (Indecís)  | C = 2 (Mitjà)   | C = 3 (Força segur)
 --------------------------| ---------------- | ------------- | -------------------
 Puntuació si la resposta és correcta  |        1         |       2       |       3
 Puntuació si és errònia      |        0         |      -2       |      -6

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Отложенный отзыв';
+$string['privacy:metadata'] = 'Плагин «Режим поведения вопросов - отложенный отзыв» не хранит никаких персональных данных.';

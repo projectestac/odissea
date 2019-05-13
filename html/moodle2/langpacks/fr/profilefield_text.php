@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Saisie de texte';
-$string['privacy:metadata:profilefield_text:data'] = 'Les données utilisateurs enregistrées.';
-$string['privacy:metadata:profilefield_text:dataformat'] = 'Le format des données utilisateurs enregistrées.';
-$string['privacy:metadata:profilefield_text:fieldid'] = 'L\'identifiant du champ de profil.';
-$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Des informations utilisateur additionnelles sont enregistrées ici.';
-$string['privacy:metadata:profilefield_text:userid'] = 'L\'identifiant de l\'utilisateur dont les données sont enregistrées par le plugin Saisie de texte.';
+$string['privacy:metadata:profilefield_text:data'] = 'Données du champ de profil utilisateur Saisie de texte';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'Le format des données du champ de profil utilisateur Saisie de texte';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'L\'identifiant du champ de profil';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Informations de profil additionnelles';
+$string['privacy:metadata:profilefield_text:userid'] = 'L\'identifiant de l\'utilisateur dont les données sont enregistrées par le champ de profil Saisie de texte';

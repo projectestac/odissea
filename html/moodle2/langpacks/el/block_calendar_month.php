@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = 'Προσθήκη νέου μπλοκ ημερολόγιο';
-$string['calendar_month:myaddinstance'] = 'Προσθήκη νέου μπλοκ ημερολόγιο στην σελίδα Η αρχική μου';
+$string['calendar_month:myaddinstance'] = 'Προσθήκη νέου μπλοκ ημερολογίου στο Ταμπλό';
 $string['pluginname'] = 'Ημερολόγιο';
+$string['privacy:metadata'] = 'Το μπλοκ Ημερολόγιο εμφανίζει μόνο τα διαθέσιμα δεδομένα ημερολογίου.';

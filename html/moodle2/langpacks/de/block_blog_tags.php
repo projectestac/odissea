@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_tags:addinstance'] = 'Block \'Blogschlagwörter\' hinzufügen';
+$string['blog_tags:addinstance'] = 'Neuen Block \'Blog-Tags\' hinzufügen';
 $string['pluginname'] = 'Blogschlagwörter';
 $string['privacy:metadata'] = 'Der Block Blogschlagwörter zeigt nur Daten an, die an anderen Orten gespeichert sind.';

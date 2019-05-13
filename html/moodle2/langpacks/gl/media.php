@@ -25,10 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['audioextensions'] = 'Son: {$a}';
+$string['defaultheight'] = 'Altura predeterminada';
+$string['defaultheightdesc'] = 'Altura do reprodutor multimedia se non se especifica un alto e o reprodutor non pode determinar a altura do ficheiro multimedia real.';
+$string['defaultwidth'] = 'Largura predeterminada';
+$string['defaultwidthdesc'] = 'Largura do reprodutor multimedia se non se especifica un largo e o reprodutor non pode determinar a largura do ficheiro multimedia real.';
+$string['extensions'] = 'Extensións: {$a}';
 $string['legacyheading'] = 'Reprodutores multimedia legados';
 $string['legacyheading_desc'] = 'Estes reprodutores non se empregan con frecuencia na web e requiren engadidos do navegador que apenas están difundidos.';
+$string['managemediaplayers'] = 'Xestionar reprodutores multimedia';
 $string['mediaformats'] = 'Reprodutores dispoñíbeis dispoñíbeis';
 $string['mediaformats_desc'] = 'Cando están activados os reprodutores nesta configuración, Os ficheiros poden integrarse empregando o filtro de multimedia (se está activado) ou empregando un recurso de ficheiro ou URL coa opción de integrar. Cando non está activado, estes formatos no se poden integrar e os usuarios terán que descargar ou seguir as ligazóns a estes recursos.
 
 As veces dous reprodutores aceptan o mesmo formato, o que aumenta a compatibilidade con diferentes dispositivos tales como teléfonos móbiles. É posible aumentar aínda máis a compatibilidade fornecendo ficheiros en diferentes formatos para o son ou para fragmentos de vídeo.';
 $string['mediasettings'] = 'Multimedia integrada';
+$string['privacy:metadata'] = 'A incrustación de medios non almacena ningún dato persoal.';
+$string['supports'] = 'Compatibilidade';
+$string['videoextensions'] = 'Vídeo: {$a}';

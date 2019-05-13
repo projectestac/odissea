@@ -25,10 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowadditionalcssclasses'] = 'Επιτρέψτε επιπρόσθετες κλάσεις CSS';
+$string['configallowadditionalcssclasses'] = 'Προσθέτει μια επιλογή ρυθμίσεων σε στιγμιότυπα μπλοκ HTML που επιτρέπουν την επιλογή επιπρόσθετων κλάσεων CSS.';
+$string['configclasses'] = 'Επιπρόσθετες κλάσεις CSS';
+$string['configclasses_help'] = 'Σκοπός αυτών των ρυθμίσεων είναι να βοηθήσουν με τα θέματα βοηθώντας τη διάκριση των μπλοκ HTML μεταξύ τους. Οποιεσδήποτε κλάσεις CSS που εισάγονται εδώ (με κενό ως διαχωριστικό) θα προσαρτηθούν στις προεπιλεγμένες κλάσεις του μπλοκ.';
 $string['configcontent'] = 'Περιεχόμενο';
 $string['configtitle'] = 'Τίτλος μπλοκ';
 $string['html:addinstance'] = 'Προσθήκη νέου μπλοκ HTML';
-$string['html:myaddinstance'] = 'Προσθήκη νέου μπλοκ HTML στη σελίδα Η αρχική μου';
+$string['html:myaddinstance'] = 'Προσθήκη νέου μπλοκ HTML στο Ταμπλό';
 $string['leaveblanktohide'] = 'Αφήστε κενό αυτό το πεδίο για να μην εμφανίζεται τίτλος';
 $string['newhtmlblock'] = '(Νέο μπλοκ HTML)';
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata:block'] = 'Το μπλοκ HTML αποθηκεύει όλα τα δεδομένα του στο υποσύστημα μπλοκ.';
+$string['search:content'] = 'Περιεχόμενο μπλοκ HTML';

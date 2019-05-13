@@ -39,6 +39,6 @@ $string['pluginname'] = 'ファイルシステム';
 $string['pluginname_help'] = 'ローカルディレクトリからリポジトリを作成する';
 $string['privacy:metadata'] = 'ファイルシステムリポジトリプラグインはどのような個人データも保存または転送しません。';
 $string['relativefiles'] = '相対ファイルを許可する';
-$string['relativefiles_desc'] = 'リポジトリのファイルすべてに対して、相対リンクでアクセスできるようにします。';
+$string['relativefiles_desc'] = 'ここではリポジトリ内のすべてのファイルに相対リンクを使用してアクセスできるようにします。';
 $string['root'] = 'ルート';
 $string['searchresults'] = '検索結果';

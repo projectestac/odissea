@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['feedback'] = 'Ανατροφοδότηση';
 $string['feedback:addinstance'] = 'Προσθήκη νέου μπλοκ ανατροφοδότηση';
 $string['pluginname'] = 'Ανατροφοδότηση';
+$string['privacy:metadata'] = 'Το μπλοκ Ανατροφοδότηση εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';

@@ -141,14 +141,14 @@ $string['modified'] = 'Modificat';
 $string['modulename'] = 'Wiki';
 $string['modulename_help'] = 'El mòdul d\'activitat wiki permet als participants afegir i editar una col·lecció de pàgines web. Un wiki pot ser de col·laboració, on tothom té la possibilitat d\'editar, o individual, on cadascú té el seu propi wiki que només ell/a poden editar.
 
-Es manté un historial de les versions anteriors de cada pàgina en el wiki, que enumera les edicions realitzades per cada participant.
+Es conserva un historial de les versions anteriors de cada pàgina en el wiki, que enumera les edicions realitzades per cada participant.
 
 Els wikis tenen molts usos, com ara:
 
 * Per a les notes de classe de grup o guies d\'estudi
 * Perquè els membres de la facultat planifiquin un esquema de treball o una reunió junts
 * Perquè els estudiants col·laborin i facin un llibre en línia, o creïn continguts en un tema establert pel seu tutor
-* Per a la creació poètica, on cada participant escriu una línia o vers *
+* Per a la creació poètica, on cada participant escriu una línia o un vers
 * Com un diari personal per a les notes dels exàmens o la revisió (utilitzant un wiki individual)';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navegació';

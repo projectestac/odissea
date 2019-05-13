@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Не завершено';
 $string['pluginname'] = 'Немедленный отзыв';
+$string['privacy:metadata'] = 'Плагин «Режим поведения вопросов - немедленный отзыв» не хранит никаких персональных данных.';

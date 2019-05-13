@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventreportviewed'] = 'Rapport de participation consulté';
-$string['nologreaderenabled'] = 'Aucun lecteur d\'historiques activé';
+$string['nologreaderenabled'] = 'Aucun lecteur journaux activé';
 $string['page-report-participation-index'] = 'Rapport de participation au cours';
 $string['page-report-participation-x'] = 'Tout rapport de participation';
 $string['participation:view'] = 'Consulter le rapport de participation au cours';

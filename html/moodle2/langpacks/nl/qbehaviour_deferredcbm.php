@@ -65,6 +65,7 @@ $string['judgementsummary'] = 'Antwoorden: {$a->responses}. Nauwkeurigheid: {$a-
 $string['noquestions'] = 'Geen antwoorden';
 $string['overconfident'] = 'teveel zelfvertrouwen';
 $string['pluginname'] = 'Uitgestelde feedback met CBM';
+$string['privacy:metadata'] = 'De uitgestelde feedback met CBM vraaggedrag-plugin bewaart geen persoonlijke gegevens.';
 $string['slightlyoverconfident'] = 'een beetje veel zelfvertrouwen';
 $string['slightlyunderconfident'] = 'een beetje weinig zelfvertrouwen';
 $string['underconfident'] = 'te weinig zelfvertrouwen';

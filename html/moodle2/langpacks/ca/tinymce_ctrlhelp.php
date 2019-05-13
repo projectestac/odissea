@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ctrlhelp:desc'] = 'CTRL + botó dret per cercar més opcions';
 $string['pluginname'] = 'CTRL + botó dret per cercar ajuda';
+$string['privacy:metadata'] = 'El connector Ctrl+right TinyMCE no emmagatzema cap dada personal.';

@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'Ongeldige context gegeven.';
 $string['noitemsinbin'] = 'Er zit niets in de prullenbak.';
 $string['notenabled'] = 'Sorry, maar de prullenbak is uitgeschakeld door de beheerder.';
 $string['pluginname'] = 'Prullenbak';
+$string['privacy:metadata'] = 'De prullenbak-plugin bewaart geen persoonlijke gegevens.';
 $string['recyclebin:deleteitems'] = 'Verwijder items uit de prullenbak';
 $string['recyclebin:restoreitems'] = 'Zet items in de prullenbak terug';
 $string['recyclebin:viewitems'] = 'Bekijk inhoud prullenbak';

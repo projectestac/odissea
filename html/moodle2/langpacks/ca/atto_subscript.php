@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subíndex';
+$string['privacy:metadata'] = 'El connector atto_subscript no emmagatzema cap dada personal.';

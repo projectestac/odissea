@@ -39,6 +39,7 @@ $string['invalidupdatetype'] = 'Je kunt deze optie niet selecteren met het gekoz
 $string['invaliduserdata'] = 'Ongeldige gegevens ontdekt voor gebruiker {$a} en automatisch opgeschoond.';
 $string['nochanges'] = 'Geen wijzigingen';
 $string['pluginname'] = 'Gebruiker upload';
+$string['privacy:metadata'] = 'De upload gebruikers-plugin bewaart geen persoonlijke gegevens.';
 $string['renameerrors'] = 'Fouten in hernoemen';
 $string['requiredtemplate'] = 'Vereist. Je kunt hier sjabloonsyntax gebruiken (%l = achternaam, %f = voornaam, %u = gebruikersnaam). Bekijk het helpbestand voor details en voorbeelden.';
 $string['rowpreviewnum'] = 'Voorbeeld rijen';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Feld für Mehrfachauswahl (Checkboxen)';
 $string['pluginname'] = 'Mehrfachauswahl';
-$string['privacy:metadata'] = 'Die Checkboxfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Checkboxfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

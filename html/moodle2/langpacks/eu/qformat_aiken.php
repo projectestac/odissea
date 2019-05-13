@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Aiken formatua';
 $string['pluginname_help'] = 'Hau formatu erraza da aukera anitzeko galderak inportatzeko testu-fitxategi batetik.';
 $string['privacy:metadata'] = 'Aiken formatua galdera-formatu pluginak ez du datu pertsonalik biltzen.';
+$string['questionmissinganswers'] = 'Galderak gutxienez bi erantzun online izan behar ditu {$a}';
+$string['questionnotcomplete'] = 'Galdera ez da bete hurrengo galdera online hasi aurretik {$a}';
+$string['questionnotstarted'] = 'Oraindik hasi gabeko online galdera {$a}';

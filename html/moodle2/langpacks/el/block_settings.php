@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['enabledock'] = 'Να επιτρέπεται ο χρήστης να προσθέσει αυτό το μπλοκ';
+$string['enabledock'] = 'Να επιτρέπεται ο χρήστης να ελαχιστοποιήσει πλευρικά αυτό το μπλοκ';
 $string['pluginname'] = 'Διαχείριση';
+$string['privacy:metadata'] = 'Το μπλοκ διαχείρισης εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
 $string['settings:addinstance'] = 'Προσθέστε νέο μπλοκ διαχείρισης';
+$string['settings:myaddinstance'] = 'Προσθήκη νέου μπλοκ διαχείριση στο Ταμπλό';

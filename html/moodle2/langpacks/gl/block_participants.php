@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['participants:addinstance'] = 'Engadir un novo bloque de xente';
 $string['pluginname'] = 'Persoas';
+$string['privacy:metadata'] = 'O bloque de persoas só amosa datos almacenados noutros lugares.';

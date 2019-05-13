@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Переключатель';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'ID пользователя, данные которого хранятся в поле «Переключатель» профиля пользователя';

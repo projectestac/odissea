@@ -42,7 +42,7 @@ $string['addquizchain_help'] = 'Cal afegir tots els qüestionaris de la cadena d
 
 Si el fitxer font és una **carpeta**, tots els qüestionaris reconeixibles de la carpeta s\'afegiran al curs per formar una cadena de qüestionaris amb paràmetres idèntics.
 
-Si el fitxer font és un **fitxer unitat**, com per exemple un fitxer Hot Potatoes o un index.html, els qüestionaris llistats en la unitat s\'afegiran al curs com una cadena de qüestionaris amb paràmetres idèntics.';
+Si el fitxer font és un **fitxer unitat**, com per exemple un fitxer Hot Potatoes o un index.html, els qüestionaris enumerats en la unitat s\'afegiran al curs com una cadena de qüestionaris amb paràmetres idèntics.';
 $string['allowpaste'] = 'Permet enganxar';
 $string['allowpaste_help'] = 'Si aquest paràmetre està activat, l\'estudiant podrà copiar i enganxar text als quadres d\'edició..';
 $string['allowreview'] = 'Permet la revisió';
@@ -65,13 +65,13 @@ $string['cacherecords'] = 'Registres de la memòria cau HotPot';
 $string['canrestarthotpot'] = 'Els resultats d\'ara es desaran i podreu tornar a fer "{$a}" més tard.';
 $string['canresumehotpot'] = 'Els resultats d\'ara es desaran i podreu reprendre "{$a}" més tard.';
 $string['checks'] = 'Comprova';
-$string['checksomeboxes'] = 'Si us plau marqueu algunes quadres';
+$string['checksomeboxes'] = 'Marqueu algunes quadres';
 $string['clearcache'] = 'Neteja la memòria cau dels HotPot';
 $string['cleardetails'] = 'Neteja els detalls HotPot';
 $string['clearedcache'] = 'S\'ha esborrat la memòria cau';
 $string['cleareddetails'] = 'S\'han esborrat els detalls HotPot';
 $string['clickreporting'] = 'Habilita els informes dels clics';
-$string['clickreporting_help'] = 'Si s\'habilita, es guarda un registre separat cada vegada que es clica damunt d\'un botó de «pista» o «comprova». Això permet al professor veure un informe molt detallat de l\'estat del qüestionari a cada clic. Altrament només es guardarà un registre per cada intent del qüestionari.';
+$string['clickreporting_help'] = 'Si s\'habilita, es conserva un registre separat cada vegada que es clica damunt d\'un botó de «pista» o «comprova». Això permet al professor veure un informe molt detallat de l\'estat del qüestionari a cada clic. Altrament, només es conservarà un registre per cada intent del qüestionari.';
 $string['clicktrailreport'] = 'Rastres dels clics';
 $string['closed'] = 'L\'activitat està tancada';
 $string['clues'] = 'Pistes';
@@ -80,10 +80,10 @@ $string['configbodystyles'] = 'Per defecte, els estils de tema Moodle es sobrepo
 $string['configenablecache'] = 'Mantenir una memòria cau de qüestionaris HotPot pot augmentar dramàticament la velocitat de lliurament dels qüestionaris als estudiants.';
 $string['configenablecron'] = 'Especifiqueu a quines hores de la vostra zona horària es pot executar l\'script del cron del Hot Potatoes';
 $string['configenablemymoodle'] = 'Aquest paràmetre controla si els qüestionaris Hot Potatoes es llisten a la pàgina de MyMoodle o no';
-$string['configenableobfuscate'] = 'La ofuscació de codi javascript per inserir reproductors multimèdia fa més difícil determinar el nom de fitxer i provar d\'esbrinar que conté.';
+$string['configenableobfuscate'] = 'L\'ofuscació de codi JavasScript per inserir reproductors multimèdia fa més difícil determinar el nom de fitxer i provar d\'esbrinar què conté.';
 $string['configenableswf'] = 'Permet la incrustació de fitxers SWF en les activitats HotPot. Si s\'habilita, aquest paràmetre sobreescriurà el filter_mediaplugin_enable_swf.';
 $string['configfile'] = 'Fitxer de configuració';
-$string['configframeheight'] = 'Quan un qüestionari es visualitza dins d\'un marc, aquest valor és l\'alçada (en píxels) del marc superior que conté la barra de navegació del Moodle.';
+$string['configframeheight'] = 'Quan un qüestionari es visualitza dins d\'un marc, aquest valor és l\'alçària (en píxels) del marc superior que conté la barra de navegació de Moodle.';
 $string['configlocation'] = 'Localització del fitxer de configuració';
 $string['configlockframe'] = 'Si aquest paràmetre s\'habilita, quan s\'utilitzi el marc de navegació es blocarà per que sigui no desplaçable, no redimensionable i no tingui vora.';
 $string['configmaxeventlength'] = 'Si el HotPot té especificades alhora una data d\'obertura i una data de tancament, i la diferencia entre els dues dates és més gran que el nombre de dies especificat aquí, llavors s\'afegiran al calendari del curs dos esdeveniments separats en el calendari .
@@ -127,7 +127,7 @@ $string['d_index'] = 'Índex de discriminació';
 $string['duration'] = 'Durada';
 $string['enablecache'] = 'Habilita la memòria cau del HotPot';
 $string['enablecron'] = 'Habilita el cron del HotPot';
-$string['enablemymoodle'] = 'Mostra HotPots en El Meu Moodle';
+$string['enablemymoodle'] = 'Mostra HotPots en El meu Moodle';
 $string['enableobfuscate'] = 'Habilita l\'ofuscació del codi del reproductor multimèdia';
 $string['enableswf'] = 'Permet incrustar fitxers SWF a les activitats HotPot';
 $string['entry_attempts'] = 'Intents';
@@ -150,13 +150,13 @@ $string['entry_grading'] = 'S\'està qualificant';
 $string['entryhotpotcourse'] = 'HotPot previ en aquest curs';
 $string['entryhotpotsection'] = 'HotPot previ en aquesta secció de curs';
 $string['entryoptions'] = 'Opcions de la pàgina d\'entrada';
-$string['entryoptions_help'] = 'Aquesta casella de selecció habilita i deshabilita la visualització dels elements de la pàgina d\'entrada de HotPot.
+$string['entryoptions_help'] = 'Aquesta casella de selecció habilita i inhabilita la visualització dels elements de la pàgina d\'entrada de HotPot.
 
 ** Nom de la unitat com a títol**
 : Si s\'habilita, a la pàgina d\'entrada es mostrarà el nom de la unitat com a títol.
 
 **Qualificació**
-: Si s\'habilita, a la pàgina d\'entrada  es mostrarà la informació de qualificació de HotPot.
+: Si s\'habilita, a la pàgina d\'entrada es mostrarà la informació de qualificació de HotPot.
 
 **Dates**
 : Si s\'habilita, a la pàgina d\'entrada es mostraran les dates de començament i acabament.
@@ -181,39 +181,39 @@ $string['exit_attemptscore'] = 'La puntuació per aquest intent ha estat de {$a}
 $string['exitcm'] = 'Activitat següent';
 $string['exitcmcourse'] = 'Activitat següent en aquest curs';
 $string['exitcm_help'] = 'Aquest paràmetre especifica una activitat de Moodle a fer després que el Quizport s\'hagi completat.
-El professor pot seleccionar una activitat específica o una dels següents paràmetres d\'àmbit general:
+El professor pot seleccionar una activitat específica o una dels paràmetres següents d\'àmbit general:
 
 * Activitat següent en aquest curs
 * Activitat següent en aquesta secció
 * HotPot següent en aquest curs
 * HotPot següent en aquest secció
 
-Si s\'han deshabilitat altres opcions de la pàgina de sortida, l\'estudiant anirà directe a la següent activitat. Altrament l\'estudiant veurà un enllaç cap a la següent activitat quan estigui a punt.';
+Si s\'han inhabilitat altres opcions de la pàgina de sortida, l\'estudiant anirà directament a l\'activitat següent. Altrament, l\'estudiant veurà un enllaç cap a l\'activitat següent quan estigui a punt.';
 $string['exitcmsection'] = 'Activitat següent en aquesta secció del curs';
 $string['exit_course'] = 'Curs';
 $string['exit_course_text'] = 'Retorna a la pàgina principal del curs';
 $string['exit_encouragement'] = 'Encoratjament';
 $string['exit_excellent'] = 'Excel·lent!';
 $string['exit_feedback'] = 'Surt de la pàgina de retroacció';
-$string['exit_feedback_help'] = 'Aquestes opcions habiliten i deshabiliten la visualització d\'elements de retroacció en la pàgina de sortida de HotPot.
+$string['exit_feedback_help'] = 'Aquestes opcions habiliten i inhabiliten la visualització d\'elements de retroacció en la pàgina de sortida de HotPot.
 
 ** Nom de la unitat com a títol**
-: Si s\'habilita es mostrarà el nom de la unitat com a títol de la pàgina.
+: Si s\'habilita, es mostrarà el nom de la unitat com a títol de la pàgina.
 
 **Encoratjament**
-: Si s\'habilita es mostrarà a la pàgina alguna mena d\'encoratjament. Aquest dependrà de la qualificació HotPot:
+: Si s\'habilita, es mostrarà a la pàgina alguna mena d\'encoratjament. Aquest dependrà de la qualificació HotPot:
 : **> 90%**: Excel·lent!
 : **> 60%**: Ben fet
 : **> 0%**: Bon intent
 : **= 0%**: Esteu bé?
 
 **Qualificació de l\'intent de la unitat**
-: Si s\'habilita es mostrarà la qualificació per l\'intent de la unitat que s\'acaba de completar a la pàgina de sortida.
+: Si s\'habilita, es mostrarà la qualificació per a l\'intent de la unitat que s\'acaba de completar a la pàgina de sortida.
 
 **Qualificació de la unitat**
-: Si s\'habilita es mostrarà la qualificació HotPot a la pàgina de sortida.
+: Si s\'habilita, es mostrarà la qualificació HotPot a la pàgina de sortida.
 
-A més a més, si el mètode de qualificació de la unitat és «el més gran», es mostrarà a l\'usuari un missatge per informar-lo de si l\'intent més recent ha sigut igual o millor al seu intent previ.';
+A més a més, si el mètode de qualificació de la unitat és «el més gran», es mostrarà a l\'usuari un missatge per informar-lo de si l\'intent més recent ha estat igual o millor que el seu intent previ.';
 $string['exit_goodtry'] = 'Bon intent!';
 $string['exitgrade'] = 'Puntuació de l\'activitat següent';
 $string['exit_grades'] = 'Notes';
@@ -229,7 +229,7 @@ $string['exithotpotsection'] = 'Hot Potatoes següent en aquesta secció del cur
 $string['exit_index'] = 'Índex';
 $string['exit_index_text'] = 'Aneu a l\'índex d\'activitats';
 $string['exit_links'] = 'Enllaços de la pàgina de sortida';
-$string['exit_links_help'] = 'Aquestes opcions habiliten i deshabiliten la visualització de certs enllaços de navegació en la pàgina de sortida de HotPot.
+$string['exit_links_help'] = 'Aquestes opcions habiliten i inhabiliten la visualització de certs enllaços de navegació a la pàgina de sortida de HotPot.
 
 **Reintenta**
 : Si estan permesos múltiples intents per aquest HotPot i l\'estudiant encara disposa d\'alguns intents, es mostrarà un enllaç per permetre a l\'estudiant reintentar el HotPot.
@@ -238,12 +238,12 @@ $string['exit_links_help'] = 'Aquestes opcions habiliten i deshabiliten la visua
 : Si s\'habilita es mostrarà un enllaç a la pàgina índex de HotPot.
 
 **Curs**
-: Si s\'habilita es mostrarà un enllaç a la pàgina de curs del Moodle.
+: Si s\'habilita es mostrarà un enllaç a la pàgina de curs de Moodle.
 
 **Qualificacions**
 : Si s\'habilita es mostrarà un enllaç al llibre de qualificacions de Moodle.';
 $string['exit_next'] = 'Següent';
-$string['exit_next_text'] = 'Intenta la següent activitat';
+$string['exit_next_text'] = 'Intenta l\'activitat següent';
 $string['exit_noscore'] = 'Heu completat l\'activitat amb èxit!';
 $string['exitoptions'] = 'Opcions de la pàgina de sortida';
 $string['exitpage'] = 'Mostra la pàgina de sortida';
@@ -294,9 +294,9 @@ $string['highestscore'] = 'Qualificació més alta';
 $string['hints'] = 'Suggeriments';
 $string['hotpot:addinstance'] = 'Afegeix una activitat del Hot Potaotes';
 $string['hotpot:attempt'] = 'Realitzar un qüestionari Hot Potatoes i entregar els resultats';
-$string['hotpot:deleteallattempts'] = 'Esborrar tots els intents de l\'usuari en el Hot Potatoes';
-$string['hotpot:deletemyattempts'] = 'Esborrar els intents propis del Hot Potatoes';
-$string['hotpot:ignoretimelimits'] = 'Ignorar la limitació de temps en el Hot Potatoes';
+$string['hotpot:deleteallattempts'] = 'Esborra tots els intents de l\'usuari en el Hot Potatoes';
+$string['hotpot:deletemyattempts'] = 'Esborra els intents propis del Hot Potatoes';
+$string['hotpot:ignoretimelimits'] = 'Ignorar la limitació de temps en una activitat HotPot';
 $string['hotpot:manage'] = 'Actualitzar la configuració de Hot Potatoes';
 $string['hotpotname'] = 'Nom de l\'activitat de Hot Potatoes';
 $string['hotpot:preview'] = 'Previsualitzar una activitat de Hot Potatoes';
@@ -316,11 +316,11 @@ $string['mediafilter_moodle'] = 'Filtres multimèdia estàndard de Moodle';
 $string['migratingfiles'] = 'S\'estan migrant els fitxers del qüestionari Hot Potatoes';
 $string['missingsourcetype'] = 'Al registre de Hot Potatotes manca el tipus d\'origen';
 $string['modulename'] = 'Qüestionari Hot Potatoes';
-$string['modulename_help'] = 'El mòdul HotPot permet al professorat distribuir materials d\'aprenentatge interactius als seus estudiants a través de Moodle i veure informes sobre les respostes i els resultats dels estudiants.
+$string['modulename_help'] = 'El mòdul HotPot permet als professors distribuir materials d\'aprenentatge interactius als seus estudiants a través de Moodle, i veure informes sobre les respostes i els resultats dels estudiants.
 
 Una activitat Hot Potatoes comprèn una pàgina opcional d\'entrada, un exercici d\'aprenentatge i una pàgina de sortida opcional.
 
-L\'exercici d\'aprenentatge pot ser una pàgina web estàtica o una pàgina web interactiva que ofereix text, àudio i vídeo a l\'alumnat i registra les seves respostes. L\'exercici d\'aprenentatge es crea a l\'ordinador del professorat utilitzant el programari de creació Hot Potatoes i després es puja a Moodle. Una activitat Hot Potatoes pot gestionar exercicis creats amb un d\'aquests programaris  d\'autoria:
+L\'exercici d\'aprenentatge pot ser una pàgina web estàtica o una pàgina web interactiva que ofereix text, àudio i vídeo als alumnes i en registra les respostes. L\'exercici d\'aprenentatge es crea a l\'ordinador del professor utilitzant el programari de creació Hot Potatoes i després es puja a Moodle. Una activitat Hot Potatoes pot gestionar exercicis creats amb un d\'aquests programaris  d\'autoria:
 * Hot Potatoes (versió 6)
 * Qedoc
 * Xerte
@@ -443,41 +443,41 @@ $string['showerrormessage'] = 'Hot Potatoes error: {$a}';
 $string['sourcefile'] = 'Nom del fitxer font';
 $string['sourcefile_help'] = 'Aquest paràmetre especifica el fitxer el contingut del qual es mostrarà als estudiants.
 
-Normalment el fitxer font s\'ha creat fora de Moodle, i pujat a l\'àrea de fitxers del curs de Moodle.
+Normalment el fitxer font s\'ha creat fora de Moodle, i després s\'ha pujat a l\'àrea de fitxers del curs de Moodle.
 
-Pot ser un fitxer html, o pot ser un altre tipus de fitxer que hagi sigut creat amb programari d\'autoria com Hot Patatoes o Qedoc.
+Pot ser un fitxer HTML, o pot ser un altre tipus de fitxer que hagi estat creat amb programari d\'autoria, com Hot Patatoes o Qedoc.
 
-El fitxer font pot ser especificat com una carpeta i el camí a l\'àrea del curs de Moodle, o pot ser una url que comenci amb http:// or https://
+El fitxer font pot ser especificat com una carpeta i el camí a l\'àrea del curs de Moodle, o pot ser un URL que comenci amb http:// or https://
 
-Per als materials de Qedoc, el fitxer font pot ser la url del mòdul Qedoc que ha sigut pujat al servidor Qedoc.
+Per als materials de Qedoc, el fitxer font pot ser l\'URL del mòdul Qedoc que ha estat pujat al servidor Qedoc.
 
 *exemple: http://www.qedoc.net/library/ABCDE_123.zip
 
-* Per cercar més informació sobre com carregar els mòduls Qedoc mireu: [Documentació Qedoc: Carregat de mòduls](http://www.qedoc.org/en/index.php?title=Uploading_modules)';
+* Per cercar més informació sobre com es carreguen els mòduls Qedoc, vegeu: [Documentació Qedoc: Carregat de mòduls](http://www.qedoc.org/en/index.php?title=Uploading_modules)';
 $string['sourcefilenotfound'] = 'No s\'ha trobat el fitxer font (o buit): {$a}';
 $string['status'] = 'Estat';
 $string['stopbutton'] = 'Mostra el botó atura';
-$string['stopbutton_help'] = 'Si aquesta opció està activada, s\'insereix un botó d\'aturada a la pàgina de la pregunta. Si un estudiant fa clic al botó d\'aturada, els resultats del moment es desen al Moodle i l\'estat de l\'intent de  s\'ajustarà a abandonat.
+$string['stopbutton_help'] = 'Si aquesta opció està activada, s\'insereix un botó d\'aturada a la pàgina de la pregunta. Si un estudiant fa clic al botó d\'aturada, els resultats del moment es desen a Moodle i l\'estat de l\'intent quedarà configurat com a abandonat.
 
-El text que es mostra al botó d\'aturada pot ser una de les frases predefinides dels paquets d\'idioma del Moodle, o el professorat pot especificar el text que s\'hi mostrarà.';
+El text que es mostra al botó d\'aturada pot ser una de les frases predefinides dels paquets d\'idioma de Moodle, o pot ser un text determinat pel professor.';
 $string['stopbutton_langpack'] = 'Del paquet d\'idioma';
 $string['stopbutton_specific'] = 'Utilitza el text específic';
 $string['stoptext'] = 'Text del botó atura';
 $string['storedetails'] = 'Emmagatzema la fila XML amb els detalls dels intents del qüestionari HotPot';
 $string['studentfeedback'] = 'Retroacció de l\'estudiant';
-$string['studentfeedback_help'] = 'Si s\'habilita un enllaç a finestra emergent amb retroacció es mostrarà sempre que l\'alumne premi el botó «Comprova». La finestra de retroacció permet als estudiants comentar aquest qüestionari amb el seu professor i els seus companys d\'alguna de les formes següents:
+$string['studentfeedback_help'] = 'Si s\'habilita un enllaç a la finestra emergent amb retroacció, es mostrarà sempre que l\'alumne premi el botó «Comprova». La finestra de retroacció permet als estudiants comentar aquest qüestionari amb el seu professor i els seus companys d\'alguna de les formes següents:
 
 **Pàgina web**
-: Cal la URL de la pàgina web, per exemple http://elmeuservidor.com/formularideretroaccio.html
+: Cal l\'URL de la pàgina web, per exemple http://elmeuservidor.com/formularideretroaccio.html
 
 **Formulari de retroacció**
-: Cal la URL del script del formulari, per exemple http://elmeuservidor.com/cgi-bin/formulari.pl
+: Cal l\'URL de l\'script del formulari, per exemple http://elmeuservidor.com/cgi-bin/formulari.pl
 
 **Fòrum Moodle**
-: L\'index al fòrum del curs es mostrarà.
+: Es mostrarà l\'íindex al fòrum del curs.
 
 **Missatges de Moodle**
-: Es mostra la finestra de missatgeria instantània de Moodle. Si el curs té varis professors l\'estudiant cal que n\'esculli un abans que la finestra de missatges es mostri.';
+: Es mostra la finestra de missatgeria instantània de Moodle. Si el curs té diversos professors, cal que l\'estudiant n\'esculli un abans que es mostri la finestra de missatges.';
 $string['submits'] = 'Enviaments';
 $string['subplugintype_hotpotattempt'] = 'Format de sortida';
 $string['subplugintype_hotpotattempt_plural'] = 'Formats de sortida';
@@ -492,23 +492,23 @@ $string['textsourcequiz'] = 'Obtenir del qüestionari';
 $string['textsourcespecific'] = 'Text expecífic';
 $string['timeclose'] = 'Disponible fins a';
 $string['timedout'] = 'Temps esgotat';
-$string['timelimit'] = 'Temps límit';
-$string['timelimitexpired'] = 'El límit de temps per aquest intent s\'ha esgotat';
-$string['timelimit_help'] = 'Aquest paràmetre especifica la duració màxima d\'un intent.
+$string['timelimit'] = 'Límit de temps';
+$string['timelimitexpired'] = 'El límit de temps per a aquest intent s\'ha acabat';
+$string['timelimit_help'] = 'Aquest paràmetre especifica la durada màxima d\'un intent.
 
-**Utilitza els paràmetres de la font/fitxer plantilla**
-: El temps limit serà pres del fitxer font o del fitxer plantilla per a aquest format de sortida.
+**Utilitza els paràmetres de la fitxer font/plantilla**
+: El límit de temps es prendrà del fitxer font o del fitxer plantilla per a aquest format de sortida.
 
 
-**Utilitza temps especific**
-: El temps limit especificat als paràmetres del qüestionari HotPot serà utilitzat com temps limit per un intent en aquest qüestionari. Aquest paràmetre sobreescriu el temps limit del fitxer font, fitxer de configuració o fitxer plantilla per a aquest format de sortida.
+**Utilitza un temps determinat**
+: El límit de temps que es determina als paràmetres del qüestionari HotPot serà utilitzat com a límit de temps per a un intent en aquest qüestionari. Aquest paràmetre sobreescriu el límit de temps del fitxer font, del fitxer de configuració odel  fitxer plantilla per a aquest format de sortida.
 
-**Deshabilita**
-: No hi ha temps limit per als intents d\'aquest qüestionari.
+**Inhabilita**
+: No hi ha cap límit de temps per als intents d\'aquest qüestionari.
 
-Avís: Si un intent es reprèn el temps continua des de l\'intent en que prèviament va ser aturat.';
+Avís: Si un intent es reprèn, el temps continua des de l\'intent en què prèviament va ser aturat.';
 $string['timelimitspecific'] = 'Utilitza temps especific';
-$string['timelimitsummary'] = 'Temps límit per un intent';
+$string['timelimitsummary'] = 'Límit de temps per a un intent';
 $string['timelimittemplate'] = 'Utilitza els paràmetres de la font/fitxer plantilla';
 $string['timeopen'] = 'Disponible des de';
 $string['timeopenclose'] = 'Temps d\'obertura i clausura';
@@ -533,9 +533,9 @@ $string['updated'] = 'Actualitzat';
 $string['usefilters'] = 'Ús dels filtres';
 $string['usefilters_help'] = 'Si aquest paràmetre s\'habilita, el contingut es passarà pels filtres de Moodle abans de enviar-ho al navegador.';
 $string['useglossary'] = 'Ús del glossari';
-$string['useglossary_help'] = 'Si s\'habilita aquest paràmetre, el contingut es passarà pel filtre Glossari de Moodle auto-enllaçat abans d\'enviar-ho al navegador.
+$string['useglossary_help'] = 'Si s\'habilita aquest paràmetre, el contingut es passarà pel filtre d\'enllaços automàtics del glossari de Moodle abans d\'enviar-lo al navegador.
 
-Avís: Aquest paràmetre sobreescriu el paràmetre d\'administració per habilitar o deshabilitar el filtre Glossari auto-enllaçat.';
+Avís: Aquest paràmetre sobreescriu el paràmetre d\'administració per habilitar o inhabilitar el filtre d\'enllaços automàtics del glossari.';
 $string['usemediafilter'] = 'Ús de filtre multimèdia';
 $string['usemediafilter_help'] = 'Aquest paràmetre especifica el filtre multimèdia a utilitzar.
 

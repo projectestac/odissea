@@ -32,6 +32,7 @@ $string['allselectedusers'] = 'すべての選択済み ({$a->count}/{$a->total}
 $string['allusers'] = 'すべてのユーザ ({$a})';
 $string['available'] = '利用可能';
 $string['confirmmessage'] = '本当に上記メッセージをこれらすべてのユーザに送信してもよろしいですか?<br />{$a}';
+$string['deleteduser'] = '削除済みユーザ';
 $string['nofilteredusers'] = 'ユーザが見つかりませんでした (0/{$a})';
 $string['noselectedusers'] = 'ユーザは選択されていません';
 $string['removeall'] = 'すべてを選択解除する';

@@ -31,4 +31,5 @@ $string['coursespecoutcome'] = 'Cursusresultaten';
 $string['eventgradereportviewed'] = 'Cijferresulatenrapport bekeken';
 $string['outcomes:view'] = 'Bekijk resultatenrapport';
 $string['pluginname'] = 'Resultatenrapport';
+$string['privacy:metadata'] = 'Het rapport cijfer uitkomsten toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['usedgradeitem'] = 'Aantal te beoordelen onderdelen';

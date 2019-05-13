@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'Cerca o carica un\'immagine...';
 $string['pluginname'] = 'Inserimento immagine';
+$string['privacy:metadata'] = 'Il plugin TinyMCE \'Inserimento immagine\' non memorizza dati personali.';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '显示/隐藏高级按钮';
+$string['privacy:metadata'] = 'atto_collapse 插件不储存任何私人数据。';
 $string['settings'] = '设置折叠工具栏';
 $string['showfewer'] = '显示更少按钮';
 $string['showgroups'] = '折叠时显示前 (n) 个分组。';

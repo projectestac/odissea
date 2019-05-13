@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Rolmenu';
+$string['privacy:metadata:profilefield_menu:data'] = 'Rolmenu voor profielveld gebruikersgegevens';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'De format van het rolmenu voor profielveld gebruikersgegevens';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'De ID van het profielveld';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Bijkomende profielgegevens';
+$string['privacy:metadata:profilefield_menu:userid'] = 'De ID van de gebruiker van wie de gegevens bewaard worden bij het rolmenu profielveld';

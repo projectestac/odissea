@@ -6,6 +6,9 @@ class com_wiris_quizzes_wrap_EmbeddedAnswersEditorWrap implements com_wiris_quiz
 		$this->impl = $impl;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function setReadOnly($readOnly) {
+		throw new HException("Not implemented");
+	}
 	public function setStyle($key, $value) {
 		throw new HException("Not implemented");
 	}

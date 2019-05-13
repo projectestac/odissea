@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Llista desordenada';
+$string['privacy:metadata'] = 'El connector atto_unorderedlist no emmagatzema cap dada personal.';

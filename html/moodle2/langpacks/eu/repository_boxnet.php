@@ -41,6 +41,6 @@ $string['pluginname_help'] = 'Biltegia Box-en';
 $string['privacy:metadata:repository_boxnet'] = 'Box biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_boxnet:query'] = 'Box biltegiko erabiltzailearen bilaketaren testua.';
 $string['saved'] = 'Box-en datuak gordeta';
-$string['shareurl'] = 'URLa partekatu';
+$string['shareurl'] = 'Partekatu URLa';
 $string['username'] = 'Box-erako erabiltzaile-izena';
 $string['warninghttps'] = 'Box-ek zure webguneak HTTPS erabiltzea behar du biltegia erabili ahal izateko.';

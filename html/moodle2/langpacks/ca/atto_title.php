@@ -31,4 +31,5 @@ $string['h5'] = 'Capçalera (petita)';
 $string['p'] = 'Paràgraf';
 $string['pluginname'] = 'Estils de paràgraf';
 $string['pre'] = 'Pre-formatat';
+$string['privacy:metadata'] = 'El connector atto_title no emmagatzema cap dada personal.';
 $string['title'] = 'Estils de paràgraf';

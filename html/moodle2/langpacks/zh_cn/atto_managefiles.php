@@ -31,5 +31,7 @@ $string['hasmissingfiles'] = '警告！文本中引用的如下文件缺失：';
 $string['managefiles'] = '管理文件';
 $string['missingfiles'] = '缺失的文件';
 $string['pluginname'] = '管理文件';
+$string['privacy:metadata'] = 'atto_managefiles 插件不储存任何私人数据。';
 $string['unusedfilesdesc'] = '下列嵌入的文件未被文本域使用：';
 $string['unusedfilesheader'] = '未使用的文件';
+$string['unusedfilesremovalnotice'] = '保存更改时, 任何未使用的文件都将被自动删除。';

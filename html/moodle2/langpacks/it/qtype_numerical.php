@@ -68,6 +68,7 @@ $string['pluginnameadding'] = 'Creazione domanda Numerica';
 $string['pluginnameediting'] = 'Modifica domanda Numerica';
 $string['pluginname_help'] = 'Dal punto di vista dello studente una domanda numerica appare come una domanda a risposta breve. La differenza è che le risposte numeriche possono avere un errore accettabile. Questo consente che un intero range di risposte possano essere valutate come una sola risposta. Per esempio, se la risposta è 10 con un errore accettabile di 2, ogni numero tra 8 e 12 sarà accettato come corretto.';
 $string['pluginnamesummary'] = 'Consente l\'uso di risposte numeriche, possibilmente con unità, valutate rispetto a modelli di risposta, possibilmente con tolleranza.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Numerica\' non memorizza dati personali.';
 $string['relative'] = 'Relativo';
 $string['rightexample'] = 'a destra, ad esempio  come 1.00cm or 1.00km';
 $string['selectunit'] = 'Scegli una unità';

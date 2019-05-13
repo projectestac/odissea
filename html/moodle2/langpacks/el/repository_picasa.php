@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρύθμιση χώρου αποθήκευσης Picasa';
+$string['clientid'] = 'Αναγνωριστικό πελάτη';
+$string['configplugin'] = 'Ρυθμίσεις αποθετηρίου Picasa';
+$string['oauthinfo'] = '<p>Για να χρησιμοποιήσετε αυτό το πρόσθετο, πρέπει να καταχωρήσετε τον ιστότοπό σας στο Google, όπως περιγράφεται στην τεκμηρίωση για την<a href="{$a->docsurl} "> εγκατάσταση του Google OAuth 2.0 </a>.</p><p>Ως μέρος της διαδικασίας καταχώρησης, θα πρέπει να δώσετε την ακόλουθη διεύθυνση URL ως \'Authorized Redirect URIs\' (εξουσιοδοτημένες ανακατευθύνσεις URI): </p><p>{$a->callbackurl} </p><p>Μόλις καταχωρηθείτε, σας παρέχεται ένα αναγνωριστικό πελάτη και ένα μυστικό που μπορεί να χρησιμοποιηθεί για τη διαμόρφωση όλων των πρόσθετων Google Drive και Picasa.</p>';
 $string['picasa:view'] = 'Εμφάνιση του repository picasa';
 $string['pluginname'] = 'Άλμπουμ Ιστού Picasa';
+$string['privacy:metadata:repository_picasa'] = 'Το πρόσθετο «Αποθετήριο Picasa για άλμπουμ ιστού» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Picasa.';
+$string['secret'] = 'Μυστικό';

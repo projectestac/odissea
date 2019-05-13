@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configurazione plugin File upload';
 $string['pluginname'] = 'File upload';
 $string['pluginname_help'] = 'Carica un file su Moodle';
+$string['privacy:metadata'] = 'Il plugin repository "File upload" non memorizza né trasmette dati personali.';
 $string['upload_error_cant_write'] = 'Non è stato possibile scrivere il file sul disco.';
 $string['upload_error_extension'] = 'Una estensione PHP ha bloccato il caricamento del file.';
 $string['upload_error_form_size'] = 'Il file caricato è più grande di quanto consentito dalla direttiva max_file_size presente nel file php.ini';
@@ -36,4 +37,4 @@ $string['upload_error_invalid_file'] = 'Il file \'{$a}\' è vuoto oppure è una 
 $string['upload_error_no_file'] = 'Nessun file è stato caricato.';
 $string['upload_error_no_tmp_dir'] = 'Manca una cartella temporanea per il PHP';
 $string['upload_error_partial'] = 'Il file è stato caricato solo in parte.';
-$string['upload:view'] = 'Usare Upload file nel file picker';
+$string['upload:view'] = 'Usare File upload nel file picker';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cachedef_items'] = 'Kalifikazio-elementuak cacheatuta baldintzapeko eskuragarritasuna ebaluatzeko';
 $string['cachedef_scores'] = 'Erabiltzaile kalifikazioak cacheatuta baldintzapeko eskuragarritasuna ebaluatzeko';
 $string['description'] = 'Behartu ikasleek kalifikazio zehatz bat lortzera.';
-$string['error_backwardrange'] = 'Kalifikazio-tarte bat zehaztean gutxienekoa gehienekoa baino txikiagoa izan behar da.';
+$string['error_backwardrange'] = 'Kalifikazio-tarte bat zehaztean gutxienekoa gehienezkoa baino txikiagoa izan behar da.';
 $string['error_invalidnumber'] = 'Kalifikazio-tarteak baliozko ehunekoekin zehaztu behar dira.';
 $string['error_selectgradeid'] = 'Kalifikazio-elementua zehaztu behar duzu kalifikazio-baldintzarako.';
 $string['label_max'] = 'Gehienezko kalifikazio-ehunekoa (bera kanpo)';

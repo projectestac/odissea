@@ -120,7 +120,7 @@ $string['last_transport_help'] = 'Le transport utilisé lors de votre dernière 
 $string['leavedefault'] = 'Utiliser plutôt les réglages par défaut';
 $string['listservices'] = 'Lister les services';
 $string['loginlinkmnetuser'] = '<br />Si vous êtes un utilisateur MNet distant et pouvez <a href="{$a}">confirmer ici votre adresse de courriel</a>, vous pouvez être redirigé vers votre page de connexion.<br />';
-$string['logs'] = 'Historiques';
+$string['logs'] = 'Journaux';
 $string['managemnetpeers'] = 'Gérer les pairs';
 $string['method'] = 'Méthode';
 $string['methodhelp'] = 'Aide pour la méthode {$a}';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Standaar spellingscontrole';
+$string['privacy:metadata'] = 'De TinyMCE verouderde spellingscontrole-plugin bewaart geen persoonlijke gegevens.';

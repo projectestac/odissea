@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Очистка от HTML тегов';
+$string['privacy:metadata'] = 'Плагин Чистый HTML не хранит никаких персональных данных.';

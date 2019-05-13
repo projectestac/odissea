@@ -19,7 +19,7 @@ $string['modulename_help'] = 'The H5P activity module enables you to create inte
 
 In addition to being an authoring tool for rich content, H5P enables you to import and export H5P files for effective reuse and sharing of content.
 
-User interactions and scores are tracked using xAPI and are available through the Moodle Gradebook.
+User interactions and scores are tracked using xAPI and are available through the Moodle Gradebook. Note that it is currently possible for people with programming skills to cheat in H5P interactions and obtain the full score without knowing the correct answers. H5Ps must not be used for exams or similar.
 
 You add interactive H5P content by creating content using the built-in authoring tool or uploading H5P files found on other H5P enabled sites.';
 $string['modulename_link'] = 'https://h5p.org/moodle-more-help';
@@ -346,6 +346,34 @@ $string['licenseV1'] = 'Version 1';
 $string['licenseCC010'] = 'CC0 1.0 Universal (CC0 1.0) Public Domain Dedication';
 $string['licenseCC010U'] = 'CC0 1.0 Universal';
 $string['licenseversion'] = 'License Version';
+$string['creativecommons'] = 'Creative Commons';
+$string['ccattribution'] = 'Attribution (CC BY)';
+$string['ccattributionsa'] = 'Attribution-ShareAlike (CC BY-SA)';
+$string['ccattributionnd'] = 'Attribution-NoDerivs (CC BY-ND)';
+$string['ccattributionnc'] = 'Attribution-NonCommercial (CC BY-NC)';
+$string['ccattributionncsa'] = 'Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)';
+$string['ccattributionncnd'] = 'Attribution-NonCommercial-NoDerivs (CC BY-NC-ND)';
+$string['ccpdd'] = 'Public Domain Dedication (CC0)';
+$string['ccpdm'] = 'Public Domain Mark (PDM)';
+$string['yearsfrom'] = 'Years (from)';
+$string['yearsto'] = 'Years (to)';
+$string['authorname'] = "Author's name";
+$string['authorrole'] = "Author's role";
+$string['editor'] = 'Editor';
+$string['licensee'] = 'Licensee';
+$string['originator'] = 'Originator';
+$string['additionallicenseinfo'] = 'Any additional information about the license';
+$string['licenseextras'] = 'License Extras';
+$string['changelog'] = 'Changelog';
+$string['contenttype'] = 'Content Type';
+$string['question'] = 'Question';
+$string['date'] = 'Date';
+$string['changedby'] = 'Changed by';
+$string['changedescription'] = 'Description of change';
+$string['changeplaceholder'] = 'Photo cropped, text changed, etc.';
+$string['additionalinfo'] = 'Additional Information';
+$string['authorcomments'] = 'Author comments';
+$string['authorcommentsdescription'] = 'Comments for the editor of the content (This text will not be published as a part of copyright info)';
 
 // Embed.
 $string['embedloginfailed'] = 'You do not have access to this content. Try logging in.';

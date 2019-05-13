@@ -34,6 +34,7 @@ $string['equella:view'] = 'Bekijk EQUELLA opslagruimte';
 $string['group'] = '{$a} rolinstellingen';
 $string['groupdefault'] = 'Standaard';
 $string['pluginname'] = 'EQUELLA opslagruimte';
+$string['privacy:metadata'] = 'De EQUELLA opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
 $string['restrictionattachmentsonly'] = 'Enkel bijlage';
 $string['restrictionitemsonly'] = 'Enkel item samenvatting';
 $string['restrictionnone'] = 'Geen beperking';

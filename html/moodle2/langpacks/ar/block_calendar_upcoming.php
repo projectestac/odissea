@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['gotocalendar'] = '...اذهب إلى التقويم';
 $string['pluginname'] = 'الأحداث القادمة';

@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = 'Zenbat gehiago';
-$string['incby1_help'] = 'Atal-kopuruari balore hau gehituko zaio ataletarako esteka erakusten den bakoitzean 1etik hasita.';
+$string['incby1_help'] = 'Atal-kopuruari balio hau gehituko zaio ataletarako esteka erakusten den bakoitzean 1etik hasita.';
 $string['incby2'] = 'Zenbat gehiago ordezkoan';
-$string['incby2_help'] = 'Atal-kopuruari balore hau gehituko zaio ataletarako esteka erakusten den bakoitzean 1etik hasita.';
+$string['incby2_help'] = 'Atal-kopuruari balio hau gehituko zaio ataletarako esteka erakusten den bakoitzean 1etik hasita.';
 $string['jumptocurrenttopic'] = 'Gai hau ikusi';
 $string['jumptocurrentweek'] = 'Aste hau ikusi';
 $string['numsections1'] = 'Atal-kopurua';
-$string['numsections1_help'] = 'Ikastaroko atal-kopurua kantitate honetara iristen denean, zenbat gehitu ordezkoan balorea erabiliko da.';
+$string['numsections1_help'] = 'Ikastaroko atal-kopurua kantitate honetara iristen denean, zenbat gehitu ordezkoan balioa erabiliko da.';
 $string['numsections2'] = 'Ordezko atal-kopurua';
-$string['numsections2_help'] = 'Ikastaroko atal-kopurua kantitate honetara iristen denean, ordezkoan zenbat gehitu balorea erabiliko da.';
+$string['numsections2_help'] = 'Ikastaroko atal-kopurua kantitate honetara iristen denean, ordezkoan zenbat gehitu balioa erabiliko da.';
 $string['pluginname'] = 'Ataletarako estekak';
 $string['privacy:metadata'] = 'Ataletarako esteka blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
 $string['section_links:addinstance'] = 'Gehitu ataletarako estekak bloke berria';

@@ -76,4 +76,5 @@ $string['auth_cas_version'] = '使用哪个CAS协议版本';
 $string['CASform'] = '选择认证方式';
 $string['noldapserver'] = 'CAS没有配置LDAP服务器！因此同步被禁用。';
 $string['pluginname'] = 'CAS 服务器(单点登录)';
+$string['privacy:metadata'] = 'CAS服务(SSO)认证插件不储存任何私人数据。';
 $string['synctask'] = 'CAS用户同步任务';

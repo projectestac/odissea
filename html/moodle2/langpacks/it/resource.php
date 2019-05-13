@@ -53,7 +53,7 @@ $string['displayselect_help'] = 'L\'impostazione, assieme al tipo di file e alle
 * Popup - Il file viene visualizzato in un nuova finestra browser priva di menu e barra dell\'indirizzo
 * Frame - Il file viene visualizzato all\'interno di un frame sotto la barra di navigazione
 * Nuova finestra - Il file viene visualizzato in una nuova finestra browser completa di menu e barra dell\'indirizzo.';
-$string['dnduploadresource'] = 'Crea un risorsa file';
+$string['dnduploadresource'] = 'Crea una risorsa file';
 $string['encryptedcode'] = 'Codice criptato';
 $string['filenotfound'] = 'Spiacente, il file non è stato trovato';
 $string['filterfiles'] = 'Applica filtri sul contenuto del file';

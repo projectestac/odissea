@@ -34,4 +34,5 @@ $string['importnotext'] = 'Ontbrekende vraagtekst in XML-bestand';
 $string['notenoughtsubans'] = 'Kon koppelvraag \'{$a}\' niet importeren omdat een koppelvraag minstens twee vragen en drie antwoorden moet bevatten';
 $string['pluginname'] = 'Blackboard';
 $string['pluginname_help'] = 'Blackboard opmaak maakt het mogelijk om vragen, bewaard in het exportformaat van Blackboard, te importeren via dat- of zip-bestand. Voor zip-bestanden wordt de import van afbeeldingen ook ondersteund.';
+$string['privacy:metadata'] = 'De Blackboard vraag format-plugin bewaart geen persoonlijke gegevens.';
 $string['unhandledpresblock'] = 'Presentatieblok niet behandeld';

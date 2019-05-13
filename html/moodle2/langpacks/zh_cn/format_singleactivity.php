@@ -31,4 +31,4 @@ $string['erroractivitytype'] = '在课程设置中没有设置活动类型';
 $string['orphaned'] = '没有相关的';
 $string['orphanedwarning'] = '这些活动是用户无法选用的';
 $string['pluginname'] = '单一活动格式';
-$string['warningchangeformat'] = '当你变更正在使用的课程格式为"单一活动"时，要确定你已经从这个课程删除额外的活动，包括"新闻讨论区"。要注意，部分结构可能会被修改。';
+$string['warningchangeformat'] = '将现有课程格式更改为“单一活动”时，请确保您已从课程中删除所有额外活动，包括“新闻通告”。请注意，可以修改课程的部分章节结构。';

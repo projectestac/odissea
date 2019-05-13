@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Многоязыковое содержимое';
+$string['privacy:metadata'] = 'Плагин Многоязычный контент не хранит никаких персональных данных.';

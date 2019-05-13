@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configuraite URL-upslagruimte';
 $string['download'] = 'Download';
 $string['pluginname'] = 'URL downloader';
+$string['privacy:metadata'] = 'De URL-downloader opslagruimte-plugin bewaart of verstuurt geen persoonlijke gegevens.';
 $string['rename'] = 'Naam';
 $string['url'] = 'URL';
 $string['url:view'] = 'Gebruik URL-downloader in de file picker';

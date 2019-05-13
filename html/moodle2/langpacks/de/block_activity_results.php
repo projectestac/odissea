@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activity_results:addinstance'] = 'Block \'Aktivitätsergebnisse\' hinzufügen';
+$string['activity_results:addinstance'] = 'Neuen Block \'Aktivitätsergebnisse\' hinzufügen';
 $string['bestgrade'] = 'Höchstbewertung:';
 $string['bestgrades'] = 'Die {$a} höchsten Bewertungen:';
 $string['bestgroupgrade'] = 'Die Gruppe mit der höchsten Bewertung:';
@@ -35,7 +35,7 @@ $string['config_format_absolute'] = 'Absolute Werte';
 $string['config_format_fraction'] = 'Verhältniswerte';
 $string['config_format_percentage'] = 'Prozentwert';
 $string['config_grade_format'] = 'Bewertungen anzeigen als:';
-$string['config_name_format'] = 'Privatsphäre für Ergebnisse:';
+$string['config_name_format'] = 'Datenschutz der Ergebnisse';
 $string['config_names_anon'] = 'Anonyme Ergebnisse';
 $string['config_names_full'] = 'Vollständige Namen anzeigen';
 $string['config_names_id'] = 'Nur IDs anzeigen';
@@ -53,7 +53,7 @@ $string['defaulthighestgrades'] = 'Standardmäßig die höchsten Noten angezeigt
 $string['defaulthighestgrades_desc'] = 'Wie viele der höchsten Noten sollen standardmäßig angezeigt werden?';
 $string['defaultlowestgrades'] = 'Standardmäßig die niedrigsten Noten angezeigt';
 $string['defaultlowestgrades_desc'] = 'Wie viele der niedrigsten Noten sollen standardmäßig angezeigt werden?';
-$string['defaultnameoptions'] = 'Privatheit der Ergebnisse';
+$string['defaultnameoptions'] = 'Datenschutz der Ergebnisse';
 $string['defaultnameoptions_desc'] = 'Wie sollen die Schüler standardmäßig identifiziert werden?';
 $string['defaultshowgroups'] = 'Standardmäßig Gruppen anzeigen';
 $string['defaultshowgroups_desc'] = 'Standardmäßig Gruppen statt Schüler anzeigen (nur wenn die Aktivität Gruppen unterstützut';

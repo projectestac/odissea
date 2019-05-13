@@ -368,6 +368,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
 			'i/withsubcat' => 'indent',
 			'i/permissions' => 'key',
             'i/rss' => 'rss-square',
+            'i/dashboard' => 'tachometer',
 			't/add' => 'plus',
             'i/assignroles' => 'lock',
 			't/assignroles' => 'lock',
@@ -401,6 +402,7 @@ class theme_xtec2_core_renderer extends theme_bootstrapbase_core_renderer {
             't/editstring' => 'pencil-square-o',
             't/check' => 'check',
             't/calc_off' => 'calculator',
+            't/preferences' => 'wrench',
         );
 
         $name = $icon->pix;

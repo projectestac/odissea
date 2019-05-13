@@ -25,7 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'Όλες οι πηγές';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Στοιχείο λογισμικού';
+$string['eventcontext'] = 'Πλαίσιο γεγονότος';
+$string['eventloggedas'] = '{$a->realusername} ως {$a->asusername}';
+$string['eventorigin'] = 'Προέλευση';
 $string['eventrelatedfullnameuser'] = 'Χρήστης που επηρεάζεται';
-$string['log:view'] = 'Προβολη αρχείων καταγραφής μαθήματος';
-$string['log:viewtoday'] = 'Προβολή σημερινών αρχείων καταγραφής';
+$string['eventreportviewed'] = 'Η αναφορά καταγραφής προβλήθηκε';
+$string['eventuserreportviewed'] = 'Η αναφορά καταγραφής χρήστη προβλήθηκε';
+$string['logsformat'] = 'Μορφότυπος καταγραφών';
+$string['log:view'] = 'Εμφάνιση καταγραφών μαθήματος';
+$string['log:viewtoday'] = 'Εμφάνιση των σημερινών καταγραφών';
+$string['nocapability'] = 'Δεν είναι δυνατή η πρόσβαση στην αναφορά καταγραφής χρήστη';
+$string['nologreaderenabled'] = 'Δεν είναι ενεργοποιημένος κανένας αναγνώστης καταγραφών';
+$string['origin'] = 'Πηγή';
+$string['other'] = 'Άλλο';
+$string['page'] = 'Σελίδα {$a}';
+$string['page-report-log-index'] = 'Αναφορά καταγραφής μαθήματος';
+$string['page-report-log-user'] = 'Αναφορά καταγραφής μαθήματος χρήστη';
+$string['page-report-log-x'] = 'Κάθε αναφορά καταγραφής';
+$string['pluginname'] = 'Καταγραφές';
+$string['privacy:metadata'] = 'Το πρόσθετο «Καταγραφές» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['restore'] = 'Επαναφορά';
+$string['selectlogreader'] = 'Επιλογή αναγνώστη καταγραφών';
+$string['web'] = 'Ιστός';
+$string['ws'] = 'Υπηρεσία ιστού';

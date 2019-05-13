@@ -61,3 +61,4 @@ $string['search:activity'] = '文件夹';
 $string['showdownloadfolder'] = '显示下载文件夹的按钮';
 $string['showdownloadfolder_help'] = '若启用，文件夹内容旁边会显示一个按钮，用来以压缩文件下载。';
 $string['showexpanded'] = '显示展开的子文件夹';
+$string['showexpanded_help'] = '如果设为“是”，子文件夹将被默认展开显示；否则他们将被折叠显示。';

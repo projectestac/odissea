@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Área de texto';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Os datos almacenados do usuario.';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'O formato dos datos almacenados do usuario.';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'O ID do campo do perfil.';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Aquí está almacenada a información adicional do usuario.';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'O ID do usuario cuxos datos son almacenados polo engadido de área de texto.';

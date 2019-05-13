@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'Permitirlle ao usuario ancorar este bloque';
 $string['pluginname'] = 'Administración';
+$string['privacy:metadata'] = 'O bloque de administración só amosa datos almacenados noutros lugares.';
 $string['settings:addinstance'] = 'Engadir un novo bloque de administración';
 $string['settings:myaddinstance'] = 'Engadir un novo bloque de configuración ao cartafol persoal';

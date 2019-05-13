@@ -32,27 +32,16 @@ $string['allselectedusers'] = 'Tots els seleccionats ({$a->count}/{$a->total})';
 $string['allusers'] = 'Tots els usuaris ({$a})';
 $string['available'] = 'Disponibles';
 $string['confirmmessage'] = 'Segur que voleu enviar aquest missatge a tots aquests usuaris?<br />{$a}';
+$string['deleteduser'] = 'Usuari eliminat';
 $string['nofilteredusers'] = 'No s\'ha trobat cap usuari (0/{$a})';
 $string['noselectedusers'] = 'No s\'ha seleccionat cap usuari';
 $string['removeall'] = 'Treu-los tots';
 $string['removesel'] = 'Treu els marcats';
 $string['selected'] = 'Seleccionats';
 $string['selectedlist'] = 'Llista d\'usuaris seleccionats...';
-$string['selectedlist_help'] = '<h2>Llista d\'usuaris seleccionats...</h2>
-
-<ul>
-<li>Afegeix els marcats a Seleccionats: afegeix a la llista Seleccionats (a la dreta) tots els usuaris de la llista Disponibles (a l\'esquerra).</li>
-<li>Afegeix tots a Seleccionats: afegeix a la llista Seleccionats (a la dreta) els usuaris seleccionats de la llista Disponibles (a l\'esquerra).</li>
-<li>Treu els marcats: treu de la llista Seleccionats (a la dreta) els usuaris que tinguem seleccionats.</li>
-<li>Treu tots: treu tots els usuaris de la llista Seleccionats (a la dreta).</li>
-
-</ul>';
+$string['selectedlist_help'] = 'Es poden afegir o eliminar usuaris de la llista d’usuaris seleccionats fent clic als noms dels usuari i, després, fent clic al botó adequat. Es poden seleccionar múltiples usuaris prement la tecla Apple o Ctrl mentre feu clic sobre els noms dels usuaris.';
 $string['users'] = 'Usuaris';
 $string['usersfound'] = 'S\'han trobat {$a} usuaris';
-$string['users_help'] = '<h2>Llistes d\'usuaris</h2>
-
-<p>La llista <strong>Disponibles</strong> conté els comptes d\'usuari que passen els filtres actius. Per exemple, si la secció de filtres actius conté el filtre país = Romania, la llista Disponibles només contindrà usuaris que hagin posat Romania com a país en el seu perfil.</p>
-
-<p>La llista <strong>Seleccionats</strong> conté els usuaris que hàgiu afegit explícitament, per mitjà dels botons de la secció <em>Llista d\'usuaris seleccionats...</em>. Quan premeu el botó <em>Endavant</em> de la secció <em>Amb els usuaris seleccionats...</em>, l\'operació seleccionada en aquesta secció s\'executarà per als usuaris seleccionats.</p>';
+$string['users_help'] = 'Tots els usuaris que han passat els filtres actius s\'enumeren al quadre disponible. Si no s\'estableix cap filtre, s\'enumeren tots els usuaris del lloc.';
 $string['usersinlist'] = 'Usuaris en la llista';
 $string['usersselected'] = 'S\'han seleccionat {$a} usuaris';

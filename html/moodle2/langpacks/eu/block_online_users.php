@@ -32,4 +32,4 @@ $string['online_users:viewlist'] = 'Ikusi on-line erabiltzaileen zerrenda';
 $string['periodnminutes'] = 'azken {$a} minutuetan';
 $string['pluginname'] = 'On-line erabiltzaileak';
 $string['privacy:metadata'] = 'On-line erabiltzaileak blokeak bakarrik erakusten ditu beste kokapen batzuetan bildutako datuak.';
-$string['timetosee'] = 'Jardunik ez badago (minututan) ezabatu';
+$string['timetosee'] = 'Ezabatu jardunik ez badago (minututan)';

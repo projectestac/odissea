@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'interactief met meerdere pogingen (punten voor eerdere pogingen)';
+$string['privacy:metadata'] = 'De interactief met meerdere pogingen (punten voor eerdere punten) vraaggedrag-plugin bewaart geen persoonlijke gegevens.';

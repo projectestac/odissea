@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Προχωρημένη Αναζήτηση';
-$string['pluginname'] = 'Αναζήτηση στις ομάδες συζήτησης';
+$string['pluginname'] = 'Αναζήτηση στα φόρουμ';
+$string['privacy:metadata'] = 'Το μπλοκ φόρουμ αναζήτησης εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['search_forums:addinstance'] = 'Προσθήκη νέου μπλοκ αναζήτησης σε φόρουμ';

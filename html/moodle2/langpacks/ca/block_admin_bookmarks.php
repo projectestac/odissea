@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_bookmarks:addinstance'] = 'Afegeix un nou bloc d\'adreces d\'interès d\'administració';
-$string['admin_bookmarks:myaddinstance'] = 'Afegeix un nou bloc d\'adreces d\'interès d\'administració a la pàgina del Tauler';
+$string['admin_bookmarks:addinstance'] = 'Afegeix un bloc nou d\'adreces d\'interès d\'administració';
+$string['admin_bookmarks:myaddinstance'] = 'Afegeix un bloc nou d\'adreces d\'interès d\'administració a la pàgina del Tauler';
 $string['pluginname'] = 'Dreceres d\'administració';

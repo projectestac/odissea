@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '撤销/重做';
+$string['privacy:metadata'] = 'atto_undo 插件不储存任何私人数据。';
 $string['redo'] = '重做';
 $string['undo'] = '撤销';

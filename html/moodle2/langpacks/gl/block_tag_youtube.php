@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Calquera categoría';
+$string['apierror'] = 'Non está estabelecida a chave da API de YouTube. Póñase en contacto co administrador.';
+$string['apikey'] = 'Chave API';
+$string['apikeyinfo'] = 'Obteña unha <a href="https://developers.google.com/youtube/v3/getting-started">Chave API de Google</a> para o seu sitio Moodle.';
 $string['autosvehicles'] = 'Autos e vehículos';
 $string['category'] = 'Categoría';
 $string['comedy'] = 'Comedia';
@@ -42,6 +45,8 @@ $string['numberofvideos'] = 'Número de vídeos';
 $string['peopleblogs'] = 'Xente e blogs';
 $string['petsanimals'] = 'Mascotas e animais';
 $string['pluginname'] = 'YouTube';
+$string['privacy:metadata'] = 'O bloque de YouTube só amosa datos almacenados noutros lugares.';
+$string['requesterror'] = 'Non foi posíbel obter datos do servidor. Contacte co administrador se o problema persiste.';
 $string['scienceandtech'] = 'Ciencia e tecnoloxía';
 $string['sports'] = 'Deportes';
 $string['tag_youtube:addinstance'] = 'Engadir un novo bloque de YouTube';

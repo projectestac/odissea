@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addbulknote'] = 'Adicionar uma nova observação para {$a} pessoas';
 $string['addbulknotedone'] = 'Observação adicionada a {$a} pessoas';
-$string['addbulknotedonesingle'] = 'Observação adicionada a 1  pessoa';
+$string['addbulknotedonesingle'] = 'Observação adicionada a 1 pessoa';
 $string['addbulknotesingle'] = 'Adicionar uma nova observação para 1 pessoa';
 $string['addnewnote'] = 'Adicionar anotação';
 $string['addnewnoteselect'] = 'Selecionar utilizadores para adicionar anotações';
@@ -51,7 +51,7 @@ $string['invaliduserid'] = 'ID do utilizador inválido: {$a}';
 $string['myprofileownnotes'] = 'As minhas notas';
 $string['nocontent'] = 'O conteúdo da anotação não pode ficar vazio';
 $string['nonotes'] = 'Ainda não há anotações deste tipo';
-$string['nopermissiontodelete'] = 'Não pode excluir esta anotação';
+$string['nopermissiontodelete'] = 'Não pode apagar esta anotação';
 $string['note'] = 'Anotação';
 $string['notes'] = 'Anotações';
 $string['notesdisabled'] = 'Desculpe mas as anotações estão desativadas.';
@@ -63,13 +63,13 @@ $string['personal'] = 'pessoal';
 $string['personalnotes'] = 'Anotações pessoais';
 $string['privacy:metadata:core_notes'] = 'A Componente anotações armazena anotações do utilizador no subsistema principal.';
 $string['privacy:metadata:core_notes:content'] = 'O conteúdo da anotação.';
-$string['privacy:metadata:core_notes:courseid'] = 'O ID da diciplina associado à anotação.';
+$string['privacy:metadata:core_notes:courseid'] = 'O ID da diciplina associado à anotação';
 $string['privacy:metadata:core_notes:created'] = 'A data/hora de criação da anotação.';
 $string['privacy:metadata:core_notes:lastmodified'] = 'A data/hora da última alteração à anotação.';
 $string['privacy:metadata:core_notes:publishstate'] = 'O estado público da anotação.';
-$string['privacy:metadata:core_notes:userid'] = 'O ID do utilizador associado à anotação.';
+$string['privacy:metadata:core_notes:userid'] = 'O ID do utilizador associado à anotação';
 $string['publishstate'] = 'Contexto';
-$string['publishstate_help'] = 'O contexto de uma anotação determina quem pode ver a mesma. Os utilizadores devem saber que todas as anotações, incluindo as pessoais, podem ser reveladas no âmbito da aplicação da lei das suas judirições.
+$string['publishstate_help'] = 'O contexto de uma anotação determina quem pode ver a mesma. Os utilizadores devem saber que todas as anotações, incluindo as pessoais, podem ser reveladas no âmbito da aplicação das leis das suas jurisdições.
 
 * Pessoal - A anotação fica visível apenas para si
 * Disciplina - A anotação fica visível para os professores da disciplina

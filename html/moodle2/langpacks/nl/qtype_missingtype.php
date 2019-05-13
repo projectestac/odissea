@@ -34,4 +34,5 @@ $string['missingqtypewarning'] = 'Deze vraag is van een type dat momenteel niet 
 $string['pluginname'] = 'Type ontbreekt';
 $string['pluginnameadding'] = 'Een vraag toevoegen van een type dat niet geïnstalleerd is op dit systeem';
 $string['pluginnameediting'] = 'Onbekend vraagtype bewerken';
+$string['privacy:metadata'] = 'De selecteer ontbrekende woorden vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['warningmissingtype'] = '<b>Deze vraag behoort tot een vraagtype dat niet geïnstalleerd is op jouw Moodle-site. <br />Waarschuw je Moodle beheerder.</b>';

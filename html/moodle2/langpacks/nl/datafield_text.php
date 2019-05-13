@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Veld voor tekst';
 $string['pluginname'] = 'Tekstinvoer';
+$string['privacy:metadata'] = 'De tekstvakcomponent bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

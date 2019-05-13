@@ -32,5 +32,5 @@ $string['comparisonlevel3'] = 'estricta';
 $string['comparisonlevel5'] = 'acceptable';
 $string['comparisonlevel7'] = 'laxa';
 $string['comparisonlevel9'] = 'molt laxa';
-$string['configcomparison'] = 'Valor per omissió del factor que influencia la puntuació d\'avaluacions.';
+$string['configcomparison'] = 'Valor per defecte del factor que influencia la puntuació d\'avaluacions.';
 $string['pluginname'] = 'Comparació amb la millor avaluació';

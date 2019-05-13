@@ -543,6 +543,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 						}
 						unset($_g3,$_g2);
 					}
+					if($ac->assertion === com_wiris_quizzes_impl_Assertion::$SYNTAX_MATH) {
+						$correct = $correct && $ac->value === 1.0;
+					}
 					unset($j,$i1,$ac);
 				}
 			}
@@ -596,10 +599,11 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 				$_g = 0;
 				while($_g < $n) {
 					$i1 = $_g++;
-					$d[$i1] = 1.0 / $n;
+					$d[$i1] = 1.0;
 					unset($i1);
 				}
 			}
+			$d[$n] = $n;
 		} else {
 			$content = false;
 			$j = 0;
@@ -645,14 +649,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					unset($j1);
 				}
 			}
-			{
-				$_g = 0;
-				while($_g < $n) {
-					$j1 = $_g++;
-					$d[$j1] = $d->»a[$j1] / $sum;
-					unset($j1);
-				}
-			}
+			$d[$n] = $sum;
 		}
 		return $d;
 	}
@@ -720,13 +717,14 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			$distribution = $this->getCompoundGradeDistribution($question->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION));
 			$i = null;
 			{
-				$_g1 = 0; $_g = $distribution->length;
+				$_g1 = 0; $_g = $distribution->length - 1;
 				while($_g1 < $_g) {
 					$i1 = $_g1++;
 					$grade += $distribution->»a[$i1] * $this->getCompoundAnswerGrade($correctAnswer, $studentAnswer, $i1, $q);
 					unset($i1);
 				}
 			}
+			$grade = $grade / $distribution[$distribution->length - 1];
 		} else {
 			if($question !== null && $question->getAssertionIndex(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, "" . _hx_string_rec($correctAnswer, ""), "" . _hx_string_rec($studentAnswer, "")) !== -1) {
 				$checks = $this->checks->get(_hx_string_rec($studentAnswer, "") . "");
@@ -785,12 +783,13 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 					$_g1 = 1; $_g = $correctAnswers->length;
 					while($_g1 < $_g) {
 						$j1 = $_g1++;
-						$grade = $this->getAnswerGrade(Std::parseInt($correctAnswers[$j1]), $studentAnswer, $q);
+						$thisCorrectAnswer = Std::parseInt($correctAnswers[$j1]);
+						$grade = $this->getAnswerGrade($thisCorrectAnswer, $studentAnswer, $q);
 						if($grade > $maxgrade) {
 							$maxgrade = $grade;
-							$correctAnswer = $j1;
+							$correctAnswer = $thisCorrectAnswer;
 						}
-						unset($j1,$grade);
+						unset($thisCorrectAnswer,$j1,$grade);
 					}
 				}
 			}

@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regra de acceso para o tempo entre intentos de probas';
+$string['privacy:metadata'] = 'O engadido de regra de acceso para o tempo entre intentos de probas non almacena ningún dato persoal.';
 $string['youcannotwait'] = 'Esta proba péchase antes de que se lle permita comezar outro intento.';
 $string['youmustwait'] = 'Ten que agardar antes de volver a tentar resolver esta proba. Permitiráselle facer outro intento após {$a}.';

@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Βασική αναφορά';
+$string['privacy:metadata:preference:scorm_report_detailed'] = 'Εάν θα παρακολουθούνται λεπτομέρειες στη βασική αναφορά SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Αριθμός χρηστών που θα εμφανίζονται στις αναφορές SCORM';

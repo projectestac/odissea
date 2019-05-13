@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'Atribuir papel';
-$string['businessemail'] = 'Endereço da conta PayPal';
+$string['businessemail'] = 'Endereço de e-mail da conta PayPal';
 $string['businessemail_desc'] = 'E-mail da sua conta de negócio PayPal';
 $string['cost'] = 'Preço da inscrição';
 $string['costerror'] = 'O preço da inscrição tem que ser um valor numérico';
@@ -42,7 +42,7 @@ $string['enrolperiod_desc'] = 'Duração predefinida da inscrição.  Se for def
 $string['enrolperiod_help'] = 'Período de tempo em que a inscrição é válida, a partir do momento em que o utilizador é inscrito. Se desativado, a duração da inscrição será ilimitada.';
 $string['enrolstartdate'] = 'Data de início';
 $string['enrolstartdate_help'] = 'Se ativo, os utilizadores apenas podem ser inscritos a partir desta data.';
-$string['errdisabled'] = 'O módulo PayPal está desativado e não controla as notificações de pagamento.';
+$string['errdisabled'] = 'O módulo de inscrição PayPal está desativado e não controla as notificações de pagamento.';
 $string['erripninvalid'] = 'A notificação de pagamento instantâneo não foi verificada pelo PayPal.';
 $string['errpaypalconnect'] = 'Could not connect to {$a->url} to verify the instant payment notification: {$a->result}';
 $string['expiredaction'] = 'Ação de expiração da inscrição';
@@ -75,7 +75,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'E-mail p
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'ID exclusivo da conta PayPal do destinatário do pagamento (por exemplo, o vendedor).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = 'Montante do imposto cobrado no pagamento.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = 'Data/hora da notificação do PayPal ao Moodle acerca do pagamento.';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Número de identificação da transação original do vendedor para o pagamento do comprador, com o qual foi registado.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Número de identificação da transação original do vendedor para o pagamento do comprador, com o qual foi registado';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'O ID do utilizador que comprou a inscrição na disciplina.';
 $string['privacy:metadata:enrol_paypal:paypal_com'] = 'O módulo de inscrição PayPal transmite dados de utilizador do Moodle para o website PayPal.';
 $string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'Morada do comprador.';

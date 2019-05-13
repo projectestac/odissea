@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['multilangupgradeinfo'] = '<p>De syntax voor de filter voor meertalige inhoud is gewijzigd in Moodle 1.8. De  <lang> tag wordt niet meer ondersteund </p><p>Voorbeeld: <span lang="en" class="multilang">Hello!</span><span lang="es" class="multilang">Hola!</span></p><p><strong>Wil je de syntax in alle bestaande teksten nu upgraden?</strong></p>';
 $string['pluginname'] = 'Upgrade meertalige inhoud';
+$string['privacy:metadata'] = 'De Multilang upgrade-plugin bewaart geen persoonlijke gegevens.';

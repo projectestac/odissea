@@ -27,8 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Πόσα λεπτά απαιτούνται ώστε η αδράνεια ενός χρήστη να θεωρείται αποσύνδεση;';
 $string['online_users:addinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες';
-$string['online_users:myaddinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες στη σελίδα Η αρχική μου';
-$string['online_users:viewlist'] = 'Δείτε όλους τους συνδεδεμένους χρήστες';
+$string['online_users:myaddinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες στο Ταμπλό';
+$string['online_users:viewlist'] = 'Δείτε τη λίστα όλων των συνδεδεμένων χρηστών';
 $string['periodnminutes'] = 'τα τελευταία {$a} λεπτά';
-$string['pluginname'] = 'Συνδεδεμένοι Χρήστες';
+$string['pluginname'] = 'Συνδεδεμένοι χρήστες';
+$string['privacy:metadata'] = 'Το μπλοκ «Χρήστες σε σύνδεση» εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
 $string['timetosee'] = 'Αφαίρεση μετά από αδράνεια (λεπτά)';

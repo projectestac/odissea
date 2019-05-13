@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Dropbox APIキー';
 $string['cachelimit'] = 'キャッシュ制限';
-$string['cachelimit_info'] = 'Dropboxエイリアス/ショートカットのためのサーバ内キャッシュの最大ファイルサイズ (バイト) を入力してください。ソースが利用できない場合、キャッシュされたファイルが提供されます。空白またはゼロに設定した場合、サイズにかかわらず、すべてのファイルがキャッシュされます。';
+$string['cachelimit_info'] = 'Dropboxエイリアス/ショートカットのためのサーバ内キャッシュの最大ファイルサイズ (バイト) を入力してください。ソースが利用できない場合、キャッシュされたファイルが提供されます。空白またはゼロに設定した場合、すべてのファイルがサイズにかかわらずキャッシュされます。';
 $string['configplugin'] = 'Dropbox設定 ';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropboxフォルダを表示する';
-$string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Permission type」を「Full Dropbox」にしてください。';
+$string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="http://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Type of access」を「Full Dropbox」にしてください。';
 $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
 $string['notitle'] = 'タイトルなし';
 $string['oauth2redirecturi'] = 'OAuth 2リダイレクトURI';

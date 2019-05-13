@@ -50,9 +50,9 @@ $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensã
 $string['maxsizetodownload'] = 'Tamanho máximo da pasta a descarregar (MB)';
 $string['maxsizetodownload_help'] = 'O tamanho máximo da pasta que pode ser descarregada como um ficheiro ZIP. Se definir como zero, o tamanho da pasta é ilimitado.';
 $string['modulename'] = 'Pasta';
-$string['modulename_help'] = 'O recurso Pasta permite que o professor disponibilize uma série de ficheiros apenas numa hiperligação, evitando assim o excesso de ficheiros na página principal da disciplina. Pode criar uma pasta e carregar ficheiro a ficheiro ou carregar um único zip com vários ficheiros e extrair os mesmos dentro da pasta.
+$string['modulename_help'] = 'O recurso Pasta permite que o professor disponibilize vários ficheiros apenas com uma hiperligação, evitando assim o excesso de ficheiros na página principal da disciplina. Pode criar uma pasta e carregar ficheiro a ficheiro ou carregar um único zip com vários ficheiros e extrair os mesmos dentro da pasta.
 
-A pasta pode ser utilizada para:
+A Pasta pode ser utilizada para:
 
 * disponibilizar uma série de ficheiros num tópico, por exemplo bibliografia necessária para o exame em formato pdf
 * partilhar ficheiros entre os professores da disciplina (numa pasta oculta à qual os alunos não têm acesso)';

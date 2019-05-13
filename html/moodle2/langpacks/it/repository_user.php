@@ -29,5 +29,5 @@ $string['configplugin'] = 'Configurazione repository File personali';
 $string['emptyfilelist'] = 'Non ci sono file da visualizzare';
 $string['pluginname'] = 'File personali';
 $string['pluginname_help'] = 'File personali dell\'utente';
-$string['privacy:metadata'] = 'Il plugin risorsa "File personali" non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin Repository \'File personali\' non memorizza né trasmette dati personali.';
 $string['user:view'] = 'Visualizzare i file personali dell\'utente';

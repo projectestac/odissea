@@ -45,6 +45,7 @@ $string['notsupported'] = '';
 $string['notupgradedintro'] = 'Deze pagina geeft een lijs van opdrachten die gemaakt zijn met een oudere Moodleversie, maar die nog niet geüpgraded zijn naar de nieuwe opdrachtmodule in Moodle 2.3. Niet alle opdrachten kunnen geüpgraded worden - als ze gemaakt zijn met een aangepast subtype, dan moet dat subtype geüpgraded worden naar de nieuwe opdrachten plugin opmaak om de upgrade te kunnen voltooien.';
 $string['notupgradedtitle'] = 'Opdrachten die niet geüpgraded zijn';
 $string['pluginname'] = 'Opdracht upgrade helper';
+$string['privacy:metadata:preference:perpage'] = 'De opdracht upgrade bewaart ingestelde voorkeuren per pagina voor de gebruiker.';
 $string['select'] = 'Selecteer';
 $string['submissions'] = 'Inzendingen';
 $string['supported'] = 'Upgrade';

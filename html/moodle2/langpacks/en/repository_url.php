@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'URL repository type configuration';
 $string['download'] = 'Download';
 $string['pluginname'] = 'URL downloader';
-$string['privacy:metadata'] = 'The URL downloader repository plugin does not store or tranmit any personal data.';
+$string['privacy:metadata'] = 'The URL downloader repository plugin does not store or transmit any personal data.';
 $string['rename'] = 'Name';
 $string['url'] = 'URL';
 $string['url:view'] = 'Use URL downloader in file picker';

@@ -34,9 +34,9 @@ $string['footnotedesc'] = 'Qualsevol cosa que escriviu en aquesta àrea de text 
 $string['invert'] = 'Inverteix la barra de navegació';
 $string['invertdesc'] = 'Intercanvia el text i el fons de la barra de navegació a la part superior de la pàgina entre blanc i negre.';
 $string['logo'] = 'Logotip';
-$string['logodesc'] = 'Si us plau carregueu el vostre logo personalitzat aquí si voleu afegir-lo a la capçalera.<br>
-Si l\'altura del del vostre logo és major que 75 píxels afegiu la següent regla CSS a la caixa de CSS personalitzat que hi ha a continuació.<br>
-a.logo {height: 100px;} o el que tingui d\'altura el logo.';
+$string['logodesc'] = 'Carregueu el vostre logotip personalitzat aquí si voleu afegir-lo a la capçalera.<br>
+Si l\'alçària del vostre logotip és major que 75 píxels, afegiu la regla CSS següent a la caixa de CSS personalitzats que hi ha a continuació.<br>
+a.logo {height: 100px;} o el que el logotip faci d\'alçària.';
 $string['pluginname'] = 'Clean';
 $string['region-side-post'] = 'Dret';
 $string['region-side-pre'] = 'Esquerra';

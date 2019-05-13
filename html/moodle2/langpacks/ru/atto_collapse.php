@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Показать/спрятать дополнительные кнопки';
+$string['privacy:metadata'] = 'Плагин atto_collapse не хранит никаких персональных данных.';
 $string['settings'] = 'Настройка сворачивания панели';
 $string['showfewer'] = 'Показывать основные кнопки';
 $string['showgroups'] = 'Показывать первые n групп при свертывании';

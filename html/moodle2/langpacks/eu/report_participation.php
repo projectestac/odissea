@@ -29,6 +29,6 @@ $string['eventreportviewed'] = 'Partaidetza-txostena ikusi da';
 $string['nologreaderenabled'] = 'Ez dago agerraldien irakurlerik gaituta';
 $string['page-report-participation-index'] = 'Ikastaroaren partaidetza-txostena';
 $string['page-report-participation-x'] = 'Edozein partaidetza-txosten';
-$string['participation:view'] = 'Ikastaroaren partaidetza-txostena ikusi';
+$string['participation:view'] = 'Ikusi ikastaroaren partaidetza-txostena';
 $string['pluginname'] = 'Ikastaroaren partaidetza';
 $string['privacy:metadata'] = 'Ikastaroaren partaidetza pluginak ez du datu pertsonalik biltzen.';

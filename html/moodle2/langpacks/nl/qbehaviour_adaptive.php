@@ -37,3 +37,4 @@ $string['gradingdetailswithpenalty'] = 'Cijfers voor deze inzending: {$a->raw}/{
 $string['gradingdetailswithtotalpenalty'] = 'Cijfers voor deze inzending: {$a->raw}/{$a->max}.  Deze inzending heeft een strafpunt gekregen van {$a->penalty}. Totaal aantal strafpunten tot nu toe: {$a->totalpenalty}';
 $string['notcomplete'] = 'Niet compleet';
 $string['pluginname'] = 'Adaptieve modus';
+$string['privacy:metadata'] = 'De adaptieve modus vraaggedragsplugin bewaart geen persoonlijke gegevens.';

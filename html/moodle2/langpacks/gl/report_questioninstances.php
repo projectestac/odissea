@@ -31,6 +31,7 @@ $string['getreport'] = 'Obter o informe';
 $string['hiddenquestions'] = 'Agochado';
 $string['intro'] = 'Este informe lista todos os contextos no sistema onde hai preguntas dun tipo particular.';
 $string['pluginname'] = 'Instancias da pregunta';
+$string['privacy:metadata'] = 'O engadido de instancias da pregunta non almacena ningún dato persoal.';
 $string['questioninstances:view'] = 'Ver o informe das instancias da pregunta';
 $string['reportforallqtypes'] = 'Informe para todos os tipos de pregunta';
 $string['reportformissingqtypes'] = 'Informe para as preguntas de tipo descoñecido';

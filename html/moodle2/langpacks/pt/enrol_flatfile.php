@@ -66,10 +66,10 @@ Poderá assemelhar-se a algo como:
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
 $string['privacy:metadata:enrol_flatfile'] = 'O módulo inscrição Ficheiro de texto (CSV) pode armazenar dados pessoais relacionados com inscrições futuras na tabela enrol_flatfile';
-$string['privacy:metadata:enrol_flatfile:action'] = 'A ação de inscrição esperada na data atribuída.';
-$string['privacy:metadata:enrol_flatfile:courseid'] = 'O couseid cuja inscrição se relaciona.';
-$string['privacy:metadata:enrol_flatfile:roleid'] = 'O ID do papel a ser atribuído ou revogado.';
-$string['privacy:metadata:enrol_flatfile:timeend'] = 'A hora em que a alteração da inscrição acaba.';
-$string['privacy:metadata:enrol_flatfile:timemodified'] = 'A hora de modificação desta alteração de inscrição.';
-$string['privacy:metadata:enrol_flatfile:timestart'] = 'A hora em que a alteração da inscrição inicia.';
-$string['privacy:metadata:enrol_flatfile:userid'] = 'O id do utilizador relacionado com a atribuição de papel.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'A ação de inscrição esperada na data definida.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'O ID da disciplina relacionado com a inscrição';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'O ID do papel a ser atribuído ou não atribuído';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'A data/hora em que a alteração da inscrição acaba.';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'A data/hora de modificação desta alteração de inscrição.';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'A data/hora a que inicia a inscrição';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'O ID do utilizador relacionado com a atribuição de papel';

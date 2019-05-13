@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Dateifeld';
 $string['pluginname'] = 'Datei';
-$string['privacy:metadata'] = 'Die Dateifeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Dateifeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

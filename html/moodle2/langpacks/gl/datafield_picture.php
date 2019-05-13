@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo de imaxe';
 $string['pluginname'] = 'Imaxe';
+$string['privacy:metadata'] = 'O compoñente de campo de imaxe non almacena ningún dato persoal, usa táboas definidas en mod_data.';

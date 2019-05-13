@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Veld voor keuzeknop';
 $string['pluginname'] = 'Selectierondje';
+$string['privacy:metadata'] = 'De selectierondje-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

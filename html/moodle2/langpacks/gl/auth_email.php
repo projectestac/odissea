@@ -31,3 +31,4 @@ $string['auth_emailrecaptcha'] = 'Engade un formulario de confirmación visual o
 $string['auth_emailrecaptcha_key'] = 'Activar o elemento reCAPTCHA';
 $string['auth_emailsettings'] = 'Axustes';
 $string['pluginname'] = 'Autorexistro baseado no correo';
+$string['privacy:metadata'] = 'O engadido de autenticación no autorexistro baseado no correo non almacena ningún dato persoal.';

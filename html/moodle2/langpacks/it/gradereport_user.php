@@ -29,6 +29,7 @@ $string['eventgradereportviewed'] = 'Visualizzata scheda individuale';
 $string['myself'] = 'Me stesso';
 $string['otheruser'] = 'Utente';
 $string['pluginname'] = 'Scheda individuale';
+$string['privacy:metadata:preference:gradereport_user_view_user'] = 'Scelta di visualizzare il report come utente corrente o come altro utente nel registro valutatore.';
 $string['tablesummary'] = 'La tabella è organizzata come elenco di elementi valutati e delle rispettive categorie. E\' evidenziata l\'appartenenza di un elemento ad una categoria.';
 $string['user:view'] = 'Visualizzare la propria scheda individuale';
 $string['viewas'] = 'Visualizza report come';

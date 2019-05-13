@@ -421,6 +421,7 @@ $string['min'] = 'Lägsta';
 $string['missingscale'] = 'Du måste välja en skala';
 $string['mode'] = 'Läge';
 $string['modgrade'] = 'Betyg';
+$string['modgrade_help'] = 'Välj bedömningssättet som du vill använda för denna aktivitet. Om du markerar "skala" kan du välja en skala från en rullgardinsmeny. Om du markerar "poäng" kan du ange ett högsta möjliga betyg för denna aktivitet.';
 $string['modgrademaxgrade'] = 'Maximum poäng';
 $string['modgradetype'] = 'Typ';
 $string['modgradetypenone'] = 'Ingen';

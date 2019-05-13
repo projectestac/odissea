@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_menu:addinstance'] = 'Добавлять новый блок «Меню блога»';
 $string['pluginname'] = 'Меню блога';
+$string['privacy:metadata'] = 'Блок «Меню блога» только показывает данные, хранящиеся в других местах.';

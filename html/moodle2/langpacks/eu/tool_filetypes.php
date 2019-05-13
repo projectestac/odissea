@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfiletypes'] = 'Gehitu fitxategi-mota berria';
 $string['corestring'] = 'Ordezko hizkuntza-katea';
 $string['corestring_help'] = 'Ezarpen hau erabil daiteke mimetypes.php hizkuntza-fitxategia nagusiaren ordez beste hizkuntza-kate bat aukeratzeko. Normalean hutsik utzi behar da. Mota pertsonalizatuetarako erabili deskribapen-eremua.';
-$string['defaulticon'] = 'Berezko ikonoa MIME motarako';
+$string['defaulticon'] = 'Lehenetsitako ikonoa MIME motarako';
 $string['defaulticon_help'] = 'MIME mota bereko fitxategi-luzapen anitz badago, markatu aukera hau luzapen bat hautatu eta bere ikonoa MIME mota gisa erabilia izan dadin zehazteko.';
 $string['deletea'] = 'Ezabatu {$a}';
 $string['delete_confirmation'] = 'Ziur zaude <strong>.{$a}</strong> ezabatu nahi duzula?';
@@ -37,10 +37,10 @@ $string['description'] = 'Deskribapen pertsonalizatua';
 $string['description_help'] = 'Fitxategi-luzapenaren deskribapen sinplea, \'Kindle ebook\' adibidez. Zure guneak hizkuntza anitz onartu eta iragazki eleanitza erabiltzen baditu, eremu honetan etiketa eleanitzak erabili ditzakezu deskribapena hizkuntza ezberdinetan eskaintzeko.';
 $string['descriptiontype'] = 'Deskribapen-mota';
 $string['descriptiontype_custom'] = 'Formulario honetako deskribapen pertsonalizatua';
-$string['descriptiontype_default'] = 'Berezkoa (MIME mota edo dagokion hizkuntza-katea eskuragarri badago)';
+$string['descriptiontype_default'] = 'Lehenetsitakoa (MIME mota edo dagokion hizkuntza-katea eskuragarri badago)';
 $string['descriptiontype_help'] = 'Deskribapena zehazteko hiru modu daude.
 
-* Berez MIME mota erabiltzen da. mimetypes.php fitxategian MIME mota horri dagokion hizkuntza-katea badago, hori erabiliko da; bestela MIME mota bera erakutsiko zaie erabiltzaileei.
+* Modu lehenetsian MIME mota erabiltzen da. mimetypes.php fitxategian MIME mota horri dagokion hizkuntza-katea badago, hori erabiliko da; bestela MIME mota bera erakutsiko zaie erabiltzaileei.
 * Formulario honetan bertan deskribapen pertsonalizatu bat zehaz dezakezu.
 * mimetypes.php fitxategiko hizkuntza-kate baten izena zehaz dezakezu MIME motaren ordez erakusteko.';
 $string['descriptiontype_lang'] = 'Ordezko hizkuntza-katea (mimetypes.php-etik)';
@@ -48,7 +48,7 @@ $string['displaydescription'] = 'Deskribapena';
 $string['editfiletypes'] = 'Editatu existitzen den fitxategi-mota bat';
 $string['emptylist'] = 'Ez dago definitutako fitxategi-motarik.';
 $string['error_addentry'] = 'Fitxategi-motaren luzapena, deskribapena, MIME mota eta ikonoak ezin dute lerro-aldaketa karaktererik edota puntu eta komarik eduki.';
-$string['error_defaulticon'] = 'Beste fitxategi-luzapen bat MIME mota bereko berezko ikono gisa markatuta dago jada.';
+$string['error_defaulticon'] = 'Beste fitxategi-luzapen bat MIME mota bereko lehenetsitako ikono gisa markatuta dago jada.';
 $string['error_extension'] = '<strong>{$a}</strong> fitxategi-luzapena dagoeneko existitzen da edo baliogabea da. Fitxategi-luzapenak bakarrak izan behar dute eta ezin dute karaktere berezirik eduki.';
 $string['error_notfound'] = '{$a} luzapena duen fitxategi-mota ezin izan da aurkitu.';
 $string['extension'] = 'Luzapena';
@@ -63,8 +63,8 @@ $string['mimetype'] = 'MIME mota';
 $string['mimetype_help'] = 'Fitxategi-mota honekin lotutako MIME mota, \'application/x-mobipocket-ebook\' adibidez';
 $string['pluginname'] = 'Fitxategi-motak';
 $string['privacy:metadata'] = 'Fitxategi-motak pluginak ez du datu pertsonalik biltzen.';
-$string['revert'] = 'Berrezarri {$a} Moodle-ko berezko balioetara';
-$string['revert_confirmation'] = 'Ziur zaude <strong>.{$a}</strong> Moodle-ko berezko balioetara berrezarri nahi duzula, zure aldaketak baztertuta?';
+$string['revert'] = 'Berrezarri {$a} Moodle-ko lehenetsitako balioetara';
+$string['revert_confirmation'] = 'Ziur zaude <strong>.{$a}</strong> Moodle-ko lehenetsitako balioetara berrezarri nahi duzula, zure aldaketak baztertuta?';
 $string['revertfiletype'] = 'Berrezarri fitxategi-mota';
 $string['source'] = 'Mota';
 $string['source_custom'] = 'Pertsonalizatua';

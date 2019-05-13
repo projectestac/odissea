@@ -29,4 +29,5 @@ $string['page-report-progress-index'] = 'Informe de completado da actividade';
 $string['page-report-progress-user'] = 'Informe de completado da actividade do usuario';
 $string['page-report-progress-x'] = 'Calquera informe de completado da actividade';
 $string['pluginname'] = 'Completado da actividade';
+$string['privacy:metadata'] = 'O informe de completado da actividade só amosa datos almacenados noutros lugares.';
 $string['progress:view'] = 'Ver os informes de completado da actividade';

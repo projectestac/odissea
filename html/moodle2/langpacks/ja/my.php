@@ -42,3 +42,4 @@ $string['reseterror'] = 'あなたのページのリセット中にエラーが�
 $string['reseteveryonesdashboard'] = 'すべてのユーザのダッシュボードをリセットする';
 $string['reseteveryonesprofile'] = 'すべてのユーザのプロファイルをリセットする';
 $string['resetpage'] = 'ページをデフォルトにリセットする';
+$string['unabletoaccess'] = 'このセッションではユーザが作成したスクリプトはセキュリティ上の理由から無効にされています。';

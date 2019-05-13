@@ -48,5 +48,6 @@ $string['maximumsubmissionsize_help'] = 'Размер файлов, загруж
 $string['nonexistentfiletypes'] = 'Следующие типы файлов не были распознаны: {$a}';
 $string['numfilesforlog'] = 'Количество файл(ов): {$a}.';
 $string['pluginname'] = 'Ответ в виде файла';
+$string['privacy:metadata:filepurpose'] = 'Файлы, загруженные для ответа на это задание';
 $string['siteuploadlimit'] = 'Ограничение загрузки на сайте';
 $string['submissionfilearea'] = 'Загружаемых файлов в ответе';

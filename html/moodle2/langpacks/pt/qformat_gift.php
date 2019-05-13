@@ -37,4 +37,4 @@ $string['nohandler'] = 'Nenhum manipulador para o tipo de pergunta {$a}';
 $string['pluginname'] = 'Formato GIFT';
 $string['pluginname_help'] = 'O formato GIFT permite importar e exportar como ficheiro de texto perguntas do tipo escolha múltipla, verdadeiro/falso, resposta curta, correspondência, preenchimento de espaços, numéricas e de desenvolvimento.';
 $string['pluginname_link'] = 'qformat/gift';
-$string['privacy:metadata'] = 'O módulo Pergunta em formato GIFT não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta em formato GIFT não armazena quaisquer dados pessoais.';

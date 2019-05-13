@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_configurable_reports', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -202,6 +202,7 @@ $string['excludedeletedusers'] = 'Exclure les utilisateurs supprimés (uniquemen
 $string['executeat'] = 'Exécuter à';
 $string['executeatinfo'] = 'Le Cron Moodle lancera les requêtes SQL planifiées après l\'heure sélectionnée. Une fois par 24h.';
 $string['export_csv'] = 'Exporter au format CSV';
+$string['export_json'] = 'Export au format JSON';
 $string['export_ods'] = 'Exporter en format ODS';
 $string['exportoptions'] = 'Options d\'exportation';
 $string['exportreport'] = 'Exporter le rapport';
@@ -311,6 +312,18 @@ $string['previousdays'] = 'Jours précédents';
 $string['previousend'] = 'Date de fin précédente';
 $string['previousstart'] = 'Date de début précédente';
 $string['printreport'] = 'Imprimer le rapport';
+$string['privacy:metadata:block_configurable_reports'] = 'Le bloc des rapports configurables contient des rapports de cours personnalisables.';
+$string['privacy:metadata:block_configurable_reports:components'] = 'Configuration du rapport. Il contient la requête,
+les filtres....';
+$string['privacy:metadata:block_configurable_reports:courseid'] = 'ID du cours';
+$string['privacy:metadata:block_configurable_reports:global'] = 'Si le rapport est accessible à partir de tous les cours ou non.';
+$string['privacy:metadata:block_configurable_reports:lastexecutiontime'] = 'Le temps qu\'il a fallu pour exécuter ce rapport la dernière fois qu\'il a été exécuté,
+en millisecondes.';
+$string['privacy:metadata:block_configurable_reports:name'] = 'Le nom du rapport';
+$string['privacy:metadata:block_configurable_reports:ownerid'] = 'L\'ID de l\'utilisateur qui a créé le rapport';
+$string['privacy:metadata:block_configurable_reports:summary'] = 'La description du rapport';
+$string['privacy:metadata:block_configurable_reports:type'] = 'Le type du rapport';
+$string['privacy:metadata:block_configurable_reports:visible'] = 'Si le rapport est visible ou non';
 $string['puserfield'] = 'Valeur du champ Utilisateur';
 $string['puserfield_summary'] = 'Utilisateur avec la valeur sélectionnée dans le champ sélectionné';
 $string['queryfailed'] = 'Échec de la requête <code><pre>{$a}</pre></code>';

@@ -30,3 +30,4 @@ $string['badges:myaddinstance'] = 'Добавлять новый блок «Мо
 $string['nothingtodisplay'] = 'У Вас нет значков для отображения';
 $string['numbadgestodisplay'] = 'Количество отображаемых последних значков';
 $string['pluginname'] = 'Последние значки';
+$string['privacy:metadata'] = 'Блок «Последние значки» только показывает данные, хранящиеся в других местах.';

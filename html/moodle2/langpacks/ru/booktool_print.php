@@ -33,3 +33,4 @@ $string['printchapter'] = 'Печатать эту главу';
 $string['printdate'] = 'Дата';
 $string['printedby'] = 'Напечатано:';
 $string['print:print'] = 'Печатать книгу';
+$string['privacy:metadata'] = 'Плагин «Печать книги» не хранит никаких персональных данных.';

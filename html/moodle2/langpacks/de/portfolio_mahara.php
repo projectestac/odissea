@@ -49,6 +49,6 @@ $string['pf_description'] = 'Abonnieren <b>und</b> veröffentlichen Sie diesen D
 $string['pf_name'] = 'Portfolio-Service';
 $string['pluginname'] = 'Mahara ePortfolio';
 $string['privacy:metadata'] = 'Dieses Plugin sendet Daten an ein extern verbundene Mahara-Anwendung. Es speichert lokal keine Daten.';
-$string['privacy:metadata:data'] = 'Persönliche Daten über das Portfolio-Subsystem weitergeleitet';
+$string['privacy:metadata:data'] = 'Personenbezogene Daten, die vom Portfolio-Subsystem übergeben wurden';
 $string['senddisallowed'] = 'Sie können momentan keine Daten zu Mahara übertragen';
 $string['url'] = 'URL';

@@ -56,5 +56,6 @@ $string['placeholder_help'] = 'I segna posto sono elementi speciali presenti in 
 E\' fondamentale copiarli esattamente come appaiono nella stringa originale.  Non devono essere tradotti né cambiata la direzione sinistra-destra.';
 $string['placeholderwarning'] = 'la stringa contiene un segna posto';
 $string['pluginname'] = 'Personalizzazione lingua';
+$string['privacy:metadata'] = 'Il plugin \'Personalizzazione lingua\' non memorizza dati personali.';
 $string['savecheckin'] = 'Salva le modifiche nel language pack';
 $string['savecontinue'] = 'Applica le modifiche e continua a modificare';

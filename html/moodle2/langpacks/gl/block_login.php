@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = 'Engadir un novo bloque de inicio';
 $string['pluginname'] = 'Acceso';
+$string['privacy:metadata'] = 'O bloque de acceso só fornece unha forma de iniciar sesión e non gardar os datos en si.';

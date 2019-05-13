@@ -36,5 +36,5 @@ $string['pathdvisvgm'] = 'Pfad zu <i>dvisvgm</i>';
 $string['pathlatex'] = 'Pfad zu <i>latex</i>';
 $string['pathmimetex'] = 'Pfad zu <i>mimetex</i>';
 $string['pathmimetexdesc'] = 'Moodle nutzt sein eigenes MimeTeX, wenn kein anderer gültiger Pfad angegeben ist.';
-$string['privacy:metadata'] = 'Der TeX-Filter speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der TeX-Filter speichert keine personenbezogenen Daten.';
 $string['source'] = 'TeX Quellcode';

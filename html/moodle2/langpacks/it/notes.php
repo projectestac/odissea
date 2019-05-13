@@ -61,6 +61,13 @@ $string['page-notes-index'] = 'Pagina principale delle note';
 $string['page-notes-x'] = 'Qualsiasi pagina con note';
 $string['personal'] = 'personale';
 $string['personalnotes'] = 'Annotazioni personali';
+$string['privacy:metadata:core_notes'] = 'Il componente Note memorizza le note dell\'utente all\'interno del sottosistema core.';
+$string['privacy:metadata:core_notes:content'] = 'Contenuto della nota.';
+$string['privacy:metadata:core_notes:courseid'] = 'ID del corso associato alla nota.';
+$string['privacy:metadata:core_notes:created'] = 'Data e ora di creazione della nota.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'Data e ora dell\'ultima modifica della nota.';
+$string['privacy:metadata:core_notes:publishstate'] = 'Stato di pubblicazione della nota.';
+$string['privacy:metadata:core_notes:userid'] = 'ID dell\'utente associato alla nota.';
 $string['publishstate'] = 'Contesto';
 $string['publishstate_help'] = 'Il contesto delle annotazioni determina chi le può leggere:
 

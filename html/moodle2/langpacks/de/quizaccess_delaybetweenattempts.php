@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Verzögerung zwischen Versuchen';
-$string['privacy:metadata'] = 'Die Verzögerung zwischen Testversuchen speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Die Verzögerung zwischen Testversuchen speichert keine personenbezogenen Daten.';
 $string['youcannotwait'] = 'Dieser Test wird beendet, bevor Ihnen der Start eines weiteren Versuchs erlaubt wird.';
 $string['youmustwait'] = 'Sie müssen abwarten, bevor Sie eine Wiederholung für diesen Test versuchen dürfen. Sie dürfen einen weiteren Versuch nach {$a} beginnen.';

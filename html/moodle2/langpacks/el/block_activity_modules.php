@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'Προσθήκη νέου μπλοκ δραστηριοτήτων';
 $string['pluginname'] = 'Δραστηριότητες';
+$string['privacy:metadata'] = 'Το μπλοκ Δραστηριότητες εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';

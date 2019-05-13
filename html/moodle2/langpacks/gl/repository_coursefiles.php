@@ -31,4 +31,5 @@ $string['emptyfilelist'] = 'Non hai ficheiros que amosar.';
 $string['notitle'] = 'sen-título';
 $string['pluginname'] = 'Ficheiros legados do curso';
 $string['pluginname_help'] = 'Ficheiros legados do curso';
+$string['privacy:metadata'] = 'O engadido de repositorio de ficheiros legados do curso non almacena ou transmite datos persoais.';
 $string['remember'] = 'Lémbreme';

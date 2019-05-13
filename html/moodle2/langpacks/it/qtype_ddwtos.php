@@ -36,3 +36,4 @@ $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia su un tes
 $string['pluginnameediting'] = 'Modifica domanda Trascina e rilascia su un testo';
 $string['pluginname_help'] = 'Inserisci del testo del tipo "Il [[1]] saltò sopra il [[2]]", quindi inserisci sotto le parole mancanti in 1 e 2,';
 $string['pluginnamesummary'] = 'Nel testo della domanda le parole mancanti vengono riempite con il trascina e rilascia.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Trascina e rilascia su un testo\' non memorizza dati personali.';

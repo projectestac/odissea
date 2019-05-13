@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'Foi entregado un traballo enviado.';
 $string['event_assessable_uploaded'] = 'Foi enviado un ficheiro.';
 $string['pluginname'] = 'Enviar';
+$string['privacy:metadata'] = 'O engadido de envío de tarefas non almacena ningunha información persoal.';

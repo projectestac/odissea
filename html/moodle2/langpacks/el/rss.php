@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['rss'] = 'RSS';
+$string['privacy:metadata:core_userkey'] = 'Τα κλειδιά του χρήστη χρησιμοποιούνται για την πρόσβαση σε τροφοδοσία RSS από μια διεύθυνση URL';
+$string['rss'] = 'Τροφοδοσίες RSS';

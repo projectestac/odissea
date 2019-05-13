@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = 'Visualizza punteggio degli obiettivi';
 $string['objectivex'] = 'Obiettivo {$a}';
 $string['pluginname'] = 'Report degli obiettivi';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'Indica se visualizzare il punteggio degli obiettivi nel report SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Numero di utenti da visualizzare nei report dello SCORM';
 $string['score'] = 'punteggio';
 $string['status'] = 'stato';

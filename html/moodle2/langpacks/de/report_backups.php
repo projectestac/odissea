@@ -30,6 +30,6 @@ $string['logsofbackupexecutedon'] = 'Logdaten der Sicherung von {$a}';
 $string['nobackupsfound'] = 'Keine Sicherungen gefunden';
 $string['nologsfound'] = 'Keine Logdaten für diese Sicherung gefunden';
 $string['pluginname'] = 'Backupbericht';
-$string['privacy:metadata'] = 'Das Plugin für Backupberichte speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Plugin für Backupberichte speichert keine personenbezogenen Daten.';
 $string['strftimetime'] = '%H:%M:%S';
 $string['viewlogs'] = 'Logdaten anzeigen';

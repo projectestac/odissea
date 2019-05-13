@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ontbrekend gedrag';
+$string['privacy:metadata'] = 'De ontbrekend vraaggedrag-plugin bewaart geen persoonlijke gegevens.';
 $string['questionusedunknownmodel'] = 'Deze vraag is geprobeerd met een gedrag dat niet beschikbaar is. We proberen de vraag te tonen, maar sommige delen kunnen ontbreken of fout zijn.';

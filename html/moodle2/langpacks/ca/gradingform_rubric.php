@@ -41,8 +41,8 @@ $string['criterionremark'] = 'Nota per al criteri {$a->description}: {$a->remark
 $string['definerubric'] = 'Defineix rúbrica';
 $string['description'] = 'Descripció';
 $string['enableremarks'] = 'Permet a l\'avaluador afegir observacions en format text al final de cada criteri';
-$string['err_mintwolevels'] = 'Cada criteri ha de tindre al menys dos nivells';
-$string['err_nocriteria'] = 'La rúbrica ha de tindre al menys un criteri';
+$string['err_mintwolevels'] = 'Cada criteri ha de tenir almenys dos nivells';
+$string['err_nocriteria'] = 'La rúbrica ha de tenir almenys un criteri';
 $string['err_nodefinition'] = 'La definició del nivell no pot estar buida';
 $string['err_nodescription'] = 'La descripció del criteri no pot estar buida';
 $string['err_novariations'] = 'Els nivells del criteri no poden tenir tots el mateix nombre de punts';
@@ -57,14 +57,14 @@ $string['levelsgroup'] = 'Nivells del grup';
 $string['lockzeropoints'] = 'Calcula la qualificació basada en la rúbrica amb una qualificació mínima de 0';
 $string['lockzeropoints_help'] = 'Aquest paràmetre només té efecte si la suma del nombre mínim de punts de cada criteri és superior a zero. Si es marca, la mínima puntuació possible de la rúbrica serà superior a zero. Si es desmarca, la mínima puntuació possible de la rúbrica es farà correspondre amb la puntuació mínima disponible de l\'activitat (la qual és zero si no s\'utilitza cap escala).';
 $string['name'] = 'Nom';
-$string['needregrademessage'] = 'La definició de la rúbrica ha canviat després que aquest estudiant hagi estat qualificat. L\'estudiant no pot veure aquesta rúbrica malgrat que comproveu la rúbrica i actualitzeu la qualificació.';
+$string['needregrademessage'] = 'La definició de la rúbrica ha canviat després que aquest estudiant hagi estat qualificat. L\'estudiant no pot veure aquesta rúbrica fins que comproveu la rúbrica i actualitzeu la qualificació.';
 $string['pluginname'] = 'Rúbrica';
 $string['previewrubric'] = 'Previsualitza rúbrica';
 $string['regrademessage1'] = 'Ara desareu canvis en una rúbrica que ha estat utilitzada per a qualificar. Indiqueu si les qualificacions que ja existeixen s\'han de revisar. Si ho configureu així, llavors, la rúbrica s\'ocultarà als estudiants fins que els seus elements es tornin a qualificar.';
 $string['regrademessage5'] = 'Ara desareu canvis en una rúbrica que ha estat utilitzada per a qualificar. El quadern de notes no canviarà, però la rúbrica s\'ocultarà als estudiants fins que els seus elements es tornin a qualificar.';
 $string['regradeoption0'] = 'No marqueu per requalificar';
 $string['regradeoption1'] = 'Marqueu per requalificar';
-$string['restoredfromdraft'] = 'NOTA: El darrer intent per qualificar aquesta persona no ha sigut desat correctament per això les qualificacions en brut han sigut restaurades. Si voleu cancel·lar aquests canvis utilitzeu el botó \'Cancel·la\' de sota.';
+$string['restoredfromdraft'] = 'NOTA: El darrer intent per qualificar aquesta persona no ha estat desat correctament, per això les qualificacions en brut han estat restaurades. Si voleu cancel·lar aquests canvis utilitzeu el botó «Cancel·la» de sota.';
 $string['rubric'] = 'Rúbrica';
 $string['rubricmapping'] = 'Puntuació per qualificar el mapatge de les regles.';
 $string['rubricmappingexplained'] = 'La puntuació mínima per a aquesta rúbrica és de <b>{$a->minscore} punts</b> i es
@@ -72,7 +72,7 @@ convertirà en la qualificació mínima disponible per a aquest mòdul (la qual 
 La puntuació màxima de <b>{$a->maxscore} punts</b> es convertirà en la qualificació màxima. <br/>
 Les puntuacions intermèdies es convertiran i s\'arrodoniran a la qualificació més pròxima. <br/>
 Si una escala s\'usa com a qualificació, la puntuació es convertirà en elements de l\'escala com si fossin nombres enters consecutius.';
-$string['rubricnotcompleted'] = 'Si us plau trieu alguna cosa per cada criteri.';
+$string['rubricnotcompleted'] = 'Trieu alguna cosa per a cada criteri.';
 $string['rubricoptions'] = 'Opcions de rúbrica';
 $string['rubricstatus'] = 'Estat de la rúbrica actual';
 $string['save'] = 'Desa';

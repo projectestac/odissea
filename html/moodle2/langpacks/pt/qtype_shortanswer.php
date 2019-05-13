@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreanswerblanks'] = 'Adicionar mais {no} campos para opções de resposta';
+$string['addmoreanswerblanks'] = 'Adicionar mais {no} opções de resposta';
 $string['answer'] = 'Resposta: {$a}';
 $string['answermustbegiven'] = 'Tem de introduzir uma resposta se introduziu a nota ou feedback.';
 $string['answerno'] = 'Resposta {$a}';
@@ -40,7 +40,7 @@ $string['pleaseenterananswer'] = 'Insira uma resposta.';
 $string['pluginname'] = 'Resposta curta';
 $string['pluginnameadding'] = 'A adicionar pergunta de resposta curta';
 $string['pluginnameediting'] = 'A editar pergunta de resposta curta';
-$string['pluginname_help'] = 'Em resposta a uma pergunta (que pode incluir uma imagem) o aluno insere uma palavra ou frase curta. Podem existir várias respostas corretas, com diferentes notas associadas. Se a opção "Respeitar maiúsculas/minúsculas" estiver selecionada, pode associar diferentes notas a respostas como "palavra" ou "Palavra".';
+$string['pluginname_help'] = 'Em resposta a uma pergunta (que pode incluir uma imagem) o aluno insere uma palavra ou uma frase curta. Podem existir várias respostas corretas, com diferentes notas associadas. Se a opção "Respeitar maiúsculas/minúsculas" estiver selecionada, pode associar diferentes notas a respostas como "palavra" ou "Palavra".';
 $string['pluginname_link'] = 'pergunta/tipo/respostacurta';
-$string['pluginnamesummary'] = 'Permite uma resposta de uma ou poucas palavras que são avaliadas com base em várias opções possíveis de resposta definidas pelo professor, as quais podem conter carateres universais.';
+$string['pluginnamesummary'] = 'Permite uma resposta de uma ou poucas palavras que são avaliadas com base em várias opções possíveis de resposta definidas pelo professor, as quais podem conter caracteres universais.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Resposta curta não armazena quaisquer dados pessoais.';

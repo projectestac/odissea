@@ -35,7 +35,7 @@ $string['currentstatusnext'] = 'Hurrengo exekuzioa';
 $string['currentstatusnext_help'] = 'Batzuetan esleipena automatikoki berriz exekutatzeko programatzen da aurretik exekutatu bada ere. Hau bidalketak egiteko epea luzatu izanagatik gertatu daiteke, adibidez.';
 $string['currentstatusreset'] = 'Berrabiarazi';
 $string['currentstatusreset_help'] = 'Aukera hau markaturik formulario gordez gero oraingo egoera berrabiaraziko da. Aurreko exekuzioaren inguruko informazio guztia ezabatuko da esleipena berriz exekutatzeko (goian gaituz gero).';
-$string['currentstatusresetinfo'] = 'Exekuzioaren emaitza berrabiarazteko aukera markatu eta formularioa gorde.';
+$string['currentstatusresetinfo'] = 'Markatu eta formularioa gorde laukitxoa exekuzioaren emaitza berrabiarazteko.';
 $string['currentstatusresult'] = 'Duela gutxiko exekuzioaren emaitza';
 $string['enablescheduled'] = 'Gaitu esleipen automatikoa.';
 $string['enablescheduledinfo'] = 'Bidalketak automatikoki esleitu bidalketa-aldia amaitzean';
@@ -59,4 +59,4 @@ $string['scheduledallocationsettings_help'] = 'Esleipen automatikoa gaituz gero 
 Ausazko esleipena formulario honetan zehaztutako parametroen arabera exekutatzen da. Honek esan nahi du, beraz, esleipen automatikoak irakasleak bidalketa aldia bukatzean ausazko esleipena beheko ezarpenak erabiliz egingo balu bezala funtzionatzen duela.
 
 Kontuan izan esleipen automatikoa *ez* dela exekutatzen irakasleak eskuz tailerraren aldia bidalketak egiteko epea amaitu baino lehen ebaluazio-aldira aldatzen badu. Kasu horretan irakasleak esleipena bere kabuz egin beharko du. Esleipen automatikoa bereziki erabilgarria da aldia automatikoki aldatzeko funtzioarekin batera erabiltzen denean.';
-$string['setup'] = 'Esleipen automatikoa prestatu';
+$string['setup'] = 'Prestatu esleipen automatikoa';

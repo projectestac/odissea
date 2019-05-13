@@ -26,9 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID del cliente';
+$string['noauthtoken'] = 'No se ha recibido una ficha de autenticación (token) de Google. Por favor asegúrese de que le ha permitido a Moodle que acceda a su cuenta de Google';
 $string['nooauthcredentials'] = 'Se requieren las credenciales de OAuth.';
+$string['nooauthcredentials_help'] = 'Para usar el plugin del portafolio de Google Drive debe configurar credenciales de OAuth en los ajustes del portafolio.';
 $string['nosessiontoken'] = 'No existe ficha de sesión que impida exportar a google.';
 $string['oauthinfo'] = '<p> Para utilizar este plugin, debe registrar su sitio en Google, como se describe en la documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p> Como parte del proceso de registro, tendrá que introducir la siguiente URL como "Authorized Redirect URIs \': </p><p> {$a->callbackurl} </p> Una vez registrado, se le proporcionará un ID de cliente y el secreto que se puede utilizar para configurar los plugins de Google Drive y Picasa.</p>';
 $string['pluginname'] = 'Google Drive';
-$string['secret'] = 'Secreta';
+$string['privacy:metadata'] = 'Este plugin envía datos externamente hacia una cuenta Google enlazada. No almacena datos localmente.';
+$string['privacy:metadata:data'] = 'Datos personales enviados a través del subsistema de portafolio.';
+$string['secret'] = 'Secreto';
 $string['sendfailed'] = 'No se ha podido transferir el archivo {$a} a google';

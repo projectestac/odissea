@@ -39,5 +39,5 @@ $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Permet la tramesa de text en línia';
 $string['pluginname'] = 'Trameses de text en línia';
 $string['wordlimit'] = 'Límit de paraules';
-$string['wordlimitexceeded'] = 'El límit de paraules per a aquesta tasca és de {$a->limit} paraules i esteu tractant d\'enviar  {$a->count} paraules. Reviseu la vostra tramesa i torneu-ho a provar.';
+$string['wordlimitexceeded'] = 'El límit de paraules per a aquesta tasca és de {$a->limit} paraules i intenteu trametre\'n {$a->count}. Reviseu la vostra tramesa i torneu-ho a provar.';
 $string['wordlimit_help'] = 'Si la tramesa de text en línia està habilitada, aquest és el nombre màxim de paraules que un estudiant pot trametre.';

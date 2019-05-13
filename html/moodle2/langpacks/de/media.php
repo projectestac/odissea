@@ -41,6 +41,6 @@ Wenn die MediaPlayer nicht aktiviert sind, werden die Mediendateien nicht eingeb
 
 Wenn zwei MediaPlayer das gleiche Format unterstützen, können beide aktiviert werden, um das Abspielen auf unterschiedlichen digitalen Endgeräten zu ermöglichen oder verschiedene Dateiformate alternativ anzubieten.';
 $string['mediasettings'] = 'Mediaeinbettung';
-$string['privacy:metadata'] = 'Die Einbettung von Medien speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Die Einbettung von Medien speichert keine personenbezogenen Daten.';
 $string['supports'] = 'Unterstützung';
 $string['videoextensions'] = 'Video: {$a}';

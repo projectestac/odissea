@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = 'Добавлять новый блок «Вход»';
 $string['pluginname'] = 'Вход';
+$string['privacy:metadata'] = 'Блок «Вход» только предоставляет способ входа в систему и сам по себе не хранит никаких данных.';

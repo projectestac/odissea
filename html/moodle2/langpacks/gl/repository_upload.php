@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configuración do engadido de envíos';
 $string['pluginname'] = 'Enviar un ficheiro';
 $string['pluginname_help'] = 'Enviar un ficheiro a Moodle';
+$string['privacy:metadata'] = 'O engadido de repositorio para enviar un ficheiro non almacena ou transmite ningún dato persoal.';
 $string['upload_error_cant_write'] = 'Non foi posíbel escribir o ficheiro no disco';
 $string['upload_error_extension'] = 'Unha extensión de PHP detivo o envío de ficheiros.';
 $string['upload_error_form_size'] = 'O ficheiro enviado excede a directiva MAX_FILE_SIZE que foi especificada no formulario HTML';

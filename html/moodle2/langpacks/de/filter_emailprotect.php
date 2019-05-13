@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'E-Mail-Absicherung';
-$string['privacy:metadata'] = 'Der Filter für E-Mail-Adressen speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Filter für E-Mail-Adressen speichert keine personenbezogenen Daten.';

@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = '新增一个即将到来事件版块';
 $string['calendar_upcoming:myaddinstance'] = '在个人主页新增一个即将到来事件版块';
+$string['gotocalendar'] = '转到日历…';
 $string['pluginname'] = '即将到来事件';

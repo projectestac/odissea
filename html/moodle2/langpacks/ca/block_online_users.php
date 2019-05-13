@@ -31,4 +31,5 @@ $string['online_users:myaddinstance'] = 'Afegeix un bloc nou d\'usuaris en líni
 $string['online_users:viewlist'] = 'Veure la llista d\'usuaris en línia';
 $string['periodnminutes'] = 'darrers {$a} minuts';
 $string['pluginname'] = 'Usuaris en línia';
+$string['privacy:metadata'] = 'El bloc d\'Usuaris en línia només mostra dades emmagatzemades en altres ubicacions.';
 $string['timetosee'] = 'Treu després d\'un temps d\'inactivitat (minuts)';

@@ -57,7 +57,7 @@ $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
 
 Esta é uma notificação de que a sua inscrição na disciplina \'{$a->course}\' expira em {$a->timeend}.
 
-Se precisar de ajuda, por favor contacte {$a->enroller}.';
+Se precisar de ajuda, por favor, contacte {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificação de expiração da autoinscrição';
 $string['expirymessageenrollerbody'] = 'A autoinscrição na disciplina \'{$a->course}\' irá expirar nos próximos {$a->threshold} para os seguintes utilizadores:
 
@@ -101,7 +101,7 @@ $string['self:manage'] = 'Gerir utilizadores inscritos';
 $string['self:unenrol'] = 'Remover inscrições de alunos desta disciplina';
 $string['self:unenrolself'] = 'Remover a sua inscrição desta disciplina';
 $string['sendcoursewelcomemessage'] = 'Enviar mensagem de boas-vindas';
-$string['sendcoursewelcomemessage_help'] = 'Se esta configuração estiver ativa os utilizadores que se inscreverem na disciplina receberão um e-mail com uma mensagem de boas-vindas. Se for enviado do contato da disciplina (por predefinição o professor) e mais do que um utilizador tiver este papel, o e-mail será enviado pelo primeiro utilizador a que foi atribuído o papel.';
+$string['sendcoursewelcomemessage_help'] = 'Se esta configuração estiver ativa os utilizadores que se inscreverem na disciplina receberão um e-mail com uma mensagem de boas-vindas. Se for enviado do contacto da disciplina (por predefinição o professor) e mais do que um utilizador tiver este papel, o e-mail será enviado pelo primeiro utilizador a que foi atribuído o papel.';
 $string['showhint'] = 'Mostrar sugestão';
 $string['showhint_desc'] = 'Se esta configuração estiver ativa será mostrada aos utilizadores a primeira letra da senha de inscrição.';
 $string['status'] = 'Permitir inscrições existentes';

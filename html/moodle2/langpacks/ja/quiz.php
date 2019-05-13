@@ -149,12 +149,12 @@ $string['cannotstartmissingquestion'] = 'この小テストの受験を開始で
 $string['cannotstartnoquestions'] = 'この小テストの受験を開始できません。まだ、小テストが設定されていません。問題が追加されていません。';
 $string['cannotwrite'] = 'エクスポートファイル ({$a}) を書き込めません。';
 $string['canredoquestions'] = '受験内でのやり直しを許可する';
-$string['canredoquestions_desc'] = 'この設定を有効にした場合、学生が特定の問題の受験を終了した時点で「問題をやり直す」ボタンが表示されます。これにより小テストの受験すべてを送信せずに、また別の小テストを開始せずに別バージョンの同一問題を受験することができるようなります。このオプションは主に練習問題に有用です。
+$string['canredoquestions_desc'] = 'この設定を有効にした場合、学生が特定の問題の受験を終了した時点で「問題をやり直す」ボタンが表示されます。これにより小テストの受験すべてを送信せずに、また別の小テストを開始せずに別バージョンの同一問題を受験できるようなります。このオプションは主に練習問題に有用です。
 
-この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) にのみ影響します。学生は受験が送信される前に問題を終了することができます。';
-$string['canredoquestions_help'] = 'この設定を有効にした場合、学生が特定の問題の受験を終了した時点で「問題をやり直す」ボタンが表示されます。これにより小テストの受験すべてを送信せずに、また別の小テストを開始せずに別バージョンの同一問題を受験することができるようになります。このオプションは主に練習問題に有用です。
+この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) にのみ影響します。学生は受験が送信される前に問題を終了できます。';
+$string['canredoquestions_help'] = 'この設定を有効にした場合、学生が特定の問題の受験を終了した時点で「問題をやり直す」ボタンが表示されます。これにより小テストの受験すべてを送信せずに、また別の小テストを開始せずに別バージョンの同一問題を受験できるようになります。このオプションは主に練習問題に有用です。
 
-この設定は問題 (例えば「作文問題」) および動作 (例えば「即時フィードバック」または「複数受験インタラクティブ」) にのみ影響します。学生は受験が送信される前に問題を終了することができます。';
+この設定は学生が受験を送信する前に問題を終了できるような問題 (例えば「作文問題」は該当しません) と挙動 (例えば「即時フィードバック」または「複数受験インタラクティブ」が該当します) にのみ影響します。';
 $string['canredoquestionsyes'] = '学生は終了した問題の別バージョンをやり直すことができる';
 $string['caseno'] = 'いいえ、文字の大小は重要ではありません。';
 $string['casesensitive'] = '大文字小文字の区別';
@@ -177,7 +177,7 @@ $string['completionattemptsexhausteddesc'] = 'すべての利用可能な受験�
 $string['completionattemptsexhausted_help'] = '学生が最大受験数を満たした場合、小テストを完了したとマークします。';
 $string['completionpass'] = '合格点を必要とする';
 $string['completionpassdesc'] = 'この活動を完了するには学生は合格点に到達する必要があります。';
-$string['completionpass_help'] = 'この設定を有効にした場合、評定表に合格点が設定され学生が合格点を取得することによりこの活動は完了したとみなされます。';
+$string['completionpass_help'] = 'この設定を有効にした場合、学生が合格点 (小テスト設定の評定セクションで指定) またはそれ以上を取得することによりこの活動は完了したとみなされます。';
 $string['configadaptive'] = 'あなたがこのオプションを有効にした場合、同じ小テスト内の受験であっても学生は問題の複数回解答を許可されます。';
 $string['configattemptsallowed'] = '小テストで学生が許可される受験回数の制限です。';
 $string['configdecimaldigits'] = '評定を表示する場合、小数点以下に表示される評点の桁数を設定します。';
@@ -205,7 +205,7 @@ $string['configshufflewithin'] = 'あなたがこのオプションを有効に�
 $string['configtimelimit'] = '小テストのデフォルトの制限時間 (分) です。ゼロは制限時間なしを意味します。';
 $string['configtimelimitsec'] = '小テストのデフォルトの制限時間 (秒) です。ゼロは制限時間なしを意味します。';
 $string['configurerandomquestion'] = '問題の設定';
-$string['confirmclose'] = '送信した場合、あなたはこれ以上受験の答えを変更できないようになります。';
+$string['confirmclose'] = '送信した場合、あなたは今回の受験の解答をこれ以上変更することはできません。';
 $string['confirmremovequestion'] = '本当にこの {$a} 問題を削除してもよろしいですか?';
 $string['confirmremovesectionheading'] = '本当に「 {$a} 」セクション見出しを削除してもよろしいですか?';
 $string['confirmserverdelete'] = '本当にサーバ <b>{$a}</b> をリストから削除してもよろしいですか?';
@@ -393,7 +393,7 @@ $string['grademethod_help'] = '複数回の受験が許可されている場合�
 $string['gradesdeleted'] = '小テストの評定が削除されました。';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}';
 $string['gradetopassmustbeset'] = 'この小テストには完了方法に「合格点を必要とする」が設定されているため合格点をゼロにすることはできません。ゼロ以外の値を設定してください。';
-$string['gradetopassnotset'] = 'この小テストには合格点が設定されていないためあなたはこのオプションを使用することはできません。代わりに「評定を必要とする」設定を使用してください。';
+$string['gradetopassnotset'] = 'この小テストには合格点が設定されていません。小テスト設定の評定セクションで設定することができます。';
 $string['gradingdetails'] = 'この解答の評点: {$a->raw}/{$a->max}';
 $string['gradingdetailsadjustment'] = '前のペナルティにより <strong>{$a->cur}/{$a->max}</strong> に調整されます。';
 $string['gradingdetailspenalty'] = 'この解答のペナルティ: {$a}';
@@ -774,13 +774,13 @@ $string['reportshowonlyfinished'] = 'ユーザごとに最大1件の終了した
 $string['reportsimplestat'] = '単純統計';
 $string['reportusersall'] = '小テストを受験したことのあるユーザすべて';
 $string['reportuserswith'] = '小テストを受験したことのある登録済みユーザ';
-$string['reportuserswithorwithout'] = '小テストを受験したことのある、または受験したことのない登済みユーザ';
+$string['reportuserswithorwithout'] = '小テストを受験したことのある、または受験したことのない登録済みユーザ';
 $string['reportuserswithout'] = '小テストを受験したことのない登録済みユーザ';
 $string['reportwhattoinclude'] = 'レポートに含む内容';
 $string['requirepassword'] = 'パスワードを要求する';
 $string['requirepassword_help'] = 'ここにパスワードを設定した場合、参加者は小テストを受験する前に同じパスワードを入力する必要があります。';
 $string['requiresubnet'] = 'ネットワークアドレスを要求する';
-$string['requiresubnet_help'] = 'LAN上の特定のサブネットまたはインターネットから小テストへのアクセスをカンマで区切った部分的または完全なIPアドレスで制限することができます。これは特に特定の部屋の人のみ小テストにアクセスすることができる試験監督付き小テストの実施に有用です。';
+$string['requiresubnet_help'] = 'LAN上の特定のサブネットまたはインターネットから小テストへのアクセスをカンマで区切った部分的または完全なIPアドレスで制限できます。これは特に特定の部屋の人のみ小テストにアクセスできる試験監督付き小テストの実施に有用です。';
 $string['response'] = '解答';
 $string['responses'] = '解答';
 $string['results'] = '受験結果';
@@ -802,7 +802,7 @@ $string['reviewofquestion'] = '{$a->user} による {$a->quiz} の問題 {$a->qu
 $string['reviewopen'] = '後で、小テスト実施中';
 $string['reviewoptions'] = '学生はレビューできる';
 $string['reviewoptionsheading'] = 'レビューオプション';
-$string['reviewoptionsheading_help'] = 'このオプションでは小テスト受験結果をレビューまたは小テストレポートを表示する場合、どの情報を学生が閲覧することができるかコントロールします。
+$string['reviewoptionsheading_help'] = 'このオプションでは小テスト受験結果をレビューまたは小テストレポートを表示する場合、どの情報を学生が閲覧できるかコントロールします。
 
 **受験中** 設定は「複数受験インタラクティブ」のような特定の挙動にのみ関連します。
 

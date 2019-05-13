@@ -37,3 +37,4 @@ $string['page-report-completion-index'] = 'Rapport cursus voltooien';
 $string['page-report-completion-user'] = 'Gebruikersrapport cursus voltooien';
 $string['page-report-completion-x'] = 'Elk voltooiingsrapport';
 $string['pluginname'] = 'Cursusvoltooiing';
+$string['privacy:metadata'] = 'Het cursus voltooiingsrapport toont enkel gegvens die al ergens anders bewaard zijn.';

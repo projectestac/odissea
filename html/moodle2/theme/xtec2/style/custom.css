@@ -460,7 +460,24 @@ h3{
     color: [[setting:color3]];
 }
 
+.jsenabled .moodle-actionmenu[data-enhanced] .menu-action-text {
+	margin-left: 0.5rem;
+}
 
+.moodle-actionmenu[data-enhanced].show .menu a {
+	padding: 0.1em 1em;
+}
+
+.availabilityinfoXTEC {
+	margin-left: 0;
+	margin-right: 0.2rem;
+}
+
+.availabilityinfoXTEC .label {
+	min-width: 4rem;
+	text-align: center;
+	margin-left: 0.2rem;
+}
 
 /* Footer */
 

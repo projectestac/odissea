@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Отмена / Повтор';
+$string['privacy:metadata'] = 'Плагин atto_undo не хранит никаких персональных данных.';
 $string['redo'] = 'Повтор';
 $string['undo'] = 'Отмена';

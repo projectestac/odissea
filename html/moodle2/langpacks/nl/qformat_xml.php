@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'Ongeldig XML-bestand - Verwacht een string (gebruik CDATA?)';
 $string['pluginname'] = 'Moodle XML opmaak';
 $string['pluginname_help'] = 'Dit is een Moodle-specifiek formaat voor het importeren en exporteren van vragen.';
+$string['privacy:metadata'] = 'De plug-in XML question format slaat geen persoonlijke gegevens op.';
 $string['truefalseimporterror'] = '<b>Waarschuwing</b>: De waar/niet waar vraag  \'{$a->questiontext}\' kon niet correct geïmporteerd worden. Het was niet duidelijk of het juiste antwoord waar of niet waar is. De vraag is geïmporteerd en er is verondersteld dat het juiste antwoord \'{$a->answer}\' is. Als dit niet correct is, dan zul je de vraag moeten bewerken.';
 $string['unsupportedexport'] = 'Vraagtype {$a} wordt niet ondersteund door XML-export';
 $string['xmlimportnoname'] = 'Er ontbreekt een vraagnaam in het XML-bestand';

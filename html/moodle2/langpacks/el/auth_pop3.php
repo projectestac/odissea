@@ -25,14 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_pop3changepasswordurl_key'] = 'Password-change URL';
+$string['auth_pop3changepasswordurl_key'] = 'URL αλλαγής κωδικού πρόσβασης';
 $string['auth_pop3description'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν POP3 server για να ελέγξει εάν ένα δοσμένο όνομα χρήστη και κωδικός πρόσβασης είναι έγκυρα.';
 $string['auth_pop3host'] = 'Η διεύθυνση του POP3 εξυπηρετητή. Χρησιμοποιήστε το IP νούμερο και όχι το DNS όνομα.';
 $string['auth_pop3host_key'] = 'Διακομιστής φιλοξενίας';
 $string['auth_pop3mailbox'] = 'Όνομα του mailbox στο οποίο θα δοκιμαστεί σύνδεση (συνήθως INBOX)';
 $string['auth_pop3mailbox_key'] = 'Mailbox';
-$string['auth_pop3notinstalled'] = 'Αδυναμία χρήσης αυθεντικοποίησης POP3. Το άρθρωμα PHP IMAP δεν έχει εγκατασταθεί.';
+$string['auth_pop3notinstalled'] = 'Δεν είναι δυνατή η χρήση της αυθεντικοποίησης POP3. Το άρθρωμα IMAP της PHP δεν είναι εγκατεστημένο.';
 $string['auth_pop3port'] = 'Θύρα server (η 119 χρησιμοποιείται πιο συχνά)';
 $string['auth_pop3port_key'] = 'Port';
 $string['auth_pop3type'] = 'Ο τύπος του server. Εάν ο server σας χρησιμοποιεί ασφάλεια μέσω πιστοποιητικών,επιλέξτε  pop3cert.';
 $string['auth_pop3type_key'] = 'Type';
+$string['pluginname'] = 'Εξυπηρετητής POP3';

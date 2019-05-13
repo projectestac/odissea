@@ -30,5 +30,6 @@ $string['emptyfilelist'] = 'Il n\'y a aucun fichier à afficher';
 $string['notitle'] = 'sans titre';
 $string['pluginname'] = 'Fichiers récents';
 $string['pluginname_help'] = 'Fichiers utilisés récemment par l\'utilisateur actuel';
+$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers récents n\'enregistre et ne transmet aucune donnée personnelle.';
 $string['recentfilesnumber'] = 'Nombre de fichiers récents';
 $string['recent:view'] = 'Consulter le dépôt fichiers récents';

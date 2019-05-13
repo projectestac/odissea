@@ -103,7 +103,7 @@ $string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator(en) u
 $string['check_riskbackup_detailsok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten. Beachten Sie aber, dass Admins mit der Berechtigung "doanything" (alles tun) auch weiterhin dazu befähigt sind.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Diese aktivierten Änderungen geben Nutzern/innen die Möglichkeit, auch Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Die folgenden Systemrollen erlauben es aktuell, Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
-$string['check_riskbackup_details_users'] = '<p>Wegen der obigen Rollen oder lokalen Rollenänderungen besitzen die nachfolgenden Nutzerkonten die Berechtigung, persönliche Daten von allen in ihren Kursen eingetragenen Nutzern/innen in Kurssicherungen einzubeziehen. Stellen Sie unbedingt sicher, dass diese Konten (a) vertrauenswürdig und (b) mit sicheren Kennwörtern gesichert sind:</p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>Mit den obigen Rollen oder lokalen Rollenänderungen haben folgende Nutzerkonten die Berechtigung, personenbezogene Daten von allen in ihren Kursen eingetragenen Nutzern/innen in Kurssicherungen einzubeziehen. Stellen Sie unbedingt sicher, dass diese Konten (a) vertrauenswürdig und (b) mit sicheren Kennwörtern gesichert sind:</p> {$a}';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Sicherung von Nutzerdaten';
@@ -132,7 +132,7 @@ $string['description'] = 'Beschreibung';
 $string['details'] = 'Details';
 $string['issue'] = 'Ausgabe';
 $string['pluginname'] = 'Sicherheitsbericht';
-$string['privacy:metadata'] = 'Das Sicherheits-Übersichts-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Sicherheits-Übersichts-Plugin speichert keine personenbezogenen Daten.';
 $string['security:view'] = 'Sicherheitsbericht ansehen';
 $string['status'] = 'Status';
 $string['statuscritical'] = 'Kritisch';

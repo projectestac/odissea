@@ -37,6 +37,7 @@ $string['nosubdir'] = 'Vous devez créer au moins un dossier dans le dossier <b>
 $string['path'] = 'Sélectionner un sous-dossier';
 $string['pluginname'] = 'Système de fichiers';
 $string['pluginname_help'] = 'Créer un dépôt à partir d\'un dossier local';
+$string['privacy:metadata'] = 'Le plugin de dépôt Système de fichiers n\'enregistre et ne transmet aucune donnée personnelle.';
 $string['relativefiles'] = 'Permettre les fichiers relatifs';
 $string['relativefiles_desc'] = 'Ce réglage permet l\'accès à tous les fichiers du dépôt au moyen de liens relatifs.';
 $string['root'] = 'Racine';

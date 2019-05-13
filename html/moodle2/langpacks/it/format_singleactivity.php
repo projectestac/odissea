@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activitytype'] = 'Tipo di attività';
 $string['activitytype_help'] = 'Scegliere il il tipo di attività o di risorsa da usare nel corso';
 $string['defactivitytype'] = 'Tipo di attività di default';
-$string['defactivitytypedesc'] = 'Specificare il tipo di attività selezionato per default quando si crea un nuovo corso';
+$string['defactivitytypedesc'] = 'Specificare il tipo di attività selezionato di default quando si crea un nuovo corso';
 $string['erroractivitytype'] = 'Nelle impostazioni del corso non è impostato Il tipo di attività.';
 $string['orphaned'] = 'Orfane';
 $string['orphanedwarning'] = 'Queste attività non sono raggiungibili dagli utenti!';

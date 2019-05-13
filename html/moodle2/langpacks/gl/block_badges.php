@@ -30,3 +30,4 @@ $string['badges:myaddinstance'] = 'Engadir un novo bloque de últimas distinció
 $string['nothingtodisplay'] = 'Non ten distincións para presentar';
 $string['numbadgestodisplay'] = 'Número das últimas distincións para presentar';
 $string['pluginname'] = 'Últimas distincións';
+$string['privacy:metadata'] = 'O bloque de últimas insignias só amosa os datos almacenados noutros lugares';

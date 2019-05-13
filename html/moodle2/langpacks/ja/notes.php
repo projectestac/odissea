@@ -69,7 +69,7 @@ $string['privacy:metadata:core_notes:lastmodified'] = 'ノートの最終更新�
 $string['privacy:metadata:core_notes:publishstate'] = 'ノートの公開状態です。';
 $string['privacy:metadata:core_notes:userid'] = 'ノートに関連するユーザのIDです。';
 $string['publishstate'] = 'コンテクスト';
-$string['publishstate_help'] = 'ノートコンテクストでは誰がノートを閲覧することができるか決定します。個人ノートを含むすべてのノートは管轄権の下の法律により秘匿できる点にユーザは留意すべきです。
+$string['publishstate_help'] = 'ノートコンテクストでは誰がノートを閲覧できるか決定します。個人ノートを含むすべてのノートは管轄権の下の法律により秘匿できる点にユーザは留意すべきです。
 
 * パーソナル - ノートはあなただけに表示されます。
 * コース - ノートはこのコースの教師に表示されます。

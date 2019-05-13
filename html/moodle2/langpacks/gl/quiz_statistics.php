@@ -84,12 +84,14 @@ $string['negcovar_help'] = 'A cualificación da pregunta para este conxunto de i
 A nosa ecuación para a ponderación efectiva da pregunta non pode calcularse neste caso. Os cálculos para a ponderación efectiva da pregunta para as outras preguntas desta proba son a ponderación efectiva da pregunta se as preguntas resaltadas cunha covarianza negativa teñen unha cualificación máxima de cero.
 
 Se edita unha proba e ponlle a esta(s) pregunta(s) con covarianza negativa unha cualificación máxima de cero, entón  a ponderación efectiva destas preguntas será cero e a ponderación efectiva real da pregunta será como se calcule agora.';
+$string['nogradedattempts'] = 'Non se realizaron intentos nesta proba, ou todos os intentos teñen preguntas que precisan a cualificación manual.';
 $string['nostudentsingroup'] = 'Aínda non hai alumnos neste grupo';
 $string['optiongrade'] = 'Crédito parcial';
 $string['partofquestion'] = 'Parte da pregunta';
 $string['pluginname'] = 'Estatísticas';
 $string['position'] = 'Posición';
 $string['positions'] = 'Posición(s)';
+$string['privacy:metadata'] = 'Aínda que o engadido de estatísticas de proba ten táboas de base de datos, os datos son datos engadidos e non describen un único individuo.';
 $string['questioninformation'] = 'Información da pregunta';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionnumber'] = 'Q#';

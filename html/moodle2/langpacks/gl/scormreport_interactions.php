@@ -26,6 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Informe de interaccións';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'Indica se se amosa o resumo das preguntas no informe de interaccións SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'Indica se se amosa o resumo das respostas no informe de interaccións SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'Indica se se amosa o resumo dos resultados no informe de interaccións SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Indica se se amosa o resumo das respostas correctas no informe de interaccións SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Número de usuarios a amosar nos informes de SCORM';
 $string['questionx'] = 'Pregunta {$a}';
 $string['responsex'] = 'Resposta {$a}';
 $string['resultx'] = 'Resultado {$a}';

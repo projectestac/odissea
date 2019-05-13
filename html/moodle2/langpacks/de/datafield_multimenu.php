@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Feld für Menü mit Mehrfachauswahl';
 $string['pluginname'] = 'Menü (Mehrfachauswahl)';
-$string['privacy:metadata'] = 'Die Mehrfachauswahlfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Mehrfachauswahlfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

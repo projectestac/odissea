@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Bewertung als XLS exportiert';
 $string['pluginname'] = 'Excel-Datei';
-$string['privacy:metadata'] = 'Das EXCEL-Tabellenformat Exportplugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das EXCEL-Tabellenformat Exportplugin speichert keine personenbezogenen Daten.';
 $string['timeexported'] = 'Zuletzt aus diesem Kurs geladen';
 $string['xls:publish'] = 'Bewertungen als Excel-Datei veröffentlichen';
 $string['xls:view'] = 'Bewertungen als Excel-Datei exportieren';

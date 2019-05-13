@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Controllo ortografico legacy';
+$string['privacy:metadata'] = 'Il plugin TinyMCE \'Controllo ortografico legacy\' non memorizza dati personali.';

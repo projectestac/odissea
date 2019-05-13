@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Configuracións de caducidade do contrasinal
 $string['passwdexpiretime'] = 'Duración do contrasinal';
 $string['passwdexpiretime_desc'] = 'Lapso de tempo no que contrasinal é valido.';
 $string['pluginname'] = 'Contas manuais';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'A data do último cambio de contrasinal.';

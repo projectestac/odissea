@@ -198,7 +198,7 @@ $string['hinttext'] = 'Texte de l\'indice';
 $string['howquestionsbehave'] = 'Comment se comportent les questions';
 $string['howquestionsbehave_help'] = 'Les participants peuvent agir avec les questions du test de différentes façons. Par exemple, vous pourriez souhaiter que les participants répondent à chaque question et envoient ensuite la totalité du test, avant que quoi que ce soit ne soit noté ou qu\'un feedback ne leur soit donné. Ce sera le mode « Feedback a posteriori ».
 
-Sinon, vous pourriez souhaiter que les participants envoient chaque question au fur et à mesure du test et reçoivent immédiatement le feedback correspondant, qu\'il puissent tenter de répondre à nouveau s\'ils ont échoué, mais avec une note moindre. Ce sera le mode « Interactif avec essais multiples ».
+Sinon, vous pourriez souhaiter que les participants envoient chaque question au fur et à mesure du test et reçoivent immédiatement le feedback correspondant, qu\'ils puissent tenter de répondre à nouveau s\'ils ont échoué, mais avec une note moindre. Ce sera le mode « Interactif avec essais multiples ».
 
 Ces deux exemples illustrent les deux comportements les plus utilisés.';
 $string['ignorebroken'] = 'Ignorer les liens cassés';
@@ -411,7 +411,7 @@ $string['submitandfinish'] = 'Envoyer et terminer';
 $string['submitted'] = 'Envoyé : {$a}';
 $string['tagarea_question'] = 'Questions';
 $string['technicalinfo'] = 'Information technique';
-$string['technicalinfo_help'] = 'Cette information technique permet aux développeurs travaillant sur de nouveaux types de questions diagnostiquer des problèmes avec certaines questions.';
+$string['technicalinfo_help'] = 'Cette information technique permet aux développeurs travaillant sur de nouveaux types de questions de diagnostiquer des problèmes avec certaines questions.';
 $string['technicalinfomaxfraction'] = 'Fraction maximale : {$a}';
 $string['technicalinfominfraction'] = 'Fraction minimale : {$a}';
 $string['technicalinfoquestionsummary'] = 'Résumé de la question : {$a}';

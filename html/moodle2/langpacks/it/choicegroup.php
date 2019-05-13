@@ -52,9 +52,13 @@ $string['choicegroupfull'] = 'Il gruppo scelto è completo';
 $string['choicegroupname'] = 'Nome';
 $string['choicegroupopen'] = 'Apertura';
 $string['choicegroupoptions'] = 'Opzioni di scelta';
-$string['choicegroupoptions_help'] = 'Specificare qui le scelte che gli studenti avranno a disposizione.
+$string['choicegroupoptions_help'] = 'E’ possibile impostare i gruppi che gli studenti potranno scegliere.
 
-Puoi compilarne quante ne vuoi. Ogni scelta lasciata vuota non verrà visualizzata. Se sono necessarie più scelte, cliccare il pulsante "Aggiungi 3 campi alla form".';
+L\'elenco a sinistra mostra tutti i gruppi e i raggruppamenti disponibili nel corso. Per aggiungere uno o più gruppi, selezionali dall\'elenco e fai clic su "Aggiungi". Per aggiungere tutti i gruppi da un raggruppamento, selezionare il raggruppamento e fare clic su "Aggiungi".
+
+I gruppi selezionati vengono visualizzati nell\'elenco a destra.
+
+Per rimuovere tutti i gruppi dalla selezione, selezionali dall\'elenco a destra e fai clic su "Rimuovi".';
 $string['choicegroup:readresponses'] = 'Leggi le risposte';
 $string['choicegroupsaved'] = 'La tua scelta è stata salvata';
 $string['choicetext'] = 'Testo della scelta';
@@ -89,6 +93,7 @@ $string['groupmembers'] = 'Membri del gruppo';
 $string['groupsheader'] = 'Gruppi';
 $string['havetologin'] = 'Prima di effettuare la scelta devi autenticarti';
 $string['hidedescription'] = 'Nascondi descrizione';
+$string['hidegroupmembers'] = 'Nascondi membri del gruppo';
 $string['limit'] = 'Limite';
 $string['limitanswers'] = 'Limita il numero di risposte consentite';
 $string['limitanswers_help'] = 'L\'opzione permette di limitare il numero di studenti che possono iscriversi ai gruppi. Quando il limite viene raggiunto, nessun altro studente potrà iscriversi.
@@ -104,6 +109,7 @@ $string['multipleenrollmentspossible'] = 'Consenti l\'iscrizione a più gruppi';
 $string['mustchooseone'] = 'Devi effettuare una scelta prima di salvare. Non è stato salvato nulla.';
 $string['name'] = 'Nome';
 $string['neverresultsviewable'] = 'I risultati non possono essere visualizzati.';
+$string['nogroupincourse'] = 'Nessun gruppo definito nel corso';
 $string['noguestchoose'] = 'Ci dispiace, gli ospiti non possono effettuare scelte.';
 $string['noresultsviewable'] = 'Al momento i risultati  non possono essere visualizzati.';
 $string['notanswered'] = 'Non ancora risposto';
@@ -114,11 +120,16 @@ $string['numberofuser'] = 'Il numero degli utenti';
 $string['option'] = 'Gruppo';
 $string['page-mod-choice-x'] = 'Pagina contenente ogni scelta del gruppo';
 $string['pleaseselectonegroup'] = 'Selezionare almeno un gruppo.';
-$string['pleasesetgroups'] = 'Per favore crea almeno due gruppi nel corso.';
-$string['pleasesetonegroup'] = 'Creare almeno un gruppo in questo corso.';
+$string['pleasesetgroups'] = 'Per favore crea almeno un gruppo nel corso.';
+$string['pleasesetonegroupor'] = 'Per favore crea almeno un gruppo nel corso.<br /><br />
+<ul>
+<li><a href="{$a->linkgroups}">gestisci gruppi del corso</a></li>
+<li><a href="{$a->linkcourse}">ritorna al corso</a></li>
+</ul>';
 $string['pluginadministration'] = 'Amministrazione Scelta gruppo';
 $string['pluginname'] = 'Scelta gruppo';
 $string['privacy'] = 'Privatezza dei risultati';
+$string['privacy:metadata'] = 'Il plugin "Scelta del gruppo" non memorizza dati personali. Tutti i dati personali sono memorizzati nel core di Moodle relativo al componente gruppo (core_group).';
 $string['publish'] = 'Metodo di pubblicazione dei risultati';
 $string['publishafteranswer'] = 'Visualizza i risultati agli studenti dopo la scelta';
 $string['publishafterclose'] = 'Visualizza i risultati agli studenti solo dopo la chiusura';
@@ -135,6 +146,7 @@ $string['savemychoicegroup'] = 'Salva la mia scelta';
 $string['selected_groups'] = 'Gruppi selezionati';
 $string['set_limit_for_group'] = 'Limite per';
 $string['showdescription'] = 'Visualizza descrizione';
+$string['showgroupmembers'] = 'Visualizza membri del gruppo';
 $string['showunanswered'] = 'Visualizza la colonna per le risposte non pervenute';
 $string['skipresultgraph'] = 'Salta il grafico dei risultati';
 $string['sortgroupsby'] = 'Ordina gruppi per';

@@ -25,5 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'Ένα αρχείο έχει φορτωθεί.';
-$string['pluginname'] = 'Μεταφόρτωση';
+$string['event_assessable_submitted'] = 'Έχει υποβληθεί μια υποβολή ανεβάσματος.';
+$string['event_assessable_uploaded'] = 'Ένα αρχείο έχει ανεβεί.';
+$string['pluginname'] = 'Ανέβασμα';
+$string['privacy:metadata'] = 'Το πρόσθετο «Upload assignment» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Verhalten für Informationseinheiten';
-$string['privacy:metadata'] = 'Der Zur-Informationswerte Modus des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Zur-Informationswerte Modus des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';
 $string['seen'] = 'Gesehen';

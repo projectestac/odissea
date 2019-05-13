@@ -36,4 +36,5 @@ $string['html:myaddinstance'] = 'Добавлять новый блок «HTML»
 $string['leaveblanktohide'] = 'Чтобы убрать заголовок у блока, оставьте поле пустым';
 $string['newhtmlblock'] = '(новый блок HTML)';
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata:block'] = 'Блок «HTML» хранит все свои данные в подсистеме блоков.';
 $string['search:content'] = 'Содержимое блока HTML';

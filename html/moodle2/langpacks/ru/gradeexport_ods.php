@@ -29,4 +29,5 @@ $string['eventgradeexported'] = 'Оценки экспортированы в Op
 $string['ods:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате ODS';
 $string['ods:view'] = 'Использовать экспорт оценок в формате OpenDocument';
 $string['pluginname'] = 'Таблица OpenDocument';
+$string['privacy:metadata'] = 'Плагин «Экспорт оценок в таблицы OpenDocument» не хранит никаких персональных данных.';
 $string['timeexported'] = 'Последние загруженные из этого курса';

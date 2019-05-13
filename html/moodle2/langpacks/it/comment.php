@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['commentsubcontext'] = 'Commenti';
 $string['privacy:metadata:comment'] = 'Memorizza i commenti degli utenti.';
 $string['privacy:metadata:comment:content'] = 'Memorizza il testo dei commenti.';
-$string['privacy:metadata:comment:timecreated'] = 'L\'orario della creazione del commento.';
+$string['privacy:metadata:comment:timecreated'] = 'Data e ora della creazione del commento.';
 $string['privacy:metadata:comment:userid'] = 'L\'utente che ha commentato.';

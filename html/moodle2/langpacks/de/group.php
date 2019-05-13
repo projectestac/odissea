@@ -106,7 +106,7 @@ $string['groupmembers'] = 'Gruppenmitglieder';
 $string['groupmemberssee'] = 'Gruppenmitglieder anzeigen';
 $string['groupmembersselected'] = 'Mitglieder der markierten Gruppe';
 $string['groupmode'] = 'Gruppenmodus';
-$string['groupmodeforce'] = 'Gruppenmodus vorgeben';
+$string['groupmodeforce'] = 'Gruppenmodus erzwingen';
 $string['groupmodeforce_help'] = 'Wenn der Gruppenmodus erzwungen wird, dann wird der Gruppenmodus des Kurses auch auf jede Aktivität im Kurs angewendet. Die Gruppeneinstellungen in jeder Aktivität werden ignoriert.';
 $string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verfügung:
 
@@ -114,7 +114,7 @@ $string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verf
 * Getrennte Gruppen - Im Kurs gibt es getrennte Gruppen, d.h. jedes Gruppenmitglied kann nur Mitglieder der eigenen Gruppe sehen, alle anderen sind unsichtbar.
 * Sichtbare Gruppen - Im Kurs gibt es sichtbare Gruppen, d.h. jedes Gruppenmitglied arbeitet in der eigenen Gruppe, kann aber die anderen Gruppen sehen.
 
-Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls allerdings der Gruppenmodus auf Kursebene festgelegt wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
+Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls allerdings der Gruppenmodus auf Kursebene erzwungen wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
 $string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits.';
@@ -122,7 +122,7 @@ $string['groupnotamember'] = 'Sie sind kein Mitglied dieser Gruppe.';
 $string['groups'] = 'Gruppen';
 $string['groupscount'] = 'Gruppen ({$a})';
 $string['groupsettingsheader'] = 'Gruppen';
-$string['groupsgroupings'] = 'Gruppen &amp; Gruppierungen';
+$string['groupsgroupings'] = 'Gruppen & Gruppierungen';
 $string['groupsinselectedgrouping'] = 'Gruppen in:';
 $string['groupsnone'] = 'Keine Gruppen';
 $string['groupsonly'] = 'Nur Gruppen';

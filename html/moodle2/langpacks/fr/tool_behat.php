@@ -33,23 +33,23 @@ $string['errordataroot'] = '$CFG->behat_dataroot n\'est pas définie ou n\'est p
 $string['errorsetconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies dans config.php.';
 $string['erroruniqueconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies avec des valeurs différentes de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot et $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Paramètres de la valeur du champ';
-$string['fieldvalueargument_help'] = 'Ce paramètre doit être renseigné avec une valeur de champ. Il en existe de nombreux types, simples, par exemple cases à cocher, boîtes de sélection et zones de texte, ou plus complexes comme des sélecteurs de date. Veuillez consulter <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a> (en anglais) pour connaître la valeur attendue en fonction du type de champ fourni.';
+$string['fieldvalueargument_help'] = 'Acceptance_testingCe paramètre doit être renseigné avec une valeur de champ. Il en existe de nombreux types, simples, par exemple cases à cocher, boîtes de sélection et zones de texte, ou plus complexes comme des sélecteurs de date. Veuillez consulter <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Field values</a> (en anglais) pour des informations sur les valeurs attendues en fonction du type de champ fourni.';
 $string['giveninfo'] = 'Donné. Processus pour mettre en place l\'environnement';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lire {$a} pour des informations sur l\'installation et l\'exécution des tests.';
-$string['newstepsinfo'] = 'Lire {$a} pour des informations sur l\'ajout de définitions d\'étapes';
+$string['newstepsinfo'] = 'Lire {$a} pour des informations sur l\'ajout de la définitions d\'étape';
 $string['newtestsinfo'] = 'Lire {$a} pour des informations de confection de nouveaux tests';
 $string['nostepsdefinitions'] = 'Il n\'y a pas de définition d\'étape correspondant à ce filtre';
 $string['pluginname'] = 'Tests d\'acceptation';
 $string['privacy:metadata'] = 'Le plugin Tests d\'acceptation n\'enregistre aucune donnée personnelle.';
 $string['stepsdefinitionscomponent'] = 'Zone';
 $string['stepsdefinitionscontains'] = 'Contient';
-$string['stepsdefinitionsfilters'] = 'Définition des étapes';
+$string['stepsdefinitionsfilters'] = 'Définitions d\'étape';
 $string['stepsdefinitionstype'] = 'Type';
 $string['theninfo'] = 'Alors. Vérifications assurant que les résultats sont bien ceux attendus';
 $string['unknownexceptioninfo'] = 'Un problème est survenu avec Selenium ou votre navigateur. Assurez-vous que vous utilisez la dernière version de Selenium. Erreur :';
 $string['viewsteps'] = 'Filtre';
-$string['wheninfo'] = 'Quand. Actions qui provoquent un événement';
+$string['wheninfo'] = 'Quand. Action qui provoque un événement';
 $string['wrongbehatsetup'] = 'Quelque chose n\'est pas correct dans vos réglages behat, qui empêche l\'affichage de la définition des étapes : <b>{$a->errormsg}</b><br/><br/>Assurez-vous que
 <ul>
 <li>les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot sont définies config.php avec des valeurs différentes de $CFG->dataroot, $CFG->prefix et $CFG->wwwroot ;</li>

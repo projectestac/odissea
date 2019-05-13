@@ -36,12 +36,12 @@ Nahitako erabilera-kasua karga-banatze konfigurazioetan biltegi hobetu bat sortz
 Ezarpen hau gaituta dagoenean, datuak eskuratzeko goiko zerrendan zehaztutako zerbitzariak erabiliko dira.';
 $string['hash'] = 'Zifratze-metodoa';
 $string['hash_crc'] = 'CRC';
-$string['hash_default'] = 'Berezkoa (banaka)';
+$string['hash_default'] = 'Lehenetsitakoa (banaka)';
 $string['hash_fnv1_32'] = 'FNV1_32';
 $string['hash_fnv1_64'] = 'FNV1_64';
 $string['hash_fnv1a_32'] = 'FNV1A_32';
 $string['hash_fnv1a_64'] = 'FNV1A_64';
-$string['hash_help'] = 'Elementuen gakoetan erabiliko den hash algoritmoa zehazten du. Hash algoritmo bakoitzak bere abantailak eta desabantailak ditu. Erabili berezkoa, ez badakizu edo berdin badizu.';
+$string['hash_help'] = 'Elementuen gakoetan erabiliko den hash algoritmoa zehazten du. Hash algoritmo bakoitzak bere abantailak eta desabantailak ditu. Erabili lehenetsitakoa, ez badakizu edo berdin badizu.';
 $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
@@ -59,12 +59,12 @@ $string['privacy:metadata:memcached'] = 'Memcached cache-biltegi pluginak datuak
 $string['privacy:metadata:memcached:data'] = 'Cachean gordetako era askotako datuak';
 $string['serialiser_igbinary'] = 'igbinary serializatzailea.';
 $string['serialiser_json'] = 'JSON serializatzailea.';
-$string['serialiser_php'] = 'Berezko PHP serializatzailea.';
+$string['serialiser_php'] = 'Lehenetsitako PHP serializatzailea.';
 $string['servers'] = 'Zerbitzariak';
 $string['serversclusterinvalid'] = 'Zehazki zerbitzari bat behar da zerbitzari-taldekatzea gaituta dagoenean.';
 $string['servers_help'] = 'Hemen memcached egokitzaileak erabiliko dituen zerbitzariak zehazten dira.
 Errenkada bakoitzean zerbitzari bat zehaztu behar da, zerbitzariaren helbidea eta aukeran ataka eta pisua zehaztuta.
-Atakarik zehazten ez bada berezko ataka (11211) erabiliko da.
+Atakarik zehazten ez bada lehenetsitako ataka (11211) erabiliko da.
 
 Adibidez:
 <pre>

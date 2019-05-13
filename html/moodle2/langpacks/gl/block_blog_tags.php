@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_tags:addinstance'] = 'Engadir un novo bloque de etiquetas do blog';
 $string['pluginname'] = 'Etiquetas do blog';
+$string['privacy:metadata'] = 'O bloque de etiquetas do blog só amosa datos almacenados noutros lugares.';

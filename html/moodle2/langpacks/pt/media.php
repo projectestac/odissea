@@ -33,7 +33,7 @@ $string['defaultwidthdesc'] = 'Largura do Leitor de Multimédia se a largura nã
 $string['extensions'] = 'Extensões: {$a}';
 $string['legacyheading'] = 'Legacy media players';
 $string['legacyheading_desc'] = 'Estes players não são usados com frequência na Web e requerem módulos que estão menos amplamente instalados.';
-$string['managemediaplayers'] = 'Gerir leitores de média';
+$string['managemediaplayers'] = 'Gerir leitores de multimédia';
 $string['mediaformats'] = 'Players disponíveis';
 $string['mediaformats_desc'] = 'Quando ativa os leitores nestas configurações, os ficheiros dos respetivos formatos podem ser incorporados usando o filtro multimédia (se ativo) ou usando os recursos Ficheiro ou URL com a opção Incorporar. Quando um leitor não está ativo, os respetivos formatos não serão incorporados e os utilizadores podem descarregá-los manualmente ou seguir as hiperligações para estes recursos.
 

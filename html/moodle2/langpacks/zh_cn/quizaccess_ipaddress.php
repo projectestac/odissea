@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '使用IP地址限制的测验访问规则';
+$string['privacy:metadata'] = 'IP 地址访问规划不会保存任何个人信息。';
 $string['subnetwrong'] = '该测验仅在限定地点可被访问，而此计算机不在允许访问的列表名单里。';

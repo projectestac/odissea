@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmoredimensions'] = 'Κενά πεδία για {$a} περισσότερες πτυχές';
 $string['dimensioncomment'] = 'Σχόλιο';
 $string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
+$string['dimensionnumber'] = 'Πτυχή {$a}';
 $string['pluginname'] = 'Σχόλια';
+$string['privacy:metadata'] = 'Το πρόσθετο Βαθμολόγησης σχολίων αποθηκεύει μόνο τα στοιχεία της φόρμας αξιολόγησης. Τα πραγματικά προσωπικά δεδομένα για το πως έχει συμπληρωθεί η φόρμα αποθηκεύονται από το ίδιο το άρθρωμα του Εργαστηρίου και επισυνάπτονται στις εξαγόμενες αξιολογήσεις.';

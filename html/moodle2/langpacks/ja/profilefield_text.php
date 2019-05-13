@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'テキスト入力';
-$string['privacy:metadata:profilefield_text:data'] = '保存されたユーザデータです。';
-$string['privacy:metadata:profilefield_text:dataformat'] = '保存されたユーザデータのフォーマットです。';
+$string['privacy:metadata:profilefield_text:data'] = 'テキスト入力ユーザプロファイルフィールドのユーザデータです。';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'テキスト入力ユーザプロファイルフィールドのユーザデータのフォーマットです。';
 $string['privacy:metadata:profilefield_text:fieldid'] = 'プロファイルフィールドのIDです。';
-$string['privacy:metadata:profilefield_text:tableexplanation'] = '追加ユーザ情報がここに保存されます。';
-$string['privacy:metadata:profilefield_text:userid'] = 'テキスト入力プラグインにデータが保存されるユーザのIDです。';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = '追加プロファイルデータです。';
+$string['privacy:metadata:profilefield_text:userid'] = 'テキスト入力ユーザプロファイルフィールドにデータが保存されるユーザのIDです。';

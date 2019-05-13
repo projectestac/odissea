@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'テキストエリア';
-$string['privacy:metadata:profile_field_textarea:data'] = '保存されたユーザデータです。';
-$string['privacy:metadata:profile_field_textarea:dataformat'] = '保存されたユーザデータのフォーマットです。';
+$string['privacy:metadata:profile_field_textarea:data'] = 'テキストエリアユーザプロファイルフィールドのユーザデータです。';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'テキストエリアユーザプロファイルフィールドのユーザデータのフォーマットです。';
 $string['privacy:metadata:profile_field_textarea:fieldid'] = 'プロファイルフィールドのIDです。';
-$string['privacy:metadata:profile_field_textarea:tableexplanation'] = '追加ユーザ情報がここに保存されます。';
-$string['privacy:metadata:profile_field_textarea:userid'] = 'テキストエリアプラグインにデータが保存されるユーザのIDです。';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = '追加プロファイルデータです。';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'テキストエリアユーザプロファイルフィールドにデータが保存されるユーザのIDです。';

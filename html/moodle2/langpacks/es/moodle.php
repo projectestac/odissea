@@ -29,6 +29,7 @@ $string['abouttobeinstalled'] = 'a punto de ser instalado';
 $string['action'] = 'Acción';
 $string['actionchoice'] = '¿Qué quiere hacer con el archivo \'{$a}\'?';
 $string['actions'] = 'Acciones';
+$string['actionsmenu'] = 'Menú de acciones';
 $string['active'] = 'Activo';
 $string['activeusers'] = 'Usuarios activos';
 $string['activities'] = 'Actividades';
@@ -669,16 +670,16 @@ $string['emailnotfound'] = 'No se ha encontrado la dirección email en la base d
 $string['emailonlyallowed'] = 'Este email no figura entre los permitidos ({$a})';
 $string['emailpasswordchangeinfo'] = 'Hola {$a->firstname},
 
-Alguien (probablemente usted) ha solicitado una nueva contraseña para su cuenta \'{$a->username}\' en \'{$a->sitename}\'.
+Alguien (seguramente usted) ha solicitado una nueva contraseña para su
+cuenta \'{$a->username}\' en \'{$a->sitename}\'.
 
-Para cambiar su contraseña, diríjase a la siguiente dirección web:
+Para cambiar su contraseña, por favor, diríjase a la siguiente dirección:
 
 {$a->link}
 
-En la mayoría de los programas de correo, esto debería aparecer como un enlace azul en el que usted puede hacer clic.
-Si no funcionara, copie y pegue la dirección en la barra de navegación de su navegador.
+En la mayoría de los programas de correo electrónico, esto aparecerá como un enlace en color azul en el que usted puede hacer clic. Si no funcionara, copie y pegue la dirección en la barra de navegación de su navegador.
 
-Si necesita ayuda, póngase en contacto con el administrador del sitio,
+Si necesita ayuda, por favor póngase en contacto con el administrador del sitio,
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Hola {$a->firstname},
 
@@ -736,14 +737,14 @@ $string['emailresetconfirmationsubject'] = '{$a}: Solicitud de restablecimiento 
 $string['emailresetconfirmsent'] = 'Se ha enviado un correo electrónico a su dirección en <b>{$a}.</b> <br /> Contiene unas sencillas instrucciones para confirmar y completar el cambio de contraseña.
 Si continúa teniendo problemas, póngase en contacto con el administrador del sitio.';
 $string['emailtoprivatefiles'] = 'También puede enviar directamente archivos vía e-mail a esta zona de archivos privados. Simplemente adjunte sus archivos a un correo electrónico y envíelo a la dirección de correo electrónico {$a}';
-$string['emailtoprivatefilesdenied'] = 'El administrador ha desactivado la opción de subir sus propios ficheros privados.';
+$string['emailtoprivatefilesdenied'] = 'El administrador ha desactivado la opción de subir sus propios archivos privados.';
 $string['emailuserhasnone'] = 'No hay dirección Email para el usuario.';
 $string['emailvia'] = '{$a->name} (vía {$a->siteshortname})';
 $string['emptydragdropregion'] = 'región vacía';
 $string['enable'] = 'Habilitar';
 $string['encryptedcode'] = 'Código encriptado';
 $string['enddate'] = 'Fecha de finalización del curso';
-$string['enddate_help'] = 'La fecha de finalización del curso se usa para determinar si un curso debe incluirse en la lista de cursos de un usuario. Cuando la fecha de finalización ya pasó, el curso ya no aparece en la lista de navegación y aparece como pasado en la descripción general del curso. La fecha de finalización del curso también puede ser utilizada por informes personalizados. Los usuarios aún pueden entrar al curso después de la fecha de finalización; en otras palabras, la fecha no restringe el acceso.';
+$string['enddate_help'] = 'La fecha de terminación del curso es usada para determinar si un curso debería de estar incluido dentro de la lista de cursos de un usuario. Cuando la fecha de terminación ya ha pasado, el curso ya no está listado en la navegación y entonces está listado como pasado en la vista general del curso. La fecha de terminación del curso también puede ser usada por reportes personalizados. Los usuarios todavía pueden entrar al curso después de la fecha de terminación; en otras palabras, la fecha no restringe el acceso.';
 $string['english'] = 'Inglés';
 $string['enrolmentmethods'] = 'Métodos de matriculación';
 $string['entercourse'] = 'Haga clic aquí para entrar al curso';
@@ -1005,7 +1006,7 @@ $string['idnumbercourse_help'] = '<P>El número ID de un curso únicamente se us
 $string['idnumbergroup'] = 'Número de identificación del grupo';
 $string['idnumbergroup_help'] = 'El número ID de un grupo sólo se usa cuando se compara el grupo con un sistema externo, y no se muestra en ningún otror lugar del sitio. Si el grupo tiene un código oficial, entonces se puede introducr este, de lo contrario, el campo se puede dejar en blanco.';
 $string['idnumbergrouping'] = 'Número de identificación del agrupamiento';
-$string['idnumbergrouping_help'] = 'El número ID de una agrupación sólo se usa cuando se compara la agrupación en un sistema externo y no se muestra en cualquier lugar en el sitio. Si la agrupación tiene un código oficial se pueden introducir, de lo contrario el campo se puede dejar en blanco.';
+$string['idnumbergrouping_help'] = 'El número ID de un agrupamiento sólo se usa cuando se compara al agrupamiento contra un sistema externo y no se muestra en ningún otro lugar en el sitio. Si el agrupamiento tiene un código oficial se pueden introducir, de lo contrario el campo se puede dejar en blanco.';
 $string['idnumbermod'] = 'Número ID';
 $string['idnumbermod_help'] = 'El número ID proporciona una forma de identificar la actividad a fin de poder calcular la calificación. Si la actividad no está incluida en ningún cálculo de calificación, el campo Número ID puede dejarse en blanco. El Número ID puede asimismo ajustarse en la página de edición del cálculo de calificaciones, si bien únicamente
 puede editarse en la página de actualización de la actividad.';
@@ -1134,7 +1135,7 @@ $string['mailteachers'] = 'Informar a profesores';
 $string['maincoursepage'] = 'Página principal del curso';
 $string['makeafolder'] = 'Crear un directorio';
 $string['makeavailable'] = 'Hacer disponible';
-$string['makeeditable'] = 'Si \'{$a}\' tiene CHMOD 777, usted puede editar el idioma desde aquí.';
+$string['makeeditable'] = 'Si hace a \'{$a}\' editable por el proceso del servidor web (por ejemplo, apache), entonces podría editar este archivo directamente desde esta página';
 $string['makethismyhome'] = 'Hacer ésta mi página de inicio por defecto';
 $string['makeunavailable'] = 'Hacer que no esté disponible';
 $string['manageblocks'] = 'Bloques';
@@ -1166,6 +1167,7 @@ $string['maximumupload_help'] = '<P>Esta variable determina el tamaño máximo p
 $string['maxnumberweeks'] = 'Número máximo de secciones';
 $string['maxnumberweeks_desc'] = 'El valor máximo del número de secciones del menú desplegable (se aplica sólo a ciertos formatos de curso).';
 $string['maxnumcoursesincombo'] = 'Examinar <a href="{$a->link}">{$a->numberofcourses} cursos</a>.';
+$string['maxsectionslimit'] = 'No se puede crear nueva sección ya que excedería el número máximo de secciones permitidas para este curso ({$a}).';
 $string['maxsize'] = 'Tamaño máximo: {$a}';
 $string['maxsizeandareasize'] = 'El tamaño máximo para los archivos nuevos es: {$a->size},para el límite global es: {$a->areasize}';
 $string['maxsizeandattachments'] = 'Tamaño máximo para nuevos archivos: {$a->size}, número máximo de archivos adjuntos: {$a->attachments}';
@@ -1325,45 +1327,17 @@ pegue la dirección en la barra de direcciones de su navegador.
 Atte. El Administrador de \'{$a->sitename}\',
 {$a->signoff}';
 $string['newpicture'] = 'Imagen nueva';
-$string['newpicture_help'] = '<P>Usted puede subir una imagen desde su ordenador al servidor, y esta imagen se
-utilizará en varios lugares para identificarlo.
-<P>Por este motivo, las mejores imágenes son las de estilo identificación, aunque
-puede utilizar la imagen que desee.
-<P>La imagen debe ser formato JPG o PNG (lo que significa que el nombre de la imagen
-terminará en .jpg o en .png) y debe tener un tamaño de 100 x 100 píxeles o más.
-<P>Puede colocar una imagen utilizando uno de estos cuatro métodos:
-
-<OL>
-<LI>Utilizando una cámara digital, es muy sencillo, dado que sus fotos seguramente
-ya estarán en el formato correcto en su ordenador.
-<LI>Utilizando un "scanner" para digitalizar una fotografía impresa. Asegúrese de
-guardar la imagen en formato JPG o PNG.
-<LI>Si usted es una artista, puede dibujar una imagen utilizando algún programa de diseño.
-<LI>También puede conseguir una imagen que lo identifique en la red.
-<A TARGET=google HREF="http://images.google.com/">http://images.google.com</A>
-es un excelente lugar para buscar imágenes. Una vez encontrada, coloque el cursor
-sobre ella y pulsando el botón derecho del ratón elija la opción "Guardar imagen como".
-(Diferentes ordenadores pueden variar en este procedimiento)
-</OL>
-
-<P>Para subir la imagen, haga clic en el botón "Examinar" en esta página y seleccione
-la imagen en su disco duro.
-<P>IMPORTANTE: Asegúrese de no subir una imagen que exceda el tamaño
-máximo permitido, en bites, pues no se cargará.
-<P>Luego haga clic en "Actualizar información personal" en la parte inferior de la página; si la imagen
-es mayor a 100 x 100 píxeles se cortará.
-<P>Cuando acabe de cambiar su imagen es posible que no vea el cambio; si eso sucede
-actualice la página (oprimiendo F5 o el botón actualizar).';
+$string['newpicture_help'] = 'Para añadir una imagen nueva, navegue y seleccione una imagen (en formato JPG o PNG) y después haga clic en "Actualizar perfil". La imagen será recortada a un cuadrado y escalada a 100 x 100 pixeles.';
 $string['newpictureusernotsetup'] = 'La fotografía de perfil solo puede ser añadida cuando toda la información requerida del perfil haya sido guardada.';
 $string['newsectionname'] = 'Nuevo nombre para la sección {$a}';
 $string['newsitem'] = 'ítem de noticias';
 $string['newsitems'] = 'anuncios';
 $string['newsitemsnumber'] = 'Número de anuncios';
-$string['newsitemsnumber_help'] = 'El foro de anuncios es un foro especial que se crea automáticamente en el curso, ha forzado la suscripción establecida de manera predeterminada y solo los usuarios con los permisos adecuados (por defecto los profesores) pueden publicar en él.
+$string['newsitemsnumber_help'] = 'El foro de anuncios es un foro especial que es creado automáticamente en el curso, tiene suscripción forzada configurada por defecto, y solamente los usuarios con permisos apropiados (por defecto, los profesores) pueden publicar en él.
 
-Esta configuración determina cuántos anuncios recientes aparecen en el último bloque de anuncios.
+Esta configuración determina cuantos anuncios recientes aparecen en el bloque de últimos anuncios.
 
-Si no se requiere un foro de anuncios en el curso, esta configuración debe establecerse en cero.';
+Si no se necesita un foro de anuncios en el curso, esta configuración debería de configurarse a cero.';
 $string['newuser'] = 'Nuevo usuario';
 $string['newusernewpasswordsubj'] = 'Cuenta de nuevo usuario';
 $string['newusernewpasswordtext'] = 'Hola, {$a->firstname},
@@ -1569,10 +1543,46 @@ $string['previous'] = 'Anterior';
 $string['previouslyselectedusers'] = 'Usuarios previamente seleccionados que no coinciden con {$a}';
 $string['previoussection'] = 'Sección anterior';
 $string['primaryadminsetup'] = 'Ajustar cuenta del administrador';
+$string['privacy:metadata:config_log'] = 'El registro de cambios de configuración.';
+$string['privacy:metadata:config_log:name'] = 'El nombre de los cambios de configuración.';
+$string['privacy:metadata:config_log:oldvalue'] = 'El valor anterior para esta configuración.';
+$string['privacy:metadata:config_log:plugin'] = 'El plugin modificado.';
+$string['privacy:metadata:config_log:timemodified'] = 'La hora en la que fue hecho el cambio.';
+$string['privacy:metadata:config_log:userid'] = 'El usuario que hizo el cambio.';
+$string['privacy:metadata:config_log:value'] = 'El nuevo valor para la configuración.';
+$string['privacy:metadata:events_queue'] = 'La cola de eventos del usuario que esperan para ser procesados.';
+$string['privacy:metadata:events_queue:eventdata'] = 'Los datos almacenados en el evento.';
+$string['privacy:metadata:events_queue:stackdump'] = 'Cualquier stacktrace asociado con este evento.';
+$string['privacy:metadata:events_queue:timecreated'] = 'La hora en la cual fue creado este evento.';
+$string['privacy:metadata:events_queue:userid'] = 'La ID del usuario asociado con este evento';
+$string['privacy:metadata:log'] = 'Una colección de eventos anteriores';
+$string['privacy:metadata:log:action'] = 'Una descripción de la acción';
+$string['privacy:metadata:log:cmid'] = 'cmid';
+$string['privacy:metadata:log:course'] = 'curso';
+$string['privacy:metadata:log:info'] = 'Información adicional';
+$string['privacy:metadata:log:ip'] = 'La dirección IP usada durante el evento';
+$string['privacy:metadata:log:module'] = 'módulo';
+$string['privacy:metadata:log:time'] = 'El momento en el que tuvo lugar la acción';
+$string['privacy:metadata:log:url'] = 'La URL asociada al evento';
+$string['privacy:metadata:log:userid'] = 'La ID del usuario que efectuó la acción';
+$string['privacy:metadata:task_adhoc'] = 'El estado de los trabajos ad-hoc.';
+$string['privacy:metadata:task_adhoc:component'] = 'El componente propietario del trabajo.';
+$string['privacy:metadata:task_adhoc:nextruntime'] = 'La hora más temprana para ejecutar este trabajo.';
+$string['privacy:metadata:task_adhoc:userid'] = 'El usuario con el que ejecutar la acción.';
+$string['privacy:metadata:upgrade_log'] = 'El registro de actualización.';
+$string['privacy:metadata:upgrade_log:backtrace'] = 'Cualquier backtrace asociado con este paso de actualización.';
+$string['privacy:metadata:upgrade_log:details'] = 'Información extra relacionada con la actualización.';
+$string['privacy:metadata:upgrade_log:info'] = 'La información principal para este paso de la actualización.';
+$string['privacy:metadata:upgrade_log:plugin'] = 'El plugin que fue actualizado.';
+$string['privacy:metadata:upgrade_log:targetversion'] = 'La nueva versión a la cual actualizar.';
+$string['privacy:metadata:upgrade_log:timemodified'] = 'La hora en la que tuvo lugar la actualización.';
+$string['privacy:metadata:upgrade_log:type'] = 'El tipo de entrada de registro.';
+$string['privacy:metadata:upgrade_log:userid'] = 'El usuario que ejecutó la actualización.';
+$string['privacy:metadata:upgrade_log:version'] = 'La versión antigua del plugin.';
 $string['privatefiles'] = 'Ficheros privados';
-$string['private_files_handler'] = 'Almacenar los adjuntos de un correo electrónico en el espacio de almacenamiento de ficheros privados del usuario.';
+$string['private_files_handler'] = 'Almacenar los adjuntos de un correo electrónico en el espacio de almacenamiento de archivos privados del usuario.';
 $string['private_files_handler_name'] = 'Correo electrónico a ficheros Privados';
-$string['privatefilesmanage'] = 'Gestionar ficheros Privados';
+$string['privatefilesmanage'] = 'Gestionar archivos privados';
 $string['proceed'] = 'Proceder';
 $string['profile'] = 'Perfil';
 $string['profilenotshown'] = 'Esta descripción de perfil no se mostrará hasta que esta persona se matricule al menos en un curso.';
@@ -1702,28 +1712,7 @@ $string['savedat'] = 'Guardado en:';
 $string['savepreferences'] = 'Guardar preferencias';
 $string['saveto'] = 'Guardar en';
 $string['scale'] = 'Escala';
-$string['scale_help'] = '<p>En cualquier curso los profesores pueden crear nuevas escalas
-personalizadas con el objeto de llevar a cabo cualquier actividad de
-evaluación.</p>
-
-<p>El nombre de la escala debería ser una frase que la identifique con
-claridad: ese nombre aparecerá tanto en listas de selección de escalas
-como en los botones de ayuda sensibles al contexto.</p>
-
-<p>La propia escala se define como una lista jerárquica de valores, de negativo
-a positivo, separados por comas. Por ejemplo:</p>
-
-<blockquote><i>
-   Insuficiente, Regular, Promedio, Bueno, Muy bueno, Excelente!
-</i></blockquote>
-
-<p>Las escalas deberían asimismo incluir una descripción adecuada de lo
-que significan y cómo deberían utilizarse. Esta descripción aparecerá
-en las páginas de ayuda para profesores y estudiantes.</p>
-
-<p>Por último, puede haber una o más escalas "estándar" definidas en el
-sitio por el administrador del sistema. Estas escalas estarán
-disponibles en todos los cursos.</p>';
+$string['scale_help'] = 'Una escala proporciona una manera de evaluar o calificar el desempeño en una actividad. Está definida por una lista ordenada de valores, que van de negativo a positivo, separados por comas; por ejemplo, "Decepcionante, Insuficientemente bueno, Promedio, Bueno, Muy bueno, Excelente".';
 $string['scales'] = 'Escalas';
 $string['scalescustom'] = 'Escalas personalizadas';
 $string['scalescustomcreate'] = 'Agregar una nueva escala';
@@ -1831,18 +1820,7 @@ $string['showcommentsnonjs'] = 'Mostrar comentarios';
 $string['showdescription'] = 'Muestra la descripción en la página del curso';
 $string['showdescription_help'] = 'Si se activa, la descripción anterior se mostrará en la página del curso justo debajo del enlace a la actividad o recurso.';
 $string['showgrades'] = 'Mostrar libro de calificaciones a los estudiantes';
-$string['showgrades_help'] = '<p>Muchas de las actividades permiten otorgar calificaciones.</p>
-
-<p>Por defecto, los resultados de todas las calificaciones
-   del curso aparecen en la sección de Calificaciones,
-   disponible en la página principal del curso.</p>
-
-<p>Si un profesor no está interesado en usar calificaciones
-   en un curso o, simplemente quiere ocultarlas a los
-   alumnos, puede desactivar la visualización de las
-   calificaciones en la Configuración del Curso. Esto no impide usar o establecer calificaciones para actividades
-   individuales: únicamente impide que los alumnos vean
-   los resultados.</p>';
+$string['showgrades_help'] = 'Muchas actividades en el curso permiten otorgar calificaciones. Esta configuración determina si es que un estudiante puede o no ver una lista de todas sus calificaciones para el curso vía un enlace hacia calificaciones en el bloque de administración del curso.';
 $string['showingacourses'] = 'Mostrando todos {$a} cursos';
 $string['showingxofycourses'] = 'Mostrando cursos {$a->start} a {$a->end} de {$a->total} cursos';
 $string['showlistofcourses'] = 'Mostrar listas de cursos';
@@ -2022,7 +2000,7 @@ $string['timesplitting:decilesaccum_help'] = 'Este método de división del tiem
 $string['timesplitting:deciles_help'] = 'Este método de división del tiempo divide el curso en décimas (10 partes iguales), y cada predicción se basa en los datos de la décima anterior más reciente.';
 $string['timesplitting:nosplitting'] = 'Sin tiempo dividido';
 $string['timesplitting:nosplitting_help'] = 'No se define ningún método de división de tiempo para este modelo.';
-$string['timesplitting:quarters'] = 'Cuartos';
+$string['timesplitting:quarters'] = 'Cuartiles';
 $string['timesplitting:quartersaccum'] = 'Cuartiles acumulativos';
 $string['timesplitting:quartersaccum_help'] = 'Este método de división del tiempo divide el curso en cuartos (4 partes iguales), y cada predicción se basa en los datos de todos los cuartos anteriores.';
 $string['timesplitting:quarters_help'] = 'Este método de división del tiempo divide el curso en cuartos (4 partes iguales), y cada predicción se basa en los datos del cuarto anterior más reciente.';
@@ -2185,9 +2163,8 @@ $string['withchosenfiles'] = 'Con los archivos escogidos';
 $string['withdisablednote'] = '{$a} (desactivado)';
 $string['withoutuserdata'] = 'sin datos de usuario';
 $string['withselectedusers'] = 'Con los usuarios seleccionados...';
-$string['withselectedusers_help'] = '* Enviar mensaje: Para enviar un mensaje a uno o más participantes.
-* Agregar una nueva nota: Para agregar una nota a un participante seleccionado
-* Agregar una nota común: Para agregar la misma nota a más de un participante';
+$string['withselectedusers_help'] = '* Enviar mensaje: Para enviar un mensaje a uno o más participantes
+* Agregar una nueva nota: Para agregar una nota a un participante seleccionado';
 $string['withuserdata'] = 'con datos de usuario';
 $string['wordforstudent'] = 'Su palabra para Estudiante';
 $string['wordforstudenteg'] = 'por ejemplo: Estudiante, Alumno, Participante, etc.';

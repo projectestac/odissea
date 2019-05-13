@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['encoding'] = '文件编码中';
-$string['expiredaction'] = '选课终止操作';
+$string['expiredaction'] = '选课到期行动';
 $string['expiredaction_help'] = '当用户选课终止后，选择要执行的操作。请注意：某些用户资料和设置会在撤销选课时清除';
 $string['filelockedmail'] = 'cron 进程无法删除您用于选课的文本文件({$a})。请设置好权限以便 Moodle 能删除这个文件，否则它将被重复处理。';
 $string['filelockedmailsubject'] = '严重错误：选课文件';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Личные файлы';
+$string['privacy:metadata'] = 'Блок «Личные файлы» только обеспечивает просмотр и дает ссылки на личные файлы пользователя.';
 $string['privatefiles'] = 'Личные файлы';
 $string['private_files:addinstance'] = 'Добавлять новый блок «Личные файлы»';
 $string['private_files:myaddinstance'] = 'Добавлять новый блок «Личные файлы» на страницу «Личный кабинет»';

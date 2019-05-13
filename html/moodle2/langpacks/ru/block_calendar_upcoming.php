@@ -29,3 +29,4 @@ $string['calendar_upcoming:addinstance'] = 'Добавлять новый бло
 $string['calendar_upcoming:myaddinstance'] = 'Добавлять новый блок «Предстоящие события» на страницу «Личный кабинет»';
 $string['gotocalendar'] = 'Перейти к календарю...';
 $string['pluginname'] = 'Предстоящие события';
+$string['privacy:metadata'] = 'Блок «Предстоящие события» только показывает существующие данные календаря.';

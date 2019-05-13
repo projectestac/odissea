@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = 'Τίτλος μπλοκ';
+$string['configtitleblankhides'] = 'Τίτλος μπλοκ (χωρίς τίτλο αν είναι κενό)';
 $string['leaveblanktohide'] = 'αφήστε κενό για να μην εμφανίζεται ο τίτλος';
+$string['mentees:addinstance'] = 'Προσθήκη νέου μπλοκ καθοδηγούμενων';
+$string['mentees:myaddinstance'] = 'Προσθήκη νέου μπλοκ καθοδηγούμενοι στο Ταμπλό';
 $string['newmenteesblock'] = '(νέο μπλοκ Μαθητευόμενων)';
 $string['pluginname'] = 'Μαθητευόμενοι';
+$string['privacy:metadata'] = 'Το μπλοκ Καθοδηγούμενοι εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';

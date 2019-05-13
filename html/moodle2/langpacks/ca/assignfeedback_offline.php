@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['confirmimport'] = 'Confirma la importació de qualificacions';
-$string['default'] = 'Habilitat per omissió';
-$string['default_help'] = 'Si està marcat s\'habilitarà per omissió en totes les noves tasques la qualificació fora de línia amb fulls de càlcul.';
+$string['default'] = 'Habilitat per defecte';
+$string['default_help'] = 'Si està marcat, la qualificació fora de línia amb fulls de càlcul s\'habilitarà per defecte a totes les noves tasques.';
 $string['downloadgrades'] = 'Descarrega el full de càlcul per qualificar';
 $string['enabled'] = 'Full de càlcul per qualificar fora de línia';
-$string['enabled_help'] = 'Si està habilitat, el professorat podrà descarregar i carregar un full de càlcul amb les qualificacions de l\'estudiantat quan qualifiqui les tasques.';
+$string['enabled_help'] = 'Si està habilitat, el professor podrà descarregar i carregar un full de càlcul amb les qualificacions de l\'estudiant quan qualifiqui les tasques.';
 $string['feedbackupdate'] = 'Estableix el camp "{$a->field}" de "{$a->student}" a "{$a->text}"';
 $string['gradelockedingradebook'] = 'La qualificació de {$a} s\'ha bloquejat en el llibre de qualificacions';
 $string['graderecentlymodified'] = 'La qualificació de {$a} té data de modificació més recent a Moodle que al full de qualificacions';

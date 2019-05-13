@@ -67,6 +67,7 @@ $string['pluginnameediting'] = 'Engadir unha pregunta numérica';
 $string['pluginname_help'] = 'Desde a perspectiva do alumno, unha pregunta numérica parece coma unha pregunta de resposta curta. A diferenza é que se permite que a resposta numérica teña un erro aceptado. Isto permite un intervalo fixe de respostas que avaliar como unha única resposta. Por exemplo, se a resposta é 10, cun erro aceptado de 2, entón calquera número entre 8 e 12 se aceptará como correcto.';
 $string['pluginname_link'] = 'pregunta/tipo/numérica';
 $string['pluginnamesummary'] = 'Permite unha resposta numérica, posibelmente con unidades, que se cualifica comparando contra varios modelos de respostas, posibelmente con tolerancias.';
+$string['privacy:metadata'] = 'O engadido de pregunta numérica non almacena ningún dato persoal.';
 $string['relative'] = 'Relativo';
 $string['rightexample'] = 'na dereita, por exemplo 1.00cm ou 1.00km';
 $string['selectunit'] = 'Seleccione unha unidade';

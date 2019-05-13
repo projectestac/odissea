@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTML-Format';
 $string['pluginname_help'] = 'Das XHTML-Format erlaubt den Export aller Fragen innerhalb einer Kategorie in eine einzelne XHTML-Seite (Strict XHTML), um die Benutzung in anderen Programmen zu ermöglichen. ';
-$string['privacy:metadata'] = 'Das XHTML Frageformat Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das XHTML Frageformat Plugin speichert keine personenbezogenen Daten.';

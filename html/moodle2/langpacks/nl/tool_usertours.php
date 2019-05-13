@@ -104,6 +104,10 @@ $string['placement_help'] = 'Een stap kan boven, onder links of rechts van het d
 
 Als de stap niet past op een bepaalde pagina op de opgegeven plaats, dan zal die automatisch ergens anders weergegeven worden.';
 $string['pluginname'] = 'Rondleidingen';
+$string['privacy:metadata:preference:completed'] = 'Het tijdstip waarop een gebruiker laatst een gebruikersrondleiding voltooide.';
+$string['privacy:metadata:preference:requested'] = 'Het tijdstip waarop een gebruiker laatst manueel op een gebruikersrondleiding vroeg';
+$string['privacy:request:preference:completed'] = 'Je hebt de "{$a->name}" gebruikersrondleiding als voltooid gemarkeerd op {$a->time}';
+$string['privacy:request:preference:requested'] = 'Je hebt de "{$a->name}" gebruikersrondleidng laatst gevraagd op  {$a->time}';
 $string['reflex'] = 'Ga verder met een klik';
 $string['reflex_help'] = 'Ga verder naar de volgende stap wanneer op het doel geklikt wordt.';
 $string['resettouronpage'] = 'Zet de rondleiding terug naar start op deze pagina';

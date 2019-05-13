@@ -84,13 +84,35 @@ Si su sitio no está activo puede crear y suministrar insignias de prueba, siemp
 
 La única URL necesaria para la verificación es [su-sitio-url]/badges/assertion.php, por lo que si usted puede modificar el firewall para permitir el acceso externo a ese archivo, la verificación de las  insignias seguirá funcionando.';
 $string['backpackbadges'] = 'Usted tiene {$a->totalbadges} insignias que se muestran desde {$a->totalcollections} colecciones. <a href="mybackpack.php">Cambiar la configuración de la mochila</a> .';
+$string['backpackcannotsendverification'] = 'No puede enviarse email de verificación';
 $string['backpackconnection'] = 'Conexión a la mochila';
+$string['backpackconnectioncancelattempt'] = 'Conectar usando una dirección email diferente';
+$string['backpackconnectionconnect'] = 'Conectar a mochila';
 $string['backpackconnection_help'] = 'Esta página le permite configurar la conexión a un proveedor externo de mochilas. Conectarse a una mochila le permite mostrar insignias externas dentro de este sitio y subir las insignias ganadas aquí a su mochila.
 
 Actualmente, sólo <a href="http://backpack.openbadges.org">Mochila OpenBadges Mozilla</a> es compatible. Es necesario inscribirse para tener un servicio de mochila antes de tratar de configurar la conexión a la mochila en esta página.';
+$string['backpackconnectionresendemail'] = 'Reenviar email de verificación';
+$string['backpackconnectionunexpectedresult'] = 'Hubo un problema al conectar con la mochila. Por favor, inténtelo de nuevo.<br><br>Si este problema persiste, por favor póngase en contacto con su administrador.';
 $string['backpackdetails'] = 'Configuración de la mochila';
 $string['backpackemail'] = 'Dirección de correo electrónico';
 $string['backpackemail_help'] = 'La dirección de correo electrónico asociada a su mochila. Mientras está conectado, las insignias obtenidas en este sitio se asociarán con esta dirección de correo electrónico.';
+$string['backpackemailverificationpending'] = 'Verificación pendiente';
+$string['backpackemailverifyemailbody'] = 'Hola,
+
+Se ha solicitado una nueva conexión a su mochila de OpenBadges desde \'{$a->sitename}\' usando su dirección de correo electrónico.
+
+Para confirmarlo y activar la conexión a su mochila, por favor haga clic en el siguiente enlace
+
+{$a->link}
+
+En la mayoría de los programas de correo, esto debería de aparecer como un enlace de color azul en el que puede hacer clic. Si eso no funcionara, entonces copie y pegue la dirección en su navegador web.
+
+Si necesita ayuda, por favor póngase en contacto con el administrador del sitio,
+{$a->admin}';
+$string['backpackemailverifyemailsubject'] = '{$a}: Verificación de email de Mochila de OpenBadges';
+$string['backpackemailverifypending'] = 'Se ha enviado un email de notificación a <strong>{$a}</strong>. Haga clic en el enlace de verificación en el email para activar la conexión a su Mochila.';
+$string['backpackemailverifysuccess'] = 'Gracias por verificar su dirección email. Ahora está conectado a su Mochila.';
+$string['backpackemailverifytokenmismatch'] = 'El token en el enlace que pinchó coincide con el token almacenado. Asegúrese de que hizo clic en el email más reciente que recibió.';
 $string['backpackimport'] = 'Ajustes de importación de insignias';
 $string['backpackimport_help'] = 'Después de establecerse una conexión correcta a la mochila, las insignias de su mochila pueden verse en la página "Mis Badges"  y en su página de perfil.
 
@@ -215,10 +237,13 @@ $string['error:backpackemailnotfound'] = 'La dirección de correo \'{$a}\' no es
 $string['error:backpackloginfailed'] = 'No puede estar conectado a una mochila externa por la siguiente razón: {$a}';
 $string['error:backpacknotavailable'] = 'Su sitio no es accesible a través de Internet, por lo que cualquier insignia emitida en este sitio no puede ser verificada por los servicios de mochila externos';
 $string['error:backpackproblem'] = 'Hay un problema al conectar a su proveedor de servicios de mochila. Por favor, inténtelo de nuevo más tarde.';
+$string['error:badgeawardnotfound'] = 'No es posible verificar esta insignia obtenida. Esta insignia puede haber sido revocada.';
+$string['error:badgenotfound'] = 'Insignia no encontrada';
 $string['error:badjson'] = 'El intento de conexión devolvió datos no válidos.';
 $string['error:cannotact'] = 'No se puede activar la insignia.';
 $string['error:cannotawardbadge'] = 'No se puede conceder la insignia a un usuario.';
 $string['error:cannotdeletecriterion'] = 'Este criterio no puede ser borrado.';
+$string['error:cannotrevokebadge'] = 'No es posible revocar la insignia de un usuario.';
 $string['error:clone'] = 'No se puede clonar la insignia';
 $string['error:connectionunknownreason'] = 'La conexión no tuvo éxito, pero no se conoce el motivo.';
 $string['error:duplicatename'] = 'Una insignia con ese nombre ya existe en el sistema.';
@@ -246,12 +271,18 @@ $string['error:requesterror'] = 'La solicitud de conexión ha fallado (código d
 $string['error:requesttimeout'] = 'Terminó el tiempo de solicitud de conexión antes de que esta se pudiera llevar a cabo.';
 $string['error:save'] = 'No se puede guardar la insignia';
 $string['error:userdeleted'] = '{$a->user} (Este usuario ya no existe en {$a->site})';
+$string['eventbadgearchived'] = 'Insignia archivada';
 $string['eventbadgeawarded'] = 'Insignia concedida';
 $string['eventbadgecreated'] = 'Insignia creada';
+$string['eventbadgecriteriacreated'] = 'Criterio de insignia creado';
+$string['eventbadgecriteriadeleted'] = 'Criterio de insignia eliminado';
+$string['eventbadgecriteriaupdated'] = 'Criterio de insignia actualizado';
 $string['eventbadgedeleted'] = 'Insignia borrada';
 $string['eventbadgedisabled'] = 'Insignia deshabilitada';
 $string['eventbadgeduplicated'] = 'Insignia duplicada';
 $string['eventbadgeenabled'] = 'Insignia habilitada';
+$string['eventbadgelistingviewed'] = 'Lista de insignias vista';
+$string['eventbadgerevoked'] = 'Insignia revocada';
 $string['eventbadgeupdated'] = 'Insignia actualizada';
 $string['eventbadgeviewed'] = 'Insignia vista';
 $string['evidence'] = 'Evidencia';
@@ -339,6 +370,34 @@ $string['personaconnection'] = 'Inicie sesión con su dirección de email';
 $string['personaconnection_help'] = 'Persona es un sistema para su identificación en la web, usando una dirección de correo electrónico de su propiedad. La mochila de Open Badges utiliza Persona como sistema de inicio de sesión, por lo que para conectarse a una mochila necesita una cuenta de Persona. Para obtener más información acerca de Persona visite <a href="https://login.persona.org/about">https://login.persona.org/about</a> .';
 $string['potentialrecipients'] = 'Potenciales destinatarios de la insignia';
 $string['preferences'] = 'Preferencias de insignias';
+$string['privacy:metadata:backpack'] = 'Un registro de las mochilas del usuario';
+$string['privacy:metadata:backpack:backpackuid'] = 'El identificador único de la mochila';
+$string['privacy:metadata:backpack:backpackurl'] = 'La URL de la mochila';
+$string['privacy:metadata:backpack:email'] = 'El email asociado con la mochila';
+$string['privacy:metadata:backpack:userid'] = 'El ID del usuario de la mochila';
+$string['privacy:metadata:badge'] = 'Una colección de insignias';
+$string['privacy:metadata:badge:timecreated'] = 'La hora en la cual fue creada la insignia';
+$string['privacy:metadata:badge:timemodified'] = 'La hora en la cual fue modificada por última vez la insignia';
+$string['privacy:metadata:badge:usercreated'] = 'El ID del usuario que creó la insignia';
+$string['privacy:metadata:badge:usermodified'] = 'El ID del usuario que modificó la insignia';
+$string['privacy:metadata:criteriamet'] = 'Una colección de criterios que han sido cumplidos';
+$string['privacy:metadata:criteriamet:datemet'] = 'La fecha en la cual se cumplieron los criterios';
+$string['privacy:metadata:criteriamet:userid'] = 'El ID del usuario que ha cumplido con los criterios';
+$string['privacy:metadata:external:backpacks'] = 'Información compartida cuando los usuarios envían sus insignias a una mochila externa';
+$string['privacy:metadata:external:backpacks:badge'] = 'El nombre de la insignia';
+$string['privacy:metadata:external:backpacks:description'] = 'La descripción de la insignia';
+$string['privacy:metadata:external:backpacks:image'] = 'La imagen de la insignia';
+$string['privacy:metadata:external:backpacks:issuer'] = 'Alguna información sobre el emisor';
+$string['privacy:metadata:external:backpacks:url'] = 'La URL de Moodle en donde puede verse la información de la insignia emitida';
+$string['privacy:metadata:issued'] = 'Un registro de insignias otorgadas';
+$string['privacy:metadata:issued:dateexpire'] = 'La fecha en la cual caduca la insignia';
+$string['privacy:metadata:issued:dateissued'] = 'La fecha de la distinción';
+$string['privacy:metadata:issued:userid'] = 'El ID del usuario a quien se le otorgó una insignia';
+$string['privacy:metadata:manualaward'] = 'Un registro de otorgamientos manuales';
+$string['privacy:metadata:manualaward:datemet'] = 'La fecha en la cual al usuario le fue otorgada la insignia';
+$string['privacy:metadata:manualaward:issuerid'] = 'El ID del usuario que otorga la insignia';
+$string['privacy:metadata:manualaward:issuerrole'] = 'El rol del usuario que otorga la insignia';
+$string['privacy:metadata:manualaward:recipientid'] = 'El ID del usuario al que se le otorga manualmente una insignia';
 $string['recipientdetails'] = 'Detalles del destinatario';
 $string['recipientidentificationproblem'] = 'No se puede encontrar un destinatario de esta insignia entre los usuarios existentes.';
 $string['recipients'] = 'Destinatarios de la insignia';

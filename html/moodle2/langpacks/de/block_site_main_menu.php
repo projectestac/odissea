@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Hauptmenü';
 $string['privacy:metadata'] = 'Der Block Hauptmenü zeigt nur Daten an, die an anderen Orten gespeichert sind.';
-$string['site_main_menu:addinstance'] = 'Hauptmenü-Block hinzufügen';
+$string['site_main_menu:addinstance'] = 'Neuen Hauptmenü-Block hinzufügen';

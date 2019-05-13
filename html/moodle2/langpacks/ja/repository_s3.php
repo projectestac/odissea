@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['access_key'] = 'アクセスキー';
-$string['configplugin'] = 'Amazon S3の設定';
+$string['configplugin'] = 'Amazon S3設定';
 $string['endpoint'] = 'Amazon S3エンドポイント';
 $string['needaccesskey'] = 'アクセスキーを入力してください。';
 $string['pluginname'] = 'Amazon S3';

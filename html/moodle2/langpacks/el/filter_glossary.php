@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Αυτόματοι σύνδεσμοι γλωσσαρίου';
-$string['privacy:metadata'] = 'Το πρόσθετο αυτόματων σύνδεσμων γλωσσαρίου δεν αποθηκεύει καθόλου προσωπικά δεδομένα.';
+$string['glossarycategory'] = '{$a->glossary}: Κατηγορία {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
+$string['privacy:metadata'] = 'Το πρόσθετο «Αυτόματοι σύνδεσμοι γλωσσαρίου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

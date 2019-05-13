@@ -41,6 +41,8 @@ $string['notarget'] = 'Ten que especificar se se enviará a un cartafol existent
 $string['noticket'] = 'Non foi posíbel recibir un ticket desde Box para comezar coa sesión de autenticación';
 $string['password'] = 'O seu contrasinal de Box (non se gardará)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'Este engadido envía datos externamente a unha conta de Box ligada. Non almacena datos localmente.';
+$string['privacy:metadata:data'] = 'Datos persoais pasados a mediante o subsistema portafolios.';
 $string['sendfailed'] = 'Non foi posíbel enviar contido a Box: {$a}';
 $string['setupinfo'] = 'Instrucións de configuración';
 $string['setupinfodetails'] = 'Para obter un secreto e un ID de cliente, entre en Box e visite a <a href="{$a->servicesurl}">Páxina de desenvolvedores de Box(Box developers page)</a>. Siga «Crear unha nova aplicación (Create new application» e cree unha nova aplicación para o seu sitio Moodle. O ID do cliente e o secreto amósanse na sección de «OAuth2 parameters» do formulario de edición da aplicación. Opcionalmente, tamén pode  fornecer outra información sobre o seu sitio Moodle';

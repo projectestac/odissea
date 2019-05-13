@@ -722,14 +722,14 @@ class hotpot {
     static public function get_version_info($info)  {
         global $CFG;
 
-        static $module = null;
-        if (is_null($module)) {
+        static $plugin = null;
+        if (is_null($plugin)) {
             $plugin = new stdClass();
             require($CFG->dirroot.'/mod/hotpot/version.php');
         }
 
-        if (isset($module->$info)) {
-            return $module->$info;
+        if (isset($plugin->$info)) {
+            return $plugin->$info;
         } else {
             return "no $info found";
         }
@@ -1599,7 +1599,9 @@ class hotpot {
         $ignored = array('CVS', '_vti_cnf', 'simpletest', 'db', 'yui', 'phpunit');
 
         // get all the subplugins for this $plugintype
-        while (list($type, $dir) = each($types)) {
+        reset($types);
+        while ($type = key($types)) {
+            $dir = current($types);
             $fulldir = $CFG->dirroot.'/'.$dir;
             if (is_dir($fulldir) && file_exists($fulldir.'/'.$classfilename)) {
 
@@ -1622,6 +1624,7 @@ class hotpot {
                     }
                 }
             }
+            next($types);
         }
         sort($classes);
         return $classes;

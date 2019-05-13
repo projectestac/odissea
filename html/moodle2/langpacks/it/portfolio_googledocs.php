@@ -32,5 +32,7 @@ $string['nooauthcredentials_help'] = 'Per usare il plugin portfolio Google Drive
 $string['nosessiontoken'] = 'Non esiste un token di sessione e non è possibile esportare file su Google.';
 $string['oauthinfo'] = '<p>Per usare questo plugin devi essere registrato su Google. Trovi le istruzioni per la registrazione nella documentazione <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Durante il processo di registrazione dovrai inserire il seguente URL nel campo \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Al termine della registrazione riceverai un Client ID ed uno Shared secret che possono essere utilizzati per configurare sia i plugin Google Drive sia i plugin Picasa.</p>';
 $string['pluginname'] = 'Google Drive';
+$string['privacy:metadata'] = 'Il plugin invia dati esternamente a un account Google collegato. Non memorizza dati localmente.';
+$string['privacy:metadata:data'] = 'Dati personali passati dal sottosistema portfolio.';
 $string['secret'] = 'Secret';
 $string['sendfailed'] = 'Non è stato possibile trasferire il file {$a} su Google';

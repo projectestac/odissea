@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'Foi enviado un texto en liña.';
 $string['pluginname'] = 'En liña';
+$string['privacy:metadata'] = 'O engadido de tarefas en liña non almacena ningunha información persoal.';

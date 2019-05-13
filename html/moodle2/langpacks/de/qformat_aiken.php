@@ -27,4 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aiken-Format';
 $string['pluginname_help'] = 'Das Aiken-Format ist ein einfaches Format zum Import von Multiple-Choice-Fragen über eine Textdatei.';
-$string['privacy:metadata'] = 'Das AIKEN Frageformat Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das AIKEN Frageformat Plugin speichert keine personenbezogenen Daten.';
+$string['questionmissinganswers'] = 'Fragen benötigen mindestens zwei Antworten in Zeite {$a}';
+$string['questionnotcomplete'] = 'Frage nicht vollständig vor der nächsten Frage in Zeile {$a}';
+$string['questionnotstarted'] = 'Frage nicht begonnen in Zeile {$a}';

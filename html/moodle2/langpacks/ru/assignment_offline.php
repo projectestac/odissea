@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Оффлайн';
+$string['privacy:metadata'] = 'Плагин задания «Оффлайн» не хранит никаких персональных данных.';

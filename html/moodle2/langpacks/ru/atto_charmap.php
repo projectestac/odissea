@@ -211,6 +211,7 @@ $string['pisymbol'] = 'пи';
 $string['pluginname'] = 'Вставка символа';
 $string['plusminussign'] = 'плюс-минус';
 $string['poundsign'] = 'фунт стерлингов';
+$string['privacy:metadata'] = 'Плагин atto_charmap не хранит никаких персональных данных.';
 $string['proportionalto'] = 'пропорционален';
 $string['psi'] = 'пси';
 $string['psi_caps'] = 'Пси';

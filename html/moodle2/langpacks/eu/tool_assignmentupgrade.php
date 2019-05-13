@@ -41,6 +41,7 @@ $string['listnotupgraded'] = 'Eguneratu gabe dauden zereginen zerrenda';
 $string['listnotupgraded_desc'] = 'Hemen zereginak banan-banan eguneratu ahal dituzu';
 $string['noassignmentsselected'] = 'Ez da zereginik aukeratu';
 $string['noassignmentstoupgrade'] = 'Ez dago eguneratu beharreko zereginik';
+$string['notsupported'] = '';
 $string['notupgradedintro'] = 'Orri honek Moodle 2.3ko zeregin modulu berrira eguneratu gabeko Moodle-ren bertsio zaharrago batekin sortutako zereginak zerrendatzen ditu. Zeregin guztiak ezin dira eguneratu -pertsonalizatutako zeregin azpimota batekin sortutakoak badira, azpimota hori eguneratu egin beharkoda zeregin berriaren pluginaren formatura eguneraketa osatzeko.';
 $string['notupgradedtitle'] = 'Eguneratu gabeko zereginak';
 $string['pluginname'] = 'Zereginak eguneratzeko tresna';

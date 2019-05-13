@@ -62,6 +62,7 @@ $string['maketestcourse'] = 'Maak testcursus';
 $string['maketestplan'] = 'Maak JMeter testplan';
 $string['notenoughusers'] = 'De geselecteerde cursus heeft niet genoeg gebruikers';
 $string['pluginname'] = 'Ontwikkelings datagenerator';
+$string['privacy:metadata'] = 'De ontwikkeling gegevensgenerator-plugin bewaart geen persoonlijke gegevens.';
 $string['progress_checkaccounts'] = 'Gebruikersaccounts controleren ({$a})';
 $string['progress_coursecompleted'] = 'Cursus volledig ({$a})';
 $string['progress_createaccounts'] = 'Gebruikersaccounts maken ({$a->from} - {$a->to})';

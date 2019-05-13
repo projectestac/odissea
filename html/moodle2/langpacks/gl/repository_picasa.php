@@ -30,4 +30,6 @@ $string['configplugin'] = 'Configuración do repositorio de Picasa';
 $string['oauthinfo'] = '<p>Para empregar este engadido, debe rexistrar o seu sitio en Google, tal e como se describe na documentación de <a href="{$a->docsurl}"> configuración de Google OAuth 2.0.</a>.</p><p>Como parte do proceso de rexistro, terá que introducir o seguinte URL como «URI autorizado de encamiñamento»:</p><p>{$a->callbackurl}</p>Unha vez rexistrado, forneceráselle un ID de cliente e o secreto que pode empregar para configurar todos os engadidos de Google Docs e Picasa.</p>';
 $string['picasa:view'] = 'Ver o repositorio de Picasa';
 $string['pluginname'] = 'Álbum web de Picasa';
+$string['privacy:metadata:repository_picasa'] = 'O engadido de repositorio de álbum web de Picasa almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'A consulta de busca de texto de usuario do repositorio Picasa.';
 $string['secret'] = 'Segredo';

@@ -52,9 +52,12 @@ class com_wiris_quizzes_impl_MathMLFilter implements com_wiris_quizzes_api_MathF
 		$sb = new StringBuf();
 		$start = 0;
 		$end = 0;
-		while(($start = _hx_index_of($html, "<math", $end)) !== -1) {
+		while(($start = _hx_index_of($html, "<math", $end)) > -1) {
 			$sb->add(_hx_substr($html, $end, $start - $end));
 			$end = _hx_index_of($html, "</math>", $start) + 7;
+			if($end < $start) {
+				$end = _hx_index_of($html, "/>", $start) + 2;
+			}
 			$mathml = _hx_substr($html, $start, $end - $start);
 			$img = $this->mathml2img($mathml);
 			$sb->add($img);

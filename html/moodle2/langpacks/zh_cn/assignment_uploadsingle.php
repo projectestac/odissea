@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '单个上传';
+$string['privacy:metadata'] = '单次作业上传插件不储存任何私人数据。';

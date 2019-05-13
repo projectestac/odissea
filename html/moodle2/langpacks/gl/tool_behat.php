@@ -41,6 +41,7 @@ $string['newstepsinfo'] = 'Lea {$a} para ver información sobre como engadir nov
 $string['newtestsinfo'] = 'Lea {$a} para ver información sobre como escribir novas probas';
 $string['nostepsdefinitions'] = 'Non hai definicións de pasos que coincidan con estos filtros';
 $string['pluginname'] = 'Proba de aceptación';
+$string['privacy:metadata'] = 'O engadido de Proba de aceptación non almacena ningún dato persoal.';
 $string['stepsdefinitionscomponent'] = 'Área';
 $string['stepsdefinitionscontains'] = 'Contén';
 $string['stepsdefinitionsfilters'] = 'Definicións de pasos';

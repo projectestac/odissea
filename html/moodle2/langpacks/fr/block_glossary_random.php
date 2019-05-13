@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addentry'] = 'Ajouter un concept';
+$string['addentry'] = 'Ajouter un article';
 $string['askaddentry'] = 'Quand les utilisateurs peuvent ajouter des articles dans le glossaire, afficher un lien avec ce texte ';
 $string['askinvisible'] = 'Quand les utilisateurs ne peuvent ni voir, ni modifier le glossaire, afficher ce texte (sans lien) ';
 $string['askviewglossary'] = 'Quand les utilisateurs peuvent voir le glossaire, mais pas le modifier, afficher un lien avec ce texte ';
@@ -47,5 +47,5 @@ $string['select_glossary'] = 'Choisir les articles dans ce glossaire';
 $string['showconcept'] = 'Afficher le concept (nom) de chaque article';
 $string['title'] = 'Titre';
 $string['type'] = 'Comment un nouvel article est choisi';
-$string['viewglossary'] = 'Afficher tous les concepts';
+$string['viewglossary'] = 'Afficher tous les articles';
 $string['whichfooter'] = 'Vous pouvez afficher des liens vers des actions du glossaire auquel ce bloc est associé. Le bloc n\'affichera que les liens vers des actions activées dans ce glossaire.';

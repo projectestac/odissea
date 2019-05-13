@@ -30,5 +30,6 @@ $string['configplugin'] = 'Impostazioni Amazon S3';
 $string['endpoint'] = 'Amazon S3 endpoint';
 $string['needaccesskey'] = 'Devi fornire una chiave d\'accesso';
 $string['pluginname'] = 'Amazon S3';
+$string['privacy:metadata'] = 'Il plugin Repository \'Amazon S3\' non memorizza dati personali, ma trasmette i dati degli utenti da Moodle al sistema remoto.';
 $string['s3:view'] = 'Visualizzare repository Amazon S3';
 $string['secret_key'] = 'Chiave segreta';

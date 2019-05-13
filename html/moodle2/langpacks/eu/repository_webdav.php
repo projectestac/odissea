@@ -39,4 +39,4 @@ $string['webdav_port'] = 'WebDAV zerbitzariaren portua';
 $string['webdav_server'] = 'WebDAV zerbitzaria';
 $string['webdav_type'] = 'WebDav mota';
 $string['webdav_user'] = 'WebDAV zerbitzariaren erabiltzailea';
-$string['webdav:view'] = 'WebDAV biltegia ikusi';
+$string['webdav:view'] = 'Ikusi WebDAV biltegia';

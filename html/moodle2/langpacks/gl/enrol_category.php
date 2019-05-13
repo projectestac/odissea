@@ -29,3 +29,4 @@ $string['category:config'] = 'Configurar as instancias de categorías de matricu
 $string['category:synchronised'] = 'Tarefas de rol sincronizadas coa matriculación do curso';
 $string['pluginname'] = 'Categoría matrículas';
 $string['pluginname_desc'] = 'O engadido de categoría de matrícula é unha solución herdada para matriculacións no nivel de categoría do curso vía tarefas de rol. Recoméndase usar no seu lugar a sincronización de círculos.';
+$string['privacy:metadata'] = 'O engadido de categoría de matrícula non almacena ningún dato persoal.';

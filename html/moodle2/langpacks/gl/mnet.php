@@ -174,6 +174,7 @@ $string['permittedtransports'] = 'Transportes permitidos';
 $string['phperror'] = 'Un erro interno de PHP impediu efectuar o seu pedido.';
 $string['position'] = 'Posición';
 $string['postrequired'] = 'A función eliminada require un pedido POST.';
+$string['privacy:metadata'] = 'O engadido MNet non almacena ningún dato persoal.';
 $string['profileexportfields'] = 'Campos para enviar';
 $string['profilefielddesc'] = 'Aquí pode configurar a lista de campos del perfil que se envían e reciben de MNet cando se crean ou actualizan as contas de usuario. Tamén pode cambialo para cada elemento MNet individual. Teña en conta que os seguintes campos envíanse sempre e non son opcionais: {$a}';
 $string['profilefields'] = 'Campos de perfil';

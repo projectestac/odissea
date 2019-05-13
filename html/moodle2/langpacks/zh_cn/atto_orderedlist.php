@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '有序列表';
+$string['privacy:metadata'] = 'atto_orderedlist 插件不储存任何私人数据。';

@@ -31,9 +31,9 @@ $string['autoscroll'] = 'Korritze automatikoa';
 $string['beep'] = 'Abisua';
 $string['bubble'] = 'Burbuila';
 $string['cantlogin'] = 'Ezin da sartu txat-gelan!!!';
-$string['chat:addinstance'] = 'Gehitu beste txat-gela bat';
+$string['chat:addinstance'] = 'Gehitu txat-gela berria';
 $string['chat:chat'] = 'Sartu txat-gelara';
-$string['chat:deletelog'] = 'Txataren agerraldiak ezabatu';
+$string['chat:deletelog'] = 'Ezabatu txataren agerraldiak';
 $string['chat:exportparticipatedsession'] = 'Esportatu zeuk parte hartutako txat-saioak';
 $string['chat:exportsession'] = 'Esportatu edozein txat-saio';
 $string['chatintro'] = 'Deskribapena';
@@ -48,7 +48,7 @@ $string['composemessage'] = 'Idatzi mezua';
 $string['configmethod'] = 'AJAX bidezko txat-metodoak AJAX bidezko txat-interfazea ematen du, aldiro konektatzen da zerbitzariarekin eguneraketak egiteko. Txataren ohiko metodoan erabiltzaileek aldiro konektatzen dute zerbitzariarekin eguneraketak egiteko. Ez du konfiguraziorik behar eta edonon funtzionatzen du baina zerbitzaria gainkarga dezake gelan erabiltzaile asko aldi berean ari badira. Zerbitzariko \'daemon\'a erabiltzeak Unixerako shell sarbidea eskatzen du, baina txat-giro arinago eta lorgarriagoa ematen du.';
 $string['confignormalupdatemode'] = 'HTTP 1.1ren <em>Keep-Alive</em> ezaugarria erabilita zerbitzatzen dira normalean txat-gelaren eguneraketak baina zerbitzariarentzat nahikoa gogorra da lan hau. Erabiltzaileei eguneraketak bidaltzeko metodo aurreratuagoa da <em>Stream</em> estrategia erabiltzea. <em>Stream</em> erabilita eskalamendu hobea lortzen da (chatd metodoaren antzekoa da) baina agian zure zerbitzariak ez du onartuko aukera hau.';
 $string['configoldping'] = 'Jarduerarik gabe zenbat denbora (segundutan) igarota pentsatu behar da erabiltzaileak utzi egin duela?';
-$string['configrefreshroom'] = 'Zenbat segunduro eguneratu behar da txataren orria? Balore baxuak elkarrizketa arinagoa ahalbidetuko du baina zerbitzariarentzat karga handia izan daiteke gelan lagun asko dagoenean.';
+$string['configrefreshroom'] = 'Zenbat segunduro freskatu behar da txataren orria? Balio baxuak elkarrizketa arinagoa ahalbidetuko du, baina zerbitzariarentzat karga handia izan daiteke gelan lagun asko dagoenean. <em>Stream</em> eguneratzeak erabiltzen ari bazara freskatze-maiztasun handiagoak jarri ditzakezu -- 2 jartzen saiatu zaitez.';
 $string['configrefreshuserlist'] = 'Zenbat segunduro eguneratu behar da txatean dauden erabiltzaileen zerrenda?';
 $string['configserverhost'] = 'Zerbitzariaren \'daemon\'a (egikaritza prozesu independentea) dagoen ordenagailuaren \'Hostame\'a (etxekoaren izena)';
 $string['configserverip'] = '\'hostame\'aren (etxekoaren izena) baliokidea den IP zenbakizko helbidea';
@@ -60,7 +60,7 @@ $string['currentusers'] = 'Oraingo erabiltzaileak';
 $string['deletesession'] = 'Ezabatu txosten hau';
 $string['deletesessionsure'] = 'Ziur al zaude txosten hau ezabatu nahi duzula?';
 $string['donotusechattime'] = 'Ez argitaratu txat-saioetarako orduak';
-$string['enterchat'] = 'Sakatu hemen txat-gelara sartzeko';
+$string['enterchat'] = 'Egin klik hemen txat-gelara sartzeko';
 $string['entermessage'] = 'Idatzi zure mezua';
 $string['errornousers'] = 'Ezin topatu erabiltzailerik!';
 $string['eventmessagesent'] = 'Mezua bidali da';
@@ -92,7 +92,7 @@ $string['methodnormal'] = 'Metodo arrunta';
 $string['modulename'] = 'Txat-gela';
 $string['modulename_help'] = 'Txat moduluak parte hartzaileak testu bidez denbora errealean eztabaida sinkronoak egitea ahalbidetzen du.
 
-Txata behin erabiltzeko aktibitatea izan daiteke edo hainbat alditan errepika daiteke (egunero ordu berean, astero,...). Txat-saioak gordeta gelditzen dira eta partaide guztiek ikusteko edo baimenak dituztenek soilik ikusteko moduan konfigura daiteke.
+Txata behin erabiltzeko aktibitatea izan daiteke edo hainbat alditan errepika daiteke (egunero ordu berean, astero,...). Txat-saioak gordeta gelditzen dira eta partaide guztiek ikusteko edo gaitasunak dituztenek soilik ikusteko moduan konfigura daiteke.
 
 Txatak bereziki erabilgarriak dira aurrez aurreko talde-bilerak egin ezin direnean, hala nola
 
@@ -115,7 +115,7 @@ $string['normalstream'] = 'Stream';
 $string['noscheduledsession'] = 'Ez dago programatuta txat-saiorik';
 $string['notallowenter'] = 'Zuk ez duzu txat-gela honetan sartzeko baimenik.';
 $string['notlogged'] = 'Ez duzu saioa hasi!';
-$string['oldping'] = 'Itxaroteko epea deskonektatu';
+$string['oldping'] = 'Deskonektatzeko itxarote-epea';
 $string['page-mod-chat-x'] = 'Txat moduluaren edozein orri';
 $string['pastchats'] = 'Izandako txat-saioak';
 $string['pluginadministration'] = 'Txat-kudeaketa';
@@ -134,9 +134,9 @@ $string['privacy:metadata:messages:issystem'] = 'Ea mezua sistemak sortu ote due
 $string['privacy:metadata:messages:message'] = 'Mezua';
 $string['privacy:metadata:messages:timestamp'] = 'Mezua bidali deneko denbora.';
 $string['privacy:metadata:messages:userid'] = 'Mezua idatzi duen egilearen erabiltzaile IDa';
-$string['refreshroom'] = 'Gela freskatu';
-$string['refreshuserlist'] = 'Erabiltzaileen zerrenda freskatu';
-$string['removemessages'] = 'Mezu guztiak ezabatu';
+$string['refreshroom'] = 'Freskatu gela';
+$string['refreshuserlist'] = 'Freskatu erabiltzaileen zerrenda';
+$string['removemessages'] = 'Ezabatu mezu guztiak';
 $string['repeatdaily'] = 'Egunero ordu berean';
 $string['repeatnone'] = 'Ez errepikatu - zehaztutako ordua bakarrik argitaratu';
 $string['repeattimes'] = 'Errepikatu/argitaratu saioen denbora';
@@ -155,25 +155,17 @@ $string['sessions'] = 'Txat-saioetako txostenak';
 $string['sessionstart'] = 'Txat-saioa {$a->date}-(e)tan hasiko da, (hemendik {$a->fromnow}-(e)ra)';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Denek ikus ditzakete izandako saioetako txostenak';
-$string['studentseereports_help'] = 'EZ aukeratuz gero, mod/chat:readlog gaitasunean baimena duten erabiltzaileek baino ezingo dituzte txat-agerraldiak ikusi';
+$string['studentseereports_help'] = 'EZ aukeratuz gero, mod/chat:readlog gaitasuna duten erabiltzaileek baino ezingo dituzte txat-agerraldiak ikusi';
 $string['talk'] = 'Hitz egin';
-$string['updatemethod'] = 'Metodoa eguneratu';
+$string['updatemethod'] = 'Eguneratu metodoa';
 $string['updaterate'] = 'Eguneratu kalifikazioa:';
 $string['userlist'] = 'Erabiltzaile-zerrenda';
 $string['usingchat'] = 'Txata erabili';
-$string['usingchat_help'] = '<p>Txatean ondorengo baliabideak erabil ditzakegu modu atseginean hitz
-egiteko.</p>
-<dl>
-<dt><b>Aurpegierak</b></dt>
-<dd>Aurpegiera guztiak automatikoki bihurtuko dira grafiko deskriptiboago.  Adibidez: :-) = <img src="pix/s/smiley.gif">
-</dd>
-<dt><b>Estekak</b></dt>
-<dd>Internet helbideak automatikoki bihurtuko dira esteka.</dd>
-<dt><b>Emozioak</b></dt>
-<dd>Lerro bat "/me" edo ":" -rekin has dezakezu emozio bat erakusteko. Adibidez, Ana baduzu izena eta ": irribartsu dago"  idazten baduzu, denek ikusiko dute "Ana irribartsu dago"</dd>
-<dt><b>Beeps-ak</b></dt>
-<dd>Beste pertsona bati txistua bidali ahal diozu izenaren ondoko "beep" estekan sakatuta. Txateko beste pertsona bati abisua emateko erabil dezakegu eta gu han gaudela ohartarazteko. Txat-saioko  partaide guztiei ere egin ahal diezu beep-a "beep all" idatzita.</dd>
-<dt><b>HTML</b></dt>
-Zure testuan HTML lengoaia erabil dezakezu irudiak txertatzeko, soinuak eragiteko edo testuari formatua emateko, beste aukeren artean.</dd>
-</dl>';
-$string['viewreport'] = 'Izan diren txat-saioak ikusi';
+$string['usingchat_help'] = 'Txatean ondorengo baliabideak erabil ditzakegu modu atseginean hitz egiteko.
+
+* Aurpegierak - Aurpegiera guztiak automatikoki bihurtuko dira grafiko deskriptiboago.  Adibidez: :-)
+* Estekak - Internet helbideak automatikoki bihurtuko dira esteka.
+* Emozioak - Lerro bat "/me" edo ":" -rekin has dezakezu emozio bat erakusteko. Adibidez, Ana baduzu izena eta ": irribartsu dago"  idazten baduzu, denek ikusiko dute "Ana irribartsu dago"
+* Beeps-ak - Beste pertsona bati txistua bidali ahal diozu izenaren ondoko "beep" estekan klik eginda. Txateko beste pertsona bati abisua emateko erabil dezakegu eta gu han gaudela ohartarazteko. Txat-saioko partaide guztiei ere egin ahal diezu beep-a "beep all" idatzita.
+* HTML - Zure testuan HTML lengoaia erabil dezakezu irudiak txertatzeko, soinuak eragiteko edo testuari formatua emateko, beste aukeren artean.';
+$string['viewreport'] = 'Ikusi izan diren txat-saioak';

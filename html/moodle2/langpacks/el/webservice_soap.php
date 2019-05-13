@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'πρωτόκολλο SOAP';
+$string['privacy:metadata'] = 'Το πρόσθετο πρωτοκόλλου SOAP δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['soap:use'] = 'Χρήση πρωτοκόλλου SOAP';

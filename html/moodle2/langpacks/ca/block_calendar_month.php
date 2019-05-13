@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = 'Afegeix un bloc calendari nou';
-$string['calendar_month:myaddinstance'] = 'Afegeix un bloc calendari nou a la pàgina del Tauler';
+$string['calendar_month:myaddinstance'] = 'Afegeix un bloc de calendari nou a la pàgina del Tauler';
 $string['pluginname'] = 'Calendari';
+$string['privacy:metadata'] = 'El bloc Calendari només mostra les dades existents al calendari.';

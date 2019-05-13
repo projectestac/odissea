@@ -29,5 +29,5 @@ $string['configplugin'] = 'Einstellungen für \'Meine Dateien\'';
 $string['emptyfilelist'] = 'Es gibt keine Dateien anzuzeigen';
 $string['pluginname'] = 'Meine Dateien';
 $string['pluginname_help'] = 'Dateien im privaten Benutzerbereich';
-$string['privacy:metadata'] = 'Das persönliche Dateien Repository-Plugin speichert keine persönlichen Dateien.';
+$string['privacy:metadata'] = 'Das persönliche Dateien Repository-Plugin speichert keine personenbezogenen Dateien.';
 $string['user:view'] = 'Meine Dateien anzeigen';

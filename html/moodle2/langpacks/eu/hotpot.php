@@ -32,6 +32,17 @@ $string['activitygrade'] = 'Jardueraren kalifikazioa';
 $string['activityopens'] = 'Jarduera irekiko da';
 $string['added'] = 'Gehituta';
 $string['addquizchain'] = 'Gehitu galdetegi-sorta';
+$string['addquizchain_help'] = 'Segida bateko galdetegi guztiak gehitu behar al dira?
+
+**Ez**
+: galdetegi bakar bat gehituko da ikastaroan
+
+**Bai**
+: fitxategia **galdetegi-fitxategia** baldin bada, galdetegi-segida bateko lehentzat hartuko da eta, ondorioz, galdetegi guztiak gehituko dira ikastarora ezarpen berberekin. Segidako galdetegi bakoitzak hurrengora pasatzeko esteka izan beharko du.
+
+Fitxategia **karpeta** baldin bada, barruko galdetegi guztiak gehituko dira ikastarora ezarpen bereko galdetegi-segida osatzeko.
+
+Fitxategia **unitate-fitxategia** baldin bada, hala nola, Hot Potatoes masher edo index.html, unitate-fitxategiko galdetegi guztiak gehituko dira ikastarora ezarpen bereko galdetegi-segida osatzeko.';
 $string['allowpaste'] = 'Baimendu itsastea';
 $string['allowpaste_help'] = 'Ezarpen hau gaituta badago ikasleek testu koadroetan testuak kopiatu, itsasi eta arrastatu ahal izango dute';
 $string['allowreview'] = 'Berrikustea baimendu';
@@ -61,11 +72,19 @@ $string['cleardetails'] = 'HotPot cachearen xehetasunak';
 $string['clearedcache'] = 'HotPot cachea garbitu da';
 $string['cleareddetails'] = 'HotPot cachearen xehetasunak garbitu dira';
 $string['clickreporting'] = 'Klik bidezko txostena gaitu';
+$string['clickreporting_help'] = 'Gaituz gero, erregistro bereizi bat gordeko da "pista", "laguntza" edo "egiaztatu" botoian klikatzen den bakoitzean. Horrek ahalbidetzen du irakasleak txosten oso zehatza ikus dezan klikez klik galdetegiaren egoera erakusten duena.
+Bestela, erregistro bakarra gordeko da galdetegi-saiakerako.';
+$string['clicktrailreport'] = 'Kliken arrastoa';
 $string['closed'] = 'Jarduera hau itxi da';
 $string['clues'] = 'Argibideak';
 $string['completed'] = 'Beteta';
 $string['completionmingrade'] = 'Gutxieneko kalifikazioa beharrezkoa da';
 $string['completionpass'] = 'Gainditzeko kalifikazioa beharrezkoa da';
+$string['completionwarning'] = 'Eremu hauek desgaituta daude jarduera honetako kalifikazio-muga "Kalifikaziorik ez" baldin bada, edo kalifikazioaren pisua "Pisurik ez" bada.';
+$string['configbodystyles'] = 'Moodle-ren itxura motak HotPot jardueraren itxura gainidaztea dago lehenetsita. Hala ere, hemen aukeratutako itxura edozein izanda ere, HotPot jardueraren itxurak lehentasuna izango du Moodle-ren itxuraren gainetik.';
+$string['configenablecache'] = 'HotPot galdetegien cache-a mantentzeak abiadura biziki arinduko du ikasleek lan egiterakoan.';
+$string['configenablecron'] = 'Zehaztu cron-a abiarazteko zure ordutegi-eremuko orduak';
+$string['configenablemymoodle'] = 'Ezarpen honek kontrolatzen du Nire Moodle orrian HotPot jarduerak zerrendatuko diren ala ez';
 $string['configfile'] = 'Ezarpenen fitxategia';
 $string['configlocation'] = 'Ezarpenen fitxategiaren kokapena';
 $string['confirmdeleteattempts'] = 'Ziur al zaude saiakera hauek ezabatu nahi dituzula?';

@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Testu-eremua';
 $string['maxbytes'] = 'Enbotatutako fitxatategiaren gehienezko tamaina  (byteak)';
-$string['maxbytes_desc'] = 'O ezarriz gero, berez mugarik gabea izango da';
+$string['maxbytes_desc'] = 'Zero ezarriz gero, modu lehenetsian mugarik gabea izango da';
 $string['pluginname'] = 'Testu-eremua';
 $string['privacy:metadata'] = 'Testu-eremua eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';

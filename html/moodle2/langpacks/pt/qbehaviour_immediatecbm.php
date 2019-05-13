@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Selecione o seu grau de certeza.';
-$string['pluginname'] = 'Feedback Imediato com ABGC';
-$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback Imediato com ABGC não armazena dados pessoais.';
+$string['pluginname'] = 'Feedback imediato com ABGC';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback imediato com ABGC não armazena dados pessoais.';

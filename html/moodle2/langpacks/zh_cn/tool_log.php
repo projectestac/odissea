@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = '可用的日志存储';
+$string['exportlog'] = '导出时包括日志。';
+$string['exportlogdetail'] = '在导出时包括与用户相关的日志。';
 $string['logging'] = '日志';
 $string['managelogging'] = '管理日志存储';
 $string['pluginname'] = '日志存储管理';

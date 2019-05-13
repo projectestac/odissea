@@ -174,6 +174,7 @@ $string['permittedtransports'] = 'Toegelaten transporten';
 $string['phperror'] = 'Een interne PHP-fout verhinderde dat je aanvraag goed afgehandeld werd.';
 $string['position'] = 'Positie';
 $string['postrequired'] = 'De verwijderfunctie vereist een POST request.';
+$string['privacy:metadata'] = 'De MNet-plugin bewaart geen persoonlijke gegevens.';
 $string['profileexportfields'] = 'Te versturen velden';
 $string['profilefielddesc'] = 'Hier kun je de lijst met profielvelden die verstuurd en ontvangen worden over MNET tijdens creatie en updates van gebruikersaccounts, configureren. Je kunt dit ook voor elke MNET-partner individueel overschrijven. Merk op dat volgende velden altijd verstuurd worden en niet optioneel zijn: {$a}';
 $string['profilefields'] = 'Profielvelden';

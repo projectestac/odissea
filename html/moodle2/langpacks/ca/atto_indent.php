@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'Sagnat';
 $string['outdent'] = 'Sagnat negatiu';
 $string['pluginname'] = 'Sagnat';
+$string['privacy:metadata'] = 'El connector atto_indent no emmagatzema cap dada personal.';

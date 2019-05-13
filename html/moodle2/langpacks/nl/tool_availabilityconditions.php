@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Beheer beperkingen';
 $string['pluginname'] = 'Beheer beschikbaarheidsvoorwaarden';
+$string['privacy:metadata'] = 'De beheer beschikbaarheidsvoorwaarden-plugin bewaart geen persoonlijke gegevens.';

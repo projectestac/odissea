@@ -42,7 +42,7 @@ $string['checkindexes'] = 'Vérifier les index';
 $string['check_indexes'] = 'Recherche des index manquants de la base de données';
 $string['checkoraclesemantics'] = 'Vérifier les sémantiques';
 $string['check_oracle_semantics'] = 'Recherche des sémantiques de longueur incorrecte';
-$string['completelogbelow'] = '(voir les historiques complets de recherche ci-dessous)';
+$string['completelogbelow'] = '(voir le journal de recherche complet ci-dessous)';
 $string['confirmcheckbigints'] = 'Cette fonctionnalité recherche les <a href="http://tracker.moodle.org/browse/MDL-11038">champs de type entier potentiellement faux</a> dans votre serveur Moodle, et génère automatiquement (mais n\'exécute pas) les instructions SQL nécessaires pour définir correctement les entiers de votre base de données.
 
 Vous pouvez copier alors ces instructions et les lancer avec votre interface SQL préférée. N\'oubliez pas d\'effectuer une sauvegarde de la base de données avant de lancer ces commandes.

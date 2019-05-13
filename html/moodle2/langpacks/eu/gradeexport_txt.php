@@ -30,4 +30,4 @@ $string['pluginname'] = 'Testu lauko fitxategia';
 $string['privacy:metadata'] = 'Testu lauko fitxategia kalifikazioak esportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['timeexported'] = 'Azkenik jaitsi da ikastaro honetatik';
 $string['txt:publish'] = 'TXT kalifikazioen esportazioa argitaratu';
-$string['txt:view'] = 'Kalifikazioak esportatzeko testu laua erabili';
+$string['txt:view'] = 'Erabili testu laua kalifikazioak esportatzeko';

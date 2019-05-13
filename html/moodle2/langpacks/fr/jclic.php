@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'fr', branch 'MOODLE_31_STABLE'
+ * Strings for component 'jclic', language 'fr', branch 'MOODLE_34_STABLE'
  *
  * @package   jclic
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -46,18 +46,11 @@ Pour activer cette redirection, il suffit d\'associer la dernière activité, da
 $string['expired'] = 'Désolé, cette activité est terminée depuis {$a} et n\'est plus disponible';
 $string['filetype'] = 'Type';
 $string['filetypeexternal'] = 'URL externe';
-$string['filetype_help'] = 'Ce paramètre détermine comment l\'activité JClic est inclus dans le cours. Il y a jusqu\'à 2 options:
-
-* Fichier JClic externe - Une archive valide  de type ".jclic.zip" peut être choisi à travers le sélecteur de fichiers.
-* URL externe - Une URL à préciser. Remarque : l\'URL doit commencer par "http(s)" ou www et contenir une archive ".jclic.zip" valide.';
 $string['filetypelocal'] = 'Fichier JClic externe';
 $string['height'] = 'Hauteur';
-$string['invalidjclicfile'] = 'Fichier JClic invalide. L\'extension ".jclic.zip" est requise.';
-$string['invalidurl'] = 'URL invalide. Elle doit commencer par "http(s)" et pointer vers une archive ".jclic.zip" valide.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Ajouter une instance';
 $string['jclicfile'] = 'Fichier JClic';
-$string['jclicfile_help'] = 'Le fichier archive ".jclic.zip" contenant le paquet JClic.';
 $string['jclic:grade'] = 'Noter le JClic';
 $string['jclicjarbase'] = 'Base jar';
 $string['jclicjarbase_help'] = 'L\'adresse web qui contient les fichiers jar de JClic';
@@ -72,12 +65,6 @@ $string['lastaccess'] = 'Dernière visite';
 $string['maxattempts'] = 'Nombre d’essais maximum';
 $string['maxgrade'] = 'Scores / activités qui doivent être validé';
 $string['modulename'] = 'JClic';
-$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank"> JClic </a> est un projet du ministère catalan de l\'éducation.
-   Il se compose d\'un ensemble d\'applications logicielles open source qui permettent la création d\'activités pédagogiques multimédia: puzzles, jeux d\'association, activités de texte, mots croisés, jeux de mots cachés et plus.
-   Par ailleurs, <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">ClicZone</a> propose un référentiel où plus d\'un millier d\'activités sont affichées.
-   Il a été créé par Des enseignants et des professionnels qui veulent partager leur travail avec les autres.
-
-Ce module permet aux enseignants d\'ajouter des activités JClic à un cours et de suivre les résultats des élèves (temps passé sur chacune des activités, nombre d\'essais, score ...).';
 $string['modulenameplural'] = 'JClics';
 $string['msg_noattempts'] = 'Vous avez épuisé vos tentatives pour cette activité';
 $string['msg_nosessions'] = 'Il n\'y a pas encore de session pour cette activité';

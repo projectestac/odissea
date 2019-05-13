@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['activeexport'] = 'Egin aktibo dagoen esportazioa';
 $string['activeportfolios'] = 'Eskura dauden portfolioak';
 $string['addalltoportfolio'] = 'Esportatu guztia portfoliora';
-$string['addnewportfolio'] = 'Gehitu beste portfolio bat';
+$string['addnewportfolio'] = 'Gehitu portfolio berria';
 $string['addtoportfolio'] = 'Esportatu portfoliora';
-$string['alreadyalt'] = 'Dagoeneko esportatua - mesedez, klik egin hemen transferentzia hau ebazteko';
+$string['alreadyalt'] = 'Dagoeneko esportatzen - mesedez, egin klik hemen transferentzia hau ebazteko';
 $string['alreadyexporting'] = 'Dagoeneko martxan dagoen portfolio esportatze bat daukazu saio honetan. Jarraitu aurretik esportatze hori bukatu edo bertan behera utzi behar duzu. Jarraitu nahi duzu? (Bestela bertan behera utziko da)';
 $string['availableformats'] = 'Esportatzeko formatu erabilgarriak';
 $string['callbackclassinvalid'] = 'Zehaztutako callback klasea baliogabea da edo ez da portfolio_caller jerarkiaren parte';
@@ -53,12 +53,12 @@ $string['displayarea'] = 'Esportazio-eremua';
 $string['displayexpiry'] = 'Transferentzia iraungitzeko denbora';
 $string['displayinfo'] = 'Esportazioaren informazioa';
 $string['dontwait'] = 'Ez itxaron';
-$string['enabled'] = 'Portfolioak gaitu';
+$string['enabled'] = 'Gaitu portfolioak';
 $string['enableddesc'] = 'Gaituz gero, erabiltzaileek edukiak esportatu ahalko dituzte, hala nola foroetako mezuak eta zereginetako bidalketak, kanpoko portfolio edo HTML orrietara.';
 $string['err_uniquename'] = 'Portfolioaren izenak bakarra izan behar du (plugineko)';
-$string['exportalreadyfinished'] = 'Portfolio-esportazioa osatuta!';
-$string['exportalreadyfinisheddesc'] = 'Portfolio-esportazioa osatuta!';
-$string['exportcomplete'] = 'Portfolio-esportazioa osatuta!';
+$string['exportalreadyfinished'] = 'Portfolio-esportazioa osatu da!';
+$string['exportalreadyfinisheddesc'] = 'Portfolio-esportazioa osatu da!';
+$string['exportcomplete'] = 'Portfolio-esportazioa osatu da!';
 $string['exportedpreviously'] = 'Aldez aurretiko esportazioak';
 $string['exportexceptionnoexporter'] = 'portfolio_export_exception bat jaurti da saio aktibo batekin baina esportatze-objekturik gabe';
 $string['exportexpired'] = 'Portfolioaren esportazioa iraungi da';
@@ -98,17 +98,17 @@ Desgaitutako portfolio-gehigarrien instantzien zerrenda hau da:
 {$a->textlist}
 
 Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.';
-$string['insanebodyhtml'] = '<p>Kaixo! Mezu hau {$a->sitename} guenko kudeatzaile gisa jaso duzu.</p>
+$string['insanebodyhtml'] = '<p>Kaixo! Mezu hau {$a->sitename} guneko kudeatzaile gisa jaso duzu.</p>
 <p>Portfolio-pluginen instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du.</p>
 <p>Desgaitutako portfolio-gehigarrien instantzien zerrenda hau da:</p>
 {$a->htmllist}
-<p>Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.</a></p>';
+<p>Hau lehen bai lehen konpondu beharko litzateke <a href="{$a->fixurl}"> helbidean sartuta.</a></p>';
 $string['insanebodysmall'] = 'Kaixo! Mezu hau {$a->sitename} guneko kudeatzaile gisa jaso duzu. Portfolio-pluginen instantzia batzuk automatikoki desgaitu dira konfigurazio ezegokia dela-eta. Honek erabiltzaileek une honetan edukiak portfolio horietara ezin dituztela esportatu suposatzen du. Hau lehen bai lehen konpondu beharko litzateke {$a->fixurl} helbidean sartuta.';
 $string['insanesubject'] = 'Portfolio-instantzia batzuk automatikoki desgaituta daude';
 $string['instancedeleted'] = 'Portfolioa ondo ezabatu da';
 $string['instanceismisconfigured'] = 'Portfolioaren instantzia gaizki konfiguratuta dago, albo batera uzten. Errorea ondokoa da:  {$a}';
-$string['instancenotdelete'] = 'Kale egin du portfolioa ezabatzeak';
-$string['instancenotsaved'] = 'Kale egin du portfolioa gordetzeak';
+$string['instancenotdelete'] = 'Portfolioa ezabatzeak huts egin du';
+$string['instancenotsaved'] = 'Portfolioa gordetzeak huts egin du';
 $string['instancesaved'] = 'Portfolioa ondo gorde da';
 $string['intro'] = 'Zuk sortutako edukiak, hala nola zereginetako bidalketak, foroetako mezuak eta blogetako sarrerak, portfolio batera esporta edota jaits daitezke.<br>
 Erabili nahi ez duzun edozein portfolio ezkuta dezakezu edukiak esportatzerakoan aukeren zerrendan ager ez dadin.';
@@ -124,7 +124,7 @@ $string['invalidproperty'] = 'Ezin izan da {$a->class})-(r)en   propietatea ({$a
 $string['invalidsha1file'] = 'get_sha1_file-ri egindako dei baliogabea - single edo multifiles zehaztu behar da';
 $string['invalidtempid'] = 'Esportatzeko ID baliogabea: agian iraungi da';
 $string['invaliduserproperty'] = 'Ezin izan da aurkitu erabiltzaile-konfigurazioko propietatea ({$a->class}-ko {$a->property})';
-$string['leap2a_emptyselection'] = 'Ez da aukeratu beharrezko den balorea';
+$string['leap2a_emptyselection'] = 'Ez da aukeratu beharrezko den balioa';
 $string['leap2a_entryalreadyexists'] = 'Leap2A sarrera bat gehitzen saiatu zara jario honetan dagoeneko existitzen den ({$a}) IDarekin';
 $string['leap2a_feedtitle'] = 'Leap2A esportazioa Moodle-tik honentzat: {$a}';
 $string['leap2a_filecontent'] = 'Fitxategi bati Leap2A sarrera baten edukia ezartzen saiatu zara, fitxategiaren azpiklasea erabili beharrean';
@@ -136,8 +136,8 @@ $string['leap2a_overwritingselection'] = '({$a}) sarrera baten jatorrizko sarrer
 $string['leap2a_selflink'] = 'Leap2A sarrera bat  ({$a->id})  bera estekatzen saiatu da {$a->rel} erlazioarekin';
 $string['logs'] = 'Transferitu erregistroak';
 $string['logsummary'] = 'Aurreko transferentziak ondo egin dira';
-$string['manageportfolios'] = 'Portfolioak kudeatu';
-$string['manageyourportfolios'] = 'Zure portfolioak kudeatu';
+$string['manageportfolios'] = 'Kudeatu portfolioak';
+$string['manageyourportfolios'] = 'Kudeatu zure portfolioak';
 $string['mimecheckfail'] = '{$a->plugin} portfolio-pluginak ez du {$a->mimetype} mimetype-a onartzen';
 $string['missingcallbackarg'] = '{$a->class} klasearentzako {$a->arg} callback argumentua falta da';
 $string['moderatedbsizethreshold'] = 'Transferentzia moderatuko dbsize-a';

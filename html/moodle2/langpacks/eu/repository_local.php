@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Zerbitzariko fitxategiak biltegiaren ezarpenak';
 $string['currentusefiles'] = 'Oraintxe erabilitako fitxategiak';
 $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
-$string['local:view'] = 'Zerbitzariaren biltegia ikusi';
+$string['local:view'] = 'Ikusi zerbitzariaren biltegia';
 $string['notitle'] = 'Izenbururik gabe';
 $string['pluginname'] = 'Zerbitzariko fitxategiak';
 $string['pluginname_help'] = 'Moodle zerbitzari lokalaren biltegia';

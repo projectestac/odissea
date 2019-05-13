@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptederror'] = 'Erro aceite';
-$string['addmoreanswerblanks'] = 'Adicionar mais {no} campos de opção de resposta';
+$string['addmoreanswerblanks'] = 'Adicionar mais {no} opções de resposta';
 $string['addmoreunitblanks'] = 'Adicionar mais {no} campos para unidades';
 $string['answercolon'] = 'Resposta:';
 $string['answererror'] = 'Erro';
@@ -61,8 +61,8 @@ Se adicionar a unidade kW com o multiplicador de  0.001, isto irá tornar igualm
 Tenha em conta que o erro aceite é também multiplicado, um erro aceite de 100W equivale a um erro de 0.1kW.';
 $string['oneunitshown'] = 'A Unidade 1 será exibida automaticamente junto da caixa destinada à resposta numérica.';
 $string['onlynumerical'] = 'Não se usam as unidades. Apenas é pedida e avaliada a resposta numérica.';
-$string['pleaseenterananswer'] = 'Por favor introduza uma resposta.';
-$string['pleaseenteranswerwithoutthousandssep'] = 'Por favor insira a sua resposta sem usar o separador dos milhares ({$a}).';
+$string['pleaseenterananswer'] = 'Por favor, introduza uma resposta.';
+$string['pleaseenteranswerwithoutthousandssep'] = 'Por favor, insira a sua resposta sem usar o separador dos milhares ({$a}).';
 $string['pluginname'] = 'Numérica';
 $string['pluginnameadding'] = 'A adicionar pergunta numérica';
 $string['pluginnameediting'] = 'A editar pergunta numérica';

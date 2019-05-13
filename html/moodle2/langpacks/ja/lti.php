@@ -376,7 +376,7 @@ $string['return_to_course'] = 'コースに戻るには<a href="{$a->link}" targ
 $string['saveallfeedback'] = '私のフィードバックすべてを保存する';
 $string['search:activity'] = '外部ツール - 活動情報';
 $string['secure_icon_url'] = 'セキュアアイコンURL';
-$string['secure_icon_url_help'] = 'アイコンURLに似ていますがユーザがSSLを通してMoodleに安全にアクセスする場合に使用されます。このフィールドの主目的はユーザによるページアクセス時の警告表示を防ぐことにあります。しかし、安全ではないイメージの表示をリクエストすることになります。';
+$string['secure_icon_url_help'] = 'アイコンURLに似ていますがSSLを通してサイトが安全にアクセスされる際に使用されます。このフィールドは安全ではないイメージの表示に関するブラウザの警告表示を防ぎます。';
 $string['secure_launch_url'] = 'セキュアツールURL';
 $string['secure_launch_url_help'] = 'ツールURLに似ていますがツールURLの代わりに高度なセキュリティが要求されます。MoodleサイトがSSL経由でアクセスされた場合、またはツール設定で常にSSLから起動するよう指定されている場合、ツールURLの代わりにセキュアツールURLが使用されます。
 

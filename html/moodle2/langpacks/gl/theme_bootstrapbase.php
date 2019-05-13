@@ -64,5 +64,6 @@ Pode enviar os seus informes de erro deste tema a <a href="https://github.com/bm
 <li><a href="http://theming.sonsbeekmedia.nl/">Theme testing playground </a></li>
 </ul>';
 $string['pluginname'] = 'Base de arrinque';
+$string['privacy:metadata'] = 'O tema bootstrapbase non almacena ningún dato persoal sobre ningún usuario.';
 $string['region-side-post'] = 'Dereita';
 $string['region-side-pre'] = 'Esquerda';

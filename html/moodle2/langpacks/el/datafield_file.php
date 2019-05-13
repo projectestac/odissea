@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο αρχείου';
 $string['pluginname'] = 'Αρχείο';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο αρχείου» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

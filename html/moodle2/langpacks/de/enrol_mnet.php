@@ -39,7 +39,7 @@ Abonnieren Sie diesen Dienst, um die Teilnehmer/innen Ihres Moodles in Kursen au
 $string['mnet_enrol_name'] = 'Service externe Einschreibung';
 $string['pluginname'] = 'Externe MNet Einschreibungen ';
 $string['pluginname_desc'] = 'Ermöglicht externen MNet Hosts ihre Nutzer auf diesem System in Kurse einzuschreiben.';
-$string['privacy:metadata'] = 'Das MNet-remote-Einschreibungsplugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das MNet-remote-Einschreibungsplugin speichert keine personenbezogenen Daten.';
 $string['remotesubscriber'] = 'Remote Host';
 $string['remotesubscriber_help'] = 'Mit der Funktion \'Alle Hosts\' wird dieser Kurs für alle MNet Peers, denen die externe Einschreibung erlaubt ist, geöffnet. Wählen Sie statt dessennureinen bestimmten Host aus, haben nur dessen Nutzer Zugriff auf den Kurs.  ';
 $string['remotesubscribersall'] = 'Alle Hosts';

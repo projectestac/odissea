@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadfile'] = 'Descarregue o seu ficheiro de exportação do portefólio';
-$string['downloading'] = 'A descarregar ...';
+$string['downloading'] = 'A descarregar...';
 $string['pluginname'] = 'Descarregar ficheiro';
 $string['privacy:metadata'] = 'Este módulo não armazena dados pessoais, nem exporta dados pessoais para uma localização externa.';

@@ -146,7 +146,7 @@ $string['migrationfinishednowikis'] = '移行が完了しました。移行さ�
 $string['missingpages'] = 'コンテンツなしページ';
 $string['modified'] = '修正日時';
 $string['modulename'] = 'Wiki';
-$string['modulename_help'] = 'Wiki活動モジュールでは参加者が一群のウェブページを追加および編集することができます。Wikiは個人または誰でも編集することのできる協力的な場です。誰でも自分たちだけが編集できる自分のWikiを持つことができます。
+$string['modulename_help'] = 'Wiki活動モジュールでは参加者が一群のウェブページを追加および編集することができます。Wikiは個人または誰でも編集できる協力的な場です。誰でも自分たちだけが編集できる自分のWikiを持つことができます。
 
 それぞれのページの編集履歴は保持されます。それぞれの参加者によって編集された内容が一覧表示されます。
 

@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Προσθέστε ένα νέο μπλοκ εισόδου';
-$string['pluginname'] = 'Είσοδος';
+$string['login:addinstance'] = 'Προσθέστε ένα νέο μπλοκ σύνδεσης/εισόδου';
+$string['pluginname'] = 'Σύνδεση';
+$string['privacy:metadata'] = 'Το μπλοκ Σύνδεσης χρηστών παρέχει μόνο έναν τρόπο σύνδεσης/εισόδου των χρηστών και το ίδιο δεν αποθηκεύει δεδομένα.';

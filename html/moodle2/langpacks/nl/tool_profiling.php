@@ -43,6 +43,7 @@ $string['lastrunof'] = 'Samenvatting van de laatste run van {$a}';
 $string['markreferencerun'] = 'Markeer als referentierun/opmerking';
 $string['memory'] = 'Gebruikt geheugen';
 $string['pluginname'] = 'Profiling runs';
+$string['privacy:metadata'] = 'De Profiling runs-plugin bewaart geen persoonlijke gegevens.';
 $string['profilingfocusscript'] = 'Focus op profiling runs voor het script: {$a}';
 $string['profilingruns'] = 'Profiling runs';
 $string['profilingrunsfor'] = 'Profiling runs voor {$a}';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Άμεση ανάδραση';
+$string['notcomplete'] = 'Μη πλήρης';
+$string['pluginname'] = 'Άμεση ανατροφοδότηση';
+$string['privacy:metadata'] = 'Το πρόσθετο «Συμπεριφορά ερώτησης άμεσης ανατροφοδότησης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

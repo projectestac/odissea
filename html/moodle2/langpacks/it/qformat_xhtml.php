@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Formato XHTML';
 $string['pluginname_help'] = 'Il formato XHTML consente l\'esportazione di domande in una singola pagina XHTML strict.';
+$string['privacy:metadata'] = 'Il plugin \'Formato XHTML\' non memorizza dati personali.';

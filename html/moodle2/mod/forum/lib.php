@@ -658,6 +658,12 @@ function forum_cron() {
                     }
                 }
 
+                $coursecontext = context_course::instance($course->id);
+                if (!$course->visible and !has_capability('moodle/course:viewhiddencourses', $coursecontext, $userto->id)) {
+                    // The course is hidden and the user does not have access to it.
+                    continue;
+                }
+
                 // Don't send email if the forum is Q&A and the user has not posted.
                 // Initial topics are still mailed.
                 if ($forum->type == 'qanda' && !forum_get_user_posted_time($discussion->id, $userto->id) && $pid != $discussion->firstpost) {
@@ -3949,7 +3955,7 @@ function forum_print_discussion_header(&$post, $forum, $group = -1, $datestring 
     }
 
     echo '<td class="lastpost">';
-    $usedate = (empty($post->created)) ? $post->timemodified : $post->created;
+    $usedate = (empty($post->timemodified)) ? $post->created : $post->timemodified;
     $parenturl = '';
     $usermodified = new stdClass();
     $usermodified->id = $post->usermodified;
@@ -4582,10 +4588,6 @@ function forum_update_post($newpost, $mform, $unused = null) {
     }
     $post->modified = time();
 
-    // Last post modified tracking.
-    $discussion->timemodified = $post->modified;
-    $discussion->usermodified = $post->userid;
-
     if (!$post->parent) {   // Post is a discussion starter - update discussion title and times too
         $discussion->name      = $post->subject;
         $discussion->timestart = $post->timestart;
@@ -4598,6 +4600,7 @@ function forum_update_post($newpost, $mform, $unused = null) {
     $post->message = file_save_draft_area_files($newpost->itemid, $context->id, 'mod_forum', 'post', $post->id,
             mod_forum_post_form::editor_options($context, $post->id), $post->message);
     $DB->update_record('forum_posts', $post);
+    // Note: Discussion modified time/user are intentionally not updated, to enable them to track the latest new post.
     $DB->update_record('forum_discussions', $discussion);
 
     forum_add_attachment($post, $forum, $cm, $mform);

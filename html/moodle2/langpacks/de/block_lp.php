@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Kompetenzen zur Überprüfung';
-$string['lp:addinstance'] = 'Block \'Lernplan\' hinzufügen';
-$string['lp:myaddinstance'] = 'Block \'Lernplan\' zum Dashboard hinzufügen';
+$string['lp:addinstance'] = 'Neuen Block \'Lernpläne\' hinzufügen';
+$string['lp:myaddinstance'] = 'Neuen Block \'Lernpläne\' zum Dashboard hinzufügen';
 $string['lp:view'] = 'Block \'Lernplan\' anzeigen';
 $string['myplans'] = 'Meine Lernpläne';
 $string['noactiveplans'] = 'Im Moment sind keine aktiven Lernpläne verfügbar.';

@@ -36,6 +36,6 @@ $string['loglive:view'] = 'Aktuelle Logdaten anzeigen';
 $string['nologreaderenabled'] = 'Anzeige für Logdaten deaktiviert';
 $string['pause'] = 'Live-Updates pausieren lassen';
 $string['pluginname'] = 'Live-Logdaten';
-$string['privacy:metadata'] = 'Das Live-Logdaten-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Live-Logdaten-Plugin speichert keine personenbezogenen Daten.';
 $string['resume'] = 'Live-Updates fortsetzen';
 $string['selectlogreader'] = 'Anzeige für Logdaten wählen';

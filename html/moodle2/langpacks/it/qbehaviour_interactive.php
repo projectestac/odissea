@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'interattivo con tentativi multipli';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Interattivo con tentativi multipli\' non memorizza dati personali.';
 $string['triesremaining'] = 'Tentativi rimasti: {$a}';
 $string['tryagain'] = 'Riprova';

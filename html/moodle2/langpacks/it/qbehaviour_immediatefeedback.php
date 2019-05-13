@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Non completato';
 $string['pluginname'] = 'Feedback immediato';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda  \'Feedback immediato\' non memorizza dati personali.';

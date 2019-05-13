@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activity_modules:addinstance'] = 'Aktivitäten-Block hinzufügen';
+$string['activity_modules:addinstance'] = 'Neuen Block \'Aktivitäten\' hinzufügen';
 $string['pluginname'] = 'Aktivitäten';
 $string['privacy:metadata'] = 'Der Block \'Aktivitäten\' zeigt ausschließlich Daten an, die woanders gespeichert sind.';

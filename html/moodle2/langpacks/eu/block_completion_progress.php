@@ -93,6 +93,7 @@ $string['no_visible_activities_message'] = 'Une honetan ez dago ikusgai jarraitu
 $string['now_indicator'] = 'ORAIN';
 $string['overview'] = 'Ikasleen ikuspegi orokorra';
 $string['pluginname'] = 'Osaketaren Jarraipena';
+$string['privacy:metadata'] = 'Osaketaren Jarraipena blokeak existitzen diren osaketa-datuak erakutsi baino ez du egiten.';
 $string['progress'] = 'Aurrerapena';
 $string['progressbar'] = 'Osaketaren Jarraipena';
 $string['shortname'] = 'Ikastaroaren izen laburra';

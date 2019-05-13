@@ -582,6 +582,7 @@ $string['style_dlg:clip'] = 'Beskärning';
 $string['style_dlg:color'] = 'Färg';
 $string['style_dlg:height'] = 'Höjd';
 $string['style_dlg:left'] = 'Vänster';
+$string['style_dlg:list'] = 'Lista';
 $string['style_dlg:list_tab'] = 'Listor';
 $string['style_dlg:list_type'] = 'Listtyp';
 $string['style_dlg:margin'] = 'Marginal';

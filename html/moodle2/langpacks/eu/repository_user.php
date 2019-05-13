@@ -30,4 +30,4 @@ $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
 $string['pluginname'] = 'Fitxategi pribatuak';
 $string['pluginname_help'] = 'Erabiltzailearen eremu pribatuan dauden fitxategiak';
 $string['privacy:metadata'] = 'Fitxategi pribatuak biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
-$string['user:view'] = 'Erabiltzailearen fitxategi pribatuak ikusi';
+$string['user:view'] = 'Ikusi erabiltzailearen fitxategi pribatuak';

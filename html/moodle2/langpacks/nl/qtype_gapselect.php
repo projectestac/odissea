@@ -44,6 +44,7 @@ $string['pluginnameadding'] = 'Een "ontbrekende woorden selecteren"-vraag toevoe
 $string['pluginnameediting'] = 'Een "ontbrekende woorden selecteren"-vraag bewerken';
 $string['pluginname_help'] = 'Een "ontbrekende woorden selecteren"-vraag verwacht van de respondent om juiste antwoorden te selecteren uit  rolmenu\'s. Als plaatshouders wordt in de vraagtekst [[1]], [[2]], [[3]], ... gebruikt, met de overeenkomende antwoorden als 1, 2, 3, ... .Extra keuzes kunnen toegevoegd worden om de vraag moeilijker te maken. De keuzes kunnen gegroepeerd worden om de beschikbare antwoorden per rolmenu te beperken.';
 $string['pluginnamesummary'] = 'De ontbrekende woorden in de tekst worden ingevuld met woorden uit de rolmenu\'s';
+$string['privacy:metadata'] = 'De selecteer ontbrekende woorden-plugin bewaart geen persoonlijke gegevens.';
 $string['shuffle'] = 'Door elkaar halen';
 $string['tagsnotallowed'] = '{$a->tag} is niet toegestaan. (Enkel {$a->allowed} zijn toegestaan.)';
 $string['tagsnotallowedatall'] = '{$a->tag} is niet toegestaan. (Hier geen HTML gebruiken.)';

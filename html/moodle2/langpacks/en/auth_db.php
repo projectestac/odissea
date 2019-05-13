@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dbcannotconnect'] = 'Cannot connect to external database.';
+$string['auth_dbcannotreadtable'] = 'Cannot read external table.';
 $string['auth_dbcantconnect'] = 'Could not connect to the specified authentication database...';
 $string['auth_dbchangepasswordurl_key'] = 'Password-change URL';
+$string['auth_dbcolumnlist'] = 'External table contains the following columns:<br />{$a}';
 $string['auth_dbdebugauthdb'] = 'Debug ADOdb';
 $string['auth_dbdebugauthdbhelp'] = 'Debug ADOdb connection to external database - use when getting empty page during login. Not suitable for production sites.';
 $string['auth_dbdeleteuser'] = 'Deleted user {$a->name} id {$a->id}';
@@ -46,6 +49,8 @@ $string['auth_dbinsertuserduplicate'] = 'Error inserting user {$a->username} - u
 $string['auth_dbinsertusererror'] = 'Error inserting user {$a}';
 $string['auth_dbname'] = 'Name of the database itself. Leave empty if using an ODBC DSN. Leave empty if your PDO DSN already contains the database name.';
 $string['auth_dbname_key'] = 'DB name';
+$string['auth_dbnoexttable'] = 'External table not specified.';
+$string['auth_dbnouserfield'] = 'External user field not specified.';
 $string['auth_dbpass'] = 'Password matching the above username';
 $string['auth_dbpass_key'] = 'Password';
 $string['auth_dbpasstype'] = '<p>Specify the format that the password field is using.</p> <p>Use \'internal\' if you want the external database to manage usernames and email addresses, but Moodle to manage passwords. If you use \'internal\', you <i>must</i> provide a populated email address field in the external database, and you must execute both admin/cron.php and auth/db/cli/sync_users.php regularly. Moodle will send an email to new users with a temporary password.</p>';
@@ -61,8 +66,9 @@ $string['auth_dbsybasequoting'] = 'Use sybase quotes';
 $string['auth_dbsybasequotinghelp'] = 'Sybase style single quote escaping - needed for Oracle, MS SQL and some other databases. Do not use for MySQL!';
 $string['auth_dbsyncuserstask'] = 'Synchronise users task';
 $string['auth_dbtable'] = 'Name of the table in the database';
+$string['auth_dbtableempty'] = 'External table is empty.';
 $string['auth_dbtable_key'] = 'Table';
-$string['auth_dbtype'] = 'The database type (See the <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">ADOdb documentation</a> for details)';
+$string['auth_dbtype'] = 'The database type (see the documentation <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer for PHP</a> for details).';
 $string['auth_dbtype_key'] = 'Database';
 $string['auth_dbupdateusers'] = 'Update users';
 $string['auth_dbupdateusers_description'] = 'As well as inserting new users, update existing users.';

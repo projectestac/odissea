@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regra de acceso para navegador seguro de exame';
+$string['privacy:metadata'] = 'O engadido de regra de acceso para navegador seguro de exame non almacena ningún dato persoal.';
 $string['requiresafeexambrowser'] = 'Requirir o emprego de navegador seguro de exame';
 $string['safebrowsererror'] = 'Estabeleceuse que para tentar resolver teña que empregar un navegador seguro de exame. Non pode tentar resolvela con este navegador.';
 $string['safebrowsernotice'] = 'Esta proba foi configurada para que só poida tentar resolvela empregando un navegador seguro de exame.';

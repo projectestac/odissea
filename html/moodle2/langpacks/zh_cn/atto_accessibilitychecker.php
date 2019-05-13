@@ -32,6 +32,7 @@ $string['needsmorecontrast'] = '文字前景色和背景色的对比度太低。
 $string['needsmoreheadings'] = '有很多文字没有标题。标题让很多屏幕阅读器用户能够轻松浏览，也让页面对所有人都更有可用性。';
 $string['nowarnings'] = '恭喜，没有发现可用性问题！';
 $string['pluginname'] = '可用性检查器';
+$string['privacy:metadata'] = 'atto_accessibilitychecker 插件不储存任何私人数据。';
 $string['report'] = '可用性报告：';
 $string['tablesmissingcaption'] = '表格需要说明文字。虽然不是每个表格都需要说明文字，但它通常都是有用的。';
 $string['tablesmissingheaders'] = '表格需要使用行/列表头。';

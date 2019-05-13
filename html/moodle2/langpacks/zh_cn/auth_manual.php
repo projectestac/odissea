@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = '密码终止设置';
 $string['passwdexpiretime'] = '密码有效时间';
 $string['passwdexpiretime_desc'] = '密码的有效期限';
 $string['pluginname'] = '人工帐号';
+$string['privacy:metadata:preference:passwordupdatetime'] = '上次更改密码日期。';

@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addbulknote'] = 'Добавить новую заметку для {$a} человек';
+$string['addbulknotedone'] = 'Заметка добавлена для {$a} человек';
+$string['addbulknotedonesingle'] = 'Заметка добавлена для одного человека';
+$string['addbulknotesingle'] = 'Добавить новую заметку для одного человека';
 $string['addnewnote'] = 'Добавить заметку';
 $string['addnewnoteselect'] = 'Выбрать пользователей для написания заметки о них';
 $string['bynameondate'] = 'от {$a->name} - {$a->date}';
@@ -57,8 +61,15 @@ $string['page-notes-index'] = 'Заметки главной страницы';
 $string['page-notes-x'] = 'Страницы с заметками';
 $string['personal'] = 'персональная';
 $string['personalnotes'] = 'Персональные заметки';
+$string['privacy:metadata:core_notes'] = 'Компонент «Заметки» хранит заметки пользователей в подсистеме ядра.';
+$string['privacy:metadata:core_notes:content'] = 'Содержимое заметки.';
+$string['privacy:metadata:core_notes:courseid'] = 'ID курса, связанного с заметкой';
+$string['privacy:metadata:core_notes:created'] = 'Дата/время создания заметки.';
+$string['privacy:metadata:core_notes:lastmodified'] = 'Дата/время последнего изменения заметки.';
+$string['privacy:metadata:core_notes:publishstate'] = 'Состояние публикации заметки.';
+$string['privacy:metadata:core_notes:userid'] = 'ID пользователя, связанного с заметкой.';
 $string['publishstate'] = 'Контекст';
-$string['publishstate_help'] = 'Контекст заметки определяет, кто может видеть эту заметку.
+$string['publishstate_help'] = 'Контекст заметки определяет, кто может видеть эту заметку в повседневной работе. Пользователи должны знать, что все заметки, включая персональные, могут быть раскрыты в рамках законов их стран.
 
 * Персональная - заметка будет видна только Вам
 * Курс - заметка будет видна преподавателям этого курса

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['news_items:addinstance'] = 'Block \'Neue Ankündigungen\' hinzufügen';
-$string['news_items:myaddinstance'] = 'Block \'Neue Ankündigungen\' zum Dashboard hinzufügen';
+$string['news_items:addinstance'] = 'Neuen Block \'Neue Ankündigungen\' hinzufügen';
+$string['news_items:myaddinstance'] = 'Neuen Block \'Neue Ankündigungen\' zum Dashboard hinzufügen';
 $string['pluginname'] = 'Neue Ankündigungen';
 $string['privacy:metadata'] = 'Der Block \'Letzte Ankündigungen\' zeigt Daten, die im Forum gespeichert sind und speichert selber keine Daten.';

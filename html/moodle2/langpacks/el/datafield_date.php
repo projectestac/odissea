@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο ημερομηνίας';
+$string['pluginname'] = 'Ημερομηνία';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο ημερομηνίας» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

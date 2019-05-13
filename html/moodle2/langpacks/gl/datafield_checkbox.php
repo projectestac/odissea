@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo con caixa de selección';
 $string['pluginname'] = 'Caixa de selección';
+$string['privacy:metadata'] = 'O compoñente de campo da caixa de selección non almacena ningún dato persoal, usa táboas definidas en mod_data.';

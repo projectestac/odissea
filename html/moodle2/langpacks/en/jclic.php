@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'en', branch 'MOODLE_31_STABLE'
+ * Strings for component 'jclic', language 'en', branch 'MOODLE_34_STABLE'
  *
  * @package   jclic
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -50,16 +50,16 @@ $string['filetype'] = 'Type';
 $string['filetypeexternal'] = 'External URL';
 $string['filetype_help'] = 'This setting determines how the JClic activity is included in the course. There are up to 2 options:
 
-* Uploaded JClic - Enables a valid ".jclic.zip" package to be chosen by the file picker.
-* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid "jclic.zip" or ".jclic" file.';
+* Uploaded JClic - Enables a valid JClic package to be chosen by the file picker.
+* External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid JClic file.';
 $string['filetypelocal'] = 'Uploaded JClic';
 $string['height'] = 'Height';
-$string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic.zip" extension.';
-$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".jclic.zip" or ".jclic" file.';
+$string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic" extension.';
+$string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid JClic file.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Add JClic';
 $string['jclicfile'] = 'JClic file';
-$string['jclicfile_help'] = 'The .jclic.zip file containing the JClic files.';
+$string['jclicfile_help'] = 'The .jclic file containing the JClic files.';
 $string['jclic:grade'] = 'Grade JClic';
 $string['jclicjarbase'] = 'Jar base';
 $string['jclicjarbase_help'] = 'Web address where to locate all the JClic jar files';
@@ -76,9 +76,9 @@ $string['lastaccess'] = 'Last visited';
 $string['maxattempts'] = 'Maximum number of trials';
 $string['maxgrade'] = 'Score/activities that must be achieved';
 $string['modulename'] = 'JClic';
-$string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> is a project of the Catalan Ministry of Education.
+$string['modulename_help'] = '<a href="https://clic.xtec.cat" target="_blank">JClic</a> is a project of the Catalan Ministry of Education.
     It consists of a set of open source software applications that allow the creation of several types of multimedia educational activities: puzzles, association games, text activities, crosswords, wordsearch games and more.
-    Besides, the <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">ClicZone</a> offers a repository where more than a thousand activities are displayed.
+    Besides, the <a href="https://clic.xtec.cat/db/listact_ca.jsp" target="_blank">ClicZone</a> offers a repository where more than a thousand activities are displayed.
     It has been created by teachers and other professionals who want to share their work with others.
 
 This module allows teachers to add JClick activities to any course and to track pupils\' results (time spent on each of the activities, number of tries, score...).';

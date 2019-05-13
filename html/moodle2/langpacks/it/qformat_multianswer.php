@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Risposte inglobate (Cloze)';
 $string['pluginname_help'] = 'Il formato Risposte inglobate (Cloze) consente l\'importazione di testi contenenti domande a risposta multiple e a risposta breve.';
+$string['privacy:metadata'] = 'Il plugin \'Risposte inglobate (Cloze)\' non memorizza dati personali.';

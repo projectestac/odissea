@@ -1,8 +1,6 @@
 # Wiris Quizzes Multi Choice question type
 ### Master Build Status
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_multichoicewiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_multichoicewiris)
-### Development Build Status
-[![Build Status](https://travis-ci.org/wiris/moodle-qtype_multichoicewiris.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_multichoicewiris)
 
 The Wiris Multi Choice question type extends the Moodle Multi Choice type, adding mathematical functionality to it.
 

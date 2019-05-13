@@ -133,7 +133,7 @@ $string['leap2a_missingfield'] = 'Champ d\'entrée Leap2A requis {$a} manquant';
 $string['leap2a_nonexistantlink'] = 'Une entrée Leap2A ({$a->from}) a essayé d\'établir un lien vers une entrée non existante ({$a->to}) avec la relation {$a->rel}';
 $string['leap2a_overwritingselection'] = 'Remplacement du type original d\'une entrée ({$a}) par la sélection dans make_selection';
 $string['leap2a_selflink'] = 'Une entrée Leap2A ({$a->from}) a essayé d\'établir un lien vers elle-même avec la relation {$a->rel}';
-$string['logs'] = 'Historique de transfert';
+$string['logs'] = 'Journaux de transfert';
 $string['logsummary'] = 'Transferts antérieurs réussis';
 $string['manageportfolios'] = 'Gérer les portfolios';
 $string['manageyourportfolios'] = 'Gérer vos portfolios';
@@ -152,7 +152,7 @@ $string['nocallbackfile'] = 'Un problème est présent dans le module depuis leq
 $string['noclassbeforeformats'] = 'Vous devez définir la classe de rappel (callback) avant de faire appel à set_formats dans portfolio_button';
 $string['nocommonformats'] = 'Aucun format en commun entre les plugins de portfolio et le site appelant {$a->location} (formats supportés par l\'appelant : {$a->formats})';
 $string['noinstanceyet'] = 'Pas encore sélectionné';
-$string['nologs'] = 'Il n\'y a pas d\'historique à afficher !';
+$string['nologs'] = 'Il n\'y a pas de journal à afficher !';
 $string['nomultipleexports'] = 'Le portfolio de destination ({$a->plugin}) ne supporte pas les exportations multiples simultanées. Veuillez <a href="{$a->link}">terminer l\'exportation actuelle</a>, puis réessayer';
 $string['nonprimative'] = 'Une valeur incorrecte a été passée comme paramètre à portfolio_add_button. Impossible de continuer. La clef était {$a->key} et la valeur {$a->value}';
 $string['nopermissions'] = 'Vous n\'avez pas les droits d\'accès requis pour exporter des fichiers depuis cette zone';

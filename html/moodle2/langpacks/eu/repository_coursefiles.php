@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Heredatutako ikastaroko fitxategien biltegirako ezarpenak';
-$string['coursefiles:view'] = 'Ikastaroko fitxategien biltegi-plugina erabili';
+$string['coursefiles:view'] = 'Erabili ikastaroko fitxategien biltegi-plugina';
 $string['emptyfilelist'] = 'Ez dago erakusteko fitxategirik';
 $string['notitle'] = 'Izenbururik gabe';
 $string['pluginname'] = 'Heredatutako ikastaroko fitxategiak';

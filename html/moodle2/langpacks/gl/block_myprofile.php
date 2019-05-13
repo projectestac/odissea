@@ -48,3 +48,4 @@ $string['myprofile:addinstance'] = 'Engadir un novo identificador no bloque de u
 $string['myprofile:myaddinstance'] = 'Engadir un novo identificador no bloque Páxina de inicio';
 $string['myprofile_settings'] = 'Información visíbel do usuario';
 $string['pluginname'] = 'Usuario con sesión activa';
+$string['privacy:metadata'] = 'O bloque de usuarios rexistrado só amosa información sobre o usuario rexistrado e non almacena os datos en si.';

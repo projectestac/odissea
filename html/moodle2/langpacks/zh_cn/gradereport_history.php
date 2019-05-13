@@ -49,6 +49,7 @@ $string['loadmoreusers'] = '载入更多用户……';
 $string['pluginname'] = '过往成绩';
 $string['preferences'] = '过往成绩偏好设置';
 $string['revisedonly'] = '只有修改过的分数';
+$string['revisedonly_help'] = '只显示修改过的分数。这意味着只列出有分数变更的条目。';
 $string['selectedusers'] = '选定用户';
 $string['selectuser'] = '选择用户';
 $string['selectusers'] = '选择用户';

@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Μενού επιλογών';
+$string['pluginname'] = 'Αναπτυσσόμενο μενού';
+$string['privacy:metadata:profilefield_menu:data'] = 'Τα δεδομένα χρήστη του πεδίου αναπτυσσόμενου μενού του προφίλ χρήστη';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'Ο μορφότυπος των δεδομένων χρήστη του πεδίου αναπτυσσόμενου μενού του προφίλ χρήστη';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'Το αναγνωριστικό του πεδίου προφίλ';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Επιπρόσθετα δεδομένα προφίλ';
+$string['privacy:metadata:profilefield_menu:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου τα δεδομένα αποθηκεύονται από το πεδίο αναπτυσσόμενου μενού προφίλ χρήστη μενού';

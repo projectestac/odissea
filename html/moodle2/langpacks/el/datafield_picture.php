@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο εικόνων';
+$string['pluginname'] = 'Εικόνα';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο εικόνας» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

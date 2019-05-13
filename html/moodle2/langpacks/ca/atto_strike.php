@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Barrat';
+$string['privacy:metadata'] = 'El connector atto_strike no emmagatzema cap dada personal.';

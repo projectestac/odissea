@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Consegna singola';
+$string['privacy:metadata'] = 'Il plugin "Consegna singola" non memorizza dati personali.';

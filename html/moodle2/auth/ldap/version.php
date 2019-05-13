@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information
+ * Version details
  *
  * @package    auth_ldap
  * @author     Martin Dougiamas

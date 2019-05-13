@@ -25,29 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = 'Não é possível fazer a ligação ao servidor de descargas e por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Faça a descarga do(s) ficheiro(s) ZIP apropriado(s) desde <a href="{$a->src}">{$a->src}</a> e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
+$string['downloadnotavailable'] = 'Não é possível fazer a ligação ao servidor de descargas e, por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Faça a descarga do(s) ficheiro(s) ZIP apropriado(s) desde <a href="{$a->src}">{$a->src}</a> e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
 $string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
 $string['langimport'] = 'Importação de pacote linguístico';
-$string['langimportdisabled'] = 'O recurso de importação de lingua foi desativado. Tem que atualizar o seu pacote linguístico manualmente no sistema de ficheiros. Não se esqueça de limpar as caches após fazê-lo.';
+$string['langimportdisabled'] = 'O recurso de importação de pacote linguístico foi desativado. Tem que atualizar os pacotes linguísticos manualmente no sistema de ficheiros. Não se esqueça de limpar as caches após a atualização.';
 $string['langpackinstalled'] = 'O pacote linguístico \'{$a}\' foi instalado com sucesso';
 $string['langpackinstalledevent'] = 'Pacote linguístico instalado';
-$string['langpacknotremoved'] = 'Ocorreu um erro; a instalação do pacote linguístico \'{$a}\' não foi concluída. Por favor verifique as permissões do ficheiro.';
+$string['langpacknotremoved'] = 'Ocorreu um erro: a instalação do pacote linguístico \'{$a}\' não foi concluída. Por favor, verifique as permissões do ficheiro.';
 $string['langpackremoved'] = 'O pacote linguístico \'{$a}\' foi desinstalado';
 $string['langpackremovedevent'] = 'Pacote linguístico desinstalado';
 $string['langpackupdated'] = 'O pacote linguístico \'{$a}\' foi atualizado com sucesso';
 $string['langpackupdatedevent'] = 'Pacote linguístico atualizado';
-$string['langpackupdateskipped'] = 'Atualização do pacote linguistico \'{$a}\' ignorada';
+$string['langpackupdateskipped'] = 'Foi ignorada a atualização do pacote linguistico \'{$a}\'';
 $string['langpackuptodate'] = 'O pacote linguístico \'{$a}\' está atualizado';
 $string['langupdatecomplete'] = 'Atualização do pacote linguístico concluída';
 $string['missingcfglangotherroot'] = 'Falta o valor de configuração $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta o idioma ascendente <em>{$a->parent}</em> em <em>{$a->lang}</em>.';
 $string['noenglishuninstall'] = 'O pacote linguístico Inglês não pode ser instalado.';
-$string['nolangupdateneeded'] = 'Todos os pacotes linguísticos instalados estão atualizados, não é necessária qualquer atualização';
+$string['nolangupdateneeded'] = 'Todos os pacotes linguísticos instalados estão atualizados. Não é necessária qualquer atualização.';
 $string['pluginname'] = 'Pacotes linguísticos';
 $string['privacy:metadata'] = 'O módulo Pacotes linguísticos não armazena dados pessoais.';
 $string['purgestringcaches'] = 'Limpar caches das strings';
-$string['selectlangs'] = 'Selecione os pacotes linguísticos a desinstalar';
-$string['uninstall'] = 'Desinstalar o(s) pacote(s) linguístico(s) selecionado(s)';
+$string['selectlangs'] = 'Selecione os pacotes linguísticos que pretende desinstalar';
+$string['uninstall'] = 'Desinstalar os pacotes linguísticos selecionados';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o(s) pacote(s) linguístico(s): {$a}. Tem a certeza?';
 $string['updatelangs'] = 'Atualizar todos os pacotes linguísticos instalados';

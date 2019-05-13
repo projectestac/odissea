@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Πεδίο radio button';
+$string['fieldtypelabel'] = 'Πεδίο κουμπιού επιλογής';
+$string['pluginname'] = 'Κουμπί επιλογής';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο κουμπιού επιλογής» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

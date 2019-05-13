@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Lerro arteko iruzkina';
-$string['commentinlinedefault'] = 'Berezko lerro arteko iruzkina';
-$string['commentinlinedefault_help'] = 'Ezarriz gero, lerro arteko iruzkin hau berez gaituko da bidalketa berri guztietan.';
-$string['commentinline_help'] = 'Gaituz gero, kalifikazioa egitean bidalketaren testua feedback-eko iruzkinera kopiatuko da, lerro arteko iruzkina egitea errazteko (kolore ezberdin bat erabilita beharbada) edo jatorrizko testua editatu ahal izateko.';
-$string['default'] = 'Berez gaituta';
-$string['default_help'] = 'Ezarriz gero, feedback-metodo hau berez gaituko da zeregin berri guztietan';
+$string['commentinlinedefault'] = 'Lehenetsitako lerro arteko iruzkina';
+$string['commentinlinedefault_help'] = 'Ezarriz gero, lerro arteko iruzkin hau modu lehenetsian gaituko da bidalketa berri guztietan.';
+$string['commentinline_help'] = 'Gaituz gero, kalifikazioa egitean bidalketaren testua feedbackeko iruzkinera kopiatuko da, lerro arteko iruzkina egitea errazteko (kolore ezberdin bat erabilita beharbada) edo jatorrizko testua editatu ahal izateko.';
+$string['default'] = 'Gaituta modu lehenetsian';
+$string['default_help'] = 'Ezarriz gero, feedback-metodo hau modu lehenetsian gaituko da zeregin berri guztietan.';
 $string['enabled'] = 'Feedback-iruzkinak';
-$string['enabled_help'] = 'Ezarriz gero, feedback-metodo hau berez gaituko da zeregin berri guztietan';
+$string['enabled_help'] = 'Gaituz gero, kalifikatzaileak feedback mezuak utzi ahalko ditu bidalketa bakoitzean.';
 $string['pluginname'] = 'Feedback-iruzkinak';
 $string['privacy:commentpath'] = 'Feedback iruzkinak';
 $string['privacy:metadata:assignmentid'] = 'Zereginaren identifikatzailea';

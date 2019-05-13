@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clicktomarkusercomplete'] = 'Sakatu hemen erabiltzailea osatutzat markatzeko';
+$string['clicktomarkusercomplete'] = 'Egin klik hemen erabiltzailea osatutzat markatzeko';
 $string['completiondate'] = 'Osaketa-data';
-$string['completion:view'] = 'Ikastaro-osaketaren txostena ikusi';
+$string['completion:view'] = 'Ikusi ikastaro-osaketaren txostena';
 $string['eventreportviewed'] = 'Osaketa-txostena ikusi da';
 $string['eventuserreportviewed'] = 'Erabiltzailearen osaketa-txostena ikusi da';
 $string['id'] = 'IDa';

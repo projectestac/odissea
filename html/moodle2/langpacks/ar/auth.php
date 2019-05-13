@@ -141,6 +141,13 @@ $string['plaintext'] = 'نص عادي';
 $string['pluginnotenabled'] = 'إضافة المصادقة \'{$a}\' غير مفعّلة.';
 $string['pluginnotinstalled'] = 'إضافة المصادقة \'{$a}\' غير مثبتة.';
 $string['potentialidps'] = 'هل تسجل الدخول عادة في مكان آخر قبل الوصول إلى هنا ؟<br />اختر من القائمة التالية لتسجل الدخول من مكانك المعتاد:';
+$string['privacy:metadata:userpref:createpassword'] = 'يشير إلى أنه يجب إنشاء كلمة مرور للمستخدم';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'يشير إلى ما إذا كان يجب على المستخدم تغيير كلمة المرور الخاصة به عند تسجيل الدخول';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'عدد المرات التي فشل فيها المستخدم في تسجيل الدخول';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'عدد المرات التي فشل فيها المستخدم في تسجيل الدخول منذ آخر تسجيل دخول ناجح';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'التاريخ الذي تم فيه تسجيل آخر محاولة تسجيل دخول فاشلة';
+$string['privacy:metadata:userpref:loginlockout'] = 'ما إذا كان حساب المستخدم مقفلاً بسبب محاولات تسجيل الدخول الفاشلة، وتاريخ قفل الحساب';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'يشير إلى أن حساب المستخدم يجب ألا يخضع أبدًا للإغلاق';
 $string['recaptcha'] = 'ريكاباتشا';
 $string['recaptcha_help'] = 'كاباتشاCAPTCHA تفيد في منع إساءة الاستخدام من البرامج الآلية. أدخل ببساطة الكلمات الظاهرة في المربع مرتبة ومفصولة بمسافة فارغة.
 

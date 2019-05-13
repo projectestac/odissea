@@ -80,7 +80,7 @@ $string['categorycurrent'] = 'Categoria actual';
 $string['categorycurrentuse'] = 'Utilitza aquesta categoria';
 $string['categorydoesnotexist'] = 'Aquesta categoria no existeix';
 $string['categoryinfo'] = 'Informació de la categoria';
-$string['categorymove'] = 'La categoria «{$a->name}» conté {$a->count} preguntes (algunes de les quals poden estar ocultes o ser preguntes aleatòries que encara estan en ús en algun qüestionari). Si us plau escolliu a quina altra categoria voleu moure-les.';
+$string['categorymove'] = 'La categoria «{$a->name}» conté {$a->count} preguntes (algunes d\'aquestes poden estar ocultes, o ser preguntes aleatòries que encara estan en ús en algun qüestionari). Escolliu a quina altra categoria voleu moure-les.';
 $string['categorymoveto'] = 'Desa a la categoria';
 $string['categorynamecantbeblank'] = 'El nom de la categoria no pot estar buit.';
 $string['changeoptions'] = 'Canvia les opcions';
@@ -163,7 +163,7 @@ $string['errormovingquestions'] = 'Error en moure les preguntes amb identificado
 $string['errorpostprocess'] = 'Error durant el postprocessat!';
 $string['errorpreprocess'] = 'Error durant el preprocessat!';
 $string['errorprocess'] = 'Error durant el procés!';
-$string['errorprocessingresponses'] = 'S\'ha produït un error mentre es processaven les respostes ({$a}). Feu clic en continua per a tornar a la pàgina on estàveu i proveu-lo de nou.';
+$string['errorprocessingresponses'] = 'S\'ha produït un error mentre es processaven les respostes ({$a}). Feu clic a continuar per tornar a la pàgina on éreu i torneu a provar-ho.';
 $string['errorsavingcomment'] = 'S\'ha produït un error en desar el comentari a la pregunta {$a->name} a la base de dades.';
 $string['errorsavingflags'] = 'S\'ha produït un error en desar l\'estat de l\'indicador';
 $string['errorupdatingattempt'] = 'Error en actualitzar l\'intent {$a->id} a la base de dades.';
@@ -171,7 +171,7 @@ $string['eventquestioncategorycreated'] = 'Categoria de preguntes creada';
 $string['export'] = 'Exporta';
 $string['exportcategory'] = 'Exporta categoria';
 $string['exportcategory_help'] = '<p>Aquest paràmetre determina la categoria de la qual s\'exportaran les preguntes.</p>
-<p>Alguns formats d\'importació, com ara el GIFT i XML del Moodle, permeten copiar la categoria i el context al fitxer exportat, i això permet (opcionalment) recrear-les en una importació, marcant els quadres de selecció adequats.';
+<p>Alguns formats d\'importació, com ara el GIFT i XML de Moodle, permeten copiar la categoria i el context al fitxer exportat, i això permet (opcionalment) recrear-los en una importació. Si cal, és recomanable que marqueu els quadres de selecció adequats.';
 $string['exporterror'] = 'Errors durant l\'exportació!';
 $string['exportfilename'] = 'preguntes';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
@@ -189,7 +189,7 @@ $string['firsttry'] = 'Primer intent';
 $string['flagged'] = 'Marcada';
 $string['flagthisquestion'] = 'Marca aquesta pregunta';
 $string['formquestionnotinids'] = 'El formulari contenia preguntes que no troben els identificadors';
-$string['fractionsnomax'] = 'Una de les respostes ha de tenir una puntuació del 100% de manera que sigui possible aconseguir tots els punts en aquesta pregunta.';
+$string['fractionsnomax'] = 'Una de les respostes ha de tenir una puntuació del 100%, de manera que sigui possible aconseguir tots els punts en aquesta pregunta.';
 $string['generalfeedback'] = 'Retroacció general';
 $string['generalfeedback_help'] = 'La retroacció general es mostra a l\'alumnat després que hagi intentat contestar una pregunta. A diferència de la retroacció específica, que depèn del tipus de pregunta i de la resposta que l\'alumnat doni, es mostra el mateix text de retroacció general a tot l\'alumnat.
 
@@ -202,21 +202,20 @@ $string['hinttext'] = 'Text de la pista';
 $string['howquestionsbehave'] = 'Com es comporten les preguntes';
 $string['howquestionsbehave_help'] = 'Els estudiants poden interactuar amb les preguntes del qüestionari de diverses maneres. Per exemple, potser vulgueu que els estudiants donin una resposta a cada pregunta i després enviïn el qüestionari complet, abans que sigui qualificat o rebi retroacció. Aquest mode és la «retroacció diferida».
 
-Alternativament, podeu voler que els estudiants responguin cada pregunta i obtinguin una retroacció immediata, i si no contesten correctament de manera immediata, tinguin una altra oportunitat amb menor puntuació. Aquest mode seria «interactiu amb diversos intents».
+Alternativament, podeu voler que els estudiants responguin cada pregunta i obtinguin una retroacció immediata i, si no contesten correctament de manera immediata, tinguin una altra oportunitat amb menor puntuació. Aquest mode seria «interactiu amb diversos intents».
 
 Aquests probablement són els dos modes de comportament usats més comunament.';
 $string['ignorebroken'] = 'Ignora enllaços trencats';
 $string['import'] = 'Importa';
 $string['importcategory'] = 'Importació d\'una categoria';
 $string['importcategory_help'] = '<p>Aquest paràmetre determina la categoria cap a on aniran les preguntes importades.</p>
-<p>Alguns formats d\'importació, com ara el GIFT i XML del Moodle poden incloure la categoria i el context en el fitxer d\'importació. Per utilitzar aquesta informació, en lloc de la categoria seleccionada, cal haver marcat els quadres de selecció pertinents. Si les categories al fitxer d\'importació no es troben, se\'n crearan de noves.
-';
+<p>Alguns formats d\'importació, com ara el GIFT i XML de Moodle poden incloure la categoria i el context en el fitxer d\'importació. Per utilitzar aquesta informació, en lloc de la categoria seleccionada, cal haver marcat els quadres de selecció pertinents. Si les categories al fitxer d\'importació no es troben, se\'n crearan de noves.';
 $string['importerror'] = 'S\'ha produït un error en el procés d\'importació.';
 $string['importerrorquestion'] = 'Error en importar la pregunta.';
 $string['importfromcoursefiles'] = '... o escolliu un fitxer de curs per importar.';
 $string['importfromupload'] = 'Seleccioneu un fitxer per penjar ...';
 $string['importingquestions'] = 'S\'importaran {$a} preguntes del fitxer';
-$string['importparseerror'] = 'S\'han trobat error(s) en analitzar el fitxer d\'importació. No s\'ha importat cap pregunta. Si voleu aprofitar les preguntes ben formatades del fitxer, torneu-ho a intentar amb el paràmetre \'S\'atura si hi ha errors\' desactivat.';
+$string['importparseerror'] = 'S\'han trobat error(s) en analitzar el fitxer d\'importació. No s\'ha importat cap pregunta. Per importar les preguntes ben formatades del fitxer, torneu-ho a intentar amb el paràmetre «Atura si es produeix un error» desactivat.';
 $string['importquestions'] = 'Importació de preguntes des d\'un fitxer';
 $string['importquestions_help'] = 'Aquesta funció activa la importació de preguntes de formats diversos via un fitxer de text. El fitxer ha d\'estar codificat amb l\'UTF-8.';
 $string['importwrongfiletype'] = 'El tipus de fitxer que heu triat ({$a->actualtype}) no s\'acorda al tipus esperat per aquest format d\'importació ({$a->expectedtype}).';
@@ -316,9 +315,9 @@ $string['penaltyfactor'] = 'Factor de penalització';
 $string['penaltyfactor_help'] = '<p>Podeu especificar quina fracció de la puntuació aconseguida cal restar per cada resposta incorrecta. Això només és rellevant si el qüestionari funciona en mode adaptatiu, de manera que l\'estudiant pugui donar respostes repetides a una pregunta. El factor de penalització ha de ser un número entre 0 i 1. Un factor de penalització d\'1 vol dir que l\'estudiant ha d\'aconseguir la resposta correcta la primera vegada per tal d\'obtenir-hi crèdit. Un factor de penalització de 0 vol dir que l\'estudiant pot provar tantes vegades com vulgui i encara obté la puntuació completa.
 </p';
 $string['penaltyforeachincorrecttry'] = 'Penalització per a cada intent incorrecte';
-$string['penaltyforeachincorrecttry_help'] = 'Quan feu respondre les preguntes fent servir el comportament «Mode adaptatiu» o «Interactiu amb intents múltiples», a fi que l\'alumnat disposi de diversos intents per respondre-les bé, aleshores aquesta opció controla la penalització per cada intent incorrecte.
+$string['penaltyforeachincorrecttry_help'] = 'Quan feu respondre les preguntes fent servir el comportament «Mode adaptatiu» o «Interactiu amb intents múltiples», a fi que l\'alumne disposi de diversos intents per respondre-les bé, aleshores aquesta opció controla la penalització per cada intent incorrecte.
 
-La penalització és una proporció del valor total de la pregunta: si la pregunta val 3 punts i la penalització és de 0.3333333, l\'alumnat tindrà 3 punts si la completa bé la 1a vegada; 2 si la completa al segon intent; i 1 si la responen bé al tercer intent.';
+La penalització és una proporció del valor total de la pregunta: si la pregunta val 3 punts i la penalització és de 0.3333333, l\'alumne tindrà 3 punts si la completa bé la primera vegada; 2 si la completa al segon intent; i 1 si la respon bé al tercer intent.';
 $string['permissionedit'] = 'Edita aquesta pregunta';
 $string['permissionmove'] = 'Mou aquesta pregunta';
 $string['permissionsaveasnew'] = 'Desa com a pregunta nova';
@@ -382,7 +381,7 @@ $string['specificfeedback_help'] = 'Retroacció que depèn de la resposta donada
 $string['started'] = 'Iniciat';
 $string['state'] = 'Estat';
 $string['step'] = 'Pas';
-$string['stoponerror'] = 'Atura quan es produeixi un error';
+$string['stoponerror'] = 'Atura si es produeix un error';
 $string['stoponerror_help'] = 'Aquest paràmetre determina si el procés d\'importació s\'atura quan es detecta un error, i no s\'importa cap pregunta; o si s\'ignoren les preguntes amb errors i s\'importen les completes.';
 $string['submissionoutofsequence'] = 'Sortiu fora de la seqüència. No feu clic per anar enrere quan treballeu en preguntes de qüestionaris.';
 $string['submissionoutofsequencefriendlymessage'] = 'Heu introduït dades fora de la seqüència normal. Això pot passar si feu servir els controls d\'avançar i retrocedir del navegador d\'Internet; no els feu servir mentre completeu el test. També podria passar si feu clic en algun punt quan es carrega una pàgina. Feu clic a <strong>Continua</strong> per reprendre.';
@@ -424,4 +423,4 @@ $string['wrongprefix'] = 'Nom de prefix mal format ({$a})';
 $string['xoutofmax'] = '{$a->mark} sobre {$a->max}';
 $string['yougotnright'] = 'Heu seleccionat correctament {$a->num}.';
 $string['youmustselectaqtype'] = 'Cal que trieu el tipus de pregunta';
-$string['yourfileshoulddownload'] = 'El fitxer d\'exportació hauria de començar a descarregar-se immediatament. Si no passa, si us plau, feu clic <a href="{$a}">aquí</a>.';
+$string['yourfileshoulddownload'] = 'El fitxer d\'exportació hauria de començar a descarregar-se immediatament. Si això no passa, feu clic <a href="{$a}">aquí</a>.';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Safe Exam Browser';
-$string['privacy:metadata'] = 'Das Plugin Safe Exam Browser für den Testzugriff speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Plugin Safe Exam Browser für den Testzugriff speichert keine personenbezogenen Daten.';
 $string['requiresafeexambrowser'] = 'Nutzung des Safe Exam Browsers erforderlich';
 $string['safebrowsererror'] = 'Für diesen Test wurde festgelegt, dass er ausschließlich im \'Safe Exam Browser\' erscheint. Sie können den Test mit Ihrem aktuellen Browser nicht durchführen.';
 $string['safebrowsernotice'] = 'Für diesen Test wurde festgelegt, dass er ausschließlich im \'Safe Exam Browser\' durchgeführt werden kann.';

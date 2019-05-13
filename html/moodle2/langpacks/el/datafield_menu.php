@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο μενού';
+$string['pluginname'] = 'Μενού';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο μενού» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

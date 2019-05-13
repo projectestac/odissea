@@ -46,7 +46,7 @@ $string['cliinstallfinished'] = 'インストールが正常に完了しまし�
 $string['cliinstallheader'] = 'Moodle {$a} コマンドラインインストールプログラム';
 $string['climustagreelicense'] = '非インタラクティブモードにおいて、あなたは「--agree-license」オプションを指定してライセンスに同意する必要があります。';
 $string['cliskipdatabase'] = 'データベースインストレーションをスキップしています。';
-$string['clitablesexist'] = 'データベーステーブルはすでに作成されています。cliインストールを続けることはできません。';
+$string['clitablesexist'] = 'データベーステーブルはすでに作成されています。CLIインストールを続けることはできません。';
 $string['compatibilitysettings'] = 'あなたのPHP設定を確認しています ...';
 $string['compatibilitysettingshead'] = 'あなたのPHP設定を確認しています ...';
 $string['compatibilitysettingssub'] = 'Moodleを適切に動作させるために、あなたのサーバがこれらすべてのテストに合格する必要があります。';
@@ -108,7 +108,7 @@ $string['doyouagree'] = '同意しますか ? (yes/no):';
 $string['environmenthead'] = 'あなたの環境を確認しています ...';
 $string['environmentsub'] = 'あなたのシステムに関する様々な要素がシステム要件に合致するか確認しています。';
 $string['environmentsub2'] = 'それぞれのMoodleリリースにはPHPバージョンの最小必要条件および多くの必須PHP拡張モジュールがあります。完全な環境チェックはインストールおよびアップグレードごとに実行されます。新しいPHPバージョンのインストールまたはPHP拡張モジュールの有効化に関して分からない場合、あなたのサーバ管理者にご連絡ください。';
-$string['errorsinenvironment'] = '環境チェックが失敗しました!';
+$string['errorsinenvironment'] = '環境チェックに失敗しました!';
 $string['fail'] = '失敗';
 $string['fileuploads'] = 'ファイルアップロード';
 $string['fileuploadserror'] = 'これは有効にしてください。';
@@ -175,9 +175,9 @@ $string['pathssubdataroot'] = '<p>ユーザによってアップロードされ�
 <p>ウェブからは直接アクセスできないようにしてください。</p>
 <p>現在ディレクトリが存在しない場合、インストレーションプロセスは作成を試みます。</p';
 $string['pathssubdirroot'] = '<p>Moodleコードを含むディレクトリに関するフルパスです。</p>';
-$string['pathssubwwwroot'] = '<p>Moodleにアクセスすることのできるフルウェブアドレスです。例えばユーザがブラウザのアドレスバーに入力してMoodleにアクセスするためのアドレスです。</p>
+$string['pathssubwwwroot'] = '<p>Moodleにアクセスできるフルウェブアドレスです。例えばユーザがブラウザのアドレスバーに入力してMoodleにアクセスするためのアドレスです。</p>
 
-<p>複数アドレスを使用してMoodleにアクセスすることはできません。あなたのサイトに複数アドレスからアクセスできる場合、最も簡単なアドレスを選択して、すべてのアドレスにパーマネントリダイレクトを設定してください。</p>
+<p>複数アドレスを使用したMoodleへのアクセスはできません。あなたのサイトに複数アドレスからアクセスできる場合、最も簡単なアドレスを選択して、すべてのアドレスにパーマネントリダイレクトを設定してください。</p>
 
 <p>あなたのサイトにインターネットおよび内部ネットワーク (イントラネットと呼ばれます) からアクセスできる場合、ここではパブリックアドレスを使用してください。</p>
 

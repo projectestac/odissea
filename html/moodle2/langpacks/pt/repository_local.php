@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configurar repositório "Ficheiros no Servidor"';
 $string['currentusefiles'] = 'Ficheiros em utilização';
 $string['emptyfilelist'] = 'O repositório está vazio';
-$string['local:view'] = 'Ver repositório de servidor';
+$string['local:view'] = 'Ver repositório Ficheiros no Servidor';
 $string['notitle'] = 'Sem título';
 $string['pluginname'] = 'Ficheiros no Servidor';
 $string['pluginname_help'] = 'Ficheiros enviados anteriormente para o servidor Moodle';

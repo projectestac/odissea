@@ -29,4 +29,5 @@ $string['configplugin'] = 'Configuració del repositori dels fitxers privats d\'
 $string['emptyfilelist'] = 'No hi ha fitxers per mostrar';
 $string['pluginname'] = 'Fitxers privats';
 $string['pluginname_help'] = 'Fitxers a l\'àrea privada de l\'usuari';
+$string['privacy:metadata'] = 'El connector del Repositori de fitxers privats no emmagatzema ni transmet cap dada personal.';
 $string['user:view'] = 'Visualitza els fitxers privats d\'usuari';

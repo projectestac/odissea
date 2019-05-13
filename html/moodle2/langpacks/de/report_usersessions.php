@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'Meine aktiven Sessions';
 $string['navigationlink'] = 'Browsersessions';
 $string['pluginname'] = 'Bericht zu Nutzersessions';
-$string['privacy:metadata'] = 'Das Nutzer-Session-Berichts-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Nutzer-Session-Berichts-Plugin speichert keine personenbezogenen Daten.';
 $string['thissession'] = 'Aktuelle Session';
 $string['usersessions:manageownsessions'] = 'Eigene Browsersessions verwalten';

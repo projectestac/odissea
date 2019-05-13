@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Meine Dateien';
 $string['privacy:metadata'] = 'Der Block \'Meine Dateien\' zeigt ausschließlich Daten an, die woanders gespeichert sind.';
 $string['privatefiles'] = 'Meine Dateien';
-$string['private_files:addinstance'] = 'Block \'Meine Dateien\' hinzufügen';
-$string['private_files:myaddinstance'] = 'Block \'Meine Dateien\' zum Dashboard hinzufügen';
+$string['private_files:addinstance'] = 'Neuen Block \'Meine Dateien\' hinzufügen';
+$string['private_files:myaddinstance'] = 'Neuen Block \'Meine Dateien\' zum Dashboard hinzufügen';

@@ -38,5 +38,6 @@ $string['nosyncroleids'] = 'Niet-gesynchroniseerde rollen';
 $string['nosyncroleids_desc'] = 'Standaard zijn alle roltoewijzingen op cursus niveau gesynchroniseerd van bovenliggende tot onderliggende cursussen. Rollen die hier geselecteerd zijn, worden niet opgenomen in het synchronisatie proces. De rollen die beschikbaar zijn voor synchronisatie worden bij de volgende crontaak bijgewerkt.';
 $string['pluginname'] = 'Link naar koepelcursus';
 $string['pluginname_desc'] = 'Koepelcursus aanmeldingsplugin synchroniseert aanmeldingen en rollen tussen twee verschillende cursussen';
+$string['privacy:metadata:core_group'] = 'Inschrijven meta-plug-in kan een nieuwe groep maken of een bestaande groep gebruiken om alle deelnemers aan de gekoppelde cursus toe te voegen.';
 $string['syncall'] = 'Synchroniseer alle aangemelde gebruikers';
 $string['syncall_desc'] = 'Indien ingeschakeld worden alle aangemelde gebruikers gesynchroniseerd, zelfs als ze geen rol hebben in de bovenliggende cursus.';

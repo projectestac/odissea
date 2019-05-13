@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Presentar emoticonas como imaxes';
+$string['privacy:metadata'] = 'O engadido de amosar as emoticonas como imaxes non almacena ningunha información persoal.';
 $string['settingformats'] = 'Aplicar a formatos';
 $string['settingformats_desc'] = 'O filtro aplicaráselle soamente se o texto orixinal se introduciu nun dos formatos seleccionados.';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Glosario autoligado';
+$string['privacy:metadata'] = 'O engadido de glosario autoligado non almacena ningún dato persoal.';

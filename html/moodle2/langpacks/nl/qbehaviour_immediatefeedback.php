@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Niet volledig';
 $string['pluginname'] = 'Onmiddellijke feedback';
+$string['privacy:metadata'] = 'De onmiddellijke feedback vraaggedrag-plugin bewaart geen persoonlijke gegevens.';

@@ -43,6 +43,7 @@ $string['pluginname'] = 'Изображение';
 $string['presentation'] = 'Описание не обязательно';
 $string['presentationoraltrequired'] = 'Изображение должно иметь описание, если не указано обратное';
 $string['preview'] = 'Предварительный просмотр';
+$string['privacy:metadata'] = 'Плагин atto_image не хранит никаких персональных данных.';
 $string['saveimage'] = 'Сохранить изображение';
 $string['size'] = 'Размер';
 $string['uploading'] = 'Идет загрузка. Пожалуйста, подождите...';

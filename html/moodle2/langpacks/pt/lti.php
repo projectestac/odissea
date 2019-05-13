@@ -66,8 +66,8 @@ $string['cancel'] = 'Cancelar';
 $string['cancelled'] = 'Cancelado';
 $string['cannot_delete'] = 'Não pode apagar a configuração desta ferramenta';
 $string['cannot_edit'] = 'Não pode editar a configuração desta ferramenta';
-$string['capabilities'] = 'Capacidades';
-$string['capabilities_help'] = 'Selecione aquelas capacidades que pretende disponibilizar ao fornecedor da ferramenta. Podem ser selecionadas mais do que uma capacidade.';
+$string['capabilities'] = 'Permissões';
+$string['capabilities_help'] = 'Selecione as permissões que pretende disponibilizar ao fornecedor da ferramenta. Podem ser selecionadas mais do que uma permissão.';
 $string['capabilitiesrequired'] = 'Esta ferramenta requer acesso aos seguintes dados, para que possa ser ativada:';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Clique para continuar</a>';
 $string['comment'] = 'Comentário';
@@ -113,7 +113,7 @@ Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop
 É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['delegate'] = 'Delegar ao professor';
 $string['delete'] = 'Apagar';
-$string['delete_confirmation'] = 'Tem a certeza que pretende apagar esta ferramenta pré-configurada?';
+$string['delete_confirmation'] = 'Tem a certeza de que pretende apagar esta ferramenta pré-configurada?';
 $string['deletetype'] = 'Apagar ferramenta pré-configurada';
 $string['display_description'] = 'Mostrar descrição da atividade ao iniciar';
 $string['display_description_help'] = 'Se selecionado, a descrição da atividade (especificada acima) será exibida acima do conteúdo da ferramenta.
@@ -208,7 +208,7 @@ Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop
 $string['launchoptions'] = 'Opções de arranque';
 $string['launch_url'] = 'URL da ferramenta';
 $string['launch_url_help'] = 'O URL da ferramenta indica o endereço web da Ferramenta Externa, e pode conter informações adicionais, tais como o recurso a mostrar.
-Se não sabe o que inserir no URL da ferramenta, por favor contacte o fornecedor de ferramenta para obter mais informações.
+Se não sabe o que inserir no URL da ferramenta, por favor, contacte o fornecedor da ferramenta para obter mais informações.
 
 Também pode inserir um URL de cartridge, caso tenha um, e os restantes detalhes do formulário serão automaticamente preenchidos.
 
@@ -331,7 +331,7 @@ $string['privacy:metadata:courseid'] = 'O ID da disciplina a que o utilizador es
 $string['privacy:metadata:courseidnumber'] = 'O ID do número da disciplina a que o utilizador está a aceder através do sistema LTI';
 $string['privacy:metadata:courseshortname'] = 'O shortname da disciplina a que o utilizador está a aceder através do sistema LTI';
 $string['privacy:metadata:createdby'] = 'O utilizador que criou o registo';
-$string['privacy:metadata:email'] = 'O endereço de email do utilizador a aceder ao sistema LTI';
+$string['privacy:metadata:email'] = 'O endereço de e-mail do utilizador a aceder ao sistema LTI';
 $string['privacy:metadata:externalpurpose'] = 'O sistema LTI fornece informação de utilizador e contexto à ferramenta LTI.';
 $string['privacy:metadata:firstname'] = 'firstname do utilizador a aceder ao sistema LTI';
 $string['privacy:metadata:fullname'] = 'O fullname do utilizador a aceder ao sistema LTI';
@@ -347,8 +347,8 @@ $string['privacy:metadata:lti_tool_proxies:name'] = 'Nome da proxies LTI';
 $string['privacy:metadata:lti_types'] = 'Tipos LTI';
 $string['privacy:metadata:lti_types:name'] = 'Mome do tipo LTI';
 $string['privacy:metadata:role'] = 'O papel na disciplina para aceder ao sistema LTI';
-$string['privacy:metadata:timecreated'] = 'A data em que o registo foi criado';
-$string['privacy:metadata:timemodified'] = 'A data em que o registo foi modificado';
+$string['privacy:metadata:timecreated'] = 'A data/hora em que o registo foi criado';
+$string['privacy:metadata:timemodified'] = 'A data/hora em que o registo foi modificado';
 $string['privacy:metadata:userid'] = 'O ID do utilizador a aceder ao sistema LTI';
 $string['privacy:metadata:useridnumber'] = 'O ID do número de utilizador a aceder ao sistema LTI';
 $string['privacy:metadata:username'] = 'O nome de utilizador do utilizador a aceder ao sistema LTI';
@@ -391,8 +391,7 @@ $string['return_to_course'] = 'Clique <a href="{$a->link}" target="_top">aqui</a
 $string['saveallfeedback'] = 'Guardar todas as alterações';
 $string['search:activity'] = 'Ferramenta externa - informações da atividade';
 $string['secure_icon_url'] = 'URL do Ícone seguro';
-$string['secure_icon_url_help'] = 'Similar ao URL do ícone, mas usado se o utilizador aceder ao Moodle de forma segura através de SSL. O principal objetivo para este campo é para evitar
-o navegador avisando o utilizador que a página subjacente foi acessada através de SSL, mas pedindo para mostrar uma imagem insegura.';
+$string['secure_icon_url_help'] = 'Similar ao URL do ícone, mas usado quando o acesso ao site é feito de forma segura através de SSL. Este campo serve para impedir que o navegador exiba um aviso acerca de uma imagem insegura.';
 $string['secure_launch_url'] = 'URL da ferramenta segura';
 $string['secure_launch_url_help'] = 'Similar ao URL de arranque, mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro invés do URL de arranque se o Moodle for acedido partir de SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre com SSL.
 
@@ -454,7 +453,7 @@ Deve descrever o que a ferramenta é e o que ela faz, além de outras informaç�
 $string['toolisbeingused'] = 'Esta ferramenta foi utilizada {$a} vezes';
 $string['toolisnotbeingused'] = 'Esta ferramenta ainda não foi utilizada';
 $string['toolproxy'] = 'Registos da ferramenta externa';
-$string['toolproxy_help'] = 'Os registos de ferramenta externa permitem aos administradores de sites Moodle configurar ferramentas externas a partir de um proxy de ferramenta obtido a partir de um fornecedor de ferramenta que suporte LTI 2.0. Apenas um URL de registo fornecido pelo fornecedor da ferramenta é requerido para iniciar o processo. As capacidades e os serviços disponibilizados pelo fornecedor de ferramenta são selecionados ao configurar um novo registo.
+$string['toolproxy_help'] = 'Os registos de ferramenta externa permitem aos administradores de sites Moodle configurar ferramentas externas a partir de um proxy de ferramenta obtido a partir de um fornecedor de ferramenta que suporte LTI 2.0. Apenas um URL de registo fornecido pelo fornecedor da ferramenta é requerido para iniciar o processo. As permissões e os serviços disponibilizados pelo fornecedor de ferramenta são selecionados ao configurar um novo registo.
 
 Os registos da ferramenta listados nesta página encontram-se separados em quatro categorias:
 

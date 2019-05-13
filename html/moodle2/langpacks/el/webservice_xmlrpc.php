@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'πρωτόκολλο XML-RPC';
+$string['privacy:metadata'] = 'Το πρόσθετο πρωτοκόλλου XML-RPC δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['xmlrpc:use'] = 'Χρήση πρωτοκόλλου XML-RPC';

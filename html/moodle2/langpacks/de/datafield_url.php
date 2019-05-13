@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'URL-Feld';
 $string['openlinkinnewwindow'] = 'URL in neuem Fenster öffnen';
 $string['pluginname'] = 'URL';
-$string['privacy:metadata'] = 'Die URLfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'URLfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

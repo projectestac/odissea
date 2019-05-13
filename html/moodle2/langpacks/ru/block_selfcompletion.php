@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Вы уже указывали, что завершили этот курс';
 $string['completecourse'] = 'Завершить курс';
 $string['pluginname'] = 'Самостоятельное отслеживание завершения';
+$string['privacy:metadata'] = 'Блок «Самостоятельное отслеживание завершения» только показывает данные, хранящиеся в других местах.';
 $string['selfcompletion:addinstance'] = 'Добавлять новый блок «Самостоятельное отслеживание завершения»';
 $string['selfcompletionnotenabled'] = 'В этом курсе не разрешено самостоятельное отслеживание завершения';

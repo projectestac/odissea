@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreanswerblanks'] = 'Blancs per a {no} preguntes més';
+$string['addmoreanswerblanks'] = 'Nombre d\'espais en blanc addicionals per a opcions de resposta: {no}';
 $string['answer'] = 'Resposta: {$a}';
 $string['answermustbegiven'] = 'Cal que introduïu una resposta si hi ha qualificació o retroacció.';
 $string['answerno'] = 'Resposta {$a}';

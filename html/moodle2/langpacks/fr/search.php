@@ -68,6 +68,8 @@ $string['globalsearch'] = 'Recherche globale';
 $string['globalsearchdisabled'] = 'La recherche globale n\'est pas activée.';
 $string['incourse'] = 'dans le cours {$a}';
 $string['index'] = 'Index';
+$string['indexwhendisabledfullnotice'] = 'L\'indexation n\'est actuellement pas autorisée lorsque la recherche est désactivée. Pour l\'activer, veuillez consulter le réglage <a href="{$a->url}">searchindexwhendisabled</a>';
+$string['indexwhendisabledshortnotice'] = 'L\'indexation n\'est pas disponible.';
 $string['invalidindexerror'] = 'Le répertoire d\'index contient un index non valide ou rien du tout.';
 $string['ittook'] = 'Il a fallu';
 $string['matchingfile'] = 'Trouvé dans le fichier <span class="filename">{$a}</span>';

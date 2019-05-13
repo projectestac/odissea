@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Campo de texto';
-$string['privacy:metadata:profilefield_text:data'] = 'Os dados de utilizador armazenados.';
-$string['privacy:metadata:profilefield_text:dataformat'] = 'O formato dos dados de utilizador.';
-$string['privacy:metadata:profilefield_text:fieldid'] = 'O ID do campo de perfil';
-$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Informação adicional do utilizador é armazenada aqui.';
-$string['privacy:metadata:profilefield_text:userid'] = 'O ID do utilizador cujos dados são armazenados pelo módulo Campo de texto.';
+$string['privacy:metadata:profilefield_text:data'] = 'Os dados de utilizador armazenados no campo de perfil do tipo Campo de texto';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'O formato dos dados de utilizador armazenados no campo de perfil do tipo Campo de texto';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'ID do campo de perfil';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Informação adicional do perfil';
+$string['privacy:metadata:profilefield_text:userid'] = 'O ID do utilizador cujos dados são armazenados no campo de perfil do tipo Campo de texto';

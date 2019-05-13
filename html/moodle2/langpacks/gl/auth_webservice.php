@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = 'Este método de autenticación debe empregarse para as contas que son para uso exclusivo de clientes de servizos web.';
 $string['pluginname'] = 'Autenticación para servizos web';
+$string['privacy:metadata'] = 'O engadido de autenticación para servizos web non almacena ningún dato persoal.';

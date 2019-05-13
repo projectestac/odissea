@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
 $string['pluginname_help'] = 'Met Examview opmaak kun je vragen importeren vanuit Examview 4 XML-bestanden. Voor nieuwere versies van Examview kun je Blackboard opmaak gebruiken.';
+$string['privacy:metadata'] = 'De Examview vraag format-plugin bewaart geen persoonlijke gegevens.';

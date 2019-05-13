@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_mnet_auto_add_remote_users'] = 'Bai aukeratuta, berez sortzen da erabiltzaile lokalaren erregistroa urrutiko erabiltzailea lehen aldiz sartzen denean.';
+$string['auth_mnet_auto_add_remote_users'] = 'Bai aukeratuz gero, urrutiko erabiltzailea lehen aldiz sartzen denean erabiltzaile lokalaren erregistroa automatikoki sortzen da.';
 $string['auth_mnetdescription'] = 'Zure Moodle Sarearen ezarpenetan definitutako web-konfiantzaren arabera autentifikatuko dira erabiltzaileak.';
 $string['auth_mnet_roamin'] = 'Ostalari honetako erabiltzaileak zure gunean ibil daitezke';
 $string['auth_mnet_roamout'] = 'Zure erabiltzaileak ostalari honetan ibil daitezke';
@@ -69,8 +69,8 @@ $string['privacy:metadata:mnet_external:picture'] = 'Erabiltzaile honekin lotuta
 $string['privacy:metadata:mnet_external:policyagreed'] = 'Erabiltzaileak guneko politikari onespena eman dion adierazteko marka.';
 $string['privacy:metadata:mnet_external:skype'] = 'Erabiltzailearen Skype identifikatzailea.';
 $string['privacy:metadata:mnet_external:suspended'] = 'Erabiltzailea gune honetan etenda dagoen adierazteko marka.';
-$string['privacy:metadata:mnet_external:timezone'] = 'Erabiltzailea bizi den ordutegi-eremua';
-$string['privacy:metadata:mnet_external:trackforums'] = 'Foroetarako eta hauen harpidetzarako hobespena.';
+$string['privacy:metadata:mnet_external:timezone'] = 'Erabiltzailearen ordu eremua';
+$string['privacy:metadata:mnet_external:trackforums'] = 'Foroetarako eta hauen jarraipenerako hobespena.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Konfiantzazko bit-maskara';
 $string['privacy:metadata:mnet_external:url'] = 'Erabiltzaile honekin lotutako URLa.';
 $string['privacy:metadata:mnet_external:username'] = 'Erabiltzaile honentzako erabiltzaile-izena.';
@@ -89,7 +89,7 @@ $string['privacy:metadata:mnet_log:time'] = 'Ekintza gertatu zeneko unea.';
 $string['privacy:metadata:mnet_log:url'] = 'Ekintza gertatu zeneko urruneko sistemako URLa.';
 $string['privacy:metadata:mnet_log:userid'] = 'Ekintza egin zuen urruneko sistemako erabiltzailearen ID lokala.';
 $string['privacy:metadata:mnet_session'] = 'MNet erabiltzaile-saio bakoitzaren xehetasunak urruneko sistema batean behin behinean gordetzen dira.';
-$string['privacy:metadata:mnet_session:expires'] = 'Saioa noiz iraungitzen den.';
+$string['privacy:metadata:mnet_session:expires'] = 'Saioa iraungituko den unea.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'Urruneko sistemako MNet IDa.';
 $string['privacy:metadata:mnet_session:token'] = 'Saioaren identifikatzaile bakarra.';
 $string['privacy:metadata:mnet_session:useragent'] = 'Orrian sartzean erabiltzaileak erabilitako agentea adierazten duen katea.';

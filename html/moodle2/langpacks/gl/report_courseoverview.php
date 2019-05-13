@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'Ver o informe xeral do curso';
 $string['pluginname'] = 'Visión xeral do curso';
+$string['privacy:metadata'] = 'O engadido de vista xeral do curso non almacena ningún dato persoal.';

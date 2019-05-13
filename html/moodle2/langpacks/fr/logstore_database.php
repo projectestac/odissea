@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Taille du tampon';
-$string['buffersize_help'] = 'Le nombre d\'entrées de l\'historique insérées au cours d\'une opération de base de données (ce qui améliore la performance).';
+$string['buffersize_help'] = 'Le nombre d\'entrées de journal insérées au cours d\'une même opération de base de données (ce qui améliore la performance).';
 $string['conectexception'] = 'Connexion impossible à la base de données';
 $string['create'] = 'Créer';
 $string['databasecollation'] = 'Collation de base de données';
@@ -35,18 +35,18 @@ $string['databasehandlesoptions_help'] = 'Indique si la base de données distant
 $string['databasepersist'] = 'Connexions persistantes à la base de données';
 $string['databaseschema'] = 'Schéma de base de données';
 $string['databasesettings'] = 'Réglages de base de données';
-$string['databasesettings_help'] = 'Configuration de la connexion pour la base de données externe de l\'historique : {$a}';
+$string['databasesettings_help'] = 'Configuration de la connexion pour la base de données du journal externe : {$a}';
 $string['databasetable'] = 'Table de base de données';
-$string['databasetable_help'] = 'Nom de la table dans laquelle les historiques seront stockés. Cette table doit avoir une structure identique à celle utilisée par la table logstore_standard (mdl_logstore_standard_log).';
-$string['filters'] = 'Filtrer les historiques';
-$string['filters_help'] = 'Activer des filtres qui empêchent certaines actions d\'être consignées dans les historiques.';
+$string['databasetable_help'] = 'Nom de la table dans laquelle les journaux seront stockés. Cette table doit avoir une structure identique à celle utilisée par la table logstore_standard (mdl_logstore_standard_log).';
+$string['filters'] = 'Filtrer les journaux';
+$string['filters_help'] = 'Activer des filtres qui empêchent certaines actions d\'être consignées dans les journaux.';
 $string['includeactions'] = 'Inclure les actions de ces types';
 $string['includelevels'] = 'Inclure les interactions de ces types';
 $string['logguests'] = 'Enregistrer les actions des utilisateurs anonymes';
 $string['other'] = 'Autre';
 $string['participating'] = 'Participation';
-$string['pluginname'] = 'Historique dans base de données externe';
-$string['pluginname_desc'] = 'Un plugin permettant l\'enregistrement des historiques dans une table d\'une base de données externes.';
+$string['pluginname'] = 'Journal dans base de données externe';
+$string['pluginname_desc'] = 'Un plugin permettant l\'enregistrement des journaux dans une table d\'une base de données externes.';
 $string['privacy:metadata:log'] = 'Une collection des événements passés';
 $string['privacy:metadata:log:anonymous'] = 'Si l\'événement a été marqué comme anonyme';
 $string['privacy:metadata:log:eventname'] = 'Le nom de l\'événement';

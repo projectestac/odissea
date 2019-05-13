@@ -31,3 +31,4 @@ $string['healthproblemsolution'] = 'Solución ao problema de saúde';
 $string['healthreturntomain'] = 'Continuar';
 $string['healthsolution'] = 'Solución';
 $string['pluginname'] = 'Centro de saúde';
+$string['privacy:metadata'] = 'O engadido de centro de saúde non almacena ningún dato persoal.';

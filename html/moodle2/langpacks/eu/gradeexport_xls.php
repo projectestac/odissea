@@ -30,4 +30,4 @@ $string['pluginname'] = 'Excel kalkulu-orria';
 $string['privacy:metadata'] = 'Excel kalkulu-orria kalifikazioak esportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['timeexported'] = 'Azkenik jaitsi da ikastaro honetatik';
 $string['xls:publish'] = 'XLS kalifikazioen esportazioa argitaratu';
-$string['xls:view'] = 'Kalifikazioak esportatzeko Excel erabili';
+$string['xls:view'] = 'Erabili Excel kalifikazioak esportatzeko';

@@ -25,9 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configplugin'] = 'Ρυθμίσεις WebDAV';
+$string['http'] = 'HTTP';
+$string['https'] = 'HTTPS';
 $string['pluginname'] = 'Χώρος Αποθήκευσης WebDAV';
-$string['webdav_password'] = 'Συνθηματικό εξυπηρετητή WebDAV';
+$string['privacy:metadata'] = 'Το πρόσθετο «Αποθετήριο WebDAV» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
+$string['webdav'] = 'WebDAV';
+$string['webdavbasicauth'] = 'Βασική αυθεντικοποίηση WebDAV';
+$string['webdavdigestauth'] = 'Συνοπτική αυθεντικοποίηση WebDAV';
+$string['webdav_password'] = 'Κωδικός πρόσβασης εξυπηρετητή WebDAV';
+$string['webdav_path'] = 'Διαδρομή του WebDAV';
 $string['webdav_port'] = 'Θύρα εξυπηρετητή WebDAV';
 $string['webdav_server'] = 'Εξυπηρετητής WebDAV';
+$string['webdav_type'] = 'Τύπος WebDAV';
 $string['webdav_user'] = 'Χρήστης εξυπηρετητή WebDAV';
 $string['webdav:view'] = 'Εμφάνιση του repository WebDav';

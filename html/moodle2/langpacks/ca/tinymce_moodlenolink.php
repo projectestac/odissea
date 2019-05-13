@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlenolink:desc'] = 'Impedeix l\'enllaçat automàtic';
 $string['pluginname'] = 'Impedeix l\'enllaçat automàtic';
+$string['privacy:metadata'] = 'El connector per a Impedir els enllaços automàtics de TinyMCE no emmagatzema cap dada personal.';

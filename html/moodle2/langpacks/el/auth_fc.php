@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_fcchangepasswordurl'] = 'Password-change URL';
+$string['auth_fcchangepasswordurl'] = 'URL αλλαγής κωδικού πρόσβασης';
 $string['auth_fcconnfail'] = 'Αποτυχία σύνδεσης με Αρ. Σφάλματος: {$a}[0] και Αλφαριθμητικό Σφάλματος: {$a}[1]';
 $string['auth_fccreators'] = 'Λίστα των ομάδων των οποίων τα μέλη επιτρέπεται να δημιουργήσουν νέα μαθήματα. Διαχωρίστε πολλαπλές ομάδες με \';\'. Τα ονόματα πρέπει είναι γραμμένα όπως στο FirstClass server . Το σύστημα είναι case-sensitive.';
 $string['auth_fccreators_key'] = 'Creators';

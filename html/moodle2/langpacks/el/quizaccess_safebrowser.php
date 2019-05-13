@@ -25,7 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Κανόνας πρόσβασης σε κουίζ με \'Safe Exam Browser\'';
+$string['pluginname'] = 'Κανόνας πρόσβασης σε κουίζ με  \'Safe Exam Browser\\';
+$string['privacy:metadata'] = 'Το πρόσθετο «Υποχρεωτικός Safe Exam Browser σε κουίζ» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['requiresafeexambrowser'] = 'Απαιτείται η χρήση Safe Exam Browser (περιηγητής για ασφαλείς εξετάσεις)';
 $string['safebrowsererror'] = 'Αυτό το κουίζ έχει ρυθμιστεί έτσι ώστε να παρέχεται πρόσβαση μόνο με χρήση του Safe Exam Browser (περιηγητής για ασφαλείς εξετάσεις). Δεν είναι εφικτή η πρόσβαση από αυτόν τον περιηγητή.';
 $string['safebrowsernotice'] = 'Αυτό το κουίζ έχει διαμορφωθεί έτσι ώστε οι μαθητές να μπορούν να έχουν πρόσβαση μόνο με τη χρήση του Safe Exam Browser (περιηγητής για ασφαλείς εξετάσεις).';

@@ -33,3 +33,4 @@ $string['printchapter'] = 'Imprimir este capítulo';
 $string['printdate'] = 'Data';
 $string['printedby'] = 'Impreso por';
 $string['print:print'] = 'Imprimir libro';
+$string['privacy:metadata'] = 'O engadido de impresión de libros  non almacena ningún dato persoal.';

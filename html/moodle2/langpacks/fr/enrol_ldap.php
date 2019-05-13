@@ -118,7 +118,7 @@ $string['role_mapping_key'] = 'Faire correspondre les rôles LDAP';
 $string['roles'] = 'Correspondance des rôles';
 $string['server_settings'] = 'Réglages du serveur LDAP';
 $string['synccourserole'] = '== synchronisation du cours « {$a->idnumber} » pour le rôle « {$a->role_shortname} »';
-$string['syncenrolmentstask'] = 'Tâche de synchronisation des inscriptions';
+$string['syncenrolmentstask'] = 'Synchronisation des inscriptions';
 $string['template'] = 'Facultatif : les cours créés automatiquement peuvent copier leurs réglages sur un cours modèle.';
 $string['template_key'] = 'Modèle';
 $string['unassignrole'] = 'Retrait de l\'attribution du rôle « {$a->role_shortname} » de l\'utilisateur « {$a->user_username} » du cours « {$a->course_shortname} » (id {$a->course_id})';

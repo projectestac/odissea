@@ -133,7 +133,7 @@ $string['synchronize'] = '小テスト内の他の問題の共有データセッ
 $string['synchronizeno'] = '同期しない';
 $string['synchronizeyes'] = '同期する';
 $string['synchronizeyesdisplay'] = '小テスト名を接頭辞にした共有データセット名を同期および表示する';
-$string['tolerance'] = '許容誤差 &plusmn;';
+$string['tolerance'] = '許容誤差 ±';
 $string['tolerancetype'] = 'タイプ';
 $string['trueanswerinsidelimits'] = '正解 : {$a->correct} - 範囲内の真の値: {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">エラー 正解 : {$a->correct} - 範囲外の真の値: {$a->true}</span>';

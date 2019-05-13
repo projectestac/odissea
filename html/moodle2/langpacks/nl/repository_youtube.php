@@ -30,6 +30,8 @@ $string['apikey'] = 'API-sleutel';
 $string['configplugin'] = 'Configuratie YouTube opslagruimte';
 $string['information'] = 'Haal een  <a href="https://developers.google.com/youtube/v3/getting-started">Google API Key</a> voor jouw Moodle site.';
 $string['pluginname'] = 'YouTube video\'s';
+$string['privacy:metadata:repository_youtube'] = 'De Youtube video opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'De YouTube video\'s opslagruimte zoektekst van de gebruiker';
 $string['search'] = 'Zoek video\'s';
 $string['sortby'] = 'Sorteer op';
 $string['sortpublished'] = 'publicatiedatum';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'shit,fucked,fucker,fuck,dickhead,dick,cockhead,cock,cunt,asshole,arsehole,prick,bitch,jism,whore,slut,wanker,wank,bastard,dildo,masturbate,orgasm,penis,nigger,pussy,vagina,porn,xxx';
 $string['filtername'] = 'Wortzensur';
-$string['privacy:metadata'] = 'Der Zensurfilter speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Zensurfilter speichert keine personenbezogenen Daten.';

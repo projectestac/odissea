@@ -48,6 +48,7 @@ $string['history:view'] = 'Bekijk cijfergeschiedenis';
 $string['loadmoreusers'] = 'Laad meer gebruikers...';
 $string['pluginname'] = 'Cijfergeschiedenis';
 $string['preferences'] = 'Voorkeuren cijfergeschiedenis';
+$string['privacy:metadata'] = 'Het rapport cijfer geschiedenis toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['revisedonly'] = 'Enkel aangepaste cijfers';
 $string['revisedonly_help'] = 'Toon enkel cijfers die aangepast zijn. Enkel het uiteindelijke resultaat wordt getoond.';
 $string['selectedusers'] = 'Geselecteerde gebruikers';

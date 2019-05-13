@@ -116,6 +116,7 @@ $string['pluginnameediting'] = 'Modifica domanda calcolata';
 $string['pluginname_help'] = 'Le domande \'calcolate\' offrono un modo per creare singole domande numeriche tramite l\'uso di caratteri jolly che vengono sostituiti da valori reali durante la somministrazione del quiz. Ad esempio, la domanda "Quale è l\'area di un rettangolo di lunghezza {l} e larghezza {w}?" avrà come risposta corretta la formula  "{l}*{w}" (dove * è il segno di moltiplicazione).';
 $string['pluginnamesummary'] = 'Le domande Calcolate sono simili alla domande Numeriche dove però i numeri utilizzati sono scelti a caso durante lo svolgimento del quiz.';
 $string['possiblehdr'] = 'Possibili caratteri jolly solo nel testo della domanda';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Calcolata\' non memorizza dati personali.';
 $string['questiondatasets'] = 'Dataset domanda';
 $string['questiondatasets_help'] = 'Dataset di domanda di caratteri jolly che saranno utilizzati in ogni domanda individuale';
 $string['questionstoredname'] = 'Nome memorizzato della domanda';

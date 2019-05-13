@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['coursesummary'] = 'Resumo do curso';
 $string['course_summary:addinstance'] = 'Engadir un novo bloque de resumo do curso/sitio';
 $string['pluginname'] = 'Descrición do curso/sitio';
+$string['privacy:metadata'] = 'O bloque de resumo curso/sitio só amosa información sobre cursos e non almacena datos en si.';

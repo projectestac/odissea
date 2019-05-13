@@ -45,5 +45,7 @@ $string['mnet_wronghost'] = 'A máquina remota non coincide co rexistro de trans
 $string['pf_description'] = 'Permitirlle aos usuarios remitir (push) contido de Moodle cara esta máquina<br />Subscríbase a <b>e</b> publique este servizo para permitir que os usuarios autenticados no seu sitio poidan remitir contido a {$a}<br /><ul><li><em>Dependencia</em>: Tamén ten que <strong>publicar</strong> o servizo do SSO (Provedor de identificación) en {$a}.</li><li><em>Dependencia</em>: Tamén ten que <strong>subscribirse </strong> ao servizo SSO (Provedor de servicio) en {$a}</li><li><em>Dependencia</em>: Así mesmo ten que activar o engadido de autenticación MNet.</li></ul><br />';
 $string['pf_name'] = 'Servicios de portafolios';
 $string['pluginname'] = 'ePortafolios Mahara';
+$string['privacy:metadata'] = 'Este engadido envía datos externamente a unha conta de Mahara ligada. Non almacena datos localmente.';
+$string['privacy:metadata:data'] = 'Datos persoais pasados a mediante o subsistema portafolios.';
 $string['senddisallowed'] = 'Polo momento non pode transferir ficheiros a Mahara';
 $string['url'] = 'URL';

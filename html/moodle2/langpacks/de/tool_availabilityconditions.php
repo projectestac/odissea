@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Voraussetzungen';
 $string['pluginname'] = 'Voraussetzungen verwalten';
-$string['privacy:metadata'] = 'Das Plugin zur Verwaltung der Voraussetzungen speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Plugin zur Verwaltung der Voraussetzungen speichert keine personenbezogenen Daten.';

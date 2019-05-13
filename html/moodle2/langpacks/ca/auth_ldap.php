@@ -44,7 +44,7 @@ $string['auth_ldap_creators'] = 'Llista de grups als membres dels quals els és 
 $string['auth_ldap_creators_key'] = 'Creadors';
 $string['auth_ldapdescription'] = 'Aquest mètode proporciona autenticació contra un servidor LDAP extern.
 
-Si un nom d\'usuari i una contrasenya són vàlids, Moodle crea una entrada per a un usuari nou a la seva base de dades. Aquest mòdul pot llegir atributs de l\'usuari del LDAP i omplir els camps corresponents de Moodle. En els successius inicis de sessió només es comproven el nom d\'usuari i la contrasenya.';
+Si un nom d\'usuari i una contrasenya són vàlids, Moodle crea una entrada per a un usuari nou a la seva base de dades. Aquest mòdul pot llegir atributs de l\'usuari del LDAP i omplir els camps corresponents de Moodle. En els inicis de sessió successius només es comproven el nom d\'usuari i la contrasenya.';
 $string['auth_ldap_expiration_desc'] = 'Seleccioneu «No» per inhabilitar la comprovació de contrasenyes vençudes o «LDAP» per consultar la data de venciment de la contrasenya directament a l\'LDAP.';
 $string['auth_ldap_expiration_key'] = 'Venciment';
 $string['auth_ldap_expiration_warning_desc'] = 'Nombre de dies abans que surti l\'avís de venciment de la contrasenya.';
@@ -69,12 +69,12 @@ $string['auth_ldap_memberattribute_isdn_key'] = 'L\'atribut de membre utilitza d
 $string['auth_ldap_memberattribute_key'] = 'Atribut de membre';
 $string['auth_ldap_noconnect'] = 'El mòdul LDAP no s\'ha pogut connectar al servidor: {$a}';
 $string['auth_ldap_noconnect_all'] = 'El mòdul LDAP no s\'ha pogut connectar a cap servidor: {$a}';
-$string['auth_ldap_noextension'] = '<em>El mòdul PHP LDAP no sembla que sigui present. Si us plau assegureu-vos que està instal·lat i habilitat si voleu utilitzar aquest connector d\'autenticació. </em>';
+$string['auth_ldap_noextension'] = '<em>El mòdul PHP LDAP no sembla que estigui present. Assegureu-vos que està instal·lat i habilitat, si voleu utilitzar aquest connector d\'autenticació. </em>';
 $string['auth_ldap_no_mbstring'] = 'Per a crear usuaris en el Directori Actiu necessiteu l\'extensió mbstring.';
 $string['auth_ldapnotinstalled'] = 'No es pot utilitzar l\'autenticació LDAP. El mòdul PHP LDAP no està instal·lat.';
 $string['auth_ldap_objectclass'] = 'Opcional: Sobreescriu l\'objectClass usada per anomenar/cercar usuaris en ldap_user_type. Normalment no us caldrà canviar-ho.';
 $string['auth_ldap_objectclass_key'] = 'Classe objecte';
-$string['auth_ldap_opt_deref'] = 'Determina com es manegen els àlies en les cerques. Seleccioneu un dels valors següents: "No" (LDAP_DEREF_NEVER) o "Sí" (LDAP_DEREF_ALWAYS)';
+$string['auth_ldap_opt_deref'] = 'Determina com es manegen els àlies en les cerques. Seleccioneu un dels valors següents: «No» (LDAP_DEREF_NEVER) o «Sí» (LDAP_DEREF_ALWAYS)';
 $string['auth_ldap_opt_deref_key'] = 'Desreferencia àlies';
 $string['auth_ldap_passtype'] = 'Especifiqueu el format per a les contrasenyes noves, o modificades, en el servidor LDAP.';
 $string['auth_ldap_passtype_key'] = 'Format de contrasenyes';
@@ -99,7 +99,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type no està definit, o 
 $string['auth_ldap_version'] = 'La versió del protocol LDAP que està utilitzant el servidor.';
 $string['auth_ldap_version_key'] = 'Versió';
 $string['auth_ntlmsso'] = 'Autenticació única per NTLM';
-$string['auth_ntlmsso_enabled'] = 'Si l\'habiliteu s\'intentarà l\'autenticació única dins del domini NTLM. <strong>Nota:</strong> per a funcionar requereix configuració addicional del servidor web. Vg. <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
+$string['auth_ntlmsso_enabled'] = 'Si l\'habiliteu, s\'intentarà l\'autenticació única dins el domini NTLM. <strong>Nota:</strong> per funcionar, requereix una  configuració addicional del servidor web. Veg. <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Habilita';
 $string['auth_ntlmsso_ie_fastpath'] = 'Habiliteu aquesta opció per activar el camí ràpid NTLM SSO ( obviareu certs passos i sols treballarà si el client és MS Internet Explorer).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Proveu NTLM amb tots els navegadors.';
@@ -135,7 +135,7 @@ $string['ntlmsso_attempting'] = 'S\'està intentant l\'autenticació única a tr
 $string['ntlmsso_failed'] = 'L\'inici de sessió automàtic ha fallat. Proveu d\'iniciar la sessió per la pàgina normal...';
 $string['ntlmsso_isdisabled'] = 'L\'autenticació única per NTLM està inhabilitada';
 $string['ntlmsso_unknowntype'] = 'Tipus ntlmsso desconegut!';
-$string['pagedresultsnotsupp'] = 'La paginació de resultats de LDAP no funciona (la versió de PHP no ho permet o no teniu Moodle configurat per utilitzar la versió 2 del protocol LDAP)';
+$string['pagedresultsnotsupp'] = 'La paginació de resultats de LDAP no funciona (la versió de PHP no ho admet, o heu configurat Moodle per utilitzar la versió 2 del protocol LDAP, o Moodle no pot posar-se en contacte amb el vostre servidor LDAP per veure si el suport de la paginació està disponible.)';
 $string['pagesize'] = 'Assegureu-vos que aquest valor és menor que el límit de mida de conjunt de resultats del servidor LDAP (el nombre màxim d\'entrades que poden ser retornades en una consulta)';
 $string['pagesize_key'] = 'Mida de la pàgina';
 $string['pluginname'] = 'Servidor LDAP';

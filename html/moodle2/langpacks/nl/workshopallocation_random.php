@@ -43,6 +43,7 @@ $string['numofselfallocatedsubmissions'] = 'Zelf-toewijzing van {$a} inzending(e
 $string['numperauthor'] = 'per inzending';
 $string['numperreviewer'] = 'per beoordeler';
 $string['pluginname'] = 'Willekeurige toewijzing';
+$string['privacy:metadata'] = 'De willekeurig toewijzen-plugin bewaart geen persoonlijke gegevens. De persoonlijke gegevens van wie wat gaat beoordelen wordt bewaard door de Workshop-module zelf en dat vormt de basis voor het exporteren van beoordelingsdetails.';
 $string['randomallocationdone'] = 'Willekeurige toewijzing klaar';
 $string['removecurrentallocations'] = 'Verwijder huidige toewijzingen';
 $string['resultnomorepeers'] = 'Geen klasgenoten meer beschikbaar';

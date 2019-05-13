@@ -26,7 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Κλειδί Dropbox API';
-$string['configplugin'] = 'Ρύθμιση Dropbox';
+$string['cachelimit'] = 'Όριο προσωρινής μνήμης';
+$string['cachelimit_info'] = 'Δώστε το μέγιστο μέγεθος αρχείων (σε bytes) που θα αποθηκευτούν στον εξυπηρετητή για ψευδώνυμα/συντομεύσεις Dropbox. Τα αρχεία της κρυφής μνήμης θα χρησιμοποιούνται όταν η πηγή δεν είναι πλέον διαθέσιμη. Κενή τιμή ή μηδενική σημαίνει προσωρινή αποθήκευση όλων των αρχείων ανεξάρτητα από το μέγεθος.';
+$string['configplugin'] = 'Ρυθμίσεις Dropbox';
+$string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Εμφάνιση ενός φακέλου Dropbox';
 $string['instruction'] = 'Μπορείτε να πάρετε κ λειδί API και μυστικό κωδικό από τους <a href="http://www.dropbox.com/developers/apps">κατασκευαστές του Dropbox</a>';
+$string['logoutdesc'] = '(Αποσύνδεση όταν ολοκληρωθεί η χρήση του Dropbox)';
+$string['notitle'] = 'χωρίς τίτλο';
+$string['oauth2redirecturi'] = 'URI ανακατεύθυνσης OAuth 2';
+$string['pluginname'] = 'Διαδικτυακή αποθήκευση Dropbox';
+$string['privacy:metadata:repository_dropbox'] = 'Το πρόσθετο «Αποθετήριο Dropbox» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
+$string['privacy:metadata:repository_dropbox:query'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Dropbox.';
+$string['remember'] = 'Θυμήσου με';
 $string['secret'] = 'Μυστικός κωδικός Dropbox';

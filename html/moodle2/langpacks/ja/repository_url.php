@@ -33,4 +33,4 @@ $string['rename'] = '名称';
 $string['url'] = 'URL';
 $string['url:view'] = 'ファイルピッカ内のURLダウンローダを使用する';
 $string['validfiletype'] = 'あなたはイメージファイルまたはイメージを含むページのURLを提供する必要があります。';
-$string['validname'] = '有効なファイル名を入力してください。';
+$string['validname'] = 'あなたは有効なファイル名を提供する必要があります。';

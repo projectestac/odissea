@@ -31,5 +31,6 @@ $string['configplugin'] = 'Configureer Microsoft OneDrive (verouderd)';
 $string['deprecatedwarning'] = 'Waarschuwing: de API die gebruikt wordt door deze plugin wordt niet meer ondersteund door Microsoft en zal uiteindelijk niet meer werken. Migreer naar de nieuwere "Microsoft SkyDrive" opslagruimte.';
 $string['oauthinfo'] = '<p>Om deze plugin te kunnen gebruiken, moet je je site registreren <a href="https://account.live.com/developers/applications">bij Microsoft</a>.<p>Als deel van het registratieproces zul je volgende URL als  \'Redirect domain\' moeten ingeven:</p><p>{$a->callbackurl}</p>Als je geregistreerd bent, zul e een client ID krijgen en een geheim dat je hier kan ingeven.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (verouderd)';
+$string['privacy:metadata'] = 'De Microsoft OneDrive (verouderde) opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
 $string['secret'] = 'Geheim';
 $string['skydrive:view'] = 'Bekijk OneDrive (verouderd)';

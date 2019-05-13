@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['healthnoproblemsfound'] = '健康問題は見つかりませんでした!';
-$string['healthproblemsdetected'] = '健康問題が発見されました!';
+$string['healthproblemsdetected'] = '健康問題が検出されました!';
 $string['healthproblemsolution'] = '健康問題の解決方法';
 $string['healthreturntomain'] = '続ける';
 $string['healthsolution'] = '解決方法';

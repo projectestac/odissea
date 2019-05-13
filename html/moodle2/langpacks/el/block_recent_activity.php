@@ -26,4 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Πρόσφατη δραστηριότητα';
+$string['privacy:metadata'] = 'Το μπλοκ Τελευταία δραστηριότητα περιέχει μια κρυφή μνήμη δεδομένων που αποθηκεύονται σε άλλο σημείο του Moodle.';
+$string['privacy:metadata:block_recent_activity'] = 'Προσωρινές καταγραφές της πρόσφατης δραστηριότητας εκπαιδευτικών. Αφαιρέθηκαν μετά από δύο ημέρες';
+$string['privacy:metadata:block_recent_activity:action'] = 'Ενέργεια: δημιουργήθηκε, ενημερώθηκε ή διαγράφηκε';
+$string['privacy:metadata:block_recent_activity:cmid'] = 'Αναγνωριστικό αρθρώματος μαθήματος';
+$string['privacy:metadata:block_recent_activity:courseid'] = 'Αναγνωριστικό μαθήματος';
+$string['privacy:metadata:block_recent_activity:modname'] = 'Όνομα τύπου αρθρώματος (για ενέργεια διαγραφής)';
+$string['privacy:metadata:block_recent_activity:timecreated'] = 'Ώρα όταν η ενέργεια εκτελέστηκε.';
+$string['privacy:metadata:block_recent_activity:userid'] = 'Χρήστης που εκέλεσε την ενέργεια';
 $string['recent_activity:addinstance'] = 'Προσθήκη νέου μπλοκ πρόσφατη δραστηριότητα';
+$string['recent_activity:viewaddupdatemodule'] = 'Εμφάνιση των αρθρωμάτων που προστέθηκαν και/ή ενημερώθηκαν στο μπλοκ πρόσφατη δραστηριότητα';
+$string['recent_activity:viewdeletemodule'] = 'Εμφάνιση των αρθρωμάτων που διαγράφηκαν στο μπλοκ πρόσφατη δραστηριότητα';

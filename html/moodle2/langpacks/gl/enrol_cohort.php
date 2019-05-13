@@ -34,4 +34,5 @@ $string['defaultgroupnametext'] = '{$a->name} círculo {$a->increment}';
 $string['instanceexists'] = 'O círculo xa está sincronizado co rol seleccionado';
 $string['pluginname'] = 'Sincronizar círculo';
 $string['pluginname_desc'] = 'O engadido de matrícula círculo sincroniza os membros do círculo cos participantes no curso.';
+$string['privacy:metadata:core_group'] = 'O engadido de matriculación de círculo pode crear un novo grupo ou usar un grupo existente para engadir todos os membros do círculo.';
 $string['status'] = 'Activo';

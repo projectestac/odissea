@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advanced'] = 'Avançado';
-$string['alterstatus'] = 'Alterar estado';
+$string['alterstatus'] = 'Alterar estado da inscrição';
 $string['altertimeend'] = 'Alterar data de fim';
-$string['altertimestart'] = 'Alterar data de inicio';
+$string['altertimestart'] = 'Alterar data de início';
 $string['assignrole'] = 'Atribuir papel';
 $string['assignroles'] = 'Atribuir papeis';
 $string['browsecohorts'] = 'Ver a lista de Grupos globais';
@@ -38,8 +38,8 @@ $string['defaultperiod'] = 'Duração predefinida da inscrição';
 $string['defaultperiod_desc'] = 'Duração predefinida da inscrição.  Se for definida para zero, a validade da inscrição será ilimitada por predefinição.';
 $string['defaultperiod_help'] = 'Tempo predefinido durante o qual as inscrições são válidas a partir do momento em que o aluno é inscrito.';
 $string['defaultstart'] = 'Início das inscrições predefinido';
-$string['deleteselectedusers'] = 'Apagar inscrições selecionadas';
-$string['editselectedusers'] = 'Editar papéis dos utilizadores selecionados';
+$string['deleteselectedusers'] = 'Apagar inscrição dos utilizadores selecionados';
+$string['editselectedusers'] = 'Editar inscrição dos utilizadores selecionados';
 $string['enrolledincourserole'] = 'Inscrito na disciplina "{$a->course}" como "{$a->role}"';
 $string['enrolusers'] = 'Inscrever utilizadores';
 $string['enroluserscohorts'] = 'Inscrever utilizadores e grupos globais selecionados';
@@ -49,7 +49,7 @@ $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
 
 Esta é uma notificação de que a sua inscrição na disciplina \'{$a->course}\' expira em {$a->timeend}.
 
-Se precisar de ajuda, por favor contacte {$a->enroller}.';
+Se precisar de ajuda, por favor, contacte {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificação de expiração da inscrição';
 $string['expirymessageenrollerbody'] = 'A inscrição na disciplina \'{$a->course}\' irá expirar nos próximos {$a->threshold} para os seguintes utilizadores:
 
@@ -79,7 +79,7 @@ $string['status_help'] = 'Este parâmetro define se os utilizadores podem ser in
 $string['unenrol'] = 'Cancelar inscrição do utilizador';
 $string['unenrolselectedusers'] = 'Cancelar inscrição dos utilizadores selecionados';
 $string['unenrolselfconfirm'] = 'Tem a certeza de que pretende remover a sua inscrição da disciplina "{$a}"?';
-$string['unenroluser'] = 'Tem a certeza que pretende remover a inscrição de "{$a->user}" da disciplina "{$a->course}"?';
+$string['unenroluser'] = 'Tem a certeza de que pretende remover a inscrição de "{$a->user}" da disciplina "{$a->course}"?';
 $string['unenrolusers'] = 'Cancelar inscrição dos utilizadores';
 $string['wscannotenrol'] = 'O módulo não permite inscrever manualmente um utilizador na disciplina id = {$a->courseid}';
 $string['wsnoinstance'] = 'O módulo de inscrição manual não existe ou está desativado para a disciplina (id = {$a->courseid})';

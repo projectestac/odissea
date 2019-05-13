@@ -25,13 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['all_grades'] = '全部成绩';
 $string['assessmentname'] = '成绩项';
+$string['blanks'] = '空白成绩';
+$string['bulkinsertvalue'] = '插入值';
+$string['bulkperform'] = '执行大容量插入';
 $string['entrypage'] = '逐人评分或逐项评分';
 $string['eventgradereportviewed'] = '简略视图报告已检查分数';
+$string['exclude'] = '排除';
+$string['excludeall'] = '排除所有成绩';
+$string['excludenone'] = '不排除任何成绩';
 $string['gradeitem'] = '成绩项: {$a}';
+$string['itemsperpage'] = '每页显示项';
 $string['noscreens'] = '无法找到一个合适的简略视图屏幕';
 $string['notvalid'] = '不是一个有效的简略视图屏幕: {$a}';
 $string['override'] = '覆盖';
+$string['overrideall'] = '覆盖所有成绩';
 $string['pluginname'] = '简略视图';
 $string['save'] = '保存';
 $string['selectgrade'] = '选择成绩项...';

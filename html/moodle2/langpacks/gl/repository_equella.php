@@ -34,6 +34,7 @@ $string['equella:view'] = 'Ver o repositorio de EQUELLA';
 $string['group'] = '{$a} configuración de roles';
 $string['groupdefault'] = 'Predeterminado';
 $string['pluginname'] = 'Repositorio de EQUELLA';
+$string['privacy:metadata'] = 'O engadido de repositorio de EQUELLA almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
 $string['restrictionattachmentsonly'] = 'Só recursos anexados';
 $string['restrictionitemsonly'] = 'Só elementos de resumo';
 $string['restrictionnone'] = 'Sen restrición';

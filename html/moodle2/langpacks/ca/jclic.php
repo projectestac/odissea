@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'jclic', language 'ca', branch 'MOODLE_34_STABLE'
  *
  * @package   jclic
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -48,18 +48,11 @@ Per tal que aquesta redirecció funcioni cal que, a la pestanya seqüències, la
 $string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible';
 $string['filetype'] = 'Tipus';
 $string['filetypeexternal'] = 'URL extern';
-$string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Hi ha 2 opcions:
-
-* Fitxer JClic pujat. Permet escollir un fitxer JClic vàlid mitjançant el selector d\'arxius.
-* URL extern. Permet especificar l\'URL d\'un paquet JClic. Nota: L\'URL ha de començar amb http(s) o www i ha de contenir un fitxer JClic vàlid.';
 $string['filetypelocal'] = 'Fitxer JClic pujat';
 $string['height'] = 'Alçada';
-$string['invalidjclicfile'] = 'S\'ha especificat un fitxer JClic no vàlid. El fitxer ha de tenir l\'extensió «.jclic».';
-$string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer «.jclic» vàlid.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Afegeix una activitat JClic';
 $string['jclicfile'] = 'Fitxer JClic';
-$string['jclicfile_help'] = 'El fitxer «.jclic» que conté el paquet JClic.';
 $string['jclic:grade'] = 'Avalua JClic';
 $string['jclicjarbase'] = 'URL base dels fitxers JAR';
 $string['jclicjarbase_help'] = 'Adreça web on localitzar tots els fitxers jar de JClic.';
@@ -76,9 +69,6 @@ $string['lastaccess'] = 'Últim accés';
 $string['maxattempts'] = 'Nombre màxim d\'intents';
 $string['maxgrade'] = 'Puntuació/activitats que cal assolir';
 $string['modulename'] = 'JClic';
-$string['modulename_help'] = 'El <a href="http://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya que està format per un conjunt d\'aplicacions de programari lliure que permeten crear diversos tipus d\'activitats educatives multimèdia: puzles, associacions, exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> disposa d\'una biblioteca d\'activitats que compta amb uns mil projectes que han creat professors i persones d\'altres col·lectius que han volgut compartir solidàriament el seu treball.
-
-Aquest mòdul permet al professorat afegir a un curs qualsevol activitat de tipus JClic i recopilar els resultats obtinguts (temps utilitzat a cada activitat, intents, encerts...) per cada alumne/a.';
 $string['modulenameplural'] = 'JClic';
 $string['msg_noattempts'] = 'Ja has fet aquesta activitat el nombre màxim de vegades permès';
 $string['msg_nosessions'] = 'Aquesta activitat JClic encara no té cap sessió';

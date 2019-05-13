@@ -249,7 +249,7 @@ $string['newglossarycreated'] = 'Nouveau glossaire créé.';
 $string['newglossaryentries'] = 'Nouveaux articles du glossaire :';
 $string['nocomment'] = 'Aucun commentaire trouvé';
 $string['nocomments'] = '(Aucun commentaire trouvé sur cet article)';
-$string['noconceptfound'] = 'Aucun concept, ni définition trouvés.';
+$string['noconceptfound'] = 'Aucun concept, ni définition trouvé.';
 $string['noentries'] = 'Aucun article trouvé dans cette section';
 $string['noentry'] = 'Aucune article trouvé.';
 $string['nopermissiontodelcomment'] = 'Vous ne pouvez pas supprimer les commentaires d\'autres participants';
@@ -277,7 +277,7 @@ $string['privacy:metadata:glossary_entries'] = 'Informations sur les articles de
 $string['privacy:metadata:glossary_entries:attachment'] = 'L\'annexe à un article ajoutée par l\'utilisateur';
 $string['privacy:metadata:glossary_entries:concept'] = 'Le concept de l\'article ajouté par l\'utilisateur';
 $string['privacy:metadata:glossary_entries:definition'] = 'La définition de l\'article ajoutée par l\'utilisateur';
-$string['privacy:metadata:glossary_entries:glossaryid'] = 'L\'identifiant de l\'activité glossaire dans laquelle l\'utilisateur a ajouté un article';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'L\'identifiant de l\'activité glossaire';
 $string['privacy:metadata:glossary_entries:timemodified'] = 'L\'horodatage de la modification de l\'article de glossaire par l\'utilisateur';
 $string['privacy:metadata:glossary_entries:userid'] = 'L\'identifiant de l\'utilisateur qui a ajouté cet article de glossaire';
 $string['question'] = 'Question';
@@ -290,7 +290,7 @@ $string['rssarticles'] = 'Nombres d\'articles RSS récents';
 $string['rssarticles_help'] = '<p>Cette option vous permet de fixer le nombre d\'articles récents à inclure dans le flux RSS.</p>
 
 <p>Un nombre entre 5 et 20 est adéquat pour la plupart des glossaires. Si le glossaire est très actif, il est souhaitable d\'augmenter ce nombre.</p>';
-$string['rsssubscriberss'] = 'Affichage du flux RSS des concepts du glossaire « {$a} »';
+$string['rsssubscriberss'] = 'Affichage du flux RSS des articles du glossaire « {$a} »';
 $string['rsstype'] = 'Flux RSS de cette activité';
 $string['rsstype_help'] = '<p>Cette option vous permet d\'activer le flux RSS de ce glossaire.</p>
 

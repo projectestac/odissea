@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['enabledock'] = 'Blockverschieben ins Dock erlauben';
 $string['pluginname'] = 'Einstellungen';
 $string['privacy:metadata'] = 'Der Block Administration zeigt nur Daten an, die an anderen Orten gespeichert sind.';
-$string['settings:addinstance'] = 'Block \'Einstellungen\' hinzufügen';
-$string['settings:myaddinstance'] = 'Block \'Einstellungen\' zum Dashboard hinzufügen';
+$string['settings:addinstance'] = 'Neuen Block \'Einstellungen\' hinzufügen';
+$string['settings:myaddinstance'] = 'Neuen Block \'Einstellungen\' zum Dashboard hinzufügen';

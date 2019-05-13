@@ -157,6 +157,7 @@ $string['updatepasserrorexpire'] = 'Fout in user_update_password() bij het lezen
 $string['updatepasserrorexpiregrace'] = 'Fout in user_update_password() bij het wijzigen van de verlooptijd en/of gracelogins.  Foutcode: {$a->errno}; Foutstring: {$a->errstring}';
 $string['updateremfail'] = 'Fout updaten LDAP-record  Foutcode: {$a->errno}; Foutstring: {$a->errstring}<br />Sleutel ({$a->key}) - oude moodle-waarde: \'{$a->ouvalue}\' nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'LDAP updaten met abigu veld {$a->key} mislukt; oude Moodle waarde: \'{$a->ouvalue}\', nieuwe waarde: \'{$a->nuvalue}\'';
+$string['updateremfailfield'] = 'Het updaten van  LDAP met onbestaand veld (\'{$a->ldapkey}\') is mislukt. Sleutel ({$a->key}) - oude moodle-waarde: \'{$a->ouvalue}\' nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Kon gebruiker niet vinden tijdens extern updaten. Details volgen: zoek base: \'{$a->userdn}\'; zoek filter: \'(objectClass=*)\'; zoek attributen: {$a->attribs}';
 $string['useracctctrlerror'] = 'Fout bij het verkrijgen van userAccountControl voor {$a}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() ondersteunt het gekozen gebruikerstype niet: {$a}';

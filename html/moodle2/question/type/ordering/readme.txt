@@ -1,5 +1,5 @@
 ============================================
-The Ordering question type for Moodle >= 2.1
+The Ordering question type for Moodle >= 2.9
 ============================================
 
 The ordering question type displays several items in a random order
@@ -28,7 +28,7 @@ To INSTALL or UPDATE this plugin
 
        If you are installing from a zip file, unzip the zip file, to create a folder
        called "ordering" and upload or move this folder into the "question/type" folder
-       on your Moodle >= 2.1 site, to create a new folder at "question/type/ordering".
+       on your Moodle >= 2.9 site, to create a new folder at "question/type/ordering".
 
     2. log in to Moodle as administrator to initiate install/upgrade
 
@@ -43,9 +43,6 @@ Further information
     For more information, tutorials and online discussion forums, please visit:
     http://moodlereader.org/
 
-    This plugin uses JQuery framework and plugins:
-    http://jqueryui.com/sortable/
-    http://touchpunch.furf.com/
 
 ============================================
 Development history and credits
@@ -62,5 +59,13 @@ were undertaken by Vadim Dvorovenko (Kemerovo State University of Culture and Ar
 
 Development of "relative to correct" grading method commissioned by Anatoliy Markiv and
 sponsored by Kings College London, UK.
+
+Code for privacy, automatic testing, keyboard interaction (for accessibility) and 
+standardization of Javascript to extend standard Moodle's Drag-and_Drop was added 
+by Tim Hunt and Mahmoud Kassaei of Open University, UK.
+
+Thanks also to Dominique Bauer (ETS, University of Quebec, Canada) for his help and ideas
+in testing the "Item selection type" and "Grading type", particularly the "Longest
+ordered/contiguous subset" grading type.
 
 many thanks to all concerned!

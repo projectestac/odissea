@@ -45,6 +45,7 @@ $string['pluginnameadding'] = 'Creazione domanda a Risposte inglobate (Cloze)';
 $string['pluginnameediting'] = 'Modifica domanda a Risposte inglobate (Cloze)';
 $string['pluginname_help'] = 'Le domande inglobate (Cloze) consistono in un passaggio di testo con uno o più box contenenti domande di tipo a risposta multipla, a risposta breve o altro.';
 $string['pluginnamesummary'] = 'Le domande di questo tipo sono molto flessibili ma possono essere create solamente inserendo testo con caratteri di controllo speciali per usare domande inglobate di tipo risposta multipla, risposta breve e numerica.';
+$string['privacy:metadata'] = 'Il plugin Tipi di domande \'Risposte inglobate (Cloze)\' non memorizza dati personali.';
 $string['qtypenotrecognized'] = 'Il tipo di domanda {$a} non è stato riconosciuto';
 $string['questiondefinition'] = 'Definizione della domanda';
 $string['questiondeleted'] = 'Domanda eliminata';

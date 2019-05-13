@@ -39,6 +39,7 @@ $string['jabberusername'] = 'Jabber gebruikersnaam';
 $string['notconfigured'] = 'De Jabber server is niet geconfigureerd. Jabberberichten kunnen niet verstuurd worden.';
 $string['pluginname'] = 'Jabber';
 $string['privacy:metadata:contexturl'] = 'De URL om de gebeurtenis te zien.';
+$string['privacy:metadata:externalpurpose'] = 'Deze informatie is naar een externe jabber-server gestuurd om uiteindelijk als een meldingsbericht bij de ontvanger terecht te komen.';
 $string['privacy:metadata:smallmessage'] = 'Een deel van het bericht.';
 $string['privacy:metadata:userfrom'] = 'De gebruiker die de melding verstuurt.';
 $string['privacy:metadata:userto'] = 'De ontvanger van de melding.';

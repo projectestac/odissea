@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = '新增一个最近新闻版块';
 $string['news_items:myaddinstance'] = '在个人主页新增一个最近新闻版块';
-$string['pluginname'] = '最近新闻';
+$string['pluginname'] = '最新通告';
+$string['privacy:metadata'] = '最新通告板块仅显示存储在论坛中的数据，并且不存储数据。';

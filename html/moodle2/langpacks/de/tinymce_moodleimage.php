@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'Bild wählen';
 $string['pluginname'] = 'Bild einfügen';
-$string['privacy:metadata'] = 'Das Moodle Bild TinyMCE-Plugin speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Moodle Bild TinyMCE-Plugin speichert keine personenbezogenen Daten';

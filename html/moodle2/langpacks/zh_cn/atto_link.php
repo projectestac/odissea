@@ -30,4 +30,5 @@ $string['createlink'] = '创建链接';
 $string['enterurl'] = '输入网址';
 $string['openinnewwindow'] = '在新窗口打开';
 $string['pluginname'] = '链接';
+$string['privacy:metadata'] = 'atto_link 插件不储存任何私人数据。';
 $string['unlink'] = '取消链接';

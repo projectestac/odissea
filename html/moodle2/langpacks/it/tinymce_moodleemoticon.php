@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'Inserimento emoticon';
 $string['pluginname'] = 'Inserimento emoticon';
-$string['privacy:metadata'] = 'Il plugin TinyMCE "Faccine" non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin TinyMCE \'Inserimento emoticon\' non memorizza dati personali.';
 $string['requireemoticon'] = 'Richiedi filtro emoticon';
 $string['requireemoticon_desc'] = 'Il pulsante emoticon sarà visibile solo se il filtro emoticon è abilitato nel contesto dell\'editor.';

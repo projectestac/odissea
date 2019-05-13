@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Очистить форматирование';
+$string['privacy:metadata'] = 'Плагин atto_clear не хранит никаких персональных данных.';

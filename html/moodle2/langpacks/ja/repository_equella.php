@@ -45,7 +45,6 @@ $string['sharedid'] = '共有秘密鍵ID';
 $string['sharedidtitle'] = '共有秘密鍵ID';
 $string['sharedsecrets'] = '共有秘密鍵';
 $string['sharedsecretsheading'] = '共有秘密鍵設定';
-$string['sharedsecretshelp'] = '<p>下記において、あなたはユーザのシングルサインオンのためのデフォルトEQUELLA共有秘密鍵を設定することができます。あなたのMoodleサイト内での一般的な利用 (閲覧) およびそれぞれの「書き込み」に関する特別ロールのために異なる共有秘密鍵を設定することができます。ロールに共有秘密鍵IDが設定されていない場合、デフォルト共有秘密鍵IDおよび共有秘密鍵が使用されます。</p>
-
+$string['sharedsecretshelp'] = '<p>あなたはユーザのシングルサインオンのためのデフォルトEQUELLA共有秘密鍵を以下で設定することができます。あなたのMoodleサイト内での一般的な利用 (閲覧) およびそれぞれの「書き込み」に関する特別ロールのため異なる共有秘密鍵を設定することができます。ロールに共有秘密鍵IDが設定されていない場合、デフォルト共有秘密鍵IDおよび共有秘密鍵が使用されます。</p>
 <p>すべての共有秘密鍵IDおよび共有秘密鍵はEQUELLAで設定される必要があります。同時に共有秘密鍵モジュールを有効にする必要があります。この設定はEQUELLA 管理画面の「User Management > Shared Secrets」にあります。</p>';
 $string['sharedsecrettitle'] = '共有秘密鍵';

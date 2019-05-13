@@ -25,4 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['completionprogressdetails'] = 'Λεπτομέρειες προόδου ολοκλήρωσης';
+$string['completionstatus:addinstance'] = 'Προσθήκη ενός νέου μπλοκ κατάστασης ολοκλήρωσης μαθήματος';
+$string['criteriagroup'] = 'Ομάδα κριτηρίων';
+$string['firstofsecond'] = '{$a->first} από {$a->second}';
 $string['pluginname'] = 'Κατάσταση ολοκλήρωσης μαθήματος';
+$string['privacy:metadata'] = 'Το μπλοκ «Κατάσταση ολοκλήρωσης μαθήματος» εμφανίζει μόνο πληροφορίες σχετικά με την ολοκλήρωση του μαθήματος και δεν αποθηκεύει κανένα δικό του δεδομένο.';
+$string['requirement'] = 'Απαίτηση';
+$string['returntocourse'] = 'Επιστροφή στο μάθημα';

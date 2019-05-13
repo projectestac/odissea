@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['check_backup'] = 'Còpia de seguretat automàtica';
 $string['check_backup_comment_disable'] = 'El rendiment es pot veure afectat durant el procés de còpia de seguretat. Si s\'activa, les còpies de seguretat s\'han de programar en períodes de poca activitat.';
 $string['check_backup_comment_enable'] = 'El rendiment es pot veure afectat durant el procés de còpia de seguretat. Les còpies de seguretat s\'haurien de programar en períodes de poca activitat.';
-$string['check_backup_details'] = 'Si habiliteu còpies de seguretat automàtiques es crearan automàticament copies de tots els fitxers dels cursos en el moment que especifiqueu. <p>Durant aquest procés es consumiran més recursos de servidor i el rendiment es pot veure afectat.</p>';
+$string['check_backup_details'] = 'Si habiliteu còpies de seguretat automàtiques, es crearan automàticament còpies de tots els fitxers dels cursos en el moment que especifiqueu. <p>Durant aquest procés es consumiran més recursos de servidor, i el rendiment es pot veure afectat.</p>';
 $string['check_cachejs_comment_disable'] = 'Si ho habiliteu, es millorarà el rendiment de càrrega de pàgines.';
 $string['check_cachejs_comment_enable'] = 'Si s\'inhabilita, la càrrega de pàgines es pot veure alentida.';
 $string['check_cachejs_details'] = 'L\'emmagatzematge Javascript en memòria cau i la compressió milloren el rendiment de carrega de pàgina. Es recomana encaridament en llocs en producció.';

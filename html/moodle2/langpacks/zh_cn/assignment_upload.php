@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = '一个应上传的作业已经被提交了';
 $string['event_assessable_uploaded'] = '一个文件已经被上传了';
 $string['pluginname'] = '上传';
+$string['privacy:metadata'] = '作业上传插件不储存任何私人数据。';

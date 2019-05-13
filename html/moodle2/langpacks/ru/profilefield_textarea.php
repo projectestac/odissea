@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Область ввода текста';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'ID пользователя, данные которого хранятся в поле «Область ввода текста» профиля пользователя';

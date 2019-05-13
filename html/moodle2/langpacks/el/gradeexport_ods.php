@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Η εξαγωγή βαθμών σε OpenDocument έγινε';
 $string['ods:publish'] = 'Δημοσίευση εξαγωγής βαθμών σε ODS';
 $string['ods:view'] = 'Χρήση εξαγωγής βαθμών σε OpenDocument';
 $string['pluginname'] = 'Φύλλο εργασίας OpenDocument';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εξαγωγή βαθμών σε υπολογιστικό φύλλο OpenDocument» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['timeexported'] = 'Τελευταία λήψη από αυτό το μάθημα';

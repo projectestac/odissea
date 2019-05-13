@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addnewentry'] = 'Afegeix una nova entrada';
+$string['addnewentry'] = 'Afegeix una entrada nova';
 $string['addnewexternalblog'] = 'Registra un blog extern';
 $string['assocdescription'] = 'Si esteu escrivint sobre un curs i/o mòduls d\'activitat, seleccioneu-los aquí.';
 $string['associated'] = 'Associada {$a}';
@@ -110,7 +110,7 @@ $string['filtertags_help'] = 'Podeu usar aquesta característica per filtrar les
 $string['groupblog'] = 'Blog del grup: {$a}';
 $string['groupblogdisable'] = 'El blog del grup no està habilitat';
 $string['groupblogentries'] = 'Entrades del blog associades amb {$a->coursename} del grup {$a->groupname}';
-$string['groupblogs'] = 'Usuaris que sols poden veure blogs de gent que comparteix amb un grup';
+$string['groupblogs'] = 'Els usuaris sols poden veure blogs de gent que comparteix un grup';
 $string['incorrectblogfilter'] = 'S\'ha especificat un tipus incorrecte de filtre del blog';
 $string['intro'] = 'Aquest canal RSS ha estat generat automàticament a partir d\'un o més blogs.';
 $string['invalidgroupid'] = 'ID de grup invàlid';
@@ -129,26 +129,27 @@ $string['notallowedtoedit'] = 'No teniu permís per a editar aquesta entrada';
 $string['numberofentries'] = 'Entrades: {$a}';
 $string['numberoftags'] = 'Nombre d\'etiquetes per visualitzar';
 $string['page-blog-edit'] = 'Pàgines d\'edició del blog';
-$string['page-blog-index'] = 'Pàgina de llistat del blog';
+$string['page-blog-index'] = 'Pàgina de llista del blog';
 $string['page-blog-x'] = 'Totes les pàgines del blog';
 $string['pagesize'] = 'Entrades de blog per pàgina';
 $string['permalink'] = 'Enllaç permanent';
 $string['personalblogs'] = 'Els usuaris només poden veure el seu propi blog';
 $string['preferences'] = 'Preferències del blog';
+$string['privacy:metadata:core_comments'] = 'Comentaris associats amb entrades del blog';
 $string['publishto'] = 'Publica per a';
-$string['publishtocourse'] = 'Usuaris que comparteixen un curs amb vosté';
+$string['publishtocourse'] = 'Usuaris que comparteixen un curs amb vós';
 $string['publishtocourseassoc'] = 'Membres del curs associat';
 $string['publishtocourseassocparam'] = 'Membres de {$a}';
-$string['publishtogroup'] = 'Usuaris que comparteixen un grup amb vosté';
+$string['publishtogroup'] = 'Usuaris que comparteixen un grup amb vós';
 $string['publishtogroupassoc'] = 'El vostre grup de membres al curs associat';
 $string['publishtogroupassocparam'] = 'El vostre grup de membres a {$a}';
 $string['publishto_help'] = '<p>Aquí hi ha tres opcions possibles:</p>
 
-<p><b>Privat (esborrany)</b>: només l\'autor/a i els administradors podran veure aquesta entrada.</p>
+<p><b>Privat (esborrany)</b>: només l\'autor i els administradors poden veure aquesta entrada.</p>
 
-<p><b>Usuaris del lloc</b>: tots els usuaris que tinguin un compte en aquest lloc podran llegir aquesta entrada.</p>
+<p><b>Usuaris del lloc</b>: tots els usuaris que tinguin un compte en aquest lloc poden llegir aquesta entrada.</p>
 
-<p><b>Tothom</b>: tothom, inclosos els usuaris visitants, podrà llegir aquesta entrada.</p>';
+<p><b>Tothom</b>: tothom, inclosos els usuaris visitants, pot llegir aquesta entrada.</p>';
 $string['publishtonoone'] = 'Privat (esborrany)';
 $string['publishtosite'] = 'Usuaris del lloc';
 $string['publishtoworld'] = 'Tothom';

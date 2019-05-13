@@ -34,6 +34,7 @@ $string['forroles'] = 'Voor rollen {$a}';
 $string['getreport'] = 'Maak rapport';
 $string['intro'] = 'Dit rapport toont, voor een bepaalde mogelijkheid, welke rechten deze mogelijkheid heeft in de definitie van elke rol (of een selectie van rollen) en waar op de site deze mogelijkheid is overschreven';
 $string['pluginname'] = 'Mogelijkhedenrapport';
+$string['privacy:metadata'] = 'De mogelijkheden overzichts-plugin bewaart geen persoonlijke gegevens.';
 $string['reportforcapability'] = 'Rapport voor mogelijkheid \'{$a}\'';
 $string['reportsettings'] = 'Rapport instellingen';
 $string['roleslabel'] = 'Rollen:';

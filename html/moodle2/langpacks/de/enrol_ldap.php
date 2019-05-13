@@ -113,7 +113,7 @@ Dies funktioniert normalerweise sehr gut, wenn Sie LDAP auch zur Nutzerauthentif
 <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Sie können das LDAP-Anmeldeverfahren auch so konfigurieren, dass automatisch neue Kurse angelegt werden, wenn neue Gruppen in LDAP eingerichtet werden.</p>';
 $string['pluginnotenabled'] = 'Plugin nicht aktiviert!';
-$string['privacy:metadata'] = 'Das LDAP-Einschreibungsplugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das LDAP-Einschreibungsplugin speichert keine personenbezogenen Daten.';
 $string['role_mapping'] = '<p>Für jede Rolle, die Sie über LDAP zuweisen möchten, müssen Sie eine Kontextliste angeben, in der die Kursrollen festgelegt sind. Trennen Sie unterschiedliche Kontexte mit einem Semikolon \';\'.</p><p>Zusätzlich müssen Sie das Attribut Ihres LDAP-Servers festlegen, das für Gruppenmitglieder benutzt wird (normalerweise \'member\' or \'memberUid\')</p>';
 $string['role_mapping_attribute'] = 'LDAP Member Attribut für {$a}';
 $string['role_mapping_context'] = 'LDAP Kontexte für {$a}';

@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Liaison automatique des glossaires';
+$string['glossarycategory'] = '{$a->glossary} : catégorie {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary} : {$a->concept}';
 $string['privacy:metadata'] = 'Le plugin Liaison automatique des glossaires n\'enregistre aucune donnée personnelle.';

@@ -40,7 +40,7 @@ Sinnvoll ist dies, um Bandbreite einzusparen oder um Proxy bedingte Beschränkun
 Um MathJax lokal zu installieren, laden Sie die Bibliothek von http://www.mathjax.org herunter und installieren Sie sie auf einem Webserver. Ändern Sie danach die Filter-Einstellungen httpurl und httpsurl, damit diese auf Ihre lokale Version verweisen.';
 $string['mathjaxsettings'] = 'MathJax Konfiguration';
 $string['mathjaxsettings_desc'] = 'Die voreingestellte MathJax Konfiguration ist in den meisten Fällen passend, aber MathJax ist in hohem Maße konfigurierbar. Alle Standardoptionen können hier hinzugefügt werden.';
-$string['privacy:metadata'] = 'Das MathJax-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das MathJax-Plugin speichert keine personenbezogenen Daten.';
 $string['texfiltercompatibility'] = 'TeX-Filter Kompatibilität';
 $string['texfiltercompatibility_help'] = 'Der MathJax-Filter kann als Ersatz des TeX-Filters verwendet werden.
 

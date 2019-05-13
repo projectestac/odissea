@@ -30,5 +30,6 @@ $string['clientid'] = 'Client ID';
 $string['configplugin'] = 'Configurazione Microsoft OneDrive (obsoleto)';
 $string['oauthinfo'] = '<p>Per usare questo plugin è necessario registrare il sito su <a href="https://account.live.com/developers/applications">con  Microsoft</a>Durante la registrazione sarà necessario inserire il seguente URL come  \'Redirect domain\':</p><p>{$a->callbackurl}</p><p>Al termine della registrazione verrà fornito un Client ID ed un secret che andranno inseriti qui.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (obsoleto)';
+$string['privacy:metadata'] = 'Il plugin Repository \'Microsoft OneDrive (obsoleto)\' non memorizza dati personali, ma trasmette i dati degli utenti da Moodle al sistema remoto.';
 $string['secret'] = 'Secret';
 $string['skydrive:view'] = 'Visualizzare OneDrive (obsoleto)';

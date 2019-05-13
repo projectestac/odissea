@@ -30,3 +30,4 @@ $string['exportimscp:export'] = 'Экспортировать книгу в ви
 $string['generateimscp'] = 'Создать пакет IMS CP';
 $string['nochapters'] = 'Не найдено ни одной главы книги. Экспорт в IMS CP невозможен.';
 $string['pluginname'] = 'Экспорт в IMS CP';
+$string['privacy:metadata'] = 'Плагин «Экспорт в IMS CP» не хранит никаких персональных данных.';

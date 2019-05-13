@@ -55,9 +55,9 @@ $string['expiredaction'] = 'Acció de venciment de la inscripció';
 $string['expiredaction_help'] = 'Seleccioneu l\'acció a realitzar quan la inscripció de l\'usuari venciment. Tingueu en compte que algunes dades d\'usuari i configuracions es suprimeixen  del curs durant la cancel·lació de la inscripció del curs.';
 $string['expirymessageenrolledbody'] = 'Estimat/da {$a->user},
 
-Aquesta és una notificació per comunicar-vos que la inscripció al curs \'{$a->course}\'  és a punt de vèncer el  {$a->timeend}.
+Aquesta és una notificació per comunicar-vos que la inscripció al curs «{$a->course}» és a punt de vèncer el {$a->timeend}.
 
-Si us cal ajuda, si us plau poseu-vos en contacte amb {$a->enroller}.';
+Si us cal ajuda, poseu-vos en contacte amb {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificació de venciment d\'autoinscripció.';
 $string['expirymessageenrollerbody'] = 'L\'autoinscripció al curs \'{$a->course}\'  vencerà dins de {$a->threshold} per als següents usuaris:
 
@@ -88,9 +88,9 @@ $string['password_help'] = 'Una clau d\'inscripció habilita que l\'accés al cu
 Si el camp es deixa en blanc, qualsevol usuari podrà inscriure\'s al curs.
 
 Si especifiqueu una clau d\'inscripció, caldrà que qualsevol usuari que intenti inscriure\'s al curs proporcioni aquesta clau. Tingueu en compte que l\'usuari sols haurà de proporcionar la clau d\'inscripció UNA SOLA VEGADA, quan s\'inscrigui al curs.';
-$string['passwordinvalid'] = 'Clau d\'inscripció incorrecta, prova-ho una altre cop';
-$string['passwordinvalidhint'] = 'Aquesta clau d\'inscripció es errònia, si us plau torneu a intentar-ho<br />
-(Una pista: comença per \'{$a}\'.)';
+$string['passwordinvalid'] = 'Clau d\'inscripció incorrecta; torneu a provar-ho';
+$string['passwordinvalidhint'] = 'Aquesta clau d\'inscripció es errònia, torneu a intentar-ho<br />
+(Una pista: comença per «{$a}».)';
 $string['pluginname'] = 'Autoinscripció';
 $string['pluginname_desc'] = 'El connector d\'autoinscripció  habilita els usuaris per escollir els cursos en els quals volen participar. Els cursos poden estar protegits per una clau d\'inscripció. La inscripció es fa de forma interna amb el connector d\'inscripció, el qual ha d\'estar habilitat al mateix curs.';
 $string['requirepassword'] = 'És necessària una clau d\'inscripció';

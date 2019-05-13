@@ -33,7 +33,7 @@ $string['answererror'] = 'Errorea';
 $string['answermustbenumberorstar'] = 'Erantzunak zenbakia behar du izan, adibidez -1.234 edo 3e8, eta bestela \'*\'.';
 $string['answerno'] = '{$a} erantzuna';
 $string['decfractionofquestiongrade'] = 'galderaren kalifikazioaren zatiki gisa (0-1)';
-$string['decfractionofresponsegrade'] = 'ebazpenaren kalifikazioaren zatiki gisa (0-1)';
+$string['decfractionofresponsegrade'] = 'erantzunaren kalifikazioaren zatiki gisa (0-1)';
 $string['decimalformat'] = 'hamartarrak';
 $string['editableunittext'] = 'testua sartzeko elementua';
 $string['errornomultiplier'] = 'Unitate honetarako biderkatzailea adierazi behar duzu';
@@ -44,7 +44,7 @@ $string['invalidnumbernounit'] = 'Zenbaki baliagarria idatzi behar duzu. Ez sart
 $string['invalidnumericanswer'] = 'Sartu dituzun erantzunetako bat ez da zenbaki baliagarria.';
 $string['invalidnumerictolerance'] = 'Sartu dituzun tolerantzietako bat ez da zenbaki baliagarria.';
 $string['leftexample'] = 'ezkerrean, adibidez $1.00 edo £1.00';
-$string['manynumerical'] = 'Unitateak aukerakoak dira. Unitatea sartuz gero, ebazpenak 1 Unitatera bihurtzeko erabiltzen da kalifikatu aurretik.';
+$string['manynumerical'] = 'Unitateak aukerakoak dira. Unitatea sartuz gero, erantzunak 1. Unitatera bihurtzeko erabiltzen da kalifikatu aurretik.';
 $string['multiplier'] = 'Biderkatzailea';
 $string['nominal'] = 'Nominala';
 $string['noneditableunittext'] = 'Editatu EZIN den testua 1. Unitaterako';
@@ -54,7 +54,7 @@ $string['nounitdisplay'] = 'Ez dago kalifikaziorako unitaterik';
 $string['numericalmultiplier'] = 'Biderkatzailea';
 $string['numericalmultiplier_help'] = 'Biderkatzailea erantzun zuzenaren zenbakia biderkatuko duen faktorea da.
 
-Lehen unitatearen (1. Unitatea) berezko biderkatzailea 1 da.  Beraz erantzun zuzenaren zenbakia 5500 bada eta berez 1 biderkatzailea duen 1. Unitate bezala W jartzen baduzu, erantzun zuzena 5500 W izango da.
+Lehen unitatearen (1. Unitatea) lehenetsitako biderkatzailea 1 da.  Beraz erantzun zuzenaren zenbakia 5500 bada eta modu lehenetsian 1 biderkatzailea duen 1. Unitate bezala W jartzen baduzu, erantzun zuzena 5500 W izango da.
 
 Honi kW unitatea gehitzen badiozu 0.001 biderkatzailearekin, 5.5 kW ere erantzun zuzen gisa hartuko da. Honek esan nahi du 5500W eta 5.5kW erantzun zuzentzat hartuko direla.
 
@@ -64,15 +64,15 @@ $string['onlynumerical'] = 'Unitateak ez dira ezertarako erabiltzen. Zenbakizko 
 $string['pleaseenterananswer'] = 'Mesedez, idatzi erantzun bat.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Mesedez sartu zure erantzuna milakakoen banatzailea ({$a}) erabili gabe.';
 $string['pluginname'] = 'Zenbakizkoa';
-$string['pluginnameadding'] = 'Gehitu Zenbakizko galdera';
+$string['pluginnameadding'] = 'Zenbakizko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Zenbakizko galdera editatzen';
 $string['pluginname_help'] = 'Ikaslearen ikuspuntutik, zenbakizko galdera bat erantzun laburreko galdera baten modukoa da. Ezberdintasuna zenbakizko erantzunek errore onargarri bat izan dezaketela da. Honek muga batzuen barruko erantzunak erantzun bakar gisa kalifikatzeko aukera ematen du. Esaterako, erantzun zuzena 10 bada eta errore onargarria 2 bada, 8 eta 12 arteko erantzun guztiak zuzentzat hartuko dira.';
 $string['pluginnamesummary'] = 'Zenbakizko erantzun bat behar du, gehienetan unitatetan, eta erantzun-tarte batekin alderatuta kalifikatzen da, malgutasun-tartearekin.';
 $string['privacy:metadata'] = 'Zenbakizkoa galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['relative'] = 'Erlatiboa';
 $string['rightexample'] = 'eskuinean, adibidez 1.00cm edo 1.00km';
-$string['selectunit'] = 'Aukera ezazu unitate bat';
-$string['selectunits'] = 'Aukera itzazu unitateak';
+$string['selectunit'] = 'Aukeratu unitate bat';
+$string['selectunits'] = 'Aukeratu unitateak';
 $string['studentunitanswer'] = 'Unitateak sartu behar dira erabilita';
 $string['tolerancetype'] = 'Tolerantzia-mota';
 $string['unit'] = 'Unitatea';

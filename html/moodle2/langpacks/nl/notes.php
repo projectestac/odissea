@@ -63,13 +63,13 @@ $string['personal'] = 'persoonlijk';
 $string['personalnotes'] = 'Persoonlijke notities';
 $string['privacy:metadata:core_notes'] = 'De notitiescomponent bewaart notities van e gebruiker binnen het core subsysteem.';
 $string['privacy:metadata:core_notes:content'] = 'De inhoud van de notitie.';
-$string['privacy:metadata:core_notes:courseid'] = 'De id van de cursus die geassocieerd is met de notitie.';
+$string['privacy:metadata:core_notes:courseid'] = 'De ID van de cursus die geassocieerd is met de notitie';
 $string['privacy:metadata:core_notes:created'] = 'De aanmaakdatum en tijd van de notitie.';
 $string['privacy:metadata:core_notes:lastmodified'] = 'De datum van de laatste wijziging van de notitie.';
 $string['privacy:metadata:core_notes:publishstate'] = 'Publiceer de status van de notitie.';
-$string['privacy:metadata:core_notes:userid'] = 'De id van de gebruiker die met de notitie geassocieerd is.';
+$string['privacy:metadata:core_notes:userid'] = 'De ID van de gebruiker die met de notitie geassocieerd is';
 $string['publishstate'] = 'Context';
-$string['publishstate_help'] = 'De context van een notitie bepaalt wie de notitie kan zien.
+$string['publishstate_help'] = 'De context van een notitie bepaalt wie de notitie kan zien. Gebruikers moeten er zich van bewust zijn dat alle notities, inclusief persoonlijke, getoond kunnen worden als dit wettelijk noodzakelijk is.
 
 * Persoonlijk - De notitie is enkel zichtbaar voor jou
 * Cursus - De notitie is zichtbaar voor leraren in de cursus

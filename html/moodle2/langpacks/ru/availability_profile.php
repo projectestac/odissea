@@ -40,6 +40,7 @@ $string['op_isequalto'] = 'совпадает с';
 $string['op_isnotempty'] = 'не пустое';
 $string['op_startswith'] = 'начинается с';
 $string['pluginname'] = 'Ограничение по профилю';
+$string['privacy:metadata'] = 'Плагин ограничения доступности «Ограничение по профилю» не хранит никаких персональных данных.';
 $string['requires_contains'] = 'Ваше поле <strong>{$a->field}</strong> содержит значение <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Ваше поле <strong>{$a->field}</strong> не содержит значение <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Ваше поле <strong>{$a->field}</strong> заканчивается на <strong>{$a->value}</strong>';

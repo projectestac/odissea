@@ -69,14 +69,14 @@ $string['coursetemplatename'] = 'Berreskuratu ikastaro honetatik igo ondoren';
 $string['coursetemplatename_help'] = 'Sartu hemen existitzen den ikastaro bat ikastaro guztiak sortzeko txantiloi gisa erabiltzeko.';
 $string['coursetorestorefromdoesnotexist'] = 'Berreskuratzeko erabili beharreko ikastaroa ez da existitzen';
 $string['courseupdated'] = 'Ikastaroa eguneratu da';
-$string['createall'] = 'Guztiak sortu, handitu izen laburra behar izanez gero';
-$string['createnew'] = 'Ikastaro berriak bakarrik sortu, existitzen direnak aparte utziz';
-$string['createorupdate'] = 'Ikastaro berriak sortu, edo eguneratu existitzen direnak';
+$string['createall'] = 'Sortu guztiak, handitu izen laburra behar izanez gero';
+$string['createnew'] = 'Sortu ikastaro berriak bakarrik, existitzen direnak aparte utziz';
+$string['createorupdate'] = 'Sortu ikastaro berriak, edo eguneratu existitzen direnak';
 $string['csvdelimiter'] = 'CSV bereizlea';
 $string['csvdelimiter_help'] = 'CSV fitxategiaren CSV bereizlea';
 $string['csvfileerror'] = 'CSV fitxategiaren formatuan zerbait gaizki dago. Mesedez egiaztatu zutabe-izenburu eta zutabe kopurua bat datozela, eta bereizlea zein fitxategiaren kodifikazioa egokiak direla: {$a}';
 $string['csvline'] = 'Lerroa';
-$string['defaultvalues'] = 'Berezko ikastaro-baloreak';
+$string['defaultvalues'] = 'Lehenetsitako ikastaro-balioak';
 $string['encoding'] = 'Kodifikazioa';
 $string['encoding_help'] = 'CSV fitxategiaren kodifikazioa';
 $string['errorwhiledeletingcourse'] = 'Errorea gertatu da ikastaroa ezabatu bitartean';
@@ -113,19 +113,19 @@ $string['shortnametemplate_help'] = 'Ikastaroaren izen laburra nabigazioan eraku
 $string['templatefile'] = 'Igo ondoren fitxategi honetatik berreskuratu';
 $string['templatefile_help'] = 'Aukeratu fitxategi bat ikastaro guztiak sortzeko txantiloi gisa erabiltzeko.';
 $string['unknownimportmode'] = 'Inportatzeko modu ezezaguna';
-$string['updatemissing'] = 'Osatu CSVko datuetan falta diren elementuak eta berezko balioak';
+$string['updatemissing'] = 'Osatu CSVko datuetan falta diren elementuak eta lehenetsitako balioak';
 $string['updatemode'] = 'Eguneratze-modua';
 $string['updatemodedoessettonothing'] = 'Eguneratze-modua ez du ezer eguneratzea baimentzen';
 $string['updatemode_help'] = 'Ikastaroak eguneratzea baimentzen baduzu, ikastaroak zerekin eguneratuko dituzun zehaztu behar diozu tresnari.';
 $string['updateonly'] = 'Existitzen diren ikastaroak bakarrik eguneratu';
 $string['updatewithdataonly'] = 'Eguneratu CSVko datuekin bakarrik';
-$string['updatewithdataordefaults'] = 'Eguneratu CSVko datuekin eta berezko balioekin';
+$string['updatewithdataordefaults'] = 'Eguneratu CSVko datuekin eta lehenetsitako balioekin';
 $string['uploadcourses'] = 'Igo ikastaroak';
-$string['uploadcourses_help'] = 'Ikastaroako testu-fitxategi bat erabiliz igo daitezke. Fitxategiak hurrengo formatua izan behar du:
+$string['uploadcourses_help'] = 'Ikastaroak testu-fitxategi bat igota sortu daitezke. Fitxategiak hurrengo formatua izan behar du:
 
-* Fitxategiko errenkada bakoitzak erregistro bat du
-* Erregistro bakoitza komaz (edo bestelako bereizleak) banatutako datu-multzo bat da
-* Fitxategiko lehen erregistroak fitxategiaren formatua definitzen duten eremuen zerrenda du.
-* Derrigorrezko eremuen izenak: \'shortname\' (izen laburra), \'fullname\' (izen osoa), eta \'category\' (kategoria)';
+* Fitxategiko errenkada bakoitzak erregistro bana du
+* Erregistro bakoitza komaz (edo bestelako bereizle batez) banatutako datu-multzo bat da
+* Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
+* Derrigorrezko eremuak <i>shortname</i> (izen laburra), <i>fullname</i> (izen osoa), eta <i>\'category\'</i> (kategoria) dira';
 $string['uploadcoursespreview'] = 'Igotako ikastaroen aurrebista';
 $string['uploadcoursesresult'] = 'Igotako ikastaroen emaitzak';

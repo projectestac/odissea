@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['courseactivities'] = 'Categorías, cursos y actividades de curso';
 $string['courses'] = 'Categorías y cursos';
 $string['coursestructures'] = 'Categorías, cursos y estructuras de curso';
-$string['enabledockdesc'] = 'Permitir al usuario unirse a este bloque';
+$string['enabledockdesc'] = 'Permitir al usuario apartar este bloque';
 $string['everything'] = 'Todo';
 $string['expansionlimit'] = 'Generar navegación para el siguiente';
 $string['linkcategoriesdesc'] = 'Mostrar categorías como enlaces';

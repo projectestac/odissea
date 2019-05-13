@@ -30,3 +30,4 @@ $string['endanswernotfound'] = 'Non è stato possibile trovare il carattere obbl
 $string['noanswerfound'] = 'La domanda è priva di risposte';
 $string['pluginname'] = 'Formato parola mancante';
 $string['pluginname_help'] = 'Il formato parola mancante consente l\'importazione di domande tramite un file di testo.';
+$string['privacy:metadata'] = 'Il plugin \'Formato parola mancante\' non memorizza dati personali.';

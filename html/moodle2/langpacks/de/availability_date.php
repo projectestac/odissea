@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'Fehler bei der Verbindung zum Server, um die Zeiten zu konvertieren.';
-$string['description'] = 'Zugriff über ein festgelegtes Datum und die Uhrzeit steuern';
+$string['description'] = 'Zugriff über ein Datum und die Uhrzeit steuern';
 $string['direction_before'] = 'Datum';
 $string['direction_from'] = 'ab';
 $string['direction_label'] = 'Richtung';

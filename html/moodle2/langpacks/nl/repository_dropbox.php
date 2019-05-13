@@ -36,5 +36,7 @@ $string['logoutdesc'] = '(afmelden als je klaar bent met Dropbox)';
 $string['notitle'] = 'Geen titel';
 $string['oauth2redirecturi'] = 'OAuth 2 verwijzings URI';
 $string['pluginname'] = 'Dropbox';
+$string['privacy:metadata:repository_dropbox'] = 'De Dropbox opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
+$string['privacy:metadata:repository_dropbox:query'] = 'De Dropbox opslagruimte gebruiker zoektekst.';
 $string['remember'] = 'Mij onthouden';
 $string['secret'] = 'Dropbox geheim';

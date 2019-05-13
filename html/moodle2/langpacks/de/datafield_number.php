@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Zahlenfeld';
 $string['pluginname'] = 'Zahl';
-$string['privacy:metadata'] = 'Die Zahlfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Zahlfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

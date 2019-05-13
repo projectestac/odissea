@@ -31,8 +31,8 @@ class moodle1_qtype_matchwiris_handler extends moodle1_qtype_match_handler {
         return array(
             'MATCHOPTIONS',
             'MATCHS/MATCH',
-            'MATCHWiris',
-            'MATCHWiris/WirisOPTIONS'
+            'MATCHWIRIS',
+            'MATCHWIRIS/WIRISOPTIONS'
         );
     }
 
@@ -67,29 +67,23 @@ class moodle1_qtype_matchwiris_handler extends moodle1_qtype_match_handler {
         $wirisquestion = '';
         if (isset($data['matchwiris'][0]['wirisoptions'][0]['wiriscasforcomputations'])) {
             if ($data['matchwiris'][0]['wirisoptions'][0]['wiriscasforcomputations'] == 1) {
-                $wrap->start();
                 //@@codingStandardsIgnoreStart
-                $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . '">';
-                $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD;
+                $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS . '">';
+                $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_ADD;
                 //@@codingStandardsIgnoreEnd
-                $wrap->stop();
                 $wirisquestion .= '</data>';
             } else if ($data['matchwiris'][0]['wirisoptions'][0]['wiriscasforcomputations'] == 2) {
-                $wrap->start();
                 //@@codingStandardsIgnoreStart
-                $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . '">';
-                $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT;
+                $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS . '">';
+                $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_REPLACE;
                 //@@codingStandardsIgnoreEnd
-                $wrap->stop();
                 $wirisquestion .= '</data>';
             }
         } else {
-            $wrap->start();
             //@@codingStandardsIgnoreStart
-            $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS . '">';
-            $wirisquestion .= com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_FALSE;
+            $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS . '">';
+            $wirisquestion .= com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_FALSE;
             //@@codingStandardsIgnoreEnd
-            $wrap->stop();
             $wirisquestion .= '</data>';
         }
         return $wirisquestion;
@@ -101,10 +95,8 @@ class moodle1_qtype_matchwiris_handler extends moodle1_qtype_match_handler {
 
         $wirisquestion = '';
         if (isset($data['matchwiris'][0]['wirisoptions'][0]['hiddeninitialcasvalue'])) {
-            $wrap->start();
             //@@codingStandardsIgnoreLine
-            $wirisquestion .= '<data name="' . com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION . '">';
-            $wrap->stop();
+            $wirisquestion .= '<data name="' . com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_CAS_INITIAL_SESSION . '">';
             $initialcasvalue = $data['matchwiris'][0]['wirisoptions'][0]['hiddeninitialcasvalue'];
             $wirisquestion .= htmlspecialchars(wrsqz_mathml_decode(trim($initialcasvalue)), ENT_COMPAT, "UTF-8");
             $wirisquestion .= '</data>';

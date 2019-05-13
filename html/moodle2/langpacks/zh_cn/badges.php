@@ -82,13 +82,20 @@ $string['backpackavailability_help'] = '为了能让勋章容器能验证从你�
 $string['backpackbadges'] = '你从 {$a->totalcollections} 搜集的勋章有 {$a->totalbadges} 个已显示。 <a href="mybackpack.php">修改背包设置</a>。';
 $string['backpackcannotsendverification'] = '无法发送验证邮件';
 $string['backpackconnection'] = '背包连接';
+$string['backpackconnectioncancelattempt'] = '使用不同的电子邮件地址连接';
+$string['backpackconnectionconnect'] = '连接到背包';
 $string['backpackconnection_help'] = '本页允许你设置一个访问外部背包服务的链接。背包链接让你显示外部勋章到自己的站点，也可以推送本地获得的勋章到你的外部背包。
 
 当前，仅<a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>被支持。在你尝试在这个页面建立一个背包链接前，你需要注册一个背包服务。';
 $string['backpackconnectionresendemail'] = '重发验证邮件';
+$string['backpackconnectionunexpectedresult'] = '连接背包出现问题。请再次尝试。<br><br>如果该问题继续发生，请联系管理员。';
 $string['backpackdetails'] = '背包设置';
 $string['backpackemail'] = 'Email';
-$string['backpackemail_help'] = '你的背包关联的电子邮件地址。当你连接，任何徽章赢得了在本网站将与此有关的电子邮件地址。';
+$string['backpackemail_help'] = '您的背包已经关联了电子邮件地址。当您连接，任何在本网站获取的徽章将与此电子邮件地址相关联。';
+$string['backpackemailverificationpending'] = '等待审核中';
+$string['backpackemailverifyemailsubject'] = '{$a}:开放徽章背包的邮箱验证';
+$string['backpackemailverifypending'] = '一封验证邮件已经发送到<strong>{$a}</strong>。点击邮件中的验证连接来激活您的背包连接。';
+$string['backpackemailverifysuccess'] = '感谢您的邮箱验证。您现在已经连接到了您的背包。';
 $string['backpackimport'] = '徽章导入设置';
 $string['backpackimport_help'] = '背包连接成功建立后，你的背包中的勋章可以显示在“我的勋章”页面和您的个人资料页面。
 在这个区域，你可以从背包中选择收藏勋章，以便在你的个人资料页面显示。';

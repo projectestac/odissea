@@ -29,3 +29,4 @@ $string['moodlemedia:browsemedia'] = 'Zoek of upload een geluid, video, applet, 
 $string['moodlemedia:desc'] = 'Moodle media invoegen';
 $string['nopreview'] = 'Kan geen voorbeeld van Moodle media weergeven';
 $string['pluginname'] = 'Media invoegen';
+$string['privacy:metadata'] = 'De TinyMCE Moodle Media-plugin bewaart geen persoonlijke gegevens.';

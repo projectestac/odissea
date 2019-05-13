@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'القائمة الرئيسية';
+$string['privacy:metadata'] = 'القائمة الرئيسية تعرض فقط عناصر محفوظة في مواقع اخرى';
+$string['site_main_menu:addinstance'] = 'اضف عنصر قائمة رئيسية جديد';

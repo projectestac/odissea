@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Veld voor bestand';
 $string['pluginname'] = 'Bestand';
+$string['privacy:metadata'] = 'De de bestandscomponent bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

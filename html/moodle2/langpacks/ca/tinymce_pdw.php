@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pdw:desc'] = 'Commuta la barra d\'eines';
 $string['pluginname'] = 'Commuta la barra d\'eines';
+$string['privacy:metadata'] = 'El connector de commutació de la Barra d\'eines de TinyMCE no emmagatzema cap dada personal.';

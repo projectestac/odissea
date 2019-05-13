@@ -53,7 +53,7 @@ $string['delay_help'] = 'Opcionalmente puede elegir añadir un retraso antes de 
 
 El retraso es en milisegundos.';
 $string['description'] = 'Descripción';
-$string['done'] = 'Hecho';
+$string['done'] = 'Finalizado';
 $string['editstep'] = 'Editando "{$a}"';
 $string['enabled'] = 'Habilitado';
 $string['endtour'] = 'Terminar tour';
@@ -172,5 +172,5 @@ $string['tour_resetforall'] = 'El estado del tour ha sido reiniciado. Se mostrar
 $string['tours'] = 'Tours';
 $string['usertours'] = 'Tours para usuario';
 $string['usertours:managetours'] = 'Crear, editar, y eliminar tours para usuarios';
-$string['viewtour_edit'] = 'Puede <a href="{$a->editlink}">editar los valores por defecto del tour</a> y <a href="{$a->resetlink}">forzar a que se muestre el tourl</a> nuevamente a todos los usuarios.';
+$string['viewtour_edit'] = 'Puede <a href="{$a->editlink}">editar los valores por defecto del tour</a> y <a href="{$a->resetlink}">forzar a que se muestre el tour</a> nuevamente a todos los usuarios.';
 $string['viewtour_info'] = 'Este es el tour \'{$a->tourname}\'. Aplica a la ruta \'{$a->path}\'.';

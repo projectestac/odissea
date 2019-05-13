@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'エモーティコンを書き込む';
 $string['pluginname'] = 'エモーティコンを書き込む';
-$string['privacy:metadata'] = '「Moodleエモーティコン」TinyMCEプラグインはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'MoodleエモーティコンTinyMCEプラグインはどのような個人データも保存しません。';
 $string['requireemoticon'] = 'エモーティコンフィルタを必要とする';
 $string['requireemoticon_desc'] = 'この設定を有効にした場合、エディタコンテクスト内でエモーティコンフィルタが有効にされている場合のみ、エモーティコンボタンが表示されます。';

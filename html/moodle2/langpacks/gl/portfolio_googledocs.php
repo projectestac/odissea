@@ -32,5 +32,7 @@ $string['nooauthcredentials_help'] = 'Para usar o engadido do portafolios de Goo
 $string['nosessiontoken'] = 'Non existe unha credencial de sesión, o que impide exportar a Google.';
 $string['oauthinfo'] = '<p>Para usar este engadido, ten que rexistrar este sitio en Google, tal e como se describe na documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do proceso de rexistro, deberá introducir o seguinte URL como «URI de redireccionamento autorizada» (Authorized Redirect URIs):</p><p>{$a->callbackurl}</p>Unha vez rexistrado, forneceráselle un ID de cliente e un secreto que poderá entón empregar para configurar todos os engadidos de Google Drive e Picasa.</p>';
 $string['pluginname'] = 'Google Drive';
+$string['privacy:metadata'] = 'Este engadido envía datos externamente a unha conta de Google ligada. Non almacena datos localmente.';
+$string['privacy:metadata:data'] = 'Datos persoais pasados a mediante o subsistema portafolios.';
 $string['secret'] = 'Secreto';
 $string['sendfailed'] = 'Non foi posíbel transferir o ficheiro {$a} a Google';

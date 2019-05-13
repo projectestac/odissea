@@ -32,6 +32,6 @@ $string['deprecatedwarning'] = 'Warnung: Das von diesem Repository Plugin genutz
 $string['oauthinfo'] = '<p>Zur Nutzung dieses Plugins muss Ihre Seite bei <a href="https://account.live.com/developers/applications">Microsoft</a> registriert werden.<p> Als Teil des Registrierungsprozesses muss die folgende URL als \'Redirect domain\' eingetragen werden:</p><p>{$a->callbackurl}</p>
 Nach der Registrierung erhalten Sie eine Client-ID, die Sie hier eintragen müssen.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (veraltet)';
-$string['privacy:metadata'] = 'Das Microsoft OneDrive Repository Plugin speichert keine persönlichen Daten. Es überträgt jedoch Daten von Moodle an das externe System';
+$string['privacy:metadata'] = 'Das Microsoft OneDrive Repository Plugin speichert keine personenbezogenen Daten. Es überträgt jedoch Daten von Moodle an das externe System.';
 $string['secret'] = 'Kennwort';
 $string['skydrive:view'] = 'Microsoft OneDrive (veraltet) anzeigen';

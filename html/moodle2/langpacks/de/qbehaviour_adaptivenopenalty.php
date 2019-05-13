@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mehrfachbeantwortung (ohne Abzüge)';
-$string['privacy:metadata'] = 'Der Adaptive Modus (ohne Abzüge) des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Adaptive Modus (ohne Abzüge) des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';

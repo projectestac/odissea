@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regola di accesso quiz Ritardo tra  tentativi';
+$string['privacy:metadata'] = 'Il plugin \'Regola di accesso quiz Ritardo tra tentativi\' non memorizza dati personali.';
 $string['youcannotwait'] = 'Il quiz chiude prima che tu possa iniziare un altro tentativo.';
 $string['youmustwait'] = 'Devi aspettare prima di poter ritentare questo quiz. Potrai tentarlo di nuovo dopo il {$a}.';

@@ -35,4 +35,4 @@ $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Plugin honek datuak bidaltzen ditu lotutako kanpoko Google kontura. Ez du lokalki daturik biltzen.';
 $string['privacy:metadata:data'] = 'Portfolioaren azpisistemaren bitartez pasatako datu pertsonalak.';
 $string['secret'] = 'Sekretua';
-$string['sendfailed'] = '{$a} fitxategiak kale egin du Google-ra bidaltzean';
+$string['sendfailed'] = '{$a} fitxategiak Google-ra bidaltzeak huts egin du';

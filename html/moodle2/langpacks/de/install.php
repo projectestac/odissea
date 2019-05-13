@@ -44,7 +44,7 @@ $string['cliinstallfinished'] = 'Die Installation wurde erfolgreich abgeschlosse
 $string['cliinstallheader'] = 'Installation von Moodle {$a} über die Befehlszeile';
 $string['climustagreelicense'] = 'Im nicht-interaktiven Modus müssen Sie der Lizenz über die Option --agree-license zustimmen';
 $string['cliskipdatabase'] = 'Datenbankinstallation überspringen.';
-$string['clitablesexist'] = 'Die Datenbank-Tabellen existieren bereits. Die cli Installation kann nicht fortgesetzt werden.';
+$string['clitablesexist'] = 'Die Datenbank-Tabellen existieren bereits. Die CLI Installation kann nicht fortgesetzt werden.';
 $string['compatibilitysettings'] = 'PHP-Einstellungen werden geprüft...';
 $string['compatibilitysettingshead'] = 'PHP-Einstellungen werden geprüft...';
 $string['compatibilitysettingssub'] = 'Alle Tests sollten fehlerfrei ablaufen, damit Moodle ohne Probleme auf dem Server arbeiten kann.';
@@ -133,7 +133,7 @@ $string['mysqliextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfigurier
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
 <p>Datenbankname, Nutzername und Kennwort sind Pflichtfelder. Tabellenpräfix ist optional.</p>
-<p>Der Datenbankname darf nur alfanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
+<p>Der Datenbankname darf nur alphanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
 <p>Wenn die Datenbank noch nicht existert und der angegebene Nutzer über die entsprechenden Rechte verfügt, wird Moodle versuchen, die Datenbank mit den richtigen Rechten und Einstellungen selber anzulegen</p>
 <p> Dieser Treiber ist nicht kompatibel mit der älteren MyISAM-Engine.</p>';
 $string['nativemssql'] = 'SQL*Server FreeTDS (native/mssql)';
@@ -141,7 +141,7 @@ $string['nativemssqlhelp'] = 'Sie müssen die Datenbank für die Speicherung der
 $string['nativemysqli'] = 'Verbessertes MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
 <p>Datenbankname, Nutzername und Kennwort sind Pflichtfelder. Tabellenpräfix ist optional.</p>
-<p>Der Datenbankname darf nur alfanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
+<p>Der Datenbankname darf nur alphanumerische Zeichen, Dollar ($) und den Unterstrich (_) enthalten.</p>
 <p>Wenn die Datenbank noch nicht existert und der angegebene Nutzer über die entsprechenden Rechte verfügt, wird Moodle versuchen, die Datenbank mit den richtigen Rechten und Einstellungen selber anzulegen</p>';
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = 'Sie müssen die Datenbank für die Speicherung der Moodle-Daten konfigurieren. Die Datenbank muss bereits angelegt sein. Ein Nutzername und das zugehörige Kennwort  für den Datenbank-Zugriff müssen bereits existieren. Das Tabellen-Prefix ist verbindlich.';

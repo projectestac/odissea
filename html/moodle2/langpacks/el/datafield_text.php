@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο κειμένου';
+$string['pluginname'] = 'Εισαγωγή κειμένου';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο κειμένου» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

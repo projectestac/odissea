@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo de menú de selección múltiple';
 $string['pluginname'] = 'Multimenú';
+$string['privacy:metadata'] = 'O compoñente de campo de menú de selección múltiple non almacena ningún dato persoal, usa táboas definidas en mod_data.';

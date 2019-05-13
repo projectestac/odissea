@@ -47,7 +47,7 @@ $string['certainty_help'] = 'Ziurtasunean oinarritutako kalifikazioak zure erant
 
 Ziurtasun maila                 | C=1 (Zalantzan) | C=2 (Nahiko ziur) | C=3 (Oso ziur)
 ------------------------------- | --------------- | ----------------- | ----------------
-Erantzun egokiaren kalifikazioa |        1        |          2        |        3
+Erantzun zuzenaren kalifikazioa |        1        |          2        |        3
 Erantzun okerraren kalifikazioa |        0        |         -2        |       -6
 Zuzen izatearen probabilitatea  |      <%67       |       %67-80      |      >%80';
 $string['certaintyshort1'] = 'C=1';

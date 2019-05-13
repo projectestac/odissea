@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Manueel beoordeeld';
+$string['privacy:metadata'] = 'De manueel beoordeelde vraaggedrag-plugin bewaart geen persoonlijke gegevens.';

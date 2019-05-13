@@ -31,3 +31,4 @@ $string['dimensioncommentfor'] = 'Opmerking voor {$a}';
 $string['dimensiondescription'] = 'Beschrijving';
 $string['dimensionnumber'] = 'Aspect {$a}';
 $string['pluginname'] = 'Opmerkingen';
+$string['privacy:metadata'] = 'De opmerkingen beoordelen-plugin bewaart geen persoonlijke gegevens. De persoonlijke gegevens van wie wat gaat beoordelen wordt bewaard door de Workshop-module zelf en dat vormt de basis voor het exporteren van beoordelingsdetails.';

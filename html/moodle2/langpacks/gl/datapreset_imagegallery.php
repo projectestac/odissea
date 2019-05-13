@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Colección de imaxes';
 $string['pluginname'] = 'Colección de imaxes';
+$string['privacy:metadata'] = 'O engadido de galería de imaxes non almacena ningún dato persoal.';

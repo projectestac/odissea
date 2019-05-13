@@ -62,7 +62,7 @@ $string['addpage'] = 'Aggiungi pagina';
 $string['addshortanswer'] = 'Crea pagina con domanda a risposta breve';
 $string['addtruefalse'] = 'Crea pagina con domanda vero/falso';
 $string['allowofflineattempts'] = 'La lezione può essere svolta offline tramite l\'app mobile';
-$string['allowofflineattempts_help'] = 'Gli utenti dell\'app moble potranno scaricare la lezione per fruirne offlne. Verranno anche scaricate tutte le risposte possibili assieme alle risposte corrette. Nota: non è possibile fruire di una lezione offline se la lezione ha un tempo limite.';
+$string['allowofflineattempts_help'] = 'Gli utenti dell\'app moodle potranno scaricare la lezione per fruirne offline. Verranno anche scaricate tutte le risposte possibili assieme alle risposte corrette. Nota: non è possibile fruire di una lezione offline se la lezione ha un tempo limite.';
 $string['anchortitle'] = 'Inizio del contenuto principale';
 $string['and'] = 'e';
 $string['answer'] = 'Risposta';
@@ -330,7 +330,7 @@ $string['modulename_help'] = 'Il modulo di attività lezione consente al docenti
 
 E\' possibile includere nelle pagine domande di vario tipo come domande a scelta multipla, a risposta breve ed a  corrispondenza. In base alla risposta data, lo studente può proseguire la lezione, essere riportato alla pagina precedente oppure diretto verso un percorso composto da altre pagine.
 
-Se lo si desidera, è possibile valutare l\'attività ed il punteggio ottenuto sarà memorizzato nel registro del valutatore.
+Se lo si desidera, è possibile valutare l\'attività ed il punteggio ottenuto sarà memorizzato nel registro valutatore.
 
 E\' possibile usare le lezioni per:
 
@@ -441,6 +441,42 @@ $string['preview'] = 'Anteprima';
 $string['previewlesson'] = 'Anteprima di {$a}';
 $string['previewpagenamed'] = 'Anteprima pagina: {$a}';
 $string['previouspage'] = 'Pagina precedente';
+$string['privacy:metadata:attempts'] = 'Record dei tentativi per pagina.';
+$string['privacy:metadata:attempts:answerid'] = 'ID della risposta';
+$string['privacy:metadata:attempts:correct'] = 'Correttezza del tentativo';
+$string['privacy:metadata:attempts:pageid'] = 'ID della pagina';
+$string['privacy:metadata:attempts:retry'] = 'Numero del tentativo';
+$string['privacy:metadata:attempts:timeseen'] = 'Orario di svolgimento del tentativo';
+$string['privacy:metadata:attempts:useranswer'] = 'Dettagli sulla risposta dell\'utente';
+$string['privacy:metadata:attempts:userid'] = 'ID dell\'utente';
+$string['privacy:metadata:branch'] = 'Registro delle pagine visualizzate.';
+$string['privacy:metadata:branch:flag'] = 'Scelta di calcolare la pagina successiva in modo casuale.';
+$string['privacy:metadata:branch:nextpageid'] = 'ID della pagina seguente';
+$string['privacy:metadata:branch:pageid'] = 'ID della pagina';
+$string['privacy:metadata:branch:retry'] = 'Numero del tentativo';
+$string['privacy:metadata:branch:timeseen'] = 'Orario di visualizzazione della pagina';
+$string['privacy:metadata:branch:userid'] = 'ID dell\'utente';
+$string['privacy:metadata:grades'] = 'Record delle valutazioni per ogni lezione.';
+$string['privacy:metadata:grades:completed'] = 'Data di assegnazione della valutazione.';
+$string['privacy:metadata:grades:grade'] = 'Valutazione data.';
+$string['privacy:metadata:grades:userid'] = 'ID dell\'utente';
+$string['privacy:metadata:overrides'] = 'Record delle sostituzioni per ogni lezione.';
+$string['privacy:metadata:overrides:available'] = 'Data e ora in cui è possibile effettuare un tentativo della lezione.';
+$string['privacy:metadata:overrides:deadline'] = 'Scadenza per il completamento della lezione.';
+$string['privacy:metadata:overrides:maxattempts'] = 'Numero massimo di tentativi';
+$string['privacy:metadata:overrides:password'] = 'Password di accesso alla lezione';
+$string['privacy:metadata:overrides:retake'] = 'Scelta di consentire agli studenti di svolgere la lezione più di una volta.';
+$string['privacy:metadata:overrides:review'] = 'Scelta di consentire agli studenti di riprovare la risposta a una domanda.';
+$string['privacy:metadata:overrides:timelimit'] = 'Limite di tempo in secondi per completare la lezione.';
+$string['privacy:metadata:overrides:userid'] = 'ID dell\'utente';
+$string['privacy:metadata:timer'] = 'Record dei tentativi della lezione.';
+$string['privacy:metadata:timer:completed'] = 'Stato di completamento del tentativo.';
+$string['privacy:metadata:timer:lessontime'] = 'Ultimo momento di registrazione dell\'attività.';
+$string['privacy:metadata:timer:starttime'] = 'Data e ora di inizio del tentativo.';
+$string['privacy:metadata:timer:timemodifiedoffline'] = 'Ultimo momento di registrazione dell\'attività dall\'app mobile.';
+$string['privacy:metadata:timer:userid'] = 'ID dell\'utente';
+$string['privacy:metadata:userpref:lessonview'] = 'Modalità di visualizzazione preferita per la modifica delle lezioni.';
+$string['privacy:path:pages'] = 'Pagine';
 $string['processerror'] = 'Si è verificato un errore durante l\'elaborazione!';
 $string['progressbar'] = 'Barra di avanzamento';
 $string['progressbar_help'] = 'Consente di visualizzare una barra con la percentuale di completamento.';

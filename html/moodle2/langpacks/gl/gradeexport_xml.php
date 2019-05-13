@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Cualificación exportada a XML';
 $string['pluginname'] = 'Ficheiro XML';
+$string['privacy:metadata'] = 'O engadido de exportación de cualificacións a XML non almacena ningún dato persoal.';
 $string['xml:publish'] = 'Publicar a exportación de cualificacións XML';
 $string['xml:view'] = 'Empregar a exportación de cualificacións a XML';

@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_nntpchangepasswordurl_key'] = 'Password-change URL';
+$string['auth_nntpchangepasswordurl_key'] = 'URL αλλαγής κωδικού πρόσβασης';
 $string['auth_nntpdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν NNTP server για να ελέγξει εάν ένα δοσμένο όνομα χρήστη ή κωδικός πρόσβασης είναι έγκυρα';
 $string['auth_nntphost'] = 'Η διεύθυνση του NNTP server. Χρησιμοποιείστε το IP νούμερο και όχι το DNS όνομα.';
 $string['auth_nntphost_key'] = 'Διακομιστής φιλοξενίας';
-$string['auth_nntpnotinstalled'] = 'Αδυναμία χρήσης αυθεντικοποίησης NNTP. Το άρθρωμα PHP IMAP δεν έχει εγκατασταθεί.';
+$string['auth_nntpnotinstalled'] = 'Δεν είναι δυνατή η χρήση της αυθεντικοποίησης NNTP. Το άρθρωμα NNTP της PHP δεν είναι εγκατεστημένο.';
 $string['auth_nntpport'] = 'Η θύρα του server. (η 119 χρησιμοποιείται πιο συχνά)';
 $string['auth_nntpport_key'] = 'Port';
 $string['pluginname'] = 'Χρήση NNTP server.';

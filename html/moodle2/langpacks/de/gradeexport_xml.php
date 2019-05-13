@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Bewertung als XML exportiert';
 $string['pluginname'] = 'XML-Datei';
-$string['privacy:metadata'] = 'Das XML-Datei Exportplugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das XML-Datei Exportplugin speichert keine personenbezogenen Daten.';
 $string['xml:publish'] = 'Bewertungen als XML-Datei veröffentlichen';
 $string['xml:view'] = 'Bewertungen als XML-Datei exportieren';

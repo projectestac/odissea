@@ -38,19 +38,12 @@ $string['aliases_help'] = '<p>Cada entrada del glossari pot tenir associada una 
 $string['allcategories'] = 'Totes les categories';
 $string['allentries'] = 'TOTES';
 $string['allowcomments'] = 'Permeteu comentaris en les entrades?';
-$string['allowcomments_help'] = '<p>Es pot permetre que l\'estudiantat afegeixi comentaris a les entrades del glossari.</p>
-
-<p>Podeu triar si aquesta característica s\'habilita o no.</p>
-
-<p>El professorat sempre pot afegir comentaris a les entrades d\'un glossari.</p>';
+$string['allowcomments_help'] = 'Si s\'habilita aquesta opció, tots els participants amb permisos per crear comentaris podran afegir comentaris a les entrades del glossari.';
 $string['allowduplicatedentries'] = 'Permeteu entrades duplicades?';
 $string['allowduplicatedentries_help'] = '<p>Si activeu aquesta opció, diferents entrades poden utilitzar el mateix nom de concepte.</p>';
 $string['allowprintview'] = 'Permeteu visualització per a imprimir?';
-$string['allowprintview_help'] = '<p>Es pot permetre que l\'estudiantat utilitzi la visualització per a imprimir del glossari.</p>
-
-<p>Podeu triar si aquesta característica s\'habilita o no.</p>
-
-<p>El professorat sempre pot utilitzar la visualització per a imprimir.</p';
+$string['allowprintview_help'] = 'Si s\'habilita aquesta opció, es facilitarà als estudiants
+un enllaç a una versió per imprimir del glossari. Aquest enllaç sempre es troba disponible per als professors.';
 $string['andmorenewentries'] = 'i més de {$a} noves entrades.';
 $string['answer'] = 'Resposta';
 $string['approvaldisplayformat'] = 'Format de visualització d\'aprovació';
@@ -119,7 +112,7 @@ $string['currentglossary'] = 'Glossari actual';
 $string['date'] = 'data';
 $string['dateview'] = 'Navega per data';
 $string['defaultapproval'] = 'Estat d\'aprovació per defecte';
-$string['defaultapproval_help'] = '<p>Aquest paràmetre permet que el professorat defineixi què passa amb les noves entrades afegides per l\'estudiantat: es poden fer disponibles automàticament a tothom, o també es pot fer que el professor les hagi d\'aprovar una per una.</p>';
+$string['defaultapproval_help'] = 'Si s\'estableix a «No», caldrà que el professor aprovi les entrades abans que estiguin visibles per a tothom.';
 $string['defaulthook'] = 'Enganxament per defecte';
 $string['defaultmode'] = 'Mode per defecte';
 $string['defaultsortkey'] = 'Clau d\'ordenació per defecte';
@@ -151,7 +144,7 @@ $string['displayformat_help'] = '<p>Hi ha 7 formats que són:</p>
 <dd>Sembla un diccionari convencional amb entrades separades. No es visualitzen els autors i els fitxers adjunts apareixen com a enllaços.</dd>
 
 <dt><b>Continu sense autor</b>:</dt>
-<dd>Les entrades es mostren una rere l\'altra sense cap separació llevat de les icones d\'edició</dd>
+<dd>Les entrades es mostren una rere l\'altra sense cap separació, llevat de les icones d\'edició</dd>
 
 <dt><b>Complet amb autor</b>:</dt>
 <dd>Un format de visualització estil fòrum amb les dades de l\'autor. Els fitxers adjunts es mostren com a enllaços.</dd>
@@ -160,13 +153,13 @@ $string['displayformat_help'] = '<p>Hi ha 7 formats que són:</p>
 <dd>Un format de visualització estil fòrum, sense dades de l\'autor. Els fitxers adjunts es mostren com a enllaços.</dd>
 
 <dt><b>Enciclopèdia</b>:</dt>
-<dd>Com el \'Complet amb autor\' però les imatges adjuntes es visualitzen dins de l\'entrada.</dd>
+<dd>Com el «Complet amb autor», però les imatges adjuntes es visualitzen dins l\'entrada.</dd>
 
 <dt><b>Llista d\'entrades</b>:</dt>
-<dd>Els conceptes estan llistats amb enllaços</dd>
+<dd>Els conceptes estan enumerats amb enllaços</dd>
 
 <dt><b>PMF</b>:</dt>
-<dd>Les paraules PREGUNTA i RESPOSTA encapçalen el concepte i la definició respectivament.</dd>
+<dd>Les paraules PREGUNTA i RESPOSTA encapçalen el concepte i la definició, respectivament.</dd>
 
 </dl>
 </blockquote>';

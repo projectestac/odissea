@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'πρωτόκολλο REST';
+$string['privacy:metadata'] = 'Το πρόσθετο πρωτοκόλλου REST δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['rest:use'] = 'Χρήση πρωτοκόλλου REST';

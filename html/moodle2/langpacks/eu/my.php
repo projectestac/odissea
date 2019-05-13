@@ -26,19 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Gehitu orria';
-$string['alldashboardswerereset'] = 'Aginte-panel guztiak berezko baloreetara berrezarri dira.';
-$string['allprofileswerereset'] = 'Profil-orri guztiak berezko baloreetara berrezarri dira.';
-$string['defaultpage'] = 'Berezko Nire Moodle orria';
-$string['defaultprofilepage'] = 'Berezko profil-orria';
+$string['alldashboardswerereset'] = 'Aginte-panel guztiak lehenetsitako balioetara berrezarri dira.';
+$string['allprofileswerereset'] = 'Profil-orri guztiak lehenetsitako balioetara berrezarri dira.';
+$string['defaultpage'] = 'Nire Moodle orri lehenetsia';
+$string['defaultprofilepage'] = 'Lehenetsitako profil-orria';
 $string['delpage'] = 'Ezabatu orria';
 $string['managepages'] = 'Kudeatu orriak';
 $string['mymoodle'] = 'Aginte-panela';
 $string['nocourses'] = 'Ez dago ikastaroei buruzko informaziorik';
 $string['noguest'] = 'Aginte-panela ez dago bisitarien eskura';
-$string['pinblocks'] = 'Nire Moodle-rako blokeen ezarpenak';
+$string['pinblocks'] = 'Konfiguratu nire Moodle-rako ainguratutako blokeak';
 $string['pinblocksexplan'] = 'Hemen ezartzen duzun edozin bloke ikusiko du (baina ezingo du editatu) Moodle-ren edozein erabiltzailek bere "Nire Moodle" orrian.';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Aginta-paneleko konfiguratutako erabiltzailearen hasiera-orriaren hobespena.';
 $string['reseterror'] = 'Errorea gertatu da zure orria berrabiaraztean';
-$string['reseteveryonesdashboard'] = 'Berrezarri aginte-panela erabiltzaile guztiei';
-$string['reseteveryonesprofile'] = 'Berrezarri profila erabiltzaile guztiei';
-$string['resetpage'] = 'Berrezarri orria berezkora';
+$string['reseteveryonesdashboard'] = 'Berrezarri erabiltzaile guztien aginte-panela';
+$string['reseteveryonesprofile'] = 'Berrezarri erabiltzaile guztien profila';
+$string['resetpage'] = 'Berrezarri orriaren lehenetsitako balioak';

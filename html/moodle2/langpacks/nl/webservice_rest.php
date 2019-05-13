@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'REST protocol';
+$string['privacy:metadata'] = 'De REST protocol-plugin bewaart geen persoonlijke gegevens.';
 $string['rest:use'] = 'Gebruik REST protocol';

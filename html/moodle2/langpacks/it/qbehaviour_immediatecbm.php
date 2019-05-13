@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Per favore scegli il livello di confidenza.';
 $string['pluginname'] = 'Feedback immediato con CBM';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Feedback immediato con CBM\' non memorizza dati personali.';

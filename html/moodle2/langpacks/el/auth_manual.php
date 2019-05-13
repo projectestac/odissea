@@ -26,5 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_manualdescription'] = 'Αυτή η μέθοδος αφαιρεί τη δυνατότητα από τους χρήστες να δημιουργούν δικούς τους λογαριασμούς. Όλοι οι λογαριασμοί πρέπει να δημιουργηθούν από το διαχειριστή.';
+$string['expiration'] = 'Ενεργοποίηση λήξης κωδικού πρόσβασης';
+$string['expiration_desc'] = 'Να επιτρέπεται η λήξη των κωδικών πρόσβασης μετά από καθορισμένο χρόνο.';
+$string['expiration_warning'] = 'Όριο για ειδοποιήσεις';
+$string['expiration_warning_desc'] = 'Αριθμός ημερών πριν από τη λήξη του κωδικού πρόσβασης, που αποστέλεται μια ειδοποίηση.';
+$string['passwdexpire_settings'] = 'Ρυθμίσεις λήξης κωδικού πρόσβασης';
 $string['passwdexpiretime'] = 'Διάρκεια κωδικού πρόσβασης';
+$string['passwdexpiretime_desc'] = 'Διάρκεια χρόνου για τον οποίο ισχύει ένας κωδικός πρόσβασης.';
 $string['pluginname'] = 'Μη αυτόματη δημιουργία λογαριασμού';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'Η ημερομηνία της τελευταίας αλλαγής κωδικού πρόσβασης.';

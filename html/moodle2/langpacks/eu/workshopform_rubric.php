@@ -39,4 +39,4 @@ $string['mustbeunique'] = 'Mailarako kalifikazioek bakarrak izan behar dute iriz
 $string['mustchooseone'] = 'Elementu hauetako bat aukeratu behar duzu';
 $string['mustdefinelevel'] = 'Gutxienez maila bat beharrezkoa da';
 $string['pluginname'] = 'Errubrika';
-$string['privacy:metadata'] = 'Errubrika';
+$string['privacy:metadata'] = 'Errubrika pluginak ebaluazio fitxatik hartutako zehaztapenak gordetzen ditu soilik. Tailer moduluaren fitxa nola bete denari buruzko datu pertsonalak gordetzen ditu eta esportatutako ebaluazioei txertatzen zaie.';

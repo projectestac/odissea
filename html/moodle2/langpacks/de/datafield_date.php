@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Datumsfeld';
 $string['pluginname'] = 'Datum';
-$string['privacy:metadata'] = 'Die Datumsfeldkomponente speichert selber keine persönlichen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Komponente \'Datumsfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

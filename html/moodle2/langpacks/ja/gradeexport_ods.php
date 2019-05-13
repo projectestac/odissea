@@ -30,4 +30,4 @@ $string['ods:publish'] = 'ODS評定エクスポートを公開する';
 $string['ods:view'] = 'OpenDocument評定エクスポートを使用する';
 $string['pluginname'] = 'OpenDocumentスプレッドシート';
 $string['privacy:metadata'] = 'OpenDocumentスプレッドシート評定エクスポートプラグインはどのような個人データも保存しません。';
-$string['timeexported'] = 'このコースからの最新ダウンロード';
+$string['timeexported'] = 'このコースからの最新ダウンロード日時';

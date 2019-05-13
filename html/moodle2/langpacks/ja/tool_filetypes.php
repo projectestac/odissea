@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addfiletypes'] = '新しいファイルタイプを追加する';
 $string['corestring'] = '代替言語ストリング';
-$string['corestring_help'] = 'この設定はmimetypes.php言語ファイルから異なる言語ストリングを選択するために使用することができます。通常、空白にしてください。カスタムタイプの場合、説明フィールドを使用してください。';
+$string['corestring_help'] = 'この設定はmimetypes.php言語ファイルから異なる言語ストリングを選択するため使用することができます。通常は空白にしてください。カスタムタイプの場合、説明フィールドを使用してください。';
 $string['defaulticon'] = 'MIMEタイプのデフォルトアイコン';
 $string['defaulticon_help'] = '同一MIMEタイプに複数のファイル拡張子がある場合、MIMEタイプからアイコンを決定できるよう拡張子の1つでこのオプションを選択してください。';
 $string['deletea'] = '{$a} を削除する';
@@ -49,22 +49,22 @@ $string['editfiletypes'] = '既存のファイルタイプを編集する';
 $string['emptylist'] = '定義されたファイルタイプはありません。';
 $string['error_addentry'] = 'ファイルタイプ拡張子、説明、MIMEタイプおよびアイコンには改行およびセミコロン文字を含むことはできません。';
 $string['error_defaulticon'] = 'すでに同じMIMEタイプの別のファイル拡張子がデフォルトアイコンとしてマークされています。';
-$string['error_extension'] = 'ファイル拡張子 <strong>{$a}</strong> がすでに存在するか、無効です。ファイル拡張子はユニークである必要があり、特殊文字を含むことはできません。';
+$string['error_extension'] = 'ファイル拡張子 <strong>{$a}</strong> がすでに存在しているか無効です。ファイル拡張子はユニークである必要があります。また、特殊文字を含むことはできません。';
 $string['error_notfound'] = '拡張子 {$a} のファイルタイプは見つかりませんでした。';
 $string['extension'] = '拡張子';
 $string['extension_help'] = 'ドットなしのファイル名拡張子 例) 「mobi」';
 $string['groups'] = 'タイプグループ';
 $string['groups_help'] = 'このタイプが属する任意のファイルタイプグループ一覧です。「document」および「image」のような一般的なカテゴリがあります。';
 $string['icon'] = 'ファイルアイコン';
-$string['icon_help'] = 'アイコンファイル名
+$string['icon_help'] = 'アイコンファイル名です。
 
 あなたのMoodleインストレーション内の/pix/fディレクトリより取得されたアイコン一覧です。必要であれば、あなたはこのフォルダにカスタムアイコンを追加することができます。';
 $string['mimetype'] = 'MIMEタイプ';
-$string['mimetype_help'] = 'このファイルに関連付けられているMIMEタイプ 例) 「application/x-mobipocket-ebook」';
+$string['mimetype_help'] = 'このファイルに関連付けられているMIMEタイプです。 例) 「application/x-mobipocket-ebook」';
 $string['pluginname'] = 'ファイルタイプ';
 $string['privacy:metadata'] = 'ファイルタイププラグインはどのような個人データも保存しません。';
 $string['revert'] = '{$a} をMoodleデフォルトにリストアする';
-$string['revert_confirmation'] = '本当にあなたの変更を破棄して、<strong>.{$a}</strong> をMoodleデフォルトとしてリストアしてもよろしいですか?';
+$string['revert_confirmation'] = '本当にあなたの変更を破棄して <strong>.{$a}</strong> をMoodleデフォルトとしてリストアしてもよろしいですか?';
 $string['revertfiletype'] = 'ファイルタイプをリストアする';
 $string['source'] = 'タイプ';
 $string['source_custom'] = 'カスタム';

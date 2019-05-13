@@ -72,6 +72,6 @@ $string['sitelogo'] = 'Logótipo do site';
 $string['sitename'] = 'Mostrar nome do site juntamente com logótipo pequeno';
 $string['sitenamedesc'] = 'Se não existir um logótipo pequeno, o nome do site é sempre mostrado na barra de navegação. Se for definido um logótipo pequeno, este poderá ser exibido com ou sem o nome do site.';
 $string['smalllogo'] = 'Logótipo pequeno';
-$string['smalllogodesc'] = 'O logótipo pequeno é exibido na barra de navegação. Se existir um logótipo de cabeçalho para a primeira página e para a página de autenticação, o logótipo pequeno não é apresentado nestas páginas. Se um logótipo não for adicionado aqui, será usado o logótipo reduzido que foi definido em Aparência > Logótipos.';
+$string['smalllogodesc'] = 'O logótipo pequeno é exibido na barra de navegação. Se existir um logótipo de cabeçalho para a primeira página e para a página de autenticação, o logótipo pequeno não é apresentado nestas páginas. Se não for adicionado um logótipo, será usado o logótipo reduzido que foi definido em Aparência > Logótipos.';
 $string['textcolor'] = 'Cor do texto';
 $string['textcolor_desc'] = 'Use o selecionador de cores para definir a cor a usar no texto.';

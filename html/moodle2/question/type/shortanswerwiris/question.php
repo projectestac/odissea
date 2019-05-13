@@ -247,48 +247,17 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         return $text;
     }
 
-    public function is_complete_response(array $response) {
-        if (array_key_exists('answer', $response) && $this->is_empty_mathml($response['answer'])) {
-            return false;
-        } else {
-            return parent::is_complete_response($response);
-        }
-    }
-
-    public function is_gradable_response(array $response) {
-        return $this->is_complete_response($response);
-    }
-
-    private function is_empty_mathml($string) {
-        $mathml = simplexml_load_string($string);
-        if (gettype($mathml) != 'boolean' && $mathml->getName() == 'math' && count($mathml->children()) == 0) {
-
-            return true;
-        }
-        return false;
-    }
-
     private function is_text_answer() {
-        if (!empty($this->parent)) {
-            return true;
-        }
-        $wrap = com_wiris_system_CallWrapper::getInstance();
-        $wrap->start();
         // @codingStandardsIgnoreStart
-        $inputfield = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD);
-        $inputtext = ($inputfield == com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_INPUT_FIELD_PLAIN_TEXT);
+        $inputfield = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_ANSWER_FIELD_TYPE);
+        $inputtext = ($inputfield == com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_TEXT);
         // @codingStandardsIgnoreEnd
-        $wrap->stop();
-
         return $inputtext;
     }
 
     private function is_compound_answer() {
-        $wrap = com_wiris_system_CallWrapper::getInstance();
-        $wrap->start();
         // @codingStandardsIgnoreLine
-        $iscompound = $this->wirisquestion->question->getImpl()->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER);
-        $wrap->stop();
+        $iscompound = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER);
         return ($iscompound == 'true');
     }
 

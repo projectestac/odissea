@@ -27,35 +27,51 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actual'] = 'Πραγματικά';
 $string['aftertable'] = 'Μετά τον πίνακα:';
-$string['back'] = 'Πίσω';
-$string['backtomainview'] = 'Επιστροφή στην Κεντρική';
-$string['cannotuseidfield'] = 'Το πεδίο "id" δεν μπορεί να εισαχθεί. Συμπληρώνεται αυτόματα';
+$string['back'] = 'Επιστροφή';
+$string['backtomainview'] = 'Επιστροφή στην κεντρική';
+$string['cannotuseidfield'] = 'Το πεδίο «id» δεν μπορεί να εισαχθεί. Συμπληρώνεται αυτόματα με τον επόμενο αριθμό';
 $string['change'] = 'Αλλαγή';
 $string['charincorrectlength'] = 'Λάθος μήκος πεδίου χαρακτήρων';
-$string['checkbigints'] = 'Έλεγχος μεγάλων αριθμών';
-$string['check_bigints'] = 'Έλεγχος για εσφαλμένους αριθμούς';
-$string['checkdefaults'] = 'Έλεγχος εξορισμού τιμών';
-$string['check_defaults'] = 'Έλεγχος για εσφαλμένες εξορισμού τιμές';
-$string['checkforeignkeys'] = 'Έλεγχος κλειδιών';
-$string['check_foreign_keys'] = 'Έλεγχος για παραβιάσεις κλειδιών';
+$string['checkbigints'] = 'Έλεγχος ακεραίωναριθμών';
+$string['check_bigints'] = 'Έλεγχος για εσφαλμένους ακέραιους αριθμούς ΒΔ';
+$string['checkdefaults'] = 'Έλεγχος προεπιλογών';
+$string['check_defaults'] = 'Έλεγχος για ασυνεπείς προεπιλεγμένες τιμές';
+$string['checkforeignkeys'] = 'Έλεγχος ξένων κλειδιών';
+$string['check_foreign_keys'] = 'Έλεγχος για παραβιάσεις ξένων κλειδιών';
 $string['checkindexes'] = 'Έλεγχος ευρετηρίων';
-$string['check_indexes'] = 'Έλεγχος για μη υπάρχοντα ευρετήρια';
-$string['completelogbelow'] = '(δείτε το πλήρες ιστορικό της έρευνας παρακάτω)';
-$string['confirmcheckbigints'] = 'This functionality will search for <a href="http://tracker.moodle.org/browse/MDL-11038">potential wrong integer fields</a> in your Moodle server, generating (but not executing!) automatically the needed SQL statements to have all the integers in your DB properly defined.<br /><br />
-Once generated you can copy such statements and execute them safely with your favourite SQL interface (don\'t forget to backup your data before doing that).<br /><br />
-It\'s highly recommended to be running the latest (+ version) available of your Moodle release (1.8, 1.9, 2.x ...) before executing the search of wrong integers.<br /><br />
-This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
-$string['confirmcheckdefaults'] = 'This functionality will search for inconsistent default values in your Moodle server, generating (but not executing!) the needed SQL statements to have all the default values properly defined.<br /><br />
-Once generated you can copy such statements and execute them safely with your favourite SQL interface (don\'t forget to backup your data before doing that).<br /><br />
-It\'s highly recommended to be running the latest (+ version) available of your Moodle release (1.8, 1.9, 2.x ...) before executing the search of inconsistent default values.<br /><br />
-This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
-$string['confirmcheckforeignkeys'] = 'This functionality will search for potential violations of the foreign keys defined in the install.xml definitions. (Moodle does not currently generate acutal foreign key constraints in the database, which is why invalid data may be present.)<br /><br />
-It\'s highly recommended to be running the latest (+ version) available of your Moodle release (1.8, 1.9, 2.x ...) before executing the search of missing indexes.<br /><br />
-This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
-$string['confirmcheckindexes'] = 'This functionality will search for potential missing indexes in your Moodle server, generating (but not executing!) automatically the needed SQL statements to keep everything updated.<br /><br />
-Once generated you can copy such statements and execute them safely with your favourite SQL interface (don\'t forget to backup your data before doing that).<br /><br />
-It\'s highly recommended to be running the latest (+ version) available of your Moodle release (1.8, 1.9, 2.x ...) before executing the search of missing indexes.<br /><br />
-This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
+$string['check_indexes'] = 'Έλεγχος για ελλείποντα ευρετήρια ΒΔ';
+$string['checkoraclesemantics'] = 'Σημασιολογικός έλεγχος';
+$string['check_oracle_semantics'] = 'Αναζητήστε σημασιολογία λανθασμένου μήκους';
+$string['completelogbelow'] = '(δείτε την πλήρη καταγραφή της αναζήτησης παρακάτω)';
+$string['confirmcheckbigints'] = 'Αυτή η λειτουργία θα αναζητήσει <a href="http://tracker.moodle.org/browse/MDL-11038"> πιθανά λανθασμένα πεδία ακέραιων αριθμών</a> στον εξυπηρετητή σας Moodle, δημιουργώντας (αλλά όχι εκτελώντας!) αυτόματα τις απαραίτητες SQL δηλώσεις για να είναι όλοι οι ακέραιοι στη ΒΔ σας κατάλληλα ορισμένοι.
+
+Μόλις δημιουργηθούν, μπορείτε να αντιγράψετε αυτές τις δηλώσεις και να τις εκτελέσετε με ασφάλεια με την διεπαφή SQL που προτιμάτε (μην ξεχάσετε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πριν κάνετε κάτι τέτοιο).
+
+Συνιστάται ιδιαίτερα να εκτελείτε την πιο πρόσφατη διαθέσιμη διανομή (+ έκδοση) του Moodle πριν εκτελέσετε την αναζήτηση λανθασμένων ακέραιων αριθμών.
+
+Αυτή η λειτουργία δεν εκτελεί καμία ενέργεια στην ΒΔ (μόνο διαβάζει από αυτή), έτσι μπορεί να εκτελεστεί με ασφάλεια ανά πάσα στιγμή.';
+$string['confirmcheckdefaults'] = 'Αυτή η λειτουργία θα αναζητήσει ασυνεπείς προεπιλεγμένες τιμές στον εξυπηρετητή σας Moodle, δημιουργώντας (αλλά όχι εκτελώντας!) τις απαραίτητες δηλώσεις SQL για να έχετε όλες τις προεπιλεγμένες τιμές σωστά ορισμένες.
+
+Μόλις δημιουργηθούν, μπορείτε να αντιγράψετε αυτές τις δηλώσεις και να τις εκτελέσετε με ασφάλεια με την διεπαφή SQL που προτιμάτε (μην ξεχάσετε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πριν κάνετε κάτι τέτοιο).
+
+Συνιστάται ιδιαίτερα να εκτελείτε την πιο πρόσφατη διανομή (+ έκδοση) του Moodle  πριν εκτελέσετε την αναζήτηση των ασυνεπών προεπιλεγμένων τιμών.
+
+Αυτή η λειτουργία δεν εκτελεί καμία ενέργεια στην ΒΔ (μόνο διαβάζει από αυτή), έτσι μπορεί να εκτελεστεί με ασφάλεια ανά πάσα στιγμή.';
+$string['confirmcheckforeignkeys'] = 'Αυτή η λειτουργία θα αναζητήσει πιθανές παραβιάσεις των ξένων κλειδιών που ορίζονται στους ορισμούς install.xml. (Το Moodle δεν παράγει επί του παρόντος πραγματικούς περιορισμούς ξένου κλειδιού στη βάση δεδομένων, γι\'αυτό και ίσως να υπάρχουν μη έγκυρα δεδομένα.) Συνιστάται ιδιαίτερα να εκτελείτε την πιο πρόσφατη (+) έκδοση του Moodle πριν εκτελέσετε την αναζήτηση πιθανών παραβιάσεων ξένων κλειδιών. Αυτή η λειτουργία δεν εκτελεί καμία ενέργεια κατά της ΒΔ (μόνο διαβάζει από τη ΒΔ), έτσι μπορεί να εκτελεστεί με ασφάλεια ανά πάσα στιγμή.';
+$string['confirmcheckindexes'] = 'Αυτή η λειτουργία θα θα ψάξει για ευρετήρια που μπορεί να λείπουν από τον εξυπηρετητή σας Moodle, δημιουργώντας (αλλά όχι εκτελώντας!) αυτόματα τις απαραίτητες δηλώσεις SQL για να διατηρήσουν τα πάντα ενημερωμένα.
+
+Μόλις δημιουργηθούν, μπορείτε να αντιγράψετε αυτές τις δηλώσεις και να τις εκτελέσετε με ασφάλεια με την διεπαφή SQL που προτιμάτε (μην ξεχάσετε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πριν κάνετε κάτι τέτοιο).
+
+Συνιστάται ιδιαίτερα να εκτελείτε την πιο πρόσφατη διαθέσιμη διανομή (+ έκδοση) του Moodle πριν εκτελέσετε την αναζήτηση ευρετηρίων που λείπουν.
+
+Αυτή η λειτουργία δεν εκτελεί καμία ενέργεια στην ΒΔ (μόνο διαβάζει από αυτή), έτσι μπορεί να εκτελεστεί με ασφάλεια ανά πάσα στιγμή.';
+$string['confirmcheckoraclesemantics'] = 'Αυτή η λειτουργία θα ψάξει για <a href="http://tracker.moodle.org/browse/MDL-29322"> στήλες Oracle varchar2 που χρησιμοποιούν σημασιολογία BYTE</a> στον εξυπηρετητή σας Moodle, δημιουργώντας (αλλά όχι εκτελώντας!) αυτόματα τις απαραίτητες δηλώσεις SQL για να γίνει αλλαγή και να χρησιμοποιούν πλέον όλες οι στήλες την σημασιολογία CHAR (καλύτερη για συμβατότητα cross-db και αυξημένο μέγιστο μήκος περιεχομένου).
+
+Μόλις δημιουργηθούν, μπορείτε να αντιγράψετε αυτές τις δηλώσεις και να τις εκτελέσετε με ασφάλεια με την διεπαφή SQL που προτιμάτε (μην ξεχάσετε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πριν κάνετε κάτι τέτοιο).
+
+Συνιστάται ιδιαίτερα να εκτελείτε την πιο πρόσφατη διαθέσιμη διανομή (+ έκδοση) του Moodle πριν εκτελέσετε την αναζήτηση της σημασιολογίας BYTE.
+
+Αυτή η λειτουργία δεν εκτελεί καμία ενέργεια στην ΒΔ (μόνο διαβάζει από αυτή), έτσι μπορεί να εκτελεστεί με ασφάλεια ανά πάσα στιγμή.';
 $string['confirmdeletefield'] = 'Θέλετε σίγουρα να διαγράψετε το πεδίο:';
 $string['confirmdeleteindex'] = 'Θέλετε σίγουρα να διαγράψετε το ευρετήριο:';
 $string['confirmdeletekey'] = 'Θέλετε σίγουρα να διαγράψετε το κλειδί:';
@@ -63,99 +79,143 @@ $string['confirmdeletetable'] = 'Θέλετε σίγουρα να διαγράψ
 $string['confirmdeletexmlfile'] = 'Θέλετε σίγουρα να διαγράψετε το αρχείο:';
 $string['confirmrevertchanges'] = 'Θέλετε σίγουρα να ακυρώσετε τις αλλαγές που κάνατε:';
 $string['create'] = 'Δημιουργία';
-$string['createtable'] = 'Δημιουργία Πίνακα:';
+$string['createtable'] = 'Δημιουργία πίνακα:';
 $string['defaultincorrect'] = 'Λάθος προεπιλογή';
 $string['delete'] = 'Διαγραφή';
-$string['delete_field'] = 'Διαγραφή Πεδίου';
-$string['delete_index'] = 'Διαγραφή Ευρετηρίου';
-$string['delete_key'] = 'Διαγραφή Κλειδιού';
-$string['delete_table'] = 'Διαγραφή Πίνακα';
-$string['delete_xml_file'] = 'Διαγραφή XML Αρχείου';
+$string['delete_field'] = 'Διαγραφή πεδίου';
+$string['delete_index'] = 'Διαγραφή ευρετηρίου';
+$string['delete_key'] = 'Διαγραφή κλειδιού';
+$string['delete_table'] = 'Διαγραφή πίνακα';
+$string['delete_xml_file'] = 'Διαγραφή XML αρχείου';
 $string['doc'] = 'Doc';
+$string['docindex'] = 'Ευρετηρίο τεκμηρίωσης:';
+$string['documentationintro'] = 'Αυτή η τεκμηρίωση δημιουργείται αυτόματα από τον ορισμό βάσης δεδομένων XMLDB. Είναι διαθέσιμη μόνο στα Αγγλικά.';
 $string['down'] = 'Κάτω';
-$string['duplicate'] = 'Δημιουργία Αντιγράφου';
-$string['duplicatefieldname'] = 'Υπάρχει άλλο πεδίο με το ίδιο όνομα';
-$string['duplicatekeyname'] = 'Υπάρχει άλλο κλειδί με το ίδιο όνομα';
+$string['duplicate'] = 'Δημιουργία αντιγράφου';
+$string['duplicatefieldname'] = 'Υπάρχει άλλο πεδίο με αυτό το όνομα';
+$string['duplicatefieldsused'] = 'Χρησιμοποιούνται διπλότυπα πεδία';
+$string['duplicateindexname'] = 'Διπλότυπο όνομα ευρετηρίου';
+$string['duplicatekeyname'] = 'Υπάρχει άλλο κλειδί με αυτό το όνομα';
+$string['duplicatetablename'] = 'Ένας άλλος πίνακας με αυτό το όνομα υπάρχει ήδη';
 $string['edit'] = 'Επεξεργασία';
-$string['edit_field'] = 'Επεξεργασία Πεδίου';
-$string['edit_index'] = 'Επεξεργασία Ευρετηρίου';
-$string['edit_key'] = 'Επεξεργασία Κλειδιού';
-$string['edit_table'] = 'Επεξεργασία Πίνακα';
-$string['edit_xml_file'] = 'Επεξεργασία XML Αρχείου';
+$string['edit_field'] = 'Επεξεργασία πεδίου';
+$string['edit_field_save'] = 'Αποθήκευση πεδίου';
+$string['edit_index'] = 'Επεξεργασία ευρετηρίου';
+$string['edit_index_save'] = 'Αποθήκευση ευρετηρίου';
+$string['edit_key'] = 'Επεξεργασία κλειδιού';
+$string['edit_key_save'] = 'Αποθήκευση κλειδιού';
+$string['edit_table'] = 'Επεξεργασία πίνακα';
+$string['edit_table_save'] = 'Αποθήκευση πίνακα';
+$string['edit_xml_file'] = 'Επεξεργασία XML αρχείου';
 $string['enumvaluesincorrect'] = 'Λάθος τιμή πεδίου απαρίθμησης';
 $string['expected'] = 'Αναμενόμενο';
-$string['extensionrequired'] = 'Δε μπορείτε να εκτελέσετε αυτή την ενέργεια γιατί αυτό απαιτεί να είναι εγκατεστημένη η επέκταση "{$a}" της PHP. Εγκαταστήστε την αν θέλετε να προχωρήσετε.';
+$string['extensionrequired'] = 'Λυπούμαστε - για αυτή την ενέργεια απαιτείται η επέκταση «{$a}» της PHP. Παρακαλούμε εγκαταστήστε την αν θέλετε να χρησιμοποιήσετε αυτό το χαρακτηριστικό.';
 $string['field'] = 'Πεδίο';
-$string['fieldnameempty'] = 'Άδειο πεδίο ονόματος';
+$string['fieldnameempty'] = 'Κενό πεδίο ονόματος';
 $string['fields'] = 'Πεδία';
+$string['fieldsnotintable'] = 'Το πεδίο δεν υπάρχει στον πίνακα';
+$string['fieldsusedinindex'] = 'Αυτό το πεδίο χρησιμοποιείται ως ευρετήριο';
 $string['fieldsusedinkey'] = 'Το πεδίο αυτό χρησιμοποιείται σαν κλειδί.';
+$string['filemodifiedoutfromeditor'] = 'Προειδοποίηση: Το αρχείο τροποποιείται τοπικά κατά τη χρήση του επεξεργαστή XMLDB. Η αποθήκευση θα αντικαταστήσει τις τοπικές αλλαγές.';
 $string['filenotwriteable'] = 'Μη εγγράψιμο αρχείο';
-$string['fkviolationdetails'] = 'Το κλειδί {$a->keyname} στον πίνακα {$a->tablename} παραβιάζεται {$a->numviolations} φορές σε {$a->numrows} συνολικά εγγραφές.';
-$string['floatincorrectdecimals'] = 'Λάθος αριθμός δεκαδικών ψηφίων πεδίου πραγματικού αριθμού';
-$string['floatincorrectlength'] = 'Λάθος μήκος πεδίου πραγματικού αριθμού';
-$string['generate_documentation'] = 'Οδηγίες χρήσης';
-$string['gotolastused'] = 'Μετάβαση στο τελευταίο χρησιμοποιούμενο αρχείο';
+$string['fkunknownfield'] = 'Το ξένο κλειδί (foreign key) {$a->keyname} στον πίνακα {$a->tablename} δείχνει προς ένα ανύπαρκτο πεδίο {$a->reffield} στον αναφερόμενο πίνακα {$a->reftable}.';
+$string['fkunknowntable'] = 'Το ξένο κλειδί (foreign key) {$a->keyname} στον πίνακα {$a->tablename} δείχνει προς ένα ανύπαρκτο πίνακα {$a->reftable}.';
+$string['fkviolationdetails'] = 'Το κλειδί {$a->keyname} στον πίνακα {$a->tablename} παραβιάζεται {$a->numviolations} φορές σε {$a->numrows} συνολικά γραμμές.';
+$string['float2numbernote'] = 'Σημείωση: Παρόλο που τα πεδία "float" υποστηρίζονται 100% από την XMLDB, συνιστάται μετεγκατάσταση (μεταφορά/μετατροπή) σε πεδία "number".';
+$string['floatincorrectdecimals'] = 'Λάθος αριθμός δεκαδικών ψηφίων για πεδίο πραγματικού αριθμού';
+$string['floatincorrectlength'] = 'Λάθος μήκος για πεδίο πραγματικού αριθμού';
+$string['generate_all_documentation'] = 'Όλη η τεκμηρίωση';
+$string['generate_documentation'] = 'Τεκμηρίωση';
+$string['gotolastused'] = 'Μετάβαση στο τελευταίο αρχείο που χρησιμοποιήθηκε';
 $string['incorrectfieldname'] = 'Λάθος όνομα';
+$string['incorrectindexname'] = 'Λανθασμένο όνομα ευρετηρίου';
+$string['incorrectkeyname'] = 'Λανθασμένο όνομα κλειδιού';
+$string['incorrecttablename'] = 'Λανθασμένο όνομα πίνακα';
 $string['index'] = 'Ευρετήριο';
 $string['indexes'] = 'Ευρετήρια';
-$string['integerincorrectlength'] = 'Λάθος μήκος πεδίου ακεραίου αριθμού';
+$string['indexnameempty'] = 'Το όνομα του ευρετηρίου είναι κενό';
+$string['integerincorrectlength'] = 'Λάθος μήκος για πεδίο ακεραίου αριθμού';
 $string['key'] = 'Κλειδί';
+$string['keynameempty'] = 'Το όνομα του κλειδιού δεν μπορεί να είναι κενό';
 $string['keys'] = 'Κλειδιά';
-$string['listreservedwords'] = 'Λίστα Κλειδωμένων Λέξεων <br/>(χρησιμοποιείται για ενημέρωση των <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
+$string['listreservedwords'] = 'Λίστα Δεσμευμένων λέξεων <br />(χρησιμοποιείται για ενημέρωση των <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
 $string['load'] = 'Φόρτωση';
-$string['main_view'] = 'Κεντρική Όψη';
+$string['main_view'] = 'Κύρια προβολή';
+$string['masterprimaryuniqueordernomatch'] = 'Τα πεδία του ξένου κλειδιού (foreign key) σας πρέπει να παρατίθενται με την ίδια σειρά που παρατίθενται στο UNIQUE KEY (μοναδικό κλειδί) στον πίνακα αναφοράς.';
 $string['missing'] = 'Λείπουν';
 $string['missingindexes'] = 'Βρέθηκαν ευρετήρια να λείπουν';
-$string['mustselectonefield'] = 'Πρέπει να επιλέξετε ένα πεδίο για να δείτε τις σχετικές ενέργειες';
-$string['mustselectoneindex'] = 'Πρέπει να επιλέξετε ένα ευρετήριο για να δείτε τις σχετικές ενέργειες';
-$string['mustselectonekey'] = 'Πρέπει να επιλέξετε ένα κλειδί για να δείτε τις σχετικές ενέργειες';
+$string['mustselectonefield'] = 'Πρέπει να επιλέξετε ένα πεδίο για να δείτε τις σχετικές ενέργειες!';
+$string['mustselectoneindex'] = 'Πρέπει να επιλέξετε ένα ευρετήριο για να δείτε τις σχετικές ενέργειες!';
+$string['mustselectonekey'] = 'Πρέπει να επιλέξετε ένα κλειδί για να δείτε τις σχετικές ενέργειες!';
 $string['newfield'] = 'Νέο πεδίο';
-$string['newindex'] = 'Νέο Ευρετήριο';
-$string['newkey'] = 'Νέο Κλειδί';
-$string['newtable'] = 'Νέος Πίνακας';
-$string['newtablefrommysql'] = 'Νέος Πίνακας από MySQL';
-$string['new_table_from_mysql'] = 'Νέος Πίνακας από MySQL';
-$string['nomissingindexesfound'] = 'Δεν βρέθηκαν ελλειπή ευρετήρια.';
-$string['noviolatedforeignkeysfound'] = 'Δεν βρέθηκαν παραβιασμένα κλειδιά';
-$string['nowrongdefaultsfound'] = 'Δεν βρέθηκαν εφαλμένες εξορισμού τιμές';
-$string['nowrongintsfound'] = 'Δεν βρέθηκαν εσφαλμένες αριθμητικές τιμές';
-$string['numberincorrectdecimals'] = 'Λάθος αριθμός δεκαδικών ψηφίων αριθμητικού πεδίου πραγματικού αριθμού';
-$string['numberincorrectlength'] = 'Λάθος μήκος αριθμητικού πεδίου';
+$string['newindex'] = 'Νέο ευρετήριο';
+$string['newkey'] = 'Νέο κλειδί';
+$string['newtable'] = 'Νέος πίνακας';
+$string['newtablefrommysql'] = 'Νέος πίνακας από MySQL';
+$string['new_table_from_mysql'] = 'Νέος πίνακας από MySQL';
+$string['nofieldsspecified'] = 'Δεν έχουν καθοριστεί πεδία';
+$string['nomasterprimaryuniquefound'] = 'Η στήλη (ή οι στήλες) στην οποία το ξένο κλειδί (foreign key) σας παραπέμπει πρέπει να περιλαμβάνεται σε ένα πρωτεύον ή μοναδικό κλειδί στον αναφερόμενο πίνακα. Σημειώστε ότι η στήλη που βρίσκεται σε UNIQUE INDEX (μοναδικό ευρετήριο) δεν είναι αρκετά καλή.';
+$string['nomissingindexesfound'] = 'Δεν βρέθηκε να λείπουν δείκτες. Η βάση δεδομένων σας δεν χρειάζεται περαιτέρω ενέργειες.';
+$string['noreffieldsspecified'] = 'Δεν έχουν καθοριστεί πεδία αναφοράς';
+$string['noreftablespecified'] = 'Ο συγκεκριμένος πίνακας αναφοράς δεν βρέθηκε';
+$string['noviolatedforeignkeysfound'] = 'Δεν βρέθηκαν παραβιασμένα ξένα κλειδιά';
+$string['nowrongdefaultsfound'] = 'Δεν έχουν βρεθεί ασυνεπείς από προεπιλογή τιμές· η DB σας δεν χρειάζεται περαιτέρω ενέργειες.';
+$string['nowrongintsfound'] = 'Δεν βρέθηκαν λανθασμένοι ακέραιοι αριθμοί. Η βάση δεδομένων σας δεν χρειάζεται περαιτέρω ενέργειες.';
+$string['nowrongoraclesemanticsfound'] = 'Δεν βρέθηκαν στήλες Oracle που χρησιμοποιούν σημασιολογία BYTE· η ΒΔ δεν χρειάζεται περαιτέρω ενέργειες.';
+$string['numberincorrectdecimals'] = 'Λάθος αριθμός δεκαδικών ψηφίων για πεδίο (πραγματικού) αριθμού';
+$string['numberincorrectlength'] = 'Λάθος μήκος για πεδίο (πραγματικού) αριθμού';
+$string['pendingchanges'] = 'Σημείωση: Έχετε πραγματοποιήσει αλλαγές σε αυτό το αρχείο. Μπορούν να αποθηκευτούν ανά πάσα στιγμή.';
+$string['pendingchangescannotbesaved'] = 'Υπάρχουν αλλαγές σε αυτό το αρχείο αλλά δεν μπορούν να αποθηκευτούν! Βεβαιωθείτε ότι τόσο για τον φάκελο όσο και για το αρχείο του "install.xml" υπάρχουν δικαιώματα εγγραφής για τον διακομιστή ιστού.';
+$string['pendingchangescannotbesavedreload'] = 'Υπάρχουν αλλαγές σε αυτό το αρχείο αλλά δεν μπορούν να αποθηκευτούν! Βεβαιωθείτε ότι τόσο για τον φάκελο όσο και για το αρχείο του "install.xml" υπάρχουν δικαιώματα εγγραφής για τον διακομιστή ιστού. Στη συνέχεια επαναλάβετε τη φόρτωση αυτής της σελίδας και θα πρέπει να είστε σε θέση πλέον να αποθηκεύσετε αυτές τις αλλαγές.';
 $string['pluginname'] = 'Επεξεργαστής XMLDB';
-$string['reserved'] = 'Κλειδωμένο';
-$string['reservedwords'] = 'Κλειδωμένες Λέξεις';
-$string['revert'] = 'Επαναφορά';
-$string['revert_changes'] = 'Επαναφορά Αλλαγών';
+$string['primarykeyonlyallownotnullfields'] = 'Τα πρωτεύοντα κλειδιά δεν μπορούν να είναι κενά (null)';
+$string['privacy:metadata'] = 'Το πρόσθετο επεξεργαστή XMLDB δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['reserved'] = 'Δεσμευμένα';
+$string['reservedwords'] = 'Δεσμευμένες λέξεις';
+$string['revert'] = 'Αναίρεση';
+$string['revert_changes'] = 'Αναίρεση αλλαγών';
 $string['save'] = 'Αποθήκευση';
-$string['searchresults'] = 'Αποτελέσματα Εύρεσης';
-$string['selectaction'] = 'Επιλογή Ενέργειας:';
-$string['selectdb'] = 'Επιλογή Βάσης Δεδομένων:';
-$string['selectfieldkeyindex'] = 'Επιλογή Πεδίου/Κλειδιού/Ευρετηρίου';
-$string['selectonecommand'] = 'Επιλέξτε μία Ενέργεια από τη λίστα για να δείτε τον κώδικα PHP';
-$string['selectonefieldkeyindex'] = 'Επιλέξτε ένα Πεδίο/Κλειδί/Ευρετήριο από τη λίστα για να δείτε τον κώδικα PHP';
-$string['selecttable'] = 'Επιλογή Πίνακα:';
+$string['searchresults'] = 'Αποτελέσματα αναζήτησης';
+$string['selectaction'] = 'Επιλογή ενέργειας:';
+$string['selectdb'] = 'Επιλογή βάσης δεδομένων:';
+$string['selectfieldkeyindex'] = 'Επιλογή πεδίου/κλειδιού/ευρετηρίου:';
+$string['selectonecommand'] = 'Επιλέξτε μια ενέργεια από τη λίστα για να δείτε τον κώδικα PHP';
+$string['selectonefieldkeyindex'] = 'Παρακαλούμε, επιλέξτε ένα πεδίο/κλειδί/ευρετήριο από τη λίστα για να δείτε τον κώδικα PHP';
+$string['selecttable'] = 'Επιλογή πίνακα:';
 $string['table'] = 'Πίνακας';
+$string['tablenameempty'] = 'Το όνομα του πίνακα δεν μπορεί να είναι κενό';
 $string['tables'] = 'Πίνακες';
+$string['unknownfield'] = 'Αναφορά σε ένα άγνωστο πεδίο';
+$string['unknowntable'] = 'Αναφορά σε έναν άγνωστο πίνακα';
 $string['unload'] = 'Αποφόρτωση';
 $string['up'] = 'Πάνω';
-$string['view'] = 'Δείτε';
-$string['viewedited'] = 'Δείτε το Επεξεργασμένο';
-$string['vieworiginal'] = 'Δείτε το Αρχικό';
-$string['viewphpcode'] = 'Δείτε τον Κώδικα PHP';
-$string['view_reserved_words'] = 'Δείτε Κλειδωμένες Λέξεις';
-$string['viewsqlcode'] = 'Δείτε τον Κώδικα SQL';
-$string['view_structure_php'] = 'Δείτε τη Δομή PHP';
-$string['view_structure_sql'] = 'Δείτε τη Δομή SQL';
-$string['view_table_php'] = 'Δείτε τον Πίνακα PHP';
-$string['view_table_sql'] = 'Δείτε τον Πίνακα SQL';
-$string['violatedforeignkeys'] = 'Παραβιασμένα κλειδιά';
-$string['violatedforeignkeysfound'] = 'Βρέθηκαν παραβιασμένα κλειδιά';
+$string['view'] = 'Προβολή';
+$string['viewedited'] = 'Προβολή επεξεργασμένου';
+$string['vieworiginal'] = 'Προβολή πρωτοτύπου';
+$string['viewphpcode'] = 'Δείτε τον κώδικα PHP';
+$string['view_reserved_words'] = 'Δείτε κλειδωμένες λέξεις';
+$string['viewsqlcode'] = 'Δείτε τον κώδικα SQL';
+$string['view_structure_php'] = 'Δείτε τη δομή PHP';
+$string['view_structure_sql'] = 'Δείτε τη δομή SQL';
+$string['view_table_php'] = 'Δείτε πίνακα PHP';
+$string['view_table_sql'] = 'Δείτε πίνακα SQL';
+$string['viewxml'] = 'XML';
+$string['violatedforeignkeys'] = 'Παραβιασμένα ξένα κλειδιά';
+$string['violatedforeignkeysfound'] = 'Βρέθηκαν παραβιασμένα ξένα κλειδιά';
 $string['violations'] = 'Παραβιάσεις';
 $string['wrong'] = 'Λάθος';
-$string['wrongdefaults'] = 'Βρέθηκαν εσφαλμένες εξορισμού τιμές';
-$string['wrongints'] = 'Βρέθηκαν εσφαλμένες αριθμητικές τιμές';
-$string['wronglengthforenum'] = 'Λάθος μήκος πεδίου απαρίθμησης';
-$string['wrongreservedwords'] = 'Κλειδωμένες Λέξεις που Χρησιμοποιούνται <br />(τα ονόματα των πινάκων δεν έχουν σημασία αν χρησιμοποιείτε το $CFG->prefix)';
-$string['yesmissingindexesfound'] = 'Some missing indexes have been found in your DB. Here are their details and the needed SQL statements to be executed with your favourite SQL interface to create all them (don\'t forget to backup your data before doing that).<br /><br />After doing that, it\'s highly recommended to execute this utility again to check that no more missing indexes are found.';
-$string['yeswrongdefaultsfound'] = 'Some inconsistent defaults have been found in your DB. Here are their details and the needed SQL statements to be executed with your favourite SQL interface to fix them all (don\'t forget to backup your data before doing that).<br /><br />After doing that, it\'s highly recommended to execute this utility again to check that no more iconsistent defaults are found.';
-$string['yeswrongintsfound'] = 'Some wrong integers have been found in your DB. Here are their details and the needed SQL statements to be executed with your favourite SQL interface to create all them (don\'t forget to backup your data before doing that).<br /><br />After doing that, it\'s highly recommended to execute this utility again to check that no more wrong integers are found.';
+$string['wrongdefaults'] = 'Βρέθηκαν λανθασμένες από προεπιλογή τιμές';
+$string['wrongints'] = 'Βρέθηκαν εσφαλμένες ακέραιες τιμές';
+$string['wronglengthforenum'] = 'Λάθος μήκος για πεδίο απαρίθμησης';
+$string['wrongnumberofreffields'] = 'Λάθος αριθμός πεδίων αναφοράς';
+$string['wrongoraclesemantics'] = 'Βρέθηκε λανθασμένη σημασιολογία Oracle BYTE';
+$string['wrongreservedwords'] = 'Οι δεσμευμένες λέξεις αυτή τη στιγμή<br />
+(σημειώστε ότι τα ονόματα των πινάκων δεν είναι σημαντικά αν χρησιμοποιείτε το $CFG->prefix)';
+$string['yesmissingindexesfound'] = '<p>Έχει εντοπιστεί ότι λείπουν κάποια ευρετήρια από τη βάση δεδομένων σας. Εδώ είναι τα στοιχεία τους και οι απαραίτητες δηλώσεις SQL που πρέπει να εκτελεστούν με την διεπαφή SQL που προτιμάτε για να τα δημιουργήσετε όλα. Θυμηθείτε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πρώτα!</p>
+<p>Μετά από αυτό, συνιστάται ιδιαίτερα να εκτελέσετε ξανά αυτό το βοηθητικό πρόγραμμα για να βεβαιωθείτε ότι δεν λείπουν άλλα ευρετήρια.</p>';
+$string['yeswrongdefaultsfound'] = '<p>Έχουν βρεθεί ορισμένες ασυνεπείς προεπιλογές στη βάση δεδομένων σας. Εδώ είναι οι λεπτομέρειες και οι απαραίτητες δηλώσεις SQL που πρέπει να εκτελεστούν με την διεπαφή SQL που προτιμάτε για να τις διορθώσετε όλες. Θυμηθείτε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πρώτα!</p>
+<p>Μετά από αυτό, συνιστάται ιδιαίτερα να εκτελέσετε ξανά αυτό το βοηθητικό πρόγραμμα για να βεβαιωθείτε ότι δεν υπάρχουν πλέον ασυνεπείς προεπιλογές.</p>';
+$string['yeswrongintsfound'] = '<p>Έχουν εντοπιστεί μερικοί λανθασμένοι ακέραιοι στη βάση δεδομένων σας. Εδώ είναι οι λεπτομέρειες και οι απαραίτητες δηλώσεις SQL που πρέπει να εκτελεστούν με την διεπαφή SQL που προτιμάτε για να τις δημιουργήσετε όλες. Θυμηθείτε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πρώτα!</p>
+<p>Αφού το κάνετε αυτό, συνιστάται ιδιαίτερα να εκτελέσετε ξανά αυτό το βοηθητικό πρόγραμμα για να βεβαιωθείτε ότι δεν υπάρχουν πλέον λανθασμένοι ακέραιοι.</p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>Ορισμένες στήλες Oracle που χρησιμοποιούν σημασιολογία BYTE έχουν βρεθεί στη ΒΔ σας. Ακολουθούν οι λεπτομέρειες και οι απαραίτητες δηλώσεις SQL που πρέπει να εκτελεστούν με την διεπαφή SQL που προτιμάτε για να τις διορθώσετε όλες. Θυμηθείτε να δημιουργήσετε αντίγραφα ασφαλείας των δεδομένων σας πρώτα!</p>
+<p>Μετά από αυτό, συνιστάται ιδιαίτερα να εκτελέσετε ξανά αυτό το βοηθητικό πρόγραμμα για να βεβαιωθείτε ότι δεν υπάρχουν πλέον άλλες λανθασμένες σημασιολογίες!</p>';

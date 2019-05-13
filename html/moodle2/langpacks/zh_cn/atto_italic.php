@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '斜体';
+$string['privacy:metadata'] = 'atto_italic 插件不储存任何私人数据。';

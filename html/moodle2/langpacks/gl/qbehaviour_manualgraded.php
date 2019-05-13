@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Cualificado manualmente';
+$string['privacy:metadata'] = 'O engadido de comportamento de preguntas cualificadas manualmente non almacena ningún dato persoal.';

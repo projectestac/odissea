@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Unvollständig';
 $string['pluginname'] = 'Direkte Auswertung';
-$string['privacy:metadata'] = 'Der Sofortiges Feedback Modus des Frageverhalten-Plugins speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Der Sofortiges Feedback Modus des Frageverhalten-Plugins speichert keine personenbezogenen Daten.';

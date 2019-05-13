@@ -18,6 +18,7 @@
  * Ordering question definition classes.
  *
  * @package    qtype_ordering
+ *
  * @copyright  2013 Gordon Bateson (gordon.bateson@gmail.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -146,7 +147,7 @@ class qtype_ordering_question extends question_graded_automatically {
             case self::SELECT_CONTIGUOUS:
                 $answerids = array_keys($answers);
                 $offset = mt_rand(0, $countanswers - $selectcount);
-                $answerids = array_slice($answerids, $offset, $selectcount, true);
+                $answerids = array_slice($answerids, $offset, $selectcount);
                 break;
         }
 
@@ -223,7 +224,7 @@ class qtype_ordering_question extends question_graded_automatically {
         if (array_key_exists($name, $response)) {
             $items = explode(',', $response[$name]);
         } else {
-            $items = array(); // shouldn't happen !!
+            $items = array(); // Shouldn't happen !!
         }
         $answerids = array();
         foreach ($this->answers as $answer) {
@@ -233,10 +234,10 @@ class qtype_ordering_question extends question_graded_automatically {
             if (array_key_exists($item, $answerids)) {
                 $item = $this->answers[$answerids[$item]];
                 $item = $this->html_to_text($item->answer, $item->answerformat);
-                $item = shorten_text($item, 10, true); // force truncate at 10 chars
+                $item = shorten_text($item, 10, true); // Force truncate at 10 chars.
                 $items[$i] = $item;
             } else {
-                $items[$i] = ''; // shouldn't happen !!
+                $items[$i] = ''; // Shouldn't happen !!
             }
         }
         return implode('; ', array_filter($items));
@@ -251,7 +252,22 @@ class qtype_ordering_question extends question_graded_automatically {
      *      returns an empty array if no analysis is possible.
      */
     public function classify_response(array $response) {
-        return array();
+        $this->update_current_response($response);
+        $fraction = 1 / count($this->correctresponse);
+
+        $classifiedresponse = array();
+        foreach ($this->correctresponse as $position => $answerid) {
+            if (in_array($answerid, $this->currentresponse)) {
+                $currentposition = array_search($answerid, $this->currentresponse);
+            }
+            $answer = $this->answers[$answerid];
+            $classifiedresponse[question_utils::to_plain_text($answer->answer, $answer->answerformat)] =
+                    new question_classified_response($currentposition + 1,
+                            get_string('positionx', 'qtype_ordering', $currentposition + 1),
+                    ($position == $currentposition) * $fraction);
+        }
+
+        return $classifiedresponse;
     }
 
     /**
@@ -638,10 +654,7 @@ class qtype_ordering_question extends question_graded_automatically {
 
         $positions = $this->get_ordered_positions($this->correctresponse,
                                                   $this->currentresponse);
-
-        $subsets = $this->get_ordered_subsets($positions,
-                                              $contiguous,
-                                              count($positions));
+        $subsets = $this->get_ordered_subsets($positions, $contiguous);
 
         // The best subset (longest and leftmost).
         $bestsubset = array();
@@ -679,76 +692,66 @@ class qtype_ordering_question extends question_graded_automatically {
     /**
      * Get all ordered subsets in the positions array
      *
-     * @param array   $positions
+     * @param array   $positions maps an item's current position to its correct position
      * @param boolean $contiguous TRUE if searching only for contiguous subsets; otherwise FALSE
-     * @param integer $imax the length of the $positions array
-     * @param integer $imin (optional, default = 0) the index in $position at which to start checking values
-     * @param integer $previous (optional, default = -1) the minimum allowed value. Any values less than this will be skipped.
+     *
+     * @return array of ordered subsets from within the $positions array
      */
-    public function get_ordered_subsets($positions, $contiguous, $imax, $imin=0, $previous=-1) {
+    public function get_ordered_subsets($positions, $contiguous) {
 
         // Var $subsets is the collection of all subsets within $positions.
         $subsets = array();
 
-        // Var $subset is the main (=earliest or leftmost) subset within $positions.
-        $subset = array();
+        // Loop through the values at each position.
+        foreach ($positions as $p => $value) {
 
-        for ($i = $imin; $i < $imax; $i++) {
-            $current = $positions[$i];
+            // Is $value a "new" value that cannot be added to any $subsets found so far?
+            $isnew = true;
 
-            switch (true) {
+            // An array of new and saved subsets to be added to $subsets.
+            $new = array();
 
-                case ($previous < 0 || $current == ($previous + 1)):
-                    // First item, or next item in a contiguous sequence
-                    // there is no need to search for $tailsets.
-                    $tailsets = array();
-                    $prependsubset = false;
-                    $appendtosubset = true;
-                    break;
+            // Append the current value to any subsets to which it belongs
+            // i.e. any subset whose end value is less than the current value.
+            foreach ($subsets as $s => $subset) {
 
-                case ($current < $previous || ($contiguous && $current > ($previous + 1))):
-                    // Here $current breaks the sequence, so look for subsets that start here.
-                    $tailsets = $this->get_ordered_subsets($positions, $contiguous, $imax, $i);
-                    $prependsubset = false;
-                    $appendtosubset = false;
-                    break;
+                // Get value at end of $subset.
+                $end = $positions[end($subset)];
 
-                case ($current > $previous):
-                    // A non-contiguous sequence,
-                    // so search for subsets in the tail.
-                    $tailsets = $this->get_ordered_subsets($positions, $contiguous, $imax, $i + 1, $previous);
-                    $prependsubset = true;
-                    $appendtosubset = true;
-                    break;
+                switch (true) {
 
-                default: // shouldn't happen !!
-                    $tailsets = array();
-                    $prependsubset = false;
-                    $appendtosubset = false;
-            }
+                    case ($value == ($end + 1)):
+                        // For a contiguous value, we simply append $p to the subset.
+                        $isnew = false;
+                        $subsets[$s][] = $p;
+                        break;
 
-            // Append any $tailsets that were found.
-            foreach ($tailsets as $tailset) {
-                if ($prependsubset) {
-                    // Prepend $subset-so-far to each tail subset.
-                    $subsets[] = array_merge($subset, $tailset);
-                } else {
-                    // Add this tail subset.
-                    $subsets[] = $tailset;
+                    case $contiguous:
+                        // If the $contiguous flag is set, we ignore non-contiguous values.
+                        break;
+
+                    case ($value > $end):
+                        // For a non-contiguous value, we save the subset so far,
+                        // because a value between $end and $value may be found later,
+                        // and then append $p to the subset.
+                        $isnew = false;
+                        $new[] = $subset;
+                        $subsets[$s][] = $p;
+                        break;
                 }
             }
 
-            // Add $i to the main subset
-            // update the $previous value.
-            if ($appendtosubset) {
-                $subset[] = $i;
-                $previous = $current;
+            // If this is a "new" value, add it as a new subset.
+            if ($isnew) {
+                $new[] = array($p);
+            }
+
+            // Append any "new" subsets that were found during this iteration.
+            if (count($new)) {
+                $subsets = array_merge($subsets, $new);
             }
         }
-        if (count($subset)) {
-            // Put the main $subset first.
-            array_unshift($subsets, $subset);
-        }
+
         return $subsets;
     }
 

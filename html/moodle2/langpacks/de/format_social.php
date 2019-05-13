@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Anzahl der Diskussionen';
 $string['numberdiscussions_help'] = 'Die Einstellung legt fest wie viele Diskussionen angezeigt werden sollen.';
 $string['pluginname'] = 'Soziales Format';
-$string['privacy:metadata'] = 'Das Kursformat Social speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Kursformat Social speichert keine personenbezogenen Daten.';
 $string['sectionname'] = 'Abschnitt';

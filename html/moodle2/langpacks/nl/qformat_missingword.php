@@ -30,3 +30,4 @@ $string['endanswernotfound'] = 'Kon het vereiste "}"-teken niet vinden in de ge√
 $string['noanswerfound'] = 'Geen antwoorden gevonden in de vraag';
 $string['pluginname'] = 'Ontbrekend woordopmaak';
 $string['pluginname_help'] = 'Met ontbrekend woordopmaak kun je vragen importeren vanuit een tekstbestand.';
+$string['privacy:metadata'] = 'De plug-in Missing word question format slaat geen persoonlijke gegevens op.';

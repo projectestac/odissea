@@ -63,6 +63,7 @@ $string['pluginname_help'] = 'Vragen met slepen en neerzetten op afbeelding vrag
 $string['pluginnamesummary'] = 'Afbeeldingen of tekstlabels worden gesleept en neergezet in een doelzone op een achtergrondafbeelding.';
 $string['previewareaheader'] = 'Voorbeeld';
 $string['previewareamessage'] = 'Selecteer een achtergrondafbeelding, bepaal versleepbare items en bepaal neerzetzones op de achtergrondafbeelding waarin ze gesleept moeten worden.';
+$string['privacy:metadata'] = 'De plug-in Drag and drop to image question type slaat geen persoonlijke gegevens op.';
 $string['refresh'] = 'Voorbeeld verversen';
 $string['shuffleimages'] = 'Schud de versleepbare items door elkaar, telkens wanneer de vraag getoond wordt.';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

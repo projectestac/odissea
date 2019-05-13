@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comentario diferido';
+$string['privacy:metadata'] = 'O engadido de comentario diferido non almacena ningún dato persoal.';

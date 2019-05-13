@@ -38,7 +38,7 @@ $string['blocks'] = 'Blocs';
 $string['cannotselecttopsubject'] = 'No es pot establir un tema al capdamunt';
 $string['comments'] = 'Comentaris ({$a})';
 $string['community:addinstance'] = 'Afegeix un bloc nou cercador de comunitat';
-$string['community:myaddinstance'] = 'Afegeix un bloc nou cercador de comunitat a la pàgina del Tauler';
+$string['community:myaddinstance'] = 'Afegeix un bloc de cercador de comunitat nou a la pàgina del Tauler';
 $string['contentinfo'] = 'Tema: {$a->subject} - Audiència: {$a->audience} - Nivell educatiu: {$a->educationallevel}';
 $string['continue'] = 'Continua';
 $string['contributors'] = 'Col·laboracions: {$a}';
@@ -55,14 +55,14 @@ $string['downloadablecourses'] = 'Cursos que es poden descarregar';
 $string['downloadconfirmed'] = 'La còpia de seguretat s\'ha desat en els fitxers privats {$a}';
 $string['downloaded'] = '... acabat.';
 $string['downloadingcourse'] = 'Descàrrega en curs';
-$string['downloadingsize'] = 'Si us plau espereu-vos que el fitxer de curs s\'acabi de descarregar ({$a->total}Mb) ...';
+$string['downloadingsize'] = 'Espereu que el fitxer de curs s\'acabi de descarregar ({$a->total}Mb) ...';
 $string['downloadtemplate'] = 'Crea un curs des d\'un patró';
 $string['educationallevel'] = 'Nivell educatiu';
 $string['educationallevel_help'] = 'Per a quin nivell educatiu feu la cerca? Si es tracta de comunitats d\'educadors aquest nivell descriu el nivell educatiu en què exerciten.';
 $string['enroldownload'] = 'Cerca';
 $string['enroldownload_help'] = 'Alguns dels cursos enumerats en la col·lectivitat s\'anuncien perquè la gent hi entri i hi participi en el lloc web original.
 
-D\'altres, són plantilles de cursos proporcionats perquè els descarregueu i els empreu al vostre lloc Moodle.';
+D\'altres són plantilles de cursos proporcionats perquè els descarregueu i els empreu al vostre lloc Moodle.';
 $string['enrollable'] = 'cursos als quals em puc inscriure';
 $string['enrollablecourses'] = 'Cursos que admeten inscripcions';
 $string['errorcourselisting'] = 'S\'ha produït un error mentre es recuperava la llista de cursos de la col·lectivitat escollida; torneu-ho a intentar més tard. ({$a})';

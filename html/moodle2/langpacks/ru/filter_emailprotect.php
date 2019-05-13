@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Защита адресов электронной почты';
+$string['privacy:metadata'] = 'Плагин защиты электронной почты не хранит никаких персональных данных.';

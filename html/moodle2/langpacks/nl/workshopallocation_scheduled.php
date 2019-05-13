@@ -40,6 +40,7 @@ $string['currentstatusresult'] = 'Recent resultaat toewijzing';
 $string['enablescheduled'] = 'Schakel geplande toewijzing in';
 $string['enablescheduledinfo'] = 'Wijs taken automatisch toe aan het einde van de instuurfase';
 $string['pluginname'] = 'Geplande toewijzing';
+$string['privacy:metadata'] = 'De geplande allocatie-plugin bewaart geen persoonlijke gegevens. De persoonlijke gegevens van wie wat gaat beoordelen wordt bewaard door de Workshop-module zelf en dat vormt de basis voor het exporteren van beoordelingsdetails.';
 $string['randomallocationsettings'] = 'Toewijzingsinstellingen';
 $string['randomallocationsettings_help'] = 'Parameters voor de willekeurige toewijzingsmethode worden hier gedefinieerd. Ze zullen gebruikt worden door de willekeurige toewijzingsplugin voor de eigenlijke toewijzing van taken.';
 $string['resultdisabled'] = 'Geplande toewijzing uitgeschakeld';

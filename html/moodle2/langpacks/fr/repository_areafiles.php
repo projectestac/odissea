@@ -29,3 +29,4 @@ $string['areafiles:view'] = 'Consulter le dépôt Fichiers intégrés';
 $string['configplugin'] = 'Configuration du dépôt Fichiers intégrés';
 $string['pluginname'] = 'Fichiers intégrés';
 $string['pluginname_help'] = 'Les fichiers intégrés dans l\'éditeur de texte actuel';
+$string['privacy:metadata'] = 'Le plugin de dépôt Fichiers intégrés n\'enregistre et ne transmet aucune donnée personnelle.';

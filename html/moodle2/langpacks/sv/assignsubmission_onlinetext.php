@@ -39,3 +39,4 @@ $string['onlinetextsubmission'] = 'Tillåt online textinlämning';
 $string['pluginname'] = 'Online textinlämning';
 $string['wordlimit'] = 'Maxgräns för antal ord';
 $string['wordlimitexceeded'] = 'Maxgränsen i denna uppgift är {$a->limit} ord och du försöker lämna in  {$a->count} ord. Var god och korta ned din uppgift och försök igen.';
+$string['wordlimit_help'] = 'Om Online text är aktiverat, är detta maxantalet ord som varje student kan lämna in.';

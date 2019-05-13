@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email'] = 'E-Mail-Mitteilungen senden an';
-$string['emailonlyfromnoreplyaddress'] = 'E-Mails immer mit der Nicht-Antworten-Adresse versenden?';
+$string['emailonlyfromnoreplyaddress'] = 'E-Mails immer mit der Nicht-Antworten-Adresse senden?';
 $string['ifemailleftempty'] = 'Leer lassen, um E-Mails an die Adresse {$a} senden zu lassen.';
 $string['pluginname'] = 'E-Mail';
 $string['privacy:metadata:attachment'] = 'Eine Datei im Dateisystem';

@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_authmnetneeded'] = 'El connector d\'autenticació MNet cal que estigui habilitat per veure la llista de servidors de xarxa de MNet.';
+$string['error_authmnetneeded'] = 'Cal que el connector d\'autenticació MNet estigui habilitat per veure la llista de servidors de xarxa de MNet.';
 $string['error_localusersonly'] = 'El usuaris remots no poden saltar a altres servidors de xarxa MNet des d\'aquest servidor.';
-$string['error_roamcapabilityneeded'] = 'Als usuaris els cal la capacitat \'Anar a una aplicació remota mitjançant MNet\' per veure la llista de servidors de xarxa MNet.';
+$string['error_roamcapabilityneeded'] = 'Als usuaris, els cal la capacitat «Derivar a una aplicació remota via MNet» per veure la llista de servidors de xarxa MNet.';
 $string['mnet_hosts:addinstance'] = 'Afegeix un bloc nou de servidors en xarxa';
 $string['mnet_hosts:myaddinstance'] = 'Afegeix un bloc nou de servidors en xarxa a la pàgina del Tauler';
 $string['pluginname'] = 'Servidors en xarxa';

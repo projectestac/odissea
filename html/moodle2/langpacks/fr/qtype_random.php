@@ -35,3 +35,4 @@ $string['randomqname'] = 'Aléatoire ({$a})';
 $string['randomqplusname'] = 'Aléatoire ({$a} et sous-catégories)';
 $string['selectedby'] = '{$a->questionname} sélectionné par {$a->randomname}';
 $string['selectmanualquestions'] = 'Les questions aléatoires peuvent utiliser les questions évaluées manuellement';
+$string['taskunusedrandomscleanup'] = 'Supprimer les questions aléatoires non utilisées';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Scores report';
+$string['privacy:metadata'] = 'The scores report module does not store any personal data.';

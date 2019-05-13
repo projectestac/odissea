@@ -25,10 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['option_complete'] = 'πρέπει να ολοκληρωθεί';
-$string['option_fail'] = 'πρέπει να ολοκληρωθεί με βαθμό κάτω της βάσης';
-$string['option_incomplete'] = 'πρέπει να μην ολοκληρωθεί';
-$string['option_pass'] = 'πρέπει να ολοκληρωθεί με βαθμό άνω της βάσης';
-$string['pluginname'] = 'Περιορισμός από την ολοκλήρωση δραστηριότητας';
-$string['requires_complete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ολοκληρωμένη';
+$string['description'] = 'Απαιτήστε από τους μαθητές να ολοκληρώσουν (ή να μην ολοκληρώσουν) κάποια άλλη δραστηριότητα.';
+$string['error_selectcmid'] = 'Πρέπει να επιλέξετε μια δραστηριότητα για την συνθήκη ολοκλήρωσης.';
+$string['error_selectcmidpassfail'] = 'Πρέπει να επιλέξετε μια δραστηριότητα στην οποία να έχει τεθεί η συνθήκη ολοκλήρωσης «Απαιτείται βαθμός».';
+$string['label_cm'] = 'Δραστηριότητα ή πόρος';
+$string['label_completion'] = 'Κατάσταση απαίτησης ολοκλήρωσης';
+$string['missing'] = '(Λείπει δραστηριότητα)';
+$string['option_complete'] = 'πρέπει να σημειωθεί ως ολοκληρωμένη';
+$string['option_fail'] = 'πρέπει να ολοκληρωθεί με βαθμό κάτω από τη βάση';
+$string['option_incomplete'] = 'πρέπει να μην έχει ολοκληρωθεί';
+$string['option_pass'] = 'πρέπει να έχει ολοκληρωθεί με βαθμό πάνω από τη βάση';
+$string['pluginname'] = 'Περιορισμός με βάση την ολοκλήρωση δραστηριότητας';
+$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση την ολοκλήρωση δραστηριότητας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['requires_complete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι σημειωμένη ως ολοκληρωμένη';
+$string['requires_complete_fail'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ολοκληρωμένη και κάτω από τη βάση';
+$string['requires_complete_pass'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ολοκληρωμένη και πάνω από τη βάση';
+$string['requires_incomplete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ανολοκλήρωτη';
+$string['requires_not_complete_fail'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ανολοκλήρωτη και κάτω από τη βάση';
+$string['requires_not_complete_pass'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ανολοκλήρωτη και πάνω από τη βάση';
 $string['title'] = 'Ολοκλήρωση δραστηριότητας';

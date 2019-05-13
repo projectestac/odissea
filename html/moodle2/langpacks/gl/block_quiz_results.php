@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Resultados do exame';
+$string['privacy:metadata'] = 'O bloque de resultados da proba só amosa os datos almacenados noutros lugares.';
 $string['quiz_results:addinstance'] = 'Engadir un novo bloque de resultados de exame';

@@ -30,4 +30,4 @@ $string['badges:myaddinstance'] = 'Aggiungere blocco I miei nuovi badge nella Da
 $string['nothingtodisplay'] = 'Non hai badge da visualizzare';
 $string['numbadgestodisplay'] = 'Numero di nuovi badge da visualizzare';
 $string['pluginname'] = 'I miei nuovi badge';
-$string['privacy:metadata'] = 'Il blocco Badge visualizza solamente dati provenienti da altre parti.';
+$string['privacy:metadata'] = 'Il blocco Badge visualizza solamente dati memorizzati altrove.';

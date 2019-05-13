@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = '参与者 {$a}';
+$string['blindmarkingviewfullname'] = '参与者 {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = '默认开启';
 $string['default_help'] = '如果设置此项，将会为所有新作业默认开启此提交方法。';
 $string['enabled'] = '作业备注';
 $string['enabled_help'] = '如果设置此项，学生可以为自己的作业留下备注说明。学生可以用这个功能提醒评分人各种情况，比如在出现内部链接文件时，哪些是主要文件。';
 $string['pluginname'] = '作业备注';
+$string['privacy:metadata:commentpurpose'] = '学生及教师间对提报内容的互评。';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lückentext-Antworten';
 $string['pluginname_help'] = 'Beim Lückentext-Format können Fragen mit Multiple-Choice oder Kurzantwort aus einer Textdatei importiert werden. ';
-$string['privacy:metadata'] = 'Das eingebettete Antwort Frageformat Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das eingebettete Antwort Frageformat Plugin speichert keine personenbezogenen Daten.';

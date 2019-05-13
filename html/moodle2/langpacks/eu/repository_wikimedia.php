@@ -34,4 +34,4 @@ $string['privacy:metadata:repository_wikimedia'] = 'Wikimedia biltegi-pluginak e
 $string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Wikimedia biltegirako konfiguratutako Gehienezko Altuera erabiltzaile-hobespena.';
 $string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimedia biltegirako konfiguratutako Gehienezko Zabalera erabiltzaile-hobespena.';
 $string['privacy:metadata:repository_wikimedia:search_text'] = 'Dropbox biltegiko erabiltzailearen bilaketaren testua.';
-$string['wikimedia:view'] = 'Wikimedia biltegia ikusi';
+$string['wikimedia:view'] = 'Ikusi Wikimedia biltegia';

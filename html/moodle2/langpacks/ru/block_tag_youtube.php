@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Все категории';
-$string['apierror'] = 'Ключ API Youtube не установлен. Обратитесь к администратору.';
+$string['apierror'] = 'Ключ API пользователя Youtube не установлен. Обратитесь к своему администратору.';
 $string['apikey'] = 'Ключ API';
 $string['apikeyinfo'] = 'Получить <a href="https://developers.google.com/youtube/v3/getting-started">ключ Google API</a> для вашего сайта Moodle.';
 $string['autosvehicles'] = 'Автомобили и трпнспорт';
@@ -45,7 +45,8 @@ $string['numberofvideos'] = 'Видео';
 $string['peopleblogs'] = 'Люди и блоги';
 $string['petsanimals'] = 'Домашние и дикие животные';
 $string['pluginname'] = 'YouTube';
-$string['requesterror'] = 'Не удается получить данные от сервера. Свяжитесь с вашим администратором сайта, если проблема сохраняется.';
+$string['privacy:metadata'] = 'Блок «YouTube» только показывает данные, хранящиеся в других местах.';
+$string['requesterror'] = 'Не удается получить данные c сервера. Свяжитесь с вашим администратором сайта, если проблема сохраняется.';
 $string['scienceandtech'] = 'Наука и техника';
 $string['sports'] = 'Спорт';
 $string['tag_youtube:addinstance'] = 'Добавлять новый блок «YouTube»';

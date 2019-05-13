@@ -36,6 +36,7 @@ $string['notimplemented'] = 'Deze functie bestaat niet voor jouw databank-driver
 $string['notsupported'] = 'Dit script moet als experimenteel beschouwd worden en de wijzigen die het maakt, kunnen niet ongedaan gemaakt worden. Maak een volledige back-up voor je verder gaat!';
 $string['pageheader'] = 'Zoek en vervang tekst in heel de databank';
 $string['pluginname'] = 'DB zoeken en vervangen';
+$string['privacy:metadata'] = 'De DB zoeken en vervangen-plugin bewaart geen persoonlijke gegevens.';
 $string['replacewith'] = 'Vervang met deze string:';
 $string['replacewithhelp'] = 'gewoonlijk een nieuwe server URL';
 $string['searchwholedb'] = 'Zoek in de hele databank naar';

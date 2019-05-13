@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über den Abschluss einer Aktivität steuern';
+$string['description'] = 'Zugriff über den Abschluss einer anderen Aktivität steuern';
 $string['error_selectcmid'] = 'Sie müssen eine Aktivität für die Zugriffssteuerung auswählen.';
 $string['error_selectcmidpassfail'] = 'Sie müssen eine Aktivität auswählen, für die die Abschlussvoraussetzung "Bewertung notwendig" gesetzt ist.';
 $string['label_cm'] = 'Aktivität oder Material';
@@ -36,7 +36,7 @@ $string['option_fail'] = 'muss abgeschlossen und gescheitert sein';
 $string['option_incomplete'] = 'darf nicht abgeschlossen sein';
 $string['option_pass'] = 'muss abgeschlossen und bestanden sein';
 $string['pluginname'] = 'Voraussetzung: Aktivitätsabschluss';
-$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung Aktivitätsabschluss\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Aktivitätsabschluss\' speichert keine personenbezogenen Daten.';
 $string['requires_complete'] = 'Die Aktivität <strong>{$a}</strong> ist als abgeschlossen markiert';
 $string['requires_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist abgeschlossen und gescheitert';
 $string['requires_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist abgeschlossen und bestanden';

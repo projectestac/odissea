@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodlenolink:desc'] = 'Automatisch linken voorkomen';
 $string['pluginname'] = 'Automatisch linken voorkomen';
+$string['privacy:metadata'] = 'De TinyMCE automatische link voorkomen-plugin bewaart geen persoonlijke gegevens.';

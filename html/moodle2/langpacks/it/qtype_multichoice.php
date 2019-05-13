@@ -64,6 +64,7 @@ $string['pluginnameadding'] = 'Creazione domanda a Risposta multipla';
 $string['pluginnameediting'] = 'Modifica di una domanda a Risposta multipla';
 $string['pluginname_help'] = 'In risposta a una domanda (che può includere un\'immagine) chi risponde sceglie tra più risposte possibili. Ci sono due tipi di domande a scelta/risposta multipla - risposta singola e risposta multipla.';
 $string['pluginnamesummary'] = 'Consente l\'utilizzo di domande a risposta multipla con una o più risposte esatte.';
+$string['privacy:metadata'] = 'Il plugin Tipo di domande \'Risposta multipla\' non memorizza dati personali.';
 $string['selectmulti'] = 'Scegli una o più alternative:';
 $string['selectone'] = 'Scegli un\'alternativa:';
 $string['shuffleanswers'] = 'Alternative in ordine casuale';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Άμεση ανάδραση με CBM';
+$string['pleaseselectacertainty'] = 'Επιλέξτε μια βεβαιότητα.';
+$string['pluginname'] = 'Άμεση ανατροφοδότηση με CBM (Certainty-based marking: βαθμολόγηση με βάση την βεβαιότητα)';
+$string['privacy:metadata'] = 'Το πρόσθετο «Συμπεριφορά ερώτησης άμεσης ανατροφοδότησης με CBM» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

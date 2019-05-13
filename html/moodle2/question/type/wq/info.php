@@ -527,50 +527,6 @@ $output .= html_writer::start_tag('br');
 echo $output;
 
 $output = '';
-$output .= html_writer::start_tag('table', array('class' => 'wrs_filter wrs_plugin'));
-
-$output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'));
-$output .= html_writer::start_tag('th', array('class' => 'wrs_filter wrs_plugin'));
-$output .= get_string('info_tableheader_test', 'qtype_wq');
-$output .= html_writer::end_tag('th');
-$output .= html_writer::start_tag('th', array('class' => 'wrs_filter wrs_plugin'));
-$output .= get_string('info_tableheader_status', 'qtype_wq');
-$output .= html_writer::end_tag('th');
-$output .= html_writer::end_tag('tr');
-$output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'));
-$output .= html_writer::start_tag('td', array('class' => 'wrs_filter wrs_plugin'));
-$output .= 'mod_security1';
-$output .= html_writer::end_tag('td');
-$output .= html_writer::start_tag('td', array('class' => 'wrs_filter wrs_plugin'));
-set_error_handler('_hx_error_handler', E_ERROR);
-$disabled = true;
-@$result = file_get_contents('http://' . $_SERVER['SERVER_NAME'] . '/?test=<>');
-if ($result == '') {
-    $disabled = false;
-}
-$output .= wrs_assert_simple($disabled);
-$output .= html_writer::end_tag('td');
-$output .= html_writer::end_tag('tr');
-echo $output;
-
-$output = '';
-$output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'));
-$output .= html_writer::start_tag('td', array('class' => 'wrs_filter wrs_plugin'));
-$output .= 'mod_security1';
-$output .= html_writer::end_tag('td');
-$output .= html_writer::start_tag('td', array('class' => 'wrs_filter wrs_plugin'));
-$disabled = true;
-@$result = file_get_contents('http://' . $_SERVER['SERVER_NAME'] . '/?test=><');
-if ($result == '') {
-    $disabled = false;
-}
-$output .= wrs_assert_simple($disabled);
-$output .= html_writer::end_tag('td');
-$output .= html_writer::end_tag('tr');
-$output .= html_writer::end_tag('table');
-echo $output;
-
-$output = '';
 $output .= html_writer::start_tag('p', array('class' => 'wrs_filter wrs_plugin'));
 $output .= html_writer::end_tag('br');
 $output .= html_writer::start_tag('span', array('class' => 'wrs_filter wrs_plugin', 'style' => 'font-size:14px; font-weight:normal;'));

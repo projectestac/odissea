@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'Les clefs utilisateur pour accéder à un flus RSS depuis une URL';
 $string['rss'] = 'RSS';

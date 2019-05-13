@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Kapitel hinzufügen';
-$string['book:addinstance'] = 'Buch hinzufügen';
+$string['book:addinstance'] = 'Neues Buch hinzufügen';
 $string['book:edit'] = 'Kapitel bearbeiten';
 $string['book:read'] = 'Buch anzeigen';
 $string['book:viewhiddenchapters'] = 'Verborgene Kapitel sehen';
@@ -90,9 +90,9 @@ $string['numberingoptions_desc'] = 'Wählen Sie die Kapitelgliederungen aus, die
 $string['page-mod-book-x'] = 'Jede Seite des Moduls \'Buch\'';
 $string['pluginadministration'] = 'Buch-Administration';
 $string['pluginname'] = 'Buch';
-$string['privacy:metadata'] = 'Das Buch-Modul-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Buch\' speichert keine personenbezogenen Daten.';
 $string['removeallbooktags'] = 'Alle Buchschlagwörter entfernen';
-$string['search:activity'] = 'Buch - Materialinformation';
+$string['search:activity'] = 'Buch - Beschreibung';
 $string['search:chapter'] = 'Buch - Kapitel';
 $string['showchapter'] = 'Kapitel "{$a}" anzeigen';
 $string['subchapter'] = 'Unterkapitel';

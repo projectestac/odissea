@@ -268,9 +268,9 @@ $string['groupexistforcourse'] = 'En este curso ya hay un grupo "{$a}".';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}: El grupo "{$a->name}" con un idnumber "{$a->idnumber}" ya existe en este curso';
 $string['grouphasidnumber'] = 'El Grupo "{$a}" tiene un idnumber y este pudo haber sido creado automáticamente por un sistema externo. Usted no tiene permiso para remover este grupo.';
 $string['groupinghasidnumber'] = 'El Agrupamiento "{$a}" tiene un idnumber y este pudo haber sido creado automáticamente por un sistema externo. Usted no tiene permiso para remover este agrupamiento.';
-$string['groupingnotaddederror'] = 'La agrupación "{$a}" no se ha añadido';
+$string['groupingnotaddederror'] = 'El agrupamiento "{$a}" no se ha añadido';
 $string['groupnotaddederror'] = 'No se ha agregado el grupo "{$a}".';
-$string['groupnotaddedtogroupingerror'] = 'El grupo "{$a->groupname}" no se ha añadido a la agrupación "{$a->groupingname}"';
+$string['groupnotaddedtogroupingerror'] = 'El grupo "{$a->groupname}" no se ha añadido al agrupamiento "{$a->groupingname}"';
 $string['groupunknown'] = 'El grupo {$a} no está asociado al curso especificado';
 $string['groupusernotmember'] = 'El usuario no es miembro de este grupo';
 $string['guestcantaccessprofiles'] = 'Los invitados no pueden acceder a los perfiles de los usuarios. Acceda al sistema con un usuario para continuar.';
@@ -463,6 +463,7 @@ $string['prefixcannotbeempty'] = '<p>Error: El prefijo de la tabla de la base de
 <p>El administrador del sitio debe arreglar este problema.</p>';
 $string['prefixtoolong'] = '<p>Error: El prefijo de la tabla de la base de datos es demasiado larga ({$a->dbfamily})</p>
 <p>El administrador del sitio debe arreglar este problema. La longitud máxima para los prefijos de tabla en {$a->dbfamily} es de {$a->maxlength} caracteres. </p>';
+$string['privatefilesupload'] = 'Ya no se permite subir archivos directamente al área de archivos privados del usuario. Suba los archivos a un área de borrador y después mueva los archivos con core_user::add_user_private_files';
 $string['processingstops'] = 'El procesamiento acaba aquí. Se pasan por alto los demás registros.';
 $string['protected_cc_not_supported'] = 'No se admiten cartuchos protegidos.';
 $string['querystringcannotbeempty'] = 'La cadena de consulta no puede estar vacía.';

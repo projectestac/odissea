@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Suprimeix el format';
+$string['privacy:metadata'] = 'El connector atto_clear no emmagatzema cap dada personal.';

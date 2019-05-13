@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Woordenlijst automatisch linken';
+$string['glossarycategory'] = '{$a->glossary}: Categorie {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
 $string['privacy:metadata'] = 'De woordenlijst automatisch linkenplugin bewaart geen persoonlijke gegevens.';

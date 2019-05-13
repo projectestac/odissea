@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventbookexported'] = 'Liburua esportatu da';
-$string['exportimscp:export'] = 'Liburua IMS eduki-pakete gisa esportatu ';
+$string['exportimscp:export'] = 'Esportatu liburua IMS eduki-pakete gisa';
 $string['generateimscp'] = 'Sortu IMS eduki-paketea';
 $string['nochapters'] = 'Ez da liburu-atalik aurkitu. Ezin da IMS CP gisa esportatu.';
 $string['pluginname'] = 'Liburua IMS CP gisa esportatu';

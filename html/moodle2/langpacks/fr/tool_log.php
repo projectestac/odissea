@@ -25,15 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actlogshdr'] = 'Stockages d\'historiques disponibles';
+$string['actlogshdr'] = 'Stockages de journaux disponibles';
 $string['configlogplugins'] = 'Veuillez activer tous les plugins nécessaires et les placer dans l\'ordre adéquat.';
-$string['logging'] = 'Historiques';
-$string['managelogging'] = 'Gérer les stockages d\'historiques';
-$string['pluginname'] = 'Gestion des stockages d\'historiques';
+$string['exportlog'] = 'Inclure les journaux lors de l\'exportation.';
+$string['exportlogdetail'] = 'Inclure les journaux en lien avec l\'utilisateur lors de l\'exportation.';
+$string['logging'] = 'Journaux';
+$string['managelogging'] = 'Gérer les stockages des journaux';
+$string['pluginname'] = 'Gestion des stockages de journaux';
+$string['privacy:metadata:logstore'] = 'Les enregistrement de journaux';
 $string['privacy:path:logs'] = 'Journaux';
+$string['privacy:request:origin:cli'] = 'Outil ligne de commande';
 $string['privacy:request:origin:restore'] = 'Sauvegarde restaurée';
 $string['privacy:request:origin:web'] = 'Requête web standard';
 $string['privacy:request:origin:ws'] = 'App mobile ou service web';
 $string['reportssupported'] = 'Rapports supportés';
-$string['subplugintype_logstore'] = 'Stockage d\'historiques';
-$string['subplugintype_logstore_plural'] = 'Stockages d\'historiques';
+$string['subplugintype_logstore'] = 'Stockage de journaux';
+$string['subplugintype_logstore_plural'] = 'Stockages de journaux';

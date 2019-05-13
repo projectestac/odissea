@@ -38,6 +38,8 @@ $string['prefix_help'] = 'Dit prefix wordt gebruikt voor alle sleutelnamen op de
 * Als je slechts één Moodleinstantie op deze server hebt, kun je deze waarde standaard laten.
 * Door de beperking op de sleutellengte mag je slechts 5 tekens gebruiken.';
 $string['prefixinvalid'] = 'Ongeldige prefix. Je mag enkel a-z A-Z 0-9 _ gebruiken';
+$string['privacy:metadata:memcache'] = 'De Memcache-plugin bewaart gegevens kort als deel van zijn cachingsfunctie. Deze gegevens worden bewaard op een Memcache-server en daar regelmatig gewist.';
+$string['privacy:metadata:memcache:data'] = 'De gegevens die in cache bewaard worden';
 $string['servers'] = 'Servers';
 $string['serversclusterinvalid'] = 'Er is één server vereist wanneer je clustering inschakeld.';
 $string['servers_help'] = 'Hiermee worden de servers ingesteld die door de memcache-adaptor gebruikt moeten worden. Servers moeten één per regel gedefiniëerd worden en moeten een serveradres en optioneel een poort en weging bevatten. Als er geen poort opgegeven wordt, dan wordt de standaardpoort gebruikt (11211).

@@ -30,6 +30,8 @@ $string['apikey'] = 'Ключ API';
 $string['configplugin'] = 'Конфигурация хранилища YouTube';
 $string['information'] = 'Получить <a href="https://developers.google.com/youtube/v3/getting-started">ключ Google API</a> для вашего сайта.';
 $string['pluginname'] = 'Видео YouTube';
+$string['privacy:metadata:repository_youtube'] = 'Плагин хранилища видео YouTube не хранит никаких личных данных, но передает данные пользователя из Moodle в удаленную систему.';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'Поисковый текстовый запрос пользователя хранилища видео YouTube';
 $string['search'] = 'Искать видео';
 $string['sortby'] = 'Сортировать по';
 $string['sortpublished'] = 'Дате публикации';

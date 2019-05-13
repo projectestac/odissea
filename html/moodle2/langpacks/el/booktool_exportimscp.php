@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventbookexported'] = 'Έγινε εξαγωγή του βιβλίου';
+$string['exportimscp:export'] = 'Εξαγωγή βιβλίου ως πακέτου περιεχομένου IMS';
+$string['generateimscp'] = 'Δημιουργία CP IMS';
+$string['nochapters'] = 'Δεν βρέθηκαν κεφάλαια βιβλίων, οπότε δεν είναι δυνατή η εξαγωγή τους στο IMS CP.';
+$string['pluginname'] = 'Εξαγωγή πακέτου περιεχομένου (CP) βιβλίου, της IMS';
+$string['privacy:metadata'] = 'Το πρόσθετο «Book IMS CP» (βιβλίο ως πακέτο περιεχομένου IMS) δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

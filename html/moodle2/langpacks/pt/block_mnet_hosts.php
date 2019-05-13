@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['error_authmnetneeded'] = 'O módulo de autenticação MNet deve estar ativo para ver a lista de servidores de rede MNet';
 $string['error_localusersonly'] = 'Os utilizadores remotos não podem saltar para outros servidores da rede MNet a partir deste servidor';
-$string['error_roamcapabilityneeded'] = 'Os utilizadores necessitam de permissões na capacidade de \'Navegar para um Moodle remoto\' to para ver a lista de servidores de rede MNet';
+$string['error_roamcapabilityneeded'] = 'Os utilizadores necessitam da permissão \'Navegar para um Moodle remoto\' to para ver a lista de servidores de rede MNet';
 $string['mnet_hosts:addinstance'] = 'Adicionar um novo bloco Servidores de rede';
 $string['mnet_hosts:myaddinstance'] = 'Adicionar um novo bloco Servidores de rede ao Painel do utilizador';
 $string['pluginname'] = 'Servidores de rede';

@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Engadir un novo bloque de estado de c
 $string['criteriagroup'] = 'Grupo de criterios';
 $string['firstofsecond'] = '{$a->first} de {$a->second}';
 $string['pluginname'] = 'Estado do completado do curso';
+$string['privacy:metadata'] = 'O bloque de estado de completado do curso só amosa información sobre o completado do curso e non almacena ningún dato propio.';
 $string['requirement'] = 'Requirimentos';
 $string['returntocourse'] = 'Volver ao curso';

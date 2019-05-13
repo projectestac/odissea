@@ -48,6 +48,7 @@ $string['history:view'] = 'Visualizza la storia valutazioni';
 $string['loadmoreusers'] = 'Carica altri utenti...';
 $string['pluginname'] = 'Storia delle valutazioni';
 $string['preferences'] = 'Preferenze storia valutazioni';
+$string['privacy:metadata'] = 'Il report Storia delle valutazioni visualizza solamente dati memorizzati da altri componenti.';
 $string['revisedonly'] = 'Solo valutazioni riviste';
 $string['revisedonly_help'] = 'Visualizza solamente le valutazioni riviste.';
 $string['selectedusers'] = 'Utenti selezionati';

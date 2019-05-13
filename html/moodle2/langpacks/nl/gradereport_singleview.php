@@ -53,6 +53,7 @@ $string['overrideall'] = 'Overschrijf alle cijfers';
 $string['overridefor'] = 'Overschrijf voor {$a}';
 $string['overridenone'] = 'Overschrijf geen cijfers';
 $string['pluginname'] = 'Enkelvoudig scherm';
+$string['privacy:metadata'] = 'Het rapport cijfer (enkele weergave)  toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['save'] = 'Bewaar';
 $string['savegrades'] = 'Cijfers bewaren';
 $string['savegradessuccess'] = 'Cijfers zijn voor {$a} items ingesteld';

@@ -420,6 +420,7 @@ $string['reviewlesson'] = '复习程序教学';
 $string['reviewquestionback'] = '再试一次';
 $string['reviewquestioncontinue'] = '不，我只想继续看下一题';
 $string['sanitycheckfailed'] = '检查失败: 这次尝试将被删除';
+$string['save'] = '保存';
 $string['savechanges'] = '保存更改';
 $string['savechangesandeol'] = '保存所有修改并跳转到程序教学的最后。';
 $string['savepage'] = '保存页面';

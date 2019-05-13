@@ -46,6 +46,7 @@ $string['page-report-log-index'] = 'Log del corso';
 $string['page-report-log-user'] = 'Log utente';
 $string['page-report-log-x'] = 'Qualsiasi log';
 $string['pluginname'] = 'Log';
+$string['privacy:metadata'] = 'Il plugin \'Log\' non memorizza dati personali.';
 $string['restore'] = 'Ripristino';
 $string['selectlogreader'] = 'Seleziona log reader';
 $string['web'] = 'Web';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Полужирный';
+$string['privacy:metadata'] = 'Плагин atto_bold не хранит никаких персональных данных.';

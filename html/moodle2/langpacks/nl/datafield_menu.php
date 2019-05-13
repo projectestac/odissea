@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Veld voor menu';
 $string['pluginname'] = 'Menu';
+$string['privacy:metadata'] = 'De menu-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

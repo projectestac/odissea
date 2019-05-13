@@ -45,7 +45,7 @@ $string['content'] = 'Conteúdo';
 $string['content_heading'] = 'Conteúdo';
 $string['content_help'] = 'O conteúdo que descreve a etapa pode ser adicionado como texto simples, incluído em palavras-chave multilingue se for necessário (para uso com o filtro de conteúdo em vários idiomas).
 
-Em alternativa, um ID de string do idioma pode ser inserido no identificador de formato, componente (sem parênteses ou espaço após a vírgula).';
+Em alternativa, um ID de string do idioma pode ser inserido no identificador de formato, componente (sem parêntesis ou espaço após a vírgula).';
 $string['cssselector'] = 'Seletor CSS';
 $string['defaultvalue'] = 'Valor predefinido ({$a})';
 $string['delay'] = 'Atraso antes de mostrar a etapa';
@@ -137,12 +137,12 @@ $string['target_unattached'] = 'Mostrar no meio da página';
 $string['title'] = 'Título';
 $string['title_help'] = 'O título de uma etapa pode ser adicionado como texto simples, incluído em palavras-chave multilingue se for necessário (para uso com o filtro de conteúdo em vários idiomas).
 
-Em alternativa, um ID de string do idioma pode ser inserido no identificador de formato, componente (sem parênteses ou espaço após a vírgula).';
+Em alternativa, um ID de string do idioma pode ser inserido no identificador de formato, componente (sem parêntesis ou espaço após a vírgula).';
 $string['tour1_content_addingblocks'] = 'Na verdade, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, como regra geral, é muito melhor certificar-se de que o seu site funciona bem sem quaisquer blocos.';
 $string['tour1_content_blockregion'] = 'Existe ainda uma área com blocos. Recomenda-se a remoção completa dos blocos Navegação e Administração, uma vez que toda a funcionalidade destes está noutro lugar no tema Boost.';
 $string['tour1_content_customisation'] = 'Para personalizar a aparência do seu site e da página principal, use o menu de configurações no canto deste cabeçalho. Clique em Ativar o modo de edição.';
 $string['tour1_content_end'] = 'Esta foi uma demonstração ao utilizador. Não será mostrada novamente a menos que a reinicie através da hiperligação existente no rodapé. Como administrador, também pode criar as suas demonstrações!';
-$string['tour1_content_navigation'] = 'A maioria da navegação é agora feita através desta caixa de navegação. Os conteúdos mostrados dependem de onde está no site. Use o botão na parte superior para ocultá-la ou mostrá-la.';
+$string['tour1_content_navigation'] = 'A maioria da navegação é agora feita através deste menu de navegação. As opções mostradas dependem de onde está no site. Use o botão na parte superior para ocultar ou mostrar o menu.';
 $string['tour1_content_welcome'] = 'Bem-vindo ao tema Boost. Se o seu site foi atualizado a partir de uma versão anterior, irá notar que as coisas estão um pouco diferentes com este tema.';
 $string['tour1_title_addingblocks'] = 'A adicionar blocos';
 $string['tour1_title_blockregion'] = 'Região do bloco';
@@ -150,12 +150,12 @@ $string['tour1_title_customisation'] = 'Personalização';
 $string['tour1_title_end'] = 'Fim da demonstração';
 $string['tour1_title_navigation'] = 'Navegação';
 $string['tour1_title_welcome'] = 'Bem-vindo';
-$string['tour2_content_addblock'] = 'Se ativar o modo de edição, poderá adicionar blocos da caixa de navegação. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, para uma melhor experiência do utilizador é melhor certificar-se de que a disciplina funciona bem, sem quaisquer blocos.';
+$string['tour2_content_addblock'] = 'Se ativar o modo de edição, poderá adicionar blocos a partir do menu de navegação. No entanto, pense cuidadosamente sobre a inclusão de quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, para uma melhor experiência do utilizador é melhor certificar-se de que a disciplina funciona bem, sem quaisquer blocos.';
 $string['tour2_content_addingblocks'] = 'Pode adicionar blocos a esta página através deste botão. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na aplicação móvel do Moodle, por isso, para uma melhor experiência do utilizador é melhor certificar-se de que a disciplina funciona bem, sem quaisquer blocos.';
 $string['tour2_content_customisation'] = 'Para alterar as configurações da disciplina, use o menu de configurações no canto deste cabeçalho. Também encontrará um menu de configurações semelhante na página inicial de todas as atividades. Clique em Ativar o modo de edição.';
 $string['tour2_content_end'] = 'Esta foi uma demonstração ao utilizador. Não será mostrada novamente a menos que a reinicie usando a hiperligação existente no rodapé. Se necessário, o administrador do site também pode criar outras demonstrações para este site.';
-$string['tour2_content_navigation'] = 'A navegação é agora feita através desta caixa de navegação. Use o botão na parte superior para ocultá-la ou mostrá-la. Verá que existem hiperligações para as secções principais da sua disciplina.';
-$string['tour2_content_opendrawer'] = 'Tente abrir agora a caixa de navegação.';
+$string['tour2_content_navigation'] = 'A navegação é agora feita através deste menu de navegação. Use o botão na parte superior para ocultá-lo ou mostrá-lo. Verá que existem hiperligações para as secções principais da sua disciplina.';
+$string['tour2_content_opendrawer'] = 'Tente abrir agora o menu de navegação.';
 $string['tour2_content_participants'] = 'Ver os participantes aqui. Também é onde pode adicionar ou remover alunos.';
 $string['tour2_content_welcome'] = 'Bem-vindo ao tema Boost. Se o seu site foi atualizado a partir de uma versão anterior, irá notar que as coisas estão um pouco diferentes aqui na página da disciplina.';
 $string['tour2_title_addblock'] = 'Adicionar um bloco';
@@ -163,7 +163,7 @@ $string['tour2_title_addingblocks'] = 'A adicionar blocos';
 $string['tour2_title_customisation'] = 'Personalização';
 $string['tour2_title_end'] = 'Fim da demonstração';
 $string['tour2_title_navigation'] = 'Navegação';
-$string['tour2_title_opendrawer'] = 'Abrir a caixa de navegação';
+$string['tour2_title_opendrawer'] = 'Abrir o menu de navegação';
 $string['tour2_title_participants'] = 'Participantes da disciplina';
 $string['tour2_title_welcome'] = 'Bem-vindo';
 $string['tourconfig'] = 'Ficheiro de configuração da demonstração a ser importado';

@@ -179,6 +179,7 @@ $string['planupdated'] = 'Il piano di formazione è stato aggiornato';
 $string['pluginname'] = 'Piani di formazione';
 $string['points'] = 'Punteggio';
 $string['pointsgivenfor'] = 'Punteggio dato per \'{$a}\'';
+$string['privacy:metadata'] = 'Il plugin "Piani di formazione" non memorizza dati personali.';
 $string['proficient'] = 'Esperto';
 $string['progress'] = 'Avanzamento';
 $string['rate'] = 'Valuta';

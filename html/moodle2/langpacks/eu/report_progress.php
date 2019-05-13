@@ -30,4 +30,4 @@ $string['page-report-progress-user'] = 'Ikaslearen jarduera-osaketaren txostena'
 $string['page-report-progress-x'] = 'Edozein jardueraren osaketa-txostena';
 $string['pluginname'] = 'Jarduera-osaketa';
 $string['privacy:metadata'] = 'Jarduera-osaketa txostenak soilik beste kokapenetan gordetako datuak erakusten ditu.';
-$string['progress:view'] = 'Jarduera-osaketaren txostena ikusi';
+$string['progress:view'] = 'Ikusi jarduera-osaketaren txostena';

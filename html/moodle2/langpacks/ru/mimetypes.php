@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['application/epub_zip'] = 'Электронная книга EPUB';
+$string['application/json'] = '{$a->MIMETYPE2} текст';
 $string['application/msword'] = 'документ Word';
 $string['application/pdf'] = 'документ PDF';
 $string['application/vnd.moodle.backup'] = 'Резервная копия Moodle';
@@ -37,11 +38,11 @@ $string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'Шабло
 $string['application/vnd.oasis.opendocument.text'] = 'Текстовый документ OpenDocument';
 $string['application/vnd.oasis.opendocument.text-template'] = 'Шаблон текстового документа OpenDocument';
 $string['application/vnd.oasis.opendocument.text-web'] = 'Шаблон веб-страницы OpenDocument';
-$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Презентация PowerPoint';
-$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Слайд-шоу PowerPoint';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Таблица Excel';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Шаблон Excel';
-$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Документ Word';
+$string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'Презентация PowerPoint 2007';
+$string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'Слайд-шоу PowerPoint 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Таблица Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Шаблон Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Документ Word 2007';
 $string['application/xhtml_xml'] = 'Документ XHTML';
 $string['application/x-iwork-keynote-sffkey'] = 'Презентация iWork Keynote';
 $string['application/x-iwork-numbers-sffnumbers'] = 'Электронная таблица iWork Numbers';
@@ -57,6 +58,7 @@ $string['group:archive'] = 'Архивные файлы';
 $string['group:audio'] = 'Аудиофайлы';
 $string['group:document'] = 'Файлы Document';
 $string['group:html_audio'] = 'Аудиофайлы, поддерживаемые браузерами';
+$string['group:html_track'] = 'Файлы отслеживания HTML (HTML track)';
 $string['group:html_video'] = 'Видеофайлы, поддерживаемые браузерами';
 $string['group:image'] = 'Файлы изображения';
 $string['group:presentation'] = 'Файлы презентации';

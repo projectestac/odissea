@@ -31,7 +31,7 @@ $string['configplugin'] = 'YouTube repository type configuration';
 $string['information'] = 'Get a <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> for your Moodle site.';
 $string['pluginname'] = 'YouTube videos';
 $string['privacy:metadata:repository_youtube'] = 'The YouTube videos repository plugin does not store any personal data, but does transmit user data from Moodle to the remote system.';
-$string['privacy:metadata:repository_youtube:searchtext'] = 'The YouTube videos repository user search text query.';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'The YouTube videos repository user search text query';
 $string['search'] = 'Search videos';
 $string['sortby'] = 'Sort By';
 $string['sortpublished'] = 'Date Published';

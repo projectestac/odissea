@@ -154,6 +154,7 @@ $string['updatepasserrorexpire'] = 'パスワードの有効期限読み込み�
 $string['updatepasserrorexpiregrace'] = 'パスワード有効期限または猶予ログインの修正中にuser_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';
 $string['updateremfail'] = 'LDAPレコードの更新中にエラーが発生しました。エラーコード: {$a->errno}; エラーストリング: {$a->errstring}<br />キー ({$a->key}) - 古いMoodle値: {$a->ouvalue}  新しい値: {$a->nuvalue}';
 $string['updateremfailamb'] = 'LDAPのあいまいなフィールド {$a->key} の更新に失敗しました。古いMoodle値: {$a->ouvalue}  新しい値: {$a->nuvalue}';
+$string['updateremfailfield'] = '存在しないフィールド (「 {$a->ldapkey} 」) のLDAPの更新に失敗しました。キー ({$a->key}) - 古いMoodleの値: 「 {$a->ouvalue} 」 新しい値: 「 {$a->nuvalue} 」';
 $string['updateusernotfound'] = '外部更新中にユーザを見つけることができませんでした。詳細は次のとおりです: 検索ベース: {$a->userdn}  検索フィルタ: (objectClass=*)  検索属性: {$a->attribs}';
 $string['useracctctrlerror'] = '{$a} のuserAccountControl取得中にエラーが発生しました。';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate()は選択された次のusertypeをサポートしていません: {$a}';

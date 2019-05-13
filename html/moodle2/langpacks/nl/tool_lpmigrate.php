@@ -62,6 +62,7 @@ $string['migratingcourses'] = 'Cursussen migreren';
 $string['missingmappings'] = 'Ontbrekende koppelingen';
 $string['performmigration'] = 'Migratie uitvoeren';
 $string['pluginname'] = 'Competenties migratie-tool';
+$string['privacy:metadata'] = 'De competentie migratie tool-plugin bewaart geen persoonlijke gegevens.';
 $string['results'] = 'Resultaten';
 $string['startdatefrom'] = 'Startdatum van';
 $string['unmappedin'] = 'Ongekoppeld in {$a}';

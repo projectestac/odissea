@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Merlot.org-ren ezarpenak';
 $string['licensekey'] = 'Lizentzia giltza';
-$string['merlot:view'] = 'Merlot biltegia ikusi';
+$string['merlot:view'] = 'Ikusi Merlot biltegia';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
 $string['privacy:metadata:repository_merlot'] = 'Merlot.org biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';

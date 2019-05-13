@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Расширенный поиск';
 $string['pluginname'] = 'Поиск по форумам';
+$string['privacy:metadata'] = 'Блок «Поиск по форумам» только показывает данные, хранящиеся в других местах.';
 $string['search_forums:addinstance'] = 'Добавлять новый блок «Поиск по форумам»';

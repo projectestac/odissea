@@ -101,6 +101,7 @@ $string['mode_help'] = 'Hiermee kun je instellen of cursussen kunnen gemaakt en/
 $string['nochanges'] = 'Geen wijzigingen';
 $string['pluginname'] = 'Cursus uploaden';
 $string['preview'] = 'Bekijken';
+$string['privacy:metadata'] = 'De upload cursussen-plugin bewaart geen persoonlijke gegevens.';
 $string['reset'] = 'Cursus op standaardinstellingen na upload';
 $string['reset_help'] = 'Of een cursus moet gereset worden na het maken/updaten ervan.';
 $string['restoreafterimport'] = 'Terugzetten na importeren';

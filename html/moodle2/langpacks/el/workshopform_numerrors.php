@@ -25,16 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmoredimensions'] = 'Κενά για {$a} ακόμη ισχυρισμούς';
 $string['configgrade0'] = 'Η πρεοεπιλεγμένη λέξη που περιγράφει την αρνητική αξιολόγηση μιας δήλωσης.';
 $string['configgrade1'] = 'Η προεπιλεγμένη λέξη που περιγράφει την θετική αξιολόγηση μιας δήλωσης.';
 $string['dimensioncomment'] = 'Σχόλιο';
 $string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
 $string['dimensiongrade'] = 'Βαθμός';
-$string['dimensionweight'] = 'Βάρος';
+$string['dimensionnumber'] = 'Ισχυρισμός {$a}';
+$string['dimensionweight'] = 'Συντελεστής βαρύτητας';
 $string['grade0'] = 'Λέξη για το λάθος';
 $string['grade0default'] = 'Όχι';
 $string['grade1'] = 'Λέξη για την επιτυχία';
 $string['grade1default'] = 'Ναι';
+$string['grademapping'] = 'Πίνακας αντιστοίχισης βαθμών';
+$string['maperror'] = 'Ο σταθμισμένος αριθμός λαθών είναι μικρότερος από ή ίσος με';
 $string['mapgrade'] = 'Βαθμός για την υποβολή';
+$string['percents'] = '{$a}%';
 $string['pluginname'] = 'Αριθμός λαθών';
+$string['privacy:export:metadata:map'] = 'Αν ο σταθμισμένος αριθμός λαθών φτάσει {$a->nonegative} τότε ο βαθμός είναι {$a->grade} επί τοις εκατό.';
+$string['privacy:metadata'] = 'Το πρόσθετο Αριθμός σφαλμάτων αποθηκεύει μόνο τα στοιχεία της φόρμας αξιολόγησης. Τα πραγματικά προσωπικά δεδομένα για το πως έχει συμπληρωθεί η φόρμα αποθηκεύονται από το ίδιο το άρθρωμα του Εργαστηρίου και επισυνάπτονται στις εξαγόμενες εκτιμήσεις.';

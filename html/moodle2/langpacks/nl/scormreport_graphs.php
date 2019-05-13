@@ -29,3 +29,4 @@ $string['invaliddata'] = 'Niet genoeg gegevens';
 $string['participants'] = 'Aantal deelnemers';
 $string['percent'] = 'Procent (%) beveiligd';
 $string['pluginname'] = 'Grafisch rapport';
+$string['privacy:metadata'] = 'Het grafisch rapport toont enkel gegevens die bewaard worden op andere plaatsen.';

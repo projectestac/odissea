@@ -37,6 +37,6 @@ $string['numsections2'] = 'Untere Grenze2';
 $string['numsections2_help'] = 'Wenn die Anzahl der Abschnitte im Kurs größer ist, erfolgt die Erhöhung in Schritten mit jeweils diesem alternativen Wert.';
 $string['pluginname'] = 'Kursabschnitte';
 $string['privacy:metadata'] = 'Der Block Abschnitte zeigt nur Daten an, die an anderen Orten gespeichert sind.';
-$string['section_links:addinstance'] = 'Block \'Kursabschnitte\' hinzufügen';
+$string['section_links:addinstance'] = 'Neuen Block \'Kursabschnitte\' hinzufügen';
 $string['topics'] = 'Abschnitte';
 $string['weeks'] = 'Wochen';

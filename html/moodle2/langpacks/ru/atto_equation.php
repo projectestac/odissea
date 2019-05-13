@@ -37,6 +37,7 @@ $string['librarygroup4'] = 'Дополнительно';
 $string['librarygroup4_desc'] = 'Команды TeX, которые будут отображаться на вкладке «Дополнительно»';
 $string['pluginname'] = 'Редактор формул';
 $string['preview'] = 'Просмотр формулы';
+$string['privacy:metadata'] = 'Плагин atto_equation не хранит никаких персональных данных.';
 $string['saveequation'] = 'Сохранить формулу';
 $string['settings'] = 'Настройки редактора формул';
 $string['update'] = 'Обновить';

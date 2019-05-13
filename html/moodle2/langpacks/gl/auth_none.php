@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Os usuarios poden rexistrarse e crear contas válidas inmediatamente, sen autenticación contra un servidor externo e sen confirmación por correo. Vaia con tino ao empregar esta opción; pense nos problemas de seguranza e de administración que pode ocasionar.';
 $string['pluginname'] = 'Sen autenticación';
+$string['privacy:metadata'] = 'O engadido de sen autenticación non almacena ningún dato persoal.';

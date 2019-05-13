@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Espais en blanc per {$a} afirmacions més';
-$string['configgrade0'] = 'El mot per omissió que descriu l\'avaluació negativa d\'una afirmació.';
-$string['configgrade1'] = 'El mot per omissió que descriu l\'avaluació positiva d\'una afirmació.';
+$string['configgrade0'] = 'El mot per defecte que descriu l\'avaluació negativa d\'una afirmació.';
+$string['configgrade1'] = 'El mot per defecte que descriu l\'avaluació positiva d\'una afirmació.';
 $string['dimensioncomment'] = 'Comentari';
 $string['dimensioncommentfor'] = 'Comentari per a: {$a}';
 $string['dimensiondescription'] = 'Descripció';

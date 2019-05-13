@@ -423,8 +423,10 @@ $string['outputformat_help'] = 'The output format specifies how the content will
 The output formats that are available depend on the type of the source file. Some types of source file have just one output format, while other types of source file have several output formats.
 
 The "best" setting will display the content using the optimal output format for the student\'s browser.';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'DropDown from html';
 $string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) from html';
 $string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) from html';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JGloss from html';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze (v6) from html';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'ANCT-Scan from HP6 JCloze xml';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'DropDown from HP6 JCloze xml';
@@ -611,3 +613,19 @@ $string['weighting'] = 'Weighting';
 $string['wrong'] = 'Wrong';
 $string['zeroduration'] = 'No duration';
 $string['zeroscore'] = 'Zero score';
+
+$string['privacy'] = 'Privacy of results';
+$string['privacy:metadata:hotpot_attempts'] = 'Information about the user attempts at HotPot activities';
+$string['privacy:metadata:hotpot_attempts:hotpotid'] = 'The ID of the attempts at HotPot activities';
+$string['privacy:metadata:hotpot_attempts:userid'] = 'The ID of the user attempts at HotPot activities';
+$string['privacy:metadata:hotpot_attempts:starttime'] = 'The starttime indicating when the attempts was started by the user';
+$string['privacy:metadata:hotpot_attempts:endtime'] = 'The endtime indicating when the attempts was ended by the user';
+$string['privacy:metadata:hotpot_attempts:score'] = 'The score indicating the score received for the attempts by the user';
+$string['privacy:metadata:hotpot_attempts:penalties'] = 'The penalties indicating the penalties received for the attempts by the user';
+$string['privacy:metadata:hotpot_attempts:attempt'] = 'The attempt indicating the number of attempt by the user';
+$string['privacy:metadata:hotpot_attempts:timestart'] = 'The timestart indicating when the attempts was started by the user';
+$string['privacy:metadata:hotpot_attempts:timefinish'] = 'The timefinish indicating when the attempts was ended by the user';
+$string['privacy:metadata:hotpot_attempts:status'] = 'The status indicating status of the attempts by the user';
+$string['privacy:metadata:hotpot_attempts:clickreportid'] = 'The clickreportid indicating report id of the click by the user';
+$string['privacy:metadata:hotpot_attempts:timemodified'] = 'The timemodified indicating when the HotPot attempts was modified by the user';
+

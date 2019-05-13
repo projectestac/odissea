@@ -67,6 +67,7 @@ $string['judgementsummary'] = 'Respostas: {$a->responses}. Precisión: {$a->frac
 $string['noquestions'] = 'Sen respostas';
 $string['overconfident'] = 'confiado de máis';
 $string['pluginname'] = 'Comentario diferido con PCB';
+$string['privacy:metadata'] = 'O engadido de comentario diferido con PCB non almacena ningún dato persoal.';
 $string['slightlyoverconfident'] = 'un chisco confiado de máis';
 $string['slightlyunderconfident'] = 'un chisco desconfiado';
 $string['underconfident'] = 'desconfiado de máis';

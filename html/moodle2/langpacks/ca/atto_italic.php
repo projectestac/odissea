@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Cursiva';
+$string['privacy:metadata'] = 'El connector atto_italic no emmagatzema cap dada personal.';

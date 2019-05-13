@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'Het wachtwoord was niet juist';
 $string['pluginname'] = 'Toegangsregel: wachtwoord voor test';
+$string['privacy:metadata'] = 'De wachtwoord testtoegangsregel-plugin bewaart geen persoonlijke gegevens.';
 $string['quizpassword'] = 'Wachtwoord voor de test';
 $string['requirepasswordmessage'] = 'Je hebt het wachtwoord voor deze test nodig om de test te kunnen maken';

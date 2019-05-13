@@ -28,3 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = 'Ligazón de son';
 $string['fallbackvideo'] = 'Ligazón de vídeo';
 $string['filtername'] = 'Engadidos multimedia';
+$string['linktomedia'] = 'O filtro de engadidos multimedia atopa unha ligazón no texto que apunta a un recurso multimedia e substitúe a ligazón cun código de reprodutor multimedia axeitado que pode reproducir o recurso. Tamén substitúe as etiquetas &lt;vídeo&gt; e &lt;son&gt; cos reprodutores de vídeo e son seleccionados.
+
+<a href="{$a}">Xestionar os reprodutores multimedia</a>';
+$string['privacy:metadata'] = 'O engadido de multimedia non almacena ningún dato persoal.';

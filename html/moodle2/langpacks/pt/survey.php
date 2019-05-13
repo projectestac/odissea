@@ -76,7 +76,7 @@ $string['attls9'] = 'Dou por mim, muitas vezes, a discutir a posição dos autor
 $string['attls9short'] = 'Discutir com autores';
 $string['attlsintro'] = 'O objetivo deste inquérito é ajudar-nos a avaliar as suas atitudes perante a aprendizagem e o pensamento.
 
-Não existem respostas \'certas\' nem \'erradas\'; estamos interessados apenas na sua opinião. Garantimos que as suas respostas serão tratadas com um elevado grau de confidencialidade, e não influenciarão a sua avaliação na disciplina.';
+Não existem respostas \'certas\' nem \'erradas\'. Estamos interessados apenas na sua opinião. Garantimos que as suas respostas serão tratadas com um elevado grau de confidencialidade, e não influenciarão a sua avaliação na disciplina.';
 $string['attlsm1'] = 'Atitudes Perante o Pensamento e a Aprendizagem';
 $string['attlsm2'] = 'Aprendizagem Colaborativa';
 $string['attlsm3'] = 'Aprendizagem isolada';
@@ -151,9 +151,9 @@ $string['collesaintro'] = 'O objetivo deste inquérito é ajudar-nos a compreend
 
 Cada uma das 24 afirmações abaixo refere-se à sua experiência nesta unidade.
 
-Não há respostas certas nem erradas; estamos apenas interessados na sua opinião.  Garantimos que as suas respostas serão tratadas com um elevado grau de confidencialidade, e não vão influenciar a sua avaliação na disciplina.
+Não existem respostas certas nem erradas. Estamos interessados apenas na sua opinião. Garantimos que as suas respostas serão tratadas com um elevado grau de confidencialidade, e não vão influenciar a sua avaliação na disciplina.
 
-As suas respostas cuidadosas ajudar-nos-ão a melhorar a execução online desta unidade, no futuro.
+As suas respostas cuidadosamente consideradas ajudar-nos-ão a melhorar, no futuro, a execução online desta unidade.
 
 Muito obrigado pela sua colaboração.';
 $string['collesaname'] = 'COLLES (Realidade)';
@@ -184,9 +184,9 @@ $string['collespintro'] = 'O objetivo deste inquérito é ajudar-nos a compreend
 
 Cada uma das 24 afirmações abaixo refere-se ao que seria a sua experiência ideal nesta unidade.
 
-Não há respostas certas nem erradas; estamos apenas interessados na sua opinião.  Garantimos que as suas respostas serão tratadas com um elevado grau de confidencialidade, e não vão influenciar a sua avaliação na disciplina.
+Não existem respostas certas nem erradas. Estamos interessados  apenas na sua opinião. Garantimos que as suas respostas serão tratadas com um elevado grau de confidencialidade, e não vão influenciar a sua avaliação na disciplina.
 
-As suas respostas cuidadosas ajudar-nos-ão a melhorar a execução online desta unidade, no futuro.
+As suas respostas cuidadosamente consideradas ajudar-nos-ão a melhorar, no futuro, a execução online desta unidade, no futuro.
 
 Muito obrigado pela sua colaboração.';
 $string['collespname'] = 'COLLES (Ideal)';

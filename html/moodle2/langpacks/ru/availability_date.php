@@ -36,6 +36,7 @@ $string['full_from_date'] = 'с или после <strong>{$a}</strong>';
 $string['full_until'] = 'До <strong>{$a}</strong>';
 $string['full_until_date'] = 'до <strong>{$a}</strong>';
 $string['pluginname'] = 'Ограничение по дате';
+$string['privacy:metadata'] = 'Плагин ограничения доступности «Ограничение по дате» не хранит никаких персональных данных.';
 $string['short_from'] = 'Доступно с <strong>{$a}</strong>';
 $string['short_from_date'] = 'Доступно с <strong>{$a}</strong>';
 $string['short_until'] = 'Доступно до <strong>{$a}</strong>';

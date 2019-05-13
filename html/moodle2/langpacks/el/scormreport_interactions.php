@@ -26,11 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Αναφορά αλληλεπιδράσεων';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'Αν θα εμφανιστεί η περίληψη των ερωτήσεων στην αναφορά αλληλεπιδράσεων SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'Αν θα εμφανιστεί η περίληψη των αποκρίσεων στην αναφορά αλληλεπιδράσεων SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'Αν θα εμφανιστεί η περίληψη των αποτελεσμάτων στην αναφορά αλληλεπιδράσεων SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Αν θα εμφανιστεί η περίληψη των σωστών απαντήσεων στην αναφορά αλληλεπιδράσεων SCORM';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Αριθμός χρηστών που θα εμφανίζονται στις αναφορές SCORM';
 $string['questionx'] = 'Ερώτηση {$a}';
 $string['responsex'] = 'Απάντηση {$a}';
 $string['resultx'] = 'Αποτέλεσμα {$a}';
 $string['rightanswerx'] = 'Σωστή απάντηση {$a}';
-$string['summaryofquestiontext'] = 'Σύνοψη ερωτήσεων';
-$string['summaryofresponse'] = 'Σύνοψη απαντήσεων';
-$string['summaryofresult'] = 'Σύνοψη αποτελεσμάτων';
-$string['summaryofrightanswer'] = 'Σύνοψη σωστών απαντήσεων';
+$string['summaryofquestiontext'] = 'Περίληψη ερωτήσεων';
+$string['summaryofresponse'] = 'Περίληψη απαντήσεων';
+$string['summaryofresult'] = 'Περίληψη αποτελεσμάτων';
+$string['summaryofrightanswer'] = 'Περίληψη σωστών απαντήσεων';

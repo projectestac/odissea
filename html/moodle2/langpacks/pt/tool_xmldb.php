@@ -142,7 +142,7 @@ $string['integerincorrectlength'] = 'Tamanho incorreto para campo inteiro';
 $string['key'] = 'Chave';
 $string['keynameempty'] = 'O nome da chave não pode ficar vazio';
 $string['keys'] = 'Chaves';
-$string['listreservedwords'] = 'Lista de palacras reservadas<br />(usada para manter atualizada a <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
+$string['listreservedwords'] = 'Lista de palavras reservadas<br />(usada para manter atualizada a <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
 $string['load'] = 'Carregar';
 $string['main_view'] = 'Página principal XMLDB';
 $string['masterprimaryuniqueordernomatch'] = 'Os campos na sua chave externa devem estar na mesma ordem que estão na UNIQUE KEY na tabela referênciada.';
@@ -170,7 +170,7 @@ $string['numberincorrectdecimals'] = 'Número incorreto de decimais para campo n
 $string['numberincorrectlength'] = 'Tamanho incorreto para campo numérico';
 $string['pendingchanges'] = 'Nota: Fez alterações a este ficheiro. Estas podem ser gravadas a qualquer momento.';
 $string['pendingchangescannotbesaved'] = 'Há alterações a este ficheiro mas não podem ser gravadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web.';
-$string['pendingchangescannotbesavedreload'] = 'Existem alterações a este ficheiro mas não podem ser guardadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web. Em seguida, carregue novamente esta página e deverá estar em condições de poder guardar as alterações.';
+$string['pendingchangescannotbesavedreload'] = 'Existem alterações a este ficheiro mas não podem ser guardadas! Verifique que tanto a diretoria como o ficheiro "install.xml" têm permissões de escrita para o servidor web. Em seguida, atualize/recarregue esta página e deverá estar em condições de poder guardar as alterações.';
 $string['pluginname'] = 'Editor XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'As chaves primárias não podem ser nulas';
 $string['privacy:metadata'] = 'O módulo Editor XMLDB não armazena dados pessoais.';

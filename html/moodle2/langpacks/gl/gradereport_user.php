@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradereportviewed'] = 'Visto o informe de cualificacións do usuario';
+$string['myself'] = 'Eu mesmo';
+$string['otheruser'] = 'Usuario';
 $string['pluginname'] = 'Informe do usuario';
+$string['privacy:metadata:preference:gradereport_user_view_user'] = 'Se se quere ver o informe como usuario actual ou outro usuario nos informes do libro de cualificacións';
+$string['tablesummary'] = 'A táboa está organizada como unha lista de elementos cualificados, incluíndo categorías de elementos cualificados. Cando os elementos estean nunha categoría, serán indicados como tales.';
 $string['user:view'] = 'Ver o seu propio informe de cualificación';
+$string['viewas'] = 'Ver informe como';

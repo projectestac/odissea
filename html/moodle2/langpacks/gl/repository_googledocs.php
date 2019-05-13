@@ -25,10 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['both'] = 'Interno e externo';
+$string['cachedef_folder'] = 'ID de ficheiros de Google para cartafoles na conta do sistema';
 $string['clientid'] = 'ID de cliente';
 $string['configplugin'] = 'Configurar o engadido Google Drive';
+$string['defaultreturntype'] = 'Tipo de retorno predeterminado';
+$string['docsformat'] = 'Formato de importación predeterminado de documento';
+$string['drawingformat'] = 'Formato de importación predeterminado de debuxo';
+$string['external'] = 'Externo (só ligazóns almacenadas en Moodle)';
+$string['fileoptions'] = 'Os tipos e os valores predeterminados para os ficheiros devoltos son configurábeis aquí. Teña en conta que todos os ficheiros ligados externamente serán actualizados para que o propietario sexa a conta do sistema Moodle.';
 $string['googledocs:view'] = 'Ver o repositorio Google Drive';
+$string['importformat'] = 'Configure os formatos de importación predeterminados de Google';
+$string['internal'] = 'Interno (ficheiros almacenados en Moodle)';
+$string['issuer'] = 'Servizo OAuth 2';
+$string['issuer_help'] = 'Seleccione o servizo OAuth 2 que está configurado para falar coa API de Google Drive. Se o servizo aínda non existe, terá que crealo.';
+$string['oauth2serviceslink'] = '<a href="{$a}" title="Link to OAuth 2 services configuration">Configuración de servizos OAuth 2</a>';
 $string['oauthinfo'] = '<p> Para usar este engadido, ten que rexistrar o seu sitio en Google, como se describe na documentación de configuración do <a href="{$a->docsurl}">Google OAuth 2.0</a> . </p><p> Como parte do proceso de rexistro, ten que introducir o seguinte enderezo URL como «redirección URI autorizada»: </p><p> {$a->callbackurl} </p> Unha vez rexistrado, ofreceráselle un ID cliente e secreto que pode utilizar para configurar todos os engadidos Google Drive e Picasa. </p><p> Teña en conta que terá que activar o servizo «Drive API». </p>';
+$string['owner'] = 'Propiedade de: {$a}';
 $string['pluginname'] = 'Google Drive';
+$string['presentationformat'] = 'Formato de importación predeterminado de presentación';
+$string['privacy:metadata:repository_googledocs'] = 'O engadido de repositorio de Google Drive almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
+$string['privacy:metadata:repository_googledocs:email'] = 'O correo do usuario do repositorio de Google Drive.';
+$string['privacy:metadata:repository_googledocs:searchtext'] = 'A consulta de busca de texto de usuario do repositorio Google Drive.';
+$string['searchfor'] = 'Buscar por: {$a}';
 $string['secret'] = 'Secreto';
 $string['servicenotenabled'] = 'O acceso non está configurado. Asegúrese de que o servizo «Drive API» está activo.';
+$string['spreadsheetformat'] = 'Formato de importación predeterminado de folla de cálculo';
+$string['supportedreturntypes'] = 'Ficheiros admitidos';

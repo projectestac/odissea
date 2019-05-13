@@ -29,7 +29,7 @@ $string['checkin'] = 'Bewaar strings in taalpakket';
 $string['checkout'] = 'Open taalpakket voor bewerken';
 $string['checkoutdone'] = 'Taalpakket geladen';
 $string['checkoutinprogress'] = 'Taalpakket laden';
-$string['confirmcheckin'] = 'Je gaat gewijzigde strings in je lokaal taalpakket invoeren. Dit proces zal de aangepaste strings van de vertaler naar de datamap exporteren en Moodle zal de aangepaste strings beginnen te gebruiken. Klik op \'Doorgaan\' om je strings in te voeren.';
+$string['confirmcheckin'] = 'Je gaat wijzigingen bewaren in je lokaal taalpakket. Dit proces zal de aangepaste strings van de vertaler naar de datamap exporteren en jouw site zal de aangepaste strings beginnen te gebruiken. Klik op \'Doorgaan\' om verder te gaan met het bewaren van je strings.';
 $string['customlang:edit'] = 'Bewerk lokale vertaling';
 $string['customlang:view'] = 'Bekijk lokale vertaling';
 $string['filter'] = 'Filter strings';
@@ -57,5 +57,6 @@ $string['placeholder_help'] = 'Plaatshouders zijn speciale tekenreeksen binnen e
 Het is belangrijk om de plaatshouders exact te kopiëren, zoals ze in de originele string voorkomen. Vertaal ze niet en wijzig ook hun links-naar-rechts richting niet.';
 $string['placeholderwarning'] = 'String met plaatshouder';
 $string['pluginname'] = 'Taalpakket aanpassen';
+$string['privacy:metadata'] = 'De taal aanpassingsplugin bewaart geen persoonlijke gegevens.';
 $string['savecheckin'] = 'Bewaar wijzigingen in het taalpakket';
 $string['savecontinue'] = 'Pas wijzigingen toe en ga verder met bewerken';

@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Número de discusións';
 $string['numberdiscussions_help'] = 'Esta configuración especifica cantas discusións deberían amosarse.';
 $string['pluginname'] = 'Formato social';
+$string['privacy:metadata'] = 'O engadido de formato social non almacena ningún dato persoal.';
 $string['sectionname'] = 'sección';

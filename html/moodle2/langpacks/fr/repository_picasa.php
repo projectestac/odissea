@@ -31,4 +31,5 @@ $string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d\'abord enregist
 $string['picasa:view'] = 'Consulter un dépôt Picasa';
 $string['pluginname'] = 'Album web Picasa';
 $string['privacy:metadata:repository_picasa'] = 'Le plugin de dépôt Album web Picasa n\'enregistre aucune donnée personnelle, mais transmet des données des utilisateurs de Moodle vers le système distant.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'La requête de recherche utilisateur du dépôt Picasa.';
 $string['secret'] = 'Secret';

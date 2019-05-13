@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dbcannotconnect'] = 'Não foi possível ligar à base de dados externa';
+$string['auth_dbcannotreadtable'] = 'Não é possível ler a tabela externa.';
 $string['auth_dbcantconnect'] = 'Não foi possível ligar à base de dados de autenticação…';
 $string['auth_dbchangepasswordurl_key'] = 'URL para alteração da senha';
+$string['auth_dbcolumnlist'] = 'A tabela externa contém as seguintes colunas:<br /> {$a}';
 $string['auth_dbdebugauthdb'] = 'Depuração do ADOdb';
 $string['auth_dbdebugauthdbhelp'] = 'Depuração da ligação do ADOdb à base de dados externa - utilizar quando se obtiver uma página vazia no início de sessão. Não deve ser usado em sites em produção.';
 $string['auth_dbdeleteuser'] = 'Foi apagado o utilizador {$a->name} com o id {$a->id}';
@@ -46,9 +49,11 @@ $string['auth_dbinsertuserduplicate'] = 'Erro ao inserir {$a->username} - o util
 $string['auth_dbinsertusererror'] = 'Erro ao criar o utilizador {$a}';
 $string['auth_dbname'] = 'Nome da própria base de dados. Deixe em branco se estiver a usar um DSN ODBC. Deixe em branco se o seu PDO DSN já contém o nome da base de dados.';
 $string['auth_dbname_key'] = 'Nome da base de dados';
+$string['auth_dbnoexttable'] = 'Não foi especificada a tabela externa.';
+$string['auth_dbnouserfield'] = 'Não foi especificada o campo de utilizador externo.';
 $string['auth_dbpass'] = 'Senha do utilizador indicado acima';
 $string['auth_dbpass_key'] = 'Senha';
-$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail na Base de Dados externa, e deve executar o admin/cron.php e também auth/db/cli/sync_users.php com regularidade. O Moodle enviará um e-mail para os novos utilizadores com uma senha temporária.</p>';
+$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail na base de dados externa, e deve executar admin/cron.php e auth/db/cli/sync_users.php com regularidade. O Moodle enviará um e-mail aos novos utilizadores com uma senha temporária.</p>';
 $string['auth_dbpasstype_key'] = 'Formato da senha';
 $string['auth_dbreviveduser'] = 'O utilizador {$a->name} com ID {$a->id} foi reativado';
 $string['auth_dbrevivedusererror'] = 'Erro ao reativar o utilizador {$a}';
@@ -61,13 +66,14 @@ $string['auth_dbsybasequoting'] = 'Usar formato de aspas Sybase';
 $string['auth_dbsybasequotinghelp'] = 'Usar o estilo de Sybase de escaping de aspas - necessário para Oracle, MS SQL e outras bases de dados. Não usar com MySQL!';
 $string['auth_dbsyncuserstask'] = 'Sincronizar tarefa de utilizadores';
 $string['auth_dbtable'] = 'Nome da tabela na base de dados';
+$string['auth_dbtableempty'] = 'A tabela externa está vazia.';
 $string['auth_dbtable_key'] = 'Tabela';
-$string['auth_dbtype'] = 'Tipo de base de dados (veja <a href="../lib/adodb/readme.htm#drivers">Documentação do ADOdb</a> para mais informações)';
+$string['auth_dbtype'] = 'Tipo de base de dados (consulte a documentação <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - camada de abstração da base de dados para PHP</a> para mais detalhes).';
 $string['auth_dbtype_key'] = 'Base de dados';
 $string['auth_dbupdateusers'] = 'Atualizar utilizadores';
 $string['auth_dbupdateusers_description'] = 'Bem como ao inserir novos utilizadores, atualizar os utilizadores já existentes.';
 $string['auth_dbupdatinguser'] = 'A atualizar o utilizador {$a->name} com ID {$a->id}';
-$string['auth_dbuser'] = 'Nome de utilizador de conta com permissão de leitura na base de dados';
+$string['auth_dbuser'] = 'Nome de utilizador da conta com permissão de leitura na base de dados';
 $string['auth_dbuser_key'] = 'Utilizador da base de dados';
 $string['auth_dbusernotexist'] = 'Não é possível atualizar o utilizador {$a} porque não existe na base de dados';
 $string['auth_dbuserstoadd'] = 'Registos de utilizador a adicionar: {$a}';

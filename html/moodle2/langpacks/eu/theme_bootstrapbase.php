@@ -26,9 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>Bootstrap Base</h2>
-<img class=img-polaroid src="bootstrap/pix/screenshot.jpg" />
+<img class="img-polaroid" src="bootstrap/pix/screenshot.jpg" />
 <h3>Itxuraren kredituak</h3>
-<p>
 <h3>Moodle-ko twitter Bootstrap itxura</h3>
 <p>
 Itxura hau Bootstrap CSS framework-aren 2.3 bertsioan oinarrituta dago
@@ -40,7 +39,7 @@ Itxura hau Bootstrap CSS framework-aren 2.3 bertsioan oinarrituta dago
 Itxura hau GPL da eta GitHub-en eskuragarri dago:
 </p>
 <p>
-<a href=https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a>
+<a href="https://github.com/bmbrands/theme_bootstrap">https://github.com/bmbrands/theme_bootstrap</a>
 </p>
 <p>
 Libre sentitu zaitez aldatu / hobetu / partekatzeko
@@ -61,10 +60,12 @@ Webgunea: <a href="http://www.basbrands.nl">www.basbrands.nl</a><br>
 
 <h3>Informazio gehiago</h3>
 <ul>
-<li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Itxura honen wiki orria</a>
+<li><a href="https://github.com/bmbrands/theme_bootstrap/wiki">Itxura honen wiki orria</a></li>
 <li><a href="http://docs.moodle.org/23/en/bootstrap-Theme">Bootstrap Moodle docs-en</a></li>
 <li><a href="http://theming.sonsbeekmedia.nl/">Itxurak probatzeko jolastokia</a></li>
-</ul>';
+</ul>
+</div>
+</div>';
 $string['pluginname'] = 'Bootstrap oinarrizkoa';
 $string['privacy:metadata'] = 'bootstrapbase itxurak ez du datu pertsonalik biltzen.';
 $string['region-side-post'] = 'Eskuina';

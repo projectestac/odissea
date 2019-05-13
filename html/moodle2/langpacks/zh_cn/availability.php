@@ -61,6 +61,7 @@ $string['list_root_or_hidden'] = '不能使用（隐藏）除非符合任意一�
 $string['manageplugins'] = '管理限制';
 $string['missingplugin'] = '缺少限制插件';
 $string['or'] = '或';
+$string['privacy:metadata'] = '访问限制子系统不存储任何个人数据。';
 $string['restrictaccess'] = '限制访问';
 $string['restrictbygroup'] = '添加小组/大组访问限制';
 $string['setheading'] = '{$a->number} 设置中的 {$a->count} 条件';

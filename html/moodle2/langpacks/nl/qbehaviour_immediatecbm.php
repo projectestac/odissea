@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Kies hoe zeker je bent';
 $string['pluginname'] = 'Onmiddellijke feedback met CBM';
+$string['privacy:metadata'] = 'De onmiddellijke feedback met CBM vraaggedrag-plugin bewaart geen persoonlijke gegevens.';

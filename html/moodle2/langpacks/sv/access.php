@@ -33,6 +33,7 @@ $string['activitynext'] = 'Nästa aktivitet';
 $string['activityprev'] = 'Föregående aktivitet';
 $string['breadcrumb'] = '\'Brödsmule\'-spår';
 $string['hideblocka'] = 'Dölj {$a} block';
+$string['monthnext'] = 'Nästa månad';
 $string['monthprev'] = 'Föregående månad';
 $string['showblocka'] = 'Visa {$a} block';
 $string['sitemap'] = 'Karta över webbplatsen';

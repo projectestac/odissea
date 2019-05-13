@@ -29,4 +29,5 @@ $string['configplugin'] = 'Configuratie van de zone voor persoonlijke bestanden 
 $string['emptyfilelist'] = 'Er zijn geen te tonen bestanden';
 $string['pluginname'] = 'Persoonlijke bestanden';
 $string['pluginname_help'] = 'Bestanden in de zone voor persoonlijke bestanden';
+$string['privacy:metadata'] = 'De privébestanden opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['user:view'] = 'Bekijk persoonlijke bestanden';

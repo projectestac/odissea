@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['coursesummary'] = 'Kursinformationen';
-$string['course_summary:addinstance'] = 'Block \'Kursbeschreibung\' hinzufügen';
+$string['course_summary:addinstance'] = 'Neuen Block \'Kursbeschreibung\' hinzufügen';
 $string['pluginname'] = 'Kursbeschreibung';
 $string['privacy:metadata'] = 'Der Block \'Kursbeschreibung\' zeigt nur Informationen zu Kursen an, speichert selber aber keine Daten.';

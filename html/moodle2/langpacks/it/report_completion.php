@@ -37,3 +37,4 @@ $string['page-report-completion-index'] = 'Report completamento corso';
 $string['page-report-completion-user'] = 'Report completamento corso dell\'utente';
 $string['page-report-completion-x'] = 'Qualsiasi report di completamento';
 $string['pluginname'] = 'Completamento corso';
+$string['privacy:metadata'] = 'Il plugin Report Completamento corso mostra solamente i dati memorizzati in altre posizioni.';

@@ -33,7 +33,7 @@ $string['analysisnameonly'] = '"{$a->name}"';
 $string['analysisno'] = '({$a->number}) "{$a->name}"';
 $string['analysisnovariant'] = '({$a->number}) "{$a->name}" 变形试题 {$a->variant}';
 $string['analysisofresponses'] = '答题分析';
-$string['analysisofresponsesfor'] = '{$a}的答题分析。';
+$string['analysisofresponsesfor'] = '对{$a}的答题分析';
 $string['analysisvariant'] = '"{$a->name}" 的变形试题 {$a->variant}';
 $string['attempts'] = '试卷';
 $string['attemptsall'] = '所有试卷';
@@ -84,12 +84,14 @@ $string['negcovar_help'] = '此题在此试卷集合中的成绩与测验中所�
 我们计算实际题目权重的公式此时无效。如果高亮显示的有负值协方差的题目最高分设为 0 分，那么测验中其它题目的实际权重就是这些题目的实际权重。
 
 如果您编辑一个测验，让有负值协方差的题目的最高分为 0，那么这些题目的实际权重会是 0，其它题目的实际权重会按当前情况计算。';
+$string['nogradedattempts'] = '本考试尚未有任何答题尝试，或所有答题尝试中包括需要人工评分的试题。';
 $string['nostudentsingroup'] = '此小组中还没有学生';
 $string['optiongrade'] = '得分比例';
 $string['partofquestion'] = '试题部分';
 $string['pluginname'] = '统计';
 $string['position'] = '题号';
 $string['positions'] = '位置';
+$string['privacy:metadata'] = '虽然 Quiz 统计插件有数据表，但这些数据是汇总数据不包含具体个人的细节描述。';
 $string['questioninformation'] = '题目信息';
 $string['questionname'] = '题目名';
 $string['questionnumber'] = '题#';

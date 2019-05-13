@@ -30,6 +30,6 @@ $string['emptyfilelist'] = 'Es gibt keine Dateien anzuzeigen';
 $string['notitle'] = 'unbenannt';
 $string['pluginname'] = 'Letzte Dateien';
 $string['pluginname_help'] = 'Zuletzt vom Nutzer verwendete Dateien';
-$string['privacy:metadata'] = 'Das Repository-Plugin für zuletzt genutzte Dateien speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Repository-Plugin für zuletzt genutzte Dateien speichert keine personenbezogenen Daten.';
 $string['recentfilesnumber'] = 'Anzahl zuletzt genutzter Dateien';
 $string['recent:view'] = 'Zuletzt genutzte Dateien anzeigen';

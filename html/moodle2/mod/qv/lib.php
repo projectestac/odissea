@@ -45,8 +45,14 @@ define('QV_HASH_ONLINE', 'online');
 define('QV_FILE_TYPE_LOCAL', 'local');
 define('QV_FILE_TYPE_EXTERNAL', 'external');
 
-/** Include eventslib.php */
-require_once($CFG->libdir.'/eventslib.php');
+//
+// DEPRECATED IN MOODLE 3.6
+// See: https://docs.moodle.org/dev/Events_API
+//
+// /** Include eventslib.php */
+// require_once($CFG->libdir.'/eventslib.php');
+//
+
 /** Include formslib.php */
 require_once($CFG->libdir.'/formslib.php');
 /** Include calendar/lib.php */

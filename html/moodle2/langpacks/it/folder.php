@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['contentheader'] = 'Contenuto';
 $string['display'] = 'Visualizzazione del contenuto';
-$string['display_help'] = 'Scegliendo di visualizzare il contenuto del folder nella home page del corso, non sarà disponibile il link ad una pagina separata della risorsa. La descrizione sarà visualizzata solo se è stata selezionata l\'impostazione "Visualizza descrizione nella home del corso".<br />
+$string['display_help'] = 'Scegliendo di visualizzare il contenuto del folder nella pagina home del corso, non sarà disponibile il link ad una pagina separata della risorsa. La descrizione sarà visualizzata solo se è stata selezionata l\'impostazione "Visualizza descrizione nella home del corso".<br />
 Da notare che con questa impostazione la visualizzazione della risorsa da parte dei partecipanti non potrà essere inserita nel log.';
-$string['displayinline'] = 'Nella home page del corso';
+$string['displayinline'] = 'Nella pagina home del corso';
 $string['displaypage'] = 'In una pagina separata';
 $string['dnduploadmakefolder'] = 'Decomprimi i file e crea le cartelle';
 $string['downloadfolder'] = 'Scarica cartella';
@@ -45,7 +45,7 @@ $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profon
 $string['indicator:socialbreadth'] = 'Cartella sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'file\'.';
 $string['maxsizetodownload'] = 'Dimensione massima della cartella da scaricare (MB)';
-$string['maxsizetodownload_help'] = 'L\'impostazione limita la dimensione massima oltre la quale gli utenti non potranno scaricare la cartella in formato zip. Impostando a zero, non ci saranno limiti dimensionai.';
+$string['maxsizetodownload_help'] = 'L\'impostazione limita la dimensione massima oltre la quale gli utenti non potranno scaricare la cartella in formato zip. Impostando a zero, non ci saranno limiti dimensionali.';
 $string['modulename'] = 'Cartella';
 $string['modulename_help'] = 'Il modulo cartella consente al docente di visualizzare in un unica cartella un insieme di file correlati tra loro, riducendo la dimensione della pagine home del corso. Ad esempio, è possibile caricare una cartella compressa per poi decomprimerla e renderla disponibile, oppure è possibile creare una cartella vuota e caricarci dei file direttamente.
 
@@ -55,7 +55,7 @@ Una cartella può essere usata per:
 * fornire uno spazio comune dove i docenti possono caricare e condividere file del corso (tenendo la cartella nascosta agli studenti)';
 $string['modulenameplural'] = 'Cartelle';
 $string['newfoldercontent'] = 'Contenuto della cartella';
-$string['noautocompletioninline'] = 'Il completamento automatico basato sulla visualizzazione dell\'attività non può essere selezionato se la visualizzazione del contenuto è impostata a "Nella home page del corso".';
+$string['noautocompletioninline'] = 'Il completamento automatico basato sulla visualizzazione dell\'attività non può essere selezionato se la visualizzazione del contenuto è impostata a "Nella pagina home del corso".';
 $string['page-mod-folder-view'] = 'Pagina principale modulo cartella';
 $string['page-mod-folder-x'] = 'Qualsiasi pagina con modulo cartella';
 $string['pluginadministration'] = 'Gestione cartella';
@@ -65,4 +65,4 @@ $string['search:activity'] = 'Cartella - Informazioni sull\'attività';
 $string['showdownloadfolder'] = 'Visualizza pulsante Scarica cartella';
 $string['showdownloadfolder_help'] = 'Visualizza un pulsante che consente lo scaricamento in formato zip dei file presenti in una cartella.';
 $string['showexpanded'] = 'Visualizza aperte le sotto cartelle';
-$string['showexpanded_help'] = 'Consente di visualizzare aperte le eventuali sotto cartelle, per default visualizzate chiuse.';
+$string['showexpanded_help'] = 'Consente di visualizzare aperte le eventuali sotto cartelle, di default visualizzate chiuse.';

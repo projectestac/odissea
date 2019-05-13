@@ -36,6 +36,7 @@ $string['numsections1_help'] = 'Unha vez que o número de seccións no curso aca
 $string['numsections2'] = 'Número alternativo de seccións';
 $string['numsections2_help'] = 'Unha vez que o número de seccións no curso acada ese número, utilízase o valor alternativo de incremento.';
 $string['pluginname'] = 'Ligazóns da sección';
+$string['privacy:metadata'] = 'O bloque de ligazóns da sección só amosa datos almacenados noutros lugares.';
 $string['section_links:addinstance'] = 'Engadir un novo bloque de ligazóns de sección';
 $string['topics'] = 'Temas';
 $string['weeks'] = 'Semanas';

@@ -17,7 +17,7 @@
 defined('MOODLE_INTERNAL') || die();
 require_once($CFG->dirroot . '/question/type/wq/quizzes/quizzes.php');
 
-class qtype_wq_question extends question_with_responses {
+class qtype_wq_question extends question_graded_automatically {
     /**
      * @var question_definition
      *   The base question.

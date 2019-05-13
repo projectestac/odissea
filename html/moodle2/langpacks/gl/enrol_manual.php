@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Avanzado';
 $string['alterstatus'] = 'Mudar o estado';
 $string['altertimeend'] = 'Mudar o tempo de remate';
 $string['altertimestart'] = 'Mudar o tempo de principio';
 $string['assignrole'] = 'Asignar rol';
+$string['assignroles'] = 'Asignar roles';
 $string['browsecohorts'] = 'Examinar círculos';
 $string['browseusers'] = 'Examinar usuarios';
 $string['confirmbulkdeleteenrolment'] = 'Confirma que quere eliminar estas matriculacións de usuarios?';
@@ -40,6 +42,7 @@ $string['deleteselectedusers'] = 'Eliminar as matriculacións dos usuarios selec
 $string['editselectedusers'] = 'Editar as matriculacións dos usuarios seleccionados';
 $string['enrolledincourserole'] = 'Matriculado en «{$a->course}» como «{$a->role}»';
 $string['enrolusers'] = 'Matricular usuarios';
+$string['enroluserscohorts'] = 'Matricular os usuarios e círculos seleccionados';
 $string['expiredaction'] = 'Acción na expiración da matriculación';
 $string['expiredaction_help'] = 'Seleccionar unha acción para realizar cando a matriculación dun usuario expire. Vexa que algúns datos de usuario e configuracións se purgan do curso durante a desmatriculación do curso.';
 $string['expirymessageenrolledbody'] = 'Prezado/a {$a->user}:
@@ -64,6 +67,10 @@ $string['messageprovider:expiry_notification'] = 'Notificacións de expiración 
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Matriculacións manuais';
 $string['pluginname_desc'] = 'O engadido de matriculación manual permítelles aos usuarios seren manualmente matriculados por medio dunha ligazón na configuración da administración do curso, por un usuario cos permisos adecuados, como pode ser un profesor. O engadido xa debería estar activado normalmente, xa que outros engadidos de matriculación, como o de automatriculación o requiren.';
+$string['privacy:metadata'] = 'O engadido de matriculacións manuais non almacena ningún dato persoal.';
+$string['selectcohorts'] = 'Escoller círculos';
+$string['selection'] = 'Selección';
+$string['selectusers'] = 'Escoller usuarios';
 $string['status'] = 'Activar as matriculacións manuais';
 $string['status_desc'] = 'Permitirlle acceso ao curso aos usuarios internamente matriculados. Isto debería permanecer activado na maioría dos casos.';
 $string['statusdisabled'] = 'Desactivado';

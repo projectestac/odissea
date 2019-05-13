@@ -62,6 +62,12 @@ $string['event_tour_ended'] = 'Visita guiada finalitzada';
 $string['event_tour_reset'] = 'Visita guiada restaurada';
 $string['event_tour_started'] = 'S\'ha iniciat la visita guiada';
 $string['exporttour'] = 'Exporta la visita guiada';
+$string['filter_category'] = 'Categoria';
+$string['filter_category_help'] = 'Mostra la visita guiada en una pàgina associada a un curs de la categoria seleccionada.';
+$string['filter_course'] = 'Cursos';
+$string['filter_courseformat'] = 'Format de curs';
+$string['filter_courseformat_help'] = 'Mostra la visita guiada en una pàgina associada a un curs utilitzant el format de curs seleccionat.';
+$string['filter_course_help'] = 'Mostra la visita guiada en una pàgina associada al curs seleccionat.';
 $string['filter_header'] = 'Filtres de la visita guiada';
 $string['filter_help'] = 'Selecciona les condicions sota les quals es mostrarà la visita guiada. Cal que tots els filtres coincideixin amb una visita guiada per mostrar a un usuari.';
 $string['filter_role'] = 'Rol';
@@ -99,6 +105,7 @@ $string['placement_help'] = 'Un pas es pot posar a la part superior, inferior, e
 
 Si el pas no encaixa al lloc determinat d\'una pàgina concreta, es mostrarà de manera automàtica a una altra banda.';
 $string['pluginname'] = 'Visites guiades';
+$string['privacy:metadata:preference:completed'] = 'El temps que un usuari tarda a completar una visita guiada d\'usuari.';
 $string['reflex'] = 'Continua en fer clic';
 $string['reflex_help'] = 'Avança al pas següent quan es fa clic a la pàgina associada amb el pas.';
 $string['resettouronpage'] = 'Reinicia la visita guiada de l\'usuari en aquesta pàgina';

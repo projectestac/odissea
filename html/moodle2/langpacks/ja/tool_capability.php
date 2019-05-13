@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['capabilitylabel'] = 'ケイパビリティ:';
-$string['capabilityreport'] = 'ケイパビリティレポート';
+$string['capabilityreport'] = 'ケイパビリティ概要';
 $string['changeoverrides'] = 'このコンテクスト内のオーバーライドを変更する';
 $string['changeroles'] = 'ロール定義を変更する';
 $string['eventreportviewed'] = 'レポートが閲覧されました。';
 $string['forroles'] = 'ロール {$a}';
-$string['getreport'] = 'レポートを取得する';
-$string['intro'] = 'このレポートでは特定のケイパビリティに関して、すべてのロール (または選択されたロール) 定義に、どのようなパーミッションが設定されているか、およびサイト全体のどこでそのケイパビリティがオーバーライドされているか表示します。';
-$string['pluginname'] = 'ケイパビリティレポート';
+$string['getreport'] = '概要を取得する';
+$string['intro'] = 'このレポートでは特定のケイパビリティに関してすべてのロール (または選択されたロール) 定義にどのようなパーミッションが設定されているか、またサイト全体のどこでそのケイパビリティがオーバーライドされているか表示します。';
+$string['pluginname'] = 'ケイパビリティ概要';
 $string['privacy:metadata'] = 'ケイパビリティ概要プラグインはどのような個人データも保存しません。';
 $string['reportforcapability'] = 'ケイパビリティ「 {$a} 」のレポート';
 $string['reportsettings'] = 'レポート設定';

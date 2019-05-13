@@ -210,8 +210,8 @@ $string['invalidmanifestname'] = 'imsmanifest.xmlまたは.zipファイルのみ
 $string['invalidmanifestresource'] = '警告: 次のリソースはあなたのマニフェスト内で参照されていますが見つかりませんでした:';
 $string['invalidurl'] = '無効なURLが指定されました。';
 $string['invalidurlhttpcheck'] = '無効なURLが指定されました。デバッグメッセージ:<pre>{$a->cmsg}</pre>';
-$string['last'] = '最新アクセス日時';
-$string['lastaccess'] = '最新のアクセス';
+$string['last'] = '最終アクセス日時';
+$string['lastaccess'] = '最終アクセス';
 $string['lastattempt'] = '最新の完了済み受験';
 $string['lastattemptlock'] = '最終受験後にロックする';
 $string['lastattemptlockdesc'] = 'この設定を有効にした場合、割り当てられた受験すべての終了後、学生はSCORMプレイヤを起動できないようになります。';
@@ -241,6 +241,8 @@ SCORM活動は下記のように使用することができます:
 * マルチメディアコンテンツおよびアニメーションの表示のため
 * 評価ツールとして';
 $string['modulenameplural'] = 'SCORMパッケージ';
+$string['myaiccsessions'] = '私のAICCセッション';
+$string['myattempts'] = '私の受験';
 $string['nav'] = 'ナビゲーションを表示する';
 $string['navdesc'] = 'ここではナビゲーションボタンの表示/非表示およびポジションを設定します。';
 $string['nav_help'] = 'ここではナビゲーションボタンの表示/非表示およびポジションを設定します。

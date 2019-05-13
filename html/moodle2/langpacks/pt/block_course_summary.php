@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['coursesummary'] = 'Sumário da disciplina';
+$string['coursesummary'] = 'Descrição da disciplina';
 $string['course_summary:addinstance'] = 'Adicionar um novo bloco Descrição da disciplina/site';
 $string['pluginname'] = 'Descrição da disciplina/site';
 $string['privacy:metadata'] = 'O bloco Descrição da disciplina/site apenas mostra informações sobre as disciplinas e não armazena dados.';

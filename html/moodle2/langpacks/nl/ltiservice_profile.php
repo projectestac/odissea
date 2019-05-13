@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tool gebruikersprofiel LTI dienst';
+$string['privacy:metadata'] = 'De Tool Consumer Profile LTI-service plugin bewaart geen persoonlijke gegevens.';

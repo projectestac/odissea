@@ -38,6 +38,7 @@ $string['logodesc'] = 'Upload hier het logo dat je wil toevoegen aan de header v
 div.logo {height: 100px;} -> pas dit aan aan de hoogte van je logo.
 Als hier geen logo wordt toegevoegd, dan wordt het logo in Uiterlijk > Logo\'s gebruikt.';
 $string['pluginname'] = 'Clean';
+$string['privacy:metadata'] = 'Het Clean-thema slaat geen persoonlijke gegevens over een gebruiker op.';
 $string['region-side-post'] = 'Rechts';
 $string['region-side-pre'] = 'Links';
 $string['sitelogo'] = 'Site-logo';

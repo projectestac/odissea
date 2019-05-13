@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comportamento para elementos de información';
+$string['privacy:metadata'] = 'O engadido de comportamento de preguntas de elementos de información non almacena ningún dato persoal.';
 $string['seen'] = 'Visto';

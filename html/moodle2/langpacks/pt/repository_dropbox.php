@@ -38,6 +38,6 @@ $string['oauth2redirecturi'] = 'Redirecionamento URI da OAuth 2';
 $string['pluginname'] = 'Dropbox';
 $string['privacy:metadata:repository_dropbox'] = 'O módulo repositório Dropbox  não armazena dados pessoais, mais transmite dados do utilizador do
 Moodle para o sistema remoto.';
-$string['privacy:metadata:repository_dropbox:query'] = 'Pesquisa de texto do utilizador no repositório Dropbox';
+$string['privacy:metadata:repository_dropbox:query'] = 'Pesquisa de texto no repositório Dropbox  do utilizador';
 $string['remember'] = 'Manter sessão';
 $string['secret'] = 'Senha Dropbox';

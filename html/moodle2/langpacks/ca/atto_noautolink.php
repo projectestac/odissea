@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Evita enllaços automàtics';
+$string['privacy:metadata'] = 'El connector atto_noautolink no emmagatzema cap dada personal.';

@@ -170,14 +170,14 @@ $string['notpermittedtoland'] = 'Não tem permissão para começar uma sessão r
 $string['off'] = 'Desligado';
 $string['on'] = 'Ligado';
 $string['options'] = 'Opções';
-$string['peerprofilefielddesc'] = 'Esta configuração permite substituir as configurações globais existentes sobre os campos a enviar e a importar quando novos utilizadores são criados';
+$string['peerprofilefielddesc'] = 'Esta configuração permite redefinir as configurações globais existentes sobre os campos a enviar e a importar quando novos utilizadores são criados';
 $string['permittedtransports'] = 'Transportes permitidos';
 $string['phperror'] = 'Um erro interno do PHP impediu a satisfação do seu pedido.';
 $string['position'] = 'Posição';
 $string['postrequired'] = 'A função de apagar requer um pedido POST.';
 $string['privacy:metadata'] = 'O módulo Comportamento das perguntas Modo adaptável (sem penalizações) não armazena dados pessoais.';
 $string['profileexportfields'] = 'Campos a enviar';
-$string['profilefielddesc'] = 'Esta configuração permite definir a lista de campos do perfil que são enviados e recebidos através da Rede Moodle quando as contas de utilizador são criadas ou atualizadas. Além disso, é possível sobrepor esta configuração individualmente para cada par da Rede Moodle. De notar que os campos seguintes são sempre enviados e não são opcionais: {$a}';
+$string['profilefielddesc'] = 'Esta configuração permite definir a lista de campos do perfil que são enviados e recebidos através da Rede Moodle quando as contas de utilizador são criadas ou atualizadas. Além disso, é possível redefinir esta configuração individualmente para cada par da Rede Moodle. De notar que os campos seguintes são sempre enviados e não são opcionais: {$a}';
 $string['profilefields'] = 'Campos do perfil';
 $string['profileimportfields'] = 'Campos a importar';
 $string['promiscuous'] = 'Promíscuo';
@@ -229,7 +229,7 @@ $string['sslverification_help'] = 'Esta opção permite configurar o nível de s
 * Verificar apenas o servidor: Valida o domínio do certificado SSL
 * Verificar servidor e pares (recomendado): Valida o domínio e a origem do certificado SSL';
 $string['ssoaccesscontrol'] = 'Controlo de acessos SSO';
-$string['ssoacldescr'] = 'Esta página permite configurar o acesso de utilizadores específicos provenientes de servidores externos pertencentes à Rede Moodle. Esta configuração é importante quando são  disponibilizados serviços de SSO a utilizadores externos.É possível configurar a capacidade dos utilizadores <em>locais</em> deste site navegarem para outros servidores da rede Moodle utilizando o sistema de papéis para lhes dar a capacidade <em>mnetlogintoremote</em>.';
+$string['ssoacldescr'] = 'Esta página permite configurar o acesso de utilizadores específicos provenientes de servidores externos pertencentes à Rede Moodle. Esta configuração é importante quando são  disponibilizados serviços de SSO a utilizadores externos.É possível configurar a permissão dos utilizadores <em>locais</em> deste site navegarem para outros servidores da rede Moodle utilizando o sistema de papéis para lhes dar a permissão <em>mnetlogintoremote</em>.';
 $string['ssoaclneeds'] = 'Para que esta opção funcione, tem de ter a Rede Moodle ativa, além do módulo de autenticação rede Moodle, com a opção de adicionar utilizadores automaticamente ligada.';
 $string['strict'] = 'Rigoroso';
 $string['subscribe'] = 'Subscrever';
@@ -241,14 +241,14 @@ $string['theypublish'] = 'Eles publicam';
 $string['theysubscribe'] = 'Eles subscrevem';
 $string['transport_help'] = 'Estas opções são recíprocas, de modo que só lhe é possível forçar um servidor remoto a usar um certificado SSL assinado, se o seu servidor também o utilizar.';
 $string['trustedhosts'] = 'Servidores XML-RPC';
-$string['trustedhostsexplain'] = '<p> O mecanismo de servidores de confiança permite que determinadas máquinas executem chamadas através de XML-RPC para qualquer parte da API do Moodle.
-Esta opção está disponível para que scripts controlem o comportamento de Moodle e pode ser muito perigoso ativá-la. Se tem dúvidas, mantenha-a desativada.</p>
-Esta opção<strong> não</strong> é necessária para o funcionamento da rede Moodle.</p>
-<p>Para a ativar, introduza uma lista de endereços ou redes IP, uma em cada linha.
-Alguns exemplos: :</p>localhost: :<br />127.0.0.1<br /> localhost (com um bloco de rede):<br />127.0.0.1/32<br />
-Só o servidor com endereço IP 192.168.0.7:<br />192.168.0.7/32<br />
-Qualquer servidor com um endereço de IP entre 192.168.0.1 e 192.168.0.255:<br />192.168.0.0/24<br />
-Qualquer servidor: <br />192.168.0.0/0<br />
+$string['trustedhostsexplain'] = '<p>O mecanismo de servidores de confiança permite que determinadas "máquinas" executem chamadas através de XML-RPC para qualquer parte da API do Moodle.
+Esta opção está disponível para que scripts controlem o comportamento de Moodle e pode ser muito perigoso ativá-la. Em caso de dúvidas, mantenha-a desativada.</p>
+Esta opção <strong>não</strong> é necessária para o funcionamento da rede Moodle.</p>
+<p>Para a ativar, introduza uma lista de endereços ou redes IP, um em cada linha.
+Alguns exemplos: </p>localhost:<br />127.0.0.1<br />localhost (com um bloco de rede):<br />127.0.0.1/32<br />
+Apenas o servidor com endereço IP 192.168.0.7:<br />192.168.0.7/32<br />
+Qualquer servidor com endereço de IP entre 192.168.0.1 e 192.168.0.255:<br />192.168.0.0/24<br />
+Qualquer servidor:<br />192.168.0.0/0<br />
 Obviamente, o último exemplo <strong>não</strong> é uma configuração recomendada.';
 $string['turnitoff'] = 'Desligar';
 $string['turniton'] = 'Ligar';

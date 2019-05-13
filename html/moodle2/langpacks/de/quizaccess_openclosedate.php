@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Dieser Test steht zur Zeit nicht zur Verfügung.';
 $string['pluginname'] = 'Start-/Enddatum';
-$string['privacy:metadata'] = 'Das Plugin für Start und Ende von Tests speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Plugin für Start und Ende von Tests speichert keine personenbezogenen Daten.';
 $string['quiznotavailable'] = 'Der Test ist nicht verfügbar bis {$a}';

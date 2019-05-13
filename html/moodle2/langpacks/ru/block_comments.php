@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['comments:addinstance'] = 'Добавлять новый блок «Комментарии»';
 $string['comments:myaddinstance'] = 'Добавлять новый блок «Комментарии» на страницу «Личный кабинет»';
 $string['pluginname'] = 'Комментарии';
+$string['privacy:metadata:core_comment'] = 'Запись добавленных комментариев.';

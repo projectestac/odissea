@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availableplugins'] = 'Eskura dauden pluginak';
 $string['configenableplagiarism'] = 'Honek aukera ematen dio kudeatzaileari plagio-pluginak  konfiguratzeko (instalatuta badaude)';
 $string['configplagiarismplugins'] = 'Mesedez, aukeratu konfiguratu nahi duzun plagio-plugina';
-$string['enableplagiarism'] = 'Plagio-pluginak gaitu';
+$string['enableplagiarism'] = 'Gaitu plagio-pluginak';
 $string['manageplagiarism'] = 'Kudeatu plagio-pluginak';
 $string['nopluginsinstalled'] = 'Plagio-pluginak ez daude instalatuta';
 $string['plagiarism'] = 'Plagioa';

@@ -55,6 +55,16 @@ class com_wiris_util_type_Arrays {
 		}
 		return $words;
 	}
+	static function toIntArray($array) {
+		$result = new _hx_array(array());
+		$it = $array->iterator();
+		while($it->hasNext()) {
+			$value = Std::parseInt($it->next());
+			$result->push($value);
+			unset($value);
+		}
+		return $result;
+	}
 	static function contains($array, $element) {
 		return com_wiris_util_type_Arrays::indexOfElement($array, $element) >= 0;
 	}
@@ -200,6 +210,81 @@ class com_wiris_util_type_Arrays {
 	}
 	static function lastElement($elements) {
 		return $elements[$elements->length - 1];
+	}
+	static function intersectSorted($a, $b) {
+		if($a === null) {
+			return (($b === null) ? null : com_wiris_util_type_Arrays::copyArray($b));
+		} else {
+			if($b === null) {
+				return com_wiris_util_type_Arrays::copyArray($a);
+			} else {
+				$v = new _hx_array(array());
+				$i = 0;
+				$j = 0;
+				while($i < $a->length && $j < $b->length) {
+					$cmp = Reflect::compare($a[$i], $b[$j]);
+					if($cmp === 0) {
+						$v->push($a[$i]);
+						$i++;
+						$j++;
+					} else {
+						if($cmp < 0) {
+							$i++;
+						} else {
+							$j++;
+						}
+					}
+					unset($cmp);
+				}
+				return $v;
+			}
+		}
+	}
+	static function difference($a, $b) {
+		$v = new _hx_array(array());
+		if($a === null) {
+			return $v;
+		} else {
+			if($b === null) {
+				return com_wiris_util_type_Arrays::copyArray($a);
+			}
+		}
+		$it = $a->iterator();
+		while($it->hasNext()) {
+			$e = $it->next();
+			if(com_wiris_util_type_Arrays::indexOfElement($b, $e) < 0) {
+				$v->push($e);
+			}
+			unset($e);
+		}
+		return $v;
+	}
+	static function arrayUnion($baseArray, $unionArray) {
+		$it = $unionArray->iterator();
+		while($it->hasNext()) {
+			$n = $it->next();
+			if(!com_wiris_system_ArrayEx::contains($baseArray, $n)) {
+				$baseArray->push($n);
+			}
+			unset($n);
+		}
+	}
+	static function equalAsSets($a, $b) {
+		if($a === null || $b === null) {
+			return $a === $b;
+		}
+		if($a->length === $b->length) {
+			$it = $b->iterator();
+			while($it->hasNext()) {
+				$t = $it->next();
+				if(!com_wiris_system_ArrayEx::contains($a, $t)) {
+					return false;
+				}
+				unset($t);
+			}
+			return true;
+		}
+		return false;
 	}
 	function __toString() { return 'com.wiris.util.type.Arrays'; }
 }

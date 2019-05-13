@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Η εξαγωγή βαθμών σε XML έγινε';
 $string['pluginname'] = 'Αρχείο XML';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εξαγωγή βαθμών σε αρχείο XML» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['xml:publish'] = 'Δημοσίευση εξαγωγής XML βαθμών';
 $string['xml:view'] = 'Χρήση εξαγωγής XML βαθμών';

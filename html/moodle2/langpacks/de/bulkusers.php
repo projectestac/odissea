@@ -32,6 +32,7 @@ $string['allselectedusers'] = 'Alle ausgewählten ({$a->count}/{$a->total})';
 $string['allusers'] = 'Alle verfügbaren ({$a})';
 $string['available'] = 'Gefunden';
 $string['confirmmessage'] = 'Möchten Sie wirklich eine Nachricht an diese Nutzer/innen senden?<br />{$a}';
+$string['deleteduser'] = 'Gelöschter Nutzer';
 $string['nofilteredusers'] = 'Keine gefunden (0/{$a})';
 $string['noselectedusers'] = 'Keine ausgewählt';
 $string['removeall'] = 'Alle entfernen';

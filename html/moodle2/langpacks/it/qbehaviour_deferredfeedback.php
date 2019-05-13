@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Feedback differito';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Feedback differito\' non memorizza dati personali.';

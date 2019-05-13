@@ -81,6 +81,7 @@ $string['no_visible_activities_message'] = 'None of the monitored activities are
 $string['now_indicator'] = 'NOW';
 $string['overview'] = 'Overview of students';
 $string['pluginname'] = 'Completion Progress';
+$string['privacy:metadata'] = 'The Completion Progress block only displays existing completion data.';
 $string['progress'] = 'Progress';
 $string['progressbar'] = 'Completion Progress';
 $string['shortname'] = 'Short course name';

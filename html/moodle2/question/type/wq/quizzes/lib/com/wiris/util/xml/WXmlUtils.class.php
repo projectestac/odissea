@@ -455,6 +455,41 @@ class com_wiris_util_xml_WXmlUtils {
 			$to->addChild(com_wiris_util_xml_WXmlUtils::importXml($children->next(), $to));
 		}
 	}
+	static function getChildPosition($parent, $node) {
+		$childIndex = 0;
+		$it = $parent->iterator();
+		while($it->hasNext()) {
+			$child = $it->next();
+			if($child === $node) {
+				return $childIndex;
+			}
+			++$childIndex;
+			unset($child);
+		}
+		return -1;
+	}
+	static function getChildElementCount($parent) {
+		if($parent->nodeType != Xml::$Element && $parent->nodeType != Xml::$Document) {
+			return 0;
+		}
+		$it = $parent->elements();
+		$count = 0;
+		while($it->hasNext()) {
+			$it->next();
+			++$count;
+		}
+		return $count;
+	}
+	static function replaceChild($parent, $childToReplace, $replacement) {
+		$childIndex = com_wiris_util_xml_WXmlUtils::getChildPosition($parent, $childToReplace);
+		if($childIndex !== -1) {
+			com_wiris_util_xml_WXmlUtils::replaceIndexSub($parent, $childIndex, $childToReplace, $replacement);
+		}
+	}
+	static function replaceIndexSub($parent, $index, $childToReplace, $replacement) {
+		$parent->insertChild($replacement, $index);
+		$parent->removeChild($childToReplace);
+	}
 	static function importXml($elem, $model) {
 		$n = null;
 		if($elem->nodeType == Xml::$Element) {
@@ -616,7 +651,7 @@ class com_wiris_util_xml_WXmlUtils {
 						if($cdata->match($aux)) {
 							$res->add($aux);
 						} else {
-							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 729, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 794, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
 							$res->add($aux);
 						}
 					}
@@ -638,6 +673,24 @@ class com_wiris_util_xml_WXmlUtils {
 		} else {
 			return $ent === "amp" || $ent === "lt" || $ent === "gt" || $ent === "quot" || $ent === "apos";
 		}
+	}
+	static function getNamespace($element, $prefix) {
+		if($element !== null && $element->nodeType == Xml::$Document) {
+			$element = $element->firstElement();
+		}
+		$prefixAttr = com_wiris_util_xml_WXmlUtils_6($element, $prefix);
+		return com_wiris_util_xml_WXmlUtils::getNamespaceSearch($element, $prefixAttr);
+	}
+	static function getNamespaceSearch($element, $attribute) {
+		while($element !== null && $element->nodeType == Xml::$Element) {
+			$attributeValue = $element->get($attribute);
+			if($attributeValue !== null) {
+				return $attributeValue;
+			}
+			$element = $element->_parent;
+			unset($attributeValue);
+		}
+		return null;
 	}
 	static function normalizeWhitespace($s) {
 		return (($s !== null) ? com_wiris_util_xml_WXmlUtils::$WHITESPACE_COLLAPSE_REGEX->replace(trim($s), " ") : null);
@@ -685,5 +738,12 @@ function com_wiris_util_xml_WXmlUtils_5(&$c, &$hex, &$i, &$j, &$n, &$s, &$sb) {
 		$s1 = new haxe_Utf8(null);
 		$s1->addChar($c);
 		return $s1->toString();
+	}
+}
+function com_wiris_util_xml_WXmlUtils_6(&$element, &$prefix) {
+	if($prefix === null) {
+		return "xmlns";
+	} else {
+		return "xmlns:" . $prefix;
 	}
 }

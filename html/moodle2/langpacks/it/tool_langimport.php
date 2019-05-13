@@ -49,4 +49,4 @@ $string['purgestringcaches'] = 'Svuota la cache delle stringhe';
 $string['selectlangs'] = 'Devi selezionare i language pack da rimuovere';
 $string['uninstall'] = 'Rimuovi i language pack selezionati';
 $string['uninstallconfirm'] = 'Stai per rimuovere i seguenti language pack <strong>{$a}</strong>. Sei sicuro ?';
-$string['updatelangs'] = 'Aggiorna i Language Pack installati';
+$string['updatelangs'] = 'Aggiornamento Language Pack installati';

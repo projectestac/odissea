@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Area di testo';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Dati utente nel campo personalizzato \'Area di testo\'';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Formato dei dati utente nel campo personalizzato \'Area di testo\'';
+$string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID del campo profilo';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Dati profilo aggiuntivi';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'ID dell\'utente i cui dati sono memorizzati nel campo personalizzato \'Area di testo\'';

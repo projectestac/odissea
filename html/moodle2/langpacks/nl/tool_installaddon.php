@@ -49,6 +49,7 @@ $string['permcheckrepeat'] = 'Controleer opnieuw';
 $string['permcheckresultno'] = 'Plugintype locatie <em>{$a->path}</em>  is niet beschrijfbaar';
 $string['permcheckresultyes'] = 'Plugintype locatie <em>{$a->path}</em>  is beschrijfbaar';
 $string['pluginname'] = 'Add-on installer';
+$string['privacy:metadata'] = 'De Plugin installer-plugin bewaart geen persoonlijke gegevens.';
 $string['remoterequestalreadyinstalled'] = 'Je hebt gevraagd om de add-on <strong>{$a->name}</strong> ({$a->component}) versie {$a->version} te installeren op deze site, maar deze plugin is al geïnstalleerd.';
 $string['remoterequestconfirm'] = 'Je hebt gevraagd om de add-on <strong>{$a->name}</strong> ({$a->component}) versie {$a->version} uit de plugin databank op deze site te installeren. Als je verder gaat, zal het ZIP-bestand worden gedownload en gevalideerd. Er zal nog niets geïnstalleerd worden.';
 $string['remoterequestinvalid'] = 'Er is gevraagd om een add-on van de Moodle plugin-collectie te installeren op deze site. De vraag is echter niet geldig en daarom kan de add-on niet geïnstalleerd worden.';

@@ -98,7 +98,7 @@ E\' possibile utilizzare il caratteri jolly % per generalizzare le corrispondenz
 * /mod/forum/view.php% - corrisponde all\'URL dell\'elenco delle discussioni
 * /user/profile.php% - corrisponde all\'URL del profilo utente
 
-Per visualizzare un tour nella home page del sito, utilizzare "FRONTPAGE"';
+Per visualizzare un tour nella pagina home del sito, utilizzare "FRONTPAGE"';
 $string['pausetour'] = 'Pausa';
 $string['placement'] = 'Posizione';
 $string['placement_help'] = 'E\' possibile posizionare un passo sopra, sotto, a destra o a sinistra dell\'obiettivo. Si raccomanda di utilizzare sopra o sotto per una migliore visualizzazione mobile.
@@ -142,7 +142,7 @@ $string['tour1_content_blockregion'] = 'Una regione per i blocchi è ancora disp
 $string['tour1_content_customisation'] = 'Per personalizzare l\'aspetto del sito e della pagina home, utilizza le impostazioni del menu presente nell\'angolo dell\'intestazione. Prova ad attivare adesso la modalità modifica.';
 $string['tour1_content_end'] = 'Sei alla fine del tour utente. Il tour non sarà più visualizzato a meno che venga reimpostato utilizzando il link nel piè di pagina. Un amministratore del sito può anche creare tour personalizzati.';
 $string['tour1_content_navigation'] = 'La navigazione avviene ora tramite il cassetto di navigazione, Il contenuto del cassetto cambierà in funzione di dove trovi. Utilizza il pulsante in alto per aprire e chiudere il cassetto.';
-$string['tour1_content_welcome'] = 'Benvenuti nel tema Boost per Moodle 3.2. Se hai aggiornato da una versione precedente di Moodle, scoprirai molte novità.';
+$string['tour1_content_welcome'] = 'Benvenuti nel tema Boost. Se hai aggiornato da una versione precedente di Moodle, scoprirai molte novità.';
 $string['tour1_title_addingblocks'] = 'Inserimento blocchi';
 $string['tour1_title_blockregion'] = 'Regione del blocco';
 $string['tour1_title_customisation'] = 'Personalizzazione';

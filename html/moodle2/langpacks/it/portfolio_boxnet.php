@@ -41,6 +41,8 @@ $string['notarget'] = 'Per caricare file devi specificare una cartella già esis
 $string['noticket'] = 'Non è stato possibile ottenere un ticket da Box per avviare la sessione di autenticazione';
 $string['password'] = 'Password Box.net (non verrà memorizzata)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'Il plugin invia dati esternamente a un account Box collegato. Non memorizza dati localmente.';
+$string['privacy:metadata:data'] = 'Dati personali passati dal sottosistema portfolio.';
 $string['sendfailed'] = 'Non è stato possibile inviare contenuti a Box: {$a}';
 $string['setupinfo'] = 'Istruzioni per il setup';
 $string['setupinfodetails'] = 'Per ottenere un client ID e un secret, autenticati su Box e visita la pagina <a href="{$a->servicesurl}">Box.net developers page</a>. Tramite \'Create new application\' crea la nuova applicazione per il sito Moodle. Il client ID ed il secret vengono visualizzati nella sezione \'OAuth2 parameters\' del form di modifica applicazione. Se lo si desidera, è anche possibile fornire ulteriori informazioni sul proprio sito.';

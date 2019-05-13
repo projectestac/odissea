@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Modo adaptativo (sen penalizacións)';
+$string['privacy:metadata'] = 'O engadido de modo adaptativo (sen penalizacións) non almacena ningún dato persoal.';

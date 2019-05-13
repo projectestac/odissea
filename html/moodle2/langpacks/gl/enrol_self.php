@@ -90,6 +90,7 @@ $string['passwordinvalidhint'] = 'A chave utilizada é incorrecta, ténteo outra
 (Pista: Comeza por «{$a}»)';
 $string['pluginname'] = 'Automatriculación';
 $string['pluginname_desc'] = 'O engadido de automatriculación permítelle aos usuarios escoller en que cursos queren participar. Os cursos poden estar protexidos por unha chave de matriculación. Internamente a matriculación faise por medio do engadido de matriculación manual que ten que estar activado en tal curso.';
+$string['privacy:metadata'] = 'O engadido de automatriculación non almacena ningún dato persoal.';
 $string['requirepassword'] = 'Require chave para matriculación';
 $string['requirepassword_desc'] = 'Require chave para matriculación nos novos cursos e evita a retirada da chave para matriculación dos cursos existentes.';
 $string['role'] = 'Rol asignado predeterminado';

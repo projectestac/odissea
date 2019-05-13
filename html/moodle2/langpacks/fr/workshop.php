@@ -65,6 +65,7 @@ $string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Évaluation</
 $string['assessmentreference'] = 'Évaluation de référence';
 $string['assessmentreferenceconflict'] = 'Il n\'est pas possible d\'évaluer un travail exemplaire pour lequel vous avez fourni une évaluation de référence.';
 $string['assessmentreferenceneeded'] = 'Vous devez évaluer ce travail exemplaire pour fournir une référence d\'évaluation. Cliquer « Continuer » pour évaluer le travail exemplaire.';
+$string['assessments'] = 'Évaluations';
 $string['assessmentsettings'] = 'Modalités d\'évaluation';
 $string['assessmentstart'] = 'Début des évaluations';
 $string['assessmentstartdatetime'] = 'Ouvert pour évaluation dès le {$a->daydatetime} ({$a->distanceday})';
@@ -192,14 +193,15 @@ $string['latesubmissions_desc'] = 'Autoriser la remise des travaux après le dé
 $string['latesubmissions_help'] = 'Si ce réglage est activé, les participants peuvent remettre leur travail après le délai fixé ou durant la phase d\'évaluation. Les travaux remis en retard ne pourront en revanche pas être modifiés.';
 $string['maxbytes'] = 'Taille maximale des annexes aux travaux';
 $string['modulename'] = 'Atelier';
-$string['modulename_help'] = 'Le module d\'activité atelier permet de récolter, lire et évaluer par les pairs des travaux de participants.
+$string['modulename_help'] = 'Le module d\'activité atelier permet de recueillir et d\'examiner les travaux des participants, et de les faire évaluer par les pairs.
 
-Les participants remettent des fichiers numériques (par exemple des documents de textes riches, des feuilles de calculs, etc.) et peuvent aussi saisir directement des textes au moyen d\'un éditeur de texte.
+Les participants peuvent remettre tous types de travaux sous forme de fichiers numériques (fichiers texte, présentations, feuilles de calcul, etc.) ou également saisir directement du texte en ligne dans l\'éditeur de texte.
 
-Les travaux remis sont évalués au moyen d\'un formulaire d\'évaluation multi-critères défini par l\'enseignant. Au moyen de travaux exemplaires proposés par l\'enseignant avec des évaluations de référence, les participants peuvent tester le processus d\'évaluation par les pairs et vérifier leur compréhension du formulaire d\'évaluation. Les participants ont l\'opportunité d\'évaluer un ou plusieurs travaux de pairs, si nécessaire, anonymement.
+Les travaux remis sont évalués au moyen d\'un formulaire d\'évaluation multicritère défini par l\'enseignant. Pour la phase d\'évaluation par les pairs et afin que le formulaire d\'évaluation soit bien compris, des travaux exemplaires accompagnés d\'une évaluation de référence peuvent être mis en place par l\'enseignant. Les participants ont la possibilité d\'évaluer un ou plusieurs travaux de pairs, au besoin de façon anonyme.
 
-Les participants peuvent obtenir deux notes dans l\'activité atelier : une pour le travail qu\'ils remettent et l\'autre pour la qualité de leur évaluation des travaux de pairs. Les deux notes sont enregistrées dans le carnet de notes.';
+Les participants peuvent obtenir deux notes dans l\'activité atelier : une pour le travail qu\'ils remettent, et l\'autre pour la qualité de leur évaluation des travaux de pairs. Les deux notes sont enregistrées dans le carnet de notes.';
 $string['modulenameplural'] = 'Ateliers';
+$string['myassessments'] = 'Mes évaluations';
 $string['mysubmission'] = 'Mon travail remis';
 $string['nattachments'] = 'Nombre maximal d\'annexes jointes';
 $string['noexamples'] = 'Il n\'y a encore aucun travail exemplaire dans cet atelier';
@@ -236,6 +238,46 @@ $string['pluginadministration'] = 'Administration de l\'atelier';
 $string['pluginname'] = 'Atelier';
 $string['prepareexamples'] = 'Préparer des travaux exemplaires';
 $string['previewassessmentform'] = 'Prévisualisation';
+$string['privacy:metadata:aggregatedgradinggrade'] = 'Note combinée de toutes les évaluations faite par l\'utilisateur dans l\'activité atelier donnée';
+$string['privacy:metadata:assessmentgrade'] = 'Note combinée suggérée par cette évaluation pour le travail remis';
+$string['privacy:metadata:assessmentgradinggrade'] = 'Note pour avoir fourni cette évaluation';
+$string['privacy:metadata:assessmentgradinggradeover'] = 'Valeur de remplacement donnée manuellement pour la note pour avoir fourni cette évaluation';
+$string['privacy:metadata:assessmentid'] = 'Identifiant de l\'évaluation';
+$string['privacy:metadata:authorid'] = 'Identifiant de l\'auteur du travail remis';
+$string['privacy:metadata:dimensiongrade'] = 'Note dans la dimension de l\'évaluation donnée';
+$string['privacy:metadata:dimensionid'] = 'Identifiant de la dimension de l\'évaluation';
+$string['privacy:metadata:example'] = 'Si cet enregistrement représente un travail exemplaire';
+$string['privacy:metadata:feedbackauthor'] = 'Feedback pour l\'auteur';
+$string['privacy:metadata:feedbackauthorformat'] = 'Format de texte du feedback pour l\'auteur';
+$string['privacy:metadata:feedbackreviewer'] = 'Feedback pour l\'utilisateur fournissant l\'évaluation';
+$string['privacy:metadata:feedbackreviewerformat'] = 'Format de texte du feedback pour l\'utilisateur fournissant l\'évaluation';
+$string['privacy:metadata:late'] = 'Si le travail a été remis après le délai';
+$string['privacy:metadata:peercomment'] = 'Commentaire sur la note donnée par l\'utilisateur fournissant l\'évaluation';
+$string['privacy:metadata:peercommentformat'] = 'Format de texte du commentaire sur la note donnée';
+$string['privacy:metadata:preference:perpage'] = 'Nombre de travaux remis que l\'utilisateur préfère voir sur une page';
+$string['privacy:metadata:published'] = 'Si le travail remis doit être publié pour tous les participants une fois l\'atelier fermé';
+$string['privacy:metadata:reviewerid'] = 'Identifiant de l\'utilisateur fournissant l\'évaluation';
+$string['privacy:metadata:strategy'] = 'Nom du sous-plugin de stratégie d\'évaluation interprétant les valeur de l\'enregistrement';
+$string['privacy:metadata:submissioncontent'] = 'Contenu du travail remis';
+$string['privacy:metadata:submissioncontentformat'] = 'Format texte du contenu du travail remis';
+$string['privacy:metadata:submissiongrade'] = 'Note combinée pour le travail remis, sous la forme d\'un nombre décimal entre 0 et 100';
+$string['privacy:metadata:submissiongradeover'] = 'Valeur de remplacement donnée manuellement pour la note combinée';
+$string['privacy:metadata:submissionid'] = 'Identifiant du travail remis';
+$string['privacy:metadata:submissiontitle'] = 'Titre du travail remis';
+$string['privacy:metadata:subsystem:corefiles'] = 'Le module Atelier enregistre des fichiers intégrés ou annexés au texte du travail remis';
+$string['privacy:metadata:subsystem:coreplagiarism'] = 'Le module Atelier supporte nativement des systèmes de prévention du plagiat';
+$string['privacy:metadata:timeaggregated'] = 'Date et heure du dernier calcul de la note combinée';
+$string['privacy:metadata:timecreated'] = 'Date et heure de la création de cet enregistrement dans la base de données';
+$string['privacy:metadata:timemodified'] = 'Date et heure de la modification de cet enregistrement dans la base de données';
+$string['privacy:metadata:userid'] = 'Identifiant de l\'utilisateur pour lequel cette note combinée est calculée';
+$string['privacy:metadata:weight'] = 'Pondération de l\'évaluation';
+$string['privacy:metadata:workshopaggregations'] = 'Enregistre les notes combinées pour l\'évaluation';
+$string['privacy:metadata:workshopassessments'] = 'Enregistre des informations sur les évaluations attribuées aux travaux remis de l\'atelier';
+$string['privacy:metadata:workshopgrades'] = 'Enregistre des informations sur la manière dont les formulaires d\'évaluation ont été remplis avec des notes et des commentaires';
+$string['privacy:metadata:workshopid'] = 'Identifiant de l\'activité atelier';
+$string['privacy:metadata:workshopsubmissions'] = 'Enregistre des informations sur les travaux remis de l\'atelier';
+$string['privacy:request:delete:content'] = 'Le contenu a été supprimé (à la demande de l\'utilisateur ou parce qu\'arrivé à échéance)';
+$string['privacy:request:delete:title'] = '[Supprimé]';
 $string['publishedsubmissions'] = 'Travaux remis publiés';
 $string['publishsubmission'] = 'Publier travail remis';
 $string['publishsubmission_help'] = 'Les travaux remis publiés sont disponibles pour les autres dès que l\'atelier est terminé.';
@@ -325,7 +367,7 @@ $string['taskfail'] = 'Tâche échouée';
 $string['taskinfo'] = 'Info de tâche';
 $string['taskinstructauthors'] = 'Fournir des instructions pour la remise des travaux';
 $string['taskinstructreviewers'] = 'Fournir des instructions pour l\'évaluation';
-$string['taskintro'] = 'Saisir l\'introduction de l\'atelier';
+$string['taskintro'] = 'Saisir la description de l\'atelier';
 $string['tasksubmit'] = 'Remettre votre travail';
 $string['tasktodo'] = 'Tâche à effectuer';
 $string['toolbox'] = 'Boîte à outil atelier';
@@ -340,7 +382,7 @@ $string['userdatecreated'] = 'remis le <span>{$a}</span>';
 $string['userdatemodified'] = 'modifié le <span>{$a}</span>';
 $string['userplan'] = 'Planning de l\'atelier';
 $string['userplanaccessibilityskip'] = 'Aller directement aux tâches actuelles';
-$string['userplanaccessibilitytitle'] = 'Ligne du temps de l\'atelier avec {$a} phases';
+$string['userplanaccessibilitytitle'] = 'Chronologie de l\'atelier avec {$a} phases';
 $string['userplancurrentphase'] = 'Phase actuelle';
 $string['userplan_help'] = 'La ligne de temps de l\'atelier affiche les différentes phases de l\'activité et la liste des tâches de chaque phase. La phase en cours est mise en évidence et les tâches accomplies sont assorties d\'une coche.';
 $string['useselfassessment'] = 'Utiliser les auto-évaluations';

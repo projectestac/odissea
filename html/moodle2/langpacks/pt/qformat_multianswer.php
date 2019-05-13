@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Pergunta de respostas incorporadas (cloze)';
-$string['pluginname_help'] = 'As perguntas em formato de respostas incorporadas (cloze) permitem a importação de uma frase com perguntas de escolha múltipla e de resposta curta incorporadas na mesma.';
+$string['pluginname_help'] = 'As perguntas em formato de respostas incorporadas (Cloze) permitem a importação de uma frase com perguntas de escolha múltipla e de resposta curta incorporadas na mesma.';
 $string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = 'O módulo Respostas incorporadas não armazena dados pessoais.';

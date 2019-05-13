@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Κοινωνική μορφή';
+$string['numberdiscussions'] = 'Αριθμός συζητήσεων';
+$string['numberdiscussions_help'] = 'Αυτή η ρύθμιση καθορίζει πόσες συζητήσεις πρέπει να εμφανίζονται.';
+$string['pluginname'] = 'Κοινωνικός μορφότυπος μαθήματος';
+$string['privacy:metadata'] = 'Το πρόσθετο «Κοινωνικός μορφότυπος μαθήματος» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['sectionname'] = 'τομέας';

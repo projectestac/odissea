@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['notavailable'] = 'Lamentamos mas este teste não está disponível';
 $string['pluginname'] = 'Acesso a testes baseado em datas de abertura e finalização';
 $string['privacy:metadata'] = 'O módulo Regra de acesso pela data de abertura e fecho do teste não armazena dados pessoais.';
-$string['quiznotavailable'] = 'O teste não estará disponível até: {$a}';
+$string['quiznotavailable'] = 'O teste não estará disponível até {$a}';

@@ -31,3 +31,4 @@ $string['dimensioncommentfor'] = 'Commento su {$a}';
 $string['dimensiondescription'] = 'Descrizione';
 $string['dimensionnumber'] = 'Elemento {$a}';
 $string['pluginname'] = 'Commenti';
+$string['privacy:metadata'] = 'Il plugin \'Commenti\' memorizza solo i dettagli dello schema di valutazione. I dati personali effettivi su come è stato compilato lo schema sono memorizzati nel modulo Workshop e vengono allegati alle valutazioni esportate.';

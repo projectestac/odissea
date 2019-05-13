@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Adaptieve modus (geen strafpunten)';
+$string['privacy:metadata'] = 'De adaptieve modus (geen strafpunten) vraaggedragsplugin bewaart geen persoonlijke gegevens.';

@@ -35,6 +35,7 @@ $string['newsectionname'] = 'Новое название для темы {$a}';
 $string['page-course-view-topics'] = 'Главная страница любого курса формата «Разделы по темам»';
 $string['page-course-view-topics-x'] = 'Любая страница курса формата «Разделы по темам»';
 $string['pluginname'] = 'Разделы по темам';
+$string['privacy:metadata'] = 'Плагин «формат Разделы по темам» не хранит никаких персональных данных.';
 $string['section0name'] = 'Общее';
 $string['sectionname'] = 'Тема';
 $string['showfromothers'] = 'Отобразить тему';

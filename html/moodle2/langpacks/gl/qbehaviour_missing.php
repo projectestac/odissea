@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Non se atopa o comportamento';
+$string['privacy:metadata'] = 'O engadido de comportamento de preguntas perdidas non almacena ningún dato persoal.';
 $string['questionusedunknownmodel'] = 'Esta pregunta foi intentada cun comportamento que non está dispoñíbel actualmente. Estamos tentando amosarlle a pregunta, mais pode haber problemas.';

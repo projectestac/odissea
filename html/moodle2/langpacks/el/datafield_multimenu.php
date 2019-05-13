@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Πεδίο μενού πολλαπλών επιλογών';
+$string['pluginname'] = 'Πολυ-μενού';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πολλαπλή επιλογή» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

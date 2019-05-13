@@ -49,6 +49,7 @@ $string['permcheckrepeat'] = 'Controlla di nuovo';
 $string['permcheckresultno'] = 'La cartella <em>{$a->path}</em> del tipo di plugin scelto non è scrivibile';
 $string['permcheckresultyes'] = 'La cartella <em>{$a->path}</em> del tipo di plugin scelto è scrivibile';
 $string['pluginname'] = 'Installazione plugin';
+$string['privacy:metadata'] = 'Il plugin "Installazione plugin" non memorizza dati personali.';
 $string['remoterequestalreadyinstalled'] = 'E\' stato richiesto di installare il plugin {$a->name} ({$a->component}) versione {$a->version} dal Moodle plugins directory. Il plugin tuttavia risulta <strong>già installato</strong>.';
 $string['remoterequestconfirm'] = 'E\' stato richiesto di installare il plugin {$a->name} ({$a->component}) versione {$a->version} dal Moodle plugins directory. Se si decide di proseguire, il pacchetto ZIP contenente il plugin verrà prima scaricato per essere verificato, senza essere installato.';
 $string['remoterequestinvalid'] = 'E\' stato richiesto di installare un plugin dal Moodle plugins directory. Sfortunatamente la richiesta non è valida e il plugin non può essere installato';

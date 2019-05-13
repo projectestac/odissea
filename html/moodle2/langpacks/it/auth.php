@@ -142,6 +142,14 @@ $string['plaintext'] = 'Testo semplice';
 $string['pluginnotenabled'] = 'Il plugin \'{$a}\' per l\'autenticazione non è abilitato.';
 $string['pluginnotinstalled'] = 'Il plugin \'{$a}\' per l\'autenticazione non è installato.';
 $string['potentialidps'] = 'Autenticati su:';
+$string['privacy:metadata:userpref:createpassword'] = 'Indica che deve essere generata una password per l\'utente.';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Indica se l\'utente deve modificare la propria password non appena effettua il login.';
+$string['privacy:metadata:userpref:loginfailedcount'] = 'Numero di login errati dell\'utente';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Numero di login errati dell\'utente dall\'ultimo login effettuato con successo.';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'Data dell\'ultimo tentativo di login errato.';
+$string['privacy:metadata:userpref:loginlockout'] = 'Se l\'account dell\'utente è bloccato a causa dei login errati, e la data in cui l\'account è stato bloccato.';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica che l\'account dell\'utente non può essere soggetto a bloccaggio.';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'Se bloccato, il codice segreto che l\'utente deve usare per sbloccare il proprio account.';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. per verificare che sei un persona reale, segui le istruzioni. Possono essere essere visualizzati una casella di spunta, immagini con parole da inserire, oppure una serie di immagini sa selezionare.
 

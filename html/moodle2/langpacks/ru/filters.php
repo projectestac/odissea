@@ -75,6 +75,7 @@ $string['nofiltersenabled'] = 'На этом сайте не включен ни
 $string['off'] = 'Выключен';
 $string['offbutavailable'] = 'Выключен, но доступен';
 $string['on'] = 'Включен';
+$string['privacy:reason'] = 'Подсистема фильтров не хранит никаких персональных данных.';
 $string['profilefilterfield'] = 'Имя поля профиля';
 $string['profilefilterlimiter'] = 'Оператор поля профиля';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';

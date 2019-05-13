@@ -61,13 +61,13 @@ $string['page-notes-index'] = 'Jede Notizenhauptseite';
 $string['page-notes-x'] = 'Jede Notizenseite';
 $string['personal'] = 'Persönlich';
 $string['personalnotes'] = 'Persönliche Anmerkungen';
-$string['privacy:metadata:core_notes'] = 'Die Notizen-Komponente speichert Notizen zum Nutzer im Core-System';
+$string['privacy:metadata:core_notes'] = 'Die Notizen-Komponente speichert Notizen zu Personen im Core-System';
 $string['privacy:metadata:core_notes:content'] = 'Inhalt der Notiz';
-$string['privacy:metadata:core_notes:courseid'] = 'ID des Kurses, dermit der Notiz verbunden ist.';
+$string['privacy:metadata:core_notes:courseid'] = 'ID des Kurses, der mit der Notiz verbunden ist.';
 $string['privacy:metadata:core_notes:created'] = 'Erstelldatum/-zeit der Notiz';
 $string['privacy:metadata:core_notes:lastmodified'] = 'Letztes Änderungsdatum/-zeit der Notiz';
 $string['privacy:metadata:core_notes:publishstate'] = 'Sichtbarkeitsstatus der Notiz';
-$string['privacy:metadata:core_notes:userid'] = 'ID des Nutzers  in Verbindung mit Notiz';
+$string['privacy:metadata:core_notes:userid'] = 'ID des Nutzers, der mit der Notiz verbunden ist';
 $string['publishstate'] = 'Kontext';
 $string['publishstate_help'] = 'Der Kontext für eine Anmerkung bestimmt, wer die Anmerkung sehen darf. Nutzer sollten wissen, dass alle Anmerkungen, einschließlich persönlicher unter die rechtlichen Rahmenbedingungen vor Ort fallen.
 

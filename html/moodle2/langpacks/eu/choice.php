@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoices'] = 'Gehitu aukera gehiago';
-$string['allowmultiple'] = 'Gaitu aukera bat baino gehiago erantzun ahal izatea';
-$string['allowupdate'] = 'Utzi kontsulta eguneratzen';
+$string['allowmultiple'] = 'Baimendu aukera bat baino gehiago erantzun ahal izatea';
+$string['allowupdate'] = 'Baimendu kontsulta eguneratzea';
 $string['answered'] = 'Erantzunda';
 $string['atleastoneoption'] = 'Gutxienez erantzun posible bat eman behar duzu.';
 $string['calendarend'] = '{$a}-(r)en itxiera-data:';
@@ -35,7 +35,7 @@ $string['calendarstart'] = '{$a}-(r)en hasiera-data';
 $string['cannotsubmit'] = 'Sentitzen dugu, arazoa gertatu da zure aukera bidaltzean. Mesedez, saiatu berriz.';
 $string['choice'] = 'Aukera';
 $string['choiceactivityname'] = 'Aukera: {$a}';
-$string['choice:addinstance'] = 'Gehitu beste kontsulta bat';
+$string['choice:addinstance'] = 'Gehitu kontsulta berria';
 $string['choice:choose'] = 'Erantzun kontsultari';
 $string['choiceclose'] = 'Noiz arte baimendu erantzunak';
 $string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
@@ -45,18 +45,17 @@ $string['choicefull'] = 'Kontsulta hau beteta dago eta ez dago erantzun posible 
 $string['choicename'] = 'Kontsultaren izena';
 $string['choiceopen'] = 'Baimendu erantzunak data honetatik aurrera:';
 $string['choiceoptions'] = 'Kontsultaren aukerak';
-$string['choiceoptions_help'] = '<p>Hemen partaideek hauta ditzaketen aukerak jarri behar dituzu.</p>
+$string['choiceoptions_help'] = 'Hemen partaideek hauta ditzaketen aukerak jarri behar dituzu.
 
-<p>Hauetako nahi beste bete ditzakezu, hau da, baten bat zuritan utz dezakezu 10 aukerak behar ez
-badituzu. Bete gabeko aukerak ez dira agertuko.</p>';
+Hauetako nahi beste bete ditzakezu. Batzuk hutsik uzten badituzu ez dira erakutsiko. 8 aukera baino gehiago behar badituzu, egin klik "Gehitu 3 eremu formulariora" botoian.';
 $string['choice:readresponses'] = 'Ikusi erantzunak';
 $string['choicesaved'] = 'Zure aukera ondo gorde da';
 $string['choicetext'] = 'Kontsultaren testua';
 $string['choice:view'] = 'Ikusi kontsulta jarduera';
-$string['chooseaction'] = 'Aukera ezazu ekintza bat...';
+$string['chooseaction'] = 'Aukeratu ekintza bat...';
 $string['chooseoption'] = 'Aukeratu: {$a}';
 $string['closebeforeopen'] = 'Ezarri duzun itxiera-data hasiera-data baino lehenagokoa da.';
-$string['completionsubmit'] = 'Erabiltzaileak aukera bat hautatzen duenean, osatutzat erakutsi';
+$string['completionsubmit'] = 'Erakutsi osatu gisa erabiltzaileak aukera bat hautatzen duenean';
 $string['description'] = 'Deskribapena';
 $string['displayhorizontal'] = 'Erakutsi horizontalean';
 $string['displaymode'] = 'Aukerak erakusteko modua';
@@ -70,7 +69,7 @@ $string['eventreportviewed'] = 'Kontsultaren txostena ikusi da';
 $string['expired'] = 'Sentitzen dugu, jarduera hau {$a}(e)an itxi zen eta dagoeneko ez dago eskuragarri.';
 $string['full'] = '(Beteta)';
 $string['havetologin'] = 'Saioa hasi behar duzu erantzuna bidali ahal izateko.';
-$string['includeinactive'] = 'Kontuan hartu kontua etenda duten edo aktibo ez dauden erabiltzaileen erantzunak';
+$string['includeinactive'] = 'Sartu kontua etenda duten edo aktibo ez dauden erabiltzaileen erantzunak';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa kontsultetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Kontsulta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala kontsultetan';
@@ -94,7 +93,7 @@ Kontsultak  ondokoetarako erabili daitezke
 * Ikasleen ulermen-maila modu azkarrean neurtzeko
 * Ikasleen erabakiak errazteko, ikastaroaren norabidea aukeratzeko bozketak egiteko, adibidez';
 $string['modulenameplural'] = 'Kontsultak';
-$string['moveselectedusersto'] = 'Aukeratutako erabiltzaileak hona mugitu...';
+$string['moveselectedusersto'] = 'Mugitu aukeratutako erabiltzaileak hona...';
 $string['multiplenotallowederror'] = 'Erantzun anitzak ez daude baimenduta inkesta xume honetan';
 $string['mustchooseone'] = 'Erantzunen bat aukeratu behar duzu gorde aurretik. Ezer ez da gorde orain arte.';
 $string['noguestchoose'] = 'Sentitzen dugu, bisitariek ezin diete inkestei erantzun';
@@ -116,7 +115,7 @@ $string['privacy'] = 'Emaitzen pribatutasuna';
 $string['privacy:metadata:choice_answers'] = 'Emandako kontsulta-jardueran erabiltzaileak aukeratutako erantzunen inguruko informazioa';
 $string['privacy:metadata:choice_answers:choiceid'] = 'Erabiltzailea erantzuten ari den kontsulta-jardueraren IDa';
 $string['privacy:metadata:choice_answers:optionid'] = 'Erabiltzaileak aukeratutako aukeraren IDa';
-$string['privacy:metadata:choice_answers:timemodified'] = 'Erabiltzaileak kontsulta aldatu zueneko data eta ordua.';
+$string['privacy:metadata:choice_answers:timemodified'] = 'Erabiltzaileak kontsulta aldatu zueneko unea';
 $string['privacy:metadata:choice_answers:userid'] = 'Kontsulta-jarduera hau erantzuten ari den erabiltzailearen IDa';
 $string['publish'] = 'Emaitzak argitaratu';
 $string['publishafteranswer'] = 'Erakutsi emaitzak ikasleari erantzun ondoren';
@@ -126,7 +125,7 @@ $string['publishanonymous'] = 'Emaitzak anonimoki argitaratu. Ez erakutsi ikasle
 $string['publishnames'] = 'Emaitza osoak argitaratu, izenak eta egindako aukerak erakutsiz.';
 $string['publishnot'] = 'Ez argitaratu emaitzak ikasleei';
 $string['removemychoice'] = 'Ezabatu nire aukera';
-$string['removeresponses'] = 'Erantzun guztiak ezabatu';
+$string['removeresponses'] = 'Ezabatu erantzun guztiak';
 $string['responses'] = 'Erantzunak';
 $string['responsesresultgraphheader'] = 'Erakutsi grafikoa';
 $string['responsesto'] = 'Erantzunak {$a}-(r)entzat';
@@ -135,7 +134,7 @@ $string['savemychoice'] = 'Gorde nire aukera';
 $string['search:activity'] = 'Kontsulta - jardueraren informazioa';
 $string['showpreview'] = 'Erakutsi aurrebista';
 $string['showpreview_help'] = 'Baimendu ikasleek aukeren aurrebista ikustea bidalketak egiteko epea zabalik egon aurretik.';
-$string['showunanswered'] = 'Erantzun gabekoen zutabea erakutsi';
+$string['showunanswered'] = 'Erakutsi erantzun gabekoen zutabea';
 $string['skipresultgraph'] = 'Ez egin kasu emaitzen grafikoari';
 $string['spaceleft'] = 'espazio erabilgarria';
 $string['spacesleft'] = 'espazio erabilgarriak';

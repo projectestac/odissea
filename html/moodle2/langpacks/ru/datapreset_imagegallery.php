@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Галерея изображений';
 $string['pluginname'] = 'Галерея изображений';
+$string['privacy:metadata'] = 'Плагин заготовки базы данных «Галерея изображений» не хранит никаких персональных данных.';

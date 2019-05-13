@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Modo adattativo (senza penalità)';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Modo adattivo (senza penalità) non memorizza dati personali.';

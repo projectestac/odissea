@@ -37,3 +37,4 @@ $string['pluginnameediting'] = 'Slepen en neerzetten in tekst bewerken';
 $string['pluginname_help'] = '"Slepen en neerzetten in tekst"-vragen verwachten van de respondent om woorden of zinnen op de juiste plaats neer te zetten in een vraagtekst. [[1]], [[2]], [[3]], ... wordt als plaatshouder gebruikt in de vraagtekst, met de juiste antwoorden respectievelijk als keuzes 1, 2, 3, ... gespecificeerd.
 De antwoordkeuzes kunnen gegroepeerd worden zodat alle antwoorden in een bepaalde groep dezelfde kleur krijgen als de plaatsen in de vraagtekst die voor die antwoorden voorzien zijn. Antwoorden, gemarkeerd als onbeperkt, mogen op meer dan één plaats gebruikt worden.';
 $string['pluginnamesummary'] = 'Ontbrekende woorden in de vraagtekst worden ingevuld door woorden te slepen en neer te zetten.';
+$string['privacy:metadata'] = 'De plug-in Drag and drop into text question type slaat geen persoonlijke gegevens op.';

@@ -72,6 +72,7 @@ $string['courseblogs'] = 'يستطيع المستخدمين رؤية بلوقا�
 $string['deleteblogassociations'] = 'حذف ارتباطات المدونة';
 $string['deleteblogassociations_help'] = 'عند تفعيلها سيتم إلغاء ربط التدوينات بهذا المقرر أو أي من مصادر المقرر ونشاطاته.
 لكن التدوينات ذاتها لن تحذف.';
+$string['deleteentry'] = 'حذف مشاركة';
 $string['deleteexternalblog'] = 'إلغاء تسجيل هذه المدونة الخارجية';
 $string['deleteotagswarn'] = 'هل أنت متأكد من حذف هذه الوسوم من جميع التدوينات، وكذلك حذفها من النظام؟';
 $string['description'] = 'وصف';
@@ -90,6 +91,8 @@ $string['entrysaved'] = 'تم حفظ مشاركتك';
 $string['entrytitle'] = 'عنوان مدخل';
 $string['eventblogassociationadded'] = 'انشاء المدونة';
 $string['eventblogentriesviewed'] = 'شوهدت محتويات المدونة';
+$string['eventblogexternalremoved'] = 'تم إلغاء تسجيل المدونة الخارجية';
+$string['eventblogexternalupdated'] = 'تم تحديث المدونة الخارجية';
 $string['evententryadded'] = 'اضافة محتوى المدنة بنجاح';
 $string['evententrydeleted'] = 'حذف محتوى المدونة بنجاح';
 $string['evententryupdated'] = 'تم تحديث مدخل بلوق';
@@ -112,6 +115,7 @@ $string['invalidgroupid'] = 'معرف مجموعة غير صالح';
 $string['invalidurl'] = 'لا يمكن الوصول لهذا العنوان';
 $string['linktooriginalentry'] = 'رابط للتدوينة الأصلية';
 $string['maxexternalblogsperuser'] = 'العدد الأقصى من المدونات الخارجية لكل مستخدم';
+$string['myprofileuserblogs'] = 'عرض جميع مشاركات المدونة';
 $string['name'] = 'الاسم';
 $string['name_help'] = 'أدخل اسماً واصفاً لمدونتك الخارجية. (سيتم استخدام عنوان المدونة الخارجية إن لم تكتب اسماً)';
 $string['noentriesyet'] = 'لا يوجد مدلات مرئية هناء';
@@ -129,6 +133,29 @@ $string['pagesize'] = 'عدد مدخلات المدونة في كل صفحة';
 $string['permalink'] = 'رابط دائم';
 $string['personalblogs'] = 'يستطيع المستخدمون مشاهدة البولوق الخاص بهم فقط';
 $string['preferences'] = 'خيارات';
+$string['privacy:metadata:core_comments'] = 'التعليقات المرتبطة بمشاركات المدونة';
+$string['privacy:metadata:core_files'] = 'الملفات المرفقة بمشاركات المدونة';
+$string['privacy:metadata:core_tag'] = 'الوسوم المرتبطة بمشاركات المدونة';
+$string['privacy:metadata:external'] = 'رابط لتغذية ملخص الموقع';
+$string['privacy:metadata:external:description'] = 'وصف الخلاصة الاخبارية';
+$string['privacy:metadata:external:filtertags'] = 'قائمة الوسوم لفرز المشاركات بناءَ عليها';
+$string['privacy:metadata:external:name'] = 'اسم الخلاصة الاخبارية';
+$string['privacy:metadata:external:timefetched'] = 'الوقت الذي تم فيه جلب آخر ملخص';
+$string['privacy:metadata:external:timemodified'] = 'الوقت الذي تم فيه آخر تعديل للارتباط';
+$string['privacy:metadata:external:url'] = 'رابط الملخص';
+$string['privacy:metadata:external:userid'] = 'الرقم التعريفي للمستخدم الذي أضاف مشاركات المدونة الخارجية';
+$string['privacy:metadata:post'] = 'المعلومات المتعلقة بمشاركات المدونة';
+$string['privacy:metadata:post:content'] = 'محتوى مشاركة المدونة الخارجية';
+$string['privacy:metadata:post:created'] = 'تاريخ إنشاء المشاركة';
+$string['privacy:metadata:post:lastmodified'] = 'تاريخ آخر تعديل للمشاركة';
+$string['privacy:metadata:post:publishstate'] = 'ما إذا كانت المشاركة مرئية للآخرين أم لا';
+$string['privacy:metadata:post:subject'] = 'عنوان المشاركة';
+$string['privacy:metadata:post:summary'] = 'نص المشاركة';
+$string['privacy:metadata:post:uniquehash'] = 'المعرف الفريد للمشاركة الخاجية، عادة ما يكون الرابط';
+$string['privacy:metadata:post:userid'] = 'رقم المستخدم الذي أضاف المشاركة';
+$string['privacy:metadata:post:usermodified'] = 'المستخدم الذي أجرى آخر تعديل للمشاركة';
+$string['privacy:path:blogassociations'] = 'المشاركات المرتبطة';
+$string['privacy:unknown'] = 'غير معروف';
 $string['publishto'] = 'انشر إلى';
 $string['publishtocourse'] = 'المستخدمين المشتركين معك بمقرر';
 $string['publishtocourseassoc'] = 'أعضاء من المقرر المرتبط';
@@ -151,6 +178,7 @@ $string['rssfeed'] = 'مغذي المدونة  باستخدام تكنولوجي
 $string['searchterm'] = 'البحث: {$a}';
 $string['settingsupdatederror'] = 'لقد حدث خطاء ما، لا يمكن تحديث إعدادات تفضيلات بلوق';
 $string['siteblogdisable'] = 'مدونات الموقع غير مفعلة';
+$string['siteblogheading'] = 'مدونة الموقع';
 $string['siteblogs'] = 'يستطيع جمية المستخدمون مشاهدة كل مدخلات البولوق';
 $string['tagdatelastused'] = 'أرخ العلامة المستخدة مؤخرا';
 $string['tagparam'] = 'وسم: {$a}';
@@ -184,4 +212,5 @@ $string['viewmyentriesaboutmodule'] = 'عرض تدويناتي حول هذا {$a
 $string['viewsiteentries'] = 'عرض كل المداخلات';
 $string['viewuserentries'] = 'عرض كل تدوينات {$a}';
 $string['worldblogs'] = 'العالم يستطيع قراءة التدوينات المضبوطة لتكون متاحة للعالم';
+$string['wrongexternalid'] = 'الرقم التعريفي المدونة الخارجية غير صحيح';
 $string['wrongpostid'] = 'معرّف تدوينة خاطئ';

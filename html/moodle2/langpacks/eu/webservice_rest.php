@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'REST protokoloa';
 $string['privacy:metadata'] = 'REST protokoloa pluginak ez du datu pertsonalik biltzen.';
-$string['rest:use'] = 'REST protokoloa erabili';
+$string['rest:use'] = 'Erabili REST protokoloa';

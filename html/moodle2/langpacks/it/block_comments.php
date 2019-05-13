@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['comments:addinstance'] = 'Aggiungere blocco Commenti';
 $string['comments:myaddinstance'] = 'Aggiungere blocco Commenti nella Dashboard';
 $string['pluginname'] = 'Commenti';
+$string['privacy:metadata:core_comment'] = 'Registro dei commenti aggiunti.';

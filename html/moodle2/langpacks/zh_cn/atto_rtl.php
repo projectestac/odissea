@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ltr'] = '从左到右';
 $string['pluginname'] = '';
+$string['privacy:metadata'] = 'atto_rtl 插件不储存任何私人数据。';
 $string['rtl'] = '从右到左';

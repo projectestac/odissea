@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'de', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_configurable_reports', language 'de', branch 'MOODLE_34_STABLE'
  *
  * @package   block_configurable_reports
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,6 +35,8 @@ $string['average'] = 'Durchschnitt';
 $string['badconditionexpr'] = 'Ausdruck mit ungültiger Bedingung';
 $string['badsize'] = 'Falscher Größenwert, die Größe muss in % oder Pixel angegeben werden';
 $string['badtablewidth'] = 'Falscher Breitenwert, die Angabe muss in % oder als Betrag angegeben werden';
+$string['bar'] = 'Balkendiagramm';
+$string['barsummary'] = 'Ein Balkendiagramm';
 $string['blockname'] = 'Konfigurierbare Berichte';
 $string['calcs'] = 'Berechnungen';
 $string['categories'] = 'Kategorien';
@@ -67,7 +69,7 @@ $string['comp_permissions'] = 'Berechtigung';
 $string['comp_permissions_help'] = '<p>Hier kann festgelegt werden wer den Bericht sehen darf.</p> <p>Es können logische Ausdrücke zur Berechnung der Rechte verwendet werden wenn mehr als eine Bedingung verwendet wird.</p> <p>Weitere Informationen unter: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
 $string['comp_plot'] = 'Diagramme';
 $string['comp_plot_help'] = '<p>Hier können Diagramme über die Ergebnisse des Berichts hinzugefügt werden</p> <p>Weitere Informationen unter: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_template'] = 'Templates';
+$string['comp_template'] = 'Vorlage';
 $string['comp_template_help'] = '<p>Hier kann die Darstellung des Plugins durch ein Template angepasst werden.</p> <p>Für die Erstellung eines Templates kann man sich die Platzhalter ansehen die in der Überschrift, der Fußnote und den einzelnen Zeilen des Berichts verwendet werden können. Die Hinweise dazu sind in den jeweiligen Hilfetexten zu finden.</p> <p>Weitere Informationen unter: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
 $string['conditionexpr'] = 'Bedingung';
 $string['conditionexpr_conditions'] = 'Bedingung';
@@ -80,16 +82,23 @@ $string['configurable_reports:addinstance'] = 'Einen neuen \'Konfigurierbare Ber
 $string['configurable_reports:manageownreports'] = 'Eigene Berichte verwalten';
 $string['configurable_reports:managereports'] = 'Berichte verwalten';
 $string['configurable_reports:managesqlreports'] = 'SQL Berichte verwalten';
+$string['configurable_reports:myaddinstance'] = 'Hinzufügen eines neuen konfigurierbaren Berichtsblocks zur Seite MY HOME';
 $string['configurable_reports:viewreports'] = 'Berichte ansehen';
 $string['confirmdeletereport'] = 'Sind Sie sicher dass Sie diesen Bericht löschen wollen?';
+$string['coursecategories'] = 'Kategorie-Kursfilter';
 $string['coursecategory'] = 'Kurs in Kategorie';
 $string['coursechild'] = 'Kurse sind Metakurse von Kurs';
 $string['coursededicationtime'] = 'Kurs Startzeit';
 $string['coursefield'] = 'Kurs Feld';
 $string['coursefieldorder'] = 'Kurs Feldreihenfolge';
+$string['coursemodules'] = 'Kursmodul';
 $string['courseparent'] = 'Metakurse die ableiten von';
 $string['courses'] = 'Kurse';
 $string['coursestats'] = 'Kurs-Statistiken';
+$string['crondescription'] = 'Planen Sie diese Abfrage so ein, dass sie jeden Tag (nachts) ausgeführt wird.';
+$string['cron_help'] = 'Planen Sie diese Abfrage so ein, dass sie jeden Tag (nachts) ausgeführt wird.';
+$string['crrepository'] = 'Berichts-Repository';
+$string['crrepositoryinfo'] = 'Freigegebenes Repository mit voll funktionsfähigen Beispielberichten (Name des GitHub-Kontoinhabers + Slash + Repository-Name)';
 $string['currentreportcourse'] = 'Kurs des momentanen Berichts';
 $string['currentreportcourse_summary'] = 'Der Kurs in dem der Bericht erstellt wurde';
 $string['currentuser'] = 'Derzeitiger Nutzer';
@@ -102,6 +111,14 @@ $string['cuserfield'] = 'Nutzer Feldbedingung';
 $string['custom'] = 'Angepasst';
 $string['customdateformat'] = 'Angepasstes Datumsformat';
 $string['customsql'] = 'Angepasste SQL Anfragen';
+$string['datatables'] = 'DataTables JS-Bibliothek aktivieren';
+$string['datatables_emptytable'] = 'Keine Daten in der Tabelle verfügbar';
+$string['datatables_first'] = 'Zuerst';
+$string['datatables_last'] = 'Zuletzt';
+$string['datatables_loadingrecords'] = 'Lädt …';
+$string['datatables_next'] = 'Weiter';
+$string['datatables_previous'] = 'Vorher';
+$string['datatables_processing'] = 'Verarbeitet …';
 $string['date'] = 'Datum';
 $string['dateformat'] = 'Datumsformat';
 $string['direction'] = 'Richtung';

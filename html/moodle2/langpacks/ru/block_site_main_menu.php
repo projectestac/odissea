@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Основное меню';
+$string['privacy:metadata'] = 'Блок «Основное меню» только показывает данные, хранящиеся в других местах.';
 $string['site_main_menu:addinstance'] = 'Добавлять новый блок «Основное меню»';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = '允许试答次数：{$a}';
 $string['pluginname'] = '允许多次答题的测验的作答次数规则';
+$string['privacy:metadata'] = '答题尝试次数访问规则不会保存任何个人信息。';

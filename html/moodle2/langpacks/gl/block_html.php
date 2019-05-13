@@ -36,3 +36,5 @@ $string['html:myaddinstance'] = 'Engadir un novo bloque HTML ao meu cartafol per
 $string['leaveblanktohide'] = 'déixeo en branco para agochar o título';
 $string['newhtmlblock'] = '(novo bloque HTML)';
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata:block'] = 'O bloque HTML almacena todos os seus datos dentro do subsistema do bloque.';
+$string['search:content'] = 'Contido do bloque HTML';

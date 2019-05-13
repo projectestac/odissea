@@ -31,6 +31,6 @@ $string['pluginname'] = 'URLak jaisteko gailua';
 $string['privacy:metadata'] = 'URLak jaisteko gailua biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['rename'] = 'Izena';
 $string['url'] = 'URLa';
-$string['url:view'] = 'URLak jaisteko gailua erabili fitxategi-hautatzailean';
+$string['url:view'] = 'Erabili URLak jaisteko gailua fitxategi-hautatzailean';
 $string['validfiletype'] = 'Irudi-fitxategia duen edo irudiak dituen orri baten URLa idatzi behar duzu.';
 $string['validname'] = 'Fitxategirako izen egokia eman behar duzu';

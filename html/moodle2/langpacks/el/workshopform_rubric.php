@@ -25,12 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configuration'] = '';
+$string['addmoredimensions'] = 'Κενά για {$a} ακόμη κριτήρια';
+$string['configuration'] = 'Ρυθμίσεις ρουμπρίκας (Κλίμακας Διαβαθμισμένων Κριτηρίων, rubric)';
 $string['criteria'] = 'Kριτήρια';
 $string['dimensiondescription'] = 'Περιγραφή';
-$string['layout'] = '';
+$string['dimensionnumber'] = 'Κριτήριο {$a}';
+$string['layout'] = 'Διάταξη ρουμπρίκας (Κλίμακας Διαβαθμισμένων Κριτηρίων, rubric)';
 $string['layoutgrid'] = 'Πλέγμα';
 $string['layoutlist'] = 'Λίστα';
+$string['levelgroup'] = 'Βαθμός και ορισμός επιπέδου';
 $string['levels'] = 'Επίπεδα';
+$string['mustbeunique'] = 'Οι βαθμοί επιπέδου πρέπει να είναι μοναδικοί σε ένα κριτήριο';
 $string['mustchooseone'] = 'Θα πρέπει να επιλέξετε ένα από αυτά τα στοιχεία';
-$string['pluginname'] = 'Ρουμπρίκες αξιολόγησης';
+$string['mustdefinelevel'] = 'Απαιτείται τουλάχιστον ένα επίπεδο';
+$string['pluginname'] = 'Ρουμπρίκα';
+$string['privacy:metadata'] = 'Το πρόσθετο Ρουμπρίκ αποθηκεύει μόνο τα στοιχεία της φόρμας αξιολόγησης. Τα πραγματικά προσωπικά δεδομένα για το πως έχει συμπληρωθεί η φόρμα αποθηκεύονται από το ίδιο το άρθρωμα του Εργαστηρίου και επισυνάπτονται στις εξαγόμενες εκτιμήσεις.';

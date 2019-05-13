@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Veld voor URL';
 $string['openlinkinnewwindow'] = 'Open link in nieuw venster';
 $string['pluginname'] = 'URL';
+$string['privacy:metadata'] = 'De URL-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';

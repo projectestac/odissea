@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Традиционная проверка орфографии';
+$string['privacy:metadata'] = 'Плагин проверки орфографии TinyMCE не хранит никаких личных данных.';

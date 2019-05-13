@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Текстовое поле';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profilefield_text:userid'] = 'ID пользователя, данные которого хранятся в поле «Текстовое поле» профиля пользователя';

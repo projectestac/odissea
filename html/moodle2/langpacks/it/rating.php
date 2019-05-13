@@ -32,7 +32,7 @@ $string['aggregatemin'] = 'Voto minimo';
 $string['aggregatenone'] = 'Senza voto';
 $string['aggregatesum'] = 'Somma dei voti';
 $string['aggregatetype'] = 'Modalità di aggregazione';
-$string['aggregatetype_help'] = 'La modalità di aggregazione definisce come verranno calcolati i voti presenti nel registro del valutatore.
+$string['aggregatetype_help'] = 'La modalità di aggregazione definisce come verranno calcolati i voti presenti nel registro valutatore.
 
 * Media dei voti - La media di tutti i voti
 * Numero di voti - Il voto finale è pari al numero di elementi valutati. Il totale non può comunque superare il voto massimo impostato nell\'attività.
@@ -40,7 +40,7 @@ $string['aggregatetype_help'] = 'La modalità di aggregazione definisce come ver
 * Voto più basso - Il voto finale è pari al voto più basso
 * Somma dei voti - Tutti i voti sono sommati. Il totale non può comunque superare il voto massimo impostato nell\'attività.
 
-Se si sceglie "Non aggregare i voti" l\'attività non comparirà nel registro del valutatore.';
+Se si sceglie "Non aggregare i voti" l\'attività non comparirà nel registro valutatore.';
 $string['allowratings'] = 'Consenti la valutazione degli elementi';
 $string['allratingsforitem'] = 'Tutte le valutazioni inviate';
 $string['capabilitychecknotavailable'] = 'La verifica delle autorizzazioni non sarà disponibili fino a quando l\'attività non sarà salvata';
@@ -49,6 +49,7 @@ $string['norate'] = 'La valutazione degli elementi non è consentita!';
 $string['noratings'] = 'Nessuna valutazione inviata';
 $string['noviewanyrate'] = 'Puoi solamente guardare i risultati dei tuoi inserimenti';
 $string['noviewrate'] = 'Non hai il privilegio di visualizzare le valutazioni degli inserimenti';
+$string['privacy:metadata:rating'] = 'La valutazione inserita dall\'utente viene memorizzata insieme a una mappatura dell\'elemento valutato.';
 $string['privacy:metadata:rating:rating'] = 'Il valore numerico della valutazione inserita dall\'utente.';
 $string['privacy:metadata:rating:timecreated'] = 'L\'orario della prima valutazione.';
 $string['privacy:metadata:rating:timemodified'] = 'L\'orario dell\'aggiornamento più recente della valutazione.';

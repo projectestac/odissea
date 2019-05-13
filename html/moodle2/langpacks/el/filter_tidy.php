@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'HTML tidy';
+$string['filtername'] = 'Επιδιόρθωση HTML (HTML tidy)';
+$string['privacy:metadata'] = 'Το πρόσθετο «Σιγύρισμα HTML» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

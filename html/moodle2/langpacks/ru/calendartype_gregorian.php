@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Григорианский';
 $string['pluginname'] = 'Григорианский календарь';
+$string['privacy:metadata'] = 'Плагин формата «Григорианский календарь» не хранит никаких персональных данных.';

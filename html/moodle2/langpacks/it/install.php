@@ -80,9 +80,11 @@ $string['dbprefix'] = 'Prefisso tabelle';
 $string['dbtype'] = 'Tipo';
 $string['directorysettings'] = '<p>Verifica e conferma la correttezza degli indirizzi web e dei percorsi assoluti di installazione.</p>
 
-<p><b>Indirizzo web:</b> Specifica l\'indirizzo web per raggiungere la tua installazione Moodle. Se l\'installazione è raggiungibile da più di una URL, allora specifica la URL che sarà utilizzata dagli studenti senza aggiungete uno slash al termine della URL.</p>
-<p><b>Cartella di Moodle:</b> Specifica il percorso assoluto della cartella dove stai installando Moodle. Accertati che il nome della cartella tenga conto di eventuali lettere maiuscole o minuscole.</p>
-<p><b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare questo folder se non esiste,</p>';
+<p><b>Indirizzo web:</b> Specifica l\'indirizzo web per raggiungere l\'installazione di Moodle. Se l\'installazione è raggiungibile da più di una URL, allora indicare l\'URL che sarà utilizzato dagli utenti senza aggiungete uno slash alla fine.</p>
+
+<p><b>Cartella di Moodle:</b> Specifica il percorso assoluto della cartella dove verrà installato Moodle. Accertarsii che il nome della cartella tenga conto di eventuali lettere maiuscole o minuscole.</p>
+
+<p><b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare la cartella se non esistente</p>';
 $string['directorysettingshead'] = 'Verifica e confermate la correttezza degli indirizzi web e dei percorsi assoluti di installazione';
 $string['directorysettingssub'] = '<b>Indirizzo web:</b>
 Specifica l\'indirizzo web per raggiungere la tua installazione Moodle. Se l\'installazione è raggiungibile da più di una URL, allora specifica la URL che sarà utilizzata dagli studenti senza aggiungere uno slash al termine della URL.

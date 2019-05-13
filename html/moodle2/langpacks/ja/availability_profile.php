@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['conditiontitle'] = 'ユーザプロファイルフィールド';
-$string['description'] = '学生のプロファイルフィールドをベースにアクセスをコントロールします。';
+$string['description'] = '学生のプロファイルをもとにアクセスをコントロールします。';
 $string['error_selectfield'] = 'あなたはプロファイルフィールドを選択する必要があります。';
 $string['error_setvalue'] = 'あなたは値を入力する必要があります。';
 $string['label_operator'] = '比較方法';

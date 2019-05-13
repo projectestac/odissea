@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_dbcannotconnect'] = 'Impossible de se connecter à la base de données externe.';
+$string['auth_dbcannotreadtable'] = 'Impossible de lire la table externe.';
 $string['auth_dbcantconnect'] = 'Impossible de se connecter à la base de données d\'authentification spécifiée.';
 $string['auth_dbchangepasswordurl_key'] = 'URL pour changement de mot de passe';
+$string['auth_dbcolumnlist'] = 'La table externe contient les colonnes suivantes :<br />{$a}';
 $string['auth_dbdebugauthdb'] = 'Débogage ADOdb';
 $string['auth_dbdebugauthdbhelp'] = 'Débogage de la connexion ADOdb vers la base de données externe. À utiliser lorsque vous obtenez une page blanche lors de la connexion à Moodle. Ne convient pas à un site en production.';
 $string['auth_dbdeleteuser'] = 'Utilisateur {$a->name} id {$a->id} supprimé';
@@ -46,6 +49,8 @@ $string['auth_dbinsertuserduplicate'] = 'Erreur lors de l\'insertion de l\'utili
 $string['auth_dbinsertusererror'] = 'Erreur lors de l\'insertion de l\'utilisateur {$a}';
 $string['auth_dbname'] = 'Nom de la base de données. À ne pas renseigner si vous utiliser un DSN ODBC. Ne pas renseigner non plus si votre PDO DSN contient déjà le nom de la base de données.';
 $string['auth_dbname_key'] = 'Nom de la base de données';
+$string['auth_dbnoexttable'] = 'Table externe non spécifiée.';
+$string['auth_dbnouserfield'] = 'Champ utilisateur externe non spécifié.';
 $string['auth_dbpass'] = 'Mot de passe pour ce compte';
 $string['auth_dbpass_key'] = 'Mot de passe';
 $string['auth_dbpasstype'] = '<p>Indiquez le type de hachage utilisé pour le champ mot de passe.</p> <p>Utilisez « Interne » si vous voulez que la base de données externe gère les noms d\'utilisateur et les adresses de courriel, mais que Moodle gère les mots de passe. Dans ce cas, la base de données externe <i>doit</i> comprendre un champ contenant une adresse de courriel, et vous devez lancer régulièrement les scripts admin/cron.php et auth/db/cli/sync_users.php. Moodle enverra alors par courriel un mot de passe temporaire aux nouveaux utilisateurs.</p>';
@@ -61,8 +66,9 @@ $string['auth_dbsybasequoting'] = 'Utiliser le mode Sybase pour les apostrophes'
 $string['auth_dbsybasequotinghelp'] = 'Style Sybase pour l\'échappement des apostrophes. Ce réglage est nécessaire pour les bases de données Oracle, MS SQL et d\'autres types. Ne pas utiliser avec MySQL !';
 $string['auth_dbsyncuserstask'] = 'Synchroniser les tâches utilisateur';
 $string['auth_dbtable'] = 'Nom de la table dans la base de données';
+$string['auth_dbtableempty'] = 'La table externe est vide.';
 $string['auth_dbtable_key'] = 'Table';
-$string['auth_dbtype'] = 'Type de la base de données (pour plus de détails, voir la <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">documentation de ADOdb</a>)';
+$string['auth_dbtype'] = 'Type de la base de données (pour des détails, voir la documentation <a href="http://adodb.org/dokuwiki/doku.php" target="_blank"> ADOdb - Couche d\'abstraction de base de données pour PHP</a>).';
 $string['auth_dbtype_key'] = 'Base de données';
 $string['auth_dbupdateusers'] = 'Modifier les utilisateurs';
 $string['auth_dbupdateusers_description'] = 'Insérer les nouveaux utilisateurs et modifier les utilisateurs existants.';

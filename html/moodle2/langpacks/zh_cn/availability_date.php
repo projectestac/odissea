@@ -36,6 +36,7 @@ $string['full_from_date'] = '在这之上或之后 <strong>{$a}</strong>';
 $string['full_until'] = '在这之前 <strong>{$a}</strong>';
 $string['full_until_date'] = '在这结束之前 <strong>{$a}</strong>';
 $string['pluginname'] = '通过日期限制';
+$string['privacy:metadata'] = '日期限制插件不储存任何私人数据。';
 $string['short_from'] = '可以从<strong>{$a}</strong>';
 $string['short_from_date'] = '可以从 <strong>{$a}</strong>';
 $string['short_until'] = '直到 <strong>{$a}</strong> 前可访问';

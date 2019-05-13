@@ -32,6 +32,7 @@ $string['allselectedusers'] = 'Все выбранные ({$a->count}/{$a->total
 $string['allusers'] = 'Все пользователи ({$a})';
 $string['available'] = 'Доступные';
 $string['confirmmessage'] = 'Вы действительно хотите отправить вышеприведенное сообщение всем этим пользователям?<br />{$a}';
+$string['deleteduser'] = 'Удаленный пользователь';
 $string['nofilteredusers'] = 'Пользователей не найдено (0/{$a})';
 $string['noselectedusers'] = 'Пользователи не выбраны';
 $string['removeall'] = 'Убрать всех';

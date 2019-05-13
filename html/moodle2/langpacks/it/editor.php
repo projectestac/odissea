@@ -120,6 +120,7 @@ $string['pleaseenteralt'] = 'Si prega di inserire il testo alternativo';
 $string['popupeditor'] = 'Editor in nuova finestra';
 $string['preformatted'] = 'Preformattato';
 $string['preview'] = 'Anteprima';
+$string['privacy:metadata:preference:htmleditor'] = 'Preferenze dell\'editor di testo.';
 $string['properties'] = 'Proprietà';
 $string['redo'] = 'Ripeti ultima azione';
 $string['regularexpressions'] = 'Utilizza espressioni regolari';

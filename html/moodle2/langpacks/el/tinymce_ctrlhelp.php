@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ctrlhelp:desc'] = 'CTRL + Right Click για περισσότερες επιλογές';
+$string['pluginname'] = 'Βοηθός CTRL+δεξί κλικ';
+$string['privacy:metadata'] = 'Το πρόσθετο «Ctrl+right» του TinyMCE δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

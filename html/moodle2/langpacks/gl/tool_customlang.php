@@ -56,5 +56,6 @@ $string['placeholder_help'] = 'Os intraducíbeis son instrucións especiais, com
 É importante copialos exactamente igual a como están na cadea orixinal. NON OS TRADUZA NIN CAMBIE A SÚA ESTRUTURA INTERNA.';
 $string['placeholderwarning'] = 'cadeas contendo elementos intraducíbeis';
 $string['pluginname'] = 'Personalización do idioma';
+$string['privacy:metadata'] = 'O engadido de personalización do idioma non almacena ningún dato persoal.';
 $string['savecheckin'] = 'Gardar os cambio no paquete de idioma';
 $string['savecontinue'] = 'Aplicar os cambios e continuar editando';

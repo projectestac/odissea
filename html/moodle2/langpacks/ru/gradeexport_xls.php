@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Оценки экспортированы в формат XLS';
 $string['pluginname'] = 'Таблица Excel';
+$string['privacy:metadata'] = 'Плагин «Экспорт оценок в таблицы Excel» не хранит никаких персональных данных.';
 $string['timeexported'] = 'Последние загруженные из этого курса';
 $string['xls:publish'] = 'Опубликовывать ссылку для экспорта оценок в формате XLS';
 $string['xls:view'] = 'Использовать экспорт оценок в формате Excel';

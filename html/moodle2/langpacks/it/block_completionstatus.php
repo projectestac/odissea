@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Aggiungere blocco Completamento corso
 $string['criteriagroup'] = 'Gruppo di criteri';
 $string['firstofsecond'] = '{$a->first} di {$a->second}';
 $string['pluginname'] = 'Completamento corso';
+$string['privacy:metadata'] = 'Il blocco Completamento corso visualizza solamente informazioni sul completamento del corso e non memorizza dati propri.';
 $string['requirement'] = 'Requisito';
 $string['returntocourse'] = 'Torna al corso';

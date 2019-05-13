@@ -29,7 +29,7 @@ $string['addbulknote'] = 'Gehitu ohar berria {$a} pertsonari';
 $string['addbulknotedone'] = 'Oharra {$a} pertsonari gehitu zaie';
 $string['addbulknotedonesingle'] = 'Oharra pertsona bati gehitu zaio';
 $string['addbulknotesingle'] = 'Gehitu ohar berria pertsona bati';
-$string['addnewnote'] = 'Gehitu beste ohar bat';
+$string['addnewnote'] = 'Gehitu ohar berria';
 $string['addnewnoteselect'] = 'Aukeratu ikasleak beraiei buruzko oharrak idazteko';
 $string['bynameondate'] = '{$a->name} -k - {$a->date}';
 $string['configenablenotes'] = 'Gaitu erabiltzaile bakoitzari buruzko oharrak biltzea';
@@ -37,10 +37,10 @@ $string['content'] = 'Edukia';
 $string['course'] = 'Ikastaroa';
 $string['coursenotes'] = 'Ikastaroaren oharrak';
 $string['created'] = 'sortua';
-$string['deleteconfirm'] = 'Ohar hau ezabatu?';
-$string['deletenotes'] = 'Ohar guztiak ezabatu';
+$string['deleteconfirm'] = 'Ezabatu ohar hau?';
+$string['deletenotes'] = 'Ezabatu ohar guztiak';
 $string['editnote'] = 'Editatu oharra';
-$string['enablenotes'] = 'Oharrak gaitu';
+$string['enablenotes'] = 'Gaitu oharrak';
 $string['eventnotecreated'] = 'Oharra sortu da';
 $string['eventnotedeleted'] = 'Oharra ezabatu da';
 $string['eventnotesviewed'] = 'Oharra ikusi da';
@@ -74,7 +74,7 @@ $string['publishstate_help'] = 'Oharren testuinguruak egunerokotasunean oharra z
 * Pertsonala - Oharra zuk baino ezin duzu ikusi
 * Ikastaroa - Oharra ikastaroko irakasleek ikus dezakete
 * Gunea - Oharra guneko ikastaro guztietako irakasleek ikus dezakete';
-$string['selectnotestate'] = 'Aukera ezazu oharraren egoera';
+$string['selectnotestate'] = 'Aukeratu oharraren egoera';
 $string['site'] = 'gunea';
 $string['sitenotes'] = 'Guneko oharrak';
 $string['unknown'] = 'ezezaguna';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['csv:view'] = 'Импортировать оценки из файла CSV';
 $string['pluginname'] = 'CSV файл';
+$string['privacy:metadata'] = 'Плагин «Импорт оценок из CSV-файла» не хранит никаких персональных данных.';

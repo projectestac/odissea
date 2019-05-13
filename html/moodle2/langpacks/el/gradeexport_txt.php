@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventgradeexported'] = 'Η εξαγωγή βαθμών σε TXT έγινε';
 $string['pluginname'] = 'Απλό αρχείο κειμένου';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εξαγωγή βαθμών σε απλό αρχείο κειμένου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['timeexported'] = 'Τελευταία λήψη από αυτό το μάθημα';
 $string['txt:publish'] = 'Δημοσίευση εξαγωγής βαθμών σε TXT';
 $string['txt:view'] = 'Χρήση εξαγωγής βαθμών σε κείμενο';

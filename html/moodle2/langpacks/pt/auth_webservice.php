@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = 'Este método de autenticação deve ser utilizado por contas que sejam usadas exclusivamente para acesso por clientes de web services.';
-$string['pluginname'] = 'Web services';
-$string['privacy:metadata'] = 'O módulo de autenticação Serviços Web não armazena nenhum dado pessoal.';
+$string['pluginname'] = 'Autenticação web services';
+$string['privacy:metadata'] = 'O módulo de Autenticação web services não armazena qualquer dado pessoal.';

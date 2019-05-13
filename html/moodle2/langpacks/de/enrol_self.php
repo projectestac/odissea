@@ -84,7 +84,7 @@ $string['maxenrolled'] = 'Einschreibungen (max.)';
 $string['maxenrolled_help'] = 'Diese Option legt die Maximalzahl möglicher Nutzer/innen mit Selbsteinschreibung fest. (0= unbeschränkt)';
 $string['maxenrolledreached'] = 'Die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung ist bereits erreicht.
 ';
-$string['messageprovider:expiry_notification'] = 'Mitteilung beim Ablauf einer Selbsteinschreibung';
+$string['messageprovider:expiry_notification'] = 'Systemnachricht beim Ablauf von Selbsteinschreibungen';
 $string['newenrols'] = 'Selbsteinschreibung erlauben';
 $string['newenrols_desc'] = 'Nutzer/innen dürfen sich standardmäßig selbst einschreiben';
 $string['newenrols_help'] = 'Diese Einstellung legt fest, ob Nutzer/innen sich in diesen Kurs einschreiben dürfen.';
@@ -99,7 +99,7 @@ $string['passwordinvalid'] = 'Falscher Einschreibeschlüssel';
 $string['passwordinvalidhint'] = 'Falscher Einschreibeschlüssel (Hinweis: Das erste Zeichen ist \'{$a}\')';
 $string['pluginname'] = 'Selbsteinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Selbsteinschreibung\' erlaubt Nutzer/innen zu wählen, in welchen Kursen sie teilnehmen möchten. Die Kurse können mit einem Einschreibeschlüssel gesichert sein. Intern wird die Selbsteinschreibung über das Plugin \'Manuelle Einschreibung\' abgewickelt, welches im Kurs notwendigerweise ebenfalls aktiviert sein muss.';
-$string['privacy:metadata'] = 'Das Selbsteinschreibungs-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Selbsteinschreibungs-Plugin speichert keine personenbezogenen Daten.';
 $string['requirepassword'] = 'Einschreibeschlüssel notwendig';
 $string['requirepassword_desc'] = 'Die Verwendung eines Einschreibeschlüssel ist notwendig. Mit dieser Einstellung wird in neuen Kursen ein Einschreibeschlüssel gesetzt und in bestehenden Kursen das Löschen des Einschreibeschlüssels verhindert.';
 $string['role'] = 'Rolle im Kurs';

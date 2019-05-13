@@ -25,11 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = 'Προσθήκη εβδομάδων';
+$string['automaticenddate'] = 'Υπολογισμός τη ημερομηνίας λήξης από τον αριθμό των τμημάτων';
+$string['automaticenddate_help'] = 'Αν ενεργοποιηθεί, η ημερομηνία λήξης για το μάθημα θα υπολογίζεται αυτόματα από τον αριθμό τμημάτων και την ημερομηνία έναρξης μαθήματος.';
 $string['currentsection'] = 'Αυτή η εβδομάδα';
 $string['deletesection'] = 'Διαγραφή εβδομάδας';
 $string['editsection'] = 'Επεξεργασία εβδομάδας';
 $string['editsectionname'] = 'Επεξεργασία ονόματος εβδομάδας';
 $string['hidefromothers'] = 'Απόκρυψη εβδομάδας';
-$string['pluginname'] = 'Εβδομαδιαία μορφή';
+$string['newsectionname'] = 'Νέο όνομα για την εβδομάδα {$a}';
+$string['page-course-view-weeks'] = 'Κάθε κύρια σελίδα μαθημάτων σε μορφή εβδομάδων';
+$string['page-course-view-weeks-x'] = 'Κάθε σελίδα μαθημάτων σε μορφή εβδομάδων';
+$string['pluginname'] = 'Εβδομαδιαίος μορφότυπος μαθήματος';
+$string['privacy:metadata'] = 'Το πρόσθετο «Εβδομαδιαίος μορφότυπος μαθήματος» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['section0name'] = 'Γενικά';
-$string['sectionname'] = 'εβδομάδα';
+$string['sectionname'] = 'Εβδομάδα';
+$string['showfromothers'] = 'Εμφάνιση εβδομάδας';

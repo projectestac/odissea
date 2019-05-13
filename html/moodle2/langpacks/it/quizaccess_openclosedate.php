@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notavailable'] = 'Spiacente, il quiz non è disponibile';
 $string['pluginname'] = 'Regola di accesso quiz Data di apertura e chiusura';
+$string['privacy:metadata'] = 'Il plugin \'Regola di accesso quiz Data di apertura e chiusura\' non memorizza dati personali.';
 $string['quiznotavailable'] = 'Il quiz non sarà disponibile fino a: {$a}';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Tentativi permessi: {$a}';
 $string['pluginname'] = 'Regola di accesso quiz Tentativi permessi';
+$string['privacy:metadata'] = 'Il plugin \'Regola di accesso quiz Tentativi permessi\' non memorizza dati personali.';

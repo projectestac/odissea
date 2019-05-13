@@ -43,6 +43,7 @@ $string['pluginname'] = 'Imatge';
 $string['presentation'] = 'La descripció no és necessària';
 $string['presentationoraltrequired'] = 'Les imatges han de tenir una descripció, tret que la descripció es marqui com a no necessària.';
 $string['preview'] = 'Previsualització';
+$string['privacy:metadata'] = 'El connector atto_image no emmagatzema cap dada personal.';
 $string['saveimage'] = 'Desa imatge';
 $string['size'] = 'Mida';
 $string['uploading'] = 'S\'està pujant, espereu...';

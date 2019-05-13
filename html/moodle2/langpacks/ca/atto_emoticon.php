@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insertemoticon'] = 'Insereix emoticona';
 $string['pluginname'] = 'Emoticona';
+$string['privacy:metadata'] = 'El connector atto_emoticon no emmagatzema cap dada personal.';

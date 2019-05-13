@@ -36,3 +36,4 @@ $string['page-report-outline-index'] = 'Report riassuntivo del corso';
 $string['page-report-outline-user'] = 'Report riassuntivo dell\'utente';
 $string['page-report-outline-x'] = 'Qualsiasi report riassuntivo';
 $string['pluginname'] = 'Attività del corso';
+$string['privacy:metadata'] = 'Il plugin Report \'Attività del corso\' non memorizza dati personali.';

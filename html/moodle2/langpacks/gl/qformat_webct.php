@@ -31,6 +31,7 @@ $string['missingquestion'] = 'Falta a etiqueta da pregunta após á liña {$a}';
 $string['pluginname'] = 'Formato WebCT';
 $string['pluginname_help'] = 'O formato WebCT permite importar preguntas de opción múltiple e resposta curta gardadas no formato baseado en texto de WebCT.';
 $string['pluginname_link'] = 'qformat/webct';
+$string['privacy:metadata'] = 'O engadido de formato de preguntas WebCT non almacena ningún dato persoal.';
 $string['questionnametoolong'] = 'Nome de pregunta longo de máis na liña {$a} (255 caracteres máx.). Foi truncado.';
 $string['unknowntype'] = 'Tipo descoñecido de pregunta após a liña {$a}';
 $string['warningsdetected'] = '{$a} aviso(s) detectado(s)';

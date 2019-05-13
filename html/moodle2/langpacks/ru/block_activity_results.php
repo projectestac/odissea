@@ -63,6 +63,7 @@ $string['error_nogroupsexist'] = 'Ошибка: блок настроен пок
 $string['error_unsupportedgradetype'] = 'Ошибка: выбранный элемент курса использует метод оценки, который не поддерживается данным блоком.';
 $string['notyetgraded'] = 'Еще не оценено';
 $string['pluginname'] = 'Оценки за элемент курса';
+$string['privacy:metadata'] = 'Блок «Оценки за элемент курса» только показывает данные, хранящиеся в других местах.';
 $string['unknown'] = 'Неизвестная шкала';
 $string['worstgrade'] = 'Самая низкая оценка:';
 $string['worstgrades'] = '{$a} самых низких оценок:';

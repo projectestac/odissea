@@ -30,3 +30,4 @@ $string['contextlevel'] = 'Context niveau';
 $string['count'] = 'Aantal';
 $string['noprolbems'] = 'Geen niet-ondersteunde roltoewijzingen gevonden;';
 $string['pluginname'] = 'Niet-ondersteunde roltoewijzingen';
+$string['privacy:metadata'] = 'De niet ondersteunde roltoewijzingen-plugin bewaart geen persoonlijke gegevens.';

@@ -32,4 +32,5 @@ $string['local:view'] = 'Visualizzare repository File del server';
 $string['notitle'] = 'senza titolo';
 $string['pluginname'] = 'File del server';
 $string['pluginname_help'] = 'File che sono stati caricati nel server Moodle';
+$string['privacy:metadata'] = 'Il plugin Repository \'File del server\' non memorizza dati personali.';
 $string['remember'] = 'Ricordami';

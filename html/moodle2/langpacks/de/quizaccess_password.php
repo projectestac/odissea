@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'Das eingegebene Kennwort war falsch.';
 $string['pluginname'] = 'Kennwort';
-$string['privacy:metadata'] = 'Das Plugin für Passwörter zum Testzugriff speichert keine persönlichen Daten';
+$string['privacy:metadata'] = 'Das Plugin für Passwörter zum Testzugriff speichert keine personenbezogenen Daten.';
 $string['quizpassword'] = 'Testkennwort';
 $string['requirepasswordmessage'] = 'Zur Teilnahme am Test benötigen Sie ein Kennwort.';

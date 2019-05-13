@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Valutato manualmente';
+$string['privacy:metadata'] = 'Il plugin Comportamenti domanda \'Valutato manualmente\' non memorizza dati personali.';

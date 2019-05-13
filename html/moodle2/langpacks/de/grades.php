@@ -37,7 +37,7 @@ $string['addoutcome'] = 'Lernziel hinzufügen';
 $string['addoutcomeitem'] = 'Lernzielaspekt hinzufügen';
 $string['addscale'] = 'Skala hinzufügen';
 $string['adjustedweight'] = 'Gewichtung eingestellt';
-$string['aggregateextracreditmean'] = 'Durchschnittsbewertung (mit Zusatzpunkten)';
+$string['aggregateextracreditmean'] = 'Durchschnitt (mit Zusatzpunkten)';
 $string['aggregatemax'] = 'Höchste Bewertung';
 $string['aggregatemean'] = 'Durchschnittsbewertung';
 $string['aggregatemedian'] = 'Median aller Bewertungen';
@@ -51,14 +51,14 @@ $string['aggregateoutcomes_help'] = 'Die Berücksichtigung der Lernziele bei der
 $string['aggregatesonly'] = 'Zu den Gesamtwerten wechseln';
 $string['aggregatesubcatsupgradedgrades'] = 'Hinweis: Die Einstellung  \'Aggregation mit Unterkategorien\' wurde beim Upgrade entfernt. Da diese Einstellung in diesem Kurs verwendet wurde, sollten Sie sich die Veränderungen bei den Bewertungen genauer ansehen.';
 $string['aggregatesum'] = 'Natürlich';
-$string['aggregateweightedmean'] = 'Gewichteter Durchschnittswert';
-$string['aggregateweightedmean2'] = 'Einfach gewichteter Durchschnittswert';
+$string['aggregateweightedmean'] = 'Gewichteter Durchschnitt';
+$string['aggregateweightedmean2'] = 'Einfach gewichteter Durchschnitt';
 $string['aggregation'] = 'Gesamtergebnis';
 $string['aggregationcoef'] = 'Summenkoeffizient';
-$string['aggregationcoefextra'] = 'Zusatzwertung';
-$string['aggregationcoefextra_help'] = 'Wenn die Ergebnisse \'Natürlich\' oder \'Einfach gewichteter Mittelwert\'  zusammengefasst werden und die Option \'Zusatzpunkte\' aktiviert ist, wird die höchste Bewertung nicht zur höchsten Bewertung der Kategorie hinzugezählt.  Daher kann hierbei die Höchstnote erreicht werden, obwohl nicht bei allen Bewertigen die Höchstnote erreicht wurde.  Wenn in der Systemverwaltung festgelegt wurde, dass Bewertungen veregebn werden können, die den Höchstwert übersteigen, kann die Bewertungsberechnung ein Ergebnis anzeigen, dass höher ist als der eingestellte Höchstwert.
+$string['aggregationcoefextra'] = 'Zusatzpunkte';
+$string['aggregationcoefextra_help'] = 'Wenn die Ergebnisse \'Natürlich\' oder \'Einfach gewichteter Durchschnitt\'  zusammengefasst werden und die Option \'Zusatzpunkte\' aktiviert ist, wird die höchste Bewertung nicht zur höchsten Bewertung der Kategorie hinzugezählt.  Daher kann hierbei die Höchstnote erreicht werden, obwohl nicht bei allen Bewertigen die Höchstnote erreicht wurde.  Wenn in der Systemverwaltung festgelegt wurde, dass Bewertungen veregebn werden können, die den Höchstwert übersteigen, kann die Bewertungsberechnung ein Ergebnis anzeigen, dass höher ist als der eingestellte Höchstwert.
 
-Wenn die Berechnung auf Basis des \'Durchschnitts (mit Extrapunkten)\'  gesetzt ist und Extrapunkte einen Wert größer als Null haben, so wird der Wert für den Extrapunkte erst multipliziert und dann dem Durchschnitt der Bewertungen hinzuaddiert.';
+Wenn die Berechnung auf Basis des \'Durchschnitts (mit Zusatzpunkten)\'  gesetzt ist und Extrapunkte einen Wert größer als Null haben, so wird der Wert für den Extrapunkte erst multipliziert und dann dem Durchschnitt der Bewertungen hinzuaddiert.';
 $string['aggregationcoefextrasum'] = 'Zusatzpunkte';
 $string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextrasum_help'] = '<h2>Als Extrapunkte-Bewertung festlegen</h2>
@@ -93,15 +93,15 @@ $string['aggregationcoefweight_help'] = '<h2>Gewichtung des Wertes</h2>
 </p>';
 $string['aggregation_help'] = 'Diese Einstellung legt fest, wie die einzelnen Bewertungsaspekte der Kategorie zusammengefasst werden.
 
-* Durchschnittsbewertung: Arithmetische Mittel der Quotienten aus erreichter Punktezahl und Maximalpunktzahl.
-* Gewichteter Durchschnittswert: Jeder Bewertungsaspekt wird mit einer Gewichtung versehen.
-* Einfach gewichteter Durchschnittswert: Bewertungsaspekt mit hoher Maximalpunktzahl haben eine hohe Gewichtung.
-* Durchschnittsbewertung (mit Zusatzpunkten): Wird nicht mehr unterstützt; sollte nicht verwendet werden.
-* Median aller Bewertungen: Wenn die Werte in aufsteigender Reihe aufgelistet werden, wird der mittlere Wert benutzt.
+* Durchschnitt: Die Summe aller Bewertungsaspekte wird durch ihre Anzahl geteilt.
+* Gewichteter Durchschnitt: Vor der Durchschnittberechnung kann jeder Bewertungsaspekt wird mit einer Gewichtung versehen werden.
+* Einfach gewichteter Durchschnitt: Vor der Durchschnittberechnung wird jeder Bewertungsaspekt automatisch mit der Gewichtung seiner Maximalpunktezahl versehen.
+* Durchschnitt (mit Zusatzpunkten): Wird nicht mehr unterstützt und sollte nicht verwendet werden.
+* Median aller Bewertungen: Die Bewertungen der Bewertungsaspekte werden der Größe nach sortiert. Der Median ist der Wert in der Mitte.
 * Niedrigste Bewertung
 * Höchste Bewertung
-* Modus (Modalwert) aller Bewertungen: Der Wert, der am häufigsten vorkommt (Wird oft bei Bewertungen ohne Zahlen verwandt.)
-* Natürlich: Die Punktwerte der einzelnen Bewertungen werden addiert.';
+* Modus (Modalwert) aller Bewertungen: Die Bewertung, die am häufigsten vorkommt, wird verwendet. Diese Methode wird oft bei nichtnumerischen Bewertungen eingesetzt.
+* Natürlich: Die Summe aller Bewertungen.';
 $string['aggregationhintdropped'] = '(Unberücksichtigt)';
 $string['aggregationhintexcluded'] = '(Unberücksichtigt)';
 $string['aggregationhintextra'] = '(Zusatzbewertung)';
@@ -153,7 +153,7 @@ $string['compact'] = 'Komprimieren';
 $string['componentcontrolsvisibility'] = 'Die Sichtbarkeit dieses Bewertungselements wird in den Aktivitätseinstellungen festgelegt.';
 $string['contract'] = 'Kategorie einschränken';
 $string['contributiontocoursetotal'] = 'Beiträge zum Kurs insgesamt';
-$string['controls'] = 'Kontrollen';
+$string['controls'] = 'Einstellungen';
 $string['courseavg'] = 'Kurs-Durchschnitt';
 $string['coursegradecategory'] = 'Kursbewertungskategorie';
 $string['coursegradedisplaytype'] = 'Anzeigetyp der Bewertungskategorie';
@@ -372,7 +372,7 @@ $string['groupavg'] = 'Gruppendurchschnitt';
 $string['hidden'] = 'Verborgen';
 $string['hiddenasdate'] = 'Erstellungsdatum für verborgene Bewertungen anzeigen';
 $string['hiddenasdate_help'] = 'Falls Nutzer/innen verborgene Bewertungen nicht sehen können, soll das Abgabedatum anstelle von \'-\' angezeigt werden.';
-$string['hidden_help'] = 'Die Option verbirgt die Bewertungen vor den Teilnehmer/innen. \'Verborgen bis...\' kann auf Wunsch eingestellt werden, um die Bewert ungen so lange zu verbergen, bis der Bewertungsdurchlauf abgeschlossen wurde. ';
+$string['hidden_help'] = 'Die Option verbirgt die Bewertungen vor den Teilnehmer/innen. \'Verborgen bis...\' kann auf Wunsch eingestellt werden, um die Bewertungen so lange zu verbergen, bis der Bewertungsdurchlauf abgeschlossen wurde.';
 $string['hiddenuntil'] = 'Verborgen bis';
 $string['hiddenuntildate'] = 'Verborgen bis: {$a}';
 $string['hideadvanced'] = 'Erweiterte Funktionen verbergen';
@@ -390,7 +390,8 @@ $string['hidequickfeedback'] = 'Schnelles Feedback verbergen';
 $string['hideranges'] = 'Stufen verbergen';
 $string['hidetotalifhiddenitems'] = 'Summen verbergen, wenn sie verborgene Elemente enthalten';
 $string['hidetotalifhiddenitems_help'] = 'Die Einstellung legt fest ob die Gesamtbewertung angezeigt wird oder durch ein (-) ersetzt wird, wenn es verborgene Einzelbewertungen gibt. Soll sie angezeigt werden kann festgelegt werden, ob die verborgene Bewertung in das angezeigte Gesamtergebnisse einbezogen wird oder nicht.
-Wenn verborgene Werte ausgeschlossen werden, ist die sichtbare Gesamtbewertung die der Trainer sieht und die der Teilnehmer sieht, nicht identisch.  Der Trainer sieht immer sichtbare und verborgene Ergebnisse als Gesamtergebnis. Sollen verborgene Werte für Teilnehmer nicht sichtbar sein, können diese von den Teilnehmern u.U. aus dem Gesamtergebnis errechnet werden.';
+
+Wenn verborgene Werte ausgeschlossen werden, ist die sichtbare Gesamtbewertung für Trainer/innen und Teilnehmer/innen jeweils nicht identisch.  Trainer/innen sehen immer sichtbare und verborgene Ergebnisse als Gesamtergebnis. Sollen verborgene Werte für Teilnehmer/innen in die Bewertung eingehen, können diese von den Teilnehmer/innen u.U. aus dem Gesamtergebnis errechnet werden.';
 $string['hidetotalshowexhiddenitems'] = 'Summen anzeigen, ausgenommen der verborgenen Elemente';
 $string['hidetotalshowinchiddenitems'] = 'Summen anzeigen, inclusive der verborgenen Elemente';
 $string['hideverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} verbergen';
@@ -656,7 +657,7 @@ $string['privacy:metadata:grades:timemodified'] = 'Zeitpunkt der letzten Änderu
 $string['privacy:metadata:grades:userid'] = 'ID des bewerteten Nutzers';
 $string['privacy:metadata:grades:usermodified'] = 'ID des Nutzers, der Datensatz zuletzt bearbeitet hat';
 $string['privacy:metadata:history:loggeduser'] = 'ID des Nutzers, der eingeloggt war als Versionierung erfolgte';
-$string['privacy:metadata:history:timemodified'] = 'Zeitpunkt der Versionierung';
+$string['privacy:metadata:history:timemodified'] = 'Zeitpunkt der Bewertungs-Versionierung';
 $string['privacy:metadata:itemshistory'] = 'Aufzeichnung früherer Versionen des Bewertungsitems';
 $string['privacy:metadata:outcomes'] = 'Aufzeichnung der Lernziele';
 $string['privacy:metadata:outcomeshistory'] = 'Eine Aufzeichnung früherer Versionen des Lernziels';
@@ -664,7 +665,7 @@ $string['privacy:metadata:outcomes:timemodified'] = 'Zeitpunkt an dem Datensatz 
 $string['privacy:metadata:outcomes:usermodified'] = 'Nutzer der den Datensatz zuletzt verändert hat';
 $string['privacy:metadata:scale'] = 'Aufzeichnung von Skalen';
 $string['privacy:metadata:scalehistory'] = 'Aufzeichnung früherer Versionen von Skalen';
-$string['privacy:metadata:scale:timemodified'] = 'Zeitpunkt zu dem  der Datensatz zuletzt verändert wurde';
+$string['privacy:metadata:scale:timemodified'] = 'Zeitpunkt an dem  der Datensatz zuletzt verändert wurde';
 $string['privacy:metadata:scale:userid'] = 'Nutzer, der Datensatz zuletzt bearbeitet hat';
 $string['privacy:path:relatedtome'] = 'Mit zugeordnet';
 $string['privacy:request:historyactiondelete'] = 'Löschen';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Testergebnisse';
 $string['privacy:metadata'] = 'Der Block Testergebnisse zeigt nur Daten an, die an anderen Orten gespeichert sind.';
-$string['quiz_results:addinstance'] = 'Block \'Testergebnisse\' hinzufügen';
+$string['quiz_results:addinstance'] = 'Neuen Block \'Testergebnisse\' hinzufügen';

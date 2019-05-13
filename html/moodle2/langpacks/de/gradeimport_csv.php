@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['csv:view'] = 'Bewertungen aus CSV-Datei importieren';
 $string['pluginname'] = 'CSV-Datei';
-$string['privacy:metadata'] = 'Das CSV-Import Plugin für Bewertungen speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das CSV-Import Plugin für Bewertungen speichert keine personenbezogenen Daten.';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['moodleimage:browseimage'] = 'Cerca i carrega una imatge...';
 $string['pluginname'] = 'Insereix imatge';
+$string['privacy:metadata'] = 'El connector d\'Imatges de Moodle de TinyMCE no emmagatzema cap dada personal.';

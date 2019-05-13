@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Color de fons';
+$string['privacy:metadata'] = 'El connector atto_backcolor no emmagatzema cap dada personal.';

@@ -31,4 +31,4 @@ $string['filtername'] = 'Multimedia-Plugins';
 $string['linktomedia'] = 'Der Filter \'Multimedia-Plugins\' sucht Links im Text, die auf Multimedia verweisen, und ersetzt diese durch einen entsprechenden MediaPlayer-Code zum Abspielen. Der Filter ersetzt auch die HTML-Tags &lt;video&gt; und &lt;audio&gt; durch den entsprechenden Code für Video- und Audio-Player.
 
 <a href="{$a}"> MediaPlayer verwalten </a>';
-$string['privacy:metadata'] = 'Das Multimedia-Plugin speichert keine persönlichen Daten.';
+$string['privacy:metadata'] = 'Das Multimedia-Plugin speichert keine personenbezogenen Daten.';

@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρύθμιση για τον τοπικό χώρο αποθήκευσης αρχείων';
+$string['configplugin'] = 'Ρυθμίσεις αποθετηρίου τοπικών αρχείων στον εξυπηρετητή';
+$string['currentusefiles'] = 'Τρέχοντα χρησιμοποιούμενα αρχεία';
 $string['emptyfilelist'] = 'Δεν υπάρχουν αρχεία για εμφάνιση';
-$string['local:view'] = 'Εμφάνιση του repository διακομιστή';
+$string['local:view'] = 'Εμφάνιση του αποθετηρίου του εξυπηρετητή';
 $string['notitle'] = 'Χωρίς τίτλο';
 $string['pluginname'] = 'Τοπικά αρχεία';
-$string['pluginname_help'] = 'Χώρος αποθήκευσης στον τοπικό εξυπηρετητή Moodle';
+$string['pluginname_help'] = 'Αρχεία ανεβασμένα προηγουμένως στον εξυπηρετητή του Moodle';
+$string['privacy:metadata'] = 'Το πρόσθετο αποθετηρίου «Αρχεία εξυπηρετητή»  δεν αποθηκεύει ούτε μεταβιβάζει κανένα προσωπικό δεδομένο.';
 $string['remember'] = 'Να με θυμάσαι';

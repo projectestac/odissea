@@ -25,7 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρύθμιση τύπου χώρου αποθήκευσης YouTube';
-$string['pluginname'] = 'Βίντεο Youtube';
+$string['apierror'] = '{$a}';
+$string['apikey'] = 'Κλειδί API';
+$string['configplugin'] = 'Ρυθμίσεις τύπου χώρου αποθήκευσης YouTube';
+$string['information'] = 'Αποκτήστε ένα <a href="https://developers.google.com/youtube/v3/getting-started">κλειδί API Google</a> για τον Moodle ιστότοπό σας.';
+$string['pluginname'] = 'Βίντεο YouTube';
+$string['privacy:metadata:repository_youtube'] = 'Το πρόσθετο «Αποθετήριο βίντεο του YouTube» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου βίντεο YouTube.';
 $string['search'] = 'Αναζήτηση βίντεο';
-$string['youtube:view'] = 'Χρήση του youtube  στο σύστημα επιλογής αρχείων (file picker)';
+$string['sortby'] = 'Ταξινόμηση κατά';
+$string['sortpublished'] = 'Ημερομηνία Δημοσίευσης';
+$string['sortrating'] = 'Αξιολόγηση';
+$string['sortrelevance'] = 'Συνάφεια';
+$string['sortviewcount'] = 'Προβολή Πλήθους';
+$string['youtube:view'] = 'Χρήση του YouTube στον επιλογέα αρχείων';

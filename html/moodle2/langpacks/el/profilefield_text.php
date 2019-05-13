@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Εισαγωγή κειμένου';
+$string['privacy:metadata:profilefield_text:data'] = 'Εισαγωγή πεδίων δεδομένων χρήστη πεδίου προφίλ χρήστη';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'Ο μορφότυπος των δεδομένων χρήστη του πεδίου εισαγωγής κειμένου του προφίλ χρήστη';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'Το αναγνωριστικό του πεδίου προφίλ';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Επιπρόσθετα δεδομένα προφίλ';
+$string['privacy:metadata:profilefield_text:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου τα δεδομένα αποθηκεύονται στο πεδίο εισαγωγής κειμένου του προφίλ χρήστη';

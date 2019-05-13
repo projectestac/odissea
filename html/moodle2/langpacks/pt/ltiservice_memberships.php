@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subscrever Serviço LTI';
-$string['privacy:metadata:email'] = 'O email do utilizador a usar o sistema LTI.';
+$string['privacy:metadata:email'] = 'O e-mail do utilizador a usar o sistema LTI.';
 $string['privacy:metadata:externalpurpose'] = 'Este informação é enviada para um fornecedor LTI externo.';
 $string['privacy:metadata:firstname'] = 'firstname do utilizador a usar o sistema LTI.';
 $string['privacy:metadata:fullname'] = 'O fullname do utilizador a usar o sistema LTI.';
 $string['privacy:metadata:lastname'] = 'lastname do utilizador a usar o sistema LTI.';
 $string['privacy:metadata:userid'] = 'O ID do utilizado a usar o sistema LTI.';
-$string['privacy:metadata:useridnumber'] = 'O idnumber do utilizador a usar o sistema LTI';
+$string['privacy:metadata:useridnumber'] = 'O ID do utilizador ao usar o sistema LTI';
 $string['servicename'] = 'Subscrever';

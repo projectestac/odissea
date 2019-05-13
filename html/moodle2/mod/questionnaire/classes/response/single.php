@@ -152,7 +152,7 @@ class single extends base {
             'INNER JOIN {questionnaire_quest_choice} c ON r.choice_id = c.id ' .
             'WHERE r.question_id= ? ' . $rsql . ' ' .
             'ORDER BY response_id ASC';
-        return $DB->get_recordset_sql($sql, $params);
+        return $DB->get_records_sql($sql, $params);
     }
 
     /**
@@ -279,8 +279,8 @@ class single extends base {
         global $DB;
 
         $userfields = $this->user_fields_sql();
-        $extraselect = 'qrs.choice_id, ' . $DB->sql_order_by_text('qro.response', 1000) . ' AS response, 0 AS rank';
         $alias = 'qrs';
+        $extraselect = 'qrs.choice_id, ' . $DB->sql_order_by_text('qro.response', 1000) . ' AS response, 0 AS rankvalue';
 
         return "
             SELECT " . $DB->sql_concat_join("'_'", ['qr.id', "'".$this->question->helpname()."'", $alias.'.id']) . " AS id,

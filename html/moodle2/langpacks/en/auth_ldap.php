@@ -158,6 +158,7 @@ $string['updatepasserrorexpire'] = 'Error in user_update_password() when reading
 $string['updatepasserrorexpiregrace'] = 'Error in user_update_password() when modifying expirationtime and/or gracelogins. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Error updating LDAP record. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - old moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Failed to update LDAP with ambiguous field {$a->key}; old moodle value: \'{$a->ouvalue}\', new value: \'{$a->nuvalue}\'';
+$string['updateremfailfield'] = 'Failed to update LDAP with non-existent field (\'{$a->ldapkey}\'). Key ({$a->key}) - old Moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Could not find user while updating externally. Details follow: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
 $string['useracctctrlerror'] = 'Error getting userAccountControl for {$a}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() does not support selected usertype: {$a}';

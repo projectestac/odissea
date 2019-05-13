@@ -34,6 +34,7 @@ $string['equella:view'] = 'Visualizzare repository EQUELLA';
 $string['group'] = '{$a} impostazioni ruolo';
 $string['groupdefault'] = 'Default';
 $string['pluginname'] = 'Repository EQUELLA';
+$string['privacy:metadata'] = 'Il plugin \'Repository EQUELLA\' non memorizza dati personali, ma trasmette i dati degli utenti da Moodle al sistema remoto.';
 $string['restrictionattachmentsonly'] = 'Solo risorsa allegata';
 $string['restrictionitemsonly'] = 'Solo sommario dell\'elemento';
 $string['restrictionnone'] = 'Senza limitazioni';

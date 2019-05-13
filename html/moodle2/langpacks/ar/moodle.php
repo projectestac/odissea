@@ -29,6 +29,7 @@ $string['abouttobeinstalled'] = 'على وشك الانتهاء من التثب�
 $string['action'] = 'عمل';
 $string['actionchoice'] = 'ما تريد أن تفعل بالملف';
 $string['actions'] = 'أفعال';
+$string['actionsmenu'] = 'قائمة الأحداث';
 $string['active'] = 'ناشط';
 $string['activeusers'] = 'مستخدمون ناشطون';
 $string['activities'] = 'نشاطات';
@@ -1440,6 +1441,7 @@ $string['parentcategory'] = 'تصنيف أعلى';
 $string['parentcoursenotfound'] = 'لم يتم العثور على مقرر دراسي أساسي';
 $string['parentfolder'] = 'مجلد أساسي';
 $string['participants'] = 'المشتركون';
+$string['participantscount'] = 'عدد المشتركين: {$a}';
 $string['participantslist'] = 'قائمة المشاركين';
 $string['participationratio'] = 'نسبة المشاركة';
 $string['participationreport'] = 'تقرير المشاركة';
@@ -1512,6 +1514,8 @@ $string['previous'] = 'السابق';
 $string['previouslyselectedusers'] = 'المستخدمون المختارون سابقًا غير مطابقين';
 $string['previoussection'] = 'الجزاء السابق';
 $string['primaryadminsetup'] = 'إعداد حساب مدير موقع';
+$string['privacy:metadata:log:course'] = 'مقرر دراسي';
+$string['privacy:metadata:log:info'] = 'معلومات إضافية';
 $string['privatefiles'] = 'ملفات خاصة';
 $string['private_files_handler'] = 'خزِّن مُرفقات البريد الإلكتروني في منطقة تخزين الملفات الخاصة بالمستخدم.';
 $string['private_files_handler_name'] = 'إرسال بالبريد الإلكتروني إلى الملفات الخاصة';

@@ -29,3 +29,4 @@ $string['moodlemedia:browsemedia'] = 'Troba i carrega un so, vídeo o aplicació
 $string['moodlemedia:desc'] = 'Insereix materials de Moodle';
 $string['nopreview'] = 'No es pot previsualitzar els materials.';
 $string['pluginname'] = 'Insereix materials';
+$string['privacy:metadata'] = 'El connector de Fitxers multimèdia de Moodle de TinyMCE no emmagatzema cap dada personal.';

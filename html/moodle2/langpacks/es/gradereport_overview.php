@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Informe de resumen de notas visto';
+$string['gradesoverview'] = 'Resumen de Calificaciones';
 $string['overview:view'] = 'Ver informe general';
 $string['pluginname'] = 'Informe general';

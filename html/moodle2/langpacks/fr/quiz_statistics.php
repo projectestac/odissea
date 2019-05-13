@@ -91,6 +91,7 @@ $string['partofquestion'] = 'Partie de question';
 $string['pluginname'] = 'Statistiques';
 $string['position'] = 'Position';
 $string['positions'] = 'Position(s)';
+$string['privacy:metadata'] = 'Bien que le plugin Statistiques de test ait des tables dans la base de données, il ne s\'agit que d\'agrégation de données, qui ne décrivent pas un individu identifiable.';
 $string['questioninformation'] = 'Info question';
 $string['questionname'] = 'Nom de question';
 $string['questionnumber'] = 'No Q';

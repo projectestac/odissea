@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowadditionalcssclasses'] = 'Onartu CSS mota osagarriak';
-$string['configallowadditionalcssclasses'] = 'HTML blokeari, CSS mota osagarriak ezartzeko aukera eskaintzen duen ezarpen-aukera bat gehitzen dio.';
+$string['allowadditionalcssclasses'] = 'Baimendu CSS mota osagarriak';
+$string['configallowadditionalcssclasses'] = 'HTML blokearen instantziei CSS mota osagarriak ezartzeko aukera eskaintzen duen ezarpen-aukera bat gehitzen dio.';
 $string['configclasses'] = 'CSS mota osagarriak';
 $string['configclasses_help'] = 'Ezarpen honen helburua itxuraketa egiten laguntzea da, HTML blokeak errazago desberdintzeko. Hemen sartutako CSS motak (zuriunez bereizita) blokearen lehenetsitako motei gehituko zaizkie.';
 $string['configcontent'] = 'Edukia';

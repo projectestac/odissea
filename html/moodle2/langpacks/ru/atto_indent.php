@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'Отступ';
 $string['outdent'] = 'Выступ';
 $string['pluginname'] = 'Отступ';
+$string['privacy:metadata'] = 'Плагин atto_indent не хранит никаких персональных данных.';

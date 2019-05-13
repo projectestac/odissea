@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['conditiontitle'] = 'Nutzerprofilfeld';
-$string['description'] = 'Zugriff über Felder im Nutzerprofil der Teilnehmer/innen steuern';
-$string['error_selectfield'] = 'Sie müssen ein Profilfeld auswählen.';
+$string['conditiontitle'] = 'Feld im Nutzerprofil';
+$string['description'] = 'Zugriff über Felder im Nutzerprofil steuern';
+$string['error_selectfield'] = 'Sie müssen ein Feld im Nutzerprofil auswählen.';
 $string['error_setvalue'] = 'Sie müssen einen Wert eingeben.';
 $string['label_operator'] = 'Vergleichsmethode';
 $string['label_value'] = 'Vergleichswert';
-$string['missing'] = '(Fehlendes Nutzerprofilfeld: {$a})';
+$string['missing'] = '(Fehlendes benutzerdefiniertes Feld: {$a})';
 $string['op_contains'] = 'enthält';
 $string['op_doesnotcontain'] = 'enthält nicht';
 $string['op_endswith'] = 'endet mit';
@@ -40,7 +40,7 @@ $string['op_isequalto'] = 'ist gleich mit';
 $string['op_isnotempty'] = 'ist nicht leer';
 $string['op_startswith'] = 'beginnt mit';
 $string['pluginname'] = 'Voraussetzung: Nutzerprofil';
-$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung Profilfeld\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Nutzerprofil\' speichert keine personenbezogenen Daten.';
 $string['requires_contains'] = 'Ihr Profilfeld <strong>{$a->field}</strong> enthält <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Ihr Profilfeld <strong>{$a->field}</strong> enthält nicht <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Ihr Profilfeld <strong>{$a->field}</strong> endet mit <strong>{$a->value}</strong>';

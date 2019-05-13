@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo de menú';
 $string['pluginname'] = 'Menú';
+$string['privacy:metadata'] = 'O compoñente de campo de menú non almacena ningún dato persoal, usa táboas definidas en mod_data.';

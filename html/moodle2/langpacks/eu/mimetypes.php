@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['application/epub_zip'] = 'EPUB e-liburua';
+$string['application/json'] = '{$a->MIMETYPE2} testua';
 $string['application/msword'] = 'Word dokumentua';
 $string['application/pdf'] = 'PDF dokumentua';
 $string['application/vnd.moodle.backup'] = 'Moodle-ren segurtasun-kopia';
@@ -71,7 +72,7 @@ $string['group:web_video'] = 'Webean erabilitako bideo-fitxategiak';
 $string['image'] = 'Irudia ({$a->MIMETYPE2})';
 $string['image/vnd.microsoft.icon'] = 'Windows-eko ikonoa';
 $string['text/css'] = 'Kaskadako estilo-orriak (CSS)';
-$string['text/csv'] = 'Komek banatutako baloreak (CSV)';
+$string['text/csv'] = 'Komaz banatutako balioak (CSV)';
 $string['text/html'] = 'HTML dokumentua';
 $string['text/plain'] = 'Testu-fitxategia';
 $string['text/rtf'] = 'RTF dokumentua';

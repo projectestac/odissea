@@ -30,4 +30,6 @@ $string['configplugin'] = 'Configurazione repository Picasa';
 $string['oauthinfo'] = '<p>Per usare questo plugin, devi essere registrato su Google. Trovi le istruzioni per la registrazione nella documentazione <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Durante il processo di registrazione dovrai inserire il seguente URL quale \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Al termine della registrazione riceverai un Client ID ed un secret che possono essere utilizzati per configurare sia i plugin Google Drive sia i plugin Picasa.</p>';
 $string['picasa:view'] = 'Visualizzare repository Picasa';
 $string['pluginname'] = 'Web Album Picasa';
+$string['privacy:metadata:repository_picasa'] = 'Il plugin Repository \'Web Album Picasa\' non memorizza dati personali, ma trasmette i dati degli utenti da Moodle al sistema remoto.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'Query di ricerca testo per l\'utente del repository Picasa.';
 $string['secret'] = 'Secret';

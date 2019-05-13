@@ -42,7 +42,7 @@ $string['bind_dn'] = 'Si desea usar \'bind-user\' para buscar usuarios, especif�
 $string['bind_dn_key'] = 'Enlazar nombre completo del usuario';
 $string['bind_pw'] = 'Contraseña para \'bind-user\'.';
 $string['bind_pw_key'] = 'Contraseña';
-$string['bind_settings'] = 'Enlazar configuración';
+$string['bind_settings'] = 'Configuraciones para enlazado';
 $string['cannotcreatecourse'] = 'No se puede crear el curso: faltan datos necesarios del registro LDAP';
 $string['cannotupdatecourse'] = 'No se puede actualizar el curso: faltan datos requeridos del registro LDAP. Idnumber del curso: \'{$a->idnumber}\'';
 $string['cannotupdatecourse_duplicateshortname'] = 'No se puede actualizar el curso: nombre corto duplicado. Saltando curso con idnumber  \'{$a->idnumber}\'';
@@ -66,7 +66,7 @@ $string['course_shortname_updateonsync'] = 'Actualizar nombre corto durante el s
 $string['course_shortname_updateonsync_key'] = 'Actualizar nombre corto';
 $string['course_summary'] = 'Opcional: campo LDAP del que conseguir el sumario.';
 $string['course_summary_key'] = 'Resumen';
-$string['course_summary_updateonsync'] = 'Resumen de actualización durante el script de sincronización';
+$string['course_summary_updateonsync'] = 'Actualizar resumen durante el script de sincronización';
 $string['course_summary_updateonsync_key'] = 'Actualizar resumen';
 $string['courseupdated'] = 'El curso con idnumber  \'{$a->idnumber}\'  ha sido actualizado correctamente.';
 $string['courseupdateskipped'] = 'El curso con número de identificación \'{$a->idnumber}\' no necesita actualización. Omitiéndose...';
@@ -81,7 +81,7 @@ $string['enroluser'] = 'Matricular al usuario \'{$a->user_username}\' en el curs
 $string['enroluserenable'] = 'Matriculación habilitada para el usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['explodegroupusertypenotsupported'] = 'ldap_explode_group() no soporta el tipo de usuario seleccionado: {$a}';
 $string['extcourseidinvalid'] = 'La id del curso externo no es válido';
-$string['extremovedsuspend'] = 'Matriculación habilitada para el usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';
+$string['extremovedsuspend'] = 'Matriculación deshabilitada para el usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['extremovedsuspendnoroles'] = 'Matriculación deshabilitada y roles eliminados para el usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['extremovedunenrol'] = 'Dar de baja el usuario \'{$a->user_username}\' del curso \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['failed'] = 'Error';
@@ -92,7 +92,7 @@ $string['host_url'] = 'Especifique el host LDAP en formato URL, e.g.,  \'ldap://
 or \'ldaps://ldap.myorg.com/\'';
 $string['host_url_key'] = 'URL del servidor';
 $string['idnumber_attribute'] = 'Si la pertenencia a grupo contiene \'nombres distinguidos\', especifique el mismo atributo que ha usado para el mapeo del \'Número ID\' del usuario, en la configuración de identificación LDAP';
-$string['idnumber_attribute_key'] = 'Número ID del atributo';
+$string['idnumber_attribute_key'] = 'Atributo de número ID';
 $string['ldap_encoding'] = 'Indique la codificación utilizada por el servidor LDAP. Lo más probable es que sea utf-8;  MS AD v2 utiliza  codificaciones predeterminadas de la plataforma como cp1252, cp1250, etc';
 $string['ldap_encoding_key'] = 'Codificación LDAP';
 $string['ldap:manage'] = 'Gestionar ejemplos de matriculación LDAP';
@@ -107,8 +107,8 @@ $string['objectclass'] = 'objectClass usada para buscar cursos. Normalmente
 \'posixGroup\'.';
 $string['objectclass_key'] = 'Clase del objeto';
 $string['ok'] = 'Ok';
-$string['opt_deref'] = 'Los alias son enlaces simbólicos a otros archivos, incluyendo aquellos almacenados en repositorios externos. En algunos casos, Moodle no puede restaurarlos - por ejemplo cuando se restaura una copia de seguridad en otro sitio o cuando el archivo al que se hace referencia no existe.';
-$string['opt_deref_key'] = 'Alias referenciados';
+$string['opt_deref'] = 'Si la membresía del grupo contiene nombres distinguidos, especifique cómo se manejarán los alias durante la búsqueda. Elija uno de los siguientes valores: \'No\' (LDAP_DEREF_NEVER) o \'Sí\' (LDAP_DEREF_ALWAYS).';
+$string['opt_deref_key'] = 'Eliminar referencias de alias';
 $string['phpldap_noextension'] = '<em>El módulo PHP LDAP no parecen estar presente. Por favor, asegúrese de que está instalado y habilitado si desea utilizar este módulo de matriculación.</em>';
 $string['pluginname'] = 'Inscripciones LDAP';
 $string['pluginname_desc'] = '<p>Usted puede utilizar un servidor LDAP para coltrolar sus matriculaciones. Se asume que su árbol LDAP contiene grupos que apuntan a los cursos y que cada uno de esos grupos o cursos contienen entradas de matriculación que hacen referencia a los estudiantes.</p>
@@ -117,15 +117,16 @@ $string['pluginname_desc'] = '<p>Usted puede utilizar un servidor LDAP para colt
 <p>Las matriculaciones se actualizarán cuando el usuario se identifique. Consulte en <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Esta extensión  puede también ajustarse para crear nuevos cursos de forma automática cuando aparecen nuevos grupos en LDAP.</p>';
 $string['pluginnotenabled'] = 'El plugin no está habilitado';
+$string['privacy:metadata'] = 'El plugin de Inscripciones LDAP no almacena ningún dato personal.';
 $string['role_mapping'] = 'Para cada rol que desee asignar a partir de LDAP, debe especificar la lista de contextos donde se localizan los grupos del curso con este rol. Separe los diferentes contextos con punto y coma \';\'.
 
 También es necesario especificar el atributo que su servidor LDAP utiliza para mantener los miembros de un grupo. Por lo general, \'member\' o \'memberUid\'';
 $string['role_mapping_attribute'] = 'Atributo de miembro LDAP para {$a}';
 $string['role_mapping_context'] = 'Contextos LDAP para {$a}';
-$string['role_mapping_key'] = 'Mapa de roles de LDAP';
+$string['role_mapping_key'] = 'Mapear roles desde LDAP';
 $string['roles'] = 'Mapeo de roles';
 $string['server_settings'] = 'Configuración del Servidor LDAP';
-$string['synccourserole'] = '== Sincronizando curso \'{$a->idnumber}\' para el rol\'{$a->role_shortname}\'';
+$string['synccourserole'] = '== Sincronizando curso \'{$a->idnumber}\' para el rol \'{$a->role_shortname}\'';
 $string['template'] = 'Opcional: los cursos auto-creados pueden copiar sus ajustes a partir de un curso-plantilla.';
 $string['template_key'] = 'Plantilla';
 $string['unassignrole'] = 'Quitando la asignación al rol  \'{$a->role_shortname}\' al usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';

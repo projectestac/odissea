@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = 'A proba ten un tempo límite de {$a}. O tempo comeza a contarse a partir do momento en que comeza o intento e ten que entregar a proba antes de que caduque. Confirma que quere comezar agora mesmo a proba?';
 $string['confirmstartheader'] = 'Proba cronometrada';
 $string['pluginname'] = 'Regra de acceso á proba para límite de tempo';
+$string['privacy:metadata'] = 'O engadido de regra de acceso á proba para límite de tempo non almacena ningún dato persoal.';
 $string['quiztimelimit'] = 'Tempo límite: {$a}';
