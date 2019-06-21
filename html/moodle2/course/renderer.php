@@ -754,9 +754,21 @@ class core_course_renderer extends plugin_renderer_base {
      */
     public function availability_info($text, $additionalclasses = '') {
 
-        // XTEC ************ MODIFICAT - Change title for abbreviation - 2019.02.27  @svallde2.
-        $data = ['text' => $text, 'title' => preg_split( "(\,|\s)", $text )[0], 'classes' => $additionalclasses];
+        // XTEC ************ MODIFICAT - Change title for abbreviation
+        // 2019.02.27 @svallde2
         $additionalclasses = array_filter(explode(' ', $additionalclasses));
+        if (in_array('isrestricted', $additionalclasses)) {
+            $txt = $text;
+        } else {
+            $txt = preg_split( "(\,|\s)", $text )[0];
+        }
+        $data = ['text' => $text, 'title' => $txt, 'classes' => $additionalclasses];
+        //************ ORIGINAL
+        /*
+        $data = ['text' => $text, 'classes' => $additionalclasses];
+        $additionalclasses = array_filter(explode(' ', $additionalclasses));
+        */
+        //************ FI
 
         if (in_array('ishidden', $additionalclasses)) {
             $data['ishidden'] = 1;

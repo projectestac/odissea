@@ -479,6 +479,10 @@ h3{
 	margin-left: 0.2rem;
 }
 
+.section .activity .activityinstance, .section .activity .activityinstance div {
+	display: inline-table;
+}
+
 /* Footer */
 
 #page-footer{
