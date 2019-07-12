@@ -3,6 +3,10 @@ Release notes for Odissea (http://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+Changes 19.07.01
+---------------------------------------------------------------------------------------
+- Fixed memcached lib
+
 Changes 19.04.15
 ---------------------------------------------------------------------------------------
 - Moodle upgraded to from 3.4.8
